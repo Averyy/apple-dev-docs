@@ -25,7 +25,7 @@ func CFNotificationCenterGetLocalCenter() -> CFNotificationCenter!
 extern CFNotificationCenterRefCFNotificationCenterGetLocalCenter();
 ```
 
-#### Return Value
+## Return Value
 
 The application’s local notification center. An application has only one local notification center, so this function returns the same value each time it is called.
 

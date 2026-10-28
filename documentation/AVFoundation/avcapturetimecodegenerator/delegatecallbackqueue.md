@@ -23,7 +23,7 @@ var delegateCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the queue set in [`setDelegate(_:queue:)`](./setdelegate%28_,queue%29.md). If no delegate is assigned, this property is `nil`.
 

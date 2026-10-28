@@ -19,7 +19,7 @@ var autoresizesOutlineColumn: Bool { get set }
 @property BOOL autoresizesOutlineColumn;
 ```
 
-#### Discussion
+## Discussion
 
 The outline column contains the cells with the expansion symbols and is generally the first column. The default value of this property is [`true`](../../Swift/true.md), which causes the outline column to be resized.
 

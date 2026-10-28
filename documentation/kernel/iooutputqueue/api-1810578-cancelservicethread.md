@@ -11,7 +11,7 @@ Cancels any pending service thread callout.
 virtual bool cancelServiceThread();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if a previously scheduled thread callout was canceled, false otherwise.
 

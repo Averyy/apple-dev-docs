@@ -17,7 +17,7 @@ Stops further propagation of the event.
 stopPropagation(): void;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a DOM `Event`, a [`MapKitEvent`](../mapkitevent.md) doesn’t go through bubbling or capturing phases. When the propagation stops, the system doesn’t dispatch the event to any event listeners that the framework hasn’t called yet.
 

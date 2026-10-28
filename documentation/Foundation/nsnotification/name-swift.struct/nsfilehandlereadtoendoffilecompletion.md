@@ -25,7 +25,7 @@ static let NSFileHandleReadToEndOfFileCompletion: NSNotification.Name
 extern NSNotificationName const NSFileHandleReadToEndOfFileCompletionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 It makes the data available to observers by putting it in the `userInfo` dictionary. To cause the posting of this notification, you must send either [`readToEndOfFileInBackgroundAndNotify()`](../../filehandle/readtoendoffileinbackgroundandnotify%28%29.md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](../../filehandle/readtoendoffileinbackgroundandnotify%28formodes%29.md) to an appropriate `NSFileHandle` object.
 

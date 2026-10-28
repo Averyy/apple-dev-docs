@@ -18,7 +18,7 @@ Returns an iterator pointing to the next item in the sequence.
 func successor() -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Generally, Swift creates this property automatically for C++ types that define pre-increment `operator++()`.
 

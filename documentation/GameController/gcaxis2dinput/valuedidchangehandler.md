@@ -25,7 +25,7 @@ var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxis2DInput, GCPo
 @property (atomic, copy, nullable) void (^valueDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCAxis2DInput>input, GCPoint2 value);
 ```
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

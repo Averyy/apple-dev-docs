@@ -5,7 +5,7 @@
 
 Create a horizontal, styled divider that extends to the right edge of the display.
 
-#### Overview
+## Overview
 
 In [Creating Your First Article](./creating-your-first-article.md), you added some text components to your article. Now, you can add a `divider` component to visually separate some text components and create color contrast.
 
@@ -13,7 +13,7 @@ In [Creating Your First Article](./creating-your-first-article.md), you added so
 
 ![Screenshot of an Apple News article with a divider on iPad. The divider’s left edge is aligned to article text and its right edge extends all the way to the edge of the display.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624431@2x.png)
 
-##### Define a ComponentLayout Object that Bleeds to the Right Edge
+### Define a ComponentLayout Object that Bleeds to the Right Edge
 
 Before you can make your divider line extend to the right edge of the display, you must define a new `ComponentLayout` object that uses the `ignoreDocumentMargin` property.
 
@@ -22,7 +22,7 @@ Before you can make your divider line extend to the right edge of the display, y
 
 Your code should look like the example code [bigDividerLayout: Result](./adding-a-divider.md#bigDividerLayout-Result).
 
-###### bigDividerLayout: Copy This Code
+#### bigDividerLayout: Copy This Code
 
 ```json
 ,
@@ -37,7 +37,7 @@ Your code should look like the example code [bigDividerLayout: Result](./adding-
     }
 ```
 
-###### bigDividerLayout: Result
+#### bigDividerLayout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -60,7 +60,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add a Divider in Your Article
+### Add a Divider in Your Article
 
 A `divider` component in your JSON file represents a divider line in your article.
 
@@ -71,7 +71,7 @@ Your code should look like the example code [Divider: Result](./adding-a-divider
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a yellow divider.
 
-###### Divider: Copy This Code
+#### Divider: Copy This Code
 
 ```json
     {
@@ -84,7 +84,7 @@ After you make this change in your code, you can preview your working `article.j
     },
 ```
 
-###### Divider: Result
+#### Divider: Result
 
 Ellipses (…) indicate lines of code that have been omitted from this example.
 
@@ -107,7 +107,7 @@ Ellipses (…) indicate lines of code that have been omitted from this example.
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -119,11 +119,11 @@ For example, try changing the layout of your article’s `divider` component:
 
 The divider now ignores the margins on both sides of the document.
 
-##### Previous
+### Previous
 
 [Positioning Text Components](./positioning-text-components.md)
 
-##### Next
+### Next
 
 [Adding an Image and Captions](./adding-an-image-and-captions.md)
 

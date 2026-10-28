@@ -25,7 +25,7 @@ func remove(_ aPort: Port, forMode mode: RunLoop.Mode)
 - (void) removePort:(NSPort *) aPort forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 If you added the port to multiple input modes, you must remove it from each mode separately.
 

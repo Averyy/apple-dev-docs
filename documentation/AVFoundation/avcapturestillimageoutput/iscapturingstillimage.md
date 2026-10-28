@@ -22,7 +22,7 @@ var isCapturingStillImage: Bool { get }
 @property (readonly, getter=isCapturingStillImage) BOOL capturingStillImage;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when a still image is being captured, and [`false`](../../Swift/false.md) when no still image capture is underway.
 

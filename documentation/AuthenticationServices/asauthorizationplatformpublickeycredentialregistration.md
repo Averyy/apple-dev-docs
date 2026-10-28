@@ -28,7 +28,7 @@ class ASAuthorizationPlatformPublicKeyCredentialRegistration
 
 - [Supporting passkeys](./supporting-passkeys.md)
 
-#### Overview
+## Overview
 
 Use this class to verify a successful platform authorization request in [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md).
 

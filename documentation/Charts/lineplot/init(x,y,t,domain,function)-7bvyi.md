@@ -24,7 +24,7 @@ init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain
 
 Available when `Content` is `FunctionLinePlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

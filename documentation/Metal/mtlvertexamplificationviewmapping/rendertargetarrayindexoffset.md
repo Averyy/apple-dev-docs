@@ -28,7 +28,7 @@ uint32_t renderTargetArrayIndexOffset;
 
 - [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
-#### Discussion
+## Discussion
 
 To specify a list of offsets, call the [`setVertexAmplificationCount(_:viewMappings:)`](../mtlrendercommandencoder/setvertexamplificationcount%28_,viewmappings%29.md) method.
 

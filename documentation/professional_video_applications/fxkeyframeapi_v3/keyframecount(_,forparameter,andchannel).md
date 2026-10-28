@@ -20,11 +20,11 @@ func keyframeCount(_ count: UnsafeMutablePointer<Int>, forParameter parameterID:
 - (NSError *) keyframeCount:(NSUInteger *) count forParameter:(NSUInteger) parameterID andChannel:(NSUInteger) channelIndex;
 ```
 
-#### Return Value
+## Return Value
 
 If any errors occur while getting the keyframe count, the return value will be a pointer to an `NSError` describing the problem. Otherwise, the return value is `nil`.
 
-#### Discussion
+## Discussion
 
 Given a parameter, you can get the number of keyframes for any one of its channels. For a slider, toggle button (checkbox), or angle parameter, there will be only 1 channel (indexed starting at `0`), whereas a point parameter will have 2 channels (x and y), and a color channel will have 4 (R, G, B, and A).
 

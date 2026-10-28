@@ -21,11 +21,11 @@ Fetches all record zones from the current database.
 func allRecordZones() async throws -> [CKRecordZone]
 ```
 
-#### Return Value
+## Return Value
 
 An array of fetched record zones which contains at least one record zone, the default zone.
 
-#### Discussion
+## Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 

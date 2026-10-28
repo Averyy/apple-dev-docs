@@ -24,7 +24,7 @@ case support
 PKPaymentButtonTypeSupport
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

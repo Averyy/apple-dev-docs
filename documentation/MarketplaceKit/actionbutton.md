@@ -22,7 +22,7 @@ A user-interface element that enables a person to install, update, or launch app
 - [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
 - [Supplying an install verification token](./supplying-an-install-verification-token.md)
 
-#### Overview
+## Overview
 
 The system doesn’t allow an app marketplace to install apps without a person’s consent. When the system receives a request to install an app, it validates that request came from a person’s interaction with this button. If instead a marketplace calls the [`AppLibrary`](./applibrary.md) installation methods directly, the call may fail.
 

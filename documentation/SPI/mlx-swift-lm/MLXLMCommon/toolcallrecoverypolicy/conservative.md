@@ -17,7 +17,7 @@ Recover only structurally complete alternate-dialect calls that carry an explici
 case conservative
 ```
 
-#### Discussion
+## Discussion
 
 Explicit protocol attempts that are malformed, incomplete at end of stream, or undeclared are surfaced as [`RejectedToolCall`](../rejectedtoolcall.md) rather than leaked as response text. Markerless `name[ARGS]{...}` rehearsals are never promoted by this policy: without a protocol marker, prose that merely mentions a declared call is indistinguishable from an intended one.
 

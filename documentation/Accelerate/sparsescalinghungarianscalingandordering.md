@@ -25,7 +25,7 @@ var SparseScalingHungarianScalingAndOrdering: SparseScaling_t { get }
 SparseScalingHungarianScalingAndOrdering
 ```
 
-#### Discussion
+## Discussion
 
 The Sparse Solvers library uses the associated matching to place large entries on the diagonal. This option is only valid if you use a combined symbolic and numeric call to `SparseFactor`()`. The Sparse Solvers library only supports this option for LU factorizations.
 

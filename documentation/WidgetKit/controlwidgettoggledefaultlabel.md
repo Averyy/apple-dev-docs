@@ -20,7 +20,7 @@ A view that represents the default label for a toggle control if you don’t pro
 @preconcurrency struct ControlWidgetToggleDefaultLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t initialize this type yourself. Instead, WidgetKit creates this type when you initialize a [`ControlWidgetToggle`](./controlwidgettoggle.md) without a label.
 

@@ -26,7 +26,7 @@ var searchSuggestions: [any UISearchSuggestion]? { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Provide search suggestions to help people complete their query quickly. Update the suggestions as a person types by registering for the [`textDidChangeNotification`](../uitextfield/textdidchangenotification.md) notification and implementing [`textFieldDidEndEditing(_:reason:)`](../uitextfielddelegate/textfielddidendediting%28_,reason%29.md).
 

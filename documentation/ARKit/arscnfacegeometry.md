@@ -20,7 +20,7 @@ class ARSCNFaceGeometry
 @interface ARSCNFaceGeometry : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 This class is a subclass of [`SCNGeometry`](../SceneKit/scngeometry.md) that wraps the mesh data provided by the [`ARFaceGeometry`](./arfacegeometry.md) class. You can use [`ARSCNFaceGeometry`](./arscnfacegeometry.md) to quickly and easily visualize face topology and facial expressions provided by ARKit in a SceneKit view.
 

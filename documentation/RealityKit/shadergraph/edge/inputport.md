@@ -18,7 +18,7 @@ The name of the input port on the destination node.
 var inputPort: String
 ```
 
-#### Discussion
+## Discussion
 
 Input ports represent values consumed by a node, which can be connected to outputs of other nodes.
 

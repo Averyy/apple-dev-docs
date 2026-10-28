@@ -21,7 +21,7 @@ func updateTitleVariants(_ newTitleVariants: [String], subtitleVariants newSubti
 - (void) updateTitleVariants:(NSArray<NSString *> *) newTitleVariants subtitleVariants:(NSArray<NSString *> *) newSubtitleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 You can update the navigation alert with new title and subtitle variants before presenting the alert or after displaying it. Updating a dismissed alert has no effect.
 

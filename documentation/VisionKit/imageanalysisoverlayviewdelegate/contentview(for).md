@@ -17,11 +17,11 @@ Provides the view that contains the image.
 func contentView(for overlayView: ImageAnalysisOverlayView) -> NSView?
 ```
 
-#### Return Value
+## Return Value
 
 The view that contains the image.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

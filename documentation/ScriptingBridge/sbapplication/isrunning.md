@@ -20,7 +20,7 @@ var isRunning: Bool { get }
 @property (readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the application is running, [`false`](../../Swift/false.md) otherwise.
 

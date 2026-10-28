@@ -24,7 +24,7 @@ case failure
 INSendMessageIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent you from sending the message.
 

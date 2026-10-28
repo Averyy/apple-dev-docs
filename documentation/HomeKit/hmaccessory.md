@@ -24,7 +24,7 @@ class HMAccessory
 @interface HMAccessory : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMAccessory`](./hmaccessory.md) instance represents a physical device, like a garage door opener, installed in a home and assigned to a room.
 

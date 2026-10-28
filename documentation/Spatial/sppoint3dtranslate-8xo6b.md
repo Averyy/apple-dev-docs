@@ -21,7 +21,7 @@ Returns a point with an origin that’s offset by the specified size.
 static SPPoint3D SPPoint3DTranslate(SPPoint3D point, SPSize3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from translating by the specified size.
 

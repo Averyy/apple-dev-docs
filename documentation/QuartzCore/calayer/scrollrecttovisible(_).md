@@ -24,7 +24,7 @@ func scrollRectToVisible(_ r: CGRect)
 - (void) scrollRectToVisible:(CGRect) r;
 ```
 
-#### Discussion
+## Discussion
 
 If the layer is not contained by a [`CAScrollLayer`](../cascrolllayer.md) object, this method does nothing.
 

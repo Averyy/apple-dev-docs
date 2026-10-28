@@ -21,7 +21,7 @@ Advance `currentCodeUnitOffset` to the end of `n` scalars, without decoding them
 mutating func skipForward(by n: Int) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of `Unicode.Scalar`s skipped over, which can be fewer than `n` if at the end of the UTF8Span.
 

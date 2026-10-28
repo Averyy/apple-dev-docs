@@ -22,7 +22,7 @@ nonisolated
 static func == (lhs: Self, rhs: Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 For more details see the “Hashable and Identifiable conformance” section of [`DistributedActor`](../distributedactor.md).
 

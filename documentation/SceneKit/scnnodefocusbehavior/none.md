@@ -25,7 +25,7 @@ case none
 SCNNodeFocusBehaviorNone
 ```
 
-#### Discussion
+## Discussion
 
 This behavior is the default for a node.
 

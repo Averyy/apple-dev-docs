@@ -25,7 +25,7 @@ func selectedMediaPresentationSettings(for mediaSelectionGroup: AVMediaSelection
 - (NSDictionary<AVMediaPresentationSelector *,id> *) selectedMediaPresentationSettingsForMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with AVMediaPresentationSelectors as keys and AVMediaPresentationSettings as values, providing the most recently selected setting for each selector or, if no setting has previously been selected, NSNull.
 

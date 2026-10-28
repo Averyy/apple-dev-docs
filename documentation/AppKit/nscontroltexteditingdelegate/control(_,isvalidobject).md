@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, isValidObject obj: Any?) -> Bool
 - (BOOL) control:(NSControl *) control isValidObject:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want to allow the control to display the specified value; otherwise, [`false`](../../Swift/false.md) to reject the value and return the cursor to the control’s cell.
 
-#### Discussion
+## Discussion
 
 This method gives the delegate the opportunity to validate the contents of the control’s cell (or selected cell). In validating, the delegate should check the value in the `object` parameter and determine if it falls within a permissible range, has required attributes, accords with a given context, and so on. Examples of objects subject to such evaluations are an `NSDate` object that should not represent a future date or a monetary amount (represented by an `NSNumber` object) that exceeds a predetermined limit.
 

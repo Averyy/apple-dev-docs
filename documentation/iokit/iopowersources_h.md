@@ -3,13 +3,13 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOPowerSources provides uniform access to the state of power sources attached to the system. You can receive a change notification when any power source data changes. "Power sources" currently include batteries and UPS devices.
 
 The header follows CF semantics in that it is the caller's responsibility to CFRelease() anything returned by a "Copy" function, and the caller should not CFRelease() anything returned by a "Get" function.
 
-##### Included Headers
+### Included Headers
 
 - <sys/cdefs.h>
 

@@ -19,7 +19,7 @@ Creates a markup edit view controller.
 @preconcurrency init(supportedFeatureSet: FeatureSet, additionalActions: [UIMenuElement] = [])
 ```
 
-#### Discussion
+## Discussion
 
 `MarkupEditViewController` provides a standard interface for adding to and editing content in a `PaperMarkupViewController`.
 

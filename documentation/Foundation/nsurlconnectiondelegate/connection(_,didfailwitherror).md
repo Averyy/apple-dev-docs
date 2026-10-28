@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, didFailWithError error: 
 - (void) connection:(NSURLConnection *) connection didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Once the delegate receives this message, it will receive no further messages for `connection`.
 

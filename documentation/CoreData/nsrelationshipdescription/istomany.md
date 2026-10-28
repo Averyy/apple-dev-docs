@@ -25,7 +25,7 @@ var isToMany: Bool { get }
 @property (readonly, getter=isToMany) BOOL toMany;
 ```
 
-#### Discussion
+## Discussion
 
 If [`maxCount`](./maxcount.md) is equal to `1`, implying a to-one relationship, this property returns [`false`](../../Swift/false.md); otherwise, it returns [`true`](../../Swift/true.md).
 

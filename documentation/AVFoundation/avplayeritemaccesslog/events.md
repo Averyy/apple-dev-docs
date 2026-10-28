@@ -25,7 +25,7 @@ var events: [AVPlayerItemAccessLogEvent] { get }
 @property (nonatomic, readonly) NSArray<AVPlayerItemAccessLogEvent *> * events;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`AVPlayerItemAccessLogEvent`](../avplayeritemaccesslogevent.md) objects that represent the chronological sequence of events contained in the access log.
 

@@ -23,7 +23,7 @@ var isShutterSoundSuppressionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isShutterSoundSuppressionSupported) BOOL shutterSoundSuppressionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the value is [`true`](../../Swift/true.md), except in jurisdictions where you can’t disable the shutter sound. On all other platforms, the value is always [`false`](../../Swift/false.md).
 

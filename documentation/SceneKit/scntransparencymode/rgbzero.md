@@ -25,7 +25,7 @@ case rgbZero
 SCNTransparencyModeRGBZero
 ```
 
-#### Discussion
+## Discussion
 
 When using this mode, SceneKit ignores the alpha value of colors in the material’s [`transparent`](../scnmaterial/transparent.md) property. SceneKit calculates the luminance of a color from its red, green, and blue channels and uses the resulting value to determine the material’s opacity.
 

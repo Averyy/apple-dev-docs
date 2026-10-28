@@ -33,7 +33,7 @@ var playerStateUpdateHandler: (String, GKVoiceChat.PlayerState) -> Void { get se
 @property (atomic, copy) void (^playerStateUpdateHandler)(NSString *playerID, GKVoiceChatPlayerState state);
 ```
 
-#### Discussion
+## Discussion
 
 Your game sets this property with a block that GameKit calls when the state of any participant in the chat changes (including the local player). The block receives the following parameters:
 

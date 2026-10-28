@@ -9,11 +9,11 @@ Get the anonymized backtrace logs associated with a specific diagnostic signatur
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 The example below requests a single disk write diagnostic log for a specific signature.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

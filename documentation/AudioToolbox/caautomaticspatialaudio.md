@@ -15,7 +15,7 @@ A spatial audio experience determined by the system.
 @interface CAAutomaticSpatialAudio : CASpatialAudioExperience
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the [`AutomaticSpatialAudio`](./automaticspatialaudio.md) Swift type.
 

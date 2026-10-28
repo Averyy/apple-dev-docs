@@ -34,7 +34,7 @@ var request: UNNotificationRequest { get }
 @property (atomic, copy, readonly) UNNotificationRequest * request;
 ```
 
-#### Discussion
+## Discussion
 
 For local notifications, the request object is a copy of the one you originally configured. For remote notifications, the system synthesizes the request object from information received from Apple Push Notification service.
 

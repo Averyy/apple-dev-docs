@@ -19,11 +19,11 @@ func PMSessionEndPageNoDialog(_ printSession: PMPrintSession) -> OSStatus
 OSStatus PMSessionEndPageNoDialog(PMPrintSession printSession);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is similar to the function `PMSessionEndPage` except that the printing status dialog is suppressed.
 

@@ -23,7 +23,7 @@ var major: NSNumber? { get }
 @property (nonatomic, copy, readonly, nullable) NSNumber * major;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a [`major`](../clbeaconidentityconstraint/major.md) value for the beacon, the value of this property is `nil`. Operations that compare a beacon’s identity characteristics with the constraint’s characteristics ignore the `major` value if this property is `nil`.
 

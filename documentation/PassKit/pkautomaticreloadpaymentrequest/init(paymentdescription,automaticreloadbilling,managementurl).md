@@ -23,7 +23,7 @@ init(paymentDescription: String, automaticReloadBilling: PKAutomaticReloadPaymen
 - (instancetype) initWithPaymentDescription:(NSString *) paymentDescription automaticReloadBilling:(PKAutomaticReloadPaymentSummaryItem *) automaticReloadBilling managementURL:(NSURL *) managementURL;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](../pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](../pkpaymentrequest.md) object to set up an automatic reload payment.
 

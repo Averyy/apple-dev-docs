@@ -24,7 +24,7 @@ class PHObjectChangeDetails<ObjectType> where ObjectType : PHObject
 @interface PHObjectChangeDetails : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`PHObjectChangeDetails`](./phobjectchangedetails.md) object provides detailed information about differences between two states of an asset or collection object—one that you previously obtained and an updated state that would result if you fetched that entity again. You observe changes by adopting the [`PHPhotoLibraryChangeObserver`](./phphotolibrarychangeobserver.md) protocol and registering your observer with the shared [`PHPhotoLibrary`](./phphotolibrary.md) object. When Photos notifies your observer of a change, you get change details by passing the object you’re interested in to the [`changeDetailsForObject:`](./phchange/changedetailsforobject_.md) method.
 

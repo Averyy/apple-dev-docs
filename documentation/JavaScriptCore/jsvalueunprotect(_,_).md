@@ -24,7 +24,7 @@ func JSValueUnprotect(_ ctx: JSContextRef!, _ value: JSValueRef!)
 void JSValueUnprotect(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Discussion
+## Discussion
 
 You can protect a value multiple times and must unprotect it an equal number of times before it becomes eligible for garbage collection.
 

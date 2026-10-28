@@ -15,7 +15,7 @@ An object to serve as the web resource loading delegate.
 static let webResourceLoadDelegate: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 For HTML only. The value is an [`NSObject`](../../../ObjectiveC/nsobject-swift.class.md).
 

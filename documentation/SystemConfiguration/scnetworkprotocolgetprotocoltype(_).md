@@ -19,7 +19,7 @@ func SCNetworkProtocolGetProtocolType(_ protocol: SCNetworkProtocol) -> CFString
 CFStringRefSCNetworkProtocolGetProtocolType(SCNetworkProtocolRef protocol);
 ```
 
-#### Return Value
+## Return Value
 
 The protocol type.
 

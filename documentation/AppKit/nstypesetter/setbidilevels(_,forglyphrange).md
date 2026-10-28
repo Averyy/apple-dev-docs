@@ -19,7 +19,7 @@ func setBidiLevels(_ levels: UnsafePointer<UInt8>!, forGlyphRange glyphRange: NS
 - (void) setBidiLevels:(const uint8_t *) levels forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to interact with custom glyph storage.
 

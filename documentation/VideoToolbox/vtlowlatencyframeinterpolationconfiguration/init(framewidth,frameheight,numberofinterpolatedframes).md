@@ -24,7 +24,7 @@ init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)
 - (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight numberOfInterpolatedFrames:(NSInteger) numberOfInterpolatedFrames;
 ```
 
-#### Discussion
+## Discussion
 
 The available interpolation points are the equal to the value of (2^x - 1), where x is equal to `numberOfInterpolatedFrames`. For example,
 

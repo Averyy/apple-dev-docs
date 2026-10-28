@@ -15,7 +15,7 @@ Returns the size of a memory block.
 ByteCount MPGetAllocatedBlockSize(LogicalAddress object);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the allocated memory block, in bytes. 
 

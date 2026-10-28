@@ -21,7 +21,7 @@ nonisolated
 struct SpatialEventGesture
 ```
 
-#### Overview
+## Overview
 
 Use a gesture of this type to track multiple simultaneous spatial events and gain access to detailed information about each. For example, you can place a particle emitter at every location in a [`Canvas`](./canvas.md) that has an ongoing spatial event:
 

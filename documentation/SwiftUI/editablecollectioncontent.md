@@ -21,7 +21,7 @@ An opaque wrapper view that adds editing capabilities to a row in a list.
 struct EditableCollectionContent<Content, Data>
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead SwiftUI creates this type on your behalf.
 

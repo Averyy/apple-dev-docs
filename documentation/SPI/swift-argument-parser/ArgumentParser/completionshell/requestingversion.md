@@ -17,7 +17,7 @@ The shell version for which completions will be or are being requested.
 static var requestingVersion: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 `CompletionShell.requestingVersion` is non-`nil` only while generating a shell completion script or while a Swift custom completion function is running (that is, while `customCompletion` from `@Option(completion: .custom(customCompletion))` executes).
 

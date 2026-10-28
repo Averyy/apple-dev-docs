@@ -21,7 +21,7 @@ The host subcomponent, percent-encoded.
 var encodedHost: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The getter for this property retains any percent-encoding this component may have. Setting this property assumes the component string already has the correct percent-encoding. Attempting to set an incorrectly percent-encoded string raises [`fatalError(_:file:line:)`](../../Swift/fatalerror%28_,file,line%29.md).
 

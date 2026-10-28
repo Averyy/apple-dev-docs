@@ -20,7 +20,7 @@ func stop(_ sender: Any!)
 - (void) stop:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu. It is equivalent to the [`stopRendering()`](./stoprendering%28%29.md) method.
 

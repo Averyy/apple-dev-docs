@@ -21,7 +21,7 @@ The stream didn’t enqueue the element because the buffer was full.
 case dropped(Element)
 ```
 
-#### Discussion
+## Discussion
 
 The associated element for this case is the element dropped by the stream.
 

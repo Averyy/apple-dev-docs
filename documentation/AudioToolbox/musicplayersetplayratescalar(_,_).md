@@ -24,11 +24,11 @@ func MusicPlayerSetPlayRateScalar(_ inPlayer: MusicPlayer, _ inScaleRate: Float6
 extern OSStatus MusicPlayerSetPlayRateScalar(MusicPlayer inPlayer, Float64 inScaleRate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 A music player’s default playback rate multiplier is 1.0.
 

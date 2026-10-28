@@ -22,7 +22,7 @@ A control group style that presents its content as a palette.
 
 Available when `Self` is `PaletteControlGroupStyle`.
 
-#### Discussion
+## Discussion
 
 > **Note**: When used outside of menus, this style is rendered as a segmented control.
 

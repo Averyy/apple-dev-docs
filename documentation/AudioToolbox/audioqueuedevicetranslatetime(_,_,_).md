@@ -24,11 +24,11 @@ func AudioQueueDeviceTranslateTime(_ inAQ: AudioQueueRef, _ inTime: UnsafePointe
 extern OSStatus AudioQueueDeviceTranslateTime(AudioQueueRef inAQ, const AudioTimeStamp *inTime, AudioTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 The device must be running for this function to provide a result. For an explanation of the various time base representations for an audio hardware device, see [`AudioTimeStamp`](../CoreAudioTypes/audiotimestamp.md) in [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
 

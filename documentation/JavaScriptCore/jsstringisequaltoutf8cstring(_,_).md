@@ -24,7 +24,7 @@ func JSStringIsEqualToUTF8CString(_ a: JSStringRef!, _ b: UnsafePointer<CChar>!)
 bool JSStringIsEqualToUTF8CString(JSStringRef a, const char *b);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two strings match; otherwise, [`false`](../Swift/false.md).
 

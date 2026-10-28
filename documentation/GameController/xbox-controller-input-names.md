@@ -5,7 +5,7 @@
 
 Constants for names of Xbox elements.
 
-#### Overview
+## Overview
 
 Use these constants as the keys when accessing [`GCXboxGamepad`](./gcxboxgamepad.md) elements by name using the [`allElements`](./gcphysicalinputprofile/allelements.md) property, `subscript(_:)` notation, or similar [`GCPhysicalInputProfile`](./gcphysicalinputprofile.md) APIs.
 

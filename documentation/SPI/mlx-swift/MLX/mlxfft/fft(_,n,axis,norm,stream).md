@@ -17,11 +17,11 @@ One dimensional discrete Fourier Transform.
 static func fft(_ array: MLXArray, n: Int? = nil, axis: Int = -1, norm: FFTNorm = .backward, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 DFT of the input along the given axis
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](../mlxfft.md)
 

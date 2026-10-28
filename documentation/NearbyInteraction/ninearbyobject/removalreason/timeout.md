@@ -22,7 +22,7 @@ case timeout
 NINearbyObjectRemovalReasonTimeout
 ```
 
-#### Discussion
+## Discussion
 
 The framework times out a session if the peer user closes the app, or if too much time passes in a suspended state (see [`sessionWasSuspended(_:)`](../../nisessiondelegate/sessionwassuspended%28_%29.md)). NI may also time out a session to save device resources.
 

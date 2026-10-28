@@ -22,7 +22,7 @@ func GLKMatrix3GetMatrix2(_ matrix: GLKMatrix3) -> GLKMatrix2
 static GLKMatrix2 GLKMatrix3GetMatrix2(GLKMatrix3 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new `2x2` matrix.
 

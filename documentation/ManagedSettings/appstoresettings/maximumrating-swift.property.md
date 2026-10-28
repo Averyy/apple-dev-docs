@@ -17,7 +17,7 @@ The maximum app rating the user can download.
 var maximumRating: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if your app doesn’t constrain this setting. The following list provides U.S. rating descriptions for the levels:
 

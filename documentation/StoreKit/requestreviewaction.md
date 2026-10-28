@@ -20,7 +20,7 @@ An instance that tells StoreKit to request an App Store rating or review, if app
 struct RequestReviewAction
 ```
 
-#### Overview
+## Overview
 
 Read the [`requestReview`](../SwiftUI/environmentvalues/requestreview.md) environment value to get an instance of this structure for a given [`Environment`](../SwiftUI/environment.md). Call the instance to tell StoreKit to ask the user to rate or review your app, if appropriate. You call the instance directly because it defines a [`callAsFunction()`](./requestreviewaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
@@ -33,11 +33,11 @@ When you call this API in your shipping app and the system displays a rating and
 
 It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [Ratings and reviews](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
 
-##### Test review requests
+### Test review requests
 
 When your app calls this method while it’s in development mode, StoreKit always displays the rating and review request view, so you can test the user interface and experience. However, this method has no effect in apps that you distribute for beta testing using TestFlight.
 
-##### Provide a persistent link to your product page (optional)
+### Provide a persistent link to your product page (optional)
 
 People can review your app at any time on the App Store. To make it easier for people to leave reviews, you may include a persistent link to your App Store product page in your app’s settings or configuration screens. Append the query parameter `action=write-review` to your product page URL to automatically open the App Store page where users can write a review.
 

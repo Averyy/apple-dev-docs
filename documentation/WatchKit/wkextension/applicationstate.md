@@ -19,7 +19,7 @@ var applicationState: WKApplicationState { get }
 @property (nonatomic, readonly) WKApplicationState applicationState;
 ```
 
-#### Discussion
+## Discussion
 
 The Watch app may be active, inactive, or running in the background. Use this property to get the current state. To be notified of state changes, implement the appropriate methods of the [`delegate`](./delegate.md) object.
 

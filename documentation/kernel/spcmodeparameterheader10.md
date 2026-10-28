@@ -13,7 +13,7 @@
 typedef struct SPCModeParameterHeader10 SPCModeParameterHeader10;
 ```
 
-#### Discussion
+## Discussion
 
 Mode Parameter Header for the MODE_SENSE_10 command.
 

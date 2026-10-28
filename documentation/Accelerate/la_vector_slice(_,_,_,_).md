@@ -25,11 +25,11 @@ func la_vector_slice(_ vector: la_object_t, _ vector_first: la_index_t, _ vector
 extern la_object_tla_vector_slice(la_object_t vector, la_index_t vector_first, la_index_t vector_stride, la_count_t slice_length);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector with length slice_length whose elements are taken from vector.
 
-#### Discussion
+## Discussion
 
 Create a slice of a vector.
 

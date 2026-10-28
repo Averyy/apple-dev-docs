@@ -21,11 +21,11 @@ Creates the view object and configures its initial state.
 @preconcurrency func makeUIView(context: Self.Context) -> Self.UIViewType
 ```
 
-#### Return Value
+## Return Value
 
 Your UIKit view configured with the provided information.
 
-#### Discussion
+## Discussion
 
 You must implement this method and use it to create your view object. Configure the view using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your view for the first time. For all subsequent updates, the system calls the [`updateUIView(_:context:)`](./updateuiview%28_,context%29.md) method.
 

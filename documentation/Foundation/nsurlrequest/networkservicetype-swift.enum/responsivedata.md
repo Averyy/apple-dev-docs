@@ -25,7 +25,7 @@ case responsiveData
 NSURLNetworkServiceTypeResponsiveData
 ```
 
-#### Discussion
+## Discussion
 
 Use this service type for interactive situations where the user is anticipating a quick response, like instant messaging or completing a purchase.
 

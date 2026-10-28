@@ -25,7 +25,7 @@ func addCharacters(in aRange: NSRange)
 - (void) addCharactersInRange:(NSRange) aRange;
 ```
 
-#### Discussion
+## Discussion
 
 This code excerpt adds to a character set the lowercase English alphabetic characters:
 

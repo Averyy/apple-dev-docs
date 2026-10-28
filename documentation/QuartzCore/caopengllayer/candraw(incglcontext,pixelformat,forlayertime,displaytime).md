@@ -22,11 +22,11 @@ func canDraw(inCGLContext ctx: CGLContextObj, pixelFormat pf: CGLPixelFormatObj,
 - (BOOL) canDrawInCGLContext:(CGLContextObj) ctx pixelFormat:(CGLPixelFormatObj) pf forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver should render OpenGL content, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method is called before attempting to render the frame for the layer time specified by `timeInterval`. If the method returns [`false`](../../Swift/false.md), the frame is skipped. The default implementation always returns [`true`](../../Swift/true.md).
 

@@ -15,7 +15,7 @@ The pointer style for resizing a row, or horizontal division, in either directio
 static let rowResize: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

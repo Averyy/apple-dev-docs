@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_DIRTYCONTROL: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_DIRTYCONTROL
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_track_dirty`, `proc_set_dirty`, `proc_get_dirty`, and `proc_clear_dirty` functions from `libproc.h`.
 

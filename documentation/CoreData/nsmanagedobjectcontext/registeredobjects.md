@@ -25,7 +25,7 @@ var registeredObjects: Set<NSManagedObject> { get }
 @property (nonatomic, strong, readonly) NSSet<__kindof NSManagedObject *> * registeredObjects;
 ```
 
-#### Discussion
+## Discussion
 
 A managed object context does not post key-value observing notifications when the return value of `registeredObjects` changes.
 

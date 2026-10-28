@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_TypesForUTI: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_TypesForUTI
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to a `CFStringRef` containing a Universal Type Identifier.
 

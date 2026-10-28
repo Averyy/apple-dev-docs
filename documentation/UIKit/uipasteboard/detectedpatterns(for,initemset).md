@@ -18,11 +18,11 @@ Requests that the data detection system asynchronously identify the patterns tha
 func detectedPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?) async throws -> [Set<PartialKeyPath<UIPasteboard.DetectedValues>>]
 ```
 
-#### Return Value
+## Return Value
 
 A set of key paths that represent the patterns the data detection system matches in the pasteboard.
 
-#### Discussion
+## Discussion
 
 Because this method only gives an indication of whether a pasteboard item matches a particular pattern and doesn’t allow the app to access the contents, the system doesn’t notify the user about reading the contents of the pasteboard.
 

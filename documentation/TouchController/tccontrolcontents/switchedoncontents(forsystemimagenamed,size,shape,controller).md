@@ -21,7 +21,7 @@ class func switchedOnContents(forSystemImageNamed imageName: String, size: CGSiz
 + (TCControlContents *) switchedOnContentsForSystemImageNamed:(NSString *) imageName size:(CGSize) size shape:(TCControlContentsButtonShape) shape controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the switch button.
 

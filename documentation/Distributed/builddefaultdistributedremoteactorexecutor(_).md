@@ -21,7 +21,7 @@ Obtain the unowned `SerialExecutor` that is used by by remote distributed actor 
 func buildDefaultDistributedRemoteActorExecutor<Act>(_ actor: Act) -> UnownedSerialExecutor where Act : DistributedActor
 ```
 
-#### Discussion
+## Discussion
 
 It is possible to obtain the executor e.g. for logging or general debugging, however attempting to enqueue work on what might potentially be a remote actor is a programming error and therefore will crash if the actor is potentially.
 

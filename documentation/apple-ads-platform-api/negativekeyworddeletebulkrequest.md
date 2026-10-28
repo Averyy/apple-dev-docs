@@ -16,11 +16,11 @@ A bulk request to delete multiple negative keywords by their identifiers.
 object NegativeKeywordDeleteBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 `NegativeKeywordDeleteBulkRequest` allows deleting multiple negative keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

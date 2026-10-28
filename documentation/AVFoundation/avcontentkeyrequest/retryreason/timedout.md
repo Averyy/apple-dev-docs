@@ -25,7 +25,7 @@ static let timedOut: AVContentKeyRequest.RetryReason
 extern AVContentKeyRequestRetryReason const AVContentKeyRequestRetryReasonTimedOut;
 ```
 
-#### Discussion
+## Discussion
 
 The response timed out because the initial request or response (or both) took too long, or because the lease expired during the request.
 

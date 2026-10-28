@@ -25,7 +25,7 @@ init(rectangleOf s: CGSize)
 + (SKPhysicsBody *) bodyWithRectangleOfSize:(CGSize) s;
 ```
 
-#### Return Value
+## Return Value
 
 A new volume-based physics body.
 

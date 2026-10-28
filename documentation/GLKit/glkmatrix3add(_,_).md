@@ -22,7 +22,7 @@ func GLKMatrix3Add(_ matrixLeft: GLKMatrix3, _ matrixRight: GLKMatrix3) -> GLKMa
 static GLKMatrix3 GLKMatrix3Add(GLKMatrix3 matrixLeft, GLKMatrix3 matrixRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix whose components each represent the sum of the components found in the same positions of the two source matrices.
 

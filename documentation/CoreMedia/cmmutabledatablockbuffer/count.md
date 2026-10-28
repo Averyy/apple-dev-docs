@@ -21,7 +21,7 @@ The number of bytes in the block buffer.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This count is the sum of the number of bytes in each memory block and buffer reference held in the block buffer. Note that the buffer references may hold more data than referenced by this block buffer. This block buffer presents a contiguous range of offsets from 0 to `count`.
 

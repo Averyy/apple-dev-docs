@@ -24,7 +24,7 @@ var flags: PHASESpatialPipeline.Flags { get }
 @property (nonatomic, readonly) PHASESpatialPipelineFlags flags;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(flags:)`](./init%28flags%29.md) argument.
 

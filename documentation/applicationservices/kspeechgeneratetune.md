@@ -13,7 +13,7 @@
 var kSpeechGenerateTune: Int32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 Generate phonemes that produce a detailed tune, specified by pitch and duration information.
 

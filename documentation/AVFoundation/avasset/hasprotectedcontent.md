@@ -25,7 +25,7 @@ var hasProtectedContent: Bool { get }
 @property (nonatomic, readonly) BOOL hasProtectedContent;
 ```
 
-#### Discussion
+## Discussion
 
 Assets that contain protected content may not be playable without successful authorization, even if the value of its [`isPlayable`](./isplayable.md) property is [`true`](../../Swift/true.md).
 

@@ -16,11 +16,11 @@ Sets the transaction value for an element in this IOHIDDeviceTransactionInterfac
 IOReturn (*setValue)(void *self, IOHIDElementRef element, IOHIDValueRef value, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 This method is intended for use with transaction of direction kIOHIDTransactionDirectionTypeOutput. Use the kIOHIDTransactionOptionDefaultOutputValue option to set the default element value.
 

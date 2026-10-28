@@ -19,7 +19,7 @@ func itemTitle(at index: Int) -> String
 - (NSString *) itemTitleAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the item, or an empty string if no item exists at the specified index.
 

@@ -24,7 +24,7 @@ var denoiseStrengthMaskTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> denoiseStrengthMaskTexture;
 ```
 
-#### Discussion
+## Discussion
 
 Use this single-channel texture to mark, at a per-pixel level, areas that this denoiser ignores. To configure a pixel that the denoiser ignores, provide `1.0` as the value at that pixel’s corresponding location on this texture.
 

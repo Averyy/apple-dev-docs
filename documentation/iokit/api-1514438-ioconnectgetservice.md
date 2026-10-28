@@ -23,11 +23,11 @@ func IOConnectGetService(_ connect: io_connect_t, _ service: UnsafeMutablePointe
 kern_return_t IOConnectGetService(io_connect_t connect, io_service_t *service);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Finds the service object a connection was opened on.
 

@@ -16,7 +16,7 @@ A notification that posts after a racing wheel controller disconnects from the d
 extern NSString * const GCRacingWheelDidDisconnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCRacingWheel`](./gcracingwheel.md) object that disconnects from the device.
 

@@ -27,7 +27,7 @@ nonisolated
 func keyboardShortcut(_ shortcut: KeyboardShortcut?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Pressing the control’s shortcut while the control is anywhere in the frontmost window or scene, or anywhere in the macOS main menu, is equivalent to direct interaction with the control to perform its primary action.
 

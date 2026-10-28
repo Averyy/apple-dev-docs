@@ -25,7 +25,7 @@ var shortcutButtons: [CPDashboardButton] { get set }
 
 - [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
 
-#### Discussion
+## Discussion
 
 Provide an array of up to two shortcut buttons to display on the CarPlay Dashboard. The system manages hiding and showing these buttons when navigation is active or inactive.
 

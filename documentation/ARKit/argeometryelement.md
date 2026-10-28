@@ -20,7 +20,7 @@ class ARGeometryElement
 @interface ARGeometryElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`ARMeshGeometry`](./armeshgeometry.md) uses geometry-elements to store face data (see [`faces`](./armeshgeometry/faces.md)). Each face is defined by the primitive type, for example, [`ARGeometryPrimitiveType.triangle`](./argeometryprimitivetype/triangle.md).
 

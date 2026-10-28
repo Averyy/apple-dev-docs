@@ -20,7 +20,7 @@ A type that assigns a custom ID string to messages you send to other devices.
 protocol CustomMessageIdentifiable
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol in the custom types you use to send and receive messages during a group activity. You use a [`GroupSessionMessenger`](./groupsessionmessenger.md) object to send custom messages between the same app on different devices. In addition to the message data, [`GroupSessionMessenger`](./groupsessionmessenger.md) encodes your custom type name so that it can construct the correct type on those other devices. Use this protocol to identify your custom message types using an app-specific string instead of the type name.
 

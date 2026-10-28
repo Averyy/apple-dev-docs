@@ -23,7 +23,7 @@ var videoRotationAngleForHorizonLevelCapture: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoRotationAngleForHorizonLevelCapture;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can get immediate rotation angle updates from the rotation coordinator with key-value observation (KVO) of this property. The system calls key-value observation code on the main queue so that it has the same behavior as the [`videoRotationAngleForHorizonLevelPreview`](./videorotationangleforhorizonlevelpreview.md) property.
 

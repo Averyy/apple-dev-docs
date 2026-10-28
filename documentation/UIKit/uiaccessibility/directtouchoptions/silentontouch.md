@@ -24,7 +24,7 @@ static var silentOnTouch: UIAccessibility.DirectTouchOptions { get }
 UIAccessibilityDirectTouchOptionSilentOnTouch
 ```
 
-#### Discussion
+## Discussion
 
 You may want a user interface element that, when a person interacts with it, provides audio feedback that would conflict with VoiceOver. In a music creation app, for example, you can designate the keyboard as “silent on touch,” so that VoiceOver doesn’t compete with the keyboard sounds.
 

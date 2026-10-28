@@ -15,11 +15,11 @@ Get the upl (Universal Page List) associated with a buffer.
 void * buf_upl(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Buffer's upl if it has one, else NULL.
 
-#### Discussion
+## Discussion
 
 Buffers allocated with buf_alloc() are not returned with a upl, and traditional buffers only have a upl while an I/O is in progress.
 

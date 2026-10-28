@@ -15,7 +15,7 @@ The Place ID that identifies a feature.
 id: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For information about identifiers, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 

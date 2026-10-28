@@ -22,11 +22,11 @@ Creates an intent value expression that represents this value.
 func makeExpression() -> IntentValueExpression
 ```
 
-#### Return Value
+## Return Value
 
 An intent value expression representing this value.
 
-#### Discussion
+## Discussion
 
 This method creates an expression that the system can evaluate later to produce an intent value container.
 

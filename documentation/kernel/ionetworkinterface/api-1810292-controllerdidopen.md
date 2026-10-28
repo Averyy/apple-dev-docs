@@ -12,11 +12,11 @@ virtual bool controllerDidOpen(
  IONetworkController *controller );
 ```
 
-#### Return Value
+## Return Value
 
 Must return true in order for handleOpen() to accept the client open. If the return is false, then the controller will be closed and the client open will fail.
 
-#### Overview
+## Overview
 
 This method is called by `handleOpen()` to notify subclasses that the controller was opened. The open on the controller occurs when the interface receives the initial open request from a client. Subclasses can override this method and inspect the controller before allowing the client open. This method is called with the arbitration lock held, hence issuing I/O to the controller must be avoided to eliminate the possibility of a deadlock.
 

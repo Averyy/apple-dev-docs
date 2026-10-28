@@ -24,7 +24,7 @@ var lineHeight: CGFloat { get }
 @property (nonatomic, readonly) CGFloat lineHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This value is approximately equal to [`ascender`](./ascender.md) plus the absolute value of [`descender`](./descender.md) plus [`leading`](./leading.md). For an explanation of how these metrics relate to each other, see [`UIFont`](../uifont.md).
 

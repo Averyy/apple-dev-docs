@@ -4,7 +4,7 @@
 
 Displays a short amount of text.
 
-#### Overview
+## Overview
 
 This element is commonly used to display the title for another element and is often only a couple of words long. Here’s an example that shows the title for a monogram.
 
@@ -16,7 +16,7 @@ This element is commonly used to display the title for another element and is of
 </monogramLockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [alertTemplate](./alerttemplate.md)
 - [buttonLockup](./buttonlockup.md)

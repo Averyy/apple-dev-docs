@@ -22,7 +22,7 @@ var activityType: UIActivity.ActivityType? { get }
 @property (nonatomic, copy, readonly, nullable) UIActivityType activityType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` until the user selects an activity. At that time, the value is set and the provider object is submitted to a queue for execution. Thus, you should access this value only after your object’s [`item`](./item.md) method is called.
 

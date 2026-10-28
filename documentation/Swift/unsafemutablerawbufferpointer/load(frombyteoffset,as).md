@@ -21,11 +21,11 @@ Returns a new instance of the given type, read from the buffer pointer’s raw m
 func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of type `T`, copied from the buffer pointer’s memory.
 
-#### Discussion
+## Discussion
 
 The memory at `offset` bytes from this buffer pointer’s `baseAddress` must be properly aligned for accessing `T` and initialized to `T` or another type that is layout compatible with `T`.
 

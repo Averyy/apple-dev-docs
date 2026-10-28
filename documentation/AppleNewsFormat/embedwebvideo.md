@@ -19,11 +19,11 @@ object EmbedWebVideo
 
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `embedwebvideo` component to include a video from Dailymotion, Vimeo, or YouTube by specifying a URL for the video. Users can control playback and watch the video from inside the article. To include other types of videos in your article, use the [`Video`](./video.md) component.
 
-##### Example
+### Example
 
 ```json
 {

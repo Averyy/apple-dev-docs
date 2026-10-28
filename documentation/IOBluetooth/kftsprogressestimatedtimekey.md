@@ -19,7 +19,7 @@ var kFTSProgressEstimatedTimeKey: Unmanaged<CFString>!
 extern CFStringRef kFTSProgressEstimatedTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

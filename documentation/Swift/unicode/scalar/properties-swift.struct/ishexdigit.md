@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one that is commonly used for t
 var isHexDigit: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` for all scalars for which `isASCIIHexDigit` is `true` as well as for their CJK halfwidth and fullwidth variants.
 

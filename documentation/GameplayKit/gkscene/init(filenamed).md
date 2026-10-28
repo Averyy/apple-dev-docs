@@ -24,11 +24,11 @@ convenience init?(fileNamed filename: String)
 + (instancetype) sceneWithFileNamed:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 A new GameplayKit scene.
 
-#### Discussion
+## Discussion
 
 Use this initializer to load SpriteKit scenes (`.sks` files) created in the Xcode SpriteKit scene editor that contain associated GameplayKit entities, components, and pathfinding graphs.
 

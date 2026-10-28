@@ -5,7 +5,7 @@
 
 Learn how to affect components’ reactions to device motion and scrolling.
 
-#### Overview
+## Overview
 
 In Apple News Format, a behavior defines the physics of a component and its context and determines how a component responds to user actions. A behavior can specify the gravitational effect of a component or how the component reacts to the motion of the device. For example, a behavior can move the background of a component slightly more slowly than the user is scrolling.
 

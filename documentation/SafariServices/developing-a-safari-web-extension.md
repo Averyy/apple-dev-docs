@@ -10,11 +10,11 @@ Customize and enhance web pages by building a Safari web extension.
 - macOS 10.14+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10665: Meet Safari Web Extensions](https://developer.apple.com/videos/play/wwdc2020/10665/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

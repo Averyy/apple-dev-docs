@@ -21,7 +21,7 @@ Creates a log using the specified subsystem and category.
 convenience init(subsystem: String, category: String)
 ```
 
-#### Return Value
+## Return Value
 
  A custom log object that you can pass to other logging functions to perform logging and to determine whether a specific level of logging is in an enabled state.
 

@@ -25,7 +25,7 @@ static var deviceError: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A device error has occurred; for example, a printer running out of paper.
 

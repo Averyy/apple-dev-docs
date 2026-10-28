@@ -21,7 +21,7 @@ Set the value of one of the properties, using an enumeration value instead of a 
 mutating func setValue(_ value: Int?, for component: Calendar.Component)
 ```
 
-#### Discussion
+## Discussion
 
 The calendar and timeZone and isLeapMonth properties cannot be set by this method.
 

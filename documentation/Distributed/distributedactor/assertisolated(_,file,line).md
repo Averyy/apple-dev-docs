@@ -22,7 +22,7 @@ nonisolated
 func assertIsolated(_ message: @autoclosure () -> String = String(), file: StaticString = #fileID, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 This function’s effect varies depending on the build flag used:
 

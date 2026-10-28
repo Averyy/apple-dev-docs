@@ -23,7 +23,7 @@ struct ManagedApp
 
 - [Fetching and displaying managed apps](./fetching-and-displaying-managed-apps.md)
 
-#### Overview
+## Overview
 
 [`ManagedApp`](./managedapp.md) represents a managed app that the framework can install. Use an instance of this object to obtain information about the app.
 

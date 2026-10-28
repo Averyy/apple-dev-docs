@@ -19,7 +19,7 @@ var trackingArea: NSTrackingArea? { get }
 @property (strong, readonly, nullable) NSTrackingArea * trackingArea;
 ```
 
-#### Discussion
+## Discussion
 
 If you access this property on an event object that is not a mouse-tracking event — that is, its event type isn’t [`NSMouseEntered`](../nsmouseentered.md), [`NSMouseExited`](../nsmouseexited.md), or [`NSCursorUpdate`](../nscursorupdate.md) —AppKit raises an [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md).
 

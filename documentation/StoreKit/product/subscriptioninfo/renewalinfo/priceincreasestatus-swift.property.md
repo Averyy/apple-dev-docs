@@ -25,7 +25,7 @@ let priceIncreaseStatus: Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatu
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 For more information about price increase status, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 

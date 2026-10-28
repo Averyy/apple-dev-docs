@@ -25,7 +25,7 @@ var kAudioFormatFlagsAreAllClear: AudioFormatFlags { get }
 kAudioFormatFlagsAreAllClear
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate all the flags are clear. You must use this constant instead of `0`, because a `0` indicates that there are no format flags.
 

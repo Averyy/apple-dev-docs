@@ -19,7 +19,7 @@ func getCancel() -> String!
 - (NSString *) getCancel;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the default cancel button title of the device selector panel.
 

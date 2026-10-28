@@ -19,7 +19,7 @@ var numberOfPlanes: Int { get }
 @property (readonly) NSInteger numberOfPlanes;
 ```
 
-#### Discussion
+## Discussion
 
 If the data has a separate plane for each component—that is, [`isPlanar`](./isplanar.md) is [`true`](../../Swift/true.md)—the value of this property is the number of samples per pixel. If the data is meshed, the value of this property is `1`.
 

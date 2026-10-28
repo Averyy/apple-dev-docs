@@ -20,7 +20,7 @@ Dequeues a configured reusable supplementary view object.
 @preconcurrency func dequeueConfiguredReusableSupplementary<Supplementary>(using registration: UICollectionView.SupplementaryRegistration<Supplementary>, for indexPath: IndexPath) -> Supplementary where Supplementary : UICollectionReusableView
 ```
 
-#### Return Value
+## Return Value
 
 A configured reusable supplementary view object.
 

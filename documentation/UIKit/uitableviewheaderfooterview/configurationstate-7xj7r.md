@@ -20,7 +20,7 @@ The current configuration state of the view.
 @objc(_bridgedConfigurationState) @preconcurrency dynamic var configurationState: UIViewConfigurationState { get }
 ```
 
-#### Discussion
+## Discussion
 
 To add your own custom state, see [`UIConfigurationStateCustomKey`](../uiconfigurationstatecustomkey.md).
 

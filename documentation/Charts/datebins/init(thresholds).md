@@ -22,7 +22,7 @@ nonisolated
 init(thresholds: [Date])
 ```
 
-#### Return Value
+## Return Value
 
 The bins.
 

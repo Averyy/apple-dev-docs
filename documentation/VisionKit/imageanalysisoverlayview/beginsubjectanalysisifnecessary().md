@@ -16,7 +16,7 @@ Begins subject analysis on the overlay view’s image.
 final func beginSubjectAnalysisIfNecessary()
 ```
 
-#### Discussion
+## Discussion
 
 Subject analysis begins automatically without calling this method moments after the overlay view’s image displays onscreen. The framework ignores calls to this method if subject analysis is already in progress or complete.
 

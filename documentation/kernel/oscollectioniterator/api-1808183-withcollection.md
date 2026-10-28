@@ -12,7 +12,7 @@ static OSCollectionIterator * withCollection(
  const OSCollection *inColl);
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of OSCollectionIterator, or `NULL` on failure.
 

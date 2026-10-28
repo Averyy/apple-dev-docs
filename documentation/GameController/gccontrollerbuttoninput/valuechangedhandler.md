@@ -24,7 +24,7 @@ var valueChangedHandler: GCControllerButtonValueChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCControllerButtonValueChangedHandler valueChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this handler when you want to know when the pressure level changes.
 

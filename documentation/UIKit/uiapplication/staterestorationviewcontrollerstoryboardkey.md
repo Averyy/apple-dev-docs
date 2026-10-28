@@ -23,7 +23,7 @@ class let stateRestorationViewControllerStoryboardKey: String
 extern NSString * const UIStateRestorationViewControllerStoryboardKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`UIStoryboard`](../uistoryboard.md) object representing the storyboard from which a view controller was initially obtained. You don’t need to write this key to the coder yourself. Each [`UIViewController`](../uiviewcontroller.md) class automatically writes this key to the coder during the state preservation process.
 

@@ -21,7 +21,7 @@ enum CNSpatialAudioRenderingStyle
 enum CNSpatialAudioRenderingStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Standard rendering styles for Audio Mix type effects
 

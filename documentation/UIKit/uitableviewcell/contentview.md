@@ -23,7 +23,7 @@ var contentView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The content view of a [`UITableViewCell`](../uitableviewcell.md) object is the default superview for content that the cell displays. If you want to customize cells by simply adding additional views, you should add them to the content view so they position appropriately as the cell transitions in to and out of editing mode.
 

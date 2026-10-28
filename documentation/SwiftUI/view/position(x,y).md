@@ -27,11 +27,11 @@ func position(x: CGFloat = 0, y: CGFloat = 0) -> some View
 - [Building layouts with stack views](../building-layouts-with-stack-views.md)
 - [Making fine adjustments to a view’s position](../making-fine-adjustments-to-a-view-s-position.md)
 
-#### Return Value
+## Return Value
 
 A view that fixes the center of this view at `x` and `y`.
 
-#### Discussion
+## Discussion
 
 Use the `position(x:y:)` modifier to place the center of a view at a specific coordinate in the parent view using an `x` and `y` offset.
 

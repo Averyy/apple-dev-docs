@@ -15,7 +15,7 @@ The center of a head-tracked spatial experience.
 @interface CAAnchoringStrategy : NSObject
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the `SpatialAudioExperiences.AnchoringStrategy` Swift type.
 

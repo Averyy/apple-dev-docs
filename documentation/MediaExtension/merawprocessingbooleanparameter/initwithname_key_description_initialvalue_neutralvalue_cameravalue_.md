@@ -15,7 +15,7 @@ Creates a Boolean parameter object with the initial, neutral, and camera values.
 - (instancetype) initWithName:(NSString *) name key:(NSString *) key description:(NSString *) description initialValue:(BOOL) initialValue neutralValue:(BOOL) neutralValue cameraValue:(BOOL) cameraValue;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.Boolean`](../merawprocessingparameter/boolean.md).
 

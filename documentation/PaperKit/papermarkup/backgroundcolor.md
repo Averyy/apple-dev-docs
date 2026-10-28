@@ -19,7 +19,7 @@ The background color of the paper.
 var backgroundColor: CGColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `nil`, which uses a default color based on the current user interface style.
 

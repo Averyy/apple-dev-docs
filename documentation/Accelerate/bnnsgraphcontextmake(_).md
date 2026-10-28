@@ -25,11 +25,11 @@ func BNNSGraphContextMake(_ graph: bnns_graph_t) -> bnns_graph_context_t
 bnns_graph_context_t BNNSGraphContextMake(const bnns_graph_t graph);
 ```
 
-#### Return Value
+## Return Value
 
 A compiled graph context object. If the operation fails, the graph object’s [`data`](./bnns_graph_context_t/data.md) property is `nil`.
 
-#### Discussion
+## Discussion
 
 To prevent memory leaks, call [`BNNSGraphContextDestroy(_:)`](./bnnsgraphcontextdestroy%28_%29.md) when you’re finished using the graph context.
 

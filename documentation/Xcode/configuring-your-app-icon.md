@@ -5,7 +5,7 @@
 
 Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: To create your app icon using Icon Composer for all variants, including different platforms and appearances, see [Creating your app icon using Icon Composer](./creating-your-app-icon-using-icon-composer.md).
 
@@ -13,7 +13,7 @@ Every app has a distinct app icon that communicates the app’s purpose and make
 
 For design guidance on app icons, see [Human Interface Guidelines > App icons](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
-##### Create an app icon
+### Create an app icon
 
 When you create your project from a template, it automatically includes a default asset catalog (`Assets.xcassets`) that contains the `AppIcon`. If you don’t have a default asset catalog or existing `AppIcon` or you want to provide an alternate, you can add an app icon to an asset catalog manually:
 
@@ -21,7 +21,7 @@ When you create your project from a template, it automatically includes a defaul
 2. Click the Add button (+) at the bottom of the outline view.
 3. In the pop-up menu, choose *OS variant* > *OS variant* App Icon. Xcode creates a new app icon set or image stack with the name `AppIcon`.
 
-##### Specify app icon variations
+### Specify app icon variations
 
 Variations of your app icon appear throughout the system in places like the Home View, Settings, and search results:
 
@@ -46,7 +46,7 @@ For each platform your app supports, add a single image that Xcode can use to ge
 2. In the Asset Catalog, select the icon.
 3. From the Finder, drag image variations of the app icon to the image wells in the detail area of the Asset Catalog in Xcode that match their resolutions and use cases. visionOS and tvOS app icons combine a stack of multiple image layers to create a sense of depth. For tvOS apps, the asset catalog contains an App Icon & Top Shelf Image folder with the different app icon and launch image sets.
 
-##### Add dark and tinted icon variants to iOS and iPadOS
+### Add dark and tinted icon variants to iOS and iPadOS
 
 iOS and iPadOS support three stylistic variations for app icons: Light, Dark, and Tinted. You can create your own variations to ensure that each one looks exactly the way you way you want.
 
@@ -66,7 +66,7 @@ If you prefer, you can take advantage of the system’s automatically generated 
 
 For design guidance specific to iOS and iPadOS, see [Human Interface Guidelines > App Icons](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
-##### Configure the layers of an image stack
+### Configure the layers of an image stack
 
 By default, visionOS and tvOS app icons are constructed with three layers. This is the maximum number of layers visionOS icons support but you can use up to five layers when constructing tvOS icons. To add a layer, Click the Add button, choose *OS variant* > *OS variant* App Icon Layer. To remove a layer, select the layer and click the Remove button (-).
 
@@ -76,7 +76,7 @@ Add images to each layer by dragging them from the Finder into the image wells i
 
 > **Note**: You can use Parallax Previewer app or Parallax Exporter plug-in to create and preview Layer Source Representation (.lsr and .xlsr) files that you can import into your Asset Catalog in Xcode. Save your file in the LSR file format to import a tvOS icon into Xcode, and save in the XLSR file format to import a visionOS icon. Download these from the [Apple Design Resources](https://developer.apple.com/design/resources) site.
 
-##### Specify an App Store icon
+### Specify an App Store icon
 
 If you distribute your app through the App Store, you must provide app icon imagery to use in the App Store. In the Project navigator, select an asset catalog and add icon images to the appropriate image wells in an app icon set or image stack. The App Store image well location varies by platform.
 
@@ -90,7 +90,7 @@ If you distribute your app through the App Store, you must provide app icon imag
 | visionOS | Drag images to the image wells for the layers of your visionOS App Icon stack. The App Store generates an icon from the layers of the image stack. |
 | watchOS | For the iOS target, drag an icon image to the iOS 1,024pt image well. For the WatchKit App target, drag an icon image to the watchOS image well. |
 
-##### Change the default app icon set
+### Change the default app icon set
 
 If you don’t create your project from a template, or you want to change your default app icon set, specify which one to use in your target’s build settings.
 

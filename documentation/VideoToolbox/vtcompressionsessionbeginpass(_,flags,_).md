@@ -24,7 +24,7 @@ func VTCompressionSessionBeginPass(_ session: VTCompressionSession, flags beginP
 extern OSStatus VTCompressionSessionBeginPass(VTCompressionSessionRef session, VTCompressionSessionOptionFlags beginPassFlags, uint32_t *reserved);
 ```
 
-#### Discussion
+## Discussion
 
 During multipass encoding, this function must be called before [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md).
 

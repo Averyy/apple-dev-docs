@@ -22,7 +22,7 @@ func presentationAnimationDidFinish()
 - (void) presentationAnimationDidFinish;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to avoid performing lengthy work during initialization or the iOS view controller methods [`viewWillAppear(_:)`](../../UIKit/uiviewcontroller/viewwillappear%28_%29.md) and [`viewDidAppear(_:)`](../../UIKit/uiviewcontroller/viewdidappear%28_%29.md).
 

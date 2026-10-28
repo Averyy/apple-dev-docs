@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioControl maximum value attribute.
 #define kIOAudioLevelControlMaxValueKey
 ```
 
-#### Discussion
+## Discussion
 
 The value returned by this key is a 32-bit integer representing the maximum value for the IOAudioControl. This is currently only valid for Level controls or other driver-defined controls that have a minimum and maximum value.
 

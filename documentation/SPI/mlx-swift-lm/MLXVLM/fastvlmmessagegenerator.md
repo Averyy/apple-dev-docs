@@ -17,7 +17,7 @@ This message generator adheres to the following format:
 struct FastVLMMessageGenerator
 ```
 
-#### Overview
+## Overview
 
 - Image precedes text content
 - Empty system messages are removed - the chat template applies a default one in this case

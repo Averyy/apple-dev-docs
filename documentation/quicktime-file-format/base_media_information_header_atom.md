@@ -6,7 +6,7 @@
 
 An atom that indicates that this media information atom pertains to a base media.
 
-#### Overview
+## Overview
 
 The layout of a base media information header atom is as follows.
 

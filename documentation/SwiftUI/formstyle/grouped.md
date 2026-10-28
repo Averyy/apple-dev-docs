@@ -24,7 +24,7 @@ static var grouped: GroupedFormStyle { get }
 
 Available when `Self` is `GroupedFormStyle`.
 
-#### Discussion
+## Discussion
 
 Rows in a grouped rows form have leading aligned labels and trailing aligned controls within visually grouped sections.
 

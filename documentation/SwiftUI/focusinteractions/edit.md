@@ -21,7 +21,7 @@ The view captures input from non-spatial sources like a keyboard or Digital Crow
 static let edit: FocusInteractions
 ```
 
-#### Discussion
+## Discussion
 
 Views that support focus-driven editing interactions become focused when the user taps or clicks on them, or when the user issues a focus movement command.
 

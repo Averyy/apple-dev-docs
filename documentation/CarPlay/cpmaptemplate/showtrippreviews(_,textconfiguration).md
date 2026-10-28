@@ -21,7 +21,7 @@ func showTripPreviews(_ tripPreviews: [CPTrip], textConfiguration: CPTripPreview
 - (void) showTripPreviews:(NSArray<CPTrip *> *) tripPreviews textConfiguration:(CPTripPreviewTextConfiguration *) textConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to display upcoming trips or multiple trip options, such as for search results. Trip previews can appear over the active navigation session.
 

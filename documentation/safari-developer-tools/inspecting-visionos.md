@@ -5,11 +5,11 @@
 
 Inspect webpages, service workers, extensions, and content inside apps in visionOS from a Mac on the same network.
 
-#### Overview
+## Overview
 
 Web content in visionOS is inspectable when you connect the device to a Mac. You can also use simulators on a Mac with Apple silicon to test your webpages and apps without a physical device. To learn more about device simulators, see [Installing Xcode and Simulators](./installing-xcode-and-simulators.md).
 
-#### Enable inspecting your device from a Mac on the same network
+## Enable inspecting your device from a Mac on the same network
 
 To inspect web content on a visionOS device, you must enable Web Inspector.
 
@@ -30,11 +30,11 @@ Once paired, you can inspect content on the visionOS device like any other devic
 
 Alternatively, you can also [pair with the device using Xcode](https://help.apple.com/xcode/mac/current/#/devbc48d1bad).
 
-##### visionOS simulators
+### visionOS simulators
 
 Simulators come with **Web Inspector** already enabled. The Develop menu lists currently booted simulators just like connected devices.
 
-#### Inspect webpages
+## Inspect webpages
 
 Webpages you open in Safari in visionOS appear in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari groups webpages and other content by app, making finding the webpage you want to inspect easier.
 
@@ -42,29 +42,29 @@ Find the webpage you want to inspect, then select it to open a new Web Inspector
 
 For webpages, some additional options are available only while inspecting a connected device or a simulator to allow you to override the user agent, disable cross-origin restrictions, disable site-specific quirks, and more. See [Device Settings](https://webkit.org/web-inspector/device-settings/).
 
-#### Inspect service workers
+## Inspect service workers
 
 [Service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
 You can only inspect service workers that are currently running. To inspect service workers, open the **Develop** menu, find the menu item for the visionOS device you want to inspect and select them from the **Service Workers** section near the bottom of the menu. This section doesn’t appear if there aren’t any service workers currently running.
 
-#### Inspect extensions
+## Inspect extensions
 
-Extensions can run scripts or create webpages in several places, and how you inspect them varies depending on the content. [Learn more about debugging web extensions…](../SafariServices/safari_web_extensions/troubleshooting_your_safari_web_extension.md#3734523)
+Extensions can run scripts or create webpages in several places, and how you inspect them varies depending on the content. [Learn more about debugging web extensions…](../SafariServices/troubleshooting-your-safari-web-extension.md#3734523)
 
-##### Content scripts
+### Content scripts
 
 To debug the scripts that web extensions inject into webpages, first [inspect the webpage](./inspecting-visionos.md#Inspect-webpages). Open Web Inspector, then click the Sources tab and select your content script file from the Extension Scripts folder at the lower left. Select your extension’s execution context using the selector in the lower-right corner of the inspector. Set breakpoints by clicking the gutter with line numbers in the source view. Inspect other source files for your extension, such as style sheets, in the Sources area at the lower left.
 
-##### Background scripts
+### Background scripts
 
 To debug background scripts, open the **Develop** menu, find the menu item for the device you want to inspect, and then find the item with the name of the extension, “**Extension Background Page**”, and the filename of the background script.
 
-##### Toolbar pop-up
+### Toolbar pop-up
 
 To debug your extension’s pop-up, open your pop-up on the device. From the **Develop** menu, find the menu item for the device you want to inspect, and then find the item with the name of the extension, “**Extension Pop-up Page**”, and the filename of the pop-up’s HTML.
 
-#### Inspect JavaScript and webpages in apps
+## Inspect JavaScript and webpages in apps
 
 You can make [`WKWebView`](../WebKit/wkwebview.md)s and [`JSContext`](../JavaScriptCore/jscontext.md)s in apps inspectable, allowing anyone who enables **Web Inspector** on the device to inspect them. Content you can inspect appears in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari separates webpages and JavaScript contexts by app, making finding the content you want to inspect easier.
 

@@ -16,7 +16,7 @@ Options that indicate whether the installation of an app proceeds when a person 
 enum InstallConfirmationResult
 ```
 
-#### Overview
+## Overview
 
 The [`InstallConfiguration`](./installconfiguration.md) initializer [`init(install:confirmInstall:)`](./installconfiguration/init%28install,confirminstall%29.md) takes a closure as a parameter that returns a case of this enumeration.
 

@@ -21,7 +21,7 @@ An effect that scales all layers simultaneously.
 - (instancetype) effectWithWholeSymbol;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that scales all layers simultaneously.
 

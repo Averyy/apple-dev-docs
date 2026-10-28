@@ -20,7 +20,7 @@ var imageResolution: CGSize { get }
 @property (nonatomic, readonly) CGSize imageResolution;
 ```
 
-#### Discussion
+## Discussion
 
 Video format sizes are relative to the native sensor orientation of the device camera, and as such are always landscape-oriented.
 

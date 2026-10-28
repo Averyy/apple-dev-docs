@@ -14,7 +14,7 @@ func simd_mul(_ p: simd_quath, _ q: simd_quath) -> simd_quath
 static simd_quath simd_mul(simd_quath p, simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The product of the quaternions `p` and `q`.
 

@@ -15,11 +15,11 @@ Defines a product that vends a package plugin target for use by clients of the p
 static func plugin(name: String, targets: [String]) -> Product
 ```
 
-#### Return Value
+## Return Value
 
 A `Product` instance.
 
-#### Discussion
+## Discussion
 
 It is not necessary to define a product for a plugin that is only used within the same package where you define it. All the targets listed must be plugin targets in the same package as the product. Swift Package Manager will apply them to any client targets of the product in the order they are listed.
 

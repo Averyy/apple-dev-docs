@@ -25,11 +25,11 @@ class func joint(withBodyA bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchor: C
 + (SKPhysicsJointPin *) jointWithBodyA:(SKPhysicsBody *) bodyA bodyB:(SKPhysicsBody *) bodyB anchor:(CGPoint) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 A new pin joint.
 
-#### Discussion
+## Discussion
 
 You must add the joint to a physics world associated with the scene before it takes effect.
 

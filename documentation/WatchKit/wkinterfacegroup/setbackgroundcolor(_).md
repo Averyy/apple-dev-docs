@@ -19,7 +19,7 @@ func setBackgroundColor(_ color: UIColor?)
 - (void) setBackgroundColor:(UIColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not specify a custom background color or if you set the custom color to `nil`, the group uses the color assigned to the group object in your storyboard file. The default background color is clear.
 

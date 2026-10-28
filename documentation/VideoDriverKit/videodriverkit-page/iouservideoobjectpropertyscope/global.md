@@ -15,7 +15,7 @@ The scope for properties that apply to the object as a whole.
 Global
 ```
 
-#### Discussion
+## Discussion
 
 All objects have a global scope, and for most objects, it is their only scope.
 

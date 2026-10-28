@@ -11,11 +11,11 @@ Deletes negative keywords from a campaign.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To delete campaign negative keywords, use the associated `campaignId` in the URI. Include each `keywordId` in the payload.
 
-##### Payload example: Delete campaign negative keywords
+### Payload example: Delete campaign negative keywords
 
 **Request**:
 

@@ -35,7 +35,7 @@ var localPlayerScore: GKScore? { get }
 @property (atomic, strong, readonly, nullable) GKScore * localPlayerScore;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid until a call to [`loadScores(completionHandler:)`](./loadscores%28completionhandler%29.md) is complete. Afterward, it contains a score object representing the local player’s score on the leaderboard according to the filters you apply to the query.
 

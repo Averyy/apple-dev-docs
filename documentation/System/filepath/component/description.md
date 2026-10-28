@@ -21,7 +21,7 @@ A textual representation of the path component.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the content of the path component isn’t a well-formed Unicode string, this replaces invalid bytes with U+FFFD. See `String.init(decoding:)`.
 

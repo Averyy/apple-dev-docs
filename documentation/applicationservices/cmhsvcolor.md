@@ -17,7 +17,7 @@ typedef struct CMHSVColor {
 } CMHSVColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the HSV color space is composed of `hue`, `saturation`, and `value` component values. Each color component is expressed as a numeric value within the range of 0 to 65535 inclusive. The `hue` value represents a fraction of a circle in which red is positioned at 0. 
 

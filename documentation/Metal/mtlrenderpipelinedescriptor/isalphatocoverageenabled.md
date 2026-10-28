@@ -24,7 +24,7 @@ var isAlphaToCoverageEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isAlphaToCoverageEnabled) BOOL alphaToCoverageEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

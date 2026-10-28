@@ -20,7 +20,7 @@ var errSecCSResourceNotSupported: OSStatus { get }
 errSecCSResourceNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 Resources other than directories, plain files, and symbolic links are not supported.
 

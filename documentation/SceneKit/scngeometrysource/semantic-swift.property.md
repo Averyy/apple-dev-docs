@@ -25,7 +25,7 @@ var semantic: SCNGeometrySource.Semantic { get }
 @property (nonatomic, readonly) SCNGeometrySourceSemantic semantic;
 ```
 
-#### Discussion
+## Discussion
 
 A semantic describes an attribute for each vertex, such as position, color, surface normal vector, or texture coordinates.
 

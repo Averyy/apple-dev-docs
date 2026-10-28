@@ -5,7 +5,7 @@
 
 Add augmented reality functionality to your 3D content using USD schemas.
 
-#### Overview
+## Overview
 
 Universal Scene Description (USD) is a widely-supported specification for the interchange and storage of 3D graphic data. USD files are the preferred interchange format for apps displaying 3D and AR content using the [ARKit](../ARKit/ARKit.md) and [RealityKit](../RealityKit/RealityKit.md) frameworks. Apple, in collaboration with Pixar, developed a set of schemas to extend USD for AR use cases. These schemas, among other things, add the ability to:
 
@@ -21,7 +21,7 @@ To enable AR features in assets from a third-party digital content-creation (DCC
 
 > **Note**:  These new schemas (see [Schema definitions for third-party DCCs](./schema-definitions-for-third-party-dccs.md)) are included in the Universal Scene Description specification as an addendum and are marked as preliminary. The addendum also adds metadata (name-value pairs; see [Metadata](https://openusd.org/release/glossary.html#usdglossary-metadata)), and new data properties ([Property](https://openusd.org/release/glossary.html#usdglossary-property)). To provide feedback on the addendum, use the [Feedback Assistant](https://feedbackassistant.apple.com/welcome).
 
-##### Implement AR functionality
+### Implement AR functionality
 
 The following illustration depicts a virtual castle rendered by a *runtime*, the app or system framework that implements the AR functionality described in the schemas. The prim for the virtual castle (USD refers to individual units of 3D content as *prims;* see [UsdPrim](https://openusd.org/docs/api/class_usd_prim.html)) instructs the runtime to place the castle on a known image in the physical environment, called the image anchor. When the user comes into proximity with the anchor, the runtime displays the 3D visualization of the castle. Falling snowflakes represent additional prims that behave as if in accordance with gravity, and disappear as they approach a real-world surface.
 

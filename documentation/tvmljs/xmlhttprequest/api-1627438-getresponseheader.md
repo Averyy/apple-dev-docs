@@ -29,11 +29,11 @@ DOMString? getResponseHeader(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The header field value.
 
-#### Discussion
+## Discussion
 
 If the header value is `Set-Cookie` or `Set-Cookie2`, the value inside the header will not be returned. This method returns `null` if no response has been received or if the specified header doesn’t exist.
 

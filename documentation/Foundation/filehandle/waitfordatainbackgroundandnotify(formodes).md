@@ -25,7 +25,7 @@ func waitForDataInBackgroundAndNotify(forModes modes: [RunLoop.Mode]?)
 - (void) waitForDataInBackgroundAndNotifyForModes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 When the data becomes available, this method posts a [`NSFileHandleDataAvailable`](../nsnotification/name-swift.struct/nsfilehandledataavailable.md) notification on the current thread. This method differs from [`waitForDataInBackgroundAndNotify()`](./waitfordatainbackgroundandnotify%28%29.md) in that `modes` specifies the run-loop mode (or modes) in which [`NSFileHandleDataAvailable`](../nsnotification/name-swift.struct/nsfilehandledataavailable.md) can be posted.
 

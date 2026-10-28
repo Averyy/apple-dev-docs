@@ -25,7 +25,7 @@ func CGImageMetadataCopyTags(_ metadata: CGImageMetadata) -> CFArray?
 extern CFArrayRefCGImageMetadataCopyTags(CGImageMetadataRef metadata);
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains a shallow copy of all root-level [`CGImageMetadataTag`](./cgimagemetadatatag.md) objects. This array contains only the root-level tags. It doesn’t contain any nested tags.
 

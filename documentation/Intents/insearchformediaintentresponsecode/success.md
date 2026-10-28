@@ -24,7 +24,7 @@ case success
 INSearchForMediaIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully searched for the media.
 

@@ -19,7 +19,7 @@ func AXObserverGetTypeID() -> CFTypeID
 CFTypeID AXObserverGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the CFTypeID of the AXObserverRef type.
 

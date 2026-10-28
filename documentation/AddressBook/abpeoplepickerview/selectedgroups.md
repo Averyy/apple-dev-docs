@@ -19,7 +19,7 @@ var selectedGroups: [Any]! { get }
 @property (readonly) NSArray * selectedGroups;
 ```
 
-#### Discussion
+## Discussion
 
 The selected groups are returned as an array of [`ABGroup`](../abgroup.md) objects.
 

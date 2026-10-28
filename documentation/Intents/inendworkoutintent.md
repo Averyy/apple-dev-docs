@@ -23,13 +23,13 @@ class INEndWorkoutIntent
 @interface INEndWorkoutIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INEndWorkoutIntent`](./inendworkoutintent.md) object when the user asks to finish an in-progress workout. Finishing a workout stops it and records any progress made toward the workout’s goals. Use this intent object to validate the workout parameters.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INEndWorkoutIntentHandling`](./inendworkoutintenthandling.md) protocol. Your handler should confirm the request and create an [`INEndWorkoutIntentResponse`](./inendworkoutintentresponse.md) object that indicates it’s possible to end the workout. For the successful handling of the intent, SiriKit launches your app and passes it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object your app must then use to end the workout.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

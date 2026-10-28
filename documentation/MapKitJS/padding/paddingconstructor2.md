@@ -15,7 +15,7 @@ Creates a padding object and initializes its top inset margin with the provided 
 constructor(top: number);
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the other padding values to `0`.
 

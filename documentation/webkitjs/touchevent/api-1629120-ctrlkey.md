@@ -16,7 +16,7 @@ A Boolean value indicating whether the control key is pressed.
 readonly attribute boolean ctrlKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the control key is pressed; otherwise, it is not. If there is no keyboard, this value is `false`.
 

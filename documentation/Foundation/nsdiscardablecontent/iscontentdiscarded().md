@@ -26,7 +26,7 @@ func isContentDiscarded() -> Bool
 - (BOOL) isContentDiscarded;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the content has been discarded; otherwise, [`false`](../../Swift/false.md).
 

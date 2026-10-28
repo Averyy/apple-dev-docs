@@ -9,7 +9,7 @@
 SegmentFunction outSeg;
 ```
 
-#### Overview
+## Overview
 
 The action method called when an event has been delivered
 

@@ -25,7 +25,7 @@ var frictionSlip: CGFloat { get set }
 @property CGFloat frictionSlip;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `1.0`. Lower values result in better traction, and higher values make the wheel more likely to slip (causing it to spin freely instead of moving the vehicle).
 

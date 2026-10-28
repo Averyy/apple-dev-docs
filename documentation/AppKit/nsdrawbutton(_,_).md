@@ -19,7 +19,7 @@ func NSDrawButton(_ rect: NSRect, _ clipRect: NSRect)
 extern void NSDrawButton(NSRect rect, NSRect clipRect);
 ```
 
-#### Discussion
+## Discussion
 
 Draws a gray-filled rectangle, used to signify a user-interface button. Since this function is often used to draw the border of a view, the `aRect` parameter typically contains the view’s bounds rectangle. For an Aqua button, use an [`NSButton`](./nsbutton.md) object instead.
 

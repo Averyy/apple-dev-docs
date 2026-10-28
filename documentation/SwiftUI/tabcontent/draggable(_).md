@@ -20,7 +20,7 @@ Activates this tab as the source of a drag and drop operation. This tab can only
 @preconcurrency func draggable<T>(_ payload: @autoclosure @escaping () -> T) -> some TabContent<Self.TabValue> where T : Transferable
 ```
 
-#### Discussion
+## Discussion
 
 Applying the `draggable(_:)` modifier adds the appropriate gestures for drag and drop to this tab. When a drag operation begins, a rendering of the tab is generated and used as the preview image.
 

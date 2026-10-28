@@ -22,7 +22,7 @@ func supportedOutputSettingsKeys(for connection: AVCaptureConnection) -> [String
 - (NSArray<NSString *> *) supportedOutputSettingsKeysForConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 An array of keys that can be set in the [`setOutputSettings(_:for:)`](./setoutputsettings%28_,for%29.md)method.
 

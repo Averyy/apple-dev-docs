@@ -25,7 +25,7 @@ var allowsCellularAccess: Bool { get set }
 @property BOOL allowsCellularAccess;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether tasks in sessions based on this session configuration are allowed to make connections over a cellular network.
 

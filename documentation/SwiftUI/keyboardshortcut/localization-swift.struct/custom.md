@@ -19,7 +19,7 @@ Don’t use automatic shortcut remapping.
 static let custom: KeyboardShortcut.Localization
 ```
 
-#### Discussion
+## Discussion
 
 When you use this mode, you have to take care of international use-cases separately.
 

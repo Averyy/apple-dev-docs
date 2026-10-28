@@ -25,7 +25,7 @@ class DateIntervalFormatter
 @interface NSDateIntervalFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 A [`DateIntervalFormatter`](./dateintervalformatter.md) object creates user-readable strings from pairs of dates. Use a date interval formatter to create user-readable strings of the form *<start>* `-` *<end>* for your app’s interface, where *<start>* and *<end>* are date values that you supply. The formatter uses locale and language information, along with custom formatting options, to define the content of the resulting string. You can specify different styles for the date and time information in each date value.
 

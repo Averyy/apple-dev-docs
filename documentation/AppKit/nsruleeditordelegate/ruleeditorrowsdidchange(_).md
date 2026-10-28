@@ -20,7 +20,7 @@ optional func ruleEditorRowsDidChange(_ notification: Notification)
 - (void) ruleEditorRowsDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method, [`NSRuleEditor`](../nsruleeditor.md) automatically registers its delegate to receive [`rowsDidChangeNotification`](../nsruleeditor/rowsdidchangenotification.md) notifications.
 

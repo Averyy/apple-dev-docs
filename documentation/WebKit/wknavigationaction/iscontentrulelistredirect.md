@@ -21,7 +21,7 @@ var isContentRuleListRedirect: Bool { get }
 @property (nonatomic, readonly) BOOL isContentRuleListRedirect;
 ```
 
-#### Discussion
+## Discussion
 
 Whether or not the navigation is a redirect from a content rule list.
 

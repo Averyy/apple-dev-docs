@@ -20,7 +20,7 @@ The entitlement the system requires for an app to use the Wi-Fi Aware framework.
 - `Subscribe`: A string that states your app’s intent to subscribe to services defined in your app’s [`WiFiAwareServices`](../information-property-list/wifiawareservices.md) `Info.plist` key.
 - `Publish`: A string that states your app’s intent to publish services defined in your app’s [`WiFiAwareServices`](../information-property-list/wifiawareservices.md) `Info.plist` key.
 
-#### Discussion
+## Discussion
 
 This entitlement works with the [Wi-Fi Aware](../../WiFiAware/WiFiAware.md) framework, which enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point.
 

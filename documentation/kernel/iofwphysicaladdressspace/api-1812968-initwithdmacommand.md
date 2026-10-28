@@ -13,7 +13,7 @@ virtual bool initWithDMACommand(
  IODMACommand *command );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if success, else false
 

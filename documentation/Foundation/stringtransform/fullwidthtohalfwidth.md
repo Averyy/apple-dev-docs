@@ -25,7 +25,7 @@ static let fullwidthToHalfwidth: StringTransform
 extern NSStringTransform const NSStringTransformFullwidthToHalfwidth;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

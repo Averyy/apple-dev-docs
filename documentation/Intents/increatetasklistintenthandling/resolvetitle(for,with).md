@@ -29,7 +29,7 @@ optional func resolveTitle(for intent: INCreateTaskListIntent) async -> INSpeaka
 - (void) resolveTitleForCreateTaskList:(INCreateTaskListIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the title for a task list. Use the intent object to obtain the title, if any, suggested by the user. The title represents the name of the task list.
 

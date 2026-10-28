@@ -25,7 +25,7 @@ convenience init?(from data: Data)
 + (instancetype) recordFromData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A TLV record, or `nil` if `data` does not specify a valid record.
 

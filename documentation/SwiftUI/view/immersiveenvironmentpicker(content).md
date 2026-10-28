@@ -16,7 +16,7 @@ nonisolated
 func immersiveEnvironmentPicker<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 These items are added alongside recently used system environments.
 

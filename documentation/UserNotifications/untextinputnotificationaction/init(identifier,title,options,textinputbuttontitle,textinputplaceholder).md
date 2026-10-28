@@ -24,7 +24,7 @@ convenience init(identifier: String, title: String, options: UNNotificationActio
 + (instancetype) actionWithIdentifier:(NSString *) identifier title:(NSString *) title options:(UNNotificationActionOptions) options textInputButtonTitle:(NSString *) textInputButtonTitle textInputPlaceholder:(NSString *) textInputPlaceholder;
 ```
 
-#### Return Value
+## Return Value
 
 A new text input action object.
 

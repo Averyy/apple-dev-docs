@@ -20,7 +20,7 @@ An entitlement that grants access to CoreTelephony services.
 - `public-cellular-plan`: Add this value to discover whether a device supports eSIM, add a carrier eSIM, and update eSIM information using [`CTCellularPlanProvisioning`](../../CoreTelephony/ctcellularplanprovisioning.md). To request the entitlement with this value, fill out the [eSIM Access Entitlement request form](https://developer.apple.com/contact/request/esim-access-entitlement/).
 - `public-subscriber-info`: Add this value to get information about a cellular network subscriber using [`CTSubscriber`](../../CoreTelephony/ctsubscriber.md). To request the entitlement with this value, fill out the [Carrier Refresh Token request form](https://developer.apple.com/contact/request/carrier-refresh-token/).
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app, and include specific values in the array, to use [Core Telephony](../../CoreTelephony/CoreTelephony.md) APIs. This entitlement is also available to App Clips. For more information about functionality available to App Clips, see [Choosing the right functionality for your App Clip](../../AppClip/choosing-the-right-functionality-for-your-app-clip.md).
 

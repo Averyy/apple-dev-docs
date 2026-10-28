@@ -21,7 +21,7 @@ A type that represents a URL.
 static var url: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.url`.
 

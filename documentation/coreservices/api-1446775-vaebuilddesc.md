@@ -19,11 +19,11 @@ func vAEBuildDesc(_ dst: UnsafeMutablePointer<AEDesc>!, _ error: UnsafeMutablePo
 OSStatus vAEBuildDesc(AEDesc *dst, AEBuildError *error, const char *src, va_list args);
 ```
 
-#### Return Value
+## Return Value
 
 A numeric result code indicating the success of the call. A value of `AEBuildSyntaxNoErr` (zero) means the call succeeded. You can use the `error` parameter to discover information about other errors. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Passing an argument list to `vAEBuildDesc` corresponds to passing a series of individual parameters to the [`AEBuildDesc`](./api-1573758-aebuilddesc.md) function.
 

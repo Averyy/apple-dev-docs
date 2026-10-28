@@ -20,7 +20,7 @@ var model: String? { get set }
 @property (atomic, strong, nullable) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`deviceModel`](../cmioextensionproperty/devicemodel.md).
 

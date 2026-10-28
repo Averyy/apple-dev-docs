@@ -21,7 +21,7 @@ class CLKComplicationTemplateCircularSmallRingImage
 @interface CLKComplicationTemplateCircularSmallRingImage : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.circularSmall`](./clkcomplicationfamily/circularsmall.md) family.
 

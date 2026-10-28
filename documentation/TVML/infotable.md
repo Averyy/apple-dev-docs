@@ -4,7 +4,7 @@
 
 Displays contained element information in a vertical format, with each successive element directly below the previous element.
 
-#### Overview
+## Overview
 
 Here’s an example that displays information vertically inside of a `ratingCard` element.
 
@@ -35,13 +35,13 @@ Here’s an example that displays information vertically inside of a `ratingCard
 </ratingCard>
 ```
 
-##### Subelements of infoTable
+### Subelements of infoTable
 
 - [footer](./footer.md)
 - [header](./header.md)
 - [info](./info.md)
 
-##### Elements that Use infoTable
+### Elements that Use infoTable
 
 - [descriptiveAlertTemplate](./descriptivealerttemplate.md)
 - [productInfo](./productinfo.md)

@@ -19,7 +19,7 @@
 static const SPAffineTransform3DFloat SPAffineTransform3DFloatIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 A single-precision 3D affine transformation matrix.
 

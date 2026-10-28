@@ -16,7 +16,7 @@ Constructs a new help link with the specified anchor in the main app bundle’s 
 @preconcurrency init(anchor: NSHelpManager.AnchorName)
 ```
 
-#### Discussion
+## Discussion
 
 The main app bundle book name is defined by the `CFBundleHelpBookName` key in its Info.plist file.
 

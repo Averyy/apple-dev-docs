@@ -17,7 +17,7 @@ The SSID of the network.
 let ssid: WISSID?
 ```
 
-#### Discussion
+## Discussion
 
 Contains the network identifier when available, or `nil` when the SSID is unknown or not broadcast by the access point.
 

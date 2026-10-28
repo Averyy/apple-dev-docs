@@ -25,7 +25,7 @@ func la_normalized_vector(_ vector: la_object_t, _ vector_norm: la_norm_t) -> la
 extern la_object_tla_normalized_vector(la_object_t vector, la_norm_t vector_norm);
 ```
 
-#### Discussion
+## Discussion
 
 “Normalizes” a vector or matrix.
 

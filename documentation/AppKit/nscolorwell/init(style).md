@@ -19,7 +19,7 @@ convenience init(style: NSColorWell.Style)
 + (instancetype) colorWellWithStyle:(NSColorWellStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 A color well configured with the specified style.
 

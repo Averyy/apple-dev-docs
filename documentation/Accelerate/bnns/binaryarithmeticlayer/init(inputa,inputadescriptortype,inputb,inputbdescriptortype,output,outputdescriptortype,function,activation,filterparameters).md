@@ -23,7 +23,7 @@ Returns a new binary arithmetic layer.
 convenience init?(inputA: BNNSNDArrayDescriptor, inputADescriptorType: BNNS.DescriptorType, inputB: BNNSNDArrayDescriptor, inputBDescriptorType: BNNS.DescriptorType, output: BNNSNDArrayDescriptor, outputDescriptorType: BNNS.DescriptorType, function: BNNS.ArithmeticBinaryFunction, activation: BNNS.ActivationFunction = .identity, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The data types of the inputs must be equal to the output data type. The size of the inputs must either 1, or the maximum size of either input and the output. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](../datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](../datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](../datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](../datalayout/imagechw.md).
 

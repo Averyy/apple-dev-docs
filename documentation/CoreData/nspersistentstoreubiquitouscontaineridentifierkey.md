@@ -25,7 +25,7 @@ let NSPersistentStoreUbiquitousContainerIdentifierKey: String
 extern NSString * const NSPersistentStoreUbiquitousContainerIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data passes the persistent identifer to [`url(forUbiquityContainerIdentifier:)`](../Foundation/filemanager/url%28forubiquitycontaineridentifier%29.md).
 

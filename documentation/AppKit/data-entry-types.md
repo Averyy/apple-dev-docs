@@ -4,7 +4,7 @@
 
 These constants specify how a cell formats numeric data.
 
-#### Overview
+## Overview
 
 These constants are used by [`setEntryType:`](./nscell/setentrytype_.md) and [`entryType`](./nscell/entrytype.md).
 

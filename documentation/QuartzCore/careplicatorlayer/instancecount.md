@@ -24,7 +24,7 @@ var instanceCount: Int { get set }
 @property NSInteger instanceCount;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1`, no extra copies are created.
 

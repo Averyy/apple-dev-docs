@@ -24,7 +24,7 @@ var sharegroup: EAGLSharegroup { get }
 @property (readonly, nonnull) EAGLSharegroup * sharegroup;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the sharegroup of a context when you want to create two or more contexts that share rendering resources. Call [`init(api:)`](./init%28api%29-q09o.md) to initialize the first context, retrieve its sharegroup, and then initialize additional contexts by calling [`init(api:sharegroup:)`](./init%28api,sharegroup%29-2rt8m.md), passing this sharegroup as the parameter.
 

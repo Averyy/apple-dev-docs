@@ -20,11 +20,11 @@ func convert(_ provider: CGDataProvider, consumer: CGDataConsumer, options: CFDi
 extern bool CGPSConverterConvert(CGPSConverterRef converter, CGDataProviderRef provider, CGDataConsumerRef consumer, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the PostScript conversion completed successfully (`true` if it did).
 
-#### Discussion
+## Discussion
 
 The conversion is thread safe, however it is not possible to have more than one conversion job in process within a given address space or process. If a given thread is running a conversion and another thread starts a new conversion, the second conversion will block until the first conversion is complete.
 

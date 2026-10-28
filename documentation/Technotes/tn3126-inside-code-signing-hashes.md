@@ -5,7 +5,7 @@
 
 Look inside a code signature to see how it uses hashes to protect the code’s executable pages, resources, and metadata from tampering.
 
-#### Overview
+## Overview
 
 The vast majority of developers don’t need to know how code signing works.  They use Xcode, or the `codesign` tool, and those take care of all the fiddly details.  If they run into problems, those problems usually relate to high-level concepts—signing identities, entitlements, provisioning profiles—not the core code signing implementation.
 
@@ -20,13 +20,13 @@ This description isn’t comprehensive.  It skips over some details, sometimes b
 
 The examples in this technote are taken from macOS, but these concepts apply to all Apple platforms.
 
-##### About this technote series
+### About this technote series
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [TN3125: Inside Code Signing: Provisioning Profiles](./tn3125-inside-code-signing-provisioning-profiles.md).
 
 > ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [Code Signing Services](../Security/code-signing-services.md) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
-#### Code signature storage
+## Code signature storage
 
 The code signature for an item is stored in one of four ways:
 
@@ -93,7 +93,7 @@ The code signature for an item is stored in one of four ways:
 
 For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
-#### Code directory
+## Code directory
 
 The central concept in a code signature is the *code directory*.  This is a data structure that holds all of the info about the code that was signed.  It’s this data structure that’s signed as part of the signing process.  Hashes within this data structure seal the executable pages, resources, and metadata of the code.
 
@@ -152,7 +152,7 @@ CDHash=ff19a91b272a49d1a0f16ee54c672da60f0e116f
 …
 ```
 
-#### Per-page hashes
+## Per-page hashes
 
 Within a code directory there are a set of *hash slots*.  For a summary, look at the `CodeDirectory` property:
 
@@ -203,7 +203,7 @@ macOS doesn’t *always* check code as it’s paged in.  One key feature of the 
 
 > **Note**: The [Disable Executable Memory Protection Entitlement](../BundleResources/entitlements/com.apple.security.cs.disable-executable-page-protection.md) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [Allow Unsigned Executable Memory Entitlement](../BundleResources/entitlements/com.apple.security.cs.allow-unsigned-executable-memory.md).
 
-#### Special slots
+## Special slots
 
 Within the code directory the negative hash slots are special.  They don’t correspond to code but rather to other data structures.  Each slot number corresponds to a specific type of data.  Here are some highlights:
 
@@ -232,7 +232,7 @@ Now consider this advice from [Using the latest code signature format](../Xcode/
 
 You should now have a better handle on this diagnostic.  Slot -5 holds the hash for the legacy property list entitlements, while slot -7 holds the hash for the new-style DER-encoded entitlements.  If you have an iOS app whose signature has an entry in -5 but no entry in -7, then it has entitlements but it’s missing the new-style DER-encoded entitlements and you must re-sign it to be compatible with iOS 15.
 
-#### Resources
+## Resources
 
 If your code exist in a bundle then the code signature protects not just your code but the resources in your bundle.  Central to this is the `CodeResources` file.  Slot -3 in the code directory holds the hash of that file:
 
@@ -367,7 +367,7 @@ In theory this lets you update the nested code with a new version, as long as it
 
 For more information about code signing requirements, see [TN3127: Inside Code Signing: Requirements](./tn3127-inside-code-signing-requirements.md).
 
-#### Revision History
+## Revision History
 
 - **2024-02-06** Made minor editorial changes.
 - **2022-05-24** Made minor editorial changes.

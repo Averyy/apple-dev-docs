@@ -23,11 +23,11 @@ static func verbatim(_ format: Date.FormatString, locale: Locale? = nil, timeZon
 
 Available when `Self` is `Date.VerbatimFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A date format style that uses the provided format string and timekeeping parameters.
 
-#### Discussion
+## Discussion
 
 Use this format style only when you need to produce or parse an exact format, such as when working with programmatically-produced date strings. For formatting dates that people read, use [`dateTime`](./datetime.md) to get a localized [`Date.FormatStyle`](../date/formatstyle.md) instead. To use the ISO-8601 standard, use `FormatStyle/iso8601` to get a [`Date.ISO8601FormatStyle`](../date/iso8601formatstyle.md).
 

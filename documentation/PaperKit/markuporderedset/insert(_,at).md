@@ -20,7 +20,7 @@ Inserts a new member at the specified index, if the set doesn’t already contai
 mutating func insert(_ item: MarkupOrderedSet.Element, at index: Int) -> (inserted: Bool, index: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A pair (`inserted`, `index`), where `inserted` is a Boolean value indicating whether the operation added a new element, and `index` is the index of item in the resulting set. If `inserted` is false, then the returned `index` may be different from the index requested.
 

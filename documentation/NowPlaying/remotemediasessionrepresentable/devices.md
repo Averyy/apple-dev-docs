@@ -24,7 +24,7 @@ var devices: [MediaDevice] { get }
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Return an empty array when no devices are actively playing. The framework uses this list to surface per-device volume controls.
 

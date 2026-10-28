@@ -20,11 +20,11 @@ var shadow: NSShadow? { get set }
 @property (copy, nullable) NSShadow * shadow;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSShadow` that is created using the [`shadowColor`](../../QuartzCore/calayer/shadowcolor.md),[`shadowOffset`](../../QuartzCore/calayer/shadowoffset.md), [`shadowOpacity`](../../QuartzCore/calayer/shadowopacity.md), and [`shadowRadius`](../../QuartzCore/calayer/shadowradius.md) properties of the view’s layer.
 
-#### Discussion
+## Discussion
 
 The default value of this property is normally `nil`. When you configure any of the shadow-related properties on the view’s layer, such as the [`shadowColor`](../../QuartzCore/calayer/shadowcolor.md),[`shadowOffset`](../../QuartzCore/calayer/shadowoffset.md), [`shadowOpacity`](../../QuartzCore/calayer/shadowopacity.md) or [`shadowRadius`](../../QuartzCore/calayer/shadowradius.md) properties, this property contains the [`NSShadow`](../nsshadow.md) object that encapsulates that information. Assigning a new shadow object to this property sets the corresponding shadow-related properties on the view’s layer.
 

@@ -23,7 +23,7 @@ class var afterCADisplayLinkDispatch: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterCADisplayLinkDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs after [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) callbacks run.
 

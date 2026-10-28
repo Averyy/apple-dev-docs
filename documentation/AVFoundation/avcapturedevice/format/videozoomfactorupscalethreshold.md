@@ -22,7 +22,7 @@ var videoZoomFactorUpscaleThreshold: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoZoomFactorUpscaleThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The device achieves a zoom effect by cropping around the center of the image captured by the sensor. At low zoom factors, the cropped images is equal to or larger than the output size. At higher zoom factors, the device must scale the cropped image up to the output size, resulting in a loss of image quality. This property indicates the factors at which upscaling occurs.
 

@@ -21,7 +21,7 @@ func view(_ view: NSView, stringForToolTip tag: NSView.ToolTipTag, point: NSPoin
 - (NSString *) view:(NSView *) view stringForToolTip:(NSToolTipTag) tag point:(NSPoint) point userData:(void *) data;
 ```
 
-#### Discussion
+## Discussion
 
 `userData` is additional information provided by the creator of the tool tip rectangle.
 

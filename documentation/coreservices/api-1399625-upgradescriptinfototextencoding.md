@@ -15,11 +15,11 @@ Converts any combination of a Mac OS script code, a languagecode, a region code,
 OSStatus UpgradeScriptInfoToTextEncoding(ScriptCode iTextScriptID, LangCode iTextLanguageID, RegionCode iRegionID, ConstStr255Param iTextFontname, TextEncoding *oEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). This function returns `paramErr` iftwo or more of the input parameter values conflict in some way—forexample, the Mac OS language code does not belong to the script whosescript code you specified, or if the input parameter values are invalid.The function returns a `kTECTableFormatErr` resultcode if the internal mapping tables used for translation are invalid.
 
-#### Discussion
+## Discussion
 
 The `UpgradeScriptInfoToTextEncoding` functionallows you to derive a text encoding specification from script codes,language codes, region codes, and font names. A one-to-one correspondenceexists between many of the Script Manager’s script codes and aparticular Mac OS text encoding base value. However, because textencodings are a superset of script codes, some combinations of scriptcode, language code, region code, and font name might result ina different text encoding base value than would be the case if thetranslation were based on the script code alone. 
 

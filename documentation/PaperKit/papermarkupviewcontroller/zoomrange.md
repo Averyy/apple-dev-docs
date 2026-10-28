@@ -20,7 +20,7 @@ A floating-point range that specifies the minimum and maximum scale factor that 
 @preconcurrency var zoomRange: ClosedRange<CGFloat> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0...1.0`.
 

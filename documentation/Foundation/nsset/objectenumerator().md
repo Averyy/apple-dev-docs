@@ -25,11 +25,11 @@ func objectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) objectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each object in the set.
 
-#### Discussion
+## Discussion
 
 The following code fragment illustrates how you can use this method.
 
@@ -44,7 +44,7 @@ while ((value = [enumerator nextObject])) {
 
 When this method is used with mutable subclasses of `NSSet`, your code shouldn’t modify the set during enumeration. If you intend to modify the set, use the [`allObjects`](./allobjects.md) method to create a “snapshot” of the set’s members. Enumerate the snapshot, but make your modifications to the original set.
 
-##### Special Considerations
+### Special Considerations
 
 It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)). Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
 

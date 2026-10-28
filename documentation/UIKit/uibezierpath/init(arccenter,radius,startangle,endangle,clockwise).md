@@ -24,11 +24,11 @@ convenience init(arcCenter center: CGPoint, radius: CGFloat, startAngle: CGFloat
 + (instancetype) bezierPathWithArcCenter:(CGPoint) center radius:(CGFloat) radius startAngle:(CGFloat) startAngle endAngle:(CGFloat) endAngle clockwise:(BOOL) clockwise;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the specified arc.
 
-#### Discussion
+## Discussion
 
 This method creates an open subpath. The created arc lies on the perimeter of the specified circle. When drawn in the default coordinate system, the start and end angles are based on the unit circle shown in the following image. For example, specifying a start angle of `0` radians, an end angle of `π` radians, and setting the `clockwise` parameter to [`true`](../../Swift/true.md) draws the bottom half of the circle. However, specifying the same start and end angles but setting the `clockwise` parameter to [`false`](../../Swift/false.md) draws the top half of the circle.
 

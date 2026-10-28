@@ -13,15 +13,15 @@ CMError CMSetSystemProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 By default, a standard RGB profile is configured as the system profile. By calling the `CMSetSystemProfile` function, your application can specify a new system profile. You can configure only a display device profile as the system profile. 
 
-##### Version-Notes
+### Version-Notes
 
 Starting with version 2.5, use of the system profile has changed.
 

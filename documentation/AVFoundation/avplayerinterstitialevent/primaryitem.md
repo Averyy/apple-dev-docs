@@ -25,7 +25,7 @@ weak var primaryItem: AVPlayerItem? { get }
 @property (nonatomic, weak, readonly) AVPlayerItem * primaryItem;
 ```
 
-#### Discussion
+## Discussion
 
 The item must contain an [`AVAsset`](../avasset.md) that provides intrinsic mappings from its timeline to realtime dates.
 

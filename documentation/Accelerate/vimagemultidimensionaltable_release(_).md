@@ -29,11 +29,11 @@ vImage_Error vImageMultidimensionalTable_Release(vImage_MultidimensionalTable ta
 
 - [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function decrements the multidimensional table’s reference count. When the reference count reaches `0`, the system destroys the object.
 

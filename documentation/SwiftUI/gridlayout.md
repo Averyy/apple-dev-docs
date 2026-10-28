@@ -22,7 +22,7 @@ A grid that you can use in conditional layouts.
 nonisolated struct GridLayout
 ```
 
-#### Overview
+## Overview
 
 This layout container behaves like a [`Grid`](./grid.md), but conforms to the [`Layout`](./layout.md) protocol so you can use it in the conditional layouts that you construct with [`AnyLayout`](./anylayout.md). If you don’t need a conditional layout, use [`Grid`](./grid.md) instead.
 

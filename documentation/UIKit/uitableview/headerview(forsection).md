@@ -23,7 +23,7 @@ func headerView(forSection section: Int) -> UITableViewHeaderFooterView?
 - (UITableViewHeaderFooterView *) headerViewForSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The header view associated with the section, or `nil` if the section does not have a header view.
 

@@ -17,7 +17,7 @@ An event type that a cloth simulation publishes immediately after it starts.
 struct Start
 ```
 
-#### Overview
+## Overview
 
 A simulation starts once before entering its update loop, at which point it regularly updates.
 

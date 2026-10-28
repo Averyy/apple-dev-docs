@@ -19,7 +19,7 @@ var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackSty
 @property NSTableViewDraggingDestinationFeedbackStyle draggingDestinationFeedbackStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSTableView.DraggingDestinationFeedbackStyle.regular`](./draggingdestinationfeedbackstyle-swift.enum/regular.md). However, changing the selection highlight style to [`NSTableView.SelectionHighlightStyle.sourceList`](./selectionhighlightstyle-swift.enum/sourcelist.md) automatically changes the value of this property to [`NSTableView.DraggingDestinationFeedbackStyle.sourceList`](./draggingdestinationfeedbackstyle-swift.enum/sourcelist.md).
 

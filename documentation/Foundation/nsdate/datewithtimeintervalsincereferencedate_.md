@@ -21,7 +21,7 @@ Creates and returns a date object set to a given number of seconds from 00:00:00
 + (instancetype) dateWithTimeIntervalSinceReferenceDate:(NSTimeInterval) ti;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object set to `ti` seconds from the absolute reference date.
 

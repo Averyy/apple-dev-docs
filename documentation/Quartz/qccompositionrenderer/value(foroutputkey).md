@@ -22,7 +22,7 @@ func value(forOutputKey key: String!) -> Any!
 - (id) valueForOutputKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value. The data type of returned value depends on the type of the output port. See [`QCPortAttributeTypeKey`](../qcportattributetypekey.md) for more information.
 

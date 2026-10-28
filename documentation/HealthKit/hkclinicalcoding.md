@@ -24,7 +24,7 @@ class HKClinicalCoding
 @interface HKClinicalCoding : NSObject
 ```
 
-#### Overview
+## Overview
 
 A clinical coding pairs a [`system`](./hkclinicalcoding/system.md), an optional [`version`](./hkclinicalcoding/version.md), and a [`code`](./hkclinicalcoding/code.md) which identify a medical concept.
 

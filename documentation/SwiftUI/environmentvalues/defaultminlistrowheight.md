@@ -21,7 +21,7 @@ The default minimum height of rows in a list.
 var defaultMinListRowHeight: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The height of list rows is bounded below by this default value, and is otherwise determined by the height of the row’s content and the row insets.
 

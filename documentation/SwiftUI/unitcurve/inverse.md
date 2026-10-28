@@ -21,7 +21,7 @@ Returns a copy of the curve with its x and y components swapped.
 var inverse: UnitCurve { get }
 ```
 
-#### Discussion
+## Discussion
 
 The inverse can be used to solve a curve in reverse: given a known output (y) value, the corresponding input (x) value can be found by using `inverse`:
 

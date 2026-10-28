@@ -38,11 +38,11 @@ extern Boolean SMJobRemove(CFStringRef domain, CFStringRef jobLabel, void *auth,
 extern Boolean SMJobRemove(CFStringRef domain, CFStringRef jobLabel, AuthorizationRef auth, Boolean wait, CFErrorRef*outError);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the system successfully removes the job, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If the job is currently running, it conditionally blocks until the running process has exited.
 

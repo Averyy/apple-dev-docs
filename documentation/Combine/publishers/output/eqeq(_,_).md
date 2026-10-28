@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Output<Upstream>, rhs: Publishers.Output<Upstrea
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `upstream` and `range` properties; otherwise `false`.
 

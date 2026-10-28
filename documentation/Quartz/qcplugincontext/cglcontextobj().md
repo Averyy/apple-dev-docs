@@ -22,11 +22,11 @@ func cglContextObj() -> CGLContextObj!
 - (CGLContextObj) CGLContextObj;
 ```
 
-#### Return Value
+## Return Value
 
 The destination CGL context.
 
-#### Discussion
+## Discussion
 
 To send commands to the OpenGL context:
 

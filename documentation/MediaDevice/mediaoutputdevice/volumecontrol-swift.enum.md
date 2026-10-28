@@ -21,7 +21,7 @@ enum VolumeControl
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Overview
+## Overview
 
 This enumeration specifies how volume can be controlled on a device, affecting which volume control methods are available and how the system should present volume controls to the user.
 

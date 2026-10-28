@@ -19,7 +19,7 @@ func convertRect(toImageRect viewRect: NSRect) -> NSRect
 - (NSRect) convertViewRectToImageRect:(NSRect) viewRect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle specified in coordinates relative to the image.
 

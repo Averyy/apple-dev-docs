@@ -25,7 +25,7 @@ enum CGLineJoin
 enum CGLineJoin : int32_t;
 ```
 
-#### Overview
+## Overview
 
 A line join specifies how [`strokePath()`](./cgcontext/strokepath%28%29.md) draws the junction between connected line segments. To set the line join style in a graphics context, you use the function [`setLineJoin(_:)`](./cgcontext/setlinejoin%28_%29.md).
 

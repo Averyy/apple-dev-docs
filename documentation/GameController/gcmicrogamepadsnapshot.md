@@ -26,7 +26,7 @@ class GCMicroGamepadSnapshot
 @interface GCMicroGamepadSnapshot : GCMicroGamepad
 ```
 
-#### Overview
+## Overview
 
 To create a gamepad snapshot, call the [`saveSnapshot()`](./gcgamepad/savesnapshot%28%29.md) method on a [`GCMicroGamepad`](./gcmicrogamepad.md) object. The [`GCMicroGamepadSnapshot`](./gcmicrogamepadsnapshot.md) class is a subclass of the [`GCMicroGamepad`](./gcmicrogamepad.md) class, so you use the parent class’s properties to read the individual element values. The snapshot is stored in a device independent format. To get the flattened data representation of the snapshot data, read the [`snapshotData`](./gcmicrogamepadsnapshot/snapshotdata.md) property.
 

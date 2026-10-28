@@ -23,7 +23,7 @@ var totalSize: Int { get }
 @property (nonatomic, readonly) NSInteger totalSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `-1` when the system can’t retrieve information from external storage device.
 

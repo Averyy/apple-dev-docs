@@ -23,7 +23,7 @@ optional var autocapitalizationType: UITextAutocapitalizationType { get set }
 @property (nonatomic) UITextAutocapitalizationType autocapitalizationType;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines at what times the Shift key is automatically pressed, thereby making the typed character a capital letter. The default value for this property is [`UITextAutocapitalizationType.sentences`](../uitextautocapitalizationtype/sentences.md).
 

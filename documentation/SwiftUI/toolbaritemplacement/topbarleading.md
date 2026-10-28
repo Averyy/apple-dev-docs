@@ -21,7 +21,7 @@ A placement for items in the leading edge of the top bar.
 static var topBarLeading: ToolbarItemPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 On watchOS, iOS, and tvOS, the top bar is the navigation bar.
 

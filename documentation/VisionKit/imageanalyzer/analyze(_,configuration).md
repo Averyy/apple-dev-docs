@@ -22,11 +22,11 @@ final func analyze(_ image: UIImage, configuration: ImageAnalyzer.Configuration)
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Return Value
+## Return Value
 
 The data items that the analyzer finds in the image.
 
-#### Discussion
+## Discussion
 
 This function configures orientation automatically based on the given image’s orientation property.
 

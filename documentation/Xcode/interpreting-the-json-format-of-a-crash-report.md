@@ -5,7 +5,7 @@
 
 Understand the structure and properties of the objects the system includes in the JSON of a crash report.
 
-#### Overview
+## Overview
 
 Starting with iOS 15 and macOS 12, apps that generate crash reports store the data as JSON in files with an `.ips` extension. Tools for viewing these files, such as Console, translate the JSON to make it easier to read and interpret. The translated content uses field names the article [Examining the fields in a crash report](./examining-the-fields-in-a-crash-report.md) describes. Use the following information to understand the structure of the JSON the system uses for these crash reports and how the data maps to the field names found in the translated content.
 
@@ -43,7 +43,7 @@ The following example reads the contents of a crash report into a dictionary:
 
 The crash report data is made up of additional objects pertaining to OS version, bundle, store, exception, termination, threads, frames, and binary images. The properties of all these objects are outlined below.
 
-##### IPS metadata
+### IPS metadata
 
 The IPS metadata object contains the following properties:
 
@@ -57,7 +57,7 @@ The IPS metadata object contains the following properties:
 | `platform` | Number | A number identifying the platform the process was running on. For the meaning of these values, see [Platforms](./interpreting-the-json-format-of-a-crash-report.md#Platforms). |
 | `timestamp` | String | A date and time the log system generates for report tracking. Use the `procLaunch` and `captureTime` properties from the crash report object to determine launch and termination time for the process. |
 
-##### Crash report
+### Crash report
 
 The crash report object can contain the following properties:
 
@@ -97,7 +97,7 @@ The crash report object can contain the following properties:
 | `vmSummary` | String | Summary of the virtual memory in use by the process. Similar to the output from executing `vmmap <pid> --summary`. This appears in a translated report under VM Region Summary. |
 | `vmregioninfo` | String | Information about the virtual memory regions for terminations due to a memory access issue. This appears in a translated report under VM Region Info. |
 
-##### Platforms
+### Platforms
 
 The numeric values for `platform` include:
 
@@ -110,7 +110,7 @@ The numeric values for `platform` include:
 - `8` for tvOS Simulator
 - `9` for watchOS Simulator
 
-##### OS version
+### OS version
 
 A report includes OS version information in an object that can contain the following properties:
 
@@ -121,7 +121,7 @@ A report includes OS version information in an object that can contain the follo
 | `releaseType` | String | The type of release: `User` for a release version and `Beta` for a prerelease versions. Appears in a translated report under Release Type. |
 | `train` | String | A string containing the platform and OS version number. Appears in a translated report under OS Version. |
 
-##### Bundle info
+### Bundle info
 
 A report includes bundle information in an object with the following properties:
 
@@ -131,7 +131,7 @@ A report includes bundle information in an object with the following properties:
 | `CFBundleShortVersionString` | String | The bundle version string (short) for the process that crashed; see [`CFBundleShortVersionString`](../BundleResources/information-property-list/cfbundleshortversionstring.md). Appears in a translated report under Version. |
 | `CFBundleVersion` | String | The bundle version for the process that crashed; see [`CFBundleVersion`](../BundleResources/information-property-list/cfbundleversion.md). Appears in a translated report under Version. |
 
-##### Store info
+### Store info
 
 A report includes store information in an object with the following properties:
 
@@ -141,7 +141,7 @@ A report includes store information in an object with the following properties:
 | `deviceIdentifierForVendor` | String | A unique identifier for the combination of the device and vendor of the crashed app. Two reports for apps from the same vendor and from the same device contain identical values. This field is only present for TestFlight builds of an app, and replaces the CrashReporter Key field. Appears in a translated report under Beta Identifier. |
 | `itemID` | String | The Apple identifier, a unique record for titles in the store. |
 
-##### Exception
+### Exception
 
 A report includes exception information in an object with the following properties:
 
@@ -157,7 +157,7 @@ For more information, see [Exception information](./examining-the-fields-in-a-cr
 
 > **Note**: This exception information doesn’t refer to language exceptions thrown by an API or language features in Objective-C or C++. Crash reports record language exception information separately.
 
-##### Termination
+### Termination
 
 A report includes termination information in an object that can contain the following properties:
 
@@ -174,7 +174,7 @@ For details on how to use this information, see [Exception information](./examin
 
 JSON stores numeric values as decimal numbers. The value the system stores in the `code` property is intended to be viewed in its hexadecimal form; see [Convert numeric values to hexadecimal numbers](./interpreting-the-json-format-of-a-crash-report.md#Convert-numeric-values-to-hexadecimal-numbers).
 
-##### Threads
+### Threads
 
 A report includes thread information in objects that can contain the following properties:
 
@@ -190,7 +190,7 @@ For details on how to use this information, see [Backtraces](./examining-the-fie
 
 JSON contains numbers for memory addresses in frame and thread state objects as decimal digits. To view the numbers contained in these fields in their more common hexadecimal form, see [Convert numeric values to hexadecimal numbers](./interpreting-the-json-format-of-a-crash-report.md#Convert-numeric-values-to-hexadecimal-numbers).
 
-##### Frames
+### Frames
 
 A report includes information about frames in objects with the following properties:
 
@@ -205,7 +205,7 @@ For details on how to use this information, see [Backtraces](./examining-the-fie
 
 JSON contains numbers for the memory locations and offsets as decimal digits. To convert the numbers contained in these fields to their more common hexadecimal form, see [Convert numeric values to hexadecimal numbers](./interpreting-the-json-format-of-a-crash-report.md#Convert-numeric-values-to-hexadecimal-numbers).
 
-##### Binary images
+### Binary images
 
 A report includes information about binary images loaded in the process at the time of termination in objects with the following properties:
 
@@ -221,7 +221,7 @@ A report includes information about binary images loaded in the process at the t
 
 For details on how to use this information, see [Binary images](./examining-the-fields-in-a-crash-report.md#Binary-images).
 
-##### Convert numeric values to hexadecimal numbers
+### Convert numeric values to hexadecimal numbers
 
 JSON stores numeric values as decimal numbers. Many of these numeric values, such as error codes and memory addresses, appear in a translated report as hexadecimal numbers to make them easier to interpret.
 

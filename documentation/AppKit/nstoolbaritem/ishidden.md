@@ -22,7 +22,7 @@ var isHidden: Bool { get set }
 @property (getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The item will still be visible in the customization panel. Because hidden items may be visible during user customization, use the `visible` property to determine if an item is currently displayed. Note that even hidden toolbar items are sync’d to other toolbars with a shared identifier, but its `hidden` state can be unique to each instance. Use this property to show a toolbar item in one toolbar instance but not another.
 

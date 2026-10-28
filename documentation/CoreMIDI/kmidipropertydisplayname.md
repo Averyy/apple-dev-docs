@@ -23,7 +23,7 @@ let kMIDIPropertyDisplayName: CFString
 extern CFStringRef const kMIDIPropertyDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 For objects other than endpoints, the display name is the same as its [`kMIDIPropertyName`](./kmidipropertyname.md) value.
 

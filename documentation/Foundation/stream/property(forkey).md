@@ -25,7 +25,7 @@ func property(forKey key: Stream.PropertyKey) -> Any?
 - (id) propertyForKey:(NSStreamPropertyKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s property for the key `key`.
 

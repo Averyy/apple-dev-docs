@@ -21,11 +21,11 @@ Returns a filter that applies a brightness adjustment.
 static func brightness(_ amount: Double) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a brightness adjustment.
 
-#### Discussion
+## Discussion
 
 This filter is different than `brightness` filter primitive defined by the Scalable Vector Graphics (SVG) specification. You can obtain an effect like that filter using a [`grayscale(_:)`](./grayscale%28_%29.md) color multiply. However, this filter does match the [`CIColorControls`](../../../CoreImage/cicolorcontrols.md) filter’s brightness adjustment.
 

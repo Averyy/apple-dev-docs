@@ -13,7 +13,7 @@
 static const NSDatePickerMode NSRangeDateMode;
 ```
 
-#### Discussion
+## Discussion
 
 Allow selection of a range of dates. (First implemented in OS X v 10.5.)
 

@@ -21,11 +21,11 @@ An effect that dims inactive layers in a symbol-based image.
 - (instancetype) effectWithDimInactiveLayers;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the symbol effect options that dims inactive layers.
 
-#### Discussion
+## Discussion
 
 This effect draws inactive layers with reduced, but nonzero, opacity.
 

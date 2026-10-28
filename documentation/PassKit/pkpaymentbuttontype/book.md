@@ -24,7 +24,7 @@ case book
 PKPaymentButtonTypeBook
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

@@ -20,7 +20,7 @@ A notification posted when the current selection has changed.
 extern NSNotificationName const PDFViewSelectionChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

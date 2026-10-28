@@ -20,7 +20,7 @@ The bounding box to encompass all of the instances this group part draws.
 var bounds: BoundingBox?
 ```
 
-#### Discussion
+## Discussion
 
 If bounds is `nil`, RealityKit calculates a bounding box for you each time you update your instances within [`LowLevelInstanceData`](../../lowlevelinstancedata.md).
 

@@ -25,7 +25,7 @@ var predicate: NSPredicate? { get }
 @property (nonatomic, copy, readonly, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 If the predicate is `nil`, the descriptor matches all samples of the data type specified by the [`sampleType`](./sampletype.md) property.
 

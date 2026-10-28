@@ -23,7 +23,7 @@ func dividerImage(forLeftSegmentState leftState: UIControl.State, rightSegmentSt
 - (UIImage *) dividerImageForLeftSegmentState:(UIControlState) leftState rightSegmentState:(UIControlState) rightState barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The divider image used for the given combination of left and right segment states and bar metrics
 

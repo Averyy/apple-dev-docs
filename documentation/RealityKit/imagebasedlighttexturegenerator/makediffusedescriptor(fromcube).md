@@ -18,7 +18,7 @@ Returns a recommended image based light diffuse cube texture descriptor (for [`g
 func makeDiffuseDescriptor(fromCube texture: any MTLTexture) throws -> MTLTextureDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If `texture` is not a cube texture.
 

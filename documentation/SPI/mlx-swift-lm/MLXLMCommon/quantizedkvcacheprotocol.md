@@ -17,7 +17,7 @@ Protocol for caches that support efficient quantized operations
 protocol QuantizedKVCacheProtocol : KVCache
 ```
 
-#### Overview
+## Overview
 
 **Usage Example:**
 

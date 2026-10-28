@@ -25,7 +25,7 @@ static var yearForWeekOfYear: NSCalendar.Unit { get }
 NSCalendarUnitYearForWeekOfYear
 ```
 
-#### Discussion
+## Discussion
 
 See the [`DateComponents`](../../datecomponents.md) property [`yearForWeekOfYear`](../../datecomponents/yearforweekofyear.md) (or [`NSDateComponents`](../../nsdatecomponents.md) property [`yearForWeekOfYear`](../../nsdatecomponents/yearforweekofyear.md) in Objective-C) for a discussion of the semantics of this component.
 

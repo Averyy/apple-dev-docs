@@ -22,7 +22,7 @@ var innerTextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * innerTextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports multicolor text.
 

@@ -19,7 +19,7 @@ func displayIfNeeded()
 - (void) displayIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 This method includes the frame view that draws the border, title bar, and other peripheral elements. It’s useful when you want to modify some number of views and then display only the ones that you modified.
 

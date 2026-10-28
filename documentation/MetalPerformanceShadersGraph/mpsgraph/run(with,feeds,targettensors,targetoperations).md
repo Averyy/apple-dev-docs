@@ -24,11 +24,11 @@ func run(with commandQueue: any MTLCommandQueue, feeds: [MPSGraphTensor : MPSGra
 - (MPSGraphTensorDataDictionary *) runWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor : MPSGraphTensorData dictionary with results synchronized to the CPU memory.
 
-#### Discussion
+## Discussion
 
 This call blocks until execution has completed.
 

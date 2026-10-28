@@ -21,7 +21,7 @@ A collection of format styles for displaying live-updating time information in t
 enum SystemFormatStyle
 ```
 
-#### Overview
+## Overview
 
 Use the format styles in this namespace to present time-based data in [`Text`](./text.md) views that automatically updates as the system clock advances. Each style formats a [`Date`](../Foundation/date.md) value into an [`AttributedString`](../Foundation/attributedstring.md) and conforms to both `FormatStyle` and `DiscreteFormatStyle`, allowing SwiftUI to efficiently schedule text updates at exactly the right moments.
 
@@ -44,7 +44,7 @@ Text(.currentDate, format: .reference(to: endDate))
 // Output: "in 5 minutes"
 ```
 
-#### Choosing a Style
+## Choosing a Style
 
 | Style | Purpose | Example Output |
 | --- | --- | --- |

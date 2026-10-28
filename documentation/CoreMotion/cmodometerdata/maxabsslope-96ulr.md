@@ -20,7 +20,7 @@ The maximum absolute slope at the location toward all directions, measured in de
 @property (nonatomic, strong, readonly, nullable) NSNumber * maxAbsSlope;
 ```
 
-#### Discussion
+## Discussion
 
 If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 

@@ -18,7 +18,7 @@ Return the layers to apply LoRA adapters to.
 var loraLayers: [Module] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, this includes all transformer layers. Must be defined explicitly since we can’t unify it across all models.
 

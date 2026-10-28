@@ -19,7 +19,7 @@ class VZUSBMassStorageDevice
 @interface VZUSBMassStorageDevice : VZStorageDevice
 ```
 
-#### Overview
+## Overview
 
 Create this device either by instantiating it directly and passing [`VZUSBMassStorageDeviceConfiguration`](./vzusbmassstoragedeviceconfiguration.md) to its initializer, or instantiating a `VZUSBMassStorageDeviceConfiguration` in a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md). Direct instantiation creates an object that you can pass to [`attach(device:completionHandler:)`](./vzusbcontroller/attach%28device,completionhandler%29.md). Instantiation through `VZUSBMassStorageDeviceConfiguration` makes the device available in the [`usbDevices`](./vzusbcontroller/usbdevices.md) property.
 

@@ -28,7 +28,7 @@ func setMinimumBackgroundFetchInterval(_ minimumBackgroundFetchInterval: TimeInt
 
 - [Using background tasks to update your app](../using-background-tasks-to-update-your-app.md)
 
-#### Discussion
+## Discussion
 
 This property has no effect for apps that do not have the `UIBackgroundModes` key with the `fetch` value in its `Info.plist` file.
 

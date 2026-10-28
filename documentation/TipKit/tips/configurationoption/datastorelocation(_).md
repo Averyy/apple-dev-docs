@@ -21,7 +21,7 @@ Specify a custom location for your tips datastore.
 static func datastoreLocation(_ storeLocation: Tips.ConfigurationOption.DatastoreLocation) -> Tips.ConfigurationOption
 ```
 
-#### Overview
+## Overview
 
 Use `datastoreLocation` to change the on-disk location of your tips persistent storage.
 
@@ -47,7 +47,7 @@ struct SampleApp: App {
 }
 ```
 
-##### Datastore Location Values
+### Datastore Location Values
 
 - [`applicationDefault`](./datastorelocation/applicationdefault.md)
   The default location for persisting tips, which is generally your application’s support directory.

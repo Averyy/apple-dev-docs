@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_ParallelSCSI = 1
 ```
 
-#### Discussion
+## Discussion
 
 Parallel SCSI Protocol Identifier.
 

@@ -21,7 +21,7 @@ Accesses the property for the specified key for reading.
 - (id) valueForProperty:(SHMediaItemProperty) property;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property; otherwise, `nil`.
 

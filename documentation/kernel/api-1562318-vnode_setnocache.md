@@ -15,7 +15,7 @@ Set a vnode to not have its data cached in memory (i.e. we write-through to disk
 void vnode_setnocache(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

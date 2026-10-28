@@ -17,11 +17,11 @@ Grants the specified capability to the process.
 - (id<BEProcessCapabilityGrant>) grantCapability:(BEProcessCapability *) capability error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`BEProcessCapabilityGrant`](../beprocesscapabilitygrant.md) object that represents the granted capability, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 When the process no longer needs the capability, call [`invalidate`](../beprocesscapabilitygrant/invalidate.md) on the returned object.
 

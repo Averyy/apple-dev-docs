@@ -13,11 +13,11 @@
 errno_t mbuf_alloccluster(mbuf_how_t how, size_t *size, char **addr);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success or ENOMEM if failure. If the caller requests greater than 4096 bytes and the system is unable to fulfill the request due to the lack of jumbo clusters support based on the configuration, this routine will return ENOTSUP. In this case, the caller is advised to use 4096 bytes or smaller during subseqent requests.
 
-#### Discussion
+## Discussion
 
 Allocate a cluster that can be later attached to an mbuf by calling mbuf_attachcluster(). The allocated cluster can also be freed (without being attached to an mbuf) by calling mbuf_freecluster(). At the moment this routine will either return a cluster of 2048, 4096 or 16384 bytes depending on the requested size. Note that clusters greater than 4096 bytes might not be available in all configurations; the caller must additionally check for ENOTSUP (see below).
 

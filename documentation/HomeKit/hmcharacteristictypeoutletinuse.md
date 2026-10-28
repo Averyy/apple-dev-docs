@@ -24,7 +24,7 @@ let HMCharacteristicTypeOutletInUse: String
 extern NSString * const HMCharacteristicTypeOutletInUse;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean which is set to `true` when the outlet is in use, and `false` otherwise.
 

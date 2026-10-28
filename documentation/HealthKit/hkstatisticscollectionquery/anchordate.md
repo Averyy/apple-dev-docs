@@ -24,7 +24,7 @@ var anchorDate: Date { get }
 @property (strong, readonly) NSDate * anchorDate;
 ```
 
-#### Discussion
+## Discussion
 
 The date used to anchor the collection’s time intervals.
 

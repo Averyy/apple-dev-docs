@@ -25,7 +25,7 @@ var intermediatesHeapSize: Int { get }
 @property (readonly) NSUInteger intermediatesHeapSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to allocate a [`MTLHeap`](../mtlheap.md) instance of sufficient size that you can then provide to [`dispatchNetwork(intermediatesHeap:)`](../mtl4machinelearningcommandencoder/dispatchnetwork%28intermediatesheap%29.md).
 

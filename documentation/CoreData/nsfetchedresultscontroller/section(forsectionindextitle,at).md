@@ -25,11 +25,11 @@ func section(forSectionIndexTitle title: String, at sectionIndex: Int) -> Int
 - (NSInteger) sectionForSectionIndexTitle:(NSString *) title atIndex:(NSInteger) sectionIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The section number for the given section title and index in the section index
 
-#### Discussion
+## Discussion
 
 You would typically call this method when executing `UITableViewDataSource`’s [`tableView(_:sectionForSectionIndexTitle:at:)`](../../UIKit/uitableviewdatasource/tableview%28_,sectionforsectionindextitle,at%29.md) method.
 

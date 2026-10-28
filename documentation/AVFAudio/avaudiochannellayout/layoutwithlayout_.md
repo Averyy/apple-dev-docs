@@ -21,11 +21,11 @@ Creates an audio channel layout object from an existing one.
 + (instancetype) layoutWithLayout:(const AudioChannelLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioChannelLayout` object.
 
-#### Discussion
+## Discussion
 
 If the layout’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md), the method attempts to convert it to a more specific tag.
 

@@ -19,7 +19,7 @@ var supportsOpenDenyModes: Bool { get set }
 @property (nonatomic) BOOL supportsOpenDenyModes;
 ```
 
-#### Discussion
+## Discussion
 
 These are modes such as “open for read write, deny write”.
 

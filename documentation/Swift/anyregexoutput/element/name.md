@@ -21,7 +21,7 @@ The name of this capture, if the capture is named.
 var name: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the capture is unnamed, `name` is `nil`.
 

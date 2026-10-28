@@ -19,7 +19,7 @@ Begins an asynchronous hand pose classifier’s training session.
 static func train(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters = ModelParameters(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLHandPoseClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the hand pose classifier’s training session.
 

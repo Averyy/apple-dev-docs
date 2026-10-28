@@ -28,11 +28,11 @@ func confirmation<R>(_ comment: Comment? = nil, expectedCount: Int = 1, isolatio
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 - [Testing asynchronous code](./testing-asynchronous-code.md)
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`.
 

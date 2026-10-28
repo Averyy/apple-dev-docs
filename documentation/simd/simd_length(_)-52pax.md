@@ -14,7 +14,7 @@ func simd_length(_ q: simd_quath) -> Float16
 static _Float16 simd_length(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The length of the quaternion `q`.
 

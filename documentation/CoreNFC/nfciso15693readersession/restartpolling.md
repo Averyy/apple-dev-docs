@@ -15,7 +15,7 @@
 - (void) restartPolling;
 ```
 
-#### Discussion
+## Discussion
 
 Restart the polling sequence in this session to discover new tags.  Tags that are returned previously by @link [NFCReaderSessionDelegate readerSession:didDetectTags:] @link/ will become invalid, and all references to these tags shall be removed to properly release the resources.  Calling this method on an invalidated session will have no effect; a new reader session is required to restart the reader.
 

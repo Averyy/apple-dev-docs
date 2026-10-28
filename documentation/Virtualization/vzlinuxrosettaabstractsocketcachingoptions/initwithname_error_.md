@@ -15,7 +15,7 @@ Initialize options to set on a Rosetta directory share.
 - (instancetype) initWithName:(NSString *) name error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The `sockaddr_un` structure in Linux defines the maximum allowed length of `name`.
 

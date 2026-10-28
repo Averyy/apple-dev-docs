@@ -23,7 +23,7 @@ func setAngle(_ angle: CGFloat, magnitude: CGFloat)
 - (void) setAngle:(CGFloat) angle magnitude:(CGFloat) magnitude;
 ```
 
-#### Discussion
+## Discussion
 
 Whether you express a push behavior’s force direction in terms of radian angle or with *x*, *y* components, the alternate, equivalent values update automatically.
 

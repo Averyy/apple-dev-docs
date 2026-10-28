@@ -19,7 +19,7 @@ func imageProperties() -> [AnyHashable : Any]!
 - (NSDictionary *) imageProperties;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of metadata that specifies the image properties.
 

@@ -19,7 +19,7 @@ A Boolean value indicating whether the view modifies the font size of the text t
 @property (nonatomic) BOOL adjustsFontSizeToFitWidth;
 ```
 
-#### Discussion
+## Discussion
 
 You can define the smallest font size used by setting the [`minimumScaleFactor`](./minimumscalefactor.md) property.
 

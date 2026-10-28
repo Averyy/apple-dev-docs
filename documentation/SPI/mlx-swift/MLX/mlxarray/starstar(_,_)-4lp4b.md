@@ -17,7 +17,7 @@ Element-wise power with a [`ScalarOrArray`](../scalarorarray.md) (scalar) argume
 static func ** (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`**(_:_:)`](./starstar%28_,_%29-8xxt3.md)

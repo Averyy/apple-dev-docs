@@ -23,7 +23,7 @@ let kCTFontSubFamilyNameKey: CFString
 extern CFStringRef const kCTFontSubFamilyNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the subfamily name.
 

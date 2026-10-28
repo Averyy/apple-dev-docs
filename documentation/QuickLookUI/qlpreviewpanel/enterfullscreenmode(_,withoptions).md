@@ -19,11 +19,11 @@ func enterFullScreenMode(_ screen: NSScreen!, withOptions options: [AnyHashable 
 - (BOOL) enterFullScreenMode:(NSScreen *) screen withOptions:(NSDictionary *) options;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the panel was able to enter full screen mode; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the panel isn’t onscreen, the panel goes directly to full screen mode.
 

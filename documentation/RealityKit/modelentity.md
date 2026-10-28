@@ -26,7 +26,7 @@ A representation of a physical object that RealityKit renders and optionally sim
 - [Reducing CPU Utilization in Your RealityKit App](./reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Loading entities from a file](./loading-entities-from-a-file.md)
 
-#### Overview
+## Overview
 
 Use one or more model entities to place physical objects in a scene. In addition to the components they inherit from the [`Entity`](./entity.md) class, model entities have geometry, described by their [`ModelComponent`](./modelcomponent.md). Model entities acquire the model component by conforming to the [`HasModel`](./hasmodel.md) protocol. You specify meshes and materials to control how a model entity appears.
 

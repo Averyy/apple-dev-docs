@@ -24,11 +24,11 @@ static func convertToScreenCoordinates(_ rect: CGRect, in view: UIView) -> CGRec
 extern CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, UIView *view);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in screen coordinates.
 
-#### Discussion
+## Discussion
 
 Use this function to convert accessibility frame rectangles to screen coordinates.
 

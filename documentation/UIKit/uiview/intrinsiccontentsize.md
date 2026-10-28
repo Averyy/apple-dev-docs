@@ -23,7 +23,7 @@ var intrinsicContentSize: CGSize { get }
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 Custom views typically have content that they display of which the layout system is unaware. Setting this property allows a custom view to communicate to the layout system what size it would like to be based on its content. This intrinsic size must be independent of the content frame, because there’s no way to dynamically communicate a changed width to the layout system based on a changed height, for example.
 

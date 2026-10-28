@@ -24,7 +24,7 @@ static let memoryLapse: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMemoryLapse;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

@@ -20,11 +20,11 @@ nonisolated
 func handlesExternalEvents(matching conditions: Set<String>) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene type that limits the kinds of external events for which SwiftUI opens a new instance.
 
-#### Discussion
+## Discussion
 
 When your app receives an external event like a user activity or a URL, SwiftUI routes the event to a scene for processing. SwiftUI selects the scene that receives the event according to the following rules, which it evaluates in order until it finds a destination scene:
 
@@ -37,7 +37,7 @@ Make sure that at least one of these rules succeeds in your app for all events t
 
 Don’t confuse the `handlesExternalEvents(matching:)` scene modifier with the [`handlesExternalEvents(preferring:allowing:)`](../view/handlesexternalevents%28preferring,allowing%29.md) *view* modifier. You use the scene modifier to help SwiftUI choose a new scene to open when no open scene handles an external event, whereas you use the view modifier to indicate that an open scene can or prefers to handle certain events.
 
-##### Matching an event
+### Matching an event
 
 To find a scene type that handles a particular external event, SwiftUI compares a property of the event against the strings that you specify in the `conditions` set. SwiftUI examines the following event properties to perform the comparison:
 
@@ -48,7 +48,7 @@ An empty set of strings never matches. Similarly, empty strings never match. Con
 
 > ❗ **Important**: [`DocumentGroup`](../documentgroup.md) scenes ignore this modifier. Instead, document scenes decide whether to open a new scene to handle an external event by comparing the incoming URL or user activity’s [`webpageURL`](../../Foundation/nsuseractivity/webpageurl.md) against the document group’s supported types.
 
-##### Choosing a window to open
+### Choosing a window to open
 
 The following example shows an app with a photo browser scene that displays a collection of photos, and a photo detail scene that enables closer examination of a particular photo:
 

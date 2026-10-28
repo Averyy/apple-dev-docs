@@ -17,11 +17,11 @@ Initializes the panel to the directory and file specified, if any, then displays
 - (NSInteger) runModalForDirectory:(NSString *) path file:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 `NSFileHandlingPanelOKButton` (if the user clicks the OK button) or `NSFileHandlingPanelCancelButton` (if the user clicks the Cancel button).
 
-#### Discussion
+## Discussion
 
 This method invokes `NSApplication`’s [`runModal(for:)`](../nsapplication/runmodal%28for%29.md) method with `self` as the argument.
 

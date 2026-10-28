@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString
 extern CFStringRef const kVTCompressionPropertyKey_HorizontalDisparityAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 This property sets a value for the [`kCMFormatDescriptionExtension_HorizontalDisparityAdjustment`](../CoreMedia/kcmformatdescriptionextension_horizontaldisparityadjustment.md) format description on the output samples. The value is a 32-bit integer, measured over the range of `-10000` to `10000`, that maps to a uniform range of `-1.0` to `1.0`.
 

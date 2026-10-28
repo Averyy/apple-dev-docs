@@ -23,7 +23,7 @@ var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetad
 @property (nonatomic, copy) AVVideoCompositionPerFrameHDRDisplayMetadataPolicy perFrameHDRDisplayMetadataPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Allows the system to identify situations where it can generate HDR metadata and attach it to the rendered video frame.
 

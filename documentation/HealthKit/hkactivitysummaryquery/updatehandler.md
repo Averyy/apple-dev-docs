@@ -24,7 +24,7 @@ var updateHandler: (@Sendable (HKActivitySummaryQuery, [HKActivitySummary]?, (an
 @property (nonatomic, copy, nullable) void (^updateHandler)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> *updatedActivitySummaries, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to `nil`, the active summary query automatically stops as soon as it has finished calculating the initial results. If this property is not `nil`, the query behaves similarly to the observer query. It continues to run, monitoring the HealthKit store. If any new, matching summaries are saved to the store—or if any of the existing matching summaries are modified in the store—the query executes this update handler on a background queue.
 

@@ -25,7 +25,7 @@ var suspensionStiffness: CGFloat { get set }
 @property CGFloat suspensionStiffness;
 ```
 
-#### Discussion
+## Discussion
 
 The spring coefficient determines both how quickly the wheel returns to its natural position after a shock (for example, when the vehicle runs over a bump) and how much force from the shock it transmits to the vehicle. The default spring coefficient is `2.0`.
 

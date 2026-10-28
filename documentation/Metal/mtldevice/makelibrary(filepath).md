@@ -27,7 +27,7 @@ func makeLibrary(filepath: String) throws -> any MTLLibrary
 - (id<MTLLibrary>) newLibraryWithFile:(NSString *) filepath error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

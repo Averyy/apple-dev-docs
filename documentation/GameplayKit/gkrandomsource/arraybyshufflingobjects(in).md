@@ -24,11 +24,11 @@ func arrayByShufflingObjects(in array: [Any]) -> [Any]
 - (NSArray *) arrayByShufflingObjectsInArray:(NSArray *) array;
 ```
 
-#### Return Value
+## Return Value
 
 An array whose contents have been randomly shuffled.
 
-#### Discussion
+## Discussion
 
 Use this method with an instance of [`GKRandomSource`](../gkrandomsource.md) (or of one of its subclasses) to randomly rearrange the contents of an array. For example, in a card game you might use this method to randomize an array of card objects.
 

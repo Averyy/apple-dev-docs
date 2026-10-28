@@ -22,7 +22,7 @@ A Boolean value that indicates whether to exclude this content from media sugges
 var isExcludedFromSuggestions: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

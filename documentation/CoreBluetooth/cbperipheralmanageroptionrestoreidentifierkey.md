@@ -25,7 +25,7 @@ let CBPeripheralManagerOptionRestoreIdentifierKey: String
 extern NSString * const CBPeripheralManagerOptionRestoreIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSString`](../Foundation/nsstring.md). The system uses this UID to identify a specific [`CBPeripheralManager`](./cbperipheralmanager.md), so the UID must be identical across executions of the app. If your app creates multiple [`CBPeripheralManager`](./cbperipheralmanager.md) instances, assign each a distinct UID to prevent state from being mixed up between them.
 

@@ -19,7 +19,7 @@ Creates a search suggestion with the specified label and accessibility descripti
 + (instancetype) suggestionWithLocalizedSuggestion:(NSString *) suggestion descriptionString:(NSString *) description;
 ```
 
-#### Return Value
+## Return Value
 
 A new search suggestion.
 

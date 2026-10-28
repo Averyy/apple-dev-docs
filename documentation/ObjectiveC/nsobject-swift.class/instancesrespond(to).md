@@ -25,11 +25,11 @@ class func instancesRespond(to aSelector: Selector!) -> Bool
 + (BOOL) instancesRespondToSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if instances of the receiver are capable of responding to `aSelector` messages, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 If `aSelector` messages are forwarded to other objects, instances of the class are able to receive those messages without error even though this method returns [`NO`](../no.md).
 

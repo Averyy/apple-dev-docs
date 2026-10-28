@@ -24,7 +24,7 @@ WKApplicationStateBackground
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The system can wake suspended apps in the background. It can also launch apps that are not running in the background to perform background tasks.
 

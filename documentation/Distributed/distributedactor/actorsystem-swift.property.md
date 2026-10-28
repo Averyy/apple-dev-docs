@@ -23,11 +23,11 @@ nonisolated
 var actorSystem: Self.ActorSystem { get }
 ```
 
-#### Discussion
+## Discussion
 
 It is immutable and equal to the system assigned during the distributed actor’s local initializer (or to the system passed to the [`resolve(id:using:)`](./resolve%28id,using%29.md) static function).
 
-#### Synthesized property
+## Synthesized property
 
 In concrete distributed actor declarations, a witness for this protocol requirement is synthesized by the compiler.
 

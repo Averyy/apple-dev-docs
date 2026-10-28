@@ -19,15 +19,15 @@ init(rect: NSRect, options: NSTrackingArea.Options = [], owner: Any?, userInfo: 
 - (instancetype) initWithRect:(NSRect) rect options:(NSTrackingAreaOptions) options owner:(id) owner userInfo:(NSDictionary<id,id> *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The newly-initialized tracking area object.
 
-#### Discussion
+## Discussion
 
 After creating and initializing an `NSTrackingArea` object with this method, you must add it to a target view using the [`addTrackingArea(_:)`](../nsview/addtrackingarea%28_%29.md) method. When changes in the view require changes in the geometry of its tracking areas, the Application Kit invokes [`updateTrackingAreas()`](../nsview/updatetrackingareas%28%29.md). The view should implement this method to replace the current `NSTrackingArea` object with one with a recomputed area.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.5, the [`init(rect:options:owner:userInfo:)`](./init%28rect,options,owner,userinfo%29.md), along with the [`addTrackingArea(_:)`](../nsview/addtrackingarea%28_%29.md) method of `NSView`, replace the `NSView` method [`addTrackingRect(_:owner:userData:assumeInside:)`](../nsview/addtrackingrect%28_,owner,userdata,assumeinside%29.md).
 

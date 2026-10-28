@@ -25,11 +25,11 @@ func setFetchRequestTemplate(_ fetchRequestTemplate: NSFetchRequest<any NSFetchR
 - (void) setFetchRequestTemplate:(NSFetchRequest *) fetchRequestTemplate forName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 For more details on using this method, see [Creating Predicates](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pCreating.html#//apple_ref/doc/uid/TP40001793).
 
-##### Special Considerations
+### Special Considerations
 
 This method raises an exception if the receiver has been used by an object graph manager.
 

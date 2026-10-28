@@ -19,11 +19,11 @@ func enterFullScreenMode(_ screen: NSScreen, withOptions options: [NSView.FullSc
 - (BOOL) enterFullScreenMode:(NSScreen *) screen withOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view was able to enter full screen mode, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) is contained in the options dictionary, the presentation options that were in effect when this method is invoked are not altered, and no displays are captured.
 
@@ -31,7 +31,7 @@ If you do not wish to capture the screen when going to full screen mode, you can
 
 When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) options is specified, exiting full screen mode using [`exitFullScreenMode(options:)`](./exitfullscreenmode%28options%29.md) will restore the previously active [`presentationOptions`](../nsapplication/presentationoptions-swift.property.md).
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v 10.5, invoking this method when the view was not in a window would cause an exception. In macOS 10.6 and later, you can now send this message to a view not in a window. For applications that must also run in OS X v 10.5, a simple workaround is to place the view in an offscreen window.
 

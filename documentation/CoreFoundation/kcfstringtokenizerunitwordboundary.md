@@ -25,7 +25,7 @@ var kCFStringTokenizerUnitWordBoundary: CFOptionFlags { get }
 kCFStringTokenizerUnitWordBoundary
 ```
 
-#### Discussion
+## Discussion
 
 You can use this constant in double-click range detection and whole word search. It is locale-sensitive. If the locale is `en_US_POSIX`, a colon (U+003A) is treated as a word separator. If the `locale` parameter of [`CFStringTokenizerCreate(_:_:_:_:_:)`](./cfstringtokenizercreate%28_,_,_,_,_%29.md) is `NULL`, the locale from the global `AppleTextBreakLocale` preference is used if it is available; otherwise the locale defaults to the first locale in `AppleLanguages`.
 

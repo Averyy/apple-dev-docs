@@ -21,11 +21,11 @@ func search(for string: String!, direction forward: Bool, caseSensitive caseFlag
 - (BOOL) searchFor:(NSString *) string direction:(BOOL) forward caseSensitive:(BOOL) caseFlag wrap:(BOOL) wrapFlag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the search is successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The search for `string` begins from the current selection and continues in the direction specified by `forward`. The search continues across all frames.
 

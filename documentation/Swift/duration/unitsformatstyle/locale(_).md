@@ -21,7 +21,7 @@ A modifier to set the locale of the format style.
 func locale(_ locale: Locale) -> Duration.UnitsFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A copy of this format with the new locale set.
 

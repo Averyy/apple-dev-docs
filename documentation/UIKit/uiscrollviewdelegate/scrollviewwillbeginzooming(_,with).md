@@ -23,7 +23,7 @@ optional func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: 
 - (void) scrollViewWillBeginZooming:(UIScrollView *) scrollView withView:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called at the beginning of zoom gestures and in cases where a change in zoom level is to be animated. You can use this method to store state information or perform any additional actions prior to zooming the view’s content.
 

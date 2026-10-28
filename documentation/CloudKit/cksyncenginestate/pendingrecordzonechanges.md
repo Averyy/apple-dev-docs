@@ -21,7 +21,7 @@ A list of record zone changes that the sync engine has yet to send to the iCloud
 @property (copy, readonly) NSArray<CKSyncEnginePendingRecordZoneChange *> * pendingRecordZoneChanges;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains any pending record zone changes to send to the iCloud servers. After the sync engine sends those changes, your app’s sync delegate receives an event of type [`CKSyncEngineSentRecordZoneChangesEvent`](../cksyncenginesentrecordzonechangesevent.md).
 

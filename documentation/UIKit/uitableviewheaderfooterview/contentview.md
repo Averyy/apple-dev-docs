@@ -27,7 +27,7 @@ var contentView: UIView { get }
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Discussion
+## Discussion
 
 To create your header or footer content, you add subviews to the view in this property. Your custom subviews represent the main content of your header or footer. Be sure to configure all subviews.
 

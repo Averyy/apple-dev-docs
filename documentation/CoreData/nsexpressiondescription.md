@@ -25,7 +25,7 @@ class NSExpressionDescription
 @interface NSExpressionDescription : NSPropertyDescription
 ```
 
-#### Overview
+## Overview
 
 An expression description describes a value that a fetch request returns, which doesn’t appear as an attribute or relationship on an entity. For example, expressions can aggregate data, or  transform an attribute’s value. You add expression descriptions to a fetch request using the [`propertiesToFetch`](./nsfetchrequest/propertiestofetch.md) method.
 

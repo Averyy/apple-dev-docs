@@ -24,7 +24,7 @@ func UIGraphicsPopContext()
 extern void UIGraphicsPopContext();
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to balance calls to the [`UIGraphicsPushContext(_:)`](./uigraphicspushcontext%28_%29.md) function.
 

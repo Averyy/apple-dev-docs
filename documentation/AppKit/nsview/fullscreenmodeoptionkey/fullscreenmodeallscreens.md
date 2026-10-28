@@ -19,7 +19,7 @@ static let fullScreenModeAllScreens: NSView.FullScreenModeOptionKey
 extern NSViewFullScreenModeOptionKey const NSFullScreenModeAllScreens;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`NSNumber`](../../../Foundation/nsnumber.md) containing a Boolean value.
 

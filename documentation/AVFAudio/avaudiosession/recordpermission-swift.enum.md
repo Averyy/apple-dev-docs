@@ -24,7 +24,7 @@ enum RecordPermission
 enum AVAudioSessionRecordPermission : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`recordPermission`](./recordpermission-swift.property.md) property returns these values.
 

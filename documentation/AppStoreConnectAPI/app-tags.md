@@ -5,7 +5,7 @@
 
 Read or modify Apple created app tags.
 
-#### Overview
+## Overview
 
 Use the app tag resource to read the tags that Apple applied to your app and remove tags that are not representative of your app. To learn more, see [Manage app tags](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-tags).
 

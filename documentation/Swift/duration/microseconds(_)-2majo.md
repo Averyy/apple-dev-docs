@@ -21,11 +21,11 @@ Construct a `Duration` given a number of microseconds represented as a `BinaryIn
 static func microseconds<T>(_ microseconds: T) -> Duration where T : BinaryInteger
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of microseconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .microseconds(12)

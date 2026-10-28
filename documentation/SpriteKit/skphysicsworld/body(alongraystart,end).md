@@ -25,7 +25,7 @@ func body(alongRayStart start: CGPoint, end: CGPoint) -> SKPhysicsBody?
 - (SKPhysicsBody *) bodyAlongRayStart:(CGPoint) start end:(CGPoint) end;
 ```
 
-#### Return Value
+## Return Value
 
 The first physics body discovered that intersects the ray. This may be any body along the ray; it is not guaranteed to be the closest physics body. If no body intersects the ray, this method returns `nil`.
 

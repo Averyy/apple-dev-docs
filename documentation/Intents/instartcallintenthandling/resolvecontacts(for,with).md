@@ -28,7 +28,7 @@ optional func resolveContacts(for intent: INStartCallIntent) async -> [INStartCa
 - (void) resolveContactsForStartCall:(INStartCallIntent *) intent withCompletion:(void (^)(NSArray<INStartCallContactResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method verifies the identity of any intended call recipients. Always strive toward a successful resolution to a specific user, but feel free to ask the user for confirmation of the selected contact if there’s some uncertainty.
 

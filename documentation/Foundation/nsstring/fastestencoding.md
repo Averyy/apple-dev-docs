@@ -25,7 +25,7 @@ var fastestEncoding: UInt { get }
 @property (readonly) NSStringEncoding fastestEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 “Fastest” applies to retrieval of characters from the string. This encoding may not be space efficient.
 

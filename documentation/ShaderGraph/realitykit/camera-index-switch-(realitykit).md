@@ -14,7 +14,7 @@ Render different results for each eye in a stereoscopic render.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Camera Index Switch (integer)**:
 
@@ -148,13 +148,13 @@ Render different results for each eye in a stereoscopic render.
 | --- | --- |
 | `Out` | Vector2h |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Mono`**: The value to return if using a single renderer.
 - **`Left`**: The value to return if seeing the texture through the left eye of a stereoscopic render.
 - **`Right`**: The value to return if seeing the texture through the right eye of a stereoscopic render.
 
-#### Discussion
+## Discussion
 
 Use the `Camera Index Switch` node to render stereoscopic images. On most devices, this node returns its `Mono` input parameter. On Apple Vision Pro, this node outputs either `Left` or `Right`, depending on which eye the texture renders through.
 

@@ -23,7 +23,7 @@ var metadataIfAvailable: [String : Any]? { get }
 @property (readonly, nullable) NSDictionary<NSString *,id> * metadataIfAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 If metadata is not readily available, accessing this property will send a message to the device requesting metadata for the file. The delegate of the device will be notified via method [`cameraDevice(_:didReceiveMetadataFor:)`](../iccameradevicedelegate/cameradevice%28_,didreceivemetadatafor%29.md), if this method is implemented by the delegate. Execution of the delegate callback will occur on the main thread.
 

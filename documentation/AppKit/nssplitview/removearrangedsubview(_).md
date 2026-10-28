@@ -19,7 +19,7 @@ func removeArrangedSubview(_ view: NSView)
 - (void) removeArrangedSubview:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of [`arrangesAllSubviews`](./arrangesallsubviews.md) is [`false`](../../Swift/false.md), calling this method doesn’t remove the view as a subview; it remains in the split view’s [`subviews`](../nsview/subviews.md) array.
 

@@ -12,13 +12,13 @@ Perform text recognition on a photo using the Vision framework’s text-recognit
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates the Vision framework’s ability to perform optical character recognition (OCR) on an image you capture using your device’s camera. The [`RecognizeTextRequest`](./recognizetextrequest.md) structure generates a collection of objects that extract and describe an image’s textual content. These objects provide information like the text string, the confidence of the observation’s accuracy, and the bounding box around the text’s location.
 
 Along with extracting and displaying text from the image, the sample app helps you visualize where an observation occurs by using the bounding boxes to draw red rectangles around the text.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 
@@ -27,7 +27,7 @@ To run this sample app, you need the following:
 
 Connect the iPhone to your Mac over USB-C. The first time you run this sample app, the system prompts you to grant the app access to the camera. You need to allow the sample app to access the camera for it to function correctly.
 
-##### Set up the camera
+### Set up the camera
 
 The sample app performs the request on a photo from a physical device. To enable use of the camera, the sample uses [AVFoundation](../AVFoundation/AVFoundation.md) to create a custom camera interface. Tapping the Take a Photo button on the initial view presents the camera and calls the `setup` method. This is where the camera work begins in the sample.
 
@@ -52,7 +52,7 @@ CameraPreview(camera: $camera)
 
 For more information on how to integrate the camera, see [Setting up a capture session](../AVFoundation/setting-up-a-capture-session.md) and [Capturing still and Live Photos](../AVFoundation/capturing-still-and-live-photos.md).
 
-##### Customize the request
+### Customize the request
 
 The Vision framework provides the ability to customize the way it handles text recognition. Through its text-recognition path, the app demonstrates how to change whether the request prioritizes speed or accuracy. It also shows how to customize the languages the request detects, and whether the request applies a language-correction model during the recognition process.
 
@@ -76,7 +76,7 @@ func updateRequestSettings() {
 }
 ```
 
-##### Perform the request
+### Perform the request
 
 After capturing a photo, the app creates an instance of the custom OCR class. This class provides an array to hold the results, the [`RecognizeTextRequest`](./recognizetextrequest.md), and the `performOCR` method to handle the text recognition. The `performOCR` method performs the request on the image, which returns an array of [`RecognizedTextObservation`](./recognizedtextobservation.md) objects. The method then adds each observation to the observations array.
 
@@ -115,7 +115,7 @@ Initially, the app performs the request once when it captures an image. If the a
 }
 ```
 
-##### Create and display bounding boxes
+### Create and display bounding boxes
 
 This sample provides a custom implementation to display red bounding boxes where an observation occurs. An observation contains the location and the dimensions of the [`boundingBox`](./boundingboxproviding/boundingbox.md) in the form of a [`NormalizedRect`](./normalizedrect.md). To create a bounding box, the app first converts the `NormalizedRect` to a [`CGRect`](../CoreFoundation/cgrect.md), and then returns a [`Path`](../SwiftUI/path.md) to draw the rectangle.
 
@@ -145,7 +145,7 @@ To display the bounding boxes, the app uses the [`overlay(alignment:content:)`](
 }
 ```
 
-##### Access the results
+### Access the results
 
 Finally, the app displays the extracted text from the image by iterating through the observations array. If the request doesn’t recognize any text in the image, the app displays the “No text recognized” string.
 

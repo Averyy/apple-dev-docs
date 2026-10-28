@@ -20,7 +20,7 @@ let kSecCodeInfoCdHashes: CFString
 extern CFStringRef const kSecCodeInfoCdHashes;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding [`CFArray`](../CoreFoundation/cfarray.md) contains the values of the [`kSecCodeInfoUnique`](./kseccodeinfounique.md) binary identifier for every digest algorithm supported in the signature in the same order as in the [`kSecCodeInfoDigestAlgorithms`](./kseccodeinfodigestalgorithms.md) array. The [`kSecCodeInfoUnique`](./kseccodeinfounique.md) value contained in this array corresponds to the [`kSecCodeInfoDigestAlgorithm`](./kseccodeinfodigestalgorithm.md) value.
 

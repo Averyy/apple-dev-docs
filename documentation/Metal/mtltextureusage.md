@@ -28,7 +28,7 @@ enum MTLTextureUsage : NSUInteger;
 
 - [Optimizing texture data](./optimizing-texture-data.md)
 
-#### Overview
+## Overview
 
 If a texture has multiple uses in your app, you can combine multiple usage options for that texture. After you set the texture’s usage options, you can use it only in the ways that you specified.
 

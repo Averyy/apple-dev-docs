@@ -15,7 +15,7 @@ Enumerate a collection of accessory anchors.
 extern void ar_accessory_anchors_enumerate_anchors(ar_accessory_anchors_t accessory_anchors, ar_accessory_anchors_enumerator_t accessory_anchors_enumerator);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Enumeration is not thread-safe. The enumerator must not retain or release objects.
 

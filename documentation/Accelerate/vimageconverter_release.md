@@ -21,7 +21,7 @@ Releases a vImage converter.
 void vImageConverter_Release(vImageConverterRef converter);
 ```
 
-#### Discussion
+## Discussion
 
 If you create or explicitly retain (see [`vImageConverter_Retain`](./vimageconverter_retain.md)) a [`vImageConverter`](./vimageconverter.md) instance, you’re responsible for releasing it when you no longer need it (see [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i)).
 

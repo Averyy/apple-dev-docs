@@ -24,7 +24,7 @@ var pointCount: Int { get }
 @property (readonly) NSUInteger pointCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value is zero if no points for a region could be found.
 

@@ -19,11 +19,11 @@ var webFrame: WebFrame! { get }
 @property (nonatomic, strong, readonly) WebFrame * webFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The WebFrame that contains the plug-in.
 
-#### Discussion
+## Discussion
 
 Only implemented by containers that are based on the WebKit’s plug-in architecture.
 

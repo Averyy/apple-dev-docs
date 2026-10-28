@@ -5,15 +5,15 @@
 
 Learn about new features and updates in the App Store Server API.
 
-#### Overview
+## Overview
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
-##### Server update — 2026/10/23
+### Server update — 2026/10/23
 
 The [`Get Customer Groups`](./get-customer-groups.md) and [`Get Group Members`](./get-group-members.md) endpoints are now available in the production environment for groups with a [`groupType`](./grouptype.md) of `ORGANIZATION`.
 
-##### 1.22 - 2026/09/28
+### 1.22 - 2026/09/28
 
 **New features**
 
@@ -24,24 +24,24 @@ The [`Get Customer Groups`](./get-customer-groups.md) and [`Get Group Members`](
 - The [`quantity`](./quantity.md) field also reports the number of seats for a subscription that a customer buys as a multiseat purchase.
 - Added the [`GroupNotFoundError`](./groupnotfounderror.md), [`InvalidGroupIdError`](./invalidgroupiderror.md), [`InvalidLimitError`](./invalidlimiterror.md), [`InvalidAssignedTransactionNotSupportedError`](./invalidassignedtransactionnotsupportederror.md), and [`AssignedSubscriptionExtensionIneligibleError`](./assignedsubscriptionextensionineligibleerror.md) error codes.
 
-##### Server update  — 2026/05/05
+### Server update  — 2026/05/05
 
 Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.
 
-##### 1.21 - 2026/04/27
+### 1.21 - 2026/04/27
 
 **New features**
 
 - Added the following fields in [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) to support monthly subscriptions with a 12-month commitment: [`TransactionCommitmentInfo`](./transactioncommitmentinfo.md) and [`billingPlanType`](./billingplantype.md); and the following fields in [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md):   [`RenewalCommitmentInfo`](./renewalcommitmentinfo.md) and [`renewalBillingPlanType`](./renewalbillingplantype.md).
 
-##### 1.20 - 2026/04/13
+### 1.20 - 2026/04/13
 
 **New features**
 
 - Added the [`Finish Transaction`](./finish-transaction.md) endpoint.
 - Defined a new type, [`anyTransactionId`](./anytransactionid.md). The endpoints that previously used the [`transactionId`](./transactionid.md) type now use [`anyTransactionId`](./anytransactionid.md), but the functionality is unchanged.
 
-##### 1.19 - 2025/12/10
+### 1.19 - 2025/12/10
 
 **New features**
 
@@ -50,25 +50,25 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 - Added the [`advancedCommercePriceIncreaseInfo`](./advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](./advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](./advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](./advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md).
 - Use the new [`Send Consumption Information`](./send-consumption-information.md) endpoint for App Store In-App Purchases that don’t use the Advanced Commerce API.
 
-##### 1.18 - 2025/10/29
+### 1.18 - 2025/10/29
 
 **New features**
 
 - Added the `ONE_TIME` value to [`offerDiscountType`](./offerdiscounttype.md) to indicate In-App Purchase offer codes.
 
-##### 1.17 - 2025/10/16
+### 1.17 - 2025/10/16
 
 **New features**
 
 - Added the [`Get App Transaction Info`](./get-app-transaction-info.md) endpoint and [`AppTransactionInfoResponse`](./apptransactioninforesponse.md) response object.
 
-##### 1.16 - 2025/06/09
+### 1.16 - 2025/06/09
 
 **New features**
 
 - Added the [`Set App Account Token`](./set-app-account-token.md) endpoint and [`UpdateAppAccountTokenRequest`](./updateappaccounttokenrequest.md) request object, and related error codes:  [`TransactionIdIsNotOriginalTransactionIdError`](./transactionidisnotoriginaltransactioniderror.md), [`FamilyTransactionNotSupportedError`](./familytransactionnotsupportederror.md), and [`InvalidAppAccountTokenUUIDError`](./invalidappaccounttokenuuiderror.md).
 
-##### 1.15 - 2025/02/21
+### 1.15 - 2025/02/21
 
 **New features**
 
@@ -76,20 +76,20 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 - Updated the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) to include the [`appAccountToken`](./appaccounttoken.md) field.
 - Added the [`AppTransactionIdNotSupportedError`](./apptransactionidnotsupportederror.md) error object.
 
-##### 1.14 - 2025/01/17
+### 1.14 - 2025/01/17
 
 **New features**
 
 - Added support for [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md).
 
-##### 1.13 — 2024/07/08
+### 1.13 — 2024/07/08
 
 **New features**
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) to include the new [`eligibleWinBackOfferIds`](./eligiblewinbackofferids.md) field.
 - Added the win-back offer type in [`offerType`](./offertype.md).
 
-##### 1.12 — 2024/06/10
+### 1.12 — 2024/06/10
 
 **New features**
 
@@ -100,7 +100,7 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 
 - The [`Get Transaction History V1`](./get-transaction-history-v1.md) endpoint is deprecated. Use the new [`Get Transaction History`](./get-transaction-history.md) endpoint instead.
 
-##### 1.11  — 2024/04/11
+### 1.11  — 2024/04/11
 
 New features
 
@@ -112,30 +112,30 @@ New features
 
 - The system no longer sends the [`InvalidTransactionNotConsumableError`](./invalidtransactionnotconsumableerror.md) error object. It uses [`InvalidTransactionTypeNotSupportedError`](./invalidtransactiontypenotsupportederror.md) instead.
 
-##### 1.10.1  — 2024/03/12
+### 1.10.1  — 2024/03/12
 
 - The type of the [`price`](../AppStoreServerNotifications/price.md) field changed from `int32` to `int64`.
 
-##### Server update  — 2024/02/29
+### Server update  — 2024/02/29
 
 **New features**
 
 - The [`Get Notification History`](./get-notification-history.md) endpoint adds support for the new notification type for unreported external purchase tokens.
 
-##### 1.10 — 2023/10/26
+### 1.10 — 2023/10/26
 
 New features
 
 - Added the following new properties in the decoded transaction payload [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md): [`price`](./price.md), [`currency`](./currency.md), and [`offerDiscountType`](./offerdiscounttype.md).
 
-##### 1.9 — 2023/09/27
+### 1.9 — 2023/09/27
 
 New features
 
 - Updated the error format of the [`Send Consumption Information V1`](./send-consumption-information-v1.md) endpoint to match that of other endpoints. The endpoint now returns a JSON body that can contain an error code.
 - New error codes for the [`Send Consumption Information V1`](./send-consumption-information-v1.md) endpoint include: [`InvalidAccountTenureError`](./invalidaccounttenureerror.md), [`InvalidAppAccountTokenError`](./invalidappaccounttokenerror.md), [`InvalidConsumptionStatusError`](./invalidconsumptionstatuserror.md), [`InvalidCustomerConsentedError`](./invalidcustomerconsentederror.md), [`InvalidDeliveryStatusError`](./invaliddeliverystatuserror.md), [`InvalidLifetimeDollarsPurchasedError`](./invalidlifetimedollarspurchasederror.md), [`InvalidLifetimeDollarsRefundedError`](./invalidlifetimedollarsrefundederror.md), [`InvalidPlatformError`](./invalidplatformerror.md), [`InvalidPlayTimeError`](./invalidplaytimeerror.md), [`InvalidSampleContentProvidedError`](./invalidsamplecontentprovidederror.md), [`InvalidTransactionNotConsumableError`](./invalidtransactionnotconsumableerror.md), [`InvalidUserStatusError`](./invaliduserstatuserror.md).
 
-##### 1.8 — 2023/06/05
+### 1.8 — 2023/06/05
 
 New features
 
@@ -156,14 +156,14 @@ New features
 - The `excludeRevoked` filter in [`Get Transaction History V1`](./get-transaction-history-v1.md) is deprecated. Use the new `revoked` filter instead.
 - The `firstSendAttemptResult` field is deprecated in the [`CheckTestNotificationResponse`](./checktestnotificationresponse.md) and [`notificationHistoryResponseItem`](./notificationhistoryresponseitem.md) objects. Use the first [`sendAttemptItem`](./sendattemptitem.md) in the `sendAttempts` array instead.
 
-##### 1.7 — 2023/01/30
+### 1.7 — 2023/01/30
 
 New features
 
 - The new endpoint [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) takes a subscription product identifier and extends the renewal date for all eligible subscribers. It responds with [`MassExtendRenewalDateResponse`](./massextendrenewaldateresponse.md). For more information, see [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md). For information about new App Store server notifications related to this endpoint, see the [App Store Server Notifications changelog](../AppStoreServerNotifications/app-store-server-notifications-changelog.md).
 - The new endpoint [`Get Status of Subscription Renewal Date Extensions`](./get-status-of-subscription-renewal-date-extensions.md) checks the status of a subscription-renewal-date extension, and responds with the [`MassExtendRenewalDateStatusResponse`](./massextendrenewaldatestatusresponse.md).
 
-##### 1.6 — 2022/08/08
+### 1.6 — 2022/08/08
 
 New features
 
@@ -174,7 +174,7 @@ Deprecations
 - The endpoint [`Get Refund History V1`](./get-refund-history-v1.md) and its response [`RefundLookupResponse`](./refundlookupresponse.md) are deprecated.
 - In `firstSendAttemptResult`, the `SSL_ISSUE` value is deprecated and replaced with `TLS_ISSUE`.
 
-##### 1.5 — 2022/06/06
+### 1.5 — 2022/06/06
 
 New features
 
@@ -183,37 +183,37 @@ New features
 - The [`Get Transaction History V1`](./get-transaction-history-v1.md) endpoint is enhanced with new parameters to support filtering and sorting functionality.
 - The [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) now includes the [`recentSubscriptionStartDate`](./recentsubscriptionstartdate.md) field.
 
-##### 1.4
+### 1.4
 
 This version doesn’t contain any public changes.
 
-##### 1.3
+### 1.3
 
 This version doesn’t contain any public changes.
 
-##### Server update — 2022/03/17
+### Server update — 2022/03/17
 
 Removals
 
 - The [`JWSDecodedHeader`](./jwsdecodedheader.md) object no longer includes the `kid` field.
 
-##### 1.2 — 2022/02/24
+### 1.2 — 2022/02/24
 
 New features
 
 - The [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) and [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) objects now include the [`environment`](./environment.md) field.
 
-##### Server update — 2022/02/23
+### Server update — 2022/02/23
 
 - The [`Get Refund History V1`](./get-refund-history-v1.md) endpoint now returns a maximum of 50 refunded transactions.
 
-##### 1.1 — 2022/10/21
+### 1.1 — 2022/10/21
 
 New features
 
 - The API adds three endpoints: [`Look Up Order ID`](./look-up-order-id.md), [`Get Refund History V1`](./get-refund-history-v1.md), and [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md).
 
-##### Server update — 2021/09/20
+### Server update — 2021/09/20
 
 The API is now available in the production environment, using the following base URL:
 
@@ -221,7 +221,7 @@ The API is now available in the production environment, using the following base
 https://api.storekit.apple.com/inApps/
 ```
 
-##### 1.0b1 — 2021/06/07
+### 1.0b1 — 2021/06/07
 
 Initial version of the App Store Server API.
 

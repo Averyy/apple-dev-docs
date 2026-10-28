@@ -22,7 +22,7 @@ let kVTCompressionPreset_Balanced: CFString
 extern CFStringRef const kVTCompressionPreset_Balanced;
 ```
 
-#### Discussion
+## Discussion
 
 A preset to provide a balanced compression quality and encoding speed.
 

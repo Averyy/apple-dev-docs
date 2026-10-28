@@ -25,7 +25,7 @@ func SparseCreatePreconditioner(_ type: SparsePreconditioner_t, _ A: SparseMatri
 static SparseOpaquePreconditioner_Complex_Double SparseCreatePreconditioner(SparsePreconditioner_t type, SparseMatrix_Complex_Double A);
 ```
 
-#### Return Value
+## Return Value
 
 The constructed preconditioner object. Resource must be freed through a call to `SparseCleanup()` once the user is finished with the preconditioner.
 

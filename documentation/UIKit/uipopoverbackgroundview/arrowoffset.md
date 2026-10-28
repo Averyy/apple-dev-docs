@@ -22,7 +22,7 @@ var arrowOffset: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat arrowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method raises an exception. You must override it and implement the appropriate setter and getter methods yourself. Your methods must not call `super`.
 

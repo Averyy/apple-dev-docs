@@ -19,7 +19,7 @@ var backgroundSounds: SRAcousticSettings.Accessibility.BackgroundSounds { get }
 @property (nonatomic, strong, readonly) SRAcousticSettingsAccessibilityBackgroundSounds * backgroundSounds;
 ```
 
-#### Discussion
+## Discussion
 
 Background Sounds Settings
 

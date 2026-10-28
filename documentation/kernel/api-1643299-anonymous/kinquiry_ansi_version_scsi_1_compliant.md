@@ -13,7 +13,7 @@
 kINQUIRY_ANSI_VERSION_SCSI_1_Compliant = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 SCSI-1 conformance claimed by the device server.
 

@@ -24,7 +24,7 @@ class PKPassLibrary
 @interface PKPassLibrary : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a single thread.
 

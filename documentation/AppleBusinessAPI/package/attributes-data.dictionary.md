@@ -15,7 +15,7 @@ Attributes that describe a package resource.
 object Package.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: When additional attributes are added by Apple, they appear automatically, without requiring a newer version of the API.
 

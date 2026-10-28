@@ -15,11 +15,11 @@ Allocates pageable memory in the kernel map.
 void * IOMallocPageable(vm_size_t size, vm_size_t alignment);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated memory, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This is a utility to allocate pageable memory in the kernel. This function may block and so should not be called from interrupt level or while a simple lock is held.
 

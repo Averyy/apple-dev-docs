@@ -27,7 +27,7 @@ func setControlsDelegate(_ controlsDelegate: (any AVCaptureSessionControlsDelega
 
 - [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Discussion
+## Discussion
 
 People interact with capture controls by performing specific gestures to enable their visibility. Specify a delegate to for the system to call when it presents and dismisses controls. The system calls the delegate’s methods on the specified callback queue.
 

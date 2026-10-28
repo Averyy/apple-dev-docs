@@ -19,11 +19,11 @@ func path(forSoundResource name: NSSound.Name) -> String?
 - (NSString *) pathForSoundResource:(NSSoundName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The absolute pathname of the resource file or `nil` if the file was not found.
 
-#### Discussion
+## Discussion
 
 Sound resources are those files in the bundle that are recognized by the `NSSound` class. The types of sound files can be determined by calling the `soundUnfilteredFileTypes` method of `NSSound`.
 

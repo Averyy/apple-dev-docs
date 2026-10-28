@@ -19,7 +19,7 @@ var isCameraEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isCameraEnabled) BOOL cameraEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the camera is enabled via the picker.
 

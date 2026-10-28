@@ -24,7 +24,7 @@ class VTMultiPassStorage
 typedef struct OpaqueVTMultiPassStorage * VTMultiPassStorageRef;
 ```
 
-#### Overview
+## Overview
 
 The multipass storage object is a reference-counted CoreFoundation (CF) type. The data stored in the multipass storage object is private to the video encoder.
 

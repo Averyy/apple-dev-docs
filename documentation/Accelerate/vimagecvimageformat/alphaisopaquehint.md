@@ -21,7 +21,7 @@ The alpha hint of the Core Video image format.
 var alphaIsOpaqueHint: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the case where an image format contains an alpha channel, but the image is fully opaque, set this value to `true`.
 

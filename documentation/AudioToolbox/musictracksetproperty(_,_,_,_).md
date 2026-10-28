@@ -24,11 +24,11 @@ func MusicTrackSetProperty(_ inTrack: MusicTrack, _ inPropertyID: UInt32, _ inDa
 extern OSStatus MusicTrackSetProperty(MusicTrack inTrack, UInt32 inPropertyID, void *inData, UInt32 inLength);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Music track property values are always accessed by reference.
 

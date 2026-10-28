@@ -20,7 +20,7 @@ Replaces certain words and phrases with a redacted form.
 case etiquetteReplacements
 ```
 
-#### Discussion
+## Discussion
 
 If included, a phrase recognized as an expletive would be transcribed with asterisks.
 

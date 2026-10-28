@@ -26,17 +26,17 @@ convenience init?(user username: String)
 - (id) initWithUser:(NSString *) username;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UserDefaults`](../userdefaults.md) object whose argument and registration domains are already set up. If the current user does not have access to the specified user account, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t put anything in the search list. Invoke it only if you’ve allocated your own [`UserDefaults`](../userdefaults.md) instance instead of using the shared one.
 
 You do not normally use this method to initialize an instance of [`UserDefaults`](../userdefaults.md). Applications used by a superuser might use this method to update the defaults databases for a number of users. The user who started the application must have appropriate access (read, write, or both) to the defaults database of the new user, or this method returns `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 This method was never implemented to do anything except return the defaults for the current user.
 

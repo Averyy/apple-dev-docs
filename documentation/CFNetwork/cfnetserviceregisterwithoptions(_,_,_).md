@@ -26,11 +26,11 @@ func CFNetServiceRegisterWithOptions(_ theService: CFNetService, _ options: CFOp
 extern Boolean CFNetServiceRegisterWithOptions(CFNetServiceRef theService, CFOptionFlags options, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if an asynchronous service registration was started; `FALSE` if an asynchronous or synchronous registration failed or if a synchronous registration was canceled.
 
-#### Discussion
+## Discussion
 
 If the service is to run in asynchronous mode, you must call [`CFNetServiceSetClient(_:_:_:)`](./cfnetservicesetclient%28_,_,_%29.md) to associate a callback function with this CFNetService before calling this function.
 
@@ -40,7 +40,7 @@ When registering a service that runs in synchronous mode, this function blocks u
 
 The `options` parameter is a bit flag for specifying service registration options. Currently, `kCFNetServiceFlagNoAutoRename` is the only supported registration option. If this bit is set and a service of the same name is running, the registration will fail. If this bit is not set and a service of the same name is running, the service that is being registered will be renamed automatically by appending `(`*n*`)` to the service name, where *n* is a number that is incremented until the service can be registered with a unique name.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

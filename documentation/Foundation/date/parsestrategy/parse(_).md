@@ -21,11 +21,11 @@ Returns a `Date` of a given string interpreted using the current settings.
 func parse(_ value: String) throws -> Date
 ```
 
-#### Return Value
+## Return Value
 
 A `Date` represented by `value`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Throws `NSFormattingError` if the string cannot be parsed.
 

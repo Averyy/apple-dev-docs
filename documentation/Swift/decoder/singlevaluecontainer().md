@@ -22,11 +22,11 @@ Returns the data stored in this decoder as represented in a container appropriat
 func singleValueContainer() throws -> any SingleValueDecodingContainer
 ```
 
-#### Return Value
+## Return Value
 
 A single value container view into this decoder.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a single value container.
 

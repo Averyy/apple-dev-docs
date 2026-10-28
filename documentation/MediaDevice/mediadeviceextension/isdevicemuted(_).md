@@ -19,15 +19,15 @@ Gets the current mute state for the specified device.
 func isDeviceMuted(_ device: MediaOutputDevice) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the device is muted, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Called when a device reports `true` for [`canMute`](../mediaoutputdevice/canmute.md).
 
-#### Grouping
+## Grouping
 
 For a group of devices, all devices in the group must report `true` for [`canMute`](../mediaoutputdevice/canmute.md).
 

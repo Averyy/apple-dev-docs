@@ -15,7 +15,7 @@ Discover, publish, and resolve network services on a local area or wide area net
 - visionOS 1.0+
 - watchOS 3.0+
 
-#### Overview
+## Overview
 
 The DNS Service Discovery API helps you to perform three main tasks:
 

@@ -18,7 +18,7 @@ A button style that is typically used in the context of an accessory toolbar (so
 
 Available when `Self` is `AccessoryBarButtonStyle`.
 
-#### Discussion
+## Discussion
 
 This is the default button style for views in accessory toolbars, created with `ToolbarItemPlacement.init(id:_)`, and for searchable scopes.
 

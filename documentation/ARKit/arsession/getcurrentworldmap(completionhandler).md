@@ -24,7 +24,7 @@ func currentWorldMap() async throws -> ARWorldMap
 - (void) getCurrentWorldMapWithCompletionHandler:(void (^)(ARWorldMap *worldMap, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An [`ARWorldMap`](../arworldmap.md) encapsulates the state of a running [`ARSession`](../arsession.md). This state includes ARKit’s awareness of the physical space the user moves the device in (which ARKit uses to determine the device’s position and orientation), as well as any [`ARAnchor`](../aranchor.md) objects added to the session (which can represent detected real-world features or virtual content placed by your app). After you use this method to save a session’s world map, you can assign it to a configuration’s [`initialWorldMap`](../arworldtrackingconfiguration/initialworldmap.md) property and use [`run(_:options:)`](./run%28_,options%29.md) to start another session with the same spatial awareness and anchors.
 

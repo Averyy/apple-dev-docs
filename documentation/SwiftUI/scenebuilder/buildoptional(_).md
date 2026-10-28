@@ -22,7 +22,7 @@ Produces an optional scene for conditional statements in multi-statement closure
 static func buildOptional(_ scene: (any Scene & _LimitedAvailabilitySceneMarker)?) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Conditional statements in a [`SceneBuilder`](../scenebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 

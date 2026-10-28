@@ -21,7 +21,7 @@ A type that describes the aggregate identity of a SwiftData model.
 struct PersistentIdentifier
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Decoded [`PersistentIdentifier`](./persistentidentifier.md) and identifiers created by the [`DefaultStore`](./defaultstore.md) are not considered equivalent.
 

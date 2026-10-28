@@ -25,7 +25,7 @@ case completed
 NSURLSessionTaskStateCompleted
 ```
 
-#### Discussion
+## Discussion
 
 If the task completed successfully, the task’s [`error`](../error.md) property is `nil`. Otherwise, it provides an error object that tells what went wrong. A task in this state is not subject to timeouts.
 

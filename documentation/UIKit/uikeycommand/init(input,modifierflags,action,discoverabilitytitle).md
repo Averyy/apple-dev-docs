@@ -24,11 +24,11 @@ convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selec
 + (instancetype) keyCommandWithInput:(NSString *) input modifierFlags:(UIKeyModifierFlags) modifierFlags action:(SEL) action discoverabilityTitle:(NSString *) discoverabilityTitle;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized key command object.
 
-#### Discussion
+## Discussion
 
 After creating a key command object, you can add it to a view controller using the [`addKeyCommand(_:)`](../uiviewcontroller/addkeycommand%28_%29.md) method of the view controller. You can also override any responder class and return the key command directly from the responder’s [`keyCommands`](../uiresponder/keycommands.md) property.
 

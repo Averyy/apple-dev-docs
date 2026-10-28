@@ -22,7 +22,7 @@ var availableSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteT
 @property (nonatomic, readonly) NSArray<NSString *> * availableSemanticSegmentationMatteTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the array of semantic segmentation types that’s available given the current session configuration.
 

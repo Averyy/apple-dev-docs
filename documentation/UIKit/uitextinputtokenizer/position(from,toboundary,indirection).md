@@ -24,7 +24,7 @@ func position(from position: UITextPosition, toBoundary granularity: UITextGranu
 - (UITextPosition *) positionFromPosition:(UITextPosition *) position toBoundary:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 The next boundary position of a text unit of the given granularity in the given direction, or `nil` if there is no such position.
 

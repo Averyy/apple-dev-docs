@@ -20,7 +20,7 @@ Loads a configuration catalog from a USD or reality file.
 init(from url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method parses a USD or `.reality` file, and provides a collection of available configurations based on USD variant sets or `.reality` file configurations. It doesn’t load large asset files, such as textures and meshes.
 

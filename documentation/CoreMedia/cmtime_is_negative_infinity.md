@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether a time is negative infinity.
 #define CMTIME_IS_NEGATIVE_INFINITY(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is negative infinity; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this macro instead of testing whether a time is equal to [`negativeInfinity`](./cmtime/negativeinfinity.md), because there are many times that represent negative infinity. The system ignores nonflags fields, so they can contain anything.
 

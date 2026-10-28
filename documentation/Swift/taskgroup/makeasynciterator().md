@@ -23,7 +23,7 @@ func makeAsyncIterator() -> TaskGroup<ChildTaskResult>.Iterator
 
 Available when `ChildTaskResult` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 An instance of the `AsyncIterator` type used to produce elements of the asynchronous sequence.
 

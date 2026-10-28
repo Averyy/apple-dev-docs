@@ -22,7 +22,7 @@ optional func largeContentViewerInteraction(_ interaction: UILargeContentViewerI
 - (void) largeContentViewerInteraction:(UILargeContentViewerInteraction *) interaction didEndOnItem:(id<UILargeContentViewerItem>) item atPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method and are using standard UIKit controls, the system performs a default action, such as sending a [`touchUpInside`](../uicontrol/event/touchupinside.md) event to the control. If you’re using a custom view with its own tap gesture recognizer, implement this method to handle the interaction. For example, to perform the action that would have occurred if the user tapped on that item.
 

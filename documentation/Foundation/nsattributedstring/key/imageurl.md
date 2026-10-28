@@ -25,7 +25,7 @@ static let imageURL: NSAttributedString.Key
 extern NSAttributedStringKey const NSImageURLAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSURL`](../../nsurl.md) with the link to the image.
 

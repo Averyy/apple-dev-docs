@@ -23,7 +23,7 @@ var isCameraLensSmudgeDetectionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCameraLensSmudgeDetectionSupported) BOOL cameraLensSmudgeDetectionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the session’s current configuration supports lens smudge detection. When switching cameras or formats, this property may change. When this property changes from `true` to `false`, [`isCameraLensSmudgeDetectionEnabled`](../iscameralenssmudgedetectionenabled.md) also reverts to `false`. If you opt in for lens smudge detection and then change configurations, you should set [`isCameraLensSmudgeDetectionEnabled`](../iscameralenssmudgedetectionenabled.md) to `true` again.
 

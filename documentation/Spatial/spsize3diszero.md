@@ -19,11 +19,11 @@
 static bool SPSize3DIsZero(SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size is zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the size is zero.
 

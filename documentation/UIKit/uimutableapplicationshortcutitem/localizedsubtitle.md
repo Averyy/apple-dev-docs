@@ -22,7 +22,7 @@ var localizedSubtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a subtitle for a mutable quick action, the system then displays the title on a single line (potentially with an ellipsis character), no matter how long the title is.
 

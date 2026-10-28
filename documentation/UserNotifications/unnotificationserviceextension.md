@@ -28,7 +28,7 @@ class UNNotificationServiceExtension
 
 - [Modifying content in newly delivered notifications](./modifying-content-in-newly-delivered-notifications.md)
 
-#### Overview
+## Overview
 
 A [`UNNotificationServiceExtension`](./unnotificationserviceextension.md) object provides the entry point for a notification service app extension. This object lets you customize the content of a remote notification before the system delivers it to the user. A notification service app extension doesn’t present any UI of its own. Instead, it’s launched on demand when the system delivers a notification of the appropriate type to the user’s device. You use this extension to modify the notification’s content or download content related to the extension. For example, you could use the extension to decrypt an encrypted data block or to download images associated with the notification.
 
@@ -45,7 +45,7 @@ As for any app extension, you deliver a notification service app extension class
 
 For information about how to set up and send remote notifications, see [Setting up a remote notification server](./setting-up-a-remote-notification-server.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The Xcode templates provide a subclass of [`UNNotificationServiceExtension`](./unnotificationserviceextension.md) for you to modify. You must implement the [`didReceive(_:withContentHandler:)`](./unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method and use it to process incoming notifications. It’s also strongly recommended that you override the [`serviceExtensionTimeWillExpire()`](./unnotificationserviceextension/serviceextensiontimewillexpire%28%29.md) method.
 

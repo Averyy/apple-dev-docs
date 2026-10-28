@@ -23,7 +23,7 @@ optional func willPresentSearchController(_ searchController: UISearchController
 - (void) willPresentSearchController:(UISearchController *) searchController;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls this method when it’s about to automatically present the search controller. The system doesn’t call this method when you explicitly present the search controller.
 

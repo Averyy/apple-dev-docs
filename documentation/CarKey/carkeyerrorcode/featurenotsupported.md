@@ -19,7 +19,7 @@ An error that indicates the specified feature isn’t supported in the current e
 case FeatureNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 Simulator support is not available for many CarKey features. Run those features on an actual device.
 

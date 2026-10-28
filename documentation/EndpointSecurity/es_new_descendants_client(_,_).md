@@ -19,11 +19,11 @@ func es_new_descendants_client(_ client: UnsafeMutablePointer<OpaquePointer?>, _
 extern es_new_client_result_t es_new_descendants_client(es_client_t **client, es_handler_block_t handler);
 ```
 
-#### Return Value
+## Return Value
 
 Es_new_client_result_t indicating success or a specific error.
 
-#### Discussion
+## Discussion
 
 The returned client receives notify events for the calling process and auth+notify events for its descendant processes (the entire subtree rooted at the calling process). This includes descendants that already exist at the time the client is created as well as any forked or exec’d afterward, recursively. All other processes are invisible.
 

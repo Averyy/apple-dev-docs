@@ -21,7 +21,7 @@ protocol GenerationTransformer : Sendable
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 A session may run several generation passes when it dispatches tools. Keep request configuration here and decoding state in the handler created for each pass.
 

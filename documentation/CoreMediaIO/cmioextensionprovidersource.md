@@ -20,7 +20,7 @@ protocol CMIOExtensionProviderSource : NSObjectProtocol
 @protocol CMIOExtensionProviderSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Create a class that adopts this protocol to configure provider properties and manage its client connections.
 

@@ -15,11 +15,11 @@ Returns an access credential for a key.
 OSStatus SecKeyGetCredentials(SecKeyRef keyRef, CSSM_ACL_AUTHORIZATION_TAG operation, SecCredentialType credentialType, const CSSM_ACCESS_CREDENTIALS **outCredentials);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An access credential is required as an input to a number of CSSM functions.
 

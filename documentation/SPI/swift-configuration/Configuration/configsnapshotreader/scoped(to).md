@@ -24,11 +24,11 @@ Returns a scoped snapshot reader by appending the provided key to the current ke
 func scoped(to configKey: ConfigKey) -> ConfigSnapshotReader
 ```
 
-#### Return Value
+## Return Value
 
 A reader for accessing scoped values.
 
-#### Discussion
+## Discussion
 
 Use this method to create a reader that accesses a subset of the configuration.
 

@@ -21,7 +21,7 @@ func isRendering() -> Bool
 - (BOOL) isRendering;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if a composition is rendering in the view; [`false`](../../Swift/false.md) otherwise.
 

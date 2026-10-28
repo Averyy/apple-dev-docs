@@ -21,7 +21,7 @@ func CTFontManagerCreateFontRequestRunLoopSource(_ sourceOrder: CFIndex, _ creat
 extern CFRunLoopSourceRefCTFontManagerCreateFontRequestRunLoopSource(CFIndex sourceOrder, CFArrayRef (^createMatchesCallback)(CFDictionaryRef requestAttributes, pid_t requestingProcess));
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CFRunLoopSource object that should be added to the run loop. To stop receiving requests, invalidate this run loop source. Returns `NULL` on error, in the case of a duplicate `requestPortName`, or invalid context structure.
 

@@ -19,7 +19,7 @@ The combined, maximum size, in bytes, of the non-essential assets that download 
 - **Name**: `BAMaxInstallSize`
 - **Type**: integer
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The App Store uses this key to show the size of your app on the product page, so provide an accurate value. If you compress the assets, use the uncompressed size of the files for this value. Don’t overstate the disk space you require.
 

@@ -21,7 +21,7 @@ Returns a new pointer array initialized to use the given options.
 + (NSPointerArray *) pointerArrayWithOptions:(NSPointerFunctionsOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array initialized to use the given options.
 

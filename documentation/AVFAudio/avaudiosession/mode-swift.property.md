@@ -24,7 +24,7 @@ var mode: AVAudioSession.Mode { get }
 @property (readonly) AVAudioSessionMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 The audio session mode, together with the audio session category, indicates to the system how you intend to use audio in your app. You can use a mode to configure the audio system for specific use cases such as video recording, voice or video chat, or audio analysis.
 

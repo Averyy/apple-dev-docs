@@ -25,7 +25,7 @@ var mtu: NSNumber? { get set }
 @property (copy, nullable) NSNumber * MTU;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum transmission unit (MTU) size represents the largest number of bytes that anything can assign to the TUN interface.
 

@@ -19,7 +19,7 @@ var dividerStyle: NSSplitView.DividerStyle { get set }
 @property NSSplitViewDividerStyle dividerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSSplitView.DividerStyle`](./dividerstyle-swift.enum.md) for the possible values.
 

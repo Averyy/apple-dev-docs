@@ -15,7 +15,7 @@ The sidecar URL used by the MediaExtension.
 @property (nonatomic, readonly, nullable) NSURL * sidecarURL;
 ```
 
-#### Discussion
+## Discussion
 
 The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 

@@ -6,7 +6,7 @@
 
 An atom that summarizes the calculated minimum and maximum offsets between decode and composition time, as well as the start and end times, for all samples.
 
-#### Overview
+## Overview
 
 See [`Composition shift least greatest atom`](../composition_shift_least_greatest_atom.md).
 

@@ -25,7 +25,7 @@ static var networkDown: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A socket operation encountered a dead network.
 

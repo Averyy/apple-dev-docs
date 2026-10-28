@@ -22,11 +22,11 @@ Checks an asset pack’s status.
 func status(ofAssetPackWithID assetPackID: String) async throws -> AssetPack.Status
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack’s status.
 
-#### Discussion
+## Discussion
 
 This method attempts to get the latest asset-pack information from the server. It doesn’t automatically trigger any downloads, updates, or removals.
 

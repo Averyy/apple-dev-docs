@@ -22,7 +22,7 @@ A directive that specifies a custom deprecation summary message to an already de
 }
 ```
 
-#### Overview
+## Overview
 
 Many in-source deprecation annotations—such as the `@available` attribute in Swift—allow you to specify a plain text deprecation message. You can use the `@DeprecationSummary` directive to override that deprecation message with one or more paragraphs of formatted documentation markup. For example,
 

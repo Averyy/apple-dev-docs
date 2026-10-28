@@ -24,7 +24,7 @@ A custom playground Quick Look for this instance.
 var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this type has value semantics, the `PlaygroundQuickLook` instance should be unaffected by subsequent mutations.
 

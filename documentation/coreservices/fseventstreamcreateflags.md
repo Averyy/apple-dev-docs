@@ -18,7 +18,7 @@ typealias FSEventStreamCreateFlags = UInt32
 typedef UInt32 FSEventStreamCreateFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Flags that can be passed to the FSEventStreamCreate...() functions to modify the behavior of the stream being created.
 

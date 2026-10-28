@@ -21,7 +21,7 @@ Multiplies a double-precision complex vector by a double-precision real vector.
 extern void vDSP_zrvmulD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` complex elements of `A` to the corresponding real elements of `B`, writing the result to `C`:
 

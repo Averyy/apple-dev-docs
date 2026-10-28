@@ -21,7 +21,7 @@ The error when downloading the item from iCloud fails.
 var ubiquitousItemDownloadingError: NSError? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For error values, see the `NSUbiquitousFile` section in FoundationErrors.h.
 

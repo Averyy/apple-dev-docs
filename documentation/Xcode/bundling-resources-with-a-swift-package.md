@@ -5,11 +5,11 @@
 
 Add resource files to your Swift package and access them in your code.
 
-#### Overview
+## Overview
 
 If you declare a Swift tools version of 5.3 or later in your package manifest, you can bundle resources with your source code as Swift packages. For example, Swift packages can contain asset catalogs, storyboards, and so on.
 
-##### Add resource files
+### Add resource files
 
 Similar to source code, Xcode scopes resources to a target. Place resource files into the folder that corresponds with the target they belong to. For example, any resources for the `MyLibrary` target need to reside in `Sources/MyLibrary`. However, consider using a subfolder for resources to distinguish them from source files. For example, put all resource files into a directory named `Resources`, resulting in all of your resource files residing at `Sources/MyLibrary/Resources`.
 
@@ -28,7 +28,7 @@ When you add a resource to your Swift package, Xcode detects common resource typ
 
 If you add a resource file that Xcode doesn’t treat as a resource by default, you must configure it in your package manifest, as described in the next section.
 
-##### Explicitly declare or exclude resources
+### Explicitly declare or exclude resources
 
 To add a resource that Xcode can’t handle automatically, explicitly declare it as a resource in your package manifest. The following example assumes that `text.txt` resides in `Sources/MyLibrary` and you want to include it in the `MyLibrary` target. To explicitly declare it as a package resource, you pass its file name to the target’s initializer in your package manifest:
 
@@ -60,7 +60,7 @@ targets: [
 
 In general, avoid placing files that aren’t resources in a target’s source folder. If that’s not feasible, avoid excluding every file individually, place all files you want to exclude in a directory, and add the directory path to the array of excluded files.
 
-##### Access a resource in code
+### Access a resource in code
 
 When you build your Swift package, Xcode treats each target as a Swift module. If a target includes resources, Xcode creates a resource bundle and an internal static extension on [`Bundle`](../Foundation/bundle.md) to access it for each module. Use the extension to locate package resources. For example, use the following to retrieve the URL of a property list you bundle with your package:
 

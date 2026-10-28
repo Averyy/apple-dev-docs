@@ -20,11 +20,11 @@ var appleEventCode: FourCharCode { get }
 @property (readonly) FourCharCode appleEventCode;
 ```
 
-#### Return Value
+## Return Value
 
 The code for the event ID of the receiver’s command.
 
-#### Discussion
+## Discussion
 
 This value of the event ID returned by this method, together with the event class code returned by [`appleEventClassCode`](./appleeventclasscode.md), specifies the necessary information for identifying and dispatching an Apple event.
 

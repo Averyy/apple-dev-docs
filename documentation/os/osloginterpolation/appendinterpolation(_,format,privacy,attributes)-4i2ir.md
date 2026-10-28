@@ -21,7 +21,7 @@ Appends an interpolated 32-bit integer with the specified attributes.
 mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Int32, format: OSLogInt32ExtendedFormat, privacy: OSLogPrivacy = .auto, attributes: String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated 32-bit integer to a log message.
 

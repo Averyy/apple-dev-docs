@@ -21,7 +21,7 @@ The symbol used to represent “PM”, localized to the Calendar’s `locale`.
 var pmSymbol: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `"PM"`.
 

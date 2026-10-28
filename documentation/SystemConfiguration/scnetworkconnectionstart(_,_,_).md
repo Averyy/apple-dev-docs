@@ -19,11 +19,11 @@ func SCNetworkConnectionStart(_ connection: SCNetworkConnection, _ userOptions: 
 Boolean SCNetworkConnectionStart(SCNetworkConnectionRef connection, CFDictionaryRef userOptions, Boolean linger);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the connection was correctly started (the actual connection is not established yet, and the connection status needs to be periodically checked); `FALSE` if the connection request was not started (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
-#### Discussion
+## Discussion
 
 The connection process is asynchronous and this function returns immediately. The connection status can be obtained by polling or by callback. The connection is made with the default settings from the administrator. Some of the settings can be overridden for the duration of the connection. These are specified in an options dictionary. The options dictionary uses the same format as a network service defined in the system configuration preferences schema.
 

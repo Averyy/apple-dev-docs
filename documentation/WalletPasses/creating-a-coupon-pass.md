@@ -5,13 +5,13 @@
 
 Construct a digital pass for discounts and special offers.
 
-#### Overview
+## Overview
 
 Use coupon passes for coupons, special offers, and other discounts. Setting the coupon pass style provides data that Wallet displays automatically, such as business information, offer expiration date, terms and conditions, store locations, and other helpful information.
 
 ![An illustration showing a mock coupon pass for a food truck with a strip image.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/coupon@2x.png)
 
-#### Create your pass type identifier
+## Create your pass type identifier
 
 Signing a pass requires a signing certificate for the pass type identifier. The pass type identifier is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.winter-coupon`. Create your pass type identifier in the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [Create Wallet identifiers and certificates](https://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
 
@@ -23,7 +23,7 @@ PassKit uses the combination of pass type identifier and serial number to unique
 
 For more information on creating your pass type identifier, see [Create a Pass Type Identifier](./building-a-pass.md#Create-a-Pass-Type-Identifier).
 
-#### Add the coupon pass style
+## Add the coupon pass style
 
 The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. You specify the pass style by providing the corresponding key at the top level of the `pass.json` file. Coupon passes use the key `coupon`. For more information on building your pass json file, see [Building a Pass](./building-a-pass.md).
 
@@ -114,7 +114,7 @@ The following example shows a `pass.json` file with the `coupon` pass style and 
 
 > **Note**:  A pass viewed on an Apple Watch doesn’t show the strip image (banner image), thumbnail image, and back of pass information.
 
-#### Provide scannable codes
+## Provide scannable codes
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
@@ -124,7 +124,7 @@ For more information on barcodes, see [`Pass.Barcodes`](./pass/barcodes-data.dic
 
 For design guidance about coupon passes, see Human Interface Guidelines > Wallet > Passes > [Coupons](https://developer.apple.com/design/human-interface-guidelines/wallet#Coupons).
 
-#### Debug the pass
+## Debug the pass
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 

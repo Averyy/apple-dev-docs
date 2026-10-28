@@ -24,7 +24,7 @@ var farVisibilityDistance: Float { get set }
 @property (nonatomic, assign) float farVisibilityDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The far value determines the maximal distance between the camera and a visible surface. If a surface is farther from the camera than this distance, the surface is clipped and does not appear.
 

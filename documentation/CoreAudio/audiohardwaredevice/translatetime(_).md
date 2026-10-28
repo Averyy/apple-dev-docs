@@ -16,7 +16,7 @@ Translates the time in the device’s time base from one representation to anoth
 func translateTime(_ timestamp: AudioTimeStamp) throws -> AudioTimeStamp
 ```
 
-#### Return Value
+## Return Value
 
 An AudioTimeStamp containing the translated time.
 

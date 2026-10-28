@@ -15,7 +15,7 @@ Creates a direction that orients the participant to face the specified point in 
 static func lookingAt(_ position: SpatialTemplateElementPosition) -> SpatialTemplateElementDirection
 ```
 
-#### Return Value
+## Return Value
 
 A direction type that faces the specified position in the coordinate space.
 

@@ -22,7 +22,7 @@ Decodes an optimizer value.
 mutating func decodeOptimizer<T>(_ value: T.Type) throws -> T where T : Decodable
 ```
 
-#### Discussion
+## Discussion
 
 Decoding an optimizer lets you resume fitting.
 

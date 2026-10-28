@@ -23,7 +23,7 @@ optional func zoomFactor(for context: WKWebExtensionContext) -> Double
 - (double) zoomFactorForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`pageZoom`](../wkwebview/pagezoom.md) of the tab’s web view if not implemented.
 

@@ -5,7 +5,7 @@
 
 Specifies what part of a spherical clip to use in a non-360 project.
 
-#### Overview
+## Overview
 
 Attributes of `adjust-orientation` element:
 

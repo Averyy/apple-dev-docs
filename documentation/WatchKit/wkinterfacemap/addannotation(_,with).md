@@ -19,7 +19,7 @@ func addAnnotation(_ location: CLLocationCoordinate2D, with pinColor: WKInterfac
 - (void) addAnnotation:(CLLocationCoordinate2D) location withPinColor:(WKInterfaceMapPinColor) pinColor;
 ```
 
-#### Discussion
+## Discussion
 
 The pin is positioned so that the base of the pin sits on top of the specified coordinate.
 

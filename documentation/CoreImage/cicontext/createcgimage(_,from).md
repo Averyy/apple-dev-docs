@@ -24,11 +24,11 @@ func createCGImage(_ image: CIImage, from fromRect: CGRect) -> CGImage?
 - (CGImageRef) createCGImage:(CIImage *) image fromRect:(CGRect) fromRect;
 ```
 
-#### Return Value
+## Return Value
 
  Returns a new `CGImage` instance. You are responsible for releasing the returned image when you no longer need it. The returned value will be `null` if the extent is empty or too big.
 
-#### Discussion
+## Discussion
 
 The color space of the created `CGImage` will be sRGB unless the receiving [`CIContext`](../cicontext.md) was created with a `kCIContextOutputColorSpace` option.
 

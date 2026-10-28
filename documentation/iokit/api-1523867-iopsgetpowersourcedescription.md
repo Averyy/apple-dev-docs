@@ -16,11 +16,11 @@ Returns a CFDictionary with readable information about the specific power source
 CFDictionaryRef IOPSGetPowerSourceDescription(CFTypeRef blob, CFTypeRef ps);
 ```
 
-#### Return Value
+## Return Value
 
 Returns NULL if an error was encountered, otherwise a CFDictionary. Caller should NOT release the returned CFDictionary - it will be released as part of the CFTypeRef returned by IOPSCopyPowerSourcesInfo().
 
-#### Discussion
+## Discussion
 
 See the C-strings defined in IOPSKeys.h for specific keys into the dictionary. Don't expect all keys to be present in any dictionary. Some power sources, for example, may not support the "Time Remaining To Empty" key and it will not be present in their dictionaries.
 

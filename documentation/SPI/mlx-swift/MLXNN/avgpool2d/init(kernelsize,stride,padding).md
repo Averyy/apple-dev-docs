@@ -17,7 +17,7 @@ Applies 2-dimensional average pooling.
 init(kernelSize: IntOrPair, stride: IntOrPair, padding: IntOrPair = 0)
 ```
 
-#### Discussion
+## Discussion
 
 The input is expected to be `NHWC`. The output will have the same N/C dimensions with the new H/W = floor((H/W - kernel)/stride) + 1
 

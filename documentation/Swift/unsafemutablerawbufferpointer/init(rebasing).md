@@ -21,7 +21,7 @@ Creates a raw buffer over the same memory as the given raw buffer slice, with th
 init(rebasing slice: Slice<UnsafeMutableRawBufferPointer>)
 ```
 
-#### Discussion
+## Discussion
 
 The new buffer represents the same region of memory as the slice, but its indices start at zero instead of at the beginning of the slice in the original buffer. The following code creates `slice`, a slice covering part of an existing buffer instance, then rebases it into a new `rebased` buffer.
 

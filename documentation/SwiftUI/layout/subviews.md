@@ -21,7 +21,7 @@ A collection of proxies for the subviews of a layout view.
 typealias Subviews = LayoutSubviews
 ```
 
-#### Discussion
+## Discussion
 
 This collection doesn’t store views. Instead it stores instances of [`LayoutSubview`](../layoutsubview.md), each of which acts as a proxy for one of the views arranged by the layout. Use the proxies to get information about the views, and to tell the views where to appear.
 

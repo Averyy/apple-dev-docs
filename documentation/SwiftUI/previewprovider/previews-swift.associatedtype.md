@@ -24,7 +24,7 @@ The type to preview.
 associatedtype Previews : View
 ```
 
-#### Discussion
+## Discussion
 
 When you create a preview, Swift infers this type from your implementation of the required [`previews`](./previews-swift.type.property.md) property.
 

@@ -19,11 +19,11 @@ init(duration: TimeInterval, animationCurve: NSAnimation.Curve)
 - (instancetype) initWithDuration:(NSTimeInterval) duration animationCurve:(NSAnimationCurve) animationCurve;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSAnimation` instance. Returns `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 You can always later change the duration of an `NSAnimation` object by changing the [`duration`](./duration.md) property, even while the animation is running. See “Constants” for descriptions of the NSAnimationCurve constants.
 

@@ -15,7 +15,7 @@ Attempt to lock a spin lock.
 boolean_t IOSimpleLockTryLock(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the spin lock if it is currently unlocked, and return true. If the lock is held, return false. Successful calls to IOSimpleLockTryLock should be balanced with calls to IOSimpleLockUnlock.
 

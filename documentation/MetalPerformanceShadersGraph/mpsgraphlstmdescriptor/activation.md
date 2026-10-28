@@ -24,7 +24,7 @@ var activation: MPSGraphRNNActivation { get set }
 @property (nonatomic, readwrite) MPSGraphRNNActivation activation;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `MPSGraphRNNActivationTanh`.
 

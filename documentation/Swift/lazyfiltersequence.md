@@ -22,7 +22,7 @@ A sequence whose elements consist of the elements of some base sequence that als
 struct LazyFilterSequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 > **Note**: `s.lazy.filter { ... }`, for an arbitrary sequence `s`, is a `LazyFilterSequence`.
 

@@ -9,7 +9,7 @@ Searches and filters ads using structured query criteria including field filters
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries ads using a standard `QueryRequest` body. Filter by `adGroupId` to scope results to a specific ad group, or by `campaignId` to retrieve all ads across an entire campaign. An empty request body returns all ads for the ad account with default pagination.
 
@@ -17,7 +17,7 @@ The system excludes deleted ads from results by default. To retrieve deleted ads
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -30,13 +30,13 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Ad Group**:
 
 Retrieve all active ads in a specific ad group, sorted by creation time descending.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ads/query
@@ -63,7 +63,7 @@ POST /v1/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -111,7 +111,7 @@ POST /v1/ads/query
 
 Retrieve only paused ads within a campaign to identify ads that may need to be re-enabled.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ads/query
@@ -137,7 +137,7 @@ POST /v1/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

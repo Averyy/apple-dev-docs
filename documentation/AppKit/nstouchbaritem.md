@@ -23,7 +23,7 @@ class NSTouchBarItem
 @interface NSTouchBarItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of the [`NSTouchBarItem`](./nstouchbaritem.md) class is called an *item*. It appears to the user on the Touch Bar, typically along with other items, within the (invisible) bounds of the view for an [`NSTouchBar`](./nstouchbar.md) object, called a *bar*.
 
@@ -46,7 +46,7 @@ Refer to the following sample code projects which demonstrate how to use [`NSTou
 - [Creating and Customizing the Touch Bar](./creating-and-customizing-the-touch-bar.md)
 - [Integrating a Toolbar and Touch Bar into Your App](./integrating-a-toolbar-and-touch-bar-into-your-app.md)
 
-##### Custom items
+### Custom items
 
 You typically use a *custom item* (an instance of the [`NSCustomTouchBarItem`](./nscustomtouchbaritem.md) class) to hold a view. For example, to place a button in the Touch Bar, proceed as follows:
 
@@ -55,7 +55,7 @@ You typically use a *custom item* (an instance of the [`NSCustomTouchBarItem`](.
 
 > **Note**:  When you create custom items, it’s important to use convenience initializers, available starting in macOS 10.12, for the [`NSButton`](./nsbutton.md), [`NSSegmentedControl`](./nssegmentedcontrol.md), and [`NSSlider`](./nsslider.md) classes. These initializers take care of sizing their controls correctly for the Touch Bar, and they configure appearance appropriately for the Touch Bar. If you don’t use the convenience initializers, it’s your app’s responsibility to ensure correct sizing and appearance.
 
-##### Popover items
+### Popover items
 
 A *popover item* (an instance of the [`NSPopoverTouchBarItem`](./nspopovertouchbaritem.md) class) — the second commonly-used type — lets you provide a new bar (an [`NSTouchBar`](./nstouchbar.md) object) when a user taps, or presses-and-holds, on the collapsed representation of the popover item.
 
@@ -71,7 +71,7 @@ If you provide a popover item that contains a scrubber (an [`NSScrubber`](./nssc
 
 If you place a segmented control in a bar for a popover item, take care *not* to use [`NSSegmentedControl.SwitchTracking.momentary`](./nssegmentedcontrol/switchtracking/momentary.md) option of the [`NSSegmentedControl.SwitchTracking`](./nssegmentedcontrol/switchtracking.md) enumeration because doing so interferes with the user’s operation of the control.
 
-##### Other common item types
+### Other common item types
 
 To provide a *slider item*, always use the [`NSSliderTouchBarItem`](./nsslidertouchbaritem.md) class, which employs a standard slider but is optimized for user interaction with the Touch Bar. (That is, don’t instead add an [`NSSlider`](./nsslider.md) object directly to a custom item.)
 
@@ -79,7 +79,7 @@ A *group item* (an instance of the [`NSGroupTouchBarItem`](./nsgrouptouchbaritem
 
 A *spacing item* lets you add custom spacing between items in a bar. Specify a spacing item for a bar by assigning the [`fixedSpaceSmall`](./nstouchbaritem/identifier-swift.struct/fixedspacesmall.md), [`fixedSpaceLarge`](./nstouchbaritem/identifier-swift.struct/fixedspacelarge.md), or [`flexibleSpace`](./nstouchbaritem/identifier-swift.struct/flexiblespace.md) identifier to an item, and adding that item to the bar’s items array. The system automatically instantiates and configures spacing items based on the identifiers you specify.
 
-##### Configuration
+### Configuration
 
 You must configure each item with a unique identifier, and can optionally assign a visibility priority or tag it as a principal item.
 
@@ -97,7 +97,7 @@ The system hides or shows groups of identical-priority items (defined within a s
 
 If more than one bar in the responder chain is eligible to be visible in the Touch Bar, and more than one of those has a principal item, the system determines which one to center in the Touch Bar.
 
-###### Fonts, images, and colors
+#### Fonts, images, and colors
 
 When using a button in a custom item, don’t attempt to set the button title’s font. In the Touch Bar, the system specifies fonts for standard controls.
 
@@ -124,7 +124,7 @@ To set color on text and glyphs in the Touch Bar, use the following colors from 
 
 The system automatically changes the relative brightness and the white-point of these colors, depending on the ambient light, and depending on other factors such as keyboard backlight level. Always use these colors, or colors that dynamically derive from these colors, for control backgrounds, text, icons, and glyphs in the Touch Bar.
 
-###### Handling touch events
+#### Handling touch events
 
 The easiest way to handle touch events in an item is to use AppKit controls, such as by adding a button, a segmented control, or a scrubber to the item. Standard AppKit controls convey touch events to your specified targets automatically, so use standard controls whenever possible in your app.
 

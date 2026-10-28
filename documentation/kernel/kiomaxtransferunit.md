@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOMaxTransferUnit
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMaxTransferUnit property has an OSNumber value that specifies the maximum transfer unit for the interface in bytes.
 

@@ -11,11 +11,11 @@ Provides the full list of web service URLs and a list of possible error numbers.
 
 > **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
-#### Discussion
+## Discussion
 
 Clients should use this endpoint every 5 minutes to retrieve the list of service URLs, because the URLs may change. This endpoint exists to provide a level-of-service discovery, so service URLs can be changed in a transparent way.
 
-##### Example Response
+### Example Response
 
 **Request**:
 

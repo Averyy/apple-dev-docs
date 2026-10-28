@@ -20,7 +20,7 @@ static var forceExpiration: SecCodeSignatureFlags { get }
 kSecCodeSignatureForceExpiration
 ```
 
-#### Discussion
+## Discussion
 
 When passed to a function that performs code validation, the `kSecCSConsiderExpiration` flag requests that code signatures made by expired certificates be rejected. By default, expiration of participating certificates is not automatic grounds for rejection.
 

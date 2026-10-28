@@ -17,11 +17,11 @@ Sets the application list, description, and prompt selector for a given access c
 OSStatus SecACLSetSimpleContents(SecACLRef acl, CFArrayRef applicationList, CFStringRef description, const CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR *promptSelector);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) instead.
 
@@ -29,7 +29,7 @@ Because an ACL object is always associated with an access object, when you modif
 
 Use the [`SecACLGetAuthorizations`](./secaclgetauthorizations.md) function to get the list of operations for an ACL object.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) instead.
 

@@ -22,11 +22,11 @@ The payload that configures relay settings.
 object Relay
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.relay.managed` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

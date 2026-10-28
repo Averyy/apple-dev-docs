@@ -18,7 +18,7 @@ Obtain accessory information and control tracking behavior.
 final class DockAccessory
 ```
 
-#### Overview
+## Overview
 
 `DockAccessory` provides information about the dock accessory including its model name and firmware version. It also controls the dock accessory when you disable system tracking. Use `DockAccesory` to  perform animations, or explicitly control the position of the dock accessory in three-dimensional space by supplying coordinates in units of radians.  The collection of the X, Y, and Z values corresponding to pitch, yaw, and roll is the *angular position* of the dock accessory.
 

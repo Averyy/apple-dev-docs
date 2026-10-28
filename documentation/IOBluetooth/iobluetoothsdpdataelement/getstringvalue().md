@@ -19,11 +19,11 @@ func getStringValue() -> String!
 - (NSString *) getStringValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSString representation of the data element if it is a text or URL type.
 
-#### Discussion
+## Discussion
 
 The data types represented by a string object are 4 (text string) and 8 (URL).
 

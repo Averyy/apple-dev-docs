@@ -23,7 +23,7 @@ var sensitivity: HKQuantity { get }
 @property (nonatomic, copy, readonly) HKQuantity * sensitivity;
 ```
 
-#### Discussion
+## Discussion
 
 Ear sensitivity measured in dB from a baseline of 0 dB. Reduced hearing sensitivity corresponds to an increase from 0 dB. The unit of measurement is `HKUnit.decibelHearingLevelUnit` or “dBHL”.
 

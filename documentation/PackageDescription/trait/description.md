@@ -15,7 +15,7 @@ The trait’s description.
 var description: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use the description to explain the additional functionality that the trait enables.
 

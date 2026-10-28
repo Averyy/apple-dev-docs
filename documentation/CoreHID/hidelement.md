@@ -19,7 +19,7 @@ struct HIDElement
 
 - [Communicating with human interface devices](./communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 A [`HIDElement`](./hidelement.md) is an abstraction for the data in a HID report, and represents one item of data that could be sent or received in a report for a specific device. For example, for a mouse with a report descriptor that declares a report with 1 byte of data for each an X and a Y coordinate, there would be an element for the data associated with the X coordinate. If this element was monitored by a [`HIDDeviceClient`](./hiddeviceclient.md), when an input report was received with an update to the X coordinate, a notification with the updated data would be sent to [`HIDDeviceClient.Notification.elementUpdates(values:)`](./hiddeviceclient/notification/elementupdates%28values%29.md).
 

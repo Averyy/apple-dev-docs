@@ -9,9 +9,9 @@ Update the territory availablity of a specific In-App Purchase.
 **Availability**:
 - App Store Connect API 2.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

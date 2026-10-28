@@ -30,7 +30,7 @@ func addWatchFace(at fileURL: URL) async throws
 
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Call this method to load a watch face file. The URL must point to a *watch file*, a watch face that your app has downloaded, or a watch face stored in your app bundle. All of the complications on the watch face must come from apps that have a valid App Store ID, such as an app from the App Store or a TestFlight build. If you try to use complications from a development build, the system won’t recognize the development ID as a valid App Store ID.
 

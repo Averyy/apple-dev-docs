@@ -19,11 +19,11 @@ func nextEvent(matching mask: NSEvent.EventTypeMask) -> NSEvent?
 - (NSEvent *) nextEventMatchingMask:(NSEventMask) mask;
 ```
 
-#### Return Value
+## Return Value
 
 The next event whose mask matches `mask`; `nil` when no matching event was found.
 
-#### Discussion
+## Discussion
 
 This method calls the [`nextEvent(matching:until:inMode:dequeue:)`](./nextevent%28matching,until,inmode,dequeue%29.md) method, where the matching mask parameter is the specified `mask`, the `until` (Swift) or `untilDate` (Objective-C) parameter is [`distantFuture`](../../Foundation/nsdate/distantfuture.md), the `inMode` parameter is [`NSEventTrackingRunLoopMode`](../nseventtrackingrunloopmode.md), and the `dequeue` parameter is [`true`](../../Swift/true.md).
 

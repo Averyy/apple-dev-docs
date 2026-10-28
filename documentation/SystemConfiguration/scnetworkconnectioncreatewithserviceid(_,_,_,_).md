@@ -19,7 +19,7 @@ func SCNetworkConnectionCreateWithServiceID(_ allocator: CFAllocator?, _ service
 SCNetworkConnectionRefSCNetworkConnectionCreateWithServiceID(CFAllocatorRef allocator, CFStringRef serviceID, SCNetworkConnectionCallBack callout, SCNetworkConnectionContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new network connection.
 

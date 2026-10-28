@@ -5,13 +5,13 @@
 
 Add more simulated devices, optional features, and support for additional platforms.
 
-#### Overview
+## Overview
 
 Xcode lets you manage optional components yourself so that you can install only the components you use and remove the ones you don’t. For example, install simulator runtimes for the devices and operating systems your app runs on, or add support for platforms that you target. You download and install Xcode components in Xcode settings or using the command line.
 
 > **Note**: Developing for visionOS requires a Mac with Apple silicon.
 
-##### Manage Xcode components in settings
+### Manage Xcode components in settings
 
 To manage your components, choose Xcode > Settings and click Components in the sidebar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
 
@@ -29,17 +29,17 @@ You can also install platform support when you create a project by selecting a t
 
 > **Note**: You can create a new Xcode project or work with an existing Xcode project on a platform that Xcode is installing, but you can’t run or build the project until Xcode finishes downloading and installing the files.
 
-##### Install previously released simulator runtimes in settings
+### Install previously released simulator runtimes in settings
 
 You can get previously released simulator runtimes in the Components settings. Under Other Installed Platforms, click the Add Platforms button. To filter the list in the dialog that appears, choose a platform and enter a term in the filter field in the toolbar. Then, select one or more versions in the list below, and click Download & Install.
 
-##### Install simulator runtimes from the Xcode run destination
+### Install simulator runtimes from the Xcode run destination
 
 When you open an Xcode project for a platform that doesn’t have any installed simulator runtimes, Xcode displays a Get button next to the run destination and in the canvas. Click the Get button to download and install the most recent simulator runtime for that platform.
 
 The run destination in your Xcode project indicates when Xcode is downloading a simulator runtime. You can select a run destination when Xcode completes the download and installation.
 
-##### Download Xcode components from the command line
+### Download Xcode components from the command line
 
 You can also download components in Terminal using the `xcodebuild` command. For example, use the command line to download Xcode components once and then install them across multiple Mac computers.
 
@@ -75,7 +75,7 @@ To download the universal variant that works on both Apple silicon and Intel-bas
 xcodebuild -downloadPlatform iOS -architectureVariant universal
 ```
 
-##### Install downloaded packages from the command line
+### Install downloaded packages from the command line
 
 After you download component packages, you can install them in Terminal with the `xcodebuild` command.
 
@@ -87,7 +87,7 @@ xcodebuild -runFirstLaunch
 xcodebuild -importPlatform "~/Downloads/watchOS 9 beta Simulator Runtime.dmg"
 ```
 
-##### Download and install new hardware support in between Xcode releases
+### Download and install new hardware support in between Xcode releases
 
 To download and install hardware support updates in between Xcode releases, use `xcodebuild` with the `-runFirstLaunch` and `-checkForNewerComponents` options. Before running this command, select the version of Xcode you want to use with the `xcode-select -s <path-to-Xcode>` command.
 
@@ -98,7 +98,7 @@ xcodebuild -runFirstLaunch -checkForNewerComponents
 
 If new components exist, the `-checkForNewerComponents` option stores the files in the `~/Library/Developer/Packages/` directory and installs the components for the Xcode version you select.
 
-##### Download and install the Metal Toolchain
+### Download and install the Metal Toolchain
 
 To build your Metal apps, download and install the optional Metal Toolchain for the platforms your app targets.
 

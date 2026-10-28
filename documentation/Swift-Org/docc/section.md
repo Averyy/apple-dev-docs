@@ -26,7 +26,7 @@ Displays a grouping of text, images, and tasks on a tutorial page.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 Use a `Section` directive to show a unit of work that consists of text, media (for example images and videos), and tasks on a tutorial page. A tutorial page must includes one or more sections.
 
@@ -68,7 +68,7 @@ Use the `title` parameter to provide a name for the section. Then, use the [`Con
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A section can contain the following items:
 
@@ -76,7 +76,7 @@ A section can contain the following items:
 - **[`Stack`](./stack.md)**: A set of horizontally arranged groupings of text and media. **(optional)**
 - **[`Steps`](./steps.md)**: A set of tasks the reader performs. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following pages can include sections:
 

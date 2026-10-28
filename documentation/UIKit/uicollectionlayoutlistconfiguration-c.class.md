@@ -19,7 +19,7 @@ A configuration for creating a list layout.
 @interface UICollectionLayoutListConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this configuration to create a list section for a compositional layout ([`UICollectionViewCompositionalLayout`](./uicollectionviewcompositionallayout.md)), or a layout containing only list sections. The following example shows how to create a compositional layout that contains only list sections by applying the same configuration to each section in the list layout:
 

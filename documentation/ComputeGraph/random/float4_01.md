@@ -16,11 +16,11 @@ Generates a pseudo-random 4D vector with single-precision components between 0 a
 float4 random::float4_01()
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-random 4D single-precision vector with components in the range [0.0, 1.0].
 
-#### Discussion
+## Discussion
 
 This function generates a random 4D vector where each component is independently generated in the range [0.0, 1.0] using single-precision floating-point format. The internal random seed is incremented for subsequent calls.
 

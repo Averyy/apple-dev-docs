@@ -24,7 +24,7 @@ class MTL4IndirectInstanceAccelerationStructureDescriptor
 @interface MTL4IndirectInstanceAccelerationStructureDescriptor : MTL4AccelerationStructureDescriptor
 ```
 
-#### Overview
+## Overview
 
 An instance acceleration structure references other acceleration structures, and provides the ability to “instantiate” them multiple times, each one with potentially a different transformation matrix.
 

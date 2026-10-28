@@ -11,7 +11,7 @@ Allow users of third-party MDM apps to add macOS and iOS devices to their organi
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 
-#### Overview
+## Overview
 
 This framework provides a user interface for device administrators to add macOS, iOS, and iPadOS devices to their Apple School Manager, Apple Business Manager, and Apple Business Essentials organizations. The provided SwiftUI view allows a user with device enrollment privileges to sign in with their Managed Apple ID and add devices to their organization.
 

@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, dragSessionWill
 - (void) collectionView:(UICollectionView *) collectionView dragSessionWillBegin:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after it has been determined that a drag will begin and after any lift animations have occurred, but before the position of the drag changes. Use this method to perform any tasks related to the management of the drag session in your app.
 

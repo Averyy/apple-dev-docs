@@ -23,7 +23,7 @@ func ranges(@RegexComponentBuilder of content: () -> some RegexComponent) -> [Ra
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection of ranges of all matches for the regex returned by `content`. Returns an empty collection if no match for the regex is found.
 

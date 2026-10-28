@@ -5,7 +5,7 @@
 
 Enable intelligence tools that you want to use in Xcode.
 
-#### Overview
+## Overview
 
 To use coding intelligence in Xcode, go to the Intelligence settings and turn on the agent and chat products that you want to use. Choose Xcode > Settings and select Intelligence in the sidebar. Where available, you can turn on Claude or ChatGPT in Xcode. You can also use coding tools from other providers.
 
@@ -17,7 +17,7 @@ Help agents reach your goals faster with additional guidance and tools that you 
 
 To give agents that you use outside of Xcode access to your project and Xcode capabilities, see [Giving external agents access to Xcode](./giving-external-agents-access-to-xcode.md).
 
-#### Enable agents
+## Enable agents
 
 When you choose an agent in the coding assistant, it automatically has access to Xcode capabilities, such as building and testing your app. To enable an agent:
 
@@ -39,7 +39,7 @@ To enable an agent that doesn’t appear in Intelligence settings and supports t
 
 After you download agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md).
 
-#### Enable ChatGPT in Xcode
+## Enable ChatGPT in Xcode
 
 To use ChatGPT in Xcode (with or without an account):
 
@@ -60,7 +60,7 @@ For more information about OpenAI products, click “OpenAI Terms of Use…” a
 
 To turn off ChatGPT in Xcode, toggle ChatGPT in Xcode off in the ChatGPT in Xcode settings.
 
-#### Enable Claude Sonnet & Opus
+## Enable Claude Sonnet & Opus
 
 To use Claude Sonnet & Opus:
 
@@ -70,7 +70,7 @@ To use Claude Sonnet & Opus:
 
 For more information about Anthropic products, click “Anthropic Terms of Use…” at the bottom of the Claude settings.
 
-#### Use another chat provider
+## Use another chat provider
 
 To use another chat provider, click the Add a Chat Provider button under Chat. To add a provider that’s hosted on the internet, select Internet Hosted, enter the URL and other details, and click Add in the dialog that appears. To add a provider that’s hosted locally on your Mac, select Locally Hosted and enter a port and optional description instead.
 
@@ -79,7 +79,7 @@ If you add another provider, it needs to support the Chat Completions API. In ad
 - `{Model provider URL}/v1/models`
 - `{Model provider URL}/v1/chat/completions`
 
-#### Configure managed devices
+## Configure managed devices
 
 To turn off the coding assistant for managed devices, set the `CodingAssistantAllowExternalIntegrations` key to `false` in a mobile device management (MDM) profile. For more information, see [Device management restrictions for Mac computers](https://support.apple.com/guide/deployment/restrictions-for-mac-depba790e53/web).
 

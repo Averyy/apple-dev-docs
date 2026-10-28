@@ -25,7 +25,7 @@ func acceptConnectionInBackgroundAndNotify(forModes modes: [RunLoop.Mode]?)
 - (void) acceptConnectionInBackgroundAndNotifyForModes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`acceptConnectionInBackgroundAndNotify()`](./acceptconnectioninbackgroundandnotify%28%29.md) for details of how this method operates. This method differs from [`acceptConnectionInBackgroundAndNotify()`](./acceptconnectioninbackgroundandnotify%28%29.md) in that `modes` specifies the run-loop mode (or modes) in which [`NSFileHandleConnectionAccepted`](../nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md) can be posted.
 

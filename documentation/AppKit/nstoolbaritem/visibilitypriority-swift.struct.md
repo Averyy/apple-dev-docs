@@ -22,7 +22,7 @@ struct VisibilityPriority
 typedef NSInteger NSToolbarItemVisibilityPriority;
 ```
 
-#### Overview
+## Overview
 
 When a toolbar doesn’t have enough space to fit all its items, it pushes items into the overflow menu to make space. Use these constants to suggest a priority for individual toolbar items. The toolbar pushes low-priority items to the overflow menu first, followed by standard items and high-priority items. When two or more items share the same priority, the toolbar pushes the one closest to the trailing edge first.
 

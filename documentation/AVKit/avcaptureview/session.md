@@ -19,7 +19,7 @@ var session: AVCaptureSession? { get }
 @property (readonly, nullable) AVCaptureSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value is a capture session configured for movie file recordings of audio and video data. Use the [`setSession(_:showVideoPreview:showAudioPreview:)`](./setsession%28_,showvideopreview,showaudiopreview%29.md) method to provide a custom capture session. Modifying the capture session changes its visual representation in the view.
 

@@ -18,7 +18,7 @@ Connects the reader session to a tag and activates that tag.
 func connect(to tag: NFCTag, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 A tag stays connected until your app connects to a different tag or restarts polling. Connecting to a tag that is already connected has no effect.
 

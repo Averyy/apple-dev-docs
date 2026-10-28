@@ -19,7 +19,7 @@ func setRowTypes(_ rowTypes: [String])
 - (void) setRowTypes:(NSArray<NSString *> *) rowTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you want to display more than one type of row in your table. This method removes any existing rows from the table and configures a new set of rows based on the information in the `rowTypes` parameter. For each row, the method also creates an instance of that row’s class and puts the resulting object in an internal array, which you access using the [`rowController(at:)`](./rowcontroller%28at%29.md) method. It is your responsibility to configure each new row controller with the data you want to display.
 

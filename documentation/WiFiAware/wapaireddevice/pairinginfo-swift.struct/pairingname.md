@@ -17,7 +17,7 @@ The human-readable name of the physical device as a person sees it during initia
 let pairingName: String
 ```
 
-#### Discussion
+## Discussion
 
 The system receives this data from the device within an DNS-SD TXT record. The value set in the `pairingName` property is the  value that follows the DNS-SD TXT record key:
 

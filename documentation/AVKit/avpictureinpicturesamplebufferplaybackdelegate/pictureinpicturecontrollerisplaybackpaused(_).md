@@ -25,11 +25,11 @@ func pictureInPictureControllerIsPlaybackPaused(_ pictureInPictureController: AV
 - (BOOL) pictureInPictureControllerIsPlaybackPaused:(AVPictureInPictureController *) pictureInPictureController;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to indicate a paused state, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 The system calls this method whenever you call its [`invalidatePlaybackState()`](../avpictureinpicturecontroller/invalidateplaybackstate%28%29.md) method, and at other times as it requires.
 

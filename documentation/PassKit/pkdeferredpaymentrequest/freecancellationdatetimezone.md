@@ -23,7 +23,7 @@ var freeCancellationDateTimeZone: TimeZone? { get set }
 @property (nonatomic, strong, nullable) NSTimeZone * freeCancellationDateTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 For a hotel booking, for example, this refers to the local time zone of the hotel. On the payment sheet, this is the time zone the framework uses to format the cancellation date. If you set the `freeCancellationDateTimeZone` date, you need to set [`freeCancellationDate`](./freecancellationdate.md) as well.
 

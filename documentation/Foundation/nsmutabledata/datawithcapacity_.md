@@ -21,13 +21,13 @@ Creates and returns a mutable data object capable of holding the specified numbe
 + (instancetype) dataWithCapacity:(NSUInteger) aNumItems;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSMutableData` object capable of holding `aNumItems` bytes.
 
 The returned object has the same memory alignment guarantees as `malloc(_:)`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t necessarily allocate the requested memory right away. Mutable data objects allocate additional memory as needed, so `aNumItems` simply establishes the object’s initial capacity. When it does allocate the initial memory, though, it allocates the specified amount. This method sets the length of the data object to `0`.
 

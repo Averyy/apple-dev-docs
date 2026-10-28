@@ -4,16 +4,16 @@
 
 Displays a horizontal line.
 
-#### Overview
+## Overview
 
 The `separator` element creates a visible, horizontal line to separate areas on a page.
 
-##### Subelements of separator
+### Subelements of separator
 
 - [button](./button.md)
 - [shelf](./shelf.md)
 
-##### Elements that Use separator
+### Elements that Use separator
 
 - [collectionList](./collectionlist.md)
 - [productTemplate](./producttemplate.md)

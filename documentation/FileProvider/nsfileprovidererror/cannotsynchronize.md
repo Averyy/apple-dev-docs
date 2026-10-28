@@ -18,7 +18,7 @@ An error indicating a failed sync attempt.
 static var cannotSynchronize: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If a specific item caused the error, the system sets the [`NSFileProviderErrorItemKey`](../nsfileprovidererroritemkey.md) key to the item’s identifier, and it sets the [`NSUnderlyingErrorKey`](../../Foundation/nsunderlyingerrorkey.md) key to the error encountered by the item.
 

@@ -24,7 +24,7 @@ init(values: UnsafePointer<CGFloat>, count: Int)
 - (instancetype) initWithValues:(const CGFloat *) values count:(size_t) count;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIVector`](../civector.md) object of length `count`.
 

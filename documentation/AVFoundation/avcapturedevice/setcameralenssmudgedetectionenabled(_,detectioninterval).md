@@ -23,7 +23,7 @@ func setCameraLensSmudgeDetectionEnabled(_ cameraLensSmudgeDetectionEnabled: Boo
 - (void) setCameraLensSmudgeDetectionEnabled:(BOOL) cameraLensSmudgeDetectionEnabled detectionInterval:(CMTime) detectionInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Each run of detection processes frames over a short period, and produces one detection result. Use `detectionInterval` to specify the interval time between each run of detections. For example, when [`isCameraLensSmudgeDetectionEnabled`](./iscameralenssmudgedetectionenabled.md) is set to `true` and `detectionInterval` is set to 1 minute, detection runs once per minute, and updates [`AVCaptureCameraLensSmudgeDetectionStatus`](../avcapturecameralenssmudgedetectionstatus.md). If `detectionInterval` is set to `kCMTimeInvalid`, detection runs only once after the session starts. If `detectionInterval` is set to `kCMTimeZero`, detection runs continuously.
 

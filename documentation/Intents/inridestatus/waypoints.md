@@ -31,7 +31,7 @@ var waypoints: [CLPlacemark]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<CLPlacemark *> * waypoints;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying waypoints is optional. You might include waypoints when a single ride involves multiple stops—for example, to pick up or drop off additional members of the user’s party. Do not include the pickup and drop off locations among the waypoints.
 

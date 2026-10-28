@@ -26,7 +26,7 @@ class NEAppPushManager
 
 - [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
 
-#### Overview
+## Overview
 
 Your app can create as many [`NEAppPushManager`](./neapppushmanager.md) instances as you need. Load your managers from the persistent store and set up their delegates immediately after the app launches, so they’re ready to handle incoming calls.
 

@@ -20,7 +20,7 @@ var queue: dispatch_queue_t { get }
 @property (readonly) dispatch_queue_t queue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this queue only for asynchronous input/output requests.
 

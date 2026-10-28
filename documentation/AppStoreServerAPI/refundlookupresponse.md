@@ -21,7 +21,7 @@ object RefundLookupResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 If the customer hasn’t received any refunds for in-app purchases in your app, the `signedTransactions` array is empty. To read the transaction information, decode the payload for each [`JWSTransaction`](./jwstransaction.md) object in the `signedTransactions` array. Use a [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) object to read the transaction information in the payload.
 

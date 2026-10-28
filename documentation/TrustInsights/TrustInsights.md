@@ -11,11 +11,11 @@ Evaluate transactions for potential coercive activity while preserving people’
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 
-#### Overview
+## Overview
 
 The Trust Insights framework enables your app to request an evaluation, or insight, to help detect and respond to social engineering threats people may face. Social threats exploit human psychology rather than technical vulnerabilities such as software bugs to pressure or deceive people into performing legitimate actions, and your app can’t distinguish between a genuine or a coerced interaction.
 
-#### Learn about available action contexts
+## Learn about available action contexts
 
 There are five principal action areas — kinds of transactions people might engage in — that the Trust Insights framework can help evaluate:
 
@@ -25,18 +25,18 @@ There are five principal action areas — kinds of transactions people might eng
 - **[`InsightEvaluator.OperationCategory.communication`](./insightevaluator/operationcategory/communication.md)**: An action that indicates communication operation, such as sending bulk messages or making connections to other people.
 - **[`InsightEvaluator.OperationCategory.other`](./insightevaluator/operationcategory/other.md)**: A default action that represents all other types of actions. If the available action types aren’t appropriate for your use case, please consider filing a Feedback report with the details relating to the category of interest.
 
-#### Enable your Xcode project to adopt the Trust Insights framework
+## Enable your Xcode project to adopt the Trust Insights framework
 
 The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](../BundleResources/entitlements/com.apple.developer.trustinsights.base.md).
 
-#### Understand the components of trust evaluation request
+## Understand the components of trust evaluation request
 
 A trust insight is the result of two elements that combine to form a trust insight evaluation request.
 
 - **`request`**: A trust insight request that represents a specific signal or insight. The framework supports one type of request,  [`IsLikelyBeingCoachedInsight`](./islikelybeingcoachedinsight.md).
 - **`context`**: A context that describes what kind of action someone is attempting to perform. For a complete list of actions, see [Learn about available action contexts](./TrustInsights.md#Learn-about-available-action-contexts)
 
-#### Create an evaluator and request an evaluation
+## Create an evaluator and request an evaluation
 
 In order to request evaluations, you need to first request a person’s permission to use the Trust Insights framework. The following example demonstrates how to check your app’s authorization status and request a person’s authorization, provided a person hasn’t previously declined an authorization request.
 
@@ -65,7 +65,7 @@ In order to request evaluations, you need to first request a person’s permissi
     }
 ```
 
-#### Act on the result of the evaluation
+## Act on the result of the evaluation
 
 The result of a Trust Insight evaluation can help you determine if you should perform further checks before finalizing a transaction. The following example shows a function that returns a Boolean value indicating whether the framework indicates there are no indications of coaching.
 

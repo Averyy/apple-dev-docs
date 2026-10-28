@@ -23,11 +23,11 @@ init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 - (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UICollectionViewController`](../uicollectionviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 For more information on how to initialize a view controller from a nib file, see [`init(nibName:bundle:)`](../uiviewcontroller/init%28nibname,bundle%29.md).
 

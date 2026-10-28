@@ -5,7 +5,7 @@
 
 Manage the fonts used to display text.
 
-#### Overview
+## Overview
 
 The [`NSFont`](./nsfont.md) and [`NSFontManager`](./nsfontmanager.md) classes encapsulate and manage font families, sizes, and variations. The [`NSFont`](./nsfont.md) class defines a single object for each distinct font; for efficiency, these objects, which can be rather large, are shared by all the objects in your app. The [`NSFontPanel`](./nsfontpanel.md) class defines the font specification panel that’s presented to the user.
 

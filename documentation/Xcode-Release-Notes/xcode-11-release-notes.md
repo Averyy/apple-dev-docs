@@ -5,15 +5,15 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS Catalina 10.15, watchOS 6, and tvOS 13. Xcode 11 supports development for devices running iOS 13.1. Xcode 11 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11 requires a Mac running macOS Mojave 10.14.4 or later.
 
 > **Note**: Fixed an Asset Catalog bug that prevented named colors from being found at runtime when running on iOS 11. (54325712)
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 11 supports development with [SwiftUI](../SwiftUI/SwiftUI.md). (22843503)
 
@@ -26,17 +26,17 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - LaunchServices on macOS now respects the selected Xcode when launching Instruments, Simulator, and other developer tools embedded within Xcode. For example, when you double-click an Instruments trace in Finder, the version of Instruments for the selected Xcode launches. Change which Xcode is used with xcode-select from the command line. (6757601)
 - Editors can be added to any window without needing the Assistant Editor. Editors are added using the “Add Editor” button in the jump bar or the File > New > Editor command. Each editor can independently show its own assistant or canvas via commands in the Editor or Editor Options menus. These two modes will automatically show relevant content when available. When using multiple editors, the View > Editor > Focus command can be used to temporarily expand the active editor to fill the entire window, hiding other editors. Additionally, “Show Editor Only” will reset a given editor, turning off any extra views that have been enabled in that editor. For source control support, the Code Review button in the Toolbar replaces the Comparison Editor. The “Show Authors” command is now available from the Source Editor’s Editor menu. The SCM Log is now in the Inspector Area. (43806898)
 
-###### Known Issues
+#### Known Issues
 
 - When building an Objective-C iOS File Provider application extension that implements the `-URLForItemWithPersistentIdentifier:` method, Xcode emits a warning saying that this callback method is deprecated and won’t be called. This warning is incorrect; the method isn’t deprecated, and is called at the appropriate times. (54487300)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where issue text may appear light when using a light theme with a dark system appearance. (48230278)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Clang now provides a mechanism for controlling exit-time destructor registration. You can disable these globally with the flag `-fno-c++-static-destructors`, or apply the attribute `[[clang::no_destroy]]` to disable the destructors of specific variables. The attribute `[[clang::always_destroy]]` was also added to enable destructors of specific variables when `-fno-c++-static-destructors` is used. (21734598)
 - As an extension, C++11 enums with fixed underlying types are now supported in all language modes. (43831380)
@@ -56,29 +56,29 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   ```
 - Clang now supports the C++17 `<filesystem>` library for iOS 13, macOS 10.15, watchOS 6, and tvOS 13. (50988273)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The `<experimental/optional>` and `<experimental/variant>` headers are removed. Use `<optional>` and `<variant>` from C++17 instead. (50175894)
 - Resolved a long compile-time issue in the loop-invariant code motion pass of the optimizer. (39648918)
 
-##### Asset Catalog
+### Asset Catalog
 
-###### New Features
+#### New Features
 
 - Xcode can find assets in your workspace/project using the Find navigator. The Asset Catalog Editor also supports Find and Replace, and you can rename assets using Replace. (14279237)
 - Assets can now be cut, copied, pasted, and duplicated using the menu or keyboard shortcuts. (27107912)
 
-###### Known Issues
+#### Known Issues
 
 - When an asset is localized in the asset catalog, another localized resource must exist in the corresponding `lproj` directory for the app to use that language at runtime. An empty strings file can serve this purpose. (49565973)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an Asset Catalog bug that prevented named colors from being found at runtime when running on iOS 11. (54325712)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Xcode uses response files by default to pass input files to the Swift compiler. To turn this behavior off, set `USE_SWIFT_RESPONSE_FILE` to `NO`. (50852028)
 - Run script phases and custom build rules may declare and emit a dependencies file, in the Makefile-style `.d` format output used by some compilers and build tools. The build system checks the files listed for changes during subsequent builds when determining if the rule or phase should be executed. (49226986)
@@ -88,7 +88,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Custom build rules can now declare that they should run once per architecture (the default), or run only once across all architectures. This is useful for custom rules which are architecture-neutral, for example, code generation tools that generate files that don’t differ per architecture. (47716990)
 - An XCFramework makes it possible to bundle a binary framework or library for multiple platforms —including iOS devices, iOS simulators, and Mac Catalyst — into a single distributable `.xcframework` bundle that your developers can use within their own applications. An `.xcframework` bundle can be added to an Xcode target’s Link Libraries phase and Xcode uses the right platform’s version of the included framework or library at build time. Creation of frameworks is supported from the command line using `xcodebuild -create-xcframework`. Frameworks or libraries bundled in an XCFramework should be built with the Build Libraries for Distribution build setting set to `YES`. (49948269)
 
-###### Known Issues
+#### Known Issues
 
 - Incremental builds to may fail to `codesign` properly for non-source related changes to your project, such as resource file modifications, which can result in the app failing to launch. (41254808)
 
@@ -111,56 +111,56 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround:** Allow access to the files in the prompt.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - By default, Xcode’s new build system doesn’t detect changes in directories declared as inputs to shell script build phases. Enabling the build setting `USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES` causes it to do so. However, if any of the files inside such a directory are generated by a task that depends on the output of the script phase, then a dependency cycle error is emitted and must be resolved by restructuring the target. (41126633)
 
-##### Command Line Tools
+### Command Line Tools
 
-###### Known Issues
+#### Known Issues
 
 - When using the Command Line Tools as the active Developer directory, some users may experience random crashes in the Swift compiler. (53582696)
 
   **Workaround:** Execute the command `sudo rm -f /Library/Developer/CommandLineTools/usr/lib/swift/macosx/libswift*.dylib` in Terminal.
 
-###### Deprecations
+#### Deprecations
 
 - Xcode’s built-in `usdz_converter` tool is deprecated and will be removed. Use the updated tool suite located under Resources in [Augmented Reality](https://developer.apple.com/augmented-reality/). (52922369)
 - Command line support for Subversion will be removed in a future release. (50195246, 50231958, 50266910, 51740851, 52528748)
 
-##### Core Data
+### Core Data
 
-###### New Features
+#### New Features
 
 - There is now a checkbox that makes it possible for you to distinguish whether the default value of a string attribute should be `nil` or the empty string. When set, the default value is the empty string if no other default is specified. (26534406)
 - The Xcode 11 data model file format no longer writes out or preserves deprecated Sync Services information for entities or properties. (32524648)
 - The Core Data data model editor has added support for derived attributes when using the Xcode 11 data model file format and an appropriate deployment target. (45567066)
 - When creating an application using Core Data, there is a new checkbox to also enable CloudKit support for the data model’s default configuration. This can also be enabled for an existing data model using the new configuration inspector. When a data model configuration supports CloudKit, the data model editor performs additional validation to ensure the model conforms to the requirements for Core Data CloudKit support. (51126024)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Using the UUID attribute type, the URI attribute type, or the persistent history feature properly generates an error when used with a data model file format prior to the format used in Xcode 9. (50188371)
 
-##### Create ML
+### Create ML
 
-###### New Features
+#### New Features
 
 - You can now classify sounds live directly from the microphone using Sound Classification preview. (52131594)
 - A Tabular Regressor template is now available, joining Image Classification, Sound Classification, Activity Classification, Tabular Classification, Word Tagger and Text Classification. (54005628)
 
-###### Known Issues
+#### Known Issues
 
 - Apps importing the Create ML framework may not launch if they are compiled by Xcode 11. This doesn’t impact existing apps. (53795065)
 
   **Workaround:** Add the file `libswiftCreateML.tbd` in the ‘Link Library with Libraries’ section.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Non-ASCII characters can be used as training labels for Image Classification and Sound Classification. (53594243)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - The view debugger now shows the names of [`NSImage`](../AppKit/nsimage.md) instances in the inspector. (35516797)
 - The graphical filter in the Size inspector for debugging view hierarchies identifies which attributes on the selected view are constrained. Selecting attributes in the filter narrows the displayed constraints to ones matching that attribute. Standard modifier keys such as Shift and Command can be used to expand the selection showing the union of constraints matching those attributes. (44864394)
@@ -194,7 +194,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   Python 2 support will be removed in the future. (47806994)
 - Swift [`Decimal`](../Foundation/decimal.md) values have a data formatter in LLDB, making them display in a readable way. (38983073)
 
-###### Known Issues
+#### Known Issues
 
 - Console output for Previews is only shown when debugging Live Previews in the Simulator. (49891045)
 - In watchOS 6, an `apns-push-type` key is required in the APNs request header. Specify `alert` or `background` for the type of notification being sent. The template APNs files in Xcode don’t contain this header by default. (50709418)
@@ -205,7 +205,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround:** Wait until the watch simulator finishes booting, then start debugging it again.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an Xcode crash on macOS 10.15 when dragging the process item in the Debug Navigator. (48453949)
 - Items in the view debugger can be revealed in the Debug navigator from the context menu. (18598643)
@@ -216,35 +216,35 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - The Swift REPL and LLDB’s python scripting work properly when the python binary in `PATH` isn’t the system one. (40961425)
 - Resolved an issue that prevented running a Watch App that has the ‘Supports Running Without iOS App Installation’ setting on a pre-watchOS 6.0 device or simulator. (54104164)
 
-##### Deprecations
+### Deprecations
 
 - The WatchKit framework is no longer included in the iOS SDK. If you’re using WatchKit APIs from iOS, you need to remove this use. The WatchKit framework remains available on watchOS. If you’re using WatchKit APIs from iOS to infer availability of features on the paired Apple Watch, include information about your use case when you submit feedback to [Feedback Assistant](https://feedbackassistant.apple.com). (49707950)
 - Scripting language runtimes such as Python, Ruby, and Perl are included in macOS for compatibility with legacy software. In future versions of macOS, scripting language runtimes won’t be available by default, and may require you to install an additional package. If your software depends on scripting languages, it’s recommended that you bundle the runtime within the app. (49764202)
 - Use of Python 2.7 isn’t recommended. This version is included in macOS for compatibility with legacy software. Future versions of macOS won’t include Python 2.7. Instead, it’s recommended that you run `python3` in Terminal. (51097165)
 - Starting in macOS 10.15, the Quartz Composer framework is marked as deprecated, but remains present for compatibility purposes. Transition to frameworks such as Core Image, SceneKit, or Metal if your app is using Quartz Composer. (50911608)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue that prevented running a watch app built with the thread sanitizer enabled on older versions of watchOS. (49288795)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - Tracks in Instruments can now be formed in hierarchies. They can now represent any engineering type and are created using Custom Instruments. (28615789)
 - Instruments now allows for copying multiple rows from a table at one time. (39326522)
 - Instruments allows for creating scopes for easier navigation within the trace document. (49022012)
 - `<os-signpost-point-schema>` is available in the Custom Instruments to match point events coming from [`os_signpost(_:dso:log:name:signpostID:)`](../os/os_signpost%28_,dso,log,name,signpostid%29-2oz8u.md). (50586708)
 
-###### Known Issues
+#### Known Issues
 
 - When profiling a standalone watchOS app, an iOS simulator is launched. (49788679)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Interface Builder supports iOS 13 [`UIVisualEffectView`](../UIKit/uivisualeffectview.md) blur and vibrancy visual effects. (48023286)
 - Interface Builder supports iOS 13 [`UIActivityIndicatorView`](../UIKit/uiactivityindicatorview.md) styles. (48573772)
@@ -305,7 +305,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   }
   ```
 
-###### Known Issues
+#### Known Issues
 
 - A Segue Action on a relationship segue between a NSWindowController and a View Controller is currently not supported and ignored. (48252727)
 - Older IB3 documents strings won’t be extracted during localization export, and won’t be included in the XLIFF. (47650747)
@@ -330,7 +330,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   }
   ```
 
-##### Resolved Issues
+### Resolved Issues
 
 - Connect-to-source popover fields support cut, copy, paste, and select all. (40899355)
 - Corrected the alignment of [`UILabel`](../UIKit/uilabel.md), [`UITextField`](../UIKit/uitextfield.md), and [`UITextView`](../UIKit/uitextview.md) instances with alignment set to “center” or “right” in Interface Builder when designing for or running on macOS. (50062524)
@@ -342,9 +342,9 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Subclasses of [`NSControl`](../AppKit/nscontrol.md) now have unique icons in the library and document outline. (24231920)
 - Fixed an issue where system colors in XIB files set to deploy before iOS 13.0 wouldn’t adapt to the system appearance at runtime. (54362252)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - You can now localize assets in asset catalogs. Localization is enabled in the attribute inspector. (12948139)
 - The settings bundle is now included in Xcode Localization Catalogs. (12495197)
@@ -358,45 +358,45 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - The Export for Localization command and `genstrings` tool now support multiline Swift and Objective-C strings, and have relaxed whitespace requirements when recognizing arguments to `NSLocalizedString`. (50516442)
 - The performance of the Export for Localization command is substantially improved. (40548416)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The Export for Localization command and `genstrings` tool no longer crash on escaped, high Unicode code points such as `\U0001F603`. (18898240)
 - Importing a localized string that contains embedded newlines now produces strings files with escaped `\n` sequences. (44649979)
 - XLIFF files produced by Xcode localization export now add `xml:space="preserve"` to `<trans-unit />` elements to ensure that whitespace is preserved. (44928807)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - The new [Metrics organizer](https://help.apple.com/xcode/mac/current/#/devb642b28ac) shows battery life and performance analytics for your app to help you drive optimizations. Metrics are reported for your app when distributed on the App Store and after sufficient field use. The available metrics are battery drain, launch time, hang rate, memory, and disk writes. You can filter data by device and usage characteristics. (43028903)
 
-##### Playgrounds
+### Playgrounds
 
-###### New Features
+#### New Features
 
 - SwiftUI live views and inline results in playgrounds are supported. (42226387)
 
-###### Known Issues
+#### Known Issues
 
 - Playgrounds in a workspace can’t import targets from a Swift package. (47668990)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Playgrounds no longer crash if your code references a view off of the main thread. (46579594)
 
-##### Project Navigator
+### Project Navigator
 
-###### New Features
+#### New Features
 
 - Xcode can find assets in your workspace or project using the Find navigator. The Asset catalog Editor also supports find and replace, and you can rename assets using Replace. (14279237)
 
-##### Reality Composer
+### Reality Composer
 
-###### New Features
+#### New Features
 
 - Added support for object anchors in AR scenes. (48774003)
 
-###### Known Issues
+#### Known Issues
 
 - A new project that contains a USDz file and was never manually saved will have missing USDz objects when opened after an autosave. (53565602)
 
@@ -411,17 +411,17 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround**: You can rename scenes and objects using the Name field in the Properties inspector. You can rename behaviors by right-clicking the behavior and selecting Rename from the contextual menu.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Notification triggers and notify actions from other scenes no longer appear in scenes in which they weren’t authored. (51008577)
 
-##### Server
+### Server
 
-###### New Features
+#### New Features
 
 - Xcode Server now supports Mac Catalyst apps. (50602873)
 
-###### Known Issues
+#### Known Issues
 
 - When editing bots for a project that authenticates with SSH, Xcode Server may disable some project-specific settings. (51009722)
 
@@ -431,18 +431,18 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   **Workaround:** Create bots from the context menu of the server or from the Product menu in Xcode.
 - Build issues occurring in a source file built by multiple targets may be marked resolved and reintroduced on every integration. (46523551)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue where Xcode Server failed to automatically sign projects that use the iCloud, Application Groups, Apple Pay, or Wallet capabilities. (41008156, 44704694)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - Signing and capabilities settings are now combined within a new Signing & Capabilities tab in the Project Editor. The new tab enables using different app capabilities across multiple build configurations. The new capabilities library makes it possible to search for available capabilities. (35254597)
 - Xcode 11 supports the new Apple Development and Apple Distribution certificate types. These certificates support building, running, and distributing apps on any Apple platform. Preexisting iOS and macOS development and distribution certificates continue to work, however, new certificates you create in Xcode 11 use the new types. Previous versions of Xcode don’t support these certificates. (45527608)
 
-###### Known Issues
+#### Known Issues
 
 - If your iPad app uses private entitlements, those entitlements may not be available for use in your Mac Catalyst app. (51599125)
 
@@ -466,13 +466,13 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround:** Sign into your bot user’s account and rename the affected profiles in the `~/Library/MobileDevice/Provisioning Profiles` directory.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue where Xcode incorrectly reported: “No iTunes Connect access for the team” when uploading to the App Store. (39292849)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Simulator can automatically select the macOS GPU based on the current power source. When your Mac is connected to AC power the discrete GPU is used. When your Mac is running on battery power the integrated GPU is used. You can change the policy in Simulator by navigating to File > GPU Selection. (53032365)
 - `simctl` can now override status bar values for iOS devices. For example, to set the time and battery, use:
@@ -495,7 +495,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Simulator’s File menu now includes a GPU selection menu to control which GPU is used by Metal support in simulators and for compositing by Simulator’s virtual frame buffer. If the Use External GPU When Available item is checked, any simulators booted after an external GPU is connected use the external GPU. If the external GPU is disconnected, any simulators using it automatically shut down. Changes to these settings only take effect when a simulator is booted. Simulators already booted when this setting is changed continue using the previously selected GPU until they’re restarted. (46134036)
 - iOS 13 simulators now strictly simulate edge gestures. To perform an edge swipe in a simulator turn on bezel mode and begin your gesture in the bezel area. (55052127)
 
-###### Known Issues
+#### Known Issues
 
 - Simulator doesn’t distribute the load if multiple GPUs in a system match the chosen GPU policy. Only the first matching GPU, as returned by [`MTLCopyAllDevices()`](../Metal/mtlcopyalldevices%28%29.md), is used. (50608554)
 
@@ -524,7 +524,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Attempting to create an MIDINetworkSession in a simulated device running iOS 13 won’t succeed. (54484923)
 - CarPlay does not work in iOS 13 simulators. (54492162)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Simulator correctly displays the checkmark for Touch ID > Enrolled when it’s enrolled. (50553667)
 - Automatic synchronization of pasteboards between a host and simulated devices behaves correctly. (46686100)
@@ -534,9 +534,9 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Fixed an issue that could cause Simulator to crash or become unresponsive following clipboard-related actions in other applications if automatic pasteboard synchronization is enabled. (54011137)
 - Changing the audio in a simulated device while a video is playing in Safari won’t mute the audio of the video. (51207286)
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - You can now cherry-pick changes from one branch to another. (18285039)
 - When cloning a new repository, you can now select the branch to check out from the list of available branches. (41122122)
@@ -544,7 +544,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - You can now stash changes and manage stashes from the source control navigator. Additionally, Xcode offers to automatically stash and restore changes for source control operations like pulling from a repository. (8797804)
 - Source control authors are now available on a per-editor basis. (45108927)
 
-###### Known Issues
+#### Known Issues
 
 - When performing a Pull in Xcode on a branch that’s already up to date when rebase is enabled, the sheet doesn’t dismiss automatically. (50377240)
 - Viewing the changes for a revision of a file from the source control log inspector may fail if that file has since been renamed. (49673170)
@@ -554,7 +554,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround:** SSH into the host and verify the fingerprint from the command line before using `xcodebuild`, or manually add the host fingerprint to the `~/.ssh/known_hosts` file.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Source control status in the file navigator will reflect the same information as `git status` from the terminal. (14986450)
 - Pulling with rebase no longer fails if author information isn’t yet configured for Git in Preferences > Source Control. (48680076)
@@ -563,9 +563,9 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Fixes a performance issue where Personal, organizational and Starred repositories took a long time to load. (48620126)
 - Fixes a bug where some source editor menu options were unavailable in the Code Review Editor. (48774008)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Semantic highlighting, code completion, live issues, symbol search, and jump-to-definition are now supported for the Metal shading language. (45144204)
 - Introduces the ability to view inline code diffs for changes in the Source Editor by clicking on the Source Control Change Bar and choosing Show or Hide Change. (49073551)
@@ -584,7 +584,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Pasted text is no longer re-indented by default, though the initial whitespace is adjusted to match the surrounding text. This can be controlled with Preferences > Text Editing > Indentation. (16047992)
 - Added support for syntax coloring YAML files. (19942196)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [`NSProgressIndicator`](../AppKit/nsprogressindicator.md) objects now preserve the current value configured in the inspector when built and run. (43257511)
 - Resolved an issue where Xcode erroneously opened an assistant editor when you ran Fix All Issues using a keyboard shortcut. (37995114)
@@ -622,17 +622,17 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Improved performance and correctness when parsing XML and HTML files. (50672550)
 - Improved the syntax coloring for `man` page files. (52035097)
 
-##### Static Analyzer
+### Static Analyzer
 
-###### New Features
+#### New Features
 
 - The static analyzer checks for violations of the MIG calling convention in mach server routines. These violations can lead to use-after-free vulnerabilities. (35380337)
 - The static analyzer checks for violations of IOKit and libkern reference counting rules with respect to out-parameters. (46357478)
 - The static analyzer checks for violations of DriverKit reference counting rules. These violations can lead to leaks and use-after-free issues. (50349513)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - The `@frozen` attribute for structures and enumerations is now available. ([SE-0260](https://github.com/apple/swift-evolution/blob/master/proposals/0260-library-evolution.md), 36597490)
 - The memberwise initializer for structures now provides default values for variables that hold default expressions. ([SE-0242](https://github.com/apple/swift-evolution/blob/master/proposals/0242-default-values-memberwise.md), 47130624)
@@ -805,7 +805,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   }
   ```
 
-###### Known Issues
+#### Known Issues
 
 - The `NEHotspotConfigurationError` enum from the [Network Extension](../NetworkExtension/NetworkExtension.md) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this:
 
@@ -821,7 +821,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Duplicate tuple element labels are no longer allowed, because it leads to incorrect behavior. ([SR-8974](https://bugs.swift.org/browse/SR-8974), 45218256)
 
@@ -849,9 +849,9 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - If symbols in a crash log aren’t properly demangled, run the `swift-demangle` command and pass in the content of the crash log. (34920390)
 - If a type has the same name as its containing module, importing that module from a module interface works properly. (19481048, 48445154)
 
-##### SwiftUI
+### SwiftUI
 
-###### Known Issues
+#### Known Issues
 
 - Deploying SwiftUI previews to a device in a project with a deployment prior to iOS 10 will fail, even if the device is running iOS 13. SwiftUI previews can only be deployed to devices when the deployment target of the project is iOS 10+, and the device is running iOS 13. (52121546)
 - The software keyboard doesn’t appear in previews. (35615536)
@@ -899,26 +899,26 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround**: If you encounter issues using Xcode Previews, you can try disabling hot-swapping per file using the Editor > Previews menu. You will still be able to use previews, but without the faster turnaround that hot-swapping provides.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The `#if`/`#endif` compiler conditionals surrounding PreviewProvider types have been removed from SwiftUI templates. PreviewProviders aren’t properly removed from built products when archived. (51539802)
 - Xcode Previews work when your built products (derived data) are on a separate volume from your home directory. (54327360)
 - Switching run destinations will show the correct device in Xcode Previews. (54006837)
 - Fixed an issue preventing Xcode Previews from working for macOS apps with App Sandbox enabled. (51088926)
 
-##### Swift Compiler
+### Swift Compiler
 
-###### Known Issues
+#### Known Issues
 
 - Applying multiple property wrappers to a property could cause the compiler to synthesize accessors with the wrong ABI. This feature has been disabled to prevent incompatible ABI changes from occurring in the future. (53428736)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Xcode now supports creating and working with Swift packages, as well as adding, removing, and managing package dependencies. The package management support in Xcode is built on top of the open source Swift Package Manager project. (22427200)
 
-###### Known Issues
+#### Known Issues
 
 - There is no explicit command-line option to build a Swift Package using `xcodebuild`. (45575820)
 
@@ -954,15 +954,15 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
   **Workaround**: Modify the Package manifest to build a static library.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Code completion works for Swift package targets regardless if the name of the target declared in the `Package.swift` manifest file differs in casing with the directory name for that target. (49648458)
 - Adding a new file in a C-family target of a Swift package doesn’t create the file with the `.swift` extension. (31395814)
 - Swift packages that use `unsafeFlags` build settings can’t be used as a dependency. (50354068)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - The test plan editor now supports selecting a target to use when expanding build setting variables in command-line arguments and environment variable entries. (51841050)
 - Support for writing [XCTest](../XCTest/XCTest.md) UI tests that interact with SwiftUI views. (35224680)
@@ -1007,7 +1007,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - Xcode 11 introduces the option to automatically include screenshots from XCTest in Xcode Localization Catalogs. Enable Localization Screenshots in your test plan or in the scheme editor, then check “include screenshots” when exporting for localization. (28656175)
 - When running tests using a test plan, it is now possible to configure which targets to include in code coverage results via the test plan’s code coverage setting. (53504451)
 
-###### Known Issues
+#### Known Issues
 
 - The `XCTUnwrap` API is only available in primary test bundle targets and not in other libraries or frameworks. (51117167)
 
@@ -1020,7 +1020,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
   SWIFT_INCLUDE_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/usr/lib"
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Schemes which have been converted to use test plans – and have test plan entries in the Build action enabled for actions other than Test (such as Run) – no longer crash with versions of Xcode before 11.0. (53645359)
 - The structured build log in Xcode, and in standalone Result Bundles, shows durations for each step again. (48126238)
@@ -1028,9 +1028,9 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 - The [`exists`](../XCUIAutomation/xcuielement/exists.md) property on [`XCUIElement`](../XCUIAutomation/xcuielement.md) now produces test failures in situations where XCTest is unable to inspect the application’s UI — for example, due to the app’s main thread being unresponsive — instead of returning `false` in those situations. (37359653)
 - The unit test discovery mechanism is more efficient for large projects. The test navigator gets populated faster after reopening a project. (32567980)
 
-##### watchOS
+### watchOS
 
-###### Known Issues
+#### Known Issues
 
 - watchOS applications built with the watchOS 6 SDK and a deployment target of watchOS 5.3 will crash on launch. (55360395)
 

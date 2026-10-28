@@ -22,7 +22,7 @@ Executes the inference graph with the input and output data, batch size, and exe
 func execute(inputsData: [String : MLCTensorData], lossLabelsData: [String : MLCTensorData]? = nil, lossLabelWeightsData: [String : MLCTensorData]? = nil, outputsData: [String : MLCTensorData]? = nil, batchSize: Int, options: MLCExecutionOptions = []) async throws -> (result: MLCTensor?, executionTime: TimeInterval)
 ```
 
-#### Return Value
+## Return Value
 
 The result tensor, if any, and the execution time if you specify [`profiling`](../mlcexecutionoptions/profiling.md).
 

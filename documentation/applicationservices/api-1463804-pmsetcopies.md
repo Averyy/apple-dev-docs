@@ -19,11 +19,11 @@ func PMSetCopies(_ printSettings: PMPrintSettings, _ copies: UInt32, _ lock: Boo
 OSStatus PMSetCopies(PMPrintSettings printSettings, UInt32 copies, Boolean lock);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 If you call this function after initiating a print job, the change is ignored for the current job.
 

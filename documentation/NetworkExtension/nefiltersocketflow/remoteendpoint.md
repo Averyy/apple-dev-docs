@@ -23,7 +23,7 @@ var remoteEndpoint: NWEndpoint? { get }
 @property (readonly, nullable) NWEndpoint * remoteEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 This endpoint object may be `nil` when the system calls your [`handleNewFlow(_:)`](../nefilterdataprovider/handlenewflow%28_%29.md) method; if so, receiving network data populates the object. In such a case, the filter may still perform filtering, based on its socket type, socket family, or socket protocol.
 

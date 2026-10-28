@@ -20,7 +20,7 @@ The weight of the joint rotation limit demand.
 var weight: Float
 ```
 
-#### Discussion
+## Discussion
 
 The value is in the closed range `[0, 1]`, where `0` means no influence, and `1` is maximum correction.
 

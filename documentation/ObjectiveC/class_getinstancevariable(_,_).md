@@ -25,7 +25,7 @@ func class_getInstanceVariable(_ cls: AnyClass?, _ name: UnsafePointer<CChar>) -
 extern Ivarclass_getInstanceVariable(Class cls, const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an [`Ivar`](./ivar.md) data structure containing information about the instance variable specified by `name`.
 

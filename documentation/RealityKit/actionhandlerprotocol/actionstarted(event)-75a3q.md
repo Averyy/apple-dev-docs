@@ -20,7 +20,7 @@ The function used to respond to action started events.
 mutating func actionStarted(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 A start event is raised when the animation time first falls within an event’s defined time interval.
 

@@ -24,13 +24,13 @@ class INSetDefrosterSettingsInCarIntent
 @interface INSetDefrosterSettingsInCarIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Automotive venders can add support for this intent to an Intents extension that they ship with their automotive apps. When the user asks Siri to change the defroster settings for a vehicle, SiriKit creates an [`INSetDefrosterSettingsInCarIntent`](./insetdefrostersettingsincarintent.md) object and delivers it to the app’s Intents extension. You use the intent to identify which defroster the user wants to enable or disable and to communicate the changes directly to your vehicle’s systems.
 
 The object that handles this intent must adopt the [`INSetDefrosterSettingsInCarIntentHandling`](./insetdefrostersettingsincarintenthandling.md) protocol. Use this intent object to resolve the defroster details and to create an [`INSetDefrosterSettingsInCarIntentResponse`](./insetdefrostersettingsincarintentresponse.md) object indicating whether you were able to make the change successfully.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -39,7 +39,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents (in conjunction with CarPlay) |
 | Always requires unlocked device | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to enable or disable the defrosters in a vehicle in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

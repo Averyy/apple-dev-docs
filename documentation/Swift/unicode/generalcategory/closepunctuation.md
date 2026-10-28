@@ -21,7 +21,7 @@ A closing punctuation mark of a pair.
 case closePunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Close_Punctuation` (abbreviated `Pe`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

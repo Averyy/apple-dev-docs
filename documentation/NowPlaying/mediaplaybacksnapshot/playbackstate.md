@@ -21,7 +21,7 @@ The current playback state of a Now Playing session.
 enum PlaybackState
 ```
 
-#### Overview
+## Overview
 
 Use this type to inform the system about the current state of media playback in your session. The system uses the playback state to update the Now Playing interface and manage audio session behavior appropriately.
 

@@ -19,7 +19,7 @@ var defaultFixedFontSize: Int32 { get set }
 @property (nonatomic) int defaultFixedFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default font size to use for content displayed in a fixed font if no font size is specified.
 

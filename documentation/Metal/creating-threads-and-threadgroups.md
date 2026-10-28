@@ -5,15 +5,15 @@
 
 Learn how Metal organizes compute-processing workloads.
 
-#### Overview
+## Overview
 
 A compute pass can run a kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a *thread*, which is a single  instance of your kernel function. For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
 
 Each thread belongs to a *threadgroup* that run together and share a common block of memory. You can design your kernel functions so that each thread runs independently, or so that they collaborate as a group on a common working set.
 
-##### Identification of threads by position in grid
+### Identification of threads by position in grid
 
-[Figure 1](./compute_passes/creating_threads_and_threadgroups.md#2928936) shows how an image being processed by a compute kernel is divided into threadgroups and how each threadgroup is composed of individual threads. Each thread processes a single pixel.
+[Figure 1](./creating-threads-and-threadgroups.md#2928936) shows how an image being processed by a compute kernel is divided into threadgroups and how each threadgroup is composed of individual threads. Each thread processes a single pixel.
 
 ![A grid divided into threadgroups that are composed of individual threads.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-threads-and-threadgroups-1@2x.png)
 
@@ -47,17 +47,17 @@ convertToGrayscale(texture2d<half, access::read>  inTexture  [[texture(ComputeTe
 
 `[[thread_position_in_grid]]` is an *attribute qualifier*. Attribute qualifiers, identifiable by their double square-bracket syntax, allow kernel parameters to be bound to resources and built-in variables — in this case, the thread’s position in the grid to the kernel function.
 
-For example, given a grid of 16 x 16 threads partitioned into 2 x 4 threadgroups of 8 x 4 threads, a single thread (shown in [Figure 2](./compute_passes/creating_threads_and_threadgroups.md#2929009) in red) has a position in the grid of (9,10):
+For example, given a grid of 16 x 16 threads partitioned into 2 x 4 threadgroups of 8 x 4 threads, a single thread (shown in [Figure 2](./creating-threads-and-threadgroups.md#2929009) in red) has a position in the grid of (9,10):
 
 ![The position of a single thread in a 16 x 16 grid.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-threads-and-threadgroups-2@2x.png)
 
-##### Identification of threads by position in threadgroup
+### Identification of threads by position in threadgroup
 
 A thread’s position in its threadgroup is also available as the attribute qualifier `[[thread_position_in_threadgroup]]`, and a threadgroup’s position in the grid is available as `[[threadgroup_position_in_grid]]`.
 
 Depending on the shape of the grid, these position attributes are either a scalar value, or a two- or three-element vector. In the case of a 2D grid, position attributes are two-element vectors, with the origin at the top-left.
 
-The thread identified in [Figure 2](./compute_passes/creating_threads_and_threadgroups.md#2929009) is in the threadgroup with a position in the grid of (1,2), and its position in that threadgroup is (1,2), as shown in [Figure 3](./compute_passes/creating_threads_and_threadgroups.md#2929421):
+The thread identified in [Figure 2](./creating-threads-and-threadgroups.md#2929009) is in the threadgroup with a position in the grid of (1,2), and its position in that threadgroup is (1,2), as shown in [Figure 3](./creating-threads-and-threadgroups.md#2929421):
 
 ![The position of a single thread in a threadgroup.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-threads-and-threadgroups-3@2x.png)
 
@@ -76,7 +76,7 @@ myKernel(uint2 threadgroup_position_in_grid   [[ threadgroup_position_in_grid ]]
 }
 ```
 
-##### SIMD groups
+### SIMD groups
 
 The threads in a threadgroup are further organized into single-instruction, multiple-data (SIMD) groups, also known as *warps* or *wavefronts*, that execute concurrently. The threads in a SIMD group execute the same code. Avoid writing code that could cause your kernel function to *diverge*; that is, to follow different code paths. A typical example of divergence is caused by using an *if* statement. Even if a single thread in a SIMD group takes a different path from the others, all threads in that group execute both branches, and the execution time for the group is the sum of the execution time of both branches.
 
@@ -89,11 +89,11 @@ The number of threads in a SIMD group is returned by the [`threadExecutionWidth`
 
 Although threadgroups can be multidimensional, SIMD groups are 1D. Therefore, a thread’s position within a SIMD group is a scalar value for all threadgroup shapes. The SIMD group size remains constant and is unaffected by the threadgroup size.
 
-For example, using the same 16 x 16 grid shown in [Figure 2](./compute_passes/creating_threads_and_threadgroups.md#2929009), with a thread execution width of 16, a single 8 x 4 threadgroup consists of 2 SIMD groups. Because a SIMD group contains 16 threads, each SIMD group constitutes 2 rows in the threadgroup:
+For example, using the same 16 x 16 grid shown in [Figure 2](./creating-threads-and-threadgroups.md#2929009), with a thread execution width of 16, a single 8 x 4 threadgroup consists of 2 SIMD groups. Because a SIMD group contains 16 threads, each SIMD group constitutes 2 rows in the threadgroup:
 
 ![A threadgroup composed of 2 SIMD groups.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-threads-and-threadgroups-4@2x.png)
 
-The thread shown in red in [Figure 5](./compute_passes/creating_threads_and_threadgroups.md#2929426) has a `[[simdgroup_index_in_threadgroup]]` value of 1 and a `[[thread_index_in_simdgroup]]` value of 1:
+The thread shown in red in [Figure 5](./creating-threads-and-threadgroups.md#2929426) has a `[[simdgroup_index_in_threadgroup]]` value of 1 and a `[[thread_index_in_simdgroup]]` value of 1:
 
 ![The position of a single thread in a SIMD group.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-threads-and-threadgroups-5@2x.png)
 

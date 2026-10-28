@@ -25,11 +25,11 @@ func CMSampleBufferGetSampleTimingInfoArray(_ sbuf: CMSampleBuffer, entryCount n
 extern OSStatus CMSampleBufferGetSampleTimingInfoArray(CMSampleBufferRef sbuf, CMItemCount numSampleTimingEntries, CMSampleTimingInfo *timingArrayOut, CMItemCount *timingArrayEntriesNeededOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 If only one `CMSampleTimingInfo` struct is returned, it applies to all samples in the buffer. See documentation of [`CMSampleTimingInfo`](./cmsampletiminginfo.md) for details of how a single `CMSampleTimingInfo` struct can apply to multiple samples.
 

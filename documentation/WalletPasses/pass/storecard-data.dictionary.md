@@ -21,7 +21,7 @@ object Pass.StoreCard
 
 - [Creating a store card pass](../creating-a-store-card-pass.md)
 
-#### Discussion
+## Discussion
 
 Use the store card pass type for business loyalty cards, gift cards, or point cards. It can display a balance or point accumulation.
 

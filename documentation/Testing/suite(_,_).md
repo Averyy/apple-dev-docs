@@ -20,11 +20,11 @@ Declare a test suite.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Suite(_ displayName: String? = nil, _ traits: any SuiteTrait...)
+@attached(peer)
+macro Suite(_ displayName: String? = nil, _ traits: any SuiteTrait...)
 ```
 
-#### Overview
+## Overview
 
 A test suite is a type that contains one or more test functions. Any type may be a test suite.
 

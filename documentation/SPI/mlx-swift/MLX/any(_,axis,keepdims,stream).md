@@ -17,7 +17,7 @@ An `or` reduction over the given axes.
 func any(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`any(_:axes:keepDims:stream:)`](./any%28_,axes,keepdims,stream%29.md)

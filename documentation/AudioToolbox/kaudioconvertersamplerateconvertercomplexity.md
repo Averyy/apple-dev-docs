@@ -24,7 +24,7 @@ var kAudioConverterSampleRateConverterComplexity: AudioConverterPropertyID { get
 kAudioConverterSampleRateConverterComplexity
 ```
 
-#### Discussion
+## Discussion
 
 The sample rate conversion algorithm, specified using a constant from [Sample Rate Conversion Complexity Identifiers](./api-1559923-sample-rate-conversion-complexit.md).
 

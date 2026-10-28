@@ -21,7 +21,7 @@ class ASOneTimeCodeCredentialIdentity
 @interface ASOneTimeCodeCredentialIdentity : NSObject
 ```
 
-#### Overview
+## Overview
 
 An ASOneTimeCodeCredentialIdentity is used to describe an identity that can use a service upon successful one-time code based authentication. Use this class to save entries into ASCredentialIdentityStore.
 

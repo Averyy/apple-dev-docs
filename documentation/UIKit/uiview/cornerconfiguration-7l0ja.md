@@ -20,7 +20,7 @@ A configuration that defines the corners of the view.
 @preconcurrency var cornerConfiguration: UICornerConfiguration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For more information on how to configure view corners, see [`UICornerConfiguration`](../uicornerconfiguration-swift.struct.md).
 

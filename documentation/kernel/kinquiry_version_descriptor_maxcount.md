@@ -13,7 +13,7 @@
 #define kINQUIRY_VERSION_DESCRIPTOR_MaxCount
 ```
 
-#### Discussion
+## Discussion
 
 Maximum number of INQUIRY version descriptors supported.
 

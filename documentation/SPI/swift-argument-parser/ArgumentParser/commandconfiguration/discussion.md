@@ -17,7 +17,7 @@ A longer description of this command, to be shown in the extended help display.
 var discussion: String
 ```
 
-#### Discussion
+## Discussion
 
 Can include specific abstracts about the argument’s possible values (e.g. for a custom `ExpressibleByArgument` type), or can describe a static block of text that extends the description of the argument.
 

@@ -18,7 +18,7 @@ var service_name: es_string_token_t
 es_string_token_t service_name;
 ```
 
-#### Discussion
+## Discussion
 
 Structure for handling strings
 

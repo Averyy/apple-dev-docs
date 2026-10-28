@@ -21,7 +21,7 @@ A Boolean value indicating whether this value is zero.
 var isZero: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` for `-0.0` and `+0.0` and `false` for all other values.
 

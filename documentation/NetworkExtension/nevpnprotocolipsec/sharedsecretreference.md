@@ -24,7 +24,7 @@ var sharedSecretReference: Data? { get set }
 @property (copy, nullable) NSData * sharedSecretReference;
 ```
 
-#### Discussion
+## Discussion
 
 The persistent keychain reference must refer to a kerychain item of class [`kSecClassGenericPassword`](../../Security/ksecclassgenericpassword.md)
 

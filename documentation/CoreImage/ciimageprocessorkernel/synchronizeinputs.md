@@ -24,7 +24,7 @@ class var synchronizeInputs: Bool { get }
 @property (class, readonly) bool synchronizeInputs;
 ```
 
-#### Discussion
+## Discussion
 
 Generally, if your subclass uses the GPU your should override this method to return false. If not overridden, true is returned.
 

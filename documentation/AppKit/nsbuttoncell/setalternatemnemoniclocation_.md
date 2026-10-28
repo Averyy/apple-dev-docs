@@ -15,7 +15,7 @@ Sets the character in the alternate title that should be the “keyboard mnemoni
 - (void) setAlternateMnemonicLocation:(NSUInteger) location;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

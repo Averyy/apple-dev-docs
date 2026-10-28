@@ -25,7 +25,7 @@ static let cfLocaleCurrentLocaleDidChange: CFNotificationName!
 extern CFNotificationName const kCFLocaleCurrentLocaleDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This is a local notification posted when the user changes locale information in the System Preferences panel. Keep in mind that there is no order in how notifications are delivered to observers; frameworks or other parts of your code may also be observing this notification to take their own actions, and these may not have occurred at the time you receive the notification.
 

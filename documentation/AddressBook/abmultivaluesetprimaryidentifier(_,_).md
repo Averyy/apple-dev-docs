@@ -19,7 +19,7 @@ func ABMultiValueSetPrimaryIdentifier(_ multiValue: ABMutableMultiValueRef!, _ i
 extern bool ABMultiValueSetPrimaryIdentifier(ABMutableMultiValueRef multiValue, CFStringRef identifier);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessfully, `false` otherwise.
 

@@ -21,7 +21,7 @@ optional func inputPickerInteractionDidEndDismissing(_ inputPickerInteraction: A
 - (void) inputPickerInteractionDidEndDismissing:(AVInputPickerInteraction *) inputPickerInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 The `isPresented` property is set to `NO` at this point, indicating that the dismissal is complete.
 

@@ -17,7 +17,7 @@ Element-wise remainder with a [`ScalarOrArray`](../scalarorarray.md) (scalar) ar
 static func % (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`%(_:_:)`](./op%28_,_%29-3ubwd.md)

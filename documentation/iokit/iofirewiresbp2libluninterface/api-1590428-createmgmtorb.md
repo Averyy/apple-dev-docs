@@ -16,11 +16,11 @@ Creates a new IOFireWireSBP2LibMgmntORBInterface object.
 IUnknownVTbl **(*createMgmtORB)(void *self, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to a new IOFireWireSBP2Login.
 
-#### Discussion
+## Discussion
 
 Creates a new IOFireWireSBP2LibMgmtORBInterface object. Management objects let you execute commands like QueryLogins, LogicalUnitReset, and AbortTask. These commands are configured after they are created here. When they are done executing (after a call to submit) the supplied completion routine will be called with the supplied refcon. Usually this refCon is the "this" pointer of completion method's object.
 

@@ -22,7 +22,7 @@ class func pop()
 + (void) pop;
 ```
 
-#### Discussion
+## Discussion
 
 The new object on the top of the stack becomes the current cursor. If the current cursor is the only cursor on the stack, this method does nothing.
 

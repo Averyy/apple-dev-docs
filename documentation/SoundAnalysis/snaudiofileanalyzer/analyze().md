@@ -29,7 +29,7 @@ func analyze()
 
 - [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
-#### Discussion
+## Discussion
 
 This method executes synchronously and may block the calling thread for a long time.
 

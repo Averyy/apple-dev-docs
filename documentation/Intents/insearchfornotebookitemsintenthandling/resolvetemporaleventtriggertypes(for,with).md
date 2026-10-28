@@ -27,7 +27,7 @@ optional func resolveTemporalEventTriggerTypes(for intent: INSearchForNotebookIt
 - (void) resolveTemporalEventTriggerTypesForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INTemporalEventTriggerTypeOptionsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the temporal event used during a temporal-based search. Use this method to verify that you can perform a temporal-based search using the specified information. Consider the value of the [`temporalEventTriggerTypes`](../insearchfornotebookitemsintent/temporaleventtriggertypes.md) property of the intent when determining your response. If the search type is unknown, return a value of not required to indicate that you do not intend to use the temporal event information during the search. If the search type is a different value, return a successful resolution if the [`temporalEventTriggerTypes`](../insearchfornotebookitemsintent/temporaleventtriggertypes.md) property of the intent contains enough information to perform the search. Return a different result if it does not.
 

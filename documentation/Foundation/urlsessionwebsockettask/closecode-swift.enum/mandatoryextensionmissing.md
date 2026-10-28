@@ -25,7 +25,7 @@ case mandatoryExtensionMissing
 NSURLSessionWebSocketCloseCodeMandatoryExtensionMissing
 ```
 
-#### Discussion
+## Discussion
 
 RFC 6455 indicates the client should provide a [`closeReason`](../closereason.md) with a list of the needed extensions.
 

@@ -15,7 +15,7 @@ The text to display in the annotation’s callout.
 title?: string;
 ```
 
-#### Discussion
+## Discussion
 
 The title to show in the callout. The default value is `null`.
 

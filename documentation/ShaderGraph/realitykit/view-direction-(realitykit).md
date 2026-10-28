@@ -14,7 +14,7 @@ A vector from a position in the scene to the view reference point.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,7 +24,7 @@ A vector from a position in the scene to the view reference point.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter description
+## Parameter description
 
 - **`Space`**: The space that indicates the camera’s position. Values for this parameter are `world`, `tangent`, `object`, or `model`; the default is `world`.
 

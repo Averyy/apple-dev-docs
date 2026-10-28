@@ -25,7 +25,7 @@ class INBillDetails
 @interface INBillDetails : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INBillDetails`](./inbilldetails.md) object contains the details surrounding the payment of a bill. You create instances of this class when handling bill payment-related intents. For example, you create instances of this class when searching for the user’s bill payments. The details include the recipient of the funds, the amount that’s due, and the date of payment.
 

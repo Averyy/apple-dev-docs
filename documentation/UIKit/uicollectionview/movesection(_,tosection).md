@@ -23,7 +23,7 @@ func moveSection(_ section: Int, toSection newSection: Int)
 - (void) moveSection:(NSInteger) section toSection:(NSInteger) newSection;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to reorganize existing sections and their contained items. You might do this when you rearrange sections within your data source object or in response to user interactions with the collection view. The collection view updates the layout as needed to account for the move, animating new views into position as needed.
 

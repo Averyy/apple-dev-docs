@@ -16,7 +16,7 @@ Get or set a value in this array as an endpoint.
 subscript(index: Int) -> XPCEndpoint? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 An endpoint value or `nil` if no such value was found.
 

@@ -6,7 +6,7 @@
 
 A 16-bit integer that specifies the sound balance of this sound media.
 
-#### Overview
+## Overview
 
 Sound balance is the setting that controls the mix of sound between the two speakers of a computer. This field is normally set to `0`. See Balance for more information about balance values.
 

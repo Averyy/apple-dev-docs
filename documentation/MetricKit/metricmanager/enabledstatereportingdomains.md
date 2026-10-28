@@ -18,11 +18,11 @@ StateReporting domains enabled for metrics aggregation
 final var enabledStateReportingDomains: Set<StateReportingDomain> { get }
 ```
 
-#### Discussion
+## Discussion
 
 When set, metrics will be delivered with StateReporting stable state context, broken down by the application states recorded in the specified domains. This manager will receive metric entries matching the enabled domains as well as non-state-aggregated metric entries.
 
-#### Example
+## Example
 
 ```swift
 let manager = MetricManager(enabledStateReportingDomains: [

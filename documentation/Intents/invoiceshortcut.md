@@ -24,7 +24,7 @@ class INVoiceShortcut
 @interface INVoiceShortcut : NSObject
 ```
 
-#### Overview
+## Overview
 
 To add a shortcut to Siri, create an [`INShortcutReference`](./inshortcutreference.md) object and add it using [`INUIAddVoiceShortcutViewController`](../IntentsUI/inuiaddvoiceshortcutviewcontroller.md). You don’t create an instance of [`INVoiceShortcut`](./invoiceshortcut.md); the system creates the instance for you when an instance is needed.
 

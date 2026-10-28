@@ -25,7 +25,7 @@ class MTRBaseClusterMicrowaveOvenMode
 @interface MTRBaseClusterMicrowaveOvenMode : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for selecting a mode from a list of supported options.
 

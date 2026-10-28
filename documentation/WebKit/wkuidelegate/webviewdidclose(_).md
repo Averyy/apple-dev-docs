@@ -23,7 +23,7 @@ optional func webViewDidClose(_ webView: WKWebView)
 - (void) webViewDidClose:(WKWebView *) webView;
 ```
 
-#### Discussion
+## Discussion
 
 Your app should remove the web view from the view hierarchy and update the UI as needed, for instance by closing the containing browser tab or window.
 

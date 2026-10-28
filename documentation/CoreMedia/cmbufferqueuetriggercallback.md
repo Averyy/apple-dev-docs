@@ -25,7 +25,7 @@ typealias CMBufferQueueTriggerCallback = (UnsafeMutableRawPointer?, CMBufferQueu
 typedef void (*)(void *, struct opaqueCMBufferQueueTriggerToken *) CMBufferQueueTriggerCallback;
 ```
 
-##### Callback Parameters
+### Callback Parameters
 
 - **triggerRefcon**: The contextual data.
 - **triggerToken**: The trigger whose condition became true.

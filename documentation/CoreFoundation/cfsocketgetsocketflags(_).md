@@ -25,11 +25,11 @@ func CFSocketGetSocketFlags(_ s: CFSocket!) -> CFOptionFlags
 extern CFOptionFlags CFSocketGetSocketFlags(CFSocketRef s);
 ```
 
-#### Return Value
+## Return Value
 
 A bitwise-OR combination of flags controlling the behavior of `s`. See [CFSocket Flags](./api-1560944-cfsocket-flags.md) for the list of available flags.
 
-#### Discussion
+## Discussion
 
 See [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md) for details on what the flags of a CFSocket mean.
 

@@ -25,11 +25,11 @@ func makeIOCommandQueue(descriptor: MTLIOCommandQueueDescriptor) throws -> any M
 - (id<MTLIOCommandQueue>) newIOCommandQueueWithDescriptor:(MTLIOCommandQueueDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLIOCommandQueue`](../mtliocommandqueue.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 For information about using input/output command queues and file handles, see [Resource loading](../resource-loading.md).
 

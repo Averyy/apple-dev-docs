@@ -5,7 +5,7 @@
 
 An interface for accessing a range of different video-processing features.
 
-#### Overview
+## Overview
 
 A `Configuration` object defines each processor implementation by passing initialization and configuration parameters for the processor, and a `Parameter` object provides the parameters for each individual processing operation.
 

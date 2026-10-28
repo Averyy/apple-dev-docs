@@ -20,7 +20,7 @@ A Boolean that indicates whether the bounding box is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the box is empty.
 

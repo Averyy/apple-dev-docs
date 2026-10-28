@@ -12,11 +12,11 @@ bool CreateTargetForID (
  SCSIDeviceIdentifiertargetID );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if successful.
 
-#### Overview
+## Overview
 
 For HBA child classes that report true to the DoesHBAPerformDeviceManagement() method, the child class will be responsible for all device management by using these methods; otherwise, the superclass will be responsible for all device management. This method must be used to perform SCSI Parallel Device creation and cannot be overridden.
 

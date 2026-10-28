@@ -10,11 +10,11 @@ Create a displayable ARGB image using the luminance and chrominance information 
 - macOS 13.3+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 As an alternative to the any-to-any conversion technique that [Using vImage pixel buffers to generate video effects](./using-vimage-pixel-buffers-to-generate-video-effects.md) describes, vImage provides low-level functions for creating RGB images from the separate luminance and chrominance planes that an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) instance provides. These functions offer better performance and more granular configuration than using a [`vImageConverter`](./vimageconverter.md) instance.
 
-##### Configure the YpCbCr-to-ARGB information
+### Configure the YpCbCr-to-ARGB information
 
 The [`vImageConvert_YpCbCrToARGB_GenerateConversion(_:_:_:_:_:_:)`](./vimageconvert_ypcbcrtoargb_generateconversion%28_,_,_,_,_,_%29.md) function generates the information that vImage requires to convert the luminance and chrominance planes to a single ARGB image.
 
@@ -49,7 +49,7 @@ func configureYpCbCrToARGBInfo() {
 }
 ```
 
-##### Lock the Core Video pixel buffer
+### Lock the Core Video pixel buffer
 
 Before the sample app accesses the pixel data that AVFoundation supplies as a [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer-q2e.md), it calls [`CVPixelBufferLockBaseAddress(_:_:)`](../CoreVideo/cvpixelbufferlockbaseaddress%28_,_%29.md) to lock the pixel buffer and make the underlying memory available.
 
@@ -69,7 +69,7 @@ CVPixelBufferUnlockBaseAddress(
     CVPixelBufferLockFlags.readOnly)
 ```
 
-##### Create the source luminance and chrominance pixel buffers
+### Create the source luminance and chrominance pixel buffers
 
 The `convertYpCbCrToRGB(cvPixelBuffer:)` function creates two pixel buffers that share memory with the [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer-q2e.md). The Core Video pixel buffer contains two planes: the plane at index `0` contains one channel that represents the luminance component, the plane at index `1` contains two interleaved channels that represent the two chrominance components.
 
@@ -85,7 +85,7 @@ let chromaPixelBuffer = vImage.PixelBuffer(referencing: cvPixelBuffer,
                                            pixelFormat: vImage.Interleaved8x2.self)
 ```
 
-##### Adjust the contrast of the image
+### Adjust the contrast of the image
 
 The sample app provides a [`Slider`](../SwiftUI/slider.md) for changing the contrast of the final image. The following code example uses the tone-mapping technique that [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md) describes:
 
@@ -96,7 +96,7 @@ if contrast != 1 {
 }
 ```
 
-##### Convert the YpCbCr image to an ARGB image
+### Convert the YpCbCr image to an ARGB image
 
 The [`convert(lumaSource:chromaSource:conversionInfo:)`](./vimage/pixelbuffer/convert%28lumasource,chromasource,conversioninfo%29.md) converts the luminance and chrominance information in `lumaPixelBuffer` and `chromaPixelBuffer` to an ARGB image. This pixel buffer method calls the underlying vImage [`vImageConvert_420Yp8_CbCr8ToARGB8888(_:_:_:_:_:_:_:)`](./vimageconvert_420yp8_cbcr8toargb8888%28_,_,_,_,_,_,_%29.md) function.
 

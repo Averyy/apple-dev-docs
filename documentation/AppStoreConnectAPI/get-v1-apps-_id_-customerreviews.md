@@ -9,11 +9,11 @@ Get a list of customer reviews for a specific app.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
 The example below limits the number of reviews returned in the response.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

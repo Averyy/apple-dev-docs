@@ -22,7 +22,7 @@ Accesses a contiguous subrange of the collection’s elements.
 subscript(r: Range<String.UTF8View.Index>) -> String.UTF8View.SubSequence { get }
 ```
 
-#### Overview
+## Overview
 
 For example, using a `PartialRangeFrom` range expression with an array accesses the subrange from the start of the range expression until the end of the array.
 

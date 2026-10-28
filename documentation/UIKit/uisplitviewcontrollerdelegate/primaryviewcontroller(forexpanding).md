@@ -23,11 +23,11 @@ optional func primaryViewController(forExpanding splitViewController: UISplitVie
 - (UIViewController *) primaryViewControllerForExpandingSplitViewController:(UISplitViewController *) splitViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to use as the primary view controller, or `nil` to specify the current primary view controller.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

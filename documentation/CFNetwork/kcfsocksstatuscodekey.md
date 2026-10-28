@@ -22,7 +22,7 @@ let kCFSOCKSStatusCodeKey: CFString
 extern CFStringRef const kCFSOCKSStatusCodeKey;
 ```
 
-#### Discussion
+## Discussion
 
 When a SOCKS error occurs, querying this key returns the last status code sent by the SOCKS server in response to the previous operation.
 

@@ -15,7 +15,7 @@ In-kernel database for IOKit driver personalities.
 class IOCatalogue : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IOCatalogue is a database which contains all IOKit driver personalities. IOService uses this resource when matching devices to their associated drivers.
 

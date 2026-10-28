@@ -21,11 +21,11 @@ Validates decryption keys, collects archive attributes, and updates the context 
 func decryptAttributes() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success; otherwise, `false` if the credentials and archive prologue don’t match.
 
-#### Discussion
+## Discussion
 
 You must have created the current context from an encrypted stream.
 

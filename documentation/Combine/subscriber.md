@@ -28,7 +28,7 @@ protocol Subscriber<Input, Failure> : CustomCombineIdentifierConvertible
 - [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 A [`Subscriber`](./subscriber.md) instance receives a stream of elements from a [`Publisher`](./publisher.md), along with life cycle events describing changes to their relationship. A given subscriber’s [`Input`](./subscriber/input.md) and [`Failure`](./subscriber/failure.md) associated types must match the [`Output`](./publisher/output.md) and [`Failure`](./publisher/failure.md) of its corresponding publisher.
 

@@ -19,7 +19,7 @@ class func withID(_ newAttributeID: BluetoothSDPServiceAttributeID, attributeEle
 + (instancetype) withID:(BluetoothSDPServiceAttributeID) newAttributeID attributeElement:(IOBluetoothSDPDataElement *) attributeElement;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly allocated service attribute object. Returns nil if there was an error. The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.
 

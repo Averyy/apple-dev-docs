@@ -15,7 +15,7 @@ Edit the details or contents of a review submission.
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 - [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
-#### Overview
+## Overview
 
 > **Note**: You can optionally add the attribute platform when using [`Modify a Review Submission`](./patch-v1-reviewsubmissions-_id_.md).
 

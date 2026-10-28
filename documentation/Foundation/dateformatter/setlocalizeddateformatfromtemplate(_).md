@@ -25,7 +25,7 @@ func setLocalizedDateFormatFromTemplate(_ dateFormatTemplate: String)
 - (void) setLocalizedDateFormatFromTemplate:(NSString *) dateFormatTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 See [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i) for a list of the conversion specifiers permitted in date format strings.
 

@@ -24,7 +24,7 @@ var birthdayContactIdentifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * birthdayContactIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property only applies to events in the built-in Birthdays calendar. It specifies the contact identifier (for use with the Contacts framework) of the person for whom the system created this event. For any other type of event, this property returns `nil`.
 

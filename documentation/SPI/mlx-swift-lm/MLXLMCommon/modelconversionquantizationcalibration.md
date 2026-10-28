@@ -17,7 +17,7 @@ How the quantization grid is derived from the source weights.
 enum ModelConversionQuantizationCalibration
 ```
 
-#### Overview
+## Overview
 
 This selects a *derivation*, not a storage format: every calibration produces ordinary quantized layers that load and run without any decode-side support.
 

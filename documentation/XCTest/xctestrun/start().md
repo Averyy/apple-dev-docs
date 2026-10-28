@@ -16,7 +16,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 This method must not be called more than once.
 

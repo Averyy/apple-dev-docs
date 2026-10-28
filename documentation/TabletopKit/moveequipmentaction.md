@@ -15,7 +15,7 @@ An action that moves a piece of equipment on the table or changes the grouping.
 struct MoveEquipmentAction
 ```
 
-#### Overview
+## Overview
 
 To create a move equipment action, use the [`moveEquipment(_:childOf:order:pose:context:)`](./tabletopaction/moveequipment%28_,childof,order,pose,context%29.md) or the [`moveEquipment(matching:childOf:order:pose:context:)`](./tabletopaction/moveequipment%28matching,childof,order,pose,context%29.md) static method.
 

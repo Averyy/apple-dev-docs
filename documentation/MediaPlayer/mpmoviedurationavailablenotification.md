@@ -18,7 +18,7 @@ Posted when the duration of a movie has been determined. There is no `userInfo` 
 extern NSString * const MPMovieDurationAvailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the duration of a movie, access the movie player’s [`duration`](./mpmovieplayercontroller/duration.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

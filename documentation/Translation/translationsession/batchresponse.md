@@ -18,7 +18,7 @@ A type that provides asynchronous access to translation responses.
 struct BatchResponse
 ```
 
-#### Overview
+## Overview
 
 This type returns instances of [`TranslationSession.Response`](./response.md) asynchronously and throws an `Error` if something goes wrong.
 

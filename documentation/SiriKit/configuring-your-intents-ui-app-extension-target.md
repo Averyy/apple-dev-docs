@@ -5,11 +5,11 @@
 
 Configure your Xcode project to include an Intents UI app extension that you use to customize the Siri and Maps interfaces.
 
-#### Overview
+## Overview
 
 An app may have one or more Intents UI app extensions to manage the custom interfaces for its intents. Each extension has a single view controller class that provides the interface for the supported intents. To set up each Intents UI app extension, you must add a custom target to your Xcode project and configure its `Info.plist` file with the intents that it supports.
 
-##### Add an Intents UI App Extension to Your Xcode Project
+### Add an Intents UI App Extension to Your Xcode Project
 
 When creating your Intents app extension, you can ask Xcode to create an Intents UI extension at the same time. If you didn’t do that, you can add an Intents UI extension to your project later:
 
@@ -22,7 +22,7 @@ When creating your Intents app extension, you can ask Xcode to create an Intents
 
 The Xcode template includes a storyboard and a single view controller. Siri and Maps always load and display the initial view controller in your extension’s storyboard file, so configure that view controller with your content. You’re responsible for managing all interactions between the initial view controller and the rest of your content. Typically, you add custom views to the initial view controller scene, but you might also embed child view controllers so that you can display different content for each of your intents.
 
-##### Specify the Intents that Your Extension Supports
+### Specify the Intents that Your Extension Supports
 
 After adding your Intents UI app extension target to your project, configure the default `Info.plist` file provided by Xcode to specify which intents should use your custom interface. SiriKit uses the information in your extension’s `Info.plist` file to determine when to load your custom view controller.
 

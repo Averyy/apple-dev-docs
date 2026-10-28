@@ -25,7 +25,7 @@ let kSecValuePersistentRef: CFString
 extern CFStringRef const kSecValuePersistentRef;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md). The bytes in this object can be stored by the caller and used on a subsequent invocation of the application (or even a different application) to retrieve the item referenced by it.
 

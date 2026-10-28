@@ -22,7 +22,7 @@ TipKit namespace.
 enum Tips
 ```
 
-#### Overview
+## Overview
 
 A collection of objects for controlling the display of your tips.
 

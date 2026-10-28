@@ -27,7 +27,7 @@ func keyValueObservingExpectation(for objectToObserve: Any, keyPath: String, han
 - (XCTestExpectation *) keyValueObservingExpectationForObject:(id) objectToObserve keyPath:(NSString *) keyPath handler:(XCKeyValueObservingExpectationHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an [`XCTestExpectation`](../xctestexpectation.md) that uses Key Value Observing to observe changes on the value specified by `keyPath` on the provided object.
 

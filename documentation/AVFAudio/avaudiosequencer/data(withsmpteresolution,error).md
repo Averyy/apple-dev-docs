@@ -24,7 +24,7 @@ func data(withSMPTEResolution SMPTEResolution: Int, error outError: NSErrorPoint
 - (NSData *) dataWithSMPTEResolution:(NSInteger) SMPTEResolution error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The client controls the lifetime of the data value this method returns.
 

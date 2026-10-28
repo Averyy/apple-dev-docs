@@ -14,7 +14,7 @@
 kUnicodeTextRunMask = 1L << kUnicodeTextRunBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the text-run control flag which determines how the Unicode Converter converts Unicode text to a non-Unicode encoding when more than one possible destination encoding exists. 
 

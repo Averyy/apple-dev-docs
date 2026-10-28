@@ -16,11 +16,11 @@ A Boolean value that indicates whether the receiver supports requests from multi
 @property (readonly) BOOL multipleThreadsEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver supports requests from multiple threads.
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver supports requests from multiple threads, otherwise [`false`](../../Swift/false.md).
 

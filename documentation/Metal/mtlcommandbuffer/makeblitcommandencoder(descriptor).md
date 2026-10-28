@@ -25,7 +25,7 @@ func makeBlitCommandEncoder(descriptor blitPassDescriptor: MTLBlitPassDescriptor
 - (id<MTLBlitCommandEncoder>) blitCommandEncoderWithDescriptor:(MTLBlitPassDescriptor *) blitPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLBlitCommandEncoder`](../mtlblitcommandencoder.md) instance’s methods to create a block information transfer (blit) pass that quickly copies memory between a GPU device’s resources.
 

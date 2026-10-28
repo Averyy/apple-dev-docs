@@ -19,7 +19,7 @@ protocol OS_ar_polygon_points : NSObjectProtocol
 @protocol OS_ar_polygon_points <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Represents a collection of 2D points that define a polygon boundary. This type follows ARKit’s standard object lifecycle pattern with create/dispose.
 

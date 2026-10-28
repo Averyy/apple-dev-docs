@@ -21,7 +21,7 @@ var keyboardDisplayRequiresUserAction: Bool { get set }
 @property (nonatomic) BOOL keyboardDisplayRequiresUserAction;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the user must explicitly tap the elements in the web view to display the keyboard (or other relevant input view) for that element. When set to [`false`](../../Swift/false.md), a focus event on an element causes the input view to be displayed and associated with that element automatically.
 

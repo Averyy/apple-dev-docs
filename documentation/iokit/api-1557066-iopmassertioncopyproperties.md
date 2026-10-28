@@ -16,11 +16,11 @@ Copies details about an `IOPMAssertion`
 CFDictionaryRef IOPMAssertionCopyProperties(IOPMAssertionID theAssertion);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary describing the assertion with keys specified in See [IOPMAssertionDictionaryKeys](./iopmlib_h/iopmassertiondictionarykeys.md). It's the caller's responsibility to release this dictionary.
 
-#### Discussion
+## Discussion
 
 Returns a dictionary describing an IOPMAssertion's specifications and current state.
 

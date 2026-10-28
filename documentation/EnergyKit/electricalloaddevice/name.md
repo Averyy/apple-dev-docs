@@ -17,7 +17,7 @@ A human-readable name for the device.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 The framework displays this name in the Home app when you adopt the [`EnergyKit LoadEvents Entitlement`](../../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md).
 

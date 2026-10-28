@@ -21,7 +21,7 @@ Gets the number of buffers in the group associated with a given tag collection.
 extern CMItemCount CMTaggedBufferGroupGetNumberOfMatchesForTagCollection(CMTaggedBufferGroupRef group, CMTagCollectionRef tagCollection);
 ```
 
-#### Discussion
+## Discussion
 
 When this function returns a value other than `1`, avoid using the `tagCollection` to retrieve a buffer from this group. The results of retrieving a buffer with `tagCollection` is `NULL`, since either the group doesn’t contain those tags or the match is ambiguous.
 

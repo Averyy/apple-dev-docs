@@ -21,7 +21,7 @@ object Pass.Generic
 
 - [Creating a Poster Generic Pass](../creating-a-poster-generic-pass.md)
 
-#### Discussion
+## Discussion
 
 Use the generic pass type for passes that don’t fit into other pass categories, such as a club membership pass or a valet claim ticket.
 

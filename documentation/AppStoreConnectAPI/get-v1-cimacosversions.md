@@ -9,11 +9,11 @@ List all macOS versions available to Xcode Cloud workflows.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists macOS versions available to Xcode Cloud workflows. Use the information provided in the response to read additional data; for example, Xcode version information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

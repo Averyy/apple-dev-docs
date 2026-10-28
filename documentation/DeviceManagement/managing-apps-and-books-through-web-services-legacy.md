@@ -4,11 +4,11 @@
 
 Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
 
-#### Overview
+## Overview
 
 Volume Purchase Program (VPP) allows an organization to manage and assign apps to users. If a user no longer needs an app, you can reclaim the app license and assign it to a different user. VPP can also assign a license to a device’s serial number, so an Apple Account isn’t required to download the app.
 
-#### Authenticate with the web service
+## Authenticate with the web service
 
 All endpoints (except for [`Service Configuration`](./service-configuration.md)) require an `sToken` parameter to authenticate.
 
@@ -44,13 +44,13 @@ If the provided token is within the expiration warning period (currently 15 days
 
 If this field is present in the response, it should serve as a reminder that it’s time to get a new `sToken` to avoid any service disruption.
 
-#### Configure read-only access
+## Configure read-only access
 
 You can tailor different sets of privileges for individual content managers using Managed Apple Accounts. This allows a fine range of control over what these users can do. For example, a content manager who has only the Read Only privilege can use the [`Get a User`](./get-a-user.md), [`Get Users`](./get-users-5boi1.md), and [`Get Assets`](./get-assets-44p83.md) endpoints, but can’t use the [`Retire a User`](./retire-a-user.md) or [`Manage Licenses`](./manage-licenses.md) endpoints. You can also assign content managers the Can Purchase and Can Manage privileges, so that an individual content manager can manage licenses but not buy them.
 
 > **Note**:  Purchasing users and managing users automatically have read privileges.
 
-#### Handle responses
+## Handle responses
 
 As a convention, fields with null values aren’t included in responses. For example, the user object has an optional `email` field. The following example doesn’t have the `email` field in the user object, so the `email` field value is null.
 
@@ -83,7 +83,7 @@ As a convention, fields with null values aren’t included in responses. For exa
 
 If the user doesn’t have any licenses, the `licenses` field isn’t included in the response. The license object in this context is a subfield of the user object. To avoid a cyclic reference, the user object isn’t included in the license object. But if the license is the top object returned, it includes a user object with `userId` and `clientUserIdStr` fields and, if the user is already associated with an iTunes account, an `itsIdHash` field.
 
-#### Import assigned licenses
+## Import assigned licenses
 
 You don’t need to sync every license for a specific VPP account. You only need to track the asset counts and assignments. There’s also no need to record the Apple license IDs; in fact, this isn’t recommended because it creates an unnecessary dependence on an internal data model, which can change. The recommended procedure to import licenses is to import license counts and then import the current assignments for each asset. Accomplish this in the following way:
 
@@ -94,7 +94,7 @@ You don’t need to sync every license for a specific VPP account. You only need
 
 For more information about using the `batchToken` and `sinceModifiedToken`, see [Retrieving a large record set](./retrieving-a-large-record-set.md).
 
-#### Handle a retry-after header
+## Handle a retry-after header
 
 The VPP service may return a `503 Service Unavailable` status to clients with requests that result in an unusually high load on the VPP service, or when the VPP service is experiencing loads beyond its current request response capacity. A `Retry-After` header may be included in this response, indicating how long the client must wait before making additional requests. Clients who make requests before this time may be rejected for even longer periods of time, or (in extreme cases) may have their VPP account suspended.
 

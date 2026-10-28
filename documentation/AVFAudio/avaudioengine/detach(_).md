@@ -25,7 +25,7 @@ func detach(_ node: AVAudioNode)
 - (void) detachNode:(AVAudioNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, the audio engine safely disconnects the audio node before detaching it.
 

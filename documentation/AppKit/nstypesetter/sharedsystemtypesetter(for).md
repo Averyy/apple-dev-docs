@@ -19,11 +19,11 @@ class func sharedSystemTypesetter(for behavior: NSLayoutManager.TypesetterBehavi
 + (id) sharedSystemTypesetterForBehavior:(NSTypesetterBehavior) behavior;
 ```
 
-#### Return Value
+## Return Value
 
 A shared instance of a reentrant typesetter that implements typesetting with the specified behavior.
 
-#### Discussion
+## Discussion
 
 Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](../nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](../nslayoutmanager.md).
 

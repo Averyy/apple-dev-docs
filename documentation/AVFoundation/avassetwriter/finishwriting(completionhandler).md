@@ -28,7 +28,7 @@ func finishWriting() async
 - (void) finishWritingWithCompletionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure the asset writer finishes writing all samples, call this method only after all calls to [`append(_:)`](../avassetwriterinput/append%28_%29.md) or [`append(_:withPresentationTime:)`](../avassetwriterinputpixelbufferadaptor/append%28_,withpresentationtime%29.md) return.
 

@@ -31,7 +31,7 @@ var paymentMethods: [INPaymentMethod]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INPaymentMethod *> * paymentMethods;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to inform the user about the forms of payment that you accept. The default value of this property is `nil`, which results in no displayed payment method information.
 

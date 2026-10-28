@@ -4,7 +4,7 @@
 
 Contains several elements that are treated as a single element.
 
-#### Overview
+## Overview
 
 Here’s an example of a section that contains two `lockup` elements that represent movie posters.
 
@@ -21,7 +21,7 @@ Here’s an example of a section that contains two `lockup` elements that repres
 </section>
 ```
 
-##### Subelements of lockup
+### Subelements of lockup
 
 - [badge](./badge.md)
 - [description](./description.md)
@@ -30,7 +30,7 @@ Here’s an example of a section that contains two `lockup` elements that repres
 - [overlay](./overlay.md)
 - [title](./title.md)
 
-##### Elements that Use lockup
+### Elements that Use lockup
 
 - [relatedContent](./relatedcontent.md)
 - [section](./section.md)

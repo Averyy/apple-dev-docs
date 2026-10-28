@@ -21,7 +21,7 @@ let kQLPreviewPropertyPDFStyleKey: CFString!
 extern CFStringRef const kQLPreviewPropertyPDFStyleKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) provided by [`QLPreviewPDFStyle`](./qlpreviewpdfstyle.md).
 

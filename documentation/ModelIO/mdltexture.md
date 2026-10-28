@@ -24,7 +24,7 @@ class MDLTexture
 @interface MDLTexture : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use the [`MDLTexture`](./mdltexture.md) class or one of its subclasses to identify, load, or create texture data, and then associate textures with materials using the [`MDLTextureSampler`](./mdltexturesampler.md) and [`MDLMaterialProperty`](./mdlmaterialproperty.md) classes. When you load 3D objects from an asset file (in a format that supports texturing) with the [`MDLAsset`](./mdlasset.md) class, Model I/O automatically creates texture objects and material objects and associates them with the [`MDLSubmesh`](./mdlsubmesh.md) objects in the asset.
 

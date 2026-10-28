@@ -19,7 +19,7 @@ class VZDirectorySharingDevice
 @interface VZDirectorySharingDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZDirectorySharingDevice` directly; configure a directory sharing device first by using [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZDirectorySharingDeviceConfiguration`](./vzdirectorysharingdeviceconfiguration.md).
 

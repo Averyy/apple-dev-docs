@@ -25,7 +25,7 @@ var renderScale: CGFloat { get }
 @property (readonly) CGFloat renderScale;
 ```
 
-#### Discussion
+## Discussion
 
 Photos calls your [`frameProcessor`](../phlivephotoeditingcontext/frameprocessor.md) block repeatedly, both to process each frame of the Live Photo’s video content and to process the Live Photo’s still photo content. Video frames can be a different size than still photo content—use this value to scale any of your image processing parameters that depend on the image’s size.
 

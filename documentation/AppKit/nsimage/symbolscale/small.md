@@ -19,7 +19,7 @@ case small
 NSImageSymbolScaleSmall
 ```
 
-#### Discussion
+## Discussion
 
 This scale is approximately 20% smaller than the [`NSImage.SymbolScale.medium`](./medium.md) scale.
 

@@ -21,7 +21,7 @@ The explicit alignment of text within its container.
 enum TextAlignment
 ```
 
-#### Overview
+## Overview
 
 Alignment defines the horizontal position of each line within its container.
 

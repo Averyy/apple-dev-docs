@@ -21,7 +21,7 @@ The strategies for encoding nonconforming floating-point numbers, also known as 
 enum NonConformingFloatDecodingStrategy
 ```
 
-#### Overview
+## Overview
 
 The IEEE 754 floating-point specification defines exceptional values, which include [`infinity`](../../Swift/floatingpoint/infinity.md) and [`nan`](../../Swift/floatingpoint/nan.md).
 

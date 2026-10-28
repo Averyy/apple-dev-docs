@@ -20,7 +20,7 @@ A notification posted when the display mode has changed.
 static let PDFViewDisplayModeChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

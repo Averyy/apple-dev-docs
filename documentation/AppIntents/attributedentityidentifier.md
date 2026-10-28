@@ -21,7 +21,7 @@ A unique identifier for an app entity instance within an application.
 struct AttributedEntityIdentifier
 ```
 
-#### Overview
+## Overview
 
 `AttributedEntityIdentifier` combines type and instance information to create a complete identifier that can uniquely identify any app entity instance. This identifier consists of two parts:
 

@@ -19,7 +19,7 @@ optional func download(_ connection: NSURLDownload, canAuthenticateAgainstProtec
 - (BOOL) download:(NSURLDownload *) connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *) protectionSpace;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before [`download(_:didReceive:)`](./download%28_,didreceive%29-1pc0v.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](../../Swift/true.md), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`download(_:didReceive:)`](./download%28_,didreceive%29-1pc0v.md). Not implementing this method is the same as returning [`false`](../../Swift/false.md), in which case default authentication handling is used.
 

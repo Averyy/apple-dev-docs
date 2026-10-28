@@ -21,7 +21,7 @@ Secondary name bestowed upon an individual to differentiate them from others tha
 var middleName: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An example of a middle name would be Anne.
 

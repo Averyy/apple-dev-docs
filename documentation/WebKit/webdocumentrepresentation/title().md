@@ -20,7 +20,7 @@ func title() -> String!
 - (NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The title associated with the receiving document object.
 

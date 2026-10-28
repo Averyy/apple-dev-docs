@@ -20,7 +20,7 @@ Indicates whether the webpage allows media playback over AirPlay.
 var allowsAirPlayForMediaPlayback: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`.
 

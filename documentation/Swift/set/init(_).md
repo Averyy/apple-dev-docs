@@ -23,7 +23,7 @@ init<Source>(_ sequence: Source) where Element == Source.Element, Source : Seque
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new set from an existing sequence, for example, an array or a range.
 

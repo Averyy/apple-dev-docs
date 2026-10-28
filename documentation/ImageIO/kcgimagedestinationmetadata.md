@@ -25,7 +25,7 @@ let kCGImageDestinationMetadata: CFString
 extern CFStringRef const kCGImageDestinationMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CGImageMetadata`](./cgimagemetadata.md) type. When you specify this key, the image destination ovewrites all EXIF, IPTC, and XMP metadata. If you want to merge the new tags with the existing metadata, include the [`kCGImageDestinationMergeMetadata`](./kcgimagedestinationmergemetadata.md) key in addition to this key.
 

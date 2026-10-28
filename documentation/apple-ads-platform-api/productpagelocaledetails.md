@@ -15,13 +15,13 @@ Locale-specific metadata for an App Store product page.
 object ProductPageLocaleDetails
 ```
 
-#### Discussion
+## Discussion
 
 The `ProductPageLocaleDetails` object provides the locale-specific content for an App Store product page, including display text and creative assets organized by device type. Each record is tied to a specific `languageCode`, making it possible to retrieve the exact creative content users will see in a given locale.
 
 The `assetsByDevice` map is the primary structure for accessing locale media.
 
-##### Example
+### Example
 
 ```json
 {

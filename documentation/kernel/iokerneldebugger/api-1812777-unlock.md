@@ -12,7 +12,7 @@ static void unlock(
  IODebuggerLockState state );
 ```
 
-#### Overview
+## Overview
 
 This method releases the debugger lock if the kIODebuggerLockTaken flag is set in the argument.
 

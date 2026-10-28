@@ -25,7 +25,7 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 - (void) controller:(NSFetchedResultsController *) controller didChangeContentWithSnapshot:(NSDiffableDataSourceSnapshot<NSString *,NSManagedObjectID *> *) snapshot;
 ```
 
-#### Discussion
+## Discussion
 
 To apply the changes, call [`applySnapshot(_:animatingDifferences:)`](../../UIKit/uitableviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences%29.md) on the collection or table view’s data source.
 

@@ -19,7 +19,7 @@ A brief description of the error.
 var errorDescription: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This appears in the title of an alert.
 

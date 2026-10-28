@@ -16,11 +16,11 @@ Returns the index of the current group within the particle system.
 int group::groupIndexInSystem()
 ```
 
-#### Return Value
+## Return Value
 
 The zero-based index of this group in the system
 
-#### Discussion
+## Discussion
 
 Use this function to identify which group the current element belongs to, enabling group-specific behaviors and calculations across multiple groups.
 

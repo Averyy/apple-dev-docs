@@ -15,7 +15,7 @@ Frees memory allocated by `MPAllocateAligned`.
 void MPFree(LogicalAddress object);
 ```
 
-#### Discussion
+## Discussion
 
 Also see the function  [`MPAllocateAligned`](./api-1585774-mpallocatealigned.md). 
 

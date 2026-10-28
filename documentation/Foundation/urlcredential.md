@@ -29,7 +29,7 @@ class URLCredential
 
 - [Performing manual server trust authentication](./performing-manual-server-trust-authentication.md)
 
-#### Overview
+## Overview
 
 The URL Loading System supports password-based user credentials, certificate-based user credentials, and certificate-based server credentials.
 

@@ -17,7 +17,7 @@ A `LogitProcessor` is an optional visitor of `logits`.
 protocol LogitProcessor
 ```
 
-#### Overview
+## Overview
 
 The [`LogitProcessor`](./logitprocessor.md) is called with the input (prompt) before generating tokens:
 

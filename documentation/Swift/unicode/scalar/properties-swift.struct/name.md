@@ -21,7 +21,7 @@ The published name of the scalar.
 var name: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Some scalars, such as control characters, do not have a value for this property in the Unicode Character Database. For such scalars, this property is `nil`.
 

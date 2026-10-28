@@ -26,7 +26,7 @@ var autosaveEnabled: Bool { get set }
 
 - [Preserving your app’s model data across launches](../preserving-your-apps-model-data-across-launches.md)
 
-#### Discussion
+## Discussion
 
 When `true`, the context calls [`save()`](./save%28%29.md) after you make changes to any inserted or registered models. The context also calls `save()` at various times during the lifecycle of windows, scenes, views, and sheets.
 

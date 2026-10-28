@@ -18,17 +18,17 @@ Deletes the file, link, or directory (including, recursively, all subdirectories
 - (BOOL) removeFileAtPath:(NSString *) path handler:(id) handler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the removal operation is successful. If the operation is not successful, but the handler method [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) returns [`true`](../../Swift/true.md), also returns [`true`](../../Swift/true.md); otherwise returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This callback mechanism provided by `handler` is similar to delegation. `NSFileManager` sends [`fileManager(_:willProcessPath:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,willprocesspath%29.md) when it begins a copy, move, remove, or link operation. It sends [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) when it encounters any error in processing.
 
 Since the removal of directory contents is so thorough and final, be careful when using this method. If you specify “`.`” or “`..`” for `path` an `NSInvalidArgumentException` exception is raised. This method does not traverse symbolic links.
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`removeItem(at:)`](../filemanager/removeitem%28at%29.md) instead.
 

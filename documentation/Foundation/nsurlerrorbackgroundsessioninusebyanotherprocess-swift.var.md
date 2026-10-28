@@ -21,7 +21,7 @@ An app or app extension attempted to connect to a background session that is alr
 var NSURLErrorBackgroundSessionInUseByAnotherProcess: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when both an app and an app extension attempt to use a background session at the same time.
 

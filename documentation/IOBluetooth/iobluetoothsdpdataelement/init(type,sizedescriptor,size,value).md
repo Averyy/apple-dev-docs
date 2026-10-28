@@ -19,11 +19,11 @@ init!(type newType: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor newSiz
 - (instancetype) initWithType:(BluetoothSDPDataElementTypeDescriptor) newType sizeDescriptor:(BluetoothSDPDataElementSizeDescriptor) newSizeDescriptor size:(uint32_t) newSize value:(NSObject *) newValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns self if successful. Returns nil if an error is encountered (not likely due to the limited error checking currently done).
 
-#### Discussion
+## Discussion
 
 Warning - be careful using this method. There is next to no error checking done on the attributes. It is entirely possible to construct an invalid data element. It is recommended that +withElementValue: be used instead of this one.
 

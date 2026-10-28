@@ -5,11 +5,11 @@
 
 Identify memory-use inefficiencies by measuring and profiling your app.
 
-#### Overview
+## Overview
 
 Xcode and Instruments provide multiple tools for observing and exploring memory use in an app.
 
-##### Review the memory report
+### Review the memory report
 
 While your app is running in Xcode, the memory report available from Xcode’s Debug navigator shows the app’s current memory use, along with the highest value seen. The yellow region of the memory gauge indicates memory use high enough to trigger a warning. The app risks termination by iOS if its memory use enters the red region.
 
@@ -17,7 +17,7 @@ While your app is running in Xcode, the memory report available from Xcode’s D
 
 > 💡 **Tip**: If iOS repeatedly terminates your app because it’s using too much memory, you can investigate its behavior in the simulator, where it can continue to run. When you run your app in the simulator, the memory gauge always stays in the green (safe) region because macOS doesn’t issue memory warnings or out-of-memory terminations. This behavior has advantages in diagnosing problems associated with too much memory use. But keep in mind that memory use in the green region of the gauge in the simulator doesn’t necessarily mean that your app’s memory use is within safe limits.
 
-##### Inspect the debug memory graph
+### Inspect the debug memory graph
 
 You can generate a memory graph of the objects and allocations in your app by clicking the Debug Memory Graph button in Xcode’s debug area at the bottom of the workspace window.
 
@@ -33,7 +33,7 @@ To turn on allocation stack traces, check the Malloc Stack box in the Diagnostic
 
 To export memory graphs from Xcode, choose File > Export Memory Graph. You can share exported memory graphs with team members or explore using command-line tools, including `vmmap` and `leaks`. For more information about the command-line tools, see WWDC 2018 session 416, [iOS Memory Deep Dive](https://developer.apple.com/videos/play/wwdc2018/416/).
 
-##### Profile your app using the Allocations instrument
+### Profile your app using the Allocations instrument
 
 The Allocations instrument tracks the size and number of all heap and anonymous virtual memory (VM) allocations and organizes them by category. Use the Allocations instrument’s timeline to investigate how the total amount of memory that your app has allocated increases and decreases as you use the app’s interface. Use the statistics view to see what categories of allocations are being made, how many allocations have been made in each category, and the sizes of those allocations. Click the arrow next to a category name to see the individual allocations made in that category, along with the time at which the memory was allocated and the code responsible for the allocation.
 

@@ -21,7 +21,7 @@ The number of elements.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 To check whether a collection is empty, use its `isEmpty` property instead of comparing `count` to zero. Calculating `count` can be an O(*n*) operation.
 

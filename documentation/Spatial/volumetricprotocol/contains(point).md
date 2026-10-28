@@ -22,7 +22,7 @@ Returns a Boolean value that indicates whether this volume contains the specifie
 func contains(point: Self.Point) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A Boolean value that indicates whether the entity contains the point.
 

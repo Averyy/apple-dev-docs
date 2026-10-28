@@ -21,7 +21,7 @@ Returns a shading instance that fills with a monochrome color in the given color
 static func color(_ colorSpace: Color.RGBColorSpace = .sRGB, white: Double, opacity: Double = 1) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a color.
 

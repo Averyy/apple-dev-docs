@@ -28,11 +28,11 @@ optional func match(_ match: GKMatch, shouldReinviteDisconnectedPlayer player: G
 
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if GameKit should reinvite the player when they disconnect; [`false`](../../Swift/false.md) if GameKit should end the match when the player disconnects.
 
-#### Discussion
+## Discussion
 
 If the player successfully reconnects to the match, GameKit sends [`match(_:player:didChange:)`](./match%28_,player,didchange%29-8ohgr.md) to the match’s delegate.
 

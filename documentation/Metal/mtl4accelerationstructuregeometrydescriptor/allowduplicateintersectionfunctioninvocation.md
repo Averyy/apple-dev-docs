@@ -24,7 +24,7 @@ var allowDuplicateIntersectionFunctionInvocation: Bool { get set }
 @property (nonatomic) BOOL allowDuplicateIntersectionFunctionInvocation;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

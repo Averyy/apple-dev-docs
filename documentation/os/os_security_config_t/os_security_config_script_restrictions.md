@@ -19,7 +19,7 @@
 OS_SECURITY_CONFIG_SCRIPT_RESTRICTIONS
 ```
 
-#### Discussion
+## Discussion
 
 Supported security configurations that a process/task can have. This is a bitmask type, allowing multiple configurations to be active.
 

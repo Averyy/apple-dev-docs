@@ -24,7 +24,7 @@ var kernelSizes: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * kernelSizes;
 ```
 
-#### Discussion
+## Discussion
 
 Must be four numbers, one for each spatial dimension, fastest running index last.
 

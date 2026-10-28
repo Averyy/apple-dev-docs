@@ -15,11 +15,11 @@ Returns the type ID of the current method invocation.
 CFTypeID WSMethodInvocationGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID.
 
-#### Discussion
+## Discussion
 
 Returns the ID of the current method invocation. You should call this immediately after creating the invocation reference.
 

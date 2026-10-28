@@ -21,7 +21,7 @@ optional func tabBarControllerPreferredInterfaceOrientationForPresentation(_ tab
 - (UIInterfaceOrientation) tabBarControllerPreferredInterfaceOrientationForPresentation:(UITabBarController *) tabBarController;
 ```
 
-#### Return Value
+## Return Value
 
 The preferred orientation for presenting the tab bar controller.
 

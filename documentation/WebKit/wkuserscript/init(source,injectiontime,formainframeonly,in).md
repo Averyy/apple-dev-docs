@@ -23,7 +23,7 @@ init(source: String, injectionTime: WKUserScriptInjectionTime, forMainFrameOnly:
 - (instancetype) initWithSource:(NSString *) source injectionTime:(WKUserScriptInjectionTime) injectionTime forMainFrameOnly:(BOOL) forMainFrameOnly inContentWorld:(WKContentWorld *) contentWorld;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized user script, or `nil` if initialization failed.
 

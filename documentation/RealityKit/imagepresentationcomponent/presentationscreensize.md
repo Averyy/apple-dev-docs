@@ -15,7 +15,7 @@ The size of the screen presenting the image, with the format [width, height] in 
 var presentationScreenSize: SIMD2<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 For immersive viewing modes (`.spatialStereoImmersive` and `.spatial3DImmersive`), this property represents the screen size of the non-immersive version of that mode (`.spatialStereo` and `.spatial3D` respectively).
 

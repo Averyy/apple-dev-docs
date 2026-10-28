@@ -19,7 +19,7 @@ unowned(unsafe) var superview: NSView? { get }
 @property (unsafe_unretained, readonly, nullable) NSView * superview;
 ```
 
-#### Discussion
+## Discussion
 
 The superview is the immediate ancestor of the current view. The value of this property is `nil` when the view is not installed in a view hierarchy. To set the value of this property, use the [`addSubview(_:)`](./addsubview%28_%29.md) method to embed the current view inside another view.
 

@@ -19,11 +19,11 @@ var objectForWebScript: Any! { get }
 @property (nonatomic, strong, readonly) id objectForWebScript;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the plug-in’s scripting interface.
 
-#### Discussion
+## Discussion
 
 The methods of the object are exposed to the script environment. Messages sent to the returned object will be invoked in the scripting environment. See the WebScripting Protocol Reference informal protocol for more details.
 

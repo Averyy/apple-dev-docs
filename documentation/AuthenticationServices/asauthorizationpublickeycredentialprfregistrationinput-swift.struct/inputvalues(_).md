@@ -19,7 +19,7 @@ The inputs for the PRF extension to evaluate if the new passkey supports the ext
 static func inputValues(_ inputValues: ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput
 ```
 
-#### Return Value
+## Return Value
 
 A configured instance of `ASAuthorizationPublicKeyCredentialPRFRegistrationInput`.
 

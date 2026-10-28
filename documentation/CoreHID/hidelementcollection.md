@@ -15,7 +15,7 @@ A collection of items from a report descriptor for a HID device.
 struct HIDElementCollection
 ```
 
-#### Overview
+## Overview
 
 Collections are a defined part of the HID specification to specify how groupings of data relate to each other, and provide an overall structure for the organization of device functionality.
 

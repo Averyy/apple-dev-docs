@@ -20,7 +20,7 @@ optional func calendarView(_ calendarView: UICalendarView, didChangeVisibleDateC
 - (void) calendarView:(UICalendarView *) calendarView didChangeVisibleDateComponentsFrom:(NSDateComponents *) previousDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 Called when the visible date has changed from @c previousDateComponents from user interaction.
 

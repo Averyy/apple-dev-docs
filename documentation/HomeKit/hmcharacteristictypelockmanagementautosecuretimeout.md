@@ -24,7 +24,7 @@ let HMCharacteristicTypeLockManagementAutoSecureTimeout: String
 extern NSString * const HMCharacteristicTypeLockManagementAutoSecureTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is the number of seconds the accessory waits after entering the [`HMCharacteristicValueLockMechanismState.unsecured`](./hmcharacteristicvaluelockmechanismstate/unsecured.md) state until it attempts to enter the [`HMCharacteristicValueLockMechanismState.secured`](./hmcharacteristicvaluelockmechanismstate/secured.md) state. Write a value of `0` to disable this feature.
 

@@ -16,11 +16,11 @@ Closes the IOHIDManager.
 IOReturn IOHIDManagerClose(IOHIDManagerRef manager, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This will also close all devices that are currently enumerated.
 

@@ -21,7 +21,7 @@ struct CommandDelimiterKey
 typedef NSString * NSSpeechCommandDelimiterKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys in the [`commandDelimiter`](./commanddelimiter.md) dictionary.
 

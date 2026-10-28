@@ -9,7 +9,7 @@ Add media items to the user’s library or to a playlist.
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Discussion
+## Discussion
 
 Processing a request to add media items to the user’s library or to a playlist requires a few steps: resolving the intended media item, resolving the intended destination library or playlist, confirming the intent, and handling the intent.
 

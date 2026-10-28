@@ -19,7 +19,7 @@ func startChannelSoundingSession(_ configuration: CBChannelSoundingSessionConfig
 - (void) startChannelSoundingSession:(CBChannelSoundingSessionConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Initiate a channel sounding session.
 

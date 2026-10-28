@@ -23,7 +23,7 @@ func setVolumeThumbImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setVolumeThumbImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of slider and thumb images, see [Customizing the volume slider’s appearance](../mpvolumeview.md#Customizing-the-volume-sliders-appearance).
 

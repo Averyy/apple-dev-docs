@@ -19,7 +19,7 @@ var headerCell: NSTableHeaderCell { get set }
 @property (strong) NSTableHeaderCell * headerCell;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must not be `nil`. It’s recommended that the value of this property be an instance or subclass of [`NSTableHeaderCell`](../nstableheadercell.md).
 

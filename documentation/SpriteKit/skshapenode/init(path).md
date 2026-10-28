@@ -25,7 +25,7 @@ convenience init(path: CGPath)
 + (instancetype) shapeNodeWithPath:(CGPathRef) path;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

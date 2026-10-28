@@ -19,7 +19,7 @@ func setBackgroundColor(_ color: UIColor?)
 - (void) setBackgroundColor:(UIColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify both a background color and a full-color background image, only the image is displayed. If the image is a template image instead, the button tints the image using the background color.
 

@@ -23,7 +23,7 @@ nonisolated
 func path(in rect: CGRect) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A path that describes this shape.
 

@@ -24,7 +24,7 @@ func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) throw
 - (id<MTLTexture>) newTextureWithContentsOfURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 

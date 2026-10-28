@@ -15,7 +15,7 @@ Writes the Print panel’s printing attributes to the current print operation ob
 - (void) finalWritePrintInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly—it is invoked automatically when the Print panel is dismissed by the user clicking the OK button.
 

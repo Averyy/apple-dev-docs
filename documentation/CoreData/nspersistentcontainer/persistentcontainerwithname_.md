@@ -21,11 +21,11 @@ Initializes a new persistent container using the provided name for the container
 + (instancetype) persistentContainerWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized persistent container using the passed in name, or `nil` if the container could not be initialized.
 
-#### Discussion
+## Discussion
 
 This convenience method will invoke [`init(name:)`](./init%28name%29.md) and returns the initialized persistent container.
 

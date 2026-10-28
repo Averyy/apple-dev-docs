@@ -23,7 +23,7 @@ func enumerateLineFragments(forGlyphRange glyphRange: NSRange, using block: @esc
 - (void) enumerateLineFragmentsForGlyphRange:(NSRange) glyphRange usingBlock:(void (^)(CGRect rect, CGRect usedRect, NSTextContainer *textContainer, NSRange glyphRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation and layout for the line fragment containing the glyphs in the specified range, or if noncontiguous layout is not enabled, for all of the text up to and including that line fragment.
 

@@ -40,7 +40,7 @@ var point: NSPoint { get set }
 @property (nonatomic) NSPoint point;
 ```
 
-#### Discussion
+## Discussion
 
 Page space is a 72-dpi coordinate system with the origin at the lower-left corner of the current page.
 

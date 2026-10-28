@@ -27,7 +27,7 @@ protocol CLSDataStoreDelegate : NSObjectProtocol
 
 - [Building missing contexts](./building-missing-contexts.md)
 
-#### Overview
+## Overview
 
 When you request a context from the data store, for example using a call to the [`descendant(matchingIdentifierPath:completion:)`](./clscontext/descendant%28matchingidentifierpath,completion%29.md) method, the data store first tries to locate an existing context matching the search criterion (an identifier path in this case) in its database. Depending on certain conditions, the context might already exist in the database from the last time you requested it. If it does, the data store returns the stored context. But if it doesn’t exist, the data store asks its delegate to build a new context.
 

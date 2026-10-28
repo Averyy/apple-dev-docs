@@ -20,7 +20,7 @@ optional func popoverDidDetach(_ popover: NSPopover)
 - (void) popoverDidDetach:(NSPopover *) popover;
 ```
 
-#### Discussion
+## Discussion
 
 This method is not called when the popover’s detached window is returned by [`detachableWindow(for:)`](./detachablewindow%28for%29.md).
 

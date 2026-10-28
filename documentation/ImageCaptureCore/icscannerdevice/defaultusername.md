@@ -19,7 +19,7 @@ var defaultUsername: String { get set }
 @property (copy) NSString * defaultUsername;
 ```
 
-#### Discussion
+## Discussion
 
 If the scanner is protected, you can set this property to a specific username as a convenience, instead of prompting the user for a username. The value persists until reset to `nil`.
 

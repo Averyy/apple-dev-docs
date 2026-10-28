@@ -26,7 +26,7 @@ static func read<S, Annotation>(_ annotatedFiles: S) async throws -> [AnnotatedF
 static func read<S>(_ files: S) async throws -> [VideoReader.AsyncFrames] where S : Sequence, S.Element == URL
 ```
 
-#### Return Value
+## Return Value
 
 An array of annotated async sequences.
 

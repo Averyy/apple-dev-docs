@@ -21,11 +21,11 @@ Publishes the values of two key paths as a tuple.
 func map<T0, T1>(_ keyPath0: KeyPath<Self.Output, T0>, _ keyPath1: KeyPath<Self.Output, T1>) -> Publishers.MapKeyPath2<Self, T0, T1>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the values of two key paths as a tuple.
 
-#### Discussion
+## Discussion
 
 In the following example, the [`map(_:_:)`](./map%28_,_%29.md) operator uses the Swift key path syntax to access the `die1` and `die2` members of the `DiceRoll` structure published by the [`Just`](../just.md) publisher.
 

@@ -25,7 +25,7 @@ var observedBitrateStandardDeviation: Double { get }
 @property (nonatomic, readonly) double observedBitrateStandardDeviation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

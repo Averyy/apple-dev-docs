@@ -23,11 +23,11 @@ optional func textView(_ textView: UITextView, editMenuForTextIn range: NSRange,
 - (UIMenu *) textView:(UITextView *) textView editMenuForTextInRange:(NSRange) range suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a menu describing the desired menu hierarchy. Return `nil` to present the default system menu.
 
-#### Discussion
+## Discussion
 
 The following example returns a menu that includes an “Add Bookmark” action and also a “Highlight” action, but only if the selected text range is greater than zero.
 

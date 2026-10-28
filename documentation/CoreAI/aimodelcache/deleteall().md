@@ -23,7 +23,7 @@ final func deleteAll() throws
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 Use this method to reclaim storage when the app no longer needs any of its specialized models, or to reset the cache during testing.
 

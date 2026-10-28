@@ -25,7 +25,7 @@ func NSCompareHashTables(_ table1: NSHashTable<AnyObject>, _ table2: NSHashTable
 extern BOOL NSCompareHashTables(NSHashTable *table1, NSHashTable *table2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two hash tables are equal—that is, if each element of `table1` is in `table2` and the two tables are the same size, otherwise [`false`](../Swift/false.md).
 

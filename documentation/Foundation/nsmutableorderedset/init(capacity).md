@@ -25,11 +25,11 @@ init(capacity numItems: Int)
 - (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized mutable ordered set with initial capacity to hold `numItems` members.
 
-#### Discussion
+## Discussion
 
 Mutable ordered sets allocate additional memory as needed, so `numItems` simply establishes the set’s initial capacity.
 

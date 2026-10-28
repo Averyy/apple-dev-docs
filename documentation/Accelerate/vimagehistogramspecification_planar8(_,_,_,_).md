@@ -25,11 +25,11 @@ func vImageHistogramSpecification_Planar8(_ src: UnsafePointer<vImage_Buffer>, _
 vImage_Error vImageHistogramSpecification_Planar8(const vImage_Buffer *src, const vImage_Buffer *dest, const vImagePixelCount *desired_histogram, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Use this function to apply a histogram — that you’ve generated using [`vImageHistogramCalculation_Planar8(_:_:_:)`](./vimagehistogramcalculation_planar8%28_,_,_%29.md) — to another image.
 

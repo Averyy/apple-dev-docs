@@ -19,7 +19,7 @@ func setEnabled(_ enabled: Bool)
 - (void) setEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The `enabled` value determines whether the text field responds to user interaction. For enabled text fields, tapping the text field starts the text entry process. On watchOS, the system displays the text input controller. On nearby iOS devices associated with the same iCloud account, the system displays the Apple Remote Keyboard. A disabled text field does not respond to taps.
 

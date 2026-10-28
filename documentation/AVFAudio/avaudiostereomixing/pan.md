@@ -26,7 +26,7 @@ var pan: Float { get set }
 @property (nonatomic) float pan;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, and the range of valid values is `-1.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) class implements this property.
 

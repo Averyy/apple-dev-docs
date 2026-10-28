@@ -21,7 +21,7 @@ A promotional offer for an auto-renewable subscription.
 static let promotional: Product.SubscriptionOffer.OfferType
 ```
 
-#### Discussion
+## Discussion
 
 For more information about promotional offers, see [Set up promotional offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
 

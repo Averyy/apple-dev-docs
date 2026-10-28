@@ -16,7 +16,7 @@ Creates a tip view with an optional arrow.
 @preconcurrency convenience init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in })
 ```
 
-#### Discussion
+## Discussion
 
 Use a `TipNSView` when you want to indicate the UI element to which the tip applies, but do not want to directly anchor the tip view to that element.
 

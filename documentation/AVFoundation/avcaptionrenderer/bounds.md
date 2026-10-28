@@ -22,7 +22,7 @@ var bounds: CGRect { get set }
 @property (nonatomic) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property value before drawing. The renderer uses the value in each call to [`render(in:for:)`](./render%28in,for%29.md), until you change it to a new value.
 

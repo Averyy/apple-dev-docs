@@ -16,7 +16,7 @@ Changes the endian format of an unsigned 16-bit integer.
 #define Endian16_Swap(value)
 ```
 
-#### Return Value
+## Return Value
 
 The unsigned 16-bitinteger result.
 

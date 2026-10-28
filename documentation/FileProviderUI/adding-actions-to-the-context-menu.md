@@ -5,13 +5,13 @@
 
 Present custom actions from your File Provider extension in the system’s file browser.
 
-#### Overview
+## Overview
 
 In your File Provider UI extension’s `Info.plist` file, you can define custom actions that appear in the context menu when the user long-presses an item while browsing your file provider’s content. When the user selects the action, the system presents a custom user interface element from your File Provider UI extension.
 
 In macOS 11 and later, you can define custom actions directly in the File Provider extension. The system also adds these actions to the context menu; however, when the user selects them, your extension performs the action without presenting any additional UI elements. For more information, see [`NSFileProviderCustomAction`](../FileProvider/nsfileprovidercustomaction.md).
 
-##### Add Actions to the Context Menu
+### Add Actions to the Context Menu
 
 Add an `NSExtensionFileProviderActions` key to the `NSExtension` dictionary in your `Info.plist` file, as shown in the example below.
 
@@ -44,7 +44,7 @@ The following sequence of events occurs when the user selects one of your action
 3. The system presents your view controller to the user.
 4. After the user has finished performing the action, you call the provided [`FPUIActionExtensionContext`](./fpuiactionextensioncontext.md) object’s [`cancelRequest(withError:)`](./fpuiactionextensioncontext/cancelrequest%28witherror%29.md) or [`completeRequest()`](./fpuiactionextensioncontext/completerequest%28%29.md) method to complete the action.
 
-##### Use Predicates to Enable and Disable Actions
+### Use Predicates to Enable and Disable Actions
 
 Use the `NSExtensionFileProviderActionActivationRule` key to enable or disable actions based on the selected file provider item. Set the key’s value to a predicate format string that the system uses to create an [`NSPredicate`](../Foundation/nspredicate.md) object. The system calls the predicate’s [`evaluate(with:)`](../Foundation/nspredicate/evaluate%28with%29.md) method, passing in the selected item, a dictionary with a single `fileproviderItems` key. The value is an array of [`NSFileProviderItem`](../FileProvider/nsfileprovideritem-swift.typealias.md) objects representing the selected items.
 

@@ -24,11 +24,11 @@ class func fetchKeyAssets(in assetCollection: PHAssetCollection, options: PHFetc
 + (PHFetchResult<PHAsset *> *) fetchKeyAssetsInAssetCollection:(PHAssetCollection *) assetCollection options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAsset`](../phasset.md) objects, or an empty fetch result or `nil` if no objects match the request.
 
-#### Discussion
+## Discussion
 
 Most asset collections contain a *key asset*, which the Photos app displays as a proxy for the collection. Different types of asset collections have different ways of specifying one or more key assets. For example, in the Camera Roll collection, the most recently captured photo or video is the key asset.
 

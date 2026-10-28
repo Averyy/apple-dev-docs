@@ -19,7 +19,7 @@ var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * deviceDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the device properties. See `NSGraphics.h` for possible keys. The only key guaranteed to exist is `NSDeviceIsPrinter`.
 

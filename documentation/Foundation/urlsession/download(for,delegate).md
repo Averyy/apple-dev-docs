@@ -21,7 +21,7 @@ Retrieves the contents of a URL based on the specified URL request and delivers 
 func download(for request: URLRequest, delegate: (any URLSessionTaskDelegate)? = nil) async throws -> (URL, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronously-delivered tuple that contains the location of the downloaded file as a URL, and a [`URLResponse`](../urlresponse.md).
 

@@ -17,7 +17,7 @@ Extract and process a sequence of video frames according to video processing con
 static func asProcessedSequence(_ video: UserInput.Video, processing: UserInput.VideoProcessing = .init(), targetFPS: ((CMTime) -> Double)? = nil, maxFrames: Int = Int.max, frameProcessing: (VideoFrame) throws -> VideoFrame = { $0 }) async throws -> ProcessedFrames
 ```
 
-#### Return Value
+## Return Value
 
 `ProcessedFrames` containing extracted MLXArray frames, timestamps, and total duration.
 

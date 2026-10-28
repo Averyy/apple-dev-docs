@@ -20,7 +20,7 @@ static var isEligible: Bool { get async throws }
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 Always check the value of this property before calling [`startSession()`](./startsession%28%29.md) to dynamically determine if the current device and user configuration can use the Secure Element credential service.
 

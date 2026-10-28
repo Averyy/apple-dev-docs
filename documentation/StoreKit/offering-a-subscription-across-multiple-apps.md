@@ -5,13 +5,13 @@
 
 Support a single auto-renewable subscription across multiple apps.
 
-#### Overview
+## Overview
 
 You can offer customers auto-renewable subscription services that are accessible through multiple apps across one or more operating systems.
 
 To offer this functionality, your server must grant access to the subscription content across all apps, despite the user having purchased the subscription within a specific app. You can use a unified account management database along with server-side receipt validation to validate a user’s purchase and handle in-app transactions. By entitling subscription access from your server, you can provide users the ability to access your subscription across multiple apps.
 
-##### Create the Subscription for Each App
+### Create the Subscription for Each App
 
 To get started, use App Store Connect to create a separate and equivalent [auto-renewable subscription](https://help.apple.com/app-store-connect/#/dev06f89ce98) for each app that offers the multi-app subscription so that users can subscribe from any app. For design guidance, see [Human Interface Guidelines > Apple In-App Purchase](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/).
 
@@ -21,13 +21,13 @@ The following image illustrates the steps for implementing a multi-app subscript
 
 ![A diagram of a subscription shared across multiple apps showing the flow of implementation between apps, developer account database, and the App Store.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3174488@2x.png)
 
-##### Authenticate the User
+### Authenticate the User
 
 When providing auto-renewable subscription access across multiple apps, you must authenticate the user in a way that correlates across apps. Authenticating users using a login allows you to determine if the user has access to the content. To provide a consistent user experience, ensure that the login process is similar across your apps.
 
 To provide an easy and secure login, take advantage of [Sign in with Apple](https://developer.apple.com/sign-in-with-apple/). Sign in with Apple allows you to identify a user across your apps, while maintaining user privacy and protecting your app against fraud. You can store and retrieve user account data across your apps and the user’s devices, and use that data to unlock access appropriately.
 
-##### Check Billing Status
+### Check Billing Status
 
 After authenticating the user, determine whether to grant access to the content based on their transaction history in the receipt.
 
@@ -37,13 +37,13 @@ Present users who don’t have an active subscription with the subscription for 
 
 > ❗ **Important**:  If the user has purchased the subscription from an app, you must propagate the purchase across all the apps that provide the subscription service. Failing to persist the purchase to the other apps opens the possibility of a user paying multiple times for the same service.
 
-##### Validate Subscription Status
+### Validate Subscription Status
 
 A user’s subscription status can change any time. Validate the receipt and check the latest [subscription expiration date](https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW28) to maintain the billing status for each user and reflect any changes.
 
 [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md) keeps your server aware of changes made to a customer’s subscription status. Update your records to keep users’ subscription status and content current. The billing status must be accurate in your account database to provide the expected user experience across all apps.
 
-##### Enable Access to Purchased Content
+### Enable Access to Purchased Content
 
 After determining that the user should have access, you can enable access in each app based on the [subscription expiration date](https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW28). The user can access the subscription within any app that offers the same service. Repeat the previous steps as necessary across each app or user’s session to unlock the subscription.
 

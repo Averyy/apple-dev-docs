@@ -23,7 +23,7 @@ optional func hostViewControllerWillDeactivate(_ viewController: EXHostViewContr
 
 - [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
-#### Discussion
+## Discussion
 
 The host view controller calls this method when the app extension exits or when you change the view controller’s [`configuration`](../exhostviewcontroller/configuration-swift.property.md) property. Use this method to close out the previous connection to the app extension.
 

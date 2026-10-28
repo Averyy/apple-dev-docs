@@ -25,7 +25,7 @@ func applyingTransform(_ transform: StringTransform, reverse: Bool) -> String?
 - (NSString *) stringByApplyingTransform:(NSStringTransform) transform reverse:(BOOL) reverse;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to, for example, transliterate text from one script to another, strip diacritics or combining marks, and get the unicode names of characters.
 

@@ -25,7 +25,7 @@ func set(_ credential: URLCredential, for space: URLProtectionSpace)
 - (void) setCredential:(NSURLCredential *) credential forProtectionSpace:(NSURLProtectionSpace *) space;
 ```
 
-#### Discussion
+## Discussion
 
 If the credential is not yet in the set for the protection space, it will be added to it.
 

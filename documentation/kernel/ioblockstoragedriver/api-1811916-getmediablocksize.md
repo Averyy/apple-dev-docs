@@ -9,11 +9,11 @@
 virtual UInt64 getMediaBlockSize() const;
 ```
 
-#### Return Value
+## Return Value
 
 Natural block size, in bytes.
 
-#### Overview
+## Overview
 
 Ask the driver about the media's natural block size.
 

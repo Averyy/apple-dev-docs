@@ -24,7 +24,7 @@ case unspecialized
 MTL4BlendStateUnspecialized
 ```
 
-#### Discussion
+## Discussion
 
 Behaves as [`MTL4BlendState.disabled`](./disabled.md) until you specialize this pipeline value.
 

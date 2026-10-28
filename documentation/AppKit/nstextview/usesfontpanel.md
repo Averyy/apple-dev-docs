@@ -19,7 +19,7 @@ var usesFontPanel: Bool { get set }
 @property BOOL usesFontPanel;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to make the text views sharing the receiver’s layout manager respond to messages from the Font panel and from the Font menu, and update the Font panel with the selection font whenever it changes, [`false`](../../Swift/false.md) to disallow character attribute changes.
 

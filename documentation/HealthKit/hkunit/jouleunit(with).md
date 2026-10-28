@@ -24,11 +24,11 @@ class func jouleUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) jouleUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring energy based on joules and the provided prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of joules. HealthKit commonly uses kilojoules to measure food energy in many regions. Kilojoules can be created as shown below.
 

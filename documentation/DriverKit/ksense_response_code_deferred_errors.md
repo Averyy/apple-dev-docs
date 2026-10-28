@@ -16,7 +16,7 @@
 kSENSE_RESPONSE_CODE_Deferred_Errors
 ```
 
-#### Discussion
+## Discussion
 
 Response code indicating deferred errors are reported.
 

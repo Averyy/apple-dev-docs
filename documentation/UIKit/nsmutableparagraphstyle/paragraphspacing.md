@@ -24,7 +24,7 @@ var paragraphSpacing: CGFloat { get set }
 @property (nonatomic) CGFloat paragraphSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the space (measured in points) added at the end of the paragraph to separate it from the following paragraph. This value must be nonnegative. The space between paragraphs is determined by adding the previous paragraph’s `paragraphSpacing` and the current paragraph’s [`paragraphSpacingBefore`](./paragraphspacingbefore.md).
 

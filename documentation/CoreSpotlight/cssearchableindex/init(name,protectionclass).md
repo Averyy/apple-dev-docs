@@ -27,11 +27,11 @@ init(name: String, protectionClass: FileProtectionType?)
 
 - [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
-#### Return Value
+## Return Value
 
 An index that can handle items within the specified protection class.
 
-#### Discussion
+## Discussion
 
 Use this method to specify a protection class for an index. You can specify a default protection class for index items in the entitlements for your app.
 

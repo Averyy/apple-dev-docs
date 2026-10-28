@@ -25,7 +25,7 @@ class XPCListener
 
 - [Creating XPC services](./creating-xpc-services.md)
 
-#### Overview
+## Overview
 
 To implement an XPC service, create a listener and respond to incoming session requests.
 

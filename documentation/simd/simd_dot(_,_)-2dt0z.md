@@ -14,7 +14,7 @@ func simd_dot(_ p: simd_quath, _ q: simd_quath) -> Float16
 static _Float16 simd_dot(simd_quath p, simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The dot product of the quaternions `p` and `q` interpreted as four-dimensional vectors.
 

@@ -22,7 +22,7 @@ var destinationURL: URL { get }
 @property (nonatomic, copy, readonly) NSURL * destinationURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the URL associated with the event; for example, the `destinationURL` for an advertisement contains the external link opened when the user taps the ad.
 

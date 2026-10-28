@@ -19,11 +19,11 @@ func shouldBreakLine(byWordBeforeCharacterAt charIndex: Int) -> Bool
 - (BOOL) shouldBreakLineByWordBeforeCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the line should be broken by a word break, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The typesetter calls this method, if implemented by a subclass, before breaking a line by word wrapping before the character at `charIndex`, enabling the subclass to control line breaking.
 

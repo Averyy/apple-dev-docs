@@ -15,7 +15,7 @@ The latitude, in degrees.
 latitude: number;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate latitudes north of the equator. Negative values indicate latitudes south of the equator.
 

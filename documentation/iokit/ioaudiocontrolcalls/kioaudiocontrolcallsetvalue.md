@@ -14,7 +14,7 @@
 kIOAudioControlCallSetValue = 0
 ```
 
-#### Discussion
+## Discussion
 
 Used to set the value of an IOAudioControl.
 

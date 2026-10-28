@@ -15,7 +15,7 @@ Anchor to the front of the user’s space.
 case front
 ```
 
-#### Discussion
+## Discussion
 
 If no applications are presenting an immersive space, this is the direction of the last recenter.
 

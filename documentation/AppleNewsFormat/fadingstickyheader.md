@@ -19,13 +19,13 @@ object FadingStickyHeader
 
 - [Adding a Scene to a Chapter or a Section Header](../AppleNews/adding-a-scene-to-a-chapter-or-a-section-header.md)
 
-#### Discussion
+## Discussion
 
 In the `FadingStickyHeader` scene, the header briefly “sticks” to the top of the screen as the person scrolls down through the article (away from the header) as shown in [this video](https://developer.apple.com/apple-news/videos/fading-sticky-header.mp4).
 
 You can use a `fading_sticky_header` with a [`Section`](./section.md) or [`Chapter`](./chapter.md) component that has a child `header` component. (The `section` or `chapter` component must contain a component with a `role` of `header`.) The header fades to the color you define in the `fadeColor` property of the `fading_sticky_header` scene.
 
-##### Example
+### Example
 
 ```json
 {

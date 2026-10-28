@@ -36,7 +36,7 @@ nonisolated init(_ titleKey: LocalizedStringKey, image: ImageResource, role: But
 nonisolated init<S>(_ title: S, image: ImageResource, role: ButtonRole?, action: @escaping @MainActor () -> Void) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Label`](../label.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 

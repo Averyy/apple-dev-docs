@@ -25,7 +25,7 @@ func nw_quic_get_stream_usable_datagram_frame_size(_ metadata: nw_protocol_metad
 uint16_t nw_quic_get_stream_usable_datagram_frame_size(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum usable size of a datagram frame, in bytes.
 

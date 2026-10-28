@@ -19,11 +19,11 @@ init(contentTimeForTransition: CMTime, title: String, previewImage: UIImage?)
 - (instancetype) initWithContentTimeForTransition:(CMTime) contentTimeForTransition title:(NSString *) title previewImage:(UIImage *) previewImage;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of [`AVContentProposal`](../avcontentproposal.md).
 
-#### Discussion
+## Discussion
 
 You specify the content proposal’s presentation time within the asset’s timeline. For instance, if you wanted to present the next content proposal 15 seconds before the end of the currently playing asset, you could create the next content proposal as follows:
 

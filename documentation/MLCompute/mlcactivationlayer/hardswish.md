@@ -23,7 +23,7 @@ class var hardSwish: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * hardSwishLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:)`](../mlcactivationdescriptor/init%28type%29.md), where `type =` [`MLCActivationType.hardSwish`](../mlcactivationtype/hardswish.md), and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

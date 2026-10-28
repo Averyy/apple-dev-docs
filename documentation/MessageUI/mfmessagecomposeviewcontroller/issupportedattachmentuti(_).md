@@ -22,7 +22,7 @@ class func isSupportedAttachmentUTI(_ uti: String) -> Bool
 + (BOOL) isSupportedAttachmentUTI:(NSString *) uti;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a file with the specified UTI can be attached to the message, or [`false`](../../Swift/false.md) otherwise.
 

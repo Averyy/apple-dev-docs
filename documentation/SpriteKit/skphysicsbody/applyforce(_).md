@@ -25,7 +25,7 @@ func applyForce(_ force: CGVector)
 - (void) applyForce:(CGVector) force;
 ```
 
-#### Discussion
+## Discussion
 
 This method accelerates the body without imparting any angular acceleration to it. The acceleration is applied for a single simulation step (one frame).
 

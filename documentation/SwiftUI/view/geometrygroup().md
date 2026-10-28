@@ -22,7 +22,7 @@ Isolates the geometry (e.g. position and size) of the view from its parent view.
 nonisolated func geometryGroup() -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default SwiftUI views push position and size changes down through the view hierarchy, so that only views that draw something (known as leaf views) apply the current animation to their frame rectangle. However in some cases this coalescing behavior can give undesirable results; inserting a geometry group can correct that. A group acts as a barrier between the parent view and its subviews, forcing the position and size values to be resolved and animated by the parent, before being passed down to each subview.
 

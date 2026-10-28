@@ -24,7 +24,7 @@ var clearcoatGloss: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * clearcoatGloss;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero—secondary specular highlights appear blurry.
 

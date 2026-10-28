@@ -19,7 +19,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 - (void) playerViewController:(AVPlayerViewController *) playerViewController willResumePlaybackAfterUserNavigatedFromTime:(CMTime) oldTime toTime:(CMTime) targetTime;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the [`timeJumpedNotification`](../../AVFoundation/avplayeritem/timejumpednotification.md) notification, this method fires only for complete, user-initiated navigation events. For example, if the user begins scrubbing through the media timeline and pauses several times before resuming playback, the player view controller calls this method only once.
 

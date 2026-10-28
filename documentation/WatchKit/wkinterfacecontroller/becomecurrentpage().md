@@ -23,7 +23,7 @@ func becomeCurrentPage()
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use this method to make the current interface controller become the current page of a page-based interface. The current interface controller must be installed in the page-based interface. After calling this method, WatchKit animates the interface controller into view.
 

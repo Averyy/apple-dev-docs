@@ -25,7 +25,7 @@ func CFRunLoopObserverGetActivities(_ observer: CFRunLoopObserver!) -> CFOptionF
 extern CFOptionFlags CFRunLoopObserverGetActivities(CFRunLoopObserverRef observer);
 ```
 
-#### Return Value
+## Return Value
 
 A bitwise-OR combination of all the run loop stages in which `observer` is called. See [`CFRunLoopActivity`](./cfrunloopactivity.md) for the list of stages.
 

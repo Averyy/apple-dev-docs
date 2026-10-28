@@ -22,7 +22,7 @@ The plan that describes the evolution of your app’s schema and how to migrate 
 final let migrationPlan: (any SchemaMigrationPlan.Type)?
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a reference to the migration plan you specified when calling one the container’s initializers. If you didn’t specify one, the property’s value is `nil`.
 

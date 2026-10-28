@@ -23,7 +23,7 @@ var isFocusRectOfInterestSupported: Bool { get }
 @property (nonatomic, readonly, getter=isFocusRectOfInterestSupported) BOOL focusRectOfInterestSupported;
 ```
 
-#### Discussion
+## Discussion
 
 You may only set the device’s [`focusRectOfInterest`](./focusrectofinterest.md) property if this property returns `true`.
 

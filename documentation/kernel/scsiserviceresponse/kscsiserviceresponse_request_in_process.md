@@ -13,7 +13,7 @@
 kSCSIServiceResponse_Request_In_Process = 0
 ```
 
-#### Discussion
+## Discussion
 
 Not defined in SAM specification, but is a service response used for asynchronous commands that are not yet completed.
 

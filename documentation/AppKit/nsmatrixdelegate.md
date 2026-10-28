@@ -19,7 +19,7 @@ protocol NSMatrixDelegate : NSControlTextEditingDelegate
 @protocol NSMatrixDelegate <NSControlTextEditingDelegate>
 ```
 
-#### Overview
+## Overview
 
 This protocol simply adopts the `NSControlTextEditingDelegate` protocol, adding no additional methods. See [`NSControlTextEditingDelegate`](./nscontroltexteditingdelegate.md) for more information.
 

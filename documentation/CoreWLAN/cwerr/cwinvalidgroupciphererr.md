@@ -17,7 +17,7 @@ case cwInvalidGroupCipherErr
 kCWInvalidGroupCipherErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid group cipher requested.
 

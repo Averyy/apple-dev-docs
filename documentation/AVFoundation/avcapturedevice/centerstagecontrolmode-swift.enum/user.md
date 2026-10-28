@@ -23,7 +23,7 @@ case user
 AVCaptureCenterStageControlModeUser
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the user has exclusive control of Center Stage through Control Center. The system throws an exception in this mode if an app attempts to programmatically change the enabled state of Center Stage.
 

@@ -19,7 +19,7 @@ func setClippingResistancePriority(_ clippingResistancePriority: NSLayoutConstra
 - (void) setClippingResistancePriority:(NSLayoutPriority) clippingResistancePriority forOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
-#### Discussion
+## Discussion
 
 A clipped view is one that is partially hidden beyond the border of its enclosing stack view. When Auto Layout attempts to reduce the stack view’s size (such as when a user attempts to reduce the size of the enclosing window), causing a view to no longer fit, the stack view clips or detaches the view, or else prevents further reduction of the stack view’s size.
 

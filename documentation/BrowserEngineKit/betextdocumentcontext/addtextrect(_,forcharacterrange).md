@@ -22,7 +22,7 @@ func addTextRect(_ rect: CGRect, forCharacterRange range: NSRange)
 - (void) addTextRect:(CGRect) rect forCharacterRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the rectangle in the view coordinates of [`textInputView`](../betextinput/textinputview.md).
 

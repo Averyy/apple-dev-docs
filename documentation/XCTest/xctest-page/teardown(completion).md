@@ -20,7 +20,7 @@ func tearDown() async throws
 - (void) tearDownWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, override `tearDown() async throws` for asynchronous state cleanup with error handling after each test. Do not override `tearDown(completion:)` for synchronous state cleanup.
 

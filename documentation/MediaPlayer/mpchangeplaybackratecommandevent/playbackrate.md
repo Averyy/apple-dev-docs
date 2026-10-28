@@ -25,7 +25,7 @@ var playbackRate: Float { get }
 @property (nonatomic, readonly) float playbackRate;
 ```
 
-#### Discussion
+## Discussion
 
 The `playbackRate` property is equal to a value stored in the [`supportedPlaybackRates`](../mpchangeplaybackratecommand/supportedplaybackrates.md) array.
 

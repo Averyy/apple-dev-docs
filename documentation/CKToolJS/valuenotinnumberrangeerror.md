@@ -15,7 +15,7 @@ An error a validator emits when a value can’t be represented by a JavaScript n
 interface ValueNotInNumberRangeError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueRangeError`.
 

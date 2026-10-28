@@ -22,7 +22,7 @@ var x: Float
 float x;
 ```
 
-#### Discussion
+## Discussion
 
 Values span the range between `0` and `0.8`.
 

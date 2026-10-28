@@ -23,7 +23,7 @@ optional func textViewDidEndEditing(_ textView: UITextView)
 - (void) textViewDidEndEditing:(UITextView *) textView;
 ```
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. A text view sends this message to its delegate after it closes out any pending edits and resigns its first responder status. You can use this method to tear down any data structures or change any state information that you set when editing began.
 

@@ -19,7 +19,7 @@ Provides an array of identifiers of the currently dragged items in a case when t
 func draggedItemIDs<ItemID>(for type: ItemID.Type) -> [ItemID] where ItemID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Parameter type: The type of the identifiers. Returns: The array with the identifiers of the dragged items if provided. Returns an empty array if no dragged identifiers of a given type exist.
 

@@ -16,7 +16,7 @@ A person has approved a request to use the Critical Messaging API.
 case approved
 ```
 
-#### Discussion
+## Discussion
 
 The framework returns this value when someone approves a request to use the API.
 

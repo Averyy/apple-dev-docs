@@ -23,7 +23,7 @@ optional func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metada
 - (void) captureOutput:(AVCaptureOutput *) output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *) metadataObjects fromConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 The [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md) object emits only metadata objects whose types are included in its [`metadataObjectTypes`](../avcapturemetadataoutput/metadataobjecttypes.md) property. The delegate implements this method to perform additional processing on metadata objects as they become available. If you plan to use metadata objects outside the scope of this method, you must store strong references to them and remove those references when the objects are no longer required.
 

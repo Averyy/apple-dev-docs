@@ -21,11 +21,11 @@ Returns a random value within the specified range, using the given generator as 
 static func random<T>(in range: ClosedRange<Self>, using generator: inout T) -> Self where T : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 A random value within the bounds of `range`.
 
-#### Discussion
+## Discussion
 
 Use this method to generate an integer within a specific range when you are using a custom random number generator. This example creates three new values in the range `1...100`.
 

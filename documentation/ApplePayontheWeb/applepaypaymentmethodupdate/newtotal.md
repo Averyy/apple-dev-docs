@@ -16,7 +16,7 @@ The new total that results from the user’s change to the payment method.
 required ApplePayLineItem newTotal;
 ```
 
-#### Discussion
+## Discussion
 
 Calculate the total for the payment, as it may change after the user updated the payment method. This value is required.
 

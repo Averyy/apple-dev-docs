@@ -23,7 +23,7 @@ var badgeText: String { get }
 @property (nonatomic, copy, readonly) NSString * badgeText;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the text that appears on the badge for the action. An empty string signifies that no badge should be shown.
 

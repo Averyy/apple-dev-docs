@@ -16,7 +16,7 @@ class XCTestSuite
 @interface XCTestSuite : XCTest
 ```
 
-#### Overview
+## Overview
 
 Typically, Xcode automatically manages test suites for you. Only use [`XCTestSuite`](./xctestsuite.md) if you need to define your own custom test suites programmatically.
 

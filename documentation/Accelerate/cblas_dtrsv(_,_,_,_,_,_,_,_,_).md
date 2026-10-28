@@ -25,7 +25,7 @@ func cblas_dtrsv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANSA: CBLAS_TRANS
 void cblas_dtrsv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_DIAG DIAG, const __LAPACK_int N, const double *A, const __LAPACK_int LDA, double *X, const __LAPACK_int INCX);
 ```
 
-#### Discussion
+## Discussion
 
 Solves `A*x=b` or `A'*x=b` where `x` and `b` are elements in `X` and `B`.
 

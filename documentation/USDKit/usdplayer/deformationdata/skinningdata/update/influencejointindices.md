@@ -20,7 +20,7 @@ Changed joint influence indices.
 let influenceJointIndices: [UInt32]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

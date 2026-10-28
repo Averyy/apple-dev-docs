@@ -19,7 +19,7 @@ var touchBar: NSTouchBar? { get set }
 @property (strong, readwrite, nullable) NSTouchBar * touchBar;
 ```
 
-#### Discussion
+## Discussion
 
 If you have not explicitly provided an [`NSTouchBar`](../nstouchbar.md) object for a responder by setting this property, the system sends the [`makeTouchBar()`](./maketouchbar%28%29.md) message to the responder to create the default bar. This property is archived.
 

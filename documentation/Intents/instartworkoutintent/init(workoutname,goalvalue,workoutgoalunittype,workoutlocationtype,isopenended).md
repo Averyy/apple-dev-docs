@@ -19,11 +19,11 @@ Initializes an intent object with the specified workout information.
 convenience init(workoutName: INSpeakableString? = nil, goalValue: Double? = nil, workoutGoalUnitType: INWorkoutGoalUnitType = .unknown, workoutLocationType: INWorkoutLocationType = .unknown, isOpenEnded: Bool? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of the [`INStartWorkoutIntent`](../instartworkoutintent.md) class yourself. Siri creates instances when the user asks to start a workout. However, you can use this method during testing to create intent objects that validate your intent handling code paths.
 

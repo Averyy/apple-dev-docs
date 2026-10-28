@@ -24,7 +24,7 @@ static let bleedingAfterMenopause: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBleedingAfterMenopause;
 ```
 
-#### Discussion
+## Discussion
 
 Use this category type to record instances of bleeding that occur after menopause. After menopause, menstruation has ended, making this clinically distinct from menstrual flow or intermenstrual bleeding. Each sample represents an interval of bleeding and stores an intensity value using [`HKCategoryValueVaginalBleeding`](../hkcategoryvaluevaginalbleeding.md).
 

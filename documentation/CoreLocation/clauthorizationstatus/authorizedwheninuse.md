@@ -24,7 +24,7 @@ case authorizedWhenInUse
 kCLAuthorizationStatusAuthorizedWhenInUse
 ```
 
-#### Discussion
+## Discussion
 
 This authorization allows you to use all location services and receive location events only when your app is in use. To continue using location services in the background, enable Continuous Background Location Updates and start the services while the app is in use.
 

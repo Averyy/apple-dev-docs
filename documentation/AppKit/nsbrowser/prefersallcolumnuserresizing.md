@@ -19,7 +19,7 @@ var prefersAllColumnUserResizing: Bool { get set }
 @property BOOL prefersAllColumnUserResizing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser is set to resize all columns simultaneously. The default value of this property is [`false`](../../Swift/false.md).
 

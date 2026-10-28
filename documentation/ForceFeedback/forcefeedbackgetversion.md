@@ -5,7 +5,7 @@
 
 This function is used to determine driver and API version information.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *ForceFeedbackGetVersion) (
@@ -13,12 +13,12 @@ HRESULT ( *ForceFeedbackGetVersion) (
    ForceFeedbackVersion *version);
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **version**: Pointer to ForceFeedbackVersion structure that is to receive the required info. See the structure description for details.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise.
 

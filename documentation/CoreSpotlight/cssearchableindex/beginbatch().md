@@ -23,7 +23,7 @@ func beginBatch()
 - (void) beginIndexBatch;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method again before [`endBatch(withClientState:completionHandler:)`](./endbatch%28withclientstate,completionhandler%29.md) has returned. (You can call it again before the completion handler passed to [`endBatch(withClientState:completionHandler:)`](./endbatch%28withclientstate,completionhandler%29.md) has been called.)
 

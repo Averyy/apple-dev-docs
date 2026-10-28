@@ -25,7 +25,7 @@ var reflectivity: CGFloat { get set }
 @property (nonatomic) CGFloat reflectivity;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is greater than zero, SceneKit renders a reflection for all contents of the scene located above the floor.
 

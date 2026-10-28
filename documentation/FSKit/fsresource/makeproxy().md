@@ -19,7 +19,7 @@ func makeProxy() -> Self
 - (instancetype) makeProxy;
 ```
 
-#### Discussion
+## Discussion
 
 If you create a proxy from a proxy resource, this method returns a copy of the proxy.
 

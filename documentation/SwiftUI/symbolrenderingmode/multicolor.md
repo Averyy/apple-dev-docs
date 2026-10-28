@@ -21,7 +21,7 @@ A mode that renders symbols as multiple layers with their inherit styles.
 static let multicolor: SymbolRenderingMode
 ```
 
-#### Discussion
+## Discussion
 
 The layers may be filled with their own inherent styles, or the foreground style. For example, you can render a filled exclamation mark triangle in its inherent colors, with yellow for the triangle and white for the exclamation mark:
 

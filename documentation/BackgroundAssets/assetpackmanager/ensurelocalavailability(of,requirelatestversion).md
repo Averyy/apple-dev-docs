@@ -24,7 +24,7 @@ func ensureLocalAvailability(of assetPack: AssetPack, requireLatestVersion shoul
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 This method checks whether the asset pack is currently downloaded. If it isn’t, then the system schedules it to be downloaded and waits for the download to finish. If the method returns without throwing, the framework guarantees that the requested asset pack is now available locally. If the method throws, then the asset pack *isn’t* guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](./statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](./statusupdates%28forassetpackwithid%29.md) in a separate task.
 

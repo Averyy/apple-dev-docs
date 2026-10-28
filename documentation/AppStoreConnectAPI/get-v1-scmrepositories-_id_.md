@@ -9,11 +9,11 @@ Get information about a Git repository that Xcode Cloud can access.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves information about a specific Git repository that Xcode Cloud can access. Use the data provided in the response to read additional information; for example, pull request information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

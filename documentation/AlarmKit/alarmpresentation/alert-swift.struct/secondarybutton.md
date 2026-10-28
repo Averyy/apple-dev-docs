@@ -17,7 +17,7 @@ The appearance of the secondary button.
 var secondaryButton: AlarmButton?
 ```
 
-#### Discussion
+## Discussion
 
 If you use `nil`, the secondary button is omitted.
 

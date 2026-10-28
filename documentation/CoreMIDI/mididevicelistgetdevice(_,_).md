@@ -23,7 +23,7 @@ func MIDIDeviceListGetDevice(_ devList: MIDIDeviceListRef, _ index0: Int) -> MID
 extern MIDIDeviceRef MIDIDeviceListGetDevice(MIDIDeviceListRef devList, ItemCount index0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a device, or `NULL` if an error occurred.
 

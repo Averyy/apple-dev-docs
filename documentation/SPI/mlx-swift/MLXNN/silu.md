@@ -17,7 +17,7 @@ Applies the Sigmoid Linear Unit. Also known as Swish.
 class SiLU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * MLX.sigmoid(x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`silu(_:)`](./silu%28_%29.md)

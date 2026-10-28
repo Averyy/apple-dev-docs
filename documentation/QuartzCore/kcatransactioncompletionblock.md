@@ -22,7 +22,7 @@ let kCATransactionCompletionBlock: String
 extern NSString * const kCATransactionCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 A completion block object that is guaranteed to be called (on the main thread) as soon as all animations subsequently added by this transaction group have completed (or have been removed.) If no animations are added before the current transaction group is committed (or the completion block is set to a different value,) the block will be invoked immediately.
 

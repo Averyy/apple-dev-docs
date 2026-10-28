@@ -15,7 +15,7 @@ The Opus codec format.
 Opus
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

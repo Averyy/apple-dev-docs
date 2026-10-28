@@ -24,7 +24,7 @@ convenience init(engine: PHASEEngine, mesh: MDLMesh, materials: [PHASEMaterial])
 - (instancetype) initWithEngine:(PHASEEngine *) engine mesh:(MDLMesh *) mesh materials:(NSArray<PHASEMaterial *> *) materials;
 ```
 
-#### Discussion
+## Discussion
 
 The framework assigns a material from the material array for every submesh in the mesh object. For example, PHASE infers that the first mesh is wooden if the first element of the material array is [`PHASEMaterialPreset.wood`](../phasematerialpreset/wood.md).
 

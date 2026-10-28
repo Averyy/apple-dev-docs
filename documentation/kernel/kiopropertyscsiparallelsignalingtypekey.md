@@ -14,7 +14,7 @@
 #define kIOPropertySCSIParallelSignalingTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with the signaling type used for this SCSI Parallel bus. Valid values include "High Voltage Differential", "Low Voltage Differential", and "Single Ended".
 

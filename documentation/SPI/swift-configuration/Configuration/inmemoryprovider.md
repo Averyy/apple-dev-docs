@@ -32,11 +32,11 @@ struct InMemoryProvider
 - [Example use cases](./example-use-cases.md)
 - [Integrating with Swift Argument Parser](./integrating-with-swift-argument-parser.md)
 
-#### Overview
+## Overview
 
 This provider maintains a static dictionary of configuration values in memory, making it ideal for providing default values, overrides, or test configurations. Values are immutable once the provider is created and never change over time.
 
-#### Use cases
+## Use cases
 
 The in-memory provider is particularly useful for:
 
@@ -45,15 +45,15 @@ The in-memory provider is particularly useful for:
 - **Testing**: Creating predictable configuration states for unit tests
 - **Static configurations**: Embedding compile-time configuration values
 
-#### Value types
+## Value types
 
 The provider supports all standard configuration value types and automatically handles type validation. Values must match the requested type exactly - no automatic conversion is performed - for example, requesting a `String` value for a key that stores an `Int` value will throw an error.
 
-#### Performance characteristics
+## Performance characteristics
 
 This provider offers O(1) lookup time and performs no I/O operations. All values are stored in memory.
 
-#### Usage
+## Usage
 
 ```swift
 let provider = InMemoryProvider(values: [

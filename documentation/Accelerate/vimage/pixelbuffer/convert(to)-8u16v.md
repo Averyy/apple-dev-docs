@@ -23,7 +23,7 @@ func convert(to destination: vImage.PixelBuffer<vImage.Interleaved16Fx2>)
 
 Available when `Format` is `vImage.Interleaved16Ux2`.
 
-#### Discussion
+## Discussion
 
 This function converts the source values in the range `[0, UInt16.max]` to the destination range `[0.0, 1.0]`.
 

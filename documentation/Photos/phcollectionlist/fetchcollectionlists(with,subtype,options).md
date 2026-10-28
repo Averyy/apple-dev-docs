@@ -24,11 +24,11 @@ class func fetchCollectionLists(with collectionListType: PHCollectionListType, s
 + (PHFetchResult<PHCollectionList *> *) fetchCollectionListsWithType:(PHCollectionListType) collectionListType subtype:(PHCollectionListSubtype) subtype options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHCollectionList`](../phcollectionlist.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 By default, the returned [`PHFetchResult`](../phfetchresult.md) object contains all collection lists with the specified type and subtype. To retrieve a more specific set of collection lists, provide a [`PHFetchOptions`](../phfetchoptions.md) object containing a filter predicate.
 

@@ -15,7 +15,7 @@ An array of processing parameters available for this RAW processing session.
 var processingParameters: [VTRAWProcessingSession.Parameter] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 This call throws an error if the RAW Processor extension process is unreachable.
 

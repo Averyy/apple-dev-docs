@@ -22,7 +22,7 @@ The appearance and behavior of a toggle.
 @preconcurrency protocol ToggleStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the style for a single [`Toggle`](./toggle.md) or for all toggle instances in a view hierarchy, use the [`toggleStyle(_:)`](./view/togglestyle%28_%29.md) modifier. You can specify one of the built-in toggle styles, like [`switch`](./togglestyle/switch.md) or [`button`](./togglestyle/button.md):
 
@@ -35,7 +35,7 @@ Toggle(isOn: $isFlagged) {
 
 Alternatively, you can create and apply a custom style.
 
-##### Custom styles
+### Custom styles
 
 To create a custom style, declare a type that conforms to the `ToggleStyle` protocol and implement the required [`makeBody(configuration:)`](./togglestyle/makebody%28configuration%29.md) method. For example, you can define a checklist toggle style:
 

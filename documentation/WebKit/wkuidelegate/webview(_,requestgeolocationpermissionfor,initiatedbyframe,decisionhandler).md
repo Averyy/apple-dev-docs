@@ -25,7 +25,7 @@ optional func webView(_ webView: WKWebView, requestGeolocationPermissionFor orig
 - (void) webView:(WKWebView *) webView requestGeolocationPermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Allows your app to determine whether or not the given security origin should have access to geolocation APIs.
 

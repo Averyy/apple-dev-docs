@@ -23,7 +23,7 @@ var isAuthorizedForWidgetUpdates: Bool { get }
 @property (nonatomic, readonly, getter=isAuthorizedForWidgetUpdates) BOOL authorizedForWidgetUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` when either of the following is true:
 

@@ -20,7 +20,7 @@ optional func endInterruption(withFlags flags: Int)
 - (void) endInterruptionWithFlags:(NSUInteger) flags;
 ```
 
-#### Discussion
+## Discussion
 
 To resume using audio after an interruption ends, you must ensure that your audio session is active. [`AVAudioPlayer`](../avaudioplayer.md) and [`AVAudioRecorder`](../avaudiorecorder.md) instances reactivate your audio session automatically when an interruption ends. If you are using another audio technology, such as OpenAL, audio units, or audio queues, you must reactivate your audio session yourself before you can again use audio.
 

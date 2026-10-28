@@ -21,7 +21,7 @@ nonisolated
 struct ShareLink<Data, PreviewImage, PreviewIcon, Label> where Data : RandomAccessCollection, PreviewImage : Transferable, PreviewIcon : Transferable, Label : View, Data.Element : Transferable
 ```
 
-#### Overview
+## Overview
 
 People tap or click on a share link to present a share interface. The link typically uses a system-standard appearance; you only need to supply the content to share:
 

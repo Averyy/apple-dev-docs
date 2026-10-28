@@ -25,9 +25,9 @@ func vvcopysign(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Un
 void vvcopysign(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The magnitude input array, *y*.

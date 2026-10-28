@@ -21,7 +21,7 @@ Calculates the elements of a double-precision vector inverted-clipped to the spe
 extern void vDSP_viclipD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_viclip`](./vdsp_viclip.md), except for the types of vectors `A`, `B`, `C`, and `D`.
 

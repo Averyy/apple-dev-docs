@@ -19,7 +19,7 @@ var clearsFilterPredicateOnInsertion: Bool { get set }
 @property BOOL clearsFilterPredicateOnInsertion;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

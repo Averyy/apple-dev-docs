@@ -24,7 +24,7 @@ let kIOSurfacePlaneBase: CFString
 extern CFStringRef const kIOSurfacePlaneBase;
 ```
 
-#### Discussion
+## Discussion
 
 Optional, defaults to the plane offset
 

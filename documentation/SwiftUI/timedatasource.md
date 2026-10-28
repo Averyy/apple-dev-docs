@@ -21,7 +21,7 @@ A source of time related data.
 struct TimeDataSource<Value>
 ```
 
-#### Overview
+## Overview
 
 Instances of this type provide [`Text`](./text.md) with live and automatically updating values in Widgets, Live Activities, watchOS Complications, and of course regular apps.
 

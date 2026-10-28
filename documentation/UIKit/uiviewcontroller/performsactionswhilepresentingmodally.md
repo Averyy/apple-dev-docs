@@ -23,7 +23,7 @@ var performsActionsWhilePresentingModally: Bool { get }
 @property (nonatomic, readonly) BOOL performsActionsWhilePresentingModally;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which causes the view controller to handle actions passed along the responder chain by modally presented view controllers. If the app includes the `UIViewControllerPerformsActionsWhilePresentingModally` key in its `Info.plist` file, the default value matches the value of that key instead.
 

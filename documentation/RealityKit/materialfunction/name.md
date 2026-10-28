@@ -21,7 +21,7 @@ Name of function found in library
 var name: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This function should exist in the given library and be declared with the `[[visible]]` attribute.
 

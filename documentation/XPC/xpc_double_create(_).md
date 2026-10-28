@@ -25,7 +25,7 @@ func xpc_double_create(_ value: Double) -> xpc_object_t
 extern xpc_object_txpc_double_create(double value);
 ```
 
-#### Return Value
+## Return Value
 
 A new floating point object.
 

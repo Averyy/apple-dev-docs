@@ -23,7 +23,7 @@ case multipleScenesNotSupported
 UISceneErrorCodeMultipleScenesNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 This error code indicates that the app doesn’t support multiple scenes, or the system was unable to display multiple scenes for your app.
 

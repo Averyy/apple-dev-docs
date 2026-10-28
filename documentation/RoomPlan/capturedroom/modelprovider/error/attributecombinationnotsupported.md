@@ -17,7 +17,7 @@ An error that indicates the framework doesn’t support the attributes set in a 
 case attributeCombinationNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs for the [`modelFileURL(for:)`](../modelfileurl%28for%29-58ykp.md) function when an unsupported combination of attributes resides in the argument array.
 

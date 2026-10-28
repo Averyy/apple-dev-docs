@@ -21,7 +21,7 @@ An effect that makes each layer appear separately.
 - (instancetype) effectWithByLayer;
 ```
 
-#### Return Value
+## Return Value
 
 An effect that makes each layer appear separately.
 

@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The window retains the new content view and owns it thereafter. The `view` object is resized to fit precisely within the content area of the window. You can modify the content view’s coordinate system through its bounds rectangle, but you can’t alter its frame rectangle (its size or location) directly.
 

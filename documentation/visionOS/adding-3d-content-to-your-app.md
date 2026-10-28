@@ -5,7 +5,7 @@
 
 Add depth and dimension to your visionOS app and discover how to incorporate your app’s content into a person’s surroundings.
 
-#### Overview
+## Overview
 
 A device with a stereoscopic display lets people experience 3D content in a way that feels more real. Content appears to have real depth, and people can view it from different angles, making it seem like it’s there in front of them.
 
@@ -17,7 +17,7 @@ When building an app for visionOS, think about ways you might add depth to your 
 
 ![An illustration of a globe with a figure of a person standing in it.](https://developer.apple.com/tutorials/images/com.apple.visionOS/immersive-space@2x.png)
 
-##### Add depth to traditional 2D windows
+### Add depth to traditional 2D windows
 
 Windows are an important part of your app’s interface. With visionOS, apps automatically get materials with the visionOS look and feel, fully resizable windows with spacing tuned for eyes and hands input, and access to highlighting adjustments for your custom controls.
 
@@ -33,7 +33,7 @@ Incorporate depth effects into your custom views as needed, and use 3D layout op
 
 In addition to giving 2D views more depth, you can also add static 3D models to your 2D windows. The `Model3D` view loads a USDZ file or other asset type and displays it at its intrinsic size in your window. Use this in places where you already have the model data in your app, or can download it from the network. For example, a shopping app might use this type of view to display a 3D version of a product.
 
-##### Display dynamic 3D scenes using RealityKit
+### Display dynamic 3D scenes using RealityKit
 
 RealityKit is Apple’s technology for building 3D models and scenes that you update dynamically onscreen. In visionOS, use RealityKit and SwiftUI together to seamlessly couple your app’s 2D and 3D content. Load existing USDZ assets or create scenes in Reality Composer Pro that incorporate animation, physics, lighting, sounds, and custom behaviors for your content. To use a Reality Composer Pro project in your app, add the Swift package to your Xcode project and import its module in your Swift file. For more information, see [Managing files and folders in your Xcode project](../Xcode/managing-files-and-folders-in-your-xcode-project.md).
 
@@ -79,7 +79,7 @@ struct SphereView: View {
 
 For information about how to create content using RealityKit, see [RealityKit](../RealityKit/RealityKit.md).
 
-##### Respond to interactions with RealityKit content
+### Respond to interactions with RealityKit content
 
 To handle interactions with the entities of your RealityKit scenes:
 
@@ -117,7 +117,7 @@ struct SphereView: View {
 }
 ```
 
-##### Display 3D content in a volume
+### Display 3D content in a volume
 
 A volume is a type of window that grows in three dimensions to match the size of the content it contains. Windows and volumes both accommodate 2D and 3D content, and are alike in many ways. However, windows clip 3D content that extends too far from the window’s surface, so volumes are the better choice for content that is primarily 3D.
 
@@ -139,7 +139,7 @@ Windows and volumes are a convenient way to display bounded 2D and 3D content, b
 
 For more information about when to use volumes, see [Human Interface Guidelines > Windows](https://developer.apple.com/design/human-interface-guidelines/windows).
 
-##### Display 3D content in a person’s surroundings
+### Display 3D content in a person’s surroundings
 
 When you need more control over the placement of your app’s content, add that content to an [`ImmersiveSpace`](../SwiftUI/immersivespace.md). An immersive space offers an unbounded area for your content, and you control the size and placement of content within the space. After receiving permission from the user, you can also use ARKit with an immersive space to integrate content into their surroundings. For example, you can use ARKit scene reconstruction to obtain a mesh of furniture and nearby objects and have your content interact with that mesh.
 

@@ -16,7 +16,7 @@ A metric that measures time spent at each cellular signal strength.
 struct CellularConditionTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.cellularConditionTime(_:)`](./metricresult/cellularconditiontime%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

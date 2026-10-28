@@ -17,7 +17,7 @@ Processes click-through interactions on your custom rendered ad content, and del
 func handleTap(reengagementURL: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide a URL to deeply link someone into an advertised app if they have the app installed.
 

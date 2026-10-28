@@ -15,7 +15,7 @@ Gets the controller-specific direct memory access (DMA) specification in respons
 virtual kern_return_t UserGetDMASpecification(uint64_t *maxTransferSize, uint32_t *alignment, uint8_t *numAddressBits, DMAOutputSegmentType *segmentType);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of getting the DMA specification. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 

@@ -23,7 +23,7 @@ var externalMetadata: [AVMetadataItem] { get set }
 @property (nonatomic, copy) NSArray<AVMetadataItem *> * externalMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVPlayerViewController`](../../AVKit/avplayerviewcontroller.md) supports displaying the following metadata identifiers:
 

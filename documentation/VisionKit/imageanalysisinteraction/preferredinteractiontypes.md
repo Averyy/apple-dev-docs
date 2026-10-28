@@ -23,7 +23,7 @@ final var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes {
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 You need to set this property to enable interactions with the image. If this property contains [`automatic`](./interactiontypes/automatic.md), the interaction ignores the other types in the set. The default value for this property is an empty array that disables any interactions.
 

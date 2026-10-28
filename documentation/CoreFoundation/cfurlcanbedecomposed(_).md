@@ -25,11 +25,11 @@ func CFURLCanBeDecomposed(_ anURL: CFURL!) -> Bool
 extern Boolean CFURLCanBeDecomposed(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anURL` conforms to RFC 1808, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 If a `CFURL` object can be decomposed, you can retrieve separately each of the four components (scheme, net location, path, and resource specifier), as well as the base URL.
 

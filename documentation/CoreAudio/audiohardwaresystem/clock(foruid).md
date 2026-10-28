@@ -14,7 +14,7 @@
 func clock(forUID UID: String) throws -> AudioHardwareClock?
 ```
 
-#### Return Value
+## Return Value
 
 The AudioHardwareClock that corresponds with the given UID, or nil if the UID does not correspond with any clock object.
 

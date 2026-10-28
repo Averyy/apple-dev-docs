@@ -19,7 +19,7 @@ class NSMagnificationGestureRecognizer
 @interface NSMagnificationGestureRecognizer : NSGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 This object tracks pinch gestures on a track pad or other input device and stores the resulting magnification value for you to use in your code.
 

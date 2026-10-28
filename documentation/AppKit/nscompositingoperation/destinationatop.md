@@ -19,7 +19,7 @@ case destinationAtop
 NSCompositingOperationDestinationAtop
 ```
 
-#### Discussion
+## Discussion
 
 The source image is applied using the formula `R = S*(1 - Da) + D*Sa`.
 

@@ -25,7 +25,7 @@ class OSLogMessageComponent
 @interface OSLogMessageComponent : NSObject
 ```
 
-#### Overview
+## Overview
 
 There is one component for each placeholder in the formatString plus one component for any text after the last placeholder.
 

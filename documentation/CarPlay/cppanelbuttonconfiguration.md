@@ -21,7 +21,7 @@ class CPPanelButtonConfiguration
 @interface CPPanelButtonConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CPPanelButtonConfiguration` type defines the default behaviors for button configurations in a panel. You don’t create this type directly or use it to configure your panel. Instead, instantiate one of the defined subclasses based on the type of panel you’re configuring. For example, create a [`CPMapPanelButtonConfiguration`](./cpmappanelbuttonconfiguration.md) object when configuring content for a [`CPMapPanel`](./cpmappanel.md) type.
 

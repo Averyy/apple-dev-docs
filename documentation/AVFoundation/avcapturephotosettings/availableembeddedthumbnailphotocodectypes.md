@@ -22,7 +22,7 @@ var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableEmbeddedThumbnailPhotoCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 To enable embedding thumbnail images in photo file output, set the [`embeddedThumbnailPhotoFormat`](./embeddedthumbnailphotoformat.md) property using one of the codec types listed in this array.
 

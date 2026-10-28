@@ -20,7 +20,7 @@ class IOUSBHostDevice
 @interface IOUSBHostDevice : IOUSBHostObject
 ```
 
-#### Overview
+## Overview
 
 This class enables management of the device state, including sending control requests to the default endpoint 0, configuring the device, and resetting the device. The interest handler also allows monitoring of the device state. The client creates the class and initializes it with [`initWithIOService:options:queue:error:interestHandler:`](./iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md).
 

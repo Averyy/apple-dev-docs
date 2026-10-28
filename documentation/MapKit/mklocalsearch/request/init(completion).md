@@ -25,11 +25,11 @@ init(completion: MKLocalSearchCompletion)
 - (instancetype) initWithCompletion:(MKLocalSearchCompletion *) completion;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search request.
 
-#### Discussion
+## Discussion
 
 Use this method when initializing your object from [`MKLocalSearchCompleter`](../../mklocalsearchcompleter.md) objects. You don’t need to use this method if you intend to provide the search string and region information yourself.
 

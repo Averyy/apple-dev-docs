@@ -25,11 +25,11 @@ optional var debugDescription: String { get }
 @property (copy, readonly) NSString * debugDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A string that describes the object for debugging purposes.
 
-#### Discussion
+## Discussion
 
 The debugger’s `po` command uses this property to create a textual representation of the object suitable for display in the debugger. The default implemention returns the same value as [`description`](./description.md). Override either property to provide custom object descriptions.
 

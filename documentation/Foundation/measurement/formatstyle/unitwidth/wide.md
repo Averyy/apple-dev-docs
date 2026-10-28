@@ -21,7 +21,7 @@ A unit width that shows the full unit name.
 static var wide: Measurement<UnitType>.FormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `37.20 Calories` or `37,20 litres`.
 

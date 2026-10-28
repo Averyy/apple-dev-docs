@@ -15,7 +15,7 @@ Copies the contents of an interleaved complex vector `C` to a split complex vect
 void vDSP_ctoz(const DSPComplex *__C, vDSP_Stride __IC, const DSPSplitComplex *__Z, vDSP_Stride __IZ, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For best performance, `C`, `Z.realp`, and `Z.imagp` should be 16-byte aligned.
 

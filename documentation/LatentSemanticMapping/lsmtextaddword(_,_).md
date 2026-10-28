@@ -20,7 +20,7 @@ func LSMTextAddWord(_ textref: LSMText, _ word: CFString) -> OSStatus
 OSStatus LSMTextAddWord(LSMTextRef textref, CFStringRef word);
 ```
 
-#### Discussion
+## Discussion
 
 The order of words is significant if the map uses pairs or triplets, and the count of words is always significant.
 

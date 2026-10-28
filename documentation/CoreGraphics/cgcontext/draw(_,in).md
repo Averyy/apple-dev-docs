@@ -21,7 +21,7 @@ Draws the contents of a layer object into the specified rectangle.
 func draw(_ layer: CGLayer, in rect: CGRect)
 ```
 
-#### Discussion
+## Discussion
 
 The contents are scaled, if necessary, to fit into the rectangle.
 

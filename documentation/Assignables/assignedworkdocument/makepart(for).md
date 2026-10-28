@@ -18,11 +18,11 @@ Creates data for the part with the given identifier.
 func makePart(for partID: AssignedWorkDocument.PartID) throws -> MergeablePartData?
 ```
 
-#### Return Value
+## Return Value
 
 Part data for the `partID` provided, if possible. Otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 In cases where this document is a partial one, i.e. it is missing some parts, you use this method to create data for the missing part. You then use [`merge(partData:into:)`](./merge%28partdata,into%29.md) to merge the newly created data into this document.
 

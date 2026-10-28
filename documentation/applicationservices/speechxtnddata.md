@@ -21,7 +21,7 @@ typedef struct SpeechXtndData {
 } SpeechXtndData;
 ```
 
-#### Overview
+## Overview
 
 The speech extension data structure allows you to use the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) and [`SetSpeechInfo`](./api-1552223-setspeechinfo.md) functions with selectors defined by particular synthesizers. By requiring that you pass to one of these functions a pointer to a speech extension data structure, synthesizers can permit the exchange of data in any format.
 

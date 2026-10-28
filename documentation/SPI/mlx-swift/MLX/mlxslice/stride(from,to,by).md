@@ -19,7 +19,7 @@ static func stride(from start: Int? = nil, to end: Int? = nil, by stride: Int? =
 
 Available when `Self` is `MLXSlice`.
 
-#### Discussion
+## Discussion
 
 ```swift
 // full range
@@ -48,7 +48,7 @@ array[.stride(from: 0, to: 10, by: 3)]
 array[.stride(by: -1)]
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 

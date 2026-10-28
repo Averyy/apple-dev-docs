@@ -25,7 +25,7 @@ optional func tokenSession(_ session: TKTokenSession, sign dataToSign: Data, key
 - (NSData *) tokenSession:(TKTokenSession *) session signData:(NSData *) dataToSign usingKey:(TKTokenObjectID) keyObjectID algorithm:(TKTokenKeyAlgorithm *) algorithm error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The signed data, or `nil` if an error occurred.
 

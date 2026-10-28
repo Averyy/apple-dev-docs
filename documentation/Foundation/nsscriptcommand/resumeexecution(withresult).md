@@ -20,7 +20,7 @@ func resumeExecution(withResult result: Any?)
 - (void) resumeExecutionWithResult:(id) result;
 ```
 
-#### Discussion
+## Discussion
 
 Resumes the execution of the command if a successful, unmatched, invocation of [`suspendExecution()`](./suspendexecution%28%29.md) has been made—otherwise, does nothing. The value for `result` is dependent on the segment of command execution that was suspended:
 

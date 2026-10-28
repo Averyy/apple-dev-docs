@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two dependencies are equal.
 static func == (lhs: SystemDependency, rhs: SystemDependency) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two dependencies are equal.
 

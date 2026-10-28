@@ -19,7 +19,7 @@ var baseWritingDirection: NSWritingDirection { get set }
 @property NSWritingDirection baseWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The Text system uses this value as a hint for calculating the actual direction for displaying Unicode characters.  If no writing direction is set, returns `NSWritingDirectionNatural`.
 

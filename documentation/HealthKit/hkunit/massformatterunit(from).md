@@ -24,7 +24,7 @@ class func massFormatterUnit(from unit: HKUnit) -> MassFormatter.Unit
 + (NSMassFormatterUnit) massFormatterUnitFromUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](../../Foundation/massformatter/unit.md).
 

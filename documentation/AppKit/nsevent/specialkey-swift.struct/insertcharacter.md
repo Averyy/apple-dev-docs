@@ -15,7 +15,7 @@ The insert character key.
 static let insertCharacter: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -29,7 +29,7 @@ extern NSNotificationName const UIScreenDidConnectNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 Connection notifications aren’t sent for screens that are already present when the app launches. The app can instead use the [`screens`](./screens.md) method to get the current set of screens at launch time.
 

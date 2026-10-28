@@ -16,11 +16,11 @@ Creates an IOHIDTransaction object for the specified device.
 IOHIDTransactionRef IOHIDTransactionCreate(CFAllocatorRef allocator, IOHIDDeviceRef device, IOHIDTransactionDirectionType direction, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new IOHIDTransactionRef.
 
-#### Discussion
+## Discussion
 
 IOHIDTransaction objects can be used to either send or receive multiple element values. As such the direction used should represent they type of objects added to the transaction.
 

@@ -13,11 +13,11 @@ void GetLogicalUnitBytes (
  SCSILogicalUnitBytes *logicalUnitBytes );
 ```
 
-#### Return Value
+## Return Value
 
 returns a valid 8-byte logical unit address.
 
-#### Overview
+## Overview
 
 Method to get the logical unit bytes associated with a request.
 

@@ -21,7 +21,7 @@ Creates a labeled image that you can use as content for controls, with a variabl
 init(_ name: String, variableValue: Double?, bundle: Bundle? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an image using a using a symbol in the specified bundle. The rendered symbol may alter its appearance to represent the value provided in `variableValue`.
 

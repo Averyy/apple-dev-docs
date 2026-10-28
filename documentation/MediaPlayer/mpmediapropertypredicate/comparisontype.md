@@ -22,7 +22,7 @@ var comparisonType: MPMediaPredicateComparison { get }
 @property (nonatomic, readonly) MPMediaPredicateComparison comparisonType;
 ```
 
-#### Discussion
+## Discussion
 
 For comparison types, see [`MPMediaPredicateComparison`](../mpmediapredicatecomparison.md).
 

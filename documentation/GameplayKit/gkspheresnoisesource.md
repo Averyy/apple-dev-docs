@@ -24,7 +24,7 @@ class GKSpheresNoiseSource
 @interface GKSpheresNoiseSource : GKNoiseSource
 ```
 
-#### Overview
+## Overview
 
 All noise sources generate infinite 3D fields of noise values, but this fact is especially relevant to sphere noise: by transforming a noise object in 3D, you can sample the noise in ways that “slice” through the spheres. Use this technique (combined with other noise sources and noise processing operations) to create effects such as wood-grain textures.
 

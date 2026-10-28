@@ -29,7 +29,7 @@ DNSServiceErrorType DNSServiceGetProperty(const char *property, void *result, ui
 
 - [_DNS_SD_H](./dns_sd_h.md)
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, or kDNSServiceErr_ServiceNotRunning if the daemon (or “system service” on Windows) is not running.
 

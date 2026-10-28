@@ -25,7 +25,7 @@ case percent
 NSNumberFormatterPercentStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the en_US locale, the number 0.123 is represented as 12%.
 

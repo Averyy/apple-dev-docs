@@ -15,7 +15,7 @@ A function that a request function uses to prepare JSON to send to the API serve
 attribute Function jsonStringify;
 ```
 
-#### Discussion
+## Discussion
 
 The API server can receive numbers larger than the default JavaScript JSON stringify function can handle, so this function is expected to handle large numbers.
 

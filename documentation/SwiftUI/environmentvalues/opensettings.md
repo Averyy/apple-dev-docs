@@ -15,7 +15,7 @@ A Settings presentation action stored in a view’s environment.
 var openSettings: OpenSettingsAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the `openSettings` environment value to get an [`OpenSettingsAction`](../opensettingsaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction()`](../opensettingsaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 

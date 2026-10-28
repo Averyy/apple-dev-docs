@@ -24,7 +24,7 @@ func lineFragmentRange(for point: CGPoint, inContainerAt location: any NSTextLoc
 - (NSTextRange *) lineFragmentRangeForPoint:(CGPoint) point inContainerAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSTextRange` that describes the location of the line fragment, or nil if the range isn’t found.
 

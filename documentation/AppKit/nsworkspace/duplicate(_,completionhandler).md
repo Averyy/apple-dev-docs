@@ -23,7 +23,7 @@ func duplicate(_ URLs: [URL]) async throws -> [URL : URL]
 - (void) duplicateURLs:(NSArray<NSURL *> *) URLs completionHandler:(void (^)(NSDictionary<NSURL *,NSURL *> *newURLs, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method may cause a progress indicator, or other user interface element, to be shown by the Finder.
 

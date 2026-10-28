@@ -19,7 +19,7 @@ func willRemoveSubview(_ subview: NSView)
 - (void) willRemoveSubview:(NSView *) subview;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when `subview` receives a [`removeFromSuperview()`](./removefromsuperview%28%29.md) message or `subview` is removed from the view due to it being added to another view with [`addSubview(_:)`](./addsubview%28_%29.md).
 

@@ -21,7 +21,7 @@ var accessibilityLabel: String? { get set }
 @property (nonatomic, copy, nullable) NSString * accessibilityLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to provide a succinct description of the message. VoiceOver reads this property when describing the message. By default, the `accessibilityLabel` property is set to `nil`.
 

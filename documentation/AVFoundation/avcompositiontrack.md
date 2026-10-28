@@ -25,7 +25,7 @@ class AVCompositionTrack
 @interface AVCompositionTrack : AVAssetTrack
 ```
 
-#### Overview
+## Overview
 
 This object provides an immutable composition track. The framework also provides a mutable subclass, [`AVMutableCompositionTrack`](./avmutablecompositiontrack.md).
 

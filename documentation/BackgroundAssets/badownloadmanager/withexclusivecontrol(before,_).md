@@ -21,11 +21,11 @@ Attempts to acquire immediate, exclusive control over the download manager befor
 final func withExclusiveControl<ReturnType>(before date: Date, _ body: @escaping () throws -> sending ReturnType) async throws -> sending ReturnType
 ```
 
-#### Return Value
+## Return Value
 
 `body`’s return value.
 
-#### Discussion
+## Discussion
 
 To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Use this method instead of [`withExclusiveControl(_:)`](./withexclusivecontrol%28_%29-1rf9w.md) to enforce that the attempt to acquire exclusive control fail if the system can’t fulfill it before a particular date. Unlike [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md), this method waits for exclusive control to be acquired and then relinquished before it returns.
 

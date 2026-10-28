@@ -23,7 +23,7 @@ var scaleObjectConfidenceLoss: Float { get set }
 @property (nonatomic, readwrite) float scaleObjectConfidenceLoss;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `100.0`.
 

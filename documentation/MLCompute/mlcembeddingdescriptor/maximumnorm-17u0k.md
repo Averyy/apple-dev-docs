@@ -21,7 +21,7 @@ A float value that, if set, causes the layer to renormalize the selected embeddi
 var maximumNorm: Float? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Renormalization occurs in the forward pass only.
 

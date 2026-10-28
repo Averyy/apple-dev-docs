@@ -16,11 +16,11 @@ Allows the view to be manipulated using a manipulation gesture attached to a dif
 nonisolated func manipulable(using gestureState: Manipulable.GestureState) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can be manipulated by a manipulation gesture attached to a different view.
 
-#### Discussion
+## Discussion
 
 Use this view modifier alongside [`manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)`](./manipulationgesture%28updating,coordinatespace,operations,inertia,isenabled,onchanged%29.md) when you want to allow a person to manipulate a view by interacting with a different view.
 

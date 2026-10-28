@@ -21,7 +21,7 @@ Decodes the previously-encoded object associated by a key, populating an error i
 - (id) decodeTopLevelObjectForKey:(NSString *) key error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 

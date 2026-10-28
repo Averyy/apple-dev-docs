@@ -23,7 +23,7 @@ var kAudioSessionRouteChangeReason_NoSuitableRouteForCategory: Int { get }
 kAudioSessionRouteChangeReason_NoSuitableRouteForCategory
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`kAudioSessionCategory_RecordAudio`](./kaudiosessioncategory_recordaudio.md) is set but there is no audio input device.
 

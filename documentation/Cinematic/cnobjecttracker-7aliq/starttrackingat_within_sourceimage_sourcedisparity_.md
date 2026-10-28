@@ -19,11 +19,11 @@ Starts creating a detection track to track an object within the given bounds.
 - (BOOL) startTrackingAt:(CMTime) time within:(CGRect) normalizedBounds sourceImage:(CVPixelBufferRef) sourceImage sourceDisparity:(CVPixelBufferRef) sourceDisparity;
 ```
 
-#### Return Value
+## Return Value
 
 A flag representing whether the object can be tracked.
 
-#### Discussion
+## Discussion
 
 If you can track the object, the system adds a detection to the detection track you’re building.
 

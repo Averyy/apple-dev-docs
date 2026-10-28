@@ -17,7 +17,7 @@ Writes document data to a file.
 - (BOOL) writeToFile:(NSString *) fileName ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Writes document data of type `docType` to the file `fileName`, returning whether the operation was successful. This method invokes [`dataRepresentationOfType:`](./datarepresentationoftype_.md) and is indirectly invoked whenever the document file is saved. It uses the `NSData` method [`write(toFile:atomically:)`](../../Foundation/nsdata/write%28tofile,atomically%29.md) to write to the file.
 

@@ -16,7 +16,7 @@ Retains a display link.
 extern CVDisplayLinkRefCVDisplayLinkRetain(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, this function returns the retained display link if successful.
 

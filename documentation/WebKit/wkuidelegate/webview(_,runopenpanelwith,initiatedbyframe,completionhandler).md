@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenP
 - (void) webView:(WKWebView *) webView runOpenPanelWithParameters:(WKOpenPanelParameters *) parameters initiatedByFrame:(WKFrameInfo *) frame completionHandler:(void (^)(NSArray<NSURL *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to customize the upload panel. To disable file uploads, implement this method to return `nil`.
 

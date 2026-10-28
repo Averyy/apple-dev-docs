@@ -24,7 +24,7 @@ class func formatForInput(at inputIndex: Int32) -> CIFormat
 + (CIFormat) formatForInputAtIndex:(int) inputIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The format must be one of `kCIFormatBGRA8`, `kCIFormatRGBAh`, `kCIFormatRGBAf` or `kCIFormatR8`. On iOS 12 and macOS 10.14, the formats `kCIFormatRh` and `kCIFormatRf` are also supported.
 

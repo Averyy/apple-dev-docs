@@ -19,7 +19,7 @@ init!(addressBook: ABAddressBook!)
 - (id) initWithAddressBook:(ABAddressBook *) addressBook;
 ```
 
-#### Discussion
+## Discussion
 
 The record is added to `addressBook` but is not visible to other address books until `addressBook` is saved. This method is the designated initializer for this class.
 

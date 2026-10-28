@@ -23,7 +23,7 @@ func update(_ transformer: inout OneHotEncoder<Category>.Transformer, with input
 
 Available when `Category` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t add new categories on subsequent updates. All categories should be present in the initial update.
 

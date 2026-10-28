@@ -21,7 +21,7 @@ Returns an `NSPipe` object.
 + (NSPipe *) pipe;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSPipe` object. Returns `nil` if the method encounters errors while attempting to create the pipe or the `NSFileHandle` objects that serve as endpoints of the pipe.
 

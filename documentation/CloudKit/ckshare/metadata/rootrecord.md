@@ -26,7 +26,7 @@ var rootRecord: CKRecord? { get }
 @property (copy, readonly, nullable) CKRecord * rootRecord;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the root record of the shared record hierarchy if you set the [`shouldFetchRootRecord`](../../ckfetchsharemetadataoperation/shouldfetchrootrecord.md) property of the operation that fetches the metadata to [`true`](../../../Swift/true.md). You can specify which fields CloudKit returns by setting the same operation’s [`rootRecordDesiredKeys`](../../ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) property.
 

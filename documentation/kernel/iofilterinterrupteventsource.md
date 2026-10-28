@@ -15,7 +15,7 @@ Filtering varient of the $link IOInterruptEventSource.
 class IOFilterInterruptEventSource : IOInterruptEventSource
 ```
 
-#### Overview
+## Overview
 
 An interrupt event source that calls the client to determine if a interrupt event needs to be scheduled on the work loop. A filter interrupt event source call's the client in the primary interrupt context, the client can then interrogate its hardware and determine if the interrupt needs to be processed yet.
 

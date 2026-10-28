@@ -20,7 +20,7 @@ The base protocol for the wrapping force effect structure containing common para
 protocol ForceEffectBase
 ```
 
-#### Overview
+## Overview
 
 Don’t implement this protocol yourself. Create force effects by calling methods on [`ForceEffect`](./forceeffect.md).
 

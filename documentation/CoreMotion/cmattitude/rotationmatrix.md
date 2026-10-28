@@ -24,7 +24,7 @@ var rotationMatrix: CMRotationMatrix { get }
 @property (nonatomic, readonly) CMRotationMatrix rotationMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 A rotation matrix in linear algebra describes the rotation of a body in three-dimensional Euclidean space.
 

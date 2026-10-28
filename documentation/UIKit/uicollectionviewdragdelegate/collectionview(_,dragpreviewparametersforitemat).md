@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, dragPreviewPara
 - (UIDragPreviewParameters *) collectionView:(UICollectionView *) collectionView dragPreviewParametersForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 Drag parameters that indicate how to display the cell’s content during a drag.
 
-#### Discussion
+## Discussion
 
 Use this method to customize the appearance of the item during drags. If you don’t implement this method or if you implement it and return `nil`, the collection view uses the cell’s visible bounds to create the preview.
 

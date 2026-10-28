@@ -21,7 +21,7 @@ Creates a map content block that contains a single content result.
 static func buildBlock<C>(_ content: C) -> C where C : MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns the [`MapContent`](../mapcontent.md) with the single element you provided.
 

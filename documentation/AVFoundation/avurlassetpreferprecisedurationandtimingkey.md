@@ -25,7 +25,7 @@ let AVURLAssetPreferPreciseDurationAndTimingKey: String
 extern NSString * const AVURLAssetPreferPreciseDurationAndTimingKey;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a value of [`true`](../Swift/true.md) indicates longer loading times are acceptable in cases where you require precise timing. Container formats like QuickTime and MPEG-4 provide sufficient timing information and don’t require additional parsing to retrieve it. Other formats don’t provide sufficient summary information, and the system can’t accurately calculate the resource’s duration and timing without examining the media content.
 

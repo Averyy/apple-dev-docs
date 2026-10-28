@@ -19,7 +19,7 @@ init?(frame: NSRect, isPreview: Bool)
 - (instancetype) initWithFrame:(NSRect) frame isPreview:(BOOL) isPreview;
 ```
 
-#### Discussion
+## Discussion
 
 The screen saver application installs the new view object into the view hierarchy of an [`NSWindow`](../../AppKit/nswindow.md) before the animation begins. This method is the designated initializer for the [`ScreenSaverView`](../screensaverview.md) class. Returns `self`.
 

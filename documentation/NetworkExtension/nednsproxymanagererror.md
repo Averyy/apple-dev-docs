@@ -23,7 +23,7 @@ enum NEDNSProxyManagerError
 enum NEDNSProxyManagerError : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These errors appear as the parameter in the completion handler of the methods that you use to manage DNS proxy configuration: [`loadFromPreferences(completionHandler:)`](./nednsproxymanager/loadfrompreferences%28completionhandler%29.md), [`removeFromPreferences(completionHandler:)`](./nednsproxymanager/removefrompreferences%28completionhandler%29.md), and [`saveToPreferences(completionHandler:)`](./nednsproxymanager/savetopreferences%28completionhandler%29.md).
 

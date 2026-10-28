@@ -25,7 +25,7 @@ case failureInsufficientFunds
 INPayBillIntentResponseCodeFailureInsufficientFunds
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the user’s account doesn’t have the funds needed to make the payment.
 

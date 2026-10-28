@@ -24,11 +24,11 @@ class func labDeltaE() -> any CIFilter & CILabDeltaE
 + (CIFilter<CILabDeltaE> *) LabDeltaE;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the Lab ΔE filter to an image. The effect creates an image based on the visual color differences between the two input images. The resulting image contains ΔE 1994 values between 0.0 and 100.0.
 

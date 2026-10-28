@@ -28,7 +28,7 @@ HKWorkoutEventTypeMotionPaused
 
 - [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 During running workout sessions, Apple Watch can automatically generate motion pause events when the user stops moving. Users can enable or disable this feature using the watch’s Settings > General > Workout > Autopause setting.
 

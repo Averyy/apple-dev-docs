@@ -25,7 +25,7 @@ var isInterleaved: Bool { get }
 @property (nonatomic, readonly, getter=isInterleaved) BOOL interleaved;
 ```
 
-#### Discussion
+## Discussion
 
 This value is only valid for PCM formats.
 

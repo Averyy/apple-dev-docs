@@ -13,7 +13,7 @@
 IFNET_CSUM_FRAGMENT = 0x00000008
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will checksum IP fragments.
 

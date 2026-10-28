@@ -25,7 +25,7 @@ var kvImageARGB16Q12: vImageARGBType { get }
 kvImageARGB16Q12
 ```
 
-#### Discussion
+## Discussion
 
 This type doesn’t specify channel order.
 

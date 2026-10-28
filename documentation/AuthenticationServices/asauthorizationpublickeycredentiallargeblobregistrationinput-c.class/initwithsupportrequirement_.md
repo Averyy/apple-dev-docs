@@ -19,7 +19,7 @@ Creates a registration input with the provided support requirement value.
 - (instancetype) initWithSupportRequirement:(ASAuthorizationPublicKeyCredentialLargeBlobSupportRequirement) requirement;
 ```
 
-#### Discussion
+## Discussion
 
 - requirement: The support requirement value.
 

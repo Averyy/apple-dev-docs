@@ -20,7 +20,7 @@ set enabled(value: boolean);
 
 - [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

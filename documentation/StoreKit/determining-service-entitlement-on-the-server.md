@@ -6,7 +6,7 @@
 
 Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.
 
-#### Overview
+## Overview
 
 > **Note**:  This sample code project is associated with WWDC22 session [110404: Implement proactive Apple In-App Purchase restore](https://developer.apple.com/wwdc22/110404/).
 >
@@ -19,7 +19,7 @@ This server-side sample code project analyzes a receipt to help the app determin
 - URL: `localhost:3000/simulate` — Use `/simulate` for testing using real or artificial receipts. This endpoint requires no special configuration.
 - URL: `localhost:3000/entitle` — Use `/entitle` with real Base64-encoded receipts. This endpoint requires additional configuration.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Follow these steps to run the sample code project:
 
@@ -31,7 +31,7 @@ Follow these steps to run the sample code project:
 6. In Terminal, enter `npm start` and press Return to start the server. The server runs in your Terminal window. To stop the server, press Control-C while in Terminal.
 7. In Terminal, choose Shell > New Windows > New Window with Profile to open a second Teminal window to use to send the requests.
 
-##### Send a request using sample receipt data
+### Send a request using sample receipt data
 
 The requests to the service entitlement engine take JSON data from a receipt. The data must be in the same JSON format that you receive by calling the `/verifyReceipt` endpoint when you pass it a valid receipt. The example file `flatJSONExample` in the `Source/Example` directory contains sample receipt data in the correct format for the requests.
 
@@ -45,7 +45,7 @@ If the mocked JSON receipt data is in the correct format, the response contains 
 
 If you have real receipt data, replace the `<FLAT JSON DATA>` in the command with your receipt data.
 
-##### Receive the sample response
+### Receive the sample response
 
 The response contains the result of the engine’s analysis of the receipt data. Use it to determine whether a customer has the necessary entitlements to service, offers, or other messaging. The response object contains an array of subscription objects organized by product ID, each containing fields that provide insights for that subscription.
 

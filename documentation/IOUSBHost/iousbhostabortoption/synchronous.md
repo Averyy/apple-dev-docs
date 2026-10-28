@@ -20,7 +20,7 @@ case synchronous
 IOUSBHostAbortOptionSynchronous
 ```
 
-#### Discussion
+## Discussion
 
 This is the default argument for functions that abort pending input/output requests. All input/output requests must abort before functions can return.
 

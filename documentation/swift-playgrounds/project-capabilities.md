@@ -5,7 +5,7 @@
 
 Request access for your app to protected resources, services, or device hardware such as sensors.
 
-#### Overview
+## Overview
 
 Your app can access many of the powerful hardware features and system services — capabilities — that are available on a device. For example, you could use the microphone together with speech recognition services to provide a voice interface, or you could access geolocation services for navigation.
 
@@ -13,7 +13,7 @@ Think of these capabilities as belonging to the person on whose device your app 
 
 For more information about capabilities, see [Adding Capabilities to Your App](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Import the framework
+### Import the framework
 
 To use a capability, your code needs access to the relevant code module — usually a system framework. Start off by importing the framework at the top of your source file. For example, to access the user’s contacts, import the [Contacts](../Contacts/Contacts.md) framework.
 
@@ -21,7 +21,7 @@ To use a capability, your code needs access to the relevant code module — usua
 import Contacts
 ```
 
-##### Request permission from the user
+### Request permission from the user
 
 Many capabilities involve access to sensitive data, or use particular hardware features — such as finding a contact, or taking a photo. Before using one of these capabilities, you must explicitly request permission from the user. Do this when the person first tries to use the capability, so that the request makes most sense at the time.
 
@@ -47,10 +47,10 @@ The following table provides a list of the capabilities supported in Swift Playg
 | Capability | Framework or Class | Description |
 | --- | --- | --- |
 | App Tracking Transparency | [App Tracking Transparency](../AppTrackingTransparency/AppTrackingTransparency.md) | Required if your app uses the AppTrackingTransparency framework to collect data about end users and shares it with other companies for purposes of tracking across apps and websites. |
-| [App Transport Security](../BundleResources/information_property_list/nsapptransportsecurity.md) | N/A | Required if your app needs to adjust default security settings for HTTP connections. |
+| [App Transport Security](../BundleResources/information-property-list/nsapptransportsecurity.md) | N/A | Required if your app needs to adjust default security settings for HTTP connections. |
 | Bluetooth | [Core Bluetooth](https://developer.apple.com/bluetooth/) | Required if your app uses Bluetooth. |
 | Calendars | [EventKit](../EventKit/EventKit.md) | Required if your app accesses Calendar. |
-| Camera | [AVFoundation](../AVFoundation/cameras_and_media_capture.md) | Required if your app needs to use the device’s cameras. |
+| Camera | [AVFoundation](../AVFoundation/capture-setup.md) | Required if your app needs to use the device’s cameras. |
 | Contacts | [Contacts](../Contacts/Contacts.md) | Required if your app accesses Contacts. |
 | Core Location Always | [Core Location](../CoreLocation/CoreLocation.md), [MapKit](../MapKit/MapKit.md) | Required if your app needs access to the user’s location at all times. |
 | Core Location When in Use | [Core Location](../CoreLocation/CoreLocation.md), [MapKit](../MapKit/MapKit.md) | Required if your app accesses the user’s location when the app is in use. |
@@ -59,7 +59,7 @@ The following table provides a list of the capabilities supported in Swift Playg
 | File Access (macOS) | [FileManager](../Foundation/filemanager.md) in [Foundation](../Foundation/Foundation.md) | Required if your app needs to access files on the disk. |
 | Local Network | [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md), [Network](../Network/Network.md) | Any app that uses the local network, directly or indirectly, should include this description. This includes apps that use Bonjour and services implemented with Bonjour, as well as direct unicast or multicast connections to local hosts. |
 | Media Library | [Media Player](../MediaPlayer/MediaPlayer.md) | Required if your app needs access to the user’s iCloud Music library or Apple Music catalog. |
-| Microphone | [AVFoundation](../AVFoundation/cameras_and_media_capture.md) | Required if your app accesses the device’s microphone. |
+| Microphone | [AVFoundation](../AVFoundation/capture-setup.md) | Required if your app accesses the device’s microphone. |
 | Nearby Interaction | [Nearby Interaction](../NearbyInteraction/NearbyInteraction.md) | Required if your app uses the Nearby Interaction framework. Applies only to devices with a U1 chip. |
 | Network Connections (macOS) | [URLSession](../Foundation/urlsession.md) in [Foundation](../Foundation/Foundation.md) | Required if your app needs to receive incoming or perform outgoing network connections. |
 | Photo Library | [PhotoKit](../PhotoKit/PhotoKit.md) | Required if your app needs access to the user’s photo library. |
@@ -67,7 +67,7 @@ The following table provides a list of the capabilities supported in Swift Playg
 | Reminders | [EventKit](../EventKit/EventKit.md) | Required if your app accesses Reminders. |
 | Speech Recognition | [Speech](../Speech/Speech.md) | Required to perform speech recognition using Apple’s servers. |
 
-##### Add a custom purpose string
+### Add a custom purpose string
 
 You can supply your own custom purpose string to explain why your app requires a particular capability. Be specific and use straightforward language in your purpose string, so anyone using your app can clearly understand why they are being asked to grant permission for that capability. Here’s an example:
 
@@ -77,7 +77,7 @@ MyApp uses the camera to identify landmarks as you explore new places.
 
 In Swift Playgrounds you can add custom purpose strings by selecting App Settings in the sidebar, and then Capabilities. Tap or click the Add button (＋) to add the capabilities you need.
 
-##### Prepare your app for distribution
+### Prepare your app for distribution
 
 If you want to submit your app to TestFlight or to the App Store, you must add your own custom purpose string for each of the capabilities you use in your app before submitting your app to App Store Connect. You can do this in Swift Playgrounds by selecting App Settings in the sidebar, and then Capabilities.
 

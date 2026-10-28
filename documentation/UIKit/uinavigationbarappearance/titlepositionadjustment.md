@@ -23,7 +23,7 @@ var titlePositionAdjustment: UIOffset { get set }
 @property (nonatomic, assign, readwrite) UIOffset titlePositionAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values move the title down and to the right. Negative values move the title up and to the left.
 

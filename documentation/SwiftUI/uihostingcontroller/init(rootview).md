@@ -20,7 +20,7 @@ Creates a hosting controller object that wraps the specified SwiftUI view.
 @preconcurrency init(rootView: Content)
 ```
 
-#### Return Value
+## Return Value
 
 A `UIHostingController` object initialized with the specified SwiftUI view.
 

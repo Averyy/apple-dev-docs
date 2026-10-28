@@ -21,7 +21,7 @@ A single option in a scoring scale.
 struct ScaleOption
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let option = ScaleOption(

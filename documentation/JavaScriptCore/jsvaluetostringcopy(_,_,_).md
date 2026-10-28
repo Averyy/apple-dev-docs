@@ -24,7 +24,7 @@ func JSValueToStringCopy(_ ctx: JSContextRef!, _ value: JSValueRef!, _ exception
 JSStringRefJSValueToStringCopy(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) with the result of conversion, or `NULL` if the system throws an exception. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

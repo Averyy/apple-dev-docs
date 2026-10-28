@@ -26,7 +26,7 @@ func perform(_ request: ASAccountAuthenticationModificationRequest)
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 Only one request can be in progress at a time. If a request is already in progress, additional requests fail immediately.
 

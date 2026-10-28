@@ -24,7 +24,7 @@ static let releaseTime: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDReleaseTime;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the release time relative to the current time (`t = 0`), in seconds. It indicates when the pattern’s decay process begins. Its value ranges from `0` to `1`, with a default value of `0`.
 

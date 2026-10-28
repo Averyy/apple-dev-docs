@@ -15,11 +15,11 @@ Returns an attributed string derived from the given range in the receiver’s te
 - (NSAttributedString *) attributedSubstringFromRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The string created from the given range.
 
-#### Discussion
+## Discussion
 
 This method allows input mangers to query any range in text storage.
 

@@ -24,7 +24,7 @@ var semantic: MDLMaterialSemantic { get set }
 @property (nonatomic, assign) MDLMaterialSemantic semantic;
 ```
 
-#### Discussion
+## Discussion
 
 A material semantic determines how the material property’s value should be interpreted to produce a specific surface appearance in rendering. For example, the [`MDLMaterialSemantic.baseColor`](../mdlmaterialsemantic/basecolor.md) semantic defines the default color of each pixel on a rendered surface before shading effects are applied.
 

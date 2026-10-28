@@ -15,11 +15,11 @@ Returns the line number of the current parse location.
 extern CFIndex CFXMLParserGetLineNumber(CFXMLParserRef parser);
 ```
 
-#### Return Value
+## Return Value
 
 The line number of the current location.
 
-#### Discussion
+## Discussion
 
 This function is typically used in conjunction with the [`CFXMLParserHandleErrorCallBack`](./cfxmlparserhandleerrorcallback.md) function so that error location information can be reported.
 

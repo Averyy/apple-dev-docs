@@ -27,7 +27,7 @@ func open(withLocalEndpoint localEndpoint: NWHostEndpoint?) async throws
 - (void) openWithLocalEndpoint:(NWHostEndpoint *) localEndpoint completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NEAppProxyFlow`](../neappproxyflow.md) object starts out in the unopened state. When the system passes a flow to your app proxy provider by calling [`handleNewFlow(_:)`](../neappproxyprovider/handlenewflow%28_%29.md), to need to set up the state necessary to handle the flow’s data, and then call this method.
 

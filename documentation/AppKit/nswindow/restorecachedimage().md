@@ -21,7 +21,7 @@ func restoreCachedImage()
 - (void) restoreCachedImage;
 ```
 
-#### Discussion
+## Discussion
 
 You must invoke [`flush()`](./flush%28%29.md) after this method to guarantee proper redisplay. An `NSWindow` object automatically discards its cached image rectangles when it displays.
 

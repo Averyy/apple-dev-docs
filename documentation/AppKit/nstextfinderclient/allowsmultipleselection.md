@@ -19,7 +19,7 @@ optional var allowsMultipleSelection: Bool { get }
 @property (readonly) BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 If this properties is not implemented, the text finder will act as if they returned [`true`](../../Swift/true.md).
 

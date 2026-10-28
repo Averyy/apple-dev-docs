@@ -23,7 +23,7 @@ var isViewLoaded: Bool { get }
 @property (nonatomic, readonly, getter=isViewLoaded) BOOL viewLoaded;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the view is in memory or [`false`](../../Swift/false.md) when it is not. Accessing this property does not attempt to load the view if it is not currently in memory.
 

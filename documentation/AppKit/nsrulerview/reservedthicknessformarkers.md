@@ -19,7 +19,7 @@ var reservedThicknessForMarkers: CGFloat { get set }
 @property CGFloat reservedThicknessForMarkers;
 ```
 
-#### Discussion
+## Discussion
 
 The default thickness reserved for markers is 15.0 PostScript units for a horizontal ruler and 0.0 PostScript units for a vertical ruler (under the assumption that vertical rulers rarely contain markers). If you don’t expect to have any markers on the ruler, you can set the reserved thickness to 0.0.
 

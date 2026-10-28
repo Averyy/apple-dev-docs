@@ -25,7 +25,7 @@ func didStartSending(_ message: MSMessage, conversation: MSConversation)
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 Override this method to respond when the user sends an [`MSMessage`](../msmessage.md) object. This method is called if you use the conversation’s [`insert(_:completionHandler:)`](../msconversation/insert%28_,completionhandler%29-3g248.md) method to add an [`MSMessage`](../msmessage.md) object to the Messages app’s input field, and the user taps Send. It does not guarantee  that the message will be successfully sent or delivered.
 

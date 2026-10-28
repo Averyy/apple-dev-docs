@@ -11,9 +11,9 @@ Delete localization metadata that’s associated with an achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a Game Center Achievement Localization`](./delete-v2-gamecenterachievementlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

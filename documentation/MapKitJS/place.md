@@ -19,7 +19,7 @@ class Place
 
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 [`GeocoderResponse`](./geocoderresponse.md), [`SearchResponse`](./searchresponse.md), and [`PointsOfInterestSearchResponse`](./pointsofinterestsearchresponse.md) return places.
 

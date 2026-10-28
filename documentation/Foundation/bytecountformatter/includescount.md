@@ -25,7 +25,7 @@ var includesCount: Bool { get set }
 @property BOOL includesCount;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md) and [`includesUnit`](./includesunit.md) is set to [`false`](../../Swift/false.md), no unit is displayed. For example, a value of 723 KB is formatted as `723`.
 

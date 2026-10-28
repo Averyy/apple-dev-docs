@@ -36,7 +36,7 @@ nonisolated
 init<S, C>(_ title: S, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where S : StringProtocol, C : RandomAccessCollection
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. See `Text` for more information about localizing strings.
 

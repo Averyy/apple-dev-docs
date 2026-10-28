@@ -21,7 +21,7 @@ Returns a vector point from a single-precision vector.
 init(_ xyz: simd_double3)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

@@ -5,11 +5,11 @@
 
 Deliver content to the customer after validating the purchase.
 
-#### Overview
+## Overview
 
 After a purchase is complete, it’s your responsibility to make sure that you programmatically make the content available to the customer.
 
-##### Identify the purchased content
+### Identify the purchased content
 
 For an Apple In-App Purchase product that enables app functionality, such as a premium subscription, set a Boolean value to enable the code path and update your user interface as needed. Consult your app’s persistent transaction record to determine the functionality to unlock. Your app needs to update this Boolean value whenever the user completes a purchase and at app launch. For information on making a persistent record, see [Persisting a purchase](./persisting-a-purchase.md).
 
@@ -66,7 +66,7 @@ if (rocketCarEnabled) {
 }
 ```
 
-##### Deliver associated content
+### Deliver associated content
 
 Your app needs to deliver any content associated with the purchased product to the user. For example, purchasing instruments in a music app requires delivering the sound files needed to let the user play those instruments. You can embed that content in your app bundle or download it as necessary. Each approach has its advantages and disadvantages.
 
@@ -76,7 +76,7 @@ Download larger files only when needed. Separating content from your app bundle 
 
 > **Note**:  You can’t patch your app binary or download executable code. Your app needs to contain all executable code necessary to support all of its functionality when you submit it. If a new product requires code changes, submit an updated version of your app.
 
-##### Load local content
+### Load local content
 
 Load local content using the `NSBundle` class as you load other resources from your app bundle.
 
@@ -96,7 +96,7 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"rocketCar"
 
 ```
 
-##### Download content from your own server
+### Download content from your own server
 
 As with all interactions between your app and your server, the details and process of downloading content from your own server are your responsibility. The communication consists of, at a minimum, the following steps:
 
@@ -108,11 +108,11 @@ Ensure that your app handles errors gracefully. For example, if the device runs 
 
 Consider the security implications of how you host your content and how your app communicates with your server. For more information, see [Security Overview](https://developer.apple.com/library/archive/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976).
 
-##### Download content using on-demand resources
+### Download content using on-demand resources
 
 You can use [On-Demand Resources](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html) (ODR) for flexibility in downloading data in your app. ODR is an Apple-hosted service you use to store Apple In-App Purchase data that your app downloads after you verify the user’s purchase using the app receipt. ODR doesn’t require a call to restore transactions and authenticate the user to download content hosted on Apple’s server.
 
-##### Download hosted content from Apple’s server
+### Download hosted content from Apple’s server
 
 > ❗ **Important**:  [`SKDownload`](./skdownload.md) and its related functionality are deprecated. The following information is for apps that already host content on Apple’s servers and use [`SKDownload`](./skdownload.md).
 

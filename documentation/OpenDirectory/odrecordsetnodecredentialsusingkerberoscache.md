@@ -16,11 +16,11 @@ Sets credentials for interacting with a record’s node with the Kerberos cache.
 extern bool ODRecordSetNodeCredentialsUsingKerberosCache(ODRecordRef record, CFStringRef cacheName, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the credentials are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If you want to set credentials for all references to a node, use [`ODNodeSetCredentialsUsingKerberosCache`](./odnodesetcredentialsusingkerberoscache.md) instead.
 

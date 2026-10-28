@@ -4,7 +4,7 @@
 
 Creates a generic element with its contained elements arranged through TVML styles.
 
-#### Overview
+## Overview
 
 The `card` element provides the ability to manually arrange its containing elements. It creates a view where the elements it contains are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default.
 
@@ -12,7 +12,7 @@ The `card` element provides the ability to manually arrange its containing eleme
 
 Elements contained in the same position are arranged from the top of the cell to the bottom, in the same order in which they are specified in the `card` element. You can specify a `<background><img /></background>` that displays a background image inside of the `card`. The background image is top-aligned and is fitted to the size of the `card` while keeping the image’s original aspect ratio. Text wrapping inside of the `card` only occurs in the `header`, `center`, and `footer` positions.
 
-##### Subelements of card
+### Subelements of card
 
 - [background](./background.md)
 - [badge](./badge.md)
@@ -27,7 +27,7 @@ Elements contained in the same position are arranged from the top of the cell to
 - [text](./text.md)
 - [textBadge](./textbadge.md)
 
-##### Elements that Use card
+### Elements that Use card
 
 - [grid](./grid.md)
 - [shelf](./shelf.md)

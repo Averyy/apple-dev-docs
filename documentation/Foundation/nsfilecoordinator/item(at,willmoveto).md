@@ -25,7 +25,7 @@ func item(at oldURL: URL, willMoveTo newURL: URL)
 - (void) itemAtURL:(NSURL *) oldURL willMoveToURL:(NSURL *) newURL;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended for apps that adopt App Sandbox.
 

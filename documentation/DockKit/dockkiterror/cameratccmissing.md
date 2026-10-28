@@ -18,7 +18,7 @@ The camera terms and conditions are missing.
 case cameraTCCMissing
 ```
 
-#### Discussion
+## Discussion
 
 In order for DockKit to access the camera, a person must accept the terms and conditions. If you receive this error, show an alert indicating that terms and conditions are necessary.
 

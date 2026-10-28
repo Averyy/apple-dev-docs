@@ -26,7 +26,7 @@ func updateAssociatedServiceType(_ serviceType: String?) async throws
 - (void) updateAssociatedServiceType:(NSString *) serviceType completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only valid for services of type [`HMServiceTypeOutlet`](../hmservicetypeoutlet.md) or [`HMServiceTypeSwitch`](../hmservicetypeswitch.md). See [`associatedServiceType`](./associatedservicetype.md) for details of associated service types.
 

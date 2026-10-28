@@ -21,7 +21,7 @@ The minimum weight of each leaf node.
 var minimumChildWeight: Double
 ```
 
-#### Discussion
+## Discussion
 
 Larger values result in more conservative tree learning and help prevent overfitting. If the tree learning algorithm results in a leaf node with the sum of instance weights less than this value, tree building will terminate. Defaults to 0.1
 

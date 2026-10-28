@@ -15,7 +15,7 @@ A Boolean value indicating if box is acquired.
 bool IsAcquired();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

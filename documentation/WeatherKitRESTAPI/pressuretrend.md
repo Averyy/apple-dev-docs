@@ -21,7 +21,7 @@ string PressureTrend
 - `falling`
 - `steady`
 
-#### Possible Values
+## Possible Values
 
 - **rising**: The sea level air pressure is increasing.
 - **falling**: The sea level air pressure is decreasing.

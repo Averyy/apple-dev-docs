@@ -19,7 +19,7 @@ let kSecPropertyKeyType: CFString
 extern CFStringRef const kSecPropertyKeyType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values for this key are described in [Certificate Property Type Values](./certificate-property-type-values.md).
 

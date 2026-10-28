@@ -24,11 +24,11 @@ class func colorCrossPolynomial() -> any CIFilter & CIColorCrossPolynomial
 + (CIFilter<CIColorCrossPolynomial> *) colorCrossPolynomialFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color cross polynomial filter to an image. The effect targets each pixel individually and calculates the coefficients for the r`ed`, `green`, and `blue` channels according to the polynomial cross product.
 

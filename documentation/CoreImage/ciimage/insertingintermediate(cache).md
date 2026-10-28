@@ -24,7 +24,7 @@ func insertingIntermediate(cache: Bool) -> CIImage
 - (CIImage *) imageByInsertingIntermediate:(BOOL) cache;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`CIImage`](../ciimage.md).
 

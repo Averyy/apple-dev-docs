@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioCntrol type attribute.
 #define kIOAudioControlTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this text attribute may be defined by the driver, however system-defined types recognized by the upper-level software are "Level", "Mute", "Selector".
 

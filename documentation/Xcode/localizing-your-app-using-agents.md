@@ -5,13 +5,13 @@
 
 Use agentic coding tools to translate the strings in your app into multiple languages and regions.
 
-#### Overview
+## Overview
 
 Agents simplify the localization of your app by performing tasks for you, such as adding languages, updating string catalogs, translating strings, and even adding language-specific plural variants when needed. Xcode gives the right context and language-specific style guidance to agents so they make the best translations for your app.
 
 Before you begin, enable an agent in Intelligence settings and choose that agent in the coding assistant. For more information, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
-#### Add languages and translations
+## Add languages and translations
 
 In the coding assistant, enter a prompt in the message text field, such as:
 
@@ -36,7 +36,7 @@ After the agent completes the translations, Xcode shows a summary of the changes
 
 To differentiate agentic translations from those that you provide, Xcode sets the state of translations to Machine Translated in the string catalog editor. If you export your localizations to XML Localization Interchange File Format (XLIFF), Xcode sets the `state-qualifier` property to `leveraged-mt` as well.
 
-#### Use localizable APIs
+## Use localizable APIs
 
 If Xcode omits some user-facing strings when updating string catalogs, make sure you’re using localizable APIs in your code.
 
@@ -50,7 +50,7 @@ Update your Swift code to use the initializer and build your app again to update
 
 For additional initializer options, see [Creating a Localized String](../Swift/string.md). For UIKit and AppKit, make sure you use similar localizable APIs. For more information, see [Preparing your app’s text for translation](./preparing-your-apps-text-for-translation.md).
 
-#### Generate translations in the string catalog editor
+## Generate translations in the string catalog editor
 
 You can also generate specific translations in the string catalog editor. Use the Generate Translations button in the editor toolbar to add translations to languages and strings:
 
@@ -62,7 +62,7 @@ You can also Control-click a language in the sidebar or string in the editor and
 
 ![A screenshot that shows the Project navigator on the left and the string catalog editor on the right. The string catalog editor shows German added with zero percent translation in the sidebar, a string selected in the detail area, and the Generate Translations button in the toolbar.](https://developer.apple.com/tutorials/images/com.apple.Xcode/string-catalog-editor-generate-translations-button@2x.png)
 
-#### Test machine translations
+## Test machine translations
 
 You can immediately test the translations in a preview or by running your app on a simulated or physical device.
 
@@ -74,7 +74,7 @@ Also, verify that right-to-left languages have enough space. For more informatio
 
 Get feedback from people who speak the languages and live in the regions you support. For distribution options, including using TestFlight, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md) and [Distributing your app for beta testing and releases](./distributing-your-app-for-beta-testing-and-releases.md).
 
-#### Provide translation guidance
+## Provide translation guidance
 
 You can add translation guidance to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, that agents automatically read. For example, in your agent configuration file, refer to your translation guidance that you store in a separate `TRANSLATION.md` file in your project. You can include a glossary of terms your app uses or a list of strings that the agent shouldn’t translate.
 

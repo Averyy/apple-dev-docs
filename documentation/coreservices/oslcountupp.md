@@ -20,7 +20,7 @@ typealias OSLCountUPP = OSLCountProcPtr
 typedef OSLCountProcPtr OSLCountUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a count callback function, see [`OSLCountProcPtr`](./oslcountprocptr.md). 
 

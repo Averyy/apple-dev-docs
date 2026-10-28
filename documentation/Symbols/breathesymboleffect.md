@@ -21,7 +21,7 @@ A symbol effect that applies the Breathe animation to symbol images.
 struct BreatheSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The Breathe animation smoothly scales a symbol up and down.
 

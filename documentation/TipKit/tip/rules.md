@@ -23,7 +23,7 @@ The rules that determine when a tip is eligible for display. For more informatio
 .RuleBuilder var rules: [Self.Rule] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to define the rules for when your tips display. If you don’t supply a value, this property returns an empty array of type `Rule`.
 

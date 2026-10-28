@@ -25,15 +25,15 @@ func CFStringCreateByCombiningStrings(_ alloc: CFAllocator!, _ theArray: CFArray
 extern CFStringRefCFStringCreateByCombiningStrings(CFAllocatorRef alloc, CFArrayRef theArray, CFStringRef separatorString);
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains a concatenation of the strings in `theArray` separated by `separatorString`. The order of the substrings in the string is identical to the order of the elements in `theArray`.
 
-#### Discussion
+## Discussion
 
 If `theArray` is empty, returns an empty CFString object; if `theArray` contains one CFString object, that object is returned (without the separator string). Returns `NULL` if there was a problem in creating the string. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 See also [`CFStringCreateArrayBySeparatingStrings(_:_:_:)`](./cfstringcreatearraybyseparatingstrings%28_,_,_%29.md).
 

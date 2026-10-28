@@ -24,7 +24,7 @@ let kCVMetalTextureCacheMaximumTextureAgeKey: CFString
 extern CFStringRef const kCVMetalTextureCacheMaximumTextureAgeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. To disable the age-out mechanism completely, set a maximum texture age of `0`. The cache can be manually evicted with [`CVMetalTextureCacheFlush(_:_:)`](./cvmetaltexturecacheflush%28_,_%29.md).
 

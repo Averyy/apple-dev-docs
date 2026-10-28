@@ -28,7 +28,7 @@ var showsNodeCount: Bool { get set }
 
 - [Maximizing Node Drawing Performance](../maximizing-node-drawing-performance.md)
 
-#### Discussion
+## Discussion
 
 When you enable this option, it shows the number of nodes currently in the scene’s node tree.
 

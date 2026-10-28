@@ -25,7 +25,7 @@ class OSLogPosition
 @interface OSLogPosition : NSObject
 ```
 
-#### Overview
+## Overview
 
 Generate positions with [`OSLogStore`](./oslogstore.md) instance methods and use them to view entries from a particular starting point.
 

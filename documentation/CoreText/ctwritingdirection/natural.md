@@ -23,7 +23,7 @@ case natural
 kCTWritingDirectionNatural
 ```
 
-#### Discussion
+## Discussion
 
 The writing direction is algorithmically determined using the Unicode Bidirectional Algorithm rules P2 and P3.
 

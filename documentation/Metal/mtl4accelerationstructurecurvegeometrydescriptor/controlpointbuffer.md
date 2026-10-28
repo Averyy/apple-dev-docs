@@ -24,7 +24,7 @@ var controlPointBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange controlPointBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Control points are interpolated according to the basis function you specify in [`curveBasis`](./curvebasis.md).
 

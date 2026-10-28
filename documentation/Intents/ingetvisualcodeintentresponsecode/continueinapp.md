@@ -25,7 +25,7 @@ case continueInApp
 INGetVisualCodeIntentResponseCodeContinueInApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you want Siri to launch your app to display the visual code.
 

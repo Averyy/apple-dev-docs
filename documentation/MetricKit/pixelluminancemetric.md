@@ -16,7 +16,7 @@ A metric that measures the average luminosity of pixels on an OLED display.
 struct PixelLuminanceMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.pixelLuminance(_:)`](./metricresult/pixelluminance%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

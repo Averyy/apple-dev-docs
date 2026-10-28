@@ -16,7 +16,7 @@ Creates an instance of the critical messenger object.
 override dynamic init()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer directly, create an instance of [`MSCriticalSMSMessenger`](../mscriticalsmsmessenger.md) instead.
 

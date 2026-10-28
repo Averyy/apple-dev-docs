@@ -24,7 +24,7 @@ static var portrait: PreviewTrait<Preview.ViewTraits> { get }
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`portrait`](../../SwiftUI/interfaceorientation/portrait.md) and is the default orientation if you don’t specify one.
 

@@ -22,7 +22,7 @@ Applies the given stoke drawn map overlays using the line width you specify.
 @preconcurrency func stroke(lineWidth: CGFloat = 1) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) with overlays drawn with `lineWidth` you specified.
 

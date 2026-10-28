@@ -23,7 +23,7 @@ var isEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the content blocker is enabled; otherwise [`false`](../../Swift/false.md).
 

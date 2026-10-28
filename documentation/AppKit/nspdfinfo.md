@@ -19,7 +19,7 @@ class NSPDFInfo
 @interface NSPDFInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Typically, a PDF panel—that is, a panel created by an [`NSPDFPanel`](./nspdfpanel.md) object—displays the information supplied by an [`NSPDFInfo`](./nspdfinfo.md) object when the user wants to export content as a PDF file. A PDF panel can also update a PDF info object with information it receives from the user.
 

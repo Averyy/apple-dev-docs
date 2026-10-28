@@ -23,11 +23,11 @@ static func dateTime(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.Ti
 
 Available when `Self` is `Date.ParseStrategy`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches date substrings as Foundation [`Date`](../../Foundation/date.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches date substrings in accordance with the formatting of Foundation’s [`Date.FormatStyle`](../../Foundation/date/formatstyle.md). If your source contains only a date or a time, use the `.omitted` value for the `date` or `time` style parameter to ignore the missing part.
 

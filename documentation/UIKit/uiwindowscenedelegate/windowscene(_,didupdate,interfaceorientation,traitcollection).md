@@ -28,7 +28,7 @@ optional func windowScene(_ windowScene: UIWindowScene, didUpdate previousCoordi
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 The window scene environment typically changes in response to user actions. For example, the interface orientation changes in response to device orientation changes or screen mode in response to moving to another screen. Similarly, the user may resize scenes on iPad, which causes UIKit to report a change to the scene’s coordinate space. Use these changes to make any needed changes to your scene’s content or interface.
 

@@ -15,7 +15,7 @@ Removes all known world anchors from world tracking.
 final func removeAllAnchors() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `WorldTrackingProvider.Error`
 

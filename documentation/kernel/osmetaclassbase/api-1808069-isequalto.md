@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the objects are equal, `false` otherwise.
 
-#### Overview
+## Overview
 
 OSMetaClassBase implements this as a direct pointer comparison, since it has no other information to judge equality by. Subclasses generally override this function to do a more meaningful comparison. For example, OSString implements it to return `true` if `anObject` is derived from OSString and represents the same C string.
 

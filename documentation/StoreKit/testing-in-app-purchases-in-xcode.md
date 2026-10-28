@@ -5,17 +5,17 @@
 
 Use locally configured product data to test and debug your Apple In-App Purchases implementation.
 
-#### Overview
+## Overview
 
 Testing your StoreKit implementation in Xcode ensures that your app behaves correctly when your customers perform various tasks associated with subscriptions and Apple In-App Purchase transactions. Be sure to test a variety of Apple In-App Purchase scenarios, such as receipt validation, promotional offers, interrupted purchases, introductory offers, subscription renewals, and purchase restoration.
 
-##### Perform basic setup
+### Perform basic setup
 
 Before you begin StoreKit testing in Xcode, complete the steps in [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md), including creating a StoreKit configuration file, enabling StoreKit testing in Xcode, and preparing to validate receipts in the test environment. The test scenarios in this article require this basic setup.
 
 Select the relevant test scenarios to build a test plan for your app. Each test scenario provides additional setup steps, if necessary, along with instructions about how to minimally reset the environment to repeat the test.
 
-##### Validate a receipt in the test environment
+### Validate a receipt in the test environment
 
 Validating receipts is an integral part of handling and testing Apple In-App Purchases. As you test Apple In-App Purchases, StoreKit in Xcode generates receipts that are valid only in the test environment. Your app can validate the receipts locally using a certificate that Xcode provides.
 
@@ -39,7 +39,7 @@ if let appStoreReceiptURL = Bundle.main.appStoreReceiptURL,
 
 For more information, see [Validating receipts on the device](../AppStoreReceipts/validating-receipts-on-the-device.md).
 
-##### Test a promotional offer
+### Test a promotional offer
 
 For this test scenario, let’s assume the app determines that customers are eligible for the promotional offer when the subscription expires. Use the test environment to speed up the time rate so the subscription expires. Then, you’re ready to test the offer eligibility logic in your app.
 
@@ -67,7 +67,7 @@ See [Implementing promotional offers in your app](./implementing-promotional-off
 
 To test the same promotional offer purchase again, delete the transaction. In Xcode, choose Debug > StoreKit > Manage Transactions. Select the transaction for the promotional offer purchase, and click Delete.
 
-##### Test an interrupted purchase
+### Test an interrupted purchase
 
 An interrupted purchase is a transaction that requires the user to perform some action outside your app before the transaction can complete successfully. For example, the user may need to update a payment method or approve new terms and conditions. In Xcode, you can simulate a purchase interruption and its resolution to test how your code handles this scenario end-to-end. You can test this scenario for all Apple In-App Purchase product types.
 
@@ -88,7 +88,7 @@ To perform the test again for non-consumable products and subscriptions, delete 
 
 For consumable Apple In-App Purchases, you can test again without additional setup. To reset the test environment to its default behavior, select the StoreKit configuration file in Xcode, then choose Editor > Disable Interrupted Purchases.
 
-##### Test an introductory offer
+### Test an introductory offer
 
 Customers are eligible to redeem an introductory offer one time. Configure an introductory offer for a subscription in your StoreKit configuration file. For more information, see [Implementing introductory offers in your app](./implementing-introductory-offers-in-your-app.md).
 
@@ -104,7 +104,7 @@ Ensure that your app is eligible for an introductory offer by verifying there’
 
 To retry the same test scenario, delete the transaction that contains the introductory offer purchase. In Xcode, choose Debug > StoreKit > Manage Transactions. Select the transaction and click Delete. This resets the eligibility for the test user.
 
-##### Test restoring purchases without existing purchases
+### Test restoring purchases without existing purchases
 
 All apps need to provide a way for customers to restore purchases, such as by providing a Restore Purchases button. Test how your app handles this request when the customer has no existing purchases. For more information, see [Restoring purchased products](./restoring-purchased-products.md).
 
@@ -116,7 +116,7 @@ Include at least one non-consumable product, auto-renewable subscription, or non
 
 You can repeat this test scenario without additional steps.
 
-##### Test presenting the App Store sheet for managing subscriptions
+### Test presenting the App Store sheet for managing subscriptions
 
 Your app can present an App Store sheet that customers can use to manage their subscriptions.
 
@@ -138,7 +138,7 @@ See [`showManageSubscriptions(in:)`](./appstore/showmanagesubscriptions%28in%29.
 
 You can repeat this test scenario without additional steps.
 
-##### Test an offer code
+### Test an offer code
 
 Your app can present a sheet to redeem preconfigured offer codes.
 
@@ -160,7 +160,7 @@ See [`presentCodeRedemptionSheet()`](./skpaymentqueue/presentcoderedemptionsheet
 
 To retry the same test scenario, delete the transaction that contains the offer code purchase. In Xcode, choose Debug > StoreKit > Manage Transactions. Select the transaction and click Delete.
 
-##### Test billing retry and grace period for auto-renewable subscriptions
+### Test billing retry and grace period for auto-renewable subscriptions
 
 When billing for a subscription renewal fails, such as due to an expired card, the App Store retries billing and attempts to recover the subscription. You can enable a billing grace period for your app in App Store Connect so your subscribers can continue accessing paid content while the App Store retries billing. For more information about the billing grace period, see [Reducing Involuntary Subscriber Churn](./reducing-involuntary-subscriber-churn.md).
 
@@ -200,7 +200,7 @@ Test resolving a billing issue for billing retry, either with a billing grace pe
 5. Click the Resolve Issues button to resolve the billing issue.
 6. Test your app to verify that it provides access to the subscription features as you expect.
 
-##### Test price increase consent
+### Test price increase consent
 
 When you increase the price of an auto-renewable subscription by an amount that requires user consent, the App Store gives the user an opportunity to consent to the price increase by presenting a sheet in your app. Your app may defer presentation of the sheet to prevent it from appearing at an inconvenient time in the user interface. Users may also consent to a price increase outside your app. Test these scenarios in Xcode to verify that your app handles deferring or displaying the sheet.
 

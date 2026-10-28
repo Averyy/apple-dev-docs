@@ -21,7 +21,7 @@ class NSOpenGLLayer
 @interface NSOpenGLLayer : CAOpenGLLayer
 ```
 
-#### Overview
+## Overview
 
 Unlike [`CAOpenGLLayer`](../QuartzCore/caopengllayer.md), [`NSOpenGLLayer`](./nsopengllayer.md) uses AppKit types.
 

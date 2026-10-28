@@ -21,7 +21,7 @@ Programmatically logs debug information about a dispatch object.
 extern void dispatch_debug(dispatch_object_t object, const char *message, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Debug information is logged to the Console log.  This information can be useful as a debugging tool to view the internal state (current reference count, suspension count, etc.) of a dispatch object at the time the [`dispatch_debug`](./dispatch_debug.md) function is called.
 

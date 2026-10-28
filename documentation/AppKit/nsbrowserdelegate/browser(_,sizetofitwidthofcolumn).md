@@ -20,17 +20,17 @@ optional func browser(_ browser: NSBrowser, sizeToFitWidthOfColumn columnIndex: 
 - (CGFloat) browser:(NSBrowser *) browser sizeToFitWidthOfColumn:(NSInteger) columnIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The ideal width of the column. This method is used when performing a “right-size” operation, that is, when sizing a column to the smallest width that contains all the content without clipping or truncating.
 
-#### Discussion
+## Discussion
 
 If `columnIndex` is `–1`, you should return a size that can be uniformly applied to all columns (that is, every column will be set to this size).
 
 Returning a value of `-1` allows you to opt-out of providing a width for the requested column.
 
-#### Discussion
+## Discussion
 
 This method applies only to browsers with resize type [`NSBrowser.ColumnResizingType.userColumnResizing`](../nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md).
 

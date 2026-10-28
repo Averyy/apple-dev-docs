@@ -25,7 +25,7 @@ static let edgeCrease: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticEdgeCrease;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing crease data for each vertex in the geometry. SceneKit uses this information to determine the sharpness of edges and smoothness of surfaces when you change a geometry’s [`subdivisionLevel`](../../scngeometry/subdivisionlevel.md) property.
 

@@ -13,7 +13,7 @@
 IFNET_FAMILY_SLIP = 3
 ```
 
-#### Discussion
+## Discussion
 
 A SLIP interface.
 

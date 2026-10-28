@@ -12,7 +12,7 @@ virtual IOReturn GetEndpointPropertiesV3(
  IOUSBEndpointProperties *endpointProperties);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess if the endpoint is found, and kIOUSBEndpointNotFound if it is not.
 

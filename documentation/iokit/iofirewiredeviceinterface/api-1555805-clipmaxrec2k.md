@@ -14,7 +14,7 @@
 IOReturn (*ClipMaxRec2K)(IOFireWireLibDeviceRef self, Boolean clipMaxRec);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

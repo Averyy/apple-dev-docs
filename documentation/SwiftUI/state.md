@@ -27,7 +27,7 @@ A property wrapper type that can read and write a value managed by SwiftUI.
 - [Performing a search operation](./performing-a-search-operation.md)
 - [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**: When you build with Xcode 27 or later, the system uses the [`State()`](./state%28%29.md) macro instead.
 
@@ -49,7 +49,7 @@ SwiftUI manages the property’s storage. When the value changes, SwiftUI update
 
 Declare state as private in the highest view in the view hierarchy that needs access to the value. Then share the state with any subviews that also need access, either directly for read-only access, or as a binding for read-write access. You can safely mutate state properties from any thread.
 
-##### Share state with subviews
+### Share state with subviews
 
 If you pass a state property to a subview, SwiftUI updates the subview any time the value changes in the container view, but the subview can’t modify the value. To enable the subview to modify the state’s stored value, pass a [`Binding`](./binding.md) instead.
 
@@ -85,7 +85,7 @@ struct PlayerView: View {
 
 Initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
 
-##### Store observable objects
+### Store observable objects
 
 You can also store observable objects that you create with the [`Observable()`](../Observation/observable%28%29.md) macro in `State`; for example:
 
@@ -124,7 +124,7 @@ Delaying the creation of the observable state object ensures that unnecessary al
 
 > **Note**: It’s possible to store an object that conforms to the [`ObservableObject`](../Combine/observableobject.md) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](./stateobject.md) instead of [`State`](./state.md) when storing the object.
 
-##### Share observable state objects with subviews
+### Share observable state objects with subviews
 
 To share an [`Observable`](../Observation/observable.md) object stored in `State` with a subview, pass the object reference to the subview. SwiftUI updates the subview anytime an observable property of the object changes, but only when the subview’s [`body`](./view/body-8kl5o.md) reads the property. For example, in the following code `BookView` updates each time `title` changes but not when `isAvailable` changes:
 

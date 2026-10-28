@@ -26,7 +26,7 @@ func setExposureModeCustom(duration: CMTime, iso ISO: Float) async -> CMTime
 - (void) setExposureModeCustomWithDuration:(CMTime) duration ISO:(float) ISO completionHandler:(void (^)(CMTime syncTime)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an exception if you set the exposure duration or ISO values to an unsupported level
 

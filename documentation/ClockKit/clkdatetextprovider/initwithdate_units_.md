@@ -15,11 +15,11 @@ Creates and returns a text provider with the specified date and the default time
 - (instancetype) initWithDate:(NSDate *) date units:(NSCalendarUnit) calendarUnits;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified date and time zone information.
 
-#### Discussion
+## Discussion
 
 The text provider created by this method uses the default time zone information for the current user. Date values are formatted according to the user’s current locale information.
 

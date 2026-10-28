@@ -16,7 +16,7 @@ Applies a gravity force to the current element
 void force::gravity(float gravity)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__gravity.svg)
 

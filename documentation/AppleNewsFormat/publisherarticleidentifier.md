@@ -15,7 +15,7 @@ The identifier provided by the publisher.
 string PublisherArticleIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You can create links to articles using the publisher’s article identifier. See `identifier` in [`ArticleDocument`](./articledocument.md). The publisher’s article identifier maps to `articleId` for all articles.
 

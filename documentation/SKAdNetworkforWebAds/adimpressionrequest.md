@@ -19,7 +19,7 @@ object AdImpressionRequest
 
 - [Creating an attributable ad link](./creating-an-attributable-ad-link.md)
 
-#### Discussion
+## Discussion
 
 The device generates the [`AdImpressionRequest`](./adimpressionrequest.md) and sends it in the body of a [`Get a Signed Web Ad Impression Payload`](./get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md) request. The device uses the value from the `attributionSourceNonce` in a web ad link for the `source_nonce` value in this request. The ad network looks up the fully signed web ad impression using the `source_nonce` value, which it creates when it serves the attributable ad link.
 

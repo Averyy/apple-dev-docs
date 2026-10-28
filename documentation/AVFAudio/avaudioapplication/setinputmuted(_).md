@@ -25,7 +25,7 @@ func setInputMuted(_ muted: Bool) throws
 - (BOOL) setInputMuted:(BOOL) muted error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 In platforms that use [`AVAudioSession`](../avaudiosession.md), setting the value to [`true`](../../Swift/true.md) mutes all sources of audio input in the app. In macOS, the system instead invokes the callback that you register by calling [`setInputMuteStateChangeHandler(_:)`](./setinputmutestatechangehandler%28_%29.md) to handle input muting.
 

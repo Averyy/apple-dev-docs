@@ -24,7 +24,7 @@ enum Result
 enum AVAssetImageGeneratorResult : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The constants used in the block completion handler for [`generateCGImagesAsynchronously(forTimes:completionHandler:)`](./generatecgimagesasynchronously%28fortimes,completionhandler%29.md).
 

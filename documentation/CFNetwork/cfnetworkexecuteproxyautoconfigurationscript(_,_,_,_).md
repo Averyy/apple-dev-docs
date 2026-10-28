@@ -24,7 +24,7 @@ func CFNetworkExecuteProxyAutoConfigurationScript(_ proxyAutoConfigurationScript
 extern CFRunLoopSourceRefCFNetworkExecuteProxyAutoConfigurationScript(CFStringRef proxyAutoConfigurationScript, CFURLRef targetURL, CFProxyAutoConfigurationResultCallback cb, CFStreamClientContext *clientContext);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns a run loop source that the caller should schedule. Once execution of the script has completed, the specified callback function is called.
 

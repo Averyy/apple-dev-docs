@@ -34,7 +34,7 @@ var title: INSpeakableString { get }
 @property (atomic, copy, readonly) INSpeakableString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title text describes the purpose of the tasks.
 

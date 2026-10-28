@@ -17,7 +17,7 @@ Element-wise multiplication with a [`ScalarOrArray`](../scalarorarray.md) (scala
 static func * (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`*(_:_:)`](./star%28_,_%29-1z2ck.md)

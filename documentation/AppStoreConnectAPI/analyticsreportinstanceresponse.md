@@ -15,7 +15,7 @@ The response body for endpoints that read a single analytics report instance.
 object AnalyticsReportInstanceResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read Report Instance Information`](./get-v1-analyticsreportinstances-_id_.md).
 

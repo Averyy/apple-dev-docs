@@ -21,7 +21,7 @@ An object that provides the supported comparators you use to describe the differ
 final class EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType> where Entity : AppEntity, Subject : AppEntity, Property : EntityProperty<PropertyType>, PropertyType : _IntentValue, PropertyType : Sendable
 ```
 
-#### Overview
+## Overview
 
 Entity query properties are defined by by providing a `KeyPath` to an [`AppEntity`](./appentity.md) property in your data model that this property applies to and then specify the set of supported [`EntityQueryComparator`](./entityquerycomparator.md)s for this property.
 

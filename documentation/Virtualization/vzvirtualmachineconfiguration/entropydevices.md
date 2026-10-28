@@ -19,7 +19,7 @@ var entropyDevices: [VZEntropyDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZEntropyDeviceConfiguration *> * entropyDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. Add one or more entropy configuration objects if you want to provide the guest operating system with a source of entropy for its random number generator.
 

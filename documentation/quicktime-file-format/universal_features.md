@@ -4,7 +4,7 @@
 
 Features that you include in any file that includes a profile atom.
 
-#### Overview
+## Overview
 
 A feature consists of four fields: a reserved field, which is set to zero; a part-ID, which specifies which brand the feature belongs to; a feature code, which identifies the feature; and a value field, which holds the feature value).
 

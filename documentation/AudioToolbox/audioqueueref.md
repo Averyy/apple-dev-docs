@@ -24,7 +24,7 @@ typealias AudioQueueRef = OpaquePointer
 typedef struct OpaqueAudioQueue * AudioQueueRef;
 ```
 
-#### Discussion
+## Discussion
 
 An audio queue is a software object you use for recording or playing audio in macOS. It does the work of:
 

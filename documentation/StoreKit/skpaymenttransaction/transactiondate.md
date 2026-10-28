@@ -27,7 +27,7 @@ var transactionDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * transactionDate;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.purchased`](../skpaymenttransactionstate/purchased.md) or [`SKPaymentTransactionState.restored`](../skpaymenttransactionstate/restored.md).
 

@@ -18,7 +18,7 @@ Adds an entry to the queue, but doesn’t automatically send a data-available no
 kern_return_t EnqueueWithCoalesce(uint32_t dataSize, bool *sendDataAvailable, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, [`kIOReturnOverrun`](../kioreturnoverrun.md) if the queue was full, or [`kIOReturnError`](../kioreturnerror.md) if the queue is corrupt. See [Error Codes](../error-codes.md).
 

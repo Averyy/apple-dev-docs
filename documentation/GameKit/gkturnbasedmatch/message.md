@@ -37,7 +37,7 @@ var message: String? { get set }
 
 - [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Set this property only when the local player is the current participant and before you invoke a method that generates a turn-based event.
 

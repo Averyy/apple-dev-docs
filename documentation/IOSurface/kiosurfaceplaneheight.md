@@ -24,7 +24,7 @@ let kIOSurfacePlaneHeight: CFString
 extern CFStringRef const kIOSurfacePlaneHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Required for image planes.
 

@@ -19,7 +19,7 @@ var indentationLevel: Int { get set }
 @property NSInteger indentationLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The `indentationLevel` value is archived.
 

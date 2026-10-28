@@ -23,7 +23,7 @@ class MLCComparisonLayer
 @interface MLCComparisonLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 The layer returns a tensor with the shape equal to the largest shape of operations. It fills with the Boolean value `result[i] = op1[i] ? op2[i]`, where `?` corresponds to the  [`MLCComparisonOperation`](./mlccomparisonoperation.md) you specify.
 

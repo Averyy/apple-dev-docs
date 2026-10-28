@@ -21,7 +21,7 @@ Creates an environment values instance.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 You don’t typically create an instance of [`EnvironmentValues`](../environmentvalues.md) directly. Doing so would provide access only to default values that don’t update based on system settings or device characteristics. Instead, you rely on an environment values’ instance that SwiftUI manages for you when you use the [`Environment`](../environment.md) property wrapper and the [`environment(_:_:)`](../view/environment%28_,_%29.md) view modifier.
 

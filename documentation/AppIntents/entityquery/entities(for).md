@@ -26,7 +26,7 @@ func entities(for identifiers: [Self.Entity.ID]) async throws -> [Self.Entity]
 
 - [Defining app entities for your custom data types](../defining-app-entities-for-your-custom-data-types.md)
 
-#### Discussion
+## Discussion
 
 The system skips identifiers that have no matching entity, so the returned array can have fewer entries than the supplied identifiers.
 

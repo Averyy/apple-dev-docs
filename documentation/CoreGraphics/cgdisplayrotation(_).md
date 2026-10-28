@@ -20,11 +20,11 @@ func CGDisplayRotation(_ display: CGDirectDisplayID) -> Double
 extern double CGDisplayRotation(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The rotation angle of the display in degrees, or 0 if the display is not valid.
 
-#### Discussion
+## Discussion
 
 This function returns the rotation angle of a display in a clockwise direction. For example, if the specified display is rotated clockwise 90 degrees, then this function returns 90.0. After a 90-degree clockwise rotation, the physical bottom of the display is on the left side and the physical top is on the right side.
 

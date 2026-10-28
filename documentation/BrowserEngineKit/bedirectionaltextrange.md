@@ -22,7 +22,7 @@ struct BEDirectionalTextRange
 typedef struct { ... } BEDirectionalTextRange;
 ```
 
-#### Overview
+## Overview
 
 This class encapsulates instructions that modify a text selection. In a given instance, the sign of [`length`](./bedirectionaltextrange/length.md) determines the selection direction from its [`offset`](./bedirectionaltextrange/offset.md). Positive length indicates moving the selection forward in the string, whereas a negative  [`length`](./bedirectionaltextrange/length.md) moves the selection backward in the string. For example, applying a directional text range of `{ -6, -2 }` to the selection “world” in the string “Hello world” results in the selection, “Hel”.
 

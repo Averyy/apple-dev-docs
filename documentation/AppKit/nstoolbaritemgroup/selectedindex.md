@@ -22,7 +22,7 @@ var selectedIndex: Int { get set }
 @property NSInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 When using the [`NSToolbarItemGroup.SelectionMode.selectAny`](./selectionmode-swift.enum/selectany.md) or [`NSToolbarItemGroup.SelectionMode.momentary`](./selectionmode-swift.enum/momentary.md) selection mode, don’t assume that this value represents the selected subitem. This method returns the index of the most recently selected subitem.
 

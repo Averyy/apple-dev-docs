@@ -20,11 +20,11 @@ init?(keyboardEventSource source: CGEventSource?, virtualKey: CGKeyCode, keyDown
 extern CGEventRefCGEventCreateKeyboardEvent(CGEventSourceRef source, CGKeyCode virtualKey, bool keyDown);
 ```
 
-#### Return Value
+## Return Value
 
 A new keyboard event, or `NULL` if the event could not be created. When you no longer need the event, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 All keystrokes needed to generate a character must be entered, including modifier keys.  For example, to produce a ‘Z’, the SHIFT key must be down, the ‘z’ key must go down, and then the SHIFT and ‘z’ key must be released:
 

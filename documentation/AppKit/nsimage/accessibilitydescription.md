@@ -19,7 +19,7 @@ var accessibilityDescription: String? { get set }
 @property (copy, nullable) NSString * accessibilityDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This description is used automatically by interface elements that display images.  Like all accessibility descriptions, use a short localized string that does not include the name of the interface element.  For instance, “delete” rather than “delete button”.
 

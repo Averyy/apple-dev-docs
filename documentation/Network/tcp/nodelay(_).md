@@ -21,7 +21,7 @@ Disable Nagle’s algorithm.
 func noDelay(_ noDelay: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating that TCP should disable Nagle’s algorithm (`TCP_NODELAY`).
 

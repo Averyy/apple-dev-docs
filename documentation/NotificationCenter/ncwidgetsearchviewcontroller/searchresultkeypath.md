@@ -21,7 +21,7 @@ var searchResultKeyPath: String? { get set }
 @property (copy, nullable) NSString * searchResultKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The search view controller uses the key path to find the textual description of each object in [`searchResults`](./searchresults.md). The default value of this property is “description”.
 

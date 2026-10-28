@@ -17,7 +17,7 @@ Reverts the receiver.
 - (BOOL) revertToSavedFromURL:(NSURL *) url ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Reverts the receiver to the data stored at `aURL` of type `type`. Invokes [`readFromURL:ofType:`](./readfromurl_oftype_.md) and returns whether that method successfully read the file and processed the document data.
 

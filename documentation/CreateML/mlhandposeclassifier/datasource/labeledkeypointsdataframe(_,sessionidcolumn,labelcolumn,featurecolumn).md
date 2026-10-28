@@ -19,7 +19,7 @@ Creates a data source from a data frame of hand pose observations that each cont
 case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String = __Defaults.sessionIdColumnName, labelColumn: String = __Defaults.labelColumnName, featureColumn: String = __Defaults.featureColumnName)
 ```
 
-#### Discussion
+## Discussion
 
 - dataFrame: A data frame that contains the hand-joint locations and annotations for a set of hand poses.
 - sessionIdColumn: The name of the column in the data frame that contains the hand pose session identifiers.

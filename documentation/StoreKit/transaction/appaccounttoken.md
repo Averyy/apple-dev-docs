@@ -25,7 +25,7 @@ let appAccountToken: UUID?
 
 - [Generating a signature for promotional offers](../generating-a-signature-for-promotional-offers.md)
 
-#### Discussion
+## Discussion
 
 You create an [`appAccountToken(_:)`](../product/purchaseoption/appaccounttoken%28_%29.md) and send it to the App Store when a customer initiates an in-app purchase. The App Store returns the same value in [`appAccountToken`](./appaccounttoken.md) in the transaction information after the customer completes the purchase.
 

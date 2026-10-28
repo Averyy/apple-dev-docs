@@ -21,7 +21,7 @@ A network resource was requested, but an internet connection hasn’t been estab
 static var notConnectedToInternet: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a connection can’t be established a lack of connectivity or because the user chooses not to make a network connection automatically.
 

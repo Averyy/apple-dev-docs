@@ -19,7 +19,7 @@ var rowHeight: CGFloat { get set }
 @property CGFloat rowHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The default row height is `16.0`. The value in this property is used only if the table’s [`rowSizeStyle`](./rowsizestyle-swift.property.md) is set to [`NSTableView.RowSizeStyle.custom`](./rowsizestyle-swift.enum/custom.md).
 

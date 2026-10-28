@@ -19,7 +19,7 @@ var CPU_BASED2_VMFUNC: UInt32 { get }
 CPU_BASED2_VMFUNC
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

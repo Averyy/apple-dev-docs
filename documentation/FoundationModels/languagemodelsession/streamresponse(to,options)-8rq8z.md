@@ -1,0 +1,45 @@
+# streamResponse(to:options:)
+
+**Framework**: Foundation Models  
+**Kind**: method  
+**Role**: Instance Method
+
+Produces a response stream to a prompt.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 27.0+
+
+## Declaration
+
+```swift
+final func streamResponse(to prompt: String, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<String>
+```
+
+**Other overloads**:
+
+```swift
+final func streamResponse(to prompt: Prompt, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<String>
+```
+
+## Return Value
+
+A response stream that produces aggregated tokens.
+
+## Discussion
+
+> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
+
+## Parameters
+
+- `prompt`: A prompt for the model to respond to.
+- `options`: Options that control how tokens are sampled from the distribution the model produces.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:options:)-8rq8z)*

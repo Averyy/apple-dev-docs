@@ -24,7 +24,7 @@ class GCDualSenseAdaptiveTrigger
 @interface GCDualSenseAdaptiveTrigger : GCControllerButtonInput
 ```
 
-#### Overview
+## Overview
 
 A `GCDualSenseAdaptiveTrigger` object allows you to specify a dynamic resistance force that the DualSense controller applies when the user pulls the trigger. For example, set the resistance to give the user the feeling of pulling back on a bow string, firing a weapon, or pulling a lever.
 

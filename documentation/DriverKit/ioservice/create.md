@@ -18,11 +18,11 @@ Requests the creation of a new service object.
 virtual kern_return_t Create(IOService *provider, const IOPropertyName propertiesKey, IOService **result);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method from your NewUserClient method when the system asks you to create a new service. The keys in the `propertiesKey` dictionary describe the new service. Use the [`kIOUserClassKey`](../../iokit/kiouserclasskey.md) key to specify the name of the custom [`IOService`](../ioservice.md) subclass that you want the system to instantiate. Use the [`kIOClassKey`](../../iokit/kioclasskey.md) to specify the name of the custom [`IOUserClient`](../iouserclient.md) subclass to return to clients of your service. Use the [`kIOServiceDEXTEntitlementsKey`](../../iokit/kioservicedextentitlementskey.md) key to specify an array of entitlement strings to match against the process of the new service. The new service must contain all of the requested entitlements.
 

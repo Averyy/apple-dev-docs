@@ -15,7 +15,7 @@ The attachments that belong to a RealityView.
 struct RealityViewAttachments
 ```
 
-#### Overview
+## Overview
 
 Use this type to access entities associated with the attachments you provide to your [`RealityView`](./realityview.md) via the [`init(make:update:attachments:)`](./realityview/init%28make,update,attachments%29.md) initializer.
 

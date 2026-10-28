@@ -25,7 +25,7 @@ var simdPivot: simd_float4x4 { get set }
 @property (nonatomic) simd_float4x4 simdPivot;
 ```
 
-#### Discussion
+## Discussion
 
 A node’s pivot is the transform between its coordinate space and that used by its [`simdPosition`](./simdposition.md), [`simdRotation`](./simdrotation.md), and [`simdScale`](./simdscale.md) properties. The default pivot is the identity matrix, specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.
 

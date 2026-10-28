@@ -5,7 +5,7 @@
 
 Store metadata in QuickTime Movie files.
 
-#### Overview
+## Overview
 
 Metadata can be defined as useful information related to media. This section describes a method of associating metadata with media in a QuickTime file that is extensible and allows for language and country tagging. In addition, it provides a means to store the type of the metadata and associate a name with metadata. This method of storing metadata is supported in both QuickTime 7 and QuickTime X.
 
@@ -13,27 +13,27 @@ This metadata format uses a key–value pair for each type of metadata being sto
 
 > **Note**: The QuickTime file format also defines user data which, in some limited cases, can be used to store metadata. The method of storing metadata defined in this section provides an extensible and flexible design for handling a wide variety of metadata types.
 
-##### Data type
+### Data type
 
 The storage type of metadata items is defined via an enumerated list of data types, defined statically; an example might be “plain Unicode text”. See the [Well-known types](./well-known_types.md) table for details of the standard, defined data types.
 
-##### Meaning or purpose
+### Meaning or purpose
 
 The meaning of a metadata item identifies what it represents: a copyright notice, the performer’s name, and so on. It uses an extensible namespace allowing for meanings or keys to be added, and then referenced, from metadata items. These keys may be four-character codes, names in reverse-address format (such as “com.apple.quicktime.windowlocation”) or any other key format including native formats from external metadata standards. A key is tagged with its namespace allowing for extension in the future. It is recommended that reverse-address format be used in the general case: this provides an extensible syntax for vendor data or for other organizations or standards bodies.
 
-##### Data location
+### Data location
 
 Metadata is stored immediately in the corresponding atom structures, by value.
 
-##### Localization
+### Localization
 
 A metadata item can be identified as specific to a country or set of countries, to a language or set of languages, or to some combination of languages and countries. This identification allows for a default value (suitable for any language or country not explicitly called out), a single value, or a list of values.
 
-##### Storage Location in a QuickTime File
+### Storage Location in a QuickTime File
 
 Within a QuickTime file, metadata can be stored within a movie atom (`‘moov’`), a track atom (`‘trak’`) or a media atom (`‘mdia’`). Only one metadata atom is allowed for each location. If there is user data and metadata stored in the same location, and both declare the same information, for example, declare a copyright notice, the metadata takes precedence.
 
-##### Metadata structure
+### Metadata structure
 
 The container for metadata is an atom of type `‘meta’`. The metadata atom must contain the following subatoms: metadata handler atom (`‘hdlr’`), metadata item keys atom (`‘keys’`), and metadata item list atom (`‘ilst’`). Other optional atoms that may be contained in a metadata atom include the country list atom (`‘ctry’`), language list atom (`‘lang’`) and free space atom (`‘free’`). The country list and language list atoms can be used to store localized data in an efficient manner. The free space atom may be used to reserve space in a metadata atom for later additions to it, or to zero out bytes within a metadata atom after editing and removing elements from it. The free space atom may not occur within any other subatom contained in the metadata atom.
 

@@ -20,7 +20,7 @@ Resets the UI to reflect the state of the data in the snapshot without computing
 @preconcurrency func applySnapshotUsingReloadData(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, completion: (() -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The system interrupts any ongoing item animations and immediately reloads the collection view’s content.
 

@@ -21,7 +21,7 @@ var fullScreenAccessoryView: NSView? { get set }
 @property (strong, nullable) NSView * fullScreenAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 When entering full screen mode, the accessory view is removed from the window if necessary, and attaches underneath the toolbar.
 

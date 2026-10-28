@@ -17,7 +17,7 @@ Creates a configuration that behaves like a traditional timer.
 static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)? = nil, secondaryIntent: (any LiveActivityIntent)? = nil, sound: AlertConfiguration.AlertSound = .default) -> AlarmManager.AlarmConfiguration<Metadata>
 ```
 
-#### Discussion
+## Discussion
 
 The timer starts immediately, runs for `duration` seconds, and then alerts. If you provide a secondary button with a behavior that indicates that the timer can repeat, the alert has a repeat button.
 

@@ -25,7 +25,7 @@ var worldPosition: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 worldPosition;
 ```
 
-#### Discussion
+## Discussion
 
 This vector isolates the translational aspect of the node’s [`worldTransform`](./worldtransform.md) matrix, which in turn is the conversion of the node’s [`transform`](./transform.md) from local space to the scene’s world coordinate space. That is, it expresses the x, y, and z offsets of the node’s position from that of the scene’s [`rootNode`](../scnscene/rootnode.md), and is equivalent to reading the node’s [`position`](./position.md) vector and converting it to world space with the [`convertPosition(_:from:)`](./convertposition%28_,from%29.md) or [`convertPosition(_:to:)`](./convertposition%28_,to%29.md) method.
 

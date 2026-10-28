@@ -20,7 +20,7 @@ func changePassword(_ oldPassword: String!, toPassword newPassword: String!) thr
 - (BOOL) changePassword:(NSString *) oldPassword toPassword:(NSString *) newPassword error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

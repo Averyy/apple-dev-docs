@@ -19,7 +19,7 @@ func dictionary() -> NSMutableDictionary
 - (NSMutableDictionary<NSString *,id> *) dictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The key-value pairs contained in the dictionary are described in Constants. Modifying the returned dictionary changes the receiver’s attributes.
 

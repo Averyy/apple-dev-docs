@@ -25,7 +25,7 @@ class CVPixelBufferPool
 typedef struct __CVPixelBufferPool * CVPixelBufferPoolRef;
 ```
 
-#### Overview
+## Overview
 
 CVPixelBufferPool is a utility object for managing a recyclable set of [`CVPixelBuffer`](./cvpixelbuffer.md) objects.
 

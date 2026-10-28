@@ -22,7 +22,7 @@ var label: String? { get set }
 @property (copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` to hide the label.
 

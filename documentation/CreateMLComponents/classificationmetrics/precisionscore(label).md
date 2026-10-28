@@ -23,11 +23,11 @@ func precisionScore(label: Label) -> Double
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The precision score for the given label.
 
-#### Discussion
+## Discussion
 
 Precision score is computed as the ratio `tp / (tp + fp)` where `tp` is the number of true positives and `fp` is the number of false positives.
 

@@ -21,7 +21,7 @@ A definition you use to create an intent value query for testing.
 struct IntentValueQueryDefinition
 ```
 
-#### Overview
+## Overview
 
 To create an intent value for testing and verify its results, first get its definition using [`IntentDefinitions`](./intentdefinitions.md) and its [`valueQueries`](./intentdefinitions/valuequeries.md) property. Then, perform the query and verify that it returns the expected results as shown in the following example:
 

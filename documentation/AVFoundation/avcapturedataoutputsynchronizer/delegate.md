@@ -22,7 +22,7 @@ var delegate: (any AVCaptureDataOutputSynchronizerDelegate)? { get }
 @property (nonatomic, readonly, nullable) id<AVCaptureDataOutputSynchronizerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only. You set the delegate object and the dispatch queue for delegate methods together using the [`setDelegate(_:queue:)`](./setdelegate%28_,queue%29.md) method.
 

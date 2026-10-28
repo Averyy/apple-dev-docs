@@ -21,7 +21,7 @@ var sizeMode: NSToolbar.SizeMode { get set }
 @property NSToolbarSizeMode sizeMode;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s no icon of the given size for a toolbar item, the toolbar item creates one by scaling an icon of another size.
 

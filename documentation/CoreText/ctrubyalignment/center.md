@@ -25,7 +25,7 @@ case center
 kCTRubyAlignmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 If the ruby text is wider than the base text, Core Text centers the base text within the width of the ruby text.
 

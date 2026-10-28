@@ -25,7 +25,7 @@ case otherNavigation
 CLActivityTypeOtherNavigation
 ```
 
-#### Discussion
+## Discussion
 
 Use this activity type to track a positioning session such as by boat, train, or for pedestrian navigation tracking that’s not tied to a road network, paths, or trails. You can also use it for positioning activities indoors and outdoors, such as walking, that isn’t tied to a dedicated fitness session.
 

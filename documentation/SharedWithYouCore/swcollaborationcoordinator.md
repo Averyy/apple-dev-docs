@@ -23,7 +23,7 @@ class SWCollaborationCoordinator
 @interface SWCollaborationCoordinator : NSObject
 ```
 
-#### Overview
+## Overview
 
 `SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance. The singleton invokes its [`actionHandler`](./swcollaborationcoordinator/actionhandler.md) delegate to coordinate new collaborations and updates to existing collaborations.
 

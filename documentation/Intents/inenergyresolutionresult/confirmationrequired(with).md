@@ -24,11 +24,11 @@ class func confirmationRequired(with energyToConfirm: Measurement<UnitEnergy>?) 
 + (instancetype) confirmationRequiredWithEnergyToConfirm:(NSMeasurement<NSUnitEnergy *> *) energyToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INEnergyResolutionResult`](../inenergyresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

@@ -19,11 +19,11 @@ func requestRemoteMTU(_ remoteMTU: BluetoothL2CAPMTU) -> IOReturn
 - (IOReturn) requestRemoteMTU:(BluetoothL2CAPMTU) remoteMTU;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the channel re-configure process was successfully initiated.
 
-#### Discussion
+## Discussion
 
 Currently, this API does not give an indication that the re-config process has completed. In the future additional API will be available to provide that information both synchronously and asynchronously.
 

@@ -23,7 +23,7 @@ class XCUISiriService
 @interface XCUISiriService : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class allows issuing textual queries and producing element queries for UI shown by Siri.
 

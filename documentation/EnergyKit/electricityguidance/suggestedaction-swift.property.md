@@ -17,7 +17,7 @@ A property that describes how the electrical load uses the guidance.
 let suggestedAction: ElectricityGuidance.SuggestedAction
 ```
 
-#### Discussion
+## Discussion
 
 An example of suggested actions for the load could be shift-able or reduce-able.
 

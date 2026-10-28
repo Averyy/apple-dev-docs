@@ -19,7 +19,7 @@ An object that represents the backing shader compilation required for custom mat
 final class Program
 ```
 
-#### Overview
+## Overview
 
 You can use this type to control when RealityKit compiles shaders, and to initialize `CustomMaterial` objects with more predicitable loading performance.
 

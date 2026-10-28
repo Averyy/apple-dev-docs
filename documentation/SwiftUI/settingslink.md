@@ -16,7 +16,7 @@ nonisolated
 struct SettingsLink<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 On macOS, clicking on the link opens the window for the scene or orders it to the front if it is already open.
 

@@ -25,7 +25,7 @@ var supportIndirectCommandBuffers: Bool { get }
 @property (readonly) BOOL supportIndirectCommandBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property gets its value by copying from the [`supportIndirectCommandBuffers`](../mtlrenderpipelinedescriptor/supportindirectcommandbuffers.md) property of the [`MTLRenderPipelineDescriptor`](../mtlrenderpipelinedescriptor.md) instance as the GPU device creates the pipeline state.
 

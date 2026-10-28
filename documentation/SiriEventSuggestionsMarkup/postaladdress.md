@@ -15,7 +15,7 @@ A specific geographic location.
 object PostalAddress
 ```
 
-#### Discussion
+## Discussion
 
 Prefer a physical address, not an administrative mailing address, to help Siri and Maps provide relevant information to the user.
 

@@ -24,7 +24,7 @@ var overlays: [any MKOverlay] { get }
 @property (nonatomic, readonly) NSArray<id<MKOverlay>> * overlays;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the union of all overlays at the different levels of the map. The objects in this array adopt the [`MKOverlay`](../mkoverlay.md) protocol. If the map view has no associated no overlays, the value of this property is an empty array.
 

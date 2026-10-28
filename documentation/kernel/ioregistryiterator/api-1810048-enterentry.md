@@ -12,7 +12,7 @@ virtual void enterEntry(
  void );
 ```
 
-#### Overview
+## Overview
 
 This method makes the current entry, ie. the last entry returned by getNextObject et al., the root in a new level of recursion.
 

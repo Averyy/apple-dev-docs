@@ -21,7 +21,7 @@ A type that represents a scalable vector graphics (SVG) image.
 static var svg: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.svg-image`.
 

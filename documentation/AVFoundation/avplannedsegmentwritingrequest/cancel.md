@@ -20,7 +20,7 @@ Clients should call this if the current segment is to be cancelled, but the expo
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws NSGenericException if finish, finishWithClientState:, finishWithError:, or cancel has already been called on this request.
 

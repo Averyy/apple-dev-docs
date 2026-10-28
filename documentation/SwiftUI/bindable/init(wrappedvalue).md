@@ -23,7 +23,7 @@ init(wrappedValue: Value)
 
 Available when `Value` conforms to `Observable`.
 
-#### Discussion
+## Discussion
 
 You should not call this initializer directly. Instead, declare a property with the `@Bindable` attribute, and provide an initial value.
 

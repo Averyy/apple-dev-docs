@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Understand dependency failure scenarios.
 
-#### Overview
+## Overview
 
 You define constraints for dependencies when you add them to your package, and those constraints can not always be met.
 
@@ -27,7 +27,7 @@ error: Dependencies could not be resolved because root depends on 'pkgb' 0.1.0.
 
 Rework your dependencies, or update a package you want to depend upon, to resolve any conflicting constraints.
 
-##### Failure Scenarios
+### Failure Scenarios
 
 There are a variety of scenarios that may occur, including:
 

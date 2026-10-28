@@ -25,7 +25,7 @@ func unregisterForTraitChanges(_ registration: any UITraitChangeRegistration)
 
 - [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
-#### Discussion
+## Discussion
 
 Use this method if you want the system to stop observing trait changes for a previous registration. UIKit doesn’t require you to unregister for trait changes at the end of the view lifecycle. Unregister only if you need to dynamically change which traits you observe.
 

@@ -17,7 +17,7 @@ Creates a new schedule.
 init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If the current date falls in between [`intervalStart`](./intervalstart.md) and [`intervalEnd`](./intervalend.md), the system calls the [`intervalDidStart(for:)`](../deviceactivitymonitor/intervaldidstart%28for%29.md) method immediately upon starting to monitor the activity. If the current date doesn’t fall in between `intervalStart` and `intervalEnd`, then `intervalDidStart(for:)` calls at the next date matching `intervalStart`.
 

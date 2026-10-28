@@ -24,7 +24,7 @@ optional func match(_ match: GKMatch, didReceive data: Data, forRecipient recipi
 - (void) match:(GKMatch *) match didReceiveData:(NSData *) data forRecipient:(GKPlayer *) recipient fromRemotePlayer:(GKPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 Your game defines its own format for data packets it transmits and receives over the network.
 

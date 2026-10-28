@@ -15,7 +15,7 @@ Hour-of-day targeting, restricting delivery to specific one-hour slots in a 7-da
 object AdGroupTargetingCreate.Daypart
 ```
 
-#### Discussion
+## Discussion
 
 Used with App Store and Apple Maps campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

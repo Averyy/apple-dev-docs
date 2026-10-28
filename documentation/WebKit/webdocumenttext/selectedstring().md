@@ -20,7 +20,7 @@ func selectedString() -> String!
 - (NSString *) selectedString;
 ```
 
-#### Return Value
+## Return Value
 
 The currently selected text in the web document.
 

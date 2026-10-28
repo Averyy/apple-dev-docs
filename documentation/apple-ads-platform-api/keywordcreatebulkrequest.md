@@ -15,11 +15,11 @@ A bulk request to create multiple Keyword objects.
 object KeywordCreateBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordCreateBulkRequest` object allows creating multiple keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

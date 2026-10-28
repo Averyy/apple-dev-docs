@@ -24,7 +24,7 @@ var kAudioUnitSubType_VoiceProcessingIO: UInt32 { get }
 kAudioUnitSubType_VoiceProcessingIO
 ```
 
-#### Discussion
+## Discussion
 
 Bus 0 provides output to hardware and bus 1 accepts input from hardware. See [Audio Unit Voice I/O](./audio-unit-voice-i-o.md) for the identifiers for this audio unit’s properties.
 

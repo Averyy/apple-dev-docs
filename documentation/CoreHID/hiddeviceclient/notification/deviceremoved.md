@@ -15,7 +15,7 @@ A notification that the device is no longer connected to the system.
 case deviceRemoved
 ```
 
-#### Discussion
+## Discussion
 
 After the device is removed, no other notifications occur and most methods fail. Discard the [`HIDDeviceClient`](../../hiddeviceclient.md).
 

@@ -28,7 +28,7 @@ func predicateForReminders(in calendars: [EKCalendar]?) -> NSPredicate
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 A predicate to use when calling [`fetchReminders(matching:completion:)`](./fetchreminders%28matching,completion%29.md).
 

@@ -16,7 +16,7 @@ nonisolated
 func textInputSuggestions<S>(@ContentBuilder _ suggestions: () -> S) -> some View where S : View
 ```
 
-#### Discussion
+## Discussion
 
 You can suggest text completions during a text input operation by providing a collection of view to this modifier. The interface presents the suggestion views as a list of choices when someone activates the text editing interface.
 

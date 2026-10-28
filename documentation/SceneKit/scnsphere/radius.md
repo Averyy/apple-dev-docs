@@ -25,7 +25,7 @@ var radius: CGFloat { get set }
 @property (nonatomic) CGFloat radius;
 ```
 
-#### Discussion
+## Discussion
 
 The sphere is centered in its local coordinate system. For example, if you create a sphere whose radius is `5.0`, it extends from `-5.0` to `5.0` along each of the the x, y, and z-axes. A radius of zero or less creates an empty geometry.
 

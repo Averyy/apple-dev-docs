@@ -22,7 +22,7 @@ func didSelectPost()
 - (void) didSelectPost;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method calls the completeRequestReturningItems: method of the associated [`extensionContext`](../../UIKit/uiviewcontroller/extensioncontext.md) property, passing `nil` in the `items` array and a `nil` expiration handler. You must override `didSelectPost` to perform the post of [`contentText`](./contenttext.md) and any attachments. In your implementation of this method, you can call `super` to take advantage of the default completion handler; if you don’t call `super`, you must call the completion method of the extension context.
 

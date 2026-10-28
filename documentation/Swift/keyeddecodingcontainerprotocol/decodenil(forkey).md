@@ -22,11 +22,11 @@ Decodes a null value for the given key.
 func decodeNil(forKey key: Self.Key) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether the encountered value was null.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 

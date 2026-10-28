@@ -15,7 +15,7 @@ Validate whether a field of view specification is valid.
 extern bool ar_field_of_view_is_valid(ar_field_of_view_t field_of_view);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the field of view is valid, `false` otherwise.
 

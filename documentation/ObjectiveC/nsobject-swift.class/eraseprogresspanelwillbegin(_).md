@@ -19,7 +19,7 @@ func eraseProgressPanelWillBegin(_ aNotification: Notification!)
 - (void) eraseProgressPanelWillBegin:(NSNotification *) aNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method it will receive the message immediately before the panel is displayed.
 

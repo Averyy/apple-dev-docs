@@ -5,7 +5,7 @@
 
 Create and read alternative distribution domains.
 
-#### Overview
+## Overview
 
 You use the endpoints and objects in this API collection to add your alternative distribution app’s base domain to App Store Connect. For more information on adding a domain for your alternative distribution app, see [`Add an Alternative Distribution Domain`](./post-v1-alternativedistributiondomains.md).
 

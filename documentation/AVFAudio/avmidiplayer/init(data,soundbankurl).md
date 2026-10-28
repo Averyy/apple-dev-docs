@@ -24,7 +24,7 @@ init(data: Data, soundBankURL bankURL: URL?) throws
 - (instancetype) initWithData:(NSData *) data soundBankURL:(NSURL *) bankURL error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new MIDI player, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 

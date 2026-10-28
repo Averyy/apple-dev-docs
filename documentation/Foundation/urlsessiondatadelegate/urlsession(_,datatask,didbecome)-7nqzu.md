@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, di
 - (void) URLSession:(NSURLSession *) session dataTask:(NSURLSessionDataTask *) dataTask didBecomeStreamTask:(NSURLSessionStreamTask *) streamTask;
 ```
 
-#### Discussion
+## Discussion
 
 When your [`urlSession(_:dataTask:didReceive:completionHandler:)`](./urlsession%28_,datatask,didreceive,completionhandler%29.md) delegate method uses the [`URLSession.ResponseDisposition.becomeStream`](../urlsession/responsedisposition/becomestream.md) disposition to convert the request to use a stream, the session calls this delegate method to provide you with the new stream task. After this call, the session delegate receives no further delegate method calls related to the original data task.
 

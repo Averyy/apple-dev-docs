@@ -23,11 +23,11 @@ Renders content as if it’s rotated in three dimensions around the specified ax
 func rotation3DEffect(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint = .center, anchorZ: CGFloat = 0, perspective: CGFloat = 1) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 A rotation effect.
 
-#### Discussion
+## Discussion
 
 Use this method to create the effect of rotating a two dimensional view in three dimensions around a specified axis of rotation. The effect projects the rotated content onto the original content’s plane. Use the `perspective` input to control the renderer’s vanishing point. The following example creates the appearance of rotating text 45˚ about the y-axis:
 

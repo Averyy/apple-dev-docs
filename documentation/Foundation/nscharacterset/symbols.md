@@ -25,11 +25,11 @@ class var symbols: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * symbolCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the symbol characters.
 
-#### Discussion
+## Discussion
 
 These characters include, for example, the dollar sign (`$`) and the plus (`+`) sign.
 

@@ -21,7 +21,7 @@ Defines how the spring’s motion should be damped due to the forces of friction
 var damping: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 Reducing this value reduces the energy loss with each oscillation: the spring will overshoot its destination. Increasing the value increases the energy loss with each duration: there will be fewer and smaller oscillations.
 

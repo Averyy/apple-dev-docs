@@ -18,7 +18,7 @@ framework: "CareKit/CareKitStore"
 func fetchAdherence(query: OCKAdherenceQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<[OCKAdherence]>)
 ```
 
-#### Discussion
+## Discussion
 
 The way completion is computed depends on how many `expectedValues` a task has. If it has no expected values, then having an outcome with at least one value will count as complete. If a task has expected values, completion will be computed as ratio of the number of outcome values to the number of expected values.
 

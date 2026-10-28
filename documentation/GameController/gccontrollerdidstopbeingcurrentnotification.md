@@ -20,7 +20,7 @@ A notification that posts when a controller stops being the current controller.
 extern NSString * const GCControllerDidStopBeingCurrentNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](./gccontroller.md) object that’s no longer current.
 

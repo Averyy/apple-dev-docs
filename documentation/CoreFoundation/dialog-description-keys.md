@@ -5,7 +5,7 @@
 
 Keys used in a user notification’s description dictionary, which describes the contents of the notification dialog to display.
 
-#### Overview
+## Overview
 
 When creating the user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md), the description dictionary must have a value for [`kCFUserNotificationAlertHeaderKey`](./kcfusernotificationalertheaderkey.md). All other keys are optional.
 

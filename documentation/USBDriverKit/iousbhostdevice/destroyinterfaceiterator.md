@@ -15,7 +15,7 @@ Destroys an interface iterator that you created.
 virtual kern_return_t DestroyInterfaceIterator(uintptr_t ref);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

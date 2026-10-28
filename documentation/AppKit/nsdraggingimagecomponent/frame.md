@@ -19,7 +19,7 @@ var frame: NSRect { get set }
 @property NSRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The frame is {{0,0}, {`draggingFrame.size.width`, `draggingFrame.size.height`}}.
 

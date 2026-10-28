@@ -20,7 +20,7 @@ A corner widget.
 case accessoryCorner
 ```
 
-#### Discussion
+## Discussion
 
 The accessory corner widget can appear as a complication in watchOS.
 

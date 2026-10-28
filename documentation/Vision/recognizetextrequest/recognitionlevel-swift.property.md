@@ -20,7 +20,7 @@ A value that determines whether the request prioritizes accuracy or speed in tex
 var recognitionLevel: RecognizeTextRequest.RecognitionLevel
 ```
 
-#### Discussion
+## Discussion
 
 The recognition level determines which techniques the request uses during the text recognition. Set this value to `fast` to prioritize speed over accuracy, and to `accurate` for longer, more computationally intensive recognition.
 

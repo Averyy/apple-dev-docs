@@ -21,7 +21,7 @@ The safe area adjustment during toolbar minimization.
 struct ToolbarMinimizationSafeAreaAdjustment
 ```
 
-#### Overview
+## Overview
 
 Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md) modifier to control whether the safe area updates as bars minimize. By default the safe area adjusts interactively, but you can disable this to keep content in place – for example, when displaying full-bleed media beneath a minimizing bar.
 

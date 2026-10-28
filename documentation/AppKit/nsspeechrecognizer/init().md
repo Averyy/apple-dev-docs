@@ -19,7 +19,7 @@ init?()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if initialization did not succeed.
 

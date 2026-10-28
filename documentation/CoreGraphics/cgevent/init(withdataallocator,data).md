@@ -20,11 +20,11 @@ init?(withDataAllocator allocator: CFAllocator?, data: CFData?)
 extern CGEventRefCGEventCreateFromData(CFAllocatorRef allocator, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 An event built from the flattened data representation, or `NULL` if the `eventData` parameter is invalid.
 
-#### Discussion
+## Discussion
 
 You can use this function to reconstruct a Quartz event received by network transport from another system.
 

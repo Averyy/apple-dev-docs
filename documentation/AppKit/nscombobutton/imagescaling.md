@@ -19,7 +19,7 @@ var imageScaling: NSImageScaling { get set }
 @property NSImageScaling imageScaling;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSImageScaling.scaleProportionallyDown`](../nsimagescaling/scaleproportionallydown.md).
 

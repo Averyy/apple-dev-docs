@@ -17,7 +17,7 @@ The relative impact of using electricity during this period of time.
 let rating: Double
 ```
 
-#### Discussion
+## Discussion
 
 Values are normalized between zero and one. A lower value indicates cleaner energy usage.
 

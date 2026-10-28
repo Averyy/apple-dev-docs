@@ -26,7 +26,7 @@ var subscriptionOwnerUserRecordID: CKRecord.ID? { get }
 @property (nonatomic, copy, readonly, nullable) CKRecordID * subscriptionOwnerUserRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 On a system that supports multiple users, such as tvOS, use this identifier to check whether the pending content is for the current user. If your app always fetches data from CloudKit on launch, you may improve efficiency by disregarding notifications for other users.
 

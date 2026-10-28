@@ -25,11 +25,11 @@ func CFUUIDGetConstantUUIDWithBytes(_ alloc: CFAllocator!, _ byte0: UInt8, _ byt
 extern CFUUIDRefCFUUIDGetConstantUUIDWithBytes(CFAllocatorRef alloc, UInt8 byte0, UInt8 byte1, UInt8 byte2, UInt8 byte3, UInt8 byte4, UInt8 byte5, UInt8 byte6, UInt8 byte7, UInt8 byte8, UInt8 byte9, UInt8 byte10, UInt8 byte11, UInt8 byte12, UInt8 byte13, UInt8 byte14, UInt8 byte15);
 ```
 
-#### Return Value
+## Return Value
 
 A CFUUID object. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 This function can be used in headers to declare a UUID constant with `#define`.
 

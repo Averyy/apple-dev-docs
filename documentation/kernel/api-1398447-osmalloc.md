@@ -15,11 +15,11 @@ Allocates a block of memory associated with a given [`OSMallocTag`](./osmallocta
 void * OSMalloc(uint32_t size, OSMallocTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the memory on success, `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 If `tag` was created with the `OSMT_PAGEABLE` attribute *and*` size` is a full page or larger, the allocated memory is pageable; otherwise it is wired.
 

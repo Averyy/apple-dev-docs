@@ -30,7 +30,7 @@ var centerRect: CGRect { get set }
 - [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
 - [Animating a Sprite by Changing its Texture](../animating-a-sprite-by-changing-its-texture.md)
 
-#### Discussion
+## Discussion
 
 Controls how the texture is stretched to fill the SKSpriteNode.
 

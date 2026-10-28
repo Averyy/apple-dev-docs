@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsF
 - (void) peripheral:(CBPeripheral *) peripheral didDiscoverCharacteristicsForService:(CBService *) service error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`discoverCharacteristics(_:for:)`](../cbperipheral/discovercharacteristics%28_,for%29.md) method. If the peripheral successfully discovers the characteristics of the specified service, you can access them through the service’s [`characteristics`](../cbservice/characteristics.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

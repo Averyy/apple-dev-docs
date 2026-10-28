@@ -19,7 +19,7 @@ func setZoomValue(_ aValue: Float)
 - (void) setZoomValue:(float) aValue;
 ```
 
-#### Discussion
+## Discussion
 
 You must use `setZoomValue` or [`setCellSize(_:)`](./setcellsize%28_%29.md), but not both. Setting the zoom value changes the cell size, and vice versa.
 

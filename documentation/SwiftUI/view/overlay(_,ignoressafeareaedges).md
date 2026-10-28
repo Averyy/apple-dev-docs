@@ -22,11 +22,11 @@ nonisolated
 func overlay<S>(_ style: S, ignoresSafeAreaEdges edges: Edge.Set = .all) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified style drawn in front of it.
 
-#### Discussion
+## Discussion
 
 Use this modifier to layer a type that conforms to the [`ShapeStyle`](../shapestyle.md) protocol, like a [`Color`](../color.md), [`Material`](../material.md), or [`HierarchicalShapeStyle`](../hierarchicalshapestyle.md), in front of a view. For example, you can overlay the [`ultraThinMaterial`](../shapestyle/ultrathinmaterial.md) over a [`Circle`](../circle.md):
 

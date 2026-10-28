@@ -17,7 +17,7 @@ Parse one value per option, joining multiple into an array.
 static var singleValue: ArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for a parsable type with a property defined as `@Option(parsing: .singleValue) var read: [String]`, the input `--read foo --read bar` would result in the array `["foo", "bar"]`. The same would be true for the input `--read=foo --read=bar`.
 

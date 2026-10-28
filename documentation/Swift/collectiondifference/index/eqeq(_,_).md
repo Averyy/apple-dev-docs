@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two values are equal.
 static func == (lhs: CollectionDifference<ChangeElement>.Index, rhs: CollectionDifference<ChangeElement>.Index) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

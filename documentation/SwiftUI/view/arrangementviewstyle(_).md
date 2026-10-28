@@ -22,7 +22,7 @@ nonisolated
 func arrangementViewStyle(_ style: some ArrangementViewStyle) -> some View
 ```
 
-#### Overview
+## Overview
 
 Use this modifier to set a specific style for all arrangement views within a view:
 

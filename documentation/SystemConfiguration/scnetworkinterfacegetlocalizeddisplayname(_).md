@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetLocalizedDisplayName(_ interface: SCNetworkInterface) 
 CFStringRefSCNetworkInterfaceGetLocalizedDisplayName(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The localized display name for the interface, or `NULL` if no name is available.
 

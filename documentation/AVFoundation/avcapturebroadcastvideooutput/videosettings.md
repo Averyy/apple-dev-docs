@@ -23,7 +23,7 @@ var videoSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * videoSettings;
 ```
 
-#### Discussion
+## Discussion
 
 This read-only property reports the actual video format and output settings currently being used for broadcast video output. The value is a dictionary containing metadata descriptors conforming to SMPTE ST 377 (Material Exchange Format) using Universal Labels (ULs) for professional broadcast interoperability.
 

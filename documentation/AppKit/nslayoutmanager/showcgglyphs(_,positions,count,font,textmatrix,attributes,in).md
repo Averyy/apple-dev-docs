@@ -19,7 +19,7 @@ func showCGGlyphs(_ glyphs: UnsafePointer<CGGlyph>, positions: UnsafePointer<CGP
 - (void) showCGGlyphs:(const CGGlyph *) glyphs positions:(const CGPoint *) positions count:(NSInteger) glyphCount font:(NSFont *) font textMatrix:(CGAffineTransform) textMatrix attributes:(NSDictionary<NSString *,id> *) attributes inContext:(CGContextRef) CGContext;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager calls this primitive method when it is time to lay out a set of glyphs in the specified graphics context.
 

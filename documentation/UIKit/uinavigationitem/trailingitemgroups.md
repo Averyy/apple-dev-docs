@@ -22,7 +22,7 @@ var trailingItemGroups: [UIBarButtonItemGroup] { get set }
 @property (nonatomic, copy, readwrite) NSArray<UIBarButtonItemGroup *> * trailingItemGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Setting items through this property replaces the items you set through [`rightBarButtonItem`](./rightbarbuttonitem.md) or [`rightBarButtonItems`](./rightbarbuttonitems.md).
 

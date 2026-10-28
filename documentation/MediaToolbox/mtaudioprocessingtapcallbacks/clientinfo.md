@@ -24,7 +24,7 @@ var clientInfo: UnsafeMutableRawPointer?
 void * clientInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The system passes this value to when it calls the [`MTAudioProcessingTapInitCallback`](../mtaudioprocessingtapinitcallback.md) function. This value can be `NULL`.
 

@@ -24,11 +24,11 @@ func rotation(atTime time: TimeInterval) -> vector_float3
 - (vector_float3) rotationAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 The orientation, as a vector of Euler angles in radians, of the transform.
 
-#### Discussion
+## Discussion
 
 The three components of the rotation vector describe counterclockwise rotation around the corresponding axes. In a coordinate system where the negative z-axis direction is considered “forward”, these components are pitch (rotation about the x-axis), yaw (rotation about the y-axis), and roll (rotation about the z-axis).
 

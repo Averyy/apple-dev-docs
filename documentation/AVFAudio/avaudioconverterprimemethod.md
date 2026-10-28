@@ -25,7 +25,7 @@ enum AVAudioConverterPrimeMethod
 enum AVAudioConverterPrimeMethod : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`AVAudioConverterPrimeInfo`](./avaudioconverterprimeinfo.md).
 

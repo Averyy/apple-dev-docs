@@ -25,7 +25,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the node (and all of its descendants) are skipped when a scene processes actions.
 

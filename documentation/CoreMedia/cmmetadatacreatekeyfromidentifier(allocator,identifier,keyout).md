@@ -25,11 +25,11 @@ func CMMetadataCreateKeyFromIdentifier(allocator: CFAllocator?, identifier: CFSt
 extern OSStatus CMMetadataCreateKeyFromIdentifier(CFAllocatorRef allocator, CFStringRef identifier, CFTypeRef*keyOut);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, a nonzero result code. See [Metadata Identifier Error Codes](./metadata-identifier-errors.md).
 
-#### Discussion
+## Discussion
 
 The returned `CFType` is based on the keyspace encoded in the identifier.
 

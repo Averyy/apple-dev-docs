@@ -28,7 +28,7 @@ func setPrefersNoInterruptionsFromSystemAlerts(_ inValue: Bool) throws
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 Beginning in iOS 14, users can set a global preference that indicates whether the system displays incoming calls using a banner or a full-screen display style. If using the banner style, setting this value to [`true`](../../Swift/true.md) prevents the system from interrupting the audio session with incoming call notifications, and gives the user an opportunity to accept or decline the call. The system only interrupts the audio session if the user accepts the call.
 

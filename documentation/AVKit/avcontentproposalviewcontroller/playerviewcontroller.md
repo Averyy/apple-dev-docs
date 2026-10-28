@@ -19,7 +19,7 @@ weak var playerViewController: AVPlayerViewController? { get }
 @property (nonatomic, weak, readonly, nullable) AVPlayerViewController * playerViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this property value during the presentation of the content proposal. It may be `nil` at other times.
 

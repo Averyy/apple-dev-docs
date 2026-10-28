@@ -25,11 +25,11 @@ convenience init(ringRadius: CGFloat, pipeRadius: CGFloat)
 + (instancetype) torusWithRingRadius:(CGFloat) ringRadius pipeRadius:(CGFloat) pipeRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new torus geometry.
 
-#### Discussion
+## Discussion
 
 The torus is centered in its local coordinate system. For example, if you create a torus whose ring radius is `5.0` and pipe radius is `1.0`, it extends from `-6.0` to `6.0` (with a hole through the center from `-4.0` to `4.0`) in the x- and z-axes and from `-1.0` to `1.0` in the y-axis.
 

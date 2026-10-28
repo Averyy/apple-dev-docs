@@ -15,11 +15,11 @@ Mark an I/O as completed.
 void buf_biodone(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 buf_biodone() should be called by whosoever decides that an I/O on a buffer is complete; for example, IOStorageFamily. It clears the dirty flag on a buffer and signals on the vnode that a write has completed with vnode_writedone(). If a callout or filter has been set on the buffer, that function is called. In the case of a callout, that function is expected to take care of cleaning up and freeing the buffer. Otherwise, if the buffer is marked B_ASYNC (e.g. it was passed to buf_bawrite()), then buf_biodone() considers itself justified in calling buf_brelse() to return it to free lists--no one is waiting for it. Finally, waiters on the bp (e.g. in buf_biowait()) are woken up.
 

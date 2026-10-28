@@ -19,7 +19,7 @@ var iOSDeviceNeedsUnlockAfterRebootForReachability: Bool { get }
 @property (nonatomic, readonly) BOOL iOSDeviceNeedsUnlockAfterRebootForReachability;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`isReachable`](./isreachable.md) property is [`false`](../../Swift/false.md), use this property to determine if the iPhone is unreachable because it needs to be unlocked first. A recently rebooted iPhone remains unreachable until the user unlocks it for the first time. Until the user unlocks the iPhone, the value of this property is [`true`](../../Swift/true.md). When the value is [`true`](../../Swift/true.md), you might display an alert from your Watch app asking the user to unlock the iPhone to continue. After the user unlocks the iPhone, the value of the property changes to [`false`](../../Swift/false.md).
 

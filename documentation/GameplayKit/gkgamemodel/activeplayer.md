@@ -25,7 +25,7 @@ var activePlayer: (any GKGameModelPlayer)? { get }
 @property (nonatomic, readonly, nullable) id<GKGameModelPlayer> activePlayer;
 ```
 
-#### Discussion
+## Discussion
 
 This player is responsible for the next move. GameplayKit assumes that the next call to the [`apply(_:)`](./apply%28_%29.md) method will perform a move on behalf of this player.
 

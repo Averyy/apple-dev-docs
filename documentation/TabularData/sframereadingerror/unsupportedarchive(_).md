@@ -21,7 +21,7 @@ An error that indicates the scalable data frame contains an archive version or l
 case unsupportedArchive(String)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value contains a description of the error.
 

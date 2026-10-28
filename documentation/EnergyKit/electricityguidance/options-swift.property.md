@@ -17,7 +17,7 @@ The additional factors that influence the weight of a value.
 let options: Set<ElectricityGuidance.Options>
 ```
 
-#### Discussion
+## Discussion
 
 A person’s utility rate plan is an example of an additional factor that influences the weight of the value.
 

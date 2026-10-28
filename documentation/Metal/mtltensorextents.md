@@ -24,7 +24,7 @@ class MTLTensorExtents
 @interface MTLTensorExtents : NSObject
 ```
 
-#### Overview
+## Overview
 
 Supports a rank between `0` and [`MTL_TENSOR_MAX_RANK`](./mtl_tensor_max_rank.md).
 

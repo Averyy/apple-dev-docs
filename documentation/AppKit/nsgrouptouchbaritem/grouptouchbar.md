@@ -22,7 +22,7 @@ var groupTouchBar: NSTouchBar { get set }
 @property (strong) NSTouchBar * groupTouchBar;
 ```
 
-#### Discussion
+## Discussion
 
 This bar can be configured in the same way as all other bars.
 

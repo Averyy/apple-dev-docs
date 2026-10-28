@@ -20,7 +20,7 @@ var timeout: Int { get set }
 @property long timeout;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Apple Event Manager](../../applicationservices/apple_event_manager.md).
 

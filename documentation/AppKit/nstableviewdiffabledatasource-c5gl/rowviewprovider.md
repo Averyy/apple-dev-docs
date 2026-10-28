@@ -15,7 +15,7 @@ The closure that configures and returns the table view’s row views from the di
 var rowViewProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.RowProvider?
 ```
 
-#### Discussion
+## Discussion
 
 This property replaces the [`tableView(_:rowViewForRow:)`](../nstableviewdelegate/tableview%28_,rowviewforrow%29.md) delegate method.
 

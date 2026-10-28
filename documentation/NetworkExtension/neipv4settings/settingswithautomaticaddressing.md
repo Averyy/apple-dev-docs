@@ -10,11 +10,11 @@
 + (instancetype) settingsWithAutomaticAddressing;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized object.
 
-#### Discussion
+## Discussion
 
 Create a NEIPv4Settings object that will obtain IP addresses and netmasks using DHCP.
 

@@ -12,11 +12,11 @@ Configure your music app to work with CarPlay by displaying a custom UI.
 - Mac Catalyst 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 CarPlay Music is a sample music app that demonstrates how to display a custom UI from a CarPlay–enabled vehicle. CarPlay Music integrates with the CarPlay framework by implementing the  [`CPNowPlayingTemplate`](./cpnowplayingtemplate.md) and [`CPListTemplate`](./cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app, as well as a music controller.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To configure the sample code project, perform the following:
 
@@ -24,7 +24,7 @@ To configure the sample code project, perform the following:
 2. Create a key and developer token for the [MusicKit](https://developer.apple.com/musickit) service. For more information, see [Getting Keys and Creating Tokens](../AppleMusicAPI/generating-developer-tokens.md).
 3. Update the `developerToken` variable in the `AppleMusicAPIController.swift` file to use the developer token you create.
 
-##### Handle Communication with CarPlay
+### Handle Communication with CarPlay
 
 The app is responsible for adding and removing the root view controller of the CarPlay window in response to connections and disconnections.
 
@@ -77,7 +77,7 @@ self.carplayInterfaceController!.delegate = self
 self.carplayInterfaceController!.setRootTemplate(CPTabBarTemplate(templates: tabTemplates), animated: true, completion: nil)
 ```
 
-##### Prepare for App Selection
+### Prepare for App Selection
 
 Like other Music apps, CarPlay Music is eligible to participate in App Selection to improve its interactions with Siri. This allows the system to automatically select the app for playing music on the device. See [`Improving Siri Media Interaction and App Selection`](../SiriKit/improving-siri-media-interactions-and-app-selection.md).
 
@@ -96,7 +96,7 @@ AppleMusicAPIController.sharedController.prepareForRequests { (success) in
 }
 ```
 
-##### Listen for Changes with the Music Player
+### Listen for Changes with the Music Player
 
 A good way to ensure an app UI updates automatically in response to changes is to listen for changes in the Now Playing item, as well as in the playing state. CarPlay Music uses the `applicationMusicPlayer`, so it subscribes to the `MPMusicPlayerControllerPlaybackStateDidChange` and `MPMusicPlayerControllerNowPlayingItemDidChange` notifications.
 

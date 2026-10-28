@@ -18,7 +18,7 @@ A metric that measures extended launch task durations.
 struct ExtendedLaunchMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.extendedLaunch(_:)`](./metricresult/extendedlaunch%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

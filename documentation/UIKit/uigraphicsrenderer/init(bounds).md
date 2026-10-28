@@ -23,11 +23,11 @@ convenience init(bounds: CGRect)
 - (instancetype) initWithBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized graphics renderer.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a graphics renderer that operates on Core Graphics contexts with the specified bounds. This initializer uses the [`default()`](../uigraphicsrendererformat/default%28%29.md) static method on [`UIGraphicsRendererFormat`](../uigraphicsrendererformat.md) to create the renderer’s format, thereby selecting parameters that are the most appropriate for the current device.
 

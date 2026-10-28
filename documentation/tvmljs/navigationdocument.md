@@ -15,7 +15,7 @@ A document stack that holds the individual TVML documents for a client-server ap
 interface NavigationDocument
 ```
 
-#### Overview
+## Overview
 
 You cannot create an instance of the `NavigationDocument` class. An instance of this class is available in the global context as `navigationDocument`.
 

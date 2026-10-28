@@ -24,7 +24,7 @@ func invalidatePlaybackState()
 - (void) invalidatePlaybackState;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever you start or pause playback and when the underlying content duration changes.
 

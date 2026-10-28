@@ -19,7 +19,7 @@ A property that determines the layout of a background image in a view when its b
 @property (nonatomic) UIViewContentMode imageContentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The content mode specifies how the background image adjusts when the view’s bounds change. You can use this property to specify that you want to scale the background image (either with or without distortion) or pin it to a particular spot on the view.
 

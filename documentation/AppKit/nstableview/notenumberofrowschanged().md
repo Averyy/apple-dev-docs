@@ -19,7 +19,7 @@ func noteNumberOfRowsChanged()
 - (void) noteNumberOfRowsChanged;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the table view to update the scrollers in its scroll view without actually reloading data into the table view. It’s useful for a data source that continually receives data in the background over a period of time, in which case the table view can remain responsive to the user while the data is received.
 

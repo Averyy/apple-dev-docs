@@ -24,7 +24,7 @@ func keypointsMultiArray() throws -> MLMultiArray
 - (MLMultiArray *) keypointsMultiArrayAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The key points converted to an [`MLMultiArray`](../../CoreML/mlmultiarray.md).
 

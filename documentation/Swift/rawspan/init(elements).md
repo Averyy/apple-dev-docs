@@ -21,7 +21,7 @@ View a typed span as a raw span.
 init<Element>(elements span: Span<Element>) where Element : ConvertibleToBytes
 ```
 
-#### Discussion
+## Discussion
 
 Creates a `RawSpan` over the memory represented by a `Span<Element>`.
 

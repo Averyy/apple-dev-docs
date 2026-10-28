@@ -25,7 +25,7 @@ func cblas_zher2k(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANS: CBLAS_TRANS
 void cblas_zher2k(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANS, const __LAPACK_int N, const __LAPACK_int K, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *A, const __LAPACK_int LDA, const __LAPACK_double_complex *B, const __LAPACK_int LDB, const double BETA, __LAPACK_double_complex *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*B`
 

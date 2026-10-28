@@ -19,11 +19,11 @@ func StopSpeechAt(_ chan: SpeechChannel, _ whereToStop: Int32) -> OSErr
 OSErr StopSpeechAt(SpeechChannel chan, SInt32 whereToStop);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `StopSpeechAt` functionhalts the production of speech on the channel specified by `chan` ata specified point in the text. This function returns immediately,although speech output continues until the specified point has beenreached.
 

@@ -21,7 +21,7 @@ Decodes the \c NSArray object for the given \c key, which should be an \c NSArra
 - (NSArray *) decodeArrayOfObjectsOfClasses:(NSSet<Class> *) classes forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Requires \c NSSecureCoding otherwise an exception is thrown and sets the \c decodingFailurePolicy to \c NSDecodingFailurePolicySetErrorAndReturn.
 

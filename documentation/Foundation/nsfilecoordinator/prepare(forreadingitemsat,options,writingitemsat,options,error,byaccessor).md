@@ -25,7 +25,7 @@ func prepare(forReadingItemsAt readingURLs: [URL], options readingOptions: NSFil
 - (void) prepareForReadingItemsAtURLs:(NSArray<NSURL *> *) readingURLs options:(NSFileCoordinatorReadingOptions) readingOptions writingItemsAtURLs:(NSArray<NSURL *> *) writingURLs options:(NSFileCoordinatorWritingOptions) writingOptions error:(NSError **) outError byAccessor:(void (^)(void (^completionHandler)())) batchAccessor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prepare the file coordinator for multiple read and write operations. Because file coordination requires interprocess communication, it is much more efficient to batch changes to large numbers of files and directories than to change each item individually. The file coordinator uses the values in the `readingURLs` and `writingURLs` parameters, together with reading and writing options, to prepare any relevant file presenters for the upcoming operations. Specifically, it uses these parameters in the same way as the [`coordinate(readingItemAt:options:error:byAccessor:)`](./coordinate%28readingitemat,options,error,byaccessor%29.md) and [`coordinate(writingItemAt:options:error:byAccessor:)`](./coordinate%28writingitemat,options,error,byaccessor%29.md) methods to determine which file presenter methods to call.
 

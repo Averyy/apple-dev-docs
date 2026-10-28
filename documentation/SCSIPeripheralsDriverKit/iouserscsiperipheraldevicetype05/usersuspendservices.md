@@ -15,11 +15,11 @@ Suspends services and allows the dext to communicate with the external drive.
 virtual kern_return_t UserSuspendServices();
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of the suspend request. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 This method allows the dext to try to obtain a clear window to communicate with the external drive. Calling this method attempts to close any open references to the media. This informs file systems that someone is accessing the media. You can use this cleared window of communication for things like firmware updates without risking harm to the user’s data.
 

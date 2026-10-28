@@ -20,7 +20,7 @@ An object that contains details about how a widget is rendered, including its si
 struct TimelineProviderContext
 ```
 
-#### Overview
+## Overview
 
 When requesting timelines for a widget, WidgetKit passes the [`TimelineProvider`](./timelineprovider.md) a context object that includes details about how the widget appears. These details include:
 

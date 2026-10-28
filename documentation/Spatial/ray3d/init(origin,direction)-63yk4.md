@@ -21,7 +21,7 @@ Creates a ray from Spatial primitives that describe the origin and direction.
 init(origin: Point3D = .zero, direction: Vector3D)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function normalizes the direction vector.
 

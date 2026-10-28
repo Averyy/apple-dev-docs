@@ -5,7 +5,7 @@
 
 Check whether a device supports 3D Touch before enabling features that use it.
 
-#### Overview
+## Overview
 
 To determine if 3D Touch is available on a device, check the [`forceTouchCapability`](./uitraitcollection/forcetouchcapability.md) property of any object — such as your app’s views and view controllers — that adopts the [`UITraitEnvironment`](./uitraitenvironment.md) protocol. The following code shows how you might use this property to enable or disable features at load time from your view controller. Use the [`traitCollectionDidChange(_:)`](./uitraitenvironment/traitcollectiondidchange%28_%29.md) method to detect changes to 3D Touch availability while your app is running.
 

@@ -16,7 +16,7 @@ Creates an empty credential session.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer to create a session. Use [`startSession()`](./startsession%28%29.md) to request and start a session.
 

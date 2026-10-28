@@ -20,7 +20,7 @@ func moveAction(at startIndex: Int, to endIndex: Int)
 - (void) moveActionAtIndex:(NSUInteger) startIndex toIndex:(NSUInteger) endIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If either index is invalid, this method does nothing.
 

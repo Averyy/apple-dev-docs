@@ -20,7 +20,7 @@ A suggestion the user can act on to increase their quota.
 var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates that the model provider does not surface an upgrade path through this API.
 

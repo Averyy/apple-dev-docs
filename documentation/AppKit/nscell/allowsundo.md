@@ -19,7 +19,7 @@ var allowsUndo: Bool { get set }
 @property BOOL allowsUndo;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the cell handles undo operations itself or [`false`](../../Swift/false.md) if the app’s custom undo manager must handle undo behavior. Cell subclasses set the value of this property to indicate their preference for handling undo operations. For example, the [`NSTextFieldCell`](../nstextfieldcell.md) class uses sets this property to indicate it handles undo operations for edited text, and other controls set a value that is appropriate for their implementation. Do not change the value of this property otherwise.
 

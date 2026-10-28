@@ -5,7 +5,7 @@
 
 Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
 
-#### Overview
+## Overview
 
 Programmatic evaluators work well when correctness is easily measurable, for example, exact matches, numeric ranges, or JSON schema validation. But there are many quality metrics that you cannot verify with simple code checks. Judging whether a joke is funny, an explanation is clear, or an email strikes the right tone requires reasoning about language, context, and intent.
 
@@ -20,7 +20,7 @@ The Evaluations Framework supports two modes:
 
 This article shows you how to create pointwise evaluations with single and multi-dimension scoring, build pairwise evaluations, and customize the model-judge prompt with instructions, evaluation targets, and reference data.
 
-#### Build a pointwise evaluator
+## Build a pointwise evaluator
 
 A pointwise evaluator scores each response independently against criteria you define. This lets you evaluate domain-specific qualities that programmatic checks cannot measure, such as whether generated content is accurate, relevant, and useful for your app’s purpose.
 
@@ -81,7 +81,7 @@ The name you pass as the first parameter, `"TagQuality"`, identifies this metric
 
 The scale maps numeric values to quality-level descriptions. Each entry describes what a response at that score looks like, constraining the model judge to one of these values. Each level needs to describe observable features rather than restating a quality gradient. “Tags accurately represent the book and are useful for browsing” gives the model judge something concrete to check. “Excellent quality” does not.
 
-#### Evaluate multiple dimensions in a single pass
+## Evaluate multiple dimensions in a single pass
 
 The single `"TagQuality"` scale above asks two different questions at once: are the tags accurate and are they useful for browsing?
 
@@ -129,7 +129,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-#### Customize the pointwise model-judge prompt
+## Customize the pointwise model-judge prompt
 
 For pointwise evaluation, you can provide a [`ModelJudgePrompt`](./modeljudgeprompt.md) to control how the model judge sees and evaluates the response. The prompt has three components:
 
@@ -139,7 +139,7 @@ For pointwise evaluation, you can provide a [`ModelJudgePrompt`](./modeljudgepro
 
 Pairwise evaluation builds its own prompt internally. The `instructions` and `reference` components only apply to pointwise evaluators. Pairwise evaluation supports `evaluationTarget` through its own parameter to control how both the response and baseline are formatted for the model judge.
 
-##### Write effective instructions
+### Write effective instructions
 
 Good instructions include three things:
 
@@ -182,7 +182,7 @@ ModelJudgePrompt(
 
 If you omit the [`ModelJudgePrompt`](./modeljudgeprompt.md) entirely, the evaluator uses default instructions that ask the model judge to rate the response using the scoring scale.
 
-##### Improve consistency with scored examples
+### Improve consistency with scored examples
 
 Improve scoring consistency by embedding scored examples directly in the instructions. These examples of what different score levels look like help the model judge apply the scale consistently across samples.
 
@@ -265,7 +265,7 @@ Include examples that span the full range of your scale. At minimum, show what a
 
 > 💡 **Tip**: Add a final instruction such as “Use these examples to calibrate your scoring.” to remind the model judge to use the examples as reference points.
 
-##### Format structured output for the model judge
+### Format structured output for the model judge
 
 When you use structured output, the `evaluationTarget` closure formats the response into readable text for the model judge. By default, the model judge receives a JSON serialized version of the result.
 
@@ -277,7 +277,7 @@ prompt: ModelJudgePrompt(
 )
 ```
 
-##### Provide reference data for the model judge
+### Provide reference data for the model judge
 
 Use the `reference` closure to give the model judge additional context, such as expected values, source material, or ground truth data that’s known to be accurate. The closure receives the input sample and the model’s response, and returns a `[String: String]` dictionary. Each key-value pair becomes a labeled section in the judge’s prompt.
 
@@ -313,7 +313,7 @@ ModelJudgeEvaluator(
 
 Without `reference`, the model judge only sees the prompt and the response. Adding reference data lets the model judge evaluate how well the response matches expectations, not just whether it seems reasonable in isolation.
 
-#### Compare two responses with pairwise evaluation
+## Compare two responses with pairwise evaluation
 
 Pairwise evaluation compares two responses and tells you which one the model judge rates higher. Use it to compare prompt strategies, model versions, or before-and-after changes. Instead of scoring absolute quality, the model judge decides whether a response is better or worse than a baseline.
 
@@ -373,7 +373,7 @@ struct ExplanationPairwiseEvaluation: Evaluation {
 
 In this example, a mean score above 2.5 indicates the model’s responses are generally better than the baselines. A mean score below 2.5 indicates regressions. Scores near 2.5 suggest comparable quality.
 
-#### Combine model-judge metrics with programmatic evaluators
+## Combine model-judge metrics with programmatic evaluators
 
 Model-judge evaluators and code-based evaluators work together in the same evaluation. Use code-based evaluators for dimensions with clear right answers, and model-judge evaluators for subjective quality. Both produce [`Metric`](./metric.md) values that you aggregate in the same [`MetricsAggregator`](./metricsaggregator.md):
 
@@ -414,7 +414,7 @@ Model-judge evaluators and code-based evaluators work together in the same evalu
     }
 ```
 
-#### Run a model-judge evaluation
+## Run a model-judge evaluation
 
 Run your model-judge evaluation with [Swift Testing](../Testing/Testing.md), just as you do with other evaluations:
 
@@ -433,7 +433,7 @@ struct BookTagTests {
 }
 ```
 
-#### Use rationales to debug and refine your evaluator
+## Use rationales to debug and refine your evaluator
 
 When the model judge scores a response, it also produces a written rationale explaining its reasoning. These rationales appear in the detailed results alongside the score for each sample. When scores seem wrong or inconsistent, the rationales usually show you why. For a guide to interpreting rationales, identifying common scoring problems, and refining your evaluator configuration, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 

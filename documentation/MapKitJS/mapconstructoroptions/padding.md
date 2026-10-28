@@ -15,7 +15,7 @@ The map’s inset margins.
 padding?: PaddingData;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `new mapkit.Padding(0, 0, 0, 0)`.
 

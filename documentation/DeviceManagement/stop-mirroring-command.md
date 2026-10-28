@@ -12,11 +12,11 @@ Stop mirroring the display to another device.
 - Mac Catalyst 7.0+
 - macOS 10.10+
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -26,7 +26,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

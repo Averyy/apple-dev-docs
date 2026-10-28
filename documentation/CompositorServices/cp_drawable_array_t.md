@@ -20,7 +20,7 @@ typealias cp_drawable_array_t = OpaquePointer
 typedef struct cp_drawable_array * cp_drawable_array_t;
 ```
 
-#### Discussion
+## Discussion
 
 See [`cp_drawable_t`](./cp_drawable_t.md) for more information about drawables.
 

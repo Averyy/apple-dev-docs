@@ -17,11 +17,11 @@ Gets an attribute value from a custom transform.
 extern CFTypeRefSecTranformCustomGetAttribute(SecTransformImplementationRef ref, SecTransformStringOrAttributeRef attribute, SecTransformMetaAttributeType type);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the attribute.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecTransformCustomGetAttribute(_:_:_:)`](./sectransformcustomgetattribute%28_,_,_%29.md) instead.
 

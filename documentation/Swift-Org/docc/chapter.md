@@ -29,7 +29,7 @@ Organizes related tutorial pages into a chapter on a table of contents page.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 Chapters appear on a table of contents page and help provide a sense of context and accomplishment as readers move through your tutorial content.
 
@@ -55,7 +55,7 @@ Use `Chapter` directives to organize related tutorial pages into groupings. For 
 }
 ```
 
-##### Group Related Chapters
+### Group Related Chapters
 
 If you need a second level of organization on a table of contents page, use [`Volume`](./volume.md) directives to organize related chapters into volume groupings.
 
@@ -96,14 +96,14 @@ If you need a second level of organization on a table of contents page, use [`Vo
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A chapter can contain the following items:
 
 - **[`Image`](./image.md)**: An image that represents the chapter’s content. **(optional)**
 - **[`TutorialReference`](./tutorialreference.md)**: A reference to a tutorial page. A chapter must contain at least one tutorial page reference. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain chapters:
 

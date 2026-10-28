@@ -21,7 +21,7 @@ Generates a filled column by replacing missing elements with a value.
 func filled(with value: Self.WrappedElement) -> FilledColumn<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A filled column.
 

@@ -25,7 +25,7 @@ var services: [CBService]? { get }
 @property (retain, readonly, nullable) NSArray<CBService *> * services;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an array of services (represented by [`CBService`](../cbservice.md) objects) that successful call to the [`discoverServices(_:)`](./discoverservices%28_%29.md) method discovered. If you haven’t yet called the [`discoverServices(_:)`](./discoverservices%28_%29.md) method to discover the services of the peripheral, or if there was an error in doing so, the value of this property is `nil`.
 

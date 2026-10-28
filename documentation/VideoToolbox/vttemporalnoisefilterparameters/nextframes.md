@@ -22,7 +22,7 @@ var nextFrames: [VTFrameProcessorFrame] { get }
 @property (nonatomic, readonly) NSArray<VTFrameProcessorFrame *> * nextFrames;
 ```
 
-#### Discussion
+## Discussion
 
 The number of frames can vary from 0 to the number specified by the `nextFrameCount` property in `VTTemporalNoiseFilterConfiguration`.
 

@@ -22,7 +22,7 @@ var mediaSources: [String : MLMediaSource]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,MLMediaSource *> * mediaSources;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` the first time, beginning an asynchronous load of the media sources. A KVO notification is sent when all media sources have been loaded. If there are no objects in a media source, the source does not appear in this dictionary.
 

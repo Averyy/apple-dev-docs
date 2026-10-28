@@ -25,7 +25,7 @@ class var epochIndex: MLMetricKey { get }
 @property (class, nonatomic, readonly) MLMetricKey * epochIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to fetch the epoch index value in the [`metrics`](../mlupdatecontext/metrics.md) dictionary.
 

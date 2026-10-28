@@ -25,7 +25,7 @@ struct OSSignpostID
 
 - [Recording Performance Data](./recording-performance-data.md)
 
-#### Overview
+## Overview
 
 Multiple intervals that have matching names, subsystems, and categories, and that exist in the same scope can be in-flight simultaneously. To match a pair of interval calls, you need to identify each interval with a unique signpost identifier. Use the first strategy in the list below that matches your use case:
 

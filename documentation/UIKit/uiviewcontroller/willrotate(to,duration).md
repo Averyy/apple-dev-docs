@@ -23,7 +23,7 @@ func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: Tim
 - (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation) toInterfaceOrientation duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses may override this method to perform additional actions immediately prior to the rotation. For example, you might use this method to disable view interactions, stop media playback, or temporarily turn off expensive drawing or live updates. You might also use it to swap the current view for one that reflects the new interface orientation. When this method is called, the [`interfaceOrientation`](./interfaceorientation.md) property still contains the view’s original orientation. Your implementation of this method must call `super` at some point during its execution.
 

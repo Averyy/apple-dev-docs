@@ -19,7 +19,7 @@ The style of the indicator that appears on the button.
 @property (nonatomic, assign, readwrite) UIButtonConfigurationIndicator indicator;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control the style of the indicator that appears on the trailing edge of the button. For example, the following code disables the indicator by setting this style to [`UIButtonConfigurationIndicatorNone`](../uibuttonconfigurationindicator/uibuttonconfigurationindicatornone.md).
 

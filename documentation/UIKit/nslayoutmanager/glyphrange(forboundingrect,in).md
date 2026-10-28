@@ -23,11 +23,11 @@ func glyphRange(forBoundingRect bounds: CGRect, in container: NSTextContainer) -
 - (NSRange) glyphRangeForBoundingRect:(CGRect) bounds inTextContainer:(NSTextContainer *) container;
 ```
 
-#### Return Value
+## Return Value
 
 The range of glyphs that would need to be displayed in order to draw all glyphs that fall (even partially) within the given bounding rectangle. The range returned can include glyphs that don’t fall inside or intersect `bounds`, although the first and last glyphs in the range always do. At most this method returns the glyph range for the whole container.
 
-#### Discussion
+## Discussion
 
 This method is used to determine which glyphs need to be displayed within a given rectangle.
 

@@ -15,7 +15,7 @@ An error that indicates the pagination token expired.
 object PaginationTokenExpiredError
 ```
 
-#### Discussion
+## Discussion
 
 When calling [`Get Notification History`](./get-notification-history.md), use the same [`NotificationHistoryRequest`](./notificationhistoryrequest.md) body on subsequent page requests that include a pagination token in the query.
 

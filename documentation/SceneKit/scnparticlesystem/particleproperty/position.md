@@ -25,7 +25,7 @@ static let position: SCNParticleSystem.ParticleProperty
 extern SCNParticleProperty const SCNParticlePropertyPosition;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a three-component vector (an [`NSValue`](../../../Foundation/nsvalue.md) object containing an [`SCNVector3`](../../scnvector3.md) value for particle property controllers, or an array of three `float` values for particle event or modifier blocks).
 

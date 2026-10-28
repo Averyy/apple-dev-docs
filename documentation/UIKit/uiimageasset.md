@@ -23,11 +23,11 @@ class UIImageAsset
 @interface UIImageAsset : NSObject
 ```
 
-#### Overview
+## Overview
 
 A common use case for [`UIImageAsset`](./uiimageasset.md) is the grouping of multiple images of the same item at different display scales. Image asset objects aren’t assigned to instances of [`UIImage`](./uiimage.md) rather; [`UIImage`](./uiimage.md) provides an asset when multiple representations of an image are available. Images retrieved from image asset catalogs using the [`init(named:)`](./uiimage/init%28named%29.md) or [`init(named:in:compatibleWith:)`](./uiimage/init%28named,in,compatiblewith%29.md) methods automatically have an image asset object that allows access to other images from the catalog.
 
-##### Register an image
+### Register an image
 
 When you register an image with an image asset, you associate a [`UITraitCollection`](./uitraitcollection.md) object with the image. The trait collection must contain the [`displayScale`](./uitraitcollection/displayscale.md) and [`userInterfaceIdiom`](./uitraitcollection/userinterfaceidiom.md) trait properties. If you don’t define these traits in the trait collection, the following defaults are assigned:
 
@@ -36,7 +36,7 @@ When you register an image with an image asset, you associate a [`UITraitCollect
 
 For example, if you create a trait collection that only contains a horizontal size class, the default display scale and idiom are added when the image is registered.
 
-##### Retrieve an image
+### Retrieve an image
 
 When you retrieve or unregister an image from an image asset, you do so using the trait collection that was used to register the image. To ensure the correct image is retrieved, the trait collection used must contain the [`displayScale`](./uitraitcollection/displayscale.md) and [`userInterfaceIdiom`](./uitraitcollection/userinterfaceidiom.md) traits. If these traits aren’t defined in the trait collection, the following defaults are assigned:
 

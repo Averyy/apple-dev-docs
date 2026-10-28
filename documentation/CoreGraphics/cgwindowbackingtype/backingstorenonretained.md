@@ -18,7 +18,7 @@ case backingStoreNonretained
 kCGBackingStoreNonretained
 ```
 
-#### Discussion
+## Discussion
 
 The window draws directly to the screen without using any buffer.
 

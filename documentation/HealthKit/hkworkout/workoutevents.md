@@ -24,7 +24,7 @@ var workoutEvents: [HKWorkoutEvent]? { get }
 @property (copy, readonly, nullable) NSArray<HKWorkoutEvent *> * workoutEvents;
 ```
 
-#### Discussion
+## Discussion
 
 This array specifies when the user has paused and resumed the workout activity. This method calculates the workout’s duration based on the amount of active time between the provided start and end dates. For more information on workout events, see [`HKWorkoutEvent`](../hkworkoutevent.md).
 

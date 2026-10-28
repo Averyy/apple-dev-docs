@@ -21,7 +21,7 @@ typealias SecTransformStringOrAttribute = CFTypeRef
 typedef CFTypeRef SecTransformStringOrAttributeRef;
 ```
 
-#### Discussion
+## Discussion
 
 Use a value of this type in place of either a [`CFString`](../CoreFoundation/cfstring.md) or a [`SecTransformAttribute`](./sectransformattribute.md) when referring to transform attributes, such as with the `attribute` parameter in calls to the [`SecTransformCustomSetAttribute(_:_:_:_:)`](./sectransformcustomsetattribute%28_,_,_,_%29.md)  and [`SecTransformCustomGetAttribute(_:_:_:)`](./sectransformcustomgetattribute%28_,_,_%29.md) functions. When using a name, see [Transform Attributes](./transform-attributes.md) for a list of valid key names.
 

@@ -19,7 +19,7 @@ Reads the enabled state of an output identified by ID
 func isOutputEnabled(_ outputID: ComputeNodeGraph.NodeID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 The enabled state, or false if the output is unknown
 

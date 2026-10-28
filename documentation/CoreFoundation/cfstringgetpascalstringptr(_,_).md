@@ -25,11 +25,11 @@ func CFStringGetPascalStringPtr(_ theString: CFString!, _ encoding: CFStringEnco
 extern ConstStringPtrCFStringGetPascalStringPtr(CFStringRef theString, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a Pascal string buffer or `NULL` if the internal storage of theString does not allow this to be returned efficiently.
 
-#### Discussion
+## Discussion
 
 This function either returns the requested pointer immediately, with no memory allocations and no copying, in constant time, or returns `NULL`. If the latter is returned, call an alternative function such as the [`CFStringGetPascalString(_:_:_:_:)`](./cfstringgetpascalstring%28_,_,_,_%29.md) function to extract the characters.
 

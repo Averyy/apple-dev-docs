@@ -12,11 +12,11 @@ virtual bool exitEntry(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 true if a level of recursion was undone, false if no recursive levels are left in the iteration.
 
-#### Overview
+## Overview
 
 This method undoes an enterEntry, restoring the current entry. If there are no more levels of recursion to exit false is returned, otherwise true is returned.
 

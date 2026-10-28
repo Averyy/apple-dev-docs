@@ -19,7 +19,7 @@ static var hsbModeMask: NSColorPanel.Options { get }
 NSColorPanelHSBModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Hue-saturation-brightness.
 

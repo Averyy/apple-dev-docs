@@ -23,7 +23,7 @@ func requestAlwaysAuthorization()
 - (void) requestAlwaysAuthorization;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this or the [`requestWhenInUseAuthorization()`](./requestwheninuseauthorization%28%29.md) method before your app can receive location information. To call this method, you must have both [`NSLocationAlwaysUsageDescription`](../../BundleResources/information-property-list/nslocationalwaysusagedescription.md) and [`NSLocationWhenInUseUsageDescription`](../../BundleResources/information-property-list/nslocationwheninuseusagedescription.md) keys in your app’s `Info.plist` file. You may call [`requestAlwaysAuthorization()`](./requestalwaysauthorization%28%29.md) when the current authorization state is either:
 
@@ -34,7 +34,7 @@ Use the [`locationManager(_:didUpdateLocations:)`](../cllocationmanagerdelegate/
 
 Core Location limits calls to [`requestAlwaysAuthorization()`](./requestalwaysauthorization%28%29.md). After your app calls this method, further calls have no effect. If a compatible iPad or iPhone app calls this method when running in visionOS, the method treats it as a request for When in Use authorization instead.
 
-##### Request Always Authorization After Getting When In Use
+### Request Always Authorization After Getting When In Use
 
 To obtain Always authorization, your app must first request When In Use permission followed by requesting Always authorization.
 
@@ -49,7 +49,7 @@ Core Location prompts the user to grant permission with the string from [`NSLoca
 | Keep Only While Using | Core Location leaves the authorization as When In Use. The delegate doesn’t receive any updates. |
 | Change to Always Allow | Core Location grants your app Always authorization. The delegate receives [`CLAuthorizationStatus.authorizedAlways`](../clauthorizationstatus/authorizedalways.md). |
 
-##### Request Always Authorization Directly
+### Request Always Authorization Directly
 
 If your app’s current state is [`CLAuthorizationStatus.notDetermined`](../clauthorizationstatus/notdetermined.md) and you call [`requestAlwaysAuthorization()`](./requestalwaysauthorization%28%29.md), Core Location uses two prompts before it fully enables Always authorization.
 

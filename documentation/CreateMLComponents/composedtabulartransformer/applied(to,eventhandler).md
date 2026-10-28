@@ -21,7 +21,7 @@ Performs the composed transformation on a single input.
 func applied(to input: DataFrame, eventHandler: EventHandler? = nil) async throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 An output produced by applying the transformer to the input.
 

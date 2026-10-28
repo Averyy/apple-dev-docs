@@ -16,7 +16,7 @@ A Base64-encoded string for application-specific data.
 DOMString applicationData;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to contain additional data as may be appropriate for your website. For example, the application data may be a shopping cart identifier or an order number that your back end needs to identify this transaction.
 

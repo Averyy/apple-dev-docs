@@ -22,7 +22,7 @@ func setNetwork(_ network: NEHotspotNetwork)
 - (void) setNetwork:(NEHotspotNetwork *) network;
 ```
 
-#### Discussion
+## Discussion
 
 In response to the [`NEHotspotHelperCommandType.evaluate`](../nehotspothelpercommandtype/evaluate.md) command, the Hotspot Helper app sets the confidence level on the [`NEHotspotNetwork`](../nehotspotnetwork.md) object provided with the command and calls this method to convey the confidence level to the system.
 

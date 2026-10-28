@@ -55,7 +55,7 @@ init<S, P>(_ title: S, value: P?) where Label == Text, S : StringProtocol, P : H
 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
-#### Discussion
+## Discussion
 
 When someone activates the navigation link that this initializer creates, SwiftUI looks for a nearby [`navigationDestination(for:destination:)`](../view/navigationdestination%28for,destination%29.md) view modifier with a `data` input parameter that matches the type of this initializer’s `value` input, with one of the following outcomes:
 

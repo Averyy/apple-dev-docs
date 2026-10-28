@@ -23,7 +23,7 @@ func multiply(by matrix: simd_float4x4, preBias: (Float, Float, Float, Float), p
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

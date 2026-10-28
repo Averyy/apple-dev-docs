@@ -25,11 +25,11 @@ func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue
 - (id) addPeriodicTimeObserverForInterval:(CMTime) interval queue:(dispatch_queue_t) queue usingBlock:(void (^)(CMTime time)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An object that conforms to [`NSObject`](../../ObjectiveC/nsobject-swift.class.md). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel time observation.
 
-#### Discussion
+## Discussion
 
 The block associated with this method is invoked at the specified time intervals, interpreted according to the timeline of the timebase. The block is also invoked whenever there is a time jump or rendering starts or stops.
 

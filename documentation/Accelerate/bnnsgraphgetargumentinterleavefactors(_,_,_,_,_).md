@@ -25,7 +25,7 @@ func BNNSGraphGetArgumentInterleaveFactors(_ graph: bnns_graph_t, _ function: Un
 int BNNSGraphGetArgumentInterleaveFactors(bnns_graph_t graph, const char *function, size_t argument_count, const uint16_t **argument_interleave, size_t *argument_interleave_counts);
 ```
 
-#### Discussion
+## Discussion
 
 If any arguments to the function are specified with an interleave factor (e.g. using the `interleave` option to `tensor_buffer` in MIL), this function can be used to retrieve the interleave factor array.
 

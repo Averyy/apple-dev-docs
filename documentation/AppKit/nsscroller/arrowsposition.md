@@ -21,7 +21,7 @@ var arrowsPosition: NSScroller.ArrowPosition { get set }
 @property NSScrollArrowPosition arrowsPosition;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.ArrowPosition`](./arrowposition.md) for a list of possible values for `location`.
 

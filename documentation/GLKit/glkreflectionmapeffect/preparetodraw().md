@@ -24,7 +24,7 @@ func prepareToDraw()
 - (void) prepareToDraw;
 ```
 
-#### Discussion
+## Discussion
 
 An effect must be prepared after it is configured and again when your application wants to use the effect to render any primitives. When your application prepares an effect, some OpenGL state is altered to allow the effect to operate:
 

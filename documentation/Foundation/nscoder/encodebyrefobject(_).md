@@ -25,7 +25,7 @@ func encodeByrefObject(_ anObject: Any?)
 - (void) encodeByrefObject:(id) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation simply invokes [`encode(_:)`](./encode%28_%29-9648d.md).
 

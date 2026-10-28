@@ -24,7 +24,7 @@ protocol UITextInputTokenizer : NSObjectProtocol
 @protocol UITextInputTokenizer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Granularities of text units are always evaluated with reference to a storage or reference direction.
 

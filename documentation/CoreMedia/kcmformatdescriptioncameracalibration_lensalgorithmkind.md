@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_LensAlgorithmKind;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the camera calibration methodology.
 

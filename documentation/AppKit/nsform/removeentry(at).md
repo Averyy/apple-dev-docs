@@ -21,7 +21,7 @@ func removeEntry(at index: Int)
 - (void) removeEntryAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified index is invalid, this method does nothing.
 

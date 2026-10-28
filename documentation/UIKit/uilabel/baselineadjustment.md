@@ -23,7 +23,7 @@ var baselineAdjustment: UIBaselineAdjustment { get set }
 @property (nonatomic) UIBaselineAdjustment baselineAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 If [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) is [`true`](../../Swift/true.md), this property controls the behavior of the text baselines in situations where the text needs the font size adjusted in order to fit. The default value of this property is [`UIBaselineAdjustment.alignBaselines`](../uibaselineadjustment/alignbaselines.md). This property is effective only when the [`numberOfLines`](./numberoflines.md) is `1`.
 

@@ -31,7 +31,7 @@ class SKProductDiscount
 
 - [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md)
 
-#### Overview
+## Overview
 
 You set up introductory and promotional offers in App Store Connect. [`SKProductDiscount`](./skproductdiscount.md) contains the offer information as retrieved from the App Store.
 

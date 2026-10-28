@@ -25,7 +25,7 @@ func CMTimeFoldIntoRange(_ time: CMTime, foldRange: CMTimeRange) -> CMTime
 extern CMTime CMTimeFoldIntoRange(CMTime time, CMTimeRange foldRange);
 ```
 
-#### Return Value
+## Return Value
 
 A time that represents the translated duration.
 

@@ -24,7 +24,7 @@ var preferredMediaChunkAlignment: Int { get set }
 @property (nonatomic) NSInteger preferredMediaChunkAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates to use no padding should to achieve chunk alignment. Setting a negative chunk alignment value causes an error.
 

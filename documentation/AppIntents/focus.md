@@ -5,7 +5,7 @@
 
 Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.AppIntents/focus-filters-hero@2x.png)
 

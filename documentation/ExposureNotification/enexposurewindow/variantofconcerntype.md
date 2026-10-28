@@ -23,7 +23,7 @@ var variantOfConcernType: ENVariantOfConcernType { get }
 @property (nonatomic, assign, readonly) ENVariantOfConcernType variantOfConcernType;
 ```
 
-#### Discussion
+## Discussion
 
 The Public Health Authority (PHA) has control over defining the meaning of the types that indicate variants of concern.
 

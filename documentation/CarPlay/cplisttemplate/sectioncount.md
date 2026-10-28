@@ -21,7 +21,7 @@ var sectionCount: Int { get }
 @property (nonatomic, readonly) NSUInteger sectionCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value never exceeds [`maximumSectionCount`](./maximumsectioncount.md). If you initialize a list, or call the [`updateSections(_:)`](./updatesections%28_%29.md) method, with an array larger than `maximumSectionCount`, CarPlay trims the array to an appropriate size.
 

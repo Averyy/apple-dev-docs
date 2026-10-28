@@ -24,7 +24,7 @@ class PHAssetResourceRequestOptions
 @interface PHAssetResourceRequestOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use this class when requesting the underlying data for photo, video, and Live Photo asset resources from a [`PHAssetResourceManager`](./phassetresourcemanager.md) object.
 

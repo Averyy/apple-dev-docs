@@ -22,7 +22,7 @@ enum UITextSearchFoundTextStyle
 enum UITextSearchFoundTextStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use [`UITextSearchFoundTextStyle`](./uitextsearchfoundtextstyle.md) to identify ranges of text your app decorates to indicate matches, highlighted matches and non-matching text.
 

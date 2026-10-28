@@ -22,7 +22,7 @@ struct MPSFunctions_AABB
 typedef struct { ... } MPSFunctions_AABB;
 ```
 
-#### Overview
+## Overview
 
 Axis aligned bounding box for color gamut
 

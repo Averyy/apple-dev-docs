@@ -33,7 +33,7 @@ var lastTurnDate: Date? { get }
 @property (atomic, copy, readonly, nullable) NSDate * lastTurnDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid until the participant takes their first turn.
 

@@ -25,11 +25,11 @@ class func paths(forResourcesOfType ext: String?, inDirectory bundlePath: String
 + (NSArray<NSString *> *) pathsForResourcesOfType:(NSString *) ext inDirectory:(NSString *) bundlePath;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the full pathnames for all bundle resources with the specified extension. This method returns an empty array if no matching resource files are found. It also returns an empty array if the bundle specified by the `bundlePath` parameter does not exist or is not a readable directory.
 
-#### Discussion
+## Discussion
 
 This method provides a means for dynamically discovering multiple bundle resources of the same type. For details on how localized resources are found, read [The Bundle Search Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7) in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
 

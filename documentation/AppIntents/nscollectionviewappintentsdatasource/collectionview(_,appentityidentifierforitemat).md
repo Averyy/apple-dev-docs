@@ -17,11 +17,11 @@ Asks the data source to return an app entity identifier for a cell at a particul
 func collectionView(_ collectionView: NSCollectionView, appEntityIdentifierForItemAt indexPath: IndexPath) -> EntityIdentifier?
 ```
 
-#### Return Value
+## Return Value
 
 The app entity identifier at the specified location in the collection view.
 
-#### Discussion
+## Discussion
 
 For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../AppIntents.md).
 

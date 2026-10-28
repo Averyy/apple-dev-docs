@@ -20,11 +20,11 @@ class func referenceImages(inGroupNamed name: String, bundle: Bundle?) -> Set<AR
 + (NSSet<ARReferenceImage *> *) referenceImagesInGroupNamed:(NSString *) name bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 A set of all unique reference images in the specified group.
 
-#### Discussion
+## Discussion
 
 To use the images for image detection in a world-tracking AR session, provide this set for your session configuration’s [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) property.
 

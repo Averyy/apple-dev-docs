@@ -20,7 +20,7 @@ func orderFrontSharingServicePicker(_ sender: Any?)
 - (void) orderFrontSharingServicePicker:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new instance of [`NSSharingServicePicker`](../nssharingservicepicker.md) based on the current selection and shows to the screen. The items passed to the [`NSSharingServicePicker`](../nssharingservicepicker.md) initializer are determined using the delegate method `textView:willShowSharingServicePicker:forItems:`.
 

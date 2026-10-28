@@ -24,7 +24,7 @@ struct Index
 
 Available when `Key` conforms to `Hashable`.
 
-#### Overview
+## Overview
 
 Dictionary has two subscripting interfaces:
 

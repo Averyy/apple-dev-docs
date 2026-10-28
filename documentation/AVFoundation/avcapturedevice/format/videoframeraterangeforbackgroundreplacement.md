@@ -23,7 +23,7 @@ var videoFrameRateRangeForBackgroundReplacement: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForBackgroundReplacement;
 ```
 
-#### Discussion
+## Discussion
 
 Devices may support a limited frame rate range when Background Replacement is active. If this device format doesn’t support this feature, the value of this property is `nil`.
 

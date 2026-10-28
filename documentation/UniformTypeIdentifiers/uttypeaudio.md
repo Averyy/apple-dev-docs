@@ -21,7 +21,7 @@ A type that represents audio that doesn’t contain video.
 extern UTType * const UTTypeAudio;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.audio`.
 

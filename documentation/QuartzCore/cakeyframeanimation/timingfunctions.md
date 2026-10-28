@@ -24,7 +24,7 @@ var timingFunctions: [CAMediaTimingFunction]? { get set }
 @property (copy, nullable) NSArray<CAMediaTimingFunction *> * timingFunctions;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this array to apply ease-in, ease-out, or custom timing curves to the points that lie between two keyframe values. If the number of keyframes in the values property is *n*, then this property should contain *n*`-1` objects.
 

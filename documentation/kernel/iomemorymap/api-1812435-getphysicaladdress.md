@@ -11,11 +11,11 @@ Return the physical address of the first byte in the mapping.
 IOPhysicalAddress getPhysicalAddress();
 ```
 
-#### Return Value
+## Return Value
 
 A physical address.
 
-#### Overview
+## Overview
 
 This method returns the physical address of the first byte in the mapping. It is most useful on mappings known to be physically contiguous.
 

@@ -17,11 +17,11 @@ Generate tokens from prepared input, returning an AsyncStream.
 func generate(input: sending consuming LMInput, parameters: GenerateParameters, wiredMemoryTicket: WiredMemoryTicket? = nil, tools: [[String : any Sendable]]? = nil) async throws -> AsyncStream<Generation>
 ```
 
-#### Return Value
+## Return Value
 
 An AsyncStream of generation events
 
-#### Discussion
+## Discussion
 
 This method provides a thread-safe way to generate tokens without needing to use closure-based `perform` calls.
 

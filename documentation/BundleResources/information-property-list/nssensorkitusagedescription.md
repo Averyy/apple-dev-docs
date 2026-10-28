@@ -15,7 +15,7 @@ A short description of the purpose of your app’s research study.
 - **Name**: `NSSensorKitUsageDescription`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 When your app attempts to read sensor information for the first time on a user’s device, the system presents this string to explain your app’s study. Users approve or deny your app’s ability to read private sensor information based on the description you provide for this property.
 

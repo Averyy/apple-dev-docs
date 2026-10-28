@@ -19,7 +19,7 @@ var segmentStyle: NSSegmentedControl.Style { get set }
 @property NSSegmentStyle segmentStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an `NSSegmentStyle` value that specifies the visual display used by the control.
 

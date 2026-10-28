@@ -15,7 +15,7 @@ A keyword exclusion that prevents ads from showing when a search query matches t
 object NegativeKeyword
 ```
 
-#### Discussion
+## Discussion
 
 A `NegativeKeyword` prevents ads from showing when a search query matches the excluded term.
 
@@ -23,11 +23,11 @@ A `NegativeKeyword` prevents ads from showing when a search query matches the ex
 - The `BROAD` match negatives block a wider range of related queries.
 - The `PHRASE` match negatives block Apple Maps searches that match the term and close variants.
 
-Pausing a negative keyword (`status: PAUSED`) temporarily re-enables traffic from that term without permanently removing the exclusion. A `deleted` negative keyword is soft-deleted and excluded from serving but remains accessible in query results.
+Pausing a negative keyword (`status: PAUSED`) temporarily re-enables traffic from that term without permanently removing the exclusion. A `deleted` negative keyword is soft-deleted and excluded from serving, but the query endpoint doesn’t return it and GET by ID returns 404.
 
 You can use fields marked **Filterable** in the dictionary keys as filter criteria in query endpoint requests. See [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md) for details on constructing queries.
 
-##### Example
+### Example
 
 ```json
 {
@@ -62,7 +62,7 @@ You can use fields marked **Filterable** in the dictionary keys as filter criter
 - `id` (int64): System-assigned unique identifier. Read-only. Filterable (`EQUALS`, `IN`).
 - `creationTime` (date-time): Timestamp when the negative keyword was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Read-only.
-- `deleted` (boolean): Whether the negative keyword has been deleted. Read-only.
+- `deleted` (boolean): Whether the negative keyword has been deleted. Filterable (`EQUALS`). Not returned by query or GET by ID. Read-only.
 
 ## See Also
 

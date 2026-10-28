@@ -19,7 +19,7 @@ object GetMerchantTokenUsageInformationPackageResponse
 
 - [Adding merchant token usage information](../ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md)
 
-#### Discussion
+## Discussion
 
 The `data` needs to be a merchant token usage information package encrypted to the `merchantTokenPublicKey` using HPKE in authorization mode with `merchantPrivateKey` and the following options:
 

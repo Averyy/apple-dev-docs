@@ -21,7 +21,7 @@ An unused identifier for a plug-in.
 typedef AuthorizationString const AuthorizationPluginId;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is not used by plugin writers. Loaded plugins are identified by their name instead.
 

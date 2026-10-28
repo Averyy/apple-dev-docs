@@ -20,7 +20,7 @@ var type: Int32
 int type;
 ```
 
-#### Discussion
+## Discussion
 
 See the man page for `socket(2)` for a list of available type values.
 

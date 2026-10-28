@@ -21,11 +21,11 @@ An effect that hides inactive layers in a symbol-based image.
 - (instancetype) effectWithHideInactiveLayers;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the symbol effect options that hides inactive layers.
 
-#### Discussion
+## Discussion
 
 This effect hides inactive layers completely, rather than drawing them with reduced, but nonzero, opacity.
 

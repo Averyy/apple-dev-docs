@@ -5,7 +5,7 @@
 
 Inform Metal when your app uses programmable sample positions for its depth render targets or copies MSAA depth data.
 
-#### Overview
+## Overview
 
 A render or compute pass usually stores its target’s depth data in a compressed format. Any subsequent pass has to use the correct sample positions to decompress the data before reading it. You can store depth data in a representation that uses arbitrary sample positions (see [Positioning samples programmatically](./positioning-samples-programmatically.md)).
 

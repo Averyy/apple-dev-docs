@@ -22,7 +22,7 @@ func refreshCurrentPreviewItem()
 - (void) refreshCurrentPreviewItem;
 ```
 
-#### Discussion
+## Discussion
 
 Quick Look recomputes the display regardless of whether the current preview item changes.
 

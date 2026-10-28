@@ -22,7 +22,7 @@ func GLKQuaternionAdd(_ quaternionLeft: GLKQuaternion, _ quaternionRight: GLKQua
 static GLKQuaternion GLKQuaternionAdd(GLKQuaternion quaternionLeft, GLKQuaternion quaternionRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

@@ -25,7 +25,7 @@ var localizedInfoDictionary: [String : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * localizedInfoDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the preferred localization for the current user when determining which resources to include. If the preferred localization is not available, this property chooses the most appropriate localization found in the bundle.
 

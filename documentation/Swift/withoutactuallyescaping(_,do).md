@@ -21,11 +21,11 @@ Allows a nonescaping closure to temporarily be used as if it were allowed to esc
 func withoutActuallyEscaping<ClosureType, ResultType, Failure>(_ closure: ClosureType, do body: (ClosureType) throws(Failure) -> ResultType) throws(Failure) -> ResultType where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 You can use this function to call an API that takes an escaping closure in a way that doesn’t allow the closure to escape in practice. The examples below demonstrate how to use `withoutActuallyEscaping(_:do:)` in conjunction with two common APIs that use escaping closures: lazy collection views and asynchronous operations.
 

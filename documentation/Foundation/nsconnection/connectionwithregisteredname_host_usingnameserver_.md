@@ -16,11 +16,11 @@ Returns the `NSConnection` object whose send port links it to the `NSConnection`
 + (instancetype) connectionWithRegisteredName:(NSString *) name host:(NSString *) hostName usingNameServer:(NSPortNameServer *) server;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSConnection` object whose send port links it to the `NSConnection` object registered with `server` under `name` on the host named `hostName`.
 
-#### Discussion
+## Discussion
 
 See [`connectionWithRegisteredName:host:`](./connectionwithregisteredname_host_.md) for more information.
 

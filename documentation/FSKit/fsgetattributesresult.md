@@ -19,7 +19,7 @@ class FSGetAttributesResult
 @interface FSGetAttributesResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`getAttributes(_:of:context:replyHandler:)`](./fsvolume/handler/getattributes%28_,of,context,replyhandler%29.md).
 

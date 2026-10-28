@@ -19,7 +19,7 @@ init!(callbacks: UnsafePointer<AuthorizationCallbacks>!, andEngineRef engineRef:
 - (id) initWithCallbacks:(const AuthorizationCallbacks *) callbacks andEngineRef:(AuthorizationEngineRef) engineRef;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `SFAuthorizationPluginView` instance.
 

@@ -16,7 +16,7 @@ The color formats, depth formats, and features that you can use to configure you
 struct Capabilities
 ```
 
-#### Overview
+## Overview
 
 A [`LayerRenderer.Capabilities`](./capabilities.md) type provides information about the capabilities of the current device. Simulator and devices support different sets of options. Use the information in this type to specify the configuration details for your layer.
 

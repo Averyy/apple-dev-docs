@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Navigate and write your Swift code more easily with Language features.
 
-#### Overview
+## Overview
 
 The Swift extension provides language features such as code completion and jump to definition via [SourceKit-LSP](https://github.com/apple/sourcekit-lsp).
 

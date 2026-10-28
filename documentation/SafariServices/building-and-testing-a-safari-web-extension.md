@@ -14,11 +14,11 @@ Get started with Safari web extensions by creating one from the ground up, using
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 216: [Create web extensions for Safari](https://developer.apple.com/videos/play/wwdc2026/216).
 
-##### Configure the sample code project without Xcode
+### Configure the sample code project without Xcode
 
 1. In Safari, choose Safari > Settings.
 2. Click the Advanced tab and select the “Show features for web developers” checkbox.
@@ -26,7 +26,7 @@ Get started with Safari web extensions by creating one from the ground up, using
 4. Click the Add Temporary Extension button.
 5. Browse to the sample code project’s `Resources` folder and click Select.
 
-##### Configure the sample code project with Xcode
+### Configure the sample code project with Xcode
 
 1. Perform steps 1–3 from “Configure the sample code project without Xcode” above.
 2. Select the “Allow unsigned extensions” checkbox.

@@ -26,7 +26,7 @@ var activityType: HKWorkoutActivityType { get }
 @property (readonly) HKWorkoutActivityType activityType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible activity types, see [`HKWorkoutActivityType`](../hkworkoutactivitytype.md).
 

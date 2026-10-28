@@ -19,7 +19,7 @@ func setPanelFont(_ fontObj: NSFont, isMultiple flag: Bool)
 - (void) setPanelFont:(NSFont *) fontObj isMultiple:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 You normally don’t use this method directly; instead, you send [`setSelectedFont(_:isMultiple:)`](../nsfontmanager/setselectedfont%28_,ismultiple%29.md) to the shared `NSFontManager`, which in turn invokes this method.
 

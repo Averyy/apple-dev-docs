@@ -19,11 +19,11 @@
 static SPAffineTransform3D SPAffineTransform3DMake(SPSize3D scale, SPRotation3D rotation, SPVector3D translation);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scale, rotate, translate affine transform.
 

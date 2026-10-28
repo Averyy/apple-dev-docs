@@ -23,7 +23,7 @@ func drawBar(inside rect: NSRect, flipped: Bool)
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 You should not call this method explicitly. It’s included so you can override it in a subclass.
 

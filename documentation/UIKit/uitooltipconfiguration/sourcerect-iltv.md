@@ -18,7 +18,7 @@ The region of the view or control where the pointer must hover to trigger the ap
 @property (nonatomic, readonly) CGRect sourceRect;
 ```
 
-#### Discussion
+## Discussion
 
 To set [`sourceRect`](./sourcerect-iltv.md), create a tooltip configuration object using the [`init(toolTip:in:)`](./init%28tooltip,in%29.md) method.
 

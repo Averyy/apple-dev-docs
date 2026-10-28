@@ -24,7 +24,7 @@ class VNFaceLandmarks
 @interface VNFaceLandmarks : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class represents the set of all detectable facial landmarks and regions, exposed as properties.
 

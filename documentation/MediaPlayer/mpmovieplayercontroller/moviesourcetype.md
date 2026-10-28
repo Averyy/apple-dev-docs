@@ -23,7 +23,7 @@ var movieSourceType: MPMovieSourceType { get set }
 @property (nonatomic) MPMovieSourceType movieSourceType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`MPMovieSourceType.unknown`](../mpmoviesourcetype/unknown.md). This property provides a clue to the playback system as to how it should download and buffer the movie content. If you know the source type of the movie, setting the value of this property before playback begins can improve the load times for the movie content. If you do not set the source type explicitly before playback, the movie player controller must gather this information, which might delay playback.
 

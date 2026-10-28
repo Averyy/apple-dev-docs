@@ -22,7 +22,7 @@ nonisolated
 struct SplitArrangementViewStyle
 ```
 
-#### Overview
+## Overview
 
 A split arrangement view keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
@@ -41,7 +41,7 @@ ArrangementView {
 .arrangementViewStyle(.split)
 ```
 
-#### Adjust layout sizing in a split arrangement
+## Adjust layout sizing in a split arrangement
 
 By default, a split arrangement view sizes the primary and secondary views equally when a display has one region. Set a fixed layout size or layout ratio to influence how the arrangement view computes the sizes for each view. In the following example, adding the [`splitArrangementLayoutRatio(_:)`](./view/splitarrangementlayoutratio%28_%29.md) view modifier to `PrimaryContent()` sets a value for a ratio that the arrangement uses to calculate how much of the display’s available space to use for the primary view:
 
@@ -56,7 +56,7 @@ ArrangementView {
 
 Use [`splitArrangementLayoutRatio(_:)`](./view/splitarrangementlayoutratio%28_%29.md) or [`splitArrangementLayoutRatio(minHorizontal:idealHorizontal:maxHorizontal:minVertical:idealVertical:maxVertical:)`](./view/splitarrangementlayoutratio%28minhorizontal,idealhorizontal,maxhorizontal,minvertical,idealvertical,maxvertical%29.md) to specify a ratio for a view, or use [`splitArrangementLayoutSize(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:)`](./view/splitarrangementlayoutsize%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight%29.md) to specify a size for a view. Use the [`splitArrangementFixedLayoutSize(horizontal:vertical:)`](./view/splitarrangementfixedlayoutsize%28horizontal,vertical%29.md) modifier to have the system calculate the preferred size for the view.
 
-#### Limit a split arrangement by orientation
+## Limit a split arrangement by orientation
 
 You can limit which axes your split arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only splits vertically:
 

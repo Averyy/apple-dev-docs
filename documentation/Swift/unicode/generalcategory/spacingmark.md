@@ -21,7 +21,7 @@ A spacing combining mark with positive advance width.
 case spacingMark
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Spacing_Mark` (abbreviated `Mc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

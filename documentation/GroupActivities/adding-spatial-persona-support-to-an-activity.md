@@ -5,7 +5,7 @@
 
 Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 
-#### Overview
+## Overview
 
 A person who participates in SharePlay activities on Apple Vision Pro has the option to participate using their spatial Persona. The system arranges spatial Personas around the activity content, giving each person a clear view of the content and each other. Each person sees the facial expressions of other participants, what they’re looking at, and where they’re pointing. This experience creates the feeling that they’re in the same physical space interacting with shared content and each other.
 
@@ -13,7 +13,7 @@ To maintain the experience when spatial Personas are visible, apps share additio
 
 You don’t need to define new [`GroupActivity`](./groupactivity.md) types specifically to support spatial Personas. The system automatically displays spatial Personas for existing activities that take place in a window or volume. However, if you support activities in a Full Space, you need to do additional work to support spatial Personas for your experience. For information about how to define activities in your app, see [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md).
 
-##### Associate SharePlay activities with your app’s scenes
+### Associate SharePlay activities with your app’s scenes
 
 You use scenes to manage the content for your app’s windows, volumes, and immersive spaces. You also use scenes to display any activity-related content. When a participant joins an activity, the system selects or opens the scene that supports the activity. If your app has only one scene and one window, the system has only one choice. However, if your app has multiple scenes, you need to help the system choose the correct one.
 
@@ -69,7 +69,7 @@ For a demonstration, watch the “Support multiple windows” chapter of the WWD
 
 For UIKit, create a [`GroupActivityAssociationInteraction`](./groupactivityassociationinteraction.md) and use [`addInteraction(_:)`](../UIKit/uiview/addinteraction%28_%29.md) to add the scene association interaction.
 
-##### Configure your app’s support for spatial Personas
+### Configure your app’s support for spatial Personas
 
 The system provides some default behaviors to make it easier for you to adopt spatial Personas in your app. For activities that take place in a window or volume, the system chooses a default arrangement of the spatial Personas around your scene. The system also adorns the scene with a Share menu, which provides a visual indication when sharing is active and contains controls to start activities. The system doesn’t display spatial Personas in a Full Space by default.
 
@@ -96,7 +96,7 @@ Spatial template preferences tell the system whether to arrange participants sid
 
 If you enable support for spatial Personas in a Full Space, you must do additional work to support that experience. When an activity moves to a Full Space, the system creates a shared coordinate system for all participants and the content. In this new coordinate system, participants are no longer at the center of the coordinate system, which might require you to update the position of your content. For more information, see [Place content in an immersive space](./adding-spatial-persona-support-to-an-activity.md#Place-content-in-an-immersive-space).
 
-##### Synchronize additional data when spatial Personas are visible
+### Synchronize additional data when spatial Personas are visible
 
 When spatial Personas are visible, it’s your responsibility to maintain the shared context for your activity. The shared context includes both the content you display and how that content appears to each participant. People can gesture or look at content using their spatial Persona, so it’s important that everyone sees the same thing when that happens. For example, Freeform synchronizes both the page content and the current scroll position to ensure everyone sees the same portion of the page.
 
@@ -120,7 +120,7 @@ Task {
 }
 ```
 
-##### Update the immersion level automatically for a Full Space
+### Update the immersion level automatically for a Full Space
 
 If one participant opens an immersive space as part of an activity, the system doesn’t automatically open the same immersive space for other participants. Making a transition to an immersive space is a significant change, and some participants might not want to make the transition right away. For example, if a participant is on a phone call, they might not want another app to open an immersive space and hide their call. Instead, the system reports when transitions to immersive spaces occur, and lets you decide when to transition other participants automatically.
 
@@ -143,7 +143,7 @@ The system reports `nil` for the immersion style when a participant dismisses th
 
 > **Note**: If a participant presses the Digital Crown while an immersive space is open, the system dismisses the space without notifying the rest of the group. Someone might use this feature to temporarily leave the activity and perform another task. After they perform that task, they can use the system-provided UI to rejoin the activity and return to the group immersive space.
 
-##### Place content in an immersive space
+### Place content in an immersive space
 
 When an activity takes place in an immersive space, the system creates a shared coordinate system for the participants and content. In this new coordinate space, the origin of the coordinate space is not the same as the origin of any of the participants. If an activity-related window or volume is visible, the system places the window or volume at the new origin. If the activity doesn’t use a window or volume, the system arranges the participants in a circle and sets the origin of the coordinate space to the circle’s center. The following figure shows the origin of the shared coordinate system for a window, volume, and immersive space relative to several spatial Personas.
 

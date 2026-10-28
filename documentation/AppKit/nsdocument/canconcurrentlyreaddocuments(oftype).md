@@ -19,11 +19,11 @@ class func canConcurrentlyReadDocuments(ofType typeName: String) -> Bool
 + (BOOL) canConcurrentlyReadDocumentsOfType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) by default; subclasses can override to return [`true`](../../Swift/true.md), thereby causing documents of the specified type to be read concurrently.
 
-#### Discussion
+## Discussion
 
 Your [`NSDocument`](../nsdocument.md) subclass can implement this method to return [`true`](../../Swift/true.md) to enable loading of documents concurrently, using background threads. When this facility is enabled in this way, [`init(contentsOf:ofType:)`](./init%28contentsof,oftype%29.md) executes on a background thread when opening files via the Open panel or from the Finder. This allows concurrent reading of multiple documents and also allows the app to be responsive while reading a large document.
 

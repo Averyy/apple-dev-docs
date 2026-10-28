@@ -5,7 +5,7 @@
 
 Define accessible representations of your chart’s components for VoiceOver to construct an audible representation of the data.
 
-#### Overview
+## Overview
 
 To represent your chart as an accessible audio graph, adopt the [`AXChart`](./axchart.md) protocol on your chart’s view model. Set the [`accessibilityChartDescriptor`](./axchart/accessibilitychartdescriptor.md) property to an [`AXChartDescriptor`](./axchartdescriptor.md) that contains all the semantic information you need to represent your chart through an audio interface, like the chart’s title, axes, data points, and a summary of the chart’s key takeaways.
 

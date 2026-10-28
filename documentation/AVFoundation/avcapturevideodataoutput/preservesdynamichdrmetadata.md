@@ -24,7 +24,7 @@ var preservesDynamicHDRMetadata: Bool { get set }
 @property BOOL preservesDynamicHDRMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` if you wish to use [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) with [`AVAssetWriter`](../avassetwriter.md) to record HDR movies. You must also set `kVTCompressionPropertyKey_PreserveDynamicHDRMetadata` to `true` in the compression settings you pass to your [`AVAssetWriterInput`](../avassetwriterinput.md). These compression settings are represented under the [`AVVideoCompressionPropertiesKey`](../avvideocompressionpropertieskey.md) sub-dictionary of your top-level AVVideoSettings (see [Video settings](../video-settings.md)). When you set this key to `true`, performance improves, as the encoder is able to skip HDR metadata calculation for every frame. The default value is `false`.
 

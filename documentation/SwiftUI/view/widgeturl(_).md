@@ -21,11 +21,11 @@ Sets the URL to open in the containing app when the user clicks the widget.
 @preconcurrency func widgetURL(_ url: URL?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that opens the specified URL when the user clicks the widget.
 
-#### Discussion
+## Discussion
 
 Widgets support one `widgetURL` modifier in their view hierarchy. If multiple views have `widgetURL` modifiers, the behavior is undefined.
 

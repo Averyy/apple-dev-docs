@@ -16,7 +16,7 @@ Creates an endpoint from the listener.
 var endpoint: XPCEndpoint { get }
 ```
 
-#### Return Value
+## Return Value
 
 This returns a new endpoint struct that can be used to establish a connection with this listener.
 

@@ -19,13 +19,13 @@ class WKTapGestureRecognizer
 @interface WKTapGestureRecognizer : WKGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 The tap gesture recognizer can report when a single tap happens or when multiple taps happen.
 
 You do not create instances of this class programmatically. Instead, add a tap gesture recognizer to your Watch appʼs storyboard file, dropping it onto a specific interface object. The gesture recognizer tracks touches that occur within the bounds of that interface object and reports to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### State Changes for a Tap Gesture
+### State Changes for a Tap Gesture
 
 A tap gesture recognizer tracks discrete events, and therefore has a limited number of state changes. Each tap in a tap gesture comprises the user touching the screen and then lifting the finger off the screen in about the same location and within a preset amount of time. Gesture recognition occurs when the user performs the specified number of taps. The state transition sequences for a tap gesture are as follows:
 
@@ -33,7 +33,7 @@ A tap gesture recognizer tracks discrete events, and therefore has a limited num
 
 The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](./wkgesturerecognizerstate/recognized.md) state. You can determine the location of the tap by calling its [`locationInObject()`](./wkgesturerecognizer/locationinobject%28%29.md) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your gesture recognizer in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meanings.
 

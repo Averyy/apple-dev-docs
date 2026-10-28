@@ -151,7 +151,7 @@ ninja
 
 **Install Dependencies**
 
-- To build the example binaries, install all dependencies listed in the CI [scripts](.github/scripts/).
+- To build the example binaries, install all dependencies listed in the CI [scripts](https://github.com/ml-explore/mlx-swift/blob/main/.github/scripts).
 - Note: The CUDA GPU backend requires the CUDA toolkit and additional dependencies.
 - For Swift installation on Linux, visit [swift.org](https://www.swift.org/install/linux/).
 
@@ -183,7 +183,7 @@ popd
 
 ## Contributing
 
-Check out the [contribution guidelines](CONTRIBUTING.md) for more information
+Check out the [contribution guidelines](https://github.com/ml-explore/mlx-swift/blob/main/CONTRIBUTING.md) for more information
 on contributing to MLX. See the
 [docs](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/install) for more
 information on building from source, and running tests.

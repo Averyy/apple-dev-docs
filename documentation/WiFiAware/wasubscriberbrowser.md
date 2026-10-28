@@ -17,7 +17,7 @@ The structure that configures a network browser to subscribe to a Wi-Fi Aware se
 struct WASubscriberBrowser
 ```
 
-#### Overview
+## Overview
 
 Devices can subscribe to services provided by other Wi-Fi Aware devices by creating a `NetworkBrowser` object from the [Network](../Network/Network.md) framework, and passing in a `.wifiAware()` instruction indicating the `WASubscribableService` to look for, and the set of `WAPairedDevice` to find it on.
 

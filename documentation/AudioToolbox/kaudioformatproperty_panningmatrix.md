@@ -24,7 +24,7 @@ var kAudioFormatProperty_PanningMatrix: AudioFormatPropertyID { get }
 kAudioFormatProperty_PanningMatrix
 ```
 
-#### Discussion
+## Discussion
 
 The specifier is an [`AudioPanningInfo`](./audiopanninginfo.md) structure containing a [`AudioPanningMode`](./audiopanningmode.md) constant and an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure that describes the destination channel layout. The source being panned should be mono. For example, for a quad channel layout, the array contains four `Float32` values.
 

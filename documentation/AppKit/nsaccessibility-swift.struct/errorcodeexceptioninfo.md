@@ -19,7 +19,7 @@ static let ErrorCodeExceptionInfo: String
 extern NSString * const NSAccessibilityErrorCodeExceptionInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This key will appear in an exception’s dictionary. Its value will be an [`NSNumber`](../../Foundation/nsnumber.md).
 

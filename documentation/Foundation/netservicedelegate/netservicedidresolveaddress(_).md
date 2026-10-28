@@ -24,7 +24,7 @@ optional func netServiceDidResolveAddress(_ sender: NetService)
 - (void) netServiceDidResolveAddress:(NSNetService *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can use the [`addresses`](../netservice/addresses.md) method to retrieve the service’s address. If the delegate needs only one address, it can stop the resolution process using [`stop()`](../netservice/stop%28%29.md). Otherwise, the resolution will continue until the timeout specified in [`resolve(withTimeout:)`](../netservice/resolve%28withtimeout%29.md) is reached.
 

@@ -22,11 +22,11 @@ convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start startDa
 + (instancetype) audiogramSampleWithSensitivityPoints:(NSArray<HKAudiogramSensitivityPoint *> *) sensitivityPoints startDate:(NSDate *) startDate endDate:(NSDate *) endDate device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of an audiogram sample.
 
-#### Discussion
+## Discussion
 
 Creates a new audiogram sample with the specified attributes.
 

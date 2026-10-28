@@ -17,7 +17,7 @@ var kOBEXHeaderIDAppParameters: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDAppParameters
 ```
 
-#### Discussion
+## Discussion
 
 Extended application request and resposnse info.
 

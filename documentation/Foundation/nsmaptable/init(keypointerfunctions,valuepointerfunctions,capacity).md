@@ -25,7 +25,7 @@ init(keyPointerFunctions keyFunctions: NSPointerFunctions, valuePointerFunctions
 - (instancetype) initWithKeyPointerFunctions:(NSPointerFunctions *) keyFunctions valuePointerFunctions:(NSPointerFunctions *) valueFunctions capacity:(NSUInteger) initialCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A map table, initialized with the given functions.
 

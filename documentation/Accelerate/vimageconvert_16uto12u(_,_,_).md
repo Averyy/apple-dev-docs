@@ -25,11 +25,11 @@ func vImageConvert_16UTo12U(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafeP
 vImage_Error vImageConvert_16UTo12U(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

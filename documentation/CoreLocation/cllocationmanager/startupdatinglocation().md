@@ -28,7 +28,7 @@ func startUpdatingLocation()
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 This method returns immediately. Calling this method causes the location manager to obtain an initial location fix (which may take several seconds) and notify your delegate by calling its [`locationManager(_:didUpdateLocations:)`](../cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) method. After that, the receiver generates update events primarily when the value in the [`distanceFilter`](./distancefilter.md) property is exceeded. Updates may be delivered in other situations though. For example, the receiver may send another notification if the hardware gathers a more accurate location reading.
 

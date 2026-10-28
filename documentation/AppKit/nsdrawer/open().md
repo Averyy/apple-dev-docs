@@ -21,7 +21,7 @@ func open()
 - (void) open;
 ```
 
-#### Discussion
+## Discussion
 
 Calling `open` on an open drawer does nothing. You can get the state of a drawer by sending it [`state`](./state-swift.property.md). If an edge is not specified, an attempt will be made to choose an edge based on the space available to display the drawer onscreen. If you need to ensure that a drawer opens on a particular edge, use [`open(on:)`](./open%28on%29.md).
 

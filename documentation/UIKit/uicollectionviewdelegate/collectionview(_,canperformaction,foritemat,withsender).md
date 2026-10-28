@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, canPerformActio
 - (BOOL) collectionView:(UICollectionView *) collectionView canPerformAction:(SEL) action forItemAtIndexPath:(NSIndexPath *) indexPath withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the command corresponding to action should appear in the editing menu or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 This method is invoked after the [`collectionView(_:shouldShowMenuForItemAt:)`](./collectionview%28_,shouldshowmenuforitemat%29.md) method. It gives you the opportunity to exclude commands from the editing menu. For example, the user might have copied some content from one item and wants to paste it into another item that cannot accept the content. In such a case, your method could return [`false`](../../Swift/false.md) to prevent the display of the relevant command.
 

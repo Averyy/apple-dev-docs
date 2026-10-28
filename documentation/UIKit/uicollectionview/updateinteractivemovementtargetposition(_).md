@@ -23,7 +23,7 @@ func updateInteractiveMovementTargetPosition(_ targetPosition: CGPoint)
 - (void) updateInteractiveMovementTargetPosition:(CGPoint) targetPosition;
 ```
 
-#### Discussion
+## Discussion
 
 When moving an item interactively, use this method to provide the collection view with the item’s new position. When using a gesture recognizer to track user interactions with the item, call this method each time the gesture recognizer reports a location change. The collection view uses the new point to determine if the item needs to be repositioned and if the current layout needs to be updated.
 

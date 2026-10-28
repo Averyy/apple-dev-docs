@@ -23,7 +23,7 @@ func clip(to rect: CGRect)
 - (void) clipToRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 To restrict the active drawing area to the specified rectangle, call this method before executing drawing commands.
 

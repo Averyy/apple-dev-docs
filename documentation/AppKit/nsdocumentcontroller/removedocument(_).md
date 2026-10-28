@@ -19,7 +19,7 @@ func removeDocument(_ document: NSDocument)
 - (void) removeDocument:(NSDocument *) document;
 ```
 
-#### Discussion
+## Discussion
 
 A document will automatically call [`removeDocument(_:)`](./removedocument%28_%29.md) when it closes. This method is mostly provided for subclasses that want to know when documents close.
 

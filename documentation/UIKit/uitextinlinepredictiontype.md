@@ -23,7 +23,7 @@ enum UITextInlinePredictionType
 enum UITextInlinePredictionType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`inlinePredictionType`](./uitextinputtraits/inlinepredictiontype.md) property.
 

@@ -21,7 +21,7 @@ A special value that indicates a nonexistent activity.
 #define OS_ACTIVITY_NONE
 ```
 
-#### Discussion
+## Discussion
 
 When creating a new activity, pass this value as the activity’s parent to create the new activity as a top-level activity without a parent.
 

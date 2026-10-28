@@ -16,11 +16,11 @@ Get a list of price points for an auto-renewable subscription by territory.
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 - [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 
-##### Discussion
+### Discussion
 
 > ❗ **Important**:  Use the `territory` filter on all requests. This will be required in a future release.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

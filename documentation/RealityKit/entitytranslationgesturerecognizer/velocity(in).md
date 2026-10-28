@@ -18,7 +18,7 @@ The velocity of the translation gesture in the space of the specified entity.
 @preconcurrency func velocity(in entity: Entity?) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The velocity of the translation gesture, in the space of the specified entity, in meters per second.
 

@@ -16,7 +16,7 @@ A Boolean value indicating whether the video is displaying in fullscreen mode.
 readonly attribute boolean webkitDisplayingFullscreen;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if displaying in fullscreen mode; otherwise, `false`.
 

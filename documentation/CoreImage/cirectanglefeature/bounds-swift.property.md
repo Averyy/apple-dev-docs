@@ -24,7 +24,7 @@ var bounds: CGRect { get }
 @property (readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the rectangular region *of the image* containing the detected rectangle, not necessarily the shape of the rectangle. A detected feature is rectangular in space, but may appear in perspective in the image. Use the properties listed in [`CIRectangleFeature`](../cirectanglefeature.md) to find the corners of the rectangle as it appears in perspective.
 

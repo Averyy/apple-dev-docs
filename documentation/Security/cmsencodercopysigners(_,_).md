@@ -19,7 +19,7 @@ func CMSEncoderCopySigners(_ cmsEncoder: CMSEncoder, _ signersOut: UnsafeMutable
 OSStatus CMSEncoderCopySigners(CMSEncoderRef cmsEncoder, CFArrayRef*signersOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

@@ -20,7 +20,7 @@ class AVDisplayManager
 @interface AVDisplayManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you set the display manager’s [`preferredDisplayCriteria`](./avdisplaymanager/preferreddisplaycriteria.md), when a user enables a Match Content setting, the TV attempts to change modes to match the currently playing video’s native display criteria.
 

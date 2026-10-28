@@ -28,7 +28,7 @@ func startRunning()
 
 - [Setting up a capture session](../setting-up-a-capture-session.md)
 
-#### Discussion
+## Discussion
 
 Call this method to start the flow of data from the capture session’s inputs to its outputs. This method is synchronous and blocks until the session starts running or it fails, which it reports by posting an [`runtimeErrorNotification`](./runtimeerrornotification.md) notification.
 

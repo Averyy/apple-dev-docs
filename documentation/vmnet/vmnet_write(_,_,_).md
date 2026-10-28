@@ -20,11 +20,11 @@ func vmnet_write(_ interface: interface_ref, _ packets: UnsafeMutablePointer<vmp
 vmnet_return_t vmnet_write(interface_ref interface, struct vmpktdesc *packets, int *pktcnt);
 ```
 
-#### Return Value
+## Return Value
 
 `vmnet` on success, or an error code on failure. See `vmnet` for possible values.
 
-#### Discussion
+## Discussion
 
 None of the packet to be written should exceed the size of the value of [`vmnet_max_packet_size_key`](./vmnet_max_packet_size_key.md) for the interface.
 

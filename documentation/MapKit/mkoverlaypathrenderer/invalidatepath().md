@@ -24,7 +24,7 @@ func invalidatePath()
 - (void) invalidatePath;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when a change in the path information would require you to recreate the overlay’s path. This method sets the [`path`](./path.md) property to `nil` and tells the overlay renderer to redisplay its contents.
 

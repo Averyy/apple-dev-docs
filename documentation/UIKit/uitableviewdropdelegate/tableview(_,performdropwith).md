@@ -27,7 +27,7 @@ func tableView(_ tableView: UITableView, performDropWith coordinator: any UITabl
 
 - [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
-#### Discussion
+## Discussion
 
 Use this method to integrate the dropped content into your table view. In your implementation, iterate over the [`items`](../uitableviewdropcoordinator/items.md) property of the `coordinator` object to retrieve the [`UIDragItem`](../uidragitem.md) objects associated with the drag operation. Use the data in those objects to update your table view’s data source and the table view itself.
 

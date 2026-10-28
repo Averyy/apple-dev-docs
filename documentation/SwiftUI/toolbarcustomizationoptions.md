@@ -21,7 +21,7 @@ Options that influence the default customization behavior of customizable toolba
 struct ToolbarCustomizationOptions
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with the [`defaultCustomization(_:options:)`](./customizabletoolbarcontent/defaultcustomization%28_,options%29.md) modifier.
 

@@ -18,7 +18,7 @@ Updates the session with new attributes.
 func update(_ attributes: Attributes) async throws
 ```
 
-#### Discussion
+## Discussion
 
 When session attributes change, call this method to send the updated attributes to your app extension through the [`update(_:)`](../remotemediasessionrepresentable/update%28_%29.md) method.
 

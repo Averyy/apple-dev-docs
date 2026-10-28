@@ -24,7 +24,7 @@ let CNContactPhoneticMiddleNameKey: String
 extern NSString * const CNContactPhoneticMiddleNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

@@ -21,7 +21,7 @@ case embedded
 MPMovieControlStyleEmbedded
 ```
 
-#### Discussion
+## Discussion
 
 Controls for an embedded view are displayed. The controls include a start/pause button, a scrubber bar, and a button for toggling between fullscreen and embedded display modes.
 

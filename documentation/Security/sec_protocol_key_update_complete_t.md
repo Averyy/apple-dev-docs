@@ -23,7 +23,7 @@ typealias sec_protocol_key_update_complete_t = () -> Void
 typedef void (^)(void) sec_protocol_key_update_complete_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when a key update event is handled.
 

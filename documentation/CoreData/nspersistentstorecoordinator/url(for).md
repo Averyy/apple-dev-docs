@@ -25,7 +25,7 @@ func url(for store: NSPersistentStore) -> URL
 - (NSURL *) URLForPersistentStore:(NSPersistentStore *) store;
 ```
 
-#### Return Value
+## Return Value
 
 The URL for `store`.
 

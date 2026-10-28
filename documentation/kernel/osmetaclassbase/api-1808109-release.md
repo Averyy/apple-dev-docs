@@ -12,7 +12,7 @@ virtual void release(
  int freeWhen) const = 0;
 ```
 
-#### Overview
+## Overview
 
 See release(int freeWhen).
 

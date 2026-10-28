@@ -15,7 +15,7 @@ Options for overriding a hover effect’s current phase.
 struct HoverEffectPhaseOverride
 ```
 
-#### Overview
+## Overview
 
 By default hover effects transition between the active and inactive phases in response to hover events. Use `HoverEffectPhaseOverride` to cause a hover effect to transition between phases based on other criteria.
 

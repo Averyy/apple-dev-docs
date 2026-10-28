@@ -22,7 +22,7 @@ A type-erased hashable value.
 struct AnyHashable
 ```
 
-#### Overview
+## Overview
 
 The `AnyHashable` type forwards equality comparisons and hashing operations to an underlying hashable value, hiding the type of the wrapped value.
 

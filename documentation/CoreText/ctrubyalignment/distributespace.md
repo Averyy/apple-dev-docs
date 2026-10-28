@@ -25,7 +25,7 @@ case distributeSpace
 kCTRubyAlignmentDistributeSpace
 ```
 
-#### Discussion
+## Discussion
 
 If the width of the ruby text is less than the width of the base text, Core Text evenly distributes the ruby text over the width of the base text. A certain amount of space, usually half of the intercharacter width of the ruby text, appears before the first and after the last character.
 

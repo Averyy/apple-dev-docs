@@ -16,7 +16,7 @@ Removes the identified notifications.
 func removeNotifications(identifiers: [AccessoryNotification.Identifier]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method has equivalent behavior to clearing notifications from Notification Center on the phone. The system doesn’t send actions to apps for removed notifications. This method only throws for errors receiving the removal request, not if some identifiers were already removed.
 

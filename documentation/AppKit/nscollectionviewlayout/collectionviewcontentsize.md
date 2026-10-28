@@ -19,7 +19,7 @@ var collectionViewContentSize: NSSize { get }
 @property (readonly) NSSize collectionViewContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the width and height of all of the collection view’s contents, not just the content that is currently visible. The collection view uses this information to configure its scroll view.
 

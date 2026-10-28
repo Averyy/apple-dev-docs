@@ -25,7 +25,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `2.0` results in the output audio playing one octave higher. A value of `0.5` results in the output audio playing one octave lower.
 

@@ -19,7 +19,7 @@ func DisposeOSLMarkUPP(_ userUPP: OSLMarkUPP!)
 void DisposeOSLMarkUPP(OSLMarkUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLMarkProcPtr`](./oslmarkprocptr.md) callback function. 
 

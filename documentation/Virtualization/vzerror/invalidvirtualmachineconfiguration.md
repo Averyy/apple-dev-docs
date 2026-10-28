@@ -15,7 +15,7 @@ An invalid configuration error.
 static var invalidVirtualMachineConfiguration: VZError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that your [`VZVirtualMachineConfiguration`](../vzvirtualmachineconfiguration.md) object contains invalid data.
 

@@ -19,7 +19,7 @@ A query interface that provides one-time access to a SMART Health Card or EU Dig
 struct HKVerifiableClinicalRecordQueryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`HKVerifiableClinicalRecordQueryDescriptor`](./hkverifiableclinicalrecordquerydescriptor.md) to read verifiable clinical records.
 

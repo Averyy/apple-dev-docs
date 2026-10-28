@@ -14,7 +14,7 @@ The position of the camera in the scene.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,7 +24,7 @@ The position of the camera in the scene.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter description
+## Parameter description
 
 - **`Space`**: The space that establishes the camera’s position. This parameter can be equal to `world`, `tangent`, `object`, or `model`. The default value is `world`.
 

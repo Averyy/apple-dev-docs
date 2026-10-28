@@ -33,7 +33,7 @@ var timeoutDate: Date? { get }
 @property (atomic, copy, readonly, nullable) NSDate * timeoutDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the participant takes a turn that doesn’t time out.
 

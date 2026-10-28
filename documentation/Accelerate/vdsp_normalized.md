@@ -21,7 +21,7 @@ Computes double-precision mean and standard deviation, and then calculates new e
 extern void vDSP_normalizeD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, double *__Mean, double *__StandardDeviation, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as [`vDSP_normalize`](./vdsp_normalize.md), except for the types of `A`, `C`, `Mean`, and `StandardDeviation`.
 

@@ -5,7 +5,7 @@
 
 Override a package dependency and edit its content by adding it as a local package.
 
-#### Overview
+## Overview
 
 When you’re using a Swift package as a package dependency in your app, you may want to make edits to it. For example, you may want to contribute a fix for a bug to an open-source package. However, you can’t directly edit the content of a package dependency. To make changes, add the Swift package as a local package to your app’s project. Don’t remove your package dependency; adding a local package overrides the package dependency with the same name. Xcode uses the package dependency again when you remove the local package from your project.
 

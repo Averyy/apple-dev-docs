@@ -24,7 +24,7 @@ typealias CVMetalTexture = CVImageBuffer
 typedef CVImageBufferRef CVMetalTextureRef;
 ```
 
-#### Discussion
+## Discussion
 
 To create and manage CoreVideo Metal textures, see [CVMetalTextureCache](./cvmetaltexturecache-q3j.md).
 

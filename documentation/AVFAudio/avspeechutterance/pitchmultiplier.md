@@ -25,7 +25,7 @@ var pitchMultiplier: Float { get set }
 @property (nonatomic) float pitchMultiplier;
 ```
 
-#### Discussion
+## Discussion
 
 Before enqueing the utterance, set this property to a value within the range of `0.5` for lower pitch to `2.0` for higher pitch. The default value is `1.0`. Setting this after enqueing the utterance has no effect.
 

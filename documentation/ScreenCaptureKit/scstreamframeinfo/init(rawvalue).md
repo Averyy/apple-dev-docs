@@ -20,7 +20,7 @@ Creates a new instance with a raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use the static properties of [`SCStreamFrameInfo`](../scstreamframeinfo.md) such as [`status`](./status.md) or [`contentRect`](./contentrect.md) instead of creating an instance with this initializer.
 

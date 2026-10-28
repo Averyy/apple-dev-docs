@@ -15,7 +15,7 @@ A marker protocol that stackable disk image layer configuration objects conform 
 protocol StackableLayer
 ```
 
-#### Overview
+## Overview
 
 The [`appending(_:)`](./appending%28_%29-3pfqg.md) method accepts objects that conform to this protocol.  For more information about image layering, see [`StackedImage`](../stackedimage.md).
 

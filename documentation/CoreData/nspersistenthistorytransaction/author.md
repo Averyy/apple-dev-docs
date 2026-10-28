@@ -29,7 +29,7 @@ var author: String? { get }
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Discussion
+## Discussion
 
 This property has a value if the managed object context set a [`transactionAuthor`](../nsmanagedobjectcontext/transactionauthor.md) before the save.
 

@@ -25,7 +25,7 @@ func CFStringIsSurrogateHighCharacter(_ character: UniChar) -> Bool
 static Boolean CFStringIsSurrogateHighCharacter(UniChar character);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `character` is a high character in a surrogate pair, otherwise `false`.
 

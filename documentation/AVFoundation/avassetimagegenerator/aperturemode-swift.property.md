@@ -24,7 +24,7 @@ var apertureMode: AVAssetImageGenerator.ApertureMode? { get set }
 @property (nonatomic, copy, nullable) AVAssetImageGeneratorApertureMode apertureMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`cleanAperture`](./aperturemode-swift.struct/cleanaperture.md).
 

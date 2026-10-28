@@ -25,7 +25,7 @@ static let size: SCNParticleSystem.ParticleProperty
 extern SCNParticleProperty const SCNParticlePropertySize;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a floating-point scalar (an [`NSNumber`](../../../Foundation/nsnumber.md) object for particle property controllers, or a single `float` value for particle event or modifier blocks). SceneKit renders particle images as square, so this value applies to both width and height.
 

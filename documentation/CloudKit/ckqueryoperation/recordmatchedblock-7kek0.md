@@ -21,7 +21,7 @@ The closure to execute when a record match is available.
 @property (nonatomic, copy, nullable) void (^)(CKRecordID *, CKRecord *, NSError *) recordMatchedBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

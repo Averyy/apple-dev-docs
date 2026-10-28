@@ -21,7 +21,7 @@ The “past the end” position—that is, the position one greater than the las
 var endIndex: UnsafeRawBufferPointer.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `endIndex` property of an `UnsafeRawBufferPointer` instance is always identical to `count`.
 

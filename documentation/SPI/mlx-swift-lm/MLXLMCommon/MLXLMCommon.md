@@ -11,7 +11,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 Common language model code.
 
-#### Articles
+## Articles
 
 - [Model Compatibility](./model-compatibility.md)
 - [Upgrade From 2.x Release](./upgrade.md)
@@ -19,7 +19,7 @@ Common language model code.
 - [KV Cache Quantization](./kv-cache-quantization.md)
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Reranking
+## Reranking
 
 - [`Reranker`](./reranker.md)
 - [`RerankerContainer`](./rerankercontainer.md)
@@ -34,7 +34,7 @@ Common language model code.
 - [`RerankScoreKind`](./rerankscorekind.md)
 - [`RerankerError`](./rerankererror.md)
 
-#### Other MLX Libraries Packages
+## Other MLX Libraries Packages
 
 - [MLXEmbedders](../MLXEmbedders/MLXEmbedders.md)
 - [MLXLLM](../MLXLLM/MLXLLM.md)

@@ -22,7 +22,7 @@ class HMAccessoryOwnershipToken
 @interface HMAccessoryOwnershipToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you manufacture an accessory that requires user authentication to add the accessory to a home, manage the authentication in your app and produce a token that represents the successful outcome of that process. Wrap the token data in an [`HMAccessoryOwnershipToken`](./hmaccessoryownershiptoken.md) instance and call the [`init(url:ownershipToken:)`](./hmaccessorysetuppayload/init%28url,ownershiptoken%29-32mrj.md) method to create an authenticated [`HMAccessorySetupPayload`](./hmaccessorysetuppayload.md) instance. Then call the [`addAndSetupAccessories(with:completionHandler:)`](./hmhome/addandsetupaccessories%28with,completionhandler%29.md) method with the payload.
 

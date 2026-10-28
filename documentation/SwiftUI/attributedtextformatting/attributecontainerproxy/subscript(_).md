@@ -31,7 +31,7 @@ subscript<K>(key: K.Type) -> K.Value? where K : AttributedStringKey, K.Value : S
 subscript<S>(scope: S.Type) -> AttributedTextFormatting.AttributeContainerProxy<Scope, Attribute>.Scoped<S> where S : AttributeScope { get set }
 ```
 
-#### Overview
+## Overview
 
 For details on how attribute value constraining works, refer to [`constrain(_:)`](../../attributedtextvalueconstraint/constrain%28_%29.md).
 

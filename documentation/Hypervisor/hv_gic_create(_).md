@@ -19,11 +19,11 @@ func hv_gic_create(_ gic_config: hv_gic_config_t) -> hv_return_t
 extern hv_return_t hv_gic_create(hv_gic_config_t gic_config);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only call this method after a virtual machine (VM) has started, but before you create vCPUs so that the framework can allocate GIC CPU system resources. If either of these conditions aren’t met, the framework returns an error.
 

@@ -9,11 +9,11 @@ Implement a file system that runs in user space.
 **Availability**:
 - macOS 15.4+
 
-#### Overview
+## Overview
 
 With FSKit, you can extend macOS by enabling access to new types of file systems. You do this by developing an FSKit module (`FSModule`), which you deliver as an app extension that runs in user space, and is compatible with Mac App Store distribution. FSKit connects your module to the system’s existing frameworks and tools, like [Disk Arbitration](../DiskArbitration/DiskArbitration.md), NetFS, and the `mount(8)` command.
 
-##### FSKit modules
+### FSKit modules
 
 An FSKit module consists of two main parts:
 
@@ -26,7 +26,7 @@ The FSKit framework defines three key file storage concepts that `FSModule` supp
 - ****Resource****: A source of data, such as a block storage device or a network resource you identify with a URL.
 - ****Container****: An abstract object that uses one or more resources to deliver one or more volumes, similar to an APFS container. Typically, a container uses only one resource, but some formats like Xsan (Apple’s cluster file system) use multiple disks to store contents for one volume.
 
-##### Design flows
+### Design flows
 
 FSKit provides two design flows, with different trade-offs of functionality and complexity:
 

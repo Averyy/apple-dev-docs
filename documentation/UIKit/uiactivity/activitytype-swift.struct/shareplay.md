@@ -22,7 +22,7 @@ static let sharePlay: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeSharePlay;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can use [`registerGroupActivity(_:)`](../../../Foundation/nsitemprovider/registergroupactivity%28_%29.md) to provide an [`NSItemProvider`](../../../Foundation/nsitemprovider.md) with a [`GroupActivity`](../../../GroupActivities/groupactivity.md) object as an activity item. If no `GroupActivity` object is provided, the service will start a FaceTime call without an accompanying SharePlay session.
 

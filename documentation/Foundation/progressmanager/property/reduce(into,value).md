@@ -22,7 +22,7 @@ Reduces a property value into an accumulating summary.
 static func reduce(into summary: inout Self.Summary, value: Self.Value)
 ```
 
-#### Discussion
+## Discussion
 
 This method is called to incorporate individual property values into a summary that represents the aggregated state across multiple progress managers.
 

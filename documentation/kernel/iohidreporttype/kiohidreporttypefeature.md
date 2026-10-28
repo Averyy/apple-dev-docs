@@ -13,7 +13,7 @@
 kIOHIDReportTypeFeature
 ```
 
-#### Discussion
+## Discussion
 
 Feature report.
 

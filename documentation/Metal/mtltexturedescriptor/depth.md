@@ -24,7 +24,7 @@ var depth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger depth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. The value needs to be greater than or equal to `1`. For 1D, 2D, and cube textures, the value needs to be `1`.
 

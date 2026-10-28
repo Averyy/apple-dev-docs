@@ -18,7 +18,7 @@ CMError CMLinkImage (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 

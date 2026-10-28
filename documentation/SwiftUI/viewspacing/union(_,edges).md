@@ -21,11 +21,11 @@ Gets a new value that merges the spacing preferences of another spacing instance
 func union(_ other: ViewSpacing, edges: Edge.Set = .all) -> ViewSpacing
 ```
 
-#### Return Value
+## Return Value
 
 A new view spacing preferences instance with the merged values.
 
-#### Discussion
+## Discussion
 
 This method behaves like [`formUnion(_:edges:)`](./formunion%28_,edges%29.md), except that it creates a copy of the original spacing preferences instance before merging, leaving the original instance unmodified.
 

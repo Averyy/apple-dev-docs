@@ -5,7 +5,7 @@
 
 Display data in a single column of customizable rows.
 
-#### Overview
+## Overview
 
 A table view displays a single column of vertically scrolling content, divided into rows and sections. Each row of a table displays a single piece of information related to your app. Sections let you group related rows together. For example, the Contacts app uses a table to display the names of the user’s contacts.
 

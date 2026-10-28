@@ -15,9 +15,9 @@ Add a search detail URL for the alternative marketplace.
 - [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

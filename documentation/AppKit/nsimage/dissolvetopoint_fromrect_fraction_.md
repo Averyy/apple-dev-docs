@@ -17,7 +17,7 @@ Composites a portion of the image to the specified location using the source-ove
 - (void) dissolveToPoint:(NSPoint) point fromRect:(NSRect) rect fraction:(CGFloat) fraction;
 ```
 
-#### Discussion
+## Discussion
 
 Except for the choice of compositing operator, this method behaves in the same way as the [`compositeToPoint:fromRect:operation:`](./compositetopoint_fromrect_operation_.md) method. During printing, the `delta` parameter is ignored.
 

@@ -6,7 +6,7 @@
 
 An atom that contains information for converting from media time to sample number to sample location.
 
-#### Overview
+## Overview
 
 See [`Sample table atom`](../sample_table_atom.md).
 

@@ -16,7 +16,7 @@ Cancels a retry attempt for an input report request.
 virtual void cancelInputReportRetry();
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. The [`CompleteInputReport`](./completeinputreport.md) method calls it automatically when a retry attempt succeeds.
 

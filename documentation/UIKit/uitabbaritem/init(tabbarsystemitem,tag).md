@@ -23,7 +23,7 @@ convenience init(tabBarSystemItem systemItem: UITabBarItem.SystemItem, tag: Int)
 - (instancetype) initWithTabBarSystemItem:(UITabBarSystemItem) systemItem tag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the [`title`](../uibaritem/title.md) and [`image`](../uibaritem/image.md) properties of an item this method creates.
 

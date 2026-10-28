@@ -20,7 +20,7 @@ Returns a new object that reads media data from an asset track.
 + (instancetype) assetReaderTrackOutputWithTrack:(AVAssetTrack *) track outputSettings:(NSDictionary<NSString *,id> *) outputSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset reader, or `nil` if initialization fails.
 

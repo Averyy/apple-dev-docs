@@ -24,7 +24,7 @@ var canHandleAdjustmentData: (PHAdjustmentData) -> Bool { get set }
 @property (nonatomic, copy) BOOL (^canHandleAdjustmentData)(PHAdjustmentData *adjustmentData);
 ```
 
-#### Discussion
+## Discussion
 
 When an asset is edited, Photos stores a [`PHAdjustmentData`](../phadjustmentdata.md) object provided by the app or extension that edited the asset. This object provides all information necessary to reconstruct the edited asset using the original asset data. When your app requests to edit an asset, Photos calls this block to inquire whether your app can handle the asset’s past adjustments.
 

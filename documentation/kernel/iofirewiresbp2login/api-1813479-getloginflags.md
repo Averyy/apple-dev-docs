@@ -12,11 +12,11 @@ virtual UInt32 getLoginFlags(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the currently set login flags.
 
-#### Overview
+## Overview
 
 Returns the current state of the login flags. Currently there is only one flag defined for this API. kFWSBP2ExclusiveLogin indicates that the exclusive login bit should be set in the login ORB.
 

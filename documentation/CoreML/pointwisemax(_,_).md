@@ -31,7 +31,7 @@ func pointwiseMax(_ lhs: MLTensor, _ rhs: some MLTensorScalar & Numeric) -> MLTe
 func pointwiseMax(_ lhs: some MLTensorScalar & Numeric, _ rhs: MLTensor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -20,7 +20,7 @@ func setIntegerValueField(_ field: CGEventField, value: Int64)
 extern void CGEventSetIntegerValueField(CGEventRef event, CGEventField field, int64_t value);
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this function, the event type must be set using a typed event creation function such as [`init(mouseEventSource:mouseType:mouseCursorPosition:mouseButton:)`](./init%28mouseeventsource,mousetype,mousecursorposition,mousebutton%29.md), or by calling [`CGEventSetType`](../cgeventsettype.md).
 

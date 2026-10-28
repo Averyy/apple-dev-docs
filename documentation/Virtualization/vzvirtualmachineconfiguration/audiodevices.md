@@ -19,7 +19,7 @@ var audioDevices: [VZAudioDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZAudioDeviceConfiguration *> * audioDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more audio devices, assign an array of [`VZAudioDeviceConfiguration`](../vzaudiodeviceconfiguration.md) objects to this property.
 

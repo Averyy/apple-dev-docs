@@ -19,7 +19,7 @@ A component that renders 3D Gaussian splat data.
 struct GaussianSplatComponent
 ```
 
-#### Overview
+## Overview
 
 Use a Gaussian splat component to display volumetric imagery captured from real environments, coalesced into 3D Gaussian splats (3DGS). Gaussian splatting is a rendering technique that represents a scene as a collection of 3D Gaussian primitives, each with a position, scale, rotation, opacity, and color defined by spherical harmonic coefficients. The result is a high-fidelity reproduction of a captured scene that people can view from novel angles.
 
@@ -29,7 +29,7 @@ Unlike mesh-based rendering with `ModelComponent`, this component doesn’t use 
 
 Gaussian splats require a device with Apple7 GPU family support.
 
-#### Providing Splat Data
+## Providing Splat Data
 
 You supply splat data to the component through a [`GaussianSplatResource`](./gaussiansplatresource.md). Initially, the only supported resource type is a [`GaussianSplatResource.BufferResource`](./gaussiansplatresource/bufferresource-swift.struct.md). A buffer resource describes per-splat properties stored in one or more `LowLevelBuffer` instances. A [`GaussianSplatResource.BufferDescriptor`](./gaussiansplatresource/bufferdescriptor.md) specifies the low-level buffer, data format, byte offset, and stride for each property.
 
@@ -47,7 +47,7 @@ You can also use half-precision values instead of floats.
 
 You can lay out these properties as interleaved data in a single buffer (array of structs) or use separate buffers for each property (struct of arrays). The framework doesn’t load files directly, so you parse your source format — PLY, USD, or any other container — and populate the buffers yourself.
 
-#### Creating a Splat Entity
+## Creating a Splat Entity
 
 The following example reads splat data from a PLY file, populates a buffer resource, and adds the component to an entity:
 
@@ -93,11 +93,11 @@ let component = GaussianSplatComponent(resource)
 splatEntity.components.set(component)
 ```
 
-#### Grounding Shadows
+## Grounding Shadows
 
 If the entity also contains a `GroundingShadowComponent`, the framework generates an approximate grounding shadow using a spherical proxy mesh. This provides visual grounding in the scene but is only an approximate shape, based on the bounds of the point-cloud data.
 
-#### Performance Considerations
+## Performance Considerations
 
 Rendering cost correlates with splat count and overdraw. The framework enforces an internal limit on the total number of splats, and the [`GaussianSplatResource.BufferResource`](./gaussiansplatresource/bufferresource-swift.struct.md) initializer throws if you exceed it. To reduce cost, you can:
 

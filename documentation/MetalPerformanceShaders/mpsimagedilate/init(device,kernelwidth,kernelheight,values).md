@@ -24,11 +24,11 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, values: UnsafeP
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight values:(const float *) values;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized kernel object with specific width, height, and weight values.
 
-#### Discussion
+## Discussion
 
 Each dilate shape probe defines a 3D surface of values. These are arranged in order left to right, then top to bottom in a 1D array. (`values[kernelWidth*y+x] = probe[y][x]`)
 

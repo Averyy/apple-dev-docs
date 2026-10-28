@@ -25,11 +25,11 @@ func CMTimeClampToRange(_ time: CMTime, range: CMTimeRange) -> CMTime
 extern CMTime CMTimeClampToRange(CMTime time, CMTimeRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure inside the time range.
 
-#### Discussion
+## Discussion
 
 The function returns the times inside the range you specify unmodified. Times before the start and after the end time of the time range return the start and end time of the range. If the `CMTimeRange` argument is empty, this function returns an invalid `CMTime`. If the given `CMTime` is invalid, the function returns an invalid `CMTime`.
 

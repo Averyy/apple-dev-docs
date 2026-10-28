@@ -21,7 +21,7 @@ A type that represents a Windows bitmap image.
 extern UTType * const UTTypeBMP;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.bmp`.
 

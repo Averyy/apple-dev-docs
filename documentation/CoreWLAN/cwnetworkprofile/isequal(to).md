@@ -19,11 +19,11 @@ func isEqual(to networkProfile: CWNetworkProfile) -> Bool
 - (BOOL) isEqualToNetworkProfile:(CWNetworkProfile *) networkProfile;
 ```
 
-#### Return Value
+## Return Value
 
 *YES* if the objects are equal.
 
-#### Discussion
+## Discussion
 
 CWNetwork objects are considered equal if their corresponding *ssidData* and *securityType* properties are equal.
 

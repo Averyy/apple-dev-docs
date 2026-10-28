@@ -19,7 +19,7 @@ func addClip()
 - (void) addClip;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the current winding rule to determine the clipping shape of the receiver. This method does not affect the receiver’s path.
 

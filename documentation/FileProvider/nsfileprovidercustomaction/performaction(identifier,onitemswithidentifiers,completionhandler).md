@@ -24,11 +24,11 @@ func performAction(identifier actionIdentifier: NSFileProviderExtensionActionIde
 - (NSProgress *) performActionWithIdentifier:(NSFileProviderExtensionActionIdentifier) actionIdentifier onItemsWithIdentifiers:(NSArray<NSString *> *) itemIdentifiers completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks your extension’s progress.
 
-#### Discussion
+## Discussion
 
 Define the custom actions in the File Provider Extension’s `Info.plist` file, under the `NSExtensionFileProviderActions` key. The format of this key is identical to actions defined for a [File Provider UI](../../FileProviderUI/FileProviderUI.md) extension. For more information, see `Adding Actions to the Context Menu`.
 

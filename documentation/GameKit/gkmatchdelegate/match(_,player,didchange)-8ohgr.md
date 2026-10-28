@@ -29,7 +29,7 @@ optional func match(_ match: GKMatch, player: GKPlayer, didChange state: GKPlaye
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 If the match’s [`expectedPlayerCount`](../gkmatch/expectedplayercount.md) property is `0` when GameKit invokes this method, you can start the game. If two or more players join the match, you can begin data and voice communication.
 

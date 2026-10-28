@@ -23,11 +23,11 @@ class func limitAttachment(with item1: any UIDynamicItem, offsetFromCenter offse
 + (instancetype) limitAttachmentWithItem:(id<UIDynamicItem>) item1 offsetFromCenter:(UIOffset) offset1 attachedToItem:(id<UIDynamicItem>) item2 offsetFromCenter:(UIOffset) offset2;
 ```
 
-#### Return Value
+## Return Value
 
 A new attachment object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method is like connecting two items with a rope. The only constraint between the items is the maximum distance between them, which corresponds to the moment when the rope is taut. At other times, the objects move freely relative to one another.
 

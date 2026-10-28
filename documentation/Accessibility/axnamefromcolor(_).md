@@ -25,7 +25,7 @@ func AXNameFromColor(_ color: CGColor) -> String
 extern NSString *AXNameFromColor(CGColorRef color);
 ```
 
-#### Return Value
+## Return Value
 
 The name associated with the color.
 

@@ -25,11 +25,11 @@ func CGImageSourceGetTypeID() -> CFTypeID
 extern CFTypeID CGImageSourceGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the Core Foundation type ID for an image source.
 
-#### Discussion
+## Discussion
 
 A type identifier is an integer that identifies the opaque type to which a Core Foundation object belongs. You use type IDs in various contexts, such as when you are operating on heterogeneous collections. Note that a Core Foundation type ID is different from a uniform type identifier.
 

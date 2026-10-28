@@ -5,7 +5,7 @@
 
 Displays large, rectangular complications for charts, images, or multiple lines of text.
 
-#### Overview
+## Overview
 
 The graphic rectangular templates provide a larger space for displaying images or multiple lines of text.
 

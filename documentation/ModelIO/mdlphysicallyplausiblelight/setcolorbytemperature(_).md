@@ -24,7 +24,7 @@ func setColorByTemperature(_ temperature: Float)
 - (void) setColorByTemperature:(float) temperature;
 ```
 
-#### Discussion
+## Discussion
 
 Real-world light sources often measure color of illumination based on a black-body temperature scale. For example, the colors and characterizations of typical home and office light fixtures correspond to the following temperatures:
 

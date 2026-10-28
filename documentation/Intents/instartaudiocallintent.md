@@ -25,7 +25,7 @@ class INStartAudioCallIntent
 @interface INStartAudioCallIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates [`INStartAudioCallIntent`](./instartaudiocallintent.md) objects when the user wants to place an audio call using your app. An audio call intent object contains the users to call. Your intent handler matches the information in this object to contacts in your app and to initiate the resulting call.
 
@@ -35,7 +35,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 For a list of other intents in the VoIP calling domain, see [`INCallsDomainHandling`](./incallsdomainhandling.md).
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -46,7 +46,7 @@ The following table lists additional attributes of this intent object:
 
 Apps can optionally ask the user to unlock the device before handling this intent. To require unlocking of the device, include the name of this class in the `IntentsRestrictedWhileLocked` key of your Intents extension’s `Info.plist` file.
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to place an audio call. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

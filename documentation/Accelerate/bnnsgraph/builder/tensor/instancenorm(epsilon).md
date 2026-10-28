@@ -23,7 +23,7 @@ func instanceNorm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs instance normalization of `self`.`self` must be at least three-dimensional.
 

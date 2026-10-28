@@ -13,7 +13,7 @@
 ComponentResult CallComponentTarget(ComponentInstance ci, ComponentInstance target);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

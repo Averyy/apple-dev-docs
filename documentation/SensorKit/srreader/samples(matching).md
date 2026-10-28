@@ -17,15 +17,15 @@ Fetches sensor data based on the provided request parameters. The reader must be
 final func samples(matching request: SRFetchRequest) -> some AsyncSequence<SRFetchResponse<Sensor.Sample>, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` that yields `SRFetchResponse<Sensor.Sample>` objects containing the sensor-specific data
 
-#### Discussion
+## Discussion
 
 Creates an asynchronous stream of sensor data responses. The stream continues to yield data until the fetch request is complete, an error occurs, or the stream is cancelled.
 
-#### Example
+## Example
 
 ```swift
 for try await response in reader.samples(matching: request) {
@@ -41,7 +41,7 @@ for try await response in reader.samples(matching: request) {
 }
 ```
 
-#### Cancellation
+## Cancellation
 
 The stream can be cancelled by breaking out of the iteration loop or by the system when the reader is deallocated. Cancellation stops the fetch operation gracefully.
 

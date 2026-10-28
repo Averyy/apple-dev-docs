@@ -23,7 +23,7 @@ func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for p
 - (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forPermission:(WKWebExtensionPermission) permission expirationDate:(NSDate *) expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This method will update [`grantedPermissions`](./grantedpermissions.md) and [`deniedPermissions`](./deniedpermissions.md). Use this method for changing a single permission’s status.
 

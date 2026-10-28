@@ -19,7 +19,7 @@ func CMSEncoderCopyRecipients(_ cmsEncoder: CMSEncoder, _ recipientsOut: UnsafeM
 OSStatus CMSEncoderCopyRecipients(CMSEncoderRef cmsEncoder, CFArrayRef*recipientsOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

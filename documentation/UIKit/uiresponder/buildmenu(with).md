@@ -23,7 +23,7 @@ func buildMenu(with builder: any UIMenuBuilder)
 - (void) buildMenuWithBuilder:(id<UIMenuBuilder>) builder;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in your app delegate or view controller to receive a [`UIMenuBuilder`](../uimenubuilder.md) object. Use the builder to add and remove [`UIMenuElement`](../uimenuelement.md) objects such as [`UIMenu`](../uimenu.md), [`UIAction`](../uiaction.md), and [`UICommand`](../uicommand.md) from your app’s menu bar or context menus.
 

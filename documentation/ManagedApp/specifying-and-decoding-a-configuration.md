@@ -10,7 +10,7 @@ Publish a configuration specification and implement a decoder that parses and va
 - iPadOS 18.4+
 - visionOS 2.4+
 
-#### Overview
+## Overview
 
 Your app can allow device management administrators (MDM admins) to configure properties that customize your app’s user experience on a specific device or a collection of devices. To provide this functionality, implement a configuration class. To be effective, ensure that your configuration class:
 
@@ -32,7 +32,7 @@ The ingestion of a configuration, its decoding, and yielding of a decoded config
 
 > **Note**: Create a configuration decoder to enable the customization of arbitrary properties.  For information about handling secure credentials such as passwords, certificates, and identities, see [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md).
 
-#### Design a configuration specification
+## Design a configuration specification
 
 Create a formal specification document for your app’s configuration. You can create a table or use the `appconfig.org` schema. A specification typically includes the following information for every property: key name, value type, whether the property is required, a default value, allowed values, and descriptive text. For example:
 
@@ -44,7 +44,7 @@ Create a formal specification document for your app’s configuration. You can c
 
 > ❗ **Important**: When designing your specification, keep the configuration small to facilitate fast transmission. For example, recommend that the MDM admin store any large files that your app needs on an asset server rather than as serialized data in the configuration and include any credentials needed to authenticate their download using a separate network request.
 
-#### Implement a configuration decoder
+## Implement a configuration decoder
 
 When the device receives your configuration from the server, the framework hands the configuration to your app in the form of a [`Decoder`](../Swift/decoder.md). You author a [`Decodable`](../Swift/decodable.md) type that receives the decoder and parses out the properties according to your specification.
 
@@ -95,7 +95,7 @@ extension MyAppConfiguration {
 
 Only decode the incoming configuration in `init(from:)`. The framework enforces a timeout on decoding the configuration by throwing a [`ManagedAppConfigurationDecodingError`](./managedappconfigurationdecodingerror.md) with the `timeout` code if your initializer takes too long to complete.
 
-#### Publish your configuration specification
+## Publish your configuration specification
 
 Provide your app’s specification document to MDM admins by storing it in a place they can access, such as by hosting it on your app website. Additionally, you can provide an example configuration that conforms to your specification. The following example property list has the configurable properties, `server`, `timeout`, and `role`:
 
@@ -120,7 +120,7 @@ Provide your app’s specification document to MDM admins by storing it in a pla
 
 The MDM admin sets the values as needed and stores the configuration on the MDM server for communication to managed devices using [Device Management](../DeviceManagement/DeviceManagement.md). The MDM server sends the configuration through the `AppConfig` key (or `ExtensionConfigs`, for app extensions) of an [`AppManaged`](../DeviceManagement/appmanaged.md) declaration. From the perspective of your app, the device and the [ManagedApp](./ManagedApp.md) framework obtain your app’s configuration automatically.
 
-#### Access a configuration provider and set defaults
+## Access a configuration provider and set defaults
 
 To supply your app access to the current configuration, implement a class that contains the framework’s configuration provider. For example:
 
@@ -179,7 +179,7 @@ class MyAppConfigurationProvider {
 }
 ```
 
-#### Validate decoded values and throw decoding errors
+## Validate decoded values and throw decoding errors
 
 Your configuration type needs to validate the values the admin supplies. Define valid ranges for properties as static additions to your custom type, for example, a lower bound on timeout:
 
@@ -218,7 +218,7 @@ extension MyAppConfiguration {
     static let timeoutTooLowErrorCode = ManagedAppConfigurationDecodingErrorCode(rawValue: 100)!
 ```
 
-#### Document custom errors for a decoding feedback loop
+## Document custom errors for a decoding feedback loop
 
 Include the errors in your specification so the MDM admin can understand custom error codes. For example, document a code for setting a timeout that’s too low:
 
@@ -234,7 +234,7 @@ For more information on status reporting, see [Leveraging the declarative manage
 
 > ❗ **Important**: Because the framework logs errors, don’t include sensitive information in error messages.
 
-#### Receive the configuration and any updates
+## Receive the configuration and any updates
 
 Inside your custom provider’s singleton initializer, receive a configuration:
 
@@ -252,7 +252,7 @@ For the lifetime of the task, the `for await` waits for an updated configuration
 
 > ❗ **Important**: Because the configuration can contain sensitive information, don’t log or displaying decoded portions of the configuration.
 
-#### Apply configured values
+## Apply configured values
 
 After your app receives the configuration, it can adjust to the new information. For example if it receives a server URL, your app can request the URL and access the configurable asset or page it refers to. As another example, your app might reveal a Sales tab after learning that the person is a member of the sales team.
 

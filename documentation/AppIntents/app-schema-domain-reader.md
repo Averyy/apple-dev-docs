@@ -5,7 +5,7 @@
 
 Make your document reader’s actions available in the Shortcuts app by adopting schemas for document viewing and manipulation.
 
-#### Overview
+## Overview
 
 The `.reader` domain defines app schemas that provide a structured representation for common document reading actions and content. Apply schemas in the `.reader` domain to make your document reader’s functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

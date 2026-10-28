@@ -25,7 +25,7 @@ struct HTTPCookieStringPolicy
 typedef NSString * NSHTTPCookieStringPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 [RFC 6265](https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00) defines “same site” as the registerable domain of a URI.
 

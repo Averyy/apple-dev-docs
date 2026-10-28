@@ -17,7 +17,7 @@ Damping applied to the velocities of the particles, based on the velocities of t
 var laplacianDamping: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Higher values will make the cloth behave more similar to a “wet cloth”.
 

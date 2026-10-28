@@ -23,7 +23,7 @@ typealias DDEventHandler = (DDDeviceEvent) -> Void
 typedef void (^)(DDDeviceEvent *) DDEventHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A device discovery extension implements a closure of this format and calls it after creating argument events. In the implementation, the extension creates device events (`DDEvent`) and passes them to the system by calling [`report(_:)`](./dddiscoverysession/report%28_%29.md).
 

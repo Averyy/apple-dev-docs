@@ -25,11 +25,11 @@ func CGImageSourceGetCount(_ isrc: CGImageSource) -> Int
 extern size_t CGImageSourceGetCount(CGImageSourceRef isrc);
 ```
 
-#### Return Value
+## Return Value
 
 The number of images. If the image source is a multilayered Photoshop (PSD) file, the function returns `1`.
 
-#### Discussion
+## Discussion
 
 This function does not extract the layers of a PSD file.
 

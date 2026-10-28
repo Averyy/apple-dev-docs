@@ -19,7 +19,7 @@ var autoenablesItems: Bool { get set }
 @property BOOL autoenablesItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean value, indicating whether the menu automatically enables and disables its menu items. If set to [`true`](../../Swift/true.md), menu items of the menu are automatically enabled and disabled according to rules computed by the NSMenuValidation informal protocol. By default, `NSMenu` objects autoenable their menu items.
 

@@ -20,7 +20,7 @@ A direct adjustment to a body’s linear or angular velocity, independent of its
 case velocity
 ```
 
-#### Discussion
+## Discussion
 
 The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of distance / time. `velocity` mode causes a change in velocity independent of a body’s mass.
 

@@ -12,11 +12,11 @@ virtual const char * getLocation(
  const IORegistryPlane *plane = 0 ) const;
 ```
 
-#### Return Value
+## Return Value
 
 A C-string location string, valid while the entry is retained, or zero.
 
-#### Overview
+## Overview
 
 Entries can given a location string in a particular plane, or globally. If the entry has had a location set in a plane and the plane is specified that location string will be returned, otherwise the global location string is returned. If no global location string has been set, zero is returned.
 

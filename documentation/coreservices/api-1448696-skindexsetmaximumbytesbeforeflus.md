@@ -19,15 +19,15 @@ func SKIndexSetMaximumBytesBeforeFlush(_ inIndex: SKIndex!, _ inBytesForUpdate: 
 void SKIndexSetMaximumBytesBeforeFlush(SKIndexRef inIndex, CFIndex inBytesForUpdate);
 ```
 
-#### Discussion
+## Discussion
 
 This function is rarely needed and is likely to be deprecated. Search Kit keeps track of index updates that are not yet committed to disk. Apple recommends using the default memory size limit for index updates, which is currently 2 million bytes.
 
-##### Special Considerations
+### Special Considerations
 
 Apple recommends use of the [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md) function instead of [`SKIndexSetMaximumBytesBeforeFlush(_:_:)`](./api-1448696-skindexsetmaximumbytesbeforeflus.md).
 
-##### Version-Notes
+### Version-Notes
 
 In OS X v10.3, the default memory size limit for index updates was 1 million bytes.
 

@@ -24,7 +24,7 @@ class GKDecisionTree
 @interface GKDecisionTree : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can define a decision tree manually, by specifying questions, answers, and actions, or you can allow the [`GKDecisionTree`](./gkdecisiontree.md) class to automatically learn a predictive model based on example data. A decision tree has several elements:
 
@@ -42,7 +42,7 @@ When you use the [`GKDecisionTree`](./gkdecisiontree.md) class, attributes and a
 
 ![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-1965709@2x.png)
 
-##### Creating a Decision Tree
+### Creating a Decision Tree
 
 The [`GKDecisionTree`](./gkdecisiontree.md) class offers two ways to create decision trees.
 
@@ -62,7 +62,7 @@ In a *learned decision tree*, you provide a set of attributes (or questions); a 
 
 After creating either kind of decision tree, you can use the inherited [`description`](../ObjectiveC/nsobjectprotocol/description.md) property to examine its structure.
 
-##### Making Decisions
+### Making Decisions
 
 After you’ve created a tree, use the [`findAction(forAnswers:)`](./gkdecisiontree/findaction%28foranswers%29.md) method to evaluate it and choose an action. When you call that method, you provide a set of inputs (values for attributes, or answers to questions), and the tree follows the branches corresponding to each input value to produce an action.
 

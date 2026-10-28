@@ -16,7 +16,7 @@ A message that tells people why the app is requesting access to their location i
 - **Name**: `NSLocationUsageDescription` (Privacy - Location Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key in a macOS app that accesses the user’s location information. In an iOS app, use [`NSLocationWhenInUseUsageDescription`](./nslocationwheninuseusagedescription.md) or [`NSLocationAlwaysAndWhenInUseUsageDescription`](./nslocationalwaysandwheninuseusagedescription.md) instead.
 

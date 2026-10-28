@@ -25,7 +25,7 @@ ASAccessoryEventTypeAccessoryDiscovered
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 Your app only receives this event if your picker uses the [`filterDiscoveryResults`](../aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option.
 

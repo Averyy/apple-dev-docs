@@ -19,7 +19,7 @@ var nextLayout: NSCollectionViewLayout { get }
 @property (readonly) NSCollectionViewLayout * nextLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to retrieve the final layout attributes for elements of the collection view. If the transition completes as expected, the collection view animates its items to the attributes provided by this object.
 

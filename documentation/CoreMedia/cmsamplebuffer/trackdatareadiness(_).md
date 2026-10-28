@@ -21,7 +21,7 @@ Associates a sample buffer’s data readiness with that of another sample buffer
 func trackDataReadiness(_ sampleBufferToTrack: CMSampleBuffer) throws
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, retrieving the value of the [`dataReadiness`](./datareadiness-swift.property.md) property retrieves the value from the tracked sample buffer. Likewise, calling the [`makeDataReady()`](./makedataready%28%29.md) method calls the tracked sample buffers method.
 

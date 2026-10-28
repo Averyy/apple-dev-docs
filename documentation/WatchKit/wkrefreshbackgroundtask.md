@@ -24,7 +24,7 @@ class WKRefreshBackgroundTask
 - [Preparing to take your watchOS app’s snapshot](./preparing-to-take-your-watchos-app-s-snapshot.md)
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Don’t subclass or create instances of this class. The system automatically creates an appropriate background task object whenever it triggers a background task. This object is passed to your app delegate’s [`handle(_:)`](./wkapplicationdelegate/handle%28_%29-4vdjo.md) method. Use the provided background task object to identify and manage the background task.
 

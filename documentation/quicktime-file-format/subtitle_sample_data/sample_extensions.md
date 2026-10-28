@@ -6,7 +6,7 @@
 
 One or more atoms containing additional information for selecting and drawing the subtitle.
 
-#### Overview
+## Overview
 
 The following table lists the currently defined subtitle sample extensions.
 

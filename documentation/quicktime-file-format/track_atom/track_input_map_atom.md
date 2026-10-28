@@ -6,7 +6,7 @@
 
 An atom that defines how data being sent to this track from its nonprimary sources is to be interpreted.
 
-#### Overview
+## Overview
 
 See [`Track input map atom`](../track_input_map_atom.md).
 

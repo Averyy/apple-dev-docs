@@ -19,7 +19,7 @@ var allowsAnimatedImageLooping: Bool { get set }
 @property (nonatomic) BOOL allowsAnimatedImageLooping;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the web view should loop animated images, [`false`](../../Swift/false.md) otherwise.
 

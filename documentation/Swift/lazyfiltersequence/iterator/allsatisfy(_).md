@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether every element of a sequence satisfies
 func allSatisfy(_ predicate: (Self.Element) throws -> Bool) rethrows -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the sequence contains only elements that satisfy `predicate`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The following code uses this method to test whether all the names in an array have at least five characters:
 

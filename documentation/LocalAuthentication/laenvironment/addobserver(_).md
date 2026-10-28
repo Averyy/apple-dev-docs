@@ -22,7 +22,7 @@ func addObserver(_ observer: any LAEnvironment.Observer)
 - (void) addObserver:(id<LAEnvironmentObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Adds observer to monitor changes of the environment.
 

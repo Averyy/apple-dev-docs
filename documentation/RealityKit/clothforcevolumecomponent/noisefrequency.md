@@ -17,7 +17,7 @@ The frequency of the noise applied to particles inside the volume.
 var noiseFrequency: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero.
 

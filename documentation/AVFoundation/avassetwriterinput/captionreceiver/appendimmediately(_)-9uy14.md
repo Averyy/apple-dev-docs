@@ -18,11 +18,11 @@ Appends the caption synchronously if the input is ready for more media data.
 func appendImmediately(_ caption: AVCaption) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the append was successful, false if the input was not ready for more media data.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

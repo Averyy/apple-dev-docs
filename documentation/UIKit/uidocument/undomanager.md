@@ -22,7 +22,7 @@ var undoManager: UndoManager! { get set }
 @property (strong, null_resettable) NSUndoManager * undoManager;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds the document’s undo manager (an [`UndoManager`](../../Foundation/undomanager.md) object). Accessing this property lazily creates a default undo manager if a custom undo manager hasn’t been set.
 

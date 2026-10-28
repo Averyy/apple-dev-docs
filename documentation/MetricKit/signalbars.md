@@ -23,7 +23,7 @@ final class SignalBars
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This is used as the dimension type in [`histogram`](./cellularconditiontimemetric/histogram.md), which has type `Histogram<SignalBars>`. The base unit symbol is `"bars"`.
 

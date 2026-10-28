@@ -25,7 +25,7 @@ optional func presentedSubitemDidChange(at url: URL)
 - (void) presentedSubitemDidChangeAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 This method is relevant for applications that present directories. This might occur if the delegate manages the contents of a directory or manages a file that is implemented as a file package. Your implementation of this method should take whatever actions necessary to handle the change in content or attributes of the specified item.
 

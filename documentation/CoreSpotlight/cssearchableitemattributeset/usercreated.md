@@ -23,7 +23,7 @@ var userCreated: NSNumber? { get set }
 @property (strong, getter=isUserCreated, nullable) NSNumber * userCreated;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of items to set this property on include notes and documents that the user creates or modifies.
 

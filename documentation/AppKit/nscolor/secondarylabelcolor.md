@@ -19,7 +19,7 @@ class var secondaryLabelColor: NSColor { get }
 @property (class, strong, readonly) NSColor * secondaryLabelColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color in text fields that contain less important text in your user interface. For example, you might use this in labels that display subheads or additional information. You can also use it for other types of secondary app content.
 

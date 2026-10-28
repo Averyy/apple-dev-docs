@@ -23,7 +23,7 @@ final var remoteMaxStreamsUnidirectional: Int { get }
 
 Available when `ApplicationProtocol` is `QUIC`.
 
-#### Discussion
+## Discussion
 
 Note that while attempts to create streams above this limit will be blocked until the server increases the limit, these blocked attempts will cause a STREAMS_BLOCKED frame to be sent to the server. This informs the server that the client has more streams it would like to create. As a result, the caller should attempt to create streams over this limit if it desires more streams.
 

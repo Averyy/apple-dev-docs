@@ -19,7 +19,7 @@ interface SearchResponse
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 The search callback function provides the search response in its data parameter. An object parsed from server-returned JSON, `data` contains a [`query`](./searchresponse/query.md) and a [`boundingRegion`](./searchresponse/boundingregion.md).
 

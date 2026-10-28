@@ -22,7 +22,7 @@ case overlay
 UISplitViewControllerSplitBehaviorOverlay
 ```
 
-#### Discussion
+## Discussion
 
 This split behavior shows one or both sidebars layered on top of the secondary view controller, partially obscuring it. The secondary view controller is dimmed out, preventing interaction with its view.
 

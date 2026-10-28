@@ -19,7 +19,7 @@ func data(forType type: NSPasteboard.PasteboardType) -> Data?
 - (NSData *) dataForType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the specified type as an `NSData` object.
 

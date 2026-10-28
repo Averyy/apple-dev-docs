@@ -21,7 +21,7 @@ Gets all the transactions associated with this product ID.
 static func all(for productID: String) -> Transaction.Transactions
 ```
 
-#### Return Value
+## Return Value
 
 A sequence containing all transactions for the given product.
 

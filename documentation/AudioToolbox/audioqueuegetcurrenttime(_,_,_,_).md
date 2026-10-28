@@ -24,7 +24,7 @@ func AudioQueueGetCurrentTime(_ inAQ: AudioQueueRef, _ inTimeline: AudioQueueTim
 extern OSStatus AudioQueueGetCurrentTime(AudioQueueRef inAQ, AudioQueueTimelineRef inTimeline, AudioTimeStamp *outTimeStamp, Boolean *outTimelineDiscontinuity);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

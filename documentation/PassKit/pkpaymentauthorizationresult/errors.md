@@ -24,7 +24,7 @@ var errors: [any Error]! { get set }
 @property (nonatomic, copy, null_resettable) NSArray<NSError *> * errors;
 ```
 
-#### Discussion
+## Discussion
 
 If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](../pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](../pkpaymentauthorizationresult.md), and include the individual errors in this array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](../pkpaymentauthorizationstatus/success.md) status and leave the error array empty. Errors are of the standard type, [`NSError`](../../Foundation/nserror.md). To create errors, you can either use the convenience methods found in [`PKPaymentRequest`](../pkpaymentrequest.md), or create an [`NSError`](../../Foundation/nserror.md) using the domain, error codes, and user info from [`PKPaymentError`](../pkpaymenterror.md).
 

@@ -19,7 +19,7 @@ A style used to visually indicate selection following platform conventional colo
 struct SelectionShapeStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`selection`](./shapestyle/selection.md) to construct this style.
 

@@ -24,7 +24,7 @@ class CAGradientLayer
 @interface CAGradientLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 You use a gradient layer to create a color gradient containing an arbitrary number of colors. By default, the colors are spread uniformly across the layer, but you can optionally specify locations for control over the color positions through the gradient.
 

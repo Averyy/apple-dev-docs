@@ -25,7 +25,7 @@ case decimalAttributeType
 NSDecimalAttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Use instances of [`NSDecimalNumber`](../../Foundation/nsdecimalnumber.md) when reading and writing attributes of this type.
 

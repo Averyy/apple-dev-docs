@@ -22,7 +22,7 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 - (void) documentInteractionController:(UIDocumentInteractionController *) controller didEndSendingToApplication:(NSString *) application;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the document information has been saved for the specified application.
 

@@ -21,11 +21,11 @@ Returns the underlying typed column.
 func assumingType<T>(_ type: T.Type) -> Column<T>
 ```
 
-#### Return Value
+## Return Value
 
 A typed column.
 
-#### Discussion
+## Discussion
 
 When using this method, you must provide the correct underlying type.
 

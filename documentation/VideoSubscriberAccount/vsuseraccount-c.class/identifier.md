@@ -19,7 +19,7 @@ A string you provide that uniquely identifies the account.
 @property (nonatomic, copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Provide an identifier that is unique for an account on a device. Use this identifier to find the account to update when you make an account update request.
 

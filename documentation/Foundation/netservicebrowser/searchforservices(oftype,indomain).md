@@ -26,7 +26,7 @@ func searchForServices(ofType type: String, inDomain domainString: String)
 - (void) searchForServicesOfType:(NSString *) type inDomain:(NSString *) domainString;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, sending a [`netServiceBrowserWillSearch(_:)`](../netservicebrowserdelegate/netservicebrowserwillsearch%28_%29.md) message to the delegate if the network was ready to initiate the search.The delegate receives subsequent [`netServiceBrowser(_:didFind:moreComing:)`](../netservicebrowserdelegate/netservicebrowser%28_,didfind,morecoming%29.md) messages for each service discovered.
 

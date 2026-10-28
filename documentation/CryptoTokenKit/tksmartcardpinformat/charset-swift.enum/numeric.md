@@ -23,7 +23,7 @@ case numeric
 TKSmartCardPINCharsetNumeric
 ```
 
-#### Discussion
+## Discussion
 
 PIN is only composed of digits.
 

@@ -27,7 +27,7 @@ static let nameTypeOrLexicalClass: NSLinguisticTagScheme
 extern NSLinguisticTagScheme const NSLinguisticTagSchemeNameTypeOrLexicalClass;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see Name Types and Lexical Classes.
 

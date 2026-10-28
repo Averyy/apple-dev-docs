@@ -23,11 +23,11 @@ func IORegistryEntryInPlane(_ entry: io_registry_entry_t, _ plane: UnsafePointer
 boolean_t IORegistryEntryInPlane(io_registry_entry_t entry, const io_name_t plane);
 ```
 
-#### Return Value
+## Return Value
 
 If the entry has a parent in the plane, true is returned, otherwise false is returned.
 
-#### Discussion
+## Discussion
 
 This method determines if the entry is attached in a plane to any other entry.
 

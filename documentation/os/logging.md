@@ -5,7 +5,7 @@
 
 Capture telemetry from your app for debugging and performance analysis using the unified logging system.
 
-#### Overview
+## Overview
 
 When debugging problems in your app, it’s helpful to record the exact sequence of events that occurred, along with supplemental data about those events. Log messages provide a continuous record of your app’s runtime behavior, and make it easier to identify problems that can’t be caught easily using other techniques. Specifically, you might use log messages:
 

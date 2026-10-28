@@ -31,7 +31,7 @@ kvImageHighQualityResampling
 - [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
 - [Resampling in vImage](./resampling-in-vimage.md)
 
-#### Discussion
+## Discussion
 
 vImage uses Lanczos interpolation for resampling.
 

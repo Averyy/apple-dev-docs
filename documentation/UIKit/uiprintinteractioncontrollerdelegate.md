@@ -23,7 +23,7 @@ protocol UIPrintInteractionControllerDelegate : NSObjectProtocol
 @protocol UIPrintInteractionControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 If the application has special requirements for content sizes, it can implement [`printInteractionController(_:choosePaper:)`](./uiprintinteractioncontrollerdelegate/printinteractioncontroller%28_,choosepaper%29.md) to return a [`UIPrintPaper`](./uiprintpaper.md) object encapsulating the page size and the printing area to use for a print job. If you want more control of the presentation of the printing options, the delegate can return a view controller that owns the printing-options view in an implementation of [`printInteractionControllerParentViewController(_:)`](./uiprintinteractioncontrollerdelegate/printinteractioncontrollerparentviewcontroller%28_%29.md). The delegate can also implement methods that are invoked when the printing user interface is presented and when it is dismissed, and when the print job begins and ends.
 

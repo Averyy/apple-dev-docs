@@ -12,11 +12,11 @@ Capture Apple Pencil and touch input in views.
 - Mac Catalyst 11.0+
 - Xcode 10.1+
 
-#### Overview
+## Overview
 
 Touch Canvas illustrates responsive handling of Apple Pencil and touch input, focusing on the force, altitude, and azimuth properties of `UITouch`. The sample creates a visualization of force using line thickness, and creates a visualization of altitude and azimuth with an interactive diagram. To build on the concepts demonstrated in this sample and learn about using Apple Pencil and touch input in a drawing app, see [Leveraging touch input for drawing apps](./leveraging-touch-input-for-drawing-apps.md).
 
-##### Calculate the force of a touch
+### Calculate the force of a touch
 
 You can use the force of a touch applied by a finger on 3D Touch-enabled devices or from the tip of Apple Pencil to create effects in your app. For example, the force of a touch can change the width of a line on a canvas.
 
@@ -42,7 +42,7 @@ This sample uses the magnitude value to affect drawing on the canvas, including 
 context.setLineWidth(point.magnitude)
 ```
 
-##### Create a visualization of Apple Pencil’s altitude and azimuth
+### Create a visualization of Apple Pencil’s altitude and azimuth
 
 Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the *Debug* mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion.
 
@@ -84,7 +84,7 @@ var dotPositionTransform = CGAffineTransform(translationX: -azimuthUnitVector.dx
 dotPositionTransform = dotPositionTransform.concatenating(centeringTransform)
 ```
 
-##### Toggle debug drawing
+### Toggle debug drawing
 
 Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](./uievent.md) for the line segment included data from [`predictedTouches(for:)`](./uievent/predictedtouches%28for%29.md) or [`coalescedTouches(for:)`](./uievent/coalescedtouches%28for%29.md).
 

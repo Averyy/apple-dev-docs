@@ -19,7 +19,7 @@ class NSColorList
 @interface NSColorList : NSObject
 ```
 
-#### Overview
+## Overview
 
 A color list manages a list of [`NSColor`](./nscolor.md) objects, each of which has an associated name. The [`NSColorPanel`](./nscolorpanel.md) list mode color picker uses instances of [`NSColorList`](./nscolorlist.md) to represent any lists of colors that come with the system, as well as any lists the user creates. An app can use a color list to manage document-specific color lists.
 

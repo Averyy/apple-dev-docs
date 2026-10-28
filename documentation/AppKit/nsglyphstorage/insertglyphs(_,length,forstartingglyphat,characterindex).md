@@ -20,7 +20,7 @@ func insertGlyphs(_ glyphs: UnsafePointer<NSGlyph>, length: Int, forStartingGlyp
 - (void) insertGlyphs:(const NSGlyph *) glyphs length:(NSUInteger) length forStartingGlyphAtIndex:(NSUInteger) glyphIndex characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This is a bulk insert method for the glyph cache.
 

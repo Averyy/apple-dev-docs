@@ -20,7 +20,7 @@ Synchronously performs the configured video effect.
 - (BOOL) processWithParameters:(id<VTFrameProcessorParameters>) parameters error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Frame level settings and frame level input/output parameters are passed by using the respective [`VTFrameProcessorParameters`](../vtframeprocessorparameters.md) for the effect that the frame processor is configured for.
 

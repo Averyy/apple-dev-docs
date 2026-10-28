@@ -5,7 +5,7 @@
 
 Automatically adjust the position or orientation of a node based on specified rules.
 
-#### Overview
+## Overview
 
 By modifying the results of animation, physics, and other scene graph changes, constraints make it easier manage dynamic behaviors and relationships between elements of your scene.
 

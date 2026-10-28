@@ -23,7 +23,7 @@ func compile(options: MLCGraphCompilationOptions = [], device: MLCDevice) -> Boo
 - (BOOL) compileWithOptions:(MLCGraphCompilationOptions) options device:(MLCDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

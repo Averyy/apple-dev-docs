@@ -26,7 +26,7 @@ var totalSwimmingStrokeCount: HKQuantity? { get }
 @property (strong, readonly, nullable) HKQuantity * totalSwimmingStrokeCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a quantity using count units, or `nil`.
 

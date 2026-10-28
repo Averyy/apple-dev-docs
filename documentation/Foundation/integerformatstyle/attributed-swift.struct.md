@@ -23,7 +23,7 @@ struct Attributed
 
 Available when `Value` conforms to `BinaryInteger`.
 
-#### Overview
+## Overview
 
 Use the [`attributed`](./attributed-swift.property.md) modifier on an [`IntegerFormatStyle`](../integerformatstyle.md) to create a format style of this type.
 

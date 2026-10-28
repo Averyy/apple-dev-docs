@@ -24,7 +24,7 @@ func addOutputWithNoConnections(_ output: AVCaptureOutput)
 - (void) addOutputWithNoConnections:(AVCaptureOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method while the session is running.
 

@@ -25,7 +25,7 @@ func removeAllPendingNotificationRequests()
 - (void) removeAllPendingNotificationRequests;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes asynchronously, removing all pending notification requests on a secondary thread.
 

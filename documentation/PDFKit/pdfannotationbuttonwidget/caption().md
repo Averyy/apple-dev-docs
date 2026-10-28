@@ -19,11 +19,11 @@ func caption() -> String!
 - (NSString *) caption;
 ```
 
-#### Return Value
+## Return Value
 
 The label drawn on a push button control.
 
-#### Discussion
+## Discussion
 
 This method applies only to the label drawn on a control of type [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md).
 

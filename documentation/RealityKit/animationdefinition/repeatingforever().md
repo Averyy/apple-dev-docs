@@ -20,7 +20,7 @@ Repeats the animation infinitely.
 func repeatingForever() -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A version of the calling animation that will repeat infinitely.
 

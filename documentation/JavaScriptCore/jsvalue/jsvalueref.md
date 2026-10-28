@@ -24,7 +24,7 @@ var jsValueRef: JSValueRef! { get }
 @property (readonly) JSValueRef JSValueRef;
 ```
 
-#### Discussion
+## Discussion
 
 See `JSValueRef` for the C JavaScriptCore API.
 

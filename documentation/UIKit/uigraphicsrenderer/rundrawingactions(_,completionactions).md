@@ -23,7 +23,7 @@ func runDrawingActions(_ drawingActions: (UIGraphicsRendererContext) -> Void, co
 - (BOOL) runDrawingActions:(UIGraphicsDrawingActions) drawingActions completionActions:(UIGraphicsDrawingActions) completionActions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the `drawingActions` block in a Core Graphics context. This context was created by the [`context(with:)`](./context%28with%29.md) method, captured in an instance of the class returned by the [`rendererContextClass()`](./renderercontextclass%28%29.md) method, and prepared by the [`prepare(_:with:)`](./prepare%28_,with%29.md) method.
 

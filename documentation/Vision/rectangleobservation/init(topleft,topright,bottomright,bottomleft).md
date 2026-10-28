@@ -21,7 +21,7 @@ Creates a rectangle observation from its corner points.
 init(topLeft: NormalizedPoint, topRight: NormalizedPoint, bottomRight: NormalizedPoint, bottomLeft: NormalizedPoint)
 ```
 
-#### Discussion
+## Discussion
 
 The framework normalizes the coordinates of the rectangle to the dimensions of the processed image, with the origin at the bottom-left corner of the image.
 

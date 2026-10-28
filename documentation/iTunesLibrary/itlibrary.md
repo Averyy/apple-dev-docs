@@ -20,7 +20,7 @@ class ITLibrary
 @interface ITLibrary : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`ITLibrary`](./itlibrary.md) properties and methods to retrieve media items (tracks) and playlists from the user’s iTunes library. [`ITLibrary`](./itlibrary.md) also provides methods for extracting artwork from a media file that may or may not be in the iTunes library. Sandboxed and nonsandboxed apps can also use iTunes’ ability to extract artwork.
 

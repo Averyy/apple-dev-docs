@@ -22,7 +22,7 @@ var allowsPictureInPictureMediaPlayback: Bool { get set }
 @property (nonatomic) BOOL allowsPictureInPictureMediaPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

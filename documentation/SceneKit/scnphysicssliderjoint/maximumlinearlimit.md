@@ -25,7 +25,7 @@ var maximumLinearLimit: CGFloat { get set }
 @property (nonatomic) CGFloat maximumLinearLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `INFINITY`. With this value, the joint can slide forever in the direction of the slider axis.
 

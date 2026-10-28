@@ -18,7 +18,7 @@ A GPU-managed buffer that stores an array of per-instance transforms for GPU ins
 final class LowLevelInstanceTransformResource
 ```
 
-#### Overview
+## Overview
 
 Assign a `LowLevelInstanceTransformResource` to a [`LowLevelMeshInstance`](./lowlevelmeshinstance.md) via [`setInstanceTransforms(_:)`](./lowlevelmeshinstance/setinstancetransforms%28_%29.md) to issue a single instanced draw call that renders multiple copies of the mesh. Each entry in the buffer is a `float4x4` model-to-local transform. The renderer computes the final world transform for each instance as `meshInstance.transform * instanceTransforms[i]`.
 

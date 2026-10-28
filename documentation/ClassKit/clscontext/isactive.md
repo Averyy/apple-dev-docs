@@ -23,7 +23,7 @@ var isActive: Bool { get }
 @property (nonatomic, assign, readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`becomeActive()`](./becomeactive%28%29.md) method to activate a context, and the [`resignActive()`](./resignactive%28%29.md) method to deactivate it.
 

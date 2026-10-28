@@ -25,7 +25,7 @@ struct PaymentMode
 
 - [Testing win-back offers in Xcode](../../testing-win-back-offers-in-xcode.md)
 
-#### Overview
+## Overview
 
 A payment mode describes how a subscription offer charges its discounted price — whether it charges one time, charges multiple times, or charges nothing because it’s a free trial.
 

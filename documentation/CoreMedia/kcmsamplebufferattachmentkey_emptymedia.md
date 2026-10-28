@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_EmptyMedia: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_EmptyMedia;
 ```
 
-#### Discussion
+## Discussion
 
 The sample buffer’s output presentation timestamp indicates when the empty interval begins.        Marker sample buffers with this attachment are used to announce the arrival of empty edits.
 

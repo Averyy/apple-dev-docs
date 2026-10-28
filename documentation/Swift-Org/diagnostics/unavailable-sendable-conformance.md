@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 An unavailable sendable conformance is an explicit prohibition on conforming to `Sendable`. It is declared by marking the conformance `unavailable` with the `available` attribute. Like other conformances, unavailable conformances are inherited by subclasses. Providing an unavailable conformance to the `Sendable` protocol states that a type and its subclasses must not conform to `Sendable`:
 
@@ -37,7 +37,7 @@ An unavailable `Sendable` conformance means the type does not meet the criteria 
 
 These rules also apply to extensions of types; you shouldn’t extend a type to conform to `Sendable` when it was defined with an unavailable `Sendable` conformance. Treating a non-`Sendable` type as `Sendable` will prevent enforcing race safety.
 
-#### Suppressed conformances
+## Suppressed conformances
 
 By writing `~Sendable`, a type can suppress inferred `Sendable` conformance without preventing subclasses from adding protections for state and conforming to `Sendable`. A superclass can also use `~Sendable` to let subclasses choose whether to be `Sendable`.
 
@@ -51,7 +51,7 @@ final class ThreadSafeImageLoader: ImageLoader, @unchecked Sendable {
 }
 ```
 
-#### Sendable wrapper
+## Sendable wrapper
 
 To resolve this warning, instead of trying to make a non-`Sendable` type conform to `Sendable`, create a `Sendable` wrapper that ensures exclusive access, or wrap the type in a `Mutex`, which is `Sendable`.
 

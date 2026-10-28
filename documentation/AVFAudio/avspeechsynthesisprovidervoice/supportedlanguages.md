@@ -25,7 +25,7 @@ var supportedLanguages: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * supportedLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 These languages are what a voice supports — when given a multi-language phrase — without the need to switch voice. For example, if the primary language is `zh-CN`, and this value contains `zh-CN` and `en-US`, a synthesizer that receives a phrase with both languages would speak the entire phrase.
 

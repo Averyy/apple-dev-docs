@@ -21,7 +21,7 @@ Indicates that a control’s minimum value has been reached, such as when a slid
 static let minimum: SensoryFeedback.SelectionFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

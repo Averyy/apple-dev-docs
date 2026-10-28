@@ -19,7 +19,7 @@ func hv_vm_map_space(_ asid: hv_vm_space_t, _ uva: hv_uvaddr_t, _ gpa: hv_gpaddr
 extern hv_return_t hv_vm_map_space(hv_vm_space_t asid, hv_uvaddr_t uva, hv_gpaddr_t gpa, size_t size, hv_memory_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

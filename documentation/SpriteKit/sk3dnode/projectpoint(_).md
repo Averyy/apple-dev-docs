@@ -25,11 +25,11 @@ func projectPoint(_ point: vector_float3) -> vector_float3
 - (vector_float3) projectPoint:(vector_float3) point;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding point in the SpriteKit node’s coordinate system.
 
-#### Discussion
+## Discussion
 
 The z-coordinate of the returned point describes the depth of the projected point relative to the near and far clipping planes of the viewing frustum (defined by the [`pointOfView`](./pointofview.md) property). Projecting a point on the near clipping plane returns a point whose z-coordinate is `0.0`; projecting a point on the far clipping plane returns a point whose z-coordinate is `1.0`.
 

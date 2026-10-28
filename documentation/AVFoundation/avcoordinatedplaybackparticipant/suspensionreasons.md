@@ -24,7 +24,7 @@ var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * suspensionReasons;
 ```
 
-#### Discussion
+## Discussion
 
 This value is empty if the participant’s playback isn’t in a suspended state.
 

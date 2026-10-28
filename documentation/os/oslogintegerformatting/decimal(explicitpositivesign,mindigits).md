@@ -21,7 +21,7 @@ Creates a decimal format with custom handling of the numerical sign and the mini
 static func decimal(explicitPositiveSign: Bool = false, minDigits: @autoclosure @escaping () -> Int) -> OSLogIntegerFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom decimal format for integers.
 

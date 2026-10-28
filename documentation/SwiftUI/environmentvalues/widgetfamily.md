@@ -20,7 +20,7 @@ The template of the widget — small, medium, or large.
 var widgetFamily: WidgetFamily { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to retrieve the widget size that the user chose for a widget.
 

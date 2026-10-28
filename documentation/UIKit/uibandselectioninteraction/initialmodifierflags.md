@@ -22,7 +22,7 @@ var initialModifierFlags: UIKeyModifierFlags { get }
 @property (nonatomic, readonly) UIKeyModifierFlags initialModifierFlags;
 ```
 
-#### Discussion
+## Discussion
 
 When an interaction starts, the [`UIBandSelectionInteraction`](../uibandselectioninteraction.md) object places the current pressed modifier keys in this property. Use the set of modifier keys to adjust the behavior of your handler. For example, you might extend an existing selection when someone presses the Shift key.
 

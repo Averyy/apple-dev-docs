@@ -23,7 +23,7 @@ var delay: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval delay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0`. When the value is greater than 0, the start of any animations is delayed by the specified amount of time.
 

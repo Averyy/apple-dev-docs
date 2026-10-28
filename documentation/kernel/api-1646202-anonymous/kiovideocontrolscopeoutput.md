@@ -13,7 +13,7 @@
 kIOVideoControlScopeOutput = 'outp'
 ```
 
-#### Discussion
+## Discussion
 
 The scope for controls that apply to the output section of the device.
 

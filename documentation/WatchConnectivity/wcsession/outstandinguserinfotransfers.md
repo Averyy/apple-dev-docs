@@ -23,7 +23,7 @@ var outstandingUserInfoTransfers: [WCSessionUserInfoTransfer] { get }
 @property (nonatomic, copy, readonly) NSArray<WCSessionUserInfoTransfer *> * outstandingUserInfoTransfers;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the [`WCSessionUserInfoTransfer`](../wcsessionuserinfotransfer.md) objects representing the data that you queued using the [`transferUserInfo(_:)`](./transferuserinfo%28_%29.md) or [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md) methods. Use the objects in this array to cancel specific data transfers.
 

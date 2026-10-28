@@ -13,7 +13,7 @@
 #define kIOPropertySCSIInitiatorIdentifierKey
 ```
 
-#### Discussion
+## Discussion
 
 An identifier that will uniquely identify this SCSI Initiator for the SCSI Domain.
 

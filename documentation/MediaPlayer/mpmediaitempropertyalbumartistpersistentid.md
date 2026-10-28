@@ -25,7 +25,7 @@ let MPMediaItemPropertyAlbumArtistPersistentID: String
 extern NSString * const MPMediaItemPropertyAlbumArtistPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that contains a `uint64_t` (unsigned long long). The value of the `MPMediaItemPropertyAlbumArtistPersistentID` identifier persists across application launches and across syncs that do not change the sync status of the media item. The value is not guaranteed to persist across a sync/unsync/sync cycle.
 

@@ -29,7 +29,7 @@ func change(for element: any GCPhysicalInputElement) -> GCDevicePhysicalInputEle
 
 - [Handling input events](../handling-input-events.md)
 
-#### Return Value
+## Return Value
 
 Description of the change to the element.
 

@@ -25,11 +25,11 @@ func undoActionUserInfoValue(forKey key: UndoManager.UserInfoKey) -> Any?
 - (id) undoActionUserInfoValueForKey:(NSUndoManagerUserInfoKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value that you previously registered to this key with [`setActionUserInfoValue(_:forKey:)`](./setactionuserinfovalue%28_,forkey%29.md), or `nil` if the key is absent.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve a user info value for the undo action you previously set with [`setActionUserInfoValue(_:forKey:)`](./setactionuserinfovalue%28_,forkey%29.md).
 

@@ -19,7 +19,7 @@ func draw(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the cell in the currently focused view, which can be different from the `controlView` passed in. Taking advantage of this behavior is not recommended, however.
 

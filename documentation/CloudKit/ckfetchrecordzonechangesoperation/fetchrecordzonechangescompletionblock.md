@@ -27,7 +27,7 @@ var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^fetchRecordZoneChangesCompletionBlock)(NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure has no return value and takes the following parameter:
 

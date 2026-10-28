@@ -22,7 +22,7 @@ init(operation: UIDropOperation, intent: UICollectionViewDropProposal.Intent)
 - (instancetype) initWithDropOperation:(UIDropOperation) operation intent:(UICollectionViewDropIntent) intent;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized drop proposal.
 

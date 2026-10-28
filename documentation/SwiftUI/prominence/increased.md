@@ -21,7 +21,7 @@ An increased prominence.
 case increased
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Not all views will react to increased prominence.
 

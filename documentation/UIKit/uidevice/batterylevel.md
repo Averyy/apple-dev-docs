@@ -22,7 +22,7 @@ var batteryLevel: Float { get }
 @property (nonatomic, readonly) float batteryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Battery level ranges from 0.0 (fully discharged) to 1.0 (100% charged). Before accessing this property, ensure that battery monitoring is enabled.
 

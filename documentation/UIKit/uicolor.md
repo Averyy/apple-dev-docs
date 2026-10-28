@@ -30,7 +30,7 @@ class UIColor
 - [Determining color values with color spaces](./determining-color-values-with-color-spaces.md)
 - [Understanding a drag item as a promise](./understanding-a-drag-item-as-a-promise.md)
 
-#### Overview
+## Overview
 
 Use color to customize your app’s appearance, communicate status, and help people visualize data. To learn more about using color in your apps, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/foundations/color/).
 

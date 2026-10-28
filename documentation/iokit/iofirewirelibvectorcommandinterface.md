@@ -18,7 +18,7 @@ typedef struct IOFireWireLibVectorCommandInterface_t {
 } IOFireWireLibVectorCommandInterface;
 ```
 
-#### Overview
+## Overview
 
 Read and Write commands can be attached in order to the vector command. When the vector command is submitted all the commands are sent to the kernel for execution. When all the commands in a vector command are complete the vector command's completion is called. The advantage over submitting and completeing each command simultaneously is that only one kernel transition will be used for submission and one for completion, regardless of the number of commands in the vector.
 

@@ -26,7 +26,7 @@ optional func broadcastController(_ broadcastController: RPBroadcastController, 
 - (void) broadcastController:(RPBroadcastController *) broadcastController didFinishWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use the returned error to inform the user why the broadcast failed and provide an option to resume the broadcast, if applicable.
 

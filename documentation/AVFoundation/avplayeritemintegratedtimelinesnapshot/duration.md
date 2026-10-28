@@ -25,7 +25,7 @@ var duration: CMTime { get }
 @property (nonatomic, readonly) CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 The duration property takes into account the interstitial event’s [`playoutLimit`](../avplayerinterstitialevent/playoutlimit.md) and [`resumptionOffset`](../avplayerinterstitialevent/resumptionoffset.md) values.
 

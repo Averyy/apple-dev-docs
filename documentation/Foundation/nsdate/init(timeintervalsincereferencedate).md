@@ -25,11 +25,11 @@ init(timeIntervalSinceReferenceDate ti: TimeInterval)
 - (instancetype) initWithTimeIntervalSinceReferenceDate:(NSTimeInterval) ti;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object initialized relative to the absolute reference date by `ti` seconds.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for the `NSDate` class and is declared primarily for the use of subclasses of `NSDate`. When you subclass `NSDate` to create a concrete date class, you must override this method.
 

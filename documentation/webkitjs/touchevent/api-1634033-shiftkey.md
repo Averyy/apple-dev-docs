@@ -16,7 +16,7 @@ A Boolean value indicating whether the shift key is pressed.
 readonly attribute boolean shiftKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the shift key is pressed; otherwise, it is not. If there is no keyboard, this value is `false`.
 

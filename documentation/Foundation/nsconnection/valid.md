@@ -16,7 +16,7 @@ A Boolean value that indicates whether the receiver is known to be valid.
 @property (readonly, getter=isValid) BOOL valid;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is known to be valid, otherwise [`false`](../../Swift/false.md).
 

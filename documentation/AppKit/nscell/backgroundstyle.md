@@ -19,7 +19,7 @@ var backgroundStyle: NSView.BackgroundStyle { get set }
 @property NSBackgroundStyle backgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The background describes the surface the cell is drawn onto in the [`draw(withFrame:in:)`](./draw%28withframe,in%29.md) method. A control typically sets the value of this property before it asks the cell to draw. A cell may draw differently based on background characteristics. For example, a table view drawing a cell in a selected row might set the value to [`dark`](../nsview/backgroundstyle/dark.md). A text cell might decide to render its text white as a result. A rating-style level indicator might draw its stars white instead of gray.
 

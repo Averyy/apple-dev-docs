@@ -23,7 +23,7 @@ typedef NSString * XCSourceEditorCommandDefinitionKey;
 
 - [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
 
-#### Overview
+## Overview
 
 Source editor commands are defined via an array of dictionaries under the `XCSourceEditorCommandDefinitions` key of a Xcode Source Editor Extension’s `NSExtensionAttributes` within its `Info.plist` file. Commands can also be specified via the [`commandDefinitions`](./xcsourceeditorextension/commanddefinitions.md) property in an extension’s conformance to the [`XCSourceEditorExtension`](./xcsourceeditorextension.md) protocol.
 

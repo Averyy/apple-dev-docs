@@ -25,7 +25,7 @@ case otherError
 kSecTrustResultOtherError
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that evaluation failed for some other reason. This can be caused by either a revoked certificate or by OS-level errors that are unrelated to the certificates themselves.
 

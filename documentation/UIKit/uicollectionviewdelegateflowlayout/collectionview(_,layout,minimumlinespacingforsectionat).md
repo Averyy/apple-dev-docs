@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (CGFloat) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum space (measured in points) to apply between successive lines in a section.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the value in its [`minimumLineSpacing`](../uicollectionviewflowlayout/minimumlinespacing.md) property to set the space between lines instead. Your implementation of this method can return a fixed value or return different spacing values for each section.
 

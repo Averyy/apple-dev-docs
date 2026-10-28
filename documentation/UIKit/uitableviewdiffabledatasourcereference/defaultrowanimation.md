@@ -23,7 +23,7 @@ var defaultRowAnimation: UITableView.RowAnimation { get set }
 @property (nonatomic) UITableViewRowAnimation defaultRowAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UITableView.RowAnimation.automatic`](../uitableview/rowanimation/automatic.md).
 

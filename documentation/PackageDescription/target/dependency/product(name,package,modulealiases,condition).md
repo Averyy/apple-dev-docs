@@ -15,7 +15,7 @@ Creates a target dependency on a product from a package dependency.
 static func product(name: String, package: String, moduleAliases: [String : String]? = nil, condition: TargetDependencyCondition? = nil) -> Target.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Target.Dependency` instance.
 

@@ -21,7 +21,7 @@ Creates a tag containing frame-packing information.
 static func packingType(_ value: CMPackingType) -> CMTypedTag<CMPackingType>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the frame-packing type of `value`.
 

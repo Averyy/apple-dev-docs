@@ -19,7 +19,7 @@ init?(itemAttributes attributes: FSItem.Attributes)
 - (instancetype) initWithAttributes:(FSItemAttributes *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

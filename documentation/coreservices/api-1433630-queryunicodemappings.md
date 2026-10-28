@@ -15,11 +15,11 @@ Returns a list of the conversion mappings available onthe system that meet speci
 OSStatus QueryUnicodeMappings(OptionBits iFilter, ConstUnicodeMappingPtr iFindMapping, ItemCount iMaxCount, ItemCount *oActualCount, UnicodeMapping oReturnedMappings[]);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). If the function returnsa `noErr` result code,the value retuned in the `oActualCount` parameteris less than or equal to the value returned in the `iMaxCount` parameterand the `oReturnedMappings` parametercontains all of the matching mappings found. If the function returnsa `kTECArrayFullErr`, thefunction found more mappings than your `oReturnedMappings` arraycould accommodate.
 
-#### Discussion
+## Discussion
 
 You can use the `QueryUnicodeMappings` functionto obtain all mappings on the system up to the number allowed byyour `oReturnedMappings` arrayby specifying a value of zero for the `iFilter` field. 
 

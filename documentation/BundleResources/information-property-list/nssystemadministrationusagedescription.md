@@ -14,7 +14,7 @@ A message in macOS that tells people why the app is requesting to manipulate the
 - **Name**: `NSSystemAdministrationUsageDescription` (Privacy - System Administration Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key if your app uses certain APIs that manipulate system configuration, like [`ODRecordSetValue(_:_:_:_:)`](../../OpenDirectory/odrecordsetvalue%28_,_,_,_%29.md).
 

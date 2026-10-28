@@ -25,7 +25,7 @@ var shader: SKShader? { get set }
 @property (nonatomic, retain, nullable) SKShader * shader;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, meaning that default blending behavior executes. If a shader is specified, it is called when the rasterized image is blended into the parent’s framebuffer.
 

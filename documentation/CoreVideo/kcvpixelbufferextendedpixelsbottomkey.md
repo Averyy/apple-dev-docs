@@ -25,7 +25,7 @@ let kCVPixelBufferExtendedPixelsBottomKey: CFString
 extern CFStringRef const kCVPixelBufferExtendedPixelsBottomKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

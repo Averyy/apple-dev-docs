@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Creating a throwing unstructured `Task` without storing or discarding its result means any error thrown by the task body will be silently ignored. Resolve this warning by explicitly storing or discarding the task reference.
 
@@ -43,7 +43,7 @@ Alternatively, ignore the thrown error explicitly:
 _ = Task { throw MyError() }
 ```
 
-##### Cancelling unstructured tasks
+### Cancelling unstructured tasks
 
 Another reason to keep references to unstructured tasks is to be able to cancel them explicitly:
 

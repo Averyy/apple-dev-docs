@@ -29,7 +29,7 @@ class CKFetchRecordZoneChangesOperation
 
 - [Encrypting User Data](./encrypting-user-data.md)
 
-#### Overview
+## Overview
 
 Use this operation to fetch record changes in one or more record zones, such as those that occur during record creation, modification, and deletion. You provide a configuration object for each record zone to query for changes. The configuration contains a server change token, which is an opaque pointer to a specific change in the zone’s history. CloudKit returns only the changes that occur after that point. For the first time you fetch a record zone’s changes, or to refetch all changes in a zone’s history, use `nil` instead.
 

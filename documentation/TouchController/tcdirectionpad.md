@@ -21,7 +21,7 @@ class TCDirectionPad
 @interface TCDirectionPad : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can configure this object to behave as either a composite direction pad (mirrored by a `GCControllerDirectionPad` on the associated `GCController` instance) or as four separate buttons.
 

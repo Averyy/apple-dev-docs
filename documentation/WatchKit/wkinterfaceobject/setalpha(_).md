@@ -19,7 +19,7 @@ func setAlpha(_ alpha: CGFloat)
 - (void) setAlpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to make an object fully or partially transparent. A partially transparent object allows the color or background image associated with the containing group or interface controller show through. A fully transparent object cannot be seen but continues to occupy space in your interface.
 

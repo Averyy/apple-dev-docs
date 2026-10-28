@@ -21,7 +21,7 @@ A type that represents a QuickLook preview generator bundle.
 static var quickLookGenerator: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.quicklook-generator`.
 

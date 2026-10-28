@@ -23,7 +23,7 @@ static var messages: Message.Messages { get }
 - [Testing failing subscription renewals and Apple In-App Purchases](../testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 If your app doesn’t implement this message listener, StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default.
 

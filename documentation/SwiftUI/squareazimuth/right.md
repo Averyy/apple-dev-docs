@@ -15,7 +15,7 @@ Has an orientation with an horizontal angle equal to `90°`.
 case right
 ```
 
-#### Discussion
+## Discussion
 
 The continuous input azimuth is `≥ 45°` and `< 135°`.
 

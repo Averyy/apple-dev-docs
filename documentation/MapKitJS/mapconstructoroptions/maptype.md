@@ -15,7 +15,7 @@ The type of data that the map view displays.
 mapType?: MapType;
 ```
 
-#### Discussion
+## Discussion
 
 The map’s initial view type can be one of the types defined by [`MapType`](../maptype.md). The default map type is [`Standard`](../maptype/standard.md).
 

@@ -24,7 +24,7 @@ case album
 PHAssetCollectionTypeAlbum
 ```
 
-#### Discussion
+## Discussion
 
 Albums can be created in the Photos app or appear on an iOS device through iTunes sync.
 

@@ -31,7 +31,7 @@ var status: AVPlayerItem.Status { get }
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 - [Observing playback state in SwiftUI](../observing-playback-state-in-swiftui.md)
 
-#### Discussion
+## Discussion
 
 When a player item is created, its [`status`](./status-swift.property.md) is [`AVPlayerItem.Status.unknown`](./status-swift.enum/unknown.md), meaning its media hasn’t been loaded and has not yet been enqueued for playback. Associating a player item with an [`AVPlayer`](../avplayer.md) immediately begins enqueuing the item’s media and preparing it for playback. When the player item’s media has been loaded and is ready for use, its status will change to [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md). You can observe this change using key-value observing.
 

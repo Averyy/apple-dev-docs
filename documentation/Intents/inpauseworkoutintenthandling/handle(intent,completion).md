@@ -28,7 +28,7 @@ func handle(intent: INPauseWorkoutIntent) async -> INPauseWorkoutIntentResponse
 - (void) handlePauseWorkout:(INPauseWorkoutIntent *) intent completion:(void (^)(INPauseWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to turn control of pausing the workout to your app. When your response object contains the [`INPauseWorkoutIntentResponseCode.continueInApp`](../inpauseworkoutintentresponsecode/continueinapp.md) response, SiriKit automatically launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response object.
 

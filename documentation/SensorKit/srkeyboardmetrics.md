@@ -21,7 +21,7 @@ class SRKeyboardMetrics
 @interface SRKeyboardMetrics : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`keyboardMetrics`](./srsensor/keyboardmetrics.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

@@ -24,7 +24,7 @@ func VTCompressionSessionEndPass(_ session: VTCompressionSession, furtherPassesR
 extern OSStatus VTCompressionSessionEndPass(VTCompressionSessionRef session, Boolean *furtherPassesRequestedOut, uint32_t *reserved);
 ```
 
-#### Discussion
+## Discussion
 
 This function can take a long time, because the video encoder may perform significant processing between passes. You indicate with the `furtherPassesRequestedOut` argument whether the video encoder is requesting another pass.  There is no particular limit on the number of passes the video encoder may request, but the client is free to disregard this request and use the last-emitted set of frames.
 

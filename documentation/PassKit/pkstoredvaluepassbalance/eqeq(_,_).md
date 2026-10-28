@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two pass balance objects contain 
 static func == (lhs: PKStoredValuePassBalance, rhs: PKStoredValuePassBalance) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the two stored-value pass balance objects are equal; otherwise, [`false`](../../Swift/false.md)
 

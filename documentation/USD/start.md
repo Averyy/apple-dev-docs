@@ -5,11 +5,11 @@
 
 The moment to begin an animation.
 
-#### Overview
+## Overview
 
 This property is a normalized percentage. The default value is `0.0`, which corresponds to the beginning of the animation. The maximum value is `1.0`, which represents the end of the animation.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double start = 0.0

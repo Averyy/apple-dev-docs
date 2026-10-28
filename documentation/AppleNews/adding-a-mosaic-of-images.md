@@ -5,7 +5,7 @@
 
 Display five images as mosaic tiles.
 
-#### Overview
+## Overview
 
 A mosaic lets you display images as part of a larger collection.
 
@@ -13,7 +13,7 @@ A mosaic lets you display images as part of a larger collection.
 
 ![Screenshot of an Apple News article with a mosaic on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624435@2x.png)
 
-##### Add a Mosaic with Captions in Your Article
+### Add a Mosaic with Captions in Your Article
 
 In [Download the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Download-the-Article-Bundle-Examples), you downloaded a bundle called `News_Design_Tutorial_5_Galleries` that contains gallery images and mosaic images. Now, you’ll move some of those images into your working folder and create a `mosaic` component to display the images.
 
@@ -27,7 +27,7 @@ Your code should look like the example code [Mosaic: Result](./adding-a-mosaic-o
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a mosaic in your article.
 
-###### Mosaic: Copy This Code
+#### Mosaic: Copy This Code
 
 ```json
    {
@@ -76,7 +76,7 @@ After you make this change in your code, you can preview your working `article.j
     },
 ```
 
-###### Mosaic: Result
+#### Mosaic: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -135,7 +135,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -148,11 +148,11 @@ For example, try changing the order of images in your `mosaic` component by chan
 
 The order of your first and second images has been switched.
 
-##### Previous
+### Previous
 
 [Adding a Gallery of Images](./adding-a-gallery-of-images.md)
 
-##### Next
+### Next
 
 [Adding a Tweet](./adding-a-tweet.md)
 

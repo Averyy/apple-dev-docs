@@ -23,7 +23,7 @@ func fail()
 - (void) fail;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method sets the [`isComplete`](./iscomplete.md) property value to [`true`](../../Swift/true.md). Calling this method more than once or calling it after calling the [`fulfill()`](./fulfill%28%29.md) method has no effect.
 

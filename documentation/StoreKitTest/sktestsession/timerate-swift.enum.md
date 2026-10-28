@@ -25,7 +25,7 @@ enum TimeRate
 enum SKTestTimeRate : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The time rates that affect subscription renewals in the test environment match those in the sandbox environment with these exceptions:
 

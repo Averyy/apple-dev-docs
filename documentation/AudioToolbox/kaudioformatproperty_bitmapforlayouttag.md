@@ -24,7 +24,7 @@ var kAudioFormatProperty_BitmapForLayoutTag: AudioFormatPropertyID { get }
 kAudioFormatProperty_BitmapForLayoutTag
 ```
 
-#### Discussion
+## Discussion
 
 A bitmap for an [`AudioChannelLayoutTag`](../CoreAudioTypes/audiochannellayouttag.md) value, if there is one. Set the `inSpecifier` parameter to an `AudioChannelLayoutTag` value containing the layout tag. The value is an `UInt32` bitmap. The bits are as defined in [Core Audio Data Types](../CoreAudio/core-audio-data-types.md). To go in the other direction, that is, to get a layout tag for a bitmap, use the [`kAudioFormatProperty_TagForChannelLayout`](./kaudioformatproperty_tagforchannellayout.md) where your layout tag is [`kAudioChannelLayoutTag_UseChannelBitmap`](../CoreAudioTypes/kaudiochannellayouttag_usechannelbitmap.md) and the bitmap is filled in.
 

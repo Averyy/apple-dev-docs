@@ -19,7 +19,7 @@ let kSecMatchSubjectStartsWith: CFString
 extern CFStringRef const kSecMatchSubjectStartsWith;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md). If provided, returned certificates or identities are limited to those whose subject starts with this string.
 

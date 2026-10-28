@@ -13,7 +13,7 @@
 #define kIODVDMediaTypeHDRW
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for HD DVD ReWritable (HD DVD-RW) media.
 

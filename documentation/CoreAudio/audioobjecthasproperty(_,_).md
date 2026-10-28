@@ -20,11 +20,11 @@ func AudioObjectHasProperty(_ inObjectID: AudioObjectID, _ inAddress: UnsafePoin
 extern Boolean AudioObjectHasProperty(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether or not the AudioObject has the given property.
 
-#### Discussion
+## Discussion
 
 Queries an AudioObject about whether or not it has the given property.
 

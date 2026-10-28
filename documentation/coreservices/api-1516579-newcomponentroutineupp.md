@@ -15,11 +15,11 @@ Creates a new universal procedure pointer (UPP) to a component routine callback 
 ComponentRoutineUPP NewComponentRoutineUPP(ComponentRoutineProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentRoutineUPP` data type.
 
-#### Discussion
+## Discussion
 
 See the  [`ComponentRoutineProcPtr`](./componentroutineprocptr.md)  callback for more information. 
 

@@ -5,7 +5,7 @@
 
 Tell the Xcode build system about your project’s target-related dependencies, and reduce the compiler workload during each build cycle.
 
-#### Overview
+## Overview
 
 The Xcode build system manages the compilation and linking of the code in targets. Common types of targets include apps, app extensions, frameworks, libraries, and test suites. A simple project might contain only one target, such as the app you want to build. A more complex project might contain multiple targets with interdependencies, such as a private framework and an app that depends on that framework.
 
@@ -13,7 +13,7 @@ Always ensure that your project’s inter-target dependencies and configuration 
 
 > **Note**: Following coding best practices can also improve Xcode’s efficiency during compilation. For more information, see [Improving build efficiency with good coding practices](./improving-build-efficiency-with-good-coding-practices.md).
 
-##### Measure the time it takes for each build task
+### Measure the time it takes for each build task
 
 Before you perform any build optimizations, always gather timing information to see where optimizations might be most effective. Open your project in Xcode and choose Product > Perform Action > Build With Timing Summary to build your target with detailed timing information. To view the timing information for a specific build, select that build in the Report navigator.
 
@@ -27,7 +27,7 @@ The first time you build your project, Xcode builds everything, but subsequent b
 - Look for extraneous tasks, such as custom scripts, and assess whether Xcode needs to run those scripts during each incremental build.
 - If compilation of a particular file takes significantly longer than other files, examine the file to see if header importation issues are causing the delay.
 
-##### Declare inputs and outputs for custom scripts and build rules
+### Declare inputs and outputs for custom scripts and build rules
 
 If you use custom build scripts in your Xcode projects, make sure Xcode runs those scripts only when needed. You might use scripts to run custom tools, set build-environment variables programmatically, or perform other target-specific tasks. For example, you might use them to generate assets or other resource files from a proprietary data source. By default, Xcode runs custom scripts during every build cycle, including incremental builds. It also executes those scripts serially with respect to other tasks.
 
@@ -44,7 +44,7 @@ Specify input and output files, along with the script itself, in the Run Script 
 
 You must still specify an input and output file to prevent Xcode from running the script every time, even if your script doesn’t actually require those files. For a script that requires no input, provide a file that never changes as the input file. For a script with no outputs, create a static output file from your script so Xcode has something to check.
 
-##### Create module maps for custom frameworks and libraries
+### Create module maps for custom frameworks and libraries
 
 Module maps improve source compilation times by shortening the time it takes to import header files. A module map provides the compiler with a list of headers that the framework contains. When a framework includes a module map, the compiler doesn’t preprocess header files separately for each source file. Instead, it builds a cache of the framework’s symbol information and reuses that cache during subsequent compilations, which saves significant time.
 
@@ -61,7 +61,7 @@ Before you create a module map, make sure your framework meets the following req
 
 To get the maximum reuse benefit from module maps, compile your app’s source files with identical build options. Xcode builds your framework’s module map using the same options as the source file that imports that framework. If your app’s source files use different options, Xcode must recompile the module map for each new set of options. Using identical options allows Xcode to reuse the cache in each subsequent source file.
 
-##### Make sure your target’s dependencies are accurate
+### Make sure your target’s dependencies are accurate
 
 Verifying that your targets have accurate dependencies ensures they build correctly and in a timely manner. Out-of-date dependencies might force Xcode to build targets serially when it might have built them in parallel. Missing dependencies might cause correctness issues or even build errors. For example, if your app doesn’t have an explicit dependency to a separate code module, like an app extension, Xcode might build the app with an older version of the module that doesn’t work properly.
 
@@ -71,7 +71,7 @@ When you know a dependency exists between two targets in your Xcode project, cre
 
 If a target depends on code in a different Xcode project, create a reference to that project by dragging it into the navigator pane of your current project. The presence of the other project in the navigator pane gives Xcode the information it needs to track dependencies on items in the other project. Without this reference, Xcode doesn’t know to build your target when the remote project changes.
 
-##### Refactor your targets to improve parallelism
+### Refactor your targets to improve parallelism
 
 Inter-target dependencies require Xcode to build those targets in a specific order. When a target has many dependencies, or when it depends on large, monolithic modules, Xcode must serialize more tasks. To improve build performance, simplify your target’s dependency list, and break up monolithic targets so that Xcode can do more work in parallel.
 

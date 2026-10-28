@@ -21,7 +21,7 @@ A grayscale heat map of important areas across the image.
 let heatMap: PixelBufferObservation
 ```
 
-#### Discussion
+## Discussion
 
 The heat map is a pixel buffer in a one-component floating-point pixel format.
 

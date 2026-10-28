@@ -25,7 +25,7 @@ var isReady: Bool { get }
 @property (readonly, getter=isReady) BOOL ready;
 ```
 
-#### Discussion
+## Discussion
 
 The readiness of operations is determined by their dependencies on other operations and potentially by custom conditions that you define. The `NSOperation` class manages dependencies on other operations and reports the readiness of the receiver based on those dependencies.
 

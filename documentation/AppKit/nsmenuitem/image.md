@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The menu item’s image is not affected by changes in its state.
 

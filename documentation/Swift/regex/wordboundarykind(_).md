@@ -21,7 +21,7 @@ Returns a regular expression that uses the specified word boundary algorithm.
 func wordBoundaryKind(_ wordBoundaryKind: RegexWordBoundaryKind) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 

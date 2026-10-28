@@ -19,7 +19,7 @@ static let extensionIdentifier: VTExtensionPropertiesKey
 extern VTExtensionPropertiesKey const kVTExtensionProperties_ExtensionIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFStringRef` value with the extension identifier, corresponding to the ClassImplementationID value from the EXAppExtensionAttributes dictionary in the Info.plist file.
 

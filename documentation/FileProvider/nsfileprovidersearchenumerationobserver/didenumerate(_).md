@@ -20,7 +20,7 @@ func didEnumerate(_ searchResults: [any NSFileProviderSearchResult])
 - (void) didEnumerateSearchResults:(NSArray<id<NSFileProviderSearchResult>> *) searchResults;
 ```
 
-#### Discussion
+## Discussion
 
 For files stored on your server, consult search indexes on the server and use them to create an array of [`NSFileProviderSearchResult`](../nsfileprovidersearchresult.md) instances that you provide to this method.
 

@@ -24,11 +24,11 @@ var kExtAudioFileProperty_ClientChannelLayout: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_ClientChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 The audio channel layout for your application. Value is a read/write [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) struct.
 
-#### Discussion
+## Discussion
 
 This property’s value specifies the channel layout of the buffers in an `AudioBufferList` list that you pass to the [`ExtAudioFileRead(_:_:_:)`](./extaudiofileread%28_,_,_%29.md) and [`ExtAudioFileWrite(_:_:_:)`](./extaudiofilewrite%28_,_,_%29.md) functions. This layout may be different from the file’s channel layout, in which case the extended audio file object’s underlying audio converter performs remapping. This property must be set after setting the `kExtAudioFileProperty_ClientDataFormat` property, and the number of channels in the two layouts must match.
 

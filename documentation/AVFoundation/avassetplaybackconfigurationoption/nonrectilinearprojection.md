@@ -23,7 +23,7 @@ static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption
 extern AVAssetPlaybackConfigurationOption const AVAssetPlaybackConfigurationOptionNonRectilinearProjection;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may use this property to determine whether to configure a non-rectilinear projection when displaying video.
 

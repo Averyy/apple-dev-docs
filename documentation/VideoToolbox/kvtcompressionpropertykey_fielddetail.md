@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_FieldDetail: CFString
 extern CFStringRef const kVTCompressionPropertyKey_FieldDetail;
 ```
 
-#### Discussion
+## Discussion
 
 If a video encoder enforces specific field ordering, this property will be read-only ([`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md) returns [`kVTPropertyReadOnlyErr`](./kvtpropertyreadonlyerr.md)). The field detail is set on the format description for output samples, and may affect source frame scaling. `NULL` is a valid value for this property.
 

@@ -19,7 +19,7 @@ case circularSmall
 CLKComplicationFamilyCircularSmall
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the circular small complication.
 

@@ -22,7 +22,7 @@ var preventsExpensiveNetworkAccess: Bool { get set }
 @property (nonatomic, assign) BOOL preventsExpensiveNetworkAccess;
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the service only performs work for the associated configuration while the device has a non-expensive network connection (such as Wi-Fi or Ethernet); cellular connectivity is not used. Defaults to `false`.
 

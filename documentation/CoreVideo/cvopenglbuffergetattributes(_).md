@@ -21,7 +21,7 @@ func CVOpenGLBufferGetAttributes(_ openGLBuffer: CVOpenGLBuffer) -> Unmanaged<CF
 extern CFDictionaryRefCVOpenGLBufferGetAttributes(CVOpenGLBufferRef openGLBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary containing the OpenGL buffer attributes, or `NULL` if no attributes exist.
 

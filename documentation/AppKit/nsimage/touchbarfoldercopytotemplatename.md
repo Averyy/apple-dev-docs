@@ -22,7 +22,7 @@ class let touchBarFolderCopyToTemplateName: String
 extern NSImageName const NSImageNameTouchBarFolderCopyToTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for copy to folder](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825114@2x.png)
 

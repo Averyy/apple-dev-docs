@@ -23,7 +23,7 @@ static func .> (a: SIMD2<Scalar>, b: SIMD2<Scalar>) -> SIMDMask<SIMD2<Scalar>.Ma
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is greater than the corresponding lane of b, and false otherwise.
 

@@ -21,7 +21,7 @@ Executes an application-defined function only once for the lifetime of an applic
 extern void dispatch_once_f(dispatch_once_t *predicate, void *context, dispatch_function_t function);
 ```
 
-#### Discussion
+## Discussion
 
 This function is useful for initialization of global data (singletons) in an application. Always call this function before using or testing any variables that are initialized by the function.
 

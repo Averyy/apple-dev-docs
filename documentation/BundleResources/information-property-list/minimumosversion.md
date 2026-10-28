@@ -22,7 +22,7 @@ The minimum version of the operating system required for the app to run in iOS, 
 
 - [Managing your app’s information property list values](../managing-your-app-s-information-property-list.md)
 
-#### Discussion
+## Discussion
 
 The App Store uses this key to indicate the OS releases on which your app can run.
 

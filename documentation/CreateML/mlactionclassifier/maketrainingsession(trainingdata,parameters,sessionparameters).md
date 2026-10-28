@@ -15,7 +15,7 @@ Creates an asynchronous training session for an action classifier.
 static func makeTrainingSession(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters = .init(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLTrainingSession<MLActionClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the action classifier training session.
 

@@ -25,11 +25,11 @@ func CFStringGetCharacterAtIndex(_ theString: CFString!, _ idx: CFIndex) -> UniC
 extern UniChar CFStringGetCharacterAtIndex(CFStringRef theString, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 A Unicode character.
 
-#### Discussion
+## Discussion
 
 This function is typically called in a loop to fetch the Unicode characters of a string in sequence or to fetch a character at a known position (first or last, for example). Using it in a loop can be inefficient, especially with longer strings, so consider the [`CFStringGetCharacters(_:_:_:)`](./cfstringgetcharacters%28_,_,_%29.md) function or the in-line buffer functions ([`CFStringInitInlineBuffer(_:_:_:)`](./cfstringinitinlinebuffer%28_,_,_%29.md) and [`CFStringGetCharacterFromInlineBuffer(_:_:)`](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md)) as alternatives.
 

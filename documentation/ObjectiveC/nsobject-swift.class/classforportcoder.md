@@ -16,7 +16,7 @@ Class to substitute for the receiver in distribution encoding.
 @property (readonly) Class classForPortCoder;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows specialized behavior for distributed objects—override [`classForCoder`](./classforcoder.md) to add general coding behavior.
 

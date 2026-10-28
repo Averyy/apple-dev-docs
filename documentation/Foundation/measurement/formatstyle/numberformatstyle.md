@@ -21,7 +21,7 @@ The formatting of the measurement value.
 var numberFormatStyle: FloatingPointFormatStyle<Double>?
 ```
 
-#### Discussion
+## Discussion
 
 The `numberFormat` property specifies the formatting of the measurement value. You can customize the precision, grouping, and rounding mode of the measurement by creating a numeric number format style.
 

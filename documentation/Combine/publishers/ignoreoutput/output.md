@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Never
 ```
 
-#### Discussion
+## Discussion
 
 This publisher never produces elements.
 

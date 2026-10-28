@@ -16,7 +16,7 @@ If the sash should include a blur over the background.
 @preconcurrency class var wantsSashBlur: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `false`
 

@@ -21,11 +21,11 @@ Resumes a previously-paused download and delivers the URL of the saved file asyn
 func download(resumeFrom resumeData: Data, delegate: (any URLSessionTaskDelegate)? = nil) async throws -> (URL, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronously-delivered tuple that contains the location of the downloaded file as a URL, and a [`URLResponse`](../urlresponse.md).
 
-#### Discussion
+## Discussion
 
 Your app can obtain a `resumeData` object in two ways:
 

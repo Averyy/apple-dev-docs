@@ -23,7 +23,7 @@ func batches(ofSize size: Int, dropsLastPartialBatch: Bool) -> AugmentationSeque
 
 Available when `Base` conforms to `Sequence`, `RandomTransformer` conforms to `RandomTransformer`, `RandomNumberGenerator` conforms to `RandomNumberGenerator`, `Base.Element` is `AnnotatedFeature<RandomTransformer.Input, Annotation>`, and `RandomTransformer.Input` is `RandomTransformer.Output`.
 
-#### Return Value
+## Return Value
 
 An async sequence of batches.
 

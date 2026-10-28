@@ -5,7 +5,7 @@
 
 Add a table to your article that displays JSON data in rows and columns.
 
-#### Overview
+## Overview
 
 To add a table with JSON-formatted data, add a component with the role property set to `datatable`. Set up your table by providing an array of data descriptors that communicate the following:
 

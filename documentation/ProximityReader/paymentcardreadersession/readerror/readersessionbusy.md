@@ -17,7 +17,7 @@ The reader is busy with another session.
 case readerSessionBusy
 ```
 
-#### Discussion
+## Discussion
 
 The Tap to Pay on iPhone sheet is already displayed on screen.
 

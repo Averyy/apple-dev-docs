@@ -16,11 +16,11 @@ Transitions the video to a different experience.
 @MainActor final func transition(to toExperience: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult
 ```
 
-#### Return Value
+## Return Value
 
 A transition result.
 
-#### Discussion
+## Discussion
 
 Call this method to transition to a different experience such as [`AVExperienceController.Experience.expanded`](./experience-swift.enum/expanded.md). When you initiate a transition, the system calls the experience controller’s delegate methods so your app can respond to experience changes.
 

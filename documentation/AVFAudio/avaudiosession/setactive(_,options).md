@@ -24,7 +24,7 @@ func setActive(_ active: Bool, options: AVAudioSession.SetActiveOptions = []) th
 - (BOOL) setActive:(BOOL) active withOptions:(AVAudioSessionSetActiveOptions) options error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Your app may activate a session with category [`playback`](./category-swift.struct/playback.md) when another app is hosting a call, for example to start a `SharePlay` activity. However, your app isn’t permitted to capture the microphone of the active call.
 

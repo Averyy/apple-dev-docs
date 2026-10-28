@@ -21,7 +21,7 @@ Creates an array from the given array literal.
 init(arrayLiteral elements: Element...)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is used by the compiler when you use an array literal. Instead, create a new array by using an array literal as its value. To do this, enclose a comma-separated list of values in square brackets.
 

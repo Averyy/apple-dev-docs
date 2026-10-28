@@ -12,11 +12,11 @@ virtual OSObject * getObject(
  unsigned intindex) const;
 ```
 
-#### Return Value
+## Return Value
 
 The object stored at `index`, or `NULL` if `index` lies past the end of the array.
 
-#### Overview
+## Overview
 
 The returned object will be released if removed from the array; if you plan to store the reference, you should call retain on that object.
 

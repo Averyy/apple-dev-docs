@@ -21,7 +21,7 @@ Creates a type-erased value that wraps the specified layout.
 init<L>(_ layout: L) where L : Layout
 ```
 
-#### Discussion
+## Discussion
 
 You can switch between type-erased layouts without losing the state of the subviews.
 

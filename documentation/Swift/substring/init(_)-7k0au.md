@@ -21,7 +21,7 @@ Creates a Substring having the given content.
 init(_ content: Substring.UnicodeScalarView)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

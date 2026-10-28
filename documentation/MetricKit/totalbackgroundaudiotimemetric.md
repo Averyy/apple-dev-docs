@@ -16,7 +16,7 @@ A metric that measures the total time the app spent in the background playing au
 struct TotalBackgroundAudioTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalBackgroundAudioTime(_:)`](./metricresult/totalbackgroundaudiotime%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 

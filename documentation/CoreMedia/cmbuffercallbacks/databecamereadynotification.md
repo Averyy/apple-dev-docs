@@ -25,7 +25,7 @@ var dataBecameReadyNotification: Unmanaged<CFString>?
 CFStringRef dataBecameReadyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This may be `NULL` to prevent the queue from listening for it.
 

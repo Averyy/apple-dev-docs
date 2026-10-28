@@ -25,7 +25,7 @@ var isNotifying: Bool { get }
 @property (readonly) BOOL isNotifying;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if you enabled notifications or indications for the characteristic by successfully calling the [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md) method of the [`CBPeripheral`](../cbperipheral.md) class. In this case, the peripheral updates its connected central that whenever the characteristic’s value changes.
 

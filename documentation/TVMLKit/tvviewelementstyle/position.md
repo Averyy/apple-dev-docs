@@ -21,7 +21,7 @@ var position: TVElementPosition { get }
 @property (nonatomic, readonly) TVElementPosition position;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`TVElementPosition`](../tvelementposition.md).
 

@@ -26,11 +26,11 @@ func beginContentAccess() -> Bool
 - (BOOL) beginContentAccess;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the discardable contents are still available and have now been successfully accessed; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Call this method if the object’s memory is needed or is about to be used. This method increments the counter variable, thus protecting the object’s memory from possibly being discarded. The implementing class may decide that this method will try to recreate the contents if they have been discarded and return YES if the re-creation was successful. Implementors of this protocol should raise exceptions if the `NSDiscardableContent` objects are used when the `beginContentAccess` method has not been called on them.
 

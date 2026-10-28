@@ -15,11 +15,11 @@ Returns the color format at the specified index in the layer capabilities.
 MTLPixelFormat cp_layer_renderer_capabilities_supported_color_format(cp_layer_renderer_capabilities_t layer_capabilities, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The color format at the specified index.
 
-#### Discussion
+## Discussion
 
 This function tells you which pixel arrangements and characteristics the layer supports for its color textures.
 

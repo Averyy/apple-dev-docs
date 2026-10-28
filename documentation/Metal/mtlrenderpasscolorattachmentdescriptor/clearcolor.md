@@ -24,7 +24,7 @@ var clearColor: MTLClearColor { get set }
 @property (nonatomic) MTLClearColor clearColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`loadAction`](../mtlrenderpassattachmentdescriptor/loadaction.md) property of the attachment is set to [`MTLLoadAction.clear`](../mtlloadaction/clear.md), then at the start of a render pass, the GPU fills the texture with the value stored in the [`clearColor`](./clearcolor.md) property. Otherwise, the GPU ignores the [`clearColor`](./clearcolor.md) property.
 

@@ -17,11 +17,11 @@ Get the free cache limit.
 static var cacheLimit: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If using more than the given limit, free memory will be reclaimed from the cache on the next allocation. The cache limit defaults to the memory limit.
 
-##### See Also
+### See Also
 
 - [`cacheLimit`](../memory/cachelimit.md)
 

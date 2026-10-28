@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the cell is enabled or [`false`](../../Swift/false.md) when it is disabled. The text of disabled cells is gray. If a cell is disabled, it cannot be highlighted, does not support mouse tracking (and thus cannot participate in target/action functionality), and cannot be edited. However, you can still alter many attributes of a disabled cell programmatically. (The [`state`](./state.md) property, for instance, still works.)
 

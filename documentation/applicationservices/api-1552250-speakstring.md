@@ -15,11 +15,11 @@ Begins speaking a text string.
 OSErr SpeakString(ConstStr255Param textToBeSpoken);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SpeakString` functionattempts to speak the Pascal-style text string contained in the string `textToBeSpoken`.Speech is produced asynchronously using the default system voice.When an application calls this function, the Speech Synthesis Managermakes a copy of the passed string and creates any structures requiredto speak it. As soon as speaking has begun, control is returnedto the application. The synthesized speech is generated asynchronously tothe application so that normal processing can continue while thetext is being spoken. No further interaction with the Speech SynthesisManager is required at this point, and the application is free torelease the memory that the original string occupied.
 

@@ -21,7 +21,7 @@ The preferred filename extension for the type.
 var preferredFilenameExtension: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If available, the preferred (first available) tag of class [`filenameExtension`](../uttagclass/filenameextension.md).
 

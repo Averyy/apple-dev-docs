@@ -15,11 +15,11 @@ Defines how this ad group competes in auctions, including bid type, optimization
 object AdGroup.BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 The `bidStrategy` field ties this ad group’s bidding mechanics to its optimization goal, determining how Apple Ads evaluates the ad group’s bids in auctions. The `bidStrategyType` and `bidStrategyGoal` fields must be sent together and match one of these pairings: `MANUAL_CPT`↔`TAP`, `MANUAL_CPM`↔`IMPRESSION`, `MAX_CONVERSIONS`↔`INSTALL`, `MAX_ENGAGEMENTS`↔`TAP`.
 
-##### Example
+### Example
 
 ```json
 {

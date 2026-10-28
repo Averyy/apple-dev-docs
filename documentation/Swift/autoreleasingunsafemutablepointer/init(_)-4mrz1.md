@@ -21,7 +21,7 @@ Explicit construction from an UnsafeMutablePointer.
 init<U>(_ from: UnsafeMutablePointer<U>)
 ```
 
-#### Discussion
+## Discussion
 
 This is inherently unsafe; UnsafeMutablePointer assumes the referenced memory has +1 strong ownership semantics, whereas AutoreleasingUnsafeMutablePointer implies +0 semantics.
 

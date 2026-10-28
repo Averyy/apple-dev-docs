@@ -19,7 +19,7 @@ var keyEquivalent: String { get }
 @property (copy, readonly) NSString * keyEquivalent;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this property and return a string with a valid character for the key equivalent. The default implementation of this property returns an empty string.
 

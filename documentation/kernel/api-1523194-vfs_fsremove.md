@@ -15,11 +15,11 @@ Unregister a filesystem with VFS.
 int vfs_fsremove(vfstable_t handle);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 
-#### Discussion
+## Discussion
 
 Typically called by a filesystem Kernel Extension when it is unloaded.
 

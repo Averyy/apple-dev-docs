@@ -21,7 +21,7 @@ Registers a persistent store subclass using the specified store type.
 class func registerStoreClass(_ storeClass: AnyClass?, type: NSPersistentStore.StoreType)
 ```
 
-#### Discussion
+## Discussion
 
 You must register the subclass before you load instances of it into the persistent store coordinator. To unregister a subclass for a specific store type, use `nil` for `storeClass`.
 

@@ -19,7 +19,7 @@ var domDocument: DOMDocument! { get }
 @property (nonatomic, strong, readonly) DOMDocument * DOMDocument;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the receiver doesn’t have a DOM document; for example, if it’s a standalone image.
 

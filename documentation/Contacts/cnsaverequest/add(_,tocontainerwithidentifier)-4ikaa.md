@@ -23,7 +23,7 @@ func add(_ group: CNMutableGroup, toContainerWithIdentifier identifier: String?)
 - (void) addGroup:(CNMutableGroup *) group toContainerWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides any previously made delete request for the group.
 

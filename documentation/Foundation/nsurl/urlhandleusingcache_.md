@@ -15,15 +15,15 @@ Returns a URL handle to service the receiver.
 - (NSURLHandle *) URLHandleUsingCache:(BOOL) shouldUseCache;
 ```
 
-#### Return Value
+## Return Value
 
 A URL handle to service the receiver.
 
-#### Discussion
+## Discussion
 
 Sophisticated clients use the URL handle directly for additional control.
 
-##### Special Considerations
+### Special Considerations
 
 Use the [`URLSession`](../urlsession.md) or [`NSURLConnection`](../nsurlconnection.md) classes for loading content from remote URLs.
 

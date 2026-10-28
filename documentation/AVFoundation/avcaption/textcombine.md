@@ -22,7 +22,7 @@ enum TextCombine
 enum AVCaptionTextCombine : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Text combine is a special rendering policy that combines multiple characters into one unit and presents it in upright position in a vertical text flow. This presentation achieves a horizontal-in-vertical layout (or Tate-Chu-Yoko layout), which lets the caption render a horizontal text string in vertical text.
 

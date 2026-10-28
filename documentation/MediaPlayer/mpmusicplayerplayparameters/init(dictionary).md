@@ -23,11 +23,11 @@ init?(dictionary: [String : Any])
 - (instancetype) initWithDictionary:(NSDictionary<NSString *,id> *) dictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A new play parameters object consisting of the information retrieved from MusicKit.
 
-#### Discussion
+## Discussion
 
 Create a new `MPMusicPlayerPlayParameters` object using the JSON information returned from a MusicKit query.
 

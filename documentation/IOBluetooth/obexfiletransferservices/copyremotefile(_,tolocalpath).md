@@ -19,11 +19,11 @@ func copyRemoteFile(_ inRemoteFileName: String!, toLocalPath inLocalPathAndName:
 - (OBEXError) copyRemoteFile:(NSString *) inRemoteFileName toLocalPath:(NSString *) inLocalPathAndName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError. initially. Further results returned through the fileTransferServicesGetComplete: and fileTransferServicesGetProgress: delegate methods if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘cp remotePath/remoteFileName localPathAndName’.
 

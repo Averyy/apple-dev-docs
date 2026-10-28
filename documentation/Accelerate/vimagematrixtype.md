@@ -25,7 +25,7 @@ typealias vImageMatrixType = UInt32
 typedef uint32_t vImageMatrixType;
 ```
 
-#### Discussion
+## Discussion
 
 Currently, only one matrix type is available. Additional formats are reserved for future expansion.
 

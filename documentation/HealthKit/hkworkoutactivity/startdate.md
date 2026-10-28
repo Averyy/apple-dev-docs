@@ -24,7 +24,7 @@ var startDate: Date { get }
 @property (copy, readonly) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`endDate`](./enddate.md) property is non-`nil`, the activity’s start date must be equal to or earlier than its end date.
 

@@ -21,7 +21,7 @@ Creates a loader backed by the given async sequence.
 init(stream: some Sendable & AsyncSequence<Sample, any Error>)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let loader = StreamLoader(stream: AsyncThrowingStream { continuation in

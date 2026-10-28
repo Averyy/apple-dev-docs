@@ -21,7 +21,7 @@ Creates a table header intent with the provided information.
 + (NSPresentationIntent *) tableHeaderRowIntentWithIdentity:(NSInteger) identity nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindTableHeaderRow`](../nspresentationintentkind/nspresentationintentkindtableheaderrow.md).
 

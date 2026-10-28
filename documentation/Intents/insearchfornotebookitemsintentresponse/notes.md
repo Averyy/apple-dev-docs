@@ -33,7 +33,7 @@ var notes: [INNote]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INNote *> * notes;
 ```
 
-#### Discussion
+## Discussion
 
 When searching for items of type [`INNotebookItemType.note`](../innotebookitemtype/note.md), put the results of your search in this property. Assign a value to the [`sortType`](./sorttype.md) property that indicates how you sorted the results.
 

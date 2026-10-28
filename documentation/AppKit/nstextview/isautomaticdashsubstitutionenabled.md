@@ -19,7 +19,7 @@ var isAutomaticDashSubstitutionEnabled: Bool { get set }
 @property (getter=isAutomaticDashSubstitutionEnabled) BOOL automaticDashSubstitutionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if it is enabled, otherwise [`false`](../../Swift/false.md).
 

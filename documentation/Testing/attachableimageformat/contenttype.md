@@ -16,7 +16,7 @@ The content type corresponding to this image format.
 var contentType: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, if this image format equals [`png`](./png.md), the value of this property equals [UTType.png](../../UniformTypeIdentifiers/uttype-swift.struct/png.md).
 

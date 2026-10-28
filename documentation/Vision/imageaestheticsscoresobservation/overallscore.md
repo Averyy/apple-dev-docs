@@ -21,7 +21,7 @@ A score which incorporates aesthetic score, failure score, and utility labels.
 let overallScore: Float
 ```
 
-#### Discussion
+## Discussion
 
 This returns a value within the range of `-1` and `1`, where `-1` is least desirable and `1` is most desirable.
 

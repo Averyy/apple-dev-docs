@@ -19,7 +19,7 @@ Creates a user account object with a URL for account update requests.
 - (instancetype) initWithAccountType:(VSUserAccountType) accountType updateURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A user account object with a URL for account update requests.
 

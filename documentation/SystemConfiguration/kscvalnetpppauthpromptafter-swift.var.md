@@ -19,7 +19,7 @@ let kSCValNetPPPAuthPromptAfter: CFString
 extern CFStringRef const kSCValNetPPPAuthPromptAfter;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetPPPAuthPrompt`](./kscpropnetpppauthprompt-swift.var.md) key.
 

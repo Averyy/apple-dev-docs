@@ -25,7 +25,7 @@ static let scale: SCNPhysicsShape.Option
 extern SCNPhysicsShapeOption const SCNPhysicsShapeScaleKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSValue`](../../../Foundation/nsvalue.md) object containing an [`SCNVector3`](../../scnvector3.md) structure, whose components describe the scale factor in each of the x-, y- and z-axis directions. The default value is the vector `{1.0, 1.0, 1.0}`, specifying no change of scale.
 

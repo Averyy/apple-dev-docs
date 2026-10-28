@@ -23,7 +23,7 @@ var predicateForEnablingContact: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * predicateForEnablingContact;
 ```
 
-#### Discussion
+## Discussion
 
 You can set a value for this property to determine which contact should become selectable, such as `emailAddresses.@count > 0` to enable all the contacts that have an email address to become selectable. If no predicate is set for this property, all contacts become selectable. To learn about predicate syntax, see [`NSPredicate`](../../Foundation/nspredicate.md).
 

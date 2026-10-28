@@ -23,7 +23,7 @@ var restoresFocusAfterTransition: Bool { get set }
 @property (nonatomic) BOOL restoresFocusAfterTransition;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the item that was last focused automatically becomes focused when its view controller becomes visible and focusable. For example, if an item in the view controller is focused and a second view controller is presented, the original item becomes focused again when the second view controller is dismissed. The default value of this property is [`true`](../../Swift/true.md).
 

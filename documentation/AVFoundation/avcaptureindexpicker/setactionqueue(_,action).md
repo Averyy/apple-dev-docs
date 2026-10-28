@@ -20,7 +20,7 @@ Sets the action to perform on the specified dispatch queue when the control’s 
 func setActionQueue(_ actionQueue: DispatchQueue, action: @escaping (Int) -> ())
 ```
 
-#### Discussion
+## Discussion
 
 If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](../../Swift/serialexecutor/issameexclusiveexecutioncontext%28other%29.md)).
 

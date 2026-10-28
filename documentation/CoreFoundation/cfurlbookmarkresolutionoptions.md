@@ -25,7 +25,7 @@ struct CFURLBookmarkResolutionOptions
 enum CFURLBookmarkResolutionOptions : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 See [Bookmark Data Resolution Options](./bookmark-data-resolution-options.md) for possible values.
 

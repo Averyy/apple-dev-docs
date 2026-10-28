@@ -19,7 +19,7 @@ The container identifiers for the iCloud production environment.
 - **Name**: `com.apple.developer.icloud-container-identifiers` (iCloud Container Identifiers)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the iCloud capability in Xcode.
 

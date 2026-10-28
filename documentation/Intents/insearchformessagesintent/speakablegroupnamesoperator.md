@@ -31,7 +31,7 @@ var speakableGroupNamesOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator speakableGroupNamesOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the groups listed in the [`speakableGroupNames`](./speakablegroupnames.md) property.
 

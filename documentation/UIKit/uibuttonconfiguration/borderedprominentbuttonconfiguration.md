@@ -19,11 +19,11 @@ Creates a configuration for a button that has a prominent, bordered style.
 + (instancetype) borderedProminentButtonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 
-#### Discussion
+## Discussion
 
 This style provides an alternative name for the [`filledButtonConfiguration`](./filledbuttonconfiguration.md) style.
 

@@ -19,11 +19,11 @@ convenience init(identifier: NSStoryboardSegue.Identifier, source sourceControll
 + (instancetype) segueWithIdentifier:(NSStoryboardSegueIdentifier) identifier source:(id) sourceController destination:(id) destinationController performHandler:(void (^)()) performHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized storyboard segue and code block, ready to be performed.
 
-#### Discussion
+## Discussion
 
 You can use this method to customize a storyboard segue in lieu of creating a subclass.
 

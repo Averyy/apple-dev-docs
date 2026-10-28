@@ -16,7 +16,7 @@ Specify which contexts are allowed to execute the callback function when using `
 typedef UInt8 MPRemoteContext;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used to support older versions of Mac OS and are ignored in macOS.
 

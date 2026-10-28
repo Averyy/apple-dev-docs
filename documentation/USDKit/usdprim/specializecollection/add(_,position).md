@@ -20,7 +20,7 @@ Adds a specializes arc to the prim.
 func add(_ primPath: USDLayer.Path, position: USDPrim.ListPosition = .backOfPrependList) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specializes cannot be added.
 

@@ -24,7 +24,7 @@ var shadowOpacity: Float { get set }
 @property float shadowOpacity;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property must be in the range `0.0` (transparent) to `1.0` (opaque). The default value of this property is `0.0`.
 

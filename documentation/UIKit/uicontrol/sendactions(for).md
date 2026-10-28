@@ -23,7 +23,7 @@ func sendActions(for controlEvents: UIControl.Event)
 - (void) sendActionsForControlEvents:(UIControlEvents) controlEvents;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method when you want the control to perform the actions associated with the specified events. This method iterates over the control’s registered targets and action methods and calls the [`sendAction(_:to:for:)`](./sendaction%28_,to,for%29.md) method for each one that is associated with an event in the `controlEvents` parameter.
 

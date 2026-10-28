@@ -19,7 +19,7 @@ class NSSecureTextField
 @interface NSSecureTextField : NSTextField
 ```
 
-#### Overview
+## Overview
 
 A secure text field is suitable for use as a password-entry object or for any item in which the text value must be kept secret. [`NSSecureTextField`](./nssecuretextfield.md) uses [`NSSecureTextFieldCell`](./nssecuretextfieldcell.md) to implement its user interface.
 

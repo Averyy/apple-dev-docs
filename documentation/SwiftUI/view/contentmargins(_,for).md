@@ -22,7 +22,7 @@ nonisolated
 func contentMargins(_ length: CGFloat, for placement: ContentMarginPlacement = .automatic) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to customize the content margins of different kinds of views. For example, you can use this modifier to customize the margins of scrollable views like [`ScrollView`](../scrollview.md). In the following example, the scroll view will automatically inset its content by the safe area plus an additional 20 points on the leading and trailing edge.
 

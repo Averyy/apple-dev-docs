@@ -33,7 +33,7 @@ var callType: INCallRecordType { get }
 @property (atomic, assign, readonly) INCallRecordType callType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit your search to the specified type of calls. If the value of this property is [`INCallRecordType.unknown`](../incallrecordtype/unknown.md), search all call types.
 

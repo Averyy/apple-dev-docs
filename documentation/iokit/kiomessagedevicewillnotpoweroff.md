@@ -17,7 +17,7 @@
 #define kIOMessageDeviceWillNotPowerOff
 ```
 
-#### Discussion
+## Discussion
 
 This IOKit interest notification is largely unused; it's not very interesting.
 

@@ -15,11 +15,11 @@ Returns an `NSOpenGLPixelBuffer` object initialized with the specified parameter
 - (instancetype) initWithTextureTarget:(GLenum) target textureInternalFormat:(GLenum) format textureMaxMipMapLevel:(GLint) maxLevel pixelsWide:(GLsizei) pixelsWide pixelsHigh:(GLsizei) pixelsHigh;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSOpenGLPixelBuffer` object or `nil` if the initialization failed. Initialization can fail if there is inconsistency among the parameter values. See the OpenGL documentation for `glTexImage2D` for more information.
 
-#### Discussion
+## Discussion
 
 The value you pass to the `target` parameter defines several other constraints that are then applied to the remaining parameters. The list below gives the values you can pass to `target` and the additional constraints.
 

@@ -25,7 +25,7 @@ var currentModel: NSManagedObjectModelReference { get }
 @property (strong, readonly) NSManagedObjectModelReference * currentModel;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data sets this property to the `currentModel` parameter you specify when creating the migration stage.
 

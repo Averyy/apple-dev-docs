@@ -27,7 +27,7 @@ var shareParticipantFetchedBlock: ((CKShare.Participant) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^shareParticipantFetchedBlock)(CKShareParticipant *participant);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

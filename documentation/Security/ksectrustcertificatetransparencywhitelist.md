@@ -25,7 +25,7 @@ let kSecTrustCertificateTransparencyWhiteList: CFString
 extern CFStringRef const kSecTrustCertificateTransparencyWhiteList;
 ```
 
-#### Discussion
+## Discussion
 
 When the key is present and the value set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), it indicates the chain is Extended Validation (EV) and not Certificate Transparency (CT) qualified, but is nonetheless included on the allow list.
 

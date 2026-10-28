@@ -24,7 +24,7 @@ A type that produces view previews in Xcode.
 @preconcurrency protocol PreviewProvider : _PreviewProvider
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: You can use this protocol to define a preview manually, but you typically use a preview macro like [`Preview(_:body:)`](./preview%28_,body%29.md) instead.
 

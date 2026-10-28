@@ -25,11 +25,11 @@ func childContaining(_ source: UIStoryboardUnwindSegueSource) -> UIViewControlle
 - (UIViewController *) childViewControllerContainingSegueSource:(UIStoryboardUnwindSegueSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that contains the segue source.
 
-#### Discussion
+## Discussion
 
 Container view controllers call this method to identify the child view controller that is the source of the unwind segue. Typically, you call this method from your [`allowedChildrenForUnwinding(from:)`](./allowedchildrenforunwinding%28from%29.md) method so that you can remove the corresponding view controller from the returned list of children.
 

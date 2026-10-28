@@ -19,7 +19,7 @@ The Near Field Communication data formats an app can read.
 
 - `TAG`: Allows read and write access to a tag using [`NFCTagReaderSession`](../../CoreNFC/nfctagreadersession.md).
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Near Field Communication Tag Reading capability in Xcode.
 

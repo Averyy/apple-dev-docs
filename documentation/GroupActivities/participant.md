@@ -25,7 +25,7 @@ struct Participant
 - [Configure your visionOS app for sharing with people nearby](./configure-your-app-for-sharing-with-people-nearby.md)
 - [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md)
 
-#### Overview
+## Overview
 
 Use a `Participant` object to differentiate among users in a session. A participant object doesn’t contain any sensitive data about the user, but provides a unique identifier to distinguish the user while the session is active.
 

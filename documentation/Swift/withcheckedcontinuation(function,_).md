@@ -21,11 +21,11 @@ Invokes the passed in closure with a checked continuation for the current task.
 @abi(nonisolated(nonsending) func withCheckedContinuationNonisolatedNonsending<T>(function: String, _ body: (CheckedContinuation<T, Never>) -> Void) async -> sending T) nonisolated(nonsending) func withCheckedContinuation<T>(function: String = #function, _ body: (CheckedContinuation<T, Never>) -> Void) async -> sending T
 ```
 
-#### Return Value
+## Return Value
 
 The value continuation is resumed with.
 
-#### Discussion
+## Discussion
 
 The body of the closure executes synchronously on the calling task, and once it returns the calling task is suspended. It is possible to immediately resume the task, or escape the continuation in order to complete it afterwards, which will then resume the suspended task.
 

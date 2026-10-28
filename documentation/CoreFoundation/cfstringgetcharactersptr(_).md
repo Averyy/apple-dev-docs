@@ -25,11 +25,11 @@ func CFStringGetCharactersPtr(_ theString: CFString!) -> UnsafePointer<UniChar>!
 extern const UniChar *CFStringGetCharactersPtr(CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a buffer of Unicode character, or `NULL` if the internal storage of `theString` does not allow this to be returned efficiently.
 
-#### Discussion
+## Discussion
 
 This function either returns the requested pointer immediately, with no memory allocations and no copying, or it returns `NULL`. If the latter is the result, call an alternative function such as [`CFStringGetCharacters(_:_:_:)`](./cfstringgetcharacters%28_,_,_%29.md) function to extract the characters.
 

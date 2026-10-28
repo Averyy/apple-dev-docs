@@ -24,7 +24,7 @@ init(destinationAddress address: String, networkPrefixLength: NSNumber)
 - (instancetype) initWithDestinationAddress:(NSString *) address networkPrefixLength:(NSNumber *) networkPrefixLength;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NEIPv6Route` object.
 

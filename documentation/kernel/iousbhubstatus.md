@@ -17,7 +17,7 @@ typedef struct IOUSBHubStatus {
 } IOUSBHubStatus;
 ```
 
-#### Overview
+## Overview
 
 Use this structure when obtaining the port status and change flags with [`GetPortStatus`](./iousbhostdevice/api-3294636-getportstatus.md).
 

@@ -17,7 +17,7 @@ A person’s login information.
 struct UserLogin
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses the login information for PEAP, EAP-TTLS, and EAP-FAST. It’s optional for EAP-TLS.
 

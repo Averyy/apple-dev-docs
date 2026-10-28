@@ -26,7 +26,7 @@ set image(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to one of the following:
 

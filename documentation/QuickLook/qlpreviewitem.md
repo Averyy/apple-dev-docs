@@ -20,7 +20,7 @@ protocol QLPreviewItem : NSObjectProtocol
 @protocol QLPreviewItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The QLPreviewItem protocol declares the methods that a QLPreviewController instance uses to access the contents of a given item.
 

@@ -18,11 +18,11 @@ Expands to a bundle instance that’s most likely to contain resources for the c
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro bundle() -> Bundle
+@freestanding(expression)
+macro bundle() -> Bundle
 ```
 
-#### Overview
+## Overview
 
 Use the `#bundle` macro when you want to load resources like localized strings, images, or other items in a bundle regardless of whether your code executes in an app, a framework, or a Swift package. When invoked from an app, app extension, framework, or similar context, the expanded macro instantiates the bundle associated with that target. For code in a Swift package target, the macro provides the resource bundle associated with that target.
 

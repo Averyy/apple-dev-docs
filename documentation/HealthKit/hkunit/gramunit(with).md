@@ -24,11 +24,11 @@ class func gramUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) gramUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring mass based on grams and the given prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of grams, typically kilogram units, as shown below.
 

@@ -5,7 +5,7 @@
 
 Extend your app’s basic functionality to other parts of the system, like by adding a Widget.
 
-#### Overview
+## Overview
 
 Use SwiftUI along with [WidgetKit](../WidgetKit/WidgetKit.md) to add widgets to your app.
 

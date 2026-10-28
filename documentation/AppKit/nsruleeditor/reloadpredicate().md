@@ -19,7 +19,7 @@ func reloadPredicate()
 - (void) reloadPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 You typically invoke this method because something has changed (for example, a view’s value).
 

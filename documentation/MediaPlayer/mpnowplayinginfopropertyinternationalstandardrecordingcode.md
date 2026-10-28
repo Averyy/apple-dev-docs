@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyInternationalStandardRecordingCode: String
 extern NSString * const MPNowPlayingInfoPropertyInternationalStandardRecordingCode;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a string that represents the International Standard Recording Code (ISRC) for a song, if one is available. System services that leverage Now Playing data, such as Music Haptics, use this value. For more information, read [Music Haptics](../MediaAccessibility/music-haptics.md).
 

@@ -19,7 +19,7 @@ func xpc_transaction_begin()
 extern void xpc_transaction_begin();
 ```
 
-#### Discussion
+## Discussion
 
 A service with no outstanding transactions may automatically exit due to inactivity as determined by the system.
 

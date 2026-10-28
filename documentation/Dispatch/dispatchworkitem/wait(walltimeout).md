@@ -21,11 +21,11 @@ Causes the caller to wait synchronously until the dispatch work item finishes ex
 func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult
 ```
 
-#### Return Value
+## Return Value
 
 [`DispatchTimeoutResult.success`](../dispatchtimeoutresult/success.md) if the method returned because the work item finished executing, or [`DispatchTimeoutResult.timedOut`](../dispatchtimeoutresult/timedout.md) if the timeout value was reached.
 
-#### Discussion
+## Discussion
 
 This method returns immediately if the current work item has already finished executing.
 

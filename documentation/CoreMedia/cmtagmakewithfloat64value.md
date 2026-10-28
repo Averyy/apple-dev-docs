@@ -21,7 +21,7 @@ Creates a new tag with a given category and a 64-bit floating point value.
 extern CMTag CMTagMakeWithFloat64Value(CMTagCategory category, Float64 value);
 ```
 
-#### Return Value
+## Return Value
 
 A new tag with the assigned category containing a 64-bit floating point number, or [`kCMTagInvalid`](./kcmtaginvalid.md) if no tag could be created.
 

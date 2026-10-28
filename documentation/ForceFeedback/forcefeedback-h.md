@@ -5,11 +5,11 @@
 
 Public Interfaces to the Force Feedback implementation in macOS.
 
-#### Overview
+## Overview
 
 The Force Feedback API allows developers to control Force Feedback devices attached to the system. It is a distilled version of the Force Feedback functionality found in Microsoft’s DirectInput API. Developers familiar with that API should find this API to be similar.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <CoreFoundation/CFPlugInCOM.h>

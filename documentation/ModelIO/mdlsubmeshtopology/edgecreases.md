@@ -24,7 +24,7 @@ var edgeCreases: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> edgeCreases;
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in this buffer corresponds to a pair of entries in the [`edgeCreaseIndices`](./edgecreaseindices.md) buffer that identifies a crease. The value of each entry determines the amount of smoothing to apply to the crease during surface subdivision—a value of zero completely smooths out the edge, and a value of one leaves the edge completely sharp.
 

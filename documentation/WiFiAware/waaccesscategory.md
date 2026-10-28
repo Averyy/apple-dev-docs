@@ -17,7 +17,7 @@ The underling quality-of-service (QoS) the Wi-Fi layer uses to transmit data pac
 enum WAAccessCategory
 ```
 
-#### Overview
+## Overview
 
 A given `NetworkConnection` is bound to a single access category at the Wi-Fi layer, based on the configuration of `NWParameter`’s  `serviceClass` property. This allows your app to specify how the Wi-Fi layer transmits the `NetworkConnection`’s data packets, selecting the performance characteristics that are relevant to the data flow.
 

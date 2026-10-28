@@ -19,7 +19,7 @@ func reconfigure(configuration: VZGraphicsDisplayConfiguration) throws
 - (BOOL) reconfigureWithConfiguration:(VZGraphicsDisplayConfiguration *) configuration error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The type of configuration you pass to this method needs to match the corresponding type that you used to create this display.
 

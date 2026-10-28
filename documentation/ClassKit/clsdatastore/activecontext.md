@@ -23,7 +23,7 @@ var activeContext: CLSContext? { get }
 @property (nonatomic, strong, readonly, nullable) CLSContext * activeContext;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if there is no currently active context.
 

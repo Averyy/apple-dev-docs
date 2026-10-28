@@ -25,7 +25,7 @@ typealias CMTimeEpoch = Int64
 typedef int64_t CMTimeEpoch;
 ```
 
-#### Discussion
+## Discussion
 
 The epoch is typically `0`, but you can use a different value — for example to denote a particular iteration of a loop.
 

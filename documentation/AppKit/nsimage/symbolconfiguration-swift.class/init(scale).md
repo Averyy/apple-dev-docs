@@ -19,7 +19,7 @@ convenience init(scale: NSImage.SymbolScale)
 + (instancetype) configurationWithScale:(NSImageSymbolScale) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

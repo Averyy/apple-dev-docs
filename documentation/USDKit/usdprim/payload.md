@@ -20,7 +20,7 @@ A payload to an external asset.
 struct Payload
 ```
 
-#### Overview
+## Overview
 
 Payloads are similar to references but designed for deferred loading. Heavy assets like detailed geometry can be added as payloads and loaded on demand rather than at composition time.
 

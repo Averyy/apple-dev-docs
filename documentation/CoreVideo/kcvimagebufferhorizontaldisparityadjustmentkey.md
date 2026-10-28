@@ -23,7 +23,7 @@ let kCVImageBufferHorizontalDisparityAdjustmentKey: CFString
 extern CFStringRef const kCVImageBufferHorizontalDisparityAdjustmentKey;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates a relative shift of the left and right images, which changes the zero parallax plane.
 

@@ -5,7 +5,7 @@
 
 Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
 
-#### Overview
+## Overview
 
 The Core Image Kernel Language is a shading language optimized for writing custom kernels for use in apps leveraging Core Image.  You can add custom image processing routines to a Core Image pipeline.
 

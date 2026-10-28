@@ -25,7 +25,7 @@ var samplesRequiredForDecoderRefresh: Int { get }
 @property (nonatomic, readonly) NSInteger samplesRequiredForDecoderRefresh;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is 0 when the decoder doesn’t require samples for refresh or when the track doesn’t contain this information.
 

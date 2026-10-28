@@ -22,7 +22,7 @@ nonisolated
 init(angle: PlottableValue<some Plottable>, innerRadius: MarkDimension = .automatic, outerRadius: MarkDimension = .automatic, angularInset: CGFloat? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to map angular positions to a sector for each data element.
 

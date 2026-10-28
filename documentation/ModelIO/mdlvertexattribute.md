@@ -24,7 +24,7 @@ class MDLVertexAttribute
 @interface MDLVertexAttribute : NSObject
 ```
 
-#### Overview
+## Overview
 
 The vertex buffers of a [`MDLMesh`](./mdlmesh.md) object store vertex attributes—such as vertex position, surface normal vector, or texture coordinates—that define its 3D shape and other data for use in rendering. Attribute information describes the structure and layout of that data. A collection of vertex attribute objects and additional information forms a [`MDLVertexDescriptor`](./mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a mesh.
 

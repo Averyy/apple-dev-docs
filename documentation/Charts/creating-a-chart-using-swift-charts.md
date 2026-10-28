@@ -5,7 +5,7 @@
 
 Make a chart by combining chart building blocks in SwiftUI.
 
-#### Overview
+## Overview
 
 Help people understand complex data by focusing on what you want to communicate and who you’re communicating to. For example, suppose that you have a collection of colorful toy shapes:
 
@@ -23,7 +23,7 @@ You can formulate questions about this data that you’d like to answer, like wh
 
 However, in many cases, a more effective data representation is a chart. A chart allows you to communicate large amounts of information all at once. The kind of chart that you create and the way you configure the chart depend on what you want to show. To create a chart with Swift Charts, define your data and initialize a [`Chart`](./chart.md) view with marks and data properties. Then use modifiers to customize different components of the chart, like the legend, axes, and scale.
 
-##### Define the data source
+### Define the data source
 
 Think about a chart as an answer to your questions. Suppose you want to know which toy shape appears the most. Start by visualizing how many of each shape you have. To display this information with a chart, create a `ToyShape` structure that represents the information that you want to visualize:
 
@@ -47,7 +47,7 @@ var data: [ToyShape] = [
 
 In a real app, you might download this data from a network connection, or load it from a file.
 
-##### Initialize a chart view and create marks
+### Initialize a chart view and create marks
 
 Create a [`Chart`](./chart.md) view that serves as a container for the data series that you want to draw:
 
@@ -102,7 +102,7 @@ Chart {
 }
 ```
 
-##### Explore additional data properties
+### Explore additional data properties
 
 The above bar chart shows how much of each type of toy shape there are, but the earlier table separates each toy shape by color as well. A stacked bar chart can visualize not only the amount of each toy shape type, but also the distribution of colors among the shapes. Before you can plot this new information, you need to represent color in your data structure:
 
@@ -154,7 +154,7 @@ The chart now splits the bars into different parts that represent the number of 
 
 The stacked bar chart chooses colors to represent the new data, and adds a legend to indicate which color represents which kind of data.
 
-##### Customize your chart
+### Customize your chart
 
 For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](../SwiftUI/view/chartforegroundstylescale%28_%29.md) chart modifier:
 

@@ -21,7 +21,7 @@ A QUIC connection’s initial maximum number of unidirectional streams.
 var initialMaxStreamsUnidirectional: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the value of the `initial_max_stream_uni` transport parameter.
 

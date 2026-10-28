@@ -19,7 +19,7 @@ A policy that marks specialized assets as purgeable.
 static let `default`: AIModelCache.Policy
 ```
 
-#### Discussion
+## Discussion
 
 The default policy marks a specialized asset as purgeable. The system can delete it when low on storage or when its source `.aimodel` changes or you delete it.
 

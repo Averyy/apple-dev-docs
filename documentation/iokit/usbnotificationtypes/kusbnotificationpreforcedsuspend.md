@@ -14,7 +14,7 @@
 kUSBNotificationPreForcedSuspend = (1 << kUSBNotificationPreForcedSuspendBit)
 ```
 
-#### Discussion
+## Discussion
 
 A notification is sent prior to a forced suspend (e.g. system sleep).
 

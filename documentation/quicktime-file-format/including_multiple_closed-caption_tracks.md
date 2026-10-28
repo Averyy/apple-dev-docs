@@ -5,7 +5,7 @@
 
 Include multiple closed-caption tracks in a movie.
 
-#### Overview
+## Overview
 
 If a single closed caption track is included, it is recommended that the track be separate from any subtitle tracks in the movie. However, you can also include multiple closed-caption tracks in a movie. If you do, the following rules apply:
 

@@ -17,7 +17,7 @@ Element-wise inverse tangent of the ratio of two arrays.
 func atan2(_ a: MLXArray, _ b: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`atan(_:stream:)`](./atan%28_,stream%29.md)

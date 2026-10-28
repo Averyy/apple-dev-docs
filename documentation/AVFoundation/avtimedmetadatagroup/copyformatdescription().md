@@ -25,11 +25,11 @@ func copyFormatDescription() -> CMMetadataFormatDescription?
 - (CMMetadataFormatDescriptionRef) copyFormatDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`CMMetadataFormatDescription`](../../CoreMedia/cmmetadataformatdescription.md) sufficient to describe the contents of all the items referenced by the object.
 
-#### Discussion
+## Discussion
 
 The returned format description is suitable for use as the format hint parameter when creating an instance of [`AVAssetWriterInput`](../avassetwriterinput.md).
 

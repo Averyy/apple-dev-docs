@@ -23,7 +23,7 @@ func monitorKinesias(forDuration duration: TimeInterval)
 
 - [Getting movement disorder symptom data](../getting-movement-disorder-symptom-data.md)
 
-#### Discussion
+## Discussion
 
 Call this method to begin monitoring, calculating, and storing tremor and dyskinetic symptom results. The manager stores results for a period of seven days after the time of recording. You can access the results at any time within that seven-day interval, after which they expire. To retrieve these results, call the [`queryTremor(from:to:withHandler:)`](./querytremor%28from,to,withhandler%29.md) and [`queryDyskineticSymptom(from:to:withHandler:)`](./querydyskineticsymptom%28from,to,withhandler%29.md) methods.
 

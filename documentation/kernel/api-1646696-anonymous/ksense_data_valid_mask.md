@@ -13,7 +13,7 @@
 kSENSE_DATA_VALID_Mask = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Validity mask to use when checking the VALID_RESPONSE_CODE field.
 

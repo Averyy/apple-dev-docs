@@ -12,11 +12,11 @@ virtual bool hasDDCConnect(
  IOIndexconnectIndex );
 ```
 
-#### Return Value
+## Return Value
 
 True if a DDC display is detected.
 
-#### Overview
+## Overview
 
 Hardware that supports DDC/EDID display sensing should implement this method to return true if a DDC display is detected. They should also return success for the connection attribute kConnectionSupportsHLDDCSense (from getAttributeForConnection()).
 

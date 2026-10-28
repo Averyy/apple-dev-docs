@@ -23,7 +23,7 @@ struct MetricReport
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `MetricReport` is a value type that conforms to `Sendable` and `Codable`, so you can pass it across actor boundaries and serialize it with `JSONEncoder` directly.
 

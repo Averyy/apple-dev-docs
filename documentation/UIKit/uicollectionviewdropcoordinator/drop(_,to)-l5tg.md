@@ -27,11 +27,11 @@ func drop(_ dragItem: UIDragItem, to placeholder: UICollectionViewDropPlaceholde
 
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
-#### Return Value
+## Return Value
 
 The context object that you use to replace or remove the placeholder cell later. Store a reference to this object so that you can call its methods later.
 
-#### Discussion
+## Discussion
 
 Use this method to insert a temporary placeholder cell (instead of a cell backed by actual data) into the collection view. When calling this method, don’t update your data source object to account for the placeholder. The collection view manages the placeholder until you explicitly remove it using the returned context object.
 

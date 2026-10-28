@@ -17,7 +17,7 @@ An object that manages interaction with system routes.
 @interface AVSystemRouteController : NSObject
 ```
 
-#### Overview
+## Overview
 
 Important: Your app must declare support for extensions with the `MDESupportsUniversalURLPlayback` key and/or for specific protocols in the `MDESupportedProtocols` key of  the app’s `Info.plist`.
 

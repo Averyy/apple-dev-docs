@@ -23,11 +23,11 @@ func transferUserInfo(_ userInfo: [String : Any] = [:]) -> WCSessionUserInfoTran
 - (WCSessionUserInfoTransfer *) transferUserInfo:(NSDictionary<NSString *,id> *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A transfer object that you can use to monitor and cancel the operation.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to send a dictionary of data to the counterpart and ensure that it’s delivered. Dictionaries sent using this method are queued on the other device and delivered in the order in which they were sent. After a transfer begins, the transfer operation continues even if the app is suspended.
 

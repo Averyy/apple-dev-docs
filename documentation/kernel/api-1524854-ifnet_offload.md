@@ -13,11 +13,11 @@
 ifnet_offload_t ifnet_offload(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Abilities flags, see ifnet_offload_t.
 
-#### Discussion
+## Discussion
 
 Returns flags indicating which operations can be offloaded to the interface.
 

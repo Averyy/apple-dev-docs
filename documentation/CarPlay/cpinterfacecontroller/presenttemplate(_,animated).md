@@ -23,7 +23,7 @@ func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool)
 - (void) presentTemplate:(CPTemplate *) templateToPresent animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You can present only one template at a time.
 

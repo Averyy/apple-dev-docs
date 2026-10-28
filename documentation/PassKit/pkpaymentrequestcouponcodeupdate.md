@@ -23,7 +23,7 @@ class PKPaymentRequestCouponCodeUpdate
 @interface PKPaymentRequestCouponCodeUpdate : PKPaymentRequestUpdate
 ```
 
-#### Overview
+## Overview
 
 This is the handler for [`paymentAuthorizationController(_:didChangeCouponCode:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didchangecouponcode,handler%29.md) and [`paymentAuthorizationViewController(_:didChangeCouponCode:handler:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didchangecouponcode,handler%29.md).
 

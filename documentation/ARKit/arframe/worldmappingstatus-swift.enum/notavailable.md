@@ -20,7 +20,7 @@ case notAvailable
 ARWorldMappingStatusNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 When the [`worldMappingStatus`](../worldmappingstatus-swift.property.md) of the session’s [`currentFrame`](../../arsession/currentframe.md) is [`ARFrame.WorldMappingStatus.notAvailable`](./notavailable.md), the session has no internal map of the real-world space around the device, nor the scene visible to the camera. Calling [`getCurrentWorldMap(completionHandler:)`](../../arsession/getcurrentworldmap%28completionhandler%29.md) at this time results in an error.
 

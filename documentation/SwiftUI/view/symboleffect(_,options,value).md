@@ -22,11 +22,11 @@ Returns a new view with a symbol effect added to it.
 nonisolated func symbolEffect<T, U>(_ effect: T, options: SymbolEffectOptions = .default, value: U) -> some View where T : DiscreteSymbolEffect, T : SymbolEffect, U : Equatable
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the view with a symbol effect added.
 
-#### Discussion
+## Discussion
 
 The following example adds a bounce effect to two symbol images, the animation will play each time `counter` changes:
 

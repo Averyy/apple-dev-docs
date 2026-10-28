@@ -20,7 +20,7 @@ init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: 
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 If the identifier refers to an app that has an age rating beyond the maximum allowed for the device (see [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md)), pass `true` for the `requestAgeException` argument.
 

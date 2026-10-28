@@ -24,11 +24,11 @@ func AudioQueueOfflineRender(_ inAQ: AudioQueueRef, _ inTimestamp: UnsafePointer
 extern OSStatus AudioQueueOfflineRender(AudioQueueRef inAQ, const AudioTimeStamp *inTimestamp, AudioQueueBufferRef ioBuffer, UInt32 inNumberFrames);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 When you change a playback audio queue’s rendering mode to offline, using the [`AudioQueueSetOfflineRenderFormat(_:_:_:)`](./audioqueuesetofflinerenderformat%28_,_,_%29.md) function, you gain access to the rendered audio. You can then write the audio to a file, rather than have it play to external hardware such as a loudspeaker.
 

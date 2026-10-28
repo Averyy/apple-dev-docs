@@ -15,11 +15,11 @@ A DriverKit provider object that manages communications with a block storage dev
 class IOUserBlockStorageDevice;
 ```
 
-#### Overview
+## Overview
 
 Implement your driver by subclassing this class and overriding all C++ pure virtual methods.
 
-##### Specifying the Driver’s Personality Information
+### Specifying the Driver’s Personality Information
 
 When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) key of your driver extension’s `Info.plist` file with information to match your driver to the correct hardware. For this class, always include the keys and values in the following table:
 

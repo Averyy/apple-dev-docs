@@ -24,7 +24,7 @@ case uchar4Normalized_bgra
 MTLAttributeFormatUChar4Normalized_BGRA
 ```
 
-#### Discussion
+## Discussion
 
 Use this representation when manipulating normalized 32-bit integer BGRA pixel formats.
 

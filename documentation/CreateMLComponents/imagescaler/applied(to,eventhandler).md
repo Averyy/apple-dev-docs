@@ -20,7 +20,7 @@ Perform the image scaler operation on the input pixelBuffer.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) throws -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The scaled pixel buffer.
 

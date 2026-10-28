@@ -19,7 +19,7 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized [`NSBitmapImageRep`](../nsbitmapimagerep.md) if the initialization was successful or `nil` if it was unable to interpret the contents of `bitmapData`.
 

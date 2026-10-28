@@ -19,7 +19,7 @@ var sendsWholeSearchString: Bool { get set }
 @property BOOL sendsWholeSearchString;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is yes, the field calls its action method when the user clicks the search button or presses Return. When the value is NO, the field calls the action method after each keystroke. The default value of this property is no.
 

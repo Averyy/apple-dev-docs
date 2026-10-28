@@ -23,7 +23,7 @@ func requestSceneSessionRefresh(_ sceneSession: UISceneSession)
 - (void) requestSceneSessionRefresh:(UISceneSession *) sceneSession;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your scene is in the background and any part of your scene’s visible appearance changes. For example, call this method after updating your scene’s content to let the system know your scene’s snapshot requires refreshing. You don’t need to call this method when your scene is running in the foreground.
 

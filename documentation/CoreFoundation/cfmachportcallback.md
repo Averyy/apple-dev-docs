@@ -25,7 +25,7 @@ typealias CFMachPortCallBack = (CFMachPort?, UnsafeMutableRawPointer?, CFIndex, 
 typedef void (*)(struct __CFMachPort *, void *, long, void *) CFMachPortCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this callback when creating a CFMachPort object with either [`CFMachPortCreate(_:_:_:_:)`](./cfmachportcreate%28_,_,_,_%29.md) or [`CFMachPortCreateWithPort(_:_:_:_:_:)`](./cfmachportcreatewithport%28_,_,_,_,_%29.md). To receive messages on a CFMachPort object (and have this callback invoked), you must create a run loop source for the port and add it to a run loop.
 

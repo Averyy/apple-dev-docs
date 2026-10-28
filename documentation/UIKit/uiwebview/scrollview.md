@@ -21,7 +21,7 @@ var scrollView: UIScrollView { get }
 @property (nonatomic, strong, readonly) UIScrollView * scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can access the scroll view if it wants to customize the scrolling behavior of the web view.
 

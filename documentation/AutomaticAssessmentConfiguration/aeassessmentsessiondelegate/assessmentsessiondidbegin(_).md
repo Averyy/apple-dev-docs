@@ -22,7 +22,7 @@ optional func assessmentSessionDidBegin(_ session: AEAssessmentSession)
 - (void) assessmentSessionDidBegin:(AEAssessmentSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 After your app calls a session’s [`begin()`](../aeassessmentsession/begin%28%29.md) method, the session asynchronously disables the appropriate system services and then calls its delegate’s [`assessmentSessionDidBegin(_:)`](./assessmentsessiondidbegin%28_%29.md) method. Only after receiving this callback can you be sure that it’s safe to start an assessment. If the session fails to start for any reason, you receive a call to the [`assessmentSession(_:failedToBeginWithError:)`](./assessmentsession%28_,failedtobeginwitherror%29.md) method instead.
 

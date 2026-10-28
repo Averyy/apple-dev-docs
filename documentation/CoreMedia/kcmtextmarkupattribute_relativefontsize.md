@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_RelativeFontSize: CFString
 extern CFStringRef const kCMTextMarkupAttribute_RelativeFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a non-negative `CFNumber`. This is a number holding a percentage of the size of the calculated default font size. A value of `120` indicates 20% larger than the default font size. A value of `80` indicates 80% of the default font size. The default value of `100` indicates no size difference.
 

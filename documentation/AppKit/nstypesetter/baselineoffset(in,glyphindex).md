@@ -19,11 +19,11 @@ func baselineOffset(in layoutMgr: NSLayoutManager, glyphIndex: Int) -> CGFloat
 - (CGFloat) baselineOffsetInLayoutManager:(NSLayoutManager *) layoutMgr glyphIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The distance from the bottom of the line fragment rectangle in which the glyph resides to the glyph baseline.
 
-#### Discussion
+## Discussion
 
 The text system uses this value to calculate the vertical position of underlines.
 

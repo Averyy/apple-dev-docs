@@ -21,7 +21,7 @@ Creates an NSRegularExpression instance with the specified regular expression pa
 + (NSRegularExpression *) regularExpressionWithPattern:(NSString *) pattern options:(NSRegularExpressionOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSRegularExpression` for the specified regular expression and options.
 

@@ -20,7 +20,7 @@ var booleanValue: Bool { get }
 @property (readonly) Boolean booleanValue;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the descriptor, as a Boolean value, or `false` if an error occurs.
 

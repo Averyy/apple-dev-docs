@@ -26,7 +26,7 @@ func accessibility(inputLabels: [Text]) -> ModifiedContent<Content, Modifier>
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Provide labels in descending order of importance. Voice Control and Full Keyboard Access use the input labels.
 

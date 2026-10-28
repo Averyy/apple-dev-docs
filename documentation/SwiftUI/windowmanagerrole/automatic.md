@@ -21,7 +21,7 @@ The automatic role. The type and configuration of the scene will be used to dete
 static let automatic: WindowManagerRole
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, [`WindowGroup`](../windowgroup.md) and [`DocumentGroup`](../documentgroup.md) scenes will use the `principal` role. [`Window`](../window.md) scenes will use the `principal` role when they are specified as the first scene in the app’s definition, and use the `associated` role otherwise. [`Settings`](../settings.md) will use the `associated` role.
 

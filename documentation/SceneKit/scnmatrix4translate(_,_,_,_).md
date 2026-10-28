@@ -41,11 +41,11 @@ static SCNMatrix4 SCNMatrix4Translate(SCNMatrix4 m, float tx, float ty, float tz
 static SCNMatrix4 SCNMatrix4Translate(SCNMatrix4 m, CGFloat tx, CGFloat ty, CGFloat tz);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The resulting transformation consists of the specified translation followed by the transformation represented by the `mat` parameter.
 

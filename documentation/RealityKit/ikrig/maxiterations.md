@@ -20,7 +20,7 @@ The maximum number of iterations the solver is allowed to do per frame.
 var maxIterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 If the pose satisfies all of the demands using less iterations, the solve stops early.
 

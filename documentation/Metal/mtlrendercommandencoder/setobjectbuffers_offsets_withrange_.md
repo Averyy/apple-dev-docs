@@ -20,7 +20,7 @@ Encodes a command that assigns multiple buffers to a range of entries in the obj
 - (void) setObjectBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

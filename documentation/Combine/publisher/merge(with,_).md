@@ -21,11 +21,11 @@ Combines elements from this publisher with those from two other publishers, deli
 func merge<B, C>(with b: B, _ c: C) -> Publishers.Merge3<Self, B, C> where B : Publisher, C : Publisher, Self.Failure == B.Failure, Self.Output == B.Output, B.Failure == C.Failure, B.Output == C.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits an event when any upstream publisher emits an event.
 
-#### Discussion
+## Discussion
 
 Use [`merge(with:_:)`](./merge%28with,_%29.md) when you want to receive a new element whenever any of the upstream publishers emits an element. To receive tuples of the most-recent value from all the upstream publishers whenever any of them emit a value, use [`combineLatest(_:_:)`](./combinelatest%28_,_%29-5crqg.md). To combine elements from multiple upstream publishers, use [`zip(_:_:)`](./zip%28_,_%29-8d7k7.md).
 

@@ -15,7 +15,7 @@ An object that describes an error the server encounters preparing download URLs 
 object DownloadError
 ```
 
-#### Overview
+## Overview
 
 The `statusMessage` field has one of these values:
 

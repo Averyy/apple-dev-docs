@@ -24,7 +24,7 @@ class let didBecomeHiddenNotification: NSNotification.Name
 extern NSNotificationName const UIWindowDidBecomeHiddenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the hidden window. This notification doesn’t contain a `userInfo` dictionary.
 

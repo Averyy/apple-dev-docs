@@ -4,13 +4,13 @@
 
 Provides the ability to gather information from the user.
 
-#### Overview
+## Overview
 
 Use the `formTemplate` element to gather information from the user; for example, requiring a password to access your app. The banner area can contain an image and a description of your product. The user enters text in the text field directly below the banner using the automatically generated keyboard. Use the footer area to contain any user interaction buttons. The following figure shows the basic layout for a `formTemplate` page. The theme for the form template defaults to the system preference.
 
 ![Layout diagram showing a banner area containing an image and description at the top, a text field followed by a keyboard below, and a footer area at the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/formtemplate-1@2x.png)
 
-##### Form Template
+### Form Template
 
 The following listing shows the main elements of the `formTemplate` element in TVML format.
 
@@ -28,7 +28,7 @@ The following listing shows the main elements of the `formTemplate` element in T
 </formTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Only accepts `img` and `heroImg` elements in the background.
 - **[banner](./banner.md)**: Information displayed along the top of the screen that is typically used to provide instructions to the user.
@@ -37,7 +37,7 @@ The following listing shows the main elements of the `formTemplate` element in T
 - **[img](./img.md)**: An image of the product.
 - **[textField](./textfield.md)**: User input field.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `formTemplate` example. The interactive keyboard is automatically created. The footer area contains a button that can submit the user input. Modify your main JavaScript file to accept the user input from the button. For more information on available JavaScript functions, see [TVMLKit JS](../tvmljs/tvmljs.md).
 

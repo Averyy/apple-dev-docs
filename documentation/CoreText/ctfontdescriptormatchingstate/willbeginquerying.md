@@ -25,7 +25,7 @@ case willBeginQuerying
 kCTFontDescriptorMatchingWillBeginQuerying
 ```
 
-#### Discussion
+## Discussion
 
 This state is skipped if unnecessary.
 

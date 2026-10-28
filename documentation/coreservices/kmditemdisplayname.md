@@ -19,7 +19,7 @@ let kMDItemDisplayName: CFString!
 const CFStringRef kMDItemDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 This is the localized version of the LaunchServices call [`LSCopyDisplayNameForURL(_:_:)`](./api-1446850-lscopydisplaynameforurl.md)/[`LSCopyDisplayNameForRef(_:_:)`](./api-1442576-lscopydisplaynameforref.md).
 

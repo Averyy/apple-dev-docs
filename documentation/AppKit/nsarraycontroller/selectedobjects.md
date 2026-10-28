@@ -19,7 +19,7 @@ var selectedObjects: [Any]! { get }
 @property (copy, readonly, null_unspecified) NSArray * selectedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

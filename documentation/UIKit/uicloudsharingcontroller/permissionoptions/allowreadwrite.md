@@ -22,7 +22,7 @@ static var allowReadWrite: UICloudSharingController.PermissionOptions { get }
 UICloudSharingPermissionAllowReadWrite
 ```
 
-#### Discussion
+## Discussion
 
 To give the user the option to allow other people to edit the shared data, include the [`allowReadWrite`](./allowreadwrite.md) option when setting the [`availablePermissions`](../availablepermissions.md) property on the [`UICloudSharingController`](../../uicloudsharingcontroller.md) instance.
 

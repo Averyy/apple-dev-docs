@@ -21,11 +21,11 @@ Computes the mean absolute error between predicted and ground truth values.
 func meanAbsoluteError<T>(_ annotatedPredictions: [AnnotatedPrediction<T, T>]) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The mean absolute error.
 
-#### Discussion
+## Discussion
 
 If an empty `AnnotatedPrediction` is supplied, the result will be NaN.
 

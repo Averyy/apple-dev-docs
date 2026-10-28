@@ -19,7 +19,7 @@ var allowsTypeSelect: Bool { get set }
 @property BOOL allowsTypeSelect;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). Set it to [`false`](../../Swift/false.md) if you want to disable selecting rows by typing.
 

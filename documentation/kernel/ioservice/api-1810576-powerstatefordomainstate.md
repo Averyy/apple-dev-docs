@@ -12,11 +12,11 @@ virtual unsigned long powerStateForDomainState(
  IOPMPowerFlagsdomainState );
 ```
 
-#### Return Value
+## Return Value
 
 A state number.
 
-#### Overview
+## Overview
 
 Power management calls a driver with this method to find out what power state the device would be in for a given power domain state. This happens when the power domain is changing state and power management needs to determine the effect of the change. Most drivers do not need to implement this method, and can rely upon the default IOService implementation. The IOService implementation scans the power state array looking for the highest state whose `inputPowerRequirement` field exactly matches the value of the `domainState` parameter. If more intelligent determination is required, the power managed driver should implement the method and override the superclass's implementation.
 

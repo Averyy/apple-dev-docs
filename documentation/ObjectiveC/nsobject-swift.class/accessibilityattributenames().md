@@ -21,11 +21,11 @@ func accessibilityAttributeNames() -> [NSAccessibility.Attribute]
 - (NSArray<NSString *> *) accessibilityAttributeNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the attributes supported by the receiver.
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, and append additional attributes or remove unsupported attributes. See  [NSAccessibility](../../AppKit/nsaccessibility.md) constants for lists of attribute names.
 

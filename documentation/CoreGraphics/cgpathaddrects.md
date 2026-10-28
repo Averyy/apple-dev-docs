@@ -21,7 +21,7 @@ Appends an array of rectangles to a mutable graphics path.
 extern void CGPathAddRects(CGMutablePathRef path, const CGAffineTransform *m, const CGRect *rects, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds an array of rectangles to a path. This function is equivalent to repeatedly calling the [`CGPathAddRect`](./cgpathaddrect.md) function to append the sequence of rectangles.
 

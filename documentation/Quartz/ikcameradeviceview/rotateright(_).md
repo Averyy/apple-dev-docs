@@ -20,7 +20,7 @@ func rotateRight(_ sender: Any!)
 - (void) rotateRight:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
 

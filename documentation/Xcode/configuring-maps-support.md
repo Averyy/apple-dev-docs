@@ -5,7 +5,7 @@
 
 Register your iOS routing app to provide point-to-point directions to Maps and other apps.
 
-#### Overview
+## Overview
 
 An iOS app that’s able to display point-to-point directions can register as a routing app and make those directions available to Maps along with all other apps on a user’s device. Registering as a routing app improves the user experience because other apps can access your app’s routing information, and these apps don’t need to provide their own routing directions. Because Maps displays apps in the App Store that provide directions, registering your iOS app as a routing app is a great way to let users know about it.
 
@@ -15,7 +15,7 @@ A routing app provides specific directions in addition to what Maps supports, su
 
 > **Note**: This capability is only applicable to custom routing apps on iOS. You don’t need to add the Maps capability to a macOS app to be able to use the MapKit framework.
 
-##### Select the supported routing modes
+### Select the supported routing modes
 
 Before the system can distribute requests for directions to your routing app, you must inform it of the routing modes your app supports by following these
 steps:

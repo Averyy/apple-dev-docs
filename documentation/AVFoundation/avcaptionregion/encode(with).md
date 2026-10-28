@@ -22,7 +22,7 @@ func encode(with encoder: NSCoder)
 - (void) encodeWithCoder:(NSCoder *) encoder;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the caption region’s [`size`](./size.md) has different units for [`width`](../avcaptionsize/width.md) and [`height`](../avcaptionsize/height.md), or if the units are unrecognizeable.
 

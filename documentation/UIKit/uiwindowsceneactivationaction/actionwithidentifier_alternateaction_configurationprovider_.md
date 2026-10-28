@@ -18,7 +18,7 @@ Creates an activation action with the specified parameters.
 + (instancetype) actionWithIdentifier:(UIActionIdentifier) identifier alternateAction:(UIAction *) alternateAction configurationProvider:(UIWindowSceneActivationActionConfigurationProvider) configurationProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized activation action object.
 

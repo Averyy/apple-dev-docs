@@ -25,7 +25,7 @@ var rotationSpeed: CGFloat { get set }
 @property (nonatomic) CGFloat rotationSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The [`frictionTorque`](./frictiontorque.md) property limits the maximum amount of torque that can be applied to the physics bodies.
 

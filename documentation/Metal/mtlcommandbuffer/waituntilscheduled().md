@@ -29,7 +29,7 @@ func waitUntilScheduled()
 
 - [Preparing your Metal app to run in the background](../preparing-your-metal-app-to-run-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 This method returns after the following events:
 

@@ -19,7 +19,7 @@ var isPlanar: Bool { get }
 @property (readonly, getter=isPlanar) BOOL planar;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the data is in a planar configuration or [`false`](../../Swift/false.md) if it is in a meshed configuration. In a planar configuration, the image data is segregated into a separate plane for each color and coverage component. In a meshed configuration, the data is integrated into a single plane.
 

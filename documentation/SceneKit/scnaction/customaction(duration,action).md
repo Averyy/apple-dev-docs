@@ -25,11 +25,11 @@ class func customAction(duration seconds: TimeInterval, action block: @escaping 
 + (SCNAction *) customActionWithDuration:(NSTimeInterval) seconds actionBlock:(void (^)(SCNNode *node, CGFloat elapsedTime)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, SceneKit calls the block repeatedly until the action’s duration expires. For each call, SceneKit computes the elapsed time and passes it to the block.
 

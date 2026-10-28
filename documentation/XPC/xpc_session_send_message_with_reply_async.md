@@ -21,7 +21,7 @@ Sends a message asynchronously over the session to the destination service, call
 extern void xpc_session_send_message_with_reply_async(xpc_session_t session, xpc_object_t message, xpc_session_reply_handler_t reply_handler);
 ```
 
-#### Discussion
+## Discussion
 
 If the system tears down the session’s connection before receiving a reply, it invokes `reply_handler` with an [`xpc_rich_error_t`](./xpc_rich_error_t.md) describing the failure. For example, if the remote service exits prematurely before sending a reply.
 

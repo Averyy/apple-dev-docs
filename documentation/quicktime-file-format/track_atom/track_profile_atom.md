@@ -6,7 +6,7 @@
 
 A child atom of movie atoms or track atoms.
 
-#### Overview
+## Overview
 
 See [`Movie profile atom`](../movie_profile_atom.md).
 

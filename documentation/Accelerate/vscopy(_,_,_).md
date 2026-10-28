@@ -21,7 +21,7 @@ func vScopy(_ n: Int32, _ x: UnsafePointer<vFloat>, _ y: UnsafeMutablePointer<vF
 extern void vScopy(int32_t n, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 The elements of `x` are copied to the corresponding elements of `y`.
 

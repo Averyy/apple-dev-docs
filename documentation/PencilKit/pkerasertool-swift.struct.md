@@ -19,7 +19,7 @@ A tool for erasing previously drawn content in a canvas view.
 struct PKEraserTool
 ```
 
-#### Overview
+## Overview
 
 A [`PKEraserTool`](./pkerasertool-swift.struct.md) object supports the deletion of content from a [`PKCanvasView`](./pkcanvasview.md) object. The eraser tool’s type determines whether the canvas removes entire items or just the portion of an item that it touches.
 

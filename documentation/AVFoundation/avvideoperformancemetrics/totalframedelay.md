@@ -10,7 +10,7 @@
 @property (nonatomic, readonly) double totalFrameDelay;
 ```
 
-#### Discussion
+## Discussion
 
 [SPI] The accumulated amount of time, in microseconds, between the prescribed presentation times of displayed video frames and the actual time at which they were displayed.
 

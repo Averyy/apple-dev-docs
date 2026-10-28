@@ -15,7 +15,7 @@ The document’s copyright information.
 extern NSAttributedStringDocumentAttributeKey NSCopyrightDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing document copyright info.
 

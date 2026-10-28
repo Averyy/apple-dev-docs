@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from changing cellula
 var lockAppCellularData: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to prevent the user from changing which apps on their device can use cellular data. If your app doesn’t constrain this setting, this value is `nil`.
 

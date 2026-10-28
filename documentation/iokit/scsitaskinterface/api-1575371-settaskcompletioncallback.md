@@ -16,11 +16,11 @@ Method to set the asynchronous completion routine for the SCSITask.
 IOReturn (*SetTaskCompletionCallback)(void *task, SCSITaskCallbackFunction callback, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess, kIOReturnError, or kIOReturnNotPermitted if the client has not called AddCallbackDispatcherToRunLoop on the SCSITaskDeviceInterface.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the asynchronous completion routine for the SCSITask.
 

@@ -21,7 +21,7 @@ A type that represents a volume mount point.
 static var mountPoint: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 A mount point that resolves to the root directory of a volume.
 

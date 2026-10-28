@@ -21,7 +21,7 @@ Transposes a single-precision matrix.
 extern void vDSP_mtrans(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The code below uses [`vDSP_mtrans`](./vdsp_mtrans.md) to transpose the matrix `source` and write the result to the matrix `transposed`:
 

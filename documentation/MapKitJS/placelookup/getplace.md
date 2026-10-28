@@ -20,11 +20,11 @@ getPlace(id: string, options?: PlaceLookupOptions): Promise<Place>;
 - [MapKit JS 6](../mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`Place`](../place.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 For information about Places, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 

@@ -16,7 +16,7 @@ A value that indicates whether the balance is a credit or a debit balance.
 let creditDebitIndicator: CreditDebitIndicator
 ```
 
-#### Discussion
+## Discussion
 
 If an asset account has a positive balance, then the [`CreditDebitIndicator`](../creditdebitindicator.md) is [`CreditDebitIndicator.credit`](../creditdebitindicator/credit.md). If it has a negative balance, then the `CreditDebitIndicator` is [`CreditDebitIndicator.debit`](../creditdebitindicator/debit.md).
 

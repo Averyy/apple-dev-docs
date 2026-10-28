@@ -13,7 +13,7 @@
 MBUF_CSUM_REQ_UDPIPV6 = 0x0040
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the UDP checksum for IPv6 has not been calculated yet.
 

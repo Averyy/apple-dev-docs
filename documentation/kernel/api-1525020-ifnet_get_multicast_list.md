@@ -13,11 +13,11 @@
 errno_t ifnet_get_multicast_list(ifnet_t interface, ifmultiaddr_t **addresses);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Retrieves a list of multicast address the interface is set to receive. This function allocates and returns an array of references to the various multicast addresses. The multicasts have their reference counts bumped on your behalf. Calling ifnet_free_multicast_list will decrement the reference counts and free the array.
 

@@ -17,7 +17,7 @@ Defines the conditions under which Safari accepts cookies.
 var cookiePolicy: SafariSettings.CookiePolicy? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if this setting has not been applied.
 

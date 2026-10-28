@@ -19,7 +19,7 @@ var devicePlacement: AccessoryControlDevice.Placement?
 
 - [Supporting automatic audio switching for third-party accessories](../../supporting-automatic-audio-switching.md)
 
-#### Discussion
+## Discussion
 
 Update this property when your accessory detects a change in its position. If the accessory doesn’t support the [`placement`](../capabilities/placement.md) capability, the value of this property is always `nil`.
 

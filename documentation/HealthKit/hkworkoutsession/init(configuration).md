@@ -21,11 +21,11 @@ init(configuration workoutConfiguration: HKWorkoutConfiguration) throws
 - (instancetype) initWithConfiguration:(HKWorkoutConfiguration *) workoutConfiguration error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized workout session object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 HealthKit uses the session’s configuration data to fine tune Apple Watch’s sensors for the selected activity. All workout sessions generate higher-frequency heart rate samples; however, an outdoor cycling activity generates more accurate location data, while an indoor cycling activity does not.
 

@@ -18,7 +18,7 @@ A condition that describes the identity characteristics of a beacon.
 @interface CLBeaconIdentityCondition : CLCondition
 ```
 
-#### Overview
+## Overview
 
 Core Location defines a beacon identity by UUID, and major and minor values. You need to specify the UUID. If you only specify a UUID, the framework treats the major and minor values as wildcards and any beacons with the same UUID satisfy the condition. Similarly, if you specify only a UUID and a major value, the framework treats the minor value as a wildcard and any beacons with the same UUID and major value satisfy the condition.
 

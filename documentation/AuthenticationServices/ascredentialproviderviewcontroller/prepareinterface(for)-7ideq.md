@@ -22,7 +22,7 @@ func prepareInterface(for generatePasswordsRequest: ASGeneratePasswordsRequest)
 - (void) prepareInterfaceForGeneratePasswordsRequest:(ASGeneratePasswordsRequest *) generatePasswordsRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to tell your extension’s view controller to prepare to present a prompt to generate passwords. After calling this method, the system presents the view controller to the user.
 

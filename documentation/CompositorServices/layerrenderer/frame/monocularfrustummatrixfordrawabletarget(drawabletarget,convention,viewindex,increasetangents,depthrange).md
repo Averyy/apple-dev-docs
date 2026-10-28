@@ -16,11 +16,11 @@ Returns the transform which can be used for monocular frustum culling for given 
 func monocularFrustumMatrixForDrawableTarget(drawableTarget: LayerRenderer.Drawable.Target, convention: AxisDirectionConvention = .rightUpBack, viewIndex: Int, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4
 ```
 
-#### Return Value
+## Return Value
 
 A perspective projection matrix that transforms coordinates from view coordinate space to clip space.
 
-#### Discussion
+## Discussion
 
 The convention is defined in normalized device coordinates, which impact the rendering direction of rendering but have no impact on the convention used for model/view space. To convert from view space to the axis direction convention used by the projection matrix, a rotation/mirror matrix can be applied pre-projection matrix.
 

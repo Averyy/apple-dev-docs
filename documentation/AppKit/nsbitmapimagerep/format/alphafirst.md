@@ -19,7 +19,7 @@ static var alphaFirst: NSBitmapImageRep.Format { get }
 NSBitmapFormatAlphaFirst
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, alpha values are the last component specified, as in CMYKA and RGBA.
 

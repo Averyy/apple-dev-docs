@@ -30,7 +30,7 @@ class PHContentEditingOutput
 - [Creating Photo Editing Extensions](../PhotoKit/creating-photo-editing-extensions.md)
 - [Requesting Changes to the Photo Library](../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Overview
+## Overview
 
 To edit an asset’s photo or video content:
 

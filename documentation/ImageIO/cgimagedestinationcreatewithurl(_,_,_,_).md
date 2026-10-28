@@ -25,7 +25,7 @@ func CGImageDestinationCreateWithURL(_ url: CFURL, _ type: CFString, _ count: In
 extern CGImageDestinationRefCGImageDestinationCreateWithURL(CFURLRef url, CFStringRef type, size_t count, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

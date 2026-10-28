@@ -17,7 +17,7 @@ Variance-normalized KV cache following KVarN’s core tile-compression steps.
 class VarianceNormalizedKVCache
 ```
 
-#### Overview
+## Overview
 
 This is intentionally implemented as a regular [`KVCache`](./kvcache.md) so model attention code can use it without changes. When called through [`attentionWithCacheUpdate(queries:keys:values:cache:scale:mask:)`](./attentionwithcacheupdate%28queries,keys,values,cache,scale,mask%29.md), completed tiles stay quantized on the hot path: attention scores and value products are computed with `quantizedMM` in the rotated domain, and only the final output is inverse-rotated. The tile normalization uses clipped log-domain dual-axis scale balancing with best-imbalance tracking, matching the central KVarN VarN algorithm more closely while remaining an MLX Swift implementation. The RTN affine scale/bias are fused into the matching variance-normalization axis so each completed tile stores compact K/V records: packed weights, fused affine scale, fused affine bias, and the remaining variance scale.
 

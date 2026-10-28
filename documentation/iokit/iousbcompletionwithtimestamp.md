@@ -16,7 +16,7 @@ typedef struct IOUSBCompletionWithTimeStamp {
 } IOUSBCompletionWithTimeStamp;
 ```
 
-#### Overview
+## Overview
 
 Struct specifying action to perform when a USB I/O completes.
 

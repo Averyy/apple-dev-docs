@@ -19,7 +19,7 @@ var NSUndoFunctionKey: Int { get }
 NSUndoFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

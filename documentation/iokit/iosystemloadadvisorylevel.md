@@ -16,7 +16,7 @@ Return type for IOGetSystemLoadAdvisory
 typedef int IOSystemLoadAdvisoryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Value is one of kIOSystemLoadAdvisoryLevelGreat, kIOSystemLoadAdvisoryLevelOK, or kIOSystemLoadAdvisoryLevelBad.
 

@@ -19,11 +19,11 @@ func boundsRect(for block: NSTextTableBlock, contentRect: NSRect, in rect: NSRec
 - (NSRect) boundsRectForBlock:(NSTextTableBlock *) block contentRect:(NSRect) contentRect inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle the text table block actually occupies, including padding, borders, and margins.
 
-#### Discussion
+## Discussion
 
 This method is called by the text table block `block` after it is laid out to determine the rectangle the text table block actually occupies, including padding, borders, and margins.
 

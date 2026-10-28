@@ -21,7 +21,7 @@ The internal name of parameter this argument is accessible as in the function bo
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 If the method did not declare an explicit `label`, it is used as the `effectiveLabel`.
 

@@ -23,7 +23,7 @@ var grantedPermissionMatchPatterns: [WKWebExtension.MatchPattern : Date] { get s
 @property (nonatomic, copy) NSDictionary<WKWebExtensionMatchPattern *,NSDate *> * grantedPermissionMatchPatterns;
 ```
 
-#### Discussion
+## Discussion
 
 Match patterns that don’t expire will have a distant future date. This will never include expired entries at time of access.
 

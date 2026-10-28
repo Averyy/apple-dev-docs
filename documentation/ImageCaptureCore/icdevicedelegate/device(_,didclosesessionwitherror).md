@@ -24,7 +24,7 @@ func device(_ device: ICDevice, didCloseSessionWithError error: (any Error)?)
 - (void) device:(ICDevice *) device didCloseSessionWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This message completes the process initiated by the message “requestCloseSession” sent to the device object. This message is also sent if the device module in control of the device ceases to control the device.
 

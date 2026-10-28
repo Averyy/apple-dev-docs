@@ -19,7 +19,7 @@ var cgColorSpace: CGColorSpace? { get }
 @property (readonly, nullable) CGColorSpaceRef CGColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a reference to an Core Graphics color-space object ([`CGColorSpace`](../../CoreGraphics/cgcolorspace.md)) or `NULL` if the type of color space represented by the receiver cannot be represented by a `CGColorSpace` object.
 

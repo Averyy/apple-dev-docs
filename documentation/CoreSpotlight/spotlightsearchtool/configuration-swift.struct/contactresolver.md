@@ -19,7 +19,7 @@ A custom type you use to identify the owner of your app’s data.
 var contactResolver: (any ContactResolver)?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide additional context about the person using your app. The model uses this information to help resolve first-person pronouns in prompts that indicate ownership of a particular data item. Provide any information about the person that makes sense for your app. For example, a communications app might include the person’s name and the phone number or email associated with their account.
 

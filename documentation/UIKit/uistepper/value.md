@@ -22,7 +22,7 @@ var value: Double { get set }
 @property (nonatomic) double value;
 ```
 
-#### Discussion
+## Discussion
 
 When the value changes, the stepper sends the [`valueChanged`](../uicontrol/event/valuechanged.md) flag to its target (see [`addTarget(_:action:for:)`](../uicontrol/addtarget%28_,action,for%29.md)). Refer to the description of the [`isContinuous`](./iscontinuous.md) property for information about whether value change events are sent continuously or when user interaction ends.
 

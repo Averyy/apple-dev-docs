@@ -10,7 +10,7 @@ Read and write essential Apple Immersive Video metadata.
 - macOS 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 Immersive Media Support enables you to create custom workflows for processing Apple Immersive Video (AIV). Use it to read and write AIV-specific metadata and enable previewing content in editorial workflows.
 

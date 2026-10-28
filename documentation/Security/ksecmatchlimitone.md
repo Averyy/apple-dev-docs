@@ -25,7 +25,7 @@ let kSecMatchLimitOne: CFString
 extern CFStringRef const kSecMatchLimitOne;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value with the [`kSecMatchLimit`](./ksecmatchlimit.md) key.
 

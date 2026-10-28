@@ -23,7 +23,7 @@ func retargetedPreview(with newTarget: UIPreviewTarget) -> UITargetedPreview
 - (UITargetedPreview *) retargetedPreviewWithTarget:(UIPreviewTarget *) newTarget;
 ```
 
-#### Return Value
+## Return Value
 
 A new targeted preview object containing the specified target and the current view.
 

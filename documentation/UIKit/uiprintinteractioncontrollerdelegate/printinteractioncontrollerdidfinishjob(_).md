@@ -22,7 +22,7 @@ optional func printInteractionControllerDidFinishJob(_ printInteractionControlle
 - (void) printInteractionControllerDidFinishJob:(UIPrintInteractionController *) printInteractionController;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to do clean-up tasks related to the print job. This method is called after the last page of the print job is generated but before the completion handler (a block handler of type [`UIPrintInteractionController.CompletionHandler`](../uiprintinteractioncontroller/completionhandler.md)) is called.
 

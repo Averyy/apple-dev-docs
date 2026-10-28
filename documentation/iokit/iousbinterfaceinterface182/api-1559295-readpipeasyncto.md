@@ -4,7 +4,7 @@
 **Kind**: structp  
 **Role**: Instance Property
 
-Performs an asynchronous read on a **BULK IN **pipe, with specified timeout values.
+Performs an asynchronous read on a **BULK IN** pipe, with specified timeout values.
 
 **Availability**:
 - Mac Catalyst 18.4+
@@ -16,7 +16,7 @@ Performs an asynchronous read on a **BULK IN **pipe, with specified timeout valu
 IOReturn (*ReadPipeAsyncTO)(void *self, UInt8 pipeRef, void *buf, UInt32 size, UInt32 noDataTimeout, UInt32 completionTimeout, IOAsyncCallback1 callback, void *refcon);
 ```
 
-#### Discussion
+## Discussion
 
 The interface must be open for the pipe to exist.
 

@@ -21,7 +21,7 @@ A structure that holds a collection of day weather statistics data.
 struct DailyWeatherStatistics<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
-#### Overview
+## Overview
 
 Weather statistics for each day are derived from data for that day, collected over all years since the baseline start date.
 

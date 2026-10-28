@@ -6,7 +6,7 @@
 
 An atom that specifies how to use the input data.
 
-#### Overview
+## Overview
 
 The track input atom may contain two other types of atoms: input type atoms and object ID atoms. The input type atom is required; it specifies how the data is to be interpreted.
 

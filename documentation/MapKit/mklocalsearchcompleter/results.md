@@ -25,7 +25,7 @@ var results: [MKLocalSearchCompletion] { get }
 @property (nonatomic, strong, readonly) NSArray<MKLocalSearchCompletion *> * results;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` initially. After a successful query, the search completer sets this property to the array of [`MKLocalSearchCompletion`](../mklocalsearchcompletion.md) objects that the query returns. Each new successful query replaces the previous value of this property.
 

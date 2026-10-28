@@ -24,7 +24,7 @@ func sendProviderMessage(_ messageData: Data, responseHandler: ((Data?) -> Void)
 - (BOOL) sendProviderMessage:(NSData *) messageData returnError:(NSError **) error responseHandler:(void (^)(NSData *responseData)) responseHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

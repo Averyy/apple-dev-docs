@@ -16,7 +16,7 @@ CFNumber key uniquely identifying a UPS attached to the system.
 #define kIOPSPowerSourceIDKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple UPS power sources will publish this key.
 - Callers should not set this key; macOS power management will publish this key for UPS's.

@@ -24,7 +24,7 @@ uint64_t unsigned64BitValue(void);
 virtual unsigned long long unsigned64BitValue(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint64_t value.
 

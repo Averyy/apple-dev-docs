@@ -17,7 +17,7 @@ An object that can request to open the extension’s containing app and receives
 let session: LockedCameraCaptureSession
 ```
 
-#### Discussion
+## Discussion
 
 Provided during the initialization of the [`LockedCameraCaptureExtensionScene`](../lockedcameracaptureextensionscene.md). Only the system can initialize this object.
 

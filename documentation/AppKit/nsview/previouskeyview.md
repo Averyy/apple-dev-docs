@@ -19,7 +19,7 @@ unowned(unsafe) var previousKeyView: NSView? { get }
 @property (assign, readonly, nullable) NSView * previousKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if there is no view preceding the current view in the key view loop. The view in this property should, if possible, be made first responder when the user navigates backward from the current view using keyboard interface control.
 

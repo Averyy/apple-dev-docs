@@ -6,7 +6,7 @@ Access the personal data that people keep on their devices.
 
 Apple devices manage a lot of personal information, including a person’s contacts, their photos, and even their health data. Although people use system apps to manage many types of data, other apps can access that data too. For example, a running app might add each new workout to the person’s health data. For some types of data, you can also contribute new data your app collects.
 
-#### Request authorization to access personal data
+## Request authorization to access personal data
 
 The data people put on their devices belongs to them, and much of it is personal information they might not want to share. Before you access any personal data, request permission to do so and provide a reason why you need that data.
 
@@ -14,7 +14,7 @@ Before you access any personal data, each Apple technology has specific API you 
 
 When the system prompts someone to grant or deny a request, the panel displays a *usage description* string that you provide. This string is your opportunity to tell the person how you intend to use their data. People use these strings to decide whether or not to grant access, so it’s important to provide a compelling reason for access. Be clear about how your intentions, and communicate the benefits you provide with access to the data. For example, a running app might indicate that it contributes the workout data it collects to the person’s health records.
 
-#### Fetch different types of personal data
+## Fetch different types of personal data
 
 Access or modify someone’s personal data using the appropriate system frameworks. The following table lists the types of data you can retrieve, the frameworks you use to access or modify that data, and the usage description keys you can include in the Info pane of your project in Xcode. When multiple keys are available, choose the ones that match the type of access you’re requesting.
 
@@ -33,7 +33,7 @@ Access or modify someone’s personal data using the appropriate system framewor
 
 ---
 
-#### Access environmental data on Apple Vision Pro
+## Access environmental data on Apple Vision Pro
 
 The cameras on Apple Vision Pro generate significant amounts of data about a person’s environment. To protect people’s privacy, visionOS limits the types of information apps can receive directly from these cameras. For example, the system provides a 3D mesh of a person’s environment to detect collisions with virtual content, but it doesn’t provide direct access to the cameras or LiDAR sensor it uses to generate that mesh. Similarly, the system handles many standard hand gestures, and makes hand positions and movements available through special APIs.
 
@@ -41,7 +41,7 @@ Most of the environmental data you receive in visionOS comes from the [ARKit](..
 
 ---
 
-#### Verify someone’s identity
+## Verify someone’s identity
 
 Many state and federal governments let people verify their identity digitally using their iPhone. Support for mobile driver’s licenses and national identity cards gives people a way to prove their identity in a more privacy friendly way than showing the corresponding documents. On iPhone, people store the digital versions of these documents in the Wallet app.
 

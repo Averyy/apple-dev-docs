@@ -5,7 +5,7 @@
 
 Manage versions of your app that are available in App Store.
 
-#### Overview
+## Overview
 
 The `appStoreVersions` resource represents the information related to an App Store version of your app. Using this resource, you can:
 

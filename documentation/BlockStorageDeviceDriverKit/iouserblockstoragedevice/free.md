@@ -15,7 +15,7 @@ Performs any final cleanup for the service.
 virtual void free();
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform tasks such as deallocating any allocated memory. The system calls this method at some point after it calls your service’s [`Stop`](./stop.md) method.
 

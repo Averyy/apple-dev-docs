@@ -18,7 +18,7 @@ Assigns a mesh instance to the slot at the given index, or clears the slot if th
 final func setMeshInstance(_ newElement: LowLevelMeshInstanceArray.Element, index: Int) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 The `index` must be at least `0` and less than `count`.
 

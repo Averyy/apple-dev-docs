@@ -26,7 +26,7 @@ func endContentAccess()
 - (void) endContentAccess;
 ```
 
-#### Discussion
+## Discussion
 
 This method decrements the counter variable of the object, which will usually bring the value of the counter variable back down to 0, which allows the discardable contents of the object to be thrown away if necessary.
 

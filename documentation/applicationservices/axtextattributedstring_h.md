@@ -5,9 +5,9 @@
 
 This header file contains definitions of constants used with accessibility objects that represent attributed strings. An attributed string is an association of a range of characters and their attributes, such as color and font. If an accessibility object represents an attributed string, the value of its `kAXParameterizedAttributeStringAttribute` attribute is an attributed string object (a `CFAttributedStringRef` or an `NSAttributedString`) that uses the constants defined in this header file to define its attributes.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 

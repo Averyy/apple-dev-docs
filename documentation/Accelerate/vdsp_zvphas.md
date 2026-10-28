@@ -21,7 +21,7 @@ Calculates the single-precision element-wise phase values, in radians, of the su
 extern void vDSP_zvphas(const DSPSplitComplex *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Finds the phase values, in radians, of complex vector `A` and store the results in real vector `C`. The results are between -pi and +pi. The sign of the result is the sign of the second coordinate in the input vector, except that the `vDSP_zvphas` function does not necessarily respect the sign of a zero input.
 

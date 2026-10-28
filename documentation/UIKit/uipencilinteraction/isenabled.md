@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

@@ -25,7 +25,7 @@ var mStartOffset: Int64
 SInt64 mStartOffset;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the data buffer contains 5 bytes of data, with one byte per packet, then the start offset for the last packet is 4. There are 4 bytes in the buffer before the start of the last packet.
 

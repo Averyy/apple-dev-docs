@@ -27,7 +27,7 @@ optional func resolveRequestedBalanceType(for intent: INSearchForAccountsIntent)
 - (void) resolveRequestedBalanceTypeForSearchForAccounts:(INSearchForAccountsIntent *) intent withCompletion:(void (^)(INBalanceTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the balance type to look for in a search. Use this method to examine the [`requestedBalanceType`](../insearchforaccountsintent/requestedbalancetype.md) property of the `intent` object. Return a successful resolution if you can retrieve the specified balance information from the user’s account as part of your search. If you do not support the specified balance type, return a different balance type and ask for confirmation.
 

@@ -28,7 +28,7 @@ func save(_ objects: [HKObject]) async throws
 - (void) saveObjects:(NSArray<HKObject *> *) objects withCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method operates asynchronously. As soon as the save operation is finished, it calls the completion block on a background queue.
 

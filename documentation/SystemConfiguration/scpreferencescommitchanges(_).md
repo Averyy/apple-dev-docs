@@ -19,11 +19,11 @@ func SCPreferencesCommitChanges(_ prefs: SCPreferences) -> Bool
 Boolean SCPreferencesCommitChanges(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Implicit calls to the [`SCPreferencesLock(_:_:)`](./scpreferenceslock%28_,_%29.md) and [`SCPreferencesUnlock(_:)`](./scpreferencesunlock%28_%29.md) functions are made if exclusive access has not already been established.
 

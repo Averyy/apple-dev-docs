@@ -20,7 +20,7 @@ var fromAddress: MEEmailAddress { get }
 @property (nonatomic, copy, readonly) MEEmailAddress * fromAddress;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the From header in the message.
 

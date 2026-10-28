@@ -4,7 +4,7 @@
 
 Displays text that describes a displayed element.
 
-#### Overview
+## Overview
 
 This element is commonly used to provide additional information for a media item or group of media items; for example, the running time for a movie. Here’s an example where the decoration label displays the number of items contained in a `listItemLockup` element.
 
@@ -37,7 +37,7 @@ This element is commonly used to provide additional information for a media item
 </listItemLockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [listItemLockup](./listitemlockup.md)
 

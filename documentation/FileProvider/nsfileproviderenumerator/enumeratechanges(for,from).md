@@ -28,7 +28,7 @@ optional func enumerateChanges(for observer: any NSFileProviderChangeObserver, f
 - [Signaling Changes for User-Driven Actions](../signaling-changes-for-user-driven-actions.md)
 - [Tracking Changes to Documents](../tracking-changes-to-documents.md)
 
-#### Discussion
+## Discussion
 
 The system requests an enumerator in the following situations:
 

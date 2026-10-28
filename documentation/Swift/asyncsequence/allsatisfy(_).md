@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether all elements produced by the asyn
 func allSatisfy(_ predicate: (Self.Element) async throws -> Bool) async rethrows -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the sequence contains only elements that satisfy `predicate`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `allSatisfy(_:)` method checks to see whether all elements produced by the sequence are less than `10`.
 

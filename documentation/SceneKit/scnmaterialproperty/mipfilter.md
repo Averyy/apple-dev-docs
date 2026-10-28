@@ -25,7 +25,7 @@ var mipFilter: SCNFilterMode { get set }
 @property (nonatomic) SCNFilterMode mipFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Mipmapping is a technique that can increase rendering performance when rendering a texture image at smaller sizes. SceneKit automatically creates several mipmap levels for the material property’s image contents, each at a fraction of the original image’s size. When rendering, SceneKit automatically samples texels from the mipmap level closest to the size being rendered.
 

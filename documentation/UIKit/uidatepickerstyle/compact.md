@@ -22,7 +22,7 @@ case compact
 UIDatePickerStyleCompact
 ```
 
-#### Discussion
+## Discussion
 
 You can’t use this style with the [`UIDatePicker.Mode.countDownTimer`](../uidatepicker/mode/countdowntimer.md) mode.
 

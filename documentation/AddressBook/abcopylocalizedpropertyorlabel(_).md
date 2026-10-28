@@ -19,7 +19,7 @@ func ABCopyLocalizedPropertyOrLabel(_ labelOrProperty: CFString!) -> Unmanaged<C
 extern CFStringRefABCopyLocalizedPropertyOrLabel(CFStringRef labelOrProperty);
 ```
 
-#### Return Value
+## Return Value
 
 The localized versionof `propertyOrLabel`, or `propertyOrLabel` ifa localized string can not be found. You are responsible for releasingthis object.
 

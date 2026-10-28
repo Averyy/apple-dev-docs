@@ -19,7 +19,7 @@ func addRepresentation(_ imageRep: NSImageRep)
 - (void) addRepresentation:(NSImageRep *) imageRep;
 ```
 
-#### Discussion
+## Discussion
 
 After invoking this method, you may need to explicitly set features of the new image representation, such as the size, number of colors, and so on. This is true particularly when the `NSImage` object has multiple image representations to choose from. See [`NSImageRep`](../nsimagerep.md) and its subclasses for the methods you use to complete initialization.
 

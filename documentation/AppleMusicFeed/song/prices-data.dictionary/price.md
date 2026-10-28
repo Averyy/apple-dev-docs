@@ -15,7 +15,7 @@ Information about a pricing offer.
 object Song.Prices.Price
 ```
 
-#### Discussion
+## Discussion
 
 See the [`Song.Prices`](../prices-data.dictionary.md) data example.
 

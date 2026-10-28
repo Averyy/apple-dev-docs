@@ -24,7 +24,7 @@ var contentSize: CGSize { get }
 @property (nonatomic, readonly) CGSize contentSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is larger than [`visibleSize`](./visiblesize.md) then the content is scrollable.
 

@@ -29,7 +29,7 @@ class EKCalendarItem
 - [Creating a recurring event](./creating-a-recurring-event.md)
 - [Creating events and reminders](./creating-events-and-reminders.md)
 
-#### Overview
+## Overview
 
 The `EKCalendarItem` is a an abstract superclass for calendar events and reminders. This class provides common properties and methods for accessing properties of calendar items such as the ability to set the calendar, title, and location, as well as support for attaching notes, displaying attendees, setting multiple alarms, and specifying recurrence rules.
 

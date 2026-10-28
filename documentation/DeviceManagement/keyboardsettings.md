@@ -18,11 +18,11 @@ The declaration to configure keyboard settings.
 object KeyboardSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.keyboard.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.configuration.keyboard.settings` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 This configuration restricts keyboard features.
 

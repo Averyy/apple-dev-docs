@@ -19,7 +19,7 @@ var screenScale: CGFloat { get }
 @property (nonatomic, readonly) CGFloat screenScale;
 ```
 
-#### Discussion
+## Discussion
 
 The screen scale value applies to both the vertical and horizontal dimensions. For Apple Watch, this value is `2.0`.
 

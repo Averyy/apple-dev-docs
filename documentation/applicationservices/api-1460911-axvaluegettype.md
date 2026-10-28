@@ -17,7 +17,7 @@ func AXValueGetType(_ value: AXValue) -> AXValueType
 AXValueType AXValueGetType(AXValueRef value);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the structure type encoded in value. If the type is not recognized, it returns kAXValueIllegalType.
 

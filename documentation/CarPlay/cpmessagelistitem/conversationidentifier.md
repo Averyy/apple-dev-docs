@@ -21,7 +21,7 @@ var conversationIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * conversationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Provide the value that your app uses to identify the conversation. Siri passes this value to your app when the user selects the list item so that you can take any necessary action, such as, updating your message store to mark the conversation as read.
 

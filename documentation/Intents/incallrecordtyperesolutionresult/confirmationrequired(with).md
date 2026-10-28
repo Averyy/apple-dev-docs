@@ -24,11 +24,11 @@ class func confirmationRequired(with callRecordTypeToConfirm: INCallRecordType) 
 + (instancetype) confirmationRequiredWithCallRecordTypeToConfirm:(INCallRecordType) callRecordTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordTypeResolutionResult`](../incallrecordtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter but want the user to confirm the value before proceeding. For example, you might ask for confirmation if the user asks to search for missed calls but your app does not track missed calls.
 

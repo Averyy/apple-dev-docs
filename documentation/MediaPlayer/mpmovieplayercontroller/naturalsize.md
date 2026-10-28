@@ -23,7 +23,7 @@ var naturalSize: CGSize { get }
 @property (nonatomic, readonly) CGSize naturalSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports the clean aperture of the video in square pixels. Thus, the reported dimensions take into account anamorphic content and aperture modes.
 

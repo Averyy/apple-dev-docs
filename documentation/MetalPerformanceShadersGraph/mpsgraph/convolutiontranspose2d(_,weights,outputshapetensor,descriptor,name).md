@@ -24,7 +24,7 @@ func convolutionTranspose2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, o
 - (MPSGraphTensor *) convolutionTranspose2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights outputShapeTensor:(MPSGraphTensor *) outputShape descriptor:(MPSGraphConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

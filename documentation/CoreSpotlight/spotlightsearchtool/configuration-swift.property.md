@@ -19,7 +19,7 @@ The configuration details for the search tool.
 let configuration: SpotlightSearchTool.Configuration
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the configuration data you want to use with the tool. You use this property to configure the data sources for the tool to search, guidance on how to perform searches, and any custom processing steps your app provides. For more information on how to configure and use [`SpotlightSearchTool`](../spotlightsearchtool.md), see [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md).
 

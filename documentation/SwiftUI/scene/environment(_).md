@@ -22,11 +22,11 @@ nonisolated
 func environment<T>(_ object: T?) -> some Scene where T : AnyObject, T : Observable
 ```
 
-#### Return Value
+## Return Value
 
 A scene that has the specified object in its environment.
 
-#### Discussion
+## Discussion
 
 Use this modifier to place an object that you declare with the [`Observable()`](../../Observation/observable%28%29.md) macro into a scene’s environment. For example, you can add an instance of a custom observable `Profile` class to the environment of a [`WindowGroup`](../windowgroup.md) scene:
 

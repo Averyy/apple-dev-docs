@@ -24,7 +24,7 @@ init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>? = nil, function: @escapi
 
 Available when `Content` is `FunctionLinePlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

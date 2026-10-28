@@ -17,7 +17,7 @@ An enumeration that describes additional factors that influence the weight of a 
 enum Options
 ```
 
-#### Overview
+## Overview
 
 A person’s utility rate plan is an example of an additional factor that influences the weight of a value.
 

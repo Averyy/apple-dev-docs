@@ -20,8 +20,8 @@ Declare a test.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Test(_ displayName: String? = nil, _ traits: any TestTrait...)
+@attached(peer)
+macro Test(_ displayName: String? = nil, _ traits: any TestTrait...)
 ```
 
 ## Parameters

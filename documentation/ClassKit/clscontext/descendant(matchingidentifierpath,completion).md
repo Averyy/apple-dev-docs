@@ -33,7 +33,7 @@ func descendant(matchingIdentifierPath identifierPath: [String]) async throws ->
 - [Building missing contexts](../building-missing-contexts.md)
 - [Declaring your app’s context hierarchy](../declaring-your-app-s-context-hierarchy.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

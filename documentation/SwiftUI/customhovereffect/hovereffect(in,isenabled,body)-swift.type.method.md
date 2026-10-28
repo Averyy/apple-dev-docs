@@ -15,11 +15,11 @@ Creates a hover effect that applies effects to a view using the given closure.
 static func hoverEffect<C>(in group: HoverEffectGroup? = nil, isEnabled: Bool = true, body: @escaping (EmptyHoverEffectContent, Bool, GeometryProxy) -> C) -> ContentHoverEffect<C> where Self == ContentHoverEffect<C>, C : HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 A new effect that applies effects to a view using the given body closure.
 
-#### Discussion
+## Discussion
 
 The closure is provided an empty effect that you use to compose effects, as well as a boolean describing which phase is being requested. A [`GeometryProxy`](../geometryproxy.md) is also provided, allowing effects to change based on the view’s geometry.
 

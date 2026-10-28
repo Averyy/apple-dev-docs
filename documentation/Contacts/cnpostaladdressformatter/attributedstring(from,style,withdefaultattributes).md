@@ -24,11 +24,11 @@ class func attributedString(from postalAddress: CNPostalAddress, style: CNPostal
 + (NSAttributedString *) attributedStringFromPostalAddress:(CNPostalAddress *) postalAddress style:(CNPostalAddressFormatterStyle) style withDefaultAttributes:(NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The formatted postal address as an attributed string.
 
-#### Discussion
+## Discussion
 
 This method behaves similarly to  [`string(from:)`](./string%28from%29.md), except that it returns an attributed string. It includes the attribute key [`CNPostalAddressPropertyAttribute`](../cnpostaladdresspropertyattribute.md), whose attribute values are postal address property keys, such as [`CNPostalAddressStreetKey`](../cnpostaladdressstreetkey.md). This identifies the postal address components in the formatted postal address. It also includes the attribute key [`CNPostalAddressLocalizedPropertyNameAttribute`](../cnpostaladdresslocalizedpropertynameattribute.md) whose attribute values are the localized strings for the postal address property keys.
 

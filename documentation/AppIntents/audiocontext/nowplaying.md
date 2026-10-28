@@ -21,7 +21,7 @@ The Now Playing control or complication.
 static var nowPlaying: AudioContext { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to donate entities relevant to the Now Playing control or complication in the system.
 

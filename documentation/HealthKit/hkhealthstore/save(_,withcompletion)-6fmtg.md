@@ -32,7 +32,7 @@ func save(_ object: HKObject) async throws
 
 - [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
-#### Discussion
+## Discussion
 
 This method operates asynchronously. As soon as the save operation is finished, it calls the completion block on a background queue.
 

@@ -12,7 +12,7 @@ The participant type.
 @property (assign) CKShareParticipantType type;
 ```
 
-#### Discussion
+## Discussion
 
 The property controls the participant type for the share. For a list of possible values, see [`CKShareParticipantType`](../ckshareparticipanttype.md).
 

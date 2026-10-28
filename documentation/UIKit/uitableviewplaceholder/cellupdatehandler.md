@@ -22,7 +22,7 @@ var cellUpdateHandler: ((UITableViewCell) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^cellUpdateHandler)(UITableViewCell *);
 ```
 
-#### Discussion
+## Discussion
 
 Specify a block that configures or updates the appearance of your placeholder cell. The table view calls this block when the placeholder cell becomes visible, and at other appropriate times.
 

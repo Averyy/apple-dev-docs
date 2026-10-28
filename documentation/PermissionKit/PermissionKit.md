@@ -13,7 +13,7 @@ Create communication experiences between a child and their parent or guardian.
 - macOS 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 Use `PermissionKit` in your app to adjust communication rules for a child account on iCloud. `PermissionKit` provides a way to create consistent asking experiences between a child and their parent or guardian that maintains UI consistency with other communication experiences across the system.
 

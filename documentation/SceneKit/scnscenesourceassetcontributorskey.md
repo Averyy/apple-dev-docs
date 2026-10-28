@@ -25,7 +25,7 @@ let SCNSceneSourceAssetContributorsKey: String
 extern NSString * const SCNSceneSourceAssetContributorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a dictionary populated with keys documented in the [Contributor Keys](./contributor-keys.md) group.
 

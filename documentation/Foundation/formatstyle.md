@@ -21,7 +21,7 @@ A type that converts a given data type into a representation in another type, su
 protocol FormatStyle<FormatInput, FormatOutput> : Decodable, Encodable, Hashable
 ```
 
-#### Overview
+## Overview
 
 Types conforming to the [`FormatStyle`](./formatstyle.md) protocol take their input type and produce formatted instances of their output type. The formatting process accounts for locale-specific conventions, like grouping and separators for numbers, and presentation of units for measurements. The format styles Foundation provides produce their output as [`String`](../Swift/string.md) or [`AttributedString`](./attributedstring.md) instances. You can also create custom styles that format their output as any type, like XML or JSON [`Data`](./data.md) or an image.
 
@@ -32,7 +32,7 @@ There are two basic approaches to using a [`FormatStyle`](./formatstyle.md):
 
 Foundation provides format styles for integers ([`IntegerFormatStyle`](./integerformatstyle.md)), floating-point numbers ([`FloatingPointFormatStyle`](./floatingpointformatstyle.md)), decimals ([`Decimal.FormatStyle`](./decimal/formatstyle.md)), measurements ([`Measurement.FormatStyle`](./measurement/formatstyle.md)), arrays ([`ListFormatStyle`](./listformatstyle.md)), and more. The “Conforming types” section below shows all the format styles available from Foundation and any system frameworks that implement the [`FormatStyle`](./formatstyle.md) protocol. The numeric format styles also provide supporting format styles to format currency and percent values, like [`IntegerFormatStyle.Currency`](./integerformatstyle/currency.md) and [`Decimal.FormatStyle.Percent`](./decimal/formatstyle/percent.md).
 
-##### Modifying a format style
+### Modifying a format style
 
 Format styles include modifier methods that return a new format style with an adjusted behavior. The following example creates an [`IntegerFormatStyle`](./integerformatstyle.md), then applies modifiers to round values down to the nearest 1,000 and applies formatting appropriate to the `fr_FR` locale:
 
@@ -45,7 +45,7 @@ let rounded = 123456789.formatted(style) // "123 456 000"
 
 Foundation caches identical instances of a customized format style, so you don’t need to pass format style instances around unrelated parts of your app’s source code.
 
-##### Accessing static instances
+### Accessing static instances
 
 Types that conform to [`FormatStyle`](./formatstyle.md) typically extend the base protocol with type properties or type methods to provide convenience instances. These are available for use in a data type’s `formatted(_:)` method when the format style’s input type matches the data type. For example, the various numeric format styles define `number` properties with generic constraints to match the different numeric types ([`Double`](../Swift/double.md), [`Int`](../Swift/int.md), [`Float16`](../Swift/float16.md), and so on).
 
@@ -69,7 +69,7 @@ let rounded = 123456789.formatted( .number
     .locale(Locale(identifier: "fr_FR"))) // "123 456 000"
 ```
 
-##### Parsing with a format style
+### Parsing with a format style
 
 To perform the opposite conversion — from formatted output type to input data type — some format styles provide a corresponding [`ParseStrategy`](./parsestrategy.md) type. These format styles typically expose an instance of this type as a variable, called `parseStrategy`.
 

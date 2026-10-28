@@ -15,7 +15,7 @@ The identifier for the audio talkback control class.
 TalkbackControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates an enabled talkback channel. This control is for talkback channels outside of the regular I/O channels. If the talkback channel is among the normal I/O channels, it uses [`MuteControl`](./mutecontrol.md).
 

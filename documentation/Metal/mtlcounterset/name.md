@@ -25,7 +25,7 @@ var name: String { get }
 @property (copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The property typically matches one of the common counter set names that [`MTLCommonCounterSet`](../mtlcommoncounterset.md) defines (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 

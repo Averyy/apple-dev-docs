@@ -15,11 +15,11 @@ Fetches ad groups within an organization.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find ad groups within your organization. Use a [`Selector`](./selector.md) [`Condition`](./condition.md) to narrow results. If you don’t specify selector conditions, all of your ad groups return in the API response. See the [`AdGroup`](./adgroup.md) object for field descriptions and selector condition operators.
 
-##### Payload example: Find ad groups (org-level)
+### Payload example: Find ad groups (org-level)
 
 **Request**:
 

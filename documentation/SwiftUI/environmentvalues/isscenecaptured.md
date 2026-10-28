@@ -18,7 +18,7 @@ The current capture state.
 var isSceneCaptured: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine whether the scene is actively being cloned to another destination (like during AirPlay) or is being mirrored or recorded.
 

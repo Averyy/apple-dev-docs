@@ -21,11 +21,11 @@ Decrypts a message, if the ciphertext is valid.
 mutating func open<C>(_ ciphertext: C) throws -> Data where C : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The resulting cleartext message if the message is authentic.
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to decrypt a series of messages. When using this method, the recipient of the ciphertext messages needs to decrypt them in the same order that the sender encrypts them.
 

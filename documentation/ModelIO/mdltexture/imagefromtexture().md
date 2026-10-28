@@ -24,7 +24,7 @@ func imageFromTexture() -> Unmanaged<CGImage>?
 - (CGImageRef) imageFromTexture;
 ```
 
-#### Return Value
+## Return Value
 
 A CoreGraphics image object containing the texture’s pixel data, or `nil` if the texture data cannot be represented using CoreGraphics.
 

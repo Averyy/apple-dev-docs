@@ -20,7 +20,7 @@ var dwFlags: DWORD
 DWORD dwFlags;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be a combination of one or more of the following values:
 

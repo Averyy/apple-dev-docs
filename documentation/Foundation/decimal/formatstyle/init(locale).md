@@ -21,7 +21,7 @@ Creates a decimal format style that uses the given locale.
 init(locale: Locale = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 Create a [`Decimal.FormatStyle`](../formatstyle.md) instance when you intend to apply a given style to multiple decimal values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Decimal`](../../decimal.md) values in an array.
 

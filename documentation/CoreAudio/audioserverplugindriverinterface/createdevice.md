@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, const struct __CFDictionary *, const struct AudioServerPlugInClientInfo *, unsigned int *) CreateDevice;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the plug-in to create a new device based on the given description.
 

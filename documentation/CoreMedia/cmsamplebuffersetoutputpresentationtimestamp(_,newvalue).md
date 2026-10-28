@@ -25,11 +25,11 @@ func CMSampleBufferSetOutputPresentationTimeStamp(_ sbuf: CMSampleBuffer, newVal
 extern OSStatus CMSampleBufferSetOutputPresentationTimeStamp(CMSampleBufferRef sbuf, CMTime outputPresentationTimeStamp);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 The output presentation timestamp is the time at which the decoded, trimmed, stretched and possibly reversed samples should commence being presented. By default, this is calculated by calling `CMSampleBufferGetOutputPresentationTimeStamp`. Call `CMSampleBufferSetOutputPresentationTimeStamp` to explicitly set the value for `CMSampleBufferGetOutputPresentationTimeStamp` to return.
 

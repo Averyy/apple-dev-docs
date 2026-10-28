@@ -27,7 +27,7 @@ class var waterSubmersionAvailable: Bool { get }
 
 - [Accessing submersion data](../accessing-submersion-data.md)
 
-#### Discussion
+## Discussion
 
 On Apple Watch Ultra, the system sets `waterSubmersionAvailable` to [`true`](../../Swift/true.md). On all other devices and in Simulator, the system sets it to [`false`](../../Swift/false.md).
 

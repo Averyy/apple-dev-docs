@@ -20,7 +20,7 @@ The way that scrollable content interacts with the software keyboard.
 var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`automatic`](../scrolldismisseskeyboardmode/automatic.md). Use the [`scrollDismissesKeyboard(_:)`](../view/scrolldismisseskeyboard%28_%29.md) modifier to configure this property.
 

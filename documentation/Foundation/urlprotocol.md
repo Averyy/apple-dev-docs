@@ -25,7 +25,7 @@ class URLProtocol
 @interface NSURLProtocol : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a [`URLProtocol`](./urlprotocol.md) subclass directly. Instead, create subclasses for any custom protocols or URL schemes that your app supports. When a download starts, the system creates the appropriate protocol object to handle the corresponding URL request. You define your protocol class and call the [`registerClass(_:)`](./urlprotocol/registerclass%28_%29.md) class method during your app’s launch time so that the system is aware of your protocol.
 
@@ -35,7 +35,7 @@ To support the customization of protocol-specific requests, create extensions to
 
 Create a [`URLResponse`](./urlresponse.md) for each request your subclass processes successfully. You may want to create a custom [`URLResponse`](./urlresponse.md) class to provide protocol specific information.
 
-##### Subclassing notes
+### Subclassing notes
 
 When overriding methods of this class, be aware that methods that take a `task` parameter are preferred by the system to those that do not. Therefore, you should override the task-based methods when subclassing, as follows:
 

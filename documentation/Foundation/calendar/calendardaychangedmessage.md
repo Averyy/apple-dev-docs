@@ -21,7 +21,7 @@ A message sent by a calendar when the system’s calendar day changes, as determ
 struct CalendarDayChangedMessage
 ```
 
-#### Overview
+## Overview
 
 If the device is asleep when the day changes, the calendar sends this message when the device wakes up. If the device has been asleep for multiple days, the calendar sends only one message.
 

@@ -22,7 +22,7 @@ var isWatchAppInstalled: Bool { get }
 @property (nonatomic, readonly, getter=isWatchAppInstalled) BOOL watchAppInstalled;
 ```
 
-#### Discussion
+## Discussion
 
 The user can choose to install only a subset of available apps on Apple Watch. The value of this property is [`true`](../../Swift/true.md) when the Watch app associated with the current iOS app is installed on the user’s Apple Watch or [`false`](../../Swift/false.md) when it is not installed.
 

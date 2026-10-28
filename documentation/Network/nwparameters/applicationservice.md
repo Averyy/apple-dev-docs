@@ -21,7 +21,7 @@ The default parameters for connecting with other, local devices that are running
 final class var applicationService: NWParameters { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default parameters set up an encrypted connection with another device on the local network. You can use these parameters as-is, or you can add a [`NWProtocolFramer`](../nwprotocolframer.md) to provide application-level messaging support.
 

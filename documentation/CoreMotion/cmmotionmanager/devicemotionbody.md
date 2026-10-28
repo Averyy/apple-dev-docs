@@ -23,7 +23,7 @@ var deviceMotionBody: (any CMBodyIdentifiable)? { get set }
 @property (nonatomic, retain, nullable) id<CMBodyIdentifiable> deviceMotionBody;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to associate device-motion calculations with a specific body or view, such as a [UIKit](../../UIKit/UIKit.md) [`UIView`](../../UIKit/uiview.md) that conforms to [`CMBodyIdentifiable`](../cmbodyidentifiable.md).
 

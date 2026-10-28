@@ -16,7 +16,7 @@ nonisolated
 func digitalCrownAccessory<Content>(@ContentBuilder content: @escaping () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to place a custom `View` next to the Digital Crown on Apple Watch. Use [`digitalCrownAccessory(_:)`](./digitalcrownaccessory%28_%29.md) to specify the visibility of your custom view.
 

@@ -21,11 +21,11 @@ Fetches the specified subscriptions and returns them to an awaiting caller.
 func subscriptions(for ids: [CKSubscription.ID]) async throws -> [CKSubscription.ID : Result<CKSubscription, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the fetched subscriptions. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
 
-#### Discussion
+## Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual subscription errors.
 

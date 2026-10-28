@@ -5,7 +5,7 @@
 
 Explore how macOS uses code signing requirements to reason about code identity.
 
-#### Overview
+## Overview
 
 Code signing requirements are an obscure and dusty corner of the code signing castle.  Most developers don’t need to worry about them.  They sign their code using Xcode, or the `codesign` tool, and those automatically do the right thing when it comes to requirements.
 
@@ -17,13 +17,13 @@ However, in some cases requirements are important, especially on macOS.  For exa
 
 > **Note**: macOS 14 added a new way to express limits on code.  For the details, see [Applying launch environment and library constraints](../Security/applying-launch-environment-and-library-constraints.md).
 
-##### About this technote series
+### About this technote series
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [TN3125: Inside Code Signing: Provisioning Profiles](./tn3125-inside-code-signing-provisioning-profiles.md).
 
 > ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [Code Signing Services](../Security/code-signing-services.md) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
-#### Basics
+## Basics
 
 A code signing requirement is a function that, given a code signature, returns a Boolean value.  This function uses traditional expression syntax.  For example `anchor apple and identifier = "com.apple.TextEdit"` is a requirement that returns true if:
 
@@ -74,7 +74,7 @@ The code signing requirement language is very flexible.  It can express a very s
 
 For a detailed explanation of the code signing requirement language, see [Code Signing Requirement Language](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5-SW1).  For more on cdhash values, see [TN3126: Inside Code Signing: Hashes](./tn3126-inside-code-signing-hashes.md).  For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
-#### Designated requirement
+## Designated requirement
 
 Most code has a *designated requirement* (DR) which is how the code identifies itself: It’s the code’s way of saying “If you see me again, here’s how you tell it’s really me.”  The DR is critical on macOS, an open platform where code impersonation is a cause for concern.
 
@@ -128,7 +128,7 @@ The example above omits a large fraction of the DRs, with those omitted parts ch
 
 The DR is part of the code signature, making it an *internal requirement*.  A signature can have other internal requirements but that feature isn’t used in practice.
 
-#### Mutually compatible designated requirements
+## Mutually compatible designated requirements
 
 Two apps, A and B, have *mutually compatible designated requirements* if app A satisfies app B’s DR and app B satisfies app A’s DR.
 
@@ -165,7 +165,7 @@ Finally, repeat this process in reverse:
 
 There’s no requirement for different variants of your app to have mutually compatible DRs.  You might, for example, want each variant to have its own independent access to privacy-protected resources.  However, it’s very common for Mac App Store and Developer ID apps to have mutually compatible DRs.
 
-#### Default and Xcode designated requirements
+## Default and Xcode designated requirements
 
 When you sign code with `codesign`, it applies a *default designated requirement* based on the code signing identity you supply.  For example, if you sign a development build with your Apple Development code signing identity it gets a different DR than a distribution build signed with your Developer ID code signing identity.
 
@@ -188,7 +188,7 @@ designated => (anchor apple generic …details ommitted… "SKMME9E2Y8") and ide
 
 The following sections explain the Xcode DRs for the three common types of macOS code signing identity.
 
-##### Xcode designated requirement for Developer ID code
+### Xcode designated requirement for Developer ID code
 
 If you use Xcode to sign the AppWithTool app with a Developer ID code signing identity, the DR looks like this:
 
@@ -240,7 +240,7 @@ Or, in English, the requirement states that the code must be signed:
 
 For more information about the Apple-specific OIDs referenced in this technote, see the documents published on the [Apple PKI](https://www.apple.com/certificateauthority/) page.
 
-##### Xcode designated requirement for Mac App Store code
+### Xcode designated requirement for Mac App Store code
 
 AppWithTool isn’t on the Mac App Store, so you can’t look at its Xcode DR.  You can, however, look at the DR for Numbers, which is typical of a Mac App Store app:
 
@@ -290,7 +290,7 @@ This is exactly the same as the Developer ID DR, except for the Team ID and code
 
 The upshot of this is that a Mac App Store app and its Developer ID variant have mutually compatible DRs.  If, to continue the microphone example from earlier, you access the microphone from the Mac App Store variant of your app and then, later on, try to access it from the Developer ID variant, the system allows that access without an additional prompt.
 
-##### Xcode designated requirement for Apple Development code
+### Xcode designated requirement for Apple Development code
 
 Here’s the DR of the AppWithTool app signed by Xcode with an Apple Development code signing identity:
 
@@ -312,7 +312,7 @@ The `certificate 1[field.1.2.840.113635.100.6.2.1]` term requires that the certi
 
 This Apple Development DR is very different from the DR used by Developer ID and Mac App Store apps.  A Mac App Store app won’t satisfy this DR and vice versa.  Returning to the microphone example, if you run an Apple Development variant of your app and use that to access the microphone, and then run a Developer ID or Mac App Store variant of your app, the system *will* display a prompt when the new app accesses the microphone.
 
-#### Revision History
+## Revision History
 
 - **2024-04-02** Added the [Mutually compatible designated requirements](./tn3127-inside-code-signing-requirements.md#Mutually-compatible-designated-requirements) section.  Updated the [discussion of default designated requirements](./tn3127-inside-code-signing-requirements.md#Default-and-Xcode-designated-requirements) to account for the differences between `codesign` and Xcode (r. 124692958).  Made other editorial changes.
 - **2024-02-06** Made minor editorial changes.

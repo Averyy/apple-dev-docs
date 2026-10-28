@@ -15,11 +15,11 @@ Based on the given text encoding specifications for theconverted text runs, crea
 OSStatus CreateUnicodeToTextRunInfoByEncoding(ItemCount iNumberOfEncodings, const TextEncoding iEncodings[], UnicodeToTextRunInfo *oUnicodeToTextInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You pass a Unicode converter object returned from `CreateUnicodeToTextRunInfoByEncoding` tothe function  [`ConvertFromUnicodeToTextRun`](./api-1433511-convertfromunicodetotextrun.md) or  [`ConvertFromUnicodeToScriptCodeRun`](./api-1433662-convertfromunicodetoscriptcoderu.md) to identify the information to be used for the conversion. Thesetwo functions modify the contents of the Unicode converter object. 
 

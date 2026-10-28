@@ -25,7 +25,7 @@ func insertTimeRange(_ timeRange: CMTimeRange, of track: AVAssetTrack, at startT
 - (BOOL) insertTimeRange:(CMTimeRange) timeRange ofTrack:(AVAssetTrack *) track atTime:(CMTime) startTime error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The time range you insert presents at its natural duration and rate. If necessary, you can scale it to a different duration by calling the [`scaleTimeRange(_:toDuration:)`](./scaletimerange%28_,toduration%29.md) method.
 

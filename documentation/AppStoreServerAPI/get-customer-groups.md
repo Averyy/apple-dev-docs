@@ -14,7 +14,7 @@ Get the groups that a customer belongs to, and their role in each group.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  In the production environment, this endpoint returns only groups with a [`groupType`](./grouptype.md) of `ORGANIZATION`.
 
@@ -28,7 +28,7 @@ A customer can belong to more than one group, and can hold a different role in e
 
 To list the members of a group, call the [`Get Group Members`](./get-group-members.md) endpoint.
 
-##### Test in the sandbox environment
+### Test in the sandbox environment
 
 In the sandbox environment, if the customer doesn’t belong to any groups with a [`groupType`](./grouptype.md) of `CONSUMER`, this endpoint returns a placeholder group with a `groupType` of `ORGANIZATION`:
 

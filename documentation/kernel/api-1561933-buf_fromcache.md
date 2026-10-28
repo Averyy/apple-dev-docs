@@ -15,11 +15,11 @@ Check if a buffer's data was found in core.
 int buf_fromcache(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if we got this buffer's data without doing I/O, 0 if not.
 
-#### Discussion
+## Discussion
 
 Will return truth after a buf_getblk that finds a valid buffer in the cache or the relevant data in core (but not in a buffer).
 

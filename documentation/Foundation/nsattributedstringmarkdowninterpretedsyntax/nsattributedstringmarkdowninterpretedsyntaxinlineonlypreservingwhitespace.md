@@ -21,7 +21,7 @@ A syntax value that parses all Markdown text, but interprets only attributes tha
 NSAttributedStringMarkdownInterpretedSyntaxInlineOnlyPreservingWhitespace
 ```
 
-#### Discussion
+## Discussion
 
 This value behaves like [`NSAttributedStringMarkdownInterpretedSyntaxInlineOnly`](./nsattributedstringmarkdowninterpretedsyntaxinlineonly.md), but doesn’t interpret multiple consecutive instances of white space as a single separator space. All whitespace characters appear in the result as the source specifies.
 

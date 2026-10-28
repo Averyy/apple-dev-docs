@@ -23,7 +23,7 @@ func reportUnusedPasswordCredential(forDomain domain: String, userName: String)
 - (void) reportUnusedPasswordCredentialForDomain:(NSString *) domain userName:(NSString *) userName;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:
 >

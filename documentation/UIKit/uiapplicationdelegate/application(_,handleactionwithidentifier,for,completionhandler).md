@@ -31,7 +31,7 @@ optional func application(_ application: UIApplication, handleActionWithIdentifi
 - (void) application:(UIApplication *) application handleActionWithIdentifier:(NSString *) identifier forLocalNotification:(UILocalNotification *) notification completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The app calls this method when the user taps an action button in an alert displayed in response to a local notification. Local notifications that include a registered category name in their [`category`](../uilocalnotification/category.md) property display buttons for the actions in that category. If the user taps one of those buttons, the system wakes up the app (launching it if needed) and calls this method in the background. Your implementation of this method should perform the action associated with the specified `identifier` and execute the block in the `completionHandler` parameter as soon as you are done. Failure to execute the completion handler block at the end of your implementation will cause your app to be terminated.
 

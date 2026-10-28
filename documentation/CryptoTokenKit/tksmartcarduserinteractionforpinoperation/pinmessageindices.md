@@ -25,7 +25,7 @@ var pinMessageIndices: [NSNumber]? { get set }
 @property (nullable) NSArray<NSNumber *> * PINMessageIndices;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the reader does not display any message (reader specific). Typically, PIN verification takes 1 message; PIN modification takes 1 – 3 messages.
 

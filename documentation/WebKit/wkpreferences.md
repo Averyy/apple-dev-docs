@@ -24,7 +24,7 @@ class WKPreferences
 @interface WKPreferences : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`WKPreferences`](./wkpreferences.md) object to specify the preferences for your website, including the minimum font size, the JavaScript behavior, and the behavior for handling fraudulent websites. Create this object and assign it to the [`preferences`](./wkwebviewconfiguration/preferences.md) property of the [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object you use to create your web view.
 

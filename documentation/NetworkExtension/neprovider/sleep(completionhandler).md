@@ -28,7 +28,7 @@ func sleep() async
 - (void) sleepWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system when the device is about to go to sleep.
 

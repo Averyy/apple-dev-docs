@@ -19,7 +19,7 @@ func removeObject(_ object: Any)
 - (void) removeObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If `object` is the receiver’s content object, the receiver’s content is set to `nil`. If the receiver’s content is bound to another (primary) object or controller through a relationship key, the relationship of the primary object is cleared.
 

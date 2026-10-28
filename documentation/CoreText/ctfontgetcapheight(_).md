@@ -25,7 +25,7 @@ func CTFontGetCapHeight(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetCapHeight(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font cap-height metric scaled according to the point size and matrix of the font reference.
 

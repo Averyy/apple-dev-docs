@@ -19,7 +19,7 @@ var numberOfRows: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfRows;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `0` until you call the [`setRowTypes(_:)`](./setrowtypes%28_%29.md) or [`setNumberOfRows(_:withRowType:)`](./setnumberofrows%28_,withrowtype%29.md) method. After calling one of those methods, this property contains the number of row controllers that were created.
 

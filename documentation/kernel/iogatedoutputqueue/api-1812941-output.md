@@ -12,7 +12,7 @@ virtual bool scheduleServiceThread(
  void *param);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if a thread was successfully scheduled to service the queue.
 

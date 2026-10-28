@@ -17,9 +17,9 @@ Store client-specific information on the server.
 - [Subscribing to notifications](./subscribing-to-notifications.md)
 - [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

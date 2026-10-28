@@ -19,11 +19,11 @@
 static SPRect3D SPRect3DMakeAtCenterWithVector(SPVector3D center, SPVector3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified center using Spatial vectors.
 

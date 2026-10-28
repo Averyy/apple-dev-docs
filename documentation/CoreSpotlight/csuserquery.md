@@ -27,7 +27,7 @@ class CSUserQuery
 
 - [Building a search interface for your app](./building-a-search-interface-for-your-app.md)
 
-#### Overview
+## Overview
 
 A `CSUserQuery` object provides the back-end support for your app’s search features. Combine this object with your app’s search interface to perform lexical and semantic searches of human-entered search terms. You can configure a query object to return ranked or unranked results. You can also use it to get a list of suggestions to display from your search interface.
 

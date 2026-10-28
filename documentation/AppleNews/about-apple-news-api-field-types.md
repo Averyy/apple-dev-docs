@@ -5,7 +5,7 @@
 
 Understand the standard field types used in the Apple News API.
 
-#### Overview
+## Overview
 
 The Apple News API uses the following standard field types:
 

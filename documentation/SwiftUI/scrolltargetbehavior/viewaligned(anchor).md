@@ -24,7 +24,7 @@ static func viewAligned(anchor: UnitPoint?) -> Self
 
 Available when `Self` is `ViewAlignedScrollTargetBehavior`.
 
-#### Discussion
+## Discussion
 
 You use this behavior when a scroll view should always align its scroll targets to a rectangle that’s aligned to the geometry of a view. In the following example, the scroll view always picks an item view to settle on.
 

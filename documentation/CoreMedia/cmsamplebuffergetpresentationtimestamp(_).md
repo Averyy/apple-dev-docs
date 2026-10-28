@@ -25,11 +25,11 @@ func CMSampleBufferGetPresentationTimeStamp(_ sbuf: CMSampleBuffer) -> CMTime
 extern CMTime CMSampleBufferGetPresentationTimeStamp(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 Numerically earliest sample presentation timestamp in the `CMSampleBuffer`.  `kCMTimeInvalid` is returned if there is an error.
 
-#### Discussion
+## Discussion
 
 For in-presentation-order samples, this is the presentation timestamp of the first sample. For out-of-presentation-order samples, this is the presentation timestamp of the sample that will be presented first, which isn’t necessarily the first sample in the buffer.
 

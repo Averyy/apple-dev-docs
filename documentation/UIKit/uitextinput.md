@@ -29,7 +29,7 @@ protocol UITextInput : UIKeyInput
 - [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 - [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
 
-#### Overview
+## Overview
 
 Objects that adopt the [`UITextInput`](./uitextinput.md) protocol maintain information about text input and provide that information to the text input system on demand. A [`UITextInput`](./uitextinput.md) object interacts with the text input system by:
 
@@ -40,7 +40,7 @@ Objects that adopt the [`UITextInput`](./uitextinput.md) protocol maintain infor
 
 In addition, a [`UITextInput`](./uitextinput.md) object maintains ranges for selected text and marked text. Marked text, a part of multistage text input, represents provisionally inserted text that the user has yet to confirm. The range of marked text always contains a range of selected text, which might be a range of characters or the caret. Multistage text input is a requirement when the language is ideographic and the keyboard is phonetic.
 
-##### Integrate with the text input system
+### Integrate with the text input system
 
 The [`UITextInput`](./uitextinput.md) protocol works with other classes and protocols to integrate text-processing apps with the text input system:
 
@@ -49,7 +49,7 @@ The [`UITextInput`](./uitextinput.md) protocol works with other classes and prot
 - **[`UITextInputDelegate`](./uitextinputdelegate.md) protocol**: The text input system automatically assigns its own text input delegate (which conforms to this protocol) to the [`UITextInput`](./uitextinput.md)-conforming document object. This text input delegate allows document objects to inform the input system of changes in text and selection.
 - **[`UIKeyInput`](./uikeyinput.md) protocol**: Implement this protocol to allow text entry and deletion at an insertion point.
 
-##### Customize keyboard behavior
+### Customize keyboard behavior
 
 The [`UITextInput`](./uitextinput.md) protocol also inherits the [`UITextInputTraits`](./uitextinputtraits.md) protocol, which provides customization of the keyboard and its behaviors.
 

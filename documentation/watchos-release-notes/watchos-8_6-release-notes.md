@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 8.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 8.6. The SDK comes bundled with Xcode 13.4. For information on the compatibility requirements for Xcode 13.4, see [Xcode 13.4 Release Notes](../Xcode-Release-Notes/xcode-13_4-release-notes.md).
 
-##### Store Kit
+### Store Kit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue so developers using StoreKit 2 can now initiate a subscription offer purchase for a product that the customer currently subscribes to. (89152302)
 

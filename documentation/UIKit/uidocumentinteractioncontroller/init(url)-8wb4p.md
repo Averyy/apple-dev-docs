@@ -22,7 +22,7 @@ init(url: URL)
 + (UIDocumentInteractionController *) interactionControllerWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A new document interaction controller object.
 

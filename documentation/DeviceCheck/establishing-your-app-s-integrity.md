@@ -5,7 +5,7 @@
 
 Ensure that requests your server receives come from legitimate instances of your app.
 
-#### Overview
+## Overview
 
 You can’t rely on your app’s logic to perform security checks on itself because a compromised app can falsify the results. Instead, you use the [`shared`](./dcappattestservice/shared.md) instance of the [`DCAppAttestService`](./dcappattestservice.md) class in your app to create a hardware-based, cryptographic key that uses Apple servers to certify that the key belongs to a valid instance of your app. Then you use the service to cryptographically sign server requests using the certified key. Your app uses these measures to assert its legitimacy with any server requests for sensitive or premium content.
 
@@ -15,7 +15,7 @@ This article describes how to modify your app to use the App Attest service. For
 
 > **Note**: To use the App Attest service, your app must have an App ID that you register on the [Apple Developer](https://developer.apple.com/account/) website.
 
-##### Check for availability
+### Check for availability
 
 Not all devices can use the App Attest service, so it’s important to have your app run a compatibility check before accessing the service. If the user’s app doesn’t pass the compatibility check, gracefully bypass the service. You check for availability by reading the [`isSupported`](./dcappattestservice/issupported.md) property.
 
@@ -31,7 +31,7 @@ You change the behavior of both your app, as the example above shows, and your s
 
 > ❗ **Important**: Action, extensible SSO, and watchOS extensions are supported. All other extension types are not supported, even if the [`isSupported`](./dcappattestservice/issupported.md) method property is [`true`](../Swift/true.md).
 
-##### Create a key pair
+### Create a key pair
 
 For each user account on each device running your app, generate a unique, hardware-based, cryptographic key pair by calling the [`generateKey(completionHandler:)`](./dcappattestservice/generatekey%28completionhandler%29.md) method.
 
@@ -49,7 +49,7 @@ On success, the method’s completion handler returns a key identifier that you 
 
 Don’t reuse a key among multiple users on a device because this weakens security protections. In particular, it becomes hard to detect an attack that uses a single compromised device to serve multiple remote users running a compromised version of your app. For more information, see [Assessing fraud risk](./assessing-fraud-risk.md).
 
-##### Certify the key pairs as valid
+### Certify the key pairs as valid
 
 Before using a key pair, ask Apple to attest to its origin on Apple hardware running an uncompromised version of your app. Because you can’t trust your app’s logic to verify the attestation result, you send the result to your server. To reduce the risk of replay attacks during this procedure, attestation embeds the hash of a unique, one-time challenge from your server. You can create a suitable value using the [`SHA256`](../CryptoKit/sha256.md) implementation in CryptoKit. The challenge should be at least 16 bytes in length to ensure sufficient entropy to ensure guessing them is infeasible.
 
@@ -82,7 +82,7 @@ let attestationString = attestation?.base64EncodedString()
 
 Your server deems the app instance to be valid if it can successfully verify the attestation object. In this case, be sure to persistently store the key identifier — not the attestation object — in your app for future use in signing server requests.
 
-##### Assert your app’s validity as necessary
+### Assert your app’s validity as necessary
 
 After successfully verifying a key’s attestation, your server can require the app to assert its legitimacy for any or all future server requests. The app does this by signing the request. In the app, first obtain a unique, one-time challenge from the server. You use a challenge here, like for attestation, to avoid replay attacks. Then combine the challenge with the server request to create a hash.
 
@@ -109,7 +109,7 @@ On success, pass the completion handler’s assertion object, along with the cli
 
 There’s no restriction on the number of assertions that you can make with a key. Nevertheless, you typically reserve assertions for requests made at sensitive moments in your app’s life cycle, like when the app downloads premium content.
 
-##### Start over on reinstallation
+### Start over on reinstallation
 
 The keys that you generate remain valid through regular app updates, but don’t survive app reinstallation, device migration, or restoration of a device from a backup. In these cases, you need to start the process from the beginning and generate a new key. Try to limit new key generation to only these events, or to the addition of new users. Keeping the key count low on a device helps when trying to detect certain kinds of fraud.
 

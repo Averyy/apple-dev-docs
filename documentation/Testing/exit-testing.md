@@ -9,7 +9,7 @@ Use exit tests to test functionality that might cause a test process to exit.
 - Swift 6.2+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Your code might contain calls to [precondition()](../Swift/precondition%28_,_,file,line%29.md), [fatalError()](../Swift/fatalerror%28_,file,line%29.md), or other functions that can cause the current process to exit. For example:
 
@@ -27,7 +27,7 @@ In this function, if `food.isDelicious` or `food.isNutritious` is `false`, the p
 
 > **Note**: Exit tests are available on macOS, Linux, FreeBSD, OpenBSD, and Windows.
 
-##### Create an exit test
+### Create an exit test
 
 To create an exit test, call either the [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or the [`require(processExitsWith:observing:_:sourceLocation:performing:)`](./require%28processexitswith,observing,_,sourcelocation,performing%29.md) macro:
 
@@ -49,7 +49,7 @@ The parent process doesn’t call the body of the exit test. Instead, the child 
 
 If the body returns before the child process exits, the process exits as if `main()` returned normally. If the body throws an error, Swift handles it as if it were thrown from `main()` and forces the process to exit abnormally.
 
-##### Specify an exit condition
+### Specify an exit condition
 
 When you create an exit test, specify how you expect the child process exits by passing an instance of [`ExitTest.Condition`](./exittest/condition.md):
 
@@ -59,7 +59,7 @@ When you create an exit test, specify how you expect the child process exits by 
 
 When the child process exits, the parent process resumes and compares the exit status of the child process against the expected exit condition you passed. If they match, the exit test passes; otherwise, it fails and the testing library records an issue.
 
-##### Capture state from the parent process
+### Capture state from the parent process
 
 To pass information from the parent process to the child process, you specify the Swift values you want to pass in a [capture list](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/#Capturing-Values) on the exit test’s body:
 
@@ -105,7 +105,7 @@ If a captured value’s type does not conform to both `Sendable` and `Codable`, 
 }
 ```
 
-##### Gather output from the child process
+### Gather output from the child process
 
 The [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md) and [`require(processExitsWith:observing:_:sourceLocation:performing:)`](./require%28processexitswith,observing,_,sourcelocation,performing%29.md) macros return an instance of [`ExitTest.Result`](./exittest/result.md) that contains information about the state of the child process.
 

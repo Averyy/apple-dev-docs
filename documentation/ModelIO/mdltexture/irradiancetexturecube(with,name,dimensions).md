@@ -24,11 +24,11 @@ class func irradianceTextureCube(with texture: MDLTexture, name: String?, dimens
 + (instancetype) irradianceTextureCubeWithTexture:(MDLTexture *) texture name:(NSString *) name dimensions:(vector_int2) dimensions;
 ```
 
-#### Return Value
+## Return Value
 
 A new cube texture object.
 
-#### Discussion
+## Discussion
 
 Irradiance and reflectance textures are used in realistic lighting:
 

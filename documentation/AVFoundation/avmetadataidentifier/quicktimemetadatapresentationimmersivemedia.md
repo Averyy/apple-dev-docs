@@ -25,7 +25,7 @@ static let quickTimeMetadataPresentationImmersiveMedia: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataPresentationImmersiveMedia;
 ```
 
-#### Discussion
+## Discussion
 
 The presentation timed metadata for Apple Immerisve Video. Value is a JSON-encoding of ImmersiveMediaSupport framework’s PresentationDescriptor object.
 

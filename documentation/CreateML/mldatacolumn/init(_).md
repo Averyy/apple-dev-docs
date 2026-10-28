@@ -20,7 +20,7 @@ Creates a new column from a given sequence of elements.
 init<S>(_ source: S) where Element == S.Element, S : Sequence
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column from a sequence of any type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md).
 

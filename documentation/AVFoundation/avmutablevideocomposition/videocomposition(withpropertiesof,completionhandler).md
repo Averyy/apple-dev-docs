@@ -28,7 +28,7 @@ class func videoComposition(withPropertiesOf asset: AVAsset) async throws -> AVM
 + (void) videoCompositionWithPropertiesOfAsset:(AVAsset *) asset completionHandler:(void (^)(AVMutableVideoComposition *videoComposition, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates the video composition object and configures it with the values and instructions suitable for presenting the video tracks of the specified asset. The returned object contains instructions that respect the spatial properties and time ranges of the specified asset’s video tracks. It also configures the object properties in the following way:
 

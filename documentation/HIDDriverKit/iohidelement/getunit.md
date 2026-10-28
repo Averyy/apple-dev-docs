@@ -16,7 +16,7 @@ Returns the units that you use to interpret the element’s value.
 virtual uint32_t getUnit();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s unit.  The unit value is defined in the USB HID spec.
 

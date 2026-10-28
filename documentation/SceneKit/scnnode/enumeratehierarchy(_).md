@@ -25,7 +25,7 @@ func enumerateHierarchy(_ block: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Vo
 - (void) enumerateHierarchyUsingBlock:(void (^)(SCNNode *node, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses a recursive preorder traversal to process the child node subtree—that is, the block runs for a node before it runs for each of the node’s children, and it processes all children of a node before processing any of that node’s sibling nodes.
 

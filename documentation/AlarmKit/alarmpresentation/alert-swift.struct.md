@@ -17,7 +17,7 @@ An object that describes the UI of the alert that appears when an alarm fires.
 struct Alert
 ```
 
-#### Overview
+## Overview
 
 `Alert` configures the title and buttons in the alarm UI. The system provides a stop button automatically. Use this object to optionally define a secondary button and its behavior. The code snippet below describes how to configure an `Alert` with a secondary button.
 

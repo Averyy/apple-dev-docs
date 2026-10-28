@@ -21,7 +21,7 @@ Generates a data frame slice that includes the columns you select with a sequenc
 func selecting<S>(columnNames: S) -> DataFrame.Slice where S : Sequence, S.Element == String
 ```
 
-#### Return Value
+## Return Value
 
 A new data frame slice.
 

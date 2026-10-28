@@ -42,7 +42,7 @@ var color: NSColor? { get set }
 @property (nonatomic, copy, nullable) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 When no color has been specified for the `PDFSelection` objects in a document, the selections are drawn using `[NSColor selectedTextBackgroundColor]` for the active state and `[NSColor secondarySelectedControlColor]` for the inactive state. Use the `setColor` method to supply a color you want to be used for the drawing of both active and inactive selections.
 

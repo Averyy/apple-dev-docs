@@ -15,11 +15,11 @@ Determine if the number of persistent (usecount) references on a vnode is greate
 int vnode_isinuse(vnode_t vp, int refcnt);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 vnode_isinuse() compares a vnode's usecount (corresponding to vnode_ref() calls) to its refcnt parameter (the number of references the caller expects to be on the vnode). Note that "kusecount" references, corresponding to parties interested only in event notifications, e.g. open(..., O_EVTONLY), are not counted towards the total; the comparison is (usecount - kusecount > recnt). It is also important to note that the result is only a snapshot; usecounts can change from moment to moment, and the result of vnode_isinuse may no longer be correct the very moment that the caller receives it.
 

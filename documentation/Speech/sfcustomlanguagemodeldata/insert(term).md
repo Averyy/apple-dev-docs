@@ -20,7 +20,7 @@ Add a custom term to the vocabulary.
 func insert(term: SFCustomLanguageModelData.CustomPronunciation)
 ```
 
-#### Discussion
+## Discussion
 
 This class accumulates vocabulary data (in the form of tokens paired with X-SAMPA representations of the spoken forms of those tokens) which will later be processed and then provided to an `SFSpeechRecognizer`, to enable it to recognize words that are typically out-of-vocabulary.
 

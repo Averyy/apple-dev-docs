@@ -21,7 +21,7 @@ An error that indicates a task was canceled.
 struct CancellationError
 ```
 
-#### Overview
+## Overview
 
 This error is also thrown automatically by `Task.checkCancellation()`, if the current task has been canceled.
 

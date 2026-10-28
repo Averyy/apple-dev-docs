@@ -21,7 +21,7 @@ Calculates the double-precision dot product of a complex vector and a real vecto
 extern void vDSP_zrdotprD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the dot product of two vectors, using the following operation:
 

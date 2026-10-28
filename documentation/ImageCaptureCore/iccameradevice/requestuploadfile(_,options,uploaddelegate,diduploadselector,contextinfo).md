@@ -21,7 +21,7 @@ func requestUploadFile(_ fileURL: URL, options: [ICUploadOption : Any] = [:], up
 - (void) requestUploadFile:(NSURL *) fileURL options:(NSDictionary<NSString *,id> *) options uploadDelegate:(id) uploadDelegate didUploadSelector:(SEL) selector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `uploadDelegate` must implement a function with the signature `- (void)didUploadFile:(NSURL*)fileURL error:(NSError*)error contextInfo:(void*)contextInfo`, to be called when the request is completed.
 

@@ -25,7 +25,7 @@ struct BLAS_THREADING
 enum BLAS_THREADING : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 Use the threading model constants to specify whether BLAS and LAPACK operations run in a single thread or multiple threads. Specify the single-threaded model if your app uses its own threading mechanism.
 

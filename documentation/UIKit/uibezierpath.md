@@ -24,7 +24,7 @@ class UIBezierPath
 @interface UIBezierPath : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use this class initially to specify just the geometry for your path. Paths can define simple shapes such as rectangles, ovals, and arcs or they can define complex polygons that incorporate a mixture of straight and curved line segments. After defining the shape, you can use additional methods of this class to render the path in the current drawing context.
 

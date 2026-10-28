@@ -20,7 +20,7 @@ let NSTypeIdentifierAddressText: String
 extern NSString * const NSTypeIdentifierAddressText;
 ```
 
-#### Discussion
+## Discussion
 
 UTI subtype for [`addressCheckingResult(range:components:)`](../Foundation/nstextcheckingresult/addresscheckingresult%28range,components%29.md), `com.apple.structured-text.address`.
 

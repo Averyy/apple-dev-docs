@@ -19,7 +19,7 @@ A type that specifies how the system resolves a semantic content descriptor.
 typealias Specification = some ResolverSpecification
 ```
 
-#### Discussion
+## Discussion
 
 This type is part of the internal mechanism that App Intents uses to process visual intelligence data and to determine how the system resolves a [`SemanticContentDescriptor`](../semanticcontentdescriptor.md) instance.
 

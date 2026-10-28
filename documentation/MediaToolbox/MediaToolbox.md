@@ -14,7 +14,7 @@ Enable support for media format readers; tap and process audio from an audio mix
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Call the [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](./mtregisterprofessionalvideoworkflowformatreaders%28%29.md) function to enable the use of custom [MediaExtension](../MediaExtension/MediaExtension.md) format readers.
 

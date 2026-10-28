@@ -25,7 +25,7 @@ class let interstitialEventDidFinishDidPlayEntireEventKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventDidFinishDidPlayEntireEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type NSNumber with a BOOL value.
 

@@ -21,11 +21,11 @@ Recreates interval state from the specified signpost ID.
 static func beginState(id: OSSignpostID) -> OSSignpostIntervalState
 ```
 
-#### Return Value
+## Return Value
 
 The recreated interval state.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Recreating interval state to end a signposted interval bypasses runtime assertions that check for consistency between the beginning and the end of the interval.
 

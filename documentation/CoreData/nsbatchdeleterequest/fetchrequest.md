@@ -26,7 +26,7 @@ var fetchRequest: NSFetchRequest<any NSFetchRequestResult> { get }
 @property (copy, readonly) NSFetchRequest * fetchRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the fetch request that identifies the managed objects to delete. If you initialize `NSBatchDeleteRequest` with an array of [`NSManagedObjectID`](../nsmanagedobjectid.md), Core Data automatically generates a fetch request with a predicate that matches the identifiers in that array.
 

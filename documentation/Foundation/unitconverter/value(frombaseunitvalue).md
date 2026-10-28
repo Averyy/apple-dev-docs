@@ -25,11 +25,11 @@ func value(fromBaseUnitValue baseUnitValue: Double) -> Double
 - (double) valueFromBaseUnitValue:(double) baseUnitValue;
 ```
 
-#### Return Value
+## Return Value
 
 The value in terms of a given unit.
 
-#### Discussion
+## Discussion
 
 This method takes a value in the base unit of a unit’s dimension and returns the result of converting it into that unit. For example, a converter for the pounds unit calling this method, passing `2.20462` to the `baseUnitValue` parameter, results in `1.0` (*2.20462 lbs = 1 kg*).
 

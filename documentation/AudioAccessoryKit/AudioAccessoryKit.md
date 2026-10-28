@@ -9,7 +9,7 @@ Support audio features like automatic audio switching.
 **Availability**:
 - iOS 26.4+
 
-#### Overview
+## Overview
 
 AudioAccessoryKit makes it possible for third-party audio accessory manufacturers to provide headphone information to the system to support automatic audio switching. For example, when someone takes off their earbuds, their iPhone can route audio to its speakers.  The accessory’s companion app updates the earbuds’ placement from [`AccessoryControlDevice.Placement.inEar`](./accessorycontroldevice/placement/inear.md) to [`AccessoryControlDevice.Placement.offHead`](./accessorycontroldevice/placement/offhead.md). iOS reroutes the audio intelligently, rather than continuing to play audio on the distant accessory.
 

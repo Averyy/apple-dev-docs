@@ -21,7 +21,7 @@ Returns a transform that results from uniformly scaling with the specified doubl
 static SPProjectiveTransform3D SPProjectiveTransform3DScaleUniform(SPProjectiveTransform3D transform, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from uniformly scaling with the specified double-precision value.
 

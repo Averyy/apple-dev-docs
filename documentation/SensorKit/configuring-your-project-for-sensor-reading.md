@@ -5,7 +5,7 @@
 
 Add metadata to your app to attain system and user permission to access sensor data.
 
-#### Overview
+## Overview
 
 If Apple approves your idea for a research-study app, you can read sensor data from devices after receiving the userʼs permission. Once Apple approves your app, you receive an entitlement that enables your app to read sensor data. In accordance with the approval, you also need to comply with Appleʼs privacy policy.
 
@@ -13,11 +13,11 @@ When your app attempts to read sensor information for the first time on a person
 
 For more information, see [Sensor & Usage Data & Privacy](https://www.apple.com/legal/privacy/data/en/sensor-usage-data/).
 
-##### Request the sensor reader entitlement
+### Request the sensor reader entitlement
 
 To use SensorKit, the OS requires the [`com.apple.developer.sensorkit.reader.allow`](../BundleResources/entitlements/com.apple.developer.sensorkit.reader.allow.md) entitlement in your app’s code signature. Apple only grants the entitlement for approved research studies. If you’re interested in accessing SensorKit data for your study, submit a research proposal and request the entitlement. For more information, see [Accessing SensorKit Data](https://www.researchandcare.org/resources/accessing-sensorkit-data/).
 
-##### Create a manual provisioning profile
+### Create a manual provisioning profile
 
 Xcode requires a manual provisioning profile that includes an explicit App ID to code-sign your app with the sensor reader entitlement.
 
@@ -27,7 +27,7 @@ To create the manual provisioning profile, select Profiles from the sidebar, cli
 
 Install the provisioning profile by downloading it and dragging it on to the Xcode icon in the Dock. Alternatively, you can select the Download Manual Profiles option by choosing Xcode > Preferences > Accounts and selecting your Apple ID and applicable team. For more information, see [Download manual provisioning profiles](https://help.apple.com/xcode/mac/current/?/deva899b4fe5#/deva899b4fe5).
 
-##### Configure Xcode for signing
+### Configure Xcode for signing
 
 Define a bundle ID in Xcode for your App ID by selecting your target in the project editor and clicking General. For more information, see [Set the bundle ID](https://help.apple.com/xcode/mac/current/#/deve21d0239c).
 
@@ -68,7 +68,7 @@ To sign your app with the manual provisioning profile and sensor reader entitlem
 
 ![Screenshot of the project target’s build settings. The code signing entitlements setting reflects the custom code signing entitlements file name. The code signing identity is set to iOS developer. Code signing style is manual. And the provisioning profile build setting reflects the name of the explicit provisioning profile.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/media-3924190@2x.png)
 
-##### Describe the purpose of your study
+### Describe the purpose of your study
 
 The system presents the Research Sensor & Usage Data Request sheet that introduces your appʼs study to people. Define a short description of your appʼs research purpose with the usage description `Info.plist` key.
 
@@ -81,7 +81,7 @@ The sheet displays the research purpose in the App Research Purpose banner.
 
 ![Screenshot of the Research Sensor & Usage Data Request sheet that introduces the app’s study. The sheet displays the app’s SensorKit usage description under the App Research Purpose banner.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/media-3928456@2x.png)
 
-##### Link your app’s privacy policy
+### Link your app’s privacy policy
 
 Add a link to your privacy-policy webpage in your projectʼs `Info.plist` using the [`NSSensorKitPrivacyPolicyURL`](../BundleResources/information-property-list/nssensorkitprivacypolicyurl.md) key.
 
@@ -94,7 +94,7 @@ The sheet displays a link to your app’s privacy policy below the description o
 
 ![Screenshot of the Research Sensor & Usage Data Request sheet that introduces the app’s study. The View App Privacy Policy link is highlighted below the app’s research purpose.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/media-3683202@2x.png)
 
-##### Explain how your app uses the data
+### Explain how your app uses the data
 
 The sheet also explains what your app intends to do with the information it collects with a particular sensor. You provide this intent per sensor by adding the sensorʼs usage-detail key in your appʼs `info.plist`. For example, add the [`SRSensorUsageMotion`](../BundleResources/information-property-list/nssensorkitusagedetail/srsensorusagemotion.md) key when you use the [`accelerometer`](./srsensor/accelerometer.md) property. For the other sensor-specific usage keys, see the [`SRSensor`](./srsensor.md) property descriptions.
 
@@ -141,7 +141,7 @@ The first time your app requests authorization for a particular sensor, the shee
 
 ![Screenshot of the Research Sensor & Usage Data Request sheet’s second page. A banner reads “How the study will use this data” above text that reads, “This describes how my app uses motion data.”](https://developer.apple.com/tutorials/images/com.apple.sensorkit/media-3683199@2x.png)
 
-##### Specify the sensors your app requires
+### Specify the sensors your app requires
 
 Through the sheet, people approve each sensor individually by tapping Allow Collection & Sharing or Don’t Allow Collection & Sharing.
 

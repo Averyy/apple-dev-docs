@@ -25,7 +25,7 @@ var kSecTransformOperationNotSupportedOnGroup: CFIndex { get }
 kSecTransformOperationNotSupportedOnGroup
 ```
 
-#### Discussion
+## Discussion
 
 This might happen, for example, if you call [`SecTransformSetAttribute(_:_:_:_:)`](./sectransformsetattribute%28_,_,_,_%29.md) on a group.
 

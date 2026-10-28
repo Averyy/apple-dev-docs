@@ -24,7 +24,7 @@ init?(minCenterCoordinateDistance minDistance: CLLocationDistance, maxCenterCoor
 - (instancetype) initWithMinCenterCoordinateDistance:(CLLocationDistance) minDistance maxCenterCoordinateDistance:(CLLocationDistance) maxDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the camera zoom range by providing the minimum and maximum distance values, in meters, from the center coordinate to constrain your map view’s zoom range.
 

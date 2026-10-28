@@ -19,7 +19,7 @@ func allowsToggleToOff() -> Bool
 - (BOOL) allowsToggleToOff;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if clicking a radio button control that is already in the on state toggles it to the off state; otherwise [`false`](../../Swift/false.md).
 

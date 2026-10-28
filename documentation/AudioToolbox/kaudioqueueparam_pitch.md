@@ -24,7 +24,7 @@ var kAudioQueueParam_Pitch: AudioQueueParameterID { get }
 kAudioQueueParam_Pitch
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is usable only if the time/pitch processor is enabled.
 

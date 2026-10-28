@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsNonInterleaved: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsNonInterleaved
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsNonInterleaved`](./kaudioformatflagisnoninterleaved.md).
 

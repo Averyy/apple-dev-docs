@@ -20,7 +20,7 @@ The error code for an unserviceable shipping address.
 static var shippingAddressUnserviceableError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code for a shipping address that is otherwise valid, but is unserviceable. For example, the address is in a country or region you don’t ship to, or it’s a P.O. box and you can’t deliver to P.O. boxes.
 

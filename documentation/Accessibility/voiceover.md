@@ -5,13 +5,13 @@
 
 A gesture-based screen reader that provides an auditory description of the content onscreen.
 
-#### Overview
+## Overview
 
 VoiceOver is an assistive technology that enables people to experience the interface on their devices without having to see the screen. People who are blind or have low vision depend on VoiceOver to provide auditory feedback while using their devices, but VoiceOver can be useful to people in a wide variety of contexts. For example, someone prone to motion sickness might choose to turn VoiceOver on while they’re in a moving vehicle. Learn more about testing your app with VoiceOver to make sure it works well for people who use this assistive technology.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.Accessibility/voiceover@2x.png)
 
-###### Learn to use VoiceOver
+#### Learn to use VoiceOver
 
 - [Turn on and practice VoiceOver on iPhone](https://support.apple.com/guide/iphone/turn-on-and-practice-voiceover-iph3e2e415f/ios)
 - [Turn on and practice VoiceOver on iPad](https://support.apple.com/guide/ipad/turn-on-and-practice-voiceover-ipad9a246898/ipados)
@@ -20,7 +20,7 @@ VoiceOver is an assistive technology that enables people to experience the inter
 - [Use VoiceOver on Apple TV](https://support.apple.com/guide/tv/use-voiceover-atvbfa4ff6cd/tvos)
 - [VoiceOver User Guide for Mac](https://support.apple.com/guide/voiceover/welcome/mac)
 
-##### Related videos
+### Related videos
 
 - [Tailor the VoiceOver experience in your data-rich apps](https://developer.apple.com/videos/play/wwdc2021/10121)
   Learn how to present complex data through VoiceOver with the Accessibility Custom Content API. Discover how you can deliver accessibility information in a concise form, and only when someone wants it. We’ll show you how you can integrate AXCustomContent and help people who want VoiceOver enabled to navigate your data-rich apps in an efficient manner.

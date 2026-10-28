@@ -19,11 +19,11 @@ func PMPrinterGetMimeTypes(_ printer: PMPrinter, _ settings: PMPrintSettings?, _
 OSStatus PMPrinterGetMimeTypes(PMPrinter printer, PMPrintSettings settings, CFArrayRef  _Nullable *mimeTypes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function retrieves the types of data that can be submitted to a printer with the specified print settings; for example, `application/pdf`. This function is typically used in conjunction with the function [`PMPrinterPrintWithFile(_:_:_:_:_:)`](./api-1464600-pmprinterprintwithfile.md).
 

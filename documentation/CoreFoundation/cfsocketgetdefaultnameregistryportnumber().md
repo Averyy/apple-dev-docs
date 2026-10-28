@@ -25,11 +25,11 @@ func CFSocketGetDefaultNameRegistryPortNumber() -> UInt16
 extern UInt16 CFSocketGetDefaultNameRegistryPortNumber();
 ```
 
-#### Return Value
+## Return Value
 
 The default port number with which to connect to a CFSocket name server.
 
-#### Discussion
+## Discussion
 
 If you do not provide a name server signature or leave out the socket address in the signature when calling one of the name registry functions, such as [`CFSocketRegisterSocketSignature(_:_:_:_:)`](./cfsocketregistersocketsignature%28_,_,_,_%29.md), the returned port number is used for the connection.
 

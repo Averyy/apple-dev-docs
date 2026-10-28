@@ -22,11 +22,11 @@ nonisolated
 func scrollIndicatorsFlash(trigger value: some Equatable) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that flashes any visible scroll indicators when a value changes.
 
-#### Discussion
+## Discussion
 
 When the value that you provide to this modifier changes, the scroll indicators of any scrollable views within the modified view hierarchy briefly flash. The following example configures the scroll indicators to flash any time `flashCount` changes:
 

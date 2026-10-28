@@ -4,11 +4,11 @@
 
 An action that performs an animation to call attention to an object.
 
-#### Overview
+## Overview
 
 Instead of specifying your own animation, choose from the preexisting options in [motionType](./motiontype.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "EmphasizeAction"

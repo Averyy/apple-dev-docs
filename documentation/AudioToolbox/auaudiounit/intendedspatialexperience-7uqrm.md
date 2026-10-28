@@ -15,7 +15,7 @@ The AUAudioUnit’s intended spatial audio experience.
 var intendedSpatialExperience: any SpatialAudioExperience { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is only useful for output audio units; otherwise it’s a no-op.
 

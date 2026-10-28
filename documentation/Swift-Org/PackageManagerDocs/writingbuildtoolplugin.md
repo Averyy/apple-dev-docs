@@ -13,7 +13,7 @@ Create a build tool to process or generate files.
 **Availability**:
 - Swift 5.6+
 
-#### Overview
+## Overview
 
 The first step when writing a package plugin is to decide what kind of plugin you need. Implement a build tool plugin to generate source files that should be part of a build, or to perform other actions at the start of every build. Build tool plugins are invoked before a package is built in order to construct command invocations to run as part of the build.
 
@@ -28,17 +28,17 @@ With both prebuild and build commands, it is important to note that the build to
 
 A build tool plugin is available to the package that defines it, and if there is a corresponding plugin product, it is also available to any other package that has a direct dependency on the package.
 
-##### Build commands
+### Build commands
 
 Prefer to create a build command over a prebuild command when the paths of all of the inputs and outputs are known before the command runs. Build tool commands are more efficient because they provide the build system the information needed to efficiently decide when the build should invoke them.
 
 An example is a source translation tool that generates one output file (with a predictable name) for each input file. Other examples include when the build command controls the names of the outputs without having to first run the tool. In these cases the build system runs the commands only when some of the expected outputs are missing, or when the inputs have changed after the last time the command ran. Build commands don’t require a one-to-one correspondence between inputs and outputs; it is free to choose how many (if any) output files to create by examining the input target.
 
-##### Prebuild commands
+### Prebuild commands
 
 Create a prebuild command only when the names of the output aren’t known until the tool is run. This is the case if the *contents* of the input files (opposed to the input file names) determines the number and names of the output files, such as generating code based on the input of a configuration file. The build system runs prebuild commands run before every build. They should therefore do their own caching to minimize the work needed to avoid slowing down incremental builds.
 
-##### Declaring a build tool plugin in the package manifest
+### Declaring a build tool plugin in the package manifest
 
 Declare a build tool plugin in the package manifest. This is done using a `pluginTarget` entry in the `targets` section of the package. Add a corresponding `plugin` entry the products section to make the plugin available to other packages.
 
@@ -79,13 +79,13 @@ The [plugin target](https://developer.apple.com/documentation/packagedescription
 
 When you declare a `plugin` product, that makes the plugin visible to other packages that have a dependency on the package. The name of the plugin doesn’t have to match the name of the product, but they are often the same in order to avoid confusion. Only list the name of the plugin the target provides. If you only use the build tool plugin within the package, you don’t need to declare a `plugin` product.
 
-##### Build tool target dependencies
+### Build tool target dependencies
 
 The dependencies specify the command line tools available for use in commands constructed by the plugin. Each dependency can be either an `executableTarget` or a `binaryTarget` target in the same package, or can be an `executable` product in another package. In the example above, the plugin depends on the hypothetical *SomeTool* product in the *sometool* package on which the package that defines the plugin has a dependency. Note that this does not necessarily mean that *SomeTool* will have been built when the plugin is invoked. It means that the plugin can look up the path at which the tool will exist at the time any commands constructed by the plugin are run.
 
 Executable dependencies are built for the host platform as part of the build, while binary dependencies are references to `artifactbundle` archives that contains prebuilt binaries (see [SE-305](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0305-swiftpm-binary-target-improvements.md)). Binary targets are often used when the tool is built using a different build system than package manager, or when building it on demand is prohibitively expensive or requires a special build environment.
 
-##### Implementing the build tool plugin script
+### Implementing the build tool plugin script
 
 By default, Swift Package Manager looks for the implementation of a declared plugin in a subdirectory of the `Plugins` directory named with the same name as the plugin target. This can be overridden using the `path` parameter in the target declaration.
 
@@ -181,17 +181,17 @@ The build system runs prebuild commands after the plugin runs, but before the bu
 
 The package manager supports generated Swift source files and resources as outputs, but it does not support non-Swift source files. Any generated resources are processed as if they had been declared in the manifest with the `.process()` rule. The intent is to eventually support any type of file that you could include as a source file in the target, and to let the plugin provide greater control over the downstream processing of generated files.
 
-##### Diagnostics
+### Diagnostics
 
 Plugin entry points are marked `throws`, and any errors thrown from the entry point cause the build system to mark the plugin invocation as failed. Package manager presents the thrown error to the user, which should include a clear description of what went wrong.
 
 Additionally, plugins can use the `Diagnostics` API in PackagePlugin to emit warnings and errors. These optionally include references to file paths and line numbers in those files.
 
-##### Debugging and Testing
+### Debugging and Testing
 
 Package manager doesn’t currently have any specific support for debugging and testing plugins. Many plugins act as adapters that construct command lines for invoking the tools that do the real work. In the cases in which there is non-trivial code in a plugin, a good approach is to factor out that code into separate source files that can be included in unit tests using symbolic links with relative paths.
 
-##### Xcode Extensions to the PackagePlugin API
+### Xcode Extensions to the PackagePlugin API
 
 When you invoke a plugin in Apple’s Xcode IDE, the plugins have access to a library module provided by Xcode called *XcodeProjectPlugin*. This module extends the *PackagePlugin* APIs to let plugins work on Xcode targets in addition to packages.
 

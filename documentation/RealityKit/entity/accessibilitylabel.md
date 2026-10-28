@@ -24,7 +24,7 @@ A succinct label that identifies the purpose of the image.
 
 - [Improving the Accessibility of RealityKit Apps](../improving-the-accessibility-of-realitykit-apps.md)
 
-#### Discussion
+## Discussion
 
 The default value for this property is `false`.
 

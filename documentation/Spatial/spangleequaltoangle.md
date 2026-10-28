@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether two angles are equal.
 static bool SPAngleEqualToAngle(SPAngle angle1, SPAngle angle2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two values are equal.
 
-#### Discussion
+## Discussion
 
 Note that this function compares the raw value of each angle and doesn’t normalize the values. For example, 360° doesn’t equal 0°.
 

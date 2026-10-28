@@ -15,7 +15,7 @@ typedef enum SCSITaskMode : unsigned int {
 } SCSITaskMode;
 ```
 
-#### Overview
+## Overview
 
 The SCSI Task mode is used by the SCSI Protocol Layer to indicate what mode the task is executing.
 

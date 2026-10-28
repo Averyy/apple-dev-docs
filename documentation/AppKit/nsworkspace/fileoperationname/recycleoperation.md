@@ -21,7 +21,7 @@ static let recycleOperation: NSWorkspace.FileOperationName
 extern NSWorkspaceFileOperationName NSWorkspaceRecycleOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The file is moved to the trash folder on the volume containing the file using the same semantics as [`moveOperation`](./moveoperation.md). If a file with the same name currently exists in the trash folder, the new file is renamed. If no trash folder exists on the volume containing the file, the operation fails.
 

@@ -15,11 +15,11 @@ Get (archaic) filesystem type number.
 int vfs_typenum(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Type number.
 
-#### Discussion
+## Discussion
 
 Filesystem type numbers are an old construct; most filesystems just get a number assigned based on the order in which they are registered with the system.
 

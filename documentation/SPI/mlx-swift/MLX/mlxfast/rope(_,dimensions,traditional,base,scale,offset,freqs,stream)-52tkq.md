@@ -17,7 +17,7 @@ Optimized implementation of `NN.RoPE`.
 static func RoPE(_ array: MLXArray, dimensions: Int, traditional: Bool, base: Float?, scale: Float, offset: Int, freqs: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Used like this:
 

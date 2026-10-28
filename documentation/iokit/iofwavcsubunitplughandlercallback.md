@@ -16,7 +16,7 @@ Callback called when a incoming AVC command matching a registered command handle
 typedef IOReturn (*IOFWAVCSubunitPlugHandlerCallback)(void *refCon, UInt32 subunitTypeAndID, IOFWAVCPlugTypes plugType, UInt32 plugNum, IOFWAVCSubunitPlugMessages plugMessage, UInt32 messageParams);
 ```
 
-#### Return Value
+## Return Value
 
 The return value is only pertinent for the kIOFWAVCSubunitPlugMsgSignalFormatModified message. Return an error if not accepting the sig format change.
 

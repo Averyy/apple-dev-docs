@@ -24,7 +24,7 @@ func accessibilityElementDidBecomeFocused()
 - (void) accessibilityElementDidBecomeFocused;
 ```
 
-#### Discussion
+## Discussion
 
 Override `accessibilityElementDidBecomeFocused` if you need to know when an assistive technology has set its virtual focus on an accessibility element.
 

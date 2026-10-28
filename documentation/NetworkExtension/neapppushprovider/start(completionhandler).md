@@ -26,7 +26,7 @@ func start(completionHandler: @escaping ((any Error)?) -> Void)
 
 - [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
-#### Discussion
+## Discussion
 
 An [`NEAppPushProvider`](../neapppushprovider.md) subclass must override this method to create a connection with its server.
 

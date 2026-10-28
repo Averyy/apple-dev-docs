@@ -12,7 +12,7 @@ virtual void setDeviceMemory(
  OSArray *array );
 ```
 
-#### Overview
+## Overview
 
 This method sets an array of IODeviceMemory objects representing the physical memory ranges allocated to a memory mapped device.
 

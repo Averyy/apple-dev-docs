@@ -19,7 +19,7 @@ var avoidsEmptySelection: Bool { get set }
 @property BOOL avoidsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the tree controller maintains a selection unless there are no objects in the content. The default value is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

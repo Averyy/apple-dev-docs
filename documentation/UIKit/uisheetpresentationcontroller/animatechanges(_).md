@@ -22,7 +22,7 @@ func animateChanges(_ changes: () -> Void)
 - (void) animateChanges:(void (^)()) changes;
 ```
 
-#### Discussion
+## Discussion
 
 To animate changes to any of the sheet’s properties, set them inside the block that you pass to this method. By the time this method returns, layout finishes for the sheet, all adjacent sheets in the sheet stack, and their subviews.
 

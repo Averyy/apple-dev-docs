@@ -42,7 +42,7 @@ var browser: MCNearbyServiceBrowser { get }
 @property (atomic, readonly) MCNearbyServiceBrowser * browser;
 ```
 
-#### Discussion
+## Discussion
 
 This value is set when you initialize the object, and cannot be changed later.
 

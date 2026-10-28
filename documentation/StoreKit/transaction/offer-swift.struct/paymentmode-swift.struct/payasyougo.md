@@ -21,7 +21,7 @@ A payment mode of a product discount that applies over a single billing period o
 static let payAsYouGo: Transaction.Offer.PaymentMode
 ```
 
-#### Discussion
+## Discussion
 
 With a Pay As You Go payment mode, subscribers pay a discounted price for each billing period for the duration of the discount.
 

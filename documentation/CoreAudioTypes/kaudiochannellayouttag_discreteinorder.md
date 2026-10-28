@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_DiscreteInOrder: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_DiscreteInOrder
 ```
 
-#### Discussion
+## Discussion
 
 This tag needs to be `OR`ed with the actual number of channels.
 

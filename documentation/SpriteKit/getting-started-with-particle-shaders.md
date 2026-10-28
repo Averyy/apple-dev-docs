@@ -5,7 +5,7 @@
 
 Provide custom shader code to alter a particle’s look.
 
-#### Overview
+## Overview
 
 Use the shader property of an emitter node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within an [`SKShader`](./skshader.md). Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures, to generating imagery such as random noise.
 

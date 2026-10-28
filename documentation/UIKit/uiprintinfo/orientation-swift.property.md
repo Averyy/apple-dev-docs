@@ -22,7 +22,7 @@ var orientation: UIPrintInfo.Orientation { get set }
 @property (nonatomic) UIPrintInfoOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 An application can set this property to a value thats appropriate to the printable content or it can put up a user interface that enables users to pick the printing orientation. The default value is [`UIPrintInfo.Orientation.portrait`](./orientation-swift.enum/portrait.md). See the descriptions of the [`UIPrintInfo.Orientation`](./orientation-swift.enum.md) constants for more information.
 

@@ -20,7 +20,7 @@ An application extension that uses the system implementation to schedule Apple-h
 @protocol SKDownloaderExtension <BAManagedDownloaderExtension>
 ```
 
-#### Overview
+## Overview
 
 You can optionally implement the inherited `BAManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements. For more information, see [Background Assets](../BackgroundAssets/BackgroundAssets.md).
 

@@ -23,11 +23,11 @@ var ignoredWords: [String]? { get set }
 @property (nonatomic, strong, nullable) NSArray<NSString *> * ignoredWords;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings, each of which specifies a word the receiver ignores when it is spell-checking a document.
 
-#### Discussion
+## Discussion
 
 The spell checker excludes ignored words as misspelled words during the current spell-checking session only.
 

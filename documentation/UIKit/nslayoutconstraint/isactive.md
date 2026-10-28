@@ -23,7 +23,7 @@ var isActive: Bool { get set }
 @property (getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 You can activate or deactivate a constraint by changing this property. Note that only active constraints affect the calculated layout. If you try to activate a constraint whose items have no common ancestor, an exception is thrown. For newly created constraints, the [`isActive`](./isactive.md) property is [`false`](../../Swift/false.md) by default.
 

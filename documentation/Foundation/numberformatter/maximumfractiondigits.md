@@ -25,7 +25,7 @@ var maximumFractionDigits: Int { get set }
 @property NSUInteger maximumFractionDigits;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to `0`.
 

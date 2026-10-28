@@ -23,7 +23,7 @@ case scroll
 UIPageViewControllerTransitionStyleScroll
 ```
 
-#### Discussion
+## Discussion
 
 When the page scrolling style is specified, the page view controller displays a page-scrolling animation when transitioning between view controllers. If a data source is specified, the animation follows the user’s finger during a navigation gesture.
 

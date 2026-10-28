@@ -19,7 +19,7 @@ var state: WKExtendedRuntimeSessionState { get }
 @property (nonatomic, readonly) WKExtendedRuntimeSessionState state;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of session states, see [`WKExtendedRuntimeSessionState`](../wkextendedruntimesessionstate.md).
 

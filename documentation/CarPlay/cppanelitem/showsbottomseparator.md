@@ -21,7 +21,7 @@ var showsBottomSeparator: Bool { get set }
 @property (nonatomic) BOOL showsBottomSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, CarPlay draws a line along the bottom edge of the item to separate it from the next item. Set this property to `false` if you don’t want to draw the separator. The default value of this property is `true`.
 

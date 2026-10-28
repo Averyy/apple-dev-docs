@@ -26,7 +26,7 @@ func AUGraphGetCPULoad(_ inGraph: AUGraph, _ outAverageCPULoad: UnsafeMutablePoi
 extern OSStatus AUGraphGetCPULoad(AUGraph inGraph, Float32 *outAverageCPULoad);
 ```
 
-#### Return Value
+## Return Value
 
 ## Parameters
 

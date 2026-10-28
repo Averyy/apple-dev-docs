@@ -19,7 +19,7 @@ var accessibilityRole: String? { get set }
 @property (nonatomic, copy, nullable) NSString * accessibilityRole;
 ```
 
-#### Discussion
+## Discussion
 
 See [Roles](../../applicationservices/carbon_accessibility/roles.md) for more information.
 

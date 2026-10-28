@@ -25,7 +25,7 @@ func CFArrayGetLastIndexOfValue(_ theArray: CFArray!, _ range: CFRange, _ value:
 extern CFIndex CFArrayGetLastIndexOfValue(CFArrayRef theArray, CFRange range, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The highest index of the matching values in the range, or `-1` if no value in the range matched.
 

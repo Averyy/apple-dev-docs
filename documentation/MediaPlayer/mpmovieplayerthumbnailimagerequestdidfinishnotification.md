@@ -18,7 +18,7 @@ Posted when a request to capture a thumbnail from a movie has finished whether t
 extern NSString * const MPMoviePlayerThumbnailImageRequestDidFinishNotification;
 ```
 
-#### Discussion
+## Discussion
 
 - [`MPMoviePlayerThumbnailImageKey`](./mpmovieplayerthumbnailimagekey.md)
 - [`MPMoviePlayerThumbnailTimeKey`](./mpmovieplayerthumbnailtimekey.md)

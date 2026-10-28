@@ -24,7 +24,7 @@ static func angularGradient(colors: [Color], center: UnitPoint, startAngle: Angl
 
 Available when `Self` is `AngularGradient`.
 
-#### Discussion
+## Discussion
 
 For more information on how to use angular gradients, see [`angularGradient(_:center:startAngle:endAngle:)`](./angulargradient%28_,center,startangle,endangle%29.md).
 

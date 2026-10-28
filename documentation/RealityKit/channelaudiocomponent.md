@@ -20,7 +20,7 @@ A component that configures channel-based rendering of sounds from an entity.
 struct ChannelAudioComponent
 ```
 
-#### Overview
+## Overview
 
 Channel audio sources route the audio resource’s channels directly to the device’s output without any spatialization or reverberation applied. Neither the position nor orientation of the entity is taken into consideration for channel rendering. For example, the left channel is heard from the left, and the right channel is heard from the right, regardless of where the user is oriented.
 

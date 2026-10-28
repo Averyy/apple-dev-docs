@@ -21,7 +21,7 @@ The minute-by-minute forecast.
 var minuteForecast: Forecast<MinuteWeather>?
 ```
 
-#### Discussion
+## Discussion
 
 Depending upon region support and data availability, this may be `nil`.
 

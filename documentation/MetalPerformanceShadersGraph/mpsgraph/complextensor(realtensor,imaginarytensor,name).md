@@ -24,7 +24,7 @@ func complexTensor(realTensor: MPSGraphTensor, imaginaryTensor: MPSGraphTensor, 
 - (MPSGraphTensor *) complexTensorWithRealTensor:(MPSGraphTensor *) realTensor imaginaryTensor:(MPSGraphTensor *) imaginaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 

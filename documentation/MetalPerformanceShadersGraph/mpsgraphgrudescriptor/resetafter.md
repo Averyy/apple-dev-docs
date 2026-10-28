@@ -24,7 +24,7 @@ var resetAfter: Bool { get set }
 @property (nonatomic, readwrite) BOOL resetAfter;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the layer will compute the intermediate value as `c[t] = ( b + (h[t-1] m ) R^T) r[t]`. Otherwise it’s computed as `c[t] = (h[t-1] r[t] m) R^T`. Default value: `NO`.
 

@@ -24,7 +24,7 @@ nonisolated
 func tabItem<V>(@ContentBuilder _ label: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Use `tabItem(_:)` to configure a view as a tab bar item in a [`TabView`](../tabview.md). The example below adds two views as tabs in a [`TabView`](../tabview.md):
 

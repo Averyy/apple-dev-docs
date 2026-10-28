@@ -19,7 +19,7 @@ var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy { get set }
 @property NSViewLayerContentsRedrawPolicy layerContentsRedrawPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The [`layerContentsRedrawPolicy`](./layercontentsredrawpolicy-swift.property.md) and [`layerContentsPlacement`](./layercontentsplacement-swift.property.md) settings can have significant impacts on performance. If you do not need to redraw your view during each frame update cycle, or if you are willing to accept an approximation of the view’s intermediate appearance during potentially brief animations in exchange for an animation performance and smoothness benefit, you can change the value of this property to one of the modes that does not require constant redrawing. When you do so, you must also specify the desired layer content placement for the view. The content placement determines how the backing layer’s existing cached content image will be mapped into the layer as the layer is resized. It is analogous to, and underpinned by, the [`contentsGravity`](../../QuartzCore/calayer/contentsgravity.md) property of the [`CALayer`](../../QuartzCore/calayer.md) class.
 

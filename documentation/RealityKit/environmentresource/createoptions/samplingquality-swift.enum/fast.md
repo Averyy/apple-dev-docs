@@ -20,7 +20,7 @@ Computes the environment textures with small sampling rates.
 case fast
 ```
 
-#### Discussion
+## Discussion
 
 Low sampling rates can result in higher noise in high-frequency areas and banding in low-frequency gradients.
 

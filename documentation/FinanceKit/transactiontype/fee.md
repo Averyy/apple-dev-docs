@@ -16,7 +16,7 @@ A fee or charge levied by the account provider.
 case fee
 ```
 
-#### Discussion
+## Discussion
 
 For example, an overdraft fee or foreign currency commission.
 

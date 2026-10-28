@@ -16,7 +16,7 @@ Called when the user-facing Head Tracking state for this accessory changes (e.g.
 func headTrackingStateDidChange(isActive: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Implementations should start or stop sampling the accessory’s IMU based on the new state.
 

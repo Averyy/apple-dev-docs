@@ -20,7 +20,7 @@ The names of the joints in the pose in specific order.
 var jointNames: [String] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Each joint name has a corresponding transformation value in [`jointTransforms`](./jointtransforms.md) at the same index.
 

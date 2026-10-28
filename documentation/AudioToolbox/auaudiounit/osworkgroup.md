@@ -32,7 +32,7 @@ The workgroup associated with the audio device underlying this Audio Unit.
 
 - [Adding Parallel Real-Time Threads to Audio Workgroups](../adding-parallel-real-time-threads-to-audio-workgroups.md)
 
-#### Discussion
+## Discussion
 
 Workgroups allow multiple threads to coordinate their activities for realtime operations. For Audio Units, this coordination occurs between the Audio Unit and other processes, such as the audio server and host app. The system uses the workgroup to observe the threads’ CPU usage and dynamically balance the competing considerations of power consumption and real-time rendering capacity.
 

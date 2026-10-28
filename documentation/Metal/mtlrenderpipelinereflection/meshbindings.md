@@ -24,7 +24,7 @@ var meshBindings: [any MTLBinding] { get }
 @property (readonly, nonnull) NSArray<id<MTLBinding>> * meshBindings;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the mesh shader’s declaration signature.
 

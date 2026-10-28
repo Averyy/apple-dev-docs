@@ -5,11 +5,11 @@
 
 Learn about important changes to Accelerate.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Accelerate](../Accelerate/Accelerate.md).
 
-#### June 2024
+## June 2024
 
 - Check out the updated BLAS and LAPACK libraries under the Accelerate framework, now in line with LAPACK 3.11.0.
 - Discover BNNS Graph API added to the Basic Neural Network Subroutines library that consumes, optimizes, and executes an entire ML model. BNNS Graph is suited to real-time and latency-sensitive ML use cases.

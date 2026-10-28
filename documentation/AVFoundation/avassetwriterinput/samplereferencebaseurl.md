@@ -24,7 +24,7 @@ var sampleReferenceBaseURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * sampleReferenceBaseURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for file types that support writing sample references, such as QuickTime files. If the system resolves the value of this property to an absolute URL, the sample references it appends are relative to this URL. The URL must point to a location that’s in a directory that’s a parent of the sample reference location.
 

@@ -25,7 +25,7 @@ class NSConditionLock
 @interface NSConditionLock : NSObject
 ```
 
-#### Overview
+## Overview
 
 Using an [`NSConditionLock`](./nsconditionlock.md) object, you can ensure that a thread can acquire a lock only if a certain condition is met. Once it has acquired the lock and executed the critical section of code, the thread can relinquish the lock and set the associated condition to something new. The conditions themselves are arbitrary: you define them as needed for your application.
 

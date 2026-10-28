@@ -25,7 +25,7 @@ func CTFontCopyPostScriptName(_ font: CTFont) -> CFString
 extern CFStringRefCTFontCopyPostScriptName(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the PostScript name of the font.
 

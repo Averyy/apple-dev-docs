@@ -23,11 +23,11 @@ class func disambiguation(with paymentAmountsToDisambiguate: [INPaymentAmount]) 
 + (instancetype) disambiguationWithPaymentAmountsToDisambiguate:(NSArray<INPaymentAmount *> *) paymentAmountsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAmountResolutionResult`](../inpaymentamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the user request uniquely and want the user to select from a limited set of possible options. For example, you might use this method if the user’s initial request did not specify a payment amount and you want to specify options to pay the minimum amount due or the total amount.
 

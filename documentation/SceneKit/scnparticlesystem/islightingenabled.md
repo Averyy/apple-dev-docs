@@ -25,7 +25,7 @@ var isLightingEnabled: Bool { get set }
 @property (nonatomic, getter=isLightingEnabled) BOOL lightingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), SceneKit uses the position, color, and other attributes of [`SCNLight`](../scnlight.md) objects in the scene to shade each rendered particle image. Use this option to enhance volumetric effects such as smoke and fog.
 

@@ -19,7 +19,7 @@ func validateEditing()
 - (void) validateEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Validation sets the object value of the cell to the current contents of the cell’s editor (the [`NSText`](../nstext.md) object used for editing), storing it as a simple [`NSString`](../../Foundation/nsstring.md) or an attributed string object based on the attributes of the editor.
 

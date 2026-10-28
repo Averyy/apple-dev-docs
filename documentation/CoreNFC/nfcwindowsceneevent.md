@@ -17,7 +17,7 @@ An NFC-related event that your app uses to update its user interface.
 enum NFCWindowSceneEvent
 ```
 
-#### Overview
+## Overview
 
 When the device is eligible to receive NFC-related events, this type indicates the type of received event. The event may indicate the presence of an NFC reader or a gesture by the person using the app to initiate a contactless transaction. [`NFCWindowSceneEvent`](./nfcwindowsceneevent.md) represents these as the [`NFCWindowSceneEvent.readerDetected`](./nfcwindowsceneevent/readerdetected.md) and [`NFCWindowSceneEvent.presentation`](./nfcwindowsceneevent/presentation.md) cases, respectively.
 

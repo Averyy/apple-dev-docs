@@ -26,7 +26,7 @@ func setOpacityRamp(fromStartOpacity startOpacity: Float, toEndOpacity endOpacit
 - (void) setOpacityRampFromStartOpacity:(float) startOpacity toEndOpacity:(float) endOpacity timeRange:(CMTimeRange) timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 During an opacity ramp, opacity is computed using a linear interpolation. Before the first time for which an opacity is set, the opacity is held constant at `1.0`; after the last specified time, the opacity is held constant at the last value.
 

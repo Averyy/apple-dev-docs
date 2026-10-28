@@ -21,11 +21,11 @@ init(trip: CPTrip, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = 
 - (instancetype) initWithTrip:(CPTrip *) trip handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with trip information.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel shows journey’s destination point, its origin point, and the number of available route choices. This item type doesn’t show details about the individual route choice.
 

@@ -24,7 +24,7 @@ let CNErrorUserInfoAffectedRecordIdentifiersKey: String
 extern NSString * const CNErrorUserInfoAffectedRecordIdentifiersKey;
 ```
 
-#### Discussion
+## Discussion
 
 An array of one or more [`NSString`](../Foundation/nsstring.md) objects for which the error code applies.
 

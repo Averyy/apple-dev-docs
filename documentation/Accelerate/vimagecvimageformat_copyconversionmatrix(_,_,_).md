@@ -25,11 +25,11 @@ func vImageCVImageFormat_CopyConversionMatrix(_ format: vImageCVImageFormat, _ m
 vImage_Error vImageCVImageFormat_CopyConversionMatrix(vImageCVImageFormatRef format, const void *matrix, vImageMatrixType inType);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

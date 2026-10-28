@@ -19,7 +19,7 @@ var maxValue: Double { get set }
 @property double maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a determinate progress indicator goes from `0.0` to `100.0`, so the default value of this property is `100.0`.
 

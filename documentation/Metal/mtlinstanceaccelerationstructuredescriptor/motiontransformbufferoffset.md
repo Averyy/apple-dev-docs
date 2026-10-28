@@ -24,7 +24,7 @@ var motionTransformBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger motionTransformBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of 64 bytes. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 

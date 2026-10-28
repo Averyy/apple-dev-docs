@@ -20,7 +20,7 @@ let kSecCodeInfoStatus: CFString
 extern CFStringRef const kSecCodeInfoStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object. This is a snapshot taken at the time the function is executed and may be out of date by the time you examine it. Note, however, that some flag values cannot be changed and are therefore permanently reliable. See [`SecCodeStatus`](./seccodestatus.md) for a list of possible values.
 

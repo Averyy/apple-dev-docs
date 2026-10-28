@@ -22,11 +22,11 @@ class func canPrint(_ data: Data) -> Bool
 + (BOOL) canPrintData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if UIKit can print the contents of the data object, otherwise [`false`](../../Swift/false.md). The method returns [`false`](../../Swift/false.md) if `data` is PDF data that specifies that printing is not allowed.
 
-#### Discussion
+## Discussion
 
 You should call this method to test a data object prior to assigning it to [`printingItem`](./printingitem.md) or [`printingItems`](./printingitems.md).
 

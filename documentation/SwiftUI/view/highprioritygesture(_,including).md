@@ -22,7 +22,7 @@ nonisolated
 func highPriorityGesture<T>(_ gesture: T, including mask: GestureMask = .all) -> some View where T : Gesture
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to define a high priority gesture to take precedence over the view’s existing gestures. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](../vstack.md). Inside the [`VStack`](../vstack.md) a red heart [`Image`](../image.md) defines its own [`TapGesture`](../tapgesture.md) handler that also prints a message to the console, and a blue rectangle with no custom gesture handlers. Tapping or clicking any of the views results in a console message from the high priority gesture attached to the enclosing [`VStack`](../vstack.md).
 

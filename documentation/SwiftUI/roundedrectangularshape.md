@@ -21,7 +21,7 @@ A protocol of [`InsettableShape`](./insettableshape.md) that describes a rounded
 protocol RoundedRectangularShape : InsettableShape
 ```
 
-#### Overview
+## Overview
 
 Conform your [`InsettableShape`](./insettableshape.md) type to [`RoundedRectangularShape`](./roundedrectangularshape.md) when your shape is a rounded rectangular with four corners and you want to expose information about the corners. For example, a custom triangle [`Shape`](./shape.md) is not fit for such conformance, while a custom rectangle [`Shape`](./shape.md) could benefit from providing the implementation, especially when the shape is used as a container shape in [`containerShape(_:)`](./view/containershape%28_%29-3br47.md) to achieve concentricity.
 

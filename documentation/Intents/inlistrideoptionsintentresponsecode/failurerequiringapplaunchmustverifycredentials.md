@@ -23,7 +23,7 @@ case failureRequiringAppLaunchMustVerifyCredentials
 INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchMustVerifyCredentials
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you require the user to login or sign up for your service and the user is currently not logged in or signed up. Specify this code to redirect the user to your app to provide the appropriate credentials. Don’t use this response code for general errors or to force the user to launch your app.
 

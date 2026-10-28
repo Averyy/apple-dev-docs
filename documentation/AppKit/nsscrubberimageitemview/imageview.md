@@ -19,7 +19,7 @@ var imageView: NSImageView { get }
 @property (strong, readonly) NSImageView * imageView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access and configure the underlying image view used to display the image in the [`image`](./image.md) property.
 

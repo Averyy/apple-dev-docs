@@ -16,7 +16,7 @@ A URL to a web page where the user can update or delete the payment method for t
 required DOMString managementURL;
 ```
 
-#### Discussion
+## Discussion
 
 When users remove a payment method, the system deletes the associated Apple Pay merchant token.
 

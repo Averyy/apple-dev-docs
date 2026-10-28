@@ -11,17 +11,17 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Build and flash Harmony, a Raspberry Pi Pico W firmware in Swift that streams Bluetooth audio and drives a ferrofluid visualizer.
 
-#### Overview
+## Overview
 
 Harmony integrates with the Pico SDK’s CMake build system, similar to [Blinking an LED in Morse code on the Raspberry Pi Pico W with the Pico SDK](./rpipicowblinkguide.md), but combines several additional subsystems: BTstack for Bluetooth Classic and the A2DP/AVRCP profiles, an SBC audio decoder, a PIO-driven I2S audio pipeline, a quadrature encoder and button input, and a WS2812 LED strip driver, all written in Swift. See `harmony/README.md` for the Bill of Materials and hardware assembly details.
 
 > **Note**: This example uses the Pico SDK’s CMake build system, not a baremetal setup. See [Blinking an LED on the Raspberry Pi Pico with the Pico SDK](./rpipicoguide.md) for the CMake and Pico SDK integration this example builds on.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Install dependencies
+## Install dependencies
 
 - A checkout of the [pico-sdk](https://github.com/raspberrypi/pico-sdk.git), with git submodules checked out.
 - A checkout of [pico-extras](https://github.com/raspberrypi/pico-extras.git).
@@ -29,7 +29,7 @@ Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md
 - The [Arm Embedded Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads).
 - [OpenOCD](https://openocd.org/), for flashing over the Pico’s debug port.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory, set the required environment variables, and configure the build:
 
@@ -48,7 +48,7 @@ Build the project:
 $ cmake --build build
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the Pico to your Mac using USB, and put it into BOOTSEL mode by holding the BOOTSEL button while plugging it in. Flash the firmware with OpenOCD:
 
@@ -58,7 +58,7 @@ $ openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000
 
 After the device reboots, pair with it over Bluetooth and stream audio to hear it play through the speaker while the ferrofluid display reacts to the music.
 
-#### Monitor UART output
+## Monitor UART output
 
 Connect to the Pico’s UART using a serial terminal program, for example the macOS built-in `screen`:
 

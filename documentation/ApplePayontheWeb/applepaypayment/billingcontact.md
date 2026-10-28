@@ -16,7 +16,7 @@ The billing contact selected by the user for this transaction.
 ApplePayPaymentContact billingContact;
 ```
 
-#### Discussion
+## Discussion
 
 The billing contact information is populated if it is requested in [`ApplePayPaymentRequest`](../applepaypaymentrequest.md).
 

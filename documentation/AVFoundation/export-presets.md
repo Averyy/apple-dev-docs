@@ -5,7 +5,7 @@
 
 Configure an export session to output media in standard sizes and formats.
 
-#### Overview
+## Overview
 
 Use the preset name constants to initialize an instance of [`AVAssetExportSession`](./avassetexportsession.md).
 

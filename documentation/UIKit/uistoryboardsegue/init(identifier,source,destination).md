@@ -25,11 +25,11 @@ init(identifier: String?, source: UIViewController, destination: UIViewControlle
 - (instancetype) initWithIdentifier:(NSString *) identifier source:(UIViewController *) source destination:(UIViewController *) destination;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized segue object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for segue objects. If you subclass [`UIStoryboardSegue`](../uistoryboardsegue.md), you can override this method and perform any custom initialization in your implementation. Your implementation should call `super` first and then proceed if that method doesn’t return `nil`.
 

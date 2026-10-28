@@ -5,7 +5,7 @@
 
 Recognize the rate limits that apply to Retention Messaging API endpoints, and handle them in your code.
 
-#### Overview
+## Overview
 
 The Retention Messaging API limits the number of requests that you can submit to each endpoint within a specified timespan. The request limits apply per app.
 
@@ -32,7 +32,7 @@ The rate limits in the sandbox environment are 10% of the limits in the table ab
 
 The App Store server may make adjustments to reduce or increase these rate limits as needed at any time.
 
-##### Handle exceeded rate limits gracefully
+### Handle exceeded rate limits gracefully
 
 If you exceed a per-hour limit, the API rejects the request with an `HTTP` `429` response with a [`RateLimitExceededError`](./ratelimitexceedederror.md) object in the body.  Consider the following as you integrate the API:
 

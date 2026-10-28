@@ -5,7 +5,7 @@
 
 Discover the valid asset specifications, placement groups, and limits for placements.
 
-#### Overview
+## Overview
 
 The `appAssetLibraryRefData` resource represents reference data that describes the valid asset specifications, dimensions, placement groups, and per-placement limits for the asset library. Use it to:
 

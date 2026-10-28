@@ -25,7 +25,7 @@ let kCTFontVariationAxisMaximumValueKey: CFString
 extern CFStringRef const kCTFontVariationAxisMaximumValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the variation axis maximum value as a reference to a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

@@ -23,11 +23,11 @@ func IOServiceAddMatchingNotification(_ notifyPort: IONotificationPortRef!, _ no
 kern_return_t IOServiceAddMatchingNotification(IONotificationPortRef notifyPort, const io_name_t notificationType, CFDictionaryRef matching, IOServiceMatchingCallback callback, void *refCon, io_iterator_t *notification);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This is the preferred method of finding IOService objects that may arrive at any time. The type of notification specifies the state change the caller is interested in, on IOService's that match the match dictionary. Notification types are identified by name, and are defined in IOKitKeys.h. The matching information used in the matching dictionary may vary depending on the class of service being looked up.
 

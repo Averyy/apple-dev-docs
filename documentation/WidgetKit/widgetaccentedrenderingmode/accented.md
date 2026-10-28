@@ -24,7 +24,7 @@ static let accented: WidgetAccentedRenderingMode
 
 - [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
-#### Discussion
+## Discussion
 
 It is equivalent to applying the `.widgetAccentable()` modifier to the `Image`.
 

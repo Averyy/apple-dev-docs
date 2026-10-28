@@ -5,7 +5,7 @@
 
 Manage required App Clip information you provide for App Review.
 
-#### Overview
+## Overview
 
 The `appClipAppStoreReviewDetails` resource represents information about your App Clip that’s required by App Review. Use it to read, update, and add invocation URLs of your App Clip required for App Review.
 

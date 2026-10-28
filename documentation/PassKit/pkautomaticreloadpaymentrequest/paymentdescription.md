@@ -23,7 +23,7 @@ var paymentDescription: String { get set }
 @property (nonatomic, copy) NSString * paymentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a display name for the automatic reload, for example, “Gift Card Reload”.
 

@@ -12,11 +12,11 @@ virtual unsigned int setCapacityIncrement(
  unsigned increment);
 ```
 
-#### Return Value
+## Return Value
 
 The new storage increment of the array, which may be different from the number requested.
 
-#### Overview
+## Overview
 
 An OSArray allocates storage for objects in multiples of the capacity increment. Calling this function does not immediately reallocate storage.
 

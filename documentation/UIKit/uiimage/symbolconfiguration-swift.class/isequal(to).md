@@ -24,7 +24,7 @@ func isEqual(to otherConfiguration: UIImage.SymbolConfiguration?) -> Bool
 - (BOOL) isEqualToConfiguration:(UIImageSymbolConfiguration *) otherConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../../Swift/true.md) if the trait collections and image configuration values of both objects match; otherwise, [`false`](../../../Swift/false.md).
 

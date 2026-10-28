@@ -23,7 +23,7 @@ convenience init(descriptor tensorDescriptor: MLCTensorDescriptor)
 + (instancetype) tensorWithDescriptor:(MLCTensorDescriptor *) tensorDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

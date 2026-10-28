@@ -16,7 +16,7 @@ A container view that presents either a 3D model or a placeholder for one.
 @preconcurrency struct Model3DPlaceholderContent<Model, Placeholder> where Model : View, Placeholder : View
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate this type directly. [`Model3D`](./model3d.md) creates it for you.
 

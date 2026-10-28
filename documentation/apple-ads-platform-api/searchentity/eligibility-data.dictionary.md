@@ -15,7 +15,7 @@ Supply source eligibility restrictions for this search entity.
 object SearchEntity.Eligibility
 ```
 
-#### Discussion
+## Discussion
 
 The API scopes `eligibility` to the supply source specified in the request and omits it from the response entirely when no restrictions apply to that location.
 

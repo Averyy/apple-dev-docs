@@ -19,7 +19,7 @@ Returns the camera view model for the given immersive camera identifier.
 final func cameraViewModel(for id: String) -> ImmersiveCameraViewModel?
 ```
 
-#### Return Value
+## Return Value
 
 ImmersiveCameraViewModel describing the geometries, mask and other information to be used for that camera for rendering.
 

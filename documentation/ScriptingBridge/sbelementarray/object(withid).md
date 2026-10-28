@@ -20,11 +20,11 @@ func object(withID identifier: Any) -> Any
 - (ObjectType) objectWithID:(id) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the identified object or `nil` if could not be found.
 
-#### Discussion
+## Discussion
 
 This method is provided as an alternative to [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where an identifier is available instead of (or in addition to) an index. A unique ID is generally more stable than an index. For example, it may be more useful to identify a contact in Address Book by its identifier (which doesn’t change over time) than by its index in the list of contacts (which can change as contacts are added or removed).
 

@@ -35,7 +35,7 @@ var storefront: SKStorefront? { get }
 @property (atomic, readonly, nullable) SKStorefront * storefront;
 ```
 
-#### Discussion
+## Discussion
 
 The storefront information tells you the device’s App Store region. You can use this information to display products that your app makes available in specific regions. You maintain your own list of product identifiers and the storefronts in which you make them available.
 

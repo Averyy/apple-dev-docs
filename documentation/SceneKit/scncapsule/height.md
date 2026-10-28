@@ -25,7 +25,7 @@ var height: CGFloat { get set }
 @property (nonatomic) CGFloat height;
 ```
 
-#### Discussion
+## Discussion
 
 The capsule is centered in its local coordinate system. For example, if a capsule has a height of `10.0`, it extends from `-5.0` to `5.0` along the y-axis. This property measures the total height of the capsule, including its hemispherical ends.
 

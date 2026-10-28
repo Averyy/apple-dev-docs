@@ -5,13 +5,13 @@
 
 Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 
-#### Overview
+## Overview
 
 Some APIs are usable from a daemon but require that the daemon claim a restricted entitlement thatʼs authorized by a provisioning profile. For example, the [Endpoint Security](../EndpointSecurity/EndpointSecurity.md) API is usable from a daemon but requires that the daemon has the [`com.apple.developer.endpoint-security.client`](../BundleResources/entitlements/com.apple.developer.endpoint-security.client.md) entitlement, and that it’s authorized by a provisioning profile. This is problematic because a daemon is a standalone executable, so you canʼt embed a provisioning profile in it. To get around this limitation, wrap your daemon in an app-like structure.
 
 > ❗ **Important**: If the API youʼre using supports system extensions, avoid this issue by switching from a daemon to a system extension. System extensions readily support provisioning profiles, and Xcode automatically creates and embeds the profile in that case.
 
-##### Create a minimal daemon project
+### Create a minimal daemon project
 
 The basic idea is to create an app target, rather than a command-line tool target, and then remove all of the app-specific content and replace it with your daemon code. To start, create a new project with an app target by choosing File > New > Project and selecting the macOS > App template. Set the Interface popup to Storyboard, the Life Cycle popup (if present) to AppKit App Delegate, and the Language popup to Swift.
 
@@ -94,7 +94,7 @@ DaemonInAppsClothing.app/
 
 Note the presence of the embedded provisioning profile; itʼs this profile that authorizes your daemon to use the `com.apple.developer.networking.custom-protocol` entitlement.
 
-##### Test your daemon
+### Test your daemon
 
 To properly test your daemon, run it in a daemon context.  First, copy the built daemon to a secure location:
 
@@ -141,7 +141,7 @@ entitlements: {
 
 If you miss it, run the `launchctl start` command to start your daemon again.
 
-##### Integrate your daemon code
+### Integrate your daemon code
 
 Now that you have a working minimal daemon, itʼs time to integrate your real daemon code into the project.  Add your code to the project as you would with any other Xcode project.  If necessary, replace `main.swift` with a C, C++, Objective-C, or Objective-C++ main entry point.
 

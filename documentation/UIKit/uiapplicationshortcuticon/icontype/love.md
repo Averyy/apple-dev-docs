@@ -22,7 +22,7 @@ case love
 UIApplicationShortcutIconTypeLove
 ```
 
-#### Discussion
+## Discussion
 
 ![Love symbol](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934521@2x.png)
 

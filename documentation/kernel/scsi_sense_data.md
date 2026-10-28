@@ -24,7 +24,7 @@ typedef struct SCSI_Sense_Data {
 typedef struct SCSI_Sense_Data SCSI_Sense_Data;
 ```
 
-#### Overview
+## Overview
 
 The basic SCSI Request Sense data structure.
 

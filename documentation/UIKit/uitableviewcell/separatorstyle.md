@@ -22,7 +22,7 @@ enum SeparatorStyle
 enum UITableViewCellSeparatorStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`separatorStyle`](../uitableview/separatorstyle.md) property defined by [`UITableView`](../uitableview.md).
 

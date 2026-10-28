@@ -5,7 +5,7 @@
 
 Add a widget extension to your App Clip target and use ActivityKit to display Live Activities on the Lock Screen and in the Dynamic Island.
 
-#### Overview
+## Overview
 
 With Live Activities, you can display live event data on the iPhone Lock Screen and in the Dynamic Island on supported devices. Your App Clip can’t typically include app extensions, but starting with iOS 16 you can include a widget extension that offers Live Activities and displays live event data without requiring people to install your full app. For example, a sports app could display App Clip Codes at a game location to offer an App Clip to attendees of the current game. When a person launches the App Clip from the App Clip Code, the App Clip could offer a Live Activity to track a game that happens at the same time but in another city. The Live Activity enables people who watch the game in person to stay informed about another team’s game that happens in parallel.
 

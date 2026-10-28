@@ -24,7 +24,7 @@ var delegateQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not support key-value observing.
 

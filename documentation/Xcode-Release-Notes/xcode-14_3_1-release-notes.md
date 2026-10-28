@@ -5,32 +5,32 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 14.3.1 includes Swift 5.8.1 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, watchOS 9.4, and macOS Ventura 13.3. The Xcode 14.3.1 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14.3.1 requires a Mac running macOS Ventura 13.0 or later.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When targeting devices running iOS 13, apps built with Xcode 14.3 and using Objective-C protocols from Swift, sometimes crash at launch. (108930834)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: iOS app icons, including alternate app icons, weren’t correctly populating `Info.plist` entries for iPad. This made alternate app icons specified using Single Size erroneously unavailable on iPad at runtime. (108955499)
 
-##### Playgrounds
+### Playgrounds
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Playground live views weren’t updating correctly after making changes to the Playground code. (108413386)
 - Fixed: Xcode could crash on macOS 13.3 when adding a new page to a playground. (108952884)
 
-##### Swift
+### Swift
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Applications using Swift Concurrency could crash when run on a specific OS version:
 
@@ -41,9 +41,9 @@ Xcode 14.3.1 includes Swift 5.8.1 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4,
 
   Earlier and later OS versions weren’t affected. (108837762)
 
-##### Swift Packages
+### Swift Packages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Custom commands implemented by package plugins aren’t being shown in the context menu for Xcode projects. (108953641)
 

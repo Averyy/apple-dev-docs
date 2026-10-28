@@ -21,7 +21,7 @@ Cancel all of the remaining tasks in the group.
 func cancelAll()
 ```
 
-#### Discussion
+## Discussion
 
 If you add a task to a group after canceling the group, that task is canceled immediately after being added to the group.
 

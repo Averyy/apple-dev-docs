@@ -25,7 +25,7 @@ static var messageTooLong: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A message sent on a socket was larger than the internal message buffer or some other network limit.
 

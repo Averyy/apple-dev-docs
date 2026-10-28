@@ -19,7 +19,7 @@ func SCNetworkInterfaceCopyMTU(_ interface: SCNetworkInterface, _ mtu_cur: Unsaf
 Boolean SCNetworkInterfaceCopyMTU(SCNetworkInterfaceRef interface, int *mtu_cur, int *mtu_min, int *mtu_max);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the requested information has been returned.
 

@@ -16,11 +16,11 @@ Transforms a half-precision position by a 4x4 matrix, including translation.
 half3 matrix4x4h::transformPosition(half4x4 matrix, half3 position)
 ```
 
-#### Return Value
+## Return Value
 
 The transformed 3D position.
 
-#### Discussion
+## Discussion
 
 Multiplies the position by the matrix with a `w` component of `1.0`, so rotation, scale, and translation are all applied. This is appropriate for points in space that should be fully transformed by the matrix.
 

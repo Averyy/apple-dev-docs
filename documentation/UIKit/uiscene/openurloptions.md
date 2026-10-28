@@ -24,7 +24,7 @@ class OpenURLOptions
 @interface UISceneOpenURLOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a [`UIScene.OpenURLOptions`](./openurloptions.md) object directly. UIKit creates one for you when your app receives a request to open a URL. Use the information in the object to determine how to respond to the URL.
 

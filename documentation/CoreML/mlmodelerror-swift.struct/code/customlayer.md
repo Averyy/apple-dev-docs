@@ -25,7 +25,7 @@ case customLayer
 MLModelErrorCustomLayer
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the custom layer has a programming mistake. For example, a model’s prediction method fails with this error code if Core ML can’t find the custom layer’s implementation.
 

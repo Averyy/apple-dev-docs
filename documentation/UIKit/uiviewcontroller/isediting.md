@@ -23,7 +23,7 @@ var isEditing: Bool { get set }
 @property (nonatomic, getter=isEditing) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the view controller currently allows editing; otherwise, [`false`](../../Swift/false.md).
 

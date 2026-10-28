@@ -14,7 +14,7 @@
 kIONetworkFeatureTransmitCompletionStatus = 0x040
 ```
 
-#### Discussion
+## Discussion
 
 Set this bit to advertise the capability to report per-packet transmit completion status. See `IONetworkInterface::reportTransmitCompletionStatus`.
 

@@ -25,11 +25,11 @@ func CFNumberGetType(_ number: CFNumber!) -> CFNumberType
 extern CFNumberType CFNumberGetType(CFNumberRef number);
 ```
 
-#### Return Value
+## Return Value
 
 A constant that indicates the data type of the value contained in `number`. See [`CFNumberType`](./cfnumbertype.md) for a list of possible values.
 
-#### Discussion
+## Discussion
 
 The type specified in the call to [`CFNumberCreate(_:_:_:)`](./cfnumbercreate%28_,_,_%29.md) is not necessarily preserved when a new CFNumber object is created—it uses whatever internal storage type the creation function deems appropriate.
 

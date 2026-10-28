@@ -24,7 +24,7 @@ var weightsLayout: MPSGraphTensorNamedDataLayout { get set }
 @property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout weightsLayout;
 ```
 
-#### Discussion
+## Discussion
 
 NOTE: ‘O’ index is channel multiplier index. See: [`MPSGraphTensorNamedDataLayout`](../mpsgraphtensornameddatalayout.md).
 

@@ -23,7 +23,7 @@ func accessoryBrowser(_ browser: EAWiFiUnconfiguredAccessoryBrowser, didFinishCo
 - (void) accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *) browser didFinishConfiguringAccessory:(EAWiFiUnconfiguredAccessory *) accessory withStatus:(EAWiFiUnconfiguredAccessoryConfigurationStatus) status;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the system-provided configuration view has been dismissed, revealing the part of the app’s user interface that was visible before the configuration process began. If the configuration was successful, the app can begin communicating with the accessory.
 

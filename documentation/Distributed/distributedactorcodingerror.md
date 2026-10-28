@@ -21,7 +21,7 @@ Error thrown by distributed actor systems while encountering encoding/decoding i
 struct DistributedActorCodingError
 ```
 
-#### Overview
+## Overview
 
 Also thrown when an attempt to decode [`DistributedActor`](./distributedactor.md) is made, but no [`DistributedActorSystem`](./distributedactorsystem.md) is available in the `Decoder`’s `userInfo[.actorSystemKey]`, as it is required to perform the resolve call.
 

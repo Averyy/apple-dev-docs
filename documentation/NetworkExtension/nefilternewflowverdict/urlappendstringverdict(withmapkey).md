@@ -22,7 +22,7 @@ class func urlAppendStringVerdict(withMapKey urlAppendMapKey: String) -> NEFilte
 + (NEFilterNewFlowVerdict *) URLAppendStringVerdictWithMapKey:(NSString *) urlAppendMapKey;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterNewFlowVerdict` object.
 

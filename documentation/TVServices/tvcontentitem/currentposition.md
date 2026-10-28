@@ -22,7 +22,7 @@ var currentPosition: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * currentPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The number is interpreted as a double number of seconds.
 

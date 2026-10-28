@@ -20,7 +20,7 @@ var sceneReconstruction: ARConfiguration.SceneReconstruction { get set }
 @property (nonatomic, assign) ARSceneReconstruction sceneReconstruction;
 ```
 
-#### Discussion
+## Discussion
 
 When you enable scene reconstruction, ARKit provides a polygonal mesh that estimates the shape of the physical environment. Before setting this property, call [`supportsSceneReconstruction(_:)`](./supportsscenereconstruction%28_%29.md) to ensure device support. For a sample app that demonstrates scene reconstruction, see [Visualizing and interacting with a reconstructed scene](../visualizing-and-interacting-with-a-reconstructed-scene.md).
 

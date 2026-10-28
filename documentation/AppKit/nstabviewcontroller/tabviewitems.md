@@ -19,7 +19,7 @@ var tabViewItems: [NSTabViewItem] { get set }
 @property (copy) NSArray<__kindof NSTabViewItem *> * tabViewItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSTabViewItem`](../nstabviewitem.md) objects. Each tab view item contains information about a tab in the tab view interface, including the child view controller that manages the tab’s contents.
 

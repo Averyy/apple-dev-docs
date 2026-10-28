@@ -21,11 +21,11 @@ class var maximumActionButtonCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maximumActionButtonCount;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of action buttons supported by this template.
 
-#### Discussion
+## Discussion
 
 This class property defines the upper limit for action buttons to ensure proper layout and usability within the CarPlay interface constraints. Any buttons beyond this limit in the actionButtons array will be ignored.
 

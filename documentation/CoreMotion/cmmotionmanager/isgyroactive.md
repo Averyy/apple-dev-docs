@@ -23,7 +23,7 @@ var isGyroActive: Bool { get }
 @property (nonatomic, readonly, getter=isGyroActive) BOOL gyroActive;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether [`startGyroUpdates(to:withHandler:)`](./startgyroupdates%28to,withhandler%29.md) or [`startGyroUpdates()`](./startgyroupdates%28%29.md) has been called since the last time [`stopGyroUpdates()`](./stopgyroupdates%28%29.md) was called. (If the start methods hadn’t been called, the app could be getting updates from the gyroscope after calling, for example, [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md), but this property would return [`false`](../../Swift/false.md).)
 

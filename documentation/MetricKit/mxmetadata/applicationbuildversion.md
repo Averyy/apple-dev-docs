@@ -25,7 +25,7 @@ var applicationBuildVersion: String { get }
 @property (strong, readonly, nonnull) NSString * applicationBuildVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the value of [`CFBundleVersion`](../../BundleResources/information-property-list/cfbundleversion.md) from this app’s information property list.
 

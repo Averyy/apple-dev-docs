@@ -16,7 +16,7 @@ Errors that the MarketplaceKit framework can throw.
 enum MarketplaceKitError
 ```
 
-#### Overview
+## Overview
 
 The [`AppLibrary`](./applibrary.md) class `requestAppInstallation()` functions can throw an error of this type.
 

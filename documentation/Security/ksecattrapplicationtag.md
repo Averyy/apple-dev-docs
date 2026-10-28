@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrApplicationTag;
 
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains private tag data.
 

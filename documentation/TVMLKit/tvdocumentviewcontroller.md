@@ -21,7 +21,7 @@ class TVDocumentViewController
 @interface TVDocumentViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Instances of this class serve as bridges into `TVMLKit JS`’s document life cycle, and allow for native event handling with `TVMLKit`. This class also provides a way for native clients to communicate with `TVMLKit JS`.
 

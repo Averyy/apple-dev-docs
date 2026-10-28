@@ -23,11 +23,11 @@ func contains(_ entity: Entity) -> Bool
 
 Available when `Entity` conforms to `AppEntity`.
 
-#### Return Value
+## Return Value
 
 `true` if the identifier for the entity is in the collection, or `false` if it isn’t.
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

@@ -17,7 +17,7 @@ An array with ones at and below the given diagonal and zeros elsewhere and a giv
 func tri(_ n: Int, m: Int? = nil, k: Int = 0, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.triangle(5, dtype: .int32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 

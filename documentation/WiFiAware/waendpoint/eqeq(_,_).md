@@ -17,7 +17,7 @@ Two endpoints are logically equivalent if they have the same service type (publi
 static func == (lhs: WAEndpoint, rhs: WAEndpoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if both sides are logically equivalent, `false` otherwise
 

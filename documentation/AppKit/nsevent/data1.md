@@ -19,7 +19,7 @@ var data1: Int { get }
 @property (readonly) NSInteger data1;
 ```
 
-#### Discussion
+## Discussion
 
 The originator of the event defines the data in this property, and the data is dependent on the event type. If the type of this event isn’t  [`NSAppKitDefined`](../nsappkitdefined.md), [`NSSystemDefined`](../nssystemdefined.md), [`NSApplicationDefined`](../nsapplicationdefined.md), or [`NSPeriodic`](../nsperiodic.md), accessing this property raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md).
 

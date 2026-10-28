@@ -10,7 +10,7 @@ Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project uses RealityKit for visionOS to create a video game that tells the story of a lost chondrite as she collects her missing rock friends in a beautifully rendered environment.
 
@@ -18,7 +18,7 @@ This sample code project uses RealityKit for visionOS to create a video game tha
 
 The sample shows you how to use native APIs to leverage the full power of Apple Vision Pro in a real-world scenario. Its code and assets provide examples and inspiration so that you can create your own spectacular apps and games for Apple Vision Pro. The game supports two input modes for jumping: single input look-based jumping, and dual input pinch-based jumping.
 
-#### Climb the butte with single input gestures
+## Climb the butte with single input gestures
 
 After our hero crash-lands on Earth, you begin controlling her movement using spatial gestures. By pinching and dragging, you can guide the character toward her destination.
 
@@ -139,7 +139,7 @@ func updateDragStartPosition(dragStartPosition: SIMD3<Float>,
 
 > **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [Interacting with your visionOS app in Device Hub](../Xcode/interacting-with-your-visionos-app-in-device-hub.md).
 
-#### Climb the butte with dual input gestures
+## Climb the butte with dual input gestures
 
 In the dual input mode, a custom [`SpatialEventGesture`](../SwiftUI/spatialeventgesture.md) allows the player to move the character and jump at the same time by tracking the state of two spatial events simultaneously.
 
@@ -293,7 +293,7 @@ private func respondToActiveSpatialEvents() {
 }
 ```
 
-#### Rotate the world in a mixed space
+## Rotate the world in a mixed space
 
 In this game, the world itself rotates as the character circles the butte. All physics entities in this sample app are descendants of a [`PhysicsSimulationComponent`](../RealityKit/physicssimulationcomponent.md) entity. When you translate, rotate, or scale this entity, the entire physics world transforms with it. The physics simulation component entity serves as the root entity for the physics world, and you can move it like a camera inside custom systems (although the transformations are inverted). For more information, see [Handling different-sized objects in physics simulations](../RealityKit/handling-different-sized-objects-in-physics-simulations.md).
 
@@ -368,7 +368,7 @@ rotationComponent.angle
     .lerpTo(rotationComponent.targetAngle, smoothing: rotationComponent.dyanamicRotationSmoothing, deltaTime: deltaTime)
 ```
 
-#### Prepare assets for gameplay
+## Prepare assets for gameplay
 
 Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see [Adding entities and assets to a scene](../RealityComposerPro/realitycomposerpro-essentials-addingentitiestoscene.md).
 
@@ -454,7 +454,7 @@ collisionRoot.components.set(collision)
 
 The sample also loads and configures audio assets in code. In this sample, a custom system accumulates collision sounds into a Swift list, and then passes the sounds into the initializer, [`init(_:)`](../RealityKit/audiofilegroupresource/init%28_%29.md), for an `AudioFileGroupResource`. On startup, the app loads audio files into the scene using the `AudioResourcesComponent`. This componentʼs load function then caches the `AudioResource` using an `AudioLibraryComponent` for retrieval by name later in the app code. The app also adds other sounds, such as music and environmental ambiences, into the `AudioResourcesComponent`, in addition to the collision sounds, for later use.
 
-#### Structure your project for development
+## Structure your project for development
 
 During development, many people with a diverse set of expertise work on the same Xcode project and in the same Reality Composer Pro scenes. It’s important to think strategically about your project structure to avoid cumbersome merge conflicts or accidentally undoing someone else’s changes.
 
@@ -478,7 +478,7 @@ Finally, assemble the game assets in the completed game level scene.
 
 ![A screenshot of the main level scene inside Reality Composer Pro.](https://developer.apple.com/tutorials/images/com.apple.visionOS/main-level-scene@3x.png)
 
-#### Create effects with the shader graph
+## Create effects with the shader graph
 
 Adopting a variety of techniques, including making custom materials with [ShaderGraph](../ShaderGraph/ShaderGraph.md) in Reality Composer Pro, promotes efficient rendering of the towering landmark at the center of the hero’s journey. A combination of baked light maps, which you generate in an external DCC, and clever lighting techniques come together to make the player’s experience smooth and rewarding.
 
@@ -566,7 +566,7 @@ func setShadowShaderParameters (entity: Entity, worldToLevelMatrix: simd_float4x
 
 > ❗ **Important**: Updating parameters on an entity’s material can be computationally expensive. Avoid sharing shader graph material handles between entity instances, or setting the model component back on the entity unnecessarily.
 
-#### Understand how collision audio works
+## Understand how collision audio works
 
 In Petite Asteroids, the audio system has multiple types of collision sounds. These sounds play depending on the [`CollisionEvents`](../RealityKit/collisionevents.md) of their respective component. These events govern when and how to play the audio accordingly. The information that the system receives from the physics and collision events determines the loudness of the audio playback.
 
@@ -643,7 +643,7 @@ class GameMovementSystem: System {
 
 The collision sounds in Petite Asteroids are usually one-shot collision sounds, which the app plays using [`playAudio(_:)`](../RealityKit/entity/playaudio%28_%29.md). For other collision sounds, the app groups a set of similar sounds together using an [`AudioFileGroupResource`](../RealityKit/audiofilegroupresource.md) to play nonrepeating random sounds for audio playback.
 
-#### Design dynamic sounds
+## Design dynamic sounds
 
 In this game, the Audio [`Entity`](../RealityKit/entity.md) uses an [`AmbientAudioComponent`](../RealityKit/ambientaudiocomponent.md) for ambient audio. The system plays two audio files using [`AudioPlaybackController`](../RealityKit/audioplaybackcontroller.md) for the environment audio of the game. The character starts at the bottom of the butte with a calmer environment. As she reaches higher parts of the butte, the calmer environment cross-fades with the windier environment. The system blends these two files according to how high the character ascends. If she falls, the windier environment fades gracefully by interpolating values over a number of seconds.
 

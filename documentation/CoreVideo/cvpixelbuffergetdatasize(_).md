@@ -25,7 +25,7 @@ func CVPixelBufferGetDataSize(_ pixelBuffer: CVPixelBuffer) -> Int
 extern size_t CVPixelBufferGetDataSize(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the memory if the planes are contiguous, or `NULL` if it is not.
 

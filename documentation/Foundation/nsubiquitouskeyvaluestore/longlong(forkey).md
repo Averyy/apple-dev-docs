@@ -25,11 +25,11 @@ func longLong(forKey aKey: String) -> Int64
 - (long long) longLongForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The integer value associated with `aKey`, or `0` if the key isn’t present.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain types to their equivalent long integer values. The Boolean value `true` becomes `1` and `false` becomes `0`. A floating-point number becomes the greatest integer that’s less than the stored number –– for example, `2.67` becomes `2`. A string that contains a numerical value contains the equivalent integer value — for example, “123” becomes `123`.
 

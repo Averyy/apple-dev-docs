@@ -19,7 +19,7 @@ nonisolated
 func siriTipViewStyle(_ style: SiriTipViewStyle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified style on its child views.
 

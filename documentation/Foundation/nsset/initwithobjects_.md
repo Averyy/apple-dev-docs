@@ -21,11 +21,11 @@ Initializes a newly allocated set with members taken from the specified list of 
 - (instancetype) initWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized set containing the objects specified in the parameter list. The returned set might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 To add additional objects to the new set, pass a comma-separated list of trailing variadic arguments, ending with `nil`.  If the same object appears more than once in the list of objects, it is added only once to the returned set. Each object receives a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message as it is added to the set.
 

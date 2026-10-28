@@ -19,7 +19,7 @@ A type that can receive push information about user-configured controls.
 protocol ControlPushHandler
 ```
 
-#### Overview
+## Overview
 
 Register a type conforming to this protocol to receive push information using the [`pushHandler(_:)`](../SwiftUI/controlwidgetconfiguration/pushhandler%28_%29.md) modifier on your controls’ configurations.
 

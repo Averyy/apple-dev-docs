@@ -13,7 +13,7 @@ static void timerCallback(
  IOAudioDevice *device);
 ```
 
-#### Overview
+## Overview
 
 This method implements the IOAudioDevice::TimerEvent type.
 

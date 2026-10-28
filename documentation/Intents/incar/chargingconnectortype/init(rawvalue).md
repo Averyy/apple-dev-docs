@@ -12,7 +12,7 @@ Creates a charging connector type using the provided string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 If there isn’t a value of the type that corresponds to the specified `rawValue`, this initializer returns `nil`.
 

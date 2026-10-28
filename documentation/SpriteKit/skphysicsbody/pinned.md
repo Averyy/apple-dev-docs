@@ -30,7 +30,7 @@ var pinned: Bool { get set }
 - [Pinning and Rotating Physics Bodies](../pinning-and-rotating-physics-bodies.md)
 - [Getting Started with Physics](../getting-started-with-physics.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), the node’s position is fixed relative to its parent. The node’s position cannot be changed by actions or physics forces. The node can freely rotate around its position in response to collisions or other forces. If the parent node has a physics body, the two physics bodies are treated as if they are connected with a pin joint.
 

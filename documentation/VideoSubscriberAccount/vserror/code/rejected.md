@@ -24,7 +24,7 @@ case rejected
 VSErrorCodeRejected
 ```
 
-#### Discussion
+## Discussion
 
 Only TV provider apps can use this error code.
 

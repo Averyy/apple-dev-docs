@@ -20,11 +20,11 @@ optional func textView(_ view: NSTextView, willCheckTextIn range: NSRange, optio
 - (NSDictionary<NSString *,id> *) textView:(NSTextView *) view willCheckTextInRange:(NSRange) range options:(NSDictionary<NSString *,id> *) options types:(NSTextCheckingTypes *) checkingTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing an alternative to the options `dictionary`.
 
-#### Discussion
+## Discussion
 
 Invoked by [`checkText(in:types:options:)`](../nstextview/checktext%28in,types,options%29.md), this method allows control over text checking `options`s (via the return value) or types (by modifying the flags pointed to by the inout parameter `checkingTypes`)
 

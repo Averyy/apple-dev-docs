@@ -13,7 +13,7 @@ Consume data in the background, and lower memory use by batching imports and pre
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample creates an app that shows a list of earthquakes recorded in the United States in the past 30 days by consuming a U. S. Geological Survey (USGS) real-time data feed.
 
@@ -26,7 +26,7 @@ The app will load the requested data on the default delegate queue of [`URLSessi
 
 > **Note**: This sample code project is associated with WWDC21 session [10017: Bring Core Data Concurrency to Swift and SwiftUI](https://developer.apple.com/wwdc21/10017/).
 
-##### Import data in the background
+### Import data in the background
 
 To import data in the background, apps may use one or two managed object contexts. The sample uses two ([`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md)) instances:
 
@@ -66,7 +66,7 @@ if let fetchResult = try? taskContext.execute(batchInsertRequest),
 }
 ```
 
-##### Merge changes and update the user interface
+### Merge changes and update the user interface
 
 Because [`NSBatchInsertRequest`](../CoreData/nsbatchinsertrequest.md) bypasses the context and doesn’t trigger a [`NSManagedObjectContextDidSaveNotification`](../CoreData/nsmanagedobjectcontextdidsavenotification.md) notification, apps that need to update the UI with the changes have two options:
 
@@ -117,7 +117,7 @@ let tokens = await viewContext.perform {
 
 After merging changes from the last transaction, the sample needs to store the token in memory or on disk, to use it in subsequent persistent history change requests.
 
-##### Work in batches to lower memory footprint
+### Work in batches to lower memory footprint
 
 When apps fetch or create objects in a context, Core Data caches the object to avoid a round trip to the store file when the app uses those objects again. However, that approach grows the memory footprint of an app as it processes more and more objects, and can eventually lead to low-memory warnings or app termination on iOS. [`NSBatchInsertRequest`](../CoreData/nsbatchinsertrequest.md) doesn’t obviously increase an app’s memory footprint because it doesn’t load data into memory.
 
@@ -129,7 +129,7 @@ The sample sets the `viewContext`’s [`automaticallyMergesChangesFromParent`](.
 container.viewContext.automaticallyMergesChangesFromParent = false
 ```
 
-##### Prevent duplicate data in the store
+### Prevent duplicate data in the store
 
 Every time the sample app reloads the JSON feed, the parsed data contains all earthquake records for the past month, so it can have many duplicates of already imported data. To avoid creating duplicate records, the app constrains an attribute, or combination of attributes, to be unique across all instances.
 

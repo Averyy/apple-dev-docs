@@ -20,7 +20,7 @@ func insertNewButtonImage(_ newButtonImage: NSImage, in buttonCell: NSButtonCell
 - (void) insertNewButtonImage:(NSImage *) newButtonImage in:(NSButtonCell *) buttonCell;
 ```
 
-#### Discussion
+## Discussion
 
 Called by the color panel to insert a new image into the specified cell by invoking `NSButtonCell`’s setImage: method. Override this method to customize `newButtonImage` before insertion in `buttonCell`.
 

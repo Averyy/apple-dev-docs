@@ -21,7 +21,7 @@ The primary toolbar.
 static var automatic: ToolbarPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the context, this may refer to the navigation bar of an app on iOS, or watchOS, the tab bar of an app on tvOS, or the window toolbar / window titlebar of an app on macOS.
 

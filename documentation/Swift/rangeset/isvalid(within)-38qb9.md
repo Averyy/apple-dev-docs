@@ -23,7 +23,7 @@ func isValid(within text: DiscontiguousAttributedSubstring) -> Bool
 
 Available when `Bound` is `AttributedString.Index`.
 
-#### Return Value
+## Return Value
 
 `true` when the range set is valid for use with the provided discontiguous attributed string; otherwise, false. A range set is valid if each of its ranges are valid in the discontiguous attributed string.
 

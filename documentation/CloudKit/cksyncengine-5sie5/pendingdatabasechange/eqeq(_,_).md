@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: CKSyncEngine.PendingDatabaseChange, rhs: CKSyncEngine.PendingDatabaseChange) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../../Swift/true.md) if the two values are equal; otherwise, [`false`](../../../Swift/false.md).
 

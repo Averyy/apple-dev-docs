@@ -20,7 +20,7 @@ Ordered reasoning segments.
 var segments: [Transcript.Segment]
 ```
 
-#### Discussion
+## Discussion
 
 May be empty or a partial/summary representation; full text may not be available when `signature` is non-nil.
 

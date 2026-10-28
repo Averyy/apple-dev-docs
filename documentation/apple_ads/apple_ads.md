@@ -11,7 +11,7 @@ Drive app discovery by creating and managing campaigns with the Apple Ads Campai
 
 > **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
-#### Overview
+## Overview
 
 Apple Ads is an efficient and easy way to help people discover your app when they search in the App Store. With Apple Ads Campaign Management API 5, you can build [Campaigns](./campaigns.md) with budgets, and create ad groups that include keywords, audience refinement criteria, and scheduling.
 

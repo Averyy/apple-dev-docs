@@ -21,7 +21,7 @@ var hasDividerLines: Bool { get set }
 @property (assign) BOOL hasDividerLines;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

@@ -19,7 +19,7 @@ class var screensHaveSeparateSpaces: Bool { get }
 @property (class, readonly) BOOL screensHaveSeparateSpaces;
 ```
 
-#### Discussion
+## Discussion
 
 This method reflects whether the “Displays have separate Spaces” option is enabled in Mission Control system preference. You might use the return value to determine how to present your app when in fullscreen mode.
 

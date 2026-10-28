@@ -23,7 +23,7 @@ optional func activityViewController(_ activityViewController: UIActivityViewCon
 - (UIImage *) activityViewController:(UIActivityViewController *) activityViewController thumbnailImageForActivityType:(UIActivityType) activityType suggestedSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use as a preview for the item.
 

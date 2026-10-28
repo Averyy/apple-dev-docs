@@ -25,7 +25,7 @@ var FindDevices: (MIDIDriverRef, MIDIDeviceListRef) -> OSStatus
 int (*)(struct MIDIDriverInterface **, unsigned int) FindDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t hold strong references to the created devices and entities.
 

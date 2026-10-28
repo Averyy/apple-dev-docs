@@ -22,7 +22,7 @@ object AppInfo.Attributes
 - [App Store Connect API 3.8 release notes](../app-store-connect-api-3-8-release-notes.md)
 - [App Store Connect API 4.2 release notes](../app-store-connect-api-4-2-release-notes.md)
 
-##### Discussion
+### Discussion
 
 > **Note**: For more information about `australiaAgeRating` and `koreaAgeRating`, see [Age Ratings in App Store Connect Help](https://developer.apple.com/help/app-store-connect/reference/age-ratings).
 

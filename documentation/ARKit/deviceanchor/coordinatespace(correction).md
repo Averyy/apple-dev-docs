@@ -16,7 +16,7 @@ The anchor’s coordinate space.
 func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace
 ```
 
-#### Return Value
+## Return Value
 
 The anchor’s coordinate space.
 

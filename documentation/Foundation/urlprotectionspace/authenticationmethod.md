@@ -29,7 +29,7 @@ var authenticationMethod: String { get }
 
 - [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
-#### Discussion
+## Discussion
 
 The supported authentication methods are listed in [NSURLProtectionSpace authentication method constants](../nsurlprotectionspace-authentication-method-constants.md).
 

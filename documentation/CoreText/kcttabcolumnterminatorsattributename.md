@@ -25,7 +25,7 @@ let kCTTabColumnTerminatorsAttributeName: CFString
 extern CFStringRef const kCTTabColumnTerminatorsAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this attribute is a [`CFCharacterSet`](../CoreFoundation/cfcharacterset.md) object. The character set is used to determine the terminating character for a tab column. The tab and newline characters are implied even if they don’t exist in the character set. This attribute can be used to implement decimal tabs, for instance. This attribute is optional.
 

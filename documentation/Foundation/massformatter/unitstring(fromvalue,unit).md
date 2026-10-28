@@ -25,7 +25,7 @@ func unitString(fromValue value: Double, unit: MassFormatter.Unit) -> String
 - (NSString *) unitStringFromValue:(double) value unit:(NSMassFormatterUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string representing the given unit. The provided value determines whether the unit is plural or singular.
 

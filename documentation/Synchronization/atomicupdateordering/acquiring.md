@@ -21,7 +21,7 @@ An acquiring update synchronizes with a releasing operation whose value its read
 static var acquiring: AtomicUpdateOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_acquire` in C++.
 

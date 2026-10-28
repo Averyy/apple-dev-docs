@@ -19,7 +19,7 @@ Begins or continues an asynchronous training session for a sound classifier.
 static func resume(_ session: MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the sound classifier training session.
 

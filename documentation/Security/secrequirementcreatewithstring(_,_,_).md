@@ -20,11 +20,11 @@ func SecRequirementCreateWithString(_ text: CFString, _ flags: SecCSFlags, _ req
 OSStatus SecRequirementCreateWithString(CFStringRef text, SecCSFlags flags, SecRequirementRef*requirement);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Code requirements and the code signing requirement language are documented in [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929).
 

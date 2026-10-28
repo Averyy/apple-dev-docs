@@ -19,11 +19,11 @@ func convert(_ fontObj: NSFont, toHaveTrait trait: NSFontTraitMask) -> NSFont
 - (NSFont *) convertFont:(NSFont *) fontObj toHaveTrait:(NSFontTraitMask) trait;
 ```
 
-#### Return Value
+## Return Value
 
 A font with matching traits including the given trait, or `aFont` if it can’t be converted.
 
-#### Discussion
+## Discussion
 
 Using `NSUnboldFontMask` or `NSUnitalicFontMask` removes the bold or italic trait, respectively.
 

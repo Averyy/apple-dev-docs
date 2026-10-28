@@ -24,7 +24,7 @@ class UISearchContainerViewController
 @interface UISearchContainerViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 In tvOS, rather than push a [`UISearchController`](./uisearchcontroller.md) onto a navigation controller’s stack or use one as a child of another container view controller, embed an instance of this class and let it manage the presentation of the search controller’s content.
 

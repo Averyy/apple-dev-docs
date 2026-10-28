@@ -23,11 +23,11 @@ func load(_ data: Data, mimeType MIMEType: String, characterEncodingName: String
 - (WKNavigation *) loadData:(NSData *) data MIMEType:(NSString *) MIMEType characterEncodingName:(NSString *) characterEncodingName baseURL:(NSURL *) baseURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object for tracking the request.
 
-#### Discussion
+## Discussion
 
 Use this method to navigate to a webpage that you loaded yourself and saved in a data object. For example, if you previously wrote HTML content to a data object, use this method to navigate to that content.
 

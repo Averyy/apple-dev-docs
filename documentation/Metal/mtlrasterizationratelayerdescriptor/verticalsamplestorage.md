@@ -20,7 +20,7 @@ A pointer to the storage for the layer map’s vertical rasterization rates.
 @property (nonatomic, readonly) float * verticalSampleStorage;
 ```
 
-#### Discussion
+## Discussion
 
 Points to the first element in the array of vertical rasterization rates. The number of elements is equal to the [`height`](../mtlsize/height.md) value of [`sampleCount`](./samplecount.md).
 

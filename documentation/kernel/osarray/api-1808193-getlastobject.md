@@ -11,11 +11,11 @@ Returns the last object in the array.
 virtual OSObject * getLastObject() const;
 ```
 
-#### Return Value
+## Return Value
 
 The last object in the array, or `NULL` if the array is empty.
 
-#### Overview
+## Overview
 
 The returned object will be released if removed from the array; if you plan to store the reference, you should call retain on that object.
 

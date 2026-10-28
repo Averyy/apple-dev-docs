@@ -21,7 +21,7 @@ func enumerateDraggingItems(options enumOpts: NSDraggingItemEnumerationOptions =
 - (void) enumerateDraggingItemsWithOptions:(NSDraggingItemEnumerationOptions) enumOpts forView:(NSView *) view classes:(NSArray<Class> *) classArray searchOptions:(NSDictionary<NSString *,id> *) searchOptions usingBlock:(void (^)(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Enumerate through dragging items to modify their properties, such as the drag image or size, to indicate that the user has dragged the items over a possible destination. Changes you make in this method on behalf of the dragging destination override changes from the source’s drag session.
 

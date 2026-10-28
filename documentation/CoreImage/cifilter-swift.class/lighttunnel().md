@@ -24,11 +24,11 @@ class func lightTunnel() -> any CIFilter & CILightTunnel
 + (CIFilter<CILightTunnel> *) lightTunnelFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the light tunnel filter to an image. This effect distorts the input image by warping the image to cylinder shape.
 

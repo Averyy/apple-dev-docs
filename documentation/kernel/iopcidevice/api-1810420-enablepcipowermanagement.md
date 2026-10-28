@@ -12,11 +12,11 @@ virtual IOReturn enablePCIPowerManagement(
  IOOptionBits state = 0xffffffff);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if there were no errors
 
-#### Overview
+## Overview
 
 This method will enable PCI Bus Powermanagement when going to sleep mode.
 

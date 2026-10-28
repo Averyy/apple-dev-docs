@@ -22,7 +22,7 @@ Starts a new scope that can contain a dynamic number of child tasks.
 func withThrowingDiscardingTaskGroup<GroupResult>(returning returnType: GroupResult.Type = GroupResult.self, isolation: isolated (any Actor)? = #isolation, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a [`ThrowingTaskGroup`](./throwingtaskgroup.md), the child tasks as well as their results are discarded as soon as the tasks complete. This prevents the discarding task group from accumulating many results waiting to be consumed, and is best applied in situations where the result of a child task is some form of side-effect.
 
@@ -40,13 +40,13 @@ try await withThrowingDiscardingTaskGroup { group in
 
 Refer to [`TaskGroup`](./taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-### Task Group Cancellation
+## Task Group Cancellation
 
 You can cancel a task group and all of its child tasks by calling the [`cancelAll()`](./taskgroup/cancelall%28%29.md) method on the task group, or by canceling the task in which the group is running.
 
 If you call `addTask(priority:operation:)` to create a new task in a canceled group, that task is immediately canceled after creation. Alternatively, you can call `asyncUnlessCancelled(priority:operation:)`, which doesn’t create the task if the group has already been canceled. Choosing between these two functions lets you control how to react to cancellation within a group: some child tasks need to run regardless of cancellation, but other tasks are better not even being created when you know they can’t produce useful results.
 
-### Error Handling and Implicit Cancellation
+## Error Handling and Implicit Cancellation
 
 Since it is not possible to explicitly await individual task completions, it is also not possible to “re-throw” an error thrown by one of the child tasks using the same pattern as one would in a [`ThrowingTaskGroup`](./throwingtaskgroup.md):
 

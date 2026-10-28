@@ -25,11 +25,11 @@ convenience init(recordZoneID: CKRecordZone.ID, previousServerChangeToken: CKSer
 - (instancetype) initWithRecordZoneID:(CKRecordZoneID *) recordZoneID previousServerChangeToken:(CKServerChangeToken *) previousServerChangeToken;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized operation object.
 
-#### Discussion
+## Discussion
 
 When initializing the operation object, use the token from a previous fetch request if you have one. You can archive tokens and write them to disk for later use.
 

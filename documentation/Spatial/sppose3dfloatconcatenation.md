@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatConcatenation(SPPose3DFloat lhs, SPPose3DFloat rhs);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new pose that’s constructed by concatenating two existing  poses.
 

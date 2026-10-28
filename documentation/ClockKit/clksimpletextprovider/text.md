@@ -21,7 +21,7 @@ var text: String { get set }
 @property (nonatomic, copy) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 The long version of the text is the preferred version and is used whenever possible.
 

@@ -23,7 +23,7 @@ var generalMIDISequence: NSNumber? { get set }
 @property (strong, getter=isGeneralMIDISequence, nullable) NSNumber * generalMIDISequence;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 1, the MIDI sequence in the file is set up for use with a general MIDI device; when the value is 0, it is not.
 

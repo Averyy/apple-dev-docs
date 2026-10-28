@@ -24,7 +24,7 @@ var scheduleType: HKMedicationDoseEvent.ScheduleType { get }
 @property (nonatomic, assign, readonly) HKMedicationDoseEventScheduleType scheduleType;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this to [`HKMedicationDoseEvent.ScheduleType.asNeeded`](./scheduletype-swift.enum/asneeded.md) when the person logs a dose without a schedule and [`HKMedicationDoseEvent.ScheduleType.schedule`](./scheduletype-swift.enum/schedule.md) when a person logs a dose from a scheduled medication reminder.
 

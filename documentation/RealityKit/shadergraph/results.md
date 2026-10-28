@@ -18,7 +18,7 @@ The virtual node representing this graph’s outputs.
 final var results: ShaderGraph.Node { get }
 ```
 
-#### Discussion
+## Discussion
 
 Connect edges from internal nodes to this node to route values out of the graph. Its input ports correspond to the [`outputs`](./outputs.md) declared on this graph.
 

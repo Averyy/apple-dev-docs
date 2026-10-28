@@ -15,7 +15,7 @@ Removes a custom property from the video object.
 virtual kern_return_t RemoveCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success
 

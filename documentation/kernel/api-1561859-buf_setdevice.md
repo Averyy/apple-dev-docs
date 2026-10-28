@@ -15,11 +15,11 @@ Set the device associated with a buffer.
 errno_t buf_setdevice(buf_t bp, vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, EINVAL if vp is not a device file.
 
-#### Discussion
+## Discussion
 
 A buffer's device is set in buf_strategy() (or in buf_getblk() if the file is a device). It is also set on an iobuf if buf_alloc() is passed a device vnode.
 

@@ -24,7 +24,7 @@ func hostTime(forBeats inBeats: AVMusicTimeStamp, error outError: NSErrorPointer
 - (UInt64) hostTimeForBeats:(AVMusicTimeStamp) inBeats error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This call is valid when the player is in a playing state. It returns `0` with an error, otherwise, or if the starting position of the player is after the specified beat. The method uses the sequence’s tempo map to translate a beat time from the starting time and the beat of the player.
 

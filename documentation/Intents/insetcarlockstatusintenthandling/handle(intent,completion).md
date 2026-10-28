@@ -28,7 +28,7 @@ func handle(intent: INSetCarLockStatusIntent) async -> INSetCarLockStatusIntentR
 - (void) handleSetCarLockStatus:(INSetCarLockStatusIntent *) intent completion:(void (^)(INSetCarLockStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must lock or unlock the user’s car. If you are unable to lock or unlock the car, return a response object whose result code indicates the reason for the failure.
 

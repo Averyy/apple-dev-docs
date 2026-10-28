@@ -24,7 +24,7 @@ var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * suspensionReasons;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator doesn’t respond to changes in group playback state when this property value contains suspension reasons.
 

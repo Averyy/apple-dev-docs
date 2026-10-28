@@ -29,7 +29,7 @@ Available when `RowValue` conforms to `Identifiable` and `Sort` conforms to `Sor
 static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F> where RowValue == T.TableRowValue, T : TableColumnContent, F : TableColumnContent, T.TableColumnSortComparator == Never, T.TableRowValue == F.TableRowValue, F.TableColumnSortComparator == Never
 ```
 
-#### Discussion
+## Discussion
 
 This method provides support for “if” statements in multi-statement closures, producing conditional content for the “else” branch.
 

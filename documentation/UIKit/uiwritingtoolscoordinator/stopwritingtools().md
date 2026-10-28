@@ -22,7 +22,7 @@ func stopWritingTools()
 - (void) stopWritingTools;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to abort the current Writing Tools operation. This method dismisses the system’s Writing Tools UI and stops any in-flight interactions with your view. This method does not undo any changes that Writing Tools already made to your view’s content.
 

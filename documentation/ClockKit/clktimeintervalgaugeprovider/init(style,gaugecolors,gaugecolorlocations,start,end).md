@@ -21,11 +21,11 @@ convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeCol
 + (instancetype) gaugeProviderWithStyle:(CLKGaugeProviderStyle) style gaugeColors:(NSArray<UIColor *> *) gaugeColors gaugeColorLocations:(NSArray<NSNumber *> *) gaugeColorLocations startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated time interval gauge provider.
 
-#### Discussion
+## Discussion
 
 The gauge shows the amount of time that has elapsed, based on the current time relative to the specified start and end dates. The gauge fills as it counts up from the start time to the end time.
 

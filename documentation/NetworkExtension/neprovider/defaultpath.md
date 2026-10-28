@@ -26,7 +26,7 @@ var defaultPath: NWPath? { get }
 @property (readonly, nullable) NWPath * defaultPath;
 ```
 
-#### Discussion
+## Discussion
 
 This NWPath object contains information about which physical network interface will be used by connections opened by the Network Extension provider. You can determine when this physical interface changes by observing this property using KVO.
 

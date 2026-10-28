@@ -17,7 +17,7 @@ PaliGemma VLM
 class PaliGemma
 ```
 
-#### Overview
+## Overview
 
 This is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

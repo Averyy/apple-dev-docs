@@ -22,11 +22,11 @@ func GLKVector2Normalize(_ vector: GLKVector2) -> GLKVector2
 static GLKVector2 GLKVector2Normalize(GLKVector2 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 The resulting vector points in the same direction as the input vector, but has a length of `1.0`.
 

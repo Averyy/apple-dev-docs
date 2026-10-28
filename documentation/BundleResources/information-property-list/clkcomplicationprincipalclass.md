@@ -14,7 +14,7 @@ The name of the class that implements the complication data source protocol.
 - **Name**: `CLKComplicationPrincipalClass` (ClockKit Complication - Principal Class)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Xcode automatically includes this key in the information property list when you modify the WatchKit extension’s data source (General > Complication Configuration > Data Source class).
 

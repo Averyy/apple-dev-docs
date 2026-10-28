@@ -21,11 +21,11 @@ typealias SecTransformActionBlock = () -> Unmanaged<CFTypeRef>?
 typedef const void *(^)(void) SecTransformActionBlock;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the custom items to be exported if this block is used to override the [`kSecTransformActionExternalizeExtraData`](./ksectransformactionexternalizeextradata.md) action or  `NULL` for any other action. Alternatively, the block returns a [`CFError`](../CoreFoundation/cferror.md) object if an error occurs.
 
-#### Discussion
+## Discussion
 
 A  block of this type is used to override the default behavior of a custom transform. This block is associated with the SecTransformOverrideTransformAction block.
 

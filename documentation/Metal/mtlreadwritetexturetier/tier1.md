@@ -24,7 +24,7 @@ case tier1
 MTLReadWriteTextureTier1
 ```
 
-#### Discussion
+## Discussion
 
 Tier 1 read-write textures support the following pixel formats:
 

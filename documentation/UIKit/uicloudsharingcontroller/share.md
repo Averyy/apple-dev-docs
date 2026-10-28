@@ -22,7 +22,7 @@ var share: CKShare? { get }
 @property (nonatomic, strong, readonly, nullable) CKShare * share;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a reference to the [`CKShare`](../../CloudKit/ckshare.md) record used by [`UICloudSharingController`](../uicloudsharingcontroller.md). The property is `nil` if the controller doesn’t have a share record. This can happen when the controller is initialized with the [`init(preparationHandler:)`](./init%28preparationhandler%29.md) method and the preparation handler hasn’t yet been called.
 

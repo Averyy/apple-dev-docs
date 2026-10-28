@@ -23,7 +23,7 @@ var numberOfBytesTransferred: Int64 { get }
 @property (nonatomic, readonly) int64_t numberOfBytesTransferred;
 ```
 
-#### Discussion
+## Discussion
 
 If the number of bytes transferred is unknown, this property’s value is negative.
 

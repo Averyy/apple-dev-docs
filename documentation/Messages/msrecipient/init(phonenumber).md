@@ -16,7 +16,7 @@ Creates a new critical message recipient with the provided phone number.
 init(phoneNumber: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a new critical message recipient. When delivering messages, the framework displays the phone number you provide here.
 

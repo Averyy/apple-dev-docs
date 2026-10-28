@@ -11,11 +11,11 @@ Called to stop the audio I/O engine
 virtual IOReturn performAudioEngineStop();
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess on a successful stop of the engine.
 
-#### Overview
+## Overview
 
 This method is called by stopAudioEngine() and pauseAudioEngine. This must be overridden by the subclass. No call to the superclass' implementation is necessary. The subclass' implementation must stop the audio I/O engine. This includes any audio engine that needs to be stopped as well as any interrupts that need to be disabled.
 

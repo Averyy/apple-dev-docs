@@ -23,7 +23,7 @@ var openInPlace: Bool { get }
 @property (nonatomic, readonly) BOOL openInPlace;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../../Swift/false.md), copy the document to your app’s container before opening the file. When the value of this property is [`true`](../../../Swift/true.md), open the existing URL in its current location.
 

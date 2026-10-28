@@ -21,7 +21,7 @@ var itemCount: Int { get }
 @property (nonatomic, readonly) NSUInteger itemCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value never exceeds [`maximumItemCount`](./maximumitemcount.md). If you initialize a list where the total number of items, across all sections, is greater than [`maximumItemCount`](./maximumitemcount.md), CarPlay only displays items up to this limit and discards the rest.
 

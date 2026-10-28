@@ -22,7 +22,7 @@ var proprietaryApplicationDataCoding: Bool { get }
 @property (nonatomic, readonly) BOOL proprietaryApplicationDataCoding;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`false`](../../Swift/false.md), data in the [`applicationData`](./applicationdata.md) property follows the ISO14443-3 specification.
 

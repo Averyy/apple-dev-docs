@@ -18,7 +18,7 @@ optional func testSuite(_ testSuite: XCTestSuite, didFailWithDescription descrip
 - (void) testSuite:(XCTestSuite *) testSuite didFailWithDescription:(NSString *) description inFile:(NSString *) filePath atLine:(NSUInteger) lineNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Suite failures are most commonly reported during suite-level setup and teardown. Failures during tests are reported for the test case alone and are not reported as suite failures.
 

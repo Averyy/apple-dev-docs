@@ -28,7 +28,7 @@ extern MTLCommonCounterSet MTLCommonCounterSetStatistic;
 
 - [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
-#### Discussion
+## Discussion
 
 The statistics counter set contains the following counters:
 

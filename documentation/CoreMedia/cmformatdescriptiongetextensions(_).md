@@ -25,11 +25,11 @@ func CMFormatDescriptionGetExtensions(_ desc: CMFormatDescription) -> CFDictiona
 extern CFDictionaryRefCMFormatDescriptionGetExtensions(CMFormatDescriptionRef desc);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable dictionary that contains all the extensions of the `CMFormatDescription`.  May be `NULL`.
 
-#### Discussion
+## Discussion
 
 If there are no extensions, the function returns `NULL`. Extensions dictionaries are valid property list objects.  This means that dictionary keys are all `CFStrings`, and the values are all either `CFNumber`, `CFString`, `CFBoolean`, `CFArray`, `CFDictionary`, `CFDate`, or `CFData`. The returned dictionary is not retained by this call, so clients are required to retain it if they need to keep it longer.
 

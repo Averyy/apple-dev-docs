@@ -16,7 +16,7 @@ nonisolated
 func windowLevel(_ level: WindowLevel) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Window("Utility Window", id: "...") {

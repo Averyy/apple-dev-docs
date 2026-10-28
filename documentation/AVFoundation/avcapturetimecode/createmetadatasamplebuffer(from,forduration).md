@@ -23,11 +23,11 @@ static func createMetadataSampleBuffer(from timecode: AVCaptureTimecode, forDura
 CMSampleBufferRefAVCaptureTimecodeCreateMetadataSampleBufferForDuration(AVCaptureTimecode timecode, CMTime duration);
 ```
 
-#### Return Value
+## Return Value
 
 A `CMSampleBufferRef` with encoded Timecode Media Description metadata for the given duration, or `nil` if sample buffer creation fails.
 
-#### Discussion
+## Discussion
 
 Use this function for scenarios where timecode metadata needs to span a custom interval (not just a single frame), such as non-frame-accurate workflows or for describing a segment of media with a consistent timecode.
 

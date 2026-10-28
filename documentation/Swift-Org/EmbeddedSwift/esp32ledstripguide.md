@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a Swift program that animates a WS2812 LED strip on a RISC-V ESP32 device using the ESP-IDF SDK.
 
-#### Overview
+## Overview
 
 This example demonstrates how to integrate with the ESP-IDF SDK using CMake along with the existing LED strip library to control WS2812 lights from Swift. The target is the ESP32-C6-DevKitC-1 board, driving the strip’s data pin from GPIO pin 8 over SPI. Any RISC-V based Espressif chip works.
 
@@ -42,7 +42,7 @@ func main() {
 }
 ```
 
-#### Install ESP-IDF
+## Install ESP-IDF
 
 Set up the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/) development environment by following the [ESP-IDF “Get Started” guide](https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32c6/get-started/index.html).
 
@@ -50,11 +50,11 @@ Set up the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32
 
 Before adding Swift, confirm that your setup can build the standard C/C++ sample projects. A good test is building and running the `get-started/blink` example from ESP-IDF.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it should report a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Source the ESP-IDF environment script to make `idf.py` available in your shell:
 
@@ -75,7 +75,7 @@ Build the project:
 $ idf.py build
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the ESP32-C6-DevKitC-1 board to your Mac using USB. Wire up an external WS2812 LED strip and use GPIO pin 8 as the data pin. You might need to use a level shifter.
 
@@ -87,7 +87,7 @@ $ idf.py flash
 
 The LED strip animates a sequence of random colors moving in one direction.
 
-#### Simulate with Wokwi
+## Simulate with Wokwi
 
 If you don’t have a physical device, you can simulate the firmware directly in VS Code. To do this:
 

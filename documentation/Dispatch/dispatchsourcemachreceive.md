@@ -21,7 +21,7 @@ A dispatch source that monitors a Mach port for pending messages.
 protocol DispatchSourceMachReceive : DispatchSourceProtocol, Sendable
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeMachReceiveSource(port:queue:)`](./dispatchsource/makemachreceivesource%28port,queue%29.md) method to create an object that adopts this protocol.
 

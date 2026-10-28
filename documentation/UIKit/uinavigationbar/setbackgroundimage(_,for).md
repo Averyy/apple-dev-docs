@@ -23,7 +23,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, for barMetrics: UIBarMetric
 - (void) setBackgroundImage:(UIImage *) backgroundImage forBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to using [`setBackgroundImage(_:for:barMetrics:)`](./setbackgroundimage%28_,for,barmetrics%29.md) with a position of [`UIBarPosition.any`](../uibarposition/any.md).
 

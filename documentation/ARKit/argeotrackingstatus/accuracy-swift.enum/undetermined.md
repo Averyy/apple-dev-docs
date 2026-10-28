@@ -20,7 +20,7 @@ case undetermined
 ARGeoTrackingAccuracyUndetermined
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that because the session has not completed visual localization, geo-tracking accuracy is indeterminate.
 

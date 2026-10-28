@@ -21,7 +21,7 @@ The sample presentation timestamp that’s the earliest numerically in the sampl
 var presentationTimeStamp: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 For in-presentation-order samples, the value represents the presentation timestamp of the first sample. For out-of-presentation-order samples, it represents the presentation timestamp of the sample the system presents first, which isn’t necessarily the first sample in the buffer.
 

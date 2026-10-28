@@ -22,7 +22,7 @@ The offset of the first matching model to fetch.
 var fetchOffset: Int?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to skip a number of models that the fetch would otherwise return. For example, given a fetch that typically returns A, B, C, and D, specifying a fetch offset of 1 will return B, C, D, and a fetch offset of 4 will return an empty set of results. In combination with [`fetchLimit`](./fetchlimit.md), you can create a subrange of an arbitrary result set.
 

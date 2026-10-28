@@ -21,7 +21,7 @@ Returns the mean value of a double-precision vector.
 static func mean<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the mean value of a supplied vector.
 

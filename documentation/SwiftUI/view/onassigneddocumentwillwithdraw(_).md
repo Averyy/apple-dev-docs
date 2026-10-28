@@ -19,11 +19,11 @@ Adds an action to perform before withdrawing an assigned document submission.
 @preconcurrency func onAssignedDocumentWillWithdraw(_ action: @escaping @Sendable (URL) async -> Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that executes the specified action before withdrawing an assigned document.
 
-#### Discussion
+## Discussion
 
 Return `true` to allow the withdrawal to proceed or `false` to cancel it. This action confirms whether the person wants to withdraw their work.
 

@@ -23,7 +23,7 @@ protocol WCSessionDelegate : NSObjectProtocol
 @protocol WCSessionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Session objects are used to communicate between a WatchKit extension and the companion iOS app on a paired and active iPhone. When configuring your session object, you must specify a delegate object that implements this protocol. The session calls your delegate methods to deliver incoming data from the counterpart app and to manage session-related changes.
 
@@ -33,7 +33,7 @@ The [`WCSession`](./wcsession.md) object calls the methods of its delegate seria
 
 > **Note**:  The methods of this protocol are called on a background thread of your app, so any code you write should be written with that fact in mind. In particular, if your method implementations initiate modifications to your app’s interface, make sure to redirect those modifications to your app’s main thread.
 
-##### Supporting Communication with Multiple Apple Watches
+### Supporting Communication with Multiple Apple Watches
 
 An iPhone running iOS 9.3 or later may pair with more than one Apple Watch running watchOS 2.2 or later. Implement the following methods in your session delegate:
 

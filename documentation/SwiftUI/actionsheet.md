@@ -22,7 +22,7 @@ A representation of an action sheet presentation.
 struct ActionSheet
 ```
 
-#### Overview
+## Overview
 
 Use an action sheet when you want the user to make a choice between two or more options, in response to their own action. If you want the user to act in response to the state of the app or the system, rather than a user action, use an [`Alert`](./alert.md) instead.
 

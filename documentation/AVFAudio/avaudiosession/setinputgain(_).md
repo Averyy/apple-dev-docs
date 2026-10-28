@@ -23,7 +23,7 @@ func setInputGain(_ gain: Float) throws
 - (BOOL) setInputGain:(float) gain error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this method, check the value in the [`isInputGainSettable`](./isinputgainsettable.md) property to make sure the input gain level is settable for the current inputs.
 

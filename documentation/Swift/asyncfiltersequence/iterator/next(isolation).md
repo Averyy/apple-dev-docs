@@ -21,7 +21,7 @@ Produces the next element in the filter sequence.
 mutating func next(isolation actor: isolated (any Actor)?) async throws(AsyncFilterSequence<Base>.Failure) -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next(isolation:)` on its base iterator; if this call returns `nil`, `next(isolation:)` returns nil. Otherwise, `next(isolation:)` evaluates the result with the `predicate` closure. If the closure returns `true`, `next(isolation:)` returns the received element; otherwise it awaits the next element from the base iterator.
 

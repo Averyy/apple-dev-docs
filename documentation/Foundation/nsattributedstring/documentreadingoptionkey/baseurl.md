@@ -15,7 +15,7 @@ The base URL for HTML documents.
 static let baseURL: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 For HTML documents; [`NSURL`](../../nsurl.md) containing base URL. The previous string constant was `@"BaseURL".`
 

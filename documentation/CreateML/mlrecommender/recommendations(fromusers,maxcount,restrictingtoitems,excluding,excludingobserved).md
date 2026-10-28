@@ -21,7 +21,7 @@ func recommendations(fromUsers: [any MLIdentifier], maxCount: Int = 10, restrict
 func recommendations<T>(fromUsers: MLDataColumn<T>, maxCount: Int = 10, restrictingToItems: MLDataColumn<T>? = nil, excluding userItemObservations: MLDataTable? = nil, excludingObserved: Bool = true) throws -> MLDataTable where T : MLDataValueConvertible, T : MLIdentifier
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLDataTable`](../mldatatable.md) containing columns with user identifiers, item identifiers, scores and ranks (numbered between `1` and the `maxCount`).
 

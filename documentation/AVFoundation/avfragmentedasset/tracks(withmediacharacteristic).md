@@ -26,11 +26,11 @@ func tracks(withMediaCharacteristic mediaCharacteristic: AVMediaCharacteristic) 
 - (NSArray<AVFragmentedAssetTrack *> *) tracksWithMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks of a specific media characteristic.
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this method in iOS 15, tvOS 15, and macOS 12 or later. Load tracks asynchronously using [`loadTracks(withMediaCharacteristic:completionHandler:)`](./loadtracks%28withmediacharacteristic,completionhandler%29.md) instead.
 

@@ -21,7 +21,7 @@ Returns whether `other` is a suffix of `self`, only considering whole path compo
 func ends(with other: FilePath) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

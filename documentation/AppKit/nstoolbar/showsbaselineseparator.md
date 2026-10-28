@@ -21,7 +21,7 @@ var showsBaselineSeparator: Bool { get set }
 @property BOOL showsBaselineSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the toolbar shows the separator between the toolbar and the main window contents. If the value is [`false`](../../Swift/false.md), the toolbar doesn’t show the separator. The default value is [`false`](../../Swift/false.md).
 

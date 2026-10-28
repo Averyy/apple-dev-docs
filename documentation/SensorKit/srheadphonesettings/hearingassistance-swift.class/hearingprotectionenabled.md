@@ -19,7 +19,7 @@ var hearingProtectionEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement hearingProtectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Actively reduce your exposure to loud environmental sounds in Transparency and Adaptive modes.
 

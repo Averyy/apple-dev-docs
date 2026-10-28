@@ -24,7 +24,7 @@ class let willTerminateNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationWillTerminateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is associated with the delegate [`applicationWillTerminate(_:)`](../uiapplicationdelegate/applicationwillterminate%28_%29.md) method. This notification does not contain a `userInfo` dictionary.
 

@@ -25,7 +25,7 @@ var mapSize: CGSize { get }
 @property (nonatomic, readonly) CGSize mapSize;
 ```
 
-#### Discussion
+## Discussion
 
 For a grid set type, the overall size, in points, of the node will be [`numberOfColumns`](./numberofcolumns.md) `*` [`tileSize`](./tilesize.md) `.` [`width`](../../CoreFoundation/cgsize/width.md) wide and [`numberOfRows`](../skwarpgeometrygrid/numberofrows.md) `*` [`tileSize`](./tilesize.md) `.` [`height`](../../CoreFoundation/cgsize/height.md) high.
 

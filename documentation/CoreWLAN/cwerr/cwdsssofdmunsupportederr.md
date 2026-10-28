@@ -17,7 +17,7 @@ case cwdsssofdmUnsupportedErr
 kCWDSSSOFDMUnsupportedErr
 ```
 
-#### Discussion
+## Discussion
 
 Association denied because DSSS-OFDM is not supported by requesting station.
 

@@ -20,7 +20,7 @@ Value-related API for property specs that hold typed default values.
 protocol ValueCollection
 ```
 
-#### Overview
+## Overview
 
 Only `USDPrim.Property.Spec` and `USDPrim.Attribute.Spec` conform to this protocol; `USDPrim.Relationship.Spec` does not, because relationships don’t store typed values.
 

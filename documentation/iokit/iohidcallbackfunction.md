@@ -14,7 +14,7 @@
 typedef void (*IOHIDCallbackFunction)(void *target, IOReturn result, void *refcon, void *sender);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when a completion routine is called, see IOHIDLib.h:setRemovalCallback().
 

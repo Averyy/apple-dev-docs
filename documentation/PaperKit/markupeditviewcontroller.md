@@ -23,7 +23,7 @@ A view controller that manages the interface for inserting content into a canvas
 
 - [Integrating PaperKit into your app](./getting-started-with-paperkit.md)
 
-#### Overview
+## Overview
 
 Use `MarkupToolbarViewController` for macOS.
 

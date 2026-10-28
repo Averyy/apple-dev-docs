@@ -12,11 +12,11 @@ Provide custom functionality in the Photos app by bundling an app extension.
 - macOS 10.11+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 You can incorporate your app’s features directly into the Photos app in iOS or macOS by building an app extension. With a photo-editing app extension, people can edit media, apply your app’s filter effects, and build slideshows, books, or custom content, such as collages, right in their Photos app.
 
-#### Implement and bundle the app extension
+## Implement and bundle the app extension
 
 Adopt the [`PHContentEditingController`](../PhotosUI/phcontenteditingcontroller.md) protocol to create an app extension that adds to the photo editing options and capabilities in the Photos app. Creating such an extension also requires using the following classes from the Photos framework:
 

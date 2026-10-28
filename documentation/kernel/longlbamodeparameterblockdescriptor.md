@@ -13,7 +13,7 @@
 typedef struct LongLBAModeParameterBlockDescriptor LongLBAModeParameterBlockDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Long LBA mode parameter block descriptor.
 

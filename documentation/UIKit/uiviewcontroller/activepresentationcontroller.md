@@ -23,7 +23,7 @@ var activePresentationController: UIPresentationController? { get }
 @property (nonatomic, readonly, nullable) UIPresentationController * activePresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 If the original presentation controller hasn’t adapted, the value of this property is [`presentationController`](./presentationcontroller.md). If the original presentation controller has adapted to a different presentation controller, the value of this property is the adaptive presentation controller.
 

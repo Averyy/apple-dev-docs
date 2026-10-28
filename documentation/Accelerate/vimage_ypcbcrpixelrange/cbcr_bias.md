@@ -25,7 +25,7 @@ var CbCr_bias: Int32
 int32_t CbCr_bias;
 ```
 
-#### Discussion
+## Discussion
 
 This value is usually the middle of the range of CbCr, not the low end.
 

@@ -25,7 +25,7 @@ var vertexDescriptor: MTLVertexDescriptor? { get set }
 @property (nonatomic, copy, nullable) MTLVertexDescriptor * vertexDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 An [`MTLVertexDescriptor`](../mtlvertexdescriptor.md) instance is used to describe the organization of per-vertex input structs passed in an argument of a vertex shader function.
 

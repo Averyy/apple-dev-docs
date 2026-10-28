@@ -23,7 +23,7 @@ var suggestedCompletionTime: NSRange { get set }
 @property (nonatomic, assign, readwrite) NSRange suggestedCompletionTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optionally indicate the time you expect students to need to complete the task associated with a context. The lower bound on the range indicates that you expect the task to take a least that many minutes. The upper bound indicates that you expect the task to take no more than that many minutes. For example, you can indicate that a quiz should take anywhere from 10 to 15 minutes to complete:
 

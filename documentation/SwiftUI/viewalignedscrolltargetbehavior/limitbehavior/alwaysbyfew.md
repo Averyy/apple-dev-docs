@@ -21,7 +21,7 @@ The always-by-few limit behavior.
 static var alwaysByFew: ViewAlignedScrollTargetBehavior.LimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Limit the number of views that can be scrolled by a single interaction to a small number of views, rather than a single view at a time. The number of views is determined automatically.
 

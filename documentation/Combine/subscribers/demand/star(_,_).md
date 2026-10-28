@@ -21,7 +21,7 @@ Returns the result of multiplying a demand by an integer.
 static func * (lhs: Subscribers.Demand, rhs: Int) -> Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 When multiplying any value by `.unlimited`, the result is `.unlimited`. If the multiplication operation overflows, the result is `.unlimited`.
 

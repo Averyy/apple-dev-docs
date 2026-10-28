@@ -17,7 +17,7 @@ case alignTopLeft
 NSImageAlignTopLeft
 ```
 
-#### Discussion
+## Discussion
 
 Align the image with the top and left edges of the cell.
 

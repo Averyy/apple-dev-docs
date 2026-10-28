@@ -17,7 +17,7 @@ The quantization method to use (defaults to `.affine`).
 var mode: QuantizationMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Affine quantization (asymmetric) uses both a scale and a zero-point to map floating point values to integers.
 

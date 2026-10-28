@@ -39,7 +39,7 @@ nonisolated
 func typeSelectEquivalent(_ text: Text?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, a type select equivalent is automatically derived from any `Text` or `TextField` content in a list or table. In the below example, type select can be used to select a person, even though no explicit value has been set.
 

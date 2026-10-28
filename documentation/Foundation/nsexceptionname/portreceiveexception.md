@@ -25,7 +25,7 @@ static let portReceiveException: NSExceptionName
 extern NSExceptionName const NSPortReceiveException;
 ```
 
-#### Discussion
+## Discussion
 
 This is an `NSPort`-specific exception.
 

@@ -19,11 +19,11 @@ func document(for url: URL) -> NSDocument?
 - (NSDocument *) documentForURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created [`NSDocument`](../nsdocument.md) object, or `nil` if the document could not be created.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method queries each open document to find one whose URL matches, and returns the first one whose URL does match.
 

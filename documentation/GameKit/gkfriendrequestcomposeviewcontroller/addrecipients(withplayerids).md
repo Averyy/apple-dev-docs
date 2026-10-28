@@ -23,7 +23,7 @@ func addRecipients(withPlayerIDs playerIDs: [String])
 - (void) addRecipientsWithPlayerIDs:(NSArray<NSString *> *) playerIDs;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not add at least once recipient, the recipients field is selected when the view controller is presented so that the player can type a list of recipients.
 

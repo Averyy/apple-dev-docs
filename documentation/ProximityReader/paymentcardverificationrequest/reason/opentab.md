@@ -17,7 +17,7 @@ Check if the card is valid.
 case openTab
 ```
 
-#### Discussion
+## Discussion
 
 Choose this reason when you aren’t ready to complete the purchase yet, but want to verify that the person’s credit card information is valid.
 

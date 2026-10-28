@@ -17,11 +17,11 @@ Returns a CSSM unique record for the given keychain item object.
 OSStatus SecKeychainItemGetUniqueRecordID(SecKeychainItemRef itemRef, const CSSM_DB_UNIQUE_RECORD **uniqueRecordID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. The common security services manager module is no longer used.
 

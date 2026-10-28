@@ -17,7 +17,7 @@ Qwen-family reasoning protocol declarations.
 enum QwenReasoningProtocol
 ```
 
-#### Overview
+## Overview
 
 Model-specific wire behavior lives here rather than in [`ReasoningConfig`](./reasoningconfig.md). The generic configuration only describes a protocol; this adapter decides which Qwen families have a validated hard-budget transition.
 

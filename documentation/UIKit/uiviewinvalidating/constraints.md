@@ -22,7 +22,7 @@ static var constraints: UIView.Invalidations.Constraints { get }
 
 Available when `Self` is `UIView.Invalidations.Constraints`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to call [`setNeedsUpdateConstraints()`](../uiview/setneedsupdateconstraints%28%29.md) when a change in property value should cause the containing view to update constraints.
 

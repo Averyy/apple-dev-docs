@@ -24,7 +24,7 @@ class CXProviderConfiguration
 @interface CXProviderConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`CXProviderConfiguration`](./cxproviderconfiguration.md) object controls the native call UI for incoming and outgoing calls, including a localized name for the provider, the ringtone to play for incoming calls, and the icon to display during calls. A provider configuration can also set the maximum number of call groups and the number of calls in a single call group, determine whether to use emails and phone numbers as handles, and specify whether to support video.
 

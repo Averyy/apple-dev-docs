@@ -19,7 +19,7 @@ Creates an object from a custom material’s specular property.
 init(_ value: CustomMaterial.Specular)
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](../roughness-swift.property.md) and [`metallic`](../metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 

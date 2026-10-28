@@ -25,11 +25,11 @@ func objectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) objectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each value in the dictionary.
 
-#### Discussion
+## Discussion
 
 The following code fragment illustrates how you might use the method.
 
@@ -44,7 +44,7 @@ while ((value = [enumerator nextObject])) {
 
 If you use this method with instances of mutable subclasses of `NSDictionary`, your code should not modify the entries during enumeration. If you intend to modify the entries, use the [`allValues`](./allvalues.md) method to create a “snapshot” of the dictionary’s values. Work from this snapshot to modify the values.
 
-##### Special Considerations
+### Special Considerations
 
 It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)). Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
 

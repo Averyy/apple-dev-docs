@@ -15,7 +15,7 @@ The estimated scale factor between the tracked image’s physical size and the r
 var estimatedScaleFactor: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 The scale factor is between the tracked image’s size and the [`physicalSize`](../referenceimage/physicalsize.md) property on the reference image you supply when you create an image tracking provider. For example, if you supply a reference image and the version that appears in front of someone is three times larger, this property is `3.0`.
 

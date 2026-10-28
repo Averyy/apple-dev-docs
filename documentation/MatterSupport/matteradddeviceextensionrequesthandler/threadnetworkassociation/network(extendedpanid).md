@@ -19,11 +19,11 @@ Obtains the Thread network extended PAN identifier.
 static func network(extendedPANID: UInt64) -> MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation
 ```
 
-#### Return Value
+## Return Value
 
 The Thread network extended PAN identifier.
 
-#### Discussion
+## Discussion
 
 The system retrieves the network parameters from [`retrieveCredentials(forExtendedPANID:completion:)`](../../../ThreadNetwork/thclient/retrievecredentials%28forextendedpanid,completion%29.md) using the provided parameter. The credentials must be present in the store or else association and pairing fails.
 

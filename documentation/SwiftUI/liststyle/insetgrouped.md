@@ -21,7 +21,7 @@ static var insetGrouped: InsetGroupedListStyle { get }
 
 Available when `Self` is `InsetGroupedListStyle`.
 
-#### Discussion
+## Discussion
 
 On iOS, the inset grouped list style displays a continuous background color that extends from the section header, around both sides of list items in the section, and down to the section footer. This visually groups the items to a greater degree than either the [`inset`](./inset.md) or [`grouped`](./grouped.md) styles do.
 

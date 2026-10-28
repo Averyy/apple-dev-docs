@@ -17,7 +17,7 @@ An optional inflation constraint for representing inflatable bodies (must be wat
 var inflationConstraint: ClothBodyComponent.InflationConstraint? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When non-nil, the body will try to maintain the specified target volume with the given stiffness. The mesh must be watertight for this inflation constraint to have any effect.
 

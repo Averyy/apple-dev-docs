@@ -23,7 +23,7 @@ weak var delegate: (any UIActionSheetDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIActionSheetDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of methods your delegate object can implement, see [`UIActionSheetDelegate`](../uiactionsheetdelegate.md).
 

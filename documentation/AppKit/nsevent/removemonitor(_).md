@@ -19,7 +19,7 @@ class func removeMonitor(_ eventMonitor: Any)
 + (void) removeMonitor:(id) eventMonitor;
 ```
 
-#### Discussion
+## Discussion
 
 You must ensure that `eventMonitor` is removed only once. Removing the same `eventMonitor` instance multiple times results in an over-release condition, even in a Garbage Collected environment
 

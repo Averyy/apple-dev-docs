@@ -20,7 +20,7 @@ Buffer maps at the vertex rate.
 case vertex
 ```
 
-#### Discussion
+## Discussion
 
 The buffer count needs to match the number of points.
 

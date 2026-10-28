@@ -22,7 +22,7 @@ weak var containerView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * containerView;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set this property, the system automatically determines the container according to the focus item that provides the effect and [`referenceView`](./referenceview.md), if present.
 

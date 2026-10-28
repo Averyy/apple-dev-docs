@@ -21,7 +21,7 @@ The minimum size, in points, along one dimension of thumbnails for a Quick Look 
 
 **Default**: `17.0`
 
-#### Discussion
+## Discussion
 
 If you set this key, Quick Look uses the [`GenerateThumbnailForURL`](../../QuickLook/qlgeneratorinterfacestruct/generatethumbnailforurl.md) property for thumbnail sizes greater than this value. If your app’s generator is fast, you can omit this key so that the thumbnail appears in standard lists.
 

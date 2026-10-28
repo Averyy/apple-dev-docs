@@ -19,7 +19,7 @@ let kSCValNetInterfaceTypePPP: CFString
 extern CFStringRef const kSCValNetInterfaceTypePPP;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetInterfaceType`](./kscpropnetinterfacetype-swift.var.md) key.
 

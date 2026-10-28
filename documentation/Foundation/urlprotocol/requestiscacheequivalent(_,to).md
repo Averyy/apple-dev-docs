@@ -25,11 +25,11 @@ class func requestIsCacheEquivalent(_ a: URLRequest, to b: URLRequest) -> Bool
 + (BOOL) requestIsCacheEquivalent:(NSURLRequest *) a toRequest:(NSURLRequest *) b;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aRequest` and `bRequest` are equivalent for cache purposes, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Requests are considered equivalent for cache purposes if and only if they would be handled by the same protocol and that protocol declares them equivalent after performing implementation-specific checks.
 

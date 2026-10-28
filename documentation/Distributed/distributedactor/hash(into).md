@@ -22,7 +22,7 @@ nonisolated
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 For more details see the “Hashable and Identifiable conformance” section of [`DistributedActor`](../distributedactor.md).
 

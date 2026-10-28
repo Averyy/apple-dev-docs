@@ -20,7 +20,7 @@ A synchronous client for accessing crash data from the host process.
 final class CrashedProcess
 ```
 
-#### Overview
+## Overview
 
 Your extension receives this type as the parameter to [`processCrashReport(process:)`](./crashreporterextension/processcrashreport%28process%29.md). Use this class to access symbolication and binary images, and perform symbol lookup. You can also access the [`corpsePort`](./crashedprocess/corpseport.md) to send Mach IPC commands to the crashed process.
 

@@ -20,11 +20,11 @@ func setHistogramBlackIn(_ blackIn: Double, blackOut: Double, whiteIn: Double, w
 - (BOOL) setHistogramBlackIn:(double) blackIn blackOut:(double) blackOut whiteIn:(double) whiteIn whiteOut:(double) whiteOut gamma:(double) gamma forChannel:(FxHistogramChannel) channel fromParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the values are set successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

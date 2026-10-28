@@ -23,7 +23,7 @@ var displayName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no name specified.
 

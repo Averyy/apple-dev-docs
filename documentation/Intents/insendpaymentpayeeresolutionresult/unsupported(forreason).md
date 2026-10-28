@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INSendPaymentPayeeUnsupportedReason) ->
 + (instancetype) unsupportedForReason:(INSendPaymentPayeeUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSendPaymentPayeeResolutionResult`](../insendpaymentpayeeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the designated payee does not meet your qualifications for receiving a payment. For example, you might use this method if the current user’s account does not have sufficient funds or you can’t verify the payee’s credentials.
 

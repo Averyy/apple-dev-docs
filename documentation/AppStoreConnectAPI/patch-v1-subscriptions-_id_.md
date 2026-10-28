@@ -13,7 +13,7 @@ Update a specific auto-renewable subscription.
 
 - [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

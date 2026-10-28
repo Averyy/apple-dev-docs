@@ -29,7 +29,7 @@ class MPRemoteCommandCenter
 
 - [Handling external player events notifications](./handling-external-player-events-notifications.md)
 
-#### Overview
+## Overview
 
 Don’t create instances of this class yourself. Instead, use the [`shared()`](./mpremotecommandcenter/shared%28%29.md) method to retrieve the shared command center object. The properties of the shared command center object contain [`MPRemoteCommand`](./mpremotecommand.md) objects that respond to the various kinds of remote control events. You configure these objects to respond to the events you’re interested to handle in your app.
 

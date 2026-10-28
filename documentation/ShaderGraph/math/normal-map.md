@@ -14,7 +14,7 @@ Transforms a normal vector from object or tangent space into world space.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Normal Map**:
 
@@ -44,7 +44,7 @@ Transforms a normal vector from object or tangent space into world space.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input vector to be transformed; the default is `(0.5, 0.5, 1.0)`.
 - **`Space`**: The space from which the node transforms the normal vector. The value can either be `object` or `tangent`. The default value is `tangent`.

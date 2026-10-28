@@ -15,7 +15,7 @@ Request wrapper for setting a campaign’s daily budget at creation time.
 object CampaignCreate.DailyBudget
 ```
 
-#### Discussion
+## Discussion
 
 Sets the daily spend cap for a new campaign at creation time, using a `Money` object.
 

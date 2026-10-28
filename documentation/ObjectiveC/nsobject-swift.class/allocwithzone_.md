@@ -21,11 +21,11 @@ Returns a new instance of the receiving class.
 + (instancetype) allocWithZone:(struct _NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the receiver.
 
-#### Discussion
+## Discussion
 
 The `isa` instance variable of the new instance is initialized to a data structure that describes the class; memory for all other instance variables is set to `0`.
 

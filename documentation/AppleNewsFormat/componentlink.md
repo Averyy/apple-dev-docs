@@ -15,13 +15,13 @@ The component addition object for making a component interactive and opening a l
 object ComponentLink
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ComponentLink` object to define a link for a component by specifying the URL. Apple News ignores links that it can’t resolve to a valid entity.
 
 You can use this object in [`Aside`](./aside.md), [`Chapter`](./chapter.md), [`Container`](./container.md), [`Logo`](./logo.md), [`Image`](./image.md), and [`Section`](./section.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ func showAnnotations(_ annotations: [any MKAnnotation], animated: Bool)
 - (void) showAnnotations:(NSArray<id<MKAnnotation>> *) annotations animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method updates the value in the [`region`](./region.md) property, and potentially other properties, to reflect the new map region.
 

@@ -18,7 +18,7 @@ Returns the texture bound at the given index, or `nil` if the slot is unset.
 final func texture(at index: Int) -> LowLevelTextureResource?
 ```
 
-#### Return Value
+## Return Value
 
 The texture resource at `index`, or `nil` if the slot is unoccupied.
 

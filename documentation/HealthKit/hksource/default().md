@@ -24,11 +24,11 @@ class func `default`() -> HKSource
 + (HKSource *) defaultSource;
 ```
 
-#### Return Value
+## Return Value
 
 A source object for the current app.
 
-#### Discussion
+## Discussion
 
 You can access the source object for the current app directly using this methods. To access other sources, use a source query or similar approach.
 

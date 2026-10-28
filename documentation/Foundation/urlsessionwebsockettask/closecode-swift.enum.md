@@ -25,7 +25,7 @@ enum CloseCode
 enum NSURLSessionWebSocketCloseCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The WebSocket close codes follow the close codes defined in [RFC 6455](https://tools.ietf.org/html/rfc6455#section-7.4.1).
 

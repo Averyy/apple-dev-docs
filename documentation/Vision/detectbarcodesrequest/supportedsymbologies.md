@@ -21,7 +21,7 @@ The collection of barcode symbologies that the request can recognize.
 var supportedSymbologies: [BarcodeSymbology] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Using this property could be a potentially expensive operation.
 

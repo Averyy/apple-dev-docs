@@ -24,7 +24,7 @@ class BEImportMetadata
 
 - [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
-#### Overview
+## Overview
 
 This class provides information about the import methods your browser supports. Configure an instance of this class to include in the sheet the option of importing data from files.
 

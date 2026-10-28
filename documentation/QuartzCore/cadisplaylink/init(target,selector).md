@@ -23,11 +23,11 @@ init(target: Any, selector sel: Selector)
 + (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CADisplayLink`](../cadisplaylink.md) object.
 
-#### Discussion
+## Discussion
 
 The selector on the target must be a method with the following signature, where sender is the display link returned by this method.
 

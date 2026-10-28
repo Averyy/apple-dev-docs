@@ -4,7 +4,7 @@
 
 Displays abbreviated review information for a media item.
 
-#### Overview
+## Overview
 
 Here’s a general example for a movie review.
 
@@ -17,7 +17,7 @@ Here’s a general example for a movie review.
 </reviewCard>
 ```
 
-##### Subelements of reviewCard
+### Subelements of reviewCard
 
 - [badge](./badge.md)
 - [description](./description.md)
@@ -27,7 +27,7 @@ Here’s a general example for a movie review.
 - [text](./text.md)
 - [title](./title.md)
 
-##### Elements that Use reviewCard
+### Elements that Use reviewCard
 
 - [section](./section.md)
 

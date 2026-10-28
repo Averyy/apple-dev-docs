@@ -19,7 +19,7 @@ func NSCopyBits(_ srcGState: Int, _ srcRect: NSRect, _ destPoint: NSPoint)
 extern void NSCopyBits(NSInteger srcGState, NSRect srcRect, NSPoint destPoint);
 ```
 
-#### Discussion
+## Discussion
 
 Copies the pixels in the rectangle specified by `srcRect` to the location specified by `destPoint`. The source rectangle is defined in the graphics state designated by `srcGState`. If `srcGState` is `NSNullObject`, the current graphics state is assumed. The `destPoint` destination is defined in the current graphics state.
 

@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element must have cont
 @property (getter=isAccessibilityRequired) BOOL accessibilityRequired;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if the element is required to have content; otherwise, NO.
 

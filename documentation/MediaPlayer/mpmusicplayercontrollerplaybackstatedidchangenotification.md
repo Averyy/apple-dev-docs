@@ -19,7 +19,7 @@ Posted when the playback state changes programmatically or by user action.
 extern NSNotificationName const MPMusicPlayerControllerPlaybackStateDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object associated with the notification is the music player whose playback state changed. The notification has no `userInfo` dictionary.
 

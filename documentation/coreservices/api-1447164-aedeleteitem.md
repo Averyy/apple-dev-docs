@@ -19,11 +19,11 @@ func AEDeleteItem(_ theAEDescList: UnsafeMutablePointer<AEDescList>!, _ index: I
 OSErr AEDeleteItem(AEDescList *theAEDescList, long index);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

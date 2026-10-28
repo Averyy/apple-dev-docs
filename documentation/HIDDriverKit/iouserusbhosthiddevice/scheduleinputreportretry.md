@@ -16,7 +16,7 @@ Retries a previous request for an input report.
 virtual void scheduleInputReportRetry(kern_return_t reason);
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. The [`CompleteInputReport`](./completeinputreport.md) method calls it automatically to retry the previous request for the input report.
 

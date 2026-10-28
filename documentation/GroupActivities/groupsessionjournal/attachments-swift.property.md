@@ -20,7 +20,7 @@ The currently available attachments for you to download and incorporate into you
 final var attachments: GroupSessionJournal.Attachments { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an asynchronous sequence that you monitor while the current session is active. To monitor this sequence, configure an asynchronous task and iterate over the contents of the [`GroupSessionJournal.Attachments`](./attachments-swift.struct.md) type. For an example of how to configure this task, see the overview for [`GroupSessionJournal`](../groupsessionjournal.md).
 

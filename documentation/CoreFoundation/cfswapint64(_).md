@@ -25,7 +25,7 @@ func CFSwapInt64(_ arg: UInt64) -> UInt64
 static uint64_t CFSwapInt64(uint64_t arg);
 ```
 
-#### Return Value
+## Return Value
 
 The integer with its bytes swapped.
 

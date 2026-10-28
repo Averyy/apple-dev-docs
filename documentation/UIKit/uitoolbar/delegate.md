@@ -22,7 +22,7 @@ weak var delegate: (any UIToolbarDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIToolbarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should conform to the `UIToolbarDelegate` protocol. You may not set the delegate when the toolbar is managed by a navigation controller. The default value is `nil`.
 

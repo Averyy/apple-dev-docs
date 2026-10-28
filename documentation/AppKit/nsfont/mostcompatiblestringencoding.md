@@ -19,7 +19,7 @@ var mostCompatibleStringEncoding: UInt { get }
 @property (readonly) NSStringEncoding mostCompatibleStringEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 The string encoding in this property is the encoding with the fewest unmatched characters and glyphs in the font. If this value is [`NSASCIIStringEncoding`](../../Foundation/nsasciistringencoding.md), the font could not determine the correct encoding; you should assume the font can render only ASCII characters. The font uses heuristically well-known font encodings to determine the value of this property, so for nonstandard encodings the property may not contain the optimal string encoding.
 

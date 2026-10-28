@@ -15,7 +15,7 @@ Indicates whether the item containing the address to be relocated is part of a C
 uint32_t r_pcrel:1;
 ```
 
-#### Discussion
+## Discussion
 
 For addresses contained in PC-relative instructions, the CPU adds the address of the instruction to the address contained in the instruction.
 

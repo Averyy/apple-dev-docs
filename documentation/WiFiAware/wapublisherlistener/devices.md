@@ -17,7 +17,7 @@ The structure that determines the devices to connect to.
 struct Devices
 ```
 
-#### Overview
+## Overview
 
 This structure determines the devices the `NetworkListener` acts on or allows connections from when publishing and includes only the devices that are relevant for a given `NetworkListener` operation and use case. It allows your app to include only the devices that are relevant for a given `NetworkListener` operation and use case.
 

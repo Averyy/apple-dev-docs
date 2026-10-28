@@ -40,7 +40,7 @@ func convert(_ point: NSPoint, to page: PDFPage) -> NSPoint
 - (NSPoint) convertPoint:(NSPoint) point toPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 Page space is a 72 dpi coordinate system with the origin at the lower-left corner of the current page. View space is a coordinate system with the origin at the lower-left corner of the current PDF view.
 

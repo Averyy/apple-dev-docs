@@ -24,7 +24,7 @@ protocol UIViewControllerRestoration
 @protocol UIViewControllerRestoration
 ```
 
-#### Overview
+## Overview
 
 To use a class that adopts this protocol, you must assign that class to the [`restorationClass`](./uiviewcontroller/restorationclass.md) property of one of your app’s view controllers. The method in this protocol should be used to create the view controller, if it doesn’t yet exist, or return an existing view controller object, if one does exist.
 

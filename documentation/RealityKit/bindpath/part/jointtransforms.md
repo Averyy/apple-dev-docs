@@ -20,7 +20,7 @@ A path component to animate joint transforms.
 case jointTransforms
 ```
 
-#### Discussion
+## Discussion
 
 This path component terminates an array of components, and at the same time specifies the entity’s joint transforms that animate.
 

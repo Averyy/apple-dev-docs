@@ -19,7 +19,7 @@ var displays: [VZGraphicsDisplay] { get }
 @property (copy, readonly) NSArray<VZGraphicsDisplay *> * displays;
 ```
 
-#### Discussion
+## Discussion
 
 This is a list of the graphics displays configured on the graphics device configuration.
 

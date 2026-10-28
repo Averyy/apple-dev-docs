@@ -20,11 +20,11 @@ Creates download objects for every asset pack in this manifest.
 - (NSSet<BADownload *> *) allDownloads;
 ```
 
-#### Return Value
+## Return Value
 
 A collection of download objects.
 
-#### Discussion
+## Discussion
 
 The returned download objects can be scheduled with the download manager.
 

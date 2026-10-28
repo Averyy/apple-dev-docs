@@ -13,7 +13,7 @@
 sock_evt_connected = 2
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this socket has moved to the connected state.
 

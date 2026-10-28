@@ -26,7 +26,7 @@ UISwitchStyleAutomatic
 
 - [Displaying a checkbox in your Mac app built with Mac Catalyst](../../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Discussion
+## Discussion
 
 The system chooses the [`UISwitch.Style.checkbox`](./checkbox.md) style when the user interface idiom is [`UIUserInterfaceIdiom.mac`](../../uiuserinterfaceidiom/mac.md); otherwise, it chooses the [`UISwitch.Style.sliding`](./sliding.md) style.
 

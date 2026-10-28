@@ -25,7 +25,7 @@ weak var delegate: (any CBPeripheralManagerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CBPeripheralManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 For information about how to implement your peripheral manager delegate, see [`CBPeripheralManagerDelegate`](../cbperipheralmanagerdelegate.md).
 

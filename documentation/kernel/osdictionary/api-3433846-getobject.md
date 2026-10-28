@@ -24,11 +24,11 @@ OSObject * getObject(const char *aKey);
 virtual OSObject * getObject(const char *aKey);
 ```
 
-#### Return Value
+## Return Value
 
 Member at the given index or NULL if the index is greater or equal to the array count. The retain count of the result object is not incremented and the object should not be release by the caller.
 
-#### Discussion
+## Discussion
 
 Looks up an existing object in the dictionary with the given key and returns it.
 

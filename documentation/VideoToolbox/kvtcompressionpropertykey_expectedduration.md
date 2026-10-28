@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ExpectedDuration: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ExpectedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `0`, indicating the duration is unknown.
 

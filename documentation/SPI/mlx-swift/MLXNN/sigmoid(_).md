@@ -17,7 +17,7 @@ Applies the element-wise logistic sigmoid.
 func sigmoid(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 For details, please see [this documentation](https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sigmoid.html)
 
@@ -27,7 +27,7 @@ This is:
 MLX.sigmoid(x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`Sigmoid`](./sigmoid.md)

@@ -14,7 +14,7 @@ Transforms UV texture coordinates for 2D texture placement.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -28,7 +28,7 @@ Transforms UV texture coordinates for 2D texture placement.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Texture Coordinates`**: The input texture coordinates to transform. The default value is the current surface texture coordinates with an index of `0`.
 - **`Pivot`**: The pivot point for scaling and rotating the texture coordinates. The node subtracts this value from U and V before it applies the scale or rotation. The node then adds this value back later.
@@ -36,7 +36,7 @@ Transforms UV texture coordinates for 2D texture placement.
 - **`Rotate`**: The number of degrees to rotate the texture coordinates. A postive value rotates the texture coordinates by that many degrees counterclockwise and the resulting image clockwise. A negative value rotates the texture coordinates by that many degrees clockwise and the resulting image counterclockwise. The default value is `0`.
 - **`Offset`**: The value to offset the position of the texture coordinates. The node subtracts this value from the texture coordinates after scaling and rotating it, and adding back the pivot. The default is `(0,0)`.
 
-#### Discussion
+## Discussion
 
 Use the `Place 2D` node to transform texture coordinates and apply these basic transformations to textures. Below is an example of a simple node graph that uses the `Place 2D` node to transform texture coordinates before passing them to an image node:
 

@@ -5,11 +5,11 @@
 
 Add an activity item to an activity to record additional information about a student’s attempt to complete a task.
 
-#### Overview
+## Overview
 
 You use an activity to measure how long a task takes and record progress through the task. To supply additional metrics about the task, you attach one or more activity items to the activity. You typically add these items to the activity after the person finishes the corresponding task, just before calling the activity’s [`stop()`](./clsactivity/stop%28%29.md) method. These items record supplemental information, like a test score, a measured quantity, or a binary condition (like pass or fail).
 
-##### Create and add items
+### Create and add items
 
 Activity items have an identifier that distinguishes them from other items attached to the same activity, and a title that the teacher sees when reviewing results in the Schoolwork app. After creating and configuring the item, you add it to the activity using a call to the [`addAdditionalActivityItem(_:)`](./clsactivity/addadditionalactivityitem%28_%29.md) method.
 
@@ -27,7 +27,7 @@ CLSDataStore.shared.mainAppContext.descendant(matchingIdentifierPath: identifier
 }
 ```
 
-##### Add a primary activity item
+### Add a primary activity item
 
 In some cases, the most important information about a task isn’t the student’s progress through it, but another metric that you define. For example, for a quiz, teachers are typically interested in the score. In this case, you provide an optional primary activity item that takes a prominent position in the reported results.
 
@@ -47,7 +47,7 @@ CLSDataStore.shared.mainAppContext.descendant(matchingIdentifierPath: identifier
 
 > **Note**:  Always use the same type of primary activity item for a given kind of activity. For example, activities generated for a particular quiz context should always have a primary activity item type of either a score or a pass/fail. Don’t use one value in some places and another in other places. Inconsistent assignment of primary activity items can confuse teachers when they try to interpret reported results.
 
-##### Don’t overwhelm teachers with data
+### Don’t overwhelm teachers with data
 
 Use activity items to provide insights into a student’s interaction with your app. A quiz score, for example, demonstrates clearly and quantitatively how well a student understands the corresponding material.
 

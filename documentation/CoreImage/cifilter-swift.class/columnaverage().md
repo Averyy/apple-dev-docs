@@ -24,11 +24,11 @@ class func columnAverage() -> any CIFilter & CIColumnAverage
 + (CIFilter<CIColumnAverage> *) columnAverageFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method applies the column average filter to an image. This effect calculates the average color for a vertical column over a region defined by `extent`. The width of the resulting image is set by the width of the `extent`. The height of the resulting image is always 1 pixel.
 

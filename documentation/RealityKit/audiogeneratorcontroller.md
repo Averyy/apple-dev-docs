@@ -21,7 +21,7 @@ A controller that manages the playback of a real-time audio stream.
 class AudioGeneratorController
 ```
 
-#### Overview
+## Overview
 
 To receive an audio generator controller, call an entity’s [`prepareAudio(configuration:_:)`](./entity/prepareaudio%28configuration,_%29.md) or [`playAudio(configuration:_:)`](./entity/playaudio%28configuration,_%29.md) method.
 

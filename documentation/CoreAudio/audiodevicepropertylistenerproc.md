@@ -18,11 +18,11 @@ typealias AudioDevicePropertyListenerProc = (AudioDeviceID, UInt32, DarwinBoolea
 typedef int (*)(unsigned int, unsigned int, unsigned char, unsigned int, void *) AudioDevicePropertyListenerProc;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is currently unused and should always be 0.
 
-#### Discussion
+## Discussion
 
 Clients register an AudioDevicePropertyListenerProc with the AudioDevice object in order to receive notifications when the properties of the object change.
 

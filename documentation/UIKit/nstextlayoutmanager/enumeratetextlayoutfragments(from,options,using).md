@@ -23,11 +23,11 @@ func enumerateTextLayoutFragments(from location: (any NSTextLocation)?, options:
 - (id<NSTextLocation>) enumerateTextLayoutFragmentsFromLocation:(id<NSTextLocation>) location options:(NSTextLayoutFragmentEnumerationOptions) options usingBlock:(BOOL (^)(NSTextLayoutFragment *layoutFragment)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextLocation`](../nstextlocation.md), or `nil`.
 
-#### Discussion
+## Discussion
 
 If `textLocation` is `nil`, the method starts at `self.textContentManager.documentRange.location`.The method uses `self.documentRange.endLocation` for reverse enumeration. When enumerating backward, it starts with the fragment preceding the one containing `textLocation`. If the method enumerates at least one fragment, it returns the edge of the enumerated range.
 

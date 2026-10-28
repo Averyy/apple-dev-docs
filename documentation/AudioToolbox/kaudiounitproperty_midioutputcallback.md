@@ -24,7 +24,7 @@ var kAudioUnitProperty_MIDIOutputCallback: AudioUnitPropertyID { get }
 kAudioUnitProperty_MIDIOutputCallback
 ```
 
-#### Discussion
+## Discussion
 
 The host sets this property on the audio unit with the callback (and its user data) set appropriately.
 

@@ -21,7 +21,7 @@ weak var accessibilityContainer: AnyObject? { get set }
 @property (nonatomic, weak) id accessibilityContainer;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an Accessibility element’s parent view in your app’s main process.
 

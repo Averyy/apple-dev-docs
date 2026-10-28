@@ -24,7 +24,7 @@ var token: Data { get }
 @property (copy, readonly) NSData * token;
 ```
 
-#### Discussion
+## Discussion
 
 Forward this token to the server you use to generate push notifications. When preparing to deliver a push notification to the current device, include the token in the HTTP request you send to Apple Push Notification service (APNs).
 

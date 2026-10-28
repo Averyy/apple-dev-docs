@@ -21,7 +21,7 @@ An error that occurs when the user doesn’t consent for the current app to acce
 case permissionDenied
 ```
 
-#### Discussion
+## Discussion
 
 Apps using MusicKit need to request prior informed consent from the user to access their Apple Music data by calling [`request()`](../musicauthorization/request%28%29.md) at the appropriate point in the app flow, right before needing to use other APIs from MusicKit.
 

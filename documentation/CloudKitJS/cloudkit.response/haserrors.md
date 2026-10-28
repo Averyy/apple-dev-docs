@@ -15,7 +15,7 @@ A Boolean value indicating whether errors occurred in the request.
 readonly attribute Boolean hasErrors;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if errors occurred; otherwise, `false`.
 

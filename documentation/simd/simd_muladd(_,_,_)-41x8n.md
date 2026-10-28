@@ -16,7 +16,7 @@ func simd_muladd(_ x: Float16, _ y: Float16, _ z: Float16) -> Float16
 static _Float16 simd_muladd(_Float16 x, _Float16 y, _Float16 z);
 ```
 
-#### Return Value
+## Return Value
 
 The result of `x*y + z`.
 

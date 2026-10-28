@@ -19,7 +19,7 @@ var scrollingDeltaY: CGFloat { get }
 @property (readonly) CGFloat scrollingDeltaY;
 ```
 
-#### Discussion
+## Discussion
 
 This is the preferred property for accessing [`NSScrollWheel`](../nsscrollwheel.md) delta values. When [`hasPreciseScrollingDeltas`](./hasprecisescrollingdeltas.md) is [`false`](../../Swift/false.md), multiply the value returned by this method by the line or row height. Otherwise scroll by the returned amount.
 

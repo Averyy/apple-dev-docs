@@ -17,7 +17,7 @@ Defines a custom device activity report scene.
 protocol DeviceActivityReportScene : AppExtensionScene
 ```
 
-#### Overview
+## Overview
 
 This protocol refines `AppExtensionScene` and restricts the types that can be passed to a [`DeviceActivityReportBuilder`](./deviceactivityreportbuilder.md). Your extension should provide a scene for each context that your app supports.
 

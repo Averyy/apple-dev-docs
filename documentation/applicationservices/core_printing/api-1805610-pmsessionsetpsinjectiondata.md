@@ -17,11 +17,11 @@ OSStatus PMSessionSetPSInjectionData (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007). The result code `kPMInvalidParameter` is returned if the `injectionDictArray` object contains any invalid entries. The result code `kPMInvalidPrintSession` is returned if the document format has not been set to `kPMDocumentFormatPICTPS` for the specified printing session.
 
-#### Overview
+## Overview
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). Before calling `PMSessionSetPSInjectionData`, your application must set the document format of the printing session to `kPMDocumentFormatPICTPS` using the function [PMSessionSetDocumentFormatGeneration](./api-1805527-pmsessionsetdocumentformatgenera.md).
 

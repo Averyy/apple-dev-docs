@@ -24,7 +24,7 @@ func removeConnection(_ connection: AVCaptureConnection)
 - (void) removeConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method while the session is running.
 

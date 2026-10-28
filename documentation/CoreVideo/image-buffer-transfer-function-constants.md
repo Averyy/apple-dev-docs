@@ -5,7 +5,7 @@
 
 Constants that indicate the transfer function for the image buffer.
 
-#### Overview
+## Overview
 
 Use the [`kCVImageBufferTransferFunctionKey`](./kcvimagebuffertransferfunctionkey.md) key to attach one of these values to the image buffer. The transfer function describes the tonality of an image for use in color matching operations, along with a color primaries gamut (See [Image Buffer Color Primaries Constants](./image-buffer-color-primaries-constants.md) for more information.). Most apps should specify the [`kCVImageBufferTransferFunction_ITU_R_709_2`](./kcvimagebuffertransferfunction_itu_r_709_2.md) transfer function.
 

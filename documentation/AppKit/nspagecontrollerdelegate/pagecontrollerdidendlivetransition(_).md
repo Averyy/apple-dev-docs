@@ -20,7 +20,7 @@ optional func pageControllerDidEndLiveTransition(_ pageController: NSPageControl
 - (void) pageControllerDidEndLiveTransition:(NSPageController *) pageController;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent when a transition animation completes either via swipe gesture or one of the page controller’s target-action navigation methods.
 

@@ -14,7 +14,7 @@
 #define kIOPropertyRigidDiskGeometryKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define a dictionary containing rigid disk geometry information.
 

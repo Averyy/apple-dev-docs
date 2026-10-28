@@ -22,7 +22,7 @@ Registers the specified closure to implement a single undo operation that the ta
 @preconcurrency func registerUndo<TargetType>(withTarget target: TargetType, handler: @escaping @MainActor (TargetType) -> Void) where TargetType : AnyObject
 ```
 
-#### Discussion
+## Discussion
 
 Use [`registerUndo(withTarget:handler:)`](./registerundo%28withtarget,handler%29.md) to register a closure as an undo operation on the undo stack. The registered closure is then executed when `undo` is called and the undo operation occurs. The target needs to be a reference type so that its state can be undone or redone by the undo manager.
 

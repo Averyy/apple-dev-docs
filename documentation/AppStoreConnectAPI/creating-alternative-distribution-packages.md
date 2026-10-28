@@ -5,11 +5,11 @@
 
 Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
 
-#### Overview
+## Overview
 
 Use alternative distribution package (ADP) endpoints to create new packages and read information about package versions, variants, and deltas.
 
-##### Determing eligibilty to create alternative distribution packages
+### Determing eligibilty to create alternative distribution packages
 
 Your app is eligible for an alternative distribution package if all of the following are true:
 
@@ -26,7 +26,7 @@ Additionally, one of these must be true:
 
 > **Note**:  Alternative marketpaces, apps distributed by alternative marketplaces, and web distribution apps all use alternative distribution packages. Web distribution apps do not use [Notifications](./notifications.md) or [Marketplace Search Configurations](./marketplace-search-configurations.md).``
 
-##### Create and manage alternative distribution packages for an alternative marketplace
+### Create and manage alternative distribution packages for an alternative marketplace
 
 As an app developer for alternative marketplaces, when you add an app to a marketplace integration for distribution on a specific marketplace, you can opt-in to notifications. These notifications alert the marketplace when there are certain changes to your apps — for example, when a new alternative distribution package is generated. For more information on managing notifications, see [Notifications](./notifications.md).
 
@@ -65,7 +65,7 @@ If you manage an alternative marketplace, you can get the alternative distributi
 
 To learn more about server-side processing of marketplace webhooks, see [Processing alternative app marketplace notifications](../MarketplaceKit/processing-alternative-marketplace-notifications.md).
 
-##### Create and manage alternative distribution packages for web distribution apps
+### Create and manage alternative distribution packages for web distribution apps
 
 After your web distribution app is approved by App Review, you need to create the alternative distribution package. Start by finding the app Apple ID for your app by using [`List apps`](./get-v1-apps.md) and searching the resulting pages for the name of the app you want. In the response, make note of the `id` of that app, which appears in the following format:
 
@@ -98,7 +98,7 @@ You can also find the app Apple ID by going to App Store Connect > My Apps > Sel
 
 To learn more about next steps for your web distribution app, see [Installing your app from your website](../MarketplaceKit/installing-your-app-from-your-website.md).
 
-##### Select the most recent distribution package
+### Select the most recent distribution package
 
 Only one alternative distribution package can exist for an `appStoreVersion.` It’s possible that you might have multiple versions of an alternative distribution package. To ensure you’re selecting the most recent `alternativeDistributionPackageVersion` when there are multiple versions available, use `filter[state]=COMPLETED` when calling the [`Read Version Information for an Alternative Distribution Package`](./get-v1-alternativedistributionpackages-_id_-versions.md) endpoint.
 

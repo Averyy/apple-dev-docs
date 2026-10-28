@@ -21,7 +21,7 @@ Gets the value currently bound to this task-local from the current task.
 @abi(final func get_aeic() -> Value) final func get() -> Value
 ```
 
-#### Discussion
+## Discussion
 
 If no current value binding is available in the context where this call is made, or if the task-local has no value bound, this will return the `defaultValue` of the task local.
 

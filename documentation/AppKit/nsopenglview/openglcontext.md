@@ -21,7 +21,7 @@ var openGLContext: NSOpenGLContext? { get set }
 @property (strong, nullable) NSOpenGLContext * openGLContext;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has no associated context object, a new `NSOpenGLContext` object is created. The new object is initialized with the receiver’s pixel format information.
 

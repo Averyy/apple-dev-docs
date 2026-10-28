@@ -19,7 +19,7 @@ init?(xattrValue value: Data)
 - (instancetype) initWithXattrValue:(NSData *) value;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

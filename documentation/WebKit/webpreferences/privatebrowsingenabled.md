@@ -19,7 +19,7 @@ var privateBrowsingEnabled: Bool { get set }
 @property (nonatomic) BOOL privateBrowsingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Private browsing prevents the web view from maintaining any history, cache, or AutoFill information for the pages being visited.
 

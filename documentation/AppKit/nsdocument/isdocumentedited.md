@@ -19,7 +19,7 @@ var isDocumentEdited: Bool { get }
 @property (readonly, getter=isDocumentEdited) BOOL documentEdited;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the document has been edited. The edited status of each document window reflects the document’s edited status.
 

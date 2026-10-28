@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two references point to different obj
 func !== (lhs: AnyObject?, rhs: AnyObject?) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This operator tests whether two instances have different identities, not different values. For value inequality, see the not-equal-to operator (`!=`) and the `Equatable` protocol.
 

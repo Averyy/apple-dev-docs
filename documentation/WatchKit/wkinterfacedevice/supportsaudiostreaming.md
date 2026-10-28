@@ -19,7 +19,7 @@ var supportsAudioStreaming: Bool { get }
 @property (nonatomic, readonly) BOOL supportsAudioStreaming;
 ```
 
-#### Discussion
+## Discussion
 
 Check this value to determine if audio streaming is available on the current Apple Watch. watchOS supports audio streaming on Apple Watch Series 3 and later.
 

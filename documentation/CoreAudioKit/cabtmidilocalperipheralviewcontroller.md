@@ -22,7 +22,7 @@ class CABTMIDILocalPeripheralViewController
 @interface CABTMIDILocalPeripheralViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 To advertise the iOS device as a Bluetooth MIDI peripheral, create a new [`CABTMIDILocalPeripheralViewController`](./cabtmidilocalperipheralviewcontroller.md) object and then either present it modally or push it onto a[`UINavigationController`](../UIKit/uinavigationcontroller.md) view controller. No other configuration of the object is necessary. Once the user interface is displayed, the iOS device is discoverable by another device looking for Bluetooth MIDI peripherals, such as an iOS device displaying a [`CABTMIDICentralViewController`](./cabtmidicentralviewcontroller.md) object. The [`CABTMIDILocalPeripheralViewController`](./cabtmidilocalperipheralviewcontroller.md) object manages its own user interface and is dismissed automatically.
 

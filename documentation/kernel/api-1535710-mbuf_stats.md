@@ -13,7 +13,7 @@
 void mbuf_stats(struct mbuf_stat *stats);
 ```
 
-#### Discussion
+## Discussion
 
 Get the mbuf statistics.
 

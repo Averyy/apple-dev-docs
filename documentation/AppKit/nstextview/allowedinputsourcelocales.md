@@ -19,7 +19,7 @@ var allowedInputSourceLocales: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * allowedInputSourceLocales;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the meta-locale identifier, [`NSAllRomanInputSourcesLocaleIdentifier`](../nsallromaninputsourceslocaleidentifier.md), to specify input sources that are limited for Roman script editing.
 

@@ -19,7 +19,7 @@ var usesDataSource: Bool { get set }
 @property BOOL usesDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the combo box retrieves its items from the object in the [`dataSource`](./datasource.md) property. When the value is [`false`](../../Swift/false.md), the combo box manages an internal list of items, which it gets from the ones specified at design time and the ones you add programmatically.
 

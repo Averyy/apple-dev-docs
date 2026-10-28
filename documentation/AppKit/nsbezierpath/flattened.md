@@ -20,7 +20,7 @@ var flattened: NSBezierPath { get }
 @property (copy, readonly) NSBezierPath * bezierPathByFlatteningPath;
 ```
 
-#### Discussion
+## Discussion
 
 Flattening a path converts all curved line segments into straight line approximations. The granularity of the approximations is controlled by the path’s current flatness value, which is set using [`defaultFlatness`](./defaultflatness.md).
 

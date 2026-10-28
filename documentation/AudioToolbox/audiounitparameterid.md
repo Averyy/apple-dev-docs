@@ -24,7 +24,7 @@ typealias AudioUnitParameterID = UInt32
 typedef UInt32 AudioUnitParameterID;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit parameter is an adjustable setting with a floating-point value. The parameters for Apple-supplied audio units are described in `Audio Unit Parameters`. See also [`AudioUnitParameterValue`](./audiounitparametervalue.md), [`AudioUnitParameter`](./audiounitparameter.md).
 

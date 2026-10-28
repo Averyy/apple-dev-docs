@@ -26,7 +26,7 @@ var overlaySKScene: SKScene? { get set }
 @property (nonatomic, retain, nullable) SKScene * overlaySKScene;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to render 2D content that overlays your scene—for example, a heads-up-display for a game. The Sprite Kit scene shares the same underlying GPU resources as the SceneKit renderer, so using this property can provide much better performance than overlaying other views or layers above the view rendering your SceneKit content.
 

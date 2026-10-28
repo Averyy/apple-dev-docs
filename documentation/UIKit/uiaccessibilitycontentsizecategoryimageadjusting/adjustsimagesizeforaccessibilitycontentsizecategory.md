@@ -25,7 +25,7 @@ var adjustsImageSizeForAccessibilityContentSizeCategory: Bool { get set }
 @property (nonatomic) BOOL adjustsImageSizeForAccessibilityContentSizeCategory;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the current object scales its image to an appropriate accessibility content size category. When the value of this property is [`false`](../../Swift/false.md), the current object displays its image at the regular content sizes.
 

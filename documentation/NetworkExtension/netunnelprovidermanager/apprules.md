@@ -23,7 +23,7 @@ var appRules: [NEAppRule] { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 For per-app VPNs only, the system routes network traffic originating from an app that matches one of these rules through the VPN.
 

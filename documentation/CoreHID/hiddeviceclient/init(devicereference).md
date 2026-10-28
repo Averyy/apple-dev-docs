@@ -15,7 +15,7 @@ Creates a client for a HID device.
 init?(deviceReference: HIDDeviceClient.DeviceReference)
 ```
 
-#### Discussion
+## Discussion
 
 After creating a [`HIDDeviceClient`](../hiddeviceclient.md), notifications about the associated device arrive in [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md).
 

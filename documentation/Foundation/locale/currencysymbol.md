@@ -21,7 +21,7 @@ The currency symbol of the locale.
 var currencySymbol: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for “zh-Hant-HK”, returns “HK$”.
 

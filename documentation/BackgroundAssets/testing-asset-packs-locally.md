@@ -5,7 +5,7 @@
 
 Test your system-managed asset packs using a mock server on your Mac.
 
-#### Overview
+## Overview
 
 Before you submit your asset packs to TestFlight or the App Store, you can use a mock server to test downloading asset packs and accessing files locally.
 
@@ -13,7 +13,7 @@ Background Assets uses HTTPS for all downloads, so you need an SSL certificate f
 
 To create Apple-hosted asset packs that specify a download policy, see [Creating managed asset packs](./creating-managed-asset-packs.md). To add an Apple-Hosted Background Assets downloader extension to your app, see [Downloading Apple-hosted asset packs](./downloading-apple-hosted-asset-packs.md).
 
-##### Create a root CA
+### Create a root CA
 
 You create a root CA on your Mac using Keychain Access. To quickly open Keychain Access, search for Keychain Access in Spotlight and press Return. Then follow these steps to create a self-signed certificate:
 
@@ -43,7 +43,7 @@ In Keychain Access, select the “login” keychain in the sidebar and click the
 
 For more information on creating certificate authorities, see [Keychain Access User Guide](https://support.apple.com/guide/keychain-access).
 
-##### Install the CA on test devices using a profile
+### Install the CA on test devices using a profile
 
 First you create a profile containing the CA, and then you install and trust the profile on test devices.
 
@@ -60,7 +60,7 @@ To trust the CA on test devices, see [Trust manually installed certificate profi
 
 To trust the CA on macOS, open Keychain Access, select the “login” keychain in the sidebar, click the Certificates tab, Control-click your root CA, and choose Get Info. In the window that appears, expand the Trust section and select Always Trust. If necessary, authenticate yourself.
 
-##### Issue an SSL certificate
+### Issue an SSL certificate
 
 In Keychain Access on your Mac, choose Keychain Access > Certificate Assistant > Create a Certificate. In the Certificate Assistant window that appears, follow these steps:
 
@@ -93,7 +93,7 @@ In Keychain Access on your Mac, choose Keychain Access > Certificate Assistant >
 7. In the Specify a Location For The Certificate sheet, select the “login” keychain and click Create.
 8. In the Conclusion sheet, click Done.
 
-##### Start the mock server with the SSL certificate
+### Start the mock server with the SSL certificate
 
 In Terminal, start the mock server with the `--host` flag set to the same IP address, hostname, or domain name that you used when issuing your SSL certificate, and pass the paths to the asset packs (files with a `.aar` filename extension) that you want to host:
 
@@ -105,7 +105,7 @@ In the Choose An Identity window that appears, select your SSL certificate (not 
 
 To create asset pack archives, see [Creating managed asset packs](./creating-managed-asset-packs.md).
 
-##### Configure a URL override in Developer settings
+### Configure a URL override in Developer settings
 
 Enable Developer Mode on all of your test devices (see [Enabling Developer Mode on a device](../Xcode/enabling-developer-mode-on-a-device.md)).
 

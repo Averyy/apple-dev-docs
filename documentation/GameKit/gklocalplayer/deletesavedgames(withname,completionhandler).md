@@ -31,7 +31,7 @@ func deleteSavedGames(withName name: String) async throws
 
 - [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Discussion
+## Discussion
 
 Alternatively, use the [`resolveConflictingSavedGames(_:with:completionHandler:)`](./resolveconflictingsavedgames%28_,with,completionhandler%29.md) method to keep one of the saved games that use the same filename.
 

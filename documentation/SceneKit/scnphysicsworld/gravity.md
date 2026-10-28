@@ -25,7 +25,7 @@ var gravity: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 gravity;
 ```
 
-#### Discussion
+## Discussion
 
 The components of this vector are measured in meters per second per second. The default value is `(0.0,-9.8,0.0)`.
 

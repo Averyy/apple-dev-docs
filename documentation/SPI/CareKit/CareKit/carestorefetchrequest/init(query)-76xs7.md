@@ -20,7 +20,7 @@ init(query: OCKOutcomeQuery)
 
 Available when `Result` is `any OCKAnyOutcome` and `Query` is `OCKOutcomeQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

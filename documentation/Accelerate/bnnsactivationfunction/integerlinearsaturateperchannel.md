@@ -23,7 +23,7 @@ An activation function that returns an arithmetic shift, preserving sign for eac
 static var integerLinearSaturatePerChannel: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`integerLinearSaturatePerChannel(scale:offset:shift:)`](../bnnsactivation/integerlinearsaturateperchannel%28scale,offset,shift%29.md) to generate an integer linear-saturate function.
 

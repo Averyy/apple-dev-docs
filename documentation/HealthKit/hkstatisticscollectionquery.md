@@ -29,7 +29,7 @@ class HKStatisticsCollectionQuery
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 - [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
 
-#### Overview
+## Overview
 
 Statistics collection queries are often used to produce data for graphs and charts. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour. Like observer queries, collection queries can also act as long-running queries, receiving updates when the HealthKit store’s content changes.
 

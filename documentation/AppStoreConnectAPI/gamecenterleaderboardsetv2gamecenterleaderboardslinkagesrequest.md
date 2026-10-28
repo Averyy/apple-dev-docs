@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard set v2 Game Center 
 object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

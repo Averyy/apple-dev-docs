@@ -25,7 +25,7 @@ class NotificationCenter
 @interface NSNotificationCenter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Callers register with a notification center to receive one or both of the following:
 

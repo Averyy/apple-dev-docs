@@ -25,7 +25,7 @@ func NSMapRemove(_ table: NSMapTable<AnyObject, AnyObject>, _ key: UnsafeRawPoin
 extern void NSMapRemove(NSMapTable *table, const void *key);
 ```
 
-#### Discussion
+## Discussion
 
 If `key` matches a key already in `table`, this function releases the preexisting key and its corresponding value.
 

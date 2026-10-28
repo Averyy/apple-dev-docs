@@ -20,7 +20,7 @@ object AdImpressionResponse
 - [Creating an attributable ad link](./creating-an-attributable-ad-link.md)
 - [Generating a signature for attributable web ads](./generating-a-signature-for-attributable-web-ads.md)
 
-#### Discussion
+## Discussion
 
 This is a response that you provide to the [`Get a Signed Web Ad Impression Payload`](./get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md) endpoint. When you create an [`AdImpressionResponse`](./adimpressionresponse.md), use the dash-separated string representation of the UUID, which you decode from the `source_nonce` in the [`AdImpressionRequest`](./adimpressionrequest.md) that you receive.
 

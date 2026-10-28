@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLLM"
 
 The simplified LLM/VLM API allows you to load a model and evaluate prompts with only a few lines of code.
 
-#### Overview
+## Overview
 
 For example, this loads a model and asks a question and a follow-on question:
 
@@ -36,7 +36,7 @@ The second question actually refers to information (the location) from the first
 
 If you need a one-shot prompt/response simply create a `ChatSession`, evaluate the prompt and discard.  Multiple `ChatSession` instances could also be used (at the cost of the memory in the `KVCache`) to handle multiple streams of context.
 
-#### Streaming Output
+## Streaming Output
 
 The previous example produced the entire response in one call.  Often users want to see the text as it is generated – you can do this with a stream:
 
@@ -54,7 +54,7 @@ for try await item in session.streamResponse(to: "Why is the sky blue?") {
 print()
 ```
 
-#### Structured Chat Continuation
+## Structured Chat Continuation
 
 `ChatSession` can also continue from structured `Chat.Message` values. This is useful for agent loops that consume tool calls from `streamDetails(to:role:images:videos:)` and then append one or more `.tool` messages without rebuilding the whole conversation history:
 
@@ -105,7 +105,7 @@ The low-level initializers that accept an existing raw KV cache cannot recover t
 
 When a session is initialized with history, the first generation must prefill that history to create a KV cache. Reuse the same `ChatSession` so later tool turns can take the suffix-only fast path.
 
-#### VLMs (Vision Language Models)
+## VLMs (Vision Language Models)
 
 This same API supports VLMs as well.  Simply present the image or video to the `ChatSession`:
 
@@ -130,7 +130,7 @@ let answer2 = try await session.respond(
 print(answer2)
 ```
 
-#### Advanced Usage
+## Advanced Usage
 
 The `ChatSession` has a number of parameters you can supply when creating it:
 

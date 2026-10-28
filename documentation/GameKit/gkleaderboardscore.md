@@ -25,7 +25,7 @@ class GKLeaderboardScore
 @interface GKLeaderboardScore : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`GKLeaderboardScore`](./gkleaderboardscore.md) object represents a score on a leaderboard for scores you report for challenges or turn-based games.
 

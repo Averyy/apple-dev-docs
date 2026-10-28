@@ -16,7 +16,7 @@ The process exited with the given signal.
 case signal(CInt)
 ```
 
-#### Discussion
+## Discussion
 
 The C programming language defines a number of standard signals. Platforms may additionally define their own non-standard signal codes:
 

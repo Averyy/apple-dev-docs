@@ -15,11 +15,11 @@ The plug-in formats source code.
 static func sourceCodeFormatting() -> PluginCommandIntent
 ```
 
-#### Return Value
+## Return Value
 
 A `PluginCommandIntent` instance.
 
-#### Discussion
+## Discussion
 
 The intent of the command is to modify the source code in the package based on a set of rules. Invoked by a `format-source-code` verb to `swift package`.
 

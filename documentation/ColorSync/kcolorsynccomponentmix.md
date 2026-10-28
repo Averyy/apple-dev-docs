@@ -25,7 +25,7 @@ var kColorSyncComponentMix: Unmanaged<CFString>
 extern CFStringRef kColorSyncComponentMix;
 ```
 
-#### Discussion
+## Discussion
 
 Determines how the framework derives the scalar driving signal from the RGB pixel:
 

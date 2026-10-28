@@ -24,7 +24,7 @@ func text(in range: UITextRange) -> String?
 - (NSString *) textInRange:(UITextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 A substring of a document that falls within the specified range.
 

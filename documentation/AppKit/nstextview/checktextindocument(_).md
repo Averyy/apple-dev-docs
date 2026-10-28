@@ -19,7 +19,7 @@ func checkTextInDocument(_ sender: Any?)
 - (void) checkTextInDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Immediately performs the text checking and replaces the document content with the checked content.
 

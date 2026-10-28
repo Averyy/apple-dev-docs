@@ -23,7 +23,7 @@ var value: Float { get set }
 @property (nonatomic, assign) float value;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the slider’s minimum value. You may set a value only if it’s within the slider’s minimum and maximum values, otherwise the system throws an exception.
 

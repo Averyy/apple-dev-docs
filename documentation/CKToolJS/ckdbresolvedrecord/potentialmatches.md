@@ -15,7 +15,7 @@ An array of potential participants that the user can choose from.
 attribute CKDBSharePotentialParticipant[]? potentialMatches;
 ```
 
-#### Discussion
+## Discussion
 
 This array only contains values if the participant is not identifiable. If this array is populated, each value is a `CKDBSharePotentialParticipant` object.
 

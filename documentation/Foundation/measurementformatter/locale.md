@@ -25,7 +25,7 @@ var locale: Locale! { get set }
 @property (copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, an [`NSLocale`](../nslocale.md) object representing the current system locale is used.
 

@@ -28,7 +28,7 @@ func startPictureInPicture()
 
 - [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 
-#### Discussion
+## Discussion
 
 When you call this method and Picture in Picture (PiP) is possible, your delegate receives a call to its [`pictureInPictureControllerWillStartPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstartpictureinpicture%28_%29.md) method. After a successful start, your delegate receives a call to the [`pictureInPictureControllerDidStartPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstartpictureinpicture%28_%29.md) method.
 

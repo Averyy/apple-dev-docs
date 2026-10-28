@@ -19,7 +19,7 @@ An entitlement that enables a browser to install alternative distribution apps f
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The system requires that your browser app have this entitlement to install alternative marketplace apps from a webpage using [MarketplaceKit](../../MarketplaceKit/MarketplaceKit.md). Browser apps that render with either [WebKit](../../WebKit/WebKit.md) or [BrowserEngineKit](../../BrowserEngineKit/BrowserEngineKit.md) need the entitlement. Apple enables it on your account along with the default browser entitlement ([`com.apple.developer.web-browser`](./com.apple.developer.web-browser.md)).
 

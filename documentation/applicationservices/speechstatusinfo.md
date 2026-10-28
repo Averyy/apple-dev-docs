@@ -21,7 +21,7 @@ typedef struct SpeechStatusInfo {
 } SpeechStatusInfo;
 ```
 
-#### Overview
+## Overview
 
 By calling the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) function with the `soStatus` selector, you can find out information about the status of a speech channel.
 

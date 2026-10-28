@@ -18,7 +18,7 @@ A platform-appropriate default text input dictation behavior.
 static let automatic: TextInputDictationBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The automatic behavior uses a [`TextInputDictationActivation`](../textinputdictationactivation.md) value of [`onLook`](../textinputdictationactivation/onlook.md) for visionOS apps and [`onSelect`](../textinputdictationactivation/onselect.md) for iOS apps.
 

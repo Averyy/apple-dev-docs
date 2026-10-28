@@ -21,11 +21,11 @@ Returns the concentric corner radii for the specified frame relative to the cont
 func concentricCornerRadii(in frame: CGRect) -> RectangleCornerRadii?
 ```
 
-#### Return Value
+## Return Value
 
 The resolved corner radii, or `nil` if no container shape is set or the shape does not provide sufficient corner info.
 
-#### Discussion
+## Discussion
 
 Concentric corners share the same center point as the container’s corners. The radius for each corner is calculated as the container’s corner radius minus the distance from the frame’s corner to the container’s corner.
 

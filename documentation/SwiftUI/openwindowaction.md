@@ -20,7 +20,7 @@ An action that presents a window.
 @preconcurrency struct OpenWindowAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`openWindow`](./environmentvalues/openwindow.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction(id:)`](./openwindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 

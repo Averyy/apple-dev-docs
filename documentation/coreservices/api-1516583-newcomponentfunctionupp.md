@@ -13,7 +13,7 @@
 ComponentFunctionUPP NewComponentFunctionUPP(ProcPtr userRoutine, ProcInfoType procInfo);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentFunctionUPP` data type.
 

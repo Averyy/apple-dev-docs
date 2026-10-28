@@ -5,7 +5,7 @@
 
 Create text in color by using HTML to refer to TextStyle objects.
 
-#### Overview
+## Overview
 
 **On this page, you’ll learn how to apply text styles to ranges of characters by using HTML to refer to TextStyle objects.**
 
@@ -15,7 +15,7 @@ You can then edit the `TextStyle` object in one place and affect multiple ranges
 
 ![Screenshot of an Apple News article with an HTML-styled layered header on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624921@2x.png)
 
-##### Create TextStyle Objects with Different Colors
+### Create TextStyle Objects with Different Colors
 
 Create the `TextStyle` objects that you will refer to inline in the HTML.
 
@@ -24,7 +24,7 @@ Create the `TextStyle` objects that you will refer to inline in the HTML.
 
 Your code should look like the example code [Styles with Text Color: Result](./adding-color-to-text-ranges.md#Styles-with-Text-Color-Result).
 
-###### Styles with Text Color: Copy This Code
+#### Styles with Text Color: Copy This Code
 
 ```json
     "lightGrayText": {
@@ -42,7 +42,7 @@ Your code should look like the example code [Styles with Text Color: Result](./a
     }
 ```
 
-###### Styles with Text Color: Result
+#### Styles with Text Color: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -68,7 +68,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use Text Styles to Change Text Color
+### Use Text Styles to Change Text Color
 
 Create references to the TextStyle objects you just created.
 
@@ -86,55 +86,55 @@ Your code should look like the example code [Text Color: Result](./adding-color-
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the text ranges in color.
 
-###### Title Text: Copy This Code
+#### Title Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='lightGrayText'>ARTICLE TITLE</span> <span data-anf-textstyle='whiteText'>WITH INLINE TEXT STYLE REFERENCES</span>"
 ```
 
-###### Byline Text: Copy This Code
+#### Byline Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='lightGrayText'>By</span> Urna Semper"
 ```
 
-###### Floating Caption Text: Copy This Code
+#### Floating Caption Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='DINText'>ABOVE:</span> Sed ut pers piciatis unde omnis iste error sit volup tatem accusa ntium dolor emque, totam rem. (Attribution)"
 ```
 
-###### Body Text: Copy This Code
+#### Body Text: Copy This Code
 
 ```html
 "<p><span data-anf-textstyle='DINText'>Bold lead-in,</span> cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, dolor repellendus. <a href='http://www.apple.com'>Link text</a> quibusdam et aut.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit.</p>"
 ```
 
-###### Pull Quote Text: Copy This Code
+#### Pull Quote Text: Copy This Code
 
 ```html
 "“QUIA CONSEQUUNTUR MAGNI DOLORES EOS <span data-anf-textstyle='mediumGrayText'>QUI RATIONE VOLUPTATEM SEQUI NESCIUNT.”</span>"
 ```
 
-###### Gallery Caption Text: Copy This Code
+#### Gallery Caption Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='DINText'>ABOVE:</span> A caption for the entire gallery. Individual photos in the gallery also have their own captions. (Shared attribution)"
 ```
 
-###### Mosaic Caption Text: Copy This Code
+#### Mosaic Caption Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='DINText'>ABOVE:</span> A caption for the entire mosaic. Individual photos in the mosaic also have their own captions. (Shared attribution)"
 ```
 
-###### Inset Photo Caption Text: Copy This Code
+#### Inset Photo Caption Text: Copy This Code
 
 ```html
 "<span data-anf-textstyle='DINText'>ABOVE:</span> A caption for the sidebar photo. (Attribution)"
 ```
 
-###### Text Color: Result
+#### Text Color: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -245,11 +245,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating an Inset Photo](./creating-an-inset-photo.md)
 
-##### Next
+### Next
 
 [Adding Animations](./adding-animations.md)
 

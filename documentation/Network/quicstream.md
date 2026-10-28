@@ -21,7 +21,7 @@ A QUIC stream that runs over a QUIC connection.
 struct QUICStream
 ```
 
-#### Overview
+## Overview
 
 Connections using QUICStream have a similar stream interface to TLS and TCP.
 

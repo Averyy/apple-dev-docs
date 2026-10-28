@@ -12,7 +12,7 @@ Support adding an issued card to Apple Pay from directly within Apple Wallet usi
 - Mac Catalyst 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Apple Pay in-app provisioning relies on the individual to add a payment pass from within the issuer app, and requires this person to already be in the issuer app with the intention of adding the pass. To make it easier for people to add a payment pass to Apple Pay directly within Apple Wallet, Apple Pay offers extensions for in-app provisioning, called Wallet Extensions. Wallet Extensions improve discoverability of the option to add an issued card to Apple Wallet, as people can tap a button within Apple Wallet to begin a provisioning experience that doesn’t require them to enter details manually.
 
@@ -29,7 +29,7 @@ The project contains four targets:
 
 For more information on Wallet Extensions, see the [Apple Pay Demo - Wallet Extensions documentation](https://applepaydemo.apple.com/wallet-extensions).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because Wallet Extensions require an entitlement from Apple, you can’t run the app extensions in this sample. You can only run the sample unit tests and the sample containing app, which has a login view that is repurposed for the UI extension during the Wallet Extensions process. To run this sample you’ll need the following:
 

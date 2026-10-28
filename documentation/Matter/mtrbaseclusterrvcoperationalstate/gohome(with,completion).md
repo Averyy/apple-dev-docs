@@ -29,7 +29,7 @@ func goHome(with params: MTRRVCOperationalStateClusterGoHomeParams?) async throw
 - (void) goHomeWithParams:(MTRRVCOperationalStateClusterGoHomeParams *) params completion:(void (^)(MTRRVCOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 On receipt of this command, the device SHALL start seeking the charging dock, if possible in the current state of the device.
 

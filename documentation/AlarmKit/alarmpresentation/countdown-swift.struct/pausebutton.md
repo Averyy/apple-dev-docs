@@ -17,7 +17,7 @@ The pause button for a countdown timer.
 var pauseButton: AlarmButton?
 ```
 
-#### Discussion
+## Discussion
 
 If you specify, the countdown includes a pause button when presented by the templated UI.
 

@@ -24,7 +24,7 @@ var fieldOfView: Float { get set }
 @property (nonatomic, assign) float fieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 Field of view is an angle that determines the extent of the scene visible to the camera. A small field of view angle provides a narrow view, and a large field of view provides a wide view. A very wide field of view results in distorted perspective.
 

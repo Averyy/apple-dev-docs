@@ -27,7 +27,7 @@ func completeRequest()
 
 - [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
-#### Discussion
+## Discussion
 
 Call this method when the action completes successfully.
 

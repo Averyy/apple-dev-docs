@@ -22,7 +22,7 @@ Initializes an IP address with data.
 init?(_ rawValue: Data, _ interface: NWInterface?)
 ```
 
-#### Discussion
+## Discussion
 
 The provided data is expected to be either an IPv4 address of 4 bytes or an IPv6 address of 16 bytes.
 

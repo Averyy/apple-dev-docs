@@ -20,7 +20,7 @@ The inner angle of the spotlight in degrees.
 var innerAngleInDegrees: Float
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `45.0` degrees.
 

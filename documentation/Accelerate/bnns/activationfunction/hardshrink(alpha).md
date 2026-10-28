@@ -23,7 +23,7 @@ An activation function that returns zero when the absolute input is less than al
 case hardShrink(alpha: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

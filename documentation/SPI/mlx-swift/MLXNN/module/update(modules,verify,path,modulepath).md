@@ -22,7 +22,7 @@ func update(modules: ModuleChildren, verify: Module.VerifyUpdate, path: [String]
 
 - [Creating Modules](../custom-layers.md)
 
-#### Discussion
+## Discussion
 
 This will replace the parameters in the `Module` recursively with the given [`ModuleChildren`](../modulechildren.md) structure.  For example this is typically called via a helper function:
 
@@ -48,7 +48,7 @@ Would be able to be replaced with [`quantize(model:groupSize:bits:predicate:)`](
 
 The `modules` need not provide all values in the model – any omitted values will be unchanged.
 
-##### See Also
+### See Also
 
 - [Creating Modules](../custom-layers.md)
 - [`update(modules:)`](./update%28modules%29.md)

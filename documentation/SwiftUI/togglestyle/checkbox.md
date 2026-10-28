@@ -18,7 +18,7 @@ nonisolated static var checkbox: CheckboxToggleStyle { get }
 
 Available when `Self` is `CheckboxToggleStyle`.
 
-#### Discussion
+## Discussion
 
 Apply this style to a [`Toggle`](../toggle.md) or to a view hierarchy that contains toggles using the [`toggleStyle(_:)`](../view/togglestyle%28_%29.md) modifier:
 

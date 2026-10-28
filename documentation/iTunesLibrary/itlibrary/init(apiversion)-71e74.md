@@ -20,11 +20,11 @@ convenience init(apiVersion requestedAPIVersion: String) throws
 - (instancetype) initWithAPIVersion:(NSString *) requestedAPIVersion error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`ITLibrary`](../itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
 
-#### Discussion
+## Discussion
 
 During initialization of the [`ITLibrary`](../itlibrary.md) class, the system reads and parses the default iTunes database for the current user. All media entities cache in memory until deallocation of the object occurs.
 

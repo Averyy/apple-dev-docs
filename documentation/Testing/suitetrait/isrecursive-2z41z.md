@@ -23,7 +23,7 @@ Whether this instance should be applied recursively to child test suites and tes
 var isRecursive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `true`, then the testing library applies this trait recursively to child test suites and test functions. Otherwise, it only applies the trait to the test suite to which you added the trait.
 

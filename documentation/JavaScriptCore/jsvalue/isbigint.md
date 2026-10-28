@@ -22,7 +22,7 @@ var isBigInt: Bool { get }
 @property (readonly) BOOL isBigInt;
 ```
 
-#### Discussion
+## Discussion
 
 Check if a JSValue is a BigInt.
 

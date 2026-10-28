@@ -5,13 +5,13 @@
 
 Understand the structure of a crash report and the information each field contains.
 
-#### Overview
+## Overview
 
 Each section of a crash report contains information to help you diagnose the source of a crash.
 
 ![An outline of a crash report showing where each section is located.](https://developer.apple.com/tutorials/images/com.apple.Xcode/examining-the-fields-in-a-crash-report-1@2x.png)
 
-##### Header
+### Header
 
 A crash report begins with a header section that describes the environment the crash occurred in.
 
@@ -59,7 +59,7 @@ The `AppVariant` field contains three values separated by colons, for example, `
 - The name of the thinning variant. The variant represents a class of devices with similar characteristics, such as screen scale, memory class, and Metal GPU family. The thinning variant’s name doesn’t indicate the exact hardware model the crash report is from, and may differ from the `Hardware Model` field. In the example, this value is `iPhone10,6`.
 - The operating system version variant. For each class of devices, app thinning creates additional variants for different versions of the operating system. In the example, this value is `12.2`, indicating this variant targets iOS devices running iOS 12.2 or higher.
 
-##### Exception information
+### Exception information
 
 Every crash report contains exception information. This information section tells you how the process quit, but it may not fully explain why the app quit. This information is important, but is often overlooked.
 
@@ -80,7 +80,7 @@ The following fields provide information about the exception. No single crash re
 - `Termination Reason`: Exit reason information specified when the operating system quits a process. Key operating system components, both inside and outside of a process, quit the process upon encountering a fatal error and record the reason in this field. Examples of the information you can find in this field are messages about an invalid code signature, a missing dependent library, or accessing privacy sensitive information without a purpose string.
 - `Triggered by Thread` or `Crashed Thread`: The thread on which the exception originated.
 
-##### Diagnostic messages
+### Diagnostic messages
 
 The operating system sometimes includes additional diagnostic information. This information uses a variety of formats, depending on reason for the crash, and isn’t present in every crash report.
 
@@ -115,7 +115,7 @@ VM Region Info: 0 is not in any region.  Bytes before following region: 43070095
 
 [Investigating memory access crashes](./investigating-memory-access-crashes.md) goes into more detail about this information.
 
-##### Backtraces
+### Backtraces
 
 The system captures each thread of the crashed process as a backtrace, documenting the code running on the thread when the process ends. The backtraces are similar to what you see when you pause the process with the debugger. Crashes caused by a language exception include an additional backtrace, the `Last Exception Backtrace`, located before the first thread. If your crash report contains a `Last Exception Backtrace`, see [Addressing language exception crashes](./addressing-language-exception-crashes.md) for information specific to language exception crashes.
 
@@ -176,7 +176,7 @@ In some situations, the file name or the line number information won’t corresp
 - If the source file name is `<compiler-generated>`, the compiler created the code for that frame, and the code isn’t in your source files. If this is top frame in the crashed thread, look at the preceeding few stack frames for clues.
 - If the line number for a source file is `0`, this means the backtrace doesn’t map to a specific line of code in the original code. This is because the compiler optimized the code, such as by inlining functions, and the code executing at the time of the crash doesn’t correspond to an exact line in the orignial code. The function name for the frame is still a clue in this situation.
 
-##### Thread state
+### Thread state
 
 The thread state section of a crash report lists the CPU registers and their values for the crashed thread when the app crashes. Understanding the thread state is an advanced topic that requires understanding of the application binary interface (ABI). See [Writing ARM64 code for Apple platforms](./writing-arm64-code-for-apple-platforms.md).
 
@@ -196,7 +196,7 @@ Thread 0 crashed with ARM Thread State (64-bit):
 
 Registers provide extra information for crashes caused by memory access issues. [Understand the crashed thread’s registers](./analyzing-a-crash-report.md#Understand-the-crashed-threads-registers) discusses that scenario further.
 
-##### Binary images
+### Binary images
 
 The binary images section of a crash report lists all code loaded in the process at the time that it crashes, such as the app executable and system frameworks. Each line in the Binary Images section represents a single binary image. iOS, iPadOS, tvOS, visionOS, and watchOS use the following format:
 

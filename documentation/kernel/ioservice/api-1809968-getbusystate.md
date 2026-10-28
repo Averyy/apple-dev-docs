@@ -12,11 +12,11 @@ virtual UInt32 getBusyState(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The `busyState` value.
 
-#### Overview
+## Overview
 
 Many activities in IOService are asynchronous. When registration, matching, or termination is in progress on an IOService object, its `busyState` is increased by one. Change in `busyState` to or from zero also changes the IOService object's provider's `busyState` by one, which means that an IOService object is marked busy when any of the above activities is ocurring on it or any of its clients.
 

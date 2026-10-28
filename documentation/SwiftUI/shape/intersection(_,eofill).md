@@ -22,11 +22,11 @@ Returns a new shape with filled regions common to both shapes.
 nonisolated func intersection<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting shape is the overlapping area of the filled region of both shapes.  This can be used to clip the fill of a shape to a mask.
 

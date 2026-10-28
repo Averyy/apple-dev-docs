@@ -24,7 +24,7 @@ func loadAudioFiles(at audioFiles: [URL]) throws
 - (BOOL) loadAudioFilesAtURLs:(NSArray<NSURL *> *) audioFiles error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The framework loads the audio files into a new instrument with each audio file in its own sampler zone. The framework uses any information in the audio file for its placement in the instrument. For example, the root key and key range.
 

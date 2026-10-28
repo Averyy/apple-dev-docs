@@ -18,11 +18,11 @@ Iterates the array calling a callback block for each member.
 virtual bool iterateObjects(OSCollectionIterateObjectsBlock block) const;
 ```
 
-#### Return Value
+## Return Value
 
 False if the callback block returned false, otherwise true (including if the array is empty).
 
-#### Discussion
+## Discussion
 
 Calls the block with each member of the array, starting at index zero. The block must not modify the array during iteration. If the block returns true the iteration continues for all members, returning false halts the iteration early.
 

@@ -16,11 +16,11 @@ Returns the current frame number of the USB controller.
 - (uint64_t) frameNumberWithTime:(IOUSBHostTime *) time;
 ```
 
-#### Return Value
+## Return Value
 
 The current frame number.
 
-#### Discussion
+## Discussion
 
 This method returns the current frame number of the USB controller, omitting the microframe. This is useful for scheduling future isochronous requests with [`enqueueIORequest(with:frameList:frameListCount:firstFrameNumber:completionHandler:)`](../iousbhostpipe/enqueueiorequest%28with,framelist,framelistcount,firstframenumber,completionhandler%29.md) and [`sendIORequest(with:frameList:frameListCount:firstFrameNumber:)`](../iousbhostpipe/sendiorequest%28with,framelist,framelistcount,firstframenumber%29.md).
 

@@ -23,7 +23,7 @@ var isLoading: Bool { get }
 @property (nonatomic, readonly, getter=isLoading) BOOL loading;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `true` if the receiver is still loading content; otherwise, `false.` The [`WKWebView`](../wkwebview.md) class is key-value observing (KVO) compliant for this property.
 

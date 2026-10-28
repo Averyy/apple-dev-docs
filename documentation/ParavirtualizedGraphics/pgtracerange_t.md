@@ -15,7 +15,7 @@ An opaque data pointer representing a specific trace.
 typedef struct PGTraceRange_s PGTraceRange_t;
 ```
 
-#### Discussion
+## Discussion
 
 An app using the framework determines which data it needs to track a trace range. The framework never accesses the contents of the pointer.
 

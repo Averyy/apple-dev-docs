@@ -20,7 +20,7 @@ Narrows an untyped [`USDLayer.Spec`](../../../usdlayer/spec.md) to an attribute 
 init?(_ spec: USDLayer.Spec)
 ```
 
-#### Return Value
+## Return Value
 
 An attribute spec, or `nil` if `spec` is not an attribute spec.
 

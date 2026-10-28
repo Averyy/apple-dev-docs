@@ -12,7 +12,7 @@ Include your app’s content in search results that visual intelligence provides
 - Mac Catalyst 26.0+
 - macOS 27.0+
 
-#### Overview
+## Overview
 
 ![The visual intelligence icon in front of a colorful background.](https://developer.apple.com/tutorials/images/com.apple.visualintelligence/visual-intelligence@2x.png)
 

@@ -17,7 +17,7 @@ The content type for dates, times, and durations that appear in text.
 case dateTimeDuration
 ```
 
-#### Discussion
+## Discussion
 
 Use this content type for dates such as `7-3-2021`, times such as `This Saturday` and `12:30`, and durations such as `10-11am`.
 

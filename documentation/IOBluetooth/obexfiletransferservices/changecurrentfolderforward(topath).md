@@ -19,11 +19,11 @@ func changeCurrentFolderForward(toPath inDirName: String!) -> OBEXError
 - (OBEXError) changeCurrentFolderForwardToPath:(NSString *) inDirName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesPathChangeComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘cd dirName’.
 

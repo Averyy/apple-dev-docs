@@ -19,7 +19,7 @@ optional func sessionCompanionAppInstalledDidChange(_ session: WCSession)
 - (void) sessionCompanionAppInstalledDidChange:(WCSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method on the watchOS app’s session delegate when the user installs or uninstalls the iOS companion app. This is only valid on independent watchOS apps.
 

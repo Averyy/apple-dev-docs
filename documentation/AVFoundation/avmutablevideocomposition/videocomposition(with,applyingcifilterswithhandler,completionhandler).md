@@ -28,7 +28,7 @@ class func videoComposition(with asset: AVAsset, applyingCIFiltersWithHandler ap
 + (void) videoCompositionWithAsset:(AVAsset *) asset applyingCIFiltersWithHandler:(void (^)(AVAsynchronousCIImageFilteringRequest *request)) applier completionHandler:(void (^)(AVMutableVideoComposition *videoComposition, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The composition calls the specified handler one time for each frame to display (or processed for export) from the asset’s first enabled video track. In that block, you access the video frame and return a filtered result using the provided [`AVAsynchronousCIImageFilteringRequest`](../avasynchronousciimagefilteringrequest.md) object. Use that object’s [`sourceImage`](../avasynchronousciimagefilteringrequest/sourceimage.md) property to get the video frame in the form of a [`CIImage`](../../CoreImage/ciimage.md) object you can apply filters to. Pass the result of your filters to the `request` object’s [`finish(with:context:)`](../avasynchronousciimagefilteringrequest/finish%28with,context%29.md) method. (If your filter rendering fails, call the `request` object’s [`finish(with:)`](../avasynchronousciimagefilteringrequest/finish%28with%29.md) method if you can’t apply filters).
 

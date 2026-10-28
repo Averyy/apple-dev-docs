@@ -25,7 +25,7 @@ static func open() async throws
 
 - [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md)
 
-#### Discussion
+## Discussion
 
 Use this method if your app configures the [`SKExternalPurchaseLink`](../../BundleResources/information-property-list/skexternalpurchaselink.md) property list key.
 
@@ -49,7 +49,7 @@ https://site.example.com?externalPurchaseToken=ewoJImFwcEFwcGxlSWQiOjEyMzQ1Njc4O
 
 > ❗ **Important**:  Record and use the external purchase token to report the customer’s external purchases to Apple. For more information, see [External Purchase Server API](../../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
-##### Handle errors
+### Handle errors
 
 This method throws a [`StoreKitError`](../storekiterror.md) if any of the following are true:
 

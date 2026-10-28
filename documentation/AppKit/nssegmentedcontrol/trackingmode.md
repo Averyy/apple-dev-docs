@@ -19,7 +19,7 @@ var trackingMode: NSSegmentedControl.SwitchTracking { get set }
 @property NSSegmentSwitchTracking trackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSSegmentedControl.SwitchTracking`](./switchtracking.md) value specifies how the control responds when the user presses a keyboard key or clicks, force clicks (applies pressure in a pressure-sensitive system), releases pressure, and so on. For possible values see [`NSSegmentedControl.SwitchTracking`](./switchtracking.md).
 

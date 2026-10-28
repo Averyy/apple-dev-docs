@@ -25,11 +25,11 @@ init(name: String, managedObjectModel model: NSManagedObjectModel)
 - (instancetype) initWithName:(NSString *) name managedObjectModel:(NSManagedObjectModel *) model;
 ```
 
-#### Return Value
+## Return Value
 
 A persistent container initialized with the given name and model.
 
-#### Discussion
+## Discussion
 
 By default, the provided name value of the container is used as the name of the persisent store associated with the container. Passing in the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object overrides the lookup of the model by the provided name value.
 

@@ -16,11 +16,11 @@ OSStatus PMSessionSetIdleProc (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You do not need this function in macOS. Instead, use the standard idle proc. 
 

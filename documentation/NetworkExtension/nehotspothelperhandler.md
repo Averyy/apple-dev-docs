@@ -22,7 +22,7 @@ typealias NEHotspotHelperHandler = (NEHotspotHelperCommand) -> Void
 typedef void (^)(NEHotspotHelperCommand *) NEHotspotHelperHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The Hotspot Helper app provides a block of this type when it invokes the `registerWithOptions:queue:handler:` method.
 

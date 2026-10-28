@@ -24,11 +24,11 @@ func AudioCodecProduceOutputPackets(_ inCodec: AudioCodec, _ outOutputData: Unsa
 extern OSStatus AudioCodecProduceOutputPackets(AudioCodec inCodec, void *outOutputData, UInt32 *ioOutputDataByteSize, UInt32 *ioNumberPackets, AudioStreamPacketDescription *outPacketDescription, UInt32 *outStatus);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful. Returns `kAudioCodecStateError` if the codec has not been initialized. Returns `kAudioCodecNotEnoughBufferSpaceError` if the output buffer is not large enough for the requested number of packets. See `Result Codes` for other possible values.
 
-#### Discussion
+## Discussion
 
 This function causes the codec to produce as many output packets as requested, provided there is sufficient input data. If there is not enough input data to produce the requested number of output packets, the `outStatus` parameter returns the value `kAudioCodecProduceOutputPacketNeedsMoreInputData` and the `ioNumberPackets` parameter indicates the actual number of packets produced. On the other hand, if there is enough input data to produce at least one additional full packet, the `outStatus` parameter returns the value `kAudioCodecProduceOutputPacketSuccessHasMore`.
 

@@ -25,11 +25,11 @@ class func success(with resolvedTaskStatus: INTaskStatus) -> Self
 + (instancetype) successWithResolvedTaskStatus:(INTaskStatus) resolvedTaskStatus;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskStatusResolutionResult`](../intaskstatusresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you support searching for tasks with the specified status or applying the status to a task.
 

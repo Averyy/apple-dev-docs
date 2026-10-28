@@ -20,7 +20,7 @@ A message that posts after a mouse stops being the most recently used mouse.
 struct DidStopBeingCurrentMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didStopBeingCurrent` identifier with `NotificationCenter` to listen for this message.
 

@@ -27,7 +27,7 @@ var userIdentityDiscoveredBlock: ((CKUserIdentity, CKUserIdentity.LookupInfo) ->
 @property (nonatomic, copy, nullable) void (^userIdentityDiscoveredBlock)(CKUserIdentity *identity, CKUserIdentityLookupInfo *lookupInfo);
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

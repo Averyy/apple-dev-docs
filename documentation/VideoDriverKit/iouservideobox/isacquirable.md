@@ -15,7 +15,7 @@ A Boolean value indicating if box can be acquired.
 bool IsAcquirable();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

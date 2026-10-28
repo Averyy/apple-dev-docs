@@ -23,7 +23,7 @@ var videoRotationAngle: CGFloat { get set }
 @property (nonatomic) CGFloat videoRotationAngle;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an angle that an [`AVCaptureDevice.RotationCoordinator`](../avcapturedevice/rotationcoordinator.md) instance provides to keep video level relative to gravity. Only `0`, `90`, `180`, and `270` are valid angles. Setting any other value raises an `NSInvalidArgumentException`, so confirm that a connection supports an angle with [`isVideoRotationAngleSupported(_:)`](./isvideorotationanglesupported%28_%29.md). The property applies only to video and depth connections.
 

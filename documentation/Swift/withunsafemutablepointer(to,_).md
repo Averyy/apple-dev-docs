@@ -21,11 +21,11 @@ Calls the given closure with a mutable pointer to the given argument.
 func withUnsafeMutablePointer<T, E, Result>(to value: inout T, _ body: (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 The `withUnsafeMutablePointer(to:_:)` function is useful for calling Objective-C APIs that take in/out parameters (and default-constructible out parameters) by pointer.
 

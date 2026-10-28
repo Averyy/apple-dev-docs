@@ -25,11 +25,11 @@ class func current() -> NSXPCConnection?
 + (NSXPCConnection *) currentConnection;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSXPCConnection`](../nsxpcconnection.md) object, representing a connection to another process.
 
-#### Discussion
+## Discussion
 
 Use this method to determine what process invoked the current call.
 

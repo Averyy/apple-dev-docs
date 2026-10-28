@@ -24,7 +24,7 @@ var minificationFilter: String { get set }
 @property (copy) NSString * minificationFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in Scaling Filters. The default value is [`linear`](../calayercontentsfilter/linear.md).
 

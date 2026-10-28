@@ -19,7 +19,7 @@ class var requestedAttributes: FSItem.GetAttributesRequest { get }
 @property (class, nonatomic, strong, readonly) FSItemGetAttributesRequest * requestedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Your module populates these attributes in [`FSItem.Attributes`](../fsitem/attributes.md) instances.
 

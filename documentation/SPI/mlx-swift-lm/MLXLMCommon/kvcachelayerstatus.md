@@ -17,7 +17,7 @@ Effective state of one leaf in a model’s cache topology.
 struct KVCacheLayerStatus
 ```
 
-#### Overview
+## Overview
 
 This is shared by the high-level [`KVCacheStatus`](./kvcachestatus.md) API and the lower-level [`KVCacheRuntimeReport`](./kvcacheruntimereport.md) compatibility view.
 

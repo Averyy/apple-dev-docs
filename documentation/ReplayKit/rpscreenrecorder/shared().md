@@ -26,11 +26,11 @@ class func shared() -> RPScreenRecorder
 + (RPScreenRecorder *) sharedRecorder;
 ```
 
-#### Return Value
+## Return Value
 
 An `RPScreenRecorder` object.
 
-#### Discussion
+## Discussion
 
 Use [`shared()`](./shared%28%29.md) to access the shared recorder.
 

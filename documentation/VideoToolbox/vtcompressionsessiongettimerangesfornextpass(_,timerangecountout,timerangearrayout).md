@@ -24,7 +24,7 @@ func VTCompressionSessionGetTimeRangesForNextPass(_ session: VTCompressionSessio
 extern OSStatus VTCompressionSessionGetTimeRangesForNextPass(VTCompressionSessionRef session, CMItemCount *timeRangeCountOut, const CMTimeRange **timeRangeArrayOut);
 ```
 
-#### Discussion
+## Discussion
 
 If [`VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)`](./vtcompressionsessionendpass%28_,furtherpassesrequestedout,_%29.md) sets `furtherPassesRequestedOut` to [`true`](../Swift/true.md), call this function to find out the time ranges for the next pass.  Source frames outside these time ranges should be skipped. Each time range includes any frame at its start time and does not include any frame at its end time.
 

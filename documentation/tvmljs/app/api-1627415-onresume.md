@@ -15,7 +15,7 @@ A callback function that is automatically called when the app moves to the foreg
 attribute function onResume;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `onResume` attribute to start any required actions when the app moves from the background to the foreground. This attribute must be set to a function that accepts an `options` argument; for example `App.onResume = function (options) {}`. The `options` argument is always set to `null`.
 

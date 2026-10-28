@@ -5,11 +5,11 @@
 
 Test localizations in the SwiftUI preview or the Interface Builder preview.
 
-#### Overview
+## Overview
 
 You can preview localizations early in development while you lay out your app’s interface for both SwiftUI and Interface Builder apps. For SwiftUI apps, you need to add the language or import the localization before you preview it, described in [Adding support for languages and regions](./adding-support-for-languages-and-regions.md) and [Importing localizations](./importing-localizations.md). For Interface Builder apps, you can first preview the interface in pseudolanguages and then later in the localizations you add.
 
-##### Add localizations to a SwiftUI preview
+### Add localizations to a SwiftUI preview
 
 For SwiftUI apps, you can preview a localization by setting the [`locale`](../SwiftUI/environmentvalues/locale.md) environment variable in your code. Use the [`environment(_:_:)`](../SwiftUI/view/environment%28_,_%29.md) function to set the locale for all views in the view hierarchy of a SwiftUI preview. For example, if you add German to your project, you can set the locale to German (`de`):
 
@@ -28,7 +28,7 @@ To preview multiple localizations, add additional previews to your code and set 
 
 ![Screenshot of the project editor with the ContentView.swift file selected in the navigator and the line of code that sets the locale highlighted, and its preview on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/previewing-localizations-1@2x.png)
 
-##### Preview localizations in Interface Builder
+### Preview localizations in Interface Builder
 
 For Interface Builder, you can preview localizations any time during development by choosing localizations including pseudolanguages in the preview. You don’t need to build and run your app to see the preview.
 

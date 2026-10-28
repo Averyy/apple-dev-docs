@@ -24,7 +24,7 @@ func remapValues(toTerracesWithPeaks peakInputValues: [NSNumber], terracesInvert
 - (void) remapValuesToTerracesWithPeaks:(NSArray<NSNumber *> *) peakInputValues terracesInverted:(BOOL) inverted;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the [`GKNoise`](../gknoise.md) class first creates a curve between the points in the `peakInputValues` array. Each point in the array is a value that remains unchanged, and the `inverted` parameter determines the shape of the curve in between those points. Then, this method uses the curve to replace values in the noise field. The resulting effect can be useful for generating textures that resemble realistic terrain, replacing sloping hills with dramatic plateaus and ridges.
 

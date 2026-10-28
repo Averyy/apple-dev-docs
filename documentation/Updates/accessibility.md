@@ -5,33 +5,33 @@
 
 Learn about important changes to Accessibility.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Accessibility](../Accessibility/Accessibility.md).
 
-#### June 2025
+## June 2025
 
 - Add [Accessibility Nutrition Labels](../Accessibility/Accessibility.md) to your App Store product page to indicate which accessibility features your app supports.
 - Support Assistive Access in iOS and iPadOS scenes with [`AssistiveAccess`](../SwiftUI/assistiveaccess.md).
 - Use [`AXBrailleTranslator`](../Accessibility/axbrailletranslator.md) to translate print text to Braille and Braille to print text according to a given Braille table.
 - Use [`openSettings(for:)`](../Accessibility/accessibilitysettings/opensettings%28for%29.md) to open the Settings app to new sections of Accessibility settings, including [`AccessibilitySettings.Feature.assistiveTouch`](../Accessibility/accessibilitysettings/feature/assistivetouch.md), [`AccessibilitySettings.Feature.assistiveTouchDevices`](../Accessibility/accessibilitysettings/feature/assistivetouchdevices.md), and  [`AccessibilitySettings.Feature.dwellControl`](../Accessibility/accessibilitysettings/feature/dwellcontrol.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Enhance music with tactile feedback for people who are deaf or hard of hearing by playing Apple-generated haptic tracks along with music tracks. Add the [`MusicHapticsSupported`](../BundleResources/information-property-list/musichapticssupported.md) `Info.plist` key to notify the system that your app supports the Music Haptics feature. Specify which song is playing using the [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](../MediaPlayer/mpnowplayinginfopropertyinternationalstandardrecordingcode.md). Music Haptics uses the International Standard Recording Code (ISRC) to choose the correct Music Haptics track to play at the same time. Observe and respond to the status of the haptic track playback using [`MAMusicHapticsManager`](../MediaAccessibility/mamusichapticsmanager.md).
 - Open the Settings app to a specific section of Accessibility settings using [`openSettings(for:)`](../Accessibility/accessibilitysettings/opensettings%28for%29.md).
 - Support people’s preference to reduce the blinking animation of the text insertion indicator for custom cursor implementations. Check the value of the preference with [`prefersNonBlinkingTextInsertionIndicator`](../Accessibility/accessibilitysettings/prefersnonblinkingtextinsertionindicator.md), and observe when people change that preference with [`prefersNonBlinkingTextInsertionIndicatorDidChangeNotification`](../Accessibility/accessibilitysettings/prefersnonblinkingtextinsertionindicatordidchangenotification.md).
 - Check if a device uses Assistive Access with [`isAssistiveAccessEnabled`](../Accessibility/accessibilitysettings/isassistiveaccessenabled.md) if you need to remove workflows or UI elements that aren’t appropriate in the context of Assistive Access.
 
-##### SwiftUI
+### SwiftUI
 
 - Specify that your accessibility element behaves as a tab bar using the [`isTabBar`](../SwiftUI/accessibilitytraits/istabbar.md) accessibility trait with the [`accessibilityAddTraits(_:)`](../SwiftUI/view/accessibilityaddtraits%28_%29.md) modifier. In UIKit, use [`tabBar`](../UIKit/uiaccessibilitytraits/tabbar.md).
 - Enhance how you structure accessibility labels by appending custom content using [`accessibilityLabel(content:)`](../SwiftUI/view/accessibilitylabel%28content%29.md).
 - Generate a localized description of a color in a string interpolation by adding `accessibilityName:`, such as `"\(accessibilityName: myColor)"`. Pass that string to any accessibility modifier.
 
-#### June 2023
+## June 2023
 
 - Provide a great experience for your app in Assistive Access, an accessibility feature that tailors the iOS and iPadOS experience for people with cognitive disabilities. Adopt [`UISupportsFullScreenInAssistiveAccess`](../BundleResources/information-property-list/uisupportsfullscreeninassistiveaccess.md) to allow your app’s UI to expand into all the available space above the Back button in Assistive Access.
 - Personalize your app with Personal Voice, a new feature that lets people record and recreate their voice directly on their iOS and macOS devices. Personal voices appear alongside system voices and are available for Live Speech, a type-to-speak feature that lets a person synthesize speech on the fly. Request access to synthesize speech with personal voices using a new request authorization API in [`AVSpeechSynthesizer`](../AVFAudio/avspeechsynthesizer.md).

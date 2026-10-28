@@ -25,7 +25,7 @@ func setFillColor(gray: CGFloat, alpha: CGFloat)
 extern void CGContextSetGrayFillColor(CGContextRef c, CGFloat gray, CGFloat alpha);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, two things happen:
 

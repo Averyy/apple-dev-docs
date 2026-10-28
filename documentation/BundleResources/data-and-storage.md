@@ -5,7 +5,7 @@
 
 Regulate documents, URLs, and other kinds of data movement and storage.
 
-#### Overview
+## Overview
 
 The system needs to know what kinds of data your app stores, provides, or consumes. Add keys to your app’s [`Information Property List`](./information-property-list.md) that declare your app’s data management capabilities.
 

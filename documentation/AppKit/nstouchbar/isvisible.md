@@ -22,7 +22,7 @@ var isVisible: Bool { get }
 @property (readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`true`](../../Swift/true.md) indicates that the bar is attached to an eligible bar provider and that its items are displayable, assuming adequate geometric space. A *bar provider* is an object that conforms to the [`NSTouchBarProvider`](../nstouchbarprovider.md) protocol. For more on bar providers, read [Bar objects](../nstouchbar.md#Bar-objects).
 

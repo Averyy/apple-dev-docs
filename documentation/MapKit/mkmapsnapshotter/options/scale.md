@@ -26,7 +26,7 @@ var scale: CGFloat { get set }
 @property (nonatomic, assign) CGFloat scale;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is either `1.0` or `2.0`, depending on whether the device has a standard or Retina display. Set the value to `1.0` if you want to display the resulting image on a standard resolution display. Set the value to 2.0 if you want to display the image on a Retina display or want to use the image for printing.
 

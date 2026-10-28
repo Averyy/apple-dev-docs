@@ -11,7 +11,7 @@ Update the display name and description for a specific locale of an In-App Purch
 
 > **Deprecated**: This endpoint is deprecated. Use [`Modify an In-App Purchase localization`](./patch-v2-inapppurchaselocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

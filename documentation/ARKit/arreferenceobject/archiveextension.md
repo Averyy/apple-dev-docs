@@ -20,7 +20,7 @@ class let archiveExtension: String
 extern NSString * const ARReferenceObjectArchiveExtension;
 ```
 
-#### Discussion
+## Discussion
 
 Use this filename extension when constructing a URL to save a reference object file with the [`export(to:previewImage:)`](./export%28to,previewimage%29.md) method.
 

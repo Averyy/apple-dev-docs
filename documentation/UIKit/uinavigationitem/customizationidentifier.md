@@ -26,7 +26,7 @@ var customizationIdentifier: String? { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Set a customization identifier to support a personalized navigation bar layout experience. When you assign a string to this property, UIKit allows people to customize the layout of the items in the navigation bar by choosing the customize option in the overflow menu. UIKit automatically saves and restores this custom layout across app launches.
 

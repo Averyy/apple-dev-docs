@@ -28,7 +28,7 @@ func send(_ data: Data, to players: [GKPlayer], dataMode mode: GKMatch.SendDataM
 
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 The match queues the data and transmits it when the network becomes available.
 

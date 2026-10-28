@@ -25,7 +25,7 @@ var allAllocations: [any MTLAllocation] { get }
 @property (copy, readonly, nonnull) NSArray<id<MTLAllocation>> * allAllocations;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of resource allocations, and its elements can be an arbitrary mix of [`MTLBuffer`](../mtlbuffer.md), [`MTLTexture`](../mtltexture.md), and [`MTLHeap`](../mtlheap.md) instances.
 

@@ -21,7 +21,7 @@ class CTCellularPlanProvisioning
 @interface CTCellularPlanProvisioning : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class is only available to carrier apps with the [`com.apple.CommCenter.fine-grained`](../BundleResources/entitlements/com.apple.commcenter.fine-grained.md) entitlement, where the entitlement’s array of values includes `public-cellular-plan`.
 

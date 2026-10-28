@@ -16,7 +16,7 @@ A type that provides access to the timing information and data types you need to
 struct Frame
 ```
 
-#### Overview
+## Overview
 
 A frame represents a snapshot of your app’s content at a single moment in time. In your rendering loop, you render your content into static images many times a second to create the illusion of animation. A [`LayerRenderer.Frame`](./frame.md) provides the Metal textures and information you need to render one of those images.
 

@@ -27,7 +27,7 @@ var currentActivity: CLSActivity? { get }
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Discussion
+## Discussion
 
 You add an activity to a context by calling the [`createNewActivity()`](./createnewactivity%28%29.md) method when a person makes a new attempt at a task. You then use the context’s [`currentActivity`](./currentactivity.md) property to access the newly created activity. If the context has an existing activity from a previous attempt, it ceases to be available to your app as a result of creating a new one. However, the network still retains its data for reporting purposes.
 

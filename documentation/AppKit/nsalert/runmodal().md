@@ -19,15 +19,15 @@ func runModal() -> NSApplication.ModalResponse
 - (NSModalResponse) runModal;
 ```
 
-#### Return Value
+## Return Value
 
 A response to the alert. See this method’s “Special Considerations” section for details.
 
-#### Discussion
+## Discussion
 
 You can create the alert either through the standard allocation and initialization procedure or, if necessary in your app, by using the deprecated compatibility method [`alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:`](./alertwithmessagetext_defaultbutton_alternatebutton_otherbutton_informativetextwithformat_.md).
 
-##### Special Considerations
+### Special Considerations
 
 This method can return values other than those specific to the alert buttons ([`alertFirstButtonReturn`](../nsapplication/modalresponse/alertfirstbuttonreturn.md), [`alertSecondButtonReturn`](../nsapplication/modalresponse/alertsecondbuttonreturn.md), and so on) if the alert is canceled programatically.
 

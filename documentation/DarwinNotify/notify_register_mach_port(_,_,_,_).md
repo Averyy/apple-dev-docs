@@ -23,11 +23,11 @@ func notify_register_mach_port(_ name: UnsafePointer<CChar>!, _ notify_port: Uns
 extern uint32_t notify_register_mach_port(const char *name, mach_port_t *notify_port, int flags, int *out_token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Request notification by mach message.
 

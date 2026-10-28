@@ -19,7 +19,7 @@ func removeView(_ view: NSView)
 - (void) removeView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes a view from a stack view whether the view is attached or detached. For an attached view only, you can alternatively call the [`removeFromSuperview()`](../../UIKit/uiview/removefromsuperview%28%29.md) method on the view.
 

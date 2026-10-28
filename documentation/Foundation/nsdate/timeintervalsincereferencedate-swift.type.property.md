@@ -25,11 +25,11 @@ class var timeIntervalSinceReferenceDate: TimeInterval { get }
 @property (class, readonly) NSTimeInterval timeIntervalSinceReferenceDate;
 ```
 
-#### Return Value
+## Return Value
 
 The interval between the system’s absolute reference date (00:00:00 UTC on 1 January 2001) and the current date and time.
 
-#### Discussion
+## Discussion
 
 This method is the primitive method for [`NSDate`](../nsdate.md). If you subclass [`NSDate`](../nsdate.md), you must override this method with your own implementation for it.
 

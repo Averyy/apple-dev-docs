@@ -16,7 +16,7 @@ Specify if the assertion creator is a plugin.
 #define kIOPMAssertionPlugInIDKey
 ```
 
-#### Discussion
+## Discussion
 
 If the code that creates the assertion resides in a plugin, the caller should specify a CFBundleIdentifier, as a CFString, identifying the plugin's bundle here. This info helps developers and administrators determine the source of an assertion.
 

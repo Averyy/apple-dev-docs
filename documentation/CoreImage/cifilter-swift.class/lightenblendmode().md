@@ -24,11 +24,11 @@ class func lightenBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) lightenBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the lighten-blend mode filter to an image. The effect replaces any samples in the background image that are darker than input image.
 

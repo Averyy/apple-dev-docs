@@ -19,7 +19,7 @@ var identifier: NSUserInterfaceItemIdentifier { get set }
 @property (copy) NSUserInterfaceItemIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This string is used by the data source to identify the table column.
 

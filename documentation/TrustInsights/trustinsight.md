@@ -16,7 +16,7 @@ A protocol that describes the trust insight model and the associated evaluation 
 protocol TrustInsight : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t instantiate this type directly, use one of its concrete insight types, such as  [`IsLikelyBeingCoachedInsight`](./islikelybeingcoachedinsight.md) instead.
 

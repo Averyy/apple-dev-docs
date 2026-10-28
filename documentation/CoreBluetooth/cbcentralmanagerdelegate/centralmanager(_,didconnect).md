@@ -25,7 +25,7 @@ optional func centralManager(_ central: CBCentralManager, didConnect peripheral:
 - (void) centralManager:(CBCentralManager *) central didConnectPeripheral:(CBPeripheral *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 The manager invokes this method when a call to [`connect(_:options:)`](../cbcentralmanager/connect%28_,options%29.md) succeeds. You typically implement this method to set the peripheral’s delegate and discover its services.
 

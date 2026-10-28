@@ -19,7 +19,7 @@ func setTaskCompleted(restoredDefaultState: Bool, estimatedSnapshotExpiration: D
 - (void) setTaskCompletedWithDefaultStateRestored:(BOOL) restoredDefaultState estimatedSnapshotExpiration:(NSDate *) estimatedSnapshotExpiration userInfo:(id<NSObject,NSSecureCoding>) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method as soon as your app finishes updating its user interface. The system provides your extension with a limited amount of time (on the order of seconds) to finish the background snapshot refresh task. If you do not call [`setTaskCompleted(restoredDefaultState:estimatedSnapshotExpiration:userInfo:)`](./settaskcompleted%28restoreddefaultstate,estimatedsnapshotexpiration,userinfo%29.md) on the task, the system uses all available time, wasting battery power. The system then suspends the extension as soon as the allotted time has expired.
 

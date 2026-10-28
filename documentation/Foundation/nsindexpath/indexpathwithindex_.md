@@ -21,7 +21,7 @@ Creates a one-node index path.
 + (instancetype) indexPathWithIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 One-node index path with `index`.
 

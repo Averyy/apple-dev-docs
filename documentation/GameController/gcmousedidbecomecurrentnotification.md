@@ -20,7 +20,7 @@ A notification that posts when a mouse becomes the most recent mouse that the us
 extern NSString * const GCMouseDidBecomeCurrentNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCMouse`](./gcmouse.md) object that represents the current mouse. For example, set the mouse input change handlers when you receive this notification.
 

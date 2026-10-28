@@ -24,7 +24,7 @@ var vertexFunction: (any MTLFunction)? { get set }
 @property (nonatomic, strong, readwrite, nullable) id<MTLFunction> vertexFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. The vertex function needs to be specified. The vertex function can be either a regular vertex function or a post-tessellation vertex function.
 

@@ -19,7 +19,7 @@ class func `class`(for data: Data) -> AnyClass?
 + (Class) imageRepClassForData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A `Class` object for the image representation that can handle the data, or `nil` if no image representation could handle the data.
 

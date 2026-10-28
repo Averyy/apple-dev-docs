@@ -4,7 +4,7 @@
 
 Allow Xcode Cloud to access your Git repository.
 
-#### Overview
+## Overview
 
 With Xcode Cloud, you can adopt a CI/CD practice that helps you develop and maintain your apps and frameworks. For Xcode Cloud to automatically build and test your code when you make changes, provide a continuous secure HTTPS connection on port 443 to the Git repository that contains your code.
 

@@ -22,7 +22,7 @@ var isDepthDataDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isDepthDataDeliveryEnabled) BOOL depthDataDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Depth data captures a per-pixel map of scene depth information delivered alongside the photo image and optionally embedded in image file output. Depth data can be used for purposes such as applying depth-sensitive photo filter effects (like that seen in the iOS Camera app’s Portrait mode) and performing computer vision tasks.
 

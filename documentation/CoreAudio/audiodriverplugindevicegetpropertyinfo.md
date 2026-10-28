@@ -14,11 +14,11 @@
 extern OSStatus AudioDriverPlugInDeviceGetPropertyInfo(AudioDeviceID inDevice, UInt32 inChannel, Boolean isInput, AudioDevicePropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. Note that if the plug-in does not implement the given property, it should return kAudioHardwareUnknownPropertyError to ensure that the HAL handles the property normally.
 
-#### Discussion
+## Discussion
 
 Retrieve information about the given property of an AudioDevice.
 

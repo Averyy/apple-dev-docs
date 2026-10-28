@@ -22,7 +22,7 @@ var exposureDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime exposureDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The exposure duration is between the active format’s [`minExposureDuration`](./format/minexposureduration.md) and [`maxExposureDuration`](./format/maxexposureduration.md).
 

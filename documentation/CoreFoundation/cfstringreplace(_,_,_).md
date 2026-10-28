@@ -25,7 +25,7 @@ func CFStringReplace(_ theString: CFMutableString!, _ range: CFRange, _ replacem
 extern void CFStringReplace(CFMutableStringRef theString, CFRange range, CFStringRef replacement);
 ```
 
-#### Discussion
+## Discussion
 
 Although you can use this function to replace all characters in a CFMutableString object (by specifying a range of `(0, CFStringGetLength(theString))` ), it is more convenient to use the [`CFStringReplaceAll(_:_:)`](./cfstringreplaceall%28_,_%29.md) function for that purpose.
 

@@ -21,7 +21,7 @@ var symbolTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * symbolTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The system requires a dynamic color that adapts to appearance changes. Static colors without light and dark variants fall back to the system default label color. Alpha components are ignored and all colors render at full opacity.
 

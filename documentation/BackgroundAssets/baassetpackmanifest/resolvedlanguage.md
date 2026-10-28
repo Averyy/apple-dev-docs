@@ -20,7 +20,7 @@ The language, represented as a BCP-47 identifier, asset packs in this manifest t
 @property (copy, readonly, nullable) NSString * resolvedLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 The user’s preferred languages inform the choice of resolved language, respecting any language that your application sets manually by setting [`resolvedLanguage`](../baassetpackmanager/resolvedlanguage.md). This property may be `nil` if no localized asset packs are available. If the user recently changed their preferred language or if this manifest is outdated, this property’s value may be out of sync with the set of asset packs available locally.
 

@@ -24,11 +24,11 @@ typealias JSObjectGetPropertyCallback = (JSContextRef?, JSObjectRef?, JSStringRe
 typedef const struct OpaqueJSValue *(*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSString *, const struct OpaqueJSValue **) JSObjectGetPropertyCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The property’s value if the object has the property; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 If you name your function `GetProperty`, you declare it like this:
 

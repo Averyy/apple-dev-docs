@@ -25,7 +25,7 @@ func CFDateFormatterCreateStringWithDate(_ allocator: CFAllocator!, _ formatter:
 extern CFStringRefCFDateFormatterCreateStringWithDate(CFAllocatorRef allocator, CFDateFormatterRef formatter, CFDateRef date);
 ```
 
-#### Return Value
+## Return Value
 
 A new string that represents `date` in the specified format. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

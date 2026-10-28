@@ -29,11 +29,11 @@ func uploadTask(with request: URLRequest, from bodyData: Data) -> URLSessionUplo
 
 - [Uploading data to a website](../uploading-data-to-a-website.md)
 
-#### Return Value
+## Return Value
 
 The new session upload task.
 
-#### Discussion
+## Discussion
 
 An HTTP upload request is any request that contains a request body, such as a `POST` or `PUT` request. Upload tasks require you to create a request object so that you can provide metadata for the upload, like HTTP request headers.
 

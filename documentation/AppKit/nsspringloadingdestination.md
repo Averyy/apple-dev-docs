@@ -19,7 +19,7 @@ protocol NSSpringLoadingDestination : NSObjectProtocol
 @protocol NSSpringLoadingDestination <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Spring-loading is the act of dragging an object onto a destination object and hovering or force-clicking to activate the destination object A view can be configured as a drag-and-drop destination, a spring-loading destination, or both. If a view implements both drag-and-drop and spring-loading, then it will receive messages for both operations.
 

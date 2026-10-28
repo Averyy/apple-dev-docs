@@ -21,7 +21,7 @@ Returns a boolean value indicating whether this unicode scalar view is trivially
 func isTriviallyIdentical(to other: String.UnicodeScalarView) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

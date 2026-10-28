@@ -19,7 +19,7 @@ var isBrowsingVersions: Bool { get }
 @property (readonly, getter=isBrowsingVersions) BOOL browsingVersions;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the versions browser is visible.
 

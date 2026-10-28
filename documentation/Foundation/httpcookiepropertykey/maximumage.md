@@ -25,7 +25,7 @@ static let maximumAge: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieMaximumAge;
 ```
 
-#### Discussion
+## Discussion
 
 Only valid for Version 1 cookies and later. Default is `"0"`. This cookie attribute is optional.
 

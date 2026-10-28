@@ -24,7 +24,7 @@ var contentOffset: CGPoint { get set }
 @property (nonatomic, readwrite) CGPoint contentOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If the scrollable container contains `bounds`, then `bounds.origin` must be equal to the content offset. The system repeatedly sets this property to simulate animated scrolling.
 

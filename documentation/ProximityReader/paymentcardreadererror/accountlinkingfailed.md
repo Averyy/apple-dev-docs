@@ -17,7 +17,7 @@ An error that indicates the system couldn’t link or relink the merchant using 
 case accountLinkingFailed
 ```
 
-#### Discussion
+## Discussion
 
 Ensure the Apple Account is still active and in a good standing, then try again.
 

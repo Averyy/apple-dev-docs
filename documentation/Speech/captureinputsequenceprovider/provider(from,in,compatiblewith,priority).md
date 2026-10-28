@@ -19,11 +19,11 @@ Returns an input sequence provider that reads from an audio capture device.
 static func provider(from captureDevice: AVCaptureDevice, in session: AVCaptureSession, compatibleWith modules: [any SpeechModule], priority: TaskPriority? = nil) async throws -> CaptureInputSequenceProvider
 ```
 
-#### Return Value
+## Return Value
 
 An instance of this class.
 
-#### Discussion
+## Discussion
 
 This method also creates an `AVCaptureAudioDataOutput` object suitable for adding to an existing `AVCaptureSession`. It does not reconfigure or alter the session.
 

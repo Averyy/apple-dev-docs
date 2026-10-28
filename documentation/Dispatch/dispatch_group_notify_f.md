@@ -21,7 +21,7 @@ Schedules an application-defined function to be submitted to a queue when a grou
 extern void dispatch_group_notify_f(dispatch_group_t group, dispatch_queue_t queue, void *context, dispatch_function_t work);
 ```
 
-#### Discussion
+## Discussion
 
 This function schedules a notification block to be submitted to the specified queue when all blocks associated with the dispatch group have completed. If the group is empty (no block objects are associated with the dispatch group), the notification block object is submitted immediately.
 

@@ -27,7 +27,7 @@ var naturalSize: CGSize { get }
 @property (nonatomic, readonly) CGSize naturalSize;
 ```
 
-#### Discussion
+## Discussion
 
 For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](../../CoreFoundation/cgsize/zero.md).
 

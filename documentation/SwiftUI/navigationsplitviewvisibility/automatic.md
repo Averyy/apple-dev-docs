@@ -21,7 +21,7 @@ Use the default leading column visibility for the current device.
 static var automatic: NavigationSplitViewVisibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 This computed property returns one of the three concrete cases: [`detailOnly`](./detailonly.md), [`doubleColumn`](./doublecolumn.md), or [`all`](./all.md).
 

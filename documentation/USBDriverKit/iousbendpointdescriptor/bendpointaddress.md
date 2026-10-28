@@ -15,7 +15,7 @@ The address of the endpoint.
 uint8_t bEndpointAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The address includes information about the direction of the endpoint.
 

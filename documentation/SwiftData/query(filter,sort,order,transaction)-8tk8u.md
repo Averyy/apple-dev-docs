@@ -18,8 +18,8 @@ Fetches a subset of the attached model type, in a specific order, by sorting on 
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query<Value, Element>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value?>, order: SortOrder = .forward, transaction: Transaction? = nil) where Value : Comparable, Element : PersistentModel
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query<Value, Element>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value?>, order: SortOrder = .forward, transaction: Transaction? = nil) where Value : Comparable, Element : PersistentModel
 ```
 
 ## Parameters

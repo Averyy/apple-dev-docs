@@ -12,11 +12,11 @@ static OSString * withString(
  const OSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSString representing the same characters as `aString`, and with a reference count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 The new OSString is a distinct instance from `aString`, and is not merely the original object with the reference count incremented. Changes to one will not be reflected in the other.
 

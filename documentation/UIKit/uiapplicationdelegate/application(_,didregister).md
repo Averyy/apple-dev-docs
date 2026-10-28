@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didRegister notification
 - (void) application:(UIApplication *) application didRegisterUserNotificationSettings:(UIUserNotificationSettings *) notificationSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that use local or remote notifications to alert the user to new information must register the types of notifications they want to use by calling the [`registerUserNotificationSettings(_:)`](../uiapplication/registerusernotificationsettings%28_%29.md) method of the app object. The system compares your app’s request with the user’s preferences to determine the types of local and remote notifications allowed, and returns the results to your app by calling this method. Check the contents of the `notificationSettings` parameter whenever this method is called.
 

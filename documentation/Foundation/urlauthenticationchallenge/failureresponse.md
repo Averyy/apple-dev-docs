@@ -26,7 +26,7 @@ var failureResponse: URLResponse? { get }
 @property (copy, readonly, nullable) NSURLResponse * failureResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the protocol doesn’t use responses to indicate an authentication failure.
 

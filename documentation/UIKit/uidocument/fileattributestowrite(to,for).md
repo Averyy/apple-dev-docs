@@ -22,11 +22,11 @@ func fileAttributesToWrite(to url: URL, for saveOperation: UIDocument.SaveOperat
 - (NSDictionary *) fileAttributesToWriteToURL:(NSURL *) url forSaveOperation:(UIDocumentSaveOperation) saveOperation error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of file attributes — for example, level of file protection and creation date. See [`FileManager`](../../Foundation/filemanager.md) for more information about file attributes.
 
-#### Discussion
+## Discussion
 
 The attributes are associated with a specific file type and save operation. You can override this method to return a dictionary of file attributes that are different than the default file attribute, which for new files is [`extensionHidden`](../../Foundation/fileattributekey/extensionhidden.md).
 

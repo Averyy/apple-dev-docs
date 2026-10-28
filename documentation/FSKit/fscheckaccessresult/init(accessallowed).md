@@ -19,7 +19,7 @@ init?(accessAllowed: Bool)
 - (instancetype) initWithAccessAllowed:(BOOL) accessAllowed;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

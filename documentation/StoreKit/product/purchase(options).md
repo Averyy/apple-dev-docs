@@ -28,11 +28,11 @@ func purchase(options: Set<Product.PurchaseOption> = []) async throws -> Product
 - [Sending Advanced Commerce API requests from your app](../sending-advanced-commerce-api-requests-from-your-app.md)
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
-#### Return Value
+## Return Value
 
 Returns a [`Product.PurchaseResult`](./purchaseresult.md).
 
-#### Discussion
+## Discussion
 
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Before using [`purchase(options:)`](./purchase%28options%29.md) consider the following APIs and choose the one that best suits your app’s implementation:
 
@@ -43,7 +43,7 @@ StoreKit provides several APIs you can use to enable customers to initiate a pur
 
 > ❗ **Important**:  If you use StoreKit views such as [`ProductView`](../productview.md), [`StoreView`](../storeview.md), or [`SubscriptionStoreView`](../subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [StoreKit views](../storekit-views.md).
 
-##### Use the purchase API
+### Use the purchase API
 
 Call the [`purchase(options:)`](./purchase%28options%29.md) method when a customer initiates a purchase, either within your app or after selecting a promoted Apple In-App Purchase on the App Store. This method brings up the system-confirmation sheet. The user can confirm to complete the transaction or cancel it.
 

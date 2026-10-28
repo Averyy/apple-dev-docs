@@ -19,11 +19,11 @@ func SCDynamicStoreCopyNotifiedKeys(_ store: SCDynamicStore) -> CFArray?
 CFArrayRefSCDynamicStoreCopyNotifiedKeys(SCDynamicStoreRef store);
 ```
 
-#### Return Value
+## Return Value
 
 The keys that have changed, or `NULL` if an error occurred. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 If possible, your application should use the notification functions instead of polling for the list of changed keys returned by this function.
 

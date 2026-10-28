@@ -19,7 +19,7 @@ static let synthesizerInfo: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechSynthesizerInfoProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary object that contains information about the speech synthesizer being used on the specified synthesizer. See [`NSSpeechSynthesizer.SpeechPropertyKey.SynthesizerInfoKey`](./synthesizerinfokey.md) for a description of the keys present in the dictionary.
 

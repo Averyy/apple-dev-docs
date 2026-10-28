@@ -23,7 +23,7 @@ var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]?
 @property (nonatomic, readonly, nullable) NSArray<ASAuthorizationPlatformPublicKeyCredentialDescriptor *> * excludedCredentials;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the WebAuthn parameter `excludeCredentials`.
 

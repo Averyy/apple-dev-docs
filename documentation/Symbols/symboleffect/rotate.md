@@ -23,7 +23,7 @@ static var rotate: RotateSymbolEffect { get }
 
 Available when `Self` is `RotateSymbolEffect`.
 
-#### Discussion
+## Discussion
 
 The Rotate animation rotates parts of a symbol around a symbol-provided anchor point.
 

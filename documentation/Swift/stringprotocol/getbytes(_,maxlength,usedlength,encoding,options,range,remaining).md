@@ -21,11 +21,11 @@ Writes the given `range` of characters into `buffer` in a given `encoding`, with
 func getBytes<R>(_ buffer: inout [UInt8], maxLength maxBufferCount: Int, usedLength usedBufferCount: UnsafeMutablePointer<Int>, encoding: String.Encoding, options: String.EncodingConversionOptions = [], range: R, remaining leftover: UnsafeMutablePointer<Range<Self.Index>>) -> Bool where R : RangeExpression, R.Bound == String.Index
 ```
 
-#### Return Value
+## Return Value
 
 `true` if some characters were converted, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 > **Note**: Conversion stops when the buffer fills or when the conversion isn’t possible due to the chosen encoding.
 

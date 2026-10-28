@@ -23,7 +23,7 @@ var leftAnchor: NSLayoutXAxisAnchor { get }
 @property (nonatomic, strong, readonly) NSLayoutXAxisAnchor * leftAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s left edge. You can combine this anchor only with a subset of the [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md) anchors. You can combine a [`UIView`](../uiview.md) with another `leftAnchor`, a `rightAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 

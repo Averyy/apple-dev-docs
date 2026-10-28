@@ -17,7 +17,7 @@ Read operations aren’t allowed when the device’s passcode is disabled.
 case passcodeDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Your app needs to ask the user to set a security passcode on their device.
 

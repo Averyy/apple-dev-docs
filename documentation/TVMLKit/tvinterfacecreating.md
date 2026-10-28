@@ -25,7 +25,7 @@ protocol TVInterfaceCreating : NSObjectProtocol
 
 - [Creating TVML Elements](./creating-tvml-elements.md)
 
-#### Overview
+## Overview
 
 This protocol contains methods used to create views and view controllers from a [`TVViewElement`](./tvviewelement.md).
 

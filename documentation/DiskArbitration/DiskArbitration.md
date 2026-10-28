@@ -10,7 +10,7 @@ Provides mechanisms to register and block disk mount or unmount events.
 - Mac Catalyst 13.0+
 - macOS 10.4+
 
-#### Overview
+## Overview
 
 For related documentation, see [Mac Technology Overview](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/About/About.html#//apple_ref/doc/uid/TP40001067).
 

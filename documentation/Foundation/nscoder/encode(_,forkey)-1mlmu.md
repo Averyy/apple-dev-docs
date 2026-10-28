@@ -25,7 +25,7 @@ func encode(_ object: Any?, forKey key: String)
 - (void) encodeObject:(id) object forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method to identify multiple encodings of `objv` and encode a reference to `objv` instead. For example, `NSKeyedArchiver` detects duplicate objects and encodes a reference to the original object rather than encode the same object twice.
 

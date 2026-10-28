@@ -19,11 +19,11 @@ init(cgImage: CGImage)
 - (instancetype) initWithCGImage:(CGImageRef) cgImage;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSBitmapImageRep`](../nsbitmapimagerep.md) object initialized from the contents of the Core Graphics image.
 
-#### Discussion
+## Discussion
 
 If you use this method, you should treat the resulting bitmap [`NSBitmapImageRep`](../nsbitmapimagerep.md) object as read only. Because it only retains the value in the `cgImage` parameter, rather than unpacking the data, accessing the pixel data requires the creation of a copy of that data in memory. Changes to that data are not saved back to the Core Graphics image.
 

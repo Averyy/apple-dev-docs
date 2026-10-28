@@ -20,11 +20,11 @@ func supportedRecordTypes() throws -> [Any]
 - (NSArray *) supportedRecordTypesAndReturnError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported record types.
 
-#### Discussion
+## Discussion
 
 If the node does not support checking for supported record types, all possible record types are returned.
 

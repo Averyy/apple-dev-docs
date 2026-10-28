@@ -20,7 +20,7 @@ Specifies the how to render an `Image` when using the `WidgetKit/WidgetRendering
 func widgetAccentedRenderingMode(_ renderingMode: WidgetAccentedRenderingMode?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 var body: some View {

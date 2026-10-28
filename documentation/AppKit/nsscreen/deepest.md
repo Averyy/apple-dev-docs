@@ -19,11 +19,11 @@ class var deepest: NSScreen? { get }
 @property (class, strong, readonly, nullable) NSScreen * deepestScreen;
 ```
 
-#### Return Value
+## Return Value
 
 The screen with the highest bit depth.
 
-#### Discussion
+## Discussion
 
 This method always returns an object, even if there is only one screen and it is not a color screen.
 

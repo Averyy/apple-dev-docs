@@ -15,7 +15,7 @@ A pair of values, in map units, that define the width and height of a rectangula
 class MapSize implements MapSizeData
 ```
 
-#### Overview
+## Overview
 
 Use a map size to represent a subset of a map projection. Map units are a value from `0` to `1` that represent an interpolated location within the height or width of the full map projection.
 

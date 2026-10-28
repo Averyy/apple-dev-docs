@@ -21,11 +21,11 @@ Creates a new tag collection from an existing C-style array of tags.
 extern OSStatus CMTagCollectionCreate(CFAllocatorRef allocator, const CMTag *tags, CMItemCount tagCount, CMTagCollectionRef*newCollectionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Using a value of `tagCount` greater than the number of elements in the array starting from `tags` causes undefined behavior.
 

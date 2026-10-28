@@ -8,7 +8,7 @@ Create, modify, and delete localized metadata for subscription groups.
 **Availability**:
 - App Store Connect API 2.0+ - Deprecated in 4.4.1
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This is deprecated. Use [Subscription Group Localizations](./subscription-group-localizations.md) instead.
 

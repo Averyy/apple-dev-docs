@@ -20,7 +20,7 @@ Assigns multiple textures to a range of entries in the vertex shader argument ta
 - (void) setVertexTextures:(id<MTLTexture> const[]) textures withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

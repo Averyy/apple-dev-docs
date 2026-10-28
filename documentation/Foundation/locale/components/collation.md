@@ -21,7 +21,7 @@ The string sort order of the locale.
 var collation: Locale.Collation?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the locale’s default string sort order. To request the collation used by the locale, use the [`Locale`](../../locale.md) property [`collation`](../collation-swift.property.md).
 

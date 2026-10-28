@@ -20,7 +20,7 @@ The configuration sets that configure the default prim or entity.
 var configurationSets: [String : Entity.ConfigurationCatalog.ConfigurationSet] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The keys are configuration set IDs, and the values are the corresponding configuration sets.
 

@@ -21,7 +21,7 @@ Multiplies the opacity of the color by the given amount.
 func opacity(_ opacity: Double) -> Color
 ```
 
-#### Return Value
+## Return Value
 
 A view with modified opacity.
 

@@ -14,7 +14,7 @@
 typedef void (*IOUSBLowLatencyIsocCompletionAction)(void *target, void *parameter, IOReturn status, IOUSBLowLatencyIsocFrame *pFrames);
 ```
 
-#### Discussion
+## Discussion
 
 Function called when Low Latency Isochronous USB I/O completes.
 

@@ -24,7 +24,7 @@ enum NEVPNStatus
 enum NEVPNStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 After the VPN transitions from the [`NEVPNStatus.disconnected`](./nevpnstatus/disconnected.md) to the [`NEVPNStatus.disconnecting`](./nevpnstatus/disconnecting.md) state, the system doesn’t close TCP connections, but ignores packets to and from established network connections. When the VPN transitions to another state — for example, from a Wi-Fi to a cellular network — the system ignores network traffic and the VPN client typically reconnects to the VPN server.
 

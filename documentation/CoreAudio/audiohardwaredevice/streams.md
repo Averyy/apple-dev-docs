@@ -16,7 +16,7 @@ An array of AudioHardwareStreams that represent the IO streams of the device.
 var streams: [AudioHardwareStream] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 If a notification is received for this property, any cached stream objects for the device become invalid and need to be re-fetched.
 

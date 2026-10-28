@@ -25,7 +25,7 @@ var accessory: ASAccessory? { get }
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 The session populates this member for event types like [`ASAccessoryEventType.accessoryAdded`](../asaccessoryeventtype/accessoryadded.md) and [`ASAccessoryEventType.accessoryChanged`](../asaccessoryeventtype/accessorychanged.md), but not for life cycle or picker events like [`ASAccessoryEventType.activated`](../asaccessoryeventtype/activated.md) or [`ASAccessoryEventType.pickerDidPresent`](../asaccessoryeventtype/pickerdidpresent.md).
 

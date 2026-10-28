@@ -5,7 +5,7 @@
 
 Shorten compile times by reducing the number of symbols your code exports and by giving the compiler the explicit information it needs.
 
-#### Overview
+## Overview
 
 Reducing build times by even a few seconds can have a significant impact over the course of development. Xcode does everything possible to build your code as fast as possible. It parallelizes build tasks and takes advantage of all available resources to output a finished product. However, you can help Xcode by making sure you’re not creating unnecessary work for the compiler.
 
@@ -13,7 +13,7 @@ Over the years, Xcode’s compiler has introduced optimizations to speed up comp
 
 > **Note**: You can also optimize build times through project-level changes. For more information on optimizing build times, see [Improving the speed of incremental builds](./improving-the-speed-of-incremental-builds.md).
 
-##### Include framework names in import statements
+### Include framework names in import statements
 
 When you import headers into your source files, always include the name of the parent framework or library in your import statement. In C-based code, importing headers usually copies the contents of the header file into your source. When you include the framework name, the compiler has the option to use module maps to import the headers, which significantly reduces importation time. With module maps, the compiler loads and processes the framework’s header files once, and caches the resulting symbol information on disk. When you import the same framework from another source file, the compiler reuses the cached data, eliminating the need to again read and preprocess the header files.
 
@@ -31,7 +31,7 @@ Include framework names for both system frameworks and any custom frameworks you
 
 For information about how to add a module map to your custom frameworks, see Create Module Maps for Custom Frameworks and Libraries.
 
-##### Minimize the number of symbols you share between Swift and Objective-C
+### Minimize the number of symbols you share between Swift and Objective-C
 
 When you mix Swift and Objective-C code in your project, your Swift code might need to know about portions of your Objective-C code, and vice versa. The compiler handles this exchange of symbol information using two special header files:
 
@@ -52,7 +52,7 @@ The compiler makes all of your public Swift symbols available to your Objective-
 - Choose block-based APIs over function-based APIs. Blocks are part of your implementation, and don’t generate public symbol information.
 - Support the most-recent version of the Swift language. Swift 3 and earlier automatically infer Objective-C type information for most symbols, which increases the size of the generated header. Later versions of Swift perform automatic type inference in fewer situations, reducing the overall size of the header.
 
-##### Provide the Swift compiler with explicit type information
+### Provide the Swift compiler with explicit type information
 
 The Swift compiler is capable of inferring the type of a variable from the value you assign to it. For simple values, the inference process is quick. For example, if you assign the value `0.0` to a property, the compiler can quickly determine that the type is a floating-point number. However, if you assign a complex value to a variable, the compiler must perform extra work to compute any type information.
 
@@ -78,7 +78,7 @@ struct ContrivedExample {
 }
 ```
 
-##### Define delegate methods in explicit protocols
+### Define delegate methods in explicit protocols
 
 Delegates are a standard design pattern on Apple platforms, and provide a useful way to communicate between objects. Although delegation enables communication between arbitrary objects, always provide explicit type information for your delegate objects.
 
@@ -104,7 +104,7 @@ protocol MyOperationDelegate {
 }
 ```
 
-##### Simplify complex Swift expressions
+### Simplify complex Swift expressions
 
 The Swift language allows you to write code in very expressive ways, but make sure your code doesn’t affect compile times. Consider an example of a function that uses the `reduce` function to sum a set of values. If you pass `nil` for all the arguments, the function returns `nil`, but if you pass one or more arguments, it sums the sum of those arguments. The function takes advantage of a Swift feature, in which the compiler uses the one-line expression in the closure to determine the return type of that closure.
 

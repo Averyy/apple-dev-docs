@@ -21,7 +21,7 @@ An optimization strategy that minimizes computation time.
 case fast
 ```
 
-#### Discussion
+## Discussion
 
 Select this strategy for smooth problems that fit in memory.
 

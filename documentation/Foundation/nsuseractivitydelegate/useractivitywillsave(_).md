@@ -25,7 +25,7 @@ optional func userActivityWillSave(_ userActivity: NSUserActivity)
 - (void) userActivityWillSave:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate overrides this method to update the activity with current state.
 

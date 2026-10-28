@@ -11,7 +11,7 @@ Gets the number of instances when the target has stalled the queue.
 virtual UInt32 getStallCount();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of times that kIOOutputCommandStall is returned by the target.
 

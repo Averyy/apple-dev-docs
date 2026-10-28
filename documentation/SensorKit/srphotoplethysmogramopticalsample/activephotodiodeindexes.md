@@ -21,7 +21,7 @@ var activePhotodiodeIndexes: IndexSet { get }
 @property (nonatomic, strong, readonly) NSIndexSet * activePhotodiodeIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 To map the spatial location of the active photodiodes, see the Apple Watch diagrams in [Interpret second-generation PPG sensors data](../srphotoplethysmogramopticalsample.md#Interpret-second-generation-PPG-sensors-data) and [Interpret third-generation PPG sensors](../srphotoplethysmogramopticalsample.md#Interpret-third-generation-PPG-sensors).
 

@@ -20,7 +20,7 @@ convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueO
 
 Available when `T` inherits `NSObject` and `V` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an expectation that observes changes on the observed object until the value of the property matches the expected value, fulfilling the expectation.
 

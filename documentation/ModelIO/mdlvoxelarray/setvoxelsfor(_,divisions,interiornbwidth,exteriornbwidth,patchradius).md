@@ -19,7 +19,7 @@ func setVoxelsFor(_ mesh: MDLMesh, divisions: Int32, interiorNBWidth: Float, ext
 - (void) setVoxelsForMesh:(MDLMesh *) mesh divisions:(int) divisions interiorNBWidth:(float) interiorNBWidth exteriorNBWidth:(float) exteriorNBWidth patchRadius:(float) patchRadius;
 ```
 
-#### Discussion
+## Discussion
 
 When you add a mesh to a voxel array, Model I/O analyzes the mesh to determine the volume of the 3D object it models. This method discretizes that volume by dividing the mesh’s [`boundingBox`](../mdlasset/boundingbox.md) coordinates into a three-dimensional grid. The `divisions` parameter determines the height of the grid in voxels. A single voxel is a cubic unit, so the width and depth of the grid in voxels is proportional to its height and the bounding box of the mesh.
 

@@ -5,7 +5,7 @@
 
 Arrange your training videos in multiple folders with labels that describe actions, or in a single folder with an annotation file.
 
-#### Overview
+## Overview
 
 The Create ML developer tool accepts several data-source types for an action classifier, each with its own file-system arrangement. Typically, you use one of these two types:
 
@@ -18,7 +18,7 @@ For more information about the action-classifier data-source types the Create ML
 
 For general information about how to create an action classifier, see [Creating an Action Classifier Model](./creating-an-action-classifier-model.md).
 
-##### Build a Data Source with Labeled Folders
+### Build a Data Source with Labeled Folders
 
 Create a parent folder to contain the labeled folders. Then, create a folder for each action, using the name of the action for the label. Place each example video file into the folder with a label that matches the video’s action. For example, for a data source that has folders named “Jumping Jacks” and “Squats,” place videos of those actions into their corresponding folders.
 
@@ -28,7 +28,7 @@ Create a parent folder to contain the labeled folders. Then, create a folder for
 
 Each video file may have more than one instance of an action, but the videos must minimize the time between each instance. If you notice inactivity between action instances, remove the inactivity by breaking the video file into separate files and trimming each video to the action.
 
-##### Build a Data Source with Annotated Videos
+### Build a Data Source with Annotated Videos
 
 Create a folder and place all your example video files in it. Then, create an annotation file using either a CSV — with either `.csv` or `.txt` file extensions — or JSON format.
 

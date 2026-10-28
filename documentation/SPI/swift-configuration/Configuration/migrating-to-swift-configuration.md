@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Evolve from manual configuration reading to unified, production-ready configuration.
 
-#### Overview
+## Overview
 
 While handling configuration manually in your application can be sufficient as you start development, over time you might encounter some disadvantages of that approach. A major one is that every configuration value is tied to its data source: be it environment variables, JSON files, or hard-coded.
 
@@ -22,7 +22,7 @@ This guide walks you through the migration from manual configuration to Swift Co
 
 For a video walkthrough, see [the ServerSide.swift conference talk](https://www.youtube.com/watch?v=I3lYW6OEyIs).
 
-##### Before you begin
+### Before you begin
 
 Here’s a typical starting point, a to-do app with configuration in environment variables and hard-coded defaults:
 
@@ -43,7 +43,7 @@ let timeout = Double(ProcessInfo.processInfo.environment["TIMEOUT"] ?? "30")!
 
 This works, but as the project grows, problems emerge: every value is a string that you force-unwrap, the same key gets read in multiple places with different defaults, testing requires mutating global process state, and nothing marks `API_KEY` as sensitive.
 
-##### Add the dependency
+### Add the dependency
 
 ```swift
 // Package.swift
@@ -60,7 +60,7 @@ targets: [
 ]
 ```
 
-##### Replace your first read
+### Replace your first read
 
 Start with one value, `port`. Replace the manual parsing with a read from a [`ConfigReader`](./configreader.md):
 
@@ -83,7 +83,7 @@ let port = config.int(forKey: "port", default: 8080)
 
 `Int(...)!` traps when `PORT` holds something that isn’t a number, while the `default:` variants return the default instead. A typo in a deployed variable’s value now starts the app on port 8080 rather than failing at launch. Where you’d rather fail, use the required variants described in [Choosing reader methods](./choosing-reader-methods.md).
 
-##### Consolidate into one place
+### Consolidate into one place
 
 Now apply the same pattern to every value. Instead of leaving reads scattered across files, extract them into an `AppConfiguration` struct, a single source of truth for what the app needs:
 
@@ -122,7 +122,7 @@ try await startServer(host: appConfig.host, port: appConfig.port)
 
 New team members read `AppConfiguration.swift` to understand what the app needs. Required values like `database.url` throw at startup, rather than trapping deep in a request handler. The defaults are the same hard-coded values from the first snippet, used now only when nothing overrides them.
 
-##### Add a fallback hierarchy
+### Add a fallback hierarchy
 
 Right now you’re reading from environment variables only. In practice, you may want a JSON file for local development, environment variables for production, and maybe a directory of mounted secret files.
 
@@ -179,7 +179,7 @@ Any key can come from any provider, and each maps automatically to the appropria
 
 > ❗ **Important**: Check each key against the variables you already deploy. Five of these round-trip unchanged, but `TIMEOUT` becomes `API_TIMEOUT` because the key is now `api.timeout`. Anything still exporting the old name silently falls through to the file or the default. Either rename the variable as you deploy, or keep the existing name by wrapping the provider in a [`KeyMappingProvider`](./keymappingprovider.md).
 
-##### Protect secrets
+### Protect secrets
 
 Mark sensitive values with `isSecret` so the library redacts them in access logs. Both credentials qualify here, including the database URL, which may contain a password:
 
@@ -262,7 +262,7 @@ Keep `isSecret: true` in `AppConfiguration` anyway, since the same keys fall bac
 
 For more on secrets, check out [Handling secrets correctly](./handling-secrets-correctly.md).
 
-##### Make it testable
+### Make it testable
 
 The `AppConfiguration` struct is already testable. Pass an [`InMemoryProvider`](./inmemoryprovider.md) instead of real environment variables:
 
@@ -292,7 +292,7 @@ import Configuration
 
 Each test is isolated, with no environment variable pollution or test ordering dependencies. For more on testing against configuration, see [Using in-memory providers](./using-in-memory-providers.md).
 
-##### Use scoped readers for libraries
+### Use scoped readers for libraries
 
 Most of what an app configures belongs to the libraries it uses, so simplifying one means simplifying the other. The to-do app configures an HTTP client with `api.timeout`, but that configuration really belongs to the HTTP client library. When the library accepts a [`ConfigReader`](./configreader.md) directly, you can drop `requestTimeout` from `AppConfiguration` and let the library read its own configuration.
 
@@ -325,7 +325,7 @@ As a library author, this puts you in control over the keys, types, and defaults
 
 For details, check out [Configuring libraries](./configuring-libraries.md).
 
-##### Summary
+### Summary
 
 | Concern | Before | After |
 | --- | --- | --- |

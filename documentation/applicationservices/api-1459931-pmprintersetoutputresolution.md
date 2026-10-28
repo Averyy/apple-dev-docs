@@ -19,11 +19,11 @@ func PMPrinterSetOutputResolution(_ printer: PMPrinter, _ printSettings: PMPrint
 OSStatus PMPrinterSetOutputResolution(PMPrinter printer, PMPrintSettings printSettings, const PMResolution *resolutionP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Some printers allow programmatic control of their hardware output resolution on a print job basis. The hardware resolution is determined by the combination of printer and print settings used for the print job. This function configures the print settings to the closest resolution setting that can be used for the destination print job. Note that not all printers allow control of their resolution setting.
 

@@ -16,7 +16,7 @@ Requests that the application be launched asynchronously.
 kLSLaunchAsync = 0x00010000
 ```
 
-#### Discussion
+## Discussion
 
 The Launch Services function launching it returns control immediately without waiting for it to complete its launch sequence (indicated visually to the user when the application’s icon stops “bouncing” in the Dock).
 

@@ -23,7 +23,7 @@ func requestThumbnailImages(atTimes playbackTimes: [Any]!, timeOption option: MP
 - (void) requestThumbnailImagesAtTimes:(NSArray *) playbackTimes timeOption:(MPMovieTimeOption) option;
 ```
 
-#### Discussion
+## Discussion
 
 This method processes each thumbnail request separately and asynchronously. When the results for a single image arrive, the movie player posts a [`MPMoviePlayerThumbnailImageRequestDidFinishNotification`](../mpmovieplayerthumbnailimagerequestdidfinishnotification.md) notification with the results for that image. Notifications are posted regardless of whether the image capture was successful or failed. You should register for this notification prior to calling this method.
 

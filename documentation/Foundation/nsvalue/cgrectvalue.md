@@ -24,7 +24,7 @@ var cgRectValue: CGRect { get }
 @property (nonatomic, readonly) CGRect CGRectValue;
 ```
 
-#### Return Value
+## Return Value
 
 The CoreGraphics rectangle structure representation of the value.
 

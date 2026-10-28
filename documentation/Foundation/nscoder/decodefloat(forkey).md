@@ -25,7 +25,7 @@ func decodeFloat(forKey key: String) -> Float
 - (float) decodeFloatForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the value was encoded as a double, the extra precision is lost. If the encoded real value does not fit into a float, the method raises an `NSRangeException`. Subclasses must override this method if they perform keyed coding.
 

@@ -24,7 +24,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When you create the [`MTLFunction`](../mtlfunction.md) object, Metal statically determines whether the function uses the argument. If [`true`](../../Swift/true.md), you need to provide a value for this argument when you encode a command that calls this function. If [`false`](../../Swift/false.md), the function doesn’t use the argument, and you can ignore it.
 

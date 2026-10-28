@@ -25,7 +25,7 @@ typealias MIDIClientRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIClientRef;
 ```
 
-#### Discussion
+## Discussion
 
 A client object derives from [`MIDIObjectRef`](./midiobjectref.md). It doesn’t have an owning object.
 

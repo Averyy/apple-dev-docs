@@ -22,7 +22,7 @@ func draw(_ rect: CGRect, for formatter: UIViewPrintFormatter)
 - (void) drawRect:(CGRect) rect forViewPrintFormatter:(UIViewPrintFormatter *) formatter;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this method if you want a view’s printed content to appear differently than its displayed content. If you add a view print formatter to a print job but do not implement this method, the view’s [`draw(_:)`](./draw%28_%29.md) method is called to provide the content for printing.
 

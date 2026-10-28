@@ -34,7 +34,7 @@ var createdNote: INNote? { get set }
 @property (atomic, copy, readwrite, nullable) INNote * createdNote;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the content of the note that you created.
 

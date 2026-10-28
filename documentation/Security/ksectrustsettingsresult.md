@@ -20,7 +20,7 @@ var kSecTrustSettingsResult: String { get }
 #define kSecTrustSettingsResult
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing an `SInt32` value.
 

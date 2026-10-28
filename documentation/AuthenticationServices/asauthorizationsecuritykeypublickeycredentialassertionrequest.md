@@ -26,7 +26,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest
 
 - [Supporting Security Key Authentication Using Physical Keys](./supporting-security-key-authentication-using-physical-keys.md)
 
-#### Overview
+## Overview
 
 Use this class to sign in with an existing credential on a security key.
 

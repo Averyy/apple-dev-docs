@@ -16,7 +16,7 @@ A unique order identifier scoped to your order type identifier.
 required DOMString orderIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 In combination with the order type identifier, this uniquely identifies an order within the system. The framework doesn’t display this value to the customer.
 

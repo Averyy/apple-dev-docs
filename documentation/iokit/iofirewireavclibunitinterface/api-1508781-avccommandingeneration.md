@@ -16,7 +16,7 @@ Sends an AVC command to the device and returns the response.
 IOReturn (*AVCCommandInGeneration)(void *self, UInt32 busGeneration, const UInt8 *command, UInt32 cmdLen, UInt8 *response, UInt32 *responseLen);
 ```
 
-#### Discussion
+## Discussion
 
 Sends an AVC command to the device and returns the response. The command must complete in the specified bus generation. This function is only available if the interface version is > 1 (macOS 10.2.0 or later?). This function will block until the device returns a response or the kernel driver times out.
 

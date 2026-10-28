@@ -5,11 +5,11 @@
 
 Modifies the visible image width and height.
 
-#### Overview
+## Overview
 
 Modify the visible image width and height by cropping, trimming, or panning.
 
-##### Attributes of the adjust-crop element
+### Attributes of the adjust-crop element
 
 | Attribute | Description |
 | --- | --- |

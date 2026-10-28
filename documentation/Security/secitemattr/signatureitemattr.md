@@ -20,7 +20,7 @@ case signatureItemAttr
 kSecSignatureItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type [`SecAFPServerSignature`](../secafpserversignature.md) that represents the server signature block. This is unique to AppleShare password attributes.
 

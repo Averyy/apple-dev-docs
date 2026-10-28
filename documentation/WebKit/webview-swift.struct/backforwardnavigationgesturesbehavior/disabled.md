@@ -19,7 +19,7 @@ Backward and forward navigation gestures are disabled.
 static let disabled: WebView.BackForwardNavigationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view prevents horizontal swipe gestures from triggering backward and forward page navigation.
 

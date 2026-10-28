@@ -24,7 +24,7 @@ case midiNoteNumber
 kAudioUnitParameterUnit_MIDINoteNumber
 ```
 
-#### Discussion
+## Discussion
 
 Absolute pitch as defined in the MIDI specification. A standard piano keyboard ranges from MIDI note number 21 (for the A0 note) to 108 (for the C8 note), with MIDI note 60 corresponding to middle C (C4). The frequency for a given MIDI note number may depend on a tuning table.
 

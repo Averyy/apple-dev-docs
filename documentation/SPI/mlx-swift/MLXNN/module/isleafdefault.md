@@ -17,11 +17,11 @@ Default leaf filter – treat [`ModuleValue.parameters(_:)`](../modulevalue/para
 static let isLeafDefault: @Sendable (Module, String, ModuleItem) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This will allow recursion into `.array`, `.dictionary` and [`ModuleValue.module(_:)`](../modulevalue/module%28_%29.md).
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`filterMap(filter:map:isLeaf:)`](./filtermap%28filter,map,isleaf%29.md)

@@ -19,7 +19,7 @@ The maximum exposure to allow for choosing colors.
 var colorMaximumLinearExposure: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 Default is 1.0, which is SDR.
 

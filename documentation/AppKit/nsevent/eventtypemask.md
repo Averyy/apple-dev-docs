@@ -19,7 +19,7 @@ struct EventTypeMask
 enum NSEventMask : unsigned long long;
 ```
 
-#### Overview
+## Overview
 
 Pass these constants to the [`NSCell`](../nscell.md) method [`sendAction(on:)`](../nscell/sendaction%28on%29.md) to specify when an [`NSCell`](../nscell.md) object should send its action message.
 

@@ -24,7 +24,7 @@ case lzBitmap
 MTLIOCompressionMethodLZBitmap
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the LZBitmap codec, see:
 

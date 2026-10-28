@@ -5,7 +5,7 @@
 
 Specifies how wide an element is.
 
-#### Overview
+## Overview
 
 Use the `width` style to change the width of an element. Here’s an example that sets the width of an img element to 250 points.
 
@@ -13,13 +13,13 @@ Use the `width` style to change the width of an element. Here’s an example tha
 <img src="path to image" width="250" height="376" />
 ```
 
-##### Values for width
+### Values for width
 
 - **Integer**: The width of the element, in points. For example, `width="200"` sets the width of the element to 200 points.
 
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
 
-##### Elements that Use width
+### Elements that Use width
 
 - [activityIndicator](./activityindicator.md)
 - [buttonLockup](./buttonlockup.md)

@@ -25,7 +25,7 @@ var texture: SKTexture? { get set }
 @property (nonatomic, retain, nullable) SKTexture * texture;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the sprite is drawn as a single-color rectangle using its [`color`](./color.md) property. Otherwise, the texture is used to draw the sprite. The related properties affect how the texture is applied.
 

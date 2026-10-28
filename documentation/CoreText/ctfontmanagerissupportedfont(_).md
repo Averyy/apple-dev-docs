@@ -19,11 +19,11 @@ func CTFontManagerIsSupportedFont(_ fontURL: CFURL) -> Bool
 extern bool CTFontManagerIsSupportedFont(CFURLRef fontURL);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the file is in a supported font format; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This function doesn’t validate any font data, so you must handle registration or font descriptor creation failures yourself.
 

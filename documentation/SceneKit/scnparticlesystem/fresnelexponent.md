@@ -25,7 +25,7 @@ var fresnelExponent: CGFloat { get set }
 @property (nonatomic) CGFloat fresnelExponent;
 ```
 
-#### Discussion
+## Discussion
 
 This property only takes effect when the [`particleImage`](./particleimage.md) property is an array of six images defining a cube map. In this case, SceneKit renders each particle as a reflective sphere.
 

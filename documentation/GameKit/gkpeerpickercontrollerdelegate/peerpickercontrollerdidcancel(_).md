@@ -24,7 +24,7 @@ optional func peerPickerControllerDidCancel(_ picker: GKPeerPickerController)
 - (void) peerPickerControllerDidCancel:(GKPeerPickerController *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 After this method returns, the controller dismisses the picker interface.
 

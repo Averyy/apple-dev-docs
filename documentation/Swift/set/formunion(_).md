@@ -23,7 +23,7 @@ mutating func formUnion<S>(_ other: S) where Element == S.Element, S : Sequence
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 If the set already contains one or more elements that are also in `other`, the existing members are kept. If `other` contains multiple instances of equivalent elements, only the first instance is kept.
 

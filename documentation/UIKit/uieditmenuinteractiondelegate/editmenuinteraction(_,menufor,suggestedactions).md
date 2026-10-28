@@ -22,11 +22,11 @@ optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, menuFor 
 - (UIMenu *) editMenuInteraction:(UIEditMenuInteraction *) interaction menuForConfiguration:(UIEditMenuConfiguration *) configuration suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a menu describing the desired menu hierarchy. To present the default system menu, return `nil`. To avoid presenting a menu, return an empty menu.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the interaction begins or requires an update to the menu’s actions when calling [`reloadVisibleMenu()`](../uieditmenuinteraction/reloadvisiblemenu%28%29.md). The interaction displays the menu you provide. When not implemented, the default behavior is the same as returning a menu including the suggestedActions.
 

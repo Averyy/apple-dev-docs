@@ -5,80 +5,80 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 18.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [Xcode 16.2 Release Notes](../Xcode-Release-Notes/xcode-16_2-release-notes.md).
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: If you use the Ignore Trackpad setting, it will be reset after updating to iOS 18.2 Beta.   (139611885)
 
-##### AVFoundation
+### AVFoundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In Swift, iterating over `AVCaptureSynchronizedDataCollection` with a `for-in` loop causes a crash.  (135132312)
 
-##### ChatGPT Integration
+### ChatGPT Integration
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: For devices with MDM profiles, users with anonymous restrictions are unable to sign out.  (135440023)
 - Fixed: Requests to generate images with ChatGPT in Writing Tools might fail.  (138791595)
 
-##### Find My
+### Find My
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Play Sound and Precision Finding features of AirTags, AirPods and third-party Find My-enabled accessories might not work.  (138283512)
 
-##### Genmoji
+### Genmoji
 
-###### Known Issues
+#### Known Issues
 
 - A personalized Genmoji might not generate without selecting a different person first.  (139676076)
 
   **Workaround:** In the People selector screen, select a different person, then reselect the original person.
 
-##### Mail
+### Mail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Recategorizing an email from a domain with a high number of messages might cause unexpected grouping behavior.  (140360935)
 
-##### Messages
+### Messages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Messages might not appear in the Messages app.  (138152993)
 
-##### Stickers
+### Stickers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Stickers might not appear in the Emoji keyboard or in the sticker sheet. The sticker sheet is accessed through the Stickers item in Messages or in various other places like Freeform and Markup. You’ll either see missing stickers or a message that states you do not have any stickers.  (138790914)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Compiling in the Swift 6 language mode might cause an `@Entry` error due to “static property `defaultValue` is not concurrency-safe because non-‘Sendable’ type”.  (133885814)
 - For apps compiled against iOS 18.2/visionOS 2.2 and run against iOS 18.0/visionOS 2.0, the popover modifier does not respect the arrowEdge argument on iOS, iPadOS, or visionOS, regardless of the deployment target of the app. Now, apps compiled against iOS 18.2/visionOS 2.2 and run against iOS 18.1/visionOS 2.1 and later do respect the arrowEdge argument.  (135231043)
 - Fixed: Views won’t accept dropped directories if [UTType.directory](../UniformTypeIdentifiers/uttype-swift.struct/directory.md) or [UTType.fileURL](../UniformTypeIdentifiers/uttype-swift.struct/fileurl.md) are not in the list of accepted content types for drop.  (138158126)
 
-##### UIKit
+### UIKit
 
-###### Known Issues
+#### Known Issues
 
 - In iOS 18.2 Beta 3, `-[UIApplication defaultStatusForCategory:error:]` and its Swift equivalent `UIApplication.isDefaultApplication(for:)` are not present.  (139669875)
 
   **Workaround:** Build and run against iOS 18.2 Beta 2 to test adoption of this new interface.
 
-##### UIWritingToolsCoordinator
+### UIWritingToolsCoordinator
 
-###### Known Issues
+#### Known Issues
 
 - The two optional delegate methods intended for multiple container support are not available in iOS 18.2 Beta.  (136619485)
 - When the UIWritingToolsCoordinator state is `Noninteractive`, textual changes might be applied through the UITextInput Paste API, instead of through `-writingToolsCoordinator:replaceRange:inContext:proposedText:reason:animationParameters:completion:`.  (136631598)
@@ -98,9 +98,9 @@ The iOS & iPadOS 18.2 SDK provides support to develop apps for iPhone and iPad r
 
   **Workaround:** For proper undo/redo grouping behavior, the delegate must start the grouping when the UIWritingToolsCoordinator’s state changes to InteractiveStreaming and stop when the state changes away from InteractiveStreaming. When the undo/redo stack is popped, the delegate should notify the Writing Tools coordinator, using `-updateRange:withText:reason:forContextWithIdentifier:` and passing the `UndoRedo` reason for each item. When all the items in the group have popped, use the same method to notify the coordinator, passing a 0-length range and a 0-length attributedString along with `Typing` for the reason.
 
-##### Writing Tools
+### Writing Tools
 
-###### Known Issues
+#### Known Issues
 
 - For third-party apps adopting Writing Tools API on iOS, if the first responder is not a UIView, it will not be able to use the complete inline experience.  (139833232)
 

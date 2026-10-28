@@ -23,7 +23,7 @@ func sendIdempotent<Content>(_ content: Content, @ProtocolMetadataBuilder metada
 
 Available when `ApplicationProtocol` is `WebSocket`.
 
-#### Discussion
+## Discussion
 
 Idempotent content is allowed to be sent before the connection is ready, and may be replayed across parallel connection attempts. This content can be sent as part of fast-open protocols, which allows the data to be sent out sooner than if it were required to wait for connection establishment.
 

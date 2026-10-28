@@ -23,11 +23,11 @@ class func hdr10(minLuminance minNits: Float, maxLuminance maxNits: Float, optic
 + (CAEDRMetadata *) HDR10MetadataWithMinLuminance:(float) minNits maxLuminance:(float) maxNits opticalOutputScale:(float) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new EDR metadata object.
 
-#### Discussion
+## Discussion
 
 Any content greater than the maximum luminance (`maxNits`) may be clamped when displayed.
 

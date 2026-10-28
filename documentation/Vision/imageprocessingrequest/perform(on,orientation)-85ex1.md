@@ -21,7 +21,7 @@ Performs the request on a Core Image image and produces observations.
 func perform(on image: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result
 ```
 
-#### Return Value
+## Return Value
 
 The observation — or list of observations — the request produces.
 

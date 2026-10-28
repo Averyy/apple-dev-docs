@@ -19,7 +19,7 @@ func orderedItemsLastVisited(onDay calendarDate: NSCalendarDate!) -> [Any]!
 - (NSArray *) orderedItemsLastVisitedOnDay:(NSCalendarDate *) calendarDate;
 ```
 
-#### Return Value
+## Return Value
 
 An array of web history items that were last visited on the specified date.
 

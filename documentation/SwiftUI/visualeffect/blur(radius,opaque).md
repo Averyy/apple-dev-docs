@@ -21,11 +21,11 @@ Applies a Gaussian blur to the view.
 func blur(radius: CGFloat, opaque: Bool = false) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that blurs the view.
 
-#### Discussion
+## Discussion
 
 Use `blur(radius:opaque:)` to apply a gaussian blur effect to the rendering of the view.
 

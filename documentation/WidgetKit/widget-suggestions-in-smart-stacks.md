@@ -5,7 +5,7 @@
 
 Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
 
-#### Overview
+## Overview
 
 Smart Stacks efficiently organize multiple widgets to show useful content at just the right time. With input from your app and on-device intelligence, the system can identify patterns and determine a widget’s relevance to a person, making sure a Smart Stack shows your widget at the right moment. Context helps the system increase your widget’s visibility and gives people a quick, intelligent way to view content or perform an action. For example, if a person checks the daily weather forecast every morning or their calendar on the commute to work every morning, the system can suggest the corresponding widgets at the right moments.
 
@@ -18,7 +18,7 @@ On Apple Watch, people rely more on the Smart Stack to intelligently display wid
 
 To make sure the system can accurately determine your widget’s importance to someone, provide contextual and behavioral clues in your timeline provider with [RelevanceKit](../RelevanceKit/RelevanceKit.md) and [App Intents](../AppIntents/AppIntents.md).
 
-##### Provide relevance and contextual clues for each platform
+### Provide relevance and contextual clues for each platform
 
 To determine which widget is most relevant to a person in a particular context, the system’s on-device intelligence processes information it gathers automatically. For example, it considers when and how often a person uses your app.
 
@@ -36,7 +36,7 @@ Depending on the platform, provide the following clues to the system:
 
 > **Note**: Smart Stacks on iPhone and iPad don’t consider relevance information you provide with your timeline provider’s  `relevance()` callback, but the callback is available across platforms to enable code sharing.  However, [`RelevanceConfiguration`](./relevanceconfiguration.md)  API  is available in watchOS only.
 
-##### Add a relevance score and duration to your timeline entries
+### Add a relevance score and duration to your timeline entries
 
 On iPhone and iPad, one of the different clues on-device intelligence uses to determine the widget’s position in the Smart Stack is the [`relevance`](./timelineentry/relevance.md) property of the entries your [`TimelineProvider`](./timelineprovider.md) or [`AppIntentTimelineProvider`](./appintenttimelineprovider.md) generates. The property’s [`TimelineEntryRelevance`](./timelineentryrelevance.md) type contains a [`score`](./timelineentryrelevance/score.md) and a [`duration`](./timelineentryrelevance/duration.md). The score is a value you choose that indicates the relevance of the widget, relative to entries across timelines that the provider creates. When the date of an entry arrives, and for the duration you specify, WidgetKit may rotate your widget to the top of the Smart Stack, making it visible.
 
@@ -67,7 +67,7 @@ Because WidgetKit maintains relevance information across timelines, use a consis
 
 A score of zero (`0`) or lower indicates that a widget isn’t relevant, and WidgetKit won’t consider rotating it to the top of the stack.
 
-##### Donate app intents for increased visibility on iPhone and iPad
+### Donate app intents for increased visibility on iPhone and iPad
 
 To help the system determine your widget’s relevance, donate app intents to provide the system with *behavioral clues* about a person’s current in-app actions. When you donate app intents, the system learns how and when people interact with your app and compares your donated app intents with app intents of configured widgets in the Smart Stack. If it finds a widget with a matching app intent, it can automatically rotate to it when a person typically looks for that information. If someone hasn’t configured a matching widget in a Smart Stack, the system can automatically suggest your widget with the configuration that matches your donated app intent. This process increases the visibility of your widget.
 
@@ -85,7 +85,7 @@ Continuing the example with the tour guide app, a person frequently uses the app
 
 > **Note**: For more information about creating configurable widgets, refer to [Making a configurable widget](./making-a-configurable-widget.md).
 
-##### Choose how to provide relevance clues on Apple Watch
+### Choose how to provide relevance clues on Apple Watch
 
 On Apple Watch, widgets automatically appear in the Smart Stack based on *contextual clues* it requests from your widget — as opposed to behavioral cues your app provides that inform the Smart Stack on iPhone and iPad. When a person’s context matches one of your widget’s contextual clues, such as their location or bedtime, or an inferred  location such as their workplace, the Smart Stack may show your widget more prominently.
 
@@ -104,7 +104,7 @@ Depending on your app’s functionality, you might want to support both or only 
 
 > ❗ **Important**: To provide contextual clues about a person’s location, workouts, or bedtime, make sure your app and your widget extension request a person’s permission to access location, workout, or sleep schedule information. For example, you need to request the [`sleepAnalysis`](../HealthKit/hkcategorytypeidentifier/sleepanalysis.md) permission to provide a clue based on a person’s sleep schedule. For more information, refer to [`fitness(_:)`](../RelevanceKit/relevantcontext/fitness%28_%29.md), [`sleep(_:)`](../RelevanceKit/relevantcontext/sleep%28_%29.md), and [`location(inferred:)`](../RelevanceKit/relevantcontext/location%28inferred%29.md). For general information about accessing a person’s location in widgets, refer to [Accessing location information in widgets](./accessing-location-information-in-widgets.md).
 
-##### Add watchOS relevance clues to your timeline provider
+### Add watchOS relevance clues to your timeline provider
 
 If your widget uses a [`TimelineProvider`](./timelineprovider.md), [`AppIntentTimelineProvider`](./appintenttimelineprovider.md), or [`IntentTimelineProvider`](./intenttimelineprovider.md), watchOS queries your widget extension periodically using the timeline provider’s `relevance()` requirement to gather contextual clues.
 
@@ -190,7 +190,7 @@ struct AppIntentProvider: AppIntentTimelineProvider {
 }
 ```
 
-##### Create a watchOS widget that uses a relevance configuration
+### Create a watchOS widget that uses a relevance configuration
 
 On Apple Watch, enable the system to display relevant widgets in the Smart Stack based on relevance information you provide with a [`RelevanceEntriesProvider`](./relevanceentriesprovider.md):
 
@@ -258,13 +258,13 @@ struct EmojiRangerRelevanceProvider: RelevanceEntriesProvider {
 
 If you offer timeline-based and widgets that uses relevance clues, a person could pin the timeline widget to the Smart Stack. When several instances of the relevance-based widget become relevant, the Smart Stack could run out of space. To ensure that the Smart Stack can display the most relevant widgets, tell the system that your relevance-based widget can replace the timeline-based widget using the [`associatedKind(_:)`](../SwiftUI/widgetconfiguration/associatedkind%28_%29.md) modifier.
 
-##### Test widgets in Smart Stacks
+### Test widgets in Smart Stacks
 
 When a widget is in a Smart Stack, WidgetKit normally limits the number of times it rotates the widget to the top of the stack or when it inserts the widget as a suggestion. To bypass this limit during development, enable the WidgetKit Developer Mode switch in Settings > Developer.
 
 For additional tips about debugging widgets, refer to [Debugging widgets](./debugging-widgets.md) and [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md).
 
-##### Provide backward compatibility
+### Provide backward compatibility
 
 In iOS 16, macOS 13, watchOS 9 and earlier, configurable widgets use [SiriKit](../SiriKit/SiriKit.md) and the system determines your widget’s relevance based on donations of SiriKit intents. For details about supporting older operating system versions, refer to [Migrating widgets from SiriKit Intents to App Intents](./migrating-from-sirikit-intents-to-app-intents.md).
 

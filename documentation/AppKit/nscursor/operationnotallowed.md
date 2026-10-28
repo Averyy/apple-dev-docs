@@ -22,11 +22,11 @@ class var operationNotAllowed: NSCursor { get }
 @property (class, strong, readonly) NSCursor * operationNotAllowedCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The operation not allowed cursor.
 
-#### Discussion
+## Discussion
 
 This cursor indicates that the operation that is being attempted, perhaps dragging to an item that can’t accept the drag type, is being denied.
 

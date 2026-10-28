@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAsinh(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse hyperbolic sine of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse hyperbolic sine of the specified value.
 

@@ -27,7 +27,7 @@ optional func resolveWorkoutGoalUnitType(for intent: INStartWorkoutIntent) async
 - (void) resolveWorkoutGoalUnitTypeForStartWorkout:(INStartWorkoutIntent *) intent withCompletion:(void (^)(INWorkoutGoalUnitTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the units for the user’s goal. Use it to validate the units of the user-supplied workout goal. If you don’t implement this method, SiriKit assumes that you’re able to start the workout with the specified goal.
 

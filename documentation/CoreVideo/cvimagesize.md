@@ -21,7 +21,7 @@ Size of image buffer expressed as pixel count.
 struct CVImageSize
 ```
 
-#### Overview
+## Overview
 
 This should be used when the sizes must be specified as exact integer width & height. Otherwise, prefer `CGSize` as it is more widely used.
 

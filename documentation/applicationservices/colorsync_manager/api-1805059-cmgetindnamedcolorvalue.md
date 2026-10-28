@@ -16,11 +16,11 @@ CMError CMGetIndNamedColorValue (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Based on the passed named color index, the `CMGetIndNamedColorValue` function does a lookup into the named color tag and returns device and PCS values. If the index is greater than the number of named colors, `CMGetIndNamedColorValue` returns an error code. 
 

@@ -23,7 +23,7 @@ func stopRecording()
 - (void) stopRecording;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method when they want to stop recording new samples to the current file, and do not want to continue recording to another file. If you want to switch from one file to another, you should not call this method. Instead you should simply call [`startRecording(to:recordingDelegate:)`](./startrecording%28to,recordingdelegate%29.md) with the new file URL.
 

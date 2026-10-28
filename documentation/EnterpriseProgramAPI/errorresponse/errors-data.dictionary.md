@@ -12,7 +12,7 @@ The details about an error that are returned when an API request isn’t success
 object ErrorResponse.Errors
 ```
 
-#### Discussion
+## Discussion
 
 Use the `code` parameter for programmatic error handling. See [Parsing the Error Response Code](../parsing-the-error-response-code.md) for more information. For more information about using the `source` parameter, see [Pinpointing the Location of Errors](../pinpointing-the-location-of-errors.md).
 

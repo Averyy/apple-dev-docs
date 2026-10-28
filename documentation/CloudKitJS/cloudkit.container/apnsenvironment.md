@@ -15,7 +15,7 @@ The Apple Push Notification service (APNs) environment associated with this cont
 attribute String apnsEnvironment;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are [`CloudKit`](../cloudkit.md).[`DEVELOPMENT_ENVIRONMENT`](../cloudkit/development_environment.md)and [`CloudKit`](../cloudkit.md).[`PRODUCTION_ENVIRONMENT`](../cloudkit/production_environment.md).
 

@@ -20,7 +20,7 @@ Specifies the rule used to determine if referenced payloads are loaded.
 static func loadRule(_ rule: USDStage.InitialLoadRule) -> USDStage.OpenOptions
 ```
 
-#### Discussion
+## Discussion
 
 The default is `.all`, so all loadable prims will be automatically loaded.
 

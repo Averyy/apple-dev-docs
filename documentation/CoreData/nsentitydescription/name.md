@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the name raises an exception if the receiver’s model has been used by an object graph manager.
 

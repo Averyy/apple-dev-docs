@@ -25,11 +25,11 @@ func vImageNewResamplingFilter(_ scale: Float, _ flags: vImage_Flags) -> Resampl
 ResamplingFiltervImageNewResamplingFilter(float scale, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a newly created resampling filter object; otherwise `NULL`.
 
-#### Discussion
+## Discussion
 
 This function creates a reusable resampling filter object  that you can pass to a shear function. The resampling filter encapsulated by the object is the default kernel for vImage This function allocates the memory needed for the resampling filter object. To deallocate this memory, call the function [`vImageDestroyResamplingFilter(_:)`](./vimagedestroyresamplingfilter%28_%29.md). Don’t attempt to deallocate the memory yourself.
 

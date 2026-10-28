@@ -24,7 +24,7 @@ func isEqual(to textRange: NSTextRange) -> Bool
 - (BOOL) isEqualToTextRange:(NSTextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the ranges are equal.
 

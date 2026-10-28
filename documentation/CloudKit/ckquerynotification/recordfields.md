@@ -25,7 +25,7 @@ var recordFields: [String : Any]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,id> * recordFields;
 ```
 
-#### Discussion
+## Discussion
 
 For record updates and creations, this property contains the subscription’s desired keys. When you configure the notification info of a subscription, you specify the names of one or more fields in the [`desiredKeys`](../cksubscription/notificationinfo-swift.class/desiredkeys.md) property. When a push notification triggers, CloudKit retrieves the values for each of those keys from the record and includes them in the notification’s payload.
 

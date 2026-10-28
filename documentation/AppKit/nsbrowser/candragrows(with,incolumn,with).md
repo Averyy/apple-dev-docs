@@ -19,7 +19,7 @@ func canDragRows(with rowIndexes: IndexSet, inColumn column: Int, with event: NS
 - (BOOL) canDragRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column withEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when `rowIndexes` identifies at least one row and all the identified rows are enabled; otherwise, [`false`](../../Swift/false.md).
 

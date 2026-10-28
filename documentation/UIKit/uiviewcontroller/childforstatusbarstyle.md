@@ -24,11 +24,11 @@ var childForStatusBarStyle: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForStatusBarStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller whose status bar style should be used.
 
-#### Discussion
+## Discussion
 
 If your container view controller derives its status bar style from one of its child view controllers, implement this method and return that child view controller. If you return `nil` or do not override this method, the status bar style for `self` is used. If the return value from this method changes, call the [`setNeedsStatusBarAppearanceUpdate()`](./setneedsstatusbarappearanceupdate%28%29.md) method.
 

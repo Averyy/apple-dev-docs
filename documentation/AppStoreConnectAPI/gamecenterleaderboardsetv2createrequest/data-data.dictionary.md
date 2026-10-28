@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard set create request 
 object GameCenterLeaderboardSetV2CreateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - relationships:

@@ -19,7 +19,7 @@ var splitView: NSSplitView { get set }
 @property (strong) NSSplitView * splitView;
 ```
 
-#### Discussion
+## Discussion
 
 This property gives you access to the split view controller’s split view for querying its attributes or customizing it.
 

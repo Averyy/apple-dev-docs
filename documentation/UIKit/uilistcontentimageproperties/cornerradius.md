@@ -19,7 +19,7 @@ The preferred corner radius, using a continuous corner curve, for the image.
 @property (nonatomic) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 If the image is too small to fit the requested radius, the system adjusts the corner curve and radius.
 

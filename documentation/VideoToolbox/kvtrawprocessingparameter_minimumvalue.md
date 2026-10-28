@@ -15,7 +15,7 @@ The value corresponding to this key is the minimum value allowed for this parame
 extern CFStringRef const kVTRAWProcessingParameter_MinimumValue;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is optional and not required for parameters where it is not appropriate (such as Boolean or List types).
 

@@ -22,7 +22,7 @@ nonisolated
 struct BorderedButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`bordered`](./primitivebuttonstyle/bordered.md) to construct this style.
 

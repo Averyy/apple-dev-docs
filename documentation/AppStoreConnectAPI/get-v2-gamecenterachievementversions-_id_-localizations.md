@@ -9,7 +9,7 @@ Get a list of localizations for a specific Game Center achievement version.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - fields[gameCenterAchievementImages]:

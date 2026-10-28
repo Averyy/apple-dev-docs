@@ -25,11 +25,11 @@ init(identifiers: [String]?)
 - (instancetype) initWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 An AVPlayerItemMetadataOutput instance.
 
-#### Discussion
+## Discussion
 
 Pass `nil` to receive all of the timed metadata from all enabled `AVPlayerItemTracks` that carry timed metadata.
 

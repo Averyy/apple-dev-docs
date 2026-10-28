@@ -13,7 +13,7 @@ void *( *GetControlBuffer)(
    IOStreamBufferID bufferID );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the control buffer area of the IOStreamBuffer, or NULL if it does not have a control buffer.
 

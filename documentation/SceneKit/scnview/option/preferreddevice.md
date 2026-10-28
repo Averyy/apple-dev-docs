@@ -25,7 +25,7 @@ static let preferredDevice: SCNView.Option
 extern SCNViewOption const SCNPreferredDeviceKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`MTLDevice`](../../../Metal/mtldevice.md) object.
 

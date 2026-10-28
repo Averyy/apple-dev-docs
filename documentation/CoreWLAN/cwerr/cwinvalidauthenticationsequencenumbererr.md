@@ -17,7 +17,7 @@ case cwInvalidAuthenticationSequenceNumberErr
 kCWInvalidAuthenticationSequenceNumberErr
 ```
 
-#### Discussion
+## Discussion
 
 Authentication frame received with an authentication sequence number out of expected sequence.
 

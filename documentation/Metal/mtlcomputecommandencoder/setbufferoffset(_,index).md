@@ -25,7 +25,7 @@ func setBufferOffset(_ offset: Int, index: Int)
 - (void) setBufferOffset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Prefer calling this method to unbinding and then rebinding data.
 

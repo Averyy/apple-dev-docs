@@ -26,7 +26,7 @@ func enqueue(_ sampleBuffer: CMSampleBuffer)
 - (void) enqueueSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 For video data, the sample buffer is processed according to the attachments it contains. If it has a true value for its [`kCMSampleAttachmentKey_DoNotDisplay`](../../CoreMedia/kcmsampleattachmentkey_donotdisplay.md) attachment, the frame is decoded but not displayed. If it has a `true` value for its [`kCMSampleAttachmentKey_DisplayImmediately`](../../CoreMedia/kcmsampleattachmentkey_displayimmediately.md) attachment, the frame is displayed as soon as possible, regardless of its presentation timestamp. Otherwise, the frame is displayed according to its presentation timestamp, relative to the timebase.
 

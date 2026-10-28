@@ -20,7 +20,7 @@ A value that specifies the way that the sound level decreases as the distance be
 var distanceAttenuation: Audio.DistanceAttenuation { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t update the `distanceAttenuation` property dynamically. Set it before you prepare or play an audio resource on an entity.
 

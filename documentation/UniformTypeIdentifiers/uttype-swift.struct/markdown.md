@@ -21,7 +21,7 @@ A type that represents Markdown data.
 static var markdown: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `net.daringfireball.markdown`.
 

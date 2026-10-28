@@ -24,7 +24,7 @@ let HMCharacteristicTypeFilterResetChangeIndication: String
 extern NSString * const HMCharacteristicTypeFilterResetChangeIndication;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a write-only Boolean value that your app sets to `true` to reset the filter change indicator.
 

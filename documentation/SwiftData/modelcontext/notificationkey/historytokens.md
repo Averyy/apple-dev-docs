@@ -22,7 +22,7 @@ A history token representing the persistent store state after the save.
 case historyTokens
 ```
 
-#### Discussion
+## Discussion
 
 This key is available in `ModelContext.didSave` notifications (it is not present in `willSave` notifications). The value is an instance conforming to `HistoryToken`.
 

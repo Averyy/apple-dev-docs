@@ -23,11 +23,11 @@ func gss_iter_creds(_ min_stat: UnsafeMutablePointer<OM_uint32>, _ flags: OM_uin
 OM_uint32 gss_iter_creds(OM_uint32 *min_stat, OM_uint32 flags, gss_const_OID mech, void (^useriter)(gss_OID , gss_cred_id_t ));
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 Use the [`gss_iter_creds_f(_:_:_:_:_:)`](./gss_iter_creds_f%28_,_,_,_,_%29.md) function if you want to track the callbacks using a user-supplied context.
 

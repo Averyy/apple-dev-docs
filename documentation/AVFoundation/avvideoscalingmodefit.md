@@ -24,7 +24,7 @@ let AVVideoScalingModeFit: String
 extern NSString * const AVVideoScalingModeFit;
 ```
 
-#### Discussion
+## Discussion
 
 This mode crops the video to remove the edge processing region, preserving the aspect ratio of the cropped source by reducing the specified width or height, if necessary. It doesn’t scale a small source up to larger dimensions.
 

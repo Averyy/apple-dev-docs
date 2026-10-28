@@ -21,7 +21,7 @@ The calendar used to interpret the other values in this structure.
 var calendar: Calendar? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  API which uses `DateComponents` may have different behavior if this value is `nil`. For example, assuming the current calendar or ignoring certain values.
 

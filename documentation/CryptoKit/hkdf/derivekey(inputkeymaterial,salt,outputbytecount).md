@@ -21,7 +21,7 @@ Derives a symmetric encryption key from a main key or passcode using HKDF key de
 static func deriveKey<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt, outputByteCount: Int) -> SymmetricKey where Salt : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The derived symmetric key.
 

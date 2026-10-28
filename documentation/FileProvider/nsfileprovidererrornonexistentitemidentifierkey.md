@@ -23,7 +23,7 @@ let NSFileProviderErrorNonExistentItemIdentifierKey: String
 extern NSErrorUserInfoKey const NSFileProviderErrorNonExistentItemIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to access the item’s identifier from a [`noSuchItem`](./nsfileprovidererror/nosuchitem.md) error’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary.
 

@@ -25,7 +25,7 @@ var defaultTileGroup: SKTileGroup? { get set }
 @property (nonatomic, nullable) SKTileGroup * defaultTileGroup;
 ```
 
-#### Discussion
+## Discussion
 
 With auto-mapping enabled, it is possible for some tiles to be removed because there is either no valid rule or a missing tile group for the required adjacency rule. In this situation, those tiles are replaced by the tile group specified by [`defaultTileGroup`](./defaulttilegroup.md).
 

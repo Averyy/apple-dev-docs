@@ -21,7 +21,7 @@ Types that represent the compute stage.
 enum ComputeStage
 ```
 
-#### Overview
+## Overview
 
 The main compute stage represents the essential functionality of a request. Requests that provide additional analysis — or conversion of the data by the main stage — can also report a post-processing stage.
 

@@ -23,7 +23,7 @@ class INPaymentAmount
 @interface INPaymentAmount : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentAmount`](./inpaymentamount.md) object describes the amount of money to pay toward a bill. When handling bill payments, Siri may provide an instance of this class with the amount that the user wants to pay. When handling the intent, you also create instances of the class with the amount of money that you scheduled toward the user’s bill.
 

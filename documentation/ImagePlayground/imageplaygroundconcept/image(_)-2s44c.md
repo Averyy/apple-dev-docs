@@ -19,7 +19,7 @@ Creates a concept structure from the image at the specified URL.
 static func image(_ url: URL) -> ImagePlaygroundConcept?
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to use an image as the basis for generating a new image. Typically, you include other text-based concept structures in addition to this one. Include at most one image among the collection of concepts. Including more than one image yields unpredictable image results.
 

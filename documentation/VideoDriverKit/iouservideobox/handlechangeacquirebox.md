@@ -15,11 +15,11 @@ Called when host is attempting to the change the box acquisition
 virtual kern_return_t HandleChangeAcquireBox(bool in_acquire);
 ```
 
-#### Return Value
+## Return Value
 
 Kern_return_t inidicating if the change was successful, upon succes the value should be updated.
 
-#### Discussion
+## Discussion
 
 Default behavior will call SetIsAcquired() and return `kIOReturnSuccess`. Custom drivers should override this method and validate the change and return `kIOReturnSuccess` to confirm the change
 

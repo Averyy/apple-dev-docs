@@ -19,7 +19,7 @@ var VMEXIT_PT_CONCEAL_VMX: UInt32 { get }
 VMEXIT_PT_CONCEAL_VMX
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

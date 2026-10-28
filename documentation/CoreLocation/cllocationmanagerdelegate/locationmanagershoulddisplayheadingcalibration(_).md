@@ -23,11 +23,11 @@ optional func locationManagerShouldDisplayHeadingCalibration(_ manager: CLLocati
 - (BOOL) locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *) manager;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want to allow the heading calibration alert to be displayed; [`false`](../../Swift/false.md) if you do not.
 
-#### Discussion
+## Discussion
 
 Core Location may call this method in an effort to calibrate the onboard hardware used to determine heading values. Typically, Core Location calls this method at the following times:
 

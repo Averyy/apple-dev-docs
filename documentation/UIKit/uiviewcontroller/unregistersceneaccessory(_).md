@@ -25,7 +25,7 @@ func unregisterSceneAccessory(_ registration: UISceneAccessoryRegistration)
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 If the scene accessory associated to this registration is currently being presented, it will be dismissed.
 

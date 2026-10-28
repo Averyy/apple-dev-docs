@@ -21,11 +21,11 @@ Generates a MLDSA65 signature
 func signature<D>(for data: D) throws -> Data where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The MLDSA65 signature
 
-#### Discussion
+## Discussion
 
 > **Throws**: If there is a failure producing the signature
 

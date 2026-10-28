@@ -19,11 +19,11 @@
 static SPScaledPose3D SPScaledPose3DMakeLookAt(SPVector3D forward, double scale, SPVector3D up);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose stucture.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with the specified forward and up vectors.
 

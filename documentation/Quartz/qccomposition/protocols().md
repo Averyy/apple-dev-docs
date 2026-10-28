@@ -21,7 +21,7 @@ func protocols() -> [Any]!
 - (NSArray *) protocols;
 ```
 
-#### Return Value
+## Return Value
 
 A list of protocols. See [Standard Protocols](../standard-protocols.md).
 

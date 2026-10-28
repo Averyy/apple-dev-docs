@@ -25,7 +25,7 @@ func xpc_dictionary_get_remote_connection(_ xdict: xpc_object_t) -> xpc_connecti
 extern xpc_connection_txpc_dictionary_get_remote_connection(xpc_object_t xdict);
 ```
 
-#### Return Value
+## Return Value
 
 If the dictionary was received by a connection event handler or a dictionary created through [`xpc_dictionary_create_reply(_:)`](./xpc_dictionary_create_reply%28_%29.md), a connection object over which a reply message can be sent is returned. For any other dictionary, NULL is returned.
 

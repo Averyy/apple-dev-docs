@@ -15,7 +15,7 @@ An object that represents caching options for a UNIX domain socket.
 @interface VZLinuxRosettaUnixSocketCachingOptions : VZLinuxRosettaCachingOptions
 ```
 
-#### Overview
+## Overview
 
 This object configures Rosetta to communicate with the Rosetta daemon using a UNIX domain socket.
 

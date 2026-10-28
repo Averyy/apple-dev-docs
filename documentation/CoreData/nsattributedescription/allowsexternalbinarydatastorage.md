@@ -25,7 +25,7 @@ var allowsExternalBinaryDataStorage: Bool { get set }
 @property BOOL allowsExternalBinaryDataStorage;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the attribute allows external binary storage, otherwise [`false`](../../Swift/false.md). If this value is [`true`](../../Swift/true.md), the corresponding attribute may be stored in a file external to the persistent store itself.
 

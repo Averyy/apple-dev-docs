@@ -21,7 +21,7 @@ Appends the elements of a sequence to a range-replaceable collection.
 static func += <Other>(lhs: inout Self, rhs: Other) where Other : Sequence, Self.Element == Other.Element
 ```
 
-#### Discussion
+## Discussion
 
 Use this operator to append the elements of a sequence to the end of range-replaceable collection with same `Element` type. This example appends the elements of a `Range<Int>` instance to an array of integers.
 

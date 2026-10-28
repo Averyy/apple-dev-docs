@@ -14,7 +14,7 @@
 #define kCGMaxDisplayReservationInterval
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of seconds for fade hardware reservations and display fade operations. For general information about fade intervals, see the data type [`CGDisplayFadeInterval`](./cgdisplayfadeinterval.md).
 

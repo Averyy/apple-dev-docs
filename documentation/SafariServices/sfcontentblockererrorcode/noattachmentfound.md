@@ -19,7 +19,7 @@ case noAttachmentFound
 SFContentBlockerNoAttachmentFound
 ```
 
-#### Discussion
+## Discussion
 
 The Content Blocker extension returned an [`NSExtensionItem`](../../Foundation/nsextensionitem.md) that did not include an attachment.
 

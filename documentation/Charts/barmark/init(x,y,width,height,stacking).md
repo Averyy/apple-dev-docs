@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension = .automatic, height: MarkDimension = .automatic, stacking: MarkStackingMethod = .standard) where X : Plottable, Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a chart with one or more bars.  For horizontal bars, plot categories or dates with y and numbers with x. For vertical bars, plot categories or dates with x and numbers with y:
 

@@ -16,7 +16,7 @@ An optional identifier you can use to tie an assessment to a specific transactio
 var requestID: String?
 ```
 
-#### Discussion
+## Discussion
 
 It’s a best practice to use a server generated identifier and then to verify that your app includes it in the evaluation result. The enables your app to verify that the service produced the result in response to the specific request.
 

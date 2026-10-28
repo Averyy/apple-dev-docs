@@ -15,11 +15,11 @@ Retrieves the handle for the guest currently selected for the calling thread.
 OSStatus SecHostSelectedGuest(SecCSFlags flags, SecGuestRef *guestRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function may be called in either dynamic hosting mode or proxy hosting mode. If the host has more than one guest, it can set a different selected guest for each thread.
 

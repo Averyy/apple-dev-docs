@@ -17,7 +17,7 @@ Presents an immersive space for the scene with the specified identifier.
 @MainActor func callAsFunction(id: String) async -> OpenImmersiveSpaceAction.Result
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`openImmersiveSpace`](../environmentvalues/openimmersivespace.md) action with a string identifier:
 

@@ -5,7 +5,7 @@
 
 Use and interact with a virtual human interface device for testing and development.
 
-#### Overview
+## Overview
 
 A virtual human interface device (HID) is a software implementation of a hardware device. The system treats the device as any other external peripheral. [`HIDVirtualDevice`](./hidvirtualdevice.md) models a virtual device and you communicate with it using [`HIDDeviceClient`](./hiddeviceclient.md). Use a virtual device to transport data back and forth between other apps without the need for a connected device.
 

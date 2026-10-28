@@ -21,7 +21,7 @@ For how long the event repeats
 var end: Calendar.RecurrenceRule.End
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `.never`
 

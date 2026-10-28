@@ -25,7 +25,7 @@ var continuousCollisionDetectionThreshold: CGFloat { get set }
 @property (nonatomic) CGFloat continuousCollisionDetectionThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit’s physics engine can employ two kinds of collision detection:
 

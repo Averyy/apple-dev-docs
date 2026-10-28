@@ -25,7 +25,7 @@ static let systemNodes: FileAttributeKey
 extern NSFileAttributeKey const NSFileSystemNodes;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object that specifies the number of nodes in the file system.
 

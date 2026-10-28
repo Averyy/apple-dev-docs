@@ -20,7 +20,7 @@ case sendFailed
 
 - [Sending SMS messages from an app](../critical-messaging-api.md)
 
-#### Discussion
+## Discussion
 
 The framework isn’t able to send the message for one of the following reasons:
 

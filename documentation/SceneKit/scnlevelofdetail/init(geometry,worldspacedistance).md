@@ -25,11 +25,11 @@ convenience init(geometry: SCNGeometry?, worldSpaceDistance distance: CGFloat)
 + (instancetype) levelOfDetailWithGeometry:(SCNGeometry *) geometry worldSpaceDistance:(CGFloat) distance;
 ```
 
-#### Return Value
+## Return Value
 
 A level-of-detail object. You associate levels of detail with a [`SCNGeometry`](../scngeometry.md) object using its [`levelsOfDetail`](../scngeometry/levelsofdetail.md) property.
 
-#### Discussion
+## Discussion
 
 When rendering a geometry with associated levels of detail, SceneKit calculates the distance from the current point of view to the geometry’s parent node, then renders the geometry for the [`SCNLevelOfDetail`](../scnlevelofdetail.md) object with the smallest `distance` parameter greater than that distance.
 

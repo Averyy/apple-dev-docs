@@ -16,11 +16,11 @@ Method to set the task's SCSICommandDescriptorBlock.
 IOReturn (*SetCommandDescriptorBlock)(void *task, UInt8 *inCDB, UInt8 inSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the SCSITasks' SCSICommandDescriptorBlock.
 

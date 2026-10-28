@@ -20,13 +20,13 @@ An animation that revolves an entity around its origin.
 struct OrbitAnimation
 ```
 
-#### Overview
+## Overview
 
 This class moves an entity in a circular path by gradually adjusting its local transform. The animation sets the entity’s initial position with [`startTransform`](./orbitanimation/starttransform.md) and rotates it around the point `(0,` `0,` `0)`. The [`axis`](./orbitanimation/axis.md) specifies which cartesian axis around which to rotate. The full orbit completes after [`duration`](./orbitanimation/duration.md) lapses.
 
 If the target entity contains child entities, the target entity orbits the children.
 
-##### Revolve an entity around its origin
+### Revolve an entity around its origin
 
 The following code creates an animation that orbits an entity around the y-axis 3 times over `6` seconds.
 

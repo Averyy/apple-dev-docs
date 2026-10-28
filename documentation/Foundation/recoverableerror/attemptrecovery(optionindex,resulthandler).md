@@ -22,7 +22,7 @@ Attempt to recover from this error when the user selected the option at the give
 func attemptRecovery(optionIndex recoveryOptionIndex: Int, resultHandler handler: @escaping (Bool) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This entry point is used for recovery of errors handled at a “document” granularity, that do not affect the entire application.
 

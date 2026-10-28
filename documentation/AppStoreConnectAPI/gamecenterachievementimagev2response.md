@@ -15,7 +15,7 @@ A response that contains a single Game Center achievement image v2 resource.
 object GameCenterAchievementImageV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

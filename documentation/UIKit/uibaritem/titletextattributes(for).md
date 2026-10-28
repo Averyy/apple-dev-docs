@@ -23,11 +23,11 @@ func titleTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key 
 - (NSDictionary<NSString *,id> *) titleTextAttributesForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The title’s text attributes for `state`.
 
-#### Discussion
+## Discussion
 
 The dictionary may contain key-value pairs for text attributes for the font, text color, text shadow color, and text shadow offset using the keys listed in NSString UIKit Additions Reference.
 

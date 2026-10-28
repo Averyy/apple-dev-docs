@@ -15,7 +15,7 @@ The maximum number of iterations the training session can use.
 var maxIterations: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t have a preference, set this property to `nil` to tell Create ML to use an appropriate value when it trains the model.
 

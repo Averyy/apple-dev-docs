@@ -19,7 +19,7 @@ optional func customVirtioDeviceWillPause(_ device: VZCustomVirtioDevice)
 - (void) customVirtioDeviceWillPause:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 A device is in a paused state when its corresponding [`VZVirtualMachine`](../vzvirtualmachine.md) is in a paused state. This happens when you call [`pause()`](../vzvirtualmachine/pause%28%29.md).
 

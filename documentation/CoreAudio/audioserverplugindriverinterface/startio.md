@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int) StartIO;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the device to start IO.
 

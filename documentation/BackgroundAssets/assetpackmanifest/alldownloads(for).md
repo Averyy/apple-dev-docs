@@ -20,7 +20,7 @@ Creates download objects for every applicable asset pack in this manifest, which
 func allDownloads(for contentRequest: BAContentRequest?) -> Set<BADownload>
 ```
 
-#### Return Value
+## Return Value
 
 A collection of download objects.
 

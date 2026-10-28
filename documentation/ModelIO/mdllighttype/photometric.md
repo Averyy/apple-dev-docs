@@ -24,7 +24,7 @@ case photometric
 MDLLightTypePhotometric
 ```
 
-#### Discussion
+## Discussion
 
 This light type is exclusive to the [`MDLPhotometricLight`](../mdlphotometriclight.md) class.
 

@@ -21,7 +21,7 @@ The range of the attribute in the attributed string.
 var range: Range<AttributedString.Index>
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to examine or alter the range that the attribute applies to.
 

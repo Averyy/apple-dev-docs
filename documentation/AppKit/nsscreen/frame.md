@@ -19,7 +19,7 @@ var frame: NSRect { get }
 @property (readonly) NSRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 This is the full screen rectangle at the current resolution. This rectangle includes any space currently occupied by the menu bar and dock.
 

@@ -61,7 +61,7 @@ init<R>(_ key: String, store: UserDefaults? = nil) where Value == R?, R : RawRep
 init<R>(_ key: String, store: UserDefaults? = nil) where Value == R?, R : RawRepresentable, R.RawValue == String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to nil if there is no restored value.
 

@@ -23,7 +23,7 @@ func inset(by dXYZ: Size3DFloat) -> Rect3DFloat
 static SPRect3DFloat SPRect3DFloatInset(SPRect3DFloat rect, SPSize3DFloat dXYZ);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a new rectangle with the size updated by the specified amount and the same center point.
 

@@ -23,7 +23,7 @@ protocol PKPayLaterViewDelegate : NSObjectProtocol
 @protocol PKPayLaterViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When manually laying out this view, adopt this protocol to receive a callback when the Apple Pay Layer view’s size changes.
 

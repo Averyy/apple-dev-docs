@@ -21,7 +21,7 @@ The audio formats that this module is able to analyze, given its configuration.
 var availableCompatibleAudioFormats: [AVAudioFormat] { get async }
 ```
 
-#### Discussion
+## Discussion
 
 If the audio format doesn’t matter, then there will be one format listed with a sample rate of `kAudioStreamAnyRate` and other values 0.
 

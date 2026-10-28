@@ -5,7 +5,7 @@
 
 Generate dynamic, interactive previews of your custom views.
 
-#### Overview
+## Overview
 
 When you create a custom [`View`](./view.md) with SwiftUI, Xcode can display a preview of the view’s content that stays up-to-date as you make changes to the view’s code. You use one of the preview macros — like [`Preview(_:body:)`](./preview%28_,body%29.md) — to tell Xcode what to display. Xcode shows the preview in a canvas beside your code.
 

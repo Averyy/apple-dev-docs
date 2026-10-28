@@ -24,7 +24,7 @@ let kIOSurfacePlaneBytesPerElement: CFString
 extern CFStringRef const kIOSurfacePlaneBytesPerElement;
 ```
 
-#### Discussion
+## Discussion
 
 Optional, default is 1.
 

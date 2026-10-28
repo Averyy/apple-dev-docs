@@ -15,7 +15,7 @@ The total size of the message.
 var totalSize: Measurement<UnitInformationStorage> { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this value exceeds `MMSConfiguration/maximumMessageSize`, sending the message with [`sendMessage(_:)`](../mmsservice/sendmessage%28_%29.md) fails with [`MMSService.Error.maximumSizeExceeded`](../mmsservice/error/maximumsizeexceeded.md).
 

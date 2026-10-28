@@ -24,7 +24,7 @@ case failureMessageServiceNotAvailable
 INSendMessageIntentResponseCodeFailureMessageServiceNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 You might use this code if sending the message requires communicating with a remote server and the network is unavailable.
 

@@ -24,7 +24,7 @@ func tileGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTen
 - (MPSGraphTensor *) tileGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor withMultiplier:(MPSShape *) multiplier name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

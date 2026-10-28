@@ -23,13 +23,13 @@ class UIGraphicsRenderer
 @interface UIGraphicsRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t use [`UIGraphicsRenderer`](./uigraphicsrenderer.md) directly. Instead, either use one of the concrete subclasses ([`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) or [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md)), or create your own subclass.
 
 Graphics renderers provide memory-efficient management of Core Graphics contexts. Core Graphics contexts represent the drawing environment and backing store for 2D Graphics. As you reuse a graphics renderer, it in turn reuses Core Graphics contexts.
 
-##### Subclassing notes
+### Subclassing notes
 
 You can’t use [`UIGraphicsRenderer`](./uigraphicsrenderer.md) directly, but if the concrete subclasses ([`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md) and [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md)) don’t provide the functionality you require, you can create your own subclass.
 

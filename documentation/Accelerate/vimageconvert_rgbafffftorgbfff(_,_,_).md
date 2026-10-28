@@ -25,11 +25,11 @@ func vImageConvert_RGBAFFFFtoRGBFFF(_ src: UnsafePointer<vImage_Buffer>!, _ dest
 vImage_Error vImageConvert_RGBAFFFFtoRGBFFF(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function copies the red, green, and blue source channels to the destination buffer.
 

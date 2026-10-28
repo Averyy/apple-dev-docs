@@ -21,11 +21,11 @@ func highlight(_ flag: Bool)
 - (void) highlight:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver invokes this method while tracking the mouse; you should not invoke it directly. If `flag` is [`true`](../../Swift/true.md), the appropriate part is drawn highlighted; otherwise it’s drawn normally.
 
-##### Special Considerations
+### Special Considerations
 
 This method has no effect in macOS 10.7 and later.
 

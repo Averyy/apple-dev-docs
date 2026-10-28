@@ -19,7 +19,7 @@ var view: NSView? { get set }
 @property (strong, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 A menu item with a view does not draw its title, state, font, or other standard drawing attributes, and assigns drawing responsibility entirely to the view. Keyboard equivalents and type-select continue to use the key equivalent and title as normal. For more information, see [`NSMenuItem`](../nsmenuitem.md).
 

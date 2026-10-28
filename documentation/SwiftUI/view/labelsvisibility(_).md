@@ -22,7 +22,7 @@ nonisolated
 func labelsVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to omit a label from one or more labeled content in your user interface. For example, the first [`Toggle`](../toggle.md) in the following example hides its label:
 

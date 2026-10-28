@@ -21,7 +21,7 @@ A mutable collection of parts.
 var parts: LowLevelMesh.PartsCollection { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The parts of a [`LowLevelMesh`](../lowlevelmesh.md) object specify how to interpret the index buffer. You can also use `parts` to customize the material index and primitive type.
 

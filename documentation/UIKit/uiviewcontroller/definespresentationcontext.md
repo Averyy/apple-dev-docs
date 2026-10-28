@@ -23,7 +23,7 @@ var definesPresentationContext: Bool { get set }
 @property (nonatomic, assign) BOOL definesPresentationContext;
 ```
 
-#### Discussion
+## Discussion
 
 When using the [`UIModalPresentationStyle.currentContext`](../uimodalpresentationstyle/currentcontext.md) or [`UIModalPresentationStyle.overCurrentContext`](../uimodalpresentationstyle/overcurrentcontext.md) style to present a view controller, this property controls which existing view controller in your view controller hierarchy is actually covered by the new content. When a context-based presentation occurs, UIKit starts at the presenting view controller and walks up the view controller hierarchy. If it finds a view controller whose value for this property is [`true`](../../Swift/true.md), it asks that view controller to present the new view controller. If no view controller defines the presentation context, UIKit asks the window’s root view controller to handle the presentation.
 

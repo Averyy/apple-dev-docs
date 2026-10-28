@@ -21,7 +21,7 @@ Creates an attribute container from a dictionary and an attribute scope that a k
 init<S>(_ dictionary: [NSAttributedString.Key : Any], including scope: KeyPath<AttributeScopes, S.Type>) throws where S : AttributeScope
 ```
 
-#### Discussion
+## Discussion
 
 This initializer only collects attributes from `dictionary` that exist in the provided scope. The resulting attribute container omits any keys in `dictionary` that don’t exist in `scope`.
 

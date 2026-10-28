@@ -25,7 +25,7 @@ func makeComputeCommandEncoder(descriptor computePassDescriptor: MTLComputePassD
 - (id<MTLComputeCommandEncoder>) computeCommandEncoderWithDescriptor:(MTLComputePassDescriptor *) computePassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
 

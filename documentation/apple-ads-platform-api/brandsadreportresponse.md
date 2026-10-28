@@ -15,11 +15,11 @@ The top-level response envelope for brands ad-level reports.
 object BrandsAdReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Note that ad-level reports don’t support `HOURLY` granularity.
 
-##### Example
+### Example
 
 ```json
 {

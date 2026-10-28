@@ -25,7 +25,7 @@ func CMBufferQueueGetTotalSize(_ queue: CMBufferQueue) -> Int
 extern size_t CMBufferQueueGetTotalSize(CMBufferQueueRef queue);
 ```
 
-#### Discussion
+## Discussion
 
 The total size of the `CMBufferQueue` is the sum of all the individual buffer sizes, as reported by the `getTotalSize` callback (provided to [`CMBufferQueueCreate(allocator:capacity:callbacks:queueOut:)`](./cmbufferqueuecreate%28allocator,capacity,callbacks,queueout%29.md)).
 

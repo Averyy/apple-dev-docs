@@ -20,11 +20,11 @@ func doesContain(_ object: Any) -> Bool
 - (BOOL) doesContain:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver contains `object`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Currently, [`doesContain(_:)`](./doescontain%28_%29.md) messages are never sent to any object from within Cocoa itself.
 

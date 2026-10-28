@@ -24,7 +24,7 @@ var code: String { get }
 @property (nonatomic, copy, readonly) NSString * code;
 ```
 
-#### Discussion
+## Discussion
 
 The format depends on the coding system. For example, RxNorm codes are numeric.
 

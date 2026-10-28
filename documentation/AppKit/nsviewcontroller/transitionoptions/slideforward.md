@@ -19,7 +19,7 @@ static var slideForward: NSViewController.TransitionOptions { get }
 NSViewControllerTransitionSlideForward
 ```
 
-#### Discussion
+## Discussion
 
 - For left-to-right user interface layout direction, the [`slideLeft`](./slideleft.md) animation option.
 - For right-to-left user interface layout direction, the [`slideRight`](./slideright.md) animation option.

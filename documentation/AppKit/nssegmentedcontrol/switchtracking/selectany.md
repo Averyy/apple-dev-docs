@@ -19,7 +19,7 @@ case selectAny
 NSSegmentSwitchTrackingSelectAny
 ```
 
-#### Discussion
+## Discussion
 
 This mode functions as a set of checkboxes, where any combination of segments may be on or off, and is illustrated by the font format selection control in Pages, which allows you to apply bold, italics, and underline to the selected text.
 

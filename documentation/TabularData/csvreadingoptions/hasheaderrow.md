@@ -21,7 +21,7 @@ A Boolean value that indicates whether the CSV file has a header row.
 var hasHeaderRow: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

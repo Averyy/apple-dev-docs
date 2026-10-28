@@ -17,7 +17,7 @@ Cancels the alarm with the specified ID.
 func cancel(id: Alarm.ID) throws
 ```
 
-#### Discussion
+## Discussion
 
 Deletes the alarm from the system even if the alarm has a repeating schedule.
 

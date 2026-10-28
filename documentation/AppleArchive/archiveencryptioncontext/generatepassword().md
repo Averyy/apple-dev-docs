@@ -21,11 +21,11 @@ Generates a new password.
 func generatePassword() throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 The new password.
 
-#### Discussion
+## Discussion
 
 This function generates a new high entropy password, stores it in the context, and returns it.
 

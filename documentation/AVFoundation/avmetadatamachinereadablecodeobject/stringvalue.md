@@ -23,7 +23,7 @@ var stringValue: String? { get }
 @property (readonly, nullable) NSString * stringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an `NSString` created by decoding the binary payload according to the format of the machine-readable code, or `nil` if a string representation cannot be created.
 

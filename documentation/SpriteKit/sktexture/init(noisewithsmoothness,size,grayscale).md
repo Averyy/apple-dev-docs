@@ -25,11 +25,11 @@ convenience init(noiseWithSmoothness smoothness: CGFloat, size: CGSize, grayscal
 + (instancetype) textureNoiseWithSmoothness:(CGFloat) smoothness size:(CGSize) size grayscale:(BOOL) grayscale;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise texture.
 
-#### Discussion
+## Discussion
 
 Unlike other textures produced by SpriteKit, the texels are not premultiplied by the alpha value. Your custom shaders should compensate for this as necessary.
 

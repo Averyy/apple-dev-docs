@@ -30,7 +30,7 @@ var vendorIdentifier: String { get set }
 @property (atomic, copy) NSString * vendorIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each provider of restaurant data has a unique identifier assigned to it by Apple. Typically, this string is your company’s domain name formatted as a reverse-DNS string such as `com.example`. You can use this string to verify that the restaurant information belongs to your company.
 

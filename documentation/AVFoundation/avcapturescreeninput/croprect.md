@@ -19,7 +19,7 @@ var cropRect: CGRect { get set }
 @property (nonatomic) CGRect cropRect;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `AVCaptureScreenInput` captures the entire area of the displayID with which it is associated.
 

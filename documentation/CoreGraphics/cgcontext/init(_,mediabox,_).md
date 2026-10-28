@@ -25,11 +25,11 @@ init?(_ url: CFURL, mediaBox: UnsafePointer<CGRect>?, _ auxiliaryInfo: CFDiction
 extern CGContextRefCGPDFContextCreateWithURL(CFURLRef url, const CGRect *mediaBox, CFDictionaryRef auxiliaryInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A new PDF context, or `NULL` if a context could not be created. In Objective-C, you’re responsible for releasing this object using [`CGContextRelease`](../cgcontextrelease.md).
 
-#### Discussion
+## Discussion
 
 When you call this function, Core Graphics creates a PDF drawing environment—that is, a graphics context—to your specifications. When you draw into the resulting context, Core Graphics renders your drawing as a series of PDF drawing commands stored in the specified location.
 

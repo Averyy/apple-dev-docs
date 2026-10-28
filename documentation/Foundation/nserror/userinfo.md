@@ -25,7 +25,7 @@ var userInfo: [String : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If the user info dictionary has not been set, this property is `nil`.
 

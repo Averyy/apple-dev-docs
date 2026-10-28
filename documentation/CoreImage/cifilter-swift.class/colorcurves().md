@@ -24,11 +24,11 @@ class func colorCurves() -> any CIFilter & CIColorCurves
 + (CIFilter<CIColorCurves> *) colorCurvesFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color curves filter to an image. The effect uses a three-channel one-dimensional color table to transform the source image pixels. The color table must be comprised of floating-point RGB value.
 

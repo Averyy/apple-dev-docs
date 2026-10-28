@@ -5,7 +5,7 @@
 
 Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
 
-#### Overview
+## Overview
 
 The Enterprise Program API requires a JSON Web Token (JWT) to authorize each request you make to the API. You generate JWTs using an API key downloaded from the [Apple Developer website](https://developer.apple.com).
 
@@ -15,7 +15,7 @@ An API key has two parts: a public portion that Apple keeps, and a private key t
 
 Enterprise Program API keys are unique to the Enterprise Program API and you can’t use them for other Apple services.
 
-##### Generate a Enterprise Program API Key and Assign It a Role
+### Generate a Enterprise Program API Key and Assign It a Role
 
 When you create an API key, assign it a role that determines the key’s access to areas of the Enterprise Program API and permissions for performing tasks. For example, keys with the Admin role have broad permissions and can do things like create new users and delete users. The other available role is Developer, which is restricted to provisioning actions, such as creating provisioning profiles and managing development certificates.
 
@@ -33,7 +33,7 @@ To generate a key to use with the Enterprise Program API, log in to the [Apple D
 
 The new key’s name, key ID, a download link, and other information appears on the page.
 
-##### Download and Store a Enterprise Program API Private Key
+### Download and Store a Enterprise Program API Private Key
 
 Once you’ve generated your API key, you can download the private half of the key. The private key is available for download a single time, to begin log in to the [Apple Developer website](https://developer.apple.com) and:
 

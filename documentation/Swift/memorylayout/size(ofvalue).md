@@ -21,11 +21,11 @@ Returns the contiguous memory footprint of the given instance.
 static func size(ofValue value: borrowing T) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The size, in bytes, of the given value’s type.
 
-#### Discussion
+## Discussion
 
 The result does not include any dynamically allocated or out of line storage. In particular, pointers and class instances all have the same contiguous memory footprint, regardless of the size of the referenced data.
 

@@ -22,11 +22,11 @@ func CVDisplayLinkSetCurrentCGDisplay(_ displayLink: CVDisplayLink, _ displayID:
 extern CVReturn CVDisplayLinkSetCurrentCGDisplay(CVDisplayLinkRef displayLink, CGDirectDisplayID displayID);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Although it is safe to call this function on a running display link, a discontinuity may appear in the video timestamp.
 

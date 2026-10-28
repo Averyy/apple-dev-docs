@@ -23,7 +23,7 @@ case revoked
 ENDiagnosisReportTypeRevoked
 ```
 
-#### Discussion
+## Discussion
 
 This case negates a previous self report or clinical diagnosis that may have been in error.
 

@@ -19,7 +19,7 @@ string productId
 
 - [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 You define product IDs in App Store Connect. Product IDs are unique within your app.
 

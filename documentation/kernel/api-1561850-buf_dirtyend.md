@@ -15,11 +15,11 @@ Get the ending offset of the dirty region associated with a buffer.
 uint32_t buf_dirtyend(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 if buffer is found clean; size of buffer if found dirty. Can be set to any value by callers of buf_setdirtyend().
 
-#### Discussion
+## Discussion
 
 If the buffer's data was found incore and dirty, the dirty end is the size of the block; otherwise, unless someone outside of xnu explicitly changes it by calling buf_setdirtyend(), it will be zero.
 

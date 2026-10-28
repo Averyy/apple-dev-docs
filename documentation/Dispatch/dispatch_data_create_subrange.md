@@ -21,11 +21,11 @@ Returns a new dispatch data object whose contents consist of a portion of anothe
 extern dispatch_data_tdispatch_data_create_subrange(dispatch_data_t data, size_t offset, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 A new dispatch data object whose memory is a subrange of the memory associated with the object in the `data` parameter.
 
-#### Discussion
+## Discussion
 
 After calling this function, it is safe to release the object in `data`. However, be aware that the memory from that object may not be deallocated immediately if the newly created dispatch data object references it, as opposed to copies it.
 

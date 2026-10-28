@@ -10,7 +10,7 @@
 extern CFStringRef const kCGDisplayStreamShowCursor;
 ```
 
-#### Discussion
+## Discussion
 
 Controls whether the cursor is embedded within the provided buffers or not.
 

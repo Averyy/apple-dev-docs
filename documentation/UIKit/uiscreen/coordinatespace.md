@@ -22,7 +22,7 @@ var coordinateSpace: any UICoordinateSpace { get }
 @property (readonly) id<UICoordinateSpace> coordinateSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The screen’s current coordinate space always reflects any interface orientations applied to the device. Therefore, the bounds of this coordinate space match the [`bounds`](./bounds.md) property of the screen itself.
 

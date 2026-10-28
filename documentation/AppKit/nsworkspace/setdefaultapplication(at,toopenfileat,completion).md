@@ -23,7 +23,7 @@ func setDefaultApplication(at applicationURL: URL, toOpenFileAt url: URL) async 
 - (void) setDefaultApplicationAtURL:(NSURL *) applicationURL toOpenFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the default app to use for a specific file (rather than all files of that content type). The system requires write access to the specified `url` before it can make the change.
 

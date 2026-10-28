@@ -28,11 +28,11 @@ func watchInt<Return>(forKey key: ConfigKey, isSecret: Bool = false, fileID: Str
 
 - [Example use cases](../example-use-cases.md)
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to optional configuration values over time. The handler receives an async sequence that produces the current value whenever it changes, or `nil` if the value is missing or can’t be converted.
 

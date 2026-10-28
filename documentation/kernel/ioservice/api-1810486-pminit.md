@@ -12,7 +12,7 @@ virtual void PMinit(
  void );
 ```
 
-#### Overview
+## Overview
 
 `PMinit` allocates and initializes the power management instance variables, and it should be called before accessing those variables or calling the power management methods. This method should be called inside the driver's `start` routine and must be paired with a call to PMstop. Most calls to `PMinit` are followed by calls to joinPMtree and registerPowerDriver.
 

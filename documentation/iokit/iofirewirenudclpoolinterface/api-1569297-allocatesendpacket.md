@@ -16,11 +16,11 @@ Allocate a SendPacket NuDCL and append it to the program.
 NuDCLSendPacketRef (*AllocateSendPacket)(IOFireWireLibNuDCLPoolRef self, CFMutableSetRef saveBag, UInt32 numBuffers, IOVirtualRange *buffers);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NuDCLSendPacketRef on success or 0 on failure.
 
-#### Discussion
+## Discussion
 
 The SendPacket DCL sends an isochronous packet on the bus. One DCL runs per bus cycle. The isochronous header is automatically generated, but can be overriden. An update must be run to regenerate the isochronous header. The sync and tag fields of allocated DCLs default to 0, unless If SetCurrentTagAndSync has been called.
 

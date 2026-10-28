@@ -17,11 +17,11 @@ static func open(url: URL, mode: OpenConfiguration.Mode = .automatic) -> Self
 
 Available when `Self` is `OpenConfiguration`.
 
-#### Return Value
+## Return Value
 
 An [`OpenConfiguration`](../openconfiguration.md) instance.
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how to open a disk image.
 

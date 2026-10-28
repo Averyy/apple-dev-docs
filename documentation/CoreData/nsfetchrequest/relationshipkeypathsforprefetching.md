@@ -25,7 +25,7 @@ var relationshipKeyPathsForPrefetching: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * relationshipKeyPathsForPrefetching;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of relationship key-path strings in NSKeyValueCoding notation (as you typically use with [`value(forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/value%28forkeypath%29.md)). The default value is an empty array (no prefetching).
 

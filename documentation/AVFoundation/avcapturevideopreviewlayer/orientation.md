@@ -19,7 +19,7 @@ The layer’s orientation.
 @property (nonatomic) AVCaptureVideoOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 Changes in orientation are not supported on all hardware configurations. You should check the value of [`isVideoOrientationSupported`](../avcaptureconnection/isvideoorientationsupported.md) (`AVCaptureConnection`) before attempting to change the orientation of the receiver. An exception is raised if this requirement is ignored.
 

@@ -19,7 +19,7 @@ var refusesFirstResponder: Bool { get set }
 @property BOOL refusesFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the receiver refuses the first responder role; otherwise, [`false`](../../Swift/false.md).
 

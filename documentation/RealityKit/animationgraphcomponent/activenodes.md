@@ -20,7 +20,7 @@ Every node that contributed to the most recent graph evaluation tick.
 var activeNodes: [any AnimationGraphComponent.ActiveNode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned array is a snapshot — its element type is `any` [`AnimationGraphComponent.ActiveNode`](./activenode.md), so each entry exposes only the fields common to all node kinds. To inspect node-kind- specific state, downcast each element to [`AnimationGraphComponent.ActiveStateMachineNode`](./activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](./activeclipnode.md), or iterate [`activeStateMachineNodes`](./activestatemachinenodes.md) or [`activeClipNodes`](./activeclipnodes.md) for the same view filtered to a single kind.
 

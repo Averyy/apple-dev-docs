@@ -15,7 +15,7 @@ Represents a single budget order assignment within a campaign’s `sharedBudgets
 object SharedBudgetAssignment
 ```
 
-#### Discussion
+## Discussion
 
 The `SharedBudgetAssignment` object is an embedded object returned as part of a [`Campaign`](./campaign.md). On Campaign, the field is `sharedBudgets`, an array of assignment objects each containing a `budgetId`.
 
@@ -25,7 +25,7 @@ A campaign can carry multiple budget order assignments as long as their schedule
 
 **No standalone operations:** The `SharedBudgetAssignment` isn’t independently addressable. There are no standalone create, read, update, delete, or query operations for it. The API only returns assignment objects as part of a Campaign response.
 
-##### Example
+### Example
 
 ```json
 {

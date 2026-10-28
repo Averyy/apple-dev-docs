@@ -23,7 +23,7 @@ optional func session(_ session: WCSession, didFinish userInfoTransfer: WCSessio
 - (void) session:(WCSession *) session didFinishUserInfoTransfer:(WCSessionUserInfoTransfer *) userInfoTransfer error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The session object calls this method when a data transfer initiated by the current app finished, either successfully or unsuccessfully. Use this method to note that the transfer completed or to respond to errors, perhaps by trying to send the data again at a later time.
 

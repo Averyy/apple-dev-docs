@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) CNSpatialAudioRenderingStyle defaultRenderingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Default rendering style as provided by the system
 

@@ -20,7 +20,7 @@ A value that indicates whether Apple Pay Later is available for a transaction.
 @property (nonatomic, assign) PKApplePayLaterAvailability applePayLaterAvailability;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to enabled.
 

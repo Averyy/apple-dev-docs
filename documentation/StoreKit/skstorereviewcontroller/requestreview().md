@@ -24,7 +24,7 @@ class func requestReview()
 + (void) requestReview;
 ```
 
-#### Discussion
+## Discussion
 
 Although you normally call this method when it makes sense in the user experience flow of your app, App Store policy governs the actual display of a rating and review request view. Because this method may not present an alert, it isn’t appropriate to call [`requestReview()`](./requestreview%28%29.md) or [`requestReview(in:)`](./requestreview%28in%29.md) in response to a button tap or other user action.
 

@@ -22,7 +22,7 @@ class let touchBarNewMessageTemplateName: String
 extern NSImageName const NSImageNameTouchBarNewMessageTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for new message](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793526@2x.png)
 

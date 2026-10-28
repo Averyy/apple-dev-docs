@@ -21,7 +21,7 @@ A base type that represents data that contains video content that may or may not
 static var audiovisualContent: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.audiovisual-content`.
 

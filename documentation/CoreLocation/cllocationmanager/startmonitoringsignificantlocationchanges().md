@@ -26,7 +26,7 @@ func startMonitoringSignificantLocationChanges()
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 This method initiates the delivery of location events asynchronously, returning shortly after you call it. Location events are delivered to your delegate’s [`locationManager(_:didUpdateLocations:)`](../cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) method. The first event to be delivered is usually the most recently cached location event (if any) but may be a newer event in some circumstances. Obtaining a current location fix may take several additional seconds, so be sure to check the timestamps on the location events in your delegate method.
 

@@ -19,7 +19,7 @@ var name: String? { get }
 @property (copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This value is non-`nil` unless the [`result`](./result.md) is ``FSMatchResult/notRecognized`. For formats that lack a name, this value may be an empty string. This value can also be an empty string if the format supports a name, but the value isn’t set yet.
 

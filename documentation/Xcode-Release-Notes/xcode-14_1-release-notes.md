@@ -5,23 +5,23 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, watchOS 9.1, and macOS Ventura. The Xcode 14.1 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14.1 requires a Mac running macOS Monterey 12.5 or later.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `ActivityAuthorizationInfo.activityEnablementUpdates` AsyncSream doesn’t send a new update when it’s changed in Settings.app (96630169)
 - Fixed: iOS simulators may stop showing Live Activities and Dynamic Island features. (99108857)
 - Fixed: Building a Matter Extension template results in a compiler error: `Cannot find type 'HMMatterRequestHandler' in scope` (99751983)
 
-###### Known Issues
+#### Known Issues
 
 - After Running a widget extension, users will need to manually start the debugging session with Debug -> Attach to Process. (99285608)
 - RealityKit’s FromToByAnimation may cause an app built with iOS 16 or macOS 13 SDKs to fail to launch on iOS 15 or macOS 12. (100228035)
@@ -31,51 +31,51 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 
   **Workaround**: Avoid the use of compiler directives in App Shortcuts definitions. Consider having a AppShortcutProvider unique to each platform if there are differences in App Shortcuts between platforms.
 
-##### Build System
+### Build System
 
-###### Known Issues
+#### Known Issues
 
 - When removing a condition from the variant editor, the value won’t be persisted. (98149034)
 
   **Workaround**: Use the Build Settings Editor to remove the condition.
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Interface Builder shows iPhone 14 and Apple Watch Ultra size models in the device bar. (99504634)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Starting in iPadOS 16.1, developers can turn on Stage Manager in the Simulator by using the appropriate setting in the Home Screen & Multitasking section of the Settings app. (95712631)
 
-###### Known Issues
+#### Known Issues
 
 - Previously released simulators may not appear in Platforms pane after logging out and back in. (100815609)
 
   **Workaround**: Rebooting the system restores the list of previously released simulators.
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Onboarding a product to Xcode Cloud may get stuck after selecting a product in the onboarding sheet. (100432349)
 
-###### Known Issues
+#### Known Issues
 
 - WatchOS apps can’t be onboarded to Xcode Cloud from Xcode. (96313262)
 
-##### Source Editor
+### Source Editor
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that affected reliability of dragging the program counter when debugging. (99465275)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using the following StoreKit properties and methods on apps with a minimum deployment target below iOS 16, macOS 13, watchOS 9, and tvOS 16 will cause the app to crash at launch when running on systems earlier than iOS 16, macOS 13, watchOS 9 and tvOS 16:
 

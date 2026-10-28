@@ -28,7 +28,7 @@ class UIFontMetrics
 
 - [Scaling fonts automatically](./scaling-fonts-automatically.md)
 
-#### Overview
+## Overview
 
 Use a [`UIFontMetrics`](./uifontmetrics.md) object to support scalable custom fonts in your app. You create a font metrics object that specifies the font style—for example, body or title—that you want to use in your app. You then pass your custom font to the [`scaledFont(for:)`](./uifontmetrics/scaledfont%28for%29.md) method (or one of the other methods of this class) to obtain a font object that is based on your custom font, has the appropriate style information, and automatically scales to match the current Dynamic Type settings.
 

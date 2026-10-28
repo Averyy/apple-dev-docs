@@ -15,7 +15,7 @@ A utility class to manage allocations from a range.
 class IORangeAllocator : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IORangeAllocator class provides functions for allocating ranges, at a fixed or any offset, and freeing them back to a free list. It is useful for describing ranges of memory or address space without requiring storage in the memory - information describing the free elements is kept elsewhere. Ranges are described by a start offset and a size. IORangeAllocator is optionally protected against multithreaded access.
 

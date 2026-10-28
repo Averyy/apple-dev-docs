@@ -21,7 +21,7 @@ Whether buttons with this associated environment should repeatedly trigger their
 var buttonRepeatBehavior: ButtonRepeatBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 A value of `enabled` means that buttons will be able to repeatedly trigger their action, and `disabled` means they should not. A value of `automatic` means that buttons will defer to default behavior.
 

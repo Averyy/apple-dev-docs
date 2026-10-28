@@ -19,11 +19,11 @@ An optional group identifier for the hover effect.
 var groupID: HoverEffectComponent.GroupID? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system activates the hover effect entities that have the same [`HoverEffectComponent.GroupID`](../groupid.md) instance at the same time when a person looks at it or hovers over any entity in the group.
 
-##### Activating Hover Effects
+### Activating Hover Effects
 
 The system activates hover effect entities with a `groupID` independently from the hierarchical activation behavior.
 

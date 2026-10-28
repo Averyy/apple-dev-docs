@@ -21,7 +21,7 @@ Sends a message specified by a given selector to each object in the set.
 - (void) makeObjectsPerformSelector:(SEL) aSelector;
 ```
 
-#### Discussion
+## Discussion
 
 The message specified by `aSelector` is sent once to each member of the set. This method raises an `NSInvalidArgumentException` if `aSelector` is `NULL`.
 

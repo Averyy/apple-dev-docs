@@ -19,11 +19,11 @@ func itemIdentifier(for indexPath: IndexPath) -> Any?
 - (ItemIdentifierType) itemIdentifierForIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s identifier, or `nil` if no item is found at the provided index path.
 
-#### Discussion
+## Discussion
 
 This method is a constant time operation, O(1), which means you can look up an item identifier from its corresponding index path with no significant overhead.
 

@@ -19,7 +19,7 @@ var cornerRadius: CGFloat { get set }
 @property (nonatomic, assign) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 36.0 points.
 

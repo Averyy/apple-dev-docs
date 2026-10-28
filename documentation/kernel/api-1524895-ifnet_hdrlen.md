@@ -13,7 +13,7 @@
 u_int8_t ifnet_hdrlen(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 The header length.
 

@@ -21,11 +21,11 @@ optional func render(withCGLContext cgl_ctx: CGLContextObj!, forBounds bounds: N
 - (BOOL) renderWithCGLContext:(CGLContextObj) cgl_ctx forBounds:(NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; [`false`](../../Swift/false.md) on failure or if the image provider doesn’t support GPU rendering.
 
-#### Discussion
+## Discussion
 
 The view port is set for you. The model view and projection  matrixes are set to the identity.
 

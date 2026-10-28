@@ -20,7 +20,7 @@ struct PlaneDetection
 enum ARPlaneDetection : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 By default, this configuration disables plane detection. If you enable horizontal or vertical plane detection, the session adds ARPlaneAnchor objects and notifies your ARSessionDelegate, ARSCNViewDelegate, or ARSKViewDelegate object when its analysis of captured video images detects an area that appears to be a flat surface.
 

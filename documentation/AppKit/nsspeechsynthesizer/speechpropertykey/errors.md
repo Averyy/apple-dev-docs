@@ -19,7 +19,7 @@ static let errors: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechErrorsProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary object that contains speech-error information. See [`NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey`](./errorkey.md) for a description of the keys present in the dictionary.
 

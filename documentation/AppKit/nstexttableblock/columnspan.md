@@ -19,7 +19,7 @@ var columnSpan: Int { get }
 @property (readonly) NSInteger columnSpan;
 ```
 
-#### Return Value
+## Return Value
 
 The number of table columns spanned by this text table block.
 

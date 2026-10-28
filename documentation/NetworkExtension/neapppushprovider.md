@@ -26,11 +26,11 @@ class NEAppPushProvider
 
 - [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
 
-#### Overview
+## Overview
 
 Subclass [`NEAppPushProvider`](./neapppushprovider.md) to provide the connection to your local push server. A [`NEAppPushManager`](./neapppushmanager.md) creates instances of your provider class based on the [`providerBundleIdentifier`](./neapppushmanager/providerbundleidentifier.md) in the manager’s configuration. The manager then calls methods on your provider to start and stop communication with the server, and periodically check the provider’s status. When your provider receives an incoming call from your server, call the provider’s [`reportIncomingCall(userInfo:)`](./neapppushprovider/reportincomingcall%28userinfo%29.md) method to alert the manager’s [`delegate`](./neapppushmanager/delegate.md).
 
-##### Creating a Local Push Provider Extension
+### Creating a Local Push Provider Extension
 
 Local Push Providers run as App Extensions for the `app-push-provider` extension point, which is a possible value the [`Network Extensions Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md).
 

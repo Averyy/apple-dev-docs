@@ -16,7 +16,7 @@ Checks the authorization status for the calling application.
 func authorizationStatus() async throws -> AuthorizationStatus
 ```
 
-#### Return Value
+## Return Value
 
 An [`AuthorizationStatus`](../authorizationstatus.md) value that indicates the current state of authorization.
 

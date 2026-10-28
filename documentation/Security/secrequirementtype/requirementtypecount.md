@@ -20,7 +20,7 @@ static var requirementTypeCount: SecRequirementType { get }
 kSecRequirementTypeCount
 ```
 
-#### Discussion
+## Discussion
 
 This constant is for Apple internal use.
 

@@ -19,7 +19,7 @@ A source of data for Spotlight to search.
 struct SearchSource
 ```
 
-#### Overview
+## Overview
 
 When configuring the search tool, use this type to specify whether to retrieve data from the app’s Spotlight index or from files at the specified locations. Each of the sources sets the scope of the search, along with other parameters.
 

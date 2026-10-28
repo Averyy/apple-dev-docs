@@ -21,7 +21,7 @@ The alignments for the columns in a table.
 @property (readonly, nullable) NSArray<NSNumber *> * columnAlignments;
 ```
 
-#### Discussion
+## Discussion
 
 If the intent is not a table, the value of this property is `nil`.
 

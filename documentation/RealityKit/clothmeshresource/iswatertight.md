@@ -17,7 +17,7 @@ Indicates whether the mesh is “watertight”.
 final var isWatertight: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A mesh is watertight if the faces form a fully-closed volume (without gaps). A watertight mesh is required for bodies to be inflatable, and is also the reason why [`volume`](./volume.md) will only return a non-nil value for watertight meshes.
 

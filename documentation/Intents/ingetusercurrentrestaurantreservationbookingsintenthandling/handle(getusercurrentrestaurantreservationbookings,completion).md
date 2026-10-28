@@ -27,7 +27,7 @@ func handle(getUserCurrentRestaurantReservationBookings intent: INGetUserCurrent
 - (void) handleGetUserCurrentRestaurantReservationBookings:(INGetUserCurrentRestaurantReservationBookingsIntent *) intent completion:(void (^)(INGetUserCurrentRestaurantReservationBookingsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should fetch the user’s current reservations, using the information in the `intent` parameter to filter the search results. When done, execute the provided block with a response object that contains the appropriate set of reservations.
 

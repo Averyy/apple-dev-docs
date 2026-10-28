@@ -30,7 +30,7 @@ func calculateAccumulatedFrame() -> CGRect
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 - [Getting Started with Nodes](../getting-started-with-nodes.md)
 
-#### Discussion
+## Discussion
 
 The frame takes into the account the cumulative effect of the [`xScale`](./xscale.md), [`yScale`](./yscale.md), and [`zRotation`](./zrotation.md) properties of each node in the subtree.
 

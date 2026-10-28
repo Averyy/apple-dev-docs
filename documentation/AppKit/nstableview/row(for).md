@@ -19,11 +19,11 @@ func row(for view: NSView) -> Int
 - (NSInteger) rowForView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the row containing to `view`. This method returns `-1` if the view is not in the table view. This method may also return `-1` if the row containing the view is being animated away, such as during the deletion of a row.
 
-#### Discussion
+## Discussion
 
 This method is typically called in the action method for an `NSButton` (or `NSControl`) to find out what row (and column) the action should be performed on.
 

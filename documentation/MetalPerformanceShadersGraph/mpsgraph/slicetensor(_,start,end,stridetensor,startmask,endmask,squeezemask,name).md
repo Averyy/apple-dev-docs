@@ -24,11 +24,11 @@ func sliceTensor(_ tensor: MPSGraphTensor, start startTensor: MPSGraphTensor, en
 - (MPSGraphTensor *) sliceTensor:(MPSGraphTensor *) tensor startTensor:(MPSGraphTensor *) startTensor endTensor:(MPSGraphTensor *) endTensor strideTensor:(MPSGraphTensor *) strideTensor startMask:(uint32_t) startMask endMask:(uint32_t) endMask squeezeMask:(uint32_t) squeezeMask name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Slices a tensor starting from `startTensor`, stopping short before `endTensor` stepping `strideTensor` paces between each value. Semantics based on [TensorFlow Strided Slice Op](https://www.tensorflow.org/api_docs/python/tf/strided_slice).
 

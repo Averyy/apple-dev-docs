@@ -22,7 +22,7 @@ Removes the specified model from the persistent storage during the next save ope
 func delete<T>(_ model: T) where T : PersistentModel
 ```
 
-#### Discussion
+## Discussion
 
 When the context nexts commits its changes, SwiftData removes the model from the persistent storage. If the model is new and in an unsaved state, the context simply discards it.
 

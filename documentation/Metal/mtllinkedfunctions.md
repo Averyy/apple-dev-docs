@@ -24,7 +24,7 @@ class MTLLinkedFunctions
 @interface MTLLinkedFunctions : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you create a Metal function instance using an [`MTLFunctionDescriptor`](./mtlfunctiondescriptor.md), you specify additional functions that Metal needs to link to when it compiles and links the underlying shader code. Most often, you need to do this if your shader takes a visible function table as one or more of its arguments. For Metal to create the [`MTLFunction`](./mtlfunction.md) instance, it needs a complete list of functions that your shader can call so that it can resolve any dependencies and generate the correct code to run on the GPU.
 

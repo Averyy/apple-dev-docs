@@ -15,7 +15,7 @@ The value that describes an UNIX domain socket at a path that you specify.
 case unixSocket(String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The guest operating system needs to have a directory at `path` created in order for translation caching to operate correctly.
 

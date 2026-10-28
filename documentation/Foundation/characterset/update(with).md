@@ -22,7 +22,7 @@ Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
 mutating func update(with character: Unicode.Scalar) -> Unicode.Scalar?
 ```
 
-#### Discussion
+## Discussion
 
 `Unicode.Scalar` values are available on `Swift.String.UnicodeScalarView`.
 

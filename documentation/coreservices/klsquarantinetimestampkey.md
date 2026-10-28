@@ -19,7 +19,7 @@ let kLSQuarantineTimeStampKey: CFString
 const CFStringRef kLSQuarantineTimeStampKey;
 ```
 
-#### Discussion
+## Discussion
 
 When setting quarantine properties, this property is set automatically to the current date and time if this key is not present in the caller’s dictionary.
 

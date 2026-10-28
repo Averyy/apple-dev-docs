@@ -19,7 +19,7 @@ The relevant attributes from your content that you want to search.
 var attributes: [SearchableItemAttribute]?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify only the attributes that are relevant for your content. If you provide a value for this property, the search tool considers only the attributes you specify. If you don’t specify a value for this property, or set the value to `nil`, all attributes are available during searches.
 

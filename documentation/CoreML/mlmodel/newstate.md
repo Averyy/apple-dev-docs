@@ -21,7 +21,7 @@ Creates a new state object.
 - (MLState *) newState;
 ```
 
-#### Discussion
+## Discussion
 
 Core ML framework will allocate the state buffers declared in the model.
 

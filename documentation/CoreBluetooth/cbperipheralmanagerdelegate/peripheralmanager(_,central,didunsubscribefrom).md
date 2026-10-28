@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCe
 - (void) peripheralManager:(CBPeripheralManager *) peripheral central:(CBCentral *) central didUnsubscribeFromCharacteristic:(CBCharacteristic *) characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth calls this method when a remote central device unsubscribes from the value of one of the local peripheral’s characteristics, by disabling notifications or indications on the characteristic’s value. When called, stop sending the subscribed central updates of updates to the characteristic’s value.
 

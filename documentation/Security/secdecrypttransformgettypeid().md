@@ -21,7 +21,7 @@ func SecDecryptTransformGetTypeID() -> CFTypeID
 CFTypeID SecDecryptTransformGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 A value that identifies the opaque type of a [`SecTransform`](./sectransform.md) object meant for decryption.
 

@@ -25,7 +25,7 @@ static let dataWrittenToMemoryStreamKey: Stream.PropertyKey
 extern NSStreamPropertyKey const NSStreamDataWrittenToMemoryStreamKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you have an output-stream object instantiated to collect written data in memory. The value of this property is read-only.
 

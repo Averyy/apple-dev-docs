@@ -19,7 +19,7 @@ func ABSearchElementCreateWithConjunction(_ conjunction: ABSearchConjunction, _ 
 extern ABSearchElementRefABSearchElementCreateWithConjunction(ABSearchConjunction conjunction, CFArrayRef childrenSearchElement);
 ```
 
-#### Return Value
+## Return Value
 
 A new compound searchelement joining the search elements in `children` using `conjunction`.You are responsible for releasing this object.
 

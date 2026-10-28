@@ -23,7 +23,7 @@ var isDisplayingRepresentativeItem: Bool { get }
 @property (nonatomic, assign, readonly, getter=isDisplayingRepresentativeItem) BOOL displayingRepresentativeItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the representative item is being displayed in the shortcuts bar. The value is [`false`](../../Swift/false.md) when the individual bar button items are being displayed in the shortcuts bar.
 

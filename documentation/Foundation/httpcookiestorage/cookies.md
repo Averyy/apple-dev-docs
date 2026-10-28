@@ -25,7 +25,7 @@ var cookies: [HTTPCookie]? { get }
 @property (copy, readonly, nullable) NSArray<NSHTTPCookie *> * cookies;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to sort the cookie storage’s cookies, you should use the [`sortedCookies(using:)`](./sortedcookies%28using%29.md) method instead of sorting the result of this method.
 

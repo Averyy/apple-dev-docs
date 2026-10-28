@@ -16,7 +16,7 @@ Current pixel’s position
 uint2 texture::position()
 ```
 
-#### Discussion
+## Discussion
 
 In the context of a texture stage, returns the current pixel position, in integer coordinates.
 

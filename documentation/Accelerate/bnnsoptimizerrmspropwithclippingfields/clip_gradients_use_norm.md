@@ -27,7 +27,7 @@ var clip_gradients_use_norm: Float
 float clip_gradients_use_norm;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `0` to specify that the function computes the norm.
 

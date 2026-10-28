@@ -9,11 +9,11 @@ List all actions Xcode Cloud performed during a specific build.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists actions Xcode Cloud performed during a specific build. Use the information provided in the response to display detailed action information on a dashboard or to read additional data; for example, test results.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

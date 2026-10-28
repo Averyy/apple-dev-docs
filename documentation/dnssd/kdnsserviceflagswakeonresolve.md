@@ -23,7 +23,7 @@ var kDNSServiceFlagsWakeOnResolve: UInt32 { get }
 kDNSServiceFlagsWakeOnResolve
 ```
 
-#### Discussion
+## Discussion
 
 This flag is meaningful only in DNSServiceResolve. When set, it tries to send a magic packet to wake up the client.
 

@@ -25,7 +25,7 @@ class SCNGeometryElement
 @interface SCNGeometryElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use geometry elements together with [`SCNGeometrySource`](./scngeometrysource.md) objects to define custom [`SCNGeometry`](./scngeometry.md) objects or to inspect the data that composes an existing geometry. You create a custom geometry using a three-step process:
 

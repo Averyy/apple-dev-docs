@@ -24,7 +24,7 @@ func enumerateDirectory(_ directory: FSItem, startingAt cookie: FSDirectoryCooki
 - (void) enumerateDirectory:(FSItem *) directory startingAtCookie:(FSDirectoryCookie) cookie verifier:(FSDirectoryVerifier) verifier providingAttributes:(FSItemGetAttributesRequest *) attributes usingPacker:(FSDirectoryEntryPacker *) packer context:(FSContext *) context replyHandler:(void (^)(FSEnumerateDirectoryResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](../../fsdirectoryentrypacker/packentry%28name,itemtype,itemid,nextcookie,attributes%29.md) method of the `packer` parameter to deliver the enumerated items to the caller. The general flow of an enumeration implementation follows these steps:
 

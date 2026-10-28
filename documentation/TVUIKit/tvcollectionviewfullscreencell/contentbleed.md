@@ -19,7 +19,7 @@ var contentBleed: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets contentBleed;
 ```
 
-#### Discussion
+## Discussion
 
 The portions of content that bleed into the masked portions go out of bounds, and consequently disappear from view.
 

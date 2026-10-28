@@ -22,7 +22,7 @@ Returns the entity rotated by the specified quaternion around the origin.
 func rotated(by quaternion: Self.Quaternion) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The rotated primitive.
 

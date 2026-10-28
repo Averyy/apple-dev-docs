@@ -21,7 +21,7 @@ case large
 MSStickerSizeLarge
 ```
 
-#### Discussion
+## Discussion
 
 Use 206 x 206 point images to create large stickers. Always provide @3x images for these stickers (618 x 618 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
 

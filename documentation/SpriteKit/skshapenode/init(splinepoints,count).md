@@ -29,7 +29,7 @@ convenience init(splinePoints points: UnsafeMutablePointer<CGPoint>, count numPo
 
 - [Creating a Shape Node from an Array of Points](../creating-a-shape-node-from-an-array-of-points.md)
 
-#### Return Value
+## Return Value
 
 A new shape node is created. The node is created with a path that starts at the first point in the array, joining each pair of points with a quadratic curve. The control points are calculated automatically based on previous points in the array.
 

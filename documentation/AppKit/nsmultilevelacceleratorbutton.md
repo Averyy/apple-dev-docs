@@ -17,7 +17,7 @@ A multilevel accelerator button is a variation of a normal accelerator button th
 static const NSButtonType NSMultiLevelAcceleratorButton;
 ```
 
-#### Discussion
+## Discussion
 
 The number of pressure levels for a multilevel accelerator button is configured by adjusting the value of the [`maxAcceleratorLevel`](./nsbutton/maxacceleratorlevel.md) property of [`NSButton`](./nsbutton.md). For other types of buttons, this property value defaults to `1`. For multilevel accelerator buttons, this property value defaults to `2`, and may be set to a value between `1` and `5`.
 

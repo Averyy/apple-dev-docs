@@ -24,7 +24,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if the asset reader’s status isn’t [`AVAssetReader.Status.failed`](./status-swift.enum/failed.md).
 

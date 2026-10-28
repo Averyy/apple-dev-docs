@@ -24,7 +24,7 @@ func depthwiseConvolution2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, d
 - (MPSGraphTensor *) depthwiseConvolution2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphDepthwiseConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

@@ -19,11 +19,11 @@ func GetIndVoice(_ index: Int16, _ voice: UnsafeMutablePointer<VoiceSpec>) -> OS
 OSErr GetIndVoice(SInt16 index, VoiceSpec *voice);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `GetIndVoice` functionreturns, in the voice specification structure pointed to by the `voice` parameter,a specification of the voice whose index is provided in the `index` parameter.Your application should make no assumptions about the order in whichvoices are indexed.
 

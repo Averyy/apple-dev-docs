@@ -18,7 +18,7 @@ Sorts the given mesh instances by sort category and, for transparent instances, 
 static func sortMeshInstances(_ meshInstances: LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)
 ```
 
-#### Discussion
+## Discussion
 
 Call this before `render(using:_:)` to produce a draw order for the callback. Opaque instances sort before transparent ones; within transparent instances, farther instances sort before nearer ones.
 

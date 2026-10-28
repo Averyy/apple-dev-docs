@@ -23,7 +23,7 @@ enum SelfSizingInvalidation
 enum UICollectionViewSelfSizingInvalidation : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants with the [`selfSizingInvalidation`](./selfsizinginvalidation-swift.property.md) property.
 

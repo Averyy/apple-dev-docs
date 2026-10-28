@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt 
 - (BOOL) tableView:(UITableView *) tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the background of the row should be indented, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement this method, the default is [`true`](../../Swift/true.md). This method is unrelated to [`tableView(_:indentationLevelForRowAt:)`](./tableview%28_,indentationlevelforrowat%29.md).
 

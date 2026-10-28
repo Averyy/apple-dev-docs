@@ -24,11 +24,11 @@ class func colorPolynomial() -> any CIFilter & CIColorPolynomial
 + (CIFilter<CIColorPolynomial> *) colorPolynomialFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color polynomial filter to an image. The effect calculates the sum of each pixel’s color component value and the coefficient properties together to produce the output image.
 

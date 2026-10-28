@@ -40,7 +40,7 @@ extern bool ABGroupRemoveMember(ABRecordRef group, ABRecordRef member, CFErrorRe
 extern bool ABGroupRemoveMember(ABGroupRef group, ABPersonRef personToRemove);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessful. If the `person` parameteris not in `group`, this function does nothingand returns `false`.
 

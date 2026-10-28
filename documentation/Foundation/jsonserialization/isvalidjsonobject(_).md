@@ -25,7 +25,7 @@ class func isValidJSONObject(_ obj: Any) -> Bool
 + (BOOL) isValidJSONObject:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `obj` can be converted to JSON data; otherwise, `false`.
 

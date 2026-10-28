@@ -24,7 +24,7 @@ optional func download(_ download: BADownload, didWriteBytes bytesWritten: Int64
 - (void) download:(BADownload *) download didWriteBytes:(int64_t) bytesWritten totalBytesWritten:(int64_t) totalBytesWritten totalBytesExpectedToWrite:(int64_t) totalExpectedBytes;
 ```
 
-#### Discussion
+## Discussion
 
 Because the framework may be processing several asset downloads at once, it may call this method frequently and for different downloads. Cache an asset download’s [`uniqueIdentifier`](../badownload/uniqueidentifier.md) when you first schedule it, and then match the identifier against the same property on `download` so you can track the individual progress of all in-progress downloads.
 

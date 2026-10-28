@@ -8,13 +8,13 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The `PerformanceHints` diagnostic group provides opt-in guidance for identifying language constructs and code patterns that carry non-obvious runtime performance costs. The diagnostics are intended to help developers writing performance-critical code make informed decisions about the abstractions they use and to surface hidden costs that may not be apparent from the source code alone to a non-expert Swift programmer.
 
 This diagnostic group is **off by default**. It can be enabled as warnings with `-Wwarning PerformanceHints`, or escalated to errors with `-Werror PerformanceHints`.
 
-#### Sub-groups
+## Sub-groups
 
 The `PerformanceHints` group contains the following sub-groups, each of which can also be enabled or controlled independently:
 

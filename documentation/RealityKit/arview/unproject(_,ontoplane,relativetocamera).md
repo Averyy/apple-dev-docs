@@ -20,11 +20,11 @@ Unproject a 2D point from the view onto a plane in 3D world coordinates.
 @preconcurrency func unproject(_ point: CGPoint, ontoPlane planeTransform: float4x4, relativeToCamera: Bool) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 3D position in world coordinates or nil if unprojection is not possible.
 
-#### Discussion
+## Discussion
 
 A 2D point in the view’s coordinate space can refer to any point along a line segment in the 3D coordinate space. Unprojecting gets the 3D position of the point along this line segment that intersects the provided plane.
 

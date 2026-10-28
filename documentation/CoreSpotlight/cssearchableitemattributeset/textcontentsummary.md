@@ -27,7 +27,7 @@ var textContentSummary: String? { get }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 For some types of content, Apple Intelligence generates a summary of the text content you provide and places it in this property. For information about how to generate summaries, see [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md).
 

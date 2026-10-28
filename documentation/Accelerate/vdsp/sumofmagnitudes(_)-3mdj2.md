@@ -21,7 +21,7 @@ Returns the single-precision vector sum of magnitudes.
 static func sumOfMagnitudes<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the sum of the magnitudes of the elements of a supplied vector.
 

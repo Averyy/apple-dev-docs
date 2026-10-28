@@ -24,7 +24,7 @@ var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition? { get }
 @property (nonatomic, strong, readonly, nullable) PHASESpatialMixerDefinition * spatialMixerDefinitionForDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this property to the [`init(spatialMixerDefinition:)`](./init%28spatialmixerdefinition%29.md) argument.
 

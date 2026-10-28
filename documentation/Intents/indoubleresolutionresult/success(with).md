@@ -25,11 +25,11 @@ class func success(with resolvedValue: Double) -> Self
 + (instancetype) successWithResolvedValue:(double) resolvedValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDoubleResolutionResult`](../indoubleresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve a parameter successfully to a value in your own internal data structures.
 

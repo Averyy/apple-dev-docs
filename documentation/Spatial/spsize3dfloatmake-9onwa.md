@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatMake(float width, float height, float depth);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a single-precision size structure with the specified dimensions.
 

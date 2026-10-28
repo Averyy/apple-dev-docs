@@ -22,7 +22,7 @@ var headerImageProvider: CLKImageProvider? { get set }
 @property (nonatomic, copy, nullable) CLKImageProvider * headerImageProvider;
 ```
 
-#### Discussion
+## Discussion
 
 A tint color is applied to the header image to differentiate it from the other rows. In multicolor environments, the image provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
 

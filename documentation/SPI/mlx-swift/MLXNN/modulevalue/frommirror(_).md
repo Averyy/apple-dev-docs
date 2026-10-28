@@ -17,7 +17,7 @@ Return `(String, ModuleItem)` tuple or nil if the label cannot be determined.
 static func fromMirror(_ c: Mirror.Child) -> (String, ModuleItem)?
 ```
 
-#### Discussion
+## Discussion
 
 Called from [`items()`](../module/items%28%29.md)
 

@@ -40,11 +40,11 @@ var bounds: NSRect { get set }
 @property (nonatomic) NSRect bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding box for the annotation in page space.
 
-#### Discussion
+## Discussion
 
 Page space is a 72-dpi coordinate system with the origin at the lower-left corner of the current page.
 

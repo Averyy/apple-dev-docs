@@ -22,7 +22,7 @@ var roundsToMinuteInterval: Bool { get set }
 @property (nonatomic) BOOL roundsToMinuteInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), [`date`](./date.md) always rounds to the [`minuteInterval`](./minuteinterval.md) and only produces dates that align with the minute interval. If this property is [`false`](../../Swift/false.md), changes to [`date`](./date.md) ignore the [`minuteInterval`](./minuteinterval.md) property.
 

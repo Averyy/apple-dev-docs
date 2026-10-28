@@ -23,11 +23,11 @@ init(propertiesOf metadataItem: AVMetadataItem, valueLoadingHandler handler: @es
 + (AVMetadataItem *) metadataItemWithPropertiesOfMetadataItem:(AVMetadataItem *) metadataItem valueLoadingHandler:(void (^)(AVMetadataItemValueRequest *valueRequest)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of AVMetadataItem.
 
-#### Discussion
+## Discussion
 
 Creates an instance of AVMutableMetadataItem with a value that you do not wish to load unless required, e.g. a large image value that needn’t be loaded into memory until another module wants to display it.
 

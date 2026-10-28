@@ -21,7 +21,7 @@ The strategy that an encoder uses to encode raw data.
 var dataEncodingStrategy: JSONEncoder.DataEncodingStrategy { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default strategy is the [`JSONEncoder.DataEncodingStrategy.base64`](./dataencodingstrategy-swift.enum/base64.md) strategy.
 

@@ -22,7 +22,7 @@ func setQueue(with itemCollection: MPMediaItemCollection)
 - (void) setQueueWithItemCollection:(MPMediaItemCollection *) itemCollection;
 ```
 
-#### Discussion
+## Discussion
 
 To begin playback after establishing a playback queue, call [`prepareToPlay()`](../mpmediaplayback/preparetoplay%28%29.md).
 

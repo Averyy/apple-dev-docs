@@ -21,7 +21,7 @@ Returns the symbol size for the given data value. Returns `nil` if the symbol si
 func symbolSize<P>(for value: P) -> CGFloat? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The symbol size corresponding to the data value, or `nil` if the data value is incompatible with the chart.
 

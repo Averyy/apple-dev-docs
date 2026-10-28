@@ -32,7 +32,7 @@ func defineProperty(_ property: String!, descriptor: Any!)
 - (void) defineProperty:(JSValueProperty) property descriptor:(id) descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the `Object.defineProperty` method in JavaScript. The `descriptor` parameter has the same format required by that JavaScript method; for convenience when calling from Objective-C or Swift, you can also construct it as a dictionary with the keys listed in [Property Descriptor Keys](../property-descriptor-keys.md).
 

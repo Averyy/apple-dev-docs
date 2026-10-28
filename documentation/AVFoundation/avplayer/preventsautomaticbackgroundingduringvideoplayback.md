@@ -20,7 +20,7 @@ var preventsAutomaticBackgroundingDuringVideoPlayback: Bool { get set }
 @property (nonatomic) BOOL preventsAutomaticBackgroundingDuringVideoPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), which indicates the system doesn’t automatically background an app while it’s actively playing video. A user may still choose to background an app.
 

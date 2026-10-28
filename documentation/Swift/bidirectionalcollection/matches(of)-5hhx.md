@@ -23,7 +23,7 @@ func matches<Output>(of r: some RegexComponent) -> [Regex<Output>.Match]
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection of matches of `regex`.
 

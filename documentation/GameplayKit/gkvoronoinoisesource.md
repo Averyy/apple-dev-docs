@@ -24,7 +24,7 @@ class GKVoronoiNoiseSource
 @interface GKVoronoiNoiseSource : GKNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Voronoi noise can generate textures resembling natural phenomena such as crystalline structures, cracked mud, or star fields.
 

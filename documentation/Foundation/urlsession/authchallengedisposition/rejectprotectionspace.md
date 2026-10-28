@@ -25,7 +25,7 @@ case rejectProtectionSpace
 NSURLSessionAuthChallengeRejectProtectionSpace
 ```
 
-#### Discussion
+## Discussion
 
 The [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](./rejectprotectionspace.md) disposition is only appropriate in fairly unusual situations. For example, a Windows server might use both [`NSURLAuthenticationMethodNegotiate`](../../nsurlauthenticationmethodnegotiate.md) and [`NSURLAuthenticationMethodNTLM`](../../nsurlauthenticationmethodntlm.md). If your app can only handle NTLM, you would want to reject the Negotiate challenge, in order to then receive the queued NTLM challenge.
 

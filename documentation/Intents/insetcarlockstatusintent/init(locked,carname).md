@@ -19,11 +19,11 @@ Initializes an intent to set the lock status of the named car.
 convenience init(locked: Bool?, carName: INSpeakableString?)
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized `INSetCarLockStatusIntent` object.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, Siri creates instances when the user asks it to lock or unlock the car. However, you can use this method during testing to create intent objects to validate your intent-handling code paths.
 

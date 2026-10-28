@@ -23,11 +23,11 @@ func GSSCreateCredentialFromUUID(_ uuid: CFUUID) -> gss_cred_id_t?
 gss_cred_id_tGSSCreateCredentialFromUUID(CFUUIDRef uuid);
 ```
 
-#### Return Value
+## Return Value
 
 A GSS credential for a given `CF``UUID` object if the credential exists, otherwise `NULL`. Free the credential’s memory with [`gss_release_cred(_:_:)`](./gss_release_cred%28_,_%29.md) when you are done with it.
 
-#### Discussion
+## Discussion
 
 Use this function to get the credential corresponding to a `CFUUID` object that you originally obtained using a call to [`GSSCredentialCopyUUID(_:)`](./gsscredentialcopyuuid%28_%29.md).
 

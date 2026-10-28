@@ -17,7 +17,7 @@ Object getPropertyPath(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The data item object contained in the path.
 

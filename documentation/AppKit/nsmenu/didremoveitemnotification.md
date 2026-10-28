@@ -19,7 +19,7 @@ class let didRemoveItemNotification: NSNotification.Name
 extern NSNotificationName NSMenuDidRemoveItemNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the instance of `NSMenu` that just removed the menu item. The `userInfo` dictionary contains the following information.
 

@@ -10,7 +10,7 @@ Share image data between vDSP and vImage to visualize audio that a device microp
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project captures audio from a macOS device’s microphone and uses a combination of routines from vImage and vDSP to render the audio as an *audio spectrogram*. Audio spectrograms visualize audio in 2D using one axis to represent time and the other axis to represent frequency. Color represents the amplitude of the time-frequency pair.
 
@@ -32,7 +32,7 @@ A vImage pixel buffer, `planarImageBuffer`, shares data with `frequencyDomainVal
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results it generates from different sounds.
 
-##### Define the spectrogram size
+### Define the spectrogram size
 
 The sample defines two constants that specify the size of the spectrogram.
 
@@ -52,7 +52,7 @@ static let bufferCount = 768
 static let hopCount = 512
 ```
 
-##### Process the audio data
+### Process the audio data
 
 The `processData(values:)` function processes the first `sampleCount` samples from  `rawAudioData` by performing the DCT and appending the frequency-domain representation data to the array that creates the vImage buffer and, ultimately, the audio spectrogram image.
 
@@ -99,7 +99,7 @@ forwardDCT.transform(timeDomainBuffer,
                      result: &frequencyDomainBuffer)
 ```
 
-##### Define the pseudocolor multidimensional lookup tables
+### Define the pseudocolor multidimensional lookup tables
 
 The following code creates a [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) that the sample uses to create the pseudocolor rendering. The function returns dark blue for low values, graduates through red, and returns full-brightness green for `1.0`:
 
@@ -167,7 +167,7 @@ The following image shows the color that the function returns with inputs from `
 
 ![Image of a horizontal gradient that transitions from dark blue, through red, to green.](https://developer.apple.com/tutorials/images/com.apple.accelerate/brgColormap.png)
 
-##### Prepare the vImage pixel buffers to display the audio spectrogram
+### Prepare the vImage pixel buffers to display the audio spectrogram
 
 To display the audio spectrogram, the app creates a temporary planar [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) that shares memory with the frequency-domain values.
 
@@ -197,7 +197,7 @@ func makeAudioSpectrogramImage() -> CGImage {
 }
 ```
 
-##### Compute the mel spectrum using linear algebra
+### Compute the mel spectrum using linear algebra
 
 In addition to the linear audio spectrogram, the sample app provides a mode to render audio as a mel spectrogram. The `computeMelSpectrogram(values:)` function rescales the frequency-domain buffer from a linear scale to the mel scale.
 
@@ -218,7 +218,7 @@ The following image shows the linear audio spectrogram and the mel spectrogram o
 
 In this case, the mel spectrogram consists of 40 filters, so the spectrogram has a lower vertical resolution than the linear spectrogram.
 
-##### Define the mel frequencies
+### Define the mel frequencies
 
 The sample creates an array, `melFilterBankFrequencies`, that contains the indices of `frequencyDomainBuffer` that represent the mel scale frequencies. For example, if the Nyquist frequency is 22,050 Hz and `frequencyDomainBuffer` contains 1024 elements, a value of 512 in `melFilterBankFrequencies` represents 11,025 Hz.
 
@@ -249,7 +249,7 @@ The following line chart shows 16 generated mel frequencies as squares and the c
 
 ![A line chart with a vertical scale measured in hertz and a range of zero to 20,000. The chart contains two lines. A straight line represents 16 mel frequencies, and a curved line below the mel line represents the corresponding frequency in hertz.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-mel-hertz_2x.png)
 
-##### Create the filter bank
+### Create the filter bank
 
 The sample creates the filter bank matrix with `filterBankCount` rows and `sampleCount` columns. Each row contains a triangular window that starts at the previous frequency, peaks at the current frequency, and ends at the next frequency. For example, the following graphic illustrates the values for a filter bank that contains 16 values:
 
@@ -290,7 +290,7 @@ for i in 0 ..< melFilterBankFrequencies.count {
 }
 ```
 
-##### Use a matrix multiply to compute the mel spectrogram
+### Use a matrix multiply to compute the mel spectrogram
 
 The sample performs a matrix multiply of each frame of frequency-domain data with the filter bank to produce a frame of mel-scaled values.
 

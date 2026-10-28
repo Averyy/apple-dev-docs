@@ -19,7 +19,7 @@ The type you use to store the output from a custom stage.
 struct SearchPipelineData
 ```
 
-#### Overview
+## Overview
 
 A custom stage receives data as input and generate a `SearchPipelineData` structure as output. When generating output for a stage in your `execute` methods, build the output data and wrap it with this structure before returning it. This type manages the handoff of your output data to the next stage in the pipeline or to the model.
 

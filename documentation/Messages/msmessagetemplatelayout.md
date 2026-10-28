@@ -21,7 +21,7 @@ class MSMessageTemplateLayout
 @interface MSMessageTemplateLayout : MSMessageLayout
 ```
 
-#### Overview
+## Overview
 
 The [`MSMessageTemplateLayout`](./msmessagetemplatelayout.md) describes how an [`MSMessage`](./msmessage.md) object is presented in the transcript. The message template includes the Message extension’s icon, an image, video, or audio file, and a number of text elements (title, subtitle, caption, subcaption, trailing caption, and trailing subcaption). These elements are laid out as shown in [Figure 1](./msmessagetemplatelayout.md#1965603).
 

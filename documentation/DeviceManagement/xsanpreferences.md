@@ -15,13 +15,13 @@ The payload that configures the Xsan preferences that define the volumes that au
 object XsanPreferences
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.xsan.preferences` as the payload type.
 
 For more information, see [https://support.apple.com/en-us/HT205333](https://support.apple.com/en-us/HT205333).
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ For more information, see [https://support.apple.com/en-us/HT205333](https://sup
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Example profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

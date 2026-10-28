@@ -18,7 +18,7 @@ var FFERR_INVALIDPARAM: HRESULT { get }
 #define FFERR_INVALIDPARAM
 ```
 
-#### Discussion
+## Discussion
 
 An invalid parameter was passed to the returning function, or the object was not in a state that admitted the function to be called.
 

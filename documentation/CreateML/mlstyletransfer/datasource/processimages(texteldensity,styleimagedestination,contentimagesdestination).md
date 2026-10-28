@@ -19,7 +19,7 @@ Converts the content images to square images and saves them to a destination dir
 func processImages(textelDensity: Int, styleImageDestination: URL? = nil, contentImagesDestination: URL? = nil) throws -> (processedStyleImage: URL, processedContentImages: URL)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of two URLs:
 

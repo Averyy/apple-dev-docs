@@ -18,7 +18,7 @@ The underlying Metal render command encoder for this render pass.
 var encoder: any MTLRenderCommandEncoder { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use this encoder to set additional render state or issue custom draw calls between calls to `render(meshInstancesArrayIndex:meshInstanceIndex:)`.
 

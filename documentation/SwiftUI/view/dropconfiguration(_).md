@@ -20,11 +20,11 @@ nonisolated
 func dropConfiguration(_ configuration: @escaping (DropSession) -> DropConfiguration) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that configures a drop session in a way, described by the return value of the `configuration` parameter.
 
-#### Discussion
+## Discussion
 
 Below is an example of a view that accepts drop of `Image` type. The view prefers drop operation `move` in a case when the source supports it (the source will remove the images from its storage after the drop operation). If the source does not support moving images, the destination will make copies.
 

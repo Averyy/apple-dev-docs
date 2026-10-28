@@ -24,7 +24,7 @@ let HMCharacteristicTypeLockMechanismLastKnownAction: String
 extern NSString * const HMCharacteristicTypeLockMechanismLastKnownAction;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueLockMechanismLastKnownAction`](./hmcharacteristicvaluelockmechanismlastknownaction.md) enumeration.
 

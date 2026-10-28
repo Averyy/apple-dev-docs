@@ -5,7 +5,7 @@
 
 Use Core Location features to manage energy use, receive updates, and minimize location update frequency.
 
-#### Overview
+## Overview
 
 Discovering a person’s location — particularly to a high [`desiredAccuracy`](../CoreLocation/cllocationmanager/desiredaccuracy.md) — requires combining information from multiple device subsystems that each consume power while they’re active. Minimize the frequency with which your app requests location updates, and don’t leave location updates running when your app doesn’t need them.
 

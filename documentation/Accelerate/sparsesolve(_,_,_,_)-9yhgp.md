@@ -25,11 +25,11 @@ func SparseSolve(_ method: SparseIterativeMethod, _ ApplyOperator: @escaping (Bo
 static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, void (^ApplyOperator)(bool accumulate, enum CBLAS_TRANSPOSE trans, DenseVector_Float x, DenseVector_Float y), DenseVector_Float b, DenseVector_Float x);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeStatus_t`](./sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. In cases where the matrix *A* isn’t explicitly available or you need control over the multiplication, this function allows you to provide an apply block.
 

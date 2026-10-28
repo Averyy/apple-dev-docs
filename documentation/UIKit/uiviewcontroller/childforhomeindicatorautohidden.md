@@ -26,11 +26,11 @@ var childForHomeIndicatorAutoHidden: UIViewController? { get }
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Return Value
+## Return Value
 
 The child view controller to consult. The default implementation of this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 When implementing a container view controller, override this method if you want one your child view controllers to determine whether to display the visual indicator. If you do, the system calls the [`prefersHomeIndicatorAutoHidden`](./prefershomeindicatorautohidden.md) method of the returned view controller. If the method returns `nil`, the system calls the [`prefersHomeIndicatorAutoHidden`](./prefershomeindicatorautohidden.md) method of the current view controller.
 

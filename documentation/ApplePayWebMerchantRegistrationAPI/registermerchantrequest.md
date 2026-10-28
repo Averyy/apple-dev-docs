@@ -15,7 +15,7 @@ The request body you use to register merchants.
 object RegisterMerchantRequest
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the structure of a JSON object with information on how to register merchant requests.
 

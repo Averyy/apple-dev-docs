@@ -20,7 +20,7 @@ class ColorSyncCMM
 typedef struct ColorSyncCMM * ColorSyncCMMRef;
 ```
 
-#### Overview
+## Overview
 
 This type is a lightweight wrapper around a Core Foundation bundle.
 

@@ -19,7 +19,7 @@ The URL to open when the alarm triggers.
 
 - [Setting an alarm](../setting-an-alarm.md)
 
-#### Discussion
+## Discussion
 
 Assigning this property a value will set the [`emailAddress`](./emailaddress.md) and [`soundName`](./soundname.md) properties to `nil`.
 

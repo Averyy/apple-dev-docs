@@ -21,7 +21,7 @@ Creates a new buffer with the contents of a Core Graphics image.
 init(cgImage: CGImage, flags options: vImage.Options = .noFlags) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function initializes a vImage buffer using the format of the Core Graphics image.
 

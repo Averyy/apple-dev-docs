@@ -27,7 +27,7 @@ var tlsMaximumSupportedProtocol: SSLProtocol { get set }
 @property SSLProtocol TLSMaximumSupportedProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the maximum supported TLS protocol version for tasks within sessions based on this configuration.
 

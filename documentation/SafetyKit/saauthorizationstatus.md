@@ -23,7 +23,7 @@ enum SAAuthorizationStatus
 enum SAAuthorizationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 To verify that your app receives Crash Detection events, call [`requestAuthorization(completionHandler:)`](./sacrashdetectionmanager/requestauthorization%28completionhandler%29.md) and inspect the authorization state.
 

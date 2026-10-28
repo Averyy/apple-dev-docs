@@ -18,7 +18,7 @@ Loads the hotspot manager configuration from the Network Extension preferences.
 final func loadFromPreferences() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If you haven’t previously saved a configuration with [`saveToPreferences()`](./savetopreferences%28%29.md), this call loads a default configuration.
 

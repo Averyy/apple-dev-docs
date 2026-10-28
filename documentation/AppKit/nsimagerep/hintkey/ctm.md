@@ -19,7 +19,7 @@ static let ctm: NSImageRep.HintKey
 extern NSImageHintKey const NSImageHintCTM;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSAffineTransform`](../../../Foundation/nsaffinetransform.md).
 

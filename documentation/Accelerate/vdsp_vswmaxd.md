@@ -21,7 +21,7 @@ Finds the maximum value in a sliding window at each possible position in a doubl
 extern void vDSP_vswmaxD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __WindowLength);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to populate an output vector with the consecutive maximum values in a sliding window. The number of elements in the input vector must be one subtracted from the sum of the window length and the number of window positions.
 

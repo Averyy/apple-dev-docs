@@ -25,7 +25,7 @@ var shouldSendMutableContent: Bool { get set }
 @property (assign) BOOL shouldSendMutableContent;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../../Swift/true.md), the server includes the `mutable-content` flag with a value of `1` in the push notification’s payload. When the value is `1`, the system passes the notification to your app extension for modification before delivery.
 

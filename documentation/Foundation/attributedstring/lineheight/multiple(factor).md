@@ -21,7 +21,7 @@ Constant line height based on a multiple of the point size.
 static func multiple(factor: CGFloat) -> AttributedString.LineHeight
 ```
 
-#### Discussion
+## Discussion
 
 Definines the line height based on the largest point size multiplied by `factor`, regardless of the effective ascent and descent of the fonts in use.
 

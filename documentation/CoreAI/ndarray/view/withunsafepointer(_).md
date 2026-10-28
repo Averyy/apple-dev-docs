@@ -21,11 +21,11 @@ func withUnsafePointer<R, E>(_ body: (UnsafePointer<Element>, Span<Int>, Span<In
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 - body: The closure to be invoked with a pointer to the first element, as well as shape and strides of the view.
 

@@ -21,7 +21,7 @@ The localized string representation of the product price, suitable for display.
 let displayPrice: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to display the price, formatted for the locale. The storefront that the user’s device is connected to determines the locale. For more information, see [`Storefront`](../storefront.md).
 

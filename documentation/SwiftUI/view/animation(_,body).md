@@ -22,7 +22,7 @@ nonisolated
 func animation<V>(_ animation: Animation?, @ContentBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Any modifiers applied to the content of `body` will be applied to this view, and the `animation` will only be used on the modifiers defined in the `body`.
 

@@ -23,11 +23,11 @@ func truePositiveCount(of label: Label) -> Int
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The true positive count.
 
-#### Discussion
+## Discussion
 
 If the label does not have a confidence threshold, the true positive count is number of elements in the ground truth labels collection that contains the label. If the label has a confidence threshold NaN, the true positive count is 0. If the label is not in the known set of labels, the true positive count is 0.
 

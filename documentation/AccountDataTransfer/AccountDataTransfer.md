@@ -9,21 +9,21 @@ Download App Store information, app install, and push notification activity on b
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 Use the Account Data Transfer web API to request and download information about the people who use your app. The data available relates to someone’s use of Apple’s App Store, including information such as previous transactions and downloads. It also contains information related to app install and push notification activity.
 
-#### Understand scopes
+## Understand scopes
 
 A scope identifies a subset of data that your apps and website can access from a single Apple Account, with approval from the individual whose data you request. Only select the applicable scopes for your apps and website.
 
-##### User information scope
+### User information scope
 
 The developer portal selects the `data-transfer-user-profile` scope automatically when you request access to another scope.
 
 - **`data-transfer-user-profile`**: A read-only scope that you use to request one or more scopes such as App Store information, app install or push notification activity about a user.
 
-##### App Store information scopes
+### App Store information scopes
 
 - **`appstore-info-account-data-for-EU-users`**: A read-only scope you use to access App Store account information about users in the EU.
 - **`appstore-info-account-data-for-JP-users`**: A read-only scope you use to access App Store account information about users in Japan.
@@ -31,13 +31,13 @@ The developer portal selects the `data-transfer-user-profile` scope automaticall
 
 > **Note**: If you’ve previously requested access to App Store information using the `appstore-user-profile` scope along with older scope names, the system accepts these scopes and automatically approves them for both EU and UK scopes. You don’t need to make a new token request.
 
-##### App install and push notification activity scopes
+### App install and push notification activity scopes
 
 - **`app-install-activity-account-data-for-EU-users`**: A read-only scope you use to access app install and push notification activity about users in the EU.
 - **`app-install-activity-account-data-for-JP-users`**: A read-only scope you use to access app install and push notification activity about users in Japan.
 - **`app-install-activity-account-data-for-UK-users`**: A read-only scope you use to access app install and push notification activity about users in the UK.
 
-#### Request permission for the specific scopes
+## Request permission for the specific scopes
 
 To get permission for your App ID or Services ID to request App Store information and app install and push notification scopes for users in the EU, the UK, or Japan, follow the instructions at [Request access to the Account Data Transfer API](https://developer.apple.com/contact/request/account-data-transfer-api/).
 
@@ -49,7 +49,7 @@ To get permission for your App ID or Services ID to request App Store informatio
 >
 > [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-##### Understand the difference between scope types
+### Understand the difference between scope types
 
 When making requests, it’s important to understand the scopes you can combine in a single request, and the scopes you need to request separately, as well as which are one-time requests and which can be either one-time or recurring requests. The following table describes the relationships between the available scopes:.
 
@@ -62,12 +62,12 @@ When making requests, it’s important to understand the scopes you can combine 
 | `appstore-info-account-data-for-JP-users` | `app-install-activity-account-data-for-JP-users` | One-time and recurring |
 | `app-install-activity-account-data-for-JP-users` | `appstore-info-account-data-for-JP-users` | One-time and recurring |
 
-#### Set required HTTP headers for the requested scopes
+## Set required HTTP headers for the requested scopes
 
 - **`X-Apple-Transaction-Id`**: Set the value to a UUID that uniquely identifies the request. If you need to contact Apple to get support, quote the UUID of the request for which you need help.
 - **`Authorization`**: Set the value to `Bearer <ACCESS_TOKEN>` to assert that your app is authorized to fetch data with the `data-transfer-user-profile` scope, one or more of the relevant App Store information, app install and push notification, or registration and activation scopes.
 
-##### Set the request frequency
+### Set the request frequency
 
 When making an HTTP `POST` request to the [`Submit request`](./submit-request.md) endpoint, requesting the App Store or app install activity scope, you can request a one time or recurring request, depending on the specified scopes:
 
@@ -78,7 +78,7 @@ To make a one-time request, set the `mode` key to `ONE_TIME`. To make recurring 
 
 > **Note**: If you already have a recurring request pending and make another recurring request, the system returns an error, along with the ID of the existing request.
 
-##### Save the server request ID and check delay value
+### Save the server request ID and check delay value
 
 The Apple server returns a request ID, which you use when you get the request status, request download URLs, or cancel the request. For recurring requests, the Apple server returns a request ID, along with the parent ID that identifies the series of recurring requests.
 
@@ -88,13 +88,13 @@ If you submit a `DAILY_30` recurring request and don’t resubmit the recurring 
 
 If you submit a `WEEKLY_180` recurring request and don’t resubmit the recurring instance each subsequent week, the recurring request expires 190 days after submission of the initial request.
 
-#### Find the request status
+## Find the request status
 
 The data corresponding to the request you submitted isn’t available immediately. After the status-check delay expires, make a `GET` request to [`Get one-time request status`](./get-one-time-request-status.md) or [`Get recurring request status`](./get-recurring-request-status.md). Use the endpoint that corresponds to the scope of the requested report and include the request identifier in the path.
 
 If the job status is `completed` or `completed_with_error`, the data associated with the request is ready to download.
 
-#### Transfer data
+## Transfer data
 
 Get the download URLs for a completed request by making a `GET` request to [`Get one-time request download URLs`](./get-one-time-request-download-urls.md) or [`Get recurring request download URLs`](./get-recurring-request-download-urls.md), including the request identifier in the path.
 
@@ -104,7 +104,7 @@ Download URLs are available for 3 days after the download request completes. The
 
 For information on the content and terms used in the files you download, see [Data and Privacy](https://privacy.apple.com/file-guides/transfer/accountdata).
 
-#### Resubmit recurring requests
+## Resubmit recurring requests
 
 For app install or push notification requests, add the next instance of a recurring request to the queue by making a `POST` request to the [`Resubmit request`](./resubmit-request.md) endpoint. Include the parent request identifier and the request identifier of the most recent instance in your request.
 

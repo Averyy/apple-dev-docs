@@ -23,7 +23,7 @@ class INGetCarLockStatusIntentResponse
 @interface INGetCarLockStatusIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an `INGetCarLockStatusIntentResponse` object to specify the result of a request for a car’s current lock status. You create instances of this class when confirming or handling a get lock status intent. Use this object to confirm that the request is valid and communicate whether the app retrieved the lock status, or to report any errors that occur.
 

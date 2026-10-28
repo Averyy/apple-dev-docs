@@ -5,11 +5,11 @@
 
 Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
 
-#### Overview
+## Overview
 
 This document helps you design audio devices that connect to Mac, iPad, and iPhone over USB. Such devices must conform to the *Universal Serial Bus Class Definition for Audio Devices* published by USB Implementers Forum, Inc., also known as the USB-IF ([usb.org](https://www.usb.org)).
 
-#### Choosing a version of the USB Audio Device Class specification
+## Choosing a version of the USB Audio Device Class specification
 
 There are four versions of the USB Audio Device Class (ADC) specification:
 
@@ -18,7 +18,7 @@ There are four versions of the USB Audio Device Class (ADC) specification:
 - Release 3.0 was published on September 22, 2016 and has been replaced by Release 4.0.
 - [Release 4.0](https://usb.org/document-library/usb-audio-devices-release-40-and-adopters-agreement) was first published in April 2023. The most recent version has ECN and errata through April 2, 2025.
 
-##### Audio Device Class 1 (ADC1)
+### Audio Device Class 1 (ADC1)
 
 ADC1 introduced the concepts you need to design a compliant audio device. It includes all of the building blocks for describing data flow within your device. However, there are some limitations that you should consider before implementing a new device using ADC1:
 
@@ -39,7 +39,7 @@ ADC1 introduced the concepts you need to design a compliant audio device. It inc
 
 A Full Speed bus can transfer a maximum of 1500 bytes (12000 bits) per millisecond including bus overhead, so a 96 kHz 2 in/2 out device is not possible with ADC1.
 
-##### Audio Device Class 2 (ADC2)
+### Audio Device Class 2 (ADC2)
 
 ADC2 inherits all components from ADC1 and adds the Clock Source and Clock Selector descriptors to address shortcomings describing the clocking model in ADC1. In ADC2, device descriptors can specify which clock is attached to which stream. Other characteristics of the clock can be specified, such as whether it is internal or external to the device, whether it is synchronized to the USB Start Of Frame (SOF) clock, or if the clock is valid.
 
@@ -54,7 +54,7 @@ The following table illustrates how it is possible to achieve significantly high
 
 On a High Speed bus, a 192 kHz, 32 channel device using a bit width of 32 bits (4 bytes) needs to be implemented as a Synchronous device and must transfer exactly the maximum number of bytes every service interval. This device is allowed to transfer that amount of data in each direction without saturating the High Speed bus.
 
-##### Audio Device Class 3 (ADC3)
+### Audio Device Class 3 (ADC3)
 
 ADC3 adds several improvements for Audio Device Class devices, notably Cluster and Connector descriptors:
 
@@ -67,7 +67,7 @@ ADC3 introduced new Audio Function Category codes (compare ADC2, **Table A.7** w
 
 ADC3 has a backwards compatibility protocol that requires the first Configuration Descriptor to support an ADC1 or ADC2 Audio Function. The ADC3 Audio Function must be supported by a different USB configuration. The Apple USB audio driver supports ADC3 configurations. However, ADC3 has not been widely adopted by other operating systems and it has been superseded by Audio Device Class 4.
 
-##### Audio Device Class 4 (ADC4)
+### Audio Device Class 4 (ADC4)
 
 Audio Device Class 4, introduced in 2023, resolves the channel count and string limitations of previous versions of the specification:
 
@@ -79,7 +79,7 @@ In ADC4, audio building blocks can be grouped and the state of all of the blocks
 
 > **Note**: The Apple USB audio driver does not currently support Audio Device Class 4 devices.
 
-#### Channel counts with ADC1-3
+## Channel counts with ADC1-3
 
 Versions 1-3 of the Audio Device Class Specification have channel count limitations that you should be aware of, in addition to the bandwidth limitations of ADC1:
 
@@ -87,7 +87,7 @@ Versions 1-3 of the Audio Device Class Specification have channel count limitati
 - If a cluster is transported through a Feature Unit, only a maximum of 61 channels + “cluster channel 0” can be controlled by the Feature Unit.
 - On a standard USB device there are a maximum of 255 total strings available to the entire device. A device cannot provide names for 255 channels in addition to common strings like device name, manufacturer name, and serial number.
 
-#### Endpoint Synchronization types
+## Endpoint Synchronization types
 
 The *Universal Serial Bus Specification, Revision 2.0* and the *Universal Serial Bus 3.n Specifications* specify that USB Isochronous endpoints have one of four Synchronization Types:
 
@@ -96,7 +96,7 @@ The *Universal Serial Bus Specification, Revision 2.0* and the *Universal Serial
 - **Synchronous**: Indicates that the device will consume or produce audio data at a rate that is synchronous with the USB SOF clock. See [Synchronous data endpoints](./tn3190-usb-audio-device-design-considerations.md#Synchronous-data-endpoints) below for more details.
 - **Asynchronous**: Indicates that the audio data is either being consumed or produced by the device at a rate which is not synchronous with the USB Start Of Frame (SOF) clock. See [Asynchronous data endpoints](./tn3190-usb-audio-device-design-considerations.md#Asynchronous-data-endpoints) below for more details.
 
-##### Adaptive data endpoints
+### Adaptive data endpoints
 
 Your device can use an Adaptive data endpoint to adapt to the data rate the host sends or receives.
 
@@ -106,7 +106,7 @@ Per the USB Core Specification 5.12.4.1, a device that uses an Adaptive IN strea
 
 ADC2 introduced Clock Source entities to address some of the shortcomings with Adaptive Data Endpoints. The Audio Device Class 4 specification, **Section 3.11.4.2** specifically states that this type of endpoint is not recommended for implementation.
 
-##### Synchronous data endpoints
+### Synchronous data endpoints
 
 If your device specifies a Synchronous data endpoint, the audio data transferred on that endpoint must be synchronous with the USB SOF clock. Your device must use the USB SOF to discipline and lock the audio clock to the SOF, or implement an Asynchronous Sample Rate Converter (ASRC) to adjust the rate of audio data to match the SOF rate.
 
@@ -114,7 +114,7 @@ For example, if a device is using a sample rate of 48 kHz, it should transfer ex
 
 The *USB Audio* specification does allow for a Virtual Frame Packet (VFP) of the nominal rate ±1 but a carefully designed device should be able to transfer exactly the nominal sample rate if that sample rate is divisible by the transfer interval timing. See section **2.3.1.1 USB Packets** in *Universal Serial Bus Device Class Definition for Audio Data Formats, Release 2.0*.
 
-###### Asynchronous data endpoints
+#### Asynchronous data endpoints
 
 If your device specifies an Asynchronous data endpoint, then the data flow will be asynchronous to the USB SOF clock.
 
@@ -125,7 +125,7 @@ For audio output streams (from host to device), your device must provide a way f
 - **Explicit Feedback**: Feedback is provided on another Isochronous endpoint. See [Explicit feedback](./tn3190-usb-audio-device-design-considerations.md#Explicit-feedback) below for more details.
 - **Implicit Feedback**: Feedback is provided on an Isochronous IN data endpoint. See [Implicit feedback](./tn3190-usb-audio-device-design-considerations.md#Implicit-feedback) below for more details.
 
-###### Explicit feedback
+#### Explicit feedback
 
 Explicit Feedback uses an Isochronous IN Endpoint with a Synchronization Type of No Synchronization. This is an IN endpoint which is part of the same Interface as the data OUT endpoint. The maxPacketSize of the explicit feedback endpoint depends on the speed of the bus and is not related to the version of the ADC specification.
 
@@ -138,19 +138,19 @@ Feedback reporting for a SuperSpeed endpoint must comply with section **4.4.8.4.
 
 - **SuperSpeed and above**: The feedback endpoint payload must be 8 bytes.
 
-##### Implicit feedback
+### Implicit feedback
 
 Your device can support implicit feedback if it has input and output streams and both are on the same clock. If the data endpoint on the input stream has a Usage Type of Implicit feedback Data endpoint, the host uses the data rate on the audio input stream to provide the data rate on the audio output stream. It is important that your device produces input data at a consistent rate as quickly as possible after the stream starts. The Apple USB Audio driver does not begin transmitting data on the output stream until it has received consistent clock data from the input stream.
 
-#### Audio Device Class entity support
+## Audio Device Class entity support
 
 The following section outlines Audio Device Class entities, the version of the specification that describes them, and the Apple operating system support.
 
-##### Input and Output Terminals
+### Input and Output Terminals
 
 Terminals are the interface between the physical world and the logical audio function. Terminals are fully supported by macOS, iOS and iPadOS.
 
-##### Terminal Controls
+### Terminal Controls
 
 | Control name | ADC version | Apple OS support | Description |
 | --- | --- | --- | --- |
@@ -162,21 +162,21 @@ Terminals are the interface between the physical world and the logical audio fun
 | Overflow | ADC2-4 | None |  |
 | Phantom Power | ADC2 with ECN through April 2, 2025 | macOS | See [Input Terminal Phantom Power Control](./tn3190-usb-audio-device-design-considerations.md#Input-Terminal-Phantom-Power-Control) below for more details. |
 
-##### Terminal Connector Control
+### Terminal Connector Control
 
 If your audio device has a headset connector with jack detection, use this control to indicate to the OS that input or output channels are in use by the customer. This is used by the operating system to automatically route audio to or from the device.
 
 > **Note**: If you do not provide this control, iOS or iPadOS may automatically route audio to a connector with no physical device attached, resulting in a poor customer experience. For example, a Thunderbolt dock with a built in USB Audio device and a headset jack would get audio routed to it using "last-in-wins" logic, unless the Connector Control is implemented to inform the OS that there is nothing connected. With macOS, if the Connector Control is implemented and there is nothing connected to the physical interface, the audio device will not be able to be selected as an input or output device until the physical device is connected. If a selected device has the physical device removed, the OS will automatically change the audio route if possible.
 
-##### Input Terminal Phantom Power Control
+### Input Terminal Phantom Power Control
 
 Input Terminals only. Your device can expose phantom power control to macOS. Customers can enable or disable this control through apps like Audio MIDI Setup or Logic Pro for Mac. This is implemented using the Core Audio control `kAudioPhantomPowerControlClassID`.
 
-##### Feature Units
+### Feature Units
 
 Feature Units describe signal processing capabilities on channels in an audio cluster.
 
-##### Feature Unit Controls
+### Feature Unit Controls
 
 | Control name | ADC version | Apple OS support | Description |
 | --- | --- | --- | --- |
@@ -197,29 +197,29 @@ Feature Units describe signal processing capabilities on channels in an audio cl
 | Overflow | ADC1-4 | None |  |
 | High‑Pass Filter | ADC2 with ECN through April 2, 2025 | macOS | See [High-Pass Filter Control](./tn3190-usb-audio-device-design-considerations.md#High-Pass-Filter-Control) below for more details. |
 
-##### Mute Control
+### Mute Control
 
 The user interface on macOS, iOS, and iPadOS exposes the Mute control on the Feature Unit closest to the physical output of the audio function. If a Feature Unit is immediately upstream of a Mixer Unit, between a physical input (for example, a microphone) and a physical output (for example, speakers), it is used to create a control to enable mixing of audio from the input with other audio flowing to the output. This is published to customers as a **Thru** control in Audio MIDI Setup on macOS, or as a programmable side tone control with no user interface on iOS.
 
-##### Volume Control
+### Volume Control
 
 The user interface on macOS, iOS, and iPadOS exposes the Volume control on the Feature Unit closest to the physical output of the audio function. If a Feature Unit is immediately upstream of a Mixer Unit, between a physical input (for example, a microphone) and a physical output (for example, speakers), it controls the gain on the physical input signal going into the Mixer Unit. macOS, iOS, or iPadOS does not provide a user interface for sidetone gain.
 
-##### Phase Inverter Control
+### Phase Inverter Control
 
 Supported on macOS for ADC2 and ADC3 devices only. Supported on macOS Tahoe 26 and later, and can be accessed by applications using the Core Audio control  `kAudioPhaseInvertControlClassID`.
 
-##### High-Pass Filter Control
+### High-Pass Filter Control
 
 Supported on macOS for ADC2 devices only. Support is new with macOS Tahoe 26 and can be implemented by applications using the Core Audio control `kAudioHighPassFilterControlClassID`.
 
-##### Mixer Unit
+### Mixer Unit
 
 Mixer Units mix multiple input cluster channels into a single output cluster. Given *N* input channels and *M* output channels, a Mixer Unit provides *N × M* controls to describe how each input channel is mixed to an output channel.
 
 Apple operating systems will not manipulate Mixer Units in your device and they will remain in their default state.
 
-##### Mixer Unit Controls
+### Mixer Unit Controls
 
 | Control name | ADC version | Apple OS support |
 | --- | --- | --- |
@@ -228,120 +228,120 @@ Apple operating systems will not manipulate Mixer Units in your device and they 
 | Underflow | ADC1-4 | None |
 | Overflow | ADC1-4 | None |
 
-##### Selector Unit
+### Selector Unit
 
 Selector Units have multiple input clusters and a single output cluster. The Selector Unit selects one of the input clusters to be sent on the output cluster. On macOS, you can make a selection in the Audio MIDI Setup app. If you use this functionality in your USB audio device, provide a name for each of the clusters entering the Selector Unit by naming the entity, usually the Input Terminal, from which the cluster originates.
 
-##### Selector Unit Controls
+### Selector Unit Controls
 
 | Control name | ADC version | Apple OS support | Description |
 | --- | --- | --- | --- |
 | Selector | ADC1-4 | macOS | See [Selector Unit Selector Control](./tn3190-usb-audio-device-design-considerations.md#Selector-Unit-Selector-Control) below for more details. |
 
-##### Selector Unit Selector Control
+### Selector Unit Selector Control
 
 The Selector Control determines which of the input clusters is presented on the output cluster.
 
 > **Note**: This control is explicit in ADC2 and ADC3, but implicit in ADC1 and ADC4. The Selector Unit does not provide a function if the control is not present.
 
-##### Processing Unit
+### Processing Unit
 
 Apple operating systems do not support Processing Units or controls on them. Processing Units in an active data path will remain in their default state, which should be disabled. There are multiple Processing Units defined in the ADC specifications (Up/Down Mix, Dolby Prologic, etc.).
 
-##### Extension Unit
+### Extension Unit
 
 Apple operating systems do not support Extension Units. Extension Units in an active data path will remain in their default state, which should be disabled. Extension Units cannot be enabled through the Apple USB Audio driver.
 
-##### Effect Unit
+### Effect Unit
 
 Apple operating systems do not support Effect Units or controls on them. Effect Units in an active data path will remain in their default state, which should be disabled. There are multiple Effect Units defined in the ADC specifications (Parametric Equalizer, Reverberation, etc.).
 
-##### Clock Source
+### Clock Source
 
 Clock Sources were introduced in the ADC2 specification and describe the behavior of a clock. They are fully supported by Apple operating systems.
 
-##### Clock Source controls
+### Clock Source controls
 
 | Control name | ADC version | Apple OS support | Description |
 | --- | --- | --- | --- |
 | Frequency | ADC2-4 | macOS, iOS, iPadOS | See [Clock Source Frequency Control](./tn3190-usb-audio-device-design-considerations.md#Clock-Source-Frequency-Control) below for more details. |
 | Validity | ADC2-4 | macOS, iOS, iPadOS | See [Clock Source Validity Control](./tn3190-usb-audio-device-design-considerations.md#Clock-Source-Validity-Control) below for more details. |
 
-##### Clock Source Frequency Control
+### Clock Source Frequency Control
 
 Sets the frequency of the Clock Source. For Read Only clocks (for example, an external SPDIF clock), use this control to report the current frequency setting of the Clock Source.
 
-##### Clock Source Validity Control
+### Clock Source Validity Control
 
 Use the Validity control to describe if a Clock Source has a valid clock on its output pin.
 
 > **Note**: For programmable clocks, your device should not complete the control transaction setting the clock frequency until the clock is valid. For example, if the clock requires a phase-locked loop to stabilize before the clock is valid, your device should wait until that process is complete before returning from the SET CUR request on the frequency.
 
-##### Clock Selector
+### Clock Selector
 
 Clock Selectors were introduced in the ADC2 specification and provide a selection between different Clock Source entities and a Terminal. On macOS, you can make a selection in the Audio MIDI Setup app.
 
-##### Clock Selector Controls
+### Clock Selector Controls
 
 | Control name | ADC version | Apple OS support | Description |
 | --- | --- | --- | --- |
 | Selector | ADC2-4 | macOS | See [Clock Selector Selector Control](./tn3190-usb-audio-device-design-considerations.md#Clock-Selector-Selector-Control) below for more details. |
 
-##### Clock Selector Selector Control
+### Clock Selector Selector Control
 
 Use a Selector control to select one of the input pins on the Clock Selector of your device. Changing a selection removes and recreates the Core Audio formats associated with the Core Audio device.
 
-##### Clock Multiplier
+### Clock Multiplier
 
 The Clock Multplier is described in ADC1-3 and has been deprecated in ADC4. Apple operating systems do not support Clock Multipliers.
 
-##### Sampling Rate Converter
+### Sampling Rate Converter
 
 Apple operating systems do not support Sample Rate Converter (SRC) entities. SRC entities provide a mechanism to describe that data is being converted in your device from one clock domain to another.
 
-##### Connectors descriptor (ADC3) and Connector Entity Descriptor (ADC4)
+### Connectors descriptor (ADC3) and Connector Entity Descriptor (ADC4)
 
 Apple operating systems do not support these descriptors.
 
 > **Note**: Don’t confuse an ADC3 Connectors descriptor or an ADC4 Connector Entity Descriptor with the *Connector* control in an Input or Output Terminal, which is supported.
 
-##### Power Domain
+### Power Domain
 
 Apple operating systems do not support Power Domains. This concept was introduced in the ADC3 specification, to allow for entities to be grouped into Power Domains which can be placed into a low power mode.
 
-#### Audio Streaming Interface Class Specific Descriptors
+## Audio Streaming Interface Class Specific Descriptors
 
 The USB Audio Device Class Specification describes the following descriptors.
 
-##### Class-Specific AS Encoder Descriptor
+### Class-Specific AS Encoder Descriptor
 
 The Class-Specific AS Encoder Descriptor is not supported by Apple operating systems. If present, it will be ignored.
 
-##### Class-Specific AS Decoder Descriptor
+### Class-Specific AS Decoder Descriptor
 
 The Class-Specific AS Decoder Descriptor is not supported by Apple operating systems. If present, it will be ignored.
 
-##### Class-Specific AS Valid Frequency Range Descriptor
+### Class-Specific AS Valid Frequency Range Descriptor
 
 The Class-Specific AS Valid Frequency Range Descriptor is not supported by Apple operating systems. This descriptor, introduced in ADC3, allows your device to specify available *Clock Source* frequency ranges on each Alternate Setting of a Streaming Interface.
 
-#### Audio Streaming Interface Controls
+## Audio Streaming Interface Controls
 
 The USB Audio Device Class Specification describes the following controls.
 
-##### Active Alternate Setting Control
+### Active Alternate Setting Control
 
 The Active Alternate Setting Control was introduced in ADC2 and is fully supported by Apple operating systems.
 
-##### Valid Alternate Settings Control
+### Valid Alternate Settings Control
 
 The Valid Alternate Settings Control was introduced in ADC2 and is fully supported by Apple operating systems.
 
-##### Audio Data Format Control
+### Audio Data Format Control
 
 The Audio Data Format Control is not supported by Apple operating systems.
 
-#### Device Naming
+## Device Naming
 
 Each audio device attached to an Apple host has two name properties associated with it:
 
@@ -350,7 +350,7 @@ Each audio device attached to an Apple host has two name properties associated w
 
 The construction of these properties is described further below.
 
-##### Device UID (kAudioDevicePropertyDeviceUID)
+### Device UID (kAudioDevicePropertyDeviceUID)
 
 For USB audio devices, the `kAudioDevicePropertyDeviceUID` property conforms to the following layout:
 
@@ -365,7 +365,7 @@ AppleUSBAudioEngine:<Company Name>:<Device Name>:<Serial # or LocationID>:N[,M]
 
 - **N[,M]**: The Interface numbers of the streaming interfaces for this audio function. If your device contains a single stream, only *N* will be present. For 2 or more streams, the interface number of each of the additional interfaces will be present in the string.
 
-##### Customer visible name (kAudioDevicePropertyDeviceName)
+### Customer visible name (kAudioDevicePropertyDeviceName)
 
 The Apple USB audio driver determines the name string of your devices using the following sequence:
 
@@ -378,7 +378,7 @@ The Apple USB audio driver determines the name string of your devices using the 
 
 You should avoid generic names like “USB Audio Device”.
 
-#### Supported audio formats
+## Supported audio formats
 
 The Apple USB Audio driver supports the following audio data formats.
 
@@ -390,9 +390,9 @@ The Apple USB Audio driver supports the following audio data formats.
 | Type I ALaw and µLaw | Section 2.2.6.4 | Section 2.3.1.7.4 |
 | Type III IEC1937AC3 | Section 2.4.1 | Section 2.3.3 |
 
-#### Specifying channel locations to Core Audio
+## Specifying channel locations to Core Audio
 
-##### ADC1/ADC2 spatial designations to Core Audio Channel Labels
+### ADC1/ADC2 spatial designations to Core Audio Channel Labels
 
 ADC1 provides 12 spatial location positions for Clusters. ADC2 preserves those same 12 locations and provides 15 more, for a total of 27 spatial locations. The following table shows the mapping between USB ADC1 and ADC2 spatial locations and the Audio Channel Labels used in Core Audio.
 
@@ -429,11 +429,11 @@ ADC1 provides 12 spatial location positions for Clusters. ADC2 preserves those s
 | **BLC** - Back Left of Center | `kAudioChannelLabel_RearSurroundLeft` |
 | **BRC** - Back Right of Center | `kAudioChannelLabel_RearSurroundRight` |
 
-##### Designing a device to meet predefined layouts in Core Audio
+### Designing a device to meet predefined layouts in Core Audio
 
 Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device can specify its output channels such that it will automatically be recognized as one of the following predefined layouts.
 
-##### kAudioChannelLayoutTag_Atmos_5_1_2
+### kAudioChannelLayoutTag_Atmos_5_1_2
 
 | Core Audio Designation | ADC2 Designation |
 | --- | --- |
@@ -446,7 +446,7 @@ Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device
 | `kAudioChannelLabel_LeftTopMiddle` | **TSL** |
 | `kAudioChannelLabel_RightTopMiddle` | **TSR** |
 
-##### kAudioChannelLayoutTag_Atmos_5_1_4
+### kAudioChannelLayoutTag_Atmos_5_1_4
 
 | Core Audio Designation | ADC2 Designation |
 | --- | --- |
@@ -461,7 +461,7 @@ Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device
 | `kAudioChannelLabel_LeftTopRear` | **TBL** |
 | `kAudioChannelLabel_RightTopRear` | **TBR** |
 
-##### kAudioChannelLayoutTag_Atmos_7_1_2
+### kAudioChannelLayoutTag_Atmos_7_1_2
 
 | Core Audio Designation | ADC2 Designation |
 | --- | --- |
@@ -476,7 +476,7 @@ Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device
 | `kAudioChannelLabel_LeftTopMiddle` | **TSL** |
 | `kAudioChannelLabel_RightTopMiddle` | **TSR** |
 
-##### kAudioChannelLayoutTag_Atmos_7_1_4
+### kAudioChannelLayoutTag_Atmos_7_1_4
 
 | Core Audio Designation | ADC2 Designation |
 | --- | --- |
@@ -493,7 +493,7 @@ Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device
 | `kAudioChannelLabel_LeftTopRear` | **TBL** |
 | `kAudioChannelLabel_RightTopRear` | **TBR** |
 
-##### kAudioChannelLayoutTag_Atmos_9_1_6
+### kAudioChannelLayoutTag_Atmos_9_1_6
 
 | Core Audio Designation | ADC2 Designation |
 | --- | --- |
@@ -514,7 +514,7 @@ Core Audio has predefined Layout Tags (see *AudioChannelLayoutTag*). Your device
 | `kAudioChannelLabel_LeftTopRear` | **TBL** |
 | `kAudioChannelLabel_RightTopRear` | **TBR** |
 
-#### Extending the Apple USB Audio class driver
+## Extending the Apple USB Audio class driver
 
 You can augment the Apple USB Audio class driver by providing a codeless driver extension (dext) with a property list file that uses the `com.apple.driver.AppleUSBMergeNub` driver in the kernel to add one or more of these properties to the [IOUSBHostDevice](../USBDriverKit/iousbhostdevice.md) service or the [IOUSBHostInterface](../USBDriverKit/iousbhostinterface.md) service for your device:
 
@@ -524,7 +524,7 @@ You can augment the Apple USB Audio class driver by providing a codeless driver 
 - `IOAudioEngineIsHidden`
 - `InhibitAudioClassDriver`
 
-##### IOAudioDeviceConfigurationApplication
+### IOAudioDeviceConfigurationApplication
 
 This property, attached to the `IOUSBHostDevice` service, specifies the Bundle ID of your device’s configuration app. Customers can use this to launch your app via Audio MIDI Setup’s “*Configure device…*” pop-up menu.
 
@@ -533,11 +533,11 @@ This property, attached to the `IOUSBHostDevice` service, specifies the Bundle I
 <string>com.example.configuration.application.bundleid</string>
 ```
 
-##### Latency Controls
+### Latency Controls
 
 The Apple USB audio driver supports the standard Latency Control defined in ADC2 **Section 5.2.4.8**. Your device should report latency using the Latency Control instead of the following mechanism. For existing devices that do not support the Latency Control, you can specify your device’s latency using the `IOAudioEngineInputSampleLatency` and `IOAudioEngineOutputSampleLatency` properties.
 
-##### IOAudioEngineInputSampleLatency
+### IOAudioEngineInputSampleLatency
 
 This property, attached to the `IOUSBHostInterface` service, specifies the time delay, in samples, between an audio signal being received on a device physical input connector and the sample being transferred to the host over USB. It should be specified for each sample rate that the device supports.
 
@@ -559,7 +559,7 @@ This property, attached to the `IOUSBHostInterface` service, specifies the time 
 </dict>
 ```
 
-##### IOAudioEngineOutputSampleLatency
+### IOAudioEngineOutputSampleLatency
 
 This property, attached to the `IOUSBHostInterface` service, specifies the time delay, in samples, between an audio sample being received on the device over USB to the signal being presented on a device physical output connector. It should be specified for each sample rate that the device supports.
 
@@ -581,11 +581,11 @@ This property, attached to the `IOUSBHostInterface` service, specifies the time 
 </dict>
 ```
 
-##### IOAudioEngineIsHidden
+### IOAudioEngineIsHidden
 
 This legacy property is deprecated and will be removed in a future operating system release.
 
-##### InhibitAudioClassDriver
+### InhibitAudioClassDriver
 
 Apple recommends using the built-in audio class driver provided with macOS, iOS, and iPadOS. If your device requires a custom driver, a driver extension (dext) can inhibit the loading of Apple’s USB Audio class driver using standard driver matching. If your driver is an AudioServerPlugin with no dext, you must provide and install a codeless dext to inhibit loading of the Apple USB audio driver.
 
@@ -596,7 +596,7 @@ This property is attached to the `IOUSBHostDevice` service. The Apple USB Audio 
 <true/>
 ```
 
-##### Example codeless dext plist
+### Example codeless dext plist
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -736,7 +736,7 @@ This property is attached to the `IOUSBHostDevice` service. The Apple USB Audio 
 </plist>
 ```
 
-#### Other matching considerations
+## Other matching considerations
 
 Beginning on macOS Tahoe 26, Apple no longer publishes kernel IOServices based on the deprecated IOAudioFamily. If your audio device provides additional, non-class USB interfaces for control, you may need to update your software.
 
@@ -752,7 +752,7 @@ If your application depends on AppleUSBAudio.kext IOAudioFamily services, it wil
 
 Please see Developer support below if you need further guidance on making associations between a Core Audio device AudioObjectID and its corresponding USB io_service_t.
 
-#### Developer support
+## Developer support
 
 If you have questions regarding USB Audio Class support, please contact Apple through [Feedback Assistant](applefeedback://new?form_identifier=dev.tech&answers%5B%3Aarea%5D=seedmacos%3Ausbaudio) selecting the following option:
 
@@ -760,7 +760,7 @@ Developer Technologies & SDKs > USB Audio
 
 To learn more about how to use Feedback Assistant, see [Bug Reporting](https://developer.apple.com/bug-reporting/).
 
-#### Revision History
+## Revision History
 
 - **2025-10-07** First published. Obsoletes TN2274.
 

@@ -22,7 +22,7 @@ var rootMediaGroup: MLMediaGroup? { get }
 @property (retain, readonly, nullable) MLMediaGroup * rootMediaGroup;
 ```
 
-#### Discussion
+## Discussion
 
 This accessor property is nonblocking. If there is no data yet, it returns `nil` and automatically triggers an internal asynchronous request. When data arrives, a KVO notification is sent via the main thread.
 

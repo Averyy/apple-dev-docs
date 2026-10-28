@@ -21,7 +21,7 @@ The number of additional elements that can be added to this array without reallo
 var freeCapacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

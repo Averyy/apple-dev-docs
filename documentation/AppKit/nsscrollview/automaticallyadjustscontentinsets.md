@@ -19,7 +19,7 @@ var automaticallyAdjustsContentInsets: Bool { get set }
 @property BOOL automaticallyAdjustsContentInsets;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroll view automatically sets its [`contentInsets`](./contentinsets.md) property to account for any overlapping title or tool bar. To overlap with the title or tool bar, the window style mask must include `NSFullSizeContentViewWindowMask` and the title bar must not be transparent.
 

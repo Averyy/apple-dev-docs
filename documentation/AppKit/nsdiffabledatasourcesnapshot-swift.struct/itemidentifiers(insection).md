@@ -15,7 +15,7 @@ Returns the identifiers of all of the items in the specified section of the snap
 func itemIdentifiers(inSection identifier: SectionIdentifierType) -> [ItemIdentifierType]
 ```
 
-#### Return Value
+## Return Value
 
 An array of identifiers of the items contained in the section.
 

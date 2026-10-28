@@ -27,7 +27,7 @@ var preferredTransform: CGAffineTransform { get }
 @property (nonatomic, readonly) CGAffineTransform preferredTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is typically, but not always, [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md).
 

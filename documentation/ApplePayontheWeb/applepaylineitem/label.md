@@ -16,7 +16,7 @@ A required value that’s a short, localized description of the line item.
 DOMString label;
 ```
 
-#### Discussion
+## Discussion
 
 Provide the label in title case—for example, VAT Tax, Gift Wrap and Card, or Discount. The label can’t be empty.
 

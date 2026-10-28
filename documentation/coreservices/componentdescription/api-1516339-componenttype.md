@@ -16,7 +16,7 @@ A four-character code that identifies the type of component.
 OSType componentType;
 ```
 
-#### Discussion
+## Discussion
 
 All components of a particular type must support a common set of interface functions. For example, drawing components all have a component type of `draw`.
 

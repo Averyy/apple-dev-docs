@@ -25,7 +25,7 @@ convenience init(timeInterval secsToBeAdded: TimeInterval, since date: Date)
 - (instancetype) initWithTimeInterval:(NSTimeInterval) secsToBeAdded sinceDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object initialized relative to `date` by `secsToBeAdded` seconds.
 

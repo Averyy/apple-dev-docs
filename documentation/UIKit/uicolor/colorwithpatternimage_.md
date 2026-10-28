@@ -20,11 +20,11 @@ Creates a color object using the specified image.
 + (UIColor *) colorWithPatternImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 The pattern color.
 
-#### Discussion
+## Discussion
 
 You can use pattern colors to set the fill or stroke color just as you’d a solid color. During drawing, the image in the pattern color is tiled as necessary to cover the given area.
 

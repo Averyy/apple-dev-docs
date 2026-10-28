@@ -25,7 +25,7 @@ func reorderable() -> some DynamicViewContent<Self.Data>
 
 - [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
-#### Discussion
+## Discussion
 
 Declare this modifier on [`DynamicViewContent`](../dynamicviewcontent.md) within a reorderable container to allow people to reorder the items in the content using a system drag gesture. A reorderable container is a list, stack, grid, or custom layout that you define with the [`reorderContainer(for:in:isEnabled:move:)`](../view/reordercontainer%28for,in,isenabled,move%29.md) modifier.
 

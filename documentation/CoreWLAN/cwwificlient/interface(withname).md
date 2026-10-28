@@ -19,7 +19,7 @@ func interface(withName interfaceName: String?) -> CWInterface?
 - (CWInterface *) interfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Return Value
+## Return Value
 
 The [`CWInterface`](../cwinterface.md) object bound to the given interface name, or the default interface if no name is specified.
 

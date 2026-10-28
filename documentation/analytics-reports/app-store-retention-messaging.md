@@ -5,7 +5,7 @@
 
 Analyze how users interact with retention messages during the subscription cancellation flow.
 
-#### Overview
+## Overview
 
 The Retention Messaging report shows how users respond to retention messages displayed during the subscription cancellation flow. Use it to understand how often retention messages are seen, what actions users take — like redeeming an offer, switching plans, choosing to cancel, or continue their subscription — and which message types are most effective at keeping subscribers. The report captures every page view and user interaction, with breakdowns by subscription tier, message type, device, territory, and platform version, so you can optimize your retention strategy and reduce churn.
 
@@ -20,7 +20,7 @@ The Retention Messaging report shows how users respond to retention messages dis
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Territory | App Store country in which the event occurred. | `string` |
 | Counts | Aggregated count of events. | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

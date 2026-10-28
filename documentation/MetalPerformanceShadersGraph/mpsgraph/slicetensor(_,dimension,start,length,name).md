@@ -24,7 +24,7 @@ func sliceTensor(_ tensor: MPSGraphTensor, dimension dimensionIndex: Int, start:
 - (MPSGraphTensor *) sliceTensor:(MPSGraphTensor *) tensor dimension:(NSUInteger) dimensionIndex start:(NSInteger) start length:(NSInteger) length name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

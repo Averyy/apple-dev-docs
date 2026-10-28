@@ -24,7 +24,7 @@ class MPSImageConversion
 @interface MPSImageConversion : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageConversion`](./mpsimageconversion.md) filter allows you to change the alpha encoding or color space of an image. For example, you can convert an image with a premultiplied alpha to non-premultiplied, or change the color space from one variant to another.
 

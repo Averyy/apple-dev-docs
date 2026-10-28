@@ -24,7 +24,7 @@ func logicalXor(_ operand: Bool, ordering: AtomicUpdateOrdering) -> (oldValue: B
 
 Available when `Value` is `Bool`.
 
-#### Return Value
+## Return Value
 
 A tuple with the old value before the operation and the new value after the operation.
 

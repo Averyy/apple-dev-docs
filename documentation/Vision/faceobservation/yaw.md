@@ -21,7 +21,7 @@ The yaw angle of a face.
 let yaw: Measurement<UnitAngle>
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the rotational angle of the face around the y-axis.
 

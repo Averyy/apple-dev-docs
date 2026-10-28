@@ -24,11 +24,11 @@ var isLocked: Bool { get }
 @property (nonatomic, readonly) BOOL isLocked;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document is locked; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Only encrypted documents can be locked. Encrypted documents whose password is the empty string are unlocked automatically upon opening, because PDF Kit tries the empty string as a password if none is supplied. Use the [`unlock(withPassword:)`](./unlock%28withpassword%29.md) method to unlock a document using a password.
 

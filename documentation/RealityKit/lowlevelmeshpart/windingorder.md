@@ -18,7 +18,7 @@ The winding order of front-facing polygons.
 final var windingOrder: MTLWinding { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLWinding`.
 

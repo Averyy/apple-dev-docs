@@ -21,7 +21,7 @@ static let phoneUsageReport: SRSensor
 extern SRSensor const SRSensorPhoneUsageReport;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRPhoneUsageReport`](../srphoneusagereport.md).
 

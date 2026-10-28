@@ -5,7 +5,7 @@
 
 Manage the code requirements that apply to your signed code.
 
-#### Overview
+## Overview
 
 A code requirement is a condition or constraint that code must satisfy to be considered valid for some purpose. All signed code has implicit or explicit code requirements. Code Signing Services does not have any built-in criteria for why such a constraint is appropriate or useful; it only provides tools for formulating, recording, and evaluating code requirements that you establish. You can specify explicit code requirements when you sign your code, or you can sign the code without specifying any explicit code requirements, in which case the codesign utility typically builds a designated requirement from the name of the program and the chain of signatures securing the code signature. The designated requirement is the set of criteria used to determine whether the signed code is the same code the verifier has seen before.
 

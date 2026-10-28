@@ -19,7 +19,7 @@ var nibName: NSNib.Name? { get }
 @property (copy, readonly, nullable) NSNibName nibName;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the name you provide to the `nibNameOrNil` parameter in the [`init(nibName:bundle:)`](./init%28nibname,bundle%29.md) method.
 

@@ -24,7 +24,7 @@ func webView(_ webView: WKWebView, stop urlSchemeTask: any WKURLSchemeTask)
 - (void) webView:(WKWebView *) webView stopURLSchemeTask:(id<WKURLSchemeTask>) urlSchemeTask;
 ```
 
-#### Discussion
+## Discussion
 
 If WebKit determines that it no longer needs a resource that your handler is loading, it calls this method to stop the load operation. Typically, WebKit calls this method when the user navigates to another page, but may call it for other reasons.
 

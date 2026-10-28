@@ -24,7 +24,7 @@ var contentHeadroom: Float { get }
 @property (nonatomic, readonly) float contentHeadroom;
 ```
 
-#### Discussion
+## Discussion
 
 If the image headroom is unknown, then the value 0.0 will be returned.
 

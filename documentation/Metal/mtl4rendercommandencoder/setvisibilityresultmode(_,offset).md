@@ -25,7 +25,7 @@ func setVisibilityResultMode(_ mode: MTLVisibilityResultMode, offset: Int)
 - (void) setVisibilityResultMode:(MTLVisibilityResultMode) mode offset:(NSUInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 You use the `mode` parameter to enable or disable the visibility test, and determine if it produces a boolean response for passing fragments, or if it counts the number of fragments.
 

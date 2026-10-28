@@ -19,7 +19,7 @@ An array that contains an input axis source for each output axis, which represen
 @property (nonatomic, copy, readonly) NSArray<NSNumber *> * dimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Permutes the dimensions according to `dimensions`. The returned tensor’s dimension `i` corresponds to `dimensions[i]`.
 

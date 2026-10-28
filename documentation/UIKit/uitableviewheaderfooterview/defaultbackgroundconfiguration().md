@@ -20,7 +20,7 @@ Retrieves a background configuration with system default values.
 @preconcurrency func defaultBackgroundConfiguration() -> UIBackgroundConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A default background configuration. The system determines default values for the configuration according to the section where the view appears.
 

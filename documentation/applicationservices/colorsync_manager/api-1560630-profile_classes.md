@@ -4,7 +4,7 @@
 
 Specify profile class enumerations.
 
-#### Overview
+## Overview
 
 The ColorSync Manager supports seven classes, or types, of profiles. 
 

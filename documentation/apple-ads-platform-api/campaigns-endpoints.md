@@ -8,11 +8,11 @@ Create, retrieve, update, and delete campaigns using these endpoints.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 To promote iOS apps in the App Store or brands and locations on Apple Maps, use campaigns.
 
-#### Use These Campaign Endpoints
+## Use These Campaign Endpoints
 
 The following endpoints create, retrieve, update, and delete campaigns, and return per-country limited-status details for legacy app campaigns:
 
@@ -44,19 +44,19 @@ To target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` on an Apple Maps cam
 
 An ad account’s `productFeatures` gate which campaign type it can create. An account authorized with `APPSTORE_APP_MANUAL` can only create App Store campaigns, and an account authorized with `BUSINESS_BRAND_MANUAL` can only create Apple Maps campaigns. See [`ProductFeatures`](./productfeatures.md) for details.
 
-##### Promote Apps
+### Promote Apps
 
 App Store campaigns (`promotedObjectType: APPSTORE_APP`) promote iOS apps across App Store placements. See [`CampaignTargeting`](./campaigntargeting.md) for the full list of accepted App Store country or region and placement targeting values.
 
 The app must be available for purchase, download, or preorder in the App Store and Apple Ads must be available in the targeted countries. To check eligibility before creating a campaign, use [`Check App Eligibility`](./find-apps-eligibilities.md). After you confirm eligibility, see [`Create a Campaign`](./post-campaigns.md) to create the campaign.
 
-##### Promote Brands and Locations
+### Promote Brands and Locations
 
 Apple Maps campaigns (`promotedObjectType: BUSINESS_BRAND`) promote brands on Apple Maps. The brand must have `eligibility.status: ELIGIBLE` before a campaign can serve. The ad account must also have a `BUSINESS_BRAND` delegation linking it to the brand before campaigns can go live. See [`ProductFeatures`](./productfeatures.md) for delegation requirements. The `billingEvent` can be `TAPS` (for `MANUAL_CPT` or `MAX_ENGAGEMENTS`) or `IMPRESSIONS` (for `MANUAL_CPM`).
 
 See [Ads on Apple Maps Endpoints](./brands-endpoints.md) for the full setup workflow, then see [`Create a Campaign`](./post-campaigns.md) to create the campaign.
 
-##### Choose a Bid Strategy
+### Choose a Bid Strategy
 
 The `bidStrategy` object is always present on a campaign and controls how the campaign competes in auctions. It’s required at creation: you must send both `bidStrategyType` and `bidStrategyGoal`, and the goal must match the type. See [`BidStrategy`](./bidstrategy.md) for the type and goal pairings.
 
@@ -73,13 +73,13 @@ A Maximize Conversions bid strategy (`MAX_CONVERSIONS`) maximizes the number of 
 
 To switch a campaign’s bid strategy after creation, send an updated `bidStrategy` object with a matching `bidStrategyType`/`bidStrategyGoal` pair via [`Update a Campaign`](./put-campaigns-_id_.md). See [`BidStrategyUpdate`](./bidstrategyupdate.md) for the field-level mechanics. For reports with a Maximize Conversions bid strategy, see [`Campaigns Report`](./get-app-campaign-reports.md) and [`Ad Groups Report`](./get-app-ad-group-reports.md).
 
-##### Manage Budget Orders
+### Manage Budget Orders
 
 A budget order enforces a spending cap for a group of campaigns within an ad account. Campaigns assigned to the same budget order share a common spend limit via the `sharedBudgets` field. Budget orders are available to Apple Ads customers on monthly invoicing. A campaign with shared budget assignments also requires a `dailyBudget`. Both controls function independently: `dailyBudget` caps daily spending. Each shared budget caps spending over its flight period.
 
 See [Budget Orders Endpoints](./budget-orders-endpoints.md) for details on creating and managing budget orders.
 
-##### Monitor Campaign and System Status
+### Monitor Campaign and System Status
 
 Campaigns have three status fields and a bid strategy that together reflect their delivery state.
 
@@ -110,7 +110,7 @@ To filter campaigns by status, see [`Query Campaigns`](./post-campaigns-query.md
 
 > **Note**: The `cpaCap` field on ad groups is deprecated. Configure conversion targeting via the `bidStrategy` object using `bidStrategyType: MAX_CONVERSIONS`.
 
-##### Continue Building Campaign Delivery
+### Continue Building Campaign Delivery
 
 Once a campaign exists, continue building out its delivery: create [Ad Groups Endpoints](./adgroups-endpoints.md) to configure targeting and bid strategy, add [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) for App Store search campaigns, and create [Ads Endpoints](./ads-endpoints.md) to serve within each ad group.
 

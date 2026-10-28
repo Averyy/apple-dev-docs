@@ -22,7 +22,7 @@ weak var delegate: (any SKStoreProductViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SKStoreProductViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Your application must set the delegate before presenting the store view controller.
 

@@ -23,11 +23,11 @@ class func elu(a: Float) -> Self
 + (instancetype) eluLayerWithA:(float) a;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`elu(a:)`](./elu%28a%29.md) factory type method creates an activation descriptor using [`init(type:a:)`](../mlcactivationdescriptor/init%28type,a%29.md), where `type =` [`MLCActivationType.elu`](../mlcactivationtype/elu.md) and `a = alpha`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

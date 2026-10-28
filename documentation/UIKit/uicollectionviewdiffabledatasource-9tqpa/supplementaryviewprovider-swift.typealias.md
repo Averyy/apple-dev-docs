@@ -19,7 +19,7 @@ A closure that configures and returns a collection view’s supplementary view, 
 typealias SupplementaryViewProvider = (UICollectionView, String, IndexPath) -> UICollectionReusableView?
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured supplementary view object. The supplementary view provider must return a valid view object to the collection view.
 

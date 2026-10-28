@@ -19,7 +19,7 @@ func subscriberNumber()
 - (void) subscriberNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The subscriber number is sent to the [`handsFree(_:subscriberNumber:)`](../iobluetoothhandsfreedevicedelegate/handsfree%28_,subscribernumber%29.md) function of the delegate.
 

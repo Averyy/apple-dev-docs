@@ -5,7 +5,7 @@
 
 Specify the kind of data used in HealthKit.
 
-#### Overview
+## Overview
 
 HealthKit uses [`HKObjectType`](./hkobjecttype.md) subclasses to identify the different types of data stored in HealthKit, from inherent data that doesn’t typically change over time to complex data types that combine multiple samples or compute values over sets of samples.
 

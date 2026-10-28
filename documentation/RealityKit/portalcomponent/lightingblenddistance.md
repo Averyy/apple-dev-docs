@@ -20,7 +20,7 @@ The distance over which crossing-entity lighting blends between the host scene a
 var lightingBlendDistance: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 As an entity with [`PortalCrossingComponent`](../portalcrossingcomponent.md) crosses the portal boundary, RealityKit transitions its lighting from the host scene’s environment to the portal world’s environment. This property controls the width, in meters, of that transition:
 

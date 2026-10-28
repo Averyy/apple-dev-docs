@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_SETMODE: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_SETMODE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`setmode`](./es_events_t/setmode.md), which has the type [`es_event_setmode_t`](./es_event_setmode_t.md).
 

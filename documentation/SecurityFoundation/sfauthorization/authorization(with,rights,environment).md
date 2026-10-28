@@ -19,11 +19,11 @@ class func authorization(with flags: AuthorizationFlags, rights: UnsafePointer<A
 + (id) authorizationWithFlags:(AuthorizationFlags) flags rights:(const AuthorizationRights *) rights environment:(const AuthorizationEnvironment *) environment;
 ```
 
-#### Return value
+## Return value
 
 The authorization object.
 
-#### Discussion
+## Discussion
 
 Normally, such initialization is not required, as you pass in flags, rights, and environmental data when you request authorization.
 

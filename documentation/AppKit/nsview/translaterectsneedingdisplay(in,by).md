@@ -19,7 +19,7 @@ func translateRectsNeedingDisplay(in clipRect: NSRect, by delta: NSSize)
 - (void) translateRectsNeedingDisplayInRect:(NSRect) clipRect by:(NSSize) delta;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs the shifting of dirty rectangles that an equivalent [`scroll(_:by:)`](./scroll%28_,by%29.md) operation would cause, without performing the actual scroll operation.  It is only useful in very rare cases where a view implements its own low-level scrolling mechanics.
 

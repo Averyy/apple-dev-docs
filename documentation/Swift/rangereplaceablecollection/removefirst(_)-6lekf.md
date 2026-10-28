@@ -23,7 +23,7 @@ mutating func removeFirst(_ k: Int)
 
 Available when `Self` is `Self.SubSequence`.
 
-#### Discussion
+## Discussion
 
 Attempting to remove more elements than exist in the collection triggers a runtime error.
 

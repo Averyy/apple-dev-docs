@@ -21,7 +21,7 @@ func divide(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDe
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Divide two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -34,7 +34,7 @@ let b = MLXArray([4, 5, 6])
 let r = a / b / 7
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`divmod(_:_:stream:)`](./divmod%28_,_,stream%29.md)

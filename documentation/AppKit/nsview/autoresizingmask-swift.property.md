@@ -19,7 +19,7 @@ var autoresizingMask: NSView.AutoresizingMask { get set }
 @property NSAutoresizingMaskOptions autoresizingMask;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an integer bit mask specified by combining the options described in [`NSView.AutoresizingMask`](./autoresizingmask-swift.struct.md). This mask is used by the [`resize(withOldSuperviewSize:)`](./resize%28witholdsuperviewsize%29.md) method when the view needs to be resized.
 

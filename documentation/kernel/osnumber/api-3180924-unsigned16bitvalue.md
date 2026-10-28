@@ -24,7 +24,7 @@ uint16_t unsigned16BitValue(void);
 virtual unsigned short unsigned16BitValue(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint16_t value.
 

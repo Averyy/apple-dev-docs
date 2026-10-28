@@ -19,7 +19,7 @@ Searchable items with an assigned score.
 case scoredItems
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is zero or more [`ScoredSearchableItem`](../scoredsearchableitem.md) objects, each of whic contains a [`CSSearchableItem`](../cssearchableitem.md) and its assigned score.
 

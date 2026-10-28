@@ -28,7 +28,7 @@ class AVCaptureInput
 
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 You create concrete instances of this class, such as [`AVCaptureDeviceInput`](./avcapturedeviceinput.md), to add inputs to a capture session. An input provides one or more streams of media data. For example, input devices can provide both audio and video data. The framework represents each media stream that an input provides as an [`AVCaptureInput.Port`](./avcaptureinput/port.md) object.
 

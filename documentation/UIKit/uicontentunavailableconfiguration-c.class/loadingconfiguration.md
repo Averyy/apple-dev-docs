@@ -19,7 +19,7 @@ Creates a configuration appropriate for indicating a view is waiting on content 
 + (instancetype) loadingConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 

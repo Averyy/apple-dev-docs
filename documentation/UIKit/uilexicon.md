@@ -27,7 +27,7 @@ class UILexicon
 
 - [Configuring a custom keyboard interface](./configuring-a-custom-keyboard-interface.md)
 
-#### Overview
+## Overview
 
 To obtain the lexicon, call the [`requestSupplementaryLexicon(completion:)`](./uiinputviewcontroller/requestsupplementarylexicon%28completion%29.md) method of the [`UIInputViewController`](./uiinputviewcontroller.md) class. This method can be called only from a custom keyboard app extension. A lexicon contains words from various sources, including:
 

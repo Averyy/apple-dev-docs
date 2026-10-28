@@ -21,7 +21,7 @@ init(stickerSize: MSStickerSize)
 - (instancetype) initWithStickerSize:(MSStickerSize) stickerSize;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated sticker browser controller.
 

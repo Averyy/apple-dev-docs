@@ -21,7 +21,7 @@ Concatenates two attributed strings or substrings.
 static func + (lhs: AttributedString, rhs: some AttributedStringProtocol) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 The result of concatenating `rhs` to the end of `lhs`.
 

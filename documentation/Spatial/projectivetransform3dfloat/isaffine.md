@@ -23,7 +23,7 @@ var isAffine: Bool { get }
 static bool SPProjectiveTransform3DFloatIsAffine(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is affine.
 

@@ -21,7 +21,7 @@ case invalidPostbackURL
 SKAdTestErrorCodeInvalidPostbackURL
 ```
 
-#### Discussion
+## Discussion
 
 Check that the URL is valid in the [`postbackURL`](../../skadtestpostback/postbackurl.md) parameter in [`SKAdTestPostback`](../../skadtestpostback.md).
 

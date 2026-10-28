@@ -21,7 +21,7 @@ An explicit tint color.
 static func fixed(_ tint: Color) -> ListItemTint
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t override this tint effect.
 

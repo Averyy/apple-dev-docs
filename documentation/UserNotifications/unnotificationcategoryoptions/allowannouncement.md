@@ -25,7 +25,7 @@ static var allowAnnouncement: UNNotificationCategoryOptions { get }
 UNNotificationCategoryOptionAllowAnnouncement
 ```
 
-#### Discussion
+## Discussion
 
 When Siri reads an incoming message to the user, Siri reads the message locally on the userʼs device. Siri doesn’t send the message’s contents or sender to Apple servers. For more information about Siri’s on-device processing, visit [Apple’s Privacy Page](https://www.apple.com/privacy/features/).
 

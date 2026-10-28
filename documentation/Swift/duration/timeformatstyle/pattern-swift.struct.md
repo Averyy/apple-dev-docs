@@ -21,7 +21,7 @@ The units — including hours, minutes, or seconds — and the configuration of 
 struct Pattern
 ```
 
-#### Overview
+## Overview
 
 Use a pattern when initializing a [`Duration.TimeFormatStyle`](../timeformatstyle.md), or creating a time format style from the convenience method `Swift/Duration/TimeFormatStyle/time(pattern:)`.
 

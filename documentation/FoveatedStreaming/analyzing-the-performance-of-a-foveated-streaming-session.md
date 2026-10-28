@@ -5,7 +5,7 @@
 
 Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
 
-#### Overview
+## Overview
 
 Maintaining a high frame rate while minimizing latency is critical to ensure a comfortable and immersive foveated streaming experience on Apple Vision Pro. The Foveated Streaming framework delivers high-quality immersive content to Apple Vision Pro through a highly-optimized, real-time pipeline:
 
@@ -24,7 +24,7 @@ To get useful information specific to foveated streaming, profile your app with 
 
 For more information on how to use Instruments, see [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments).
 
-#### Prepare the foveated streaming statistics instrument
+## Prepare the foveated streaming statistics instrument
 
 To set up a new Instruments document from Xcode:
 
@@ -38,7 +38,7 @@ To set up a new Instruments document from Xcode:
 
 > 💡 **Tip**: You can add additional instruments alongside the Foveated Streaming Statistics instrument to create a more comprehensive performance profile of your app. For more information, see [Analyzing the performance of your visionOS app](../visionOS/analyzing-the-performance-of-your-visionos-app.md).
 
-#### Capture streaming statistics
+## Capture streaming statistics
 
 To collect metrics for a foveated streaming session:
 
@@ -60,11 +60,11 @@ The Foveated Streaming Statistics instrument collects metrics on the following:
 - **Pose to Frame Received Latency**: The latency from Apple Vision Pro sending the device pose to receiving an encoded frame.
 - **Pose Upload Latency**: The one-way latency between Apple Vision Pro sending the device pose and the server receiving it.
 
-#### Diagnose performance issues
+## Diagnose performance issues
 
 The most common source of foveated streaming performance issues is network limitations. If you observe visual artifacts, stuttering, or a lack of responsiveness, begin by examining the Available Bandwidth and Average Streaming Rate. A significant gap between these two values, or consistently low numbers for either, strongly indicates that your network connection is the limiting factor. This could be due to network congestion, poor Wi-Fi signal strength, or other connectivity problems.
 
-#### Evaluate your app’s performance
+## Evaluate your app’s performance
 
 If the `Available Bandwidth` and `Average Streaming Rate` appear reasonable, the next step is to investigate your app’s internal performance. One indicator of your app’s performance is the Pose Rate. For optimal foveated streaming, the Pose Rate should be consistent with the device’s refresh rate; for example, 90 Hz. A Pose Rate significantly below this target suggests that your app isn’t running at its maximum frame rate. This indicates that something within your app’s logic or rendering pipeline is causing slowdowns.
 

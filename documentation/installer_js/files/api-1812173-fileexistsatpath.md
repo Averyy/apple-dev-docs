@@ -11,7 +11,7 @@ Indicates whether the given path identifies an existent file.
 fileExistsAtPath(filePath)
 ```
 
-#### Return Value
+## Return Value
 
 `true` when `filePath` identifies an existent file; `false` otherwise.
 

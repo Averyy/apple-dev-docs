@@ -18,7 +18,7 @@ The horizontal scroll indicator’s insets.
 final var horizontalScrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.zero`.
 

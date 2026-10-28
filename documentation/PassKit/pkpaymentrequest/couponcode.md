@@ -23,7 +23,7 @@ var couponCode: String? { get set }
 @property (nonatomic, copy, nullable) NSString * couponCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `nil` or the empty string to indicate that there’s no initial coupon.
 

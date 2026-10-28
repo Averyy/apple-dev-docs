@@ -21,7 +21,7 @@ The number of items in the range.
 var length: Int
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `0` to represent an empty range. For type compatibility with the rest of the system, the maximum value you should use for length is `LONG_MAX`.
 

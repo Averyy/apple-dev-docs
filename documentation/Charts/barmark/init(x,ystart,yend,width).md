@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, width: MarkDimension = .automatic) where X : Plottable, Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to show vertical intervals for one or more categories:
 

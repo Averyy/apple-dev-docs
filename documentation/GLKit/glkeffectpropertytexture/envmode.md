@@ -24,7 +24,7 @@ var envMode: GLKTextureEnvMode { get set }
 @property (nonatomic, assign) GLKTextureEnvMode envMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKTextureEnvMode.modulate`](../glktextureenvmode/modulate.md).
 

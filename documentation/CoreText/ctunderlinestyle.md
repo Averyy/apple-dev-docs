@@ -25,7 +25,7 @@ struct CTUnderlineStyle
 enum CTUnderlineStyle : int32_t;
 ```
 
-#### Overview
+## Overview
 
 You can apply these underline style specifiers to the value that you set with the [`kCTUnderlineStyleAttributeName`](./kctunderlinestyleattributename.md) attribute. These specifiers control the underline style Core Text uses when rendering the text to which the attribute applies.
 

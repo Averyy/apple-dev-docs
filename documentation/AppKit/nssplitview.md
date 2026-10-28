@@ -19,7 +19,7 @@ class NSSplitView
 @interface NSSplitView : NSView
 ```
 
-#### Overview
+## Overview
 
 A split view manages the dividers and orientation for a split view controller ([`NSSplitViewController`](./nssplitviewcontroller.md)). By default, dividers have a horizontal orientation so that the split view arranges its panes vertically from top to bottom.
 

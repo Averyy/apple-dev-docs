@@ -12,11 +12,11 @@ virtual bool IsPowerManagementIntialized (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if power management has been initialized, `false` otherwise.
 
-#### Overview
+## Overview
 
 Called to determine if power management is initialized. Subclasses should not need to override this method.
 

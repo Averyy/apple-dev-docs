@@ -26,7 +26,7 @@ var videoZoomFactor: CGFloat { get set }
 
 - [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Discussion
+## Discussion
 
 This value is a multiplier. For example, a value of `2.0` doubles the size of an image’s subject (and halves the field of view). Allowed values range from `1.0` (full field of view) to the value of the active format’s [`videoMaxZoomFactor`](./format/videomaxzoomfactor.md) property. Setting the value of this property jumps immediately to the new zoom factor. For a smooth transition, use the [`ramp(toVideoZoomFactor:withRate:)`](./ramp%28tovideozoomfactor,withrate%29.md) method.
 

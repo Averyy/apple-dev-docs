@@ -21,7 +21,7 @@ Creates a boosted tree classifier.
 init(labels: Set<Label?>, annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration = BoostedTreeConfiguration())
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

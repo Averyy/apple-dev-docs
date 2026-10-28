@@ -26,7 +26,7 @@ string MoonPhase
 - `thirdQuarter`
 - `waningCrescent`
 
-#### Possible Values
+## Possible Values
 
 - **new**: The moon isn’t visible.
 - **waxingCrescent**: A crescent-shaped sliver of the moon is visible, and increasing in size.

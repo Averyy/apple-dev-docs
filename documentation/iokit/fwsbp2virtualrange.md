@@ -16,7 +16,7 @@ typedef struct FWSBP2VirtualRange {
 } FWSBP2VirtualRange;
 ```
 
-#### Overview
+## Overview
 
 Virtual address range for SBP2.
 

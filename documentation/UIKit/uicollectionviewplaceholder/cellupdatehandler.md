@@ -22,7 +22,7 @@ var cellUpdateHandler: ((UICollectionViewCell) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^cellUpdateHandler)(UICollectionViewCell *);
 ```
 
-#### Discussion
+## Discussion
 
 Specify a block that configures or updates the appearance of your placeholder cell. The collection view calls this block when the placeholder cell becomes visible, and at other appropriate times.
 

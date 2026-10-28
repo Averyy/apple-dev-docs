@@ -15,7 +15,7 @@ Cache policy to use for request.
 var cachePolicy: RCSService.RemoteCapabilitiesRequest.CachePolicy
 ```
 
-#### Discussion
+## Discussion
 
 Always use cache first and then if it fails, prefer cacheOrRemote, remote is something that should be avoided (reserved for cases where the client feels that the cache is invalid, or incorrect)
 

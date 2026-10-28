@@ -4,7 +4,7 @@
 
 Displays an image over an entire element.
 
-#### Overview
+## Overview
 
 The `fullscreenImg` element contains a link to an image that is to be displayed over an entire element. Typically this is used to display an image that fills the entire screen. Here’s an example that shows how to place a full screen image.
 
@@ -12,7 +12,7 @@ The `fullscreenImg` element contains a link to an image that is to be displayed 
 <fullscreenImg src="path to server/image" />
 ```
 
-##### Contained In
+### Contained In
 
 - [lockup](./lockup.md)
 

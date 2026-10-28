@@ -20,11 +20,11 @@ func setFloatValue(_ value: Double, toParameter parameterID: UInt32, at time: CM
 - (BOOL) setFloatValue:(double) value toParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is set successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 When used to set the value of an angle parameter, the result will be expressed in counter-clockwise degrees. Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

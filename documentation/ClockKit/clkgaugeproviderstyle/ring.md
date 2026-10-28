@@ -21,7 +21,7 @@ case ring
 CLKGaugeProviderStyleRing
 ```
 
-#### Discussion
+## Discussion
 
 The system draws the entire gauge and positions a ring along the gauge to indicate the fill value.
 

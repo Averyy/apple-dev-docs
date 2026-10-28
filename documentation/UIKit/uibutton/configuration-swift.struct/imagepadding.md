@@ -19,7 +19,7 @@ The distance between the button’s image and text.
 var imagePadding: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the distance from the title and subtitle. This doesn’t affect the distance to the button’s edge.
 

@@ -19,7 +19,7 @@ var isHidden: Bool { get }
 @property (readonly, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the app is hidden or [`false`](../../Swift/false.md) if it is not.
 

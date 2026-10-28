@@ -14,7 +14,7 @@
 var typeStyledText: DescType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Text that includes style information.
 

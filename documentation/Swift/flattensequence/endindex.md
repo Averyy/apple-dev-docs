@@ -23,7 +23,7 @@ var endIndex: FlattenSequence<Base>.Index { get }
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 `endIndex` is not a valid argument to `subscript`, and is always reachable from `startIndex` by zero or more applications of `index(after:)`.
 

@@ -5,13 +5,13 @@
 
 Allow the user to resume a download without starting over.
 
-#### Overview
+## Overview
 
 Your app or the user may need to cancel an in-progress download and resume it later. By supporting resumable downloads, you save both the user’s time and network bandwidth.
 
 You can also use this technique to resume a download that fails due to a temporary loss of connectivity.
 
-##### Store the resume data object when you cancel the download
+### Store the resume data object when you cancel the download
 
 You cancel a [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) by calling [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md). This method takes a completion handler which is called once the cancellation is complete. The completion handler receives a `resumeData` parameter. If it it not `nil`, this is the token you use later to resume the download. The following example shows how to cancel a download task and store `resumeData`, if it exists, in a property.
 
@@ -30,7 +30,7 @@ downloadTask.cancel { resumeDataOrNil in
 
 > ❗ **Important**:  Not all downloads can be resumed. See the discussion in [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md) for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads.
 
-##### Store the resume data object when a download fails
+### Store the resume data object when a download fails
 
 You can also resume a download that has failed due to a temporary loss of connectivity, as when the user walks out of WiFi range.
 
@@ -53,7 +53,7 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 ```
 
-##### Use the stored resume data object to resume downloading
+### Use the stored resume data object to resume downloading
 
 When it’s appropriate to resume the download, create a new [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) by using the [`downloadTask(withResumeData:)`](./urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](./urlsession/downloadtask%28withresumedata,completionhandler%29.md) method of [`URLSession`](./urlsession.md), passing in the `resumeData` object you stored earlier. Then call [`resume()`](./urlsessiontask/resume%28%29.md) on the task to resume the download.
 

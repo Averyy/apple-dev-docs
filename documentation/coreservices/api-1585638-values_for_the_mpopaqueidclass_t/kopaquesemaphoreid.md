@@ -14,7 +14,7 @@
 kOpaqueSemaphoreID = 5
 ```
 
-#### Discussion
+## Discussion
 
 A semaphore.
 

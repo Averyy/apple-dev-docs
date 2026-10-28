@@ -26,7 +26,7 @@ struct LazyVGrid<Content> where Content : View
 
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 Use a lazy vertical grid when you want to display a large, vertically scrollable collection of views arranged in a two dimensional layout. The first view that you provide to the grid’s `content` closure appears in the top row of the column that’s on the grid’s leading edge. Additional views occupy successive cells in the grid, filling the first row from leading to trailing edges, then the second row, and so on. The number of rows can grow unbounded, but you specify the number of columns by providing a corresponding number of [`GridItem`](./griditem.md) instances to the grid’s initializer.
 

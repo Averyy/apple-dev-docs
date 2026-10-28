@@ -21,7 +21,7 @@ The current evaluation context within the active test scope.
 static var current: EvaluationContext { get }
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property outside an evaluation scope triggers a fatal error.
 

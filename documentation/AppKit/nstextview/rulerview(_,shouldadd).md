@@ -19,11 +19,11 @@ func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldAddMarker:(NSRulerMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aMarker` can be added, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The receiver checks for permission to make the change by invoking [`shouldChangeText(in:replacementString:)`](./shouldchangetext%28in,replacementstring%29.md) and returning the return value of that message. If the change is allowed, the receiver is then sent a [`rulerView(_:didAdd:)`](./rulerview%28_,didadd%29.md) message.
 

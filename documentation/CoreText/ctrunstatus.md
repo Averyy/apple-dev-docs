@@ -25,7 +25,7 @@ struct CTRunStatus
 enum CTRunStatus : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 The [`CTRunGetStatus(_:)`](./ctrungetstatus%28_%29.md) function passes back this bitfield to indicate the disposition of the run.
 

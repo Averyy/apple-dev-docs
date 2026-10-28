@@ -16,7 +16,7 @@ nonisolated
 init<Model, Placeholder>(named name: String, bundle: Bundle? = nil, @ViewBuilder content: @escaping (ResolvedModel3D) -> Model, @ViewBuilder placeholder: @escaping () -> Placeholder) where Content == Model3DPlaceholderContent<Model, Placeholder>, Model : View, Placeholder : View
 ```
 
-#### Discussion
+## Discussion
 
 Until the model loads, [`Model3D`](../model3d.md) displays the placeholder view that you specify. When the load operation completes successfully, SwiftUI updates the view to show content that you specify, which you create using the loaded model. For example, you can show a green placeholder, followed by a scaled version of the loaded model:
 

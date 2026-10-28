@@ -21,7 +21,7 @@ A timing or size value isn’t within the allowed range.
 static let invalidEntryCount: NSError
 ```
 
-#### Discussion
+## Discussion
 
 Timing and size values must be `0`, `1`, or the number of samples.
 

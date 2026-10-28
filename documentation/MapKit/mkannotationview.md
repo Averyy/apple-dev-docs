@@ -32,7 +32,7 @@ class MKAnnotationView
 @interface MKAnnotationView : NSView
 ```
 
-#### Overview
+## Overview
 
 *Annotation views* are loosely coupled to a corresponding *annotation object*, which is an object that conforms to the [`MKAnnotation`](./mkannotation.md) protocol. When an annotation’s coordinate point is in the map’s visible region, the map view asks its delegate to provide a corresponding annotation view. MapKit may recycle annotation views and put them into a reuse queue that the map view maintains.
 
@@ -42,13 +42,13 @@ Annotation views anchor to the map at the point that their associated annotation
 
 Additionally, annotation views support the concept of a *selection state*, which determines whether the map displays the annotation view as unselected, selected, or selected and displaying a standard callout view. The user toggles between the selection states through interactions with the annotation view. In the unselected state, the map displays the annotation view, but doesn’t highlight it. In the selected state, the framework highlights the annotation, but doesn’t display the callout. Finally, the map view can display the annotation with both a highlight and a callout. The callout view displays additional information, such as a title string and controls for viewing more information. The annotation object provides the title information, but your annotation view is responsible for providing any custom controls. For more information, see the [Subclassing notes](./mkannotationview.md#Subclassing-notes) section below.
 
-##### Reuse annotation views
+### Reuse annotation views
 
 The design of annotation views enables their reuse as the user (or your app) changes the visible map region. The reuse of annotation views provides significant performance improvements during scrolling by avoiding the creation of new view objects during this time-critical operation. For this reason, don’t tightly couple annotation views to the contents of their associated annotation. Instead, use the properties of an annotation view (or setter methods) to configure the view for a new annotation object.
 
 Whenever you initialize a new annotation view, specify a reuse identifier for that view. When the framework no longer needs annotation views, the map view may put them into a reuse queue. As the framework adds new annotations to the map view, the delegate object can then dequeue and reconfigure an existing view (rather than create a new one) using the [`dequeueReusableAnnotationView(withIdentifier:)`](./mkmapview/dequeuereusableannotationview%28withidentifier%29.md) method of [`MKMapView`](./mkmapview.md).
 
-##### Subclassing notes
+### Subclassing notes
 
 You can use the `MKAnnotationView` class as-is or subclass it to provide custom behavior as necessary. The [`image`](./mkannotationview/image.md) property of the class lets you set the appearance of the annotation view without subclassing directly. You might also create custom subclasses as a convenience and use them to put the annotation view in a known state.
 

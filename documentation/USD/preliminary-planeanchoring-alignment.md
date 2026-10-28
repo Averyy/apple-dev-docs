@@ -5,11 +5,11 @@
 
 An option that specifies the orientation of a plane.
 
-#### Overview
+## Overview
 
 This property is active only for the `preliminary:anchoring:type` value `plane`. The runtime recognizes real-word surfaces such as floors, tables, ceilings as horizontal planes. Vertical planes include walls, doors, and windows.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform token preliminary:planeAnchoring:alignment (
@@ -17,13 +17,13 @@ uniform token preliminary:planeAnchoring:alignment (
 )
 ```
 
-##### Plane anchor types
+### Plane anchor types
 
 - **`horizontal`**: Requests that the runtime anchor the prim on a floor, table, ceiling, or other flat surface.
 - **`vertical`**: Requests that the runtime anchor the prim on a wall, door, window, or other vertical surface.
 - **`any`**: Requests that the runtime anchor the prim on the first horizontal or vertical surface detected.
 
-##### Anchor a prim to a horizontal plane
+### Anchor a prim to a horizontal plane
 
 The following asset definition requests that the runtime anchor this prim to the first surface the runtime detects that occupies a horizontal orientation in relation to the camera.
 

@@ -5,7 +5,7 @@
 
 Manipulate records on-device and save changes to the server.
 
-#### Overview
+## Overview
 
 CloudKit uses records and record zones to manage your app’s schema and the data it contains. You create these objects on the user’s device and save them to iCloud. After saving the objects, other devices can access and use them.
 

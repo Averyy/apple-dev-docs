@@ -21,7 +21,7 @@ An asynchronous load has been canceled.
 NSURLErrorCancelled
 ```
 
-#### Discussion
+## Discussion
 
 `NSURLSession` sends this error to its delegate when a task is cancelled.
 

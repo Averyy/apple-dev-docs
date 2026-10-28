@@ -16,7 +16,7 @@ A value that indicates a person has previously denied authorization to use the f
 case deniedRequestable
 ```
 
-#### Discussion
+## Discussion
 
 /// Provide explanation of the benefits of allowing insights before calling [`requestAuthorization(for:)`](../requestauthorization%28for%29.md).
 

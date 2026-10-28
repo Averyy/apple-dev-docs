@@ -25,7 +25,7 @@ init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiA
 - (instancetype) initWithDataPointer:(void *) dataPointer shape:(NSArray<NSNumber *> *) shape dataType:(MLMultiArrayDataType) dataType strides:(NSArray<NSNumber *> *) strides deallocator:(void (^)(void *bytes)) deallocator error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The caller is responsible for freeing the memory the `dataPointer` points to, by providing a `deallocator` closure.
 

@@ -33,7 +33,7 @@ var endDateComponents: DateComponents? { get }
 @property (atomic, copy, readonly, nullable) NSDateComponents * endDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are set at initialization time and cannot be changed later. If the value of this property is `nil`, the end time is in the distant future.
 

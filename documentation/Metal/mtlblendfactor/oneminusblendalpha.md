@@ -24,7 +24,7 @@ case oneMinusBlendAlpha
 MTLBlendFactorOneMinusBlendAlpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = 1 - a`
 

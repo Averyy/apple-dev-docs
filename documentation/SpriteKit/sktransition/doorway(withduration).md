@@ -25,11 +25,11 @@ class func doorway(withDuration sec: TimeInterval) -> SKTransition
 + (SKTransition *) doorwayWithDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 
-#### Discussion
+## Discussion
 
 The new scene starts in the background and moves closer as the doors open.
 

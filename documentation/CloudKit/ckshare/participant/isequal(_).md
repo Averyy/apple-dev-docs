@@ -25,11 +25,11 @@ func isEqual(_ object: Any) -> Bool
 - (BOOL) isEqual:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if both participants represent the same person, `NO` otherwise
 
-#### Discussion
+## Discussion
 
 This implementation differs from typical `NSObject` `isEqual:` behavior. Standard `isEqual:` implementations compare all meaningful properties for structural equality. This method specifically compares identity to answer “Are these the same person?” rather than “Are these participant objects identical?”
 

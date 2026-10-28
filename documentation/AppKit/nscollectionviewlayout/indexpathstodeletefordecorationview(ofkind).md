@@ -19,11 +19,11 @@ func indexPathsToDeleteForDecorationView(ofKind elementKind: NSCollectionView.De
 - (NSSet<NSIndexPath *> *) indexPathsToDeleteForDecorationViewOfKind:(NSCollectionViewDecorationElementKind) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects representing the decoration views to remove, or an empty array if you do not want to remove any decoration views.
 
-#### Discussion
+## Discussion
 
 When your app inserts or deletes items or sections in the collection view, the collection view calls this method for each of the registered decoration view types. The default implementation returns an empty array, but you can override it and return index paths for each decoration view you want to remove. For example, when a section is removed, you might want to remove the decoration views associated with that section. In that case, you would add index paths to the array that contain the section numbers that were removed.
 

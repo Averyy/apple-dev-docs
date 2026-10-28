@@ -89,14 +89,6 @@ The *statements* inside a code block include declarations,
 expressions, and other kinds of statements and are executed in order
 of their appearance in source code.
 
-<!--
-  TR: What exactly are the scope rules for Swift?
--->
-
-<!--
-  TODO: Discuss scope.  I assume a code block creates a new scope?
--->
-
 > Grammar of a code block:
 >
 > *code-block* → **`{`** *statements*_?_ **`}`**
@@ -124,10 +116,6 @@ is made available in the current scope.
 import <#import kind#> <#module#>.<#symbol name#>
 import <#module#>.<#submodule#>
 ```
-
-<!--
-  TODO: Need to add more to this section.
--->
 
 > Grammar of an import declaration:
 >
@@ -172,12 +160,6 @@ the compiler proves that a value is definitely set before being read.
 > try simplifying the code paths that set the value,
 > or use a variable declaration instead.
 
-<!--
-In the most general case,
-DI reduces to the halting problem,
-as shown by Rice's theorem.
--->
-
 When a constant declaration occurs in the context of a class or structure
 declaration, it's considered a *constant property*.
 Constant declarations aren't computed properties and therefore don't have getters
@@ -191,14 +173,6 @@ in the initializer *expression*.
 let (firstNumber, secondNumber) = (10, 42)
 ```
 
-<!--
-  - test: `constant-decl`
-
-  ```swifttest
-  -> let (firstNumber, secondNumber) = (10, 42)
-  ```
--->
-
 In this example,
 `firstNumber` is a named constant for the value `10`,
 and `secondNumber` is a named constant for the value `42`.
@@ -211,17 +185,6 @@ print("The second number is \(secondNumber).")
 // Prints "The second number is 42."
 ```
 
-<!--
-  - test: `constant-decl`
-
-  ```swifttest
-  -> print("The first number is \(firstNumber).")
-  <- The first number is 10.
-  -> print("The second number is \(secondNumber).")
-  <- The second number is 42.
-  ```
--->
-
 The type annotation (`:` *type*) is optional in a constant declaration
 when the type of the *constant name* can be inferred,
 as described in [Type Inference](Types.md#Type-Inference).
@@ -232,22 +195,6 @@ A constant type property of a class is always implicitly final;
 you can't mark it with the `class` or `final` declaration modifier
 to allow or disallow overriding by subclasses.
 Type properties are discussed in [Type Properties](../LanguageGuide/Properties.md#Type-Properties).
-
-<!--
-  - test: `class-constants-cant-have-class-or-final`
-
-  ```swifttest
-  -> class Super { class let x = 10 }
-  !$ error: class stored properties not supported in classes; did you mean 'static'?
-  !! class Super { class let x = 10 }
-  !!               ~~~~~     ^
-  -> class S { static final let x = 10 }
-  !$ error: static declarations are already final
-  !! class S { static final let x = 10 }
-  !!                  ^~~~~~
-  !!-
-  ```
--->
 
 For more information about constants and for guidance about when to use them,
 see [Constants and Variables](../LanguageGuide/TheBasics.md#Constants-and-Variables) and [Stored Properties](../LanguageGuide/Properties.md#Stored-Properties).
@@ -385,26 +332,6 @@ This expression is evaluated the first time you read the property's value.
 If you overwrite the property's initial value without reading it,
 this expression is evaluated before the first time you write to the property.
 
-<!--
-  - test: `overwriting-property-without-writing`
-
-  ```swifttest
-  >> func loudConst(_ x: Int) -> Int {
-  >>     print("initial value:", x)
-  >>     return x
-  >> }
-  >> var x = loudConst(10)
-  >> x = 20
-  >> print("x:", x)
-  << initial value: 10
-  << x: 20
-  >> var y = loudConst(100)
-  >> print("y:", y)
-  << initial value: 100
-  << y: 100
-  ```
--->
-
 The `willSet` and `didSet` observers provide a way to observe (and to respond appropriately)
 when the value of a variable or property is being set.
 The observers aren't called when the variable or property
@@ -475,66 +402,8 @@ newAndOld.x = 200
 // Prints "Old value 12 - new value 200".
 ```
 
-<!--
-  - test: `didSet-calls-superclass-getter`
-
-  ```swifttest
-  -> class Superclass {
-         private var xValue = 12
-         var x: Int {
-             get { print("Getter was called"); return xValue }
-             set { print("Setter was called"); xValue = newValue }
-         }
-     }
-
-  // This subclass doesn't refer to oldValue in its observer, so the
-  // superclass's getter is called only once to print the value.
-  -> class New: Superclass {
-         override var x: Int {
-             didSet { print("New value \(x)") }
-         }
-     }
-     let new = New()
-     new.x = 100
-  <- Setter was called
-  <- Getter was called
-  <- New value 100
-
-  // This subclass refers to oldValue in its observer, so the superclass's
-  // getter is called once before the setter, and again to print the value.
-  -> class NewAndOld: Superclass {
-         override var x: Int {
-             didSet { print("Old value \(oldValue) - new value \(x)") }
-         }
-     }
-     let newAndOld = NewAndOld()
-     newAndOld.x = 200
-  <- Getter was called
-  <- Setter was called
-  <- Getter was called
-  <- Old value 12 - new value 200
-  ```
--->
-
 For more information and to see an example of how to use property observers,
 see [Property Observers](../LanguageGuide/Properties.md#Property-Observers).
-
-<!--
-  - test: `cant-mix-get-set-and-didSet`
-
-  ```swifttest
-  >> struct S {
-  >>     var x: Int {
-  >>         get { print("S getter"); return 12 }
-  >>         set { return }
-  >>         didSet { print("S didSet") }
-  >>     }
-  >> }
-  !$ error: 'didSet' cannot be provided together with a getter
-  !! didSet { print("S didSet") }
-  !! ^
-  ```
--->
 
 ### Type Variable Properties
 
@@ -573,11 +442,6 @@ Type properties are discussed in [Type Properties](../LanguageGuide/Properties.m
 > *willSet-clause* → *attributes*_?_ **`willSet`** *setter-name*_?_ *code-block* \
 > *didSet-clause* → *attributes*_?_ **`didSet`** *setter-name*_?_ *code-block*
 
-<!--
-  NOTE: Type annotations are required for computed properties -- the
-  types of those properties aren't computed/inferred.
--->
-
 ## Type Alias Declaration
 
 A *type alias declaration* introduces a named alias of an existing type into your program.
@@ -607,18 +471,6 @@ var dictionary1: StringDictionary<Int> = [:]
 var dictionary2: Dictionary<String, Int> = [:]
 ```
 
-<!--
-  - test: `typealias-with-generic`
-
-  ```swifttest
-  -> typealias StringDictionary<Value> = Dictionary<String, Value>
-
-  // The following dictionaries have the same type.
-  -> var dictionary1: StringDictionary<Int> = [:]
-  -> var dictionary2: Dictionary<String, Int> = [:]
-  ```
--->
-
 When a type alias is declared with generic parameters, the constraints on those
 parameters must match exactly the constraints on the existing type's generic parameters.
 For example:
@@ -626,14 +478,6 @@ For example:
 ```swift
 typealias DictionaryOfInts<Key: Hashable> = Dictionary<Key, Int>
 ```
-
-<!--
-  - test: `typealias-with-generic-constraint`
-
-  ```swifttest
-  -> typealias DictionaryOfInts<Key: Hashable> = Dictionary<Key, Int>
-  ```
--->
 
 Because the type alias and the existing type can be used interchangeably,
 the type alias can't introduce additional generic constraints.
@@ -647,27 +491,6 @@ has the same generic parameters and constraints as `Dictionary`.
 ```swift
 typealias Diccionario = Dictionary
 ```
-
-<!--
-  - test: `typealias-using-shorthand`
-
-  ```swifttest
-  -> typealias Diccionario = Dictionary
-  ```
--->
-
-<!--
-  Note that the compiler doesn't currently enforce this. For example, this works but shouldn't:
-  typealias ProvidingMoreSpecificConstraints<T: Comparable & Hashable> = Dictionary<T, Int>
--->
-
-<!--
-  Things that shouldn't work:
-  typealias NotRedeclaringSomeOfTheGenericParameters = Dictionary<T, String>
-  typealias NotRedeclaringAnyOfTheGenericParameters = Dictionary
-  typealias NotProvidingTheCorrectConstraints<T> = Dictionary<T, Int>
-  typealias ProvidingMoreSpecificConstraints<T: Comparable & Hashable> = Dictionary<T, Int>
--->
 
 Inside a protocol declaration,
 a type alias can give a shorter and more convenient name
@@ -685,22 +508,6 @@ func sum<T: Sequence>(_ sequence: T) -> Int where T.Element == Int {
 }
 ```
 
-<!--
-  - test: `typealias-in-protocol`
-
-  ```swifttest
-  -> protocol Sequence {
-         associatedtype Iterator: IteratorProtocol
-         typealias Element = Iterator.Element
-     }
-
-  -> func sum<T: Sequence>(_ sequence: T) -> Int where T.Element == Int {
-         // ...
-  >>     return 9000
-     }
-  ```
--->
-
 Without this type alias,
 the `sum` function would have to refer to the associated type
 as `T.Iterator.Element` instead of `T.Element`.
@@ -712,14 +519,6 @@ See also [Protocol Associated Type Declaration](Declarations.md#Protocol-Associa
 > *typealias-declaration* → *attributes*_?_ *access-level-modifier*_?_ **`typealias`** *typealias-name* *generic-parameter-clause*_?_ *typealias-assignment* \
 > *typealias-name* → *identifier* \
 > *typealias-assignment* → **`=`** *type*
-
-<!--
-  Old grammar:
-  typealias-declaration -> typealias-head typealias-assignment
-  typealias-head -> ``typealias`` typealias-name type-inheritance-clause-OPT
-  typealias-name -> identifier
-  typealias-assignment -> ``=`` type
--->
 
 ## Function Declaration
 
@@ -758,18 +557,8 @@ only when the expression's type and the function's return type
 aren't `Void`
 and aren't an enumeration like `Never` that doesn't have any cases.
 
-<!--
-  As of Swift 5.3,
-  the only way to make an uninhabited type is to create an empty enum,
-  so just say that directly instead of using & defining the compiler jargon.
--->
-
 Functions can return multiple values using a tuple type
 as the return type of the function.
-
-<!--
-  TODO: ^-- Add some more here.
--->
 
 A function definition can appear inside another function declaration.
 This kind of function is known as a *nested function*.
@@ -808,22 +597,6 @@ func f(x: Int, y: Int) -> Int { return x + y }
 f(x: 1, y: 2) // both x and y are labeled
 ```
 
-<!--
-  - test: `default-parameter-names`
-
-  ```swifttest
-  -> func f(x: Int, y: Int) -> Int { return x + y }
-  >> let r0 =
-  -> f(x: 1, y: 2) // both x and y are labeled
-  >> assert(r0 == 3)
-  ```
--->
-
-<!--
-  Rewrite the above to avoid bare expressions.
-  Tracking bug is <rdar://problem/35301593>
--->
-
 You can override the default behavior for argument labels
 with one of the following forms:
 
@@ -846,15 +619,6 @@ The corresponding argument must have no label in function or method calls.
 func repeatGreeting(_ greeting: String, count n: Int) { /* Greet n times */ }
 repeatGreeting("Hello, world!", count: 2) //  count is labeled, greeting is not
 ```
-
-<!--
-  - test: `overridden-parameter-names`
-
-  ```swifttest
-  -> func repeatGreeting(_ greeting: String, count n: Int) { /* Greet n times */ }
-  -> repeatGreeting("Hello, world!", count: 2) //  count is labeled, greeting is not
-  ```
--->
 
 ### Parameter Modifiers
 
@@ -955,14 +719,6 @@ someFunction(a: &someValue, b: &someValue)
 For more information about memory safety and memory exclusivity,
 see [Memory Safety](../LanguageGuide/MemorySafety.md).
 
-<!--
-  When the call-by-reference optimization is in play,
-  it would happen to do what you want.
-  But you still shouldn't do that --
-  as noted above, you're not allowed to depend on
-  behavioral differences that happen because of call by reference.
--->
-
 A closure or nested function
 that captures an in-out parameter must be nonescaping.
 If you need to capture an in-out parameter
@@ -974,23 +730,6 @@ func someFunction(a: inout Int) -> () -> Int {
     return { [a] in return a + 1 }
 }
 ```
-
-<!--
-  - test: `explicit-capture-for-inout`
-
-  ```swifttest
-  -> func someFunction(a: inout Int) -> () -> Int {
-         return { [a] in return a + 1 }
-     }
-  >> class C { var x = 100 }
-  >> let c = C()
-  >> let f = someFunction(a: &c.x)
-  >> c.x = 200
-  >> let r = f()
-  >> print(r, r == c.x)
-  << 101 false
-  ```
--->
 
 If you need to capture and mutate an in-out parameter,
 use an explicit local copy,
@@ -1009,60 +748,8 @@ func multithreadedFunction(queue: DispatchQueue, x: inout Int) {
 }
 ```
 
-<!--
-  - test: `cant-pass-inout-aliasing`
-
-  ```swifttest
-  >> import Dispatch
-  >> func someMutatingOperation(_ a: inout Int) {}
-  -> func multithreadedFunction(queue: DispatchQueue, x: inout Int) {
-        // Make a local copy and manually copy it back.
-        var localX = x
-        defer { x = localX }
-
-        // Operate on localX asynchronously, then wait before returning.
-        queue.async { someMutatingOperation(&localX) }
-        queue.sync {}
-     }
-  ```
--->
-
 For more discussion and examples of in-out parameters,
 see [In-Out Parameters](../LanguageGuide/Functions.md#In-Out-Parameters).
-
-<!--
-  - test: `escaping-cant-capture-inout`
-
-  ```swifttest
-  -> func outer(a: inout Int) -> () -> Void {
-         func inner() {
-             a += 1
-         }
-         return inner
-     }
-  !$ error: escaping local function captures 'inout' parameter 'a'
-  !! return inner
-  !! ^
-  !$ note: parameter 'a' is declared 'inout'
-  !! func outer(a: inout Int) -> () -> Void {
-  !! ^
-  !$ note: captured here
-  !! a += 1
-  !! ^
-  -> func closure(a: inout Int) -> () -> Void {
-         return { a += 1 }
-     }
-  !$ error: escaping closure captures 'inout' parameter 'a'
-  !! return { a += 1 }
-  !! ^
-  !$ note: parameter 'a' is declared 'inout'
-  !! func closure(a: inout Int) -> () -> Void {
-  !! ^
-  !$ note: captured here
-  !! return { a += 1 }
-  !! ^
-  ```
--->
 
 #### Borrowing and Consuming Parameters
 
@@ -1082,13 +769,6 @@ Swift guarantees that object lifetime and
 ownership are correctly managed in all cases.
 These parameter modifiers impact only the relative efficiency
 of particular usage patterns, not correctness.
-
-<!--
-TODO: Describe the default rules.
-Essentially, inits and property setters are consuming,
-and everything else is borrowing.
-Where are copies implicitly inserted?
--->
 
 The `borrowing` modifier indicates that the function
 does not keep the parameter's value.
@@ -1203,13 +883,6 @@ func consumingFunction3(a: consuming A) {
 }
 ```
 
-<!--
-  TODO: `borrowing` and `consuming` keywords with noncopyable argument types
--->
-<!--
-  TODO: Any change of parameter modifier is ABI-breaking
--->
-
 ### Special Kinds of Parameters
 
 Parameters can be ignored,
@@ -1249,49 +922,6 @@ f(x: 7)   // Valid, uses the value provided
 f(7)      // Invalid, missing argument label
 ```
 
-<!--
-  - test: `default-args-and-labels`
-
-  ```swifttest
-  -> func f(x: Int = 42) -> Int { return x }
-  >> let _ =
-  -> f()       // Valid, uses default value
-  >> let _ =
-  -> f(x: 7)   // Valid, uses the value provided
-  >> let _ =
-  -> f(7)      // Invalid, missing argument label
-  !$ error: missing argument label 'x:' in call
-  !! f(7)      // Invalid, missing argument label
-  !!   ^
-  !!   x:
-  ```
--->
-
-<!--
-  Rewrite the above to avoid discarding the function's return value.
-  Tracking bug is <rdar://problem/35301593>
--->
-
-<!--
-  - test: `default-args-evaluated-at-call-site`
-
-  ```swifttest
-  -> func shout() -> Int {
-        print("evaluated")
-        return 10
-     }
-  -> func foo(x: Int = shout()) { print("x is \(x)") }
-  -> foo(x: 100)
-  << x is 100
-  -> foo()
-  << evaluated
-  << x is 10
-  -> foo()
-  << evaluated
-  << x is 10
-  ```
--->
-
 ### Special Kinds of Methods
 
 Methods on an enumeration or a structure
@@ -1310,40 +940,6 @@ or with either the `static` or `class` declaration modifier for classes.
 A class type method marked with the `class` declaration modifier
 can be overridden by a subclass implementation;
 a class type method marked with `class final` or `static` can't be overridden.
-
-<!--
-  - test: `overriding-class-methods-err`
-
-  ```swifttest
-  -> class S { class final func f() -> Int { return 12 } }
-  -> class SS: S { override class func f() -> Int { return 120 } }
-  !$ error: class method overrides a 'final' class method
-  !! class SS: S { override class func f() -> Int { return 120 } }
-  !!                                  ^
-  !$ note: overridden declaration is here
-  !! class S { class final func f() -> Int { return 12 } }
-  !!                           ^
-  -> class S2 { static func f() -> Int { return 12 } }
-  -> class SS2: S2 { override static func f() -> Int { return 120 } }
-  !$ error: cannot override static method
-  !! class SS2: S2 { override static func f() -> Int { return 120 } }
-  !! ^
-  !$ note: overridden declaration is here
-  !! class S2 { static func f() -> Int { return 12 } }
-  !! ^
-  ```
--->
-
-<!--
-  - test: `overriding-class-methods`
-
-  ```swifttest
-  -> class S3 { class func f() -> Int { return 12 } }
-  -> class SS3: S3 { override class func f() -> Int { return 120 } }
-  -> print(SS3.f())
-  <- 120
-  ```
--->
 
 ### Methods with Special Names
 
@@ -1372,13 +968,6 @@ and adds labeled or unlabeled arguments ---
 for example, `callAsFunction(_:_:)` and `callAsFunction(something:)`
 are also valid call-as-function method names.
 
-<!--
-  Above, callAsFunction( is in code voice even though
-  it's not actually a symbol that exists in the reader's code.
-  Per discussion with Chuck, this is the closest typographic convention
-  to what we're trying to express here.
--->
-
 The following function calls are equivalent:
 
 ```swift
@@ -1393,25 +982,6 @@ callable(4, scale: 2)
 callable.callAsFunction(4, scale: 2)
 // Both function calls print 208.
 ```
-
-<!--
-  - test: `call-as-function`
-
-  ```swifttest
-  -> struct CallableStruct {
-         var value: Int
-         func callAsFunction(_ number: Int, scale: Int) {
-             print(scale * (number + value))
-         }
-     }
-  -> let callable = CallableStruct(value: 100)
-  -> callable(4, scale: 2)
-  -> callable.callAsFunction(4, scale: 2)
-  // Both function calls print 208.
-  << 208
-  << 208
-  ```
--->
 
 The call-as-function methods
 and the methods from the `dynamicCallable` attribute
@@ -1434,25 +1004,6 @@ For example:
 let someFunction1: (Int, Int) -> Void = callable(_:scale:)  // Error
 let someFunction2: (Int, Int) -> Void = callable.callAsFunction(_:scale:)
 ```
-
-<!--
-  - test: `call-as-function-err`
-
-  ```swifttest
-  >> struct CallableStruct {
-  >>     var value: Int
-  >>     func callAsFunction(_ number: Int, scale: Int) { }
-  >> }
-  >> let callable = CallableStruct(value: 100)
-  -> let someFunction1: (Int, Int) -> Void = callable(_:scale:)  // Error
-  -> let someFunction2: (Int, Int) -> Void = callable.callAsFunction(_:scale:)
-  >> _ = someFunction1 // suppress unused-constant warning
-  >> _ = someFunction2 // suppress unused-constant warning
-  !$ error: cannot find 'callable(_:scale:)' in scope
-  !! let someFunction1: (Int, Int) -> Void = callable(_:scale:)  // Error
-  !! ^~~~~~~~~~~~~~~~~~
-  ```
--->
 
 The `subscript(dynamicMember:)` subscript
 enables syntactic sugar for member lookup,
@@ -1515,16 +1066,6 @@ func someFunction(callback: () throws -> Void) rethrows {
 }
 ```
 
-<!--
-  - test: `rethrows`
-
-  ```swifttest
-  -> func someFunction(callback: () throws -> Void) rethrows {
-         try callback()
-     }
-  ```
--->
-
 A rethrowing function or method can contain a `throw` statement
 only inside a `catch` clause.
 This lets you call the throwing function inside a `do`-`catch` statement
@@ -1551,50 +1092,6 @@ func someFunction(callback: () throws -> Void) rethrows {
 }
 ```
 
-<!--
-  - test: `double-negative-rethrows`
-
-  ```swifttest
-  >> enum SomeError: Error { case error }
-  >> enum AnotherError: Error { case error }
-  -> func alwaysThrows() throws {
-         throw SomeError.error
-     }
-  -> func someFunction(callback: () throws -> Void) rethrows {
-        do {
-           try callback()
-           try alwaysThrows()  // Invalid, alwaysThrows() isn't a throwing parameter
-        } catch {
-           throw AnotherError.error
-        }
-     }
-  !$ error: a function declared 'rethrows' may only throw if its parameter does
-  !!               throw AnotherError.error
-  !!               ^
-  ```
--->
-
-<!--
-  - test: `throwing-in-rethrowing-function`
-
-  ```swifttest
-  -> enum SomeError: Error { case c, d }
-  -> func f1(callback: () throws -> Void) rethrows {
-         do {
-             try callback()
-         } catch {
-             throw SomeError.c  // OK
-         }
-     }
-  -> func f2(callback: () throws -> Void) rethrows {
-         throw SomeError.d  // Error
-     }
-  !$ error: a function declared 'rethrows' may only throw if its parameter does
-  !! throw SomeError.d  // Error
-  !! ^
-  ```
--->
-
 A throwing method can't override a rethrowing method,
 and a throwing method can't satisfy a protocol requirement for a rethrowing method.
 That said, a rethrowing method can override a throwing method,
@@ -1614,13 +1111,6 @@ preserves type information about the error.
 However, unlike marking a function `rethrows`,
 this approach doesn't prevent the function
 from throwing an error of the same type.
-
-<!--
-TODO: Revisit the comparison between rethrows and throws(E) above,
-since it seems likely that the latter will generally replace the former.
-
-See also rdar://128972373
--->
 
 ### Asynchronous Functions and Methods
 
@@ -1657,20 +1147,6 @@ An asynchronous method can't override a synchronous method,
 and an asynchronous method can't satisfy a protocol requirement for a synchronous method.
 That said, a synchronous method can override an asynchronous method,
 and a synchronous method can satisfy a protocol requirement for an asynchronous method.
-
-<!--
-  - test: `sync-satisfy-async-protocol-requirements`
-
-  ```swifttest
-  >> protocol P { func f() async -> Int }
-  >> class Super: P {
-  >>     func f() async -> Int { return 12 }
-  >> }
-  >> class Sub: Super {
-  >>     func f() -> Int { return 120 }
-  >> }
-  ```
--->
 
 ### Functions that Never Return
 
@@ -1716,15 +1192,6 @@ but the new method must preserve its return type and nonreturning behavior.
 > *parameter-type-annotation* → **`:`** *attributes*_?_ *parameter-modifier*_?_ *type* \
 > *parameter-modifier* → **`inout`** | **`borrowing`** | **`consuming`**
 > *default-argument-clause* → **`=`** *expression*
-
-<!--
-  NOTE: Code block is optional in the context of a protocol.
-  Everywhere else, it's required.
-  We could refactor to have a separation between function definition/declaration.
-  There's also the low-level "asm name" FFI
-  which is a definition and declaration corner case.
-  Let's just deal with this difference in prose.
--->
 
 ## Enumeration Declaration
 
@@ -1796,29 +1263,6 @@ let f = Number.integer
 let evenInts: [Number] = [0, 2, 4, 6].map(f)
 ```
 
-<!--
-  - test: `enum-case-as-function`
-
-  ```swifttest
-  -> enum Number {
-        case integer(Int)
-        case real(Double)
-     }
-  -> let f = Number.integer
-  -> // f is a function of type (Int) -> Number
-
-  -> // Apply f to create an array of Number instances with integer values
-  -> let evenInts: [Number] = [0, 2, 4, 6].map(f)
-  ```
--->
-
-<!--
-  No expectation for evenInts because there isn't a good way to spell one.
-  Using print() puts a module prefix like tmpabc in front of Number
-  so the expectation would need to be a regex (which we don't have),
-  and assert() would require Number to conform to Equatable.
--->
-
 For more information and to see examples of cases with associated value types,
 see [Associated Values](../LanguageGuide/Enumerations.md#Associated-Values).
 
@@ -1836,33 +1280,12 @@ To enable indirection for a particular enumeration case,
 mark it with the `indirect` declaration modifier.
 An indirect case must have an associated value.
 
-<!--
-  TODO The word "enable" is kind of a weasel word.
-  Better to have a more concrete discussion of exactly when
-  it is and isn't used.
-  For example, does "indirect enum { X(Int) } mark X as indirect?
--->
-
 ```swift
 enum Tree<T> {
     case empty
     indirect case node(value: T, left: Tree, right: Tree)
 }
 ```
-
-<!--
-  - test: `indirect-enum`
-
-  ```swifttest
-  -> enum Tree<T> {
-        case empty
-        indirect case node(value: T, left: Tree, right: Tree)
-     }
-  >> let l1 = Tree.node(value: 10, left: Tree.empty, right: Tree.empty)
-  >> let l2 = Tree.node(value: 100, left: Tree.empty, right: Tree.empty)
-  >> let t = Tree.node(value: 50, left: l1, right: l2)
-  ```
--->
 
 To enable indirection for all the cases of an enumeration
 that have an associated value,
@@ -1874,35 +1297,6 @@ An enumeration that's marked with the `indirect` modifier
 can contain a mixture of cases that have associated values and cases those that don't.
 That said,
 it can't contain any cases that are also marked with the `indirect` modifier.
-
-<!--
-  It really should be an associated value **that includes the enum type**
-  but right now the compiler is satisfied with any associated value.
-  Alex emailed Joe Groff 2015-07-08 about this.
--->
-
-<!--
-  assertion indirect-in-indirect
-
-  -> indirect enum E { indirect case c(E) }
-  !! <REPL Input>:1:19: error: enum case in 'indirect' enum cannot also be 'indirect'
-  !! indirect enum E { indirect case c(E) }
-  !!                   ^
--->
-
-<!--
-  assertion indirect-without-recursion
-
-  -> enum E { indirect case c }
-  !! <REPL Input>:1:10: error: enum case 'c' without associated value cannot be 'indirect'
-  !! enum E { indirect case c }
-  !!          ^
-
-  -> enum E1 { indirect case c() }     // This is fine, but probably shouldn't be
-  -> enum E2 { indirect case c(Int) }  // This is fine, but probably shouldn't be
-
-  -> indirect enum E3 { case x }
--->
 
 ### Enumerations with Cases of a Raw-Value Type
 
@@ -1932,11 +1326,6 @@ or `ExpressibleByExtendedGraphemeClusterLiteral` for string literals
 that contain only a single character.
 Each case must have a unique name and be assigned a unique raw value.
 
-<!--
-  The list of ExpressibleBy... protocols above also appears in LexicalStructure_Literals.
-  This list is shorter because these five protocols are explicitly supported in the compiler.
--->
-
 If the raw-value type is specified as `Int`
 and you don't assign a value to the cases explicitly,
 they're implicitly assigned the values `0`, `1`, `2`, and so on.
@@ -1948,16 +1337,6 @@ enum ExampleEnum: Int {
     case a, b, c = 5, d
 }
 ```
-
-<!--
-  - test: `raw-value-enum`
-
-  ```swifttest
-  -> enum ExampleEnum: Int {
-        case a, b, c = 5, d
-     }
-  ```
--->
 
 In the above example, the raw value of `ExampleEnum.a` is `0` and the value of
 `ExampleEnum.b` is `1`. And because the value of `ExampleEnum.c` is
@@ -1973,16 +1352,6 @@ enum GamePlayMode: String {
     case cooperative, individual, competitive
 }
 ```
-
-<!--
-  - test: `raw-value-enum-implicit-string-values`
-
-  ```swifttest
-  -> enum GamePlayMode: String {
-        case cooperative, individual, competitive
-     }
-  ```
--->
 
 In the above example, the raw value of `GamePlayMode.cooperative` is `"cooperative"`,
 the raw value of `GamePlayMode.individual` is `"individual"`,
@@ -2014,29 +1383,6 @@ The enumeration type is pattern-matched against the enumeration case patterns
 in the case blocks of the `switch` statement,
 as described in [Enumeration Case Pattern](Patterns.md#Enumeration-Case-Pattern).
 
-<!--
-  FIXME: Or use if-case:
-  enum E { case c(Int) }
-  let e = E.c(100)
-  if case E.c(let i) = e { print(i) }
-  // prints 100
--->
-
-<!--
-  NOTE: Note that you can require protocol adoption,
-  by using a protocol type as the raw-value type,
-  but you do need to make it be one of the types
-  that support = in order for you to specify the raw values.
-  You can have: <#raw-value type, protocol conformance#>.
-  UPDATE: You can only have one raw-value type specified.
-  I changed the grammar to be more restrictive in light of this.
--->
-
-<!--
-  NOTE: Per Doug and Ted, "('->' type)?" isn't part of the grammar.
-  We removed it from our grammar, below.
--->
-
 > Grammar of an enumeration declaration:
 >
 > *enum-declaration* → *attributes*_?_ *access-level-modifier*_?_ *union-style-enum* \
@@ -2059,20 +1405,6 @@ as described in [Enumeration Case Pattern](Patterns.md#Enumeration-Case-Pattern)
 > *raw-value-style-enum-case* → *enum-case-name* *raw-value-assignment*_?_ \
 > *raw-value-assignment* → **`=`** *raw-value-literal* \
 > *raw-value-literal* → *numeric-literal* | *static-string-literal* | *boolean-literal*
-
-<!--
-  NOTE: The two types of enums are sufficiently different enough to warrant separating
-  the grammar accordingly. ([Contributor 6004] pointed this out in his email.)
-  I'm not sure I'm happy with the names I've chosen for two kinds of enums,
-  so please let me know if you can think of better names (Tim and Dave are OK with them)!
-  I chose union-style-enum, because this kind of enum behaves like a discriminated union,
-  not like an ordinary enum type. They're a kind of "sum" type in the language
-  of ADTs (Algebraic Data Types). Functional languages, like F# for example,
-  actually have both types (discriminated unions and enumeration types),
-  because they behave differently. I'm not sure why we've blended them together,
-  especially given that they have distinct syntactic declaration requirements
-  and they behave differently.
--->
 
 ## Structure Declaration
 
@@ -2172,15 +1504,6 @@ designated initializers.
 A class can override properties, methods, subscripts, and initializers of its superclass.
 Overridden properties, methods, subscripts,
 and designated initializers must be marked with the `override` declaration modifier.
-
-<!--
-  - test: `designatedInitializersRequireOverride`
-
-  ```swifttest
-  -> class C { init() {} }
-  -> class D: C { override init() { super.init() } }
-  ```
--->
 
 To require that subclasses implement a superclass's initializer,
 mark the superclass's initializer with the `required` declaration modifier.
@@ -2293,14 +1616,6 @@ see [Classes Are Reference Types](../LanguageGuide/ClassesAndStructures.md#Class
 You can extend the behavior of an actor type with an extension declaration,
 as discussed in [Extension Declaration](Declarations.md#Extension-Declaration).
 
-<!--
-  TODO Additional bits from the SE-0306 actors proposal:
-
-  Partial applications of isolated functions are only permitted
-  when the expression is a direct argument
-  whose corresponding parameter is non-escaping and non-Sendable.
--->
-
 > Grammar of an actor declaration:
 >
 > *actor-declaration* → *attributes*_?_ *access-level-modifier*_?_ **`actor`** *actor-name* *generic-parameter-clause*_?_ *type-inheritance-clause*_?_ *generic-where-clause*_?_ *actor-body* \
@@ -2368,14 +1683,6 @@ and for guidance about how to access optional protocol members ---
 for example, when you're not sure whether a conforming type implements them ---
 see [Optional Protocol Requirements](../LanguageGuide/Protocols.md#Optional-Protocol-Requirements).
 
-<!--
-  TODO: Currently, you can't check for an optional initializer,
-  so we're leaving those out of the documentation, even though you can mark
-  an initializer with the @optional attribute. It's still being decided by the
-  compiler team. Update this section if they decide to make everything work
-  properly for optional initializer requirements.
--->
-
 The cases of an enumeration can satisfy
 protocol requirements for type members.
 Specifically,
@@ -2399,21 +1706,6 @@ enum MyEnum: SomeProtocol {
 }
 ```
 
-<!--
-  - test: `enum-case-satisfy-protocol-requirement`
-
-  ```swifttest
-  -> protocol SomeProtocol {
-         static var someValue: Self { get }
-         static func someFunction(x: Int) -> Self
-     }
-  -> enum MyEnum: SomeProtocol {
-         case someValue
-         case someFunction(x: Int)
-     }
-  ```
--->
-
 To restrict the adoption of a protocol to class types only,
 include the `AnyObject` protocol in the *inherited protocols*
 list after the colon.
@@ -2424,16 +1716,6 @@ protocol SomeProtocol: AnyObject {
     /* Protocol members go here. */
 }
 ```
-
-<!--
-  - test: `protocol-declaration`
-
-  ```swifttest
-  -> protocol SomeProtocol: AnyObject {
-         /* Protocol members go here. */
-     }
-  ```
--->
 
 Any protocol that inherits from a protocol that's marked with the `AnyObject` requirement
 can likewise be adopted only by class types.
@@ -2452,17 +1734,6 @@ protocol SomeRefinedProtocol: SomeBaseClass {
     /* Protocol members go here. */
 }
 ```
-
-<!--
-  - test: `protocol-declaration-superclass`
-
-  ```swifttest
-  -> class SomeBaseClass {}
-  -> protocol SomeRefinedProtocol: SomeBaseClass {
-         /* Protocol members go here. */
-     }
-  ```
--->
 
 Protocols are named types, and thus they can appear in all the same places
 in your code as other named types, as discussed in [Protocols as Types](../LanguageGuide/Protocols.md#Protocols-as-Types).
@@ -2529,40 +1800,6 @@ use the same keyword as the type they extend uses.
 Extensions that provide a default implementation for a type property requirement
 use the `static` keyword.
 
-<!--
-  - test: `protocols-with-type-property-requirements`
-
-  ```swifttest
-  -> protocol P { static var x: Int { get } }
-  -> protocol P2 { class var x: Int { get } }
-  !$ error: class properties are only allowed within classes; use 'static' to declare a requirement fulfilled by either a static or class property
-  !! protocol P2 { class var x: Int { get } }
-  !!              ~~~~~ ^
-  !!              static
-  -> struct S: P { static var x = 10 }
-  -> class C1: P { static var x = 20 }
-  -> class C2: P { class var x = 30 }
-  !$ error: class stored properties not supported in classes; did you mean 'static'?
-  !! class C2: P { class var x = 30 }
-  !!               ~~~~~     ^
-  ```
--->
-
-<!--
-  - test: `protocol-type-property-default-implementation`
-
-  ```swifttest
-  -> protocol P { static var x: Int { get } }
-  -> extension P { static var x: Int { return 100 } }
-  -> struct S1: P { }
-  -> print(S1.x)
-  <- 100
-  -> struct S2: P { static var x = 10 }
-  -> print(S2.x)
-  <- 10
-  ```
--->
-
 See also [Variable Declaration](Declarations.md#Variable-Declaration).
 
 > Grammar of a protocol property declaration:
@@ -2591,10 +1828,6 @@ Extensions that provide a default implementation for a type method requirement
 use the `static` keyword.
 
 See also [Function Declaration](Declarations.md#Function-Declaration).
-
-<!--
-  TODO: Talk about using ``Self`` in parameters and return types.
--->
 
 > Grammar of a protocol method declaration:
 >
@@ -2687,100 +1920,6 @@ protocol SubProtocolA: SomeProtocol {
 // This syntax is preferred.
 protocol SubProtocolB: SomeProtocol where SomeType: Equatable { }
 ```
-
-<!--
-  - test: `protocol-associatedtype`
-
-  ```swifttest
-  -> protocol SomeProtocol {
-         associatedtype SomeType
-     }
-
-  -> protocol SubProtocolA: SomeProtocol {
-         // This syntax produces a warning.
-         associatedtype SomeType: Equatable
-     }
-  !$ warning: redeclaration of associated type 'SomeType' from protocol 'SomeProtocol' is better expressed as a 'where' clause on the protocol
-  !! associatedtype SomeType: Equatable
-  !! ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-  !!-
-  !$ note: 'SomeType' declared here
-  !! associatedtype SomeType
-  !! ^
-
-  // This syntax is preferred.
-  -> protocol SubProtocolB: SomeProtocol where SomeType: Equatable { }
-  ```
--->
-
-<!--
-  TODO: Finish writing this section after WWDC.
--->
-
-<!--
-  NOTE:
-  What are associated types? What are they "associated" with? Is "Self"
-  an implicit associated type of every protocol? [...]
-
-  Here's an initial stab:
-  An Associated Type is associated with an implementation of that protocol.
-  The protocol declares it, and is defined as part of the protocol's implementation.
-
-  "The ``Self`` type allows you to refer to the eventual type of ``self``
-  (where ``self`` is the type that conforms to the protocol).
-  In addition to ``Self``, a protocol's operations often need to refer to types
-  that are related to the type of ``Self``, such as a type of data stored in a
-  collection or the node and edge types of a graph." Is this still true?
-
-    -> If we expand the discussion here,
-    -> add a link from Types_SelfType
-    -> to give more details about Self in protocols.
-
-  NOTES from Doug:
-  At one point, Self was an associated type, but that's the wrong modeling of
-  the problem.  Self is the stand-in type for the thing that conforms to the
-  protocol.  It's weird to think of it as an associated type because it's the
-  primary thing.  It's certainly not an associated type.  In many ways, you
-  can think of associated types as being parameters that get filled in by the
-  conformance of a specific concrete type to that protocol.
-
-  There's a substitution mapping here.  The parameters are associated with
-  Self because they're derived from Self.  When you have a concrete type that
-  conforms to a protocol, it supplies concrete types for Self and all the
-  associated types.
-
-  The associated types are like parameters, but they're associated with Self in
-  the protocol.  Self is the eventual type of the thing that conforms to the
-  protocol -- you have to have a name for it so you can do things with it.
-
-  We use "associated" in contrast with generic parameters in interfaces in C#.
-  The interesting thing there is that they don't have a name like Self for the
-  actual type, but you can name any of these independent types.    In theory,
-  they're often independent but in practice they're often not -- you have an
-  interface parameterized on T, where all the uses of the thing are that T are
-  the same as Self.  Instead of having these independent parameters to an
-  interface, we have a named thing (Self) and all these other things that hand
-  off of it.
-
-  Here's a stupid simple way to see the distinction:
-
-  C#:
-
-  interface Sequence <Element> {}
-
-  class String : Sequence <UnicodeScalar>
-  class String : Sequence <GraphemeCluster>
-
-  These are both fine in C#
-
-  Swift:
-
-  protocol Sequence { typealias Element }
-
-  class String : Sequence { typealias Element = ... }
-
-  Here you have to pick one or the other -- you can't have both.
--->
 
 See also [Type Alias Declaration](Declarations.md#Type-Alias-Declaration).
 
@@ -2895,24 +2034,6 @@ struct SomeStruct {
 }
 ```
 
-<!--
-  - test: `failable`
-
-  ```swifttest
-  -> struct SomeStruct {
-         let property: String
-         // produces an optional instance of 'SomeStruct'
-         init?(input: String) {
-             if input.isEmpty {
-                 // discard 'self' and return 'nil'
-                 return nil
-             }
-             property = input
-         }
-     }
-  ```
--->
-
 You call an `init?` failable initializer in the same way that you call a nonfailable initializer,
 except that you must deal with the optionality of the result.
 
@@ -2923,19 +2044,6 @@ if let actualInstance = SomeStruct(input: "Hello") {
     // initialization of 'SomeStruct' failed and the initializer returned 'nil'
 }
 ```
-
-<!--
-  - test: `failable`
-
-  ```swifttest
-  -> if let actualInstance = SomeStruct(input: "Hello") {
-         // do something with the instance of 'SomeStruct'
-  >>     _ = actualInstance
-     } else {
-         // initialization of 'SomeStruct' failed and the initializer returned 'nil'
-     }
-  ```
--->
 
 A failable initializer can return `nil`
 at any point in the implementation of the initializer's body.
@@ -3078,12 +2186,6 @@ To illustrate this behavior,
 the following example defines two protocols
 and a generic type that conditionally conforms to both protocols.
 
-<!--
-  This test needs to be compiled so that it will recognize Pair's
-  CustomStringConvertible conformance -- the deprecated REPL doesn't
-  seem to use the description property at all.
--->
-
 ```swift
 protocol Loggable {
     func log()
@@ -3125,51 +2227,6 @@ extension String: TitledLoggable {
 }
 ```
 
-<!--
-  - test: `conditional-conformance`
-
-  ```swifttest
-  -> protocol Loggable {
-         func log()
-     }
-     extension Loggable {
-         func log() {
-             print(self)
-         }
-     }
-
-     protocol TitledLoggable: Loggable {
-         static var logTitle: String { get }
-     }
-     extension TitledLoggable {
-         func log() {
-             print("\(Self.logTitle): \(self)")
-         }
-     }
-
-     struct Pair<T>: CustomStringConvertible {
-         let first: T
-         let second: T
-         var description: String {
-             return "(\(first), \(second))"
-         }
-     }
-
-     extension Pair: Loggable where T: Loggable { }
-     extension Pair: TitledLoggable where T: TitledLoggable {
-         static var logTitle: String {
-             return "Pair of '\(T.logTitle)'"
-         }
-     }
-
-     extension String: TitledLoggable {
-        static var logTitle: String {
-           return "String"
-        }
-     }
-  ```
--->
-
 The `Pair` structure conforms to `Loggable` and `TitledLoggable`
 whenever its generic type conforms to `Loggable` or `TitledLoggable`, respectively.
 In the example below,
@@ -3184,16 +2241,6 @@ let oneAndTwo = Pair(first: "one", second: "two")
 oneAndTwo.log()
 // Prints "Pair of 'String': (one, two)".
 ```
-
-<!--
-  - test: `conditional-conformance`
-
-  ```swifttest
-  -> let oneAndTwo = Pair(first: "one", second: "two")
-  -> oneAndTwo.log()
-  <- Pair of 'String': (one, two)
-  ```
--->
 
 However, when `oneAndTwo` is used in a generic context
 or as an instance of the `Loggable` protocol,
@@ -3210,18 +2257,6 @@ func doSomething<T: Loggable>(with x: T) {
 doSomething(with: oneAndTwo)
 // Prints "(one, two)".
 ```
-
-<!--
-  - test: `conditional-conformance`
-
-  ```swifttest
-  -> func doSomething<T: Loggable>(with x: T) {
-        x.log()
-     }
-     doSomething(with: oneAndTwo)
-  <- (one, two)
-  ```
--->
 
 When `log()` is called on the instance that's passed to `doSomething(_:)`,
 the customized title is omitted from the logged string.
@@ -3268,36 +2303,6 @@ extension Array: Serializable where Element == String {
 // Error: Redundant conformance of 'Array<Element>' to protocol 'Serializable'.
 ```
 
-<!--
-  - test: `multiple-conformances`
-
-  ```swifttest
-  -> protocol Serializable {
-        func serialize() -> Any
-     }
-
-     extension Array: Serializable where Element == Int {
-         func serialize() -> Any {
-             // implementation
-  >>         return 0
-  ->     }
-     }
-     extension Array: Serializable where Element == String {
-         func serialize() -> Any {
-             // implementation
-  >>         return 0
-  ->     }
-     }
-  // Error: Redundant conformance of 'Array<Element>' to protocol 'Serializable'.
-  !$ error: conflicting conformance of 'Array<Element>' to protocol 'Serializable'; there cannot be more than one conformance, even with different conditional bounds
-  !! extension Array: Serializable where Element == String {
-  !! ^
-  !$ note: 'Array<Element>' declares conformance to protocol 'Serializable' here
-  !! extension Array: Serializable where Element == Int {
-  !! ^
-  ```
--->
-
 If you need to add conditional conformance based on multiple concrete types,
 create a new protocol that each type can conform to
 and use that protocol as the requirement when declaring conditional conformance.
@@ -3313,24 +2318,6 @@ extension Array: Serializable where Element: SerializableInArray {
     }
 }
 ```
-
-<!--
-  - test: `multiple-conformances-success`
-
-  ```swifttest
-  >> protocol Serializable { }
-  -> protocol SerializableInArray { }
-     extension Int: SerializableInArray { }
-     extension String: SerializableInArray { }
-
-  -> extension Array: Serializable where Element: SerializableInArray {
-         func serialize() -> Any {
-             // implementation
-  >>         return 0
-  ->     }
-     }
-  ```
--->
 
 #### Resolving Implicit Redundancy
 
@@ -3370,31 +2357,6 @@ extension Array: TitledLoggable where Element: TitledLoggable {
 extension Array: MarkedLoggable where Element: MarkedLoggable { }
 ```
 
-<!--
-  - test: `conditional-conformance`
-
-  ```swifttest
-  -> protocol MarkedLoggable: Loggable {
-        func markAndLog()
-     }
-
-     extension MarkedLoggable {
-        func markAndLog() {
-           print("----------")
-           log()
-        }
-     }
-
-     extension Array: Loggable where Element: Loggable { }
-     extension Array: TitledLoggable where Element: TitledLoggable {
-        static var logTitle: String {
-           return "Array of '\(Element.logTitle)'"
-        }
-     }
-     extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  ```
--->
-
 Without the extension
 to explicitly declare conditional conformance to `Loggable`,
 the other `Array` extensions would implicitly create these declarations,
@@ -3405,87 +2367,6 @@ extension Array: Loggable where Element: TitledLoggable { }
 extension Array: Loggable where Element: MarkedLoggable { }
 // Error: Redundant conformance of 'Array<Element>' to protocol 'Loggable'.
 ```
-
-<!--
-  - test: `conditional-conformance-implicit-overlap`
-
-  ```swifttest
-  >> protocol Loggable { }
-  >> protocol MarkedLoggable : Loggable { }
-  >> protocol TitledLoggable : Loggable { }
-  -> extension Array: Loggable where Element: TitledLoggable { }
-     extension Array: Loggable where Element: MarkedLoggable { }
-  // Error: Redundant conformance of 'Array<Element>' to protocol 'Loggable'.
-  !$ error: conflicting conformance of 'Array<Element>' to protocol 'Loggable'; there cannot be more than one conformance, even with different conditional bounds
-  !! extension Array: Loggable where Element: MarkedLoggable { }
-  !! ^
-  !$ note: 'Array<Element>' declares conformance to protocol 'Loggable' here
-  !! extension Array: Loggable where Element: TitledLoggable { }
-  !! ^
-  ```
--->
-
-<!--
-  - test: `types-cant-have-multiple-implicit-conformances`
-
-  ```swifttest
-  >> protocol Loggable { }
-     protocol TitledLoggable: Loggable { }
-     protocol MarkedLoggable: Loggable { }
-     extension Array: TitledLoggable where Element: TitledLoggable {
-         // ...
-     }
-     extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !$ error: conditional conformance of type 'Array<Element>' to protocol 'TitledLoggable' does not imply conformance to inherited protocol 'Loggable'
-  !! extension Array: TitledLoggable where Element: TitledLoggable {
-  !! ^
-  !$ note: did you mean to explicitly state the conformance like 'extension Array: Loggable where ...'?
-  !! extension Array: TitledLoggable where Element: TitledLoggable {
-  !! ^
-  !$ error: type 'Array<Element>' does not conform to protocol 'MarkedLoggable'
-  !! extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !! ^
-  !$ error: type 'Element' does not conform to protocol 'TitledLoggable'
-  !! extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !! ^
-  !$ error: 'MarkedLoggable' requires that 'Element' conform to 'TitledLoggable'
-  !! extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !! ^
-  !$ note: requirement specified as 'Element' : 'TitledLoggable'
-  !! extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !! ^
-  !$ note: requirement from conditional conformance of 'Array<Element>' to 'Loggable'
-  !! extension Array: MarkedLoggable where Element: MarkedLoggable { }
-  !! ^
-  ```
--->
-
-<!--
-  - test: `extension-can-have-where-clause`
-
-  ```swifttest
-  >> extension Array where Element: Equatable {
-         func f(x: Array) -> Int { return 7 }
-     }
-  >> let x = [1, 2, 3]
-  >> let y = [10, 20, 30]
-  >> let r0 = x.f(x: y)
-  >> assert(r0 == 7)
-  ```
--->
-
-<!--
-  - test: `extensions-can-have-where-clause-and-inheritance-together`
-
-  ```swifttest
-  >> protocol P { func foo() -> Int }
-  >> extension Array: P where Element: Equatable {
-  >>    func foo() -> Int { return 0 }
-  >> }
-  >> let r0 = [1, 2, 3].foo()
-  >> assert(r0 == 0)
-  ```
--->
 
 > Grammar of an extension declaration:
 >
@@ -3568,21 +2449,6 @@ to allow subclasses to override the superclass’s implementation.
 In a class declaration,
 the `static` keyword has the same effect as marking the declaration
 with both the `class` and `final` declaration modifiers.
-
-<!--
-  - test: `cant-override-static-subscript-in-subclass`
-
-  ```swifttest
-  -> class Super { static subscript(i: Int) -> Int { return 10 } }
-  -> class Sub: Super { override static subscript(i: Int) -> Int { return 100 } }
-  !$ error: cannot override static subscript
-  !! class Sub: Super { override static subscript(i: Int) -> Int { return 100 } }
-  !!                                    ^
-  !$ note: overridden declaration is here
-  !! class Super { static subscript(i: Int) -> Int { return 10 } }
-  !!                      ^
-  ```
--->
 
 > Grammar of a subscript declaration:
 >
@@ -3853,14 +2719,6 @@ that introduces the declaration.
   for example, when you're not sure whether a conforming type implements them ---
   see [Optional Protocol Requirements](../LanguageGuide/Protocols.md#Optional-Protocol-Requirements).
 
-<!--
-  TODO: Currently, you can't check for an optional initializer,
-  so we're leaving those out of the documentation, even though you can mark
-  an initializer with the @optional attribute. It's still being decided by the
-  compiler team. Update this section if they decide to make everything work
-  properly for optional initializer requirements.
--->
-
 - term `required`:
   Apply this modifier to a designated or convenience initializer
   of a class to indicate that every subclass must implement that initializer.
@@ -4010,13 +2868,3 @@ as discussed in [Getters and Setters](../LanguageGuide/AccessControl.md#Getters-
 > *mutation-modifier* → **`mutating`** | **`nonmutating`**
 >
 > *actor-isolation-modifier* → **`nonisolated`**
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

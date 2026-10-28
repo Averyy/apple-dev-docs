@@ -20,7 +20,7 @@ func NSMakePoint(_ x: Double, _ y: Double) -> NSPoint
 static NSPoint NSMakePoint(CGFloat x, CGFloat y);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPoint` having the coordinates `x` and `y`.
 

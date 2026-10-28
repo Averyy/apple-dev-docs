@@ -23,7 +23,7 @@ mutating func unapply(_ transform: Self.AffineTransform)
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 > **Note**: The transform must be rectilinear otherwise this function returns `self`.
 

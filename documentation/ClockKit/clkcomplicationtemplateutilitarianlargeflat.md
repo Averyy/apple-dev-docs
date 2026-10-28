@@ -21,7 +21,7 @@ class CLKComplicationTemplateUtilitarianLargeFlat
 @interface CLKComplicationTemplateUtilitarianLargeFlat : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.utilitarianLarge`](./clkcomplicationfamily/utilitarianlarge.md) family.
 

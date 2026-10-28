@@ -12,7 +12,7 @@ IOSCSIParallelInterfaceDevice * GetTargetForID (
  SCSIDeviceIdentifiertargetID );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to IOSCSIParallelInterfaceDevice or NULL if not found.
 

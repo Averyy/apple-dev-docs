@@ -15,7 +15,7 @@ The defined targeted audience according to app downloads.
 object AdGroupTargetingCreate.AppDownloader
 ```
 
-#### Discussion
+## Discussion
 
 The `appDownloader` field is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. To target all users, don’t include the `appDownloader` dimension in the request payload. Used with App Store campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

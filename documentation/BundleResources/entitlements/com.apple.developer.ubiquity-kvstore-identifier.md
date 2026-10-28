@@ -18,7 +18,7 @@ The container identifier to use for iCloud key-value storage.
 - **Name**: `com.apple.developer.ubiquity-kvstore-identifier` (iCloud Key-Value Store)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the iCloud capability and “Key-value storage” service in Xcode.
 

@@ -21,7 +21,7 @@ var orientation: UIDeviceOrientation { get }
 @property (nonatomic, readonly) UIDeviceOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is a constant that indicates the current orientation of the device. This value represents the physical orientation of the device and may be different from the current orientation of your application’s user interface. See [`UIDeviceOrientation`](../uideviceorientation.md) for descriptions of the possible values.
 

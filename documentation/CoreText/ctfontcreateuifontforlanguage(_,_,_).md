@@ -25,11 +25,11 @@ func CTFontCreateUIFontForLanguage(_ uiType: CTFontUIFontType, _ size: CGFloat, 
 extern CTFontRefCTFontCreateUIFontForLanguage(CTFontUIFontType uiType, CGFloat size, CFStringRef language);
 ```
 
-#### Return Value
+## Return Value
 
 The correct font for various user-interface uses.
 
-#### Discussion
+## Discussion
 
 The only required parameter is the `uiType` selector; the other parameters have default values.
 

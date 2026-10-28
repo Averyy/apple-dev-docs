@@ -26,7 +26,7 @@ func addAccessory(_ accessory: HMAccessory) async throws
 - (void) addAccessory:(HMAccessory *) accessory completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You discover accessories to add to a home using the [`HMAccessoryBrowser`](../hmaccessorybrowser.md) class. Newly added accessories are automatically added to the room returned by [`roomForEntireHome()`](./roomforentirehome%28%29.md).
 

@@ -19,7 +19,7 @@ func rightMouseUp(with event: NSEvent)
 - (void) rightMouseUp:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

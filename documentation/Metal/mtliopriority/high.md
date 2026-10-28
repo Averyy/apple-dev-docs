@@ -24,7 +24,7 @@ case high
 MTLIOPriorityHigh
 ```
 
-#### Discussion
+## Discussion
 
 Create a command queue with a high priority to load important assets or those your app needs quickly. For example, a game that plays sound effects that match its animations can load its audio assets with low latency with a high priority queue.
 

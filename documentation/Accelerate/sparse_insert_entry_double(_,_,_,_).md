@@ -25,11 +25,11 @@ func sparse_insert_entry_double(_ A: sparse_matrix_double!, _ val: Double, _ i: 
 sparse_status sparse_insert_entry_double(sparse_matrix_double A, double val, sparse_index i, sparse_index j);
 ```
 
-#### Return Value
+## Return Value
 
 On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](./sparse_success.md) is returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `A` is unchanged.
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by inserting one scalar entry at a time.  This function is the equivalent of `A[i,j] = val`.
 

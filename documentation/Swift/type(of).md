@@ -21,11 +21,11 @@ Returns the dynamic type of a value.
 func type<T, Metatype>(of value: borrowing T) -> Metatype where T : ~Copyable, T : ~Escapable
 ```
 
-#### Return Value
+## Return Value
 
 The dynamic type, which is a metatype instance.
 
-#### Discussion
+## Discussion
 
 You can use the `type(of:)` function to find the dynamic type of a value, particularly when the dynamic type is different from the static type. The *static type* of a value is the known, compile-time type of the value. The *dynamic type* of a value is the value’s actual type at run-time, which can be a subtype of its concrete type.
 
@@ -71,7 +71,7 @@ printSmileyInfo(emojiSmiley)
 
 In this example, accessing the `text` property of the `smileyType` metatype retrieves the overridden value from the `EmojiSmiley` subclass, instead of the `Smiley` class’s original definition.
 
-### Finding the Dynamic Type in a Generic Context
+## Finding the Dynamic Type in a Generic Context
 
 Normally, you don’t need to be aware of the difference between concrete and existential metatypes, but calling `type(of:)` can yield unexpected results in a generic context with a type parameter bound to a protocol. In a case like this, where a generic parameter `T` is bound to a protocol `P`, the type parameter is not statically known to be a protocol type in the body of the generic function. As a result, `type(of:)` can only produce the concrete metatype `P.Protocol`.
 

@@ -23,7 +23,7 @@ static var breathe: BreatheSymbolEffect { get }
 
 Available when `Self` is `BreatheSymbolEffect`.
 
-#### Discussion
+## Discussion
 
 The Breathe animation smoothly scales a symbol up and down.
 

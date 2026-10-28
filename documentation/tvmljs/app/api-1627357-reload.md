@@ -18,7 +18,7 @@ void reload(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This function reloads the initial TVMLKit JS file without quitting the app. The optional `reloadData` parameter enables you to capture and restart the app in its current state. If the `reloadData` parameter is not present, the app is restarted in its initial state.
 

@@ -29,7 +29,7 @@ protocol Tool<Arguments, Output> : Sendable
 - [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
 - [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
 
-#### Overview
+## Overview
 
 Tool calling gives the model the ability to call your code to incorporate up-to-date information like recent events and data from your app. A tool includes a name and a description that the framework puts in the prompt to let the model decide when and how often to call your tool.
 

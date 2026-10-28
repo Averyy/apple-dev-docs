@@ -23,7 +23,7 @@ var kDNSServiceType_MD: Int { get }
 kDNSServiceType_MD
 ```
 
-#### Discussion
+## Discussion
 
 Mail destination.
 

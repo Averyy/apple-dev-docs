@@ -12,7 +12,7 @@ Demonstrates how to enable and implement drag and drop for a table view.
 - Mac Catalyst 13.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 This sample code project uses a [`UITableView`](./uitableview.md) instance to show how to make a table view into a drag source and a drop destination.
 
@@ -20,13 +20,13 @@ To enable drag and drop, you specify the table view as its own drag delegate and
 
 Adopting drag and drop in a table view differs in some important ways compared to the process you follow for a custom view. To compare the steps, see [Adopting drag and drop in a custom view](./adopting-drag-and-drop-in-a-custom-view.md).
 
-##### Drag text in the sample app
+### Drag text in the sample app
 
 Deploy this project on iPad, which supports drag and drop between apps. When you first launch this project’s built app, you see a table with several rows, each with a text string. Use this app along with a second app that supports editing of text strings, such as Notes or Reminders. For example, configure the iPad screen to Split View, with this app side by side with Reminders. Then drag a row from this app into Reminders, or drag a reminder into this app.
 
 This app also supports rearranging rows in the table by dragging a row up or down. However, rearrangement in this app uses the traditional [`tableView(_:canMoveRowAt:)`](./uitableviewdatasource/tableview%28_,canmoverowat%29.md) and [`tableView(_:moveRowAt:to:)`](./uitableviewdatasource/tableview%28_,moverowat,to%29.md) methods rather than the drag and drop API.
 
-##### Enable drag and drop interactions
+### Enable drag and drop interactions
 
 To enable dragging, dropping, or both, specify a table view as its own drag or drop delegate. A convenient place for this code is in an app’s [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method. This code enables both dragging and dropping:
 
@@ -44,7 +44,7 @@ override func viewDidLoad() {
 
 Unlike a custom view, a table view does not have an `interactions` property to which you add interactions. Instead, a table view uses a drag delegate and a drop delegate directly.
 
-##### Provide data for a drag session
+### Provide data for a drag session
 
 To provide data for dragging from a table view, implement the [`tableView(_:itemsForBeginning:at:)`](./uitableviewdragdelegate/tableview%28_,itemsforbeginning,at%29.md) method. Here’s the model-agnostic portion of this code:
 
@@ -74,7 +74,7 @@ func dragItems(for indexPath: IndexPath) -> [UIDragItem] {
 }
 ```
 
-##### Consume data from a drop session
+### Consume data from a drop session
 
 To consume data from a drop session in a table view, you implement three delegate methods.
 

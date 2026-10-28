@@ -22,7 +22,7 @@ Sequences a gesture with another one to create a new gesture, which results in t
 @preconcurrency func sequenced<Other>(before other: Other) -> SequenceGesture<Self, Other> where Other : Gesture
 ```
 
-#### Return Value
+## Return Value
 
 A gesture that’s a sequence of two gestures.
 

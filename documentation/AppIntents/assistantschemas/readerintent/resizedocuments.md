@@ -21,7 +21,7 @@ The app intent conforms to the schema for resizing a document.
 var resizeDocuments: some AssistantSchemas.Intent { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.reader.resizeDocuments` schema:
 

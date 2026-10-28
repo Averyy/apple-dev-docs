@@ -19,7 +19,7 @@ class VZUSBScreenCoordinatePointingDeviceConfiguration
 @interface VZUSBScreenCoordinatePointingDeviceConfiguration : VZPointingDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 A `VZVirtualMachineView` can use this device to send pointer events to the VM.
 

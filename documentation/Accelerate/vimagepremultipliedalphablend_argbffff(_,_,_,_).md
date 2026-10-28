@@ -25,11 +25,11 @@ func vImagePremultipliedAlphaBlend_ARGBFFFF(_ srcTop: UnsafePointer<vImage_Buffe
 vImage_Error vImagePremultipliedAlphaBlend_ARGBFFFF(const vImage_Buffer *srcTop, const vImage_Buffer *srcBottom, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 On return of this function, the value of each pixel in the destination buffer is:
 

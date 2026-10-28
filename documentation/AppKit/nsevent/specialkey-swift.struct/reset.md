@@ -15,7 +15,7 @@ The reset key.
 static let reset: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

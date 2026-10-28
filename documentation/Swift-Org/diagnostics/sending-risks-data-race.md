@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Sharing mutable state between concurrent tasks can cause data races in your program. Resolve this error by only accessing mutable state in one task at a time.
 

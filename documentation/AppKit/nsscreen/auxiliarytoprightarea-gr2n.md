@@ -15,7 +15,7 @@ The unobscured portion of the top-right corner of the screen.
 var auxiliaryTopRightArea: NSRect? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the top inset of the screen’s [`safeAreaInsets`](./safeareainsets.md) property contains a non-zero value, the rectangle in this property is the visible top-right portion of the screen.The rectangle is specified in global screen coordinates and lies outside the safe area. If the top portion of the screen isn’t obscured, the value of this property is `nil` in Swift; in Objective-C, the value is [`NSZeroRect`](../../Foundation/nszerorect.md).
 

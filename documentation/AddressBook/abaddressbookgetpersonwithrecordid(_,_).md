@@ -23,7 +23,7 @@ func ABAddressBookGetPersonWithRecordID(_ addressBook: ABAddressBook!, _ recordI
 extern ABRecordRefABAddressBookGetPersonWithRecordID(ABAddressBookRef addressBook, ABRecordID recordID);
 ```
 
-#### Return Value
+## Return Value
 
 If found, the person record with `recordID` as its identifier, otherwise `NULL`.
 

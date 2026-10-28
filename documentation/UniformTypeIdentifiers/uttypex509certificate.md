@@ -21,7 +21,7 @@ A type that represents an X.509 certificate.
 extern UTType * const UTTypeX509Certificate;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.x509-certificate`.
 

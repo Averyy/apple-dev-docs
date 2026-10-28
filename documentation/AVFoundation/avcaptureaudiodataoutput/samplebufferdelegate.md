@@ -23,7 +23,7 @@ var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)? { 
 @property (nonatomic, readonly, nullable) id<AVCaptureAudioDataOutputSampleBufferDelegate> sampleBufferDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 You use the delegate to manage incoming data.
 

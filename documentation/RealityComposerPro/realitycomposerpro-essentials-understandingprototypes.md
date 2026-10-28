@@ -5,7 +5,7 @@
 
 Edit a prototype once and propagate the change to every placement of that asset in a scene.
 
-#### Overview
+## Overview
 
 In Reality Composer Pro, a **prototype** is a source asset, and an **instance** is a placement of that prototype in a scene. Dragging the asset into your scene creates a single instance of that prototype. You can place as many instances of the prototype in your scene as you want.
 
@@ -16,17 +16,17 @@ In Reality Composer Pro, a **prototype** is a source asset, and an **instance** 
 
 > ❗ **Important**: When you directly assign a prototype to a component — for example, assigning a material to a model component — Reality Composer Pro may not automatically create an instance. Any edits to the material directly edit the prototype instead. To assign an instance, Control-click the material in the Project Browser, select **Instance**, and then assign the instanced material to the model component.
 
-#### Create an instance of a prototype
+## Create an instance of a prototype
 
 An instance is a virtual copy of a prototype asset that you can change without affecting the source prototype.
 
 In the Project Browser, Control-click a prototype asset, and then click **Instantiate **to create an instance of the asset.
 
-#### Add an instance of a prototype to a scene
+## Add an instance of a prototype to a scene
 
 Drag the instance from the Project Browser into the Viewport as you would any asset. Alternatively, Control-click anywhere in the Hierarchy, choose **Add Child Entity** > **From Asset**, and select the entity instance from the menu.
 
-#### Propagate, reset, or make an instance unique
+## Propagate, reset, or make an instance unique
 
 Once you create an instance of a prototype and make changes, you have three options when an instance and its prototype have diverged: Propagate, Reset, or Make Unique.
 
@@ -34,7 +34,7 @@ Once you create an instance of a prototype and make changes, you have three opti
 - Use **Reset** when you’ve experimented with overrides on an instance and want to discard those local edits but keep the link to the prototype. This reverts the instance’s values to the prototype’s but preserves the link so future changes to the prototype still flow through.
 - Use **Make Unique** when an instance has diverged enough that tracking the prototype is no longer useful. This removes the link to the prototype and converts the instance into a standalone copy. The new copy retains the instance’s current values but no longer receives changes propagated from the original prototype.
 
-#### Manage prototype overrides
+## Manage prototype overrides
 
 Use the Inspector or the Scene Hierarchy to propagate or reset overrides on an instance. Make Unique is available only from the Scene Hierarchy.
 
@@ -46,7 +46,7 @@ Use the Inspector or the Scene Hierarchy to propagate or reset overrides on an i
 
 ![The Reality Composer Pro Scene Hierarchy context menu showing Reset, Propagate, and Make Unique options.](https://developer.apple.com/tutorials/images/RealityComposerPro/SceneHierarchyComponentContextMenu@2x.png)
 
-#### Change the prototype referenced by an instance
+## Change the prototype referenced by an instance
 
 In the Inspector, change the prototype that an instance references.
 

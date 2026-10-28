@@ -21,7 +21,7 @@ An error that indicates your session has been rate limited.
 case rateLimited(LanguageModelSession.GenerationError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 This error will only happen if your app is running in the background and exceeds the system defined rate limit.
 

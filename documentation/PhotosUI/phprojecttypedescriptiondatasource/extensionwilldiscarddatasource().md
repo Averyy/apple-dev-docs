@@ -19,7 +19,7 @@ optional func extensionWillDiscardDataSource()
 - (void) extensionWillDiscardDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 After this call, the extension context no longer strongly references the data source. Fetch any last data you need here before the data source goes out of scope.
 

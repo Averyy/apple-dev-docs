@@ -19,11 +19,11 @@ func hv_gic_config_set_redistributor_base(_ config: hv_gic_config_t, _ redistrib
 extern hv_return_t hv_gic_config_set_redistributor_base(hv_gic_config_t config, hv_ipa_t redistributor_base_address);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code
 
-#### Discussion
+## Discussion
 
 Guest physical address for redistributor base aligned to byte value returned by [`hv_gic_get_redistributor_base_alignment(_:)`](./hv_gic_get_redistributor_base_alignment%28_%29.md). The redistributor region contains redistributors for all vCPUs that the virtual machine supports.
 

@@ -25,7 +25,7 @@ case error
 OSLogEntryLogLevelError
 ```
 
-#### Discussion
+## Discussion
 
 This log level captures process-level information to report errors in the process.
 

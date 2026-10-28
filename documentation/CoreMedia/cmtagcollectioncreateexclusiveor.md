@@ -21,7 +21,7 @@ Creates a new tag collection from two existing tag collections, copying elements
 extern OSStatus CMTagCollectionCreateExclusiveOr(CMTagCollectionRef tagCollection1, CMTagCollectionRef tagCollection2, CMTagCollectionRef*tagCollectionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

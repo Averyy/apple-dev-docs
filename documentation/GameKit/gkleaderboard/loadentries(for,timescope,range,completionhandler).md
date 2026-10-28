@@ -33,7 +33,7 @@ func loadEntries(for playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeader
 
 - [Encourage progress and competition with leaderboards](../encourage-progress-and-competition-with-leaderboards.md)
 
-#### Discussion
+## Discussion
 
 GameKit uses the following algorithm to fetch [`GKLeaderboard`](../gkleaderboard.md) scores:
 

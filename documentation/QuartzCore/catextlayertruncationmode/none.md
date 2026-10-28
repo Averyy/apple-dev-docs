@@ -24,7 +24,7 @@ static let none: CATextLayerTruncationMode
 extern CATextLayerTruncationMode const kCATruncationNone;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`isWrapped`](../catextlayer/iswrapped.md) property is [`true`](../../Swift/true.md), the text is wrapped to the receiver’s bounds, otherwise the text is clipped to the receiver’s bounds.
 

@@ -19,11 +19,11 @@ func textElement(for attributedString: NSAttributedString) -> NSTextElement?
 - (NSTextElement *) textElementForAttributedString:(NSAttributedString *) attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextElement`](../nstextelement.md), or `nil`.
 
-#### Discussion
+## Discussion
 
 Returns `nil` when `attributedString` contains attributes not mappable to [`NSTextElement`](../nstextelement.md).
 

@@ -15,11 +15,11 @@ Predict an accessory anchor to a target timestamp.
 extern bool ar_accessory_tracking_provider_predict_anchor_at_timestamp(ar_accessory_tracking_provider_t accessory_tracking_provider, ar_accessory_anchor_t anchor, CFTimeInterval timestamp, ar_accessory_anchor_t predicted_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 Whether accessory anchor prediction was successful.
 
-#### Discussion
+## Discussion
 
 Example usage:
 

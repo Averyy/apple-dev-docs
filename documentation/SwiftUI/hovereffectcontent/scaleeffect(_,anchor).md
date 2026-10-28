@@ -21,7 +21,7 @@ func scaleEffect(_ scale: CGFloat, anchor: UnitPoint = .center) -> some HoverEff
 func scaleEffect(_ scale: CGSize, anchor: UnitPoint = .center) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 An effect that scales the view’s rendered output.
 

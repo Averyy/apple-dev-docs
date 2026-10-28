@@ -11,7 +11,7 @@ Delete localized metadata that you configured for a subscription group.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a subscription group localization`](./delete-v2-subscriptiongrouplocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

@@ -21,7 +21,7 @@ Replaces all entities in this collection with those from the given sequence.
 mutating func replaceAll<S>(_ entities: S) where S : Sequence, S.Element : Entity
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation might not maintain the new entities’ index order.
 

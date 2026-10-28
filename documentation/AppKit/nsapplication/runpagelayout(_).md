@@ -19,7 +19,7 @@ func runPageLayout(_ sender: Any?)
 - (void) runPageLayout:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the `NSPageLayout` instance does not exist, this method creates one. This method is typically invoked when the user chooses Page Setup from the app’s File menu.
 

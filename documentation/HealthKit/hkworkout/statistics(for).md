@@ -24,7 +24,7 @@ func statistics(for quantityType: HKQuantityType) -> HKStatistics?
 - (HKStatistics *) statisticsForType:(HKQuantityType *) quantityType;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit calculates an [`HKStatistics`](../hkstatistics.md) object based on the [`HKQuantitySample`](../hkquantitysample.md) objects associated with the workout that also match the specified [`HKQuantityType`](../hkquantitytype.md).
 

@@ -25,7 +25,7 @@ func speak(_ utterance: AVSpeechUtterance)
 - (void) speakUtterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Attempting to enqueue the same utterance more than once throws an exception.
 

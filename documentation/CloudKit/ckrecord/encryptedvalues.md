@@ -30,7 +30,7 @@ var encryptedValues: any CKRecordKeyValueSetting & Sendable { get }
 
 - [Encrypting User Data](../encrypting-user-data.md)
 
-#### Discussion
+## Discussion
 
 Use the object this property returns to read and write encrypted key-value pairs that you store on the record. You can encrypt values of any data type that CloudKit supports, except [`CKAsset`](../ckasset.md), which is encrypted by default, and [`CKRecord.Reference`](./reference.md), which isn’t encrypted so it remains available for server-side use. Only encrypt new fields. CloudKit doesn’t allow encryption on fields that already exist in your app’s schema, or on records that you store in the public database.
 

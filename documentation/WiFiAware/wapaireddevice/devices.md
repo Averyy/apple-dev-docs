@@ -21,7 +21,7 @@ typealias Devices = [WAPairedDevice.ID : WAPairedDevice]
 
 - [Connecting devices for peer-to-peer Wi-Fi](../connecting-paired-devices.md)
 
-#### Discussion
+## Discussion
 
 An empty dictionary indicates that no paired devices are known to your app.
 

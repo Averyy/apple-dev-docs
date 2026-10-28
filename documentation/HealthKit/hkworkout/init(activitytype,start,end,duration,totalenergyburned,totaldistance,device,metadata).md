@@ -26,11 +26,11 @@ convenience init(activityType workoutActivityType: HKWorkoutActivityType, start 
 + (instancetype) workoutWithActivityType:(HKWorkoutActivityType) workoutActivityType startDate:(NSDate *) startDate endDate:(NSDate *) endDate duration:(NSTimeInterval) duration totalEnergyBurned:(HKQuantity *) totalEnergyBurned totalDistance:(HKQuantity *) totalDistance device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 A workout object with the provided duration, total energy burned, total distance, device, and metadata properties. The [`workoutEvents`](./workoutevents.md) property is set to `nil`.
 
-#### Discussion
+## Discussion
 
 This method returns a workout with the specified duration, total energy burned, total distance, device, and metadata. The [`workoutEvents`](./workoutevents.md) property is set to `nil`.
 

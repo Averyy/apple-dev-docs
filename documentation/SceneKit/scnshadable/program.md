@@ -25,7 +25,7 @@ optional var program: SCNProgram? { get set }
 @property (nonatomic, retain, nullable) SCNProgram * program;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a program to an object overrides all other rendering parameters, including material settings and shader modifiers.
 

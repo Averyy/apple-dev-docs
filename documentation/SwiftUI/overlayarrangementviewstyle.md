@@ -22,7 +22,7 @@ nonisolated
 struct OverlayArrangementViewStyle
 ```
 
-#### Overview
+## Overview
 
 An overlay arrangement view places a primary view and a secondary view in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
@@ -41,7 +41,7 @@ ArrangementView {
 .arrangementViewStyle(.overlay) 
 ```
 
-#### Limit an overlay arrangement by orientation
+## Limit an overlay arrangement by orientation
 
 You can limit which axes your overlay arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only functions vertically:
 
@@ -56,7 +56,7 @@ ArrangementView {
 
 Use [`axes(_:)`](./overlayarrangementviewstyle/axes%28_%29.md) to set the axes for an overlay arrangement style. For axes that you don’t include, the arrangement view only displays the primary view.
 
-#### Customize a folded layout
+## Customize a folded layout
 
 Add the horizontal [`overlayArrangementEdge(_:)`](./view/overlayarrangementedge%28_%29-8slwf.md) or vertical [`overlayArrangementEdge(_:)`](./view/overlayarrangementedge%28_%29-4tjwn.md) view modifier to adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo. The following example shows a modifier that causes the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation:
 

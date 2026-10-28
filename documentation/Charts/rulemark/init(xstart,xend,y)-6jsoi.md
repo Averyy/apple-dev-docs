@@ -22,7 +22,7 @@ nonisolated
 init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: CGFloat? = nil) where X : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a horizontal rule at x positions from `xStart` to `xEnd` for a single y position:
 

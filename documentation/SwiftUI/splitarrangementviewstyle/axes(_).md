@@ -22,7 +22,7 @@ nonisolated
 func axes(_ axes: Axis.Set) -> SplitArrangementViewStyle
 ```
 
-#### Discussion
+## Discussion
 
 For axes that you don’t include, the arrangement only displays the primary view.
 

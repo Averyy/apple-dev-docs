@@ -20,7 +20,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 While paused, the session doesn’t track device motion or capture scene imagery, nor does it coordinate with its [`delegate`](./delegate.md) object or update any associated [`RealityView`](../../RealityKit/realityview.md) or [`ARView`](../../RealityKit/arview.md) object.
 

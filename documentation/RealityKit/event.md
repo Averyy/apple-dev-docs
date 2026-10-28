@@ -20,7 +20,7 @@ A type that can be sent as an event.
 protocol Event : Sendable
 ```
 
-#### Overview
+## Overview
 
 RealityKit provides a number of events you can subscribe to. The system notifies you whenever the event type occurs.
 

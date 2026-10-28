@@ -15,7 +15,7 @@ The language to use for the lookup.
 language?: string;
 ```
 
-#### Discussion
+## Discussion
 
 A language ID that determines the language for the lookup results. For example, `en-US` for U.S. English. If you set it, this option overrides the language you provide in the [`PlaceLookup`](../placelookup.md) constructor.
 

@@ -24,7 +24,7 @@ class func setAnimationRepeatCount(_ repeatCount: Float)
 + (void) setAnimationRepeatCount:(float) repeatCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to specify the number of times to repeat the specified animations. This method does nothing if called from outside of an animation block. You can use this method in conjunction with either the block-based methods or the begin/commit methods for defining an animation block. If you do not explicitly set a repeat count, the animation is not repeated.
 

@@ -23,7 +23,7 @@ var kAudioSessionProperty_InputGainAvailable: Int { get }
 kAudioSessionProperty_InputGainAvailable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Some audio inputs on some devices do not support gain adjustment. You must check this property’s value before attempting to set audio input gain.
 

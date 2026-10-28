@@ -28,7 +28,7 @@ func cubeMap(withContentsOfFile path: String, options: [String : NSNumber]? = ni
 - (void) cubeMapWithContentsOfFile:(NSString *) path options:(NSDictionary<NSString *,NSNumber *> *) options queue:(dispatch_queue_t) queue completionHandler:(GLKTextureLoaderCallback) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method is identical to [`cubeMap(withContentsOfFile:options:)`](./cubemap%28withcontentsoffile,options%29.md), except that it loads the texture asynchronously. When this method is called, it creates a new background task to handle the request and then returns control to your app. Later, when the task is complete, GLKit calls your completion handler on the queue you provided.
 

@@ -19,7 +19,7 @@ class let didLiveScrollNotification: NSNotification.Name
 extern NSNotificationName const NSScrollViewDidLiveScrollNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Some user-initiated scrolls (for example, scrolling using legacy mice) are not bracketed by a “willStart/didEnd” notification pair.
 

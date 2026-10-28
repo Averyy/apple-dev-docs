@@ -23,11 +23,11 @@ func backgroundImage(for state: UIControl.State, barMetrics: UIBarMetrics) -> UI
 - (UIImage *) backgroundImageForState:(UIControlState) state barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The background image for `state` and `barMetrics`.
 
-#### Discussion
+## Discussion
 
 For more details, see [`setBackgroundImage(_:for:barMetrics:)`](./setbackgroundimage%28_,for,barmetrics%29.md).
 

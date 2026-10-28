@@ -21,7 +21,7 @@ A static context that’s marked as the final message in a connection.
 static let finalMessage: NWConnection.ContentContext
 ```
 
-#### Discussion
+## Discussion
 
 Once this context is used for sending, and the send is marked as complete, no more data can be sent on the connection.
 

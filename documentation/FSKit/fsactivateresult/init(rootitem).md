@@ -19,7 +19,7 @@ init?(rootItem: FSItem)
 - (instancetype) initWithRootItem:(FSItem *) rootItem;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

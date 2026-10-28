@@ -27,7 +27,7 @@ static var title: LocalizedStringResource { get }
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 - [Creating your first app intent](../creating-your-first-app-intent.md)
 
-#### Discussion
+## Discussion
 
 Specify title strings using a verb followed by a noun in title case. For example, an action to open an album might have the title “Open Album”. If the app intent conforms to a schema, the schema provides this value.
 

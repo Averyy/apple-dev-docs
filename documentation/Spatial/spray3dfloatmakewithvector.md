@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatMakeWithVector(simd_float3 origin, simd_float3 direction);
 ```
 
-#### Return Value
+## Return Value
 
 A new ray stucture.
 
-#### Discussion
+## Discussion
 
 Returns a ray at the specified origin.
 

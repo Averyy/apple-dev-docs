@@ -24,7 +24,7 @@ enum DiagnosticResult
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `DiagnosticResult` unifies all diagnostic event types into a single enum. Each associated value is a typed diagnostic struct that carries a [`CallStackTree`](./callstacktree.md) and additional event-specific properties such as hang duration, total CPU time, or launch duration.
 

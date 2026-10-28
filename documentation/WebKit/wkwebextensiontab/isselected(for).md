@@ -23,7 +23,7 @@ optional func isSelected(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isSelectedForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `YES` for the active tab and `NO` for other tabs if not implemented.
 

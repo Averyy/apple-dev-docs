@@ -19,7 +19,7 @@ class VZNATNetworkDeviceAttachment
 @interface VZNATNetworkDeviceAttachment : VZNetworkDeviceAttachment
 ```
 
-#### Overview
+## Overview
 
 A [`VZNATNetworkDeviceAttachment`](./vznatnetworkdeviceattachment.md) works with the host computer to perform network address translation (NAT) on the guest system’s network packets, and then route those packets to outside networks. Use this attachment to give the guest system indirect access to external networks, instead of direct access through a shared physical network interface.
 

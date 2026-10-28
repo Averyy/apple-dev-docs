@@ -19,7 +19,7 @@ var VMX_REASON_PAUSE: Int { get }
 VMX_REASON_PAUSE
 ```
 
-#### Discussion
+## Discussion
 
 The guest attempted to execute PAUSE and the “PAUSE exiting” VM-execution control was 1. Or, the “PAUSE-loop exiting” VM-execution control was 1 and guest software executed a PAUSE loop with execution time exceeding PLE_Window.
 

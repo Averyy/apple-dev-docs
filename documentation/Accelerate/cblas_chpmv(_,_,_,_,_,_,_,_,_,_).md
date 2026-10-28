@@ -25,7 +25,7 @@ func cblas_chpmv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ 
 void cblas_chpmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const __LAPACK_float_complex *ALPHA, const __LAPACK_float_complex *AP, const __LAPACK_float_complex *X, const __LAPACK_int INCX, const __LAPACK_float_complex *BETA, __LAPACK_float_complex *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*x + beta*y` and stores the results in `Y`.
 

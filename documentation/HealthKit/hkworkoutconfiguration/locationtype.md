@@ -24,7 +24,7 @@ var locationType: HKWorkoutSessionLocationType { get set }
 @property (assign) HKWorkoutSessionLocationType locationType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`HKWorkoutSessionLocationType`](../hkworkoutsessionlocationtype.md).
 

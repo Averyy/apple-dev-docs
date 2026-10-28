@@ -20,7 +20,7 @@ The name of the pin.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 Each `GeometricPins` for an[`Entity`](../entity.md) have unique names. Adding a pin with the same name as another overrides the duplicate.
 

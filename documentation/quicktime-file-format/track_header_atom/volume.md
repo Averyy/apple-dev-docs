@@ -6,7 +6,7 @@
 
 A 16-bit fixed-point value that indicates how loudly to play this track’s sound.
 
-#### Overview
+## Overview
 
 A value of `1.0` indicates normal volume.
 

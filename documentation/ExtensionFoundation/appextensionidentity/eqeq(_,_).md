@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two identities are equal.
 static func == (lhs: AppExtensionIdentity, rhs: AppExtensionIdentity) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the items are equal, or `false` if they aren’t.
 

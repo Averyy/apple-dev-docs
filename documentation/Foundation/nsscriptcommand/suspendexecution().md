@@ -20,7 +20,7 @@ func suspendExecution()
 - (void) suspendExecution;
 ```
 
-#### Discussion
+## Discussion
 
 Suspends the execution of the receiver only if the receiver is being executed in the current thread by Cocoa scripting’s built-in Apple event handling (that is, the receiver would be returned by `[NSScriptCommand currentCommand]`)—otherwise, does nothing. A matching invocation of [`resumeExecution(withResult:)`](./resumeexecution%28withresult%29.md) must be made.
 

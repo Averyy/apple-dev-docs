@@ -23,7 +23,7 @@ var includePreviousRefreshTokenInLoginRequest: Bool { get set }
 
 - [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
-#### Discussion
+## Discussion
 
 If the value is `true` and there’s a `refresh_token` for the user in the SSO tokens, it’s included in the authentication request.
 

@@ -37,7 +37,7 @@ class SKScene
 - [Drawing SpriteKit Content in a View](./drawing-spritekit-content-in-a-view.md)
 - [Responding to Frame-Cycle Events](./responding-to-frame-cycle-events.md)
 
-#### Overview
+## Overview
 
 An [`SKScene`](./skscene.md) object represents a scene of content in SpriteKit. A scene is the root node in a tree of SpriteKit nodes ([`SKNode`](./sknode.md)). These nodes provide content that the scene animates and renders for display. To display a scene, you present it from an [`SKView`](./skview.md), [`SKRenderer`](./skrenderer.md), or [`WKInterfaceSKScene`](../WatchKit/wkinterfaceskscene.md).
 

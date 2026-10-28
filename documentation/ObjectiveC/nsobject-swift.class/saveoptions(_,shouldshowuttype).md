@@ -19,7 +19,7 @@ func saveOptions(_ saveOptions: IKSaveOptions!, shouldShowUTType utType: String!
 - (BOOL) saveOptions:(IKSaveOptions *) saveOptions shouldShowUTType:(NSString *) utType;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the specified type should be shown in the save options, otherwise [`NO`](../no.md).
 

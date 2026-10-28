@@ -14,7 +14,7 @@
 func plugin(forBundleID ID: String) throws -> AudioHardwarePlugin?
 ```
 
-#### Return Value
+## Return Value
 
 The AudioHardwarePlugin that corresponds with the given bundle ID, or nil if the ID does not correspond with any plugin object.
 

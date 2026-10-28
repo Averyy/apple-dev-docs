@@ -15,7 +15,7 @@ The renderable, image-bearing DOM element (either an image or a canvas) that the
 attribute HTMLImageElement,HTMLCanvasElement photo;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is not populated by an image or canvas, the Player cannot play or render.
 

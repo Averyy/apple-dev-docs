@@ -21,7 +21,7 @@ The composite components of the `Duration`.
 var components: (seconds: Int64, attoseconds: Int64) { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is intended for facilitating conversions to existing time types. The attoseconds value will not exceed 1e18 or be lower than -1e18.
 

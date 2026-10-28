@@ -23,7 +23,7 @@ var isSimpleRectangularTextContainer: Bool { get }
 @property (nonatomic, readonly, getter=isSimpleRectangularTextContainer) BOOL simpleRectangularTextContainer;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the text container’s region is a rectangle with no holes or gaps and the edges are parallel to the text view’s coordinate system axes. The default value of this property is [`false`](../../Swift/false.md) when the [`exclusionPaths`](./exclusionpaths.md) property contains one or more items, when the [`maximumNumberOfLines`](./maximumnumberoflines.md) property is not zero, or when you override the [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md) method. Otherwise, the default value is [`true`](../../Swift/true.md).
 

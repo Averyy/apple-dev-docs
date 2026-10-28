@@ -29,7 +29,7 @@ NSURLRequestReloadIgnoringLocalCacheData
 
 - [Accessing cached data](../../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This policy specifies that no existing cache data should be used to satisfy a URL load request.
 

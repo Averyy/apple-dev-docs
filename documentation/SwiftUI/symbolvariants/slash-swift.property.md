@@ -21,7 +21,7 @@ A slashed version of the variant.
 var slash: SymbolVariants { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to modify a shape variant like [`circle`](./circle-swift.type.property.md) so that it’s also covered by a slash:
 

@@ -12,7 +12,7 @@ Whether or not this issue should cause the test it’s associated with to be con
 var isFailure: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `YES` for issues which have a severity level of `.error` or higher. Otherwise, the value of this property is `NO`.
 

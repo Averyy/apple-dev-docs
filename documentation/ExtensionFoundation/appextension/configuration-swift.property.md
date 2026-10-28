@@ -23,7 +23,7 @@ The configuration details for this app extension.
 @preconcurrency var configuration: Self.Configuration { get }
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property in your custom type and use it to store the configuration details for your app extension. As part of the configuration, provide code to establish an XPC connection back to the host app.
 

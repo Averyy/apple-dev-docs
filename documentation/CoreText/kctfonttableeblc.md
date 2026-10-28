@@ -23,7 +23,7 @@ var kCTFontTableEBLC: Int { get }
 kCTFontTableEBLC
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for the embedded bitmap location.
 

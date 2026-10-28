@@ -20,7 +20,7 @@ selectedGlyphImage?:
     | null;
 ```
 
-#### Discussion
+## Discussion
 
 Provide glyph images as object literals containing absolute or relative URLs to standard, 2x, and 3x Retina display assets, an [`ImageDelegate`](../imagedelegate.md), an [`ImageSource`](../imagesource.md) such as an `HTMLCanvasElement` or `ImageBitmap`, or a `Promise` that resolves to an [`ImageSource`](../imagesource.md). The framework requires at least one image. MapKit JS displays the selected glyph image in the balloon when the marker is in the selected state. If you specify an image for this property, also specify an image in the [`glyphImage`](../markerannotation/glyphimage.md) property.
 

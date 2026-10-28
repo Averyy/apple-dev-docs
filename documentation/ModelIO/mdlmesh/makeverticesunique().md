@@ -24,7 +24,7 @@ func makeVerticesUnique()
 - (void) makeVerticesUnique;
 ```
 
-#### Discussion
+## Discussion
 
 If the same entry in the mesh’s vertex buffer is used in multiple faces (according to the index buffers of the mesh’s submeshes), this method duplicates that vertex data and modifies the vertex and index buffers accordingly. If such operations require a larger vertex or index buffer, this method uses the [`allocator`](../mdlmeshbuffer/allocator.md) property of the buffer in question to allocate new storage.
 

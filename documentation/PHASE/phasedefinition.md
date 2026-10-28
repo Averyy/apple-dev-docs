@@ -24,7 +24,7 @@ class PHASEDefinition
 @interface PHASEDefinition : NSObject
 ```
 
-#### Overview
+## Overview
 
 Various PHASE classes derive from this class, for example, [`PHASEMixerDefinition`](./phasemixerdefinition.md), [`PHASEMetaParameterDefinition`](./phasemetaparameterdefinition.md), and [`PHASESoundEventNodeDefinition`](./phasesoundeventnodedefinition.md).
 

@@ -24,7 +24,7 @@ init(contentSource: AVPictureInPictureController.ContentSource)
 - (instancetype) initWithContentSource:(AVPictureInPictureControllerContentSource *) contentSource;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a controller that displays its content in a player layer or a sample buffer display layer.
 

@@ -25,11 +25,11 @@ init(symbol: String, converter: UnitConverter)
 - (instancetype) initWithSymbol:(NSString *) symbol converter:(NSUnitConverter *) converter;
 ```
 
-#### Return Value
+## Return Value
 
 A new dimensional unit with the specified symbol and unit converter.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

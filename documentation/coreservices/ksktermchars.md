@@ -17,7 +17,7 @@ let kSKTermChars: CFString!
 const CFStringRef kSKTermChars;
 ```
 
-#### Discussion
+## Discussion
 
 Additional valid starting-position “word” characters for indexing and querying. The corresponding value, a CFString object, specifies the additional valid “word” characters that you want to be considered as valid starting characters of terms for indexing and querying. “Word” characters are contrasted with nonword characters, such as spaces.
 

@@ -24,7 +24,7 @@ var isApplicationRunningInDock: Bool { get }
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) if the app is running in the dock; otherwise, [`false`](../../Swift/false.md).
 

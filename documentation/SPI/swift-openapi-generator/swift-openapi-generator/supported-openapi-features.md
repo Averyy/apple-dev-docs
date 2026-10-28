@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn which OpenAPI features are supported by Swift OpenAPI Generator.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator is currently focused on supporting [OpenAPI 3.0.3](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md) and [OpenAPI 3.1.0](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md).
 
@@ -20,7 +20,7 @@ Supported features are always provided on *both* client and server.
 
 > 💡 **Tip**: If a feature you need isn’t currently supported, let us know by filing an issue, or even contribute a pull request. For more information, check out [Contributing to Swift OpenAPI Generator](./contributing-to-swift-openapi-generator.md).
 
-##### Structured content types
+### Structured content types
 
 For the checked serialization formats below, the generator emits types conforming to `Codable`, structured based on the provided JSON Schema.
 
@@ -34,12 +34,12 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
   - when content type is `application/x-www-form-urlencoded`
 - multipart
 
-  - for details, see [SOAR-0009](./soar-0009.md)
+  - for details, see [SOAR-0009](https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/soar-0009)
 - XML
 
-##### OpenAPI specification features
+### OpenAPI specification features
 
-###### OpenAPI Object
+#### OpenAPI Object
 
 - openapi
 - info
@@ -50,7 +50,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - tags
 - externalDocs
 
-###### Info Object
+#### Info Object
 
 - title
 - description
@@ -59,34 +59,34 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - license
 - version
 
-###### Contact Object
+#### Contact Object
 
 - name
 - url
 - email
 
-###### License Object
+#### License Object
 
 - name
 - url
 
-###### Server Object
+#### Server Object
 
 - url
 - description
 - variables
 
-###### Server Variable Object
+#### Server Variable Object
 
 - enum
 - default
 - description
 
-###### Paths Object
+#### Paths Object
 
 - map from pattern to Path Item Object
 
-###### Path Item Object
+#### Path Item Object
 
 - $ref
 - summary
@@ -96,7 +96,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - servers
 - parameters
 
-###### Operation Object
+#### Operation Object
 
 - tags
 - summary
@@ -111,44 +111,44 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - security
 - servers
 
-###### Request Body Object
+#### Request Body Object
 
 - description
 - content
 - required
 
-###### Media Type Object
+#### Media Type Object
 
 - schema
 - example
 - examples
 - encoding (in multipart only)
 
-###### Security Requirement Object
+#### Security Requirement Object
 
 - map from name pattern to a list of strings
 
-###### Responses Object
+#### Responses Object
 
 - default
 - map of HTTP status code to response
 
-###### Response Object
+#### Response Object
 
 - description
 - headers
 - content
 - links
 
-###### Header Object
+#### Header Object
 
 - a special case of Parameter Object
 
-###### Callback Object
+#### Callback Object
 
 - map from expression to Path Item Object
 
-###### Schema Object
+#### Schema Object
 
 - title
 - multipleOf
@@ -200,17 +200,17 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - example
 - deprecated
 
-###### External Documentation Object
+#### External Documentation Object
 
 - description
 - url
 
-###### Discriminator Object
+#### Discriminator Object
 
 - propertyName
 - mapping
 
-###### XML Object
+#### XML Object
 
 - name
 - namespace
@@ -218,7 +218,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - attribute
 - wrapped
 
-###### Encoding Object
+#### Encoding Object
 
 - contentType
 - headers
@@ -226,7 +226,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - explode
 - allowReserved
 
-###### Parameter Object
+#### Parameter Object
 
 - name
 - in
@@ -242,7 +242,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - examples
 - content
 
-###### Style Values
+#### Style Values
 
 - matrix (in path)
 - label (in path)
@@ -254,7 +254,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - pipeDelimited (in query)
 - deepObject (in query)
 
-###### Supported combinations
+#### Supported combinations
 
 | Location | Style | Explode |
 | --- | --- | --- |
@@ -264,11 +264,11 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 | query | `deepObject` | `true` |
 | header | `simple` | `false` |
 
-###### Reference Object
+#### Reference Object
 
 - $ref
 
-###### Components Object
+#### Components Object
 
 - schemas
 - responses (always inlined)
@@ -280,7 +280,7 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - links
 - callbacks
 
-###### Link Object
+#### Link Object
 
 - operationRef
 - operationId
@@ -289,13 +289,13 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - description
 - server
 
-###### Tag Object
+#### Tag Object
 
 - name
 - description
 - externalDocs
 
-###### Security Scheme Object
+#### Security Scheme Object
 
 - type
 - description
@@ -306,21 +306,21 @@ For any other formats, the payload is provided as raw bytes (using the `HTTPBody
 - flows
 - openIdConnectUrl
 
-###### OAuth Flows Object
+#### OAuth Flows Object
 
 - implicit
 - password
 - clientCredentials
 - authorizationCode
 
-###### OAuth Flow Object
+#### OAuth Flow Object
 
 - authorizationUrl
 - tokenUrl
 - refreshUrl
 - scopes
 
-###### Specification Extensions
+#### Specification Extensions
 
 - no specific extensions supported
 

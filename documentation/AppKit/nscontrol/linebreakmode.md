@@ -19,7 +19,7 @@ var lineBreakMode: NSLineBreakMode { get set }
 @property NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSLineBreakMode`](../nslinebreakmode.md).
 

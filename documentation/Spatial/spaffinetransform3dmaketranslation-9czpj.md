@@ -19,11 +19,11 @@
 static SPAffineTransform3D SPAffineTransform3DMakeTranslation(SPVector3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new translation affine transform.
 

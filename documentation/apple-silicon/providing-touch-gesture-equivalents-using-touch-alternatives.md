@@ -12,13 +12,13 @@ Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents t
 - Mac Catalyst 15.5+
 - Xcode 13.4+
 
-#### Overview
+## Overview
 
 Touch Alternatives is a feature that provides keyboard, mouse, and trackpad equivalents of certain touch gestures to iOS apps running on a Mac with Apple silicon. An app can enable Touch Alternatives by default, and a person can enable and disable the feature from the app’s Settings window (prior to macOS 13, the Settings window is known as the Preferences window).
 
 This sample app displays a circle that you can move around using touch gestures. You can use the app to explore Touch Alternatives on your Mac with Apple silicon.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample app:
 
@@ -31,7 +31,7 @@ To run the sample app:
 
 When you launch the sample app for the first time, it enables Touch Alternatives. You can press the arrow keys to move the circle around the window. Press Space to return the circle to the center of the window. Use a mouse or trackpad to drag the circle around the window. You can also disable and enable the alternatives from the Touch Alternatives tab in the app’s Settings window.
 
-##### Enable Touch Alternatives
+### Enable Touch Alternatives
 
 In macOS 11.3 and later, iOS apps that run on a Mac with Apple silicon can enable Touch Alternatives by default. To enable Touch Alternatives as the default for the sample app, the sample code project includes the property list file `com.apple.uikit.inputalternatives.plist` in the app bundle, and sets the `defaultEnablement` key in the file to `true`.
 

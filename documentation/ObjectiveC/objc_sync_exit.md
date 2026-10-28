@@ -21,7 +21,7 @@ End synchronizing on ‘obj’.
 extern int objc_sync_exit(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 OBJC_SYNC_SUCCESS or OBJC_SYNC_NOT_OWNING_THREAD_ERROR
 

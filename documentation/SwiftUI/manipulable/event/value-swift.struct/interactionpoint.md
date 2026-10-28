@@ -15,7 +15,7 @@ The point at which a person interacted with a view to begin manipulating it.
 let interactionPoint: Point3D
 ```
 
-#### Discussion
+## Discussion
 
 This point is in the coordinate space configured in the view modifier.
 

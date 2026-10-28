@@ -20,7 +20,7 @@ nonisolated
 func searchSelection(_ selection: Binding<TextSelection?>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to read and set selection in your search interface. Selection is represented using `TextSelection` where the indices are relative to the search text you provide on the [`searchable(text:placement:prompt:)`](./searchable%28text,placement,prompt%29.md) modifier. Note that this value will not represent selection outside of the text, such as in any leading tokens.
 

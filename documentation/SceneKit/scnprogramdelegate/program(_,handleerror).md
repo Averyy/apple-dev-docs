@@ -25,7 +25,7 @@ optional func program(_ program: SCNProgram, handleError error: any Error)
 - (void) program:(SCNProgram *) program handleError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Examine the `error` parameter for details of the compilation error provided by the GLSL compiler.
 

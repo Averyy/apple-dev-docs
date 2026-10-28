@@ -16,7 +16,7 @@ get animates(): boolean;
 set animates(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `true`, MapKit JS animates the appearance of the annotation on the map. You’re responsible for implementing an animation using the [`appearanceAnimation`](./appearanceanimation.md) property.
 

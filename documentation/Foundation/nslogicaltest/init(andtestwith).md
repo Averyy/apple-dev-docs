@@ -20,7 +20,7 @@ init(andTestWith subTests: [NSSpecifierTest])
 - (instancetype) initAndTestWithTests:(NSArray<NSSpecifierTest *> *) subTests;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSLogicalTest` object initialized to perform an `AND` operation with the `NSSpecifierTest` objects in `subTests`.
 

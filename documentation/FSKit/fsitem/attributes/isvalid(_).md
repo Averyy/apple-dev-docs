@@ -19,7 +19,7 @@ func isValid(_ attribute: FSItem.Attribute) -> Bool
 - (BOOL) isValid:(FSItemAttribute) attribute;
 ```
 
-#### Discussion
+## Discussion
 
 If the value returned by this method is `YES` (Objective-C) or `true` (Swift), a caller can safely use the given attribute.
 

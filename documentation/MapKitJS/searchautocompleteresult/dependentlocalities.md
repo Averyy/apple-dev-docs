@@ -15,7 +15,7 @@ An array of common names for the local area or neighborhood of the place.
 dependentLocalities: string[] | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the dependent locality for Golden Gate Park in San Francisco, California, is `["Golden Gate Park"]`.
 

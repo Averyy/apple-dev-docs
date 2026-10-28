@@ -25,11 +25,11 @@ func intersects(_ node: SKNode) -> Bool
 - (BOOL) intersectsNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the two nodes intersect; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The two nodes are considered to intersect if their frames intersect. The children of both nodes are ignored in this test.
 

@@ -15,7 +15,7 @@ Enum describing camera enhancement types.
 typedef enum { ... } ar_camera_region_camera_enhancement_t;
 ```
 
-#### Overview
+## Overview
 
 > **Note**: These will affect the frame rate of the output.
 

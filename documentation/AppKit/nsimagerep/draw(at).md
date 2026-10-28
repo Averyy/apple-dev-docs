@@ -19,11 +19,11 @@ func draw(at point: NSPoint) -> Bool
 - (BOOL) drawAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, [`false`](../../Swift/false.md). If the size of the image has not yet been set, this method returns [`false`](../../Swift/false.md) immediately
 
-#### Discussion
+## Discussion
 
 This method sets the origin of the current coordinate system to the specified point and then invokes the receiver’s `draw` method to draw the image at that point. Upon completion, it restores the current coordinates to their original setting. If `aPoint` is (0.0, 0.0), this method simply invokes the [`draw()`](./draw%28%29.md) method.
 

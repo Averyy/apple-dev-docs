@@ -19,7 +19,7 @@ Determines whether a given detection ID is valid.
 + (BOOL) isValidDetectionID:(CNDetectionID) detectionID;
 ```
 
-#### Return Value
+## Return Value
 
 A flag representing whether a given detection ID is valid
 

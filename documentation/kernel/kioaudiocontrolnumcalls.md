@@ -13,7 +13,7 @@
 #define kIOAudioControlNumCalls
 ```
 
-#### Discussion
+## Discussion
 
 The number of elements in the IOAudioControlCalls enum.
 

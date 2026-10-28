@@ -20,7 +20,7 @@ Mark a one-time code as “consumed” by the current process.
 func consumeOneTimeCode(_ oneTimeCode: ASVerificationCode) async throws
 ```
 
-#### Discussion
+## Discussion
 
 A code should only be marked as consumed if it was submitted to a service for the purposes of authentication.
 

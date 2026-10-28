@@ -24,7 +24,7 @@ class MKGradientPolylineRenderer
 @interface MKGradientPolylineRenderer : MKPolylineRenderer
 ```
 
-#### Overview
+## Overview
 
 This renderer only applies a stroke to the line; it doesn’t fill it. Set the gradients with [`setColors:atLocations:`](./mkgradientpolylinerenderer/setcolors_atlocations_.md) and pair colors to locations that MapKit represents as unit distance values along the distance of the polyline. Don’t subclass `MKGradientPolylineRenderer`. Use the class as-is.
 

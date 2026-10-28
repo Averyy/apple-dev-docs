@@ -18,11 +18,11 @@ Adds a manufacturer contact button to the troubleshooting view.
 func contactAccessoryManufacturerLink() -> HomeAccessoryTroubleshooting
 ```
 
-#### Return Value
+## Return Value
 
 Troubleshooting content that displays the contact button.
 
-#### Discussion
+## Discussion
 
 The button appears at the bottom of the view when contact options are available.
 

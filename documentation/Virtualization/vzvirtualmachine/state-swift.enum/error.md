@@ -19,7 +19,7 @@ case error
 VZVirtualMachineStateError
 ```
 
-#### Discussion
+## Discussion
 
 The VM encountered an unrecoverable error and the framework can no longer use the VM; you need to destroy the [`VZVirtualMachine`](../../vzvirtualmachine.md) object.
 

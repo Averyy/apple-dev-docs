@@ -21,7 +21,7 @@ static func parseOrExit(_ arguments: [String]? = nil) -> Self
 
 - [Manual Parsing and Testing](../manualparsing.md)
 
-#### Return Value
+## Return Value
 
 An instance of `Self` parsable properties populated with the provided argument values.
 

@@ -23,7 +23,7 @@ init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x3>)
 
 Available when `Format` is `vImage.Planar8x3`.
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave a pixel buffer and store the result as homogeneous planes that are represented by multiple underlying vImage buffers.
 

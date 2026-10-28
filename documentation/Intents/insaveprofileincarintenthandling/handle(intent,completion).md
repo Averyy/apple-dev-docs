@@ -29,7 +29,7 @@ func handle(intent: INSaveProfileInCarIntent) async -> INSaveProfileInCarIntentR
 - (void) handleSaveProfileInCar:(INSaveProfileInCarIntent *) intent completion:(void (^)(INSaveProfileInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement implementation of this method should communicate with the vehicle and save the settings under the specified profile name or index number. You’re responsible for choosing which settings to save. When done, execute the provided block with a response object indicating whether or not the operation was successful.
 

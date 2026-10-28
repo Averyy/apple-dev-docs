@@ -21,7 +21,7 @@ Gets the sample buffer at a given index in the buffer group.
 extern CMSampleBufferRefCMTaggedBufferGroupGetCMSampleBufferAtIndex(CMTaggedBufferGroupRef group, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the sample buffer at index, or `NULL` if the index is out of bounds or points to a pixel buffer.
 

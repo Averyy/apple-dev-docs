@@ -25,7 +25,7 @@ let kCGImagePropertyImages: CFString
 extern CFStringRef const kCGImagePropertyImages;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each element in the array is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) that contains metadata for one of the images. For example, the dictionary might contain the width and height of the image, the image’s color space name, thumbnail image information, and any auxiliary data.
 

@@ -19,7 +19,7 @@ var imageComponents: [NSDraggingImageComponent]? { get }
 @property (copy, readonly, nullable) NSArray<NSDraggingImageComponent *> * imageComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains copies of the components. The drag does not reflect changes you make to these copies. If needed, the system calls the [`imageComponentsProvider`](./imagecomponentsprovider.md) block to generate the image components.
 

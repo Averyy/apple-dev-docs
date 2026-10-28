@@ -15,7 +15,7 @@ A `Configuration` instance returned from `createConfiguration`.
 attribute Configuration configuration;
 ```
 
-#### Discussion
+## Discussion
 
 A `createConfiguration` function from the `@apple/cktool.target.nodejs` package creates an instance of `Configuration` appropriate for Node.js.
 

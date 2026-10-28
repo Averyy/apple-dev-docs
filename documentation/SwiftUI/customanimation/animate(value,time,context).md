@@ -23,11 +23,11 @@ nonisolated
 func animate<V>(value: V, time: TimeInterval, context: inout AnimationContext<V>) -> V? where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 The current value of the animation, or `nil` if the animation has finished.
 
-#### Discussion
+## Discussion
 
 Implement this method to calculate and return the value of the animation at a given point in time. If the animation has finished, return `nil` as the value. This signals to the system that it can remove the animation.
 

@@ -22,7 +22,7 @@ var headerImage: UIImage? { get set }
 @property (nonatomic, copy, nullable) UIImage * headerImage;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum size of the section header image is [`CPMaximumListSectionImageSize`](../cpmaximumlistsectionimagesize.md).
 

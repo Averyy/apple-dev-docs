@@ -23,11 +23,11 @@ var kAudioSessionProperty_OutputDestination: Int { get }
 kAudioSessionProperty_OutputDestination
 ```
 
-#### Discussion
+## Discussion
 
 A read/write [`CFNumber`](../CoreFoundation/cfnumber.md) object that indicates the audio output destination, from a USB audio accessory attached through the iPad camera connection kit, that you want to use.
 
-#### Discussion
+## Discussion
 
 The value must be one of the identifiers provided as a [`kAudioSession_OutputDestinationKey_ID`](./kaudiosession_outputdestinationkey_id.md) key as part of the [`kAudioSessionProperty_OutputDestinations`](./kaudiosessionproperty_outputdestinations.md) array.
 

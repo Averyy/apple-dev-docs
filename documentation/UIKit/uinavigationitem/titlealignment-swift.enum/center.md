@@ -23,7 +23,7 @@ case center
 UINavigationItemTitleAlignmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 Unlike Automatic, this never falls back to leading alignment: a title that cannot be centered shifts toward the leading edge to clear the trailing bar content, and truncates only once it can shift no further.
 

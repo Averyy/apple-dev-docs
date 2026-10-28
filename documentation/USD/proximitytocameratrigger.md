@@ -4,11 +4,11 @@
 
 A trigger that fires when the camera crosses the distance threshold of an object.
 
-#### Overview
+## Overview
 
 The runtime fires this trigger one time when the distance threshold it specifies is met. The runtime can fire the trigger again only if the user moves away from the threshold and then returns.
 
-##### Declaration
+### Declaration
 
 ```swift
 class Preliminary_Trigger "ProximityToCameraTrigger"

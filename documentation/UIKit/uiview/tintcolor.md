@@ -23,7 +23,7 @@ var tintColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the system cannot find a nondefault color in the hierarchy, this property’s value is a system-defined color instead.
 

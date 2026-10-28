@@ -23,7 +23,7 @@ var force: CGFloat { get }
 @property (nonatomic, readonly) CGFloat force;
 ```
 
-#### Discussion
+## Discussion
 
 This is a value predetermined by the system and isn’t user specific. A value of 1.0 represents the force of an average touch.
 

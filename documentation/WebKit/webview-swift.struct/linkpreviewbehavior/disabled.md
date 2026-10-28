@@ -19,7 +19,7 @@ Link previews are disabled.
 static let disabled: WebView.LinkPreviewBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view prevents pressing a link from displaying a preview of the destination for the link.
 

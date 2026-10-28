@@ -19,7 +19,7 @@ func runModal(for trust: SecTrust!, showGroup: Bool) -> Int
 - (NSInteger) runModalForTrust:(SecTrustRef) trust showGroup:(BOOL) showGroup;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns the integer constant [`NSOKButton`](../../AppKit/nsokbutton.md) when dismissed.
 

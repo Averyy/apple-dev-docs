@@ -3,7 +3,7 @@
 **Framework**: GLKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `GLKQuaternion` type defines a structure that represents a quaternion. A quaternion is defined by a scalar component `s` and an XYZ vector `v`. Quaternions are often used in graphics programming as a compact representation of a rotation of an object in three dimensions.
 

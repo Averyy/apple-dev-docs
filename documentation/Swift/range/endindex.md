@@ -23,7 +23,7 @@ var endIndex: Range<Bound>.Index { get }
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 When you need a range that includes the last element of a collection, use the half-open range operator (`..<`) with `endIndex`. The `..<` operator creates a range that doesn’t include the upper bound, so it’s always safe to use with `endIndex`. For example:
 

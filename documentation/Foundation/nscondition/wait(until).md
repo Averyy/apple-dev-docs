@@ -25,11 +25,11 @@ func wait(until limit: Date) -> Bool
 - (BOOL) waitUntilDate:(NSDate *) limit;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the condition was signaled; otherwise, [`false`](../../Swift/false.md) if the time limit was reached.
 
-#### Discussion
+## Discussion
 
 You must lock the receiver prior to calling this method.
 

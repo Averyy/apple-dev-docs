@@ -22,11 +22,11 @@ Sets the unique tag value of this piece of map content.
 @preconcurrency func tag<V>(_ tag: V) -> some MapContent where V : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 Map content with the specified tag set.
 
-#### Discussion
+## Discussion
 
 Use this modifier to differentiate between selectable content in the map. When the map’s selection binding has the same value as the tag applied to a piece of map content, that content is considered selected.
 

@@ -21,7 +21,7 @@ A type that converts between dates and their ISO-8601 string representations.
 struct ISO8601FormatStyle
 ```
 
-#### Overview
+## Overview
 
 The [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md) type generates and parses string representations of dates following the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard, like `2024-04-01T12:34:56.789Z`. Use this type to create ISO-8601 representations of dates and create dates from text strings in ISO 8601 format. For other formatting conventions, like human-readable, localized date formats, use [`Date.FormatStyle`](./formatstyle.md).
 

@@ -19,7 +19,7 @@ The model component used to render each graph output, keyed by output node ident
 var models: [ComputeNodeGraph.NodeID : ModelComponent] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a [`resource`](./resource.md) initializes this dictionary from the models the resource defines for its outputs. Assign a new value to replace them.
 

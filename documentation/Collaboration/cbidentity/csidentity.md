@@ -15,11 +15,11 @@ Returns an opaque object for use with the Core Services Identity API.
 @property (readonly) CSIdentityRef CSIdentity;
 ```
 
-#### Return Value
+## Return Value
 
 The opaque object for use with the Core Services Identity API.
 
-#### Discussion
+## Discussion
 
 This method, along with [`identityWithCSIdentity:`](./identitywithcsidentity_.md), is used for interoperability with the Core Services Identity API.
 

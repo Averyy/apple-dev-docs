@@ -20,7 +20,7 @@ Tells the delegate a validated drop operation has exited the modified view.
 @preconcurrency func dropExited(info: DropInfo)
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation does nothing.
 

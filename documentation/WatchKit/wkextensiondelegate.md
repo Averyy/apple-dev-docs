@@ -20,7 +20,7 @@ protocol WKExtensionDelegate : NSObjectProtocol
 @protocol WKExtensionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the delegate’s methods to respond to your app’s life-cycle events, such as the activation and deactivation of your app. You can also implement delegate methods to respond to background tasks, Siri intents, workout sessions, or Handoff activity from another devices.
 

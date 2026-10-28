@@ -21,7 +21,7 @@ var cursorPosition: PGDisplayCoord_t { get }
 @property (nonatomic, readonly) PGDisplayCoord_t cursorPosition;
 ```
 
-#### Discussion
+## Discussion
 
 If the cursor isn’t on the display, this property’s value is `(0xFFFF, 0xFFFF)`.
 

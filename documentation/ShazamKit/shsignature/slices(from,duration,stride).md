@@ -21,11 +21,11 @@ Returns a sequence of signatures of the specified duration from a starting value
 func slices(from start: TimeInterval, duration: TimeInterval, stride: TimeInterval? = nil) throws -> SHSignature.Slices
 ```
 
-#### Return Value
+## Return Value
 
 A sequence from `start` of `duration` length. Each value in the sequence is separated by `stride`.
 
-#### Discussion
+## Discussion
 
 When you recognize audio with [`match(_:)`](../shsession/match%28_%29.md),  signature duration should be between [`minimumQuerySignatureDuration`](../shcatalog/minimumquerysignatureduration.md) and [`maximumQuerySignatureDuration`](../shcatalog/maximumquerysignatureduration.md).  Use this method to slice signatures longer than the maximum duration.
 

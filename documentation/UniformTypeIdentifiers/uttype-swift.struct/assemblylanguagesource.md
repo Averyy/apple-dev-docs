@@ -21,7 +21,7 @@ A type that represents assembly language source code.
 static var assemblyLanguageSource: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.assembly-source`.
 

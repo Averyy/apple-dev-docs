@@ -25,11 +25,11 @@ init?(dictionary: [String : Any])
 + (SCNTechnique *) techniqueWithDictionary:(NSDictionary<NSString *,id> *) dictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A new technique object.
 
-#### Discussion
+## Discussion
 
 See the class overview for details of a technique definition dictionary.
 

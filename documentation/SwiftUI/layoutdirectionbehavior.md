@@ -21,7 +21,7 @@ A description of what should happen when the layout direction changes.
 enum LayoutDirectionBehavior
 ```
 
-#### Overview
+## Overview
 
 A `LayoutDirectionBehavior` can be used with the `layoutDirectionBehavior` view modifier or the `layoutDirectionBehavior` property of `Shape`.
 

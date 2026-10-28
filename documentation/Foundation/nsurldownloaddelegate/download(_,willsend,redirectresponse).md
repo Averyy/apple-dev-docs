@@ -19,15 +19,15 @@ optional func download(_ download: NSURLDownload, willSend request: URLRequest, 
 - (NSURLRequest *) download:(NSURLDownload *) download willSendRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) redirectResponse;
 ```
 
-#### Return Value
+## Return Value
 
 The actual URL request to use in light of the redirection response. The delegate may copy and modify `request` as necessary to change its attributes, return `request` unmodified, or return `nil`.
 
-#### Discussion
+## Discussion
 
 If the delegate wishes to cancel the redirect, it should call the `download` object’s [`cancel()`](../nsurldownload/cancel%28%29.md) method. Alternatively, the delegate method can return `nil` to cancel the redirect, and the download will continue to process. This has special relevance in the case where `redirectResponse` is not `nil`. In this case, any data that is loaded for the download will be sent to the delegate, and the delegate will receive a [`downloadDidFinish(_:)`](./downloaddidfinish%28_%29.md) or [`download(_:didFailWithError:)`](./download%28_,didfailwitherror%29.md) message, as appropriate.
 
-##### Special Considerations
+### Special Considerations
 
 The delegate can receive this message as a result of transforming a request’s URL to its canonical form, or for protocol-specific reasons, such as an HTTP redirect. The delegate implementation should be prepared to receive this message multiple times.
 

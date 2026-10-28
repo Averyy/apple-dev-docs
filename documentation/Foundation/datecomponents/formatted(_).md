@@ -21,7 +21,7 @@ Converts `self` to its textual representation.
 func formatted<F>(_ format: F) -> F.FormatOutput where F : FormatStyle, F.FormatInput == DateComponents
 ```
 
-#### Return Value
+## Return Value
 
 A representation of `self` using the given `format`. The type of the representation is specified by `FormatStyle.FormatOutput`.
 

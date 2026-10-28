@@ -25,7 +25,7 @@ init(nsuuid theUUID: UUID)
 + (CBUUID *) UUIDWithNSUUID:(NSUUID *) theUUID;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CBUUID`](../cbuuid.md) object for the specified UUID.
 

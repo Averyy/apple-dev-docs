@@ -25,7 +25,7 @@ func CVBufferHasAttachment(_ buffer: CVBuffer, _ key: CFString) -> Bool
 extern Boolean CVBufferHasAttachment(CVBufferRef buffer, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the buffer contains the attachment; otherwise, [`false`](../Swift/false.md).
 

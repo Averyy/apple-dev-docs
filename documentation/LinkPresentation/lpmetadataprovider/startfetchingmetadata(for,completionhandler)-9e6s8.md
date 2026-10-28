@@ -29,7 +29,7 @@ func startFetchingMetadata(for request: URLRequest) async throws -> LPLinkMetada
 - (void) startFetchingMetadataForRequest:(NSURLRequest *) request completionHandler:(void (^)(LPLinkMetadata *metadata, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method once per [`LPMetadataProvider`](../lpmetadataprovider.md) instance. If you attempt to fetch metadata multiple times on a single [`LPMetadataProvider`](../lpmetadataprovider.md) instance, it throws an error.
 

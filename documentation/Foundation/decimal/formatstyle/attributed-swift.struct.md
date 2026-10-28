@@ -21,7 +21,7 @@ A format style that converts integers into attributed strings.
 struct Attributed
 ```
 
-#### Overview
+## Overview
 
 Use the [`attributed`](../../integerformatstyle/attributed-swift.property.md) modifier on a [`FloatingPointFormatStyle`](../../floatingpointformatstyle.md) to create a format style of this type.
 

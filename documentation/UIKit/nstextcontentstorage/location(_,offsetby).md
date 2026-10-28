@@ -23,11 +23,11 @@ func location(_ location: any NSTextLocation, offsetBy offset: Int) -> (any NSTe
 - (id<NSTextLocation>) locationFromLocation:(id<NSTextLocation>) location withOffset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextLocation`](../nstextlocation.md) object that corresponds to the new location, or `nil` if the new location exceeds the bounds of the text.
 
-#### Discussion
+## Discussion
 
 You can get [`NSTextLocation`](../nstextlocation.md) objects for the start and end of the text storage from the [`documentRange`](../nstextelementprovider/documentrange.md) property of the [`NSTextElementProvider`](../nstextelementprovider.md) protocol, which [`NSTextContentStorage`](../nstextcontentstorage.md) implements. If you provide an [`NSTextLocation`](../nstextlocation.md) object doesn’t match the type of the ones in the [`documentRange`](../nstextelementprovider/documentrange.md) property, this method throws an exception.
 

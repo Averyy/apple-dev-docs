@@ -24,7 +24,7 @@ class GCControllerTouchpad
 @interface GCControllerTouchpad : GCControllerElement
 ```
 
-#### Overview
+## Overview
 
 A `GCControllerTouchpad` object provides the state of the touches and presses on a touchpad. This is a compound element with button and directional pad subelements.
 

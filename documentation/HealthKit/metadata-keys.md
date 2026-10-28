@@ -5,7 +5,7 @@
 
 Constants used to add metadata to objects stored in HealthKit.
 
-#### Overview
+## Overview
 
 Use these keys to facilitate sharing data between apps. You can also create your own custom keys to give HealthKit objects additional app-specific data.
 

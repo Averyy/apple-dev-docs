@@ -18,7 +18,7 @@ The rasterization rate map to use when rendering.
 var rasterizationRateMap: (any MTLRasterizationRateMap)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.rasterizationRateMap`.
 

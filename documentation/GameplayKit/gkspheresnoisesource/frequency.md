@@ -24,7 +24,7 @@ var frequency: Double { get set }
 @property (nonatomic) double frequency;
 ```
 
-#### Discussion
+## Discussion
 
 Higher frequencies increase the number of and decrease the spacing between concentric spheres. The default value is `1.0`.
 

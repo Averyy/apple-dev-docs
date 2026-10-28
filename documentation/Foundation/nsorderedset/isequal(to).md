@@ -25,11 +25,11 @@ func isEqual(to other: NSOrderedSet) -> Bool
 - (BOOL) isEqualToOrderedSet:(NSOrderedSet<id> *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `other` are equal to the contents of the receiving ordered set, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two ordered sets have equal contents if they each have the same number of members, if each member of one ordered set is present in the other, and the members are in the same order.
 

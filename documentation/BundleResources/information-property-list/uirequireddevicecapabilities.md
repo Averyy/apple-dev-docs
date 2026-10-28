@@ -50,7 +50,7 @@ The device-related features that your app requires to run.
 - `video-camera`: A camera with video capabilities on the device. Use the [`UIImagePickerController`](../../UIKit/uiimagepickercontroller.md) interface to capture video from the device’s camera. Available in iOS 3.0 and later, and visionOS.
 - `wifi`: Networking features related to Wi-Fi access. Available in iOS 3.0 and later, and visionOS.
 
-#### Discussion
+## Discussion
 
 The App Store prevents customers from installing an app on a device that doesn’t support the required capabilities for that app. Use this key to declare the capabilities your app requires. For a list of the features that different devices support, see [Required Device Capabilities](https://developer.apple.com/support/required-device-capabilities/).
 

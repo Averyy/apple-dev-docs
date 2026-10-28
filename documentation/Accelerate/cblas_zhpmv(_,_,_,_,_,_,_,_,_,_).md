@@ -25,7 +25,7 @@ func cblas_zhpmv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ 
 void cblas_zhpmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *AP, const __LAPACK_double_complex *X, const __LAPACK_int INCX, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*x + beta*y` and stores the results in `Y`.
 

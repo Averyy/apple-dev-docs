@@ -15,7 +15,7 @@ Gets the decibel value of the level control.
 float GetDecibelValue();
 ```
 
-#### Return Value
+## Return Value
 
 The decibel value of the level control.
 

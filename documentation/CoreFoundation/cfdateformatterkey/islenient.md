@@ -25,7 +25,7 @@ static let isLenient: CFDateFormatterKey!
 extern CFDateFormatterKey const kCFDateFormatterIsLenient;
 ```
 
-#### Discussion
+## Discussion
 
 The formatter will use heuristics to guess at the date which is intended by the string. As with any guessing, it may get the result date wrong (that is, a date other than that which was intended).
 

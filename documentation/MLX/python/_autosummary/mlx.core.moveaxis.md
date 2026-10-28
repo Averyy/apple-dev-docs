@@ -6,17 +6,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mo
 
 # mlx.core.moveaxis
 
-**moveaxis(*a: array*, */*, *source: int*, *destination: int*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Move an axis to a new position.
+```python
+moveaxis(a: array, /, source: int, destination: int, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Move an axis to a new position.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**source** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the source axis.
-**destination** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the destination axis.
+**Parameters:**
 
-Returns:
-The array with the axis moved.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **source** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the source axis.
+- **destination** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the destination axis.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The array with the axis moved.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

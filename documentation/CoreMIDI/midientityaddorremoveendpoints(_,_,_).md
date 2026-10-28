@@ -23,11 +23,11 @@ func MIDIEntityAddOrRemoveEndpoints(_ entity: MIDIEntityRef, _ numSourceEndpoint
 extern OSStatus MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef entity, ItemCount numSourceEndpoints, ItemCount numDestinationEndpoints);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Drivers and configuration editors may call this function to add to or remove an entity’s endpoints. The [`MIDIProtocolID`](./midiprotocolid.md) of new endpoints is initially the same as that of the entity.
 

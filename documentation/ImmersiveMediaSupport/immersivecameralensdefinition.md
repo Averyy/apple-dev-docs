@@ -19,7 +19,7 @@ This type holds the ILPD lens configuration parameters to generate a camera cali
 struct ImmersiveCameraLensDefinition
 ```
 
-#### Overview
+## Overview
 
 Initializer method creates these types from ILPD data blobs (JSON contents) read from ILPD files. These lens definition metadata types are also used for STMap generation to transform AIV video frames of one lens projection type to another during content previews.
 

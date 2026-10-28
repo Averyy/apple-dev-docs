@@ -18,7 +18,7 @@ Returns a Boolean value indicating whether two values are equal.
 static func == (lhs: AssignedWorkDocument, rhs: AssignedWorkDocument) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether two values are equal.
 

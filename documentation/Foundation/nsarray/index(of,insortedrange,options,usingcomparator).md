@@ -25,7 +25,7 @@ func index(of obj: Any, inSortedRange r: NSRange, options opts: NSBinarySearchin
 - (NSUInteger) indexOfObject:(ObjectType) obj inSortedRange:(NSRange) r options:(NSBinarySearchingOptions) opts usingComparator:(NSComparator) cmp;
 ```
 
-#### Return Value
+## Return Value
 
 If the [`insertionIndex`](../nsbinarysearchingoptions/insertionindex.md) option is not specified:
 
@@ -41,7 +41,7 @@ If the [`insertionIndex`](../nsbinarysearchingoptions/insertionindex.md) option 
 - If the [`lastEqual`](../nsbinarysearchingoptions/lastequal.md) option is also specified, returns the highest index of equal objects.
 - If the object is not found, returns the index of the least greater object, or the index at the end of the array if the object is larger than all other elements.
 
-#### Discussion
+## Discussion
 
 The elements in the array must have already been sorted using the comparator `cmp`.  If the array is not sorted, the result is undefined.
 

@@ -12,7 +12,7 @@ void NotifyClientsOfBusReset (
  void );
 ```
 
-#### Overview
+## Overview
 
 This method is used by the HBA child class to inform the parent class and any clients that a bus reset has occurred.
 

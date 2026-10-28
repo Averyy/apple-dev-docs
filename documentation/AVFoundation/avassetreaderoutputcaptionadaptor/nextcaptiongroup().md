@@ -24,7 +24,7 @@ func nextCaptionGroup() -> AVCaptionGroup?
 - (AVCaptionGroup *) nextCaptionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 The caption group, or `nil` of there are no more groups.
 

@@ -6,7 +6,7 @@
 
 A 32-bit integer that specifies the number of bytes in this media data atom.
 
-#### Overview
+## Overview
 
 If the atom exceeds 2^32 byte, set the size field to `1`.
 

@@ -19,7 +19,7 @@ var supportsHiddenFiles: Bool { get set }
 @property (nonatomic) BOOL supportsHiddenFiles;
 ```
 
-#### Discussion
+## Discussion
 
 A `true` value means the volume supports the `UF_HIDDEN` file flag.
 

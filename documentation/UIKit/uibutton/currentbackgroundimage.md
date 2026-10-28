@@ -23,7 +23,7 @@ var currentBackgroundImage: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * currentBackgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil`.
 

@@ -22,7 +22,7 @@ Removes the elements of the set that are also in the given set and adds the memb
 mutating func formSymmetricDifference(_ other: Self)
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are also members of `neighbors` are removed from `employees`, while the elements of `neighbors` that are not members of `employees` are added to `employees`. In particular, the names `"Bethany"` and `"Eric"` are removed from `employees` while the name `"Forlani"` is added.
 

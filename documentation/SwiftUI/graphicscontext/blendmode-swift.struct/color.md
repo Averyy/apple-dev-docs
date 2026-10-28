@@ -21,7 +21,7 @@ A mode that uses the luminance values of the background with the hue and saturat
 static var color: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode preserves the gray levels in the image. You can use this mode to color monochrome images or to tint color images.
 

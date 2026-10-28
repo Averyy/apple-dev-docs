@@ -21,7 +21,7 @@ Options that configure how a Headroom Adaptive Gain Curve is read from or embedd
 struct HeadroomAdaptiveGainCurveOptions
 ```
 
-#### Overview
+## Overview
 
 This type is reserved for future use and currently carries no options.
 

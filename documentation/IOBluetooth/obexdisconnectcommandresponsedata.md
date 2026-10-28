@@ -19,7 +19,7 @@ struct OBEXDisconnectCommandResponseData
 struct OBEXDisconnectCommandResponseData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeDisconnectCommandResponseReceived (see OBEXSessionEventTypes).
 

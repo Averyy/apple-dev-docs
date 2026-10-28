@@ -25,7 +25,7 @@ var isIndeterminate: Bool { get }
 @property (readonly, getter=isIndeterminate) BOOL indeterminate;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`isIndeterminate`](./isindeterminate.md) progress only when you’re unable to determine a reasonable value for either [`completedUnitCount`](./completedunitcount.md) or [`totalUnitCount`](./totalunitcount.md). Progress is indeterminate when the value of the [`totalUnitCount`](./totalunitcount.md) or [`completedUnitCount`](./completedunitcount.md) is less than zero or if both values are zero. When progress is indeterminate, [`fractionCompleted`](./fractioncompleted.md) returns `0.0` and [`isFinished`](./isfinished.md) returns `false`.
 

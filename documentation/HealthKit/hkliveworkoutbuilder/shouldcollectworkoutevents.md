@@ -27,7 +27,7 @@ var shouldCollectWorkoutEvents: Bool { get set }
 
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 By default, this property is [`true`](../../Swift/true.md). Set it to [`false`](../../Swift/false.md) if your app adds its own events to the workout builder, and you want to ignore events from the workout session.
 

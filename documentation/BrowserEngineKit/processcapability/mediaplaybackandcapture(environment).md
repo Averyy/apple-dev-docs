@@ -16,7 +16,7 @@ The helper extension process may access media hardware required for media captur
 case mediaPlaybackAndCapture(environment: MediaEnvironment)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You need to call [`activate()`](../mediaenvironment/activate%28%29.md) on the media environment before you grant this capability to an extension.
 

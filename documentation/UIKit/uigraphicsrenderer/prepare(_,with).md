@@ -23,7 +23,7 @@ class func prepare(_ context: CGContext, with rendererContext: UIGraphicsRendere
 + (void) prepareCGContext:(CGContextRef) context withRendererContext:(UIGraphicsRendererContext *) rendererContext;
 ```
 
-#### Discussion
+## Discussion
 
 The graphics renderer calls this method when the [`runDrawingActions(_:completionActions:)`](./rundrawingactions%28_,completionactions%29.md) method is invoked. Override this method in a subclass to configure the underlying Core Graphics context before the renderer begins renderering.
 

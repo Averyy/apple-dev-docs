@@ -24,7 +24,7 @@ var organizationName: String { get }
 @property (nonatomic, copy, readonly) NSString * organizationName;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to display information about the organization that creates the pass as part of a user interface element that represents the pass, such as a cell in a table view.
 

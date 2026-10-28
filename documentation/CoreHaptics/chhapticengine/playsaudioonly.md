@@ -24,7 +24,7 @@ var playsAudioOnly: Bool { get set }
 @property (nonatomic, readwrite) BOOL playsAudioOnly;
 ```
 
-#### Discussion
+## Discussion
 
 If you set a new value on a running engine, you must restart the engine for the change to take effect.
 

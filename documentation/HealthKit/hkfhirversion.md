@@ -23,7 +23,7 @@ class HKFHIRVersion
 @interface HKFHIRVersion : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`HKFHIRVersion`](./hkfhirversion.md) instance to represent the version of the Fast Healthcare Interoperability Resources (FHIR) standard used to create a [`HKFHIRResource`](./hkfhirresource.md) sample.
 

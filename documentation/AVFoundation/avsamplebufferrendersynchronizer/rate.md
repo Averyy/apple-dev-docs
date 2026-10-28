@@ -25,7 +25,7 @@ var rate: Float { get set }
 @property (nonatomic, readwrite) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` means playback has stopped. A value of `1.0` tells the renderer to play at the natural rate of the media. This property must be greater than or equal to `0.0`.
 

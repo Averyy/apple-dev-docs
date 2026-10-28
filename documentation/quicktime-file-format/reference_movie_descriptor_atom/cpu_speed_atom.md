@@ -6,7 +6,7 @@
 
 A reference movie atom may contain an optional CPU speed atom.
 
-#### Overview
+## Overview
 
 Only one CPU speed atom can be present. See [`CPU speed atom`](../cpu_speed_atom.md) for more information.
 

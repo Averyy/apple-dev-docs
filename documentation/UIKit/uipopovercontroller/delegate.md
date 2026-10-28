@@ -24,7 +24,7 @@ weak var delegate: (any UIPopoverControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPopoverControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The popover controller uses its delegate to determine whether it should dismiss the popover and provides a notification when such an event occurs. For more information about the methods you can implement in your delegate, see [`UIPopoverControllerDelegate`](../uipopovercontrollerdelegate.md).
 

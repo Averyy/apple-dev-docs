@@ -15,7 +15,7 @@ Values that set the minimum and maximum distances of the camera from the map cen
 cameraZoomRange?: CameraZoomRangeData;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property with a [`CameraZoomRange`](../camerazoomrange.md) instance, which is an object containing [`minCameraDistance`](../camerazoomrange/mincameradistance.md) and [`maxCameraDistance`](../camerazoomrange/maxcameradistance.md) properties.
 

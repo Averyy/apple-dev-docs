@@ -20,11 +20,11 @@ typealias OSLAdjustMarksProcPtr = (Int, Int, UnsafePointer<AEDesc>?) -> OSErr
 typedef OSErr (*OSLAdjustMarksProcPtr)(long newStart, long newStop, const AEDesc *markToken);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your adjust marks function should return `noErr` if it successfully adjusted the marks and `errAEEventNotHandled` if it could not locate the object. When the Apple Event Manager gets an error result of `errAEEventNotHandled`, it attempts to adjust the marks by calling the equivalent system mark-adjusting function.
 
-#### Discussion
+## Discussion
 
 When the Apple Event Manager needs to identify either a range of elements or the absolute position of an element in a group of Apple event objects that pass a test, it can use your application’s mark-adjusting function to unmark objects previously marked by a call to your marking function.
 

@@ -25,11 +25,11 @@ init(avPlayer player: AVPlayer)
 - (instancetype) initWithAVPlayer:(AVPlayer *) player;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized video node.
 
-#### Discussion
+## Discussion
 
 You can use the [`AVPlayer`](../../AVFoundation/avplayer.md) object to control playback.
 

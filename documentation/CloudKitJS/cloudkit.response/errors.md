@@ -15,7 +15,7 @@ Errors that occurred in the request.
 readonly attribute CloudKit.CKError[] errors;
 ```
 
-#### Discussion
+## Discussion
 
 There’s one [`CKError`](../cloudkit/ckerror.md) object for each individual operation that failed.
 

@@ -12,11 +12,11 @@ static IORegistryEntry * getRegistryRoot(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IORegistryEntry root instance. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method provides an accessor to the root of the registry for the machine. The root may be passed to a registry iterator when iterating a plane, and contains properties that describe the available planes, and diagnostic information for IOKit. Keys for these properties are in IOKitKeys.h.
 

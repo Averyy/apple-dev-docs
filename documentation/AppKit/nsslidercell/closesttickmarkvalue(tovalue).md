@@ -19,7 +19,7 @@ func closestTickMarkValue(toValue value: Double) -> Double
 - (double) closestTickMarkValueToValue:(double) value;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the closest tick mark.
 

@@ -19,7 +19,7 @@ Creates an object containing surface details for an entity from a custom materia
 init(_ value: PhysicallyBasedMaterial.Normal)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object by copying the normal map from the [`normal`](../../physicallybasedmaterial/normal-swift.property.md) property of a [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md).
 

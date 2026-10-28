@@ -21,7 +21,7 @@ Plays the audio resource.
 @preconcurrency func play()
 ```
 
-#### Discussion
+## Discussion
 
 The controller plays from the beginning of the resource, or from the point at which it was paused if you previously called the [`pause()`](./pause%28%29.md) method during playback. The controller ignores calls to [`play()`](./play%28%29.md) when audio is already playing.
 

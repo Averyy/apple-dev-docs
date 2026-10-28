@@ -24,11 +24,11 @@ class func eightfoldReflectedTile() -> any CIFilter & CIEightfoldReflectedTile
 + (CIFilter<CIEightfoldReflectedTile> *) eightfoldReflectedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the eight-fold reflected tile filter to an image. The effect creates an eight-way symmetry from the input image and tiles it to create the output image.
 

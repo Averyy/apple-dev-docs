@@ -19,11 +19,11 @@ Creates a new action object with the specified action-specific details and vehic
 init(functionID: FunctionIdentifier, actionID: ActionIdentifier, vehicleID: String)
 ```
 
-#### Return Value
+## Return Value
 
 An enduring action object with the specified information.
 
-#### Discussion
+## Discussion
 
 This method creates an immutable action object that you can pass to your session’s [`perform(_:)`](../carkeyremotecontrolsession/perform%28_%29-7mpsy.md) method.
 

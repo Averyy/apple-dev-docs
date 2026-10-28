@@ -24,7 +24,7 @@ var proximity: EKAlarmProximity { get set }
 @property (nonatomic) EKAlarmProximity proximity;
 ```
 
-#### Discussion
+## Discussion
 
 Alarms can be set to trigger when entering or exiting a location specified by [`structuredLocation`](./structuredlocation.md). By default, alarms are not affected by location.
 

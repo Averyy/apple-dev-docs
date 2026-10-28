@@ -25,7 +25,7 @@ func CVPixelBufferPoolGetAttributes(_ pool: CVPixelBufferPool) -> CFDictionary?
 extern CFDictionaryRefCVPixelBufferPoolGetAttributes(CVPixelBufferPoolRef pool);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary containing the pool attributes, or [`nil`](../ObjectiveC/nil-227m0.md) if the function fails.
 

@@ -13,7 +13,7 @@ static void publishResource(
  OSObject *value = 0 );
 ```
 
-#### Overview
+## Overview
 
 The resource service uses IOService's matching and notification to allow objects to be published and found by any I/O Kit client by a global name. `publishResource` makes an object available to anyone waiting for it or looking for it in the future.
 

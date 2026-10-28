@@ -15,7 +15,7 @@ HTML (which an `NSTextView` object can read from, but not write to).
 extern NSPasteboardType NSHTMLPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`html`](./nspasteboard/pasteboardtype/html.md) instead.
 

@@ -21,7 +21,7 @@ var detailSubtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * detailSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The template only displays a detail card when the user selects a point of interest. If this property is [`nil`](../../ObjectiveC/nil-227m0.md), the card displays the point of interest’s [`subtitle`](./subtitle.md) instead.
 

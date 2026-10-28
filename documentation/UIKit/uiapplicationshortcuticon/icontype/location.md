@@ -22,7 +22,7 @@ case location
 UIApplicationShortcutIconTypeLocation
 ```
 
-#### Discussion
+## Discussion
 
 ![Location arrow icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934513@2x.png)
 

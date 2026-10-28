@@ -24,7 +24,7 @@ case userID
 MTLAccelerationStructureInstanceDescriptorTypeUserID
 ```
 
-#### Discussion
+## Discussion
 
 This instance type corresponds to the [`MTLAccelerationStructureUserIDInstanceDescriptor`](../mtlaccelerationstructureuseridinstancedescriptor.md) structure memory layout.
 

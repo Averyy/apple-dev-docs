@@ -9,7 +9,7 @@ Get a list of leaderboard resource IDs for a specific Game Center leaderboard se
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - limit:

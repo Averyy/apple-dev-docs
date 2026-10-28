@@ -22,7 +22,7 @@ Sets the visibility of subtitles for markers and annotations.
 @preconcurrency func annotationSubtitles(_ visibility: Visibility) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) whose subtitles have the visibility setting you specified.
 

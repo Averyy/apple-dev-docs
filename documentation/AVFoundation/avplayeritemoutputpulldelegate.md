@@ -25,7 +25,7 @@ protocol AVPlayerItemOutputPullDelegate : NSObjectProtocol, Sendable
 @protocol AVPlayerItemOutputPullDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The methods in this protocol are called by [`AVPlayerItemVideoOutput`](./avplayeritemvideooutput.md) objects.
 

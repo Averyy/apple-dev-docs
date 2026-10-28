@@ -21,11 +21,11 @@ Destroys an existing object.
 extern void NSDeallocateObject(id object);
 ```
 
-#### Discussion
+## Discussion
 
 This function deallocates `object`, which must have been allocated using `NSAllocateObject`.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated and unavailable for use with ARC.
 

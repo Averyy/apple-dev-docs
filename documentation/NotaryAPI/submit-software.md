@@ -13,7 +13,7 @@ Start the process of uploading a new version of your software to the notary serv
 
 - [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to tell the notary service about a new software submission that you want to make. Do this when you want to notarize a new version of your software.
 
@@ -21,7 +21,7 @@ You provide an HTTP body that contains a name for the submission, a hash of the 
 
 After uploading your software, you can use the identifier to ask the notary service for the status of your submission using the [`Get Submission Status`](./get-submission-status.md) endpoint. If you lose the identifier, you can get a list of your team’s 100 most recent submissions using the [`Get Previous Submissions`](./get-previous-submissions.md) endpoint. After notarization completes, use the [`Get Submission Log`](./get-submission-log.md) to get details about the outcome of notarization. Do this even if notarization succeeds, because the log might contain warnings that you can fix before your next submission.
 
-##### Example
+### Example
 
 **Request**:
 

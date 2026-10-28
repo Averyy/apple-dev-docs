@@ -23,7 +23,7 @@ var videoFrameRateRangeForPortraitEffect: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForPortraitEffect;
 ```
 
-#### Discussion
+## Discussion
 
 Devices may support a limited range of frame rates when Portrait Effect is active. If a device format doesn’t support Portrait Effect, the value of this property is `nil`.
 

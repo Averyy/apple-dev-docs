@@ -21,7 +21,7 @@ var acceptsTouchEvents: Bool { get set }
 @property BOOL acceptsTouchEvents;
 ```
 
-#### Discussion
+## Discussion
 
 A view accepts touch events when the value of this property is [`true`](../../Swift/true.md). By default, views do not accept touch events, so the default value of this property is [`false`](../../Swift/false.md). You can override this property and return a different value if you want your view to handle touch events.
 

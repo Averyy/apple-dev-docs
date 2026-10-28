@@ -25,7 +25,7 @@ func CGRectOffset(_ rect: CGRect, _ dx: CGFloat, _ dy: CGFloat) -> CGRect
 extern CGRect CGRectOffset(CGRect rect, CGFloat dx, CGFloat dy);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that is the same size as the source, but with its origin offset by `dx` units along the x-axis and `dy` units along the y-axis with respect to the source. Returns a null rectangle if `rect` is a null rectangle.
 

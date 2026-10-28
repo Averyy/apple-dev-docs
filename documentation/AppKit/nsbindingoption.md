@@ -17,7 +17,7 @@ struct NSBindingOption
 typedef NSString * NSBindingOption;
 ```
 
-#### Discussion
+## Discussion
 
 Values that are used as keys in the options dictionary passed to the [`bind(_:to:withKeyPath:options:)`](../ObjectiveC/nsobject-swift.class/bind%28_,to,withkeypath,options%29.md) method.
 

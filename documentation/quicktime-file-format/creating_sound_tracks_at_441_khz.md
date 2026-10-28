@@ -5,7 +5,7 @@
 
 Configure your time-to-sample atom for sound at 44.1 kHz.
 
-#### Overview
+## Overview
 
 The duration of an audio sample is stored in the time-to-sample atom contained in a sample table atom. This duration cannot be interpreted without the media’s time scale, which defines the units per second for the duration. With audio, the duration of each audio sample is typically `1`, so the time-to-sample atom has one entry, which applies to all audio samples.
 

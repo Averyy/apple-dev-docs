@@ -24,7 +24,7 @@ var spatialPipeline: PHASESpatialPipeline { get }
 @property (nonatomic, strong, readonly) PHASESpatialPipeline * spatialPipeline;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the `spatialPipeline` initializer argument. See [`init(spatialPipeline:)`](./init%28spatialpipeline%29.md).
 

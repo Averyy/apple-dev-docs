@@ -39,7 +39,7 @@ nonisolated
 init(_ title: some StringProtocol, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows presenting a template picker, where a document can be prepopulated or preconfigured using a template.
 

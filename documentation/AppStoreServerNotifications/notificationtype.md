@@ -78,11 +78,11 @@ string notificationType
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 The `notificationType appears` in the notification payload, [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). It describes the event that leads to the notification. Some notifications also have a [`subtype`](./subtype.md) that further describes the event. See the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) for more information about the notification in the [`data`](./data.md), [`summary`](./summary.md), or [`externalPurchaseToken`](./externalpurchasetoken.md) object.
 
-##### Handle use cases for In-App Purchase life-cycle events
+### Handle use cases for In-App Purchase life-cycle events
 
 When events occur that affect the customer’s In-App Purchase and subscription life cycle, the App Store server sends you notifications. The following tables list the notifications by life-cycle events.
 

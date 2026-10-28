@@ -26,7 +26,7 @@ protocol ILMessageFilterQueryHandling : NSObjectProtocol
 
 - [Creating a Message Filter App Extension](./creating-a-message-filter-app-extension.md)
 
-#### Overview
+## Overview
 
 A Message Filter app extension that adopts this protocol forms a response about the message described in the query, based on information that it either stores locally or receives from an associated network service.
 

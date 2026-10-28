@@ -21,7 +21,7 @@ func CFBundleCloseBundleResourceMap(_ bundle: CFBundle!, _ refNum: CFBundleRefNu
 extern void CFBundleCloseBundleResourceMap(CFBundleRef bundle, CFBundleRefNum refNum);
 ```
 
-#### Discussion
+## Discussion
 
 You open a resource map using either [`CFBundleOpenBundleResourceFiles(_:_:_:)`](./cfbundleopenbundleresourcefiles%28_,_,_%29.md) or [`CFBundleOpenBundleResourceMap(_:)`](./cfbundleopenbundleresourcemap%28_%29.md).
 

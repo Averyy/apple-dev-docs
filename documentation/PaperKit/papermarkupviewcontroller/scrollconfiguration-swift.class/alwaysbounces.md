@@ -19,7 +19,7 @@ The axes for which bouncing always occurs when scrolling reaches the end of the 
 final var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If an axis is included and `bounces` includes that axis, bouncing occurs even if content is smaller than bounds for that axis. Default is `[]`.
 

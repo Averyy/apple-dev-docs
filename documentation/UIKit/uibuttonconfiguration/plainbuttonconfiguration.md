@@ -19,7 +19,7 @@ Creates a configuration for a button with a transparent background.
 + (instancetype) plainButtonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

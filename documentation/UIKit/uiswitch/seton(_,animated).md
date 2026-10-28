@@ -22,7 +22,7 @@ func setOn(_ on: Bool, animated: Bool)
 - (void) setOn:(BOOL) on animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the switch to either position doesn’t result in an action message being sent.
 

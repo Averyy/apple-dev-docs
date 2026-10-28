@@ -15,7 +15,7 @@
 kINQUIRY_Byte6_MCHNGR_Mask = (1 << kINQUIRY_Byte6_MCHNGR_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the MCHNGR bit.
 

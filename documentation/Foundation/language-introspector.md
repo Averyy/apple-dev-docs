@@ -13,7 +13,7 @@ Converts data into human-readable text using formatters and locales.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 222: [Enhance your app’s multilingual experience](https://developer.apple.com/videos/play/wwdc2025/222).
 

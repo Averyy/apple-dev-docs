@@ -17,7 +17,7 @@ LFM2 VL VLM
 class LFM2VL
 ```
 
-#### Overview
+## Overview
 
 This is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

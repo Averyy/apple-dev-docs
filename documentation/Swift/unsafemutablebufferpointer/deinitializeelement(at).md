@@ -21,7 +21,7 @@ Deinitializes the memory underlying the element at `index`.
 func deinitializeElement(at index: UnsafeMutableBufferPointer<Element>.Index)
 ```
 
-#### Discussion
+## Discussion
 
 The memory underlying the element at `index` must be initialized. After calling `deinitializeElement()`, the memory underlying this element of the buffer is uninitialized, and still bound to type `Element`.
 

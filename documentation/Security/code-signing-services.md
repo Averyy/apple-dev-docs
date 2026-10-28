@@ -5,7 +5,7 @@
 
 Examine and validate signed code running on the system.
 
-#### Overview
+## Overview
 
 Code signing is a macOS security technology that you use to certify that an app was created by you. Once an app is signed, the system can detect any change to the app—whether the change is introduced accidentally or by malicious code. You can control how your signed code loads signed plug-ins and other signed code without invalidating the signatures of the host code or of the guest (dynamically loaded) code.
 

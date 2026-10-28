@@ -19,7 +19,7 @@ Creates a new filter by using the playback style you specify.
 static func playbackStyle(_ playbackStyle: PHAsset.PlaybackStyle) -> PHPickerFilter
 ```
 
-#### Return Value
+## Return Value
 
 A new filter with the playback style you specify.
 

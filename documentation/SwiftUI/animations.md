@@ -5,7 +5,7 @@
 
 Create smooth visual updates in response to state changes.
 
-#### Overview
+## Overview
 
 You tell SwiftUI how to draw your app’s user interface for different states, and then rely on SwiftUI to make interface updates when the state changes.
 

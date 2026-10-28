@@ -21,7 +21,7 @@ var hasEqualSpacing: Bool { get set }
 @property BOOL hasEqualSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 The distances between adjacent views in a stack view are either constrained to equal each other or settable to custom spacings using the [`setCustomSpacing(_:after:)`](./setcustomspacing%28_,after%29.md) method. The default value for the [`hasEqualSpacing`](./hasequalspacing.md) property is [`false`](../../Swift/false.md), which enables custom spacing. To require equal spacing, set this property to [`true`](../../Swift/true.md), which disables the [`setCustomSpacing(_:after:)`](./setcustomspacing%28_,after%29.md) method.
 

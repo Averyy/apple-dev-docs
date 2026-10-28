@@ -23,7 +23,7 @@ var hoverStyle: UIHoverStyle? { get set }
 @property (nonatomic, copy, nullable) UIHoverStyle * hoverStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property defaults to `nil`, which indicates that the view doesn’t have any hover effect. Subclasses can configure this style to use a different default value.
 

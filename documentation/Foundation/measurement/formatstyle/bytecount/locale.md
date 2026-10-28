@@ -21,7 +21,7 @@ The locale to use to format the numeric part of the byte count.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 To change the format style’s locale, use [`locale(_:)`](../locale%28_%29.md).
 

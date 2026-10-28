@@ -17,7 +17,7 @@ protocol Delegate : NSObjectProtocol
 @protocol VZUSBControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegate object for a VZUSBController.
 

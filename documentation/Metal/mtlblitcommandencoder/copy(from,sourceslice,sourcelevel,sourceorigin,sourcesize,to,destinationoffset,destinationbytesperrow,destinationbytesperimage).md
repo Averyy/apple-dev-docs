@@ -29,7 +29,7 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
-#### Discussion
+## Discussion
 
 This method is the equivalent of passing an empty [`OptionSet`](../../Swift/optionset.md) to the `options` parameter of [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:)`](./copy%28from,sourceslice,sourcelevel,sourceorigin,sourcesize,to,destinationoffset,destinationbytesperrow,destinationbytesperimage,options%29.md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](../mtlblitoption/mtlblitoptionnone.md).
 

@@ -25,7 +25,7 @@ var backFaceStencil: MTLStencilDescriptor! { get set }
 @property (nonatomic, copy, null_resettable) MTLStencilDescriptor * backFaceStencil;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates the stencil test is disabled for the back-facing primitives. For more information, see [`MTLStencilDescriptor`](../mtlstencildescriptor.md).
 

@@ -37,7 +37,7 @@ var completedExchanges: [GKTurnBasedExchange]? { get }
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Since only the current participant can save exchanges, this property is `nil` if the local player isn’t the current participant. If the local player is the current player, use the [`saveMergedMatch(_:withResolvedExchanges:completionHandler:)`](./savemergedmatch%28_,withresolvedexchanges,completionhandler%29.md) method to save completed exchanges before ending their turn.
 

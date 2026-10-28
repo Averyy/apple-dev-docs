@@ -25,7 +25,7 @@ func UTTypeConformsTo(_ inUTI: CFString, _ inConformsToUTI: CFString) -> Bool
 Boolean UTTypeConformsTo(CFStringRef inUTI, CFStringRef inConformsToUTI);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the uniform type identifier is equal to or conforms to the second type.
 

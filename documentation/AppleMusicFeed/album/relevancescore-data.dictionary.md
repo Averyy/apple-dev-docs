@@ -15,7 +15,7 @@ A score representing album relevance, used to rank albums when surfacing content
 object Album.RelevanceScore
 ```
 
-#### Overview
+## Overview
 
 A higher score indicates higher relevance. For example, an album with a score of 90 is ranked as more relevant than an album with a score of 50.
 

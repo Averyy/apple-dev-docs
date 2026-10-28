@@ -17,7 +17,7 @@ A model-protocol transition used when a reasoning budget is exhausted.
 struct ReasoningBudgetTransition
 ```
 
-#### Overview
+## Overview
 
 The value is model-agnostic: model-family adapters provide the actual text. Models without a validated transition leave [`budgetTransition`](./reasoningconfig/budgettransition.md) unset, while applications can opt in through [`transitionOverride`](./thinkingbudgetconfiguration/transitionoverride.md).
 

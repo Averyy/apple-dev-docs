@@ -19,7 +19,7 @@ static var classSansSerif: NSFontDescriptor.SymbolicTraits { get }
 NSFontDescriptorClassSansSerif
 ```
 
-#### Discussion
+## Discussion
 
 The font, excluding Scripts and Ornamentals, includes most basic letter forms without serifs on the strokes.
 

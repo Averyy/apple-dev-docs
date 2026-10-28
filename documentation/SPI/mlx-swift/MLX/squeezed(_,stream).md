@@ -17,7 +17,7 @@ Remove all length one axes from an array.
 func squeezed(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`squeezed(_:axes:stream:)`](./squeezed%28_,axes,stream%29.md)

@@ -18,7 +18,7 @@ A card that displays information for a contact.
 class OCKDetailedContactView
 ```
 
-#### Overview
+## Overview
 
 The header is an `OCKHeaderView`. The body contains a multi-line instructions label, and four buttons; call, message, email, and address. The first three buttons have title labels and image views that can be modified, while the last has a title label, body label, and image view.
 

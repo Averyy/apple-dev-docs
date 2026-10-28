@@ -20,7 +20,7 @@ var state: es_token_t
 es_token_t state;
 ```
 
-#### Discussion
+## Discussion
 
 This equivalent to [`thread_state_t`](../../kernel/thread_state_t.md) in Mach APIs.
 

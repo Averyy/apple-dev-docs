@@ -21,7 +21,7 @@ Indicates that the decoded contents of the sample buffer should be reversed.
 static let reverse: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is not present, the sample buffer should be played forwards as usual. Reversal occurs after trimming and speed multipliers. The getter returns the default value of false if this attachment is not present.
 

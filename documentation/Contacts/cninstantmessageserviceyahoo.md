@@ -24,7 +24,7 @@ let CNInstantMessageServiceYahoo: String
 extern NSString * const CNInstantMessageServiceYahoo;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

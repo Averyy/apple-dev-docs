@@ -8,7 +8,7 @@ Create, retrieve, update, and delete budget orders through these endpoints.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Budget orders are available to [Apple Ads](https://ads.apple.com/) customers that are on [monthly invoicing](https://ads.apple.com/help/billing/0031-monthly-invoicing). Budget orders work in addition to your [daily budget](https://ads.apple.com/app-store/help/bids-and-budget/0016-manage-budgets) to help you control costs. With a budget order, you can cap your total spend across campaigns in a campaign group set up through Apple Ads.
 
@@ -16,7 +16,7 @@ To use budget orders, an ad account must have a `LOC` (Line of Credit) `paymentM
 
 To confirm your payment model, call [`Get Ad Account by ID`](./get-ad-accounts-_id_.md) and check the [`AdAccount.PaymentModel`](./adaccount/paymentmodel-data.typealias.md) field in the [`AdAccount`](./adaccount.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
-#### Set the X-AP-Context Header
+## Set the X-AP-Context Header
 
 Budget orders belong to an organization, so the `X-AP-Context` header works differently here than on other ad account scoped endpoints.
 
@@ -24,7 +24,7 @@ Budget orders belong to an organization, so the `X-AP-Context` header works diff
 - [`Query Budget Orders`](./post-shared-budgets-query.md) and [`Get a Budget Order by ID`](./get-shared-budgets-_id_.md) don’t require the header for users with organization-level permissions, and sending it doesn’t change the result.
 - Users limited to specific ad accounts must send `X-AP-Context: adAccountId=<id>` on [`Query Budget Orders`](./post-shared-budgets-query.md) and [`Get a Budget Order by ID`](./get-shared-budgets-_id_.md). Without it, the API returns `403 Forbidden`.
 
-#### Call the Budget Orders Endpoints
+## Call the Budget Orders Endpoints
 
 Use the following endpoints to create, retrieve, update, and delete budget orders:
 

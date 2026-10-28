@@ -25,7 +25,7 @@ class CBService
 @interface CBService : CBAttribute
 ```
 
-#### Overview
+## Overview
 
 [`CBService`](./cbservice.md) objects represent services of a remote peripheral. Services are either primary or secondary and may contain multiple characteristics or included services (references to other services).
 

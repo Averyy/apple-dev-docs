@@ -12,7 +12,7 @@ Configure a device to act as a beacon and to detect surrounding beacons.
 - Mac Catalyst 13.0+
 - Xcode 11.2+
 
-#### Overview
+## Overview
 
 Beacons make location-based products and services available to users by broadcasting information to your device. Ranging is the process of reading the characteristics of a beacon region, such as signal strength, advertising interval, and measured power.
 
@@ -20,7 +20,7 @@ This sample code project configures a device to act as a beacon, and configures 
 
 > **Note**: This project is associated with WWDC 2019 session [705: What’s New in Location](https://developer.apple.com/videos/play/wwdc19/705/).
 
-##### Configure a Device to Act as a Beacon
+### Configure a Device to Act as a Beacon
 
 Run the sample app on the first iOS device. Select the option to Configure a Beacon. The project hardcodes a default value for the UUID that can be changed in `ConfigureBeaconViewController.swift`.
 
@@ -49,7 +49,7 @@ if peripheralManager.state == .poweredOn {
     }
 ```
 
-##### Configure a Device to Range for Beacons
+### Configure a Device to Range for Beacons
 
 Using a second iOS device, run the sample app and tap Range for Beacons to scan for beacons. Add a UUID to range for by tapping the Add button in the upper corner of the screen. The hardcoded UUID appears by default.
 

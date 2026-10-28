@@ -19,7 +19,7 @@ var hasEditedDocuments: Bool { get }
 @property (readonly) BOOL hasEditedDocuments;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the document controller contains documents with unsaved changes; otherwise, the value is [`false`](../../Swift/false.md).
 

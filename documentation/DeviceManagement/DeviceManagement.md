@@ -17,7 +17,7 @@ Manage your organization’s devices remotely.
 - Device Assignment Services 5.0+
 - VPP License Management 1.0+
 
-#### Overview
+## Overview
 
 Deploying a device management service allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business Manager to enroll organization-owned devices, and users can enroll their own devices. After enrolling a device, administrators can update software and device settings; monitor compliance with organizational policies; remotely erase or lock devices; and install apps, books, and subscriptions developed in-house or purchased through Apple School Manager or Apple Business Manager.
 

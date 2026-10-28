@@ -27,7 +27,7 @@ var uniqueID: Int64 { get }
 
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 The value of this property matches the matches the [`uniqueID`](../avcapturephotosettings/uniqueid.md) value of the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) object you passed when initiating a photo capture with the [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method. Use this value to determine which delegate method calls correspond to which capture requests.
 

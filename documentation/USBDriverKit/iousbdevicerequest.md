@@ -15,7 +15,7 @@ A structure that defines a standard device request.
 struct IOUSBDeviceRequest;
 ```
 
-#### Overview
+## Overview
 
 For information about device requests, see section 9.3 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 

@@ -22,7 +22,7 @@ A type that represents a position in the collection.
 associatedtype Index
 ```
 
-#### Discussion
+## Discussion
 
 Valid indices consist of the position of every element and a “past the end” position that’s not valid for use as a subscript argument.
 

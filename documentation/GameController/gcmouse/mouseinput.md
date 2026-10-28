@@ -24,7 +24,7 @@ var mouseInput: GCMouseInput? { get }
 @property (nonatomic, strong, readonly, nullable) GCMouseInput * mouseInput;
 ```
 
-#### Discussion
+## Discussion
 
 Get the mouse’s current state, and input values for its buttons and scroll wheel, from this object.
 

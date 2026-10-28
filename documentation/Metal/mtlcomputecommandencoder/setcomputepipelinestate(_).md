@@ -25,7 +25,7 @@ func setComputePipelineState(_ state: any MTLComputePipelineState)
 - (void) setComputePipelineState:(id<MTLComputePipelineState>) state;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Set a compute encoder’s pipeline state before encoding any commands. Encoding commands without an available pipeline state causes an error.
 

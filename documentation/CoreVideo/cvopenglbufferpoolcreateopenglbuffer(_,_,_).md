@@ -21,11 +21,11 @@ func CVOpenGLBufferPoolCreateOpenGLBuffer(_ allocator: CFAllocator?, _ openGLBuf
 extern CVReturn CVOpenGLBufferPoolCreateOpenGLBuffer(CFAllocatorRef allocator, CVOpenGLBufferPoolRef openGLBufferPool, CVOpenGLBufferRef*openGLBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 The function creates a new OpenGL buffer using the OpenGL buffer attributes specified in the [`CVOpenGLBufferPoolCreate(_:_:_:_:)`](./cvopenglbufferpoolcreate%28_,_,_,_%29.md) call. This buffer has default attachments as specified in the `openGLBufferAttributes` parameter of [`CVOpenGLBufferPoolCreate(_:_:_:_:)`](./cvopenglbufferpoolcreate%28_,_,_,_%29.md) (using either the `kCVBufferPropagatedAttachmentsKey` or `kCVBufferNonPropagatedAttachmentsKey` attributes).
 

@@ -20,11 +20,11 @@ func vmnet_start_interface(_ interface_desc: xpc_object_t, _ queue: dispatch_que
 interface_refvmnet_start_interface(xpc_object_t interface_desc, dispatch_queue_t queue, vmnet_start_interface_completion_handler_t handler);
 ```
 
-#### Return Value
+## Return Value
 
 A non-`NULL` interface handle on success, `NULL` otherwise.
 
-#### Discussion
+## Discussion
 
 Attributes of the virtual interface are specified using the interface_desc dictionary.
 

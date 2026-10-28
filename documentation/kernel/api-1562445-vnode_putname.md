@@ -15,11 +15,11 @@ Release a reference on a name from the VFS cache.
 void vnode_putname(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Should be called on a string obtained with vnode_getname().
 

@@ -21,7 +21,7 @@ static func fileContentsType(forPathExtension fileType: String) -> NSPasteboard.
 extern NSPasteboardTypeNSCreateFileContentsPboardType(NSString *fileType);
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`NSString`](../../../Foundation/nsstring.md) to a pasteboard type representing a file’s contents based on the supplied string `fileType`. `fileType` should generally be the extension part of a filename. The conversion from a named file type to a pasteboard type is simple; no mapping to standard pasteboard types is attempted.
 

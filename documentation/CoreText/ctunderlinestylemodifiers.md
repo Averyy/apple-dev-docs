@@ -25,7 +25,7 @@ struct CTUnderlineStyleModifiers
 enum CTUnderlineStyleModifiers : int32_t;
 ```
 
-#### Overview
+## Overview
 
 You can apply these underline style modifiers to the underline style ([`CTUnderlineStyle`](./ctunderlinestyle.md)) that you set with the [`kCTUnderlineStyleAttributeName`](./kctunderlinestyleattributename.md) attribute. These modifiers control the pattern of the underline.
 

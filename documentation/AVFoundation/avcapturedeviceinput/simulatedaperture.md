@@ -23,7 +23,7 @@ var simulatedAperture: Float { get set }
 @property (nonatomic) float simulatedAperture;
 ```
 
-#### Discussion
+## Discussion
 
 When capturing a Cinematic Video, use this property to control the amount of blur in the simulated depth of field effect.
 

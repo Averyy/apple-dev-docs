@@ -17,7 +17,7 @@ Resolve a [`ModelConfiguration`](./modelconfiguration.md) into a [`ResolvedModel
 func resolve(configuration: ModelConfiguration, from downloader: any Downloader, useLatest: Bool, progressHandler: @Sendable @escaping (Progress) -> Void) async throws -> ResolvedModelConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This handles the `.id` vs `.directory` switch for the model source and resolves [`TokenizerSource`](./tokenizersource.md) for the tokenizer.
 

@@ -25,7 +25,7 @@ class CKFetchShareParticipantsOperation
 @interface CKFetchShareParticipantsOperation : CKOperation
 ```
 
-#### Overview
+## Overview
 
 Participants are a fundamental part of sharing in CloudKit. A participant provides information about a user and their participation in a share, which includes their identity, acceptance status, role, and permissions. The acceptance status manages the user’s visibility of the shared records. The role and permissions control what actions the user can perform on those records.
 

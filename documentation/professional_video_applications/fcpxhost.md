@@ -23,7 +23,7 @@ protocol FCPXHost : NSObjectProtocol
 
 - [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Overview
+## Overview
 
 Workflow extensions can use the [`timeline`](./fcpxhost/timeline.md) property of this protocol as a starting point for communicating with the Final Cut Pro timeline.
 

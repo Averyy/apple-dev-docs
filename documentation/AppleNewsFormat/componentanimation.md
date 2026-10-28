@@ -15,7 +15,7 @@ Properties that all types of animations share.
 object ComponentAnimation
 ```
 
-#### Discussion
+## Discussion
 
 Apply an animation to a component to add movement and interest to your article.
 

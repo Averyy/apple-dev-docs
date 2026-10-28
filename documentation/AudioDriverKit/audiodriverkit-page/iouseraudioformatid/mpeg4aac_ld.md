@@ -15,7 +15,7 @@ The MPEG-4 AAC Low Delay audio object format.
 MPEG4AAC_LD
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

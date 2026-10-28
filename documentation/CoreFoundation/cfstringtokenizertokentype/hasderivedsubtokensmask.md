@@ -25,7 +25,7 @@ static var hasDerivedSubTokensMask: CFStringTokenizerTokenType { get }
 kCFStringTokenizerTokenHasDerivedSubTokensMask
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain subtokens and derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](../cfstringtokenizergetcurrentsubtokens%28_,_,_,_%29.md).
 

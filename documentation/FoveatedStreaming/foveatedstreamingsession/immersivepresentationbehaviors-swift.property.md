@@ -16,7 +16,7 @@ An optional set of behaviors which assist in automatically presenting the sessio
 final var immersivePresentationBehaviors: FoveatedStreamingSession.ImmersivePresentationBehaviors { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control when the immersive space displaying the streamed content is presented and dismissed, or remove automatic presentation entirely. The default value is an empty array, indicating no automatic presentation behavior.
 

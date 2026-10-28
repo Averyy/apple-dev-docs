@@ -24,18 +24,18 @@ class EKVirtualConferenceProvider
 @interface EKVirtualConferenceProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`EKVirtualConferenceProvider`](./ekvirtualconferenceprovider.md) lets apps that offer virtual conferencing services to integrate directly with events in users’ calendars. To add this support to your app, add a virtual conference extension. The principal class of the app extension is a custom subclass of [`EKVirtualConferenceProvider`](./ekvirtualconferenceprovider.md) that you create that provides the following:
 
 - A list of room types where events take place, such as Personal Room or Team Room
 - A descriptor for a virtual conference, including a user-visible title, one or more URLs, and additional details
 
-##### Providing Room Details
+### Providing Room Details
 
 To provide a list of rooms, you provide one or more *room type descriptors* that contain details about where a virtual conference takes place. Each room type descriptor includes a user-visible title and an identifier that you choose. EventKit calls [`fetchAvailableRoomTypes(completionHandler:)`](./ekvirtualconferenceprovider/fetchavailableroomtypes%28completionhandler%29.md) on your virtual conference provider to retrieve an array of [`EKVirtualConferenceRoomTypeDescriptor`](./ekvirtualconferenceroomtypedescriptor.md) objects.
 
-##### Providing Conference Details
+### Providing Conference Details
 
 After EventKit has the room type descriptors, users can add an event that specifies one of your rooms as the location. To identify the virtual conference event, your virtual conference provider creates a *virtual conference descriptor* that contains details about the virtual conference. The conference descriptor contains the following:
 

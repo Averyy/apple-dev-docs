@@ -23,7 +23,7 @@ var yawAngle: CGFloat { get }
 @property (readonly) CGFloat yawAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The yaw angle represents the rotation of the face around the vertical axis. A value of `0.0` yields a face that is looking directly at the camera, whereas a yaw angle of `90` degrees yields a face whose eye line is perpendicular to that of the camera.
 

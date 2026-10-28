@@ -21,7 +21,7 @@ Returns the line style for the given data value. Returns `nil` if the line style
 func lineStyle<P>(for value: P) -> StrokeStyle? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The line style corresponding to the data value, or `nil` if the data value is incompatible with the chart.
 

@@ -5,7 +5,7 @@
 
 References a single media asset.
 
-#### Overview
+## Overview
 
 Use an `asset-clip` element as a shorthand for a `clip` when it references the entire set of media components in a single media.
 

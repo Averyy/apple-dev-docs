@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetSupportedProtocolTypes(_ interface: SCNetworkInterface
 CFArrayRefSCNetworkInterfaceGetSupportedProtocolTypes(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The list of network protocol types supported by the specified interface, or `NULL` if no protocol types are supported.
 

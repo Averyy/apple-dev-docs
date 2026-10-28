@@ -8,7 +8,7 @@ Define time ranges, filters, sorting, and pagination for report requests, and re
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Apps and Brands report endpoints reuse the objects on this page, so you learn each one once. Request objects such as [`TimeRange`](./timerange.md), [`Filter`](./filter.md), [`Sorting`](./sorting.md), and [`RequestPagination`](./requestpagination.md) define what a report covers. Metric objects such as [`ActionMetrics`](./actionmetrics.md), [`CostMetrics`](./costmetrics.md), and [`RateMetrics`](./ratemetrics.md) carry the numbers, and the Reporting-prefixed objects describe the entities in each row.
 

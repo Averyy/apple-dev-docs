@@ -5,7 +5,7 @@
 
 Change the appearance of the backgrounds in your article.
 
-#### Overview
+## Overview
 
 You can specify a background, or `fill`, that Apple News Format applies on top of a componentʼs background color. The fill can be an image, a repeatable image, a linear gradient, or a video. For each of these options, you can set properties that determine how Apple News Format displays the background and how the background behaves.
 

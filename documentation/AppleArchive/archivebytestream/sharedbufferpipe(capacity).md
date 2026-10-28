@@ -21,11 +21,11 @@ Creates a pair of streams and links them by a shared buffer.
 static func sharedBufferPipe(capacity: Int) -> (output: ArchiveByteStream, input: ArchiveByteStream)?
 ```
 
-#### Return Value
+## Return Value
 
 A new pair of [`ArchiveByteStream`](../archivebytestream.md) instances on success; `nil` otherwise.
 
-#### Discussion
+## Discussion
 
 This function creates two [`ArchiveByteStream`](../archivebytestream.md) instances that provide one-way communication between two threads. One thread calls the sequential output stream `output`, and the other thread calls the sequential input stream `input`. The function blocks writing to `output` when the buffer is full, and blocks reading from `input` when the buffer is empty.
 

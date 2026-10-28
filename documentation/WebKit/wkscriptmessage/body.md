@@ -23,7 +23,7 @@ var body: Any { get }
 @property (nonatomic, copy, readonly) id body;
 ```
 
-#### Discussion
+## Discussion
 
 Allowed types are [`NSNumber`](../../Foundation/nsnumber.md), [`NSString`](../../Foundation/nsstring.md), [`NSDate`](../../Foundation/nsdate.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), and [`NSNull`](../../Foundation/nsnull.md).
 

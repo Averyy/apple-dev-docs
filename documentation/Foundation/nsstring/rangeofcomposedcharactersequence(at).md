@@ -25,11 +25,11 @@ func rangeOfComposedCharacterSequence(at index: Int) -> NSRange
 - (NSRange) rangeOfComposedCharacterSequenceAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The range in the receiver of the composed character sequence located at `anIndex`.
 
-#### Discussion
+## Discussion
 
 The composed character sequence includes the first decomposed base letter found at or before `anIndex`, and its length includes the decomposed base letter and all combining characters that follow.
 

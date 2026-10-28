@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, const struct AudioServerPlugInIOCycleInfo *, void *, void *) __attribute__((nonblocking)) DoIOOperation;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the device to perform an IO operation for a particular stream.
 

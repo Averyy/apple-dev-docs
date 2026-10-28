@@ -15,11 +15,11 @@ Requests revocation of an RCS message.
 final func revokeMessage(_ request: RCSService.RevokeMessageRequest) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether sending the request to the carrier network succeeded.
 
-#### Discussion
+## Discussion
 
 The RCS specification requires that you revoke a message when delivery fails or times out, and fall back to sending the message with SMS or MMS.
 

@@ -16,7 +16,7 @@ A Boolean value indicating that the app generally supports indirect input mechan
 - **Name**: `UIApplicationSupportsIndirectInputEvents` (Application supports indirect input events)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If the value of this key is `YES`:
 

@@ -21,7 +21,7 @@ Gets the App Store-signed app transaction information for the app.
 static var shared: VerificationResult<AppTransaction> { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get a [`VerificationResult`](../verificationresult.md) that contains the App Store-signed app transaction information for your app, including the first time the app launches. StoreKit automatically keeps the app transaction up-to-date.
 

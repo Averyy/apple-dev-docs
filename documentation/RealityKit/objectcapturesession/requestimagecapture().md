@@ -17,7 +17,7 @@ Requests a manual image capture.
 func requestImageCapture()
 ```
 
-#### Discussion
+## Discussion
 
 If the session’s state is `.capturing`, call this method to request an image be manually captured at the current location. This function has no effect if the session is in any other state, or if [`canRequestImageCapture`](./canrequestimagecapture.md) is `false`.
 

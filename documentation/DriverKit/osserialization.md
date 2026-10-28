@@ -18,7 +18,7 @@ A container for one or more objects, serialized in a binary data format that is 
 class OSSerialization;
 ```
 
-#### Overview
+## Overview
 
 OSSerialization provides methods to serialize an object to binary data suitable for messaging. Only certain DriverKit classes may be serialized: OSData, OSString, OSNumber, OSBoolean, OSArray, OSDictionary.
 

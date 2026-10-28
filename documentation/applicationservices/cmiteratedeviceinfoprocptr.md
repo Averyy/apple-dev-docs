@@ -15,7 +15,7 @@ Defines a pointer to a function that iterates through device information availab
 typedef OSErr (*CMIterateDeviceInfoProcPtr)(const CMDeviceInfo *deviceInfo, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSErr` value. 
 

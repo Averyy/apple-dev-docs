@@ -19,7 +19,7 @@ func setEditableTrust(_ editable: Bool)
 - (void) setEditableTrust:(BOOL) editable;
 ```
 
-#### Discussion
+## Discussion
 
 For behavioral compatibility with macOS 10.3, this method causes the certificate trust settings to be displayed if they are not currently visible (that is, if [`setDisplayTrust(_:)`](./setdisplaytrust%28_%29.md) is set to [`false`](../../Swift/false.md)).
 

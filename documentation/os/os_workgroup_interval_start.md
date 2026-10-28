@@ -21,11 +21,11 @@ Starts the regular execution of the workgroup’s threads at the specified time.
 extern int os_workgroup_interval_start(os_workgroup_interval_t wg, uint64_t start, uint64_t deadline, os_workgroup_interval_data_t data);
 ```
 
-#### Return Value
+## Return Value
 
 A value of `0` on success, or a nonzero error code indicating why the function failed. Common error codes include `EINVAL` or `EPERM`. For example, this method returns `EINVAL` if you previously started or canceled the workgroup.
 
-#### Discussion
+## Discussion
 
 Join all threads to the workgroup before calling this function, and start each thread working on the target task. Call this function from only one of the threads to mark the start of the task and to set the target deadline. When your threads finish the current task, call [`os_workgroup_interval_update`](./os_workgroup_interval_update.md) to begin the next interval-based task. When the threads finish with the overall task, call [`os_workgroup_interval_finish`](./os_workgroup_interval_finish.md) to let the system know that your threads are done with their interval-based work.
 

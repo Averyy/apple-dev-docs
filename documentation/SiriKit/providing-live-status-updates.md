@@ -5,7 +5,7 @@
 
 Provide regular updates to Maps about the status of a booked ride.
 
-#### Overview
+## Overview
 
 After the user books a ride, Maps may call the [`startSendingUpdates(for:to:)`](../Intents/ingetridestatusintenthandling/startsendingupdates%28for,to%29.md) method of your [`INGetRideStatusIntentHandling`](../Intents/ingetridestatusintenthandling.md) handler object to ask for live status updates. Maps calls this method only once. Your implementation must set up a timer or other repeating task to generate status updates for the ride and deliver them to the provided observer object. Maps uses your updates to keep the user informed about the ride’s location and estimated arrival time.
 

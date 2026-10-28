@@ -5,7 +5,7 @@
 
 Create and configure tables in attributed strings and display them in a text view.
 
-#### Overview
+## Overview
 
 [`NSTextTable`](./nstexttable.md) and its related classes let you embed tables of rows and columns directly into [`NSAttributedString`](../Foundation/nsattributedstring.md) objects on all Apple platforms. [`NSAttributedString`](../Foundation/nsattributedstring.md) stores a string together with per-character formatting attributes — such as fonts, colors, and paragraph styles — and is the primary text type for UIKit text views. You build a table from three objects:
 
@@ -15,7 +15,7 @@ Create and configure tables in attributed strings and display them in a text vie
 
 You build a table by creating one [`NSTextTable`](./nstexttable.md), then creating one [`NSTextTableBlock`](./nstexttableblock.md) per cell and assigning each block to a paragraph in the attributed string using [`textBlocks`](./nsparagraphstyle/textblocks.md). The text system reads the [`textBlocks`](./nsparagraphstyle/textblocks.md) array of adjacent paragraphs to determine the table’s structure.
 
-##### Create the table and its cells
+### Create the table and its cells
 
 Start by creating the table and configuring its column count. The following code shows how to create a table with three equally sized columns and enable collapsed borders so adjacent cells share a single border line:
 
@@ -43,7 +43,7 @@ func makeCell(row: Int, column: Int, in table: NSTextTable) -> NSTextTableBlock 
 }
 ```
 
-##### Apply cells to paragraphs
+### Apply cells to paragraphs
 
 Each cell maps to exactly one paragraph in the attributed string. Assign the cell block to that paragraph using `NSMutableParagraphStyle.textBlocks`. The following code builds a 2×3 table — two rows and three columns — by creating a cell block for each position and appending a styled paragraph for each cell to the attributed string:
 
@@ -68,7 +68,7 @@ for row in 0..<2 {
 
 The [`textBlocks`](./nsparagraphstyle/textblocks.md) array is ordered from outermost to innermost block. For a table without nested blocks, each cell paragraph has a single-element array.
 
-##### Configure per-edge widths and colors
+### Configure per-edge widths and colors
 
 You can set widths and border colors independently for each edge using [`setWidth(_:type:for:rectEdge:)`](./nstextblock/setwidth%28_,type,for,rectedge%29.md) and [`setBorderColor(_:rectEdge:)`](./nstextblock/setbordercolor%28_,rectedge%29.md). For example, the following code applies a 2-point blue border to the bottom edge of a cell, leaving the other edges unchanged:
 
@@ -81,7 +81,7 @@ Use the [`CGRectEdge`](../CoreFoundation/cgrectedge.md) values [`CGRectEdge.minX
 
 To support iOS 26 and earlier, use [`setWidth(_:type:for:)`](./nstextblock/setwidth%28_,type,for%29.md) and [`setBorderColor(_:)`](./nstextblock/setbordercolor%28_%29.md) to apply a uniform width or color to all edges.
 
-##### Choose a layout algorithm
+### Choose a layout algorithm
 
 By default, [`NSTextTable.LayoutAlgorithm.automatic`](./nstexttable/layoutalgorithm-swift.enum/automatic.md) distributes width based on content. Use [`NSTextTable.LayoutAlgorithm.automatic`](./nstexttable/layoutalgorithm-swift.enum/automatic.md) when you want your column widths to adapt to the content — for example, a label-value table where short labels sit beside values that vary in length.
 
@@ -91,7 +91,7 @@ If you want consistent, predictable column widths regardless of content length, 
 table.layoutAlgorithm = .fixed
 ```
 
-##### Display the result
+### Display the result
 
 Assign the attributed string to a [`UITextView`](./uitextview.md) to render the table. The text system reads the paragraph style information embedded in the string to interpret the table structure automatically, so no extra configuration of the view is required:
 

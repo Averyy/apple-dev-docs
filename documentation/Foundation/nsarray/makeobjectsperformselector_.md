@@ -21,7 +21,7 @@ Sends to each object in the array the message identified by a given selector, st
 - (void) makeObjectsPerformSelector:(SEL) aSelector;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an `NSInvalidArgumentException` if `aSelector` is `NULL`.
 

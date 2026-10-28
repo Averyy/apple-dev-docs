@@ -24,7 +24,7 @@ var name: String { get }
 @property (nonatomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Rename services by calling the [`updateName(_:completionHandler:)`](./updatename%28_,completionhandler%29.md) method with a value given by the user.
 

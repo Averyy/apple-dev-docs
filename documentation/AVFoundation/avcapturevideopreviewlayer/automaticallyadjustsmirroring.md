@@ -19,7 +19,7 @@ Indicates whether the layer display automatically adjusts mirroring.
 @property (nonatomic) BOOL automaticallyAdjustsMirroring;
 ```
 
-#### Discussion
+## Discussion
 
 For some session configurations, preview will be mirrored by default.
 

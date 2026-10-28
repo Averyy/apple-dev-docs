@@ -23,7 +23,7 @@ let kCTFontTrademarkNameKey: CFString
 extern CFStringRef const kCTFontTrademarkNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the trademark name.
 

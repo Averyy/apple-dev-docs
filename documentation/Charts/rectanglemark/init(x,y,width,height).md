@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension = .automatic, height: MarkDimension = .automatic) where X : Plottable, Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to map an x and y position to a rectangle for each data element. Optionally, specify the width or height of the rectangles.
 

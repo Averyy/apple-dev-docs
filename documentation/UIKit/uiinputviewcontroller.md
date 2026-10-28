@@ -29,7 +29,7 @@ class UIInputViewController
 - [Configuring open access for a custom keyboard](./configuring-open-access-for-a-custom-keyboard.md)
 - [Handling text interactions in custom keyboards](./handling-text-interactions-in-custom-keyboards.md)
 
-#### Overview
+## Overview
 
 To create a custom keyboard, first subclass the [`UIInputViewController`](./uiinputviewcontroller.md) class, then add your keyboard’s user interface to the [`inputView`](./uiinputviewcontroller/inputview.md) property of your subclass. In Xcode, you can start a custom keyboard by choosing the Custom Keyboard target template.
 

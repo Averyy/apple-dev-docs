@@ -25,7 +25,7 @@ class LowLevelTexture
 
 - [Creating a dynamic height and normal map with low-level texture](./creating-a-dynamic-height-map-with-low-level-texture.md)
 
-#### Overview
+## Overview
 
 Use `LowLevelTexture` when you want to bring your own texture data to RealityKit, or update your data frequently. You update the data on the GPU with Metal compute shaders. This is ideal for bringing your own textures to RealityKit as-is, or when you intend to update your data frequently.
 

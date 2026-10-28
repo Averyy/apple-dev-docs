@@ -5,7 +5,7 @@
 
 Download a macOS restore image and install it in a new VM.
 
-#### Overview
+## Overview
 
 Each new VM begins in an empty state. To boot and run macOS in a VM, you must first install a macOS image onto the new VM. Installing macOS in a new machine requires the following steps:
 
@@ -13,13 +13,13 @@ Each new VM begins in an empty state. To boot and run macOS in a VM, you must fi
 2. Set up a compatible VM configuration.
 3. Create a VM, install the restore image, and start the VM.
 
-##### Obtaining the Restore Image
+### Obtaining the Restore Image
 
 A macOS restore image is an installation media file for a specific version of macOS. Use [`VZMacOSRestoreImage`](./vzmacosrestoreimage.md) to find restore images over the network and obtain information about their requirements. To obtain a new restore image use the [`latestSupported`](./vzmacosrestoreimage/latestsupported.md) class function to download the latest supported macOS image over from Apple the network using the URL in the restore image’s [`url`](./vzmacosrestoreimage/url.md) property.
 
 If you already have a restore image on disk, you can reload the [`VZMacOSRestoreImage`](./vzmacosrestoreimage.md) from a local URL instead.
 
-##### Setting up the VM Configuration
+### Setting up the VM Configuration
 
 Running a macOS, VM requires a valid [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md), a [`VZMacOSBootLoader`](./vzmacosbootloader.md), and a configuration compatible with the [`VZMacOSRestoreImage`](./vzmacosrestoreimage.md).
 
@@ -38,7 +38,7 @@ To configure the [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md)
 3. Create a new [`VZMacAuxiliaryStorage`](./vzmacauxiliarystorage.md) with [`init(creatingStorageAt:hardwareModel:options:)`](./vzmacauxiliarystorage/init%28creatingstorageat,hardwaremodel,options%29.md) using the `VZMacOSConfigurationRequirements`.[`hardwareModel`](./vzmacplatformconfiguration/hardwaremodel.md).
 4. Set the new [`VZMacAuxiliaryStorage`](./vzmacauxiliarystorage.md) on `VZMacPlatformConfiguration`.[`auxiliaryStorage`](./vzmacplatformconfiguration/auxiliarystorage.md).
 
-##### Installing and Running the VM
+### Installing and Running the VM
 
 Install a macOS using a [`VZMacOSInstaller`](./vzmacosinstaller.md) with a VM instance and an image on the local filesystem using the following steps:
 

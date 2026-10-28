@@ -23,7 +23,7 @@ protocol UIColorPickerViewControllerDelegate : NSObjectProtocol
 @protocol UIColorPickerViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 By implementing the [`UIColorPickerViewControllerDelegate`](./uicolorpickerviewcontrollerdelegate.md) functions, your app can react to a color-selection change or the dismissal of the color picker.
 

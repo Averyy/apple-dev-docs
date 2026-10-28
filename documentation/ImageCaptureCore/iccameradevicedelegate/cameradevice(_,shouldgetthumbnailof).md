@@ -23,7 +23,7 @@ optional func cameraDevice(_ cameraDevice: ICCameraDevice, shouldGetThumbnailOf 
 - (BOOL) cameraDevice:(ICCameraDevice *) cameraDevice shouldGetThumbnailOfItem:(ICCameraItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If the request is no longer needed—for example, if the item is no longer displayed on the screen—the client can cancel sending a request to the camera, speeding up the execution queue.
 

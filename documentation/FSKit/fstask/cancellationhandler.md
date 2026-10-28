@@ -19,7 +19,7 @@ var cancellationHandler: (@Sendable () -> (any Error)?)? { get set }
 @property (copy, nullable) NSError * (^cancellationHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls the cancellation handler within an independent execution context.
 

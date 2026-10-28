@@ -15,7 +15,7 @@ Attributes that describe a device management service resource.
 object MdmServer.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: You can add new attributes to a resource without a newer version of an API.
 

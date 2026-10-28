@@ -25,7 +25,7 @@ string BundleIdPlatform
 
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
 
-#### Discussion
+## Discussion
 
 -`IOS`: A string that represents iOS. -`MAC_OS`: A string that represents macOS. -`UNIVERSAL`: A string that represents all possible platforms.
 

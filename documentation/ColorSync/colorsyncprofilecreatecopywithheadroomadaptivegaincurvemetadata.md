@@ -25,7 +25,7 @@ extern ColorSyncProfileRefColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurv
 
 - [Authoring Headroom Adaptive Gain Curve metadata](./authoring-headroom-adaptive-gain-curve-metadata.md)
 
-#### Return Value
+## Return Value
 
 A new profile that the caller must release with `CFRelease`, or `NULL` on failure.
 

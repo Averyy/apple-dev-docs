@@ -19,7 +19,7 @@ func setBackgroundLayer(_ aLayer: CALayer!)
 - (void) setBackgroundLayer:(CALayer *) aLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The background layer can have sublayers. Additionally, the layers can also contain animations.
 

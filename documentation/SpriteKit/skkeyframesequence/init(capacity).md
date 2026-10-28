@@ -25,11 +25,11 @@ convenience init(capacity numItems: Int)
 - (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized empty sequence.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

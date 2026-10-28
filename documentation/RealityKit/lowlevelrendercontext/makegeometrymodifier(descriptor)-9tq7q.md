@@ -16,8 +16,8 @@ Asynchronously creates a geometry modifier from a user-authored Metal function d
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
+nonisolated(nonsending)
+func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
 **Other overloads**:
@@ -26,11 +26,11 @@ nonisolated
 func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) throws -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
-#### Return Value
+## Return Value
 
 A compiled [`LowLevelMaterialResource.GeometryModifier`](../lowlevelmaterialresource/geometrymodifier.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specified Metal function cannot be found or compiled.
 

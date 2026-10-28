@@ -14,7 +14,7 @@
 #define kIOUSBFactoryID
 ```
 
-#### Discussion
+## Discussion
 
 This UUID constant is used internally by the system, and should not have to be used by any driver code to access the device interfaces.
 

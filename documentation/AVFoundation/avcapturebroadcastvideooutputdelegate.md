@@ -23,7 +23,7 @@ protocol AVCaptureBroadcastVideoOutputDelegate : NSObjectProtocol
 @protocol AVCaptureBroadcastVideoOutputDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Objects conforming to this protocol can be set as delegates to receive notifications about broadcast video output operations, including dropped frames and ancillary data processing.
 

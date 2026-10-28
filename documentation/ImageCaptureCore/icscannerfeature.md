@@ -19,7 +19,7 @@ class ICScannerFeature
 @interface ICScannerFeature : NSObject
 ```
 
-#### Overview
+## Overview
 
 The ImageCaptureCore framework defines three concrete subclasses of scanner features: [`ICScannerFeatureEnumeration`](./icscannerfeatureenumeration.md), [`ICScannerFeatureRange`](./icscannerfeaturerange.md), and [`ICScannerFeatureBoolean`](./icscannerfeatureboolean.md). Scanner functional units may have one or more instances of these classes to allow users to choose scanner-specific settings or operations before performing a scan.
 

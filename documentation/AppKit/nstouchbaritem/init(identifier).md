@@ -22,7 +22,7 @@ init(identifier: NSTouchBarItem.Identifier)
 - (instancetype) initWithIdentifier:(NSTouchBarItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The designated initializer. The identifier must be globally unique for every item, except for space items.
 

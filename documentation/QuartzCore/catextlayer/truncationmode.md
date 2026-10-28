@@ -24,7 +24,7 @@ var truncationMode: CATextLayerTruncationMode { get set }
 @property (copy) CATextLayerTruncationMode truncationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [Truncation modes](../truncation-modes.md). Defaults to [`none`](../catextlayertruncationmode/none.md).
 

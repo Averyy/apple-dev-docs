@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeTargetPortGroup = 5
 ```
 
-#### Discussion
+## Discussion
 
 Target Port Group Identifier Type.
 

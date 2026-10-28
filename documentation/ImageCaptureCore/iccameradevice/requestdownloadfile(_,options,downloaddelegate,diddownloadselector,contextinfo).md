@@ -23,7 +23,7 @@ func requestDownloadFile(_ file: ICCameraFile, options: [ICDownloadOption : Any]
 - (void) requestDownloadFile:(ICCameraFile *) file options:(NSDictionary<NSString *,id> *) options downloadDelegate:(id<ICCameraDeviceDownloadDelegate>) downloadDelegate didDownloadSelector:(SEL) selector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Once this request completes, [`didDownloadFile(_:error:options:contextInfo:)`](../iccameradevicedownloaddelegate/diddownloadfile%28_,error,options,contextinfo%29.md) is called on the `downloadDelegate`.
 

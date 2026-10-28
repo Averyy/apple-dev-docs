@@ -21,7 +21,7 @@ Facilitates accessing subscription properties on an option value.
 subscript<T>(dynamicMember keyPath: KeyPath<Product.SubscriptionInfo, T>) -> T? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You don’t use this subscript directly. Instead, access the properties of [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on a [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) value. For an example of using a dynamic member lookup, see [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md).
 

@@ -25,7 +25,7 @@ func nw_quic_get_stream_is_datagram(_ options: nw_protocol_options_t) -> Bool
 bool nw_quic_get_stream_is_datagram(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the QUIC stream is a datagram flow.
 

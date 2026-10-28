@@ -12,7 +12,7 @@ virtual IOReturn setTimeout(
  AbsoluteTimeinterval);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if everything is fine, kIOReturnNoResources if action hasn't been declared.
 

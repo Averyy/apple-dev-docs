@@ -21,7 +21,7 @@ var discoveryMethod: NIDLTDOAConfiguration.DiscoveryMethod { get set }
 @property (nonatomic, assign) NIDLTDOADiscoveryMethod discoveryMethod;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies Wi-Fi or Bluetooth Low Energy, depending on how your app scans for nearby DL-TDOA anchors. Set this property when configuring the session by calling [`init(networkIdentifier:discoveryMethod:)`](./init%28networkidentifier,discoverymethod%29.md).
 

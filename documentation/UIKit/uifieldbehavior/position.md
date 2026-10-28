@@ -23,7 +23,7 @@ var position: CGPoint { get set }
 @property (nonatomic, assign) CGPoint position;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the center point of the field. The shape of the field around this point is defined by the [`region`](./region.md) property.
 

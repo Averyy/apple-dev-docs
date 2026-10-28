@@ -6,7 +6,7 @@
 
 A required extension to the video sample description for H.264 video.
 
-#### Overview
+## Overview
 
 This atom contains an MPEG-4 decoder configuration atom. This is a required extension to the video sample description for H.264 video. This extension appears in video sample descriptions only when the codec type is `‘avc1’`.
 

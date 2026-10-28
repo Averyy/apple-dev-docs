@@ -20,7 +20,7 @@ The AV player that the component plays.
 var avPlayer: AVPlayer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Pass this player to the component as a parameter in the initializer; you can’t replace it afterward.
 

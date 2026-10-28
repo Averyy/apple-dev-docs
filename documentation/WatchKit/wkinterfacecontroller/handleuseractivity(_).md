@@ -21,7 +21,7 @@ func handleUserActivity(_ userInfo: [AnyHashable : Any]?)
 - (void) handleUserActivity:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method in your app’s initial interface controller and use it to respond to Handoff–related activity. If you do not implement the [`handleUserActivity(_:)`](../wkextensiondelegate/handleuseractivity%28_%29.md) method in your app’s extension delegate, WatchKit calls this method on your app’s initial interface controller. (If your app uses a page-based interface, WatchKit calls this method for each interface controller that is part of your initial interface.) Your implementation of this method should look at the `userInfo` dictionary and decide what actions (if any) to take. For example, an interface controller in a page-based interface might make itself the current page.
 

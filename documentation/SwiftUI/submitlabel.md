@@ -21,7 +21,7 @@ A semantic label describing the label of submission within a view hierarchy.
 struct SubmitLabel
 ```
 
-#### Overview
+## Overview
 
 A submit label is a description of a submission action provided to a view hierarchy using the [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier.
 

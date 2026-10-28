@@ -28,7 +28,7 @@ protocol CHHapticAdvancedPatternPlayer : CHHapticPatternPlayer
 
 - [Playing a single-tap haptic pattern](./playing-a-single-tap-haptic-pattern.md)
 
-#### Overview
+## Overview
 
 Create instances of this pattern player through a [`CHHapticEngine`](./chhapticengine.md) object by calling a factory method such as [`makeAdvancedPlayer(with:)`](./chhapticengine/makeadvancedplayer%28with%29.md). When you ask an advanced pattern player to play, pause, or resume a haptic pattern, the player submits those commands to the haptic engine on your behalf.
 

@@ -21,7 +21,7 @@ var coordinates: simd_double3 { get }
 @property (nonatomic, assign, readonly) simd_double3 coordinates;
 ```
 
-#### Discussion
+## Discussion
 
 The measurement’s [`coordinatesType`](./coordinatestype.md) determines the manner in which you interpret this property’s value.
 

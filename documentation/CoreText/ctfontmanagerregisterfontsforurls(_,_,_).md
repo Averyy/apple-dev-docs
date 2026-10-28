@@ -25,7 +25,7 @@ func CTFontManagerRegisterFontsForURLs(_ fontURLs: CFArray, _ scope: CTFontManag
 extern bool CTFontManagerRegisterFontsForURLs(CFArrayRef fontURLs, CTFontManagerScope scope, CFArrayRef*errors);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if registration of all font URLs was successful, otherwise `false`.
 

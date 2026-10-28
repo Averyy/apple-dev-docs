@@ -25,7 +25,7 @@ func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(_ descriptio
 extern void CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionaryRef description, OSType pixelFormat);
 ```
 
-#### Discussion
+## Discussion
 
 If you are using a custom pixel format, you must register the format with Core Video using this function. See [Technical Q&A 1401: Registering Custom Pixel Formats with QuickTime and Core Video](http://developer.apple.com/qa/qa2005/qa1401.html) for more details.
 

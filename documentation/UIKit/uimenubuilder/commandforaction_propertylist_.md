@@ -19,7 +19,7 @@ Gets the command for the specified selector and property list.
 - (UICommand *) commandForAction:(SEL) action propertyList:(id) propertyList;
 ```
 
-#### Return Value
+## Return Value
 
 A command object; otherwise, `nil` if there is no such command.
 

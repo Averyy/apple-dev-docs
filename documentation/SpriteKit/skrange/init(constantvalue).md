@@ -25,7 +25,7 @@ convenience init(constantValue value: CGFloat)
 + (instancetype) rangeWithConstantValue:(CGFloat) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object whose minimum and maximum value are both equal to `value`.
 

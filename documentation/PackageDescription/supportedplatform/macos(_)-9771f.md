@@ -12,11 +12,11 @@ Configures the minimum deployment target version for the macOS platform using a 
 static func macOS(_ versionString: String) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 The version string must be a series of two or three dot-separated integers, such as `10.10` or `10.10.1`.
 

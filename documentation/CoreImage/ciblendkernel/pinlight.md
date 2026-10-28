@@ -24,7 +24,7 @@ class var pinLight: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * pinLight;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the pin light blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926877@2x.png)
 

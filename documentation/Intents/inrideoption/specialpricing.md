@@ -31,7 +31,7 @@ var specialPricing: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * specialPricing;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you need to communicate special pricing conditions to the user. For example, you might set the value of this property to “Sale” when you want to offer discounted rides. The value in the [`priceRange`](./pricerange.md) and [`fareLineItems`](./farelineitems.md) properties should account for any special pricing you offer. Set this property to `nil` if special pricing does not apply.
 

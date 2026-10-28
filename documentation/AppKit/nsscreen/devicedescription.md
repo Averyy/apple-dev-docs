@@ -19,7 +19,7 @@ var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * deviceDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary containing the attributes of the receiver’s screen. For the list of keys you can use to retrieve values from the returned dictionary, see `Display Device—Descriptions`.
 

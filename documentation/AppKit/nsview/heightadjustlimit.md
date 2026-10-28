@@ -19,7 +19,7 @@ var heightAdjustLimit: CGFloat { get }
 @property (readonly) CGFloat heightAdjustLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a floating point number in the range `0.0` to `1.0`. This fraction is used to calculate the bottom edge limit for an [`adjustPageHeightNew(_:top:bottom:limit:)`](./adjustpageheightnew%28_,top,bottom,limit%29.md) message.
 

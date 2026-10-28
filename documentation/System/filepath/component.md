@@ -21,7 +21,7 @@ Represents an individual, non-root component of a file path.
 struct Component
 ```
 
-#### Overview
+## Overview
 
 Components can be one of the special directory components (`.` or `..`) or a file or directory name. Components are never empty and never contain the directory separator.
 

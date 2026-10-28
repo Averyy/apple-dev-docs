@@ -13,11 +13,11 @@ static OSArray * arrayFromList(
  IOItemCount count );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a created OSArray of IODeviceMemory objects, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method creates IODeviceMemory instances for each physical range passed in an IODeviceMemory::InitElement array. Each element consists of a physical address, length and tag value for the IODeviceMemory. The instances are returned as a created OSArray.
 

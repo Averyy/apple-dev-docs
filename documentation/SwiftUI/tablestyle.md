@@ -20,7 +20,7 @@ A type that applies a custom appearance to all tables within a view.
 @preconcurrency protocol TableStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current table style for a view hierarchy, use the [`tableStyle(_:)`](./view/tablestyle%28_%29.md) modifier.
 

@@ -21,7 +21,7 @@ var homeUniqueIdentifier: UUID? { get set }
 @property (copy, nullable) NSUUID * homeUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then the user chooses a home. See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 

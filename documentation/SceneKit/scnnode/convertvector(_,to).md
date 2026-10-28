@@ -25,11 +25,11 @@ func convertVector(_ vector: SCNVector3, to node: SCNNode?) -> SCNVector3
 - (SCNVector3) convertVector:(SCNVector3) vector toNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A direction vector in the local coordinate space defined by the other node.
 
-#### Discussion
+## Discussion
 
 Unlike the [`convertPosition(_:to:)`](./convertposition%28_,to%29.md) method, this method ignores the translational aspect of both nodes’ transforms. As such, this method is more appropriate for use with vectors that represent only directional information, such as velocity or facing.
 

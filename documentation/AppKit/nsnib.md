@@ -19,7 +19,7 @@ class NSNib
 @interface NSNib : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSNib`](./nsnib.md) object keeps the contents of a nib file resident in memory, ready for unarchiving and instantiation. When you create a nib object using the contents of a nib file, the object loads the contents of the referenced nib bundle—the object graph as well as any images and sounds—into memory; but it does not yet unarchive it. To unarchive all of the nib data and thus truly instantiate the nib you must call one of the `instantiate...` methods of `NSNib`.
 
@@ -29,7 +29,7 @@ Once all objects have been instantiated and initialized from the archive, the ni
 
 After all objects have been initialized and their connections reestablished, each object receives an [`awakeFromNib()`](../ObjectiveC/nsobject-swift.class/awakefromnib%28%29.md) message. You can override this method in your custom objects to perform any additional initialization.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You can subclass `NSNib` if you want to extend or specialize nib-loading behavior. For example, you could create a custom `NSNib` subclass that performs some post-processing on the top-level objects returned from the `instantiateNib...` methods. If you want to modify how nib instantiations are performed, it is recommended that you override the primitive method [`instantiate(withOwner:topLevelObjects:)`](./nsnib/instantiate%28withowner,toplevelobjects%29.md). Note that the instance variables of `NSNib` are private and thus are not available to subclasses. Any override of [`init(nibData:bundle:)`](./nsnib/init%28nibdata,bundle%29.md) or [`init(nibNamed:bundle:)`](./nsnib/init%28nibnamed,bundle%29.md) should first invoke the superclass implementation.
 

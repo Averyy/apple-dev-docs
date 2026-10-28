@@ -25,7 +25,7 @@ case reliable
 GKTransportTypeReliable
 ```
 
-#### Discussion
+## Discussion
 
 Use this when you need to guarantee delivery and speed is not critical.
 

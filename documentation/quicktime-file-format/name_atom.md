@@ -6,7 +6,7 @@
 
 An atom you use to provide a name for a metadata item.
 
-#### Overview
+## Overview
 
 The Name atom is a full atom with an atom type of `‘name’`. This atom contains a metadata name formatted as a string of UTF-8 characters, to fill the atom. It is optional. If it is not present, the item is unnamed, and cannot be referred to by name. Names are not user visible; they provide a way to refer to metadata items. The maximum length of a name may be limited in specific environments.
 

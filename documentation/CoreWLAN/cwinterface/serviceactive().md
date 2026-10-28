@@ -19,7 +19,7 @@ func serviceActive() -> Bool
 - (BOOL) serviceActive;
 ```
 
-#### Discussion
+## Discussion
 
 Returns *NO* in the case of an error.
 

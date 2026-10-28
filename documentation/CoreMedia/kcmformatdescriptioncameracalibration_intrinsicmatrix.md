@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_IntrinsicMatrix: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_IntrinsicMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the 3x3 camera intrinsic matrix for camera calibration.
 

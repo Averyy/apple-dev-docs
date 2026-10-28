@@ -5,7 +5,7 @@
 
 Specify elements of an external movie in your movie.
 
-#### Overview
+## Overview
 
 QuickTime 4 enables you to author movies with external movie targets. To specify an action that targets an element of an external movie, you must identify the external movie by either its name or its ID. Two new target atom types have been introduced for this purpose; these atoms are used in addition to the existing target atoms, which you may use to specify that the element is a particular track or object within a track, such as a sprite.
 
@@ -46,7 +46,7 @@ where the ID is a signed long integer.
 
 The QuickTime plug-in additionally supports `EMBED` tag parameters, which allow you to override a movie’s name or ID within an HTML page.
 
-#### Target atoms for embedded movies
+## Target atoms for embedded movies
 
 QuickTime 4.1 introduced target atoms to accommodate the addition of embedded movies. These target atoms allow for paths to be specified in a hierarchical movie tree.
 

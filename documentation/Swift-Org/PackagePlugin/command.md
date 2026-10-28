@@ -17,7 +17,7 @@ A command to run during the build.
 enum Command
 ```
 
-#### Overview
+## Overview
 
 A command includes the executable, command lines, environment variables, initial working directory, and so on. All paths should be based on the ones that SwiftPM passes to the plugin in the target build context.
 

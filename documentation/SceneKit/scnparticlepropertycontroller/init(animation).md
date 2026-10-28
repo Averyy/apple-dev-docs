@@ -25,11 +25,11 @@ convenience init(animation: CAAnimation)
 + (instancetype) controllerWithAnimation:(CAAnimation *) animation;
 ```
 
-#### Return Value
+## Return Value
 
 A new particle property controller.
 
-#### Discussion
+## Discussion
 
 To set up a particle property animation:
 

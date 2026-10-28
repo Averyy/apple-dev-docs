@@ -24,7 +24,7 @@ var fetchLimit: Int { get set }
 @property (nonatomic, assign, readwrite) NSUInteger fetchLimit;
 ```
 
-#### Discussion
+## Discussion
 
 With the default fetch limit of zero, Photos returns all requested assets or collections in a fetch result. Change this value to fetch more efficiently in situations where a potentially very large result is not needed. For example, to fetch only the most recently captured asset, call the [`fetchAssets(with:)`](../phasset/fetchassets%28with%29.md) method, using the [`sortDescriptors`](./sortdescriptors.md) property to sort in descending date order, and setting a fetch limit of one.
 

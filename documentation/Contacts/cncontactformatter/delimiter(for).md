@@ -24,11 +24,11 @@ class func delimiter(for contact: CNContact) -> String
 + (NSString *) delimiterForContact:(CNContact *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 The delimiter to use between name components.
 
-#### Discussion
+## Discussion
 
 If `contact` is `nil`, or if it has no first name, middle name, or last name, this method returns an empty string.
 

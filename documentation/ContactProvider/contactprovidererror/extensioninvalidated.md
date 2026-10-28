@@ -16,7 +16,7 @@ The app invalidated the extension while it was enumerating content or changes.
 case extensionInvalidated
 ```
 
-#### Discussion
+## Discussion
 
 A loaded and enumerating extension can become invalidated for many reasons, including:
 

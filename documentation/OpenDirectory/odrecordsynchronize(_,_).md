@@ -20,11 +20,11 @@ func ODRecordSynchronize(_ record: ODRecordRef!, _ error: UnsafeMutablePointer<U
 extern bool ODRecordSynchronize(ODRecordRef record, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record is successfully synchronized; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function refetches any attributes which have been fetched previously, but it does not fetch previously unfetched attributes.
 

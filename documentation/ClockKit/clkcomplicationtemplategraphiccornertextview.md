@@ -17,7 +17,7 @@ A template for displaying a SwiftUI view and text in the clock face’s corner.
 final class CLKComplicationTemplateGraphicCornerTextView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCorner`](./clkcomplicationfamily/graphiccorner.md) family.  shows the layout of the view and where the template might appear on the clock face.
 

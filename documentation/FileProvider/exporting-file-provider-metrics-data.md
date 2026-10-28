@@ -5,7 +5,7 @@
 
 Download and analyze usage, consistency, and error data.
 
-#### Overview
+## Overview
 
 Use CloudKit Console to create a data export token that you use to export file provider metrics for your apps. Request data from iCloud web services, and download the data when the request is complete. For more information on CloudKit and CloudKit Console, see [Build apps using CloudKit](https://developer.apple.com/icloud/cloudkit/).
 
@@ -21,7 +21,7 @@ You can download three different reports that provide file provider metrics:
 >
 > [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-##### Create a data export token
+### Create a data export token
 
 To access log data for your apps, create a data export token by following these steps:
 
@@ -39,7 +39,7 @@ To access log data for your apps, create a data export token by following these 
 
 The token you create is restricted to your developer account, and only gives you access to the data set you requested for the specified app.
 
-##### Create a data export request
+### Create a data export request
 
 Make an HTTPS `POST` request to the data export request endpoint:
 
@@ -89,7 +89,7 @@ You can request a download that covers the same date range as a previous downloa
 
 > **Note**:  The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
 
-##### Check the status of your data export
+### Check the status of your data export
 
 Make an HTTPS `GET` request to the status URL, passing your data export token in the `X-Apple-CloudKit-Management-Token` header.
 
@@ -119,7 +119,7 @@ The data export status endpoint might return the following HTTP status codes tha
 - **`404`**: The data export token is invalid.
 - **`500`**: An internal error occurred.
 
-##### Download the exported data
+### Download the exported data
 
 Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dataUrl` field to receive a CSV file that contains your exported data:
 
@@ -127,7 +127,7 @@ Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dat
 curl --compressed -X GET "https://example.com/download/data.csv" -o export.csv
 ```
 
-##### Analyze the CSV file
+### Analyze the CSV file
 
 The CSV file for all types of report contains these common fields:
 
@@ -140,7 +140,7 @@ The CSV file for all types of report contains these common fields:
 - **`eventtime`**: A date that’s the timestamp of the event, in the format `yyyy-MM-dd`.
 - **`providerversion`**: A string that’s the version of the file provider extension.
 
-##### Understand usage report fields
+### Understand usage report fields
 
 The usage report contains these fields:
 
@@ -161,7 +161,7 @@ The usage report contains these fields:
 - **`pinned_resident_pct`**: A string that’s the fraction of storage used by materialized documents that are also pinned, expressed as a percentage, and takes one of these values: `0%`, `< 1%`, `<30 %`, `< 100%`, or `100%`.
 - **`sync_pause_item_count`**: An Boolean that’s `true` if more than one item’s synchronization is paused due to an active iWork collaboration session; otherwise, it’s `false`.
 
-##### Understand dynamic error fields
+### Understand dynamic error fields
 
 The dynamic errors report contains these fields:
 
@@ -181,7 +181,7 @@ The dynamic errors report contains these fields:
 - **`reimportwithreason`**: A string that represents the reason for the current reimport, or `null` if the operation isn’t a reimport.
 - **`reason`**: An integer that’s a 37-bit bitfield that identifies the reason for the operation. For a list of values this field can take, see the section, “Understand the transfer operation types and operation reasons”, below.
 
-##### Understand consistency report fields
+### Understand consistency report fields
 
 The consistency report contains these fields:
 
@@ -393,7 +393,7 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 - **`disk_versus_fs_snapshot_diffs_in_pinned_folder_but_not_marked_accordingly`**: A Boolean that’s `true` if the item is a pinned folder with the corresponding extended attribute, but that this information isn’t propagated to the records for all descendent items; otherwise, it’s `false`.
 - **`disk_versus_fs_snapshot_diffs_marked_in_pinned_folder_but_not_in_pinned_folder`**: A Boolean that’s `true` if the item isn’t in a pinned folder but its database record says that it is; otherwise, it’s `false`.
 
-##### Understand the character set bit masks
+### Understand the character set bit masks
 
 The bits in the `name_characters_sets` bitfield are set to `1` when the following conditions are true, with bit `0` being the least significant bit:
 
@@ -404,7 +404,7 @@ The bits in the `name_characters_sets` bitfield are set to `1` when the followin
 - **`4`**: The item’s name contains one or more emoji.
 - **`5`**: The item’s name contains one or more characters that are outside the set `NSCharacterSet(range:NSMakeRange(0x0000, 0x024F))`; that is, characters that aren’t in the Base Latin, Latin-1, Extended Latin A or Extended Latin B sets.
 
-##### Understand the disconnection states
+### Understand the disconnection states
 
 The `disconnection_state` field in the usage report enumerates the reason that file provider is disconnected. The possible values are:
 
@@ -418,7 +418,7 @@ The `disconnection_state` field in the usage report enumerates the reason that f
 - **`7`**: File provider is unable to start because a mobile device management profile stops the system from using the file provider extension.
 - **`8`**: File provider is unable to start because the domain is backed by an external drive and the provider rejected the domain.
 
-##### Understand the transfer operation types and operation reasons
+### Understand the transfer operation types and operation reasons
 
 The `db_transfer_operation_type` field in the consistency report’s erroneous item breakdown enumerates the operation type that encountered an error. The possible values are:
 

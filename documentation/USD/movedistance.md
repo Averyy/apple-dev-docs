@@ -5,11 +5,11 @@
 
 The distance that this action moves the target prims.
 
-#### Overview
+## Overview
 
 The default value is zero. This property is in stage linear units; for more information, see [Encoding Stage Linear Units](https://openusd.org/docs/api/group___usd_geom_linear_units__group.html).
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double moveDistance = 0.0

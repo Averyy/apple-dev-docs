@@ -29,7 +29,7 @@ CLActivityTypeAutomotiveNavigation
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 Use this activity type when your app is using the location manager specifically during a vehicular positioning session to track location changes to the automobile.
 

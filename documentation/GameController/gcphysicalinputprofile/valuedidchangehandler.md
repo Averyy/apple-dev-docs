@@ -24,7 +24,7 @@ var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Voi
 @property (nonatomic, copy, nullable) void (^valueDidChangeHandler)(GCPhysicalInputProfile *profile, GCControllerElement *element);
 ```
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

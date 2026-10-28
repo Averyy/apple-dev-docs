@@ -23,7 +23,7 @@ var interfaceOrientation: UIInterfaceOrientation { get }
 @property (nonatomic, readonly) UIInterfaceOrientation interfaceOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this property for informing layout decisions.
 

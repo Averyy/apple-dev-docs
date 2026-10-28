@@ -24,7 +24,7 @@ Enqueues a callback that will be invoked once more elements should be produced.
 mutating func enqueueCallback(onProduceMore: sending @escaping (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Calling enqueue more than once is **not allowed**.
 

@@ -24,11 +24,11 @@ convenience init(string representation: String)
 + (instancetype) colorWithString:(NSString *) representation;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 

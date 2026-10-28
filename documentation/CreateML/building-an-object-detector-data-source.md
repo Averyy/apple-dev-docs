@@ -5,7 +5,7 @@
 
 Arrange your training data for an object detector in one of several different structured ways.
 
-#### Overview
+## Overview
 
 The general tasks for structuring data for training an object detector are the following:
 
@@ -22,13 +22,13 @@ These kinds of data represent the two steps required to build an annotated data 
 
 For more information about the object detector data-source types the Create ML API supports, see [`MLObjectDetector`](./mlobjectdetector.md).
 
-##### Collect images
+### Collect images
 
 Before you train, ensure that the training set has sufficient sample size and diversity within each label. Make your data reflect what your model sees in practice.
 
 The images can be any standard image format. After you collect your training set, put it in a common folder, and proceed with annotations.
 
-##### Format a bounding box JSON annotation
+### Format a bounding box JSON annotation
 
 Annotating images in an object detector teaches your model what objects it’s trying to recognize. Define zero, one, or multiple bounding boxes within each image in your training data set that show where an object is and what kind of object it is.
 
@@ -135,7 +135,7 @@ When put together, a full object detector annotation file looks like the followi
 ]
 ```
 
-##### Customize annotations
+### Customize annotations
 
 Each element of the annotated JSON references one image with `imagefilename` and defines one array of annotations in `annotation`. Make sure to include the file extension in the filename. You can define any number of labeled objects within a single image. Each element of the array contains `coordinates`, consisting of the `x`-coordinate, `y`-coordinate, `width`, and `height` of the bounding box.
 
@@ -171,7 +171,7 @@ case boundingBox(units: MLBoundingBoxUnits = .pixel, origin: MLBoundingBoxCoordi
 
 For more detail, see [`MLObjectDetector.AnnotationType`](./mlobjectdetector/annotationtype.md).
 
-##### Build a data source from images and annotations
+### Build a data source from images and annotations
 
 The simplest way to structure your data is using the `directoryWithImagesAndJsonAnnotation` case. Take the collected images and exactly one JSON annotation file, and put them all in a single folder.
 
@@ -183,13 +183,13 @@ Use this folder to train an object detector. The Create ML App uses this case, a
 
 After you train a model in the Create ML app, you can generate bounding boxes from the trained model in the Preview tab.
 
-##### Build a data source from a directory with images
+### Build a data source from a directory with images
 
 The `DataSource` case `directoryWithImages` is similar to `directoryWithImagesAndJsonAnnotation`, except you don’t need to nest the JSON annotation file in the folder with the images. Instead, you call it by reference from any specified URL.
 
 ![Flow diagram of an annotated images data-source file arrangement. The parent folder contains images with one annotation file separately.](https://developer.apple.com/tutorials/images/com.apple.createml/building-an-object-detector-data-source-2@2x.png)
 
-##### Build a data source from a data frame
+### Build a data source from a data frame
 
 In the case `frame`, you call an object detector from a single `DataFrame`. Rather than store your data in a directory structure, the format of this table is similar to the annotation file, where the `DataFrame` has the following columns:
 

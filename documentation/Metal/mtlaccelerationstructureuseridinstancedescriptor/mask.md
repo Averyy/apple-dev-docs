@@ -24,7 +24,7 @@ var mask: UInt32
 uint32_t mask;
 ```
 
-#### Discussion
+## Discussion
 
 Metal reserves the top 24 bits for future use.
 

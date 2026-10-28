@@ -21,7 +21,7 @@ A Boolean value that indicates whether any scroll views associated with this env
 var isScrollEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`. Use the [`scrollDisabled(_:)`](../view/scrolldisabled%28_%29.md) modifier to configure this property.
 

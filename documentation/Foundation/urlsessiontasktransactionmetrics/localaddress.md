@@ -25,7 +25,7 @@ var localAddress: String? { get }
 @property (copy, readonly, nullable) NSString * localAddress;
 ```
 
-#### Discussion
+## Discussion
 
 For multipath protocols, this is the local address of the initial flow. If the app didn’t use the connection, this value is `nil`.
 

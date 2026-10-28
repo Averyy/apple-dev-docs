@@ -24,7 +24,7 @@ The request’s sort descriptors, accessed as value types.
 
 Available when `SectionIdentifier` conforms to `Hashable` and `Result` inherits `NSManagedObject`.
 
-#### Discussion
+## Discussion
 
 Set this value to cause the associated [`SectionedFetchRequest`](../sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../Foundation/sortdescriptor.md) instances. The order of entities stored in the results collection may change as a result. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../sectionedfetchrequest/configuration.md).
 

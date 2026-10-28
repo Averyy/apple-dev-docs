@@ -15,11 +15,11 @@ Retrieves the algorithm identifier for a certificate.
 OSStatus SecCertificateGetAlgorithmID(SecCertificateRef certificate, const SecAsn1AlgId **algid);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The `CSSM_X509_ALGORITHM_IDENTIFIER` struct is defined in `Security.framework/x509defs.h` and discussed in *Common Security: CDSA and CSSM, version 2 (with corrigenda)* from [http://www.opengroup.org/security/cdsa.htm](http://www.opengroup.org/security/cdsa.htm). Possible algorithms are enumerated in `Security.framework/oidsalg.h`.
 

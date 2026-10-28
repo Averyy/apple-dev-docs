@@ -13,7 +13,7 @@
 typedef errno_t (*ifnet_ioctl_func)(ifnet_t interface, unsigned long cmd, void *data);
 ```
 
-#### Discussion
+## Discussion
 
 ifnet_ioctl_func is used to communicate ioctls from the stack to the driver.
 

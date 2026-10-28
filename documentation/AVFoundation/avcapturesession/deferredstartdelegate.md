@@ -23,7 +23,7 @@ var deferredStartDelegate: (any AVCaptureSessionDeferredStartDelegate)? { get }
 @property (nonatomic, readonly, nullable) id<AVCaptureSessionDeferredStartDelegate> deferredStartDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`setDeferredStartDelegate(_:deferredStartDelegateCallbackQueue:)`](./setdeferredstartdelegate%28_,deferredstartdelegatecallbackqueue%29.md) method to set the deferred start delegate for a session.
 

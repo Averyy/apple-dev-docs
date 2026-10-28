@@ -21,7 +21,7 @@ Install a tap on a bus using a sendable block
 func installAudioTap(onBus bus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: @escaping @Sendable (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method installs a tap that receives read-only buffers safe for concurrent use. The tap block is sendable and can be safely called from any isolation domain.
 

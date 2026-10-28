@@ -20,7 +20,7 @@ case scriptCodeItemAttr
 kSecScriptCodeItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type `ScriptCode` that represents the script code for all strings. Use of this attribute is deprecated; string attributes should always be stored in UTF-8 encoding.
 

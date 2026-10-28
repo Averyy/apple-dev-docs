@@ -23,11 +23,11 @@ func withTraitCollection(_ traitCollection: UITraitCollection?) -> Self
 - (instancetype) configurationWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A configuration object with the merged set of traits.
 
-#### Discussion
+## Discussion
 
 Use this method to augment or change the traits in the current configuration object. This method prefers the values from `traitCollection` over the values in the current configuration object. If the value of the trait is unspecified in both collections, it remains unspecified in the new collection.
 

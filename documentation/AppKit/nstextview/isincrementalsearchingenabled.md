@@ -19,7 +19,7 @@ var isIncrementalSearchingEnabled: Bool { get set }
 @property (getter=isIncrementalSearchingEnabled) BOOL incrementalSearchingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for information about the find bar.
 

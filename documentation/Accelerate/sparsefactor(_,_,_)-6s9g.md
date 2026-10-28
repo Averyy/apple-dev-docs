@@ -25,11 +25,11 @@ func SparseFactor(_ type: SparseFactorization_t, _ MatrixComplex: SparseMatrixSt
 static SparseOpaqueSymbolicFactorization SparseFactor(SparseFactorization_t type, SparseMatrixStructureComplex Matrix, SparseSymbolicFactorOptions sfoptions);
 ```
 
-#### Return Value
+## Return Value
 
 The requested symbolic factorization of Matrix.
 
-#### Discussion
+## Discussion
 
 The resulting symbolic factorization may be used for multiple numerical factorizations with different numerical values but the same non-zero structure.
 

@@ -27,7 +27,7 @@ var httpShouldUsePipelining: Bool { get }
 @property (readonly) BOOL HTTPShouldUsePipelining;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the request should continue transmitting data; otherwise, [`false`](../../Swift/false.md).
 

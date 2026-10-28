@@ -21,7 +21,7 @@ The most common values in a column, ignoring missing elements.
 var mode: [Element]
 ```
 
-#### Discussion
+## Discussion
 
 The summary orders the elements based on their original locations within the column.
 

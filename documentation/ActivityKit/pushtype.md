@@ -16,7 +16,7 @@ The structure that offers constants you use to configure a Live Activity to rece
 struct PushType
 ```
 
-#### Overview
+## Overview
 
 Pass the [`token`](./pushtype/token.md) constant to the [`request(attributes:contentState:pushType:)`](./activity/request%28attributes,contentstate,pushtype%29.md) function to start a Live Activity that receives content updates with ActivityKit push notifications. Pass [`channel(_:)`](./pushtype/channel%28_%29.md) to [`request(attributes:contentState:pushType:)`](./activity/request%28attributes,contentstate,pushtype%29.md) function to specify that you want to use a broadcast channel instead of a token. You can only specify one [`PushType`](./pushtype.md).
 

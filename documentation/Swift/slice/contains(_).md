@@ -23,11 +23,11 @@ func contains(_ element: Self.Element) -> Bool
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the element was found in the sequence; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example checks to see whether a favorite actor is in an array storing a movie’s cast.
 

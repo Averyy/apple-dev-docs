@@ -5,7 +5,7 @@
 
 Target specific CPU metrics with adjustments to your app and its content.
 
-#### Overview
+## Overview
 
 If your app’s main thread consumes more than 16.6 ms per frame, it won’t be able to achieve 60 fps. You can use the CPU metrics measured by RealityKit, as described in [Improving the Performance of a RealityKit App](./improving-the-performance-of-a-realitykit-app.md), to decide where you need to focus your efforts to reach this goal.
 
@@ -13,7 +13,7 @@ Note that with multithreaded rendering, keeping the main CPU thread below 16.6 m
 
 For the best user experience, keep both the main and render threads below about 12 ms on average. It’s helpful to keep the average time consumed well below the 16.6 ms limit to handle situations where the CPU load increases suddenly, such as when the user triggers multiple complex effects simultaneously. Also, the closer you run to the hardware’s limit, the more likely the system might have to throttle the frame rate to avoid overheating.
 
-##### Improve render thread time by merging meshes
+### Improve render thread time by merging meshes
 
 The bulk of CPU render time involves setting up draw calls and command buffers, preparing render targets, and encoding buffers for submission to the GPU. Because RealityKit invokes a draw call for each mesh, having more meshes consumes more CPU time. To reduce render thread time, merge meshes that share a material when possible.
 
@@ -23,13 +23,13 @@ On the other hand, merging meshes may reduce opportunities for visibility cullin
 
 > **Note**: While disabling certain effects primarily benefits GPU utilization, as described in [Choose render effects carefully](./reducing-gpu-utilization-in-your-realitykit-app.md#Choose-render-effects-carefully), disabling these effects may also help reduce CPU render time. For modest gains, experiment by turning off shadows, HDR, motion blur, depth of field, and environment texturing.
 
-##### Improve ecs time by flattening your assets
+### Improve ecs time by flattening your assets
 
 The CPU does ECS work for rendering, animation, physics, assets, networking, and audio on every frame, for every entity with related components. You can reduce this work by flattening your assets as much as possible. That is, combine an entity and its attached descendants into a single entity.
 
 When loading entities stored in usdz files as [`ModelEntity`](./modelentity.md) instances, RealityKit automatically flattens the model for you, as described in [Loading entities from a file](./loading-entities-from-a-file.md). Do this unless you need programmatic access to the descendant entities.
 
-##### Improve physics time by reducing collisions
+### Improve physics time by reducing collisions
 
 Model entities employ physics to move and interact in ways that appear natural to the user. The CPU carries out the necessary calculations, the cost of which comes primarily from detecting collisions. You can usually reduce the physics portion of your app’s CPU utilization by minimizing the number of collisions in the scene and simplifying collision shapes:
 
@@ -38,7 +38,7 @@ Model entities employ physics to move and interact in ways that appear natural t
 - Use care when calling [`generateCollisionShapes(recursive:)`](./entity/generatecollisionshapes%28recursive%29.md) to recursively create collision shapes. You might be able to manually construct simpler collision shapes that are less computationally complex for some meshes.
 - Choose the right collision shape. Some shapes, like those with complex hulls, can drastically increase computational effort. Experiment with different shapes to see how they affect physics computation time.
 
-##### Improve network time by reducing synchronization traffic
+### Improve network time by reducing synchronization traffic
 
 Synchronizing data among devices enables rich multiuser experiences. However, network access comes at a cost. It’s typically best to maximize locality, performing computations on the device where you need the data, and synchronizing as little as possible.
 
@@ -54,7 +54,7 @@ Within an entity, the system automatically synchronizes properties of all built-
 
 > **Note**: RealityKit only synchronizes component properties. It doesn’t synchronize any custom entity properties.
 
-##### Improve audio time by reducing audio complexity
+### Improve audio time by reducing audio complexity
 
 Audio sources tied to objects in the environment help to make a scene feel immersive. But if you find that audio processing consumes too much CPU time, take steps to minimize the performance impact of audio:
 
@@ -62,7 +62,7 @@ Audio sources tied to objects in the environment help to make a scene feel immer
 - Prefer static audio sources whenever possible. Audio sources that move require frequently updated audio transforms.
 - Avoid adding a large number of audio components to a scene all at once, which can cause a spike in CPU activity. Instead, space out the initializations, or do them before the user begins interacting with the environment.
 
-##### Improve asset time by streamlining the asset pipeline
+### Improve asset time by streamlining the asset pipeline
 
 Reduce or defer the performance cost of loading or creating assets:
 

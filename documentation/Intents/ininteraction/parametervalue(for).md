@@ -22,11 +22,11 @@ func parameterValue(for parameter: INParameter) -> Any?
 - (id) parameterValueForParameter:(INParameter *) parameter;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the property at the specified key path.
 
-#### Discussion
+## Discussion
 
 Use this method to fetch the value of a property that was specified using an [`INParameter`](../inparameter.md) object. A parameter object contains a key path that identifies the location of the property inside this interaction object.
 

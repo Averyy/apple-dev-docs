@@ -22,7 +22,7 @@ func contentSizeThatFits(_ size: CGSize) -> CGSize
 - (CGSize) contentSizeThatFits:(CGSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method only when the Messages app needs to update the view’s size and the view controller is presenting a live view in the transcript or input field (the view controller’s [`presentationStyle`](../msmessagesappviewcontroller/presentationstyle.md) property is set to the [`MSMessagesAppPresentationStyle.transcript`](../msmessagesapppresentationstyle/transcript.md) value). Typically, the view’s size needs updating when the live message is added to the transcript, when the transcript’s width changes, or when the locale or dynamic type size changes.
 

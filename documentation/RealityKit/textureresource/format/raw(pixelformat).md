@@ -20,7 +20,7 @@ Indicates a texture for unmodified use by a shader.
 static func raw(pixelFormat: MTLPixelFormat) -> TextureResource.Format
 ```
 
-#### Discussion
+## Discussion
 
 The created texture uses the [`TextureResource.Semantic.raw`](../semantic-swift.enum/raw.md) semantic.
 

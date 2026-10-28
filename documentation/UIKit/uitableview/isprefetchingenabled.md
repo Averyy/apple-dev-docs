@@ -23,7 +23,7 @@ var isPrefetchingEnabled: Bool { get set }
 @property (nonatomic, getter=isPrefetchingEnabled) BOOL prefetchingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the table view may request cells in advance of displaying them. When [`false`](../../Swift/false.md), the table view requests cells when they need to display. Setting this property to [`false`](../../Swift/false.md) also disables data prefetching. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -27,7 +27,7 @@ var subLocality: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subLocality;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains additional information, such as the name of the neighborhood or landmark associated with the placemark. It might also refer to a common name that’s associated with the location.
 

@@ -21,7 +21,7 @@ func vSgemx(_ m: Int32, _ n: Int32, _ alpha: Float, _ a: UnsafePointer<vFloat>, 
 extern void vSgemx(int32_t m, int32_t n, float alpha, const vFloat *a, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 Matrix `a` is multiplied by `alpha` and then by vector `x`; the resulting vector is added to vector `y`, and the results are stored in `y`.
 

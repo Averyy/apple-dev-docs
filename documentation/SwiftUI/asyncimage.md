@@ -22,7 +22,7 @@ nonisolated
 struct AsyncImage<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This view uses the shared [`URLSession`](../Foundation/urlsession.md) instance to load an image from a URL that you specify, and then display it. For example, you can display an icon that’s stored on a server:
 

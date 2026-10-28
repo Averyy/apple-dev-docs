@@ -15,7 +15,7 @@ A structure that defines the USB device firmware update descriptor.
 typedef struct IOUSBDFUDescriptor IOUSBDFUDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 See the USB Implementers Forum (USB-IF) *Universal Serial Bus Power Delivery Firmware Update Specification* for more information.
 

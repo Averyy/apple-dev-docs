@@ -10,11 +10,11 @@ Convert an image to L*a*b* color space and apply hue adjustment.
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
-This sample code project allows you to adjust the hue of an image by treating the chrominance information as 2D coordinates, and transforming those values with a rotation matrix. You can convert an RGB image — with its pixels represented as red, green, and blue values — to L*a*b*, where luminance and chrominance are stored discretely. The *L** in L*a*b* refers to the lightness, and the *a** and *b** refer to the red-green and blue-yellow values, respectively.
+This sample code project allows you to adjust the hue of an image by treating the chrominance information as 2D coordinates, and transforming those values with a rotation matrix. You can convert an RGB image — with its pixels represented as red, green, and blue values — to L*a*b*, where luminance and chrominance are stored discretely. The *L\** in L*a*b* refers to the lightness, and the *a\** and *b\** refer to the red-green and blue-yellow values, respectively.
 
-The image below shows an approximation of an L*a*b* color chart. The *a** value transitions horizontally (left to right) from negative, through zero, to positive, and the *b** value transitions vertically (bottom to top) from negative, through zero, to positive. Because this sample code focuses on color rather than lightness, the image doesn’t consider L*.
+The image below shows an approximation of an L*a*b* color chart. The *a\** value transitions horizontally (left to right) from negative, through zero, to positive, and the *b\** value transitions vertically (bottom to top) from negative, through zero, to positive. Because this sample code focuses on color rather than lightness, the image doesn’t consider L*.
 
 ![A graphic containing vertical and horizontal gradients. The gradient colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom.](https://developer.apple.com/tutorials/images/com.apple.accelerate/lab-color-chart_2x.png)
 
@@ -24,7 +24,7 @@ The following image shows four photographs, from left to right, with a hue adjus
 
 ![Four photographs of a flower with different hue adjustments.](https://developer.apple.com/tutorials/images/com.apple.accelerate/hueAdjust_2x.png)
 
-##### Create the L*a*b* image format
+### Create the L*a*b* image format
 
 To create the image format for the L*a*b* color space, the sample app uses the [`genericLab`](../CoreGraphics/cgcolorspace/genericlab.md) system-defined [`CGColorSpace`](../CoreGraphics/cgcolorspace.md).
 
@@ -37,9 +37,9 @@ var labImageFormat = vImage_CGImageFormat(
     renderingIntent: .defaultIntent)!
 ```
 
-On return, `labImageFormat` describes the interleaved L*a*b* pixels over which this sample works. The first channel in each pixel is the lightness, and the second and third channels are the *a** and *b**, respectively.
+On return, `labImageFormat` describes the interleaved L*a*b* pixels over which this sample works. The first channel in each pixel is the lightness, and the second and third channels are the *a\** and *b\**, respectively.
 
-##### Generate the pixel buffer and image format from the source image
+### Generate the pixel buffer and image format from the source image
 
 The converter that the sample uses to convert the source pixels to L*a*b* color space requires two [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structures that describe the source and destination images. The sample uses the [`makeDynamicPixelBufferAndCGImageFormat(cgImage:)`](./vimage/pixelbuffer/makedynamicpixelbufferandcgimageformat%28cgimage%29.md) method to create a dynamic pixel buffer and image format structure from the source Core Graphics image.
 
@@ -50,7 +50,7 @@ let source = try vImage.PixelBuffer
 
 On return, `source.cgImageFormat` contains the image format of the source image, and `source.pixelBuffer` is a pixel buffer that contains the source image data.
 
-##### Create the source image color space to L*a*b* converter
+### Create the source image color space to L*a*b* converter
 
 The sample app uses the source and L*a*b* image formats to create a [`vImageConverter`](./vimageconverter.md) instance to convert between the two color spaces.
 
@@ -61,7 +61,7 @@ let rgbToLab = try vImageConverter.make(sourceFormat: source.cgImageFormat,
 
 For more information about vImage’s convert-any-to-any functionality, see [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md).
 
-##### Convert the source image to L*a*b*
+### Convert the source image to L*a*b*
 
 The sample creates a pixel buffer that’s the same size as the source image.
 
@@ -78,7 +78,7 @@ try rgbToLab.convert(from: source.pixelBuffer,
 
 On return, the `labInterleavedSource` contains the L*a*b* representation of the source image.
 
-##### Convert the interleaved L*a*b* buffer to planar buffers
+### Convert the interleaved L*a*b* buffer to planar buffers
 
 The function the sample app uses to apply the hue adjustment, [`multiply(by:divisor:preBias:postBias:destination:)`](./vimage/pixelbuffer/multiply%28by,divisor,prebias,postbias,destination%29-7jo6v.md), operates on a multiple-plane pixel buffer. To convert the interleaved L*a*b* buffer to planar buffers, the app creates a [`vImage.Planar8x3`](./vimage/planar8x3.md) pixel buffer.
 
@@ -94,9 +94,9 @@ labInterleavedSource.deinterleave(destination: labPlanarDestination)
 
 For more information about working with planar buffers, see [Optimizing image-processing performance](./optimizing-image-processing-performance.md).
 
-##### Apply the hue adjustment
+### Apply the hue adjustment
 
-The app adjusts the hue of an image by rotating a two-element vector, described by *a** and *b**. For more information about working with rotation matrices, see [Working with Matrices](./working-with-matrices.md).
+The app adjusts the hue of an image by rotating a two-element vector, described by *a\** and *b\**. For more information about working with rotation matrices, see [Working with Matrices](./working-with-matrices.md).
 
 The following visualizes a sample color (marked *A*) rotated by -90º (marked *C*) and 45º (marked *B*):
 
@@ -116,7 +116,7 @@ let rotationMatrix = [
 }
 ```
 
-The `preBias` and `postBias` values effectively shift the *a** and *b** values from `0...255` to `-128...127`, so the rotation is centered where *a** and *b** are zero.
+The `preBias` and `postBias` values effectively shift the *a\** and *b\** values from `0...255` to `-128...127`, so the rotation is centered where *a\** and *b\** are zero.
 
 ```swift
 let preBias = [Int](repeating: -128, count: 3)
@@ -136,9 +136,9 @@ labPlanarDestination.multiply(
     destination: labPlanarDestination)
 ```
 
-On return, `labPlanarDestination` contains the hue-adjusted *a** and *b** channels.
+On return, `labPlanarDestination` contains the hue-adjusted *a\** and *b\** channels.
 
-##### Display the image
+### Display the image
 
 Finally, the sample code converts the hue-adjusted planar buffer back to an interleaved buffer.
 

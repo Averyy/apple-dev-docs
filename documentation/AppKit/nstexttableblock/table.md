@@ -19,7 +19,7 @@ var table: NSTextTable { get }
 @property (strong, readonly) NSTextTable * table;
 ```
 
-#### Return Value
+## Return Value
 
 The table containing this text table block.
 

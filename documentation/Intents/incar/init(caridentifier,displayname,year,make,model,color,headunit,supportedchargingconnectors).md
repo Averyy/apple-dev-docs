@@ -23,7 +23,7 @@ init(carIdentifier: String, displayName: String?, year: String?, make: String?, 
 - (instancetype) initWithCarIdentifier:(NSString *) carIdentifier displayName:(NSString *) displayName year:(NSString *) year make:(NSString *) make model:(NSString *) model color:(CGColorRef) color headUnit:(INCarHeadUnit *) headUnit supportedChargingConnectors:(NSArray<NSString *> *) supportedChargingConnectors;
 ```
 
-#### Discussion
+## Discussion
 
 The `carIdentifier` is a unique value that your app provides, and must not be the vehicle’s VIN or equivilent identifier. For the best user experience—and to prevent orphaned or duplicate vehicles in the user’s My Vehicles collection—your app must always provide the same identifier for the same vehicle.
 

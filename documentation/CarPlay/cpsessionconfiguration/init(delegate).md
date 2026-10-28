@@ -21,7 +21,7 @@ init(delegate: any CPSessionConfigurationDelegate)
 - (instancetype) initWithDelegate:(id<CPSessionConfigurationDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized session configuration.
 

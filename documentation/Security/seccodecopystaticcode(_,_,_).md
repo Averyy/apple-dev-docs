@@ -20,17 +20,17 @@ func SecCodeCopyStaticCode(_ code: SecCode, _ flags: SecCSFlags, _ staticCode: U
 OSStatus SecCodeCopyStaticCode(SecCodeRef code, SecCSFlags flags, SecStaticCodeRef*staticCode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use the [`SecCodeCopyPath(_:_:_:)`](./seccodecopypath%28_,_,_%29.md) function to get the URL specifying the location on disk of the code represented by a code or static code object.
 
 Many functions in the Code Signing Services API take either a static code object or a code object as an input parameter. For these functions, if you pass in a code reference, the function first translates it to a static code reference in the same manner as the [`SecCodeCopyStaticCode(_:_:_:)`](./seccodecopystaticcode%28_,_,_%29.md) function. In each such case, the parameter description documents this behavior.
 
-##### Special Considerations
+### Special Considerations
 
 The link established by this function is generally reliable but is not guaranteed to be secure.
 

@@ -15,7 +15,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 init(dims: Int, groupSize: Int, krot: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `dims` is a positive multiple of an even `groupSize`, and `krot >= 1` — see `rotationGeometryProblem`.
 

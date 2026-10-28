@@ -21,7 +21,7 @@ Indicates movement between discrete levels of pressure.
 static let levelChange: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 For example, as the user presses a fast-forward button on a video player, playback could increase or decrease and haptic feedback could be provided as different levels of pressure are reached.
 

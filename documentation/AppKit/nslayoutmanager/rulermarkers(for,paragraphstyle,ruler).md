@@ -19,11 +19,11 @@ func rulerMarkers(for view: NSTextView, paragraphStyle style: NSParagraphStyle, 
 - (NSArray<NSRulerMarker *> *) rulerMarkersForTextView:(NSTextView *) view paragraphStyle:(NSParagraphStyle *) style ruler:(NSRulerView *) ruler;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSRulerMarker`](../nsrulermarker.md) objects representing such things as left and right margins, first-line indent, and tab stops.
 
-#### Discussion
+## Discussion
 
 If you have turned off automatic ruler updating through the use of [`usesRuler`](../nstextview/usesruler.md) so that you can do more complex things, but you still want to display the appropriate accessory view, you can use this method.
 

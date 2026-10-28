@@ -21,7 +21,7 @@ var smartReply: String { get }
 @property (nonatomic, copy, readonly) NSString * smartReply;
 ```
 
-#### Discussion
+## Discussion
 
 Use this as a signal of the user’s intention when you generate long form text based on the option the user selected.
 

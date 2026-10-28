@@ -25,7 +25,7 @@ let kCVImageBufferPreferredCleanApertureKey: CFString
 extern CFStringRef const kCVImageBufferPreferredCleanApertureKey;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary is of type [`CFDictionary`](../CoreFoundation/cfdictionary.md). See [Image Buffer Clean Aperture Keys](./image-buffer-clean-aperture-keys.md) for more information.
 

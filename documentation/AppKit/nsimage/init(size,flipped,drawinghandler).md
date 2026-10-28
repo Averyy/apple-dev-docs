@@ -19,11 +19,11 @@ convenience init(size: NSSize, flipped drawingHandlerShouldBeCalledWithFlippedCo
 + (instancetype) imageWithSize:(NSSize) size flipped:(BOOL) drawingHandlerShouldBeCalledWithFlippedContext drawingHandler:(BOOL (^)(NSRect dstRect)) drawingHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object.
 
-#### Discussion
+## Discussion
 
 Use this method to generate an image that is correct at any resolution. This method creates an image object with a single [`NSCustomImageRep`](../nscustomimagerep.md) object to manage drawing. The image representation uses the block in the `drawingHandler` parameter to do the actual drawing.
 

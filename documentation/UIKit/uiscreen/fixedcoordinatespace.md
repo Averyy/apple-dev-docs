@@ -22,7 +22,7 @@ var fixedCoordinateSpace: any UICoordinateSpace { get }
 @property (readonly) id<UICoordinateSpace> fixedCoordinateSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The bounds of this coordinate space always reflect the screen dimensions of the device in a portrait-up orientation. You can use this coordinate space in places where you need a fixed frame of reference. For example, if your app saves screen coordinate values to disk, convert those values to the fixed coordinate space before doing so. Saving them in the fixed coordinate space ensures that when your app reads the values later, it can convert them to the current coordinate space correctly.
 

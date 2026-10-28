@@ -19,7 +19,7 @@ convenience init(windowNibName: NSNib.Name)
 - (instancetype) initWithWindowNibName:(NSNibName) windowNibName;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the owner of the nib file to the receiver. The default initialization turns on cascading, sets the [`shouldCloseDocument`](./shouldclosedocument.md) property to [`false`](../../Swift/false.md), and sets the autosave name for the window’s frame to an empty string.
 

@@ -21,7 +21,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The system crops the left and right edges of the image by 6 points, and rounds the image’s corners.
 

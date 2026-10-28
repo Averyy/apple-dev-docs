@@ -17,7 +17,7 @@ Creates a line item with a label and decimal value, formatted using the session 
 init(label: String, value: Decimal)
 ```
 
-#### Discussion
+## Discussion
 
 Localize the label to the customer’s locale. Format the decimal amount using the session currency and customer’s locale.
 

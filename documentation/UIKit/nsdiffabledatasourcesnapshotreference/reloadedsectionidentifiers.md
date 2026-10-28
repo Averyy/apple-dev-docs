@@ -23,7 +23,7 @@ var reloadedSectionIdentifiers: [Any] { get }
 @property (nonatomic, readonly) NSArray<id> * reloadedSectionIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 After you make updates to the snapshot, this method returns an array of identifiers corresponding to the sections that the view reloads when you apply the snapshot to your data source.
 

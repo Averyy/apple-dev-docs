@@ -28,4 +28,4 @@ convenience init(reportToPersistenceDelayTime: TimeInterval, reportToPersistence
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalt-6xgqf)*
+*[View on Apple Developer](https://developer.apple.com/documentation/matter/mtrdevicestoragebehaviorconfiguration/init%28reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalt-6xgqf)*

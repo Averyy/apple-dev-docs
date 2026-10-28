@@ -13,7 +13,7 @@
 kIOUCVariableStructureSize = 0xffffffff
 ```
 
-#### Discussion
+## Discussion
 
 Use in the structures IOExternalMethod, IOExternalAsyncMethod, IOExternalMethodDispatch to specify the size of the structure is variable.
 

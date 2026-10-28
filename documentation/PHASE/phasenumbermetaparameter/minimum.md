@@ -24,7 +24,7 @@ var minimum: Double { get }
 @property (nonatomic, readonly) double minimum;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the metaparameter definition’s [`minimum`](../phasenumbermetaparameterdefinition/minimum.md) property.
 

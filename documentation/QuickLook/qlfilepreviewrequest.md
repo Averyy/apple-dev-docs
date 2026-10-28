@@ -20,7 +20,7 @@ class QLFilePreviewRequest
 @interface QLFilePreviewRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class contains information about the preview that should be provided.
 

@@ -19,7 +19,7 @@ Creates a clearcoat object using a single value.
 init(floatLiteral value: Float)
 ```
 
-#### Discussion
+## Discussion
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this initializer to create an object to specify the amount of clearcoat for a material using a single value that applies to the entire material.
 

@@ -23,7 +23,7 @@ protocol UITableViewDropPlaceholderContext : UIDragAnimating
 @protocol UITableViewDropPlaceholderContext <UIDragAnimating>
 ```
 
-#### Overview
+## Overview
 
 Don’t create instances of this class yourself. Instead, call [`drop(_:to:)`](./uitableviewdropcoordinator/drop%28_,to%29-3znax.md) from your drop coordinator object. That method inserts a placeholder cell into the table and returns a [`UITableViewDropPlaceholderContext`](./uitableviewdropplaceholdercontext.md) object for managing that placeholder.
 

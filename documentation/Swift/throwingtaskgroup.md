@@ -22,7 +22,7 @@ A group that contains throwing, dynamically created child tasks.
 struct ThrowingTaskGroup<ChildTaskResult, Failure> where ChildTaskResult : Sendable, Failure : Error
 ```
 
-#### Overview
+## Overview
 
 To create a throwing task group, call the `withThrowingTaskGroup(of:returning:body:)` method.
 
@@ -30,7 +30,7 @@ Don’t use a task group from outside the task where you created it. In most cas
 
 Refer to [`TaskGroup`](./taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-##### Cancellation behavior
+### Cancellation behavior
 
 A task group becomes canceled in one of the following ways:
 

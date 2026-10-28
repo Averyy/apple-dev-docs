@@ -27,7 +27,7 @@ func withKnownIssue(_ comment: Comment? = nil, isIntermittent: Bool = false, sou
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Discussion
+## Discussion
 
 Use this function when a test is known to record one or more issues that should not cause the test to fail. For example:
 

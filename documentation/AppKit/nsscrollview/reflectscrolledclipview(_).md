@@ -19,7 +19,7 @@ func reflectScrolledClipView(_ cView: NSClipView)
 - (void) reflectScrolledClipView:(NSClipView *) cView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically during scrolling and when an `NSClipView` object’s relationship to its document view changes; you should rarely need to invoke it yourself, but may wish to override it for custom updating or other behavior. If you override this method, be sure to call the superclass implementation. If you do not, other controls (such as the current scrollers) may not be updated properly.
 

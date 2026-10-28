@@ -18,7 +18,7 @@ The payload that configures a device to run a single app.
 object AppLock
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.app.lock` as the payload type.
 
@@ -26,7 +26,7 @@ With an app lock profile, the device locks to the specified app until removal of
 
 Only use an app lock payload after installing the target app.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ Only use an app lock payload after installing the target app.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

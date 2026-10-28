@@ -43,7 +43,7 @@ var path: NSBezierPath? { get set }
 @property (nonatomic, copy, nullable) NSBezierPath * path;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit determines the filled area of the path using the even-odd winding rule (see [Winding Rules](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Paths/Paths.html#//apple_ref/doc/uid/TP40003290-CH206-BAJIJJGD) in [Cocoa Drawing Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)) and extrudes this area to create a three-dimensional geometry. The result of extruding a self-intersecting path is undefined.
 

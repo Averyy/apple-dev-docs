@@ -23,7 +23,7 @@ var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool { get s
 @property (nonatomic, getter=isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled) BOOL primaryConstituentDeviceSwitchingBehaviorForRecordingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to enable camera switching restrictions when recording movies. You set restrictions by calling the output’s [`setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_:restrictedSwitchingBehaviorConditions:)`](./setprimaryconstituentdeviceswitchingbehaviorforrecording%28_,restrictedswitchingbehaviorconditions%29.md) method. The restrictions take effect when you start recording, and revert to the behavior set by the capture device’s [`primaryConstituentDeviceSwitchingBehavior`](../avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.property.md) when you stop recording.
 

@@ -22,7 +22,7 @@ func dropMissing() -> MLDataColumn<Element>
 
 Available when `Element` conforms to `MLDataValueConvertible`.
 
-#### Return Value
+## Return Value
 
 A new column.
 

@@ -26,7 +26,7 @@ optional func resolvePartySize(for intent: INGetAvailableRestaurantReservationBo
 - (void) resolvePartySizeForGetAvailableRestaurantReservationBookings:(INGetAvailableRestaurantReservationBookingsIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the party size for the reservation.
 

@@ -26,7 +26,7 @@ MTLPixelFormatUnspecialized
 
 - [Using the Metal 4 compilation API](../using-the-metal-4-compilation-api.md)
 
-#### Discussion
+## Discussion
 
 A pixel format where the red and green channels are subsampled horizontally.  Two pixels are stored in 32 bits, with shared red and blue values, and unique green values.
 

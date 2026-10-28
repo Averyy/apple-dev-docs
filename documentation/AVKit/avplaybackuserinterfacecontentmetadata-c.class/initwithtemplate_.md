@@ -17,7 +17,7 @@ Initializes a new metadata object by copying values from a metadata template.
 - (instancetype) initWithTemplate:(AVPlaybackUserInterfaceContentMetadataTemplate *) metadataTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an immutable [`AVPlaybackUserInterfaceContentMetadata`](../avplaybackuserinterfacecontentmetadata-c.class.md) instance from a mutable [`AVPlaybackUserInterfaceContentMetadataTemplate`](../avplaybackuserinterfacecontentmetadatatemplate.md), providing a convenient way to convert configured template data into stable metadata for playback interfaces.
 

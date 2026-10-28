@@ -23,7 +23,7 @@ init(code: INGetCarPowerLevelStatusIntentResponseCode, userActivity: NSUserActiv
 - (instancetype) initWithCode:(INGetCarPowerLevelStatusIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized response object.
 

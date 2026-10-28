@@ -23,11 +23,11 @@ func transitionController(forDocumentURL documentURL: URL) -> UIDocumentBrowserT
 - (UIDocumentBrowserTransitionController *) transitionControllerForDocumentURL:(NSURL *) documentURL;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly instantiated transition controller. Its [`loadingProgress`](../uidocumentbrowsertransitioncontroller/loadingprogress.md) and [`targetView`](../uidocumentbrowsertransitioncontroller/targetview.md) properties are both set to `nil`.
 
-#### Discussion
+## Discussion
 
 For the animations to function properly, you must maintain a strong reference to the transition controller until all the animation sequences are complete.
 

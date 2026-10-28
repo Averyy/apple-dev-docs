@@ -21,7 +21,7 @@ An error that occurs when the request contains invalid information.
 static var invalidArguments: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Consult the error’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary for more information about the issue.
 

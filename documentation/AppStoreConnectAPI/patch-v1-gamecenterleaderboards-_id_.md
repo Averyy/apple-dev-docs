@@ -11,7 +11,7 @@ Modify the details of a leaderboard.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Modify a Game Center Leaderboard`](./patch-v2-gamecenterleaderboards-_id_.md) instead.
 
-##### Discussion
+### Discussion
 
 Use leaderboard formatters to specify the unit of measurement for a Game Center leaderboard. There is a new required attribute `defaultFormatter` when you use [`Create a Leaderboard`](./post-v1-gamecenterleaderboards.md), which gives all your localizations the same formatter. You can also optionally use `formatterOverride` to override a specific leaderboard localization when calling [`Create a Leaderboard Localization`](./post-v1-gamecenterleaderboardlocalizations.md) or [`Modify a Leaderboard Localization`](./patch-v1-gamecenterleaderboardlocalizations-_id_.md).
 

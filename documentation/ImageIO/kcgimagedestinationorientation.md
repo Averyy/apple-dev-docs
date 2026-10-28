@@ -25,7 +25,7 @@ let kCGImageDestinationOrientation: CFString
 extern CFStringRef const kCGImageDestinationOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFNumber`](../CoreFoundation/cfnumber.md), and the number must be an integer in the range `1`–`8`. For more information about the meaning of each number, see the orientation field in the EXIF specification.
 

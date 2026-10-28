@@ -24,7 +24,7 @@ var radiusBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> radiusBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer contains values that are greater than or equal to `0.0` in the format you configure with the [`radiusFormat`](./radiusformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
 

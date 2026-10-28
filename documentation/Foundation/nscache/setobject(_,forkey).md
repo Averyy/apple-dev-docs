@@ -25,7 +25,7 @@ func setObject(_ obj: ObjectType, forKey key: KeyType)
 - (void) setObject:(ObjectType) obj forKey:(KeyType) key;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike an `NSMutableDictionary` object, a cache does not copy the key objects that are put into it.
 

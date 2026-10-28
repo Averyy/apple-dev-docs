@@ -20,7 +20,7 @@ The size of the canvas in points.
 var size: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `CGSize.zero`. This defines both how large the canvas is for text layout, as well as how large it is in world-space. The canvas coordinate system uses the standard CoreGraphics / CoreText coordinate space. There is no explicit backing-buffer size, as it might be dynamic to generate high-fidelity text. The canvas size uses points as 1/72nd of an inch (about 0.352 mm) in world-space. World-size might change as a function of any peer or parent transform component.
 

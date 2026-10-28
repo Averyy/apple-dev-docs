@@ -19,7 +19,7 @@ The color of the title text.
 @property (nonatomic, strong, nullable) UIColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of property is `nil` (the default), the color of text is black.
 

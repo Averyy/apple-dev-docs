@@ -17,11 +17,11 @@ Load a model given a model identifier, downloading via a [`Downloader`](./downlo
 func loadModel(from downloader: any Downloader, using tokenizerLoader: any TokenizerLoader, id: String, revision: String = "main", useLatest: Bool = false, progressHandler: @Sendable @escaping (Progress) -> Void = { _ in }) async throws -> sending ModelContext
 ```
 
-#### Return Value
+## Return Value
 
 A [`ModelContext`](./modelcontext.md)
 
-#### Discussion
+## Discussion
 
 Returns a [`ModelContext`](./modelcontext.md) holding the model and tokenizer without an `actor` providing an isolation context.
 

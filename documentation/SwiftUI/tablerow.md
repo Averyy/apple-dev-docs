@@ -20,7 +20,7 @@ nonisolated
 struct TableRow<Value> where Value : Identifiable
 ```
 
-#### Overview
+## Overview
 
 Create instances of [`TableRow`](./tablerow.md) in the closure you provide to the `rows` parameter in [`Table`](./table.md) initializers that take columns and rows. The table provides the value of a row to each column of a table, which produces the cells for each row in the column.
 

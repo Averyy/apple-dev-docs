@@ -19,11 +19,11 @@ func isFavorite() -> Bool
 - (BOOL) isFavorite;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the target device is a favorite for the user, FALSE if not.
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

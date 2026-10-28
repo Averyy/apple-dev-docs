@@ -24,7 +24,7 @@ class PKPaymentRequestMerchantSessionUpdate
 @interface PKPaymentRequestMerchantSessionUpdate : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is the handler for [`paymentAuthorizationController(_:didRequestMerchantSessionUpdate:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didrequestmerchantsessionupdate%29.md) and [`paymentAuthorizationViewController(_:didRequestMerchantSessionUpdate:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didrequestmerchantsessionupdate%29.md).
 

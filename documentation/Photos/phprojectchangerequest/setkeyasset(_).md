@@ -19,7 +19,7 @@ func setKeyAsset(_ keyAsset: PHAsset?)
 - (void) setKeyAsset:(PHAsset *) keyAsset;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Setting a key asset has been deprecated in macOS 10.14. Use [`setProjectPreviewImage(_:)`](./setprojectpreviewimage%28_%29.md) to provide a rendered preview image instead of designating a key asset.
 

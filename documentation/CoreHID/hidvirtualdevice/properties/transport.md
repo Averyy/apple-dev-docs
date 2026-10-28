@@ -15,7 +15,7 @@ The data transport for the device.
 let transport: HIDDeviceTransport?
 ```
 
-#### Discussion
+## Discussion
 
 The data transport is typically [`HIDDeviceTransport.virtual`](../../hiddevicetransport/virtual.md), but it can be any [`HIDDeviceTransport`](../../hiddevicetransport.md).
 

@@ -28,7 +28,7 @@ optional func confirm(intent: INSetDefrosterSettingsInCarIntent) async -> INSetD
 - (void) confirmSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *) intent completion:(void (^)(INSetDefrosterSettingsInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you’re able to change the defroster settings. For example, you might use this method to verify that you have an active connection to the vehicle. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to make the change.
 

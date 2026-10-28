@@ -22,11 +22,11 @@ func JSBigIntCreateWithDouble(_ ctx: JSContextRef, _ value: Double, _ exception:
 JSValueRefJSBigIntCreateWithDouble(JSContextRef ctx, double value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A BigInt JSValue of the value, or NULL if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Creates a JavaScript BigInt with a double.
 

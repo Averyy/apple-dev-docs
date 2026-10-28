@@ -14,11 +14,11 @@
 typedef int (*)(unsigned int, unsigned int, unsigned char, unsigned int) AudioDriverPlugInDevicePropertyChangedProc;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is currently unused and should always be 0.
 
-#### Discussion
+## Discussion
 
 A plug-in calls this routine to notify the HAL that one of its device’s properties has changed.
 

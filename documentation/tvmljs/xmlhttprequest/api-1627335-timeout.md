@@ -25,7 +25,7 @@ attribute int timeout;
 attribute unsigned long timeout;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute only takes effect if the request is asynchronous. When set to `0`, the request will not automatically time out.
 

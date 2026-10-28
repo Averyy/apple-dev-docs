@@ -26,7 +26,7 @@ class MKPinAnnotationView
 @interface MKPinAnnotationView : MKAnnotationView
 ```
 
-#### Overview
+## Overview
 
 Return instances of this class from the [`mapView(_:viewFor:)`](./mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) method of your map view delegate when you want to display a pin for one of your annotations. The pins displayed by this view are the same ones found in the Maps application. You can specify the type of pin you want to display and whether you want the pin to be animated into place.
 

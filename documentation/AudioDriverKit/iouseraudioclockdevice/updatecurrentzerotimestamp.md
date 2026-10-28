@@ -15,7 +15,7 @@ Updates the current timestamp value.
 void UpdateCurrentZeroTimestamp(uint64_t in_sample_time, uint64_t in_host_time);
 ```
 
-#### Discussion
+## Discussion
 
 Updating the current timestamp should use the time passed in the hardware interrupt.
 

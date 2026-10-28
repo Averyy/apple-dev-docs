@@ -5,13 +5,13 @@
 
 Learn about important changes in User Notifications.
 
-#### Overview
+## Overview
 
 Browse notable changes in [User Notifications](../UserNotifications/UserNotifications.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Use an offline queue store to store multiple notifications per bundle ID when a device is inactive.
 - Enable multiple pushes on the server side using the `apns-collapse-id` header field.

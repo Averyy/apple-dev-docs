@@ -16,7 +16,7 @@ get points(): Coordinate[][];
 set points(points: Coordinate[][]);
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS represents the points in the polygon as an array of arrays of coordinates, or an array of coordinates. (For the latter, MapKit JS autowraps the array with an enclosing array). When reading this property, an array of arrays of coordinates always returns. This is an array of arrays because complex polygons can form from multiple polygons, with each array containing the points of a polygon. MapKit JS determines *insideness* of the aggregate polygon by the `fillRule` property in this object’s `style` property.
 

@@ -19,7 +19,7 @@ class func cancelLoadingImageData(forTag tag: Int)
 + (void) cancelLoadingImageDataForTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 The tag is returned from the previous call to the [`beginLoadingImageData(for:)`](./beginloadingimagedata%28for%29.md) method that started the asynchronous fetch.
 

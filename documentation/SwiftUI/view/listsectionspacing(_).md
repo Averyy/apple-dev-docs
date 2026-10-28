@@ -27,7 +27,7 @@ nonisolated
 func listSectionSpacing(_ spacing: ListSectionSpacing) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a [`List`](../list.md) with 5 pts of spacing between sections:
 

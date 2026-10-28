@@ -20,7 +20,7 @@ A placement for items in the bottom toolbar.
 static let bottomBar: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 On tvOS, this applies only within the sidebar of a [`NavigationSplitView`](../navigationsplitview.md).  It has no effect if used elsewhere.
 

@@ -21,7 +21,7 @@ Instruction noting that the scaler is ending the rendering of the specified part
 HVFPartRenderInstructionEndPart
 ```
 
-#### Discussion
+## Discussion
 
 The `HVFPartRenderParams` union will contain the data for `endPart`.
 

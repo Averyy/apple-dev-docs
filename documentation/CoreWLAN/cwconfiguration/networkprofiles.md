@@ -20,7 +20,7 @@ var networkProfiles: NSOrderedSet { get }
 @property (copy, readonly) NSOrderedSet<CWNetworkProfile *> * networkProfiles;
 ```
 
-#### Discussion
+## Discussion
 
 The order of this array corresponds to the order in which the the CWNetworkProfile objects participate in the auto-join process.
 

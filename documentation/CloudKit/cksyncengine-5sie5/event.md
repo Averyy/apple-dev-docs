@@ -21,7 +21,7 @@ Describes an event that occurs during a sync operation.
 enum Event
 ```
 
-#### Overview
+## Overview
 
 While syncing, [`CKSyncEngine`](../cksyncengine-5sie5.md) posts several different types of events. Each event has an associated struct value with details describing the nature of the event.
 

@@ -27,7 +27,7 @@ var accelerometerUpdateInterval: TimeInterval { get set }
 
 - [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
-#### Discussion
+## Discussion
 
 The system supplies accelerometer updates to the block handler specified in [`startAccelerometerUpdates(to:withHandler:)`](./startaccelerometerupdates%28to,withhandler%29.md) at regular intervals determined by the value of this property. The interval units are in seconds. The value of this property is capped to minimum and maximum values; the maximum value is determined by the maximum frequency supported by the hardware. If your app is sensitive to the intervals of acceleration data, it should always check the timestamps of the delivered [`CMAccelerometerData`](../cmaccelerometerdata.md) instances to determine the true update interval.
 

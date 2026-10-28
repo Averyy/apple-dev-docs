@@ -20,11 +20,11 @@ func setXValue(_ x: Double, yValue y: Double, toParameter parameterID: UInt32, a
 - (BOOL) setXValue:(double) x YValue:(double) y toParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is set successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

@@ -15,11 +15,11 @@ The system calls this virtual method when the control’s selected values change
 virtual kern_return_t HandleChangeSelectedValues(const IOUserVideoSelectorValue *in_control_values, size_t in_num_values);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success, the control’s value should be updated.
 
-#### Discussion
+## Discussion
 
 The default implementation calls SetCurrentSelectedValues() and returns `kIOReturnSuccess`. Subclass and override this method to handle changes to this control and return `kIOReturnSuccess` upon success.
 

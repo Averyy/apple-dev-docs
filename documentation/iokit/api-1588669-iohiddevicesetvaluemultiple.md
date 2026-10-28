@@ -16,11 +16,11 @@ Sets multiple values for multiple elements.
 IOReturn IOHIDDeviceSetValueMultiple(IOHIDDeviceRef device, CFDictionaryRef multiple);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves synchronously and will block until the report has been issued to the device. It is only relevent for either output or feature type elements.
 

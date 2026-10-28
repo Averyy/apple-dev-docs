@@ -21,7 +21,7 @@ Creates a block buffer that contains a copy of the data from an audio buffer lis
 func setDataBuffer(fromAudioBufferList bufferList: UnsafePointer<AudioBufferList>, blockBufferMemoryAllocator: CFAllocator? = kCFAllocatorDefault, flags: CMSampleBuffer.Flags = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 Pass the [`audioBufferListAssure16ByteAlignment`](./flags/audiobufferlistassure16bytealignment.md) flag to have the system create 16-byte-aligned buffers.
 

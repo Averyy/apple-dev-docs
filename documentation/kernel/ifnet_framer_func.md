@@ -13,11 +13,11 @@
 typedef errno_t (*ifnet_framer_func)(ifnet_t interface, mbuf_t *packet, const struct sockaddr *dest, const char *dest_linkaddr, const char *frame_type);
 ```
 
-#### Return Value
+## Return Value
 
 If the result is zero, processing will continue normally. If the result is EJUSTRETURN, processing will stop but the packet will not be freed. If the result is anything else, the processing will stop and the packet will be freed.
 
-#### Discussion
+## Discussion
 
 ifnet_framer_func is called for each outbound packet to give the interface an opportunity to prepend interface specific headers.
 

@@ -28,7 +28,7 @@ class func currentSignedInPlayer(forContainer containerName: String?) async thro
 + (void) getCurrentSignedInPlayerForContainer:(NSString *) containerName completionHandler:(void (^)(GKCloudPlayer *player, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The container name must be a unique string associated with the app.
 

@@ -17,11 +17,11 @@ Load a prompt cache from a file, without model state.
 func loadPromptCache(url: URL) throws -> ([KVCache], [String : String])
 ```
 
-#### Return Value
+## Return Value
 
 The prompt cache and the metadata
 
-#### Discussion
+## Discussion
 
 Prefer [`loadPromptCacheSnapshot(url:)`](./loadpromptcachesnapshot%28url%29.md), which also restores the model state a cache needs to be continued correctly. This tuple form has no slot for that state, so it rejects files that carry any rather than dropping it. Models that position from a carried anchor refuse a warm cache that arrives without one, so a cache saved through this API cannot warm them.
 

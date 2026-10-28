@@ -21,11 +21,11 @@ Reads an immutable value stored by the plug-in authorization mechanism.
 int (*)(struct __OpaqueAuthorizationEngine *, const char *, const struct AuthorizationValue **) GetImmutableHintValue;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 This function behaves like [`GetHintValue`](./gethintvalue.md), except that the hint is immutable.
 

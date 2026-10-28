@@ -19,7 +19,7 @@ class func detachDrawingThread(_ selector: Selector, toTarget target: Any, with 
 + (void) detachDrawingThread:(SEL) selector toTarget:(id) target withObject:(id) argument;
 ```
 
-#### Discussion
+## Discussion
 
 This method is a convenience wrapper for the [`detachNewThreadSelector(_:toTarget:with:)`](../../Foundation/thread/detachnewthreadselector%28_,totarget,with%29.md) method of [`Thread`](../../Foundation/thread.md). This method automatically creates an `@autoreleasepool` block for the new thread before invoking `selector`.
 

@@ -17,7 +17,7 @@ Introspection surface for token iterators that perform MTP speculative decoding.
 protocol MTPStatsCollecting
 ```
 
-#### Overview
+## Overview
 
 The iterator value lives inside `generateLoopTask` and never escapes the stream, so its per-stream draft proposal and acceptance counters are not reachable through the high-level `generate(...)` API. Conforming the iterator to this protocol lets `generateLoopTask` downcast and thread the counters through the emitted `.info` event’s [`proposedDraftTokens`](./generatecompletioninfo/proposeddrafttokens.md), [`acceptedDraftTokens`](./generatecompletioninfo/accepteddrafttokens.md), and [`passthroughReason`](./generatecompletioninfo/passthroughreason.md) fields. Non-MTP iterators do not conform; the downcast returns nil and the fields default to nil for non-MTP streams.
 

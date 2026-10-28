@@ -31,7 +31,7 @@ func seek(toFileOffset offset: UInt64)
 
 - [About Apple File System](../about-apple-file-system.md)
 
-#### Discussion
+## Discussion
 
 Raises [`fileHandleOperationException`](../nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs.
 

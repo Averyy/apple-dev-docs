@@ -20,7 +20,7 @@ A set of types that material parameters can use.
 struct MaterialParameterTypes
 ```
 
-#### Overview
+## Overview
 
 This class contains many nested types used to specify various properties of material.
 

@@ -25,7 +25,7 @@ var audioNode: AVAudioNode? { get }
 @property (nonatomic, readonly, nullable) AVAudioNode * audioNode;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses this [`AVAudioNode`](../../AVFAudio/avaudionode.md) object to perform 3D positional mixing during playback. Use this object to vary parameters such as volume and reverb in real time during playback. To set default values for those parameters, use the [`audioSource`](./audiosource.md) property.
 

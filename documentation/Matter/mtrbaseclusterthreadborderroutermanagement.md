@@ -25,7 +25,7 @@ class MTRBaseClusterThreadBorderRouterManagement
 @interface MTRBaseClusterThreadBorderRouterManagement : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Manage the Thread network of Thread Border Router
 

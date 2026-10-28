@@ -13,11 +13,11 @@
 ifaddr_t ifaddr_findbestforaddr(const struct sockaddr *addr, ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface address.
 
-#### Discussion
+## Discussion
 
 Finds the best local address assigned to a specific interface to use when communicating with another address. Increments the reference count on the ifaddr before returning to the caller. Caller is responsible for calling ifaddr_release.
 

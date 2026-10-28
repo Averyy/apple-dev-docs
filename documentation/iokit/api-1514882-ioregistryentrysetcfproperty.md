@@ -19,11 +19,11 @@ func IORegistryEntrySetCFProperty(_ entry: io_registry_entry_t, _ propertyName: 
 kern_return_t IORegistryEntrySetCFProperty(io_registry_entry_t entry, CFStringRef propertyName, CFTypeRef property);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code returned by the object.
 
-#### Discussion
+## Discussion
 
 This is a generic method to pass a CF container as a property to an object in the registry. Setting properties in a registry entry is not generally supported, it is more common to support IOConnectSetCFProperty for connection based property setting. The property is interpreted by the object.
 

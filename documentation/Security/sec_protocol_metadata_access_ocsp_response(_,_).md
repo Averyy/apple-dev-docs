@@ -23,11 +23,11 @@ func sec_protocol_metadata_access_ocsp_response(_ metadata: sec_protocol_metadat
 bool sec_protocol_metadata_access_ocsp_response(sec_protocol_metadata_t metadata, void (^handler)(dispatch_data_t ocsp_data));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the OSCP response was accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the OCSP response from the protocol instance peer.
 

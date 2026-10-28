@@ -23,7 +23,7 @@ var peakHoldLevel: Float { get }
 @property (nonatomic, readonly) float peakHoldLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable.
 

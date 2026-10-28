@@ -22,7 +22,7 @@ optional func depthDataOutput(_ output: AVCaptureDepthDataOutput, didOutput dept
 - (void) depthDataOutput:(AVCaptureDepthDataOutput *) output didOutputDepthData:(AVDepthData *) depthData timestamp:(CMTime) timestamp connection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 The depth data output calls this method whenever it captures and outputs a new depth data object. This method is called on the dispatch queue specified by the output’s [`delegateCallbackQueue`](../avcapturedepthdataoutput/delegatecallbackqueue.md) property, and can be called frequently. Your implementation must process the depth data quickly in order to prevent dropped depth data.
 

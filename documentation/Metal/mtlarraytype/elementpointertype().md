@@ -24,11 +24,11 @@ func elementPointerType() -> MTLPointerType?
 - (MTLPointerType *) elementPointerType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the pointer. If the array elements aren’t pointers, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method if [`elementType`](./elementtype.md) is [`MTLDataType.pointer`](../mtldatatype/pointer.md).
 

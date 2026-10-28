@@ -16,7 +16,7 @@ Sets the default distances to the far and near clipping planes you use during dr
 void cp_layer_renderer_configuration_set_default_depth_range(cp_layer_renderer_configuration_t configuration, simd_float2 depth_range);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer. The near and far planes reflect the distances from the person viewing the content. Compositor Services uses these values to compute the perspective projection matrix and to clip content that is between the camera and the near plane, or located beyond the far plane.
 

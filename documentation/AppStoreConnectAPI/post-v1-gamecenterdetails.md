@@ -14,9 +14,9 @@ Create a Game Center detail for an app.
 - [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

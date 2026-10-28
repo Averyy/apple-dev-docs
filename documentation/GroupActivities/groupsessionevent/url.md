@@ -20,7 +20,7 @@ The URL to open when the participant taps the event link in the system UI.
 let url: URL?
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps your custom event in the system UI, the system opens the provided URL. Specify a universal link to open your app to the place where the action occurred. If the value of this link is `nil`, the system brings your app to the foreground.
 

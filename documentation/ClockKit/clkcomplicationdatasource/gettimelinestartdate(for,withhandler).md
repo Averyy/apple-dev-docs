@@ -21,7 +21,7 @@ optional func getTimelineStartDate(for complication: CLKComplication, withHandle
 - (void) getTimelineStartDateForComplication:(CLKComplication *) complication withHandler:(void (^)(NSDate *date)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Only implement this method if your app supports Time Travel on watchOS 4 or earlier.
 

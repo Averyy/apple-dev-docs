@@ -25,7 +25,7 @@ class CGImageMetadataTag
 typedef struct CGImageMetadataTag * CGImageMetadataTagRef;
 ```
 
-#### Overview
+## Overview
 
 Each [`CGImageMetadataTag`](./cgimagemetadatatag.md) opaque type contains a single EXIF, IPTC, or XMP property. The namespace, prefix, name, type, and value of the tag identify different portions of the tag’s content. For example, the namespace specifies whether the tag is part of the EXIF metadata or a different set of metadata.
 

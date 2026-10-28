@@ -23,7 +23,7 @@ Creates a view that represents the body of a label.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`Label`](../label.md) instance in a view hierarchy where this style is the current label style.
 

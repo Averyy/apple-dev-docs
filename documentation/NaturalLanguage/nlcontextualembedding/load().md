@@ -25,7 +25,7 @@ func load() throws
 - (BOOL) loadWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The method fails if the necessary assets aren’t on device for the model you specify. Use [`hasAvailableAssets`](./hasavailableassets.md) and [`requestAssets(completionHandler:)`](./requestassets%28completionhandler%29.md) to manage the assets.
 

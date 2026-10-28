@@ -24,7 +24,7 @@ class GKObstacleGraph<NodeType> where NodeType : GKGraphNode2D
 @interface GKObstacleGraph : GKGraph
 ```
 
-#### Overview
+## Overview
 
 You create an obstacle graph with a collection of [`GKObstacle`](./gkobstacle.md) objects. To use the graph for pathfinding, you add [`GKGraphNode2D`](./gkgraphnode2d.md) objects representing points of interest (such as the current position of a game character and the location it needs to find a route to). Then use methods of the superclass [`GKGraph`](./gkgraph.md) to find routes through the graph.
 

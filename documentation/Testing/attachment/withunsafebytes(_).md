@@ -18,11 +18,11 @@ borrowing func withUnsafeBytes<R>(_ body: (UnsafeRawBufferPointer) throws -> R) 
 
 Available when `AttachableValue` conforms to `Attachable`.
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 

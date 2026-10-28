@@ -20,7 +20,7 @@ Create a Core Image vector object that is initialized with the specified values.
 + (instancetype) vectorWithValues:(const CGFloat *) values count:(size_t) count;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object of length `count`.
 

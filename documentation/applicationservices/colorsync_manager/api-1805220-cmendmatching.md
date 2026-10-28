@@ -13,7 +13,7 @@ void CMEndMatching (
 );
 ```
 
-#### Overview
+## Overview
 
 The `CMEndMatching` function releases private memory allocated for the QuickDraw-specific matching session. 
 

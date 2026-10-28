@@ -39,7 +39,7 @@ nonisolated
 func accessibilityLabel<S>(_ label: S) -> Text where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide an alternative accessibility label to the text that is displayed. For example, you can give an alternate label to a navigation title:
 

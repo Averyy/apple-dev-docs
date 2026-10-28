@@ -15,7 +15,7 @@ Creates a search object with optional initial values that you provide.
 constructor(options?: SearchConstructorOptions);
 ```
 
-#### Discussion
+## Discussion
 
 To use search, create an instance of a [`Search`](../search.md). You can optionally set properties of the search object by providing a dictionary of [`SearchConstructorOptions`](../searchconstructoroptions.md) on initialization.
 

@@ -19,7 +19,7 @@ protocol SpatialAudioExperience : Decodable, Encodable, Hashable, Sendable
 
 - [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
-#### Overview
+## Overview
 
 All audio playback APIs support 3D spatial rendering using SpatialAudioExperience. For example, with [`AVAudioPlayer`](../AVFAudio/avaudioplayer.md):
 

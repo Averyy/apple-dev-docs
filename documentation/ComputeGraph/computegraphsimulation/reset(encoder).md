@@ -21,7 +21,7 @@ Resets the simulation to its initial state, clearing all live elements and accum
 final func reset(encoder: any MTLComputeCommandEncoder)
 ```
 
-#### Discussion
+## Discussion
 
 The reset is encoded as a compute dispatch into `encoder`. You must commit the enclosing command buffer for the reset to take effect on the GPU.
 

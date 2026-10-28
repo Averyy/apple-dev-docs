@@ -6,15 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.P
 
 # mlx.nn.PReLU
 
-**class PReLU(*num_parameters=1*, *init=0.25*)**
-: Applies the element-wise parametric ReLU.Applies \(\max(0, x) + a * \min(0, x)\) element wise, where \(a\)
+```python
+class PReLU(num_parameters=1, init=0.25)
+```
+
+**Applies the element-wise parametric ReLU.**
+: Applies \(\max(0, x) + a * \min(0, x)\) element wise, where \(a\)
 is an array.
 
 See [prelu()](../_autosummary_functions/mlx.nn.prelu.md#mlx.nn.prelu) for the functional equivalent.
 
-Parameters:
+**Parameters:**
 
-**num_parameters** – number of \(a\) to learn. Default: `1`
-**init** – the initial value of \(a\). Default: `0.25`
+- **num_parameters** – number of \(a\) to learn. Default: `1`
+- **init** – the initial value of \(a\). Default: `0.25`
 
 Methods

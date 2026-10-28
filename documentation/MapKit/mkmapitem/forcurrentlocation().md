@@ -25,11 +25,11 @@ class func forCurrentLocation() -> MKMapItem
 + (MKMapItem *) mapItemForCurrentLocation;
 ```
 
-#### Return Value
+## Return Value
 
 An `MKMapItem` object representing the user’s location.
 
-#### Discussion
+## Discussion
 
 For privacy reasons, and because the user’s location can change, the map item that this method returns doesn’t contain any coordinate data. When you need the actual location of the user, use the Core Location framework to retrieve it.
 

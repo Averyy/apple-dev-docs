@@ -17,7 +17,7 @@ Keeps the ticket active until the body returns or throws, including during cance
 static func withWiredLimit<R>(_ ticket: WiredMemoryTicket, _ body: () async throws -> R) async rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 If admission is cancelled, the body still runs in the cancelled task so it can clean up. Check cancellation before starting work that requires admission. Use a distinct ticket for each overlapping scope.
 

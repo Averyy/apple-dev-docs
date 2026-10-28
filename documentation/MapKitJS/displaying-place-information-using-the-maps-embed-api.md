@@ -5,7 +5,7 @@
 
 Show place information on a map using a URL.
 
-#### Overview
+## Overview
 
 You can use the Maps Embed API to show information about a place within the context of a map by copying an HTML snippet onto your website. This is a minimal code approach to showcasing place information. All you need is the following:
 

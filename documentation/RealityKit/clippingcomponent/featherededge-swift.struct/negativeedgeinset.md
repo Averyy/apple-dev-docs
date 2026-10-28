@@ -20,7 +20,7 @@ The distance from each negative edge (-X, -Y, -Z) of the clip bounds over which 
 var negativeEdgeInset: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Values range from `0.0` to the half-extent of the bounding box on each axis. For example:
 

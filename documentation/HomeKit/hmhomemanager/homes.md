@@ -24,7 +24,7 @@ var homes: [HMHome] { get }
 @property (nonatomic, copy, readonly) NSArray<HMHome *> * homes;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a new home manager, its [`homes`](./homes.md) array is empty by default. You can only be sure that this array is properly initialized with data from the shared HomeKit database after the manager calls its delegate’s [`homeManagerDidUpdateHomes(_:)`](../hmhomemanagerdelegate/homemanagerdidupdatehomes%28_%29.md) method for the first time.
 

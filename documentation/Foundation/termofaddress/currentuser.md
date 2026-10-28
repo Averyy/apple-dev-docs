@@ -21,7 +21,7 @@ The term of address that should be used for addressing the user
 static let currentUser: TermOfAddress
 ```
 
-#### Discussion
+## Discussion
 
 This term of address will only compare equal to another `currentUser`
 

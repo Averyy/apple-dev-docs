@@ -23,7 +23,7 @@ typealias DNSServiceProtocol = UInt32
 typedef uint32_t DNSServiceProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 Type declaration for DNS Service protocol.
 

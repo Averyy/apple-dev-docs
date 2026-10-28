@@ -24,11 +24,11 @@ class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator
 + (CIFilter<CIBarcodeGenerator> *) barcodeGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a custom barcode as an image. The effect uses barcode descriptors to specify properties of the generated barcode.
 

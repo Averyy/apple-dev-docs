@@ -24,7 +24,7 @@ class let runtimeErrorNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureSessionRuntimeErrorNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionErrorKey`](../avcapturesessionerrorkey.md).
 

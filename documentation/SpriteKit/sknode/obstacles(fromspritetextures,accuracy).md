@@ -24,11 +24,11 @@ class func obstacles(fromSpriteTextures sprites: [SKNode], accuracy: Float) -> [
 + (NSArray<GKPolygonObstacle *> *) obstaclesFromSpriteTextures:(NSArray<SKNode *> *) sprites accuracy:(float) accuracy;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`GKPolygonObstacle`](../../GameplayKit/gkpolygonobstacle.md) objects.
 
-#### Discussion
+## Discussion
 
 Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](../../GameplayKit/gkobstaclegraph.md)) in GameplayKit. See [GameplayKit](../../GameplayKit/GameplayKit.md) and [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 

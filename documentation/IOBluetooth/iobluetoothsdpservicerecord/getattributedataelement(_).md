@@ -19,7 +19,7 @@ func getAttributeDataElement(_ attributeID: BluetoothSDPServiceAttributeID) -> I
 - (IOBluetoothSDPDataElement *) getAttributeDataElement:(BluetoothSDPServiceAttributeID) attributeID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the data element for the given attribute ID in the target service. If the service does not contain an attribute with the given ID, then nil is returned.
 

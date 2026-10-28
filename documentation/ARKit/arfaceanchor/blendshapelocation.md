@@ -20,7 +20,7 @@ struct BlendShapeLocation
 typedef NSString * ARBlendShapeLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The [`blendShapes`](./blendshapes.md) dictionary provided by an [`ARFaceAnchor`](../arfaceanchor.md) object describes the facial expression of a detected face in terms of the movements of specific facial features. For each key in the dictionary, the corresponding value is a floating point number indicating the current position of that feature relative to its neutral configuration, ranging from `0.0` (neutral) to `1.0` (maximum movement).
 

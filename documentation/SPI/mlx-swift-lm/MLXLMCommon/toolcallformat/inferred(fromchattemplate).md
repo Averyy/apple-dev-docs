@@ -17,7 +17,7 @@ The dialect a chat template renders, or `nil` when it renders none that is recog
 static func inferred(fromChatTemplate template: String) -> ToolCallFormat?
 ```
 
-#### Discussion
+## Discussion
 
 This is the last resort for a checkpoint whose architecture does not declare a format: the template is what actually teaches the model how to write a call, so it identifies the dialect even for an unknown model.
 

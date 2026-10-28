@@ -15,7 +15,7 @@ A decimal value that is the exchange rate you use to convert the pricing currenc
 double exchangeRate
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length: 128.
 The field must contain a number that can optionally be followed by a “.” and additional digits.

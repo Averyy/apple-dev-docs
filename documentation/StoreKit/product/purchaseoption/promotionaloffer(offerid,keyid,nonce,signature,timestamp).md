@@ -23,11 +23,11 @@ Applies a promotional offer for an auto-renewable subscription.
 static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signature: Data, timestamp: Int) -> Product.PurchaseOption
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
-#### Discussion
+## Discussion
 
 For information about `keyID`, `nonce`, `signature`, and `timestamp`, see [Generating a signature for promotional offers](../../generating-a-signature-for-promotional-offers.md). If you’re providing an [`appAccountToken(_:)`](./appaccounttoken%28_%29.md) in the purchase options, you must include that value when you generate the `signature`. Use lowercase for the UUID string representations of the app account token and the `nonce` in the signature.
 

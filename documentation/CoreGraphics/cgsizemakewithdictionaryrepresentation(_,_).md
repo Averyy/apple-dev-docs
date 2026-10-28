@@ -25,7 +25,7 @@ func CGSizeMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ size: Unsafe
 extern bool CGSizeMakeWithDictionaryRepresentation(CFDictionaryRef dict, CGSize *size);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if successful; otherwise [`false`](../Swift/false.md).
 

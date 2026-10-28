@@ -26,7 +26,7 @@ var fragmentArguments: [MTLArgument]? { get }
 @property (readonly, nullable) NSArray<MTLArgument *> * fragmentArguments;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLArgument`](../mtlargument.md) elements in the array are in the same order as the fragment shader’s declaration signature.
 

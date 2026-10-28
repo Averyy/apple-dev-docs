@@ -22,7 +22,7 @@ var cornerRadius: CGFloat { get set }
 @property (nonatomic, assign) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `0` for square edges. A nonzero value indicates rounded edges.
 

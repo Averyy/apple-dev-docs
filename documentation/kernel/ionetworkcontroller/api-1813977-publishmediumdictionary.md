@@ -12,11 +12,11 @@ virtual bool publishMediumDictionary(
  const OSDictionary *mediumDict);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the dictionary is valid, and was successfully exported to the property table, false otherwise.
 
-#### Overview
+## Overview
 
 Called by drivers to publish their medium dictionary. Each entry in the dictionary is an IONetworkMedium object that represents a single medium that is supported by the controller. This method will make a copy of the dictionary provided, then add the copy to the driver's property table. The dictionary provided can be released by the caller upon returning from this method. It is permissible to call this method multiple times, which may be necessary if the hardware's media capability changes dynamically. However, if the capability is static, which is often the case, then a driver will typically call this method only once from its start() method.
 

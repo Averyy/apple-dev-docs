@@ -20,7 +20,7 @@ Whether this result is final at the time it is produced.
 var isFinal: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 - If `true`, then this result is final. There will be no later result over its range.
 - If `false`, then this result is volatile. There may or may not be a later result over this result’s range. In particular, there is no guarantee that this result will be reissued with this property set to `true`.

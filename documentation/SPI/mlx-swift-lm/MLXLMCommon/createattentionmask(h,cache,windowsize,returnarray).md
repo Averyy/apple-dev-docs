@@ -17,7 +17,7 @@ Create an attention mask with explicit window size parameter.
 func createAttentionMask(h: MLXArray, cache: KVCache?, windowSize: Int? = nil, returnArray: Bool = false) -> MLXFast.ScaledDotProductAttentionMaskMode
 ```
 
-#### Return Value
+## Return Value
 
 Attention mask mode for scaled dot product attention
 

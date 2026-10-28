@@ -16,7 +16,7 @@ The protocol you adopt to display an available peripheral in a playground pageâ€
 protocol PlaygroundBluetoothConnectionViewDataSource : AnyObject
 ```
 
-#### Overview
+## Overview
 
 The example below shows a conformance to this protocol that uses images from a playground bookâ€™s [Public and Private Resources Folders](https://developer.apple.com/library/archive/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW14).
 

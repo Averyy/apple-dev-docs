@@ -21,11 +21,11 @@ Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation
 static func decodeAtomicRepresentation(_ representation: consuming WordPair.AtomicRepresentation) -> WordPair
 ```
 
-#### Return Value
+## Return Value
 
 The newly decoded logical type `Self`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply decodes the storage representation used in atomic operations back into the logical type for normal use, `Self`.
 

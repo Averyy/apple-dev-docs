@@ -20,7 +20,7 @@ func post(tap: CGEventTapLocation)
 extern void CGEventPost(CGEventTapLocation tap, CGEventRef event);
 ```
 
-#### Discussion
+## Discussion
 
 This function posts the specified event immediately before any event taps instantiated for that location, and the event passes through any such taps.
 

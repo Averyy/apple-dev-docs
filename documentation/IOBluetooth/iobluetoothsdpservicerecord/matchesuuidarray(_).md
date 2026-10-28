@@ -19,11 +19,11 @@ func matchesUUIDArray(_ uuidArray: [Any]!) -> Bool
 - (BOOL) matchesUUIDArray:(NSArray *) uuidArray;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if all of the given UUIDs are present in the service.
 
-#### Discussion
+## Discussion
 
 The given array should contain IOBluetoothSDPUUID objects. It only returns TRUE if all of the UUIDs are found. This method is like hasServiceFromArray: except that it requires that all UUIDs match instead of any of them matching.
 

@@ -25,7 +25,7 @@ class MIDICIDiscoveryManager
 @interface MIDICIDiscoveryManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to retrieve information about MIDI-CI–capable nodes in the MIDI subsystem. You can create [`MIDICISession`](./midicisession.md) objects only from the destinations discovered using this API.
 

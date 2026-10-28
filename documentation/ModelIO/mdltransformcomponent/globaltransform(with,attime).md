@@ -24,11 +24,11 @@ optional static func globalTransform(with object: MDLObject, atTime time: TimeIn
 + (matrix_float4x4) globalTransformWithObject:(MDLObject *) object atTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 The transform matrix that defines a local coordinate space relative to the root coordinate space of the hierarchy containing the object.
 
-#### Discussion
+## Discussion
 
 Asset file formats typically describe collections of meshes, models, or lights with a hierarchy of transforms relative to the scene containing them all. For example, if you call this method on a [`MDLMesh`](../mdlmesh.md) object loaded from a [`MDLAsset`](../mdlasset.md) instance, Model I/O concatenates the local transformations of the mesh, its parent object, and any further parent objects to return the mesh’s transform relative to the root coordinate space of the scene that the asset describes.
 

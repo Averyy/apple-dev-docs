@@ -25,7 +25,7 @@ func index(ofObjectPassingTest predicate: (Any, Int, UnsafeMutablePointer<ObjCBo
 - (NSUInteger) indexOfObjectPassingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the corresponding value in the ordered set that passes the test specified by predicate. If no objects in the ordered set  pass the test, returns `NSNotFound`.
 

@@ -19,7 +19,7 @@ var resizeIncrements: NSSize { get set }
 @property NSSize resizeIncrements;
 ```
 
-#### Discussion
+## Discussion
 
 This property restricts the user’s ability to resize the window so the width and height change by multiples of width and height increments. As the user resizes the window, its size changes by multiples of `increments``.width` and `increments``.height`, which should be whole numbers, 1.0 or greater. Whatever the current resizing increments, you can set an `NSWindow` object’s size to any height and width programmatically.
 

@@ -21,7 +21,7 @@ Port affects compilation.
 static let compile: ComputeNodeGraph.Port.Options
 ```
 
-#### Discussion
+## Discussion
 
 Changes to [`compile`](./compile.md) values require recompiling the pipeline
 

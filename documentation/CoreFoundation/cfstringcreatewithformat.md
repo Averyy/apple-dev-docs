@@ -21,7 +21,7 @@ Creates an immutable string from a formatted string and a variable number of arg
 extern CFStringRefCFStringCreateWithFormat(CFAllocatorRef alloc, CFDictionaryRef formatOptions, CFStringRef format, ...);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

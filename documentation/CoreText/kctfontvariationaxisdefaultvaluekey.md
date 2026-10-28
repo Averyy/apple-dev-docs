@@ -25,7 +25,7 @@ let kCTFontVariationAxisDefaultValueKey: CFString
 extern CFStringRef const kCTFontVariationAxisDefaultValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the variation axis default value as a reference to a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

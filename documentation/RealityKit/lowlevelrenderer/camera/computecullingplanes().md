@@ -18,11 +18,11 @@ Computes and returns the culling planes for this camera’s view volume.
 func computeCullingPlanes() -> [LowLevelRenderer.CullConfiguration.Plane]
 ```
 
-#### Return Value
+## Return Value
 
 The outward-facing culling planes for this camera’s view volume.
 
-#### Discussion
+## Discussion
 
 A convenience overload that allocates and returns the planes as an array.
 

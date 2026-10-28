@@ -15,11 +15,11 @@ Allocates and initializes an instance of the level control class.
 static OSSharedPtr<IOUserAudioLevelControl> Create(IOUserAudioDriver *in_driver, bool in_is_settable, float in_decibel_value, IOUserAudioLevelControlRange in_decibel_range, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioLevelControl`](../iouseraudiolevelcontrol.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioLevelControl`](../iouseraudiolevelcontrol.md) to override this class’ behavior, don’t use [`Create`](../iouseraudioslidercontrol/create.md) to allocate and initialize the custom subclass.
 

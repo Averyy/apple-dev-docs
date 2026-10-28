@@ -5,11 +5,11 @@
 
 Learn about important changes to FSKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [FSKit](../FSKit/FSKit.md).
 
-#### June 2026
+## June 2026
 
 - Update your [`FSVolume`](../FSKit/fsvolume.md) implementations to adopt [`FSVolume.Handler`](../FSKit/fsvolume/handler.md) and the related “handler” protocols, which replace the now-deprecated [`FSVolume.Operations`](../FSKit/fsvolume/operations.md) and other “operations” protocols. The “Handler” protocols provide richer [`FSVolumeHandlerResult`](../FSKit/fsvolumehandlerresult.md) subtypes to pass back to the framework after each call completes. Some calls also provide an [`FSContext`](../FSKit/fscontext.md) parameter which contains user and group identifiers. You can use these to restrict access to your filesystem to known callers.
 - Improve performance with kernel data caching, by conforming to the [`FSVolume.DataCacheHandler`](../FSKit/fsvolume/datacachehandler.md) protocol.

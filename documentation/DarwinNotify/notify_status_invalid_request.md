@@ -23,7 +23,7 @@ var NOTIFY_STATUS_INVALID_REQUEST: Int32 { get }
 #define NOTIFY_STATUS_INVALID_REQUEST
 ```
 
-#### Discussion
+## Discussion
 
 Status codes returned by the API.
 

@@ -6,7 +6,7 @@
 
 The imaging mode to which the default values apply.
 
-#### Overview
+## Overview
 
 Only `kQTVRStatic` and `kQTVRMotion` are allowed here.
 

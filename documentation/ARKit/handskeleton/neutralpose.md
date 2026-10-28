@@ -15,7 +15,7 @@ A hand pose that you can use as a reference.
 static var neutralPose: HandSkeleton { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might use this property as part of visualizing all of the available joints in a skeleton.
 

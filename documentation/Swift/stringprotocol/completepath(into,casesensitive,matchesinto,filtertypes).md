@@ -21,7 +21,7 @@ Interprets the string as a path in the file system and attempts to perform filen
 func completePath(into outputName: UnsafeMutablePointer<String>? = nil, caseSensitive: Bool, matchesInto outputArray: UnsafeMutablePointer<[String]>? = nil, filterTypes: [String]? = nil) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of matching paths.
 

@@ -19,7 +19,7 @@ static let contentPlacementTag: NSBindingOption
 extern NSBindingOption NSContentPlacementTagBindingOption;
 ```
 
-#### Discussion
+## Discussion
 
 This value allows you to use a popup menu that contains both static and bindings generated items.
 

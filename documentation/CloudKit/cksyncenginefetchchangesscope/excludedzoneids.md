@@ -21,7 +21,7 @@ A specific set of zone IDs to exclude from this scope.
 @property (copy, readonly) NSSet<CKRecordZoneID *> * excludedZoneIDs;
 ```
 
-#### Discussion
+## Discussion
 
 If you know that you don’t want to fetch changes for a particular set of zones, you can set those zones here.
 

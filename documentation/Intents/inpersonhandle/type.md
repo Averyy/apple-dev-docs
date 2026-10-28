@@ -32,7 +32,7 @@ var type: INPersonHandleType { get }
 @property (atomic, readonly) INPersonHandleType type;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to determine how to interpret the contents of the [`value`](./value.md) property.
 

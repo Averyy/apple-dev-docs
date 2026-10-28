@@ -24,7 +24,7 @@ var preferredDevice: (any MTLDevice)? { get }
 @property (readonly, nullable) id<MTLDevice> preferredDevice;
 ```
 
-#### Discussion
+## Discussion
 
 On systems with a single GPU, this method returns the default device object; see [`MTLCreateSystemDefaultDevice()`](../../Metal/mtlcreatesystemdefaultdevice%28%29.md). On systems with more than one GPU, this method returns the [`MTLDevice`](../../Metal/mtldevice.md) that was last used to composite and present the [`CAMetalLayer`](../cametallayer.md). This device object usually corresponds to the GPU associated with the screen that’s displaying the layer. If you set the layer’s [`device`](./device.md) property to this device object, you reduce the number of cross-GPU texture copies that Core Animation must perform to present the layer’s contents onscreen.
 

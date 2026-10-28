@@ -19,11 +19,11 @@ object ConditionalComponentStyle
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalComponentStyle` object to define an array of conditional component style properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalComponentStyle` overrides the value of the same property if you define it in the parent `ComponentStyle` object. See [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

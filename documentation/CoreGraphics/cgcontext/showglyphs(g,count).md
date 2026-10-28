@@ -26,7 +26,7 @@ func showGlyphs(g: UnsafePointer<CGGlyph>?, count: Int)
 extern void CGContextShowGlyphs(CGContextRef c, const CGGlyph *g, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This function displays an array of glyphs at the current text position, a point specified by the current text matrix.
 

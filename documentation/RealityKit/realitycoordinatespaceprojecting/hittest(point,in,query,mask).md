@@ -20,11 +20,11 @@ Searches the scene for entities at the specified point in the view.
 func hitTest(point: CGPoint, in space: some CoordinateSpaceProtocol, query: CollisionCastQueryType, mask: CollisionGroup) -> [CollisionCastHit]
 ```
 
-#### Return Value
+## Return Value
 
 An array of hit-test results.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a proper [`CollisionComponent`](../collisioncomponent.md) are ignored by hit tests.
 

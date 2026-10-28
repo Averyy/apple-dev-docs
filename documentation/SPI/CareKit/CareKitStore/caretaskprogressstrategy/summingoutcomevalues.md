@@ -17,7 +17,7 @@ A strategy that computes progress for a task.
 static var summingOutcomeValues: CareTaskProgressStrategy<LinearCareTaskProgress> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The strategy sums the [`targetValues`](../ockscheduleelement/targetvalues.md) for the event and compares the two results. The task is considered completed if the summed value reaches the summed target.
 

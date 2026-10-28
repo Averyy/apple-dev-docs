@@ -21,22 +21,22 @@ struct CompletionKind
 
 - [Customizing Completions](./customizingcompletions.md)
 
-#### Overview
+## Overview
 
 For all `CompletionKind`s, the completion shell script is configured with the following settings, which will not affect the requesting shell outside the completion script:
 
-##### bash
+### bash
 
 ```shell
 shopt -s extglob
 set +o history +o posix
 ```
 
-##### fish
+### fish
 
 no settings
 
-##### zsh
+### zsh
 
 ```shell
 emulate -RL zsh -G
@@ -52,11 +52,11 @@ unsetopt aliases banghist
 - [static var directory: CompletionKind](./completionkind/directory.md)
   The completion candidates are directory names.
 ### Type Methods
-- [static func custom(([String], Int, String) -> [String]) -> CompletionKind](./completionkind/custom%28_%29-7ne85.md)
+- [static func custom(@Sendable ([String], Int, String) -> [String]) -> CompletionKind](./completionkind/custom%28_%29-7ne85.md)
   The completion candidates are the strings in the array returned by the given closure when it is executed in response to a user’s request for completions.
-- [static func custom(([String]) -> [String]) -> CompletionKind](./completionkind/custom%28_%29-82ua7.md)
+- [static func custom(@Sendable ([String]) -> [String]) -> CompletionKind](./completionkind/custom%28_%29-82ua7.md)
   Deprecated; only kept for backwards compatibility.
-- [static func custom(([String], Int, String) async -> [String]) -> CompletionKind](./completionkind/custom%28_%29-9x37q.md)
+- [static func custom(@Sendable ([String], Int, String) async -> [String]) -> CompletionKind](./completionkind/custom%28_%29-9x37q.md)
   Generate completions using the given async closure.
 - [static func file(extensions: [String]) -> CompletionKind](./completionkind/file%28extensions%29.md)
   The completion candidates include directory and file names, the latter filtered by the given list of extensions.

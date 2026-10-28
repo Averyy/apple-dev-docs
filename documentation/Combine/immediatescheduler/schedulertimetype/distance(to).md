@@ -21,7 +21,7 @@ Returns the distance to another immediate scheduler time; this distance is alway
 func distance(to other: ImmediateScheduler.SchedulerTimeType) -> ImmediateScheduler.SchedulerTimeType.Stride
 ```
 
-#### Return Value
+## Return Value
 
 `0`, as a `Stride`.
 

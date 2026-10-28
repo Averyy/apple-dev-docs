@@ -15,7 +15,7 @@ The navigation bar content scene padding.
 static let navigationBar: ScenePadding
 ```
 
-#### Discussion
+## Discussion
 
 In watchOS, this represents the horizontal spacing that you use to align a view with the navigation bar content.
 

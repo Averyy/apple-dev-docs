@@ -33,7 +33,7 @@ var paymentDate: DateComponents? { get set }
 @property (atomic, copy, readwrite, nullable) NSDateComponents * paymentDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the scheduled payment date for the bill. When specifying a payment date, be as specific as possible. If you’re unable to give a precise date and time when payment is to occur, you may specify a date range indicating the window for payment to occur. Always ensure that you make payments at the specified time.
 

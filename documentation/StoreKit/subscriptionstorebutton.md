@@ -22,7 +22,7 @@ A button for subscribing to an in-app subscription with a localized label and op
 @preconcurrency struct SubscriptionStoreButton
 ```
 
-#### Overview
+## Overview
 
 When implementing custom subscription store control styles conforming to [`SubscriptionStoreControlStyle`](./subscriptionstorecontrolstyle.md), you can use this button to utilize the standard subscribe button as a component of the view you provide from [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md). The subscription store button automatically generates a localized label and optional caption for the corresponding subscription option. To configure a custom button label, use [`Button`](../SwiftUI/button.md) instead.
 

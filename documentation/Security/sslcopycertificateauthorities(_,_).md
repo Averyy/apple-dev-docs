@@ -21,7 +21,7 @@ func SSLCopyCertificateAuthorities(_ context: SSLContext, _ certificates: Unsafe
 OSStatus SSLCopyCertificateAuthorities(SSLContextRef context, CFArrayRef*certificates);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

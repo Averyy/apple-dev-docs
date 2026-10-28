@@ -25,11 +25,11 @@ func object(at index: Int) -> Any
 - (ObjectType) objectAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object located at `index`.
 
-#### Discussion
+## Discussion
 
 If `index` is beyond the end of the array (that is, if `index` is greater than or equal to the value returned by `count`), an [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 

@@ -14,11 +14,11 @@ virtual bool handleOpen(
  void *argument);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true to accept the client open, false to refuse it.
 
-#### Overview
+## Overview
 
 This method handles a client open on the controller object. IOService calls this method with the arbitration lock held. Subclasses should not override this method.
 

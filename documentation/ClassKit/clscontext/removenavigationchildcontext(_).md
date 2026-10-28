@@ -23,7 +23,7 @@ func removeNavigationChildContext(_ child: CLSContext)
 - (void) removeNavigationChildContext:(CLSContext *) child;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove a child from the [`navigationChildContexts`](./navigationchildcontexts.md) collection of a given context. This only affects presentation. The method doesn’t alter your app’s context hierarchy because it has no effect on the context’s [`identifierPath`](./identifierpath.md).
 

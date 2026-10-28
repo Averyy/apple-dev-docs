@@ -24,7 +24,7 @@ class GKOctree<ElementType> where ElementType : NSObject
 @interface GKOctree : NSObject
 ```
 
-#### Overview
+## Overview
 
 An octree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, an octree can find all elements occupying a specific position or volume very quickly. The octree partitioning strategy divides space into eight octants at each level, as illustrated in [Figure 1](./gkoctree.md#1965708). When an octant contains more than one object, the tree subdivides that region into eight smaller octants, adding a level to the tree.
 

@@ -27,7 +27,7 @@ func start()
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Discussion
+## Discussion
 
 Beginning in iOS 11.4, you can start more than one activity at a time, each in its own context. This allows you to nest activities, running a given context and all its ancestors simultaneously, thus measuring progress at multiple levels of context hierarchy concurrently.
 

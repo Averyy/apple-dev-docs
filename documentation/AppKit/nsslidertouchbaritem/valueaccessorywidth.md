@@ -22,7 +22,7 @@ var valueAccessoryWidth: NSSliderAccessory.Width { get set }
 @property NSSliderAccessoryWidth valueAccessoryWidth;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide your own custom width, or use the system-provided [`default`](../nsslideraccessory/width/default.md) or [`wide`](../nsslideraccessory/width/wide.md) options.
 

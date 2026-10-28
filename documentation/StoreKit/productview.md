@@ -22,7 +22,7 @@ A view that merchandises an individual Apple In-App Purchase product.
 @preconcurrency struct ProductView<Icon, PlaceholderIcon> where Icon : View, PlaceholderIcon : View
 ```
 
-#### Overview
+## Overview
 
 A `ProductView` shows information about an Apple In-App Purchase product, including its localized name, description, and price, and displays a purchase button.
 

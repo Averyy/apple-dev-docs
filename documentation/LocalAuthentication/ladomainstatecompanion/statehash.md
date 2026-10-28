@@ -22,7 +22,7 @@ var stateHash: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * stateHash;
 ```
 
-#### Discussion
+## Discussion
 
 As long as database of paired companion devices doesn’t change, `stateHash` stays the same for the same set of `availableCompanions`.
 

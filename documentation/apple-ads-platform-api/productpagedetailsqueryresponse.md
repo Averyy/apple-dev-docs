@@ -15,11 +15,11 @@ Paginated response object for the product page details query.
 object ProductPageDetailsQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `ProductPageDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Pages`](./query-product-pages.md). The `pagination` object describes the current page position.
 
-##### Example
+### Example
 
 ```json
 {

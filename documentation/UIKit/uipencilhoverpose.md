@@ -23,7 +23,7 @@ class UIPencilHoverPose
 @interface UIPencilHoverPose : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the hover pose of Apple Pencil to support more complex interactions in response to a double tap or squeeze. Information about the hover pose — such as azimuth, altitude, and hover distance — is available when a person holds a supported model of Apple Pencil close to the screen during a double tap or squeeze.
 

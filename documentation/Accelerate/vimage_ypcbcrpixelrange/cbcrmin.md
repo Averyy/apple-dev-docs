@@ -25,7 +25,7 @@ var CbCrMin: Int32
 int32_t CbCrMin;
 ```
 
-#### Discussion
+## Discussion
 
 All chroma values less than this value will be clamped to this value.
 

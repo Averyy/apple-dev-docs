@@ -22,7 +22,7 @@ var containerTraitCollection: UITraitCollection { get }
 @property (nonatomic, readonly) UITraitCollection * containerTraitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the same as the window’s [`traitCollection`](../uiwindowscene/traitcollection.md), and doesn’t include overrides from the sheet’s [`overrideTraitCollection`](../uipresentationcontroller/overridetraitcollection.md).
 

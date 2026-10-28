@@ -25,7 +25,7 @@ func CTLineGetImageBounds(_ line: CTLine, _ context: CGContext?) -> CGRect
 extern CGRect CTLineGetImageBounds(CTLineRef line, CGContextRef context);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that tightly encloses the paths of the line’s glyphs, or, if the line or context is invalid, [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 

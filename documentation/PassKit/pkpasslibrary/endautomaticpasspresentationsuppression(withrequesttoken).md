@@ -24,7 +24,7 @@ class func endAutomaticPassPresentationSuppression(withRequestToken requestToken
 + (void) endAutomaticPassPresentationSuppressionWithRequestToken:(PKSuppressionRequestToken) requestToken;
 ```
 
-#### Discussion
+## Discussion
 
 This method reenables the automatic presentation of Apple Pay passes when the device detects a compatible reader.
 

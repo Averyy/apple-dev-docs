@@ -15,7 +15,7 @@ The configuration to use to create Apple sparse image format (ASIF) disk image l
 struct ASIFLayerCreationConfiguration
 ```
 
-#### Overview
+## Overview
 
 This type is returned by `asifLayer(url:type:)` and can only be used with stacking operations like `DiskImage/appending(_:)-(CreationConfiguration&StackableLayer)`.
 

@@ -25,7 +25,7 @@ class Response
 @interface MKLocalSearchResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. After initiating a map search using an [`MKLocalSearch`](../mklocalsearch.md) object, MapKit passes an instance of this class to your completion handler.
 

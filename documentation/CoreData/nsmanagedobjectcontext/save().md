@@ -29,7 +29,7 @@ func save() throws
 
 - [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
-#### Discussion
+## Discussion
 
 If there were multiple errors (for example several edited objects had validation failures) the description of `NSError` returned indicates that there were multiple errors, and its userInfo dictionary contains the key `NSDetailedErrors`. The value associated with the `NSDetailedErrors` key is an array that contains the individual `NSError` objects.
 

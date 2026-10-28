@@ -28,7 +28,7 @@ protocol MTLParallelRenderCommandEncoder : MTLCommandEncoder
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Your app does not define classes that implement this protocol. To create an [`MTLParallelRenderCommandEncoder`](./mtlparallelrendercommandencoder.md) instance, call the [`makeParallelRenderCommandEncoder(descriptor:)`](./mtlcommandbuffer/makeparallelrendercommandencoder%28descriptor%29.md) method of the [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance that you want to encode the rendering commands into. Then, call the renderCommandEncoder method on this [`MTLParallelRenderCommandEncoder`](./mtlparallelrendercommandencoder.md) instance to create one or more [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) instances. The subordinate [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) instances created encode their commands to the same command buffer and target the same [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachmentdescriptor.md) instance. The [`MTLParallelRenderCommandEncoder`](./mtlparallelrendercommandencoder.md) instance ensures the attachment load and store actions only occur at the start and end of the entire rendering pass.
 

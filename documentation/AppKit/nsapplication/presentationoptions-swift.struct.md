@@ -19,7 +19,7 @@ struct PresentationOptions
 enum NSApplicationPresentationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 There are restrictions on the combination of presentation options that can be set simultaneously:
 

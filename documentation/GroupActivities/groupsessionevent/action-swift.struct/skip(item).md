@@ -20,7 +20,7 @@ Returns an event that indicates a skipped track or playback item.
 static func skip(item: String) -> GroupSessionEvent.Action
 ```
 
-#### Discussion
+## Discussion
 
 This function creates an action that represents a skipped playback item. If your app’s activity manages a playlist of items, you might use this action to indicate a participant skipped an item. For example, you might name a skipped song in a shared playlist.
 

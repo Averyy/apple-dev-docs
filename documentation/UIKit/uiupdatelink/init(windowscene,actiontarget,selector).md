@@ -22,7 +22,7 @@ init(windowScene: UIWindowScene, actionTarget target: Any, selector: Selector)
 + (UIUpdateLink *) updateLinkForWindowScene:(UIWindowScene *) windowScene actionTarget:(id) target selector:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer adds the action to the [`beforeCADisplayLinkDispatch`](../uiupdateactionphase/beforecadisplaylinkdispatch.md) phase. To specify a different phase, use [`addAction(to:handler:)`](./addaction%28to,handler%29.md) or [`addAction(to:target:selector:)`](./addaction%28to,target,selector%29.md) instead.
 

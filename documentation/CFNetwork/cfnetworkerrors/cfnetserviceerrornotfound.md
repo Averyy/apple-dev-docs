@@ -24,7 +24,7 @@ case cfNetServiceErrorNotFound
 kCFNetServiceErrorNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Not used.
 

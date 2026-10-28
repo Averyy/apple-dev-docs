@@ -14,7 +14,7 @@ typedef SInt32 ( *OSOrderFunction)(
    void *context);
 ```
 
-#### Return Value
+## Return Value
 
 A comparison result of the object:
 

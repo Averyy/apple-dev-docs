@@ -19,7 +19,7 @@ nonisolated
 struct ToolbarSpacer
 ```
 
-#### Overview
+## Overview
 
 A space item creates visual breaks in the toolbar between items. Spacers can have a standard fixed size or be flexible and push items apart.
 

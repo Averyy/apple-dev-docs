@@ -20,7 +20,7 @@ func setTo(_ value: Any?)
 - (void) setTo:(id) value;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method directly.
 

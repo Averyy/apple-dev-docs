@@ -29,7 +29,7 @@ func start() async throws -> MKMapSnapshotter.Snapshot
 - (void) startWithCompletionHandler:(MKMapSnapshotCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to begin generating a snapshot image based on the specified parameters. This method executes the request asynchronously.
 

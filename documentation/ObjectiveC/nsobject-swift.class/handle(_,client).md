@@ -19,7 +19,7 @@ func handle(_ event: NSEvent!, client sender: Any!) -> Bool
 - (BOOL) handleEvent:(NSEvent *) event client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the event is handled; otherwise [`NO`](../no.md).
 

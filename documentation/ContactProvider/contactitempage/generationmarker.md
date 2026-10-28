@@ -16,7 +16,7 @@ A value specific to your data source identifying the database generation when en
 var generationMarker: Data
 ```
 
-#### Discussion
+## Discussion
 
 When a content enumeration is underway, you must use the same `generationMarker` until the enumeration completes. If you restart content enumeration, you can use a new `generationMarker` value from that point onward.
 

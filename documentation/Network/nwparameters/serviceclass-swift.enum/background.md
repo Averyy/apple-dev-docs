@@ -21,7 +21,7 @@ A service type for high-delay tolerant, high-loss tolerant, elastic flow, and va
 case background
 ```
 
-#### Discussion
+## Discussion
 
 Use this service type when, for example, you’re managing traffic that prefetches content and makes it available when the person chooses to view it.
 

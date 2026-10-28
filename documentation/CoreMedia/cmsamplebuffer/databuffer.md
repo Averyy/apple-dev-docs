@@ -21,7 +21,7 @@ A block buffer that contains the media data.
 var dataBuffer: CMBlockBuffer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property is [`nil`](../../ObjectiveC/nil-227m0.md) if the sample buffer doesn’t contain a [CMBlockBuffer](../cmblockbuffer-api.md), if the contains a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md), or if there’s an error.
 

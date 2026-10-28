@@ -28,7 +28,7 @@ convenience init(equirectangular cgImage: CGImage, options: EnvironmentResource.
 convenience init(equirectangular cgImage: CGImage, options: EnvironmentResource.CreateOptions) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Loading an [`EnvironmentResource`](../environmentresource.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive.
 

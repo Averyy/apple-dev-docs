@@ -25,11 +25,11 @@ class func velocityField(with velocityTexture: SKTexture) -> SKFieldNode
 + (SKFieldNode *) velocityFieldWithTexture:(SKTexture *) velocityTexture;
 ```
 
-#### Return Value
+## Return Value
 
 A new velocity field node.
 
-#### Discussion
+## Discussion
 
 When a physics body is affected, its new velocity in each frame is calculated by performing a texture lookup (treating the value as a normal vector) and then multiplying that vector by the strength of the field. The field has an implicit size (region) equal to the size of the texture; physics bodies outside this area are unaffected by the field node.
 

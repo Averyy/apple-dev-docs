@@ -22,7 +22,7 @@ func suffix(_ maxLength: Int = 10) -> MLDataColumn<Element>
 
 Available when `Element` conforms to `MLDataValueConvertible`.
 
-#### Return Value
+## Return Value
 
 A new column.
 

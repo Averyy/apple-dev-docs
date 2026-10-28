@@ -13,11 +13,11 @@ virtual UInt32 outputPacket(
  void *param);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a return code defined by the caller.
 
-#### Overview
+## Overview
 
 If an IOOutputQueue was created by createOutputQueue(), then this method will be called by the output queue object. Otherwise, an interface object will call this method directly when it receives an output packet from the data link layer.
 

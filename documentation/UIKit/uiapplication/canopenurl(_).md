@@ -26,11 +26,11 @@ func canOpenURL(_ url: URL) -> Bool
 - (BOOL) canOpenURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the device doesn’t have an installed app registered to handle the URL’s scheme, or if you haven’t declared the URL’s scheme in your `Info.plist` file; otherwise, [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 When this method returns [`true`](../../Swift/true.md), iOS guarantees subsequent calls to the [`open(_:options:completionHandler:)`](./open%28_,options,completionhandler%29.md) method with the same URL will successfully launch an app that can handle the URL. The return value doesn’t indicate the validity of the URL, whether the specified resource exists, or, in the case of a universal link, whether the device has an installed app registered to respond to the universal link.
 

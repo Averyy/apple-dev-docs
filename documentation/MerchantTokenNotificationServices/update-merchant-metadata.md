@@ -9,7 +9,7 @@ Update the merchant token’s notification URL.
 **Availability**:
 - Apple Pay Merchant Token Management API 1.0.12+
 
-#### Discussion
+## Discussion
 
 The merchant server calls this API to update the value of a merchant token’s `tokenNotificationURL`. This URL receives life-cycle and metadata update notifications from the Apple Pay servers about the Apple Pay merchant token.
 

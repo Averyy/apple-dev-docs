@@ -23,7 +23,7 @@ static var deviceArchitectureName: String { get }
 
 - [Compiling Core AI models ahead of time](../compiling-core-ai-models-ahead-of-time.md)
 
-#### Discussion
+## Discussion
 
 When compiling model assets ahead of time with `xcrun coreai-build compile`, the toolchain produces artifacts for specific device architectures. Use this property to discover which compiled asset matches the current device.
 

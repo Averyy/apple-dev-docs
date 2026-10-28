@@ -24,7 +24,7 @@ var keys: Dictionary<Key, Value>.Keys { get }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 When iterated over, keys appear in this collection in the same order as they occur in the dictionary’s key-value pairs. Each key in the keys collection has a unique value.
 

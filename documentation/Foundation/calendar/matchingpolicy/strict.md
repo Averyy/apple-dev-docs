@@ -21,7 +21,7 @@ If specified, the algorithm travels as far forward or backward as necessary look
 case strict
 ```
 
-#### Discussion
+## Discussion
 
 For example, if searching for Feb 29 in the Gregorian calendar, the algorithm may choose March 1 instead (for example, if the year is not a leap year). If you wish to find the next Feb 29 without the algorithm adjusting the next higher component in the specified `DateComponents`, then use the `strict` option.
 

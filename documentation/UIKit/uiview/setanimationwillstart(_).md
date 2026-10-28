@@ -24,7 +24,7 @@ class func setAnimationWillStart(_ selector: Selector?)
 + (void) setAnimationWillStartSelector:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify an animation delegate for a begin/commit set of animations, you use this method to specify the selector to call before the animations begin. This method does nothing if called from outside of an animation block. It must be called between calls to the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) and [`commitAnimations()`](./commitanimations%28%29.md) methods. This selector is set to `NULL` by default.
 

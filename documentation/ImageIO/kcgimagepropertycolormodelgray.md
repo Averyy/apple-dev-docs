@@ -25,7 +25,7 @@ let kCGImagePropertyColorModelGray: CFString
 extern CFStringRef const kCGImagePropertyColorModelGray;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value with the [`kCGImagePropertyColorModel`](./kcgimagepropertycolormodel.md) key.
 

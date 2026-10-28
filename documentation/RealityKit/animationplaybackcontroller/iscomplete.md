@@ -21,7 +21,7 @@ A Boolean that indicates whether the animation has finished running.
 @preconcurrency var isComplete: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 After an animation completes, the playback controller becomes invalid. To play the animation again, create a new controller with the same resource.
 

@@ -28,7 +28,7 @@ class UITextSelectionDisplayInteraction
 
 - [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 > **Related sessions from WWDC23**:  Session 10058: [What’s new with text and text interactions](https://developer.apple.com/videos/play/wwdc2023/10058/)
 

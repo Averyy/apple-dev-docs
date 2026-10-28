@@ -23,7 +23,7 @@ var inputViewStyle: UIInputView.Style { get }
 @property (nonatomic, readonly) UIInputViewStyle inputViewStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The style applies both to the current view and to any subviews that adopt the [`UIAppearance`](../uiappearance.md) protocol, which includes all standard system views.
 

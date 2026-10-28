@@ -19,7 +19,7 @@ func flushGraphics()
 - (void) flushGraphics;
 ```
 
-#### Discussion
+## Discussion
 
 Graphics contexts use buffers to queue pending operations but for efficiency reasons may not always empty those buffers immediately. This method forces the buffers to be emptied.
 

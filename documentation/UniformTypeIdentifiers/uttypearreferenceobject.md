@@ -21,7 +21,7 @@ A type that represents an augmented reality reference object.
 extern UTType * const UTTypeARReferenceObject;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.arobject`.
 

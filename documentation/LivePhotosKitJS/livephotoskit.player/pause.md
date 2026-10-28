@@ -15,7 +15,7 @@ Pauses playback at the current time.
 void pause();
 ```
 
-#### Discussion
+## Discussion
 
 This ensures that [`wantsToPlay`](./wantstoplay.md) is `false`, meaning that if loading activity completes, playback will not begin spuriously.
 

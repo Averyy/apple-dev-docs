@@ -19,13 +19,13 @@ object AppearAnimation
 
 - [About Component Animations](../AppleNews/about-component-animations.md)
 
-#### Discussion
+## Discussion
 
 With this animation type, the component starts out invisible and then appears. As the component enters the person’s view, it appears with a slight fade-in as shown in [this video](https://developer.apple.com/apple-news/videos/appear.mp4).
 
 See also [`FadeInAnimation`](./fadeinanimation.md), where you can set the initial appearance of the component.
 
-##### Example
+### Example
 
 ```json
 {

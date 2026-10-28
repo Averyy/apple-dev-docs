@@ -5,7 +5,7 @@
 
 An enumeration that represents the available VMX capabilities.
 
-#### Overview
+## Overview
 
 The capabilites available to the hypervisor can vary depending on the specific hardware platform or OS release. Use the [`hv_vmx_read_capability(_:_:)`](./hv_vmx_read_capability%28_,_%29.md) API at run time to determine the capabilities that can you can select.
 

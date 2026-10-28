@@ -23,7 +23,7 @@ var reuseIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * reuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The reuse identifier is associated with a [`UITableViewCell`](../uitableviewcell.md) object that the table-view’s delegate creates with the intent to reuse it as the basis (for performance reasons) for multiple rows of a table view. It is assigned to the cell object in [`initWithFrame:reuseIdentifier:`](./initwithframe_reuseidentifier_.md) and cannot be changed thereafter. A [`UITableView`](../uitableview.md) object maintains a queue (or list) of the currently reusable cells, each with its own reuse identifier, and makes them available to the delegate in the [`dequeueReusableCell(withIdentifier:)`](../uitableview/dequeuereusablecell%28withidentifier%29.md) method.
 

@@ -25,7 +25,7 @@ var motorTargetAngularVelocity: CGFloat { get set }
 @property (nonatomic) CGFloat motorTargetAngularVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 At the default value of `0.0`, the joint moves only when an external force acts on one of its connected bodies. Changing this value causes the joint to act as a rotary motor, continuously applying a torque (specified by the [`motorMaximumTorque`](./motormaximumtorque.md) property) until its connected bodies are rotating around the joint at the new angular velocity.
 

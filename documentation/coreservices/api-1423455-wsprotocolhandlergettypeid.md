@@ -15,11 +15,11 @@ Returns a `CFTypeID` for the current `WSProtocolHandlerRef`.
 CFTypeID WSProtocolHandlerGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFTypeID`.
 
-#### Discussion
+## Discussion
 
 Returns the `CFTypeID` of the opaque `WSProtocolHandlerRef` most recently created by `WSProtocolHandlerCreate`. `CFTypeIDs` are only valid during a particular instance of a process and should not be used as static values.
 

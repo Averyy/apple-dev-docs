@@ -25,7 +25,7 @@ func addOperations(_ ops: [Operation], waitUntilFinished wait: Bool)
 - (void) addOperations:(NSArray<NSOperation *> *) ops waitUntilFinished:(BOOL) wait;
 ```
 
-#### Discussion
+## Discussion
 
 An operation object can be in at most one operation queue at a time and cannot be added if it is currently executing or finished. This method throws an `NSInvalidArgumentException` exception if any of those error conditions are true for any of the operations in the `ops` parameter.
 

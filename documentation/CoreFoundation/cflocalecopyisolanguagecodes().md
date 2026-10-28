@@ -25,11 +25,11 @@ func CFLocaleCopyISOLanguageCodes() -> CFArray!
 extern CFArrayRefCFLocaleCopyISOLanguageCodes();
 ```
 
-#### Return Value
+## Return Value
 
 An array of CFString objects that represents all known legal ISO language codes. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note: many of these will not have any supporting locale data in macOS.
 

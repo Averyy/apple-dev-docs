@@ -15,7 +15,7 @@ A callback function that is automatically called when an error is sent from the 
 attribute function onError;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `onError` attribute to handle any errors sent from the Apple TV. This attribute must be set to the following function: `App.onError = function (message, sourceURL, line) {}`. 
 

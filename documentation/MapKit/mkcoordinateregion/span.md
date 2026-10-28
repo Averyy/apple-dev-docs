@@ -25,7 +25,7 @@ var span: MKCoordinateSpan
 MKCoordinateSpan span;
 ```
 
-#### Discussion
+## Discussion
 
 The span also defines the current zoom level used by the map view object.
 

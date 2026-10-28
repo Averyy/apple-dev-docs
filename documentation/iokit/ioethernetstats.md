@@ -16,7 +16,7 @@ typedef struct IOEthernetStats {
 } IOEthernetStats;
 ```
 
-#### Overview
+## Overview
 
 Aggregate Ethernet statistics structure.
 

@@ -24,11 +24,11 @@ class func shared() -> GKMatchmaker
 + (GKMatchmaker *) sharedMatchmaker;
 ```
 
-#### Return Value
+## Return Value
 
 The shared matchmaker instance.
 
-#### Discussion
+## Discussion
 
 Games don’t create a `GKMatchmaker` object. Use this method instead to get the shared singleton instance.
 

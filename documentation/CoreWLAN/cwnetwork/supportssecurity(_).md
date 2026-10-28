@@ -19,7 +19,7 @@ func supportsSecurity(_ security: CWSecurity) -> Bool
 - (BOOL) supportsSecurity:(CWSecurity) security;
 ```
 
-#### Return Value
+## Return Value
 
 *YES* if the network supports the specified security type.
 

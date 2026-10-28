@@ -21,11 +21,11 @@ Publishes a Boolean value upon receiving an element that satisfies the predicate
 func contains(where predicate: @escaping (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits the Boolean value `true` when the upstream  publisher emits a matching value.
 
-#### Discussion
+## Discussion
 
 Use [`contains(where:)`](./contains%28where%29.md) to find the first element in an upstream that satisfies the closure you provide. This operator consumes elements produced from the upstream publisher until the upstream publisher produces a matching element.
 

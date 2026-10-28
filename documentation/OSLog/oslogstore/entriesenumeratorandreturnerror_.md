@@ -21,7 +21,7 @@ Returns a log enumerator with default options for viewing the entries.
 - (OSLogEnumerator *) entriesEnumeratorAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns all of the entries from earliest to latest. If the enumerator can’t be set up, `entriesEnumeratorAndReturnError` returns `nil` and sets the error parameter to an error object describing the problem.
 

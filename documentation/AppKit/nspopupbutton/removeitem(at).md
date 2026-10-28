@@ -19,7 +19,7 @@ func removeItem(at index: Int)
 - (void) removeItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 After removing the item, this method uses the [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) method to make sure the title displayed matches the currently selected item.
 

@@ -24,7 +24,7 @@ func dropValues(_ count: Int)
 - (void) dropValuesWithCount:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Because the ARC4 random number generation algorithm can result in sequences with repeating initial values, examining the first 768 values in the sequence can reveal the random source’s seed and thus predict later values in the sequence. To obfuscate gameplay mechanics based on this generator, call this method with a `count` parameter of `768` or greater.
 

@@ -25,7 +25,7 @@ enum RoundingMode
 enum NSRoundingMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The rounding mode matters only if the [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) method sets a limit on the precision of `NSDecimalNumber` return values. It has no effect if [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) returns `NSDecimalNoScale`. Assuming that [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) returns 1, the rounding mode has the following effects on various original values:
 

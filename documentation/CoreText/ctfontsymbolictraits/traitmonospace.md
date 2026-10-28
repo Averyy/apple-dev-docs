@@ -25,7 +25,7 @@ static var traitMonoSpace: CTFontSymbolicTraits { get }
 kCTFontTraitMonoSpace
 ```
 
-#### Discussion
+## Discussion
 
 The font may have multiple glyph advances (many CJK glyphs contain two spaces).
 

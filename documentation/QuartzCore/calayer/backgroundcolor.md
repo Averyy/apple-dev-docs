@@ -24,7 +24,7 @@ var backgroundColor: CGColor? { get set }
 @property (nullable) CGColorRef backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

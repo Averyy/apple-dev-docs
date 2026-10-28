@@ -15,7 +15,7 @@ Handler for enumerating a collection of accessories.
 typedef _Bool (^)(NSObject<OS_ar_accessory> *) ar_accessories_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

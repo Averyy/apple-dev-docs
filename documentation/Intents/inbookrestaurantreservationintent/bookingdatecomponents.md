@@ -30,7 +30,7 @@ var bookingDateComponents: DateComponents { get set }
 @property (atomic, copy) NSDateComponents * bookingDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This date and time represent the values selected by the user.
 

@@ -27,7 +27,7 @@ UISwitchStyleCheckbox
 - [Choosing a user interface idiom for your Mac app](../../choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Displaying a checkbox in your Mac app built with Mac Catalyst](../../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Discussion
+## Discussion
 
 This style is only available to Mac apps built with Mac Catalyst that use the [`UIUserInterfaceIdiom.mac`](../../uiuserinterfaceidiom/mac.md) idiom. For more information about the Mac idiom, see [Choosing a user interface idiom for your Mac app](../../choosing-a-user-interface-idiom-for-your-mac-app.md).
 

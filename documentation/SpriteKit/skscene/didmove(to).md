@@ -24,7 +24,7 @@ func didMove(to view: SKView)
 - (void) didMoveToView:(SKView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended to be overridden in a subclass. You can use this method to implement any custom behavior for your scene when it is about to be presented by a view. For example, you might use this method to create the scene’s contents.
 

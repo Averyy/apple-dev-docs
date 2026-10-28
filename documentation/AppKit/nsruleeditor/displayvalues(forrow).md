@@ -19,11 +19,11 @@ func displayValues(forRow row: Int) -> [Any]
 - (NSArray *) displayValuesForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The chosen values (strings, views, or menu items) for row `row`.
 
-#### Discussion
+## Discussion
 
 The values returned are the same as those returned from the delegate’s [`ruleEditor(_:displayValueForCriterion:inRow:)`](../nsruleeditordelegate/ruleeditor%28_,displayvalueforcriterion,inrow%29.md) method.
 

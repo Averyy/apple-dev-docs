@@ -32,7 +32,7 @@ var organizationName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * organizationName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the name of the bank or company that holds the user’s account. When the organization name is present, use it to look up the account in your app.
 

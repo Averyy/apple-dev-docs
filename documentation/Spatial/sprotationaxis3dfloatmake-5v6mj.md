@@ -19,11 +19,11 @@
 static SPRotationAxis3DFloat SPRotationAxis3DFloatMake(float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Creates an axis with the specified components.
 

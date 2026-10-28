@@ -15,11 +15,11 @@ Deprecated in OS X v10.5. Instead, use [`AUGraphNodeInfo(_:_:_:_:)`](./augraphno
 extern OSStatus AUGraphGetNodeInfo(AUGraph inGraph, AUNode inNode, struct ComponentDescription *outDescription, UInt32 *outClassDataSize, void **outClassData, AudioUnit*outAudioUnit);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ClassInfo data should not be used with new nodes.
 

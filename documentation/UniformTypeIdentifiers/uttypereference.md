@@ -25,7 +25,7 @@ class UTTypeReference
 @interface UTType : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`UTTypeReference`](./uttypereference.md) object may represent files on disk, abstract data types with no on-disk representation, or entirely unrelated hierarchical classification systems, such as hardware. Each instance has a unique [`identifier`](./uttype-swift.struct/identifier.md), and helpful properties, [`preferredFilenameExtension`](./uttype-swift.struct/preferredfilenameextension.md) and [`preferredMIMEType`](./uttype-swift.struct/preferredmimetype.md).
 

@@ -21,7 +21,7 @@ The range’s upper bound.
 let upperBound: Bound
 ```
 
-#### Discussion
+## Discussion
 
 In an empty range, `upperBound` is equal to `lowerBound`. A `Range` instance does not contain its upper bound.
 

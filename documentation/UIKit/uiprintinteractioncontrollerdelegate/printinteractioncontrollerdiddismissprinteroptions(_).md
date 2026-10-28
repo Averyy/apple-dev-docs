@@ -22,7 +22,7 @@ optional func printInteractionControllerDidDismissPrinterOptions(_ printInteract
 - (void) printInteractionControllerDidDismissPrinterOptions:(UIPrintInteractionController *) printInteractionController;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent both when the user taps Print on the printing-options view and when the user dismisses the view by tapping outside it.
 

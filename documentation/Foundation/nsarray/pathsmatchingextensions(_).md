@@ -25,7 +25,7 @@ func pathsMatchingExtensions(_ filterTypes: [String]) -> [String]
 - (NSArray<NSString *> *) pathsMatchingExtensions:(NSArray<NSString *> *) filterTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing all the pathname elements in the receiving array that have filename extensions from the `filterTypes` array.
 

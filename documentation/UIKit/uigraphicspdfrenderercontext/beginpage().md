@@ -23,7 +23,7 @@ func beginPage()
 - (void) beginPage;
 ```
 
-#### Discussion
+## Discussion
 
 This function ends any previous page before beginning a new one. It sets the bounds of the new page to the bounds rectangle you supplied when you created the PDF renderer.
 

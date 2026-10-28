@@ -13,7 +13,7 @@
 var cmEmbeddedUseMask: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mask provides access to bit 1 of the `flags` field, which specifies whether the profile can be used independently or can only be used as an embedded profile. It has the value 0 if the profile can be used anywhere, 1 if it must be embedded.
 

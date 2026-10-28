@@ -23,7 +23,7 @@ var focalLength35mm: NSNumber? { get set }
 @property (strong, getter=isFocalLength35mm, nullable) NSNumber * focalLength35mm;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is 1 if the focal length is 35mm; otherwise, 0.
 

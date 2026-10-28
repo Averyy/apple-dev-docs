@@ -15,7 +15,7 @@ Custom data to associate with the overlay.
 data?: object;
 ```
 
-#### Discussion
+## Discussion
 
 You choose the data to assign to the overlay. It can be any JavaScript value. The default value is `{}`.
 

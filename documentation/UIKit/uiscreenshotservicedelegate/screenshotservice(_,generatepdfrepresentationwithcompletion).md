@@ -26,7 +26,7 @@ optional func screenshotServiceGeneratePDFRepresentation(_ screenshotService: UI
 - (void) screenshotService:(UIScreenshotService *) screenshotService generatePDFRepresentationWithCompletion:(void (^)(NSData *PDFData, NSInteger indexOfCurrentPage, CGRect rectInCurrentPage)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the user takes a screenshot of your app, UIKit calls this method to ask you for a PDF version of your content. In your implementation, create a high-fidelity PDF version of your content. At the end of your method, call `completionHandler` with the results.
 

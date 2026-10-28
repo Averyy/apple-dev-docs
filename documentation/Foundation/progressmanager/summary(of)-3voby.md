@@ -21,11 +21,11 @@ Returns a summary for a custom double property across the progress subtree.
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> P.Summary where P : ProgressManager.Property, P.Summary == Double, P.Value == Double
 ```
 
-#### Return Value
+## Return Value
 
 A `Double` summary value for the specified property.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom double property from this progress manager and all its children, returning a consolidated summary value.
 

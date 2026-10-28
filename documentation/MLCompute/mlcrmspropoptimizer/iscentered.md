@@ -25,7 +25,7 @@ var isCentered: Bool { get }
 @property (nonatomic, readonly) BOOL isCentered;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the optimizer normalizes the gradient by an estimation of its variance. The default value is `false`.
 

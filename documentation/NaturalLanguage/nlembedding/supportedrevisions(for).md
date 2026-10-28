@@ -25,7 +25,7 @@ class func supportedRevisions(for language: NLLanguage) -> IndexSet
 + (NSIndexSet *) supportedRevisionsForLanguage:(NLLanguage) language;
 ```
 
-#### Return Value
+## Return Value
 
 An index set.
 

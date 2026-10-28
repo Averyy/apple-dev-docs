@@ -21,11 +21,11 @@ Creates a locale-aware string representation from a duration value.
 func format(_ value: Duration) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the duration, according to the style’s pattern and locale.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a format style and repeatedly use it to format different durations. For one-off cases with default formatting, call the [`formatted(_:)`](../formatted%28_%29.md) method of [`Duration`](../../duration.md) instead.
 

@@ -25,7 +25,7 @@ readonly attribute int status;
 readonly attribute unsigned short status;
 ```
 
-#### Discussion
+## Discussion
 
 If the current state of the request is `unsent` or `opened`, then this attribute’s value is `0`.
 

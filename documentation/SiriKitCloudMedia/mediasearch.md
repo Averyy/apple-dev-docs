@@ -15,7 +15,7 @@ A description of the media items the user wants to play, add to a playlist, or e
 object MediaSearch
 ```
 
-#### Discussion
+## Discussion
 
 A `releaseDate` may refer to the publication of a specific media item, or to music typical of a particular decade. For example, the client represents *Play some 80s music* with a `releaseDate` ranging from the first moment of 1980 to the last moment of 1989.
 

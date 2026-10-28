@@ -15,7 +15,7 @@ No action when a referenced record is deleted.
 const String DELETE_SELF;
 ```
 
-#### Discussion
+## Discussion
 
 See [`CKRecord.ReferenceAction`](../../CloudKit/ckrecord/referenceaction.md) in CloudKit Framework Reference.
 

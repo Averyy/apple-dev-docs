@@ -19,7 +19,7 @@ func reloadItems(at indexPaths: Set<IndexPath>)
 - (void) reloadItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to update specific items in your collection view. You call this method when the underlying data for those items changes and you want to update the visual appearance of those items. When you call this method, the collection view discards the specified items and asks your data source to provide new ones. For efficiency, the collection view requests only the items that are visible.
 

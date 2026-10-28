@@ -19,7 +19,7 @@ var mutableChildren: NSMutableArray { get }
 @property (strong, readonly) NSMutableArray<NSTreeNode *> * mutableChildNodes;
 ```
 
-#### Discussion
+## Discussion
 
 Nodes that are inserted into this array have their parent nodes set to the receiver. Nodes that are removed from this array automatically have their parent node set to `nil`. The array that is returned is observable using key-value observing.
 

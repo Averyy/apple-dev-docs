@@ -19,7 +19,7 @@ func ABCancelLoadingImageDataForTag(_ tag: CFIndex)
 extern void ABCancelLoadingImageDataForTag(CFIndex tag);
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`ABBeginLoadingImageDataForClient(_:_:_:)`](./abbeginloadingimagedataforclient%28_,_,_%29.md) function to begin an asynchronous fetch. Implement your callback function to receive the fetched image. Use this function to cancel an asynchronous fetch.
 

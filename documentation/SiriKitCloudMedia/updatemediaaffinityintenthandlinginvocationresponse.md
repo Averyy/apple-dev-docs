@@ -19,7 +19,7 @@ The service’s response to a request to process an update media affinity intent
 
 **Allowed Types**: `UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse`, `UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse`, `UpdateMediaAffinityIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
 
-#### Discussion
+## Discussion
 
 Allowed types: [`UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse`](./updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse`](./updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingHandleInvocationResponse`](./updatemediaaffinityintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](./protocolexceptioninvocationresponse.md)
 

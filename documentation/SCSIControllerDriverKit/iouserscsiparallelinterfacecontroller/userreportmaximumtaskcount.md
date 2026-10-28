@@ -15,11 +15,11 @@ Gets the maximum number of outstanding tasks the HBA can process in response to 
 virtual kern_return_t UserReportMaximumTaskCount(uint32_t *count);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of getting the maximum task count. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 This number must be greater than zero or the controller driver fails to match and load.
 

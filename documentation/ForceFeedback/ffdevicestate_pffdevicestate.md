@@ -3,7 +3,7 @@
 **Framework**: Force Feedback  
 **Role**: Article
 
-#### Discussion
+## Discussion
 
 Mac OS versions of these definitions
 

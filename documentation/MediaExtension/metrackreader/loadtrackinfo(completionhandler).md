@@ -24,7 +24,7 @@ func trackInfo() async throws -> METrackInfo
 - (void) loadTrackInfoWithCompletionHandler:(void (^)(METrackInfo *trackInfo, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If this method fails to create a track info object, it returns `nil` and the error contains information about the failure.
 

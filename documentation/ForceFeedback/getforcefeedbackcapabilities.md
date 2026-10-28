@@ -5,7 +5,7 @@
 
 This function escapes to the driver. This method is called in response to an application invoking the FFEffectEscape or FFDevicEscape methods.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *GetForceFeedbackCapabilities)(
@@ -13,12 +13,12 @@ HRESULT ( *GetForceFeedbackCapabilities)(
    FFCAPABILITIES *pCapabilities );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **pCapabilities**: Pointer to a FFCAPABILITIES structure that should be filled in with version information describing the hardware, firmware, and driver.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

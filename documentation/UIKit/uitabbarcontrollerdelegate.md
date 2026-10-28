@@ -28,7 +28,7 @@ protocol UITabBarControllerDelegate : NSObjectProtocol
 
 - [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Overview
+## Overview
 
 You use the [`UITabBarControllerDelegate`](./uitabbarcontrollerdelegate.md) protocol when you want to augment the behavior of a tab bar. In particular, you can use it to determine whether specific tabs should be selected, to perform actions after a tab is selected, or to perform actions before or after the user customizes the order of the tabs. After implementing these methods in your custom object, you should then assign that object to the [`delegate`](./uitabbarcontroller/delegate.md) property of the corresponding [`UITabBarController`](./uitabbarcontroller.md) object.
 

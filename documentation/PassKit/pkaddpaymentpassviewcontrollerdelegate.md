@@ -22,7 +22,7 @@ protocol PKAddPaymentPassViewControllerDelegate : NSObjectProtocol
 @protocol PKAddPaymentPassViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates for the [`PKAddPaymentPassViewController`](./pkaddpaymentpassviewcontroller.md) class must adopt this protocol.
 

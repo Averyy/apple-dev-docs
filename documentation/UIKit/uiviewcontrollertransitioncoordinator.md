@@ -24,7 +24,7 @@ protocol UIViewControllerTransitionCoordinator : UIViewControllerTransitionCoord
 @protocol UIViewControllerTransitionCoordinator <UIViewControllerTransitionCoordinatorContext>
 ```
 
-#### Overview
+## Overview
 
 Typically, you don’t adopt this protocol in your own classes. When you present or dismiss a view controller, UIKit creates a transition coordinator object automatically and assigns it to the view controller’s [`transitionCoordinator`](./uiviewcontroller/transitioncoordinator.md) property. That transition coordinator object is ephemeral and lasts for the duration of the transition animation.
 

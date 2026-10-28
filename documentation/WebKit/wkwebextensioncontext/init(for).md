@@ -23,11 +23,11 @@ init(for extension: WKWebExtension)
 - (instancetype) initForExtension:(WKWebExtension *) extension;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web extension context.
 
-#### Discussion
+## Discussion
 
 This is a designated initializer.
 

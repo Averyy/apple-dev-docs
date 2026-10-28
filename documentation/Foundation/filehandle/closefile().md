@@ -27,7 +27,7 @@ func closeFile()
 - (void) closeFile;
 ```
 
-#### Discussion
+## Discussion
 
 If the file handle object owns its file descriptor, it automatically closes that descriptor when it is deallocated. If you initialized the file handle object using the [`init(fileDescriptor:)`](./init%28filedescriptor%29.md) method, or you initialized it using the [`init(fileDescriptor:closeOnDealloc:)`](./init%28filedescriptor,closeondealloc%29.md) and passed [`false`](../../Swift/false.md) for the `flag` parameter, you can use this method to close the file descriptor; otherwise, you must close the file descriptor yourself.
 

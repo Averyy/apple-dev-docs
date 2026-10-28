@@ -17,7 +17,7 @@ Generates a new data table by splitting the data source using the specified prop
 func stratifiedSplit(proportions: [Double], seed: Int = timestampSeed(), annotationColumn: String) throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLDataTable`](../../mldatatable.md) containing the data source’s split contents.
 

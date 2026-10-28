@@ -12,11 +12,11 @@ Create a session connected to the specified device.
 extern ar_session_tar_session_create_with_device(ar_device_t device);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_session_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

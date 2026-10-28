@@ -21,7 +21,7 @@ Returns the field for a specified key.
 func field(forKey key: ArchiveHeader.FieldKey) -> ArchiveHeader.Field?
 ```
 
-#### Return Value
+## Return Value
 
 The field that matches the specified key, or `nil` if the key was not found.
 

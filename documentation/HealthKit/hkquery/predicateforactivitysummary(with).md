@@ -24,11 +24,11 @@ class func predicateForActivitySummary(with dateComponents: DateComponents) -> N
 + (NSPredicate *) predicateForActivitySummaryWithDateComponents:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for matching a single activity summary.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches the activity summary for the specified day. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

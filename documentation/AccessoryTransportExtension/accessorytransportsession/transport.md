@@ -19,7 +19,7 @@ var transport: AccessoryTransport?
 
 - [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Discussion
+## Discussion
 
 Use this property to determine which transport the current instance handles, and customize your message delivery accordingly. The system may launch your extension in separate processes for different transports.
 

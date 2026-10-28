@@ -21,13 +21,13 @@ convenience init(name: String?)
 + (instancetype) interfaceWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An CWInterface object configured to control the named CoreWLAN interface.
 
-#### Discussion
+## Discussion
 
-The interface name must be in the BSD name form (e.g. “en1”), and can be passed in explicitly or derived from the call to *+(NSString *)supportedInterfaces*. If *name* is *nil*, the method returns an CWInterface object for the primary interface. This method is the designated initializer for the CWInterface class.
+The interface name must be in the BSD name form (e.g. “en1”), and can be passed in explicitly or derived from the call to *+(NSString \*)supportedInterfaces*. If *name* is *nil*, the method returns an CWInterface object for the primary interface. This method is the designated initializer for the CWInterface class.
 
 ## Parameters
 

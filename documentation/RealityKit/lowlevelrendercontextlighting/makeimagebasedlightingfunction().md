@@ -19,11 +19,11 @@ Returns a lighting function using image-based lighting (IBL).
 func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction
 ```
 
-#### Return Value
+## Return Value
 
 An image-based [`LowLevelMaterialResource.LightingFunction`](../lowlevelmaterialresource/lightingfunction.md).
 
-#### Discussion
+## Discussion
 
 The lighting function expects two cubemap textures bound via its corresponding [`LowLevelArgumentTable`](../lowlevelargumenttable.md): one for diffuse and one for specular. Prepare these using [ImageBasedLightTextureGenerator.generateDiffuse(using:fromSkyboxCube:quality:into:)](../imagebasedlighttexturegenerator/generatediffuse%28using,fromskyboxcube,quality,into%29.md) and [ImageBasedLightTextureGenerator.generateSpecular(using:fromSkyboxCube:quality:into:)](../imagebasedlighttexturegenerator/generatespecular%28using,fromskyboxcube,quality,into%29.md).
 

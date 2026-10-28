@@ -26,7 +26,7 @@ extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInTrueDepthCamera;
 
 - [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 The infrared camera provides high-quality depth information that’s synchronized and perspective corrected to the frame the YUV camera produces. While the resolution of the depth data and YUV frames may differ, their field of view and aspect ratio always match.
 

@@ -20,7 +20,7 @@ A representation of a scene’s navigable surfaces that the system uses to compu
 class NavigationMeshResource
 ```
 
-#### Overview
+## Overview
 
 Build a navigation mesh from a model’s geometry or from raw vertex and polygon data, then mark areas and flags to describe where agents can travel and at what cost. Provide the resulting resource to a [`NavigationMeshComponent`](./navigationmeshcomponent.md) so a [`NavigationController`](./navigationcontroller.md) can find paths across it.
 

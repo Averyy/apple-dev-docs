@@ -23,7 +23,7 @@ var view: UIView! { get }
 @property (nonatomic, readonly) UIView * view;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the view used for presenting the video content. This view incorporates all the background, content, and controls needed to display movies. You can incorporate this view into your own view hierarchies or present it by itself using a view controller.
 

@@ -25,7 +25,7 @@ case medium
 NSDateIntervalFormatterMediumStyle
 ```
 
-#### Discussion
+## Discussion
 
 For dates, this style displays the numerical day and year and an abbreviated spelling of the month using a format appropriate for the current locale. For example, formatting the date January 15, 2015 with this style results in the value “Jan 15, 2015” for US English and the value “15. Jan. 2015” for German.
 

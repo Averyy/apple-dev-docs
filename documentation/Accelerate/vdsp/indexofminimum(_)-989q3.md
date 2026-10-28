@@ -21,11 +21,11 @@ Returns the maximum value and corresponding index in a single-precision vector.
 static func indexOfMinimum<U>(_ vector: U) -> (UInt, Float) where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the minimum value and corresponding index.
 
-#### Discussion
+## Discussion
 
 This function calculates the minimum value and its corresponding index of the first `N` elements of the input vector and writes the results to the output scalar parameters, `C` and `I`, respectively.
 

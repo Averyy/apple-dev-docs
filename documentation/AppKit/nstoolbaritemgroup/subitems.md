@@ -22,7 +22,7 @@ var subitems: [NSToolbarItem] { get set }
 @property (copy) NSArray<__kindof NSToolbarItem *> * subitems;
 ```
 
-#### Discussion
+## Discussion
 
 By default, an [`NSToolbarItemGroup`](../nstoolbaritemgroup.md) instance has an empty array of subitems.
 

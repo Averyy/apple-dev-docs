@@ -23,7 +23,7 @@ case `default`
 UITableViewCellSelectionStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This style is the default.
 

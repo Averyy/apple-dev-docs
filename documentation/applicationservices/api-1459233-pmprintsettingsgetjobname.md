@@ -19,7 +19,7 @@ func PMPrintSettingsGetJobName(_ printSettings: PMPrintSettings, _ name: UnsafeM
 OSStatus PMPrintSettingsGetJobName(PMPrintSettings printSettings, CFStringRef  _Nullable *name);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

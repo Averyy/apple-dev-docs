@@ -24,7 +24,7 @@ let AVMovieReferenceRestrictionsKey: String
 extern NSString * const AVMovieReferenceRestrictionsKey;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a value for this key by passing an appropriate [`AVAssetReferenceRestrictions`](./avassetreferencerestrictions.md) value, or the logical combination of multiple values.
 

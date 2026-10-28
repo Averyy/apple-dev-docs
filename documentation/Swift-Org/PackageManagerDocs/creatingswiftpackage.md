@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Bundle executable or shareable code into a standalone Swift package.
 
-#### Overview
+## Overview
 
 A Swift package is a directory that contains sources, dependencies, and has a `Package.swift` manifest file at its root. Swift packages can provide libraries, executables, tests, plugins, and macros. The package manifest defines what is in the package, which is itself written in Swift. The [API reference for PackageDescription](https://developer.apple.com/documentation/packagedescription) defines the types, properties, and functions that go into assembling a package manifest.
 
-##### Creating a Library Package
+### Creating a Library Package
 
 Swift package manager supports creating packages using [swift package init](./packageinit.md). By default, the package manager creates a package structure focused on providing a library. For example, you can create a directory and run the command `swift package init` to create a package:
 
@@ -43,7 +43,7 @@ $ swift build
 $ swift test
 ```
 
-##### Creating an Executable Package
+### Creating an Executable Package
 
 Swift Package Manager can also create a new package with a simplified structure focused on creating executables. For example, create a directory and run the `init` command with the option `--type executable` to get a package that provides a “Hello World” executable:
 
@@ -57,7 +57,7 @@ Hello, World!
 
 There is an additional option for creating a command-line executable based on the `swift-argument-parser`, convenient for parsing command line arguments and structuring commands. Use `tool` for the `type` option in [swift package init](./packageinit.md). Like the `executable` template, it is fully operational and also prints “Hello World”.
 
-##### Creating a Macro Package
+### Creating a Macro Package
 
 Swift Package Manager can generate boilerplate for custom macros:
 

@@ -21,7 +21,7 @@ Whether the system preference for Show Button Shapes is enabled.
 var accessibilityShowButtonShapes: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, interactive custom controls such as buttons should be drawn in such a way that their edges and borders are clearly visible.
 

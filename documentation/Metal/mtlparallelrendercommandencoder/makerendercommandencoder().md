@@ -25,11 +25,11 @@ func makeRenderCommandEncoder() -> (any MTLRenderCommandEncoder)?
 - (id<MTLRenderCommandEncoder>) renderCommandEncoder;
 ```
 
-#### Return Value
+## Return Value
 
 A graphics rendering command encoder object
 
-#### Discussion
+## Discussion
 
 The rendering commands encoded by [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) objects are executed in the order in which the [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) objects are created, not in the order they are ended.
 

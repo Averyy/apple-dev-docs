@@ -21,7 +21,7 @@ Returns the transform scaled by the specified values.
 func scaledBy(x: Float, y: Float, z: Float) -> ProjectiveTransform3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled transform.
 

@@ -24,7 +24,7 @@ var kAudioFormatProperty_FormatIsVBR: AudioFormatPropertyID { get }
 kAudioFormatProperty_FormatIsVBR
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether or not a format has a variable number of bytes-per-packet. The specifier is an [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure describing the format to ask about. The value is a `UInt32` where nonzero means the format is VBR.
 

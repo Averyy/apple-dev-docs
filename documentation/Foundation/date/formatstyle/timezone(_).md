@@ -21,11 +21,11 @@ Modifies the date format style to use the specified time zone format style.
 func timeZone(_ format: Date.FormatStyle.Symbol.TimeZone = .specificName(.short)) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified time zone format style.
 
-#### Discussion
+## Discussion
 
 Values of [`Date.FormatStyle.Symbol.TimeZone`](./symbol/timezone.md) are [`exemplarLocation`](./symbol/timezone/exemplarlocation.md) and [`genericLocation`](./symbol/timezone/genericlocation.md).
 

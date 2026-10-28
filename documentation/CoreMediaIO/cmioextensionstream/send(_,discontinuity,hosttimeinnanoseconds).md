@@ -20,7 +20,7 @@ func send(_ sampleBuffer: CMSampleBuffer, discontinuity: CMIOExtensionStream.Dis
 - (void) sendSampleBuffer:(CMSampleBufferRef) sampleBuffer discontinuity:(CMIOExtensionStreamDiscontinuityFlags) discontinuity hostTimeInNanoseconds:(uint64_t) hostTimeInNanoseconds;
 ```
 
-#### Discussion
+## Discussion
 
 Specify sample buffer timestamps that are relative to the clock timebase specified by the [`clockType`](./clocktype-swift.property.md) property.
 

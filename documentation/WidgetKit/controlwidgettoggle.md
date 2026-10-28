@@ -20,7 +20,7 @@ A control template representing a toggle.
 @preconcurrency struct ControlWidgetToggle<Label, ValueLabel, Action> where Label : View, ValueLabel : View
 ```
 
-#### Overview
+## Overview
 
 Toggles are controls that have two states, “off” and “on”.
 

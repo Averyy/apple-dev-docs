@@ -15,7 +15,7 @@ Remove an accessory from a collection.
 extern void ar_accessories_remove_accessory(ar_accessories_t accessories, ar_accessory_t accessory_to_remove);
 ```
 
-#### Discussion
+## Discussion
 
 No action is taken if the accessory is not found.
 

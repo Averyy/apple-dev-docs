@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, didBecomeInvalidWithError error:
 - (void) URLSession:(NSURLSession *) session didBecomeInvalidWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 If you invalidate a session by calling its [`finishTasksAndInvalidate()`](../urlsession/finishtasksandinvalidate%28%29.md) method, the session waits until after the final task in the session finishes or fails before calling this delegate method. If you call the [`invalidateAndCancel()`](../urlsession/invalidateandcancel%28%29.md) method, the session calls this delegate method immediately.
 

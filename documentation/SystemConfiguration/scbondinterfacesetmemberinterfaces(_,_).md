@@ -19,7 +19,7 @@ func SCBondInterfaceSetMemberInterfaces(_ bond: SCBondInterface, _ members: CFAr
 Boolean SCBondInterfaceSetMemberInterfaces(SCBondInterfaceRef bond, CFArrayRef members);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

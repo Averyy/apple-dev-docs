@@ -32,7 +32,7 @@ func capturePhoto(with settings: AVCapturePhotoSettings, delegate: any AVCapture
 - [Setting up a capture session](../setting-up-a-capture-session.md)
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 Use this method for all variations of still photography, including single photo capture,  RAW format capture (with or without a secondary format such as JPEG), bracketed capture of multiple images, and Live Photo capture.
 

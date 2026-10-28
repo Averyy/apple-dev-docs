@@ -24,7 +24,7 @@ var opticalVignetting: Float { get set }
 @property (nonatomic, assign) float opticalVignetting;
 ```
 
-#### Discussion
+## Discussion
 
 Optical vignetting occurs to some degree in all lenses. It results from light at the edge of an image being blocked as it travels past the lens hood and the internal lens apertures. It is more prevalent with wide apertures. A value of `0.0` (the default) indicates no optical vignetting, and a value of `1.0` indicates that vignetting affects all locations in the image according to radial distance. Optical vignetting also occurs in head-mounted displays, and the value here can be used as an intended amount of vignetting to apply to an image.
 

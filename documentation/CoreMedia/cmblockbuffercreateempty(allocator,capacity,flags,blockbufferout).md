@@ -25,11 +25,11 @@ func CMBlockBufferCreateEmpty(allocator structureAllocator: CFAllocator?, capaci
 extern OSStatus CMBlockBufferCreateEmpty(CFAllocatorRef structureAllocator, uint32_t subBlockCapacity, CMBlockBufferFlags flags, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Creates an empty `CMBlockBuffer`, i.e. one which has no memory block nor reference to a `CMBlockBuffer` supplying bytes to it. It is ready to be populated using `CMBlockBufferAppendMemoryBlock`()  and/or `CMBlockBufferAppendBufferReference`. `CMBlockBufferGetDataLength` will return zero for an empty `CMBlockBuffer` and `CMBlockBufferGetDataPointer` and `CMBlockBufferAssureBufferMemory` will fail.The memory for the `CMBlockBuffer` object will be allocated using the given allocator. If `NULL` is passed for the allocator, the default allocator is used.
 

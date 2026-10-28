@@ -24,7 +24,7 @@ class func boundingCircle(for points: [VNPoint]) throws -> VNCircle
 + (VNCircle *) boundingCircleForPoints:(NSArray<VNPoint *> *) points error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding [`VNCircle`](../vncircle.md) object.
 

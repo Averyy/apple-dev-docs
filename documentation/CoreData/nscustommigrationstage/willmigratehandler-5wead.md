@@ -22,7 +22,7 @@ The handler to execute before the stage runs.
 var willMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this handler to prepare the persistent store’s data for the pending migration. Access the store using the [`container`](../nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
 

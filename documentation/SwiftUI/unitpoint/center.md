@@ -21,7 +21,7 @@ A point that’s centered in a view.
 static let center: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`center`](../alignment/center.md) alignment.
 

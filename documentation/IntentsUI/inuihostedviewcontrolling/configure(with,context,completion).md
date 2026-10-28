@@ -30,7 +30,7 @@ optional func configure(with interaction: INInteraction, context: INUIHostedView
 
 - [Configuring the View Controller for Your Custom Interface](../../SiriKit/configuring-the-view-controller-for-your-custom-interface.md)
 
-#### Discussion
+## Discussion
 
 Before displaying your view controller, Siri and Maps call this method so that you can configure the contents of your view controller’s view. Use the `interaction` and `context` parameters to configure the view. When you are done, execute the provided `completion` block and specify the size for the view. The size you specify must be between the values in the [`hostedViewMinimumAllowedSize`](../../Foundation/nsextensioncontext/hostedviewminimumallowedsize.md) and [`hostedViewMaximumAllowedSize`](../../Foundation/nsextensioncontext/hostedviewmaximumallowedsize.md) properties of the view controller’s [`NSExtensionContext`](../../Foundation/nsextensioncontext.md) object. Siri tries to use the size you provide but may adjust it to fit the available space.
 

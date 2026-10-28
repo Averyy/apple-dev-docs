@@ -26,9 +26,9 @@ object StatusAppManagedList
 - [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ object StatusAppManagedList
 | Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
 | Allowed in user scope | macOS |
 
-##### Reason Codes
+### Reason Codes
 
 - `Error.AppStoreDisabled`: The App Store is disabled.
 - `Error.DownloadFailed`: The app download failed.
@@ -62,7 +62,7 @@ object StatusAppManagedList
 
   - `Timestamp`: (string) The RFC 3339 timestamp of the last update failure.
 
-##### Status item example
+### Status item example
 
 **New or updated app**:
 

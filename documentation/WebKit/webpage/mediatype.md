@@ -20,7 +20,7 @@ The media type for the contents of the webpage.
 final var mediaType: WebPage.CSSMediaType? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, the webpage derives the current media type from the CSS media property of its content. If you assign a value other than `nil` to this property, the webpage uses the value you provide instead.
 

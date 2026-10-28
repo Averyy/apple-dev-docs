@@ -11,11 +11,11 @@ Finds ads within a campaign by selector criteria.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find `ads` within campaigns using a [`Selector`](./selector.md) [`Condition`](./condition.md) to filter results. If you don’t specify selector conditions, all [`Ad`](./ad.md) objects return in the response. See the [`Ad`](./ad.md) object for parameter descriptions and selector condition operators.
 
-##### Payload example: Find ads
+### Payload example: Find ads
 
 **Request**:
 

@@ -17,7 +17,7 @@ The SW2 command-processing status byte.
 var statusWord2: UInt8
 ```
 
-#### Discussion
+## Discussion
 
 This value is always valid.
 

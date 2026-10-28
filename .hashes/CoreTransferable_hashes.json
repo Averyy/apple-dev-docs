@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/CoreTransferable": {
       "file_path": "documentation/CoreTransferable/CoreTransferable.md",
-      "hash": "384b8fcace5783f356ec80e03477c4d2016699034d57c668d5d1d5f62533239d"
+      "hash": "481f933b9efb5ccaa7a281fdcb26d5d9db6bf8a7baed6de4ffccc11a23ae39d2"
     },
     "https://developer.apple.com/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type": {
       "file_path": "documentation/CoreTransferable/choosing-a-transfer-representation-for-a-model-type.md",
@@ -278,7 +278,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreTransferable.json": {
       "file_path": "documentation/CoreTransferable/CoreTransferable.md",
-      "hash": "384b8fcace5783f356ec80e03477c4d2016699034d57c668d5d1d5f62533239d"
+      "hash": "481f933b9efb5ccaa7a281fdcb26d5d9db6bf8a7baed6de4ffccc11a23ae39d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type.json": {
       "file_path": "documentation/CoreTransferable/choosing-a-transfer-representation-for-a-model-type.md",
@@ -555,7 +555,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 138
   }

@@ -21,7 +21,7 @@ The buffer’s array of packet dependencies.
 @property (nonatomic, readonly, nullable) AudioStreamPacketDependencyDescription * packetDependencies;
 ```
 
-#### Discussion
+## Discussion
 
 If the audio format doesn’t use packet dependencies, this value is `nil`.
 

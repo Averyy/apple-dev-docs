@@ -20,7 +20,7 @@ Returns a Boolean value indicating whether the two edge insets are the same.
 static BOOL UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets insets1, UIEdgeInsets insets2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the edge insets are the same; otherwise, [`false`](../Swift/false.md).
 

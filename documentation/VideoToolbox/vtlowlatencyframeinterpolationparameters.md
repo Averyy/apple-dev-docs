@@ -24,7 +24,7 @@ class VTLowLatencyFrameInterpolationParameters
 @interface VTLowLatencyFrameInterpolationParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 

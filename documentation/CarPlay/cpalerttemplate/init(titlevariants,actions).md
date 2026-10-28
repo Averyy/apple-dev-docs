@@ -21,7 +21,7 @@ init(titleVariants: [String], actions: [CPAlertAction])
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants actions:(NSArray<CPAlertAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized alert template.
 

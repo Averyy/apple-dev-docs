@@ -25,11 +25,11 @@ func NSMapMember(_ table: NSMapTable<AnyObject, AnyObject>, _ key: UnsafeRawPoin
 extern BOOL NSMapMember(NSMapTable *table, const void *key, void **originalKey, void **value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `table` contains a key equal to `key`, otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `table` contains a key equal to `key`, `originalKey` is set to `key`, and `value` is set to the value that `table` maps to `key`.
 

@@ -20,7 +20,7 @@ The event raised when an animation loops.
 struct PlaybackLooped
 ```
 
-#### Overview
+## Overview
 
 You loop animation playback by creating an [`AnimationResource`](../animationresource.md) instance from an existing one with either the [`repeat(count:)`](../animationresource/repeat%28count%29.md) or the [`repeat(duration:)`](../animationresource/repeat%28duration%29.md) method.
 

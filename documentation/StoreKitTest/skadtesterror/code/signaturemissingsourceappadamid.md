@@ -21,7 +21,7 @@ case signatureMissingSourceAppAdamId
 SKAdTestErrorCodeSignatureMissingSourceAppAdamId
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include the app item identifier for the source app when you create and validate an ad impression in the testing environment.
 

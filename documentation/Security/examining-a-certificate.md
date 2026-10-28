@@ -5,7 +5,7 @@
 
 Learn how to retrieve properties from a certificate.
 
-#### Overview
+## Overview
 
 In order to fulfill its purpose of verifying the identity of its owner, a certificate contains such information as:
 

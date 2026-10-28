@@ -5,7 +5,7 @@
 
 Expand the built-in Safari Web Inspector to include your custom tool, augmenting developers’ options for inspecting, testing, and debugging webpages.
 
-#### Overview
+## Overview
 
 Safari provides Web Inspector, a set of tools that web developers use to inspect and debug their webpages. These built-in development tools are useful for analyzing basic issues in HTML, CSS, and JavaScript.
 
@@ -15,7 +15,7 @@ For example, you may build webpages with a custom web framework or architecture,
 
 You deliver your tool in a Safari web extension. When a user downloads your extension, your tool appears as a new tab in Web Inspector. For more information about creating a new extension, see [Creating a Safari web extension](./creating-a-safari-web-extension.md). For more information about packaging an existing web extension that works in another browser, see [Packaging a web extension for Safari](./packaging-a-web-extension-for-safari.md). After you create or package the extension, configure your Safari web extension manifest so that Safari adds your tool to Web Inspector, and satisfy requirements for Safari user permissions.
 
-##### Add the web development tool to your extension
+### Add the web development tool to your extension
 
 Add an HTML file to your extension that contains the code for your web development tool and user interface, and add any supporting JavaScript files that contain additional code your web development tool uses. For more information on adding files, see [Updating a Safari web extension](./updating-a-safari-web-extension.md).
 
@@ -35,7 +35,7 @@ Then, in your extension’s `manifest.json` file, do the following:
 
 For more information on development tools’ capabilities and how to build them, see [Extending the developer tools](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools).
 
-##### Satisfy Safari user permission requirements
+### Satisfy Safari user permission requirements
 
 Safari requires user permission for each target page that the user inspects with your development tool. Optimize your development tool approach to support this requirement:
 

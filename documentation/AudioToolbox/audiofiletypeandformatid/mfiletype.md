@@ -24,7 +24,7 @@ var mFileType: AudioFileTypeID
 AudioFileTypeID mFileType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AudioFileTypeID`](../audiofiletypeid.md) for available file type identifiers.
 

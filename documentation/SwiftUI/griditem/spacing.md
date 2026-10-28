@@ -21,7 +21,7 @@ The spacing to the next item.
 var spacing: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, the item uses a reasonable default for the current platform.
 

@@ -19,7 +19,7 @@ var columnAutoresizingStyle: NSTableView.ColumnAutoresizingStyle { get set }
 @property NSTableViewColumnAutoresizingStyle columnAutoresizingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how columns are resized when the table view size changes. The default value of this property is [`NSTableView.ColumnAutoresizingStyle.lastColumnOnlyAutoresizingStyle`](./columnautoresizingstyle-swift.enum/lastcolumnonlyautoresizingstyle.md).
 

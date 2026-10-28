@@ -23,7 +23,7 @@ class UIGraphicsRendererContext
 @interface UIGraphicsRendererContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) yourself. Instead, when you use a concrete subclass of [`UIGraphicsRenderer`](./uigraphicsrenderer.md), you are provided an instance of the appropriate [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) subclass—either [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) or [`UIGraphicsPDFRendererContext`](./uigraphicspdfrenderercontext.md)—as an argument to a [`UIGraphicsDrawingActions`](./uigraphicsdrawingactions.md) drawing actions block.
 

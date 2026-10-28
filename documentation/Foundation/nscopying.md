@@ -25,7 +25,7 @@ protocol NSCopying
 @protocol NSCopying
 ```
 
-#### Overview
+## Overview
 
 The exact meaning of “copy” can vary from class to class, but a copy must be a functionally independent object with values identical to the original at the time the copy was made. A copy produced with [`NSCopying`](./nscopying.md) is implicitly retained by the sender, who is responsible for releasing it.
 

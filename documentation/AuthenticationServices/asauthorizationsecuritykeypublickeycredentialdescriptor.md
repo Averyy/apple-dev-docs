@@ -22,7 +22,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor
 @interface ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class ties together a credential and its corresponding transport types (USB, NFC, Bluetooth, or all of them).
 

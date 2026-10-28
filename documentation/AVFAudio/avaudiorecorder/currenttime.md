@@ -25,7 +25,7 @@ var currentTime: TimeInterval { get }
 @property (readonly) NSTimeInterval currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `0` when you call it on a stopped audio recorder.
 

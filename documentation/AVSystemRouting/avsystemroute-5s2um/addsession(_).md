@@ -21,11 +21,11 @@ final func addSession(_ session: AVSystemRouteSession) -> Bool
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Return Value
+## Return Value
 
 `true` if the route successfully adds the session; `false` if the route cannot add it (for example, if the session is already associated with another route or if the route is in an invalid state).
 
-#### Discussion
+## Discussion
 
 Call this function to register a new [`AVSystemRouteSession`](../avsystemroutesession-gp78.md) with the route before starting playback or communication. The session must be added to the route before calling its [`start()`](../avsystemroutesession-gp78/start%28%29.md) function.
 

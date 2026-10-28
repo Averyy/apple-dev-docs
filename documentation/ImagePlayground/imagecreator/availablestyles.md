@@ -19,7 +19,7 @@ The set of styles you can apply to the images you create.
 final let availableStyles: [ImagePlaygroundStyle]
 ```
 
-#### Discussion
+## Discussion
 
 Before requesting any images, make sure the style you want to use is in this property.
 

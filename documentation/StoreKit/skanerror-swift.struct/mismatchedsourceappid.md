@@ -18,7 +18,7 @@ The source app identifier in the ad impression doesn’t match the app identifie
 static var mismatchedSourceAppId: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that the [`sourceAppStoreItemIdentifier`](../skadimpression/sourceappstoreitemidentifier.md) you provide in the [`SKAdImpression`](../skadimpression.md) object matches the app identifier of the app displaying the ad.
 

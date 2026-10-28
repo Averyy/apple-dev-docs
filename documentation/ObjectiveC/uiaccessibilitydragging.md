@@ -5,7 +5,7 @@
 
 A pair of properties to allow you to fine-tune how drags and drops are exposed to assistive technologies.
 
-#### Overview
+## Overview
 
 By default, if an accessible view or its subtree has drag and/or drop interactions, they will be automatically exposed by assistive technologies. However, if there is more than one such interaction, each drag or drop should have a name to disambiguate it and give a good user experience. Also, there may be situations in which you want to expose drags or drops from an element, and those interactions are installed on views that are not part of that element’s view hierarchy subtree.
 

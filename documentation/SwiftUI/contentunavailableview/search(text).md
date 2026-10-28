@@ -23,7 +23,7 @@ static func search(text: String) -> ContentUnavailableView<Label, Description, A
 
 Available when `Label` is `SearchUnavailableContent.Label`, `Description` is `SearchUnavailableContent.Description`, and `Actions` is `SearchUnavailableContent.Actions`.
 
-#### Discussion
+## Discussion
 
 For example, consider the usage of this static member in *ContactsListView*:
 

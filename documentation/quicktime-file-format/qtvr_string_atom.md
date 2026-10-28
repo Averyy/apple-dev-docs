@@ -8,7 +8,7 @@ An atom that contains a string for QuickTime VR.
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 A string atom contains a string. The structure of a string atom is defined by the `QTVRStringAtom` data type.
 

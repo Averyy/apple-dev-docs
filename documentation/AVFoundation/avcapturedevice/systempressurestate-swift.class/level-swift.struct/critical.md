@@ -23,7 +23,7 @@ static let critical: AVCaptureDevice.SystemPressureState.Level
 extern AVCaptureSystemPressureLevel const AVCaptureSystemPressureLevelCritical;
 ```
 
-#### Discussion
+## Discussion
 
 Capture quality and performance are significantly impacted. Reduce the frame rate until system pressure state improves.
 

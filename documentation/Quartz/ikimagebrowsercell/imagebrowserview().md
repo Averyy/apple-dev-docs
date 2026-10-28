@@ -19,11 +19,11 @@ func imageBrowserView() -> IKImageBrowserView!
 - (IKImageBrowserView *) imageBrowserView;
 ```
 
-#### Return Value
+## Return Value
 
 The browser view containing the cell.
 
-#### Discussion
+## Discussion
 
 Subclasses should not override this method.
 

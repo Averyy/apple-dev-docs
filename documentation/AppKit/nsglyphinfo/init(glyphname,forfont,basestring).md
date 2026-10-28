@@ -15,7 +15,7 @@ Instantiates and returns a glyph information object using a glyph name and a spe
 init?(glyphName: String, forFont font: NSFont, baseString string: String)
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSGlyphInfo` object or `nil` if the object couldn’t be created.
 

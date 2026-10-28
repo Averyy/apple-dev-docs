@@ -25,7 +25,7 @@ func CFConvertFloat32HostToSwapped(_ arg: Float32) -> CFSwappedFloat32
 static CFSwappedFloat32 CFConvertFloat32HostToSwapped(Float32 arg);
 ```
 
-#### Return Value
+## Return Value
 
 A structure holding the real value in a canonical byte order.
 

@@ -20,7 +20,7 @@ final class Session
 
 - [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Each `Session` has one corresponding [`LiveActivityForwarding.AccessoryLiveActivitiesHandler`](./accessoryliveactivitieshandler.md).
 

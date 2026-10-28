@@ -24,7 +24,7 @@ func accessibilityZoomAction(_ handler: @escaping (AccessibilityZoomGestureActio
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 For example, this is how a zoom action is used to transform the scale of a shape which has a `MagnificationGesture`.
 

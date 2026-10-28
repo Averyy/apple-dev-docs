@@ -28,7 +28,7 @@ class UIPanGestureRecognizer
 
 - [Handling pan gestures](./handling-pan-gestures.md)
 
-#### Overview
+## Overview
 
 [`UIPanGestureRecognizer`](./uipangesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 

@@ -21,11 +21,11 @@ func add(_ image: UIImage!) -> Bool
 - (BOOL) addImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a Boolean value that indicates whether the image was successfully added.
 
-#### Discussion
+## Discussion
 
 This method returns [`false`](../../Swift/false.md) if `image` does not fit in the currently available space, or if the view controller has already been presented to the user (and therefore cannot be changed). For the accepted `UIImage` formats, see [Figure 2](../../UIKit/uiimage.md#1965930). Image size limits are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 

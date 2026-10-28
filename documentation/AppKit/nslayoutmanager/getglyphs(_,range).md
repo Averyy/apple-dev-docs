@@ -21,11 +21,11 @@ func getGlyphs(_ glyphArray: UnsafeMutablePointer<NSGlyph>?, range glyphRange: N
 - (NSUInteger) getGlyphs:(NSGlyph *) glyphArray range:(NSRange) glyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of glyphs filled into the array is returned (not counting the null-termination).
 
-#### Discussion
+## Discussion
 
 Raises an `NSRangeException` if the range specified exceeds the bounds of the actual glyph range for the receiver. Performs glyph generation if needed.
 

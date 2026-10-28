@@ -16,7 +16,7 @@ A Boolean value that indicates whether the media is paused. (read-only)
 readonly attribute boolean paused;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the video is paused; otherwise, it is not.
 

@@ -25,7 +25,7 @@ func SparseSolve(_ Factored: SparseOpaqueFactorization_Float, _ XB: DenseMatrix_
 static void SparseSolve(SparseOpaqueFactorization_Float Factored, DenseMatrix_Float XB);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. The following figure shows two systems of equations where the coefficient matrix is sparse:
 

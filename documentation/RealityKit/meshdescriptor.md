@@ -20,7 +20,7 @@ Defines a 3D mesh’s structure and data.
 struct MeshDescriptor
 ```
 
-#### Overview
+## Overview
 
 Create or modify 3D shapes in a RealityKit scene using `MeshDescriptor`, which provides properties and methods to define the vertices, normals, texture coordinates, and other attributes of the mesh.
 

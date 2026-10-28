@@ -20,7 +20,7 @@ func accessibilityLayoutPoint(forScreenPoint point: NSPoint) -> NSPoint
 - (NSPoint) accessibilityLayoutPointForScreenPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the layout area’s coordinate system.
 

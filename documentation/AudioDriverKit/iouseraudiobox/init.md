@@ -15,11 +15,11 @@ Initializes an instance of the audio box class.
 virtual bool init(IOUserAudioDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization succeeded; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Always pass in the [`IOUserAudioDriver`](../iouseraudiodriver.md) and arguments. The no-argument ``IOUserAudioBox/init```()`always returns`false`.
 

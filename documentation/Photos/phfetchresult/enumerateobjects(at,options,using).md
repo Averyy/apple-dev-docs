@@ -24,7 +24,7 @@ func enumerateObjects(at s: IndexSet, options opts: NSEnumerationOptions = [], u
 - (void) enumerateObjectsAtIndexes:(NSIndexSet *) s options:(NSEnumerationOptions) opts usingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the enumeration starts with the first object and continues in order through the fetch result to the last element specified by the index set. Specify the `concurrent` or `reverse` options to modify this behavior.
 

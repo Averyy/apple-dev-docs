@@ -24,7 +24,7 @@ class HKAttachment
 @interface HKAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 To access the attachment’s data, get a data reader from the attachment store for each attachment.
 

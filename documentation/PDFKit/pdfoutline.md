@@ -24,7 +24,7 @@ class PDFOutline
 @interface PDFOutline : NSObject
 ```
 
-#### Overview
+## Overview
 
 An outline is an optional component of a PDF document, useful for viewing the structure of the document and for navigating within it.
 

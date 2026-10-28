@@ -23,11 +23,11 @@ optional func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier:
 - (NSTouchBarItem *) touchBar:(NSTouchBar *) touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A fully initialized bar item for the specified bar and identifier.
 
-#### Discussion
+## Discussion
 
 When the system needs to populate a bar’s items array, the system calls this delegate method to retrieve an item if that item can’t be found in the bar’s private array or in the bar’s [`templateItems`](../nstouchbar/templateitems.md) property.
 

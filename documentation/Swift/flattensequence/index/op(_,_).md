@@ -23,7 +23,7 @@ static func < (lhs: FlattenCollection<Base>.Index, rhs: FlattenCollection<Base>.
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
 

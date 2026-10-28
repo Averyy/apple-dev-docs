@@ -15,11 +15,11 @@ CMError CMSetDeviceState (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This routines provides access for the device management layer to update the state of a particular device. For example, a device can be offline, busy, or calibrated. The state data passed in replaces the old state data with the value you supply.
 

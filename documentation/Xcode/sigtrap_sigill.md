@@ -5,7 +5,7 @@
 
 A trace trap or invalid CPU instruction interrupted the process, often because the process violated a requirement or timeout.
 
-#### Overview
+## Overview
 
 A trace trap gives an attached debugger the chance to interrupt the process at a specific point in its execution. On ARM processors, this appears as `EXC_BREAKPOINT (SIGTRAP). `On `x86_64` processors, this appears as `EXC_BAD_INSTRUCTION (SIGILL)`.
 

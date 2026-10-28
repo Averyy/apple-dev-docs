@@ -19,7 +19,7 @@ func textDidBeginEditing(_ notification: Notification)
 - (void) textDidBeginEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method’s default behavior is to post an [`textDidBeginEditingNotification`](../nscontrol/textdidbegineditingnotification.md) along with the receiving object to the default notification center. The posted notification’s user info contains the contents of notification’s user info dictionary, plus an additional key-value pair. The additional key is “`NSFieldEditor`”; the value for this key is the text object that began editing.
 

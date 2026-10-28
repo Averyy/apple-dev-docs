@@ -25,7 +25,7 @@ func glassEffectID(_ id: (some Hashable & Sendable)?, in namespace: Namespace.ID
 
 - [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
-#### Discussion
+## Discussion
 
 You use this modifier with the [`glassEffect(_:in:)`](./glasseffect%28_,in%29.md) view modifier and a [`GlassEffectContainer`](../glasseffectcontainer.md) view. When used together, SwiftUI uses the identifier to animate shapes to and from each other during transitions.
 

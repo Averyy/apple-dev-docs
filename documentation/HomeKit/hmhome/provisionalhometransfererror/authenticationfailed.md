@@ -16,7 +16,7 @@ Authentication with the home hub failed.
 case authenticationFailed
 ```
 
-#### Overview
+## Overview
 
 Typical causes for authentication failures with a home hub include an invalid or expired transfer token, a failure during a `TLS` or `mTLS` handshake, and mismatching credentials.
 

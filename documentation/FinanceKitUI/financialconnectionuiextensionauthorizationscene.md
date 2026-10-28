@@ -18,7 +18,7 @@ Implement this scene to authorize your app’s Financial Connection
 @preconcurrency struct FinancialConnectionUIExtensionAuthorizationScene<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Your scene will be provided a `FinancialConnectionExtensionAuthorizationRequest`. Use this request to query parameters necessary for authentication, and callback when complete.
 

@@ -19,7 +19,7 @@ var linkTextAttributes: [NSAttributedString.Key : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * linkTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Link text attributes are applied as temporary attributes to any text with a link attribute. Candidates include those attributes that do not affect layout.
 

@@ -30,7 +30,7 @@ class HKQuantitySample
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
-#### Overview
+## Overview
 
 A quantity sample contains one or more [`HKQuantity`](./hkquantity.md) objects. Each quantity represents a single piece of data with a single numeric value and the value’s associated units. For example, you can use quantity samples to record the user’s height, the user’s current heart rate, or the number of calories in a hamburger. HealthKit provides a wide range of quantity types, letting you track many different health and fitness features.
 
@@ -38,7 +38,7 @@ The [`HKQuantitySample`](./hkquantitysample.md) class is a subclass of the [`HKS
 
 In iOS 13 and later and watchOS 6 and later, [`HKQuantitySample`](./hkquantitysample.md) is an abstract superclass for the [`HKCumulativeQuantitySample`](./hkcumulativequantitysample.md) and [`HKDiscreteQuantitySample`](./hkdiscretequantitysample.md) concrete subclasses. The system automatically selects the correct subclass based on the [`HKQuantityType`](./hkquantitytype.md) object used to create the sample.
 
-##### Extend Quantity Samples
+### Extend Quantity Samples
 
 Like many HealthKit classes, you should not subclass the [`HKQuantitySample`](./hkquantitysample.md) class. You may extend this class by adding metadata with custom keys to save related data used by your app.
 

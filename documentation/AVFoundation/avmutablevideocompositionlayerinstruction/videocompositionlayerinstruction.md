@@ -20,7 +20,7 @@ Returns a new mutable video composition layer instruction.
 + (instancetype) videoCompositionLayerInstruction;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable video composition layer instruction with no transform or opacity ramps and [`trackID`](./trackid.md) initialized to [`kCMPersistentTrackID_Invalid`](../../CoreMedia/kcmpersistenttrackid_invalid.md).
 

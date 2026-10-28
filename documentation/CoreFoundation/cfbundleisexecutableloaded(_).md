@@ -25,7 +25,7 @@ func CFBundleIsExecutableLoaded(_ bundle: CFBundle!) -> Bool
 extern Boolean CFBundleIsExecutableLoaded(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `bundle`’s main executable has been loaded, otherwise `false`.
 

@@ -25,7 +25,7 @@ static let hfsTypeCode: FileAttributeKey
 extern NSFileAttributeKey const NSFileHFSTypeCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing an `OSType` (unsigned 32-bit integer). See HFS File Types for possible values.
 

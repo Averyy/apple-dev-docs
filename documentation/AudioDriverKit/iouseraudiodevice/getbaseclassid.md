@@ -15,7 +15,7 @@ Gets the audio class identifier of the base class object.
 virtual IOUserAudioClassID GetBaseClassID();
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides the base class [`IOUserAudioObject`](../iouseraudioobject.md).
 

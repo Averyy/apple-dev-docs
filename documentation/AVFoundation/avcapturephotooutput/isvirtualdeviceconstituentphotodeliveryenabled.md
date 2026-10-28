@@ -22,7 +22,7 @@ var isVirtualDeviceConstituentPhotoDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isVirtualDeviceConstituentPhotoDeliveryEnabled) BOOL virtualDeviceConstituentPhotoDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can only set this value to [`true`](../../Swift/true.md) when [`isVirtualDeviceConstituentPhotoDeliverySupported`](./isvirtualdeviceconstituentphotodeliverysupported.md) is [`true`](../../Swift/true.md).
 

@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the media is removable, in respon
 virtual kern_return_t ReportRemovability(bool *isRemovable);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the report-removability result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

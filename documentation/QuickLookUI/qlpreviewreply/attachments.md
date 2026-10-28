@@ -19,7 +19,7 @@ var attachments: [String : QLPreviewReplyAttachment] { get set }
 @property (copy) NSDictionary<NSString *,QLPreviewReplyAttachment *> * attachments;
 ```
 
-#### Discussion
+## Discussion
 
 When providing an HTML reply, use the string associated with the [`QLPreviewReplyAttachment`](../qlpreviewreplyattachment.md) prefixed with `cid:` to reference the content within the HTML.
 

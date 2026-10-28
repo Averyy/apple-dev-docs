@@ -19,11 +19,11 @@ Begins an asynchronous session that extracts sound features from a data source o
 static func extractFeatures(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.FeatureExtractionParameters = FeatureExtractionParameters(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLSoundClassifier.DataSource>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the sound feature extraction session.
 
-#### Discussion
+## Discussion
 
 Use this method to reduce the training time for multiple sound classifiers that use the same training data. Use the [`MLJob`](../mljob.md) instance this method returns to save the audio features as an [`MLSoundClassifier.DataSource`](./datasource.md). Then use the audio features data source to train one or more sound classifiers.
 

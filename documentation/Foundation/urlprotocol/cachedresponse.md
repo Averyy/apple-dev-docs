@@ -26,7 +26,7 @@ var cachedResponse: CachedURLResponse? { get }
 @property (copy, readonly, nullable) NSCachedURLResponse * cachedResponse;
 ```
 
-#### Discussion
+## Discussion
 
 If not overridden in a subclass, this method returns the cached response stored at initialization time.
 

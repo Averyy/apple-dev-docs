@@ -18,7 +18,7 @@ Posted when a movie player is about to exit full-screen mode.
 extern NSString * const MPMoviePlayerWillExitFullscreenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See [Fullscreen notification keys](./fullscreen-notification-keys.md).
 

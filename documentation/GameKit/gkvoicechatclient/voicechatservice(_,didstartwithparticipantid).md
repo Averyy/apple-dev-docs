@@ -23,7 +23,7 @@ optional func voiceChatService(_ voiceChatService: GKVoiceChatService, didStartW
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService didStartWithParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 Your client can use this method to update the user interface to show that a connection has been established.
 

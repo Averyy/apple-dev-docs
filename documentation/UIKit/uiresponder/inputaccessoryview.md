@@ -22,7 +22,7 @@ var inputAccessoryView: UIView? { get }
 @property (nonatomic, strong, readonly, nullable) UIView * inputAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically used to attach an accessory view to the system-supplied keyboard that’s presented for [`UITextField`](../uitextfield.md) and [`UITextView`](../uitextview.md) objects.
 

@@ -25,7 +25,7 @@ func imageRect(forContentRect contentRect: CGRect) -> CGRect
 - (CGRect) imageRectForContentRect:(CGRect) contentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws its image.
 

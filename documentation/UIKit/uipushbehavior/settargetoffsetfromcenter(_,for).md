@@ -23,7 +23,7 @@ func setTargetOffsetFromCenter(_ o: UIOffset, for item: any UIDynamicItem)
 - (void) setTargetOffsetFromCenter:(UIOffset) o forItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set a target offset for a dynamic item, a push behavior’s force vector is applied at the item center.
 

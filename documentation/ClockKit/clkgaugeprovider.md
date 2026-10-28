@@ -21,7 +21,7 @@ class CLKGaugeProvider
 @interface CLKGaugeProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create instances of this class yourself. Instead, create instances of the concrete subclasses based on the type of gauge you’re trying to create.
 

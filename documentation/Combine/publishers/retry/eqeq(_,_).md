@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Retry<Upstream>, rhs: Publishers.Retry<Upstream>
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `upstream` and `retries` properties; otherwise `false`.
 

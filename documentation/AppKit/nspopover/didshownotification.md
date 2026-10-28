@@ -19,7 +19,7 @@ class let didShowNotification: NSNotification.Name
 extern NSNotificationName const NSPopoverDidShowNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To observe this notification using Swift concurrency, use [`NSPopover.DidShowMessage`](./didshowmessage.md).
 

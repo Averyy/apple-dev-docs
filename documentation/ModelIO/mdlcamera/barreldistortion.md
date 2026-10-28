@@ -24,7 +24,7 @@ var barrelDistortion: Float { get set }
 @property (nonatomic, assign) float barrelDistortion;
 ```
 
-#### Discussion
+## Discussion
 
 Light passing through any lens produces some amount of radial distortion, which a renderer can compute based on the [`focalLength`](./focallength.md) property. However, some lenses or aesthetic designs introduce additional distortion. A renderer can model radial distortion using the following equation, in which `r` is the radial distance from a pixel to be rendered to the center of the projection, and `r’` is the new radial distance to that pixel accounting for distortion:
 

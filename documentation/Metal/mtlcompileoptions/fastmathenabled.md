@@ -26,7 +26,7 @@ var fastMathEnabled: Bool { get set }
 @property (nonatomic, readwrite) BOOL fastMathEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). A [`true`](../../Swift/true.md) value also enables the high-precision variant of math functions for single-precision floating-point scalar and vector types.
 

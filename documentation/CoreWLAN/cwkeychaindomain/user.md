@@ -19,7 +19,7 @@ case user
 kCWKeychainDomainUser
 ```
 
-#### Discussion
+## Discussion
 
 If iCloud Keychain is enabled, the iCloud keychain is the user keychain.
 

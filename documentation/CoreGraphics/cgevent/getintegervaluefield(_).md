@@ -20,7 +20,7 @@ func getIntegerValueField(_ field: CGEventField) -> Int64
 extern int64_t CGEventGetIntegerValueField(CGEventRef event, CGEventField field);
 ```
 
-#### Return Value
+## Return Value
 
 A 64-bit integer representation of the current value of the specified field.
 

@@ -38,7 +38,7 @@ string AdSystemStatusReason
 - `PRODUCT_PAGE_INCOMPATIBLE`: The product page is incompatible with this ad’s targeting.
 - `CREATIVE_LOCALE_INCOMPATIBLE`: The ad creative locale does not match the targeted market.
 
-#### Discussion
+## Discussion
 
 One or more `AdSystemStatusReason` values appear in the `systemStatusReasons` array on an [`Ad`](./ad.md) when `systemStatus` is `NOT_RUNNING`. These codes are read-only and system-applied. They provide the specific cause behind a non-running state and indicate what action, if any, is required to resume delivery.
 

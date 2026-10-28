@@ -31,7 +31,7 @@ var code: INSearchForAccountsIntentResponseCode { get }
 @property (atomic, readonly) INSearchForAccountsIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and cannot be changed later.
 

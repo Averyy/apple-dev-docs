@@ -18,11 +18,11 @@ Produces the given warning message during compilation.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro warning(_ message: String)
+@freestanding(declaration)
+macro warning(_ message: String)
 ```
 
-#### Overview
+## Overview
 
 Compilation proceeds after emitting the message as a nonfatal warning.
 

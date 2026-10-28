@@ -23,7 +23,7 @@ static var forDeleting: NSFileCoordinator.WritingOptions { get }
 NSFileCoordinatorWritingForDeleting
 ```
 
-#### Discussion
+## Discussion
 
 When this constant is specified, the file coordinator calls the [`accommodatePresentedItemDeletion(completionHandler:)`](../../nsfilepresenter/accommodatepresenteditemdeletion%28completionhandler%29.md) or [`accommodatePresentedSubitemDeletion(at:completionHandler:)`](../../nsfilepresenter/accommodatepresentedsubitemdeletion%28at,completionhandler%29.md) method of relevant file presenters to give them a chance to make adjustments before the item is deleted.
 

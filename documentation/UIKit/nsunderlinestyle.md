@@ -24,7 +24,7 @@ struct NSUnderlineStyle
 enum NSUnderlineStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to specify the [`NSUnderlineStyleAttributeName`](./nsunderlinestyleattributename.md) and [`NSStrikethroughStyleAttributeName`](./nsstrikethroughstyleattributename.md) attributes of an attributed string.
 

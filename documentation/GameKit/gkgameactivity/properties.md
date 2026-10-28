@@ -24,7 +24,7 @@ var properties: [String : String] { get set }
 @property (nonatomic, copy, readwrite) NSDictionary<NSString *,NSString *> * properties;
 ```
 
-#### Discussion
+## Discussion
 
 This takes precedence over [`defaultProperties`](../gkgameactivitydefinition/defaultproperties.md) on the activity definition.
 

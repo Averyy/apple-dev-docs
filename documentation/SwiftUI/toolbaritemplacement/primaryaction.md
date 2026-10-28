@@ -21,7 +21,7 @@ A placement for the primary action.
 static let primaryAction: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 A primary action is a more frequently used action for the current context. For example, a button the user clicks or taps to compose a new message in a chat app.
 

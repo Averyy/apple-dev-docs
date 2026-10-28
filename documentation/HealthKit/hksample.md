@@ -31,7 +31,7 @@ class HKSample
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 - [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
 
-#### Overview
+## Overview
 
 The `HKSample` class is an abstract class. You should never instantiate a `HKSample` object directly. Instead, you always work with one of its concrete subclasses: [`HKCategorySample`](./hkcategorysample.md), [`HKQuantitySample`](./hkquantitysample.md), [`HKCorrelation`](./hkcorrelation.md), or [`HKWorkout`](./hkworkout.md) classes.
 

@@ -22,7 +22,7 @@ func setToRecipients(_ toRecipients: [String]?)
 - (void) setToRecipients:(NSArray<NSString *> *) toRecipients;
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the previous recipients with the new ones listed in the `toRecipients` parameter. This method doesn’t filter out duplicate email addresses, so if duplicates are present, multiple copies of the email message may be sent to the same address.
 

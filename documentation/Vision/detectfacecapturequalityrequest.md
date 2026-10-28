@@ -21,7 +21,7 @@ A request that produces a floating-point number that represents the capture qual
 struct DetectFaceCaptureQualityRequest
 ```
 
-#### Overview
+## Overview
 
 This request produces a collection of [`FaceObservation`](./faceobservation.md) objects with the property [`captureQuality`](./faceobservation/capturequality-swift.property.md) set to a value ranging from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
 

@@ -19,11 +19,11 @@ optional func comboBoxCell(_ comboBoxCell: NSComboBoxCell, indexOfItemWithString
 - (NSUInteger) comboBoxCell:(NSComboBoxCell *) comboBoxCell indexOfItemWithStringValue:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The index for the pop-up list item matching `aString`, or `NSNotFound` if no item matches.
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the receiver does not synchronize the pop-up list’s selected item with the text field’s contents.
 

@@ -23,11 +23,11 @@ func gradientData(forParameter parameter: MLCTensor, layer: MLCLayer) -> Data?
 - (NSData *) gradientDataForParameter:(MLCTensor *) parameter layer:(MLCLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 The gradient data, or `nil`.
 
-#### Discussion
+## Discussion
 
 The layer must be an instance one of the following types:
 

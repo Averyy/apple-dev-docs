@@ -5,13 +5,13 @@
 
 Determine in advance which mipmap levels the GPU requires to sample a texture.
 
-#### Overview
+## Overview
 
 When you sample a texture, the GPU automatically chooses which mipmaps to access and fetches pixels from them. Each mipmap represents a different level-of-detail (LOD).
 
 Sometimes, you want to know which mipmaps the GPU would read from. For example, if only some of your mipmaps have data, you might use a clamp operation to limit the range of mipmaps the GPU can sample from, but want to know when the GPU requires sampling higher mipmaps. Metal Shading Language provides texture functions that you can use to determine which mipmaps your shader would access if it were to sample the texture.
 
-##### Check for level-of-detail support
+### Check for level-of-detail support
 
 Before loading any shaders that use LOD queries, make sure the GPU supports them by checking if it supports one of the following:
 
@@ -34,7 +34,7 @@ Boolean appleFamily7Support = [device supportsFamily: MTLGPUFamilyApple7];
 Boolean supportsCalculateLevelOfDetail = macFamily2Support || appleFamily7Support;
 ```
 
-##### Determine level of detail
+### Determine level of detail
 
 In your shader, the functions that return LOD information have signatures that are similar to those of functions used to sample textures. There are two kinds of these functions: clamped and unclamped. The clamped kind restricts LOD selection by applying the sampler’s range of permitted values, the range of mipmaps provided in the texture, and the sampler’s anisotropy settings. The unclamped kind returns the raw calculation.
 
@@ -45,7 +45,7 @@ float unclampedLOD = texture.calculate_unclamped_lod(mySampler, coords);
 
 A fractional part in a returned value indicates that the value is between two mipmaps. The fractional part of the number is the blending weight between the two mipmaps if you’ve specified linear mipmap blending.
 
-##### Determine level of detail when shader support is unavailable
+### Determine level of detail when shader support is unavailable
 
 Alternatively, you can get the LOD by performing the calculation yourself, based on the size of the model object and its distance from the camera. For an example of this technique, see [Using function specialization to build pipeline variants](./using-function-specialization-to-build-pipeline-variants.md).
 

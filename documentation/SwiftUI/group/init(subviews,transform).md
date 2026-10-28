@@ -21,7 +21,7 @@ Constructs a group from the subviews of the given view.
 init<Base, Result>(subviews view: Base, @ContentBuilder transform: @escaping (SubviewsCollection) -> Result) where Content == GroupElementsOfContent<Base, Result>, Base : View, Result : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a group that gives you programmatic access to the group’s subviews. The following `CardsView` defines the group’s structure based on the set of views that you provide to it:
 

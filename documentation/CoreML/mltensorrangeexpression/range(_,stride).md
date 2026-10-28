@@ -23,7 +23,7 @@ static func range(_ range: Range<Int>, stride: Int = 1) -> any MLTensorRangeExpr
 
 Available when `Self` is `_MLTensorRange`.
 
-#### Discussion
+## Discussion
 
 ```swift
 let x = MLTensor(randomNormal: [1, 3, 28, 28], scalarType: Float.self)

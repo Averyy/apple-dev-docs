@@ -25,7 +25,7 @@ class NSRelationshipDescription
 @interface NSRelationshipDescription : NSPropertyDescription
 ```
 
-#### Overview
+## Overview
 
 [`NSRelationshipDescription`](./nsrelationshipdescription.md) provides additional attributes that are specific to modeling a relationship between two entities. For the common attributes of all property types, see [`NSPropertyDescription`](./nspropertydescription.md).
 

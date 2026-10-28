@@ -19,7 +19,7 @@ var ownsMenuBar: Bool { get }
 @property (readonly) BOOL ownsMenuBar;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

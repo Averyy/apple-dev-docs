@@ -5,7 +5,7 @@
 
 Tags that define the types of default menu items passed to the [`webView(_:contextMenuItemsForElement:defaultMenuItems:)`](./webuidelegate/webview%28_,contextmenuitemsforelement,defaultmenuitems%29.md) method.
 
-#### Overview
+## Overview
 
 These tags define common actions a user might want to take with elements in a page. You can use the tags to differentiate between the different types of menu items.
 

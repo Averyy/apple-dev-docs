@@ -22,7 +22,7 @@ var wraps: Bool { get set }
 @property (nonatomic) BOOL wraps;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), incrementing beyond [`maximumValue`](./maximumvalue.md) sets [`value`](./value.md) to [`minimumValue`](./minimumvalue.md); likewise, decrementing below [`minimumValue`](./minimumvalue.md) sets [`value`](./value.md) to [`maximumValue`](./maximumvalue.md). If [`false`](../../Swift/false.md), the stepper doesn’t increment beyond [`maximumValue`](./maximumvalue.md) nor does it decrement below [`minimumValue`](./minimumvalue.md) but rather holds at those values.
 

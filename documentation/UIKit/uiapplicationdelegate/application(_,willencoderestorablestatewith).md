@@ -27,7 +27,7 @@ optional func application(_ application: UIApplication, willEncodeRestorableStat
 
 - [About the UI preservation process](../about-the-ui-preservation-process.md)
 
-#### Discussion
+## Discussion
 
 The state preservation system calls this method at the beginning of the preservation process. This is your opportunity to add any app-level information to state information. For example, you might use this method to write version information or the high-level configuration of your app.
 

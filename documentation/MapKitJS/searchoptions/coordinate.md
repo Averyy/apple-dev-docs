@@ -15,7 +15,7 @@ A map coordinate that provides a hint for the geographic area to search.
 coordinate?: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 This overrides the [`coordinate`](../searchconstructoroptions/coordinate.md) provided to the [`Search`](../search.md) onstructor.
 

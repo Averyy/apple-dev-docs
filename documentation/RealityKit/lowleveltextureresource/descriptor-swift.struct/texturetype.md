@@ -18,7 +18,7 @@ The dimension and arrangement of texture image data.
 var textureType: MTLTextureType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.textureType`.
 

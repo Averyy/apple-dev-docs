@@ -24,7 +24,7 @@ var onDemandRules: [NEOnDemandRule]? { get set }
 @property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, the associated relay always applies. If non-`nil`, the array describes the networks to which the relay applies.
 

@@ -19,7 +19,7 @@ var postsFrameChangedNotifications: Bool { get set }
 @property BOOL postsFrameChangedNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) and the view’s frame rectangle changes to a new value, the view posts a [`frameDidChangeNotification`](./framedidchangenotification.md) to the default notification center. The notification is not posted when you set the frame rectangle to the value it already has. The default value of this property is [`true`](../../Swift/true.md).
 

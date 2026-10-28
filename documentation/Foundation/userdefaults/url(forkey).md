@@ -25,11 +25,11 @@ func url(forKey defaultName: String) -> URL?
 - (NSURL *) URLForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The URL associated with `defaultName`, or `nil` if the key isn’t present in the defaults database.
 
-#### Discussion
+## Discussion
 
 This method uses the data for the specified key to create and return a URL type. If the key is present but the method can’t use it to create a URL, this method returns `nil`. If a file URL contains a tilde (~) character in its path, this method replaces the tilde with an expanded path. If you saved a bookmark URL for the key previously, use the [`URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:`](../nsurl/urlbyresolvingbookmarkdata_options_relativetourl_bookmarkdataisstale_error_.md) method to resolve the bookmark data and retrieve an equivalent file URL.
 

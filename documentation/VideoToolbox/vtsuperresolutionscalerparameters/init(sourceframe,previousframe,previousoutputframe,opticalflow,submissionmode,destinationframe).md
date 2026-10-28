@@ -22,7 +22,7 @@ init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame?,
 - (instancetype) initWithSourceFrame:(VTFrameProcessorFrame *) sourceFrame previousFrame:(VTFrameProcessorFrame *) previousFrame previousOutputFrame:(VTFrameProcessorFrame *) previousOutputFrame opticalFlow:(VTFrameProcessorOpticalFlow *) opticalFlow submissionMode:(VTSuperResolutionScalerParametersSubmissionMode) submissionMode destinationFrame:(VTFrameProcessorFrame *) destinationFrame;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `sourceFrame` or `destinationFrame` is `nil`, or if `sourceFrame` and reference frames have different pixel formats.
 

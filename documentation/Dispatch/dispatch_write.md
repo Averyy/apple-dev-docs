@@ -21,7 +21,7 @@ Schedules an asynchronous write operation using the specified file descriptor.
 extern void dispatch_write(dispatch_fd_t fd, dispatch_data_t data, dispatch_queue_t queue, void (^handler)(dispatch_data_t data, int error));
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function for initiating a single, asynchronous write operation at the current position of the specified file descriptor. This method is intended for simple operations where you do not need the overhead of creating a channel and do not plan on issuing more than a few calls to read or write data. Once submitted, there is no way to cancel the write operation.
 

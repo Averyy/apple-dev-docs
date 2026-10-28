@@ -25,7 +25,7 @@ class NSCompoundPredicate
 @interface NSCompoundPredicate : NSPredicate
 ```
 
-#### Overview
+## Overview
 
 Use [`NSCompoundPredicate`](./nscompoundpredicate.md) to create an `AND` or `OR` compound predicate of one or more other predicates, or the `NOT` of a single predicate. For the logical `AND` and `OR` operations:
 

@@ -24,7 +24,7 @@ class func flush()
 + (void) flush;
 ```
 
-#### Discussion
+## Discussion
 
 Delays the commit until any nested explicit transactions have completed.
 

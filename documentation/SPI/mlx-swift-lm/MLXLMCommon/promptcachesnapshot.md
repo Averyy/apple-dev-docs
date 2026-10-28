@@ -17,7 +17,7 @@ A prompt cache and the model state that belongs with it.
 struct PromptCacheSnapshot
 ```
 
-#### Overview
+## Overview
 
 Keeping the two together is the point: a KV cache restored without its model state positions later tokens as if the cached prefix contained no images, which changes the output silently. Pass a snapshot to a `ChatSession` initializer that accepts a `promptCache` rather than unpacking it into the `cache:` initializer.
 

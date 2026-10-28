@@ -25,7 +25,7 @@ func addMutableTrack(withMediaType mediaType: AVMediaType, preferredTrackID: CMP
 - (AVMutableCompositionTrack *) addMutableTrackWithMediaType:(AVMediaType) mediaType preferredTrackID:(CMPersistentTrackID) preferredTrackID;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable composition track.
 

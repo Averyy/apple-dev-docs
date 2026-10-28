@@ -23,7 +23,7 @@ let kABPersonAlternateBirthdayMonthKey: CFString!
 extern CFStringRef const kABPersonAlternateBirthdayMonthKey;
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`month`](../Foundation/nsdatecomponents/month.md).
 

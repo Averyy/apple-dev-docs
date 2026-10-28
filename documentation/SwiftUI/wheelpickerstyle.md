@@ -19,7 +19,7 @@ A picker style that presents the options in a scrollable wheel that shows the se
 struct WheelPickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`wheel`](./pickerstyle/wheel.md) to construct this style.
 

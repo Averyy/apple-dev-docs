@@ -14,7 +14,7 @@
 void gridFromPoints(pointer<uniform_grid_t> gridStorage, strided_buffer<float3> inputPositions, strided_buffer<uint> inputFlags)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/gridFromPoints.svg)
 

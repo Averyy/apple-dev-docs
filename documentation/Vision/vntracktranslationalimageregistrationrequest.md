@@ -24,7 +24,7 @@ class VNTrackTranslationalImageRegistrationRequest
 @interface VNTrackTranslationalImageRegistrationRequest : VNStatefulRequest
 ```
 
-#### Overview
+## Overview
 
 This request is similar to [`VNTranslationalImageRegistrationRequest`](./vntranslationalimageregistrationrequest.md). However, as a [`VNStatefulRequest`](./vnstatefulrequest.md), it automatically computes the registration against the previous frame.
 

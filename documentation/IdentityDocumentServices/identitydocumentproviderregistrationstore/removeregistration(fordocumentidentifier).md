@@ -17,7 +17,7 @@ Unregister a specific document with the system.
 func removeRegistration(forDocumentIdentifier documentIdentifier: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 When a document is unregistered, the system no longer surfaces your app as an option for responding to a presentment request for that specific document.
 

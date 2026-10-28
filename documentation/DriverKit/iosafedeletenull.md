@@ -18,7 +18,7 @@ Frees the memory associated with a typed array.
 #define IOSafeDeleteNULL(ptr, type, count)
 ```
 
-#### Discussion
+## Discussion
 
 Use this macro to free memory that you allocated with [`IONew`](./ionew.md) or [`IONewZero`](./ionewzero.md). If `ptr` is `NULL`, this macro doesn’t attempt to free the memory.
 

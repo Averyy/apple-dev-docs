@@ -20,7 +20,7 @@ The callback function that the current owner calls to grant ownership to the req
 let accept: () -> Void
 ```
 
-#### Discussion
+## Discussion
 
 If an entity’s [`ownershipTransferMode`](../../synchronizationcomponent/ownershiptransfermode-swift.property.md) property is set to [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](../../synchronizationcomponent/ownershiptransfermode-swift.enum/autoaccept.md), the entity automatically grants ownership to any other entity that requests it.
 

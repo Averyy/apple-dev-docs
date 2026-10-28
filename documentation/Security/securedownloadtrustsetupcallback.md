@@ -15,7 +15,7 @@ Determines whether trust for a particular signer should be evaluated.
 typedef enum _SecureDownloadTrustCallbackResult (*)(struct __SecTrust *, void *) SecureDownloadTrustSetupCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A trust callback result that indicates whether or not a signer should be evaluated.
 

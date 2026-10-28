@@ -12,7 +12,7 @@ Implement a simple iPad web browser that can view either the desktop or mobile v
 - Mac Catalyst 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [203: Introducing Desktop-class Browsing on iPad](https://developer.apple.com/videos/play/wwdc19/203/).
 

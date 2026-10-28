@@ -22,11 +22,11 @@ init(code: INBookRestaurantReservationIntentCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INBookRestaurantReservationIntentCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the object, use the [`userBooking`](./userbooking.md) property to specify the details about the user’s reservation.
 

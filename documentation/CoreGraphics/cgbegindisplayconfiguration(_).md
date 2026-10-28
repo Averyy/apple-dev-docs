@@ -20,11 +20,11 @@ func CGBeginDisplayConfiguration(_ config: UnsafeMutablePointer<CGDisplayConfigR
 extern CGError CGBeginDisplayConfiguration(CGDisplayConfigRef*config);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the request to create a new display configuration is successful, the result is `kCGErrorSuccess`. For other possible values, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function creates a display configuration object that provides a context for a set of display configuration changes. After you specify the desired changes, you use [`CGCompleteDisplayConfiguration(_:_:)`](./cgcompletedisplayconfiguration%28_,_%29.md) to apply them in a single transaction.
 

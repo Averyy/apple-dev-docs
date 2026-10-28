@@ -13,11 +13,11 @@
 sa_family_t ifaddr_address_family(ifaddr_t ifaddr);
 ```
 
-#### Return Value
+## Return Value
 
 0 on failure, address family on success.
 
-#### Discussion
+## Discussion
 
 Returns the address family of the address.
 

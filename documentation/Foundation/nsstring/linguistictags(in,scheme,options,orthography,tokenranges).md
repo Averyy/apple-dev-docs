@@ -27,11 +27,11 @@ func linguisticTags(in range: NSRange, scheme: NSLinguisticTagScheme, options: N
 - (NSArray<NSString *> *) linguisticTagsInRange:(NSRange) range scheme:(NSLinguisticTagScheme) scheme options:(NSLinguisticTaggerOptions) options orthography:(NSOrthography *) orthography tokenRanges:(NSArray<NSValue *> **) tokenRanges;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array containing the linguistic tags for the `tokenRanges` within the receiving string.
 
-#### Discussion
+## Discussion
 
 This is a convenience method.  It is the equivalent of creating an instance of [`NSLinguisticTagger`](../nslinguistictagger.md), specifying the receiver as the string to be analyzed, and the orthography (or `nil`) and then invoking the [`NSLinguisticTagger`](../nslinguistictagger.md) method or [`linguisticTags(in:scheme:options:orthography:tokenRanges:)`](./linguistictags%28in,scheme,options,orthography,tokenranges%29.md).
 

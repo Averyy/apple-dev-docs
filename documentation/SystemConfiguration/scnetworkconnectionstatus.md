@@ -24,7 +24,7 @@ enum SCNetworkConnectionStatus
 enum SCNetworkConnectionStatus : int32_t;
 ```
 
-#### Overview
+## Overview
 
 This status is intended to be generic and high level. An extended status, specific to the type of network connection, is also available for applications that need additonal information.
 

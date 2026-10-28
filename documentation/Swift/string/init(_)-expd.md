@@ -21,7 +21,7 @@ Creates a String having the given content.
 init?(_ codeUnits: Substring.UTF16View)
 ```
 
-#### Discussion
+## Discussion
 
 If `codeUnits` is an ill-formed code unit sequence, the result is `nil`.
 

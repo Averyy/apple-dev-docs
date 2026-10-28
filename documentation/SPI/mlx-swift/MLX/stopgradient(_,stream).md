@@ -21,7 +21,7 @@ func stopGradient(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXAr
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The operation is the identity but it prevents gradients from flowing through the array.
 

@@ -22,11 +22,11 @@ Returns a Boolean value indicating whether this instance is equal to the given v
 func isEqual(to other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `other` has the same value as this instance; otherwise, `false`. If either this value or `other` is NaN, the result of this method is `false`.
 
-#### Discussion
+## Discussion
 
 This method serves as the basis for the equal-to operator (`==`) for floating-point values. When comparing two values with this method, `-0` is equal to `+0`. NaN is not equal to any value, including itself. For example:
 

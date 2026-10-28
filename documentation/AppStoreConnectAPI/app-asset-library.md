@@ -5,7 +5,7 @@
 
 Upload image and video assets once, then reuse them across your app’s App Store surfaces.
 
-#### Overview
+## Overview
 
 Use the App Asset Library as a single place to manage your app’s marketing and product media. Upload an image or video once, then create placements to reuse it across screenshots, app previews, in-app events, and custom product pages. Read the reference data to discover the valid asset specifications, dimensions, and placement limits before you upload.
 

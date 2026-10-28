@@ -21,11 +21,11 @@ init(session: MSSession)
 - (instancetype) initWithSession:(MSSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized message.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an updatable message. Messages that are part of a session receive special treatment by the Messages app. When the app receives a message that is part of an existing session, the previous message is moved to the bottom of the transcript and updated with the new message’s content.
 

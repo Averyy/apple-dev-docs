@@ -20,11 +20,11 @@ Returns a filter that applies `shader` to the contents of the source layer.
 static func layerShader(_ shader: Shader, maxSampleOffset: CGSize) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter applies the shader as a layer effect.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a layer effect it must have a function signature matching:
 

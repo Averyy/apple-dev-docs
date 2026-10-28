@@ -15,11 +15,11 @@ The response envelope returned by the Get Change History Detail endpoint, wrappi
 object ChangeDetailsResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `ChangeDetailsResponse` object is the response envelope returned by the change history detail endpoints. Use `pagination` to navigate large transaction responses.
 
-##### Example
+### Example
 
 ```json
 {

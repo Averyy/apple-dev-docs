@@ -24,11 +24,11 @@ func resizeNearest(withGradientTensor gradient: MPSGraphTensor, input: MPSGraphT
 - (MPSGraphTensor *) resizeNearestWithGradientTensor:(MPSGraphTensor *) gradient input:(MPSGraphTensor *) input nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode centerResult:(BOOL) centerResult alignCorners:(BOOL) alignCorners layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Computes the gradient for the forward pass Resize op with identical parameters. See discussion of resizeTensor for more in depth description of resize paramters.
 

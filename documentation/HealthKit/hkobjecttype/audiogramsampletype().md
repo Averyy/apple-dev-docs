@@ -24,11 +24,11 @@ class func audiogramSampleType() -> HKAudiogramSampleType
 + (HKAudiogramSampleType *) audiogramSampleType;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKAudiogramSampleType`](../hkaudiogramsampletype.md) instance.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKAudiogramSampleType`](../hkaudiogramsampletype.md) concrete subclass. HealthKit uses this type to store and read audiogram data from the HealthKit store.
 

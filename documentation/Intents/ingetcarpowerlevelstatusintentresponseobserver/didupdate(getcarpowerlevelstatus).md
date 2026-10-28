@@ -23,7 +23,7 @@ func didUpdate(getCarPowerLevelStatus response: INGetCarPowerLevelStatusIntentRe
 - (void) getCarPowerLevelStatusResponseDidUpdate:(INGetCarPowerLevelStatusIntentResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method to deliver updated power level information to Maps, which only requests updates during an active navigation session. During that session, Maps regularly asks for the vehicle’s power level status using [`INGetCarPowerLevelStatusIntent`](../ingetcarpowerlevelstatusintent.md). Only call this method when there’s an abrupt change in the vehicle’s battery charge—a 3 percent or greater drop—since handling the last intent.
 

@@ -21,11 +21,11 @@ func activityUpdatedForAlert(_ activity: AccessoryLiveActivity) -> Bool
 
 - [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
-#### Return Value
+## Return Value
 
 `true` if the accessory successfully displayed an alert for this update, `false` otherwise.
 
-#### Overview
+## Overview
 
 Use this callback method to keep the accessory’s display in sync with the current state of the Live Activity, display an included alert, and coordinate alerts across devices. Parse the activity’s details, select the information to display on your accessory, and convert it to data for transmission. Then, send the data to your accessory using the Live Activity’s corresponding [`LiveActivityForwarding.Session`](../session.md) and its `LiveActivityForwarding/Session/send(message:)` method.
 

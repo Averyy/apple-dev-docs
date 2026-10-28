@@ -15,11 +15,11 @@ Invalidate all the blocks associated with a vnode.
 int buf_invalidateblks(vnode_t vp, int flags, int slpflag, int slptimeo);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, error values from msleep().
 
-#### Discussion
+## Discussion
 
 This function does for all blocks associated with a vnode what buf_invalblkno does for one block. Again, it will only be able to invalidate data which were populated with traditional buffer cache routines, i.e. by buf_getblk() and callers thereof. Unlike buf_invalblkno(), it can be made to write dirty data to disk rather than casting it aside.
 

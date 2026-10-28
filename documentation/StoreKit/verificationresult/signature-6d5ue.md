@@ -23,7 +23,7 @@ var signature: P256.Signing.ECDSASignature { get }
 
 Available when `SignedType` is `AppTransaction`.
 
-#### Discussion
+## Discussion
 
 Use this [`signature`](./signature-95r7x.md) with [Apple CryptoKit](../../CryptoKit/CryptoKit.md) if you verify the signature on the device.
 

@@ -21,7 +21,7 @@ A type that represents Adobe Portable Document Format (PDF) documents.
 extern UTType * const UTTypePDF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.adobe.pdf`.
 

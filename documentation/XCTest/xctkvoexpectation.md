@@ -27,7 +27,7 @@ class XCTKVOExpectation
 @interface XCTKVOExpectation : XCTestExpectation
 ```
 
-#### Overview
+## Overview
 
 Apple discourages the use of this symbol in Swift. Use [`XCTKeyPathExpectation`](./xctkeypathexpectation.md) instead.
 

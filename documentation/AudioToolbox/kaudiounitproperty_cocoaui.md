@@ -23,7 +23,7 @@ kAudioUnitProperty_CocoaUI
 
 - [Hosting Audio Unit Extensions Using the AUv2 API](./hosting-audio-unit-extensions-using-the-auv2-api.md)
 
-#### Discussion
+## Discussion
 
 An audio unit’s custom Cocoa views. You can determine the number of views an audio unit provides by querying the size of this property. Typically, audio units provide just one view.
 

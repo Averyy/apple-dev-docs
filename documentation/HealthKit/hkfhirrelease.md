@@ -24,7 +24,7 @@ struct HKFHIRRelease
 typedef NSString * HKFHIRRelease;
 ```
 
-#### Overview
+## Overview
 
 Each release can have multiple versions.
 

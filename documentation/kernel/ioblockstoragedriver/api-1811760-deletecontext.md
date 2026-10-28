@@ -10,7 +10,7 @@ virtual void deleteContext(
  Context *context);
 ```
 
-#### Overview
+## Overview
 
 Delete a context structure from a read/write operation.
 

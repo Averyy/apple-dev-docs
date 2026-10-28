@@ -15,7 +15,7 @@ Posted when all history items have been removed from the web history.
 static let WebHistoryAllItemsRemoved: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the web history from which the history items were removed. The `userInfo` dictionary contains the following information:
 

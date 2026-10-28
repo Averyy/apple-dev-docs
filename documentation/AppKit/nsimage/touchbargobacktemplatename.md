@@ -22,7 +22,7 @@ class let touchBarGoBackTemplateName: String
 extern NSImageName const NSImageNameTouchBarGoBackTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for go back](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793507@2x.png)
 

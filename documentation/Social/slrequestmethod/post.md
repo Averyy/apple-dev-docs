@@ -22,7 +22,7 @@ case POST
 SLRequestMethodPOST
 ```
 
-#### Discussion
+## Discussion
 
 Use a POST request to submit information to the specified server, such as a status update or an image.
 

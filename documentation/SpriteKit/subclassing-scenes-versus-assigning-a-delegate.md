@@ -5,7 +5,7 @@
 
 Use a scene delegate to share app logic across various scenes.
 
-#### Overview
+## Overview
 
 Often, your app subclasses [`SKScene`](./skscene.md) to deliver gameplay. Your subclass usually:
 

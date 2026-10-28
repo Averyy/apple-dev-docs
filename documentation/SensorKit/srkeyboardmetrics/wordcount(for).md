@@ -21,7 +21,7 @@ func wordCount(for category: SRKeyboardMetrics.SentimentCategory) -> Int
 - (NSInteger) wordCountForSentimentCategory:(SRKeyboardMetricsSentimentCategory) category;
 ```
 
-#### Return Value
+## Return Value
 
 The total number of typed words for a sentiment.
 

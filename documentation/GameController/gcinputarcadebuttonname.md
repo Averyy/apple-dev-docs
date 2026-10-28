@@ -20,7 +20,7 @@ Returns the name of the arcade stick button at the specified location.
 extern GCInputButtonNameGCInputArcadeButtonName(NSInteger row, NSInteger column);
 ```
 
-#### Return Value
+## Return Value
 
 The name of an arcade stick button.
 

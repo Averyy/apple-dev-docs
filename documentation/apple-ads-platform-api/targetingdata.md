@@ -15,7 +15,7 @@ The shared include and exclude pattern for all ad group and campaign targeting d
 object TargetingData
 ```
 
-#### Discussion
+## Discussion
 
 The `TargetingData` object is the shared include/exclude pattern for all ad group targeting dimensions. The `include` array restricts delivery to the specified values. The `exclude` array blocks delivery to those values. When you set both arrays, `include` takes precedence over `exclude` for overlapping values.
 
@@ -26,7 +26,7 @@ This object is embedded within [`CampaignTargeting`](./campaigntargeting.md) fie
 
 The [`AdGroupTargeting`](./adgrouptargeting.md) also embeds `TargetingData` within fields such as `country`, `deviceClass`, `gender`, `minAge`, and others, which refine audience and delivery within that campaign. The valid values for each field depend on the targeting dimension: `supplySource` accepts `APPSTORE` and `MAPS`. The `deviceClass` field accepts `IPHONE` and `IPAD`.
 
-##### Example
+### Example
 
 ```json
 {

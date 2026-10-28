@@ -20,7 +20,7 @@ The URL for the current webpage.
 final var url: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the URL for the webpage currently being presented. Use this URL in places where you reflect the webpage address in your app’s user interface. If the webpage has not loaded any content yet, this value will be `nil`.
 

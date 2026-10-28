@@ -21,7 +21,7 @@ var webUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.
 @property (copy, readonly) NSDictionary<NSString *,NSArray<SRWebUsage *> *> * webUsageByCategory;
 ```
 
-#### Discussion
+## Discussion
 
 The framework interprets the category in the same manner as displayed in Screen Time.
 

@@ -20,7 +20,7 @@ The position of the hit.
 var position: SIMD3<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The frame of reference for this point depends on the reference entity used in the call to either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](../scene/raycast%28origin,direction,length,query,mask,relativeto%29.md) method or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](../scene/convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md) method that generated the hit.
 

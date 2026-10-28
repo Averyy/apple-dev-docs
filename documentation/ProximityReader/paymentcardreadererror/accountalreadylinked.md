@@ -17,7 +17,7 @@ An error that indicates the merchant already accepted the Terms and Conditions.
 case accountAlreadyLinked
 ```
 
-#### Discussion
+## Discussion
 
 The merchant has already accepted the Terms and Conditions. Your app needs to call [`prepare(using:)`](../paymentcardreader/prepare%28using%29.md) to configure the device.
 

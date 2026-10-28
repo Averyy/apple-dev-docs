@@ -18,7 +18,7 @@ Indicates the active wireless route changed.
 extern NSString * const MPVolumeViewWirelessRouteActiveDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the [`isWirelessRouteActive`](./mpvolumeview/iswirelessrouteactive.md) property changes.
 

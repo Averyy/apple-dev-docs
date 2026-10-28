@@ -25,11 +25,11 @@ init(capacity numItems: Int)
 - (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized mutable dictionary, which might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 Mutable dictionaries allocate additional memory as needed, so `numItems` simply establishes the object’s initial capacity.
 

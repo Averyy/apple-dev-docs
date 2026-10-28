@@ -17,7 +17,7 @@ Key for a format string that specifies how dates are abbreviated.
 extern NSString * const NSShortDateFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is to separate the day month and year with slashes and to put the day first, as in 31/10/01.
 

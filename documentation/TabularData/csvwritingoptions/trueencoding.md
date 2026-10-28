@@ -21,7 +21,7 @@ The string the CSV file generator uses to represent true Boolean values.
 var trueEncoding: String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

@@ -25,7 +25,7 @@ func fetchShareMetadata(with url: URL, completionHandler: @escaping @Sendable (C
 - (void) fetchShareMetadataWithURL:(NSURL *) url completionHandler:(void (^)(CKShareMetadata *metadata, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

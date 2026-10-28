@@ -21,7 +21,7 @@ Creates and returns a date object set to a given number of seconds from the spec
 + (instancetype) dateWithTimeInterval:(NSTimeInterval) secsToBeAdded sinceDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object set to `secsToBeAdded` seconds from `date`.
 

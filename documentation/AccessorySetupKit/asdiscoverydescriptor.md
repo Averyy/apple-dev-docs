@@ -24,7 +24,7 @@ class ASDiscoveryDescriptor
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 Use an instance of this type to identify accessories your app can set up, then set it as the [`descriptor`](./aspickerdisplayitem/descriptor.md) property of an [`ASPickerDisplayItem`](./aspickerdisplayitem.md).
 

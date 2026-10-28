@@ -23,7 +23,7 @@ static var perLayerProfiling: MLCExecutionOptions { get }
 MLCExecutionOptionsPerLayerProfiling
 ```
 
-#### Discussion
+## Discussion
 
 Visualize the layer information using the Logging profiling template in Instruments. This information may not be available for all [ML Compute](../MLCompute.md) devices.
 

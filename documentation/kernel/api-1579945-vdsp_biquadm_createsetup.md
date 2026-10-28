@@ -15,11 +15,11 @@ Builds a data structure that contains precalculated data for use by a single-pre
 vDSP_biquadm_Setup vDSP_biquadm_CreateSetup(const double *__coeffs, vDSP_Length __M, vDSP_Length __N);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an allocated and initialized biquadratic filter object.
 
-#### Discussion
+## Discussion
 
 This function constructs and returns a biquadratic filter object from the coefficients that you specify. This function initializes the internal state of the setup object with all delay elements set to zero.
 

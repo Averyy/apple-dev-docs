@@ -24,11 +24,11 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 - [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
-#### Return Value
+## Return Value
 
 A [`Data`](../../Foundation/data.md) instance in Swift, or an [`NSData`](../../Foundation/nsdata.md) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) (see [`storageMode`](../mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
 

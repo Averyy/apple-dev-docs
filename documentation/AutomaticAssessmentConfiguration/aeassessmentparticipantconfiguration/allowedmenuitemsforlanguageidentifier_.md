@@ -16,7 +16,7 @@ Returns the set of allowed menu item titles for the given language identifier, o
 - (NSSet<NSString *> *) allowedMenuItemsForLanguageIdentifier:(NSString *) languageIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Menu item titles are matched against the participant application’s localized menu items at the time the assessment session begins. The system resolves each language identifier to the best-matching localization the application bundle provides, so an exact locale match is not required.
 

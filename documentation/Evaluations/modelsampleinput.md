@@ -21,7 +21,7 @@ The data a language model receives for evaluation.
 struct ModelSampleInput
 ```
 
-#### Overview
+## Overview
 
 ```swift
 @Generable

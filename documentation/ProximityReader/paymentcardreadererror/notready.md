@@ -17,7 +17,7 @@ An error that indicates the reader session isn’t ready.
 case notReady
 ```
 
-#### Discussion
+## Discussion
 
 Prepare the session again to try and resolve the issue.
 

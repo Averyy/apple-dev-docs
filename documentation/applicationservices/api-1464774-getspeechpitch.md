@@ -19,11 +19,11 @@ func GetSpeechPitch(_ chan: SpeechChannel, _ pitch: UnsafeMutablePointer<Fixed>)
 OSErr GetSpeechPitch(SpeechChannel chan, Fixed *pitch);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 Typical voice frequencies range from around 90 hertz for alow-pitched male voice to perhaps 300 hertz for a high-pitched child’svoice. These frequencies correspond to approximate pitch valuesin the ranges of 30.000 to 40.000 and 55.000 to 65.000, respectively.
 

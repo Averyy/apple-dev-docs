@@ -13,11 +13,11 @@
 errno_t sockopt_copyin(sockopt_t sopt, void *data, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 An errno error or zero upon success.
 
-#### Discussion
+## Discussion
 
 Copies the data from the socket option to a buffer.
 

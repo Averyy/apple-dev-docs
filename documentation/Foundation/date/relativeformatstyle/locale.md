@@ -21,7 +21,7 @@ The locale to use when formatting the relative date.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`autoupdatingCurrent`](../../nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the format style resets to using [`autoupdatingCurrent`](../../nslocale/autoupdatingcurrent.md).
 

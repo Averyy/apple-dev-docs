@@ -23,7 +23,7 @@ var duration: CMTime { get }
 @property (readonly) CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 For metadata originating from a sample buffer ([`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md)), the duration reflects the duration of the sample buffer. If there is no valid duration value associated with the metadata, this property should contain [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

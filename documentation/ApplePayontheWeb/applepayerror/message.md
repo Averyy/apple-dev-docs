@@ -16,7 +16,7 @@ A localized, user-facing string that describes the error.
 attribute DOMString message;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a short, custom, localized error message that helps the user resolve the issue. This message appears on the Apple Pay sheet.
 

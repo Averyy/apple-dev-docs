@@ -25,7 +25,7 @@ typealias MIDIEntityRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIEntityRef;
 ```
 
-#### Discussion
+## Discussion
 
 An entity object derives from [`MIDIObjectRef`](./midiobjectref.md), and its owning object is a [`MIDIDeviceRef`](./midideviceref.md).
 

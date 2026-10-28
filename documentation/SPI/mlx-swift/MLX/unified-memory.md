@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 `MLX` takes advantage of the shared memory between the CPU and GPU.
 
-#### Discussion
+## Discussion
 
 See also [mlx python docs](https://ml-explore.github.io/mlx/build/html/usage/unified_memory.html).
 
@@ -43,7 +43,7 @@ let d = add(a, c, stream: .gpu)
 
 In the above case, the second `add` runs on the GPU but it depends on the output of the first `add` which is running on the CPU. MLX will automatically insert a dependency between the two streams so that the second `add` only starts executing after the first is complete and `c` is available.
 
-#### A Simple Example
+## A Simple Example
 
 Here is a more interesting (albeit slightly contrived example) of how unified memory can be helpful. Suppose we have the following computation:
 

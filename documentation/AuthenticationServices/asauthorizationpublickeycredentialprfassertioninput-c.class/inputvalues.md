@@ -19,7 +19,7 @@ The input values to use when generating the PRF extension output, if specified.
 @property (nonatomic, readonly, nullable) ASAuthorizationPublicKeyCredentialPRFAssertionInputValues * inputValues;
 ```
 
-#### Discussion
+## Discussion
 
 When also using [`perCredentialInputValues`](./percredentialinputvalues.md), you may use the corresponding value from that dictionary instead.
 

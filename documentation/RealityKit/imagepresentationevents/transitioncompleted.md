@@ -15,7 +15,7 @@ A transition between two viewing modes has completed for an image presentation c
 struct TransitionCompleted
 ```
 
-#### Overview
+## Overview
 
 Use the `TransitionCompleted` event as an opportunity to display or relocate overlaid UI after a viewing mode transition.
 

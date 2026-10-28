@@ -17,7 +17,7 @@ Returns a document object instantiated from the subclass of the given document t
 - (id) openUntitledDocumentOfType:(NSString *) type display:(BOOL) display;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an `NSDocument` object instantiated from the `NSDocument` subclass required by document type `docType` and displays it if `flag` is [`true`](../../Swift/true.md). The returned object is not retained, but is added to the receiver’s list of managed documents. Returns `nil` if the object could not be created, typically because no `NSDocument` subclass could be found for `docType`. Even if `flag` is [`true`](../../Swift/true.md), the document is not displayed if [`shouldCreateUI`](./shouldcreateui.md) returns [`false`](../../Swift/false.md). This method calls [`makeUntitledDocumentOfType:`](./makeuntitleddocumentoftype_.md) to obtain the created `NSDocument` object.
 

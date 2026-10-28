@@ -5,11 +5,11 @@
 
 Modify your iPadOS or iOS app to run successfully in visionOS as a compatible app.
 
-#### Overview
+## Overview
 
 A compatible iPadOS or iOS app links against the iOS SDK and runs in visionOS without needing to add a visionOS destination. Although visionOS provides a complete set of iOS frameworks for linking, some features of those frameworks might be unavailable due to hardware or usage differences. Read [Determining whether to bring your app to visionOS](./determining-whether-to-bring-your-app-to-visionos.md) for details on behavior changes, API availability checks, and deprecated frameworks. To ensure your app runs correctly in visionOS, handle any unavailable features gracefully and provide workarounds wherever possible.
 
-##### Run as a compatible app in visionOS
+### Run as a compatible app in visionOS
 
 The App Store makes compatible iPad and iPhone apps available in visionOS automatically after you sign the updated Apple Developer Program License Agreement. If you have an app in the iOS App Store, try downloading it on Apple Vision Pro and run it. If you built your app using the iOS SDK, Xcode 15 and later automatically adds a Designed for iPad runtime destination to your project.
 
@@ -17,7 +17,7 @@ The App Store makes compatible iPad and iPhone apps available in visionOS automa
 
 Use this destination to run your app and test its compatibility in visionOS. Depending on your app, you might need to make additional changes to account for features that are only found in the iOS SDK. You can test most of your app’s core functionality in Simulator, but some features are available only on a device.
 
-##### Handle SDK differences gracefully
+### Handle SDK differences gracefully
 
 visionOS contains most of the same technologies as iPadOS and iOS, but there are differences. In some cases, a feature you use in your app might not be available because of hardware differences or because of differences in how people use a visionOS device. As part of your testing, consider the impact of any unavailable features on your app’s overall experience. Whenever possible, work around unavailable features by disabling them or providing alternate ways to access the same content.
 
@@ -43,7 +43,7 @@ If your app relies on frameworks that behave differently in visionOS, update you
 - **Handle `nil` or empty values gracefully.** Validate objects and return values before you try to use them.
 - **Update your user interface.** Provide appropriate messaging in your interface when a feature is unavailable, or remove feature-specific views entirely if you can do so cleanly. Don’t leave empty views where the feature was.
 
-#### Adapt to device differences
+## Adapt to device differences
 
 Apple frameworks take a device-agnostic approach whenever possible to minimize issues when you use them on different device types. Apple devices come in a variety of shapes and sizes, with different sets of features. Rather than build your app for a specific device, make sure it adapts to any device and can gracefully handle differences.
 
@@ -57,7 +57,7 @@ Build robustness into your app during the design process. Avoid assumptions that
 - **Don’t assume your app runs in the background.** visionOS doesn’t support location, external accessory, or Bluetooth-peripheral background execution modes.
 - **Don’t assume that background apps are hidden.** In visionOS, the windows of background apps remain visible, but are dimmed when no one looks at them. The only time app windows disappear is when one app presents an immersive space.
 
-##### Audit your interface code
+### Audit your interface code
 
 To minimize disruptions, visionOS runs your compatible iPad or iPhone app in an environment that matches an iPad as much as possible. Windows and views retain the same appearance that they have in iPadOS or iOS, and the system sizes your app’s window to fit an iPad whenever possible.
 
@@ -78,7 +78,7 @@ Rectangle()
   .hoverEffect()
 ```
 
-##### Create adaptive layouts in UIKit
+### Create adaptive layouts in UIKit
 
 If your UIKit app uses hardcoded values or relies on `UIScreen` for layout, the first step to migrating your app to visionOS is to use an adaptable layout. When you make decisions using device details, your app might produce inconsistent or erroneous results on an unknown device type, or it might fail altogether. Find solutions that rely on environmental information, rather than the device type. For example, SwiftUI and UIKit start layout using the app’s window size, which isn’t necessarily the same size as the device’s display.
 
@@ -91,7 +91,7 @@ Think about ways to create adaptive layouts using the following techniques:
 - **Respect the safe area.** Place views so they’re not obstructed by other content. Each view has a [layout guide](../UIKit/uilayoutguide.md) that helps you create constraints to position your views within the safe area, which adapt to the current device automatically. Read [Positioning content relative to the safe area](../UIKit/positioning-content-relative-to-the-safe-area.md) for guidance.
 - **Adapt based on changes in UITraitCollection.** Write code to adjust your app’s layout according to changes in elements of the iOS user interface, such as size class, display scale, and layout direction. Read [UITraitCollection](../UIKit/uitraitcollection.md) for more information.
 
-##### Test specific scenarios before uploading your app
+### Test specific scenarios before uploading your app
 
 The following App Store features for iOS continue to work when your app runs in visionOS:
 

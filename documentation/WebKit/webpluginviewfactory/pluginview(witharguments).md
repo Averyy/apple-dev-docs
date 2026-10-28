@@ -20,11 +20,11 @@ static func plugInView(withArguments arguments: [AnyHashable : Any]!) -> NSView!
 + (NSView *) plugInViewWithArguments:(NSDictionary *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The created view.
 
-#### Discussion
+## Discussion
 
 This method returns an `NSView` object that conforms to the `WebPlugIn` informal protocol. The arguments dictionary should be specified by the keys and objects described in `Constants`. This method is required.
 

@@ -21,7 +21,7 @@ Asynchronously copies texture data to another texture.
 @preconcurrency func copyAsync(to texture: any MTLTexture, completionHandler: @escaping @MainActor ((any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This function is asynchronous. It returns immediately and runs in the background, calling `completionHandler` when it finishes or errors. This method copies all available mipmap sizes to `texture`.
 

@@ -25,11 +25,11 @@ class func confirmationRequired(with notebookItemTypeToConfirm: INNotebookItemTy
 + (instancetype) confirmationRequiredWithNotebookItemTypeToConfirm:(INNotebookItemType) notebookItemTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNotebookItemTypeResolutionResult`](../innotebookitemtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot search for the specified type of content but can search for a similar type and want to confirm with the user before proceeding.
 

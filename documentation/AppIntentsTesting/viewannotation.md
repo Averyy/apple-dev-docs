@@ -25,7 +25,7 @@ struct ViewAnnotation
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 Use the `ViewAnnotation` structure to test whether the currently visible user interface and its views have the expected entity view annotations you created to provide onscreen context to the system. Retrieve visible view annotations using [`viewAnnotations()`](./appentitydefinition/viewannotations%28%29.md), then inspect their selection state and which entities are visible on-screen.
 

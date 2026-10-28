@@ -19,7 +19,7 @@ var kCEAutoHeightKey: String { get }
 #define kCEAutoHeightKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a negative number if the height is set to automatic; otherwise it’s zero.
 

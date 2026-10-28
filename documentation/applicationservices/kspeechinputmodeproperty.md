@@ -19,7 +19,7 @@ let kSpeechInputModeProperty: CFString
 const CFStringRef kSpeechInputModeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFString` object that specifies whether the channel is currently in text input mode or phoneme input mode. The constants `kSpeechModeText` and `kSpeechModePhoneme` (defined in [Speech-Channel Modes for Core Foundation-based Functions](./speech_synthesis_manager/speech-channel_modes_for_core_foundation-based_functions.md)) are the possible values of this string.
 

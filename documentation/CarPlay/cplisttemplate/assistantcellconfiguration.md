@@ -21,7 +21,7 @@ var assistantCellConfiguration: CPAssistantCellConfiguration? { get set }
 @property (nonatomic, strong, nullable) CPAssistantCellConfiguration * assistantCellConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The Siri assistant cell is only available in audio and communication apps.
 

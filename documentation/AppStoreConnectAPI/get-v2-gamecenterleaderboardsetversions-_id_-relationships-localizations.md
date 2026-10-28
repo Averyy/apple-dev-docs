@@ -9,7 +9,7 @@ Get a list of localization resource IDs for a specific Game Center leaderboard s
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - limit:

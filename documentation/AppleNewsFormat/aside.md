@@ -21,13 +21,13 @@ object Aside
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use an `aside` component to hold information not directly related to your article. Use an `aside` to help Siri make the most informed content recommendations to people using Apple News and to provide better accuracy for placing your content within feeds, such as the Today feed, channel feeds, and topic feeds.
 
 When News recommends content, it ignores any content in the `aside` component, so you can put content there that is not directly related to the article, such as promotional content, links to other articles, or author biographies.
 
-##### Example
+### Example
 
 ```json
 {

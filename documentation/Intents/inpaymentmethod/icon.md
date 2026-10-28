@@ -33,7 +33,7 @@ var icon: INImage? { get }
 @property (atomic, copy, readonly, nullable) INImage * icon;
 ```
 
-#### Discussion
+## Discussion
 
 This properties stores an image with any branding information associated with the payment type. For example, this property could contain an image provided by a particular credit card vendor.
 

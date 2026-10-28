@@ -5,7 +5,7 @@
 
 Learn how the anchor point affects a sprite’s position.
 
-#### Overview
+## Overview
 
 By default, the sprite node’s frame—and thus its texture—is centered on its position. However, you might want a different part of the texture to appear at the node’s position; for example, when the game element depicted in the texture is not centered in the texture image.
 

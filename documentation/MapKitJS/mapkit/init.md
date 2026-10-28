@@ -19,7 +19,7 @@ init(options: MapKitInitializationOptions): void;
 
 - [Loading the latest version of MapKit JS](../loading-the-latest-version-of-mapkit-js.md)
 
-#### Discussion
+## Discussion
 
 Unless you wish to explicitly control initialization timing in JavaScript, use `data-token` instead of this method. See [Loading the latest version of MapKit JS](../loading-the-latest-version-of-mapkit-js.md) for more information.
 

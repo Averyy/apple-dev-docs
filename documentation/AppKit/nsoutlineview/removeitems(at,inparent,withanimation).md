@@ -19,7 +19,7 @@ func removeItems(at indexes: IndexSet, inParent parent: Any?, withAnimation anim
 - (void) removeItemsAtIndexes:(NSIndexSet *) indexes inParent:(id) parent withAnimation:(NSTableViewAnimationOptions) animationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This method parallels the [`removeRows(at:withAnimation:)`](../nstableview/removerows%28at,withanimation%29.md) method of [`NSTableView`](../nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](../../Foundation/nsmutablearray/removeobjects%28at%29.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
 

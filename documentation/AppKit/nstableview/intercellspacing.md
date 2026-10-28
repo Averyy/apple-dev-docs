@@ -19,7 +19,7 @@ var intercellSpacing: NSSize { get set }
 @property NSSize intercellSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property causes the table view to redisplay itself. Negative values aren’t supported. The default spacing varies based on the table’s style.
 

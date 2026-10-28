@@ -25,7 +25,7 @@ static let heif: AVFileType
 extern AVFileType const AVFileTypeHEIF;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.heif`. Files of this type have an `.heif` extension.
 

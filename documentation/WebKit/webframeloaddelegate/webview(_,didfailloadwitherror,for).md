@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didFailLoadWithError error: (any Error
 - (void) webView:(WebView *) sender didFailLoadWithError:(NSError *) error forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the data source has been committed but resulted in an error.
 

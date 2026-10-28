@@ -20,11 +20,11 @@ Defines the destination of a drag and drop operation that handles the dropped co
 @preconcurrency func dropDestination<T>(for payloadType: T.Type = T.self, action: @escaping ([T]) -> Void) -> some TabContent<Self.TabValue> where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are dropped onto the tab.
 
-#### Discussion
+## Discussion
 
 The dropped content can be provided as binary data, file URLs, or file promises.
 

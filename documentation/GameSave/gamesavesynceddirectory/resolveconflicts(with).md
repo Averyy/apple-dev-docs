@@ -19,7 +19,7 @@ Indicates that you resolved a conflict.
 func resolveConflicts(with version: GameSaveSyncedDirectory.Version)
 ```
 
-#### Discussion
+## Discussion
 
 If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call this method, passing that version.
 

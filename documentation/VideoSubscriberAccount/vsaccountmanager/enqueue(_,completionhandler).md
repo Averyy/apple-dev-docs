@@ -23,7 +23,7 @@ func enqueue(_ request: VSAccountMetadataRequest, completionHandler: @escaping (
 - (VSAccountManagerResult *) enqueueAccountMetadataRequest:(VSAccountMetadataRequest *) request completionHandler:(void (^)(VSAccountMetadata *metadata, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`VSAccountManagerResult`](../vsaccountmanagerresult.md) object that your app can use with [`cancel()`](../vsaccountmanagerresult/cancel%28%29.md) to cancel the request.
 

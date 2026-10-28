@@ -21,13 +21,13 @@ A template for constructing a URL from variable expansions.
 struct Template
 ```
 
-#### Overview
+## Overview
 
 This is an template that can be expanded into a [`URL`](../url.md) by calling `URL(template:variables:)`.
 
 Templating has a rich set of options for substituting various parts of URLs. See [RFC 6570](https://datatracker.ietf.org/doc/html/rfc6570) for details.
 
-##### Example 1
+### Example 1
 
 ```swift
 let template = URL.Template("http://www.example.com/foo{?query,number}")!
@@ -51,7 +51,7 @@ The resulting URL will be
 http://www.example.com/foo?query=bar%20baz&number=234
 ```
 
-##### Usage
+### Usage
 
 Templates provide a description of a URL space and define how URLs can be constructed given specific variable values. Their intended use is, for example, to allow a server to communicate to a client how to construct URLs for particular resources.
 
@@ -59,7 +59,7 @@ For each specific resource, an API contract is required to clearly define the va
 
 An API contract is necessary to define which substitutions are valid within a given URL space. There is no guarantee that every possible expansion of variable expressions corresponds to an existing resource URL; indeed, some expansions may not even produce a valid URL. Only the API specification itself can determine which expansions are expected to yield valid URLs corresponding to existing resources.
 
-##### Example 2
+### Example 2
 
 Here’s an example, that illustrates how to define a specific set of variables:
 

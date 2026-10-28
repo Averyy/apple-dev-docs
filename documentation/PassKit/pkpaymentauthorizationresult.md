@@ -24,7 +24,7 @@ class PKPaymentAuthorizationResult
 @interface PKPaymentAuthorizationResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](./pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](./pkpaymentauthorizationresult.md), and include the errors in the errors array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](./pkpaymentauthorizationstatus/success.md) status and leave the error array empty.
 

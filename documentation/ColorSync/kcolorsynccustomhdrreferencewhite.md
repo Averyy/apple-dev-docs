@@ -25,7 +25,7 @@ var kColorSyncCustomHDRReferenceWhite: Unmanaged<CFString>
 extern CFStringRef kColorSyncCustomHDRReferenceWhite;
 ```
 
-#### Discussion
+## Discussion
 
 Must be greater than `0`. The encoding has a resolution of 0.2 nits and a maximum of 10000 nits; the framework clamps values to that range.
 

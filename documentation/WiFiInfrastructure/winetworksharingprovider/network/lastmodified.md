@@ -17,7 +17,7 @@ The date when this network was last modified.
 let lastModified: Date
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for informational purposes or broad filtering policies. Avoid deriving subsets of changed networks based on specific timestamps due to potential wall time fluctuations.
 

@@ -25,11 +25,11 @@ class var allFrameworks: [Bundle] { get }
 @property (class, copy, readonly) NSArray<NSBundle *> * allFrameworks;
 ```
 
-#### Return Value
+## Return Value
 
 An array of all of the application’s bundles that represent frameworks. Only frameworks with one or more Objective-C classes in them are included.
 
-#### Discussion
+## Discussion
 
 The returned array includes frameworks that are linked into an application when the application is built and bundles for frameworks that have been dynamically created.
 

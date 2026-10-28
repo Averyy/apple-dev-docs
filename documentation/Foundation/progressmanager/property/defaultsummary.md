@@ -22,11 +22,11 @@ The default summary value for this property type.
 static var defaultSummary: Self.Summary { get }
 ```
 
-#### Return Value
+## Return Value
 
 The default summary value for this property type.
 
-#### Discussion
+## Discussion
 
 This value is used as the initial summary when no property values have been aggregated yet.
 

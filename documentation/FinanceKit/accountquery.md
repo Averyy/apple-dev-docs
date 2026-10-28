@@ -16,7 +16,7 @@ A structure that defines an account query.
 struct AccountQuery
 ```
 
-#### Overview
+## Overview
 
 Use an `AccountQuery` to find and filter a person’s accounts.
 

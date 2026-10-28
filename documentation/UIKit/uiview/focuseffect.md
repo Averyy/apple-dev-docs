@@ -23,7 +23,7 @@ var focusEffect: UIFocusEffect? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIFocusEffect * focusEffect;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, the system doesn’t apply an effect when the view becomes focused.
 

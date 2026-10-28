@@ -27,7 +27,7 @@ optional func programIsOpaque(_ program: SCNProgram) -> Bool
 - (BOOL) programIsOpaque:(SCNProgram *) program;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if all fragments rendered by the program are opaque; [`false`](../../Swift/false.md) if the program renders fragments whose alpha value is less than `1.0`.
 

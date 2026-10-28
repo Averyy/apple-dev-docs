@@ -13,7 +13,7 @@ Improve your app’s performance by refactoring your code to take advantage of a
 - watchOS 8.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10194: Swift Concurrency: Update a Sample App](https://developer.apple.com/wwdc21/10194).
 
@@ -26,7 +26,7 @@ This sample provides two separate versions of the Coffee Tracker app:
 
 Watch the session to see the process step by step, and then compare the two projects to see the differences.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To add the complication to an active watch face, start by building and running the sample code project in the simulator, and follow these steps:
 
@@ -48,7 +48,7 @@ After configuring and running the Coffee Tracker app, you can test the backgroun
 
 Coffee Tracker updates the complication within 15 minutes; however, the update may be delayed based on the system’s current state.
 
-##### Convert completion handlers to use asynchronous methods
+### Convert completion handlers to use asynchronous methods
 
 The `HealthKitController` type contains several calls to the HealthKit SDK. In SDKs that support Swift concurrency, frameworks add `async`-`await` versions of most functions that previously took completion handlers. You can remove completion handlers by updating these calls to use the `async`-`await` versions. You suspend the `store.save()` operation by adding the `await` keyword. Execution resumes after the `await` completes. An `async` function can also be a throwing function, which you call by prepending `try await` to the function call. Wrap the call in a `do-catch` statement instead of using an `Error?` type as a parameter to the completion handler.
 
@@ -123,7 +123,7 @@ case let backgroundTask as WKApplicationRefreshBackgroundTask:
     }
 ```
 
-##### Put the coffee data class on the main actor
+### Put the coffee data class on the main actor
 
 The `CoffeeData` class implements `ObservableObject` and has an `@Published` property to feed the SwiftUI views. To ensure that all updates to this property are made on the main thread, place the type on the main actor:
 
@@ -142,7 +142,7 @@ Update the `drinksUpdated()` method to call the `CoffeeDataStore` actor using an
 
 Calls to the `CoffeeData` object from SwiftUI views don’t require any use of `await` as these views are also on the main actor due to their use of `@EnvironmentObject`.
 
-##### Replace delegates and completion handlers with async methods
+### Replace delegates and completion handlers with async methods
 
 Several methods on the [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) protocol used to configure the app’s timeline take completion handlers, which you can replace with their `async` equivalents:
 

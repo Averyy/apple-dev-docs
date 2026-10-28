@@ -10,7 +10,7 @@ virtual UInt8 GetProductStringIndex(
  void );
 ```
 
-#### Overview
+## Overview
 
 returns the index of string descriptor describing product
 

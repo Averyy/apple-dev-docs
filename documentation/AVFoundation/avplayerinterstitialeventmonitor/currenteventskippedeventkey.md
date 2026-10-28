@@ -25,7 +25,7 @@ class let currentEventSkippedEventKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorCurrentEventSkippedEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type AVPlayerInterstitialEvent.
 

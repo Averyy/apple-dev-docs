@@ -19,7 +19,7 @@ class VZCustomVirtioDeviceConfiguration
 @interface VZCustomVirtioDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 `VZCustomVirtioDeviceConfiguration` defines the configuration of a [`VZCustomVirtioDevice`](./vzcustomvirtiodevice.md).
 

@@ -20,7 +20,7 @@ protocol PGDisplay : NSObjectProtocol
 @protocol PGDisplay <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The framework emulates hot-plugging to the display. After you create the display object, set the [`modeList`](./pgdisplay/modelist.md) property to a list of modes you want the display to use. The first time you set the mode list, the framework connects the display to the virtualized graphics card. When you release the display object, the device simulates unplugging the display.
 

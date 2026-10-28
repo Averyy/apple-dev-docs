@@ -19,7 +19,7 @@ init(validationToken: String, recipients: [String])
 - (instancetype) initWithValidationToken:(NSString *) validationToken recipients:(NSArray<NSString *> *) recipients;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new UPI request with the specified validation token and recipients.
 

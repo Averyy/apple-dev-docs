@@ -18,7 +18,7 @@ Determines how the vertex shader steps through the data in this layout.
 var stepFunction: MTLVertexStepFunction { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set to `.perInstance` to supply per-instance data (for example, per-instance color or transform) from a vertex buffer rather than a separate instancing buffer. Defaults to `.perVertex`.
 

@@ -22,7 +22,7 @@ var fontDesign: UIFontDescriptor.SystemDesign { get set }
 @property (nonatomic, copy, nonnull) UIFontDescriptorSystemDesign fontDesign;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`default`](../uifontdescriptor/systemdesign/default.md).
 

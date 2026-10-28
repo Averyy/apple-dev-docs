@@ -21,7 +21,7 @@ The minimization behavior of a toolbar.
 struct ToolbarMinimizationBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this type with the [`toolbarMinimizationBehavior(_:for:)`](./view/toolbarminimizationbehavior%28_,for%29.md) modifier to control how toolbars minimize in response to scrolling.
 

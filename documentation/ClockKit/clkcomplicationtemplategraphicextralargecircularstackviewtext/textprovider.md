@@ -18,7 +18,7 @@ The text to display below the view.
 <CLKTextProvider> @objc final var textProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property supports multicolor text.
 

@@ -19,7 +19,7 @@ var hasDisplayModeAdvanced: Bool { get set }
 @property BOOL hasDisplayModeAdvanced;
 ```
 
-#### Discussion
+## Discussion
 
 If you create an `IKScannerDeviceView` object programmatically and want to use the advanced display mode, do the following:
 

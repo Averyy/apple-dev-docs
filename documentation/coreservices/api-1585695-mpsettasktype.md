@@ -15,11 +15,11 @@ Sets the type of the task.
 OSStatus MPSetTaskType(MPTaskID task, OSType taskType);
 ```
 
-#### Return Value
+## Return Value
 
 The `noErr` result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 This function does nothing and should not be used.
 

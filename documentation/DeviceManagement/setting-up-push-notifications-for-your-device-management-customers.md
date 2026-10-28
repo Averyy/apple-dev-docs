@@ -5,7 +5,7 @@
 
 Create and sign a certificate signing request (CSR) to enable push notifications.
 
-#### Overview
+## Overview
 
 A device management service uses the the Apple Push Notification service (APNs) to send push notifications to managed devices. To set up APNs, you create and then signing a certificate signing request (CSR) for each of your customers.
 
@@ -13,7 +13,7 @@ A device management service uses the the Apple Push Notification service (APNs) 
 
 Use a separate push certificate for each customer. This enables independent management of each customer’s certificate and prevents customers from being able to see each other’s device tokens.
 
-#### Create a CSR
+## Create a CSR
 
 During the setup process for your service, create an operation that generates a CSR for your customer. Execute this process within the instance of your device management service that your customer has access to.
 
@@ -21,7 +21,7 @@ During the setup process for your service, create an operation that generates a 
 
 Upload the CSR to your internal infrastructure and then perform the signing process.
 
-#### Sign the CSR
+## Sign the CSR
 
 Download an MDM Vendor CSR Signing Certificate from the [Apple Developer Portal](https://developer.apple.com/help/account/certificates/mdm-vendor-csr-signing-certificate). Then create a script to sign the customer’s CSR by following these instructions:
 
@@ -52,7 +52,7 @@ After delivering the signed CSR back to the customer, the customer must log in t
 
 See the sample code references below for additional information.
 
-#### Java sample code
+## Java sample code
 
 ```other
 /**
@@ -86,7 +86,7 @@ byte[] reqPlist = createPlist(new String(Base64.encodeBase64(csr)),certChain, ne
 }
 ```
 
-#### .Net sample code
+## .Net sample code
 
 ```other
 var privateKey = new PrivateKey(PrivateKey.KeySpecification.AtKeyExchange, 2048, false, true);
@@ -107,7 +107,7 @@ byte[] signedHash = crypt.SignHash(hash, CryptoConfig.MapNameToOID("SHA256"));
 var signedHashBytesBase64 = Convert.ToBase64String(signedHash);
 ```
 
-#### Property list sample code
+## Property list sample code
 
 ```other
 <?xml version="1.0" encoding="UTF-8"?>

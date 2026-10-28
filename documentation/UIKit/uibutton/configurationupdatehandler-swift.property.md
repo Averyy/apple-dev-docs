@@ -23,7 +23,7 @@ var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIButtonConfigurationUpdateHandler configurationUpdateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as an alternative to overriding [`updateConfiguration()`](./updateconfiguration%28%29.md). Set a closure to respond to button state changes by updating the button configuration.
 

@@ -20,7 +20,7 @@ A handle to a property definition (attribute or relationship) stored in a layer.
 struct Spec
 ```
 
-#### Overview
+## Overview
 
 `USDPrim.Property.Spec` is the untyped base for `USDPrim.Attribute.Spec` and `USDPrim.Relationship.Spec`. It acts as a handle into data owned by a [`USDLayer`](../../usdlayer.md) and mutations write through to the layer.
 

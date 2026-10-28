@@ -21,7 +21,7 @@ Deallocates the memory block previously allocated at this buffer pointer’s bas
 func deallocate()
 ```
 
-#### Discussion
+## Discussion
 
 This buffer pointer’s `baseAddress` must be `nil` or a pointer to a memory block previously returned by a Swift allocation method. If `baseAddress` is `nil`, this function does nothing. Otherwise, the memory must not be initialized or `Pointee` must be a trivial type. This buffer pointer’s byte `count` must be equal to the originally allocated size of the memory block.
 

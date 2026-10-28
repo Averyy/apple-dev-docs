@@ -18,7 +18,7 @@ Sent by the action to itself when it has finished running asynchronously.
 - (void) didFinishRunningWithError:(NSDictionary<NSString *,id> *) errorInfo;
 ```
 
-#### Discussion
+## Discussion
 
 An action that overrides [`runAsynchronously(withInput:)`](./runasynchronously%28withinput%29.md) should invoke `didFinishRunningWithError:` on completion, so that Automator can resume running the workflow that the action is part of.
 

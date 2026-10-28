@@ -20,7 +20,7 @@ Maps a 2D point from the view’s coordinate system onto the given plane in 3D s
 @preconcurrency func unproject(_ point: CGPoint, ontoPlane planeTransform: float4x4) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D position in world coordinates, or `nil` if the mapping isn’t possible.
 

@@ -22,7 +22,7 @@ nonisolated
 init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, @ContentBuilder label: () -> Label) where C : RandomAccessCollection
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a single toggle that represents the state of multiple alarms:
 

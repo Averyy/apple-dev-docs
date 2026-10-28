@@ -21,7 +21,7 @@ A message the system sends when the device’s power state changes.
 struct PowerStateDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 After your observer receives this notification, query the [`isLowPowerModeEnabled`](./islowpowermodeenabled.md) property to determine the current power state of the device. If Low Power Mode is active, take appropriate steps to reduce activity in your app. Otherwise, your app can resume normal operations.
 

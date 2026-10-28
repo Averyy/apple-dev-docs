@@ -23,7 +23,7 @@ func send<Content>(_ content: Content, type: Int, lastMessage: Bool = false, @Pr
 
 Available when `ApplicationProtocol` is `TLV`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 

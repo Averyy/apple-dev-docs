@@ -23,7 +23,7 @@ func beginReceivingRemoteControlEvents()
 - (void) beginReceivingRemoteControlEvents;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7.1 and later, use the shared [`MPRemoteCommandCenter`](../../MediaPlayer/mpremotecommandcenter.md) object to register for remote control events. You do not need to call this method when using the shared command center object.
 

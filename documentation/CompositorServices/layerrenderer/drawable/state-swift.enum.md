@@ -20,7 +20,7 @@ enum State
 enum cp_drawable_state : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to determine whether the drawable is ready for you to use. When the drawable is in the [`LayerRenderer.Drawable.State.rendering`](./state-swift.enum/rendering.md)  state, you can begin drawing. Other states indicate the drawable is either busy or not assigned to a frame.
 

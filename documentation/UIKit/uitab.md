@@ -28,7 +28,7 @@ class UITab
 
 - [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Overview
+## Overview
 
 To create a tab, call [`init(title:image:identifier:viewControllerProvider:)`](./uitab/init%28title,image,identifier,viewcontrollerprovider%29.md). In the closure, return the view controller your app presents when someone selects the tab. Then pass an array of tabs to your [`UITabBarController`](./uitabbarcontroller.md) object’s tabs property.
 

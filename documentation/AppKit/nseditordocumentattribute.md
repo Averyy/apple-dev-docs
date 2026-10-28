@@ -15,7 +15,7 @@ The name of person who last edited the document.
 extern NSAttributedStringDocumentAttributeKey NSEditorDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing name of person who last edited the document.
 

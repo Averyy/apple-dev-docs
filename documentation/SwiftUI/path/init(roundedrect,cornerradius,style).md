@@ -21,7 +21,7 @@ Creates a path containing a rounded rectangle.
 init(roundedRect rect: CGRect, cornerRadius: CGFloat, style: RoundedCornerStyle = .continuous)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that creates a path of a rounded rectangle. Using this convenience function is more efficient than creating a path and adding a rounded rectangle to it.
 

@@ -25,7 +25,7 @@ class Scanner
 @interface NSScanner : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`Scanner`](./scanner.md) object interprets and converts the characters of a [`String`](../Swift/string.md) into number and string values. You assign the scanner’s string when you create the scanner, and the scanner progresses through the characters of that string from beginning to end as you request items.
 

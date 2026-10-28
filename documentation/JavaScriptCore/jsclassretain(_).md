@@ -24,7 +24,7 @@ func JSClassRetain(_ jsClass: JSClassRef!) -> JSClassRef!
 JSClassRefJSClassRetain(JSClassRef jsClass);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSClassRef`](./jsclassref.md) that is the same as `jsClass`.
 

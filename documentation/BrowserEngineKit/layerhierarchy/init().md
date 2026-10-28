@@ -20,7 +20,7 @@ init() throws
 + (BELayerHierarchy *) layerHierarchyWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer can fail and throw an error if your extension can’t establish a connection to the rendering server.
 

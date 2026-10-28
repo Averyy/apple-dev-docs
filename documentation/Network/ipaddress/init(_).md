@@ -22,7 +22,7 @@ Initializes an IP address with a string.
 init?(_ string: String)
 ```
 
-#### Discussion
+## Discussion
 
 The provided string will be interpreted as an IPv4 or IPv6 address. If the string cannot be interpreted as an address, the initialization will fail.
 

@@ -20,7 +20,7 @@ A Boolean value that indicates whether the flashing lights processor successfull
 var surfaceProcessed: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`false`](../../../Swift/false.md) if the flashing lights processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
 

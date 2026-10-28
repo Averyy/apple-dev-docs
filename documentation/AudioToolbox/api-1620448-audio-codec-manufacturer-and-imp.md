@@ -5,7 +5,7 @@
 
 Identifiers for audio codec manufacturers and implementation types.
 
-#### Overview
+## Overview
 
 For an example of how to use these constants, see the description for [Hardware Codec Capabilities](./api-1620452-hardware-codec-capabilities.md).
 

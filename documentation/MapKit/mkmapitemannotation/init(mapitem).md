@@ -24,7 +24,7 @@ init?(mapItem: MKMapItem)
 - (instancetype) initWithMapItem:(MKMapItem *) mapItem;
 ```
 
-#### Discussion
+## Discussion
 
 If the map item does not have valid coordinate data, the result will be nil.
 

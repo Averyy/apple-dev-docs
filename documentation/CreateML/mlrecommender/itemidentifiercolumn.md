@@ -15,7 +15,7 @@ The name of the column you selected at initialization to define the item identif
 var itemIdentifierColumn: String
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property doesn’t retrain the model or affect its behavior.
 

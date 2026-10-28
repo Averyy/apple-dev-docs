@@ -24,7 +24,7 @@ static let standard: CIDynamicRangeOption
 extern CIDynamicRangeOption const kCIDynamicRangeStandard;
 ```
 
-#### Discussion
+## Discussion
 
 Images with `contentHeadroom` metadata will be tone mapped to a maximum pixel value of 1.0.
 

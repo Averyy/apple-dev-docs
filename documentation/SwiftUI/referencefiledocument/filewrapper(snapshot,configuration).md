@@ -22,11 +22,11 @@ Serializes a document snapshot to a file wrapper.
 func fileWrapper(snapshot: Self.Snapshot, configuration: Self.WriteConfiguration) throws -> FileWrapper
 ```
 
-#### Return Value
+## Return Value
 
 The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](../../Foundation/filewrapper.md) or an update of the one provided in the `configuration` input.
 
-#### Discussion
+## Discussion
 
 To store a document — for example, in response to a Save command — SwiftUI begins by calling the [`snapshot(contentType:)`](./snapshot%28contenttype%29.md) method to get a copy of the document data in its current state. Then SwiftUI passes that snapshot to this method, where you serialize it and create or modify a file wrapper with the serialized data:
 

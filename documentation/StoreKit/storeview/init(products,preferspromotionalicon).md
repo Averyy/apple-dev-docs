@@ -22,7 +22,7 @@ nonisolated
 init(products: some Collection<Product>, prefersPromotionalIcon: Bool = false) where Icon == EmptyView, PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 By default, the store view doesn’t show promotional images. If you set `prefersPromotionalIcon` to `true`, the store view uses each product’s promotional image as its icon.
 

@@ -24,7 +24,7 @@ func MusicSequenceGetSequenceType(_ inSequence: MusicSequence, _ outType: Unsafe
 extern OSStatus MusicSequenceGetSequenceType(MusicSequence inSequence, MusicSequenceType *outType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

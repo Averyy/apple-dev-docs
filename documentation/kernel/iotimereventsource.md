@@ -15,7 +15,7 @@ Time based event source mechanism.
 class IOTimerEventSource : IOEventSource
 ```
 
-#### Overview
+## Overview
 
 An event source that implements a simple timer. A timeout handler is called once the timeout period expires. This timeout handler will be called by the work-loop that this event source is attached to.
 

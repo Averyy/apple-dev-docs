@@ -16,7 +16,7 @@ Defines a remote procedure call.
 typedef void *(*MPRemoteProcedure)(void *parameter);
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how you would declare the application-defined function if you were to name the function `MyRemoteProcedure`:
 

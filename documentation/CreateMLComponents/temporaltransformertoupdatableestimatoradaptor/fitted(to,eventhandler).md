@@ -20,7 +20,7 @@ Returns the pre-defined transformer.
 func fitted<InputSequence>(to input: InputSequence, eventHandler: EventHandler? = nil) async throws -> Transformer where InputSequence : Sequence, Transformer.Input == InputSequence.Element.Feature, InputSequence.Element : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

@@ -22,7 +22,7 @@ let kCFFTPStatusCodeKey: CFString
 extern CFStringRef const kCFFTPStatusCodeKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error of type `kCFFTPErrorUnexpectedStatusCode` is returned, querying this key returns the last status code sent by the FTP server in response to the previous operation.
 

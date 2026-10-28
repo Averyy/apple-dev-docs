@@ -25,7 +25,7 @@ let kCFBundleNameKey: CFString!
 extern CFStringRef const kCFBundleNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is often found in the `InfoPlist.strings` since it is usually localized.
 

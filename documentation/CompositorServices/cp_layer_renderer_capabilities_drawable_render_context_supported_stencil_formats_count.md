@@ -16,11 +16,11 @@ Returns the number of stencil formats the specified layer supports.
 size_t cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_formats_count(cp_layer_renderer_capabilities_t layer_capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 The number of stencil formats the layer supports.
 
-#### Discussion
+## Discussion
 
 To iterate over the stencil formats, use the [`cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_format`](./cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_format.md) function.
 

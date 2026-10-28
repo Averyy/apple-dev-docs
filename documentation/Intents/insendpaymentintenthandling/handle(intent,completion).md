@@ -28,7 +28,7 @@ func handle(intent: INSendPaymentIntent) async -> INSendPaymentIntentResponse
 - (void) handleSendPayment:(INSendPaymentIntent *) intent completion:(void (^)(INSendPaymentIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must transfer the specified money to the designated payee. The response object you provide should include the transaction details and indicate whether or not the transaction was successful.
 

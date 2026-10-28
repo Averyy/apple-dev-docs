@@ -18,11 +18,11 @@ static func wifiAware(_ action: WASubscriberBrowser.Action, active requestedDura
 
 Available when `Self` is `WASubscriberBrowser`.
 
-#### Return Value
+## Return Value
 
 A new `BrowserProvider` containing the `.wifiAware()` instruction that will configure a `NetworkBrowser` as a Wi-Fi Aware subscriber.
 
-#### Discussion
+## Discussion
 
 Example:
 

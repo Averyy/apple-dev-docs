@@ -21,7 +21,7 @@ Subtracts the second value from the first and stores the difference in the left-
 static func &-= (lhs: inout Self, rhs: Self)
 ```
 
-#### Discussion
+## Discussion
 
 The masking subtraction assignment operator (`&-=`) silently wraps any overflow that occurs during the operation. In the following example, the difference of `10` and `21` is less than zero, the minimum representable `UInt` value, so the result is the result is the partial value after discarding the overflowing bits.
 

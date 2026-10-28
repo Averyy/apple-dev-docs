@@ -21,11 +21,11 @@ Creates and returns a mutable array containing the contents specified by a given
 + (NSMutableArray<id> *) arrayWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable array containing the contents specified by `aURL`. Returns `nil` if the location can’t be opened or if the contents of the location can’t be parsed into a mutable array.
 
-#### Discussion
+## Discussion
 
 The array representation at the location identified by `aURL` must contain only property list objects (`NSString`, `NSData`, `NSDate`, `NSNumber`, `NSArray`, or `NSDictionary` objects). The objects contained by this array are immutable even if the array is mutable.
 

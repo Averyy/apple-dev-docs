@@ -21,7 +21,7 @@ Calculates the negative value of each element in the supplied double-precision v
 static func negative<U, V>(_ vector: U, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the negative values of the elements of an array:
 

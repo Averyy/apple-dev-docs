@@ -32,7 +32,7 @@ var relativeLevelSetting: INRelativeSetting { get }
 @property (atomic, assign, readonly) INRelativeSetting relativeLevelSetting;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the heating, cooling, or massage level to the next or previous setting. The value of this property is [`INRelativeSetting.unknown`](../inrelativesetting/unknown.md) when the user modified the [`level`](./level-5i2i.md) directly.
 

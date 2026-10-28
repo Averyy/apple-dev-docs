@@ -19,7 +19,7 @@ struct CFXMLProcessingInstructionInfo
 typedef struct { ... } CFXMLProcessingInstructionInfo;
 ```
 
-#### Overview
+## Overview
 
 A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters a processing instruction. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain the pointer.
 

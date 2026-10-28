@@ -19,7 +19,7 @@ var contextualActionsInfoView: UIView { get }
 @property (nonatomic, readonly) UIView * contextualActionsInfoView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this view to add additional metadata, information, and artwork as subviews.
 

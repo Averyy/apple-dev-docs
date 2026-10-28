@@ -21,7 +21,7 @@ A type that presents a mathematical set interface to a bit set.
 protocol OptionSet : RawRepresentable, SetAlgebra
 ```
 
-#### Overview
+## Overview
 
 You use the `OptionSet` protocol to represent bitset types, where individual bits represent members of a set. Adopting this protocol in your custom types lets you perform set-related operations such as membership tests, unions, and intersections on those types. What’s more, when implemented using specific criteria, adoption of this protocol requires no extra work on your part.
 
@@ -45,7 +45,7 @@ struct ShippingOptions: OptionSet {
 
 Declare additional preconfigured option set values as static properties initialized with an array literal containing other option values. In the example, because the `express` static property is assigned an array literal with the `nextDay` and `secondDay` options, it will contain those two elements.
 
-### Using an Option Set Type
+## Using an Option Set Type
 
 When you need to create an instance of an option set, assign one of the type’s static members to your variable or constant. Alternatively, to create an option set instance with multiple members, assign an array literal with multiple static members of the option set. To create an empty instance, assign an empty array literal to your variable.
 

@@ -5,7 +5,7 @@
 
 Monitor events for assets, assignments, and users in your organization.
 
-#### Overview
+## Overview
 
 Notifications make it easy to learn about changes to an organization’s assets, assignments, and users. Using notifications is the simplest way to keep track of the latest events for an organization, such as:
 
@@ -57,7 +57,7 @@ The test notification has the following format:
 }
 ```
 
-#### Update asset counts
+## Update asset counts
 
 Update total asset counts upon receiving an `ASSET_COUNT` notification type that the server sends when:
 
@@ -82,7 +82,7 @@ The notifications have the following format:
 
 The `adamId` and `pricingParam` pair represents the [`Asset`](./asset.md) with the count that’s changing, and the `countDelta` represents the change amount. A positive `countDelta` indicates an increase; a negative value indicates a decrease.
 
-#### Update subscription counts
+## Update subscription counts
 
 Update subscription seat counts upon receiving a `SUBSCRIPTION_COUNT` notification type that the server sends when subscription inventory changes — for example, when a content manager purchases additional seats, when seats expire at the end of a billing period, or when renewing seats auto-renew.
 
@@ -114,7 +114,7 @@ The notifications have the following format:
 
 The notification uses a subset of the [`SubscriptionCounts`](./subscriptioncounts.md) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
 
-#### Track assignments
+## Track assignments
 
 Track assignments upon receiving an `ASSET_MANAGEMENT` notification type that the server sends when it associates or disassociates an asset. The body of the notification contains a list of [`Assignment`](./assignment.md) objects.
 
@@ -202,7 +202,7 @@ The assignment notifications for revoke calls have the following format:
 
 ```
 
-#### Track subscription assignments
+## Track subscription assignments
 
 Track subscription assignments upon receiving a `SUBSCRIPTION_MANAGEMENT` notification type that the server sends when it associates or disassociates a subscription. The body of the notification contains a list of [`ResponseSubscriptionAssignment`](./responsesubscriptionassignment.md) objects, each with a `renewing` Boolean value that reflects the renewal state of the seat assigned to that user.
 
@@ -252,7 +252,7 @@ The subscription assignment notifications for disassociations have the following
 
 When you set the `deferred` flag to `true` in a disassociation request, the notification arrives at the end of the current billing period rather than immediately. For more information about renewal state and deferred disassociation, see [Managing subscriptions](./managing-subscriptions.md).
 
-#### Track user events
+## Track user events
 
 Track users upon receiving a `USER_MANAGEMENT` notification type that the server sends when:
 
@@ -331,7 +331,7 @@ The notifications for retiring a user have the following format:
 
 ```
 
-#### Track user associations
+## Track user associations
 
 Track users upon receiving a `USER_ASSOCIATED` notification type that the server sends when a user accepts an invitation.
 

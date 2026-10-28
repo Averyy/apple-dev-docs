@@ -23,7 +23,7 @@ func notify_post(_ name: UnsafePointer<CChar>!) -> UInt32
 extern uint32_t notify_post(const char *name);
 ```
 
-#### Discussion
+## Discussion
 
 Post a notification for a name.
 

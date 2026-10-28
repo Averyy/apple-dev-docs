@@ -19,7 +19,7 @@ func colorize(byMappingGray midPoint: CGFloat, to midPointColor: NSColor?, black
 - (void) colorizeByMappingGray:(CGFloat) midPoint toColor:(NSColor *) midPointColor blackMapping:(NSColor *) shadowColor whiteMapping:(NSColor *) lightColor;
 ```
 
-#### Discussion
+## Discussion
 
 This method maps the receiver such that:
 

@@ -25,7 +25,7 @@ static let constant: SCNMaterial.LightingModel
 extern SCNLightingModel const SCNLightingModelConstant;
 ```
 
-#### Discussion
+## Discussion
 
 This shading model calculates the color of a point on a surface with the following formula:
 

@@ -15,7 +15,7 @@ A string name of the alternative browser engine that your app embeds.
 - **Name**: `BEEmbeddedWebBrowserEngine`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 If your app isn’t a browser app, but embeds an alternative browser engine, add this property to your app’s target in Xcode and set the value to the name of the alternative browser engine.
 

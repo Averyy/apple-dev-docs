@@ -15,7 +15,7 @@ Posted when the selection in the group list is changed.
 static let ABPeoplePickerGroupSelectionDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

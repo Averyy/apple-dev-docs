@@ -21,7 +21,7 @@ Populates a complex single-precision vector with a specified scalar value.
 extern void vDSP_zvfill(const DSPSplitComplex *__A, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group populate a vector with a specified scalar value.
 

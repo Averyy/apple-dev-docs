@@ -21,7 +21,7 @@ Appends a quadratic Bézier curve from the current point, using a control point 
 extern void CGContextAddQuadCurveToPoint(CGContextRef c, CGFloat cpx, CGFloat cpy, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 This function appends a quadratic curve to the current subpath. After adding the segment, the current point is set to the end point of the curve.
 

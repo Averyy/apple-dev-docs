@@ -13,7 +13,7 @@
 kSCSITaskStatus_ACA_ACTIVE = 0x30
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of ACA_ACTIVE. The device server may need the initiator to clear the Auto-Contingent Allegiance condition before it will respond to new commands.
 

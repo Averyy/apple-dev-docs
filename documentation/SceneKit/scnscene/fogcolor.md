@@ -25,7 +25,7 @@ var fogColor: Any { get set }
 @property (nonatomic, retain) id fogColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value can be an [`NSColor`](../../AppKit/nscolor.md) object (in macOS), a [`UIColor`](../../UIKit/uicolor.md) object (in iOS), or a [`CGColor`](../../CoreGraphics/cgcolor.md) object. The default fog color is white.
 

@@ -27,7 +27,7 @@ class UITextInteraction
 
 - [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 Use [`UITextInteraction`](./uitextinteraction.md) to provide your custom text views the same text selection gestures and UI available in native text views like [`UITextView`](./uitextview.md) and [`UITextField`](./uitextfield.md). When creating a text interaction, choose a mode that matches the state of the text, [`UITextInteractionMode.editable`](./uitextinteractionmode/editable.md) or [`UITextInteractionMode.nonEditable`](./uitextinteractionmode/noneditable.md). Then set the [`textInput`](./uitextinteraction/textinput.md) property to an object that conforms to [`UITextInput`](./uitextinput.md), and add the interaction to a view.
 

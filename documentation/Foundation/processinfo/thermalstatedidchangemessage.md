@@ -21,7 +21,7 @@ A message the system sends when the device’s thermal state changes.
 struct ThermalStateDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 To observe this message, access the [`thermalState`](./thermalstate-swift.property.md) property prior to adding your observer.
 

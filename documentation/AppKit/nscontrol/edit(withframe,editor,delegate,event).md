@@ -19,7 +19,7 @@ func edit(withFrame rect: NSRect, editor textObj: NSText, delegate: Any?, event:
 - (void) editWithFrame:(NSRect) rect editor:(NSText *) textObj delegate:(id) delegate event:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 For a receiver that is a control with editable text (such as an [`NSTextField`](../nstextfield.md) object), the field editor is sized to `aRect` and is then activated and editing begins. It’s the responsibility of the delegate to end editing when responding to [`control(_:textShouldEndEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldendediting%29.md). Upon ending the editing session, the delegate should remove any data from the field editor.
 

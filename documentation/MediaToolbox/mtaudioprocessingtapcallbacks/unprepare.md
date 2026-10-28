@@ -24,7 +24,7 @@ var unprepare: MTAudioProcessingTapUnprepareCallback?
 MTAudioProcessingTapUnprepareCallback unprepare;
 ```
 
-#### Discussion
+## Discussion
 
 This field can be `NULL`.
 

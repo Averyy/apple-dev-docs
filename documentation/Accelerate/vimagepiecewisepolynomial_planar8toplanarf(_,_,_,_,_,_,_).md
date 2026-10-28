@@ -25,11 +25,11 @@ func vImagePiecewisePolynomial_Planar8toPlanarF(_ src: UnsafePointer<vImage_Buff
 vImage_Error vImagePiecewisePolynomial_Planar8toPlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const float **coefficients, const float *boundaries, uint32_t order, uint32_t log2segments, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 You can approximate many different correction functions by carefully choosing the polynomials and the ranges of input values they operate on. For example, the sample code project [Applying tone curve adjustments to images](./applying-tone-curve-adjustments-to-images.md) demonstrates how to apply tone curve adjustments to images using polynomial transforms.
 

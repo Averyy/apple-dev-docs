@@ -25,7 +25,7 @@ class MLParameterKey
 @interface MLParameterKey : MLKey
 ```
 
-#### Overview
+## Overview
 
 Use an [`MLParameterKey`](./mlparameterkey.md) to retrieve a model’s parameter value using:
 
@@ -35,7 +35,7 @@ Use an [`MLParameterKey`](./mlparameterkey.md) to retrieve a model’s parameter
 
 > **Note**:  To access the parameter of a specific model within a pipeline model, use the parameter key’s [`scoped(to:)`](./mlparameterkey/scoped%28to%29.md) method with the model’s name.
 
-##### Overriding model and layer parameters
+### Overriding model and layer parameters
 
 To override a model’s default parameter values:
 
@@ -43,7 +43,7 @@ To override a model’s default parameter values:
 2. Use an [`MLParameterKey`](./mlparameterkey.md) for each parameter to set its value in the model configuration’s [`parameters`](./mlmodelconfiguration/parameters.md) dictionary.
 3. Create a new model instance using [`init(contentsOf:configuration:)`](./mlmodel/init%28contentsof,configuration%29.md) with your custom model configuration.
 
-##### Configuring update parameters
+### Configuring update parameters
 
 To configure the update parameters for an [`MLUpdateTask`](./mlupdatetask.md):
 

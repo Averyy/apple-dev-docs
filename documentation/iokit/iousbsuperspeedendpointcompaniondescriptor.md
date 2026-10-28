@@ -16,7 +16,7 @@ typedef struct IOUSBSuperSpeedEndpointCompanionDescriptor {
 } IOUSBSuperSpeedEndpointCompanionDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Descriptor for a SuperSpeed USB Endpoint Companion. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

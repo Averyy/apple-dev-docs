@@ -20,11 +20,11 @@ nonisolated
 func onHover(perform action: @escaping (Bool) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` when the pointer enters or exits this view’s frame.
 
-#### Discussion
+## Discussion
 
 Calling this method defines a region for detecting pointer movement with the size and position of this view.
 

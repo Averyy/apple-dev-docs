@@ -20,7 +20,7 @@ const ColorScheme: Readonly<{
 type ColorScheme = (typeof ColorScheme)[keyof typeof ColorScheme];
 ```
 
-#### Overview
+## Overview
 
 Color schemes apply to maps that have a [`Standard`](./maptype/standard.md) or [`MutedStandard`](./maptype/mutedstandard.md) map type. Use these constants with the map’s [`colorScheme`](./map/colorscheme.md) property.
 

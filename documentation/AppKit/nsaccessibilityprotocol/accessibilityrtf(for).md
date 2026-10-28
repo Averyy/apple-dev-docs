@@ -20,7 +20,7 @@ func accessibilityRTF(for range: NSRange) -> Data?
 - (NSData *) accessibilityRTFForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing an RTF representation of the specified characters.
 

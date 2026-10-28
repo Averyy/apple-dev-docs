@@ -20,7 +20,7 @@ Returns the minimum score for the steadiness of the user’s gait based on the p
 extern HKQuantity *HKAppleWalkingSteadinessMinimumQuantityForClassification(HKAppleWalkingSteadinessClassification classification);
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to look up the minimum Walking Steadiness value for a given classification. It returns an [`HKQuantity`](./hkquantity.md) instance that contains a percentage value between `0.0` and `1.0`.
 

@@ -18,7 +18,7 @@ The pixel formats of the color attachments in the render pass the renderer encod
 var colorAttachmentPixelFormats: [MTLPixelFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use these formats when compiling your own `MTLRenderPipelineState` objects for draw calls issued inside the `render(using:_:)` callback.
 

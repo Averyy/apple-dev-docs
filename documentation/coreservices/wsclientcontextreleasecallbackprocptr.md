@@ -15,11 +15,11 @@ This is the callback that releases the information.
 typedef void (*WSClientContextReleaseCallBackProcPtr)(void *info);
 ```
 
-#### Discussion
+## Discussion
 
 If your callback is named MyInfoReleaseCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 Your callback is passed a  a pointer to private data for you to release.
 

@@ -15,11 +15,11 @@ Get the "type number" of the filesystem to which a vnode belongs.
 int vnode_vfstypenum(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The type number of the fileystem to which the vnode belongs.
 
-#### Discussion
+## Discussion
 
 This is an archaic construct; most filesystems are assigned a type number based on the order in which they are registered with the system.
 

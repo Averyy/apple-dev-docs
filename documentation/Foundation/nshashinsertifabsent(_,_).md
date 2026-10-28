@@ -25,11 +25,11 @@ func NSHashInsertIfAbsent(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeRawP
 extern void *NSHashInsertIfAbsent(NSHashTable *table, const void *pointer);
 ```
 
-#### Return Value
+## Return Value
 
 If `pointer` matches an item already in `table`, returns the preexisting pointer; otherwise, `pointer` is added to the `table` and returns `NULL`.
 
-#### Discussion
+## Discussion
 
 You must not specify `NULL` for `pointer`.
 

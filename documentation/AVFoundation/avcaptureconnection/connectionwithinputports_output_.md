@@ -20,11 +20,11 @@ Returns a capture connection that represents a connection between multiple input
 + (instancetype) connectionWithInputPorts:(NSArray<AVCaptureInputPort *> *) ports output:(AVCaptureOutput *) output;
 ```
 
-#### Return Value
+## Return Value
 
 A capture connection that represents a connection between `ports` and `output`.
 
-#### Discussion
+## Discussion
 
 You can add the connection this method returns to an [`AVCaptureSession`](../avcapturesession.md) instance with the [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 

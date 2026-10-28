@@ -20,7 +20,7 @@ A flag that provides a hint to the decompression session and video decoder not t
 kVTDecodeFrame_DoNotOutputFrame
 ```
 
-#### Discussion
+## Discussion
 
 This flag indicates to return NULL for this frame instead of a [`CVImageBuffer`](../../CoreVideo/cvimagebuffer.md).
 

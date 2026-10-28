@@ -17,7 +17,7 @@ The style for the stack view.
 enum Style
 ```
 
-#### Overview
+## Overview
 
 - plain: A normal stack view.
 - separated: Creates separators between arranges subview.

@@ -25,11 +25,11 @@ convenience init(imageNamed name: String, normalMapped generateNormalMap: Bool)
 + (instancetype) spriteNodeWithImageNamed:(NSString *) name normalMapped:(BOOL) generateNormalMap;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 
-#### Discussion
+## Discussion
 
 The normal map is used only when lighting is enabled in the scene. For more information, see [`SKSpriteNode`](../skspritenode.md) and [`SKLightNode`](../sklightnode.md).
 

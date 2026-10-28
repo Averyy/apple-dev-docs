@@ -19,7 +19,7 @@ var readBuffersAvailableByteCount: Int { get }
 @property (readonly) NSUInteger readBuffersAvailableByteCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is initially equal to [`readBuffersByteCount`](./readbuffersbytecount.md). This value decreases as you read memory from the read buffers.
 

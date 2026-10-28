@@ -11,7 +11,7 @@ Gets the state of the queue object.
 virtual UInt32 getState() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current state of the queue object.
 

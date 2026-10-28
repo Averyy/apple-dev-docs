@@ -19,7 +19,7 @@ func setPolicies(_ policies: Any!)
 - (void) setPolicies:(id) policies;
 ```
 
-#### Discussion
+## Discussion
 
 The [`SFChooseIdentityPanel`](../sfchooseidentitypanel.md) class evaluates trust for the certificates it displays. Applications typically display certificates in the context of a specific use, such as SSL or S/MIME. You should set only the policy references that apply to your intended use. See [Certificate, Key, and Trust Services](../../Security/certificate-key-and-trust-services.md) for a list of policies and object identifiers provided by the [AppleX509TP Module](https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CDSA/CDSA.html#//apple_ref/doc/uid/TP40011172-CH4-CHDEEDBE).
 

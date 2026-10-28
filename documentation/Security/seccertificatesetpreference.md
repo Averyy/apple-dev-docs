@@ -15,15 +15,15 @@ Sets the preferred certificate for a specified name, key use, and date.
 OSStatus SecCertificateSetPreference(SecCertificateRef certificate, CFStringRef name, uint32 keyUsage, CFDateRef date);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is typically used to set the preferred encryption certificate for an email recipient, either manually (when encrypting email to a recipient) or automatically upon receipt of encrypted email.
 
-##### Special Considerations
+### Special Considerations
 
 Use [`SecCertificateSetPreferred(_:_:_:)`](./seccertificatesetpreferred%28_,_,_%29.md) for new development instead.
 

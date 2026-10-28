@@ -10,13 +10,13 @@ Install and run GUI Linux in a virtual machine using the Virtualization framewor
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to install and run GUI Linux virtual machines (VMs) on a Mac.
 
 The Xcode project includes a single target, `GUILinuxVirtualMachineSampleApp`, which is a macOS app that installs a Linux distribution from an ISO image into a VM, and subsequently runs the installed Linux VM.
 
-##### Download a Linux installation image
+### Download a Linux installation image
 
 Before you run the sample program, you need to download an ISO installation image from a Linux distribution website. Some common Linux distributions include:
 
@@ -28,7 +28,7 @@ Before you run the sample program, you need to download an ISO installation imag
 
 > **Note**: If you need to run Intel Linux binaries in ARM Linux on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [Running Intel Binaries in Linux VMs with Rosetta](./running-intel-binaries-in-linux-vms.md).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 > **Note**: The default deployment target is macOS14, if you need to build for a different version of macOS you’ll need to change the deployment target as appropriate.
 
@@ -48,7 +48,7 @@ Before you run the sample program, you need to download an ISO installation imag
 
    Subsequent launches of GUILinuxVirtualMachineSampleApp run the installed Linux VM. To reinstall the VM, delete the `GUI Linux VM.bundle` package and run the app again.
 
-##### Install GUI Linux from an ISO image
+### Install GUI Linux from an ISO image
 
 The sample app configures a `VZDiskImageStorageDeviceAttachment` object with the downloaded ISO image attached, and creates a `VZUSBMassStorageDeviceConfiguration` with it to emulate a USB thumb drive that’s plugged in to the VM.
 
@@ -62,7 +62,7 @@ private func createUSBMassStorageDeviceConfiguration() -> VZUSBMassStorageDevice
 }
 ```
 
-##### Set up the VM
+### Set up the VM
 
 The sample app uses a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object to configure the basic characteristics of the VM, such as the CPU count, memory size, various device configurations, and a [`VZEFIBootLoader`](./vzefibootloader.md) to load the Linux operating system into the VM.
 
@@ -111,7 +111,7 @@ try! virtualMachineConfiguration.validate()
 virtualMachine = VZVirtualMachine(configuration: virtualMachineConfiguration)
 ```
 
-##### Enable copy-and-paste support between the host and the guest
+### Enable copy-and-paste support between the host and the guest
 
 In macOS 13 and later, the Virtualization framework supports copy-and-paste of text and images between the Mac host and Linux guests through the SPICE agent clipboard-sharing capability. The example below shows the steps for configuring [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md) and [`VZSpiceAgentPortAttachment`](./vzspiceagentportattachment.md) to enable this capability:
 
@@ -130,7 +130,7 @@ private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDevi
 
 > ❗ **Important**: To use the copy-and-paste capability in Linux, the user needs to install the `spice-vdagent` package, which is available through most Linux package managers. Developers need to communicate this requirement to users of their apps.
 
-##### Start the VM
+### Start the VM
 
 After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](./vzvirtualmachine.md) object to start the execution of the Linux guest operating system.
 

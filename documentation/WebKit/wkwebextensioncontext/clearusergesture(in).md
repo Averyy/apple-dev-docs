@@ -23,7 +23,7 @@ func clearUserGesture(in tab: any WKWebExtensionTab)
 - (void) clearUserGestureInTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 When a user gesture is no longer relevant in a tab, this method should be called to update the extension context.
 

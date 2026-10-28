@@ -21,7 +21,7 @@ A type that specifies the abbreviated day period for when the locale prefers usi
 static let abbreviated: Date.FormatStyle.Symbol.Hour.AMPMStyle
 ```
 
-#### Discussion
+## Discussion
 
 This type represents the hour period in an abbreviated format where appropriate. For example, when used with `defaultDigits`, this style may represent 8 a.m. as  `8`, or `8 AM`, and 1 p.m. as `13`, or `1 PM`. With `twoDigits`, this style produces `08` or `08 AM`, and `13`, `01 PM`, respectively.
 

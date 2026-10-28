@@ -5,7 +5,7 @@
 
 Learn about new features that require iOS 26, iPadOS 26, and macOS 26.
 
-#### Overview
+## Overview
 
 This feature was added for the latest Apple News Format release:
 
@@ -16,7 +16,7 @@ These features were added in a previous Apple News Format release:
 - You can embed a Facebook reel in your article using the `URL` property in the [`FacebookPost`](../AppleNewsFormat/facebookpost.md) object.
 - In the [`Condition`](../AppleNewsFormat/condition.md) object, use `following` to indicate whether the person viewing the article is following the channel that published the article.
 
-##### Deprecated Objects and Properties
+### Deprecated Objects and Properties
 
 This property was deprecated in the latest Apple News Format release:
 

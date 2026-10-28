@@ -22,7 +22,7 @@ case unknown
 SKANErrorUnknown
 ```
 
-#### Discussion
+## Discussion
 
 If this error appears, continue processing the ad; an ad impression may succeed despite this error.
 

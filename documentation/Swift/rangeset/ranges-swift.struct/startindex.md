@@ -23,7 +23,7 @@ var startIndex: RangeSet<Bound>.Ranges.Index { get }
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

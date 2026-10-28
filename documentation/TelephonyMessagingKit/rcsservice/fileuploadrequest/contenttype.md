@@ -15,7 +15,7 @@ The content type of the file.
 var contentType: UTType?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set this property, the framework infers a content type from the URL.
 

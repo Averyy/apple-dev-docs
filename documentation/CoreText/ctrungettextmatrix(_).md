@@ -25,11 +25,11 @@ func CTRunGetTextMatrix(_ run: CTRun) -> CGAffineTransform
 extern CGAffineTransform CTRunGetTextMatrix(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) structure.
 
-#### Discussion
+## Discussion
 
 To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) returned by this function should be set to the current text position.
 

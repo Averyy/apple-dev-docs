@@ -21,7 +21,7 @@ func notificationOccurred(_ notificationType: UINotificationFeedbackGenerator.Fe
 - (void) notificationOccurred:(UINotificationFeedbackType) notificationType;
 ```
 
-#### Discussion
+## Discussion
 
 This method tells the generator that a task or action has succeeded, failed, or produced a warning. In response, the generator may play the appropriate haptics, based on the provided [`UINotificationFeedbackGenerator.FeedbackType`](./feedbacktype.md) value.
 

@@ -16,7 +16,7 @@ Defines an opaque data type representing an index-based document iterator.
 class SKIndexDocumentIterator
 ```
 
-#### Overview
+## Overview
 
 A Search Kit document iterator lets your application loop through all the document URL objects owned by a given parent document URL object. To create an iterator, use [`SKIndexDocumentIteratorCreate(_:_:)`](./api-1446189-skindexdocumentiteratorcreate.md). To get a copy of the next document in the set owned by the iterator, use [`SKIndexDocumentIteratorCopyNext(_:)`](./api-1442212-skindexdocumentiteratorcopynext.md).
 

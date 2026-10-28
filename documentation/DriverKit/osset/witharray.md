@@ -18,11 +18,11 @@ Creates and initializes an OSSet populated with the contents of an OSArray.
 static OSSetPtr withArray(const OSArray *array, uint32_t capacity);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSSet containing the objects of `array`, with a retain count of 1; `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 Each distinct object in `array` is added to the new set.
 

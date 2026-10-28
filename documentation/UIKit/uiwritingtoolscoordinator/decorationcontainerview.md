@@ -22,7 +22,7 @@ weak var decorationContainerView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * decorationContainerView;
 ```
 
-#### Discussion
+## Discussion
 
 Writing Tools uses the view in this property to host proofreading marks and other visual elements that show any suggested changes. Set this property to a subview situated visibly below the text in your custom text view. It’s also satisfactory to place this view visually in front of the text. Make sure the size of the view is big enough to cover all of the affected text. If you don’t assign a value to this property, the coordinator uses the object in its [`view`](../uiinteraction/view.md) property to host any visual elements.
 

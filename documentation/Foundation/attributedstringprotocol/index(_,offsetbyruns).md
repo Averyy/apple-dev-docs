@@ -21,7 +21,7 @@ Returns the position of the run offset a given number of runs from a given strin
 func index(_ i: AttributedString.Index, offsetByRuns distance: Int) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the run offset `distance` runs from position `i`.
 

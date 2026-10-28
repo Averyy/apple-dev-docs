@@ -5,7 +5,7 @@
 
 Install simulators to use for web development.
 
-#### Overview
+## Overview
 
 iOS, iPadOS, and (on a Mac with Apple silicon) visionOS simulators are available in macOS as part of Xcode, which is free in the Mac App Store.
 

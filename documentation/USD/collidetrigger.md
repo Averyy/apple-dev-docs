@@ -4,13 +4,13 @@
 
 A trigger that activates when specified objects collide.
 
-#### Overview
+## Overview
 
 The runtime fires this trigger when any of the prims in the list of [affectedObjects](./affectedobjects.md) collide with any of the prims in [colliders](./colliders.md).
 
 If all objects can collide with each other, define [affectedObjects](./affectedobjects.md) and [colliders](./colliders.md) as the same list.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Trigger "CollideTrigger"

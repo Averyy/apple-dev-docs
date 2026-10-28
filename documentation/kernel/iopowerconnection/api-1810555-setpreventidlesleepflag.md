@@ -12,7 +12,7 @@ void setPreventIdleSleepFlag (
  unsigned long );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent.
 

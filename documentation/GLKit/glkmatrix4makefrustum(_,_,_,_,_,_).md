@@ -22,11 +22,11 @@ func GLKMatrix4MakeFrustum(_ left: Float, _ right: Float, _ bottom: Float, _ top
 static GLKMatrix4 GLKMatrix4MakeFrustum(float left, float right, float bottom, float top, float nearZ, float farZ);
 ```
 
-#### Return Value
+## Return Value
 
 A projection matrix.
 
-#### Discussion
+## Discussion
 
 This function creates the same orthographic projection matrix previously provided in OpenGL ES 1.1 by the `glFrustum` function.
 

@@ -21,11 +21,11 @@ Loads training examples from a data frame containing annotations.
 func loadRangedAnnotations<Annotation>(parameters: DataFrameTemporalAnnotationParameters<Annotation> = .init(), continueOnFailure: Bool = false) throws -> [AnnotatedFeature<TemporalFileSegment, Annotation>] where Annotation : Equatable, Annotation : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 A list of annotated features containing `URLRange<Double>` as feature and `Annotation` as annotation.
 
-#### Discussion
+## Discussion
 
 The exact column ids within the data frame which contains the file path, annotation, startTime and endTime of each temporal annotation, can be customized using the `parameters` argument.
 

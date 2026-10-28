@@ -34,7 +34,7 @@ class func delete(with identifiers: [String]) async throws
 - [Deleting Donated Shortcuts](../../SiriKit/deleting-donated-shortcuts.md)
 - [Improving Siri Media Interactions and App Selection](../../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Discussion
+## Discussion
 
 Call this method to delete a specific set of donated Siri interactions. Typically, you delete interactions when they are no longer relevant. If you provide a block in the `completion` parameter, the system executes your block asynchronously with the results.
 

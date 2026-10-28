@@ -5,7 +5,7 @@
 
 Review your app’s data design and update it to conform with 64-bit architecture.
 
-#### Overview
+## Overview
 
 When you move your app to a 64-bit architecture, revisit the structures in your code. Examine C structures that have 32-bit representations. The 64-bit runtime aligns the contents of structures differently, so you need to pay particular attention to structures that store data to a file or transmit it across a network. These structures could be utilized by devices with architectures of different sizes.
 
@@ -13,7 +13,7 @@ Code that doesn’t use explicitly sized types can cause problems for other deve
 
 Inconsistency between type declarations in a function and their use in code causes inconsistent behaviors at runtime. You need to ensure that data you pass to functions or capture as a return value are the same type as the declared parameter type.
 
-##### Align 64-bit integer types
+### Align 64-bit integer types
 
 As a result of the increased size of the 64-bit architecture, the alignment of all 64-bit integer types in the runtime changes from 4 bytes to 8 bytes. Even if you specify each integer type explicitly, the two structures may still not be identical in both runtimes. This is important to know if you have data that was created by the 32-bit version of your app that you need to read in the 64-bit version.
 
@@ -47,7 +47,7 @@ struct bar {
 
 Use this option sparingly because there’s a performance penalty for misaligned accesses. You might use this option, for example, to maintain backward compatibility with data structures that were deployed in the 32-bit version of your app.
 
-##### Use explicit integer data types
+### Use explicit integer data types
 
 The C99 standard provides built-in data types that are guaranteed to be a specific size, regardless of the underlying hardware architecture. The following table lists the C99 types and defined ranges of values for each.
 
@@ -65,7 +65,7 @@ Avoid types such as `short`, `int`, or `unsigned int`. Instead, use types that a
 
 Choosing a fixed-width type also avoids allocating a variable whose range is much larger than you need, and saves memory.
 
-##### Keep data types consistent
+### Keep data types consistent
 
 Inconsistent use of data types in your code can truncate results of computation and provide incorrect results. Even though the compiler warns you of many problems that result from inconsistent data types, it’s also useful to see a few variations of these patterns so that you can recognize them in your code.
 
@@ -102,11 +102,11 @@ int ReturnMax()
 
 All of these examples result from code that assumes that `int` and `long` are identical. The ANSI C standard doesn’t make this assumption, and it’s explicitly incorrect when working in the 64-bit runtime. By default, if you modernized your project as described in [Updating your app from 32-bit to 64-bit architecture](./updating-your-app-from-32-bit-to-64-bit-architecture.md), the `-Wshorten-64-to-32` compiler option was automatically enabled, so the compiler automatically warns you about many cases where a value is truncated. If you didn’t modernize your project, you should explicitly enable that compiler option. Optionally, you may want to include the `-Wconversion` option, which is more verbose, but finds more potential errors.
 
-##### Choose an appropriate data type for enumerated values
+### Choose an appropriate data type for enumerated values
 
 In the LLVM compiler, enumerated types can define the size of the enumeration, so some enumerated types may be larger than you expect. The solution, as in all other cases, is to make no assumptions about a data type’s size. Instead, assign any enumerated values to a variable with the proper data type.
 
-##### Look for common type-conversion problems
+### Look for common type-conversion problems
 
 The `NSInteger` type is used throughout the system for declaring numeric types. It’s a 32-bit integer in the 32-bit runtime and a 64-bit integer in the 64-bit runtime. Never make the assumption that an `NSInteger` type is the same size as an `int` type. Here are a few cases in your code to look for:
 

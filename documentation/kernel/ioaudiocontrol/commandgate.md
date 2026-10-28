@@ -9,7 +9,7 @@
 IOCommandGate *commandGate;
 ```
 
-#### Overview
+## Overview
 
 The IOCommandGate for this control - attached to the driver's IOWorkLoop.
 

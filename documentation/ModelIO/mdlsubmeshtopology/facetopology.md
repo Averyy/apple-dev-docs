@@ -24,7 +24,7 @@ var faceTopology: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> faceTopology;
 ```
 
-#### Discussion
+## Discussion
 
 This buffer contains 8-bit unsigned integer values, where each entry corresponds to the number of vertices making up a face. For example, a submesh containing two triangles, a quad, and a line would contain the data `3 3 4 2`. If the submesh’s [`geometryType`](../mdlsubmesh/geometrytype.md) property identifies a fixed type (such as [`MDLGeometryType.triangles`](../mdlgeometrytype/triangles.md)), this buffer is optional. In this case, Model I/O automatically creates the buffer upon the first attempt to read this property.
 

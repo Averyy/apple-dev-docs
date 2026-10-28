@@ -25,7 +25,7 @@ static var noData: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 No message was available to be received by the requested operation.
 

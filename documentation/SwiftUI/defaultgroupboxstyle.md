@@ -20,7 +20,7 @@ nonisolated
 struct DefaultGroupBoxStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./groupboxstyle/automatic.md) to construct this style.
 

@@ -19,7 +19,7 @@ case actions
 TVTopShelfCarouselContentStyleActions
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you want the user to focus on the play and display action buttons. This style minimizes other information or does not display it at all.
 

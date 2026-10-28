@@ -9,7 +9,7 @@ Query ad groups using filters, sorting, and pagination.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries ad groups using a standard `QueryRequest` body. Filter by `campaignId` to scope results to a specific campaign. An empty request body returns all non-deleted ad groups across all campaigns in the ad account with default pagination.
 
@@ -17,7 +17,7 @@ Each result in the response includes the full `targeting` and `bidStrategy` nest
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -31,13 +31,13 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Campaign**:
 
 Query all ad groups for a specific campaign, sorted by creation time descending.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups/query
@@ -64,7 +64,7 @@ POST /v1/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -119,7 +119,7 @@ POST /v1/adgroups/query
 
 Return only enabled ad groups for a specific campaign.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups/query
@@ -145,7 +145,7 @@ POST /v1/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -232,7 +232,7 @@ POST /v1/adgroups/query
 
 Retrieve soft-deleted ad groups for a campaign to confirm deletion or audit history.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups/query
@@ -258,7 +258,7 @@ POST /v1/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

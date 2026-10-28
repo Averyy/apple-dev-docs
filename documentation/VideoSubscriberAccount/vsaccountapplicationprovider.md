@@ -24,7 +24,7 @@ class VSAccountApplicationProvider
 @interface VSAccountApplicationProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `VSAccountApplicationProvider` object represents an app account provider to be added to the list of already available system TV providers in your app.
 

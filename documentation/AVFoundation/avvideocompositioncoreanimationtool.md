@@ -24,7 +24,7 @@ class AVVideoCompositionCoreAnimationTool
 @interface AVVideoCompositionCoreAnimationTool : NSObject
 ```
 
-#### Overview
+## Overview
 
 Any animations will be interpreted on the video’s timeline, not real-time, so you should:
 

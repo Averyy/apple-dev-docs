@@ -21,7 +21,7 @@ A type of button that people use to restore purchases.
 static var restorePurchases: StoreButtonKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This button type is available for [`StoreView`](../storeview.md) and [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 

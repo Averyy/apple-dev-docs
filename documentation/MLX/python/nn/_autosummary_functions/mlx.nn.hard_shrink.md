@@ -6,8 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.hard_shrink
 
-**class hard_shrink(*x*, *lambd=0.5*)**
-: Applies the HardShrink activation function.
+```python
+class hard_shrink(x, lambd=0.5)
+```
+
+Applies the HardShrink activation function.
 
 \[\begin{split}\text{hardshrink}(x) = \begin{cases}
 x & \text{if } x > \lambda \\

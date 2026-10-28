@@ -21,7 +21,7 @@ Accesses the data that a block buffer represents.
 func withUnsafeMutableBytes<R>(atOffset offset: Int = 0, _ body: (UnsafeMutableRawBufferPointer) throws -> R) throws -> R
 ```
 
-#### Return Value
+## Return Value
 
 The value, if any, that the body parameter returns
 

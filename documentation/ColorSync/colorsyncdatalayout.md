@@ -25,7 +25,7 @@ typealias ColorSyncDataLayout = UInt32
 typedef uint32_t ColorSyncDataLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Combine a [`ColorSyncAlphaInfo`](./colorsyncalphainfo.md) value (within [`kColorSyncAlphaInfoMask`](./kcolorsyncalphainfomask.md)) with a byte-order value (within [`kColorSyncByteOrderMask`](./kcolorsyncbyteordermask.md)) to describe how color components are packed.
 

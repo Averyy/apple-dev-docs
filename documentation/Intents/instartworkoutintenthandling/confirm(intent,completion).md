@@ -27,7 +27,7 @@ optional func confirm(intent: INStartWorkoutIntent) async -> INStartWorkoutInten
 - (void) confirmStartWorkout:(INStartWorkoutIntent *) intent completion:(void (^)(INStartWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is able to start the workout. For example, checking that a workout isn’t already in progress or that data you need for the workout is available.
 

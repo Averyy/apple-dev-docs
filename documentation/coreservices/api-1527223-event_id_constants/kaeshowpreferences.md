@@ -14,7 +14,7 @@
 kAEShowPreferences = 'pref'
 ```
 
-#### Discussion
+## Discussion
 
 Event sent by the macOS to a process when the user chooses the Preferences item for that process.
 

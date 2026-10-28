@@ -22,7 +22,7 @@ var isOn: Bool { get set }
 @property (nonatomic, getter=isOn) BOOL on;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows you to retrieve and set (without animation) a value determining whether the [`UISwitch`](../uiswitch.md) object is on or off.
 

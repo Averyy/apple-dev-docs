@@ -5,7 +5,7 @@
 
 Constants that indicate the color primaries gamut for the image buffer.
 
-#### Overview
+## Overview
 
 Use the [`kCVImageBufferColorPrimariesKey`](./kcvimagebuffercolorprimarieskey.md) key to attach one of these values to the image buffer. The color primaries gamut describes the rendering intent of an image, for use in color matching operations, along with a transfer function (See [Image Buffer Transfer Function Constants](./image-buffer-transfer-function-constants.md) for more information.).
 

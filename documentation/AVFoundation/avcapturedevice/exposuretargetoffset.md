@@ -22,7 +22,7 @@ var exposureTargetOffset: Float { get }
 @property (nonatomic, readonly) float exposureTargetOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value of property indicates the difference between the metered exposure level of the current scene and the target exposure value.
 

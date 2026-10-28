@@ -15,7 +15,7 @@ Sends an audio frame to all connected receivers.
 func send(audioBuffer: CMSampleBuffer) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails while sending the audio data, for example, if the audio sample buffer has an invalid format or data.
 

@@ -21,7 +21,7 @@ The UV index is low.
 case low
 ```
 
-#### Discussion
+## Discussion
 
 The valid values of this property are 0, 1, and 2.
 

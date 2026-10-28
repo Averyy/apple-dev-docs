@@ -17,7 +17,7 @@ Filter that will accept all values.
 static let filterAll: @Sendable (Module, String, ModuleItem) -> Bool
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 

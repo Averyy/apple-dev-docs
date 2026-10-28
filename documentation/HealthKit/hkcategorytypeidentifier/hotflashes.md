@@ -24,7 +24,7 @@ static let hotFlashes: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHotFlashes;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

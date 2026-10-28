@@ -19,7 +19,7 @@ init(name fontName: String, size: CGFloat)
 + (NSFontDescriptor *) fontDescriptorWithName:(NSString *) fontName size:(CGFloat) size;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

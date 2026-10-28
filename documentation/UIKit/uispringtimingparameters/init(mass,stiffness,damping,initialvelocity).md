@@ -23,11 +23,11 @@ init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity veloci
 - (instancetype) initWithMass:(CGFloat) mass stiffness:(CGFloat) stiffness damping:(CGFloat) damping initialVelocity:(CGVector) velocity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized spring timing parameters object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The damping ratio for the spring is computed from the formula `damping` / (2 * sqrt (`stiffness` * `mass`)).
 

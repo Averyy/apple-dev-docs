@@ -21,11 +21,11 @@ Returns a decimal number raised to a given power.
 func pow(_ x: Decimal, _ y: Int) -> Decimal
 ```
 
-#### Return Value
+## Return Value
 
 The result of raising `x` to the power of `y`.
 
-#### Discussion
+## Discussion
 
 If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](./nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalPower(_:_:_:_:)`](./nsdecimalpower%28_,_,_,_%29.md) function instead.
 

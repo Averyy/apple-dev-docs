@@ -23,7 +23,7 @@ func didDeactivate()
 
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method as part of the cleanup process for the interface controller. Use this method to invalidate timers or save any app-related state information that has not already been saved. Any tasks you perform using this method should finish quickly. An inactive interface controller may be reactivated later or it may be deallocated.
 

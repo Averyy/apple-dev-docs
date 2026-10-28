@@ -25,7 +25,7 @@ class let argumentDomain: String
 extern NSString * const NSArgumentDomain;
 ```
 
-#### Discussion
+## Discussion
 
 When someone launches your app from Xcode or the command-line, they can override setting values using command-line arguments. The defaults system stores those overrides in this domain, which is volatile and resets with each app launch. Values in this domain override most other domains, including your app-specific settings.
 

@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_FieldCount: CFString
 extern CFStringRef const kVTCompressionPropertyKey_FieldCount;
 ```
 
-#### Discussion
+## Discussion
 
 The field count is set on the format description for output samples, and may affect source frame scaling. `NULL` is a valid value for this property.
 

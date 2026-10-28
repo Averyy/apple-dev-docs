@@ -21,11 +21,11 @@ func CGDisplayAvailableModes(_ dsp: CGDirectDisplayID) -> CFArray?
 extern CFArrayRefCGDisplayAvailableModes(CGDirectDisplayID dsp);
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries with display mode information, or `NULL` if the display is invalid. The array is owned by the system and you should not release it. Each dictionary in the array contains information about a mode that the display supports. For a list of the properties in a display mode dictionary, see [Display Mode Standard Properties](./display-mode-standard-properties.md) and [Display Mode Optional Properties](./display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
-#### Discussion
+## Discussion
 
 This deprecated function returns an array of display mode dictionary. Starting in OS X v10.6, display mode dictionaries have been replaced by the `CGDisplayMode` opaque type. Whereas display mode dictionaries returned by `CGDisplayAvailableModes` are owned by the system and are not to be released, display mode opaque type references returned by `CGDisplayCopyAllDisplayModes` are owned by the caller and you must release them.
 

@@ -20,7 +20,7 @@ var wantsHDREnvironmentTextures: Bool { get set }
 @property (nonatomic, assign) BOOL wantsHDREnvironmentTextures;
 ```
 
-#### Discussion
+## Discussion
 
 If you set [`environmentTexturing`](./environmenttexturing-swift.property.md) to `.automatic` in iOS 12 or later, ARKit gives you environment textures you cast on your app’s virtual content to create realistic reflections. By default, the framework sets [`wantsHDREnvironmentTextures`](./wantshdrenvironmenttextures.md) to [`true`](../../Swift/true.md). When your renderer supports HDR environment textures in iOS 13, it enables your lighting engine to output more colors, with a more realistic result.
 

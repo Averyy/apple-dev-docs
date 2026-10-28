@@ -20,7 +20,7 @@ Defines a force effect’s system, and type specific properties.
 struct ForceEffect<ForceEffectType> where ForceEffectType : ForceEffectProtocol
 ```
 
-#### Overview
+## Overview
 
 This struct wraps your custom force effect that conforms to [`ForceEffectProtocol`](./forceeffectprotocol.md) and provides properties that are common to all force effects.
 

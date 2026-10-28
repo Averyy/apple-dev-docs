@@ -15,7 +15,7 @@ The data that describes the Game Center leaderboard sets of the Game Center lead
 object GameCenterLeaderboardV2.Relationships.GameCenterLeaderboardSets
 ```
 
-#### Overview
+## Overview
 
 - data:
 - meta:

@@ -16,7 +16,7 @@ The shipping contact selected by the user for this transaction.
 ApplePayPaymentContact shippingContact;
 ```
 
-#### Discussion
+## Discussion
 
 The shipping contact information is populated if it is requested in [`ApplePayPaymentRequest`](../applepaypaymentrequest.md). See [`ApplePayPaymentContact`](../applepaypaymentcontact.md) for the fields in [`shippingContact`](./shippingcontact.md).
 

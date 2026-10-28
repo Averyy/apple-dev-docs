@@ -19,7 +19,7 @@ enum SymbolScale
 enum NSImageSymbolScale : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Specify a different scale variant for a symbol to change the emphasis of the symbol relative to its adjacent text. The default symbol scale is [`NSImage.SymbolScale.medium`](./symbolscale/medium.md).
 

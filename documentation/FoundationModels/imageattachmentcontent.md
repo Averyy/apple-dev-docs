@@ -20,7 +20,7 @@ A type that holds image data.
 struct ImageAttachmentContent
 ```
 
-#### Overview
+## Overview
 
 You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](./attachment.md) initializers to attach a [`CGImage`](../CoreGraphics/cgimage.md), [`CIImage`](../CoreImage/ciimage.md), [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md), or image file URL.
 

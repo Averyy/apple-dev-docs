@@ -21,7 +21,7 @@ Adds a number for a custom key to a purchase.
 static func custom(key: String, value: Double) -> Product.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 This custom purchase option doesn’t have any effect.
 

@@ -19,7 +19,7 @@ static let positioningRect: NSBindingName
 extern NSBindingName NSPositioningRectBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

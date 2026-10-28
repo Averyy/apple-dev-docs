@@ -21,7 +21,7 @@ The episode number of the station.
 var episodeNumber: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value appears when the station represents an episode of a show or other content.
 

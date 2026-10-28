@@ -21,7 +21,7 @@ The calendar to use when formatting the date.
 var calendar: Calendar
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`autoupdatingCurrent`](../../nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using `autoupdatingCurrent`.
 

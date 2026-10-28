@@ -12,11 +12,11 @@ virtual bool member(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anObject` is present within the set, `false` otherwise.
 
-#### Overview
+## Overview
 
 Pointer equality is used. This function returns `false` if passed `NULL`.
 

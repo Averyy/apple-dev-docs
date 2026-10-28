@@ -19,7 +19,7 @@ func CFUserNotificationGetResponseDictionary(_ userNotification: CFUserNotificat
 extern CFDictionaryRefCFUserNotificationGetResponseDictionary(CFUserNotificationRef userNotification);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary holding the values of all the text fields in `userNotification` when it was dismissed. The values are in an array stored with the key [`kCFUserNotificationTextFieldValuesKey`](./kcfusernotificationtextfieldvalueskey.md). Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

@@ -20,7 +20,7 @@ func NSStringFromSize(_ aSize: NSSize) -> String
 extern NSString *NSStringFromSize(NSSize aSize);
 ```
 
-#### Return Value
+## Return Value
 
 A string of the form “{a, b}”, where a and b are the width and height, respectively, of `aSize`.
 

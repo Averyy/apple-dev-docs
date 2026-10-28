@@ -17,7 +17,7 @@ IOReturn ( *GetBufferInfo)(
    IOByteCount *controlBufferSizeOut );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the buffer ID was valid.
 

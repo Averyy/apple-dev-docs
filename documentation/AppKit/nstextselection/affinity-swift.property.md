@@ -19,7 +19,7 @@ var affinity: NSTextSelection.Affinity { get }
 @property (readonly) NSTextSelectionAffinity affinity;
 ```
 
-#### Discussion
+## Discussion
 
 The affinity is [`NSTextSelection.Affinity.downstream`](./affinity-swift.enum/downstream.md) by default. For a zero-length selection, it describes the visual location of the text cursor between the head of line containing the selection location (downstream) or tail of the previous line (upstream). For a selection with contents, it describes the logical direction of non-anchored edge of the selection.
 

@@ -5,7 +5,7 @@
 
 Position a caption in the wide right margin of your article.
 
-#### Overview
+## Overview
 
 Apple News Format makes it easy to create side-by-side content, such as a caption that floats next to the article body. On sufficiently wide displays, News automatically lays out such a caption in the article margin; on narrower displays, News automatically stacks the caption with other article content.
 
@@ -13,7 +13,7 @@ Apple News Format makes it easy to create side-by-side content, such as a captio
 
 **On this page, you’ll learn how to create a caption that appears in the right margin of the article on wide displays.**
 
-##### Create a ComponentLayout Object for the Floating Caption
+### Create a ComponentLayout Object for the Floating Caption
 
 Before you can position the caption in the right margin, you must define a component layout object that specifies that the caption will begin in column 7 of the article layout and span three columns.
 
@@ -22,7 +22,7 @@ Before you can position the caption in the right margin, you must define a compo
 
 Your code should look like the example code [sideCaptionLayout: Result](./creating-a-floating-caption.md#sideCaptionLayout-Result).
 
-###### sideCaptionLayout: Copy This Code
+#### sideCaptionLayout: Copy This Code
 
 ```json
 ,
@@ -35,7 +35,7 @@ Your code should look like the example code [sideCaptionLayout: Result](./creati
     }
 ```
 
-###### sideCaptionLayout: Result
+#### sideCaptionLayout: Result
 
 ```json
 {
@@ -54,7 +54,7 @@ Your code should look like the example code [sideCaptionLayout: Result](./creati
 }
 ```
 
-##### Anchor the Caption to the Article Body
+### Anchor the Caption to the Article Body
 
 On wide displays, when you anchor a caption to the article body, the caption’s top edge will be aligned with the body’s top edge; on narrower displays, the caption will be stacked above the body.
 
@@ -65,7 +65,7 @@ On wide displays, when you anchor a caption to the article body, the caption’s
 
 After you make these changes in your `article.json` file, you can preview your working `article.json` file in News Preview to see the floating caption.
 
-###### Caption: Copy This Code
+#### Caption: Copy This Code
 
 ```json
         {
@@ -87,7 +87,7 @@ After you make these changes in your `article.json` file, you can preview your w
         },
 ```
 
-###### Caption: Result
+#### Caption: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -134,11 +134,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
 
-##### Next
+### Next
 
 [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
 

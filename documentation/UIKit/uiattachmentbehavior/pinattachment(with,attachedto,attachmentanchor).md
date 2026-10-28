@@ -23,11 +23,11 @@ class func pinAttachment(with item1: any UIDynamicItem, attachedTo item2: any UI
 + (instancetype) pinAttachmentWithItem:(id<UIDynamicItem>) item1 attachedToItem:(id<UIDynamicItem>) item2 attachmentAnchor:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new attachment object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod connecting each item to the specified anchor point. Each item is free to rotate around the anchor point, inscribing a circle whose radius is the defined at creation time by the distance between `point` and the item’s center. When forces act on one or both items, the anchor point and other item also move accordingly. The anchor point of the attachment does not interact with collision boundaries.
 

@@ -19,7 +19,7 @@ func invalidateGlyphs(forCharacterRange charRange: NSRange, changeInLength delta
 - (void) invalidateGlyphsForCharacterRange:(NSRange) charRange changeInLength:(NSInteger) delta actualCharacterRange:(NSRangePointer) actualCharRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method invalidates the cached glyphs for the characters in the given character range, adjusts the character indices of all the subsequent glyphs by the change in length, and invalidates the new character range. This method invalidates only glyph information and performs no glyph generation or layout. Because invalidating glyphs also invalidates layout, after invoking this method you should also invoke [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](./invalidatelayout%28forcharacterrange,actualcharacterrange%29.md), passing `charRange` as the first argument.
 

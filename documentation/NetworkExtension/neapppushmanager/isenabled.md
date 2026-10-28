@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this value to NO when your app saves a configuration that overlaps with this configuration. This overlap occurs when a new [`NEAppPushManager`](../neapppushmanager.md) saves a configuration with a [`matchSSIDs`](./matchssids.md) list that contains an SSID which is also a member of this manager’s SSID list.
 

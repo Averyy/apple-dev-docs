@@ -23,7 +23,7 @@ The default navigation view style.
 struct DefaultNavigationViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./navigationviewstyle/automatic.md) to construct this style.
 

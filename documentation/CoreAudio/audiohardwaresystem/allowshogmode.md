@@ -16,7 +16,7 @@ A Bool where true indicates that this process wants the HAL to automatically tak
 var allowsHogMode: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Processes that only ever use the default device are the sort that should set this property’s value to false.
 

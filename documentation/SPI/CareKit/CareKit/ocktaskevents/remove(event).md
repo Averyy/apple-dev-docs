@@ -16,7 +16,7 @@ framework: "CareKit/CareKit"
 mutating func remove(event: OCKAnyEvent) -> OCKAnyEvent?
 ```
 
-#### Return Value
+## Return Value
 
 The event that was removed, otherwise nil.
 

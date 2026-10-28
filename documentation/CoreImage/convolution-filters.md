@@ -5,7 +5,7 @@
 
 Produce effects such as blurring, sharpening, edge detection, translation, and embossing.
 
-#### Overview
+## Overview
 
 A convolution filter generates each output pixel by summing all elements in the element-wise product of two matrices - the weight matrix and a matrix containing the neighbors of each input pixel. A bias is added to this and the resulting value is clamped to between 0.0 and 1.0. This operation is performed independently for each color component (including the alpha component). You can create many types of image processing effects using different weight matrices, such as blurring, sharpening, edge detection, translation, and embossing.
 

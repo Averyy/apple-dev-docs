@@ -24,11 +24,11 @@ class func characteristicType(forIdentifier identifier: HKCharacteristicTypeIden
 + (HKCharacteristicType *) characteristicTypeForIdentifier:(HKCharacteristicTypeIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `HKCharacteristicType` instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKCharacteristicType`](../hkcharacteristictype.md) concrete subclass. Characteristic types represent data that doesn’t typically change over time. Unlike the other object types, characteristic types cannot be used to create new HealthKit objects. Instead, users must enter and edit their characteristic data using the Health app. Characteristic types are used only when asking for permission to read data from the HealthKit store.
 

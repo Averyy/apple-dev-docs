@@ -24,7 +24,7 @@ func removeAllRules()
 - (void) removeAllRules;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method also empties the [`agenda`](./agenda.md) and [`executed`](./executed.md) arrays.
 

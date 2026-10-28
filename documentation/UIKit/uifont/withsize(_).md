@@ -24,7 +24,7 @@ func withSize(_ fontSize: CGFloat) -> UIFont
 - (UIFont *) fontWithSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 

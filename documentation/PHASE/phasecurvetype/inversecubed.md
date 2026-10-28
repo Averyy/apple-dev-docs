@@ -24,7 +24,7 @@ case inverseCubed
 PHASECurveTypeInverseCubed
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `1` `/` `x^3` shapes this curve.
 

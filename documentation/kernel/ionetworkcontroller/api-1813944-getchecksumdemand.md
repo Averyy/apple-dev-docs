@@ -16,7 +16,7 @@ virtual void getChecksumDemand(
  void *param1 = 0 );
 ```
 
-#### Overview
+## Overview
 
 A network controller that can insert a checksum for output packets must call this method to obtain the set of checksums that it must compute, and insert into the appropriate fields in the given output packet.
 

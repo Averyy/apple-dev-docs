@@ -14,7 +14,7 @@ Returns the square of the distance between X and Y.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Distance Square (vector2h)**:
 

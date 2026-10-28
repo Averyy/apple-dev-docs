@@ -19,7 +19,7 @@ class IMKInputController
 @interface IMKInputController : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `IMKInputController` object controls text input on the input method side. It manages events and text from the applications and converted text from the input method engine. `IMKInputController` implements fully the [`IMKStateSetting`](./imkstatesetting.md) and [`IMKMouseHandling`](./imkmousehandling.md) protocols.  Typically you do not need to override this class, but you do need to provide  a delegate object that implements the methods that your are interested in.  The `IMKInputController` versions of the protocol methods check whether the delegate object implements a method, and  calls the delegate version if it exists.
 

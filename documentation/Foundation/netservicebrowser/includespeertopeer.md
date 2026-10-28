@@ -24,7 +24,7 @@ var includesPeerToPeer: Bool { get set }
 @property BOOL includesPeerToPeer;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set before initiating a search to have an effect.
 

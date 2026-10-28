@@ -19,7 +19,7 @@ func requestSyncClock()
 - (void) requestSyncClock;
 ```
 
-#### Discussion
+## Discussion
 
 Send this request only if the camera has the [`cameraDeviceCanSyncClock`](../icdevicecapability/cameradevicecansyncclock.md) capability.
 

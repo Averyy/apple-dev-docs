@@ -21,7 +21,7 @@ An error code for problems related to model features.
 static var featureType: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when an app sends an input feature a value that’s of an incorrect type.
 

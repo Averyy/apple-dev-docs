@@ -25,7 +25,7 @@ struct AppEntityDefinition
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 To create an app entity instance for testing, load the definition for your app entity, using [`IntentDefinitions`](./intentdefinitions.md) and its [`entities`](./intentdefinitions/entities.md) property, then create an entity instance as shown in the following example:
 

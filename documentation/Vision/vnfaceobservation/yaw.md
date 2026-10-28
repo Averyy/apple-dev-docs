@@ -24,7 +24,7 @@ var yaw: NSNumber? { get }
 @property (nonatomic, strong, readonly, nullable) NSNumber * yaw;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the rotational angle of the face around the y-axis.
 

@@ -26,15 +26,15 @@ func createSymbolicLink(atPath path: String, pathContent otherpath: String) -> B
 - (BOOL) createSymbolicLinkAtPath:(NSString *) path pathContent:(NSString *) otherpath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation is successful, otherwise [`false`](../../Swift/false.md). Returns [`false`](../../Swift/false.md) if a file, directory, or symbolic link identical to `path` already exists.
 
-#### Discussion
+## Discussion
 
 Creates a symbolic link identified by `path` that refers to the location `otherPath` in the file system.
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`createSymbolicLink(atPath:withDestinationPath:)`](./createsymboliclink%28atpath,withdestinationpath%29.md) instead.
 

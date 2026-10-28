@@ -21,7 +21,7 @@ The sunset time immediately after the solar transit closest to calendar noon.
 var sunset: Date?
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional because it’s possible for the sun to not set on a given day, at extreme latitudes. That calendar noon is used as a reference point due to variations in frequency of solar events at extreme latitudes.
 

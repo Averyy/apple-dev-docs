@@ -19,7 +19,7 @@ let kSCValNetSMBNetBIOSNodeTypeMixed: CFString
 extern CFStringRef const kSCValNetSMBNetBIOSNodeTypeMixed;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetSMBNetBIOSNodeType`](./kscpropnetsmbnetbiosnodetype-swift.var.md) key.
 

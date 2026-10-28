@@ -19,11 +19,11 @@ Specifies the key-paths that SwiftData uses to enforce the uniqueness of model i
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Unique<T>(_ constraints: [PartialKeyPath<T>]...) where T : PersistentModel
+@freestanding(declaration)
+macro Unique<T>(_ constraints: [PartialKeyPath<T>]...) where T : PersistentModel
 ```
 
-#### Overview
+## Overview
 
 If a model class contains attributes that you require to be unique across all persisted instances of that model, add the `Unique` macro to that model’s definition. You can specify a constraint on a single attribute, a compound constraint across multiple attributes, or any combination of the two.
 

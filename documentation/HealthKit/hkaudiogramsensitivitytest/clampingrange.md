@@ -23,7 +23,7 @@ var clampingRange: HKAudiogramSensitivityPointClampingRange? { get }
 @property (nonatomic, copy, readonly, nullable) HKAudiogramSensitivityPointClampingRange * clampingRange;
 ```
 
-#### Discussion
+## Discussion
 
 If present, indicates that the range within which the sensitivity point should be clamped.
 

@@ -18,7 +18,7 @@ The intended usage of a vertex attribute.
 enum VertexSemantic
 ```
 
-#### Overview
+## Overview
 
 The renderer consults the vertex semantic when interpreting the data in a `LowLevelMeshResource`. For example, an attribute with the semantic value of [`LowLevelMeshResource.VertexSemantic.position`](./vertexsemantic/position.md) determines the position of a vertex.
 

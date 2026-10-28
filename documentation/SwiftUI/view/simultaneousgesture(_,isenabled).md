@@ -22,7 +22,7 @@ Attaches a gesture to the view to process simultaneously with gestures defined b
 nonisolated func simultaneousGesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T : Gesture
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to define and process  a view specific gesture simultaneously with the same priority as the view’s existing gestures. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](../vstack.md). Inside the [`VStack`](../vstack.md) is a red heart [`Image`](../image.md) defines its own [`TapGesture`](../tapgesture.md) handler that also prints a message to the console and a blue rectangle with no custom gesture handlers.
 

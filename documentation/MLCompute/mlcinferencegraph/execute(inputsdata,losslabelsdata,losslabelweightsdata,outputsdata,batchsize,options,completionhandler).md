@@ -23,11 +23,11 @@ func execute(inputsData: [String : MLCTensorData], lossLabelsData: [String : MLC
 - (BOOL) executeWithInputsData:(NSDictionary<NSString *,MLCTensorData *> *) inputsData lossLabelsData:(NSDictionary<NSString *,MLCTensorData *> *) lossLabelsData lossLabelWeightsData:(NSDictionary<NSString *,MLCTensorData *> *) lossLabelWeightsData outputsData:(NSDictionary<NSString *,MLCTensorData *> *) outputsData batchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 
-#### Discussion
+## Discussion
 
 When executing an inference graph, if an optimizer is specified, the optimizer update is applied.
 

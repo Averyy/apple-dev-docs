@@ -17,7 +17,7 @@ Presents the immersive space that handles the type of the presented value.
 @MainActor func callAsFunction<D>(value: D) async -> OpenImmersiveSpaceAction.Result where D : Decodable, D : Encodable, D : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`openImmersiveSpace`](../environmentvalues/openimmersivespace.md) action with a value:
 

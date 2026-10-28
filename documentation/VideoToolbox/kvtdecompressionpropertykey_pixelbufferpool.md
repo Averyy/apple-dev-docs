@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_PixelBufferPool: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_PixelBufferPool;
 ```
 
-#### Discussion
+## Discussion
 
 This pixel buffer pool is always compatible with the client’s pixel buffer attributes as specified when calling [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md).
 

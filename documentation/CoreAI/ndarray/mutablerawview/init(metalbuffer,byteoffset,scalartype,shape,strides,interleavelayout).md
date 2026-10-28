@@ -18,7 +18,7 @@ Initialize a raw view from an existing metal buffer, interpreted as the specifie
 init(metalBuffer: borrowing any MTLBuffer, byteOffset: Int = 0, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int] = [], interleaveLayout: NDArray.InterleaveLayout? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 `metalBuffer` must have `shared` storage mode.
 

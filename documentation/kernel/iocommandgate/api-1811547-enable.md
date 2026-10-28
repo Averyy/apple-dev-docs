@@ -11,7 +11,7 @@ Enable command gate, this will unblock any blocked Commands and Actions.
 virtual void enable();
 ```
 
-#### Overview
+## Overview
 
 Enable the command gate. The attemptAction/attemptCommand calls will now be enabled and can succeeed. Stalled runCommand/runAction calls will be woken up.
 

@@ -18,7 +18,7 @@ SwiftLog 1.0 log compatibility method.
 func log(level: Logging.Logger.Level, message: Logging.Logger.Message, metadata: Logging.Logger.Metadata?, file: String, function: String, line: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Please do *not* implement this method when you create a LogHandler implementation. Implement [`log(event:)`](./log%28event%29.md) instead.
 

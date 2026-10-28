@@ -20,7 +20,7 @@ typealias CGDirectDisplayID = UInt32
 typedef uint32_t CGDirectDisplayID;
 ```
 
-#### Discussion
+## Discussion
 
 In Quartz, the term *display* refers to a graphics hardware system consisting of a framebuffer, a color correction (gamma) table, and possibly an attached monitor. If no monitor is attached, a display is characterized as offline.
 

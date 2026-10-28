@@ -25,11 +25,11 @@ init(indexesIn range: NSRange)
 - (instancetype) initWithIndexesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexSet`](../nsindexset.md) object with `indexRange`.
 
-#### Discussion
+## Discussion
 
 This method raises an [`rangeException`](../nsexceptionname/rangeexception.md) when `indexRange` would add an index that exceeds the maximum allowed value for unsigned integers.
 

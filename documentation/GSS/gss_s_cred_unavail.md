@@ -23,7 +23,7 @@ var GSS_S_CRED_UNAVAIL: UInt { get }
 #define GSS_S_CRED_UNAVAIL
 ```
 
-#### Discussion
+## Discussion
 
 This value is currently an alias of the generic [`GSS_S_FAILURE`](./gss_s_failure.md).
 

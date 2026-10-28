@@ -24,7 +24,7 @@ func union(with voxels: MDLVoxelArray)
 - (void) unionWithVoxels:(MDLVoxelArray *) voxels;
 ```
 
-#### Discussion
+## Discussion
 
 After a union operation, the voxel array contains voxels that were present either in the original array or in the specified array. That is, a union operation creates a voxel array that combines two volumes.
 

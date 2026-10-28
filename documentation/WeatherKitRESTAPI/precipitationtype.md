@@ -25,7 +25,7 @@ string PrecipitationType
 - `hail`
 - `mixed`
 
-#### Possible Values
+## Possible Values
 
 - **clear**: No precipitation is occurring.
 - **precipitation**: An unknown type of precipitation is occuring.

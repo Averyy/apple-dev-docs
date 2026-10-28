@@ -28,7 +28,7 @@ var recognitionLevel: VNRequestTextRecognitionLevel { get set }
 
 - [Recognizing Text in Images](../recognizing-text-in-images.md)
 
-#### Discussion
+## Discussion
 
 The recognition level determines which techniques the request uses during the text recognition. Set this value to [`VNRequestTextRecognitionLevel.fast`](../vnrequesttextrecognitionlevel/fast.md) to prioritize speed over accuracy, and to [`VNRequestTextRecognitionLevel.accurate`](../vnrequesttextrecognitionlevel/accurate.md) for longer, more computationally intensive recognition.
 

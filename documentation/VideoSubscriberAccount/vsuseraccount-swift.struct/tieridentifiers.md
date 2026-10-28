@@ -19,7 +19,7 @@ An array of strings that identify a subset of content from your catalog that the
 var tierIdentifiers: [String]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Only provide values from your availability feed’s tier restrictions.
 

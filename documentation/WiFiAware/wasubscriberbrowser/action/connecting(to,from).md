@@ -17,11 +17,11 @@ Subscribes to the provided service over Wi-Fi, providing browse results for conn
 static func connecting(to pairedDevices: WASubscriberBrowser.Devices, from mySubscribingService: WASubscribableService) -> WASubscriberBrowser.Action
 ```
 
-#### Return Value
+## Return Value
 
 A new `Action` configuring this operation.
 
-#### Discussion
+## Discussion
 
 When subscribing, the `NetworkBrowser` provides a [`WAEndpoint`](../../waendpoint.md) for each discovered paired device, and the app can then create a `NetworkConnection` object to connect to each. Data path parameters including the [`WAPerformanceMode`](../../waperformancemode.md) are set when creating the connection, using [`WAParameters`](../../waparameters.md) written into the [`NWParameters`](../../../Network/nwparameters.md) for the `NetworkConnection`.
 

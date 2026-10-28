@@ -15,11 +15,11 @@ Gets a Boolean value that indicates whether the device is running.
 bool GetDeviceIsRunning();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the device is running; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

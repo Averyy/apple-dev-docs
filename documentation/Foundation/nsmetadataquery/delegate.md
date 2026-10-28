@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any NSMetadataQueryDelegate)? { get set }
 @property (assign, nullable) id<NSMetadataQueryDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an object that acts as the query’s delegate, or `nil`. The delegate must implement the [`NSMetadataQueryDelegate`](../nsmetadataquerydelegate.md). Pass `nil` to remove the current delegate.
 

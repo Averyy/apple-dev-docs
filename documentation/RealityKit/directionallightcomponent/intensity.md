@@ -20,7 +20,7 @@ The intensity of the directional light, measured in lumen per square meter.
 var intensity: Float
 ```
 
-#### Discussion
+## Discussion
 
 Lumen per square meter, also known as lux, measures how much light is spread over an area. It tells you how bright a surface appears based on the light it receives.
 

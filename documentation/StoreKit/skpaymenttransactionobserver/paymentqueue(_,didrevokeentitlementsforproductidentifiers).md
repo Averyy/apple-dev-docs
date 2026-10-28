@@ -31,7 +31,7 @@ optional func paymentQueue(_ queue: SKPaymentQueue, didRevokeEntitlementsForProd
 
 - [Supporting Family Sharing in your app](../supporting-family-sharing-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The system calls this delegate method whenever App Store revokes Apple In-App Purchases for a family member based on changes in Family Sharing, or when the purchaser gets a refund for an Apple In-App Purchase. Implement this method in your payment queue observer to reestablish a user’s access to products. Revoked transactions have the `cancellation_date` populated in the receipt.
 

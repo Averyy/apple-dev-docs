@@ -21,7 +21,7 @@ Indicates whether the block buffer is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the block buffer is empty, i.e., devoid of any memory blocks or block buffer references. Note that a block buffer containing a not-yet allocated memory block is not considered empty.
 

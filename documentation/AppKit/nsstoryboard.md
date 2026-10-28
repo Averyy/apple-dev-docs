@@ -19,7 +19,7 @@ class NSStoryboard
 @interface NSStoryboard : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use storyboard files to define the view and window controllers for all or part of an app’s user interface. Typically, AppKit creates these objects automatically in response to actions defined within a storyboard file itself, such as the clicking of a button or the choosing of a menu item. However, you can use a storyboard object to directly instantiate the initial view controller from a storyboard file or to instantiate other view or window controllers that you want to present programmatically. In the context of a storyboard file, each contained controller is called a *scene*.
 

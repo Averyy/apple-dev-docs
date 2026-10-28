@@ -16,11 +16,11 @@
 static OSSharedPtr<IOReportLegendEntry> legendWith(OSArray *channelIDs, OSArray *channelNames, IOReportChannelType channelType, IOReportUnit unit);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReportLegendEntry object or NULL on failure
 
-#### Discussion
+## Discussion
 
 Internal method to help create legend entries
 

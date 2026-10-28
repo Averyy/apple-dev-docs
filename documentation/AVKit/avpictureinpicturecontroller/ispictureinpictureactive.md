@@ -24,7 +24,7 @@ var isPictureInPictureActive: Bool { get }
 @property (nonatomic, readonly, getter=isPictureInPictureActive) BOOL pictureInPictureActive;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

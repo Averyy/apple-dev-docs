@@ -20,7 +20,7 @@ var reason: es_tcc_authorization_reason_t
 es_tcc_authorization_reason_t reason;
 ```
 
-#### Discussion
+## Discussion
 
 Represents the reason a TCC permission was updated.
 

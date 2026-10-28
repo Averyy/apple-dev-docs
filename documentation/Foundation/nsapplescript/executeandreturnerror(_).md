@@ -20,11 +20,11 @@ func executeAndReturnError(_ errorInfo: AutoreleasingUnsafeMutablePointer<NSDict
 - (NSAppleEventDescriptor *) executeAndReturnError:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The result of executing the event, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Any changes to property values caused by executing the script do not persist.
 

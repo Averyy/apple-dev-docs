@@ -25,11 +25,11 @@ func vlog10f(_: vFloat) -> vFloat
 extern vFloat vlog10f(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector of floating point values, each of which is the base-10 logarithm of the corresponding value in the source vector.
 
-##### Parameters:
+### Parameters:
 
 - **X**: The source vector.
 

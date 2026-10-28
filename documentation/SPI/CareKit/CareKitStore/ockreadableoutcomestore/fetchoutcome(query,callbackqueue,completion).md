@@ -18,7 +18,7 @@ Fetch a list of events that exist in the store.
 func fetchOutcome(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<Outcome>)
 ```
 
-#### Discussion
+## Discussion
 
 If more than one outcome matches the query, only the first will be returned. If no matching outcomes exist or there is an error accessing the store, the completion will be called with an error.
 

@@ -20,7 +20,7 @@ var transformStruct: NSAffineTransformStruct { get set }
 @property NSAffineTransformStruct transformStruct;
 ```
 
-#### Discussion
+## Discussion
 
 The matrix is of the form shown in [Transform Mathematics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Transforms/Transforms.html#//apple_ref/doc/uid/TP40003290-CH204-BCIIICJI), and the six-element structure defined by the [`NSAffineTransformStruct`](../nsaffinetransformstruct.md) structure is of the form:
 

@@ -19,7 +19,7 @@ object MassExtendRenewalDateStatusResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The App Store server sends this response when you call the [`Get Status of Subscription Renewal Date Extensions`](./get-status-of-subscription-renewal-date-extensions.md) endpoint. Your request to [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) is complete when the value of the `complete` field is `TRUE`. Otherwise, the request is still in progress.
 

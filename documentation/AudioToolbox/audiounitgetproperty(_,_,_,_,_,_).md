@@ -28,11 +28,11 @@ extern OSStatus AudioUnitGetProperty(AudioUnit inUnit, AudioUnitPropertyID inID,
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

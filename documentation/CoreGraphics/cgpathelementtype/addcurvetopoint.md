@@ -25,7 +25,7 @@ case addCurveToPoint
 kCGPathElementAddCurveToPoint
 ```
 
-#### Discussion
+## Discussion
 
 The element holds two control points and a destination point. See the function [`CGPathAddCurveToPoint`](../cgpathaddcurvetopoint.md).
 

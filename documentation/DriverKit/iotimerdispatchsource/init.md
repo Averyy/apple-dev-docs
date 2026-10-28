@@ -18,11 +18,11 @@ Handles the basic initialization of the dispatch source.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if initialization was successful, or [`false`](../../Swift/false.md) if an error occurred.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Call [`Create`](./create.md) when you want to create a new timer dispatch queue.
 

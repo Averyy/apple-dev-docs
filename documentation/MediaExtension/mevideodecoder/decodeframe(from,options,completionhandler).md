@@ -24,7 +24,7 @@ func decodeFrame(from sampleBuffer: CMSampleBuffer, options: MEDecodeFrameOption
 - (void) decodeFrameFromSampleBuffer:(CMSampleBufferRef) sampleBuffer options:(MEDecodeFrameOptions *) options completionHandler:(void (^)(CVImageBufferRef imageBuffer, MEDecodeFrameStatus decodeStatus, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the completion handler for every sample buffer frame when decoding completes, but not necessarily in display order. The completion handler receives a decoded pixel buffer, a decode status that indicates a frame dropped, or an error. Use [`MEVideoDecoderPixelBufferManager`](../mevideodecoderpixelbuffermanager.md) to allocate an image buffer. If an error occurs that’s external to [`MediaExtensionErrorDomain`](../mediaextensionerrordomain.md), the [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md) receives it as [`kVTVideoDecoderUnknownErr`](../../VideoToolbox/kvtvideodecoderunknownerr.md).
 

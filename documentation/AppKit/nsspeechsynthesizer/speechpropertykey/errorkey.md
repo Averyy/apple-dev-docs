@@ -21,7 +21,7 @@ struct ErrorKey
 typedef NSString * NSSpeechErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys in the [`errors`](./errors.md) dictionary.
 

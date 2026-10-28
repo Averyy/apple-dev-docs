@@ -20,7 +20,7 @@ Specifies intrinsic and extrinsic parameters for single or multiple lenses.
 @property (atomic, copy, nullable) NSArray<NSDictionary<NSString *,id> *> * cameraCalibrationDataLensCollection;
 ```
 
-#### Discussion
+## Discussion
 
 The property value is an array of dictionaries describing the camera calibration data for each lens. The camera calibration data includes intrinsics and extrinics with other parameters.  This property is only applicable when the projection kind is kCMTagProjectionTypeParametricImmersive.  Can be nil if the value is unknown.
 

@@ -23,7 +23,7 @@ case backForward
 WKNavigationTypeBackForward
 ```
 
-#### Discussion
+## Discussion
 
 This type of action occurs when the navigation originates from an item in a [`WKBackForwardList`](../wkbackforwardlist.md) object.
 

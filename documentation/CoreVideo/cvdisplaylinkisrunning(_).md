@@ -22,7 +22,7 @@ func CVDisplayLinkIsRunning(_ displayLink: CVDisplayLink) -> Bool
 extern Boolean CVDisplayLinkIsRunning(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the display link is running, `false` otherwise.
 

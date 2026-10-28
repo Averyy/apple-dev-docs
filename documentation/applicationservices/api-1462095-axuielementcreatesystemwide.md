@@ -19,11 +19,11 @@ func AXUIElementCreateSystemWide() -> AXUIElement
 AXUIElementRef AXUIElementCreateSystemWide(void);
 ```
 
-#### Return Value
+## Return Value
 
 The AXUIElementRef representing the system-wide accessibility object.
 
-#### Discussion
+## Discussion
 
 This is useful for things like finding the focused accessibility object regardless of which application is currently active.
 

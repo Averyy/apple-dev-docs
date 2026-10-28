@@ -19,7 +19,7 @@ case data
 FSSeekRegionData
 ```
 
-#### Discussion
+## Discussion
 
 When there are no more data regions past the supplied `offset`, an error code `ENXIO` should be returned.
 

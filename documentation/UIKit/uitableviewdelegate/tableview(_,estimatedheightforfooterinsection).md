@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, estimatedHeightForFooterInSect
 
 - [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
-#### Return Value
+## Return Value
 
 A nonnegative floating-point value that estimates the height (in points) of the footer for `section`.
 
-#### Discussion
+## Discussion
 
 Providing an estimate the height of section footers can improve the user experience when loading the table view. If the table contains variable height section footers, it might be expensive to calculate all their heights and so lead to a longer load time. Using estimation allows you to defer some of the cost of geometry calculation from load time to scrolling time.
 

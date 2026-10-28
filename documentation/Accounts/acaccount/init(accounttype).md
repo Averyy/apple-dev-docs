@@ -24,7 +24,7 @@ init!(accountType type: ACAccountType!)
 - (instancetype) initWithAccountType:(ACAccountType *) type;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized account.
 

@@ -19,7 +19,7 @@ func selectedRowIndexes(inColumn column: Int) -> IndexSet?
 - (NSIndexSet *) selectedRowIndexesInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 Rows selected in column `columnIndex`.
 

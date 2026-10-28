@@ -25,7 +25,7 @@ func CMTimeCopyAsDictionary(_ time: CMTime, allocator: CFAllocator?) -> CFDictio
 extern CFDictionaryRefCMTimeCopyAsDictionary(CMTime time, CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representation of the time.
 

@@ -25,7 +25,7 @@ init?(source: @escaping () -> Int32)
 - (instancetype) initWithSource:(int (^)()) source;
 ```
 
-#### Return Value
+## Return Value
 
 A `TKSmartCardATR` object initialized with the parsed data. If the byte stream produces an error or does not contain a valid ATR, returns `nil`.
 

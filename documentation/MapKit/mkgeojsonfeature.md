@@ -25,7 +25,7 @@ class MKGeoJSONFeature
 @interface MKGeoJSONFeature : NSObject
 ```
 
-#### Overview
+## Overview
 
 A feature is an object with associated geometry and optional properties in JSON that you define. MapKit exposes these optional properties, but treats them as opaque. [`MKGeoJSONFeature`](./mkgeojsonfeature.md) is one of the classes that the GeoJSON decoder ([`MKGeoJSONDecoder`](./mkgeojsondecoder.md)) can return.
 

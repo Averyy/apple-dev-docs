@@ -25,7 +25,7 @@ static var extendedProperties: CBCharacteristicProperties { get }
 CBCharacteristicPropertyExtendedProperties
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available for a remote peripheral’s service’s characteristic. You can’t use this property with a local characteristic, that is, a [`CBMutableCharacteristic`](../cbmutablecharacteristic.md) that you publish using the [`add(_:)`](../cbperipheralmanager/add%28_%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class.
 

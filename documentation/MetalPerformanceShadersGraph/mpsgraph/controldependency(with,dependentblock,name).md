@@ -24,11 +24,11 @@ func controlDependency(with operations: [MPSGraphOperation], dependentBlock: @es
 - (NSArray<MPSGraphTensor *> *) controlDependencyWithOperations:(NSArray<MPSGraphOperation *> *) operations dependentBlock:(MPSGraphControlFlowDependencyBlock) dependentBlock name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array with results returned from dependentBlock forwarded
 
-#### Discussion
+## Discussion
 
 This call blocks until execution has completed.
 

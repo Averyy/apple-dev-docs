@@ -25,11 +25,11 @@ var horizontalAccuracy: CLLocationAccuracy { get }
 @property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 The location’s latitude and longitude identify the center of the circle, and this value indicates the radius of that circle. A negative value indicates that the latitude and longitude are invalid.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

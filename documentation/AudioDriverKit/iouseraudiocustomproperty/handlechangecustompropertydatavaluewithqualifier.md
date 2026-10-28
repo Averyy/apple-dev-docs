@@ -15,11 +15,11 @@ Tells the property the data value is changing.
 virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation sets the value and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md), without checking the qualifier data. Subclass and override this method to handle changes to the custom property and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 

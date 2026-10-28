@@ -5,7 +5,7 @@
 
 Make your camera app’s actions available to Apple Intelligence and Siri by adopting schemas for common camera actions.
 
-#### Overview
+## Overview
 
 The `.camera` domain defines app schemas that provide a structured representation for common camera actions and content. Apply schemas in the `.camera` domain to make your app’s camera functionality available to Apple Intelligence and Siri.
 

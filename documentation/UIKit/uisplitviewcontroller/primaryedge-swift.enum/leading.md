@@ -23,7 +23,7 @@ case leading
 UISplitViewControllerPrimaryEdgeLeading
 ```
 
-#### Discussion
+## Discussion
 
 In an interface that is oriented left-to-right, this value corresponds to the left side of the split view interface. For right-to-left interfaces, the leading edge is on the right side.
 

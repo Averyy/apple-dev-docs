@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ab
 
 # mlx.core.abs
 
-**abs(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise absolute value.
+```python
+abs(a: array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+Element-wise absolute value.
 
-Returns:
-The absolute value of `a`.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The absolute value of `a`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

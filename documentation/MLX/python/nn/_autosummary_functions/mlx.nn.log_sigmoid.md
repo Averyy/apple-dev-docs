@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.log_sigmoid
 
-**class log_sigmoid(*x*)**
-: Applies the Log Sigmoid function.
+```python
+class log_sigmoid(x)
+```
+
+Applies the Log Sigmoid function.
+
 Applies \(\log(\sigma(x)) = -\log(1 + e^{-x})\) element wise.

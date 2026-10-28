@@ -22,7 +22,7 @@ typealias ConfigurationProvider = (UIWindowScene.ActivationAction) -> UIWindowSc
 typedef UIWindowSceneActivationConfiguration *(^)(__kindof UIWindowSceneActivationAction *) UIWindowSceneActivationActionConfigurationProvider;
 ```
 
-#### Return Value
+## Return Value
 
 An activation configuration you can use to request a window scene.
 

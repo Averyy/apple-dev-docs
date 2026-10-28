@@ -23,7 +23,7 @@ func inputDescriptor(of inputName: String) -> InferenceValue.Descriptor?
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Return Value
+## Return Value
 
 The descriptor for the input, or `nil` if the function doesn’t have an input with the specified name.
 

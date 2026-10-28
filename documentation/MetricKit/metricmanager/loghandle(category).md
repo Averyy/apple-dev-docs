@@ -22,7 +22,7 @@ static func logHandle(category: String) -> OSLog
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 The method signature and return type are identical; only the type name changes.
 

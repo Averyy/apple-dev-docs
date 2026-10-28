@@ -25,11 +25,11 @@ class func fileURL(withPathComponents components: [String]) -> URL?
 + (NSURL *) fileURLWithPathComponents:(NSArray<NSString *> *) components;
 ```
 
-#### Return Value
+## Return Value
 
 An NSURL object initialized with `components`.
 
-#### Discussion
+## Discussion
 
 The path components are separated by a forward slash in the returned URL.
 

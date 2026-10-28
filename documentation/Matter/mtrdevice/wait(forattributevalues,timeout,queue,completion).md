@@ -25,7 +25,7 @@ func wait(forAttributeValues values: [MTRAttributePath : [String : Any]], timeou
 - (MTRAttributeValueWaiter *) waitForAttributeValues:(NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> *) values timeout:(NSTimeInterval) timeout queue:(dispatch_queue_t) queue completion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 1. A set of attributes reaches certain values: completion called with nil.
 2. The provided timeout expires: completion called with MTRErrorCodeTimeout error.

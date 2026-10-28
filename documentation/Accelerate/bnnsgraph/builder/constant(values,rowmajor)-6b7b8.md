@@ -21,7 +21,7 @@ Returns a rank 2 tensor from an array of arrays.
 func constant(values: Array<Array<Float>>, rowMajor: Bool = false) -> BNNSGraph.Builder.Tensor<Float>
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: Each sub-array must contain the same number of elements.
 

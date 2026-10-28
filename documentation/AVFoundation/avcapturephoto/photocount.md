@@ -28,7 +28,7 @@ var photoCount: Int { get }
 - [Capturing a bracketed photo sequence](../capturing-a-bracketed-photo-sequence.md)
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 The [`expectedPhotoCount`](../avcaptureresolvedphotosettings/expectedphotocount.md) property of this capture result’s [`resolvedSettings`](./resolvedsettings.md) object indicates the total number of images that will be returned for a given capture request. When your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method receives a photo whose [`photoCount`](./photocount.md) value  matches the [`expectedPhotoCount`](../avcaptureresolvedphotosettings/expectedphotocount.md) value, you know you’ve received the last one for the given capture request.
 

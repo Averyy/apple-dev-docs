@@ -5,7 +5,7 @@
 
 Let users install your extension on one device and then use and manage the extension on all their other iOS and macOS devices.
 
-#### Overview
+## Overview
 
 In Safari 15 or earlier, when a user wants to install your Safari web extension on multiple devices, they have to install your extension from the App Store and enable the extension in Safari Preferences on each device.
 
@@ -20,7 +20,7 @@ If your extension has different bundle identifiers in macOS and iOS, turn on syn
 
 > **Note**:  If you provide your extension in both iOS and macOS, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [Offering Universal Purchase](https://developer.apple.com/support/universal-purchase/).
 
-##### Configure your macOS app and extension
+### Configure your macOS app and extension
 
 In your Xcode project, configure your macOS app to refer to your iOS app to support extension syncing:
 
@@ -39,7 +39,7 @@ Next, configure your macOS extension for syncing:
 
 > **Note**:  The bundle identifiers for the iOS app and extension you specify must be from the same developer account as your macOS app and extension.
 
-##### Configure your iOS app and extension
+### Configure your iOS app and extension
 
 In your Xcode project, configure your iOS app to refer to your macOS app to support extension syncing:
 

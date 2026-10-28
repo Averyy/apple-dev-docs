@@ -20,7 +20,7 @@ Creates a Look Around preview with a binding to a scene, navigation, road label,
 @preconcurrency init(scene: Binding<MKLookAroundScene?>, allowsNavigation: Bool = true, showsRoadLabels: Bool = true, pointsOfInterest: PointOfInterestCategories = .all, badgePosition: MKLookAroundBadgePosition = .topLeading)
 ```
 
-#### Discussion
+## Discussion
 
 Navigation refers to the ability to tap-to-navigate to a different vantage point in the Look Around scene and what a person can control through the use of the `allowsNavigation` property. The framework refers to the ability to pan and zoom around the Look Around scene is as *exploring* and you can’t restrict it while in the Look Around viewer.
 

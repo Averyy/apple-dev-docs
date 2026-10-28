@@ -16,7 +16,7 @@ Returns a new properties object with a dictionary of property states.
 + (instancetype) devicePropertiesWithDictionary:(NSDictionary<NSString *,CMIOExtensionPropertyState *> *) propertiesDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A device properties object.
 

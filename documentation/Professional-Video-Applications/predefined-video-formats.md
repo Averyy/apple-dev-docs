@@ -5,7 +5,7 @@
 
 Valid values for video formats.
 
-#### Overview
+## Overview
 
 Use the video format values listed below in the `name` attribute of the `format` element.
 

@@ -5,11 +5,11 @@
 
 Create a folder with a manifest that describes the chapter’s name and page order.
 
-#### Overview
+## Overview
 
 You use chapters to group the pages of a playground book by topic.
 
-##### Create a Chapter Folder
+### Create a Chapter Folder
 
 Create a new folder in the Chapters folder inside your playground book’s Contents folder. The new chapter’s folder name must end with the suffix .playgroundchapter.
 
@@ -19,11 +19,11 @@ The following image shows the example chapter, “First Chapter,” which contai
 
 ![Screenshot showing the Xcode property list editor, which is displaying the “Name” and “Pages” property list keys of a chapter manifest.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/adding-a-chapter-to-a-playground-book-1@2x.png)
 
-##### Name the Chapter
+### Name the Chapter
 
 Choose a name for your new chapter by adding a `Name` key to the `Manifest.plist` property list. This name is displayed to learners in the table of contents for your book in Swift Playgrounds.
 
-##### Arrange Pages in the Chapter
+### Arrange Pages in the Chapter
 
 Pages in your playground book must be placed in a chapter. The page folders you place within chapter folders determine which pages go into which chapters. You choose the *order* of pages in a chapter by adding a `Pages` key to the chapter’s `Manifest.plist` file. The `Pages` key is an ordered array of page folder names. Add the names of a chapter’s pages in the order in which you want those pages to appear in the chapter.
 

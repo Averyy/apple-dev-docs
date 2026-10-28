@@ -19,8 +19,8 @@ init(device: any MTLDevice)
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) init(device: any MTLDevice) async
+nonisolated(nonsending)
+init(device: any MTLDevice) async
 ```
 
 ## See Also

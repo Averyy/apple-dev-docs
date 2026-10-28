@@ -18,7 +18,7 @@ Schedule a block for synchronous execution on the current queue.
 void DispatchSync(IODispatchBlock block);
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules the block for execution on the queue and waits for it to complete before returning. The system retains the queue until the block completes.
 

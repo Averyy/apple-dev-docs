@@ -25,7 +25,7 @@ func handleBinding(ofBufferNamed name: String, frequency: SCNBufferFrequency, ha
 - (void) handleBindingOfBufferNamed:(NSString *) name frequency:(SCNBufferFrequency) frequency usingBlock:(SCNBufferBindingBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to associate a block with a Metal shader program to handle setup of a buffer used in that shader. SceneKit calls your block before rendering any objects whose [`program`](../scnshadable/program.md) property is set to this [`SCNProgram`](../scnprogram.md) object. In the block, use the [`writeBytes(_:count:)`](../scnbufferstream/writebytes%28_,count%29.md) method to provide data for the buffer.
 

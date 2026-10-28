@@ -5,13 +5,13 @@
 
 Read and write health and activity data in the Health app.
 
-#### Overview
+## Overview
 
 HealthKit is the central repository for health and fitness data in iOS and watchOS. Health apps that integrate with HealthKit can request a user’s permission to both read health data from and write data to this central repository. The data your app writes to the HealthKit store is visible to the user in the Health app, alongside their other health-related data.
 
 To enable your app to access the user’s HealthKit store, you must add the HealthKit capability to your app’s target and include a short description of the app’s functionality in its target’s `Info.plist` file.
 
-##### Add the HealthKit capability to your target
+### Add the HealthKit capability to your target
 
 Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) to add the capability to your app’s target; be sure to select the HealthKit capability from Xcode’s Capabilities library. For watchOS apps with separate WatchKit extensions, you must add the capability to the WatchKit Extension target.
 
@@ -23,7 +23,7 @@ After you add the HealthKit capability, Xcode links the [HealthKit](../HealthKit
 
 > **Note**: If you later remove the HealthKit capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable HealthKit.
 
-##### Request access to the user’s health data
+### Request access to the user’s health data
 
 HealthKit uses a fine-grained authorization mechanism to help protect the user’s privacy; your app must request permission to read and, optionally, write each individual sample type it supports. For more information, see [Authorizing access to health data](../HealthKit/authorizing-access-to-health-data.md).
 
@@ -45,7 +45,7 @@ Remember that the user can revoke their permission at any time in the Settings a
 
 You can check your app’s current authorization status using the [`authorizationStatus(for:)`](../HealthKit/hkhealthstore/authorizationstatus%28for%29.md) method. HealthKit also returns a [`HKError.Code.errorAuthorizationDenied`](../HealthKit/hkerror/code/errorauthorizationdenied.md) error if your app attempts unauthorized access to the user’s health data.
 
-##### Request access to a user’s health records
+### Request access to a user’s health records
 
 HealthKit’s clinical-record support allows users to download their records in the Fast Healthcare Interoperability Resources (FHIR) format from supported healthcare institutions. HealthKit then periodically updates those records in the background.
 
@@ -63,7 +63,7 @@ Xcode adds the [`HealthKit Capabilities Entitlement`](../BundleResources/entitle
 
 After you enable the capability, there are additional configuration steps you must complete before your app can access the user’s health records, such as providing an additional purpose string and declaring the types of health records that your app supports. For more information, see [Accessing Health Records](../HealthKit/accessing-health-records.md).
 
-##### Receive sample updates in the background
+### Receive sample updates in the background
 
 HealthKit observer queries are long-running ones that watch the HealthKit store for changes to specific sample types and deliver those changes to your app on a background thread. Typically, observer queries only provide those changes when your app is running in the foreground.
 

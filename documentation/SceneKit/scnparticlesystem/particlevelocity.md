@@ -25,7 +25,7 @@ var particleVelocity: CGFloat { get set }
 @property (nonatomic) CGFloat particleVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 Particles begin moving at this speed in the direction determined by the [`birthDirection`](./birthdirection.md) or [`emittingDirection`](./emittingdirection.md) property. Their directions and speeds may change thereafter according to the [`acceleration`](./acceleration.md) property or physics effects (see the [`isAffectedByGravity`](./isaffectedbygravity.md), [`isAffectedByPhysicsFields`](./isaffectedbyphysicsfields.md), and [`colliderNodes`](./collidernodes.md) properties). You can randomize the speed of newly spawned particles with the [`particleAngularVelocityVariation`](./particleangularvelocityvariation.md) property.
 

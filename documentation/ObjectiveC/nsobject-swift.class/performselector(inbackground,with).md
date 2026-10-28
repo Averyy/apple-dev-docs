@@ -25,7 +25,7 @@ func performSelector(inBackground aSelector: Selector, with arg: Any?)
 - (void) performSelectorInBackground:(SEL) aSelector withObject:(id) arg;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a new thread in your application, putting your application into multithreaded mode if it was not already. The method represented by `aSelector` must set up the thread environment just as you would for any other new thread in your program. For more information about how to configure and run threads, see [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
 

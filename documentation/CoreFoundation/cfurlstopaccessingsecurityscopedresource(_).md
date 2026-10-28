@@ -25,7 +25,7 @@ func CFURLStopAccessingSecurityScopedResource(_ url: CFURL!)
 extern void CFURLStopAccessingSecurityScopedResource(CFURLRef url);
 ```
 
-#### Discussion
+## Discussion
 
 When you no longer need access to a file or directory pointed to by a security-scoped URL, such as one returned by resolving a security-scoped bookmark, call this function (or its Cocoa equivalent, [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md)) on the URL.
 

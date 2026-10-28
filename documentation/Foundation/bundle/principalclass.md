@@ -25,7 +25,7 @@ var principalClass: AnyClass? { get }
 @property (readonly, nullable) Class principalClass;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set after ensuring that the code containing the definition of the class is dynamically loaded. If the bundle encounters errors in loading or if it can’t find the executable code file in the bundle directory, this property is `nil`.
 

@@ -5,11 +5,11 @@
 
 Create reusable custom views and layouts that support each Live Activity presentation.
 
-#### Overview
+## Overview
 
 To support Live Activities in your app, you must provide layouts for each Live Activity presentation. Because Live Activities appear automatically across a person’s devices, views you use for your Live Activities automatically adapt to provide a default layout. To offer the best user experience and make the most of the available space, create reusable, custom views that automatically adapt for each Live Activity presentation.
 
-##### Use supplemental activity families
+### Use supplemental activity families
 
 The different presentations are key to creating layouts for your Live Activities. By requiring you to support each presentation, the system can render your Live Activity across devices without you having to add code for each device:
 
@@ -77,7 +77,7 @@ struct CustomSupplementalActivityView: View {
 
 For more information about reusing custom views across widgets and Live Activities, refer to [Creating views for widgets, Live Activities, and watch complications](../WidgetKit/creating-views-for-widgets-live-activities-and-watch-complications.md).
 
-##### Set custom content margins
+### Set custom content margins
 
 Limiting the content you display is key to offering glanceable, easy-to-read Live Activities. Aim to use the system’s default content margins for your Live Activities and only show content that’s relevant to the person viewing it. However, you may want to change the system’s default content margin to display more content or provide a custom user interface that matches your app. To set custom content margins, use [`contentMargins(_:_:for:)`](../WidgetKit/dynamicisland/contentmargins%28_,_,for%29.md).  The following example results in a margin of eight points for the trailing edge of an expanded Live Activity.
 
@@ -115,7 +115,7 @@ If you repeatedly use the `contentMargins(_:_:for:)` modifier, the system uses t
 
 > **Note**: Avoid placing content too close to the edges of the Dynamic Island.
 
-##### Use custom colors
+### Use custom colors
 
 Live Activities in the Dynamic Island use a black background color with white text. Use the [`keylineTint(_:)`](../WidgetKit/dynamicisland/keylinetint%28_%29.md) modifier to apply a subtle tint color to the border of the Dynamic Island when the device is in Dark Mode and change text color as needed.
 

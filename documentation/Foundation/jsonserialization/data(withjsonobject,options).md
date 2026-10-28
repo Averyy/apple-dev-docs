@@ -25,11 +25,11 @@ class func data(withJSONObject obj: Any, options opt: JSONSerialization.WritingO
 + (NSData *) dataWithJSONObject:(id) obj options:(NSJSONWritingOptions) opt error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 JSON data for `obj`, or `nil` if an internal error occurs. The resulting data is encoded in UTF-8.
 
-#### Discussion
+## Discussion
 
 If `obj` can’t produce valid JSON, [`JSONSerialization`](../jsonserialization.md) throws an exception. This exception occurs prior to parsing and represents a programming error, not an internal error. Before calling this method, you should check whether the input can produce valid JSON by using [`isValidJSONObject(_:)`](./isvalidjsonobject%28_%29.md).
 

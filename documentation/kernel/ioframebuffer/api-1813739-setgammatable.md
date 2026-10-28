@@ -15,11 +15,11 @@ virtual IOReturn setGammaTable(
  void *data );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to allow a gamma table to be set.
 

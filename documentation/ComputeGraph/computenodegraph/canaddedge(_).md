@@ -21,11 +21,11 @@ Returns whether the given edge can be added to the graph.
 func canAddEdge(_ edge: ComputeNodeGraph.Edge) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if calling [`addEdge(_:)`](./addedge%28_%29.md) with this edge would succeed.
 
-#### Discussion
+## Discussion
 
 This is the non-throwing preflight check for [`addEdge(_:)`](./addedge%28_%29.md). Use it to validate a connection — for example, to highlight compatible ports during drag-and-drop — without modifying the graph.
 

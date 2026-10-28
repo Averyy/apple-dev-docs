@@ -19,11 +19,11 @@ func CMSDecoderSetSearchKeychain(_ cmsDecoder: CMSDecoder, _ keychainOrArray: CF
 OSStatus CMSDecoderSetSearchKeychain(CMSDecoderRef cmsDecoder, CFTypeRef keychainOrArray);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you don’t call this function, the decoder uses the default keychain search list to search for intermediate certificates.
 

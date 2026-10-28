@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_WritingDirectionSizePercentage: CFString
 extern CFStringRef const kCMTextMarkupAttribute_WritingDirectionSizePercentage;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a non-negative `CFNumber` that expresses the width of the bounding box for text layout as a percentage of the video frame’s dimension in the writing direction. For a horizontal writing direction, it’s the width. For a vertical writing direction, it’s the height.
 

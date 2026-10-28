@@ -21,7 +21,7 @@ Calculates the double-precision element-wise division of a scalar value and a ve
 static func divide<U, V>(_ scalar: Double, _ vector: U, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`, as follows:
 

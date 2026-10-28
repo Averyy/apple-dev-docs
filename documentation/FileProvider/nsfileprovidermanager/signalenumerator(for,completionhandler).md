@@ -33,7 +33,7 @@ func signalEnumerator(for containerItemIdentifier: NSFileProviderItemIdentifier)
 - [Signaling Changes for User-Driven Actions](../signaling-changes-for-user-driven-actions.md)
 - [Using push notifications to signal changes](../using-push-notifications-to-signal-changes.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

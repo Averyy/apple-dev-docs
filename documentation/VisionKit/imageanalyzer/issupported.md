@@ -23,7 +23,7 @@ final class var isSupported: Bool { get }
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 Check this property at runtime to determine if the device supports finding text, machine-readable codes, and subjects in images. The system sets this property to `true` on devices that have an A12 Bionic chip or later.
 

@@ -21,7 +21,7 @@ The strategy that a decoder uses to decode raw data.
 var dataDecodingStrategy: JSONDecoder.DataDecodingStrategy { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default strategy is the [`JSONDecoder.DataDecodingStrategy.base64`](./datadecodingstrategy-swift.enum/base64.md) strategy.
 

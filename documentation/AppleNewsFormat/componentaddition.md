@@ -15,7 +15,7 @@ Properties that all types of component additions share.
 object ComponentAddition
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this object type directly; use only the objects that extend it, like [`ComponentLink`](./componentlink.md).
 

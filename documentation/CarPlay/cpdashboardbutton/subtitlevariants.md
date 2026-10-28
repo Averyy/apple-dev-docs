@@ -21,7 +21,7 @@ var subtitleVariants: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * subtitleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 An array of subtitle variants for this button in an arrangement from most- to least-preferred. The system selects a subtitle from this array that best fits the available space. You provide the subtitle variants to [`init(titleVariants:subtitleVariants:image:handler:)`](./init%28titlevariants,subtitlevariants,image,handler%29.md) as localized, displayable content.
 

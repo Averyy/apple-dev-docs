@@ -19,11 +19,11 @@ class var preferredScrollerStyle: NSScroller.Style { get }
 @property (class, readonly) NSScrollerStyle preferredScrollerStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The style of scrollers that applications should use wherever possible.
 
-#### Discussion
+## Discussion
 
 The preferred scroller style is determined by the Appearance preference panel’s “Show scroll bars” setting for the current user, and—when the user’s preference is set to “Automatically based on input device”—by the set of built-in and connected pointing devices and the user’s scroll capability preference settings for them. The preferred scroller style may therefore change over time, and applications should be prepared to adapt their user interfaces to the new scroller style if needed.
 

@@ -22,7 +22,7 @@ var annotation: Any? { get set }
 @property (nonatomic, strong, nullable) id annotation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to pass information about the document type to the app responsible for opening it. Although the type of this object should be one used to contain property list information—namely, [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSArray`](../../Foundation/nsarray.md), [`NSData`](../../Foundation/nsdata.md), [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), or [`NSDate`](../../Foundation/nsdate.md)—the root object must be an [`NSDictionary`](../../Foundation/nsdictionary.md).
 

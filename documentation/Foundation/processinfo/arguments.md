@@ -25,7 +25,7 @@ var arguments: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains all the information passed in the `argv` array, including the executable name in the first element.
 

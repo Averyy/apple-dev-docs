@@ -25,7 +25,7 @@ var nvec: Int32
 int nvec;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `0`, the operation doesn’t perform reorthogonalization.
 

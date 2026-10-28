@@ -16,7 +16,7 @@ Values that define the required model version of the insight.
 @nonexhaustive enum ModelVersion
 ```
 
-#### Discussion
+## Discussion
 
 Normally, [`InsightEvaluator.ModelVersion.current`](./modelversion/current.md) is the correct choice; only request specific older versions if there’s a particular need to either run an older version in parallel with the latest version or regulatory requirements require you to use a specific version.
 

@@ -22,7 +22,7 @@ optional func addShortcut(_ sender: Any?)
 - (void) addShortcut:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To present the standard system UI for adding text-replacement shortcuts, call [`addShortcut(forText:from:)`](../betextinteraction/addshortcut%28fortext,from%29.md) in your implementation of this method.
 

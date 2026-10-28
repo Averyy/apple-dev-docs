@@ -18,7 +18,7 @@ Sets the name of the service in the system’s registry.
 virtual kern_return_t SetName(const IOServiceName name);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 

@@ -24,7 +24,7 @@ let CIFeatureTypeRectangle: String
 extern NSString * const CIFeatureTypeRectangle;
 ```
 
-#### Discussion
+## Discussion
 
 To detect rectangles in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
 

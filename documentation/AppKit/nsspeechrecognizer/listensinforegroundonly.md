@@ -19,7 +19,7 @@ var listensInForegroundOnly: Bool { get set }
 @property BOOL listensInForegroundOnly;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the speech recognizer’s commands are only recognized when the speech recognizer’s application is the frontmost application—typically the application displaying the menu bar. If the value of the property is [`false`](../../Swift/false.md), the commands are recognized regardless of the visibility of the application, including agent applications (agent applications, which have the `LSUIElement` property set, do not appear in the Dock or Force Quit window). The default value of this property is [`true`](../../Swift/true.md).
 

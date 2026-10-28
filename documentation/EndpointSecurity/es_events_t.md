@@ -20,7 +20,7 @@ struct es_events_t
 typedef union { ... } es_events_t;
 ```
 
-#### Overview
+## Overview
 
 Each event monitored by Endpoint Security delivers different properties to clients. For example, a file-renaming event provides source and target paths, while a process-forking event provides the process identifier of the new child process. This C `union` represents each kind of event as a unique member, each with a type specific to the kind of data it contains.
 

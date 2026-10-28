@@ -12,7 +12,7 @@ The different types of capability that a plug-in can provide.
 enum PluginCapability
 ```
 
-#### Overview
+## Overview
 
 In this version of SwiftPM, only build tool and command plug-ins are supported; this enumeration will be extended as new plug-in capabilities are added.
 

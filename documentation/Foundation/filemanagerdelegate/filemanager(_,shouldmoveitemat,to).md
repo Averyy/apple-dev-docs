@@ -25,11 +25,11 @@ optional func fileManager(_ fileManager: FileManager, shouldMoveItemAt srcURL: U
 - (BOOL) fileManager:(NSFileManager *) fileManager shouldMoveItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be moved or [`false`](../../Swift/false.md) if it should not be moved. If you do not implement this method, the file manager assumes a response of [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 This method is called only once for the item being moved, regardless of whether the item is a file, directory, or symbolic link.
 

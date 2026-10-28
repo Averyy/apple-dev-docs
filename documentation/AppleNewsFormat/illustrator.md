@@ -20,11 +20,11 @@ object Illustrator
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `Illustrator` component to indicate the name of the contributor whose illustrations appear in the article. For photo attributions, you can use the [`Photographer`](./photographer.md) component.
 
-##### Example
+### Example
 
 ```json
 {

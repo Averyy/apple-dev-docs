@@ -5,11 +5,11 @@
 
 Play haptic tracks along with known music tracks.
 
-#### Overview
+## Overview
 
 Music Haptics is an accessibility feature that allows a person to indicate that they want to play haptic tracks along with known music tracks. This feature allows people who are deaf or hard of hearing to enjoy music through tactile feedback. A person can turn on this feature in Settings > Accessibility > Music Haptics. If you play music in your app, you can support haptic feedback for known songs.
 
-##### Support Music Haptics
+### Support Music Haptics
 
 To support Music Haptics in your app:
 
@@ -18,7 +18,7 @@ To support Music Haptics in your app:
 - Register for the [`activeStatusDidChangeNotification`](./mamusichapticsmanager/activestatusdidchangenotification.md) notification to listen for changes in the Music Haptics setting.
 - Supply a known song’s International Standard Recording Code (ISRC) as part of the [`nowPlayingInfo`](../MediaPlayer/mpnowplayinginfocenter/nowplayinginfo.md) dictionary of [`MPNowPlayingInfoCenter`](../MediaPlayer/mpnowplayinginfocenter.md), using the key [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](../MediaPlayer/mpnowplayinginfopropertyinternationalstandardrecordingcode.md). For more information about becoming the Now Playing app, refer to [Becoming a now playable app](../MediaPlayer/becoming-a-now-playable-app.md).
 
-##### Indicate haptic playback status
+### Indicate haptic playback status
 
 To indicate the status of haptic playback for Music Haptics, you can use the following symbols:
 

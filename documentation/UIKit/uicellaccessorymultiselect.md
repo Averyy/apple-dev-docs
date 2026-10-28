@@ -19,7 +19,7 @@ The multiselect system accessory.
 @interface UICellAccessoryMultiselect : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A multiselect cell accessory changes its apperance according to the cell’s selection state. The accessory displays as an empty circle for an unselected cell and as a filled circle with a checkmark for a selected cell. This accessory appears on the leading edge of the cell.
 

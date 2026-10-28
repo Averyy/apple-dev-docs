@@ -23,7 +23,7 @@ let NSPersonNameComponentDelimiter: String
 extern NSString * const NSPersonNameComponentDelimiter;
 ```
 
-#### Discussion
+## Discussion
 
 The character or characters used to separate name components.
 

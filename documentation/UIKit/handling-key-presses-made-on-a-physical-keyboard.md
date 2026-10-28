@@ -5,13 +5,13 @@
 
 Detect when someone presses and releases keys on a physical keyboard.
 
-#### Overview
+## Overview
 
 In iOS apps and Mac apps built with Mac Catalyst, the system reports key presses that a person makes on a physical keyboard by sending press events to responder objects in the responder chain of the active app.
 
 A responder chain is a linked series of [`UIResponder`](./uiresponder.md) objects, such as [UIViewController](https://developer.apple.com/library/archive/releasenotes/General/RN-iPhoneSDK-3/index.html#//apple_ref/doc/uid/TP40008407-CH1-SW19) and [`UIApplication`](./uiapplication.md), that either handle an event or transfer responsibility for handling the event to other responders in the app. To learn more about responders and the responder chain, see [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md).
 
-##### Detect a key press
+### Detect a key press
 
 To detect a key press that a person makes on a physical keyboard, override [`pressesBegan(_:with:)`](./uiresponder/pressesbegan%28_,with%29.md) in a responder object of your app such as the app delegate or main view controller.
 
@@ -51,7 +51,7 @@ override func pressesBegan(_ presses: Set<UIPress>,
 }
 ```
 
-##### Detect a key release
+### Detect a key release
 
 Override the responder’s [`pressesEnded(_:with:)`](./uiresponder/pressesended%28_,with%29.md) method to detect when someone releases a key. To get information about the key, do the same as you did when detecting a key press; inspect the [`key`](./uipress/key.md) property of each press in the `presses` set. For example, the following code listing handles someone releasing either the left or right arrow key.
 

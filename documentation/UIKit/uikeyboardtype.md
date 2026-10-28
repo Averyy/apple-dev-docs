@@ -23,7 +23,7 @@ enum UIKeyboardType
 enum UIKeyboardType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`keyboardType`](./uitextinputtraits/keyboardtype.md) property.
 

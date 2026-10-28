@@ -19,7 +19,7 @@ Creates an object from a custom material’s blending property.
 init(blending value: CustomMaterial.Blending)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a `PhysicallyBasedMaterial.Blending` instance using the values from an existing [`CustomMaterial.Blending`](../../custommaterial/blending-swift.enum.md) object.
 

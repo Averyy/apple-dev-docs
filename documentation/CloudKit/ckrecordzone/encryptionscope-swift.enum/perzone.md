@@ -25,7 +25,7 @@ case perZone
 CKRecordZoneEncryptionScopePerZone
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional optimization that can reduce the overall storage used by encryption keys in a zone. Note that:
 

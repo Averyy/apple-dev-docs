@@ -5,13 +5,13 @@
 
 Manage shared content collaboration in your app using CloudKit and iCloud Drive.
 
-#### Overview
+## Overview
 
 Your app can create collaborations and share content in a Messages conversation by leveraging [CloudKit](../CloudKit/CloudKit.md) and iCloud Drive to create and store content on the server. Collaborators add a document to conversations by sharing content using Messages. The system displays collaboration activity in Messages conversations and in active FaceTime calls.
 
 This collaboration process builds on existing technologies, like drag and drop and the system share sheet. If your app doesn’t use [iCloud](../Foundation/icloud.md) for shared content, the [Shared with You](./SharedWithYou.md) framework provides an [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
 
-##### Create a collaboration object
+### Create a collaboration object
 
 If your app is sharing a file URL using iCloud Drive, that URL is your collaboration object. To manage a CloudKit collaboration, your app uses [`NSItemProvider`](../Foundation/nsitemprovider.md) to register a [`CKShare`](../CloudKit/ckshare.md) container and create a collaboration object. The system transports your app’s data to other processes using the `CKShare` container.
 
@@ -36,7 +36,7 @@ let itemProvider = NSItemProvider()
 itemProvider.registerCKShare(share, container: container, allowedSharingOptions: CKAllowedSharingOptions.standard)
 ```
 
-##### Present collaboration controls
+### Present collaboration controls
 
 A collaborator can modify the share options from the share sheet. To add the collaboration controls to the header of a share sheet, your app provides the collaboration object that it created or retrieved from the server.
 
@@ -62,7 +62,7 @@ let sharingServicePicker = NSSharingServicePicker(items: [collaborationObject])
 sharingServicePicker.show(relativeTo: view.bounds, of: view, preferredEdge: .minY)
 ```
 
-##### Provide a title and image for the collaboration header
+### Provide a title and image for the collaboration header
 
 If your app provides a file as shared data, the system automatically populates a title and image for the collaboration header in the share sheet. Otherwise, if your app uses CloudKit data as shared content, or if you’d like to override the default title and image, you can provide a title and image for the collaboration header.
 
@@ -99,7 +99,7 @@ let previewRepresentingItem = NSPreviewRepresentingActivityItem(item: collaborat
 let picker = NSSharingServicePicker(items: [previewRepresentingItem])
 ```
 
-##### Create a SwiftUI transferable object for collaboration through ShareLink
+### Create a SwiftUI transferable object for collaboration through ShareLink
 
 In SwiftUI, use [`ShareLink`](../SwiftUI/sharelink.md) to support collaboration mode in the share sheet. The object your app shares must adopt [`Transferable`](../CoreTransferable/transferable.md), a protocol for sharing and data transfer.
 
@@ -143,7 +143,7 @@ struct ContentView: View {
 }
 ```
 
-##### Initialize the collaboration view
+### Initialize the collaboration view
 
 A collaborator accesses the [`SWCollaborationView`](./swcollaborationview.md) using an icon in the navigation bar. This icon shows the app that manages the shared content and the number of collaborators associated with the collaboration.
 
@@ -173,7 +173,7 @@ collaborationView.manageButtonTitle = "Custom Manage Button"
 
 If your app uses a custom collaboration infrastructure, you must provide your own manage button.
 
-##### Observe when a server saves a share
+### Observe when a server saves a share
 
 Since your app needs to manage active content sharing, it’s critical to know when a share starts or stops. If your app uses CloudKit or iCloud Drive, Shared with You provides a [`CKSystemSharingUIObserver`](../CloudKit/cksystemsharinguiobserver.md) protocol that your app uses to observe and handle updates to collaborations.
 
@@ -209,7 +209,7 @@ observer.systemSharingUIDidStopSharingBlock = { _, result in
 }
 ```
 
-##### Post notices for shared content collaboration
+### Post notices for shared content collaboration
 
 Your app can post notices to summarize updates to a collaboration. These notices appear at the top of the related Messages thread. These updates include changes to the shared content, new mentions, server-side changes, and updates to the collaborators.
 
@@ -235,7 +235,7 @@ let editEvent = SWHighlightChangeEvent(highlight: highlight, trigger: .edit)
 highlightCenter.postNotice(for: editEvent)
 ```
 
-##### Post a persistence event notice
+### Post a persistence event notice
 
 Use the [`SWHighlightPersistenceEvent`](./swhighlightpersistenceevent.md) to post a notice when your app moves, renames, or deletes content on the server. In the example below, the [`SWHighlightPersistenceEventTrigger.renamed`](./swhighlightpersistenceeventtrigger/renamed.md) trigger type signifies the document name has changed.
 
@@ -247,7 +247,7 @@ let renamedEvent = SWHighlightPersistenceEvent(highlight: highlight, trigger: .r
 highlightCenter.postNotice(for: renamedEvent)
 ```
 
-##### Post a membership event notice
+### Post a membership event notice
 
 When your app alters the membership for a collaboration and triggers a membership event, the system posts an update to the collaborators.
 

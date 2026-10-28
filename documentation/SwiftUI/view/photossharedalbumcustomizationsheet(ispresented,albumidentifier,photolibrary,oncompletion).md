@@ -20,7 +20,7 @@ nonisolated
 func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (((any Error)?) -> Void)? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 > **Remark**:  In order for the interface to appear, both `isPresented` must be `true` and `albumIdentifier` must not be `nil`. When the customization is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels customization, `isPresented` will be set to `false` and `onCompletion` will not be called.
 

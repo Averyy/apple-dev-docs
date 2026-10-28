@@ -25,11 +25,11 @@ func CTRunGetAdvancesPtr(_ run: CTRun) -> UnsafePointer<CGSize>?
 extern const CGSize *CTRunGetAdvancesPtr(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A valid pointer to an array of `CGSize` structures representing the glyph advance array or `NULL`.
 
-#### Discussion
+## Discussion
 
 The advance array will have a length equal to the value returned by [`CTRunGetGlyphCount(_:)`](./ctrungetglyphcount%28_%29.md). The caller should be prepared for this function to return `NULL` even if there are glyphs in the stream. Should this function return `NULL`, the caller needs allocate its own buffer and call [`CTRunGetAdvances(_:_:_:)`](./ctrungetadvances%28_,_,_%29.md) to fetch the advances. Note that advances alone are not sufficient for correctly positioning glyphs in a line, as a run may have a non-identity matrix or the initial glyph in a line may have a non-zero origin; callers should consider using positions instead.
 

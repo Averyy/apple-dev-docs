@@ -25,7 +25,7 @@ func CTFontCreateCopyWithFamily(_ font: CTFont, _ size: CGFloat, _ matrix: Unsaf
 extern CTFontRefCTFontCreateCopyWithFamily(CTFontRef font, CGFloat size, const CGAffineTransform *matrix, CFStringRef family);
 ```
 
-#### Return Value
+## Return Value
 
 A new font reference with the original traits in the given family, or `NULL` if none is found in the system.
 

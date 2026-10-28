@@ -24,7 +24,7 @@ typealias UITextWritingDirection = NSWritingDirection
 typedef NSWritingDirection UITextWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Constants of this type are returned from the [`baseWritingDirection(for:in:)`](./uitextinput/basewritingdirection%28for,in%29.md) method and are used as arguments of the [`setBaseWritingDirection(_:for:)`](./uitextinput/setbasewritingdirection%28_,for%29.md) method.
 

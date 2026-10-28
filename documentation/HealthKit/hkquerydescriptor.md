@@ -24,7 +24,7 @@ class HKQueryDescriptor
 @interface HKQueryDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use descriptors to create queries that return multiple data types. You can use descriptors when creating [`HKSampleQuery`](./hksamplequery.md), [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md), or [`HKObserverQuery`](./hkobserverquery.md) instances.
 

@@ -22,7 +22,7 @@ nonisolated
 struct DefaultTabLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, the system creates it automatically when you construct a `Tab` or `TabSection`.
 

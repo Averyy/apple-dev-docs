@@ -19,7 +19,7 @@ var animatesToStartingPositionsOnCancelOrFail: Bool { get set }
 @property BOOL animatesToStartingPositionsOnCancelOrFail;
 ```
 
-#### Discussion
+## Discussion
 
 This property should be set immediately after creating the dragging session.
 

@@ -25,7 +25,7 @@ func clip(to rect: CGRect, mask: CGImage)
 extern void CGContextClipToMask(CGContextRef c, CGRect rect, CGImageRef mask);
 ```
 
-#### Discussion
+## Discussion
 
 If the `mask` parameter is an image mask, then Core Graphics clips in a manner identical to the behavior seen with the [`CGContextDrawImage`](../cgcontextdrawimage.md) function —the mask indicates an area to be left unchanged when drawing. The source samples of the image mask determine which points of the clipping area are changed, acting as an “inverse alpha” value. If the value of a source sample in the image mask is `S`, then the corresponding point in the current clipping area is multiplied by an alpha value of (`1–S`). For example, if `S` is `1` then the point in the clipping area becomes transparent. If `S` is `0`, the point in the clipping area is unchanged.
 

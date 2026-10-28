@@ -23,7 +23,7 @@ case short
 NSDateFormatterShortStyle
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a short style, typically numeric only, such as “11/23/37” or “3:30 PM”.
 

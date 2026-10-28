@@ -5,7 +5,7 @@
 
 Use metrics to tune the performance of your machine learning model.
 
-#### Overview
+## Overview
 
 Evaluating and improving your model starts with looking at its performance across different data sets. Metrics from each dataset inform which changes have the most impact on your model’s accuracy.
 
@@ -23,7 +23,7 @@ print("Evaluation Metrics\n", evaluationMetrics)
 
 In this case, you see output for several different metrics, including [`classificationError`](./mlclassifiermetrics/classificationerror.md), [`precisionRecall`](./mlclassifiermetrics/precisionrecall.md), and [`confusion`](./mlclassifiermetrics/confusion.md) for classifiers and [`maximumError`](./mlregressormetrics/maximumerror.md) and [`rootMeanSquaredError`](./mlregressormetrics/rootmeansquarederror.md) for regressors. Use these values from each data set to determine where your model needs to improve.
 
-##### Improve Your Model’s Training Accuracy
+### Improve Your Model’s Training Accuracy
 
 If the training accuracy of your model is low, it’s an indication that your current model configuration can’t capture the complexity of your data.
 
@@ -33,7 +33,7 @@ Try adjusting the training parameters. When working with image data, double the 
 
 For natural language data, try a different underlying algorithm (see [`MLTextClassifier.ModelAlgorithmType`](./mltextclassifier/modelalgorithmtype.md)). For more general tasks, use a different underlying model than the type determined by [`MLClassifier`](./mlclassifier.md) (see *Supporting Classifier Types*) or [`MLRegressor`](./mlregressor.md) (see *Supporting Regressor Types*).
 
-##### Improve Your Model’s Validation Accuracy
+### Improve Your Model’s Validation Accuracy
 
 If your model’s accuracy on the validation set is low or fluctuates between low and high each time you train the model, you need more data. You can generate more input data from the examples you already collected, a technique known as *data augmentation*. For image data, you can combine operations like cropping, rotation, blurring, and exposure adjustment to make one image into many examples.
 
@@ -41,7 +41,7 @@ If your model’s accuracy on the validation set is low or fluctuates between lo
 
 It’s also possible for you to have lots of data and validation accuracy that is still significantly lower than your training accuracy. In this case, your model is _overfitting, _meaning that it’s learning too many specific details about your training set that don’t generally apply to other examples. In this case, you need to reduce the number of training iterations to prevent the model from learning too much about your training data.
 
-##### Improve Your Model’s Evaluation Accuracy
+### Improve Your Model’s Evaluation Accuracy
 
 If your model’s accuracy on your testing data is lower than your training or validation accuracy, it usually indicates that there are meaningful differences between the kind of data you trained the model on and the testing data you’re providing for evaluation.
 

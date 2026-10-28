@@ -15,7 +15,7 @@ An array of highlight groups, with each group containing a list of highlights.
 attribute Array highlightGroups;
 ```
 
-#### Discussion
+## Discussion
 
 The `highlightGroups` property enables you to show several groups of highlights from a stream. Each highlight group in the array contains a list of highlights. Each highlight is an object with the following properties: `description`, `duration`, `imageURL`, `name`, and `starttime`. Highlight objects are ad-hoc JSON objects and there are no explicit classes for these types.
 

@@ -20,7 +20,7 @@ A `UTType` identifying how to interpret [`content`](./content.md).
 var contentType: UTType
 ```
 
-#### Discussion
+## Discussion
 
 Packages that ship data attachment payloads should declare a dedicated `UTType` conforming to `.data` (or a more specific format like `.json`) and expose it as a static extension member so consumers can match on it directly.
 

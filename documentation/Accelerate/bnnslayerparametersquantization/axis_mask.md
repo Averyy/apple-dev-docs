@@ -27,7 +27,7 @@ var axis_mask: Int
 size_t axis_mask;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `0` to apply scale and bias to the entire tensor.
 

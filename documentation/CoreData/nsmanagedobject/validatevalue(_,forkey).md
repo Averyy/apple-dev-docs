@@ -25,7 +25,7 @@ func validateValue(_ value: AutoreleasingUnsafeMutablePointer<AnyObject?>, forKe
 - (BOOL) validateValue:(id*) value forKey:(NSString *) key error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is responsible for two things: coercing the value into an appropriate type for the object, and validating it according to the object’s rules.
 

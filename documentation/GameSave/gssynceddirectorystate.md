@@ -23,7 +23,7 @@ class GSSyncedDirectoryState
 @interface GSSyncedDirectoryState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`state`](./gssynceddirectorystate/state.md) property to determine the validity of the other properties
 

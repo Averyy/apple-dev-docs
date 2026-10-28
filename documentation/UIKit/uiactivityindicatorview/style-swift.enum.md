@@ -23,7 +23,7 @@ enum Style
 enum UIActivityIndicatorViewStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You set the value of the [`style`](./style-swift.property.md) property with these constants.
 

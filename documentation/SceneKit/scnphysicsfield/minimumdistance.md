@@ -25,7 +25,7 @@ var minimumDistance: CGFloat { get set }
 @property (nonatomic) CGFloat minimumDistance;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the beginning of the field’s falloff area. At distances less than the minimum, the field’s effect is at full strength. At greater distances, the field’s effect diminishes based on the value of the [`falloffExponent`](./falloffexponent.md) property. The default minimum distance is a very small (but nonzero) value.
 

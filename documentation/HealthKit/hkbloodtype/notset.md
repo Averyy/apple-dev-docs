@@ -24,7 +24,7 @@ case notSet
 HKBloodTypeNotSet
 ```
 
-#### Discussion
+## Discussion
 
 For more information on permissions, see `HealthKit`.
 

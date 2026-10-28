@@ -25,7 +25,7 @@ let kCGImageProperty8BIMDictionary: CFString
 extern CFStringRef const kCGImageProperty8BIMDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the available metadata keys, see [8BIM Image Properties](./api-8bim-image-properties.md).
 

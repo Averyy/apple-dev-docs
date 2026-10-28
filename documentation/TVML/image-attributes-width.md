@@ -5,7 +5,7 @@
 
 Specifies the maximum width for an image element.
 
-#### Overview
+## Overview
 
 The image is shrunk to fit the bounding box if the image is bigger than the size specified for the `width` attribute. You must declare either a `width` style or attribute for an image. Declaring a style overwrites an attribute declaration. Here’s an example that sets the width for an image to 200 points.
 
@@ -13,11 +13,11 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 <img src="resource://mpaa-g" width="200">
 ```
 
-##### Values for width
+### Values for width
 
 - **Integer**: The width of the element, in points.
 
-##### Elements that Use width
+### Elements that Use width
 
 - [decorationLabel](./decorationlabel.md)
 - [fullscreenImg](./fullscreenimg.md)

@@ -24,7 +24,7 @@ class UISceneActivationConditions
 @interface UISceneActivationConditions : NSObject
 ```
 
-#### Overview
+## Overview
 
 When an event occurs that requires the activation of a scene, UIKit routes the event to the scene best suited to handle it. UIKit determines which scene is the best by evaluating the target content identifier of the event against the predicates in each scene’s [`UISceneActivationConditions`](./uisceneactivationconditions.md) object. You create [`UISceneActivationConditions`](./uisceneactivationconditions.md) objects for your scenes and use them to prioritize which events each scene handles. Use the [`prefersToActivateForTargetContentIdentifierPredicate`](./uisceneactivationconditions/preferstoactivatefortargetcontentidentifierpredicate.md) predicate to designate the scene as the primary handler of an event.
 

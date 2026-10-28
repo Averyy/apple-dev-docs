@@ -23,7 +23,7 @@ case failure
 INStartCallIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevent your app from starting the user’s call. For example, use this code if the user’s call requires accessing the network and the network is unavailable.
 

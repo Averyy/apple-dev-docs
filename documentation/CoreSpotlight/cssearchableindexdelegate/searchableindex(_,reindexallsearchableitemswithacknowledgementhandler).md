@@ -24,7 +24,7 @@ func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexAllSearchableI
 - (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexAllSearchableItemsWithAcknowledgementHandler:(void (^)()) acknowledgementHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the index tells the delegate to reindex its searchable data and clear local state when the index has been lost. An app extension should not use the index passed in `searchableIndex` when a custom data protection class is needed.
 

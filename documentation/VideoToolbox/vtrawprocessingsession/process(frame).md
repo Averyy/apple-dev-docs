@@ -15,7 +15,7 @@ Processes an input pixel buffer.
 func process(frame: CVPixelBuffer) async throws -> CVPixelBuffer
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

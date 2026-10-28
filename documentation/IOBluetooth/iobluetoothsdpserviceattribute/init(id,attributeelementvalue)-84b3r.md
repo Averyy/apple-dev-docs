@@ -19,11 +19,11 @@ init!(id newAttributeID: BluetoothSDPServiceAttributeID, attributeElementValue: 
 - (instancetype) initWithID:(BluetoothSDPServiceAttributeID) newAttributeID attributeElementValue:(NSObject *) attributeElementValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns self if successful. Returns nil if there was an error parsing the element value.
 
-#### Discussion
+## Discussion
 
 See +[IOBluetoothSDPDataElement withElementValue:] for a description of the types that may be passed in as the attributeElementValue.
 

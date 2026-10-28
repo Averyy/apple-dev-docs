@@ -15,11 +15,11 @@ CMError CMSetProfileElementSize (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Your application can use the `CMSetProfileElementSize` function to reserve the size of element data for a specific tag before you call the function [CMGetPartialProfileElement](./api-1804984-cmgetpartialprofileelement.md) to set the element data. The most efficient way to set a large amount of element data when you know the size of the data is to first set the size, then call the `CMSetPartialProfileElement` function to set each of the data segments. Calling the `CMSetProfileElementSize` function first eliminates the need for the ColorSync Manager to repeatedly increase the size for the data each time you call the `CMSetPartialProfileElement` function. 
 

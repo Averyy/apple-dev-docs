@@ -25,7 +25,7 @@ var allCredentials: [URLProtectionSpace : [String : URLCredential]] { get }
 @property (copy, readonly) NSDictionary<NSURLProtectionSpace *,NSDictionary<NSString *,NSURLCredential *> *> * allCredentials;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary has keys corresponding to the [`URLProtectionSpace`](../urlprotectionspace.md) instances. The values are dictionaries where the keys are user name strings, and each value is the corresponding [`URLCredential`](../urlcredential.md) instances.
 

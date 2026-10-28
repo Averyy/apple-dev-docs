@@ -16,7 +16,7 @@ The authorized payment information for this transaction.
 readonly attribute ApplePayPayment payment;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute is contained by the [`onpaymentauthorized`](../applepaysession/onpaymentauthorized.md) event. Access this attribute using the event parameter in the callback function; for example, `var payinfo = event.payment;`.
 

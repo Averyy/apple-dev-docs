@@ -24,7 +24,7 @@ var clearColor: MTLClearColor { get set }
 @property (nonatomic) MTLClearColor clearColor;
 ```
 
-#### Discussion
+## Discussion
 
 When the view creates a render pass, it sets the load action for the color render target to [`MTLLoadAction.clear`](../../Metal/mtlloadaction/clear.md) and uses this color as the clear color. The default value is `(0.0, 0.0, 0.0, 1.0)`.
 

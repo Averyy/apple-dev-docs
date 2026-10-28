@@ -22,11 +22,11 @@ nonisolated
 func focusable(_ isFocusable: Bool = true, interactions: FocusInteractions) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets whether its child is focusable.
 
-#### Discussion
+## Discussion
 
 By default, SwiftUI enables all possible focus interactions. However, on macOS and iOS it is conventional for button-like views to only accept focus when the user has enabled keyboard navigation system-wide in the Settings app. Clients can reproduce this behavior with custom views by only supporting `.activate` interactions.
 

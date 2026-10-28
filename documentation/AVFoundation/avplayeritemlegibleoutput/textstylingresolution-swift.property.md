@@ -24,7 +24,7 @@ var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution { get
 @property (nonatomic, copy) AVPlayerItemLegibleOutputTextStylingResolution textStylingResolution;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values are described in `Text Style Settings`.  An exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)) is raised if this property is set to any other value.
 

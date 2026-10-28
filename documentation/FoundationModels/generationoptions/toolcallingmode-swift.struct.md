@@ -24,7 +24,7 @@ struct ToolCallingMode
 
 - [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
-#### Overview
+## Overview
 
 Use this to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
 

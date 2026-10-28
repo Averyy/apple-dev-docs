@@ -11,7 +11,7 @@ Initializes a new animation event object.
 void initWebKitAnimationEvent (in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in DOMString animationNameArg, in double elapsedTimeArg);
 ```
 
-#### Overview
+## Overview
 
 You use this method to initialize the value of a [`WebKitTransitionEvent`](../webkittransitionevent.md) object that is created through the `DocumentEvent` interface. This method can only be invoked before the `WebKitTransitionEvent` object is dispatched via the `dispatchEvent` method (although it can be invoked multiple times during that phase, if necessary). If it is invoked multiple times, the final invocation takes precedence.
 

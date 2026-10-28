@@ -25,7 +25,7 @@ var source: CMTimeRange
 CMTimeRange source;
 ```
 
-#### Discussion
+## Discussion
 
 For an empty edit, `source.start` is an invalid `CMTime`, in which case the system ignores `source.duration`. Otherwise, `source.start` is the starting time within the source, and `source.duration` is the duration of the source timeline to map to the target time range.
 

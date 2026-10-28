@@ -25,7 +25,7 @@ class var capitalizedLetters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * capitalizedLetterCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the capitalized letter characters.
 

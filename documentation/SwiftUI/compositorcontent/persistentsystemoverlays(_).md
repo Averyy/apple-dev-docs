@@ -17,7 +17,7 @@ nonisolated
 func persistentSystemOverlays(_ visibility: Visibility) -> some CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform. For an [`ImmersiveSpace`](../immersivespace.md), it affects the Home indicator.
 

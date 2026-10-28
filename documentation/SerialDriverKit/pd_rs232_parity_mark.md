@@ -15,7 +15,7 @@ The mark state.
 #define PD_RS232_PARITY_MARK
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to placing a logical `1` on the communication line.
 

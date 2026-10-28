@@ -21,7 +21,7 @@ The motion of the device or duration of the capture was outside of what the stab
 case outOfRange
 ```
 
-#### Discussion
+## Discussion
 
 The value of kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo if the module stabilizing the lens was unable to compensate for the movement.
 

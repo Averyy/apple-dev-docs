@@ -26,11 +26,11 @@ func CFHostScheduleWithRunLoop(_ theHost: CFHost, _ runLoop: CFRunLoop, _ runLoo
 extern void CFHostScheduleWithRunLoop(CFHostRef theHost, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Schedules `theHost` on a run loop, which causes resolutions of the host to be performed asynchronously. The caller is responsible for ensuring that at least one of the run loops on which the host is scheduled is being run.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

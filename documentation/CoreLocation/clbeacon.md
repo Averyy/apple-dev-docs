@@ -26,7 +26,7 @@ class CLBeacon
 
 - [Turning an iOS device into an iBeacon device](./turning-an-ios-device-into-an-ibeacon-device.md)
 
-#### Overview
+## Overview
 
 The [`CLBeacon`](./clbeacon.md) class represents a beacon that was observed during beacon ranging. You do not create instances of this class directly. The location manager ([`CLLocationManager`](./cllocationmanager.md)) object reports observed beacons to its associated delegate object.
 

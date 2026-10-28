@@ -29,7 +29,7 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 
 - [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 For buffers binding to an argument using the `device` address space, align the offset to the data type’s size. The maximum size for an offset is `16` bytes.
 

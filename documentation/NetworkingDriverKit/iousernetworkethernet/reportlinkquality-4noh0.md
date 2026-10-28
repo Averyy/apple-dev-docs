@@ -15,11 +15,11 @@ Reports the quality of the link between the device and your driver to the system
 virtual IOReturn ReportLinkQuality(IOUserNetworkLinkQuality linkQuality);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this method to make the system aware of changes in the quality of the link between your driver and the device.
 

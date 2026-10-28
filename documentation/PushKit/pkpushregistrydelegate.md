@@ -24,7 +24,7 @@ protocol PKPushRegistryDelegate : NSObjectProtocol
 @protocol PKPushRegistryDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods of this protocol in an object of your app and assign that object to the [`delegate`](./pkpushregistry/delegate.md) property of your `PKPushRegistry` object. Use the methods of this protocol to process incoming notifications and to react to token registration and invalidation.
 

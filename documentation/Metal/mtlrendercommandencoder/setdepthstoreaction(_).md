@@ -25,7 +25,7 @@ func setDepthStoreAction(_ storeAction: MTLStoreAction)
 - (void) setDepthStoreAction:(MTLStoreAction) storeAction;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the render command encoder’s store action for the depth attachment. You can assign the default store action for the depth attachment by configuring the [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) property of its [`MTLRenderPassDepthAttachmentDescriptor`](../mtlrenderpassdepthattachmentdescriptor.md) (see [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) and its [`depthAttachment`](../mtlrenderpassdescriptor/depthattachment.md) property).
 

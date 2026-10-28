@@ -21,7 +21,7 @@ static func quantize(model: Module, groupSize: Int = 64, bits: Int = 4, predicat
 
 - [Creating Modules](../custom-layers.md)
 
-#### Discussion
+## Discussion
 
 Please see the discussion in [`Linear`](../linear.md) for considerations when replacing layers.
 

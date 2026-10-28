@@ -14,14 +14,14 @@ Use the given string instead of the property’s name.
 ## Declaration
 
 ```swift
-static func customLong(_ name: String, withSingleDash: Bool = false) -> NameSpecification.Element
+static func customLong(_ name: String, withSingleDash: Bool = false) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 A `long` name specification with the requested `name`.
 
-#### Discussion
+## Discussion
 
 To create a single-dash argument, pass `true` as `withSingleDash`. Note that combining single-dash options and options with short, single-character names can lead to ambiguities for the user.
 

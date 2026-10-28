@@ -21,7 +21,7 @@ var currentUserIdentifier: TVUserIdentifier? { get }
 @property (nonatomic, readonly, nullable) TVUserIdentifier currentUserIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to identify which Apple TV user is currently active. On Apple TV, users may provide credentials for multiple Apple accounts and switch quickly between them. This property uniquely identifies the user for the active account. You might use this information to select an appropriate user profile for your app.
 

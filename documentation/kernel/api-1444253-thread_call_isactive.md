@@ -15,7 +15,7 @@ Determine whether a thread call is pending or currently executing.
 boolean_t thread_call_isactive(thread_call_t call);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the thread call is either scheduled for execution (immediately or at some point in the future) or is currently executing.
 

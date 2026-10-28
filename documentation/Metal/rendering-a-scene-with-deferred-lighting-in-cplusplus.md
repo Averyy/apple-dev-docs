@@ -14,7 +14,7 @@ Avoid expensive lighting calculations by implementing a deferred lighting render
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates a deferred lighting renderer that implements shadows using a shadow map, and culls light volumes using the stencil buffer.
 
@@ -22,7 +22,7 @@ This sample demonstrates a deferred lighting renderer that implements shadows us
 
 Deferred lighting can render a large number of lights more easily than forward lighting. For example, with forward lighting, in a scene with many lights, it’s infeasible for every fragment to calculate the contribution of every light. Complex sorting and binning algorithms need to be implemented to limit the calculation of light contributions to only those lights affecting each fragment. With deferred lighting, multiple lights can be applied to the scene with ease.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS.  The default scheme is macOS, which runs the sample as is on your Mac.
 
@@ -57,7 +57,7 @@ On macOS, press the following keys to examine the scene at runtime:
 
 On iOS, tap the screen to toggle between the standard and examination views at runtime.
 
-##### Review important concepts
+### Review important concepts
 
 Before you get started with the sample app, review these concepts to better understand key details of a deferred lighting renderer and some unique Metal features.
 
@@ -108,7 +108,7 @@ In this sample, some lighting fragment functions use these raster order groups:
 
 These raster order groups allow the GPU to read the geometry buffer in a fragment shader and execute the lighting calculations, before the lighting calculations from a previous instance of a fragment shader have finished writing their output data.
 
-##### Render a deferred lighting frame
+### Render a deferred lighting frame
 
 The sample renders each full frame by rendering these stages, in this order:
 
@@ -169,7 +169,7 @@ Renderer::drawFairies( pRenderEncoder );
 pRenderEncoder->endEncoding();
 ```
 
-##### Render the shadow map
+### Render the shadow map
 
 The sample renders a shadow map for the single directional light in the scene (the sun) by rendering the model from the light’s perspective.
 
@@ -208,7 +208,7 @@ gBuffer.normal_shadow = half4(eye_normal.xyz, shadow_sample);
 
 In the directional light and point light composition stages, the sample reads the shadow value from the geometry buffer and applies it to the fragment.
 
-##### Render the geometry buffer
+### Render the geometry buffer
 
 The sample’s geometry buffer contains these textures:
 
@@ -230,7 +230,7 @@ For the traditional deferred renderer, after the sample finishes writing data to
 
 For the single pass deferred renderer, after the sample finishes writing data to the geometry buffer textures, the sample doesn’t finalize the render command encoder and instead continues to use it for subsequent stages.
 
-##### Apply the directional lighting and shadows
+### Apply the directional lighting and shadows
 
 The sample applies directional lighting and shadows to the drawable that’s destined for the display.
 
@@ -276,7 +276,7 @@ Because this is the first stage that renders to the drawable, the iOS and tvOS r
 
 > **Note**: Because of the state of `m_directionLightDepthStencilState`, the `deferred_directional_lighting_fragment` functions only execute for fragments that should be lit. This optimization is simple yet important, and saves many fragment shader execution cycles.
 
-##### Cull the light volumes
+### Cull the light volumes
 
 The sample creates a stencil mask that’s used to avoid executing expensive lighting calculations for many fragments. It creates this stencil mask by using the depth buffer from the geometry buffer pass, and the stencil buffer, to track whether a light volume intersects any geometry. (If not, then it isn’t casting light on anything.)
 
@@ -351,7 +351,7 @@ When the algorithm is disabled, pixels in green and red are pixels for which the
 
 ![Rendering that shows point light fragment coverage when the stencil mask is disabled.](https://developer.apple.com/tutorials/images/com.apple.metal/deferred-lighting-cpp-10-StencilMaskVSFullVolumes@2x.png)
 
-##### Render the skybox and fairy lights
+### Render the skybox and fairy lights
 
 In the final lighting stages, the sample applies much simpler lighting techniques to the scene.
 

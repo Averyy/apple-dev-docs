@@ -23,15 +23,15 @@ func volume(for device: MediaOutputDevice) -> Float
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Return Value
+## Return Value
 
 The current volume level in the range 0.0 to 1.0.
 
-#### Discussion
+## Discussion
 
 Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
-#### Grouping
+## Grouping
 
 For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 

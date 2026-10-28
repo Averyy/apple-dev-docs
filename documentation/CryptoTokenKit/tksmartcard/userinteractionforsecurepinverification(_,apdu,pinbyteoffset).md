@@ -25,11 +25,11 @@ func userInteractionForSecurePINVerification(_ PINFormat: TKSmartCardPINFormat, 
 - (TKSmartCardUserInteractionForSecurePINVerification *) userInteractionForSecurePINVerificationWithPINFormat:(TKSmartCardPINFormat *) PINFormat APDU:(NSData *) APDU PINByteOffset:(NSInteger) PINByteOffset;
 ```
 
-#### Return Value
+## Return Value
 
 A new user interaction object for secure PIN verification, or `nil` if this feature is not supported by the Smart Card reader.
 
-#### Discussion
+## Discussion
 
 You should only call this method after a session to the Smart Card has been established using the [`beginSession(reply:)`](./beginsession%28reply%29.md) method, and before the session is terminated using the [`endSession()`](./endsession%28%29.md) method.
 

@@ -20,7 +20,7 @@ The overall level for all sounds of an audio mix group in relative decibels.
 var gain: Audio.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The gain is a value in the range `[-.infinity, .zero]`, where `-.infinity` is silent and `.zero` is nominal.
 

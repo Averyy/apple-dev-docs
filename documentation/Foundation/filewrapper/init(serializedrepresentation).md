@@ -25,11 +25,11 @@ init?(serializedRepresentation serializeRepresentation: Data)
 - (instancetype) initWithSerializedRepresentation:(NSData *) serializeRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 Regular-file file wrapper initialized from `serializedRepresentation`.
 
-#### Discussion
+## Discussion
 
 The file wrapper is not associated with a file-system node until you save it using [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md).
 

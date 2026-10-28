@@ -21,7 +21,7 @@ The width in pixels of the 2D coordinate system to define the rectangle.
 var referenceRasterWidth: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 Usually matches the width of the video or the output device.
 

@@ -24,7 +24,7 @@ var isBlinking: Bool { get set }
 @property (nonatomic, readwrite, getter=isBlinking) BOOL blinking;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) when you want the system to start animating the blink effect for the insertion point cursor. Set the property to [`false`](../../Swift/false.md) to stop the blink animation.
 

@@ -19,7 +19,7 @@ func rect(of cell: NSPathComponentCell, withFrame frame: NSRect, in view: NSView
 - (NSRect) rectOfPathComponentCell:(NSPathComponentCell *) cell withFrame:(NSRect) frame inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle occupied by the path component cell. `NSZeroRect` is returned if `cell` is not found or is not currently visible.
 

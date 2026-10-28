@@ -22,7 +22,7 @@ Executes the gradient pass of the training graph with the batch size, execution 
 func executeGradient(batchSize: Int, options: MLCExecutionOptions = [], outputsData: [String : MLCTensorData]? = nil) async throws -> TimeInterval
 ```
 
-#### Return Value
+## Return Value
 
 The execution time if you specify [`profiling`](../mlcexecutionoptions/profiling.md).
 

@@ -15,7 +15,7 @@ Returns the control’s identifying element.
 IOUserAudioObjectPropertyElement GetControlElement();
 ```
 
-#### Return Value
+## Return Value
 
 The conrol’s element.
 

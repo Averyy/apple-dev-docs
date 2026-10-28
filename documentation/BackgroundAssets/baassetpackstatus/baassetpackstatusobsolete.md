@@ -20,7 +20,7 @@ A status value that indicates that the asset pack is no longer available to down
 BAAssetPackStatusObsolete
 ```
 
-#### Discussion
+## Discussion
 
 Obsolete asset packs can’t be updated, and they also can’t be redownloaded once removed.
 

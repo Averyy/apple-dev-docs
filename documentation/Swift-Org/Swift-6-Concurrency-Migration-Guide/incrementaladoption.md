@@ -13,7 +13,7 @@ Migrating projects towards the Swift 6 language mode is usually done in stages. 
 
 Swift includes a number of language features and standard library APIs to help make incremental adoption easier.
 
-#### Wrapping Callback-Based Functions
+## Wrapping Callback-Based Functions
 
 APIs that accept and invoke a single function on completion are an extremely common pattern in Swift. It’s possible to make a version of such a function that is usable directly from an asynchronous context.
 
@@ -52,13 +52,13 @@ The `withCheckedContinuation` function is one of a [suite of standard library AP
 
 > **Note**: Introducing asynchronous code into a project can surface data isolation checking violations. To understand and address these, see [Crossing Isolation Boundaries](./commonproblems.md#Crossing-Isolation-Boundaries)
 
-#### Dynamic Isolation
+## Dynamic Isolation
 
 Expressing the isolation of your program statically, using annotations and other language constructs, is both powerful and concise. But it can be difficult to introduce static isolation without updating all dependencies simultaneously.
 
 Dynamic isolation provides runtime mechanisms you can use as a fallback for describing data isolation. It can be an essential tool for interfacing a Swift 6 component with another that has not yet been updated, even if these components are within the *same* module.
 
-##### Internal-Only Isolation
+### Internal-Only Isolation
 
 Suppose you have determined that a reference type within your project can be best described with `MainActor` static isolation.
 
@@ -92,7 +92,7 @@ Here, the isolation has been internalized into the class. This keeps any changes
 
 However, a major disadvantage of this technique is the type’s true isolation requirements remain invisible. There is no way for clients to determine if or how they should change based on this public API. You should use this approach only as a temporary solution, and only when you have exhausted other options.
 
-##### Usage-Only Isolation
+### Usage-Only Isolation
 
 If it is impractical to contain isolation exclusively within a type, you can instead expand the isolation to cover only its API usage.
 
@@ -118,7 +118,7 @@ class UIStyler {
 
 Combining static and dynamic isolation can be a powerful tool to keep the scope of changes gradual.
 
-##### Explicit MainActor Context
+### Explicit MainActor Context
 
 The `assumeIsolated` method is synchronous and exists to recover isolation information from runtime back into the type-system by preventing execution if the assumption was incorrect. The `MainActor` type also has a method you can use to manually switch isolation in an asynchronous context.
 
@@ -137,11 +137,11 @@ await MainActor.run {
 
 Remember that static isolation allows the compiler to both verify and automate the process of switching isolation as needed. Even when used in combination with static isolation, it can be difficult to determine when `MainActor.run` is truly necessary. While `MainActor.run` can be useful during migration, it should not be used as a substitute for expressing the isolation requirements of your system statically. The ultimate goal should still be to apply `@MainActor` to `PersonalTransportation`.
 
-#### Missing Annotations
+## Missing Annotations
 
 Dynamic isolation gives you tools to express isolation at runtime. But you may also find you need to describe other concurrency properties that are missing from unmigrated modules.
 
-##### Unmarked Sendable Closures
+### Unmarked Sendable Closures
 
 The sendability of a closure affects how the compiler infers isolation for its body. A callback closure that actually does cross isolation boundaries but is *missing* a `Sendable` annotation violates a critical invariant of the concurrency system.
 
@@ -196,7 +196,7 @@ Alternatively, it is also possible to disable runtime isolation assertions for t
 
 > ⚠️ **Warning**: This flag should be used with caution. Disabling these runtime checks will permit data isolation violations.
 
-#### Integrating DispatchSerialQueue with Actors
+## Integrating DispatchSerialQueue with Actors
 
 By default, the mechanism actors use to schedule and execute work is system-defined. However you can override this to provide a custom implementation. The `DispatchSerialQueue` type includes built-in support for this facility.
 
@@ -216,7 +216,7 @@ actor LandingSite {
 
 This can be useful if you want to migrate a type towards the actor model while maintaining compatibility with code that depends on `DispatchQueue`.
 
-#### Backwards Compatibility
+## Backwards Compatibility
 
 It’s important to keep in mind that static isolation, being part of the type system, affects your public API. But you can migrate your own modules in a way that improves their APIs for Swift 6 *without* breaking any existing clients.
 
@@ -231,7 +231,7 @@ public class WindowStyler {
 
 Using `@preconcurrency` this way marks the isolation as conditional on the client module also having complete checking enabled. This preserves source compatibility with clients that have not yet begun adopting Swift 6.
 
-#### Dependencies
+## Dependencies
 
 Often, you aren’t in control of the modules you need to import as dependencies. If these modules have not yet adopted Swift 6, you may find yourself with errors that are difficult or impossible to resolve.
 
@@ -240,7 +240,7 @@ There are a number of different kinds of problems that result from using unmigra
 - [Non-Sendable types](./commonproblems.md#Non-Sendable-Types)
 - Mismatches in [protocol-conformance isolation](./commonproblems.md#Protocol-Conformance-Isolation-Mismatch)
 
-#### C/Objective-C
+## C/Objective-C
 
 You can expose Swift concurrency support for your C and Objective-C APIs using annotations. This is made possible by Clang’s [concurrency-specific annotations](https://clang.llvm.org/docs/AttributeReference.html#customizing-swift-import):
 
@@ -276,7 +276,7 @@ NS_SWIFT_ASYNC_NOTHROW
 NS_SWIFT_UNAVAILABLE_FROM_ASYNC(msg)
 ```
 
-##### Dealing with missing isolation annotations in Objective-C libraries
+### Dealing with missing isolation annotations in Objective-C libraries
 
 While the SDKs and other Objective-C libraries make progress in adopting Swift concurrency, they will often go through the exercise of codifying contracts which were only explained in documentation. For example, before Swift concurrency, APIs frequently had to document their threading behavior with comments like “this will always be called on the main thread”.
 

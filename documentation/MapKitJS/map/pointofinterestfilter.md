@@ -16,7 +16,7 @@ get pointOfInterestFilter(): PointOfInterestFilter | null;
 set pointOfInterestFilter(filter: PointOfInterestFilter | null);
 ```
 
-#### Discussion
+## Discussion
 
 The filter specifies point-of-interest categories to include or exclude in a map. The default filter shows all points of interest.
 

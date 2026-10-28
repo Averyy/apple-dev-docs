@@ -19,7 +19,7 @@ func CMSDecoderCopySignerTimestampWithPolicy(_ cmsDecoder: CMSDecoder, _ timeSta
 OSStatus CMSDecoderCopySignerTimestampWithPolicy(CMSDecoderRef cmsDecoder, CFTypeRef timeStampPolicy, size_t signerIndex, CFAbsoluteTime *timestamp);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

@@ -25,7 +25,7 @@ var postProcess: ((ARView.PostProcessContext) -> Void)?
 - [Applying core image filters as a postprocess effect](../../applying-core-image-filters-as-a-postprocess-effect.md)
 - [Using Metal performance shaders to create custom postprocess effects](../../using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
-#### Discussion
+## Discussion
 
 Assign a function or closure to this property to implement postprocessing effects for a RealityKit scene. If this value is non-`nil`, RealityKit calls the assigned function or closure once every frame before it displays the scene. If you register a postprocess render callback, the callback function needs to encode the modified frame buffer to the context’s [`targetColorTexture`](../postprocesscontext/targetcolortexture.md), or nothing renders.
 

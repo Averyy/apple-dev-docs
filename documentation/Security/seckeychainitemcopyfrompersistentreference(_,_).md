@@ -21,11 +21,11 @@ func SecKeychainItemCopyFromPersistentReference(_ persistentItemRef: CFData, _ i
 OSStatus SecKeychainItemCopyFromPersistentReference(CFDataRef persistentItemRef, SecKeychainItemRef*itemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A persistent reference may be stored on disk or passed between processes. You use the [`SecKeychainItemCreatePersistentReference(_:_:)`](./seckeychainitemcreatepersistentreference%28_,_%29.md) function to create a persistent reference.
 

@@ -12,11 +12,11 @@ SCSIServiceResponse LogicalUnitReset (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 The Task Management function to reset a logical unit.
 

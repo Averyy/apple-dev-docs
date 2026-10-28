@@ -22,7 +22,7 @@ var customizationLabel: String! { get set }
 @property (copy, null_resettable) NSString * customizationLabel;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is empty string.
 

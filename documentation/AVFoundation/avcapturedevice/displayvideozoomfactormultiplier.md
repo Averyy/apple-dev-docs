@@ -23,7 +23,7 @@ var displayVideoZoomFactorMultiplier: CGFloat { get }
 @property (nonatomic, readonly) CGFloat displayVideoZoomFactorMultiplier;
 ```
 
-#### Discussion
+## Discussion
 
 Some system user interfaces, like the macOS Video Effects Menu, display a video zoom factor value in a way most appropriate for visual presentation, which might differ from the [`videoZoomFactor`](./videozoomfactor.md) property value.
 

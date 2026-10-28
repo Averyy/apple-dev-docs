@@ -23,7 +23,7 @@ var photoQualityPrioritization: AVCapturePhotoOutput.QualityPrioritization { get
 @property (nonatomic) AVCapturePhotoQualityPrioritization photoQualityPrioritization;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVCapturePhotoOutput`](../avcapturephotooutput.md) applies a variety of techniques to improve photo quality, depending on the source device’s [`activeFormat`](../avcapturedevice/activeformat.md). Some of these techniques — which include reducing noise, preserving detail in low light, and freezing motion — can take significant processing time before the system returns a photo to your delegate callback. This property allows you to specify your preferred quality versus speed of delivery.
 

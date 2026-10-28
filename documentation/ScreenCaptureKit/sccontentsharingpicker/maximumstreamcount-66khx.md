@@ -16,7 +16,7 @@ The maximum number of streams the content capture picker allows.
 @property (nonatomic, strong, nullable) NSNumber * maximumStreamCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

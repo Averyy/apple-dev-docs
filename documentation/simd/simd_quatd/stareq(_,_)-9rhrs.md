@@ -12,7 +12,7 @@ Multiplies two quaternions and stores the result in the left-hand-side variable.
 static func *= (lhs: inout simd_quatd, rhs: simd_quatd)
 ```
 
-#### Discussion
+## Discussion
 
 The function returns the left-hand side quaternion rotated by the right-hand side quaternion.
 

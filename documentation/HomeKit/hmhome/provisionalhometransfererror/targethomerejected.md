@@ -16,7 +16,7 @@ The home hub rejected the target home identifier.
 case targetHomeRejected
 ```
 
-#### Overview
+## Overview
 
 A home hub rejects a request to transfer a home if the provided home identifier doesn’t match it or HomeKit can’t create a snapshot of the home it tries to transfer.
 

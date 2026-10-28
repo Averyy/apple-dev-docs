@@ -25,11 +25,11 @@ class func falloff(to falloff: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) falloffTo:(float) falloff duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action runs, the field node’s [`falloff`](../skfieldnode/falloff.md) property animates from its current value to its new value. This action is not reversible.
 

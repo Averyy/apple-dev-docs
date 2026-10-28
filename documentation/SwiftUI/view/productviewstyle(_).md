@@ -22,7 +22,7 @@ nonisolated
 func productViewStyle(_ style: some ProductViewStyle) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier styles any [`ProductView`](../../StoreKit/productview.md) or [`StoreView`](../../StoreKit/storeview.md) instances within a view.
 

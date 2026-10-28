@@ -5,7 +5,7 @@
 
 Improve your app’s performance by converting image buffer formats from interleaved to planar.
 
-#### Overview
+## Overview
 
 The vImage library operates on image data with two memory layouts:
 
@@ -19,7 +19,7 @@ Because many vImage functions operate on a single color channel at a time — by
 
 In some cases, you may not want to apply a vImage operation to all four channels of an image. For example, you may know beforehand that the alpha channel is irrelevant in the images that you’re dealing with, or perhaps all of your images are grayscale and you need to operate on only one channel. Using planar formats makes it possible to isolate and work with only the channels you need.
 
-##### Review interleaved performance
+### Review interleaved performance
 
 Typically, your source imagery is in interleaved format, and your default option will be to use the interleaved variant of a vImage function. For example, the following code scales a Core Graphics image to one tenth of its original size. Note that the 4-channel, 8-bit-per-channel interleaved pixel buffer [`scale(destination:)`](./vimage/pixelbuffer/scale%28destination%29-5euvc.md) function calls [`vImageScale_ARGB8888(_:_:_:_:)`](./vimagescale_argb8888%28_,_,_,_%29.md).
 
@@ -46,7 +46,7 @@ let time = ContinuousClock().measure {
 
 You can use [`ContinuousClock`](../Swift/continuousclock.md) to measure the execution time.
 
-##### Convert an interleaved source buffer to planar buffers
+### Convert an interleaved source buffer to planar buffers
 
 The pixel buffer [`init(cgImage:cgImageFormat:pixelFormat:)`](./vimage/pixelbuffer/init%28cgimage,cgimageformat,pixelformat%29.md) initializer and the vImage buffer [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) function both populate a buffer based on the properties of a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure.
 
@@ -75,7 +75,7 @@ sourceBuffer.deinterleave(planarDestinationBuffers: [sourceRedBuffer,
                                                      sourceBlueBuffer])
 ```
 
-##### Initialize the destination buffers
+### Initialize the destination buffers
 
 Create an interleaved 3-channel, 8-bit-per-channel destination buffer and three planar destination buffers:
 
@@ -92,7 +92,7 @@ let destinationBlueBuffer = vImage.PixelBuffer(size: destinationBuffer.size,
                                                pixelFormat: vImage.Planar8.self)
 ```
 
-##### Apply the scale operation to the planar buffers
+### Apply the scale operation to the planar buffers
 
 Use the `withTaskGroup(of:returning:body:)` function to start a new scope that contains the three planar scale operations. Note that the 8-bit planar [`scale(destination:)`](./vimage/pixelbuffer/scale%28destination%29-5euvc.md) function calls [`vImageScale_Planar8(_:_:_:_:)`](./vimagescale_planar8%28_,_,_,_%29.md).
 

@@ -24,7 +24,7 @@ optional func scheduleInputs(_ inputImageRequests: AutoreleasingUnsafeMutablePoi
 - [Migrating FxPlug 3 plug-ins to FxPlug 4](../../Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md)
 - [Scheduling media in plug-ins](../../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 The host calls this method before rendering. Fill out the `inputImageRequests` parameter with an array of image requests. Each request represents one frame your plug-in needs to render. These can be frames of the effect source or they can be frames from image well parameters. If you don’t implement this method, the application will assume that a filter needs only the current frame of its effect source.
 

@@ -25,7 +25,7 @@ func failing(rationale: String? = nil) -> Metric
 
 - [Evaluating language model responses](../evaluating-language-model-responses.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let failingResult = metric.failing(rationale: "No match found")

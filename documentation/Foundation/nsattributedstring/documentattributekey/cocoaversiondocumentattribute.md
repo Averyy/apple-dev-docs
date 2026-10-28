@@ -29,7 +29,7 @@ static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKe
 static let cocoaVersion: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float. For RTF files only, stores the version of Cocoa with which the file was created. Absence of this value indicates RTF file not created by Cocoa or its predecessors.
 

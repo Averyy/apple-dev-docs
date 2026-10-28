@@ -25,7 +25,7 @@ var scrollIndicatorInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets scrollIndicatorInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../uiedgeinsets/zero.md).
 

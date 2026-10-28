@@ -17,7 +17,7 @@ The duration applied before the alarm fires.
 var preAlert: TimeInterval?
 ```
 
-#### Discussion
+## Discussion
 
 For example, this would be the duration of a timer.
 

@@ -21,7 +21,7 @@ nonisolated
 struct ButtonToggleStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`button`](./togglestyle/button.md) to construct this style.
 

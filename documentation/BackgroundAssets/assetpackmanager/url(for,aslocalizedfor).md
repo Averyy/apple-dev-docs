@@ -25,11 +25,11 @@ func url(for path: FilePath, asLocalizedFor language: Locale.Language) throws ->
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 The URL to the item.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t persist the returned URL beyond the lifetime of the current process.
 

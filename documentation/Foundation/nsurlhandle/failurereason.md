@@ -17,7 +17,7 @@ Returns a string describing the reason a load failed.
 - (NSString *) failureReason;
 ```
 
-#### Return Value
+## Return Value
 
 A string describing the reason a load failed. If the load has not failed, returns `nil`.
 

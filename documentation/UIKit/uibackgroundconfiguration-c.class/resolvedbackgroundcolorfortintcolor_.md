@@ -19,7 +19,7 @@ Generates the resolved background color for the specified tint color, using the 
 - (UIColor *) resolvedBackgroundColorForTintColor:(UIColor *) tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on `backgroundColor` and `backgroundColorTransformer`.
 

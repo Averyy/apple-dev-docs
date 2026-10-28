@@ -25,7 +25,7 @@ The position of the entity relative to its parent.
 
 - [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
-#### Discussion
+## Discussion
 
 This value is the entity’s position relative to its parent. To get the world-space position of the entity in the scene, use [`position(relativeTo:)`](./position%28relativeto%29.md), passing `nil` as the reference entity.
 

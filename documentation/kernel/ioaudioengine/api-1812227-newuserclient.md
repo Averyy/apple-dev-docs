@@ -15,11 +15,11 @@ virtual IOReturn newUserClient(
  IOUserClient **handler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. May also result kIOReturnError or kIOReturnNoMemory.
 
-#### Overview
+## Overview
 
 This function is called automatically by I/O Kit when a user process attempts to connect to this service. It allocates a new IOAudioEngineUserClient object and increments the number of connections for this audio engine. If this is the first user client for this IOAudioEngine, it calls startAudioEngine(). There is no need to call this function directly. A derived class that requires overriding of newUserClient should override the version with the properties parameter for Intel targets, and without the properties parameter for PPC targets. The #if __i386__ directive can be used to select between the two behaviors.
 

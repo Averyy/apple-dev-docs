@@ -13,11 +13,11 @@
 errno_t kev_vendor_code_find(const char *vendor_string, u_int32_t *vendor_code);
 ```
 
-#### Return Value
+## Return Value
 
 May return ENOMEM if memory constraints prevent allocation of a new vendor code.
 
-#### Discussion
+## Discussion
 
 Lookup a vendor_code given a unique string. If the vendor code has not been used since launch, a unique integer will be assigned for that string. Vendor codes will remain the same until the machine is rebooted.
 

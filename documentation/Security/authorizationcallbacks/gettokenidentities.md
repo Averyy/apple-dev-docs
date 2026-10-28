@@ -21,7 +21,7 @@ Returns an array of identities available on tokens.
 int (*)(struct __OpaqueAuthorizationEngine *, const void *, const struct __CFArray **) GetTokenIdentities;
 ```
 
-#### Discussion
+## Discussion
 
 The caller owns the returned array and is responsible for releasing it.
 

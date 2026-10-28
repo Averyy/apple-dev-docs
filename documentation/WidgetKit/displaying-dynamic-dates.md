@@ -5,7 +5,7 @@
 
 Show up-to-date, time-based information in your widget even when it isn’t running.
 
-#### Overview
+## Overview
 
 Because your widget extension isn’t always running, you can’t directly update your widget’s content. Instead, WidgetKit renders your widget’s view on your behalf and displays the result. However, some SwiftUI views let you display content that continues updating while your widget is visible.
 

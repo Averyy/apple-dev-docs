@@ -25,7 +25,7 @@ class func string(fromByteCount byteCount: Int64, countStyle: ByteCountFormatter
 + (NSString *) stringFromByteCount:(long long) byteCount countStyle:(NSByteCountFormatterCountStyle) countStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted `byteCount` value.
 

@@ -25,11 +25,11 @@ class func canonicalRequest(for request: URLRequest) -> URLRequest
 + (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The canonical form of `request`.
 
-#### Discussion
+## Discussion
 
 It is up to each concrete protocol implementation to define what “canonical” means. A protocol should guarantee that the same input request always yields the same canonical form.
 

@@ -23,7 +23,7 @@ weak var delegate: (any UIAdaptivePresentationControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIAdaptivePresentationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 When the app’s size changes, the presentation controller works with this delegate object to determine an appropriate response. View controllers presented using the [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), [`UIModalPresentationStyle.popover`](../uimodalpresentationstyle/popover.md), or [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md) style must change to use one of the full-screen presentation styles instead. The delegate can also opt to change the presented view controller entirely.
 

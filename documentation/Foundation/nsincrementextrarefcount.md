@@ -21,11 +21,11 @@ Increments the specified object’s reference count.
 extern void NSIncrementExtraRefCount(id object);
 ```
 
-#### Discussion
+## Discussion
 
 This function increments the “extra reference” count of `object`. Newly created objects have only one actual reference, so that a single release message results in the object being deallocated. Extra references are those beyond the single original reference and are usually created by sending the object a retain message. Your code should generally not use these functions unless it is overriding the retain or release methods.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated and unavailable for use with ARC.
 

@@ -24,7 +24,7 @@ case prepared
 HKWorkoutSessionStatePrepared
 ```
 
-#### Discussion
+## Discussion
 
 The app can continue to run in the background, even after the user lowers their wrist, but it doesn’t yet generate workout data.
 

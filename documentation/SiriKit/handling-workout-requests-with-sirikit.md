@@ -12,7 +12,7 @@ Add an Intent Extension to your app that handles requests to control workouts wi
 - Mac Catalyst 14.1+
 - Xcode 17.0+
 
-#### Overview
+## Overview
 
 The app in this sample project allows users to start, pause, resume, cancel, and end custom wall-climbing or bouldering workouts with Siri, as well as view historical workout data inside the main app.
 
@@ -24,7 +24,7 @@ The project consists of three targets:
 
 See [Creating an Intents App Extension](./creating-an-intents-app-extension.md) for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in `Info.plist`.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This sample app can be run in the iOS Simulator without any special setup, but in order to run it on a device you will need to update the build settings and enable an App Group for the project:
 
@@ -36,7 +36,7 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 
 > **Note**: Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Ascent` target to `com.example.Ascent`, set the bundle identifier for the `AscentIntentsExtension` target to `com.example.Ascent.AscentIntentsExtension`.
 
-##### Recognize and Respond to Workout Requests
+### Recognize and Respond to Workout Requests
 
 In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the [`handler(for:)`](../Intents/inintenthandlerproviding/handler%28for%29.md) method of [`INIntentHandlerProviding`](../Intents/inintenthandlerproviding.md). Use this method to dispatch the request to a class configured to handle it.
 
@@ -57,7 +57,7 @@ In order for a class to handle a request from SiriKit to use the workout control
 - `CancelWorkoutIntentHandler` implements [`INCancelWorkoutIntentHandling`](../Intents/incancelworkoutintenthandling.md).
 - `EndWorkoutIntentHandler` implements [`INEndWorkoutIntentHandling`](../Intents/inendworkoutintenthandling.md).
 
-##### Resolve Parameters
+### Resolve Parameters
 
 The first step in handling a request from Siri with one of these classes is to resolve any parameters from the voice command. For example, when starting a workout the user may specify parameters such as the type of workout, a particular goal, and the location of the workout:
 
@@ -98,7 +98,7 @@ To aid Siri with recognition of parameter names like “wall climb” and “bou
 
 Once all parameters have been resolved, the system calls [`confirm(intent:completion:)`](../Intents/instartworkoutintenthandling/confirm%28intent,completion%29.md). Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](../Intents/instartworkoutintentresponse.md) with an [`INStartWorkoutIntentResponseCode`](../Intents/instartworkoutintentresponsecode.md).
 
-##### Complete the Request
+### Complete the Request
 
 Once the request to start the workout has been confirmed, the system calls [`handle(intent:completion:)`](../Intents/instartworkoutintenthandling/handle%28intent,completion%29.md). Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout.
 

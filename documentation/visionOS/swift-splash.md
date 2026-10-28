@@ -10,7 +10,7 @@ Use RealityKit to create an interactive ride in visionOS.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Apple Vision Pro’s ability to combine virtual content seamlessly with the real world allows for many kinds of interactive virtual experiences. Swift Splash leverages RealityKit and Reality Composer Pro to create a virtual water slide by combining modular slide pieces. When the builder finishes their ride, they can release an adventurous goldfish to try it out.
 
@@ -24,7 +24,7 @@ Swift Splash scenes include Shader Graph materials built in Reality Composer Pro
 
 [Video: TBD](https://developer.apple.com/tutorials/videos/com.apple.visionOS/SS-fireworks.mp4)
 
-##### Build slide pieces in Reality Composer Pro
+### Build slide pieces in Reality Composer Pro
 
 Slide pieces are the building blocks of Swift Splash. The Reality Composer project contains a separate scene for each one. In addition to the 3D models that make up the slide piece, each scene contains a number of other entities the app uses to animate and place the slide piece.
 
@@ -38,7 +38,7 @@ For example, animated entities that appear when the ride runs contain a componen
 
 `RideAnimationComponent` also includes a property called `isPersistent`. Persistent ride animations stay visible at all times but only animate when the ride is running, such as the animated door on the start piece. Nonpersistent ride animations, such as the fish swimming through a slide piece, display only while the ride is running and the fish swims through that particular piece.
 
-##### Avoid duplicate materials with material references
+### Avoid duplicate materials with material references
 
 Many of Swift Splash’s slide pieces use the same materials. For example, the shader graph material that changes pieces from metal to wood to plastic is shared by all but one of the slide pieces. To avoid having duplicate copies of each material, Swift Splash leverages USD *material references* to share materials between multiple entities in multiple scenes.
 
@@ -46,7 +46,7 @@ The Reality Composer Pro project contains a separate scene for each shared mater
 
 ![A screenshot showing part of Reality Composer Pro's inspector that contains a box labeled References with one entry pointing to a material in a different scene.](https://developer.apple.com/tutorials/images/com.apple.visionOS/SS-material-reference@2x.png)
 
-##### Parallelize the asset load
+### Parallelize the asset load
 
 To maximize load speed and make the most efficient use of available compute resources, Swift Splash parallelizes loading scenes from the Reality Composer project using a [`TaskGroup`](../Swift/taskgroup.md). The app creates a separate [`Task`](../Swift/task.md) for each of the scenes it needs to load.
 
@@ -92,7 +92,7 @@ For more information on task groups, see [Concurrency](https://docs.swift.org/sw
 
 Each of these loaded pieces acts as a template. When the player adds a new piece of that type, the app clones the piece loaded from Reality Composer Pro and adds the clone to the scene.
 
-##### Specify sort ordering for transparent entities
+### Specify sort ordering for transparent entities
 
 When multiple entities have more than one overlapping, nonopaque material, RealityKit’s default depth-sorting can cause it to draw those entities in the wrong order. As a result, some entities may not be visible from certain angles or in certain positions relative to other transparent entities. The default depth sorting is based on the center of the entity’s bounding box, which may result in the incorrect drawing order when there are multiple overlapping materials with any amount of transparency. You can see an example of this by looking at the start piece in Reality Composer Pro, or by watching the video below.
 
@@ -152,7 +152,7 @@ func handleStartPieceTransparency(_ startPiece: Entity) {
 }
 ```
 
-##### Traverse connected track pieces
+### Traverse connected track pieces
 
 The root entity for all of the individual slide pieces has a `ConnectableComponent`. This custom component marks the entity as one that can be connected or snapped to other connectable entities. At runtime, the app adds a `ConnectableStateComponent` to each slide piece it adds. The component stores state information for the track piece that doesn’t need to be edited in Reality Composer Pro. Among the state information that this component stores is a reference to the next and previous piece.
 
@@ -180,7 +180,7 @@ public func calculateRideDuration() {
 }
 ```
 
-##### Interact with the ride
+### Interact with the ride
 
 To build and edit the ride, players interact with Swift Splash in two different ways. They interact with SwiftUI windows to perform certain tasks, such as adding a new piece or deleting an existing piece of the ride. They also manipulate slide pieces using standard visionOS gestures, including taps, double taps, drags, and rotates. The player taps on a piece to select or deselect it. When a player double taps a piece, they select that piece without deselecting any other selected pieces. When someone drags a piece, it moves around the immersive space, snapping together with other pieces if placed near one. A two-finger rotate gesture spins the selected track piece or pieces on the Z-axis.
 
@@ -227,9 +227,9 @@ Because multiple tap gestures on the same [`RealityView`](../RealityKit/realityv
                 if shouldSingleTap {
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Hello World](./world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
@@ -240,7 +240,7 @@ Because multiple tap gestures on the same [`RealityView`](../RealityKit/realityv
 - [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 
-###### Related articles
+#### Related articles
 
 - [Adding 3D content to your app](./adding-3d-content-to-your-app.md)
   Add depth and dimension to your visionOS app and discover how to incorporate your app’s content into a person’s surroundings.
@@ -253,7 +253,7 @@ Because multiple tap gestures on the same [`RealityView`](../RealityKit/realityv
 - [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
-###### Related videos
+#### Related videos
 
 - [Meet Reality Composer Pro](https://developer.apple.com/videos/play/wwdc2023/10083)
   Discover how to easily compose, edit, and preview 3D content with Reality Composer Pro. Follow along as we explore this developer tool by setting up a new project, composing scenes, adding particle emitters and audio, and even previewing content on device.

@@ -21,7 +21,7 @@ A type that formats lists of items with a separator and conjunction appropriate 
 struct ListFormatStyle<Style, Base> where Style : FormatStyle, Base : Sequence, Style.FormatInput == Base.Element, Style.FormatOutput == String
 ```
 
-#### Overview
+## Overview
 
 A list format style creates human readable text from a [`Sequence`](../Swift/sequence.md) of values. Customize the formatting behavior of the list using the [`width`](./listformatstyle/width-swift.property.md), [`listType`](./listformatstyle/listtype-swift.property.md), and [`locale`](./listformatstyle/locale.md) properties. The system automatically caches unique configurations of [`ListFormatStyle`](./listformatstyle.md) to enhance performance.
 

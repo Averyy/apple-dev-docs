@@ -21,7 +21,7 @@ func AudioHardwareServiceHasProperty(_ inObjectID: AudioObjectID, _ inAddress: U
 extern Boolean AudioHardwareServiceHasProperty(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the HAL audio object does have the property (`true`) or not (`false`).
 

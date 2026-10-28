@@ -23,7 +23,7 @@ case videoDeviceNotAvailableInBackground
 AVCaptureSessionInterruptionReasonVideoDeviceNotAvailableInBackground
 ```
 
-#### Discussion
+## Discussion
 
 Camera usage is prohibited while in the background. If you attempt to start running a camera while in the background, the capture session sends an [`wasInterruptedNotification`](../wasinterruptednotification.md) with this interruption reason. If you don’t explicitly call the [`stopRunning()`](../stoprunning%28%29.md) method, your [`startRunning()`](../startrunning%28%29.md) request is preserved, and when your app comes back to foreground, you receive [`interruptionEndedNotification`](../interruptionendednotification.md) and your session starts running.
 

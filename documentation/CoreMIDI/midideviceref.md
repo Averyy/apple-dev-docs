@@ -25,7 +25,7 @@ typealias MIDIDeviceRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIDeviceRef;
 ```
 
-#### Discussion
+## Discussion
 
 A device object derives from [`MIDIObjectRef`](./midiobjectref.md). It doesn’t have an owning object.
 

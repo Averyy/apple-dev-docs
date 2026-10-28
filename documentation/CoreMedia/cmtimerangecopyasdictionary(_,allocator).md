@@ -25,11 +25,11 @@ func CMTimeRangeCopyAsDictionary(_ range: CMTimeRange, allocator: CFAllocator?) 
 extern CFDictionaryRefCMTimeRangeCopyAsDictionary(CMTimeRange range, CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that represents the time range.
 
-#### Discussion
+## Discussion
 
 This is useful when putting `CMTimeRanges` in Core Foundation container types. Pass `kCFAllocatorDefault` to use the default allocator.
 

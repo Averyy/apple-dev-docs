@@ -24,7 +24,7 @@ var additionalContactKeyDescriptors: [any CNKeyDescriptor]? { get set }
 @property (nonatomic, copy, nullable) NSArray<id<CNKeyDescriptor>> * additionalContactKeyDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system only fetches [`CNContactIdentifierKey`](../cncontactidentifierkey.md) if you do not include a list of additional key descriptors. The system always fetches [`CNContactIdentifierKey`](../cncontactidentifierkey.md), whether you request it or not.
 

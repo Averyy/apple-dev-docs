@@ -5,7 +5,7 @@
 
 Inspect a session’s history and work with the entries, segments, and attachments it contains.
 
-#### Overview
+## Overview
 
 A [`Transcript`](./transcript.md) is a linear history of everything exchanged with a [`LanguageModelSession`](./languagemodelsession.md). It includes the instructions that define the model’s behavior, the prompts you send, the model’s responses and reasoning, and any tool calls made along the way. It’s what the session uses as context, and it’s what you inspect, trim, or pass to a new session to manage the context window.
 

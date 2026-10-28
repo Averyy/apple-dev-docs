@@ -19,7 +19,7 @@ func drawFocusRingMask(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawFocusRingMaskWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 Implemented by NSCell subclasses to draw the appropriate focus ring for the control The default implementation does nothing.
 

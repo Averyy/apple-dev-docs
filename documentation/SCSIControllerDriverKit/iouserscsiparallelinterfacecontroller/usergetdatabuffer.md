@@ -15,11 +15,11 @@ Gets the data buffer associated with a particular I/O request.
 virtual kern_return_t UserGetDataBuffer(SCSIDeviceIdentifier targetID, uint64_t controllerTaskID, IOBufferMemoryDescriptor **buffer);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of getting the buffer. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your dext class can call this method inside [`UserProcessParallelTask`](./userprocessparalleltask.md) to get the data buffer associated with the I/O request identified by `controllerTaskID`. Calling this method can have a significant impact on performance, so call it only if you require access to the data buffer. The caller needs to prepare new DMA mappings for this buffer and can no longer use the mappings in [`fBufferIOVMAddr`](../scsiuserparalleltask/fbufferiovmaddr.md).
 

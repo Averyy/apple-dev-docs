@@ -24,7 +24,7 @@ ARWorldMappingStatusMapped
 
 - [Managing Session Life Cycle and Tracking Quality](../../managing-session-life-cycle-and-tracking-quality.md)
 
-#### Discussion
+## Discussion
 
 When the [`worldMappingStatus`](../worldmappingstatus-swift.property.md) of the session’s [`currentFrame`](../../arsession/currentframe.md) is [`ARFrame.WorldMappingStatus.mapped`](./mapped.md), the session has produced a high-fidelity internal map of the real-world space around the device’s current position and the scene visible to the camera.
 

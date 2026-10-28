@@ -21,11 +21,11 @@ Asks the delegate to provide the next set of record changes to send to the serve
 - (CKSyncEngineRecordZoneChangeBatch *) syncEngine:(CKSyncEngine *) syncEngine nextRecordZoneChangeBatchForContext:(CKSyncEngineSendChangesContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 If there are pending record changes, a batch of those changes for the sync engine to process; otherwise, `nil` to indicate there are no changes to send.
 
-#### Discussion
+## Discussion
 
 In your implementation, ask the sync engine’s state for any pending record zone changes and then return a change batch containing an instance of [`CKRecord`](../ckrecord.md) for each record identifier the state provides. For both scheduled and manual send operations, the sync engine calls this method repeatedly until your app has no more changes and returns `nil`.
 

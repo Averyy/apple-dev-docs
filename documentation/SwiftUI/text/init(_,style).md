@@ -21,7 +21,7 @@ Creates an instance that displays localized dates and times using a specific sty
 init(_ date: Date, style: Text.DateStyle)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: In a widget, a `Text` that uses the [`relative`](./datestyle/relative.md), [`offset`](./datestyle/offset.md), or [`timer`](./datestyle/timer.md) style becomes horizontally flexible and expands to fill the available width. Widgets can’t perform layout again after the system archives them, so the text can’t measure itself against its eventual content, which changes as the date updates, without risking clipping. If you want to constrain the width, apply a [`frame(width:height:alignment:)`](../view/frame%28width,height,alignment%29.md) modifier, and use [`multilineTextAlignment(_:)`](../view/multilinetextalignment%28_%29.md) to align the text within that frame.
 

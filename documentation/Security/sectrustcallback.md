@@ -25,7 +25,7 @@ typealias SecTrustCallback = (SecTrust, SecTrustResultType) -> Void
 typedef void (^)(struct __SecTrust *, enum SecTrustResultType) SecTrustCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Use a block of this type when making a call to [`SecTrustEvaluateAsync(_:_:_:)`](./sectrustevaluateasync%28_,_,_%29.md) to receive the result of the trust evaluation.
 

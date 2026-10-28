@@ -19,11 +19,11 @@ class var invalidationContextClass: AnyClass { get }
 @property (class, readonly) Class invalidationContextClass;
 ```
 
-#### Return Value
+## Return Value
 
 A custom class that descends from [`NSCollectionViewLayoutInvalidationContext`](../nscollectionviewlayoutinvalidationcontext.md).
 
-#### Discussion
+## Discussion
 
 If you define a custom invalidation context class to store information related to your layout, override this method and use it to return your custom subclass. Methods of this class that create invalidation contexts automatically create instances of the class you provide, initializing those instances using its [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method.
 

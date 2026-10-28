@@ -23,7 +23,7 @@ var formatDescription: CMFormatDescription? { get }
 @property (nonatomic, readonly, nullable) CMFormatDescriptionRef formatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 A format description object describes the format of the media the port currently provides. To observe changes to a port’s format, observe notifications of type [`formatDescriptionDidChangeNotification`](./formatdescriptiondidchangenotification.md).
 

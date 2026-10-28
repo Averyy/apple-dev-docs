@@ -25,7 +25,7 @@ func CFBitVectorCreate(_ allocator: CFAllocator!, _ bytes: UnsafePointer<UInt8>!
 extern CFBitVectorRefCFBitVectorCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex numBits);
 ```
 
-#### Return Value
+## Return Value
 
 A new bit vector. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

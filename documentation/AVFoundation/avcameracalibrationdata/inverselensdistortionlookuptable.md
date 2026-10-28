@@ -24,7 +24,7 @@ var inverseLensDistortionLookupTable: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * inverseLensDistortionLookupTable;
 ```
 
-#### Discussion
+## Discussion
 
 If you’ve rectified an image by removing the distortions characterized by the [`lensDistortionLookupTable`](./lensdistortionlookuptable.md) property, and now wish to go back to a geometrically distorted image (for example, to render visual effects into the camera image or perform computer vision tasks such as scene reconstruction), use this inverse lookup table.
 

@@ -25,7 +25,7 @@ class func extendLaunchMeasurement(forTaskID taskID: MXLaunchTaskID) throws
 + (BOOL) extendLaunchMeasurementForTaskID:(MXLaunchTaskID) taskID error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method on the main thread to measure an extended launch task. Your app needs to start the first task before or during [`scene(_:restoreInteractionStateWith:)`](../../UIKit/uiscenedelegate/scene%28_,restoreinteractionstatewith%29.md), or before the system calls [`sceneDidBecomeActive(_:)`](../../UIKit/uiscenedelegate/scenedidbecomeactive%28_%29.md) on the first scene to connect, and each task needs to overlap with others.
 

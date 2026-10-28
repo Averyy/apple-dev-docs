@@ -21,7 +21,7 @@ var session: MSSession? { get }
 @property (nonatomic, readonly, nullable) MSSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 The `session` property is set to the session object passed to the [`init(session:)`](./init%28session%29.md) initializer; otherwise, it is set to `nil`.
 

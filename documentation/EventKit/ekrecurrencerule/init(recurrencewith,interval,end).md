@@ -28,7 +28,7 @@ init(recurrenceWith type: EKRecurrenceFrequency, interval: Int, end: EKRecurrenc
 
 - [Creating a recurring event](../creating-a-recurring-event.md)
 
-#### Return Value
+## Return Value
 
 The initialized recurrence rule, or `nil` if invalid values are provided.
 

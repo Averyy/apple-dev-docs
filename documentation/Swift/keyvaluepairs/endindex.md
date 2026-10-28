@@ -21,7 +21,7 @@ The collection’s “past the end” position—that is, the position one great
 var endIndex: KeyValuePairs<Key, Value>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `KeyValuePairs` instance is empty, `endIndex` is equal to `startIndex`.
 

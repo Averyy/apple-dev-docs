@@ -15,7 +15,7 @@ Targeting criteria object specifying values to include or exclude in ad delivery
 object IncludeExclude
 ```
 
-#### Discussion
+## Discussion
 
 The `IncludeExclude` object is a shared targeting wrapper used by [`BrandsTargetingProjection`](./brandstargetingprojection.md) and [`AppsTargetingProjection`](./appstargetingprojection.md). The `include` array accepts different value sets depending on context:
 
@@ -28,7 +28,7 @@ The `IncludeExclude` object is a shared targeting wrapper used by [`BrandsTarget
 | `promotedLocationGroup` | Location group IDs associated with the brand |
 | `promotedLocation` | Individual brand location IDs |
 
-##### Example
+### Example
 
 ```json
 {

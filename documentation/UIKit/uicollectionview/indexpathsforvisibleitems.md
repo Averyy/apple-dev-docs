@@ -23,7 +23,7 @@ var indexPathsForVisibleItems: [IndexPath] { get }
 @property (nonatomic, readonly) NSArray<NSIndexPath *> * indexPathsForVisibleItems;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an unsorted array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which corresponds to a visible cell in the collection view. This array doesn’t include any supplementary views that are currently visible. If there are no visible items, the value of this property is an empty array.
 

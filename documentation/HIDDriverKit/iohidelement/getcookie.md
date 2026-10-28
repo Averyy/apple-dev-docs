@@ -14,7 +14,7 @@
 virtual IOHIDElementCookie getCookie();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element cookie. The cookie is a unique identifier of the element.
 

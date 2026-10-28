@@ -5,11 +5,11 @@
 
 Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
 
-#### Overview
+## Overview
 
 When your app offers Apple In-App Purchases, customers typically buy the products from within your app. However, purchase transactions can also occur on another device or even outside your app. Your app needs to handle these transactions when it launches. Use the Test Transactions feature in Account Settings in iOS to simulate and test such transactions in the sandbox environment.
 
-##### Simulate a variety of purchase events
+### Simulate a variety of purchase events
 
 Several types of events result in a purchase transaction that occurs outside your app, including the following:
 
@@ -21,7 +21,7 @@ Several types of events result in a purchase transaction that occurs outside you
 
 All of these events result in StoreKit sending a transaction to your app through the [`updates`](./transaction/updates.md) asynchronous sequence in [`Transaction`](./transaction.md). Test your app to be sure it receives and handles the transaction.
 
-##### Set up a test in Account Settings
+### Set up a test in Account Settings
 
 To create a transaction outside your app for the testing environment, first open Account Settings on the iOS device, as follows:
 
@@ -34,7 +34,7 @@ Next, you need the product ID for a product you set up in App Store Connect and 
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 
-##### Simulate a purchase outside your app
+### Simulate a purchase outside your app
 
 To simulate a purchase outside your app, follow these steps:
 
@@ -48,7 +48,7 @@ After you confirm the purchase, use the following steps to test your app:
 1. Open your app. The system delivers the new transaction to your app through the [`updates`](./transaction/updates.md) asynchronous sequence in [`Transaction`](./transaction.md).
 2. Confirm that your app receives and processes the transaction to provide access to the purchased product.
 
-##### Conclude or restart a test
+### Conclude or restart a test
 
 You can repeat the test by purchasing the product again through the Test Transactions feature in Account Settings. To repurchase some products, you might first need to clear the transactions for the Sandbox Apple Account, following these steps:
 

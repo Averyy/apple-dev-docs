@@ -21,7 +21,7 @@ Indicates that decode pipelines should post a notification when consuming the sa
 static let postNotificationWhenConsumed: CVAttachmentKeyDefinition<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, CMCustomNotificationInfo>
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to request that a decode pipeline post [`kCMSampleBufferConsumerNotification_BufferConsumed`](../kcmsamplebufferconsumernotification_bufferconsumed.md) notification when this sample buffer is consumed. The value for this key is used as the userInfo dictionary in the notification.
 

@@ -24,7 +24,7 @@ let kIOSurfacePlaneInfo: CFString
 extern CFStringRef const kIOSurfacePlaneInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The CFArray must have at least one entry.
 

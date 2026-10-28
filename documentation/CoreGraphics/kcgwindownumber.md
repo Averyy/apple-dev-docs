@@ -18,7 +18,7 @@ let kCGWindowNumber: CFString
 extern CFStringRef const kCGWindowNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`kCGWindowIDCFNumberType`](./kcgwindowidcfnumbertype.md)) that contains the window ID. The window ID is unique within the current user session.
 

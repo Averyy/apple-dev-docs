@@ -15,7 +15,7 @@ Releases the memory allocated for the specified Unicodeconverter object.
 OSStatus DisposeUnicodeToTextRunInfo(UnicodeToTextRunInfo *ioUnicodeToTextRunInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). If your application specifiesan invalid Unicode converter object, such as `NULL`,the function returns `paramErr`.
 

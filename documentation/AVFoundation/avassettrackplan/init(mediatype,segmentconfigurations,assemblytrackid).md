@@ -24,7 +24,7 @@ init(mediaType: AVMediaType, segmentConfigurations: [AVPlannedSegmentConfigurati
 - (instancetype) initWithMediaType:(AVMediaType) mediaType segmentConfigurations:(NSArray<AVPlannedSegmentConfiguration *> *) segmentConfigurations assemblyTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws NSInvalidArgumentException if trackID is kCMPersistentTrackID_Invalid.
 

@@ -25,7 +25,7 @@ case abbreviated
 MKDistanceFormatterUnitStyleAbbreviated
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the units are metric the map displays “km” instead of “kilometer.”
 

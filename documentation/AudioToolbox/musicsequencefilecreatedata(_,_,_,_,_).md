@@ -24,11 +24,11 @@ func MusicSequenceFileCreateData(_ inSequence: MusicSequence, _ inFileType: Musi
 extern OSStatus MusicSequenceFileCreateData(MusicSequence inSequence, MusicSequenceFileTypeID inFileType, MusicSequenceFileFlags inFlags, SInt16 inResolution, CFDataRef*outData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The `CFData` object should be released by the caller.
 

@@ -19,7 +19,7 @@ func setHorizontalAlignment(_ horizontalAlignment: WKInterfaceObjectHorizontalAl
 - (void) setHorizontalAlignment:(WKInterfaceObjectHorizontalAlignment) horizontalAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to the horizontal alignment of an object are animatable.
 

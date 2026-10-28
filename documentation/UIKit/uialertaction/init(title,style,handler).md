@@ -23,11 +23,11 @@ convenience init(title: String?, style: UIAlertAction.Style, handler: ((UIAlertA
 + (instancetype) actionWithTitle:(NSString *) title style:(UIAlertActionStyle) style handler:(void (^)(UIAlertAction *action)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A new alert action object.
 
-#### Discussion
+## Discussion
 
 Actions are enabled by default when you create them.
 

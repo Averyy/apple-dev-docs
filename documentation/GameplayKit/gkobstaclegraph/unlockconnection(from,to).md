@@ -24,7 +24,7 @@ func unlockConnection(from startNode: NodeType, to endNode: NodeType)
 - (void) unlockConnectionFromNode:(NodeType) startNode toNode:(NodeType) endNode;
 ```
 
-#### Discussion
+## Discussion
 
 By default, adding obstacles with the [`addObstacles(_:)`](./addobstacles%28_%29.md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles.
 

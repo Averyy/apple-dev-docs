@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.softsign
 
-**class softsign(*x*)**
-: Applies the Softsign function.
+```python
+class softsign(x)
+```
+
+Applies the Softsign function.
+
 Applies \(\frac{x}{1 + |x|}\) element wise.

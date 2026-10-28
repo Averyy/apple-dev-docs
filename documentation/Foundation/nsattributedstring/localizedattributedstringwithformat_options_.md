@@ -21,11 +21,11 @@ Creates an attributed string by substituting a list of function arguments into a
 + (instancetype) localizedAttributedStringWithFormat:(NSAttributedString *) format options:(NSAttributedStringFormattingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new attributed string that combines the format string with the provided arguments and other information.
 
-#### Discussion
+## Discussion
 
 Pass an optional list of trailing variadic arguments to substitute into the `format` string.
 

@@ -23,7 +23,7 @@ var sortDescriptors: [SortDescriptor<Result>] { get set }
 
 Available when `SectionIdentifier` conforms to `Hashable` and `Result` inherits `NSManagedObject`.
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances. If you want to use [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances, set [`nsSortDescriptors`](./nssortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../configuration.md).
 

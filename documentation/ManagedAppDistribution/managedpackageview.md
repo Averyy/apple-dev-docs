@@ -16,7 +16,7 @@ A view that displays information and controls for a managed software package.
 @preconcurrency struct ManagedPackageView
 ```
 
-#### Overview
+## Overview
 
 `ManagedPackageView` provides an interface for presenting managed packages in your app, displaying package details, installation status, and management controls in a consistent way across macOS and macCatalyst applications.
 

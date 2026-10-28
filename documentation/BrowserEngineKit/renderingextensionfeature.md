@@ -17,7 +17,7 @@ Features of a rendering extension.
 enum RenderingExtensionFeature
 ```
 
-#### Overview
+## Overview
 
 The [`enableFeature(_:)`](./renderingextension/enablefeature%28_%29.md) method of the [`RenderingExtension`](./renderingextension.md) protocol takes an argument of this type.
 

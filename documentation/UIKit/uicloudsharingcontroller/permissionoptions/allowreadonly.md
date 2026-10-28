@@ -22,7 +22,7 @@ static var allowReadOnly: UICloudSharingController.PermissionOptions { get }
 UICloudSharingPermissionAllowReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 To give the user the option to prevent other people from editing the shared data, include the [`allowReadOnly`](./allowreadonly.md) option when setting the [`availablePermissions`](../availablepermissions.md) property on the [`UICloudSharingController`](../../uicloudsharingcontroller.md) instance.
 

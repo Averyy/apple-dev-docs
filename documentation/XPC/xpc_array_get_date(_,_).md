@@ -25,7 +25,7 @@ func xpc_array_get_date(_ xarray: xpc_object_t, _ index: Int) -> Int64
 extern int64_t xpc_array_get_date(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying date interval at the specified index. 0 if the value at the specified index is not a date value.
 

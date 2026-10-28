@@ -23,11 +23,11 @@ func contains(_ point: CGPoint) -> Bool
 - (BOOL) containsPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the point is in the current region or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 UIKit Dynamics normally calls this method when it needs to determine the interactions between two objects. If you call this method yourself, remember that the origin of the region object itself is at the center of the region’s shape and you might need to adjust the value of `point` accordingly.
 

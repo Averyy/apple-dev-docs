@@ -25,7 +25,7 @@ var timingMode: SCNActionTimingMode { get set }
 @property (nonatomic) SCNActionTimingMode timingMode;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`SCNActionTimingMode`](../scnactiontimingmode.md). The default value is [`SCNActionTimingMode.linear`](../scnactiontimingmode/linear.md).
 

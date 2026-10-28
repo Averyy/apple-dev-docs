@@ -24,7 +24,7 @@ static let speakScreenStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilitySpeakScreenStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

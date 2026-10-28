@@ -18,7 +18,7 @@ Makes a region of memory executable for use in just-in-time (JIT) compilation.
 void be_memory_inline_jit_restrict_rwx_to_rx_with_witness();
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  To correctly use this memory to help protect your JIT memory region, you need to inline calls and conform to other restrictions. For information, see [Protecting code compiled just in time](../BrowserEngineKit/protecting-code-compiled-just-in-time.md).
 

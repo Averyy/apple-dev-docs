@@ -20,11 +20,11 @@ func image(for bounds: CGRect, attributes: [NSAttributedString.Key : Any] = [:],
 - (NSImage *) imageForBounds:(CGRect) bounds attributes:(NSDictionary<NSString *,id> *) attributes location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer;
 ```
 
-#### Return Value
+## Return Value
 
 An optional image object.
 
-#### Discussion
+## Discussion
 
 A custom implementation should return an image appropriate for the target rendering context that you derive by arguments to this method. The default [`NSTextAttachment`](../nstextattachment.md) implementation returns the contents of the `image` property when non-`nil`. If the `image` property is `nil`, it returns an image based on the `contents` and `fileType` properties.
 

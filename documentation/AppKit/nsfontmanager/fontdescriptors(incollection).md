@@ -21,7 +21,7 @@ func fontDescriptors(inCollection collectionNames: String) -> [Any]?
 - (NSArray *) fontDescriptorsInCollection:(NSString *) collectionNames;
 ```
 
-#### Return Value
+## Return Value
 
 The font descriptors.
 

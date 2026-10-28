@@ -24,7 +24,7 @@ func append(_ bezierPath: UIBezierPath)
 - (void) appendPath:(UIBezierPath *) bezierPath;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the commands used to create the path in `bezierPath` to the end of the receiver’s path. This method does not explicitly try to connect the subpaths in the two objects, although the operations in `bezierPath` might still cause that effect.
 

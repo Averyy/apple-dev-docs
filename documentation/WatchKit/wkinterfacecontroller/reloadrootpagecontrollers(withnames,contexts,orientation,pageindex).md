@@ -23,7 +23,7 @@ class func reloadRootPageControllers(withNames names: [String], contexts: [Any]?
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Call this method to create or modify your app’s page-based interface:
 

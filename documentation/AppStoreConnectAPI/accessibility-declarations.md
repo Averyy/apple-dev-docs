@@ -5,7 +5,7 @@
 
 Manage accessibility metadata for your apps per device family.
 
-#### Overview
+## Overview
 
 There are five modalities for accessibility: Vision, Hearing, Speech, Mobility, and Cognitive. Apple operating systems provide opportunities to deliver high-quality experiences to everyone, including people with disabilities. To learn more  about all the features developers can leverage in their apps to support users with disabilities, see [Building accessible apps](https://developer.apple.com/accessibility/).
 

@@ -22,7 +22,7 @@ var domain: NSFileProviderDomain? { get }
 @property (nonatomic, readonly, nullable) NSFileProviderDomain * domain;
 ```
 
-#### Discussion
+## Discussion
 
 If the File Provider extension does not use domains, this property is set to `nil`. By default, a File Provider extension does not have any domains.
 

@@ -19,11 +19,11 @@ func item(at indexPath: IndexPath) -> Any?
 - (id) itemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The item.
 
-#### Discussion
+## Discussion
 
 This method can only be used if the delegate implements the item data source methods. The specified index path must be displayable in the browser.
 

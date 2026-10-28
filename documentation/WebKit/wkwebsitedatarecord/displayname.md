@@ -23,7 +23,7 @@ var displayName: String { get }
 @property (nonatomic, copy, readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains identifying information that you to display to users. Typically, the value is the website’s domain name and suffix taken from the host information in the resource’s security origin object. For more information, see [`WKSecurityOrigin`](../wksecurityorigin.md).
 

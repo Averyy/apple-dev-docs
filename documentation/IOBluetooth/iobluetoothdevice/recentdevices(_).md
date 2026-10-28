@@ -19,11 +19,11 @@ class func recentDevices(_ numDevices: UInt) -> [Any]!
 + (NSArray *) recentDevices:(unsigned long) numDevices;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of device objects recently used by the system. If no devices have been accessed, nil is returned.
 
-#### Discussion
+## Discussion
 
 The resulting array contains IOBluetoothDevice objects sorted in reverse chronological order. The most recently accessed devices are first. If the numDevices parameter is 0, all devices accessed by the system are returned. If numDevices is non-zero, only the most recent devices are returned.
 

@@ -15,11 +15,11 @@ Sets the IOOperationHandler block on the device.
 kern_return_t SetIOOperationHandler(IOOperationHandler in_io_operation_block);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the IOOperationHandler block was successfuly set on the device
 
-#### Discussion
+## Discussion
 
 The IOOperationHandler will be invoked when a IO operation is performed by the host. The handler will be called on a real time priority thread, so any work should only call real-time safe operations and never block. Many of the calls to various IOUserVideoObjects are syncrhonized against the work queue, so any necessary information to perform IO should be cached and captured in the block.
 

@@ -24,7 +24,7 @@ case affected
 MTLCommandEncoderErrorStateAffected
 ```
 
-#### Discussion
+## Discussion
 
 The commands in the command buffer may or may not be responsible for the error.
 

@@ -25,7 +25,7 @@ func CFFileSecurityGetOwner(_ fileSec: CFFileSecurity!, _ owner: UnsafeMutablePo
 extern Boolean CFFileSecurityGetOwner(CFFileSecurityRef fileSec, uid_t *owner);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the owner ID was stored in the address pointed to by `owner`, or `false` if there is no owner ID property associated with this `CFFileSecurityRef` object.
 

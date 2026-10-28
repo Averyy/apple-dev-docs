@@ -25,7 +25,7 @@ var isAntialiased: Bool { get set }
 @property (nonatomic, getter=isAntialiased) BOOL antialiased;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

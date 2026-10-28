@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatScaleBy(SPAffineTransform3DFloat transform, float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s scaled by the specified values.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s constructed by concatenating an existing affine transform and a scale.
 

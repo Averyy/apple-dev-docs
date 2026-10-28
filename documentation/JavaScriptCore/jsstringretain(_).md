@@ -24,7 +24,7 @@ func JSStringRetain(_ string: JSStringRef!) -> JSStringRef!
 JSStringRefJSStringRetain(JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) that is the same as `string`.
 

@@ -21,7 +21,7 @@ The entire animation is finished and will now be removed.
 static let removed: AnimationCompletionCriteria
 ```
 
-#### Discussion
+## Discussion
 
 If a subsequent change occurs that creates additional animations on properties with `removed` completion callbacks registered, then those callbacks will only fire when *all* of the created animations are complete.
 

@@ -22,7 +22,7 @@ nonisolated
 func fontWidth(_ width: Font.Width?) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text that uses the font width you specify, if available.
 

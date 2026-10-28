@@ -21,7 +21,7 @@ The state of the random number generator.
 var state: BNNS.RandomGeneratorState { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the random number generator’s [`state`](./state.md) property to save and restore the generator.
 

@@ -21,7 +21,7 @@ The quality-of-service class for maintenance or cleanup tasks that you create.
 case background
 ```
 
-#### Discussion
+## Discussion
 
 Background tasks have the lowest priority of all tasks. Assign this class to tasks or dispatch queues that you use to perform work while your app is running in the background.
 

@@ -25,7 +25,7 @@ var deviceUID: String? { get }
 
 - [Rendering Spatial Audio from Bluetooth headphones](../rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Discussion
+## Discussion
 
 The UID identifies which Bluetooth headphone device corresponds to this instance of the Audio Unit. The host sets this property when it matches a device with this instance of the Audio Unit.
 

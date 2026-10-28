@@ -19,17 +19,17 @@ optional func textContentStorage(_ textContentStorage: NSTextContentStorage, tex
 - (NSTextParagraph *) textContentStorage:(NSTextContentStorage *) textContentStorage textParagraphWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSTextParagraph`](../nstextparagraph.md), or `nil`.
 
-#### Discussion
+## Discussion
 
 When non-nil, `textContentStorage` uses the text paragraph instead of creating the standard [`NSTextParagraph`](../nstextparagraph.md) with the attributed substring in range. The attributed string for a custom text paragraph must have `range.length`.
 
 Returns a custom paragraph for a range that you provide from the object’s attributed string.
 
-#### Discussion
+## Discussion
 
 When non-`nil`, `textContentStorage` uses the text paragraph instead of creating the standard [`NSTextParagraph`](../nstextparagraph.md) with the attributed substring in range. The attributed string for a custom text paragraph must have a length of `range.length`.
 

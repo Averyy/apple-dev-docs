@@ -32,7 +32,7 @@ optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTex
 - (void) updateTextureMapping:(id<MTLTexture>) texture mode:(const MTLSparseTextureMappingMode) mode indirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 When the GPU executes the command that updates the texture’s memory mapping, the GPU gets details about the region to update from the `indirectBuffer` parameter.
 

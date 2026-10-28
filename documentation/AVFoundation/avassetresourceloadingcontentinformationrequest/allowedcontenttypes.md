@@ -24,7 +24,7 @@ var allowedContentTypes: [String]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * allowedContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of file format UTIs. When `allowedContentTypes` is non-nil, the value of [`contentType`](./contenttype.md) must be set to a value contained in `allowedContentTypes` or `nil`.
 

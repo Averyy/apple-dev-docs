@@ -22,7 +22,7 @@ class let touchBarAlarmTemplateName: String
 extern NSImageName const NSImageNameTouchBarAlarmTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for alarm](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793513@2x.png)
 

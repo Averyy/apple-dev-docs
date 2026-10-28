@@ -25,7 +25,7 @@ class func predicate(forChannelCount channelCount: Int, operatorType: NSComparis
 + (NSPredicate *) predicateForChannelCount:(NSInteger) channelCount operatorType:(NSPredicateOperatorType) operatorType;
 ```
 
-#### Discussion
+## Discussion
 
 Predicate will be evaluated on the media selection option selected for the asset. Media selection options for primary assets may be specified in the AVAssetDownloadConfiguration mediaSelections property. Media selection options for interstitial assets may be circumscribed by -[AVAssetDownloadConfiguration setInterstitialMediaSelectionCriteria: forMediaCharacteristic:].
 

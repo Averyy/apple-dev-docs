@@ -26,7 +26,7 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, writeProm
 - (void) filePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider writePromiseToURL:(NSURL *) url completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the drag is complete. The request executes on the [`OperationQueue`](../../Foundation/operationqueue.md) supplied by [`operationQueue(for:)`](./operationqueue%28for%29.md).
 

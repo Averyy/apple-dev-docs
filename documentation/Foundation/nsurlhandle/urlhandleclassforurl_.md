@@ -17,11 +17,11 @@ Returns the class of the URL handle that will be used for a specified URL.
 + (Class) URLHandleClassForURL:(NSURL *) anURL;
 ```
 
-#### Return Value
+## Return Value
 
 The class of the URL handle that will be used for `aURL`.
 
-#### Discussion
+## Discussion
 
 Subclasses of `NSURLHandle` must be registered via the [`registerURLHandleClass:`](./registerurlhandleclass_.md) method. The subclass is determined by asking the list of registered subclasses if it [`canInitWithURL:`](./caninitwithurl_.md); the first class to respond [`true`](../../Swift/true.md) is selected.
 

@@ -12,7 +12,7 @@ virtual void SuspendServices (
  void );
 ```
 
-#### Overview
+## Overview
 
 Method will be called when the system wants to suspend the services that are provided by the HBA driver. This call is not a reset and the driver shall retain all state data between this so that if a ResumeServices call is received, the driver can continue providing services without a visible difference to the client. The driver may receive multiple SuspendServices calls without receiving a ResumeServices call and should ignore any after the first until a ResumeServices call is received.
 

@@ -5,11 +5,11 @@
 
 Use a web service to find details about apps and books to show to your users.
 
-#### Overview
+## Overview
 
 To provide users with metadata for the apps and books that they’re managing, such as artwork, the `contentMetadataLookup` URL in the [`Service Config`](./service-config.md) response allows a device management service to query the store for app and book metadata.
 
-#### Perform a lookup
+## Perform a lookup
 
 The URL query string tells the content metadata lookup service which app or book to look up. You need to use an HTTP `GET` method for this request.
 
@@ -176,7 +176,7 @@ A typical response looks like the following:
 }
 ```
 
-#### Authenticate for Custom Apps
+## Authenticate for Custom Apps
 
 If you include the organization’s `sToken` in the request as a cookie, a device management service can get authenticated app metadata for B2B apps that the organization owns, as well as apps that users can still redownload but no longer purchase.
 
@@ -340,7 +340,7 @@ When the `results` set is empty, a typical response looks like the following:
 }
 ```
 
-#### Identify universal apps
+## Identify universal apps
 
 When you query the store for an app, you may need to determine whether the app is universal so it can assess what devices it can assign the app to.
 

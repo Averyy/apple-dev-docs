@@ -15,11 +15,11 @@ Deprecated in OS X v10.5. Instead, use [`AUGraphAddNode(_:_:_:)`](./augraphaddno
 extern OSStatus AUGraphNewNode(AUGraph inGraph, const struct ComponentDescription *inDescription, UInt32 inClassDataSize, const void *inClassData, AUNode *outNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ClassInfo data should not be used with new nodes.
 

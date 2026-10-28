@@ -5,7 +5,7 @@
 
 Protect the user’s data in iOS by encrypting it on disk.
 
-#### Overview
+## Overview
 
 Data protection is an iOS feature that you use to secure your app’s files and prevent unauthorized access to them. Data protection is enabled automatically when the user sets an active passcode for the device. You read and write your files normally, but the system encrypts and decrypts your content behind the scenes. The encryption and decryption processes are automatic and hardware accelerated.
 
@@ -40,7 +40,7 @@ catch {
 }
 ```
 
-##### Manage Your Access to Encrypted Files
+### Manage Your Access to Encrypted Files
 
 Depending on a file’s protection level, attempts to read or write its contents could fail when the user subsequently locks the device. To ensure that your app is able to access files, do the following:
 

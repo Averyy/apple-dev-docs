@@ -19,7 +19,7 @@ func CFUserNotificationPopUpSelection(_ n: CFIndex) -> CFOptionFlags
 static CFOptionFlags CFUserNotificationPopUpSelection(CFIndex n);
 ```
 
-#### Return Value
+## Return Value
 
 A flag that can be used to set the selected element of a pop-up menu when creating a user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md).
 

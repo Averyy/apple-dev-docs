@@ -20,7 +20,7 @@ Creates an anonymous, in-memory layer.
 init(displayName: String? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Anonymous layers have no file backing.
 

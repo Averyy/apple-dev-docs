@@ -22,7 +22,7 @@ var notificationResponse: UNNotificationResponse? { get }
 @property (nonatomic, readonly, nullable) UNNotificationResponse * notificationResponse;
 ```
 
-#### Discussion
+## Discussion
 
 When UIKit connects a scene in order to process a notification, it puts the response object in this property. Use the information in this object to configure your scene. If a person selected one of the notification’s actions, perform that action.
 

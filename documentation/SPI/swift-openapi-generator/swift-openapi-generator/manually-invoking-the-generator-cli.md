@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Manually invoke the command-line tool to generate code as an alternative to the Swift package build plugin.
 
-#### Overview
+## Overview
 
 The recommended workflow is to use the Swift package plugin, as described in our tutorials:
 
@@ -24,7 +24,7 @@ If you need to commit the generated code to your source repository (for example,
 
 > 💡 **Tip**: Check out [Ahead-of-time (manual) code generation](./checking-out-an-example-project.md#Ahead-of-time-manual-code-generation) for example projects.
 
-##### Invoke the CLI manually
+### Invoke the CLI manually
 
 To generate Swift code to a specific directory, clone the generator repository and run the following command from the checkout directory:
 
@@ -50,7 +50,7 @@ To see the usage documentation for the generator CLI, use the following command:
 
 > **Note**: By default, the code is generated with the `package` access modifier, to make the generated code visible from other packages, add `--access-modifier public` to the invocation.
 
-##### Use the Swift package command
+### Use the Swift package command
 
 As an alternative to invoking the CLI manually, you can also use the package command, which works similarly to the build plugin.
 

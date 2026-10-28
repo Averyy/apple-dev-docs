@@ -20,7 +20,7 @@ func parameterID(at index: UInt32) -> UInt32
 - (UInt32) parameterIDAtIndex:(UInt32) index;
 ```
 
-#### Discussion
+## Discussion
 
 During `-addParameters:` your plugin tells the host to create parameters. Later, while running, your plugin can create new parameters using the FxParameterCreationAPI (just like in `-addParameters`), or it can remove them using the `-removeParameter:` method of this protocol. Each parameter must have a unique ID within the plugin. This method allows you to retrieve the ID of a parameter at a given index in the list of parameters. The IDs need not be sequential or even increasing. You could for example have the following:
 

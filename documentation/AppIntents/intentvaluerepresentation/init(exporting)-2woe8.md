@@ -23,11 +23,11 @@ init(exporting: @escaping @Sendable (Item) async throws -> IntentValue)
 
 Available when `Item` conforms to `Transferable` and `IntentValue` conforms to `_SystemIntentValue`.
 
-#### Discussion
+## Discussion
 
 Use this initializer when you only need to export your entity to a system type, without supporting import back into your entity type.
 
-#### Example
+## Example
 
 ```swift
 struct VenueEntity: AppEntity, Transferable {

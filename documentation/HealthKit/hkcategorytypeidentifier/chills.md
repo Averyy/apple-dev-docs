@@ -24,7 +24,7 @@ static let chills: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierChills;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

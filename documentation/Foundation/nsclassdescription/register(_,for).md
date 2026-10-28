@@ -20,7 +20,7 @@ class func register(_ description: NSClassDescription, for aClass: AnyClass)
 + (void) registerClassDescription:(NSClassDescription *) description forClass:(Class) aClass;
 ```
 
-#### Discussion
+## Discussion
 
 You should rarely need to directly invoke this method.
 

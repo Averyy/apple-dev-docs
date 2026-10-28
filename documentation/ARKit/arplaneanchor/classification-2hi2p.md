@@ -16,7 +16,7 @@ A general characterization of what kind of real-world surface the plane anchor r
 @property (nonatomic, assign, readonly) ARPlaneClassification classification;
 ```
 
-#### Discussion
+## Discussion
 
 On supported devices, ARKit automatically attempts to characterize each detected plane, describing it as a real-world surface such as a wall, floor, or table. You can then use this information to enhance the realism of your AR experience; for example, by placing certain virtual content only on floors.
 

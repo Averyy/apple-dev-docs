@@ -21,7 +21,7 @@ The capacity of the vertex buffer, measured in vertices.
 var vertexCapacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to [`vertexCapacity`](./descriptor-swift.struct/vertexcapacity.md).
 

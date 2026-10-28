@@ -12,11 +12,11 @@ virtual OSObject * getDiagnostics(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the diagnostics object (if any).
 
-#### Overview
+## Overview
 
 Returns a reference to the internal diagnostics object when the services are built in debug mode. Should be a no-op in release builds.
 

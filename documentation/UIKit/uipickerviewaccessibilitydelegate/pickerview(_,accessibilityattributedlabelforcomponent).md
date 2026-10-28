@@ -22,11 +22,11 @@ optional func pickerView(_ pickerView: UIPickerView, accessibilityAttributedLabe
 - (NSAttributedString *) pickerView:(UIPickerView *) pickerView accessibilityAttributedLabelForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The attributed string that identifies the picker view component
 
-#### Discussion
+## Discussion
 
 Use this method to provide descriptive information for the components of a picker view. Your attributed string may include the [`UIAccessibilitySpeechAttributeLanguage`](../uiaccessibilityspeechattributelanguage.md) attribute, which lets you use different language synthesizers for different parts of the string. The system prefers this method over the [`pickerView(_:accessibilityLabelForComponent:)`](./pickerview%28_,accessibilitylabelforcomponent%29.md) method. For in-depth information on how to create an appropriate descriptive string, see [Crafting Useful Labels and Hints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Making_Application_Accessible/Making_Application_Accessible.html#//apple_ref/doc/uid/TP40008785-CH102-SW6).
 

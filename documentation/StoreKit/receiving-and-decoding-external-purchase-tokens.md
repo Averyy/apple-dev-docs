@@ -5,7 +5,7 @@
 
 Receive tokens for external purchases that you use to report transactions to Apple.
 
-#### Overview
+## Overview
 
 An *external purchase token* is a unique string that your app or website receives when your customer chooses to view your external purchase offerings. You receive external purchase tokens within your app or appended to your website URL, depending on the API you call.
 
@@ -20,7 +20,7 @@ In all cases, decode the token to obtain its [`externalPurchaseId`](../ExternalP
 
 The External Purchase API returns tokens that are specific to the app’s environment, either production or sandbox. Tokens in the sandbox environment have an `externalPurchaseId` value that begins with `SANDBOX`.
 
-##### Receive custom link tokens for apps in the European Union
+### Receive custom link tokens for apps in the European Union
 
 The system automatically generates custom link tokens for your customer if your app configures the [`SKExternalPurchaseCustomLinkRegions`](../BundleResources/information-property-list/skexternalpurchasecustomlinkregions.md) or [`SKExternalPurchaseLinkStreamingRegions`](../BundleResources/information-property-list/skexternalpurchaselinkstreamingregions.md) property list keys. Your app calls the `ExternalPurchaseCustomLink/token(for:)` method to receive the tokens. These tokens have two possible token types: `ACQUISITION` and `SERVICES`.
 
@@ -45,7 +45,7 @@ Custom link tokens are available only on devices running iOS 18.1 and later, iPa
 
 > ❗ **Important**: For the purposes of reporting, a token is valid if the initial transaction your app reports against that token was valid and occurred prior to the expiration of the token. If a new transaction occurs at the start of an auto-renewing subscription, report subsequent auto-renewal events against the original token, even if that token is in an expired state.
 
-##### Receive custom link tokens for apps in the EU, Brazil, and Japan
+### Receive custom link tokens for apps in the EU, Brazil, and Japan
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement ([`StoreKit external purchases or offers entitlement`](../BundleResources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)), use the [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API to implement external purchases.
 
@@ -54,7 +54,7 @@ In iOS 26.4 and later in Brazil and Japan, and iOS 27.2 and later in the EU, cal
 - Request an `IN_APP` token type for flows that use an alternative payment provider inside the app
 - Request a `LINK_OUT` token type for flows where customers can complete transactions on your website, outside of the app
 
-##### Decode external purchase tokens
+### Decode external purchase tokens
 
 The token your app or website’s server receives is a string that is Base64URL-encoded JSON. Decode the token using Base64URL decoding to read the JSON, which contains the following fields:
 
@@ -106,7 +106,7 @@ The custom link token’s value after Base64URL decoding is the following JSON:
 }
 ```
 
-##### Recognize tokens from the testing environment
+### Recognize tokens from the testing environment
 
 The [External Purchase](./external-purchase.md) API returns external purchase tokens that are specific to the app’s environment: production or sandbox. You can recognize a token for the sandbox environment by its `externalPurchaseId` property, which always begins with `SANDBOX`.
 

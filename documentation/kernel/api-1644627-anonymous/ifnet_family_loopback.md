@@ -13,7 +13,7 @@
 IFNET_FAMILY_LOOPBACK = 1
 ```
 
-#### Discussion
+## Discussion
 
 A software loopback interface.
 

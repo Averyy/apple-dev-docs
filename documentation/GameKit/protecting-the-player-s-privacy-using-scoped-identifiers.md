@@ -5,7 +5,7 @@
 
 Use the scoped identifiers that GameKit provides you as player IDs when transmitting or saving player data.
 
-#### Overview
+## Overview
 
 If you store player data outside of Game Center, use the scoped player identifiers that GameKit provides for you to identify the local player’s data — not their name and avatar, which may change, or other personal information that’s private. The identifiers that Game Center provides are persistent and scoped to your game instances.
 
@@ -13,11 +13,11 @@ GameKit scopes the identifiers of other players in the game instance to each lea
 
 For design guidance on protecting the player’s privacy, see [Human Interface Guidelines > Privacy](https://developer.apple.com/design/human-interface-guidelines/privacy).
 
-##### Initialize the local player
+### Initialize the local player
 
 Before you can get a scoped identifier, initialize the local player who is running your game on the device. During the initialization process, the player signs in to their Game Center account if they haven’t already done so. Identifiers for a player are persistent; that is, the values are the same across all instances of your game. For more information, see [Authenticating a player](./authenticating-a-player.md).
 
-##### Get the local player’s scoped identifier
+### Get the local player’s scoped identifier
 
 After initialization, you can get a unique identifier for the local player from the [`GKLocalPlayer`](./gklocalplayer.md) shared object using the [`gamePlayerID`](./gkplayer/gameplayerid.md) property:
 
@@ -34,7 +34,7 @@ If initialization fails, the [`gamePlayerID`](./gkplayer/gameplayerid.md) and [`
 
 Later, you can use either the [`gamePlayerID`](./gkplayer/gameplayerid.md) or the [`teamPlayerID`](./gkplayer/teamplayerid.md) values in GameKit calls to identify the player.
 
-##### Get scoped identifiers for friends of the local player
+### Get scoped identifiers for friends of the local player
 
 If you have permission from the local player to access their friends list, you can also get scoped identifiers for their friends. The friend identifiers are persistent and scoped to game instances the local player and their friends run.
 

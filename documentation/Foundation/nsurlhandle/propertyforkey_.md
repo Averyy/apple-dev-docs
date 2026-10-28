@@ -17,11 +17,11 @@ Returns the property for the specified key.
 - (id) propertyForKey:(NSString *) propertyKey;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with `propertyKey`. Returns `nil` if there is no such key.
 
-#### Discussion
+## Discussion
 
 Subclasses of NSURLHandle must override this method.
 

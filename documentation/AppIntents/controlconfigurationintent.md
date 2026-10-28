@@ -19,7 +19,7 @@ An interface for configuring a Control Center module.
 protocol ControlConfigurationIntent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 The parameters of your intent define all of the configuration options for your control.
 

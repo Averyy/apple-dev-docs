@@ -19,7 +19,7 @@ Creates and returns a new action identifier with the specified value.
 init(_ rawValue: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new action identifier type.
 

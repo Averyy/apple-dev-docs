@@ -21,7 +21,7 @@ init(region: CLRegion)
 - (instancetype) initWithRegion:(CLRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance representing the location event.
 

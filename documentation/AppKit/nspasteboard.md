@@ -23,7 +23,7 @@ class NSPasteboard
 
 - [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
 
-#### Overview
+## Overview
 
 The pasteboard server is shared by all running apps. It contains data that the user has cut or copied, as well as other data that one application wants to transfer to another. [`NSPasteboard`](./nspasteboard.md) objects are an application’s sole interface to the server and to all pasteboard operations.
 

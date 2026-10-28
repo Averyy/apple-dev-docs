@@ -25,7 +25,7 @@ var versionHash: Data { get }
 @property (copy, readonly) NSData * versionHash;
 ```
 
-#### Discussion
+## Discussion
 
 The version hash is used to uniquely identify a property based on its configuration. The version hash uses only values which affect the persistence of data and the user-defined [`versionHashModifier`](./versionhashmodifier.md) value. (The values which affect persistence are the name of the property, and the flags for `isOptional`, `isTransient`, and `isReadOnly`.) This value is stored as part of the version information in the metadata for stores, as well as a definition of a property involved in an `NSPropertyMapping` object.
 

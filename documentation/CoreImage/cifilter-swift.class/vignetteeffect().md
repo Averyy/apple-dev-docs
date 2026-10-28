@@ -24,11 +24,11 @@ class func vignetteEffect() -> any CIFilter & CIVignetteEffect
 + (CIFilter<CIVignetteEffect> *) vignetteEffectFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the vignette effect filter to an image. This effect reduces brightness of the image at the periphery of a specified region.
 

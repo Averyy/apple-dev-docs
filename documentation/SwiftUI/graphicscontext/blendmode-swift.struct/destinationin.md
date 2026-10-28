@@ -21,7 +21,7 @@ A mode that you use to erase any of the background that isn’t covered by opaqu
 static var destinationIn: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = D*Sa` where
 

@@ -17,7 +17,7 @@
 - (void) addBuffer:(NSData *) buffer name:(NSString *) name contentWorld:(WKContentWorld *) world;
 ```
 
-#### Discussion
+## Discussion
 
 Adds a data buffer that will be available to JavaScript through the `window.webkit.buffers` object
 

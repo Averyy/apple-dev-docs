@@ -25,7 +25,7 @@ A struct containing the initialized channel and source.
 struct ChannelAndStream
 ```
 
-#### Overview
+## Overview
 
 This struct can be deconstructed by consuming the individual components from it.
 

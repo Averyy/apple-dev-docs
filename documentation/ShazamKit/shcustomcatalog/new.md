@@ -21,7 +21,7 @@ Creates a new custom catalog object for storing reference audio signatures and t
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom catalog for storing processed reference audio recordings and their associated metadata.
 

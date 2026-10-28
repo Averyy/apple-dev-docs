@@ -21,7 +21,7 @@ case signatureMissingAdNetworkId
 SKAdTestErrorCodeSignatureMissingAdNetworkId
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include an ad network identifier when you create and validate an ad impression in the testing environment.
 

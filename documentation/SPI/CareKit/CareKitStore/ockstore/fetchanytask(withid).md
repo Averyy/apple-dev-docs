@@ -17,7 +17,7 @@ Asynchronously retrieve an array of tasks from the store using its user-defined 
 func fetchAnyTask(withID id: String) async throws -> OCKAnyTask
 ```
 
-#### Discussion
+## Discussion
 
 If a task with the specified identifier isn’t found, the completion handler receives an error.
 

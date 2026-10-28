@@ -15,11 +15,11 @@ Creates a search object for finding policies.
 OSStatus SecPolicySearchCreate(CSSM_CERT_TYPE certType, const SecAsn1Oid *policyOID, const SecAsn1Item *value, SecPolicySearchRef*searchRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You use the search object created by this function in subsequent calls to the [`SecPolicySearchCopyNext`](./secpolicysearchcopynext.md) function to obtain trust policy objects. Policies are stored in the Module Directory Services (MDS) database. MDS is described in detail in “Part 8: Module Directory Service (MDS)” of *Common Security: CDSA and CSSM, version 2 (with corrigenda)* from The Open Group ([http://www.opengroup.org/security/cdsa.htm](http://www.opengroup.org/security/cdsa.htm)).
 

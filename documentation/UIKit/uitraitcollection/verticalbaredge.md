@@ -23,7 +23,7 @@ var verticalBarEdge: UIVerticalBarEdge { get }
 @property (nonatomic, readonly) UIVerticalBarEdge verticalBarEdge;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the system’s preferred edge regardless of whether a vertical bar is currently visible. Returns `UIVerticalBarEdgeUnspecified` on devices and in contexts where the system never places a vertical bar — for example hardware without a vertical bar, or a size class or orientation in which no vertical bar is used.
 

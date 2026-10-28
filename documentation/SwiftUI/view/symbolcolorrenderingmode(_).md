@@ -22,7 +22,7 @@ Sets the color rendering mode for symbol images.
 nonisolated func symbolColorRenderingMode(_ mode: SymbolColorRenderingMode?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that specifies the color rendering mode for symbol images.
 

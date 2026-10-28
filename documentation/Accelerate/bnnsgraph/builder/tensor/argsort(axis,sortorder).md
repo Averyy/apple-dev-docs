@@ -23,7 +23,7 @@ func argSort(axis: Int, sortOrder: BNNSGraph.Builder.SortOrder) -> BNNSGraph.Bui
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function returns the indices into `self`ordered by the corresponding values.
 

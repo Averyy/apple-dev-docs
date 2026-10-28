@@ -20,7 +20,7 @@ var printer: NSFont { get }
 @property (copy, readonly) NSFont * printerFont;
 ```
 
-#### Discussion
+## Discussion
 
 For a font that already represents a scalable PostScript font, the value in this property is `self`. For a bitmapped screen font, the value is the corresponding scalable PostScript font.
 

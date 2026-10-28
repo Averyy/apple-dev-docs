@@ -17,7 +17,7 @@ A unique identifier for the merchant.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 When reading a card, the system sends this identifier to the customer device, which uses the value to retrieve the matching loyalty or reward ID of the customer.
 

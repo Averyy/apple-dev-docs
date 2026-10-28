@@ -24,7 +24,7 @@ class func second() -> Self
 + (instancetype) secondUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring time in seconds.
 

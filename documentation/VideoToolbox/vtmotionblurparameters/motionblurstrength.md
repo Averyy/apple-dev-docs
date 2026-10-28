@@ -22,7 +22,7 @@ var motionBlurStrength: Int { get }
 @property (nonatomic, readonly) NSInteger motionBlurStrength;
 ```
 
-#### Discussion
+## Discussion
 
 The supported range for this value is from 1 and 100. The default value is 50.
 

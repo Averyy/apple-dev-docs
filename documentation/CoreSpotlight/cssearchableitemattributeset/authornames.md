@@ -23,7 +23,7 @@ var authorNames: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * authorNames;
 ```
 
-#### Discussion
+## Discussion
 
 A message may have zero or more authors. Although the array preserves the order of authors, it is not intended to identify the main author or represent the relative importance of authors.
 

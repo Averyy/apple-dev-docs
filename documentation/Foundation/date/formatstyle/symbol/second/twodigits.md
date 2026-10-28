@@ -21,7 +21,7 @@ The custom format style that conveys a two-digit numeric second, zero-padded if 
 static var twoDigits: Date.FormatStyle.Symbol.Second { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents the seconds field like `01` or `18`.
 

@@ -34,7 +34,7 @@ var transactionAmount: INPaymentAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INPaymentAmount * transactionAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify how much to debit from the user’s account and apply to the bill payment. Always specify the precise amount to transfer and not just a constant indicating that the user wants to pay the current balance or the minimum due. For example, you might create an [`INPaymentAmount`](../inpaymentamount.md) object that indicates the minimum amount is $25. During confirmation or at other appropriate times, Siri may display the precise amount to the user.
 

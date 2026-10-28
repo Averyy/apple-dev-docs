@@ -20,11 +20,11 @@ Creates a graph with the specified list of nodes.
 + (instancetype) graphWithNodes:(NSArray<GKGraphNode *> *) nodes;
 ```
 
-#### Return Value
+## Return Value
 
 A new graph object.
 
-#### Discussion
+## Discussion
 
 The nodes in the array need not already be connected—you can connect nodes after adding them to the graph using the [`connectToLowestCostNode(node:bidirectional:)`](./connecttolowestcostnode%28node,bidirectional%29.md) method on the graph itself or the addConnection:bidirectional: method on individual nodes. Using the [`findPath(from:to:)`](./findpath%28from,to%29.md) method requires connections between nodes.
 

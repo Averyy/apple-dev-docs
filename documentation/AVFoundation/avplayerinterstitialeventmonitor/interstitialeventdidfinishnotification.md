@@ -25,7 +25,7 @@ class let interstitialEventDidFinishNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Carries a userInfo dictionary that can contain the following keys and values:
 

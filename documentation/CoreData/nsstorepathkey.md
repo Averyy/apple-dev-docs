@@ -21,7 +21,7 @@ let NSStorePathKey: String
 extern NSString * const NSStorePathKey;
 ```
 
-#### Discussion
+## Discussion
 
 This is resolved to the store-file path contained in the an external record file directory.
 

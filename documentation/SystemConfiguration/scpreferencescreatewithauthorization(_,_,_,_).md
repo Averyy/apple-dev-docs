@@ -19,7 +19,7 @@ func SCPreferencesCreateWithAuthorization(_ allocator: CFAllocator?, _ name: CFS
 SCPreferencesRefSCPreferencesCreateWithAuthorization(CFAllocatorRef allocator, CFStringRef name, CFStringRef prefsID, AuthorizationRef authorization);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the new preferences session. You must release the returned value.
 

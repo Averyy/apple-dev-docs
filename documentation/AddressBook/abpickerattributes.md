@@ -15,7 +15,7 @@ A bitfield used to specify the selection behavior for the values of multi-value 
 typedef OptionBits ABPickerAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Use the constants listed in [People-Picker Selection Behavior](./people-picker-selection-behavior.md).
 

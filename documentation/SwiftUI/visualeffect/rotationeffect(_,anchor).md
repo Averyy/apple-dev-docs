@@ -21,11 +21,11 @@ Rotates content in two dimensions around the specified point.
 func rotationEffect(_ angle: Angle, anchor: UnitPoint = .center) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 A rotation effect.
 
-#### Discussion
+## Discussion
 
 This effect rotates the content around the axis that points out of the xy-plane. It has no effect on the content’s frame. The following code rotates text by 22˚ and then draws a border around the modified view to show that the frame remains unchanged by the rotation:
 

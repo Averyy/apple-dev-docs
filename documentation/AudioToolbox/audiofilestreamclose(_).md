@@ -24,7 +24,7 @@ func AudioFileStreamClose(_ inAudioFileStream: AudioFileStreamID) -> OSStatus
 extern OSStatus AudioFileStreamClose(AudioFileStreamID inAudioFileStream);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

@@ -24,7 +24,7 @@ case checkIn
 INReservationActionTypeCheckIn
 ```
 
-#### Discussion
+## Discussion
 
 The [`validDuration`](../inreservationaction/validduration.md) property determines the earliest and latest times that the user can check in for their reservation.
 

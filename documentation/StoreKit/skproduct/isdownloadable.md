@@ -27,7 +27,7 @@ var isDownloadable: Bool { get }
 @property (nonatomic, readonly) BOOL isDownloadable;
 ```
 
-#### Discussion
+## Discussion
 
 You can associate a set of data files with the App Store Connect record you created for a product. The value of this property is [`true`](../../Swift/true.md) if at least one file has been associated with the product.
 

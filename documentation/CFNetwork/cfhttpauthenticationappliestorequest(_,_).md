@@ -24,11 +24,11 @@ func CFHTTPAuthenticationAppliesToRequest(_ auth: CFHTTPAuthentication, _ reques
 extern Boolean CFHTTPAuthenticationAppliesToRequest(CFHTTPAuthenticationRef auth, CFHTTPMessageRef request);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `auth` is associated with `request`, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 If this function returns `TRUE`, you can use `auth` to provide authentication information when using `request`.
 

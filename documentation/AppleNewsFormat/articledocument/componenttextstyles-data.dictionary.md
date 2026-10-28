@@ -20,7 +20,7 @@ object ArticleDocument.componentTextStyles
 - [Defining and Applying Text Styles](../../AppleNews/defining-and-applying-text-styles.md)
 - [Enhancing Your Articles with Styles](../../AppleNews/enhancing-your-articles-with-styles.md)
 
-#### Discussion
+## Discussion
 
 `ArticleDocument.componentTextStyles` is an object containing the component text style defaults as well as component text style objects that components in your article can use. You provide each component text style object as a key-value pair. The value of each pair is a [`ComponentTextStyle`](../componenttextstyle.md) object.
 
@@ -30,7 +30,7 @@ object ArticleDocument.componentTextStyles
 
 **To create a style for components to refer to**, create a key that’s meaningful to you. Apple News applies this style  to any components that refer to it, after it applies the default styles. If a property is in both the referenced style and one of the defaults, the property in the referenced style overrides the defaults.
 
-##### Example
+### Example
 
 ```json
 {

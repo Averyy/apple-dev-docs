@@ -24,7 +24,7 @@ int IOLog(const char *format, ...);
 void IOLog(const char *format, ...);
 ```
 
-#### Discussion
+## Discussion
 
 This function allows a driver to log diagnostic information to the screen during verbose boots, and to a log file found at /var/log/system.log. IOLog should not be called from interrupt context.
 

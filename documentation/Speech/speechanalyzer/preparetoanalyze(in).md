@@ -20,7 +20,7 @@ Prepares the analyzer to begin work with minimal startup delay.
 final func prepareToAnalyze(in audioFormat: AVAudioFormat?) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The analyzer normally performs some configuration lazily as the first audio input becomes available. This method performs that work immediately to reduce or eliminate delays in analyzing the first audio input.
 

@@ -22,11 +22,11 @@ var isTLSClientCertificateRequired: Bool { get set }
 @property (getter=isTLSClientCertificateRequired) BOOL tlsClientCertificateRequired;
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the Wi-Fi network requires two-factor authentication for EAP-TTLS, PEAP and EAP-FAST. If `false`, the network requires zero-factor authentication for EAP-TLS. The default values are `true` if the EAP type is EAP-TLS and `false` for other EAP types.
 
-#### Discussion
+## Discussion
 
 Optional. EAP Transport Layer Security (EAP-TLS) is an IETF open security standard that requires a client certificate in addition to a password (two-factor authentication). If an EAP-TTLS, PEAP or EAP-FAST network requires two-factor authentication then a client identity must be configured. If `isTLSClientCertificateRequired` returns false, a client identity need not be configured. If `isTLSClientCertificateRequired` returns true, your app must set the client identity by using [`setIdentity(_:)`](./setidentity%28_%29.md).
 

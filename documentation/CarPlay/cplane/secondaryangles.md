@@ -23,7 +23,7 @@ var secondaryAngles: [Measurement<UnitAngle>] { get set }
 @property (nonatomic, strong) NSArray<NSMeasurement<NSUnitAngle *> *> * secondaryAngles;
 ```
 
-##### Discussion
+### Discussion
 
 This doesn’t include the `primaryAngle`.
 

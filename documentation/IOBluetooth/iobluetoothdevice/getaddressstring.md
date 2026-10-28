@@ -15,11 +15,11 @@ Get a string representation of the Bluetooth device address for the target devic
 - (NSString *) getAddressString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSString containing the Bluetooth device address of the target device.
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

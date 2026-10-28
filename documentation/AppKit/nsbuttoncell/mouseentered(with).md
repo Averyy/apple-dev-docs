@@ -19,7 +19,7 @@ func mouseEntered(with event: NSEvent)
 - (void) mouseEntered:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called only when the pointer moves onto the button and the value of [`showsBorderOnlyWhileMouseInside`](./showsborderonlywhilemouseinside.md) is [`true`](../../Swift/true.md).
 

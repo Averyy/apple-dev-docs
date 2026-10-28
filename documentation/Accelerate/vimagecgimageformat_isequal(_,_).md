@@ -25,7 +25,7 @@ func vImageCGImageFormat_IsEqual(_ f1: UnsafePointer<vImage_CGImageFormat>!, _ f
 Boolean vImageCGImageFormat_IsEqual(const vImage_CGImageFormat *f1, const vImage_CGImageFormat *f2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two vImage Core Graphics image formats are equal.
 

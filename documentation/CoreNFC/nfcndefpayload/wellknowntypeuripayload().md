@@ -21,7 +21,7 @@ func wellKnownTypeURIPayload() -> URL?
 - (NSURL *) wellKnownTypeURIPayload;
 ```
 
-#### Return Value
+## Return Value
 
 A URL when the payload contains a Well Know Type URI; otherwise, `nil`.
 

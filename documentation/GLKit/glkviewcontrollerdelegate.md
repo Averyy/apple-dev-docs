@@ -21,7 +21,7 @@ protocol GLKViewControllerDelegate : NSObjectProtocol
 @protocol GLKViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A delegate is called each time the controller is about to display a new frame of animation. It is also called before the view controller’s rendering loop pauses or resumes sending updates.
 

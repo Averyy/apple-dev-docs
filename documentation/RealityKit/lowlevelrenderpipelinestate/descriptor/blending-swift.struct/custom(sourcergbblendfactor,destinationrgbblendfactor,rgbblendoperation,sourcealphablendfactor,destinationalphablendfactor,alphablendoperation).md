@@ -18,7 +18,7 @@ Creates a custom blending configuration with explicit Metal blend factors and op
 static func custom(sourceRGBBlendFactor: MTLBlendFactor = .one, destinationRGBBlendFactor: MTLBlendFactor = .zero, rgbBlendOperation: MTLBlendOperation = .add, sourceAlphaBlendFactor: MTLBlendFactor = .one, destinationAlphaBlendFactor: MTLBlendFactor = .zero, alphaBlendOperation: MTLBlendOperation = .add) -> LowLevelRenderPipelineState.Descriptor.Blending
 ```
 
-#### Return Value
+## Return Value
 
 A [`LowLevelRenderPipelineState.Descriptor.Blending`](../blending-swift.struct.md) with the specified configuration.
 

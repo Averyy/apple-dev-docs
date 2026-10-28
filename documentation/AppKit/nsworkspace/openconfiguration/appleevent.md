@@ -19,7 +19,7 @@ var appleEvent: NSAppleEventDescriptor? { get set }
 @property (strong, nullable) NSAppleEventDescriptor * appleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which causes the system to send a default Apple event, as needed. The system sends the event only if an instance of the app is already running.
 

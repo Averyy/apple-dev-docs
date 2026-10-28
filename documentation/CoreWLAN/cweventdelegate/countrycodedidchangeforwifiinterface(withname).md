@@ -20,7 +20,7 @@ optional func countryCodeDidChangeForWiFiInterface(withName interfaceName: Strin
 - (void) countryCodeDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for country code change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.countryCodeDidChange`](../cweventtype/countrycodedidchange.md) event type.
 

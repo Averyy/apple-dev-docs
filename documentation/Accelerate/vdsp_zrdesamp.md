@@ -21,7 +21,7 @@ Performs complex-real single-precision FIR filtering with decimation and antiali
 extern void vDSP_zrdesamp(const DSPSplitComplex *__A, vDSP_Stride __DF, const float *__F, const DSPSplitComplex *__C, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 Performs finite impulse response (FIR) filtering at selected positions of the input vector `C`, with the filter `F`, using the decimation factor `DF`. Results are left in the output vector `C`.
 

@@ -21,7 +21,7 @@ Textual context that assistive technologies can use to improve the presentation 
 struct AccessibilityTextContentType
 ```
 
-#### Overview
+## Overview
 
 Use an `AccessibilityTextContentType` value when setting the accessibility text content type of a view using the [`accessibilityTextContentType(_:)`](./view/accessibilitytextcontenttype%28_%29.md) modifier.
 

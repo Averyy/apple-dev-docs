@@ -15,11 +15,11 @@ The Get Brand by ID endpoint returns this response object.
 object BrandResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Brand by ID`](./get-brand-by-id.md) returns `BrandResponse` as the top-level envelope. On success, `result` contains a single [`Brand`](./brand.md) object. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
 
-##### Example
+### Example
 
 ```json
 {

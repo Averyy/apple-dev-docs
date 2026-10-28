@@ -24,7 +24,7 @@ func setScale(_ scale: vector_float3, forTime time: TimeInterval)
 - (void) setScale:(vector_float3) scale forTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 Together with the translation, rotation, and shear factors, a scale factor defines the local coordinate space for any object affected by the transform, relative to a parent coordinate space. To work with the complete transform, use the [`localTransform(atTime:)`](../mdltransformcomponent/localtransform%28attime%29.md) and [`setLocalTransform(_:forTime:)`](../mdltransformcomponent/setlocaltransform%28_,fortime%29.md) methods.
 

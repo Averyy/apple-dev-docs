@@ -20,7 +20,7 @@ An action that starts, stops, or increments by a specific value.
 struct FromToByAction<Value> where Value : AnimatableData
 ```
 
-#### Overview
+## Overview
 
 This action animates a bound parameters value over time. Specifying a [`from`](./fromtobyaction/from.md) value represents the animated properties’ initial value at the start of the animation. Specifying a [`to`](./fromtobyaction/to.md) determines the value of the property at the end of the animation. Specifying a[`by`](./fromtobyaction/by.md) adds a value to the properties initial state, which calculates the value at the end of the animation.
 
@@ -28,7 +28,7 @@ This action exposes [`FromToByAction.TransformMode`](./fromtobyaction/transformm
 
 > **Note**: `FromToByAction` doesn’t support [`JointTransforms`](./jointtransforms.md) or [`BlendShapeWeights`](./blendshapeweights.md) types. Use [`FromToByAnimation`](./fromtobyanimation.md) to animate these types.
 
-##### Creating a from, to, by action to animate an entity’s opacity
+### Creating a from, to, by action to animate an entity’s opacity
 
 The example below creates an animation which gradually animates the bound  entity’s opacity property for five seconds with a linear transition. In this example, the entity starts with opacity at `1.0`.
 
@@ -55,7 +55,7 @@ let opacityAnimation = try AnimationResource
 entity.playAnimation(opacityAnimation)
 ```
 
-##### Create a from, to, by action to animate an entity’s transform property
+### Create a from, to, by action to animate an entity’s transform property
 
 The example below creates an animation which gradually animates the bound entities transform property for five seconds with a linear transition.
 

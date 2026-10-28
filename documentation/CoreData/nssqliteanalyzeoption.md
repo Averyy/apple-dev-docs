@@ -25,7 +25,7 @@ let NSSQLiteAnalyzeOption: String
 extern NSString * const NSSQLiteAnalyzeOption;
 ```
 
-#### Discussion
+## Discussion
 
 This invokes SQLite’s `ANALYZE` command. It is ignored by stores other than the SQLite store.
 

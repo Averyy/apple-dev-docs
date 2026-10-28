@@ -22,7 +22,7 @@ init(_ data: Data, id: KeyPath<Data.Element, ID>, @DynamicInstructionsBuilder co
 
 Available when `Data` conforms to `RandomAccessCollection`, `ID` conforms to `Hashable`, and `Content` conforms to `DynamicInstructions`.
 
-#### Discussion
+## Discussion
 
 Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](../dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](../dynamicinstructions.md).
 

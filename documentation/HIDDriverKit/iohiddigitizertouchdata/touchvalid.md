@@ -16,7 +16,7 @@ A single-bit Boolean that indicates whether the touch contact was intended.
 uint32_t touchValid;
 ```
 
-#### Discussion
+## Discussion
 
 The device should report `0` if the contact isn’t a valid touch.
 

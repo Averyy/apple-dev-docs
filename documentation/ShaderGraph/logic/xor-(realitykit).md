@@ -14,7 +14,7 @@ Returns true if only one of the inputs is true.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -25,7 +25,7 @@ Returns true if only one of the inputs is true.
 | --- | --- |
 | `Out` | Bool |
 
-#### Discussion
+## Discussion
 
 This node mimics the logical `Xor` operator, as shown in the table below:
 

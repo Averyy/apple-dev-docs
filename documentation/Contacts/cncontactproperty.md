@@ -24,7 +24,7 @@ class CNContactProperty
 @interface CNContactProperty : NSObject
 ```
 
-#### Overview
+## Overview
 
 A contact (that is, an instance of [`CNContact`](./cncontact.md)) has properties, such as [`givenName`](./cncontact/givenname.md), [`phoneNumbers`](./cncontact/phonenumbers.md), and [`jobTitle`](./cncontact/jobtitle.md). Each property is represented by an instance of [`CNContactProperty`](./cncontactproperty.md), which provides a tuple that can contain three or five values, depending on whether the property is a member of an array of labeled values. For example, the [`phoneNumbers`](./cncontact/phonenumbers.md) property is a member of an array of labeled values, so the `CNContactProperty` tuple contains the contact, key, value, identifier, and label. For the [`givenName`](./cnmutablecontact/givenname.md) property, which is not contained in a labeled array, `CNContactProperty` returns a tuple that contains the contact, key, and value. The `CNContactProperty` class is used by [`CNContactPicker`](../ContactsUI/cncontactpicker.md) to return the user’s selected property.
 

@@ -24,7 +24,7 @@ let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString
 extern CFStringRef const kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 You set this key in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md).  Set it to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to allow hardware-accelerated decoding.  To specifically prevent hardware-accelerated decoding, set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). This property is useful for clients doing realtime decode operations because it allows VideoToolbox to choose the optimal decoding path.
 

@@ -25,11 +25,11 @@ func nextInt() -> Int
 - (NSInteger) nextInt;
 ```
 
-#### Return Value
+## Return Value
 
 A random integer value in the range `[INT32_MIN, INT32_MAX]`.
 
-#### Discussion
+## Discussion
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 

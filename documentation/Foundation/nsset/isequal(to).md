@@ -25,11 +25,11 @@ func isEqual(to otherSet: Set<AnyHashable>) -> Bool
 - (BOOL) isEqualToSet:(NSSet<id> *) otherSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `otherSet` are equal to the contents of the receiving set, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two sets have equal contents if they each have the same number of members and if each member of one set is present in the other. Object equality is tested using isEqual:.
 

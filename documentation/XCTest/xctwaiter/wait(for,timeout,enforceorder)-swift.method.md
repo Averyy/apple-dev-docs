@@ -16,11 +16,11 @@ func wait(for expectations: [XCTestExpectation], timeout seconds: TimeInterval, 
 - (XCTWaiterResult) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations timeout:(NSTimeInterval) seconds enforceOrder:(BOOL) enforceOrderOfFulfillment;
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`.
 
-#### Discussion
+## Discussion
 
 Expectations can appear in the `expectations` array only once.
 

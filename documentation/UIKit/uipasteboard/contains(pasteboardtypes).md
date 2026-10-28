@@ -22,11 +22,11 @@ func contains(pasteboardTypes: [String]) -> Bool
 - (BOOL) containsPasteboardTypes:(NSArray<NSString *> *) pasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the pasteboard item holds data of the indicated representation type, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method works on the first item in the pasteboard. If there are other items, it ignores them. You can use this method when enabling or disabling the Paste menu command.
 

@@ -16,11 +16,11 @@ Generates a pseudo-random 32-bit unsigned integer.
 uint random::integer()
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-random 32-bit unsigned integer.
 
-#### Discussion
+## Discussion
 
 This function generates a random integer covering the full range of 32-bit unsigned values and increments the internal random seed for subsequent calls.
 

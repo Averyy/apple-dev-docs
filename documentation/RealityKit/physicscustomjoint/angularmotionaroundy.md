@@ -20,7 +20,7 @@ The angular motion limits around the y-axis.
 var angularMotionAroundY: PhysicsCustomJoint.MotionLimit
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the limits of `pin1` around the y-axis of `pin0`.
 

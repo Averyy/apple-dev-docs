@@ -26,7 +26,7 @@ protocol CPTemplateApplicationSceneDelegate : UISceneDelegate
 
 - [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
 
-#### Overview
+## Overview
 
 This protocol defines methods that CarPlay calls when the scene connects and disconnects, as well as methods for responding to certain user actions. Use your implementation to provide the appropriate behavior for when these events occur. For example, creating and setting your root template when CarPlay launches your app and connects its scene.
 

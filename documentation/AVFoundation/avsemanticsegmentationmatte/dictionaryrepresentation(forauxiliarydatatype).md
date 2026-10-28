@@ -25,7 +25,7 @@ func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: Autoreleasing
 - (NSDictionary *) dictionaryRepresentationForAuxiliaryDataType:(NSString **) outAuxDataType;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of `CGImageDestination`-compatible semantic segmentation matte information, or `nil` if the auxiliary data type is unsupported.
 

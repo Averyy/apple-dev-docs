@@ -5,7 +5,7 @@
 
 Improve your app’s High Dynamic Range (HDR) image support with metadata.
 
-#### Overview
+## Overview
 
 HDR images support a wider range of brightness levels than traditional, standard dynamic range images, and provide significant visual improvements. Despite the visual benefits of HDR images, rendering them in full fidelity isn’t always the best option for your app. You may need to reduce HDR fidelity to lower your app’s power consumption, avoid causing eye strain, or improve mixed media or multiwindow experiences by matching the range of brightness between your images and the rest of the system UI.
 
@@ -13,7 +13,7 @@ You can precisely configure how the system presents HDR images with API support 
 
 > **Note**: For additional information on rendering HDR images, see WWDC24 session 10177: [Use HDR for dynamic image experiences in your app](https://developer.apple.com/videos/play/wwdc2024/10177), and WWDC23 session 10181: [Support HDR images in your app](https://developer.apple.com/videos/play/wwdc2023/10181) WWDC sessions.
 
-##### Set the dynamic range you prefer
+### Set the dynamic range you prefer
 
 You can indicate the HDR fidelity you desire with the multiple content-rendering frameworks that include the [`preferredDynamicRange`](./cgcontenttonemappinginfo-swift.enum/defaultoptions/preferreddynamicrange.md) and its sibling properties. For graphics and images, [Core Graphics](./CoreGraphics.md) and [Core Animation](../QuartzCore/QuartzCore.md) offer the functionality in [`CGImage`](./cgimage.md) and [`CALayer`](../QuartzCore/calayer.md). You can also find `preferredDynamicRange` in AVKit and UIKit frameworks: the [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md), [`Color`](../SwiftUI/color.md), [`UIImageView`](../UIKit/uiimageview.md), and [`NSImageView`](../AppKit/nsimageview.md) classes, offer a consistent API.
 
@@ -90,7 +90,7 @@ layer.preferredDynamicRange = .high
 
 > **Note**: Only Core Animation layers support animating across [`preferredDynamicRange`](../QuartzCore/calayer/preferreddynamicrange.md) values.
 
-##### Manage HDR metadata
+### Manage HDR metadata
 
 HDR images capture a wide range of light values. You can take advantage of metadata on an HDR image to improve rendering by declaring how the system presents those light value ranges in context.
 
@@ -98,7 +98,7 @@ HDR images capture a wide range of light values. You can take advantage of metad
 
 [`contentAverageLightLevel`](./cgimage/contentaveragelightlevel.md) establishes the average light level across all image pixels. Use [`CGContentToneMappingInfo.DynamicRange.constrained`](./cgcontenttonemappinginfo-swift.enum/dynamicrange/constrained.md) dynamic range to optimize rendering for multimedia and multiwindow usage. And `.constrained` rendering relies on `contentAverageLightLevel` metadata to adapt each HDR image according to its overall brightness, avoiding the possibility of bright HDR media overpowering other media, UI elements, or text.
 
-##### Calculate HDR metadata
+### Calculate HDR metadata
 
 The system interprets headroom and average content light level from standard HDR metadata often present in HDR images and videos. When the information is available in the file, the system loads the metadata into memory automatically, along with the image data. When there’s no metadata, you can compute the information it might contain at load time. [`NSImage`](../AppKit/nsimage.md) and [`UIImage`](../UIKit/uiimage.md) always compute HDR metadata. [Image I/O](../ImageIO/ImageIO.md) and [Core Image](../CoreImage/CoreImage.md) only compute HDR metadata when the [`kCGComputeHDRStats`](../ImageIO/kcgcomputehdrstats.md) option is set.
 

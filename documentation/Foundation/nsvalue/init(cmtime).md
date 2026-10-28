@@ -29,7 +29,7 @@ init(time: CMTime)
 + (NSValue *) valueWithCMTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the media time information.
 

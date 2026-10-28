@@ -13,11 +13,11 @@
 errno_t proto_inject(protocol_family_t protocol, mbuf_t packet);
 ```
 
-#### Return Value
+## Return Value
 
 A errno error on failure. Unless proto_inject returns zero, the caller is responsible for freeing the mbuf.
 
-#### Discussion
+## Discussion
 
 Injects a packet on the specified protocol from anywhere. To avoid recursion, the protocol may need to queue the packet to be handled later.
 

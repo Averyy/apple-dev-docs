@@ -16,7 +16,7 @@ A Boolean value that indicates if the present stream can change to a different s
 @property (nonatomic, assign) BOOL allowsChangingSelectedContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

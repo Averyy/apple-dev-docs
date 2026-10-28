@@ -25,7 +25,7 @@ var isAbsolutePath: Bool { get }
 @property (readonly, getter=isAbsolutePath) BOOL absolutePath;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver (if interpreted as a path) represents an absolute path, otherwise [`false`](../../Swift/false.md).
 

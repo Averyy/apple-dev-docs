@@ -25,7 +25,7 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 - (void) copyFromTexture:(id<MTLTexture>) sourceTexture sourceSlice:(NSUInteger) sourceSlice sourceLevel:(NSUInteger) sourceLevel sourceOrigin:(MTLOrigin) sourceOrigin sourceSize:(MTLSize) sourceSize toBuffer:(id<MTLBuffer>) destinationBuffer destinationOffset:(NSUInteger) destinationOffset destinationBytesPerRow:(NSUInteger) destinationBytesPerRow destinationBytesPerImage:(NSUInteger) destinationBytesPerImage options:(MTLBlitOption) options;
 ```
 
-#### Discussion
+## Discussion
 
 Passing an empty [`OptionSet`](../../Swift/optionset.md) to the `options` parameter is the equivalent of calling [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:)`](./copy%28from,sourceslice,sourcelevel,sourceorigin,sourcesize,to,destinationoffset,destinationbytesperrow,destinationbytesperimage%29.md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](../mtlblitoption/mtlblitoptionnone.md).
 

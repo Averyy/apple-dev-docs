@@ -22,11 +22,11 @@ nonisolated
 func run() -> some AsyncSequence<SampleType, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async throwing stream of individual samples.
 
-#### Discussion
+## Discussion
 
 Each element the stream yields is a newly generated sample. After iteration completes, access [`samples`](./samples.md) to retrieve the full dataset (initial + generated), or [`invalidSamples`](./invalidsamples.md) to see samples the validator rejected.
 

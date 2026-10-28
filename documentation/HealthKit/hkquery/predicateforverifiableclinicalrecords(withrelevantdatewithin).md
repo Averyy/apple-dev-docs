@@ -24,7 +24,7 @@ class func predicateForVerifiableClinicalRecords(withRelevantDateWithin dateInte
 + (NSPredicate *) predicateForVerifiableClinicalRecordsWithRelevantDateWithinDateInterval:(NSDateInterval *) dateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting predicate matches [`HKVerifiableClinicalRecord`](../hkverifiableclinicalrecord.md) instances that have a [`relevantDate`](../hkverifiableclinicalrecord/relevantdate.md) property within the specified date interval.
 

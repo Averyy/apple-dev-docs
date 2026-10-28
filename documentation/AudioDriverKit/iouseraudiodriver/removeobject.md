@@ -15,11 +15,11 @@ Removes an audio object from the driver.
 kern_return_t RemoveObject(IOUserAudioObject *in_object);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If the remove succeeds, the object’s reference count decrements by one. The caller should also call [`PropertiesChanged`](./propertieschanged.md) to notify the host of any changes.
 

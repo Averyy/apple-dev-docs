@@ -19,7 +19,7 @@ var isOpaque: Bool { get set }
 @property (getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is opaque; otherwise, [`false`](../../Swift/false.md).
 

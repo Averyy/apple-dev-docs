@@ -19,11 +19,11 @@ func hv_gic_config_create() -> hv_gic_config_t
 extern hv_gic_config_thv_gic_config_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new GIC configuration object.
 
-#### Discussion
+## Discussion
 
 Release this object with [`os_release`](../os/os_release-c.func.md) when it’s no longer needed.
 

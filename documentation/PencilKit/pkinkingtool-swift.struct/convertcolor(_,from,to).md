@@ -18,7 +18,7 @@ Convert a color from one user interface style to another.
 static func convertColor(_ color: UIColor, from: UIUserInterfaceStyle, to: UIUserInterfaceStyle) -> UIColor
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIColor`](../../UIKit/uicolor.md) from the user interface style specified in the `to` parameter.
 

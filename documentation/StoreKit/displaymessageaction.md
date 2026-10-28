@@ -19,7 +19,7 @@ An instance that asks StoreKit to display an App Store message, if appropriate.
 struct DisplayMessageAction
 ```
 
-#### Overview
+## Overview
 
 A StoreKit message represents a sheet that appears over your app to display important information from the App Store to the customer. Messages have a reason, indicated by the [`reason`](./message/reason-swift.property.md) value. StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default. Your app can optionally delay or suppress App Store messages by listening for the messages and determining the appropriate time to ask the system to display them.
 

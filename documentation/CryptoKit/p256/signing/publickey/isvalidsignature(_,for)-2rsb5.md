@@ -21,7 +21,7 @@ Verifies an elliptic curve digital signature algorithm (ECDSA) signature on a di
 func isValidSignature<D>(_ signature: P256.Signing.ECDSASignature, for digest: D) -> Bool where D : Digest
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the signature is valid for the given digest; otherwise, `false`.
 

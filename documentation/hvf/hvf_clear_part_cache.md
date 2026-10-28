@@ -21,7 +21,7 @@ Clear the cache of loaded parts.
 int HVF_clear_part_cache(HVFPartRenderer *renderer);
 ```
 
-#### Discussion
+## Discussion
 
 When rendering a large number of parts with the same part renderer, clearing the cache prevents the cache size from growing without bounds. This is a time/space tradeoff. Typically the cache should be cleared every dozen or so parts.
 

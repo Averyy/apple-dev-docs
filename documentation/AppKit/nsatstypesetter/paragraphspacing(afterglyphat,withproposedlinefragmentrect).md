@@ -19,7 +19,7 @@ func paragraphSpacing(afterGlyphAt glyphIndex: Int, withProposedLineFragmentRect
 - (CGFloat) paragraphSpacingAfterGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The `rect` argument specifies the line fragment rectangle of the last line in the paragraph.
 

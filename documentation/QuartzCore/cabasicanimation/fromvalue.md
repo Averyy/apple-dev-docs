@@ -24,7 +24,7 @@ var fromValue: Any? { get set }
 @property (strong, nullable) id fromValue;
 ```
 
-#### Discussion
+## Discussion
 
 See [Setting Interpolation Values](../cabasicanimation.md#Setting-Interpolation-Values) for details on how `fromValue` interacts with the other interpolation values.
 

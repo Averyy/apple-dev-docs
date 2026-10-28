@@ -23,7 +23,7 @@ var authorizationStatus: SRAuthorizationStatus { get }
 @property (readonly) SRAuthorizationStatus authorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 When an app wishes to read data from a particular sensor, it checks for user approval first by accessing the value of this property. If the value is [`SRAuthorizationStatus.authorized`](../srauthorizationstatus/authorized.md), an app may begin recording (see [`startRecording()`](./startrecording%28%29.md)) and execute data fetches (see [`fetch(_:)`](./fetch%28_%29.md)).
 

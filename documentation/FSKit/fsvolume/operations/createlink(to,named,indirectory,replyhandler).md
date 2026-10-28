@@ -24,7 +24,7 @@ func createLink(to item: FSItem, named name: FSFileName, inDirectory directory: 
 - (void) createLinkToItem:(FSItem *) item named:(FSFileName *) name inDirectory:(FSItem *) directory replyHandler:(void (^)(FSFileName *linkName, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If creating the link fails, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and the following error codes:
 

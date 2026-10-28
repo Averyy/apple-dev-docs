@@ -25,7 +25,7 @@ var undoManager: UndoManager? { get set }
 @property (nonatomic, strong, nullable) NSUndoManager * undoManager;
 ```
 
-#### Discussion
+## Discussion
 
 Enable undo support for a context by setting this property to an instance of [`UndoManager`](../../Foundation/undomanager.md). This can be an undo manager that’s exclusive to the context, or an existing undo manager if you want to integrate the context’s undo operations with those of the rest of your app.
 

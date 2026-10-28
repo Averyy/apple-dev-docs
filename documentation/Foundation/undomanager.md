@@ -26,7 +26,7 @@ class UndoManager
 @interface NSUndoManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 You register an undo operation by calling one of the methods described in Registering undo operations. You specify the name of the object that’s changing (or the owner of that object) and provide a closure, method, or invocation to revert its state.
 

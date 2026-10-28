@@ -16,7 +16,7 @@ Information that describes a requested app installation or app update.
 struct InstallConfiguration
 ```
 
-#### Overview
+## Overview
 
 The [`ActionButton.Action.install(_:)`](./actionbutton/action-swift.enum/install%28_%29.md) enumeration case takes an instance of this structure as a parameter.
 

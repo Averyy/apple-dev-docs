@@ -25,7 +25,7 @@ struct NSHashEnumerator
 typedef struct { ... } NSHashEnumerator;
 ```
 
-#### Overview
+## Overview
 
 The fields of `NSHashEnumerator` are private.
 

@@ -15,7 +15,7 @@ Tells the delegate that enough data has been read to determine the size of the i
 - (void) image:(NSImage *) image didLoadRepresentationHeader:(NSImageRep *) rep;
 ```
 
-#### Discussion
+## Discussion
 
 By the time this method is called, the `NSBitmapImageRep` object specified in the `rep` parameter is valid and has allocated the memory needed to store the bitmap. The bitmap itself is filled with the image’s background color. This method is optional; incremental loading will continue if the delegate does not implement it.
 

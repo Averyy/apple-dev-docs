@@ -15,7 +15,7 @@ Pre-tap ad experience specification with customizable attributes and assets.
 object Creative.CreativeSpec
 ```
 
-#### Discussion
+## Discussion
 
 Empty for Product Page ad creatives (`CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`) since pre-tap content isn’t customizable for these types. For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` carries the Apple Maps ad creative spec:
 

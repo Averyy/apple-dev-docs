@@ -12,7 +12,7 @@ Play media full screen, embedded inline, or in a floating Picture in Picture (Pi
 - Mac Catalyst 13.0+
 - Xcode 13.4+
 
-#### Overview
+## Overview
 
 AVKit is a cross-platform media playback UI framework built on top of [AVFoundation](../AVFoundation/AVFoundation.md) and [Core Media](../CoreMedia/CoreMedia.md). It makes it easy to play [`AVPlayer`](../AVFoundation/avplayer.md)-based media content using the same user interface as Apple’s own apps. For UIKit apps, AVKit provides [`AVPlayerViewController`](./avplayerviewcontroller.md), a view controller that displays content from a player and presents a native user interface to control playback.
 
@@ -24,7 +24,7 @@ Getting started with [`AVPlayerViewController`](./avplayerviewcontroller.md) is 
 
 > **Note**: This sample code project is associated with WWDC 2019 session 503: [Delivering Intuitive Media Playback with AVKit](https://developer.apple.com/videos/play/wwdc2019/503/).
 
-##### Create and configure the player view controller
+### Create and configure the player view controller
 
 The sample’s `loadPlayerViewControllerIfNeeded` function creates an [`AVPlayerViewController`](./avplayerviewcontroller.md) that it uses to play the videos in the various playback modes.
 
@@ -51,7 +51,7 @@ if !playerViewController.hasContent(fromVideo: video) {
 }
 ```
 
-##### Play media full screen
+### Play media full screen
 
 When the user taps on one of the app’s views to play video full screen, the sample calls the [`present(_:animated:completion:)`](../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) method to present the video full screen modally, not as a subview controller of some other view controller. The sample uses the default modal presentation style [`UIModalPresentationStyle.automatic`](../UIKit/uimodalpresentationstyle/automatic.md), which resolves to a full-screen presentation. To begin playback, the sample calls the `AVPlayerViewController` player’s [`play()`](../AVFoundation/avplayer/play%28%29.md) method.
 
@@ -62,7 +62,7 @@ presentingViewController.present(playerViewController, animated: true) {
 }
 ```
 
-##### Handle player view controller full-screen events
+### Handle player view controller full-screen events
 
 The sample implements the [`playerViewController(_:willBeginFullScreenPresentationWithAnimationCoordinator:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,willbeginfullscreenpresentationwithanimationcoordinator%29.md) delegate method to receive notifications when the [`AVPlayerViewController`](./avplayerviewcontroller.md) is about to start displaying its contents full screen. This delegate method passes the player view controller and transition coordinator to use for coordinating animations. When the sample presents or dismisses a view controller, UIKit creates a transition coordinator object automatically and assigns it to the view controller’s [`transitionCoordinator`](../UIKit/uiviewcontroller/transitioncoordinator.md) property. The transition coordinator object only lasts for the duration of the transition animation.
 
@@ -107,7 +107,7 @@ func playerViewController(
 }
 ```
 
-##### Display custom overlays in the player view controller
+### Display custom overlays in the player view controller
 
 [`AVPlayerViewController`](./avplayerviewcontroller.md) provides a [`contentOverlayView`](./avplayerviewcontroller/contentoverlayview.md) property for adding noninteractive custom views, such as a logo or watermark, between the video content and the controls.
 
@@ -148,7 +148,7 @@ readyForDisplayObservation = playerViewController.observe(\.isReadyForDisplay) {
 }
 ```
 
-##### Play media inline
+### Play media inline
 
 The sample’s `embedInline` function incorporates the player view controller’s view into the app’s view hierarchy for inline playback. To do this, the function first checks whether an `AVPlayerViewController` object already exists in the view hierarchy, and if so, removes it. Next, the function adds the `AVPlayerViewController` as a subview of the current view controller. After that, it adds the `AVPlayerViewController` `view` to the specified containing view so that it resides on top of any subviews. Lastly, the function calls the view controller [`didMove(toParent:)`](../UIKit/uiviewcontroller/didmove%28toparent%29.md) function. Container view controller subclasses need to call `didMove(toParent:)` after a transition to the new subview completes or, in the case of no transition, immediately after the call to [`addChild(_:)`](../UIKit/uiviewcontroller/addchild%28_%29.md).
 
@@ -173,11 +173,11 @@ func embedInline(in parent: UIViewController, container: UIView) {
 }
 ```
 
-##### Configure audio session and background modes for PiP
+### Configure audio session and background modes for PiP
 
 To use PiP, the sample configures its audio session and background modes. For more information, see [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md). After this configuration, the player view controller automatically supports PiP playback.
 
-##### Handle PiP player view controller events
+### Handle PiP player view controller events
 
 To receive notifications when PiP is about to start, or fails to start, the sample implements the delegate methods [`playerViewControllerWillStartPictureInPicture(_:)`](./avplayerviewcontrollerdelegate/playerviewcontrollerwillstartpictureinpicture%28_%29.md) and [`playerView(_:failedToStartPictureInPictureWithError:)`](./avplayerviewpictureinpicturedelegate/playerview%28_,failedtostartpictureinpicturewitherror%29.md), respectively. To receive notifications when PiP stops, the sample implements the [`playerViewControllerDidStopPictureInPicture(_:)`](./avplayerviewcontrollerdelegate/playerviewcontrollerdidstoppictureinpicture%28_%29.md) method.
 
@@ -197,7 +197,7 @@ func playerViewController(_ playerViewController: AVPlayerViewController, failed
 }
 ```
 
-##### Restore the video playback interface when PiP stops
+### Restore the video playback interface when PiP stops
 
 To handle the restore process when PiP stops, the sample implements the [`playerView(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)`](./avplayerviewpictureinpicturedelegate/playerview%28_,restoreuserinterfaceforpictureinpicturestopwithcompletionhandler%29.md) method. The framework calls this method when control returns to the app, giving the app the opportunity to determine how to properly restore its video playback interface. The sample sends the callback up to its own delegate to handle the restore operation.
 

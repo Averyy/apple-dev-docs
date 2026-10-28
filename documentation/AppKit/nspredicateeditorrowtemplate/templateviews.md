@@ -19,11 +19,11 @@ var templateViews: [NSView] { get }
 @property (copy, readonly) NSArray<NSView *> * templateViews;
 ```
 
-#### Return Value
+## Return Value
 
 The views for an [`NSPredicateEditor`](../nspredicateeditor.md) to display in a row that represents the predicate from [`setPredicate(_:)`](./setpredicate%28_%29.md).
 
-#### Discussion
+## Discussion
 
 [`NSPredicateEditor`](../nspredicateeditor.md) treats instances of [`NSPopUpButton`](../nspopupbutton.md) specially by merging their menu items into a single popup button, and by combining menu items with matching titles. In this way, the editor builds a single tree from the separate templates.
 

@@ -20,7 +20,7 @@ A mode which uses the set position target.
 case reach
 ```
 
-#### Discussion
+## Discussion
 
 You can use this in cases like a wrist joint that needs to be at a set position.
 

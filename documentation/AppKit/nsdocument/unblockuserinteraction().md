@@ -20,7 +20,7 @@ func unblockUserInteraction()
 - (void) unblockUserInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 If [`save(to:ofType:for:completionHandler:)`](./save%28to,oftype,for,completionhandler%29.md) is writing on a non-main thread because [`canAsynchronouslyWrite(to:ofType:for:)`](./canasynchronouslywrite%28to,oftype,for%29.md) has returned [`true`](../../Swift/true.md), but it is still blocking the main thread, this method unblocks the main thread. Otherwise, it does nothing. For example, the default implementation of [`fileWrapper(ofType:)`](./filewrapper%28oftype%29.md) invokes this when it has created the [`FileWrapper`](../../Foundation/filewrapper.md) object to return. Assuming that the `NSFileWrapper` is not mutated by subsequent user actions, it is effectively a “snapshot” of the document’s contents, and once it is created it is safe to resume handling user events on the main thread, even though some of those user events might change the document’s contents before the `NSFileWrapper` object has been safely written. You can invoke this method to make asynchronous saving actually asynchronous if you’ve overridden [`writeSafely(to:ofType:for:)`](./writesafely%28to,oftype,for%29.md), [`write(to:ofType:for:originalContentsURL:)`](./write%28to,oftype,for,originalcontentsurl%29.md), or [`write(to:ofType:)`](./write%28to,oftype%29.md) in such a way that the invocation of this method done by the [`write(to:ofType:)`](./write%28to,oftype%29.md) default implementation won’t happen during writing.
 

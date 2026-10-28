@@ -23,7 +23,7 @@ var kDNSServiceFlagsLongLivedQuery: UInt32 { get }
 kDNSServiceFlagsLongLivedQuery
 ```
 
-#### Discussion
+## Discussion
 
 Flag for creating a long-lived unicast query for the DNSServiceQueryRecord call.
 

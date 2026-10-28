@@ -15,11 +15,11 @@
 extern OSStatus AudioFileOpen(const struct FSRef *inFileRef, AudioFilePermissions inPermissions, AudioFileTypeID inFileTypeHint, AudioFileID*outAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This deprecated function opens an existing audio file specified by a file system reference.
 

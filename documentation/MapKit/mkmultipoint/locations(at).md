@@ -21,7 +21,7 @@ Translates a point index set into a unit distance along the shape.
 func locations(at indexes: IndexSet) -> [CGFloat]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) values.
 

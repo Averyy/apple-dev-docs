@@ -25,7 +25,7 @@ func CFStringGetFastestEncoding(_ theString: CFString!) -> CFStringEncoding
 extern CFStringEncoding CFStringGetFastestEncoding(CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 The string encoding to which `theString` can be converted the fastest.
 

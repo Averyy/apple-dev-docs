@@ -24,7 +24,7 @@ var errorOptions: MTLCommandBufferErrorOption { get set }
 @property (nonatomic, readwrite) MTLCommandBufferErrorOption errorOptions;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a GPU driver doesn’t report additional error information.
 

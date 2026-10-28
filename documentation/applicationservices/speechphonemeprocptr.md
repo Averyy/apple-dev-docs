@@ -19,7 +19,7 @@ typealias SpeechPhonemeProcPtr = (SpeechChannel, SRefCon, Int16) -> Void
 typedef void (*SpeechPhonemeProcPtr)(SpeechChannel chan, SRefCon refCon, SInt16 phonemeOpcode);
 ```
 
-#### Discussion
+## Discussion
 
 The Speech Synthesis Manager calls a speech channel’s phonemecallback function just before it pronounces a phoneme. For example,your application might use such a callback function to enable mouthsynchronization. In this case, the callback function would set a globalflag variable to indicate that the phoneme being pronounced is changingand another global variable to `phonemeOpcode`.A function called by your application’s main event loop coulddetect that the phoneme being pronounced is changing and updatea picture of a mouth to reflect the current phoneme. In practice,providing a visual indication of the pronunciation of a phonemerequires several consecutive pictures of mouth movement to be rapidlydisplayed. Consult the linguistics literature for information on mouthmovements associated with different phonemes.
 

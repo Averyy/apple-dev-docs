@@ -24,7 +24,7 @@ static let pelvicPain: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierPelvicPain;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

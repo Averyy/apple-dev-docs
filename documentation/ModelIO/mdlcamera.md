@@ -24,7 +24,7 @@ class MDLCamera
 @interface MDLCamera : MDLObject
 ```
 
-#### Overview
+## Overview
 
 Camera parameters include basic information—such as the [`projectionMatrix`](./mdlcamera/projectionmatrix.md) and [`fieldOfView`](./mdlcamera/fieldofview.md) properties—for use with any renderer, as well as attributes that model real-world cameras—such as the [`fStop`](./mdlcamera/fstop.md) and [`exposure`](./mdlcamera/exposure.md) properties—for use in a renderer based on realistic optical physics.
 

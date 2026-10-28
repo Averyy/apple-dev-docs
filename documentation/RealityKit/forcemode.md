@@ -20,7 +20,7 @@ The options that control how physics system applies the forces.
 enum ForceMode
 ```
 
-#### Overview
+## Overview
 
 `ForceMode` allows you to customize how the physics system applies the force-like vector quantity that you set via [`setForce(_:index:)`](./forceeffectparameters/setforce%28_,index%29.md) and [`setTorque(_:index:)`](./forceeffectparameters/settorque%28_,index%29.md). For example, [`ForceMode.force`](./forcemode/force.md) indicates the vector quantity has the unit of force, which is the most common choice. You can use [`ForceMode.acceleration`](./forcemode/acceleration.md) to exert a constant acceleration on rigid bodies regardless of their mass.
 

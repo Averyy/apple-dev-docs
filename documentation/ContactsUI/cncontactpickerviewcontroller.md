@@ -22,7 +22,7 @@ class CNContactPickerViewController
 @interface CNContactPickerViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 A [`CNContactPickerViewController`](./cncontactpickerviewcontroller.md) allows the user to select one or more contacts (or their properties) from the list of contacts displayed in the contact view controller ([`CNContactViewController`](./cncontactviewcontroller.md)). The picker supports both single selection and multiselection of the contacts. The app using contact picker view does not need access to the user’s contacts and the user will not be prompted for “grant permission” access. The app has access only to the user’s final selection.
 

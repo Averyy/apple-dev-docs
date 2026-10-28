@@ -20,7 +20,7 @@ A protocol that defines an action that a behavior tree action node can use.
 protocol BehaviorTreeAction : EntityAction
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol as:
 

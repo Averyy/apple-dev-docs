@@ -19,7 +19,7 @@ func label(forSegment segment: Int) -> String?
 - (NSString *) labelForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The label of the segment. The returned string contains the entire text of the label, even if that text is normally truncated during drawing.
 

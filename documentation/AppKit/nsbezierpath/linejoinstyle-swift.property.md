@@ -19,7 +19,7 @@ var lineJoinStyle: NSBezierPath.LineJoinStyle { get set }
 @property NSLineJoinStyle lineJoinStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The line join style specifies the shape of the joints between connected segments of a stroked path. The default value of this property is the value returned by the [`defaultLineJoinStyle`](./defaultlinejoinstyle.md) method.
 

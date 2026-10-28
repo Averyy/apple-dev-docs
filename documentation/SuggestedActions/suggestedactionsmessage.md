@@ -19,7 +19,7 @@ A representation of the message you use as context for suggested actions.
 struct SuggestedActionsMessage
 ```
 
-#### Overview
+## Overview
 
 Create a `SuggestedActionsMessage` from your app’s data model for a message, then pass it to [`init(message:previousMessages:)`](./suggestedactionsview/init%28message,previousmessages%29.md) or [`generate(message:previousMessages:)`](./suggestedactionsview/generate%28message,previousmessages%29.md).
 

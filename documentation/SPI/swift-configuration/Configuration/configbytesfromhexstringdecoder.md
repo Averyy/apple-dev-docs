@@ -24,11 +24,11 @@ A decoder that converts hexadecimal-encoded strings into byte arrays.
 struct ConfigBytesFromHexStringDecoder
 ```
 
-#### Overview
+## Overview
 
 This decoder interprets string configuration values as hexadecimal-encoded data and converts them to their binary representation. It expects strings to contain only valid hexadecimal characters (0-9, A-F, a-f).
 
-#### Hexadecimal format
+## Hexadecimal format
 
 The decoder expects strings with an even number of characters, where each pair of characters represents one byte. For example, “48656C6C6F” represents the bytes for “Hello”.
 

@@ -29,7 +29,7 @@ class NSDate
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 In Swift, use this type when you need reference semantics or other Foundation-specific behavior.
 
@@ -41,11 +41,11 @@ The [`NSDate`](./nsdate.md) class provides methods for comparing dates, calculat
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Date`](./date.md) structure, which bridges to the [`NSDate`](./nsdate.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You might subclass [`NSDate`](./nsdate.md) in order to make it easier to work with a particular calendrical system, or to work with date and time values with a finer temporal granularity.
 
-###### Methods to Override and Other Requirements
+#### Methods to Override and Other Requirements
 
 If you want to subclass [`NSDate`](./nsdate.md) to obtain behavior different than that provided by the private or public subclasses, you must:
 
@@ -55,7 +55,7 @@ If you want to subclass [`NSDate`](./nsdate.md) to obtain behavior different tha
 - If creating a subclass that represents a calendrical system, define methods that partition past and future periods into the units of this calendar
 - Implement the methods required by the [`NSCopying`](./nscopying.md) and [NSCoding](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WritingSwiftClassesWithObjective-CBehavior.html#//apple_ref/doc/uid/TP40014216-CH5-ID152) protocols, because [`NSDate`](./nsdate.md) adopts these protocols
 
-###### Special Considerations
+#### Special Considerations
 
 Your subclass may use a different reference date than the absolute reference date used by [`NSDate`](./nsdate.md) (00:00:00 UTC on 1 January 2001). If it does, it must still use the absolute reference date in its implementations of the methods [`timeIntervalSinceReferenceDate`](./nsdate/timeintervalsincereferencedate-swift.property.md) and [`init(timeIntervalSinceReferenceDate:)`](./nsdate/init%28timeintervalsincereferencedate%29.md). That is, the reference date referred to in the titles of these methods is the absolute reference date. If you do not use the absolute reference date in these methods, comparisons between [`NSDate`](./nsdate.md) objects of your subclass and `NSDate` objects of a private subclass will not work.
 

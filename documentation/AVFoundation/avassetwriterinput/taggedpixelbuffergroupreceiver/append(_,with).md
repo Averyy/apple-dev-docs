@@ -16,11 +16,11 @@ Suspends until the input is ready for more media data, then appends the tagged p
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func append(_ taggedPixelBufferGroup: [CMTaggedDynamicBuffer], with presentationTime: CMTime) async throws
+nonisolated(nonsending)
+func append(_ taggedPixelBufferGroup: [CMTaggedDynamicBuffer], with presentationTime: CMTime) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

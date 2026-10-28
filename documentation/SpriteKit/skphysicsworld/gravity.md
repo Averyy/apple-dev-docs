@@ -25,7 +25,7 @@ var gravity: CGVector { get set }
 @property (nonatomic) CGVector gravity;
 ```
 
-#### Discussion
+## Discussion
 
 The components of this property are measured in meters per second. The default value is `(0.0,-9.8)`, which represent’s Earth’s gravity.
 

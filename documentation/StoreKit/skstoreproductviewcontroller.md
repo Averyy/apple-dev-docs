@@ -36,7 +36,7 @@ class SKStoreProductViewController
 - [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md)
 - [Signing and providing ads](./signing-and-providing-ads.md)
 
-#### Overview
+## Overview
 
 To display a store for customers to purchase media from the App Store, follow these steps:
 
@@ -52,7 +52,7 @@ To recommend another app without displaying a full product page, and to recommen
 
 > **Note**:  In a compatible iPad or iPhone app running in visionOS, this method displays a minimal sheet to enable an app purchase or to launch the App Store for more information. For an in-line experience that’s consistent across platforms, use [`SKOverlay`](./skoverlay.md) instead.
 
-##### Prevent exceptions
+### Prevent exceptions
 
 The `SKStoreProductViewController` class doesn’t support subclassing or embedding, and must be used as-is.
 

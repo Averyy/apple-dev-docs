@@ -21,7 +21,7 @@ The properties of an open file document.
 struct FileDocumentConfiguration<Document> where Document : FileDocument
 ```
 
-#### Overview
+## Overview
 
 You receive an instance of this structure when you create a [`DocumentGroup`](./documentgroup.md) with a value file type. Use it to access the document in your viewer or editor.
 

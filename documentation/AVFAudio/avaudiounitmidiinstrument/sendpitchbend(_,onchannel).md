@@ -24,7 +24,7 @@ func sendPitchBend(_ pitchbend: UInt16, onChannel channel: UInt8)
 - (void) sendPitchBend:(uint16_t) pitchbend onChannel:(uint8_t) channel;
 ```
 
-#### Discussion
+## Discussion
 
 If this method isn’t invoked, then the system uses the default pitch bend value of `8192` (no pitch).
 

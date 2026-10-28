@@ -15,7 +15,7 @@ Changes subject of a group.
 final func changeGroupChatSubject(_ request: RCSService.ChangeGroupChatSubjectRequest) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RCSService.Error`](./error.md) if there was an error while performing the operation.
 

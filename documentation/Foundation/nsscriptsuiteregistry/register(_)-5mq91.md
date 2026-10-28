@@ -20,7 +20,7 @@ func register(_ commandDescription: NSScriptCommandDescription)
 - (void) registerCommandDescription:(NSScriptCommandDescription *) commandDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Also registers with the single, shared instance of [`NSAppleEventManager`](../nsappleeventmanager.md) to handle incoming Apple events that should be handled by the command.
 

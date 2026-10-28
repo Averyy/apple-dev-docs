@@ -18,7 +18,7 @@ let kCGWindowSharingState: CFString
 extern CFStringRef const kCGWindowSharingState;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`CFNumberType.intType`](../CoreFoundation/cfnumbertype/inttype.md)) that contains one of the constants defined in [Window Sharing Constants](./window-sharing-constants.md).
 

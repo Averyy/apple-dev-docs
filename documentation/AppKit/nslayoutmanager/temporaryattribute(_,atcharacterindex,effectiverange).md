@@ -19,7 +19,7 @@ func temporaryAttribute(_ attrName: NSAttributedString.Key, atCharacterIndex loc
 - (id) temporaryAttribute:(NSAttributedStringKey) attrName atCharacterIndex:(NSUInteger) location effectiveRange:(NSRangePointer) range;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the temporary attribute named `attrName` of the character at index `location`, or `nil` if there is no such attribute.
 

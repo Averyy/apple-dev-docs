@@ -15,7 +15,7 @@ Returns a pointer to a mount placed on top of a vnode, should it exist.
 mount_t vnode_mountedhere(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to mount covering a vnode, or NULL if none exists.
 

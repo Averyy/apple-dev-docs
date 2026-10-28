@@ -23,11 +23,11 @@ func layerRectConverted(fromMetadataOutputRect rectInMetadataOutputCoordinates: 
 - (CGRect) rectForMetadataOutputRectOfInterest:(CGRect) rectInMetadataOutputCoordinates;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the preview layer’s coordinate system.
 
-#### Discussion
+## Discussion
 
 A metadata capture output’s [`rectOfInterest`](../avcapturemetadataoutput/rectofinterest.md) a [`CGRect`](../../CoreFoundation/cgrect.md) value where `{0,0}` represents the top-left of the picture area, and `{1,1}` represents the bottom-right on an unrotated image.
 

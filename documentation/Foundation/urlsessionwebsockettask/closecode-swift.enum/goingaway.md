@@ -25,7 +25,7 @@ case goingAway
 NSURLSessionWebSocketCloseCodeGoingAway
 ```
 
-#### Discussion
+## Discussion
 
 This code indicates situations like a server going down or a browser having navigated away from a page.
 

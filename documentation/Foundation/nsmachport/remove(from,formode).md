@@ -25,7 +25,7 @@ func remove(from runLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) removeFromRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 When the receiver is removed, the run loop stops monitoring the Mach port for incoming messages.
 

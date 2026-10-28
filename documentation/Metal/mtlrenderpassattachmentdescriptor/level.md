@@ -24,7 +24,7 @@ var level: Int { get set }
 @property (nonatomic) NSUInteger level;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

@@ -23,7 +23,7 @@ var preferredRange: UIGraphicsImageRendererFormat.Range { get set }
 @property (nonatomic) UIGraphicsImageRendererFormatRange preferredRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property affects the pixel format of the image that the renderer produces.
 

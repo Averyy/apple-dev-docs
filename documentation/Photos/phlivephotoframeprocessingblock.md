@@ -24,7 +24,7 @@ typealias PHLivePhotoFrameProcessingBlock = (any PHLivePhotoFrame, NSErrorPointe
 typedef CIImage *(^)(id<PHLivePhotoFrame>, NSError **) PHLivePhotoFrameProcessingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 To apply edits to a Live Photo, define a block with this signature and assign it to the [`frameProcessor`](./phlivephotoeditingcontext/frameprocessor.md) property of a Live Photo editing context. Then call the [`init(livePhotoEditingInput:)`](./phlivephotoeditingcontext/init%28livephotoeditinginput%29.md) to prepare a preview-quality version of your edits for display, or the [`saveLivePhoto(to:options:completionHandler:)`](./phlivephotoeditingcontext/savelivephoto%28to,options,completionhandler%29.md) method to produce full-quality final output. When you call one of those methods, Photos calls your frame processor block repeatedly—processing each frame of the Live Photo’s video content as well as its still photo content—to render the output.
 

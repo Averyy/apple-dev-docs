@@ -21,7 +21,7 @@ A localized accessibility description describing the moon phase.
 var accessibilityDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This description is suitable for Voice Over and other assistive technologies.
 

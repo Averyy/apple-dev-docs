@@ -21,7 +21,7 @@ A section of fetched results grouped by a common section key path value.
 struct ResultsSection<Element, SectionTitle> where Element : PersistentModel, SectionTitle : Hashable
 ```
 
-#### Overview
+## Overview
 
 Each section represents a group of elements that share the same value for the `sectionBy` key path used at creation.
 

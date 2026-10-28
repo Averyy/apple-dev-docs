@@ -19,7 +19,7 @@ optional func didEstablishConnection(withHost hostBundleIdentifier: String!, ver
 - (void) didEstablishConnectionWithHost:(NSString *) hostBundleIdentifier version:(NSString *) hostVersionString;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can implement this protocol to be informed of which host application is calling your plug-in.
 

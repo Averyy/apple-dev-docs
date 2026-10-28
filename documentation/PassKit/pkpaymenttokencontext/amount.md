@@ -24,7 +24,7 @@ var amount: NSDecimalNumber { get set }
 @property (nonatomic, copy) NSDecimalNumber * amount;
 ```
 
-#### Discussion
+## Discussion
 
 The currency for the amount is the currency set in the enclosing payment request.
 

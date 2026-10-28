@@ -16,7 +16,7 @@ Retrieves the current value of one of the aggressiveness factors in IOKit Power 
 IOReturn IOPMGetAggressiveness(io_connect_t fb, unsigned long type, unsigned long *aggressiveness);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 

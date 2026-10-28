@@ -27,13 +27,13 @@ class CMHeadphoneMotionManager
 
 - [Getting processed device-motion data](./getting-processed-device-motion-data.md)
 
-#### Overview
+## Overview
 
 This class delivers headphone motion updates to your app. Use an instance of the manager to determine if the device supports motion, and to start and stop updates. Adopt the [`CMHeadphoneMotionManagerDelegate`](./cmheadphonemotionmanagerdelegate.md) protocol to receive and respond to motion updates. Before using this class, check [`isDeviceMotionAvailable`](./cmheadphonemotionmanager/isdevicemotionavailable.md) to make sure the feature is available.
 
 > ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](../BundleResources/information-property-list/nsmotionusagedescription.md) key in your app’s `Info.plist` file. If this key is absent, the system crashes your app when you start device-motion updates.
 
-##### Identify the coordinate axes
+### Identify the coordinate axes
 
 To interpret attitude data, you need to know the orientation of the device’s coordinate axes. The following illustration shows the positive x-axis, positive y-axis, and positive z-axis for motion-capable Apple headphones.
 

@@ -20,7 +20,7 @@ var actionPopUpButtonMenu: NSMenu? { get set }
 @property (nullable) NSMenu * actionPopUpButtonMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property value to show an action pop-up button. Setting a custom action pop-up button is currently supported only for a [`controlsStyle`](./controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](../avplayerviewcontrolsstyle/floating.md) or [`AVPlayerViewControlsStyle.inline`](../avplayerviewcontrolsstyle/inline.md).
 

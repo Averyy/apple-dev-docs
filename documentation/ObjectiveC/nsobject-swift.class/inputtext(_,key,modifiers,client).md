@@ -19,7 +19,7 @@ func inputText(_ string: String!, key keyCode: Int, modifiers flags: Int, client
 - (BOOL) inputText:(NSString *) string key:(NSInteger) keyCode modifiers:(NSUInteger) flags client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the input is  accepted; otherwise [`NO`](../no.md).
 

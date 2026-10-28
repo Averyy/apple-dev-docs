@@ -15,11 +15,11 @@ Product page metadata for a Custom Product Page (CPP).
 object ProductPageDetails
 ```
 
-#### Discussion
+## Discussion
 
 The `ProductPageDetails` object describes a product page associated with an app. The product page query and get-by-ID endpoints return it. Creative and ad group objects that use a product page destination reference the page by its `productPageId` only, not this full object.
 
-##### Example
+### Example
 
 ```json
 {

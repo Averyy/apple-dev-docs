@@ -21,7 +21,7 @@ var scheduledNotifications: [NSUserNotification] { get set }
 @property (copy) NSArray<NSUserNotification *> * scheduledNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Newly scheduled notifications are added to the end of the array. You may also bulk-schedule notifications by setting this array. Bulk setting new scheduled notifications unschedules existing notifications.
 

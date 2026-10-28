@@ -20,7 +20,7 @@ case internet
 - [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 - [Receiving iOS notifications on an accessory](../receiving-ios-notifications-on-an-accessory.md)
 
-#### Discussion
+## Discussion
 
 The system requires [`SecurityMessage.CipherSuite.xWing`](../securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method. The system tries this transport method if Bluetooth and local network are unavailable.
 

@@ -21,7 +21,7 @@ Divides the first value by the second and stores the remainder in the left-hand-
 static func %= (lhs: inout Int, rhs: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The result has the same sign as `lhs` and has a magnitude less than `rhs.magnitude`.
 

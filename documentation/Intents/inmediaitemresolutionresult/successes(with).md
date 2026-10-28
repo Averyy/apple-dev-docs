@@ -24,11 +24,11 @@ class func successes(with resolvedMediaItems: [INMediaItem]) -> [INMediaItemReso
 + (NSArray<__kindof INMediaItemResolutionResult *> *) successesWithResolvedMediaItems:(NSArray<INMediaItem *> *) resolvedMediaItems;
 ```
 
-#### Return Value
+## Return Value
 
 The array of [`INMediaItemResolutionResult`](../inmediaitemresolutionresult.md) objects.
 
-#### Discussion
+## Discussion
 
 Use this method to create results when your app successfully identifies multiple media items to fulfill the same intent. After the first item in the list, any media item suggestions display as alternatives, but only on iOS. For cases where there are no potential alternatives, use [`success(with:)`](./success%28with%29.md).
 

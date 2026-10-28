@@ -22,7 +22,7 @@ static let encodingFormatKey: CodingUserInfoKey
 
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Set this key in a `JSONEncoder`’s `userInfo` dictionary before encoding a [`MetricReport`](../metricreport.md) to control the JSON output structure:
 

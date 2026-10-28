@@ -5,49 +5,49 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 16. The SDK comes bundled with Xcode 14. For information on the compatibility requirements for Xcode 14, see [Xcode 14 Release Notes](../Xcode-Release-Notes/xcode-14-release-notes.md).
 
-##### AVFoundation
+### AVFoundation
 
-###### New Features
+#### New Features
 
 - `AVCaptureSession.isMultitaskingCameraAccessSupported` returns `true` on iPads that support Stage Manager. (88345287)
 
-##### Backup
+### Backup
 
-###### New Features
+#### New Features
 
 - Customers using iOS 16 can now back up their device over an LTE cellular connection, as well as a 5G or Wifi connection. (95276719)
 
-##### CoreGraphics
+### CoreGraphics
 
-###### Deprecations
+#### Deprecations
 
 - To improve security, `CGImageCreate` enforces parameter correctness on macOS 13 Ventura, iOS 16, iPadOS 16, watchOS 9, and tvOS 16. Passing an incorrect `CGImageByteOrderInfo` is no longer supported, and will result in images failing to load. (94855401)
 
-##### DeviceDiscoveryUI
+### DeviceDiscoveryUI
 
-###### Known Issues
+#### Known Issues
 
 - Devices running beta 4 or later aren’t backwards compatible with devices running earlier beta versions. (95233878)
 
-##### Emoji
+### Emoji
 
-###### Known Issues
+#### Known Issues
 
 - The search field for the emoji Lock Screen editor is missing. (88603664)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - Many additional Bluetooth and USB game controllers are supported by the Game Controller framework on macOS 13, iOS 16, and tvOS 16 and later. (82409809)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - HealthKit workout APIs now support multisport workouts with activities of swimming, cycling, and running. (82588168)
 
@@ -55,78 +55,78 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 - A new data type is available to track AFib History. (95315701)
 - The [HealthKit](../HealthKit/HealthKit.md) framework has a new Vision Prescription data type that allows developers and users to store prescription information received from eye care professionals. This feature includes a new set of [`HKSample`](../HealthKit/hksample.md) subclasses that allow developers to encapsulate prescriptions for glasses and contact lenses. Users of iPhone can directly store their prescription information from the Health app as well. Because most regions require the actual prescription document to purchase glasses and contacts, this feature also allows the storage of attachment files in `HealthKit`. Due to the potential privacy concerns around sharing unintended additional details from the prescription, the `HealthKit` framework has a new authorization API to allow users to authorize prescriptions on a per-sample basis. See header documentation in `HealthKit` and watch the WWDC HealthKit session for more information. (82940646)
 
-##### Home
+### Home
 
-###### Known Issues
+#### Known Issues
 
 - The device that initiates the pairing needs to use the same iCloud account as the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
 
-##### Mail
+### Mail
 
-###### New Features
+#### New Features
 
 - Remind Me messages that have fired won’t show at the top of the message list until the message list is refreshed. (94046413)
 
-###### Known Issues
+#### Known Issues
 
 - Moving a Remind Me message to another mailbox doesn’t remove the Remind Me banner. (93671992)
 
-##### Maps
+### Maps
 
-###### Deprecations
+#### Deprecations
 
 - Don’t use `MKMapLandscape`, `MKStandardMapConfigurationMapMode`, `[MKMapView configuration]`, and `[MKStandardMapConfiguration showsBuildings]`. Use their functional equivalents [`MKMapConfiguration.ElevationStyle`](../MapKit/mkmapconfiguration/elevationstyle-swift.enum.md), [`MKStandardMapConfiguration.EmphasisStyle`](../MapKit/mkstandardmapconfiguration/emphasisstyle-swift.enum.md), and [`preferredConfiguration`](../MapKit/mkmapview/preferredconfiguration.md), instead. Additionally, `showsBuildings` is now deprecated. (93449747)
 
-##### Messages
+### Messages
 
-###### New Features
+#### New Features
 
 - Allows developers to classify incoming SMS from unknown numbers into 12 new sub-categories within `Transaction` and `Promotion` categories for improved organization. (95276296)
 - For Indian users, Messages now supports event extraction from SMS. These event and appointment messages are presented as Siri suggestions and also are presented to users in Messages thread and in Calendar Inbox. (95276513)
 - For selected US Carriers, Messages extends the “Report Junk” feature to enable users to report SMS/MMS junk to Carriers. The option is visible inside Messages from Unknown Senders. (95276623)
 - Messages now supports the ability for customers with a dual SIM iPhone to filter their messages based on their SIMs. (95276784)
 
-##### Metal
+### Metal
 
-###### Known Issues
+#### Known Issues
 
 - When using the new Metal mesh shaders feature, render pipeline state objects (PSOs) created with a mesh shader stage but without a object shader stage can fail to compile or fail to work correctly on some devices. (89836551)
 
   **Workaround:** When creating render PSOs with a mesh shader stage, also include a (potentially trivial pass-through) object shader stage.
 
-###### Deprecations
+#### Deprecations
 
 - The `MTLResource.gpuHandle` is deprecated. Use [`gpuResourceID`](../Metal/mtlaccelerationstructure/gpuresourceid.md) instead, which functions as a replacement. (92862429)
 
-##### Metal Offline Compiler
+### Metal Offline Compiler
 
-###### Known Issues
+#### Known Issues
 
 - `MetalFX` effect outputs aren’t designed to be consumed by the CPU. Outputting to a texture that is read only by the CPU might result in synchronization issues. (91515075)
 
   **Workaround:** If a CPU reading of the `MetalFX` output is desired, instead of encoding the `MetalFX` effect as the last item in a command buffer, encode a placeholder blit that consumes the `MetalFX` output texture (a 1-pixel region blit is fine) in the command buffer. After the command buffer with the placeholder blit is finished, reading of the `MetalFX` effect output texture with CPU synchronizes correctly.
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added `NSURLSession` support for client-certificate based authentication. (24523955)
 
 - Added `URLSession` support for Private Access Tokens. (82937526)
 
-###### Deprecations
+#### Deprecations
 
 - FTP is deprecated for `URLSession` and related APIs. Please adopt modern secure networking protocols such as HTTPS. (92623659)
 
-##### RoomPlan
+### RoomPlan
 
-###### New Features
+#### New Features
 
 - The [RoomPlan](../RoomPlan/RoomPlan.md) framework is now available in iOS 16, enabling 3D parametric model creation of an interior room. The framework uses a device’s sensors, trained machine learning models, and [RealityKit](../RealityKit/RealityKit.md) rendering capabilities to capture the physical surroundings of an interior room. APIs are available for end-to-end scanning experience, real-time data structures for custom UI creation, and both USD and USDZ generation of 3D room models. (84170837)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - A property `recentSubscriptionStartDate` is included in `RenewalInfo`. It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there is no more than a 60-day gap between any two subscribed periods. (86599570)
 
@@ -148,13 +148,13 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 
 - All [StoreKit](../StoreKit/StoreKit.md) APIs are now annotated for sendability and main actor isolation. (84157048)
 
-###### Deprecations
+#### Deprecations
 
 - Deprecated the SKDownload API and removed the option to upload nonconsumable in-app purchase assets for Apple to host. In addition, support for managing these assets in App Store Connect is no longer available as of April 2022. (89764253)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Added `View.scrollContentBackground`, which permits customization of background colors for scrollable views like `List`. (45928055)
 - Added `View.focusedObject(_:)` and `View.focusedSceneObject(_:)` modifiers to be used in conjunction with the new `@FocusedObject` to allow an `ObservableObject` to be vended by the focused view or scene. (83637876)
@@ -180,26 +180,26 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 - Changes to `text` and `image` views now animate by default. Use `.contentsTransition(.identity)` to disable this behavior. (89558882)
 - Lists and forms automatically dismiss the software keyboard, if present, when a scroll gesture begins. Use `.scrollDismissesKeyboard(.never)` to restore the old behavior. (89588639)
 
-###### Known Issues
+#### Known Issues
 
 - Providing actions to a `navigationTitle` modifier has been deprecated. Use the `toolbarTitleActions()` modifier or `ToolbarTitleActions` type in a toolbar modifier instead. (93658035)
 - Lists and tables might not clear their selection when exiting Edit Mode. (94093589)
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - iOS apps can now request rotation using `[UIWindowScene requestGeometryUpdate:errorHandler:]` and providing a `UIWindowSceneGeometryPreferencesIOS` object containing the desired orientations. (95229615)
 
-###### Deprecations
+#### Deprecations
 
 - `[UIViewController shouldAutorotate]` has been deprecated is no longer supported. `[UIViewController attemptRotationToDeviceOrientation]` has been deprecated and replaced with `[UIViewController setNeedsUpdateOfSupportedInterfaceOrientations]`.
 
   **Workaround:** Apps relying on `shouldAutorotate` should reflect their preferences using the view controllers `supportedInterfaceOrientations`. If the supported orientations change, use `-[UIViewController setNeedsUpdateOfSupportedInterface
 
-##### Wallet
+### Wallet
 
-###### Known Issues
+#### Known Issues
 
 - American Express cards might need to be removed and re-added to Wallet after updating to iOS 16 beta 6 or later. (97990752)
 

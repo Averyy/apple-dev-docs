@@ -16,7 +16,7 @@ get title(): string | null;
 set title(value: string | null | undefined);
 ```
 
-#### Discussion
+## Discussion
 
 If the title is empty, MapKit JS can’t show the standard callout.
 

@@ -24,7 +24,7 @@ var characterBoxes: [VNRectangleObservation]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<VNRectangleObservation *> * characterBoxes;
 ```
 
-#### Discussion
+## Discussion
 
 If the associated [`VNDetectTextRectanglesRequest`](../vndetecttextrectanglesrequest.md) request indicates interest in character boxes by setting the option `reportCharacterBoxes` to [`true`](../../Swift/true.md), this property is non-`nil`. If no characters are found, it remains empty.
 

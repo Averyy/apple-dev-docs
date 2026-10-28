@@ -17,7 +17,7 @@ A Boolean value that indicates whether the PIN Fallback occurred.
 let isPINFallback: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When the framework sets this property to `true`, the `paymentCardData` is a PIN Fallback read.
 

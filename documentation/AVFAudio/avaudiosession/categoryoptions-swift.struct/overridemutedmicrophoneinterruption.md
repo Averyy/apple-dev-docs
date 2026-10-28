@@ -27,7 +27,7 @@ AVAudioSessionCategoryOptionOverrideMutedMicrophoneInterruption
 
 - [Handling audio interruptions](../../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 Some devices include a privacy feature that mutes the built-in microphone at the hardware level in certain conditions, such as when you close the Smart Folio cover of an iPad. When this occurs, the system interrupts the audio session that’s capturing input from the microphone. Attempting to start audio input after the system mutes the microphone results in an error.
 

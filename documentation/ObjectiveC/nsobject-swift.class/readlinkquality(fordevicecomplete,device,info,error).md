@@ -17,7 +17,7 @@ func readLinkQuality(forDeviceComplete controller: Any!, device: IOBluetoothDevi
 - (void) readLinkQualityForDeviceComplete:(id) controller device:(IOBluetoothDevice *) device info:(BluetoothHCILinkQualityInfo *) info error:(IOReturn) error;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate gets invoked when an read link quality command complete event occurs. This could occur because you invoked it by issuing a `-readLinkQualityForDevice:` command, or someone else did from another app on the same controller.
 

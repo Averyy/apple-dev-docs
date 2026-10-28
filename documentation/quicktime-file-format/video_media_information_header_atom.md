@@ -6,7 +6,7 @@
 
 An atom that defines specific color and graphics mode information.
 
-#### Overview
+## Overview
 
 The layout of a media information header atom for video is as follows.
 

@@ -22,7 +22,7 @@ The current document model.
 var document: Document { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting a new value marks the document as having changes for later saving and registers an undo action to restore the model to its previous value.
 

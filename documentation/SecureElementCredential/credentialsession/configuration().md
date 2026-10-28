@@ -17,7 +17,7 @@ nonisolated
 func configuration() async throws -> CredentialTransaction.Configuration
 ```
 
-#### Discussion
+## Discussion
 
 This method provides a way to get the session configuration after performing a transaction task with a SwiftUI view.
 

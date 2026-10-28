@@ -19,7 +19,7 @@ Creates a data source from a dictionary.
 case filesByLabel([String : [URL]])
 ```
 
-#### Discussion
+## Discussion
 
 This data source uses each key in the dictionary to label the audio files in its associated URL array. The following code demonstrates how to create a dictionary with two labels, `"Laughter"` and `"Applause"`.
 

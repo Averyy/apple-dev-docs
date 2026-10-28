@@ -22,7 +22,7 @@ Removes the elements of this set that aren’t also in the given set.
 mutating func formIntersection(_ other: Self)
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are not also members of the `neighbors` set are removed. In particular, the names `"Alicia"`, `"Chris"`, and `"Diana"` are removed.
 

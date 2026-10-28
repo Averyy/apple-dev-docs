@@ -25,11 +25,11 @@ func CFStringGetSystemEncoding() -> CFStringEncoding
 extern CFStringEncoding CFStringGetSystemEncoding();
 ```
 
-#### Return Value
+## Return Value
 
 The default string encoding.
 
-#### Discussion
+## Discussion
 
 This function returns the default text encoding used by the OS when it creates strings. In macOS, this encoding is determined by the user’s preferred language setting. The preferred language is the first language listed in the International pane of the System Preferences.
 

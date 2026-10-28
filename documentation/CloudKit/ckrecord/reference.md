@@ -30,7 +30,7 @@ class Reference
 - [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
 - [Encrypting User Data](../encrypting-user-data.md)
 
-#### Overview
+## Overview
 
 A `CKReference` object creates a many-to-one relationship between records in your database. Each reference object stores information about the one record that is the target of the reference. You then save the reference object in the fields of one or more records to create a link from those records to the target. You may only create references between records within the same zone of the same database.
 
@@ -40,11 +40,11 @@ References create a stronger relationship between records than just saving the I
 
 To save multiple records that contain references between them, save the target records first or save all the records in one batch operation using [`CKModifyRecordsOperation`](../ckmodifyrecordsoperation.md).
 
-##### Interacting with Reference Objects
+### Interacting with Reference Objects
 
 You use reference objects to create strong links between two records and to search for related fields. When you create new records, you create reference objects and assign them to fields of your records. The only other time you create reference objects is when you build a search predicate to search for related records.
 
-###### Linking to Another Record
+#### Linking to Another Record
 
 To link records together and create a strong relationship between them, create a new `CKReference` object, initialize it with the owner record, and assign that reference object to a field of the owned record. When you design the relationships among your own records, make the owner the more important of two related records. The owner record rarely depends on any records that point to it. The owner record is also the one that you typically fetch first from the database.
 
@@ -73,7 +73,7 @@ An ownership type of organization is useful even if one object doesn’t explici
 
 > **Note**: When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](./recordchangetag.md) of the receiving object on the server.
 
-###### Searching for Related Records
+#### Searching for Related Records
 
 When you want to find records for a single owner object, you create a `CKReference` object and use it to build your search predicate. When you use reference objects in search predicates, the search code looks only at the ID value in the reference object. It matches the ID in records of the specified type with the ID you provide in the `CKReference` object.
 

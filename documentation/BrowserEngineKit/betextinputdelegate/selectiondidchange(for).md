@@ -24,7 +24,7 @@ func selectionDidChange(for textInput: any BETextInput)
 - (void) selectionDidChangeForTextInput:(id<BETextInput>) textInput;
 ```
 
-#### Discussion
+## Discussion
 
 This method results in an document state refresh with an invocation to: -[BETextInput requestTextContextForAutocorrectionWithCompletionHandler:]
 

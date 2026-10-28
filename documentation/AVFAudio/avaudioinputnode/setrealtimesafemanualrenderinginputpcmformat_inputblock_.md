@@ -19,7 +19,7 @@
 - (BOOL) setRealtimeSafeManualRenderingInputPCMFormat:(AVAudioFormat *) format inputBlock:(AVAudioIONodeInputBlockRealtimeSafe) block;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to setManualRenderingInputPCMFormat:inputBlock:, but requires a realtime-safe input block.
 

@@ -19,11 +19,11 @@ Takes the mutable view for the specified value.
 mutating func take(_ valueName: String) -> InferenceValue.MutableView?
 ```
 
-#### Return Value
+## Return Value
 
 A mutable view of the value, or `nil` if no value with the specified name exists.
 
-#### Discussion
+## Discussion
 
 Each value can only be taken once. Requesting the same value again produces a fatal error.
 

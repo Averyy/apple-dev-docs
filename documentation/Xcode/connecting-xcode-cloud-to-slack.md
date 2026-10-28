@@ -5,7 +5,7 @@
 
 Connect Xcode Cloud to Slack to keep your team informed about the latest Xcode Cloud builds.
 
-#### Overview
+## Overview
 
 Many teams use [Slack](https://slack.com) to collaborate and expect other tools to support and integrate with Slack. And because collaboration is an important part of using Xcode Cloud, you can easily connect it to Slack and receive its notifications in your team’s Slack workspace.
 
@@ -19,7 +19,7 @@ Use Xcode or [App Store Connect](htts://appstoreconnect.apple.com) to connect Xc
 
 > **Note**: Depending on your team’s Slack workspace settings, you may need to ask your team’s Slack administrator to connect Xcode Cloud to Slack. For more information, see [Install the Slack app for Xcode Cloud using App Store Connect](./connecting-xcode-cloud-to-slack.md#Install-the-Slack-app-for-Xcode-Cloud-using-App-Store-Connect).
 
-##### Install the Slack app for Xcode Cloud using Xcode
+### Install the Slack app for Xcode Cloud using Xcode
 
 To connect Xcode Cloud to Slack, you’ll need to install the Slack app Apple provides into your Slack workspace. The app manages access to your team’s Slack workspace.
 
@@ -37,7 +37,7 @@ To install the Slack app using Xcode:
 
 > 💡 **Tip**: Configure Xcode Cloud to send build notifications to yourself as direct messages (DMs) in Slack. Navigate to your account in App Store Connect, select the Xcode Cloud tab, choose Notifications in the sidebar, and select the checkbox next to Slack.
 
-##### Install the Slack app for Xcode Cloud using App Store Connect
+### Install the Slack app for Xcode Cloud using App Store Connect
 
 Another way to configure Xcode Cloud to send notifications to Slack is by setting up that connection in [App Store Connect](https://appstoreconnect.apple.com). It’s especially convenient if you need to work with your team’s Slack administrator to connect Xcode Cloud to Slack, because they don’t need to be familiar with Xcode.
 
@@ -55,7 +55,7 @@ To connect Xcode Cloud to your team’s Slack workspace in App Store Connect:
 
 You can also connect Xcode Cloud to Slack by clicking on your account in the top-right corner of the App Store Connect website and choosing Edit Profile. In your profile settings, select the Xcode Cloud tab, then click Connect next to Slack and install the Xcode Cloud app into your Slack workspace.
 
-##### Grant Xcode Cloud access to your Slack account
+### Grant Xcode Cloud access to your Slack account
 
 If you personally connected Xcode Cloud to Slack, you can configure Xcode Cloud to send build status notifications to your team’s Slack channels. You can also choose to receive build status notifications as direct messages. However, someone else may have connected Xcode Cloud to Slack; for example, the administrator of your team’s Slack workspace. In this case, you’ll receive build status notifications in Slack channels that your team member configured, but you need to authorize Xcode Cloud to use your Slack account before you can make changes to a workflow’s Notify post-action.
 
@@ -67,7 +67,7 @@ To authorize Xcode Cloud to access your Slack account:
 
 After authorizing Xcode Cloud to access your Slack account, you can make changes to your workflow’s Notify post-action and configure personal build notifications for Slack.
 
-##### Choose a Slack channel
+### Choose a Slack channel
 
 Depending on your project, you can direct all Xcode Cloud notifications to the same Slack channel or to set up different Slack channels to receive the notifications. For example, use a single Slack channel for all Xcode Cloud notifications if you’re a solo developer or your team only works on one app. In contrast, large teams may use one Slack channel per app, or use different Slack channels for builds from pull requests, for workflows that distribute nightly builds, and so on.
 

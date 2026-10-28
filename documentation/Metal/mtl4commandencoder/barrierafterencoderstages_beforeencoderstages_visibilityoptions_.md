@@ -20,7 +20,7 @@ Encodes an intra-pass barrier that instructs the GPU to pause before running sta
 - (void) barrierAfterEncoderStages:(MTLStages) afterEncoderStages beforeEncoderStages:(MTLStages) beforeEncoderStages visibilityOptions:(MTL4VisibilityOptions) visibilityOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Encode a barrier that guarantees that any subsequent work you encode in the *current command encoder*, corresponding to `beforeEncoderStages`, doesn’t begin until all prior commands in this command encoder, corresponding to `afterEncoderStages`, completes.
 

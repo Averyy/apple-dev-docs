@@ -5,17 +5,17 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 3.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - Tester Metrics and Metadata now help developers identify relevant, engaged, and active testers within the tester panel to improve beta-app quality. Developers can now read session count, crash count, and feedback count for each tester. For more information see [`Read Beta Tester Metrics for an App`](./get-v1-apps-_id_-metrics-betatesterusages.md).
 - Game Center matchmaking rules help create better matches between players in multiplayer games using game-specific rules. You can configure your rules and test them with sample match requests and player properties. For more information, see [Rules](./rules.md) and [Testing](./testing.md).
 - Game Center matchmaking metrics diagnose performance and other issues with matchmaking. You can get match requests, queue information, results, errors, and more. For more information, see [Metrics](./metrics.md).
 
-##### Deprecations
+### Deprecations
 
 - The `GET-v1-appPreOrders-{id}` endpoint is now deprecated and replaced with [`Read app availability`](./get-v2-appavailabilities-_id_.md).
 - The `POST-v1-appPreOrders` endpoint is now deprecated and replaced with [`Create an app pre-order`](./post-v2-appavailabilities.md).

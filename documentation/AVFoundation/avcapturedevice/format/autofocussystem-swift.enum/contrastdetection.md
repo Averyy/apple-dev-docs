@@ -23,7 +23,7 @@ case contrastDetection
 AVCaptureAutoFocusSystemContrastDetection
 ```
 
-#### Discussion
+## Discussion
 
 Contrast detection performs a focus scan to find the optimal position.
 

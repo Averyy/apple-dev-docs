@@ -25,11 +25,11 @@ init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?)
 - (NSManagedObject *) initWithEntity:(NSEntityDescription *) entity insertIntoManagedObjectContext:(NSManagedObjectContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of the appropriate class for `entity`.
 
-#### Discussion
+## Discussion
 
 `NSManagedObject` uses dynamic class generation to support the Objective-C 2 properties feature (see Declared Properties) by automatically creating a subclass of the class appropriate for `entity`. `initWithEntity:insertIntoManagedObjectContext:` therefore returns an instance of the appropriate class for `entity`. The dynamically-generated subclass will be based on the class specified by the entity, so specifying a custom class in your model will supersede the class passed to `alloc`.
 
@@ -41,7 +41,7 @@ In many applications, there is no need to subsequently assign a newly-created ma
 
 > ❗ **Important**:  This method is the designated initializer for `NSManagedObject`. You must not initialize a managed object simply by sending it `init`.
 
-##### Special Considerations
+### Special Considerations
 
 If you override [`init(entity:insertInto:)`](./init%28entity,insertinto%29.md), you *must* ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:
 

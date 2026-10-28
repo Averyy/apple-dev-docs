@@ -22,11 +22,11 @@ Displays a confirmation prompt with an interactive snippet.
 func requestConfirmation<Snippet>(conditions: ConfirmationConditions = [], actionName: ConfirmationActionName = .`continue`, dialog: IntentDialog? = nil, showDialogAsPrompt: Bool = true, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value where Snippet : SnippetIntent, Snippet.PerformResult : ReturnsValue
 ```
 
-#### Return Value
+## Return Value
 
 The return value from the snippet.
 
-#### Discussion
+## Discussion
 
 Call this method when you want someone to confirm a particular choice. For example, call this method before someone performs an action that might be destructive or unsafe. The method displays a confirmation interface that includes the provided snippet and optional dialog text. The interface asks the person to confirm or cancel the operation, and returns normally if the person confirms the operation. If the person chooses the cancel option, the method throws an error.
 

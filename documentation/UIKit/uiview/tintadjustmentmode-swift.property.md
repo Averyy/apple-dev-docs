@@ -23,7 +23,7 @@ var tintAdjustmentMode: UIView.TintAdjustmentMode { get set }
 @property (nonatomic) UIViewTintAdjustmentMode tintAdjustmentMode;
 ```
 
-#### Discussion
+## Discussion
 
 When this property’s value is [`UIView.TintAdjustmentMode.dimmed`](./tintadjustmentmode-swift.enum/dimmed.md), the value of the [`tintColor`](./tintcolor.md) property is modified to provide a dimmed appearance.
 

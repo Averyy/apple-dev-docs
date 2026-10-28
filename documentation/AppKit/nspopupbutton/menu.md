@@ -19,7 +19,7 @@ var menu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 If another menu was already associated with the pop-up button, this method releases its reference to the old menu.
 

@@ -24,7 +24,7 @@ var clearcoat: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * clearcoat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero—no second highlight.
 

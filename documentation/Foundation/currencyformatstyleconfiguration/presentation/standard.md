@@ -21,7 +21,7 @@ A presentation that shows a standard expression of the currency.
 static var standard: CurrencyFormatStyleConfiguration.Presentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This presentation produces output like `US$ 123.00`.
 

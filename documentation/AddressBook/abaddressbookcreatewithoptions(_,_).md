@@ -23,11 +23,11 @@ func ABAddressBookCreateWithOptions(_ options: CFDictionary!, _ error: UnsafeMut
 extern ABAddressBookRefABAddressBookCreateWithOptions(CFDictionaryRef options, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An address book object, `NULL`, or an empty database.
 
-#### Discussion
+## Discussion
 
 Changes made to the returned address book are reflected in the Address Book database only after saving the address book with [`ABAddressBookSave(_:_:)`](./abaddressbooksave%28_,_%29.md).
 

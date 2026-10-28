@@ -23,7 +23,7 @@ A button style that applies a prominent Liquid Glass effect based on the buttonâ
 
 Available when `Self` is `GlassProminentButtonStyle`.
 
-#### Discussion
+## Discussion
 
 In tvOS, this button style applies a Liquid Glass effect regardless of whether the button has focus. This style is similar to the [`borderedProminent`](./borderedprominent.md) style.
 

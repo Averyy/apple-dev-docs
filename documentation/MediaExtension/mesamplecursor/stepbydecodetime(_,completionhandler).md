@@ -24,7 +24,7 @@ func stepByDecodeTime(_ deltaDecodeTime: CMTime) async throws -> (CMTime, Bool)
 - (void) stepByDecodeTime:(CMTime) deltaDecodeTime completionHandler:(void (^)(CMTime actualDecodeTime, BOOL positionWasPinned, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The value for `actualDecodeTime` is the final cursor decode time. Because sample cursors snap to sample boundaries when stepped, this value may not be equal to the current sample decode time + `deltaDecodeTime`, even if the cursor isn’t pinned.
 

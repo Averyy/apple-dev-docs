@@ -25,7 +25,7 @@ class MTRBaseClusterCommissionerControl
 @interface MTRBaseClusterCommissionerControl : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Supports the ability for clients to request the commissioning of themselves or other nodes onto a fabric which the cluster server can commission onto.
 

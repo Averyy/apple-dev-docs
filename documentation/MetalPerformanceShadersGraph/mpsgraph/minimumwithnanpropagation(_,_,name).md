@@ -24,11 +24,11 @@ func minimumWithNaNPropagation(_ primaryTensor: MPSGraphTensor, _ secondaryTenso
 - (MPSGraphTensor *) minimumWithNaNPropagationWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates a minimum with `NaN` propagation operation and returns the result tensor. This means that if any of the elementwise operands is `NaN`, the result is `NaN`. It supports broadcasting as well.
 

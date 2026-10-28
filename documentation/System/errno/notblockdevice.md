@@ -25,7 +25,7 @@ static var notBlockDevice: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted a block device operation on a nonblock device or file.
 

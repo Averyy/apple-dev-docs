@@ -16,7 +16,7 @@ The maximum Y edge.
 NSMaxYEdge
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`CGRectEdge.maxXEdge`](../../CoreFoundation/cgrectedge/maxxedge.md), and also to [`NSRectEdge.maxY`](./maxy.md).
 

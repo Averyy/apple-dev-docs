@@ -22,7 +22,7 @@ case iOS_GPUFamily1_v1
 MTLFeatureSet_iOS_GPUFamily1_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A7 devices running iOS 8.
 

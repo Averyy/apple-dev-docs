@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any NSFetchedResultsControllerDelegate)? { get se
 @property (nonatomic, assign, nullable) id<NSFetchedResultsControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not specify a delegate, the controller does not track changes to managed objects associated with its managed object context.
 

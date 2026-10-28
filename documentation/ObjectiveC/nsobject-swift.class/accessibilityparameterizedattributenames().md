@@ -21,11 +21,11 @@ func accessibilityParameterizedAttributeNames() -> [NSAccessibility.Parameterize
 - (NSArray<NSString *> *) accessibilityParameterizedAttributeNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of parameterized attributes in the receiver.
 
-#### Discussion
+## Discussion
 
 If you implement this method, also implement [`accessibilityAttributeValue(_:forParameter:)`](./accessibilityattributevalue%28_,forparameter%29.md).
 

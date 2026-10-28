@@ -18,7 +18,7 @@ A Boolean value that indicates whether a Virtual Network Computing (VNC) app nee
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The Persistent Content Capture entitlement enables VNC apps to view and record the screen.
 

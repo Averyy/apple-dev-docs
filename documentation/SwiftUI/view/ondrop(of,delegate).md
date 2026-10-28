@@ -27,11 +27,11 @@ nonisolated
 func onDrop(of supportedTypes: [String], delegate: any DropDelegate) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
 
-#### Discussion
+## Discussion
 
 To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](../dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](./dropdestination%28for,isenabled,action%29.md) instead.
 

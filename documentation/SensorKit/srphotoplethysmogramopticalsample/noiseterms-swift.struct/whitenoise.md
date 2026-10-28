@@ -17,7 +17,7 @@ An estimate of the white noise of the sensor.
 let whiteNoise: Double
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the white noise variance estimate per Hz in the [`normalizedReflectance`](../normalizedreflectance-15f2k.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
 

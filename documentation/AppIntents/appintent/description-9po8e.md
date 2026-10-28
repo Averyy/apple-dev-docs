@@ -21,7 +21,7 @@ A localized string that describes what the app intent does.
 static var description: IntentDescription? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the app intent conforms to a schema, the schema provides a default implementation and value. If you implement this property, the system uses your custom value instead of the default value.
 

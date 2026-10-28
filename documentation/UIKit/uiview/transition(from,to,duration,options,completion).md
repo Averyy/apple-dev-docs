@@ -23,7 +23,7 @@ class func transition(from fromView: UIView, to toView: UIView, duration: TimeIn
 + (void) transitionFromView:(UIView *) fromView toView:(UIView *) toView duration:(NSTimeInterval) duration options:(UIViewAnimationOptions) options completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides a simple way to transition from the view in the `fromView` parameter to the view in the `toView` parameter. By default, the view in `fromView` is replaced in the view hierarchy by the view in `toView`. If both views are already part of your view hierarchy, you can include the [`showHideTransitionViews`](./animationoptions/showhidetransitionviews.md) option in the `options` parameter to simply hide or show them.
 

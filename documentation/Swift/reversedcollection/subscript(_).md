@@ -23,7 +23,7 @@ subscript(position: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

@@ -23,7 +23,7 @@ func indexName() -> String?
 - (NSString *) indexName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

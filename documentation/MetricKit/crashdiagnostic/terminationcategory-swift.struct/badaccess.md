@@ -19,7 +19,7 @@ The app was terminated for attempting an invalid memory access.
 static let badAccess: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`badAccessTerminationCount`](../../foregroundterminationmetric/badaccessterminationcount.md) and [`badAccessTerminationCount`](../../backgroundterminationmetric/badaccessterminationcount.md).
 

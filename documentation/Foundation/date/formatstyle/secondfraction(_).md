@@ -21,11 +21,11 @@ Modifies the date format style to use the specified second fraction format style
 func secondFraction(_ format: Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified second fraction style.
 
-#### Discussion
+## Discussion
 
 Static methods that return [`Date.FormatStyle.Symbol.SecondFraction`](./symbol/secondfraction.md) objects include [`fractional(_:)`](./symbol/secondfraction/fractional%28_%29.md) and [`milliseconds(_:)`](./symbol/secondfraction/milliseconds%28_%29.md).
 

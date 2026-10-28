@@ -22,7 +22,7 @@ var frames: [JointTransforms] { get set }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of joint transforms.
 

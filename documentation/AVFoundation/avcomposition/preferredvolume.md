@@ -21,7 +21,7 @@ The asset’s volume preference for playing its audible media.
 var preferredVolume: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically, but not always, 1.0.
 

@@ -21,7 +21,7 @@ func springLoadingActivated(_ activated: Bool, draggingInfo: any NSDraggingInfo)
 - (void) springLoadingActivated:(BOOL) activated draggingInfo:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, spring-loading is fully activated when a hover timeout occurs or the user finishes force clicking on a destination object to initiate spring-loading. In these cases, the `springLoadingActivated:draggingInfo:` method is only called once with an `activated` parameter value of [`true`](../../Swift/true.md).
 

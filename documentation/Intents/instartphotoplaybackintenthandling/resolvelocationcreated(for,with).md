@@ -29,7 +29,7 @@ optional func resolveLocationCreated(for intent: INStartPhotoPlaybackIntent) asy
 - (void) resolveLocationCreatedForStartPhotoPlayback:(INStartPhotoPlaybackIntent *) intent withCompletion:(void (^)(INPlacemarkResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to reesolve the location of the photos.
 

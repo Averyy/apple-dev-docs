@@ -16,11 +16,11 @@ Returns information about loaded kexts in a dictionary.
 CFDictionaryRef KextManagerCopyLoadedKextInfo(CFArrayRef kextIdentifiers, CFArrayRef infoKeys);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary, keyed by bundle identifier, of dictionaries containing information about loaded kexts.
 
-#### Discussion
+## Discussion
 
 The information keys returned by this function are listed below. Some are taken directly from the kext's information property list, and some are generated at run time. Never assume a given key will be present for a kext.
 

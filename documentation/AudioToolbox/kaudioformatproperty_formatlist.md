@@ -24,11 +24,11 @@ var kAudioFormatProperty_FormatList: AudioFormatPropertyID { get }
 kAudioFormatProperty_FormatList
 ```
 
-#### Discussion
+## Discussion
 
 A list of [`AudioFormatListItem`](../CoreAudioTypes/audioformatlistitem.md) structures describing the audio formats contained within the compressed bit stream, as described by the magic cookie. Set the `inSpecifier` parameter to an [`AudioFormatInfo`](./audioformatinfo.md) structure.
 
-#### Discussion
+## Discussion
 
 The `mFormatID` field of the `AudioStreamBasicDescription` structure must filled in. Formats are returned in order from the most to least “rich,” with channel count taking the highest precedence, followed by sample rate.
 

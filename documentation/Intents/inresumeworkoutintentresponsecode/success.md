@@ -22,7 +22,7 @@ case success
 INResumeWorkoutIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app successfully resumes the workout.
 

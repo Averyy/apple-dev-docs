@@ -21,11 +21,11 @@ Republishes elements up to the specified maximum count.
 func prefix(_ maxLength: Int) -> Publishers.Output<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes up to the specified number of elements.
 
-#### Discussion
+## Discussion
 
 Use [`prefix(_:)`](./prefix%28_%29.md) to limit the number of elements republished to the downstream subscriber.
 

@@ -24,7 +24,7 @@ func cancelContentEditingInputRequest(_ requestID: PHContentEditingInputRequestI
 - (void) cancelContentEditingInputRequest:(PHContentEditingInputRequestID) requestID;
 ```
 
-#### Discussion
+## Discussion
 
 When you request asset editing information with the [`requestContentEditingInput(with:completionHandler:)`](./requestcontenteditinginput%28with,completionhandler%29.md) method, the asset returns a numeric identifier for the request. To cancel the request before it completes, provide this identifier when calling the [`cancelContentEditingInputRequest(_:)`](./cancelcontenteditinginputrequest%28_%29.md) method.
 

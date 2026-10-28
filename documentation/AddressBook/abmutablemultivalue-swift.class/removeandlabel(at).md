@@ -19,11 +19,11 @@ func removeAndLabel(at index: Int) -> Bool
 - (BOOL) removeValueAndLabelAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the index is out of bounds, this method raises an exception.
 

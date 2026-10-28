@@ -24,7 +24,7 @@ let HKMetadataKeyDevicePlacementSide: String
 extern NSString * const HKMetadataKeyDevicePlacementSide;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) that contains a value from [`HKDevicePlacementSide`](./hkdeviceplacementside.md).
 

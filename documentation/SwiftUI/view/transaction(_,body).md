@@ -22,7 +22,7 @@ nonisolated
 func transaction<V>(_ transform: @escaping (inout Transaction) -> Void, @ContentBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Any modifiers applied to the content of `body` will be applied to this view, and the changes to the transaction performed in the `transform` will only affect the modifiers defined in the `body`.
 

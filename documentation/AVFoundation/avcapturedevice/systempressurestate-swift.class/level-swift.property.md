@@ -23,7 +23,7 @@ var level: AVCaptureDevice.SystemPressureState.Level { get }
 @property (atomic, readonly) AVCaptureSystemPressureLevel level;
 ```
 
-#### Discussion
+## Discussion
 
 Several aspects of OS and hardware status affect capture system performance and availability (see [`AVCaptureDevice.SystemPressureState.Factors`](./factors-swift.struct.md)). The overall system pressure level represents the most critical of underlying factors.
 

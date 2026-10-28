@@ -20,7 +20,7 @@ The maximum number of samples that can be classified.
 var maximumSequenceLength: Int
 ```
 
-#### Discussion
+## Discussion
 
 This configuration parameter is used as the input size when exporting a Core ML model.
 

@@ -19,7 +19,7 @@ var heightAnchor: NSLayoutDimension { get }
 @property (strong, readonly) NSLayoutDimension * heightAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s height. You can only combine this anchor with other [`NSLayoutDimension`](../../UIKit/nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

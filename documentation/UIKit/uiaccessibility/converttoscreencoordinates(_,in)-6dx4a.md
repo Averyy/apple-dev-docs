@@ -24,11 +24,11 @@ static func convertToScreenCoordinates(_ path: UIBezierPath, in view: UIView) ->
 extern UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezierPath *path, UIView *view);
 ```
 
-#### Return Value
+## Return Value
 
 A new path object that has the same shape as `path` but whose points are specified in screen coordinates.
 
-#### Discussion
+## Discussion
 
 This function adjusts the points of the path you provide to values that the accessibility system can use. You can use it to convert path objects in use by your app’s user interface before handing them to the accessibility system.
 

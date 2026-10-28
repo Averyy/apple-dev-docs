@@ -16,7 +16,7 @@ Returns a new stream that uses a custom clock configuration.
 + (instancetype) streamWithLocalizedName:(NSString *) localizedName streamID:(NSUUID *) streamID direction:(CMIOExtensionStreamDirection) direction customClockConfiguration:(CMIOExtensionStreamCustomClockConfiguration *) customClockConfiguration source:(id<CMIOExtensionStreamSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 A new stream object.
 

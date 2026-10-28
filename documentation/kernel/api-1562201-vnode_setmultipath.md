@@ -15,11 +15,11 @@ Mark a vnode as being reachable by multiple paths, i.e. as a hard link.
 void vnode_setmultipath(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 "Multipath" vnodes can be reached through more than one entry in the filesystem, and so must be handled differently for caching and event notification purposes. A filesystem should mark a vnode with multiple hardlinks this way.
 

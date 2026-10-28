@@ -23,7 +23,7 @@ var headingAccuracy: CLLocationDirection { get }
 @property (nonatomic, readonly) CLLocationDirection headingAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 A positive value in this property represents the potential error between the value reported by the [`magneticHeading`](./magneticheading.md) property and the actual direction of magnetic north. Thus, the lower the value of this property, the more accurate the heading. A negative value means that the reported heading is invalid, which can occur when the device is uncalibrated or there is strong interference from local magnetic fields.
 

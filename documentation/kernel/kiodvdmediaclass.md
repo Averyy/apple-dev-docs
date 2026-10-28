@@ -15,7 +15,7 @@ kIODVDMediaClass is the name of the IODVDMedia class.
 #define kIODVDMediaClass
 ```
 
-#### Discussion
+## Discussion
 
 kIODVDMediaClass is the name of the IODVDMedia class.
 

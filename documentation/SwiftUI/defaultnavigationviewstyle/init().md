@@ -23,7 +23,7 @@ Creates the default navigation view style.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use [`automatic`](../navigationviewstyle/automatic.md) to construct this style.
 

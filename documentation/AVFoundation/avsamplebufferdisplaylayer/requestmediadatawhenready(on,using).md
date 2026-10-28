@@ -26,7 +26,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 - (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`requestMediaDataWhenReady(on:using:)`](../avqueuedsamplebufferrendering/requestmediadatawhenready%28on,using%29.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

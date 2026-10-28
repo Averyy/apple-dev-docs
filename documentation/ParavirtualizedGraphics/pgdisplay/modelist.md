@@ -21,7 +21,7 @@ var modeList: [PGDisplayMode] { get set }
 @property (nonatomic, copy, readwrite, nonnull) NSArray<PGDisplayMode *> * modeList;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of display modes is `128`. Setting this property updates the virtual graphics device’s supported mode list, and potentially forces it to change its current mode. The first time you set this property, the device simulates hot-plugging the display to the graphics device.
 

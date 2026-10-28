@@ -20,11 +20,11 @@ Returns the zone configuration for the specified quantity type.
 func zoneConfiguration(for quantityType: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a custom configuration set by `setZoneConfiguration(_:for:)`, if it exists. Otherwise, this method returns the person’s preferred workout zone configuration from the health store.
 
-#### Discussion
+## Discussion
 
 This method throws an error if the framework can’t retrieve a zone configuration for the given quantity type.
 

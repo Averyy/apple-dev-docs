@@ -19,7 +19,7 @@ var nameOrAddress: String! { get }
 @property (readonly) NSString * nameOrAddress;
 ```
 
-#### Discussion
+## Discussion
 
 If a remote name request has been successfully completed, the device name will be returned. If not, a string containg the device address in the format of “XX-XX-XX-XX-XX-XX” will be returned.
 

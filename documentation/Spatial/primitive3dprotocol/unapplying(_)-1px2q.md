@@ -22,7 +22,7 @@ Returns the primitive that results from unapplying a projective transform to the
 func unapplying(_ transform: Self.ProjectiveTransform) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

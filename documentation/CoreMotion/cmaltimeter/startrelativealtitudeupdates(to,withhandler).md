@@ -22,7 +22,7 @@ func startRelativeAltitudeUpdates(to queue: OperationQueue, withHandler handler:
 - (void) startRelativeAltitudeUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMAltitudeHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to initiate the delivery of events. The altimeter object stores a strong reference to the specified queue and makes a copy of your block. If you call the method a second time, the altimeter object releases its references to the previous queue and handler before storing references to the new ones. Only the last installed handler receives events. When you no longer need the altitude data, or when an error occurs, call the [`stopRelativeAltitudeUpdates()`](./stoprelativealtitudeupdates%28%29.md) method to stop the delivery of events.
 

@@ -19,7 +19,7 @@ var renderingAttributesValidator: ((NSTextLayoutManager, NSTextLayoutFragment) -
 @property (copy, nullable) void (^renderingAttributesValidator)(NSTextLayoutManager *textLayoutManager, NSTextLayoutFragment *textLayoutFragment);
 ```
 
-#### Discussion
+## Discussion
 
 The validator uses [`setRenderingAttributes(_:for:)`](./setrenderingattributes%28_,for%29.md) to fill the rendering attributes appropriate for the range inside `textLayoutFragment`.
 

@@ -23,7 +23,7 @@ unowned(unsafe) var personViewDelegate: (any ABPersonViewControllerDelegate)? { 
 @property (nonatomic, assign, nullable) id<ABPersonViewControllerDelegate> personViewDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`ABPersonViewControllerDelegate`](../abpersonviewcontrollerdelegate.md) protocol.
 

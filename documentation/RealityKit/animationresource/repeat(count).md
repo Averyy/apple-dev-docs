@@ -21,7 +21,7 @@ Creates an animation that repeats the specified number of times.
 @preconcurrency func `repeat`(count: Int) -> AnimationResource
 ```
 
-#### Return Value
+## Return Value
 
 A repeating copy of the calling animation resource.
 

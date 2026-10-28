@@ -19,11 +19,11 @@ func UTGetOSTypeFromString(_ inString: CFString) -> OSType
 OSType UTGetOSTypeFromString(CFStringRef inString);
 ```
 
-#### Return Value
+## Return Value
 
 The OSType that was encoded in the string.
 
-#### Discussion
+## Discussion
 
 You call this function to convert an OSType string returned by a UTI function back into the integer-based OSType.
 

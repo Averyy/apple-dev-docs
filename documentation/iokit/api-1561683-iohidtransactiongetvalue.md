@@ -16,11 +16,11 @@ Obtains the value for a transaction element.
 IOHIDValueRef IOHIDTransactionGetValue(IOHIDTransactionRef transaction, IOHIDElementRef element, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns IOHIDValueRef for the given element.
 
-#### Discussion
+## Discussion
 
 If the transaction direction is kIOHIDTransactionDirectionTypeInput the value represents what was obtained from the device from the transaction. Otherwise, if the transaction direction is kIOHIDTransactionDirectionTypeOutput the value represents the pending value to be sent to the device. Use the kIOHIDTransactionOptionDefaultOutputValue option to get the default element value.
 

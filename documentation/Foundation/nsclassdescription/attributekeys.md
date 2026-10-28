@@ -20,11 +20,11 @@ var attributeKeys: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * attributeKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the names of attributes of instances of the described class.
 
-#### Discussion
+## Discussion
 
 For example, a class description that describes Movie objects could return the attribute keys `title`, `dateReleased`, and `rating`.
 

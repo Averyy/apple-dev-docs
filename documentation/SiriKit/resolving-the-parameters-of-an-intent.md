@@ -5,7 +5,7 @@
 
 Validate the parameters of an intent and make sure that you have the information you need to continue.
 
-#### Overview
+## Overview
 
 You must resolve the parameters of an intent to verify that you have the information you need to fulfill the user’s request. When the user talks to Siri, Siri converts the user’s spoken commands into actionable data and places that data in an intent object. During resolution, SiriKit prompts you to verify each parameter individually by calling the resolution methods of your handler object. In each method, you validate the provided data and create a resolution result object indicating your success or failure in resolving the parameter. SiriKit uses your resolution result object to determine how to proceed. For example, if your resolution result asks the user to disambiguate from among two or more choices, SiriKit prompts the user to select one of those choices.
 
@@ -40,7 +40,7 @@ Each resolvable parameter has a corresponding resolution result class that you u
 
 When returning a resolution to SiriKit, always include as much information as you can about the actual result. After each resolution attempt, SiriKit updates the intent object with the information you provide. If resolution was unsuccessful and SiriKit needs to call your resolution method again, you can use the extra information to reach a resolution more quickly. For example, if you find two contacts with the same name during resolution, you might populate the [`customIdentifier`](../Intents/inperson/customidentifier.md) property of each [`INPerson`](../Intents/inperson.md) object with a unique string that you can use to look up the selected contact later. Your resolution method can then look for that identifier first and bypass any other contact-matching logic.
 
-##### Choosing the Correct Resolution Result
+### Choosing the Correct Resolution Result
 
 The resolution result object you give back to SiriKit determines whether any further user interactions will occur. You must resolve all parameters successfully or let SiriKit know that the parameter is not required. All other resolutions require Siri to gather more information from the user.
 

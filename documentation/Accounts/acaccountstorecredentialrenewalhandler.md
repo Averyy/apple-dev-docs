@@ -22,7 +22,7 @@ typealias ACAccountStoreCredentialRenewalHandler = (ACAccountCredentialRenewResu
 typedef void (^)(enum ACAccountCredentialRenewResult, NSError *) ACAccountStoreCredentialRenewalHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The renewal handler parameters are:
 

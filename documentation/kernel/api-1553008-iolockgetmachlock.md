@@ -15,7 +15,7 @@ Accessor to a Mach mutex.
 lck_mtx_t * IOLockGetMachLock(IOLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Accessor to the Mach mutex.
 

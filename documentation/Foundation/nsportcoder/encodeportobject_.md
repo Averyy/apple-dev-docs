@@ -16,7 +16,7 @@ Encodes a given port so it can be properly reconstituted in the receiving proces
 - (void) encodePortObject:(NSPort *) aport;
 ```
 
-#### Discussion
+## Discussion
 
 This method is primarily for use by `NSPort` objects themselves—you can always use the general `encode...Object:` methods to encode any object.
 

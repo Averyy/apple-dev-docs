@@ -24,7 +24,7 @@ let PHImageResultIsDegradedKey: String
 extern NSString * const PHImageResultIsDegradedKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key provides information about an image loading result in the `resultHandler` block for methods listed in Requesting Images. The corresponding value is an `NSNumber` object containing a Boolean value.If `true`, the `result` parameter of your `resultHandler` block contains a low-quality image because Photos could not yet provide a higher-quality image. Depending on your settings in the [`PHImageRequestOptions`](./phimagerequestoptions.md) object that you provided with the request, Photos may call your result handler block again to provide a higher-quality image.
 

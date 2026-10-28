@@ -17,7 +17,7 @@ The identifier for a toolbar item that displays a tracking separator aligned wit
 static let primarySidebarTrackingSeparatorItemIdentifier: NSToolbarItem.Identifier
 ```
 
-#### Discussion
+## Discussion
 
 The item’s tracking separator visually aligns itself with the first divider of a vertical split view in the same window.
 

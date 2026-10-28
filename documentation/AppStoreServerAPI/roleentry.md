@@ -19,7 +19,7 @@ object RoleEntry
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Each [`GroupEntry`](./groupentry.md) contains an array of `RoleEntry` values. The array contains one role entry for each of your products for which the group provides the customer access.
 

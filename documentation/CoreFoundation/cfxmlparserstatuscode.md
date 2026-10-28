@@ -19,7 +19,7 @@ struct CFXMLParserStatusCode
 enum CFXMLParserStatusCode : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 Parser status is determined by calling the [`CFXMLParserGetStatusCode`](./cfxmlparsergetstatuscode.md) function. The parser reports errors to your application by invoking the [`CFXMLParserHandleErrorCallBack`](./cfxmlparserhandleerrorcallback.md) function.
 

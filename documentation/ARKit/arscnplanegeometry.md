@@ -20,7 +20,7 @@ class ARSCNPlaneGeometry
 @interface ARSCNPlaneGeometry : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 [`ARSCNPlaneGeometry`](./arscnplanegeometry.md) is a subclass of [`SCNGeometry`](../SceneKit/scngeometry.md) that wraps the mesh data provided by the [`ARPlaneGeometry`](./arplanegeometry.md) class. You can use [`ARSCNPlaneGeometry`](./arscnplanegeometry.md) to visualize the plane shape estimates provided by ARKit in a SceneKit view.
 

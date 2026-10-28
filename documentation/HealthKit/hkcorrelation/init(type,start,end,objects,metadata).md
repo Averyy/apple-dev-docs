@@ -24,7 +24,7 @@ convenience init(type correlationType: HKCorrelationType, start startDate: Date,
 + (instancetype) correlationWithType:(HKCorrelationType *) correlationType startDate:(NSDate *) startDate endDate:(NSDate *) endDate objects:(NSSet<HKSample *> *) objects metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 Use a correlation object to represent composite data—that is, a sample that requires more than a single value. To create a correlation sample, first create the quantity and category samples you intend to combine into the correlation. Next, create the correlation’s type. Finally, instantiate the correlation, passing in the type, start date, end date, samples, and metadata as shown below.
 

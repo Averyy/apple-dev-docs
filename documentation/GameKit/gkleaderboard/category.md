@@ -34,7 +34,7 @@ var category: String? { get set }
 @property (atomic, copy, nullable) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 If non-`nil`, Game Center only returns scores from the matching leaderboard. If `nil`, Game Center searches all previous scores of the game. The default is `nil`.
 

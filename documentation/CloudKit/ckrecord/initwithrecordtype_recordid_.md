@@ -21,11 +21,11 @@ Creates a record using an ID that you provide.
 - (instancetype) initWithRecordType:(CKRecordType) recordType recordID:(CKRecordID *) recordID;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized record object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a new record object with the specified ID. The newly created record contains no data.
 

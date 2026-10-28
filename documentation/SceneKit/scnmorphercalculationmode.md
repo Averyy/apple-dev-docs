@@ -25,7 +25,7 @@ enum SCNMorpherCalculationMode
 enum SCNMorpherCalculationMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A morpher computes its current surface by summing weighted geometry elements from the base geometry and all target geometries. The position of a vertex on the surface is produced by adding the position vector of a point on the base geometry to the position vectors of the corresponding points on all target geometries. The morpher’s [`calculationMode`](./scnmorpher/calculationmode.md) property selects the formula used to calculate this sum.
 

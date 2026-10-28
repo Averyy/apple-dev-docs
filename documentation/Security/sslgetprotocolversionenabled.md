@@ -17,11 +17,11 @@ Retrieves the enabled status of a given protocol.
 OSStatus SSLGetProtocolVersionEnabled(SSLContextRef context, SSLProtocol protocol, Boolean *enable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can specify any one of the following values for the `protocol` parameter:
 

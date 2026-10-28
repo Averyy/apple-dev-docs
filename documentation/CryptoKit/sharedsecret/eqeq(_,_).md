@@ -21,7 +21,7 @@ Determines whether a shared secret is equivalent to a collection of contiguous b
 static func == <D>(lhs: SharedSecret, rhs: D) -> Bool where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the shared secret and the collection of binary data are equivalent.
 

@@ -21,7 +21,7 @@ The elements produced by the publisher, as a throwing asynchronous sequence.
 var values: AsyncThrowingPublisher<Self> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides an [`AsyncThrowingPublisher`](../asyncthrowingpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](../asyncpublisher.md) conforms to [`AsyncSequence`](../../Swift/asyncsequence.md), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber. If the publisher terminates with an error, the awaiting caller receives the error as a `throw`.
 

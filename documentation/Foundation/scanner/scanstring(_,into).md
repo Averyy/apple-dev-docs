@@ -25,11 +25,11 @@ func scanString(_ string: String, into result: AutoreleasingUnsafeMutablePointer
 - (BOOL) scanString:(NSString *) string intoString:(NSString **) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `string` matches the characters at the scan location, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `string` is present at the current scan location, then the current scan location is advanced to after the string; otherwise the scan location does not change.
 

@@ -23,7 +23,7 @@ struct UIRemoteNotificationType
 enum UIRemoteNotificationType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 One or more of the values in the `UIRemoteNotificationType` bit mask are passed to iOS as the argument of the [`registerForRemoteNotifications(matching:)`](./uiapplication/registerforremotenotifications%28matching%29.md) method. Thereafter, iOS filters notifications for the app based on these values. You can always get the current notification types by calling the [`enabledRemoteNotificationTypes()`](./uiapplication/enabledremotenotificationtypes%28%29.md) method.
 

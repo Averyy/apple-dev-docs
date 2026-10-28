@@ -21,7 +21,7 @@ var tabImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * tabImage;
 ```
 
-#### Discussion
+## Discussion
 
 This image has precedence over any system item that [`tabSystemItem`](./tabsystemitem.md) specifies, and CarPlay only uses it when the template is a root-template of a tab bar.
 

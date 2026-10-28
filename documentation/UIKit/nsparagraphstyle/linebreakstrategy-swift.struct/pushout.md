@@ -24,7 +24,7 @@ static var pushOut: NSParagraphStyle.LineBreakStrategy { get }
 NSLineBreakStrategyPushOut
 ```
 
-#### Discussion
+## Discussion
 
 To avoid an orphan word on the last line of a paragraph before a page break, the text system may extend individual lines by one or more words. Typically, the text system only pushes out the last line by one word.
 

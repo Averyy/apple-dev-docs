@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_READLINK: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_READLINK
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`readlink`](./es_events_t/readlink.md), which has type [`es_event_readlink_t`](./es_event_readlink_t.md).
 

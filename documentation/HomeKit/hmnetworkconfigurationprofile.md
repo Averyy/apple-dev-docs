@@ -24,7 +24,7 @@ class HMNetworkConfigurationProfile
 @interface HMNetworkConfigurationProfile : HMAccessoryProfile
 ```
 
-#### Overview
+## Overview
 
 To increase security, HomeKit can restrict network access for specific accessories, including access to other accessories in the home, and to the internet. However, an accessory your app controls might need network access to carry out certain functions, like downloading new firmware.
 

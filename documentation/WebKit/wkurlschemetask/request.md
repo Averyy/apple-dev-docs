@@ -24,7 +24,7 @@ var request: URLRequest { get }
 @property (nonatomic, copy, readonly) NSURLRequest * request;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to get the URL of the requested resource, and any additional details. It is safe to retrieve the value of this property even after WebKit cancels the load request by calling your handler’s [`webView(_:stop:)`](../wkurlschemehandler/webview%28_,stop%29.md) method.
 

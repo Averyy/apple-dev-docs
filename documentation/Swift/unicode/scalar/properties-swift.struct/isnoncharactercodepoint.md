@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is permanently reserved for intern
 var isNoncharacterCodePoint: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Noncharacter_Code_Point” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

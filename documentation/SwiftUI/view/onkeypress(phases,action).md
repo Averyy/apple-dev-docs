@@ -21,11 +21,11 @@ nonisolated
 func onKeyPress(phases: KeyPress.Phases = [.down, .repeat], action: @escaping (KeyPress) -> KeyPress.Result) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that binds hardware keyboard input when focused.
 
-#### Discussion
+## Discussion
 
 The following example shows a hint while someone holds the Option key, and hides it again when they let go. It returns `.ignored` so that other views still receive the event:
 

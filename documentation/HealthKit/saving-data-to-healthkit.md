@@ -5,7 +5,7 @@
 
 Create and share HealthKit samples.
 
-#### Overview
+## Overview
 
 Your app can create new samples and add them to the HealthKit store. Although all sample types follow a similar procedure, each type has its own variations:
 
@@ -30,7 +30,7 @@ For correlations, you must first create all the sample objects that the correlat
 
 > ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect on their day-to-day experiences, including physical accomplishments, workouts, and emotions and moods. If your app saves data to HealthKit, high-level summaries of that data can appear as suggestions in the Journal app, or in other apps that use the [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) framework.
 
-##### Balance performance and details
+### Balance performance and details
 
 When saving data to the HealthKit store, you often need to choose between using a single sample to represent the data or splitting the data across multiple, smaller samples. A single, long sample is better from a performance perspective; however, multiple smaller samples gives the user a more detailed look into how their data changes over time. Ideally, you want to find a sample size that’s granular enough to provide the user with useful historical data and you should avoid saving samples that are 24 hours long or longer.
 
@@ -38,7 +38,7 @@ When recording a workout, you can use high frequency data (a minute or less per 
 
 Most sample types have restrictions on duration. If you attempt to save a sample that doesn’t meet those restrictions, it fails to save. For more details on checking the duration restrictions, refer to [`HKSampleType`](./hksampletype.md).
 
-##### Work with data in the Health app
+### Work with data in the Health app
 
 The Health app gives users access to all of the data in their HealthKit store. Users can view, add, delete, and manage their data.
 

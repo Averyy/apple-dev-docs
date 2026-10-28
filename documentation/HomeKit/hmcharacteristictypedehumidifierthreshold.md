@@ -24,7 +24,7 @@ let HMCharacteristicTypeDehumidifierThreshold: String
 extern NSString * const HMCharacteristicTypeDehumidifierThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point percentage representing the relative humidity threshold. Relative humidity is a measure of the amount of water in the air relative to the maximum it can hold at the current temperature.
 

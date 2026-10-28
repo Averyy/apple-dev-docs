@@ -21,7 +21,7 @@ Calculates whether each element in a single-precision vector falls within a spec
 extern void vDSP_venvlp(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, const float *__C, vDSP_Stride __IC, float *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Finds the extrema of `C`. For the first `N` elements of `C`, the corresponding element of `A` provides an upper-threshold value, and the corresponding element of `B` provides a  lower-threshold value. If the value of an element of `C` falls outside the range defined by these thresholds, it is copied to the corresponding element of `D`. If its value is within the range, the corresponding element of `D` is set to zero:
 

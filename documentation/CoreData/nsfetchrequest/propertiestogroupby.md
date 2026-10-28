@@ -25,7 +25,7 @@ var propertiesToGroupBy: [Any]? { get set }
 @property (nonatomic, copy, nullable) NSArray * propertiesToGroupBy;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSPropertyDescription`](../nspropertydescription.md) or  [`NSExpressionDescription`](../nsexpressiondescription.md) objects or key-path strings that indicate how data should be grouped before a select statement is run in an SQL database.
 

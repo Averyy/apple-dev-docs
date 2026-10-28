@@ -20,7 +20,7 @@ func addHistogram(withName name: String, parameterID: UInt32, parameterFlags fla
 - (BOOL) addHistogramWithName:(NSString *) name parameterID:(UInt32) parameterID parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a histogram parameter; `NO` otherwise.
 

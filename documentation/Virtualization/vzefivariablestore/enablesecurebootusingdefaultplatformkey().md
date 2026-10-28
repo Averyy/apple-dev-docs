@@ -19,7 +19,7 @@ func enableSecureBootUsingDefaultPlatformKey() throws
 - (BOOL) enableSecureBootUsingDefaultPlatformKeyWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This operation overwrites the Platform Key (PK) global variable with an Apple-managed Platform Key, sets the “SetupMode” global variable to `0`, and enables Secure Boot.
 

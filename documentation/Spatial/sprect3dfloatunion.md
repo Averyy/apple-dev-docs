@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatUnion(SPRect3DFloat rect, SPRect3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle structure that is the smallest rectangle that contains two sizes.
 
-#### Discussion
+## Discussion
 
 Returns the smallest rectangle that contains two rectangles.
 

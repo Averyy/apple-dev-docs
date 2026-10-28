@@ -24,7 +24,7 @@ typealias MTL4CommitFeedbackHandler = @Sendable (any MTL4CommitFeedback) -> Void
 typedef void (^)(id<MTL4CommitFeedback>) MTL4CommitFeedbackHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You register a commit feedback block with Metal by providing an instance of [`MTL4CommitOptions`](./mtl4commitoptions.md) to the command queue’s commit method, [`commit:count:options:`](./mtl4commandqueue/commit_count_options_.md). The commit options instance references your commit feedback handler after you add it via its [`addFeedbackHandler(_:)`](./mtl4commitoptions/addfeedbackhandler%28_%29.md) method.
 

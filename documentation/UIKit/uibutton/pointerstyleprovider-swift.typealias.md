@@ -18,11 +18,11 @@ A type alias defining a closure that returns a pointer style to apply to a butto
 typealias PointerStyleProvider = (UIButton, UIPointerEffect, UIPointerShape) -> UIPointerStyle?
 ```
 
-#### Return Value
+## Return Value
 
 The pointer style to apply to the button when the pointer hovers over it. Return `nil` when you don’t want to apply a pointer style to the button.
 
-#### Discussion
+## Discussion
 
 To change the appearance of the pointer when it hovers over the button, create a pointer style provider closure and assign it to the button’s [`pointerStyleProvider`](./pointerstyleprovider-y4eb.md) property. For instance, the following code listing increases the size of the pointer, while keeping the proposed content effect, to provide better highlighting of the button when the pointer hovers over it.
 

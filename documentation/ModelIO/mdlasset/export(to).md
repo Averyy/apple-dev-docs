@@ -24,7 +24,7 @@ func export(to URL: URL) throws
 - (BOOL) exportAssetToURL:(NSURL *) URL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MDLAsset`](../mdlasset.md) class infers the data format to export in from the [`pathExtension`](../../Foundation/nsurl/pathextension.md) property of the specified URL. To determine whether a format is supported for export, call the [`canExportFileExtension(_:)`](./canexportfileextension%28_%29.md) method.
 

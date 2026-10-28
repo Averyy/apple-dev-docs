@@ -22,7 +22,7 @@ case activated
 UISpringLoadedInteractionEffectStateActivated
 ```
 
-#### Discussion
+## Discussion
 
 The interaction view is styled with the default effect, and the activation handler for the [`UISpringLoadedInteraction`](../uispringloadedinteraction.md) object is called.
 

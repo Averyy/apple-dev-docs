@@ -24,11 +24,11 @@ convenience init(dimensions rows: Int, columns: Int, rowBytes: Int, dataType: MP
 + (instancetype) matrixDescriptorWithDimensions:(NSUInteger) rows columns:(NSUInteger) columns rowBytes:(NSUInteger) rowBytes dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSMatrixDescriptor`](../mpsmatrixdescriptor.md) object.
 
-#### Discussion
+## Discussion
 
 For performance considerations, the optimal row stride may not necessarily be equal to the number of columns in the matrix. The [`rowBytes(fromColumns:dataType:)`](./rowbytes%28fromcolumns,datatype%29.md) method may be used to help you determine this value.
 

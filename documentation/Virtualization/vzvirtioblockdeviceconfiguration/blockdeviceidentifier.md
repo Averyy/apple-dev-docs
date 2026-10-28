@@ -19,7 +19,7 @@ var blockDeviceIdentifier: String { get set }
 @property (copy) NSString * blockDeviceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use `blockDeviceIdentifier` to name devices so they’re more discoverable in the Linux guest. The identifier must be an ASCII encodable string of 20 bytes or less.
 

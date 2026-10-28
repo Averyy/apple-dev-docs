@@ -25,7 +25,7 @@ var transparency: CGFloat { get set }
 @property (nonatomic) CGFloat transparency;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit determines the total opacity of each rendered pixel in a surface by multiplying the color from the material’s [`transparent`](./transparent.md) property by the value of this property. Then, the material’s [`transparencyMode`](./transparencymode.md) property determines how pixels from the material are blended into the scene.
 

@@ -24,7 +24,7 @@ var estimatedAssetCount: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger estimatedAssetCount;
 ```
 
-#### Discussion
+## Discussion
 
 This count may not match the current number of assets in the collection. To get the most recent count, fetch the collection’s assets with the [`fetchAssets(in:options:)`](../phasset/fetchassets%28in,options%29.md) method and read the [`count`](../phfetchresult/count.md) property of the fetch result.
 

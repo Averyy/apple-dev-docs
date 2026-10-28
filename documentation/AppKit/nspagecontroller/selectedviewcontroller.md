@@ -19,7 +19,7 @@ var selectedViewController: NSViewController? { get }
 @property (strong, readonly, nullable) NSViewController * selectedViewController;
 ```
 
-#### Discussion
+## Discussion
 
 May be `nil` if not using view controllers.
 

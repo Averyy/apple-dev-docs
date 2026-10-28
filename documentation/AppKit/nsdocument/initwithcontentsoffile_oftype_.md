@@ -17,7 +17,7 @@ Initializes and returns a document object.
 - (id) initWithContentsOfFile:(NSString *) absolutePath ofType:(NSString *) typeName;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes and returns an NSDocument object of document type `docType` containing data stored in the file `fileName`. In opening the file, invokes the [`readFromFile:ofType:`](./readfromfile_oftype_.md) method. If the document successfully opens the file, it updates [`fileURL`](./fileurl.md) and [`fileType`](./filetype.md). If the file cannot be opened, or the document is unable to load the contents of the file, this method returns `nil`. This initializer is typically invoked by the `NSDocumentController` method [`makeDocumentWithContentsOfFile:ofType:`](../nsdocumentcontroller/makedocumentwithcontentsoffile_oftype_.md).
 

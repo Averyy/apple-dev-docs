@@ -23,7 +23,7 @@ case topAttached
 UIBarPositionTopAttached
 ```
 
-#### Discussion
+## Discussion
 
 Bars with this position draw their background extended upwards, allowing their background content to show through the status bar.
 

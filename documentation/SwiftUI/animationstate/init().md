@@ -21,7 +21,7 @@ Create an empty state container.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 You don’t typically create an instance of [`AnimationState`](../animationstate.md) directly. Instead, the [`AnimationContext`](../animationcontext.md) provides the animation state to an instance of [`CustomAnimation`](../customanimation.md).
 

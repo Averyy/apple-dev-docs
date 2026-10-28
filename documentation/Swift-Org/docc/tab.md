@@ -22,7 +22,7 @@ A container directive that holds general markup content describing an individual
 }
 ```
 
-#### Overview
+## Overview
 
 To add a new tab to a [`TabNavigator`](./tabnavigator.md), add a `@Tab` directive within the content of the `@TabNavigator` directive.
 

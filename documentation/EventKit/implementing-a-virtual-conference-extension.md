@@ -13,18 +13,18 @@ Support adding a virtual conference room to an event in Calendar.
 - macOS 26.2+
 - Xcode 26.2+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to implement a virtual conference extension using [`EKVirtualConferenceProvider`](./ekvirtualconferenceprovider.md). With this extension, people can add a virtual conference room to an event in Calendar, by selecting the room from a list in the event’s Location field. The sample code extension uses a single target that supports iOS and macOS.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 
 1. Open the sample in the latest version of Xcode.
 2. For all targets in the sample project, choose your team from the Team menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile. For more information, see “Set the bundle ID” and “Assign the project to a team” in [Preparing your app for distribution](../Xcode/preparing-your-app-for-distribution.md).
 
-##### Add a virtual conference extension target to your project
+### Add a virtual conference extension target to your project
 
 To create a virtual conference extension, add a virtual conference extension target to your new or existing Xcode project.
 
@@ -38,7 +38,7 @@ To add a virtual conference extension target, follow these steps:
 6. Specify the name of your extension and leave the other values set to their defaults.
 7. Click Finish.
 
-##### Review the generated virtual conference extension files
+### Review the generated virtual conference extension files
 
 The Virtual Conference template creates an `Info.plist` file and the `VirtualConferenceProvider` class. The `Info.plist` file includes an `NSExtensionPointIdentifier` key and an `NSExtensionPrincipalClass` key under the `NSExtension` key:
 
@@ -62,7 +62,7 @@ The Virtual Conference template creates an `Info.plist` file and the `VirtualCon
 
 You can build and run the project before you customize the extension code. To customize the extension, the sample project extension overrides `fetchAvailableRoomTypes(completionHandler:)` and `fetchVirtualConference(identifier:completionHandler:)`.
 
-##### Provide room details
+### Provide room details
 
 The sample project extension provides a personal room and a one-time room that people can select in the calendar event to schedule a virtual conference. It creates an [`EKVirtualConferenceRoomTypeDescriptor`](./ekvirtualconferenceroomtypedescriptor.md) object for each room. Each descriptor specifies a title and a unique identifier for the room:
 
@@ -84,7 +84,7 @@ override func fetchAvailableRoomTypes() async throws -> [EKVirtualConferenceRoom
 }
 ```
 
-##### Create a conference descriptor
+### Create a conference descriptor
 
 The sample project extension calls a custom method to set up a virtual conference descriptor for each of the rooms it provides. It creates a list of URL descriptors, including an HTTP URL universal link for joining the conference and an optional secondary URL for dialing in to the conference:
 
@@ -107,7 +107,7 @@ Then the sample project extension creates an [`EKVirtualConferenceDescriptor`](.
  let virtualConferenceDescriptor = EKVirtualConferenceDescriptor(title: title, urlDescriptors: urlDescriptors, conferenceDetails: details)
 ```
 
-##### Provide conference details
+### Provide conference details
 
 After a person selects the personal room or one-time room from the list in the calendar event, the system calls the [`fetchVirtualConference(identifier:completionHandler:)`](./ekvirtualconferenceprovider/fetchvirtualconference%28identifier,completionhandler%29.md) method to fetch details about the room using its unique identifier.
 

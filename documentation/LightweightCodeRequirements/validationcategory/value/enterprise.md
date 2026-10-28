@@ -21,7 +21,7 @@ Indicates that the code is signed by an Apple issued distribution certificate an
 static let enterprise: ValidationCategory.Value
 ```
 
-#### Discussion
+## Discussion
 
 This category will match on iOS, watchOS, tvOS, and  visionOS apps. On macOS this category will only match on iOS on macOS apps.
 

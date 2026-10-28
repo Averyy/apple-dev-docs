@@ -15,7 +15,7 @@ The imported package that supports using the client library within a web browser
 interface CKToolBrowserModule
 ```
 
-#### Overview
+## Overview
 
 This is the import of all exported content from the `@apple/cktool.target.browser` package.
 

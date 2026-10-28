@@ -25,7 +25,7 @@ class MKMapSnapshotter
 @interface MKMapSnapshotter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`MKMapSnapshotter`](./mkmapsnapshotter.md) object when you want to capture the system-provided map content, including the map tiles and imagery. The snapshotter object captures the best image possible by loading all of the available map tiles before capturing the image.
 

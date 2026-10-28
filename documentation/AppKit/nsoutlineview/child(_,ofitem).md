@@ -19,11 +19,11 @@ func child(_ index: Int, ofItem item: Any?) -> Any?
 - (id) child:(NSInteger) index ofItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The child item or `nil` if the item could not be found.
 
-#### Discussion
+## Discussion
 
 You can call this method on an outline view with either a static or dynamic data source. For an outline view whose contents are dynamic, this method may call out to the [`outlineView(_:child:ofItem:)`](../nsoutlineviewdatasource/outlineview%28_,child,ofitem%29.md) method of the associated data source object.
 

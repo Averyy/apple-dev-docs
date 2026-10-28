@@ -5,7 +5,7 @@
 
 Codes used to report the status of an Apple Pay session after a callback.
 
-#### Overview
+## Overview
 
 Use an appropriate status code to report your status when you complete a callback.
 

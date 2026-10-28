@@ -21,7 +21,7 @@ The subscription information for an auto-renewable subscripton.
 let subscription: Product.SubscriptionInfo?
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates that this product isn’t an auto-renewable subscription.
 

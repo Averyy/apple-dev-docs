@@ -21,7 +21,7 @@ Set additional HTTP header fields to be sent by the client during the WebSocket 
 func additionalHeaders(_ headers: [(name: String, value: String)]) -> WebSocket
 ```
 
-#### Discussion
+## Discussion
 
 This can be used for custom protocols and cookies. Multiple headers of the same name are not allowed, and the header will replaced by the most recently set value.
 

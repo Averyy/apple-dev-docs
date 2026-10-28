@@ -21,7 +21,7 @@ The default options for stereo video views.
 kCMStereoViewInterpretation_Default
 ```
 
-#### Discussion
+## Discussion
 
 Uses the default left-to-right eye ordering for geometry and storage, and allows for the presence of at most two video views in the data, representing the left and right eye.
 

@@ -22,7 +22,7 @@ Creates a migration manager with the specified stages.
 convenience init(_ stages: [NSMigrationStage])
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Core Data processes the migration stages in the order that you provide them.
 

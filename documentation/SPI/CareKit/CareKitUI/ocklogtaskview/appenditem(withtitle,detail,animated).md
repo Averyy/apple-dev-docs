@@ -18,7 +18,7 @@ Appends an item to the list of logged items.
 @MainActor func appendItem(withTitle title: String?, detail: String?, animated: Bool) -> OCKLogItemButton
 ```
 
-#### Return Value
+## Return Value
 
 The item that was appended.
 

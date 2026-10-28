@@ -24,7 +24,7 @@ var contentsRect: CGRect { get set }
 @property CGRect contentsRect;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the unit rectangle (0.0,0.0,1.0,1.0), which results in all of the layer’s contents being drawn.
 

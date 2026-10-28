@@ -20,7 +20,7 @@ Creates a new restaurant reservation with the provided information.
 - (instancetype) initWithItemReference:(INSpeakableString *) itemReference reservationNumber:(NSString *) reservationNumber bookingTime:(NSDate *) bookingTime reservationStatus:(INReservationStatus) reservationStatus reservationHolderName:(NSString *) reservationHolderName actions:(NSArray<INReservationAction *> *) actions reservationDuration:(INDateComponentsRange *) reservationDuration partySize:(NSNumber *) partySize restaurantLocation:(CLPlacemark *) restaurantLocation;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantReservation`](../inrestaurantreservation.md) object or `nil` if unable to create one.
 

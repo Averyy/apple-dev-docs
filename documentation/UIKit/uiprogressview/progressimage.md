@@ -23,7 +23,7 @@ var progressImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * progressImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a custom image, the [`progressTintColor`](./progresstintcolor.md) property is ignored.
 

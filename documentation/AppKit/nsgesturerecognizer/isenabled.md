@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the gesture recognizer receives events and uses them to determine when its gesture is performed. When the value is [`false`](../../Swift/false.md), the gesture recognizer does not receive events. Changing the value from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md) while the gesture recognizer is in the process of recognizing a gesture changes the state of the gesture recognizer to [`NSGestureRecognizer.State.cancelled`](./state-swift.enum/cancelled.md).
 

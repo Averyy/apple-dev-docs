@@ -4,13 +4,13 @@
 
 A schema that defines the properties of an image in the physical environment.
 
-#### Overview
+## Overview
 
 This schema defines the criteria that the runtime uses to recognize an image in the physical environment, including pixel data and width.
 
 When RealityKit opens a USDZ file that defines a reference image, it instantiates an [`AnchorEntity`](../RealityKit/anchorentity.md) with a component type  [`AnchoringComponent.Target.image(group:name:)`](../RealityKit/anchoringcomponent/target-swift.enum/image%28group,name%29.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_ReferenceImage "Preliminary_ReferenceImage" (
@@ -18,7 +18,7 @@ class Preliminary_ReferenceImage "Preliminary_ReferenceImage" (
 )
 ```
 
-##### Define a reference image
+### Define a reference image
 
 The following example defines a prim named `ImageReference` that instructs the runtime to scan for an image described by `image.png`.
 

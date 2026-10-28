@@ -21,11 +21,11 @@ Returns a match if this regex matches the given substring in its entirety.
 func wholeMatch(in string: Substring) throws -> Regex<Output>.Match?
 ```
 
-#### Return Value
+## Return Value
 
 The match, if this regex matches the entirety of `string`; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Call this method if you want the regular expression to succeed only when it matches the entire string you pass as `string`. The following example shows matching a regular expression that only matches digits, with different candidate strings.
 

@@ -19,7 +19,7 @@ var indentationMarkerFollowsCell: Bool { get set }
 @property BOOL indentationMarkerFollowsCell;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the indentation marker is indented along with the cell contents. When the value is [`false`](../../Swift/false.md), the marker is always displayed left-justified in the column. The default value of this property is [`true`](../../Swift/true.md).
 

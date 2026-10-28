@@ -15,7 +15,7 @@ The request body for updating the invoice details of a budget order.
 object CampaignUpdate.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 To change the billing contact details on an existing Line of Credit invoice record, use this object. Omit a field to leave its current value unchanged.
 

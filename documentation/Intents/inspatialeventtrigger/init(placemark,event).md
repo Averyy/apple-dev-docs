@@ -23,7 +23,7 @@ init(placemark: CLPlacemark, event: INSpatialEvent)
 - (instancetype) initWithPlacemark:(CLPlacemark *) placemark event:(INSpatialEvent) event;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized event trigger object or `nil` if the object could not be created.
 

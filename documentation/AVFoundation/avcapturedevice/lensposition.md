@@ -22,7 +22,7 @@ var lensPosition: Float { get }
 @property (nonatomic, readonly) float lensPosition;
 ```
 
-#### Discussion
+## Discussion
 
 A lens position value doesn’t correspond to an exact physical distance, nor does it represent a consistent focus distance from device to device.
 

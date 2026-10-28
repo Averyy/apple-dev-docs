@@ -22,7 +22,7 @@ The sharing and ownership state of the entity.
 var ownership: EntityOwnership { get }
 ```
 
-#### Discussion
+## Discussion
 
 Return a value that identifies the entity’s owner, its collaborators, and whether the entity is publicly accessible.
 

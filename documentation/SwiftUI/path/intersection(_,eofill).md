@@ -21,11 +21,11 @@ Returns a new path with filled regions common to both paths.
 func intersection(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting path is the overlapping area of the filled region of both paths.  This can be used to clip the fill of a path to a mask.
 

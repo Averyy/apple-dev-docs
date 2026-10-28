@@ -25,7 +25,7 @@ var sampleHasDependentSamples: ObjCBool
 BOOL sampleHasDependentSamples;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the sample has dependent samples when [`sampleIndicatesWhetherItHasDependentSamples`](./sampleindicateswhetherithasdependentsamples.md) is [`true`](../../Swift/true.md).
 

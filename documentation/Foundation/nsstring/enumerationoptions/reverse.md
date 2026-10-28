@@ -23,7 +23,7 @@ static var reverse: NSString.EnumerationOptions { get }
 NSStringEnumerationReverse
 ```
 
-#### Discussion
+## Discussion
 
 Causes enumeration to occur from the end of the specified range to the start.
 

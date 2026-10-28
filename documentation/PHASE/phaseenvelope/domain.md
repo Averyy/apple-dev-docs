@@ -24,7 +24,7 @@ var domain: PHASENumericPair { get }
 @property (nonatomic, strong, readonly) PHASENumericPair * domain;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an ordered pair that describes input values along the *x* axis for which the [`evaluate(x:)`](./evaluate%28x%29.md) function can produce a non-zero output. The first number in the pair is the minimum input value, and the second number in the pair is the maximum input value.
 

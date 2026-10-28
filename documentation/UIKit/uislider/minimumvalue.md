@@ -22,7 +22,7 @@ var minimumValue: Float { get set }
 @property (nonatomic) float minimumValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the value that the leading end of the slider represents. If you change the value of this property, and the current value of the slider is below the new minimum, the slider adjusts the [`value`](./value.md) property to match the new minimum. If you set the minimum value to a value larger than the maximum, the slider updates the maximum value to equal the minimum.
 

@@ -20,7 +20,7 @@ protocol NSStandardKeyBindingResponding : NSObjectProtocol
 @protocol NSStandardKeyBindingResponding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 [`NSResponder`](./nsresponder.md) doesn’t implement any of these methods. [`NSTextView`](./nstextview.md) implements a subset of them related to text editing. Your responder subclasses can implement any methods that make sense. You can create your own methods as well, but use these if the concepts map to functionality in your app. If your responder subclass is a view that’s key and uses key binding, and the user types a key sequence bound to a command not implemented in your class, nothing happens by default.
 

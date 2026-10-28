@@ -19,7 +19,7 @@ The conditions under which the system may purge specialized assets.
 var purgeConditions: AIModelCache.Policy.PurgeConditions
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The system always purges assets on OS update regardless of this value.
 

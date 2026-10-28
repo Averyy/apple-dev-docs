@@ -21,7 +21,7 @@ var allowsActivityContinuation: Bool { get set }
 @property (nonatomic, assign) BOOL allowsActivityContinuation;
 ```
 
-#### Discussion
+## Discussion
 
 Handoff lets users start an activity on one device and seamlessly resume the activity on another. Users control whether a device participates in Handoff by turning the feature on or off in the Settings app (General > AirPlay & Handoff > Handoff). An assessment disables this feature by default, but you can allow users undergoing an assessment to continue to use Handoff by setting [`allowsActivityContinuation`](./allowsactivitycontinuation.md) to `true`.
 

@@ -23,11 +23,11 @@ func attributedString(for textElement: NSTextElement) -> NSAttributedString?
 - (NSAttributedString *) attributedStringForTextElement:(NSTextElement *) textElement;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSAttributedString`](../../Foundation/nsattributedstring.md), or `nil`.
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the method can’t map `textElement` to an [`NSAttributedString`](../../Foundation/nsattributedstring.md).
 

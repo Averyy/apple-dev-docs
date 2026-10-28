@@ -19,7 +19,7 @@ var headers: [String : [String]]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,NSArray<NSString *> *> * headers;
 ```
 
-#### Discussion
+## Discussion
 
 If MailKit hasn’t downloaded the full message, this dictionary may only contain a subset of the message’s headers.
 

@@ -19,7 +19,7 @@ class TVCardView
 @interface TVCardView : TVLockupView
 ```
 
-#### Overview
+## Overview
 
 A `TVCardView` object is a specialized version of [`TVLockupView`](./tvlockupview.md) that presents an arbitrarily composed view hierarchy in a floating content view. You add custom subviews to the [`contentView`](./tvlockupview/contentview.md) property, and the subviews act as a single unit in regard to selection and motion effects. You typically use a TVCardView to display ratings and reviews for a media item. The following figure shows a rating card that consists of two label views (the rating and related information) and an image view (the stars).
 

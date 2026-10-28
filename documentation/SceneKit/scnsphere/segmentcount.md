@@ -25,7 +25,7 @@ var segmentCount: Int { get set }
 @property (nonatomic) NSInteger segmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the sphere’s [`isGeodesic`](./isgeodesic.md) property is [`false`](../../Swift/false.md), its segment count determines the number of subdivisions along its polar and azimuth angles, similar to the latitude and longitude system on a globe of the Earth. For example, if the segment count is `24`, the circular horizontal cross section through the center of the sphere has 24 segments around its circumference, and a semicircle reaching from one pole to another through a vertical cross section also has 24 segments.
 

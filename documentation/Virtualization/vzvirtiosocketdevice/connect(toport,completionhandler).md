@@ -15,7 +15,7 @@ Initiates a connection to the specified port of the guest operating system.
 func connect(toPort port: UInt32, completionHandler: @escaping (Result<VZVirtioSocketConnection, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates the connection asynchronously, and executes the completion handler when the results are available. If the guest operating system doesn’t listen for connections to the specifed port, this method does nothing.
 

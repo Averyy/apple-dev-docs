@@ -21,7 +21,7 @@ class func thumbstickStickContents(size: CGSize, controller: TCTouchController) 
 + (TCControlContents *) thumbstickStickContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the thumbstick stick.
 

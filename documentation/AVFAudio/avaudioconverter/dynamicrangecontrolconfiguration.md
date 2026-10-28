@@ -23,7 +23,7 @@ var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration { 
 @property (nonatomic) AVAudioDynamicRangeControlConfiguration dynamicRangeControlConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Encoder Dynamic Range Control (DRC) configuration.
 

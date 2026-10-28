@@ -25,7 +25,7 @@ case tabStops
 kCTParagraphStyleSpecifierTabStops
 ```
 
-#### Discussion
+## Discussion
 
 Type: An array of [`CTTextTab`](../cttexttab.md) objects. Default value: 12 left-aligned tabs, spaced by `28.0` points. Affects: [`CTFramesetter`](../ctframesetter.md) and [`CTTypesetter`](../cttypesetter.md).
 

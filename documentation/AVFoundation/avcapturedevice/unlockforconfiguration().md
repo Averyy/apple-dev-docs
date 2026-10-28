@@ -24,7 +24,7 @@ func unlockForConfiguration()
 - (void) unlockForConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If you’ve previously locked a device by calling [`lockForConfiguration()`](./lockforconfiguration%28%29.md), call this method when your app no longer requires preventing device properties from changing automatically.
 

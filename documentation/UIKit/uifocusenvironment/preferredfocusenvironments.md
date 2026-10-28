@@ -24,7 +24,7 @@ var preferredFocusEnvironments: [any UIFocusEnvironment] { get }
 @property (nonatomic, copy, readonly) NSArray<id<UIFocusEnvironment>> * preferredFocusEnvironments;
 ```
 
-#### Discussion
+## Discussion
 
 The preferred focus environments listed in this property define where to search for the default focused item in an environment, such as when focus updates programmatically. Starting from the target environment, each preferred focus environment is recursively searched in the order it appears in the array until an eligible, focusable item is found. Preferred focus environments can include focusable and nonfocusable items, in addition to nonitem environments. Returning an empty array is equivalent to returning an array containing only `self`.
 

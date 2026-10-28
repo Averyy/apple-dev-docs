@@ -21,7 +21,7 @@ Type of the content carried by this sample buffer
 var contentType: CMSampleBuffer.ContentType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The content type of the sample buffer can not be changed by assigning a different content, even if content is Dynamic.
 

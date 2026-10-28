@@ -19,7 +19,7 @@ class var genericGamma22Gray: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * genericGamma22GrayColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object.
 

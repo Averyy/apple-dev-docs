@@ -26,11 +26,11 @@ optional func shouldEvaluateTrust(for connection: NWTCPConnection) -> Bool
 - (BOOL) shouldEvaluateTrustForConnection:(NWTCPConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to take over the default trust evaluation, in which case the delegate method `evaluateTrustForConnection:peerCertificateChain:completionHandler`: will be called.
 
-#### Discussion
+## Discussion
 
 The caller can implement this optional protocol method to decide whether it wants to take over the default trust evaluation for this connection. If this delegate method is not implemented, the return value will default to YES if  `provideIdentityForConnection:completionHandler:` is implemented.
 

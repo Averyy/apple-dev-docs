@@ -23,7 +23,7 @@ var invalidateEverything: Bool { get }
 @property (nonatomic, readonly) BOOL invalidateEverything;
 ```
 
-#### Discussion
+## Discussion
 
 You do not set this property yourself. The collection view sets it in response to specific types of layout invalidation scenarios. For example, the collection view sets it to [`true`](../../Swift/true.md) when you change the current layout object, change the data source of the collection view, or call the [`reloadData()`](../uicollectionview/reloaddata%28%29.md) method and subsequently request a layout invalidation context.
 

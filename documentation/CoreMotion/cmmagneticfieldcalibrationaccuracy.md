@@ -24,7 +24,7 @@ enum CMMagneticFieldCalibrationAccuracy
 enum CMMagneticFieldCalibrationAccuracy : int;
 ```
 
-#### Overview
+## Overview
 
 One of the `enum` constants of the `CMMagneticFieldCalibrationAccuracy` type is the value of the accuracy field of the [`CMCalibratedMagneticField`](./cmcalibratedmagneticfield.md) structure returned from the [`magneticField`](./cmdevicemotion/magneticfield.md) property.
 

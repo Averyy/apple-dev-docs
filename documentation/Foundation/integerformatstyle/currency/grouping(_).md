@@ -21,7 +21,7 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: IntegerFormatStyle<Value>.Currency.Configuration.Grouping) -> IntegerFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 An integer currency format style modified to use the specified grouping.
 

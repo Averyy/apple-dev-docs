@@ -24,7 +24,7 @@ var topLayoutGuide: any UILayoutSupport { get }
 @property (nonatomic, strong, readonly) id<UILayoutSupport> topLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 The [`topLayoutGuide`](./toplayoutguide.md) property comes into play when a view controller is frontmost onscreen. It indicates the highest vertical extent for content that you don’t want to appear behind a translucent or transparent UIKit bar (such as a status or navigation bar). This property implements the [`UILayoutSupport`](../uilayoutsupport.md) protocol and you can employ it as a constraint item when using the [`NSLayoutConstraint`](../nslayoutconstraint.md) class.
 

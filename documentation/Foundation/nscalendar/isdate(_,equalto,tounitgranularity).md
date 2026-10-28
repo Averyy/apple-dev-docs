@@ -25,7 +25,7 @@ func isDate(_ date1: Date, equalTo date2: Date, toUnitGranularity unit: NSCalend
 - (BOOL) isDate:(NSDate *) date1 equalToDate:(NSDate *) date2 toUnitGranularity:(NSCalendarUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if both dates have equal date component for all units greater than or equal to the given unit, otherwise [`false`](../../Swift/false.md).
 

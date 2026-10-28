@@ -24,7 +24,7 @@ class MPSGraphExecutable
 @interface MPSGraphExecutable : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 An `MPSGraphExecutable` is a compiled graph for specific feeds for specific target tensors and target operations.
 

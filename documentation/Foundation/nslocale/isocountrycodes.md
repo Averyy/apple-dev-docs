@@ -25,7 +25,7 @@ class var isoCountryCodes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * ISOCountryCodes;
 ```
 
-#### Discussion
+## Discussion
 
 Not all country or region codes have supporting locale data in the system.
 

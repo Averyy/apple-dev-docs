@@ -16,7 +16,7 @@ A Bool where true indicates that the current process’s output audio will be ze
 var isProcessOutputMuted: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 This property does not apply to aggregate devices, just real, physical devices.
 

@@ -20,7 +20,7 @@ var attributeKeys: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * attributeKeys;
 ```
 
-#### Discussion
+## Discussion
 
 `NSObject`’s implementation of `attributeKeys` simply calls `[[self classDescription] attributeKeys]`. To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](../../Foundation/nsclassdescription.md).
 

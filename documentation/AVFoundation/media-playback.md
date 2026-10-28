@@ -5,7 +5,7 @@
 
 Manage the playback of media assets and interstitial content, independent of how you present that content in your interface.
 
-#### Overview
+## Overview
 
 You use a player to manage the playback and timing of a media asset, for example starting and stopping playback, and seeking to a particular time. A player manages the playback of a single media asset at a time. The framework also provides a queue player that queues media assets to play sequentially.
 

@@ -16,7 +16,7 @@ Prevents the display from dimming automatically.
 #define kIOPMAssertionTypePreventUserIdleDisplaySleep
 ```
 
-#### Discussion
+## Discussion
 
 When asserted and set to level [`kIOPMAssertionLevelOn`](./api-1557096-assertion/kiopmassertionlevelon.md), will prevent the display from turning off due to a period of idle user activity. Note that the display may still sleep from other reasons, like a user closing a portable's lid or the machine sleeping. If the display is already off, this assertion does not light up the display. If display needs to be turned on, then consider calling function [`IOPMAssertionDeclareUserActivity`](./api-1557127-iopmassertiondeclareuseractivity.md).
 

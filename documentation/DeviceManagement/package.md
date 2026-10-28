@@ -19,13 +19,13 @@ object Package
 
 - [Installing packages](./installing-packages.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.package` as the declaration type.
 
 This declaration installs a package on a device. Packages can contain apps, fonts, documents, and other items. Apps that a package installs aren’t automatically managed; you can manage them using the [`AppManaged`](./appmanaged.md) declaration.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ This declaration installs a package on a device. Packages can contain apps, font
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration installs a required package.
 

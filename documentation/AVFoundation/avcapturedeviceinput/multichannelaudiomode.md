@@ -23,7 +23,7 @@ var multichannelAudioMode: AVCaptureMultichannelAudioMode { get set }
 @property (nonatomic) AVCaptureMultichannelAudioMode multichannelAudioMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property only takes effect when the system routes audio through the built-in microphone. The system ignores the value when an external microphone is in use.
 

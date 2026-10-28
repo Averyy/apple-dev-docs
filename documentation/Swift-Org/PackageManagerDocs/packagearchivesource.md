@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Create a source archive for the package.
 
-#### Overview
+## Overview
 
 ```
 package archive-source [--package-path=<package-path>]

@@ -19,7 +19,7 @@ var buttonMask: NSEvent.ButtonMask { get }
 @property (readonly) NSEventButtonMask buttonMask;
 ```
 
-#### Discussion
+## Discussion
 
 Use one or more of the button-mask constants described in `Getting Unicode Values` to determine which of the pointing device’s buttons are pressed. This property is valid only for mouse events with a subtype of `NSTabletPointEventSubtype` and for events of type `NSTabletPoint`; otherwise, the property is set to `0`.
 

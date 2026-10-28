@@ -26,11 +26,11 @@ func SecKeyRawSign(_ key: SecKey, _ padding: SecPadding, _ dataToSign: UnsafePoi
 OSStatus SecKeyRawSign(SecKeyRef key, SecPadding padding, const uint8_t *dataToSign, size_t dataToSignLen, uint8_t *sig, size_t *sigLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The behavior this function with [`kSecPaddingNone`](./secpadding/ksecpaddingnone.md) is undefined if the first byte of the data to sign is `0`; there is no way to verify leading zeroes, as they are discarded during the calculation.
 

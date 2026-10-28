@@ -21,7 +21,7 @@ A message the system sends when the extension’s host app moves from the active
 struct WillResignActiveMessage
 ```
 
-#### Overview
+## Overview
 
 Your extension can use this message to adjust the extension’s activity when it becomes inactive. For example, you might use this message to save any unsaved data to prevent it from being lost.
 

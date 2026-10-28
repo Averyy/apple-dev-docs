@@ -21,7 +21,7 @@ init(name: String, role: TCControlLabel.Role)
 - (instancetype) initWithName:(NSString *) name role:(TCControlLabelRole) role;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCControlLabel` instance.
 

@@ -19,11 +19,11 @@ func invokeUndefinedMethod(fromWebScript name: String!, withArguments arguments:
 - (id) invokeUndefinedMethodFromWebScript:(NSString *) name withArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The result of invoking the undefined method.
 
-#### Discussion
+## Discussion
 
 This method is invoked when a script attempts to invoke a method not directly exported to the scripting environment. You should return the result of the invocation, converted appropriately for the scripting environment.
 

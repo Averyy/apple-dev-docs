@@ -23,7 +23,7 @@ var representedElementCategory: UICollectionView.ElementCategory { get }
 @property (nonatomic, readonly) UICollectionElementCategory representedElementCategory;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value in this property to distinguish whether the layout attributes are intended for a cell, supplementary view, or decoration view.
 

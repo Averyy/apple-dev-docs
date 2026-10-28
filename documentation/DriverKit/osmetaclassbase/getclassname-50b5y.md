@@ -18,7 +18,7 @@ Returns the name of the class given an OSObject pointer.
 const char * GetClassName();
 ```
 
-#### Return Value
+## Return Value
 
 C-string class name, valid while the object is retained.
 

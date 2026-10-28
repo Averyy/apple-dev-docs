@@ -18,7 +18,7 @@ var FFERR_INCOMPLETEEFFECT: Int { get }
 #define FFERR_INCOMPLETEEFFECT
 ```
 
-#### Discussion
+## Discussion
 
 The effect could not be downloaded because essential information is missing. For example, no axes have been associated with the effect, or no type-specific information has been created.
 

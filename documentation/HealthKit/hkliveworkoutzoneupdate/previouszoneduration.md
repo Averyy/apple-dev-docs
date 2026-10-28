@@ -19,7 +19,7 @@ A property that contains the zone duration that just completed.
 final var previousZoneDuration: HKWorkoutZoneDuration? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains `nil`, it’s the first zone entry for the workout.
 

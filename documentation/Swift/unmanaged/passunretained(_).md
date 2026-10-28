@@ -21,11 +21,11 @@ Creates an unmanaged reference without performing an unbalanced retain.
 static func passUnretained(_ value: Instance) -> Unmanaged<Instance>
 ```
 
-#### Return Value
+## Return Value
 
 An unmanaged reference to the object passed as `value`.
 
-#### Discussion
+## Discussion
 
 This is useful when passing a reference to an API which Swift does not know the ownership rules for, but you know that the API expects you to pass the object at +0.
 

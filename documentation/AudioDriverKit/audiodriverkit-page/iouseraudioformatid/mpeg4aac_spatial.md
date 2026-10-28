@@ -15,7 +15,7 @@ The MPEG-4 Spatial Audio audio object format.
 MPEG4AAC_Spatial
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

@@ -19,11 +19,11 @@ func toolTip(forSegment segment: Int) -> String?
 - (NSString *) toolTipForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The text of the tooltip.
 
-#### Discussion
+## Discussion
 
 Tooltips are currently not displayed.
 

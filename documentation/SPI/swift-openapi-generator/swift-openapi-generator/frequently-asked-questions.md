@@ -10,25 +10,25 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Review some frequently asked questions below.
 
-#### Overview
+## Overview
 
 This article includes some commonly asked questions and answers.
 
-##### How do I __ in OpenAPI?
+### How do I __ in OpenAPI?
 
 - Review the official [OpenAPI specification](https://spec.openapis.org/oas/v3.1.0).
 - Check out the [OpenAPI Guide](https://swagger.io/docs/specification/about/).
 - Learn how to achieve common patterns with OpenAPI and Swift OpenAPI Generator at [Useful OpenAPI patterns](./useful-openapi-patterns.md).
 
-##### Why doesn’t the generator have feature __?
+### Why doesn’t the generator have feature __?
 
 Check out [Project scope and goals](./project-scope-and-goals.md).
 
-##### What OpenAPI features does the generator support?
+### What OpenAPI features does the generator support?
 
 Check out [Supported OpenAPI features](./supported-openapi-features.md).
 
-##### Which underlying HTTP library does the generated code use?
+### Which underlying HTTP library does the generated code use?
 
 Swift OpenAPI Generator is not tied to any particular HTTP library. Instead, the generated code utilizes a general protocol called [ClientTransport](https://swiftpackageindex.com/apple/swift-openapi-runtime/documentation/openapiruntime/clienttransport) for client code, and [ServerTransport](https://swiftpackageindex.com/apple/swift-openapi-runtime/documentation/openapiruntime/servertransport) for server code.
 
@@ -38,7 +38,7 @@ Swift OpenAPI Generator lists some transport implementations in its [README](htt
 
 To learn more, check out [Getting started](./checking-out-an-example-project.md#Getting-started), which shows how to use some of the transport implementations.
 
-##### How do I customize the HTTP requests and responses?
+### How do I customize the HTTP requests and responses?
 
 If the code generated from the OpenAPI document, combined with the concrete transport implementation, doesn’t behave exactly as you need, you can provide a *middleware* type that can inspect and modify the HTTP requests and responses that are passed between the generated code and the transport.
 
@@ -46,7 +46,7 @@ Just like with transports, there are two types, [ClientMiddleware](https://swift
 
 To learn more, check out [Middleware](./checking-out-an-example-project.md#Middleware) examples.
 
-##### Do I commit the generated code to my source repository?
+### Do I commit the generated code to my source repository?
 
 It depends on the way you’re integrating Swift OpenAPI Generator.
 
@@ -56,7 +56,7 @@ However, if you require to check your generated code into git, you can use the c
 
 For details, check out [Manually invoking the generator CLI](./manually-invoking-the-generator-cli.md).
 
-##### Does regenerating code from an updated OpenAPI document overwrite any of my code?
+### Does regenerating code from an updated OpenAPI document overwrite any of my code?
 
 Swift OpenAPI Generator was designed for a workflow called spec-driven development (check out [Practicing spec-driven API development](./practicing-spec-driven-api-development.md) for details). That means that it is expected that the OpenAPI document changes frequently, and no developer-written code is overwritten when the Swift code is regenerated from the OpenAPI document.
 
@@ -66,7 +66,7 @@ When run in `server` mode, the generator emits the same `APIProtocol` protocol, 
 
 To learn about the different ways of integrating Swift OpenAPI Generator, check out [Manually invoking the generator CLI](./manually-invoking-the-generator-cli.md).
 
-##### How do I fix the build error “Decl has a package access level but no -package-name was passed”?
+### How do I fix the build error “Decl has a package access level but no -package-name was passed”?
 
 The build error `Decl has a package access level but no -package-name was passed` appears when the package or project is not configured with the [package access level](https://github.com/apple/swift-evolution/blob/main/proposals/0386-package-access-modifier.md) feature yet.
 
@@ -80,7 +80,7 @@ Alternatively, change the access modifier of the generated code to either `inter
 
 For details, check out [Configuring the generator](./configuring-the-generator.md).
 
-##### How do I enable the build plugin in Xcode and Xcode Cloud?
+### How do I enable the build plugin in Xcode and Xcode Cloud?
 
 By default, you must explicitly enable build plugins before they are allowed to run.
 

@@ -33,7 +33,7 @@ var alias: String { get }
 @property (atomic, copy, readonly, nonnull) NSString * alias;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit uses the player’s alias when a player isn’t a friend of the local player. Typically, you never display the alias string directly in your user interface. Instead use the [`displayName`](./displayname.md) property.
 

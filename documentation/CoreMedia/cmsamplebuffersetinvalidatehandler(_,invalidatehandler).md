@@ -25,7 +25,7 @@ func CMSampleBufferSetInvalidateHandler(_ sbuf: CMSampleBuffer, invalidateHandle
 extern OSStatus CMSampleBufferSetInvalidateHandler(CMSampleBufferRef sbuf, CMSampleBufferInvalidateHandler invalidateHandler);
 ```
 
-#### Discussion
+## Discussion
 
 A sample buffer can only have one invalidation callback. The invalidation callback isn’t called during ordinary sample buffer finalization.
 

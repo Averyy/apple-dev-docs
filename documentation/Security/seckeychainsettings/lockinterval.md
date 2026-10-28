@@ -20,7 +20,7 @@ var lockInterval: UInt32
 UInt32 lockInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If you set [`useLockInterval`](./uselockinterval.md) to [`false`](../../Swift/false.md), set [`lockInterval`](./lockinterval.md) to `INT_MAX` to indicate that the keychain never locks.
 

@@ -21,7 +21,7 @@ class var headerColor: NSColor { get }
 @property (class, strong, readonly) NSColor * headerColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used as the background for header cells in table and outline views. For more information, see [`NSColor`](../nscolor.md).
 

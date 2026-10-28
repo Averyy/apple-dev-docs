@@ -25,7 +25,7 @@ struct EntityQuery
 - [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
 - [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 
-#### Overview
+## Overview
 
 Use entity queries to iterate through all entities in a RealityKit scene that meet certain criteria. To specify which entities to retrieve, use a [`QueryPredicate`](./querypredicate.md).
 

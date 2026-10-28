@@ -25,7 +25,7 @@ func read(from url: URL, options: FileWrapper.ReadingOptions = []) throws
 - (BOOL) readFromURL:(NSURL *) url options:(NSFileWrapperReadingOptions) options error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 When reading a directory, children are added and removed as necessary to match the file system.
 

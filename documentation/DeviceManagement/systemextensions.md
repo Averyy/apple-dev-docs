@@ -15,7 +15,7 @@ The payload that configures system extensions.
 object SystemExtensions
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.system-extension-policy` as the payload type.
 
@@ -26,7 +26,7 @@ When there are multiple installed profiles, the keys combine as follows:
 
 Beginning in macOS 11.3, installing or removing this payload can change the state of system extensions on the computer. If a containing application activates a system extension, and the system extension is in a pending state, installing a payload that allows the extension completes the activation process. If a system extension is active, removing a payload that allows the extension deactivates that extension.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

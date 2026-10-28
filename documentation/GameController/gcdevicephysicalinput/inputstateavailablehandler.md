@@ -29,7 +29,7 @@ var inputStateAvailableHandler: ((any GCDevicePhysicalInput) -> Void)? { get set
 
 - [Handling input events](../handling-input-events.md)
 
-#### Discussion
+## Discussion
 
 Set this property to track every element value change, not just the current value. When Game Controller invokes the handler, invoke the [`nextInputState()`](./nextinputstate%28%29.md) method repeatedly to get all the buffered changes until the queue is empty.
 

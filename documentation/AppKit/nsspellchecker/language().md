@@ -19,11 +19,11 @@ func language() -> String
 - (NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The current spell checking language, as a string.
 
-#### Discussion
+## Discussion
 
 The result string specifies the language using the language and regional designations described in [`NSLocale`](../../Foundation/nslocale.md).
 

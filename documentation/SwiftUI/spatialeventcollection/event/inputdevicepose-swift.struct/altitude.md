@@ -20,7 +20,7 @@ The altitude angle.
 var altitude: Angle
 ```
 
-#### Discussion
+## Discussion
 
 An angle of zero indicates that the device is parallel to the content, while 90 degrees indicates that it is normal to the content surface.
 

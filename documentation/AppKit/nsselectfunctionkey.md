@@ -19,7 +19,7 @@ var NSSelectFunctionKey: Int { get }
 NSSelectFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

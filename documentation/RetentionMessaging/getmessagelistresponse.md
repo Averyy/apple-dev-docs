@@ -15,7 +15,7 @@ A response that contains status information for all messages.
 object GetMessageListResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Message List`](./get-message-list.md) endpoint returns this response.
 

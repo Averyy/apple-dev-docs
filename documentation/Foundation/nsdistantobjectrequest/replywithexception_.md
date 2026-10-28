@@ -16,7 +16,7 @@ Sends a reply back to the remote object making the distant object request.
 - (void) replyWithException:(NSException *) exception;
 ```
 
-#### Discussion
+## Discussion
 
 If `exception` is `nil`, the return value of the receiver’s invocation is sent; otherwise, `exception` is sent and is automatically raised when it arrives at its destination.
 

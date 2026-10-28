@@ -11,7 +11,7 @@ IOEthernetController class initializer.
 static void initialize();
 ```
 
-#### Overview
+## Overview
 
 Creates global OSSymbol objects that are used as keys.
 

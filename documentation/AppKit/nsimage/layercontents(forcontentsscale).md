@@ -19,11 +19,11 @@ func layerContents(forContentsScale layerContentsScale: CGFloat) -> Any
 - (id) layerContentsForContentsScale:(CGFloat) layerContentsScale;
 ```
 
-#### Return Value
+## Return Value
 
 A object that you can assign to the [`contents`](../../QuartzCore/calayer/contents.md) property of a [`CALayer`](../../QuartzCore/calayer.md) object. This object contains the image data from the current image optimized for the specified scale factor.
 
-#### Discussion
+## Discussion
 
 Use this method in situations where you want to use the image as the contents of a layer. This method provides the image data wrapped in an object that correctly respects all of the possible content gravities supported by the layer. Use of the returned object as the layer’s contents is recommended over the use of the `NSImage` object itself.
 

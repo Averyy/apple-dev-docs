@@ -24,7 +24,7 @@ let HMCharacteristicTypeFilterChangeIndication: String
 extern NSString * const HMCharacteristicTypeFilterChangeIndication;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueFilterChange`](./hmcharacteristicvaluefilterchange.md) enumeration.
 

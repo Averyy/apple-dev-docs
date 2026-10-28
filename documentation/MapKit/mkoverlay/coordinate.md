@@ -26,7 +26,7 @@ var coordinate: CLLocationCoordinate2D { get }
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 This point is typically set to the center point of the map’s bounding rectangle. The overlay uses it as the anchor point for any callouts that display for the annotation.
 

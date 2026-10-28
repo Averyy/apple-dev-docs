@@ -28,7 +28,7 @@ func removeAttachment(_ attachment: HKAttachment, from object: HKObject) async t
 - (void) removeAttachment:(HKAttachment *) attachment fromObject:(HKObject *) object completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove an attachment from an object saved in the HealthKit store.
 

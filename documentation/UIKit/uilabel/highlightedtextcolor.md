@@ -23,7 +23,7 @@ var highlightedTextColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * highlightedTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses that use labels to implement a type of text button can use the value in this property when drawing the pressed state for the button. The label uses this value to display text whenever the [`isHighlighted`](./ishighlighted.md) property is [`true`](../../Swift/true.md).
 

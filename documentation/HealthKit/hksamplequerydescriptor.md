@@ -25,7 +25,7 @@ struct HKSampleQueryDescriptor<Sample> where Sample : HKSample
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 - [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 
-#### Overview
+## Overview
 
 Use [`HKSampleQueryDescriptor`](./hksamplequerydescriptor.md) to run a general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
 

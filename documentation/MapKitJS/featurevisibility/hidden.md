@@ -15,7 +15,7 @@ A constant indicating that the feature is always hidden.
 readonly Hidden: "hidden";
 ```
 
-#### Discussion
+## Discussion
 
 Use `mapkit.FeatureVisibility.Hidden` to hide adaptive map controls, such as the compass and scale. You can show or hide controls that aren’t adaptive by setting map properties to `true` or `false`, respectively.
 

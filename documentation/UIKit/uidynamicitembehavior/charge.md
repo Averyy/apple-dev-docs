@@ -23,7 +23,7 @@ var charge: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat charge;
 ```
 
-#### Discussion
+## Discussion
 
 Charge determines the degree to which the item interacts with electric and magnetic fields. The value in this property has no units, so it is up to you to set the charge and field strengths to appropriate values for your interface. The default value of this property is `0.0`.
 

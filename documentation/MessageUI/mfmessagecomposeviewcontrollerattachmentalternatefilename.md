@@ -22,7 +22,7 @@ let MFMessageComposeViewControllerAttachmentAlternateFilename: String
 extern NSString * const MFMessageComposeViewControllerAttachmentAlternateFilename;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant with the [`attachments`](./mfmessagecomposeviewcontroller/attachments.md) property to retrieve the optional, more descriptive name for a message attachment.
 

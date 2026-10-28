@@ -25,7 +25,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 Closing the stream terminates the flow of bytes and releases system resources that were reserved for the stream when it was opened. If the stream has been scheduled on a run loop, closing the stream implicitly removes the stream from the run loop. A stream that is closed can still be queried for its properties.
 

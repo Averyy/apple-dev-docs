@@ -25,11 +25,11 @@ func vImageInterpolatedLookupTable_PlanarF(_ src: UnsafePointer<vImage_Buffer>, 
 vImage_Error vImageInterpolatedLookupTable_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_F *table, vImagePixelCount tableEntries, float maxFloat, float minFloat, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Provide this function with a lookup table with any number of values, but with a minimum value of `minFloat` and a maximum value of `maxFloat`. The function generates lookup values by linearly interpolating between the supplied values. The per-pixel conversion calculation is equivalent to the following:
 

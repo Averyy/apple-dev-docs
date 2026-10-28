@@ -25,11 +25,11 @@ func vImageConvert_Planar8To16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Uns
 vImage_Error vImageConvert_Planar8To16U(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

@@ -21,11 +21,11 @@ Returns the range of the next weekend via two inout parameters. The weekend star
 func nextWeekend(startingAfter date: Date, start: inout Date, interval: inout TimeInterval, direction: Calendar.SearchDirection = .forward) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `false` if the calendar and locale do not have the concept of a weekend, otherwise `true`.
 
-#### Discussion
+## Discussion
 
 If `direction` is `.backward`, then finds the previous weekend range strictly before the given date.
 

@@ -21,7 +21,7 @@ Tracks the location of the provided range throughout the mutation closure, updat
 mutating func transform<E>(updating range: inout Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 If updating the provided range is not possible (tracking failed) then this function will fatal error. Use the `Optional`-returning variants to provide custom fallback behavior.
 

@@ -23,7 +23,7 @@ var kCTFontTableDSIG: Int { get }
 kCTFontTableDSIG
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for a digital signature.
 

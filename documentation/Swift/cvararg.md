@@ -25,7 +25,7 @@ protocol CVarArg
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Overview
+## Overview
 
 You use this protocol to present a native Swift interface to a C “varargs” API. For example, a program can import a C API like the one defined here:
 

@@ -19,7 +19,7 @@ The mode set while tracking in controls takes place.
 static let tracking: RunLoop.Mode
 ```
 
-#### Discussion
+## Discussion
 
 You can use this mode to add timers that fire during tracking.
 

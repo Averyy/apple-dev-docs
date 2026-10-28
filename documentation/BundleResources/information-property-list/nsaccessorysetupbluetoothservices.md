@@ -15,7 +15,7 @@ An array of strings that represent the hexadecimal values of Bluetooth SIG-defin
 - **Name**: `NSAccessorySetupBluetoothServices` (AccessorySetupKit - Bluetooth Services)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Each value is a 16- or 128-bit UUID that represents either a Bluetooth Special Interest Group (SIG)-registered service or a custom service.
 

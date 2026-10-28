@@ -23,7 +23,7 @@ func currentPageIndicatorImage(forPage page: Int) -> UIImage?
 - (UIImage *) currentPageIndicatorImageForPage:(NSInteger) page;
 ```
 
-#### Return Value
+## Return Value
 
 The override image, or `nil` if you haven’t overidden the image for the specified page number.
 

@@ -25,7 +25,7 @@ var BNNSOptimizerRegularizationL2: BNNSOptimizerRegularizationFunction { get }
 BNNSOptimizerRegularizationL2
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

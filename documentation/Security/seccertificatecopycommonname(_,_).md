@@ -25,7 +25,7 @@ func SecCertificateCopyCommonName(_ certificate: SecCertificate, _ commonName: U
 OSStatus SecCertificateCopyCommonName(SecCertificateRef certificate, CFStringRef*commonName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

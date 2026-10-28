@@ -19,7 +19,7 @@ var rangeForUserCompletion: NSRange { get }
 @property (readonly) NSRange rangeForUserCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 This value is intended to be used for the range argument in the text completion methods such as [`completions(forPartialWordRange:indexOfSelectedItem:)`](./completions%28forpartialwordrange,indexofselecteditem%29.md).
 

@@ -24,7 +24,7 @@ var stringRepresentation: String { get }
 @property (readonly) NSString * stringRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The string representation always has four components: red, green, blue, and alpha.
 

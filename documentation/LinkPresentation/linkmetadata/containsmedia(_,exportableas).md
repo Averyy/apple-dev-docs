@@ -22,11 +22,11 @@ nonisolated
 func containsMedia(_ attachment: LinkMetadata.Attachment, exportableAs type: (some Transferable).Type) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the metadata contains the specified attachment and the attachment’s content type is compatible with the media type.
 
-#### Discussion
+## Discussion
 
 Use this function to immediately determine if metadata has some specific kind of media that can be coerced into a given type:
 

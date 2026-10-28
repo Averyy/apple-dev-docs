@@ -19,7 +19,7 @@ let AVVideoEncoderSpecificationKey: String
 extern NSString * const AVVideoEncoderSpecificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a dictionary containing `kVTVideoEncoderSpecification_*` keys specified in the VideoToolbox framework. This key should be specified at the top level of an `AVVideoSettings` dictionary.
 

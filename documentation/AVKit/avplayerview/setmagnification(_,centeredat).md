@@ -19,7 +19,7 @@ func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
 - (void) setMagnification:(CGFloat) magnification centeredAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 The supported magnification range is `1.0` to `64.0`. The system zooms using nearest neighbor interpolation after it scales the content past a certain factor.
 

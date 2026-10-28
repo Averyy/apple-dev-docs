@@ -5,7 +5,7 @@
 
 Set a transparent background color to show the content of the views below.
 
-#### Overview
+## Overview
 
 To overlay content rendered with SpriteKit on top of another view, follow these steps:
 

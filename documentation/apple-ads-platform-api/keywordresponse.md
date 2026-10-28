@@ -15,13 +15,13 @@ The response object for a Keyword operation.
 object KeywordResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordResponse` object is the single-item response envelope returned by create and update keyword operations.
 
 Check the `error` field to detect per-item failures, especially in bulk contexts where some items may succeed. Others can still fail without blocking the successful ones.
 
-##### Example
+### Example
 
 ```json
 {

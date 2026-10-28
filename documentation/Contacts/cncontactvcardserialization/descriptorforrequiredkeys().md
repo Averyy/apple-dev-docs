@@ -24,7 +24,7 @@ class func descriptorForRequiredKeys() -> any CNKeyDescriptor
 + (id<CNKeyDescriptor>) descriptorForRequiredKeys;
 ```
 
-#### Return Value
+## Return Value
 
 A key descriptor to be used in the [`keysToFetch`](../cncontactfetchrequest/keystofetch.md) array when fetching the contacts.
 

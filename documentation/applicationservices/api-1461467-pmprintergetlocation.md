@@ -19,11 +19,11 @@ func PMPrinterGetLocation(_ printer: PMPrinter) -> Unmanaged<CFString>?
 CFStringRef PMPrinterGetLocation(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 The location of the specified printer. You should not release the string without first retaining it. If the printer is not valid, this function returns `NULL`.
 
-#### Discussion
+## Discussion
 
 The location of a printer is specified when a user creates a print queue for the printer. In some cases, the printing system automatically determines the location. For example, the location may be set to “Local Zone”. The user creating the print queue can also set the location.
 

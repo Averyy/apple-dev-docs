@@ -19,7 +19,7 @@ func drawPageBorder(with borderSize: NSSize)
 - (void) drawPageBorderWithSize:(NSSize) borderSize;
 ```
 
-#### Discussion
+## Discussion
 
 The marks can be such things as alignment marks or a virtual sheet border of size `borderSize`. The default implementation doesn’t draw anything.
 

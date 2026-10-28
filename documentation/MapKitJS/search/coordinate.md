@@ -16,7 +16,7 @@ get coordinate(): Coordinate | null;
 set coordinate(value: CoordinateData | null);
 ```
 
-#### Discussion
+## Discussion
 
 This property supplies coordinates as a reference for a search, for example the coordinates of San Francisco City Hall in San Francisco, CA.
 

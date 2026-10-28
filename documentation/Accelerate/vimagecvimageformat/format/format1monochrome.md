@@ -21,7 +21,7 @@ A 1-bit indexed pixel format.
 case format1Monochrome
 ```
 
-#### Discussion
+## Discussion
 
 This pixel format supports color spaces that are either [`CGColorSpaceModel.monochrome`](../../../CoreGraphics/cgcolorspacemodel/monochrome.md) or [`CGColorSpaceModel.indexed`](../../../CoreGraphics/cgcolorspacemodel/indexed.md).
 

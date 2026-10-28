@@ -12,11 +12,11 @@ UInt8 GetDataTransferDirection (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 The data transfer direction (e.g. kSCSIDataTransfer_NoDataTransfer).
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the data transfer direction associated with the specified request.
 

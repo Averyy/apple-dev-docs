@@ -24,11 +24,11 @@ func VTDecompressionSessionWaitForAsynchronousFrames(_ session: VTDecompressionS
 extern OSStatus VTDecompressionSessionWaitForAsynchronousFrames(VTDecompressionSessionRef session);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 This function automatically calls [`VTDecompressionSessionFinishDelayedFrames(_:)`](./vtdecompressionsessionfinishdelayedframes%28_%29.md),  so clients don’t have to call both.
 

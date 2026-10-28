@@ -16,7 +16,7 @@ Resumes a previously paused session.
 final func resume() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 

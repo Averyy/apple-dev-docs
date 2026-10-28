@@ -25,7 +25,7 @@ var delegate: (any URLSessionDelegate)? { get }
 @property (retain, readonly, nullable) id<NSURLSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate object is responsible for handling authentication challenges, for making caching decisions, and for handling other session-related events. The session object keeps a strong reference to this delegate until your app exits or explicitly invalidates the session. If you do not invalidate the session, your app leaks memory until it exits.
 

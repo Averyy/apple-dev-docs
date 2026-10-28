@@ -19,7 +19,7 @@ var automaticallyReconfiguresDisplay: Bool { get set }
 @property BOOL automaticallyReconfiguresDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to automatically resize or reconfigure this graphics display when the view properties update. For example, resizing the display when the view has a live resize operation. When enabled, the graphics display automatically reconfigures to match the host display environment.
 

@@ -20,7 +20,7 @@ Returns a load request that creates a model entity by asynchronously loading it 
 @preconcurrency static func loadModelAsync(contentsOf url: URL, withName resourceName: String? = nil) -> LoadRequest<ModelEntity>
 ```
 
-#### Discussion
+## Discussion
 
 For more information on loading entities, see [Loading entities from a file](../loading-entities-from-a-file.md).
 

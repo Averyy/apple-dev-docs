@@ -19,7 +19,7 @@ object InvalidAccountTenureError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For more information about `accountTenure` values in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`accountTenure`](./accounttenure.md).
 

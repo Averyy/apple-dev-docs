@@ -19,7 +19,7 @@ class NSRuleEditor
 @interface NSRuleEditor : NSControl
 ```
 
-#### Overview
+## Overview
 
 A rule editor lets the user visually create and configure a list of options that are expressed as a predicate. (For more information, see [`NSPredicate`](../Foundation/nspredicate.md).) Each row displayed by the rule editor represents a particular path down a tree of choices. The rule editor’s delegate provides the tree of choices to be displayed. The rule editor presents those choices to the user as a row of popup buttons, static text fields, and custom views.
 

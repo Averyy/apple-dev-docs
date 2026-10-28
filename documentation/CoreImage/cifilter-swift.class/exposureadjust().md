@@ -24,11 +24,11 @@ class func exposureAdjust() -> any CIFilter & CIExposureAdjust
 + (CIFilter<CIExposureAdjust> *) exposureAdjustFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the exposure-adjust filter to an image. The effect uses multiplication of color values to simulate the change of exposure within the photo.
 

@@ -25,7 +25,7 @@ func CTGlyphInfoGetGlyphName(_ glyphInfo: CTGlyphInfo) -> CFString?
 extern CFStringRefCTGlyphInfoGetGlyphName(CTGlyphInfoRef glyphInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A glyph name, if the glyph info object was created with a name; otherwise, `NULL`.
 

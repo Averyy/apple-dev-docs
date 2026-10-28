@@ -27,7 +27,7 @@ class ENExposureConfiguration
 
 - [Supporting Exposure Notifications in iOS 12.5](./supporting-exposure-notifications-in-ios-12-5.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later.
 
@@ -57,7 +57,7 @@ The weighted report type assigns priority to the method of diagnosis. Assign val
 
 In addition to setting the weights, you can perform additional filtering by setting [`daysSinceLastExposureThreshold`](./enexposureconfiguration/dayssincelastexposurethreshold.md) to limit the number of days to consider when calculating the risk level.
 
-##### Calculating an Example Exposure Risk Value
+### Calculating an Example Exposure Risk Value
 
 The following diagrams illustrate calculating an ERV using a real-world scenario.
 

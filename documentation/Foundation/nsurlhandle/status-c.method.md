@@ -17,7 +17,7 @@ Returns the status of the receiver.
 - (NSURLHandleStatus) status;
 ```
 
-#### Return Value
+## Return Value
 
 The status of the receiver. Possible return statuses are described in Resource Property Keys.
 

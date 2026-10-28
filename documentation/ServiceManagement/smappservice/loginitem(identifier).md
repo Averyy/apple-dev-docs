@@ -20,11 +20,11 @@ class func loginItem(identifier: String) -> Self
 + (instancetype) loginItemServiceWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An `SMService` object.
 
-#### Discussion
+## Discussion
 
 The property list name must correspond to a property list in the calling app’s `Contents/Library/LoginItems` directory
 

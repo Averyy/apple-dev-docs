@@ -21,7 +21,7 @@ var wantsExtendedDynamicRangeOpenGLSurface: Bool { get set }
 @property BOOL wantsExtendedDynamicRangeOpenGLSurface;
 ```
 
-#### Discussion
+## Discussion
 
 If any view on the screen has this enabled, the screen which the OpenGL surface is on may have its `maximumExtendedDynamicRangeColorComponentValue` value increased. When composited by the Window Server, color values rendered by this OpenGL surface will be clamped to the screen’s `maximumExtendedDynamicRangeColorComponentValue` value rather than `1.0`.
 

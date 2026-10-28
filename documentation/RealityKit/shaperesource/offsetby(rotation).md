@@ -21,7 +21,7 @@ Creates a new shape resource by applying a rotation.
 @preconcurrency func offsetBy(rotation: simd_quatf) -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The transformed resource.
 

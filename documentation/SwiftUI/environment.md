@@ -28,7 +28,7 @@ A property wrapper that reads a value from a view’s environment.
 - [Managing search interface activation](./managing-search-interface-activation.md)
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 Use the `Environment` property wrapper to read a value stored in a view’s environment. Indicate the value to read using an [`EnvironmentValues`](./environmentvalues.md) key path in the property declaration. For example, you can create a property that reads the color scheme of the current view using the key path of the [`colorScheme`](./environmentvalues/colorscheme.md) property:
 
@@ -52,7 +52,7 @@ You can use this property wrapper to read — but not set — an environment val
 
 For the complete list of environment values SwiftUI provides, see the properties of the [`EnvironmentValues`](./environmentvalues.md) structure. For information about creating custom environment values, see the [`Entry()`](./entry%28%29.md) macro.
 
-##### Get an observable object
+### Get an observable object
 
 You can also use `Environment` to get an observable object from a view’s environment. The observable object must conform to the [`Observable`](../Observation/observable.md) protocol, and your app must set the object in the environment using the object itself or a key path.
 
@@ -101,7 +101,7 @@ In cases where there is no guarantee that an object is in the environment, retri
 @Environment(Library.self) private var library: Library?
 ```
 
-##### Get an observable object using a key path
+### Get an observable object using a key path
 
 To set the object with a key path, use the [`environment(_:_:)`](./view/environment%28_,_%29.md) modifier:
 

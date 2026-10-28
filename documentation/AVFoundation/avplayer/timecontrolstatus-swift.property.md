@@ -31,7 +31,7 @@ var timeControlStatus: AVPlayer.TimeControlStatus { get }
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 - [Observing playback state in SwiftUI](../observing-playback-state-in-swiftui.md)
 
-#### Discussion
+## Discussion
 
 When the value of [`automaticallyWaitsToMinimizeStalling`](./automaticallywaitstominimizestalling.md) is [`true`](../../Swift/true.md), the player waits until your app resumes playback.
 

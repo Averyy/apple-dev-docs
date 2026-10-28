@@ -22,11 +22,11 @@ var sample: SampleType { get }
 @property (copy, readonly) SampleType sample;
 ```
 
-#### Discussion
+## Discussion
 
 The framework expects the app to know the result type based on the reader’s sensor.
 
-##### Sample types
+### Sample types
 
 This property’s type is a superclass from which the framework derives discrete sample types. Depending on the sensor associated with your app’s sensor reader, type cast the fetch result’s [`sample`](./sample.md) to the sensor’s associated sample type. The following list provides the sample type per sensor:
 

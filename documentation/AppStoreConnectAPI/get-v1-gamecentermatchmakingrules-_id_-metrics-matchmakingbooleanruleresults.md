@@ -9,9 +9,9 @@ Get the results of a specific matchmaking rule that returns Boolean values.
 **Availability**:
 - App Store Connect API 3.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

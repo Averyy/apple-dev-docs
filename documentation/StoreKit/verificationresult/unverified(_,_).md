@@ -21,7 +21,7 @@ The associated value failed StoreKit automatic verification checks.
 case unverified(SignedType, VerificationResult<SignedType>.VerificationError)
 ```
 
-#### Discussion
+## Discussion
 
 The first associated value in this case is the App Store-signed value. The second associated value provides the reason why the verification failed.
 

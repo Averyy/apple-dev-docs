@@ -23,7 +23,7 @@ init(repeating repeatedValue: Base.Element, count: Int)
 
 Available when `Base` conforms to `RangeReplaceableCollection`.
 
-#### Discussion
+## Discussion
 
 The following example creates an array initialized with five strings containing the letter *Z*.
 

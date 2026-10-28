@@ -17,7 +17,7 @@ A type that represents the configuration of the mobile document reader.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 Use the reader’s configuration to generate a reader token on your server.
 

@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.DeformationData`](../deformationdata.md) fo
 mutating func takeDeformationAddition(id: USDPlayer.DeformationID) -> USDPlayer.DeformationData?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

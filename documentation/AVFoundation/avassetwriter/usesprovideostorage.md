@@ -23,7 +23,7 @@ var usesProVideoStorage: Bool { get set }
 @property (nonatomic) BOOL usesProVideoStorage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `NO`. See more detailed description of ProVideoStorage in `AVProVideoStorage.h`.
 

@@ -25,7 +25,7 @@ var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float)
 @property (atomic, copy, nullable) void (^valueDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCAxisInput>input, float value);
 ```
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

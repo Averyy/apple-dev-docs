@@ -25,7 +25,7 @@ static func evaluatePolynomial<U>(usingCoefficients coefficients: [Double], with
 
 - [Finding an interpolating polynomial using the Vandermonde method](../finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
 
-#### Discussion
+## Discussion
 
 For example, the following code evaluates the polynomial with the coefficients `[10.0, 20.0, 30.0]` and the variables `[7.0, 5.0]`:
 

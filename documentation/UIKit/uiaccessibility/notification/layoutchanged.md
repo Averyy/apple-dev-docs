@@ -25,7 +25,7 @@ static let layoutChanged: UIAccessibility.Notification
 extern const UIAccessibilityNotifications UIAccessibilityLayoutChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Post this notification using the [`post(notification:argument:)`](../post%28notification,argument%29.md) function. Optionally, include a parameter that contains the accessibility element for VoiceOver to move to after processing the notification.
 

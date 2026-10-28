@@ -23,7 +23,7 @@ case medium
 NSPersonNameComponentsFormatterStyleMedium
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to [`PersonNameComponentsFormatter.Style.default`](./default.md).
 

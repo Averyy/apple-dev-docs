@@ -25,11 +25,11 @@ typealias bnns_graph_free_all_fn_t = (UnsafeMutableRawPointer?, Int) -> Void
 typedef void (*)(void *, unsigned long) bnns_graph_free_all_fn_t;
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 BNNS calls this function on the destruction of a graph context and should free all memory associated to the `user_memory_context`.
 

@@ -24,7 +24,7 @@ static let name: CIContextOption
 extern CIContextOption const kCIContextName;
 ```
 
-#### Discussion
+## Discussion
 
 This name will be used in QuickLook graphs and the output of CI_PRINT_TREE.
 

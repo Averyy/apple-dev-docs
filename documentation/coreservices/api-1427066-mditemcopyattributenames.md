@@ -19,7 +19,7 @@ func MDItemCopyAttributeNames(_ item: MDItem!) -> CFArray!
 CFArrayRef MDItemCopyAttributeNames(MDItemRef item);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray of CFString attribute names, or `NULL` on failure.
 

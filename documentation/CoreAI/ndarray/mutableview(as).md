@@ -23,7 +23,7 @@ mutating func mutableView<T>(as type: T.Type = T.self) -> NDArray.MutableView<T>
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Return Value
+## Return Value
 
 A mutable view of the array’s elements.
 

@@ -14,11 +14,11 @@ Multiplies two 24-bit integer values X and Y and returns the 32-bit integer resu
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 X and Y are 32-bit integers but only the low 24 bits perform the multiplication
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |

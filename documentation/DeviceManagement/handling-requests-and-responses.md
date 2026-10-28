@@ -5,11 +5,11 @@
 
 Write a request for app or book metadata and handle responses from the API.
 
-#### Overview
+## Overview
 
 Learn how to compose a request to get data from the Apps and Books Metadata for Organizations API, and how to interpret responses.
 
-#### Compose a request
+## Compose a request
 
 To compose a request, first specify the root path — `https://api.ent.apple.com/v1` for enterprise organizations, or `https://api.edu.apple.com/v1` for educational organizations.
 
@@ -25,7 +25,7 @@ You must also include the organization’s `sToken` as a cookie named `itvt` to 
 
 Most requests return only the requested resource. For information about how to request related resources at the same time, see [Fetching resources with extended attributes](./fetching-resources-with-extended-attributes.md).
 
-#### Interpret a response
+## Interpret a response
 
 There are three kinds of responses: resource collection, results, and errors.
 

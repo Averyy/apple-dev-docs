@@ -20,11 +20,11 @@ Determines the amount of memory available to the current app.
 extern size_t os_proc_available_memory();
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes the app may allocate before it hits its memory limit. If the calling process isn’t an app, or if the process has already exceeded its memory limit, this function returns `0`.
 
-#### Discussion
+## Discussion
 
 Call this function to determine the amount of memory available to your app. The returned value corresponds to the current memory limit minus the memory footprint of your app at the time of the function call. Your app’s memory footprint consists of the data that you allocated in RAM, and that must stay in RAM (or the equivalent) at all times. Memory limits can change during the app life cycle and don’t necessarily correspond to the amount of physical memory available on the device.
 

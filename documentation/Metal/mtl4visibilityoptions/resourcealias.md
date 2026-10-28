@@ -24,7 +24,7 @@ static var resourceAlias: MTL4VisibilityOptions { get }
 MTL4VisibilityOptionResourceAlias
 ```
 
-#### Discussion
+## Discussion
 
 On some systems this may be the GPU+CPU (system) memory coherence point and on other systems it may be the GPU (device) memory coherence point.
 

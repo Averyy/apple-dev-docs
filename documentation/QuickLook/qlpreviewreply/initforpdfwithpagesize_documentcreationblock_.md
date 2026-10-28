@@ -16,7 +16,7 @@
 - (instancetype) initForPDFWithPageSize:(CGSize) defaultPageSize documentCreationBlock:(PDFDocument * (^)(QLPreviewReply *reply, NSError **error)) documentCreationBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide a preview with a PDFDocument
 

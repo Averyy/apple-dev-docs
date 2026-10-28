@@ -6,19 +6,22 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.tr
 
 # mlx.core.tri
 
-**tri(*n: int*, *m: int | None = None*, *k: int = 0*, *dtype: Dtype | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: An array with ones at and below the given diagonal and zeros elsewhere.
+```python
+tri(n: int, m: int | None = None, k: int = 0, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+An array with ones at and below the given diagonal and zeros elsewhere.
 
-**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows in the output.
-**m** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of cols in the output. Defaults to `None`.
-**k** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The diagonal of the 2-D array. Defaults to `0`.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)*, **optional*) – Data type of the output array. Defaults to `float32`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`.
+**Parameters:**
 
-Returns:
-Array with its lower triangle filled with ones and zeros elsewhere
+- **n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows in the output.
+- **m** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The number of cols in the output. Defaults to `None`.
+- **k** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The diagonal of the 2-D array. Defaults to `0`.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype), *optional*) – Data type of the output array. Defaults to `float32`.
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: Array with its lower triangle filled with ones and zeros elsewhere
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

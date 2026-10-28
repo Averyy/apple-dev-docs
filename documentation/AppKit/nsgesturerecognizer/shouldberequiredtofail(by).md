@@ -19,11 +19,11 @@ func shouldBeRequiredToFail(by otherGestureRecognizer: NSGestureRecognizer) -> B
 - (BOOL) shouldBeRequiredToFailByGestureRecognizer:(NSGestureRecognizer *) otherGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to cause `otherGestureRecognizer` to wait until the current object fails before beginning its own gesture recognition.
 
-#### Discussion
+## Discussion
 
 Using this method lets you define rules that apply to all instances of your custom gesture recognizer class.
 

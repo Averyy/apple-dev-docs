@@ -23,7 +23,7 @@ var compactScrollEdgeAppearance: UIToolbarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIToolbarAppearance * compactScrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a navigation controller contains a toolbar and a scroll view, part of the scroll view’s content appears underneath the toolbar. If the edge of the scrolled content reaches the toolbar, UIKit applies the appearance settings in this property.
 

@@ -16,7 +16,7 @@ The process exited with the given exit code.
 case exitCode(CInt)
 ```
 
-#### Discussion
+## Discussion
 
 The C programming language defines two standard exit codes, `EXIT_SUCCESS` and `EXIT_FAILURE`. Platforms may additionally define their own non-standard exit codes:
 

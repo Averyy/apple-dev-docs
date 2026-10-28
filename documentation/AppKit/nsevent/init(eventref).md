@@ -19,11 +19,11 @@ init?(eventRef: UnsafeRawPointer)
 + (NSEvent *) eventWithEventRef:(const void *) eventRef;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased `NSEvent` object corresponding to `eventRef` or `nil` if `eventRef` cannot be converted into an equivalent `NSEvent` object.
 
-#### Discussion
+## Discussion
 
 This method is valid for all events. The created `NSEvent` object retains the `EventRef` object and is released when the `NSEvent` object is freed.
 

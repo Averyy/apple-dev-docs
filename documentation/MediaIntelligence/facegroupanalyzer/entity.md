@@ -20,7 +20,7 @@ A cluster of faces that belong to the same person.
 struct Entity
 ```
 
-#### Overview
+## Overview
 
 This type represents a distinct person as identified by the framework’s clustering algorithm. After you call [`update(subprogress:)`](./update%28subprogress%29.md), each detected face receives a [`entityID`](./face/entityid.md) that associates it with an entity.
 

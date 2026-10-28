@@ -24,7 +24,7 @@ var linearAttenuation: GLfloat { get set }
 @property (nonatomic, assign) GLfloat linearAttenuation;
 ```
 
-#### Discussion
+## Discussion
 
 The distance attenuation factor is calculated as `1.0 / (k0 + k1 * d + k2 * d * d)`, where `d` represents the distance from the light to the point being lit. The [`linearAttenuation`](./linearattenuation.md) property is represented in this calculation as `k1`. The default value is `0.0`.
 

@@ -21,7 +21,7 @@ An opaque generation identifier which can be compared using `==` to determine if
 var generationIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For URLs which refer to the same file inode, the generation identifier will change when the data in the file’s data fork is changed (changes to extended attributes or other file system metadata do not change the generation identifier). For URLs which refer to the same directory inode, the generation identifier will change when direct children of that directory are added, removed or renamed (changes to the data of the direct children of that directory will not change the generation identifier). The generation identifier is persistent across system restarts. The generation identifier is tied to a specific document on a specific volume and is not transferred when the document is copied to another volume. This property is not supported by all volumes.
 

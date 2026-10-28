@@ -20,11 +20,11 @@ optional func applicationDockMenu(_ sender: NSApplication) -> NSMenu?
 - (NSMenu *) applicationDockMenu:(NSApplication *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The menu to display in the dock.
 
-#### Discussion
+## Discussion
 
 You can also connect a menu in Interface Builder to the `dockMenu` outlet. A third way for your application to specify a dock menu is to provide an `NSMenu` in a nib.
 

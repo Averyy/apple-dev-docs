@@ -24,7 +24,7 @@ var authenticationMethod: NEVPNIKEAuthenticationMethod { get set }
 @property NEVPNIKEAuthenticationMethod authenticationMethod;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to `NEVPNIKEAuthenticationMethodNone`, extended authentication will still be negotiated if [`useExtendedAuthentication`](./useextendedauthentication.md) is set to [`true`](../../Swift/true.md).
 

@@ -25,7 +25,7 @@ var DISPATCH_QUEUE_PRIORITY_BACKGROUND: Int32 { get }
 #define DISPATCH_QUEUE_PRIORITY_BACKGROUND
 ```
 
-#### Discussion
+## Discussion
 
 Use quality-of-service constants instead. This constant maps to the `QOS_CLASS_BACKGROUND` class.
 

@@ -15,13 +15,13 @@ Fetches reports for search terms within a campaign.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch reports for search terms in your campaigns. See [`ReportingSearchTerm`](./reportingsearchterm.md) for [`Condition`](./condition.md) operators and field values to filter results with a [`Selector`](./selector.md).
 
 The limit for search term-level reports is 10 impressions. Search term-level reports only support a `timeZone` value of `ORTZ`. The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingSearchTerm`](./reportingsearchterm.md) fields are available to the `orderBy` [`Selector`](./selector.md).
 
-##### Payload example: Get search term-level reports
+### Payload example: Get search term-level reports
 
 **Request**:
 

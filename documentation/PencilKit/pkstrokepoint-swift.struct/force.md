@@ -19,7 +19,7 @@ The amount of force applied by the touch.
 var force: CGFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is a value predetermined by the system and isn’t user specific. A value of 1.0 represents the force of an average touch.
 

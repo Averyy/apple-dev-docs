@@ -21,7 +21,7 @@ Compresses the specified single-precision vector using the nonzero values in a g
 static func compress<T, U, V>(_ vector: T, gatingVector: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of compressing the values in `source` using the nonzero values in `gatingVector`:
 

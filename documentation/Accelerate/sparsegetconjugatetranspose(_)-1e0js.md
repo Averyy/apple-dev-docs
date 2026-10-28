@@ -25,11 +25,11 @@ func SparseGetConjugateTranspose(_ Matrix: SparseMatrix_Complex_Float) -> Sparse
 static SparseMatrix_Complex_Float SparseGetConjugateTranspose(SparseMatrix_Complex_Float Matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of matrix with `matrix.structure.attributes.transpose` bit flipped and `matrix.structure.attributes.conjugate_transpose` bit set.
 
-#### Discussion
+## Discussion
 
 Note that the underlying storage is *not* reference counted, so users must ensure the original matrix (or at least its underlying storage) is not destroyed before they are finished with the matrix returned by this routine.
 

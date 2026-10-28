@@ -19,7 +19,7 @@ static let sleepSessions: SRSensor
 extern SRSensor const SRSensorSleepSessions;
 ```
 
-#### Discussion
+## Discussion
 
 Sesnor stream for sleep sessions collection
 

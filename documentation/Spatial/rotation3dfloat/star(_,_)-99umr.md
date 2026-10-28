@@ -21,7 +21,7 @@ Calculates the spherical linear interpolation between the identity rotation and 
 static func * (lhs: Float, rhs: Rotation3DFloat) -> Rotation3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 For example, multiplying an angle of 90° by `0.5`, returns an angle of 45°:
 

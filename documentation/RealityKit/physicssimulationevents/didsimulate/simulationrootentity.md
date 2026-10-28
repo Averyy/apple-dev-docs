@@ -20,7 +20,7 @@ The root simulation entity associated with the simulation that raised the event.
 let simulationRootEntity: Entity?
 ```
 
-#### Discussion
+## Discussion
 
 This entity is `nil` if the physics simulation is the default global one that covers all entities in the hierarchy. Use [`PhysicsSimulationComponent`](../../physicssimulationcomponent.md) to construct a custom physics simulation for a subtree of entities that you have access to.  The event from this custom simulation reports a non-`nil` root simulation entity.
 

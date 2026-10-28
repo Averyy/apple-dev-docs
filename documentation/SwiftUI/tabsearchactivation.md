@@ -21,7 +21,7 @@ Configures the activation behavior of search in the search tab.
 struct TabSearchActivation
 ```
 
-#### Overview
+## Overview
 
 You can configure this for a particular [`TabView`](./tabview.md) by using the [`tabViewSearchActivation(_:)`](./view/tabviewsearchactivation%28_%29.md) modifier.
 

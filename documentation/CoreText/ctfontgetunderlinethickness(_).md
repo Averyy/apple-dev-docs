@@ -25,7 +25,7 @@ func CTFontGetUnderlineThickness(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetUnderlineThickness(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font underline-thickness metric scaled according to the point size and matrix of the font reference.
 

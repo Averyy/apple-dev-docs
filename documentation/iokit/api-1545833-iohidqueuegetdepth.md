@@ -16,7 +16,7 @@ Obtain the depth of the queue.
 CFIndex IOHIDQueueGetDepth(IOHIDQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the queue depth.
 

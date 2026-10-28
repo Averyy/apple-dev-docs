@@ -24,7 +24,7 @@ class ASAuthorizationPlatformPublicKeyCredentialDescriptor
 @interface ASAuthorizationPlatformPublicKeyCredentialDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class holds the platform credential identifier.
 

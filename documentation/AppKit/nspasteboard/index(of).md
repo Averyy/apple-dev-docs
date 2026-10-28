@@ -19,11 +19,11 @@ func index(of pasteboardItem: NSPasteboardItem) -> Int
 - (NSUInteger) indexOfPasteboardItem:(NSPasteboardItem *) pasteboardItem;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the specified pasteboard item. If `pasteboardItem` has not been added to any pasteboard, or is owned by another pasteboard, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 An item’s index in the pasteboard is useful for a pasteboard item data provider that has promised data for multiple items, to be able to easily match the pasteboard item to an array of source data from which to derive the promised data.
 

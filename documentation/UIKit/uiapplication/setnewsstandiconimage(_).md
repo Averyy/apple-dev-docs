@@ -23,7 +23,7 @@ func setNewsstandIconImage(_ image: UIImage?)
 - (void) setNewsstandIconImage:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 The Newsstand app icon is typically downloaded from the app’s server for each issue.
 

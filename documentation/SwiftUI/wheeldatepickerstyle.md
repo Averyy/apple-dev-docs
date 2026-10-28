@@ -20,7 +20,7 @@ A date picker style that displays each component as columns in a scrollable whee
 @preconcurrency struct WheelDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`wheel`](./datepickerstyle/wheel.md) to construct this style.
 

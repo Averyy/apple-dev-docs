@@ -20,7 +20,7 @@ static let itemKey: NSToolbarUserInfoKey
 extern NSToolbarUserInfoKey const NSToolbarItemKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSToolbarItem`](../nstoolbaritem.md) object.
 

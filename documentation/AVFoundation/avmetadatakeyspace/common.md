@@ -25,7 +25,7 @@ static let common: AVMetadataKeySpace
 extern AVMetadataKeySpace const AVMetadataKeySpaceCommon;
 ```
 
-#### Discussion
+## Discussion
 
 Keys in this space are common to all or most of the format-specific metadata formats.
 

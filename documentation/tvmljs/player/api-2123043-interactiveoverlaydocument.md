@@ -15,7 +15,7 @@ A DOM document that is presented over the entire video player, including the tra
 attribute Document interactiveOverlayDocument;
 ```
 
-#### Discussion
+## Discussion
 
 The interactive overlay document can contain focusable elements and can be any template document. Set this attribute to `null` to remove the current overlay document.
 

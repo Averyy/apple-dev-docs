@@ -25,11 +25,11 @@ init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, tileGroupLay
 - (instancetype) initWithTileSet:(SKTileSet *) tileSet columns:(NSUInteger) columns rows:(NSUInteger) rows tileSize:(CGSize) tileSize tileGroupLayout:(NSArray<SKTileGroup *> *) tileGroupLayout;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile map node.
 
-#### Discussion
+## Discussion
 
 This initializer fills each tile with a texture defined by the final argument which is a row-major array of [`SKTileGroup`](../sktilegroup.md) objects. For example, for a 2 by 2 map node, a `tileGroupLayout` of `[A, B, C, D]` would place tile group `A` in the bottom left of the node and group `D` in the top right. The length of the tile group layout array should be the same as columns multiplied by rows.
 

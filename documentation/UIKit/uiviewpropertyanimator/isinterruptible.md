@@ -23,7 +23,7 @@ var isInterruptible: Bool { get set }
 @property (nonatomic, getter=isInterruptible) BOOL interruptible;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), you can use the [`pauseAnimation()`](../uiviewanimating/pauseanimation%28%29.md) and [`stopAnimation(_:)`](../uiviewanimating/stopanimation%28_%29.md) methods to interrupt the animations and make changes. When the value of this property is [`false`](../../Swift/false.md), the animations run to completion (and without interruption) after you call the [`startAnimation()`](../uiviewanimating/startanimation%28%29.md) method. If you use a view property animator object to implement an interruptible view controller transition, this property must be [`true`](../../Swift/true.md).
 

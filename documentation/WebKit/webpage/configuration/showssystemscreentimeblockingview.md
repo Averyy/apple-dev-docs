@@ -19,7 +19,7 @@ Indicates whether the webpage should use the system Screen Time blocking view.
 var showsSystemScreenTimeBlockingView: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`. If `true`, the system Screen Time blocking view is shown when blocked by Screen Time. If `false`, a blurred view of the web content is shown instead.
 

@@ -21,7 +21,7 @@ Assembles and compiles pipelines from the provided graph.
 init(_ graph: ComputeNodeGraph) throws
 ```
 
-#### Discussion
+## Discussion
 
 Compilation is performed synchronously.
 

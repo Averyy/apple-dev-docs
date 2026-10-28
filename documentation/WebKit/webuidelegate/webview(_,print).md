@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, print frameView: WebFrameView!)
 - (void) webView:(WebView *) sender printFrameView:(WebFrameView *) frameView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a script or a user wants to print a webpage. Typically, the delegate implements this method to prepare the web frame view content for printing. The web frame view can handle some content without intervention by the delegate. Send the [`documentViewShouldHandlePrint`](../webframeview/documentviewshouldhandleprint.md) message to the web frame view to determine if it can handle printing. If this method returns [`true`](../../Swift/true.md), then the delegate can print the content by sending the [`printDocumentView()`](../webframeview/printdocumentview%28%29.md) message to the web frame view. Otherwise, the delegate can use [`printOperation(with:)`](../webframeview/printoperation%28with%29.md) to get an [`NSPrintOperation`](../../AppKit/nsprintoperation.md) object to print the web frame view.
 

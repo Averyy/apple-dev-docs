@@ -15,7 +15,7 @@ Deletes the keychain item containing the 802.1X username and password for the sp
 OSStatus CWKeychainDeleteEAPUsernameAndPassword(CFDataRef ssidData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 

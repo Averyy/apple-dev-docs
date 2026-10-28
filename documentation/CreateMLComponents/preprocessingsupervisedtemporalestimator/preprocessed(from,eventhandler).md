@@ -20,7 +20,7 @@ Preprocesses a sequence of examples.
 func preprocessed<InputSequence, FeatureSequence>(from input: InputSequence, eventHandler: EventHandler? = nil) async throws -> [AnnotatedFeature<PreprocessedFeatureSequence<Preprocessor.Output>, PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Annotation>] where InputSequence : Sequence, FeatureSequence : TemporalSequence, Preprocessor.Input == FeatureSequence.Feature, InputSequence.Element == AnnotatedFeature<FeatureSequence, Estimator.Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The preprocessed examples.
 

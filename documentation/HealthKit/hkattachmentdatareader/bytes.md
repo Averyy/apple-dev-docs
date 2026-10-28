@@ -20,7 +20,7 @@ An asynchronous sequence that provides the attachment’s data.
 var bytes: HKAttachment.AsyncBytes { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the file’s contents as an asynchronous sequence of bytes.
 

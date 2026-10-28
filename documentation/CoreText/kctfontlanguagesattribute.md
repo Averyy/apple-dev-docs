@@ -25,7 +25,7 @@ let kCTFontLanguagesAttribute: CFString
 extern CFStringRef const kCTFontLanguagesAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFArray`](../CoreFoundation/cfarray.md) object containing [`CFString`](../CoreFoundation/cfstring.md) elements. If specified, this attribute restricts the search to matching fonts that support the specified languages. The language identifier string should conform to the RFC 3066bis standard. If unspecified, this attribute is ignored.
 

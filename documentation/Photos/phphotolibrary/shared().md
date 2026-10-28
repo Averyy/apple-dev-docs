@@ -24,11 +24,11 @@ class func shared() -> PHPhotoLibrary
 + (PHPhotoLibrary *) sharedPhotoLibrary;
 ```
 
-#### Return Value
+## Return Value
 
 The singleton photo library object.
 
-#### Discussion
+## Discussion
 
 You may use the shared photo library object from any thread.
 

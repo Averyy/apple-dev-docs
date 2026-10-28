@@ -25,7 +25,7 @@ class MXHistogram<UnitType> where UnitType : Unit
 @interface MXHistogram : NSObject
 ```
 
-#### Overview
+## Overview
 
 A *histogram* measures the number of times a data point for a variable falls into a specific range of possible values within a set of data. Usually, histograms are depicted as bar charts, in which each bar represents a range of values, and the height of each bar represents the number of times the value of the variable falls within a particular range. In this class, each bar is represented by a *bucket*.
 

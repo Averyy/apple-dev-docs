@@ -15,7 +15,7 @@ The specific placement within a supply source where a new campaign’s ads are e
 object CampaignTargetingCreate.SupplyPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Each placement belongs to exactly one [`CampaignTargetingCreate.SupplySource`](./supplysource-data.dictionary.md):
 

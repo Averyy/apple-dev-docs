@@ -29,7 +29,7 @@ class PHSharedAlbumPostingViewController
 @interface PHSharedAlbumPostingViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 This class is used to present a view for posting assets to a shared album from AppKit-based view controllers.
 

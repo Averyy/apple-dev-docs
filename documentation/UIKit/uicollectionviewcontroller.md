@@ -28,7 +28,7 @@ class UICollectionViewController
 
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 
-#### Overview
+## Overview
 
 A view controller implements the following behavior:
 

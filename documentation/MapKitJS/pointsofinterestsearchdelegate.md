@@ -23,7 +23,7 @@ type PointsOfInterestSearchDelegate =
       ) => void);
 ```
 
-#### Discussion
+## Discussion
 
 You may pass an object to the search method instead of using of a search delegate callback function. MapKit JS calls the following methods on the delegate object when they exist:
 

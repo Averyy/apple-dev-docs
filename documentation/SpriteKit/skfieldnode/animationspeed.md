@@ -25,7 +25,7 @@ var animationSpeed: Float { get set }
 @property (nonatomic) float animationSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` means that the field should not animate at all.
 

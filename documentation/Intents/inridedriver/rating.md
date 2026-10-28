@@ -31,7 +31,7 @@ var rating: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * rating;
 ```
 
-#### Discussion
+## Discussion
 
 Siri displays the string you provide when displaying the status of a ride request.
 

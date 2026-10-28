@@ -19,7 +19,7 @@ nonisolated
 func toolbarOverflowMenu<C>(@ContentBuilder content: () -> C) -> some View where C : View
 ```
 
-#### Discussion
+## Discussion
 
 An overflow menu represents actions that are always placed in the toolbar’s overflow menu, regardless of the toolbar mode, platform, or customizability.
 

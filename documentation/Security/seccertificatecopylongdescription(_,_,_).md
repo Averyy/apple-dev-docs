@@ -19,11 +19,11 @@ func SecCertificateCopyLongDescription(_ alloc: CFAllocator?, _ certificate: Sec
 CFStringRefSecCertificateCopyLongDescription(CFAllocatorRef alloc, SecCertificateRef certificate, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A string object containing the long description, or `NULL` if an error occurred. In Objective-C, free this object with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
-#### Discussion
+## Discussion
 
 The format of this string is not guaranteed to be consistent across different operating systems or versions. Do not attempt to parse it programmatically.
 

@@ -24,7 +24,7 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didRemove service:
 - (void) netServiceBrowser:(NSNetServiceBrowser *) browser didRemoveService:(NSNetService *) service moreComing:(BOOL) moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate uses this message to compile a list of unavailable services. It should wait until `moreServicesComing` is [`false`](../../Swift/false.md) to do a bulk update of user interface elements.
 

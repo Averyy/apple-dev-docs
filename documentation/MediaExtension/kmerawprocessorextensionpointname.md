@@ -20,7 +20,7 @@ var kMERAWProcessorExtensionPointName: String { get }
 #define kMERAWProcessorExtensionPointName
 ```
 
-#### Discussion
+## Discussion
 
 The value for this string is `com.apple.mediaextension.rawprocessor`.
 

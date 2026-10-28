@@ -15,7 +15,7 @@ A subclass of the `IOUserVideoLevelControl` class for an LFE channel that result
 LFEVolumeControl
 ```
 
-#### Discussion
+## Discussion
 
 If a driver represents LFE channels as normal audio channels, it must use [`VolumeControl`](./volumecontrol.md) to manipulate the level.
 

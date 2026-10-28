@@ -19,7 +19,7 @@ var canSelectNext: Bool { get }
 @property (readonly) BOOL canSelectNext;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be used by a binding to enable user interface items. This property is observable using key-value observing.
 

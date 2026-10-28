@@ -23,7 +23,7 @@ class NSWorkspace
 
 - [Passing control from one app to another with cooperative activation](./passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Overview
+## Overview
 
 There is one shared [`NSWorkspace`](./nsworkspace.md) object per app. You use the class method [`shared`](./nsworkspace/shared.md) to access it. For example, the following statement uses an [`NSWorkspace`](./nsworkspace.md) object to request that a file be opened in the TextEdit app:
 

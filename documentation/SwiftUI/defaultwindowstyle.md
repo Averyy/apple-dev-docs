@@ -16,7 +16,7 @@ The default window style.
 struct DefaultWindowStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./windowstyle/automatic.md) to construct this style.
 

@@ -24,11 +24,11 @@ convenience init(_ noise: GKNoise)
 - (instancetype) initWithNoise:(GKNoise *) noise;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise map object.
 
-#### Discussion
+## Discussion
 
 This initializer is equivalent to calling the [`init(_:size:origin:sampleCount:seamless:)`](./init%28_,size,origin,samplecount,seamless%29.md) initializer with a size of `1.0 x 1.0`, an origin of `[0, 0]`, a sample grid size of `100 x 100`, and a `seamless` parameter of [`false`](../../Swift/false.md).
 

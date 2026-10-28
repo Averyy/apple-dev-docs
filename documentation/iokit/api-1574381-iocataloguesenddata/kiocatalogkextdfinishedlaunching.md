@@ -14,7 +14,7 @@
 kIOCatalogKextdFinishedLaunching
 ```
 
-#### Discussion
+## Discussion
 
 Signals the IOCatalogue that kextd has finished sending it information at startup.
 

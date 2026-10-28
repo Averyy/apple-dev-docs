@@ -25,7 +25,7 @@ case ready
 INDeleteTasksIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Return this response code during the confirmation phase, after you’ve verified you’re able to delete the tasks from the specified task list. Don’t return this response code when handling the intent; doing so causes the device to display an error.
 

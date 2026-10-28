@@ -23,7 +23,7 @@ struct quadrature_integrate_function
 typedef struct { ... } quadrature_integrate_function;
 ```
 
-#### Overview
+## Overview
 
 Function to integrate
 

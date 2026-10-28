@@ -22,7 +22,7 @@ A value less than or equal to the number of elements in the sequence, calculated
 var underestimatedCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns 0. If you provide your own implementation, make sure to compute the value nondestructively.
 

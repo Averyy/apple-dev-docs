@@ -23,7 +23,7 @@ convenience init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKConve
 - (instancetype) initWithBezierPath:(CGPathRef) bezierPath creationDate:(NSDate *) creationDate pointProvider:(PKStrokePoint * (^)(PKConvertedBezierPoint *convertedPoint)) pointProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The count of control points of the generated spline is not guaranteed to be a specific value except when the provided path is the output of `bezierRepresentation->CGPathRef`, where it will match the original curve.
 

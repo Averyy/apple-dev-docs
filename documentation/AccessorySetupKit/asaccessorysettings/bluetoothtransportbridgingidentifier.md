@@ -20,7 +20,7 @@ var bluetoothTransportBridgingIdentifier: Data? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSData * bluetoothTransportBridgingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 AccessorySetupKit ignores this property if another app already authorized and bridged the accessory.
 

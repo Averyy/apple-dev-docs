@@ -26,7 +26,7 @@ func addService(_ service: HMService) async throws
 - (void) addService:(HMService *) service completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 A service can be added to multiple service groups. For example, a light could be added to the “Desk Lamps” service group as well as the “Dimmable Lights” service group.
 

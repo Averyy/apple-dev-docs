@@ -19,7 +19,7 @@ The category of termination that caused this crash.
 let terminationCategory: CrashDiagnostic.TerminationCategory?
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the termination categories reported by [`ForegroundTerminationMetric`](../foregroundterminationmetric.md) and [`BackgroundTerminationMetric`](../backgroundterminationmetric.md), enabling correlation between individual crash diagnostics and aggregate termination counts.
 

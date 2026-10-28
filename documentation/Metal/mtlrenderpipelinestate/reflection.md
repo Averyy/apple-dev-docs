@@ -25,7 +25,7 @@ var reflection: MTLRenderPipelineReflection? { get }
 @property (readonly, nullable) MTLRenderPipelineReflection * reflection;
 ```
 
-#### Discussion
+## Discussion
 
 The property is `nil` by default to help reduce your app’s memory footprint, but you can create reflection information when your app needs it.
 

@@ -25,11 +25,11 @@ func CFRunLoopObserverCreate(_ allocator: CFAllocator!, _ activities: CFOptionFl
 extern CFRunLoopObserverRefCFRunLoopObserverCreate(CFAllocatorRef allocator, CFOptionFlags activities, Boolean repeats, CFIndex order, CFRunLoopObserverCallBack callout, CFRunLoopObserverContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFRunLoopObserver object. Ownership follows the Create Rule described in [Ownership Policy](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148).
 
-#### Discussion
+## Discussion
 
 The run loop observer is not automatically added to a run loop. To add the observer to a run loop, use [`CFRunLoopAddObserver(_:_:_:)`](./cfrunloopaddobserver%28_,_,_%29.md). An observer can be registered to only one run loop, although it can be added to multiple run loop modes within that run loop.
 

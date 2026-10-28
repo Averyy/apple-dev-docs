@@ -19,7 +19,7 @@ A Boolean value that indicates whether the workout is open ended.
 final var isOpenEnded: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean whose value is [`true`](../../Swift/true.md) when the user wants an open-ended workout instead of a specific-goal workout.
 

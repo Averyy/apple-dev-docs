@@ -24,7 +24,7 @@ class UITableViewRowAction
 @interface UITableViewRowAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UITableViewRowAction`](./uitableviewrowaction.md) object to define a single, custom action for a table row. Users swipe horizontally in a table view to reveal the actions associated with a row. Each row-action object contains the text display, the action to perform, and any specific formatting to apply to that action.
 

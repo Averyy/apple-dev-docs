@@ -14,7 +14,7 @@ Return x with its sign changed to match the sign of y.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Copy Sign (half)**:
 

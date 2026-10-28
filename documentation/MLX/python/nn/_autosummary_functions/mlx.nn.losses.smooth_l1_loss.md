@@ -6,11 +6,16 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.smooth_l1_loss
 
-**class smooth_l1_loss(*predictions: array*, *targets: array*, *beta: float = 1.0*, *reduction: Literal['none', 'mean', 'sum'] = 'mean'*)**
-: Computes the smooth L1 loss.
+```python
+class smooth_l1_loss(predictions: array, targets: array, beta: float = 1.0, reduction: Literal['none', 'mean', 'sum'] = 'mean')
+```
+
+Computes the smooth L1 loss.
+
 The smooth L1 loss is a variant of the L1 loss which replaces the absolute
 difference with a squared difference when the absolute difference is less
 than `beta`.
+
 The formula for the smooth L1 Loss is:
 
 \[\begin{split}l = \begin{cases}
@@ -18,17 +23,17 @@ The formula for the smooth L1 Loss is:
       |x - y| - 0.5 \beta, & \text{otherwise}
     \end{cases}\end{split}\]
 
-Parameters:
+**Parameters:**
 
-**predictions** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – Predicted values.
-**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – Ground truth values.
-**beta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The threshold after which the loss changes
+- **predictions** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – Predicted values.
+- **targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – Ground truth values.
+- **beta** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – The threshold after which the loss changes
 from the squared to the absolute difference. Default: `1.0`.
-**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+- **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
-Returns:
-The computed smooth L1 loss.
+**Returns:**
+: The computed smooth L1 loss.
 
-Return type:
-[array](../../_autosummary/mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](../../_autosummary/mlx.core.array.md#mlx.core.array)

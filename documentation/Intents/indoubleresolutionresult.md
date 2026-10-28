@@ -25,7 +25,7 @@ class INDoubleResolutionResult
 @interface INDoubleResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INDoubleResolutionResult`](./indoubleresolutionresult.md) object is what you return when resolving floating-point parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

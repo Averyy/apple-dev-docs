@@ -16,7 +16,7 @@ Specifies the action to take upon timeout expiration.
 #define kIOPMAssertionTimeoutActionKey
 ```
 
-#### Discussion
+## Discussion
 
 The action specified by this key applies only if you include an [`kIOPMAssertionTimeoutKey`](./kiopmassertiontimeoutkey.md). If you don’t specify a timeout action, the default is [`kIOPMAssertionTimeoutActionTurnOff`](./kiopmassertiontimeoutactionturnoff.md).
 

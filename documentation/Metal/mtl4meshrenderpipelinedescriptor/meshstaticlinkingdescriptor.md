@@ -25,7 +25,7 @@ var meshStaticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
 @property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * meshStaticLinkingDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to link extra shader functions to the mesh stage of the render pipeline.
 

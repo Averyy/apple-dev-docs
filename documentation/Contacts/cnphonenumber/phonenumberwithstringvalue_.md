@@ -20,11 +20,11 @@ Returns a new phone number object initialized with the specified phone number st
 + (instancetype) phoneNumberWithStringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialize the phone number object.
 
-#### Discussion
+## Discussion
 
 This is a convenience class method that provides the same functionality as [`init(stringValue:)`](./init%28stringvalue%29.md). This method returns `nil` when the value of  `stringValue` is `nil`.
 

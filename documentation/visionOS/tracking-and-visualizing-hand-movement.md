@@ -10,7 +10,7 @@ Use hand-tracking anchors to display a visual representation of hand transforms 
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates tracking hand transforms in visionOS with the [`HandTrackingProvider`](../ARKit/handtrackingprovider.md) class, a type within [ARKit](../ARKit/ARKit.md). As the following video shows, the app displays a series of white spheres that affix themselves to each anchor point on a person’s hands and remain attached as the hands move:
 
@@ -22,7 +22,7 @@ The app achieves this effect by:
 2. Placing white spheres on each hand-tracking anchor
 3. Tracking the person’s hand to update the hand entity’s position and orientation
 
-##### Define the hand-tracking anchors
+### Define the hand-tracking anchors
 
 [`HandSkeleton.JointName`](../ARKit/handskeleton/jointname.md) contains a total of 26 hand-tracking anchors for each hand. To identify these anchors, the sample creates a series of `Finger` and `Bone` enumerations:
 
@@ -68,7 +68,7 @@ struct Hand {
 }
 ```
 
-##### Set up the hand tracker
+### Set up the hand tracker
 
 The sample creates the `HandTrackingComponent` to track the entities of the left and right hand. It differentiates the left- and right-hand entities by configuring the component with a `chirality` value and registering it with the app’s `HandTrackingSystem` singleton instance:
 
@@ -146,7 +146,7 @@ func runSession() {
 
 When the `handTracking.anchorUpdates` stream yields new hand data from ARKit, this async method updates the `latestLeftHand` and `latestRightHand` anchors accordingly.
 
-#### Visualize the joints of a hand entity
+## Visualize the joints of a hand entity
 
 The system also has an `addJoints(to:handComponent:)` method that adds a sphere entity to each anchor of a hand entity. The method starts by creating the sphere entity with the `radius` and `material` properties, then it adds the sphere entity to the hand entity and updates the `fingers` collection for each anchor in the `Hand` structure:
 
@@ -233,7 +233,7 @@ for entity in handEntities {
 }
 ```
 
-##### Create the left- and right-hand entities
+### Create the left- and right-hand entities
 
 The app adds hand-tracking entities to the content of the RealityKit view by calling `makeHandEntities(in:)`:
 

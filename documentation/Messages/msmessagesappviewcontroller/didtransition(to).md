@@ -21,7 +21,7 @@ func didTransition(to presentationStyle: MSMessagesAppPresentationStyle)
 - (void) didTransitionToPresentationStyle:(MSMessagesAppPresentationStyle) presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to respond after the extension’s user interface has transitioned to a new presentation style. The user can switch between styles by tapping the collapse and expand buttons in the Messages app. You can also programmatically trigger a transition by calling [`requestPresentationStyle(_:)`](./requestpresentationstyle%28_%29.md).
 

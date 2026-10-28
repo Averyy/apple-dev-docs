@@ -15,7 +15,7 @@ Creates and returns a text provider for displaying the specified time.
 - (instancetype) initWithDate:(NSDate *) date timeZone:(NSTimeZone *) timeZone;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified date and time zone value.
 

@@ -20,11 +20,11 @@ string AppsReportingCampaign.Status
 - `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
 - `PAUSED`: The advertiser has paused the campaign. No ads serve until the status changes to `ENABLED`.
 
-#### Discussion
+## Discussion
 
 This captures the advertiser-set run state as of the report’s generation, separate from the system-evaluated [`AppsReportingCampaign.SystemStatus`](./systemstatus-data.typealias.md) alongside it.
 
-##### Example
+### Example
 
 ```json
 {

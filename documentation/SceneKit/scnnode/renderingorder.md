@@ -25,7 +25,7 @@ var renderingOrder: Int { get set }
 @property (nonatomic) NSInteger renderingOrder;
 ```
 
-#### Discussion
+## Discussion
 
 Nodes with greater rendering orders are rendered last. Defaults to zero.
 

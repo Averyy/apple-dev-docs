@@ -19,7 +19,7 @@ case accessory
 NSApplicationActivationPolicyAccessory
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to value of the `LSUIElement` key in the application’s `Info.plist` being `1`.
 

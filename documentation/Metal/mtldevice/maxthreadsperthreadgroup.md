@@ -25,7 +25,7 @@ var maxThreadsPerThreadgroup: MTLSize { get }
 @property (readonly) MTLSize maxThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports the maximum thread group size the device can support for a trivial shader. This size isn’t guaranteed for all shaders. For the actual thread group size of a specific compute shader, see the [`maxTotalThreadsPerThreadgroup`](../mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of your compute pipeline state.
 

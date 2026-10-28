@@ -24,7 +24,7 @@ var radiusBuffers: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange radiusBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property references a buffer that conceptually represents an array with one entry for each keyframe in the motion animation. Each one of these entries consists of a [`MTL4BufferRange`](../mtl4bufferrange.md) that, in turn, references a buffer containing the radii corresponding to the keyframe.
 

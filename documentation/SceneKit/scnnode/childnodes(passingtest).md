@@ -25,11 +25,11 @@ func childNodes(passingTest predicate: (SCNNode, UnsafeMutablePointer<ObjCBool>)
 - (NSArray<SCNNode *> *) childNodesPassingTest:(BOOL (^)(SCNNode *child, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing nodes that passed the test.
 
-#### Discussion
+## Discussion
 
 Use this method to search for nodes using a test you specify. For example, you can search for empty nodes using a block that returns YES for nodes whose [`light`](./light.md), [`camera`](./camera.md), and [`geometry`](./geometry.md) properties are all `nil`.
 

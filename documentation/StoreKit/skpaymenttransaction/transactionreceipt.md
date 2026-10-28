@@ -21,7 +21,7 @@ var transactionReceipt: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * transactionReceipt;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.purchased`](../skpaymenttransactionstate/purchased.md).
 

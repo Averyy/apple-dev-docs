@@ -22,7 +22,7 @@ An opaque vectorized chart content type.
 @preconcurrency struct VectorizedRulePlotContent<Data> where Data : RandomAccessCollection
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Swift Charts automatically instantiates and consumes values of this type.
 

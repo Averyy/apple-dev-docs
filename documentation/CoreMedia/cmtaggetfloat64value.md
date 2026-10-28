@@ -21,7 +21,7 @@ Retrieves a tag’s value as a 64-bit floating point number.
 extern Float64 CMTagGetFloat64Value(CMTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Before retrieving a tag’s value with this function, call [`CMTagHasFloat64Value`](./cmtaghasfloat64value.md) to ensure it has the correct type.
 

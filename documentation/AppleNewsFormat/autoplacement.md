@@ -19,11 +19,11 @@ object AutoPlacement
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `AutoPlacement` object to define the metadata, appearance, and placement of advertising components within Apple News Format articles.
 
-##### Example
+### Example
 
 ```json
 {

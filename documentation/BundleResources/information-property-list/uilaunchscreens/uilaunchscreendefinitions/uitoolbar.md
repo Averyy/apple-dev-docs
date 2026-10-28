@@ -15,7 +15,7 @@ Toolbar visibility and configuration during launch.
 - **Name**: `UIToolbar`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 When you provide a dictionary for this key, the system displays a toolbar during launch. You can optionally set the dictionary’s [`UIImageName`](./uitoolbar/uiimagename.md) key to define a custom image for the toolbar.
 

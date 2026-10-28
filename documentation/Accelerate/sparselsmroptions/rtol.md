@@ -25,7 +25,7 @@ var rtol: Double
 double rtol;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `0.0`, the operation uses the default value of `sqrt(epsilon)`. If it’s negative, the operation treats [`rtol`](./rtol.md) as `0.0` (it doesn’t use the default)
 

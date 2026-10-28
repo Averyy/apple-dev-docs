@@ -21,7 +21,7 @@ optional func mapTemplateShouldProvideNavigationMetadata(_ mapTemplate: CPMapTem
 - (BOOL) mapTemplateShouldProvideNavigationMetadata:(CPMapTemplate *) mapTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 - Returns `true` if the template needs to provide navigation metadata, otherwise `false`.
 

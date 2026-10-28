@@ -25,7 +25,7 @@ func CMMemoryPoolGetTypeID() -> CFTypeID
 extern CFTypeID CMMemoryPoolGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier.
 

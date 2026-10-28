@@ -16,7 +16,7 @@ Establishes a streaming connection at the provided endpoint using the specified 
 final func connect(endpoint: FoveatedStreamingSession.Endpoint = .systemDiscovered, streamingProvider: FoveatedStreamingSession.StreamingProvider) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This overload allows you to explicitly specify which streaming provider extension to use.
 

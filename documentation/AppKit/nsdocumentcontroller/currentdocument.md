@@ -19,7 +19,7 @@ var currentDocument: NSDocument? { get }
 @property (strong, readonly, nullable) NSDocument * currentDocument;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if it is called when the app is not active. This can occur during processing of a drag-and-drop operation, for example, in an implementation of `readSelectionFromPasteboard:`. In such a case, send the following message instead from an `NSView` subclass associated with the document:
 

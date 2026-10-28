@@ -24,11 +24,11 @@ func toObjectOf(_ expectedClass: AnyClass!) -> Any!
 - (id) toObjectOfClass:(Class) expectedClass;
 ```
 
-#### Return Value
+## Return Value
 
 An Objective-C or Swift object representing the JavaScript value, or `nil` if the value cannot be converted to the expected class.
 
-#### Discussion
+## Discussion
 
 Use this method to enforce a specific type conversion from JavaScript, or to retrieve Objective-C or Swift objects of custom classes that were bridged into JavaScript using the [`JSExport`](../jsexport.md) protocol.
 

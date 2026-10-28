@@ -21,7 +21,7 @@ Common protocol to which all distributed actors conform implicitly.
 protocol DistributedActor : AnyObject, Hashable, Identifiable, Sendable
 ```
 
-#### Overview
+## Overview
 
 The `DistributedActor` protocol generalizes over all distributed actor types. Distributed actor types implicitly conform to this protocol.
 
@@ -29,13 +29,13 @@ It is not possible to conform to this protocol by any other declaration other th
 
 It is possible to require a type to conform to the [`DistributedActor`](./distributedactor.md) protocol by refining it with another protocol, or by using a generic constraint.
 
-#### Synthesized properties
+## Synthesized properties
 
 For every concrete distributed actor declaration, the compiler synthesizes two properties: `actorSystem` and `id`. They witness the [`actorSystem`](./distributedactor/actorsystem-swift.property.md) and [`id`](./distributedactor/id.md) protocol requirements of the [`DistributedActor`](./distributedactor.md) protocol.
 
 It is not possible to implement these properties explicitly in user code. These properties are `nonisolated` and accessible even if the instance is *remote*, because *all* distributed actor references must store the actor system remote calls will be delivered through, as well as the id identifying the target of those calls.
 
-#### The ActorSystem associated type
+## The ActorSystem associated type
 
 Every distributed actor must declare what type of actor system it is part of by implementing the [`ActorSystem`](./distributedactor/actorsystem-swift.associatedtype.md) associated type requirement.
 
@@ -55,7 +55,7 @@ distributed actor Greeter {
 }
 ```
 
-##### The DefaultDistributedActorSystem type alias
+### The DefaultDistributedActorSystem type alias
 
 Since it is fairly common to only be using one specific type of actor system within a module or entire codebase, it is possible to declare the default type of actor system all distributed actors will be using in a module by declaring a `DefaultDistributedActorSystem` module wide typealias:
 
@@ -86,7 +86,7 @@ distributed actor Superb {
 
 In general the `DefaultDistributedActorSystem` should not be declared public, as picking the default should be left up to each specific module of a project.
 
-#### Default initializer
+## Default initializer
 
 While classes and actors receive a synthesized *argument-free default initializer* (`init()`), distributed actors synthesize a default initializer that accepts a distributed actor system the actor is part of: `init(actorSystem:)`.
 
@@ -96,11 +96,11 @@ It is possible to explicitly declare a parameter-free initializer (`init()`), ho
 
 In general it is recommended to always have an `actorSystem` parameter as the last non-defaulted non-closure parameter in every actor’s initializer parameter list. This way it is simple to swap in a “test actor system” instance in unit tests, and avoid relying on global state which could make testing more difficult.
 
-#### Implicit properties
+## Implicit properties
 
 Every concrete `distributed actor` type receives two synthesized properties, which implement the protocol requirements of this protocol: `id` and `actorSystem`.
 
-##### Property: Actor System
+### Property: Actor System
 
 The [`actorSystem`](./distributedactor/actorsystem-swift.property.md) property is an important part of every distributed actor’s lifecycle management.
 
@@ -125,15 +125,15 @@ init(name: String, actorSystem: Self.ActorSystem) {
 }
 ```
 
-##### Property: Distributed Actor Identity
+### Property: Distributed Actor Identity
 
 [`id`](./distributedactor/id.md) is assigned by the actor system during the distributed actor’s initialization, and cannot be set or mutated by the actor itself.
 
 [`id`](./distributedactor/id.md) is the effective identity of the actor, and is used in equality checks, as well as the actor’s synthesized `Codable` conformance if the [`id`](./distributedactor/id.md) type conforms to `Codable`.
 
-#### Automatic Conformances
+## Automatic Conformances
 
-##### Hashable and Identifiable conformance
+### Hashable and Identifiable conformance
 
 Every distributed actor conforms to the `Hashable` and `Identifiable` protocols. Its identity is strictly driven by its [`id`](./distributedactor/id.md), and therefore hash and equality implementations directly delegate to the [`id`](./distributedactor/id.md) property.
 
@@ -141,7 +141,7 @@ Comparing a local distributed actor instance and a remote reference to it (both 
 
 It is not possible to implement these protocols relying on the actual actor’s state, because it may be remote and the state may not be available. In other words, since these protocols must be implemented using `nonisolated` functions, only `nonisolated` `id` and `actorSystem` properties are accessible for their implementations.
 
-##### Implicit Codable conformance
+### Implicit Codable conformance
 
 If created with an actor system whose [`ActorID`](./distributedactorsystem/actorid.md) is `Codable`, the compiler will synthesize code for the concrete distributed actor to conform to `Codable` as well.
 

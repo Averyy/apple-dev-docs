@@ -23,7 +23,7 @@ func makeIterator() -> StrideToIterator<Element>
 
 Available when `Element` conforms to `Strideable`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

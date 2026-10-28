@@ -23,11 +23,11 @@ func notify_resume(_ token: Int32) -> UInt32
 extern uint32_t notify_resume(int token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Removes one level of suspension for a token previously suspended by a call to notify_suspend. Notifications will resume when a matching call to notify_resume is made for each previous call to notify_suspend. Notifications posted while a token is suspended are coalesced into a single notification sent following a resumption.
 

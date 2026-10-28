@@ -19,7 +19,7 @@ Custom pipeline stages you use to help the Spotlight search tool generate result
 var customStages: [any CustomStage] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Provide a custom stage if you have custom code for determining search results. For example, you might use a custom stage to provide the Spotlight search tool with app-managed relevance scores. The tool makes your custom stages available to the model, which determines whether to run them based on the prompt.
 

@@ -25,11 +25,11 @@ func CMSampleBufferInvalidate(_ sbuf: CMSampleBuffer) -> OSStatus
 extern OSStatus CMSampleBufferInvalidate(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 An invalid sample buffer can’t be used — all accessors will return [`kCMSampleBufferError_Invalidated`](./kcmsamplebuffererror_invalidated.md).
 

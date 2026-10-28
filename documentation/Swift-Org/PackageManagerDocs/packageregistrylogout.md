@@ -13,13 +13,13 @@ Log out from a registry.
 **Availability**:
 - Swift 5.9+
 
-#### Overview
+## Overview
 
 Package manager removes credentials from the operating system’s credential store if supported, and the user-level configuration file (`registries.json`).
 
 To avoid accidental removal of sensitive data, the `netrc` file needs to be updated manually by the user.
 
-##### Changes to registry configuration
+### Changes to registry configuration
 
 The `authentication` key in the user-level `registries.json` file by default is located at `~/.swiftpm/configuration/registries.json`. Any package registry that requires authentication must have a corresponding entry in this dictionary.
 
@@ -49,7 +49,7 @@ Specify credentials in the native credential store of the operating system if su
 
 See [credential storage](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0378-package-registry-auth.md#credential-storage) for more details on configuring credentials for each authentication type.
 
-##### Usage
+### Usage
 
 ```
 package-registry logout [--package-path=<package-path>]

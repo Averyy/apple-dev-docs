@@ -19,7 +19,7 @@ class var genericCMYK: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * genericCMYKColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color space has cyan, magenta, yellow, black and alpha component.
 

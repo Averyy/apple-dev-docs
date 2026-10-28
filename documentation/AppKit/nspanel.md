@@ -20,7 +20,7 @@ class NSPanel
 @interface NSPanel : NSWindow
 ```
 
-#### Overview
+## Overview
 
 For details about how panels work (especially to find out how their behavior differs from window behavior), see [How Panels Work](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingPanels.html#//apple_ref/doc/uid/20000224).
 

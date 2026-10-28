@@ -21,7 +21,7 @@ Creates an HTTP cookie property key using the given string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create HTTP cookie property keys that aren’t already represented by the predefined constants.
 

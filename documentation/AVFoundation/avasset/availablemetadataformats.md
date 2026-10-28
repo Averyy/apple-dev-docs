@@ -27,7 +27,7 @@ var availableMetadataFormats: [AVMetadataFormat] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableMetadataFormats;
 ```
 
-#### Discussion
+## Discussion
 
 Metadata formats may include ID3, iTunes metadata, and so on.
 

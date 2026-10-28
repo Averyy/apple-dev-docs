@@ -32,7 +32,7 @@ var nonGregorianBirthday: DateComponents? { get }
 @property (atomic, copy, readonly, nullable) NSDateComponents * nonGregorianBirthday;
 ```
 
-#### Discussion
+## Discussion
 
 Non-Gregorian birthdays can be displayed using this property, which has values that are the relevant properties of an [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object. Day and month components are required; year and leap month are optional. The calendar component is also required and must be an [`NSCalendar`](../../Foundation/nscalendar.md) object with an identifier other than [`gregorian`](../../Foundation/nscalendar/identifier/gregorian.md). For example, some supported calendars are Chinese, Hebrew, or Islamic. All other date components are invalid and including them results in an [`NSError`](../../Foundation/nserror.md) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](../cnerror/code/validationconfigurationerror.md).
 

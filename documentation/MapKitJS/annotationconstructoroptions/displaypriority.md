@@ -19,7 +19,7 @@ displayPriority?: AnnotationDisplayPriority;
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`Required`](../annotationdisplaypriority/required.md)
 

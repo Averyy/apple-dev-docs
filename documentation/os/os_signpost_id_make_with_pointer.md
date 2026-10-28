@@ -21,7 +21,7 @@ Creates a signpost identifier that’s unique among signposts logging to the spe
 extern os_signpost_id_t os_signpost_id_make_with_pointer(os_log_t log, const void *ptr);
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this function if the activity needs to cross process boundaries.
 

@@ -19,11 +19,11 @@
 static float SPAngleFloatTanh(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The hyperbolic tangent of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the hyperbolic tangent of the specified angle.
 

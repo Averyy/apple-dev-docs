@@ -20,7 +20,7 @@ func viewMatrix(at time: CMTime) throws -> FxMatrix44
 - (FxMatrix44 *) viewMatrixAtTime:(CMTime) time error:(NSError * *) error;
 ```
 
-#### Return Value
+## Return Value
 
 An FxMatrix44 containing the matrix.
 

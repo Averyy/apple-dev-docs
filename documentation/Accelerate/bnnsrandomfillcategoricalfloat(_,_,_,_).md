@@ -25,7 +25,7 @@ func BNNSRandomFillCategoricalFloat(_ generator: BNNSRandomGenerator?, _ desc: U
 int BNNSRandomFillCategoricalFloat(BNNSRandomGenerator generator, const BNNSNDArrayDescriptor *desc, const BNNSNDArrayDescriptor *probabilities, bool log_probabilities);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to fill an array descriptor with random values from a categorical distribution with specified event probabilities or event log probabilities.
 

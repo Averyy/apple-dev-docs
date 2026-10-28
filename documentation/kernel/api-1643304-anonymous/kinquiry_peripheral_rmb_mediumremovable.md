@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_RMB_MediumRemovable = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Medium type is removable disk.
 

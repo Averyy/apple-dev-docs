@@ -25,7 +25,7 @@ typedef struct AuthorizationCallbacks { ... } AuthorizationCallbacks;
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Overview
+## Overview
 
 This structure declares the functions that your authorization plug-in uses to communicate with the authorization engine. These functions are passed to your plug-in through the [`AuthorizationPluginCreate`](./authorizationplugincreate.md) function.
 

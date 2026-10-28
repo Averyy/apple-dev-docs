@@ -27,7 +27,7 @@ func stopFilter(with reason: NEProviderStopReason) async
 - (void) stopFilterWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to stop the filter.
 

@@ -21,7 +21,7 @@ Creates a new tag with a given category and a 64-bit value for use by the framew
 extern CMTag CMTagMakeWithOSTypeValue(CMTagCategory category, OSType value);
 ```
 
-#### Return Value
+## Return Value
 
 A new tag with the assigned category containing an [`OSType`](../kernel/ostype.md), or [`kCMTagInvalid`](./kcmtaginvalid.md) if no tag could be created.
 

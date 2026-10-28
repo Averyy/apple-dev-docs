@@ -5,13 +5,13 @@
 
 Learn about important changes to ContactsUI.
 
-#### Overview
+## Overview
 
 Browse notable changes in [ContactsUI](../ContactsUI/ContactsUI.md).
 
-#### June 2024
+## June 2024
 
-##### Limited access to contacts
+### Limited access to contacts
 
 - Check your app’s authorization status for a new value, `CNAuthorizationStatus.limited`. This represents a new status in which a person can grant your app access to a limited subset of their contacts, rather than make an all-or-nothing choice. When your app first calls `CNContactStore.requestAccess(for:completionHandler:)`, an alert asks the person using the app whether to allow contacts access at all. If they allow access, they can choose either full access or choose which contacts to allow, which appears to your app as the `.limited` authorization status. They can revise their choices later in the Settings app.
 - Allow someone to quickly add more contacts to this limited-access group by displaying a `ContactAccessButton` in your app’s contact search UI. You initialize this SwiftUI view with a search substring and sets of ignored emails and phone numbers. If a single person matches this query, the button shows the contact and offers to add them to the contacts your app can access. If there are multiple matches, tapping the button shows a separate view to select contacts.

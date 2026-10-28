@@ -25,7 +25,7 @@ static let countryCode: NSLocale.Key
 extern NSLocaleKey const NSLocaleCountryCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"HK"`.
 

@@ -26,7 +26,7 @@ class MPMediaQuery
 
 - [Playing audio using the built-in music player](./playing-audio-using-the-built-in-music-player.md)
 
-#### Overview
+## Overview
 
 Filter and grouping types are both optional; an unqualified query matches the entire library.
 

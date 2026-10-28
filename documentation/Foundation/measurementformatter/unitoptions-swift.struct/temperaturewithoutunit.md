@@ -23,7 +23,7 @@ static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions { get }
 NSMeasurementFormatterUnitOptionsTemperatureWithoutUnit
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that representations of a measurement with the `NSTemperatureUnit` unit omit the letter denoting the temperature scale. For example, a temperature measurement with value equal to 72 using the [`degreeFahrenheit()`](../../../HealthKit/hkunit/degreefahrenheit%28%29.md) would be represented as `72°` rather than `72°F`.
 

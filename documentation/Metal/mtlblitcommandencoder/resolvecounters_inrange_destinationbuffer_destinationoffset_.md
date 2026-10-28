@@ -20,7 +20,7 @@ Encodes a command that resolves the data from the samples in a sample counter bu
 - (void) resolveCounters:(id<MTLCounterSampleBuffer>) sampleBuffer inRange:(NSRange) range destinationBuffer:(id<MTLBuffer>) destinationBuffer destinationOffset:(NSUInteger) destinationOffset;
 ```
 
-#### Discussion
+## Discussion
 
 For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
 

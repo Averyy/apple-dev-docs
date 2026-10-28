@@ -21,7 +21,7 @@ Increments the reference count (the retain count) of a dispatch object.
 extern void dispatch_retain(dispatch_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 Calls to this function must be balanced with calls to [`dispatch_release`](./dispatch_release.md). If  multiple subsystems of your application share a dispatch object, each subsystem should call [`dispatch_retain`](./dispatch_retain.md) to register its interest in the object.  The object is deallocated only when all subsystems have released their interest in the dispatch source.
 

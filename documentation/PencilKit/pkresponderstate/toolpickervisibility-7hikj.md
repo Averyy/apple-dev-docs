@@ -18,7 +18,7 @@ The visibility state of the tool picker.
 @property (nonatomic, assign) PKToolPickerVisibility toolPickerVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 This controls the state of the tool picker that is provided by the `activeToolPicker` property.
 

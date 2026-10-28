@@ -22,7 +22,7 @@ var countDownDuration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval countDownDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get and set the currently selected value when the date picker’s mode property is set to [`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md). This property is of type [`TimeInterval`](../../Foundation/timeinterval.md) and therefore is measured in seconds, although the date picker displays only hours and minutes. If the mode of the date picker is not [`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md), this value is undefined; refer instead to the [`date`](./date.md) property. The default value is 0.0 and the maximum value is 23:59 (86,340 seconds).
 

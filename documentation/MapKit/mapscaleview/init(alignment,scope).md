@@ -21,7 +21,7 @@ Creates a scale view with the provided alignment and scope.
 @preconcurrency init(alignment: HorizontalAlignment = .leading, scope: Namespace.ID? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized scale view.
 

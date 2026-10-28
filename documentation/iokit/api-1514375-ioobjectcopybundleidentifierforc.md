@@ -23,11 +23,11 @@ func IOObjectCopyBundleIdentifierForClass(_ classname: CFString!) -> Unmanaged<C
 CFStringRef IOObjectCopyBundleIdentifierForClass(CFStringRef classname);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting CFStringRef. This should be released by the caller. If a valid class name is not passed in, then NULL is returned.
 
-#### Discussion
+## Discussion
 
 This function uses the OSMetaClass system in the kernel to derive the name of the kmod, which is the same as the bundle identifier.
 

@@ -22,7 +22,7 @@ nonisolated
 func environmentObject<T>(_ object: T) -> some Scene where T : ObservableObject
 ```
 
-#### Discussion
+## Discussion
 
 The object can be read by any child by using `EnvironmentObject`:
 

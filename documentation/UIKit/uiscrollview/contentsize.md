@@ -27,7 +27,7 @@ var contentSize: CGSize { get set }
 
 - [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
-#### Discussion
+## Discussion
 
 The unit of size is points. The default size is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md).
 

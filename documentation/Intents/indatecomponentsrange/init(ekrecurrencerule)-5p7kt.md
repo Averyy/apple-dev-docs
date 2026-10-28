@@ -25,11 +25,11 @@ convenience init(ekRecurrenceRule recurrenceRule: EKRecurrenceRule)
 - (instancetype) initWithEKRecurrenceRule:(EKRecurrenceRule *) recurrenceRule;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INDateComponentsRange`](../indatecomponentsrange.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize the date range from Event Kit recurrence rules. For example, apps that support the creation of calendar events and reminders using Event Kit might use this method to specify date ranges when processing intents.
 

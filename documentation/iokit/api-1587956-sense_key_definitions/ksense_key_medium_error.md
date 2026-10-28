@@ -15,7 +15,7 @@
 kSENSE_KEY_MEDIUM_ERROR = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected a medium error.
 

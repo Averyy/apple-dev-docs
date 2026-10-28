@@ -26,7 +26,7 @@ init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinat
 init(configurationSets: [String : Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws
 ```
 
-#### Return Value
+## Return Value
 
 A configuration catalog that maintains the provided entities in memory.
 

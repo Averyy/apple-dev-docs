@@ -12,7 +12,7 @@ Signature for the block executed during enumeration of assets.
 typedef void (^)(ALAsset *, unsigned long, _Bool *) ALAssetsGroupEnumerationResultsBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following arguments:
 

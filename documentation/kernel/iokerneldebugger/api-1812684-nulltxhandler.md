@@ -14,7 +14,7 @@ static void nullTxHandler(
  UInt32 length );
 ```
 
-#### Overview
+## Overview
 
 This function is registered as the transmit handler when an IOKernelDebugger object surrenders its status as the active debugger nub. Until another IOKernelDebugger object gets promoted, this function will handle polled transmit requests from KDP. This function does nothing useful.
 

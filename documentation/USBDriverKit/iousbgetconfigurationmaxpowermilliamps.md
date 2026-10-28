@@ -15,11 +15,11 @@ Extracts the maximum bus current a configuration descriptor requires.
 uint32_t IOUSBGetConfigurationMaxPowerMilliAmps(uint32_t usbDeviceSpeed, const IOUSBConfigurationDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The milliamps required.
 
-#### Discussion
+## Discussion
 
 This method parses a configuration descriptor and returns the number of milliamps required to power the device.
 

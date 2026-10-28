@@ -21,7 +21,7 @@ init(text: String?, detailText: String?, image: UIImage?)
 - (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText image:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list item.
 

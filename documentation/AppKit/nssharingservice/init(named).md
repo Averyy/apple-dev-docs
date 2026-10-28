@@ -19,7 +19,7 @@ init?(named serviceName: NSSharingService.Name)
 + (NSSharingService *) sharingServiceNamed:(NSSharingServiceName) serviceName;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSSharingService` for the specified service name.
 

@@ -23,7 +23,7 @@ var kDNSServiceErr_ServiceNotRunning: Int { get }
 kDNSServiceErr_ServiceNotRunning
 ```
 
-#### Discussion
+## Discussion
 
 Background daemon not running
 

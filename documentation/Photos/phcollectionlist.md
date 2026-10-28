@@ -29,7 +29,7 @@ class PHCollectionList
 - [Fetching Objects and Requesting Changes](../PhotoKit/fetching-objects-and-requesting-changes.md)
 - [Requesting Changes to the Photo Library](../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Overview
+## Overview
 
 In the Photos framework, collection objects (including asset collections) do not directly reference their member objects, and there are no other objects that directly reference collection objects. To retrieve the members of a collection list, fetch them with a [`PHCollection`](./phcollection.md) class method such as [`fetchCollections(in:options:)`](./phcollection/fetchcollections%28in,options%29.md). To find objects at the root of the collection list hierarchy (such as album folders with no parent folders), use the [`fetchTopLevelUserCollections(with:)`](./phcollection/fetchtoplevelusercollections%28with%29.md) method.
 

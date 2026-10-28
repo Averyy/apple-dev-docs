@@ -5,11 +5,11 @@
 
 Store note-based audio data, such as MIDI data, in QuickTime movies.
 
-#### Overview
+## Overview
 
 Music media is used to store note-based audio data, such as MIDI data, in QuickTime movies. It has a media type of `'musi'`.
 
-#### Music sample description
+## Music sample description
 
 The music sample description uses the standard sample description header, as described in  [`Sample description atom`](./sample_description_atom.md).
 
@@ -17,7 +17,7 @@ The data format field in the sample description is always set to `'musi'`. The m
 
 Following the flags field, there may be appended data in the QuickTime music format. This data consists of part-to-instrument mappings in the form of General events containing note requests. One note request event should be present for each part that will be used in the sample data.
 
-#### Music Sample Data
+## Music Sample Data
 
 The sample data for music samples consists entirely of data in the QuickTime music format. Typically, up to 30 seconds of notes are grouped into a single sample.
 

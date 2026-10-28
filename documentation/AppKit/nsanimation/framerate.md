@@ -19,7 +19,7 @@ var frameRate: Float { get set }
 @property float frameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be greater than or equal to `0`. Specifying a value of `0.0` causes the animation to run as fast as possible. Setting the property to a negative value raises an exception.
 

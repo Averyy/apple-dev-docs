@@ -5,7 +5,7 @@
 
 Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 
-#### Overview
+## Overview
 
 Camera access on iPad is normally limited to apps running in full-screen mode. If your app enters a multitasking mode, such as Split View or Stage Manager, the system disables the camera by default. In iPadOS 16 and later, your app can enable using the camera while multitasking.
 
@@ -26,7 +26,7 @@ When operating the camera capture system, using the multitasking feature introdu
 
 For information about Split View and Slide Over modes, see [Use multitasking on your iPad](https://support.apple.com/en-us/HT207582). For information about Stage Manager on iPad, see [Move, resize, and organize windows with Stage Manager on iPad](https://support.apple.com/guide/ipad/move-resize-and-organize-windows-ipad1240f36f/ipados).
 
-##### Enable camera access while multitasking
+### Enable camera access while multitasking
 
 Set up a capture session to enable your app to capture photos or videos. See [Setting up a capture session](../AVFoundation/setting-up-a-capture-session.md) for more information. You can configure a capture session to allow use of the camera while multitasking if the current environment supports it. To determine if a capture session supports this feature, query its [`isMultitaskingCameraAccessSupported`](../AVFoundation/avcapturesession/ismultitaskingcameraaccesssupported.md). If this value is `true`, you can enable multitasking camera access by setting [`isMultitaskingCameraAccessEnabled`](../AVFoundation/avcapturesession/ismultitaskingcameraaccessenabled.md) to `true`, as the example below shows:
 
@@ -52,7 +52,7 @@ While multitasking, after an app finishes recording a video with [`AVCaptureMovi
 
 > ❗ **Important**:  Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](../BundleResources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md) entitlement to enable accessing the camera while multitasking.
 
-##### Configure your app for Split View or Slide Over mode
+### Configure your app for Split View or Slide Over mode
 
 When you enable multitasking camera access, your app doesn’t need to run in full-screen mode to use the camera. When it does run in full-screen mode, the camera continues to function in Slide Over mode and when the system presents a Picture in Picture window over your app. If you want to also run your app in Split View or Slide Over mode, follow these steps:
 
@@ -60,7 +60,7 @@ When you enable multitasking camera access, your app doesn’t need to run in fu
 2. Click the General tab.
 3. Deselect the “Requires full screen” checkbox.
 
-##### Respond to system pressure
+### Respond to system pressure
 
 Make your app resilient to increasing system pressure by monitoring the [`systemPressureState`](../AVFoundation/avcapturedevice/systempressurestate-swift.property.md) property on [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md), and take action to reduce the impact. When the pressure reaches excessive levels, the capture system shuts down and emits an [`wasInterruptedNotification`](../AVFoundation/avcapturesession/wasinterruptednotification.md) notification.
 
@@ -94,7 +94,7 @@ let systemPressureStateObservation = observe(\.self.device.systemPressureState,
 }
 ```
 
-##### Handle camera use interruptions
+### Handle camera use interruptions
 
 The system only allows one app to use the device’s camera at a time. Prepare your app to respond when another app starts using the camera. For example, if your app is running in Stage Manager and another app utilizes the camera, the system suspends your app’s use of the camera until the other app finishes. When the system interrupts your app’s use of the camera, it notifies your app so you can update your user interface.
 

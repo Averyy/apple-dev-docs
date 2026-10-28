@@ -24,7 +24,7 @@ static let audioCustom: CHHapticEvent.EventType
 extern CHHapticEventType CHHapticEventTypeAudioCustom;
 ```
 
-#### Discussion
+## Discussion
 
 Custom waveforms behave like transient events, with no looping.
 

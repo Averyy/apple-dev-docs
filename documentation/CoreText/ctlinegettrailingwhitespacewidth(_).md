@@ -25,11 +25,11 @@ func CTLineGetTrailingWhitespaceWidth(_ line: CTLine) -> Double
 extern double CTLineGetTrailingWhitespaceWidth(CTLineRef line);
 ```
 
-#### Return Value
+## Return Value
 
 The width of the line’s trailing whitespace. If the line is invalid, this function will always return zero.
 
-#### Discussion
+## Discussion
 
 Creating a line for a width can result in a line that is actually longer than the desired width due to trailing whitespace. Although this is typically not an issue due to whitespace being invisible, this function can be used to determine what amount of a line’s width is due to trailing whitespace.
 

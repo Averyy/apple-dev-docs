@@ -23,11 +23,11 @@ func leftViewRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) leftViewRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which to draw the left overlay view.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to place the left overlay view in a different location, you can override this method and return the new rectangle. Note that the drawing rectangle remains unchanged in a right-to-left user interface.
 

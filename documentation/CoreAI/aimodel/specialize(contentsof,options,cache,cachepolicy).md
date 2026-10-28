@@ -24,11 +24,11 @@ static func specialize(contentsOf modelURL: URL, options: SpecializationOptions 
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Return Value
+## Return Value
 
 The model, ready for inference on the current device.
 
-#### Discussion
+## Discussion
 
 This method performs specialization on the input `.aimodel` or `.aimodelc`, storing the resulting specialized assets in the specified cache.
 

@@ -19,7 +19,7 @@
 static bool SPRotation3DAlmostEqualToRotation(SPRotation3D r1, SPRotation3D r2, double tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two rotations are equal within the specified absolute tolerance.
 

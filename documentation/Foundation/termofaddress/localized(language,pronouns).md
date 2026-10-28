@@ -21,7 +21,7 @@ Returns a term of address restricted to a specific language for a group of prono
 static func localized(language: Locale.Language, pronouns: [Morphology.Pronoun]) -> TermOfAddress
 ```
 
-#### Return Value
+## Return Value
 
 A term of address associating a group of pronouns  to a specific language.
 

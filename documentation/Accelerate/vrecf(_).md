@@ -25,11 +25,11 @@ func vrecf(_: vFloat) -> vFloat
 extern vFloat vrecf(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector containing the reciprocals of the values in the source vector.
 
-##### Parameters
+### Parameters
 
 - **A**: The source vector
 

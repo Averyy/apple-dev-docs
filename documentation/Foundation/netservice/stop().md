@@ -26,7 +26,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate will receive [`netServiceDidStop(_:)`](../netservicedelegate/netservicedidstop%28_%29.md) after the service stops.
 

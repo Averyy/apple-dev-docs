@@ -15,11 +15,11 @@ Mark a buffer for delayed write.
 errno_t buf_bdwrite(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 EAGAIN for return_error != 0 case, 0 for succeess, errors from buf_bawrite.
 
-#### Discussion
+## Discussion
 
 Marks a buffer as waiting for delayed write and the current I/O as complete; data will be written to backing store before the buffer is reused, but it will not be queued for I/O immediately. Note that for buffers allocated with buf_alloc(), there are no such guarantees; you must take care of your own flushing to disk. If the number of delayed writes pending on the system is greater than an internal limit and the caller has not requested otherwise [see return_error] , buf_bdwrite() will unilaterally launch an asynchronous I/O with buf_bawrite() to keep the pile of delayed writes from getting too large.
 

@@ -13,13 +13,13 @@ Remotely and immediately restart a device.
 - macOS 10.13+
 - tvOS 10.2+
 
-#### Discussion
+## Discussion
 
 A passcode-locked iOS device doesn’t rejoin a Wi-Fi network after restarting, so it may not be able to communicate with the server.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

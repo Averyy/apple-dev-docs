@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_PROC_SUSPEND_RESUME: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_PROC_SUSPEND_RESUME
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`proc_suspend_resume`](./es_events_t/proc_suspend_resume.md), which has the type [`es_event_proc_suspend_resume_t`](./es_event_proc_suspend_resume_t.md).
 

@@ -20,7 +20,7 @@ func setImage(_ image: CGImage!, imageProperties metaData: [AnyHashable : Any]!)
 - (void) setImage:(CGImageRef) image imageProperties:(NSDictionary *) metaData;
 ```
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method.
 

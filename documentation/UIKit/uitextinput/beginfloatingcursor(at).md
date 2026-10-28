@@ -23,7 +23,7 @@ optional func beginFloatingCursor(at point: CGPoint)
 - (void) beginFloatingCursorAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user begins to perform a two-finger pan gesture to pick up the cursor. You can use this method to update the visual state of your text view. For example, you might use this method to display custom visual feedback for cursor movements.
 

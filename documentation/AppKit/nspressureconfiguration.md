@@ -19,7 +19,7 @@ class NSPressureConfiguration
 @interface NSPressureConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSPressureConfiguration`](./nspressureconfiguration.md) object to configure the behavior and progression of a Force Touch trackpad when it responds to a mouse drag or pressure event sequence. Pressure configurations are assigned to views ([`NSView`](./nsview.md)) and gesture recognizers ([`NSGestureRecognizer`](./nsgesturerecognizer.md)).
 

@@ -5,7 +5,7 @@
 
 Secure your communications with APNs to send API requests.
 
-#### Overview
+## Overview
 
 Use `HTTP/2` and `TLS 1.2` or later to establish a connection between your provider server and APNs server to send API requests. Based on the type of request you’re using, there’s a different development and production endpoint. If you’re shipping apps, use the production end points. If you’re testing, use the development endpoints. If you’re sending many remote notifications, you can establish multiple connections to these servers to improve performance.
 
@@ -13,7 +13,7 @@ APNs allows for multiple concurrent streams for each connection, but don’t ass
 
 If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes `JSON` data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [Handling notification responses from APNs](./handling-notification-responses-from-apns.md).
 
-##### Create a request to APNs
+### Create a request to APNs
 
 To send a notification to a person’s device, construct and send a POST notification to APNs. Send this request over the connection you created using `HTTP/2` and `TLS`. To create your POST notification, you must already have the following pieces of information:
 
@@ -24,7 +24,7 @@ To send a notification to a person’s device, construct and send a POST notific
 
 > **Note**: Depending on the connection you’re establishing with APNs, each request has a different path and header requirement.
 
-##### Send a request to APNs
+### Send a request to APNs
 
 APNs requires the use of HPACK (header compression for HTTP/2), which prevents repeatedly storing header keys and values. APNs maintains a small dynamic table for HPACK. To avoid filling up that table, encode your headers in the following way—especially when using many streams:
 
@@ -33,7 +33,7 @@ APNs requires the use of HPACK (header compression for HTTP/2), which prevents r
 
 If you are using token-based authentication, the `authorization` header value shouldn’t change frequently and can be indexed. If you are using separate connections for different push types, `apns-push-type` header value can also be indexed and reused. If you are using broadcast push notifications, the channel ID used for push notifications might not change often and can be indexed.
 
-##### Troubleshoot problems with connecting to APNs
+### Troubleshoot problems with connecting to APNs
 
 If your provider server is unable to connect to APNs, examine the following possible causes:
 

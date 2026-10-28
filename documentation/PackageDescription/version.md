@@ -12,7 +12,7 @@ A version according to the semantic versioning specification.
 struct Version
 ```
 
-#### Overview
+## Overview
 
 A package version consists of three integers separated by periods, for example `1.0.0`. It must conform to the semantic versioning standard in order to ensure that your package behaves in a predictable manner once developers update their package dependency to a newer version. To achieve predictability, the semantic versioning specification proposes a set of rules and requirements that dictate how version numbers are assigned and incremented. To learn more about the semantic versioning specification, visit [Semantic Versioning 2.0.0](https://semver.org).
 

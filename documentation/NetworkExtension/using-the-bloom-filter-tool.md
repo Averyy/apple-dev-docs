@@ -13,7 +13,7 @@ Create the files a URL filter needs for its Bloom prefilter.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 As described in [Filtering traffic by URL](./filtering-traffic-by-url.md), the [URL filters API](./url-filters.md) depends on a high-performance *Bloom filter* to make an initial assessment of whether to permit a given URL request. The [`NEFilterManager`](./nefiltermanager.md) applies the Bloom filter in memory and either permits the URL or relays the request to a [Private Information Retrieval](https://en.wikipedia.org/wiki/Private_information_retrieval) (PIR) server for futher analysis. This prefiltering approach allows the system to make a rapid decision on the vast majority of URLs. Even if a filter includes a million URLs to deny, the number of possible URLs to allow is greater by many orders of magnitude. For this reason, a prefilter that makes quick decisions for most URLs is a crucial feature for a URL filter.
 
@@ -21,7 +21,7 @@ The `SimpleURLFilter` sample contains a built-in Bloom filter and a configuratio
 
 > **Note**: This sample code project is associated with WWDC25 session 234: [Filter and tunnel network traffic with NetworkExtension](https://developer.apple.com/videos/play/wwdc25/234/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 1. In Xcode, set the scheme to build the BloomFilterTool target. This is a macOS-only tool, so you can accept the default destination of My Mac or change it to Any Mac.
 2. In Xcode, select your team as the developer team for all targets so Xcode automatically manages the provisioning profile. For more information, see [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4).
@@ -38,7 +38,7 @@ Note that if you choose not to install `protoc`, this build phase fails with a n
 
 In Xcode, use Product > Build (Cmd-B) to build the tool. Xcode places the resulting executable in the build products folder. You can access this executable in Xcode by opening the Products folder inside the BloomFilterTool target in the Project navigator. You can navigate to this directory in Terminal, or drag the executable to another location and run it from there.
 
-##### Run the Bloom filter tool
+### Run the Bloom filter tool
 
 Use Xcode’s Product > Run menu item to build and run the tool from within Xcode. This approach uses the `input_urls.txt` from the project file as a list of URLs to add to the filter. The scheme provided with the project also uses the `--verbose` command, so you can view the output in the Xcode console.
 
@@ -59,7 +59,7 @@ If the tool processes the input successfully, it produces two files, which by de
 
 You can change the default paths for these output files with command-line flags. Run the tool with the `-h` or `--help` flag to see a complete list of options.
 
-##### Create the Bloom filter data
+### Create the Bloom filter data
 
 The tool uses the sample’s `SwiftBloomFilter` framework target to write the Bloom filter data as a property list, containing the prefilter data and associated metadata. The sample’s `SimpleURLFilter` app also uses this framework to read in the filter data at runtime and provide it to the [`NEURLFilterManager`](./neurlfiltermanager.md). For the `BloomFilterTool`, the target uses the “Create Merged Binary” build setting to include the framework with the command-line executable, as described in [Configuring your project to use mergeable libraries](../Xcode/configuring-your-project-to-use-mergeable-libraries.md).
 

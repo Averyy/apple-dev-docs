@@ -15,11 +15,11 @@ System-provided implementation of "bwrite" vnop.
 int vn_bwrite(struct vnop_bwrite_args *ap);
 ```
 
-#### Return Value
+## Return Value
 
 Results of buf_bwrite directly.
 
-#### Discussion
+## Discussion
 
 This routine is available for filesystems which do not want to implement their own "bwrite" vnop. It just calls buf_bwrite() without modifying its arguments.
 

@@ -16,11 +16,11 @@ Is this command object currently executing?
 const Boolean (*IsExecuting)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the command object is executing.
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

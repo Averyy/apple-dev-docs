@@ -20,11 +20,11 @@ optional func textView(_ view: NSTextView, write cell: any NSTextAttachmentCellP
 - (BOOL) textView:(NSTextView *) view writeCell:(id<NSTextAttachmentCell>) cell atIndex:(NSUInteger) charIndex toPasteboard:(NSPasteboard *) pboard type:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the write succeeded, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The receiver should attempt to write the `cell` to `pboard` with the given `type`, and return success or failure.
 

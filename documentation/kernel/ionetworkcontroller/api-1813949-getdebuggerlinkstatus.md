@@ -12,11 +12,11 @@ virtual UInt32 getDebuggerLinkStatus(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Link status bits. See IONetworkMedium for the definition of the link status bits.
 
-#### Overview
+## Overview
 
 This method should be implemented by a driver that wishes to support early availability kernel debugging. After a debugger client has been attached through attachDebuggerClient(), this method will be called by the debugger to poll for link status availability only when the kernel debugger is active. This method may be called from the primary interrupt context. As a result, the implementation must avoid any memory allocation, not use spinlocks, and never block.
 

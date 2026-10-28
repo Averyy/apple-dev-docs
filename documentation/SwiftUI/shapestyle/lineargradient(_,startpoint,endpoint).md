@@ -31,7 +31,7 @@ Available when `Self` is `LinearGradient`.
 static func linearGradient(_ gradient: Gradient, startPoint: UnitPoint, endPoint: UnitPoint) -> LinearGradient
 ```
 
-#### Discussion
+## Discussion
 
 The gradient applies the color function along an axis, as defined by its start and end points. The gradient maps the unit space points into the bounding rectangle of each shape filled with the gradient.
 

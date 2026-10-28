@@ -25,7 +25,7 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 - (BOOL) getObjectValue:(id*) obj forString:(NSString *) string range:(NSRange *) rangep error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

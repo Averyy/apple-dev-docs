@@ -21,7 +21,7 @@ Creates a new Euler angles structure from the specified single-precision angles 
 init(angles: simd_float3, order: EulerAngles.Order)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 

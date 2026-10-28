@@ -22,7 +22,7 @@ case deviceOwnerAuthenticationWithCompanion
 LAPolicyDeviceOwnerAuthenticationWithCompanion
 ```
 
-#### Discussion
+## Discussion
 
 Companion authentication is required. If no nearby paired companion device can be found, LAErrorCompanionNotAvailable is returned.
 

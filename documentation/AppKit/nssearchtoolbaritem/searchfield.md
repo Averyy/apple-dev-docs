@@ -19,7 +19,7 @@ var searchField: NSSearchField { get set }
 @property (strong) NSSearchField * searchField;
 ```
 
-#### Discussion
+## Discussion
 
 When you set `searchField` to `nil`, it uses the default configuration for the toolbar item, and inherits the item’s properties and layout constraints. However, if you want to customize the search field, you’ll need to add those settings before assigning it to the toolbar item. For more information about customizing a search field, see [`NSSearchField`](../nssearchfield.md).
 

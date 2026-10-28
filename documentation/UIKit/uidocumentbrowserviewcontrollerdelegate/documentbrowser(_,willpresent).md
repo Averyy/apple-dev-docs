@@ -22,7 +22,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, wil
 - (void) documentBrowser:(UIDocumentBrowserViewController *) controller willPresentActivityViewController:(UIActivityViewController *) activityViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The document browser displays an activity view when the user shares a document (for example, when the user long presses a document and then chooses Share from the Edit Menu).
 

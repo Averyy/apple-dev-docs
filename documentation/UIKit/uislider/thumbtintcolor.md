@@ -22,7 +22,7 @@ var thumbTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * thumbTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property resets the thumb images back to the slider’s default images; any custom images are released by the slider. Setting this property to `nil` resets the tint color to the default and removes any custom thumb images.
 

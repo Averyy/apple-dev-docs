@@ -16,11 +16,11 @@ Request the kernel to unload a kext with a given bundle identifier.
 OSReturn KextManagerUnloadKextWithIdentifier(CFStringRef kextIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext is found and successfully unloaded, otherwise returns on error. See `/usr/include/libkern/OSKextLib.h` for error codes.
 
-#### Discussion
+## Discussion
 
 The calling process must have an effective user id of 0 (superuser).
 

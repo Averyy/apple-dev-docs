@@ -5,7 +5,7 @@
 
 Optimize a texture’s data to improve GPU or CPU access.
 
-#### Overview
+## Overview
 
 By default, Metal attempts to optimize a texture’s data for both GPU and CPU memory operations based on the texture’s storage mode and usage options. You can improve a texture’s performance on the GPU or CPU by optimizing the texture’s data for either use case. You can also opt out of optimization altogether. Optimizing a texture’s performance for one use can decrease that texture’s performance for another.
 
@@ -13,7 +13,7 @@ Before optimizing texture data, carefully consider the storage modes and usage o
 
 > **Note**:  Metal may not be able to optimize some textures for specific hardware and ignores optimization API calls for those textures.
 
-##### Optimize texture data for GPU access
+### Optimize texture data for GPU access
 
 By default, Metal attempts to optimize texture data for GPU access if it meets any of these conditions:
 
@@ -84,7 +84,7 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 
 To optimize a drawable from an [`MTKView`](../MetalKit/mtkview.md) for GPU access, set the view’s [`framebufferOnly`](../MetalKit/mtkview/framebufferonly.md) property to [`true`](../Swift/true.md). This property configures the texture exclusively as a render target and displayable resource.
 
-##### Optimize texture data for CPU access
+### Optimize texture data for CPU access
 
 By default, Metal attempts to optimize texture data for CPU access if it meets both of these conditions:
 
@@ -149,7 +149,7 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 [commandBuffer commit];
 ```
 
-##### Apply lossless compression to a texture on Apple GPUs
+### Apply lossless compression to a texture on Apple GPUs
 
 Lossless compression is a specific form of GPU optimization that Metal applies to a texture without discarding any of its data. Memory operations with textures that apply lossless compression typically need less memory bandwidth than equivalent memory operations with the same texture without compression. However, the overall memory footprint of a texture with lossless compression might increase slightly because it needs to store compression metadata. On devices that support [`MTLGPUFamily.apple5`](./mtlgpufamily/apple5.md), Metal attempts to apply lossless compression to a texture if it meets the following conditions:
 
@@ -164,7 +164,7 @@ Additionally, if you meet both of the following conditions, you can optimize you
 
 For guidance, see [Optimize texture data for GPU access](./optimizing-texture-data.md#Optimize-texture-data-for-GPU-access).
 
-##### Opt out of texture data optimization for GPU access
+### Opt out of texture data optimization for GPU access
 
 In some cases, your texture data may benefit from opting out of optimization for GPU access, for example, when optimization regresses your app’s performance (particularly for render target read-backs on the CPU).
 

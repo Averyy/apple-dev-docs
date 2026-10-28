@@ -32,7 +32,7 @@ var title: String { get }
 @property (atomic, copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this string as the title of the button that the user taps or selects in the notification interface.
 

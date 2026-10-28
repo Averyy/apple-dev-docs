@@ -20,7 +20,7 @@ Sets an attachment at an index.
 - (void) setObject:(MTL4RenderPipelineColorAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This function offers ‘copy’ semantics.
 

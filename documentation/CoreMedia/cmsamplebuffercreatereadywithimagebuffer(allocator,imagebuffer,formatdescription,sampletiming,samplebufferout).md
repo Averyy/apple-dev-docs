@@ -25,7 +25,7 @@ func CMSampleBufferCreateReadyWithImageBuffer(allocator: CFAllocator?, imageBuff
 extern OSStatus CMSampleBufferCreateReadyWithImageBuffer(CFAllocatorRef allocator, CVImageBufferRef imageBuffer, CMVideoFormatDescriptionRef formatDescription, const CMSampleTimingInfo *sampleTiming, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a `CMBlockBuffer`, which can reference many samples, a `CVImageBuffer` is defined to reference only one sample; therefore this routine has fewer parameters than `CMSampleBufferCreate`.
 

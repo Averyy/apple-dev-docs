@@ -21,7 +21,7 @@ The region code of the locale, or `nil` if it has none.
 var regionCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for the locale “zh-Hant-HK”, returns “HK”.
 

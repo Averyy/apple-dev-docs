@@ -29,7 +29,7 @@ protocol UIApplicationDelegate : NSObjectProtocol
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 Your app delegate object manages your app’s shared behaviors. The app delegate is effectively the root object of your app, and it works in conjunction with [`UIApplication`](./uiapplication.md) to manage some interactions with the system. Like the [`UIApplication`](./uiapplication.md) object, UIKit creates your app delegate object early in your app’s launch cycle so it’s always present.
 
@@ -43,7 +43,7 @@ Use your app delegate object to handle the following tasks:
 
 For more information about how you use the app delegate object to initialize your app at launch time, see [Responding to the launch of your app](./responding-to-the-launch-of-your-app.md).
 
-##### Life-cycle management in iOS 12 and earlier
+### Life-cycle management in iOS 12 and earlier
 
 In iOS 12 and earlier, you use your app delegate to manage major life cycle events in your app. Specifically, you use methods of the app delegate to update the state of your app when it enters the foreground or moves to the background.
 

@@ -5,7 +5,7 @@
 
 Enable people in Japan to launch your voice-based conversational app from the side button of iPhone.
 
-#### Overview
+## Overview
 
 The `.assistant` domain defines a single app intent schema, [`activate`](./appschema/assistantintent/activate.md), that registers your app as a side button action on iPhone. This schema is available only in Japan.
 

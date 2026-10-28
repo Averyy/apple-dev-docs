@@ -16,11 +16,11 @@ Gets the return-to-service configuration from the server.
 
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 The device sends the `ReturnToService` message when the user triggers a return to service, or when the device’s idle timeout expires. The device only sends this message when it’s in the return-to-service mode that its Automated Device Enrollment profile sets.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

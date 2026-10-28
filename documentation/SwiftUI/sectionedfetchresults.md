@@ -22,7 +22,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 @preconcurrency struct SectionedFetchResults<SectionIdentifier, Result> where SectionIdentifier : Hashable, Result : NSFetchRequestResult
 ```
 
-#### Overview
+## Overview
 
 Use a `SectionedFetchResults` instance to show or edit Core Data managed objects, grouped into sections, in your app’s user interface. If you don’t need sectioning, use [`FetchedResults`](./fetchedresults.md) instead.
 

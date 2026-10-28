@@ -24,7 +24,7 @@ func JSStringCreateWithCharacters(_ chars: UnsafePointer<JSChar>!, _ numChars: I
 JSStringRefJSStringCreateWithCharacters(const JSChar *chars, size_t numChars);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) that contains `chars`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

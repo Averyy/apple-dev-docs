@@ -19,11 +19,11 @@ optional func tableView(_ tableView: NSTableView, userCanChangeVisibilityOf colu
 - (BOOL) tableView:(NSTableView *) tableView userCanChangeVisibilityOfTableColumn:(NSTableColumn *) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user can change the visibility of the column; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Implement this method to enable the table view to provide a menu that allows users to show or hide table columns.
 

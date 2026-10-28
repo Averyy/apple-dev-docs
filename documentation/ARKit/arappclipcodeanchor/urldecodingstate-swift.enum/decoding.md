@@ -20,7 +20,7 @@ case decoding
 ARAppClipCodeURLDecodingStateDecoding
 ```
 
-#### Discussion
+## Discussion
 
 The App Clip Code anchor’s [`url`](../url.md) is `nil` in this state.
 

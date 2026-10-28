@@ -27,7 +27,7 @@ string status
 - [Reporting unrecognized and transactionless tokens](./reportwithouttransactions.md)
 - [External Purchase Server API changelog](./changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`status`](./status.md) property indicates whether the token you’re reporting has any associated transactions. You provide this property in the [`ExternalPurchaseReport`](./externalpurchasereport.md) request body when you call the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint.
 

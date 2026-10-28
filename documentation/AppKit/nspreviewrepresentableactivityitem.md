@@ -19,7 +19,7 @@ protocol NSPreviewRepresentableActivityItem : NSObjectProtocol
 @protocol NSPreviewRepresentableActivityItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`NSPreviewRepresentableActivityItem`](./nspreviewrepresentableactivityitem.md) interface in custom types your app makes available for sharing. Use this protocol to specify the item itself and a title and image the share sheet can use to create a preview for your item. To share the item from your app, initialize the [`NSSharingServicePicker`](./nssharingservicepicker.md) object with the object that adopts this protocol.
 

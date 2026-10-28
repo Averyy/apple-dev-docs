@@ -25,11 +25,11 @@ func vImagePermuteChannelsWithMaskedInsert_ARGB16U(_ src: UnsafePointer<vImage_B
 vImage_Error vImagePermuteChannelsWithMaskedInsert_ARGB16U(const vImage_Buffer *src, const vImage_Buffer *dest, const uint8_t permuteMap[4], uint8_t copyMask, const Pixel_ARGB_16U backgroundColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This fused operation provides the same functionality as [`vImagePermuteChannels_ARGB16U(_:_:_:_:)`](./vimagepermutechannels_argb16u%28_,_,_,_%29.md) followed by `vImageOverwriteChannelsWithScalar_ARGB16U` but offers higher performance than calling the two functions separately.
 

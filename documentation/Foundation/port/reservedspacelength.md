@@ -25,7 +25,7 @@ var reservedSpaceLength: Int { get }
 @property (readonly) NSUInteger reservedSpaceLength;
 ```
 
-#### Discussion
+## Discussion
 
 The number of bytes reserved by the receiver for sending data. The default length is `0`.
 

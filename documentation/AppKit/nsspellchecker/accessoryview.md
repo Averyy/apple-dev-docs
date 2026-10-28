@@ -19,7 +19,7 @@ var accessoryView: NSView? { get set }
 @property (strong, nullable) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 The accessory view can be any custom view you want to display with the spelling panel. The accessory view is displayed below the spelling checker and the panel automatically resizes to accommodate the accessory view.
 

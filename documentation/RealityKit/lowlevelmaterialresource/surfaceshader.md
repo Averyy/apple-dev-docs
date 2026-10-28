@@ -18,7 +18,7 @@ A compiled Metal function that implements the surface shader function.
 final class SurfaceShader
 ```
 
-#### Overview
+## Overview
 
 Create a `SurfaceShader` by compiling a [`LowLevelMaterialResource.SurfaceShader.Descriptor`](./surfaceshader/descriptor.md) with [`makeSurfaceShader(descriptor:)`](../lowlevelrendercontext/makesurfaceshader%28descriptor%29-66tq8.md), or use [`makeSimpleSurfaceShader(descriptor:)`](../lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-74vhb.md) for the built-in simple surface shader function.
 

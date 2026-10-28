@@ -23,7 +23,7 @@ protocol SFSpeechRecognitionTaskDelegate : NSObjectProtocol
 @protocol SFSpeechRecognitionTaskDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The methods of this protocol give you fine-grained control over the speech recognition process. Specifically, you use this protocol when you want to know the following:
 

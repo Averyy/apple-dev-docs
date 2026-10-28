@@ -21,7 +21,7 @@ Could not write because the string encoding was not applicable.
 NSFileWriteInapplicableStringEncodingError
 ```
 
-#### Discussion
+## Discussion
 
 Access the bad encoding from the `userInfo` dictionary using the [`NSStringEncodingErrorKey`](./nsstringencodingerrorkey.md) key.
 

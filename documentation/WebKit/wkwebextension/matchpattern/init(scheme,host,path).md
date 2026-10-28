@@ -23,7 +23,7 @@ init(scheme: String, host: String, path: String) throws
 - (instancetype) initWithScheme:(NSString *) scheme host:(NSString *) host path:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pattern object, or `nil` if any of the strings are invalid and an error will be set.
 

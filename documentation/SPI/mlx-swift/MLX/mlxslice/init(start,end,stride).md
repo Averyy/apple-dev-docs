@@ -17,7 +17,7 @@ Initialize an MLXSlice with its optional parameters.
 init(start: Int32? = nil, end: Int32? = nil, stride: Int32? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This is typically caled by the range expressions which implement [`MLXArrayIndex`](../mlxarrayindex.md):
 

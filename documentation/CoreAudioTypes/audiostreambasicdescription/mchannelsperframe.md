@@ -25,7 +25,7 @@ var mChannelsPerFrame: UInt32
 UInt32 mChannelsPerFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be nonzero.
 

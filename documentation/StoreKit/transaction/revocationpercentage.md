@@ -22,7 +22,7 @@ The percentage of the transaction amount that the App Store has refunded or revo
 var revocationPercentage: Decimal? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the rounded percentage of the purchase amount that the App Store has refunded or revoked.
 

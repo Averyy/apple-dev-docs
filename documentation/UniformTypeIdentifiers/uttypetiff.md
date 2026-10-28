@@ -21,7 +21,7 @@ A type that represents a TIFF image.
 extern UTType * const UTTypeTIFF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.tiff`.
 

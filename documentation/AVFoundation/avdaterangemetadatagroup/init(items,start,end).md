@@ -25,11 +25,11 @@ init(items: [AVMetadataItem], start startDate: Date, end endDate: Date?)
 - (instancetype) initWithItems:(NSArray<AVMetadataItem *> *) items startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `AVDateRangeMetadataGroup`.
 
-#### Discussion
+## Discussion
 
 Creates a new instance of `AVDateRangeMetadataGroup` with the specified collection of metadata items. The `startDate` and `endDate` arguments define the effective time range on the timeline to which the metadata applies.
 

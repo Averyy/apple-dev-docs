@@ -20,7 +20,7 @@ Creates a spatial force falloff.
 init(bounds: ForceEffectBounds, rate: Double = 1.0, distanceOffset: Double = 0)
 ```
 
-#### Discussion
+## Discussion
 
 - When the rate is **0**, no falloff occurs. (Rigid bodies outside the bounds are culled.)
 - When the rate is **greater than 0 and less than 1.0**, falloff occurs slower and is sublinear.

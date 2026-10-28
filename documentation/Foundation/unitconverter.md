@@ -25,22 +25,22 @@ class UnitConverter
 @interface NSUnitConverter : NSObject
 ```
 
-#### Overview
+## Overview
 
 For units that can be converted by a scale factor or linear equation, use the concrete subclass [`UnitConverterLinear`](./unitconverterlinear.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 [`UnitConverter`](./unitconverter.md) is an abstract class that is intended for subclassing. You can implement your own subclass of [`UnitConverter`](./unitconverter.md) to convert between units according to any desired mapping function. For example, units may be converted using a logarithmic, exponential, or quantile scale.
 
-###### Methods to Override
+#### Methods to Override
 
 All subclasses must fully implement the following methods:
 
 - [`baseUnitValue(fromValue:)`](./unitconverter/baseunitvalue%28fromvalue%29.md)
 - [`value(fromBaseUnitValue:)`](./unitconverter/value%28frombaseunitvalue%29.md)
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 As stated above, most physical units can be converted using a linear equation with [`UnitConverterLinear`](./unitconverterlinear.md). You should only create a custom subclass of [`UnitConverter`](./unitconverter.md) for units that cannot be converted in this way.
 

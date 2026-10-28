@@ -25,7 +25,7 @@ func makeSampleCursorAtLastSampleInDecodeOrder() -> AVSampleCursor?
 - (AVSampleCursor *) makeSampleCursorAtLastSampleInDecodeOrder;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVSampleCursor`](../avsamplecursor.md).
 

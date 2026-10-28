@@ -25,7 +25,7 @@ func CGRectGetMinX(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetMinX(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The smallest value for the x-coordinate of the rectangle.
 

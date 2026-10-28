@@ -18,7 +18,7 @@ A data object containing the structure input from the IOKit connect method.
 OSData * structureInput;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the data as an [`OSData`](../osdata.md) object.
 

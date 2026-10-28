@@ -26,7 +26,7 @@ func deferQueryRequestToNetwork() async throws -> ILNetworkResponse
 - (void) deferQueryRequestToNetworkWithCompletion:(void (^)(ILNetworkResponse *response, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When your Message Filter app extension calls this method to defer a query to its associated server, the system performs an HTTPS network request to a URL specified in the app extension’s `Info.plist` file. The system returns the response to that request (or an error) asynchronously in an [`ILNetworkResponse`](../ilnetworkresponse.md) object.
 

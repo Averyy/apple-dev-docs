@@ -17,7 +17,7 @@ The defined targeted audience by locality.
 object LocalityCriteria
 ```
 
-#### Discussion
+## Discussion
 
 A `locality` is a city or the equivalent according to its associated `adminArea`.
 

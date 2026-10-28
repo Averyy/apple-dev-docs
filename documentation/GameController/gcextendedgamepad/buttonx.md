@@ -24,7 +24,7 @@ var buttonX: GCControllerButtonInput { get }
 @property (nonatomic, readonly) GCControllerButtonInput * buttonX;
 ```
 
-#### Discussion
+## Discussion
 
 The face buttons in the extended gamepad profile may be either analog or digital buttons.
 

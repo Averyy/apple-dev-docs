@@ -5,7 +5,7 @@
 
 The body landmarks that Vision detects.
 
-#### Overview
+## Overview
 
 The illustration below shows the nineteen body points that you can detect with [`VNDetectHumanBodyPoseRequest`](./vndetecthumanbodyposerequest.md).
 

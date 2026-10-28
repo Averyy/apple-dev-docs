@@ -16,11 +16,11 @@ Dynamically requests a system behavior from the power management system.
 IOReturn IOPMAssertionCreate(CFStringRef AssertionType, IOPMAssertionLevel AssertionLevel, IOPMAssertionID *AssertionID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, any other return indicates PM could not successfully activate the specified assertion.
 
-#### Discussion
+## Discussion
 
 No special privileges necessary to make this call - any process may activate a power assertion.
 

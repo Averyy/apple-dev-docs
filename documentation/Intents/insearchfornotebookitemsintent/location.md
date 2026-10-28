@@ -34,7 +34,7 @@ var location: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * location;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`locationSearchType`](./locationsearchtype.md) property is [`INLocationSearchType.byLocationTrigger`](../inlocationsearchtype/bylocationtrigger.md), search for reminders delivered when the user is near the location specified by this property.
 

@@ -17,7 +17,7 @@ A traffic class for general-purpose network traffic without specific QoS require
 case any
 ```
 
-#### Discussion
+## Discussion
 
 This traffic class doesn’t specify particular quality-of-service requirements, so you can use it for general-purpose network traffic. Network slices that don’t have specific traffic class restrictions return this value for their [`trafficClass`](../slice/trafficclass.md) property.
 

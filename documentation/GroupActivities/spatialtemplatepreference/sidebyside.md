@@ -15,7 +15,7 @@ An arrangement where the participants sit in a line with the content in front of
 static let sideBySide: SpatialTemplatePreference
 ```
 
-#### Discussion
+## Discussion
 
 The participants are side by side and face your app’s shared content. This arrangement works best for windows and other vertically oriented content. For example, you might use it for a group of participants watching a movie. However, you can apply it to any for other content configurations.
 

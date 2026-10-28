@@ -27,7 +27,7 @@ var subscriptionPeriod: SKProductSubscriptionPeriod { get }
 @property (nonatomic, readonly) SKProductSubscriptionPeriod * subscriptionPeriod;
 ```
 
-#### Discussion
+## Discussion
 
 This object represents the duration of a single subscription period. A period is described as a number of units, where a unit can be a [`SKProduct.PeriodUnit.day`](../skproduct/periodunit/day.md), [`SKProduct.PeriodUnit.month`](../skproduct/periodunit/month.md), [`SKProduct.PeriodUnit.week`](../skproduct/periodunit/week.md), or [`SKProduct.PeriodUnit.year`](../skproduct/periodunit/year.md).
 

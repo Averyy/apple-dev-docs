@@ -16,7 +16,7 @@ Submits this ORB for execution.
 IOReturn (*submitORB)(void *self);
 ```
 
-#### Discussion
+## Discussion
 
 Submits this ORB for execution
 

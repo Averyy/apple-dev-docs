@@ -21,7 +21,7 @@ Creates a `Stat` struct from an `UnsafePointer<CChar>` path and `Flags`, includi
 init(_ path: UnsafePointer<CChar>, relativeTo fd: FileDescriptor, flags: Stat.Flags, retryOnInterrupt: Bool = true) throws(Errno)
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is absolute (starts with a forward slash), then `fd` is ignored. If `path` is relative, it is resolved against the directory given by `fd`.
 

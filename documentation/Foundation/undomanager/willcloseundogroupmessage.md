@@ -21,7 +21,7 @@ A message that an undo manager sends before closing an undo group.
 struct WillCloseUndoGroupMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`endUndoGrouping()`](./endundogrouping%28%29.md). Because this is a “will”-style message, the undo manager sends the message before it closes the undo group.
 

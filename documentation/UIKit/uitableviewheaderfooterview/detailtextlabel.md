@@ -25,7 +25,7 @@ var detailTextLabel: UILabel? { get }
 @property (nonatomic, strong, readonly, nullable) UILabel * detailTextLabel;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only for tables configured with [`UITableView.Style.grouped`](../uitableview/style-swift.enum/grouped.md).
 

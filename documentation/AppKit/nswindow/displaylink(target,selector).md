@@ -19,7 +19,7 @@ func displayLink(target: Any, selector: Selector) -> CADisplayLink
 - (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is not on any display the callback will not be invoked.
 

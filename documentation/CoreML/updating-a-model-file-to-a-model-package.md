@@ -5,7 +5,7 @@
 
 Convert a Core ML model file into a model package in Xcode.
 
-#### Overview
+## Overview
 
 A Core ML model package is a file-system structure that can store a model in separate files, similar to an app bundle. Model packages offer more flexibility and extensibility than Core ML model files, including editable metadata and separation of a model’s architecture from its weights and biases. Update your model file to a model package by converting the model in Xcode.
 

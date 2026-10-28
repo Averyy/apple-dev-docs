@@ -16,7 +16,7 @@ get tracksUserLocation(): boolean;
 set tracksUserLocation(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to center the map on the user location annotation. Enabling this property automatically enables [`showsUserLocation`](./showsuserlocation.md).
 

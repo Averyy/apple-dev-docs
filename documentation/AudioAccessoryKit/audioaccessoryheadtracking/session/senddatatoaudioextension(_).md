@@ -15,7 +15,7 @@ Forward a frame of IMU sensor data from the accessory to the Spatial Audio rende
 final func sendDataToAudioExtension(_ data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `AudioAccessoryError.invalidDataSize` if `data` is empty or larger than 70 bytes; `AudioAccessoryError.notActivated` if the session is not currently active.
 

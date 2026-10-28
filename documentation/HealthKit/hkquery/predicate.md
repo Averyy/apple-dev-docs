@@ -24,7 +24,7 @@ var predicate: NSPredicate? { get }
 @property (strong, readonly, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 If the predicate is `nil`, the query does not filter its results. Instead, it returns all the objects matching the query’s other parameters.
 

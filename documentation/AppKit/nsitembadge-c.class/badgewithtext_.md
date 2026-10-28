@@ -16,7 +16,7 @@ Creates a badge displaying a text.
 + (NSItemBadge *) badgeWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSItemBadge` instance with the specified text.
 

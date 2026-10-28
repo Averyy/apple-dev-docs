@@ -25,11 +25,11 @@ init(bitmapRepresentation data: Data)
 + (NSCharacterSet *) characterSetWithBitmapRepresentation:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing characters determined by `data`.
 
-#### Discussion
+## Discussion
 
 This method is useful for creating a character set object with data from a file or other external data source.
 

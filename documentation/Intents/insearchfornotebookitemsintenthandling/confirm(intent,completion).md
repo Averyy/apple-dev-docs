@@ -29,7 +29,7 @@ optional func confirm(intent: INSearchForNotebookItemsIntent) async -> INSearchF
 - (void) confirmSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent completion:(void (^)(INSearchForNotebookItemsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can perform the search based on the provided criteria, but do not perform the search yet. If performing the search involves contacting a remote server, validate that your server is available and ready to handle requests. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to perform the search.
 

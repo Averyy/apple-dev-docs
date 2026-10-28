@@ -28,7 +28,7 @@ protocol AVCapturePhotoCaptureDelegate : NSObjectProtocol
 - [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Saving captured photos](./saving-captured-photos.md)
 
-#### Overview
+## Overview
 
 You implement methods in the [`AVCapturePhotoCaptureDelegate`](./avcapturephotocapturedelegate.md) protocol to be notified of progress and results when capturing photos with the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class.
 

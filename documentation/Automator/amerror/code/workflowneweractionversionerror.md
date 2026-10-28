@@ -20,7 +20,7 @@ case workflowNewerActionVersionError
 AMWorkflowNewerActionVersionError
 ```
 
-#### Discussion
+## Discussion
 
 This error is presented to the user as a warning.
 

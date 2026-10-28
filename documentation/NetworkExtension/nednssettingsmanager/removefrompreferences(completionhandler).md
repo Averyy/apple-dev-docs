@@ -27,7 +27,7 @@ func removeFromPreferences() async throws
 - (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After you remove your configuration, the `NEDNSSettingsManager` object still contains the configuration parameters. Calling [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md) clears out the configuration parameters from the `NEDNSSettingsManager` object.
 

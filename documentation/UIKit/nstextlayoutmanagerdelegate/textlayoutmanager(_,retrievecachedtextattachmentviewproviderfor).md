@@ -23,7 +23,7 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, retrie
 - (NSTextAttachmentViewProvider *) textLayoutManager:(NSTextLayoutManager *) textLayoutManager retrieveCachedTextAttachmentViewProviderForTextAttachment:(NSTextAttachment *) attachment;
 ```
 
-#### Return Value
+## Return Value
 
 A previously cached view provider, or `nil`.
 

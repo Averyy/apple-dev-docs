@@ -27,7 +27,7 @@ optional func confirm(intent: INRequestPaymentIntent) async -> INRequestPaymentI
 - (void) confirmRequestPayment:(INRequestPaymentIntent *) intent completion:(void (^)(INRequestPaymentIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that the transaction is possible. You might use this method to validate that the user’s logged in status and can request funds from other users. At some point in your implementation, execute the provided completion block with a response object containing the request details. Siri displays the provided information to the user during the confirmation process.
 

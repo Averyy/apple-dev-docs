@@ -25,7 +25,7 @@ var isMicrophoneMuted: Bool { get set }
 @property (nonatomic, getter=isMicrophoneMuted) BOOL microphoneMuted;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the user’s microphone is turned off; [`false`](../../Swift/false.md) if the user’s speech is being transmitted to remote participants. The default is [`false`](../../Swift/false.md).
 

@@ -16,7 +16,7 @@ No flags (use the default behavior).
 kSecCSDefaultFlags
 ```
 
-#### Discussion
+## Discussion
 
 Do not mix this value with other flag values.
 

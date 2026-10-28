@@ -25,11 +25,11 @@ convenience init(data: Data?, primitiveType: SCNGeometryPrimitiveType, primitive
 + (instancetype) geometryElementWithData:(NSData *) data primitiveType:(SCNGeometryPrimitiveType) primitiveType primitiveCount:(NSInteger) primitiveCount bytesPerIndex:(NSInteger) bytesPerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry element object.
 
-#### Discussion
+## Discussion
 
 An element’s data is an array of index values identifying vertices in a geometry source. SceneKit interprets the data as an array of unsigned integers (whose size is specified by the `bytesPerIndex` parameter), and then connects the vertices in the order specified by this array, arranged according to the `primitiveType` parameter.
 

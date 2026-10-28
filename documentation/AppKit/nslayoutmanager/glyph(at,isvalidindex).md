@@ -21,11 +21,11 @@ func glyph(at glyphIndex: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) ->
 - (NSGlyph) glyphAtIndex:(NSUInteger) glyphIndex isValidIndex:(BOOL *) isValidIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph at the requested index, or `NSNullGlyph` if the requested index is out of the range `{0,` ``NSLayoutManager/numberOfGlyphs```}`.
 
-#### Discussion
+## Discussion
 
 If noncontiguous layout is not enabled, this method causes generation of all glyphs up to and including `glyphIndex`.
 

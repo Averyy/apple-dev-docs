@@ -21,7 +21,7 @@ The C ‘char’ type.
 typealias CChar = Int8
 ```
 
-#### Discussion
+## Discussion
 
 This will be the same as either `CSignedChar` (in the common case) or `CUnsignedChar`, depending on the platform.
 

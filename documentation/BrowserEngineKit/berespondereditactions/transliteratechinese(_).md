@@ -22,7 +22,7 @@ optional func transliterateChinese(_ sender: Any?)
 - (void) transliterateChinese:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To invoke the standard system behavior for transliterating Chinese text, call [`transliterateChinese(forText:)`](../betextinteraction/transliteratechinese%28fortext%29.md) in your implementation of this method.
 

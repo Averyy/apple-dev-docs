@@ -18,11 +18,11 @@ Determines whether the searchable object allows replacement of the text range yo
 - (BOOL) shouldReplaceFoundTextInRange:(UITextRange *) range inDocument:(UITextSearchDocumentIdentifier) document withText:(NSString *) replacementText;
 ```
 
-#### Return Value
+## Return Value
 
 Return `No` to prevent the replacement of a particular text range.
 
-#### Discussion
+## Discussion
 
 Returning `NO` from this method disables the “replace” button in the find panel. If you don’t implement this method, the system assumes all results are replacable.
 

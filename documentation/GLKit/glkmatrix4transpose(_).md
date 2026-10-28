@@ -22,7 +22,7 @@ func GLKMatrix4Transpose(_ matrix: GLKMatrix4) -> GLKMatrix4
 static GLKMatrix4 GLKMatrix4Transpose(GLKMatrix4 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that is the transpose of the original matrix.
 

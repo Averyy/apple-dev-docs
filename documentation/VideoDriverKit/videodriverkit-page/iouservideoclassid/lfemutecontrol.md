@@ -15,7 +15,7 @@ A Boolean control where true means that mute is enabled, making that LFE element
 LFEMuteControl
 ```
 
-#### Discussion
+## Discussion
 
 This control is for LFE channels that result from bass management. Note that LFE channels that are represented as normal audio channels must use an VideoMuteControl.
 

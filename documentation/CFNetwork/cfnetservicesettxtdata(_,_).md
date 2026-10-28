@@ -26,15 +26,15 @@ func CFNetServiceSetTXTData(_ theService: CFNetService, _ txtRecord: CFData) -> 
 extern Boolean CFNetServiceSetTXTData(CFNetServiceRef theService, CFDataRef txtRecord);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the TXT record was set; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function sets a TXT record for the specified service. If the service is currently registered on the network, the record is broadcast. Setting a TXT record on a service that is still being resolved is not allowed.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

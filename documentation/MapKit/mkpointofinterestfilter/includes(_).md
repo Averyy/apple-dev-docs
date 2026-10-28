@@ -25,7 +25,7 @@ func includes(_ category: MKPointOfInterestCategory) -> Bool
 - (BOOL) includesCategory:(MKPointOfInterestCategory) category;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the filter includes the point of interest category; otherwise, `false`.
 

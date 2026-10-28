@@ -19,7 +19,7 @@ init!(data: Data!, url URL: URL!, mimeType MIMEType: String!, textEncodingName: 
 - (instancetype) initWithData:(NSData *) data URL:(NSURL *) URL MIMEType:(NSString *) MIMEType textEncodingName:(NSString *) textEncodingName frameName:(NSString *) frameName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web resource.
 

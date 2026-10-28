@@ -17,7 +17,7 @@ case cwInvalidAKMPErr
 kCWInvalidAKMPErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid authentication selector requested.
 

@@ -24,7 +24,7 @@ func JSValueIsNumber(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 bool JSValueIsNumber(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the type of `value` is the number type; otherwise, [`false`](../Swift/false.md).
 

@@ -23,7 +23,7 @@ case pastMaxDepth
 CMWaterSubmersionDepthStatePastMaxDepth
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the maximum depth based on the entitlement that your app uses, as shown in this table:
 

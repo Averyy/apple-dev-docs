@@ -24,7 +24,7 @@ class VSAccountManagerResult
 @interface VSAccountManagerResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system returns this object to your app when you app calls [`enqueue(_:completionHandler:)`](./vsaccountmanager/enqueue%28_,completionhandler%29.md). Use this object to cancel the request with [`cancel()`](./vsaccountmanagerresult/cancel%28%29.md) while the request is in progress.
 

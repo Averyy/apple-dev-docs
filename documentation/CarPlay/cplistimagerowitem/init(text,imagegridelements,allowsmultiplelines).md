@@ -21,7 +21,7 @@ init(text: String?, imageGridElements elements: [CPListImageRowItemImageGridElem
 - (instancetype) initWithText:(NSString *) text imageGridElements:(NSArray<CPListImageRowItemImageGridElement *> *) elements allowsMultipleLines:(BOOL) allowsMultipleLines;
 ```
 
-#### Discussion
+## Discussion
 
 If a nil @c text property is provided the cell will resize accordingly to hide the title.
 

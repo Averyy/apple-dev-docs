@@ -25,11 +25,11 @@ class func regionMonitoringEnabled() -> Bool
 + (BOOL) regionMonitoringEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if region monitoring is available and is currently enabled; [`false`](../../Swift/false.md) if it is unavailable or not enabled.
 
-#### Discussion
+## Discussion
 
 In iOS, the user can enable or disable location services (including region monitoring) using the controls in Settings > Location Services.
 

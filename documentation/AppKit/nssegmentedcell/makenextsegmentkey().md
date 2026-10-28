@@ -19,7 +19,7 @@ func makeNextSegmentKey()
 - (void) makeNextSegmentKey;
 ```
 
-#### Discussion
+## Discussion
 
 The next segment is the one to the right of the currently selected segment. For the last segment, the selection wraps back to the beginning of the control.
 

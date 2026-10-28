@@ -24,7 +24,7 @@ static let visibleName: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorVisibleNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an optional [`NSString`](../../../Foundation/nsstring.md) object that specifies the font’s visible name.
 

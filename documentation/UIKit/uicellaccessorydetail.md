@@ -19,7 +19,7 @@ The detail system accessory.
 @interface UICellAccessoryDetail : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A detail cell accessory displays as the system information button. This accessory appears on the trailing edge of the cell.
 

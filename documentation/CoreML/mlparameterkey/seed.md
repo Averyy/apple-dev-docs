@@ -25,7 +25,7 @@ class var seed: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * seed;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`seed`](./seed.md) key is an [`Int64`](../../Swift/int64.md).
 

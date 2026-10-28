@@ -24,7 +24,7 @@ let kVTPixelTransferPropertyKey_DownsamplingMode: CFString
 extern CFStringRef const kVTPixelTransferPropertyKey_DownsamplingMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored if chroma downsampling is not performed.
 

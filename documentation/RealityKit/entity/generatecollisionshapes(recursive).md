@@ -25,7 +25,7 @@ Creates the shape used to detect collisions between two entities that have colli
 
 - [Reducing CPU Utilization in Your RealityKit App](../reducing-cpu-utilization-in-your-realitykit-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method on entities that have a mesh to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](../collisioncomponent.md) instance.
 

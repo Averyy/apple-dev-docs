@@ -24,7 +24,7 @@ var fullSizeImageOrientation: Int32 { get }
 @property (assign, readonly) int fullSizeImageOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a raw numeric value describing the encoded image orientation according to the TIFF and Exif specifications. To more easily work with such values, convert this value to the [`CGImagePropertyOrientation`](../../ImageIO/cgimagepropertyorientation.md) type.
 

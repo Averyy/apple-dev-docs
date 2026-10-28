@@ -19,11 +19,11 @@ func urlsForApplications(toOpen url: URL) -> [URL]
 - (NSArray<NSURL *> *) URLsForApplicationsToOpenURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An array of URLs to available apps that can open the specified `url`. Returns an empty array if no app can open the URL, or if the file URL doesn’t exist.
 
-#### Discussion
+## Discussion
 
 The system sorts the resulting array according to each app’s suitability to open the URL. The returned array lists the best match first.
 

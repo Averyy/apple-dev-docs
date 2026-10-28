@@ -18,7 +18,7 @@ typedef struct UnicodeMapping {
 } UnicodeMapping;
 ```
 
-#### Overview
+## Overview
 
 A Unicode mapping structure contains a complete text encoding specification for a Unicode encoding, a complete non-Unicode text encoding specification giving the encoding for the text to be converted to or from Unicode, and the version of the mapping table to be used for conversion. You use a structure of this type to specify the text encodings to and from which the text string is to be converted. A Unicode mapping structure is defined by the `UnicodeMapping` data type. 
 

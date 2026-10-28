@@ -24,7 +24,7 @@ static var preferFastBuild: MTLAccelerationStructureUsage { get }
 MTLAccelerationStructureUsagePreferFastBuild
 ```
 
-#### Discussion
+## Discussion
 
 Apply this option when you need to reduce the time when creating or refitting an acceleration structure, such as from code that’s sensitive to runtime performance.
 

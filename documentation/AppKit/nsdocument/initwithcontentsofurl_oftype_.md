@@ -17,7 +17,7 @@ Initializes and returns a document object of a given type.
 - (id) initWithContentsOfURL:(NSURL *) url ofType:(NSString *) typeName;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes and returns an `NSDocument` object of document type `docType` containing data stored at `aURL`. In opening the location, invokes the [`readFromURL:ofType:`](./readfromurl_oftype_.md) method. If the document successfully opens the location, it updates [`fileURL`](./fileurl.md) and [`fileType`](./filetype.md). If the location cannot be opened, or the document is unable to load the contents of the location, this method returns `nil`. This initializer is typically invoked by the `NSDocumentController` method [`makeDocumentWithContentsOfURL:ofType:`](../nsdocumentcontroller/makedocumentwithcontentsofurl_oftype_.md).
 

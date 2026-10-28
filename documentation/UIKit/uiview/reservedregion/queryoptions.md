@@ -19,7 +19,7 @@ Options for querying reserved regions.
 struct QueryOptions
 ```
 
-#### Overview
+## Overview
 
 Pass query options to [`reservedRegions(kind:options:)`](../reservedregions%28kind,options%29.md) to change which regions you get.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the search results include queries.
 includeQueries?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

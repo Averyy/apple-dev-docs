@@ -24,7 +24,7 @@ static let textureCPUCacheMode: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionTextureCPUCacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a [`MTLCPUCacheMode`](../../../Metal/mtlcpucachemode.md) value.
 

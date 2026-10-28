@@ -25,7 +25,7 @@ init(unordered: [ToolExpectation])
 
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Discussion
+## Discussion
 
 Unordered-only expectations always allow additional calls.
 

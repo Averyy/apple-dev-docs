@@ -19,11 +19,11 @@ func constraint(greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnch
 - (NSLayoutConstraint *) constraintGreaterThanOrEqualToSystemSpacingBelowAnchor:(NSLayoutYAxisAnchor *) anchor multiplier:(CGFloat) multiplier;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that imposes a minimum distance between the current anchor and the object in the `anchor` parameter.
 
-#### Discussion
+## Discussion
 
 The constraint causes the current anchor to be positioned below the object in the `anchor` parameter. The minimum distance between the two anchors is determined by multiplying the system spacing by the value in the `multiplier` parameter. The value of the system spacing is determined from information available from the anchors. For example, if the anchors represent text baselines, the spacing is determined by the fonts used at those baselines.
 

@@ -24,7 +24,7 @@ var approximateLocation: CLLocation? { get }
 @property (nonatomic, strong, readonly, nullable) CLLocation * approximateLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The Photos app automatically creates moments to group assets by time and location. A moment can contain photos from several locations in close proximity. In such cases, this property describes the general area containing the locations of all assets in the moment.
 

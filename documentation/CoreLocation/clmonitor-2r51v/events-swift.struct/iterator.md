@@ -18,7 +18,7 @@ The type that allows iteration over the elements of the sequence.
 struct Iterator
 ```
 
-#### Overview
+## Overview
 
 Use `CLMonitor.Events.Iterator` to process events that [`CLMonitor`](../../clmonitor-2r51v.md) delivers.
 

@@ -20,7 +20,7 @@ var appleEventCode: FourCharCode { get }
 @property (readonly) FourCharCode appleEventCode;
 ```
 
-#### Return Value
+## Return Value
 
 The Apple event code associated with the receiver’s class. This is the primary code used to identify the class in Apple events.
 

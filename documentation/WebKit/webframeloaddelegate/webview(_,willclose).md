@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, willClose frame: WebFrame!)
 - (void) webView:(WebView *) sender willCloseFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Called right before WebKit is done with `frame` and the objects it owns.
 

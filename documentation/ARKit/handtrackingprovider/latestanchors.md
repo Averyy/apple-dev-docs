@@ -15,7 +15,7 @@ The most recent hand anchors for each hand.
 final var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?) { get }
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this tuple consumes its values and sets them to `nil` until the next anchor update. Both elements of this tuple are `nil` when the associated [`HandTrackingProvider`](../handtrackingprovider.md) isn’t running.
 

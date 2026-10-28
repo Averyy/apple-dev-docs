@@ -25,11 +25,11 @@ func CFStringGetFileSystemRepresentation(_ string: CFString!, _ buffer: UnsafeMu
 extern Boolean CFStringGetFileSystemRepresentation(CFStringRef string, char *buffer, CFIndex maxBufLen);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string is correctly converted; `false` if the conversion fails, or the results don’t fit into the buffer.
 
-#### Discussion
+## Discussion
 
 You can use [`CFStringGetMaximumSizeOfFileSystemRepresentation(_:)`](./cfstringgetmaximumsizeoffilesystemrepresentation%28_%29.md) if you want to make sure the buffer is of sufficient length.
 

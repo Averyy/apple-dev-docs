@@ -5,7 +5,7 @@
 
 Generate thumbnails of images, text files, PDFs, audio files, videos, and more.
 
-#### Overview
+## Overview
 
 Apps often need to display a small, high-quality miniature representation, or *thumbnail*, of a file or its content. The QuickLookThumbnailing framework provides a fast way to generate thumbnails for file types with the [`QLThumbnailGenerator`](./qlthumbnailgenerator.md) object. It can create thumbnails for many common file types, including:
 
@@ -18,7 +18,7 @@ Apps often need to display a small, high-quality miniature representation, or *t
 
 If an installed app implements a Thumbnail Extension that supports a custom file type, other apps can use [`QLThumbnailGenerator`](./qlthumbnailgenerator.md) to create thumbnails of the custom file type. Read [Providing Thumbnails of Your Custom File Types](./providing-thumbnails-of-your-custom-file-types.md) to learn more about adding a Thumbnail Extension to your app.
 
-##### Generate a Thumbnail
+### Generate a Thumbnail
 
 Import the QuickLookThumbnailing framework and use [`QLThumbnailGenerator`](./qlthumbnailgenerator.md) to create thumbnails. It provides asynchronous methods for three common use cases:
 
@@ -63,7 +63,7 @@ func generateThumbnailRepresentations() {
 
 You can cancel ongoing requests to generate thumbnails by using the [`cancel(_:)`](./qlthumbnailgenerator/cancel%28_%29.md) method.
 
-##### Request Thumbnails for Files in iCloud
+### Request Thumbnails for Files in iCloud
 
 You can create thumbnails for remote files stored in iCloud using [`QLThumbnailGenerator`](./qlthumbnailgenerator.md). If you’re using a custom file type in your app, implement a Thumbnail extension as described in [Providing Thumbnails of Your Custom File Types](./providing-thumbnails-of-your-custom-file-types.md). iCloud automatically calls your app’s extension and uploads a thumbnail image along with the file. QuickLookThumbnailing downloads the thumbnail the next time you request a thumbnail for the file stored in iCloud, ensuring that apps on devices that don’t have your app installed can display thumbnails of your custom files.
 

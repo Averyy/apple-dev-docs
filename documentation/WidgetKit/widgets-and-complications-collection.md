@@ -5,7 +5,7 @@
 
 Allow people to personalize their devices, view relevant information, and perform interactions with widgets and watch complications.
 
-#### Overview
+## Overview
 
 Use WidgetKit to create widgets and watch complications that elevate a small amount of timely, personally relevant information from your app and allow people to perform quick actions without launching your app:
 

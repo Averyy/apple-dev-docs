@@ -22,11 +22,11 @@ convenience init(contact: CNContact)
 + (instancetype) iconWithContact:(CNContact *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 A Home Screen quick action icon initialized with the contact’s picture or monogram.
 
-#### Discussion
+## Discussion
 
 To use this method, pass in a contact from the user’s contacts database, available through the [`CNContactStore`](../../Contacts/cncontactstore.md) object. If the contact you specify has a picture, the system creates a full-color quick action icon from that picture. If the contact has no picture, the system employs the contact’s initials and displays instead a monogram.
 

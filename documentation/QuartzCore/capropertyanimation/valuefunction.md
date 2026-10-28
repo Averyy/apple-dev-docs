@@ -24,7 +24,7 @@ var valueFunction: CAValueFunction? { get set }
 @property (strong, nullable) CAValueFunction * valueFunction;
 ```
 
-#### Discussion
+## Discussion
 
 If the `valueFunction` property is not `nil`, the function is applied to the values interpolated by the animation as they are applied to the presentation layer. Defaults to `nil`.
 

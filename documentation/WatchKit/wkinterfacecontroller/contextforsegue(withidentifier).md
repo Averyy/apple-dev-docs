@@ -23,11 +23,11 @@ func contextForSegue(withIdentifier segueIdentifier: String) -> Any?
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Return Value
+## Return Value
 
 The object to pass to the new interface controller. Use this object to communicate important information to the new interface controller, such as the data to be displayed or any relevant state information. You may return `nil` if you want, but doing so is not recommended.
 
-#### Discussion
+## Discussion
 
 When you create a segue from a button to a single interface controller, the system calls this method when that segue is triggered. Use this method to provide the new interface controller with any contextual data it needs to display its content. The object you return is passed directly to the new interface controller’s [`awake(withContext:)`](./awake%28withcontext%29.md) method.
 

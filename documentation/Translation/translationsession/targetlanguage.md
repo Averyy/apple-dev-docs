@@ -18,7 +18,7 @@ The output language to translate into.
 final let targetLanguage: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 If this value is set to `nil`, the session chooses an optimal language to translate into based on the `sourceLanguage` and the person’s [`preferredLanguages`](../../Foundation/locale/preferredlanguages.md).
 

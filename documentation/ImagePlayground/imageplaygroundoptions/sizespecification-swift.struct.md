@@ -19,7 +19,7 @@ A type that specifies image size and aspect ratio information.
 struct SizeSpecification
 ```
 
-#### Overview
+## Overview
 
 The Image Playground framework supports the creation of images with a finite set of sizes and aspect ratios. To request an image of a particular size, call the static [`closest(to:)`](./sizespecification-swift.struct/closest%28to%29.md) method to create an instance of this structure. That method creates a structure with a supported size that most closely matches the size information you provided. The method considers both the resolution and aspect ratio you specified.
 

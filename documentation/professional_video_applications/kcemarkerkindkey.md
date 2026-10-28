@@ -19,7 +19,7 @@ var kCEMarkerKindKey: String { get }
 #define kCEMarkerKindKey
 ```
 
-#### Discussion
+## Discussion
 
 The [`setChapters(_:)`](./compressorextensionencoder/setchapters%28_%29.md) method supports only chapter markers type markers.
 

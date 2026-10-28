@@ -25,7 +25,7 @@ var influenceFactor: CGFloat { get set }
 @property (nonatomic) CGFloat influenceFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to relax the effect of a constraint on the nodes it applies to. For example, consider a node containing a spotlight, constrained by an [`SCNLookAtConstraint`](../scnlookatconstraint.md) object to point toward another node containing a moving game character. If the constraint’s influence factor is `1.0`, SceneKit adjusts the spotlight node to point directly at the game character each time it renders a frame. If you reduce the influence factor to `0.5`, each time SceneKit renders a frame it moves the spotlight halfway from its current orientation to the target orientation. As a result, the spotlight continues to follow the moving character, but with a slight lag.
 

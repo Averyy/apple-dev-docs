@@ -18,7 +18,7 @@ Creates a contact access button to quickly add contacts under limited-access aut
 @preconcurrency init(queryString query: String, ignoredEmails: Set<String>? = nil, ignoredPhoneNumbers: Set<String>? = nil, approvalCallback: (([String]) -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This button uses the `query` string to match contacts that the person hasn’t yet exposed to your app. If a single contact matches the search criteria, the button presents that contact and adds it to the limited-access set when tapped. If multiple contacts match, tapping the button navigates to another view where the person can choose contacts to add.
 

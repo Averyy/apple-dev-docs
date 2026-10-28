@@ -28,7 +28,7 @@ var rasterizationRateMap: (any MTLRasterizationRateMap)? { get set }
 
 - [Rendering with a rasterization rate map](../rendering-with-a-rasterization-rate-map.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means that viewport coordinates are in the same coordinate system as the physical coordinates in the render target. Otherwise, Metal uses the rate map to convert between viewport coordinates and physical coordinates in the render target.
 

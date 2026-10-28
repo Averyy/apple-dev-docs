@@ -22,7 +22,7 @@ A Boolean value that indicates whether the app can provide live assistance servi
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to both your container app and your app extension that conforms to [`LiveAssistanceExtension`](../../LiveCommunicationKit/liveassistanceextension.md). The container app needs the entitlement in order to call [`returnToCall(requestID:)`](../../LiveCommunicationKit/liveassistance/returntocall%28requestid%29.md).
 

@@ -5,7 +5,7 @@
 
 Use the transaction manager within Xcode to test in-app purchases without requiring a connection to App Store servers.
 
-#### Overview
+## Overview
 
 Xcode provides a *transaction manager* that you use with StoreKit Testing in Xcode.  With transaction manager, you can test in-app purchases at any stage of development. Testing in-app purchases before pushing your app live helps you ensure a seamless purchase flow, test various edge cases and logic, and validate that purchases behave correctly.
 
@@ -13,7 +13,7 @@ Use the transaction manager to change settings and initiate test conditions, ins
 
 > **Note**: You need to set up StoreKit in Xcode before you can use the transaction manager for testing. For more information, see [Setting up StoreKit Testing in Xcode](./setting-up-storekit-testing-in-xcode.md).
 
-##### Change settings and initiate test conditions
+### Change settings and initiate test conditions
 
 Select your StoreKit configuration file in the Project navigator and choose Editor to change the following settings:
 
@@ -30,7 +30,7 @@ Select your StoreKit configuration file in the Project navigator and choose Edit
 
 ![A screenshot in Xcode of a selected StoreKit configuration file in the Project navigator of Xcode. The sidebars shows the Configuration Settings option selected, and the main content area lists the various test conditions to test.](https://developer.apple.com/tutorials/images/com.apple.Xcode/storekit-testing-editor@2x.png)
 
-##### Inspect transactions with the transaction manager
+### Inspect transactions with the transaction manager
 
 Use the options in the transaction manager to perform steps in an in-app purchase flow that normally occur outside your app, such as approving or declining Ask To Buy transactions, receiving refunds, and more. To open the transaction manager, choose Debug > StoreKit > Manage Transactions.
 
@@ -41,7 +41,7 @@ The transaction manager lists all the transactions for the running app. If you h
 - **Filter transactions** — Type a search term in the filter box at the bottom of the dialog to narrow the number of transactions that display.
 - **Inspect a transaction** — Click a transaction, then view that transaction’s details in the inspector. Click the jump button next to a product or group to navigate to it in the StoreKit configuration file in Xcode.
 - **Create a transaction** — Click the plus button on the left of the filter bar. Select the product you want to create a transaction for, and then configure the transaction. Use this feature to test in-app purchases made outside of the device, and to simulate in-app purchases that customers complete on different devices. For more information about creating transactions, see [Simulate a purchase](./testing-in-app-purchases-with-storekit-transaction-manager-in-code.md#Simulate-a-purchase).
-- **Delete a transaction** — Select a transaction and click Delete to retest a scenario that the customer can perform only once. For example, customers can purchase a non-consumable product only once, so delete that transaction to retest the purchase. Delete subscription transactions to retest introductory offers. For more information, see [Implementing introductory offers in your app](../StoreKit/implementing-introductory-offers-in-your-app.md). If your app uses the [Original API for in-app purchase](../StoreKit/in-app_purchase/original_api_for_in-app_purchase.md), refresh the receipt to get an updated receipt without the deleted transaction.
+- **Delete a transaction** — Select a transaction and click Delete to retest a scenario that the customer can perform only once. For example, customers can purchase a non-consumable product only once, so delete that transaction to retest the purchase. Delete subscription transactions to retest introductory offers. For more information, see [Implementing introductory offers in your app](../StoreKit/implementing-introductory-offers-in-your-app.md). If your app uses the [Original API for in-app purchase](../StoreKit/original-api-for-in-app-purchase.md), refresh the receipt to get an updated receipt without the deleted transaction.
 - **Send a purchase intent** — Simulate sending purchase intents to your app to ensure your app processes them correctly. For more information about receiving and handling purchase intents in your app, see [`PurchaseIntent`](../StoreKit/purchaseintent.md).  For more information about sending a purchase intent in the testing environment, see [Send a purchase intent](./testing-in-app-purchases-with-storekit-transaction-manager-in-code.md#Send-a-purchase-intent).
 - **Approve or decline a transaction** — Click Approve or Decline to resolve a pending transaction that’s testing an Ask to Buy scenario.
 - **Refund a transaction** — Click Refund to simulate a customer receiving a refund.
@@ -50,7 +50,7 @@ The transaction manager lists all the transactions for the running app. If you h
 
 The test environment automatically syncs the transaction changes you make. You don’t need to rebuild and run your app.
 
-##### Simulate a purchase
+### Simulate a purchase
 
 The StoreKit configuration file lets you define in-app purchases in two sections.  Use the Products section to define consumable and non-consumable in-app purchases.  Use the Subscriptions section to define auto-renewable subscriptions and non-renewing subscriptions.
 
@@ -74,7 +74,7 @@ When the subscription configuration pop-up appears, either accept the defaults, 
 
 To complete the test purchase, launch the app on the device or simulator where your purchases occur, and see the purchase complete in the transaction manager and appear in the app.
 
-##### Send a purchase intent
+### Send a purchase intent
 
 Making in-app purchases isn’t the only way people can buy content for your app or game. As a developer, you can promote in-app purchases from the App Store. When a customer sees an in-app purchase in the App Store, they can initiate a purchase. The App Store then sends that purchase intent to the customer on their device. When the customer opens their device, they complete the purchase.
 

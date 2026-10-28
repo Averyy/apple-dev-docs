@@ -22,7 +22,7 @@ var shortcutItem: UIApplicationShortcutItem? { get }
 @property (nonatomic, readonly, nullable) UIApplicationShortcutItem * shortcutItem;
 ```
 
-#### Discussion
+## Discussion
 
 If the user selected one of your app’s quick actions, this property contains the selected action. You use quick actions to provide access to frequently used features of your app, and the user accesses those actions through interactions with your app’s icon in the Home Screen. If the user didn’t select a quick action, this property is `nil`.
 

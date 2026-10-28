@@ -23,7 +23,7 @@ var availableMetadataObjectTypes: [AVMetadataObject.ObjectType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableMetadataObjectTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Each string in the array corresponds to a possible value in the [`type`](../avmetadataobject/type.md) property of the [`AVMetadataObject`](../avmetadataobject.md) objects reported by the receiver. The available types are dependent on the capabilities of the [`AVCaptureInput.Port`](../avcaptureinput/port.md) to which the receiver’s connection is attached.
 

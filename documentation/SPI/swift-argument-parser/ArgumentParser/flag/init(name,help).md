@@ -19,7 +19,7 @@ init(name: NameSpecification = .long, help: ArgumentHelp? = nil)
 
 Available when `Value` is `Int`.
 
-#### Discussion
+## Discussion
 
 This property defaults to a value of zero.
 

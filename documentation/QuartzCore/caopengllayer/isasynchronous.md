@@ -22,7 +22,7 @@ var isAsynchronous: Bool { get set }
 @property (getter=isAsynchronous) BOOL asynchronous;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), the contents of the layer are updated only in response to receiving a [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) message. When [`true`](../../Swift/true.md), the receiver’s [`canDraw(inCGLContext:pixelFormat:forLayerTime:displayTime:)`](./candraw%28incglcontext,pixelformat,forlayertime,displaytime%29.md) is called periodically to determine if the OpenGL content should be updated.
 

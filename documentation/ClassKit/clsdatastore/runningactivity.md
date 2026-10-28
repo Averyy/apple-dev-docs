@@ -27,7 +27,7 @@ var runningActivity: CLSActivity? { get }
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if there is no currently running activity.
 

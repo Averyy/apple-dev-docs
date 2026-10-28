@@ -22,7 +22,7 @@ var preferredArrowDirection: UIEditMenuArrowDirection { get set }
 @property (nonatomic, assign) UIEditMenuArrowDirection preferredArrowDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default, [`UIEditMenuArrowDirection.automatic`](../uieditmenuarrowdirection/automatic.md), is an arrow pointing up or down at the object of focus, based on its location in the screen.
 

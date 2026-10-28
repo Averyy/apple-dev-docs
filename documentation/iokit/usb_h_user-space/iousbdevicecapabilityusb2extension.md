@@ -14,7 +14,7 @@ struct IOUSBDeviceCapabilityUSB2Extension {
 };
 ```
 
-#### Overview
+## Overview
 
 Device Capability USB 2.0 Extension
 

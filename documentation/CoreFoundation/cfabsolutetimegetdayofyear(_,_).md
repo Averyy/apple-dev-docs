@@ -27,7 +27,7 @@ func CFAbsoluteTimeGetDayOfYear(_ at: CFAbsoluteTime, _ tz: CFTimeZone!) -> Int3
 extern SInt32 CFAbsoluteTimeGetDayOfYear(CFAbsoluteTime at, CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 An integer (`1-366`) representing the day of the year specified by `at`.
 

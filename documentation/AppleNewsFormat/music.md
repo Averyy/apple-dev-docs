@@ -19,13 +19,13 @@ object Music
 
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `Music` component to play an audio file. You can also include album art (or another image that represents the music).
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

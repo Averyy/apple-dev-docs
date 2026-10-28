@@ -17,7 +17,7 @@ Apply 2D channel-wise dropout during training.
 class Dropout2d
 ```
 
-#### Overview
+## Overview
 
 Randomly zero out entire channels independently with probability `p`. This layer expects the channels to be last, i.e. the input shape should be `NWHC` or `WHC` where:`N` is the batch dimension,`H` is the input image height,`W` is the input image width, and`C` is the number of input channels
 
@@ -25,7 +25,7 @@ The remaining channels are scaled by `1 / (1-p)` to maintain the expected value 
 
 [1]: Thompson, J., Goroshin, R., Jain, A., LeCun, Y. and Bregler C., 2015. Efficient Object Localization Using Convolutional Networks. CVPR 2015.
 
-##### See Also
+### See Also
 
 - [`Dropout`](./dropout.md)
 - [`Dropout3d`](./dropout3d.md)

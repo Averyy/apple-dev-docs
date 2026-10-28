@@ -20,7 +20,7 @@ Replaces all reference arcs with the specified list.
 func set(_ references: [USDPrim.Reference]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the references cannot be set.
 

@@ -19,7 +19,7 @@ Creates the default configuration for searches that return no results.
 static func search() -> UIContentUnavailableConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 

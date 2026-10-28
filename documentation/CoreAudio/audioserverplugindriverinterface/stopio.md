@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int) StopIO;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the device to stop IO.
 

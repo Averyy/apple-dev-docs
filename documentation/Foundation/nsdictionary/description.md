@@ -25,7 +25,7 @@ var description: String { get }
 @property (copy, readonly) NSString * description;
 ```
 
-#### Discussion
+## Discussion
 
 If each key in the dictionary is an `NSString` object, the entries are listed in ascending order by key, otherwise the order in which the entries are listed is undefined.  This property is intended to produce readable output for debugging purposes, not for serializing data. If you want to store dictionary data for later retrieval, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i) and [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
 

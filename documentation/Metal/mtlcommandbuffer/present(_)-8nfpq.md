@@ -20,7 +20,7 @@ Presents a texture resource drawable as early as possible.
 func present(_ drawable: TextureResource.Drawable)
 ```
 
-#### Discussion
+## Discussion
 
 This convenience method calls the drawable’s [`present()`](../mtldrawable/present%28%29.md) method after the command queue schedules the command buffer for execution. The command buffer does this by adding a completion handler by calling its own [`addScheduledHandler(_:)`](./addscheduledhandler%28_%29.md) method for you.
 

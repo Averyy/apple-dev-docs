@@ -22,7 +22,7 @@ var isNavigational: Bool { get set }
 @property (getter=isNavigational) BOOL navigational;
 ```
 
-#### Discussion
+## Discussion
 
 Mark a toolbar item as navigation if you use it to navigate around your content. When you set this property to [`true`](../../Swift/true.md), the system can position navigation items outside of the normal list of items in the toolbar. For example, the back and forward buttons in Finder windows are navigational, and the system positions them at the leading edge of the window’s title area. Specify the initial order of the items using the [`toolbarDefaultItemIdentifiers(_:)`](../nstoolbardelegate/toolbardefaultitemidentifiers%28_%29.md) method of the toolbar delegate object.
 

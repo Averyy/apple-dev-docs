@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatApplyScaledPose(SPRect3DFloat rect, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the specified scaled pose.
 

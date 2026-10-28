@@ -5,7 +5,7 @@
 
 Choose retention messages for customers in real time by implementing an endpoint on your server that responds to requests from the App Store server.
 
-#### Overview
+## Overview
 
 To receive requests from the App Store so that you can provide retention messages in real time, complete the following:
 
@@ -18,7 +18,7 @@ After you set up the `Get Retention Message` endpoint, the App Store server deli
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server posts. For information about responding to requests, see [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 
-##### Implement your endpoint
+### Implement your endpoint
 
 Implement this endpoint on your server to the following specifications:
 
@@ -37,7 +37,7 @@ Your response body identifies the retention message to display to the customer.
 
 If a request fails for any reason, the system displays a default retention message. If a default message isn’t available, the system doesn’t display a retention message. For more information about default messages, see [Setting up retention messages](./setting-up-retention-messages.md).
 
-##### Implement the server requirements
+### Implement the server requirements
 
 Set up secure communications with the App Store server by meeting the following requirements:
 
@@ -45,7 +45,7 @@ Set up secure communications with the App Store server by meeting the following 
 - Your endpoint must implement TLS 1.2.
 - Your endpoint needs to respond within 700 ms in the production environment; otherwise, the App Store server times out and the request fails.
 
-##### Configure your endpoint for real-time use
+### Configure your endpoint for real-time use
 
 To configure your `Get Retention Message` endpoint with this API’s server, call the [`Configure Realtime URL`](./configure-realtime-url.md) endpoint. Set up the endpoint in the sandbox environment first.
 

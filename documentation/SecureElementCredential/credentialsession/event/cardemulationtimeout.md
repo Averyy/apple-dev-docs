@@ -16,7 +16,7 @@ The session’s card emulation timer expired.
 case cardEmulationTimeout
 ```
 
-#### Discussion
+## Discussion
 
 This event the session’s state back to [`CredentialSession.State.management`](../state-swift.enum/management.md).
 

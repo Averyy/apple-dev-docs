@@ -25,7 +25,7 @@ init<S>(grouping values: S, by keyForValue: (S.Element) async throws -> Key) asy
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 The arrays in the “values” position of the new dictionary each contain at least one element, with the elements in the same order as the source asynchronous sequence.
 

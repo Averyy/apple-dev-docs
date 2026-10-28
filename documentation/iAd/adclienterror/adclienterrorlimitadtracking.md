@@ -12,7 +12,7 @@ Limited ad tracking is in an enabled state for the device.
 ADClientErrorLimitAdTracking
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated, use `ADClientError-struct/Code/trackingRestrictedOrDenied`.
 

@@ -22,7 +22,7 @@ case oneOverSecondary
 UISplitViewControllerDisplayModeOneOverSecondary
 ```
 
-#### Discussion
+## Discussion
 
 This display mode shows one sidebar layered on top of the secondary view controller, partially obscuring it. The sidebar shown is the primary column for [`UISplitViewController.Style.doubleColumn`](../style-swift.enum/doublecolumn.md) interfaces and the supplementary column for [`UISplitViewController.Style.tripleColumn`](../style-swift.enum/triplecolumn.md) interfaces. The secondary view controller is dimmed out, preventing interaction with its view. Touching the dimmed view dismisses the overlay and returns the interface to the [`UISplitViewController.DisplayMode.secondaryOnly`](./secondaryonly.md) display mode.
 

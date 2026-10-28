@@ -28,7 +28,7 @@ Available when `Format` conforms to `StaticPixelFormat`.
 - [Applying vImage operations to regions of interest](../../applying-vimage-operations-to-regions-of-interest.md)
 - [Converting chroma-subsampled images](../../converting-chroma-subsampled-images.md)
 
-#### Discussion
+## Discussion
 
 Use this function to apply a vImage operation to a region of interest in a pixel buffer. This region of interest pixel buffer that this function passes to the closure as an argument references the same underlying memory as `self`. Therefore, changes the pixel buffer in the closure are changes in `self`.
 

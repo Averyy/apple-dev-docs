@@ -15,11 +15,11 @@ The request body for updating an existing Keyword object.
 object KeywordUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordUpdate` object is the request payload for modifying an existing keyword. The request accepts only `bid` and `status` fields. You can’t include `text` or `matchType` in an update request. The schema doesn’t accept these fields.
 
-##### Example
+### Example
 
 ```json
 {

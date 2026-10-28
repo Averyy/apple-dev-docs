@@ -25,7 +25,7 @@ class var local: TimeZone { get }
 @property (class, copy, readonly) NSTimeZone * localTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you want an object that always reflects the current system time zone. Contrast this behavior with that of the [`system`](./system.md) class property, which has its value cached until you manually clear it by calling the [`resetSystemTimeZone()`](./resetsystemtimezone%28%29.md) method.
 

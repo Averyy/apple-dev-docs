@@ -19,7 +19,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the side effect of stopping playback.
 

@@ -5,7 +5,7 @@
 
 Limit the effect of vImage operations to rectangular regions of interest.
 
-#### Overview
+## Overview
 
 You can apply vImage operations, such as blurs and color transforms, to specified rectangular areas in an image, commonly referred to as *regions of interest* (ROI). Limiting the effect of an operation is useful when, for example, you want to overlay user interface elements on top of a blurred part of an image to make them stand out.
 
@@ -13,7 +13,7 @@ The following image is an example of the effects possible when you use the techn
 
 ![A photograph of fruit with a blurred horizontal strip, and a grayscale vertical strip.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3377260@2x.png)
 
-##### Applying operations to an ROI of a pixel buffer
+### Applying operations to an ROI of a pixel buffer
 
 If you’re developing apps with Xcode 14.0 or later, the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure provides the [`withUnsafeRegionOfInterest(_:_:)`](./vimage/pixelbuffer/withunsaferegionofinterest%28_,_%29.md) function, which simplifies applying operations to ROIs. The following code creates the image above:
 
@@ -59,7 +59,7 @@ let destination = source.blurred_ARGB8888(regionOfInterest: CGRect( ... ),
 
 ```
 
-##### Apply an in-place operation to an ROI
+### Apply an in-place operation to an ROI
 
 For vImage routines that can operate in-place (that is, the operation mutates the source buffer’s contents), create a mutating function that applies that routine to an ROI. The following code is the function header for a desaturation function based around [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](./vimagematrixmultiply_argb8888%28_,_,_,_,_,_,_%29.md):
 
@@ -174,7 +174,7 @@ The following shows the result of desaturating an ROI:
 
 ![A photograph of fruit with a grayscale vertical strip.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3377262@2x.png)
 
-##### Apply an out-of-place operation to an ROI
+### Apply an out-of-place operation to an ROI
 
 For vImage routines that don’t operate in-place, create a non-mutating function that applies that routine to an ROI and returns a new [`vImage_Buffer`](./vimage_buffer.md) structure that contains the result.
 

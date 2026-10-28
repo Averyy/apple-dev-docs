@@ -24,7 +24,7 @@ var kAudioFormatProperty_AvailableEncodeChannelLayoutTags: AudioFormatPropertyID
 kAudioFormatProperty_AvailableEncodeChannelLayoutTags
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`AudioChannelLayoutTag`](../CoreAudioTypes/audiochannellayouttag.md) values for the format and number of channels specified. If `mChannelsPerFrame` field of the specifier is zero, then all layouts supported by the format are returned. The specifier is an [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure with at least the `mFormatID` and `mChannelsPerFrame` fields set.
 

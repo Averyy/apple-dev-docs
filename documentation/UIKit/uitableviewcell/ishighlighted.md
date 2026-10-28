@@ -23,7 +23,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 The highlighting affects the appearance of labels, image, and background. When the highlighted state of a cell is set to [`true`](../../Swift/true.md), labels are drawn in their highlighted text color (default is white). The default value is [`false`](../../Swift/false.md). If you set the highlighted state to [`true`](../../Swift/true.md) through this property, the transition to the new state appearance is not animated. For animated highlighted-state transitions, see the [`setHighlighted(_:animated:)`](./sethighlighted%28_,animated%29.md) method.
 

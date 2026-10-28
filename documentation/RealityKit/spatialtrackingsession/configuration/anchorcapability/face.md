@@ -16,7 +16,7 @@ The anchor capability that enables face tracking.
 static let face: SpatialTrackingSession.Configuration.AnchorCapability
 ```
 
-#### Discussion
+## Discussion
 
 It enables the tracking of the face anchoring target as well as the face entity in the scene.
 

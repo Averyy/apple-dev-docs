@@ -26,7 +26,7 @@ var volume: Float { get set }
 @property (nonatomic) float volume;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`, and the range of valid values is `0.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) and the [`AVAudioMixerNode`](../avaudiomixernode.md) implement this property.
 

@@ -13,7 +13,7 @@ void *( *GetDataBuffer)(
    IOStreamBufferID bufferID );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the data buffer area of the IOStreamBuffer, or NULL if it does not have a data buffer.
 

@@ -21,7 +21,7 @@ A shortened time style with only the hour, minute, and day period components rep
 static let shortened: Date.FormatStyle.TimeStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `shortened` time style represents the hour, minute, and day period components in the format. For example, `9:54 PM.`
 

@@ -23,11 +23,11 @@ func execute(inputsData: [String : MLCTensorData], batchSize: Int, options: MLCE
 - (BOOL) executeWithInputsData:(NSDictionary<NSString *,MLCTensorData *> *) inputsData batchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 
-#### Discussion
+## Discussion
 
 When executing an inference graph, if an optimizer is specified, the optimizer update is applied.
 

@@ -24,7 +24,7 @@ WKApplicationStateInactive
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 Typically, apps transition quickly through the [`WKApplicationState.inactive`](./inactive.md) state when becoming active or going to the background. A newly launched watchOS app starts in the [`WKApplicationState.inactive`](./inactive.md) state and then quickly transitions to the [`WKApplicationState.active`](./active.md) state.
 

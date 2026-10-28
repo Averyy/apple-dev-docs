@@ -19,11 +19,11 @@ func hv_vm_protect(_ ipa: hv_ipa_t, _ size: Int, _ flags: hv_memory_flags_t) -> 
 extern hv_return_t hv_vm_protect(hv_ipa_t ipa, size_t size, hv_memory_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Intel-based Mac computers have different parameters:
 

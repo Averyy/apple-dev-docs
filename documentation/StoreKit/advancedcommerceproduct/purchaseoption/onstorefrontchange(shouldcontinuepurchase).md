@@ -21,7 +21,7 @@ A closure that determines whether the transaction continues if the device’s Ap
 static func onStorefrontChange(shouldContinuePurchase: @escaping @Sendable (Storefront) -> Bool) -> AdvancedCommerceProduct.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 The default is `true` if you don’t include this option in the purchase options.
 

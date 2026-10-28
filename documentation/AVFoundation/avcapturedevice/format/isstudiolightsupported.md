@@ -23,7 +23,7 @@ var isStudioLightSupported: Bool { get }
 @property (nonatomic, readonly, getter=isStudioLightSupported) BOOL studioLightSupported;
 ```
 
-#### Discussion
+## Discussion
 
 See [`isStudioLightEnabled`](../isstudiolightenabled.md) for more information on the Studio Light feature.
 

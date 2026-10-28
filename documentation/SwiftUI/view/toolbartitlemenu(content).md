@@ -22,7 +22,7 @@ nonisolated
 func toolbarTitleMenu<C>(@ContentBuilder content: () -> C) -> some View where C : View
 ```
 
-#### Discussion
+## Discussion
 
 A title menu represent common functionality that can be done on the content represented by your app’s toolbar or navigation title. This menu may be populated from your app’s commands like [`saveItem`](../commandgroupplacement/saveitem.md) or [`printItem`](../commandgroupplacement/printitem.md).
 

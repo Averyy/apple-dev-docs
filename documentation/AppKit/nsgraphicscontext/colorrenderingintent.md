@@ -19,7 +19,7 @@ var colorRenderingIntent: NSColorRenderingIntent { get set }
 @property NSColorRenderingIntent colorRenderingIntent;
 ```
 
-#### Discussion
+## Discussion
 
 A value that specifies the rendering intent currently used by the graphics context. For possible values, see [`NSColorRenderingIntent`](../nscolorrenderingintent.md). The rendering intent specifies how Cocoa should handle colors that are not located within the gamut of the destination color space of a graphics context. If you do not explicitly set the rendering intent, and sampled images are being drawn, [`NSGraphicsContext`](../nsgraphicscontext.md) uses perceptual rendering intent. Otherwise, [`NSGraphicsContext`](../nsgraphicscontext.md) uses relative colorimetric rendering intent.
 

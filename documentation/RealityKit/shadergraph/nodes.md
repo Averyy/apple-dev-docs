@@ -18,7 +18,7 @@ All nodes in the graph, keyed by node name.
 final var nodes: [String : ShaderGraph.Node] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Includes the virtual [`arguments`](./arguments.md) and [`results`](./results.md) nodes.
 

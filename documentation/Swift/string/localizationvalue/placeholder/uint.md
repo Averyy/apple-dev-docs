@@ -21,7 +21,7 @@ The unsigned integer type, as used for replacement values with the localized str
 case uint
 ```
 
-#### Discussion
+## Discussion
 
 To insert an unsigned integer into a placeholder, use the syntax `\(placeholder: .uint)`.
 

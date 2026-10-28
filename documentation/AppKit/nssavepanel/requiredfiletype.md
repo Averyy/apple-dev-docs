@@ -17,11 +17,11 @@ Returns the required file type (if any).
 - (NSString *) requiredFileType;
 ```
 
-#### Return Value
+## Return Value
 
 The required file type (if any).
 
-#### Discussion
+## Discussion
 
 A file specified in the Save panel is saved with the designated filename and this file type as an extension. Examples of common file types are “rtf”, “tiff”, and “ps”. File type strings encoding HFS file types are not valid values for this attribute. An `nil` return value indicates that the user can save to any ASCII file.
 

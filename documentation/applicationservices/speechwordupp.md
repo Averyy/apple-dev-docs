@@ -19,7 +19,7 @@ typealias SpeechWordUPP = SpeechWordProcPtr
 typedef SpeechWordProcPtr SpeechWordUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`SpeechWordProcPtr`](./speechwordprocptr.md) callback function.
 

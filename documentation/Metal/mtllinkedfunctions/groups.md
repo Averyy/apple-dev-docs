@@ -24,7 +24,7 @@ var groups: [String : [any MTLFunction]]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSDictionary<NSString *,NSArray<id<MTLFunction>> *> * groups;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

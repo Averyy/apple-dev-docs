@@ -25,7 +25,7 @@ func clearTransactions()
 - (void) clearTransactions;
 ```
 
-#### Discussion
+## Discussion
 
 After you clear the transactions from the test environment, the test environment produces an empty receipt. Use this method to enable repeating tests for one-time purchases.
 

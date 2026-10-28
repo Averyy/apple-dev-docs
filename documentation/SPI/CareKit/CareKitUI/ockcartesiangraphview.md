@@ -18,7 +18,7 @@ A view that displays a graphable view above an axis.
 class OCKCartesianGraphView
 ```
 
-#### Overview
+## Overview
 
 The initializer takes a `PlotType` that allows you to choose from several common graph types.
 

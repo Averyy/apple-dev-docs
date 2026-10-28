@@ -5,13 +5,13 @@
 
 Review an example that represents the temporal position of 5 seconds of 48kHz PCM audio encoded in a 48kHz AAC sound track.
 
-#### Overview
+## Overview
 
 Consider the following example of a typical case of PCM source sound data to be encoded as AAC:
 
 The goal is to represent the temporal position of 5 seconds of 48kHz PCM audio encoded in a 48kHz AAC sound track. Assume a media timescale of 48000 and an encoder delay of 2112. For convenience, assume a movie timescale of 48000 as well.
 
-#### Audio data
+## Audio data
 
 Source PCM audio data prior to encoding:
 
@@ -30,7 +30,7 @@ AAC in the encoded sound track:
 
 The transformation from source PCM to encoded AAC results in a sound track with 237 AAC media samples corresponding to 242688 PCM audio samples if decoded and presented in its entirety. Of that total, only 240000 audio samples of source starting at sample offset 2112 (skipping the first 2111 samples) are to be presented. From this, the edit list atom and sample group atom described in the Track structures section below are used to represent the encoder delay.
 
-#### Track structures
+## Track structures
 
 Based on the Audio data section above, the following [`Edit list atom`](./edit_list_atom.md) and [`Sample group description atom`](./sample_group_description_atom.md) are used to represent the encoder delay.
 

@@ -21,7 +21,7 @@ Produces the next element in the filter sequence.
 mutating func next() async rethrows -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next()` on its base iterator; if this call returns `nil`, `next()` returns nil. Otherwise, `next()` evaluates the result with the `predicate` closure. If the closure returns `true`, `next()` returns the received element; otherwise it awaits the next element from the base iterator.
 

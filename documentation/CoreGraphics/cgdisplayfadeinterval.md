@@ -20,7 +20,7 @@ typealias CGDisplayFadeInterval = Float
 typedef float CGDisplayFadeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz uses this data type to specify the duration of both fade-out and fade-in operations. Values may range from 0 to `kCGMaxDisplayReservationInterval` seconds. A 0 value means fade immediately—see [`CGDisplayFade(_:_:_:_:_:_:_:_:)`](./cgdisplayfade%28_,_,_,_,_,_,_,_%29.md).
 

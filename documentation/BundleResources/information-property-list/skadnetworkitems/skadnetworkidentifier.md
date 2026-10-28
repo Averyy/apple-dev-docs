@@ -15,7 +15,7 @@ A string that contains an ad network ID.
 - **Name**: `SKAdNetworkIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Contact the ad network to learn their ad network ID. Include this key, and the value of the ad network ID as a string, as a dictionary in the [`SKAdNetworkItems`](../skadnetworkitems.md) key.
 

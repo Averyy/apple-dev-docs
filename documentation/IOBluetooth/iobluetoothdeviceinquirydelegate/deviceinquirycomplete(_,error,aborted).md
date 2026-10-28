@@ -17,7 +17,7 @@ optional func deviceInquiryComplete(_ sender: IOBluetoothDeviceInquiry!, error: 
 - (void) deviceInquiryComplete:(IOBluetoothDeviceInquiry *) sender error:(IOReturn) error aborted:(BOOL) aborted;
 ```
 
-#### Discussion
+## Discussion
 
 When the inquiry is completely stopped, this delegate method will be invoked. It will supply an error code value, kIOReturnSuccess if the inquiry stopped without problem, otherwise a non-kIOReturnSuccess error code will be supplied.
 

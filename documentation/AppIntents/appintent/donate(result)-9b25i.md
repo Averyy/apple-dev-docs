@@ -22,7 +22,7 @@ Donates the app intent and a result to the system asynchronously.
 func donate(result: some IntentResult) -> IntentDonationIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 When someone interacts with your app’s interface, create an app intent for the interaction and call this method. Use this method when the result of the intent is also relevant, such as when the result of the action triggers another app intent. Donating intents helps the system predict future actions and improve the overall system experience. Don’t donate intents that the system creates during interactions with your app.
 

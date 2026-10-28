@@ -21,7 +21,7 @@ class SRDeviceUsageReport
 @interface SRDeviceUsageReport : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`deviceUsageReport`](./srsensor/deviceusagereport.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

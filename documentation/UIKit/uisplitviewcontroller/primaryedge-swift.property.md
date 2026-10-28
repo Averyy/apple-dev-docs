@@ -23,7 +23,7 @@ var primaryEdge: UISplitViewController.PrimaryEdge { get set }
 @property (nonatomic) UISplitViewControllerPrimaryEdge primaryEdge;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the default arrangement of the child view controllers. The default value of this property is [`UISplitViewController.PrimaryEdge.leading`](./primaryedge-swift.enum/leading.md).
 

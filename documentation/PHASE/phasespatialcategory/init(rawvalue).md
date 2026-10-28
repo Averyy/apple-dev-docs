@@ -20,7 +20,7 @@ Initializes a spatial category with the given string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 To initialize a spatial category:
 

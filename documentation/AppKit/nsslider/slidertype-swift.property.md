@@ -19,7 +19,7 @@ var sliderType: NSSlider.SliderType { get set }
 @property NSSliderType sliderType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSSlider.SliderType`](./slidertype-swift.enum.md) for possible values.
 

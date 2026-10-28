@@ -19,7 +19,7 @@ func maskAmountDidChange()
 - (void) maskAmountDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

@@ -21,7 +21,7 @@ class Host
 @interface NSHost : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`Host`](./host.md) class provides methods to access the network name and address information for a host. Instances of the [`Host`](./host.md) class represent individual *hosts* on a network. Use [`Host`](./host.md) objects  to get the current host’s names and addresses and to look up other hosts by name or by address.
 

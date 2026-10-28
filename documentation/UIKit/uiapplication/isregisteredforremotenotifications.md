@@ -23,7 +23,7 @@ var isRegisteredForRemoteNotifications: Bool { get }
 @property (nonatomic, readonly, getter=isRegisteredForRemoteNotifications) BOOL registeredForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 This method reflects whether the remote registration process completed successfully—a process that begins when you call the [`registerForRemoteNotifications()`](./registerforremotenotifications%28%29.md) method. This method does not reflect whether remote notifications are actually available due to connectivity issues. The value returned by this method takes into account the user’s preferences for receiving remote notifications.
 

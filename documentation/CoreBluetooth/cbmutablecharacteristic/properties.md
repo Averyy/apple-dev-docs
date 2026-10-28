@@ -25,7 +25,7 @@ var properties: CBCharacteristicProperties { get set }
 @property (nonatomic, assign, readwrite) CBCharacteristicProperties properties;
 ```
 
-#### Discussion
+## Discussion
 
 The properties of a characteristic determine the access to and use of the characteristic’s value and descriptors. For a list of the possible values representing the properties of a characteristic, see the [`CBCharacteristicProperties`](../cbcharacteristicproperties.md) enumeration in [`CBCharacteristic`](../cbcharacteristic.md). However, you can’t use the [`broadcast`](../cbcharacteristicproperties/broadcast.md) and [`extendedProperties`](../cbcharacteristicproperties/extendedproperties.md) characteristic properties when creating a mutable characteristic.
 

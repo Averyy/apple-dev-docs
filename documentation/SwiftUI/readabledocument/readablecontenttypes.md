@@ -20,7 +20,7 @@ The content types this document can open.
 static var readableContentTypes: [UTType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The document browser and open panel use this list to filter which files the person can select.
 

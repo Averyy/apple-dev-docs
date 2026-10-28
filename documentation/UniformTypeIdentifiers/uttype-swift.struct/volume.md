@@ -21,7 +21,7 @@ A type that represents the root folder of a volume or mount point.
 static var volume: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.volume`.
 

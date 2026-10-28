@@ -22,7 +22,7 @@ final func send(_ data: Data) async throws
 - [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
 - [Routing media to third-party devices](../../routing-media-to-third-party-devices.md)
 
-#### Discussion
+## Discussion
 
 Calling this function again before a previous send completes is safe; multiple send operations can be in-flight concurrently.
 

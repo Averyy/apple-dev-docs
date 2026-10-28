@@ -23,11 +23,11 @@ CanvasGradient createRadialGradient(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A radial gradient object.
 
-#### Discussion
+## Discussion
 
 You must add at least a starting and ending color stop to a radial gradient before it can be used. The direction of the gradient is specified by the starting and ending circles. When setting the fill style or stroke style for drawing objects, you can pass in a radial gradient object instead of a color. Anything subsequently drawn or filled over the cone defined by the starting and ending circles of the gradient is rendered using the gradient as a color. Anything drawn outside the cone is rendered using the color stop of the nearest edge of the cone. All parameter values are in the canvas’s current coordinate system, subject to the current transformation matrix (rotation, scale, and so on).
 

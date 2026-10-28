@@ -20,7 +20,7 @@ Returns the time codes for which the attribute at the given path has authored ti
 func timeSamples(at path: USDLayer.Path) -> Set<USDLayer.TimeCode>
 ```
 
-#### Return Value
+## Return Value
 
 The set of authored time codes.
 

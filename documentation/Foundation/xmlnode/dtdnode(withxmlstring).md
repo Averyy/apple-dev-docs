@@ -20,11 +20,11 @@ class func dtdNode(withXMLString string: String) -> Any?
 + (id) DTDNodeWithXMLString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLDTDNode` object representing the DTD declaration or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 For example, if `string` is the following:
 

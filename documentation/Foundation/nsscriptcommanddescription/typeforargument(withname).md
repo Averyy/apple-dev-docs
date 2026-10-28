@@ -20,7 +20,7 @@ func typeForArgument(withName argumentName: String) -> String?
 - (NSString *) typeForArgumentWithName:(NSString *) argumentName;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the specified command argument. Returns `nil` if there is no such argument.
 

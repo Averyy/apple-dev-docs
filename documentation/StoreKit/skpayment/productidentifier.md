@@ -31,7 +31,7 @@ var productIdentifier: String { get }
 
 - [Testing an interrupted purchase](../testing-an-interrupted-purchase.md)
 
-#### Discussion
+## Discussion
 
 The product identifier is a string previously agreed on between your app and the Apple App Store.
 

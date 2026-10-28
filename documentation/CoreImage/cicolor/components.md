@@ -24,7 +24,7 @@ var components: UnsafePointer<CGFloat> { get }
 @property (readonly) const CGFloat * components;
 ```
 
-#### Discussion
+## Discussion
 
 Typically this array will contain `4` `CGFloat` values for red, green, blue, and alpha. If the [`CIColor`](../cicolor.md) was initialized with a `CGColor` then returned pointer will be the same as calling `CGColorGetComponents()`
 

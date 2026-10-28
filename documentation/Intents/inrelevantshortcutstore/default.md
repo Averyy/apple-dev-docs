@@ -27,7 +27,7 @@ class var `default`: INRelevantShortcutStore { get }
 
 - [Defining Relevant Shortcuts for the Siri Watch Face](../../SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Always use [`default`](./default.md) to get a reference to the Relevant Shortcut Store instead of creating an instance of [`INRelevantShortcutStore`](../inrelevantshortcutstore.md).
 

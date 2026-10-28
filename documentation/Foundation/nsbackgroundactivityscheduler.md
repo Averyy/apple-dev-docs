@@ -19,7 +19,7 @@ class NSBackgroundActivityScheduler
 @interface NSBackgroundActivityScheduler : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSBackgroundActivityScheduler`](./nsbackgroundactivityscheduler.md) object to schedule an arbitrary maintenance or background task. It’s similar to an [`Timer`](./timer.md) object, in that it lets you schedule a repeating or non-repeating task. However, [`NSBackgroundActivityScheduler`](./nsbackgroundactivityscheduler.md) gives the system flexibility to determine the most efficient time to execute based on energy usage, thermal conditions, and CPU use.
 
@@ -37,7 +37,7 @@ For information about performing non-deferrable tasks efficiently, see [Specify 
 
 > **Note**:  The [`NSBackgroundActivityScheduler`](./nsbackgroundactivityscheduler.md) class interfaces with the XPC Activity API. However, your app doesn’t need to be an XPC service in order to use [`NSBackgroundActivityScheduler`](./nsbackgroundactivityscheduler.md).
 
-##### Create a Scheduler
+### Create a Scheduler
 
 To initialize a scheduler, call [`init(identifier:)`](./nsbackgroundactivityscheduler/init%28identifier%29.md) for `NSBackgroundActivityScheduler`, and pass it a unique identifier string in reverse DNS notation (`nil` and zero-length strings are not allowed) that remains constant across launches of your application.
 
@@ -55,7 +55,7 @@ NSBackgroundActivityScheduler *activity = [[NSBackgroundActivityScheduler alloc]
 
 > **Note**:  The system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future.
 
-##### Configure Scheduler Properties
+### Configure Scheduler Properties
 
 Configure the scheduler with any of the following scheduling properties:
 
@@ -112,7 +112,7 @@ activity.repeats = YES;
 activity.interval = 60 * 60;
 ```
 
-##### Schedule Activity with scheduleWithBlock:
+### Schedule Activity with scheduleWithBlock:
 
 When you’re ready to schedule the activity, call `scheduleWithBlock:` and provide a block of code to execute when the scheduler runs, as shown in the following example. The block will be called on a serial background queue appropriate for the level of quality of service specified. The system automatically uses the [`beginActivity(options:reason:)`](./processinfo/beginactivity%28options,reason%29.md) method (of [`ProcessInfo`](./processinfo.md)) while invoking the block, choosing appropriate options based on the specified quality of service.
 
@@ -139,7 +139,7 @@ scheduleWithBlock:^(NSBackgroundActivityCompletionHandler completion) {
 }];
 ```
 
-##### Detect Whether to Defer Activity
+### Detect Whether to Defer Activity
 
 It’s conceivable that while a lengthy activity is running, conditions may change, resulting in the activity now requiring deferral. For example, perhaps the user has unplugged the Mac and it’s now running on battery power. Your activity can call [`shouldDefer`](./nsbackgroundactivityscheduler/shoulddefer.md) to determine whether this has occurred. A value of [`true`](../Swift/true.md) indicates that the block should finish what it’s currently doing and invoke its completion handler with a value of [`NSBackgroundActivityScheduler.Result.deferred`](./nsbackgroundactivityscheduler/result/deferred.md). See the following example.
 
@@ -169,7 +169,7 @@ if ([activity shouldDefer]) {
 };
 ```
 
-##### Stop Activity
+### Stop Activity
 
 Call [`invalidate()`](./nsbackgroundactivityscheduler/invalidate%28%29.md) to stop scheduling an activity, as shown in the following example.
 

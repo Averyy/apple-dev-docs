@@ -22,7 +22,7 @@ static let mediaType: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerMediaType;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSString`](../../../Foundation/nsstring.md) object containing a type code such as `kUTTypeImage` or `kUTTypeMovie`.
 

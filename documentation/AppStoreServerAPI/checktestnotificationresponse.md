@@ -19,7 +19,7 @@ object CheckTestNotificationResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Test Notification Status`](./get-test-notification-status.md) endpoint returns this response.
 

@@ -27,7 +27,7 @@ optional func encodeRestorableState(with coder: NSCoder)
 
 - [About the UI preservation process](../about-the-ui-preservation-process.md)
 
-#### Discussion
+## Discussion
 
 You can implement this method for any object that has state information you want to preserve. When deciding what data to save, write the smallest amount of data needed to restore the object to its current configuration. The information you save should be data that you could not easily recreate. You can also save references to other objects, such as the view controller that was using the object.
 

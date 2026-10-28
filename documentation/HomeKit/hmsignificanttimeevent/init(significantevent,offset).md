@@ -24,11 +24,11 @@ init(significantEvent: HMSignificantEvent, offset: DateComponents?)
 - (instancetype) initWithSignificantEvent:(HMSignificantEvent) significantEvent offset:(NSDateComponents *) offset;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized significant time event which fires at the specified offset from the provided significant event.
 
-#### Discussion
+## Discussion
 
 To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](../../Foundation/datecomponents/minute.md) property of the `offset` argument must be set to `-30`.
 

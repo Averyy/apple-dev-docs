@@ -29,7 +29,7 @@ CFDataRefSecCertificateCopyData(SecCertificateRef certificate);
 
 - [Storing a DER-Encoded X.509 Certificate](./storing-a-der-encoded-x-509-certificate.md)
 
-#### Return Value
+## Return Value
 
 The DER representation of the certificate. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `nil` if the data passed in the `certificate` parameter is not a valid certificate object.
 

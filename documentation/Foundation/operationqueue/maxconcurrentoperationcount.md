@@ -25,7 +25,7 @@ var maxConcurrentOperationCount: Int { get set }
 @property NSInteger maxConcurrentOperationCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property affects only the operations that the current queue has executing at the same time. Other operation queues can also execute their maximum number of operations in parallel.
 

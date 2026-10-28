@@ -24,7 +24,7 @@ var defaultCaptureScope: (any MTLCaptureScope)? { get set }
 @property (atomic, strong, readwrite, nullable) id<MTLCaptureScope> defaultCaptureScope;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a default capture scope for Xcode to use when the user presses the capture button. You can still long-press the button to select a different capture scope.
 

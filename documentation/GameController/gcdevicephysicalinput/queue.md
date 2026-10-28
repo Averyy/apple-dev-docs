@@ -29,7 +29,7 @@ var queue: dispatch_queue_t? { get set }
 
 - [Handling input events](../handling-input-events.md)
 
-#### Discussion
+## Discussion
 
 Objects that conform to the [`GCDevicePhysicalInput`](../gcdevicephysicalinput.md) protocol dispatch callbacks on the device’s [`handlerQueue`](../gcdevice/handlerqueue.md) property by default. If you want to use a different dispatch queue, set this property to the preferred queue before you set callbacks.
 

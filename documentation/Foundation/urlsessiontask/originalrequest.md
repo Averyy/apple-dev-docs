@@ -25,7 +25,7 @@ var originalRequest: URLRequest? { get }
 @property (copy, readonly, nullable) NSURLRequest * originalRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically the same as the currently active request ([`currentRequest`](./currentrequest.md)) except when the server has responded to the initial request with a redirect to a different URL.
 

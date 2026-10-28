@@ -23,7 +23,7 @@ var tintColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil`. If a non-`nil` value is specified, the color is applied to any template images attached to the image view. For more information, see the [`renderingMode`](../uiimage/renderingmode-swift.property.md) property on the [`UIImage`](../uiimage.md) class.
 

@@ -19,7 +19,7 @@ var isResizable: Bool { get }
 @property (readonly, getter=isResizable) BOOL resizable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value coding compliant.
 

@@ -24,7 +24,7 @@ func features(in image: CIImage, options: [String : Any]? = nil) -> [CIFeature]
 - (NSArray<CIFeature *> *) featuresInImage:(CIImage *) image options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CIFeature`](../cifeature.md) objects. Each object represents a feature detected in the image.
 

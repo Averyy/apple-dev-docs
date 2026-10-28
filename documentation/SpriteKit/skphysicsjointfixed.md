@@ -25,7 +25,7 @@ class SKPhysicsJointFixed
 @interface SKPhysicsJointFixed : SKPhysicsJoint
 ```
 
-#### Overview
+## Overview
 
 An [`SKPhysicsJointFixed`](./skphysicsjointfixed.md) object fuses two physics bodies together at a reference point. Fixed joints are useful for creating complex shapes that can be broken apart later.
 

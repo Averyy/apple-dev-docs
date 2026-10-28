@@ -25,7 +25,7 @@ struct UniformRandomFloatingPointParameter<RandomTransformer, Parameter> where R
 
 - [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
 
-#### Overview
+## Overview
 
 The parameter is chosen from a continuous uniform distribution in the specified range.
 

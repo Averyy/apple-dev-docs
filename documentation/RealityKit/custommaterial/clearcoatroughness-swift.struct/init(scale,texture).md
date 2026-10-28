@@ -19,7 +19,7 @@ Creates a clearcoat object using a single value or a texture.
 init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this initializer to create an object to specify the amount of clearcoat for a material using a single value for the entire material, a UV-mapped image to specify different values for different parts of the entity, or both.
 

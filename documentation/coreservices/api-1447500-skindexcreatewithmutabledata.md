@@ -19,11 +19,11 @@ func SKIndexCreateWithMutableData(_ inData: CFMutableData!, _ inIndexName: CFStr
 SKIndexRef SKIndexCreateWithMutableData(CFMutableDataRef inData, CFStringRef inIndexName, SKIndexType inIndexType, CFDictionaryRef inAnalysisProperties);
 ```
 
-#### Return Value
+## Return Value
 
  The newly created index.
 
-#### Discussion
+## Discussion
 
 [`SKIndexCreateWithMutableData(_:_:_:_:)`](./api-1447500-skindexcreatewithmutabledata.md) creates an index in memory as a [`CFMutableData`](../CoreFoundation/cfmutabledata.md) object. Search Kit indexes are initially empty. A memory-based index is useful for quick searching and when your application doesn’t need persistent storage. To create a disk-based, persistent index, use the [`SKIndexCreateWithURL(_:_:_:_:)`](./api-1446111-skindexcreatewithurl.md) function.
 
@@ -33,7 +33,7 @@ This function retains the data object you provide in the `inData` parameter.
 
 When your application no longer needs the index, dispose of it by calling [`SKIndexClose(_:)`](./api-1442401-skindexclose.md).
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with [`SKIndex`](./skindex.md) objects.
 

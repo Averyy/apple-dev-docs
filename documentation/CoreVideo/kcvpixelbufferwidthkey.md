@@ -25,7 +25,7 @@ let kCVPixelBufferWidthKey: CFString
 extern CFStringRef const kCVPixelBufferWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

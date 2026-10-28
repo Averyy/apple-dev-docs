@@ -21,7 +21,7 @@ Returns the element at the given index path in the sectioned results.
 final func element(at indexPath: IndexPath) -> Element?
 ```
 
-#### Return Value
+## Return Value
 
 The element at the given index path, or `nil` if [`sections`](./sections.md) is `nil` or the index path is out of bounds.
 

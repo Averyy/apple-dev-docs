@@ -24,7 +24,7 @@ class func authorizationStatus(for entityType: EKEntityType) -> EKAuthorizationS
 + (EKAuthorizationStatus) authorizationStatusForEntityType:(EKEntityType) entityType;
 ```
 
-#### Return Value
+## Return Value
 
 The app’s authorization status of the given type.
 

@@ -18,7 +18,7 @@ Sets a regular expression for use in URL parsing.
 func setURLParsingRegularExpression(_ pattern: String?) throws
 ```
 
-#### Discussion
+## Discussion
 
 Setting a regular expression allows you to perform custom URL parsing patterns beyond the standard parsing options. The filter uses the regular expression to parse the URL before matching against the specified data set.
 

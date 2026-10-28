@@ -17,7 +17,7 @@
 extern NSPasteboardType NSTIFFPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`tiff`](./nspasteboard/pasteboardtype/tiff.md) instead.
 

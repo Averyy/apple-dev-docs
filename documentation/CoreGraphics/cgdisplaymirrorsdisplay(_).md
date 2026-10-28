@@ -20,11 +20,11 @@ func CGDisplayMirrorsDisplay(_ display: CGDirectDisplayID) -> CGDirectDisplayID
 extern CGDirectDisplayID CGDisplayMirrorsDisplay(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the primary display in the mirroring set. Returns `kCGNullDirectDisplay` if the specified display is actually the primary display or is not in a mirroring set.
 
-#### Discussion
+## Discussion
 
 For more information about display mirroring, see [`CGConfigureDisplayMirrorOfDisplay(_:_:_:)`](./cgconfiguredisplaymirrorofdisplay%28_,_,_%29.md).
 

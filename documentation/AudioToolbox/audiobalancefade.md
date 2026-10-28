@@ -24,7 +24,7 @@ struct AudioBalanceFade
 struct AudioBalanceFade;
 ```
 
-#### Overview
+## Overview
 
 This data structure is used with the [`kAudioFormatProperty_BalanceFade`](./kaudioformatproperty_balancefade.md) property.
 

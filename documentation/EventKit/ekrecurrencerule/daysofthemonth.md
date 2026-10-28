@@ -24,7 +24,7 @@ var daysOfTheMonth: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * daysOfTheMonth;
 ```
 
-#### Discussion
+## Discussion
 
 Values can be from `1` to `31` and from `-1` to `-31`. This property value is valid only for recurrence rules that were initialized with specific days of the month and a frequency type of [`EKRecurrenceFrequency.monthly`](../ekrecurrencefrequency/monthly.md).
 

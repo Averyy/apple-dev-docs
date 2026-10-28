@@ -19,7 +19,7 @@ func performValidatedReplacement(in range: NSRange, with attributedString: NSAtt
 - (BOOL) performValidatedReplacementInRange:(NSRange) range withAttributedString:(NSAttributedString *) attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 Retuns `true` if the replacement was successful, `false` otherwise.
 

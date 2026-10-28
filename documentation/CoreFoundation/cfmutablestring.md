@@ -23,7 +23,7 @@ class CFMutableString
 typedef struct __CFString * CFMutableStringRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableString manages dynamic strings. The basic interface for managing strings is provided by [`CFString`](./cfstring.md). CFMutableString adds functions to modify the contents of a string.
 

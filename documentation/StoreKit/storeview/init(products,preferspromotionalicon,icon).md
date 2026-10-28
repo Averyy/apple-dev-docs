@@ -22,7 +22,7 @@ nonisolated
 init(products: some Collection<Product>, prefersPromotionalIcon: Bool = false, @ViewBuilder icon: @escaping (Product) -> Icon) where PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 If you set `prefersPromotionalIcon` to `true`, the view uses promotional images for products that have a promotional image available.
 

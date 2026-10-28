@@ -20,11 +20,11 @@ optional func tokenField(_ tokenField: NSTokenField, menuForRepresentedObject re
 - (NSMenu *) tokenField:(NSTokenField *) tokenField menuForRepresentedObject:(id) representedObject;
 ```
 
-#### Return Value
+## Return Value
 
 The menu associated with the  represented object.
 
-#### Discussion
+## Discussion
 
 The returned menu should be autoreleased. By default tokens in a token field do not return menus.
 

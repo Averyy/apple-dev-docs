@@ -23,7 +23,7 @@ mutating func removeSubranges(_ subranges: RangeSet<Self.Index>)
 
 Available when `Self` conforms to `RangeReplaceableCollection`.
 
-#### Discussion
+## Discussion
 
 For example, this code sample finds the indices of all the negative numbers in the array, and then removes those values.
 

@@ -17,7 +17,7 @@ A secure token that you use to delete a Store and Forward batch.
 struct StoreAndForwardBatchDeletionToken
 ```
 
-#### Overview
+## Overview
 
 A `StoreAndForwardBatchDeletionToken` holds the token  your payment service provider supplies when they successfully send a batch of Store and Forward payments for processing.
 

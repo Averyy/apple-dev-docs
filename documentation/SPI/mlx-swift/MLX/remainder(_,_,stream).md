@@ -21,7 +21,7 @@ func remainder(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Computes the remainder of dividing `lhs` with `rhs` with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -33,7 +33,7 @@ let a = MLXArray(0 ..< 12, [4, 3])
 let r = remainder(a, 2) // e.g. a % 2
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

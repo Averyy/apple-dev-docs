@@ -19,11 +19,11 @@ func rtfdFileWrapper(from range: NSRange, documentAttributes dict: [NSAttributed
 - (NSFileWrapper *) RTFDFileWrapperFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A file wrapper containing the RTFD data.
 
-#### Discussion
+## Discussion
 
 The file wrapper also includes the document-level attributes in `docAttributes`, as explained in [RTF Files and Attributed Strings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextAttributes/RTFAndAttrStrings.html#//apple_ref/doc/uid/20000164).
 

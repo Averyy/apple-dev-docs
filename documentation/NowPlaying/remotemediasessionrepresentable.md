@@ -23,7 +23,7 @@ protocol RemoteMediaSessionRepresentable : Identifiable
 
 - [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Conform to this protocol to represent playback happening outside of the current device. This object is expected to interact with a remote device, and thus may require some form of remote connection that you set up on initialization.
 

@@ -15,11 +15,11 @@ Returns the default garbage collector.
 + (id) defaultCollector;
 ```
 
-#### Return Value
+## Return Value
 
 The default garbage collector for the current process. Returns `nil` if the current process is not running with garbage collection.
 
-#### Discussion
+## Discussion
 
 There is at most one garbage collector for Cocoa within a single process.
 

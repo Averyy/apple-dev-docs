@@ -16,7 +16,7 @@ The initial coupon code for the payment request.
 DOMString couponCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `nil` or the empty string to indicate that there’s no initial coupon.
 

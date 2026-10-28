@@ -25,11 +25,11 @@ func CFRunLoopRunInMode(_ mode: CFRunLoopMode!, _ seconds: CFTimeInterval, _ ret
 extern CFRunLoopRunResult CFRunLoopRunInMode(CFRunLoopMode mode, CFTimeInterval seconds, Boolean returnAfterSourceHandled);
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating the reason the run loop exited. Possible values are described below.
 
-#### Discussion
+## Discussion
 
 Run loops can be run recursively. You can call [`CFRunLoopRunInMode(_:_:_:)`](./cfrunloopruninmode%28_,_,_%29.md) from within any run loop callout and create nested run loop activations on the current thread’s call stack. You are not restricted in which modes you can run from within a callout. You can create another run loop activation running in any available run loop mode, including any modes already running higher in the call stack.
 

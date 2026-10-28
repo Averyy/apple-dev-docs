@@ -26,7 +26,7 @@ func animation<V>(_ animation: Animation?, value: V) -> some View where V : Equa
 
 - [Managing user interface state](../managing-user-interface-state.md)
 
-#### Return Value
+## Return Value
 
 A view that applies `animation` to this view whenever `value` changes.
 

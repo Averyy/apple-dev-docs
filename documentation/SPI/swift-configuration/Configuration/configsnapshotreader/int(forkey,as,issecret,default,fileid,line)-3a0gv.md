@@ -24,11 +24,11 @@ Synchronously gets a config value for the given config key with default fallback
 func int<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, default defaultValue: Value, fileID: String = #fileID, line: UInt = #line) -> Value where Value : ExpressibleByConfigInt
 ```
 
-#### Return Value
+## Return Value
 
 The config value if found and convertible, otherwise the default value.
 
-#### Discussion
+## Discussion
 
 Use this method when you need a guaranteed non-nil result for integer-convertible types. If the configuration value is missing or can’t be converted to the expected type, the default value is returned instead.
 

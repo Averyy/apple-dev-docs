@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_MCHNGR_Bit
 ```
 
-#### Discussion
+## Discussion
 
 MCHNGR bit definition.
 

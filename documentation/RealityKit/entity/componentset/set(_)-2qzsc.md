@@ -33,7 +33,7 @@ Adds multiple components to the set, overriding any existing components of the s
 @preconcurrency func set<T>(_ component: T) where T : _ImplicitlyAnimatableBuiltinComponent
 ```
 
-#### Discussion
+## Discussion
 
 If the input array includes multiple components of the same type, the set adds the component with the highest index. This is because the set can only hold one component of each type.
 

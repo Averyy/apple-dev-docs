@@ -21,7 +21,7 @@ Creates and returns a node object.
 + (instancetype) node;
 ```
 
-#### Return Value
+## Return Value
 
 A new node object, or `nil` if initialization is not successful.
 

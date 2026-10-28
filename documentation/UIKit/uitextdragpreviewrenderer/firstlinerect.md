@@ -22,7 +22,7 @@ var firstLineRect: CGRect { get }
 @property (nonatomic, readonly) CGRect firstLineRect;
 ```
 
-#### Discussion
+## Discussion
 
 The first line rectangle contains the first line of text in the drag preview that may be a partial line. This property can be a zero rectangle. The initial value is also not calculated until the first time it’s used.
 

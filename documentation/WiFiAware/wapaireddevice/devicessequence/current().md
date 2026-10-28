@@ -17,11 +17,11 @@ Fetches a one-time snapshot of all paired devices that are currently known and  
 func current() async throws -> WAPairedDevice.DevicesSequence.Element?
 ```
 
-#### Return Value
+## Return Value
 
 A single [`WAPairedDevice.Devices`](../devices.md) element holding a snapshot of the currently paired devices known to the app, or `nil` if the sequence has no more values.
 
-#### Discussion
+## Discussion
 
 The [`WAPairedDevice.Devices`](../devices.md) dictionary holds a snapshot of the currently paired devices that are known and accessible to your app. This method returns an empty dictionary if there are no paired devices known to your app. The following code is an example of how to use `current()` to return the first `Devices` snapshot in the sequence:
 

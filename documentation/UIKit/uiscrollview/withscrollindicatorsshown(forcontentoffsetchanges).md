@@ -23,7 +23,7 @@ func withScrollIndicatorsShown(forContentOffsetChanges changes: () -> Void)
 - (void) withScrollIndicatorsShownForContentOffsetChanges:(void (^)()) changes;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view displays the scroll indicator for an axis if the content offset changes along that axis; otherwise, the scroll indicator for that axis remains hidden. For example, if you update the content offset horizontally in the `changes` block, the scroll view shows the horizontal scroll indicator but not the vertical scroll indicator.
 

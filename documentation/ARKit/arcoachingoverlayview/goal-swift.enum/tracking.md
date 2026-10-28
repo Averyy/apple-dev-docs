@@ -20,7 +20,7 @@ case tracking
 ARCoachingGoalTracking
 ```
 
-#### Discussion
+## Discussion
 
 When you use this goal, coaching overlay won’t hide until the user has moved their device in a way that facilitates ARKit starting up a basic world tracking session.
 

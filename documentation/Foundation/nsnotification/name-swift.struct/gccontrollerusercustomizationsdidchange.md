@@ -20,7 +20,7 @@ A notification that posts when the user customizes the button mappings or other 
 static let GCControllerUserCustomizationsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 Use this notification to update your interface when the mappings change. The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that the user customizes.
 

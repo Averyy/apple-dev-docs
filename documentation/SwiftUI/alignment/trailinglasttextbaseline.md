@@ -22,7 +22,7 @@ A guide that marks the trailing edge and bottom-most text baseline in a view.
 static var trailingLastTextBaseline: Alignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`lastTextBaseline`](../verticalalignment/lasttextbaseline.md) vertical guide:
 

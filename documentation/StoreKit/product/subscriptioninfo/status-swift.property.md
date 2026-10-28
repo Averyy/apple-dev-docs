@@ -21,7 +21,7 @@ An array that contains status information for a subscription group, including re
 var status: [Product.SubscriptionInfo.Status] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 This array is empty if the customer was never subscribed to a product in this subscription group.
 

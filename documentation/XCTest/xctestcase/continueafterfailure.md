@@ -16,7 +16,7 @@ var continueAfterFailure: Bool { get set }
 @property BOOL continueAfterFailure;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md). Set this property to [`false`](../../Swift/false.md) within a test method to end execution of that method as soon as a failure occurs. Other test methods in the suite may still execute after a test fails.
 

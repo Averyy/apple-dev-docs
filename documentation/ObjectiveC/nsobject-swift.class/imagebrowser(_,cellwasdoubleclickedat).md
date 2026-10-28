@@ -19,7 +19,7 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, cellWasDoubleClickedAt index:
 - (void) imageBrowser:(IKImageBrowserView *) aBrowser cellWasDoubleClickedAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals that the user double-clicked an item in the image browser view. You can implement this method if you want to perform custom tasks at that time.
 

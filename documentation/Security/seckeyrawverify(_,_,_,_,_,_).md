@@ -26,7 +26,7 @@ func SecKeyRawVerify(_ key: SecKey, _ padding: SecPadding, _ signedData: UnsafeP
 OSStatus SecKeyRawVerify(SecKeyRef key, SecPadding padding, const uint8_t *signedData, size_t signedDataLen, const uint8_t *sig, size_t sigLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

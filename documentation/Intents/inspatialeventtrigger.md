@@ -23,7 +23,7 @@ class INSpatialEventTrigger
 @interface INSpatialEventTrigger : NSObject
 ```
 
-#### Overview
+## Overview
 
 When configuring tasks, you can add an [`INSpatialEventTrigger`](./inspatialeventtrigger.md) object to display a reminder when the user approaches or leaves a specific location. Spatial event triggers rely on location services to generate events.
 

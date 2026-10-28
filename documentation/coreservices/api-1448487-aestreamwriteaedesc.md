@@ -19,11 +19,11 @@ func AEStreamWriteAEDesc(_ ref: AEStreamRef!, _ desc: UnsafePointer<AEDesc>!) ->
 OSStatus AEStreamWriteAEDesc(AEStreamRef ref, const AEDesc *desc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 You can use this routine to incorporate an existing descriptor into the stream. For example, you could use this routine if you had a complex descriptor you wanted to add to multiple streams, but which would be costly to create each time. 
 

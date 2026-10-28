@@ -24,11 +24,11 @@ func requestData(for resource: PHAssetResource, options: PHAssetResourceRequestO
 - (PHAssetResourceDataRequestID) requestDataForAssetResource:(PHAssetResource *) resource options:(PHAssetResourceRequestOptions *) options dataReceivedHandler:(void (^)(NSData *data)) handler completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelDataRequest(_:)`](./canceldatarequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos begins asynchronously reading the underlying data for the asset resource. Depending on the options you specify and the current state of the asset, Photos may download asset data from the network.
 

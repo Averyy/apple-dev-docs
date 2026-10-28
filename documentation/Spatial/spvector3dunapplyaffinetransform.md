@@ -21,7 +21,7 @@ Returns a vector that results from unapplying the specified affine transform.
 static SPVector3D SPVector3DUnapplyAffineTransform(SPVector3D vector, SPAffineTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from unapplying the specified affine transform.
 

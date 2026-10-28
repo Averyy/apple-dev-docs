@@ -17,7 +17,7 @@ The declaration to configure audio accessory settings.
 object AudioAccessorySettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.audio-accessory.settings` as the declaration type.
 
@@ -26,7 +26,7 @@ Setting `TemporaryPairing` to `false` disables only the temporary pairing featur
 - Pair and use audio accessories - the device records the pairing and synchronizes it to their iCloud account.
 - Use the audio accessory AirPods Sharing feature.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ Setting `TemporaryPairing` to `false` disables only the temporary pairing featur
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 

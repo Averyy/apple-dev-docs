@@ -19,7 +19,7 @@ func loadView()
 - (void) loadView;
 ```
 
-#### Discussion
+## Discussion
 
 This method connects an instantiated view from a nib file to the [`view`](./view.md) property of the view controller. This method is called by the system, and is exposed in this class so you can override it to add behavior immediately before or after nib loading.
 

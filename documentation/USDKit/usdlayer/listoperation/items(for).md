@@ -20,7 +20,7 @@ Returns the items in the given operation’s slot.
 func items(for operation: USDLayer.ListOperationType) -> [T]
 ```
 
-#### Return Value
+## Return Value
 
 The items authored in `operation`’s slot.
 

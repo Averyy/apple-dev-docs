@@ -15,11 +15,11 @@ Starts an asynchronous read or write operation.
 virtual kern_return_t DoAsyncReadWrite(bool isRead, uint32_t requestID, uint64_t dmaAddr, uint64_t size, uint64_t lba, uint64_t numOfBlocks, IOUserStorageOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of the read/write operation. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 When the read or write operation completes, the dext calls your [`CompleteIO`](./completeio.md) method with the results of the operation.
 

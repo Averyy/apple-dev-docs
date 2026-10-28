@@ -26,7 +26,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends a [`netServiceBrowserDidStopSearch(_:)`](../netservicebrowserdelegate/netservicebrowserdidstopsearch%28_%29.md) message to the delegate and causes the browser to discard any pending search results.
 

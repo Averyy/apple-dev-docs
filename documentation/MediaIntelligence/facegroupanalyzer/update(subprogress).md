@@ -17,15 +17,15 @@ Clusters faces into entities and updates their assignments.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func update(subprogress: consuming Subprogress? = nil) async throws
+nonisolated(nonsending)
+final func update(subprogress: consuming Subprogress? = nil) async throws
 ```
 
 ## Mentions
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 Call this method after ingesting assets with [`insertOrUpdateAssets(_:)`](./insertorupdateassets%28_%29.md) to run the face clustering algorithm. When this method completes, every face has a non-nil [`entityID`](./face/entityid.md) and [`state`](./state-swift.property.md) returns [`FaceGroupAnalyzer.State.ready`](./state-swift.enum/ready.md).
 

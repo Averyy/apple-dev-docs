@@ -19,7 +19,7 @@ var anchorPositionOffset: CGFloat { get set }
 @property CGFloat anchorPositionOffset;
 ```
 
-#### Discussion
+## Discussion
 
 That starts from the left for a horizontal line fragment, and from the top for a vertical. Navigating between lines uses this point when the current line fragment associated with the selection is shorter than the next line visited. Defaults to `0.0`.
 

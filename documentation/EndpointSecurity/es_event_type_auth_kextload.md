@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_KEXTLOAD: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_KEXTLOAD
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`kextload`](./es_events_t/kextload.md), which has the type [`es_event_kextload_t`](./es_event_kextload_t.md).
 

@@ -21,7 +21,7 @@ var rank: Int { get }
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 Equivalent to `shape.count`.
 

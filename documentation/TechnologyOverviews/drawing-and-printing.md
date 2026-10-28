@@ -8,7 +8,7 @@ You can use standard views to display many types of content, and when you need s
 
 Anything you can draw in your app, you can also print. The system offers integrated printing support, including a standard interface to configure print jobs and start the printing process. Print your content to a connected printer or to a PDF file.
 
-#### Draw custom content using a view
+## Draw custom content using a view
 
 When your app’s drawing requirements are moderate, create your content using existing [SwiftUI](../SwiftUI/canvas.md), [UIKit](../UIKit/uiview.md), or [AppKit](../AppKit/nsview.md) views. These views provide the blank canvas and drawing environment you need to add your custom content. In SwiftUI, you use a closure to build your content from [shape views](../SwiftUI/shapes.md) that the framework provides. In UIKit and AppKit, you define your own subclass and add your custom drawing code to it.
 
@@ -26,7 +26,7 @@ In addition to the technologies you use to draw your content, several technologi
 - [PDFKit](../PDFKit/PDFKit.md) displays and manipulates PDF documents and content.
 - [Core Animation](../QuartzCore/QuartzCore.md) provides additional drawing infrastructure. The [layer type](../QuartzCore/calayer.md) in particular offers ways to accelerate common operations like adding a background color to your view or masking the view’s content.
 
-#### Build a graphics engine using Metal
+## Build a graphics engine using Metal
 
 If drawing is a central feature of your app, [Metal](../Metal/Metal.md) offers the performance to draw that content efficiently. With Metal, you use a set of [dedicated types](../Metal/understanding-the-metal-4-core-api.md) to build your own graphics engine and generate 2D or 3D content frame-by-frame. During the creation of a single frame, Metal runs your custom shader code on the available GPU cores, applying your rendering commands at hardware speeds. Choose Metal when you need to draw complex content at high frame rates, or want to ensure that your drawing code runs as fast as possible.
 
@@ -36,7 +36,7 @@ Metal works hand-in-hand with several other frameworks, which supplement its cap
 
 If you’re building an immersive app for Apple Vision Pro, combine your Metal graphics engine with the [Compositor Services](../CompositorServices/CompositorServices.md) framework to create a stereoscopic version of your 3D content. Compositor Services provides the information Metal needs to render the same content from two different eye positions, and give your content a three-dimensional appearance.
 
-#### Print your app’s content
+## Print your app’s content
 
 Printing support is built-in to iOS, iPadOS, macOS, and visionOS, and the system provides extensive support and UI to manage the printing process for you. To add printing support to your app, you perform three tasks:
 

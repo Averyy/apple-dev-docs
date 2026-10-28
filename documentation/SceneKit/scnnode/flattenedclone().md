@@ -25,11 +25,11 @@ func flattenedClone() -> Self
 - (instancetype) flattenedClone;
 ```
 
-#### Return Value
+## Return Value
 
 A new single node containing the combined geometries and materials of the node and its child node subtree.
 
-#### Discussion
+## Discussion
 
 Rendering complex node hierarchies can incur a performance cost. Each geometry and material requires a separate draw command to be sent to the GPU, and each draw command comes with a performance overhead. If you plan for a portion of your scene’s node hierarchy to remain static (with respect to itself, if not the rest of the scene), use this method to create a single node containing all elements of that node hierarchy that SceneKit can render using fewer draw commands.
 

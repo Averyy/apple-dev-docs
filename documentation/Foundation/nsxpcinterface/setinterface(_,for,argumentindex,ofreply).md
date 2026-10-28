@@ -25,7 +25,7 @@ func setInterface(_ ifc: NSXPCInterface, for sel: Selector, argumentIndex arg: I
 - (void) setInterface:(NSXPCInterface *) ifc forSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
 ```
 
-#### Discussion
+## Discussion
 
 If an argument to a method in your protocol should be sent as a proxy object instead of by copy, then configure the interface for that protocol with a new interface for a specific argument. An example of an object that should be a proxy instead of being copied is a view object.
 

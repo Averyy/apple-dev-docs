@@ -19,7 +19,7 @@ var selectionIndexPaths: [IndexPath] { get }
 @property (copy, readonly) NSArray<NSIndexPath *> * selectionIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array containing [`NSIndexPath`](../../Foundation/nsindexpath.md) objects for each of the selected objects in the tree controller’s content. This property is observable using key-value observing.
 

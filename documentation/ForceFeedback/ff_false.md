@@ -18,7 +18,7 @@ var FF_FALSE: HRESULT { get }
 #define FF_FALSE
 ```
 
-#### Discussion
+## Discussion
 
 The operation did not complete successfully.
 

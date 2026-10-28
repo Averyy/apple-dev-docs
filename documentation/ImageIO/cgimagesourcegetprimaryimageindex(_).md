@@ -25,7 +25,7 @@ func CGImageSourceGetPrimaryImageIndex(_ isrc: CGImageSource) -> Int
 extern size_t CGImageSourceGetPrimaryImageIndex(CGImageSourceRef isrc);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the primary image, or `0` for image formats other than the HEIF format.
 

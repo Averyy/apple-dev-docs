@@ -5,96 +5,96 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4. The SDK comes bundled with Xcode 26.4. For information on the compatibility requirements for Xcode 26.4, see [Xcode 26.4 Release Notes](../Xcode-Release-Notes/xcode-26_4-release-notes.md).
 
-##### Accessory Notifications
+### Accessory Notifications
 
-###### Known Issues
+#### Known Issues
 
 - The Accessory Notifications Framework allows accessory companion apps to request notification forwarding and receive notification content from the system through an extension model. It is only available for developer testing on iPhone in this release, and will be available to customers in the EU in a future iOS 26 release.  (172227787)
 
-##### Address Sanitizer
+### Address Sanitizer
 
-###### Known Issues
+#### Known Issues
 
 - Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808)
 
   **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
-##### AudioAccessoryKit
+### AudioAccessoryKit
 
-###### Known Issues
+#### Known Issues
 
 - `AudioAccessoryKit` allows third-party audio accessory manufacturers to provide headphone information to the system to support automatic audio switching. This framework is only available for developer testing on iPhone and iPad in this release, and will be available to customers in the EU in a future iOS 26 and iPadOS 26 release.  (172228589)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can now check the status of an asset pack while offline by calling `localStatus(ofAssetPackWithID:)` or `assetPackIsAvailableLocally(withID:)` on the shared asset pack manager. The former method returns all available status information. The latter returns only a Boolean value but can be called synchronously. Not all status information is available offline.  (164498466)
 - You can make the latest version of an asset pack available locally by calling `ensureLocalAvailability(of:requireLatestVersion:)` on the shared asset pack manager and passing `true` to the `shouldUpdate` parameter.  (166237389)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apps might crash when downloading asset packs.  (169648111)
 
-##### External Media
+### External Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: HFS external media might fail to mount automatically.  (168672160)
 
-##### Feedback
+### Feedback
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: After submitting a crash/panic report, Feedback UI’s close button might become unresponsive.  (170091186)
 
-##### Memory Integrity Enforcement for Applications
+### Memory Integrity Enforcement for Applications
 
-###### New Features
+#### New Features
 
 - Applications can now opt in to the full protections of Memory Integrity Enforcement for enhanced memory safety protection. Previously applications were limited to Soft Mode.  (160719439)
 
-##### Messages
+### Messages
 
-###### New Features
+#### New Features
 
 - In this beta, RCS end-to-end encryption will become available for testing between Apple and Android devices. This feature is not shipping in this release and will be available to customers in future iOS, iPadOS, macOS, and watchOS 26 releases. End-to-end encryption is in beta and is not available for all devices or carriers. Conversations labeled as encrypted are encrypted end-to-end, so messages can’t be read while they’re sent between devices.  (170160585)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured.
 
   For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
 
-##### Reality Composer
+### Reality Composer
 
-###### Known Issues
+#### Known Issues
 
 - Reality Composer iOS can no longer export projects as `.reality` or USDZ. Opening export menu results in an empty panel.  (170091896)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New fields [revocationType](../StoreKit/transaction/revocationtype-swift.property.md) and [revocationPercentage](../StoreKit/transaction/revocationpercentage.md) have been added to [Transaction](../StoreKit/transaction.md).  (148858551)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: SwiftUI does not surface the latest `.userActivity` as the current user activity.  (163136831)
 
-###### Known Issues
+#### Known Issues
 
 - Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties.
 
@@ -102,9 +102,9 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
   **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
 
-##### UIKit
+### UIKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: KeyboardNotification might not send.  (165479264)
 

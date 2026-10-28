@@ -19,7 +19,7 @@ func MDQueryCopyQueryString(_ query: MDQuery!) -> CFString!
 CFStringRef MDQueryCopyQueryString(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 A CFStringRef containing the query string.
 

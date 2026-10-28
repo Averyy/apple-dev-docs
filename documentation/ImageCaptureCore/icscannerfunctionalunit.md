@@ -19,7 +19,7 @@ class ICScannerFunctionalUnit
 @interface ICScannerFunctionalUnit : NSObject
 ```
 
-#### Overview
+## Overview
 
 The ImageCaptureCore framework defines four concrete subclasses of functional units:
 

@@ -5,7 +5,7 @@
 
 Manage and streamline the sending of batches of media assets and timeline sequences from your app using Apple events.
 
-#### Overview
+## Overview
 
 Consider using Apple events to help your users manage their workflow if they have many assets to send to Final Cut Pro and generally send all of those assets before starting their work in Final Cut Pro. With Apple event support in your app, your users need fewer clicks to send their media assets, projects, and metadata to Final Cut Pro for editing.
 
@@ -13,13 +13,13 @@ To provide a more streamlined process, use the `Open` `Document` Apple event to 
 
 ![Illustration showing movement of Final Cut Pro X M L document from your app through an Apple event to Final Cut Pro.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3878514@2x.png)
 
-##### Create and Save an FCPXML File
+### Create and Save an FCPXML File
 
 Before your app can use Apple events to send a file to Final Cut Pro, it must create the FCPXML document, and save it as a file with an `.fcpxml` extension. See [Creating FCPXML Documents](./creating-fcpxml-documents.md).
 
 Consider saving the `.fcpxml` file to a temporary location that your app clears periodically. Once Final Cut Pro processes the FCPXML, it no longer needs the actual `.fcpxml` file.
 
-##### Send an FCPXML File Using an Apple Event
+### Send an FCPXML File Using an Apple Event
 
 To communicate your app’s request, create an AppleScript that sends an `Open` `Document` Apple event to Final Cut Pro. This Apple event contains a URL that points to an `.fcpxml` file your app created, and it tells Final Cut Pro to open and process that file.
 
@@ -56,7 +56,7 @@ if (result == nil) { /* handle error */ }
 
 AppleScript is the preferred way to send an FCPXML document to Final Cut Pro using the `Open` `Document` Apple event. AppleScript lets Final Cut Pro identify the app that’s sending the request, which means Final Cut Pro can provide that information when it reports an error or prompts for user action. The result is a better experience for your users. If you prefer, however, you can use `NSWorkspace` instead of AppleScript. (See the [NSWorkspace](https://developer.apple.com/library/archive/technotes/tn2050/_index.html#//apple_ref/doc/uid/DTS10003081-CH1-SUBSECTION8) developer documentation for details.)
 
-##### Specify a Library for the FCPXML File
+### Specify a Library for the FCPXML File
 
 When your app sends an FCPXML file to Final Cut Pro using an Apple event, Final Cut Pro displays the Open Library dialog so your user can choose where the content should go. Users can choose an existing library (or event) or create a new one.
 

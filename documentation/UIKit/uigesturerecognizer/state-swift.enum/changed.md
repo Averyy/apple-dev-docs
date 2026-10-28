@@ -31,7 +31,7 @@ UIGestureRecognizerStateChanged
 - [Handling pinch gestures](../../handling-pinch-gestures.md)
 - [Handling rotation gestures](../../handling-rotation-gestures.md)
 
-#### Discussion
+## Discussion
 
 It sends its action message (or messages) at the next cycle of the run loop.
 

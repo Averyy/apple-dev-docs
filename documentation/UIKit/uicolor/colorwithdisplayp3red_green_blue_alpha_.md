@@ -20,11 +20,11 @@ Creates a color object using the specified opacity and RGB component values in t
 + (UIColor *) colorWithDisplayP3Red:(CGFloat) displayP3Red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object. The color information represented by this object is in an extended range sRGB colorspace. On applications linked for iOS 10 or later, the color is specified in an extended range sRGB color space.
 
-#### Discussion
+## Discussion
 
 Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0.
 

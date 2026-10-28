@@ -27,11 +27,11 @@ convenience init?(scheme: String, host: String?, path: String)
 - (instancetype) initWithScheme:(NSString *) scheme host:(NSString *) host path:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized NSURL object.
 
-#### Discussion
+## Discussion
 
 This method automatically uses percent encoding to escape the `path` and `host` parameters.
 

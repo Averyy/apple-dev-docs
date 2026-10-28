@@ -24,7 +24,7 @@ var rotation: vector_float3 { get set }
 @property (nonatomic, readwrite) vector_float3 rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The three components of this vector describe counterclockwise rotation around the corresponding axes. In a coordinate system where the negative z-axis direction is considered “forward”, these components are pitch (rotation about the x-axis), yaw (rotation about the y-axis), and roll (rotation about the z-axis).
 

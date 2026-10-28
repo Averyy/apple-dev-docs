@@ -21,11 +21,11 @@ Creates an audio channel layout object from an audio channel layout tag.
 + (instancetype) layoutWithLayoutTag:(AudioChannelLayoutTag) layoutTag;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioChannelLayout` object.
 
-#### Discussion
+## Discussion
 
 If the provided audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md), this initializer attempts to convert it to a more specific tag.
 

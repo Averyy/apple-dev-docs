@@ -24,7 +24,7 @@ func textInput(_ textInput: any BETextInput, deferReplaceTextActionToSystem send
 - (void) textInput:(id<BETextInput>) textInput deferReplaceTextActionToSystem:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 When handling the replace: action, use this method to defer the replacement to the system.
 

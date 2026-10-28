@@ -19,7 +19,7 @@ The bounds of the paper.
 var bounds: CGRect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the paper are positioned relative to its bounds.
 

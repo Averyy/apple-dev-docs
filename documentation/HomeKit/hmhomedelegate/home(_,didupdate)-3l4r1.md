@@ -24,7 +24,7 @@ optional func home(_ home: HMHome, didUpdate trigger: HMTrigger)
 - (void) home:(HMHome *) home didUpdateTrigger:(HMTrigger *) trigger;
 ```
 
-#### Discussion
+## Discussion
 
 Enabling or disabling a trigger or modifying its action sets will cause this method to be called.
 

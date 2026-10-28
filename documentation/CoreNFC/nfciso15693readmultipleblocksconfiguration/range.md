@@ -19,7 +19,7 @@ var range: NSRange { get set }
 @property (nonatomic, assign) NSRange range;
 ```
 
-#### Discussion
+## Discussion
 
 Range to read in blocks.  Valid start index range is 0x00 to 0xFF.  Length shall not be 0.
 

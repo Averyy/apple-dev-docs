@@ -21,7 +21,7 @@ var isMonitoring: Bool { get }
 @property (nonatomic, readonly, getter=isMonitoring) BOOL monitoring;
 ```
 
-#### Discussion
+## Discussion
 
 See [`startMonitoring()`](./startmonitoring%28%29.md) and [`stopMonitoring()`](./stopmonitoring%28%29.md).
 

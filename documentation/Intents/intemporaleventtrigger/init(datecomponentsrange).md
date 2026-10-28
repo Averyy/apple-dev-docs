@@ -23,7 +23,7 @@ init(dateComponentsRange: INDateComponentsRange)
 - (instancetype) initWithDateComponentsRange:(INDateComponentsRange *) dateComponentsRange;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized event trigger object or `nil` if the object could not be created.
 

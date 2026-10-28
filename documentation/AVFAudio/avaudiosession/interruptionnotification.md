@@ -30,7 +30,7 @@ extern NSNotificationName const AVAudioSessionInterruptionNotification;
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 The notification’s user-information dictionary contains the [`AVAudioSessionInterruptionTypeKey`](../avaudiosessioninterruptiontypekey.md) key. If the interruption type is [`AVAudioSession.InterruptionType.began`](./interruptiontype/began.md), the system interrupted your app’s audio session and it’s no longer active. If the interruption type is [`AVAudioSession.InterruptionType.ended`](./interruptiontype/ended.md), this dictionary also contains the [`AVAudioSessionInterruptionOptionKey`](../avaudiosessioninterruptionoptionkey.md) key.
 

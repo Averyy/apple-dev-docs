@@ -26,7 +26,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 @property (copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The supported constants are defined in Time Pitch Algorithm Settings.
 

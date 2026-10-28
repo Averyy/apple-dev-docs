@@ -9,7 +9,7 @@ Query audit summaries grouped by transaction across a specified time range.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns one `AuditSummary` row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination. The `count` field on each row indicates how many individual field changes that transaction group contains.
 
@@ -17,9 +17,9 @@ To fetch field-level details via `GET /v1/change-history/{detailId}` ([`Get Chan
 
 See [`AuditOperator`](./auditoperator.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
-##### Filters
+### Filters
 
 The following fields support filtering. For non-time fields, the API supports only `EQUALS` and `IN`. It reserves `GREATER_THAN`, `LESS_THAN`, and `BETWEEN` for `eventTime`.
 
@@ -36,7 +36,7 @@ The following fields support filtering. For non-time fields, the API supports on
 | `campaignId` | `EQUALS`, `IN` | Available when `entityType` is `AdGroup`, `Keyword`, or `NegativeKeyword`. |
 | `adGroupId` | `EQUALS`, `IN` | Available when `entityType` is `Keyword` or `NegativeKeyword`. |
 
-##### Sorting
+### Sorting
 
 Sort by any filterable field using `field` and `order` (`ASC` or `DESC`). Default sort is by `eventTime` descending.
 
@@ -48,13 +48,13 @@ The `options` object controls response performance and metadata behavior.
 | `timeZone` | `"UTC"`, `"ORTZ"` | `"UTC"` | Timezone for `eventTime` filter values. `ORTZ` converts filter values from the org’s configured timezone to UTC server-side. |
 | `metadata` | `"none"`, `"latest"`, `"snapshot"` | `"none"` | Controls entity metadata in change detail responses. `"none"` returns no metadata. `"latest"` joins current entity metadata. `"snapshot"` uses metadata captured at the time of the event. |
 
-#### Payload Examples
+## Payload Examples
 
 **Filter by Entity Type**:
 
 Query campaign changes within a two-week window, sorted by most recent first.
 
-##### Request
+### Request
 
 ```http
 POST /v1/change-history/query
@@ -93,7 +93,7 @@ POST /v1/change-history/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -142,7 +142,7 @@ POST /v1/change-history/query
 
 Query all entity updates (no creations or deletions) over a 30-day window.
 
-##### Request
+### Request
 
 ```http
 POST /v1/change-history/query
@@ -175,7 +175,7 @@ POST /v1/change-history/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -214,7 +214,7 @@ POST /v1/change-history/query
 
 Audit all changes made via the API (`CUSTOMER_API`) across all entity types for a single day.
 
-##### Request
+### Request
 
 ```http
 POST /v1/change-history/query
@@ -248,7 +248,7 @@ POST /v1/change-history/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -307,7 +307,7 @@ POST /v1/change-history/query
 
 Query keyword changes with `options.metadata` set to `latest`, returning per-entity metadata entries in `metas`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/change-history/query
@@ -341,7 +341,7 @@ POST /v1/change-history/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

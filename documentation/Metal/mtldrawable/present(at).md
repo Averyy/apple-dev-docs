@@ -25,7 +25,7 @@ func present(at presentationTime: CFTimeInterval)
 - (void) presentAtTime:(CFTimeInterval) presentationTime;
 ```
 
-#### Discussion
+## Discussion
 
 When a command queue schedules a command buffer for execution, it tracks whether any commands in that command buffer need to render or write to the drawable object. When you call this method, the drawable waits until all render and write requests for that drawable are complete. If they complete prior to the specified time, the drawable presents the content at that time. If the commands complete after the presentation time, the drawable presents its contents as soon as possible.
 

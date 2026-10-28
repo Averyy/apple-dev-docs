@@ -23,7 +23,7 @@ static var didStartGathering: NotificationCenter.BaseMessageIdentifier<NSMetadat
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidStartGatheringMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSMetadataQuery.DidStartGatheringMessage`](../../nsmetadataquery/didstartgatheringmessage.md).
 

@@ -23,7 +23,7 @@ func deactivate()
 
 - [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Discussion
+## Discussion
 
 Normally, you shouldn’t invoke this method—AppKit is responsible for proper deactivation.
 

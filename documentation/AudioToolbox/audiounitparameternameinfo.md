@@ -24,7 +24,7 @@ struct AudioUnitParameterNameInfo
 struct AudioUnitParameterNameInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This data structure is used as a value for the [`kAudioUnitProperty_ParameterClumpName`](./kaudiounitproperty_parameterclumpname.md) and [`kAudioUnitProperty_ParameterIDName`](./kaudiounitproperty_parameteridname.md) audio unit properties.
 

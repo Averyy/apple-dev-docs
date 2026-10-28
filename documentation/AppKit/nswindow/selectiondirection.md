@@ -19,7 +19,7 @@ enum SelectionDirection
 enum NSSelectionDirection : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The window uses these constants for [`keyViewSelectionDirection`](./keyviewselectiondirection.md).
 

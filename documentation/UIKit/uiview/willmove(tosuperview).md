@@ -23,7 +23,7 @@ func willMove(toSuperview newSuperview: UIView?)
 - (void) willMoveToSuperview:(UIView *) newSuperview;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to perform additional actions whenever the superview changes.
 

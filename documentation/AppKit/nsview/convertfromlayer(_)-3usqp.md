@@ -19,11 +19,11 @@ func convertFromLayer(_ size: NSSize) -> NSSize
 - (NSSize) convertSizeFromLayer:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A size in the view’s interior coordinate system.
 
-#### Discussion
+## Discussion
 
 The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](../../QuartzCore/calayer/contentsscale.md) setting.
 

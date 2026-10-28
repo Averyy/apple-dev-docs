@@ -19,7 +19,7 @@ func setDismissesAutomatically(_ flag: Bool)
 - (void) setDismissesAutomatically:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 By default, if the user presses the Return or Enter keys, the candidates are dismissed and a `candidateSelected:` message is sent to the input controller. You can call the `setDismissesAutomatically:` method, passing [`false`](../../Swift/false.md) as the `flag` parameter to change the default dismissal behavior. The input controller still receives a `candidatesSelected:` message.
 

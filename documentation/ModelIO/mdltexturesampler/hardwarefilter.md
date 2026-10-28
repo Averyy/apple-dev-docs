@@ -24,7 +24,7 @@ var hardwareFilter: MDLTextureFilter? { get set }
 @property (nonatomic, retain, nullable) MDLTextureFilter * hardwareFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Filtering modes specify the behavior of texture sampling at different sizes and texture coordinates.
 

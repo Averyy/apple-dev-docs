@@ -25,11 +25,11 @@ func CVImageBufferCreateColorSpaceFromAttachments(_ attachments: CFDictionary) -
 extern CGColorSpaceRefCVImageBufferCreateColorSpaceFromAttachments(CFDictionaryRef attachments);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) object that represents the color space of the image buffer, or [`nil`](../ObjectiveC/nil-227m0.md) if the dictionary doesn’t contain the information required to create a [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance.
 
-#### Discussion
+## Discussion
 
 To generate a [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance, the attachments dictionary needs to include values for either:
 

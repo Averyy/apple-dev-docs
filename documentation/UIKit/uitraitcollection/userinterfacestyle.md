@@ -23,7 +23,7 @@ var userInterfaceStyle: UIUserInterfaceStyle { get }
 @property (nonatomic, readonly) UIUserInterfaceStyle userInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to determine whether your interface should be configured with a dark or light appearance. The default value of this trait is set to the corresponding appearance setting on the user’s device.
 

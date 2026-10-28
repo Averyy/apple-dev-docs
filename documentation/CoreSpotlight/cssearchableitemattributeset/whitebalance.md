@@ -23,7 +23,7 @@ var whiteBalance: NSNumber? { get set }
 @property (strong, nullable) NSNumber * whiteBalance;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is 0 for auto and 1 for manual.
 

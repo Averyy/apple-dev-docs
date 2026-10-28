@@ -25,11 +25,11 @@ func BNNSNDArrayGetDataSize(_ array: UnsafePointer<BNNSNDArrayDescriptor>) -> In
 size_t BNNSNDArrayGetDataSize(const BNNSNDArrayDescriptor *array);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the array descriptor.
 
-#### Discussion
+## Discussion
 
 Use this function to calcluate the size of the workspace that the [`BNNSNDArrayFullyConnectedSparsifySparseCOO(_:_:_:_:_:_:_:_:_:)`](./bnnsndarrayfullyconnectedsparsifysparsecoo%28_,_,_,_,_,_,_,_,_%29.md) and [`BNNSNDArrayFullyConnectedSparsifySparseCSR(_:_:_:_:_:_:_:_:_:_:)`](./bnnsndarrayfullyconnectedsparsifysparsecsr%28_,_,_,_,_,_,_,_,_,_%29.md) require.
 

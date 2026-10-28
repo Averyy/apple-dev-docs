@@ -17,7 +17,7 @@ Creates a message compose button with a system-provided image.
 + (instancetype) new;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 

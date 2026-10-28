@@ -19,11 +19,11 @@ func SecCertificateCopyPreferred(_ name: CFString, _ keyUsage: CFArray?) -> SecC
 SecCertificateRefSecCertificateCopyPreferred(CFStringRef name, CFArrayRef keyUsage);
 ```
 
-#### Return Value
+## Return Value
 
 The preferred certificate for the specified name and key usage, or `NULL` if a matching certificate does not exist. In Objective-C, free the certificate with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
-#### Discussion
+## Discussion
 
 This function is typically used to obtain the preferred encryption certificate for an email recipient. If a preferred certificate has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible certificates by calling [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md).
 

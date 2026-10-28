@@ -23,7 +23,7 @@ var contentInset: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets contentInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to extend the space between your content and the edges of the content view. The unit of size is points. The default value is [`zero`](../uiedgeinsets/zero.md).
 

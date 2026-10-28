@@ -5,7 +5,7 @@
 
 Link to an article by using the article-linking container component.
 
-#### Overview
+## Overview
 
 Use the [`ArticleLink`](../AppleNewsFormat/articlelink.md) component to create a link to another Apple News Format article. To create a link, nest child components inside the `ArticleLink` component. You can use these child components to provide content, styling, and layout, like you do with any other Apple News Format component.
 

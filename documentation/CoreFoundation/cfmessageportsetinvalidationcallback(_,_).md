@@ -25,7 +25,7 @@ func CFMessagePortSetInvalidationCallBack(_ ms: CFMessagePort!, _ callout: CFMes
 extern void CFMessagePortSetInvalidationCallBack(CFMessagePortRef ms, CFMessagePortInvalidationCallBack callout);
 ```
 
-#### Discussion
+## Discussion
 
 If `ms` is already invalid, `callout` is invoked immediately.
 

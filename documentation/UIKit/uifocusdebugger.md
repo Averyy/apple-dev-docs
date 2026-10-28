@@ -28,7 +28,7 @@ class UIFocusDebugger
 
 - [Debugging focus issues in your app](./debugging-focus-issues-in-your-app.md)
 
-#### Overview
+## Overview
 
 You do not use this class or its methods directly from your code. During a debugging session, you can call the methods of this class from the `lldb` debugger command line to obtain information about the current state of the focus system.
 

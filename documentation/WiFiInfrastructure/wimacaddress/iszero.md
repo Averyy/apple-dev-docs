@@ -17,7 +17,7 @@ A Boolean value that indicates whether this MAC address is the all-zero MAC Addr
 var isZero: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if this is the all-zero MAC Address, `false` otherwise.
 

@@ -17,7 +17,7 @@ Representation of a slice in [`MLXArray`](./mlxarray.md) indexing operations.
 struct MLXSlice
 ```
 
-#### Overview
+## Overview
 
 This is typically not used directly – the various range expressions implement [`MLXArrayIndex`](./mlxarrayindex.md) and can produce these, e.g.
 
@@ -28,7 +28,7 @@ print(a[1 ..< 3])
 print(a[.stride(to: 8, by: 2)])
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](./indexing.md)
 - [`stride(from:to:by:)`](./mlxarrayindex/stride%28from,to,by%29.md)

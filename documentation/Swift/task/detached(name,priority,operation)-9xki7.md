@@ -24,11 +24,11 @@ static func detached(name: String? = nil, priority: TaskPriority? = nil, operati
 
 Available when `Success` conforms to `Sendable` and `Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 A reference to the task.
 
-#### Discussion
+## Discussion
 
 Don’t use a detached unstructured task if it’s possible to model the operation using structured concurrency features like child tasks. Child tasks inherit the parent task’s priority and task-local storage, and canceling a parent task automatically cancels all of its child tasks. You need to handle these considerations manually with a detached task.
 

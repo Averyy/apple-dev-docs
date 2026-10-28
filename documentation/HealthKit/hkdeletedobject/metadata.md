@@ -24,7 +24,7 @@ var metadata: [String : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The system only copies the [`HKMetadataKeySyncIdentifier`](../hkmetadatakeysyncidentifier.md) and [`HKMetadataKeySyncVersion`](../hkmetadatakeysyncversion.md) keys from the original object. All other metadata is lost.
 

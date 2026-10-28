@@ -23,7 +23,7 @@ convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarBut
 - (instancetype) initWithImage:(UIImage *) image landscapeImagePhone:(UIImage *) landscapeImagePhone style:(UIBarButtonItemStyle) style target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

@@ -5,11 +5,11 @@
 
 Work with the metric values, diagnostic data, and environments in MetricKit reports.
 
-#### Overview
+## Overview
 
 MetricKit reports contain a rich set of typed measurements, diagnostic data, and environmental context. [`MetricResult`](./metricresult.md) carries individual metric values (scalars, histograms, or statistics depending on the metric), and you can use the [`metricGroup`](./metricresult/metricgroup.md) property to route them to category-specific handlers. [`DiagnosticReport`](./diagnosticreport.md) wraps a single [`DiagnosticResult`](./diagnosticresult.md) case with type-specific properties and a [`CallStackTree`](./callstacktree.md) you can navigate to locate the code involved. [`MetricReport`](./metricreport.md) and [`DiagnosticReport`](./diagnosticreport.md) include an environment with device, operating system, and app context. Both also conform to [`Codable`](../Swift/codable.md), so you can serialize them with [`JSONEncoder`](../Foundation/jsonencoder.md) for storage or upload.
 
-#### Filter groups of metrics
+## Filter groups of metrics
 
 Every [`MetricResult`](./metricresult.md) case carries a [`metricGroup`](./metricresult/metricgroup.md) property that returns a [`MetricGroup`](./metricgroup.md) value identifying the category the measurement belongs to, such as CPU, GPU, memory, or disk I/O. You can use [`metricGroup`](./metricresult/metricgroup.md) to filter the [`values`](./metricreport/intervalentry/values.md) array without writing an exhaustive switch. This pattern is useful when routing measurements to category-specific handlers, logging only a subset of metrics, or building a summary that groups data by category.
 
@@ -17,7 +17,7 @@ Every [`MetricResult`](./metricresult.md) case carries a [`metricGroup`](./metri
 let memoryValues = entry.values.filter { $0.metricGroup == .memory }
 ```
 
-#### Understand measurements
+## Understand measurements
 
 The majority of values are scalar values expressed as a [`Measurement`](../Foundation/measurement.md). A `Measurement` pairs a `Double` value with a unit. MetricKit uses unit types including:
 
@@ -27,7 +27,7 @@ The majority of values are scalar values expressed as a [`Measurement`](../Found
 - **[`SignalBars`](./signalbars.md)**: The [`Dimension`](../Foundation/dimension.md) subclass used in [`MetricResult.cellularConditionTime(_:)`](./metricresult/cellularconditiontime%28_%29.md) histograms to represent cellular signal strength levels.
 - **[`HitchTimeRatio`](./hitchtimeratio.md)**: The [`Dimension`](../Foundation/dimension.md) subclass used by [`ratio`](./hitchtimemetric/ratio.md) and [`hitchTimeRatio`](./signpostintervalmetric/hitchtimeratio.md) to represent the ratio of hitch time to total tracked time, expressed as milliseconds per second.
 
-#### Work with histogram distributions
+## Work with histogram distributions
 
 Several [`MetricResult`](./metricresult.md) cases expose a [`Histogram`](./histogram.md) rather than a scalar value. A `Histogram` contains an ordered array of buckets, each with a lower bound, an upper bound, and a count of observations that fell within that range.
 
@@ -43,7 +43,7 @@ case let .hangTime(metric):
     }
 ```
 
-#### Work with average statistics
+## Work with average statistics
 
 Some metrics report a single averaged value rather than a distribution. For example, [`SuspendedMemoryMetric`](./suspendedmemorymetric.md) exposes a [`value`](./suspendedmemorymetric/value.md) property of type [`AverageStatistics`](./averagestatistics.md). It provides three properties: an average, a count, and an optional standard deviation. A [`count`](./averagestatistics/count.md) of zero means the sample count isn’t available for this reporting period. [`standardDeviation`](./averagestatistics/standarddeviation.md) is `nil` when unavailable.
 
@@ -62,7 +62,7 @@ case let .suspendedMemory(metric):
     }
 ```
 
-#### Read location and disk space metrics
+## Read location and disk space metrics
 
 Not every metric condenses to a single value. [`MetricResult.locationActivityTime(_:)`](./metricresult/locationactivitytime%28_%29.md) breaks location accuracy usage into six tiers, each a `Measurement<UnitDuration>`:
 
@@ -101,7 +101,7 @@ case let .metalFrameRate(metric):
     print("FPS: \(metric.framesPerSecond)")
 ```
 
-#### Extract diagnostic details
+## Extract diagnostic details
 
 Each [`DiagnosticReport`](./diagnosticreport.md) wraps a single [`DiagnosticResult`](./diagnosticresult.md) case. Switch over the result to access the type-specific properties of each diagnostic. MetricKit generates a [`MemoryExceptionDiagnostic`](./memoryexceptiondiagnostic.md) when your app or extension terminates because it exceeds the memory limit.  [`MemoryExceptionDiagnostic`](./memoryexceptiondiagnostic.md) is only available on iOS.
 
@@ -134,7 +134,7 @@ case let .memoryException(diagnostic):
 }
 ```
 
-#### Navigate call stack trees
+## Navigate call stack trees
 
 [`CallStackTree`](./callstacktree.md) is the primary structure for analyzing crashes, hangs, and exceptions. It contains an array of [`CallStackThread`](./callstackthread.md) values and supports binary metadata lookup by UUID.
 
@@ -170,7 +170,7 @@ for frame in frames {
 }
 ```
 
-#### Review a report’s environment
+## Review a report’s environment
 
 [`MetricReport`](./metricreport.md) and [`DiagnosticReport`](./diagnosticreport.md) both carry an environment that provides context about the device and session at the time of collection. The two environments have different optionality: [`environment`](./metricreport/environment-swift.property.md) is optional, while [`environment`](./diagnosticreport/environment-swift.property.md) is required.
 
@@ -197,7 +197,7 @@ if !environment.signpostData.isEmpty {
 
 [`signpostData`](./diagnosticreport/environment-swift.struct/signpostdata.md) is an array of [`SignpostRecord`](./signpostrecord.md) values representing any [`OSSignposter`](../os/ossignposter.md) intervals that were active when the diagnostic occurred. [`DiagnosticReport.Environment`](./diagnosticreport/environment-swift.struct.md) also provides a [`pid`](./diagnosticreport/environment-swift.struct/pid.md), [`bundleIdentifier`](./diagnosticreport/environment-swift.struct/bundleidentifier.md), [`regionFormat`](./diagnosticreport/environment-swift.struct/regionformat.md), and [`states`](./diagnosticreport/environment-swift.struct/states.md).
 
-#### Serialize reports
+## Serialize reports
 
 Both [`MetricReport`](./metricreport.md) and [`DiagnosticReport`](./diagnosticreport.md) conform to [`Codable`](../Swift/codable.md). To send a [`MetricReport`](./metricreport.md) to your server, encode it inside your observation loop using [`JSONEncoder`](../Foundation/jsonencoder.md). Setting the [`encodingFormatKey`](./metricreport/encodingformatkey.md) in the encoder’s [`userInfo`](../Foundation/jsonencoder/userinfo.md) to [`MetricReport.EncodingFormat.byStateReportingDomain`](./metricreport/encodingformat/bystatereportingdomain.md) groups the encoded output by domain, so both state entries and interval entries in the resulting JSON contain your app’s performance metrics organized by each reporting domain and the states within it:
 

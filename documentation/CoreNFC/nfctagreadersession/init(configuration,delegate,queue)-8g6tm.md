@@ -19,7 +19,7 @@ init(configuration: NFCTagReaderSessionConfiguration, delegate: any __NFCTagRead
 - (instancetype) initWithConfiguration:(NFCTagReaderSessionConfiguration *) configuration delegate:(id<NFCTagReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A new NFCTagReaderSession instance.
 

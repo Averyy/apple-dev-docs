@@ -18,7 +18,7 @@ struct IOUSBInterfaceAssociationDescriptor {
 };
 ```
 
-#### Overview
+## Overview
 
 USB Inerface Association Descriptor. ECN to the USB 2.0 Spec. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

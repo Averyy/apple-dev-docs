@@ -11,7 +11,7 @@ Send a receipt to the App Store for verification.
 
 > **Deprecated**: The `verifyReceipt` endpoint is deprecated. To validate receipts on your server, follow the steps in [Validating receipts on the device](./validating-receipts-on-the-device.md) on your server. To validate in-app purchases on your server without using receipts, call the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) to get Apple-signed transaction and subscription information for your customers, or verify the [`AppTransaction`](../StoreKit/apptransaction.md) and [`Transaction`](../StoreKit/transaction.md) signed data that your app obtains. You can also get the same signed transaction and subscription information from the [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint.
 
-#### Discussion
+## Discussion
 
 Validating with the App Store requires a secure connection between your app and your server, as well as code on your server to validate the receipt with the App Store. Submit an HTTP POST request with the contents detailed in [`requestBody`](./requestbody.md) using the `verifyReceipt` endpoint to verify receipts with the App Store. Use the receipt fields in the [`responseBody`](./responsebody.md) to validate app and in-app purchases.
 
@@ -19,7 +19,7 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 
 For more information about server-side receipt validation, see [Validating receipts with the App Store](../StoreKit/validating-receipts-with-the-app-store.md).
 
-##### Use the sandbox URL for sandbox testing
+### Use the sandbox URL for sandbox testing
 
 The sandbox URL for verifying receipts is:
 
@@ -29,7 +29,7 @@ POST https://sandbox.itunes.apple.com/verifyReceipt
 
 > ❗ **Important**:  As a best practice, always call the production URL `https://buy.itunes.apple.com/verifyReceipt` first and proceed to verify with the sandbox URL if you receive a `21007` [`status`](./status.md) code. Following this approach ensures that you don’t have to switch between URLs while your app is in testing, in review by App Review, or live in the App Store.
 
-##### Find deprecation date in the HTTP header
+### Find deprecation date in the HTTP header
 
 The `verifyReceipt` endpoint is deprecated. The HTTP header includes the deprecation date, according to [RFC 8594](https://www.rfc-editor.org/rfc/rfc8594.html).
 

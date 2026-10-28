@@ -19,7 +19,7 @@ var maximumNumberOfColumns: Int { get set }
 @property NSUInteger maximumNumberOfColumns;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to specify the maximum number of columns that should be visible in the collection view at any given time. The grid layout object uses this value during layout to configure the position and spacing of items. The default value of this property is `0`, which means that there is no maximum number of columns.
 

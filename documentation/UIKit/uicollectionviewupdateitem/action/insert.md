@@ -21,7 +21,7 @@ case insert
 UICollectionUpdateActionInsert
 ```
 
-#### Discussion
+## Discussion
 
 Insert the item into the collection view.
 

@@ -12,11 +12,11 @@ static UInt32 nullLinkStatusHandler(
  IOService *target);
 ```
 
-#### Return Value
+## Return Value
 
 This function will always report link up.
 
-#### Overview
+## Overview
 
 This function is registered as the link status handler when an IOKernelDebugger object surrenders its status as the active debugger nub. Until another IOKernelDebugger object gets promoted, this function will handle polled link status requests from KDP.
 

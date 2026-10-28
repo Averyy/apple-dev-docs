@@ -21,7 +21,7 @@ A Boolean value that determines whether the view hierarchy has auto-correction e
 var disableAutocorrection: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the value is `nil`, SwiftUI uses the system default. The default value is `nil`.
 

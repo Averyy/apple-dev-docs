@@ -23,7 +23,7 @@ func eventEditViewController(_ controller: EKEventEditViewController, didComplet
 - (void) eventEditViewController:(EKEventEditViewController *) controller didCompleteWithAction:(EKEventEditViewAction) action;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to dismiss the modal event edit view controller.
 

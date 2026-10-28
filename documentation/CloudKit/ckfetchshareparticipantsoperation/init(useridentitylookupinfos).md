@@ -25,7 +25,7 @@ convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])
 - (instancetype) initWithUserIdentityLookupInfos:(NSArray<CKUserIdentityLookupInfo *> *) userIdentityLookupInfos;
 ```
 
-#### Discussion
+## Discussion
 
 After you create the operation, assign a handler to the [`fetchShareParticipantsCompletionBlock`](./fetchshareparticipantscompletionblock.md) property to process the results.
 

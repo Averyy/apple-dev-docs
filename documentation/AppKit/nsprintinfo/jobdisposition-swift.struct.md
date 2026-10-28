@@ -19,7 +19,7 @@ struct JobDisposition
 typedef NSString * NSPrintJobDispositionValue;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used by the [`jobDisposition`](./jobdisposition-swift.property.md) property.
 

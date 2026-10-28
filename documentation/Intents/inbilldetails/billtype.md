@@ -33,7 +33,7 @@ var billType: INBillType { get set }
 @property (atomic, assign, readwrite) INBillType billType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to categorize the bill.
 

@@ -21,7 +21,7 @@ A mechanism to interface between synchronous code and an asynchronous stream.
 struct Continuation
 ```
 
-#### Overview
+## Overview
 
 The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:_:)` receives an instance of this type when invoked. Use this continuation to provide elements to the stream by calling one of the `yield` methods, then terminate the stream normally by calling the `finish()` method. You can also use the continuation’s `finish(throwing:)` method to terminate the stream by throwing an error.
 

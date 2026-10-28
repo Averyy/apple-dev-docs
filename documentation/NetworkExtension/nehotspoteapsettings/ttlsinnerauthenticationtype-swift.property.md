@@ -22,7 +22,7 @@ var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationTyp
 @property NEHotspotConfigurationTTLSInnerAuthenticationType ttlsInnerAuthenticationType;
 ```
 
-#### Discussion
+## Discussion
 
 Optional. Supported protocols include PAP, CHAP, MS-CHAP, MS-CHAPv2, and EAP. The default protocol is EAP. For values, see [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](./ttlsinnerauthenticationtype-swift.enum.md).
 

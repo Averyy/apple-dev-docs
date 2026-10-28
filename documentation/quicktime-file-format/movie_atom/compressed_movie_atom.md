@@ -6,7 +6,7 @@
 
 An atom you use to reduce file size and startup latency by compressing movie resources.
 
-#### Overview
+## Overview
 
 For more information, see [Compressed movie resources](../compressed_movie_resources.md).
 

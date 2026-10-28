@@ -15,7 +15,7 @@ Gets the number of bytes of data in the packet.
 virtual kern_return_t GetDataLength(uint32_t *length) const;
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

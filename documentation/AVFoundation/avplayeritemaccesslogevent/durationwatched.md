@@ -25,7 +25,7 @@ var durationWatched: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval durationWatched;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-duration-watched”.
 

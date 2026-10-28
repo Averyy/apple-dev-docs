@@ -23,7 +23,7 @@ func makeSendOnceRight() -> Mach.Port<Mach.SendOnceRight>
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 This does not affect the makeSendCount of the receive right.
 

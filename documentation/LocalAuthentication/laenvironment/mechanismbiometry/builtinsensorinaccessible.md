@@ -22,7 +22,7 @@ var builtInSensorInaccessible: Bool { get }
 @property (nonatomic, readonly) BOOL builtInSensorInaccessible;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the built in biometric sensor is inaccessible in the current configuration, preventing the use of biometry.
 

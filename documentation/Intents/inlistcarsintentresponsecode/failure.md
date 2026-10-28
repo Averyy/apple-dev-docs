@@ -23,7 +23,7 @@ case failure
 INListCarsIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for transient and unrecoverable errors that prevent you from retrieving a list of the user’s electric vehicles.
 

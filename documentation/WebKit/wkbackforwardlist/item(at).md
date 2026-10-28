@@ -23,7 +23,7 @@ func item(at index: Int) -> WKBackForwardListItem?
 - (WKBackForwardListItem *) itemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The item at the specified offset from the current item, or `nil` if the `index` exceeds the limits of the list.
 

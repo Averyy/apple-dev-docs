@@ -21,7 +21,7 @@ A comparator that compares types according to their conformance to the comparabl
 struct ComparableComparator<Compared> where Compared : Comparable
 ```
 
-#### Overview
+## Overview
 
 The comparator uses the relevant type’s [`Comparable`](../Swift/comparable.md) implementation to compare instances.
 

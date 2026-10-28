@@ -20,7 +20,7 @@ nonisolated
 struct CompactMenuControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`compactMenu`](./controlgroupstyle/compactmenu.md) to construct this style.
 

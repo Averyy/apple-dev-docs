@@ -33,7 +33,7 @@ var status: INTaskStatus { get }
 @property (atomic, assign, readonly) INTaskStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`INTaskStatus.unknown`](../intaskstatus/unknown.md), don’t consider the status of a task when performing your search. For other values, include tasks in your search results only when their status matches the specified value.
 

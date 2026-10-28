@@ -15,11 +15,11 @@ Begins or continues an asynchronous object-detector training session.
 static func resume(_ session: MLTrainingSession<MLObjectDetector>) throws -> MLJob<MLObjectDetector>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the object-detector training session.
 
-#### Discussion
+## Discussion
 
 Use this method to start or resume a training session you get from [`makeTrainingSession(trainingData:annotationType:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,annotationtype,parameters,sessionparameters%29.md) or [`restoreTrainingSession(sessionParameters:)`](./restoretrainingsession%28sessionparameters%29.md).
 

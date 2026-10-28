@@ -20,11 +20,11 @@ optional func pageController(_ pageController: NSPageController, frameFor object
 - (NSRect) pageController:(NSPageController *) pageController frameForObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 The frame appropriate for displaying `object`.
 
-#### Discussion
+## Discussion
 
 You only need to implement this if the view frame can differ between the page controller’s [`arrangedObjects`](../nspagecontroller/arrangedobjects.md).
 

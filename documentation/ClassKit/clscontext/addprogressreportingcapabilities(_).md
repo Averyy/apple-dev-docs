@@ -23,7 +23,7 @@ func addProgressReportingCapabilities(_ capabilities: Set<CLSProgressReportingCa
 - (void) addProgressReportingCapabilities:(NSSet<CLSProgressReportingCapability *> *) capabilities;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method at the time you create a context to indicate what kinds of metrics, like duration, a score, or a binary result, that you record for the context. This helps teachers to understand what to expect when assigning a context.
 

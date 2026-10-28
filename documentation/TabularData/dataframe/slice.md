@@ -22,7 +22,7 @@ A set of a data frame’s rows you create by using a method from a data frame in
 struct Slice
 ```
 
-#### Overview
+## Overview
 
 A slice is an arbitrary set of rows from a data frame. For example, a slice might contain rows 0–3, 5–9, and 101 from its underlying data frame.
 

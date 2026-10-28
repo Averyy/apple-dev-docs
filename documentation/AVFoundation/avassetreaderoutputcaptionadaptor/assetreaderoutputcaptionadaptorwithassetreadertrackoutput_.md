@@ -18,7 +18,7 @@ A class method that creates a caption adaptor that reads from a track output.
 + (instancetype) assetReaderOutputCaptionAdaptorWithAssetReaderTrackOutput:(AVAssetReaderTrackOutput *) trackOutput;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of [`AVAssetReaderOutputCaptionAdaptor`](../avassetreaderoutputcaptionadaptor.md).
 

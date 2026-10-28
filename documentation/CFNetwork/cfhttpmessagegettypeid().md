@@ -24,7 +24,7 @@ func CFHTTPMessageGetTypeID() -> CFTypeID
 extern CFTypeID CFHTTPMessageGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for the `CFHTTPMessage` opaque type.
 

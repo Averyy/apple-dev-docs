@@ -22,7 +22,7 @@ var displayedPropertyKeys: [Any]? { get set }
 @property (nonatomic, copy, nullable) NSArray * displayedPropertyKeys;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is not set, the view controller displays all properties.
 

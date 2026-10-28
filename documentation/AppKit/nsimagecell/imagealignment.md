@@ -19,7 +19,7 @@ var imageAlignment: NSImageAlignment { get set }
 @property NSImageAlignment imageAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSImageAlignment`](../nsimagealignment.md). The default value is `NSImageAlignCenter`.
 

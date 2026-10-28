@@ -21,7 +21,7 @@ static func raiseBadArgumentException(_ element: Any!, _ attribute: NSAccessibil
 extern void NSAccessibilityRaiseBadArgumentException(id element, NSAccessibilityAttributeName attribute, id value);
 ```
 
-#### Discussion
+## Discussion
 
 Raises an error if a parameter is the wrong type or has an illegal value. This function can also be used to raise an error if an attempt is made to set an attribute’s value with the wrong type or an illegal value.
 

@@ -16,7 +16,7 @@ nonisolated
 struct DefaultWindowVisibilityToggleLabel
 ```
 
-#### Overview
+## Overview
 
 This is created for you automatically when creating a `WindowVisibilityToggle`, and can not be independently constructed.
 

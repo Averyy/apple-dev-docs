@@ -15,11 +15,11 @@ Creates and initializes an DMA command in one operation.
 static OSPtr<IODMACommand> withSpecification(SegmentFunction outSegFunc, const SegmentOptions *segmentOptions, uint32_t mappingOptions, IOMapper *mapper, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 Factory function to create and initialize an IODMACommand in one operation.
 

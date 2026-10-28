@@ -9,7 +9,7 @@ Fetch the user’s replay data for the latest eligible year.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 A successful HTTP request returns music summaries for the most recent year that the user has enough listening history. If unsuccessful, the HTTP status code indicates the error, and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 

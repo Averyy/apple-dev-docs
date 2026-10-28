@@ -15,7 +15,7 @@ Pagination parameters for geo location search requests and responses.
 object GeoSearchPagination
 ```
 
-#### Discussion
+## Discussion
 
 The `GeoSearchPagination` object controls and reports offset-based pagination through geo location search results.
 
@@ -23,7 +23,7 @@ When used in a [`GeoSearchPostRequest`](./geosearchpostrequest.md) body, set `of
 
 The default `pageSize` of 20 is sufficient for most targeted lookups. Increase it for searches expected to return many matching locations. To retrieve the next page, increment `offset` by `pageSize`.
 
-##### Example
+### Example
 
 ```json
 {

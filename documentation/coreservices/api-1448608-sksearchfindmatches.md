@@ -19,11 +19,11 @@ func SKSearchFindMatches(_ inSearch: SKSearch!, _ inMaximumCount: CFIndex, _ out
 Boolean SKSearchFindMatches(SKSearchRef inSearch, CFIndex inMaximumCount, SKDocumentID *outDocumentIDsArray, float *outScoresArray, CFTimeInterval maximumTime, CFIndex *outFoundCount);
 ```
 
-#### Return Value
+## Return Value
 
 A logical value indicating whether the search is still in progress. Returns false when the search is exhausted.
 
-#### Discussion
+## Discussion
 
 The [`SKSearchFindMatches(_:_:_:_:_:_:)`](./api-1448608-sksearchfindmatches.md) extracts results from a find operation initiated by a search object (SKSearchRef).
 

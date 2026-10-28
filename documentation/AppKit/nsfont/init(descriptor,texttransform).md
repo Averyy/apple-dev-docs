@@ -19,11 +19,11 @@ init?(descriptor fontDescriptor: NSFontDescriptor, textTransform: AffineTransfor
 + (NSFont *) fontWithDescriptor:(NSFontDescriptor *) fontDescriptor textTransform:(NSAffineTransform *) textTransform;
 ```
 
-#### Return Value
+## Return Value
 
 A font object for the specified name and transform.
 
-#### Discussion
+## Discussion
 
 In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts. If `textTransform` is non-nil, it has precedence over `NSFontMatrixAttribute` in `fontDescriptor`.
 

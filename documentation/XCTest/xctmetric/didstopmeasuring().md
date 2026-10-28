@@ -16,7 +16,7 @@ optional func didStopMeasuring()
 - (void) didStopMeasuring;
 ```
 
-#### Discussion
+## Discussion
 
 XCTest calls this method when it has finished running the code in the performance test’s `measure()` or `measure(metrics:)` block. It calls the method once for each iteration of a performance test. Use this method to finish gathering measurements.
 

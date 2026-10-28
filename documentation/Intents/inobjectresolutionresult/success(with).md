@@ -24,11 +24,11 @@ class func success(with resolvedObject: INObject) -> Self
 + (instancetype) successWithResolvedObject:(INObject *) resolvedObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INObjectResolutionResult`](../inobjectresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

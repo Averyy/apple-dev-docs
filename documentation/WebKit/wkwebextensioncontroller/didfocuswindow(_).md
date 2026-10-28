@@ -23,7 +23,7 @@ func didFocusWindow(_ focusedWindow: (any WKWebExtensionWindow)?)
 - (void) didFocusWindow:(id<WKWebExtensionWindow>) focusedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the focused window, ensuring consistent understanding across extensions.
 

@@ -15,7 +15,7 @@ An event emitted when the user rotates the Digital Crown.
 struct DigitalCrownEvent
 ```
 
-#### Overview
+## Overview
 
 Use the [`digitalCrownRotation(_:)`](./view/digitalcrownrotation%28_%29.md) modifier to receive these events.
 

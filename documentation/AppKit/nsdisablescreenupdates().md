@@ -21,7 +21,7 @@ func NSDisableScreenUpdates()
 extern void NSDisableScreenUpdates();
 ```
 
-#### Discussion
+## Discussion
 
 Prevents drawing operations from being flushed to the screen for all windows belonging to the calling process. When you re-enable screen updates (with [`NSEnableScreenUpdates()`](./nsenablescreenupdates%28%29.md)) screen flushing for all windows belonging to the calling process appears to be simultaneous. You typically call this function so that operations on multiple windows appear atomic to the user. This is a technique particularly useful for synchronizing parent and child windows. Make sure that the period after calling this function and before reenabling updates is short; the system only allow updating to be disabled for a limited time (currently one second) before automatically reenabling updates. Successive calls to this function are placed on a stack and must be popped off that stack by matching [`NSEnableScreenUpdates()`](./nsenablescreenupdates%28%29.md) calls.
 

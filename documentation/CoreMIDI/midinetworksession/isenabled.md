@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Disabled sessions don’t appear on the network and can’t initiate or receive connections.
 

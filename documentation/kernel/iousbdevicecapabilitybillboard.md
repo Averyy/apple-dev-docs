@@ -15,7 +15,7 @@ The structure for the billboard device capability.
 typedef struct IOUSBDeviceCapabilityBillboard IOUSBDeviceCapabilityBillboard;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about this descriptor type, see USB 3.2, 9.6.2.
 

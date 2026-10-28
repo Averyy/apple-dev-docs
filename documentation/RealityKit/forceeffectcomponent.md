@@ -20,13 +20,13 @@ A component that defines the forces that affect an entity, including custom forc
 struct ForceEffectComponent
 ```
 
-#### Overview
+## Overview
 
 After you assign a `ForceEffectComponent` to an entity, the force effects in the component apply each physics update for as long as the component and force effects exist. Each [`ForceEffect`](./forceeffect.md) updates sequentially while the physics system accumulates its forces. The center frame of each [`ForceEffect`](./forceeffect.md) coincides with and moves alongside the entity’s position and orientation. To offset this center frame, set the position and orientation.
 
 > **Note**: You can set the [`simulationState`](./forceeffectcomponent/simulationstate-swift.property.md) parameter to [`ForceEffectComponent.SimulationState.pause`](./forceeffectcomponent/simulationstate-swift.enum/pause.md) if you want to apply forces later.
 
-##### Create forces
+### Create forces
 
 Use [`ConstantForceEffect`](./constantforceeffect.md) to apply a constant force in a direction:
 
@@ -43,7 +43,7 @@ RealityKit provides a set of useful forces you can use with `ForceEffectComponen
 - [`TurbulenceForceEffect`](./turbulenceforceeffect.md)
 - [`VortexForceEffect`](./vortexforceeffect.md)
 
-##### Create custom forces
+### Create custom forces
 
 To create a custom force effect, define a structure that implements [`ForceEffectProtocol`](./forceeffectprotocol.md), then create an instance of [`ForceEffectBase`](./forceeffectbase.md) with your custom `ForceEffectProtocol` implementation:
 
@@ -56,7 +56,7 @@ let thursterForceEffect = ForceEffect(effect: thrusterForce)
 
 > **Note**: To apply force to a physics body with a custom `ForceEffectProtocol`, you must implement and apply forces in [`update(parameters:)`](./forceeffectprotocol/update%28parameters%29.md).
 
-##### Apply forces
+### Apply forces
 
 You can apply multiple forces to your entity at once by including them in `ForceEffectComponent`:
 

@@ -23,7 +23,7 @@ var isUserInteractionEnabled: Bool { get set }
 @property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`UILabel`](../uilabel.md) inherits this property from the [`UIView`](../uiview.md) parent class. This class changes the default value of this property to [`false`](../../Swift/false.md).
 

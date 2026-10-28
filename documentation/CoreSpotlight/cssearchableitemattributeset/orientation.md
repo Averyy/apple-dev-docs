@@ -23,7 +23,7 @@ var orientation: NSNumber? { get set }
 @property (strong, nullable) NSNumber * orientation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 1, the orientation is portrait; when the value is 0, the orientation is landscape.
 

@@ -16,7 +16,7 @@ An error that indicates the action’s binary is not compatible with the current
 static var actionArchitectureMismatchError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Actions compiled for PowerPC, for example, would encounter this error on Intel systems.
 

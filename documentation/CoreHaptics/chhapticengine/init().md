@@ -24,7 +24,7 @@ init() throws
 - (instancetype) initAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The haptic engine isn’t a singleton but a connection to the haptic server inside the user’s device. More than one connection with the haptic server may exist in your app’s view controller or delegate. Each connection functions independently of the others.
 

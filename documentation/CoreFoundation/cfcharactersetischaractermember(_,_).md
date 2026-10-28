@@ -25,7 +25,7 @@ func CFCharacterSetIsCharacterMember(_ theSet: CFCharacterSet!, _ theChar: UniCh
 extern Boolean CFCharacterSetIsCharacterMember(CFCharacterSetRef theSet, UniChar theChar);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `theSet` contains `theChar`, otherwise `false`.
 

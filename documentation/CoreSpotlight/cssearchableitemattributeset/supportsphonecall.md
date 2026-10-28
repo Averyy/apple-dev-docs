@@ -27,7 +27,7 @@ var supportsPhoneCall: NSNumber? { get set }
 
 - [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
-#### Discussion
+## Discussion
 
 When an item includes the [`phoneNumbers`](./phonenumbers.md) property, the phone number can be used to initiate phone calls. You can use the [`supportsPhoneCall`](./supportsphonecall.md) property to indicate when making a phone call is appropriate and likely to be a primary action for the user. For example, you might set [`supportsPhoneCall`](./supportsphonecall.md) to `1` for an item that represents a business, but not for an item that represents an academic paper that lists the phone numbers of the authors or the institution.
 

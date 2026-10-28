@@ -21,7 +21,7 @@ Creates a URL format style with the given display options.
 init(scheme: URL.FormatStyle.ComponentDisplayOption = .always, user: URL.FormatStyle.ComponentDisplayOption = .never, password: URL.FormatStyle.ComponentDisplayOption = .never, host: URL.FormatStyle.HostDisplayOption = .always, port: URL.FormatStyle.ComponentDisplayOption = .omitIfHTTPFamily, path: URL.FormatStyle.ComponentDisplayOption = .always, query: URL.FormatStyle.ComponentDisplayOption = .never, fragment: URL.FormatStyle.ComponentDisplayOption = .never)
 ```
 
-#### Discussion
+## Discussion
 
 Explicitly create a URL format style in situations where you want to format multiple URLs with the same style configuration. For one-time use, call [`formatted()`](../formatted%28%29.md) for a default style, or create a style with [`url`](../../formatstyle/url.md) and customize it with the modifiers in Customizing style behavior.
 

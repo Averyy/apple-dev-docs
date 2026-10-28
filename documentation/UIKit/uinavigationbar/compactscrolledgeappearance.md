@@ -24,7 +24,7 @@ var compactScrollEdgeAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * compactScrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a navigation controller contains a navigation bar and a scroll view, part of the scroll view’s content appears underneath the navigation bar. If the edge of the scrolled content reaches that bar, UIKit applies the appearance settings in this property.
 

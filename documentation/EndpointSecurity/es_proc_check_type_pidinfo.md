@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_PIDINFO: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_PIDINFO
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_pidinfo`, `proc_pidpath`, `proc_list_uptrs`, `proc_list_dynkqueueids`, `proc_name`, and `proc_regionfilename` functions from `libproc.h`.
 

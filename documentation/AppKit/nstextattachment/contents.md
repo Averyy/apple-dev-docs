@@ -19,7 +19,7 @@ var contents: Data? { get set }
 @property (copy, nullable) NSData * contents;
 ```
 
-#### Discussion
+## Discussion
 
 Modifying this property has the side effect of invalidating the [`image`](./image.md) property.
 

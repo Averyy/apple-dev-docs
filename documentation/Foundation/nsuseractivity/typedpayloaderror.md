@@ -21,7 +21,7 @@ An enumeration that describes the error types for getting and setting a typed pa
 enum TypedPayloadError
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to manage errors from [`typedPayload(_:)`](./typedpayload%28_%29.md) and [`setTypedPayload(_:)`](./settypedpayload%28_%29.md).
 

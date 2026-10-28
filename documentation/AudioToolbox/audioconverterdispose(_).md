@@ -24,11 +24,11 @@ func AudioConverterDispose(_ inAudioConverter: AudioConverterRef) -> OSStatus
 extern OSStatus AudioConverterDispose(AudioConverterRef inAudioConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

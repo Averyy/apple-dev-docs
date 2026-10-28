@@ -25,7 +25,7 @@ var zeroSymbol: String? { get set }
 @property (copy, nullable) NSString * zeroSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 If not specified, zero values are formatted normally.
 

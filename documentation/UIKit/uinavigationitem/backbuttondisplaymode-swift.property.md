@@ -22,7 +22,7 @@ var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode { get set }
 @property (nonatomic, assign, readwrite) UINavigationItemBackButtonDisplayMode backButtonDisplayMode;
 ```
 
-#### Discussion
+## Discussion
 
 When the `backBarButtonItem` property is `nil`, the navigation item uses this display mode to determine the title of its Back button. The default value of this property is [`UINavigationItem.BackButtonDisplayMode.default`](./backbuttondisplaymode-swift.enum/default.md).
 

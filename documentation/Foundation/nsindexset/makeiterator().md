@@ -21,7 +21,7 @@ Returns an *iterator* over the elements of this *sequence*.
 func makeIterator() -> NSIndexSetIterator
 ```
 
-#### Discussion
+## Discussion
 
 Complexity: O(1).
 

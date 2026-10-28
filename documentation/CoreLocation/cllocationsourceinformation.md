@@ -25,7 +25,7 @@ class CLLocationSourceInformation
 @interface CLLocationSourceInformation : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`CLLocationSourceInformation`](./cllocationsourceinformation.md) contains information about the source that provides a [`CLLocation`](./cllocation.md) instance, such as instances that [`locationManager(_:didUpdateLocations:)`](./cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) delivers. For example, an app may choose to check the source information and reject locations if the [`isSimulatedBySoftware`](./cllocationsourceinformation/issimulatedbysoftware.md) property is `true` when the developer isn’t debugging or testing the app.
 

@@ -22,7 +22,7 @@ var isAutoRedEyeReductionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isAutoRedEyeReductionSupported) BOOL autoRedEyeReductionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 12 and later, AVFoundation applies a red-eye reduction effect only when needed. It won’t apply red-eye reduction in the following situations:
 

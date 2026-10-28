@@ -20,11 +20,11 @@ func SecTrustSettingsRemoveTrustSettings(_ certRef: SecCertificate, _ domain: Se
 OSStatus SecTrustSettingsRemoveTrustSettings(SecCertificateRef certRef, SecTrustSettingsDomain domain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecItemNotFound`](./errsecitemnotfound.md) if no trust settings exist for the certificate.
 
-#### Discussion
+## Discussion
 
 If a certificate has no trust settings, the certificate must be verified to a known, trusted certificate.
 

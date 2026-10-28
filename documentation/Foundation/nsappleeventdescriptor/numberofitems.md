@@ -20,7 +20,7 @@ var numberOfItems: Int { get }
 @property (readonly) NSInteger numberOfItems;
 ```
 
-#### Discussion
+## Discussion
 
 The number of descriptors in the receiver’s descriptor list (possibly 0); returns 0 if an error occurs.
 

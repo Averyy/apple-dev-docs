@@ -25,7 +25,7 @@ func fetchAllSubscriptions(completionHandler: @escaping @Sendable ([CKSubscripti
 - (void) fetchAllSubscriptionsWithCompletionHandler:(void (^)(NSArray<CKSubscription *> *subscriptions, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

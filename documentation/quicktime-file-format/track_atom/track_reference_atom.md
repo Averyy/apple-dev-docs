@@ -6,7 +6,7 @@
 
 An atom that defines relationships between tracks.
 
-#### Overview
+## Overview
 
 See [`Track reference atom`](../track_reference_atom.md).
 

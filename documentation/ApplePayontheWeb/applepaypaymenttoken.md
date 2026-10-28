@@ -20,7 +20,7 @@ dictionary ApplePayPaymentToken {
 };
 ```
 
-#### Overview
+## Overview
 
 You access the payment token of an authorized payment request using the [`token`](./applepaypayment/token.md) property of the [`ApplePayPayment`](./applepaypayment.md) object.
 

@@ -22,7 +22,7 @@ enum ScopeBarActivation
 enum UISearchControllerScopeBarActivation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants with the [`scopeBarActivation`](./scopebaractivation-swift.property.md) property.
 

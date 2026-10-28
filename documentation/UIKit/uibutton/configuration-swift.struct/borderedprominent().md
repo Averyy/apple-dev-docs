@@ -19,11 +19,11 @@ Creates a configuration for a button that has a prominent, bordered style.
 static func borderedProminent() -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 
-#### Discussion
+## Discussion
 
 This style provides an alternative name for the [`filled()`](./filled%28%29.md) style.
 

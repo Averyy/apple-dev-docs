@@ -5,7 +5,7 @@
 
 Use Apple’s open source library to create JSON Web Tokens (JWT) to authorize your calls, verify transactions, extract transaction identifiers from receipts, and more.
 
-#### Overview
+## Overview
 
 The App Store Server Library is an open source library from Apple, available in four languages. It makes adopting the [App Store Server API](./AppStoreServerAPI.md) and working with JSON Web Signature (JWS) transactions easier. Find the App Store Server Library for each language in the following GitHub repositories:
 

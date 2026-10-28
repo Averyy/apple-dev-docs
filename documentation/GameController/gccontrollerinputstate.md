@@ -24,7 +24,7 @@ class GCControllerInputState
 @interface GCControllerInputState : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class implements the [`GCDevicePhysicalInputState`](./gcdevicephysicalinputstate.md) protocol for gamepads and arcade sticks. Instances of this class represent the state of the controller’s inputs at a moment in time, which can be the current time.
 

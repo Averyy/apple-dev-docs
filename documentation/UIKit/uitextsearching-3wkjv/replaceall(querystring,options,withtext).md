@@ -19,7 +19,7 @@ Informs the searchable object to replace all matching text across all searchable
 func replaceAll(queryString: String, options: UITextSearchOptions, withText: String)
 ```
 
-#### Discussion
+## Discussion
 
 When [`supportsTextReplacement`](./supportstextreplacement.md) returns `YES,` the system calls this method during a find session to request the replacement of all text matching the query string.
 

@@ -19,7 +19,7 @@ func setBackgroundImageNamed(_ imageName: String?)
 - (void) setBackgroundImageNamed:(NSString *) imageName;
 ```
 
-#### Discussion
+## Discussion
 
 This method looks for an image with the specified name in the Watch app’s bundle and uses it as the background image for the group. If the specified image cannot be found, the group displays no background image.
 

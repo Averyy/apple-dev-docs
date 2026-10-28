@@ -16,7 +16,7 @@ typealias Handler = @Sendable () -> Bool
 typedef _Bool (^)(void) XCPredicateExpectationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 Your custom handler should return [`true`](../../Swift/true.md) if the expectation is considered fulfilled, otherwise [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ func invalidateDisplay(forGlyphRange glyphRange: NSRange)
 - (void) invalidateDisplayForGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 You should rarely need to invoke this method.
 

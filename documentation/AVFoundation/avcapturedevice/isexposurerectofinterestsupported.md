@@ -23,7 +23,7 @@ var isExposureRectOfInterestSupported: Bool { get }
 @property (nonatomic, readonly, getter=isExposureRectOfInterestSupported) BOOL exposureRectOfInterestSupported;
 ```
 
-#### Discussion
+## Discussion
 
 You may only set the device’s [`exposureRectOfInterest`](./exposurerectofinterest.md) property if this property returns `true`.
 

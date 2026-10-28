@@ -15,7 +15,7 @@ Compares whether two map rectangles are equal.
 equals(anotherRect: MapRect): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if a rectangle exactly matches `anotherRect`. Returns `false` if the origin point or size values are different.
 

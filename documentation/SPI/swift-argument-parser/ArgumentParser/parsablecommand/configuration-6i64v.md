@@ -9,7 +9,7 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: property  
 **Role**: Type Property
 
-Configuration for this command, including subcommands and custom help text.
+Inherited from `ParsableCommand.configuration`.
 
 ## Declaration
 

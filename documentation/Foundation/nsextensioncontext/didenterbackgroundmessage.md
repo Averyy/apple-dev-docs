@@ -21,7 +21,7 @@ A message the system sends when the extension’s host app begins running in the
 struct DidEnterBackgroundMessage
 ```
 
-#### Overview
+## Overview
 
 You can use this message in your extension to stop tasks and prepare for the system to suspend the extension.
 

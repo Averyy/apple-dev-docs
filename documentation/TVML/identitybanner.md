@@ -4,7 +4,7 @@
 
 Displays information about an artist or performer.
 
-#### Overview
+## Overview
 
 The `identityBanner` element displays information directly above the `collectionList` element and is used to briefly describe its contents. Here’s an example that displays available action movies that emphasize cars.
 
@@ -31,13 +31,13 @@ The `identityBanner` element displays information directly above the `collection
 </stackTemplate>
 ```
 
-##### Subelements of identifyBanner
+### Subelements of identifyBanner
 
 - [row](./row.md)
 - [subtitle](./subtitle.md)
 - [title](./title.md)
 
-##### Elements that Use identityBanner
+### Elements that Use identityBanner
 
 - [stackTemplate](./stacktemplate.md)
 

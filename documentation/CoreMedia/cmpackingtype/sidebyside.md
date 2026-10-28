@@ -25,7 +25,7 @@ case sideBySide
 kCMPackingType_SideBySide
 ```
 
-#### Discussion
+## Discussion
 
 For side-by-side packed frames, the width of a frame in video data is twice as wide as the video displayed.
 

@@ -13,11 +13,11 @@ static OSDictionary * resourceMatching(
  OSDictionary *table = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, or passed in, is returned on success, or zero on failure.
 
-#### Overview
+## Overview
 
 IOService maintains a resource service IOResources that allows objects to be published and found globally in the I/O Kit based on a name, using the standard IOService matching and notification calls.
 

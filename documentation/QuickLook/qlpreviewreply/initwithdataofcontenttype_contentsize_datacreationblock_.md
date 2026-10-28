@@ -16,7 +16,7 @@
 - (instancetype) initWithDataOfContentType:(UTType *) contentType contentSize:(CGSize) contentSize dataCreationBlock:(NSData * (^)(QLPreviewReply *reply, NSError **error)) dataCreationBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide a preview with data of a supported format.
 

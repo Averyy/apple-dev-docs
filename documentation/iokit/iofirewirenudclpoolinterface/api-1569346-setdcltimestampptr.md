@@ -16,11 +16,11 @@ Set the time stamp pointer for a NuDCL
 IOReturn (*SetDCLTimeStampPtr)(NuDCLRef dcl, UInt32 *timeStampPtr);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Setting a the time stamp pointer for a NuDCL causes a time stamp to be recorded when a DCL executes. This DCL must be updated after it has executed for the timestamp to be valid.
 

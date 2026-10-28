@@ -24,7 +24,7 @@ var colorNoiseReductionAmount: Float { get set }
 @property (readwrite) float colorNoiseReductionAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no chroma noise reduction, and a value of `1` indicates maximum chroma noise reduction.
 

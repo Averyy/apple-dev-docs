@@ -22,7 +22,7 @@ var rawPhotoDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions rawPhotoDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 The output dimensions of a captured image are set at the moment of capture, depending on device orientation and capture session configuration. (For example, when the capture session includes a video output and video stabilization is in use, captured photos are smaller.)
 

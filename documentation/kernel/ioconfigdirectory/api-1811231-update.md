@@ -11,11 +11,11 @@ virtual IOReturn update(
  const UInt32 *&romBase) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the specified offset is now accessable at romBase[offset].
 
-#### Overview
+## Overview
 
 makes sure that the ROM has at least the specified capacity, and that the ROM is uptodate from its start to at least the specified quadlet offset.
 

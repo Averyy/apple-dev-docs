@@ -22,7 +22,7 @@ Sets a closure to receive incoming received messages for a session.
 func setIncomingMessageHandler(_ incomingMessageHandler: @escaping @Sendable (XPCReceivedMessage) -> (any Encodable)?)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only call this method on an inactive session.
 

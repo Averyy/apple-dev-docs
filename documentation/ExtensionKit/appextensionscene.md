@@ -26,7 +26,7 @@ An interface you use to provide a specific scene from your app extension’s UI.
 
 - [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 
-#### Overview
+## Overview
 
 When your app extension provides custom UI, use this type to define a specific scene for that UI. An app extension can define multiple scene types in coordination with the host app. When the host app displays the app extension’s UI, it provides a unique string identifier for the scene it wants to display. The app extension responds by providing an instance of this type that contains that scene’s contents.
 

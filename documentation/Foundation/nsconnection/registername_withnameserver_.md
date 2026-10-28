@@ -16,11 +16,11 @@ Registers a service with the specified port name server.
 - (BOOL) registerName:(NSString *) name withNameServer:(NSPortNameServer *) server;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful, otherwise [`false`](../../Swift/false.md) (for example, if another `NSConnection` object on the same host is already registered under `name`).
 
-#### Discussion
+## Discussion
 
 This method connects the receive port of the receiving `NSConnection` object with the specified service name. If the operation is successful, other `NSConnection` objects can contact the receiver using the [`connectionWithRegisteredName:host:`](./connectionwithregisteredname_host_.md) and [`rootProxyForConnectionWithRegisteredName:host:`](./rootproxyforconnectionwithregisteredname_host_.md) class methods.
 

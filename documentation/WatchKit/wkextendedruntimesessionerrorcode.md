@@ -19,7 +19,7 @@ enum WKExtendedRuntimeSessionErrorCode
 enum WKExtendedRuntimeSessionErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The session passes these errors to the sesson delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](./wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md) method.
 

@@ -24,7 +24,7 @@ func CFHTTPMessageCopyHeaderFieldValue(_ message: CFHTTPMessage, _ headerField: 
 extern CFStringRefCFHTTPMessageCopyHeaderFieldValue(CFHTTPMessageRef message, CFStringRef headerField);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFString` object containing a copy of the field specified by `headerField`, or `NULL` if there was a problem creating the object of if the specified header does not exist. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

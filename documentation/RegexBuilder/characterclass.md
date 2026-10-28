@@ -21,7 +21,7 @@ A class of characters that match in a regex.
 struct CharacterClass
 ```
 
-#### Overview
+## Overview
 
 A character class can represent individual characters, a group of characters, the set of character that match some set of criteria, or a set algebraic combination of all of the above.
 

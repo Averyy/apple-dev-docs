@@ -16,7 +16,7 @@ The buffer queue size.
 @property (atomic, strong, nullable) NSNumber * sinkBufferQueueSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property translates to the [`kCMIOStreamPropertyOutputBufferQueueSize`](../kcmiostreampropertyoutputbufferqueuesize.md) property.
 

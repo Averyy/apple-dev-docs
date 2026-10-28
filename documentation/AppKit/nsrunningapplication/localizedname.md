@@ -19,7 +19,7 @@ var localizedName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is dependent on the current localization of the application and is suitable for presentation to the user.
 

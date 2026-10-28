@@ -33,17 +33,17 @@ func boundingRect(with size: CGSize, options: NSString.DrawingOptions = [], cont
 - (CGRect) boundingRectWithSize:(CGSize) size options:(NSStringDrawingOptions) options context:(NSStringDrawingContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle whose size component indicates the width and height required to draw the entire contents of the string.
 
-#### Discussion
+## Discussion
 
 You can use this method to compute the space required to draw the string. The constraints you specify in the size parameter are a guide for the renderer for how to size the string. However, the actual bounding rectangle returned by this method can be larger than the constraints if additional space is needed to render the entire string. Typically, the renderer preserves the width constraint and adjusts the height constraint as needed.
 
 In iOS 7 and later, this method returns fractional sizes (in the `size` component of the returned rectangle); to use a returned size to size views, you must use raise its value to the nearest higher integer using the [`ceil`](../../kernel/api-1557272-ceil.md) function.
 
-##### Special Considerations
+### Special Considerations
 
 To calculate the bounding rectangle, this method uses the baseline origin by default, so it behaves as a single line. To render the string in multiple lines, specify [`usesLineFragmentOrigin`](../../UIKit/nsstringdrawingoptions/useslinefragmentorigin.md) in `options`.
 

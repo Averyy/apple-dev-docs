@@ -19,7 +19,7 @@ var duration: CMTime { get set }
 @property (nonatomic) CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`invalid`](../../CoreMedia/cmtime/invalid.md) if the duration isn’t available.
 

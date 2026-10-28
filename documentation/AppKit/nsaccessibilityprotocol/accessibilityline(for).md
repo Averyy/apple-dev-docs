@@ -20,7 +20,7 @@ func accessibilityLine(for index: Int) -> Int
 - (NSInteger) accessibilityLineForIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The line number for the line holding the specified character index.
 

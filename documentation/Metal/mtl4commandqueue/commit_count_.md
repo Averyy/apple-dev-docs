@@ -24,7 +24,7 @@ Enqueues an array of command buffers for execution.
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 The order in which you sort the command buffers in the array is meaningful, especially when it contains suspending/resuming render passes. A suspending/resuming render pass is a render pass you create by calling [`makeRenderCommandEncoder(descriptor:options:)`](../mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md), and provide `MTL4RenderEncoderOptionSuspending` or `MTL4RenderEncoderOptionResuming` for the `options` parameter.
 

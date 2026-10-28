@@ -24,7 +24,7 @@ func restoreUserActivityState(_ userActivity: NSUserActivity)
 - (void) restoreUserActivityState:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to restore an object’s state using the specified user activity. The system calls this method on any objects passed to the restoration handler in [`application(_:continue:restorationHandler:)`](../../AppKit/nsapplicationdelegate/application%28_,continue,restorationhandler%29.md). Your implementation should use the state data contained in the specified user activity’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary to restore the object.
 

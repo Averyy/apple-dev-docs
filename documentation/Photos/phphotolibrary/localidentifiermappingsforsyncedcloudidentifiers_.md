@@ -20,7 +20,7 @@ Returns a dictionary that maps each cloud identifier from the provided array to 
 - (NSDictionary<PHCloudIdentifier *,PHLocalIdentifierMapping *> *) localIdentifierMappingsForSyncedCloudIdentifiers:(NSArray<PHCloudIdentifier *> *) cloudIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be very expensive so they should be used sparingly for batch lookup of all needed identifiers. Clients should work in terms of local identifiers and call these methods only once after loading from and before saving to persistent storage.  If the attempt to lookup a local identifier for a given cloud identifier fails, the error parameter will indicate the reason.
 

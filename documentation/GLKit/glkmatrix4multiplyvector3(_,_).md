@@ -22,11 +22,11 @@ func GLKMatrix4MultiplyVector3(_ matrixLeft: GLKMatrix4, _ vectorRight: GLKVecto
 static GLKVector3 GLKMatrix4MultiplyVector3(GLKMatrix4 matrixLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector created by multiplying the matrix by the vector.
 
-#### Discussion
+## Discussion
 
 The input vector is treated as it were a 4-component vector with a `w`-component of `0.0`.
 

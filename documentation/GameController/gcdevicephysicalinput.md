@@ -28,7 +28,7 @@ protocol GCDevicePhysicalInput : GCDevicePhysicalInputState
 
 - [Handling input events](./handling-input-events.md)
 
-#### Overview
+## Overview
 
 You can safely call this protocol’s methods and access its properties from any thread, but not from multiple, concurrent threads.
 

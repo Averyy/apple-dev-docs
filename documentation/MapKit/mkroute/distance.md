@@ -25,7 +25,7 @@ var distance: CLLocationDistance { get }
 @property (nonatomic, readonly) CLLocationDistance distance;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the distance that the user covers while traversing the path of the route. It’s not a linear distance between the start and end points of the route.
 

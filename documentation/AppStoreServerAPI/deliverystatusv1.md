@@ -26,7 +26,7 @@ int32 deliveryStatusV1
 - `4`: The app didn’t deliver the consumable In-App Purchase due to an in-game currency change.
 - `5`: The app didn’t deliver the consumable In-App Purchase for other reasons.
 
-#### Discussion
+## Discussion
 
 Use these delivery status values in the [`ConsumptionRequestV1`](./consumptionrequestv1.md) request body.
 

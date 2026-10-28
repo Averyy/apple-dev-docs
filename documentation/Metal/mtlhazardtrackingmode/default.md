@@ -24,7 +24,7 @@ case `default`
 MTLHazardTrackingModeDefault
 ```
 
-#### Discussion
+## Discussion
 
 When you choose the [`MTLHazardTrackingMode.default`](./default.md) option, Metal assigns a tracking mode based on the type you’re creating:
 

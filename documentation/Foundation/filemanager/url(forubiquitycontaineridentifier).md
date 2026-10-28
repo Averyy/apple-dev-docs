@@ -25,11 +25,11 @@ func url(forUbiquityContainerIdentifier containerIdentifier: String?) -> URL?
 - (NSURL *) URLForUbiquityContainerIdentifier:(NSString *) containerIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A URL pointing to the specified ubiquity container, or `nil` if the container could not be located or if iCloud storage is unavailable for the current user or device.
 
-#### Discussion
+## Discussion
 
 You use this method to determine the location of your app’s ubiquity container directories and to configure your app’s initial iCloud access. The first time you call this method for a given ubiquity container, the system extends your app’s sandbox to include that container. In iOS, you must call this method at least once before trying to search for cloud-based files in the ubiquity container. If your app accesses multiple ubiquity containers, call this method once for each container. In macOS, you do not need to call this method if you use [`NSDocument`](../../AppKit/nsdocument.md)-based objects, because the system then calls this method automatically.
 

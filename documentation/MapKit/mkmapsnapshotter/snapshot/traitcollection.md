@@ -23,7 +23,7 @@ var traitCollection: UITraitCollection { get }
 @property (nonatomic, readonly) UITraitCollection * traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 You configure the traits when you create snapshotter options. See [`traitCollection`](../options/traitcollection.md).
 

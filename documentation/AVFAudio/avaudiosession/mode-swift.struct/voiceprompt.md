@@ -24,7 +24,7 @@ static let voicePrompt: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeVoicePrompt;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this mode allows for different routing behaviors when your app connects to certain audio devices, such as CarPlay. An example of an app that uses this mode is a turn-by-turn navigation app that plays short prompts to the user.
 

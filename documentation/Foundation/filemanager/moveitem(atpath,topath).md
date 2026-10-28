@@ -25,7 +25,7 @@ func moveItem(atPath srcPath: String, toPath dstPath: String) throws
 - (BOOL) moveItemAtPath:(NSString *) srcPath toPath:(NSString *) dstPath error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When moving items, the current process must have permission to read the item at `srcPath` and write the parent directory of `dstPath`. If the item at `srcPath` is a directory, this method moves the directory and all of its contents, including any hidden files. If an item with the same name already exists at `dstPath`, this method stops the move attempt and returns an appropriate error. If the last component of `srcPath` is a symbolic link, only the link is moved to the new path; the item pointed to by the link remains at its current location.
 

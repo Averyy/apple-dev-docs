@@ -16,7 +16,7 @@ The shape of the portal that a progressive immersion style opens.
 struct ProgressiveImmersionAspectRatio
 ```
 
-#### Overview
+## Overview
 
 A progressive immersive space replaces passthrough inside a portal that people resize with the Digital Crown. Pass a value of this type to [`progressive(aspectRatio:)`](./immersionstyle/progressive%28aspectratio%29.md) to ask for a wide or a tall portal, which lets the shape suit the content you show:
 

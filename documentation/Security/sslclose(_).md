@@ -28,7 +28,7 @@ OSStatus SSLClose(SSLContextRef context);
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

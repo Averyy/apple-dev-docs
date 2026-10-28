@@ -21,7 +21,7 @@ The number of leading zeros in this value’s binary representation.
 var leadingZeroBitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, in a fixed-width integer type with a `bitWidth` value of 8, the number *31* has three leading zeros.
 

@@ -28,11 +28,11 @@ struct Section<Parent, Content, Footer>
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 - [Suggesting search terms](./suggesting-search-terms.md)
 
-#### Overview
+## Overview
 
 Use `Section` instances in views like [`List`](./list.md), [`Picker`](./picker.md), and [`Form`](./form.md) to organize content into separate sections. Each section has custom content that you provide on a per-instance basis. You can also provide headers and footers for each section.
 
-##### Collapsible sections
+### Collapsible sections
 
 Create sections that expand and collapse by using an initializer that accepts an `isExpanded` binding. A collapsible section in a [`List`](./list.md) that uses the [`sidebar`](./liststyle/sidebar.md) style shows a disclosure indicator next to the section’s header. Tapping on the disclosure indicator toggles the appearance of the section’s content.
 

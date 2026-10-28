@@ -24,7 +24,7 @@ let HMCharacteristicTypeIdentify: String
 extern NSString * const HMCharacteristicTypeIdentify;
 ```
 
-#### Discussion
+## Discussion
 
 Use the corresponding write-only Boolean value to ask the accessory to identify itself in the physical world. The identification mechanism, if supported, is specific to the accessory. For example, a light bulb might change state briefly, flashing on or off, to indicate that it has received this command.
 

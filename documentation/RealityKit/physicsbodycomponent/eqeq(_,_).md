@@ -20,7 +20,7 @@ Indicates whether two physics body components are equal.
 static func == (lhs: PhysicsBodyComponent, rhs: PhysicsBodyComponent) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two physics body components are equal.
 

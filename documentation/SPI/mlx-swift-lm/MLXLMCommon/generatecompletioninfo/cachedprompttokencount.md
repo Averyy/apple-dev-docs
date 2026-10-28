@@ -17,7 +17,7 @@ The number of prompt tokens served by a reused KV-cache prefix instead of being 
 var cachedPromptTokenCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only a cache-owning caller can know this: the generation loop receives an already narrowed prompt and has no notion of a prompt cache. [`ChatSession`](../chatsession.md) attributes it from its cache reuse decision.
 

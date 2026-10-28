@@ -24,11 +24,11 @@ init(audioComponentDescription description: AudioComponentDescription)
 - (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) description;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioUnitMIDIInstrument`](../avaudiounitmidiinstrument.md) instance.
 
-#### Discussion
+## Discussion
 
 The component type must be `kAudioUnitType_MusicDevice` or `kAudioUnitType_RemoteInstrument`.
 

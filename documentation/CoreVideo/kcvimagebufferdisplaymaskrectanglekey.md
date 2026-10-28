@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangleKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangleKey;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the left, width, top, and height metrics relative to a reference raster width and height scaled to the image buffer dimensions.
 

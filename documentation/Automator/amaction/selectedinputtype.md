@@ -20,7 +20,7 @@ var selectedInputType: String? { get set }
 @property (nonatomic, strong, nullable) NSString * selectedInputType;
 ```
 
-#### Discussion
+## Discussion
 
 Getting this value provides the type of input the action is configured to accept. For example, your action may have the ability to accept files and folders, or documents, depending on how it’s configured and what action precedes it in the workflow.
 

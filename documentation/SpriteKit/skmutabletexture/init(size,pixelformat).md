@@ -25,11 +25,11 @@ init(size: CGSize, pixelFormat format: Int32)
 - (instancetype) initWithSize:(CGSize) size pixelFormat:(int) format;
 ```
 
-#### Return Value
+## Return Value
 
 An empty mutable texture.
 
-#### Discussion
+## Discussion
 
 You must call the [`modifyPixelData(_:)`](./modifypixeldata%28_%29.md) method at least once before using this texture.
 

@@ -24,7 +24,7 @@ class HMActionSet
 @interface HMActionSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 Action sets can be executed as a result of evaluating a trigger (instances of [`HMTrigger`](./hmtrigger.md)) or manually with [`executeActionSet(_:completionHandler:)`](./hmhome/executeactionset%28_,completionhandler%29.md). Actions in an action set are performed in an unspecified order. You create new action sets using the [`addActionSet(withName:completionHandler:)`](./hmhome/addactionset%28withname,completionhandler%29.md) method of [`HMHome`](./hmhome.md).
 

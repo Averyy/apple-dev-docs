@@ -24,7 +24,7 @@ class MKMarkerAnnotationView
 @interface MKMarkerAnnotationView : MKAnnotationView
 ```
 
-#### Overview
+## Overview
 
 Return an instance of this class from the [`mapView(_:viewFor:)`](./mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) method of your map view delegate when you want to display the same types of markers used in the Maps app.
 

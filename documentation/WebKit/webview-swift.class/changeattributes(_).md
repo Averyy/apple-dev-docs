@@ -19,7 +19,7 @@ func changeAttributes(_ sender: Any?)
 - (void) changeAttributes:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves similar to the [`changeAttributes(_:)`](../../AppKit/nstextview/changeattributes%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

@@ -19,7 +19,7 @@ The guidance for the model to use during a session.
 let level: SpotlightSearchTool.GuidanceLevel
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify custom guidance for how to search your app’s content. The default value of this property is [`SpotlightSearchTool.GuidanceLevel.complete`](../guidancelevel/complete.md), which uses all available search techniques and search all content types.
 

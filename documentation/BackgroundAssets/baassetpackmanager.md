@@ -24,7 +24,7 @@ A class that manages asset packs.
 
 - [Reducing download and storage demands with localized asset packs](./reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Overview
+## Overview
 
 The first time that your code refers to the shared manager, Background Assets considers that your application is opting into automatic system management of your asset packs.
 

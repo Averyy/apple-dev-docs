@@ -25,7 +25,7 @@ struct MakeConnectable<Upstream> where Upstream : Publisher
 
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
-#### Overview
+## Overview
 
 [`Publishers.MakeConnectable`](./makeconnectable.md) is a [`ConnectablePublisher`](../connectablepublisher.md), which allows you to perform configuration before publishing any elements. Call [`connect()`](../connectablepublisher/connect%28%29.md) on this publisher when you want to attach to its upstream publisher and start producing elements.
 

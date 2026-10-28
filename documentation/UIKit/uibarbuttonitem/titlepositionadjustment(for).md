@@ -23,11 +23,11 @@ func titlePositionAdjustment(for barMetrics: UIBarMetrics) -> UIOffset
 - (UIOffset) titlePositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The title offset for `barMetrics`.
 
-#### Discussion
+## Discussion
 
 This offset is used to adjust the position of a title (if any) within a bordered bar button.
 

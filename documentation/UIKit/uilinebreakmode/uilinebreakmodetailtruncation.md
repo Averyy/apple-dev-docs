@@ -19,7 +19,7 @@ Truncate text (as necessary) from the end of the line.
 UILineBreakModeTailTruncation
 ```
 
-#### Discussion
+## Discussion
 
 For multiple lines of text, only text on the last line truncates.
 

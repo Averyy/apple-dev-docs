@@ -20,7 +20,7 @@ var kColorSyncCameraDeviceClass: Unmanaged<CFString>!
 extern CFStringRef kColorSyncCameraDeviceClass;
 ```
 
-#### Discussion
+## Discussion
 
 The string that represents a camera device is `cmra`.
 

@@ -27,7 +27,7 @@ func startGyroUpdates()
 
 - [Getting raw gyroscope events](../getting-raw-gyroscope-events.md)
 
-#### Discussion
+## Discussion
 
 You can get the latest gyroscope data through the [`gyroData`](./gyrodata.md) property. You must call [`stopGyroUpdates()`](./stopgyroupdates%28%29.md) when you no longer want your app to process gyroscope updates.
 

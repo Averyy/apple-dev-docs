@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the value of the first argument is le
 static func <= <Other>(lhs: Self, rhs: Other) -> Bool where Other : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 You can compare instances of any `BinaryInteger` types using the less-than-or-equal-to operator (`<=`), even if the two instances are of different types.
 

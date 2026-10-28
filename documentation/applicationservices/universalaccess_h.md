@@ -5,13 +5,13 @@
 
 This header file contains functions that give applications the ability to control the zoom focus. Using these functions, an application can tell the macOS Universal Access zoom feature what part of its user interface needs focus.
 
-#### Overview
+## Overview
 
 See the Overview section above for header-level documentation.
 
-##### Overview
+### Overview
 
-###### Included Headers
+#### Included Headers
 
 - <CoreGraphics/CoreGraphics.h>
 - <AvailabilityMacros.h>

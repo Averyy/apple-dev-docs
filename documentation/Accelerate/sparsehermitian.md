@@ -25,7 +25,7 @@ var SparseHermitian: SparseKind_t { get }
 SparseHermitian
 ```
 
-#### Discussion
+## Discussion
 
 A `SparseMatrixStructure` object can represent several types of matrices:
 

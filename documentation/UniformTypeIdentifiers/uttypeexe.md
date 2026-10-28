@@ -21,7 +21,7 @@ A type that represents a Windows executable.
 extern UTType * const UTTypeEXE;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.windows-executable`.
 

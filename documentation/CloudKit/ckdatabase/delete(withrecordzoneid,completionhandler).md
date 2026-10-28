@@ -29,7 +29,7 @@ func delete(withRecordZoneID zoneID: CKRecordZone.ID) async throws -> CKRecordZo
 - (void) deleteRecordZoneWithID:(CKRecordZoneID *) zoneID completionHandler:(void (^)(CKRecordZoneID *zoneID, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
 

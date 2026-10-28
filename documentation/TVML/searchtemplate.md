@@ -4,13 +4,13 @@
 
 Searches for a media item based on user input.
 
-#### Overview
+## Overview
 
 Use the `searchTemplate` element to display a text field that takes user input in order to search for a specific item; for example, looking for a specific movie to download. Developers can also display preselected results in a `shelf`, `list`, or `collectionList` element under the search field. The following figure shows the basic layout for a `searchTemplate` page. The theme for the search template defaults to the system preference.
 
 ![Layout diagram showing a search field at the top, a keyboard area directly below, and a large area for search results at the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/searchtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `searchTemplate` element in TVML format.
 
@@ -33,7 +33,7 @@ The following listing shows the main elements of the `searchTemplate` element in
 
 > **Note**: The `shelf` element can be replaced with a `collectionList` or `list` element to change the look of the search results.
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[collectionList](./collectionlist.md)**: Element containing a group of options (such as most popular movies) or search results.
 - **[img](./img.md)**: A figure representing a search result.
@@ -44,7 +44,7 @@ The following listing shows the main elements of the `searchTemplate` element in
 - **[shelf](./shelf.md)**: Element containing a row of options (such as most popular movies) or search results.
 - **[title](./title.md)**: The title for a search result.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `searchTemplate` example. The example displays a search field and keyboard along the top of the screen. A shelf is prepopulated with popular movies. Modify your main JavaScript file to accept the user input from the search field. For more information on available JavaScript functions, see [TVMLKit JS](../tvmljs/tvmljs.md).
 

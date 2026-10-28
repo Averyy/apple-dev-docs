@@ -24,7 +24,7 @@ var sourceRevision: HKSourceRevision { get }
 @property (strong, readonly) HKSourceRevision * sourceRevision;
 ```
 
-#### Discussion
+## Discussion
 
 For samples saved by an app, the source revision is set to the version of the app that saved the object. For devices that write directly to HealthKit, the source revision is set to the version of the device that saved the object, while more complete device information is saved to the [`device`](./device.md) property.
 

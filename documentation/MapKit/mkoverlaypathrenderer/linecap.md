@@ -24,7 +24,7 @@ var lineCap: CGLineCap { get set }
 @property CGLineCap lineCap;
 ```
 
-#### Discussion
+## Discussion
 
 The line cap style applies to the start and end points of any open subpaths. This property doesn’t affect closed subpaths. The default line cap style is [`CGLineCap.round`](../../CoreGraphics/cglinecap/round.md).
 

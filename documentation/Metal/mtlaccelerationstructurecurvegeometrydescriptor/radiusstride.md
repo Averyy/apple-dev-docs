@@ -24,7 +24,7 @@ var radiusStride: Int { get set }
 @property (nonatomic) NSUInteger radiusStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride needs to be a multiple of the radius format size you configure with the [`radiusFormat`](./radiusformat.md) property. The default value is `0`, which indicates that the radius elements in the buffer have zero bytes of padding between them.
 

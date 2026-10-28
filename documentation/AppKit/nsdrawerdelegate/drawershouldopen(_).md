@@ -21,11 +21,11 @@ optional func drawerShouldOpen(_ sender: NSDrawer) -> Bool
 - (BOOL) drawerShouldOpen:(NSDrawer *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drawer should open; [`false`](../../Swift/false.md) to prevent the drawer from opening.
 
-#### Discussion
+## Discussion
 
 This method is invoked on user-initiated attempts to open a drawer by dragging it or when the [`NSDrawerDelegate`](../nsdrawerdelegate.md) method is called.
 

@@ -23,7 +23,7 @@ class func shared() -> AVAssetDownloadStorageManager
 + (AVAssetDownloadStorageManager *) sharedDownloadStorageManager;
 ```
 
-#### Return Value
+## Return Value
 
 The download storage manager.
 

@@ -21,11 +21,11 @@ Creates a predicate by converting an existing predicate.
 convenience init?<Input>(_ predicate: Predicate<Input>) where Input : NSObject
 ```
 
-#### Return Value
+## Return Value
 
 The converted predicate, or `nil` if conversion fails.
 
-#### Discussion
+## Discussion
 
 Only a subset of predicates that can be expressed by [`Predicate`](../predicate.md) are convertible to [`NSPredicate`](../nspredicate.md). Predicates that include operations like the following can’t be converted:
 

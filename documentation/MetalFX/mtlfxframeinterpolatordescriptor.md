@@ -23,7 +23,7 @@ class MTLFXFrameInterpolatorDescriptor
 @interface MTLFXFrameInterpolatorDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A frame interpolator inspects two frames your game or app renders and, based on their properties, generates an extra frame at a fraction of the cost, helping you to increase your frame rate.
 

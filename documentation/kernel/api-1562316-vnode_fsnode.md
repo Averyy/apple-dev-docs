@@ -15,7 +15,7 @@ Gets the filesystem-specific data associated with a vnode.
 void * vnode_fsnode(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The filesystem-specific data, directly.
 

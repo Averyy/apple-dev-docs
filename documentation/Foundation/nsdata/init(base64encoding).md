@@ -26,11 +26,11 @@ init?(base64Encoding base64String: String)
 - (id) initWithBase64Encoding:(NSString *) base64String;
 ```
 
-#### Return Value
+## Return Value
 
 A data object built by Base-64 decoding the provided string. Returns `nil` if the data object could not be decoded.
 
-#### Discussion
+## Discussion
 
 Although this method was only introduced publicly for iOS 7, it has existed since iOS 4; you can use it if your application needs to target an operating system prior to iOS 7. This method behaves like [`init(base64EncodedString:options:)`](./init%28base64encodedstring,options%29.md), but ignores all unknown characters.
 

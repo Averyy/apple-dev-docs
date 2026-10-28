@@ -21,11 +21,11 @@ Pauses the app intent and asks the person to choose an option from the specified
 func requestChoice(between options: [IntentChoiceOption], dialog: IntentDialog? = nil) async throws -> IntentChoiceOption
 ```
 
-#### Return Value
+## Return Value
 
 The option the person chose.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the person chooses a cancel option from the interface.
 

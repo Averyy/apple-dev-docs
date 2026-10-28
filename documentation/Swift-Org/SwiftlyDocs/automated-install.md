@@ -10,11 +10,11 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Automatically install swiftly and Swift toolchains.
 
-#### Overview
+## Overview
 
 This guide helps you to automate the installation of swiftly and toolchains so that it can run unattended, for example in build or continous integration systems. This guide assumes that you have working understanding of your build system. The examples are based on a typical Unix environment.
 
-##### Download the binary
+### Download the binary
 
 First, download the swiftly binary from swift.org for your operating system (for example, Linux) and processor architecture (for example `arm64` or `x86_64`). Here’s an example using the popular curl command.
 
@@ -32,7 +32,7 @@ installer -pkg swiftly.pkg -target CurrentUserHomeDirectory
 
 > 💡 **Tip**: If you are using Linux you will need GPG and the “ca-certificates” package for the root certificate authorities that will establish the trust that swiftly needs to make API requests that it needs. This package is frequently pre-installed on end-user environments, but may not be present in more minimal installations.
 
-##### Install swiftly
+### Install swiftly
 
 Once swiftly is downloaded, run the `init` subcommand to finish the installation. The following example command prints verbose outputs, assume yes for all prompts, and skips the automatic installation of the latest swift toolchain:
 
@@ -52,7 +52,7 @@ To begin using installed swiftly from your current shell, first run the followin
 
 You can go ahead and add this command to the list of commands in your build script so that the build can proceed to call swiftly from the path.
 
-##### Install a toolchain
+### Install a toolchain
 
 The usual next step is to install a specific swift toolchain using the `install` command with the `--post-install-file` option:
 
@@ -70,7 +70,7 @@ fi
 
 > **Note**: If the system runs your script as a regular user then you will need to take this into account by either pre-installing the toolchain’s system dependencies or running the `post-install.sh` script in a secure manner as the administrative user.
 
-##### Customize the installation
+### Customize the installation
 
 If you want to install swiftly, or the binaries that it manages into different locations these can be customized using environment variables before running `swiftly init`.
 

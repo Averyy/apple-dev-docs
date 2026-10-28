@@ -24,7 +24,7 @@ var velocity: Float { get set }
 @property (readwrite) float velocity;
 ```
 
-#### Discussion
+## Discussion
 
 If the instrument in the [`AVMusicTrack`](../avmusictrack.md) destination audio unit supports fractional values, use this to generate precise changes in gain and other values. The valid range of values depend on the destination audio unit, and is usually between `0.0` and `127.0`.
 

@@ -18,7 +18,7 @@ The color channels written to the output attachment.
 var writeMask: MTLColorWriteMask { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `.all`. Set this to a subset of channels to write only specific components.
 

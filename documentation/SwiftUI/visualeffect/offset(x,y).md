@@ -21,7 +21,7 @@ Offsets the view by the specified horizontal and vertical distances.
 func offset(x: CGFloat = 0, y: CGFloat = 0) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that offsets the view by `x` and `y`.
 

@@ -20,7 +20,7 @@ let MLMediaSourcePhotosIdentifier: String
 extern NSString * const MLMediaSourcePhotosIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If your app uses APIs that have read or write access to the user’s Photos library, the [`NSPhotoLibraryUsageDescription`](../BundleResources/information-property-list/nsphotolibraryusagedescription.md) key is required in your information property list.
 

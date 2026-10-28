@@ -23,7 +23,7 @@ var selector: Selector { get set }
 @property (nonatomic, assign) SEL selector;
 ```
 
-#### Discussion
+## Discussion
 
 The signature of the selector must take one of the following forms:
 

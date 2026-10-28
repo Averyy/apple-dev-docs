@@ -20,11 +20,11 @@ func SecRequirementCopyData(_ requirement: SecRequirement, _ flags: SecCSFlags, 
 OSStatus SecRequirementCopyData(SecRequirementRef requirement, SecCSFlags flags, CFDataRef*data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can extract the binary blob from the [`CFData`](../CoreFoundation/cfdata.md) object and store it in any form you wish. Use of this function is the only publicly supported way to get such a data blob. You can use the [`SecRequirementCreateWithData(_:_:_:)`](./secrequirementcreatewithdata%28_,_,_%29.md) function to convert it back to a code requirement object.
 

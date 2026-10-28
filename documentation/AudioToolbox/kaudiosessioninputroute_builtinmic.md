@@ -22,7 +22,7 @@ let kAudioSessionInputRoute_BuiltInMic: CFString!
 extern CFStringRef const kAudioSessionInputRoute_BuiltInMic;
 ```
 
-#### Discussion
+## Discussion
 
 Some early iOS devices do not have this input.
 

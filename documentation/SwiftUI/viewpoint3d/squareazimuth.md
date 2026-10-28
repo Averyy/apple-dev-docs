@@ -15,7 +15,7 @@ A value describing what direction something is being viewed from along the horiz
 var squareAzimuth: SquareAzimuth { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is snapped to 1 of 4 directions.
 

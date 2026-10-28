@@ -21,11 +21,11 @@ Creates an object whose resolution indicates that your app doesn’t support the
 + (instancetype) unsupportedWithReason:(NSInteger) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INIntentResolutionResult` object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support an intent parameter. Siri may use the returned reason to let the user know that the value isn’t supported.
 

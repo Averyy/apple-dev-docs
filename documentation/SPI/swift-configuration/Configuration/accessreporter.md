@@ -30,7 +30,7 @@ protocol AccessReporter : Sendable
 - [Choosing the access pattern](./choosing-access-patterns.md)
 - [Configuring libraries](./configuring-libraries.md)
 
-#### Overview
+## Overview
 
 Access reporters track when configuration values are read, fetched, or watched, to provide visibility into configuration usage patterns. This is useful for debugging, auditing, and understanding configuration dependencies.
 

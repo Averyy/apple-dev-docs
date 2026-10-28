@@ -24,7 +24,7 @@ typealias MIDIChannelNumber = UInt8
 typedef uint8_t MIDIChannelNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Per the MIDI-CI specification, this is always a single nibble, 0x0~0xF.
 

@@ -16,11 +16,11 @@ Generates a pseudo-random half-precision float between 0 and 1.
 half random::half_01()
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-random half-precision float in the range [0.0, 1.0].
 
-#### Discussion
+## Discussion
 
 This function generates a random value in the range [0.0, 1.0] using half-precision floating-point format and increments the internal random seed for subsequent calls.
 

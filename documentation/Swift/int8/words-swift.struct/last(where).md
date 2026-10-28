@@ -21,11 +21,11 @@ Returns the last element of the sequence that satisfies the given predicate.
 func last(where predicate: (Self.Element) throws -> Bool) rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The last element of the sequence that satisfies `predicate`, or `nil` if there is no element that satisfies `predicate`.
 
-#### Discussion
+## Discussion
 
 This example uses the `last(where:)` method to find the last negative number in an array of integers:
 

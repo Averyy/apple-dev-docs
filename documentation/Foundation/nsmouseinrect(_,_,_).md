@@ -20,11 +20,11 @@ func NSMouseInRect(_ aPoint: NSPoint, _ aRect: NSRect, _ flipped: Bool) -> Bool
 extern BOOL NSMouseInRect(NSPoint aPoint, NSRect aRect, BOOL flipped);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the hot spot of the cursor lies inside a given rectangle, otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method assumes an unscaled and unrotated coordinate system. Specify [`true`](../Swift/true.md) for `flipped` if the underlying view uses a flipped coordinate system.
 

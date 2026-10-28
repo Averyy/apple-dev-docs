@@ -17,9 +17,9 @@ The status item that reports the device’s system health.
 object StatusDeviceSystemHealth
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +30,7 @@ object StatusDeviceSystemHealth
 | Allowed in system scope | iOS, Shared iPad |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

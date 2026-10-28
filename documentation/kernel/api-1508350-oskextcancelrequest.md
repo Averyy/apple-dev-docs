@@ -15,11 +15,11 @@ Cancels a pending user-space kext request without invoking the callback.
 OSReturn OSKextCancelRequest(OSKextRequestTag requestTag, void **contextOut);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the request is successfully canceled. `kOSKextReturnNotFound` if `requestTag` does not identify any pending request. Other `OSKextReturn...` errors are possible.
 
-#### Discussion
+## Discussion
 
 This function cancels a pending request if it exists, so that its callback will not be invoked. It returns in `contextOut` the context pointer used to create the request so that any resources allocated for the request can be cleaned up.
 

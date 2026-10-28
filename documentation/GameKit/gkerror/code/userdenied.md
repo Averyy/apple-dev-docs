@@ -25,7 +25,7 @@ case userDenied
 GKErrorUserDenied
 ```
 
-#### Discussion
+## Discussion
 
 `GKErrorUserDenied` is only called when Game Center is restricted in Parental Controls or has been turned off entirely in the configuration profile. All other user cancelled actions use `GKErrorCancelled`.
 

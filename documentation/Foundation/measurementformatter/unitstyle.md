@@ -25,7 +25,7 @@ var unitStyle: Formatter.UnitStyle { get set }
 @property NSFormattingUnitStyle unitStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are [`Formatter.UnitStyle.short`](../formatter/unitstyle/short.md), [`Formatter.UnitStyle.medium`](../formatter/unitstyle/medium.md), and [`Formatter.UnitStyle.long`](../formatter/unitstyle/long.md). The default value is [`Formatter.UnitStyle.medium`](../formatter/unitstyle/medium.md).
 

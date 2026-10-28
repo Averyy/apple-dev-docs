@@ -20,7 +20,7 @@ optional func session(_ session: ARSession, didChangeViewRotationAngle viewRotat
 - (void) session:(ARSession *) session didChangeViewRotationAngle:(CGFloat) viewRotationAngle;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit calls this method when a new angle becomes available, in step with the system UI rotation. Implement it to rotate a view by the given angle so the `ARFrame` it displays stays level with the horizon as the device rotates.
 

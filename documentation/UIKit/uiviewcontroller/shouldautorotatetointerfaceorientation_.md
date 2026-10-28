@@ -19,11 +19,11 @@ Returns a Boolean value indicating whether the view controller supports the spec
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) toInterfaceOrientation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view controller auto-rotates its view to the specified orientation; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 By default, this method returns [`true`](../../Swift/true.md) for the [`UIInterfaceOrientation.portrait`](../uiinterfaceorientation/portrait.md) orientation only. If your view controller supports additional orientations, override this method and return [`true`](../../Swift/true.md) for all orientations it supports.
 

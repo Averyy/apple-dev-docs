@@ -19,7 +19,7 @@ A dimension that indicates sizing for a view in a split arrangement follows auto
 + (instancetype) automaticDimension;
 ```
 
-#### Discussion
+## Discussion
 
 This defaults to [`intrinsicDimension`](./intrinsicdimension.md).
 

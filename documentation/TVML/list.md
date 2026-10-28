@@ -4,7 +4,7 @@
 
 Creates a generic container.
 
-#### Overview
+## Overview
 
 The `list` element is a generic element that contains nearly all other elements in the templates that use it. Here’s an example of a `list` inside of a `paradeTemplate`. The `list` element contains the information for the page.
 
@@ -34,14 +34,14 @@ The `list` element is a generic element that contains nearly all other elements 
 </paradeTemplate>
 ```
 
-##### Subelements for list
+### Subelements for list
 
 - [header](./header.md)
 - [relatedContent](./relatedcontent.md)
 - [section](./section.md)
 - [tumblerBar](./tumblerbar.md)
 
-##### Elements that Use list
+### Elements that Use list
 
 - [catalogTemplate](./catalogtemplate.md)
 - [compilationTemplate](./compilationtemplate.md)

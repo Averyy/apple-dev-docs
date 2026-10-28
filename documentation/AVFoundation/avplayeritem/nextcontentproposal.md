@@ -19,7 +19,7 @@ var nextContentProposal: AVContentProposal? { get set }
 @property (nonatomic, strong, nullable) AVContentProposal * nextContentProposal;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to associate content proposed to follow the current content.
 

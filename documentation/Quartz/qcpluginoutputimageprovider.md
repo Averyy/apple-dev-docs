@@ -21,7 +21,7 @@ protocol QCPlugInOutputImageProvider
 @protocol QCPlugInOutputImageProvider
 ```
 
-#### Overview
+## Overview
 
 Output images are opaque provider objects that comply to this protocol. To create an image output port as an Objective-C 2.0 property, declare it as follows:
 

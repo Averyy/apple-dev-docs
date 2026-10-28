@@ -19,7 +19,7 @@ var sendsActionOnEndEditing: Bool { get set }
 @property BOOL sendsActionOnEndEditing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the control sends its action message when editing is complete. Editing is complete when the user does one of the following:
 

@@ -25,7 +25,7 @@ func CFTimeZoneCopyKnownNames() -> CFArray!
 extern CFArrayRefCFTimeZoneCopyKnownNames();
 ```
 
-#### Return Value
+## Return Value
 
 An array containing CFString objects representing all the known time zone names. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

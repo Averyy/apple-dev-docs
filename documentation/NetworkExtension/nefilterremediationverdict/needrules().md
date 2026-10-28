@@ -22,7 +22,7 @@ class func needRules() -> NEFilterRemediationVerdict
 + (NEFilterRemediationVerdict *) needRulesVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterRemediationVerdict` object.
 

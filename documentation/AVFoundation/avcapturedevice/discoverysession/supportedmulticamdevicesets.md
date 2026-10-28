@@ -23,7 +23,7 @@ var supportedMultiCamDeviceSets: [Set<AVCaptureDevice>] { get }
 @property (nonatomic, readonly) NSArray<NSSet<AVCaptureDevice *> *> * supportedMultiCamDeviceSets;
 ```
 
-#### Discussion
+## Discussion
 
 You may use multiple cameras as device inputs to an [`AVCaptureMultiCamSession`](../../avcapturemulticamsession.md), as long as one of the supported multi-camera device sets includes the device.
 

@@ -21,11 +21,11 @@ Returns a version of the gradient that will use a specified color space for inte
 func colorSpace(_ space: Gradient.ColorSpace) -> AnyGradient
 ```
 
-#### Return Value
+## Return Value
 
 A new gradient that interpolates its colors in the specified color space.
 
-#### Discussion
+## Discussion
 
 ```swift
 Rectangle().fill(.linearGradient(

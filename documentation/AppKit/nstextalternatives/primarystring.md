@@ -19,7 +19,7 @@ var primaryString: String { get }
 @property (copy, readonly) NSString * primaryString;
 ```
 
-#### Discussion
+## Discussion
 
 The text system uses the `primaryString` property to make sure that the text is still in the same state as when it was entered.
 

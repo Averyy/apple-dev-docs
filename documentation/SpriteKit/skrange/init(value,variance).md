@@ -25,7 +25,7 @@ convenience init(value: CGFloat, variance: CGFloat)
 + (instancetype) rangeWithValue:(CGFloat) value variance:(CGFloat) variance;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object whose minimum value is `value-variance` and whose maximum value is `value+variance`.
 

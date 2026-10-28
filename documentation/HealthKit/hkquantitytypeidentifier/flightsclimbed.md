@@ -24,7 +24,7 @@ static let flightsClimbed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierFlightsClimbed;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Flights climbed can be automatically collected by an iPhone, Apple Watch, or Apple Watch connected to a GymKit machine.
 

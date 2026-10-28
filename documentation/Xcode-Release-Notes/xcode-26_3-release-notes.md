@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 26.3 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, macOS 26.2, and visionOS 26.2. Xcode 26.3 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.3 requires a Mac running macOS Sequoia 15.6 or later.
 
-##### Coding Intelligence
+### Coding Intelligence
 
-###### New Features
+#### New Features
 
 - Xcode 26.3 introduces support for agentic coding, a new way in Xcode for developers to build apps, powered by coding agents from Anthropic and OpenAI. With agentic coding, Xcode can work autonomously toward a developer’s goals — from breaking down tasks to making decisions based on the project architecture, and using built-in tools to get things done.
 
@@ -20,7 +20,7 @@ Xcode 26.3 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, m
   For more information, see [Setting up coding intelligence](../Xcode/setting-up-coding-intelligence.md).  (169448160)
 - Xcode 26.3 introduces a comprehensive permissions system that gives you fine-grained control over what external agentic coding tools can do in your development environment.  (170740647)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The coding tools activity indicator bar no longer spontaneously appears in editors after a task has finished.  (163070450)
 - Fixed an issue that caused custom model providers to disappear in between launches of Xcode.  (165930715) (FB21270045)
@@ -42,7 +42,7 @@ Xcode 26.3 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, m
 - Fixed: Upgraded to Codex version 0.98.0 for improved stability and features.  (170586680)
 - Fixed: When using external development tools that connect to Xcode, you may see multiple “Allow Connection?” dialogs during normal usage.  (170721057)
 
-###### Known Issues
+#### Known Issues
 
 - Denying Claude or Codex access to a project located in a privacy-protected directory - such as Desktop, Downloads, or Documents - will mean the project cannot be accessed by the agent as no subsequent access request is made and the decision cannot be reversed.  (166387271)
 

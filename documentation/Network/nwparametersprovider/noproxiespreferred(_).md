@@ -22,7 +22,7 @@ Prefer not using proxies when making connections.
 func noProxiesPreferred(_ preferred: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Attempt connections without using proxies, only using any configured proxies if the connection cannot otherwise be completed.
 

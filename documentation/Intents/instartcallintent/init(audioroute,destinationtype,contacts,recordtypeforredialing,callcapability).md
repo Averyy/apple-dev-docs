@@ -23,11 +23,11 @@ convenience init(audioRoute: INCallAudioRoute, destinationType: INCallDestinatio
 - (instancetype) initWithAudioRoute:(INCallAudioRoute) audioRoute destinationType:(INCallDestinationType) destinationType contacts:(NSArray<INPerson *> *) contacts recordTypeForRedialing:(INCallRecordType) recordTypeForRedialing callCapability:(INCallCapability) callCapability;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if it couldn’t create the object.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to place a call to another user. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

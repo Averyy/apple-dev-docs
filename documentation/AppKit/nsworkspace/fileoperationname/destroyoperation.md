@@ -21,7 +21,7 @@ static let destroyOperation: NSWorkspace.FileOperationName
 extern NSWorkspaceFileOperationName NSWorkspaceDestroyOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Behaves the same as  [`removeItem(at:)`](../../../Foundation/filemanager/removeitem%28at%29.md).
 

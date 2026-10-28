@@ -10,7 +10,7 @@ Classify text and other token-based content into developer-defined categories.
 - Mac Catalyst 13.1+
 - macOS 10.5+
 
-#### Overview
+## Overview
 
 The Latent Semantic Mapping framework classifies texts based on latent semantic information. The C-based functions of this API are designed to be language-independent and are Unicode-based.
 

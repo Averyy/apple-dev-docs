@@ -16,7 +16,7 @@ Returns the pixel format to use for the stencil texture in drawable’s render c
 MTLPixelFormat cp_layer_renderer_configuration_get_drawable_render_context_stencil_format(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel format to use for the drawable’s render context stencil textures.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the sound ignores local silent mode.
 var shouldIgnoreSilentMode: Bool
 ```
 
-#### Discussion
+## Discussion
 
 A `true` value typically indicates higher urgency, such as for emergency alerts.
 

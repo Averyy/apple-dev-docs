@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_EndsPreviousSampleDuration: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_EndsPreviousSampleDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Marker sample buffers with this attachment may be used in situations where sample buffers are transmitted        before their duration is known. In such situations, normally the recipient may use each sample buffer’s timestamp        to calculate the duration of the previous sample buffer. The marker sample buffer with this attachment is sent        to provide the timestamp for calculating the final sample buffer’s duration.
 

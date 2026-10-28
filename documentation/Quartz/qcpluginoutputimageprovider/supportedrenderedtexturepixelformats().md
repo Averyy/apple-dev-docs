@@ -21,11 +21,11 @@ optional func supportedRenderedTexturePixelFormats() -> [Any]!
 - (NSArray *) supportedRenderedTexturePixelFormats;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the list of texture pixel formats supported by [`copyRenderedTexture(forCGLContext:pixelFormat:bounds:isFlipped:)`](./copyrenderedtexture%28forcglcontext,pixelformat,bounds,isflipped%29.md) or `nil` if not supported.
 
-#### Discussion
+## Discussion
 
 If this method returns nil, then Quartz Composer calls [`canRender(withCGLContext:)`](./canrender%28withcglcontext%29.md) /[`render(withCGLContext:forBounds:)`](./render%28withcglcontext,forbounds%29.md).
 

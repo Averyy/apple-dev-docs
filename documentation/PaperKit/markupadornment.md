@@ -19,7 +19,7 @@ A visual adornment that appears on top of markup content within a markup view co
 struct MarkupAdornment
 ```
 
-#### Overview
+## Overview
 
 You use a markup adornment to display an image-based overlay that you can position and configure to enhance markup content. Adornments scale with the zoom level or remain a fixed size in the base coordinate system.
 

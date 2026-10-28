@@ -19,7 +19,7 @@ case gravityAreas
 NSStackViewDistributionGravityAreas
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value.
 

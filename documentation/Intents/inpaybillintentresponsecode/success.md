@@ -25,7 +25,7 @@ case success
 INPayBillIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after scheduling the transaction successfully. Returning this code doesn’t requirea transfer of funds. It only means that you’ve recorded the transaction are making the payment on the date specified in the intent object.
 

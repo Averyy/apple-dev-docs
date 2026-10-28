@@ -19,11 +19,11 @@ func hv_vcpu_get_reg(_ vcpu: hv_vcpu_t, _ reg: hv_reg_t, _ value: UnsafeMutableP
 extern hv_return_t hv_vcpu_get_reg(hv_vcpu_t vcpu, hv_reg_t reg, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function must be called by the owning thread.
 

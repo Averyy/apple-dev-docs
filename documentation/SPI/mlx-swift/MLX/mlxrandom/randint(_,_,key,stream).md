@@ -17,7 +17,7 @@ Generate random integers from the given interval using a `RangeExpression<Int>`.
 static func randInt<T>(_ range: Range<T>, _ shape: some Collection<Int> = [], key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled with equal probability from the integers in half-open interval `[low, high)`. The lower and upper bound can be scalars or arrays and must be roadcastable to `shape`.
 

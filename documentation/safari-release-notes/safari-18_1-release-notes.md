@@ -5,13 +5,13 @@
 
 Released October 28, 2024 — 18.1 (20619.2.8)
 
-#### Overview
+## Overview
 
 Safari 18.1 is available for iOS 18.1, iPadOS 18.1, visionOS 2.1, macOS 15.1, macOS Sonoma, and macOS Ventura.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `display: contents` on `tbody` elements preventing table rows from being properly exposed in the accessibility tree.  (129131780)
 - Fixed the handling of ElementInternals’s `ariaValueNow` null values so the right value is exposed to assistive technologies.  (129218234)
@@ -21,75 +21,75 @@ Safari 18.1 is available for iOS 18.1, iPadOS 18.1, visionOS 2.1, macOS 15.1, ma
 - Fixed text exposed to assistive technologies when `display: contents` directly wraps a `display: block` text container.  (132265522)
 - Fixed VoiceOver not finding any content in a table when `display: table` is applied to `tbody` elements.  (132820485)
 
-##### Authentication
+### Authentication
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue using large credential lists with security keys.  (133711978)
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed style container queries querying the root element.  (124875999)
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed deleting content immediately before a `<picture>` element unexpectedly removing `<source>` elements.  (128100106)
 - Fixed inserting text before a `<picture>` element inserting the text after the element instead.  (134378236)
 
-##### JavaScript
+### JavaScript
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect optimization and random non-updated values.  (135851156)
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a bug in WebCodecs where audio and video codecs with pending work could be prematurely garbage collected.  (134297589)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a bug where `Cross-Origin-Opener-Policy` header fields in the response of iframe elements were not ignored, resulting in `window.opener` being null after multiple cross-origin navigations of the embedder document.  (132840366)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `content-visibility` to not apply to elements with `display: contents` or `display: none`.  (134436437)
 - Fixed float clearing in the WordPress Classic Editor sidebar layout.  (136988841)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the `ping` attribute for `<a>` elements to be controlled by the `connect-src` CSP directive.  (131054895)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed blob URL downloads failing to trigger from an extension.  (78929424)
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed blurry screen sharing for some sites.  (133611004)
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added support for the Writing Tools API to enable and customize the behavior in apps.  (128340967)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed AVIF in WKWebView on macOS.  (133272264) (FB14678252)
 

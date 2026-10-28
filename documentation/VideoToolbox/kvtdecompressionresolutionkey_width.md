@@ -24,7 +24,7 @@ let kVTDecompressionResolutionKey_Width: CFString
 extern CFStringRef const kVTDecompressionResolutionKey_Width;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

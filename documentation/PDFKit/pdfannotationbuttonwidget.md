@@ -21,7 +21,7 @@ class PDFAnnotationButtonWidget
 @interface PDFAnnotationButtonWidget : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 `PDFAnnotationButtonWidget` inherits general annotation behavior from the `PDFAnnotation` class. If you use a `PDFAnnotationButtonWidget` object, your application must handle hit testing, unless you are simply using `PDFView` to display content. This is because `PDFView` automatically handles hit testing for you.
 

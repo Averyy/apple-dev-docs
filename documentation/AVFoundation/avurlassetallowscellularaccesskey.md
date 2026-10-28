@@ -25,7 +25,7 @@ let AVURLAssetAllowsCellularAccessKey: String
 extern NSString * const AVURLAssetAllowsCellularAccessKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior of [`AVURLAsset`](./avurlasset.md) allows requests over cellular networks. Set this value to [`false`](../Swift/false.md) at initialization time to restrict the default behavior.
 

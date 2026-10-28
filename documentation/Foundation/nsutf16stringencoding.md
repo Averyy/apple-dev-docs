@@ -23,7 +23,7 @@ var NSUTF16StringEncoding: UInt { get }
 NSUTF16StringEncoding
 ```
 
-#### Discussion
+## Discussion
 
 An alias for `NSUnicodeStringEncoding`.
 

@@ -24,7 +24,7 @@ var strokeStart: CGFloat { get set }
 @property (nonatomic, assign) CGFloat strokeStart;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property and [`strokeEnd`](./strokeend.md) to render a portion of the polygon. Use [`location(atPointIndex:)`](../mkmultipoint/location%28atpointindex%29.md) to get unit distance locations for point indices along the polygon.
 

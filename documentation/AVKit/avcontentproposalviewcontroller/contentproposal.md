@@ -19,7 +19,7 @@ var contentProposal: AVContentProposal? { get }
 @property (nonatomic, readonly, nullable) AVContentProposal * contentProposal;
 ```
 
-#### Discussion
+## Discussion
 
 The associated player view controller sets this property value.
 

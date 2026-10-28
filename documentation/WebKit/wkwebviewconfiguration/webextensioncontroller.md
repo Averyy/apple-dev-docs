@@ -21,7 +21,7 @@ var webExtensionController: WKWebExtensionController? { get set }
 @property (nonatomic, strong, nullable) WKWebExtensionController * webExtensionController;
 ```
 
-#### Discussion
+## Discussion
 
 The web extension controller to associate with the web view.
 

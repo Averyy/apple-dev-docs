@@ -24,7 +24,7 @@ case unreliable
 
 - [Synchronizing data during a SharePlay activity](../../synchronizing-data-during-a-shareplay-activity.md)
 
-#### Discussion
+## Discussion
 
 Use this approach when it’s okay to drop messages occasionally. Typically, you use this approach for messages you send frequently with similar information. For example, use it when the information in each new message replaces information in the preceding message.
 

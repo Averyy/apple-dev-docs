@@ -20,19 +20,19 @@ A component that drives skeletal animation on an entity using an animation graph
 struct AnimationGraphComponent
 ```
 
-#### Overview
+## Overview
 
 [`AnimationGraphComponent`](./animationgraphcomponent.md) attaches a compiled [`AnimationGraphResource`](./animationgraphresource.md) to an entity. The component evaluates the graph each frame, computes a skeletal pose by blending and transitioning between animation clips, and applies the resulting pose to the entity’s [`SkeletalPosesComponent`](./skeletalposescomponent.md).
 
 Multiple components in the same scene can reference the same resource, which lets a single graph drive many entities without duplicating its underlying data. Each component keeps its own per-instance evaluation state — animation timing, state-machine progress, and parameter values — so characters that share a graph stay independent.
 
-##### Attach a graph to an entity
+### Attach a graph to an entity
 
 ```swift
 entity.components.set(AnimationGraphComponent(graph: graphResource))
 ```
 
-##### Inspect the active graph state
+### Inspect the active graph state
 
 The component exposes the graph’s runtime state for debugging and for building tools that visualize what a character is doing. [`activeNodes`](./animationgraphcomponent/activenodes.md) returns every node that contributed to the most recent pose. To work with a single kind of node, iterate [`activeStateMachineNodes`](./animationgraphcomponent/activestatemachinenodes.md) or [`activeClipNodes`](./animationgraphcomponent/activeclipnodes.md) instead — those collections return the narrower [`AnimationGraphComponent.ActiveStateMachineNode`](./animationgraphcomponent/activestatemachinenode.md) and [`AnimationGraphComponent.ActiveClipNode`](./animationgraphcomponent/activeclipnode.md) types, which expose only the fields that apply to that node kind.
 

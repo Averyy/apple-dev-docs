@@ -24,7 +24,7 @@ var vertexBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange vertexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that the format of all vertex positions match the [`vertexFormat`](./vertexformat.md) property, and that the buffer address for the buffer range is not zero.
 

@@ -24,7 +24,7 @@ func CVMetalTextureCacheFlush(_ textureCache: CVMetalTextureCache, _ options: CV
 extern void CVMetalTextureCacheFlush(CVMetalTextureCacheRef textureCache, CVOptionFlags options);
 ```
 
-#### Discussion
+## Discussion
 
 Texture caches automatically flush unused resources when you call the [`CVMetalTextureCacheCreateTextureFromImage(_:_:_:_:_:_:_:_:_:)`](./cvmetaltexturecachecreatetexturefromimage%28_,_,_,_,_,_,_,_,_%29.md) function and on the time interval specified by [`kCVMetalTextureCacheMaximumTextureAgeKey`](./kcvmetaltexturecachemaximumtextureagekey.md). Use this method when you need fine-grained control over cache contents and memory.
 

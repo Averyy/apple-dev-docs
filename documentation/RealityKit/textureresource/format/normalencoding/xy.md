@@ -20,7 +20,7 @@ A normal map with the X and Y components of a surface normal in the tangent spac
 case xy
 ```
 
-#### Discussion
+## Discussion
 
 Each component value is between `0.0` and `1.0`.
 

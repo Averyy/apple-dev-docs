@@ -25,7 +25,7 @@ func CFCalendarGetMinimumDaysInFirstWeek(_ calendar: CFCalendar!) -> CFIndex
 extern CFIndex CFCalendarGetMinimumDaysInFirstWeek(CFCalendarRef calendar);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum number of days in the first week of `calendar`.
 

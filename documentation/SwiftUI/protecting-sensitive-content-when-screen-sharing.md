@@ -5,13 +5,13 @@
 
 Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.
 
-#### Overview
+## Overview
 
 Screen sharing and remote control features offer people useful ways to collaborate. As screen sharing becomes more common, apps that handle sensitive data — such as banking, payments, and healthcare apps — should take steps to protect content during active capture sessions.
 
 iOS and iPadOS provide a built-in API to detect when the system captures a scene. Respond to this signal and take proactive steps in your app to protect sensitive content during any capture session.
 
-#### Detect when the system captures your app’s content
+## Detect when the system captures your app’s content
 
 When a screen capture session is active — including screen recording, mirroring, or remote control — the system updates the scene’s capture state. Use the [`isSceneCaptured`](./environmentvalues/isscenecaptured.md) environment value in SwiftUI or [`UITraitCollection.sceneCaptureState`](../UIKit/uitraitcollection/scenecapturestate.md) in UIKit to observe this state. When the state changes, update your UI accordingly — for example, replacing sensitive views with redacted or placeholder content.
 
@@ -56,7 +56,7 @@ func updateContentVisibility() {
 
 > **Note**: `sceneCaptureState` doesn’t differentiate between capture types. Screen recording, AirPlay mirroring, and remote control all produce the same signal.
 
-#### Respond to capture sessions
+## Respond to capture sessions
 
 The right response depends on the sensitivity of the data your app handles and the potential impact to people if that content is exposed during a capture session. An app that displays financial account details or personal health information may warrant stronger protections than a general-purpose app. Assess the appropriate level of protection for people using your app to determine how to respond when your app detects a capture session:
 
@@ -64,7 +64,7 @@ The right response depends on the sensitivity of the data your app handles and t
 - **Hide or redact sensitive fields.** Replace account numbers, balances, card details, and passwords with placeholder text or a blur overlay. The Passwords app uses a similar pattern to protect sensitive content from screenshots.
 - **Disable high-risk actions.** Prevent fund transfers, password reveals, or other irreversible operations from completing while capture is active.
 
-#### Balance protection with usability
+## Balance protection with usability
 
 [`UITraitCollection.sceneCaptureState`](../UIKit/uitraitcollection/scenecapturestate.md) activates for all capture events, including everyday uses like recording a tutorial or mirroring to a personal Apple TV. Keep these considerations in mind when deciding how to respond:
 

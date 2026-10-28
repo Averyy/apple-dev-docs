@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int, double *, unsigned long long *, unsigned long long *) __attribute__((nonblocking)) GetZeroTimeStamp;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Retrieves the most recent zero time stamp for the device.
 

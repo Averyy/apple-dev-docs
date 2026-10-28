@@ -20,13 +20,13 @@ object Video
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `video` component to add a video to your article by specifying a video URL. Users can control playback and watch the video from inside the article. You can also include an image to display when the video is not playing. To include a video from Dailymotion, Vimeo, or YouTube, use the [`EmbedWebVideo`](./embedwebvideo.md) component instead of the `video` component.
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

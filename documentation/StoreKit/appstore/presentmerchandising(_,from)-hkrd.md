@@ -19,11 +19,11 @@ Display a merchandising view.
 static func presentMerchandising(_ kind: AppStoreMerchandisingKind, from controller: UIViewController) async throws -> AppStoreMerchandisingKind.PresentationResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the App Store merchandising presentation.
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `StoreKitError`.
 

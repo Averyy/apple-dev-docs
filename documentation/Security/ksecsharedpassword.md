@@ -23,7 +23,7 @@ let kSecSharedPassword: CFString
 extern CFStringRef const kSecSharedPassword;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary returned by the [`SecRequestSharedWebCredential(_:_:_:)`](./secrequestsharedwebcredential%28_,_,_%29.md) function includes this key to provide you with the password.
 

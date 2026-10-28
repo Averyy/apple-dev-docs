@@ -15,7 +15,7 @@ The Jaccard similarity measure.
 case jaccard
 ```
 
-#### Discussion
+## Discussion
 
 Use Jaccard similarity when the presence or absence of a user’s rating is more important than the rating itself.
 

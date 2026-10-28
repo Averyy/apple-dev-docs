@@ -25,7 +25,7 @@ var isPaused: Bool { get }
 @property (readonly, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `NSProgress` is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 

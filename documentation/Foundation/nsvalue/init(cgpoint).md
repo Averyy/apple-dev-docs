@@ -28,7 +28,7 @@ init(cgPoint point: CGPoint)
 + (NSValue *) valueWithCGPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the point information.
 

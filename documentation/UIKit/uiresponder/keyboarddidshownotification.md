@@ -23,7 +23,7 @@ class let keyboardDidShowNotification: NSNotification.Name
 extern NSNotificationName const UIKeyboardDidShowNotification;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 16.1 and later, the notification object is the [`UIScreen`](../uiscreen.md) that the keyboard appears on. In earlier versions of iOS, the notification object is `nil`.
 

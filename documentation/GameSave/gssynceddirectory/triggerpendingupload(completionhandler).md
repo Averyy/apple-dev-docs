@@ -27,7 +27,7 @@ func triggerPendingUpload() async -> Bool
 - (void) triggerPendingUploadWithCompletionHandler:(void (^)(BOOL )) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Calls the completion block with `YES` if there were pending uploads; otherwise with `NO`.
 

@@ -17,7 +17,7 @@ The number of winning postbacks isn’t valid, in the testing environment.
 static var invalidWinningPostbackCount: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A valid session has one or three winning postbacks.
 

@@ -21,7 +21,7 @@ Reads the encoded transformer and optimizer from a file.
 func readWithOptimizer(from url: URL) throws -> Self.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

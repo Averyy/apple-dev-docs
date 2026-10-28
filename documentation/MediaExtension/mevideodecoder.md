@@ -19,7 +19,7 @@ protocol MEVideoDecoder : NSObjectProtocol
 @protocol MEVideoDecoder <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides an interface for [Video Toolbox](../VideoToolbox/VideoToolbox.md) to create and interact with MediaExtension video decoders. `MEVideoDecoder` objects are always instantiated by Video Toolbox.
 
@@ -33,19 +33,19 @@ Once a user installs and runs the host app, embedded video decoder extensions be
 
 The following sections explain the video decoder life cycle and performing decoding operations.
 
-##### Creating a video decoder
+### Creating a video decoder
 
 The first time Video Toolbox opens a decoder in a process, it creates an instance of the [`MEVideoDecoderExtension`](./mevideodecoderextension.md) factory object. It then calls its [`makeVideoDecoder(codecType:videoFormatDescription:videoDecoderSpecifications:pixelBufferManager:)`](./mevideodecoderextension/makevideodecoder%28codectype,videoformatdescription,videodecoderspecifications,pixelbuffermanager%29.md) method for each decoder instance it needs. A decoder can evaluate the [`CMVideoCodecType`](../CoreMedia/cmvideocodectype.md) and [`CMVideoFormatDescription`](../CoreMedia/cmvideoformatdescription.md) that the system provides and confirm whether it can decode the specified format. If the decoder can’t decode the format, the factory routine needs to return the error [`MEError.Code.unsupportedFeature`](./meerror-swift.struct/code/unsupportedfeature.md). This sequence of events happens within [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](../VideoToolbox/vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md).
 
-##### Configuring a pixel buffer
+### Configuring a pixel buffer
 
 Once instantiated, a decoder can call back to the provided [`MEVideoDecoderPixelBufferManager`](./mevideodecoderpixelbuffermanager.md) object to notify Video Toolbox of its output [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) requirements. It can make these calls multiple times if output requirements change in response to properties receiving new values or due to observed bitstream characteristics.
 
-##### Querying and setting properties
+### Querying and setting properties
 
 Properties can receive queries or new values on the decoder at any time, before, during or after frame decode, unless otherwise noted. These calls generally correspond to [`VTSessionSetProperty(_:key:value:)`](../VideoToolbox/vtsessionsetproperty%28_,key,value%29.md) and [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](../VideoToolbox/vtsessioncopyproperty%28_,key,allocator,valueout%29.md) calls on the [`VTDecompressionSession`](../VideoToolbox/vtdecompressionsession.md) which opened the decoder. There may be cases where Video Toolbox directly sets or queries properties as well.
 
-##### Decoding frames
+### Decoding frames
 
 The framework serializes calls to [`decodeFrame(from:options:completionHandler:)`](./mevideodecoder/decodeframe%28from,options,completionhandler%29.md) and doesn’t send a new frame to the decoder until the last [`decodeFrame(from:options:completionHandler:)`](./mevideodecoder/decodeframe%28from,options,completionhandler%29.md) returns, unless decoding happens asynchronously. These calls correspond to [`VTDecompressionSessionDecodeFrame(_:sampleBuffer:flags:infoFlagsOut:outputHandler:)`](../VideoToolbox/vtdecompressionsessiondecodeframe%28_,samplebuffer,flags,infoflagsout,outputhandler%29.md) calls on the owning `VTDecompressionSession`.
 
@@ -53,7 +53,7 @@ Video decoders need to write their output frames into [CVPixelBuffer](../CoreVid
 
 If the decoder’s internal decoding queue is full and it can’t decode more frames, its [`isReadyForMoreMediaData`](./mevideodecoder/isreadyformoremediadata.md) property value returns [`false`](../Swift/false.md). It returns [`true`](../Swift/true.md) once the decoder can start accepting new frames again. This generally occurs after an earlier asynchronous frame completes.
 
-##### Handling format description changes
+### Handling format description changes
 
 If a change occurs in the format description on incoming [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) objects, [Video Toolbox](../VideoToolbox/VideoToolbox.md) calls [`canAccept(_:)`](./mevideodecoder/canaccept%28_%29.md) to confirm whether the decoder can transition to the new format description. If that method response is [`false`](../Swift/false.md), the system usually closes the decoder and creates a new instance for the changed format description. A call to [`VTDecompressionSessionCanAcceptFormatDescription(_:formatDescription:)`](../VideoToolbox/vtdecompressionsessioncanacceptformatdescription%28_,formatdescription%29.md) can trigger a call of [`canAccept(_:)`](./mevideodecoder/canaccept%28_%29.md), or Video Toolbox calls this method if it sees a format description change on incoming `CMSampleBufferRef` objects.
 

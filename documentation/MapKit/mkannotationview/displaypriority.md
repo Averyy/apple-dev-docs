@@ -24,7 +24,7 @@ var displayPriority: MKFeatureDisplayPriority { get set }
 @property (nonatomic) MKFeatureDisplayPriority displayPriority;
 ```
 
-#### Discussion
+## Discussion
 
 An annotation view with a priority of [`required`](../mkfeaturedisplaypriority/required.md) is always visible on the map, whereas other priorities may result in a hidden annotation view. Defaults to `required`.
 

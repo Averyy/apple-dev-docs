@@ -21,7 +21,7 @@ Enable no-push mode.
 func noPush(_ noPush: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating that TCP should use no-push mode (`TCP_NOPUSH`).
 

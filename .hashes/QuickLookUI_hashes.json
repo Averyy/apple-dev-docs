@@ -50,7 +50,7 @@
     },
     "https://developer.apple.com/documentation/quicklookui/qlpreviewpanel": {
       "file_path": "documentation/QuickLookUI/qlpreviewpanel.md",
-      "hash": "548ddf7f716d583ac188d1e4d2c77bc31eb6f6fd72907737a6b18eb25338778b"
+      "hash": "870a48c21900d19fd4f1895e87392bd9d4dfafe0807922fd6008774dbf768355"
     },
     "https://developer.apple.com/documentation/quicklookui/qlpreviewpanel/currentcontroller": {
       "file_path": "documentation/QuickLookUI/qlpreviewpanel/currentcontroller.md",
@@ -306,7 +306,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookui/qlpreviewpanel.json": {
       "file_path": "documentation/QuickLookUI/qlpreviewpanel.md",
-      "hash": "548ddf7f716d583ac188d1e4d2c77bc31eb6f6fd72907737a6b18eb25338778b"
+      "hash": "870a48c21900d19fd4f1895e87392bd9d4dfafe0807922fd6008774dbf768355"
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookui/qlpreviewpanel/currentcontroller.json": {
       "file_path": "documentation/QuickLookUI/qlpreviewpanel/currentcontroller.md",
@@ -515,7 +515,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 128
   }

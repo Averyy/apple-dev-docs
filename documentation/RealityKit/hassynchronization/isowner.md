@@ -21,7 +21,7 @@ A Boolean that indicates whether the calling process owns the entity.
 @preconcurrency var isOwner: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The calling process owns the entity if the value is `true`.
 

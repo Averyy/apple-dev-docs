@@ -5,7 +5,7 @@
 
 Properties that can be set or read on an instance of the audio codec.
 
-#### Overview
+## Overview
 
 These properties are used with the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) and [`AudioCodecSetProperty(_:_:_:_:)`](./audiocodecsetproperty%28_,_,_,_%29.md) functions.
 

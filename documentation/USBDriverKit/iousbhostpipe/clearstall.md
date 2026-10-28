@@ -15,11 +15,11 @@ Clears the halt condition of the pipe.
 virtual kern_return_t ClearStall(bool withRequest);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 When a bulk or interrupt USB endpoint encounters an I/O error other than a timeout, it transitions to a halted state that you must clear if you want to perform additional I/O on the endpoint. Call this method to clear the halted condition for the endpoint. This method aborts all pending I/O on the endpoint and resets its data toggle.
 

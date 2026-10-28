@@ -16,7 +16,7 @@ typealias VNAspectRatio = Float
 typedef float VNAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [float](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/doc/uid/TP30001266-float), but limited to a range of `0.0` to `1.0`, inclusive, with the default of `0.5` indicating a square image. It defines aspect ratio as the shorter dimension over the longer dimension.
 

@@ -16,7 +16,7 @@ nonisolated
 func digitalCrownAccessory(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to customize the visibility of a Digital Crown accessory `View` created with the `View/digitalCrownAccessory(_ content:)` modifier. You may want to keep an accessory visible even when the Digital Crown Indicator is not visible to indicate what scrolling the crown will do.
 

@@ -19,7 +19,7 @@ optional func webViewUnfocus(_ sender: WebView!)
 - (void) webViewUnfocus:(WebView *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method releases focus for the entire window. If you display multiple web views in a window, you might instead want to change the input focus to another view, using the [`webView(_:makeFirstResponder:)`](./webview%28_,makefirstresponder%29.md) method.
 

@@ -21,7 +21,7 @@ let QCPortAttributeMenuItemsKey: String
 extern NSString * const QCPortAttributeMenuItemsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an array of strings that are displayed in the user interface as a pop-up menu when the user double-clicks a port, as shown for the Blending input port of the Billboard patch. You can use this key only for an index port.
 

@@ -25,7 +25,7 @@ func write(to url: URL, options writeOptionsMask: NSData.WritingOptions = []) th
 - (BOOL) writeToURL:(NSURL *) url options:(NSDataWritingOptions) writeOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Discussion
+## Discussion
 
 Since at present only `file://` URLs are supported, there is no difference between this method and [`write(toFile:options:)`](./write%28tofile,options%29.md), except for the type of the first argument.
 

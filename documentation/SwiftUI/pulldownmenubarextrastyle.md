@@ -15,7 +15,7 @@ A menu bar extra style that renders its contents as a menu that pulls down from 
 struct PullDownMenuBarExtraStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`menu`](./menubarextrastyle/menu.md) to construct this style.
 

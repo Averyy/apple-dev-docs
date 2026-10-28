@@ -19,7 +19,7 @@ var controlSize: NSControl.ControlSize { get set }
 @property NSControlSize controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the rendered size of the cell and its control. For a list of possible values, see [`NSControl.ControlSize`](../nscontrol/controlsize-swift.enum.md).
 

@@ -25,7 +25,7 @@ var inputMeterLevel: Float { get }
 @property (readonly) float inputMeterLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is undefined if [`isInputMeteringEnabled`](./isinputmeteringenabled.md) is set to [`false`](../../Swift/false.md).
 

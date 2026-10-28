@@ -11,7 +11,7 @@ Track specific geographic areas of interest and render them in an AR experience.
 - iPadOS 14.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 In this sample app, the user marks spots on a map or camera feed to create a collection of anchors they view in augmented reality (AR). By rendering those anchors as virtual content in an AR view, the user can see a nearby anchor through the camera feed, move to its physical location, and continue to move to any subsequent anchors in the collection. If a virtual anchor that the user is moving toward isn’t visible in the camera feed, the user can refer to its pin in the map view and advance until the virtual anchor becomes visible.
 
@@ -25,13 +25,13 @@ For example, when the user approaches a location anchor, an app may reveal a vir
 
 > **Note**: ARKit supports geotracking only with the device’s rear camera.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 The sample app demonstrates geotracking coaching, which requires iOS 15. The Xcode project defines a deployment target of iOS 15, accordingly.
 
 Geotracking requires a device with A12 Bionic chip or later, and cellular (GPS) capability. Set the project’s run destination to a device. ARKit doesn’t support iOS Simulator.
 
-#### Ensure device support
+## Ensure device support
 
 At the application entry point (see the sample project’s `AppDelegate.swift`), the sample app prevents running an unsupported configuration by checking whether the device supports geotracking.
 
@@ -44,11 +44,11 @@ if !ARGeoTrackingConfiguration.isSupported {
 
 If the device doesn’t support geotracking, the sample project stops. Optionally, an app can present an error message and continue the session at a limited capacity without geotracking.
 
-#### Display an AR view and map view
+## Display an AR view and map view
 
 As an AR app, the sample project renders location anchors using an [`ARView`](../RealityKit/arview.md). To reinforce the correspondence between geographic locations and positions in the session’s local space, the sample project also displays a map view [`MKMapView`](../MapKit/mkmapview.md) that marks the anchors from a top-down perspective. The app displays both views simultaneously by using a stack view ([`UIStackView`](../UIKit/uistackview.md)) with the camera feed on top. See the sample’s `View Controller Scene` within the project’s `Main.storyboard`.
 
-#### Check availability and run a session
+## Check availability and run a session
 
 To place location anchors with precision, geotracking requires a better understanding of the user’s geographic location than is possible with GPS alone. Based on a particular GPS coordinate, ARKit downloads batches of imagery that depict the physical environment in that area and assist the session with determining the user’s precise geographic location.
 
@@ -81,7 +81,7 @@ arView.session.run(geoTrackingConfig, options: .removeExistingAnchors)
 
 > **Note**: If geotracking is unavailable in the user’s current location, an app can suggest an alternative area if [`checkAvailability(at:completionHandler:)`](./argeotrackingconfiguration/checkavailability%28at,completionhandler%29.md) returns `true` for a nearby location.
 
-#### Coach the User for Geotracking Status
+## Coach the User for Geotracking Status
 
 To begin a geotracking session, the framework undergoes several geotracking states. At any point, the session can require action from the user to progress to the next state. To instruct the user on what to do, the sample project uses a [`ARCoachingOverlayView`](./arcoachingoverlayview.md) with the [`ARCoachingOverlayView.Goal.geoTracking`](./arcoachingoverlayview/goal-swift.enum/geotracking.md) goal.
 
@@ -92,7 +92,7 @@ func setupCoachingOverlay() {
     coachingOverlay.goal = .geoTracking
 ```
 
-#### Instruct the user based on geotracking state
+## Instruct the user based on geotracking state
 
 After the app localizes and begins a geotracking session, the sample app monitors the geotracking state and instructs the user by presenting text with a label.
 
@@ -108,7 +108,7 @@ While the session runs, the status reason [`ARGeoTrackingStatus.StateReason.notA
 case .notAvailableAtLocation: return "Geotracking is unavailable here. Please return to your previous location to continue"
 ```
 
-#### Coach the user as the session runs
+## Coach the user as the session runs
 
 A geotracking session maps geographic coordinates to ARKit’s world-tracking local space, which requires basic world-tracking support. If environmental circumstances impair the device’s world-tracking condition, the geotracking coaching overlay alerts the user and displays instructions to resolve the problem.
 
@@ -138,7 +138,7 @@ func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayVi
 }
 ```
 
-#### Create an anchor when the user taps the map
+## Create an anchor when the user taps the map
 
 The sample project acquires the user’s geographic coordinate (`CLLocationCoordinate2D`) from the map view at the screen location where the user tapped.
 
@@ -180,7 +180,7 @@ let anchorIndicator = AnchorIndicator(center: geoAnchor.coordinate)
 self.mapView.addOverlay(anchorIndicator)
 ```
 
-#### Create an anchor when the user taps the ar view
+## Create an anchor when the user taps the ar view
 
 When the user taps the camera feed, the sample project casts a ray at the screen-tap location to determine its intersection with a real-world surface.
 
@@ -198,7 +198,7 @@ Then, the sample project creates a location anchor with the result. Because the 
 
 > **Note**: For more on raycasting, see [Environmental Analysis](./environmental-analysis.md).
 
-#### Assess geotracking accuracy
+## Assess geotracking accuracy
 
 To ensure the best possible user experience, an app must monitor and react to the geotracking [`accuracy`](./argeotrackingstatus/accuracy-swift.property.md). When possible, the sample project displays the accuracy as part of its state messaging to the user. The session populates accuracy in its [`geoTrackingStatus`](./arframe/geotrackingstatus.md) in state [`ARGeoTrackingStatus.State.localized`](./argeotrackingstatus/state-swift.enum/localized.md).
 
@@ -209,7 +209,7 @@ if geoTrackingStatus.state == .localized {
 
 An app renders location anchors using an asset that’s less exact if geotracking is off by a small distance, such as when accuracy is [`ARGeoTrackingStatus.Accuracy.low`](./argeotrackingstatus/accuracy-swift.enum/low.md). For example, the sample app renders a location anchor as a large ball several meters in the air rather than an arrow that rests its point on a real-world surface.
 
-#### Center the map as the user moves
+## Center the map as the user moves
 
 The sample project uses updates from [Core Location](../CoreLocation/CoreLocation.md) to center the user in the map view. When the user moves around, Core Location notifies the delegate of any updates in geographic position. The sample project monitors this event by implementing the relevant callback.
 

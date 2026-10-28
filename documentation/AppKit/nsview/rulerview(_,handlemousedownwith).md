@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, handleMouseDownWith event: NSEvent)
 - (void) rulerView:(NSRulerView *) ruler handleMouseDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 `theEvent` is the mouse-down event that triggered the message. The client view can implement this method to perform an action such as adding a new marker using `NSRulerMarkerClientViewDelegation` or adding layout guidelines.
 

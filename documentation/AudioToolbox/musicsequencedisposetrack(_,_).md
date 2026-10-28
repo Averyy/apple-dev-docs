@@ -24,7 +24,7 @@ func MusicSequenceDisposeTrack(_ inSequence: MusicSequence, _ inTrack: MusicTrac
 extern OSStatus MusicSequenceDisposeTrack(MusicSequence inSequence, MusicTrack inTrack);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

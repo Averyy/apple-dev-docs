@@ -19,7 +19,7 @@ static let textFinderCaseInsensitiveKey: NSPasteboard.PasteboardType.TextFinderO
 extern NSPasteboardTypeTextFinderOptionKey const NSTextFinderCaseInsensitiveKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be an [`NSValue`](../../../../Foundation/nsvalue.md) object containing a Boolean value. The value [`true`](../../../../Swift/true.md) indicates a case-insensitive search; [`false`](../../../../Swift/false.md) indicates a case-sensitive search.
 

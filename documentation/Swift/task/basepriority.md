@@ -23,7 +23,7 @@ static var basePriority: TaskPriority? { get }
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 If you access this property outside of any task, this returns nil
 

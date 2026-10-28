@@ -14,7 +14,7 @@
 kFSEventStreamCreateFlagUseCFTypes = 0x00000001
 ```
 
-#### Discussion
+## Discussion
 
 The framework will invoke your callback function with CF types rather than raw C types (i.e., a CFArrayRef of CFStringRefs, rather than a raw C array of raw C string pointers). See FSEventStreamCallback.
 

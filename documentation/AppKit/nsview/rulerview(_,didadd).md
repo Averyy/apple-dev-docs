@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, didAdd marker: NSRulerMarker)
 - (void) rulerView:(NSRulerView *) ruler didAddMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 The client can take whatever action it needs based on this message, such as adding a new tab stop to the selected paragraph or creating a layout guideline.
 

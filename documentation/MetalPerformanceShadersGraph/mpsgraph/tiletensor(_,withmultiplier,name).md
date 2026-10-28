@@ -24,11 +24,11 @@ func tileTensor(_ tensor: MPSGraphTensor, withMultiplier multiplier: [NSNumber],
 - (MPSGraphTensor *) tileTensor:(MPSGraphTensor *) tensor withMultiplier:(MPSShape *) multiplier name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Creates a tensor which contains multiple copies of the input tensor along each dimension of the tensor.
 

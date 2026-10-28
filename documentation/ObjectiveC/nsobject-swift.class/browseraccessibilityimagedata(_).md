@@ -22,11 +22,11 @@ func browserAccessibilityImageData(_ attributes: [AnyHashable : Any]) -> CVPixel
 - (CVPixelBufferRef) browserAccessibilityImageData:(NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A CVPixelBuffer containing the image pixel data, or NULL if this element does not represent an image or the requested pixel format is unsupported. The caller is responsible for releasing the returned pixel buffer.
 
-#### Discussion
+## Discussion
 
 Returns image pixel data for this element as a CVPixelBuffer.
 

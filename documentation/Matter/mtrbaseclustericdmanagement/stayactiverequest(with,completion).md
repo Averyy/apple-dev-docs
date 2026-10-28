@@ -29,7 +29,7 @@ func stayActiveRequest(with params: MTRICDManagementClusterStayActiveRequestPara
 - (void) stayActiveRequestWithParams:(MTRICDManagementClusterStayActiveRequestParams *) params completion:(void (^)(MTRICDManagementClusterStayActiveResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows a client to request that the server stays in active mode for at least a given time duration (in milliseconds) from when this command is received.
 

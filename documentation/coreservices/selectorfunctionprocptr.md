@@ -16,11 +16,11 @@ Defines a pointer to a selector callback function that returns information assoc
 typedef OSErr (*SelectorFunctionProcPtr)(OSType selector, SInt32 *response);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 Your selector function places the requested information in the `response` parameter and returns a result code. If the information is not available, the selector function returns the appropriate error code, which the `Gestalt` function returns as its function result.
 

@@ -23,7 +23,7 @@ static var linkGraphs: MLCGraphCompilationOptions { get }
 MLCGraphCompilationOptionsLinkGraphs
 ```
 
-#### Discussion
+## Discussion
 
 Include this option when you link together one or more sub-graphs when executing the forward, gradient, and optimizer update. For example, if the full computation graph includes a layer that the framework doesn’t support, you’ll need to create multiple sub-graphs and link them together using `linkWithGraphs`. When doing so, include this option when you call `compileWithOptions` for graphs you want to link together.
 

@@ -18,7 +18,7 @@ constructor(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This example shows two image annotations: one with a minimally defined image, and one with more options filled in:
 

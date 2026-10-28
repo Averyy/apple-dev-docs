@@ -23,7 +23,7 @@ var presentationController: UIPresentationController? { get }
 @property (nonatomic, readonly, nullable) UIPresentationController * presentationController;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller is managed by a presentation controller, this property contains that object. This property is `nil` if the view controller isn’t managed by a presentation controller.
 

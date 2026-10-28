@@ -29,7 +29,7 @@ protocol MTLCommandQueue : NSObjectProtocol, Sendable
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Overview
+## Overview
 
 A command queue maintains an ordered list of command buffers. You use a command queue to:
 

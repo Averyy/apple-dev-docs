@@ -24,7 +24,7 @@ func JSObjectGetTypedArrayByteOffset(_ ctx: JSContextRef!, _ object: JSObjectRef
 size_t JSObjectGetTypedArrayByteOffset(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The byte offset of the typed array object or `0` if the object isn’t a typed array object.
 

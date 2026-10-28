@@ -15,7 +15,7 @@ Initializes a pointer style with a given shape.
 static func shape(_ shape: some Shape, eoFill: Bool = false, size: CGSize) -> PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 For guidance on using a custom pointer, refer to [Pointing devices](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 

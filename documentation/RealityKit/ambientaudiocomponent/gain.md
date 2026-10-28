@@ -20,7 +20,7 @@ The overall level for all sounds emitted from an entity.
 var gain: Audio.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In relative Decibels, in the range  `-.infinity ... .zero` where `.zero` is the default.
 

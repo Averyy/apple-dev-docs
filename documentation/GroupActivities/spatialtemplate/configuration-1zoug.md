@@ -15,7 +15,7 @@ Information a spatial template uses to configure itself.
 var configuration: SpatialTemplateConfiguration { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a custom configuration at initialization time, the system provides one automatically.
 

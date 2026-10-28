@@ -21,7 +21,7 @@ The canonical combining class of the scalar.
 var canonicalCombiningClass: Unicode.CanonicalCombiningClass { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Canonical_Combining_Class” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

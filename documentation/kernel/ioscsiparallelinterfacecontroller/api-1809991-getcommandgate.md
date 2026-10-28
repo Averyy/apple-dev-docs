@@ -12,11 +12,11 @@ IOCommandGate * GetCommandGate (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to IOCommandGate.
 
-#### Overview
+## Overview
 
 Accessor to get an IOCommandGate associated with the workloop.
 

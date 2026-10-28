@@ -25,7 +25,7 @@ func setAlpha(_ alpha: CGFloat)
 extern void CGContextSetAlpha(CGContextRef c, CGFloat alpha);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the alpha value parameter for the specified graphics context. To clear the contents of the drawing canvas, use [`clear(_:)`](./clear%28_%29.md).
 

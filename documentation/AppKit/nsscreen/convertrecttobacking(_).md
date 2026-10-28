@@ -19,7 +19,7 @@ func convertRectToBacking(_ rect: NSRect) -> NSRect
 - (NSRect) convertRectToBacking:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle converted to the device pixel aligned coordinates system of the screen.
 

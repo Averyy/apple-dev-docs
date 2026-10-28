@@ -19,7 +19,7 @@ func CMSDecoderCopyDetachedContent(_ cmsDecoder: CMSDecoder, _ detachedContentOu
 OSStatus CMSDecoderCopyDetachedContent(CMSDecoderRef cmsDecoder, CFDataRef*detachedContentOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

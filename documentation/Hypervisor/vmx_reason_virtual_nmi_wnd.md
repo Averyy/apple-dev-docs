@@ -19,7 +19,7 @@ var VMX_REASON_VIRTUAL_NMI_WND: Int { get }
 VMX_REASON_VIRTUAL_NMI_WND
 ```
 
-#### Discussion
+## Discussion
 
 At the beginning of an instruction, there was no virtual-NMI blocking. Events weren’t blocked by MOV SS; and the “NMI-window exiting” VM-execution control was 1.
 

@@ -5,7 +5,7 @@
 
 Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
-#### Overview
+## Overview
 
 In iPadOS 16 and later, you can develop drivers that run on macOS and iPadOS using DriverKit. The DriverKit frameworks provide a safe and secure approach to creating drivers for external USB and Thunderbolt devices that people can connect to their iPad.
 
@@ -17,7 +17,7 @@ iPadOS 16 supports the core [DriverKit](./DriverKit.md) framework, as well as th
 
 > **Note**:  DriverKit on iPadOS requires an iPad with an M-series chip.
 
-##### Add a DriverKit target to your Xcode project
+### Add a DriverKit target to your Xcode project
 
 If you’re creating a new app in Xcode, use the Multiplatform App template when you create your project in Xcode. The app you create is what people use to install and update your driver on their macOS and iPadOS devices. To add a driver to your project, add a new target to your project by choosing DriverKit from the tab bar, and select the Driver target.
 
@@ -27,7 +27,7 @@ If you already have a DriverKit project for macOS, you can support iPadOS by edi
 
 ![The Supported Destinations section of an app target’s General tab. The list shows two destinations: iPad (whose associated SDK is iOS) and Mac (whose associated SDK is macOS).](https://developer.apple.com/tutorials/images/com.apple.driverkit/media-4034747@2x.png)
 
-##### Install a driver
+### Install a driver
 
 On macOS, your host app uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install a driver onto the host system. On iPadOS, this framework is absent, so this step is unneccessary. If you’re writing a driver to run on both platforms, conditionalize your app code so you only call [System Extensions](../SystemExtensions/SystemExtensions.md) on macOS.
 
@@ -46,7 +46,7 @@ On iPadOS, there are two locations in the Settings app for managing drivers:
 
 After receiving permission, the driver runs on-demand. For example, a driver for an audio interface only runs when someone connects that hardware to their device.
 
-##### Allow user clients to attach to your driver
+### Allow user clients to attach to your driver
 
 Some apps need to communicate with a running driver. The sample code project, [Communicating between a DriverKit extension and a client app](./communicating-between-a-driverkit-extension-and-a-client-app.md), provides an example of how to do this.
 

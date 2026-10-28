@@ -19,7 +19,7 @@ The app terminated abnormally, typically due to an uncaught exception or call to
 static let abnormal: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`abnormalTerminationCount`](../../foregroundterminationmetric/abnormalterminationcount.md) and [`abnormalTerminationCount`](../../backgroundterminationmetric/abnormalterminationcount.md).
 

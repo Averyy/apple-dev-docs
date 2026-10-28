@@ -12,11 +12,11 @@ virtual IOReturn getHardwareAddress(
  IOEthernetAddress *addrP) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error return code otherwise.
 
-#### Overview
+## Overview
 
 Ethernet drivers must implement this method, by reading the address from hardware and writing it to the buffer provided. This method is called from the workloop context.
 

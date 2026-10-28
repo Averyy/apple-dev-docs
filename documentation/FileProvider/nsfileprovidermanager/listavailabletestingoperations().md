@@ -23,7 +23,7 @@ func listAvailableTestingOperations() throws -> [any NSFileProviderTestingOperat
 - (NSArray<id<NSFileProviderTestingOperation>> *) listAvailableTestingOperationsWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Before calling this method, you must set the domain’s [`testingModes`](../nsfileproviderdomain/testingmodes-swift.property.md) property to include the [`interactive`](../nsfileproviderdomain/testingmodes-swift.struct/interactive.md) value.
 

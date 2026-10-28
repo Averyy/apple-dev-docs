@@ -28,7 +28,7 @@ Available when `Element` conforms to `MLDataValueConvertible`.
 func map<T>(_ lazyTransform: @escaping (Element) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new column typed to the return type of `lazyTransform`.
 

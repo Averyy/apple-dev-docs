@@ -25,11 +25,11 @@ func contains(_ anObject: ObjectType?) -> Bool
 - (BOOL) containsObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the hash table contains `anObject`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The equality test used depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 

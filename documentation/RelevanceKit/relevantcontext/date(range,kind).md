@@ -21,11 +21,11 @@ Tells the system a widget is relevant for a known date range and provides an add
 static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 > **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../../WidgetKit/widget-suggestions-in-smart-stacks.md).
 

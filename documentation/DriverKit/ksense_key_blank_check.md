@@ -16,7 +16,7 @@
 kSENSE_KEY_BLANK_CHECK
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a blank check condition.
 

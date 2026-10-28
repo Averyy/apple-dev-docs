@@ -24,11 +24,11 @@ init!(newArrayIn context: JSContext!)
 + (JSValue *) valueWithNewArrayInContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 An empty JavaScript array value.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to declaring an empty array literal `[]` or using the `new Array()` syntax in JavaScript.
 

@@ -19,7 +19,7 @@ case changeCleared
 NSChangeCleared
 ```
 
-#### Discussion
+## Discussion
 
 The document has been synchronized with its file or file package. For example, [`saveToURL:ofType:forSaveOperation:error:`](../savetourl_oftype_forsaveoperation_error_.md) passes this value for a successful [`NSDocument.SaveOperationType.saveOperation`](../saveoperationtype/saveoperation.md) or [`NSDocument.SaveOperationType.saveAsOperation`](../saveoperationtype/saveasoperation.md). The [`revertToSaved(_:)`](../reverttosaved%28_%29.md) method does too.
 

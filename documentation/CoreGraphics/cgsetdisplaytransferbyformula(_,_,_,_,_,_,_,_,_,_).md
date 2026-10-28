@@ -20,11 +20,11 @@ func CGSetDisplayTransferByFormula(_ display: CGDirectDisplayID, _ redMin: CGGam
 extern CGError CGSetDisplayTransferByFormula(CGDirectDisplayID display, CGGammaValue redMin, CGGammaValue redMax, CGGammaValue redGamma, CGGammaValue greenMin, CGGammaValue greenMax, CGGammaValue greenGamma, CGGammaValue blueMin, CGGammaValue blueMax, CGGammaValue blueGamma);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 This function uses the specified parameter values to compute a gamma correction table for the specified display. The values in the table are computed by sampling the following gamma transfer formula for a range of indices from 0 to 1:
 

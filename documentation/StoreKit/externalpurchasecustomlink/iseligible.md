@@ -25,7 +25,7 @@ static var isEligible: Bool { get async }
 
 - [Testing transactions that use custom link tokens](../testing-transactions-that-use-custom-link-tokens.md)
 
-#### Discussion
+## Discussion
 
 Check this value if your app configures any of the following entitlements:
 

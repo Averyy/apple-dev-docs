@@ -24,11 +24,11 @@ func MTAudioProcessingTapCreate(_ allocator: CFAllocator?, _ callbacks: UnsafePo
 extern OSStatus MTAudioProcessingTapCreate(CFAllocatorRef allocator, const MTAudioProcessingTapCallbacks *callbacks, MTAudioProcessingTapCreationFlags flags, MTAudioProcessingTapRef*tapOut);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Overview
+## Overview
 
 The processing tap will then be used to process decoded data. The processing is performed on audio either before or after any effects or other processing (varispeed, etc) is applied by the audio queue.
 

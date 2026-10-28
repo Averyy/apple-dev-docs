@@ -19,7 +19,7 @@ enum CacheMode
 enum NSImageCacheMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Set the caching policy using the [`cacheMode`](./cachemode-swift.property.md) property.
 

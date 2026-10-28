@@ -29,7 +29,7 @@ var fontSize: CGFloat { get set }
 
 - [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 The default font size is 32 points.
 

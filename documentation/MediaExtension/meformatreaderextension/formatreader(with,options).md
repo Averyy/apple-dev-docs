@@ -20,7 +20,7 @@ func formatReader(with primaryByteSource: MEByteSource, options: MEFormatReaderI
 - (id<MEFormatReader>) formatReaderWithByteSource:(MEByteSource *) primaryByteSource options:(MEFormatReaderInstantiationOptions *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new format reader.
 

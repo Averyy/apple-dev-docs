@@ -21,7 +21,7 @@ final func requestInlineAppInstallation(_ request: AppLibrary.InstallationReques
 
 - [Distributing your app from your website](../distributing-your-app-from-your-website.md)
 
-#### Discussion
+## Discussion
 
 The system verifies that the app to install meets the following requirements:
 

@@ -25,7 +25,7 @@ var hazardTrackingMode: MTLHazardTrackingMode { get }
 @property (readonly) MTLHazardTrackingMode hazardTrackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be either [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md) or [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md).
 

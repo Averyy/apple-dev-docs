@@ -16,11 +16,11 @@ Obtains the direction for this IOHIDDeviceTransactionInterface instance.
 IOReturn (*getDirection)(void *self, IOHIDTransactionDirectionType *pDirection);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Direction constants are declared in IOHIDTransactionDirectionType.
 

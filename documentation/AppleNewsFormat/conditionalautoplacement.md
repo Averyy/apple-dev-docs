@@ -19,11 +19,11 @@ object ConditionalAutoPlacement
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalAutoPlacement` object to define an array of conditional automatic placement properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalAutoPlacement` overrides the value of the same property if defined in the parent `AdvertisementAutoPlacement` object. See [`AdvertisementAutoPlacement`](./advertisementautoplacement.md).
 
-##### Example
+### Example
 
 ```json
 {

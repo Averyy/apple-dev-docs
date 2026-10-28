@@ -18,7 +18,7 @@ var FF_TRUNCATEDANDRESTARTED: HRESULT { get }
 #define FF_TRUNCATEDANDRESTARTED
 ```
 
-#### Discussion
+## Discussion
 
 Equal to FF_EFFECTRESTARTED | FF_TRUNCATED.
 

@@ -5,7 +5,7 @@
 
 Reference symbols from the legacy iAd framework.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  iAd was a legacy framework that integrates with [Apple Ads](../apple_ads/apple_ads.md) campaigns. iAd technology is deprecated in macOS and iOS. Use the [AdServices](../AdServices/AdServices.md) framework for current attribution integration with the [Apple Ads](../apple_ads/apple_ads.md) Campaign Management API.
 

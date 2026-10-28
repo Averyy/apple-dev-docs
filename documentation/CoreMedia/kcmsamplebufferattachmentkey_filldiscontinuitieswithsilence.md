@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_FillDiscontinuitiesWithSilence: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_FillDiscontinuitiesWithSilence;
 ```
 
-#### Discussion
+## Discussion
 
 If a sample buffer enters a buffer queue and the presentation time stamp between the        previous buffer and the buffer with this attachment are discontiguous, handle the        discontinuity by generating silence for the time difference.
 

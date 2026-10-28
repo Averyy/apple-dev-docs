@@ -19,7 +19,7 @@ The key to the offset for the text shadow in a text attributes dictionary.
 extern NSString * const UITextAttributeTextShadowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`NSValue`](../Foundation/nsvalue.md) wrapping a [`UIOffset`](./uioffset.md) struct.
 

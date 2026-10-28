@@ -23,7 +23,7 @@ optional func splitViewController(_ svc: UISplitViewController, willHide column:
 - (void) splitViewController:(UISplitViewController *) svc willHideColumn:(UISplitViewControllerColumn) column;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

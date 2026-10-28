@@ -15,11 +15,11 @@ virtual IOReturn controllerWillChangePowerState(
  IOService *policyMaker);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns kIOReturnSuccess.
 
-#### Overview
+## Overview
 
 If the controller is about to transition to an unusable state, and it is currently enabled, then the disable() method on the controller is called.
 

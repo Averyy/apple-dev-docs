@@ -20,11 +20,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An `SBObject` object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 Scripting Bridge does not actually create an object in the target application until you add the object returned from this method to an element array ([`SBElementArray`](../sbelementarray.md)).
 

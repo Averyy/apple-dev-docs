@@ -19,7 +19,7 @@ static let uppercaseRoman: NSTextList.MarkerFormat
 extern NSTextListMarkerFormat const NSTextListMarkerUppercaseRoman;
 ```
 
-#### Discussion
+## Discussion
 
 Uppercase Roman numeral markers follow the pattern I, II, III, IV, and so on.
 

@@ -23,7 +23,7 @@ var isDoubleSided: Bool { get set }
 @property (nonatomic, getter=isDoubleSided) BOOL doubleSided;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`false`](../../Swift/false.md).
 

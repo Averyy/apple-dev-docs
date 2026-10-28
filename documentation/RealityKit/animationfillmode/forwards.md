@@ -20,7 +20,7 @@ An option that freezes the last frame of the animation until it stops.
 static let forwards: AnimationFillMode
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you increase a hand-waving animation’s duration one second by setting [`trimEnd`](../sampledanimation/trimend.md) to [`duration`](../sampledanimation/duration.md) + `1.0`, a [`fillMode`](../sampledanimation/fillmode.md) of `forwards` determines that the hand waves and then freezes on its final animation frame for one second before disappearing.
 

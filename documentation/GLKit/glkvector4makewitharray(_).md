@@ -22,11 +22,11 @@ func GLKVector4MakeWithArray(_ values: UnsafeMutablePointer<Float>!) -> GLKVecto
 static GLKVector4 GLKVector4MakeWithArray(float values[4]);
 ```
 
-#### Return Value
+## Return Value
 
 The array
 
-#### Discussion
+## Discussion
 
 An initialized vector.
 

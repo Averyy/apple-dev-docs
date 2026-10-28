@@ -25,7 +25,7 @@ func objc_copyClassNamesForImage(_ image: UnsafePointer<CChar>, _ outCount: Unsa
 extern const char **objc_copyClassNamesForImage(const char *image, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of C strings representing all of the class names within the specified library or framework.
 

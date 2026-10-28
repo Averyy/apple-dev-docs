@@ -17,7 +17,7 @@ Resolves an alias record obtained from a Finder alias file.
 OSErr FSFollowFinderAlias(FSRef *fromFile, AliasHandle alias, Boolean logon, FSRef *target, Boolean *wasChanged);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

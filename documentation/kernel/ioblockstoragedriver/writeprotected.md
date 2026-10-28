@@ -9,7 +9,7 @@
 bool _writeProtected;
 ```
 
-#### Overview
+## Overview
 
 True if the media is write-protected; False if not.
 

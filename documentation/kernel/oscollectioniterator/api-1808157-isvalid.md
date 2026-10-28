@@ -11,7 +11,7 @@ Checks that the collection hasn't been modified during iteration.
 virtual bool isValid();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the iterator is valid for continued use, `false` otherwise (typically because the iteration context has been modified).
 

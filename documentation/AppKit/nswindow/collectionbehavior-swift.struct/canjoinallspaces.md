@@ -19,7 +19,7 @@ static var canJoinAllSpaces: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorCanJoinAllSpaces
 ```
 
-#### Discussion
+## Discussion
 
 The menu bar behaves this way.
 

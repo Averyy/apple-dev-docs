@@ -27,7 +27,7 @@ Available when `Output` is `()`.
 
 - [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Discussion
+## Discussion
 
 Use `Void` inputs and outputs when you want to signal that an event has occurred, but don’t need to send the event itself.
 

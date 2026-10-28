@@ -24,7 +24,7 @@ class MDLAreaLight
 @interface MDLAreaLight : MDLPhysicallyPlausibleLight
 ```
 
-#### Overview
+## Overview
 
 Unlike other light sources that illuminate a scene from a single point or direction, an area light has a specific shape. The shape of an area light is a two-dimensional figure in the xy-plane of the light’s local coordinate space, and its illumination is directed in the negative z-axis direction (spreading out from that direction according to the inherited [`innerConeAngle`](./mdlphysicallyplausiblelight/innerconeangle.md) and [`outerConeAngle`](./mdlphysicallyplausiblelight/outerconeangle.md) properties).
 

@@ -20,7 +20,7 @@ Returns a command that runs when any of its output files are needed by the build
 case buildCommand(displayName: String?, executable: URL, arguments: [String], environment: [String : String] = [:], inputFiles: [URL] = [], outputFiles: [URL] = [])
 ```
 
-#### Discussion
+## Discussion
 
 An output file is out-of-date if it doesn’t exist, or if any input files have changed since the command was last run.
 

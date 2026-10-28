@@ -5,7 +5,7 @@
 
 Type aliases representing the concrete type that a literal takes when no other type information is provided.
 
-#### Overview
+## Overview
 
 This example declares the `numberOfCookies` constant, using an integer literal to express its value:
 

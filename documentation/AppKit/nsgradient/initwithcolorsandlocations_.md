@@ -15,11 +15,11 @@ Initializes a newly allocated gradient object with a comma-separated list of arg
 - (instancetype) initWithColorsAndLocations:(NSColor *) firstColor;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSGradient` object.
 
-#### Discussion
+## Discussion
 
 Optionally pass a comma-separated list of alternating `NSColor` objects and location arguments (specified as `CGFloat` values). The first value after `firstColor` must be a location. Each location value must be between 0.0 and 1.0. The list must be `nil`-terminated.
 

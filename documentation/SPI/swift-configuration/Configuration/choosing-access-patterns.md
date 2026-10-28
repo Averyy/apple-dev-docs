@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Learn how to select the right method for reading configuration values based on your needs.
 
-#### Overview
+## Overview
 
 Swift Configuration provides three access patterns for retrieving configuration values, each optimized for different use cases and performance requirements.
 
@@ -22,7 +22,7 @@ The three access patterns are:
 
 > 💡 **Tip**: Start with the “get” pattern, and only explore “fetch” and “watch” patterns if needed.
 
-##### Get: Synchronous local access
+### Get: Synchronous local access
 
 The “get” pattern provides immediate, synchronous access to configuration values that are already available in memory. This is the fastest and most commonly used access pattern.
 
@@ -36,7 +36,7 @@ let timeout = config.int(forKey: "http.timeout", default: 30)
 let apiKey = try config.requiredString(forKey: "api.key", isSecret: true)
 ```
 
-###### When to use
+#### When to use
 
 Use the “get” pattern when:
 
@@ -46,13 +46,13 @@ Use the “get” pattern when:
 - **Startup configuration**: Reading values during application initialization.
 - **Request handling**: Accessing configuration in hot code paths where async calls would add latency.
 
-###### Behavior characteristics
+#### Behavior characteristics
 
 - Returns the currently cached value from the provider.
 - No network or I/O operations occur during the call.
 - Values may become stale if the underlying data source changes and you use either a non-reloading provider or one with a long reload interval.
 
-##### Fetch: Asynchronous fresh access
+### Fetch: Asynchronous fresh access
 
 The “fetch” pattern asynchronously retrieves the most current value from the authoritative data source, ensuring you always get up-to-date configuration.
 
@@ -76,7 +76,7 @@ let dbConnectionString = try await config.fetchRequiredString(
 )
 ```
 
-###### When to use
+#### When to use
 
 Use the “fetch” pattern when:
 
@@ -86,14 +86,14 @@ Use the “fetch” pattern when:
 - **Setup operations**: Configuring long-lived resources like database connections where one-time overhead isn’t a concern, and the improved freshness is important.
 - **Administrative operations**: Fetching current settings for management interfaces.
 
-###### Behavior characteristics
+#### Behavior characteristics
 
 - Always contacts the authoritative data source.
 - May involve network calls, file system access, or database queries.
 - Providers may cache the fetched value for subsequent “get” calls, but don’t have to.
 - Throws an error if the provider fails to reach the source.
 
-##### Watch: Reactive continuous updates
+### Watch: Reactive continuous updates
 
 The “watch” pattern provides an async sequence of configuration updates, allowing you to react to changes in real-time. This is ideal for long-running services that need to adapt to configuration changes without restarting.
 
@@ -111,7 +111,7 @@ try await config.watchInt(forKey: "http.timeout", default: 30) { updates in
 }
 ```
 
-###### When to use
+#### When to use
 
 Use the “watch” pattern when:
 
@@ -121,7 +121,7 @@ Use the “watch” pattern when:
 - **Resource management**: Adjusting timeouts, limits, or thresholds dynamically.
 - **A/B testing**: Updating experimental parameters in real-time.
 
-###### Behavior characteristics
+#### Behavior characteristics
 
 - Immediately emits the initial value, then subsequent updates.
 - Continues monitoring until you cancel the task.
@@ -129,11 +129,11 @@ Use the “watch” pattern when:
 
 For details on reloading providers, check out [Using reloading providers](./using-reloading-providers.md).
 
-##### Using configuration context
+### Using configuration context
 
 All access patterns support configuration context, which provides additional metadata to help providers return more specific values. Context is particularly useful with the “fetch” and “watch” patterns when working with dynamic or environment-aware providers.
 
-###### Filter watch updates using context
+#### Filter watch updates using context
 
 ```swift
 let context: [String: ConfigContextValue] = [
@@ -167,31 +167,31 @@ try await config.watchInt(
 }
 ```
 
-##### Summary of performance considerations
+### Summary of performance considerations
 
-###### Get pattern performance
+#### Get pattern performance
 
 - **Fastest**: No async overhead, immediate return.
 - **Memory usage**: Minimal, uses cached values.
 - **Best for**: Request handling, hot code paths, startup configuration.
 
-###### Fetch pattern performance
+#### Fetch pattern performance
 
 - **Moderate**: Async overhead plus data source access time.
 - **Network dependent**: Performance varies with provider implementation.
 - **Best for**: Infrequent access, setup operations, administrative tasks.
 
-###### Watch pattern performance
+#### Watch pattern performance
 
 - **Background monitoring**: Continuous resource usage for monitoring.
 - **Event-driven**: Efficient updates only when values change.
 - **Best for**: Long-running services, dynamic configuration, feature toggles.
 
-##### Error handling strategies
+### Error handling strategies
 
 Each access pattern handles errors differently:
 
-###### Get pattern errors
+#### Get pattern errors
 
 ```swift
 // Returns nil or default value for missing/invalid config
@@ -205,7 +205,7 @@ do {
 }
 ```
 
-###### Fetch pattern errors
+#### Fetch pattern errors
 
 ```swift
 // All fetch methods propagate provider and conversion errors
@@ -216,7 +216,7 @@ do {
 }
 ```
 
-###### Watch pattern errors
+#### Watch pattern errors
 
 ```swift
 // Errors appear in the async sequence
@@ -231,7 +231,7 @@ try await config.watchRequiredInt(forKey: "port") { updates in
 }
 ```
 
-##### Best practices
+### Best practices
 
 1. **Choose based on use case**: Use “get” for performance-critical paths, “fetch” for freshness, and “watch” for hot reloading.
 2. **Handle errors appropriately**: Design error handling strategies that match your application’s resilience requirements.

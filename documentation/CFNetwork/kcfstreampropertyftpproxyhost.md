@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPProxyHost: CFString
 extern CFStringRef const kCFStreamPropertyFTPProxyHost;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Proxy Host stream property key or an FTP Proxy dictionary key for set and copy operations. The value of this property is a CFString containing the host name of a proxy server. This property can be set and copied individually or via a CFDictionary. This property is the same as the `kSCPropNetProxiesFTPProxy` property defined in `SCSchemaDefinitions.h`.
 

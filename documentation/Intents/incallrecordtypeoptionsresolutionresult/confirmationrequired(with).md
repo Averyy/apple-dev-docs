@@ -24,11 +24,11 @@ class func confirmationRequired(with callRecordTypeOptionsToConfirm: INCallRecor
 + (instancetype) confirmationRequiredWithCallRecordTypeOptionsToConfirm:(INCallRecordTypeOptions) callRecordTypeOptionsToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordTypeOptionsResolutionResult`](../incallrecordtypeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter but want the user to confirm the value before proceeding. For example, you might ask for confirmation if you do not support searching for some, but not all, of the types requested by the user.
 

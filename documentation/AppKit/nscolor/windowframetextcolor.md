@@ -19,7 +19,7 @@ class var windowFrameTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * windowFrameTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color used for text in window frames. For more information, see [`NSColor`](../nscolor.md).
 

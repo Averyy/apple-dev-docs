@@ -21,7 +21,7 @@ A lowercase letter.
 case lowercaseLetter
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Lowercase_Letter` (abbreviated `Ll`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

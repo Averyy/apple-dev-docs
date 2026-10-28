@@ -19,7 +19,7 @@ func resetCursorRects()
 - (void) resetCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 Invokes [`discardCursorRects()`](./discardcursorrects%28%29.md) to clear the window’s cursor rectangles, then sends [`resetCursorRects()`](./resetcursorrects%28%29.md) to every `NSView` object in the window’s view hierarchy.
 

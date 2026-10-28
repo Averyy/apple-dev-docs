@@ -19,7 +19,7 @@ func replaceTextStorage(_ newTextStorage: NSTextStorage)
 - (void) replaceTextStorage:(NSTextStorage *) newTextStorage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the text storage uniformly for a group of related layout manager objects. Unlike changing the value in the textStorage property, this method replaces the text storage for all [`NSLayoutManager`](../nslayoutmanager.md) objects that share the current layout manager’s [`NSTextStorage`](../nstextstorage.md) object.
 

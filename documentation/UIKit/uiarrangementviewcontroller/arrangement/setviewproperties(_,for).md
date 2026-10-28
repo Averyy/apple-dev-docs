@@ -20,7 +20,7 @@ Sets the view properties for a placement in the arrangement.
 mutating func setViewProperties(_ properties: Self.ViewProperties, for placement: UIArrangementViewController.ViewPlacement)
 ```
 
-#### Discussion
+## Discussion
 
 Set view properties to configure how an arrangement presents a view in the placement you specify.
 

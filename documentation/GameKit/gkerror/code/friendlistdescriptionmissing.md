@@ -25,7 +25,7 @@ case friendListDescriptionMissing
 GKErrorFriendListDescriptionMissing
 ```
 
-#### Discussion
+## Discussion
 
 If your game wants access to the player’s friends, provide a reason by adding the [`NSGKFriendListUsageDescription`](../../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key to the information property list.
 

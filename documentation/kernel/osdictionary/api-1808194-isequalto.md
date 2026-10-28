@@ -13,11 +13,11 @@ virtual bool isEqualTo(
  const OSCollection *keys) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the intersections of the two dictionaries are equal.
 
-#### Overview
+## Overview
 
 Two OSDictionary objects are considered equal by this function if both have objects stored for all keys provided, and if the objects stored in each under a given key compare as equal using isEqualTo.
 

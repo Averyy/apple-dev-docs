@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that consists of a web 
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternProbableWebURL;
 ```
 
-#### Return Value
+## Return Value
 
 NSString value, suitable for implementing “Paste and Go”
 

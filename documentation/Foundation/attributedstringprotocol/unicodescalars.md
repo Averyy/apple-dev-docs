@@ -22,7 +22,7 @@ The Unicode scalars of the attributed string, as a view into the underlying stri
 var unicodeScalars: AttributedString.UnicodeScalarView { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you want to split the attributed string by Unicode scalar instead of grapheme cluster. This is useful when you need to carefully control insertion points or render the content.
 

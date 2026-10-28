@@ -26,11 +26,11 @@ func CFNetServiceBrowserScheduleWithRunLoop(_ browser: CFNetServiceBrowser, _ ru
 extern void CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowserRef browser, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 This function schedules the specified CFNetServiceBrowser on the run loop, thereby placing the browser in asynchronous mode. The run loop will call the browser’s callback function to deliver the results of domain and service searches. The caller is responsible for ensuring that at least one of the run loops on which the browser is scheduled is being run.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

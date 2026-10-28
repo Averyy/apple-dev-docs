@@ -17,7 +17,7 @@ A single, shared guidance service object.
 static let sharedService: ElectricityGuidance.Service
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to interact with guidance services in your app.
 

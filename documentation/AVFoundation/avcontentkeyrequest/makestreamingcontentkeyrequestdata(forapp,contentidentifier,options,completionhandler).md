@@ -29,7 +29,7 @@ func makeStreamingContentKeyRequestData(forApp appIdentifier: Data, contentIdent
 - (void) makeStreamingContentKeyRequestDataForApp:(NSData *) appIdentifier contentIdentifier:(NSData *) contentIdentifier options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSData *contentKeyRequestData, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If [`AVContentKeyRequestProtocolVersionsKey`](../avcontentkeyrequestprotocolversionskey.md) is not specified in the `options` parameter, the default protocol of `1` is used.
 

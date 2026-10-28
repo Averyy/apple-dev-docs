@@ -23,7 +23,7 @@ virtual void deblockRequest(
 /* !__LP64__ */
 ```
 
-#### Overview
+## Overview
 
 The deblockRequest method checks to see if the incoming request rests on the media's block boundaries, and if not, deblocks it. Deblocking involves rounding out the request to the nearest block boundaries and transferring the excess bytes into a scratch buffer.
 

@@ -19,7 +19,7 @@ func runModal(options inOptions: [AnyHashable : Any]! = [:]) -> Int32
 - (int) runModalWithOptions:(NSDictionary *) inOptions;
 ```
 
-#### Return Value
+## Return Value
 
 Either [`NSOKButton`](../../AppKit/nsokbutton.md) if the user validates, or [`NSCancelButton`](../../AppKit/nscancelbutton.md) if the user cancels.
 

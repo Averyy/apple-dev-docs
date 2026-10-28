@@ -27,7 +27,7 @@ optional func paste(_ sender: Any?)
 
 - [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Paste command from an editing menu. Your implementation should read the data from the pasteboard and add the resulting content to your interface.
 

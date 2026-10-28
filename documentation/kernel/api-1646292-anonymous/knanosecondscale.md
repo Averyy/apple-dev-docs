@@ -13,7 +13,7 @@
 kNanosecondScale = 1
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for nanosecond based times.
 

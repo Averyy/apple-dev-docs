@@ -24,7 +24,7 @@ class let protectedDataDidBecomeAvailableNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationProtectedDataDidBecomeAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 This notification does not contain a `userInfo` dictionary.
 

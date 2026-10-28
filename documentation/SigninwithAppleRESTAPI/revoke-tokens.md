@@ -9,7 +9,7 @@ Invalidate the tokens and associated user authorizations for a user when they ar
 **Availability**:
 - Sign in with Apple REST API 1.0+
 
-#### Discussion
+## Discussion
 
 In order to revoke authorization for a user, you must obtain a valid refresh token or access token. If you don’t have either token for the user, you can generate tokens when validating an authorization code. For more information about user tokens and creating client secrets, see [`Token validation`](./generate-and-validate-tokens.md).
 

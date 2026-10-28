@@ -21,7 +21,7 @@ Returns a rectangle that results from shearing over an axis by shear factors for
 func sheared(_ shear: AxisWithFactors) -> Rect3D
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from shearing over an axis by shear factors for the other two axes.
 

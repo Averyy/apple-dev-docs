@@ -23,7 +23,7 @@ optional func dictationRecordingDidEnd()
 - (void) dictationRecordingDidEnd;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this optional method if you want to respond to the completion of the recognition of a dictated phrase.
 

@@ -21,7 +21,7 @@ var totalPathPauses: Int { get }
 @property (readonly) NSInteger totalPathPauses;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property encompasses the number of pauses in a continuous QuickPath touch-input gesture. The framework registers a path pause when the user’s finger stays within an area that’s the size of the width of one key for more than two seconds.
 

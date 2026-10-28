@@ -22,7 +22,7 @@ The attribute constrained by this constraint.
 associatedtype AttributeKey : AttributedStringKey where Self.AttributeKey.Value : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This attribute must always be part of the associated `Scope`.
 

@@ -17,7 +17,7 @@ Creates a new instance of a store with a custom name.
 convenience init(named name: ManagedSettingsStore.Name)
 ```
 
-#### Discussion
+## Discussion
 
 Each store contains the settings that the client app applies. If the client app doesn’t explicitly apply a setting, the default value is `nil`. Using `.default` is akin to calling  `ManagedSettingsStore()`.
 

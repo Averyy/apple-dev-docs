@@ -24,7 +24,7 @@ init(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: G
 - (instancetype) initWithLeaderboardID:(NSString *) leaderboardID playerScope:(GKLeaderboardPlayerScope) playerScope timeScope:(GKLeaderboardTimeScope) timeScope;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized view controller.
 

@@ -25,11 +25,11 @@ func CVImageBufferGetEncodedSize(_ imageBuffer: CVImageBuffer) -> CGSize
 extern CGSize CVImageBufferGetEncodedSize(CVImageBufferRef imageBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGSize`](../CoreFoundation/cgsize.md) structure defining the full encoded size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](./cvimagebuffer.md) type.
 
-#### Discussion
+## Discussion
 
 For example, for an NTSC DV frame, this function returns an encoded size of 720 x 480. When you create a [`CIImage`](../CoreImage/ciimage.md) object from a Core Video image buffer, use this call to retrieve the image size.
 

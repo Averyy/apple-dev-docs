@@ -11,7 +11,7 @@ Convenience function for workLoop->onThread.
 virtual bool onThread() const;
 ```
 
-#### Return Value
+## Return Value
 
 true if called on the work-loop thread.
 

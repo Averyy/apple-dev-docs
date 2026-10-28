@@ -22,11 +22,11 @@ nonisolated
 func dropDestination<T>(for payloadType: T.Type = T.self, action: @escaping ([T], CGPoint) -> Bool, isTargeted: @escaping (Bool) -> Void = { _ in }) -> some View where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that provides a drop destination for a drag operation of the specified type.
 
-#### Discussion
+## Discussion
 
 The dropped content can be provided as binary data, file URLs, or file promises.
 

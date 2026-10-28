@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `SCPreferences` programming interface allows an application to load and store XML configuration data in a controlled manner and provide the necessary notifications to other applications that need to be aware of configuration changes.
 

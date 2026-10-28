@@ -23,7 +23,7 @@ func setNeedsUpdateConstraints()
 - (void) setNeedsUpdateConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 When a property of your custom view changes in a way that would impact constraints, you can call this method to indicate that the constraints need to be updated at some point in the future. The system will then call [`updateConstraints()`](./updateconstraints%28%29.md) as part of its normal layout pass. Use this as an optimization tool to batch constraint changes. Updating constraints all at once just before they are needed ensures that you don’t needlessly recalculate constraints when multiple changes are made to your view in between layout passes.
 

@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property effectively requests that the [`kCVPixelBufferPoolMinimumBufferCountKey`](../CoreVideo/kcvpixelbufferpoolminimumbuffercountkey.md) key be used for the creation of the output [CVPixelBufferPool](../CoreVideo/cvpixelbufferpool-77o.md).
 

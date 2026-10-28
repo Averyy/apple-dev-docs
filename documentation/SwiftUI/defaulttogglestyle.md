@@ -22,7 +22,7 @@ nonisolated
 struct DefaultToggleStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`automatic`](./togglestyle/automatic.md) static variable to create this style:
 

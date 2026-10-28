@@ -23,7 +23,7 @@ static var selected: UIControl.State { get }
 UIControlStateSelected
 ```
 
-#### Discussion
+## Discussion
 
 For many controls, this state has no effect on behavior or appearance. Some subclasses, like the [`UISegmentedControl`](../../uisegmentedcontrol.md) class, use this state to change their appearance. You can retrieve and set this value through the [`isSelected`](../isselected.md) property.
 

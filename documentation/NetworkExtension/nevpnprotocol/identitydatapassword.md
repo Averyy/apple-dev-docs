@@ -24,7 +24,7 @@ var identityDataPassword: String? { get set }
 @property (copy, nullable) NSString * identityDataPassword;
 ```
 
-#### Discussion
+## Discussion
 
 If the PKCS12 data set in the [`identityData`](./identitydata.md) property uses a password for encryption, you must specify the password here.
 

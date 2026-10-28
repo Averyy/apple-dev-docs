@@ -23,11 +23,11 @@ class func significantLocationChangeMonitoringAvailable() -> Bool
 + (BOOL) significantLocationChangeMonitoringAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if location change monitoring is available; [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 This method indicates whether the device is able to report updates based on significant location changes only. This capability provides tremendous power savings for apps that want to track a user’s approximate location and don’t need highly accurate position information.
 

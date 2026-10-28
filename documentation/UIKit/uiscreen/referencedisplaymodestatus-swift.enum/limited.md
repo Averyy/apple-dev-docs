@@ -22,7 +22,7 @@ case limited
 UIScreenReferenceDisplayModeStatusLimited
 ```
 
-#### Discussion
+## Discussion
 
 The screen may be unable to provide an accurate reference display mode due to thermal or power constraints.
 

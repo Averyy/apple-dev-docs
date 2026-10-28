@@ -5,7 +5,7 @@
 
 Analyze how people engage with your app’s product pages and in-app events on web browsers.
 
-#### Overview
+## Overview
 
 The App Store Web Preview Report allows you to analyze how people are engaging with your app’s product pages and in-app events on the web version of the App Store.
 
@@ -22,7 +22,7 @@ The App Store Web Preview Report allows you to analyze how people are engaging w
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Summary Report | Detail Report |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Territory | App Store country in which the event occurred. | `string` | ✔ | ✔ |
 | Counts | The total number of events that occurred. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

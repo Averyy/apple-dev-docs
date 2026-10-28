@@ -19,11 +19,11 @@ class func addGlobalMonitorForEvents(matching mask: NSEvent.EventTypeMask, handl
 + (id) addGlobalMonitorForEventsMatchingMask:(NSEventMask) mask handler:(void (^)(NSEvent *event)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An event handler object.
 
-#### Discussion
+## Discussion
 
 Events are delivered asynchronously to your app and you can only observe the event; you cannot modify or otherwise prevent the event from being delivered to its original target application.
 
@@ -31,7 +31,7 @@ Key-related events may only be monitored if accessibility is enabled or if your 
 
 Note that your handler will not be called for events that are sent to your own application.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v 10.6, event monitors are only able to monitor the following event types:
 

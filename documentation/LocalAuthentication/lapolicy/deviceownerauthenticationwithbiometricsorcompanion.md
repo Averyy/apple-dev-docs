@@ -22,7 +22,7 @@ case deviceOwnerAuthenticationWithBiometricsOrCompanion
 LAPolicyDeviceOwnerAuthenticationWithBiometricsOrCompanion
 ```
 
-#### Discussion
+## Discussion
 
 Companion or biometric authentication is required. If no nearby paired companion device can be found, it behaves as LAPolicyDeviceOwnerAuthenticationWithBiometrics. Similarly, if biometry is unavailable it behaves as LAPolicyDeviceOwnerAuthenticationWithCompanion.
 

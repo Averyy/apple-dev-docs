@@ -21,7 +21,7 @@ Updates the state of the specified view with new information from SwiftUI.
 @preconcurrency func updateUIView(_ uiView: Self.UIViewType, context: Self.Context)
 ```
 
-#### Discussion
+## Discussion
 
 When the state of your app changes, SwiftUI updates the portions of your interface affected by those changes. SwiftUI calls this method for any changes affecting the corresponding UIKit view. Use this method to update the configuration of your view to match the new state information provided in the `context` parameter.
 

@@ -12,7 +12,7 @@ Accelerate actions in your app by providing shortcuts to preview content in deta
 - Mac Catalyst 11.4+
 - Xcode 10.2+
 
-#### Overview
+## Overview
 
 This sample project demonstrates previewing content and providing quick shortcuts to functionality using Peek and Pop APIs. The app uses a table view to display a list of colors and tapping any row in the table navigates to a detail view controller showing the color. The app uses 3D Touch on the table view rows to allow users to peek at the content without placing it on the navigation stack.
 
@@ -22,7 +22,7 @@ The app uses a tab bar controller to demonstrate two different methods for imple
 
 Both `ColorsViewControllerStoryboard` and `ColorsViewControllerCode` are subclasses of `ColorsViewControllerBase`, which contains the implementation of everything necessary to display the table view and handle the standard segue.
 
-##### Peek and Pop from a storyboard
+### Peek and Pop from a storyboard
 
 The storyboard uses a Show segue with Peek and Pop enabled to navigate from the `ColorViewControllerStoryboard` to `ColorItemViewController`. This is done by selecting the Show segue, and turning on “Preview & Commit Segues” next to Peek & Pop in the Attributes inspector.
 
@@ -45,7 +45,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 }
 ```
 
-##### Peek and Pop in code
+### Peek and Pop in code
 
 The `ColorsViewControllerCode` view controller adds code to manually register for Peek and Pop instead of using the storyboard to customize the segue. Call [`registerForPreviewing(with:sourceView:)`](./uiviewcontroller/registerforpreviewing%28with,sourceview%29.md) to register a class which implements the [`UIViewControllerPreviewingDelegate`](./uiviewcontrollerpreviewingdelegate.md) protocol, and then pass in a view which responds to the 3D Touch.
 
@@ -90,7 +90,7 @@ func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit v
 }
 ```
 
-##### Implement Peek Quick Actions
+### Implement Peek Quick Actions
 
 To enable Peek Quick Actions for the `ColorItemViewController`, you must override the default implementation of the [`previewActionItems`](./uiviewcontroller/previewactionitems.md) property to return an array of [`UIPreviewAction`](./uipreviewaction.md) or [`UIPreviewActionGroup`](./uipreviewactiongroup.md) objects.
 

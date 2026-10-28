@@ -25,7 +25,7 @@ init(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.M
 init(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters = ModelParameters()) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to train a sound classifier with an [`MLSoundClassifier.DataSource`](./datasource.md). For example, you can organize your audio files into labeled directories. See [`MLSoundClassifier.DataSource.labeledDirectories(at:)`](./datasource/labeleddirectories%28at%29.md).
 

@@ -5,7 +5,7 @@
 
 Specify additional attributes for the API to include in a response.
 
-#### Overview
+## Overview
 
 You may want to access some attributes that the server doesn’t fetch unless specifically requested. By default, responses contain only a subset of the available attributes for a resource. The attributes that the server doesn’t fetch by default are known as *extended attributes*. Use the `extend` query parameter to request a set of additional attributes for a resource type.
 

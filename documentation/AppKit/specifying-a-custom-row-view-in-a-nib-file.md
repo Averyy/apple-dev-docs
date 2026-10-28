@@ -5,7 +5,7 @@
 
 View-based table view instances use `NSTableViewRowKey` to identify the nib file containing the template row view. You can specify a custom row view (without any code) by associating this key with the appropriate nib name in Interface Builder.
 
-#### Overview
+## Overview
 
 This constant is only applicable to [`NSView`](./nsview.md)-based table views.
 

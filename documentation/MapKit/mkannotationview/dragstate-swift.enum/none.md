@@ -23,7 +23,7 @@ case none
 MKAnnotationViewDragStateNone
 ```
 
-#### Discussion
+## Discussion
 
 The view isn’t involved in a drag operation. The annotation view is responsible for returning itself to this state when a drag ends or cancels.
 

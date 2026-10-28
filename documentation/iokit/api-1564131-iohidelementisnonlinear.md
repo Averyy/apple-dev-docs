@@ -16,11 +16,11 @@ Returns the linear property for the element.
 Boolean IOHIDElementIsNonLinear(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if non linear or FALSE if linear.
 
-#### Discussion
+## Discussion
 
 Indicates whether the value for the element has been processed in some way, and no longer represents a linear relationship between what is measured and the value that is reported.
 

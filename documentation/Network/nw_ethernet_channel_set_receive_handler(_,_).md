@@ -19,7 +19,7 @@ func nw_ethernet_channel_set_receive_handler(_ ethernet_channel: nw_ethernet_cha
 void nw_ethernet_channel_set_receive_handler(nw_ethernet_channel_t ethernet_channel, nw_ethernet_channel_receive_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 The receive handler only needs to be set once, and will be invoked for each received Ethernet frame.
 

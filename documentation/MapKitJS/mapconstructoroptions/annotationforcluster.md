@@ -17,7 +17,7 @@ annotationForCluster?: (
 ) => Annotation | undefined;
 ```
 
-#### Discussion
+## Discussion
 
 See [`annotationForCluster`](../map/annotationforcluster.md) for more details.
 

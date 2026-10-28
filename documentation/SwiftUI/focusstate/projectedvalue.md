@@ -21,7 +21,7 @@ A projection of the focus state value that returns a binding.
 var projectedValue: FocusState<Value>.Binding { get }
 ```
 
-#### Discussion
+## Discussion
 
 When focus is outside any view that is bound to this state, the wrapped value is `nil` for optional-typed state or `false` for Boolean state.
 

@@ -23,7 +23,7 @@ var currentTitleColor: UIColor { get }
 @property (nonatomic, strong, readonly) UIColor * currentTitleColor;
 ```
 
-#### Discussion
+## Discussion
 
 This value is guaranteed not to be `nil`. The default value is `white`.
 

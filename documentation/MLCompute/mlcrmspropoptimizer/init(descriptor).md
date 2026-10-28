@@ -25,11 +25,11 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor)
 + (instancetype) optimizerWithDescriptor:(MLCOptimizerDescriptor *) optimizerDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An RMSProp optimizer.
 
-#### Discussion
+## Discussion
 
 Sets [`momentumScale`](../mlcsgdoptimizer/momentumscale.md) to `0.0`, [`alpha`](./alpha.md) to `0.99`, [`epsilon`](./epsilon.md) to `1e-8` , and [`isCentered`](./iscentered.md) to `false` by default.
 

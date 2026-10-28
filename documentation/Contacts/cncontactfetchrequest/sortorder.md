@@ -32,7 +32,7 @@ var sortOrder: CNContactSortOrder { get set }
 @property (atomic) CNContactSortOrder sortOrder;
 ```
 
-#### Discussion
+## Discussion
 
 The default sort order is `CNContactSortOrderNone`.
 

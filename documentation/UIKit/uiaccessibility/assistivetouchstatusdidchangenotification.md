@@ -24,7 +24,7 @@ static let assistiveTouchStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The user must enable Guided Access for this notification to post.
 

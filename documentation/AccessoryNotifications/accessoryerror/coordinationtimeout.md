@@ -15,7 +15,7 @@ An error that indicates alert coordination timed out.
 case coordinationTimeout
 ```
 
-#### Discussion
+## Discussion
 
 The system sets a timeout to determine whether an accessory successfully alerts for a notification. The system generates this error if your accessory doesn’t return from [`addNotification(_:alertingContext:)`](../notificationsforwarding/accessorynotificationshandler/addnotification%28_,alertingcontext%29.md) within the timeout.
 

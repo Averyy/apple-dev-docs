@@ -24,11 +24,11 @@ init(urlTemplate URLTemplate: String?)
 - (instancetype) initWithURLTemplate:(NSString *) URLTemplate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized tile overlay object.
 
-#### Discussion
+## Discussion
 
 The default tile overlay object uses the template string you specify to request tiles. This template string needs to incorporate the `{x}`, `{y}`, `{z}`, and `{scale}` placeholder strings to facilitate the creation of a URL for requesting the appropriate tile. For example, if you have a server that vends tiles when you provide a URL in the form of `http://myserver/tile?x=0&y=0&z=0&scale=1.0`, you specify a template string of `http://myserver/tile?x={x}&y={y}&z={z}&scale={scale}`. The tile overlay object substitutes actual index values for your template’s placeholders before requesting the tile.
 

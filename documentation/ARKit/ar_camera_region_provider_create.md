@@ -15,11 +15,11 @@ Create a camera region provider.
 extern ar_camera_region_provider_tar_camera_region_provider_create(ar_camera_region_configuration_t camera_region_configuration);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_camera_region_provider_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

@@ -20,7 +20,7 @@ case actionIsDeprecatedError
 AMActionIsDeprecatedError
 ```
 
-#### Discussion
+## Discussion
 
 Use a replacement action, if available.
 

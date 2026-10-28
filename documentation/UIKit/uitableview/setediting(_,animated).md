@@ -23,7 +23,7 @@ func setEditing(_ editing: Bool, animated: Bool)
 - (void) setEditing:(BOOL) editing animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method with the value of `editing` set to [`true`](../../Swift/true.md), the table view goes into editing mode by calling [`setEditing(_:animated:)`](../uitableviewcell/setediting%28_,animated%29.md) on each visible `UITableViewCell` object. Calling this method with `editing` set to [`false`](../../Swift/false.md) turns off editing mode. In editing mode, the cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](../uitableviewcell.md) for details.) The data source of the table view can selectively exclude cells from editing mode by implementing [`tableView(_:canEditRowAt:)`](../uitableviewdatasource/tableview%28_,caneditrowat%29.md).
 

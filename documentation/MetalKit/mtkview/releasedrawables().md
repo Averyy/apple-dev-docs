@@ -24,7 +24,7 @@ func releaseDrawables()
 - (void) releaseDrawables;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your app is moving to the background or when the view won’t display content for a significant period of time. The texture objects that this class creates consume a large amount of memory, so freeing them makes that memory available to other parts of your app.
 

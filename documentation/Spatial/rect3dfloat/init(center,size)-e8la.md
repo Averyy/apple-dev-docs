@@ -25,11 +25,11 @@ init(center: Point3DFloat, size: Size3DFloat)
 static SPRect3DFloat SPRect3DFloatMakeAtCenter(SPPoint3DFloat center, SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified center.
 

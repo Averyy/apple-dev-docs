@@ -23,7 +23,7 @@ func endAudio()
 - (void) endAudio;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method explicitly to let the speech recognizer know that no more audio input is coming.
 

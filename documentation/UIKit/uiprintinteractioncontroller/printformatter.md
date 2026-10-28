@@ -22,7 +22,7 @@ var printFormatter: UIPrintFormatter? { get set }
 @property (nonatomic, strong, nullable) UIPrintFormatter * printFormatter;
 ```
 
-#### Discussion
+## Discussion
 
 Assign to this property an instance of one of the concrete subclasses of [`UIPrintFormatter`](../uiprintformatter.md): [`UISimpleTextPrintFormatter`](../uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](../uimarkuptextprintformatter.md), and [`UIViewPrintFormatter`](../uiviewprintformatter.md). This object is released at the end of the print job.
 

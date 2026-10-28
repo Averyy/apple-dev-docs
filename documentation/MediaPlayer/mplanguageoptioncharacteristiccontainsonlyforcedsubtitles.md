@@ -25,7 +25,7 @@ let MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles: String
 extern NSString * const MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles;
 ```
 
-#### Discussion
+## Discussion
 
 Language options with forced-only subtitles are typically selected when the user hasn’t selected a legible option with an accessibility characteristic or an auxiliary purpose and its locale matches the locale of the selected audible language option. The system infers the presence of this characteristic for a legible language option from the format description of the associated track that presents the subtitle media.
 

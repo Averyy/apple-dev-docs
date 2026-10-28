@@ -19,7 +19,7 @@ enum NSSpringLoadingHighlight
 enum NSSpringLoadingHighlight : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`springLoadingHighlight`](./nsdragginginfo/springloadinghighlight.md) method provides one of these constant values.
 

@@ -25,7 +25,7 @@ func CFCalendarGetIdentifier(_ calendar: CFCalendar!) -> CFCalendarIdentifier!
 extern CFCalendarIdentifierCFCalendarGetIdentifier(CFCalendarRef calendar);
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `calendar`’s identifier. Calendar identifier constants can be found in [`CFLocale`](./cflocale.md). Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

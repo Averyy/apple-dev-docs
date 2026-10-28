@@ -8,7 +8,7 @@ Explore the request, response, and metadata objects that Brands report endpoints
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Brands reports cover the five `business-brands` reporting entities: campaigns, ad groups, ads, keywords, and search terms. Each entity has its own endpoint, request and response pair, and metadata schema, but all five share the same row shape and request structure described below.
 
@@ -22,7 +22,7 @@ The five Brands reporting entities each have a dedicated endpoint.
 | Keyword | [`Keywords Report (Brands)`](./get-brand-keyword-reports.md) |
 | Search Term | [`Search Terms Report (Brands)`](./get-brand-search-term-reports.md) |
 
-##### Shared Object Model
+### Shared Object Model
 
 Every Brands report request uses [`BrandsReportingRequest`](./brandsreportingrequest.md) as its body. Each response row follows the same three-part shape:
 

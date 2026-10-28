@@ -23,7 +23,7 @@ func location(ofTouch touchIndex: Int, in view: UIView?) -> CGPoint
 - (CGPoint) locationOfTouch:(NSUInteger) touchIndex inView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the local coordinate system of `view` that identifies the location of the touch. If `nil` is specified for `view`, the method returns the touch location in the window’s base coordinate system.
 

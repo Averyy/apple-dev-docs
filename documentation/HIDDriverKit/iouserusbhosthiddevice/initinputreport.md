@@ -16,11 +16,11 @@ Starts reading the input report from the device.
 virtual kern_return_t initInputReport();
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method requests the input report from the USB device asynchronously, delivering the results to the [`CompleteInputReport`](./completeinputreport.md) method.
 

@@ -24,7 +24,7 @@ class HKLensSpecification
 @interface HKLensSpecification : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate this class directly. Instead, use one of its concrete subclasses: [`HKGlassesLensSpecification`](./hkglasseslensspecification.md) or [`HKContactsLensSpecification`](./hkcontactslensspecification.md).
 

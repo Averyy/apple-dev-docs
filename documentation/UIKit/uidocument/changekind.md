@@ -22,7 +22,7 @@ enum ChangeKind
 enum UIDocumentChangeKind : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You specify one of these constants as a parameter of the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method.
 

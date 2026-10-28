@@ -20,7 +20,7 @@ A reference to a Video Toolbox motion-estimation session.
 typedef struct OpaqueVTMotionEstimationSession * VTMotionEstimationSessionRef;
 ```
 
-#### Discussion
+## Discussion
 
 A motion-estimation session supports two `CVPixelBuffer`s of the same size and type, and returns motion vectors in the form of a `CVPixelBuffer`. The session is a reference-counted CF object. To create a motion-estimation session, call [`VTMotionEstimationSessionCreate`](./vtmotionestimationsessioncreate.md); then you can optionally configure the session using `VTSessionSetProperty`. To create motion-estimations, call `VTMotionEstimationSessionCreateMotionEstimation`. When you are done with the session, you should call [`VTMotionEstimationSessionInvalidate`](./vtmotionestimationsessioninvalidate.md) to tear it down and `CFRelease` to release the session object reference.
 

@@ -21,7 +21,7 @@ The hash value.
 var hashValue: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
 

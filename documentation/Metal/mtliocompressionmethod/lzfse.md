@@ -24,7 +24,7 @@ case lzfse
 MTLIOCompressionMethodLZFSE
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the LZFSE codec, see:
 

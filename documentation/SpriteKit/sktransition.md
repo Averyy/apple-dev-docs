@@ -25,7 +25,7 @@ class SKTransition
 @interface SKTransition : NSObject
 ```
 
-#### Overview
+## Overview
 
 Scenes are the basic building blocks of games. Typically, you design self-contained scenes for the parts of your game, and then transition between these scenes as necessary. For example, you might create different scene classes to represent any or all of the following concepts:
 

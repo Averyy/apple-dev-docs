@@ -24,7 +24,7 @@ func cancelReading()
 - (void) cancelReading;
 ```
 
-#### Discussion
+## Discussion
 
 To stop reading samples before reaching the end of the time range, call this method to stop any in-progress background read operations.
 

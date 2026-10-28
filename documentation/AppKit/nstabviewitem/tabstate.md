@@ -19,7 +19,7 @@ var tabState: NSTabViewItem.State { get }
 @property (readonly) NSTabState tabState;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are `NSSelectedTab`, `NSBackgroundTab`, or `NSPressedTab`. Your application does not directly set the tab state.
 

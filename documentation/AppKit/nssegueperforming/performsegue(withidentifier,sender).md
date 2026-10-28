@@ -20,7 +20,7 @@ optional func performSegue(withIdentifier identifier: NSStoryboardSegue.Identifi
 - (void) performSegueWithIdentifier:(NSStoryboardSegueIdentifier) identifier sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Apps typically do not need to trigger segues programmatically. If needed, you can call this method to trigger a segue for an action that cannot be expressed in a storyboard file, such as a transition between scenes in different storyboards.
 

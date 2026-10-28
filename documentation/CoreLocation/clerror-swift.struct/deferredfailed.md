@@ -21,7 +21,7 @@ A constant that indicates the location manager didn’t enter deferred mode for 
 static var deferredFailed: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if GPS is unavailable, not active, or is temporarily interrupted. If you get this error on a device that has GPS hardware, the solution is to try again.
 

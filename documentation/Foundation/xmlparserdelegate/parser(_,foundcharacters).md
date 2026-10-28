@@ -25,7 +25,7 @@ optional func parser(_ parser: XMLParser, foundCharacters string: String)
 - (void) parser:(NSXMLParser *) parser foundCharacters:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 The parser object may send the delegate several [`parser(_:foundCharacters:)`](./parser%28_,foundcharacters%29.md) messages to report the characters of an element. Because `string` may be only part of the total character content for the current element, you should append it to the current accumulation of characters until the element changes.
 

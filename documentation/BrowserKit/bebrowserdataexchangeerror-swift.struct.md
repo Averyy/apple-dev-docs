@@ -16,7 +16,7 @@ An error that occurs during browser data import or export operations.
 struct BEBrowserDataExchangeError
 ```
 
-#### Overview
+## Overview
 
 This error type provides codes for failures during the transfer of browsing data, including import failures, export failures, and unknown errors.
 

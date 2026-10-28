@@ -24,7 +24,7 @@ weak var collection: GCControllerElement? { get }
 @property (nonatomic, weak, readonly, nullable) GCControllerElement * collection;
 ```
 
-#### Discussion
+## Discussion
 
 If this element is part of another element, this property is the containing element; otherwise, it’s `nil`.
 

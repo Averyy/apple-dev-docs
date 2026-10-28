@@ -5,7 +5,7 @@
 
 Display unbounded content in a person’s surroundings.
 
-#### Overview
+## Overview
 
 Use an immersive space in visionOS to present SwiftUI views outside of any containers. You can include any views in a space, although you typically use a [`RealityView`](../RealityKit/realityview.md) to present RealityKit content.
 

@@ -27,7 +27,7 @@ func fetchUIImage() async -> UIImage?
 - (void) fetchUIImageWithCompletion:(void (^)(UIImage *image)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to fetch an instance of [`UIImage`](../../UIKit/uiimage.md) that contains the corresponding image data. Provide a completion handler; otherwise, calling this method does nothing. The handler executes on the same thread that invokes the method.
 

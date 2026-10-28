@@ -23,7 +23,7 @@ var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior { get set }
 @property (nonatomic, assign) UITabBarMinimizeBehavior tabBarMinimizeBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `UITabBarMinimizeBehaviorAutomatic`.
 

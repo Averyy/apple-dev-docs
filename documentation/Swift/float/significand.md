@@ -21,7 +21,7 @@ The significand of the floating-point value.
 var significand: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 The magnitude of a floating-point value `x` of type `F` can be calculated by using the following formula, where `**` is exponentiation:
 

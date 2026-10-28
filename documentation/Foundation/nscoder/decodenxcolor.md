@@ -17,11 +17,11 @@ Decodes a color structure from NEXTSTEP Release 3 or earlier.
 - (NSColor *) decodeNXColor;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased `NSColor` object. Returns `nil` if the archived color is invalid.
 
-#### Discussion
+## Discussion
 
 This method does not have a matching method for encoding an `NXColor` structure. Encode an `NSColor` object instead.
 

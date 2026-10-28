@@ -25,7 +25,7 @@ static var automaticTerminationDisabled: ProcessInfo.ActivityOptions { get }
 NSActivityAutomaticTerminationDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This is included by [`userInitiatedAllowingIdleSystemSleep`](./userinitiatedallowingidlesystemsleep.md).
 

@@ -22,7 +22,7 @@ class INGetUserCurrentRestaurantReservationBookingsIntentResponse
 @interface INGetUserCurrentRestaurantReservationBookingsIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INGetUserCurrentRestaurantReservationBookingsIntentResponse`](./ingetusercurrentrestaurantreservationbookingsintentresponse.md) object contains the current reservations associated with the user and matching the search criteria in the corresponding [`INGetUserCurrentRestaurantReservationBookingsIntent`](./ingetusercurrentrestaurantreservationbookingsintent.md) object. You create instances of this class when confirming or handling an intent object of that type.
 

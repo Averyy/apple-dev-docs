@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the source of data for a mesh—that is, which file format it was loaded from in a [`MDLAsset`](../mdlasset.md) object, or whether it was programmatically created—a vertex attribute’s name can be either one of the constants listed in [Vertex Attributes](../vertex-attributes.md) or an identifier specific to the file format.
 

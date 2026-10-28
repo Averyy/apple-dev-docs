@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_AC3_2_1_1: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_AC3_2_1_1
 ```
 
-#### Discussion
+## Discussion
 
 Your channel layout must be in the following order:
 

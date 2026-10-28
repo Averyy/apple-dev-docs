@@ -23,7 +23,7 @@ var price: NSDecimalNumber! { get }
 @property (nonatomic, readonly) NSDecimalNumber * price;
 ```
 
-#### Discussion
+## Discussion
 
 This value in the [`currencyCode`](./currencycode.md) property determines the currency designator applied to this number. Siri and Maps display the line item’s title separately from the price information.
 

@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, pasteboardWriterForItem 
 - (id<NSPasteboardWriting>) outlineView:(NSOutlineView *) outlineView pasteboardWriterForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 A custom object that implements `NSPasteboardWriting` protocol (or simply use `NSPasteboardItem`).
 
-#### Discussion
+## Discussion
 
 If this method is implemented, then [`outlineView(_:writeItems:to:)`](./outlineview%28_,writeitems,to%29.md) is not called.
 

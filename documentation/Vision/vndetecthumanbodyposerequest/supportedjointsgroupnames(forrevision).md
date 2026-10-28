@@ -24,7 +24,7 @@ class func supportedJointsGroupNames(forRevision revision: Int) throws -> [VNHum
 + (NSArray<NSString *> *) supportedJointsGroupNamesForRevision:(NSUInteger) revision error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The array of joint group name objects for the revision.
 

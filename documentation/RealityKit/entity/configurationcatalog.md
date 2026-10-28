@@ -20,13 +20,13 @@ A collection of alternative representations of an entity you can choose from.
 struct ConfigurationCatalog
 ```
 
-#### Overview
+## Overview
 
 A configuration catalog allows you to create an entity from alternative configurations, such as different mesh geometries, levels of detail, or material properties. From these options, you can select the configurations according to how you want that entity to appear.
 
 You can load a configuration catalog from a USD file with variant sets or a `.reality` file with a configuration catalog.
 
-##### Create a configuration catalog
+### Create a configuration catalog
 
 To create a configuration catalog with RealityKit, first set up a configuration set for each category you want to represent. A configuration set consists of a name and an array of alternative representations for that category. For example, a configuration set can include different levels of detail or different material representations of an entity.
 
@@ -90,7 +90,7 @@ Save the catalog to a `.reality` file that your RealityKit app can load.
 try await configurableEntity.write(to: url)
 ```
 
-##### Load an entity with a configuration
+### Load an entity with a configuration
 
 The following code example loads a small, red entity from the configuration catalog in the preceding example. The entity initializer looks for the catalog to have configuration sets named `size` and `color`, and the sets to contain configurations named `small` and `red`, respectively.
 

@@ -25,7 +25,7 @@ protocol ReportableMetadata
 
 - [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
-#### Overview
+## Overview
 
 Adopt `ReportableMetadata` to pass stable or volatile metadata to [`StateReporter`](./statereporter.md). The single required property, [`metadataDictionary`](./reportablemetadata/metadatadictionary.md), maps string keys to [`ReportableMetadataValue`](./reportablemetadatavalue.md) cases. Use the [`ReportableMetadata()`](./reportablemetadata%28%29.md) macro to synthesize the conformance automatically from stored properties, rather than implementing it by hand.
 

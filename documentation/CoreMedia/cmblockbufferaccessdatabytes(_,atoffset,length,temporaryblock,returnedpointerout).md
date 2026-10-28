@@ -25,11 +25,11 @@ func CMBlockBufferAccessDataBytes(_ theBuffer: CMBlockBuffer, atOffset offset: I
 extern OSStatus CMBlockBufferAccessDataBytes(CMBlockBufferRef theBuffer, size_t offset, size_t length, void *temporaryBlock, char **returnedPointerOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if the desired amount of data could be accessed at the given offset.
 
-#### Discussion
+## Discussion
 
 This routine is use for accessing contiguous and noncontiguous data. If the data is contiguous, the routine will return a pointer to the given `CMBlockBuffer`.  If the data is not contiguous, the routine will copy the data into a temporary block and a pointer to this block will be returned.
 

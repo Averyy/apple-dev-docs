@@ -20,7 +20,7 @@ func stopLoading(_ sender: Any?)
 - (void) stopLoading:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Stops any content in the process of being loaded by the main frame or any of its children frames. Does nothing if no content is being loaded.
 

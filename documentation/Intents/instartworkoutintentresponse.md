@@ -23,7 +23,7 @@ class INStartWorkoutIntentResponse
 @interface INStartWorkoutIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INStartWorkoutIntentResponse`](./instartworkoutintentresponse.md) object to specify whether your app is able to start a workout. The response object contains only the response code that indicates whether to launch your app or whether there was a problem.
 

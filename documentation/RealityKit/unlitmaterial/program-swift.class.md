@@ -20,7 +20,7 @@ An object that represents the backing shader compilation required for unlit mate
 final class Program
 ```
 
-#### Overview
+## Overview
 
 You can use this type to control when RealityKit compiles shaders, and to initialize `UnlitMaterial` objects with more predicitable loading performance.
 

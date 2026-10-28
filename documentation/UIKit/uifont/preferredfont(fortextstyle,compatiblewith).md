@@ -23,15 +23,15 @@ class func preferredFont(forTextStyle style: UIFont.TextStyle, compatibleWith tr
 + (UIFont *) preferredFontForTextStyle:(UIFontTextStyle) style compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 The system font associated with the specified text style and traits.
 
-#### Discussion
+## Discussion
 
 > **Related sessions from WWDC23**:  Session 10058: [What’s new with text and text interactions](https://developer.apple.com/videos/play/wwdc2023/10058/)
 
-#### Discussion
+## Discussion
 
 To create a styled font based on a custom font, use a [`UIFontMetrics`](../uifontmetrics.md) object.
 

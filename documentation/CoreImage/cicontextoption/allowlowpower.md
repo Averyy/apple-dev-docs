@@ -24,7 +24,7 @@ static let allowLowPower: CIContextOption
 extern CIContextOption const kCIContextAllowLowPower;
 ```
 
-#### Discussion
+## Discussion
 
 This option only affects certain macOS devices with more than one available GPU device.
 

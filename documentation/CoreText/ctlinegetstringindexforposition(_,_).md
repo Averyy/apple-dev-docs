@@ -25,11 +25,11 @@ func CTLineGetStringIndexForPosition(_ line: CTLine, _ position: CGPoint) -> CFI
 extern CFIndex CTLineGetStringIndexForPosition(CTLineRef line, CGPoint position);
 ```
 
-#### Return Value
+## Return Value
 
 The string index for the position, or if the line does not support string access, [`kCFNotFound`](../CoreFoundation/kcfnotfound.md). Relative to the line’s string range, this value can be no less than the first string index and no greater than the last string index plus 1.
 
-#### Discussion
+## Discussion
 
 This function can be used to determine the string index for a mouse click or other event. This string index corresponds to the character before which the next character should be inserted. This determination is made by analyzing the string from which a typesetter was created and the corresponding glyphs as embodied by a particular line.
 

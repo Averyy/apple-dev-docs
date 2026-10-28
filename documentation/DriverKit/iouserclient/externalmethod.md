@@ -18,11 +18,11 @@ Receive arguments from IOKit.framework IOConnectMethod calls.
 virtual kern_return_t ExternalMethod(uint64_t selector, IOUserClientMethodArguments *arguments, const IOUserClientMethodDispatch *dispatch, OSObject *target, void *reference);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 IOConnectMethod calls from the owner of the connection come here. Any argument may be passed as NULL if not passed by the caller.
 

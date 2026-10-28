@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatIntersection(SPRect3DFloat rect, SPRect3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle structure that is the intersection of the two rectangles.
 
-#### Discussion
+## Discussion
 
 Returns the intersection of the two rectangles.
 

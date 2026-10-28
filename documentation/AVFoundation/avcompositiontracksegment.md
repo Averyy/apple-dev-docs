@@ -25,7 +25,7 @@ class AVCompositionTrackSegment
 @interface AVCompositionTrackSegment : AVAssetTrackSegment
 ```
 
-#### Overview
+## Overview
 
 You typically use this class to save a low-level representation of a composition.
 

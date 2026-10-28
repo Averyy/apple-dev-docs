@@ -23,7 +23,7 @@ func requestValue(_ dialog: IntentDialog? = nil) async throws -> Value.ValueType
 
 Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
-#### Return Value
+## Return Value
 
 The value supplied by the user
 

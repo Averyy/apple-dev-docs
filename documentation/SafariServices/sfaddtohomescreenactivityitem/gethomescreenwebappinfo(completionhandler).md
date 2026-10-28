@@ -26,7 +26,7 @@ optional func homeScreenWebAppInfo() async -> SFAddToHomeScreenInfo?
 - (void) getHomeScreenWebAppInfoWithCompletionHandler:(void (^)(SFAddToHomeScreenInfo *)) completionHandler;
 ```
 
-#### Overview
+## Overview
 
 Add information about the web app to a [`SFAddToHomeScreenInfo`](../sfaddtohomescreeninfo.md) object that you create, and pass it to the completion handler.
 

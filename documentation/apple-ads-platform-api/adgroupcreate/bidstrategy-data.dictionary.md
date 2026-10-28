@@ -15,7 +15,7 @@ The creation payload for configuring a bid strategy on an ad group or campaign.
 object AdGroupCreate.BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 Whenever you include `bidStrategyType`, you must also include the matching `bidStrategyGoal` (and vice versa): `MANUAL_CPT` pairs with `TAP`, `MANUAL_CPM` pairs with `IMPRESSION`, `MAX_CONVERSIONS` pairs with `INSTALL`, and `MAX_ENGAGEMENTS` pairs with `TAP`. Omitting one, or sending a goal that doesn’t match the type, returns an error.
 

@@ -24,11 +24,11 @@ func signbit(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) signbitWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation returns `true` if the sign bit is set for the correspnding floating-point input element, otherwise it returns `false`.
 

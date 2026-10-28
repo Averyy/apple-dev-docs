@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Coordinate a process-wide wired memory limit for GPU workloads.
 
-#### Overview
+## Overview
 
 Wired memory is a global process setting. MLX exposes a coordinator that lets multiple concurrent tasks agree on a single wired limit while still allowing different policies to coexist. The core types are:
 
@@ -20,7 +20,7 @@ Wired memory is a global process setting. MLX exposes a coordinator that lets mu
 
 MLX provides generic policies such as `WiredSumPolicy` and `WiredMaxPolicy`. MLXLMCommon (from mlx-swift-lm) provides LLM-focused policies such as `WiredFixedPolicy`. You can use `GPU.maxRecommendedWorkingSetBytes()` as a portable upper bound when designing custom policies.
 
-#### Tickets and Work Types
+## Tickets and Work Types
 
 Tickets represent memory demand. They come in two flavors:
 
@@ -29,13 +29,13 @@ Tickets represent memory demand. They come in two flavors:
 
 This lets you account for weights without leaving the wired limit high when no work is running.
 
-#### Policies and Grouping
+## Policies and Grouping
 
 Policies are grouped by their `id`. The manager computes one limit per policy group and then applies the **maximum** across groups. This prevents double-counting and allows heterogeneous strategies to coexist.
 
 If you use reference-type policies, provide a stable `id` so grouping behaves as expected. Hashable value policies get an `id` automatically.
 
-#### Hysteresis
+## Hysteresis
 
 The manager applies hysteresis to avoid rapid shrink oscillations while active work is running:
 
@@ -44,11 +44,11 @@ The manager applies hysteresis to avoid rapid shrink oscillations while active w
 
 Growing the limit is always allowed. These settings are configured with [`WiredMemoryManagerConfiguration`](./wiredmemorymanagerconfiguration.md).
 
-#### Debug Events
+## Debug Events
 
 In DEBUG builds, `WiredMemoryManager.events()` emits a stream of [`WiredMemoryEvent`](./wiredmemoryevent.md) values describing admission and limit updates. In release builds, the stream finishes immediately and produces no events.
 
-#### Example
+## Example
 
 The following example uses a custom policy and demonstrates both reservation and active tickets:
 
@@ -72,18 +72,18 @@ try await ticket.withWiredLimit {
 }
 ```
 
-#### Admission Control
+## Admission Control
 
 Policies can gate concurrency by implementing `canAdmit`. If admission fails, `start()` suspends until capacity becomes available. This is useful for preventing over-commit when many inferences launch simultaneously.
 
-#### Best Practices
+## Best Practices
 
 - Use the shared manager (`WiredMemoryManager.shared`) unless you have a specific reason to isolate coordination (e.g. tests via `WiredMemoryManager.makeForTesting()`).
 - Keep reservation tickets alive for the lifetime of a model or context.
 - Prefer `withWiredLimit` to ensure cancellation-safe start/end pairing.
 - Treat the manager as the sole authority for wired limit changes; external calls to `mlx_set_wired_limit` are undefined and may desynchronize the cached baseline.
 
-#### Policy-only mode (CPU or unsupported backends)
+## Policy-only mode (CPU or unsupported backends)
 
 On systems where wired memory control is unavailable, you can still use the manager for **admission gating and budgeting** by enabling policy-only mode. In this mode the manager continues to track tickets and compute limits, but it does not attempt to change the process wired limit. Policy-only mode defaults to `true` on unsupported backends.
 
@@ -93,7 +93,7 @@ await WiredMemoryManager.shared.updateConfiguration { configuration in
 }
 ```
 
-##### Choosing a baseline
+### Choosing a baseline
 
 When wired memory is unsupported, the manager will use:
 

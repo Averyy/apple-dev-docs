@@ -19,7 +19,7 @@ A summary of a model’s structure and statistics.
 struct Summary
 ```
 
-#### Overview
+## Overview
 
 Obtain a summary by calling [`summary(includingStatistics:)`](./summary%28includingstatistics%29.md). The summary describes the model’s functions, storage types, compute types, and operation distribution.
 

@@ -25,7 +25,7 @@ let kSecAttrEffectiveKeySize: CFString
 extern CFStringRef const kSecAttrEffectiveKeySize;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the effective number of bits in this cryptographic key. For example, a DES key has a [`kSecAttrKeySizeInBits`](./ksecattrkeysizeinbits.md) of 64, but a [`kSecAttrEffectiveKeySize`](./ksecattreffectivekeysize.md) of 56 bits.
 

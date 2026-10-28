@@ -24,7 +24,7 @@ class AVAssetWriterInputGroup
 @interface AVAssetWriterInputGroup : AVMediaSelectionGroup
 ```
 
-#### Overview
+## Overview
 
 Assets may contain multiple tracks of media that are mutually exclusive to each other when you play or process them. For example, an asset may contain multiple audio tracks for different spoken languages, but only one of them should play at a time. You use an input group to mark a collection of tracks as mutually exclusive to each other in the file the asset writer outputs.
 

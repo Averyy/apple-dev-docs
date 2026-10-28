@@ -22,11 +22,11 @@ func description(withCalendarFormat format: String?, timeZone aTimeZone: TimeZon
 - (NSString *) descriptionWithCalendarFormat:(NSString *) format timeZone:(NSTimeZone *) aTimeZone locale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the receiver, formatted as specified by the given conversion specifiers.
 
-#### Discussion
+## Discussion
 
 There are several problems with the implementation of this method that cannot be fixed for compatibility reasons. To format a date, you should use a date formatter object instead (see [`DateFormatter`](../dateformatter.md) and [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)).
 

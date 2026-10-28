@@ -19,7 +19,7 @@ func AXUIElementGetAttributeValueCount(_ element: AXUIElement, _ attribute: CFSt
 AXError AXUIElementGetAttributeValueCount(AXUIElementRef element, CFStringRef attribute, CFIndex *count);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementGetAttributeValueCount` may return one of the following error codes, among others:
 

@@ -15,11 +15,11 @@ The logical value of the data, shifted and scaled by the [`HIDElement`](../../hi
 func physicalValue<IntegerType, FloatingType>(fromTypeTruncatingIfNeeded: IntegerType.Type, as: FloatingType.Type) -> FloatingType? where IntegerType : FixedWidthInteger, FloatingType : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The calculated value cast as the requested type, or nil if out of bounds.
 
-#### Discussion
+## Discussion
 
 The [`logicalValue(asTypeTruncatingIfNeeded:)`](./logicalvalue%28astypetruncatingifneeded%29.md) is first retrieved with the specified type. If the logical value is undefined, such as when the raw value is out of bounds, the physical value is also undefined.
 

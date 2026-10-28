@@ -21,7 +21,7 @@ The scene that owns the entity.
 @preconcurrency var scene: Scene? { get }
 ```
 
-#### Discussion
+## Discussion
 
 An entity belongs to a scene if the entity is part of a hierarchy that’s rooted in the scene’s [`anchors`](../scene/anchors.md) collection.
 

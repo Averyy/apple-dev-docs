@@ -22,7 +22,7 @@ enum DisplayMode
 enum UIPasteControlDisplayMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The paste button ([`UIPasteControl`](../uipastecontrol.md)) property [`displayMode`](./configuration-swift.class/displaymode.md) is of this type.
 

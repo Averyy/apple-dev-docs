@@ -16,11 +16,11 @@ Issues an INQUIRY command to the device as defined in SPC-2.
 IOReturn (*Inquiry)(void *self, SCSICmd_INQUIRY_StandardData *inquiryBuffer, UInt32 inqBufferSize, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened, the client may send this command to get inquiry data from the drive.
 

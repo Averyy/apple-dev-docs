@@ -11,7 +11,7 @@ framework: "swift-argument-parser/ArgumentParser"
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](./noteq%28_,_%29.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
 
 
 ---

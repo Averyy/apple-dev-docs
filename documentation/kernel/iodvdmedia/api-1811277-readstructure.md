@@ -14,11 +14,11 @@ virtual IOReturn readStructure(
  const UInt8grantID );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the data transfer.
 
-#### Overview
+## Overview
 
 Issue an MMC READ DVD STRUCTURE command.
 

@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, willSendRequestFor chall
 - (void) connection:(NSURLConnection *) connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the delegate to make an informed decision about connection authentication at once. If the delegate implements this method, it has no need to implement [`connection(_:canAuthenticateAgainstProtectionSpace:)`](./connection%28_,canauthenticateagainstprotectionspace%29.md) or [`connection(_:didReceive:)`](./connection%28_,didreceive%29.md). In fact, those other methods are not invoked (except on older operating systems, where applicable).
 

@@ -14,7 +14,7 @@
 kIOMediaAttributeEjectableMask = 0x00000001
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the media is ejectable from the drive mechanism under software control. Implies kIOMediaAttributeRemovableMask.
 

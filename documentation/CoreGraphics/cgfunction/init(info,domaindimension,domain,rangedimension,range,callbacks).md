@@ -25,7 +25,7 @@ init?(info: UnsafeMutableRawPointer?, domainDimension: Int, domain: UnsafePointe
 extern CGFunctionRefCGFunctionCreate(void *info, size_t domainDimension, const CGFloat *domain, size_t rangeDimension, const CGFloat *range, const CGFunctionCallbacks *callbacks);
 ```
 
-#### Return Value
+## Return Value
 
 The new Core Graphics function. In Objective-C, you’re responsible for releasing this object using [`CGFunctionRelease`](../cgfunctionrelease.md).
 

@@ -23,11 +23,11 @@ func IOCreateReceivePort(_ msgType: UInt32, _ recvPort: UnsafeMutablePointer<mac
 kern_return_t IOCreateReceivePort(uint32_t msgType, mach_port_t *recvPort);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 In the future IOKit may use specialized messages and ports instead of the standard ports created by mach_port_allocate(). Use this function instead of mach_port_allocate() to ensure compatibility with future revisions of IOKit.
 

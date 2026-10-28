@@ -22,7 +22,7 @@ A key for the line drawn under a run of attributed text.
 enum UnderlineStyleAttribute
 ```
 
-#### Overview
+## Overview
 
 Set this key to underline part of a string, such as a term that leads somewhere. The value carries both the pattern and the color of the line:
 

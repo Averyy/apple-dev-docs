@@ -23,7 +23,7 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> Self.Transformer
 
 Available when `Transformer` conforms to `Decodable`.
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

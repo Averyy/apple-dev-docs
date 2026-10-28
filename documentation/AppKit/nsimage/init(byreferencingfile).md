@@ -19,11 +19,11 @@ convenience init?(byReferencingFile fileName: String)
 - (instancetype) initByReferencingFile:(NSString *) fileName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object or `nil` if the new object cannot be initialized.
 
-#### Discussion
+## Discussion
 
 This method initializes the image object lazily. It does not actually open the specified file or create any image representations from its data until an app attempts to draw the image or request information about it.
 

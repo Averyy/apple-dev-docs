@@ -25,7 +25,7 @@ var latitudeDelta: CLLocationDegrees
 CLLocationDegrees latitudeDelta;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike longitudinal distances, which vary based on the latitude, one degree of latitude is always approximately 111 kilometers (69 miles).
 

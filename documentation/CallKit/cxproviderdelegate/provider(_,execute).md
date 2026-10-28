@@ -23,11 +23,11 @@ optional func provider(_ provider: CXProvider, execute transaction: CXTransactio
 - (BOOL) provider:(CXProvider *) provider executeTransaction:(CXTransaction *) transaction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `transaction` was handled; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Most delegates should not need to provide an implementation for this method. However, a delegate can implement this method to customize how transactions are handled. This method returns [`true`](../../Swift/true.md) to indicate that the custom implementation handled the transaction and returns [`false`](../../Swift/false.md) to have the provider execute the transaction normally—as if the delegate did not implement this method. For example, given a transaction consisting of a [`CXSetHeldCallAction`](../cxsetheldcallaction.md) object and a [`CXSetGroupCallAction`](../cxsetgroupcallaction.md) object, the delegate may override this method to inject a 30 second wait and play hold music to the caller.
 

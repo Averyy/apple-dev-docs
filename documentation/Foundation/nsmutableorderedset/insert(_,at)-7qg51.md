@@ -25,7 +25,7 @@ func insert(_ object: Any, at idx: Int)
 - (void) insertObject:(ObjectType) object atIndex:(NSUInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 If the object is already a member, this method has no effect. If the specified index is already occupied, the objects at that index and beyond are shifted by adding `1` to their indexes to make room for the inserted object.
 

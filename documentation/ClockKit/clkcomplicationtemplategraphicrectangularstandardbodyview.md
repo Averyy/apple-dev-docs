@@ -17,7 +17,7 @@ A template for displaying a SwiftUI label and up to three rows of text.
 final class CLKComplicationTemplateGraphicRectangularStandardBodyView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family.  shows the layout of the complication and where it appears on the clock face.
 

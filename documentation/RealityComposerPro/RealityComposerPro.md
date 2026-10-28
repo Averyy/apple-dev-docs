@@ -4,7 +4,7 @@
 
 Build, design, and orchestrate 3D content for your RealityKit apps.
 
-#### Overview
+## Overview
 
 Reality Composer Pro 3 makes it easy to rapidly iterate, preview, and prepare 3D content for your visionOS apps, iOS apps, and more — right on your Mac. Build stunning scenes and animate characters with cinematic precision. And you can preview your changes live on Apple Vision Pro.
 
@@ -14,11 +14,11 @@ Reality Composer Pro includes editors and workflows for designing materials with
 
 > **Note**: Download the latest version of Reality Composer Pro from the [Apple Developer website](https://developer.apple.com/download/all/?q=Reality%20Composer%20Pro).
 
-##### System requirements
+### System requirements
 
 - macOS Tahoe 26.5 or later
 
-##### Entities, components, and systems
+### Entities, components, and systems
 
 Reality Composer Pro is a 3D content creation platform backed by an **Entity Component System (ECS)**. Reality Composer Pro is built around the ECS pattern, so a basic understanding of ECS provides helpful context.
 
@@ -32,7 +32,7 @@ Systems change an entity’s behavior at runtime by adding, removing, or modifyi
 
 > **Note**: To learn more about RealityKit components, see [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md).
 
-##### What’s new in Reality Composer Pro
+### What’s new in Reality Composer Pro
 
 This release of Reality Composer Pro is a complete 3D development platform. The previous version focused on authoring spatial content for Apple Vision Pro; this release adds new features and functionality, such as:
 

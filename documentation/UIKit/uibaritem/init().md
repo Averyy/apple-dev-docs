@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized bar item or `nil` if the item could not be initialized.
 

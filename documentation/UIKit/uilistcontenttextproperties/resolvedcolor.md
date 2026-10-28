@@ -19,7 +19,7 @@ Generates the resolved color for the specified color, using the text color and c
 - (UIColor *) resolvedColor;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`color`](../uilistcontentconfiguration-swift.struct/textproperties-swift.struct/color.md) and [`colorTransformer`](../uilistcontentconfiguration-swift.struct/textproperties-swift.struct/colortransformer.md).
 

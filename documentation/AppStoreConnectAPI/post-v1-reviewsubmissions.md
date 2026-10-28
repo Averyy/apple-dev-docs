@@ -20,7 +20,7 @@ Create a review submission for a specific app.
 - [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md)
 - [Understanding webhook events](./webhook-events.md)
 
-#### Overview
+## Overview
 
 > **Note**: The attribute `platform` is no longer required when using [`Create a Review Submission`](./post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](./patch-v1-reviewsubmissions-_id_.md).
 

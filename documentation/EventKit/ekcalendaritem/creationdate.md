@@ -24,7 +24,7 @@ var creationDate: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * creationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, this property was not set or was synced in this state.
 

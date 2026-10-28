@@ -21,7 +21,7 @@ A view that displays a Photos picker for choosing assets from the photo library.
 @preconcurrency struct PhotosPicker<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use the Photos picker view to browse and select images and videos from the photo library. The view contains methods for single selection and multiple selection. For example, the following code displays a button that — when pressed — shows a picker in multiple selection mode.
 

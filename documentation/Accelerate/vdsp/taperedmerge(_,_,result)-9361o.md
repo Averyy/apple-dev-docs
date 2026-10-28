@@ -21,7 +21,7 @@ Computes the result of a tapered merge between two double-precision vectors.
 static func taperedMerge<T, U, V>(_ vectorA: T, _ vectorB: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Double, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The following code performs a tapered merge between two vectors that represent sine waves at different frequencies:
 

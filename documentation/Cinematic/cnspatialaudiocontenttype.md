@@ -21,7 +21,7 @@ enum CNSpatialAudioContentType
 enum CNSpatialAudioContentType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Enum used to generate settings dictionary for export using AssetReader and AssetWriter with Spatial Audio effects burned in
 

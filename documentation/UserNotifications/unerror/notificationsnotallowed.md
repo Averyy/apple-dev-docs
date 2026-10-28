@@ -21,7 +21,7 @@ Notifications are not allowed.
 static var notificationsNotAllowed: UNError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you try to submit a notification request and your app or app extension is not authorized to schedule notifications.
 

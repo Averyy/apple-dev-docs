@@ -24,7 +24,7 @@ static let useSoftwareRenderer: CIContextOption
 extern CIContextOption const kCIContextUseSoftwareRenderer;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This option has no effect if the platform does not support OpenCL.
 

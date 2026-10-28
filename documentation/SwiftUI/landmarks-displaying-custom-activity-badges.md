@@ -13,7 +13,7 @@ Provide people with a way to mark their adventures by displaying animated custom
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 The Landmarks app lets people track their adventures as they explore sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to mark their adventures and receive custom activity badges along the way.
 
@@ -21,7 +21,7 @@ The Landmarks app lets people track their adventures as they explore sites aroun
 
 This sample displays the badges in a vertical view that includes a toggle button for showing or hiding the badges. The Landmarks app includes a custom modifier that makes it easier for other views to adopt the badge view. By configuring the badges to use Liquid Glass, the badges gain the advantage of using the morphing animation when you show or hide the badges.
 
-#### Add a modifier to show badges in other views
+## Add a modifier to show badges in other views
 
 To make the badges available in other views, like `CollectionsView`, the sample uses a custom modifier, `ShowBadgesViewModifier`, as a [`ViewModifier`](./viewmodifier.md). The sample layers the badges over another view using a [`ZStack`](./zstack.md), and positions the badge view in the lower trailing corner:
 
@@ -53,7 +53,7 @@ extension View {
 }
 ```
 
-#### Apply Liquid Glass to the toggle button
+## Apply Liquid Glass to the toggle button
 
 To create the toggle button, the sample configures a [`Button`](./button.md) using `ToggleBadgesLabel` which has different system images for the Show and Hide toggle states. To apply Liquid Glass, style the button with the [`glass`](./primitivebuttonstyle/glass.md) modifier:
 
@@ -67,7 +67,7 @@ Button {
 
 ```
 
-#### Add Liquid Glass to the badges
+## Add Liquid Glass to the badges
 
 To add Liquid Glass to each badge, the sample uses the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier. To make a custom glass view appearance, the sample specifies a rectangular option with a corner radius:
 
@@ -76,7 +76,7 @@ BadgeLabel(badge: $0)
     .glassEffect(.regular, in: .rect(cornerRadius: Constants.badgeCornerRadius))
 ```
 
-#### Animate the badges using the morph effect
+## Animate the badges using the morph effect
 
 The morph effect is an animation for Liquid Glass views. During this animation, the toggle button and each badge start as a combined view. Then, the button and badges change shape like a liquid as they separate and move from one location to another. In reverse, the toggle button and badges change shape and combine back into one view.
 

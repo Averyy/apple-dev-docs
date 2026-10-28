@@ -21,7 +21,7 @@ A Boolean that enables sending application data with protocol handshakes.
 final var allowFastOpen: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When fast open is enabled on a connection, the application is expected to send its early data to be included with the handshake as idempotent data. This data can be sent before or after calling start.
 

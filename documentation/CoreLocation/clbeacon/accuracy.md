@@ -22,7 +22,7 @@ var accuracy: CLLocationAccuracy { get }
 @property (nonatomic, readonly) CLLocationAccuracy accuracy;
 ```
 
-#### Discussion
+## Discussion
 
 A beacon with a smaller value for accuracy is typically nearer than a beacon with a larger accuracy value.
 

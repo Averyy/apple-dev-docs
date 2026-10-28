@@ -21,7 +21,7 @@ A notification that an app posts when it needs to convey an announcement to an a
 struct Announcement
 ```
 
-#### Overview
+## Overview
 
 Include an announcement value, such as [`String`](../../Swift/string.md) or [`AttributedString`](../../Foundation/attributedstring.md), for an assistive app to announce.
 

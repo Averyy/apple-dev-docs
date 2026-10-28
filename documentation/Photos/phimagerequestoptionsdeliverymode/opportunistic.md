@@ -24,7 +24,7 @@ case opportunistic
 PHImageRequestOptionsDeliveryModeOpportunistic
 ```
 
-#### Discussion
+## Discussion
 
 If the [`isSynchronous`](../phimagerequestoptions/issynchronous.md) property is `false`, Photos may call the `resultHandler` block (that you specified in the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](../phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method more than once. Photos may call your result handler once to provide a low-quality image suitable for displaying temporarily while it prepares a high-quality image. If low-quality image data is immediately available, this first call may occur before the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](../phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method returns. When the high-quality image is ready, Photos calls your result handler again to provide it.
 

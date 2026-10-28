@@ -5,7 +5,7 @@
 
 Repeat a segment of a movie without copying media with edit lists.
 
-#### Overview
+## Overview
 
 A segment of a movie can be repeated without duplicating media data by using edit lists. Suppose you have a single-track movie whose media time scale is `100` and track duration is `1000` (10 seconds). For this example the movie’s time scale is `600`. If there are no edits in the movie, the edit atom would contain the data values:
 

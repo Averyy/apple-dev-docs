@@ -22,11 +22,11 @@ func observationInfo() -> UnsafeMutableRawPointer?
 - (void *) observationInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The observation info of the receiver.
 
-#### Discussion
+## Discussion
 
 For more about key-value observation, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

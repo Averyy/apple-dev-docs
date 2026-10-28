@@ -20,7 +20,7 @@ An array of key paths associated with the error.
 var keyPaths: [String]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For validation errors, this contains key paths to specific object properties.
 

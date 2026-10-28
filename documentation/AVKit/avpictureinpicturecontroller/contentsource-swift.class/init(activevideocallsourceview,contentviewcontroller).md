@@ -22,7 +22,7 @@ init(activeVideoCallSourceView sourceView: UIView, contentViewController: AVPict
 - (instancetype) initWithActiveVideoCallSourceView:(UIView *) sourceView contentViewController:(AVPictureInPictureVideoCallViewController *) contentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The instance is only valid for the duration of the call.
 

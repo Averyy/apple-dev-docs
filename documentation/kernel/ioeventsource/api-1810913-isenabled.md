@@ -11,7 +11,7 @@ Get'ter for $link enable variable.
 virtual bool isEnabled() const;
 ```
 
-#### Return Value
+## Return Value
 
 true if enabled.
 

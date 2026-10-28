@@ -20,7 +20,7 @@ let kSecCodeInfoFlags: CFString
 extern CFStringRef const kSecCodeInfoFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md). See [`SecCodeSignatureFlags`](./seccodesignatureflags.md) for a list of possible values.
 

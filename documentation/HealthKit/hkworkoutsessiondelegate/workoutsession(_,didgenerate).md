@@ -28,7 +28,7 @@ optional func workoutSession(_ workoutSession: HKWorkoutSession, didGenerate eve
 
 - [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 You can save the generated events and use them when creating a [`HKWorkout`](../hkworkout.md) object for the session.
 

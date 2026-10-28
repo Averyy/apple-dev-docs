@@ -21,11 +21,11 @@ Modifies the format style to use the specified sign display strategy for display
 func sign(strategy: FloatingPointFormatStyle<Value>.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified sign display strategy.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of floating-point values. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
 

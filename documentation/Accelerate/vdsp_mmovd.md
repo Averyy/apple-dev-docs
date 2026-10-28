@@ -21,7 +21,7 @@ Copies the contents of a double-precision submatrix to another double-precision 
 extern void vDSP_mmovD(const double *__A, double *__C, vDSP_Length __M, vDSP_Length __N, vDSP_Length __TA, vDSP_Length __TC);
 ```
 
-#### Discussion
+## Discussion
 
 This function treats the input and output matrices as row-major order.
 

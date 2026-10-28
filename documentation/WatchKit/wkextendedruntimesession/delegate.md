@@ -19,7 +19,7 @@ weak var delegate: (any WKExtendedRuntimeSessionDelegate)? { get set }
 @property (nonatomic, weak) id<WKExtendedRuntimeSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To receive all the delegate calls, always assign a value to this property before calling the session’s [`start()`](./start%28%29.md) or [`start(at:)`](./start%28at%29.md) methods.
 

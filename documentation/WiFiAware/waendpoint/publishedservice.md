@@ -17,7 +17,7 @@ The publishable service that is, or can be, connected.
 var publishedService: WAPublishableService? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `nil` if a publishable service isn’t in use.
 

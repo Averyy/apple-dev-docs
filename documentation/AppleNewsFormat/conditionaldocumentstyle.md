@@ -19,11 +19,11 @@ object ConditionalDocumentStyle
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalDocumentStyle` object to define an array of conditional document-style properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalDocumentStyle` overrides the value of the same property if defined in the parent `DocumentStyle` object. See [`DocumentStyle`](./documentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

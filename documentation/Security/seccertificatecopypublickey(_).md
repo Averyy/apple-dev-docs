@@ -47,11 +47,11 @@ OSStatus SecCertificateCopyPublicKey(SecCertificateRef certificate, SecKeyRef*ke
 
 - [Examining a Certificate](./examining-a-certificate.md)
 
-#### Return Value
+## Return Value
 
 In iOS, the certificate’s public key.
 
-#### Discussion
+## Discussion
 
 In macOS, a result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

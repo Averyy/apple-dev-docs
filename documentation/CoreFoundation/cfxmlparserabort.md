@@ -15,7 +15,7 @@ Causes a parser to abort with the given error code and description.
 extern void CFXMLParserAbort(CFXMLParserRef parser, CFXMLParserStatusCode errorCode, CFStringRef errorDescription);
 ```
 
-#### Discussion
+## Discussion
 
 This function cannot be called asynchronously. In other words, it must be called from within a parser callback function.
 

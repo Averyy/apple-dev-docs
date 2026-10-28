@@ -23,7 +23,7 @@ var kCTFontTableJSTF: Int { get }
 kCTFontTableJSTF
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for justification.
 

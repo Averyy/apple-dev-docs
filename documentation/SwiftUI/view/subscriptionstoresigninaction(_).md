@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStoreSignInAction(_ action: (() -> ())?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can only have one sign in action for a view. If an ancestor view specifies a sign in action, using this modifier will replace the ancestor’s sign in action.
 

@@ -5,13 +5,13 @@
 
 Modify items in the keychain when the user’s data changes.
 
-#### Overview
+## Overview
 
 If, outside the flow of your app, the user changes a password that your app stores in the keychain, you may discover the change only when authentication with that password fails. In response, your app prompts the user for the new credentials and updates the keychain to reflect the change.
 
 During this process, if you try to store the new set of credentials using a call to the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) function, you may find that the operation fails. With primary attributes the same as an existing item, the new item can’t coexist with the old one in the keychain. Even if a primary attribute (such as the user name) does change and the add operation succeeds, you end up cluttering the keychain with old, abandoned items. These may be hard to distinguish from the one you actually need. To avoid these problems, update the existing item instead.
 
-##### Prepare a search query and new attributes
+### Prepare a search query and new attributes
 
 To update keychain items, you first need to find them. So an update begins with an implicit search just like the one explicitly performed by the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function. To control this implicit search, just as for the explicit search, you create a query dictionary:
 
@@ -33,7 +33,7 @@ let attributes: [String: Any] = [kSecAttrAccount as String: account,
 
 You provide the user name and password given by the user, passed through a `C``redentials` instance. It’s OK if the user name happens to be the same as the existing value and only the password data changes.
 
-##### Execute an update
+### Execute an update
 
 Using the search query and the new attributes, call the [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md) function:
 
@@ -45,7 +45,7 @@ guard status == errSecSuccess else { throw KeychainError.unhandledError(status: 
 
 Make sure you test the status returned by the call and handle any failure. When successful, the call modifies all matching items according to the attributes you provide.
 
-##### Delete items that you no longer need
+### Delete items that you no longer need
 
 If the user decides to log out of your server from within your app, you’ll want to remove the password item from the keychain as part of that process. Deleting an item is very much like updating it, except that it only requires the query dictionary. You can use the same query defined earlier, this time with a call to the [`SecItemDelete(_:)`](./secitemdelete%28_%29.md) function:
 

@@ -17,11 +17,11 @@ Extract a diagonal or construct a diagonal matrix.
 func diag(k: Int = 0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 If self is 1-D then a diagonal matrix is constructed with self on the `k`-th diagonal. If self is 2-D then the `k`-th diagonal is returned.
 
-##### See Also
+### See Also
 
 - [`diagonal(offset:axis1:axis2:stream:)`](./diagonal%28offset,axis1,axis2,stream%29.md)
 

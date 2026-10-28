@@ -5,11 +5,11 @@
 
 Specify how the GPU samples mipmaps in your textures.
 
-#### Overview
+## Overview
 
 By default, samplers sample data only from mipmap `0`. If your texture contains more than one mipmap, and you want it to sample the lower-level mipmaps, you need to specify this behavior when you create the texture sampler.
 
-##### Create the sampler in your app
+### Create the sampler in your app
 
 If you’re creating an [`MTLSamplerState`](./mtlsamplerstate.md) instance, create the [`MTLSamplerDescriptor`](./mtlsamplerdescriptor.md) instance and set its [`mipFilter`](./mtlsamplerdescriptor/mipfilter.md) property. The following code uses linear filtering for the minification and magnification filter, and uses linear filtering for mipmaps. This combination is usually called *trilinear filtering*. With this configuration, the GPU chooses the two mipmaps nearest in size and generates a sample by linearly filtering four pixels from each mipmap. Then it blends those two values with a linear interpolation to generate the final sample.
 
@@ -37,7 +37,7 @@ id<MTLSamplerState> sampler = [_device newSamplerStateWithDescriptor: descriptor
 
 Alternatively, any of these filters could filter from the nearest pixel, instead of a linear filter, resulting in fewer sampled pixels but lower quality. Ultimately, you need to decide the right tradeoffs between sampling performance and quality for your app.
 
-##### Create the sampler in your shader
+### Create the sampler in your shader
 
 If you prefer to create samplers in your shader, specify the mipmap filtering there instead of in your app:
 

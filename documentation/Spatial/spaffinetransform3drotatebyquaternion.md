@@ -21,7 +21,7 @@ Returns a transform that results from rotating with the specified quaternion.
 static SPAffineTransform3D SPAffineTransform3DRotateByQuaternion(SPAffineTransform3D transform, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from rotating with the specified quaternion.
 

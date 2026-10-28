@@ -17,7 +17,7 @@ A logging metadata value.
 enum MetadataValue
 ```
 
-#### Overview
+## Overview
 
 `Logger.MetadataValue` is a string, array, or a dictionary literal convertible.
 

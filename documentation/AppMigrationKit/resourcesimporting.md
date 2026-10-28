@@ -16,7 +16,7 @@ A protocol for exporting transportable resources in a streaming archive format.
 protocol ResourcesImporting : AppMigrationExtension
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol in your app extension to import transportable resources: files on disk that can you can copy as-is from the source device without converting to an intermediate transport format.
 

@@ -22,7 +22,7 @@ static var listenForConnections: NetService.Options { get }
 NSNetServiceListenForConnections
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that a TCP listener should be started for both IPv4 and IPv6 on the port specified by this service. If the listening port can’t be opened, the service calls its delegate’s [`netService(_:didNotPublish:)`](../../netservicedelegate/netservice%28_,didnotpublish%29.md) method to report the error.
 

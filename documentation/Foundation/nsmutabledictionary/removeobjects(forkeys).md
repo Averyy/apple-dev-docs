@@ -25,7 +25,7 @@ func removeObjects(forKeys keyArray: [Any])
 - (void) removeObjectsForKeys:(NSArray<id> *) keyArray;
 ```
 
-#### Discussion
+## Discussion
 
 If a key in `keyArray` does not exist, the entry is ignored.
 

@@ -21,7 +21,7 @@ var highlightMode: Bool { get set }
 @property BOOL highlightMode;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the status item is highlighted when it is clicked. The default value of this property is [`false`](../../Swift/false.md).
 

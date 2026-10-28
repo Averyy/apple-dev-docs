@@ -19,7 +19,7 @@ All frames within the given time range.
 final func frames(in timeRange: CMTimeRange) -> [CNScript.Frame]
 ```
 
-#### Return Value
+## Return Value
 
 An array of frames within the given time range.
 

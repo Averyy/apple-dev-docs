@@ -25,7 +25,7 @@ case quickTime
 kCMTimeRoundingMethod_QuickTime
 ```
 
-#### Discussion
+## Discussion
 
 This method uses [`CMTimeRoundingMethod.roundTowardZero`](./roundtowardzero.md) if converting from larger to smaller scale (more precision to less precision), but uses [`CMTimeRoundingMethod.roundAwayFromZero`](./roundawayfromzero.md) if converting from smaller to larger scale (less precision to more precision).
 

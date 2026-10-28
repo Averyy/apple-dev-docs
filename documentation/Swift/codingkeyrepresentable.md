@@ -21,7 +21,7 @@ A type that can be converted to and from a coding key.
 protocol CodingKeyRepresentable
 ```
 
-#### Overview
+## Overview
 
 With a `CodingKeyRepresentable` type, you can losslessly convert between a custom type and a `CodingKey` type.
 

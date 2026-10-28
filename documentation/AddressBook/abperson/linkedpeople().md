@@ -19,11 +19,11 @@ func linkedPeople() -> [Any]!
 - (NSArray *) linkedPeople;
 ```
 
-#### Return Value
+## Return Value
 
 The array of all person records that are linked to the person this record represents.
 
-#### Discussion
+## Discussion
 
 Linked records contain information about the same person, and typically come from different sources.
 

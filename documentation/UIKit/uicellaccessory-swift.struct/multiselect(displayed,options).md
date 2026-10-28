@@ -19,7 +19,7 @@ Creates a multiselect system accessory with the specified display state and conf
 static func multiselect(displayed: UICellAccessory.DisplayedState = .whenEditing, options: UICellAccessory.MultiselectOptions = MultiselectOptions()) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured multiselect cell accessory that changes apperance according to the cell’s selection state. The accessory displays as an empty circle for an unselected cell and as a filled circle with a checkmark for a selected cell. This accessory appears on the leading edge of the cell.
 

@@ -24,7 +24,7 @@ var configuration: WKWebExtensionController.Configuration { get }
 @property (nonatomic, copy, readonly) WKWebExtensionControllerConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Mutating the configuration has no effect on the web extension controller.
 

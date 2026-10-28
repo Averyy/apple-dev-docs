@@ -10,7 +10,7 @@ Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with you
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create and display 2D shapes in your visionOS app, using SwiftUI views that adopt the [`Shape`](../SwiftUI/shape.md) protocol, including your custom types.
 
@@ -25,7 +25,7 @@ The following image shows the main view of the app, which draws four shapes:
 
 SwiftUI defines the `Circle` and `Rectangle` types, and the sample defines the custom types `Triangle` and `Line`.
 
-##### Add existing shapes from SwiftUI to a view
+### Add existing shapes from SwiftUI to a view
 
 The app’s main view draws the outline of a circle and a rectangle by adding an instance of [`Circle`](../SwiftUI/circle.md) and [`Rectangle`](../SwiftUI/rectangle.md), respectively.
 
@@ -59,7 +59,7 @@ struct ShapesView: View {
 
 The [`stroke(_:lineWidth:)`](../SwiftUI/shape/stroke%28_,linewidth%29.md) method sets the thickness of the line that the shape uses to draw itself, and the [`frame(width:height:alignment:)`](../SwiftUI/view/frame%28width,height,alignment%29.md) method puts the shape inside an invisible view.
 
-##### Create custom shape types
+### Create custom shape types
 
 This sample defines custom shape types for lines and triangles that draw themselves by adopting the [`Shape`](../SwiftUI/shape.md) protocol and implementing a custom [`Path`](../SwiftUI/path.md) method.
 
@@ -158,7 +158,7 @@ struct ShapesView: View {
 
 Each vertex uses SwiftUI coordinates. The origin of this coordinate system is in the upper-left corner, and the y-axis increases in a downward direction.
 
-##### Add customizations to shape types
+### Add customizations to shape types
 
 To draw a line with dashes, add a `dashed(_:)` method to the `Line` type, which the sample puts in an extension.
 
@@ -206,9 +206,9 @@ The shapes view calls this method to create a dashed line based on the stroke wi
 
 In this sample, the view draws each line segment one-and-a-half times longer than the gaps between adjacent line segments.
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Creating 3D entities with RealityKit](./creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.

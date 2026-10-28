@@ -20,7 +20,7 @@ var uuid: UUID { get set }
 @property (copy, readwrite) NSUUID * uuid;
 ```
 
-#### Discussion
+## Discussion
 
 The framework autogenerates the device UUID.
 

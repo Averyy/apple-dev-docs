@@ -23,7 +23,7 @@ static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidC
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.DidChangeMessage`](../../userdefaults/didchangemessage.md).
 

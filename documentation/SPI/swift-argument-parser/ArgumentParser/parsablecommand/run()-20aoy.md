@@ -9,19 +9,13 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: method  
 **Role**: Instance Method
 
-The behavior or functionality of this command.
+Inherited from `ParsableCommand.run()`.
 
 ## Declaration
 
 ```swift
 mutating func run() throws
 ```
-
-#### Discussion
-
-Implement this method in your `ParsableCommand`-conforming type with the functionality that this command represents.
-
-This method has a default implementation that prints the help screen for this command.
 
 
 ---

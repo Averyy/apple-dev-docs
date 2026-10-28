@@ -20,7 +20,7 @@ func ODQuerySynchronize(_ query: ODQueryRef!)
 extern void ODQuerySynchronize(ODQueryRef query);
 ```
 
-#### Discussion
+## Discussion
 
 If `inQuery` was originally scheduled in a run loop with [`ODQueryScheduleWithRunLoop(_:_:_:)`](./odqueryschedulewithrunloop%28_,_,_%29.md), the query’s callback function is called with `inResults` set to `NULL`, `inError.error` set to `kODErrorQuerySynchronize`, and `inError.domain` set to `kODErrorDomainFramework`.
 

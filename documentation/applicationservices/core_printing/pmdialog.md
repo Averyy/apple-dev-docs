@@ -11,7 +11,7 @@ An opaque type that represents a custom printing dialog.
 typedef struct OpaquePMDialog* PMDialog;
 ```
 
-#### Overview
+## Overview
 
 This data type is used by functions that are not recommended or deprecated.
 

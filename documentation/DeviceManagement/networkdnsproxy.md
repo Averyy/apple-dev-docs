@@ -19,11 +19,11 @@ The declaration to configure DNS proxy settings.
 object NetworkDNSProxy
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.network.dns-proxy` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.network.dns-proxy` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a DNS proxy using a Network Extension app.
 

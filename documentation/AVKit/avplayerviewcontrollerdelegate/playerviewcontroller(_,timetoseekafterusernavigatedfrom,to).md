@@ -23,11 +23,11 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 - [Working with interstitial content](../working-with-interstitial-content.md)
 
-#### Return Value
+## Return Value
 
 The time at which to begin playback.
 
-#### Discussion
+## Discussion
 
 The framework calls this method prior to beginning playback after a user-initiated scrubbing request. You can return a time value other than the specified target time if needed to enforce certain business rules. For instance, you may want to return a different time to prevent users from skipping past ad breaks in your program.
 

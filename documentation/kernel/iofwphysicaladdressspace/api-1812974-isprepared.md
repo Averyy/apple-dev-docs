@@ -12,7 +12,7 @@ inline bool isPrepared(
  none. ) ;
 ```
 
-#### Return Value
+## Return Value
 
 returns true if prepared, else false
 

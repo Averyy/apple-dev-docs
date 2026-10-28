@@ -5,7 +5,7 @@
 
 Use direct methods to solve systems of equations where the coefficient matrix is sparse.
 
-#### Overview
+## Overview
 
 Direct methods offer high-precision solving with a simple API when compared to iterative methods. The code example below uses sparse Cholesky factorization to solve the following equation:
 
@@ -17,7 +17,7 @@ Note that *A* is sparse. Some entries (those that are blank) are zero. For small
 
 The code in this article performs a sparse Cholesky factorization, equivalent to calling the LAPACK function `dpotrf_(_:_:_:_:_:)` on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric positive-definite (that is, *A=Aᵀ),* and all eigenvalues are greater than zero. A sufficient, but not necessary, condition is that the matrix is diagonally dominant (that is, the sum of the absolute values of the off-diagonal entries in each row or column is less than the value of the diagonal). This is the case for the above matrix.
 
-##### Create the matrix structure
+### Create the matrix structure
 
 Use the code below to define the matrix structure. As [Creating sparse matrices](./creating-sparse-matrices.md) explains, because *A* is symmetric, it stores only half of the data.
 
@@ -70,7 +70,7 @@ SparseMatrixStructure structure = {
 };
 ```
 
-##### Create and factorize the matrix
+### Create and factorize the matrix
 
 The [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-8gl6j.md) function performs the actual Cholesky factorization, finding *L* such that *A = LLᵀ*.
 
@@ -105,7 +105,7 @@ __auto_type LLT = SparseFactor(SparseFactorizationCholesky, A);
 
 If the factorization function encounters an error, the code prints an error message and terminates. You may instead want to capture the error by using the optional [`SparseSymbolicFactorOptions`](./sparsesymbolicfactoroptions.md) parameter and set the [`reportError`](./sparsesymbolicfactoroptions/reporterror.md) parameter to a user-supplied error-handling routine. The returned [`SparseOpaqueFactorization_Double`](./sparseopaquefactorization_double.md) structure reflects the error.
 
-##### Solve the equation
+### Solve the equation
 
 Use the factorization to solve the equation. The right-hand-side and solution vectors are arrays that you wrap in [`DenseVector_Double`](./densevector_double.md) structures. The actual values of `x` don’t matter because the function overwrites them.
 

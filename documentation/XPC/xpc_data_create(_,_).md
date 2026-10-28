@@ -25,11 +25,11 @@ func xpc_data_create(_ bytes: UnsafeRawPointer?, _ length: Int) -> xpc_object_t
 extern xpc_object_txpc_data_create(const void *bytes, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 A new data object.
 
-#### Discussion
+## Discussion
 
 This method will copy the buffer given into internal storage. After calling this method, it is safe to dispose of the given buffer.
 

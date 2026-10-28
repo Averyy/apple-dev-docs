@@ -23,7 +23,7 @@ struct FileSource
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 Use this type to search the metadata of your app’s custom file types. Configure the source with one or more directories for the tool to search. During a query, the Spotlight considers only the previously indexed files in those directories. When it finds a match, the tool delivers the item and any attributes you specify in the [`fetchAttributes`](./filesource/fetchattributes.md) property to the model for consideration.
 

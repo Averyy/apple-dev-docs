@@ -25,7 +25,7 @@ func CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(_ collectio
 extern CFArrayRefCTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(CTFontCollectionRef collection, CTFontCollectionSortDescriptorsCallback sortCallback, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 An array of font descriptors matching the criteria of the collection sorted by the results of the sorting callback function.
 

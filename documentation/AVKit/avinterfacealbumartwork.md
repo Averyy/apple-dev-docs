@@ -12,7 +12,7 @@ Base class representing album artwork or cover art for media content.
 @interface AVInterfaceAlbumArtwork : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a concrete subclass such as @c AVInterfaceURLAlbumArtwork to create artwork instances.
 

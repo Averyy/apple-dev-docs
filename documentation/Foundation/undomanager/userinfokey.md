@@ -25,7 +25,7 @@ struct UserInfoKey
 typedef NSString * NSUndoManagerUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 Extend this type with the names of user info keys you want to associate with undo actions, like this:
 

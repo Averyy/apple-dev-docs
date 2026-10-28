@@ -25,7 +25,7 @@ static let negateBooleanTransformerName: NSValueTransformerName
 extern NSValueTransformerName const NSNegateBooleanTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 This transformer is reversible.
 

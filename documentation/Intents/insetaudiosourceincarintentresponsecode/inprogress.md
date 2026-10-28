@@ -24,7 +24,7 @@ case inProgress
 INSetAudioSourceInCarIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the audio source information and are working on it, but that you haven’t yet confirmed completion of the change.
 

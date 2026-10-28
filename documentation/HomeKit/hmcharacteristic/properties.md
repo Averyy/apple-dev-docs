@@ -24,7 +24,7 @@ var properties: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * properties;
 ```
 
-#### Discussion
+## Discussion
 
 Test a characteristic’s [`properties`](./properties.md) array for any of the constants listed in [Characteristic Properties](../characteristic-properties.md) to learn something about the corresponding characteristic. For example, you can create a readability Boolean in an extension to the [`HMCharacteristic`](../hmcharacteristic.md) class by testing for [`HMCharacteristicPropertyReadable`](../hmcharacteristicpropertyreadable.md):
 

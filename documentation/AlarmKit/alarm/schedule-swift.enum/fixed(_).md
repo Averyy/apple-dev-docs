@@ -17,7 +17,7 @@ A one-shot alarm that fires at a specific time, not a time relative to the curre
 case fixed(Date)
 ```
 
-#### Discussion
+## Discussion
 
 You can use `fixed` for events where the time won’t vary based on where the person is located. For example, like alerting the time of a sports game.
 

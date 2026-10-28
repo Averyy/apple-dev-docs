@@ -25,7 +25,7 @@ var longEraSymbols: [String]! { get set }
 @property (copy, null_resettable) NSArray<NSString *> * longEraSymbols;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing `NSString` objects representing the era symbols for the receiver (for example, {“Before Common Era”, “Common Era”}).
 

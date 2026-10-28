@@ -25,7 +25,7 @@ protocol CancellableIntent : AppIntent
 
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 
-#### Overview
+## Overview
 
 This protocol adds cancellation support to your app intent types. Use it to let the system know that you need additional time to perform cleanup operations when your app intent receives a cancellation notification. To use this protocol, use the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](./cancellableintent/withintentcancellationhandler%28operation,oncancel,isolation%29.md) method to wrap your app intent’s task. With this method in place, the system gives your code extra time to handle cancellation before the app intent’s task ends.
 

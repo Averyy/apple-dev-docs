@@ -13,7 +13,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 If your CMM supports the ColorSync Manager version 2.x, it should return the constant defined by the following enumeration when the Component Manager calls your CMM with the `kComponentVersionSelect` request code.
 

@@ -19,11 +19,11 @@ func groups() -> [Any]!
 - (NSArray *) groups;
 ```
 
-#### Return Value
+## Return Value
 
 An array of all the groups in the Address Book database.
 
-#### Discussion
+## Discussion
 
 If the database doesn’t contain any groups, this method returns an empty array.
 

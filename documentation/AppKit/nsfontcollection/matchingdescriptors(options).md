@@ -19,7 +19,7 @@ func matchingDescriptors(options: [NSFontCollectionMatchingOptionKey : NSNumber]
 - (NSArray<NSFontDescriptor *> *) matchingDescriptorsWithOptions:(NSDictionary<NSString *,NSNumber *> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The [`matchingDescriptors`](./matchingdescriptors.md) for the given options.
 

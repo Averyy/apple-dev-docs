@@ -25,7 +25,7 @@ var SparseFactorizationLDLT: SparseFactorization_t { get }
 SparseFactorizationLDLT
 ```
 
-#### Discussion
+## Discussion
 
 [`SparseFactorizationLDLT`](./sparsefactorizationldlt.md) provides a sparse counterpart to the dense *LDL__ᵀ* routines `ssytrf()` and `dsytrf()` from LAPACK.
 

@@ -15,7 +15,7 @@ The viewer’s selected immersive-viewing mode.
 var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the immersive-viewing mode that the current immersive-viewing mode transitions to.
 

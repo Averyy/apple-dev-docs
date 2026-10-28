@@ -25,7 +25,7 @@ var canWrap: Bool { get }
 @property (readonly) BOOL canWrap;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`false`](../../Swift/false.md) for most axis inputs.
 

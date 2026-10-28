@@ -22,7 +22,7 @@ var displayName: String { get }
 @property (copy, readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a printer name that is suitable for display in your app’s user interface. For printers you create yourself using the [`init(url:)`](./init%28url%29-1mibn.md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](./contactprinter%28_%29.md) method.
 

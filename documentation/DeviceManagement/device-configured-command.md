@@ -20,13 +20,13 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 - [Migrating managed devices](./migrating-managed-devices.md)
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 This command only works on Automated Device Enrollment (ADE) devices that have their cloud configuration set to await configuration.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +36,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

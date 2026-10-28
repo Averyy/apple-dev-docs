@@ -21,7 +21,7 @@ Initializes a newly created URL using the contents of the given data, relative t
 init?(dataRepresentation: Data, relativeTo base: URL?, isAbsolute: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 If the data representation isn’t a legal URL string as ASCII bytes, the URL object may not behave as expected. This initializer returns nil if it can’t form a valid URL from the provided string.
 

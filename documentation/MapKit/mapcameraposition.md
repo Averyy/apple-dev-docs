@@ -21,7 +21,7 @@ A structure that describes how to position the map’s camera within the map.
 struct MapCameraPosition
 ```
 
-#### Overview
+## Overview
 
 `MapCameraPosition` contains a variety of properties that you can use to control the semantic framings of the camera in relation to its position to the map, such as [`automatic`](./mapcameraposition/automatic.md), which frames the content of the map, and the [`camera`](./mapcameraposition/camera.md) property, which allows you to specify an explicit camera position.
 

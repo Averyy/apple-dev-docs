@@ -24,7 +24,7 @@ class HMTrigger
 @interface HMTrigger : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines the basic behavior of triggers, but does not itself specify any criteria for firing a trigger. Use instances of subclasses of [`HMTrigger`](./hmtrigger.md) to set up concrete triggers for actions.
 

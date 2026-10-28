@@ -24,7 +24,7 @@ var indexBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Each index represents the first control point of a curve segment. You are responsible for ensuring the buffer address of the range is not zero.
 

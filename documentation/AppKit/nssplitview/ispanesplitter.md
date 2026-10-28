@@ -17,7 +17,7 @@ The type of pane splitter.
 - (BOOL) isPaneSplitter;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the split view’s splitter is a bar that goes across the split view; [`false`](../../Swift/false.md) if the splitter is a thumb on the regular background pattern.
 

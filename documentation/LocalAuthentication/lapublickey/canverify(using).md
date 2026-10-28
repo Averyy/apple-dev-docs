@@ -23,7 +23,7 @@ func canVerify(using algorithm: SecKeyAlgorithm) -> Bool
 - (BOOL) canVerifyUsingSecKeyAlgorithm:(SecKeyAlgorithm) algorithm;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the algorithm you supply is valid for verifying signatures with the key.
 

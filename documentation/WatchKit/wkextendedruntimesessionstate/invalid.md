@@ -19,7 +19,7 @@ case invalid
 WKExtendedRuntimeSessionStateInvalid
 ```
 
-#### Discussion
+## Discussion
 
 The system passes a [`WKExtendedRuntimeSessionInvalidationReason`](../wkextendedruntimesessioninvalidationreason.md) value to the session delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](../wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md) method. Use this value to determine why the session became invalid.
 

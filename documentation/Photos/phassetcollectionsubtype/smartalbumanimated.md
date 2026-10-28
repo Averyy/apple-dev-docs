@@ -24,7 +24,7 @@ case smartAlbumAnimated
 PHAssetCollectionSubtypeSmartAlbumAnimated
 ```
 
-#### Discussion
+## Discussion
 
 Animated images can be imported to the Photos library in formats such as Animated GIF.
 

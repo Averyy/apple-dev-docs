@@ -20,7 +20,7 @@ typealias ARSCNDebugOptions = SCNDebugOptions
 typedef SCNDebugOptions ARSCNDebugOptions;
 ```
 
-#### Discussion
+## Discussion
 
 To use these debugging overlays, add them to the option set in the view’s [`debugOptions`](../SceneKit/scnscenerenderer/debugoptions.md) property (inherited from the [`SCNView`](../SceneKit/scnview.md) class).
 

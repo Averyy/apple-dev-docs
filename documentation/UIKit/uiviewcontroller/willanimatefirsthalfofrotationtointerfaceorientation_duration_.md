@@ -19,7 +19,7 @@ Sent to the view controller before performing the first half of a user interface
 - (void) willAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation) toInterfaceOrientation duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing.
 

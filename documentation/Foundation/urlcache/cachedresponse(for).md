@@ -29,11 +29,11 @@ func cachedResponse(for request: URLRequest) -> CachedURLResponse?
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Return Value
+## Return Value
 
 The cached URL response for `request`, or `nil` if no response has been cached.
 
-#### Discussion
+## Discussion
 
 If you override this method, you should also override [`getCachedResponse(for:completionHandler:)`](./getcachedresponse%28for,completionhandler%29.md).
 

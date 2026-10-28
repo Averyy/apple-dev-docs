@@ -23,11 +23,11 @@ func substroke(range: ClosedRange<CGFloat>) -> PKStroke
 
 - [Controlling stroke rendering for animation and editing](../controlling-stroke-rendering-for-animation-and-editing.md)
 
-#### Return Value
+## Return Value
 
 A new stroke containing only the control points within the specified range.
 
-#### Discussion
+## Discussion
 
 Maintains information for PencilKit rendering to make the copied part of the stroke render the same as the receiver. The returned stroke may have a `renderState` set to maintain this information.
 

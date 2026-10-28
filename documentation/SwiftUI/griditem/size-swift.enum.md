@@ -21,7 +21,7 @@ The size in the minor axis of one or more rows or columns in a grid layout.
 enum Size
 ```
 
-#### Overview
+## Overview
 
 Use a `Size` instance when you create a [`GridItem`](../griditem.md). The value tells a [`LazyHGrid`](../lazyhgrid.md) how to size its rows, or a [`LazyVGrid`](../lazyvgrid.md) how to size its columns.
 

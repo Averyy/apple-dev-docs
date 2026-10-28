@@ -23,7 +23,7 @@ var zIndex: Int { get set }
 @property (nonatomic) NSInteger zIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to determine the front-to-back ordering of items during layout. Items with higher index values appear on top of items with lower values. Items with the same value have an undetermined order.
 

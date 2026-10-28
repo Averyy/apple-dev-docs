@@ -25,7 +25,7 @@ protocol SNRequest : NSObjectProtocol
 @protocol SNRequest <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t create types that adopt `SNRequest`. Only Sound Analysis framework types adopt the protocol.
 

@@ -23,7 +23,7 @@ func IONotificationPortSetDispatchQueue(_ notify: IONotificationPortRef!, _ queu
 void IONotificationPortSetDispatchQueue(IONotificationPortRef notify, dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 A notification object may deliver notifications to a dispatch client.
 

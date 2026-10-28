@@ -5,11 +5,11 @@
 
 Activate and deactivate contexts according to user interaction.
 
-#### Overview
+## Overview
 
 To provide hints to Schoolwork about which tasks are most recently and commonly used, activate the context that represents that task.
 
-##### Activate contexts when users begin tasks
+### Activate contexts when users begin tasks
 
 When a person navigates to a point in your app that corresponds to a particular context, you activate that context with a call to the [`becomeActive()`](./clscontext/becomeactive%28%29.md) method.
 
@@ -26,7 +26,7 @@ override func viewDidAppear(_ animated: Bool) {
 }
 ```
 
-##### Deactivate contexts when users finish
+### Deactivate contexts when users finish
 
 Similarly, you deactivate a context when the user leaves the corresponding area of your app using a call to the [`resignActive()`](./clscontext/resignactive%28%29.md) method. In the case of the section view, you can add the call to the view controller’s [`viewWillDisappear(_:)`](../UIKit/uiviewcontroller/viewwilldisappear%28_%29.md) method:
 

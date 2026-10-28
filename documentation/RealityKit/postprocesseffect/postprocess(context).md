@@ -21,7 +21,7 @@ nonisolated
 mutating func postProcess(context: borrowing PostProcessEffectContext<any MTLCommandBuffer>)
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit calls this method after rendering the main scene, but before it is drawn on the screen, ideal for performing screen-space effects or drawing overlays.
 

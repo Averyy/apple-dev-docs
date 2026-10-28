@@ -25,7 +25,7 @@ class func expression(forFetch fetch: NSExpression, context: NSExpression, count
 + (NSExpression *) expressionForFetch:(NSExpression *) fetch context:(NSExpression *) context countOnly:(BOOL) countFlag;
 ```
 
-#### Return Value
+## Return Value
 
 An expression which will evaluate to the result of executing a fetch request (from `fetch`) on a managed object context (from `context`).
 

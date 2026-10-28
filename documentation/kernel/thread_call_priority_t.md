@@ -15,7 +15,7 @@ typedef enum thread_call_priority_t : unsigned int {
 } thread_call_priority_t;
 ```
 
-#### Overview
+## Overview
 
 Thread call priorities should not be assumed to have any specific numerical value; they should be interpreted as importances or roles for work items, priorities for which will be reasonably managed by the subsystem.
 

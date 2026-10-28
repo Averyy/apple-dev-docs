@@ -21,7 +21,7 @@ optional func nowPlayingTemplateAlbumArtistButtonTapped(_ nowPlayingTemplate: CP
 - (void) nowPlayingTemplateAlbumArtistButtonTapped:(CPNowPlayingTemplate *) nowPlayingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 When CarPlay calls this method on your observer, you should present or push a new template that displays the content of the current album, playlist or podcast.
 

@@ -24,7 +24,7 @@ func register(_ viewClass: AnyClass?, forAnnotationViewWithReuseIdentifier ident
 - (void) registerClass:(Class) viewClass forAnnotationViewWithReuseIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register one or more views that you use to display annotations on your map. Register your classes before adding any annotations to the map.
 

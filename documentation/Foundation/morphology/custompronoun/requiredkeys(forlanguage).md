@@ -23,11 +23,11 @@ Returns a collection of the custom pronoun keys required by this language.
 static func requiredKeys(forLanguage language: String) -> [PartialKeyPath<Morphology.CustomPronoun>]
 ```
 
-#### Return Value
+## Return Value
 
 The keys required for the given language.
 
-#### Discussion
+## Discussion
 
 If any of the required keys for a given language are unset, calling [`setCustomPronoun(_:forLanguage:)`](../setcustompronoun%28_,forlanguage%29.md) for that language with an incomplete [`Morphology.CustomPronoun`](../custompronoun.md) instance throws an error.
 

@@ -24,7 +24,7 @@ case cfsocks4ErrorIdentdFailed
 kCFSOCKS4ErrorIdentdFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error is specific to SOCKS4.
 

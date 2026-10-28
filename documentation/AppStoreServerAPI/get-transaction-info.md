@@ -14,7 +14,7 @@ Get information about a single transaction for your app.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to get transaction information for any transaction identifier, including original transaction identifiers.  This endpoint supports all in-app purchase types, including consumable, non-consumable, non-renewing subscriptions, and auto-renewable subscriptions. It also supports transactions that your app marked as finished using [`finish()`](../StoreKit/transaction/finish%28%29.md) or [`finishTransaction(_:)`](../StoreKit/skpaymentqueue/finishtransaction%28_%29.md) in StoreKit.
 

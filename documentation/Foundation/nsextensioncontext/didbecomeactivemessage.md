@@ -21,7 +21,7 @@ A message the system sends when the extension’s host app moves from the inacti
 struct DidBecomeActiveMessage
 ```
 
-#### Overview
+## Overview
 
 You can use this message to adjust your extension’s activity when the host app becomes active.
 

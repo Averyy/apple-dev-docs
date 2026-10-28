@@ -17,11 +17,11 @@ Retrieves an MMS message that matches the given identifiers.
 final func receiveMessage(using cellularServiceID: CellularServiceID, messageID: MMSMessageID) async throws -> MMSMessage
 ```
 
-#### Return Value
+## Return Value
 
 The message matching the specified identifiers.
 
-#### Discussion
+## Discussion
 
 You get the `cellularServiceID` and `messageID` from an [`MMSService.IncomingMessageNotification`](./incomingmessagenotification.md) that you receive from the [`incomingMessageNotifications`](./incomingmessagenotifications.md) asynchronous sequence.
 

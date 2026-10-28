@@ -15,7 +15,7 @@ A protocol that configures and manages communication between the extension and t
 protocol AccessoryDataProviderConfiguration : AppExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryDataProvider`](./accessorydataprovider.md) protocol uses this configuration type to establish communication channels with the system.
 

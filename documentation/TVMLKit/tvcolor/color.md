@@ -21,7 +21,7 @@ var color: UIColor? { get }
 @property (nonatomic, readonly, nullable) UIColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 Only available when [`colorType`](./colortype.md) is set to [`TVColorType.plain`](../tvcolortype/plain.md).
 

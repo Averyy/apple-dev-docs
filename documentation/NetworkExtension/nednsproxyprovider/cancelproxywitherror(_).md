@@ -23,7 +23,7 @@ func cancelProxyWithError(_ error: (any Error)?)
 - (void) cancelProxyWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from within the proxy provider when you need to stop the proxy due to a network error that renders the proxy no longer viable.
 

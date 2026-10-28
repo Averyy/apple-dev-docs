@@ -24,7 +24,7 @@ class UIUpdateLink
 @interface UIUpdateLink : NSObject
 ```
 
-#### Overview
+## Overview
 
 With a *UI update link*, you can follow the progress of each UI update and express preferences about how those updates happen. Use a UI update link when you need precise and predictable control over the UI update process.
 

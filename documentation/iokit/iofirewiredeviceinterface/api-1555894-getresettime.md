@@ -16,7 +16,7 @@ Get time since last bus reset.
 IOReturn (*GetResetTime)(IOFireWireLibDeviceRef self, AbsoluteTime *outResetTime);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 

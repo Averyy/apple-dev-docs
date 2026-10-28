@@ -21,11 +21,11 @@ Creates and returns an mutable ordered set with a given initial capacity.
 + (instancetype) orderedSetWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable ordered set with initial capacity to hold `numItems` members.
 
-#### Discussion
+## Discussion
 
 Mutable ordered sets allocate additional memory as needed, so `numItems` simply establishes the set’s initial capacity.
 

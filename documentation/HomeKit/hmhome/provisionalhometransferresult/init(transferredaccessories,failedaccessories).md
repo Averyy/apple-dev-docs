@@ -16,7 +16,7 @@ Creates a structure that describes the outcome of a provisional home transfer.
 init(transferredAccessories: [HMHome.ProvisionalHomeTransferResult.TransferredAccessory], failedAccessories: [HMHome.ProvisionalHomeTransferResult.FailedAccessory])
 ```
 
-#### Return Value
+## Return Value
 
 The outcome of transferring a provisional home to a home hub.
 

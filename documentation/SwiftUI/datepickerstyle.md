@@ -21,7 +21,7 @@ A type that specifies the appearance and interaction of all date pickers within 
 @preconcurrency protocol DatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current date picker style for a view hierarchy, use the [`datePickerStyle(_:)`](./view/datepickerstyle%28_%29.md) modifier.
 

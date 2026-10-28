@@ -17,7 +17,7 @@ Generate normally distributed random numbers.
 func normal(_ shape: some Collection<Int> = [], type: (some HasDType & BinaryFloatingPoint).Type = Float.self, loc: Float = 0, scale: Float = 1, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Generate an array of random numbers using the optional shape.  The result will be of the given `type`.
 

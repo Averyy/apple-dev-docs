@@ -11,9 +11,9 @@ Read the state of an achievement release and related information.
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

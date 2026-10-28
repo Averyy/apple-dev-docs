@@ -24,7 +24,7 @@ class GKBillowNoiseSource
 @interface GKBillowNoiseSource : GKCoherentNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Billow noise is similar to Perlin noise (see the [`GKPerlinNoiseSource`](./gkperlinnoisesource.md) class), but with more rounded features resembling natural phenomena such as treetops and hills.
 

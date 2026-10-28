@@ -21,11 +21,11 @@ typealias SecTransformCreateFP = (CFString, SecTransform, SecTransformImplementa
 typedef struct __CFError *(^(*)(const struct __CFString *, const void *, const struct OpaqueSecTransformImplementation *))(void) SecTransformCreateFP;
 ```
 
-#### Return Value
+## Return Value
 
 A [`SecTransformInstanceBlock`](./sectransforminstanceblock.md) that is used to create a new instance of a custom transform.
 
-#### Discussion
+## Discussion
 
 Provide a function of this type to the [`SecTransformCreate(_:_:)`](./sectransformcreate%28_,_%29.md) function when creating a custom transform. The function defined here returns an object of type [`SecTransformInstanceBlock`](./sectransforminstanceblock.md) that provides the implementation of all of the overrides necessary to create the custom transform. This returned [`SecTransformInstanceBlock`](./sectransforminstanceblock.md) is also where the “instance” variables for the custom transform may be defined.
 

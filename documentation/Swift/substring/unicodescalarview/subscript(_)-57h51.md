@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(index: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Element { get }
 ```
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

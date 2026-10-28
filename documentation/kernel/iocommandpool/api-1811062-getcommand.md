@@ -10,11 +10,11 @@ virtual IOCommand *getCommand(
  bool blockForCommand = true);
 ```
 
-#### Return Value
+## Return Value
 
 If the caller passes true in blockForCommand, getCommand guarantees that the result will be a pointer to an IOCommand object from the pool. If the caller passes false, s/he is responsible for checking whether a non-NULL pointer was returned.
 
-#### Overview
+## Overview
 
 The getCommand method is used to get a pointer to an object of type IOCommand from the pool.
 

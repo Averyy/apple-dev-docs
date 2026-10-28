@@ -25,11 +25,11 @@ class func success(with resolvedNoteContent: INNoteContent) -> Self
 + (instancetype) successWithResolvedNoteContent:(INNoteContent *) resolvedNoteContent;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteContentResolutionResult`](../innotecontentresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to identify the specific note content to create or modify.
 

@@ -31,7 +31,7 @@ protocol SKProductsRequestDelegate : SKRequestDelegate
 
 - [Fetching product information from the App Store](./fetching-product-information-from-the-app-store.md)
 
-#### Overview
+## Overview
 
 The [`SKProductsRequestDelegate`](./skproductsrequestdelegate.md) protocol declares methods that are implemented by the delegate of an [`SKProductsRequest`](./skproductsrequest.md) object. The delegate receives the product information that the product request referred to. Your app uses this information when presenting products to users in its in-app store.
 

@@ -21,7 +21,7 @@ var bottomAccessory: UITabAccessory? { get set }
 @property (nonatomic, strong, nullable) UITabAccessory * bottomAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `nil`.
 

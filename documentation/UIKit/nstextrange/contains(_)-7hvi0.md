@@ -24,7 +24,7 @@ func contains(_ location: any NSTextLocation) -> Bool
 - (BOOL) containsLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the location is in the range otherwise `false` .
 

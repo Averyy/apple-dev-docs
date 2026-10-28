@@ -19,15 +19,15 @@ func LSCanURLAcceptURL(_ inItemURL: CFURL, _ inTargetURL: CFURL, _ inRoleMask: L
 OSStatus LSCanURLAcceptURL(CFURLRef inItemURL, CFURLRef inTargetURL, LSRolesMask inRoleMask, LSAcceptanceFlags inFlags, Boolean *outAcceptsItem);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 If the item URL’s scheme is `file` (designating either a file or a directory), the acceptance test is based on the designated item’s filename extension, file type, and creator signature, along with the role specified by the `inRolesMask` parameter; otherwise, it is based on the URL scheme (such as `http`, `ftp`, or `mailto`).
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

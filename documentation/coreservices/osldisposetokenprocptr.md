@@ -20,11 +20,11 @@ typealias OSLDisposeTokenProcPtr = (UnsafeMutablePointer<AEDesc>?) -> OSErr
 typedef OSErr (*OSLDisposeTokenProcPtr)(AEDesc *unneededToken);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your token disposal function should return `noErr` if it successfully disposed of the token and `errAEEventNotHandled` if it can’t dispose of the token. When the Apple Event Manager receives the result code `errAEEventNotHandled` after calling a token disposal function, it attempts to use other methods of disposing of the specified token, such as calling an equivalent system token disposal function if one is available or, if that fails, by calling [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md).
 
-#### Discussion
+## Discussion
 
 The Apple Event Manager calls your token disposal function whenever it needs to dispose of a token. It also calls your disposal function when your application calls the [`AEDisposeToken(_:)`](./api-1446783-aedisposetoken.md) function. If your application does not provide a token disposal function, the Apple Event Manager calls [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) instead.
 

@@ -19,7 +19,7 @@ var label: String { get set }
 @property (nonatomic, copy) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 The label should be a very short, localized string that identifies the purpose of the region, but does not necessarily convey the imagery displayed in that region.
 

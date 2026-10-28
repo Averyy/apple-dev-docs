@@ -20,7 +20,7 @@ The nodes that branch from a node to form part of a blend tree.
 var sources: [any BlendTreeNode]
 ```
 
-#### Discussion
+## Discussion
 
 This node combines the animations of each member of this array to a single animation that represents a *blend* of the sources. If a source is a [`BlendTreeSourceNode`](../blendtreesourcenode.md), this structure blends its animation into the output. If a source is a [`BlendTreeBlendNode`](../blendtreeblendnode.md), this structure blends the output of its sources into this structure’s output.
 

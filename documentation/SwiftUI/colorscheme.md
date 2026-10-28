@@ -21,7 +21,7 @@ The possible color schemes, corresponding to the light and dark appearances.
 enum ColorScheme
 ```
 
-#### Overview
+## Overview
 
 You receive a color scheme value when you read the [`colorScheme`](./environmentvalues/colorscheme.md) environment value. The value tells you if a light or dark appearance currently applies to the view. SwiftUI updates the value whenever the appearance changes, and redraws views that depend on the value. For example, the following [`Text`](./text.md) view automatically updates when the user enables Dark Mode:
 

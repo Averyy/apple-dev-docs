@@ -23,11 +23,11 @@ optional func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier
 - (NSToolbarItem *) toolbar:(NSToolbar *) toolbar itemForItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier willBeInsertedIntoToolbar:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSToolbarItem`](../nstoolbaritem.md) object, or `nil` if no toolbar item is available for the specified identifier.
 
-#### Discussion
+## Discussion
 
 Use this method to create new [`NSToolbarItem`](../nstoolbaritem.md) objects when the toolbar asks for them. If your toolbar item uses a custom view, make sure that view is fully configured before you return the item. The toolbar becomes the owner of the returned item, but can display the item either in the toolbar or the customization palette.
 

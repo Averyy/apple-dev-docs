@@ -40,7 +40,7 @@ var pinTintColor: NSColor! { get set }
 @property (atomic, strong, null_resettable) NSColor * pinTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify custom a custom color for your pin. You can also specify one of the standard pin colors.
 

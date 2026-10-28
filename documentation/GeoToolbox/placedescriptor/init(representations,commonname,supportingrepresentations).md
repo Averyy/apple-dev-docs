@@ -21,7 +21,7 @@ Creates a place descriptor, suitable for use when searching or retrieving rich d
 init(representations: [PlaceDescriptor.PlaceRepresentation], commonName: String?, supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation] = [])
 ```
 
-#### Discussion
+## Discussion
 
 The `representations` property needs to have at least one member. Sort arrays with original or most accurate representations first.
 

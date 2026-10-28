@@ -25,7 +25,7 @@ func SCNVector3FromGLKVector3(_ vector: GLKVector3) -> SCNVector3
 static SCNVector3 SCNVector3FromGLKVector3(GLKVector3 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A three-element SceneKit vector structure representing the same vector as the input parameter.
 

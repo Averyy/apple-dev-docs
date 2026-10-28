@@ -21,7 +21,7 @@ Gets a system font that uses the specified style, design, and weight.
 static func system(_ style: Font.TextStyle, design: Font.Design? = nil, weight: Font.Weight? = nil) -> Font
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a system font that has the specified properties. The following example creates a system font with the [`Font.TextStyle.body`](./textstyle/body.md) text style, a [`Font.Design.serif`](./design/serif.md) design, and a [`bold`](./weight/bold.md) weight, and applies the font to a [`Text`](../text.md) view using the [`font(_:)`](../view/font%28_%29.md) view modifier:
 

@@ -22,7 +22,7 @@ var topShelfItems: [TVContentItem] { get }
 @property (readonly) NSArray<TVContentItem *> * topShelfItems;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is an empty array, the system falls back to the static image provided with the app.
 

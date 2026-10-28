@@ -25,7 +25,7 @@ class SCNText
 @interface SCNText : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929805@2x.png)
 

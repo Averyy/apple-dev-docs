@@ -15,7 +15,7 @@ The spelling state of the text.
 static let spellingState: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an integer. The default value of this key is 0, which indicates that there are no grammar or spelling errors. Specify a different value to indicate that a spelling or grammar error exists.
 

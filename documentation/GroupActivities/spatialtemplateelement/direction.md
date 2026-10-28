@@ -16,7 +16,7 @@ The initial orientation of the element in the shared coordinate space.
 var direction: SpatialTemplateElementDirection { get }
 ```
 
-#### Discussion
+## Discussion
 
 The direction you specify rotates the participant’s spatial Persona around the y-axis. This direction becomes the starting point for any further movements the person makes.
 

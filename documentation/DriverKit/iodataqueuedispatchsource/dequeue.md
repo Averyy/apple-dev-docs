@@ -18,7 +18,7 @@ Removes the next entry from the queue.
 kern_return_t Dequeue(IODataQueueClientDequeueEntryBlock callback);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, [`kIOReturnUnderrun`](../kioreturnunderrun.md) if the queue is empty, or [`kIOReturnError`](../kioreturnerror.md) if the queue is corrupt. See [Error Codes](../error-codes.md).
 

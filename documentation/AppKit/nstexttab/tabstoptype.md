@@ -21,7 +21,7 @@ var tabStopType: NSParagraphStyle.TextTabType { get }
 @property (readonly) NSTextTabType tabStopType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are listed in [`NSParagraphStyle.TextTabType`](../nsparagraphstyle/texttabtype.md).
 

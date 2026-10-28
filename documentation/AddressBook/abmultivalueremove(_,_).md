@@ -19,7 +19,7 @@ func ABMultiValueRemove(_ multiValue: ABMutableMultiValueRef!, _ index: CFIndex)
 extern bool ABMultiValueRemove(ABMutableMultiValueRef multiValue, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessfully, `false` otherwise.
 

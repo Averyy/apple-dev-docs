@@ -17,7 +17,7 @@ A no-operation log handler, used when no logging is required
 struct SwiftLogNoOpLogHandler
 ```
 
-#### Overview
+## Overview
 
 A log handler that silently discards all log messages.
 

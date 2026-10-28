@@ -23,7 +23,7 @@ var contentInsetsReference: UIContentInsetsReference { get set }
 @property (nonatomic) UIContentInsetsReference contentInsetsReference;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the reference point to use when defining [`contentInsets`](./contentinsets.md).
 

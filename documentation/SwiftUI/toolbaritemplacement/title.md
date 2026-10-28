@@ -18,7 +18,7 @@ A placement for items in the title area of the navigation bar.
 static var title: ToolbarItemPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the [`navigationTitle(_:)`](../view/navigationtitle%28_%29.md) modifier.
 

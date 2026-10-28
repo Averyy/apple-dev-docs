@@ -19,11 +19,11 @@ func characterIndexForInsertion(at point: NSPoint) -> Int
 - (NSUInteger) characterIndexForInsertionAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The character index for the insertion point.
 
-#### Discussion
+## Discussion
 
 This method should be used for insertion points associated with mouse clicks, drag events, and so forth. For other purposes, it is better to use `NSLayoutManager` methods.
 

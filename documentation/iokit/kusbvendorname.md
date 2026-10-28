@@ -14,7 +14,7 @@
 #define kUSBVendorName
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Use kUSBVendorID
 

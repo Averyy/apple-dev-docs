@@ -17,7 +17,7 @@ Parse the input after the option and expect it to be a value.
 static var next: DefaultAsFlagParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 For inputs such as `--foo foo`, this would parse `foo` as the value. However, the input `--foo --bar foo bar` would result in an error. Even though two values are provided, they don’t succeed each option. Parsing would result in an error such as the following:
 

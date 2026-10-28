@@ -23,7 +23,7 @@ var pauseOnWillResignActive: Bool { get set }
 @property (nonatomic) BOOL pauseOnWillResignActive;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If your application sets this to [`false`](../../Swift/false.md), it must explicitly set the [`isPaused`](./ispaused.md) property to [`true`](../../Swift/true.md) when the application resigns the active state.
 

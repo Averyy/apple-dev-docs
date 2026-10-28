@@ -25,7 +25,7 @@ class UIPreviewActionGroup
 @interface UIPreviewActionGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 When first displayed, the group appears as a single option in a peek quick action sheet. If the user selects the group, a submenu opens, displaying the child quick actions.
 

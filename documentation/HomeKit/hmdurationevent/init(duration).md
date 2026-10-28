@@ -24,7 +24,7 @@ init(duration: TimeInterval)
 - (instancetype) initWithDuration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized duration event.
 

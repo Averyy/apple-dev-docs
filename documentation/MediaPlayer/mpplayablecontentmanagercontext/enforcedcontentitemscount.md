@@ -24,7 +24,7 @@ var enforcedContentItemsCount: Int { get }
 @property (nonatomic, readonly) NSInteger enforcedContentItemsCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns [`NSIntegerMax`](../../ObjectiveC/nsintegermax.md) when the content server doesn’t limit the maximum number of items.
 

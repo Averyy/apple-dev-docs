@@ -29,7 +29,7 @@ class NSQueryGenerationToken
 
 - [Accessing data when the store changes](./accessing-data-when-the-store-changes.md)
 
-#### Overview
+## Overview
 
 When a managed object context is pinned to a specific generation of the app data, a query generation token will be associated with that context.
 

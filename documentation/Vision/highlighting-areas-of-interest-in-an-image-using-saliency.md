@@ -13,7 +13,7 @@ Quantify and visualize where people are likely to look in an image.
 - macOS 11.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: For more information about this sample code project, see [WWDC 2019 Session 222: Understanding Images in Vision Framework](https://developer.apple.com/videos/play/wwdc19/222/).
 

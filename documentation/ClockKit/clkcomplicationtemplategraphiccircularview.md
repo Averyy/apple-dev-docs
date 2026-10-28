@@ -21,7 +21,7 @@ final class CLKComplicationTemplateGraphicCircularView<Content> where Content : 
 
 - [Building complications with SwiftUI](./building-complications-with-swiftui.md)
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularview.md#3667259) shows the layout of the view and where the template might appear on the clock face.
 

@@ -16,7 +16,7 @@ A key for specifying the transport mechanism of the device.
 #define kIOHIDTransportKey
 ```
 
-#### Discussion
+## Discussion
 
 Keys that represent properties of a particular device. Can be added to your matching dictionary when refining searches for HID devices.
 

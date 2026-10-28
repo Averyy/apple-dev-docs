@@ -30,7 +30,7 @@ func runAction(_ action: SCNAction) async
 - (void) runAction:(SCNAction *) action completionHandler:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 The new action is processed the next time SceneKit prepares to render a frame.
 

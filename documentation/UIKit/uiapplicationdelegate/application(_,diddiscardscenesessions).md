@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didDiscardSceneSessions 
 - (void) application:(UIApplication *) application didDiscardSceneSessions:(NSSet<UISceneSession *> *) sceneSessions;
 ```
 
-#### Discussion
+## Discussion
 
 When the user removes a scene from the app switcher, UIKit calls this method before discarding the scene’s associated session object altogether. (UIKit also calls this method to discard scenes that it can no longer display.) If your app isn’t running, UIKit calls this method the next time your app launches.
 

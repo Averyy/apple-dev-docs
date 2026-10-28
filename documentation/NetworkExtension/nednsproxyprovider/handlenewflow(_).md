@@ -23,11 +23,11 @@ func handleNewFlow(_ flow: NEAppProxyFlow) -> Bool
 - (BOOL) handleNewFlow:(NEAppProxyFlow *) flow;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to [`true`](../../Swift/true.md) if the proxy implementation decides to handle the flow, or [`false`](../../Swift/false.md) if it instead decides to terminate the flow.
 
-#### Discussion
+## Discussion
 
 The system calls this method to deliver a new network data flow to the proxy provider implementation. Subclasses must override this method to perform whatever steps are necessary to ready the proxy to receive data from the flow.
 

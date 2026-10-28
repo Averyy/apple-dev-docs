@@ -21,7 +21,7 @@ func compositionRenderer() -> (any QCCompositionRenderer)!
 - (id<QCCompositionRenderer>) compositionRenderer;
 ```
 
-#### Return Value
+## Return Value
 
 A renderer object or `nil`, if the composition parameter view is not set to a renderer object.
 

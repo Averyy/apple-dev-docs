@@ -13,11 +13,11 @@
 typedef errno_t (*proto_plumb_handler)(ifnet_t ifp, protocol_family_t protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero value of the attach failed.
 
-#### Discussion
+## Discussion
 
 proto_plumb_handler is called to attach a protocol to an interface. A typical protocol plumb function would fill out an ifnet_attach_proto_param and call ifnet_attach_protocol.
 

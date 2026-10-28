@@ -16,7 +16,7 @@ The time zone at the destination location of the payment.
 Date freeCancellationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If you set `freeCancellationDate`, you need to set [`freeCancellationDateTimeZone`](./freecancellationdatetimezone.md) as well.
 

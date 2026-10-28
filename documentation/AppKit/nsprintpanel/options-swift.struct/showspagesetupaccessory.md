@@ -19,7 +19,7 @@ static var showsPageSetupAccessory: NSPrintPanel.Options { get }
 NSPrintPanelShowsPageSetupAccessory
 ```
 
-#### Discussion
+## Discussion
 
 Page setup fields that are already configured for display on the main portion of the Print panel appear there and not on this accessory panel.
 

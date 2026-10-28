@@ -21,7 +21,7 @@ A pixel format that contains multiple homogeneous planes represented by multiple
 protocol MultiplePlanePixelFormat : PixelFormat
 ```
 
-#### Overview
+## Overview
 
 Use multiple-plane pixel buffers to store image data as discrete planar buffers that represent individual channels.
 

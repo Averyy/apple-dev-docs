@@ -20,7 +20,7 @@ A notification posted when a new page becomes the current page.
 static let PDFViewPageChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

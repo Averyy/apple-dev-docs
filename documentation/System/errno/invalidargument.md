@@ -25,7 +25,7 @@ static var invalidArgument: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 One or more of the specified arguments wasn’t valid; for example, specifying an undefined signal to a signal or kill function.
 

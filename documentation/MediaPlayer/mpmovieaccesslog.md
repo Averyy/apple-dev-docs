@@ -23,7 +23,7 @@ class MPMovieAccessLog
 @interface MPMovieAccessLog : NSObject
 ```
 
-#### Overview
+## Overview
 
 The log presents these metrics as a collection of [`MPMovieAccessLogEvent`](./mpmovieaccesslogevent.md) instances and also makes it available in a textual format. A movie access log describes one uninterrupted period of playback. A movie player (an instance of the [`MPMoviePlayerController`](./mpmovieplayercontroller.md) class) can access this log from its [`accessLog`](./mpmovieplayercontroller/accesslog.md) property. All movie access log properties are read-only.
 

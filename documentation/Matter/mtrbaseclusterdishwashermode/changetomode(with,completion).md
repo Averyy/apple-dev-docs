@@ -29,7 +29,7 @@ func changeToMode(with params: MTRDishwasherModeClusterChangeToModeParams) async
 - (void) changeToModeWithParams:(MTRDishwasherModeClusterChangeToModeParams *) params completion:(void (^)(MTRDishwasherModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to change device modes.
 

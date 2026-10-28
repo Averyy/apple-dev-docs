@@ -25,11 +25,11 @@ func class_addMethod(_ cls: AnyClass?, _ name: Selector, _ imp: IMP, _ types: Un
 extern BOOL class_addMethod(Class cls, SEL name, IMP imp, const char *types);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if the method was added successfully, otherwise [`NO`](./no.md) (for example, the class already contains a method implementation with that name).
 
-#### Discussion
+## Discussion
 
 [`class_addMethod(_:_:_:_:)`](./class_addmethod%28_,_,_,_%29.md) will add an override of a superclass’s implementation, but will not replace an existing implementation in this class. To change an existing implementation, use [`method_setImplementation(_:_:)`](./method_setimplementation%28_,_%29.md).
 

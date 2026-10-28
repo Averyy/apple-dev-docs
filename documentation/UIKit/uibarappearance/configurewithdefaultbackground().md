@@ -23,7 +23,7 @@ func configureWithDefaultBackground()
 - (void) configureWithDefaultBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method replaces any previous values you specified for the bar appearance properties.
 

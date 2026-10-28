@@ -19,11 +19,11 @@ class func frameSize(forContentSize cSize: NSSize, horizontalScrollerClass: AnyC
 + (NSSize) frameSizeForContentSize:(NSSize) cSize horizontalScrollerClass:(Class) horizontalScrollerClass verticalScrollerClass:(Class) verticalScrollerClass borderType:(NSBorderType) type controlSize:(NSControlSize) controlSize scrollerStyle:(NSScrollerStyle) scrollerStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the frame for the specified `contentSize`.
 
-#### Discussion
+## Discussion
 
 For an existing scroll view, you can simply use the `frame` method and extract its size.
 

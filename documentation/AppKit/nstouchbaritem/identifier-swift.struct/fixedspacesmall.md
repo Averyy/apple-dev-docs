@@ -22,7 +22,7 @@ static let fixedSpaceSmall: NSTouchBarItem.Identifier
 extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierFixedSpaceSmall;
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier in the [`itemIdentifiers`](../../nstouchbar/itemidentifiers.md) array on an [`NSTouchBar`](../../nstouchbar.md) object and the system will instantiate the item for you.
 

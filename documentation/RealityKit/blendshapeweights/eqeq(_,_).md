@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two collections of weights are eq
 static func == (lhs: BlendShapeWeights, rhs: BlendShapeWeights) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the two collections of weights are equal. Otherwise, returns `false`.
 

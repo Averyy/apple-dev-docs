@@ -21,7 +21,7 @@ The character that precedes other characters, such as quotation marks, so that t
 var escapeCharacter: Character { get }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to backslash(`\`).
 

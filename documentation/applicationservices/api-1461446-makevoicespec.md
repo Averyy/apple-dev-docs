@@ -19,11 +19,11 @@ func MakeVoiceSpec(_ creator: OSType, _ id: OSType, _ voice: UnsafeMutablePointe
 OSErr MakeVoiceSpec(OSType creator, OSType id, VoiceSpec *voice);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 A voice specification structure is a unique voice ID usedby the Speech Synthesis Manager. Most voice management functionsexpect to be passed a pointer to a voice specification structure.When you already know the creator and ID for a voice, you shoulduse the `MakeVoiceSpec` functionto create such a structure rather than filling in the fields ofone directly. On exit, the voice specification structure pointedto by the `voice` parameter containsthe appropriate values. You should never set the fields of sucha structure directly. 
 

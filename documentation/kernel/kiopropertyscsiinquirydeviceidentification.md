@@ -13,7 +13,7 @@
 #define kIOPropertySCSIINQUIRYDeviceIdentification
 ```
 
-#### Discussion
+## Discussion
 
 Device Identification key.
 

@@ -24,11 +24,11 @@ class func darkenBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) darkenBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the darken-blend mode filter to an image. The effect targets lighter colors in the background image and darkens them, while darker colors remain unchanged. The result is the sum of the adjusted color values from both images.
 

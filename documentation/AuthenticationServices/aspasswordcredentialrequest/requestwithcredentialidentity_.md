@@ -19,7 +19,7 @@ Creates and initializes a password credential request object.
 + (instancetype) requestWithCredentialIdentity:(ASPasswordCredentialIdentity *) credentialIdentity;
 ```
 
-#### Return Value
+## Return Value
 
 The created object.
 

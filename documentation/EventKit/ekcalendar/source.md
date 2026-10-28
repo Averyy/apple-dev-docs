@@ -24,7 +24,7 @@ var source: EKSource! { get set }
 @property (nonatomic, strong, null_unspecified) EKSource * source;
 ```
 
-#### Discussion
+## Discussion
 
 This property can only be set for newly created calendar objects. This property is read-only after the first time it is set; setting a value to this property after the first time it is set will result in an error. Therefore, moving a calendar from one source to another is not supported.
 

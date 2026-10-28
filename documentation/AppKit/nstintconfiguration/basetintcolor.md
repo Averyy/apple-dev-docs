@@ -19,7 +19,7 @@ var baseTintColor: NSColor? { get }
 @property (strong, readonly, nullable) NSColor * baseTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the tint configuration wasn’t created using an [`NSColor`](../nscolor.md) object.
 

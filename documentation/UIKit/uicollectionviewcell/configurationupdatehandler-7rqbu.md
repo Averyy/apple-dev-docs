@@ -20,7 +20,7 @@ A block for handling updates to the cell’s configuration using the current sta
 @preconcurrency var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A configuration update handler provides an alternative approach to overriding [`updateConfiguration(using:)`](./updateconfiguration%28using%29.md) in a subclass. Set a configuration update handler to update the cell’s configuration using the new state in response to a configuration state change:
 

@@ -15,7 +15,7 @@ Applies the affine transform to the specified point.
 func transform(_ point: NSPoint) -> NSPoint
 ```
 
-#### Return Value
+## Return Value
 
 A point that represents a location in a transformed coordinate space.
 

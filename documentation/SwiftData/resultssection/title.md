@@ -21,7 +21,7 @@ The identifier of the section.
 let title: SectionTitle
 ```
 
-#### Discussion
+## Discussion
 
 This is the common value shared by all elements in this section, as determined by the `sectionBy` key path provided at creation.
 

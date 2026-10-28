@@ -25,7 +25,7 @@ var allowsFractionalUnits: Bool { get set }
 @property BOOL allowsFractionalUnits;
 ```
 
-#### Discussion
+## Discussion
 
 Fractional units may be used when a value cannot be exactly represented using the available units. For example, if minutes are not allowed, the value “1h 30m” could be formatted as “1.5h”.
 

@@ -15,11 +15,11 @@ virtual IOReturn getPixelInformation(
  IOPixelInformation *pixelInfo ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return information in the IOPixelInformation structure for the display mode with the passed ID, depth index and aperture. The aperture utilized by the system is always kIOFBSystemAperture. Drivers may define alternative apertures, being a view of the framebuffer in a different pixel format from the default.
 

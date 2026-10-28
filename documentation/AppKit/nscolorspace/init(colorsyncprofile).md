@@ -19,7 +19,7 @@ init?(colorSyncProfile prof: UnsafeMutableRawPointer)
 - (instancetype) initWithColorSyncProfile:(void *) prof;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSColorSpace` object or `nil` if initialization was not successful.
 

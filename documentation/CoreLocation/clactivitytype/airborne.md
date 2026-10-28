@@ -25,7 +25,7 @@ case airborne
 CLActivityTypeAirborne
 ```
 
-#### Discussion
+## Discussion
 
 Use this activity type for activities such as flying in an airplane or helicopter, paragliding, flying on a drone, skydiving, and so on. This activity also includes runway taxiing.
 

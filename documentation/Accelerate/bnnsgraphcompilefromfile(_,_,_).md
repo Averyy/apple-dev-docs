@@ -25,11 +25,11 @@ func BNNSGraphCompileFromFile(_ filename: UnsafePointer<CChar>, _ function: Unsa
 bnns_graph_t BNNSGraphCompileFromFile(const char *filename, const char *function, bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 A compiled graph object. If the operation fails, the graph object’s [`data`](./bnns_graph_t/data.md) property is `nil`.
 
-#### Discussion
+## Discussion
 
 Xcode automatically compiles a Core ML model package (files with an `.mlpackage` file extension) into an mlmodelc file. The following code compiles a [`bnns_graph_t`](./bnns_graph_t.md) instance from a file named `myModel.mlpackage` that you copy into the project.
 

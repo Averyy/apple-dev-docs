@@ -19,11 +19,11 @@ func UCDisposeCollator(_ collatorRef: UnsafeMutablePointer<CollatorRef?>!) -> OS
 OSStatus UCDisposeCollator(CollatorRef *collatorRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. 
 
-#### Discussion
+## Discussion
 
 To perform Unicode string comparison, you must supply locale and collation specifications to a collation function such as  [`UCCompareText(_:_:_:_:_:_:_:)`](./api-1390642-uccomparetext.md). You provide this information by means of a collator object, created via the function  [`UCCreateCollator(_:_:_:_:)`](./api-1390403-uccreatecollator.md). When finished with the collator object, you should dispose of it using the function `UCDisposeCollator`. 
 

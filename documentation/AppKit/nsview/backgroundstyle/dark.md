@@ -19,7 +19,7 @@ static var dark: NSView.BackgroundStyle { get }
 static const NSBackgroundStyle NSBackgroundStyleDark;
 ```
 
-#### Discussion
+## Discussion
 
 Light content contrasts well with this background.
 

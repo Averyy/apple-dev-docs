@@ -11,11 +11,11 @@ Returns the number of objects in the collection.
 virtual unsigned int getCount() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The number of objects in the collection.
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function.
 

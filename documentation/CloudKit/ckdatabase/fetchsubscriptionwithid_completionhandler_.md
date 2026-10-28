@@ -21,7 +21,7 @@ Fetches a specific subscription and delivers it to a completion handler.
 - (void) fetchSubscriptionWithID:(CKSubscriptionID) subscriptionID completionHandler:(void (^)(CKSubscription *subscription, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

@@ -17,7 +17,7 @@ Protocol for caches that can update and compute attention from their own storage
 protocol KVCacheAttentionProtocol : KVCache
 ```
 
-#### Overview
+## Overview
 
 Used by compressed caches such as [`VarianceNormalizedKVCache`](./variancenormalizedkvcache.md) that keep completed tiles in a non-materialized representation and compute scores/values via cache-native kernels (e.g. `quantizedMM` in a rotated domain).
 

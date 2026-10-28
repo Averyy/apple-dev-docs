@@ -21,11 +21,11 @@ static func current() -> SRAbsoluteTime
 extern SRAbsoluteTime SRAbsoluteTimeGetCurrent();
 ```
 
-#### Return Value
+## Return Value
 
 The absolute time of the current device.
 
-#### Discussion
+## Discussion
 
 Each device has their own absolute time. This function returns the absolute time of the [`current`](../srdevice/current.md) device.
 

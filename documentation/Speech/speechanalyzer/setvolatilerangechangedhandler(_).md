@@ -20,7 +20,7 @@ A closure that the analyzer calls when the volatile range changes.
 final func setVolatileRangeChangedHandler(_ handler: sending ((CMTimeRange, Bool, Bool) -> Void)?)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this handler to manage audio input resources and monitor progress.
 

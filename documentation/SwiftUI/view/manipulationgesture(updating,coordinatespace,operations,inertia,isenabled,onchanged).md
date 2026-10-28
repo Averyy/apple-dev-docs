@@ -16,11 +16,11 @@ Adds a manipulation gesture to this view without allowing this view to be manipu
 nonisolated func manipulationGesture(updating gestureState: Binding<Manipulable.GestureState>, coordinateSpace: some CoordinateSpaceProtocol = .local, operations: Manipulable.Operation.Set = .all, inertia: Manipulable.Inertia = .medium, isEnabled: Bool = true, onChanged: ((Manipulable.Event) -> Void)? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with a manipulation gesture attached but that isn’t manipulable itself.
 
-#### Discussion
+## Discussion
 
 Use this view modifier alongside [`manipulable(using:)`](./manipulable%28using%29.md) when you want to allow a person to manipulate a view by interacting with a different view.
 

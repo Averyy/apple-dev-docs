@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store any arbitrary data related to the trip that you may need at a later date, or by another part of your app that consumes trips.
 

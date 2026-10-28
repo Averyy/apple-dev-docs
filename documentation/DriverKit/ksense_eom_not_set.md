@@ -16,7 +16,7 @@
 kSENSE_EOM_Not_Set
 ```
 
-#### Discussion
+## Discussion
 
 End Of Medium bit is not set.
 

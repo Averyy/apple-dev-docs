@@ -19,11 +19,11 @@ func PMPresetGetAttributes(_ preset: PMPreset, _ attributes: UnsafeMutablePointe
 OSStatus PMPresetGetAttributes(PMPreset preset, CFDictionaryRef  _Nullable *attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 A preset has associated with it a dictionary containing the preset identifier, the localized name, and a description of the environment for which the preset is intended. In addition to these standard attributes, the preset you specify may contain additional attributes that reflect custom print settings.
 

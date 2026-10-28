@@ -21,7 +21,7 @@ A type that represents data in the electronic publication (EPUB) format.
 extern UTType * const UTTypeEPUB;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `org.idpf.epub-container`.
 

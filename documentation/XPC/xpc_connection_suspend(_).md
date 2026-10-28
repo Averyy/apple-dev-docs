@@ -25,7 +25,7 @@ func xpc_connection_suspend(_ connection: xpc_connection_t)
 extern void xpc_connection_suspend(xpc_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 All calls to [`xpc_connection_suspend(_:)`](./xpc_connection_suspend%28_%29.md) must be balanced with calls to [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md) before releasing the last reference to the connection.
 

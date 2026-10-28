@@ -29,7 +29,7 @@ class UISceneConfiguration
 - [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Overview
+## Overview
 
 Use a [`UISceneConfiguration`](./uisceneconfiguration.md) object to specify information that UIKit can use to create a new scene for your app. Specifically, you must provide the class of the specific scene you want, the class of the scene delegate object your app uses to manage scenes of that type, and a storyboard containing the scene’s initial view controller.
 

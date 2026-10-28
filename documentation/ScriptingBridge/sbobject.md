@@ -20,7 +20,7 @@ class SBObject
 @interface SBObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each `SBObject` is built around an object specifier, which tells Scripting Bridge how to locate the object. Therefore, you can think of an `SBObject` as a reference to an object in an target application rather than an object itself. To bypass this reference-based approach and force evaluation, use the [`get()`](./sbobject/get%28%29.md) method.
 

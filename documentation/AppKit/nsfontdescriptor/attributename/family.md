@@ -19,7 +19,7 @@ static let family: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontFamilyAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../../Foundation/nsstring.md) object.
 

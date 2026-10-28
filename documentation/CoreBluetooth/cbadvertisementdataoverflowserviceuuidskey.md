@@ -25,7 +25,7 @@ let CBAdvertisementDataOverflowServiceUUIDsKey: String
 extern NSString * const CBAdvertisementDataOverflowServiceUUIDsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an array of one or more [`CBUUID`](./cbuuid.md) objects, representing [`CBService`](./cbservice.md) UUIDs.
 

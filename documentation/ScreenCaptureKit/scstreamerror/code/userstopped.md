@@ -24,7 +24,7 @@ case userStopped
 SCStreamErrorUserStopped
 ```
 
-#### Discussion
+## Discussion
 
 As a best practice, handle errors of this type as an intentional user interaction rather than an error.
 

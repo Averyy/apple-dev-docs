@@ -25,7 +25,7 @@ enum ArgumentMatcher
 
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
-#### Overview
+## Overview
 
 Use argument matchers to specify validation rules for tool-call arguments. You can require exact values, verify key presence, check ranges, match patterns, or use a language model for semantic matching.
 

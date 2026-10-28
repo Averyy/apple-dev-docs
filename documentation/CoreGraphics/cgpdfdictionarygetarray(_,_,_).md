@@ -25,7 +25,7 @@ func CGPDFDictionaryGetArray(_ dict: CGPDFDictionaryRef, _ key: UnsafePointer<CC
 extern bool CGPDFDictionaryGetArray(CGPDFDictionaryRef dict, const char *key, CGPDFArrayRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF array associated with the specified key; otherwise, [`false`](../Swift/false.md).
 

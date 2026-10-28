@@ -23,7 +23,7 @@ func gss_get_mic(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_hand
 OM_uint32 gss_get_mic(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, gss_qop_t qop_req, gss_buffer_t const message_buffer, gss_buffer_t message_token);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

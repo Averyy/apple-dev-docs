@@ -19,7 +19,7 @@ var canResolveUbiquitousConflicts: Bool { get set }
 @property BOOL canResolveUbiquitousConflicts;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), and the user attempts to open one or more documents with conflicts, the panel displays the conflict resolution UI. The user must resolve any conflicts before opening the documents. When the value of this property is [`false`](../../Swift/false.md), the your application is responsible for handling any conflicts.
 

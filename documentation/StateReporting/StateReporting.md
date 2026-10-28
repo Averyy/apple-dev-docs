@@ -15,7 +15,7 @@ Communicate your app’s state to the system to improve diagnostic actionability
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 StateReporting lets you define named domains and emit structured state transitions from your app. [MetricKit](../MetricKit/MetricKit.md) surfaces state context in both state-aggregated and interval-level metric entries. Instruments displays transitions in the Points of Interest instrument so you can cross-reference app state against other profiling data.
 

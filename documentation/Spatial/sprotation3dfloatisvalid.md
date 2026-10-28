@@ -19,11 +19,11 @@
 static bool SPRotation3DFloatIsValid(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether a rotation structure represents a valid rotation.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether a rotation structure represents a valid rotation.
 

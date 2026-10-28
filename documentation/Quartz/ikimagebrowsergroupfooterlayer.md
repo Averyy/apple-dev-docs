@@ -19,7 +19,7 @@ let IKImageBrowserGroupFooterLayer: String
 extern NSString * const IKImageBrowserGroupFooterLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CALayer`](../QuartzCore/calayer.md).
 

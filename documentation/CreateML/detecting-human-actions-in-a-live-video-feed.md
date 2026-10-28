@@ -12,7 +12,7 @@ Identify body movements by sending a person’s pose data from a series of video
 - Mac Catalyst 14.0+
 - Xcode 12.3+
 
-#### Overview
+## Overview
 
 This sample app recognizes a person’s body moves, called *actions*, by analyzing a series of video frames with [Vision](../Vision/Vision.md) and predicting the name of the movement by applying an action classifier. The action classifier in this sample recognizes three exercises:
 
@@ -35,11 +35,11 @@ At launch, the app configures the device’s camera to generate video frames and
 
 ![A flow diagram that illustrates the path of video frames through the sample app,](https://developer.apple.com/tutorials/images/com.apple.createml/detecting-human-actions-3@2x.png)
 
-#### Configure the Sample Code Project
+## Configure the Sample Code Project
 
 This sample app uses a camera, so you can’t run it in Simulator — you need to run it on an iOS or iPadOS device.
 
-#### Start a Video Capture Session
+## Start a Video Capture Session
 
 The app’s `VideoCapture`class configures the device’s camera to generate video frames by creating an [`AVCaptureSession`](../AVFoundation/avcapturesession.md).
 
@@ -94,7 +94,7 @@ output.alwaysDiscardsLateVideoFrames = true
 
 See [Setting up a capture session](../AVFoundation/setting-up-a-capture-session.md) for more information on how to configure capture sessions and connect their inputs and outputs.
 
-#### Create a Frame Publisher
+## Create a Frame Publisher
 
 The video capture publishes frames from its capture session by creating a [`PassthroughSubject`](../Combine/passthroughsubject.md) in its `createVideoFramePublisher()` method.
 
@@ -129,7 +129,7 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
 }
 ```
 
-#### Build a Publisher Chain
+## Build a Publisher Chain
 
 The sample processes each video frame, and its derivative data, with a series of methods that it connects together into a chain of [Combine](../Combine/Combine.md) publishers in the `VideoProcessingChain` class.
 
@@ -177,7 +177,7 @@ frameProcessingChain = upstreamFramePublisher
 
 The next sections explain the remaining publishers in the chain and the methods they use to transform their inputs.
 
-#### Analyze Each Frame for Body Poses
+## Analyze Each Frame for Body Poses
 
 The next publisher in the chain is a [`Publishers.Map`](../Combine/publishers/map.md) that receives each [`CGImage`](../CoreGraphics/cgimage.md) from the previous publisher (the compact map) by subscribing to it. The map publisher locates any human body poses in the frame by using the video-processing chain’s `findPosesInFrame(_:)` method. The method invokes a [`VNDetectHumanBodyPoseRequest`](../Vision/vndetecthumanbodyposerequest.md) by creating a [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md) with the image and submitting the video-processing chain’s `humanBodyPoseRequest` property to the handler’s [`perform(_:)`](../Vision/vnimagerequesthandler/perform%28_%29.md)
 method.
@@ -208,7 +208,7 @@ The `Pose` structure in this sample serves three main purposes:
 
 For more information about using a [`VNDetectHumanBodyPoseRequest`](../Vision/vndetecthumanbodyposerequest.md), see [Detecting Human Body Poses in Images](../Vision/detecting-human-body-poses-in-images.md).
 
-#### Isolate a Body Pose
+## Isolate a Body Pose
 
 The next publisher in the chain is a map that chooses a single pose from the array of poses by using the video-processing chain’s `isolateLargestPose(_:)` method. This method selects the the most prominent pose by passing a closure to the pose array’s [`max(by:)`](../Swift/array/max%28by%29.md) method.
 
@@ -222,7 +222,7 @@ The closure compares the poses’ area estimates, with the goal of consistently 
 
 > ❗ **Important**: Get the most accurate predictions from an action classifier by using whatever technique you think best tracks a person from frame to frame, and use the multiarray from that person’s [`VNHumanBodyPoseObservation`](../Vision/vnhumanbodyposeobservation.md) result.
 
-#### Retrieve the Multiarray
+## Retrieve the Multiarray
 
 The next publisher in the chain is a map that publishes the [`MLMultiArray`](../CoreML/mlmultiarray.md) from the pose’s `multiArray` property by using the video processing chain’s `multiArrayFromPose(_:)` method.
 
@@ -239,7 +239,7 @@ The `Pose` initializer copies the multiarray from its [`VNHumanBodyPoseObservati
 multiArray = try? observation.keypointsMultiArray()
 ```
 
-#### Gather a Window of Multiarrays
+## Gather a Window of Multiarrays
 
 The next publisher in the chain is a [`Publishers.Scan`](../Combine/publishers/scan.md) that receives each multiarray from its upstream publisher and gathers them into an array by providing two arguments:
 
@@ -290,7 +290,7 @@ The video-processing chain considers a window to be full if it contains `predict
 
 The Exercise Classifier’s `calculatePredictionWindowSize()` method determines the value of the prediction window size at runtime by inspecting the model’s [`modelDescription`](../CoreML/mlmodel/modeldescription.md) property.
 
-#### Monitor the Window Size
+## Monitor the Window Size
 
 The next publisher in the chain is a [`Publishers.Filter`](../Combine/publishers/filter.md), which only publishes an array window when the `gateWindow(_:)` method returns `true`.
 
@@ -311,7 +311,7 @@ private func gateWindow(_ currentWindow: [MLMultiArray?]) -> Bool {
 
 This filter publisher, in combination with its upstream scan publisher, publishes an array of multiarray optionals once per each number of frames defined in `windowStride`.
 
-#### Predict the Person’s Action
+## Predict the Person’s Action
 
 The next publisher in the chain makes an `ActionPrediction` from the multiarray window by using the `predictActionWithWindow(_:)` method as its transform.
 
@@ -381,7 +381,7 @@ return checkConfidence(prediction)
 
 The method checks the prediction’s confidence by passing the prediction to the `checkConfidence(_:)` helper method, which returns the same prediction if its confidence is high enough; otherwise `lowConfidencePrediction`.
 
-#### Present the Prediction to the User
+## Present the Prediction to the User
 
 The final component in the chain is a subscriber that notifies the video-processing chain’s delegate with the prediction using the `sendPrediction(_:)` method.
 
@@ -420,7 +420,7 @@ func videoProcessingChain(_ chain: VideoProcessingChain,
 
 The main view controller also updates its `actionFrameCounts` property for action labels that come from the model, which it later sends to the Summary View Controller when the user taps the `Summary` button.
 
-#### Present the Poses to the User
+## Present the Poses to the User
 
 The app visualizes the result of each human body-pose request by drawing the poses on top of the frame in which [Vision](../Vision/Vision.md) found them. Each time the video-processing chain’s `findPosesInFrame(_:)` creates an array of `Pose` instances, it sends the poses to its delegate, the main view controller.
 

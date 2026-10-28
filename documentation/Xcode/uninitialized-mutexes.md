@@ -5,11 +5,11 @@
 
 Detects when you use an uninitialized mutex.
 
-#### Overview
+## Overview
 
 Use this check to detect when you call `pthread_mutex_lock(_:)` or `pthread_mutex_unlock(_:)` with an uninitialized `pthread_mutex_t` variable. Attempting to use an uninitialized mutex results in an error, and bypasses ordering conditions that exist on a locked mutex. Available in Xcode 8 and later.
 
-##### Use of uninitialized mutex in C
+### Use of uninitialized mutex in C
 
 In the following example, the `pthread_mutex_lock(_:)` function executes with an uninitialized `pthread_mutex_t` variable:
 
@@ -22,7 +22,7 @@ void performWork() {
 }
 ```
 
-###### Solution
+#### Solution
 
 Use the `pthread_once(_:_:)` function to initialize a mutex before you use it.
 

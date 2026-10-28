@@ -23,7 +23,7 @@ var localizedModel: String { get }
 @property (nonatomic, strong, readonly) NSString * localizedModel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a string that contains a localized version of the string returned from [`model`](./model.md).
 

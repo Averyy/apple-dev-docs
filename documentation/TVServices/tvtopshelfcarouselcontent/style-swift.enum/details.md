@@ -19,7 +19,7 @@ case details
 TVTopShelfCarouselContentStyleDetails
 ```
 
-#### Discussion
+## Discussion
 
 Use this style to display a detailed interface that focuses on the item’s details. For example, this interface displays the item’s summary prominently. This interface also displays action buttons off to the side.
 

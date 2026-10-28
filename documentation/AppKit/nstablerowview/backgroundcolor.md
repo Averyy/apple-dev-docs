@@ -20,7 +20,7 @@ var backgroundColor: NSColor { get set }
 @property (copy) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The property defaults to the table view’s [`backgroundColor`](../nstableview/backgroundcolor.md), unless [`usesAlternatingRowBackgroundColors`](../nstableview/usesalternatingrowbackgroundcolors.md) is set to [`true`](../../Swift/true.md). In that case, the colors alternate, and are automatically updated as required by insertions and deletions.
 

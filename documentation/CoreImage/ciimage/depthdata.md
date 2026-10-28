@@ -24,7 +24,7 @@ var depthData: AVDepthData? { get }
 @property (nonatomic, readonly, nullable) AVDepthData * depthData;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`AVDepthData`](../../AVFoundation/avdepthdata.md) if the [`CIImage`](../ciimage.md) was created with [`imageWithData:`](./imagewithdata_.md) or [`imageWithContentsOfURL:`](./imagewithcontentsofurl_.md) and one of the options [`auxiliaryDepth`](../ciimageoption/auxiliarydepth.md) or [`auxiliaryDisparity`](../ciimageoption/auxiliarydisparity.md), otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 

@@ -19,7 +19,7 @@ A floating-point value that represents the intensity of the effect.
 var strength: Float
 ```
 
-#### Discussion
+## Discussion
 
 The `strength` has a default value of `1.0`. Higher values increase the intensity of the effect, making it more prominent, while lower values decrease it. Set this value to `0.0` to stop the effect from displaying.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the display or environment currently requ
 var isLuminanceReduced: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you detect this condition, lower the overall brightness of your view. For example, you can change large, filled shapes to be stroked, and choose less bright colors:
 

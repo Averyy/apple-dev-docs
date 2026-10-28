@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Don’t use this method directly. Instead, create database operations using the initializers of the concrete subclasses.
 

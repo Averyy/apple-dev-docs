@@ -3,7 +3,7 @@
 **Framework**: GLKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 GLKit effects implement shaders to perform their calculations. These shaders require vertex data to be provided by your application. All of the effects provided by GLKit use a consistent set of indices to reference vertex data provided by your application. When your application enables a vertex attribute array by calling the `glEnableVertexAttribArray` function, or specifies the vertex attribute pointer by calling the `glVertexAttribPointer` function, it uses one of these constants to specify the `index` parameter.
 

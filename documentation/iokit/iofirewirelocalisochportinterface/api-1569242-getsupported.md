@@ -16,11 +16,11 @@ The method is called to determine which FireWire isochronous channels and speed 
 IOReturn (*GetSupported)(IOFireWireLibIsochPortRef self, IOFWSpeed *maxSpeed, UInt64 *chanSupported);
 ```
 
-#### Return Value
+## Return Value
 
 Return kIOReturnSuccess on success, other return any other IOReturn error code.
 
-#### Discussion
+## Discussion
 
 This method is called by the channel object to which a port has been added. Subclasses of IOFireWireIsochPortInterface override this method to support specific hardware. Do not call this method directly.
 

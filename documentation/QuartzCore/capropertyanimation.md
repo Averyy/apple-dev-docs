@@ -24,7 +24,7 @@ class CAPropertyAnimation
 @interface CAPropertyAnimation : CAAnimation
 ```
 
-#### Overview
+## Overview
 
 The property to animate is specified using a key path that is relative to the layer using the animation.
 

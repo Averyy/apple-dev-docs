@@ -25,11 +25,11 @@ class func run(_ block: @escaping @Sendable (SCNNode) -> Void) -> SCNAction
 + (SCNAction *) runBlock:(void (^)(SCNNode *node)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, SceneKit calls the block. This action takes place instantaneously.
 

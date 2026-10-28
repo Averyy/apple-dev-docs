@@ -754,7 +754,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview": {
       "file_path": "documentation/AddressBook/abpeoplepickerview.md",
-      "hash": "ebb37c83b2198b5f307afe11cd63a9a62f7c1efc0d72731e93f4cd42597415e8"
+      "hash": "0134c1a0a55f5cbf28a1f3c7ed1140d74ef3dbe5f60ddb9c23d656f8b61ad575"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/accessoryview": {
       "file_path": "documentation/AddressBook/abpeoplepickerview/accessoryview.md",
@@ -1086,7 +1086,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpersonview": {
       "file_path": "documentation/AddressBook/abpersonview.md",
-      "hash": "eb945c6f82c9d914f93f79ecc9b92e888fa2d43188ea73ae5d66e9d737f36ffe"
+      "hash": "befe0f39c44dc4f3fd5cd68c7ebc0544fa678faed1c5d9fcb87e35725c794cce"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonview/editing": {
       "file_path": "documentation/AddressBook/abpersonview/editing.md",
@@ -3482,7 +3482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview.json": {
       "file_path": "documentation/AddressBook/abpeoplepickerview.md",
-      "hash": "ebb37c83b2198b5f307afe11cd63a9a62f7c1efc0d72731e93f4cd42597415e8"
+      "hash": "0134c1a0a55f5cbf28a1f3c7ed1140d74ef3dbe5f60ddb9c23d656f8b61ad575"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/accessoryview.json": {
       "file_path": "documentation/AddressBook/abpeoplepickerview/accessoryview.md",
@@ -3814,7 +3814,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonview.json": {
       "file_path": "documentation/AddressBook/abpersonview.md",
-      "hash": "eb945c6f82c9d914f93f79ecc9b92e888fa2d43188ea73ae5d66e9d737f36ffe"
+      "hash": "befe0f39c44dc4f3fd5cd68c7ebc0544fa678faed1c5d9fcb87e35725c794cce"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonview/editing.json": {
       "file_path": "documentation/AddressBook/abpersonview/editing.md",
@@ -5459,7 +5459,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 1364
   }

@@ -24,7 +24,7 @@ struct HKStatisticsQueryDescriptor
 
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Use the [`HKStatisticsQueryDescriptor`](./hkstatisticsquerydescriptor.md) to perform calculations over sets of samples currently saved in the HealthKit store.
 

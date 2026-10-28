@@ -19,7 +19,7 @@ All decisions within the given time range.
 final func decisions(in timeRange: CMTimeRange) -> [CNDecision]
 ```
 
-#### Return Value
+## Return Value
 
 An array of decisions within the given time range.
 

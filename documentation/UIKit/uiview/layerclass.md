@@ -23,11 +23,11 @@ class var layerClass: AnyClass { get }
 @property (class, nonatomic, readonly) Class layerClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class used to create the view’s Core Animation layer.
 
-#### Discussion
+## Discussion
 
 This method returns the [`CALayer`](../../QuartzCore/calayer.md) class object by default. Subclasses can override this method and return a different layer class as needed. For example, if your view uses tiling to display a large scrollable area, you might want to override this property and return the [`CATiledLayer`](../../QuartzCore/catiledlayer.md) class, as shown in the following code.
 

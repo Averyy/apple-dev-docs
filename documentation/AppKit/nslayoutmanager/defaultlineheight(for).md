@@ -19,11 +19,11 @@ func defaultLineHeight(for theFont: NSFont) -> CGFloat
 - (CGFloat) defaultLineHeightForFont:(NSFont *) theFont;
 ```
 
-#### Return Value
+## Return Value
 
 The default line height for a line of text drawn using `theFont`.
 
-#### Discussion
+## Discussion
 
 The value returned may vary according to the layout manager’s typesetter behavior.
 

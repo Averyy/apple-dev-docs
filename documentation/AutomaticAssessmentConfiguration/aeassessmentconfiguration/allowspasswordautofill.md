@@ -21,7 +21,7 @@ var allowsPasswordAutoFill: Bool { get set }
 @property (nonatomic, assign) BOOL allowsPasswordAutoFill;
 ```
 
-#### Discussion
+## Discussion
 
 Users can store passwords for use with Password Autofill by turning on the feature in the Settings app (General > Passwords > AutoFill Passwords). An assessment session disables Password Autofill by default, but you can allow it by setting [`allowsPasswordAutoFill`](./allowspasswordautofill.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

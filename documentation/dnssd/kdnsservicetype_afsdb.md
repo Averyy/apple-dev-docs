@@ -23,7 +23,7 @@ var kDNSServiceType_AFSDB: Int { get }
 kDNSServiceType_AFSDB
 ```
 
-#### Discussion
+## Discussion
 
 AFS cell database.
 

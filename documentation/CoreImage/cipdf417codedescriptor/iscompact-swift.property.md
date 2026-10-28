@@ -24,7 +24,7 @@ var isCompact: Bool { get }
 @property (readonly) BOOL isCompact;
 ```
 
-#### Discussion
+## Discussion
 
 Compact PDF417 symbols have abbreviated right-side guard bars.
 

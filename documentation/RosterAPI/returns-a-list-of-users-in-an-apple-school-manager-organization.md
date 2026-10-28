@@ -9,9 +9,9 @@ List users in an Apple School Manager organization.
 **Availability**:
 - Roster API 1.0.0+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

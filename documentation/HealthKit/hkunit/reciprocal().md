@@ -24,11 +24,11 @@ func reciprocal() -> HKUnit
 - (HKUnit *) reciprocalUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A complex unit that is the reciprocal of the unit the method was called on.
 
-#### Discussion
+## Discussion
 
 This method creates a new, complex unit by dividing 1 by the unit the method was called on. This is often only one step in a series of operations. For example, you can use this method to create a meters-per-second unit, as shown below.
 

@@ -19,7 +19,7 @@ func outputImage() -> NSImage!
 - (NSImage *) outputImage;
 ```
 
-#### Return Value
+## Return Value
 
 The edited image.
 

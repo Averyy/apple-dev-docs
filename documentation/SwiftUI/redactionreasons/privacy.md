@@ -21,7 +21,7 @@ Displayed data should be obscured to protect private information.
 static let privacy: RedactionReasons
 ```
 
-#### Discussion
+## Discussion
 
 Views marked with [`privacySensitive(_:)`](../view/privacysensitive%28_%29.md) will be automatically redacted using a standard styling. To apply a custom treatment the redaction reason can be read out of the environment.
 

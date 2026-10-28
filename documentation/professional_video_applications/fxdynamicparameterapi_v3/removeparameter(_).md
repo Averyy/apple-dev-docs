@@ -20,11 +20,11 @@ func removeParameter(_ parameterID: UInt32) -> (any Error)!
 - (NSError *) removeParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Any errors encountered.
 
-#### Discussion
+## Discussion
 
 Removes the parameter with the passed-in ID from your plug-in’s list of parameters.
 

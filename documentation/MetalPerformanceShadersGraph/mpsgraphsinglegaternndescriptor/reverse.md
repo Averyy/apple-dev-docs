@@ -24,7 +24,7 @@ var reverse: Bool { get set }
 @property (nonatomic, readwrite) BOOL reverse;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the input sequence is passed in reverse time order to the layer. Note: Ignored when `bidirectional = YES`. Default value: `NO`.
 

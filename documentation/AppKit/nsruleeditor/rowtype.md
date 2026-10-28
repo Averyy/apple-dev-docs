@@ -19,7 +19,7 @@ enum RowType
 enum NSRuleEditorRowType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 See `Row Types` for possible values.
 

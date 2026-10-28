@@ -33,7 +33,7 @@ func findMatch(for request: GKMatchRequest) async throws -> GKMatch
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 To find players using matchmaking rules, set the rules-related properties in `request` ([`queueName`](../gkmatchrequest/queuename.md) and optionally, [`properties`](../gkmatchrequest/properties.md)) before you call this method. For more information, see [Matchmaking rules](../matchmaking-rules.md).
 

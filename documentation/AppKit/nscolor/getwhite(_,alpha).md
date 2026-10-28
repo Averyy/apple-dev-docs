@@ -19,7 +19,7 @@ func getWhite(_ white: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePoint
 - (void) getWhite:(CGFloat *) white alpha:(CGFloat *) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 If `NULL` is passed in as an argument, the method doesn’t set that value. This method works only with objects representing colors in the [`calibratedWhite`](../nscolorspacename/calibratedwhite.md), [`NSCalibratedBlackColorSpace`](../nscalibratedblackcolorspace.md), [`NSDeviceBlackColorSpace`](../nsdeviceblackcolorspace.md), or [`deviceWhite`](../nscolorspacename/devicewhite.md) color space. Sending it to other objects raises an exception.
 

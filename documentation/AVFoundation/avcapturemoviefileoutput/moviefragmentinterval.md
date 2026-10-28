@@ -23,7 +23,7 @@ var movieFragmentInterval: CMTime { get set }
 @property (nonatomic) CMTime movieFragmentInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The default is 10 seconds. To disable movie fragment writing (not typically recommended), set to [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

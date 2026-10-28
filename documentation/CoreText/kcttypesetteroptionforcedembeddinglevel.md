@@ -25,7 +25,7 @@ let kCTTypesetterOptionForcedEmbeddingLevel: CFString
 extern CFStringRef const kCTTypesetterOptionForcedEmbeddingLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key must be a `CFNumberRef` object. There’s no default value.
 

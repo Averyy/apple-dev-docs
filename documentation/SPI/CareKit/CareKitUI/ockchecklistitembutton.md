@@ -18,7 +18,7 @@ A button with an icon and title label.
 class OCKChecklistItemButton
 ```
 
-#### Overview
+## Overview
 
 ```
     +--------------------------+

@@ -15,7 +15,7 @@ A textured (metal) bezel style similar in appearance to the Finder’s action (g
 static const NSBezelStyle NSTexturedRoundedBezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The height of this button is fixed.
 

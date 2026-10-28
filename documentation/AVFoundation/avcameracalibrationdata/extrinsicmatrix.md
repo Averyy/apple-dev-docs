@@ -24,7 +24,7 @@ var extrinsicMatrix: matrix_float4x3 { get }
 @property (nonatomic, readonly) matrix_float4x3 extrinsicMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 The extrinsic matrix consists of a unitless 3 x 3 rotation matrix (`R`) on the left and a 3 x 1 column vector translation (`t`) on the right. The translation vector’s units are millimeters.
 

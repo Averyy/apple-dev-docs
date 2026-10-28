@@ -25,7 +25,7 @@ optional func presentedItemDidChange()
 - (void) presentedItemDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to update your internal data structures to reflect the changes to the presented item. This method reports both changes to the file’s contents, such as the data in a file or the files in a directory, or the attributes of the item, such as whether the Hide extension checkbox of a file was toggled.
 

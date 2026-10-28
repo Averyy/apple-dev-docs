@@ -16,7 +16,7 @@ struct IOColorEntry {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used by IOFramebuffer to define an entry of a color lookup table.
 

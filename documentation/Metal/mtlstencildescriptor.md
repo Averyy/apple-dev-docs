@@ -24,7 +24,7 @@ class MTLStencilDescriptor
 @interface MTLStencilDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A stencil test is a comparison between a masked reference value and a masked value stored in a stencil attachment. (A value is *masked* by performing a logical AND operation on it with the [`readMask`](./mtlstencildescriptor/readmask.md) value.) The [`MTLStencilDescriptor`](./mtlstencildescriptor.md) object defines how to update the contents of the stencil attachment, based on the results of the stencil test and the depth test.
 

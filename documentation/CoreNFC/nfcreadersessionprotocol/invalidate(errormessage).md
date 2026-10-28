@@ -22,7 +22,7 @@ func invalidate(errorMessage: String)
 - (void) invalidateSessionWithErrorMessage:(NSString *) errorMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to end the reader session and display a message to the user when an error condition occurs after the app successfully reads a tag. This type of error can occur if, for example, the app reads data from an NFC tag, but determines that the data has expired and discards it. The app then calls [`invalidate(errorMessage:)`](./invalidate%28errormessage%29.md) to end the reader session, and to let the user know why it discarded the data.
 

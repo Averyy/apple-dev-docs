@@ -22,7 +22,7 @@ Copies the provided number of bytes from the start of the type into a typed memo
 func copyBytes<DestinationType>(to ptr: UnsafeMutableBufferPointer<DestinationType>, count: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 

@@ -24,11 +24,11 @@ class func differenceBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) differenceBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the difference-blend mode filter to an image. The effect calculates the brightness value for both images and subtracts the smaller value, resulting in a slightly darker image. This effect doesn’t modify images that are black.
 

@@ -24,7 +24,7 @@ convenience init(name: String, semantic: MDLMaterialSemantic, matrix4x4 value: m
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic matrix4x4:(matrix_float4x4) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.matrix44`](../mdlmaterialpropertytype/matrix44.md).
 

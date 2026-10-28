@@ -15,11 +15,11 @@ Converts a number to an `Int32`.
 static Int32 toInt32();
 ```
 
-#### Return Value
+## Return Value
 
 If the value passes validation, this function returns an `Int32`; otherwise it throws `ValueNotInt32Error`. A numeric value passes validation if it’s within signed 32-bit integer range.
 
-#### Discussion
+## Discussion
 
 In TypeScript, `Int32` is a branded number type. In JavaScript, it’s a number.
 

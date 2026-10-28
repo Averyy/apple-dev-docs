@@ -25,7 +25,7 @@ func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?)
 - (void) setArgumentTable:(id<MTL4ArgumentTable>) argumentTable;
 ```
 
-#### Discussion
+## Discussion
 
 Metal takes a snapshot of the resources in the argument table when you make dispatch or execute calls on this encoder instance. Metal makes the snapshot contents available to the compute shader function of the current pipeline state.
 

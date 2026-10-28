@@ -22,11 +22,11 @@ class var currentSystem: NSCursor? { get }
 @property (class, strong, readonly, nullable) NSCursor * currentSystemCursor;
 ```
 
-#### Return Value
+## Return Value
 
 A cursor whose image and hot spot match those of the currently-displayed cursor on the system
 
-#### Discussion
+## Discussion
 
 This method returns the current system cursor regardless of which application set the cursor, and whether Cocoa or Carbon APIs were used to set it.
 

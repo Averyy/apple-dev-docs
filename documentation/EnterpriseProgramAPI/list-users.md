@@ -6,7 +6,7 @@
 
 Get a list of the users on your team.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

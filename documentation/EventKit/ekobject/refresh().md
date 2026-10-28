@@ -24,11 +24,11 @@ func refresh() -> Bool
 - (BOOL) refresh;
 ```
 
-#### Return Value
+## Return Value
 
 If the operation is successful, [`true`](../../Swift/true.md); if the object was deleted in the event store, [`false`](../../Swift/false.md). If this method returns [`false`](../../Swift/false.md), the object should be released.
 
-#### Discussion
+## Discussion
 
 This method merges the local changes to properties of this object with the latest values in the event store. This method updates only properties that have not been modified locally, so you do not lose any changes by invoking this method. You can also use this method to see whether an object was deleted from the event store.
 

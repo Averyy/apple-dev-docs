@@ -17,7 +17,7 @@ A small circular indicator that can be determinate or indeterminate.
 static const NSProgressIndicatorStyle NSProgressIndicatorSpinningStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of a determinate spinning style indicator is similar to an animated pie chart.
 

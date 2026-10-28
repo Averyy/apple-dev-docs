@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from accessing Apple 
 var denyMusicService: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to `true`, the Music app reverts to classic mode. If your app doesn’t configure this setting, the value is `nil`.
 

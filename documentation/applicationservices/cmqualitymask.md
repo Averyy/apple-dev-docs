@@ -13,7 +13,7 @@
 var cmQualityMask: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mask provides access to bits 16 and 17 of the `flags` field, which specify the preferred quality and speed preferences for color matching. In general, the higher the quality the slower the speed. For example, best quality is slowest, but produces the highest quality result.
 

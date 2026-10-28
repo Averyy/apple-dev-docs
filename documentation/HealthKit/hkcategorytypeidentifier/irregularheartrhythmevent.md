@@ -24,7 +24,7 @@ static let irregularHeartRhythmEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierIrregularHeartRhythmEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The system creates [`irregularHeartRhythmEvent`](./irregularheartrhythmevent.md) samples whenever Apple Watch produces an irregular rhythm notification. For more information, see [Heart rate notifications on your Apple Watch](https://support.apple.com/en-us/HT208931).
 

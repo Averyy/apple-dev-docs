@@ -5,7 +5,7 @@
 
 Display search results from your app when people point the camera at relevant content.
 
-#### Overview
+## Overview
 
 The `.visualIntelligence` domain defines app schemas that connect your app to the camera control. Apply the [`semanticContentSearch`](./appschema/visualintelligenceintent/semanticcontentsearch.md) schema to make your app appear as a search destination in Visual Intelligence. The [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md) framework provides the types that describe what visual intelligence captures from the camera or a screenshot. Your app implements an [`IntentValueQuery`](./intentvaluequery.md) to receive these types, find matching content, and return app entities.
 

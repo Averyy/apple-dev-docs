@@ -15,7 +15,7 @@ The quantity of the product the customer purchased in a single transaction.
 int64 quantity
 ```
 
-#### Discussion
+## Discussion
 
 The `quantity` field applies only to purchases. Don’t include a `quantity` for refunds.
 

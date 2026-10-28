@@ -24,11 +24,11 @@ func openInMaps(launchOptions: [String : Any]? = nil) -> Bool
 - (BOOL) openInMapsWithLaunchOptions:(NSDictionary<NSString *,id> *) launchOptions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the Maps app successfully opens the map item, or [`false`](../../Swift/false.md) if there’s an error.
 
-#### Discussion
+## Discussion
 
 You use this method to pass the map item to the Maps app. If your map item contains descriptive information about the location (such as a name or URL), the Maps app displays that information at the specified coordinate.
 

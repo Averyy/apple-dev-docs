@@ -20,11 +20,11 @@ optional func application(_ application: NSApplication, willPresentError error: 
 - (NSError *) application:(NSApplication *) application willPresentError:(NSError *) error;
 ```
 
-#### Return Value
+## Return Value
 
 The error object to display.
 
-#### Discussion
+## Discussion
 
 You can implement this delegate method to customize the presentation of any error presented by your application, as long as no code in your application overrides either of the `NSResponder` methods `presentError:modalForWindow:delegate:didPresentSelector:contextInfo:` or `presentError:` in a way that prevents errors from being passed down the responder chain to the application object.
 

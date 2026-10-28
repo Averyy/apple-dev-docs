@@ -26,7 +26,7 @@ protocol ConnectablePublisher<Output, Failure> : Publisher
 - [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
 - [Replacing Foundation Timers with Timer Publishers](./replacing-foundation-timers-with-timer-publishers.md)
 
-#### Overview
+## Overview
 
 Use a [`ConnectablePublisher`](./connectablepublisher.md) when you need to perform additional configuration or setup prior to producing any elements.
 

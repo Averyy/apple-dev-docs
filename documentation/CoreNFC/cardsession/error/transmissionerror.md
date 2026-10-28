@@ -17,7 +17,7 @@ The card session experienced a general error transmitting data.
 case transmissionError
 ```
 
-#### Discussion
+## Discussion
 
 If you receive this error, you can retry the transmission if the connection with the NFC reader remains valid.
 

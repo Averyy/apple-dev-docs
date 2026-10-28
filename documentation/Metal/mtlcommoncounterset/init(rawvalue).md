@@ -20,7 +20,7 @@ Creates a common counter set name from a raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the [`MTLCommonCounterSet`](../mtlcommoncounterset.md) type’s static properties, such as [`timestamp`](./timestamp.md), [`stageUtilization`](./stageutilization.md), and [`statistic`](./statistic.md) instead of creating a common counter set instance yourself with this initializer.
 

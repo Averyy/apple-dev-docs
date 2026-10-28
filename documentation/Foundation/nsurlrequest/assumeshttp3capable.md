@@ -25,7 +25,7 @@ var assumesHTTP3Capable: Bool { get }
 @property (readonly) BOOL assumesHTTP3Capable;
 ```
 
-#### Discussion
+## Discussion
 
 When `YES`, enables QUIC racing without HTTP/3 service discovery. Defaults to `NO`. The default may be `YES` in a future OS update.
 

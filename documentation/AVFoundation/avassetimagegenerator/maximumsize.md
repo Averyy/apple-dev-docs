@@ -28,7 +28,7 @@ var maximumSize: CGSize { get set }
 
 - [Creating images from a video asset](../creating-images-from-a-video-asset.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../../CoreFoundation/cgsize/zero.md), which generates images at the asset’s unscaled dimensions.
 

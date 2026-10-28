@@ -25,7 +25,7 @@ var identity: SecIdentity? { get }
 @property (readonly, nullable) SecIdentityRef identity;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the credential is not a client certificate credential.
 

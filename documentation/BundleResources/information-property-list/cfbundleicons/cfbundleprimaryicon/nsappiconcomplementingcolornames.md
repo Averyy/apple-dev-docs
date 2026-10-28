@@ -16,7 +16,7 @@ The names of the colors to use for the background of the App Shortcuts platter.
 - **Name**: `NSAppIconComplementingColorNames`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 By default, the system chooses an appropriate background color for the App Shortcuts platter — a view that represents a single group of App Shortcuts. You can override that behavior in one of two ways:
 

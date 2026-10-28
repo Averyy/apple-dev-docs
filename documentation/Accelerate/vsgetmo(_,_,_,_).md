@@ -21,7 +21,7 @@ func vSgetmo(_ height: Int32, _ width: Int32, _ x: UnsafePointer<vFloat>, _ y: U
 extern void vSgetmo(int32_t height, int32_t width, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 The matrix `x` is transposed into matrix `y`.
 

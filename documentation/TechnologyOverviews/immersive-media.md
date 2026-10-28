@@ -6,13 +6,13 @@ Create immersive video experiences in visionOS.
 
 Apple Vision Pro is a revolutionary device for media playback. With ultra-high-resolution displays, advanced spatial audio, and ability to scale content to fit your environment, it’s like having a 3D movie theater with you wherever you go. Create apps to help people capture personal moments in spatial video, provide an extraordinary playback experience, or deliver your next feature film in Apple Immersive Video.
 
-#### Capture spatial video
+## Capture spatial video
 
 Spatial video is an innovative 3D video format that captures scenes with depth and dimension. People record spatial videos directly on Apple Vision Pro or with the Camera app on supported iPhone models. Watching spatial video on Vision Pro gives the viewer the sense that the action is right in from of them, which makes it a great format for reliving their important moments.
 
 Support spatial video capture in your own custom camera app using [AVFoundation](../AVFoundation/AVFoundation.md). The framework extends the features you use to [build a camera app](../AVFoundation/avcam-building-a-camera-app.md) to enable spatial video capture. Save recorded videos to a person’s Photos library with the [PhotoKit](../PhotoKit/PhotoKit.md) framework. By adopting PhotoKit, you ensure that people can store captured videos in the same place they expect to find all their memories.
 
-#### Play immersive media
+## Play immersive media
 
 Apple Vision Pro supports playback of a wide variety of video formats, including 2D, 3D, and fully immersive. Regardless of the type of video you want to play, Apple provides a consistent set of APIs to make it straightforward to build a compelling playback experience in visionOS.
 
@@ -20,7 +20,7 @@ Playing immersive media on Vision Pro builds on the same functionality provided 
 
 Beyond building a dedicated player interface, you can use the [Quick Look](../QuickLook/QuickLook.md) framework to preview video content in your app. The [`PreviewApplication`](../QuickLook/previewapplication.md) interface makes it easy to preview video files without launching a dedicated player.
 
-#### Prepare Apple Immersive Video
+## Prepare Apple Immersive Video
 
 Apple Immersive Video is a format developed for Apple Vision Pro that’s designed to deliver an ultra-realistic, immersive viewing experience that places viewers at the center of the action. Captured using specialized camera systems like the Blackmagic URSA Cine Immersive, these videos feature 8K resolution per eye, Spatial Audio, and dynamic head tracking that creates a sense of depth that goes beyond traditional 2D or even 3D video. Content in this format is available through the Apple TV app and includes cinematic, sports, and music experiences.
 

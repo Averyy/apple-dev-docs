@@ -25,7 +25,7 @@ var modificationDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * modificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The modification date reflects the most recent time that CloudKit saved a record with the current record’s ID to the server. For new instances of this class, the value of this property is initially `nil`. When you save the record to the server, the value updates with the modification date for the record.
 

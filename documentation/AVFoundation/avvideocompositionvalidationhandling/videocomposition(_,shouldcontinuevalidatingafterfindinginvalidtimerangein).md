@@ -24,11 +24,11 @@ optional func videoComposition(_ videoComposition: AVVideoComposition, shouldCon
 - (BOOL) videoComposition:(AVVideoComposition *) videoComposition shouldContinueValidatingAfterFindingInvalidTimeRangeInInstruction:(id<AVVideoCompositionInstruction>) videoCompositionInstruction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A time range is considered invalid when it overlaps with the time range of a prior instruction, or that contains times earlier than the time range of a prior instruction
 

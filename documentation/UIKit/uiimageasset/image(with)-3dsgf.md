@@ -23,11 +23,11 @@ func image(with traitCollection: UITraitCollection) -> UIImage
 - (UIImage *) imageWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 The found image.
 
-#### Discussion
+## Discussion
 
 If this method can’t locate an image that matches the specified trait collection precisely, it returns the best match available.
 

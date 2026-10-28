@@ -29,7 +29,7 @@ string sendAttemptResult
 - `UNSUCCESSFUL_HTTP_RESPONSE_CODE`: The App Store server didn’t receive an `HTTP 200` response from your server.
 - `UNSUPPORTED_CHARSET`: The App Store server doesn’t support the supplied charset.
 
-#### Discussion
+## Discussion
 
 The [`Get Notification History`](./get-notification-history.md) and [`Get Test Notification Status`](./get-test-notification-status.md) endpoints return a [`sendAttemptResult`](./sendattemptresult.md) for each notification attempt in their responses. This value describes the success or error the server encountered on its attempt to send the notification to your server.
 

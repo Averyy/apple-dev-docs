@@ -23,7 +23,7 @@ optional func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView)
 - (void) scrollViewWillBeginDecelerating:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view calls this method as the user’s finger touches up as it’s moving during a scrolling operation; the scroll view continues to move a short distance afterwards. The [`isDecelerating`](../uiscrollview/isdecelerating.md) property of [`UIScrollView`](../uiscrollview.md) controls deceleration.
 

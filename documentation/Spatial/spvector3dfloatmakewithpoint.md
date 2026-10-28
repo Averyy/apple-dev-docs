@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMakeWithPoint(SPPoint3DFloat point);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a vector with elements specified a coordinates of a point structure.
 

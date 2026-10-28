@@ -25,7 +25,7 @@ func ivar_getOffset(_ v: Ivar) -> Int
 extern ptrdiff_t ivar_getOffset(Ivar v);
 ```
 
-#### Discussion
+## Discussion
 
 For instance variables of type `id` or other object types, call [`object_getIvar(_:_:)`](./object_getivar%28_,_%29.md) and [`object_setIvar(_:_:_:)`](./object_setivar%28_,_,_%29.md) instead of using this offset to access the instance variable data directly.
 

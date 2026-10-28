@@ -19,7 +19,7 @@ The handler that processes a reordering transaction.
 var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the [`didReorder`](./didreorder.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](../../nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
 

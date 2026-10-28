@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceCapabilityContainerID {
 } IOUSBDeviceCapabilityContainerID;
 ```
 
-#### Overview
+## Overview
 
 Device Capability Container ID
 

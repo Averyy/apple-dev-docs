@@ -15,7 +15,7 @@ The location of the element in the shared coordinate space.
 let position: SpatialTemplateElementPosition
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the distance from the coordinate space’s origin along the x- and y-axes.
 

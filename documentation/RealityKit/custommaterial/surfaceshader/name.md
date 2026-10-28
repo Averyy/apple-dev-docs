@@ -19,7 +19,7 @@ The name of the surface shader function.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 This is the name of the Metal function the custom material uses as its surface shader. The name needs to match the name of a Metal function in your Xcode project and can’t include parameters or parentheses.
 

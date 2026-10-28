@@ -25,7 +25,7 @@ var simdRotation: simd_float4 { get set }
 @property (nonatomic) simd_float4 simdRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The four-component rotation vector specifies the direction of the rotation axis in the first three components and the angle of rotation (in radians) in the fourth. The default rotation is the zero vector, specifying no rotation. Rotation is applied relative to the node’s [`simdPivot`](./simdpivot.md) property.
 

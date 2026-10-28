@@ -23,7 +23,7 @@ weak var windowScene: UIWindowScene? { get set }
 @property (nonatomic, weak, nullable) UIWindowScene * windowScene;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property moves the window to the newly specified scene. Setting the property to `nil` removes the window from its current scene.
 

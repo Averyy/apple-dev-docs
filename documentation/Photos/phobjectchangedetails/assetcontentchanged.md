@@ -24,7 +24,7 @@ var assetContentChanged: Bool { get }
 @property (atomic, readonly) BOOL assetContentChanged;
 ```
 
-#### Discussion
+## Discussion
 
 If this value `true`, you can use the [`PHImageManager`](../phimagemanager.md) class to retrieve updated content.
 

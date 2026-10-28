@@ -21,7 +21,7 @@ Appends a rounded rectangle to a mutable graphics path.
 extern void CGPathAddRoundedRect(CGMutablePathRef path, const CGAffineTransform *transform, CGRect rect, CGFloat cornerWidth, CGFloat cornerHeight);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds a path of an rounded rectangle.
 

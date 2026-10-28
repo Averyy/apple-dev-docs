@@ -21,11 +21,11 @@ Saves a specific subscription.
 func save(_ subscription: CKSubscription) async throws -> CKSubscription
 ```
 
-#### Return Value
+## Return Value
 
 The saved subscription (as it appears on the server).
 
-#### Discussion
+## Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 

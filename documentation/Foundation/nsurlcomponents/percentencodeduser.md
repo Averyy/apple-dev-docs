@@ -25,7 +25,7 @@ var percentEncodedUser: String? { get set }
 @property (copy, nullable) NSString * percentEncodedUser;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://username:password@www.example.com/index.html`, the user is `username`.
 

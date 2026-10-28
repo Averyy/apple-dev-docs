@@ -19,11 +19,11 @@ func hyphenationFactor(forGlyphAt glyphIndex: Int) -> Float
 - (float) hyphenationFactorForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The hyphenation factor in effect at `glyphIndex`. The hyphenation factor is a value ranging from 0.0 to 1.0 that controls when hyphenation is attempted. By default, the value is 0.0, meaning hyphenation is off. A factor of 1.0 causes hyphenation to be attempted always.
 
-#### Discussion
+## Discussion
 
 The typesetter calls this method with a proposed hyphenation point for a line break to find the hyphenation factor in effect at that time. A subclass can override this method to customize the text layout process.
 

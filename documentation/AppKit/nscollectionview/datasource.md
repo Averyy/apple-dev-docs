@@ -19,7 +19,7 @@ weak var dataSource: (any NSCollectionViewDataSource)? { get set }
 @property (weak, nullable) id<NSCollectionViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source object manages the data in the collection view. Use this object to specify how many items are in the collection view and to create the visual representation of those items. The object you specify must adopt the [`NSCollectionViewDataSource`](../nscollectionviewdatasource.md) protocol.
 

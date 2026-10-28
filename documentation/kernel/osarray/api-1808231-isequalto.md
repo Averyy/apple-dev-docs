@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSArray *anArray) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two arrays are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 Two OSArray objects are considered equal if they have same count and if the objects at corresponding indices compare as equal using isEqualTo.
 

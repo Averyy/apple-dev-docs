@@ -15,11 +15,11 @@ Determines whether the driver extension class supports a specific feature in res
 virtual kern_return_t UserDoesHBASupportSCSIParallelFeature(uint32_t theValue, bool *result);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of determining if the driver extension class supports the feature. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The SCSI parallel interconnect standard defines the features that `theValue` specifies.
 

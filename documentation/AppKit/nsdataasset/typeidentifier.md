@@ -19,7 +19,7 @@ var typeIdentifier: String { get }
 @property (copy, readonly) NSString * typeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A uniform type identifier is a string for identifying the type of data. This UTI is the same as the one specified in the asset catalog. For more information, see [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
 

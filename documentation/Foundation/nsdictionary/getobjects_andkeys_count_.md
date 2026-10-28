@@ -21,7 +21,7 @@ Returns by reference C arrays of the keys and values in the dictionary.
 - (void) getObjects:(ObjectType[]) objects andKeys:(KeyType[]) keys count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 The elements in the returned array and the keys array have a one-for-one correspondence, so that the nth object in the returned array corresponds to the the key in keys.
 

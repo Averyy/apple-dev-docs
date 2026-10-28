@@ -19,11 +19,11 @@
 static simd_packed_float4 SPRotationAxis3DFloatGetPackedVector(SPRotationAxis3DFloat axis);
 ```
 
-#### Return Value
+## Return Value
 
 A new packed simd vector .
 
-#### Discussion
+## Discussion
 
 Creates a packed simd vector from a Spatial 3D rotation axis.
 

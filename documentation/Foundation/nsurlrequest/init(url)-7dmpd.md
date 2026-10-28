@@ -25,11 +25,11 @@ convenience init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized URL request.
 
-#### Discussion
+## Discussion
 
 The request is created with the with the default cache policy ([`NSURLRequest.CachePolicy.useProtocolCachePolicy`](./cachepolicy-swift.enum/useprotocolcachepolicy.md)), and the default timeout interval (60 seconds).
 

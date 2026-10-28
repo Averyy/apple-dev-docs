@@ -24,7 +24,7 @@ func UIGraphicsBeginPDFContextToData(_ data: NSMutableData, _ bounds: CGRect, _ 
 extern void UIGraphicsBeginPDFContextToData(NSMutableData *data, CGRect bounds, NSDictionary *documentInfo);
 ```
 
-#### Discussion
+## Discussion
 
 After creating the graphics context, this function makes it the current drawing context. Any subsequent drawing commands are therefore captured and turned into PDF data. When you are done drawing, you must call the [`UIGraphicsEndPDFContext()`](./uigraphicsendpdfcontext%28%29.md) function to close the PDF graphics context.
 

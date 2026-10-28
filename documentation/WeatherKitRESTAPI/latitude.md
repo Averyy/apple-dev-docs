@@ -21,7 +21,7 @@ number Latitude
 
 **Minimum**: `-90`
 
-#### Discussion
+## Discussion
 
 Negative values indicate south of the equator; positive values indicate north of the equator.
 

@@ -25,7 +25,7 @@ case birth
 SCNParticleEventBirth
 ```
 
-#### Discussion
+## Discussion
 
 Use a handler for this event to override the initial properties of each particle.
 

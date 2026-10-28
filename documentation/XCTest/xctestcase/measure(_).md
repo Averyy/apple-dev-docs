@@ -16,7 +16,7 @@ func measure(_ block: () -> Void)
 - (void) measureBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from within a test method to measure the performance of a block of code. By default, this method measures the number of seconds the block of code takes to execute. Override [`defaultPerformanceMetrics`](./defaultperformancemetrics.md) to change the default metrics measured by this method.
 

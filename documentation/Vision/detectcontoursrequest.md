@@ -21,7 +21,7 @@ A request that detects the contours of the edges of an image.
 struct DetectContoursRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a [`ContoursObservation`](./contoursobservation.md) object that describes the contours in an image.
 

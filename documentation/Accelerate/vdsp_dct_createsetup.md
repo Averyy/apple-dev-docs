@@ -21,15 +21,15 @@ Builds a data structure that contains precalculated data to perform a discrete c
 vDSP_DFT_SetupvDSP_DCT_CreateSetup(vDSP_DFT_Setup __Previous, vDSP_Length __Length, vDSP_DCT_Type __Type);
 ```
 
-#### Return Value
+## Return Value
 
 When successful, this function returns a [`vDSP_DFT_Setup`](./vdsp_dft_setup.md) structure. When unsuccessful, this function returns `nil`, either because of insufficient memory or because `Length` doesn’t satisfy the requirements given above.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To prevent potential memory leaks, if the `Previous` parameter is not `nil`, the return value and the `Previous` value must be different variables.
 
-#### Discussion
+## Discussion
 
 Use this function to create a new setup structure. Don’t use the return value to reconfigure an existing setup structure passed to this function as the `Previous` parameter.
 

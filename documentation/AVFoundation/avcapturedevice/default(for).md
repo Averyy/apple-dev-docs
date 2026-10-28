@@ -24,7 +24,7 @@ class func `default`(for mediaType: AVMediaType) -> AVCaptureDevice?
 + (AVCaptureDevice *) defaultDeviceWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 The default device, or `nil` if no device with that media type exists.
 

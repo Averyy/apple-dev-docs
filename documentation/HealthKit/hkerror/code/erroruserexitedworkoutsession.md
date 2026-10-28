@@ -24,7 +24,7 @@ case errorUserExitedWorkoutSession
 HKErrorUserExitedWorkoutSession
 ```
 
-#### Discussion
+## Discussion
 
 Workout sessions end when the app goes into the background.
 

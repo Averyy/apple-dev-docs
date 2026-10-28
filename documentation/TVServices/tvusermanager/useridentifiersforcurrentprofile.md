@@ -21,7 +21,7 @@ var userIdentifiersForCurrentProfile: [TVUserIdentifier] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * userIdentifiersForCurrentProfile;
 ```
 
-#### Discussion
+## Discussion
 
 If your app remembers which app-specific profile each Apple TV user prefers, use this property to provide that information to the system. Fill this property with zero or more user identifiers that you previously retrieved from the [`currentUserIdentifier`](./currentuseridentifier.md) property. Doing so creates a mapping between your app profiles and the Apple TV accounts that prefer them. The system uses the information in this property to provide better information in user dialogs and doesn’t change the property’s value.
 

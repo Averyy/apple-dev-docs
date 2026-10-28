@@ -24,11 +24,11 @@ init(mediaItemResolutionResult: INMediaItemResolutionResult)
 - (instancetype) initWithMediaItemResolutionResult:(INMediaItemResolutionResult *) mediaItemResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSearchForMediaMediaItemResolutionResult`](../insearchformediamediaitemresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to successfully search for a media item.
 

@@ -23,7 +23,7 @@ class MKScaleView
 @interface MKScaleView : UIView
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to incorporate a standard scale view into your own view hierarchy. A scale view displays a legend with distance information for its associated map view. As the map region changes, the scale view updates automatically to reflect any changes in scale.
 

@@ -26,7 +26,7 @@ func descendants(matching type: XCUIElement.ElementType) -> XCUIElementQuery
 - (XCUIElementQuery *) descendantsMatchingType:(XCUIElementType) type;
 ```
 
-#### Discussion
+## Discussion
 
 Because [`XCUIElement`](../xcuielement.md) conforms to the [`XCUIElementTypeQueryProvider`](../xcuielementtypequeryprovider.md) protocol, you can use the protocol’s properties as shorthand for calling [`descendants(matching:)`](./descendants%28matching%29.md) for different element types. For example, rather than calling `table.descendants(matching: .cell)`, you can use the [`cells`](../xcuielementtypequeryprovider/cells.md) property from the protocol to retrieve `table.cells`.
 

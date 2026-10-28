@@ -19,7 +19,7 @@ class var defaultLineWidth: CGFloat { get set }
 @property (class) CGFloat defaultLineWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The default line width, measured in points in the user coordinate space, or 1.0 if no other value has been set.
 

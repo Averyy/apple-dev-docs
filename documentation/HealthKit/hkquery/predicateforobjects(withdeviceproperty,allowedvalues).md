@@ -24,11 +24,11 @@ class func predicateForObjects(withDeviceProperty key: String, allowedValues: Se
 + (NSPredicate *) predicateForObjectsWithDeviceProperty:(NSString *) key allowedValues:(NSSet<NSString *> *) allowedValues;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches all objects created by a device whose specified property matches one of the allowed values.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that finds all the objects saved by matching devices. These predicates let you match multiple values for a single property. For example, you can create a single predicate that matches a number of different `manufacturer` values.
 

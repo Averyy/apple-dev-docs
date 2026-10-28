@@ -24,7 +24,7 @@ var lengthInSeconds: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval lengthInSeconds;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the time of the last event in the track, plus any additional time that’s necessary to fade out the ending notes, or to round a loop point to a musical bar.
 

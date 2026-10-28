@@ -19,7 +19,7 @@ func SKIndexGetTermIDForTermString(_ inIndex: SKIndex!, _ inTermString: CFString
 CFIndex SKIndexGetTermIDForTermString(SKIndexRef inIndex, CFStringRef inTermString);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the term ID for a given term in an index. If the term isn’t found, this function returns a value of `kCFNotFound`.
 

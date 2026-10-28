@@ -19,11 +19,11 @@
 static SPPose3D SPPose3DMake(SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose.
 
-#### Discussion
+## Discussion
 
 Returns a double-precision pose from a single-precision pose.
 

@@ -25,7 +25,7 @@ var allocationCount: Int { get }
 @property (readonly) NSUInteger allocationCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value is the number of elements in [`allAllocations`](./allallocations.md). The residency set updates the property’s value when you call the [`commit()`](./commit%28%29.md) method.
 

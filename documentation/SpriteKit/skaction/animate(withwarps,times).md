@@ -29,11 +29,11 @@ class func animate(withWarps warps: [SKWarpGeometry], times: [NSNumber]) -> SKAc
 
 - [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 The [`numberOfColumns`](../skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRows`](../skwarpgeometrygrid/numberofrows.md) in each geometry in the sequence should match.
 

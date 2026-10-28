@@ -23,7 +23,7 @@ var kCTVersionNumber10_5_2: Int32 { get }
 #define kCTVersionNumber10_5_2
 ```
 
-#### Discussion
+## Discussion
 
 The Core Text framework version in OS X version 10.5.2.
 

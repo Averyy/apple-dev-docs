@@ -1646,7 +1646,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/initwithioservice:options:queue:error:interesthandler:": {
       "file_path": "documentation/IOUSBHost/iousbhostinterface/initwithioservice_options_queue_error_interesthandler_.md",
-      "hash": "e1bedb69f33f5cc2a9ce1c2143260ffb5d6e7e4e8ffed68e6469e693fd04b955"
+      "hash": "f8eb2b8c82ff0128ccacb0281e4a0aa28b79006ecf372c38dc7aeb6c2271624a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/interfacedescriptor": {
       "file_path": "documentation/IOUSBHost/iousbhostinterface/interfacedescriptor.md",
@@ -1962,11 +1962,11 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/initwithioservice:options:queue:error:interesthandler:": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md",
-      "hash": "72bc6a0f5c1770ac2b80b50c2ed9ed6a5c8603b964146a81d0ca4ea9df1fe5b7"
+      "hash": "b9e024f4383cb10b3e2d3279781d9c4af410f60d3b72efb6c082ba03399ac8f6"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/initwithioservice:queue:error:interesthandler:": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/initwithioservice_queue_error_interesthandler_.md",
-      "hash": "66a37fa5725cbfe45b8547666bdce29b201579206998e7583c07960c19e3a9d3"
+      "hash": "890779d6a1c0081b6f6535d18417dec1ddbe46b81adf4336572e50edeb1991ce"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/iodata(withcapacity:)": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/iodata(withcapacity).md",
@@ -1974,7 +1974,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/ioservice": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/ioservice.md",
-      "hash": "629a3304e0de95d3372b24d79e759426b3e747b6e6af256476eca2f8777f632b"
+      "hash": "ef116ce3506afe2476c130796296497e9ef96f4c218bebbe08bbb8957c2f15f4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/queue": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/queue.md",
@@ -3850,7 +3850,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/initwithioservice:options:queue:error:interesthandler:.json": {
       "file_path": "documentation/IOUSBHost/iousbhostinterface/initwithioservice_options_queue_error_interesthandler_.md",
-      "hash": "e1bedb69f33f5cc2a9ce1c2143260ffb5d6e7e4e8ffed68e6469e693fd04b955"
+      "hash": "f8eb2b8c82ff0128ccacb0281e4a0aa28b79006ecf372c38dc7aeb6c2271624a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/interfacedescriptor.json": {
       "file_path": "documentation/IOUSBHost/iousbhostinterface/interfacedescriptor.md",
@@ -4166,11 +4166,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/initwithioservice:options:queue:error:interesthandler:.json": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md",
-      "hash": "72bc6a0f5c1770ac2b80b50c2ed9ed6a5c8603b964146a81d0ca4ea9df1fe5b7"
+      "hash": "b9e024f4383cb10b3e2d3279781d9c4af410f60d3b72efb6c082ba03399ac8f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/initwithioservice:queue:error:interesthandler:.json": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/initwithioservice_queue_error_interesthandler_.md",
-      "hash": "66a37fa5725cbfe45b8547666bdce29b201579206998e7583c07960c19e3a9d3"
+      "hash": "890779d6a1c0081b6f6535d18417dec1ddbe46b81adf4336572e50edeb1991ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/iodata(withcapacity:).json": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/iodata(withcapacity).md",
@@ -4178,7 +4178,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/ioservice.json": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/ioservice.md",
-      "hash": "629a3304e0de95d3372b24d79e759426b3e747b6e6af256476eca2f8777f632b"
+      "hash": "ef116ce3506afe2476c130796296497e9ef96f4c218bebbe08bbb8957c2f15f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/queue.json": {
       "file_path": "documentation/IOUSBHost/iousbhostobject/queue.md",
@@ -4411,7 +4411,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 1102
   }

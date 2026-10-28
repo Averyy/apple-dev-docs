@@ -24,11 +24,11 @@ func url(forTilePath path: MKTileOverlayPath) -> URL
 - (NSURL *) URLForTilePath:(MKTileOverlayPath) path;
 ```
 
-#### Return Value
+## Return Value
 
 The URL to use to retrieve the tile.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method uses the template string you provide at initialization time to build a URL to the specified tile image. Subclasses can override this method and use a different scheme to provide URLs for tiles. You can locate the tiles either on a local file system or on a remote server.
 

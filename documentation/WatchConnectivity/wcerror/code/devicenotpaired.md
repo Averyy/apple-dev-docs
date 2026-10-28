@@ -23,7 +23,7 @@ case deviceNotPaired
 WCErrorCodeDeviceNotPaired
 ```
 
-#### Discussion
+## Discussion
 
 Communication can only occur between paired devices.
 

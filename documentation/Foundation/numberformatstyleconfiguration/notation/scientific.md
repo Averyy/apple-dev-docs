@@ -21,7 +21,7 @@ A notation constant that formats values with scientific notation.
 static var scientific: NumberFormatStyleConfiguration.Notation { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the effect of using scientific notation with a format style:
 

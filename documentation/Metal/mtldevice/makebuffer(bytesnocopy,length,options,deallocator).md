@@ -25,11 +25,11 @@ func makeBuffer(bytesNoCopy pointer: UnsafeMutableRawPointer, length: Int, optio
 - (id<MTLBuffer>) newBufferWithBytesNoCopy:(void *) pointer length:(NSUInteger) length options:(MTLResourceOptions) options deallocator:(void (^)(void *pointer, NSUInteger length)) deallocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLBuffer`](../mtlbuffer.md) instance if the method completes successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The existing memory allocation needs to exist within a single virtual memory (VM) region.
 

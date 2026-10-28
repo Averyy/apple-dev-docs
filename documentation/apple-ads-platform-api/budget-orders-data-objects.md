@@ -8,7 +8,7 @@ Build budget order and campaign assignment requests, and read budget order and i
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 A budget order, represented by [`SharedBudget`](./sharedbudget.md), sets a spending cap and an active window. Manage it with [`SharedBudgetCreate`](./sharedbudgetcreate.md) and [`SharedBudgetUpdate`](./sharedbudgetupdate.md), and read it back through [`SharedBudgetResponse`](./sharedbudgetresponse.md) or [`SharedBudgetQueryResponse`](./sharedbudgetqueryresponse.md). Campaigns draw from a budget order through [`SharedBudgetAssignment`](./sharedbudgetassignment.md) entries. Accounts on the Line of Credit payment model also carry billing contacts in [`InvoiceDetail`](./invoicedetail.md).
 

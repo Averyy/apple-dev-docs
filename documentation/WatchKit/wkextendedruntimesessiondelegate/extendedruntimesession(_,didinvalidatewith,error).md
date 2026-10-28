@@ -20,7 +20,7 @@ func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, 
 - (void) extendedRuntimeSession:(WKExtendedRuntimeSession *) extendedRuntimeSession didInvalidateWithReason:(WKExtendedRuntimeSessionInvalidationReason) reason error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method both when a session fails to start and when a session stops running. Use the invalidation reason to determine why the session became invalid.
 

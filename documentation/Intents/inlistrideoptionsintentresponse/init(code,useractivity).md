@@ -23,11 +23,11 @@ init(code: INListRideOptionsIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INListRideOptionsIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, create one or more [`INRideOption`](../inrideoption.md) objects and assign them to the [`rideOptions`](./rideoptions.md) property. You can also update the other properties of this object to indicate the forms of payment that you accept and the time when the list of options expires.
 

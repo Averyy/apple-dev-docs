@@ -27,7 +27,7 @@ var nominalFrameRate: Float { get }
 @property (nonatomic, readonly) float nominalFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The nominal frame rate indicates the number of frames per second for tracks that contain a full frame per media sample. For field-based (interlaced) video tracks, the value of this property indicates the field rate, not the frame rate.
 

@@ -24,7 +24,7 @@ class MTLPipelineBufferDescriptor
 @interface MTLPipelineBufferDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Metal can perform additional optimizations if you guarantee that neither the CPU nor the GPU modify a buffer’s contents before starting a pass. Use immutable buffers as much as possible to take advantage of Metal optimizations.
 

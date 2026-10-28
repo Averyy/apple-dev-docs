@@ -13,11 +13,11 @@ virtual IOReturn SetCommandBuffers (
  SCSITaskIdentifier request );
 ```
 
-#### Return Value
+## Return Value
 
 xxx.
 
-#### Overview
+## Overview
 
 This method was added so that subclasses can override and massage buffers as needed. The default simply calls setCommandBuffers. See IOFireWireSBP2Lib.h for details regarding the setCommandBuffers method.
 

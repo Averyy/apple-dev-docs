@@ -23,7 +23,7 @@ static var anyNonNewline: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is unaffected by the `dotMatchesNewlines()` method. To match any character, including newlines, see [`any`](./any.md).
 

@@ -5,7 +5,7 @@
 
 Look up type aliases, data types, and constants the vImage library uses.
 
-#### Overview
+## Overview
 
 The vImage library defines data types for planar and interleaved pixel types, a resampling callback filter, and an affine transform. vImage provides constants that specify errors and flags that you pass to a function to specify a variety of processing options.
 

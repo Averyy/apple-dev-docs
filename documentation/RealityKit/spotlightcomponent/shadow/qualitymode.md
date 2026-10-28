@@ -20,7 +20,7 @@ Constants that select the shadow-filtering algorithm a spotlight uses.
 struct QualityMode
 ```
 
-#### Overview
+## Overview
 
 [`low`](./qualitymode/low.md) produces a hard-edged shadow with a uniform width. The shadow ignores [`lightSize`](./lightsize.md) and the distance between the light, the shadow-casting geometry, and the receiving surface.
 

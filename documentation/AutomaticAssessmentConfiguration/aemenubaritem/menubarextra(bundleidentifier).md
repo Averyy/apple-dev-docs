@@ -16,7 +16,7 @@ Creates a menu bar extra item representing a custom menu extra.
 static func menuBarExtra(bundleIdentifier: String) -> AEMenuBarItem
 ```
 
-#### Return Value
+## Return Value
 
 A new menu bar item instance
 

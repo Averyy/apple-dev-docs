@@ -32,7 +32,7 @@ func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil)
 func applied(to input: some Sequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> [MLShapedArray<Scalar>]
 ```
 
-#### Return Value
+## Return Value
 
 An temporal sequence of predictions. Each prediction’s shape is `[forecastWindowSize, annotationSize]`.
 

@@ -25,7 +25,7 @@ var attributes: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of attribute keys, representing the values available from this metadata item. For a list of possible keys, see `Attribute Keys`.
 

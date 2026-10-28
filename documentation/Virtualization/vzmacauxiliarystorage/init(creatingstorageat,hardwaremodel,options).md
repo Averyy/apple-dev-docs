@@ -23,11 +23,11 @@ init(creatingStorageAt URL: URL, hardwareModel: VZMacHardwareModel, options: VZM
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized `VZMacAuxiliaryStorage` object on success or `nil` if there was an error. On failure,  `error` contains the `NSError` that describes reason for the failure.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new auxiliary storage object that describes a specific hardware model. To restore data from a previously saved existing auxiliary storage object, use [`init(contentsOfURL:)`](./init%28contentsofurl%29.md).
 

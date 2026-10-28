@@ -20,7 +20,7 @@ Attaches the output to the reader and returns a tuple with an output provider fo
 func outputMetadataProviderWithRandomAccess(for output: AVAssetReaderTrackOutput) -> sending (AVAssetReaderOutput.Provider<AVTimedMetadataGroup>, AVAssetReaderOutput.RandomAccessController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an output provider for reading timed metadata groups, and an associated random access controller.
 

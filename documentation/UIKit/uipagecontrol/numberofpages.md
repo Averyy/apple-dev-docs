@@ -23,7 +23,7 @@ var numberOfPages: Int { get set }
 @property (nonatomic, assign) NSInteger numberOfPages;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is the number of pages for the page control to show as dots. The default value is 0.
 

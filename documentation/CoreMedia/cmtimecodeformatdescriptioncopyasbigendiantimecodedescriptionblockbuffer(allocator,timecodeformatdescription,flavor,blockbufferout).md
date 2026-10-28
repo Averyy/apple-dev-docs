@@ -25,7 +25,7 @@ func CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(al
 extern OSStatus CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(CFAllocatorRef allocator, CMTimeCodeFormatDescriptionRef timeCodeFormatDescription, CMTimeCodeDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 

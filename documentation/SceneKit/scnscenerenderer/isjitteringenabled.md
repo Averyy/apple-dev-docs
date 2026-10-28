@@ -26,7 +26,7 @@ var isJitteringEnabled: Bool { get set }
 @property (nonatomic, getter=isJitteringEnabled) BOOL jitteringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](./pointofview.md) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry.
 

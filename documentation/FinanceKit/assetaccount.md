@@ -16,7 +16,7 @@ A structure that describes the characteristics of an asset account.
 struct AssetAccount
 ```
 
-#### Overview
+## Overview
 
 An asset account includes accounts such as a bank account or a savings account.
 

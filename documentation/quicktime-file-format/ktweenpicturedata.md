@@ -8,7 +8,7 @@ An atom that contains the data for a QuickDraw picture.
 
 > **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
-#### Overview
+## Overview
 
 Used only by a `kTweenTypeQDRegion` atom.
 

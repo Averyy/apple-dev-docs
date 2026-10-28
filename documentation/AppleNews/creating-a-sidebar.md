@@ -5,7 +5,7 @@
 
 Create a box with an HTML bulleted list in the margin.
 
-#### Overview
+## Overview
 
 Placing supplemental or reference information in the margin of your article can create an informative and engaging experience.
 
@@ -13,7 +13,7 @@ Placing supplemental or reference information in the margin of your article can 
 
 ![Screenshot of an Apple News article with an anchored sidebar on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624926@2x.png)
 
-##### Create Component Layout Objects for the Sidebar
+### Create Component Layout Objects for the Sidebar
 
 The `ComponentLayout` object called `sidebarLayout` specifies that the sidebar will begin in column 7 of the article layout and span three columns. The other `ComponentLayout` object makes a minor adjustment.
 
@@ -22,7 +22,7 @@ The `ComponentLayout` object called `sidebarLayout` specifies that the sidebar w
 
 Your code should look like the example code [Sidebar Layout Objects: Result](./creating-a-sidebar.md#Sidebar-Layout-Objects-Result).
 
-###### Sidebar Layout Objects: Copy This Code
+#### Sidebar Layout Objects: Copy This Code
 
 ```json
 ,
@@ -44,7 +44,7 @@ Your code should look like the example code [Sidebar Layout Objects: Result](./c
     }
 ```
 
-###### Sidebar Layout Objects: Result
+#### Sidebar Layout Objects: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -74,7 +74,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Component Style Object for the Sidebar
+### Define a Component Style Object for the Sidebar
 
 Before you can apply a background color to the sidebar, you must define  a new `ComponentStyle` object for the sidebar background color.
 
@@ -83,7 +83,7 @@ Before you can apply a background color to the sidebar, you must define  a new `
 
 Your code should look like the example code [sidebarBackgroundStyle: Result](./creating-a-sidebar.md#sidebarBackgroundStyle-Result).
 
-###### sidebarBackgroundStyle: Copy This Code
+#### sidebarBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -92,7 +92,7 @@ Your code should look like the example code [sidebarBackgroundStyle: Result](./c
     }
 ```
 
-###### sidebarBackgroundStyle: Result
+#### sidebarBackgroundStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -109,7 +109,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Update the Body Component
+### Update the Body Component
 
 In your working `article.json` file, update the `body` component that follows the `podcast` component.
 
@@ -118,7 +118,7 @@ In your working `article.json` file, update the `body` component that follows th
 
 Your code should look like the example code [Body: Result](./creating-a-sidebar.md#Body-Result)
 
-###### Body: Copy This Code
+#### Body: Copy This Code
 
 ```json
 {
@@ -130,7 +130,7 @@ Your code should look like the example code [Body: Result](./creating-a-sidebar.
 },
 ```
 
-###### Body: Result
+#### Body: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -166,7 +166,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add and Anchor the Sidebar Content
+### Add and Anchor the Sidebar Content
 
 In your working `article.json` file, the `body` component that follows the `podcast` component should now have an `identifier` property with the value `body2`.
 
@@ -175,7 +175,7 @@ In your working `article.json` file, the `body` component that follows the `podc
 
 Your code should look like the example code [Container: Result](./creating-a-sidebar.md#Container-Result).
 
-###### Container: Copy This Code
+#### Container: Copy This Code
 
 ```json
 {
@@ -216,7 +216,7 @@ Your code should look like the example code [Container: Result](./creating-a-sid
 },
 ```
 
-###### Container: Result
+#### Container: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -282,11 +282,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding a Video](./adding-a-video.md)
 
-##### Next
+### Next
 
 [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
 

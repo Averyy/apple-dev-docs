@@ -21,7 +21,7 @@ The properties of a toggle instance.
 typealias Configuration = ToggleStyleConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 You receive a `configuration` parameter of this type — which is an alias for the [`ToggleStyleConfiguration`](../togglestyleconfiguration.md) type — when you implement the required [`makeBody(configuration:)`](./makebody%28configuration%29.md) method in a custom toggle style implementation.
 

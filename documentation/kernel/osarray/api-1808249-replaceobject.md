@@ -13,7 +13,7 @@ virtual void replaceObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Overview
+## Overview
 
 The original object is released and the new object is retained.
 

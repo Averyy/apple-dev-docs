@@ -29,7 +29,7 @@ kvImageGetTempBufferSize
 
 - [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
 
-#### Discussion
+## Discussion
 
 When you set this flag, the function returns the number of bytes required for the temporary buffer instead of performing the operation. A negative value indicates an error, and if the function does not accept a temporary buffer, zero is returned.
 

@@ -25,7 +25,7 @@ case available
 AVPlayerInterstitialEventAssetListResponseStatusAvailable
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the value by querying the [`assetListResponse`](../avplayerinterstitialevent/assetlistresponse.md) property of the interstitial event.
 

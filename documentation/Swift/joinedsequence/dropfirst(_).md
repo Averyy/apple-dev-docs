@@ -21,11 +21,11 @@ Returns a sequence containing all but the given number of initial elements.
 func dropFirst(_ k: Int = 1) -> DropFirstSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence starting after the specified number of elements.
 
-#### Discussion
+## Discussion
 
 If the number of elements to drop exceeds the number of elements in the sequence, the result is an empty sequence.
 

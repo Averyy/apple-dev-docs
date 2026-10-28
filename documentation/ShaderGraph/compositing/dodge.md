@@ -14,11 +14,11 @@ A blend operation that lightens the background layer depending on the foreground
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 B / (1 - F)
 
-#### Parameter Types
+## Parameter Types
 
 **Dodge (float)**:
 
@@ -68,13 +68,13 @@ B / (1 - F)
 | --- | --- |
 | `Out` | Color3 |
 
-#### Parameter Description
+## Parameter Description
 
 - **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
 - **`Background`**: The background input. Represented by `B` in the mathmatical equation.
 - **`Mix`**: The weight of the blend operation. The higher the `Mix`, the greater the intensity of the blend operation, and the more the effect is visually apparent. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
 
-#### Discussion
+## Discussion
 
 The Dodge node lightens each area in the background based on the lightness of the corresponding area in the foreground, represented by the equation `B / (1 - F)`. Below is an example of a simple node graph that uses the the dodge node to lighten a brick texture:
 

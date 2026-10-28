@@ -19,7 +19,7 @@ var supportsVolumeGroups: Bool { get set }
 @property (nonatomic) BOOL supportsVolumeGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Volume groups involve multiple logical file systems that the system can mount and unmount together, and for which the system can present common file system identifier information.
 

@@ -16,7 +16,7 @@ get titleVisibility(): FeatureVisibility;
 set titleVisibility(value: FeatureVisibility);
 ```
 
-#### Discussion
+## Discussion
 
 The title visibility controls the title that renders below the balloon part of the marker. The default value is [`Adaptive`](../featurevisibility/adaptive.md).
 

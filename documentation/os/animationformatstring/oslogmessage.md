@@ -22,7 +22,7 @@ A log message that includes an animation tag.
 struct OSLogMessage
 ```
 
-#### Overview
+## Overview
 
 An [`AnimationFormatString.OSLogMessage`](./oslogmessage.md) structure contains a message that you construct from a string interpolation or string literal. This message includes an additional animation tag. Don’t create this structure directly. The system creates one automatically when you log a message using the [`os_signpost(_:dso:log:name:signpostID:_:_:)`](../os_signpost%28_,dso,log,name,signpostid,_,_%29-nez5.md) function
 

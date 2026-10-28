@@ -24,7 +24,7 @@ var shadowBias: Float { get set }
 @property (readwrite) float shadowBias;
 ```
 
-#### Discussion
+## Discussion
 
 The default value varies by image.
 

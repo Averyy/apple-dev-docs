@@ -16,7 +16,7 @@ A short title that describes the purpose of the Live Activity update on Apple Wa
 var title: LocalizedStringResource
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch displays this string briefly as part of the alert that appears when you update a Live Activity and choose to alert people about the update. Choose text that’s easy to read at a glance. For example, a pizza delivery app could use “On the way.”
 

@@ -19,7 +19,7 @@ func saveGraphicsState()
 - (void) saveGraphicsState;
 ```
 
-#### Discussion
+## Discussion
 
 The new graphics state is a copy of the previous state that can be modified to handle new drawing operations.
 

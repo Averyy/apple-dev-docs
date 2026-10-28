@@ -28,7 +28,7 @@ func startTunnel(options: [String : NSObject]? = nil) async throws
 - (void) startTunnelWithOptions:(NSDictionary<NSString *,NSObject *> *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to start the network tunnel.
 

@@ -15,7 +15,7 @@ An object used to configure and present a browsable full screen view.
 interface Browser
 ```
 
-#### Overview
+## Overview
 
 There is no constructor for this object. Configure the `Browser` by modifying its properties. When appropriately configured, use the `present `method to display a new `Browser`.
 

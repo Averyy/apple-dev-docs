@@ -24,7 +24,7 @@ case cfsocksErrorUnknownClientVersion
 kCFSOCKSErrorUnknownClientVersion
 ```
 
-#### Discussion
+## Discussion
 
 Query the `kCFSOCKSVersionKey` key to find out what version the server requested.
 

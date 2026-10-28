@@ -23,11 +23,11 @@ func MIDISetupRemoveDevice(_ device: MIDIDeviceRef) -> OSStatus
 extern OSStatus MIDISetupRemoveDevice(MIDIDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Typically, only a studio-configuration editor calls this function to remove a device that’s offline and which the user has specified as permanently missing. It’s a good practice to have drivers set the deviceʼs [`kMIDIPropertyOffline`](./kmidipropertyoffline.md) to 1, instead of removing the device from the setup, so if the device reappears later, the system preserves the deviceʼs property state.
 

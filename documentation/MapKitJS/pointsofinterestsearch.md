@@ -19,7 +19,7 @@ class PointsOfInterestSearch extends Service
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 Use [`PointsOfInterestSearch`](./pointsofinterestsearch.md) to fetch points of interest. Mapkit JS exposes this functionality through a search object that makes network requests to the search service. To use search, create an instance of a [`PointsOfInterestSearch`](./pointsofinterestsearch.md) object with the desired options and use the instance to make search requests. You may optionally specify a [`PointOfInterestFilter`](./pointofinterestfilter.md) that lists categories to include or exclude. The default behavior of the fetch returns all points of interest.
 

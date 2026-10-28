@@ -15,7 +15,7 @@ Get the authorization type required by the shared coordinate space provider.
 extern ar_authorization_type_t ar_shared_coordinate_space_provider_get_required_authorization_type();
 ```
 
-#### Return Value
+## Return Value
 
 An authorization type.
 

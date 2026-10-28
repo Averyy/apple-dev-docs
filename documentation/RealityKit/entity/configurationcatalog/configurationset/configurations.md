@@ -20,7 +20,7 @@ The alternative configurations that are available in a set.
 var configurations: [String : Entity.ConfigurationCatalog.Configuration] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The keys are configuration IDs, and the values are the corresponding configurations.
 

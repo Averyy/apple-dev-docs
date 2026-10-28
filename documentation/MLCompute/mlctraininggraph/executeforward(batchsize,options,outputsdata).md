@@ -22,7 +22,7 @@ Executes the forward pass of the training graph with the batch size, execution o
 func executeForward(batchSize: Int, options: MLCExecutionOptions = [], outputsData: [String : MLCTensorData]? = nil) async throws -> (result: MLCTensor?, executionTime: TimeInterval)
 ```
 
-#### Return Value
+## Return Value
 
 The result tensor, if any, and the execution time if you specify [`profiling`](../mlcexecutionoptions/profiling.md).
 

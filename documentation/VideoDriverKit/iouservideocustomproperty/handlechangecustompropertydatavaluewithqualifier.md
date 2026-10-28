@@ -15,11 +15,11 @@ The system calls this virtual method when the custom property’s data value cha
 virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success the custom property’s data value should be updated.
 
-#### Discussion
+## Discussion
 
 The default implementation always returns `kIOReturnSuccess` and updates the custom property data value without checking qualifier contents. Subclass and override this method to handle changes to this custom property value and return `kIOReturnSuccess` upon success.
 

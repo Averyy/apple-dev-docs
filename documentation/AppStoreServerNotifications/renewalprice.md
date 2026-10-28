@@ -15,7 +15,7 @@ The renewal price, in milliunits, of the auto-renewable subscription that renews
 int64 renewalPrice
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the renewal price, in milliunits of the [`currency`](./currency.md), of the auto-renewable subscription. One unit of the currency equals 1000 milliunits.
 

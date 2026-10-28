@@ -23,11 +23,11 @@ consuming func get() throws(Failure) -> Success
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 The success value, if the instance represents a success.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the value of this result if it represents a success, or to catch the value if it represents a failure.
 

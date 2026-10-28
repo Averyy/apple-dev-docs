@@ -21,7 +21,7 @@ func SecKeyGenerateSymmetric(_ parameters: CFDictionary, _ error: UnsafeMutableP
 SecKeyRefSecKeyGenerateSymmetric(CFDictionaryRef parameters, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A newly generated symmetric key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key’s memory when you are done with it.
 

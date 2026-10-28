@@ -23,7 +23,7 @@ subscript(unchecked position: Span<Element>.Index) -> Element { get }
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Overview
+## Overview
 
 This subscript does not validate `position`. Using this subscript with an invalid `position` results in undefined behaviour.
 

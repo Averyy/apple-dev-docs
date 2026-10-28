@@ -22,7 +22,7 @@ var availableRawPhotoFileTypes: [AVFileType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableRawPhotoFileTypes;
 ```
 
-#### Discussion
+## Discussion
 
 When you issue a photo capture request, you can separately specify the format for capturing or encoding image data and the container format for producing output files containing that data. However, each file type supports only a specific set of image data types.
 

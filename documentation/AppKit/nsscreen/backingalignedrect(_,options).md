@@ -19,11 +19,11 @@ func backingAlignedRect(_ rect: NSRect, options: AlignmentOptions = []) -> NSRec
 - (NSRect) backingAlignedRect:(NSRect) rect options:(NSAlignmentOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a a pixel aligned rectangle on the target screen from the given input rectangle in global screen coordinates.
 
-#### Discussion
+## Discussion
 
 This method uses [`NSIntegralRectWithOptions(_:_:)`](../../Foundation/nsintegralrectwithoptions%28_,_%29.md) to produce the pixel aligned rectangle.
 

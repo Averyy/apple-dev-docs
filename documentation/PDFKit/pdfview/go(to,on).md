@@ -40,7 +40,7 @@ func go(to rect: NSRect, on page: PDFPage)
 - (void) goToRect:(NSRect) rect onPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified rectangle is already visible, this method does nothing. This allows you to scroll the `PDFView` object to a specific [`PDFAnnotation`](../pdfannotation.md) or [`PDFSelection`](../pdfselection.md) object, because both of these objects have bounds methods that return an annotation or selection position in page space.
 

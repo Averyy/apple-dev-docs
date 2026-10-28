@@ -21,11 +21,11 @@ Construct a `Duration` given a number of nanoseconds represented as a `BinaryInt
 static func nanoseconds<T>(_ nanoseconds: T) -> Duration where T : BinaryInteger
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of nanoseconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .nanoseconds(1929)

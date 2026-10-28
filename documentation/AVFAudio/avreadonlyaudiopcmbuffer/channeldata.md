@@ -21,7 +21,7 @@ Represents read-only channel data.
 enum ChannelData
 ```
 
-#### Overview
+## Overview
 
 For **deinterleaved** formats:
 

@@ -19,7 +19,7 @@ var context: NSGraphicsContext? { get }
 @property (strong, readonly, nullable) NSGraphicsContext * context;
 ```
 
-#### Return Value
+## Return Value
 
 The graphics context object used for drawing during the operation.
 

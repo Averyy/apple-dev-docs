@@ -13,7 +13,7 @@ Deletes a specific sign-in token.
 
 - [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md)
 
-#### Overview
+## Overview
 
 Use this endpoint to delete a specific [`value`](../VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swift.struct/value.md).
 

@@ -19,7 +19,7 @@ func setHuggingPriority(_ huggingPriority: NSLayoutConstraint.Priority, for orie
 - (void) setHuggingPriority:(NSLayoutPriority) huggingPriority forOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets you specify a different hugging priority for each user interface axis. The default value for hugging priority, on both user interface axes, is [`defaultLow`](../nslayoutconstraint/priority-swift.struct/defaultlow.md). If you have not added constraints between the stack view and its enclosing view, the stack view stays as small as possible to fully contain its views—independent of the size of the view that contains it.
 

@@ -25,7 +25,7 @@ class SKTileMapNode
 @interface SKTileMapNode : SKNode
 ```
 
-#### Overview
+## Overview
 
 `SKTileMapNode` does the work of laying out predefined tiles in a grid of any size. Typically, you configure 9-slice images (tile groups) in Xcode’s SpriteKit scene editor and paint the look of your tile map ahead of time versus configuring the tile map in code.
 

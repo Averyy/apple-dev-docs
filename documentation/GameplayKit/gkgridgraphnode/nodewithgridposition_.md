@@ -20,7 +20,7 @@ Creates a graph node with the specified position on a grid.
 + (instancetype) nodeWithGridPosition:(vector_int2) gridPosition;
 ```
 
-#### Return Value
+## Return Value
 
 A new graph node representing the specified grid position.
 

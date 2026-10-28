@@ -15,7 +15,7 @@ Render Hierarchical Variable Font (HVF) glyph outlines, and support font editors
 - visionOS 2.4+
 - watchOS 11.4+
 
-#### Overview
+## Overview
 
 The `hvf` library provides C and Swift interfaces. The C interface supports rendering `hvgl` and `hvpm` tables in existing fonts.
 

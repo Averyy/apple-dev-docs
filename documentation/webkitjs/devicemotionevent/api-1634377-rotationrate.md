@@ -15,7 +15,7 @@ The rotation rate of the device.
 readonly attribute RotationRate rotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 The `RotationRate` object specifies the device’s rate of rotation around three axes. It contains `alpha`, `beta`, and `gamma` properties represented as doubles as described in [`DeviceOrientationEvent`](../deviceorientationevent.md).
 

@@ -32,7 +32,7 @@ func allCredentials() async throws -> Set<THCredentials>
 
 - [Managing Thread network credentials](../managing-thread-network-credentials.md)
 
-#### Discussion
+## Discussion
 
 > **Concurrency note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

@@ -16,7 +16,7 @@ Creates identity information that an installation service uses to set up a provi
 init(pairingIdentifier: String, publicKey: Data)
 ```
 
-#### Return Value
+## Return Value
 
 Identity information that an installation service uses to set up a provisional home.
 

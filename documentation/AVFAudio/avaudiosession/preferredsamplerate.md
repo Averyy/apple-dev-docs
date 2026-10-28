@@ -23,7 +23,7 @@ var preferredSampleRate: Double { get }
 @property (readonly) double preferredSampleRate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates the preferred sample rate set using the [`setPreferredSampleRate(_:)`](./setpreferredsamplerate%28_%29.md) method.
 

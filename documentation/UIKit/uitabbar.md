@@ -24,7 +24,7 @@ class UITabBar
 @interface UITabBar : UIView
 ```
 
-#### Overview
+## Overview
 
 Typically, you use tab bars in conjunction with a [`UITabBarController`](./uitabbarcontroller.md) object, but you can also use them as standalone controls in your app. Tab bars always appear across the bottom edge of the screen and display the contents of one or more [`UITabBarItem`](./uitabbaritem.md) objects. A tab bar’s appearance can be customized with a background image or tint color to suit the needs of your interface. Tapping an item selects and highlights that item, and you use the selection of the item to enable the corresponding mode for your app.
 
@@ -34,7 +34,7 @@ You can configure tab bars programmatically or in Interface Builder. A [`UITabBa
 
 A tab bar reports selections and user customizations to its delegate object. For tab bars you create yourself, use the delegate to respond to selections or to the addition, removal, or reordering of items in the tab bar. (A [`UITabBarController`](./uitabbarcontroller.md) object acts as the delegate for the tab bar it manages.) For more information on implementing a tab bar delegate, see [`UITabBarDelegate`](./uitabbardelegate.md).
 
-##### Configure the tab bar items
+### Configure the tab bar items
 
 You can configure tab bar items using Interface Builder or create and configure them programmatically in your code. Tab bars in Interface Builder come preconfigured with some initial items and you can add, remove, or reorder items as needed. How you configure items at design time depends on whether your tab bar is associated with a [`UITabBarController`](./uitabbarcontroller.md) object:
 
@@ -49,11 +49,11 @@ A tab bar displays all of its tabs onscreen at once, using the [`itemPositioning
 
 The contents of each item are stored in a [`UITabBarItem`](./uitabbaritem.md) object. Each item contains a title and an image to display in the tab. You can also use tab bar items to add a badge to the corresponding tab. For more information about creating and configuring items, see [`UITabBarItem`](./uitabbaritem.md).
 
-##### Respond to tab selections
+### Respond to tab selections
 
 For tab bars with an associated tab bar controller, the tab bar controller automatically manages selections and displays the appropriate view controller. The only time you have to manage selections yourself is when you create the tab bar without a tab bar controller. The tab bar reports selections to the [`tabBar(_:didSelect:)`](./uitabbardelegate/tabbar%28_,didselect%29.md) method of its [`delegate`](./uitabbar/delegate.md) object, which you can use to respond to selection changes. For more information about implementing the delegate object, see [`UITabBarDelegate`](./uitabbardelegate.md).
 
-##### Configure a tab bar with Interface Builder
+### Configure a tab bar with Interface Builder
 
 The following table lists the attributes that you configure for tab bars in Interface Builder.
 
@@ -67,13 +67,13 @@ The following table lists the attributes that you configure for tab bars in Inte
 | Bar Tint | The tint color to apply to the bar. To set this attribute programmatically, use the [`barTintColor`](./uitabbar/bartintcolor.md) property. |
 | Item Positioning | The positioning scheme to apply to items. Use this attribute to configure how items are spaced across the length of the tab bar. To set this attribute programmatically, use the [`itemPositioning`](./uitabbar/itempositioning-swift.property.md) property. |
 
-##### Internationalize a tab bar
+### Internationalize a tab bar
 
 To internationalize a tab bar, you must provide localized strings for the tab bar item titles.
 
 For more information, see `Localization`.
 
-##### Make a tab bar accessible
+### Make a tab bar accessible
 
 Tab bars are accessible by default.
 

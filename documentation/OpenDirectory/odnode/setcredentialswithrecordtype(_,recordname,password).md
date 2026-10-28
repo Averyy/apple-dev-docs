@@ -20,7 +20,7 @@ func setCredentialsWithRecordType(_ inRecordType: String!, recordName inRecordNa
 - (BOOL) setCredentialsWithRecordType:(ODRecordType) inRecordType recordName:(NSString *) inRecordName password:(NSString *) inPassword error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

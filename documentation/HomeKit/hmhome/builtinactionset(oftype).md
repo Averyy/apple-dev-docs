@@ -24,11 +24,11 @@ func builtinActionSet(ofType actionSetType: String) -> HMActionSet?
 - (HMActionSet *) builtinActionSetOfType:(NSString *) actionSetType;
 ```
 
-#### Return Value
+## Return Value
 
 The builtin action set corresponding to the type argument.
 
-#### Discussion
+## Discussion
 
 Returns `nil` if no action set is found.
 

@@ -29,7 +29,7 @@ func startDiagnostics(with params: MTREnergyEVSEClusterStartDiagnosticsParams?) 
 - (void) startDiagnosticsWithParams:(MTREnergyEVSEClusterStartDiagnosticsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to put the EVSE into a self-diagnostics mode.
 

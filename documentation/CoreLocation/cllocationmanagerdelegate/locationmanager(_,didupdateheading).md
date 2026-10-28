@@ -27,7 +27,7 @@ optional func locationManager(_ manager: CLLocationManager, didUpdateHeading new
 
 - [Getting heading and course information](../getting-heading-and-course-information.md)
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional but expected if you start heading updates using the [`startUpdatingHeading()`](../cllocationmanager/startupdatingheading%28%29.md) method.
 

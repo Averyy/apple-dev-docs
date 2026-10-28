@@ -19,7 +19,7 @@ class ASWebAuthenticationSessionWebBrowserSessionManager
 @interface ASWebAuthenticationSessionWebBrowserSessionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create a session manager directly. Instead, use the [`shared`](./aswebauthenticationsessionwebbrowsersessionmanager/shared.md) session manager to tell the system what instance within your web browser app handles authentication requests. Do this by assigning an instance of a class that adopts the [`ASWebAuthenticationSessionWebBrowserSessionHandling`](./aswebauthenticationsessionwebbrowsersessionhandling.md) protocol to the shared manager’s [`sessionHandler`](./aswebauthenticationsessionwebbrowsersessionmanager/sessionhandler.md) property.
 

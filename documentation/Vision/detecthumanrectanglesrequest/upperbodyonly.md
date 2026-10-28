@@ -21,7 +21,7 @@ A Boolean value that indicates whether the request requires only detecting a hum
 var upperBodyOnly: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true.`
 

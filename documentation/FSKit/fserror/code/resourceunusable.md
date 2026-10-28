@@ -19,7 +19,7 @@ case resourceUnusable
 FSErrorResourceUnusable
 ```
 
-#### Discussion
+## Discussion
 
 For example, this error occurs when a resource uses a file system’s internal feature flags. If the only modules that support the file system don’t support those feature flags, this code indicates an unusable resource. The error tells the person using the module why the resource isn’t usable.
 

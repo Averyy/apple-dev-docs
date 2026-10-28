@@ -23,7 +23,7 @@ var kDNSServiceFlagsAllowRemoteQuery: UInt32 { get }
 kDNSServiceFlagsAllowRemoteQuery
 ```
 
-#### Discussion
+## Discussion
 
 Flag for creating a record for which we will answer remote queries (queries from hosts more than one hop away; hosts not directly connected to the local link).
 

@@ -20,7 +20,7 @@ Sets the default visibility of a table column.
 @preconcurrency func defaultVisibility(_ visibility: Visibility) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
 ```
 
-#### Discussion
+## Discussion
 
 A `hidden` column will not be visible, unless the `Table` is also bound to `TableColumnCustomization` and either modified programmatically or by the user.
 

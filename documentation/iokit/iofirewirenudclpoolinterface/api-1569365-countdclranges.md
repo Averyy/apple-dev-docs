@@ -16,11 +16,11 @@ Returns number of buffers for a NuDCL
 UInt32 (*CountDCLRanges)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns number of ranges in DCLs scatter-gather list
 
-#### Discussion
+## Discussion
 
 Applies: NuDCLSendPacketRef, NuDCLReceivePacket
 

@@ -24,11 +24,11 @@ class func saliencyMap() -> any CIFilter & CISaliencyMap
 + (CIFilter<CISaliencyMap> *) saliencyMapFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the saliency map filter to an image. The effect generates a saliency map representation of the input image.
 

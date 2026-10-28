@@ -24,11 +24,11 @@ class func confirmationRequired(with relativeSettingToConfirm: INRelativeSetting
 + (instancetype) confirmationRequiredWithRelativeSettingToConfirm:(INRelativeSetting) relativeSettingToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRelativeSettingResolutionResult`](../inrelativesettingresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent value but want the user to confirm the replacement value before proceeding.
 

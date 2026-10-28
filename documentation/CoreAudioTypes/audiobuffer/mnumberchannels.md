@@ -25,7 +25,7 @@ var mNumberChannels: UInt32
 UInt32 mNumberChannels;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1` indicates the buffer is noninterleaved.
 

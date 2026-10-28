@@ -24,7 +24,7 @@ protocol UICollectionViewDelegate : UIScrollViewDelegate
 @protocol UICollectionViewDelegate <UIScrollViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 A collection view delegate manages user interactions with the collection view’s contents, including item selection, highlighting, and performing actions on those items. The methods of this protocol are all optional.
 

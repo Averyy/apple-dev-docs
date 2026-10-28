@@ -14,7 +14,7 @@
 kAnyTransactionID = 0
 ```
 
-#### Discussion
+## Discussion
 
 You pass this value for the `transactionID` parameter of the [`AECreateAppleEvent`](../api-1448525-aecreateappleevent.md) function if the Apple event is not one of a series of interdependent Apple events.
 

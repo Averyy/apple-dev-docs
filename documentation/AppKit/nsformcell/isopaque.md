@@ -19,7 +19,7 @@ var isOpaque: Bool { get }
 @property (readonly, getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the cell is completely opaque or [`false`](../../Swift/false.md) if it contains some transparency.
 

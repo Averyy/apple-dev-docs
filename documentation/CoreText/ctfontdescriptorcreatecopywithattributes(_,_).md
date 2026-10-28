@@ -25,7 +25,7 @@ func CTFontDescriptorCreateCopyWithAttributes(_ original: CTFontDescriptor, _ at
 extern CTFontDescriptorRefCTFontDescriptorCreateCopyWithAttributes(CTFontDescriptorRef original, CFDictionaryRef attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new copy of the original font descriptor with attributes augmented by those specified. If there are conflicts between attributes, the new attributes replace existing ones.
 

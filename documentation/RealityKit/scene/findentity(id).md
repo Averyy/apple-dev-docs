@@ -21,11 +21,11 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 @preconcurrency func findEntity(id: Entity.ID) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 `Entity` with the given `Entity.ID`, or `nil` if no such `Entity` is found in the `Scene`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This method uses efficient mapping from `Entity.ID` to `Entity`, not linear traversal of all Entities in the `Scene`.
 

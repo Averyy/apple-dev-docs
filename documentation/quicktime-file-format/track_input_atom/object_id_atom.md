@@ -6,7 +6,7 @@
 
 An atom that identifies an object, such as a sprite within a sprite track, in a track input atom.
 
-#### Overview
+## Overview
 
 For more information, see [`Object ID atom`](../object_id_atom.md).
 

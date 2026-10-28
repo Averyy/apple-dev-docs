@@ -16,7 +16,7 @@ Information about whether the device supports Apple Pay and the possible payment
 enum PaymentCredentialStatus
 ```
 
-#### Overview
+## Overview
 
 The following are possible return values:
 

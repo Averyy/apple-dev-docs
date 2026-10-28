@@ -24,7 +24,7 @@ Creates a new string by copying the null-terminated sequence of code units refer
 init<Encoding>(decodingCString nullTerminatedCodeUnits: [Encoding.CodeUnit], as encoding: Encoding.Type) where Encoding : _UnicodeEncoding
 ```
 
-#### Discussion
+## Discussion
 
 If `nullTerminatedCodeUnits` contains ill-formed code unit sequences, this initializer replaces them with the Unicode replacement character (`"\u{FFFD}"`).
 

@@ -19,7 +19,7 @@ func prepare(forCollectionViewUpdates updateItems: [NSCollectionViewUpdateItem])
 - (void) prepareForCollectionViewUpdates:(NSArray<NSCollectionViewUpdateItem *> *) updateItems;
 ```
 
-#### Discussion
+## Discussion
 
 When items are inserted, deleted, or moved, the collection view calls this method to report those changes to the layout object. The default implementation uses the provided information to plan the layout animations needed to respond to the changes. Subclasses can override this method and use it to prepare for any custom changes, but you should always call `super` at some point in your implementation.
 

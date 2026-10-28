@@ -21,7 +21,7 @@ func flushBuffer()
 - (void) flushBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is not a double-buffered context, this call does nothing.
 

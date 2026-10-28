@@ -25,7 +25,7 @@ func CFStringFold(_ theString: CFMutableString!, _ theFlags: CFStringCompareFlag
 extern void CFStringFold(CFMutableStringRef theString, CFStringCompareFlags theFlags, CFLocaleRef theLocale);
 ```
 
-#### Discussion
+## Discussion
 
 Character foldings are operations that convert any of a set of characters sharing similar semantics into a single representative from that set.
 

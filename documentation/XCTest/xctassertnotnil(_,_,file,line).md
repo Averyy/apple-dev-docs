@@ -12,7 +12,7 @@ Asserts that an expression is not `nil`.
 func XCTAssertNotNil(_ expression: @autoclosure () throws -> Any?, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression == nil`.
 

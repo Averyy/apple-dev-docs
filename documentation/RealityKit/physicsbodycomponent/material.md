@@ -20,7 +20,7 @@ The physics body’s material properties, like friction.
 var material: PhysicsMaterialResource
 ```
 
-#### Discussion
+## Discussion
 
 By default, the body’s material resource is set to [`default`](../physicsmaterialresource/default.md), which provides a modest amount of friction and restitution (bounciness).
 

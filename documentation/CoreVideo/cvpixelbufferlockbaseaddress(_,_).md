@@ -25,11 +25,11 @@ func CVPixelBufferLockBaseAddress(_ pixelBuffer: CVPixelBuffer, _ lockFlags: CVP
 extern CVReturn CVPixelBufferLockBaseAddress(CVPixelBufferRef pixelBuffer, CVPixelBufferLockFlags lockFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) function before accessing pixel data with the CPU, and call the [`CVPixelBufferUnlockBaseAddress(_:_:)`](./cvpixelbufferunlockbaseaddress%28_,_%29.md) function afterward. If you include the [`readOnly`](./cvpixelbufferlockflags/readonly.md) value in the `lockFlags` parameter when locking the buffer, you must also include it when unlocking the buffer. Using the flag asymmetrically results in undefined behavior.
 

@@ -21,7 +21,7 @@ A default set of effect options with a preferred speed multiplier.
 static func speed(_ speed: Double) -> SymbolEffectOptions
 ```
 
-#### Return Value
+## Return Value
 
 A new set of effect options with the preferred speed multiplier.
 

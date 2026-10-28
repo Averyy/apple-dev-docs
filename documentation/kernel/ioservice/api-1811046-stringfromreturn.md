@@ -12,11 +12,11 @@ virtual const char * stringFromReturn(
  IOReturnrtn );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a constant string, or zero if the return code is unknown.
 
-#### Overview
+## Overview
 
 Strings are available for the standard return codes in `IOReturn.h` in IOService, while subclasses may implement this method to interpret family dependent return codes.
 

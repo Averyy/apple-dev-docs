@@ -24,7 +24,7 @@ func start() throws
 - (BOOL) startAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t call [`prepareToPlay()`](./preparetoplay%28%29.md), the framework calls it and then starts the player.
 

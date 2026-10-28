@@ -25,7 +25,7 @@ var focalBlurSampleCount: Int { get set }
 @property (nonatomic) NSInteger focalBlurSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`wantsDepthOfField`](./wantsdepthoffield.md) setting is enabled, SceneKit renders depth-of-field blur (also called *bokeh*) effects using a blur filter that samples multiple points in the image. Sampling a larger number of points produces a higher quality visual effect at a higher performance cost, and vice versa. The default sample count is 25.
 

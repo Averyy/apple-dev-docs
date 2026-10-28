@@ -18,7 +18,7 @@ The framework supports the language or language pairing, but can’t yet use it.
 case supported
 ```
 
-#### Discussion
+## Discussion
 
 A language or language pairing is ready for use in a translation after it downloads and installs.
 

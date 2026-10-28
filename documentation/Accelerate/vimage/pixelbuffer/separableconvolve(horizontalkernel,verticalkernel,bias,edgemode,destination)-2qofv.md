@@ -23,7 +23,7 @@ func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias:
 
 Available when `Format` is `vImage.PlanarF`.
 
-#### Discussion
+## Discussion
 
 The following code shows how to apply a Gaussian blur using separable convolution to a planar buffer:
 

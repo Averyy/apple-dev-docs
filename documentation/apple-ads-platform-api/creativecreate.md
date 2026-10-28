@@ -15,13 +15,13 @@ The request body for creating a new Creative object.
 object CreativeCreate
 ```
 
-#### Discussion
+## Discussion
 
 Creating an ad creative defines the visual presentation and destination for an ad, before you ever attach it to an ad group. An ad creative isn’t tied to a campaign or ad group at creation, so you can reuse the same ad creative across multiple ads later.
 
 Pick `creativeType` before filling in `creativeSpec` and `destination`, since it determines the required shape of both.
 
-##### Example
+### Example
 
 ```json
 {

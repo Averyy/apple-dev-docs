@@ -29,7 +29,7 @@ init(mlModel: MLModel) throws
 
 - [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
-#### Discussion
+## Discussion
 
 The model you provide must accept audio data as input and produce a classification dictionary output that contains the probability of each category. For example, you can generate a sound classifier model by creating an [`MLSoundClassifier`](../../CreateML/mlsoundclassifier.md) and training it with your own audio files.
 

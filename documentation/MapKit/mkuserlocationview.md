@@ -24,7 +24,7 @@ class MKUserLocationView
 @interface MKUserLocationView : MKAnnotationView
 ```
 
-#### Overview
+## Overview
 
 If you don’t need additional configuration, you can show an annotation with the user’s location by setting [`showsUserLocation`](./mkmapview/showsuserlocation.md) on the map to `true`.
 

@@ -21,7 +21,7 @@ func logSumExp(axes: some Collection<Int>, keepDims: Bool = false, stream: Strea
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 The log-sum-exp reduction is a numerically stable version of:
 
@@ -29,7 +29,7 @@ The log-sum-exp reduction is a numerically stable version of:
 log(sum(exp(a), [axes]]))
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`logSumExp(axis:keepDims:stream:)`](./logsumexp%28axis,keepdims,stream%29.md)

@@ -25,7 +25,7 @@ typealias CFTreeRetainCallBack = (UnsafeRawPointer?) -> UnsafeRawPointer?
 typedef const void *(*)(const void *) CFTreeRetainCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The value to use whenever the information pointer is retained, which is usually the `info` parameter passed to this callback, but may be a different value if a different value should be used.
 

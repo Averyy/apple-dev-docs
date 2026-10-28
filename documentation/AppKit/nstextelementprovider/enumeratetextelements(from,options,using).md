@@ -20,11 +20,11 @@ func enumerateTextElements(from textLocation: (any NSTextLocation)?, options: NS
 - (id<NSTextLocation>) enumerateTextElementsFromLocation:(id<NSTextLocation>) textLocation options:(NSTextContentManagerEnumerationOptions) options usingBlock:(BOOL (^)(NSTextElement *element)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSTextLocation`.
 
-#### Discussion
+## Discussion
 
 If `textLocation` is `nil`, the method uses `documentRange.location` for forward enumeration and `documentRange.endLocation` for reverse enumeration. When enumerating backward, the method starts with the element preceding the one containing `textLocation`. If enumerated at least one element, it returns the edge of the enumerated range.
 

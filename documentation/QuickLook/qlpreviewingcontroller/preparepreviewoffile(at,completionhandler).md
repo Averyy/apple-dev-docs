@@ -24,7 +24,7 @@ optional func preparePreviewOfFile(at url: URL) async throws
 - (void) preparePreviewOfFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prepare the content of the view controller with the given file URL.
 

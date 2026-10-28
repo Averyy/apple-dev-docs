@@ -21,7 +21,7 @@ Information about the introductory offer available for the auto-renewable subscr
 let introductoryOffer: Product.SubscriptionOffer?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if you don’t set up an introductory offer in App Store Connect. Use [`isEligibleForIntroOffer`](./iseligibleforintrooffer.md) to determine whether the customer is eligible for an introductory offer.
 

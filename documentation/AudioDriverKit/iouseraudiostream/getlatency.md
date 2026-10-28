@@ -13,11 +13,11 @@
 uint32_t GetLatency();
 ```
 
-#### Return Value
+## Return Value
 
 Returns uint32_t
 
-#### Discussion
+## Discussion
 
 Get the latency of the stream in sample frames.
 

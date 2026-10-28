@@ -24,7 +24,7 @@ func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewCont
 - (void) editVoiceShortcutViewController:(INUIEditVoiceShortcutViewController *) controller didUpdateVoiceShortcut:(INVoiceShortcut *) voiceShortcut error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after the user re-records the invocation phrase for the shortcut. If your app displays the phrase, the app should update its screen to show the new phrase by retrieving the phrase text from the [`invocationPhrase`](../../Intents/invoiceshortcut/invocationphrase.md) property on voiceShortcut.
 

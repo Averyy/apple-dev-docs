@@ -15,7 +15,7 @@ A player for Live Photos.
 interface LivePhotosKit.Player
 ```
 
-#### Overview
+## Overview
 
 This class provides a default native control allowing users to play Live Photos.
 
@@ -23,11 +23,11 @@ On a desktop browser, when the user moves the pointer over the native control ba
 
 On a mobile device, when the user presses the Live Photo, the video starts playing until the user stops pressing or the video ends.
 
-##### Player Events
+### Player Events
 
 During the life cycle of a player, several events are generated.  Adding an event listener to the player allows reaction to these events.
 
-###### videoload
+#### videoload
 
 The player emits a `videoload` event after the video component of the Live Photo has finished loading but before the minimum number of frames necessary for smooth playback are decoded. Under normal circumstances, the `canplay` event is emitted after the `videoload` event. The event handler is then passed an `Event` object. The `Player` reference is accessible from the event’s target member.
 
@@ -37,7 +37,7 @@ player.addEventListener('videoload', (ev) => {
 })
 ```
 
-###### photoload
+#### photoload
 
 The player emits a `photoload` event when the photo component of the Live Photo has finished loading. The event handler is then passed an `Event` object. The Player reference is accessible from the event’s target member.
 
@@ -47,7 +47,7 @@ player.addEventListener('photoload', (ev) => {
 })
 ```
 
-###### canplay
+#### canplay
 
 The player emits a `canplay` event when the `Player` has obtained just enough video frames and is obtaining them quickly enough for smooth playback. The event handler is then passed an `Event` object. The Player reference is accessible from the event’s target member.
 
@@ -57,7 +57,7 @@ player. addEventListener('canplay', (ev) => {
 })
 ```
 
-###### ended
+#### ended
 
 The player emits an `ended` event when playback of the Live Photo has completed. The event handler is then passed an `Event` object. The Player reference is accessible from the event’s target member.
 
@@ -67,7 +67,7 @@ player.addEventListener('ended', (ev) => {
 })
 ```
 
-###### error
+#### error
 
 The player emits an `error` event when loading of either the photo or video components of the Live Photo has failed. The event handler is then passed an `Event` object, which has a detail member containing error information. If LivePhotosKit JS cannot interpret an internal exception, the `error` member of `detail` will be the exception object. The `Player` reference may be obtained from the event’s target member.
 

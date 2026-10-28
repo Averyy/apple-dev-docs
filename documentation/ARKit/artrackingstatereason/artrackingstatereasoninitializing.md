@@ -16,7 +16,7 @@ The AR session has not yet gathered enough camera or motion data to provide trac
 ARTrackingStateReasonInitializing
 ```
 
-#### Discussion
+## Discussion
 
 This value occurs temporarily after starting a new AR session or changing configurations.
 

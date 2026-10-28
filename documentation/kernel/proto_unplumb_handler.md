@@ -13,7 +13,7 @@
 typedef void (*proto_unplumb_handler)(ifnet_t ifp, protocol_family_t protocol);
 ```
 
-#### Discussion
+## Discussion
 
 proto_unplumb_handler is called to detach a protocol from an interface. A typical unplumb function would call ifnet_detach_protocol and perform any necessary cleanup.
 

@@ -20,7 +20,7 @@ typealias AEEventHandlerUPP = AEEventHandlerProcPtr
 typedef AEEventHandlerProcPtr AEEventHandlerUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of an event handler callback function, see [`AEEventHandlerProcPtr`](./aeeventhandlerprocptr.md). 
 

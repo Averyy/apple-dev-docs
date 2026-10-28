@@ -19,7 +19,7 @@ func deleteGlyphs(in glyphRange: NSRange)
 - (void) deleteGlyphsInRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to interact with custom glyph storage.
 

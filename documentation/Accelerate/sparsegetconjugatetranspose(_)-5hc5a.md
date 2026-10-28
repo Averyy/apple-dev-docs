@@ -25,7 +25,7 @@ func SparseGetConjugateTranspose(_ Subfactor: SparseOpaqueSubfactor_Complex_Doub
 static SparseOpaqueSubfactor_Complex_Double SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Double Subfactor);
 ```
 
-#### Return Value
+## Return Value
 
 A matrix factorization of `A^H`, where the original was of `A`. As this is reference counted, it must be freed through a call to `SparseCleanup` once it is no longer required.
 

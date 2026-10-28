@@ -5,7 +5,7 @@
 
 Configure and run macOS guests on Apple silicon.
 
-#### Overview
+## Overview
 
 Use the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) to create a [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md) that represents a specific macOS platform configuration ([`VZMacHardwareModel`](./vzmachardwaremodel.md), number of virtual CPUs, RAM, devices, and so on) that you want to run on your Apple silicon Mac.
 

@@ -21,13 +21,13 @@ func logAddExp(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 This is a numerically stable log-add-exp of two arrays with numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
 The computation is is a numerically stable version of `log(exp(a) + exp(b))`.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

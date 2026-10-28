@@ -22,7 +22,7 @@ func update(to configuration: AEAssessmentConfiguration)
 - (void) updateToConfiguration:(AEAssessmentConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method, the session tries to apply the new configuration and then calls its delegate’s [`assessmentSessionDidUpdate(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidupdate%28_%29.md) method to indicate success, or the delegate’s [`assessmentSession(_:failedToUpdateTo:error:)`](../aeassessmentsessiondelegate/assessmentsession%28_,failedtoupdateto,error%29.md) method to indicate failure. Wait to receive one of these callbacks before proceeding with an assessment, and be sure to handle the failure case.
 

@@ -6,7 +6,7 @@
 
 An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
 
-#### Overview
+## Overview
 
 Color table atoms define a list of preferred colors for displaying the movie on devices that support only 256 colors. The list may contain up to 256 colors. These optional atoms have a type value of `'ctab'`. The color table atom contains a Macintosh color table data structure.
 

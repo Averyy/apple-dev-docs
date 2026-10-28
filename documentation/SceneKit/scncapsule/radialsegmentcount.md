@@ -25,7 +25,7 @@ var radialSegmentCount: Int { get set }
 @property (nonatomic) NSInteger radialSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry, creating a smoother curve for the capsule’s circular horizontal cross sections at a cost to rendering performance.
 

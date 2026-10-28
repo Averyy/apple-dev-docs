@@ -19,7 +19,7 @@ Creates a new element ID from a markup ID.
 init<T>(_ id: MarkupID<T>) where T : Markup
 ```
 
-#### Discussion
+## Discussion
 
 Supports all PaperKit types, will `fatalError` if used for an unsupported type.
 

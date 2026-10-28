@@ -5,7 +5,7 @@
 
 Modify the way hosts recognize and display your FxPlug plug-in.
 
-#### Overview
+## Overview
 
 FxPlug plug-ins typically have more than one `Info.plist` file: one in the application bundle and one in the XPC service. Although the application’s `Info.plist` doesn’t require any changes, your XPC’s `Info.plist` requires some changes to create a functioning plug-in.
 
@@ -15,13 +15,13 @@ Add the following key-value pairs to your XPC `Info.plist,` using the associated
 
 > 💡 **Tip**:  Add entries to property lists by control-clicking in the blank space below the last entry and selecting Add Row, or hovering the mouse over an existing entry and clicking the + button. After selecting the appropriate key (or typing it in manually) change the type for the type of key you require (String, Number, Dictionary, Array, etc.) To add components to a Dictionary or Array, first turn down the arrow before clicking the + button.
 
-##### Add PlugInKit dictionary
+### Add PlugInKit dictionary
 
 This dictionary contains three items: A `PrincipalClass` key, a `Protocol` key, and an `Attributes` dictionary with the component keys `com.apple.protocol` with the string value `FxPlug`, and `com.apple.version` with a version number. Set the `Protocol` key to `PROXPCProtocol`, as this is what is used to identify your plug-in as an FxPlug to PlugInKit. Set the `PrincipalClass` string here to [`FxPrincipal`](../professional_video_applications/fxprincipal.md).
 
 By adding these keys, you make your XPC discoverable by PlugInKit. It’s important to update your version number when you make updates—if the host app finds more than one plug-in with the same name, it returns the plug-in with the newest version first.
 
-##### Add ProPlugPlugInGroupList and ProPlugPlugInList keys
+### Add ProPlugPlugInGroupList and ProPlugPlugInList keys
 
 Both of these keys are arrays of values that tell the host application how to name and categorize your effect.
 
@@ -33,7 +33,7 @@ In the `ProPlugPlugInList` dictionary, enter your plug-in’s `className`, `disp
 
 > 💡 **Tip**:  Generate new UUIDs from the command line with the `uuidgen` command, which you can then copy and paste into your plist.
 
-##### Add XPCService entry
+### Add XPCService entry
 
 There are some new keys to be added to this entry:
 
@@ -45,7 +45,7 @@ There are some new keys to be added to this entry:
 
 > **Note**:  There are underscores within some of these key-value pairs, so add them with caution.
 
-##### Add ProPlugDynamicRegistration and ProPlugDynamicRegistrationPrincipalClass keys
+### Add ProPlugDynamicRegistration and ProPlugDynamicRegistrationPrincipalClass keys
 
 Your plug-in bundle may have a static list of plug-ins a host app should register, or it may leave registration to the bundle’s principal class. With a static list, plug-ins are recognized and loaded automatically; for a dynamic list, the bundle’s principal class is asked to register the plug-ins. The distinction depends on the value of the Boolean tag `ProPlugDynamicRegistration` in the property list. In the example below, the property list has listed `YES` for this key, so the plug-in bundle will use dynamic registration.
 

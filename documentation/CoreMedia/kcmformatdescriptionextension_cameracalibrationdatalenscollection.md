@@ -23,7 +23,7 @@ let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString
 extern CFStringRef const kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies intrinsic and extrinsic parameters for single or multiple lenses.
 

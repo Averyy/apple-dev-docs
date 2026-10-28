@@ -21,7 +21,7 @@ A frame-packing tag value for video without packed frames.
 extern const CMTag kCMTagPackingTypeNone;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_PackingType`](./cmtagcategory/kcmtagcategory_packingtype.md) category.
 

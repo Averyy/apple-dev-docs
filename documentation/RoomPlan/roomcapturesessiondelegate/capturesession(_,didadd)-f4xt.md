@@ -17,7 +17,7 @@ Provides a default, blank implementation for when the capture session adds surfa
 func captureSession(_ session: RoomCaptureSession, didAdd room: CapturedRoom)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didAdd:)`](./capturesession%28_,didadd%29.md).
 

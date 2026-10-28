@@ -20,7 +20,7 @@ func wait(until deadline: LayerRenderer.Clock.Instant, tolerance: Duration? = ni
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 Use this function to block your render loop while waiting for critical time events. For example, use it to block the thread prior to starting the submission phase for a given frame.
 

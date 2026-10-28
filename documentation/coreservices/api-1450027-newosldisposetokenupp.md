@@ -19,11 +19,11 @@ func NewOSLDisposeTokenUPP(_ userRoutine: OSLDisposeTokenProcPtr!) -> OSLDispose
 OSLDisposeTokenUPP NewOSLDisposeTokenUPP(OSLDisposeTokenProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLDisposeTokenUPP`](./osldisposetokenupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md) callback function. 
 

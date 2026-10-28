@@ -17,7 +17,7 @@ Enumerates all items, batched in pages.
 func enumerateContent(in page: ContactItemPage, for observer: any ContactItemContentObserver) async
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `enumerateContent(in:for:)` for each page of items to enumerate. Your implementation calls [`didFinishEnumeratingPage(upTo:)`](../contactitemcontentobserver/didfinishenumeratingpage%28upto%29.md) after enumerating each page, excluding the last page. After enumerating the last page, your implementation calls [`didFinishEnumeratingContent(upTo:)`](../contactitemcontentobserver/didfinishenumeratingcontent%28upto%29.md).
 

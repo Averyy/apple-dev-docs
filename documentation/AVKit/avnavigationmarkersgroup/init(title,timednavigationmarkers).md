@@ -19,11 +19,11 @@ init(title: String?, timedNavigationMarkers navigationMarkers: [AVTimedMetadataG
 - (instancetype) initWithTitle:(NSString *) title timedNavigationMarkers:(NSArray<AVTimedMetadataGroup *> *) navigationMarkers;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation markers group.
 
-#### Discussion
+## Discussion
 
 To associate marker groups with an asset for playback, use the [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) property of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object.
 

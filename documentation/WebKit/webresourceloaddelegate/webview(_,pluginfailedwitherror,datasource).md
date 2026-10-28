@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, plugInFailedWithError error: (any Erro
 - (void) webView:(WebView *) sender plugInFailedWithError:(NSError *) error dataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 This method might be invoked if a plug-in is not found, fails to load, or is not available for some reason. Delegates might implement this method to display or log a detailed error message. If you do not implement this method, no action is taken.
 

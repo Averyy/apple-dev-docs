@@ -21,7 +21,7 @@ The sections computed from the current results, grouped by [`sectionBy`](./secti
 final var sections: SectionedResults<Element, SectionTitle>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if this observer was created without a `sectionBy` key path (i.e. `SectionTitle == Never`). When sectioning is enabled, returns a [`SectionedResults`](../sectionedresults.md) of sections ordered by their first appearance in the sorted results.
 

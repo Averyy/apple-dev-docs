@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatApplyAffineTransform(SPVector3DFloat vector, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s transformed by the specified affine transform.
 

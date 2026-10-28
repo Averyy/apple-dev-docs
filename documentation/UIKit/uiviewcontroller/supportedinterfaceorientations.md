@@ -22,7 +22,7 @@ var supportedInterfaceOrientations: UIInterfaceOrientationMask { get }
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a bit mask that specifies which orientations the view controller supports. For more information, see [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md).
 

@@ -21,7 +21,7 @@ var zoomFactor: Float { get }
 @property (atomic, readonly) float zoomFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Suitable for use with the [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property or [`ramp(toVideoZoomFactor:withRate:)`](../avcapturedevice/ramp%28tovideozoomfactor,withrate%29.md).
 

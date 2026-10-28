@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatApplyPose(SPVector3DFloat vector, SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s transformed by the specified pose.
 

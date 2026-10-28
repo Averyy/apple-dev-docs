@@ -17,7 +17,7 @@ Indicates whether a connected device endpoint is currently connected.
 final var isEndpointAvailable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` when a visionOS device is connected via Mac Virtual Display.
 

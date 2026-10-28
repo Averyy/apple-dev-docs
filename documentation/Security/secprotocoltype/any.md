@@ -20,7 +20,7 @@ case any
 kSecProtocolTypeAny
 ```
 
-#### Discussion
+## Discussion
 
 When performing a search, use this constant to avoid constraining your search results to a particular protocol.
 

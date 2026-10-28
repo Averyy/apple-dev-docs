@@ -26,11 +26,11 @@ func offset(x: CGFloat = 0, y: CGFloat = 0) -> some View
 
 - [Making fine adjustments to a view’s position](../making-fine-adjustments-to-a-view-s-position.md)
 
-#### Return Value
+## Return Value
 
 A view that offsets this view by `x` and `y`.
 
-#### Discussion
+## Discussion
 
 Use `offset(x:y:)` to shift the displayed contents by the amount specified in the `x` and `y` parameters.
 

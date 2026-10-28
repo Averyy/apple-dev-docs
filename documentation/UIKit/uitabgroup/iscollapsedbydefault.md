@@ -22,7 +22,7 @@ var isCollapsedByDefault: Bool { get set }
 @property (nonatomic, assign, getter=isCollapsedByDefault) BOOL collapsedByDefault;
 ```
 
-#### Discussion
+## Discussion
 
 When true, the group renders collapsed the first time it appears in the sidebar. The user can expand the group manually, and any subsequent user interactions or customization changes take precedence over this default.
 

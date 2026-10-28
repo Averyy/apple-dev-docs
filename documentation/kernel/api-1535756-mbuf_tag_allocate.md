@@ -13,11 +13,11 @@
 errno_t mbuf_tag_allocate(mbuf_t mbuf, mbuf_tag_id_t module_id, mbuf_tag_type_t type, size_t length, mbuf_how_t how, void **data_p);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Allocate an mbuf tag. Mbuf tags allow various portions of the stack to tag mbufs with data that will travel with the mbuf through the stack.
 

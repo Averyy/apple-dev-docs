@@ -21,7 +21,7 @@ Returns a URL constructed by removing any path extension.
 mutating func deletePathExtension()
 ```
 
-#### Discussion
+## Discussion
 
 If the URL has an empty path (e.g., `http://www.example.com`), then this function will do nothing.
 

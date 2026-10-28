@@ -18,7 +18,7 @@ Returns the font weight and range at the index position.
 - (AVCaptionFontWeight) fontWeightAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The font weight.
 

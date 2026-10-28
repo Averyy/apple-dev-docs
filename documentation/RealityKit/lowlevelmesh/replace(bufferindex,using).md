@@ -21,7 +21,7 @@ Retrieves a Metal vertex buffer you can use to replace the contents of the speci
 func replace(bufferIndex index: Int, using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s contents are in an uninitialized state.
 

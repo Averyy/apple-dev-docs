@@ -21,7 +21,7 @@ Writes the textual representations of the given items into the standard output.
 func print(_ items: Any..., separator: String = " ", terminator: String = "\n")
 ```
 
-#### Discussion
+## Discussion
 
 You can pass zero or more items to the `print(_:separator:terminator:)` function. The textual representation for each item is the same as that obtained by calling `String(describing: item)`. The following example prints a string, a closed range of integers, and a group of floating-point values to standard output:
 

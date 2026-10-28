@@ -17,7 +17,7 @@ Provides specialized information and services from the Swift Package Manager or 
 struct PackageManager
 ```
 
-#### Overview
+## Overview
 
 Different plugin hosts implement the functionality in whatever way is appropriate for them, but are expected to preserve the semantics described by this API.
 

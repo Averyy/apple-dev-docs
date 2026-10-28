@@ -25,7 +25,7 @@ class NSMutableIndexSet
 @interface NSMutableIndexSet : NSIndexSet
 ```
 
-#### Overview
+## Overview
 
 In Swift, this type bridges to [`IndexSet`](./indexset.md); use [`NSMutableIndexSet`](./nsmutableindexset.md) when you need reference semantics or other Foundation-specific behavior.
 

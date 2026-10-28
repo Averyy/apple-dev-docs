@@ -18,7 +18,7 @@ The shape of the receiver.
 var nestedShape: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: the nesting must be rectangular – every element at a given level must have the same shape – or the precondition will fail.
 

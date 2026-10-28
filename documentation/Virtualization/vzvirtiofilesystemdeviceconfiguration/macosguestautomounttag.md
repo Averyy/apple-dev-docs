@@ -19,7 +19,7 @@ class var macOSGuestAutomountTag: String { get }
 @property (class, readonly) NSString * macOSGuestAutomountTag;
 ```
 
-#### Discussion
+## Discussion
 
 A device configured with this tag is automatically mounted in a macOS guest.
 

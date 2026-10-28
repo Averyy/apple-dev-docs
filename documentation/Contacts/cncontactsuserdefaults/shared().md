@@ -24,7 +24,7 @@ class func shared() -> Self
 + (instancetype) sharedDefaults;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the shared [`CNContactsUserDefaults`](../cncontactsuserdefaults.md) object.
 

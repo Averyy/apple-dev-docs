@@ -20,7 +20,7 @@ Passes a single control widget template written as a child view through unmodifi
 static func buildBlock<Content>(_ content: Content) -> some ControlWidgetTemplate where Content : ControlWidgetTemplate
 ```
 
-#### Discussion
+## Discussion
 
 An example of a single control widget template written as a child view is `{ ControlWidgetToggle(...) }`.
 

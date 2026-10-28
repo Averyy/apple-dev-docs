@@ -21,7 +21,7 @@ A Boolean value indicating whether to publish the most recent element.
 let latest: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `false`, the publisher emits the first element received during the interval.
 

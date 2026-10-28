@@ -25,7 +25,7 @@ var isCameraAssistanceEnabled: Bool { get set }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

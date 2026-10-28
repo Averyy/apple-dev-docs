@@ -19,7 +19,7 @@ class NSPICTImageRep
 @interface NSPICTImageRep : NSImageRep
 ```
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**:  There is no guarantee that the image will render exactly the same as it would under QuickDraw because of the differences between the display medium and QuickDraw. In particular, some transfer modes and region operations may not be supported.
 

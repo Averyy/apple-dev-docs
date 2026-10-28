@@ -25,7 +25,7 @@ var locksAmbientWithDiffuse: Bool { get set }
 @property (nonatomic) BOOL locksAmbientWithDiffuse;
 ```
 
-#### Discussion
+## Discussion
 
 When modeling real-world lighting, a surface is typically considered to have a single “base” color or texture that is visible under both ambient and diffuse light. When this property’s value is [`false`](../../Swift/false.md), SceneKit does not have this limitation: you may use a material’s [`diffuse`](./diffuse.md) property to provide a color or texture that is visible under direct lighting, and its [`ambient`](./ambient.md) property to provide a different color or texture for areas not directly illuminated.
 

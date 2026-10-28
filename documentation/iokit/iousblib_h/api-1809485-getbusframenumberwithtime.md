@@ -14,11 +14,11 @@ IOReturn ( *GetBusFrameNumberWithTime)(
    AbsoluteTime *atTime);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnUnsupported is the bus doesn't support this function.
 
-#### Overview
+## Overview
 
 The device does not have to be open to use this function.
 

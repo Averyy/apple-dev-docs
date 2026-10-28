@@ -23,7 +23,7 @@ static var required: UILayoutPriority { get }
 static const UILayoutPriority UILayoutPriorityRequired;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t specify a layout constraint that exceeds this number.
 

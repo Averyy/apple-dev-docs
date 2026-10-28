@@ -19,7 +19,7 @@ Returns an unlit lighting function that emits the surface emissive color directl
 func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction
 ```
 
-#### Return Value
+## Return Value
 
 An unlit [`LowLevelMaterialResource.LightingFunction`](../lowlevelmaterialresource/lightingfunction.md).
 

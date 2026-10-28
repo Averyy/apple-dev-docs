@@ -21,11 +21,11 @@ func SecKeychainGetStatus(_ keychain: SecKeychain?, _ keychainStatus: UnsafeMuta
 OSStatus SecKeychainGetStatus(SecKeychainRef keychain, SecKeychainStatus *keychainStatus);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecNoSuchKeychain`](./errsecnosuchkeychain.md) indicates that the specified keychain could not be found. The result code [`errSecInvalidKeychain`](./errsecinvalidkeychain.md) indicates that the specified keychain is invalid.
 
-#### Discussion
+## Discussion
 
 This function retrieves the status of a specified keychain. You can use this function to determine if the keychain is unlocked, readable, or writable. Note that the lock status of a keychain can change at any time due to user or system activity. Because the system automatically prompts the user to unlock a keychain when necessary, you do not usually have to worry about the lock status of a keychain. If you do need to track the lock status of a keychain, use the [`SecKeychainAddCallback(_:_:_:)`](./seckeychainaddcallback%28_,_,_%29.md) function to register for keychain notifications.
 

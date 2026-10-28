@@ -24,7 +24,7 @@ var startDate: Date { get }
 @property (strong, readonly) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the start date for the statistics. If you calculated these statistics using a statistics query, this is the earliest start date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the start of the time interval for that particular collection of statistics.
 

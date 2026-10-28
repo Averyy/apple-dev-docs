@@ -5,7 +5,7 @@
 
 Configure a descriptor to specify the properties of an indirect command buffer.
 
-#### Overview
+## Overview
 
 An indirect command buffer stores encoded GPU commands persistently. Using an indirect command buffer, you can encode a command once and reuse it multiple times. You can also encode commands into an indirect command buffer simultaneously with multiple threads on the CPU or with a compute kernel on the GPU.
 

@@ -27,7 +27,7 @@ var rootHash: Data { get }
 
 - [Adding custom collaboration to your app](../../../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 The data contains a SHA256 hash of the user’s combined public identities.
 

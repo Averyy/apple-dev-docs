@@ -31,7 +31,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinato
 
 - [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Discussion
+## Discussion
 
 During an interactive evaluation of your view’s text, Writing Tools creates different animations to provide feedback on what’s happening. For example, it creates an [`UIWritingToolsCoordinator.TextAnimation.anticipate`](../textanimation/anticipate.md) animation to let people know the system is evaluating the text. The `textAnimation` parameter tells you what type of animation to prepare for.
 

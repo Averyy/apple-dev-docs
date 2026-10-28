@@ -20,11 +20,11 @@ Creates a new R-tree object.
 + (instancetype) treeWithMaxNumberOfChildren:(NSUInteger) maxNumberOfChildren;
 ```
 
-#### Return Value
+## Return Value
 
 A new R-tree object.
 
-#### Discussion
+## Discussion
 
 An R-tree, like other tree data structures, is a collection of nodes, each of which contains one of the objects stored in the tree. You don’t directly interact with nodes—GameplayKit automatically creates and manages them, so you interact only with the objects the nodes contain. However, the `maxNumberOfChildren` parameter determines when the R-tree automatically reorganizes its internal structure, and thus the performance of the add and search operations.
 

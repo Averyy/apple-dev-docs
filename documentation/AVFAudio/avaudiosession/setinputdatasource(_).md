@@ -23,7 +23,7 @@ func setInputDataSource(_ dataSource: AVAudioSessionDataSourceDescription?) thro
 - (BOOL) setInputDataSource:(AVAudioSessionDataSourceDescription *) dataSource error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 You can set the input source to exactly one of the [`AVAudioSessionDataSourceDescription`](../avaudiosessiondatasourcedescription.md) objects in the [`inputDataSources`](./inputdatasources.md) array. Only certain devices and peripherals, such as an iPhone equipped with both front- and rear-facing microphones, support switching among input sources.
 

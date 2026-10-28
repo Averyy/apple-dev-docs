@@ -17,7 +17,7 @@ Distance limits (in meters) for how much each particle is allowed to deviate fro
 var distanceLimits: PerClothVertexData<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Each value must be non-negative. A value of 0 makes the particle fully bound to its assigned triangle in the source collider. A value of `Float.infinity` allows the particle to move completely free, as if no binding was happening.
 

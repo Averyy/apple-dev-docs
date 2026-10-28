@@ -25,7 +25,7 @@ func accessibilityLineStartMarker(for marker: BEAccessibilityTextMarker) -> BEAc
 - (BEAccessibilityTextMarker *) accessibilityLineStartMarkerForMarker:(BEAccessibilityTextMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 A text marker that represents the start of the line that contains `marker`, or `nil` if there isn’t one.
 

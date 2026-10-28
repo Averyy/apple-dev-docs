@@ -21,7 +21,7 @@ The array of application protocol options used by connections and listeners.
 var applicationProtocols: [NWProtocolOptions] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The array of application protocols is ordered with the closest to the application first, and the closest to the transport protocol last. For example, if you want to run the WebSocket protocol over TLS, the WebSocket protocol should come first, and the TLS protocol should come second.
 

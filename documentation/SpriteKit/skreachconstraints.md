@@ -25,7 +25,7 @@ class SKReachConstraints
 @interface SKReachConstraints : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`SKReachConstraints`](./skreachconstraints.md) object is used to describe the range of motion for an [`SKNode`](./sknode.md) object whenever an inverse kinematic (IK) action is executed. To use reach constraints, create an [`SKReachConstraints`](./skreachconstraints.md) object and assign it to a node’s [`reachConstraints`](./sknode/reachconstraints.md) property. For more information on using reach actions to perform IK animations, see the [`SKAction`](./skaction.md) class.
 

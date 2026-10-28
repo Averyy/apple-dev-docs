@@ -25,11 +25,11 @@ func CFRunLoopContainsSource(_ rl: CFRunLoop!, _ source: CFRunLoopSource!, _ mod
 extern Boolean CFRunLoopContainsSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `source` is in mode `mode` of the run loop `rl`, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If `source` was added to [`commonModes`](./cfrunloopmode/commonmodes.md), this function returns `true` if `mode` is either [`commonModes`](./cfrunloopmode/commonmodes.md) or any of the modes that has been added to the set of common modes.
 

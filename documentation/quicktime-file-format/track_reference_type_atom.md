@@ -10,7 +10,7 @@ An atom that defines relationships with tracks of a specific type.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 Each track reference atom defines relationships with tracks of a specific type. The reference type implies a track type. The track reference types and their descriptions are as follows.
 

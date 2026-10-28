@@ -28,7 +28,7 @@ class func start(definition activityDefinition: GKGameActivityDefinition, partyC
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 The framework converts the party code to uppercase.
 

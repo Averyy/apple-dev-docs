@@ -24,11 +24,11 @@ typealias JSObjectDeletePropertyCallback = (JSContextRef?, JSObjectRef?, JSStrin
 typedef _Bool (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSString *, const struct OpaqueJSValue **) JSObjectDeletePropertyCallback;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the deletion of `propertyName` succeeds; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you name your function `DeleteProperty`, you declare it like this:
 

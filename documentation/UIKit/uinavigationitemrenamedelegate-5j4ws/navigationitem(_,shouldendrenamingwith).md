@@ -20,11 +20,11 @@ Asks the delegate whether to continue or abandon the rename process.
 @preconcurrency func navigationItem(_: UINavigationItem, shouldEndRenamingWith title: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to continue the rename process; [`false`](../../Swift/false.md) to cancel the rename process.
 
-#### Discussion
+## Discussion
 
 Implement this method to return [`false`](../../Swift/false.md) to prevent renaming.
 

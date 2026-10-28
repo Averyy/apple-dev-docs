@@ -18,7 +18,7 @@ A Boolean value that indicates whether your driver supports Thunderbolt devices.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Include this key in the personality dictionary of your driver if that personality supports Thunderbolt devices.
 

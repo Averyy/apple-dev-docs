@@ -19,7 +19,7 @@ The large mode.
 static var large: ToolbarTitleDisplayMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, and watchOS, this displays the toolbar title below the content of the navigation bar when scrollable content is scrolled to the top and transitions to the center of the toolbar as content is scrolled.
 

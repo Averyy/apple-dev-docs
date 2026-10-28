@@ -21,7 +21,7 @@ The customization for a section’s children, identified by the section’s cust
 subscript(sectionID id: String) -> [String]? { get }
 ```
 
-#### Overview
+## Overview
 
 Section order can be read by subscripting with the tab section’s id:
 

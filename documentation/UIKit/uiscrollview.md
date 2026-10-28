@@ -28,7 +28,7 @@ class UIScrollView
 
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 [`UIScrollView`](./uiscrollview.md) is the superclass of several UIKit classes, including [`UITableView`](./uitableview.md) and [`UITextView`](./uitextview.md).
 
@@ -42,7 +42,7 @@ A scroll view also handles zooming and panning of content. As the user makes a p
 
 The [`UIScrollView`](./uiscrollview.md) class can have a delegate that must adopt the [`UIScrollViewDelegate`](./uiscrollviewdelegate.md) protocol. For zooming and panning to work, the delegate must implement both [`viewForZooming(in:)`](./uiscrollviewdelegate/viewforzooming%28in%29.md) and [`scrollViewDidEndZooming(_:with:atScale:)`](./uiscrollviewdelegate/scrollviewdidendzooming%28_,with,atscale%29.md). In addition, the [`maximumZoomScale`](./uiscrollview/maximumzoomscale.md) and [`minimumZoomScale`](./uiscrollview/minimumzoomscale.md) zoom scales must be different.
 
-##### State preservation
+### State preservation
 
 If you assign a value to this view’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property, it attempts to preserve its scrolling-related information between app launches. Specifically, the values of the [`zoomScale`](./uiscrollview/zoomscale.md), [`contentInset`](./uiscrollview/contentinset.md), and [`contentOffset`](./uiscrollview/contentoffset.md) properties are preserved. During restoration, the scroll view restores these values so that the content appears scrolled to the same position as before. For more information about how state preservation and restoration works, see [App Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
 

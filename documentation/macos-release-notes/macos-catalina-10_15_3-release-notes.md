@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 10.15.3 SDK provides support for developing apps for Macs running macOS Catalina 10.15.3. The SDK comes bundled with Xcode 11.3. For information on the compatibility requirements for Xcode 11.3, see [Xcode 11.3 Release Notes](../Xcode-Release-Notes/xcode-11_3-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - UI tests using the XCTest framework are currently unable to interact with embedded web views ([`UIWebView`](../UIKit/uiwebview.md), [`WKWebView`](../WebKit/wkwebview.md), [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) and [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md)) inside of apps. (58576627)
 

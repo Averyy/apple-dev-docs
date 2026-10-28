@@ -19,7 +19,7 @@ Options that specify how much variety to use when creating multiple images from 
 enum CreationVariety
 ```
 
-#### Overview
+## Overview
 
 When you generate multiple images, use this type to specify how much to adjust the creation parameters for each image. The amount of variability determines how similar each image is to the others. These options apply only when creating multiple images at the same time.
 

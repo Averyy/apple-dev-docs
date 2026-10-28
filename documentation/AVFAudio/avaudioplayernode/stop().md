@@ -25,7 +25,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Clears all events you schedule, including any events in the middle of playing. It resets the node’s sample time to `0`, and doesn’t proceed until the node starts again through [`play()`](./play%28%29.md) or [`play(at:)`](./play%28at%29.md).
 

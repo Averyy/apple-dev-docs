@@ -19,11 +19,11 @@ func CFUserNotificationDisplayAlert(_ timeout: CFTimeInterval, _ flags: CFOption
 extern SInt32 CFUserNotificationDisplayAlert(CFTimeInterval timeout, CFOptionFlags flags, CFURLRef iconURL, CFURLRef soundURL, CFURLRef localizationURL, CFStringRef alertHeader, CFStringRef alertMessage, CFStringRef defaultButtonTitle, CFStringRef alternateButtonTitle, CFStringRef otherButtonTitle, CFOptionFlags *responseFlags);
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the cancel was successful; a non-`0` value otherwise.
 
-#### Discussion
+## Discussion
 
 This function blocks the current thread’s execution until the dialog is dismissed, either by the user or by timing out.
 

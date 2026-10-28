@@ -9,19 +9,19 @@ Update a keyword’s bid amount or status to optimize spend and control delivery
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing keyword. Only fields included in the request body are modified. Omitted fields retain their current values. The `KeywordUpdate` schema is intentionally narrow. Only `bid` and `status` are accepted. Attempting to update a deleted keyword returns 404 Not Found. This differs from [`Get a Keyword`](./get-keywords-_id_.md), which doesn’t return 404 for a deleted keyword. It returns the keyword with `deleted: true` instead.
 
 On update, `bid` must be a valid `Money` object. Passing `null` returns an error, unlike [`Create a Keyword`](./post-keywords.md), where omitting `bid` or passing `null` defaults the keyword to the ad group’s bid strategy. See [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) for the full explanation.
 
-#### Payload Examples
+## Payload Examples
 
 **Update Bid**:
 
 Increase the maximum cost-per-tap for a keyword. Send only the `bid` field.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/keywords/888999000
@@ -34,7 +34,7 @@ PUT /v1/keywords/888999000
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -62,7 +62,7 @@ PUT /v1/keywords/888999000
 
 Pause a keyword to temporarily stop it from bidding. The keyword retains its bid amount and can be re-enabled at any time.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/keywords/888999000
@@ -72,7 +72,7 @@ PUT /v1/keywords/888999000
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

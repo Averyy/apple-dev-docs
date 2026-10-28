@@ -29,7 +29,7 @@ func resumeRequest(with params: MTRDeviceEnergyManagementClusterResumeRequestPar
 - (void) resumeRequestWithParams:(MTRDeviceEnergyManagementClusterResumeRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to cancel the PauseRequest command and enable earlier resumption of operation.
 

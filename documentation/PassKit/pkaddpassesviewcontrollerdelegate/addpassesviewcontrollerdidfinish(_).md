@@ -22,7 +22,7 @@ optional func addPassesViewControllerDidFinish(_ controller: PKAddPassesViewCont
 - (void) addPassesViewControllerDidFinish:(PKAddPassesViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 When this optional method is implemented, the delegate is responsible for dismissing the view controller in `controller`.
 

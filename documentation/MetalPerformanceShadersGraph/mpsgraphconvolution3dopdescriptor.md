@@ -24,7 +24,7 @@ class MPSGraphConvolution3DOpDescriptor
 @interface MPSGraphConvolution3DOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this class is to add a 3D-convolution operator with desired properties to the graph.
 

@@ -22,7 +22,7 @@ var deviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains { get }
 @property (nonatomic, readonly) AVCaptureWhiteBalanceGains deviceWhiteBalanceGains;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the current red, green, and blue gain values used for white balance. You can use the values to adjust color casts for a given scene. Each channel supports values between 1.0 and -[`maxWhiteBalanceGain`](./maxwhitebalancegain.md).
 

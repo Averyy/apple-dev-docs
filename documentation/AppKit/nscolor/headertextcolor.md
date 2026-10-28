@@ -19,7 +19,7 @@ class var headerTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * headerTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for text in header cells in table and outline views. For more information, see [`NSColor`](../nscolor.md).
 

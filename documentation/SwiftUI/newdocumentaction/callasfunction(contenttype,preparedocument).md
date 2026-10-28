@@ -16,7 +16,7 @@ Presents a new document window with preset contents.
 @preconcurrency func callAsFunction(contentType: UTType, prepareDocument: @escaping (ModelContext) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](../environmentvalues/newdocument.md) action.
 

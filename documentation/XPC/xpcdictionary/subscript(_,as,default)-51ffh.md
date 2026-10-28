@@ -21,11 +21,11 @@ Get a value in this dictionary as a file descriptor.
 subscript(key: String, as type: FileDescriptor.Type = FileDescriptor.self, default defaultValue: @autoclosure () -> FileDescriptor) -> FileDescriptor { get }
 ```
 
-#### Return Value
+## Return Value
 
 A file descriptor value, possibly `defaultValue`.
 
-#### Overview
+## Overview
 
 The returned file descriptor is owned by the caller so they must close it.
 

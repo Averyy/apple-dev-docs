@@ -20,7 +20,7 @@ Specifies a relative shift of the left and right images, which changes the zero 
 @property (atomic, copy, nullable) NSNumber * disparityAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 The value is in normalized image space and measured over the range of -10000 to 10000 mapping to the uniform range [-1.0…1.0]. The interval of 0.0 to 1.0 or 0 to 10000 maps onto the stereo eye view image width. The negative interval 0.0 to -1.0 or 0 to -10000 similarly map onto the stereo eye view image width. Can be nil if the value is unknown.
 

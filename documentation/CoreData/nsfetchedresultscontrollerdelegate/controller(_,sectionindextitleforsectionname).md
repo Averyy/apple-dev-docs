@@ -25,11 +25,11 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 - (NSString *) controller:(NSFetchedResultsController *) controller sectionIndexTitleForSectionName:(NSString *) sectionName;
 ```
 
-#### Return Value
+## Return Value
 
 The string to use as the name for the specified section.
 
-#### Discussion
+## Discussion
 
 This method does not enable change tracking. It is only needed if a section index is used.
 

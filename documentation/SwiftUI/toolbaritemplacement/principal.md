@@ -20,7 +20,7 @@ A placement for the principal item section.
 static let principal: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Principal actions are key units of functionality that receive prominent placement. For example, the location field for a web browser is a principal item.
 

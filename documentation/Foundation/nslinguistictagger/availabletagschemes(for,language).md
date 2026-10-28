@@ -27,7 +27,7 @@ class func availableTagSchemes(for unit: NSLinguisticTaggerUnit, language: Strin
 + (NSArray<NSString *> *) availableTagSchemesForUnit:(NSLinguisticTaggerUnit) unit language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The supported tag schemes. For possible values, see [`NSLinguisticTagScheme`](../nslinguistictagscheme.md).
 

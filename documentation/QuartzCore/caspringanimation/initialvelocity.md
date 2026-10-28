@@ -24,7 +24,7 @@ var initialVelocity: CGFloat { get set }
 @property CGFloat initialVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0`, which represents an unmoving object. Negative values represent the object moving away from the spring attachment point, positive values represent the object moving towards the spring attachment point.
 

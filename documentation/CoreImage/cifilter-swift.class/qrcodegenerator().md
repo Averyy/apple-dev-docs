@@ -24,11 +24,11 @@ class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator
 + (CIFilter<CIQRCodeGenerator> *) QRCodeGenerator;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a QR code as an image. QR codes are a high-density matrix barcode format defined in the ISO/IEC 18004:2006 standard.
 

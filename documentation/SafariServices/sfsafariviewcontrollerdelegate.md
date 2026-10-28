@@ -21,7 +21,7 @@ protocol SFSafariViewControllerDelegate : NSObjectProtocol
 @protocol SFSafariViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 For more information about the `SFSafariViewController` class, see [`SFSafariViewController`](./sfsafariviewcontroller.md).
 

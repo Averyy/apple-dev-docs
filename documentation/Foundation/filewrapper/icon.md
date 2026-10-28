@@ -19,7 +19,7 @@ var icon: NSImage? { get set }
 @property (strong, nullable) NSImage * icon;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t have to use this icon; for example, a file viewer typically looks up icons automatically based on file extensions, and so wouldn’t need this one. Similarly, if a file wrapper represents an image file, you can display the image directly rather than a file icon.
 

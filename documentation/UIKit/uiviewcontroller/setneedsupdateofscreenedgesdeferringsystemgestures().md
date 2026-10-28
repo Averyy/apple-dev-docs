@@ -22,7 +22,7 @@ func setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
 - (void) setNeedsUpdateOfScreenEdgesDeferringSystemGestures;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever you modify the screen edges that defer system gestures, such as those that invoke Control Center, so the system can update accordingly. If the [`childForScreenEdgesDeferringSystemGestures`](./childforscreenedgesdeferringsystemgestures.md) property is `nil`, the system reads the edges from the current view controller’s [`preferredScreenEdgesDeferringSystemGestures`](./preferredscreenedgesdeferringsystemgestures.md) property; otherwise, it uses the same property on the referenced child view controller.
 

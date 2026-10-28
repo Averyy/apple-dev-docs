@@ -25,7 +25,7 @@ var lightingModel: SCNMaterial.LightingModel { get set }
 @property (nonatomic, copy) SCNLightingModel lightingModelName;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit provides several different lighting models, each of which combines information from a material’s visual properties with the lights and other contents of a scene. For details on how each lighting model affects rendering, see `Lighting Models`. For details on the contribution from each visual property, see Visual Properties for Special Effects.
 

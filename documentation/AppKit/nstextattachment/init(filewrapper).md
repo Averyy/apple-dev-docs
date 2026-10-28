@@ -19,11 +19,11 @@ convenience init(fileWrapper: FileWrapper?)
 - (instancetype) initWithFileWrapper:(NSFileWrapper *) fileWrapper;
 ```
 
-#### Return Value
+## Return Value
 
 A new text attachment object initialized with the file wrapper.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the [`NSTextAttachment`](../nstextattachment.md) class in macOS.
 

@@ -19,7 +19,7 @@ var cancelButtonBounds: NSRect { get }
 @property (readonly) NSRect cancelButtonBounds;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override `cancelButtonBounds` for custom layout purposes.
 

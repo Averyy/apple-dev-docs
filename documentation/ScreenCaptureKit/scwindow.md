@@ -20,7 +20,7 @@ class SCWindow
 @interface SCWindow : NSObject
 ```
 
-#### Overview
+## Overview
 
 Retrieve the available windows from an instance of [`SCShareableContent`](./scshareablecontent.md). Select one or more windows to capture and use them to create an instance of [`SCContentFilter`](./sccontentfilter.md). Apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to content matching your criteria.
 

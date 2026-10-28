@@ -5,7 +5,7 @@
 
 Create a driver that supports proprietary features of your company’s hardware devices.
 
-#### Overview
+## Overview
 
 Drivers act as a bridge between computer peripherals and the rest of the system. A driver is a collection of software-based services that communicate with a hardware device. For example, a keyboard service converts the raw state of the keyboard into keystroke events for the system to deliver to apps.
 
@@ -24,7 +24,7 @@ Use the DriverKit SDK to create custom drivers and services for the following ty
 
 > ❗ **Important**:  DriverKit doesn’t support USB devices that manipulate audio or that communicate wirelessly over Bluetooth or Wi-Fi. For those types of devices, create a kernel extension using [`sys_iokit`](./sys_iokit.md).
 
-##### Add a DriverKit Extension Target to Your App
+### Add a DriverKit Extension Target to Your App
 
 The delivery of a DriverKit extension requires a macOS app. You use the app to deliver the driver to your users. The app also registers the driver with the system.
 
@@ -42,7 +42,7 @@ Xcode adds the driver to your project and configures the build settings to insta
 
 The default DriverKit template contains a C++ source file and an IOKit interface generator (`.iig`) header file to use as the starting point for your service. The template also contains a default entitlements file for you to populate with the entitlements your driver requires. For information on how to configure your driver’s entitlements, see [Requesting Entitlements for DriverKit Development](./requesting-entitlements-for-driverkit-development.md).
 
-##### Select an Appropriate Service to Customize
+### Select an Appropriate Service to Customize
 
 The DriverKit template provides a default subclass of the [`IOService`](./ioservice.md) class, which is the base class for all driver services. Although you can subclass [`IOService`](./ioservice.md) directly, typically you build off of a class that is more specific to your needs. For example, when developing drivers for USB devices, you build off one of the classes in the [USBDriverKit](../USBDriverKit/USBDriverKit.md) framework.
 
@@ -66,7 +66,7 @@ public:
 };
 ```
 
-##### Initialize Your Driver
+### Initialize Your Driver
 
 When the system needs your driver, it instantiates your service class and calls its [`init`](./ioservice/init.md) method. Keep the implementation of that method as simple as possible. Typically, the only thing you do at initialization time is allocate space for your driver’s variables.
 
@@ -101,7 +101,7 @@ exit:
 
 Before unloading your service, the system calls its free method to release any memory that it holds. Use that method to deallocate any data structures you created during initialization.
 
-##### Start and Stop Your Service
+### Start and Stop Your Service
 
 When the system is ready for your driver to begin processing information from the hardware device, it calls your service’s [`Start`](./ioservice/start.md) method. The [`Start`](./ioservice/start.md) method is where you perform the actual startup tasks your driver requires, such as:
 
@@ -141,7 +141,7 @@ In the preceding code, notice that the definition of the [`Start`](./ioservice/s
 
 When the system no longer needs your service, it calls its [`Stop`](./ioservice/stop.md) method. Use that method to undo all of the setup work from your [`Start`](./ioservice/start.md) method. If your service has any in-progress asynchronous tasks, cancel them and wait for DriverKit to report their successful cancellation before calling the inherited [`Stop`](./ioservice/stop.md) method. Don’t use the [`Stop`](./ioservice/stop.md) method to release your `ivars` structure; use your service’s [`free`](./ioservice/free.md) method instead.
 
-##### Define Asynchronous Callback Functions
+### Define Asynchronous Callback Functions
 
 Whenever you request information from DriverKit or a device, the system APIs process that request and deliver the results asynchronously to your service class. All asynchronous requests require an [`OSAction`](./osaction.md) object, which tells the system which method of your service class to call. To create an [`OSAction`](./osaction.md) object:
 
@@ -166,7 +166,7 @@ if (status != kIOReturnSuccess)
 
 The first parameter to the `CreateAction` function is the amount of additional memory you want the system to allocate on your behalf. Use this memory to store additional state information, and access the memory by calling the [`GetReference`](./osaction/getreference.md) method of the action object. The second parameter is a pointer for storing the newly created [`OSAction`](./osaction.md) object.
 
-##### Provide Version and Description Information
+### Provide Version and Description Information
 
 The system requires specific information to support the loading and installation of your driver. Specifically, installation of your driver fails if any of the following keys aren’t in the `Info.plist` file of your driver extension:
 
@@ -176,7 +176,7 @@ The system requires specific information to support the loading and installation
 
 The system uses the version information to determine when to install a new version of your driver. Increment the version number whenever you change your driver’s behavior and want to install a new version.
 
-##### Specify Criteria for Matching Your Services Against Devices
+### Specify Criteria for Matching Your Services Against Devices
 
 The system maintains a registry of installed drivers, and each driver contains information about the types of devices it supports. At boot time, and whenever a new hardware device appears, the system searches for drivers to support that device. In particular, it searches for drivers that meet the following criteria:
 
@@ -196,7 +196,7 @@ In addition to the minimum set of keys, include additional keys in the personali
 
 After the matching process identifies an appropriate driver, it loads the driver, initializes it, and calls its [`Start`](./ioservice/start.md) method. Typically, the system instantiates multiple services for a single device, with each new service becoming a client of the previous service. This chain of services allows each service to handle specific tasks and rely on its provider object for lower-level tasks.
 
-##### Install Your Driver Using the System Extensions Framework
+### Install Your Driver Using the System Extensions Framework
 
 DriverKit extensions reside inside your app’s `Contents/Library/SystemExtensions` folder, and you register them using the Systems Extension framework. You must register drivers before the system can use them. During the registration process, the system validates the driver and reports back to your app about whether registration was successful.
 

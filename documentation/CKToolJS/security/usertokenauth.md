@@ -15,7 +15,7 @@ Your user token.
 attribute string? UserTokenAuth;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a user token from CloudKit Console.
 

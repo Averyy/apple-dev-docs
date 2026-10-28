@@ -18,7 +18,7 @@ Returns count of currently allocated capacity for members in dictionary.
 virtual uint32_t getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 Capacity for members in dictionary.
 

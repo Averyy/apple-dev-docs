@@ -18,7 +18,7 @@ Creates an async ndArray value that directly references the provided metal buffe
 init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int = 0, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int] = [], interleaveLayout: NDArray.InterleaveLayout? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 `unsafeBuffer` must have `shared` storage mode.
 

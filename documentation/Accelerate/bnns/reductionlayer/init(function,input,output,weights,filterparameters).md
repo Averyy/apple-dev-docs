@@ -23,7 +23,7 @@ Returns a new reduction layer.
 convenience init?(function reductionFunction: BNNS.ReductionFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](../../bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](../../bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
 

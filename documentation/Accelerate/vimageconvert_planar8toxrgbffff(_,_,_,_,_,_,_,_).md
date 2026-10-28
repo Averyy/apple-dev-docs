@@ -25,11 +25,11 @@ func vImageConvert_Planar8ToXRGBFFFF(_ alpha: Pixel_F, _ red: UnsafePointer<vIma
 vImage_Error vImageConvert_Planar8ToXRGBFFFF(Pixel_F alpha, const vImage_Buffer *red, const vImage_Buffer *green, const vImage_Buffer *blue, const vImage_Buffer *dest, const Pixel_FFFF maxFloat, const Pixel_FFFF minFloat, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The source and destination buffers need to have the same height and width.
 

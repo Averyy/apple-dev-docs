@@ -5,7 +5,7 @@
 
 Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 
-#### Overview
+## Overview
 
 User interactions generate thousands of events for your app. Every swipe of the finger or button click, for instance, results in numerous events your app has to process.
 
@@ -13,13 +13,13 @@ User interactions generate thousands of events for your app. Every swipe of the 
 
 Use `target-action` to connect events directly from controls in your UI to methods in your code.
 
-##### Designate an object to handle control-related events
+### Designate an object to handle control-related events
 
 When a person interacts with your control, the control needs to know where to send the event. The destination for the event is the *target*. View controllers make good targets because they’re adept at handling user interactions, as well as hosting UI controls.
 
 ![A diagram that depicts the relationship between a control and its corresponding target and action. The control on the left has one arrow pointing to its target on the right, which is a view controller. Underneath this is a parallel arrow pointing from the control on the left to its action method on the right, which is a function with the name buttonTapped.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4142878@2x.png)
 
-##### Define the action methods you use to respond to events
+### Define the action methods you use to respond to events
 
 With a control assigned to the target, provide a function to call on that target when the event occurs. This is the *action* method.
 
@@ -85,7 +85,7 @@ The `sender` parameter defines where the event comes from; for example, a button
 
 UIKit also supports coupling action methods to specific event types (see [`UIControl.Event`](./uicontrol/event.md)). For example, to set up target-action for a user dragging their finger inside the bounds of a control, register for the event type [`touchDragInside`](./uicontrol/event/touchdraginside.md).
 
-##### Connect controls to the action methods in Interface Builder
+### Connect controls to the action methods in Interface Builder
 
 With the `target` and `action` methods defined, you’re ready to connect them visually to the controls in Interface Builder.
 
@@ -124,7 +124,7 @@ Connecting the target-action this way ensures the method signature and parameter
 
 ![A screenshot in Xcode showing the generated code resulting from a Control-drag action from Interface Builder into the Assistant code editor. Interface Builder is open on the left. The Assistant editor is open beside it on the right, and inside the editor is the generated code. An arrow with the title Generated is pointing to the newly generated code.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-6@2x.png)
 
-##### Connect a control to your code programmatically
+### Connect a control to your code programmatically
 
 In UIKit, use the [`addTarget(_:action:for:)`](./uicontrol/addtarget%28_,action,for%29.md) method to set up target-action programmatically on a control:
 
@@ -249,7 +249,7 @@ class ViewController: NSViewController {
 @end
 ```
 
-##### Enable other objects to respond to control-related events
+### Enable other objects to respond to control-related events
 
 When the object hosting the control isn’t the one you want handling the event, invoke the responder chain by passing in `nil` as the target. This causes the control to search the responder chain for the specified action method and invoke it when found. For more information, see [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md).
 

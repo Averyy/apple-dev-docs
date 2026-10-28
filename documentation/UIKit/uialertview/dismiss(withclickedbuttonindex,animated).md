@@ -23,7 +23,7 @@ func dismiss(withClickedButtonIndex buttonIndex: Int, animated: Bool)
 - (void) dismissWithClickedButtonIndex:(NSInteger) buttonIndex animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 4.0, you may want to call this method whenever your application moves to the background. An alert view is not dismissed automatically when an application moves to the background. This behavior differs from previous versions of the operating system, where they were canceled automatically when the application was terminated. Dismissing the alert view gives your application a chance to save changes or abort the operation and perform any necessary cleanup in case your application is terminated later.
 

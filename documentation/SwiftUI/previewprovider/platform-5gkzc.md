@@ -24,7 +24,7 @@ The platform to run the provider on.
 @preconcurrency static var platform: PreviewPlatform? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This default implementation of the [`platform`](./platform.md) computed property returns `nil`. Rely on this implementation unless you have a multiplatform target and want to suggest a particular platform for a preview.
 

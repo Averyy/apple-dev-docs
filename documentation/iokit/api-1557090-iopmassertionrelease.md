@@ -16,11 +16,11 @@ Decrements the assertion's retain count.
 IOReturn IOPMAssertionRelease(IOPMAssertionID AssertionID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Discussion
+## Discussion
 
 If the retain count becomes zero, then this also frees and deactivates the assertion referred to by `assertionID`
 

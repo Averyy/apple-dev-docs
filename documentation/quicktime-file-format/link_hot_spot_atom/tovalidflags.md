@@ -6,7 +6,7 @@
 
 A set of flags that indicate which destination node view settings are valid.
 
-#### Overview
+## Overview
 
 Specifies which view settings are to be used when moving to a destination node from a hot spot. You can use these bit flags to specify a value for that field:
 

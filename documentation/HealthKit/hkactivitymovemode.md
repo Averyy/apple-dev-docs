@@ -24,7 +24,7 @@ enum HKActivityMoveMode
 enum HKActivityMoveMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For younger users, HealthKit’s activity summary can track move time instead of active energy burned:
 

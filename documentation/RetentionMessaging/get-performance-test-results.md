@@ -14,7 +14,7 @@ Gets the results of the performance test for the specified identifier.
 - [Identifying rate limits](./identifying-rate-limits.md)
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to retrieve the results from a performance test you initiate by calling [`Initiate Performance Test`](./initiate-performance-test.md).
 

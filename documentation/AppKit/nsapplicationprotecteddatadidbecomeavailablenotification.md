@@ -15,7 +15,7 @@ Posted when protected data becomes available.
 extern NSNotificationName NSApplicationProtectedDataDidBecomeAvailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary. The system posts this notification on the main actor.
 

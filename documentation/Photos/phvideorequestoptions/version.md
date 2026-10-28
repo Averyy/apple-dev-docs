@@ -24,7 +24,7 @@ var version: PHVideoRequestOptionsVersion { get set }
 @property (nonatomic, assign) PHVideoRequestOptionsVersion version;
 ```
 
-#### Discussion
+## Discussion
 
 If a video asset has been edited, use this property to request a video with or without adjustments.
 

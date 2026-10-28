@@ -19,7 +19,7 @@ var supportsSparseFiles: Bool { get set }
 @property (nonatomic) BOOL supportsSparseFiles;
 ```
 
-#### Discussion
+## Discussion
 
 A sparse file is a file that can have “holes” that the file system has never written to, and as a result don’t consume space on disk.
 

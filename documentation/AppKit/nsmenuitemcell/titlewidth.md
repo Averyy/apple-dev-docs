@@ -19,7 +19,7 @@ var titleWidth: CGFloat { get }
 @property (readonly) CGFloat titleWidth;
 ```
 
-#### Discussion
+## Discussion
 
 To set the menu item’s text, use the setTitle: method of [`NSMenuItem`](../nsmenuitem.md).
 

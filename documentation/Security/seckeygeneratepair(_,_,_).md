@@ -27,11 +27,11 @@ func SecKeyGeneratePair(_ parameters: CFDictionary, _ publicKey: UnsafeMutablePo
 OSStatus SecKeyGeneratePair(CFDictionaryRef parameters, SecKeyRef*publicKey, SecKeyRef*privateKey);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 In order to generate a key pair, the dictionary passed in the `parameters` parameter must contain at least the following key-value pairs:
 

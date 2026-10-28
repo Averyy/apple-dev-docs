@@ -24,11 +24,11 @@ func cost(to node: GKGraphNode) -> Float
 - (float) costToNode:(GKGraphNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 The real cost of travel along the specified connection; higher values indicate higher cost.
 
-#### Discussion
+## Discussion
 
 The [`GKGraph`](../gkgraph.md) class uses this method in pathfinding between nodes—the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method finds the lowest-cost path between a specified pair of nodes. For the [`GKGraphNode`](../gkgraphnode.md) base class, the cost of travel along any connection is 1, so the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method simply counts connections, finding the path that involves traveling through the fewest number of nodes. Because the subclasses [`GKGraphNode2D`](../gkgraphnode2d.md) and [`GKGridGraphNode`](../gkgridgraphnode.md) add geometry information to each node, those classes’ implementation of this method calculates the distance between nodes in 2D space, and the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method finds the path with the minimum total distance traveled.
 

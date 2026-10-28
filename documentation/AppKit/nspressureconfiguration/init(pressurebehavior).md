@@ -19,11 +19,11 @@ init(pressureBehavior: NSEvent.PressureBehavior)
 - (instancetype) initWithPressureBehavior:(NSPressureBehavior) pressureBehavior;
 ```
 
-#### Return Value
+## Return Value
 
 A new pressure configuration object of type `NSPressureConfiguration` that describes how pressure events behave and progress.
 
-#### Discussion
+## Discussion
 
 The initialized pressure configuration object is used to change the behavior and progression of the trackpad when responding to a mouse drag or pressure event sequence.
 

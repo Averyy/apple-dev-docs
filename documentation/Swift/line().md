@@ -18,11 +18,11 @@ Produces the line number on which it appears.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro line<T>() -> T where T : ExpressibleByIntegerLiteral
+@freestanding(expression)
+macro line<T>() -> T where T : ExpressibleByIntegerLiteral
 ```
 
-#### Overview
+## Overview
 
 This macro’s value can be changed by `#sourceLocation`, as described in [Line Control Statement](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements#Line-Control-Statement) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 

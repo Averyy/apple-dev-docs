@@ -21,11 +21,11 @@ Constructs a new span over all the bytes of this span.
 mutating func extracting(_: UnboundedRange) -> MutableRawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableRawSpan` over all the bytes of this span.
 
-#### Discussion
+## Discussion
 
 The returned span represents a mutation of this span.
 

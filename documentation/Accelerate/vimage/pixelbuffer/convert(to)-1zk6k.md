@@ -23,7 +23,7 @@ func convert(to destination: vImage.PixelBuffer<vImage.Planar16F>)
 
 Available when `Format` is `vImage.Planar16U`.
 
-#### Discussion
+## Discussion
 
 This function converts the source values in the range `[0, UInt16.max]` to the destination range `[0.0, 1.0]`.
 

@@ -6,7 +6,7 @@
 
 An atom that indicates not to automatically select this track.
 
-#### Overview
+## Overview
 
 See [`Track exclude from autoselection atom`](../track_exclude_from_autoselection_atom.md).
 

@@ -16,7 +16,7 @@ Get and set Wi-Fi Aware specific connection parameters.
 final var wifiAware: WAParameters { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If no Wi-Fi Aware specific properties were previously set, the `WAParameters/defaults` are assumed.
 

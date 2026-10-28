@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Teach your APIs through reference documentation you create from code comments and extension files, or create detailed articles and conceptual guides.
 
-#### Overview
+## Overview
 
 Use documentation markup, a custom variant of Markdown, to add in-source documentation to your APIs. Then, use DocC to build your documentation and share it with developers.
 

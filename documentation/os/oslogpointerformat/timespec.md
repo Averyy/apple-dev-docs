@@ -21,7 +21,7 @@ An option to display the pointer bytes as a time specification.
 case timespec
 ```
 
-#### Discussion
+## Discussion
 
 This option prints an easily readable `timespec` structure.
 

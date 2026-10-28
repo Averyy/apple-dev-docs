@@ -25,7 +25,7 @@ func compare(_ other: Date) -> ComparisonResult
 - (NSComparisonResult) compare:(NSDate *) other;
 ```
 
-#### Return Value
+## Return Value
 
 If:
 
@@ -33,7 +33,7 @@ If:
 - The receiver is later in time than `anotherDate`, [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md)
 - The receiver is earlier in time than `anotherDate`, [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md).
 
-#### Discussion
+## Discussion
 
 This method detects sub-second differences between dates. If you want to compare dates with a less fine granularity, use [`timeIntervalSince(_:)`](./timeintervalsince%28_%29.md) to compare the two dates.
 

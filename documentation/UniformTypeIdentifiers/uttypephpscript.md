@@ -21,7 +21,7 @@ A type that represents a PHP script.
 extern UTType * const UTTypePHPScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.php-script`.
 

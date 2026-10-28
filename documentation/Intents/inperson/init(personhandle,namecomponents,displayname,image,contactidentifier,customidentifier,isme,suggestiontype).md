@@ -24,11 +24,11 @@ convenience init(personHandle: INPersonHandle, nameComponents: PersonNameCompone
 - (instancetype) initWithPersonHandle:(INPersonHandle *) personHandle nameComponents:(NSPersonNameComponents *) nameComponents displayName:(NSString *) displayName image:(INImage *) image contactIdentifier:(NSString *) contactIdentifier customIdentifier:(NSString *) customIdentifier isMe:(BOOL) isMe suggestionType:(INPersonSuggestionType) suggestionType;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person object or `nil` if initialization fails.
 
-#### Discussion
+## Discussion
 
 It’s important to set `isMe` when using [Messaging](../../SiriKit/messaging.md) intents. For example, if the message sender for an outgoing message is also the user of the device, set `isMe` to [`true`](../../Swift/true.md). Similarly, when creating the recipient array for an incoming message — which includes the current user of the device — set `isMe` to [`true`](../../Swift/true.md) for the person in the recipient list that is the current device user, and set `isMe` to [`false`](../../Swift/false.md) for all other recipients.
 

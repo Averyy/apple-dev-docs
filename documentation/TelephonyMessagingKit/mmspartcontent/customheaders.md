@@ -15,7 +15,7 @@ A dictionary of custom headers to send in the MMS message.
 var customHeaders: [MMSPartContent.MMSCustomHeader]
 ```
 
-#### Discussion
+## Discussion
 
 Delivery of custom headers isn’t guaranteed, since delivery depends on how accurately the cellular carrier network transports the MMS content.
 

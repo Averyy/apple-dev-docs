@@ -18,7 +18,7 @@ Creates and configures a timer dispatch object.
 static kern_return_t Create(IODispatchQueue *queue, IOTimerDispatchSource **source);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

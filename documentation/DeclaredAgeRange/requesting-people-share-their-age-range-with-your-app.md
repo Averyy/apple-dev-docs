@@ -5,7 +5,7 @@
 
 Ask people to share their age range with your app, and tailor features for adults, teens, and children while preserving privacy.
 
-#### Overview
+## Overview
 
 Use the Declared Age Range API to request age information from people using your app without requiring them to share their exact birthdate. You specify age gates (age thresholds like 13, 16, or 18), and the system returns an age range — a span of ages with a minimum and maximum — the person falls into. When you request an age range, the system presents a sheet that describes the data you’re requesting and asks people to grant permission to share their age range with your app. For teens and children in a family sharing group, parents or guardians control whether to always share age range information, never share it, or decide on an app-by-app basis.
 
@@ -21,7 +21,7 @@ The system protects privacy by caching age range responses. When a person’s ag
 
 > ❗ **Important**: Data from the Declared Age Range API is based on information declared by a person, or their parent or guardian. You are solely responsible for ensuring compliance with associated laws or regulations that may apply to your app.
 
-#### Check eligibility for age-related features
+## Check eligibility for age-related features
 
 Before implementing age features in your app, check whether the person using your app is in a region that requires age assurance. Use [`isEligibleForAgeFeatures`](./agerangeservice/iseligibleforagefeatures.md) to determine whether associated laws or regulations may apply to your app based on the person’s location and account settings. This property returns `true` when your app needs to support age assurance. In macOS, [`isEligibleForAgeFeatures`](./agerangeservice/iseligibleforagefeatures.md) returns `false` because the system doesn’t require age assurance. However, you can still call `requestAgeRange` in macOS to get the declared age range.
 
@@ -103,7 +103,7 @@ func checkParentalNotification() async {
 }
 ```
 
-#### Check required regulatory features
+## Check required regulatory features
 
 After determining that age features are required for a person, use [`requiredRegulatoryFeatures`](./agerangeservice/requiredregulatoryfeatures.md) to understand which regulatory requirements apply. This property returns a set of [`AgeRangeService.RegulatoryFeature`](./agerangeservice/regulatoryfeature.md) values that tell you which actions you need to take for compliance.
 
@@ -168,7 +168,7 @@ func checkRegulatoryRequirements() async {
 }
 ```
 
-#### Request an age range
+## Request an age range
 
 To ask the system for an age range, call [`requestAgeRange(ageGates:_:_:in:)`](./agerangeservice/requestagerange%28agegates,_,_,in%29-2go8c.md) in UIKit, [`requestAgeRange(ageGates:_:_:in:)`](./agerangeservice/requestagerange%28agegates,_,_,in%29-4yo3r.md) in AppKit, or use the [`callAsFunction(ageGates:_:_:)`](./declaredagerangeaction/callasfunction%28agegates,_,_%29.md) environment value in SwiftUI.
 
@@ -311,7 +311,7 @@ func checkAgeRange() async {
 }
 ```
 
-#### Handle errors
+## Handle errors
 
 The API throws errors when requests fail or the service is unavailable. Handle these errors to provide appropriate fallback experiences:
 
@@ -361,7 +361,7 @@ func checkAgeRange() async {
 }
 ```
 
-#### Interpret the response
+## Interpret the response
 
 After a person grants your app access to their age range, the system returns a response:
 
@@ -390,7 +390,7 @@ if #available(iOS 26.5, macOS 26.5, *) {
 }
 ```
 
-#### Request permission from parents or guardians
+## Request permission from parents or guardians
 
 When the person’s age range has an `upperBound` value that indicates they’re not yet an adult in their region, check [`activeParentalControls`](./agerangeservice/agerange/activeparentalcontrols.md) to determine if Screen Time or Family Controls restrictions are active. Use PermissionKit to facilitate approval requests from their parent or guardian for specific capabilities, such as messaging. Design your features so that parental controls always take precedence over your own in-app settings:
 
@@ -451,7 +451,7 @@ func checkCommunicationLimits() async {
 }
 ```
 
-#### Handle significant app updates
+## Handle significant app updates
 
 When your app undergoes significant changes — such as changes to its age rating, features, or data practices — you may need to notify people or obtain consent before they continue using your app. Use [`requiredRegulatoryFeatures`](./agerangeservice/requiredregulatoryfeatures.md) to determine if notification or consent is required for the person. For more information, see [Age assurance frameworks Q&A](https://developer.apple.com/support/age-assurance/).
 
@@ -559,7 +559,7 @@ Use concise, understandable language that clearly explains what changed in your 
 
 You can also use [`ageRatingCode`](../StoreKit/appstore/ageratingcode.md) within StoreKit to determine if your app’s age rating changes on a person’s device. If it’s changed, use [`SignificantAppUpdateTopic`](../PermissionKit/significantappupdatetopic.md) to request consent from a parent or guardian for the child to continue using your app.
 
-##### Monitor for consent withdrawal
+### Monitor for consent withdrawal
 
 Monitor for consent withdrawal by implementing [App Store Server Notifications V2](../AppStoreServerNotifications/app-store-server-notifications-v2.md) to receive `RESCIND_CONSENT` [`notificationType`](../AppStoreServerNotifications/notificationtype.md) notifications. This notification type indicates that a parent or guardian has withdrawn consent for a child’s app usage. When you receive this notification, immediately restrict the child’s access to capabilities that require parental or guardian consent and update your app’s state accordingly.
 

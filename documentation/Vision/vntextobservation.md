@@ -24,7 +24,7 @@ class VNTextObservation
 @interface VNTextObservation : VNRectangleObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNDetectTextRectanglesRequest`](./vndetecttextrectanglesrequest.md). It expresses the location of each detected character by its bounding box.
 

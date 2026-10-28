@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against changes.
 
-#### Overview
+## Overview
 
 Read these notes when you’re building interfaces in Xcode 10.
 
-##### New Features
+### New Features
 
 - Resizing a [`UIStackView`](../UIKit/uistackview.md) or [`NSStackView`](../AppKit/nsstackview.md) along its distribution axis in the canvas will adjust spacing between items. (21166308)
 - Control-dragging from Interface Builder to a Swift source file defaults to creating `@IBOutlet` when the insertion point is above the first method in a class, and `@IBAction` otherwise. (36891045)
@@ -48,11 +48,11 @@ Read these notes when you’re building interfaces in Xcode 10.
 - Support for setting accessibility attributes on [`NSWindow`](../AppKit/nswindow.md).
 - [`NSTextView`](../AppKit/nstextview.md) has multiple entries in the object library. This separates configurations appropriate for user interface elements that should adapt to the system appearance, and document content which has a fixed appearance that does not change with the system setting, including for print content.
 
-##### Known Issues
+### Known Issues
 
 - Displaying `NSOpenGLView` instances in Interface Builder when running on macOS 10.13 may result in a crash. (43849153)
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed an issue with rendering table view cells that are scrolled out of view at design time. (41213048)
 - Fixed a problem where issues for different objects were incorrectly coalesced. (13162286)

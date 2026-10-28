@@ -25,7 +25,7 @@ init(charactersIn aString: String)
 + (NSCharacterSet *) characterSetWithCharactersInString:(NSString *) aString;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing the characters in `aString`. Returns an empty character set if `aString` is empty.
 

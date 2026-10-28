@@ -20,7 +20,7 @@ Enforces a minimum number of elements in the array.
 static func minimumCount<Element>(_ count: Int) -> GenerationGuide<[Element]> where Value == [Element]
 ```
 
-#### Discussion
+## Discussion
 
 The bounds are inclusive.
 

@@ -20,7 +20,7 @@ optional func popoverShouldDetach(_ popover: NSPopover) -> Bool
 - (BOOL) popoverShouldDetach:(NSPopover *) popover;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, it returns [`false`](../../Swift/false.md) by default. If you return [`true`](../../Swift/true.md) from this method, but you don’t implement [`detachableWindow(for:)`](./detachablewindow%28for%29.md) or you implement it to return `nil`, a detachable window is created with the popover’s [`contentViewController`](../nspopover/contentviewcontroller.md).
 

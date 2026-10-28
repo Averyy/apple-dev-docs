@@ -23,7 +23,7 @@ var indicatorStyle: UIScrollView.IndicatorStyle { get set }
 @property (nonatomic) UIScrollViewIndicatorStyle indicatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default style is [`UIScrollView.IndicatorStyle.default`](./indicatorstyle-swift.enum/default.md). See [`UIScrollView.IndicatorStyle`](./indicatorstyle-swift.enum.md) for descriptions of these constants.
 

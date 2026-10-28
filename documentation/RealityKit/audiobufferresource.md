@@ -21,7 +21,7 @@ An audio resource that you load from an [`AVAudioBuffer`](../AVFAudio/avaudiobuf
 @preconcurrency class AudioBufferResource
 ```
 
-#### Overview
+## Overview
 
 Use the resource to create an [`AudioPlaybackController`](./audioplaybackcontroller.md) instance by calling an entity’s [`prepareAudio(_:)`](./entity/prepareaudio%28_%29.md) or [`playAudio(_:)`](./entity/playaudio%28_%29.md) function. The controller plays the audio from the location in space of the entity that created the controller.
 

@@ -27,7 +27,7 @@ func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSes
 - (void) session:(MCSession *) session peer:(MCPeerID *) peerID didChangeState:(MCSessionState) state;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is called with the following state values when the nearby peer’s state changes:
 

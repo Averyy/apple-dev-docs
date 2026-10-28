@@ -24,7 +24,7 @@ func JSValueToNumber(_ ctx: JSContextRef!, _ value: JSValueRef!, _ exception: Un
 double JSValueToNumber(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The numeric result of conversion, or `NaN` if the system throws an exception.
 

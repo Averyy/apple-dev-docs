@@ -5,7 +5,7 @@
 
 Manually synchronize memory for a Metal resource in apps.
 
-#### Overview
+## Overview
 
 For Mac computers with Intel or external GPUs, Metal offers *managed resources.* Managed resources are [`MTLResource`](./mtlresource.md) instances, such as an [`MTLTexture`](./mtltexture.md) or [`MTLBuffer`](./mtlbuffer.md), which use memory that your app can copy between the CPU and GPU. Managed resources use a [`storageMode`](./mtlresource/storagemode.md) of [`MTLStorageMode.managed`](./mtlstoragemode/managed.md).
 
@@ -15,7 +15,7 @@ As a best practice, try to keep your data synchronization points to a minimum. E
 
 > **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
-##### Synchronize a managed buffer
+### Synchronize a managed buffer
 
 First, create an [`MTLBuffer`](./mtlbuffer.md) with the option [`MTLStorageMode.managed`](./mtlstoragemode/managed.md), which tells Metal to reserve managed memory space for the resource:
 
@@ -138,7 +138,7 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 [commandBuffer commit];
 ```
 
-##### Synchronize a managed texture
+### Synchronize a managed texture
 
 First, create an [`MTLTexture`](./mtltexture.md) in managed memory from an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) with its storage mode set to [`MTLStorageMode.managed`](./mtlstoragemode/managed.md):
 

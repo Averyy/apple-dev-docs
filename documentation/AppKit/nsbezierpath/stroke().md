@@ -19,7 +19,7 @@ func stroke()
 - (void) stroke;
 ```
 
-#### Discussion
+## Discussion
 
 The drawn line is centered on the path with its sides parallel to the path segment. This method uses the current drawing attributes associated with the receiver. If a particular attribute is not set for the receiver, this method uses the corresponding default attribute.
 

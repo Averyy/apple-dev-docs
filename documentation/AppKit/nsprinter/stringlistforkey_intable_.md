@@ -15,7 +15,7 @@ Returns an array of strings, one for each occurrence, associated with specified 
 - (NSArray *) stringListForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each containing a value associated with the specified key. Returns `nil` if the key is not in the table.
 

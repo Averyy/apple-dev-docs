@@ -16,7 +16,7 @@ A constant to configure a Live Activity that updates its dynamic content for bro
 static func channel(_ name: String) -> PushType
 ```
 
-#### Overview
+## Overview
 
 The channel ID is a base64-encoded string. For information on creating a channel, refer to [Sending channel management requests to APNs](../../UserNotifications/sending-channel-management-requests-to-apns.md). The code snippet below is an example of how to specify that you want to use a broadcast push channel.
 

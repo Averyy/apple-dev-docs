@@ -17,7 +17,7 @@ Qwen 3.5’s XML function format with a framed Hermes-JSON compatibility dialect
 case qwen35
 ```
 
-#### Discussion
+## Discussion
 
 Qwen 3.5 is prompted to emit `xmlFunction`, but can sporadically emit the Qwen/Hermes JSON dialect used by earlier Qwen models instead. Both dialects use the same `<tool_call>` frame; this format accepts either payload without enabling bare JSON recovery.
 

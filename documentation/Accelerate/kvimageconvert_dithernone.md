@@ -25,7 +25,7 @@ var kvImageConvert_DitherNone: UInt32 { get }
 kvImageConvert_DitherNone
 ```
 
-#### Discussion
+## Discussion
 
 The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](./vimageconvert_planar8toplanar1%28_,_,_,_,_%29.md) using [`kvImageConvert_DitherNone`](./kvimageconvert_dithernone.md):
 

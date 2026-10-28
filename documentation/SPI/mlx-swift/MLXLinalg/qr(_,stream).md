@@ -19,11 +19,11 @@ The QR factorization of the input matrix.
 func qr(_ array: MLXArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Return Value
+## Return Value
 
 The `Q` and `R` matrices
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. The matrices which are factorized are assumed to be in the last two dimensions of the input.
 

@@ -25,11 +25,11 @@ class func follow(_ path: CGPath, speed: CGFloat) -> SKAction
 + (SKAction *) followPath:(CGPathRef) path speed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`follow(_:asOffset:orientToPath:speed:)`](./follow%28_,asoffset,orienttopath,speed%29.md) method, passing in [`true`](../../Swift/true.md) to both the `offset` and `orient` parameters.
 

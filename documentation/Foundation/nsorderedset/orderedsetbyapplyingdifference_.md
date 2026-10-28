@@ -21,7 +21,7 @@ Creates a new ordered set by applying a difference object to an existing ordered
 - (NSOrderedSet<id> *) orderedSetByApplyingDifference:(NSOrderedCollectionDifference<id> *) difference;
 ```
 
-#### Discussion
+## Discussion
 
 The following example computes the difference between two ordered sets, then applies the difference to create an ordered set that duplicates the original:
 

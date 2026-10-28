@@ -25,7 +25,7 @@ var noiseLevel: Float { get set }
 @property (nonatomic) float noiseLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The larger the value, the more noise reduction.
 

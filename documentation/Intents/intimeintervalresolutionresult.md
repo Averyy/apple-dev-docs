@@ -24,7 +24,7 @@ class INTimeIntervalResolutionResult
 @interface INTimeIntervalResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INTimeIntervalResolutionResult`](./intimeintervalresolutionresult.md) object is what you return when resolving time interval related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

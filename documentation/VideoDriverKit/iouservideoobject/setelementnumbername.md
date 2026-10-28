@@ -15,7 +15,7 @@ Sets the number name for the given element of the video object.
 kern_return_t SetElementNumberName(IOUserVideoObjectPropertyElement in_element, IOUserVideoObjectPropertyScope in_scope, OSString *in_number_name);
 ```
 
-#### Discussion
+## Discussion
 
 If the object can change the name dynamically, the object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

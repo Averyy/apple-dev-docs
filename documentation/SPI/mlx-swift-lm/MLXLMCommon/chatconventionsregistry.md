@@ -17,7 +17,7 @@ Ordered registry of [`ChatConventionsResolving`](./chatconventionsresolving.md) 
 final class ChatConventionsRegistry
 ```
 
-#### Overview
+## Overview
 
 Resolution precedence when a model is loaded:
 

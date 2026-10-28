@@ -24,7 +24,7 @@ case URL
 MDLMaterialPropertyTypeURL
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`urlValue`](../mdlmaterialproperty/urlvalue.md) property to access the material property’s value.
 

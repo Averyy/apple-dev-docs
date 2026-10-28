@@ -24,7 +24,7 @@ void cp_frame_start_submission(cp_frame_t frame);
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 This function helps you optimize your app’s rendering efficiency. Call it before you start any of the GPU work that depends on the device pose. Call [`endSubmission()`](./endsubmission%28%29.md) after you build your Metal command buffers and are ready to commit the frame to the GPU. Compositor Services uses the time difference to improve its predictions for when to start the frame submission process. Those predictions help you schedule the encoding process at a more optimal time for the system.
 

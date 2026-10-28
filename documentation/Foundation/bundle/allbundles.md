@@ -25,11 +25,11 @@ class var allBundles: [Bundle] { get }
 @property (class, copy, readonly) NSArray<NSBundle *> * allBundles;
 ```
 
-#### Return Value
+## Return Value
 
 An array of all the application’s non-framework bundles.
 
-#### Discussion
+## Discussion
 
 The returned array includes the main bundle and all bundles that have been dynamically created but doesn’t contain any bundles that represent frameworks.
 

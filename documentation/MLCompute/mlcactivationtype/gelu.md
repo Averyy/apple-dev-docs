@@ -23,7 +23,7 @@ case gelu
 MLCActivationTypeGELU
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

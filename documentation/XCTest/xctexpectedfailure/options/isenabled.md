@@ -16,7 +16,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `true`. Set this property to `false` to disable the expected failure check.
 

@@ -20,7 +20,7 @@ func CGDisplayGammaTableCapacity(_ display: CGDirectDisplayID) -> UInt32
 extern uint32_t CGDisplayGammaTableCapacity(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The number of entries in the gamma table for a display.
 

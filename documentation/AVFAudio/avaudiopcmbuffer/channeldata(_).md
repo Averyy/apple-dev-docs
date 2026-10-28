@@ -21,11 +21,11 @@ Returns read-only access to a specific channel’s data.
 func channelData(_ index: Int) -> AVAudioPCMBuffer.ChannelData
 ```
 
-#### Return Value
+## Return Value
 
 A `ChannelData` enum containing the channel’s sample data.
 
-#### Discussion
+## Discussion
 
 The returned `ChannelData` is tied to the lifetime of this buffer and provides type-safe read-only access to the channel’s sample data.
 

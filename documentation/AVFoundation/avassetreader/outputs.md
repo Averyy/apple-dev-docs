@@ -24,7 +24,7 @@ var outputs: [AVAssetReaderOutput] { get }
 @property (nonatomic, readonly) NSArray<AVAssetReaderOutput *> * outputs;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains the concrete instances of [`AVAssetReaderOutput`](../avassetreaderoutput.md) that you associate with the reader.
 

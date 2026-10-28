@@ -28,7 +28,7 @@ optional func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocati
 
 - [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Discussion
+## Discussion
 
 While the [`showsUserLocation`](../mkmapview/showsuserlocation.md) property is [`true`](../../Swift/true.md), the map view calls this method whenever it receives a new location update. It also calls this method if the map view’s user-tracking mode is [`MKUserTrackingMode.followWithHeading`](../mkusertrackingmode/followwithheading.md) and the heading changes.
 

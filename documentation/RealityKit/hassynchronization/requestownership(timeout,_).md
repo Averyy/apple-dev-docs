@@ -21,7 +21,7 @@ Requests ownership of the entity.
 @preconcurrency func requestOwnership(timeout: TimeInterval = 15, _ callback: @escaping (SynchronizationComponent.OwnershipTransferCompletionResult) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Requesting ownership isn’t guaranteed to succeed.
 

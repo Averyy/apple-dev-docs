@@ -24,7 +24,7 @@ typealias PHAssetVideoProgressHandler = (Double, (any Error)?, UnsafeMutablePoin
 typedef void (^)(double, NSError *, _Bool *, NSDictionary *) PHAssetVideoProgressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you request a video asset whose data is not on the local device, and you have enabled downloading with the [`isNetworkAccessAllowed`](./phvideorequestoptions/isnetworkaccessallowed.md) property, Photos calls your block periodically to report progress and allow canceling the download.
 

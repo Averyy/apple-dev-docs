@@ -16,11 +16,11 @@ Defines a pointer to your component callback function, which serves as the main 
 typedef ComponentResult (*ComponentRoutineProcPtr)(ComponentParameters *cp, Handle componentStorage);
 ```
 
-#### Return Value
+## Return Value
 
 Your component should return a value of type `ComponentResult`. If your component does not return error information as its function result, it should indicate errors using the [`SetComponentInstanceError`](./api-1516663-setcomponentinstanceerror.md) function. See the description of the `ComponentResult` data type.
 
-#### Discussion
+## Discussion
 
 You pass a pointer to your component callback function to the Component Manager when you register your component. The Component Manager can then call your component when another application or component requests its services. When your component receives a request, it should perform the action specified in the `what` field of the component parameters structure.
 

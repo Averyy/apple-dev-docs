@@ -24,7 +24,7 @@ init?(apiManager: any PROAPIAccessing)
 
 - [Adding onscreen controls to plug-ins](../../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 Save a weak reference to the `apiManager` object to use in subsequent calls. The plug-in initializes its properties and instance variables and returns a pointer to `self`. If any part of initialization fails in an unrecoverable way, this method returns `nil`.
 

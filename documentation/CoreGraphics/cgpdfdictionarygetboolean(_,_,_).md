@@ -25,7 +25,7 @@ func CGPDFDictionaryGetBoolean(_ dict: CGPDFDictionaryRef, _ key: UnsafePointer<
 extern bool CGPDFDictionaryGetBoolean(CGPDFDictionaryRef dict, const char *key, CGPDFBoolean *value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF Boolean value associated with the specified key; otherwise, [`false`](../Swift/false.md).
 

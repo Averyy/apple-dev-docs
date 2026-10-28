@@ -19,7 +19,7 @@ actor HIDDeviceManager
 
 - [Communicating with human interface devices](./communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 Use this class to specify matching criteria to filter all of the discoverable devices connected to the system into devices of interest. This is the main method of receiving a [`HIDDeviceClient.DeviceReference`](./hiddeviceclient/devicereference-swift.struct.md) used to create a [`HIDDeviceClient`](./hiddeviceclient.md).
 

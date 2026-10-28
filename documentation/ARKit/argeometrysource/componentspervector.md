@@ -20,7 +20,7 @@ var componentsPerVector: Int { get }
 @property (nonatomic, assign, readonly) NSInteger componentsPerVector;
 ```
 
-#### Discussion
+## Discussion
 
 In the case that [`componentsPerVector`](./componentspervector.md) is greater than 1, the element type of the geometry-source array is itself, a sequence.
 

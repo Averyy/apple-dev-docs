@@ -21,7 +21,7 @@ Fits a transformer to a data frame
 func fitted(to input: DataFrame, eventHandler: EventHandler? = nil) async throws -> ColumnSelector<Estimator, UnwrappedInput>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

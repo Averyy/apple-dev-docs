@@ -19,7 +19,7 @@ var allowsDefaultTighteningForTruncation: Bool { get set }
 @property BOOL allowsDefaultTighteningForTruncation;
 ```
 
-#### Discussion
+## Discussion
 
 The text field ignores this property when its value is an attributed string.
 

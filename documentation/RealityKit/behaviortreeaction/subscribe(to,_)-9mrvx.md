@@ -28,7 +28,7 @@ Subscribes to a serializable action event and returns a `ActionResult`.
 @preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can call this method to subscribe to the update event, which the system calls each frame it evaluates the action:
 

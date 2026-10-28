@@ -10,7 +10,7 @@ Develop system extensions that enhance user security.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 
-#### Overview
+## Overview
 
 Endpoint Security is a C API for monitoring system events for potentially malicious activity. You can write your client in any language that supports native calls. Your client registers with Endpoint Security to authorize pending events, or receive notifications of events that already occurred. These events include process executions, mounting file systems, forking processes, and raising signals.
 

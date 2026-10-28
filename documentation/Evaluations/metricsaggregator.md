@@ -27,7 +27,7 @@ struct MetricsAggregator
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 - [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
 
-#### Overview
+## Overview
 
 ```swift
 let accuracy = Metric("Accuracy")

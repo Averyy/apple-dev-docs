@@ -24,7 +24,7 @@ func JSValueIsInstanceOfConstructor(_ ctx: JSContextRef!, _ value: JSValueRef!, 
 bool JSValueIsInstanceOfConstructor(JSContextRef ctx, JSValueRef value, JSObjectRef constructor, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the value is an object that `constructor` creates, according to the JavaScript `instanceof` operator; otherwise, [`false`](../Swift/false.md).
 

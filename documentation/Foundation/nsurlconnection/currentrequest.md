@@ -25,7 +25,7 @@ var currentRequest: URLRequest { get }
 @property (copy, readonly) NSURLRequest * currentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 As the connection performs the load, the request may change as a result of protocol canonicalization or due to following redirects. This property provides the current value of the request.
 

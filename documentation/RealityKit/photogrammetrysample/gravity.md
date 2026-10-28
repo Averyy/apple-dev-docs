@@ -18,7 +18,7 @@ An image’s gravity vector.
 var gravity: CMAcceleration? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Some cameras, including iPhone cameras, capture a gravity vector for each image. This vector indicates the orientation of the camera at the moment you took the picture. RealityKit uses this gravity vector to improve landmark matching with the other images in the session.
 

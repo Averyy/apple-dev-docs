@@ -25,11 +25,11 @@ class func disambiguation(with billPayeesToDisambiguate: [INBillPayee]) -> Self
 + (instancetype) disambiguationWithBillPayeesToDisambiguate:(NSArray<INBillPayee *> *) billPayeesToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBillPayeeResolutionResult`](../inbillpayeeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the payee uniquely and need the user to select from a limited set of possible options.
 

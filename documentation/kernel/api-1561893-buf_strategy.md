@@ -15,11 +15,11 @@ Pass an I/O request for a buffer down to the device layer.
 errno_t buf_strategy(vnode_t devvp, void *ap);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or errors from filesystem or device layers.
 
-#### Discussion
+## Discussion
 
 This is one of the most important routines in the buffer cache layer. For buffers obtained through buf_getblk, it handles finding physical block numbers for the I/O (with VNOP_BLKTOOFF and VNOP_BLOCKMAP), packaging the I/O into page-sized chunks, and initiating I/O on the disk by calling the device's strategy routine. If a buffer's UPL has been set manually with buf_setupl(), it assumes that the request is already correctly configured with a block number and a size divisible by page size and will just call directly to the device.
 

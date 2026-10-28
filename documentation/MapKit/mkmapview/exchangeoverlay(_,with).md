@@ -24,7 +24,7 @@ func exchangeOverlay(_ overlay1: any MKOverlay, with overlay2: any MKOverlay)
 - (void) exchangeOverlay:(id<MKOverlay>) overlay1 withOverlay:(id<MKOverlay>) overlay2;
 ```
 
-#### Discussion
+## Discussion
 
 If the overlays are in the same map level, they exchange positions within that level’s array of overlay objects. If they’re in different map levels, the two objects also swap levels. Swapping the position of the overlays affects their visibility in the map view.
 

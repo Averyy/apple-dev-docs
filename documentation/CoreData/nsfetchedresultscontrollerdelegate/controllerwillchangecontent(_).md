@@ -25,7 +25,7 @@ optional func controllerWillChangeContent(_ controller: NSFetchedResultsControll
 - (void) controllerWillChangeContent:(NSFetchedResultsController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked before all invocations of [`controller(_:didChange:at:for:newIndexPath:)`](./controller%28_,didchange,at,for,newindexpath%29.md) and [`controller(_:didChange:atSectionIndex:for:)`](./controller%28_,didchange,atsectionindex,for%29.md) have been sent for a given change event (such as the controller receiving a [`NSManagedObjectContextDidSave`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) notification).
 

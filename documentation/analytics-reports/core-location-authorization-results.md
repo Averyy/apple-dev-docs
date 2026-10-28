@@ -5,7 +5,7 @@
 
 Review authorizations that people grant as a result of requests from your app.
 
-#### Overview
+## Overview
 
 The data in this report counts the authorizations that people grant when an app requests a specific authorization.
 
@@ -22,7 +22,7 @@ The data in this report counts the authorizations that people grant when an app 
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ The data in this report counts the authorizations that people grant when an app 
 | Granted Authorization Status | Integers that represent how Authorization Status is changing | `integer` |
 | Granted Accuracy Authorization | Integers that represent how Accuracy Authorization is changing | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

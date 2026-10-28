@@ -12,11 +12,11 @@ Demonstrates adding a watermark to a PDF page.
 - Mac Catalyst 11.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 You can add a custom drawing to a page or annotation by overriding that class’s draw method. Adding drawings  to pages can be useful for adding custom layered effects or, as shown in this sample, watermarking a document.
 
-##### Register the Delegate and Set the Page Class
+### Register the Delegate and Set the Page Class
 
 The [`ViewController`](../UIKit/uiviewcontroller.md) class first initializes a [`PDFDocument`](./pdfdocument.md) instance and sets its delegate to `self`.
 
@@ -42,7 +42,7 @@ func classForPage() -> AnyClass {
 
 The delegate is assigned before the document, so `classForPage()`, a `PDFDocumentDelegate` method, is implemented. This method returns the `PDFPage` subclass used for custom drawing.
 
-##### Override the Draw Method
+### Override the Draw Method
 
 `WatermarkPage` subclasses `PDFPage` so that it can override the [`draw(with:to:)`](./pdfpage/draw%28with,to%29.md) method. This method is called by `PDFDocument` to draw the page in a `PDFView`. All custom drawing for a PDF page should be done through this mechanism.
 

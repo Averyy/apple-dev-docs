@@ -21,7 +21,7 @@ Converts single-precision rectangular coordinates to polar coordinates.
 static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates polarCoordinates: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The function calls the underlying [`vDSP_polarD`](../vdsp_polard.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
 

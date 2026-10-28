@@ -27,7 +27,7 @@ init(_ keyPath: KeyPath<FocusedValues, Value?>)
 init(_ objectType: Value.Type) where Value : AnyObject, Value : Observable
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property wrapper is updated dynamically as focus changes and different published values go in and out of scope.
 

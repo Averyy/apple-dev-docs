@@ -19,7 +19,7 @@ func ABGroupCopyParentGroups(_ group: ABGroupRef!) -> Unmanaged<CFArray>!
 extern CFArrayRefABGroupCopyParentGroups(ABGroupRef group);
 ```
 
-#### Return Value
+## Return Value
 
 An array containingABGroup objects representing the parents of `group`.If `group` doesn’t belong to anygroups, this function returns an empty array. You are responsiblefor releasing this object.
 

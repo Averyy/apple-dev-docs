@@ -19,7 +19,7 @@ case barDisabled
 WKExtendedRuntimeSessionErrorBARDisabled
 ```
 
-#### Discussion
+## Discussion
 
 If the user has disabled Background App Refresh for this app, any attempt to schedule a session by calling the [`start(at:)`](../wkextendedruntimesession/start%28at%29.md) method fails. The system calls your delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](../wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md) method and passes a [`WKExtendedRuntimeSessionInvalidationReason.error`](../wkextendedruntimesessioninvalidationreason/error.md) reason with a [`WKExtendedRuntimeSessionErrorCode.barDisabled`](./bardisabled.md) error.
 

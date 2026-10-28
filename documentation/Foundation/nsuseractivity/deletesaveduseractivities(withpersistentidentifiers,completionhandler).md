@@ -28,7 +28,7 @@ class func deleteSavedUserActivities(withPersistentIdentifiers persistentIdentif
 + (void) deleteSavedUserActivitiesWithPersistentIdentifiers:(NSArray<NSString *> *) persistentIdentifiers completionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Deletes user activities with a persistent identifier matching any identifier in the `persistentIdentifiers` array.
 

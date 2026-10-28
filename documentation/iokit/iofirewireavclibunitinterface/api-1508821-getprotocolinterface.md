@@ -16,11 +16,11 @@ Creates a plug-in object for a protocol driver for the FireWire bus the AVC unit
 void *(*getProtocolInterface)(void *self, REFIID pluginType, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a COM-style interface pointer. Returns 0 upon failure.
 
-#### Discussion
+## Discussion
 
 This function is only available if the interface version is > 1 (macOS 10.2.0 or later?).
 

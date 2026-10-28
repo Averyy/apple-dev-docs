@@ -21,7 +21,7 @@ Errors that indicate the app doesn’t have the required permission to perform a
 enum PermissionRequired
 ```
 
-#### Overview
+## Overview
 
 Use these permission errors to inform people that the app requires specific permissions and that they need to grant permission to successfully complete the action.
 

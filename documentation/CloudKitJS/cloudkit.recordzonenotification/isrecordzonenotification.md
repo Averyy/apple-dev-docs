@@ -15,7 +15,7 @@ A Boolean value indicating whether this notification is a [`CloudKit.RecordZoneN
 readonly attribute Boolean isRecordZoneNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true`.
 

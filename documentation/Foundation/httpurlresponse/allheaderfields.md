@@ -25,7 +25,7 @@ var allHeaderFields: [AnyHashable : Any] { get }
 @property (copy, readonly) NSDictionary * allHeaderFields;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a dictionary that contains all the HTTP header fields received as part of the server’s response. By examining this dictionary, clients can see the “raw” header information returned by the HTTP server.
 
@@ -39,7 +39,7 @@ In Objective-C, the returned dictionary of headers is case-preserving during the
 
 For example, if you set the header `X-foo`, and then later set the header `X-Foo`, the dictionary’s key is be `X-foo`, but the value comes from the `X-Foo` header.
 
-##### Special considerations
+### Special considerations
 
 Prior to OS X v10.7 and iOS 5, canonicalization occurred for all header fields. The case-preserving dictionary was first introduced in OS X v10.7.2 and iOS 5.
 

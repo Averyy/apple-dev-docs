@@ -19,7 +19,7 @@ var cellPrototype: Any! { get set }
 @property (strong, null_resettable) id cellPrototype;
 ```
 
-#### Discussion
+## Discussion
 
 The prototype `NSCell` instance is copied to display items in the matrices of the browser.
 

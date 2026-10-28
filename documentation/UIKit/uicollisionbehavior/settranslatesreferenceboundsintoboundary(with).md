@@ -23,7 +23,7 @@ func setTranslatesReferenceBoundsIntoBoundary(with insets: UIEdgeInsets)
 - (void) setTranslatesReferenceBoundsIntoBoundaryWithInsets:(UIEdgeInsets) insets;
 ```
 
-#### Discussion
+## Discussion
 
 The result of using this method depends on how you’ve initialized the dynamic animator (of class [`UIDynamicAnimator`](../uidynamicanimator.md)) that you’ve added the collision behavior to. See the overview in [`UIDynamicAnimator`](../uidynamicanimator.md) for a discussion of initialization options and modes for animators.
 

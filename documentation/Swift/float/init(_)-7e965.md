@@ -21,7 +21,7 @@ Creates a new value, rounded to the closest possible representation.
 init<Source>(_ value: Source) where Source : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If two representable values are equally close, the result is the value with more trailing zeros in its significand bit pattern.
 

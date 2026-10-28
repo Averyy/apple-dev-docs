@@ -20,7 +20,7 @@ class func document(withRootElement element: XMLElement) -> Any
 + (id) documentWithRootElement:(NSXMLElement *) element;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLDocument` object initialized with the root element `element` or `nil` if the object couldn’t be created.
 

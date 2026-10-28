@@ -23,7 +23,7 @@ class func categoricalCrossEntropy(reductionType: MLCReductionType, labelSmoothi
 + (instancetype) categoricalCrossEntropyLossWithReductionType:(MLCReductionType) reductionType labelSmoothing:(float) labelSmoothing classCount:(NSUInteger) classCount weight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A categorical cross entropy loss layer.
 

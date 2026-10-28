@@ -30,7 +30,7 @@ optional func paymentQueue(_ queue: SKPaymentQueue, updatedDownloads downloads: 
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 When a download object is updated, its [`downloadState`](../skdownload/downloadstate.md) property describes how it changed.
 

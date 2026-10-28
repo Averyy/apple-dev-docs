@@ -5,11 +5,11 @@
 
 Register for notifications about changes and keep your app up to date.
 
-#### Overview
+## Overview
 
 It’s possible for another process or app to modify the Calendar database while your app is running. If your app fetches calendar events or reminders, register to be notified about changes to the Calendar database to ensure the calendar and reminder information you display to the user is current.
 
-##### Register for Notifications
+### Register for Notifications
 
 An [`EKEventStore`](./ekeventstore.md) object posts an [`EKEventStoreChangedNotification`](./ekeventstorechangednotification.md) notification whenever it detects changes to the Calendar database. Register for this notification if your app handles event or reminder data.
 
@@ -19,7 +19,7 @@ The code listing below registers for the [`EKEventStoreChangedNotification`](./e
 NotificationCenter.default.addObserver(self, selector: Selector("storeChanged:"), name: .EKEventStoreChanged, object: eventStore)
 ```
 
-##### Respond to Notifications
+### Respond to Notifications
 
 When you receive an [`EKEventStoreChangedNotification`](./ekeventstorechangednotification.md) notification, it’s possible the objects you’ve fetched—such as an [`EKEvent`](./ekevent.md), [`EKReminder`](./ekreminder.md), or [`EKCalendar`](./ekcalendar.md)—have changed. The effect of the changes depends on whether an event was added, modified, or deleted:
 

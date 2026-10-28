@@ -19,7 +19,7 @@ let kSCValNetInterfaceTypeEthernet: CFString
 extern CFStringRef const kSCValNetInterfaceTypeEthernet;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetInterfaceType`](./kscpropnetinterfacetype-swift.var.md) key.
 

@@ -25,7 +25,7 @@ var revision: Int { get }
 @property (readonly) NSUInteger revision;
 ```
 
-#### Discussion
+## Discussion
 
 Ensure your app uses the same model revision you used during development and testing to maintain consistent results.
 

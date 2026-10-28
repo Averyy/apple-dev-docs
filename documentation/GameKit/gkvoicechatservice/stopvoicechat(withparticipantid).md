@@ -25,7 +25,7 @@ func stopVoiceChat(withParticipantID participantID: String!)
 - (void) stopVoiceChatWithParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called, the client’s [`voiceChatService(_:didStopWithParticipantID:error:)`](../gkvoicechatclient/voicechatservice%28_,didstopwithparticipantid,error%29.md) method is called.
 

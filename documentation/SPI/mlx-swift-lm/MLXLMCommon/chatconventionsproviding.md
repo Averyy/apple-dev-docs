@@ -17,7 +17,7 @@ A model’s chat conventions: how it encodes tool calls and how it reasons.
 protocol ChatConventionsProviding
 ```
 
-#### Overview
+## Overview
 
 This knowledge lives with the model definition rather than in a centralized `model_type` table. [`LanguageModel`](./languagemodel.md) conforms with `nil` defaults, so the model factories read `model.toolCallFormat` / `model.reasoningConfig` directly. A model opts in by overriding either property in an extension.
 

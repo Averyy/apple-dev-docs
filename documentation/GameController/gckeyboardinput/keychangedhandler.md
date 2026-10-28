@@ -24,7 +24,7 @@ var keyChangedHandler: GCKeyboardValueChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCKeyboardValueChangedHandler keyChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If multiple keys change values at the same time, the profile calls this block once for each key that changes.
 

@@ -20,7 +20,7 @@ case initializing
 ARGeoTrackingStateInitializing
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the session is preparing tracking and an app has the opportunity to onboard users to the experience. The app watches for changes in [`stateReason`](../statereason-swift.property.md) and coaches the user accordingly to expedite initialization.
 

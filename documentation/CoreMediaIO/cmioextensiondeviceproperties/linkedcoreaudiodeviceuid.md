@@ -20,7 +20,7 @@ var linkedCoreAudioDeviceUID: String? { get set }
 @property (atomic, strong, nullable) NSString * linkedCoreAudioDeviceUID;
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`deviceLinkedCoreAudioDeviceUID`](../cmioextensionproperty/devicelinkedcoreaudiodeviceuid.md).
 

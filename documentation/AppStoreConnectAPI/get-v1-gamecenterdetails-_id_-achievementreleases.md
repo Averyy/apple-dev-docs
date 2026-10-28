@@ -11,9 +11,9 @@ Read information about the achievement releases for specific Game Center detail.
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

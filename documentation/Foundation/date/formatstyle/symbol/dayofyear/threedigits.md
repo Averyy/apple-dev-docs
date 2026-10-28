@@ -21,7 +21,7 @@ Custom format style portraying the three-digit numeric day of the year, zero-pad
 static var threeDigits: Date.FormatStyle.Symbol.DayOfYear { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `001`, `018`, `317`.
 

@@ -22,7 +22,7 @@ var bufferAddress: MTLGPUAddress
 MTLGPUAddress bufferAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Buffer address returned by the gpuAddress property of an MTLBuffer plus any offset into the buffer
 

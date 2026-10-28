@@ -19,11 +19,11 @@ Creates a label system accessory with the specified text, display state, and con
 static func label(text: String, displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.LabelOptions = LabelOptions()) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured label cell accessory. This accessory appears on the trailing edge of the cell.
 
-#### Discussion
+## Discussion
 
 Use this cell accessory to display a short string of text, like a small number showing the count for the associated item.
 

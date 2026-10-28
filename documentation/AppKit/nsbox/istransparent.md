@@ -19,7 +19,7 @@ var isTransparent: Bool { get set }
 @property (getter=isTransparent) BOOL transparent;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) when the receiver is transparent, [`false`](../../Swift/false.md) otherwise.
 

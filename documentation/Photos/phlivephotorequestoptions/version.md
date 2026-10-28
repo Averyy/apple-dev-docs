@@ -24,7 +24,7 @@ var version: PHImageRequestOptionsVersion { get set }
 @property (nonatomic, assign) PHImageRequestOptionsVersion version;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to request a version of the Live Photo with or without adjustments. See [`PHImageRequestOptionsVersion`](../phimagerequestoptionsversion.md).
 

@@ -22,7 +22,7 @@ var NSControlCharacterWhitespaceAction: Int { get }
 NSControlCharacterWhitespaceAction
 ```
 
-#### Discussion
+## Discussion
 
 The width for a glyph with this action is determined by the delegate method [`layoutManager(_:boundingBoxForControlGlyphAt:for:proposedLineFragment:glyphPosition:characterIndex:)`](./nslayoutmanagerdelegate/layoutmanager%28_,boundingboxforcontrolglyphat,for,proposedlinefragment,glyphposition,characterindex%29.md) if the method is implemented; otherwise, it’s the same as `NSControlCharacterZeroAdvancementAction`.
 

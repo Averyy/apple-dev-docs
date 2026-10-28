@@ -22,7 +22,7 @@ Cancels stream operations.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 Note that after you’ve called [`cancel()`](./cancel%28%29.md), you must close the stream to release resources.
 

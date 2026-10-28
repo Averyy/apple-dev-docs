@@ -25,7 +25,7 @@ var source: String? { get set }
 @property (copy, nullable) NSString * source;
 ```
 
-#### Discussion
+## Discussion
 
 The source code for a shader object can be updated at runtime. However, recompiling the fragment shader can be an expensive operation.
 

@@ -19,11 +19,11 @@ init(data contentData: Data?, ofType uti: String?)
 - (instancetype) initWithData:(NSData *) contentData ofType:(NSString *) uti;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTextAttachment` object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the `NSTextAttachment` class on iOS.
 

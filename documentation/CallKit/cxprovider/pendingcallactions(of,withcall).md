@@ -23,7 +23,7 @@ func pendingCallActions(of callActionClass: AnyClass, withCall callUUID: UUID) -
 - (NSArray<__kindof CXCallAction *> *) pendingCallActionsOfClass:(Class) callActionClass withCallUUID:(NSUUID *) callUUID;
 ```
 
-#### Return Value
+## Return Value
 
 An array of call actions of the specified class for the specified call identifier.
 

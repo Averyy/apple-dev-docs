@@ -20,7 +20,7 @@ The scope of where bloom will be computed
 var scope: BloomComponent.BloomScope
 ```
 
-#### Discussion
+## Discussion
 
 If set to unbounded, bloom will be computed on the entire screen.
 

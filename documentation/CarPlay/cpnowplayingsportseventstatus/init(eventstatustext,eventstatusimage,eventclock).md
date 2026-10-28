@@ -21,7 +21,7 @@ init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPl
 - (instancetype) initWithEventStatusText:(NSArray<NSString *> *) eventStatusText eventStatusImage:(UIImage *) eventStatusImage eventClock:(CPNowPlayingSportsClock *) eventClock;
 ```
 
-#### Discussion
+## Discussion
 
 The first string should always be used to show the play period (quarter, inning, period) using as few characters as possible; e.g. “2nd” for the 2nd quarter.
 

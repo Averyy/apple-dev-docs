@@ -15,7 +15,7 @@ Sets the title of a button with a character denoting an access key.
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

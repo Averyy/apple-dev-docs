@@ -20,7 +20,7 @@ var sliceIndex: Int { get }
 size_t cp_view_texture_map_get_slice_index(cp_view_texture_map_t view_texture_map);
 ```
 
-#### Discussion
+## Discussion
 
 Use the returned index to retrieve the view’s texture when the texture type is [`MTLTextureType.type2DArray`](../../../../../Metal/mtltexturetype/type2darray.md). When configuring your render pass descriptor, specify the index in the [`slice`](../../../../../Metal/mtlrenderpassattachmentdescriptor/slice.md) property of the descriptor’s color and depth attachments.
 

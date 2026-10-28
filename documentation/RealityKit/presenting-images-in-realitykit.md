@@ -10,7 +10,7 @@ Create and display spatial scenes in RealityKit
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 RealityKit apps can easily display images in 3D space using [`ImagePresentationComponent`](./imagepresentationcomponent.md), which can display traditional 2D and *spatial photos* as well as generate and display *spatial scenes* — which represents the content of an existing image in three dimensions.
 
@@ -20,7 +20,7 @@ Spatial scenes are different from *spatial photos*. A *spatial photo* presents t
 
 This sample app demonstrates how to use [`ImagePresentationComponent`](./imagepresentationcomponent.md) and [`ImagePresentationComponent.Spatial3DImage`](./imagepresentationcomponent/spatial3dimage.md) to convert an existing 2D image to a 3D spatial scene, and how to present the 2D and 3D versions of the image using [`RealityView`](./realityview.md) in a SwiftUI app.
 
-#### Choose viewing modes
+## Choose viewing modes
 
 Image presentation components can present images in several modes. Your apps can choose to use any or all of these modes.
 
@@ -32,7 +32,7 @@ Image presentation components can present images in several modes. Your apps can
 
 This sample displays images using `mono` and `spatial3D` viewing modes.
 
-#### Create an entity to present the image
+## Create an entity to present the image
 
 To display an image, create an [`ImagePresentationComponent`](./imagepresentationcomponent.md) and attach it to an entity in your scene. You can attach it to any entity, and you’ll also want to attach it to one that has no visual representation in your scene. This sample creates an empty [`Entity`](./entity.md) property called `contentEntity` in the `AppModel` class for that purpose.
 
@@ -102,7 +102,7 @@ The app implements an [`onChange(of:perform:)`](../SwiftUI/view/onchange%28of,pe
 }
 ```
 
-#### Manage image presentation
+## Manage image presentation
 
 In the `update` closure of the [`RealityView`](./realityview.md), the app retrieves the presentation screen size of the image presentation component using the entity’s [`observable`](./entity/observable-swift.property.md) property. This ensures that update is called when the `presentationScreenSize` changes.
 
@@ -161,7 +161,7 @@ func scaleImagePresentationToFit(in boundsInMeters: BoundingBox) {
 }
 ```
 
-#### Generate a spatial scene
+## Generate a spatial scene
 
 It can take several seconds to generate a spatial scene. To preserve the user experience, you have two options:
 

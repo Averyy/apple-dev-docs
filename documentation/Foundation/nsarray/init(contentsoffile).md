@@ -25,11 +25,11 @@ convenience init?(contentsOfFile path: String)
 - (NSArray<id> *) initWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized to contain the contents of the file specified by `aPath` or `nil` if the file can’t be opened or the contents of the file can’t be parsed into an array. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 The array representation in the file identified by `aPath` must contain only property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects). The objects contained by this array are immutable, even if the array is mutable.
 

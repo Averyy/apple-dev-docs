@@ -15,7 +15,7 @@ The MPEG-4 AAC Enhanced Low Delay audio object format.
 MPEG4AAC_ELD
 ```
 
-#### Discussion
+## Discussion
 
 For the corresponding format with the SBR extension, see [`MPEG4AAC_ELD_SBR`](./mpeg4aac_eld_sbr.md).
 

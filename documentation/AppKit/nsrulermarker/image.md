@@ -19,7 +19,7 @@ var image: NSImage { get set }
 @property (strong) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The image used to draw the marker must be appropriate for the orientation of the ruler. Markers may need to look different on a horizontal ruler than on a vertical ruler, and the ruler view neither scales nor rotates the images.
 

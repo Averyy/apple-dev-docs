@@ -19,7 +19,7 @@ class func loadNonExecutablePlugIn(_ url: URL!)
 + (void) loadNonExecutablePlugIn:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 If the filters contain executable code the plugin isn’t loaded.
 

@@ -23,7 +23,7 @@ var currentUserDefinedAncillaryData: [AVCaptureAncillaryDataUserKey : Any] { get
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * currentUserDefinedAncillaryData;
 ```
 
-#### Discussion
+## Discussion
 
 Using SMPTE 291 and SMPTE RDD 18 standards for user-defined data, this property specifies the user-defined ancillary data to be sent with every frame in [`AVCaptureBroadcastVideoOutput`](../avcapturebroadcastvideooutput.md).  The dictionary will contain a NSUUID the [`rdd18InstanceUID`](../avcaptureancillarydatauserkey/rdd18instanceuid.md) key, a uint16_t for the [`rdd18UDAMSetVersion`](../avcaptureancillarydatauserkey/rdd18udamsetversion.md) key and a dictionary for the [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md). The [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md) will contain keys of the user tag and with the corresponding values.
 

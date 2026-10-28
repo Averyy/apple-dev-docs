@@ -17,7 +17,7 @@ Applies the Softplus function.
 func softplus(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.logAddExp(x, 0)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`Softplus`](./softplus.md)

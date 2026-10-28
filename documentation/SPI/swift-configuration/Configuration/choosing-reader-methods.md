@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Choose between optional, default, and required variants of configuration methods.
 
-#### Overview
+## Overview
 
 For every configuration access pattern (get, fetch, watch) and data type, Swift Configuration provides three method variants that handle missing or invalid values differently:
 
@@ -22,7 +22,7 @@ Understanding these variants helps you write robust configuration code that hand
 
 > 💡 **Tip**: Start with the “default” variant and only use “optional” or “required” if needed.
 
-##### Optional variants
+### Optional variants
 
 Optional variants return `nil` when a configuration value is missing or cannot be converted to the expected type. These methods have the simplest signatures and are ideal when configuration values are truly optional.
 
@@ -48,7 +48,7 @@ try await config.watchInt(forKey: "http.timeout") { updates in
 }
 ```
 
-###### When to use
+#### When to use
 
 Use optional variants when:
 
@@ -57,7 +57,7 @@ Use optional variants when:
 - **Conditional behavior**: Your code can operate differently based on presence or absence.
 - **Debugging and diagnostics**: You want to detect missing configuration explicitly.
 
-###### Error handling behavior
+#### Error handling behavior
 
 Optional variants handle errors gracefully by returning `nil`:
 
@@ -79,7 +79,7 @@ do {
 }
 ```
 
-##### Default variants
+### Default variants
 
 Default variants return a specified fallback value when a configuration value is missing or cannot be converted. These provide guaranteed non-optional results while handling missing configuration gracefully.
 
@@ -102,7 +102,7 @@ try await config.watchInt(forKey: "http.timeout", default: 30) { updates in
 }
 ```
 
-###### When to use
+#### When to use
 
 Use default variants when:
 
@@ -111,7 +111,7 @@ Use default variants when:
 - **Required functionality**: The feature needs a value to operate, but can use defaults.
 - **Configuration evolution**: New settings that should work with older deployments.
 
-###### Choose good defaults
+#### Choose good defaults
 
 Consider these principles when choosing default values:
 
@@ -130,7 +130,7 @@ let batchSize = config.int(forKey: "batch.size", default: 100) // Small safe bat
 let maxConnections = config.int(forKey: "pool.max", default: 10) // Conservative pool
 ```
 
-###### Error handling behavior
+#### Error handling behavior
 
 Default variants handle errors by returning the default value:
 
@@ -138,7 +138,7 @@ Default variants handle errors by returning the default value:
 - Type conversion errors return the default.
 - Provider errors return the default (except for fetch variants).
 
-##### Required variants
+### Required variants
 
 Required variants throw errors when configuration values are missing or cannot be converted. These enforce that critical configuration must be present and valid.
 
@@ -165,7 +165,7 @@ do {
 }
 ```
 
-###### When to use
+#### When to use
 
 Use required variants when:
 
@@ -174,11 +174,11 @@ Use required variants when:
 - **Critical functionality**: Configuration that must be present for core features to work.
 - **Fail-fast behavior**: You want immediate errors for missing critical configuration.
 
-##### Choose the right variant
+### Choose the right variant
 
 Use this decision tree to select the appropriate variant:
 
-###### Is the configuration value critical for application operation?
+#### Is the configuration value critical for application operation?
 
 **Yes** → Use **required variants**
 
@@ -190,7 +190,7 @@ let databaseHost = try config.requiredString(forKey: "database.host")
 
 **No** → Continue to next question
 
-###### Do you have a reasonable default value?
+#### Do you have a reasonable default value?
 
 **Yes** → Use **default variants**
 
@@ -208,11 +208,11 @@ let debugEndpoint = config.string(forKey: "debug.endpoint")
 let customTheme = config.string(forKey: "ui.theme")
 ```
 
-##### Context and type conversion
+### Context and type conversion
 
 All variants support the same additional features:
 
-###### Configuration context
+#### Configuration context
 
 ```swift
 // Optional with context
@@ -241,9 +241,9 @@ let timeout = try config.requiredInt(
 )
 ```
 
-###### Type conversion
+#### Type conversion
 
-###### String-representable types
+##### String-representable types
 
 You can automatically convert string configuration values to other types using the `as:` parameter. This works with:
 
@@ -297,7 +297,7 @@ struct DatabaseURL: ExpressibleByConfigString {
 let dbUrl = config.string(forKey: "database.url", as: DatabaseURL.self)
 ```
 
-###### Integer-representable types
+##### Integer-representable types
 
 You can also automatically convert integer configuration values to other types using the `as:` parameter. This works with:
 
@@ -346,7 +346,7 @@ struct APIVersion: ExpressibleByConfigInt {
 let apiVersion = config.int(forKey: "api.version", as: APIVersion.self)
 ```
 
-###### Secret handling
+#### Secret handling
 
 ```swift
 // Mark sensitive values as secrets in all variants
@@ -357,7 +357,7 @@ let requiredKey = try config.requiredString(forKey: "api.key", isSecret: true)
 
 Also check out [Handling secrets correctly](./handling-secrets-correctly.md).
 
-##### Best practices
+### Best practices
 
 1. **Use required variants** only for truly critical configuration.
 2. **Use default variants** for user experience settings where missing configuration shouldn’t break functionality.

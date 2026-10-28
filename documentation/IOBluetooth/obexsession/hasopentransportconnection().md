@@ -19,11 +19,11 @@ func hasOpenTransportConnection() -> Bool
 - (Boolean) hasOpenTransportConnection;
 ```
 
-#### Return Value
+## Return Value
 
 Return whether or not the transport connection is still open.
 
-#### Discussion
+## Discussion
 
 Tranport subclasses must override this! When called you simply return if the transport connection is still open or not.
 

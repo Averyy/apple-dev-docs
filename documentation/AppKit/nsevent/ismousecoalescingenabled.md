@@ -19,7 +19,7 @@ class var isMouseCoalescingEnabled: Bool { get set }
 @property (class, getter=isMouseCoalescingEnabled) BOOL mouseCoalescingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Mouse movement events include mouse-moved, mouse-dragged, and tablet events. If this property is [`true`](../../Swift/true.md), coalescing is enabled; otherwise, it’s disabled. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -16,11 +16,11 @@ Get the scatter-gather list for a NuDCL
 UInt32 (*GetDCLRanges)(NuDCLRef dcl, UInt32 maxRanges, IOVirtualRange *outRanges);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previously set handler or NULL is no handler was set.
 
-#### Discussion
+## Discussion
 
 Applies: NuDCLSendPacketRef, NuDCLReceivePacketRef
 

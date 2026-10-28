@@ -20,7 +20,7 @@ Creates an opacity object using a single value or a texture.
 init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows you to create an instance using either a single value for the entire material or a UV-mapped image. If `texture` is non-`nil`, RealityKit uses that image to determine the material’s opacity and ignores `scale`. If `texture` is `nil`, then it uses `scale` for the entire material.
 

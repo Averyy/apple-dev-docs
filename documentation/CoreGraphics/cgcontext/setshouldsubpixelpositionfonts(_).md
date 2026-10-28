@@ -25,7 +25,7 @@ func setShouldSubpixelPositionFonts(_ shouldSubpixelPositionFonts: Bool)
 extern void CGContextSetShouldSubpixelPositionFonts(CGContextRef c, bool shouldSubpixelPositionFonts);
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, the graphics context may position glyphs on nonintegral pixel boundaries. When disabled, the position of glyphs are always forced to integral pixel boundaries.
 

@@ -20,7 +20,7 @@ Provides tentative results for an audio range in addition to the finalized resul
 case volatileResults
 ```
 
-#### Discussion
+## Discussion
 
 The transcriber will deliver several results for an audio range as it refines the transcription.
 

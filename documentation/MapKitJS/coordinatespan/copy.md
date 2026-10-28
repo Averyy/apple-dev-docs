@@ -15,7 +15,7 @@ Returns a copy of the coordinate span.
 copy(): CoordinateSpan;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the coordinate span.
 

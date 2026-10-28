@@ -20,7 +20,7 @@ func navigateForward(_ sender: Any?)
 - (void) navigateForward:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically invoked in response to a user interacting with a control, the `sender`.
 

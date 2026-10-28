@@ -20,7 +20,7 @@ final class LiveActivityForwarding
 
 - [Receiving Live Activity updates and alerts on an accessory](./receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Use this class from your accessory’s data provider extension.
 

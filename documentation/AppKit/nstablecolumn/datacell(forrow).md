@@ -21,11 +21,11 @@ func dataCell(forRow row: Int) -> Any
 - (id) dataCellForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The data cell object.
 
-#### Discussion
+## Discussion
 
 Returns the [`NSCell`](../nscell.md) object used by the table view to draw values for the receiver. The table view calls this method when drawing the row, so you shouldn’t need to call it directly. By default, this method just accesses [`dataCell`](./datacell.md).
 

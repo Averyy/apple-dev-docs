@@ -22,7 +22,7 @@ func adjust(firstLineRect: UnsafeMutablePointer<CGRect>, bodyRect: UnsafeMutable
 - (void) adjustFirstLineRect:(CGRect *) firstLineRect bodyRect:(CGRect *) bodyRect lastLineRect:(CGRect *) lastLineRect textOrigin:(CGPoint) origin;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing by default. Subclasses may override this method to change the rectangle calculations; for example, in order to enlarge the rectangles by a few points. If you adjust the rectangles, the drag preview changes accordingly.
 

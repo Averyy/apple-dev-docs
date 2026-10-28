@@ -25,7 +25,7 @@ class NSAttributedString
 @interface NSAttributedString : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSAttributedString`](./nsattributedstring.md) is a type you use to manage strings of stylized Unicode text. In addition to text, an attributed string contains key-value pairs known as *attributes* that specify additional information to apply to ranges of characters within the string. Attributed strings support many different kinds of attributes, including:
 
@@ -41,7 +41,7 @@ Use attributed strings anywhere you need styled text, or when you need to associ
 
 If you create an [`NSAttributedString`](./nsattributedstring.md) without any font information, the string’s default font is Helvetica 12-point, which might differ from the default system font for the platform. To change the font, specify a font attribute at creation time.
 
-##### Persistence
+### Persistence
 
 Be aware of how you persist attributed strings to and from the disk. RTF and RTFD are the preferred format for attributed strings because they offer the best fidelity for reading and writing attribute data. The RTF formats support a large number of standard attributes, and Apple extends the formats to support many Apple-specific attributes. If you define custom attributes for ranges of characters, store them separately alongside the RTF file for your text.
 
@@ -55,7 +55,7 @@ When you create an attributed string from Markdown, the system adds presentation
 
 The methods for reading and writing common file formats also support document attributes. Document attributes aren’t part of the attributed string itself, but accompany the text when you save it to a file. When you read a file, the system returns any document attributes that it finds. Similarly, when you write an attributed string to a file, you can specify the attributes to include. For more information about document attributes, see [`NSAttributedString.DocumentAttributeKey`](./nsattributedstring/documentattributekey.md) and [`NSAttributedString.DocumentReadingOptionKey`](./nsattributedstring/documentreadingoptionkey.md).
 
-##### System framework interoperability
+### System framework interoperability
 
 [TextKit](../UIKit/textkit.md) and [Core Text](../CoreText/CoreText.md) use attributed strings extensively during the layout and rendering processes. These technologies use the string’s text and rendering-related attributes to calculate the text metrics needed during layout. Similarly, these technologies apply those same attributes during rendering to give the text its styled appearance. The technologies use only attributes that directly affect the appearance of the text, and ignore most other attributes. For some attributes, the text system adds attributes during rendering as needed. For example, the text system provides default style attributes for text with the [`link`](./nsattributedstring/key/link.md) attribute.
 

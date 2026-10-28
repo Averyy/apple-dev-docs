@@ -25,11 +25,11 @@ func CTTypesetterSuggestLineBreakWithOffset(_ typesetter: CTTypesetter, _ startI
 extern CFIndex CTTypesetterSuggestLineBreakWithOffset(CTTypesetterRef typesetter, CFIndex startIndex, double width, double offset);
 ```
 
-#### Return Value
+## Return Value
 
 A count of the characters from `startIndex` and `offset` that would cause the line break. The value returned can be used to construct a character range for [`CTTypesetterCreateLine(_:_:)`](./cttypesettercreateline%28_,_%29.md).
 
-#### Discussion
+## Discussion
 
 The line break can be triggered either by a hard-break character in the stream or by filling the specified width with characters.
 

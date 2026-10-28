@@ -5,7 +5,7 @@
 
 The generic labels contained in the Address Book database for specifying different values in a multivalue list.
 
-#### Overview
+## Overview
 
 These labels are especially useful if there is no default label for a property. Users can also add their own labels.
 

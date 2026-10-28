@@ -21,7 +21,7 @@ A task that responds to background URL sessions matching the given identifier.
 static func urlSession(_ identifier: String) -> BackgroundTask<Void, Void>
 ```
 
-#### Return Value
+## Return Value
 
 A background task that you can handle with your app or extension.
 

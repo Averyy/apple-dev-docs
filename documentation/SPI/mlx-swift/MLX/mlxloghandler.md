@@ -17,7 +17,7 @@ Protocol for backing of MLXLogger.
 protocol MLXLogHandler : Sendable
 ```
 
-#### Overview
+## Overview
 
 Install with [`factory`](./mlxlogger/factory.md) or [`install()`](./stderrhandler/install%28%29.md)
 

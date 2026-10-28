@@ -22,7 +22,7 @@ var embedsSemanticSegmentationMattesInPhoto: Bool { get set }
 @property (nonatomic) BOOL embedsSemanticSegmentationMattesInPhoto;
 ```
 
-#### Discussion
+## Discussion
 
 Semantic segmentation mattes are only supported in HEIF and JPEG. The photo output ignores this property if you set [`enabledSemanticSegmentationMatteTypes`](./enabledsemanticsegmentationmattetypes.md) to an empty array.
 

@@ -23,7 +23,7 @@ class INBalanceAmount
 @interface INBalanceAmount : NSObject
 ```
 
-#### Overview
+## Overview
 
 A balance reflects any credit or debit associated with the account. Balances may reflect an amount of money, frequent flier miles, or points accumulated toward rewards.
 

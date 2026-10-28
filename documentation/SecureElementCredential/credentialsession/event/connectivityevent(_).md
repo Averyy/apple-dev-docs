@@ -16,7 +16,7 @@ A credential received a connectivity event during card emulation.
 case connectivityEvent(CredentialSession.ConnectivityEvent)
 ```
 
-#### Discussion
+## Discussion
 
 You might not receive this event if your app hasn’t acquired the [`CredentialSession.PresentmentIntentAssertion`](../presentmentintentassertion.md). If your app doesn’t have the presentment intent assertion, Wallet or another default app might respond to certain field events, depending on the device configuration.
 

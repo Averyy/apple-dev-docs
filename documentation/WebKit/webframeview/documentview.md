@@ -19,7 +19,7 @@ var documentView: (any NSView & WebDocumentView)! { get }
 @property (nonatomic, strong, readonly) NSView<WebDocumentView> * documentView;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`allowsScrolling`](./allowsscrolling.md) to enable scrolling of this view.
 

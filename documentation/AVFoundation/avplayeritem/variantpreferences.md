@@ -26,7 +26,7 @@ var variantPreferences: AVVariantPreferences { get set }
 @property AVVariantPreferences variantPreferences;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`AVVariantPreferenceNone`](../avvariantpreferences/avvariantpreferencenone.md).
 

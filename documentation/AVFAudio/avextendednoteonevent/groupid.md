@@ -24,7 +24,7 @@ var groupID: UInt32 { get set }
 @property (readwrite) UInt32 groupID;
 ```
 
-#### Discussion
+## Discussion
 
 The valid range of values are between `0` and `15`, but can be higher if the [`AVMusicTrack`](../avmusictrack.md) destination audio unit supports more channels.
 

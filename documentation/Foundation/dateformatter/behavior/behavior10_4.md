@@ -23,7 +23,7 @@ case behavior10_4
 NSDateFormatterBehavior10_4
 ```
 
-#### Discussion
+## Discussion
 
 Specifies formatting behavior equivalent for OS X 10.4.
 

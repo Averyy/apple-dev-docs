@@ -24,7 +24,7 @@ var predicateForSelectionOfPerson: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * predicateForSelectionOfPerson;
 ```
 
-#### Discussion
+## Discussion
 
 If the predicate evaluates to true for the selected person, the selected person is returned to the app. If the predicate evaluates to false, the selected person is displayed.
 

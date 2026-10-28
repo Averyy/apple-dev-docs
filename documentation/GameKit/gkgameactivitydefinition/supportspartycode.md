@@ -24,7 +24,7 @@ var supportsPartyCode: Bool { get }
 @property (nonatomic, assign, readonly) BOOL supportsPartyCode;
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `-[GKGameActivityListener player:wantsToPlayGameActivity:completionHandler:]` where you can receive and handle game activities that players want to play in a party with friends.
 

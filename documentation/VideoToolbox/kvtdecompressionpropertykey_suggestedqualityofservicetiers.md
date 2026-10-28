@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. This property value is an array of [`CFDictionary`](../CoreFoundation/cfdictionary.md) objects describing different reduced frame delivery options supported by the decoder.
 

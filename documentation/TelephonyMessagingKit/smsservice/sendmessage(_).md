@@ -15,7 +15,7 @@ Sends an SMS message to the given destination.
 final func sendMessage(_ message: SMSMessage) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:
 >

@@ -13,7 +13,7 @@ Updates a specific sign-in token to a new value.
 
 - [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md)
 
-#### Overview
+## Overview
 
 Use this endpoint to update a specific [`VSUserAccountManager.AutoSignInToken`](../VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swift.struct.md) to a new [`value`](../VideoSubscriberAccount/vsautosignintoken/value.md).
 

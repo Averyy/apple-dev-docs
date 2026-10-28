@@ -29,7 +29,7 @@ func clearAliroReaderConfig(with params: MTRDoorLockClusterClearAliroReaderConfi
 - (void) clearAliroReaderConfigWithParams:(MTRDoorLockClusterClearAliroReaderConfigParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows clearing an existing Aliro Reader configuration for the lock.
 

@@ -21,7 +21,7 @@ An array of contours that don’t have another contour enclosing them.
 var topLevelContours: [ContoursObservation.Contour] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This array constitutes the top of the contour hierarchy. You can iterate over each Contour instance to determine its children.
 

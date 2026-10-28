@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Emagic_Default_7_1: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Emagic_Default_7_1
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

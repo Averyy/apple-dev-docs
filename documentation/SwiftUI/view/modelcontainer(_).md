@@ -21,7 +21,7 @@ Sets the model container and associated model context in this view’s environme
 @preconcurrency func modelContainer(_ container: ModelContainer) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In this example, `ContentView` sets a model container to use for `RecipesList`:
 

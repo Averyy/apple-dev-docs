@@ -5,7 +5,7 @@
 
 Provide an even more streamlined, consistent, and glanceable user experience with new design features.
 
-#### Overview
+## Overview
 
 watchOS 10 provides a redesigned user interface that focuses on relevant, glanceable content and consistent navigation, and takes advantage of the high-quality display with full-screen color and images.
 
@@ -24,7 +24,7 @@ Use these features to make your app consistent and visually coherent:
 
 For design guidance, see Human Interface Guidelines > [Designing for watchOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos).
 
-#### Scroll through views using the Digital Crown
+## Scroll through views using the Digital Crown
 
 The Digital Crown provides a precise input device that people can use to navigate between apps, scroll through an app’s content, and make precise selections without obscuring the display. To get the most out of the Digital Crown, emphasize vertical scrolling over horizontal scrolling in your app and use system controls that already support the Digital Crown, like the [`Picker`](../SwiftUI/picker.md). In addition, watchOS 10 adds the ability to scroll vertically through a set of pages.
 
@@ -74,7 +74,7 @@ When scrolling through a longer view’s content, the system expands the selecte
 
 For additional design guidance, see Human Interface Guidelines > [Digital Crown](https://developer.apple.com/design/human-interface-guidelines/digital-crown) and [Page controls](https://developer.apple.com/design/human-interface-guidelines/page-controls).
 
-#### Toggle between a source list and detail views
+## Toggle between a source list and detail views
 
 In macOS, iOS, and iPadOS, split views are used to present two or more columns of data. In watchOS 10, a [`NavigationSplitView`](../SwiftUI/navigationsplitview.md) is the ideal way to display a source list and the corresponding detail views. If the context is large enough to show multiple columns, the system displays a list of items in the leading column. People can then choose one or more items in a leading column to display details about those items in subsequent columns.
 
@@ -147,7 +147,7 @@ When using a split view in watchOS, consider the following best practices:
 
 For additional design guidance, see Human Interface Guidelines > [Split views](https://developer.apple.com/design/human-interface-guidelines/split-views).
 
-#### Move through a hierarchy of views
+## Move through a hierarchy of views
 
 While the `TabView` and `NavigationSplitView` provide new navigation paradigms, they aren’t your only option. If your app doesn’t pivot between a detail view and a source list, or if it needs more than a few vertically paginated tabs, consider using a [`NavigationStack`](../SwiftUI/navigationstack.md). While the `NavigationStack` isn’t a new feature, it is still an effective way to navigate an arbitrary hierarchy of views.
 
@@ -191,7 +191,7 @@ When creating a navigation stack in watchOS, consider the following best practic
 - Use a large title on the root view.
 - Don’t use a title on any subsequent views where a back button is present.
 
-#### Place buttons consistently with the toolbar
+## Place buttons consistently with the toolbar
 
 If your app uses a `NavigationSplitView` or `NavigationStack`, you can place buttons in a [`toolbar(content:)`](../SwiftUI/view/toolbar%28content%29.md) and provide a consistent size, location, and appearance for the buttons. If the view has scrolling content, the buttons remain visible above the content.
 
@@ -251,7 +251,7 @@ You can also place a button in the scrolling view by using the [`primaryAction`]
 
 For additional design guidance, see Human Interface Guidelines > [Toolbars](https://developer.apple.com/design/human-interface-guidelines/toolbars).
 
-#### Provide continuity with persistent elements
+## Provide continuity with persistent elements
 
 You can display the same element on multiple pages to create a sense of continuity between the pages. For example, when working with vertical tab views, use the [`matchedGeometryEffect(id:in:properties:anchor:isSource:)`](../SwiftUI/view/matchedgeometryeffect%28id,in,properties,anchor,issource%29.md) modifier to animate changes to an element’s size and position between tabs.
 
@@ -303,7 +303,7 @@ NavigationStack {
 
 In this example, the icon appears in the first tab’s view and in the toolbar. The `isSource` parameter determines which version gets rendered. If `pageNumber` is `0`, someone is viewing the first page, so the system renders the version inside the tab view. If `pageNumber` is set to a different value, the system renders the version in the toolbar. When `pageNumber` changes, the system animates the changes to the icon’s frame, matching the animation to the Digital Crown.
 
-#### Provide additional information with color backgrounds
+## Provide additional information with color backgrounds
 
 You can use full color backgrounds to convey information about your app.
 
@@ -365,7 +365,7 @@ var body: some View {
 
 For additional design guidance, see Human Interface Guidelines > [Color](https://developer.apple.com/design/human-interface-guidelines/color).
 
-#### Indicate hierarchy and context with materials
+## Indicate hierarchy and context with materials
 
 Use [`Material`](../SwiftUI/material.md) effects to improve legibility, define an information hierarchy, and provide context.
 

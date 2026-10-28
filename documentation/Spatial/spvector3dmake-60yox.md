@@ -19,11 +19,11 @@
 static SPVector3D SPVector3DMake(double x, double y, double z);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a vector with the specified coordinates.
 

@@ -19,7 +19,7 @@ func MDQueryCopySortingAttributes(_ query: MDQuery!) -> CFArray!
 CFArrayRef MDQueryCopySortingAttributes(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArrayRef containing the attribute names used to sort the query results.
 

@@ -17,7 +17,7 @@
 - (instancetype) initWithConfiguration:(PHSharedAlbumCreationConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a view controller that allows the user to create a new shared album.
 

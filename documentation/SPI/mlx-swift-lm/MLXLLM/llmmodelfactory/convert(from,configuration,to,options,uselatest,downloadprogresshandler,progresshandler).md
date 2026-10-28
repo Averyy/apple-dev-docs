@@ -17,7 +17,7 @@ Download, quantize, and save a safetensors-backed LLM.
 func convert(from downloader: any Downloader, configuration: ModelConfiguration, to outputDirectory: URL, options: ModelConversionOptions = .init(), useLatest: Bool = false, downloadProgressHandler: @Sendable @escaping (Progress) -> Void = { _ in }, progressHandler: @Sendable @escaping (ModelConversionProgress) -> Void = { _ in }) async throws -> ModelConversionResult
 ```
 
-#### Discussion
+## Discussion
 
 This is the Swift equivalent of the common `mlx_lm.convert` workflow for models that are available as compatible safetensors. PyTorch `.bin` conversion is intentionally out of scope.
 

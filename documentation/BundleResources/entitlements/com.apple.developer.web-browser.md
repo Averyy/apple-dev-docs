@@ -15,7 +15,7 @@ An entitlement that indicates whether the app can act as the user’s default we
 - **Name**: `com.apple.developer.web-browser`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 For more information about using this entitlement, see [Preparing your app to be the default web browser](../../Xcode/preparing-your-app-to-be-the-default-browser.md).
 

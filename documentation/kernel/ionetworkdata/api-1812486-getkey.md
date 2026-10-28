@@ -11,11 +11,11 @@ Gets a unique OSSymbol key associated with this object.
 virtual const OSSymbol * getKey() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an OSSymbol key that was generated from the name assigned to this object.
 
-#### Overview
+## Overview
 
 During initialization, IONetworkData will create an OSSymbol key based on its assigned name.
 

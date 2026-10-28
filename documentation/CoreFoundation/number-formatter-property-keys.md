@@ -5,7 +5,7 @@
 
 The keys used in key-value pairs to specify the value of number formatter properties.
 
-#### Overview
+## Overview
 
 The values for these keys are all `CFType` objects. The specific types for each key are specified above.
 

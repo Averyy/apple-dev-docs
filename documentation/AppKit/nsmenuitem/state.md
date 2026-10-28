@@ -19,7 +19,7 @@ var state: NSControl.StateValue { get set }
 @property NSControlStateValue state;
 ```
 
-#### Discussion
+## Discussion
 
 The image associated with the new state is displayed to the left of the menu item.
 

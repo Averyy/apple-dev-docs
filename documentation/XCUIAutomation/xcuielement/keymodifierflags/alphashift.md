@@ -26,7 +26,7 @@ static var alphaShift: XCUIElement.KeyModifierFlags { get }
 XCUIKeyModifierAlphaShift
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use [`capsLock`](./capslock.md) instead.
 

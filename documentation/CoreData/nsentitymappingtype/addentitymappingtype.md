@@ -25,7 +25,7 @@ case addEntityMappingType
 NSAddEntityMappingType
 ```
 
-#### Discussion
+## Discussion
 
 Instances of the entity only exist in the destination.
 

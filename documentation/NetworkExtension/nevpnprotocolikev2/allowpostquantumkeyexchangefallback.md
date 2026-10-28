@@ -24,7 +24,7 @@ var allowPostQuantumKeyExchangeFallback: Bool { get set }
 @property BOOL allowPostQuantumKeyExchangeFallback;
 ```
 
-#### Discussion
+## Discussion
 
 This property has no effect if you don’t configure any post-quantum key exchange methods in the [`NEVPNIKEv2SecurityAssociationParameters`](../nevpnikev2securityassociationparameters.md). The property’s default value is `false`.
 

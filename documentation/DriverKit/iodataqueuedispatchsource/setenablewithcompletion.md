@@ -18,7 +18,7 @@ Controls the enable state of the interrupt source.
 virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

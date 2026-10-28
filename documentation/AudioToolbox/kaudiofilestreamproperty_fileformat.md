@@ -24,7 +24,7 @@ var kAudioFileStreamProperty_FileFormat: AudioFileStreamPropertyID { get }
 kAudioFileStreamProperty_FileFormat
 ```
 
-#### Discussion
+## Discussion
 
 A `UInt32` four-character code that identifies the audio data format. For a list of audio format IDs, see “Audio Data Format IDs” in [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
 

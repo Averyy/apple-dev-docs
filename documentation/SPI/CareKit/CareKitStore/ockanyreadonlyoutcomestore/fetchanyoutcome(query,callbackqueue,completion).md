@@ -18,7 +18,7 @@ Fetch an outcome from the store.
 func fetchAnyOutcome(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<OCKAnyOutcome>)
 ```
 
-#### Discussion
+## Discussion
 
 If more than one outcome matches the query, only the first returns. If no matching outcomes exist, or there is an error accessing the store, the closure receives an error.
 

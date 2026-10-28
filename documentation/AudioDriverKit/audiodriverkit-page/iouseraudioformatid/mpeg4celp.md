@@ -15,7 +15,7 @@ The MPEG-4 Code Excited Linear Prediction (CELP) audio object format.
 MPEG4CELP
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

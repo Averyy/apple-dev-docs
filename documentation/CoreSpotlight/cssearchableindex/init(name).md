@@ -23,11 +23,11 @@ init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An on-device index.
 
-#### Discussion
+## Discussion
 
 If you want to use batching or you want to index items in a specific protection class, you need to use your own index (you can’t perform batch updates on the default index).
 

@@ -24,7 +24,7 @@ var motionKeyframeCount: Int { get set }
 @property (nonatomic) NSUInteger motionKeyframeCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. If the value is greater than `1`, all geometry descriptors that you attach to this descriptor need to be motion descriptors, and each needs to have exactly that many [`MTLMotionKeyframeData`](../mtlmotionkeyframedata.md) objects.
 

@@ -22,7 +22,7 @@ static func visionPrescription(_ predicate: NSPredicate? = nil) -> HKSamplePredi
 
 Available when `Sample` inherits `HKSample`.
 
-#### Discussion
+## Discussion
 
 Use this method to create a predicate that matches vision prescriptions.
 

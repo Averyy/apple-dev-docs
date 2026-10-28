@@ -16,7 +16,7 @@ The number of elements in the [`vertices`](./vertices-fhdb.md) buffer.
 @property (nonatomic, readonly) NSUInteger vertexCount;
 ```
 
-#### Discussion
+## Discussion
 
 Face mesh topology is constant across [`ARFaceGeometry`](../arfacegeometry.md) instances, so the value of this property is the same for all instances.
 

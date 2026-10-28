@@ -24,7 +24,7 @@ let PHImageManagerMaximumSize: CGSize
 extern const CGSize PHImageManagerMaximumSize;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the [`PHImageManagerMaximumSize`](./phimagemanagermaximumsize.md) option, Photos provides the largest image available for the asset without scaling or cropping. (That is, it ignores the [`resizeMode`](./phimagerequestoptions/resizemode.md) option.)
 

@@ -29,7 +29,7 @@ class PHSharedAlbumCreationViewController
 @interface PHSharedAlbumCreationViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 This class is used to present the shared album creation view from AppKit-based view controllers.
 

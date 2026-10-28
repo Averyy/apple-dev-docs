@@ -24,7 +24,7 @@ func IOSurfaceGetBytesPerElement(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetBytesPerElement(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

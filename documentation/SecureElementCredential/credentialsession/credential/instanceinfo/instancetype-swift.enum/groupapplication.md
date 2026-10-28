@@ -16,7 +16,7 @@ A type that indicates an instance is a member of a group of application instance
 case groupApplication
 ```
 
-#### Discussion
+## Discussion
 
 An instance with this type is a member of a group that’s associated with a [`CredentialSession.Credential.InstanceInfo.InstanceType.headApplication`](./headapplication.md) instance.
 

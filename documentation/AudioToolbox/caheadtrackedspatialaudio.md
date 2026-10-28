@@ -15,7 +15,7 @@ A spatial experience that takes user motion into account.
 @interface CAHeadTrackedSpatialAudio : CASpatialAudioExperience
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md) Swift type.
 

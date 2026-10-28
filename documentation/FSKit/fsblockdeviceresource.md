@@ -19,7 +19,7 @@ class FSBlockDeviceResource
 @interface FSBlockDeviceResource : FSResource
 ```
 
-#### Overview
+## Overview
 
 A `FSBlockDeviceResource` can exist in either a proxied or nonproxied version. Only the `fskitd` daemon creates “real” (nonproxied) instances of this class. Client applications and daemons create proxy objects for requests, and `fskitd` opens the underlying device during the processing of the request.
 

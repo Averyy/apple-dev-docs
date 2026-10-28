@@ -26,7 +26,7 @@ var cursor: CKQueryOperation.Cursor? { get set }
 @property (nonatomic, copy, nullable) CKQueryCursor * cursor;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of this property is the cursor that you provide to the [`init(cursor:)`](./init%28cursor%29.md) method. When you use a cursor, the operation ignores the contents of the [`query`](./query.md) property. This property’s value is an opaque value that CloudKit provides. For more information, see the [`queryCompletionBlock`](./querycompletionblock.md) property.
 

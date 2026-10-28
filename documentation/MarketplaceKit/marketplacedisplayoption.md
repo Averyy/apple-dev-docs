@@ -16,7 +16,7 @@ The kinds of deep links that the operating system makes into your marketplace.
 enum MarketplaceDisplayOption
 ```
 
-#### Overview
+## Overview
 
 The [`MarketplaceSceneDelegate`](./marketplacescenedelegate.md) function [`scene(_:askedToDisplay:)`](./marketplacescenedelegate/scene%28_,askedtodisplay%29.md) accepts a case of this enumeration as a parameter.
 

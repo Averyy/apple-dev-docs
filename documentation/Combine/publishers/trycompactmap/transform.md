@@ -21,7 +21,7 @@ An error-throwing closure that receives values from the upstream publisher and r
 let transform: (Upstream.Output) throws -> Output?
 ```
 
-#### Discussion
+## Discussion
 
 If this closure throws an error, the publisher fails.
 

@@ -22,11 +22,11 @@ convenience init(cgPoint p: CGPoint)
 + (instancetype) vectorWithCGPoint:(CGPoint) p;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object of length 2.
 
-#### Discussion
+## Discussion
 
 The `CGRect` structure’s `y` and `y` values are stored in the vector’s two values.
 

@@ -21,7 +21,7 @@ Creates a new camera position from an existing map camera you provide.
 static func camera(_ camera: MapCamera) -> MapCameraPosition
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new camera position.
 

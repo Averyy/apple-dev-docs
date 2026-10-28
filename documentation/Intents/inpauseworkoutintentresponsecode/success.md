@@ -22,7 +22,7 @@ case success
 INPauseWorkoutIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app successfully pauses the workout.
 

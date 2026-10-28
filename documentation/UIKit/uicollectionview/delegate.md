@@ -23,7 +23,7 @@ weak var delegate: (any UICollectionViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UICollectionViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UICollectionViewDelegate`](../uicollectionviewdelegate.md) protocol. The delegate object is responsible for managing selection behavior and interactions with individual items.
 

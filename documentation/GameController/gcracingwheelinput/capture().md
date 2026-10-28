@@ -20,7 +20,7 @@ func capture() -> GCRacingWheelInputState
 - (GCRacingWheelInputState *) capture;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance containing the current state vector of the racing wheel input.
 

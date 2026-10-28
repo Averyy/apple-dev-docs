@@ -24,7 +24,7 @@ class BADownload
 @interface BADownload : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  You don’t create instances of this object directly. Instead, use an object that inherits from [`BADownload`](./badownload.md), such as [`BAURLDownload`](./baurldownload.md).
 

@@ -16,7 +16,7 @@
 class IOWorkGroup;
 ```
 
-#### Overview
+## Overview
 
 Workgroups allow multiple threads to coordinate activities for realtime operations.
 

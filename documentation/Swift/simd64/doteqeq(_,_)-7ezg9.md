@@ -23,7 +23,7 @@ static func .== (a: SIMD64<Scalar>, b: SIMD64<Scalar>) -> SIMDMask<SIMD64<Scalar
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is equal to the corresponding lane of b, and false otherwise.
 

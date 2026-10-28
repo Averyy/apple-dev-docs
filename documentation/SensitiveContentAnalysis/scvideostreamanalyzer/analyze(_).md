@@ -21,7 +21,7 @@ func analyze(_ pixelBuffer: CVPixelBuffer)
 - (void) analyzePixelBuffer:(CVPixelBufferRef) pixelBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This method analyzes a specific video frame and updates [`analysis`](./analysis.md) according to the results. If your app implements a custom stream decoder, you can call this method for each video frame.
 

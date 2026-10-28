@@ -22,7 +22,7 @@ weak var view: UIView? { get }
 @property (nonatomic, weak, readonly) UIView * view;
 ```
 
-#### Discussion
+## Discussion
 
 A preview interaction operates on the view that’s provided at initialization time. Use this property to obtain a reference to that same view. Note that this is a weak property — the preview interaction doesn’t retain a reference to the view it’s provided.
 

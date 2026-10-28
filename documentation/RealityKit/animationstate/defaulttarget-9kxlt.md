@@ -22,7 +22,7 @@ var defaultTarget: JointTransforms? { get }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 See: [`defaultTarget`](../animationstateprotocol/defaulttarget.md)
 

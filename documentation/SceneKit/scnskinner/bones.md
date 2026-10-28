@@ -25,7 +25,7 @@ var bones: [SCNNode] { get }
 @property (nonatomic, readonly) NSArray<SCNNode *> * bones;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`SCNNode`](../scnnode.md) objects, each of which represents a control point of the animation skeleton. Moving a node deforms the surface of the skinner’s geometry, based on the skeleton data from which the skinner object was created.
 

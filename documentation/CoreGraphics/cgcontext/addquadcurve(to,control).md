@@ -21,7 +21,7 @@ Adds a quadratic Bézier curve to the current path, with the specified end point
 func addQuadCurve(to end: CGPoint, control: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 This method constructs a curve starting from the path’s current point and ending at the specified end point, with curvature defined by the control point. After this method appends that curve to the current path, the end point of the curve becomes the path’s current point.
 

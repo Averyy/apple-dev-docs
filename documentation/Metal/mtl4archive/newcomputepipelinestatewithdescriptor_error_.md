@@ -20,7 +20,7 @@ Creates a compute pipeline state from the archive with a descriptor.
 - (id<MTLComputePipelineState>) newComputePipelineStateWithDescriptor:(MTL4ComputePipelineDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A compute pipeline state if the method succeeds, otherwise `nil`.
 

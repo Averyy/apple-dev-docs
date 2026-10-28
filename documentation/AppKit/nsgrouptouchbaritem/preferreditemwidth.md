@@ -22,7 +22,7 @@ var preferredItemWidth: CGFloat { get set }
 @property CGFloat preferredItemWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This width applies when [`prefersEqualWidths`](./prefersequalwidths.md) is [`true`](../../Swift/true.md).
 

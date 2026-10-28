@@ -15,7 +15,7 @@ Disposes of a a new universal procedure pointer (UPP)to a Unicode-to-text fallba
 void DisposeUnicodeToTextFallbackUPP(UnicodeToTextFallbackUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the callback [`UnicodeToTextFallbackProcPtr`](./unicodetotextfallbackprocptr.md) formore information.
 

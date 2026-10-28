@@ -13,7 +13,7 @@
 MBUF_WAITOK = 0
 ```
 
-#### Discussion
+## Discussion
 
 Allow a call to allocate an mbuf to block.
 

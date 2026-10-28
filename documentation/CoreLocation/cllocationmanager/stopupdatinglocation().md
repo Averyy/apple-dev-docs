@@ -25,7 +25,7 @@ func stopUpdatingLocation()
 - (void) stopUpdatingLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need location data. You can always restart the generation of location updates by calling the [`startUpdatingLocation()`](./startupdatinglocation%28%29.md) method again.
 

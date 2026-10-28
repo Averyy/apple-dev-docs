@@ -20,11 +20,11 @@ Returns the state object in the state machine corresponding to the specified cla
 - (GKState *) stateForClass:(Class) stateClass;
 ```
 
-#### Return Value
+## Return Value
 
 The instance of the specified class currently being used in the state machine.
 
-#### Discussion
+## Discussion
 
 You build a state machine by creating a unique [`GKState`](../gkstate.md) subclass for each distinct state possible for the machine and then providing an instance of each class to one of the [`GKStateMachine`](../gkstatemachine.md) methods listed in Creating a State Machine. Call this method when you need to retrieve the state instance for a specific [`GKState`](../gkstate.md) subclass.
 

@@ -19,7 +19,7 @@ Options for how to search your app’s content.
 enum GuidanceLevel
 ```
 
-#### Overview
+## Overview
 
 Use this type to guide how the search tool delivers results to the model. You can tell the tool to focus on specific types of content, to search using specific techniques, or to use all available search options.
 

@@ -32,7 +32,7 @@ var dateTimeRange: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dateTimeRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the scope of the search to sent or received messages within the specified dates.
 

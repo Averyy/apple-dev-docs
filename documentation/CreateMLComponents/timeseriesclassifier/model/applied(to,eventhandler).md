@@ -26,7 +26,7 @@ func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil)
 func applied(to input: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> AnyTemporalSequence<ClassificationDistribution<Label>>
 ```
 
-#### Return Value
+## Return Value
 
 A classification distribution.
 

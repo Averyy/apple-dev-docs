@@ -19,13 +19,13 @@ The payload that configures profile removal.
 object ProfileRemovalPassword
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.profileRemovalPassword` as the payload type.
 
 This payload provides a password to allow users to remove a locked configuration profile from the device. If this payload is present and has a password value set, the device asks for the password when the user taps a profile’s Remove button. This system encrypts the payload with the rest of the profile.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ This payload provides a password to allow users to remove a locked configuration
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -26,7 +26,7 @@ struct OSLogFloatFormatting
 
 - [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
-#### Overview
+## Overview
 
 An [`OSLogFloatFormatting`](./oslogfloatformatting.md) structure encapsulates the formatting details for `double` and `float` values. Use the static [`fixed`](./oslogfloatformatting/fixed.md), [`hex`](./oslogfloatformatting/hex.md), [`exponential`](./oslogfloatformatting/exponential.md), and [`hybrid`](./oslogfloatformatting/hybrid.md) structures to apply default formatting for floating-point values. You can also create new [`OSLogFloatFormatting`](./oslogfloatformatting.md) structures that customize the rules for handling a leading plus sign, precision information, and more.
 

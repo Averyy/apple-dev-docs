@@ -23,7 +23,7 @@ var searchBarStyle: UISearchBar.Style { get set }
 @property (nonatomic) UISearchBarStyle searchBarStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be used together with [`barStyle`](./barstyle.md). The style [`UISearchBar.Style.minimal`](./style/minimal.md) provides no default background color or image but will display one if customized as such.
 

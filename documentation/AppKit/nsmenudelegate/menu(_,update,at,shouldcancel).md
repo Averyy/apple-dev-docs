@@ -20,11 +20,11 @@ optional func menu(_ menu: NSMenu, update item: NSMenuItem, at index: Int, shoul
 - (BOOL) menu:(NSMenu *) menu updateItem:(NSMenuItem *) item atIndex:(NSInteger) index shouldCancel:(BOOL) shouldCancel;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to continue the process. If you return [`false`](../../Swift/false.md), your [`menu(_:update:at:shouldCancel:)`](./menu%28_,update,at,shouldcancel%29.md) is not called again. In that case, it’s your responsibility to trim any extra items from the menu.
 
-#### Discussion
+## Discussion
 
 If your [`numberOfItems(in:)`](./numberofitems%28in%29.md) delegate method returns a positive value, then your [`menu(_:update:at:shouldCancel:)`](./menu%28_,update,at,shouldcancel%29.md) method is called for each item in the menu. You can then update the menu title, image, and so forth for each menu item.
 

@@ -24,7 +24,7 @@ var placementSparsePageSize: MTLSparsePageSize { get set }
 @property (nonatomic, readwrite) MTLSparsePageSize placementSparsePageSize;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a non-zero value to create a *placement sparse texture*.
 

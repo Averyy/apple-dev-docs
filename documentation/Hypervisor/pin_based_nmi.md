@@ -19,7 +19,7 @@ var PIN_BASED_NMI: UInt32 { get }
 PIN_BASED_NMI
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

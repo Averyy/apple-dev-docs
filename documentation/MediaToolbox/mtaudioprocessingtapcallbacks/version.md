@@ -24,7 +24,7 @@ var version: Int32
 int version;
 ```
 
-#### Discussion
+## Discussion
 
 The value is passed as a parameter to [`MTAudioProcessingTapCreate(_:_:_:_:)`](../mtaudioprocessingtapcreate%28_,_,_,_%29.md). It must be set to [`kMTAudioProcessingTapCallbacksVersion_0`](../kmtaudioprocessingtapcallbacksversion_0.md).
 

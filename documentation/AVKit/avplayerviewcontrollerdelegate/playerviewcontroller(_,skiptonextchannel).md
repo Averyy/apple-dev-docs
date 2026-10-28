@@ -23,7 +23,7 @@ optional func playerViewControllerSkipToNextChannel(_ playerViewController: AVPl
 - (void) playerViewController:(AVPlayerViewController *) playerViewController skipToNextChannel:(void (^)(BOOL success)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 To enable channel skipping, adopt this method and replace the current player item with one that reflects the next channel’s content, and call the completion handler to dismiss the channel’s interstitial view. Each call to this method should advance one channel, relative to the previous request, even if the prior request hasn’t yet completed.
 

@@ -28,7 +28,7 @@ class PHASESource
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 This class represents a sound-emitting point or area in a virtual environment, positioned and oriented by a 3D [`transform`](./phaseobject/transform.md).
 

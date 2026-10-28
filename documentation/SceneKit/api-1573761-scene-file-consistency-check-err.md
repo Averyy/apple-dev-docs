@@ -5,7 +5,7 @@
 
 Error codes that identify errors found during a scene-file-format consistency check.
 
-#### Overview
+## Overview
 
 If you specify [`true`](../Swift/true.md) for the [`checkConsistency`](./scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format. SceneKit reports any format verification issues in an [`NSError`](../Foundation/nserror.md) object whose [`code`](../Foundation/nserror/code.md) property is one of these values.
 

@@ -28,7 +28,7 @@ CMAttitudeReferenceFrameXTrueNorthZVertical
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 Use this option to determine the attitude of the device relative to true north. For example, you might use this to implement more precise navigation. The [`yaw`](../cmattitude/yaw.md) (Z-axis) value in [`CMAttitude`](../cmattitude.md) is `0` when the X axis is aligned with true north.
 

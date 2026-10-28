@@ -22,7 +22,7 @@ var scrollsToTop: Bool { get set }
 @property (nonatomic) BOOL scrollsToTop;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll-to-top gesture is a tap on the status bar. When a user makes this gesture, the system asks the scroll view closest to the status bar to scroll to the top. If that scroll view has [`scrollsToTop`](./scrollstotop.md) set to [`false`](../../Swift/false.md), its delegate returns [`false`](../../Swift/false.md) from [`scrollViewShouldScrollToTop(_:)`](../uiscrollviewdelegate/scrollviewshouldscrolltotop%28_%29.md), or the content is already at the top, nothing happens.
 
@@ -30,7 +30,7 @@ After the scroll view scrolls to the top of the content view, it sends the deleg
 
 The default value of this property is [`true`](../../Swift/true.md).
 
-##### Special considerations
+### Special considerations
 
 On iPhone, the scroll-to-top gesture has no effect if there’s more than one scroll view onscreen that has [`scrollsToTop`](./scrollstotop.md) set to [`true`](../../Swift/true.md).
 

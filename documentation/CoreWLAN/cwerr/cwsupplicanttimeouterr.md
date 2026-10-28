@@ -17,7 +17,7 @@ case cwSupplicantTimeoutErr
 kCWSupplicantTimeoutErr
 ```
 
-#### Discussion
+## Discussion
 
 WPA/WPA2 handshake timed out.
 

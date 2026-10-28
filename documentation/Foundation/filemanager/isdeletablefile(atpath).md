@@ -25,11 +25,11 @@ func isDeletableFile(atPath path: String) -> Bool
 - (BOOL) isDeletableFileAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current process has delete privileges for the file at `path`; otherwise [`false`](../../Swift/false.md) if the process does not have delete privileges or the existence of the file could not be determined.
 
-#### Discussion
+## Discussion
 
 For a directory or file to be deletable, the current process must either be able to write to the parent directory of `path` or it must have the same owner as the item at `path`. If `path` is a directory, every item contained in `path` must be deletable by the current process.
 

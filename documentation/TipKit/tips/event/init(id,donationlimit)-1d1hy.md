@@ -21,7 +21,7 @@ Creates an event with an associated donation value.
 init(id: String, donationLimit: Tips.DonationLimit)
 ```
 
-##### Creating an event
+### Creating an event
 
 Create an event when you want display a tip based on an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](./donate%28%29.md) to donate to the event when the action occurs, increasing the event count by one.
 
@@ -44,7 +44,7 @@ struct LandmarkDetailView: View {
 }
 ```
 
-##### Adding event rules
+### Adding event rules
 
 Add tip display rules using the `#Rule` macro to prevent a tip from being displayed until an event has been donated a specific number of times.
 

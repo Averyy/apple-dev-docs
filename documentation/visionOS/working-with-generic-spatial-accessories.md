@@ -10,7 +10,7 @@ Let people place digital replicas of a generic spatial accessory by tracking the
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Specialized apps become more immersive when they respond to people using purpose-built devices, like medical instruments, steering rigs, or industrial tooling. [ARKit](../ARKit/ARKit.md) recognizes these devices as *generic spatial accessories*, but they’re distinct from spatial controllers and styli, which have their own dedicated APIs.
 
@@ -20,17 +20,17 @@ In an immersive space, the sample lets people place digital replicas of the acce
 
 > **Note**: Simulator doesn’t support accessory tracking. Run the sample on a physical device.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 The sample works with any generic spatial accessory. Before building the sample, configure the Xcode project to access the `.referenceaccessory` file for the accessory you want to track. For step-by-step instructions, see [Setting up access to a reference accessory file](./setting-up-access-to-a-reference-accessory-file.md).
 
 > ❗ **Important**: If you run the sample before configuring access to a reference accessory file, the sample displays “Unable to resolve the reference accessory.”
 
-#### Add the accessory tracking capability
+## Add the accessory tracking capability
 
 To help protect people’s privacy, visionOS limits app access to spatial accessory data and other sensor data on Apple Vision Pro. Add the Accessory Tracking capability to your app’s target and provide a usage description that explains how your app uses spatial accessory data. People see that description when the system prompts for access to accessory-tracking data. For more information on app capabilities, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Obtain authorization to track accessories
+## Obtain authorization to track accessories
 
 To read an accessory’s transform, your app needs Accessory Tracking authorization. The sample monitors the authorization status so it can change the availability of features that require the transform.
 
@@ -59,7 +59,7 @@ for await event in arkitSession.events {
 
 > **Note**: Your app doesn’t need authorization to anchor content to an accessory, respond to its input, or play haptics through the accessory.
 
-#### Discover connected accessories
+## Discover connected accessories
 
 Before your app can anchor content to an accessory, track it, or respond to its input, your app needs a reference to the [`GCSpatialAccessory`](../GameController/gcspatialaccessory.md) instance for the connected accessory.
 
@@ -104,7 +104,7 @@ private func observeAccessoryDisconnectNotifications() async {
 }
 ```
 
-#### Load a 3D model of the accessory
+## Load a 3D model of the accessory
 
 When a person opens the immersive space, the app displays a semi-transparent digital replica of the accessory. The accessory manufacturer can include a `.usdz` model of the accessory in the `.referenceaccessory` file. When an accessory connects, `AccessoryModel` retrieves the model through an [`AnchoringComponent.AccessoryAnchoringSource`](../RealityKit/anchoringcomponent/accessoryanchoringsource.md) and loads it as an [`Entity`](../RealityKit/entity.md). If the `.referenceaccessory` file doesn’t include a `.usdz`, or loading fails, `AccessoryModel` falls back to a placeholder entity:
 
@@ -125,7 +125,7 @@ private func loadReferenceEntity(from anchoringSource: AnchoringComponent.Access
 }
 ```
 
-#### Anchor entities to named accessory locations
+## Anchor entities to named accessory locations
 
 The app uses an [`AnchorEntity`](../RealityKit/anchorentity.md) to keep the replica locked to the physical accessory’s origin as a person moves the accessory:
 
@@ -156,7 +156,7 @@ All generic accessories support anchoring entities to their origin, and some sup
 
 The form also presents a picker for the tracking mode. The tracking mode controls the trade-off between latency and accuracy. Use [`continuous`](../RealityKit/anchoringcomponent/trackingmode-swift.struct/continuous.md) for higher accuracy with increased latency, or [`predicted`](../RealityKit/anchoringcomponent/trackingmode-swift.struct/predicted.md) for lower latency with less accuracy.
 
-#### Read the accessory’s transform using RealityKit
+## Read the accessory’s transform using RealityKit
 
 When a person taps the “Place digital replica” button in `ContentView`, `ImmersiveView` reads the reference anchor entity’s transform, clones the reference entity at that position, and logs the underlying [`AccessoryAnchor`](../ARKit/accessoryanchor.md) to demonstrate how to access it:
 
@@ -188,7 +188,7 @@ Reading an anchor entity’s transform requires a running [`SpatialTrackingSessi
 
 Entities parented to an `AnchorEntity` always render at the accessory’s latest pose. When placing a digital replica, the sample instead clones the reference entity and applies the anchor entity’s transform to the clone. This pattern introduces a one-frame lag, because by the time RealityKit renders the clone, the accessory has moved to a new pose. This approach is simple and works well when the one-frame lag is acceptable. For content that needs continuous low-latency tracking, see the [Track an accessory using ARKit](./working-with-generic-spatial-accessories.md#Track-an-accessory-using-ARKit) section.
 
-#### Track an accessory using ARKit
+## Track an accessory using ARKit
 
 Use [`AccessoryTrackingProvider`](../ARKit/accessorytrackingprovider.md) when your app needs to choose how and when it reads the accessory’s transform, or when it needs more control over rendering than RealityKit provides. For example, when your app:
 
@@ -295,7 +295,7 @@ For more information on using `AccessoryTrackingProvider`, see [Drawing in the a
 
 For information on tracking in a volume, see [Tracking accessories in volumetric windows](../ARKit/tracking-accessories-in-volumetric-windows.md). For information on using an accessory’s transform to drive interactive content, see [Tracking a handheld accessory as a virtual sculpting tool](../ARKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md).
 
-#### Respond to accessory input
+## Respond to accessory input
 
 Some accessories have buttons. The accessory’s `input` property provides the familiar [Game Controller](../GameController/GameController.md) interface. If the connected accessory has buttons, a person can press any button to initiate the same functionality as the “Place digital replica” button in `ContentView`.
 
@@ -322,7 +322,7 @@ private func handleAccessoryDeviceChange() {
 
 For more information on callback and polling approaches to input handling, see [Handling input events](../GameController/handling-input-events.md).
 
-#### Play haptic feedback
+## Play haptic feedback
 
 Some accessories support haptic feedback. The accessory’s `haptics` property provides access to [Core Haptics](../CoreHaptics/CoreHaptics.md). If the connected accessory supports haptics, a person can tap the “Play haptics” button in `ContentView` to provide feedback on the accessory.
 

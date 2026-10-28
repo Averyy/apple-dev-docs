@@ -15,13 +15,13 @@ Granular error detail for a single field or condition within a failed Recommenda
 object RecommendationResponseErrorDetail
 ```
 
-#### Discussion
+## Discussion
 
 The `ResponseErrorDetail` provides field-level granularity for errors returned in a `ResponseError`. Each detail entry identifies one specific condition that caused the request to fail. For example, this occurs for a missing required field, an invalid value, or a constraint violation.
 
 The `code` and `message` fields identify the nature of the issue. When `details` contains multiple entries, correct all issues before retrying. The API rejects the request atomically on the first validation pass.
 
-##### Example
+### Example
 
 ```json
 {

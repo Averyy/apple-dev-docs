@@ -23,7 +23,7 @@ var allowsPictureInPicturePlayback: Bool { get set }
 @property (nonatomic) BOOL allowsPictureInPicturePlayback;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `false` to disable Picture in Picture playback. The default value is `true`.
 

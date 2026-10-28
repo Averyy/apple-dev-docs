@@ -16,7 +16,7 @@ Defines a constant Unicode character array pointer.
 typedef const UniChar *ConstUniCharArrayPtr;
 ```
 
-#### Discussion
+## Discussion
 
 You specify a constant Unicode character array pointer for Unicode strings used within the scope of a function whose contents are not modified by that function.
 

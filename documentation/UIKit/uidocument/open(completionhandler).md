@@ -26,7 +26,7 @@ func open() async -> Bool
 - (void) openWithCompletionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to begin the sequence of method calls that opens and reads a document asynchronously. The method obtains the file-system location of the document from the [`fileURL`](./fileurl.md) property. After the open operation concludes, the code in `completionHandler` is executed.
 

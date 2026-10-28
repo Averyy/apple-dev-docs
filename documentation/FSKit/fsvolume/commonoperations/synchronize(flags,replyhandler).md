@@ -24,7 +24,7 @@ func synchronize(flags: FSSyncFlags) async throws
 - (void) synchronizeWithFlags:(FSSyncFlags) flags replyHandler:(void (^)(NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, FSKit assumes that the volume has sent all pending I/O or metadata to its resource.
 

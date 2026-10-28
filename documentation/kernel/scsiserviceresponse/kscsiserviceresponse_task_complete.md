@@ -13,7 +13,7 @@
 kSCSIServiceResponse_TASK_COMPLETE = 2
 ```
 
-#### Discussion
+## Discussion
 
 The task completed.
 

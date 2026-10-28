@@ -19,11 +19,11 @@ class func isKeyExcluded(fromWebScript name: UnsafePointer<CChar>!) -> Bool
 + (BOOL) isKeyExcludedFromWebScript:(const char *) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the attribute specified by `name` should be hidden from the scripting environment; otherwise, [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 The default value is [`YES`](../yes.md).
 

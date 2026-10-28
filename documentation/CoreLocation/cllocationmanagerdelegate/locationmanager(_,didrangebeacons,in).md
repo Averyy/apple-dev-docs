@@ -28,7 +28,7 @@ optional func locationManager(_ manager: CLLocationManager, didRangeBeacons beac
 
 - [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
-#### Discussion
+## Discussion
 
 The location manager calls this method when a new set of beacons becomes available in the specified region or when a beacon goes out of range. The location manager also calls this method when the range of a beacon changes; for example, when a beacon gets closer.
 

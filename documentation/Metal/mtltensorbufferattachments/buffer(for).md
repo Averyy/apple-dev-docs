@@ -24,7 +24,7 @@ func buffer(for plane: MTLTensorPlaneType) -> (any MTLBuffer)?
 - (id<MTLBuffer>) bufferForPlane:(MTLTensorPlaneType) plane;
 ```
 
-#### Return Value
+## Return Value
 
 The buffer for the given plane, or `nil`.
 

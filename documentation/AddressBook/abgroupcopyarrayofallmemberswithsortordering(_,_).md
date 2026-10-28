@@ -23,7 +23,7 @@ func ABGroupCopyArrayOfAllMembersWithSortOrdering(_ group: ABRecord!, _ sortOrde
 extern CFArrayRefABGroupCopyArrayOfAllMembersWithSortOrdering(ABRecordRef group, ABPersonSortOrdering sortOrdering);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the records in `group` using `sortOrdering`.
 

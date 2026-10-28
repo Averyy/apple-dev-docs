@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 11.2 SDK provides support to develop apps for Macs running macOS Big Sur 11.2. The SDK comes bundled with Xcode 12.4. For information on the compatibility requirements for Xcode 12.4, see [Xcode 12.4 Release Notes](../Xcode-Release-Notes/xcode-12_4-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

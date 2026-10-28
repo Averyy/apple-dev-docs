@@ -28,7 +28,7 @@ SWAttributionViewDisplayContextSummary
 
 - [Making your app content shareable](../../making-your-app-content-shareable.md)
 
-#### Discussion
+## Discussion
 
 The is the default value for [`displayContext`](../displaycontext-swift.property.md).
 

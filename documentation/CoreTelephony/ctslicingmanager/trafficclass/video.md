@@ -17,7 +17,7 @@ A traffic class for video data transmission.
 case video
 ```
 
-#### Discussion
+## Discussion
 
 The video traffic class provides quality-of-service characteristics suitable for video content delivery, balancing bandwidth needs with acceptable latency levels.
 

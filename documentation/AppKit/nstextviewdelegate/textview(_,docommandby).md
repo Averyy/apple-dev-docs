@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, doCommandBy commandSelector: Sele
 - (BOOL) textView:(NSTextView *) textView doCommandBySelector:(SEL) commandSelector;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) indicates that the delegate handled the command and the text view will not attempt to perform it; [`false`](../../Swift/false.md) indicates that the delegate did not handle the command the text view will attempt to perform it.
 
-#### Discussion
+## Discussion
 
 This method is invoked by `NSTextView`’s `doCommand(by:)` method.
 

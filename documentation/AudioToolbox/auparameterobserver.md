@@ -24,7 +24,7 @@ typealias AUParameterObserver = (AUParameterAddress, AUValue) -> Void
 typedef void (^)(unsigned long long, float) AUParameterObserver;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

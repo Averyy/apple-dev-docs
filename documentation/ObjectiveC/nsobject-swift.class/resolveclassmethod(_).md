@@ -25,11 +25,11 @@ class func resolveClassMethod(_ sel: Selector!) -> Bool
 + (BOOL) resolveClassMethod:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the method was found and added to the receiver, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 This method allows you to dynamically provide an implementation for a given selector. See [`resolveInstanceMethod(_:)`](./resolveinstancemethod%28_%29.md) for further discussion.
 

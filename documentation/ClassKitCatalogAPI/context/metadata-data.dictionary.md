@@ -19,7 +19,7 @@ object Context.Metadata
 
 - [Preparing Context Data](../preparing-context-data.md)
 
-#### Discussion
+## Discussion
 
 You typically design a context with a specific locale in mind, and use the `locale` field to indicate that locale. However, you may want to make the context available in other locales. For example, a context that you design for the `en-us` locale may be suitable for any English-speaking locale, like `en-gb`, `en-au`, and so on. Use the `presentableLocales` field to indicate all the locales for which you consider the content to be suitable. Use a single-element array with the value `mul` to indicate suitability for any locale.
 

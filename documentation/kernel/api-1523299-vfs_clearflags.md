@@ -15,11 +15,11 @@ Clear flags on a mount.
 void vfs_clearflags(mount_t mp, uint64_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Sets mount flags to the bitwise "AND" of their current value and the complement of the specified bits.
 

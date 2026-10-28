@@ -22,7 +22,7 @@ typedef enum LSItemInfoFlags : OptionBits {
 } LSItemInfoFlags;
 ```
 
-#### Overview
+## Overview
 
 These flags are set in an item-information record to provide information about an item; see [`LSItemInfoRecord`](./lsiteminforecord.md) for a description of this structure.
 

@@ -19,7 +19,7 @@ var contents: Any? { get set }
 @property (strong, nullable) id contents;
 ```
 
-#### Discussion
+## Discussion
 
 Typically you set an [`NSImage`](../nsimage.md) instance or a [`CGImage`](../../CoreGraphics/cgimage.md) as content.
 

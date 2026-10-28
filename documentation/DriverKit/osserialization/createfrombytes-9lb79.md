@@ -16,7 +16,7 @@
 static OSSerializationPtr createFromBytes(const void *bytes, size_t length, OSSerializationFreeBufferHandler freeBuffer);
 ```
 
-#### Discussion
+## Discussion
 
 Similar to the above variant, except assuming copyInHandler to be NULL.
 

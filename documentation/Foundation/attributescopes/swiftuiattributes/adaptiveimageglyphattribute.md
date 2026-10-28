@@ -22,7 +22,7 @@ A key for an adaptive image glyph inside a run of attributed text.
 enum AdaptiveImageGlyphAttribute
 ```
 
-#### Overview
+## Overview
 
 An adaptive image glyph is an inline image that flows with text and scales with the surrounding font, such as a Genmoji or a sticker that someone inserts from the keyboard. A text view draws these glyphs in place, so a string that people edit keeps them where they put them:
 

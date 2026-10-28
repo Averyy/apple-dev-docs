@@ -26,7 +26,7 @@ class MCPeerID
 @interface MCPeerID : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create a single peer ID object that represents the instance of your app running on the local device. The Multipeer Connectivity framework is responsible for creating peer ID objects that represent other devices.
 

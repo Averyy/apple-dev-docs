@@ -22,7 +22,7 @@ A type that has no values and can’t be constructed.
 enum Never
 ```
 
-#### Overview
+## Overview
 
 Use `Never` as the return type of a function that doesn’t return normally — for example, because it runs forever or terminates the program.
 

@@ -19,7 +19,7 @@ case content
 WKUserInterfaceDirectionPolicyContent
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value of [`userInterfaceDirectionPolicy`](../wkwebviewconfiguration/userinterfacedirectionpolicy.md).
 

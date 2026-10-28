@@ -31,11 +31,11 @@ string AdGroup.SystemStatusReasons
 - `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_NOT_ALLOWED_IN_MANUAL_CAMPAIGNS`: Automated keyword ad groups are not allowed in manually managed campaigns.
 - `KEYWORDS_MISSING`: The ad group requires keywords but none have been added.
 
-#### Discussion
+## Discussion
 
 These reasons range from scheduling and audience-size conditions on the ad group itself to a parent campaign that isn’t running, as with `CAMPAIGN_NOT_RUNNING`.
 
-##### Example
+### Example
 
 ```json
 {

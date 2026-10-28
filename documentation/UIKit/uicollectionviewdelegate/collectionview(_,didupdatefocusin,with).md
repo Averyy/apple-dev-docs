@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didUpdateFocusI
 - (void) collectionView:(UICollectionView *) collectionView didUpdateFocusInContext:(UICollectionViewFocusUpdateContext *) context withAnimationCoordinator:(UIFocusAnimationCoordinator *) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when a focus-related change occurs. You can use this method to update your app’s state information or to animate changes to your app’s visual appearance.
 

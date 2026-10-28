@@ -24,7 +24,7 @@ func IOSurfaceLookupFromMachPort(_ port: mach_port_t) -> IOSurfaceRef?
 IOSurfaceRefIOSurfaceLookupFromMachPort(mach_port_t port);
 ```
 
-#### Discussion
+## Discussion
 
 This call takes a mach_port_t created via IOSurfaceCreatePort() and recreates an IOSurfaceRef from it.
 

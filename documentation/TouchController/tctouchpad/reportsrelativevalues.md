@@ -21,7 +21,7 @@ var reportsRelativeValues: Bool { get set }
 @property (nonatomic, assign) BOOL reportsRelativeValues;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, the touchpad will report relative delta changes between frames as touch moves instead of absolute positions.
 

@@ -23,7 +23,7 @@ case leading
 UIStackViewAlignmentLeading
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the [`top`](./top.md) alignment for horizontal stacks.
 

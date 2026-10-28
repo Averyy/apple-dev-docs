@@ -17,7 +17,7 @@ let kIMKCommandMenuItemName: String
 extern const NSString * kIMKCommandMenuItemName;
 ```
 
-#### Discussion
+## Discussion
 
 Used to look up the `NSMenuItem` object that is passed to menu item actions.
 

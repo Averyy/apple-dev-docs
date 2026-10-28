@@ -19,7 +19,7 @@ var currentDirectory: String? { get }
 @property (copy, readonly, nullable) NSString * currentDirectory;
 ```
 
-#### Discussion
+## Discussion
 
 The first valid directory from the following list is returned:
 

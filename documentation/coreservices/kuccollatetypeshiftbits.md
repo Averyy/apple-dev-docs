@@ -14,7 +14,7 @@
 var kUCCollateTypeShiftBits: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use this value, along with one of the constants described in [Fixed Ordering Scheme](./carbon_core/unicode_utilities/api-1390361-fixed_ordering_scheme.md), to specify a fixed ordering scheme. You can also use this value, in conjunction with the `kUCCollateTypeSourceMask` constant, to obtain a value identifying a fixed ordering scheme.
 

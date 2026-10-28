@@ -25,11 +25,11 @@ convenience init(device: (any MTLDevice)?, options: [AnyHashable : Any]? = nil)
 + (instancetype) rendererWithDevice:(id<MTLDevice>) device options:(NSDictionary *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new renderer object.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a SceneKit renderer that draws into the rendering targets your app already uses to draw other content. For the `device` parameter, pass the [`MTLDevice`](../../Metal/mtldevice.md) object your app uses for drawing. Then, to tell SceneKit to render your content, call the [`SCNRenderer`](../scnrenderer.md) method, providing a command buffer and render pass descriptor for SceneKit to use in its rendering.
 

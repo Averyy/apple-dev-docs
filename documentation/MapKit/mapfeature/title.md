@@ -21,7 +21,7 @@ The title of the map feature.
 var title: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the feature doesn’t have a title this property is `nil`.
 

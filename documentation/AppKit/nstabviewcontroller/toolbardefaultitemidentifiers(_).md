@@ -20,11 +20,11 @@ func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 - (NSArray<NSString *> *) toolbarDefaultItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains an identifier for a toolbar item that is part of the default configuration. The order of items in the array is used to set the order of items in the toolbar.
 
-#### Discussion
+## Discussion
 
 This method is called for tab view interfaces that use the [`NSTabViewController.TabStyle.toolbar`](./tabstyle-swift.enum/toolbar.md) style. Use this method to return the default set of toolbar items, including any extra toolbar items you want included. For example, include [`flexibleSpace`](../nstoolbaritem/identifier/flexiblespace.md) strings as the first and last elements of the array to center the remaining toolbar items. If you add custom identifiers, you must also override the [`toolbar(_:itemForItemIdentifier:willBeInsertedIntoToolbar:)`](./toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md) method to specify the content for those toolbar items.
 

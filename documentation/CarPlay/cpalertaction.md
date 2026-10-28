@@ -21,7 +21,7 @@ class CPAlertAction
 @interface CPAlertAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an alert action to display a button on an alert. The combination of the alert and the action styles determines the appearance of the action button. To perform an action after the user taps the button, provide a block to the action’s [`handler`](./cpalertaction/handler.md) property.
 

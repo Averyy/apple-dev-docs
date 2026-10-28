@@ -16,7 +16,7 @@ nonisolated
 func onCutCommand(perform payloadAction: (() -> [NSItemProvider])?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` when a system Cut command occurs.
 

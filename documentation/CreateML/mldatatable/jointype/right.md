@@ -20,7 +20,7 @@ An operation that is the union between an inner join and the remaining rows from
 case right
 ```
 
-#### Discussion
+## Discussion
 
 The `.right` join type merges missing values.
 

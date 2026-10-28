@@ -20,7 +20,7 @@ Creates a descriptor by inferring configuration from a shader graph.
 init(inferredFrom graph: ShaderGraph, inputValues: [String : MaterialParameters.Value] = [:], constantValues: MTLFunctionConstantValues = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 Analyzes node connections to determine the appropriate lighting model and settings — for example, enabling clearcoat if the graph connects to the clearcoat output.
 

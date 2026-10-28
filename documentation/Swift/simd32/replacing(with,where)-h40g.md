@@ -21,7 +21,7 @@ Returns a copy of this vector, with elements `other` in the lanes where `mask` i
 func replacing(with other: Self.Scalar, where mask: SIMDMask<Self.MaskStorage>) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

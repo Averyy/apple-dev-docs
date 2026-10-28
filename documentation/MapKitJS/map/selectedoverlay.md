@@ -16,7 +16,7 @@ get selectedOverlay(): Overlay | null;
 set selectedOverlay(overlay: Overlay | null);
 ```
 
-#### Discussion
+## Discussion
 
 To deselect any selected overlay, set this property to `null`.
 

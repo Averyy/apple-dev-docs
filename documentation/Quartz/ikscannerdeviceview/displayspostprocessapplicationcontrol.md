@@ -19,7 +19,7 @@ var displaysPostProcessApplicationControl: Bool { get set }
 @property BOOL displaysPostProcessApplicationControl;
 ```
 
-#### Discussion
+## Discussion
 
 The post processing application is only relevant when the transfer mode is [`IKScannerDeviceViewTransferMode.fileBased`](../ikscannerdeviceviewtransfermode/filebased.md).
 

@@ -6,7 +6,7 @@
 
 An atom that describes the sample data for data using the Real-Time Transport Protocol (RTP).
 
-#### Overview
+## Overview
 
 This section describes the sample data for the `'rtp '` format. The `'rtp '` format assumes that the server is sending data using Real-Time Transport Protocol (RTP). This format also assumes that the server “knows” about RTP headers but does not require that the server know anything about specific media headers, including media headers defined in various IETF drafts.
 

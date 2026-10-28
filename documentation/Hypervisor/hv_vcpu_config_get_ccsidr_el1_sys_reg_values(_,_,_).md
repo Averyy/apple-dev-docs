@@ -19,7 +19,7 @@ func hv_vcpu_config_get_ccsidr_el1_sys_reg_values(_ config: hv_vcpu_config_t, _ 
 extern hv_return_t hv_vcpu_config_get_ccsidr_el1_sys_reg_values(hv_vcpu_config_t config, hv_cache_type_t cache_type, uint64_t values[8]);
 ```
 
-#### Return Value
+## Return Value
 
 A [`hv_return_t`](./hv_return_t.md) value that indicates that result of the function.
 

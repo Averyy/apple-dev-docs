@@ -16,7 +16,7 @@ An asynchronous stream of session events.
 var eventStream: AsyncStream<CredentialSession.Event> { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Consume and handle events as the session produces then. Do this with a `for-await-in` loop over the stream, like the following example:
 

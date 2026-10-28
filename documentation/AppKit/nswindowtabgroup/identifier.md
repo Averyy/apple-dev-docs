@@ -19,7 +19,7 @@ var identifier: NSWindow.TabbingIdentifier { get }
 @property (copy, readonly) NSWindowTabbingIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is shared by all windows that participate in this tab group.
 

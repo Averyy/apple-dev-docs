@@ -24,7 +24,7 @@ var radius: Float { get set }
 @property (nonatomic, assign) float radius;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate system for agents and obstacles is arbitrary; you may choose how to map agent and obstacle positions and sizes into your game scene.
 

@@ -16,11 +16,11 @@ Disposes of the current transaction.
 IOReturn (*dispose)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 The transaction will have to be recreated, in order to perform any operations on the transaction.
 

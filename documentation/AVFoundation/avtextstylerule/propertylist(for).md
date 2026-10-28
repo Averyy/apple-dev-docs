@@ -24,11 +24,11 @@ class func propertyList(for textStyleRules: [AVTextStyleRule]) -> Any
 + (id) propertyListForTextStyleRules:(NSArray<AVTextStyleRule *> *) textStyleRules;
 ```
 
-#### Return Value
+## Return Value
 
 A property-list object that you can pass to the [`PropertyListSerialization`](../../Foundation/propertylistserialization.md) serialization routines.
 
-#### Discussion
+## Discussion
 
 The property-list object returned by this method can be written to disk and stored persistently.
 

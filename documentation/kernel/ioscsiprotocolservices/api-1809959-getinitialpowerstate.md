@@ -12,11 +12,11 @@ virtual UInt32 GetInitialPowerState (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The power state the device is currently in.
 
-#### Overview
+## Overview
 
 This method is called once, right after InitializePowerManagement() in order to determine what state the device is initially in at startup time (usually the highest power mode).
 

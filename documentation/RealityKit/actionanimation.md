@@ -20,7 +20,7 @@ Defines an an action animation.
 struct ActionAnimation<ActionType> where ActionType : EntityAction
 ```
 
-#### Overview
+## Overview
 
 The definition is used to generate an action animation based `AnimationResource` that can then be played by calling [`playAnimation(_:transitionDuration:blendLayerOffset:separateAnimatedValue:startsPaused:clock:handoffType:)`](./entity/playanimation%28_,transitionduration,blendlayeroffset,separateanimatedvalue,startspaused,clock,handofftype%29.md)
 

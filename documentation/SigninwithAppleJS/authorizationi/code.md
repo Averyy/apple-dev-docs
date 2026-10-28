@@ -15,7 +15,7 @@ A single-use authorization code.
 attribute string code;
 ```
 
-#### Discussion
+## Discussion
 
 The code is valid for five minutes.
 

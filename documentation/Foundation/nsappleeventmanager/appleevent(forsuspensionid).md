@@ -20,7 +20,7 @@ func appleEvent(forSuspensionID suspensionID: NSAppleEventManager.SuspensionID) 
 - (NSAppleEventDescriptor *) appleEventForSuspensionID:(NSAppleEventManagerSuspensionID) suspensionID;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of mutating or retaining the returned descriptor are undefined, although it may be copied. [`appleEvent(forSuspensionID:)`](./appleevent%28forsuspensionid%29.md) may be invoked in any thread, not just the one in which the corresponding invocation of [`suspendCurrentAppleEvent()`](./suspendcurrentappleevent%28%29.md) occurred.
 

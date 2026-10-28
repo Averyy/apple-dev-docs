@@ -17,7 +17,7 @@ Values that provide additional information about the transaction amount.
 enum TransactionAmountDescription
 ```
 
-#### Overview
+## Overview
 
 This information appears below the central transaction details in the system UI. Each case applies to specific types of transactions, such as a purchase or refund. Check the [`PaymentCardTransactionRequest.TransactionAmountDescription`](./transactionamountdescription.md) values description. If an incompatible transaction type is requested or the value(s) are out of range, it will simply not appear in the system UI.
 

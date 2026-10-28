@@ -23,7 +23,7 @@ let kCTFontFeatureSelectorDefaultKey: CFString
 extern CFStringRef const kCTFontFeatureSelectorDefaultKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to be used with a selector dictionary to get the default indicator for the selector. This value is a `CFBooleanRef` object, which if present and true, indicates that this selector is the default setting for the current feature type.
 

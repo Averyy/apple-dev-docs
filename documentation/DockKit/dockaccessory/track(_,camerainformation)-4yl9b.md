@@ -22,7 +22,7 @@ final func track(_ metadata: [AVMetadataObject], cameraInformation: DockAccessor
 
 - [Track custom objects in a frame](../track-custom-objects-in-a-frame.md)
 
-#### Discussion
+## Discussion
 
 The vectors are based on metadata coming from the camera.
 

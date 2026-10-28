@@ -25,7 +25,7 @@ func attributes(forEventParameter inParameter: CHHapticEvent.ParameterID, eventT
 - (id<CHHapticParameterAttributes>) attributesForEventParameter:(CHHapticEventParameterID) inParameter eventType:(CHHapticEventType) type error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The haptic device’s attributes for the given event parameter ID.
 

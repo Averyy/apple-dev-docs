@@ -26,7 +26,7 @@ var observedMaxBitrate: Double { get }
 @property (nonatomic, readonly) double observedMaxBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

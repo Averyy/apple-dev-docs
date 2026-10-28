@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer that represents a file format code.
 
-#### Overview
+## Overview
 
 A 32-bit unsigned integer that should be set to `'qt  '` (note the two trailing ASCII space characters) for QuickTime movie files. If a file is compatible with multiple brands, all such brands are listed in the [`Compatible brands`](./compatible_brands.md) fields, and the Major brand identifies the preferred brand or best use.
 

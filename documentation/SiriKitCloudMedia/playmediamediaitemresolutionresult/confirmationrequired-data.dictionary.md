@@ -15,7 +15,7 @@ A result that requires the user to confirm the media item before proceeding.
 object PlayMediaMediaItemResolutionResult.ConfirmationRequired
 ```
 
-#### Discussion
+## Discussion
 
 Prefer to provide a successful result, even if you aren’t sure that you’re identifying the media item accurately. The user can cancel playback and try asking again.
 

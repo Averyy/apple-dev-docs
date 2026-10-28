@@ -19,7 +19,7 @@ func ABRecordCreateCopy(_ record: ABRecordRef!) -> Unmanaged<ABRecordRef>!
 extern ABRecordRefABRecordCreateCopy(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the specifiedABRecordRef.
 

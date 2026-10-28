@@ -16,7 +16,7 @@ An error indicating the app isn’t authorized to provide parental controls and 
 case unauthorized
 ```
 
-#### Discussion
+## Discussion
 
 See [`AuthorizationCenter`](../../../FamilyControls/authorizationcenter.md) for more details.
 

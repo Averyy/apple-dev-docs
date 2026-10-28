@@ -16,7 +16,7 @@ A description of the transaction.
 let transactionDescription: String
 ```
 
-#### Discussion
+## Discussion
 
 For example, a merchant name, or details about the person being paid.
 

@@ -24,7 +24,7 @@ static var placeholder: PlaceholderTextShapeStyle { get }
 
 Available when `Self` is `PlaceholderTextShapeStyle`.
 
-#### Discussion
+## Discussion
 
 For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 

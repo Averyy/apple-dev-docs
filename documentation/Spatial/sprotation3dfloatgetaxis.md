@@ -19,11 +19,11 @@
 static SPRotationAxis3DFloat SPRotation3DFloatGetAxis(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 An angle structure.
 
-#### Discussion
+## Discussion
 
 Returns the axis of the normalized underlying quaternion.
 

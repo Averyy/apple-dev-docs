@@ -23,7 +23,7 @@ var alwaysBounceHorizontal: Bool { get set }
 @property (nonatomic) BOOL alwaysBounceHorizontal;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md) and [`bouncesHorizontally`](./bounceshorizontally.md) is [`true`](../../Swift/true.md), the scroll view allows horizontal dragging even if the content is smaller than the bounds of the scroll view. The default value is [`false`](../../Swift/false.md).
 

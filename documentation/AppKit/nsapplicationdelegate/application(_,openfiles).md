@@ -20,7 +20,7 @@ optional func application(_ sender: NSApplication, openFiles filenames: [String]
 - (void) application:(NSApplication *) sender openFiles:(NSArray<NSString *> *) filenames;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to [`application(_:openFile:)`](./application%28_,openfile%29.md) except that the receiver opens multiple files corresponding to the file names in the `filenames` array. Delegates should invoke the [`reply(toOpenOrPrint:)`](../nsapplication/reply%28toopenorprint%29.md) method upon success or failure, or when the user cancels the operation.
 

@@ -21,11 +21,11 @@ Increments the retain count of a PDF page.
 extern CGPDFPageRefCGPDFPageRetain(CGPDFPageRef page);
 ```
 
-#### Return Value
+## Return Value
 
 The same page you passed in as the `page` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `page` parameter is `NULL`.
 

@@ -19,7 +19,7 @@ Initializes the rendering frame attributes from a sample buffer read from a Cine
 - (instancetype) initWithSampleBuffer:(CMSampleBufferRef) sampleBuffer sessionAttributes:(CNRenderingSessionAttributes *) sessionAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the rendering frame attributes from a sample buffer read from a cinematic metadata track.
 

@@ -26,7 +26,7 @@ func UIGraphicsBeginImageContextWithOptions(_ size: CGSize, _ opaque: Bool, _ sc
 extern void UIGraphicsBeginImageContextWithOptions(CGSize size, BOOL opaque, CGFloat scale);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to configure the drawing environment for rendering into a bitmap. The format for the bitmap is a ARGB 32-bit integer pixel format using host-byte order. If the opaque parameter is [`true`](../Swift/true.md), the alpha channel is ignored and the bitmap is treated as fully opaque ([`CGImageAlphaInfo.noneSkipFirst`](../CoreGraphics/cgimagealphainfo/noneskipfirst.md) | [`kCGBitmapByteOrder32Host`](../CoreGraphics/kcgbitmapbyteorder32host.md)). Otherwise, each pixel uses a premultipled ARGB format ([`CGImageAlphaInfo.premultipliedFirst`](../CoreGraphics/cgimagealphainfo/premultipliedfirst.md) | [`kCGBitmapByteOrder32Host`](../CoreGraphics/kcgbitmapbyteorder32host.md)).
 

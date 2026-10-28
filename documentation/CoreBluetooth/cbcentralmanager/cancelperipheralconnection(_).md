@@ -25,7 +25,7 @@ func cancelPeripheralConnection(_ peripheral: CBPeripheral)
 - (void) cancelPeripheralConnection:(CBPeripheral *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 This method is nonblocking, and any [`CBPeripheral`](../cbperipheral.md) class commands that are still pending to `peripheral` may not complete. Because other apps may still have a connection to the peripheral, canceling a local connection doesn’t guarantee that the underlying physical link is immediately disconnected. From the app’s perspective, however, the peripheral is effectively disconnected, and the central manager object calls the [`centralManager(_:didDisconnectPeripheral:error:)`](../cbcentralmanagerdelegate/centralmanager%28_,diddisconnectperipheral,error%29.md) method of its delegate object.
 

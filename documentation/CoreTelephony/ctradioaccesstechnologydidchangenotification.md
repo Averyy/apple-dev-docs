@@ -17,7 +17,7 @@ The name of the notification indicating that the radio access technology changed
 extern NSString * const CTRadioAccessTechnologyDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../Foundation/nsnotification/object.md) is an [`NSString`](../Foundation/nsstring.md) that represents the service identifier of the service whose radio access technology has changed. Use this string as the key in [`serviceCurrentRadioAccessTechnology`](./cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 

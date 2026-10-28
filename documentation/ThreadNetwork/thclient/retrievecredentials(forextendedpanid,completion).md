@@ -28,7 +28,7 @@ func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredent
 - (void) retrieveCredentialsForExtendedPANID:(NSData *) extendedPANID completion:(void (^)(THCredentials *credentials, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > **Concurrency note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

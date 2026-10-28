@@ -17,7 +17,7 @@ An optional pose that specifies an already draped configuration of the cloth at 
 var initialMeshDraping: ClothPoseResource? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This configuration is applied when the body is created or reset, providing the cloth with an initial settled state. In contrast, the rest pose defined by [`mesh`](./mesh.md) represents the reference shape that the cloth attempts to preserve during deformation.
 

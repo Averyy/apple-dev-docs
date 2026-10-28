@@ -19,7 +19,7 @@ func touchesMoved(with event: NSEvent)
 - (void) touchesMovedWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends the to the view under the touch in the key window. To get the set of touches that moved for this view (or descendants of this view) call [`touches(matching:in:)`](../nsevent/touches%28matching,in%29.md) on `event` and pass [`moved`](../nstouch/phase-swift.struct/moved.md) for the phase.
 

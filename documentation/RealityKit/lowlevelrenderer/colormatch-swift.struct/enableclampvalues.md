@@ -18,7 +18,7 @@ A Boolean value that indicates whether output values are clamped to `[0, 1]` aft
 var enableClampValues: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this to `true` when the output texture uses a non-extended pixel format.
 

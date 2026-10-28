@@ -18,7 +18,7 @@ The preferred interface orientations for the scene.
 var interfaceOrientations: UIInterfaceOrientationMask? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you specify this value, the system automatically chooses an orientation from the intersection of these preferred orientations and the supported orientations.
 

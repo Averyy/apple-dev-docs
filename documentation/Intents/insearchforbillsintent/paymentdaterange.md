@@ -34,7 +34,7 @@ var paymentDateRange: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * paymentDateRange;
 ```
 
-#### Discussion
+## Discussion
 
 When performing the search, your results should contain only bills whose payment date falls within the specified date range. With no specified date range, you must decide how you want to filter results during your search. You should limit the number of search results in some way. For example, you might want to return only the bills paid during the past month or during the past year.
 

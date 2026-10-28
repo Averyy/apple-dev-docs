@@ -21,7 +21,7 @@ A service type for low-loss tolerant, inelastic flow, jitter tolerant, bursty bu
 case signaling
 ```
 
-#### Discussion
+## Discussion
 
 An example of traffic that uses this service type occurs when the system needs to establish and tear down a VoIP call.
 

@@ -20,7 +20,7 @@ var deviceAddress: Int { get }
 @property (readonly) NSUInteger deviceAddress;
 ```
 
-#### Return Value
+## Return Value
 
 The current bus address of the device.
 

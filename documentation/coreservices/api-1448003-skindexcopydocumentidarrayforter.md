@@ -19,11 +19,11 @@ func SKIndexCopyDocumentIDArrayForTermID(_ inIndex: SKIndex!, _ inTermID: CFInde
 CFArrayRef SKIndexCopyDocumentIDArrayForTermID(SKIndexRef inIndex, CFIndex inTermID);
 ```
 
-#### Return Value
+## Return Value
 
 An array of CFNumbers, each the ID for a document URL object that points to a document containing the search term.
 
-#### Discussion
+## Discussion
 
 `SKIndexCopyDocumentIDArrayForTermID` searches a single index for documents that contain a given term. The search uses a term ID, not a term string. To get the ID of a term, use [`SKIndexGetTermIDForTermString(_:_:)`](./api-1448558-skindexgettermidfortermstring.md).
 

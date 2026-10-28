@@ -21,7 +21,7 @@ Appends the preferred path extension for the type you specify.
 mutating func appendPathExtension(for contentType: UTType)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you want to mix partial input from a user or other source, and need to produce a complete filename suitable for that input. For example, if you download a file from the internet and know its MIME type, you can use this method to ensure the URL has the correct filename extension where you save the file.
 

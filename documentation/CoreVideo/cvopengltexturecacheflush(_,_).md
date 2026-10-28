@@ -21,7 +21,7 @@ func CVOpenGLTextureCacheFlush(_ textureCache: CVOpenGLTextureCache, _ options: 
 extern void CVOpenGLTextureCacheFlush(CVOpenGLTextureCacheRef textureCache, CVOptionFlags options);
 ```
 
-#### Discussion
+## Discussion
 
 This call must be made periodically to give the texture cache a chance to make OpenGL calls on the OpenGL context used to create it in order to perform its required housekeeping operations.
 

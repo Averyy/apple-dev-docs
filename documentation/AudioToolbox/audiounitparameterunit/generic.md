@@ -24,7 +24,7 @@ case generic
 kAudioUnitParameterUnit_Generic
 ```
 
-#### Discussion
+## Discussion
 
 Expected but not required to range between 0.0 and 1.0.
 

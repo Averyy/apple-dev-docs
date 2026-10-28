@@ -29,7 +29,7 @@ func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
 - [Implementing a Continuous Gesture Recognizer](../implementing-a-continuous-gesture-recognizer.md)
 - [Implementing a discrete gesture recognizer](../implementing-a-discrete-gesture-recognizer.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the location or force of a touch changes. Many UIKit classes override this method and use it to handle the corresponding touch events. The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself, like in the following code.
 

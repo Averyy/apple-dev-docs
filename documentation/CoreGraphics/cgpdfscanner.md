@@ -5,7 +5,7 @@
 
 A parser object for handling content and operators in a PDF content stream.
 
-#### Overview
+## Overview
 
 You can set up the PDF scanner object to invoke callbacks when it encounters specific PDF operators in the stream.
 

@@ -25,7 +25,7 @@ class func sleep(until date: Date)
 + (void) sleepUntilDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 No run loop processing occurs while the thread is blocked.
 

@@ -25,7 +25,7 @@ class FileWrapper
 @interface NSFileWrapper : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`FileWrapper`](./filewrapper.md) class provides access to the attributes and contents of file system nodes. A file system node is a file, directory, or symbolic link. Instances of this class are known as file wrappers.
 

@@ -24,7 +24,7 @@ var initialCapacity: Int { get set }
 @property (nonatomic) NSUInteger initialCapacity;
 ```
 
-#### Discussion
+## Discussion
 
 Reduce the memory reallocations the set needs to make by setting the property to a value large enough to hold the allocations you expect. You can leave the property at its default value of `0`, which tells Metal to give the residency set the standard starting capacity.
 

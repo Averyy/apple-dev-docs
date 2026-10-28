@@ -25,7 +25,7 @@ typealias CachePolicy = NSURLRequest.CachePolicy
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This type is an alias to [`NSURLRequest.CachePolicy`](../nsurlrequest/cachepolicy-swift.enum.md).
 

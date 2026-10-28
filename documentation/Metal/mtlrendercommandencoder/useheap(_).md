@@ -27,7 +27,7 @@ func useHeap(_ heap: any MTLHeap)
 - (void) useHeap:(id<MTLHeap>) heap;
 ```
 
-#### Discussion
+## Discussion
 
 You can make the resources in `heap` *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access resources within `heap` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 

@@ -17,11 +17,11 @@ Returns the indices that partition the flattened array.
 func argPartition(_ array: MLXArray, kth: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The ordering of the elements within a partition in given by the indices is undefined.
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argPartition(_:kth:axis:stream:)`](./argpartition%28_,kth,axis,stream%29.md)

@@ -25,11 +25,11 @@ init(taskListResolutionResult: INTaskListResolutionResult)
 - (instancetype) initWithTaskListResolutionResult:(INTaskListResolutionResult *) taskListResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDeleteTasksTaskListResolutionResult`](../indeletetaskstasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to delete a task from a task list.
 

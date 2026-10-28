@@ -19,11 +19,11 @@
 static bool SPSize3DIsFinite(SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the dimensions of the size are finite.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the dimensions of the size are finite.
 

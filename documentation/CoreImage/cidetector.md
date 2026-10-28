@@ -24,7 +24,7 @@ class CIDetector
 @interface CIDetector : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [Vision](../Vision/Vision.md) framework replaces these classes for identifying and analyzing image features. See [`VNRequest`](../Vision/vnrequest.md).
 

@@ -23,11 +23,11 @@ optional func textField(_ textField: UITextField, editMenuForCharactersIn range:
 - (UIMenu *) textField:(UITextField *) textField editMenuForCharactersInRange:(NSRange) range suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a menu describing the desired menu hierarchy. Return `nil` to present the default system menu.
 
-#### Discussion
+## Discussion
 
 The following example returns a menu that includes a “Show in Large Type” action.
 

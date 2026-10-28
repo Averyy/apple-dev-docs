@@ -19,7 +19,7 @@ unowned(unsafe) var dataSource: (any NSComboBoxCellDataSource)? { get set }
 @property (assign, nullable) id<NSComboBoxCellDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property should be an object that implements the appropriate methods of the NSComboBoxCellDataSource informal protocol. Note that setting this property doesn’t automatically set [`usesDataSource`](./usesdatasource.md) to [`false`](../../Swift/false.md) and in fact logs a warning if [`usesDataSource`](./usesdatasource.md) is [`false`](../../Swift/false.md). If you set this property to an object that doesn’t respond to either numberOfItemsInComboBoxCell: or comboBoxCell:objectValueForItemAtIndex:, a warning is logged if [`usesDataSource`](./usesdatasource.md) is [`false`](../../Swift/false.md). See the class description and the NSComboBoxCellDataSource informal protocol specification for more information on combo box cell data source objects.
 

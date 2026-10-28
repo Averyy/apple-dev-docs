@@ -16,7 +16,7 @@ Set current tag and sync bits
 void (*SetCurrentTagAndSync)(IOFireWireLibNuDCLPoolRef self, UInt8 tag, UInt8 sync);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the DCL pool's current tag and sync bits. All send DCLs allocated after calling this function will transmit the specified tag and sync values. These fields can also be set on each DCL using SetDCLTagBits() and SetDCLSyncBits().
 

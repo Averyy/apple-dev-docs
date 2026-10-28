@@ -24,11 +24,11 @@ class func discBlur() -> any CIFilter & CIDiscBlur
 + (CIFilter<CIDiscBlur> *) discBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the disc blur filter to an image. The effect targets the pixels within a circle defined by a `radius` and calculates the median color value to create to the output image.
 

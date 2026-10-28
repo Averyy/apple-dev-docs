@@ -22,7 +22,7 @@ class SystemProtectionManager
 @interface UISceneSystemProtectionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to determine if the system protects a scene, such as by locking the app and requiring authentication with Face ID or Touch ID. You may want to disable your own app’s privacy shielding if the system already requires authentication.
 

@@ -23,7 +23,7 @@ var deferredPaymentRequest: PKDeferredPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKDeferredPaymentRequest * deferredPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates the request doesn’t require an update.
 

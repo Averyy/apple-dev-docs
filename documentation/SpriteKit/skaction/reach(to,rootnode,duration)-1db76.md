@@ -25,11 +25,11 @@ class func reach(to node: SKNode, rootNode root: SKNode, duration sec: TimeInter
 + (SKAction *) reachToNode:(SKNode *) node rootNode:(SKNode *) root duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action is typically used to implement character animation across a series of moving parts. When the action executes, it performs an inverse kinematic calculation to determine new rotation values for the target node and any of its ancestors up to and including the root node. Each node is rotated around its anchor point in an attempt to get the targeted node’s position closer to the intended destination. Each node’s rotation value is constrained by that node’s [`reachConstraints`](../sknode/reachconstraints.md) property. If the action cannot successfully reach the target position, it gets the node as close as it can to the target position.
 

@@ -21,7 +21,7 @@ A named structure type, pairing a type name with its in-memory layout.
 struct StructureDefinition
 ```
 
-#### Overview
+## Overview
 
 A structure definition describes a composite value that can flow through a compute graph. It associates a Swift- or Metal-visible type name with a [`ComputeNodeGraph.StructureLayout`](./structurelayout.md) that lays out the structure’s members, their offsets, and its overall size and stride.
 

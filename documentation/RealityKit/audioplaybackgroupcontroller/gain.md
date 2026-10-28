@@ -21,7 +21,7 @@ The individual gain in decibels for all audio resources in the group.
 @preconcurrency var gain: Audio.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 

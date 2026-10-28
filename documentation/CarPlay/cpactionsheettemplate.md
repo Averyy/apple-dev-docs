@@ -22,7 +22,7 @@ class CPActionSheetTemplate
 @interface CPActionSheetTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 You must present action sheets modally by calling the [`presentTemplate(_:animated:completion:)`](./cpinterfacecontroller/presenttemplate%28_,animated,completion%29.md) method available on your app’s instance of [`CPInterfaceController`](./cpinterfacecontroller.md). The user dismisses the action sheet by pressing a button, or you can dismiss it by calling the interface controller’s [`dismissTemplate(animated:completion:)`](./cpinterfacecontroller/dismisstemplate%28animated,completion%29.md) method.
 

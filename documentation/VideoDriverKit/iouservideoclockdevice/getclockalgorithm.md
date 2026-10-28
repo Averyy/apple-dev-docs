@@ -15,7 +15,7 @@ Gets the clock algorithm of the clock device.
 IOUserVideoClockAlgorithm GetClockAlgorithm();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

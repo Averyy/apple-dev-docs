@@ -19,7 +19,7 @@
 typedef int (^)(_Bool *, const struct AudioTimeStamp *, unsigned int, struct AudioBufferList *) __attribute__((nonblocking)) AVAudioSourceNodeRenderBlockRealtimeSafe;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to AVAudioSourceNodeRenderBlock, with the addition of a realtime-safety guarantee.
 

@@ -17,7 +17,7 @@ A string representation of the traffic class.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a string representation of the traffic class, suitable for debugging and logging purposes.
 

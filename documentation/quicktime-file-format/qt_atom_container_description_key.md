@@ -5,7 +5,7 @@
 
 Build QT atom container-based data structures.
 
-#### Overview
+## Overview
 
 Because QT atom container–based data structures are widely used in QuickTime, a description key is presented here. Its usage is illustrated in the following sections, [Sprite media handler track properties QT atom container format](./sprite_media_handler_track_properties_qt_atom_container_format.md) and [Sprite media handler sample QT atom container formats](./sprite_media_handler_sample_qt_atom_container_formats.md).
 

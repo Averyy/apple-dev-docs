@@ -21,15 +21,15 @@ Indicates whether an object should be retained.
 extern BOOL NSShouldRetainWithZone(id anObject, NSZone *requestedZone);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if `requestedZone` is `NULL`, the default zone, or the zone in which `anObject` was allocated; otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This function is typically called from inside an `NSObject`’s [`copyWithZone:`](../ObjectiveC/nsobject-swift.class/copywithzone_.md), when deciding whether to retain `anObject` as opposed to making a copy of it.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated and unavailable for use with ARC.
 

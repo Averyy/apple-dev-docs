@@ -22,7 +22,7 @@ Decode a decodable object from Data
 func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
 ```
 
-#### Return Value
+## Return Value
 
 An instance of type T or throws an error if unable to decode.
 

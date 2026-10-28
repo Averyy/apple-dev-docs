@@ -14,7 +14,7 @@ Returns a high-precision partial derivative of the specified value with respect 
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Screen-Space Y Partial Derivative (half)**:
 

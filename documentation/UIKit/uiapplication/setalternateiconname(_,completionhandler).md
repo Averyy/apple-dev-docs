@@ -27,7 +27,7 @@ func setAlternateIconName(_ alternateIconName: String?) async throws
 - (void) setAlternateIconName:(NSString *) alternateIconName completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change your app’s icon to its primary icon or to one of its alternate icons. You can change the icon only if the value of the [`supportsAlternateIcons`](./supportsalternateicons.md) property is [`true`](../../Swift/true.md).
 

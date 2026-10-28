@@ -5,11 +5,11 @@
 
 Create, run, and sort sample queries.
 
-#### Overview
+## Overview
 
 Use sample queries to read samples from the HealthKit store. Each query returns a single type of sample, such as step count or heart rate. You can filter results further with a predicate, or sort the results using sort descriptors.
 
-##### Create and Run the Query
+### Create and Run the Query
 
 You create a sample query by calling the [`init(sampleType:predicate:limit:sortDescriptors:resultsHandler:)`](./hksamplequery/init%28sampletype,predicate,limit,sortdescriptors,resultshandler%29.md) initializer. Start by creating the sample type.
 
@@ -51,7 +51,7 @@ store.execute(query)
 
 This method runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (but not necessarily the same thread).
 
-##### Filter and Sort Results
+### Filter and Sort Results
 
 By default, a query returns all samples of the specified type. Often you want the HealthKit store to filter the results, and only return a specific subset of samples. You may also want the store to sort the results before returning them.
 

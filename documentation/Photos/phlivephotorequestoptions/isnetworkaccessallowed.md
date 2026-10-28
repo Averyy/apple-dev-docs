@@ -24,7 +24,7 @@ var isNetworkAccessAllowed: Bool { get set }
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, and the requested Live Photo data is not stored on the local device, Photos downloads that data from iCloud. To be notified of the download’s progress, use the [`progressHandler`](./progresshandler.md) property to provide a block that Photos calls periodically while downloading. If `false` (the default), and the Live Photo data is not on the local device, the [`PHImageResultIsInCloudKey`](../phimageresultisincloudkey.md) value in the result handler’s `info` dictionary indicates that the data is not available unless you enable network access.
 

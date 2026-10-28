@@ -23,7 +23,7 @@ var representedElementKind: String? { get }
 @property (nonatomic, readonly, nullable) NSString * representedElementKind;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value in this property to identify the specific purpose of the supplementary or decoration view associated with the attributes. This property is `nil` if the [`representedElementCategory`](./representedelementcategory.md) property contains the value [`UICollectionView.ElementCategory.cell`](../uicollectionview/elementcategory/cell.md).
 

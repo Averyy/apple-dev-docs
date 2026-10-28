@@ -22,7 +22,7 @@ var allowsUserCustomization: Bool { get set }
 @property BOOL allowsUserCustomization;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the toolbar enables the Customize Toolbar… menu item. If the value is [`false`](../../Swift/false.md), the toolbar disables this menu item. The Customize Toolbar… menu item lets people change the items on the toolbar, rearrange their positions, and change the toolbar’s display mode. This attribute does not affect someone’s ability to show or hide the toolbar. The default value of this property is [`false`](../../Swift/false.md).
 

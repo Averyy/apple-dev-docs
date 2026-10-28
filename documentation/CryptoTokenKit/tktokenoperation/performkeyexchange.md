@@ -23,7 +23,7 @@ case performKeyExchange
 TKTokenOperationPerformKeyExchange
 ```
 
-#### Discussion
+## Discussion
 
 Perform a Diffie-Hellman style cryptographic key exchange using a private key
 

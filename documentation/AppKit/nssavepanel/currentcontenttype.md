@@ -19,7 +19,7 @@ var currentContentType: UTType? { get set }
 @property (copy, nullable) UTType * currentContentType;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Asserts that `currentContentType` conforms to `UTTypeData` or `UTTypeDirectory`.
 

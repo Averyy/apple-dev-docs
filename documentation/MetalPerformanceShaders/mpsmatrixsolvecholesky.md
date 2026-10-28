@@ -24,7 +24,7 @@ class MPSMatrixSolveCholesky
 @interface MPSMatrixSolveCholesky : MPSMatrixBinaryKernel
 ```
 
-#### Overview
+## Overview
 
 This kernel finds the solution matrix to the system *AX=B*, where:
 

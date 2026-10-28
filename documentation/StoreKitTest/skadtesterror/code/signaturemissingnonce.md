@@ -21,7 +21,7 @@ case signatureMissingNonce
 SKAdTestErrorCodeSignatureMissingNonce
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include a nonce when you create and validate an ad impression in the testing environment.
 

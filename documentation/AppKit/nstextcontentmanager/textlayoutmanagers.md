@@ -19,7 +19,7 @@ var textLayoutManagers: [NSTextLayoutManager] { get }
 @property (copy, readonly) NSArray<NSTextLayoutManager *> * textLayoutManagers;
 ```
 
-#### Discussion
+## Discussion
 
 This property is KVO-compliant.
 

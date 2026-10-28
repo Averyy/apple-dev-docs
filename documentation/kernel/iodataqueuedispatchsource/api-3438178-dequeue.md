@@ -16,7 +16,7 @@ Removes the next entry from the queue.
 kern_return_t Dequeue(IODataQueueClientDequeueEntryBlock callback);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, [`kIOReturnUnderrun`](../../DriverKit/kioreturnunderrun.md) if the queue is empty, or [`kIOReturnError`](../../DriverKit/kioreturnerror.md) if the queue is corrupt. See [Error Codes](../../DriverKit/error-codes.md). 
 

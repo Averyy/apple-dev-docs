@@ -20,7 +20,7 @@ Creates a subset of the table by excluding the rows that contain any of the give
 func exclude<T>(_ values: T..., of columnNamed: String) -> MLDataTable where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

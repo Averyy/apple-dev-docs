@@ -16,7 +16,7 @@ Sets the callback that should be called after a bus reset has occurred and recon
 const IOFireWireBusResetDoneHandler (*SetBusResetDoneHandler)(IOFireWireLibDeviceRef self, IOFireWireBusResetDoneHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns on IOFireWireBusResetDoneHandler function pointer to the previously installed bus reset handler. Returns 0 if none was set.
 

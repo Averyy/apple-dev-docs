@@ -24,7 +24,7 @@ var associatedServiceType: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * associatedServiceType;
 ```
 
-#### Discussion
+## Discussion
 
 Because different things can be plugged into outlets or controlled by switches, there is a tight association between a switch or outlet service and another service that it controls—for example, a lamp plugged into an outlet associates a lightbulb service with the outlet, even if the lamp itself is not a supported HomeKit accessory.
 

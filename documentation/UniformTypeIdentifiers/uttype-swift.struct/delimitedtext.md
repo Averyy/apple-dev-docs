@@ -21,7 +21,7 @@ A base type that represents text containing delimited values.
 static var delimitedText: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.delimited-values-text`.
 

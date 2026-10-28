@@ -21,11 +21,11 @@ Resolves a transient entity from a system intent value type through the entity t
 func resolved<T>(from value: T) async throws -> AnyTransientAppEntity where T : _SystemIntentValue, T : IntentValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 The resolved transient entity.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the entity type does not support the given value type.
 

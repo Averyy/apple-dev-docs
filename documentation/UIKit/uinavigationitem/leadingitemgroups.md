@@ -22,7 +22,7 @@ var leadingItemGroups: [UIBarButtonItemGroup] { get set }
 @property (nonatomic, copy, readwrite) NSArray<UIBarButtonItemGroup *> * leadingItemGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Setting items through this property replaces the items you set through [`leftBarButtonItem`](./leftbarbuttonitem.md) or [`leftBarButtonItems`](./leftbarbuttonitems.md).
 

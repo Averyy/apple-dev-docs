@@ -25,7 +25,7 @@ var localizedShortTitle: String { get set }
 @property (nonatomic, copy) NSString * localizedShortTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide information about a feedback command that is suitable for display when screen space is more constrained. For example, Apple Watch uses this string instead of the string in the [`localizedTitle`](./localizedtitle.md) property.
 

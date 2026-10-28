@@ -15,7 +15,7 @@ Removes multiple annotations from the map.
 removeAnnotations(annotations: Annotation[]): Annotation[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of annotations.
 

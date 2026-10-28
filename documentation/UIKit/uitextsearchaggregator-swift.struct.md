@@ -18,7 +18,7 @@ The methods you use on a find session’s aggregator to collect matching text ra
 struct UITextSearchAggregator<DocumentIdentifier> where DocumentIdentifier : Hashable
 ```
 
-#### Overview
+## Overview
 
 To track text ranges that match the search, call these methods on the aggregator for the searchable object implementing the [`UITextSearching`](./uitextsearching-53wjq.md) protocol for a [`UITextSearchingFindSession`](./uitextsearchingfindsession.md).
 

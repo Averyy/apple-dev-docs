@@ -24,7 +24,7 @@ func `for`(lowerBound: MPSGraphTensor, upperBound: MPSGraphTensor, step: MPSGrap
 - (NSArray<MPSGraphTensor *> *) forLoopWithLowerBound:(MPSGraphTensor *) lowerBound upperBound:(MPSGraphTensor *) upperBound step:(MPSGraphTensor *) step initialBodyArguments:(NSArray<MPSGraphTensor *> *) initialBodyArguments body:(MPSGraphForLoopBodyBlock) body name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array with same count and corresponding element types as `initialIterationArguments` and return types of the for loop.
 

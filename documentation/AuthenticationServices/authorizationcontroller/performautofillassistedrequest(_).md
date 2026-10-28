@@ -18,11 +18,11 @@ Performs an AutoFill-assisted authorization request.
 func performAutoFillAssistedRequest(_ request: ASAuthorizationRequest) async throws -> ASAuthorizationResult
 ```
 
-#### Return Value
+## Return Value
 
 The request’s outcome. For more information, see [`ASAuthorizationResult`](../asauthorizationresult.md).
 
-#### Discussion
+## Discussion
 
 To perform AutoFill-assisted authorization requests, add the appropriate [`textContentType(_:)`](../../SwiftUI/view/textcontenttype%28_%29-ufdv.md) to any sign-in related fields, such as those for usernames and passwords:
 

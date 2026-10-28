@@ -30,7 +30,7 @@ var earliestBookingDateForResults: Date? { get set }
 @property (atomic, copy, nullable) NSDate * earliestBookingDateForResults;
 ```
 
-#### Discussion
+## Discussion
 
 After retrieving the user’s reservations, remove any reservations occurring before the date specified by this property. If the value of this property is `nil`, do not remove reservations based on their date.
 

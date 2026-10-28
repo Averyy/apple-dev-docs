@@ -23,11 +23,11 @@ class func success(with resolvedMessageAttributeOptions: INMessageAttributeOptio
 + (instancetype) successWithResolvedMessageAttributeOptions:(INMessageAttributeOptions) resolvedMessageAttributeOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMessageAttributeOptionsResolutionResult`](../inmessageattributeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to resolve the parameter successfully to a recognizable value in your app.
 

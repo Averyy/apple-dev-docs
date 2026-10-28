@@ -32,7 +32,7 @@ var phoneticGivenName: String { get set }
 @property (atomic, copy) NSString * phoneticGivenName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string that specifies the pronunciation of the contact’s given (or first) name.
 

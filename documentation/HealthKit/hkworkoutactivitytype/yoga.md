@@ -24,7 +24,7 @@ case yoga
 HKWorkoutActivityTypeYoga
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 

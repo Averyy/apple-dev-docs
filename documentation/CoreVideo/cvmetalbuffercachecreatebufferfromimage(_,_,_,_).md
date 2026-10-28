@@ -22,11 +22,11 @@ func CVMetalBufferCacheCreateBufferFromImage(_ allocator: CFAllocator?, _ buffer
 extern CVReturn CVMetalBufferCacheCreateBufferFromImage(CFAllocatorRef allocator, CVMetalBufferCacheRef bufferCache, CVImageBufferRef imageBuffer, CVMetalBufferRef*bufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kCVReturnSuccess on success
 
-#### Discussion
+## Discussion
 
 Creates a CVMetalBuffer object from an existing CVImageBuffer
 

@@ -21,7 +21,7 @@ func row(for viewController: NSViewController) -> Int
 - (NSUInteger) rowForViewController:(NSViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 The row represented by the content view controller.
 

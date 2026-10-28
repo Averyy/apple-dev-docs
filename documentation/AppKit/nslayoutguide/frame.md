@@ -19,7 +19,7 @@ var frame: NSRect { get }
 @property (readonly) NSRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](../../CoreFoundation/cgrect.md) value by the time its owning view’s [`layout()`](../nsview/layout%28%29.md) method is called.
 

@@ -25,7 +25,7 @@ func CFLocaleGetLanguageLineDirection(_ isoLangCode: CFString!) -> CFLocaleLangu
 extern CFLocaleLanguageDirection CFLocaleGetLanguageLineDirection(CFStringRef isoLangCode);
 ```
 
-#### Return Value
+## Return Value
 
 The line direction for the language. See [`CFLocaleLanguageDirection`](./cflocalelanguagedirection.md) for possible values. If the appropriate direction can’t be determined, [`CFLocaleLanguageDirection.unknown`](./cflocalelanguagedirection/unknown.md) is returned.
 

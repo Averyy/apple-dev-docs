@@ -17,11 +17,11 @@ Validates the text object for the cell being edited by querying the delegate.que
 - (BOOL) textShouldEndEditing:(NSText *) textObject;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the delegate’s implementation of [`control(_:textShouldEndEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldendediting%29.md). If the delegate does not implement the method, returns [`true`](../../Swift/true.md) if the cell’s new value is valid, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 See the [`NSText`](../nstext.md) class specification for more information on this text delegate method.
 

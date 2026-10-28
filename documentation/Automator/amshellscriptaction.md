@@ -20,7 +20,7 @@ class AMShellScriptAction
 @interface AMShellScriptAction : AMBundleAction
 ```
 
-#### Overview
+## Overview
 
 When you create a Shell Script Automator Action project in Xcode, the project template supplies an [`AMShellScriptAction`](./amshellscriptaction.md) instance as the Principal Class of the action bundle. This ready-made instance provides a default implementation of the [`AMAction`](./amaction.md) [`run(withInput:)`](./amaction/run%28withinput%29.md) method that uses the logic defined in the script. You can substitute your own subclass of [`AMShellScriptAction`](./amshellscriptaction.md) for Principal Class if you need to.
 

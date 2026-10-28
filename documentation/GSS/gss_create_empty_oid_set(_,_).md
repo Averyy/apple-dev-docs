@@ -23,11 +23,11 @@ func gss_create_empty_oid_set(_ minor_status: UnsafeMutablePointer<OM_uint32>, _
 OM_uint32 gss_create_empty_oid_set(OM_uint32 *minor_status, gss_OID_set*oid_set);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
-#### Discussion
+## Discussion
 
 Use [`gss_add_oid_set_member(_:_:_:)`](./gss_add_oid_set_member%28_,_,_%29.md) to add items to your newly created set. Use [`gss_release_oid_set(_:_:)`](./gss_release_oid_set%28_,_%29.md) to free the memory associated with the set when you’re done with it.
 

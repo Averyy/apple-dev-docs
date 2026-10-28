@@ -25,11 +25,11 @@ func la_status(_ object: la_object_t) -> la_status_t
 extern la_status_t la_status(la_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The status of the supplied object.
 
-#### Discussion
+## Discussion
 
 Query the status of an la_object.
 

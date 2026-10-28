@@ -20,7 +20,7 @@ Creates a data type instance from a raw integer value.
 init?(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`MTLDataType`](../mtldatatype.md) structure’s type properties, such as [`MTLDataType.int`](./int.md), instead of this initializer.
 

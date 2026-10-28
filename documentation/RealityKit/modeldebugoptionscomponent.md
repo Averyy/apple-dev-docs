@@ -20,7 +20,7 @@ A component that changes how RealityKit renders its entity to help with debuggin
 struct ModelDebugOptionsComponent
 ```
 
-#### Overview
+## Overview
 
 Attaching a `ModelDebugOptionsComponent` to a [`ModelEntity`](./modelentity.md) tells RealityKit to change the way it renders that entity based on a specified [`visualizationMode`](./modeldebugoptionscomponent/visualizationmode-swift.property.md). This component isolates individual parts of the rendering process, such as the entity’s transparency or roughness, and displays surface color to help identify visual anomalies.
 
@@ -35,7 +35,7 @@ if let robot = anchor.findEntity(named: "Robot") as? ModelEntity {
 
 For more information on the visualization modes supported by `ModelDebugOptionsComponent`, see [`ModelDebugOptionsComponent.VisualizationMode`](./modeldebugoptionscomponent/visualizationmode-swift.enum.md).
 
-##### Attach a debug component to an entity
+### Attach a debug component to an entity
 
 To attach a debug component to a particular entity, traverse the entity tree while passing the component to each child:
 
@@ -56,7 +56,7 @@ func debugLightingDiffuseButtonCallback() {
 }
 ```
 
-##### Attach a debug component to a trait
+### Attach a debug component to a trait
 
 To attach a debug component based on a trait, traverse the entity tree while checking for [`HasModel`](./hasmodel.md) adoption:
 

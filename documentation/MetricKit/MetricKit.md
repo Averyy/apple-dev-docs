@@ -13,7 +13,7 @@ Measure your app’s performance using daily metric and diagnostic reports from 
 - macOS 12.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 MetricKit provides on-device app diagnostics and power and performance metrics the system captures. The system delivers metric reports about the previous 24 hours to your app at most once per day. Diagnostic reports arrive immediately in iOS 15 and later, and macOS 12 and later. For apps running in visionOS, the framework supports diagnostics for crashes, hangs, high energy use, and disk writes, but doesn’t report performance metrics. This applies to apps built for visionOS and compatible iPhone and iPad apps running in visionOS.
 

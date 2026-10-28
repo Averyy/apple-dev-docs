@@ -17,7 +17,7 @@ Produces content for a conditional statement in a multi-statement closure when t
 static func buildEither<F>(second: F) -> _ConditionalContent<_LimitedAvailabilityCompositorContent, F> where F : CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 Conditional statements in a [`CompositorContentBuilder`](../compositorcontentbuilder.md) must contain both an `if` statement and an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 

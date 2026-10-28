@@ -28,7 +28,7 @@ var regionOfInterest: CGRect { get set }
 
 - [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
-#### Discussion
+## Discussion
 
 The rectangle is normalized to the dimensions of the processed image.  Its origin is specified relative to the image’s lower-left corner.
 

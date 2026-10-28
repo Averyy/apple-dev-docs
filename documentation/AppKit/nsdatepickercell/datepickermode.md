@@ -19,7 +19,7 @@ var datePickerMode: NSDatePicker.Mode { get set }
 @property NSDatePickerMode datePickerMode;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSDatePicker.Mode`](../nsdatepicker/mode.md).
 

@@ -28,7 +28,7 @@ extern NSNotificationName const AVAudioSessionDidBecomeInactiveNotification;
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 The userInfo dictionary contains an [`AVAudioSession.DeactivationContext`](./deactivationcontext.md) object accessible via [`deactivationContextKey`](./deactivationcontextkey.md).
 

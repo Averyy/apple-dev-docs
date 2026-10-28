@@ -24,7 +24,7 @@ var insertedIndexes: IndexSet? { get }
 @property (atomic, strong, readonly, nullable) NSIndexSet * insertedIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this index set can to insert elements in a collection view or similar user interface that displays the contents of the fetch result. These indexes are relative to the original fetch result (the [`fetchResultBeforeChanges`](./fetchresultbeforechanges.md) property) after you’ve applied the changes described by the [`removedIndexes`](./removedindexes.md) property; when updating your app’s interface, apply insertions after removals and before changes and moves.
 

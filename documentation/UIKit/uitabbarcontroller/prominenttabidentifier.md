@@ -22,7 +22,7 @@ var prominentTabIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * prominentTabIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Default is nil.
 

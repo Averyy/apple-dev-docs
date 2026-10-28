@@ -24,11 +24,11 @@ init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, option
 - (instancetype) initWithQuantityType:(HKQuantityType *) quantityType quantitySamplePredicate:(NSPredicate *) quantitySamplePredicate options:(HKStatisticsOptions) options anchorDate:(NSDate *) anchorDate intervalComponents:(NSDateComponents *) intervalComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized statistics collection query object.
 
-#### Discussion
+## Discussion
 
 After you instantiate the query, set up one or both of the callback handlers, and then call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run it. Queries run on an anonymous background queue. As soon as the query is complete, the initial results handler is executed on the same background queue (but not necessarily on the same thread). You typically dispatch these results to the main queue to update the user interface.
 

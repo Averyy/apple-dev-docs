@@ -21,11 +21,11 @@ func makeAttributedString(font: UIFont, foregroundColor: UIColor?, textAlignment
 - (NSAttributedString *) attributedStringWithFont:(UIFont *) font foregroundColor:(UIColor *) foregroundColor textAlignment:(NSTextAlignment) alignment;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSAttributedString`](../../Foundation/nsattributedstring.md) object with the applied attributes.
 
-#### Discussion
+## Discussion
 
 Supply a font to this method to get the [`NSAttributedString`](../../Foundation/nsattributedstring.md) representation of the text contained within an element. Use the `foregroundColor` and `alignment` parameters to override the value specified in the text element.
 

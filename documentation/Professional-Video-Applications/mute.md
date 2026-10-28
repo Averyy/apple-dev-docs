@@ -5,7 +5,7 @@
 
 Suppresses audio output for the audio component over a range of time.
 
-#### Overview
+## Overview
 
 Use the `mute` element, `filter-audio` element, or other Audio Adjustment Elements as children of the `audio-channel-source` or `audio-role-source` elements to specify mute ranges or audio effects.
 

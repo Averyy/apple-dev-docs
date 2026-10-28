@@ -13,7 +13,7 @@
 ComponentResult CallComponentGetPublicResource(ComponentInstance ci, OSType resourceType, SInt16 resourceID, Handle *resource);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

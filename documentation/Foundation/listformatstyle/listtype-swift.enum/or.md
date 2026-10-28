@@ -21,7 +21,7 @@ Specifies an *or* list type.
 case or
 ```
 
-#### Discussion
+## Discussion
 
 This width creates a list like `One, Two, or Three` in U.S. English.
 

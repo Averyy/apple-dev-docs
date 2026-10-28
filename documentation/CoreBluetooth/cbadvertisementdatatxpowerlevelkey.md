@@ -25,7 +25,7 @@ let CBAdvertisementDataTxPowerLevelKey: String
 extern NSString * const CBAdvertisementDataTxPowerLevelKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an instance of [`NSNumber`](../Foundation/nsnumber.md).
 

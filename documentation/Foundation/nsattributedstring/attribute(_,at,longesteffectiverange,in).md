@@ -25,11 +25,11 @@ func attribute(_ attrName: NSAttributedString.Key, at location: Int, longestEffe
 - (id) attribute:(NSAttributedStringKey) attrName atIndex:(NSUInteger) location longestEffectiveRange:(NSRangePointer) range inRange:(NSRange) rangeLimit;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the attribute named `attributeName` of the character at `index`, or `nil` if there is no such attribute.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` or any part of `rangeLimit` lies beyond the end of the receiver’s characters.
 

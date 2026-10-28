@@ -21,7 +21,7 @@ Creates a string from a file path, validating its contents as UTF-8 on Unix and 
 init?(validating path: FilePath)
 ```
 
-#### Discussion
+## Discussion
 
 If the contents of the file path isn’t a well-formed Unicode string, this initializer returns `nil`.
 

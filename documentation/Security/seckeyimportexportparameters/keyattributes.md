@@ -19,7 +19,7 @@ var keyAttributes: CSSM_KEYATTR_FLAGS
 CSSM_KEYATTR_FLAGS keyAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `CSSM_KEYATTR_SENSITIVE` `|` `CSSM_KEYATTR_EXTRACTABLE`; the `CSSM_KEYATTR_PERMANENT` bit is also added to the default if a non-NULL value is specified for the `importKeychain` parameter.
 

@@ -26,7 +26,7 @@ Defines the code for an individual step on a tutorial page.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 Use a `Code` directive to display a code listing when the reader reaches a step on a tutorial page.
 
@@ -77,17 +77,17 @@ Add an [`Image`](./image.md) directive to show a preview of what the reader sees
 }
 ```
 
-##### Showing Differences Between Steps
+### Showing Differences Between Steps
 
 DocC automatically compares the code for each step against the code of the previous step, and highlights the differences on the tutorial page so the reader knows what to change in their own code. This automatic comparison doesn’t happen on the first step of a section. You can force a comparison or override it for any step’s code by using the `previousFile` parameter to denote a specific file for DocC to use for comparison. If you don’t want to show any differences, provide the optional `reset` parameter and set it to `true`.
 
-##### Contained Elements
+### Contained Elements
 
 A code directive can contain the following items:
 
 - **[`Image`](./image.md)**: An image showing a preview of what the reader sees after performing the step. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a code element:
 

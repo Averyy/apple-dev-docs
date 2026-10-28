@@ -25,11 +25,11 @@ func placeholder(in context: Self.Context) -> Self.Entry
 
 - [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 
-#### Return Value
+## Return Value
 
 A timeline entry that represents a placeholder version of the widget.
 
-#### Discussion
+## Discussion
 
 When WidgetKit displays your widget for the first time, it renders the widget’s view as a placeholder. A placeholder view displays a generic representation of your widget, giving the user a general idea of what the widget shows. WidgetKit calls `placeholder(in:)` to request an entry representing the widget’s placeholder configuration. For example, the game status widget would implement this method as follows:
 

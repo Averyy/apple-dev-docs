@@ -23,7 +23,7 @@ optional func loadSampleBufferContainingSamples(to endSampleCursor: (any MESampl
 - (void) loadSampleBufferContainingSamplesToEndCursor:(id<MESampleCursor>) endSampleCursor completionHandler:(void (^)(CMSampleBufferRef newSampleBuffer, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Plugin format readers that don’t implement [`sampleLocation()`](./samplelocation%28%29.md) or that always load sample data to answer cursor queries need to implement this method. If a plug-in format reader implements [`sampleLocation()`](./samplelocation%28%29.md), implementing [`loadSampleBufferContainingSamples(to:completionHandler:)`](./loadsamplebuffercontainingsamples%28to,completionhandler%29.md) is optional.
 

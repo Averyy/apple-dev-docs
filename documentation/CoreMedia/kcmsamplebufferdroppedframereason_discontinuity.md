@@ -25,7 +25,7 @@ let kCMSampleBufferDroppedFrameReason_Discontinuity: CFString
 extern CFStringRef const kCMSampleBufferDroppedFrameReason_Discontinuity;
 ```
 
-#### Discussion
+## Discussion
 
 The module providing sample buffers        has experienced a discontinuity, and an unknown number of frames have been lost.  This condition is         typically caused by the system being too busy.
 

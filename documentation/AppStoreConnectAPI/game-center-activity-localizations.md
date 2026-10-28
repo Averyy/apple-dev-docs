@@ -5,7 +5,7 @@
 
 Manage localizations for your Game Center activities.
 
-#### Overview
+## Overview
 
 To manage Game Center activity localizations, be sure you have one of the following user roles:
 

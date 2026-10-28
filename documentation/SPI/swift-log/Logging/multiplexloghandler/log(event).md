@@ -17,7 +17,7 @@ Log a message using the log level and source that you provide.
 func log(event: LogEvent)
 ```
 
-#### Discussion
+## Discussion
 
 Metadata from this handler’s metadata provider overrides metadata from the underlying handlers and their providers. Explicit metadata in the log event takes precedence over this handler’s provider.
 

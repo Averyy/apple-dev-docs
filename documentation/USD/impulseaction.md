@@ -4,11 +4,11 @@
 
 An action that adds velocity to an prim.
 
-#### Overview
+## Overview
 
 Use this action to speed up, slow down, or throw a stationary prim.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "ImpulseAction"

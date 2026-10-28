@@ -29,7 +29,7 @@ var strokeShader: SKShader? { get set }
 
 - [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a `strokeShader` is specified, when the shape node is drawn, the shader is used to determine the output colors for any part of the shape node that’s stroked. SpriteKit implements many stroke features using a default shader, such as:
 

@@ -19,7 +19,7 @@ Access the game controller system Home button settings.
 @interface GCControllerHomeButtonSettingsManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 macOS, iOS, and visionOS allow the user to assign an action that launches a chosen application to a long press of the Home button (the logo button on PlayStation and Xbox controllers).  The \c GCControllerHomeButtonSettingsManager class allows your application to partially inspect the user’s currently configured action, and to open the system game controller settings screen where the user can modify the action.
 

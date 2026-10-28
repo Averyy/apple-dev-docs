@@ -25,7 +25,7 @@ var descent: Int32 { get }
 extern int CGFontGetDescent(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The descent is the maximum distance below the baseline of glyphs in a font. The value is specified in glyph space units.
 

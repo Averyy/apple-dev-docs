@@ -25,11 +25,11 @@ func CMMetadataDataTypeRegistryDataTypeConformsToDataType(_ dataType: CFString, 
 extern Boolean CMMetadataDataTypeRegistryDataTypeConformsToDataType(CFStringRef dataType, CFStringRef conformsToDataType);
 ```
 
-#### Return Value
+## Return Value
 
 [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if first data type conforms to the second data type; [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) otherwise.
 
-#### Discussion
+## Discussion
 
 A given data type will conform to a second data type if any of the following are true:
 

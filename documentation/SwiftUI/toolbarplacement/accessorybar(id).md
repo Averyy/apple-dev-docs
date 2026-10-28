@@ -16,7 +16,7 @@ Creates a unique accessory bar placement.
 static func accessoryBar<ID>(id: ID) -> ToolbarPlacement where ID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, accessory bars are in a section below the title bar and toolbar area of the window. Each separate identifier will correspond to a separate accessory bar that is added to this area.
 

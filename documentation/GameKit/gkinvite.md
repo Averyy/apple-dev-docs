@@ -28,7 +28,7 @@ class GKInvite
 
 - [Finding players for custom server-based games](./finding-players-for-custom-server-based-games.md)
 
-#### Overview
+## Overview
 
 Your game never directly creates `GKInvite` objects. Instead, these objects are created by GameKit and delivered to your game’s matchmaking event handler. The properties of the invitation object describe the match to which another player invites the local player.
 

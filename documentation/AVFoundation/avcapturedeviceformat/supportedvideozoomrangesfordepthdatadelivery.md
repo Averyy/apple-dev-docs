@@ -19,7 +19,7 @@ The zoom ranges that support the delivery of depth data.
 @property (nonatomic, readonly) NSArray<AVZoomRange *> * supportedVideoZoomRangesForDepthDataDelivery;
 ```
 
-#### Discussion
+## Discussion
 
 Virtual devices support limited zoom ranges when delivering depth data to any output. If a device format has no [`supportedDepthDataFormats`](../avcapturedevice/format/supporteddepthdataformats.md) values, this property value is an empty array.
 

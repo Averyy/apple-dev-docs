@@ -21,11 +21,11 @@ Calls a closure with an unsafe reference to the current task.
 func withUnsafeCurrentTask<T>(body: (UnsafeCurrentTask?) throws -> T) rethrows -> T
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 If you call this function from the body of an asynchronous function, the unsafe task handle passed to the closure is always non-`nil` because an asynchronous function always runs in the context of a task. However, if you call this function from the body of a synchronous function, and that function isn’t executing in the context of any task, the unsafe task handle is `nil`.
 

@@ -23,7 +23,7 @@ var browsedDeviceTypeMask: ICDeviceTypeMask { get set }
 @property (readwrite) ICDeviceTypeMask browsedDeviceTypeMask;
 ```
 
-#### Discussion
+## Discussion
 
 Construct this property by performing bitwise OR on values of [`ICDeviceTypeMask`](../icdevicetypemask.md) with values of [`ICDeviceLocationTypeMask`](../icdevicelocationtypemask.md). You can change this property while the browser is looking for devices.
 

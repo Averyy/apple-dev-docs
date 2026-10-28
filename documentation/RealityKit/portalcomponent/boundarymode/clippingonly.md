@@ -20,7 +20,7 @@ The portal clips its content to the boundary.
 case clippingOnly
 ```
 
-#### Discussion
+## Discussion
 
 Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) don’t cross the portal.
 

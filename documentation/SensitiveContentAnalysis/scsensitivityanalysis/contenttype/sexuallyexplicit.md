@@ -27,7 +27,7 @@ extern SCSensitiveContentType const SCSensitiveContentTypeSexuallyExplicit;
 
 - [Testing your app’s response to sensitive media](../../testing-your-app-s-response-to-sensitive-media.md)
 
-#### Discussion
+## Discussion
 
 The Sensitive Content Analysis framework includes this value in [`detectedTypes`](../detectedtypes.md) when it detects nudity or sexually explicit content in analyzed media.
 

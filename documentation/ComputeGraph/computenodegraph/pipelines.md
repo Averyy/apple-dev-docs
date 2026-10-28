@@ -21,7 +21,7 @@ Fully-compiled shaders for a compute graph.
 struct Pipelines
 ```
 
-#### Overview
+## Overview
 
 You use pipelines to construct [`ComputeGraphSimulation`](../computegraphsimulation.md) objects. A pipeline can be used by many simulations at the same time.
 

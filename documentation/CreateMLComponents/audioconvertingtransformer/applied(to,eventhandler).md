@@ -20,7 +20,7 @@ Performs conversion of the input audio buffer.
 func applied(to input: AVAudioPCMBuffer, eventHandler: EventHandler? = nil) throws -> AVAudioPCMBuffer
 ```
 
-#### Return Value
+## Return Value
 
 An output audio buffer by converting the input buffer to the `targetFormat`.
 

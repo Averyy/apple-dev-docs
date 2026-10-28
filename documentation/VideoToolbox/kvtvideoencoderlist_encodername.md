@@ -24,7 +24,7 @@ let kVTVideoEncoderList_EncoderName: CFString
 extern CFStringRef const kVTVideoEncoderList_EncoderName;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFString`](../CoreFoundation/cfstring.md) object suitable for display to the user (such as, Apple H.264).
 

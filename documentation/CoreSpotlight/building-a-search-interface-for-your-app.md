@@ -5,13 +5,13 @@
 
 Add a search interface to your app to execute Spotlight queries and offer suggested text completions.
 
-#### Overview
+## Overview
 
 Adding search tools to your app gives people a way to find content more easily. Whether you add search controls to an app window or to one of the views in your interface, use Spotlight to generate the search results for your content. Spotlight searches the content you already indexed, and provides relevant text completions and results for you to display. In iOS 18 and macOS 15 and later, Spotlight also supports semantic searches of your content, in addition to lexical matching of a search term.
 
 To take full advantage of search in your interface, make sure you index your app’s content and provide it to Spotlight. As your app generates or changes its content, send the details of those changes to Spotlight so it can update its indexes. It’s also important to provide an app extension that Spotlight can call to regenerate those details on demand. For more information about providing Spotlight with your app’s data, see [Adding your app’s content to Spotlight indexes](./adding-your-app-s-content-to-spotlight-indexes.md).
 
-##### Add a search field to your interface
+### Add a search field to your interface
 
 Apple’s UI frameworks provide search controls you can add to your interface, and support to provide a consistent search experience. Incorporate these controls into your views and use the built-in support to initiate searches and display the results.
 
@@ -21,11 +21,11 @@ Apple’s UI frameworks provide search controls you can add to your interface, a
 
 The built-in search controls provide features that people expect when searching for content, such as text completions and text tokens. You can also apply filters to limit the scope of the search to a particular part of your app. Core Spotlight helps you implement these features by providing the data you need for your app’s interface in a compatible format.
 
-##### Prepare the search system
+### Prepare the search system
 
 To ensure initial searches happen quickly, call the [`prepare()`](./csuserquery/prepare%28%29.md) class method. Call this method before you need to perform queries, such as when the view that presents your search interface first appears. You don’t need to call the method more than once when your app is running, and you don’t need to execute the query itself. The method prepares Core Spotlight resources, which can take a noticeable amount of time. It also increases your app’s memory footprint, so call it as late as possible to minimize the performance impact.
 
-##### Execute a query and receive the responses
+### Execute a query and receive the responses
 
 When someone types a value into your app’s search control, don’t execute the query immediately. Instead, give the person a small amount of time to type more text into the search field. For example, wait 0.3 seconds after each new keystroke before starting a query with the current text. If a new keystroke arrives before the time elapses, reset the waiting period. Starting the query on a delay keeps your app responsive to keystrokes, and doesn’t waste time executing searches and throwing away the results.
 
@@ -70,7 +70,7 @@ When someone interacts with your search control, you typically create multiple q
 
 For more information about how to configure query parameters, see [`CSUserQueryContext`](./csuserquerycontext.md).
 
-##### Display completions for typed text
+### Display completions for typed text
 
 Suggestions make it easier for someone to discover relevant search terms from your search interface. The [`CSUserQuery`](./csuserquery.md) object you use to fetch results also generates suggestions that you can use to populate your search interface. You can display these suggestions any time someone interacts with your search control. When you execute a query, Spotlight offers a set of ranked suggestions based on the query text and your app’s content.
 

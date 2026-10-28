@@ -24,7 +24,7 @@ func insertOverlay(_ overlay: any MKOverlay, at index: Int, level: MKOverlayLeve
 - (void) insertOverlay:(id<MKOverlay>) overlay atIndex:(NSUInteger) index level:(MKOverlayLevel) level;
 ```
 
-#### Discussion
+## Discussion
 
 Inserting an overlay at a specific level places that overlay’s visual representation in front of or behind other map content such as map labels and point-of-interest icons.
 

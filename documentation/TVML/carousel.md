@@ -4,7 +4,7 @@
 
 Arranges images in a row.
 
-#### Overview
+## Overview
 
 The `carousel` element displays images in a row that the user can navigate by swiping left and right on the remote. Here’s an example that creates a carousel containing three movie scenes that the user can navigate between.
 
@@ -27,11 +27,11 @@ The `carousel` element displays images in a row that the user can navigate by sw
 </carousel>
 ```
 
-##### Subelements of carousel
+### Subelements of carousel
 
 - [section](./section.md)
 
-##### Elements that Use carousel
+### Elements that Use carousel
 
 - [collectionList](./collectionlist.md)
 - [showcaseTemplate](./showcasetemplate.md)

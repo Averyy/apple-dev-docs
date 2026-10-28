@@ -24,7 +24,7 @@ func position(from position: UITextPosition, in direction: UITextLayoutDirection
 - (UITextPosition *) positionFromPosition:(UITextPosition *) position inDirection:(UITextLayoutDirection) direction offset:(NSInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 For an example of an implementation of the related method, [`position(from:offset:)`](./position%28from,offset%29.md), see [Using Text Kit to Draw and Manage Text](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/CustomTextProcessing/CustomTextProcessing.html#//apple_ref/doc/uid/TP40009542-CH4) in [Text Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542).
 

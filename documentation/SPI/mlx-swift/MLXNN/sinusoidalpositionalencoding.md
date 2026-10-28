@@ -17,11 +17,11 @@ Implements sinusoidal positional encoding.
 class SinusoidalPositionalEncoding
 ```
 
-#### Overview
+## Overview
 
 For more details see the paper “Attention Is All You Need” [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762).
 
-##### See Also
+### See Also
 
 - [Positional Encoding](./positional-encoding.md)
 

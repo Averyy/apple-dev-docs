@@ -25,11 +25,11 @@ func previewingContext(_ previewingContext: any UIViewControllerPreviewing, view
 - (UIViewController *) previewingContext:(id<UIViewControllerPreviewing>) previewingContext viewControllerForLocation:(CGPoint) location;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller whose view you want to provide as the preview (peek), or `nil` to disable preview..
 
-#### Discussion
+## Discussion
 
 Implement this method to return the preview view controller.
 

@@ -19,7 +19,7 @@ func intersection(_ textRange: NSTextRange) -> Self?
 - (instancetype) textRangeByIntersectingWithTextRange:(NSTextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSRange`](../../Foundation/nsrange-c.struct.md) that represents the intersection of the ranges, or `nil` if they don’t intersect.
 

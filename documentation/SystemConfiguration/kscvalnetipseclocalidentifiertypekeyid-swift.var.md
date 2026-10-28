@@ -19,7 +19,7 @@ let kSCValNetIPSecLocalIdentifierTypeKeyID: CFString
 extern CFStringRef const kSCValNetIPSecLocalIdentifierTypeKeyID;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPSecLocalIdentifierType`](./kscpropnetipseclocalidentifiertype-swift.var.md) key.
 

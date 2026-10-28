@@ -25,7 +25,7 @@ var isFinished: Bool { get }
 @property (readonly, getter=isFinished) BOOL finished;
 ```
 
-#### Discussion
+## Discussion
 
 A progress object finishes when the [`completedUnitCount`](./completedunitcount.md) equals or exceeds the [`totalUnitCount`](./totalunitcount.md).
 

@@ -15,7 +15,7 @@ An entitlement that enables your app extension to exchange cryptographic keys wi
 - **Name**: `com.apple.developer.accessory-transport-security`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app implements [`AccessoryTransportSecurity`](../../AccessoryTransportExtension/accessorytransportsecurity.md) in an app extension, the framework requires the extension to have this entitlement with a value of `true` in its signature.
 

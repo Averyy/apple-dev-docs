@@ -23,7 +23,7 @@ var altitude: Double { get }
 @property (nonatomic, readonly) double altitude;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be positive or negative.
 

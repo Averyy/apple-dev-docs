@@ -27,7 +27,7 @@ var usesWeakReadAndWriteBarriers: Bool { get set }
 @property BOOL usesWeakReadAndWriteBarriers;
 ```
 
-#### Discussion
+## Discussion
 
 If you use garbage collection, read and write barrier functions must be used when pointers are from memory scanned by the collector.
 

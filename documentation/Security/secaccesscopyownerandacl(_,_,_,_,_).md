@@ -21,7 +21,7 @@ func SecAccessCopyOwnerAndACL(_ accessRef: SecAccess, _ userId: UnsafeMutablePoi
 OSStatus SecAccessCopyOwnerAndACL(SecAccessRef accessRef, uid_t *userId, gid_t *groupId, SecAccessOwnerType *ownerType, CFArrayRef*aclList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

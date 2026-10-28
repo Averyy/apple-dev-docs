@@ -19,7 +19,7 @@ A hover effect that highlights views using a light source to indicate position.
 struct HighlightHoverEffect
 ```
 
-#### Overview
+## Overview
 
 You can also use [`highlight`](./customhovereffect/highlight.md) to construct this hover effect.
 

@@ -21,7 +21,7 @@ Tool call steps that must be satisfied in sequential order.
 var ordered: [ToolExpectation]
 ```
 
-#### Discussion
+## Discussion
 
 Each entry is either a single [`ToolExpectation`](../toolexpectation.md) or an [`anyOrder(_:)`](../toolexpectation/anyorder%28_%29.md) group where multiple tools must all be called at that position (in any relative order).
 

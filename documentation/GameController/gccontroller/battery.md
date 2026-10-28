@@ -25,7 +25,7 @@ var battery: GCDeviceBattery? { get }
 @property (nonatomic, copy, readonly, nullable) GCDeviceBattery * battery;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display the battery life or to warn the user when the controller’s battery level is low. If the controller doesn’t provide battery information, this property is `nil`.
 

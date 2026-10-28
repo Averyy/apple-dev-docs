@@ -15,11 +15,11 @@ Returns the first occurrence of a value associated with specified key.
 - (NSString *) stringForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the specified key, or `nil` if the key is not in the table. The returned string may also be empty.
 
-#### Discussion
+## Discussion
 
 If `key` is a main keyword only, and if that keyword has options in the PPD file, this method returns an empty string. Use [`stringListForKey:inTable:`](./stringlistforkey_intable_.md) to retrieve the values for all occurrences of a main keyword.
 

@@ -19,7 +19,7 @@ Replaces the contents of this image markup with an image file.
 mutating func replaceImage(with url: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the image file cannot be loaded or is in an unsupported format.
 

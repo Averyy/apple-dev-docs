@@ -21,7 +21,7 @@ The string representation of the type’s content.
 var urlRepresentationParameter: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a string that describes your custom type. When specifying the string, use Swift interpolated values to incorporate data from any properties of your type, and specify only characters that URLs support. The following example shows a custom type that uses data from multiple properties to generate a string for URLs.
 

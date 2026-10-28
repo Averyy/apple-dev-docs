@@ -32,7 +32,7 @@ func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
 - [Making and receiving VoIP calls](../making-and-receiving-voip-calls.md)
 - [Sending End-to-End Encrypted VoIP Calls](../sending-end-to-end-encrypted-voip-calls.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

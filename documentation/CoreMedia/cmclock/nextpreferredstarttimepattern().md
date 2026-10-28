@@ -21,7 +21,7 @@ Returns the pattern of preferred start times, such as for synchronization with a
 func nextPreferredStartTimePattern() -> CMClock.StartTimePattern?
 ```
 
-#### Discussion
+## Discussion
 
 When a genlock signal is present and disciplined, this function returns a matched time pair in the near future and the delta between successive times.
 

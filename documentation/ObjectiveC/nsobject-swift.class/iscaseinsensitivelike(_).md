@@ -20,11 +20,11 @@ func isCaseInsensitiveLike(_ object: String) -> Bool
 - (BOOL) isCaseInsensitiveLike:(NSString *) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is considered to be “like” `aString` when the case of characters in the receiver is ignored, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Currently, [`isCaseInsensitiveLike(_:)`](./iscaseinsensitivelike%28_%29.md) messages are never sent to any object from within Cocoa itself.
 

@@ -21,11 +21,11 @@ Fetches the share participant with the specified phone number.
 func shareParticipant(forPhoneNumber phoneNumber: String) async throws -> CKShare.Participant
 ```
 
-#### Return Value
+## Return Value
 
 The share participant for the phone number.
 
-#### Discussion
+## Discussion
 
 CloudKit can translate any valid phone number into a share participant. If the phone number doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the phone number to an iCloud account.
 

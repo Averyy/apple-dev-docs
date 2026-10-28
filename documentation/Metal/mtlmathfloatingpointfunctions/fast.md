@@ -24,7 +24,7 @@ case fast
 MTLMathFloatingPointFunctionsFast
 ```
 
-#### Discussion
+## Discussion
 
 This is the default behavior.
 

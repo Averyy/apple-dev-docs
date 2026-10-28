@@ -19,7 +19,7 @@ func cellsStyleMask() -> Int
 - (NSUInteger) cellsStyleMask;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance style mask for the cell.
 

@@ -24,7 +24,7 @@ struct UIRectCorner
 enum UIRectCorner : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The specified constants reflect the corners of a rectangle that has not been modified by an affine transform and is drawn in the default coordinate system (where the origin is in the upper-left corner and positive values extend down and to the right).
 

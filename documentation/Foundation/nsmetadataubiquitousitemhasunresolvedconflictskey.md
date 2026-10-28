@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String
 extern NSString * const NSMetadataUbiquitousItemHasUnresolvedConflictsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains a Boolean indicating whether the item is currently in conflict with another version of the file somewhere else.
 

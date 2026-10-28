@@ -17,7 +17,7 @@ Parameters controlling how a prompt is prefilled into the [`KVCache`](./kvcache.
 struct PrefillParameters
 ```
 
-#### Overview
+## Overview
 
 Set via [`prefill`](./generateparameters/prefill.md) and passed to [`prepare(_:cache:state:prefill:)`](./languagemodel/prepare%28_,cache,state,prefill%29.md):
 

@@ -5,19 +5,19 @@
 
 Released May 11, 2026 — 26.5 (20624.2.5)
 
-#### Overview
+## Overview
 
 Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, macOS Sequoia, and macOS Sonoma.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the accessibility tree could permanently be empty if built during early page load when only a scroll area and web area were present. (174244620)
 
-##### Animations
+### Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed support for the `scroll` animation timeline range name in scroll-driven animations. (171630023)
 - Fixed an issue where scroll-driven animations were not properly paused when `animation-play-state` was dynamically set to `paused`. (171630127)
@@ -25,14 +25,14 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed a regression where animating to an implicit value for individual transform properties failed to animate. (173717819)
 - Fixed an issue where animation timelines could fail to restore correctly after navigating back to a page from the back-forward cache. (174561577)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for the `:open` pseudo-class for `<details>`, `<dialog>`, `<select>`, and `<input>` elements. (173253012)
 - Added support for `element-scoped` keyword in `random()`. Updated `random()` caching behavior so that custom property identifiers like `random(--foo)` are matched globally to the document rather than scoped to individual elements, aligning with the updated specification. Removed support for `element-shared`. (174037391)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a `display: grid` subgrid inside a `grid-lanes` container incorrectly contributed its items’ intrinsic sizes to the parent’s track sizing algorithm. (171230544)
 - Fixed an issue in collapsed border tables where the border style of a cell adjacent to a `rowspan` cell was incorrectly applied across the full length of the spanning cell’s border. (171634786)
@@ -51,57 +51,57 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where `aspect-ratio` was not honored correctly when the page was zoomed in. (174498486)
 - Fixed an issue where `:has(:empty)` was not invalidated when the content of a child element changed from empty to non-empty. (174501418)
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where pressing backspace on a line below an image in a `contenteditable` region could place the cursor in the wrong position. (171850465)
 - Fixed an issue where emoji images copied from websites and pasted into other sites appeared broken due to cross-origin resource policy blocking the SVG image sources. (172775070)
 - Fixed an issue where pasting text into an empty list item created an extra blank bullet. (173275372)
 
-##### Forms
+### Forms
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a `readonly` date `<input>` could still be edited via keyboard using the date picker. (171535893)
 - Fixed an issue on iOS and iPadOS where `datalist` suggestions were presented directly over the associated input, obscuring it. (174264299)
 
-##### HTML
+### HTML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `dragenter` and `dragleave` events to include `relatedTarget` in the event object. (172048448)
 - Fixed an issue on iOS where the drag thumbnail could show an incorrect image after long-pressing an image with an embedded link. (172293971)
 
-##### Images
+### Images
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a regression where images with `srcset` and `sizes` attributes containing `calc()` expressions with division by zero were not displayed. (173954748)
 
-##### JavaScript
+### JavaScript
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `TypedArray.prototype.sort()` failing when the comparison function accesses the `.buffer` property of the typed array. (172516044)
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the media controls volume button was mispositioned and overlapped with other controls in right-to-left locales. (171182590)
 - Fixed an issue where `MediaCapabilities.decodingInfo()` always returned `false` for `spatialRendering`. (172689752)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where downloaded files used the file extension from the URL path instead of the HTTP `Content-Type` header. (173705083)
 - Fixed an issue where downloaded files were saved with incorrect or missing file extensions when the URL path extension did not match the HTTP `Content-Type` header. (173945210)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where content inside inline elements with block-level children and rendering layers was not displayed correctly. (171101386)
 - Fixed an issue where `getClientRects()` could return rects with zero width and height for spans in multi-column layouts. (171101490)
@@ -114,13 +114,13 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where pinch-to-zoom could cause web content to jump or disappear on some websites. (172507916)
 - Fixed an issue where user-installed font variants could interfere with system font matching, causing incorrect fonts to be selected. (173345107)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for the `color-interpolation` attribute on SVG gradients, enabling `linearRGB` color space interpolation. (171816049)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `removeAttribute` for `width` or `height` on an SVG root element did not reset to the initial default values. (172132798)
 - Fixed event name mapping for `onbegin`, `onend`, and `onrepeat` on `SVGAnimationElement` and added the missing `onend` event handler. (172581017)
@@ -128,46 +128,46 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where UI events such as wheel failed to fire for inner SVG elements. (173009454)
 - Fixed an issue where SVG cursors set via `cursor: url()` appeared blurry on high DPI displays. (173950927)
 
-##### Scrolling
+### Scrolling
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where scroll-snap re-snapping after layout changes could cause incorrect scroll positions, resulting in the wrong content being shown. (171541221)
 
-##### Storage
+### Storage
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where IndexedDB connections could become permanently broken until the page was reloaded. (172247569)
 - Fixed an issue where `document.hasStorageAccess()` could return a Promise that never resolves. (172424614)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for the `source` property on `ToggleEvent`, which identifies the element that triggered the toggling of a target element such as a popover’s invoker button. (171635116)
 - Added support for the Origin API, which exposes origin information as a structured `Origin` object. (171816045)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `DecompressionStream` discarded valid decompressed output when extra trailing bytes were present after the compressed stream, instead of enqueuing the output before throwing. (171020155)
 - Fixed an issue where calling preventDefault() on pointerdown events did not prevent page scrolling when only passive touch event listeners are installed. (173988278)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where extensions with a trailing comma in `manifest.json` failed to load in Safari. (172120877)
 
-##### WebGL
+### WebGL
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebGL shader compilation to properly handle `NaN` and `infinity` values.  (166699074)
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `RTCIceCandidate.toJSON()` to include the `usernameFragment` property in its serialized output. (172689343)
 - Fixed `RTCRtpSender` to allow a `maxFramerate` value of 0. (172689374)

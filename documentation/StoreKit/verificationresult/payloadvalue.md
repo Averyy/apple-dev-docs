@@ -21,7 +21,7 @@ The verified value of the signed type that StoreKit confirms as verified.
 var payloadValue: SignedType { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the value of a payload in a JSON Web Signature (JWS) value that passed StoreKit verification.
 

@@ -18,7 +18,7 @@ Returns the buffer slice bound at the given index, or `nil` if the slot is unset
 final func bufferSlice(at index: Int) -> LowLevelBufferSlice?
 ```
 
-#### Return Value
+## Return Value
 
 The buffer slice at `index`, or `nil` if the slot is unoccupied.
 

@@ -19,7 +19,7 @@ func isExpandable(_ item: Any?) -> Bool
 - (BOOL) isExpandable:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` is expandable—that is, `item` can contain other items, otherwise [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ func sumQuantity(for source: HKSource) -> HKQuantity?
 - (HKQuantity *) sumQuantityForSource:(HKSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 If both the [`cumulativeSum`](../hkstatisticsoptions/cumulativesum.md) option and the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the sum of all the samples that match the query and were created by the specified source. If the statistics options were not both set, this method returns `nil`.
 

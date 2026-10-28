@@ -16,7 +16,7 @@ The directionality of user interface elements.
 var userInterfaceDirectionPolicy: WKUserInterfaceDirectionPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `.content`.
 

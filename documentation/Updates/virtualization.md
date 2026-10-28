@@ -5,17 +5,17 @@
 
 Learn about important changes to Virtualization.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Virtualization](../Virtualization/Virtualization.md).
 
-#### June 2025
+## June 2025
 
 - Take advantage of more efficient storage utilization in virtual machine (VM) images using the Apple Sparse Image Format (ASIF). Its space-saving allocation results in a smaller disk footprint and optimized transfer for VM disk images with [`VZDiskImageStorageDeviceAttachment`](../Virtualization/vzdiskimagestoragedeviceattachment.md).
 - Support vmnet custom network topologies to enable VM-to-VM communications based on a logical network with customized configuration.
 - Easily discover a VM’s on-process [`queue`](../Virtualization/vzvirtualmachine/queue.md) using this new property on  [`VZVirtualMachine`](../Virtualization/vzvirtualmachine.md).
 
-#### June 2024
+## June 2024
 
 - Adopt nested VMs to run Linux VMs in virtualized Linux VM hosts.
 - Allow emulated USB Mass Storage devices to attach to and detach from a running VM using Extensible Host Controller Interface (XHCI) controller hot-plug capabilities.

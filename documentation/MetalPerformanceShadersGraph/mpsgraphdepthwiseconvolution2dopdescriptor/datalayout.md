@@ -24,7 +24,7 @@ var dataLayout: MPSGraphTensorNamedDataLayout { get set }
 @property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
 ```
 
-#### Discussion
+## Discussion
 
 See: [`MPSGraphTensorNamedDataLayout`](../mpsgraphtensornameddatalayout.md).
 

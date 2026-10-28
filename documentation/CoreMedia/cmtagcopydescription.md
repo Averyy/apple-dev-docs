@@ -21,7 +21,7 @@ Copies the description of a tag to a new string.
 extern CFStringRefCMTagCopyDescription(CFAllocatorRef allocator, CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a newly allocated [`CFString`](../CoreFoundation/cfstring.md), or `NULL` if the copy failed.
 

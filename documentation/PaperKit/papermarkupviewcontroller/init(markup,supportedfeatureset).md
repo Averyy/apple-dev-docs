@@ -20,7 +20,7 @@ Creates a new markup view controller with the provided data model.
 @preconcurrency init(markup: PaperMarkup? = nil, supportedFeatureSet: FeatureSet)
 ```
 
-#### Discussion
+## Discussion
 
 The canvas limits the edits that a person can make so they’re compatible with the feature set specified. If you set a `supportedFeatureSet`, also use a similar feature set to configure any `MarkupToolbarViewController` or `MarkupEditViewController` you use.
 

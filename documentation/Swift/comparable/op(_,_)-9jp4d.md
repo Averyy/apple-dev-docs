@@ -22,7 +22,7 @@ Returns a Boolean value indicating whether the value of the first argument is le
 static func < (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
 

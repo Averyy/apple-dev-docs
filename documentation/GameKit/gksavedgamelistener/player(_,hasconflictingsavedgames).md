@@ -27,7 +27,7 @@ optional func player(_ player: GKPlayer, hasConflictingSavedGames savedGames: [G
 
 - [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Discussion
+## Discussion
 
 Saved game files conflict when multiple devices write to the same file while one or more of the devices are offline. Implement this method to choose the game data that’s correct and try saving it again using the [`resolveConflictingSavedGames(_:with:completionHandler:)`](../gklocalplayer/resolveconflictingsavedgames%28_,with,completionhandler%29.md) method.
 

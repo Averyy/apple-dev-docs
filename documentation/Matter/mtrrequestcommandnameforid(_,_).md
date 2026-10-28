@@ -25,7 +25,7 @@ func MTRRequestCommandNameForID(_ clusterID: MTRClusterIDType, _ commandID: MTRC
 extern NSString *MTRRequestCommandNameForID(MTRClusterIDType clusterID, MTRCommandIDType commandID);
 ```
 
-#### Discussion
+## Discussion
 
 For unknown IDs, a string ‘<Unknown clusterID %d>’ (if the cluster ID is not known) or ‘<Unknown commandID %d>’ (if the cluster ID is known but the command ID is not known) will be returned.
 

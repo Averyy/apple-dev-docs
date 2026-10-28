@@ -21,7 +21,7 @@ Reading or writing the attribute’s value failed for lack of authentication.
 static var insufficientAuthentication: CBATTError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates you must authenticate before reading or writing the attribute’s value.
 

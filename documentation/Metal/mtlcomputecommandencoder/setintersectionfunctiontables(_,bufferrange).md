@@ -20,7 +20,7 @@ Binds multiple intersection function tables to the buffer argument table, allowi
 func setIntersectionFunctionTables(_ intersectionFunctionTables: [(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `visibleFunctionTables` be the same as the length of `bufferRange`.
 

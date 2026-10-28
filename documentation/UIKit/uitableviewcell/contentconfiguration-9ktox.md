@@ -20,7 +20,7 @@ The current content configuration of the cell.
 @preconcurrency var contentConfiguration: (any UIContentConfiguration)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Using a content configuration, you can set the cell’s content and styling for a variety of different cell states. You can get the default configuration using [`defaultContentConfiguration()`](./defaultcontentconfiguration%28%29.md), assign your content to the configuration, customize any other properties, and assign it to the view as the current [`contentConfiguration`](./contentconfiguration-9ktox.md).
 

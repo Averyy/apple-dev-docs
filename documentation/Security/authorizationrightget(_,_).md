@@ -25,11 +25,11 @@ func AuthorizationRightGet(_ rightName: UnsafePointer<CChar>, _ rightDefinition:
 OSStatus AuthorizationRightGet(const char *rightName, CFDictionaryRef*rightDefinition);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You do not need an authorization reference to use this function because the policy database is world readable.
 

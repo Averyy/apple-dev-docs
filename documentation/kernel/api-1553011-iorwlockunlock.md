@@ -24,7 +24,7 @@ void IORWLockUnlock(struct IORWLock *lock);
 void IORWLockUnlock(IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Undo one call to IORWLockRead or IORWLockWrite. Results are undefined if the caller has not locked the lock. This function may block and so should not be called from interrupt level or while a spin lock is held.
 

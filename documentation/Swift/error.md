@@ -21,11 +21,11 @@ A type representing an error value that can be thrown.
 protocol Error : Sendable
 ```
 
-#### Overview
+## Overview
 
 Any type that declares conformance to the `Error` protocol can be used to represent an error in Swift’s error handling system. Because the `Error` protocol has no requirements of its own, you can declare conformance on any custom type you create.
 
-### Using Enumerations as Errors
+## Using Enumerations as Errors
 
 Swift’s enumerations are well suited to represent simple errors. Create an enumeration that conforms to the `Error` protocol with a case for each possible error. If there are additional details about the error that could be helpful for recovery, use associated values to include that information.
 
@@ -70,7 +70,7 @@ do {
 // Prints "Invalid character: '$'"
 ```
 
-### Including More Data in Errors
+## Including More Data in Errors
 
 Sometimes you may want different error states to include the same common data, such as the position in a file or some of your application’s state. When you do, use a structure to represent errors. The following example uses a structure to represent an error when parsing an XML document, including the line and column numbers where the error occurred:
 

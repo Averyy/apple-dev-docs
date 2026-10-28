@@ -19,7 +19,7 @@ case emphasized
 NSSpringLoadingHighlightEmphasized
 ```
 
-#### Discussion
+## Discussion
 
 Apply highlighting to the destination’s user interface to visually indicate to the user that spring-loading is engaged on the destination.
 

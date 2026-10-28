@@ -15,7 +15,7 @@ Sets a property in a specified protocol handler.
 void WSProtocolHandlerSetProperty(WSProtocolHandlerRef ref, CFStringRef propertyName, CFTypeRef propertyValue);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the value of a named property in a method implementation.
 

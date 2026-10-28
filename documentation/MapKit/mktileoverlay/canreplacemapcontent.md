@@ -24,7 +24,7 @@ var canReplaceMapContent: Bool { get set }
 @property (nonatomic) BOOL canReplaceMapContent;
 ```
 
-#### Discussion
+## Discussion
 
 If the tile content you provide can cover the entire drawing area with opaque content, set this property to [`true`](../../Swift/true.md). Doing so serves as a hint to the map view that it doesn’t need to draw any additional content underneath your tiles. Set this property to [`false`](../../Swift/false.md) if your tiles contain any transparency.
 

@@ -19,7 +19,7 @@ var alignment: NSTextAlignment { get set }
 @property NSTextAlignment alignment;
 ```
 
-#### Discussion
+## Discussion
 
 The value of  `mode` must be one of the alignments described in [`NSTextAlignment`](../nstextalignment.md).
 

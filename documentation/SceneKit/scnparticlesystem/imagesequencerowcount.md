@@ -25,9 +25,9 @@ var imageSequenceRowCount: Int { get set }
 @property (nonatomic) NSUInteger imageSequenceRowCount;
 ```
 
-#### Discussion
+## Discussion
 
-To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./api-1524153-particleimage.md#1965925). Then use this property and the [`imageSequenceColumnCount`](./imagesequencecolumncount.md) property to specify the arrangement of frames in the image, and the [`imageSequenceInitialFrame`](./imagesequenceinitialframe.md) and [`imageSequenceFrameRate`](./imagesequenceframerate.md) properties to define animation timing.
+To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./particleimage.md#1965925). Then use this property and the [`imageSequenceColumnCount`](./imagesequencecolumncount.md) property to specify the arrangement of frames in the image, and the [`imageSequenceInitialFrame`](./imagesequenceinitialframe.md) and [`imageSequenceFrameRate`](./imagesequenceframerate.md) properties to define animation timing.
 
 The default value is `1`. If the [`imageSequenceColumnCount`](./imagesequencecolumncount.md) value is also `1` (the default), this specifies no animation for particle images.
 

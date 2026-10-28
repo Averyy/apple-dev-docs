@@ -23,7 +23,7 @@ class HKCDADocumentSample
 @interface HKCDADocumentSample : HKDocumentSample
 ```
 
-#### Overview
+## Overview
 
 The sample’s `document` property contains an [`HKCDADocument`](./hkcdadocument.md) object, representing the underlying XML document.
 

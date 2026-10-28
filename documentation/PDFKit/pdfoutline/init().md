@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 If you want the `PDFOutline` object returned by this method to be the outline root, you must add additional `PDFOutline` objects to create the outline hierarchy you desire. Then, you must add the root outline object to your PDF document by passing it to the `PDFDocument` `setOutlineRoot(_:)` method.
 

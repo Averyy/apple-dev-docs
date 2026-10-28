@@ -19,7 +19,7 @@
 extern UTType * const UTTypeGeoJSON;
 ```
 
-#### Discussion
+## Discussion
 
 A GeoJSON file.
 

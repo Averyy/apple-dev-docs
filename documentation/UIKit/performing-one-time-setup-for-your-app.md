@@ -5,7 +5,7 @@
 
 Ensure proper configuration of your app environment.
 
-#### Overview
+## Overview
 
 When the user launches your app for the first time, you might want to prepare your app environment by performing some one-time tasks. For example, you might want to:
 
@@ -16,7 +16,7 @@ When the user launches your app for the first time, you might want to prepare yo
 
 Perform any one-time tasks in your app delegate’s [`application(_:willFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,willfinishlaunchingwithoptions%29.md) or [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method. Never block the app’s main thread for tasks that don’t require user input. Instead, start tasks asynchronously using a dispatch queue, and let them run in the background while your app finishes launching. For tasks that require user input, make all changes to your user interface in the [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method.
 
-##### Install files in the proper locations
+### Install files in the proper locations
 
 Your app has its own container directory for storing files, and you should always place app-specific files in the `~/Library` subdirectory. Specifically, store your files in the following `~/Library` subdirectories:
 

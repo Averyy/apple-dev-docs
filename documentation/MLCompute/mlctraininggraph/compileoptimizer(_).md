@@ -23,11 +23,11 @@ func compileOptimizer(_ optimizer: MLCOptimizer) -> Bool
 - (BOOL) compileOptimizer:(MLCOptimizer *) optimizer;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 
-#### Discussion
+## Discussion
 
 Typically you specify the optimizer to use with a training graph when creating the training graph, using [`init(graphObjects:lossLayer:optimizer:)`](./init%28graphobjects,losslayer,optimizer%29.md). The optimizer is then compiled in when you call [`compile(options:device:)`](./compile%28options,device%29.md).
 

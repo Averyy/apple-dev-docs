@@ -21,7 +21,7 @@ A rounded corner style where the corner’s radius shares a center point with th
 static var concentric: Edge.Corner.Style { get }
 ```
 
-#### Discussion
+## Discussion
 
 When a corner is concentric to its container, the system calculates the corner radius to equal the container shape’s corner radius minus the distance between corners. When the system calculates a zero radius, the corner is square.
 

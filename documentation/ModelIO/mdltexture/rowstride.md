@@ -24,7 +24,7 @@ var rowStride: Int { get }
 @property (nonatomic, readonly) NSInteger rowStride;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is zero, the texture does not support direct addressing of texels—this is the case for some compressed texture formats.
 

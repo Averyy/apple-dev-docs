@@ -27,7 +27,7 @@ enum PeriodUnit
 enum SKProductPeriodUnit : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The period unit represents the duration of an interval. Period units are used with the number of units to determine one period in [`SKProductSubscriptionPeriod`](../skproductsubscriptionperiod.md).
 

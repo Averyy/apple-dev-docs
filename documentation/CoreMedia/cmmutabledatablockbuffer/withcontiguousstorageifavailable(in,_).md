@@ -21,7 +21,7 @@ Access contents of the buffer if available as contiguous memory block.
 func withContiguousStorageIfAvailable<R>(in range: Range<Int>? = nil, _ body: (UnsafeRawBufferPointer) throws -> sending R) rethrows -> sending R?
 ```
 
-#### Discussion
+## Discussion
 
 This method calls body(buffer), where buffer is a pointer to the block buffers contiguous storage. If the contiguous storage doesn’t exist,  the method doesn’t call body — it immediately returns nil.
 

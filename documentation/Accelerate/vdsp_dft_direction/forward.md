@@ -25,7 +25,7 @@ case FORWARD
 vDSP_DFT_FORWARD
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vDSP_DFT_Direction.FORWARD`](./forward.md) to transform a signal from the time domain to the frequency domain.
 

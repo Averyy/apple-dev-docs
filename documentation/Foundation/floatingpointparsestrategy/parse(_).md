@@ -23,11 +23,11 @@ func parse(_ value: String) throws -> Format.FormatInput
 
 Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 The parsed integer value.
 
-#### Discussion
+## Discussion
 
 Use this method to repeatedly parse floating-point strings with the same [`FloatingPointParseStrategy`](../floatingpointparsestrategy.md). To parse a single floating-point string, use the initializers inherited from [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md) that take a [`String`](../../Swift/string.md) and a [`FormatStyle`](../formatstyle.md) as parameters.
 

@@ -23,7 +23,7 @@ optional var completionCurve: UIView.AnimationCurve { get }
 @property (nonatomic, readonly) UIViewAnimationCurve completionCurve;
 ```
 
-#### Return Value
+## Return Value
 
 Default value is [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md), with other possible values described in the [`UIView.AnimationCurve`](../uiview/animationcurve.md) type definition.
 

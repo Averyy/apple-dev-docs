@@ -21,7 +21,7 @@ An Adobe DNG (digital negative) image.
 static var dng: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** com.adobe.raw-image
 

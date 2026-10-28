@@ -22,7 +22,7 @@ case home
 UIApplicationShortcutIconTypeHome
 ```
 
-#### Discussion
+## Discussion
 
 ![Home icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934518@2x.png)
 

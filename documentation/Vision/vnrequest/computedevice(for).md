@@ -20,7 +20,7 @@ Returns the compute device for a compute stage.
 func computeDevice(for computeStage: VNComputeStage) -> MLComputeDevice?
 ```
 
-#### Return Value
+## Return Value
 
 The current compute device; otherwise, `nil` if one isn’t assigned.
 

@@ -22,7 +22,7 @@ var residencySet: any MTLResidencySet { get }
 @property (nonatomic, readonly, nonnull) id<MTLResidencySet> residencySet;
 ```
 
-#### Discussion
+## Discussion
 
 Get the view’s residency set.
 

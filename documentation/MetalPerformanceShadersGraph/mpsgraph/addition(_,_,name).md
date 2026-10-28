@@ -24,11 +24,11 @@ func addition(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor
 - (MPSGraphTensor *) additionWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates an add operation and returns the result tensor. It supports broadcasting as well.
 

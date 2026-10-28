@@ -21,11 +21,11 @@ func sigmoid(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 For details, please see [this documentation](https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sigmoid.html)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

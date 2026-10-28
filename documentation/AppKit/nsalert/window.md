@@ -19,7 +19,7 @@ var window: NSWindow { get }
 @property (strong, readonly) NSWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 The alert’s window is of type [`NSPanel`](../nspanel.md). Use this property when you want to dismiss an alert created with the [`beginSheetModal(for:completionHandler:)`](./beginsheetmodal%28for,completionhandler%29.md) method within that method’s completion handler block.
 

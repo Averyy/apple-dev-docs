@@ -21,7 +21,7 @@ Creates an `EntityIdentifier` representing an instance of the specified entity t
 init<Entity>(for entityType: Entity.Type, identifier: Entity.ID) where Entity : AppEntity
 ```
 
-#### Discussion
+## Discussion
 
 For entity types adopting [`SyncableEntity`](../syncableentity.md), this initializer extracts the stable ID:
 

@@ -23,7 +23,7 @@ func removeGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer)
 - (void) removeGestureRecognizer:(UIGestureRecognizer *) gestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 This method releases `gestureRecognizer` in addition to detaching it from the view.
 

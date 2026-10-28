@@ -25,7 +25,7 @@ let kCLHeadingFilterNone: CLLocationDegrees
 extern const CLLocationDegrees kCLHeadingFilterNone;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to indicate that any change to the heading, regardless of how small, should be reported.
 

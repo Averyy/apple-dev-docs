@@ -5,11 +5,11 @@
 
 Call the initializer that wraps a throwing expression when you need to serialize or memoize the result.
 
-#### Overview
+## Overview
 
 Sometimes you need to preserve the entire result of a function call or other expression that can either throw or return a value. For example, you may need to serialize the result or pass it as a value to another part of your app that handles the result data. Use the [`Result`](./result.md) type in these scenarios to capture the result of a potentially failing operation.
 
-##### Identify a Throwing Expression to Preserve
+### Identify a Throwing Expression to Preserve
 
 Typically, you use `do-catch` statements to handle throwing expressions immediately, but sometimes you need to store the whole result of the operation for later processing during tasks like analyzing a batch of calls. The following example introduces an API that generates random numbers, but that fails approximately half of the time.
 
@@ -29,7 +29,7 @@ struct UnreliableRandomGenerator {
 }
 ```
 
-##### Convert the Throwing Expression to a Result
+### Convert the Throwing Expression to a Result
 
 You preserve the return value or thrown error from a throwing expression using the [`Result`](./result.md) enumeration’s `Swift/Result/init(catching:)` initializer. Invoke the throwing expression inside the closure you pass to the initializer:
 

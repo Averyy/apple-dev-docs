@@ -15,7 +15,7 @@ Queries whether the device can perform SMS operations at this time.
 final func isViable(for cellularServiceID: CellularServiceID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if SMS is currently viabale for the given cellular service; `false`, otherwise.
 

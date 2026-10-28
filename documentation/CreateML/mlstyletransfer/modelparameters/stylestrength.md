@@ -19,7 +19,7 @@ The amount of influence the input style image has in the stylized image output.
 var styleStrength: Int
 ```
 
-#### Discussion
+## Discussion
 
 This parameter’s value must be in the range `[1, 10]`. Higher numbers apply more of the style image than the content image.
 

@@ -24,7 +24,7 @@ var allowsCopying: Bool { get }
 @property (nonatomic, readonly) BOOL allowsCopying;
 ```
 
-#### Discussion
+## Discussion
 
 The ability to copy content from a PDF document is an attribute unrelated to whether the document is locked or unlocked. It depends on the PDF permissions set by the document’s author.
 

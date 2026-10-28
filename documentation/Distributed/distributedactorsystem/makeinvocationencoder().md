@@ -22,7 +22,7 @@ Invoked by the Swift runtime when a distributed remote call is about to be made.
 func makeInvocationEncoder() -> Self.InvocationEncoder
 ```
 
-#### Discussion
+## Discussion
 
 The returned `DistributedTargetInvocation` will be populated with all arguments, generic substitutions, and specific error and return types that are associated with this specific invocation.
 

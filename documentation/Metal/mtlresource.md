@@ -29,7 +29,7 @@ protocol MTLResource : MTLAllocation
 - [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
 - [Synchronizing a managed resource in macOS](./synchronizing-a-managed-resource-in-macos.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Don’t implement this protocol yourself. Create resources by calling methods on [`MTLDevice`](./mtldevice.md), [`MTLBuffer`](./mtlbuffer.md), or [`MTLTexture`](./mtltexture.md).
 

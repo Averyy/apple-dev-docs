@@ -27,7 +27,7 @@ optional func reload(fromOrigin: Bool, for context: WKWebExtensionContext) async
 - (void) reloadFromOrigin:(BOOL) fromOrigin forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Reloads the tab’s web view via [`reload()`](../wkwebview/reload%28%29.md) or [`reloadFromOrigin()`](../wkwebview/reloadfromorigin%28%29.md) if not implemented.
 

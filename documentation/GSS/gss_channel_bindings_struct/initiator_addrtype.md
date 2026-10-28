@@ -23,7 +23,7 @@ var initiator_addrtype: OM_uint32
 OM_uint32 initiator_addrtype;
 ```
 
-#### Discussion
+## Discussion
 
 The field takes one of the constants listed in `Address Families`.
 

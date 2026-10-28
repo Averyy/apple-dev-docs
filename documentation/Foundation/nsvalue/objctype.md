@@ -25,7 +25,7 @@ var objCType: UnsafePointer<CChar> { get }
 @property (readonly) const char * objCType;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides the same string produced by the `@encode()` compiler directive.
 

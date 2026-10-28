@@ -25,7 +25,7 @@ func beginTransparencyLayer(in rect: CGRect, auxiliaryInfo auxInfo: CFDictionary
 extern void CGContextBeginTransparencyLayerWithRect(CGContextRef c, CGRect rect, CFDictionaryRef auxInfo);
 ```
 
-#### Discussion
+## Discussion
 
 This function is identical to [`beginTransparencyLayer(auxiliaryInfo:)`](./begintransparencylayer%28auxiliaryinfo%29.md) except that the content of the transparency layer is within the bounds of the provided rectangle.
 

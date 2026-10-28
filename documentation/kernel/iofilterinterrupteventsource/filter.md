@@ -11,11 +11,11 @@ typedef bool ( *Filter)(
    IOFilterInterruptEventSource *);
 ```
 
-#### Return Value
+## Return Value
 
 false if this interrupt can be ignored.
 
-#### Overview
+## Overview
 
 C Function pointer to a routine to call when an interrupt occurs.
 

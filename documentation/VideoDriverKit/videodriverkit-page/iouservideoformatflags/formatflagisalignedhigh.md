@@ -15,7 +15,7 @@ Set if the sample bits are placed into the high bits of the channel, clear for l
 FormatFlagIsAlignedHigh
 ```
 
-#### Discussion
+## Discussion
 
 This flag is only valid if `FormatFlagIsPacked` is clear.
 

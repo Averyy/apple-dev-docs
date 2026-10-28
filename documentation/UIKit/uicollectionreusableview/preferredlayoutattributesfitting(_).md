@@ -23,11 +23,11 @@ func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayout
 - (UICollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 The final attributes to apply to the cell.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method adjusts the size values to accommodate changes made by a self-sizing cell. Subclasses can override this method and use it to adjust other layout attributes too. If you override this method and want the cell size adjustments, call `super` first and make your own modifications to the returned attributes.
 

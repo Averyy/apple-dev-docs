@@ -20,7 +20,7 @@ var rendersMotionBlur: Bool { get set }
 @property (nonatomic, assign) BOOL rendersMotionBlur;
 ```
 
-#### Discussion
+## Discussion
 
 This property is enabled by default. When set, the view automatically adds motion blur to rendered content which matches the visual characteristics of the motion blur ARKit observes in the camera feed.
 

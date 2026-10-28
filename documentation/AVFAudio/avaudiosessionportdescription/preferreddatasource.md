@@ -23,7 +23,7 @@ var preferredDataSource: AVAudioSessionDataSourceDescription? { get }
 @property (nonatomic, readonly, nullable) AVAudioSessionDataSourceDescription * preferredDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates the data source selected using the [`setPreferredDataSource(_:)`](./setpreferreddatasource%28_%29.md) method. To see the actual data source, use the [`selectedDataSource`](./selecteddatasource.md) property.
 

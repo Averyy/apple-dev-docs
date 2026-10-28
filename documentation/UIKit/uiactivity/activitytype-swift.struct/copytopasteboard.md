@@ -22,7 +22,7 @@ static let copyToPasteboard: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeCopyToPasteboard;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`NSString`](../../../Foundation/nsstring.md), [`UIImage`](../../uiimage.md), [`NSURL`](../../../Foundation/nsurl.md), [`UIColor`](../../uicolor.md), and [`NSDictionary`](../../../Foundation/nsdictionary.md) objects as data for the activity items.
 

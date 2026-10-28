@@ -19,7 +19,7 @@ class NSComboBoxCell
 @interface NSComboBoxCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 [`NSComboBoxCell`](./nscomboboxcell.md) is a subclass of [`NSTextFieldCell`](./nstextfieldcell.md) used to implement the user interface of “combo boxes” (see [`NSComboBox`](./nscombobox.md) for information on how combo boxes look and work). The [`NSComboBox`](./nscombobox.md) subclass of [`NSTextField`](./nstextfield.md) uses a single [`NSComboBoxCell`](./nscomboboxcell.md), and essentially all of the [`NSComboBox`](./nscombobox.md) class’s methods simply invoke the corresponding [`NSComboBoxCell`](./nscomboboxcell.md) method.
 

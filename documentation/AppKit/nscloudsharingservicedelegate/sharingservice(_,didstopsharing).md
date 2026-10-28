@@ -19,7 +19,7 @@ optional func sharingService(_ sharingService: NSSharingService, didStopSharing 
 - (void) sharingService:(NSSharingService *) sharingService didStopSharing:(CKShare *) share;
 ```
 
-#### Discussion
+## Discussion
 
 The cloud-sharing service invokes this method after it deletes the share on the server. The `share` parameter is the most recent state of the share before the service deletes it.
 

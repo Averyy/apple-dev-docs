@@ -21,11 +21,11 @@ final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MT
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
+nonisolated(nonsending)
+final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
-#### Return Value
+## Return Value
 
 The compiled functions for use in a [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 

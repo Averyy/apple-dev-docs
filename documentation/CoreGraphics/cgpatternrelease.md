@@ -21,7 +21,7 @@ Decrements the retain count of a Core Graphics pattern.
 extern void CGPatternRelease(CGPatternRef pattern);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `pattern` parameteris `NULL`.
 

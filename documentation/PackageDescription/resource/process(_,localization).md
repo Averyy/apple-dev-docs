@@ -15,11 +15,11 @@ Applies a platform-specific rules to the resource at the given path.
 static func process(_ path: String, localization: Resource.Localization? = nil) -> Resource
 ```
 
-#### Return Value
+## Return Value
 
 A `Resource` instance.
 
-#### Discussion
+## Discussion
 
 Use the `process` rule to process resources at the given path according to the platform Swift Package Manager builds the target for. For example, Swift Package Manager may optimize image files for platforms that support such optimizations. If no optimization is available for a file type, Swift Package Manager copies the file.
 

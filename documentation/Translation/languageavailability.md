@@ -18,7 +18,7 @@ A check for language support and status.
 class LanguageAvailability
 ```
 
-#### Overview
+## Overview
 
 Use this class to check and see whether the framework supports the language or language pairing you want to offer as a translation. For example, to check if someone’s device supports a translation you can do the following:
 

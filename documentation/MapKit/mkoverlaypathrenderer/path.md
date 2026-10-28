@@ -24,7 +24,7 @@ var path: CGPath! { get set }
 @property (null_resettable) CGPathRef path;
 ```
 
-#### Discussion
+## Discussion
 
 Getting the value of this property causes the method to create the path (using the [`createPath()`](./createpath%28%29.md) method) if it doesn’t already exist. You can assign a path object to this property explicitly. When assigning a new path object to this property, the overlay renderer stores a strong reference to the path you provide.
 

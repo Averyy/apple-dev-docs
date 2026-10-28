@@ -12,11 +12,11 @@ virtual IOReturn unregisterInterrupt(
  void *interruptRef );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Remove a callback previously installed by registerForInterruptType().
 

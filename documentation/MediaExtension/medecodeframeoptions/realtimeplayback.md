@@ -19,7 +19,7 @@ var realTimePlayback: Bool { get set }
 @property (readwrite) BOOL realTimePlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this value to [`false`](../../Swift/false.md) during all uses other than 1x forward real-time playback, including seeking, playback at other rates, and export.
 

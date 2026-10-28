@@ -15,11 +15,11 @@ Enqueues a request on the default control endpoint of the device.
 virtual kern_return_t AsyncDeviceRequest(IOService *forClient, uint8_t bmRequestType, uint8_t bRequest, uint16_t wValue, uint16_t wIndex, uint16_t wLength, IOMemoryDescriptor *dataBuffer, OSAction *completion, uint32_t completionTimeoutMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) if the request was enqueued successfully, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method performs a USB device request (USB 2.0, section 9.3) asynchronously on the default control endpoint. After enqueueing the request, this method returns immediately. If the request was enqueued successfully, the system executes the action in the `completion` parameter after the request finishes.
 

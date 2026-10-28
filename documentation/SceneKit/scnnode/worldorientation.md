@@ -25,7 +25,7 @@ var worldOrientation: SCNQuaternion { get set }
 @property (nonatomic) SCNQuaternion worldOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 This quaternion isolates the rotational aspect of the node’s [`worldTransform`](./worldtransform.md) matrix, which in turn is the conversion of the node’s [`transform`](./transform.md) from local space to the scene’s world coordinate space. That is, it expresses the difference in axis and angle of rotation between the node and the scene’s [`rootNode`](../scnscene/rootnode.md).
 

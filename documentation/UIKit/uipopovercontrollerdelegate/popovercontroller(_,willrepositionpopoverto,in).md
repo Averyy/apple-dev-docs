@@ -22,7 +22,7 @@ optional func popoverController(_ popoverController: UIPopoverController, willRe
 - (void) popoverController:(UIPopoverController *) popoverController willRepositionPopoverToRect:(CGRect *) rect inView:(UIView **) view;
 ```
 
-#### Discussion
+## Discussion
 
 For popovers that were presented using the [`present(from:in:permittedArrowDirections:animated:)`](../uipopovercontroller/present%28from,in,permittedarrowdirections,animated%29.md) method, the popover controller calls this method when the interface orientation changes. Your delegate can use this method to adjust the proposed position of the popover. The popover controller does not call this method if you presented the popover from a bar button item.
 

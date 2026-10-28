@@ -18,7 +18,7 @@ Simulate and render 3D content for use in your augmented reality apps.
 
 - [Designing scene hierarchies for efficient physics simulation](./designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
-#### Overview
+## Overview
 
 RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create apps with 3D or augmented reality (AR) for iOS, iPadOS, macOS, tvOS, and visionOS. RealityKit is an AR-first 3D framework that leverages [ARKit](../ARKit/ARKit.md) to seamlessly integrate virtual objects into the real world.
 

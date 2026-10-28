@@ -25,7 +25,7 @@ func TXTRecordGetValuePtr(_ txtLen: UInt16, _ txtRecord: UnsafeRawPointer!, _ ke
 const void *TXTRecordGetValuePtr(uint16_t txtLen, const void *txtRecord, const char *key, uint8_t *valueLen);
 ```
 
-#### Return Value
+## Return Value
 
 Returns NULL if the key does not exist in this TXT record, or exists with no value (to differentiate between these two cases use TXTRecordContainsKey()). Returns pointer to location within TXT Record bytes if the key exists with empty or non-empty value. For empty value, valueLen will be zero. For non-empty value, valueLen will be length of value data.
 

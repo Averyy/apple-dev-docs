@@ -25,11 +25,11 @@ func copy() -> Any
 - (id) copy;
 ```
 
-#### Return Value
+## Return Value
 
 The object returned by the [`NSCopying`](../../Foundation/nscopying.md) protocol method [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md),.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for classes that adopt the [`NSCopying`](../../Foundation/nscopying.md) protocol. An exception is raised if there is no implementation for [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md).
 

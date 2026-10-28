@@ -30,7 +30,7 @@ extern CFStringRef const kSecAttrLabel;
 - [Adding a password to the keychain](./adding-a-password-to-the-keychain.md)
 - [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains the user-visible label for this item.
 

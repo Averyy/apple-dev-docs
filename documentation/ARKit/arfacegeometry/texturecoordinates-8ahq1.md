@@ -16,7 +16,7 @@ A buffer of texture coordinate values for each point in the face mesh.
 @property (nonatomic, readonly) const simd_float2 * textureCoordinates;
 ```
 
-#### Discussion
+## Discussion
 
 Each `float2` value in this buffer represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](./vertices-fhdb.md) buffer.
 

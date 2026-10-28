@@ -13,7 +13,7 @@
 IFNET_FAMILY_VLAN = 5
 ```
 
-#### Discussion
+## Discussion
 
 A virtual LAN interface.
 

@@ -24,11 +24,11 @@ func JSObjectMake(_ ctx: JSContextRef!, _ jsClass: JSClassRef!, _ data: UnsafeMu
 JSObjectRefJSObjectMake(JSContextRef ctx, JSClassRef jsClass, void *data);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) with the specified class and private data.
 
-#### Discussion
+## Discussion
 
 The default object class doesn’t allocate storage for private data, so you must provide a non-`NULL` `jsClass` to [`JSObjectMake(_:_:_:)`](./jsobjectmake%28_,_,_%29.md) if you want your object to be able to store private data.
 

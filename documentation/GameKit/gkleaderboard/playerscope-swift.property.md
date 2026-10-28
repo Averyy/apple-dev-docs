@@ -35,7 +35,7 @@ var playerScope: GKLeaderboard.PlayerScope { get set }
 @property (atomic, assign) GKLeaderboardPlayerScope playerScope;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit ignores the [`playerScope`](./playerscope-swift.property.md) property if the leaderboard request initializes using the [`init(playerIDs:)`](./init%28playerids%29.md) method. Otherwise, the [`playerScope`](./playerscope-swift.property.md) property determines which players to include in the request for high scores. The default is [`GKLeaderboard.PlayerScope.global`](./playerscope-swift.enum/global.md). See [`GKLeaderboard.PlayerScope`](./playerscope-swift.enum.md) for more information.
 

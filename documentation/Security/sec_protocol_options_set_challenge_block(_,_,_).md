@@ -23,7 +23,7 @@ func sec_protocol_options_set_challenge_block(_ options: sec_protocol_options_t,
 void sec_protocol_options_set_challenge_block(sec_protocol_options_t options, sec_protocol_challenge_t challenge_block, dispatch_queue_t challenge_queue);
 ```
 
-#### Discussion
+## Discussion
 
 Set the challenge block.
 

@@ -17,7 +17,7 @@ The error response details in the response body.
 object ErrorResponseItem
 ```
 
-#### Discussion
+## Discussion
 
 ```json
 {

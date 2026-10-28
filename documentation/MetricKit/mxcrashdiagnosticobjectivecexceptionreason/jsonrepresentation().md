@@ -25,7 +25,7 @@ func jsonRepresentation() -> Data
 - (NSData *) JSONRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../../Foundation/nsdata.md) object containing the JSON representation of the metrics in the payload.
 

@@ -19,11 +19,11 @@ func makeFirstResponder(_ responder: NSResponder?) -> Bool
 - (BOOL) makeFirstResponder:(NSResponder *) responder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the operation is successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `responder` isn’t already the first responder, this method first sends a [`resignFirstResponder()`](../nsresponder/resignfirstresponder%28%29.md) message to the object that is the first responder. If that object refuses to resign, it remains the first responder, and this method immediately returns [`false`](../../Swift/false.md). If the current first responder resigns, this method sends a [`becomeFirstResponder()`](../nsresponder/becomefirstresponder%28%29.md) message to `responder`. If `responder` does not accept first responder status, the `NSWindow` object becomes first responder; in this case, the method returns [`true`](../../Swift/true.md) even if `responder` refuses first responder status.
 

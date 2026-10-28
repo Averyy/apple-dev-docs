@@ -10,7 +10,7 @@ An atom that associates a sample with a sample group description.
 
 - [Representing encoder delay explicitly](./example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Sample-to-group atoms are used to find the group that a sample belongs to and the associated description of that sample group. The sample-to-group atom has an atom type of `‘sbgp’`.
 

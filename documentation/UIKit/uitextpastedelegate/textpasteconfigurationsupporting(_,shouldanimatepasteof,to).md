@@ -22,11 +22,11 @@ optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupportin
 - (BOOL) textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>) textPasteConfigurationSupporting shouldAnimatePasteOfAttributedString:(NSAttributedString *) attributedString toRange:(UITextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the paste or drop operation should not be animated; otherwise, [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 If you don’t want the system to animate the paste or drop operation, implement this method and return [`false`](../../Swift/false.md). The operation is animated if you return [`true`](../../Swift/true.md) or if this method isn’t implemented.
 

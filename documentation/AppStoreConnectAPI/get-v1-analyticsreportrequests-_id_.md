@@ -13,11 +13,11 @@ Get details for and the state of a specific analytics report request.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

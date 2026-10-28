@@ -12,11 +12,11 @@ virtual IOReturn setHardwareAddress(
  const IOEthernetAddress *addrP);
 ```
 
-#### Return Value
+## Return Value
 
 The default implementation will always return kIOReturnUnsupported. If overridden, drivers must return kIOReturnSuccess on success, or an error return code otherwise.
 
-#### Overview
+## Overview
 
 This method is called in response to a client command to change the station address used by the Ethernet controller. Implementation of this method is optional. This method is called from the workloop context.
 

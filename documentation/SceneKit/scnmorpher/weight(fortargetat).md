@@ -25,11 +25,11 @@ func weight(forTargetAt targetIndex: Int) -> CGFloat
 - (CGFloat) weightForTargetAtIndex:(NSUInteger) targetIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A number indicating the contribution of the target geometry to the blended surface, generally between `0.0` and `1.0`.
 
-#### Discussion
+## Discussion
 
 Target geometries and their weights determine the current form of the surface produced by the morpher. For example, if a morpher has one target whose weight is `0.5`, the form of the resulting surface will be halfway between those of the base geometry and the target geometry.
 

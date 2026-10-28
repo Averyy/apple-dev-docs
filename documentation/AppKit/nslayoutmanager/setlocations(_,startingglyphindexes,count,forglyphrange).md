@@ -21,7 +21,7 @@ func setLocations(_ locations: NSPointArray, startingGlyphIndexes glyphIndexes: 
 - (void) setLocations:(NSPointArray) locations startingGlyphIndexes:(NSUInteger *) glyphIndexes count:(NSUInteger) count forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method enables the typesetter to set locations for glyph ranges in bulk. All of the specified glyph indexes should lie within the specified glyph range. The first of them should be equal to `glyphRange.location`, and the remainder should increase monotonically. Each location is set as the location for the range beginning at the corresponding glyph index, and continuing until the subsequent glyph index, or until the end of the glyph range for the last location. Thus this method is equivalent to calling [`setLocation(_:forStartOfGlyphRange:)`](./setlocation%28_,forstartofglyphrange%29.md) for a set of ranges covering all of the glyphs in `glyphRange`.
 

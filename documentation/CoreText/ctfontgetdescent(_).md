@@ -25,7 +25,7 @@ func CTFontGetDescent(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetDescent(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font-descent metric scaled according to the point size and matrix of the font reference.
 

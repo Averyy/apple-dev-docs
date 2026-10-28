@@ -25,7 +25,7 @@ func NSProtocolFromString(_ namestr: String) -> Protocol?
 extern Protocol *NSProtocolFromString(NSString *namestr);
 ```
 
-#### Return Value
+## Return Value
 
 The protocol object named by `namestr`, or `nil` if no protocol by that name is currently loaded. If `namestr` is `nil`, returns `nil`.
 

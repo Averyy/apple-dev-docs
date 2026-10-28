@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard localization create
 object GameCenterLeaderboardLocalizationV2CreateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - relationships:

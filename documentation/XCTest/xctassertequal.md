@@ -16,7 +16,7 @@ Asserts that two expressions have the same value.
 
 - [Defining Test Cases and Test Methods](./defining-test-cases-and-test-methods.md)
 
-#### Discussion
+## Discussion
 
 Generates a failure when `expression1 != expression2`.
 

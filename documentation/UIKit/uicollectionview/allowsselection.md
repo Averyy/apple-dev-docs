@@ -23,7 +23,7 @@ var allowsSelection: Bool { get set }
 @property (nonatomic) BOOL allowsSelection;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md) (the default), users can select items. If you want more fine-grained control over the selection of items, you must provide a delegate object and implement the appropriate methods of the [`UICollectionViewDelegate`](../uicollectionviewdelegate.md) protocol.
 

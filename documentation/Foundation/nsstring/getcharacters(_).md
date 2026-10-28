@@ -27,7 +27,7 @@ func getCharacters(_ buffer: UnsafeMutablePointer<unichar>)
 - (void) getCharacters:(unichar *) buffer;
 ```
 
-#### Discussion
+## Discussion
 
 Invokes [`getCharacters(_:range:)`](./getcharacters%28_,range%29.md) with `buffer` and the entire extent of the receiver as the range.
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Controlling where your computations are evaluated.
 
-#### Specifying the Stream
+## Specifying the Stream
 
 All operations, including random number generation, take an optional `stream:` argument. It defaults to [`defaultStream`](./stream/defaultstream.md) – the default stream of the default device.
 
@@ -26,7 +26,7 @@ let b = uniform(0 ..< 1, [100, 100], stream: .gpu)
 
 The argument is a [`StreamOrDevice`](./streamordevice.md). [`cpu`](./streamordevice/cpu.md) and [`gpu`](./streamordevice/gpu.md) select whichever stream is currently in effect for that device, which the scopes below control.
 
-#### Scoping the Default Device
+## Scoping the Default Device
 
 To avoid passing `stream:` to every call, change the default device for a scope. [`withDefaultDevice(_:_:)`](./device/withdefaultdevice%28_,_%29-17vjl.md) does this without creating any new streams:
 
@@ -40,7 +40,7 @@ Device.withDefaultDevice(.cpu) {
 
 Inside the scope, [`defaultDevice()`](./device/defaultdevice%28%29.md) returns the CPU device and [`default`](./streamordevice/default.md) resolves to the CPU stream. On exit, the previous default is restored.
 
-#### Scoping a New Stream
+## Scoping a New Stream
 
 [`withNewDefaultStream(device:_:)`](./stream/withnewdefaultstream%28device,_%29-5bwc3.md) sets the default device and creates *new* streams for the scope:
 
@@ -67,7 +67,7 @@ This does not affect correctness: MLX inserts dependencies between streams autom
 
 Both calls nest arbitrarily, and both have `async` variants.
 
-#### Propagating Scopes Across Tasks
+## Propagating Scopes Across Tasks
 
 These scopes are task-local. They are inherited by `async let` and by child tasks of a `TaskGroup`:
 
@@ -92,7 +92,7 @@ Task.detached {
 }
 ```
 
-#### Holding a Stream Directly
+## Holding a Stream Directly
 
 When a stream must outlive a single scope, create a [`Stream`](./stream.md) and pass it explicitly:
 

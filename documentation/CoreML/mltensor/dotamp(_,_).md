@@ -21,7 +21,7 @@ Computes element-wise logical AND where both operands are expected contain Boole
 static func .& (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

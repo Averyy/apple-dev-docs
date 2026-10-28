@@ -19,7 +19,7 @@ Returns the on-curve point for the floating point parametric value.
 func interpolatedLocation(at parametricValue: CGFloat) -> CGPoint
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGPoint`](../../CoreFoundation/cgpoint.md) interpolated from the supplied `parametricValue`.
 

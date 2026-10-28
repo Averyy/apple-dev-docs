@@ -25,7 +25,7 @@ let NSURLCredentialStorageRemoveSynchronizableCredentials: String
 extern NSString * const NSURLCredentialStorageRemoveSynchronizableCredentials;
 ```
 
-#### Discussion
+## Discussion
 
 If the key is missing or the value is `@NO`, then no attempt will be made to remove such a credential.
 

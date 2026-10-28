@@ -25,7 +25,7 @@ var position: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 position;
 ```
 
-#### Discussion
+## Discussion
 
 The node’s position locates it within the coordinate system of its parent, as modified by the node’s [`pivot`](./pivot.md) property. The default position is the zero vector, indicating that the node is placed at the origin of the parent node’s coordinate system.
 

@@ -19,7 +19,7 @@ func setFlags(_ flags: AuthorizationFlags)
 - (void) setFlags:(AuthorizationFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to change the authorization flag settings made with the [`setAuthorizationRights(_:)`](./setauthorizationrights%28_%29.md) method or to specify flags other than the default ([`kAuthorizationFlagDefaults`](../../Security/authorizationflags/kauthorizationflagdefaults.md)) used by the [`setString(_:)`](./setstring%28_%29.md) method.
 

@@ -21,7 +21,7 @@ The closure to execute when CloudKit deletes a record zone.
 @property (nonatomic, copy, nullable) void (^)(CKRecordZoneID *, NSError *) perRecordZoneDeleteBlock;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

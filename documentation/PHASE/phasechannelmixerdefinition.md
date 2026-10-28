@@ -24,7 +24,7 @@ class PHASEChannelMixerDefinition
 @interface PHASEChannelMixerDefinition : PHASEMixerDefinition
 ```
 
-#### Overview
+## Overview
 
 Use this class to play one-time sounds such as menu clicks.
 

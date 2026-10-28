@@ -25,7 +25,7 @@ func CFFileSecuritySetOwner(_ fileSec: CFFileSecurity!, _ owner: uid_t) -> Bool
 extern Boolean CFFileSecuritySetOwner(CFFileSecurityRef fileSec, uid_t owner);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the owner ID property was successfully set, otherwise `false`.
 

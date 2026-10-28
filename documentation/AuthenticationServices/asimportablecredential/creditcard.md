@@ -19,7 +19,7 @@ A type to represent credit card information.
 struct CreditCard
 ```
 
-#### Overview
+## Overview
 
 This type is a representation of `CreditCard` as defined in the Credential Exchange Format (CXF) specification.
 

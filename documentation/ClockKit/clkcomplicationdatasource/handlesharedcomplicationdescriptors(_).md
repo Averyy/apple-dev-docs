@@ -25,7 +25,7 @@ optional func handleSharedComplicationDescriptors(_ complicationDescriptors: [CL
 
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 ClockKit calls this method when the Apple Watch receives a shared watch face that contains one or more of your app’s complications. Implement this method to prepare your app so that it can provide complication data for the descriptors.
 

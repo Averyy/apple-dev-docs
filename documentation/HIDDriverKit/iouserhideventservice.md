@@ -16,13 +16,13 @@ A service that parses HID report data into elements that you can use to dispatch
 class IOUserHIDEventService;
 ```
 
-#### Overview
+## Overview
 
 Subclass `IOUserHIDEventService` when you want to process incoming data from a HID device before dispatching it to the system. An event service collects the report from a device, parses it into individual data elements, and dispatches events based on the information in those elements. Create a custom event service when you need to synthesize custom event data, or when you need to process the existing data before dispatching the corresponding events.
 
 To implement a custom event service, override the [`handleReport`](./iouserhideventservice/handlereport.md) method and use it to iterate over the report contents and dispatch any relevant events. To get the report data, call the [`getElements`](./iouserhideventservice/getelements.md) method each time a new report arrives. (Also call that method in your service’s [`Start`](./iouserhideventservice/start.md) method to create the elements initially.) The method returns a set of [`IOHIDElement`](./iohidelement.md) objects that contain a parsed version of the report data. Each time you call the method, the system updates the elements to incorporate the data from the latest report.
 
-##### Specify the Driver’s Personality Information
+### Specify the Driver’s Personality Information
 
 When you subclass `IOUserHIDEventService`, update the `IOKitPersonalities` key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table.
 

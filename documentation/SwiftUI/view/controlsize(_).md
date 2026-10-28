@@ -29,7 +29,7 @@ nonisolated
 func controlSize<T>(_ range: T) -> some View where T : RangeExpression, T.Bound == ControlSize
 ```
 
-#### Discussion
+## Discussion
 
 Use `controlSize(_:)` to override the system default size for controls in this view. In this example, a view displays several typical controls at `.mini`, `.small` and `.regular` sizes.
 

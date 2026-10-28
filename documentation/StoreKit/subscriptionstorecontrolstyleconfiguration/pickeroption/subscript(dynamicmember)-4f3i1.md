@@ -20,7 +20,7 @@ Facilitates accessing subscription properties on a picker option value.
 subscript<T>(dynamicMember keyPath: KeyPath<Product.SubscriptionInfo, T>) -> T? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You don’t use this subscript directly. Instead, access the properties of a [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on a [`SubscriptionStoreControlStyleConfiguration.PickerOption`](../pickeroption.md) value.
 

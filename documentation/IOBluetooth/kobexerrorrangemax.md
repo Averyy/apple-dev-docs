@@ -17,7 +17,7 @@ var kOBEXErrorRangeMax: OBEXErrorCodes { get }
 kOBEXErrorRangeMax
 ```
 
-#### Discussion
+## Discussion
 
 Maximum value in OBEX error range.
 

@@ -5,13 +5,13 @@
 
 Use custom aliases to share configurations with multiple workflows.
 
-#### Overview
+## Overview
 
 Custom aliases let you set up and manage common Xcode and macOS configurations that you can apply to multiple workflows. For example, create custom aliases to change Xcode versions for multiple workflows in one place. You can manage custom aliases in Xcode and in App Store Connect.
 
 Before you begin, configure your project to use Xcode Cloud and create two or more workflows to share custom aliases with.
 
-##### Manage custom aliases in Xcode
+### Manage custom aliases in Xcode
 
 To create custom aliases in Xcode:
 
@@ -36,7 +36,7 @@ To apply custom aliases to workflows in Xcode:
 
 To create another custom alias, choose New [Xcode | macOS] Version Alias or Manage Custom Aliases from the Version pop-up menu in the Environment sheet.
 
-##### Manage custom aliases in App Store Connect
+### Manage custom aliases in App Store Connect
 
 You can also apply custom aliases to workflows in App Store Connect with the following steps:
 

@@ -19,7 +19,7 @@ static let candidateList: NSTouchBarItem.Identifier
 extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierCandidateList;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the identifier for [`NSCandidateListTouchBarItem`](../../nscandidatelisttouchbaritem.md). Use a candidate list bar item to show word completion candidates to assist users typing text.
 

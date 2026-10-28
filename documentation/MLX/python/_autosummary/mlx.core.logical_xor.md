@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.logical_xor
 
-**logical_xor(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise logical exclusive or.
+```python
+logical_xor(a: scalar | array, b: scalar | array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Element-wise logical exclusive or.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – First input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Second input array or scalar.
+**Parameters:**
 
-Returns:
-The boolean array containing the logical xor of `a` and `b`.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – First input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Second input array or scalar.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array containing the logical xor of `a` and `b`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

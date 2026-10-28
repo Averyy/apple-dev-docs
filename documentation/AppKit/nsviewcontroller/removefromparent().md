@@ -19,7 +19,7 @@ func removeFromParent()
 - (void) removeFromParentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove a child view controller from its parent view controller, unless you want to perform work during the removal. In that case, instead override the [`removeChild(at:)`](./removechild%28at%29.md) method to perform that work and call that method.
 

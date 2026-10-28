@@ -20,7 +20,7 @@ Defines update order relative to other systems. An object that specifies the upd
 enum SystemDependency
 ```
 
-#### Overview
+## Overview
 
 Add instances of `SystemDependency` to your system’s [`dependencies`](./system/dependencies.md) array to indicate whether RealityKit updates another specified system before or after this system.
 

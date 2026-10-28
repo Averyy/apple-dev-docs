@@ -25,7 +25,7 @@ var shouldAddStoreAsynchronously: Bool { get set }
 @property BOOL shouldAddStoreAsynchronously;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the store is added to the [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) synchronously on the calling thread. If this flag is set to [`true`](../../Swift/true.md), the store is added asynchronously on a background queue. The default for this flag is [`false`](../../Swift/false.md).
 

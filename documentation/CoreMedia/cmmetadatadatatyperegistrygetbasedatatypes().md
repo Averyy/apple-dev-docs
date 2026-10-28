@@ -25,11 +25,11 @@ func CMMetadataDataTypeRegistryGetBaseDataTypes() -> CFArray?
 extern CFArrayRefCMMetadataDataTypeRegistryGetBaseDataTypes();
 ```
 
-#### Return Value
+## Return Value
 
 An array of the base data types to which all others must conform.
 
-#### Discussion
+## Discussion
 
 There are a set of base data types that seed the data type registry. All valid data types will have their conformance search end with a base data type.
 

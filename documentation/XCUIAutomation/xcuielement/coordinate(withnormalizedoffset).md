@@ -25,7 +25,7 @@ func coordinate(withNormalizedOffset normalizedOffset: CGVector) -> XCUICoordina
 - (XCUICoordinate *) coordinateWithNormalizedOffset:(CGVector) normalizedOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate’s screen point is computed by adding `normalizedOffset` multiplied by the size of the element’s frame to the origin of the element’s frame.
 

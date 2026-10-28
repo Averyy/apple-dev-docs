@@ -24,7 +24,7 @@ static let symbolic: UIFontDescriptor.TraitKey
 extern UIFontDescriptorTraitKey const UIFontSymbolicTrait;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key with a trait dictionary to get the symbolic traits value as an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

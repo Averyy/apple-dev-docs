@@ -23,7 +23,7 @@ var isEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can only modify a credential identity store that’s enabled.
 

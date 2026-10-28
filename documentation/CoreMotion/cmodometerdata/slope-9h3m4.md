@@ -20,7 +20,7 @@ The slope at the location toward the direction of travel, measured in degrees.
 var slope: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the slope measurement is invalid, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 

@@ -24,7 +24,7 @@ class func setAnimationTimingFunction(_ function: CAMediaTimingFunction?)
 + (void) setAnimationTimingFunction:(CAMediaTimingFunction *) function;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that sets the [`CAMediaTimingFunction`](../camediatimingfunction.md) for the [`value(forKey:)`](./value%28forkey%29.md) value of  the  [`kCATransactionAnimationTimingFunction`](../kcatransactionanimationtimingfunction.md) key.
 

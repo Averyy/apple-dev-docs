@@ -22,7 +22,7 @@ init(operation: UIDropOperation, intent: UITableViewDropProposal.Intent)
 - (instancetype) initWithDropOperation:(UIDropOperation) operation intent:(UITableViewDropIntent) intent;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized drop proposal.
 

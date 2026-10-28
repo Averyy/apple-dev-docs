@@ -32,7 +32,7 @@ var subtitle: String { get set }
 @property (atomic, copy, readwrite) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify additional context about the purpose of the notification. Subtitles offer additional context in cases where the title alone isn’t clear. Subtitles aren’t displayed in all cases. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 

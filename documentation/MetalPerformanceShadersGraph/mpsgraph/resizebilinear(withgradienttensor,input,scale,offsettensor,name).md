@@ -24,11 +24,11 @@ func resizeBilinear(withGradientTensor gradient: MPSGraphTensor, input: MPSGraph
 - (MPSGraphTensor *) resizeBilinearWithGradientTensor:(MPSGraphTensor *) gradient input:(MPSGraphTensor *) input scaleTensor:(MPSGraphTensor *) scale offsetTensor:(MPSGraphTensor *) offset name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Computes the gradient for the forward pass Resize op with bilinear sampling and identical parameters.
 

@@ -21,7 +21,7 @@ A circular overlay with a configurable radius that you center on a geographic co
 struct MapCircle
 ```
 
-#### Overview
+## Overview
 
 Use this view to create circular overlays in the closure you provide to the `content` parameter in [`Map`](./map.md) initializers.
 

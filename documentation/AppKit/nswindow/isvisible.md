@@ -19,7 +19,7 @@ var isVisible: Bool { get }
 @property (readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is onscreen (even if it’s obscured by other windows); otherwise, [`false`](../../Swift/false.md).
 

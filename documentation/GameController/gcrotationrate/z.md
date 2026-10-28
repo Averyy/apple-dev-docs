@@ -24,7 +24,7 @@ var z: Double
 double z;
 ```
 
-#### Discussion
+## Discussion
 
 The sign of the rotation follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
 

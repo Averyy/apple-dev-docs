@@ -21,7 +21,7 @@ The original transaction identifier of a purchase.
 let originalID: UInt64
 ```
 
-#### Discussion
+## Discussion
 
 The original transaction identifier, [`originalID`](./originalid.md), is identical to [`id`](./id.md) except when the user restores a purchase or renews a transaction. You can use this value to:
 

@@ -20,7 +20,7 @@ Returns a command that runs unconditionally before every build.
 case prebuildCommand(displayName: String?, executable: URL, arguments: [String], environment: [String : String] = [:], outputFilesDirectory: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Prebuild commands can have a significant performance impact and should only be used when there would be no way to know the list of output file paths without first reading the contents of one or more input files. Typically there is no way to determine this list without first running the command, so instead of encoding that list, the caller supplies an `outputFilesDirectory` parameter, and all files in that directory after the command runs are treated as the output files of the plugin.
 

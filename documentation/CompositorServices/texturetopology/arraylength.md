@@ -20,7 +20,7 @@ var arrayLength: UInt64 { get }
 uint64_t cp_texture_topology_get_array_length(cp_texture_topology_t texture_topology);
 ```
 
-#### Discussion
+## Discussion
 
 Array-based texture types such as [`MTLTextureType.type2DArray`](../../Metal/mtltexturetype/type2darray.md) manage one or more images of the same size. The array length represents the number of separate images the texture manages. Other array types store only one image.
 

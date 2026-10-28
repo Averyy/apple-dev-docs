@@ -21,11 +21,11 @@ Creates an utterance with the text string that you specify for the speech synthe
 + (instancetype) speechUtteranceWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVSpeechUtterance`](../avspeechutterance.md) object that can speak the specified text.
 
-#### Discussion
+## Discussion
 
 To speak the text, pass the utterance to an instance of [`AVSpeechSynthesizer`](../avspeechsynthesizer.md).
 

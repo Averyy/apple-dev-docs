@@ -22,7 +22,7 @@ protocol INBookRestaurantReservationIntentHandling : NSObjectProtocol
 @protocol INBookRestaurantReservationIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INBookRestaurantReservationIntentHandling`](./inbookrestaurantreservationintenthandling.md) protocol to resolve, confirm, and handle requests to book a reservation based on the provided information. The system delivers an [`INBookRestaurantReservationIntent`](./inbookrestaurantreservationintent.md) object to your handler with the reservation details, including the restaurant, date, party size, and any special offers selected by the user. Use that intent object to complete the reservation in your system and to communicate the reservation details to the restaurant itself.
 

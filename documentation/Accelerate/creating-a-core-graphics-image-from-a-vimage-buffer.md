@@ -5,11 +5,11 @@
 
 Create displayable representations of vImage buffers.
 
-#### Overview
+## Overview
 
 vImage provides a function for creating Core Graphics images from vImage buffers. This function allows you to display the results of a vImage operation to your user.
 
-##### Create the Image
+### Create the Image
 
 You create a Core Graphics image from the buffer, and initialize a [`UIImage`](../UIKit/uiimage.md) instance from that. The [`createCGImage(format:flags:)`](./vimage_buffer/createcgimage%28format,flags%29.md) function returns a [`CGImage`](../CoreGraphics/cgimage.md) instance based on the supplied Core Graphics image format (for more information, see [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)).
 

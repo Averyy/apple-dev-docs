@@ -22,11 +22,11 @@ nonisolated
 func refreshable(action: @escaping @Sendable () async -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with a new refresh action in its environment.
 
-#### Discussion
+## Discussion
 
 Apply this modifier to a view to set the [`refresh`](../environmentvalues/refresh.md) value in the view’s environment to a [`RefreshAction`](../refreshaction.md) instance that uses the specified `action` as its handler. Views that detect the presence of the instance can change their appearance to provide a way for a person to execute the handler.
 

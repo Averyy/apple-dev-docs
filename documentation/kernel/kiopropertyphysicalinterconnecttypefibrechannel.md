@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeFibreChannel
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Fibre Channel Interface for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to a Fibre Channel port, this key should be set.
 

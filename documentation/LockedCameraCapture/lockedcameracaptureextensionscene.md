@@ -17,7 +17,7 @@ A protocol that provides the UI for the locked camera capture extension.
 protocol LockedCameraCaptureExtensionScene : AppExtensionScene
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol with the [`LockedCameraCaptureUIScene`](./lockedcameracaptureuiscene.md) providing the UI.
 

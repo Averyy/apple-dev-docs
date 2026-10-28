@@ -16,7 +16,7 @@ typedef struct IOUSBLowLatencyIsocCompletion {
 } IOUSBLowLatencyIsocCompletion;
 ```
 
-#### Overview
+## Overview
 
 Struct specifying action to perform when an Low Latency Isochronous USB I/O completes.
 

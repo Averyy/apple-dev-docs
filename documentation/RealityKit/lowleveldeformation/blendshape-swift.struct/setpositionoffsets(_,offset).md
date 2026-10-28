@@ -18,7 +18,7 @@ Sets the buffer containing blend-shape position offsets.
 func setPositionOffsets(_ buffer: any MTLBuffer, offset: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 The buffer must contain `targetCount × vertexCount` entries in the same format as the input mesh’s `.position` attribute.
 

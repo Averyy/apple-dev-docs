@@ -15,11 +15,11 @@ Creates an iterator to get the list of interfaces from the device.
 virtual kern_return_t CreateInterfaceIterator(uintptr_t *ref);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to create an iterator for the [`IOUSBHostInterface`](../iousbhostinterface.md) children belonging to this device. Pass the value you receive in the `ref` parameter to the [`CopyInterface`](./copyinterface.md) method when fetching the interfaces.
 

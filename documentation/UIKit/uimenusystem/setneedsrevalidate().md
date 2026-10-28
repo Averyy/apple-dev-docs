@@ -23,7 +23,7 @@ func setNeedsRevalidate()
 - (void) setNeedsRevalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your app needs to revalidate a menu, such as when the state of your app changes.
 

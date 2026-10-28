@@ -21,7 +21,7 @@ The paper size for the document.
 static let paperSize: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../../nsvalue.md) object containing an [`NSSize`](../../nssize.md).
 

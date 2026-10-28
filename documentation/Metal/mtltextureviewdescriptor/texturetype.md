@@ -22,7 +22,7 @@ var textureType: MTLTextureType { get set }
 @property (nonatomic, readwrite) MTLTextureType textureType;
 ```
 
-#### Discussion
+## Discussion
 
 A desired texture view of a texture view.
 

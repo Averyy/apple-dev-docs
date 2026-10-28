@@ -21,7 +21,7 @@ The default quality-of-service class.
 static let `default`: DispatchQoS
 ```
 
-#### Discussion
+## Discussion
 
 Default tasks have a lower priority than user-initiated and user-interactive tasks, but a higher priority than utility and background tasks. Assign this class to tasks or queues that your app initiates or uses to perform active work on the user’s behalf.
 

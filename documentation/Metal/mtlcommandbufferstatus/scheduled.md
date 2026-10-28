@@ -28,7 +28,7 @@ MTLCommandBufferStatusScheduled
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 See the [`MTLCommandBuffer`](../mtlcommandbuffer.md) protocol’s [`status`](../mtlcommandbuffer/status.md) property for more information.
 

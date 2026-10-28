@@ -23,7 +23,7 @@ var auxiliaryStorage: VZMacAuxiliaryStorage? { get set }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 When creating a VM, the hardware model of the `auxiliaryStorage` must match the hardware model of the `hardwareModel` property. Defaults to `nil`, but you must set a value for a configuration to be valid.
 

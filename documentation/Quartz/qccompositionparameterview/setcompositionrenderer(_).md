@@ -21,7 +21,7 @@ func setCompositionRenderer(_ renderer: (any QCCompositionRenderer)!)
 - (void) setCompositionRenderer:(id<QCCompositionRenderer>) renderer;
 ```
 
-#### Discussion
+## Discussion
 
 If the renderer is a [`QCView`](../qcview.md) object, the view track the composition.
 

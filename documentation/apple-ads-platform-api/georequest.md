@@ -15,13 +15,13 @@ A single geo entity lookup criterion used in a geo location search request.
 object GeoRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `GeoRequest` object specifies a single geographic entity to look up within a [`GeoSearchPostRequest`](./geosearchpostrequest.md). Both identifiers work for any entity type. Use whichever you already have. Search results return both so you can switch between them freely.
 
 To batch-resolve geo entity eligibility in one call, use multiple `GeoRequest` objects in a single `GeoSearchPostRequest`.
 
-##### Example
+### Example
 
 ```json
 {

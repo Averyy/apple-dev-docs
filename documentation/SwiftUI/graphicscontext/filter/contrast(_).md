@@ -21,11 +21,11 @@ Returns a filter that applies a contrast adjustment.
 static func contrast(_ amount: Double) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a contrast adjustment.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `contrast` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

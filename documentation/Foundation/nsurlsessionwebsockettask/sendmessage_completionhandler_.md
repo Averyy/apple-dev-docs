@@ -21,7 +21,7 @@ Sends a WebSocket message, receiving the result in a completion handler.
 - (void) sendMessage:(NSURLSessionWebSocketMessage *) message completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If an error occurs while sending the message, any outstanding work also fails.
 

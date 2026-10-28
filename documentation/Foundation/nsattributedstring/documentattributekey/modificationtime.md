@@ -15,7 +15,7 @@ The modification date of the document.
 static let modificationTime: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDate`](../../nsdate.md) object containing the modification date of the document contents.
 

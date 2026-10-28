@@ -23,7 +23,7 @@ var passwordRulesDescriptor: String { get }
 @property (nonatomic, readonly) NSString * passwordRulesDescriptor;
 ```
 
-#### Overview
+## Overview
 
 To learn more about the syntax of password rules, see [Customizing Password AutoFill rules](../../Security/customizing-password-autofill-rules.md).
 

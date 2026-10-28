@@ -21,7 +21,7 @@ var buttons: [CPTextButton] { get }
 @property (nonatomic, copy, readonly) NSArray<CPTextButton *> * buttons;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The multi-stop card may display a maximum of 2 buttons. Setting more than 2 buttons to this property will only display the first 2 buttons.
 

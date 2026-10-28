@@ -25,7 +25,7 @@ func enableAutoRenewForTransaction(identifier: Int) throws
 - (BOOL) enableAutoRenewForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to enable the subscription to automatically renew in the testing environment. By default, all auto-renewable subscriptions have auto-renew enabled.
 

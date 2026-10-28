@@ -16,7 +16,7 @@ Render value reserved as invalid.
 static let invalid: LayerRenderer.Drawable.TrackingArea.RenderValue
 ```
 
-#### Discussion
+## Discussion
 
 Value to be used in the tracking area texture, to indicate that there is no tracking area at a given pixel.
 

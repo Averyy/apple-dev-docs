@@ -5,7 +5,7 @@
 
 Direct app intents to a specific SwiftUI or UIKit scene and use the app intent to configure the content of the scene.
 
-#### Overview
+## Overview
 
 Some app intent protocols cause your app to come to the foreground so it can display action-specific details. For example, an app intent based on the [`OpenIntent`](./openintent.md) protocol tells your app to display content for a specific data item or entity, and an app intent based on the [`ShowInAppSearchResultsIntent`](./showinappsearchresultsintent.md) protocol tells your app to display the results of a search. Instead of making any interface-related changes from your app intent’s [`perform()`](./appintent/perform%28%29.md) method, a better approach is to make those changes from your scene code. To do that, you need the system to route relevant app intents to your app’s scenes, and you need to update your scene code to receive those app intents and update your views.
 
@@ -13,7 +13,7 @@ The system routes app intents to scenes with the help of the app intent’s targ
 
 > **Note**: Dispatching app intents to your SwiftUI and UIKit scenes is one option for updating your interface. For information about additional options, see [Update your app’s interface using your app intent](./configuring-the-runtime-behavior-of-your-app-intents.md#Update-your-apps-interface-using-your-app-intent).
 
-##### Update your app intent to support scene-based routing
+### Update your app intent to support scene-based routing
 
 The system routes an app intent to one of your scenes only when the app intent implements the [`TargetContentProvidingIntent`](./targetcontentprovidingintent.md) or [`UISceneAppIntent`](./uisceneappintent.md) protocol. If you’re building scenes using SwiftUI, add the [`TargetContentProvidingIntent`](./targetcontentprovidingintent.md) protocol to any app intents you want the system to direct to those scenes. If you’re building scenes using UIKit, add the [`UISceneAppIntent`](./uisceneappintent.md) protocol to your app intents instead. Both protocols add a default implementation of the [`contentIdentifier`](./targetcontentprovidingintent/contentidentifier.md) property to your app intent, which provides the target content identifier the system needs to match your app intent to a scene. You can also add a custom implementation of the property to your app intent types if you want to supply a custom target content identifier for your type.
 
@@ -27,7 +27,7 @@ struct ShowBrowserAppIntent: AppIntent, TargetContentProvidingIntent {
 
 > **Note**: If you don’t include the [`TargetContentProvidingIntent`](./targetcontentprovidingintent.md) or [`UISceneAppIntent`](./uisceneappintent.md) protocol in an app intent, the system doesn’t route the app intent to one of your scenes.
 
-##### Match your app intent to a scene or view at runtime
+### Match your app intent to a scene or view at runtime
 
 When the system prepares to run an app intent, it checks to see if the app intent implements the [`TargetContentProvidingIntent`](./targetcontentprovidingintent.md) or [`UISceneAppIntent`](./uisceneappintent.md) protocol. If it does, the system examines the app’s scenes to determine if one of them wants to handle the app intent. If it finds a scene, the system dispatches the app intent to the scene before calling the app intent’s [`perform()`](./appintent/perform%28%29.md) method. Your scene code uses the app intent to configure its views to display the associated information. After that configuration, the system brings your app to the foreground to display the content.
 
@@ -72,7 +72,7 @@ struct BrowserView: View {
 
 To configure the activation conditions in a UIKit scene, create predicates to match the target content identifiers of any incoming app intents. For an example of how to configure these activation conditions, see [Supporting multiple windows on iPad](../UIKit/supporting-multiple-windows-on-ipad.md).
 
-##### Configure the contents of the scene
+### Configure the contents of the scene
 
 After determining which scene handles an app intent, the system dispatches the app intent to the scene so it can configure its views. The dispatching process happens in the background, giving the scene a chance to configure its views before any changes become visible. The scene configuration also happens before the system calls the app intent’s [`perform()`](./appintent/perform%28%29.md) method, giving you the opportunity to prepare your interface before the app intent does anything. For example, if the app intent plays a video, your scene needs to configure the views for the video before playback can start. To configure your scene:
 

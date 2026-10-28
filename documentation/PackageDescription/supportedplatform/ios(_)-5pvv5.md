@@ -12,11 +12,11 @@ Configures the minimum deployment target version for the iOS platform.
 static func iOS(_ version: SupportedPlatform.IOSVersion) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.0.
 

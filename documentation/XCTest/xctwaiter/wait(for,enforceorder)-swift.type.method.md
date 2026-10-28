@@ -16,11 +16,11 @@ class func wait(for expectations: [XCTestExpectation], enforceOrder enforceOrder
 + (XCTWaiterResult) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations enforceOrder:(BOOL) enforceOrderOfFulfillment;
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`. The test discards the waiter when the wait completes.
 
-#### Discussion
+## Discussion
 
 In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [Concurrency](../../Swift/concurrency.md) instead of an expectation to wait on the result of a completion handler.
 

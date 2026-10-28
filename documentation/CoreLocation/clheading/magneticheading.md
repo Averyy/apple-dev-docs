@@ -23,7 +23,7 @@ var magneticHeading: CLLocationDirection { get }
 @property (nonatomic, readonly) CLLocationDirection magneticHeading;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents the heading relative to the magnetic North Pole, which is different from the geographic North Pole. The value `0` means the device is pointed toward magnetic north, `90` means it is pointed east, `180` means it is pointed south, and so on. The value in this property should always be valid.
 

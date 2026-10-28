@@ -15,7 +15,7 @@ Sends an encrypted message to a specified destination.
 final func sendEncryptedMessageRequest(_ request: RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result
 ```
 
-#### Discussion
+## Discussion
 
 Your app may persist the returned [`RCSMessage.SecureSendReceipt`](../rcsmessage/securesendreceipt.md) instance to retry sending the message in the event that the recipient device fails to decrypt the original message.
 

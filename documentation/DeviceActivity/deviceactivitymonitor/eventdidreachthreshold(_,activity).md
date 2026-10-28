@@ -17,7 +17,7 @@ Indicates that the activity reached its threshold.
 func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this method when use of the `activity` reaches its threshold.
 

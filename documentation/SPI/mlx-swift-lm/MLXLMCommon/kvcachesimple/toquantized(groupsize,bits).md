@@ -17,7 +17,7 @@ Convert to a quantized cache for maximum efficiency.
 func toQuantized(groupSize: Int = 64, bits: Int = 4) throws -> QuantizedKVCache
 ```
 
-#### Discussion
+## Discussion
 
 Use `updateQuantized()` and `quantizedScaledDotProductAttention()` for zero-overhead operation.
 

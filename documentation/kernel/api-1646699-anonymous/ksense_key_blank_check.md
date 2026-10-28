@@ -13,7 +13,7 @@
 kSENSE_KEY_BLANK_CHECK = 0x08
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a blank check condition.
 

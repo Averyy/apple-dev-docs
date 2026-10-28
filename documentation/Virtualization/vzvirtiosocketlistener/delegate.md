@@ -19,7 +19,7 @@ weak var delegate: (any VZVirtioSocketListenerDelegate)? { get set }
 @property (weak, nullable) id<VZVirtioSocketListenerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate object must conform to the [`VZVirtioSocketListenerDelegate`](../vzvirtiosocketlistenerdelegate.md) protocol.
 

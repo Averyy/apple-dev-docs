@@ -20,7 +20,7 @@ Data is unavailable for the requested query and predicate.
 static var errorNoData: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that no data exists that corresponds to a particular query, so the system can’t calculate the query’s result. [`HKStatisticsQuery`](../hkstatisticsquery.md) queries return this error when HealthKit can’t return the data needed to calculate the statistics.
 

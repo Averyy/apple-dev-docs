@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md) after you have enabled hardware accelerated decode using [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](./kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md) to see if a hardware accelerated decoder was selected.
 

@@ -24,7 +24,7 @@ static let reveal: CATransitionType
 extern CATransitionType const kCATransitionReveal;
 ```
 
-#### Discussion
+## Discussion
 
 The [Common Transition Subtypes](../common-transition-subtypes.md) are used with this transition.
 

@@ -21,7 +21,7 @@ Defines how typesetting language is determined for text.
 struct TypesettingLanguage
 ```
 
-#### Overview
+## Overview
 
 Use a modifier like [`typesettingLanguage(_:isEnabled:)`](./view/typesettinglanguage%28_,isenabled%29.md) to specify the typesetting language.
 

@@ -27,7 +27,7 @@ func handle(cancelRide intent: INCancelRideIntent) async -> INCancelRideIntentRe
 - (void) handleCancelRide:(INCancelRideIntent *) intent completion:(void (^)(INCancelRideIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, cancel the ride described by the `intent` parameter, create a response object with any cancellation information, and call the provided `completion` handler. If your app is currently providing live status updates for the ride, immediately deliver an updated [`INRideStatus`](../inridestatus.md) object back to SiriKit with the cancellation details. Specifically, change the phase of the ride to [`INRidePhase.completed`](../inridephase/completed.md) and set the [`completionStatus`](../inridestatus/completionstatus.md) property to an object that indicates the user canceled the ride. Make sure the rest of the information in the [`INRideStatus`](../inridestatus.md) object is still accurate, including the ride identifier and ride option.
 

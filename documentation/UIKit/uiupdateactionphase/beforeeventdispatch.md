@@ -23,7 +23,7 @@ class var beforeEventDispatch: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * beforeEventDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs before [`UIEvent`](../uievent.md) and [`UIGestureRecognizer`](../uigesturerecognizer.md) handlers run for standard events. Use this phase to prepare resources and data structures necessary to process user input events.
 

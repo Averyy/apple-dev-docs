@@ -16,7 +16,7 @@ typedef struct ModePageFormatHeader {
 } ModePageFormatHeader;
 ```
 
-#### Overview
+## Overview
 
 Mode Page format header.
 

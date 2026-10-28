@@ -5,7 +5,7 @@
 
 Process an available app version from App Store Connect and store it for download from your server.
 
-#### Overview
+## Overview
 
 When an app passes Notarization, App Store Connect makes it available for storage on the back end of your web server. The app format that App Store Connect provides is an *alternative distribution package*, which contains everything a device needs to install the available app. App Store Connect sends newly available apps that an alternative marketplace app distributes to your web server automatically through your notifications webhook; see [Processing alternative app marketplace notifications](./processing-alternative-marketplace-notifications.md). For your apps that install from your website, you need to download your alternative distribution package from App Store Connect manually.
 
@@ -13,7 +13,7 @@ In either case, to prepare the package for installation on devices, process, or 
 
 ![A diagram that shows the flow of the ingesting an alternative distribution package. When there’s a new version of an app available, App Store Connect sends a notification to your server’s notifications webhook, your primary back end retrieves the package metadata using  the app distribution package ID from the notification. Your primary back end then downloads the package zip from the content delivery network and saves the manifest and signature to your database or large file storage. Your primary back end registers the variant and delta info, then stores it. For each variant and delta of the app distribution package, your back end retrieves the asset URL by ID from App Store Connect, then downloads the asset from the content delivery network and stores the asset in your database.](https://developer.apple.com/tutorials/images/com.apple.MarketplaceKit/ingesting-an-alternative-distribution-package-1@2x.png)
 
-#### Receive new package version notification
+## Receive new package version notification
 
 If the developer of an app that your marketplace distributes enables notifications in App Store Connect, your webhook receives the `AlternativeDistributionPackageVersionAvailable` notification when a new version of that app is available. For information about enabling notifications, see [Manage distribution on an alternative app marketplace](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/manage-distribution-on-an-alternative-app-marketplace).
 
@@ -73,7 +73,7 @@ In the response, navigate to the `data.attributes.url`, which downloads `alterna
 
 For more information on alternative distribution package workflows, see [Alternative Distribution Packages](../AppStoreConnectAPI/alternative-distribution-packages.md).
 
-#### Process the manifest file
+## Process the manifest file
 
 The manifest file contains links to assets that you download to compose a complete alternative distribution package. The individual assets represent unique variations and portions of an app, as required to install it on the variety of Apple devices that the app supports.
 
@@ -172,7 +172,7 @@ When the operating system installs an app on a device, it accesses your server a
 - ***Variants***: Complete app bundles, in encrypted form, that vary slightly to support different device types.
 - ***Deltas***: Partial app bundles, in encrypted form, that consist of just the bits required to update from one version of an app to another.
 
-#### Download app variants
+## Download app variants
 
 The variants reside at the top of the manifest. The first variant in the example has a `publicId` of `219750db-80c2-4c75-aecc-fa67835f384d`. To download the variant, provide the `publicId` as the `id` path parameter of the `alternativeDistributionPackageVariants` endpoint, as follows:
 
@@ -202,7 +202,7 @@ In the response, navigate to the `data.attributes.url`, which refers to an insta
 
 The `alternativeDistributionKeyBlob` (*key blob*) has a unique value for each variant. The [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md) requires the key blob during licensing requests. Store the key blob so your licensing service can use it to decrypt the license request payload coming from a device as required to generate an app license for the variant.
 
-#### Download app deltas
+## Download app deltas
 
 If someone already has a prior version of the app installed, the system selects an encrypted partial app bundle (a delta) to install rather than a variant. The deltas reside at the bottom of the manifest. The first delta in the example has a `publicId` of `ffbc52b6-f76b-4d51-9eff-5388bc6b7572`. To download the first delta, provide the `publicId` as the `id` path parameter of the `alternativeDistributionPackageDeltas` endpoint, as follows:
 
@@ -228,7 +228,7 @@ Example response:
 
 > ❗ **Important**: When App Store Connect sends a new app version notification, it sends an app distribution package that includes the variants first, followed by another for deltas, if any are available for the app. Deltas arrive an unspecified amount of time after the app’s variants. You don’t need to wait for deltas to arrive before serving the new app to devices. Rather, App Store Connect sends variants first to expedite the app’s availability for customers.
 
-#### Store the app data at an expected path
+## Store the app data at an expected path
 
 Assemble all of the downloaded alternative distribution package assets into a folder structure, as follows:
 
@@ -252,7 +252,7 @@ Store the variants and deltas according to their `assetPath` in the manifest. Fo
 
 When the device’s operating system attempts to download an app, it first reads the manifest to discover the contents of the alternative distribution package, then the operating system reads the signature to validate the variant or delta it chooses to install.
 
-#### Validate the assembled app data
+## Validate the assembled app data
 
 You can use the `dist_package_tool` utility on macOS 14.4 and later to verify the integrity of the alternative distribution packages you assemble. After downloading and assembling a complete alternative distribution package, you can validate it with the command:
 

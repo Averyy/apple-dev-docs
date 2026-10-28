@@ -21,7 +21,7 @@ A Boolean value that determines whether the engine syncs automatically.
 @property (assign) BOOL automaticallySync;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the sync engine uses the system scheduler to automatically schedule both send and fetch operations. If an operation fails due to a recoverable error, such as a network failure, or when the server is enforcing request limits, the engine reschedules those operations as necessary. Unless you have a specific need, prefer to use the default behavior in your app.
 

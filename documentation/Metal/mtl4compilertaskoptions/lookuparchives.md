@@ -24,7 +24,7 @@ var lookupArchives: [any MTL4Archive]? { get set }
 @property (nonatomic, copy, nullable) NSArray<id<MTL4Archive>> * lookupArchives;
 ```
 
-#### Discussion
+## Discussion
 
 The compiler can reduce the runtime of a compilation task if it finds an entry that matches a function description within any of the archives in this array. The compiler searches the archives in the order of the array’s element.
 

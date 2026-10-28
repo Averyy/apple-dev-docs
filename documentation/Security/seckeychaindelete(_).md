@@ -21,11 +21,11 @@ func SecKeychainDelete(_ keychainOrArray: SecKeychain?) -> OSStatus
 OSStatus SecKeychainDelete(SecKeychainRef keychainOrArray);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecInvalidKeychain`](./errsecinvalidkeychain.md) is returned if the specified keychain is invalid or if the value of the `keychainOrArray` parameter is invalid or `NULL`.
 
-#### Discussion
+## Discussion
 
 The keychain may be a file stored locally, a smart card, or retrieved from a network server using non-file-based database protocols. This function deletes the keychain only if it is a local file.
 

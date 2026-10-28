@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new canvas object that doesn’t contain any data.
 

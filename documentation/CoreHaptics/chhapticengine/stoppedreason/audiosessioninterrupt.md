@@ -24,7 +24,7 @@ case audioSessionInterrupt
 CHHapticEngineStoppedReasonAudioSessionInterrupt
 ```
 
-#### Discussion
+## Discussion
 
 Audio session interruptions occur due to interactions with other audio apps. For example, the system interrupts music playback when a user receives a phone call. When an interruption occurs, restart the engine before it starts another pattern player.
 

@@ -15,7 +15,7 @@ The appearance that the system uses for color and asset resolution, and that’s
 class func currentDrawing() -> NSAppearance
 ```
 
-#### Return Value
+## Return Value
 
 The current appearance used for drawing.
 

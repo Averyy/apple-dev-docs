@@ -17,7 +17,7 @@ static func planarOverlapping(layout: [EquipmentPose2D], animationDuration: Doub
 
 Available when `Self` is `DefaultEquipmentLayout`.
 
-#### Discussion
+## Discussion
 
 The height of the children is calculated by going over each equipment in the layout in the provided order and moving it to the lowest possible position so that it touches either the table, the previous sibling or both. The equipment retains its position on xz but it can be pitched and or rolled to allow touching both the previous sibling and the table.
 

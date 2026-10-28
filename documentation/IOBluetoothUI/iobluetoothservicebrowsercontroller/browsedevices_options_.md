@@ -13,11 +13,11 @@
 + (IOReturn) browseDevices:(IOBluetoothSDPServiceRecord **) outRecord options:(IOBluetoothServiceBrowserControllerOptions) inOptions;
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn - * kIOReturnSuccess - on successful completion. * kCanceledErr - User canceled.
 
-#### Discussion
+## Discussion
 
 This method allocates and runs the browser window as a modal window waiting for the user to either select a service, or cancel the browser window.
 

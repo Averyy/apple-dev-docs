@@ -5,7 +5,7 @@
 
 Prompt the user to authorize access to the camera and microphone.
 
-#### Overview
+## Overview
 
 In macOS 10.14 and later, the user must explicitly grant permission for each app to access cameras and microphones. Before your app can use the capture system for the first time, macOS shows an alert asking the user to grant your app access to the camera, as shown below. macOS remembers the user’s response to this alert, so subsequent uses of the capture system don’t cause it to appear again. The user can change permission settings for your app in System Preferences > Security & Privacy. The request for authorization looks different from the alert UI in iOS.
 
@@ -13,7 +13,7 @@ In macOS 10.14 and later, the user must explicitly grant permission for each app
 
 To make sure your app has permission before capturing media, follow the steps below.
 
-##### Configure Your Camera and Microphone Apps
+### Configure Your Camera and Microphone Apps
 
 The information property list keys for Camera and Microphone in macOS operate the same way as they do in iOS. macOS 10.14 and later populates the static messages with these strings when the system asks for camera or microphone permission:
 
@@ -26,7 +26,7 @@ For each key, provide a message that explains to the user why your app needs to 
 
 > ❗ **Important**:  If the appropriate key is not present in your app’s `Info.plist` file when your app requests authorization or attempts to use a capture device, the system terminates your app. The Xcode debug console displays a message that explains the reason for the crash.
 
-##### Verify and Request Authorization for Capture
+### Verify and Request Authorization for Capture
 
 Always test the [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) [`authorizationStatus(for:)`](../AVFoundation/avcapturedevice/authorizationstatus%28for%29.md) method before setting up a capture session. If the user has not yet granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](../AVFoundation/avauthorizationstatus/notdetermined.md). In this case, use the [`requestAccess(for:completionHandler:)`](../AVFoundation/avcapturedevice/requestaccess%28for,completionhandler%29.md) method to have macOS prompt the user:
 
@@ -91,11 +91,11 @@ The [`requestAccess(for:completionHandler:)`](../AVFoundation/avcapturedevice/re
 
 > **Note**:  Call [`requestAccess(for:completionHandler:)`](../AVFoundation/avcapturedevice/requestaccess%28for,completionhandler%29.md) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features.
 
-##### Request Authorization Before Saving Captured Media
+### Request Authorization Before Saving Captured Media
 
 After capturing photos or video, you may want to save them into the user’s Photos library. Accessing the Photos library also requires user permission (separate from camera and microphone permission). For most photo and video capture workflows (including Live Photos and RAW format capture), use the [`PHPhotoLibrary`](../Photos/phphotolibrary.md) and [`PHAssetCreationRequest`](../Photos/phassetcreationrequest.md) classes. These classes require read/write access to the Photos library, so you must use the use the [`NSPhotoLibraryUsageDescription`](./information-property-list/nsphotolibraryusagedescription.md) key in your information property list to provide a message to the user when asking for access. For details, see [Saving captured photos](../AVFoundation/saving-captured-photos.md).
 
-##### Reset Authorization from Terminal
+### Reset Authorization from Terminal
 
 To reset the state of the user’s decision to grant or reject Microphone access so the prompt shows again, open Terminal and input the command:
 

@@ -5,7 +5,7 @@
 
 Manage the required information you provide for App Review.
 
-#### Overview
+## Overview
 
 Use `appStoreReviewDetails` to provide information required for App Review. This information isn’t displayed on the App Store. Required attributes for App Review are:
 

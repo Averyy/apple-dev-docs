@@ -22,7 +22,7 @@ virtual void free();
 
 - [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Discussion
+## Discussion
 
 Use this method to perform any final cleanup of your service, such as deallocating any memory you allocated. The system calls this method at some point after it calls your service’s [`Stop`](./stop.md) method.
 

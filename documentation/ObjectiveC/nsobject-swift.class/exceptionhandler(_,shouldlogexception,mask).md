@@ -19,7 +19,7 @@ func exceptionHandler(_ sender: NSExceptionHandler!, shouldLogException exceptio
 - (BOOL) exceptionHandler:(NSExceptionHandler *) sender shouldLogException:(NSException *) exception mask:(NSUInteger) aMask;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) to have the [`NSExceptionHandler`](../../ExceptionHandling/nsexceptionhandler.md) object log the exception, [`NO`](../no.md) otherwise.
 

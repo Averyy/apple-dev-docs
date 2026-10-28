@@ -5,15 +5,15 @@
 
 Inform Siri of reservations made from your app.
 
-#### Overview
+## Overview
 
 Siri Event Suggestions integrates reservations made in your app seamlessly with the system, sharing the information with certain apps and features, such as Calendar, Maps, Spotlight, and the Lock Screen. These apps and features can use the information to remind the user to check-in for a flight, get directions to a hotel reservation, return a rental car, or any of several other options. For a complete list of supported reservation types, such as flight, hotel, and car rental, see [Siri Event Suggestions](./siri-event-suggestions.md). Siri learns about reservations made from your app from donations that your app makes to Siri.
 
-##### Donate Reservations at the Right Time
+### Donate Reservations at the Right Time
 
 Donate a reservation each time the user views a reservation in your app. For instance, when a user creates a new reservation, donate the reservation after the user views and confirms the information. Make one, and only one, donation per reservation as the user views the reservation. If the user views the reservation again using your app, make another donation. For example, if the user makes a reservation through your website and then views the reservation in your app, make a donation. However, don’t make more than one donation for an action at the time the user performs the action.
 
-##### Donate an Interaction
+### Donate an Interaction
 
 Your app donates an [`INInteraction`](../Intents/ininteraction.md) object that contains information about the reservation using the [`INGetReservationDetailsIntent`](../Intents/ingetreservationdetailsintent.md) and [`INGetReservationDetailsIntentResponse`](../Intents/ingetreservationdetailsintentresponse.md) classes, along with the relevant [`INReservation`](../Intents/inreservation.md) subclass.
 
@@ -21,7 +21,7 @@ To donate the intent, create an instance of the intent and intent response class
 
 After creating the intent, create an instance of [`INInteraction`](../Intents/ininteraction.md) and call its [`donate(completion:)`](../Intents/ininteraction/donate%28completion%29.md) method, passing in the intent. Passing the intent tells Siri about the reservation.
 
-##### Handle User Interaction
+### Handle User Interaction
 
 Apps offering reservations with check-in capabilities can integrate with Shortcuts Suggestions on the Lock Screen and allow users to launch your app to complete the check-in. Create the appropriate reservation class with an array of [`INReservationAction`](../Intents/inreservationaction.md) objects that contain the user activity and relevant time frame. Siri provides users with the ability to launch your app with the reservation and check-in information. For example, a flight reservation app may provide users the ability to check-in for a flight starting 24 hours before the departure time.
 

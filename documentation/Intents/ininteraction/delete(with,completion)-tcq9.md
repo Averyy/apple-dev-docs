@@ -33,7 +33,7 @@ class func delete(with groupIdentifier: String) async throws
 
 - [Deleting Donated Shortcuts](../../SiriKit/deleting-donated-shortcuts.md)
 
-#### Discussion
+## Discussion
 
 Call this method to delete a group of donated Siri interactions. Typically, you delete interactions when they are no longer relevant. For example, if you have associated an interaction identifier with a playlist, you can delete all the interactions about the list if the user deletes it.
 

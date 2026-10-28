@@ -5,11 +5,11 @@
 
 Add comment markers in your Swift code to mark text as prose.
 
-#### Overview
+## Overview
 
 Playground pages almost always need prose to introduce the concepts you’re teaching on the page. You use a special kind of Swift comment to mark single lines or blocks of text as prose. When a playground page’s `main.swift` file is displayed in Swift Playgrounds, comments marked as prose are displayed using a proportional font.
 
-##### Add Single-Line Prose
+### Add Single-Line Prose
 
 To add short sections of prose to a page, write a single-line Swift comment that starts with a colon (`//:`).
 
@@ -21,7 +21,7 @@ Comments without the colon are treated as normal Swift comments and are displaye
 
 You can use markup in prose to add semantic treatments like emphasis and code voice. For information on supported markup, see [Markup Formatting Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497).
 
-##### Add Multiline Prose
+### Add Multiline Prose
 
 Use multiline Swift comments for longer passages. You indicate that a multiline comment is prose by adding a colon immediately after the comment’s starting delimiter (`/*:`).
 
@@ -36,7 +36,7 @@ Use multiline Swift comments for longer passages. You indicate that a multiline 
 
 You don’t need to use a special delimiter to close the comment; use the regular comment closing syntax (`*/`) to finish a multiline prose block.
 
-##### Reference Localized Prose
+### Reference Localized Prose
 
 Localize the content on a page by using the special comment syntax: `//:#localized(key: `*identifier*`)`. The *identifier* key must correspond to an entry in the playground page’s `Prose.strings` file for each localization folder in the PrivateResources folder.
 

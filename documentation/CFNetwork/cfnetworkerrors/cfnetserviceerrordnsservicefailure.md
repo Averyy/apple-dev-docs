@@ -24,7 +24,7 @@ case cfNetServiceErrorDNSServiceFailure
 kCFNetServiceErrorDNSServiceFailure
 ```
 
-#### Discussion
+## Discussion
 
 Query the `kCFDNSServiceFailureKey` key to find out the error returned by DNS service discovery and look up the code in `/usr/include/dns_sd.h` or [DNS Service Discovery C](../../dnssd/dns-service-discovery-c.md).
 

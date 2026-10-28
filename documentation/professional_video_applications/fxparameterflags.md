@@ -19,7 +19,7 @@ typealias FxParameterFlags = UInt32
 typedef UInt32 FxParameterFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Not all of the flags are meaningfully to all of the parameter types. The only flags, for example, that apply to group parameters are [`kFxParameterFlag_COLLAPSED`](./kfxparameterflag_collapsed.md), [`kFxParameterFlag_DONT_DISPLAY_IN_DASHBOARD`](./kfxparameterflag_dont_display_in_dashboard.md), [`kFxParameterFlag_HIDDEN`](./kfxparameterflag_hidden.md), and [`kFxParameterFlag_DISABLED`](./kfxparameterflag_disabled.md).
 

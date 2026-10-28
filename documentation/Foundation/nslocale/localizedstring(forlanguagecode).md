@@ -25,11 +25,11 @@ func localizedString(forLanguageCode languageCode: String) -> String?
 - (NSString *) localizedStringForLanguageCode:(NSString *) languageCode;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the language.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"zh"` for `languageCode`, produces the string `"Chinese"`.
 

@@ -24,7 +24,7 @@ var endDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil` which specifies no end date.
 

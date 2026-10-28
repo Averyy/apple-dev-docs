@@ -21,7 +21,7 @@ A type that represents generic XML data.
 static var xml: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.xml`.
 

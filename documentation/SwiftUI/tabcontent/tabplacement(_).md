@@ -22,7 +22,7 @@ nonisolated
 func tabPlacement(_ placement: TabPlacement) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows a [`TabView`](../tabview.md) with three tabs where the second tab is pinned to the trailing edge of the top tab bar on iPad.
 

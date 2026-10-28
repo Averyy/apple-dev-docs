@@ -25,7 +25,7 @@ var permission: CKShare.ParticipantPermission { get set }
 @property (assign) CKShareParticipantPermission permission;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the permissions that the participant has for the share. For a list of possible values, see [`CKShare.ParticipantPermission`](../participantpermission.md).
 

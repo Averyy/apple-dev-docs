@@ -19,7 +19,7 @@ class NSUserInterfaceCompressionOptions
 @interface NSUserInterfaceCompressionOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of [`NSUserInterfaceCompressionOptions`](./nsuserinterfacecompressionoptions.md) contains zero or more options. Because a compression options object behaves like a set, you can use common operations like intersection, union and subtraction to interact with instances and their members.
 

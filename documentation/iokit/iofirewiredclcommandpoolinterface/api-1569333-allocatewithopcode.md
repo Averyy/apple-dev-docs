@@ -14,7 +14,7 @@
 IOReturn (*AllocateWithOpcode)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, DCLCommand **outDCL, UInt32 opcode);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

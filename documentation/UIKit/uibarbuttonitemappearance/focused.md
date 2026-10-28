@@ -23,7 +23,7 @@ var focused: UIBarButtonItemStateAppearance { get }
 @property (nonatomic, strong, readonly) UIBarButtonItemStateAppearance * focused;
 ```
 
-#### Discussion
+## Discussion
 
 To set the attributes for this state, get the object in this property and modify it.
 

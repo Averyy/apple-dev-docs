@@ -15,7 +15,7 @@ An audio recording error.
 static var recordingFailed: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it’s unable to record audio using the audio recording interface.
 

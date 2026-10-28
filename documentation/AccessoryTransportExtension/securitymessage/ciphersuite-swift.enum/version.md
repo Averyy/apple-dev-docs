@@ -15,7 +15,7 @@ A version of the cipher suite protocol.
 enum Version
 ```
 
-#### Overview
+## Overview
 
 The version determines the format of the protocol information string that the system uses for HPKE key derivation. Use [`SecurityMessage.CipherSuite.Version.version1`](./version/version1.md) when creating security messages. On your accessory, format the protocol information as `{cipherSuite}-Version1-{identifier}` when deriving HPKE keys.
 

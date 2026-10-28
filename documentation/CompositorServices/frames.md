@@ -5,7 +5,7 @@
 
 A type that represents a single frame of content, manages the pace of animations, and provides access to the drawable environment.
 
-#### Overview
+## Overview
 
 A frame represents a snapshot of your app’s content at a single moment in time. In your rendering loop, you render your content into static images many times a second to create the illusion of animation. A [`cp_frame_t`](./cp_frame_t.md) provides the Metal textures and information you need to render one of those images.
 

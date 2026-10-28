@@ -19,7 +19,7 @@ An infinite directed plane used to cull mesh instances.
 struct Plane
 ```
 
-#### Overview
+## Overview
 
 Each plane has an outward normal that points away from the visible region. An instance is culled when its mesh part bounds lie entirely on the outward side of the plane.
 

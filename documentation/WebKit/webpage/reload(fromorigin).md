@@ -20,7 +20,7 @@ Reloads the current webpage.
 @MainActor final func reload(fromOrigin: Bool = false) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence you use to track the loading progress of the navigation. If the `Task` enclosing the sequence is cancelled, the page will stop loading all resources.
 

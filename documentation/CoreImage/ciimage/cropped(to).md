@@ -24,15 +24,15 @@ func cropped(to rect: CGRect) -> CIImage
 - (CIImage *) imageByCroppingToRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An image object cropped to the specified rectangle.
 
-#### Discussion
+## Discussion
 
 ![Butterfly photo with background cropped out](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2951307@2x.png)
 
-#### Discussion
+## Discussion
 
 Due to Core Image’s coordinate system mismatch with [UIKit](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW41), this filtering approach may yield unexpected results when displayed in a [`UIImageView`](../../UIKit/uiimageview.md) with [`contentMode`](../../UIKit/uiview/contentmode-swift.property.md). Be sure to back it with a [`cgImage`](./cgimage.md) so that it handles [`contentMode`](../../UIKit/uiview/contentmode-swift.property.md) properly.
 

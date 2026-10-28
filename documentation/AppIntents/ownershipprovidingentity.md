@@ -21,7 +21,7 @@ A type that provides the system with ownership and sharing context for an app en
 protocol OwnershipProvidingEntity : AppEntity
 ```
 
-#### Overview
+## Overview
 
 When your app passes app entities as parameters to an [`AppIntent`](./appintent.md) and returns them from app intent results, people can use Apple Intelligence, Siri, and custom shortcuts to work with those entities across apps. For destructive or sensitive actions like deleting or updating an app entity, your app can require a person’s confirmation. Additionally, Apple Intelligence and Siri may also request a person’s confirmation. Conform your app entities to [`OwnershipProvidingEntity`](./ownershipprovidingentity.md) so the system prompts for confirmation — with appropriate context in the confirmation dialog — when an intent acts on shared or publicly accessible app entities.
 

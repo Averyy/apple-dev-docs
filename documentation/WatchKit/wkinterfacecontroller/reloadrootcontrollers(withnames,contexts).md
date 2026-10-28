@@ -21,7 +21,7 @@ class func reloadRootControllers(withNames names: [String], contexts: [Any]?)
 + (void) reloadRootControllersWithNames:(NSArray<NSString *> *) names contexts:(NSArray *) contexts;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to reload the pages in your app’s page-based interface:
 

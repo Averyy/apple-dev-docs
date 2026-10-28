@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_ADDR16_Bit
 ```
 
-#### Discussion
+## Discussion
 
 ADDR16 bit definition.
 

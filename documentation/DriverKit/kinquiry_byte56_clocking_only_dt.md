@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_CLOCKING_ONLY_DT
 ```
 
-#### Discussion
+## Discussion
 
 Double-transition clocking only.
 

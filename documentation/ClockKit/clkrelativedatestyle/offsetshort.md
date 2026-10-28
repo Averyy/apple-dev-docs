@@ -19,7 +19,7 @@ case offsetShort
 CLKRelativeDateStyleOffsetShort
 ```
 
-#### Discussion
+## Discussion
 
 The resulting value gives the time offset using the abbreviated form of a single key unit. For example, values might be “10 hrs”, or “9 min” depending on the total amount of time between the current date and the date you specified.
 

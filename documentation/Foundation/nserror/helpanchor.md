@@ -25,7 +25,7 @@ var helpAnchor: String? { get }
 @property (copy, readonly, nullable) NSString * helpAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 The object in the user info dictionary for the key [`NSHelpAnchorErrorKey`](../nshelpanchorerrorkey.md). If the user info dictionary doesn’t contain a value for [`NSHelpAnchorErrorKey`](../nshelpanchorerrorkey.md), this property is `nil`.
 

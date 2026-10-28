@@ -21,7 +21,7 @@ The position of the first code unit if the UTF-8 view is nonempty.
 var startIndex: String.UTF8View.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the UTF-8 view is empty, `startIndex` is equal to `endIndex`.
 

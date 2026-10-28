@@ -16,7 +16,7 @@ Creates a transaction coordinator from an encoded representation.
 init?(coder: NSCoder)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer can fail and return `nil` if the specified `coder` fails to decode.
 

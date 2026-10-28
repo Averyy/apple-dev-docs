@@ -21,7 +21,7 @@ The scroll content placement.
 static var scrollContent: ContentMarginPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scrollable views like [`ScrollView`](../scrollview.md) will use this placement to inset their content, but not their scroll indicators.
 

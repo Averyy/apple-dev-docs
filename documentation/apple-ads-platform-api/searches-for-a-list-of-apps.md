@@ -9,9 +9,9 @@ Search the App Store for apps matching the supplied criteria and return app deta
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Query Parameters
+## Query Parameters
 
-#### Discussion
+## Discussion
 
 This endpoint searches the App Store for apps by name, content provider, or returns apps owned by the caller’s organization. It’s useful for discovering apps to target or advertise before building campaigns.
 
@@ -19,19 +19,19 @@ You must supply at least one of `query`, `cpids`, or `returnOwnedApps=true`. The
 
 The returned `adamId` is the primary identifier used in campaign `promotedObject` and creative `destination` fields.
 
-#### Payload Examples
+## Payload Examples
 
 **Search by App Name**:
 
 Search for apps by name, filtered to a specific App Store country or region.
 
-##### Request
+### Request
 
 ```
 GET /v1/search/apps?query=AwayFinder&storeFronts=US&limit=20&offset=0
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -68,13 +68,13 @@ GET /v1/search/apps?query=AwayFinder&storeFronts=US&limit=20&offset=0
 
 Return all apps owned by the caller’s organization, optionally filtered to a specific App Store country or region.
 
-##### Request
+### Request
 
 ```
 GET /v1/search/apps?returnOwnedApps=true&storeFronts=US&limit=50
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -103,13 +103,13 @@ GET /v1/search/apps?returnOwnedApps=true&storeFronts=US&limit=50
 
 Retrieve all apps for a specific content provider by CPID.
 
-##### Request
+### Request
 
 ```
 GET /v1/search/apps?cpids=987654&limit=20
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -138,13 +138,13 @@ GET /v1/search/apps?cpids=987654&limit=20
 
 Search across multiple App Store countries or regions. Repeat the `storeFronts` parameter for each country code.
 
-##### Request
+### Request
 
 ```
 GET /v1/search/apps?query=AwayFinder&storeFronts=US&storeFronts=GB&storeFronts=CA&limit=20
 ```
 
-##### Response
+### Response
 
 ```json
 {

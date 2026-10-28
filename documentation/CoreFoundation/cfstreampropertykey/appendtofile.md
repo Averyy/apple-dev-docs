@@ -25,7 +25,7 @@ static let appendToFile: CFStreamPropertyKey!
 extern CFStreamPropertyKey const kCFStreamPropertyAppendToFile;
 ```
 
-#### Discussion
+## Discussion
 
 You must set this value before opening the writable file stream. The default value is `kCFBooleanFalse`, indicating that the stream should replace any pre-existing file. You cannot read this value.
 

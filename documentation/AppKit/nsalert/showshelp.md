@@ -19,7 +19,7 @@ var showsHelp: Bool { get set }
 @property BOOL showsHelp;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to [`true`](../../Swift/true.md) to specify that the alert has a help button, or [`false`](../../Swift/false.md) to specify it does not.
 

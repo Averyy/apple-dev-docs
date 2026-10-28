@@ -25,7 +25,7 @@ static let directoryEntryCountKey: URLResourceKey
 extern NSURLResourceKey const NSURLDirectoryEntryCountKey;
 ```
 
-#### Discussion
+## Discussion
 
 Not all file systems can provide this information.
 

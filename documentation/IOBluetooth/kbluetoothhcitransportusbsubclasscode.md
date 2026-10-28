@@ -17,7 +17,7 @@ var kBluetoothHCITransportUSBSubClassCode: Int { get }
 kBluetoothHCITransportUSBSubClassCode
 ```
 
-#### Discussion
+## Discussion
 
 RF Controller
 

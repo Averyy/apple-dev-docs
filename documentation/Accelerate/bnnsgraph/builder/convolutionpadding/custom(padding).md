@@ -21,7 +21,7 @@ Custom padding
 case custom(padding: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 Specify the `padding` array to contain twice the number of spatial dimensions. `padding[2*k]` specifies the amount of padding before spatial dimension `k`, and `padding[2*k+1]` specifies the amount of padding after spatial dimension `k`.
 

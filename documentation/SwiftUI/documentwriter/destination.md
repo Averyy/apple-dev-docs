@@ -20,7 +20,7 @@ The type of the destination location to write to.
 associatedtype Destination = URL
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI provides the document’s file URL as the destination.
 

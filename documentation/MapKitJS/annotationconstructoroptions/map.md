@@ -15,7 +15,7 @@ Sets the annotation’s map.
 map?: Map;
 ```
 
-#### Discussion
+## Discussion
 
 The framework ignores the map option in the constructor. If present, the framework generates a warning.
 

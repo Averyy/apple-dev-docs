@@ -5,7 +5,7 @@
 
 Offer widgets in additional contexts by adding support for various widget sizes.
 
-#### Overview
+## Overview
 
 After you add a widget extension to your app and create your first widget, add code to declare additional widgets your app supports using the [`supportedFamilies(_:)`](../SwiftUI/widgetconfiguration/supportedfamilies%28_%29.md) property modifier. The sizes you use depend on the devices your app supports. If your app supports more than one platform, make sure to conditionally declare supported widget families.
 
@@ -27,7 +27,7 @@ public var body: some WidgetConfiguration {
 }
 ```
 
-##### Update SwiftUI views to support additional sizes
+### Update SwiftUI views to support additional sizes
 
 After you’ve declared support for additional widget sizes in your [`Widget`](../SwiftUI/widget.md), update the views of your widget to support the additional family sizes. In your view code:
 

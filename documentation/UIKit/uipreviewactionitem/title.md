@@ -24,7 +24,7 @@ var title: String { get }
 @property (nonatomic, copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays the title as an option within a quick action sheet, below a peek and visible when the user swipes upward on the peek.
 

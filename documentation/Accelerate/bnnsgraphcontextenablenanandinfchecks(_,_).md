@@ -25,7 +25,7 @@ func BNNSGraphContextEnableNanAndInfChecks(_ context: bnns_graph_context_t, _ en
 void BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t context, bool enable_check_for_nans_inf);
 ```
 
-#### Discussion
+## Discussion
 
 Don’t enable this option for production code.
 

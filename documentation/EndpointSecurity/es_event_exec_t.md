@@ -20,7 +20,7 @@ struct es_event_exec_t
 typedef struct { ... } es_event_exec_t;
 ```
 
-#### Overview
+## Overview
 
 To get the process’ arguments, file descriptors, and environment variables from this type, use the following functions:
 

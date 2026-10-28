@@ -34,7 +34,7 @@ var securityIdentity: [Any]? { get }
 @property (atomic, readonly, nullable) NSArray * securityIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 You set this value when you initialize the session object. It cannot be changed later. For details on this value, see the documentation for [`init(peer:securityIdentity:encryptionPreference:)`](./init%28peer,securityidentity,encryptionpreference%29.md).
 

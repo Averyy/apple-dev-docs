@@ -15,7 +15,7 @@ The USB root hub is built-in.
 kUSBInformationRootHubisBuiltIn = 10
 ```
 
-#### Discussion
+## Discussion
 
 If this is a root hub simulation and it’s built in to the enclosure, this bit is set. If it’s on an expansion card, this bit is clear.
 

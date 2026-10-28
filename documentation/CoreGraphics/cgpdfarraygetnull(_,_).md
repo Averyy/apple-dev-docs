@@ -25,7 +25,7 @@ func CGPDFArrayGetNull(_ array: CGPDFArrayRef, _ index: Int) -> Bool
 extern bool CGPDFArrayGetNull(CGPDFArrayRef array, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF null at the specified index, otherwise [`false`](../Swift/false.md).
 

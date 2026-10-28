@@ -29,7 +29,7 @@ var shadowCastBitMask: UInt32 { get set }
 
 - [Lighting a Sprite with Light Nodes](../lighting-a-sprite-with-light-nodes.md)
 
-#### Discussion
+## Discussion
 
 To determine whether this sprite blocks the light (casting a shadow), the sprite’s [`shadowedBitMask`](./shadowedbitmask.md) property is tested against the light’s [`categoryBitMask`](../../SceneKit/scnlight/categorybitmask.md) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite casts a shadow past itself.
 

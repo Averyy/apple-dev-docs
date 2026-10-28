@@ -17,7 +17,7 @@ Initializes a shield configuration with optional submenu items for the secondary
 init(backgroundBlurStyle: UIBlurEffect.Style? = nil, backgroundColor: UIColor? = nil, icon: UIImage? = nil, title: ShieldConfiguration.Label? = nil, subtitle: ShieldConfiguration.Label? = nil, primaryButtonLabel: ShieldConfiguration.Label? = nil, primaryButtonBackgroundColor: UIColor? = nil, secondaryButtonLabel: ShieldConfiguration.Label? = nil, secondaryButtonSubmenuItems: [String]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer extends the shield configuration structure to display a submenu when someone taps the secondary button.
 

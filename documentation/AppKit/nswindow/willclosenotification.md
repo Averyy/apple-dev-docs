@@ -19,7 +19,7 @@ class let willCloseNotification: NSNotification.Name
 extern NSNotificationName NSWindowWillCloseNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that’s about to close. This notification doesn’t contain a `userInfo` dictionary.
 

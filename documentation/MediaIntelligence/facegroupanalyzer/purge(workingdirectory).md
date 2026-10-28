@@ -17,15 +17,15 @@ Removes all analyzer data from the specified directory.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) static func purge(workingDirectory: URL) async throws
+nonisolated(nonsending)
+static func purge(workingDirectory: URL) async throws
 ```
 
 ## Mentions
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 Call this method to permanently delete all face data, cluster assignments, and metadata from `workingDirectory`. This operation is irreversible.
 

@@ -15,7 +15,7 @@ The text to display as a subtitle on the second line of an annotation’s callou
 subtitle?: string;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`.
 

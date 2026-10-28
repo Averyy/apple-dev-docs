@@ -23,7 +23,7 @@ var dualCameraSwitchOverVideoZoomFactor: CGFloat { get }
 @property (atomic, readonly) CGFloat dualCameraSwitchOverVideoZoomFactor;
 ```
 
-#### Discussion
+## Discussion
 
 A dual camera device (see [`builtInDualCamera`](./devicetype-swift.struct/builtindualcamera.md)) contains both wide-angle and telephoto cameras.
 

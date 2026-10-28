@@ -15,7 +15,7 @@ Aborts all tasks in a logical unit and clears their data.
 virtual kern_return_t UserClearTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
-#### Discussion
+## Discussion
 
 This method clears all pending and status data, but not previously established conditions, such as `MODE SELECT` parameters, reservations, and autocontingent allegiance (ACA) attributes.
 

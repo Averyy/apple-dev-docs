@@ -24,7 +24,7 @@ var segmentFileOutputURL: URL { get }
 @property (readonly) NSURL * segmentFileOutputURL;
 ```
 
-#### Discussion
+## Discussion
 
 AVAssetWritingPlanner will request each incremental segment to be written to a different file. If the file already exists from a previous session, the client should delete it to allow the subsequent asset writer session to succeed.
 

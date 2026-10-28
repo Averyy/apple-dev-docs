@@ -5,7 +5,7 @@
 
 These read-only properties disclose the capabilities of the codec and remain the same for all instances of the codec.
 
-#### Overview
+## Overview
 
 These properties are used with the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) function.
 

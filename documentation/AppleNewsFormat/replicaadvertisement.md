@@ -15,11 +15,11 @@ The component for delivering digital versions of print advertisements.
 object ReplicaAdvertisement
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ReplicaAdvertisement` component to provide the digital version of the print advertisement as PDF or in image formats like JPG, PNG, and GIF for an article.
 
-##### Example
+### Example
 
 ```json
 {

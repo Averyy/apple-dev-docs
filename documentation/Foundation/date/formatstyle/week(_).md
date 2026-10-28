@@ -21,11 +21,11 @@ Modifies the date format style to use the specified week format style.
 func week(_ format: Date.FormatStyle.Symbol.Week = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified week format style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Week`](./symbol/week.md) include [`defaultDigits`](./symbol/week/defaultdigits.md), [`twoDigits`](./symbol/week/twodigits.md), and [`weekOfMonth`](./symbol/week/weekofmonth.md).
 

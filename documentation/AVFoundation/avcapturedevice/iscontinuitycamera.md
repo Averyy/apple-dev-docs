@@ -23,7 +23,7 @@ var isContinuityCamera: Bool { get }
 @property (nonatomic, readonly, getter=isContinuityCamera) BOOL continuityCamera;
 ```
 
-#### Discussion
+## Discussion
 
 Continuity Camera enables you to use the rear camera system of iPhone as an external webcam in macOS.
 

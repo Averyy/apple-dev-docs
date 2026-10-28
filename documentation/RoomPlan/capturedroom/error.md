@@ -17,7 +17,7 @@ Errors that can occur during a captured room export.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 The captured room ([`CapturedRoom`](../capturedroom.md)) function [`export(to:metadataURL:modelProvider:exportOptions:)`](./export%28to,metadataurl,modelprovider,exportoptions%29.md) can throw an error of this type.
 

@@ -21,7 +21,7 @@ The result of the invocation or method.
 @property (retain, readonly, nullable) id result;
 ```
 
-#### Discussion
+## Discussion
 
 The object returned by the method or an [`NSValue`](../nsvalue.md) object containing the return value if it is not an object. `nil` if the method or invocation is not finished executing.
 

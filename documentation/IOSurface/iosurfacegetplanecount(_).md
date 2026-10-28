@@ -22,7 +22,7 @@ func IOSurfaceGetPlaneCount(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetPlaneCount(IOSurfaceRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 Return the number of planes in this buffer. May be 0. Returns 0 for an invalid or NULL buffer pointer.
 

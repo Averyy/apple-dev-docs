@@ -20,7 +20,7 @@ var sourceStateID: CGEventSourceStateID { get }
 extern CGEventSourceStateID CGEventSourceGetSourceStateID(CGEventSourceRef source);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the ID of the source state table associated with an event source.
 

@@ -15,7 +15,7 @@ Retrieves the current notification forwarding status for an accessory.
 func forwardingStatus(for accessory: ASAccessory) async throws -> ForwardingDecision
 ```
 
-#### Return Value
+## Return Value
 
 The current forwarding decision for the specified accessory.
 

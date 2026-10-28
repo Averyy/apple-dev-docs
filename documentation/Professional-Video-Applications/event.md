@@ -5,7 +5,7 @@
 
 Represent a single event in a library.
 
-#### Overview
+## Overview
 
 An event may contain clips as story elements and projects, along with keyword collections and smart collections. The `keyword-collection` and `smart-collection` elements organize clips by keywords and other matching criteria listed under the [Smart Collection Match Elements](./smart-collection.md#Smart-Collection-Match-Elements).
 

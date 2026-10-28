@@ -24,7 +24,7 @@ var kMultiChannelMixerParam_Volume: AudioUnitParameterID { get }
 kMultiChannelMixerParam_Volume
 ```
 
-#### Discussion
+## Discussion
 
 Global scope. The value should be a number between `0.0` and `1.0`. The default value is `1.0`.
 

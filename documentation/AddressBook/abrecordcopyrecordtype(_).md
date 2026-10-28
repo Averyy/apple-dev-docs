@@ -19,7 +19,7 @@ func ABRecordCopyRecordType(_ record: ABRecordRef!) -> Unmanaged<CFString>!
 extern CFStringRefABRecordCopyRecordType(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The type of `record`,one of the `kAB...RecordType` constants.You are responsible for releasing this object.
 

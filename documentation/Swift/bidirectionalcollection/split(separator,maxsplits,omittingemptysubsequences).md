@@ -23,7 +23,7 @@ func split(separator: some RegexComponent, maxSplits: Int = .max, omittingEmptyS
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection of substrings, split from this collection’s elements.
 

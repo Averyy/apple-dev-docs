@@ -24,7 +24,7 @@ init(bitmapData data: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, co
 - (instancetype) initWithBitmapData:(NSData *) data bytesPerRow:(size_t) bytesPerRow size:(CGSize) size format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

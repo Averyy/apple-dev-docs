@@ -19,11 +19,11 @@ Returns a color object that uses the specified block to generate its color data 
 + (UIColor *) colorWithDynamicProvider:(UIColor * (^)(UITraitCollection *traitCollection)) dynamicProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A color object whose color information is provided by the specified block.
 
-#### Discussion
+## Discussion
 
 Use this method to create a color object whose component values change based on the currently active traits. The block you provide creates a new color object based on the traits in the provided trait collection.
 

@@ -19,7 +19,7 @@ class SFCertificatePanel
 @interface SFCertificatePanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 The following figure shows an example of a certificate panel.
 

@@ -5,7 +5,7 @@
 
 This function commands the device to stop an effect that was previously started.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *StopEffect)(
@@ -13,12 +13,12 @@ HRESULT ( *StopEffect)(
    UInt32 downloadID );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **downloadID**: Indicates the effect to be stopped.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

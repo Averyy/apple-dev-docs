@@ -25,7 +25,7 @@ init(circleOfRadius r: CGFloat, center: CGPoint)
 + (SKPhysicsBody *) bodyWithCircleOfRadius:(CGFloat) r center:(CGPoint) center;
 ```
 
-#### Return Value
+## Return Value
 
 A new volume-based physics body.
 

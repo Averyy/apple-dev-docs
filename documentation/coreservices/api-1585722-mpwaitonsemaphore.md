@@ -15,11 +15,11 @@ Waits on a semaphore
 OSStatus MPWaitOnSemaphore(MPSemaphoreID semaphore, Duration timeout);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 If the value of the semaphore is greater than zero, the value is decremented and the function returns with `noErr`. Otherwise, the task is blocked awaiting a signal until the specified timeout is exceeded.
 

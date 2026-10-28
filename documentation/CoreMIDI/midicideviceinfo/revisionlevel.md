@@ -25,7 +25,7 @@ var revisionLevel: Data { get }
 @property (nonatomic, readonly) NSData * revisionLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This value is 2 bytes long.
 

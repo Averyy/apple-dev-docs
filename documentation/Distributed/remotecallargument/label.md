@@ -21,7 +21,7 @@ The “argument label” of the argument. The label is the name visible name use
 let label: String?
 ```
 
-#### Discussion
+## Discussion
 
 If no label is specified (i.e. `func hi(name: String)`), the `label`, value is empty, however `effectiveLabel` is equal to the `name`.
 

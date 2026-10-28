@@ -24,11 +24,11 @@ func CVPixelBufferCreateWithIOSurface(_ allocator: CFAllocator?, _ surface: IOSu
 extern CVReturn CVPixelBufferCreateWithIOSurface(CFAllocatorRef allocator, IOSurfaceRef surface, CFDictionaryRef pixelBufferAttributes, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Use [`CVPixelBufferRelease`](./cvpixelbufferrelease.md) to release ownership of the `pixelBufferOut` object when you’re done with it.
 

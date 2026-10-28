@@ -31,7 +31,7 @@ func handleKeyEntry(_ entry: BEKeyEntry) async -> (BEKeyEntry, Bool)
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to receive keyboard events from the system. If you handle the `entry` in code, call the completion handler with `true` as the second parameter. Otherwise, call the completion handler with `false` as the second argument, and call the delegate’s [`shouldDeferEventHandlingToSystem(for:context:)`](../betextinputdelegate/shoulddefereventhandlingtosystem%28for,context%29.md) method. In either case, pass the `entry` you received as the first parameter to the completion handler.
 

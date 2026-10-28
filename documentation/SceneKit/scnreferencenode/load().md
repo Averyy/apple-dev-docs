@@ -25,7 +25,7 @@ func load()
 - (void) load;
 ```
 
-#### Discussion
+## Discussion
 
 When SceneKit loads the referenced scene file, all children of the scene file’s root node become children of the reference node.
 

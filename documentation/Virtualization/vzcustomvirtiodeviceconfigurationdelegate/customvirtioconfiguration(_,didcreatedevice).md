@@ -19,7 +19,7 @@ optional func customVirtioConfiguration(_ deviceConfiguration: VZCustomVirtioDev
 - (void) customVirtioConfiguration:(VZCustomVirtioDeviceConfiguration *) deviceConfiguration didCreateDevice:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 The Virtualization framework creates a [`VZCustomVirtioDevice`](../vzcustomvirtiodevice.md) when you call [`init(configuration:)`](../vzvirtualmachine/init%28configuration%29.md) and calls this method on the serial queue of the guest’s [`VZVirtualMachine`](../vzvirtualmachine.md) instance.
 

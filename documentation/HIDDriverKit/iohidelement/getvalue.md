@@ -16,7 +16,7 @@ Gets the logical value that the device reported.
 virtual uint32_t getValue(IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element value.
 

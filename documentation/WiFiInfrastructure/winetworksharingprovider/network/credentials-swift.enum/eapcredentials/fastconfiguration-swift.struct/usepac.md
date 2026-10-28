@@ -17,7 +17,7 @@ A Boolean value that indicates whether the device uses an existing Protected Acc
 let usePAC: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the device uses an existing PAC if it’s present. Otherwise, the server must present its identity using a certificate.
 

@@ -12,7 +12,7 @@ virtual void unlockForArbitration(
  void );
 ```
 
-#### Overview
+## Overview
 
 A thread granted exclusive access to an IOService object should release it with `unlockForArbitration`.
 

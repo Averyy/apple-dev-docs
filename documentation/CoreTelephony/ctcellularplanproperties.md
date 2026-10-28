@@ -21,7 +21,7 @@ class CTCellularPlanProperties
 @interface CTCellularPlanProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `CTCellularPlanProperties` to set the capabilities of your eSIMs.
 

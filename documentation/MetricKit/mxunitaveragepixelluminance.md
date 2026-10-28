@@ -25,7 +25,7 @@ class MXUnitAveragePixelLuminance
 @interface MXUnitAveragePixelLuminance : NSDimension
 ```
 
-#### Overview
+## Overview
 
 Luminosity represents the brightness of each red, green, and blue component pixel. Unlike LCD displays, each pixel requires power to display a color, and white draws the most power per pixel.
 

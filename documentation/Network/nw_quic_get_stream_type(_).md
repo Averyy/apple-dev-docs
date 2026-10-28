@@ -25,7 +25,7 @@ func nw_quic_get_stream_type(_ stream_metadata: nw_protocol_metadata_t) -> UInt8
 uint8_t nw_quic_get_stream_type(nw_protocol_metadata_t stream_metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A QUIC stream type.
 

@@ -19,7 +19,7 @@ var groupUserInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set 
 @property NSUserInterfaceLayoutDirection groupUserInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md).
 

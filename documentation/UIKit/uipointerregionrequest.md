@@ -23,7 +23,7 @@ class UIPointerRegionRequest
 @interface UIPointerRegionRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `UIPointerRegionRequest` is given to the `UIPointerInteractionDelegate` to allow for changes to the pointer interaction.
 

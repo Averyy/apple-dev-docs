@@ -23,7 +23,7 @@ enum `Protocol`
 enum DDDeviceProtocol : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The device ([`DDDevice`](../dddevice.md)) [`protocol`](./protocol-swift.property.md) property is of this type.
 

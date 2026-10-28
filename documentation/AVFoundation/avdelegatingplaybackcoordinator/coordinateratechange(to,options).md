@@ -24,7 +24,7 @@ func coordinateRateChange(to rate: Float, options: AVDelegatingPlaybackCoordinat
 - (void) coordinateRateChangeToRate:(float) rate options:(AVDelegatingPlaybackCoordinatorRateChangeOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 When the rate changes from zero to nonzero, the coordinator may also wait for participant suspensions from the [`suspensionReasonsThatTriggerWaiting`](../avplaybackcoordinator/suspensionreasonsthattriggerwaiting.md) property.
 

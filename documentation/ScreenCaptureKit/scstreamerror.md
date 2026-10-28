@@ -20,7 +20,7 @@ An instance representing a ScreenCaptureKit framework error.
 struct SCStreamError
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  When a user cancels a stream, the system calls an observer’s [`stream(_:didStopWithError:)`](./scstreamdelegate/stream%28_,didstopwitherror%29.md) method with [`SCStreamError.Code.userStopped`](./scstreamerror/code/userstopped.md). Rather than treating this event as an error, handle it as an intentional user request.
 

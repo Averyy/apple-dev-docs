@@ -5,7 +5,7 @@
 
 Apply effects such as sepia tint, highlight strengthening, and scaling to images.
 
-#### Overview
+## Overview
 
 You can add effects to images by applying Core Image filters to [`CIImage`](./ciimage.md) objects. Figure 1 shows three filters chained together to achieve a cumulative effect:
 
@@ -15,7 +15,7 @@ You can add effects to images by applying Core Image filters to [`CIImage`](./ci
 
 ![Photo of a waterwheel filtered using sepia tone, bloom, and Lanczos scale filters](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2955144@2x.png)
 
-##### Create a Context
+### Create a Context
 
 [`CIImage`](./ciimage.md) processing occurs in a [`CIContext`](./cicontext.md) object. Creating a [`CIContext`](./cicontext.md) is expensive, so create one during your initial setup and reuse it throughout your app.
 
@@ -23,7 +23,7 @@ You can add effects to images by applying Core Image filters to [`CIImage`](./ci
 CIContext* context = [CIContext context];
 ```
 
-##### Load an Image to Process
+### Load an Image to Process
 
 The next step is to load an image to process. This example loads an image from the project bundle.
 
@@ -35,11 +35,11 @@ self.imageView.image = [UIImage imageWithCIImage:originalCIImage];
 
 The [`CIImage`](./ciimage.md) object isn’t itself a displayable image, but rather image data. To display it, you must convert it to another type, such as [`UIImage`](../UIKit/uiimage.md).
 
-##### Apply Built-In Core Image Filters
+### Apply Built-In Core Image Filters
 
 A [`CIFilter`](./cifilter-swift.class.md) represents a single operation or recipe for a particular effect. To process a [`CIImage`](./ciimage.md) object, pass it through [`CIFilter`](./cifilter-swift.class.md) objects. You can subclass [`CIFilter`](./cifilter-swift.class.md) or draw from the existing library of built-in filters.
 
-###### Tint Reddish-Brown with the Sepia Filter
+#### Tint Reddish-Brown with the Sepia Filter
 
 Although you can chain filters without separating them into functions, the following example shows how to configure a single [`CIFilter`](./cifilter-swift.class.md), the [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter.
 
@@ -64,7 +64,7 @@ You can check the intermediate result at any point in the filter chain by conver
 _imageView.image = [UIImage imageWithCIImage:sepiaCIImage];
 ```
 
-###### Strengthen Highlights with the Bloom Filter
+#### Strengthen Highlights with the Bloom Filter
 
 The bloom filter accentuates the highlights of an image. You can apply it as part of a chain without factoring it into a separate function, but this example encapsulates its functionality into a function.
 
@@ -89,7 +89,7 @@ CIImage* bloomCIImage = [self bloomFilterImage:sepiaCIImage withIntensity:1 radi
 _filteredImageView.image = [UIImage imageWithCIImage:bloomCIImage];
 ```
 
-###### Scale Image Size with the Lanczos Scale Filter
+#### Scale Image Size with the Lanczos Scale Filter
 
 Apply the [`lanczosScaleTransform()`](./cifilter-swift.class/lanczosscaletransform%28%29.md) to obtain a high-quality downsampling of the image, preserving the original image’s aspect ratio through the [`lanczosScaleTransform()`](./cifilter-swift.class/lanczosscaletransform%28%29.md) filter’s parameter `aspectRatio`. For built-in Core Image filters, calculate the aspect ratio as the image’s width over height.
 

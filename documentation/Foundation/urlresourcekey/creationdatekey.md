@@ -25,7 +25,7 @@ static let creationDateKey: URLResourceKey
 extern NSURLResourceKey const NSURLCreationDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key corresponds to an [`NSDate`](../nsdate.md) value, or `nil` if the volume doesn’t support creation dates.
 

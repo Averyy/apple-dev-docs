@@ -11,7 +11,7 @@ Retains a reference to the object.
 virtual void retain() const;
 ```
 
-#### Overview
+## Overview
 
 This function increments the reference count of the receiver by 1. If you need to maintain a reference to an object outside the context in which you received it, you should always retain it immediately.
 

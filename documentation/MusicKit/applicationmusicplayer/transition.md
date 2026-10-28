@@ -16,7 +16,7 @@ The transition between items for the application music player.
 var transition: MusicPlayer.Transition { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the `transition` is `.none` where there is no transition between playing items.
 

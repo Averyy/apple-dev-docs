@@ -24,7 +24,7 @@ The string representation of the offer period applied to the subscription offer 
 var offerPeriodStringRepresentation: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is present only for subscriptions that include an offer.
 

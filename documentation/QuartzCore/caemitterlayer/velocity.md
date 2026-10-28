@@ -24,7 +24,7 @@ var velocity: Float { get set }
 @property float velocity;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1.0`.
 

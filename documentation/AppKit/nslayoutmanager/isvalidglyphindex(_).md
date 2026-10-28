@@ -19,7 +19,7 @@ func isValidGlyphIndex(_ glyphIndex: Int) -> Bool
 - (BOOL) isValidGlyphIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified `glyphIndex` refers to a valid glyph, otherwise [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ var colorSpace: NSColorSpace { get }
 @property (strong, readonly) NSColorSpace * colorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors that have an associated color space—specifically, colors not created by name or using a pattern image. Accessing it for other color types raises an exception. If you are unsure about a color object, convert it to an equivalent [`NSColorSpace`](../nscolorspace.md)-based object before calling this method.
 

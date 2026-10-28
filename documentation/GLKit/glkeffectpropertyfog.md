@@ -24,7 +24,7 @@ class GLKEffectPropertyFog
 @interface GLKEffectPropertyFog : GLKEffectProperty
 ```
 
-#### Overview
+## Overview
 
 These properties are specifically designed to mimic the fog calculations provided by OpenGL ES 1.1.
 

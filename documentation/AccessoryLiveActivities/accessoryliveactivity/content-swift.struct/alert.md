@@ -16,7 +16,7 @@ The Live Activity update’s alert message.
 let alert: AccessoryLiveActivity.Content.AlertMessage?
 ```
 
-#### Discussion
+## Discussion
 
 The `alert` property is `nil` if the Live Activity update doesn’t require displaying an alert on your accessory.
 

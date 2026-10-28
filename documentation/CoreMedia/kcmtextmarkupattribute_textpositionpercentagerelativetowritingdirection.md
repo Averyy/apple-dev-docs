@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_TextPositionPercentageRelativeToWritingDirection: CFS
 extern CFStringRef const kCMTextMarkupAttribute_TextPositionPercentageRelativeToWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a non-negative `CFNumber` that expresses the position of the center of the text in the writing direction as a percentage of the video dimensions in the writing direction. For horizontal cues, this is the horizontal position. For vertical, it’s the vertical position. The system calculates the percentage from the edge of the frame where the text begins (for left-to-right English, it’s the left edge).
 

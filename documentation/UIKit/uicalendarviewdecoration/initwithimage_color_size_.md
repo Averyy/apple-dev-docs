@@ -18,11 +18,11 @@ Creates a new calendar view decoration with the image, color, and size that you 
 - (instancetype) initWithImage:(UIImage *) image color:(UIColor *) color size:(UICalendarViewDecorationSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 
-#### Discussion
+## Discussion
 
 The image defaults to `circlebadge.fill` if you don’t specify it.
 

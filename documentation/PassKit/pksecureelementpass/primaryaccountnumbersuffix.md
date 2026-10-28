@@ -24,7 +24,7 @@ var primaryAccountNumberSuffix: String { get }
 @property (nonatomic, copy, readonly) NSString * primaryAccountNumberSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is generally the last four or five digits of the primary account number, but can vary by issuer. The value isn’t related to [`primaryAccountIdentifier`](./primaryaccountidentifier.md).
 

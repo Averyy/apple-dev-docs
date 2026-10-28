@@ -20,7 +20,7 @@ func reloadFromOrigin(_ sender: Any?)
 - (void) reloadFromOrigin:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Make this method the action of any controls that trigger a reload of your web content. Connect your controls to this method programmatically or in Interface Builder.
 

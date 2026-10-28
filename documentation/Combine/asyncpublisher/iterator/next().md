@@ -21,7 +21,7 @@ Produces the next element in the prefix sequence.
 mutating func next() async -> P.Output?
 ```
 
-#### Return Value
+## Return Value
 
 The next published element, or nil if the publisher finishes normally.
 

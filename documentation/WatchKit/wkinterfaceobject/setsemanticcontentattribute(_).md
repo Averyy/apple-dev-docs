@@ -19,7 +19,7 @@ func setSemanticContentAttribute(_ semanticContentAttribute: WKInterfaceSemantic
 - (void) setSemanticContentAttribute:(WKInterfaceSemanticContentAttribute) semanticContentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Some objects should not flip when switching between left-to-right and right-to-left layouts. Typically, this occurs because the object is part of the playback controls or represents physical directions (up, down, left, right) that don’t change. Instead of thinking about whether or not an object should change its orientation, select the semantic content attribute that best describes the object.
 

@@ -19,7 +19,7 @@ protocol NSViewLayerContentScaleDelegate : NSObjectProtocol
 @protocol NSViewLayerContentScaleDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol to manage scale and contents for a layer hosted in a view. When a window changes its backing resolution, AppKit attempts to automatically update the `contentsScale` and `contents` of all `CALayer` objects in the window to match the new resolution. Layers backed by a view are updated automatically. Any layer whose `contents` property is set to an `NSImage` object is also updated automatically. Based on the `NSImage` object’s available representations, AppKit selects an appropriate bitmapped representation, or rasterizes a resolution-independent representation at the appropriate scale factor.
 

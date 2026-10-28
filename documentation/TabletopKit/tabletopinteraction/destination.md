@@ -15,7 +15,7 @@ An object that represents the destination position and orientation of equipment 
 struct Destination
 ```
 
-#### Overview
+## Overview
 
 The position and orientation can be relative to either a piece of equipment or the table.
 

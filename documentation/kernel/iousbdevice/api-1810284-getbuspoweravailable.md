@@ -10,7 +10,7 @@ virtual UInt32 GetBusPowerAvailable(
  void );
 ```
 
-#### Overview
+## Overview
 
 returns the power available to the device, in units of 2mA
 

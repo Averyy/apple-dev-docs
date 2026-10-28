@@ -16,7 +16,7 @@ Returns the rectangle, in unit coordinates, that contains the image within the s
 final var contentsRect: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 If your app displays the image with [`NSImageView`](../../AppKit/nsimageview.md) and you assign it to the [`trackingImageView`](./trackingimageview.md) property, the framework doesn’t require you to implement this property.
 

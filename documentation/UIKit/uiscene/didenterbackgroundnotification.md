@@ -24,7 +24,7 @@ class let didEnterBackgroundNotification: NSNotification.Name
 extern NSNotificationName const UISceneDidEnterBackgroundNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this notification to reduce your scene’s memory usage, free up any shared resources, and clean up your scene’s user interface. Shortly after your notification handler returns, UIKit takes a snapshot of your scene’s interface for display in the app switcher. Make sure your interface doesn’t contain sensitive user information.
 

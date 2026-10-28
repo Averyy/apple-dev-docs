@@ -19,7 +19,7 @@ An entitlement that permits an app to participate in navigating Wi-Fi network ho
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app to use the [Hotspot helper](../../NetworkExtension/hotspot-helper.md) API. For more information, see [TN3111: iOS Wi-Fi API overview](../../Technotes/tn3111-ios-wifi-api-overview.md).
 

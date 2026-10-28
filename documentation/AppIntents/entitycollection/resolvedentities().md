@@ -23,11 +23,11 @@ func resolvedEntities() async throws -> [Entity]
 
 Available when `Entity` conforms to `AppEntity`.
 
-#### Return Value
+## Return Value
 
 An array of resolved entities.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the entities cannot be resolved.
 

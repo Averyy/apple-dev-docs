@@ -20,7 +20,7 @@ let kSecCodeInfoPList: CFString
 extern CFStringRef const kSecCodeInfoPList;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object. Absent if no information property list (`Info.plist`) file is known to Code Signing Services. Note that this is not necessarily the same dictionary as the one that would be returned by a [`CFBundle`](../CoreFoundation/cfbundle.md) function such as [`CFBundleCopyInfoDictionaryForURL(_:)`](../CoreFoundation/cfbundlecopyinfodictionaryforurl%28_%29.md), because [`CFBundle`](../CoreFoundation/cfbundle.md) is free to add entries to the information property list).
 

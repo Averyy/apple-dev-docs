@@ -23,7 +23,7 @@ optional func updateTextAttributes(conversionHandler: ([NSAttributedString.Key :
 - (void) updateTextAttributesWithConversionHandler:(UITextAttributesConversionHandler) conversionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if your app supports attributes that aren’t represented by other action methods such as [`toggleBoldface(_:)`](./toggleboldface%28_%29.md). The system calls this method to let responders know that the user or system applied new attributes for you to apply the current selection. In your implementation of this method, get the dictionary of the attributes associated with the selected content and pass it as a parameter to the `conversionHandler` block. When the block returns, apply the returned attributes to the selected text.
 

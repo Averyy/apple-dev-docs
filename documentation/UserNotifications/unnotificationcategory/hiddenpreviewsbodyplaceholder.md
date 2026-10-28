@@ -31,7 +31,7 @@ var hiddenPreviewsBodyPlaceholder: String { get }
 @property (atomic, copy, readonly) NSString * hiddenPreviewsBodyPlaceholder;
 ```
 
-#### Discussion
+## Discussion
 
 The string in this property may contain the special characters `%u` as a placeholder for the number of messages with the same thread identifier. If your app declares this string in a `.stringsdict` property list, the system formats the preview message using the information in that file. For more information about specifying a `.stringsdict` property file, see [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
 

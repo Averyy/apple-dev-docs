@@ -25,11 +25,11 @@ func CFRunLoopCopyCurrentMode(_ rl: CFRunLoop!) -> CFRunLoopMode!
 extern CFRunLoopModeCFRunLoopCopyCurrentMode(CFRunLoopRef rl);
 ```
 
-#### Return Value
+## Return Value
 
 The mode in which `rl` is currently running; `NULL` if `rl` is not running. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 When run on the current thread’s run loop, the returned value identifies the run loop mode that made the callout in which your code is currently executing.
 

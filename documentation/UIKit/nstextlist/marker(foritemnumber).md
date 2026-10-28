@@ -24,7 +24,7 @@ func marker(forItemNumber itemNumber: Int) -> String
 - (NSString *) markerForItemNumber:(NSInteger) itemNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The computed maker value for `itemNumber`.
 

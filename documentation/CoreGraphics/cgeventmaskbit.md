@@ -16,11 +16,11 @@ Generates an event mask for a single type of event.
 #define CGEventMaskBit(eventType)
 ```
 
-#### Return Value
+## Return Value
 
 An event mask that represents the specified event.
 
-#### Discussion
+## Discussion
 
 This macro converts an event type constant into a mask. You can use this mask to specify that an event tap should observe the event. For more information, see [`CGEventMask`](./cgeventmask.md).
 

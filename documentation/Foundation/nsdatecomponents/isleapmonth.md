@@ -25,7 +25,7 @@ var isLeapMonth: Bool { get set }
 @property (getter=isLeapMonth) BOOL leapMonth;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the month is a leap month, [`false`](../../Swift/false.md) otherwise.
 

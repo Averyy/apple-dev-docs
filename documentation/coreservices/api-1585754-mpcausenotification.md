@@ -15,11 +15,11 @@ Signals a kernel notification.
 OSStatus MPCauseNotification(MPNotificationID notificationID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 You call this function to signal a kernel notification much as you would signal any simple notification (for example,  [`MPNotifyQueue`](./api-1585699-mpnotifyqueue.md) ). 
 

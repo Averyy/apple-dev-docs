@@ -15,7 +15,7 @@ Sends a file transfer message to a specified destination.
 final func sendMessage(_ content: RCSMessage.FileTransfer, to destination: RCSHandle, using cellularServiceID: CellularServiceID, messageID: RCSMessageID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this version of the `sendMessage` method in combination with the [`upload(_:)`](./upload%28_%29.md) and [`download(_:)`](./download%28_%29.md) methods of `RCSService`.
 

@@ -23,7 +23,7 @@ case utility
 NSQualityOfServiceUtility
 ```
 
-#### Discussion
+## Discussion
 
 Used for performing work which the user is unlikely to be immediately waiting for the results. This work may have been requested by the user or initiated automatically, and often operates at user-visible timescales using a non-modal progress indicator. For example, periodic content updates or bulk file operations, such as media import.
 

@@ -21,7 +21,7 @@ A strategy to always display sign symbols.
 static func always(includingZero: Bool = true) -> NumberFormatStyleConfiguration.SignDisplayStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A strategy to always display sign symbols, with the given behavior for zero values.
 

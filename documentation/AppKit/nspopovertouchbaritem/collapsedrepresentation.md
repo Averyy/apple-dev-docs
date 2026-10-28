@@ -19,7 +19,7 @@ var collapsedRepresentation: NSView { get set }
 @property (strong) NSView * collapsedRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this is an [`NSButton`](../nsbutton.md) whose target is this popover item, whose action is [`showPopover(_:)`](./showpopover%28_%29.md), and whose image and title are bound to this item’s [`collapsedRepresentationImage`](./collapsedrepresentationimage.md) and [`collapsedRepresentationImage`](./collapsedrepresentationimage.md) respectively.
 

@@ -16,7 +16,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Make an identifier for a measurement unique to the property being measured; it doesn’t need to be unique for each instance of a measurement. As an example, a measurement of database access performance might have the identifier `com.example.ourdb_transactionthroughput`.
 

@@ -23,7 +23,7 @@ var action: PKPayLaterAction { get set }
 @property (nonatomic, assign) PKPayLaterAction action;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the kind of information modal the Apple Pay Later visual merchandising widget displays. The default is [`PKPayLaterAction.learnMore`](../pkpaylateraction/learnmore.md).
 

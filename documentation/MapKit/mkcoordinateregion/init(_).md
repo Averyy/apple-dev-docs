@@ -25,7 +25,7 @@ init(_ rect: MKMapRect)
 extern MKCoordinateRegion MKCoordinateRegionForMapRect(MKMapRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The region structure specifying the latitude, longitude, and span values for the specified rectangle.
 

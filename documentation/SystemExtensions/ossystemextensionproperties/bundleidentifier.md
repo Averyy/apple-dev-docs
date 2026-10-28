@@ -22,7 +22,7 @@ var bundleIdentifier: String { get }
 @property (strong, readonly) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This is the [`CFBundleIdentifier`](../../BundleResources/information-property-list/cfbundleidentifier.md) of the extension bundle.
 

@@ -19,11 +19,11 @@ func sendAction(on mask: NSEvent.EventTypeMask) -> Int
 - (NSInteger) sendActionOn:(NSEventMask) mask;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask containing the previous settings. This bit mask uses the same values as specified in the `mask` parameter.
 
-#### Discussion
+## Discussion
 
 You use this method during mouse tracking when the mouse button changes state, the mouse moves, or if the cell is marked to send its action continuously while tracking. Because of this, the only bits checked in `mask` are [`NSLeftMouseDownMask`](../nsleftmousedownmask.md),  [`NSLeftMouseUpMask`](../nsleftmouseupmask.md), [`NSLeftMouseDraggedMask`](../nsleftmousedraggedmask.md), and [`NSPeriodicMask`](../nsperiodicmask.md), which are declared in the [`NSEvent`](../nsevent.md) class reference.
 

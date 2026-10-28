@@ -25,11 +25,11 @@ class SCNAction
 @interface SCNAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use actions most often to change the structure and content of the [`SCNNode`](./scnnode.md) object to which they are attached, but you can also use actions to make other changes to the scene. In SceneKit, actions provide an easy way to implement animated behaviors that frequently change in response to user input.
 
-##### Working with Actions
+### Working with Actions
 
 To create an action, call the class method for the action you are interested in. Then, configure the action’s properties. Finally, to execute the action, call a node object’s [`run(_:)`](../SpriteKit/sknode/run%28_%29.md) method (or a similar method from the [`SCNActionable`](./scnactionable.md) protocol) and pass it the action object.
 
@@ -45,11 +45,11 @@ Some actions include other actions as children:
 
 You can nest groups, sequences, and repeating actions. By combining actions together, you can add sophisticated behaviors to a node.
 
-##### Using Actions for Scene Animation
+### Using Actions for Scene Animation
 
 Actions are easily reused, can be added and removed while running, and directly affect presented nodes. For these reasons, actions work well when your scene changes frequently in response to user input—such as when building a game. Not all elements of a scene can be animated using actions. For other kinds of animation, use implicitly animated object properties (see the [`SCNTransaction`](./scntransaction.md) class) or explicitly created Core Animation objects (see the [`SCNAnimatable`](./scnanimatable.md) protocol), or change the scene graph directly for each rendered frame (see the [`SCNSceneRendererDelegate`](./scnscenerendererdelegate.md) protocol).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You never subclass [`SCNAction`](./scnaction.md) directly. Instead, create actions that call methods on arbitrary objects or execute blocks of code. See Creating Custom Actions.
 

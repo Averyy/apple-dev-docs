@@ -19,7 +19,7 @@ let WebPlugInShouldLoadMainResourceKey: String
 extern NSString * WebPlugInShouldLoadMainResourceKey;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../Swift/true.md), the plug-in should load its own main resource. If [`false`](../Swift/false.md), the plug-in uses the data provided by WebKit and the `webPlugInMainResourceDidReceiveData:` message is sent to the plug-in when data is received. The default value is [`false`](../Swift/false.md).
 

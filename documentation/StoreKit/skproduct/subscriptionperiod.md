@@ -27,7 +27,7 @@ var subscriptionPeriod: SKProductSubscriptionPeriod? { get }
 @property (nonatomic, readonly, nullable) SKProductSubscriptionPeriod * subscriptionPeriod;
 ```
 
-#### Discussion
+## Discussion
 
 This read-only property is `nil` if the product is not a subscription.
 

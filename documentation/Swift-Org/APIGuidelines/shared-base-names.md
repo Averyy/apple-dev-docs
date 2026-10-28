@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Methods can share a base name when they share the same basic meaning or when they operate in distinct domains.
 
-#### Overview
+## Overview
 
 ✅ For example, the following is encouraged, since the methods do essentially the same things:
 

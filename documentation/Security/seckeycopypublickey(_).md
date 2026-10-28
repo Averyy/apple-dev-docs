@@ -31,11 +31,11 @@ SecKeyRefSecKeyCopyPublicKey(SecKeyRef key);
 - [Getting an Existing Key](./getting-an-existing-key.md)
 - [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
-#### Return Value
+## Return Value
 
 The public key corresponding to the given private key. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this key’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The returned public key may be `nil` if the app that created the private key didn’t also store the corresponding public key in the keychain, or if the system can’t reconstruct the corresponding public key.
 

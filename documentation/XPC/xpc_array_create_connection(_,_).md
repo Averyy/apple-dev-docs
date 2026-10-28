@@ -25,7 +25,7 @@ func xpc_array_create_connection(_ xarray: xpc_object_t, _ index: Int) -> xpc_co
 extern xpc_connection_txpc_array_create_connection(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 A new connection created from the value at the specified index. You are responsible for calling [`xpc_release`](./xpc_release.md) on the returned connection. `NULL` if the value at the specified index is not an endpoint containing a connection. Each call to this method for the same index in the same array will yield a different connection. See [`xpc_connection_create_from_endpoint(_:)`](./xpc_connection_create_from_endpoint%28_%29.md) for discussion as to the responsibilities when dealing with the returned connection.
 

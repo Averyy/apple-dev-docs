@@ -21,7 +21,7 @@ Supported Platform Types for a process
 struct Value
 ```
 
-#### Overview
+## Overview
 
 A platform type is an indication of the runtime enviroment of a process. These runtime enviroments indicate the types of code that can run in the process, the dyld shared cache in use and impact some security policies.
 

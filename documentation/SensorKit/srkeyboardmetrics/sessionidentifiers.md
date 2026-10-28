@@ -21,7 +21,7 @@ var sessionIdentifiers: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * sessionIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 A keyboard session begins when the system presents the keyboard and ends when the system dismisses it.
 

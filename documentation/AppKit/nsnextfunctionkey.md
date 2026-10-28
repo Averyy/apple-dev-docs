@@ -19,7 +19,7 @@ var NSNextFunctionKey: Int { get }
 NSNextFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

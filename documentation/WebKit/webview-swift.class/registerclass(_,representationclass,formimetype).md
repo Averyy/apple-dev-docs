@@ -21,7 +21,7 @@ class func registerClass(_ viewClass: AnyClass!, representationClass: AnyClass!,
 + (void) registerViewClass:(Class) viewClass representationClass:(Class) representationClass forMIMEType:(NSString *) MIMEType;
 ```
 
-#### Discussion
+## Discussion
 
 After invoking this method, when `MIMEType` content is encountered, instances of `representationClass` and `viewClass` are created to handle and display it.
 

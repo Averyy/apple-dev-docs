@@ -24,7 +24,7 @@ enum SCFrameStatus
 enum SCFrameStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You create a frame status by initializing it with the value you retrieve for the [`status`](./scstreamframeinfo/status.md) from the sample buffer’s attachments dictionary.
 

@@ -19,7 +19,7 @@ optional func spellServer(_ sender: NSSpellServer, recordResponse response: Int,
 - (void) spellServer:(NSSpellServer *) sender recordResponse:(NSUInteger) response toCorrection:(NSString *) correction forWord:(NSString *) word language:(NSString *) language;
 ```
 
-#### Discussion
+## Discussion
 
 When the user accepts, rejects, or edits an autocorrection, the view notifies the [`NSSpellChecker`](../../AppKit/nsspellchecker.md) class of what happened in the client application, and `NSSpellChecker` then invokes this method, so that it can record that and modify future autocorrection behavior based on what it has learned from the user’s actions.
 

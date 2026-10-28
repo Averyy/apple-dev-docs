@@ -16,11 +16,11 @@ Activates an inactive listener.
 extern bool xpc_listener_activate(xpc_listener_t listener, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the listener was activated; otherwise `NO`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t call [`xpc_listener_activate`](./xpc_listener_activate.md) with a listener that’s already active.
 

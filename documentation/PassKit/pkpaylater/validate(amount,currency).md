@@ -19,7 +19,7 @@ Checks if the framework can display Apple Pay Later visual merchandising widget 
 static func validate(amount: Decimal, currency: Locale.Currency) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the framework can display the requested information; otherwise, [`false`](../../Swift/false.md).
 

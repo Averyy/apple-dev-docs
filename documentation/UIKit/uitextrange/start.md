@@ -23,7 +23,7 @@ var start: UITextPosition { get }
 @property (nonatomic, readonly) UITextPosition * start;
 ```
 
-#### Discussion
+## Discussion
 
 Compute and store in this property the UITextPosition object representing the start of a range of text.
 

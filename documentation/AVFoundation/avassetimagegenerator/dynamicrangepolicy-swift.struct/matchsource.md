@@ -24,7 +24,7 @@ static let matchSource: AVAssetImageGenerator.DynamicRangePolicy
 extern AVAssetImageGeneratorDynamicRangePolicy const AVAssetImageGeneratorDynamicRangePolicyMatchSource;
 ```
 
-#### Discussion
+## Discussion
 
 By default, an image generator converts images to standard dynamic range. When working with HDR video, use this policy to preserve HDR color in the resulting images.
 

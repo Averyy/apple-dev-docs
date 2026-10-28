@@ -17,7 +17,7 @@ The resistance of the body’s volume to diverge from `targetVolume`.
 var stiffness: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The valid range is [0.0, 1.0], both included.
 

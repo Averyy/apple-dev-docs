@@ -19,7 +19,7 @@ func draw(fromCenter startCenter: NSPoint, radius startRadius: CGFloat, toCenter
 - (void) drawFromCenter:(NSPoint) startCenter radius:(CGFloat) startRadius toCenter:(NSPoint) endCenter radius:(CGFloat) endRadius options:(NSGradientDrawingOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws a radial gradient pattern starting at the first circle and ending at the second circle. The gradient color transitions occur in circular bands emanating from the starting circle and ending at the second circle.
 

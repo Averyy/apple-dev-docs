@@ -24,7 +24,7 @@ convenience init(behaviors: [GKBehavior], andWeights weights: [NSNumber])
 + (instancetype) behaviorWithBehaviors:(NSArray<GKBehavior *> *) behaviors andWeights:(NSArray<NSNumber *> *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior object. To assign a behavior to an agent, use the agent’s [`behavior`](../gkagent/behavior.md) property.
 

@@ -26,7 +26,7 @@ static let neutralTint: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputNeutralTintKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a floating-point value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object. Use this key to set or fetch the temperature and tint values.  You can query this value to get the current tint value.
 

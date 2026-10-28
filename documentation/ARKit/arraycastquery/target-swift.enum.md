@@ -20,7 +20,7 @@ enum Target
 enum ARRaycastTarget : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 The available target types are plane, infinite plane, and estimated plane.
 

@@ -21,7 +21,7 @@ Returns true if the `CharacterSet` has a member in the specified plane.
 func hasMember(inPlane plane: UInt8) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This method makes it easier to find the plane containing the members of the current character set. The Basic Multilingual Plane (BMP) is plane 0.
 

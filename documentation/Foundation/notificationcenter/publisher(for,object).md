@@ -21,7 +21,7 @@ Returns a publisher that emits events when broadcasting notifications.
 func publisher(for name: Notification.Name, object: AnyObject? = nil) -> NotificationCenter.Publisher
 ```
 
-#### Return Value
+## Return Value
 
 A [`Publisher`](../../Combine/publisher.md) that emits events when broadcasting notifications.
 

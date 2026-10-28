@@ -23,7 +23,7 @@ func requestAuthorization(to type: NSWorkspace.AuthorizationType) async throws -
 - (void) requestAuthorizationOfType:(NSWorkspaceAuthorizationType) type completionHandler:(void (^)(NSWorkspaceAuthorization *authorization, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

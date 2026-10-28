@@ -25,11 +25,11 @@ func CTFontCreateWithNameAndOptions(_ name: CFString, _ size: CGFloat, _ matrix:
 extern CTFontRefCTFontCreateWithNameAndOptions(CFStringRef name, CGFloat size, const CGAffineTransform *matrix, CTFontOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `CTFontRef` that best matches the name provided with size and matrix attributes.
 
-#### Discussion
+## Discussion
 
 The `name` parameter is the only required parameter, and default values are used for unspecified parameters (`0.0` for `size` and `NULL` for `matrix` and `options`). If all parameters cannot be matched identically, a best match is found.
 

@@ -29,7 +29,7 @@ var name: String? { get set }
 
 - [Searching the Node Tree](../searching-the-node-tree.md)
 
-#### Discussion
+## Discussion
 
 This property is used to identify a node in other parts of your game logic. For example, you might use this name as part of collision testing. You can also search for nodes in a tree by their name.
 

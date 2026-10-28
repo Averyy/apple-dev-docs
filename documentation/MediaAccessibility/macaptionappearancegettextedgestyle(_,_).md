@@ -24,7 +24,7 @@ func MACaptionAppearanceGetTextEdgeStyle(_ domain: MACaptionAppearanceDomain, _ 
 extern MACaptionAppearanceTextEdgeStyle MACaptionAppearanceGetTextEdgeStyle(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The preferred text edge style, such as Raised or Drop Shadow. See [`MACaptionAppearanceTextEdgeStyle`](./macaptionappearancetextedgestyle.md).
 

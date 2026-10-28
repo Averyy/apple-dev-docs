@@ -33,7 +33,7 @@ var position: CGPoint { get set }
 - [Positioning a Scene’s Origin Within its View](../positioning-a-scene-s-origin-within-its-view.md)
 - [Using the Anchor Point to Move a Sprite](../using-the-anchor-point-to-move-a-sprite.md)
 
-#### Discussion
+## Discussion
 
 The default value is `(0.0,0.0)`.
 

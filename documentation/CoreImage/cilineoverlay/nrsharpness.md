@@ -25,7 +25,7 @@ var nrSharpness: Float { get set }
 @property (nonatomic) float NRSharpness;
 ```
 
-#### Discussion
+## Discussion
 
 This improves the edge acquisition.
 

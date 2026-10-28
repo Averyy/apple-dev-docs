@@ -15,11 +15,11 @@ Specifies a fallback handler to be used for convertinga Unicode text segment to 
 OSStatus SetFallbackUnicodeToText(UnicodeToTextInfo iUnicodeToTextInfo, UnicodeToTextFallbackUPP iFallback, OptionBits iControlFlags, LogicalAddress iInfoPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You can define multiple fallback handlers and associate themwith different Unicode converter objects, depending on your requirements.See  [`UnicodeToTextFallbackProcPtr`](./unicodetotextfallbackprocptr.md)  fora description of how to create and install an application-definedfallback handler.
 

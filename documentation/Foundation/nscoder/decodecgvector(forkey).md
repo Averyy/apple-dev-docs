@@ -24,11 +24,11 @@ func decodeCGVector(forKey key: String) -> CGVector
 - (CGVector) decodeCGVectorForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The vector data.
 
-#### Discussion
+## Discussion
 
 Use this method to decode vector information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-26fxa.md) method.
 

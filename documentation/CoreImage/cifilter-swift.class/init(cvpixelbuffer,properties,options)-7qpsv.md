@@ -22,11 +22,11 @@ Creates a filter from a Core Video pixel buffer.
 init!(CVPixelBuffer pixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]! = [:])
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object.
 
-#### Discussion
+## Discussion
 
 The first step when working with RAW images in Core Image is to process the image using either [`init(imageData:options:)`](./init%28imagedata,options%29.md) or [`init(imageURL:options:)`](./init%28imageurl,options%29.md). These initializers create a [`CIFilter`](../cifilter-swift.class.md) object with an [`outputImage`](./outputimage.md) which is a [`CIImage`](../ciimage.md) representation of the supplied RAW image.
 

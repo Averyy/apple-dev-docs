@@ -19,7 +19,7 @@ class NSOpenPanel
 @interface NSOpenPanel : NSSavePanel
 ```
 
-#### Overview
+## Overview
 
 Apps use the Open panel as a convenient way to query the user for the name of a file to open. In macOS 10.15 and later, the system always draws Open panels in a separate process, regardless of whether the app is sandboxed. When the user chooses a file to open, macOS adds that file to the app’s sandbox. Prior to macOS 10.15, the system drew the panels in a separate process only for sandboxed apps.
 

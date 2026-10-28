@@ -14,7 +14,7 @@
 #define kIOBDMediaTypeRE
 ```
 
-#### Discussion
+## Discussion
 
 The kIOBDMediaTypeKey constant for BD-RE media.
 

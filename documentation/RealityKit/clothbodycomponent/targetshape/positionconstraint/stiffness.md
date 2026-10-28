@@ -17,7 +17,7 @@ The stiffness by which the particle is pulled towards the position.
 var stiffness: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the context of a target shape, this gets multiplied by the weight of the target shape. A stiffness of 0 will effectively inactivate the position constraint.
 

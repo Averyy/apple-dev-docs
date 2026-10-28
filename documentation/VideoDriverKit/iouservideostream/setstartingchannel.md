@@ -15,7 +15,7 @@ Sets the starting channel of the stream.
 kern_return_t SetStartingChannel(uint32_t in_starting_channel);
 ```
 
-#### Discussion
+## Discussion
 
 Starting channel can be changed dynamically. The object sends a notification to the host to update the object state on success.
 

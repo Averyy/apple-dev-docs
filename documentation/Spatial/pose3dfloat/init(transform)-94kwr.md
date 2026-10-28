@@ -21,11 +21,11 @@ Creates a pose with with a position and rotation that are defined by a projectiv
 init?(transform: ProjectiveTransform3DFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a position and rotation that are defined by a projective transform.
 
-#### Discussion
+## Discussion
 
 > **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.
 

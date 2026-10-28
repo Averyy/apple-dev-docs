@@ -19,7 +19,7 @@ var interiorBackgroundStyle: NSView.BackgroundStyle { get }
 @property (readonly) NSBackgroundStyle interiorBackgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This value is dynamically computed based on the set of properties set for the `NSTableRowView`.
 

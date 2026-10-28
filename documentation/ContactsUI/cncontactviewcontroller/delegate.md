@@ -22,7 +22,7 @@ weak var delegate: (any CNContactViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CNContactViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The notification is sent when the user selects a property, or when the contact view controller is dismissed by its parent.
 

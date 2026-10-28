@@ -21,7 +21,7 @@ The properties of a subscription store control that includes the list of auto-re
 struct SubscriptionStoreControlStyleConfiguration
 ```
 
-#### Overview
+## Overview
 
 When you define a custom subscription store control style by creating a type that conforms to the [`SubscriptionStoreControlStyle`](./subscriptionstorecontrolstyle.md) protocol, you implement the [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md) method. That method takes a `SubscriptionStoreControlStyleConfiguration` parameter, which has the information necessary to define the behavior and interactions of a subscription store view’s primary controls.
 

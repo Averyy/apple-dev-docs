@@ -27,7 +27,7 @@ static var NSQuarterCalendarUnit: NSCalendar.Unit { get }
 NSQuarterCalendarUnit
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and earlier this was defined as equal to [`quarter`](../../../CoreFoundation/cfcalendarunit/quarter.md). In macOS 10.7 and later it is defined as `(1 << 20)`.
 

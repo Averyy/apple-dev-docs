@@ -17,11 +17,11 @@ Returns a Boolean value that indicates whether the overlay view consumes the giv
 func overlayView(_ overlayView: ImageAnalysisOverlayView, shouldHandleKeyDownEvent event: NSEvent) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the overlay view handles the event; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The default return value is `true`. Implement this callback if you don’t want the overlay view to consume the given event.
 

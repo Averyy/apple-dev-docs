@@ -21,7 +21,7 @@ Writes to the underlying pixel buffer.
 mutating func withMutablePixelBufferIfAvailable<R>(_ body: (CVPixelBuffer) throws -> R) rethrows -> R?
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to writes the contents of the underlying pixel buffer.
 

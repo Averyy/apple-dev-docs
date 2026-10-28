@@ -22,7 +22,7 @@ class HKPHQ9Assessment
 @interface HKPHQ9Assessment : HKScoredAssessment
 ```
 
-#### Discussion
+## Discussion
 
 Represents the result of a PHQ-9 assessment. Learn more about Pfizer’s PHQ-9 at https://support.apple.com/en-us/105070
 

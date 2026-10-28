@@ -16,7 +16,7 @@ A type that provides information on how to render content into the frame’s tex
 typedef struct cp_view * cp_view_t;
 ```
 
-#### Discussion
+## Discussion
 
 Compositor Services provides a view for each distinct render viewpoint. For example, a head-mounted display typically contains two views: one for each eye. Use the information in the views to set up your render pass descriptor, or to determine which part of a texture to fill with content.
 

@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, setObjectValue object: Any?, f
 - (void) tableView:(NSTableView *) tableView setObjectValue:(id) object forTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended for use with cell-based table views, it must not be used with view-based table views. In view-based tables, use target/action to set each item in the view cell.
 

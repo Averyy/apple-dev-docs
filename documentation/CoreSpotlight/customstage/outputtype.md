@@ -20,7 +20,7 @@ The data type this stage produces as output.
 static var outputType: SearchPipelineDataType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specify the type of data your custom stage supports. In the implementation of your type’s `execute` methods, generate a [`SearchPipelineData`](../searchpipelinedata.md) structure with the type of data you specified in this property.
 

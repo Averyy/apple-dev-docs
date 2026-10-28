@@ -25,7 +25,7 @@ static var nonMonotonic: CTRunStatus { get }
 kCTRunStatusNonMonotonic
 ```
 
-#### Discussion
+## Discussion
 
 The run is reordered so that the string indices associated with the glyphs aren’t in strictly increasing (for left-to-right runs) or decreasing (for right-to-left runs) order.
 

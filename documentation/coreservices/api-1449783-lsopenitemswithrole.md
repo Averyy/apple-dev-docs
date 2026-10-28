@@ -19,11 +19,11 @@ func LSOpenItemsWithRole(_ inItems: UnsafePointer<FSRef>!, _ inItemCount: CFInde
 OSStatus LSOpenItemsWithRole(const FSRef *inItems, CFIndex inItemCount, LSRolesMask inRole, const AEKeyDesc *inAEParam, const LSApplicationParameters *inAppParams, ProcessSerialNumber *outPSNs, CFIndex inMaxPSNCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 This function opens the specified items with the specified role. You can optionally specify the application and launch parameters in the `inAppParams` parameter. If an application is specified in the `inAppParams` parameter, the `inRole` parameter is ignored and the application is launched (if necessary).
 
@@ -33,7 +33,7 @@ If the `inItems` array contains any applications, this function launches them on
 
 If not `NULL`, the `outPSNs` buffer is filled with the PSN that was used to open each item at the same index of the `inItems` array. The PSN capacity of the output buffer is specified by `inMaxPSNCount`.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

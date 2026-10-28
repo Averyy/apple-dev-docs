@@ -11,13 +11,13 @@ Fetches all Impression Share reports containing metrics and metadata.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to return all Impression Share reports containing metrics and metadata. Use query parameters as needed.
 
 The rate limit for this endpoint is 150 reports within 15 minutes.
 
-##### Payload example:  All Impression Share reports
+### Payload example:  All Impression Share reports
 
 **Request**:
 

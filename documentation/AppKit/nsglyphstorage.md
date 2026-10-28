@@ -19,7 +19,7 @@ protocol NSGlyphStorage
 @protocol NSGlyphStorage
 ```
 
-#### Overview
+## Overview
 
 An example of a class that conforms to the [`NSGlyphStorage`](./nsglyphstorage.md) protocol is [`NSLayoutManager`](./nslayoutmanager.md).
 

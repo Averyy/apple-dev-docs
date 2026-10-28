@@ -20,11 +20,11 @@ Creates and initializes MetalKit meshes from all Model I/O meshes in a Model I/O
 + (NSArray<MTKMesh *> *) newMeshesFromAsset:(MDLAsset *) asset device:(id<MTLDevice>) device sourceMeshes:(NSArray<MDLMesh *> **) sourceMeshes error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of MetalKit mesh objects, or `nil` if an error occured.
 
-#### Discussion
+## Discussion
 
 This is a convenience method to create MetalKit meshes from each mesh in a source Model I/O asset. The resulting array of [`MTKMesh`](../mtkmesh.md) objects is returned by the method itself, while the [`MDLMesh`](../../ModelIO/mdlmesh.md) objects from which they were generated will be populated into the `sourceMeshes` array provided.
 

@@ -21,7 +21,7 @@ The host address couldn’t be found via DNS lookup.
 NSURLErrorDNSLookupFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error code is no longer used. You should expect to handle `NSURLErrorCannotFindHost` instead.
 

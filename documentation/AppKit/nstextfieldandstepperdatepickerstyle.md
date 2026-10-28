@@ -13,7 +13,7 @@
 static const NSDatePickerStyle NSTextFieldAndStepperDatePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a text field and stepper style interface.
 

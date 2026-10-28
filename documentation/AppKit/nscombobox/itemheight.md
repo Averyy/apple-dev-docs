@@ -19,7 +19,7 @@ var itemHeight: CGFloat { get set }
 @property CGFloat itemHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The height of items is measured in points. The default item height is `16.0` points.
 

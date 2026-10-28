@@ -22,11 +22,11 @@ func GLKVector4Lerp(_ vectorStart: GLKVector4, _ vectorEnd: GLKVector4, _ t: Flo
 static GLKVector4 GLKVector4Lerp(GLKVector4 vectorStart, GLKVector4 vectorEnd, float t);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 The value of `t` should typically be between `0.0` and `1.0`. A value of `0.0` returns the starting vector and a value of `1.0` returns the ending vector. Any other value of `t` results in a linear interpolation between the two points.
 

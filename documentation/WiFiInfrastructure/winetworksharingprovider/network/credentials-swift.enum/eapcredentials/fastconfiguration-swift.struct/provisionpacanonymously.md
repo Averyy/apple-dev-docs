@@ -17,7 +17,7 @@ A Boolean value that indicates whether to provision the device anonymously.
 let provisionPACAnonymously: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the framework provisions the device anonymously.
 

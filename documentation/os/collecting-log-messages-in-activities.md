@@ -5,13 +5,13 @@
 
 Find messages related to a specific user action or application event.
 
-#### Overview
+## Overview
 
 Extensive logging can provide lots of information about the inner workings of your app, but the large number of log messages may make it difficult to find any particular piece of data. Further, when you try to reproduce a bug, you often need to retrace a user’s steps, correlating the actions the user performed with the app’s behaviors. *Activities* help you solve both of these problems by associating log messages with user actions or other app-defined events. For example, you might create an activity when the user selects an action from a menu, or when your updates synchronizes its data with a database. While an activity is active, any messages you log are automatically associated with that activity. You can review these activities in Console and find the messages captured for each activity.
 
 Activities are organized in a hierarchy of parent-child relationships. For small tasks in a single subsystem category, you might use a single activity to encapsulate all the messages. For larger tasks and events that trigger other application activities,  use child activities to organize messages, similar to the way you break out different categories within a logging subsystem. For example, assume you’ve created a parent activity to respond to a user action. Within that activity, you might create a child activity to capture log messages for updates performed to your model data, and a separate child activity to capture messages related to user interface updates.
 
-##### Create an Activity
+### Create an Activity
 
 The simplest way to create an activity is to call [`os_activity_initiate`](./os_activity_initiate.md), specifying a name for the activity and a block that contains the code that should be executed as part of the activity. The system creates the activity, calls the block synchronously, and then releases the activity. By default, the new activity is a child of any currently active activity, if one exists. Use the flags parameter to override this behavior.
 

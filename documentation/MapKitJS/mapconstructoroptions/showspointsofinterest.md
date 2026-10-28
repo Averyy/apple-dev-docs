@@ -15,7 +15,7 @@ A Boolean value that determines whether the map displays points of interest.
 showsPointsOfInterest?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true.`
 

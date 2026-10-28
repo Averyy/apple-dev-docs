@@ -20,7 +20,7 @@ string auto_renew_status
 - `1`: The subscription will renew at the end of the current subscription period.
 - `0`: The customer has turned off automatic renewal for the subscription.
 
-#### Discussion
+## Discussion
 
 This field is returned in the JSON response, in the [`responseBody.Pending_renewal_info`](./responsebody/pending_renewal_info-data.dictionary.md) array.
 

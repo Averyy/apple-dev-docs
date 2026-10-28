@@ -15,7 +15,7 @@ The payload that configures the third wired Ethernet interface.
 WiFi.EAPClientConfiguration 8021XThirdEthernet
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.thirdethernet.managed` as the payload type.
 
@@ -27,7 +27,7 @@ This payload’s contents contain these profile-specific keys:
 
 This payload applies to Ethernet interfaces according to service order, regardless of whether the interface is working.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ This payload applies to Ethernet interfaces according to service order, regardle
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

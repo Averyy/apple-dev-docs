@@ -20,7 +20,7 @@ A result builder that creates table row content from closures.
 struct TableRowBuilder<Value> where Value : Identifiable
 ```
 
-#### Overview
+## Overview
 
 The `buildBlock` methods in this type create [`TableRowContent`](./tablerowcontent.md) instances based on the number and types of sources provided as parameters.
 

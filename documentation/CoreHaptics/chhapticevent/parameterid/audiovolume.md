@@ -24,7 +24,7 @@ static let audioVolume: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDAudioVolume;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter value ranges from 0.0 (silent) to 1.0 (maximum volume).
 

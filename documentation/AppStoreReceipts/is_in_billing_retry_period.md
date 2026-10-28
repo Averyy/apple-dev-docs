@@ -20,7 +20,7 @@ string is_in_billing_retry_period
 - `1`: The App Store is attempting to renew the subscription.
 - `0`: The App Store has stopped attempting to renew the subscription.
 
-#### Discussion
+## Discussion
 
 This field is returned in the JSON response, in the [`responseBody.Pending_renewal_info`](./responsebody/pending_renewal_info-data.dictionary.md) array.
 

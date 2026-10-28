@@ -22,7 +22,7 @@ init(share: CKShare, container: CKContainer)
 - (instancetype) initWithShare:(CKShare *) share container:(CKContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`init(share:container:)`](./init%28share,container%29.md) initializer method to create the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance when the user who owns the [`CKShare`](../../CloudKit/ckshare.md) record wants to manage the participants and restrictions associated with the share. (For more information, see [Adding and removing participants from an existing share](../uicloudsharingcontroller.md#Adding-and-removing-participants-from-an-existing-share).) You also use this initializer method when users are participants who want to remove themselves from a share. (For more information, see [Viewing participants and leaving a share](../uicloudsharingcontroller.md#Viewing-participants-and-leaving-a-share).)
 

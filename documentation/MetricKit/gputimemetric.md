@@ -18,7 +18,7 @@ A metric that measures the total GPU time used by the app.
 struct GPUTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.gpuTime(_:)`](./metricresult/gputime%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

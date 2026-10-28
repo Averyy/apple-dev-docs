@@ -24,7 +24,7 @@ class let currentInputModeDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UITextInputCurrentInputModeDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The posting object is a [`UITextInputMode`](../uitextinputmode.md) instance.
 

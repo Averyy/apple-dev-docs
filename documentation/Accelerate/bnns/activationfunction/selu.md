@@ -23,7 +23,7 @@ An activation function that evaluates the scaled exponential linear units (SELU)
 case selu
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

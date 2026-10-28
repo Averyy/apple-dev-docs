@@ -17,7 +17,7 @@ A Boolean value that indicates whether the event includes all applications, cate
 var includesAllActivity: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `includesAllActivity` to determine the content of the scheduled event. Evaluates to `true` if [`applications`](./applications.md), [`categories`](./categories.md), and [`webDomains`](./webdomains.md) are empty; otherwise `false`.
 

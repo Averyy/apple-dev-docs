@@ -21,7 +21,7 @@ Creates a string by interpreting the component’s content as UTF-8 on Unix and 
 var string: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to calling `String(decoding: component)`.
 

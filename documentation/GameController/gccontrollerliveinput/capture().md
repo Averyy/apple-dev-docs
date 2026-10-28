@@ -24,7 +24,7 @@ func capture() -> GCControllerInputState
 - (GCControllerInputState *) capture;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance containing the current state of the physical device input.
 

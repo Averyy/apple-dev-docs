@@ -24,11 +24,11 @@ class func isPassLibraryAvailable() -> Bool
 + (BOOL) isPassLibraryAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the pass library is available; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method exists because the pass library may be unavailable even if the [`PKPassLibrary`](../pkpasslibrary.md) class exists.
 

@@ -24,7 +24,7 @@ static let hapticContinuous: CHHapticEvent.EventType
 extern CHHapticEventType CHHapticEventTypeHapticContinuous;
 ```
 
-#### Discussion
+## Discussion
 
 Continuous haptic patterns, like the sustained vibration from a ringtone, take the form of lengthier feedback over a period of time. You must provide continuous events with a duration to determine their endpoint. The maximum duration of a continuous haptic event is 30 seconds.
 

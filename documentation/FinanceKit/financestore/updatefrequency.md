@@ -17,7 +17,7 @@ Frequencies of background delivery updates.
 enum UpdateFrequency
 ```
 
-#### Overview
+## Overview
 
 These represent the expected minimum interval between updates delivered to a `BackgroundDeliveryExtension` and if no data changes, no updates will occur. After an update is delivered, if data changes again within the interval, the next update won’t happen until the interval has passed.
 

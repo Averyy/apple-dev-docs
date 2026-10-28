@@ -24,7 +24,7 @@ func remove(from runloop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) removeFromRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 The run loop releases the display link if it no longer associates with any run modes.
 

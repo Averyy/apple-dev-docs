@@ -17,7 +17,7 @@ case behavior10_0
 NSDateFormatterBehavior10_0
 ```
 
-#### Discussion
+## Discussion
 
 Specifies formatting behavior equivalent to that in OS X 10.0.
 

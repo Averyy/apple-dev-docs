@@ -16,7 +16,7 @@ The port on which the receiver receives incoming network messages.
 @property (retain, readonly) NSPort * receivePort;
 ```
 
-#### Discussion
+## Discussion
 
 You can inspect this object for debugging purposes or use it to create another `NSConnection` object, but shouldn’t use it to send or receive messages explicitly. Don’t set the delegate of the receive port; it already has a delegate established by the `NSConnection` object.
 

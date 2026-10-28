@@ -16,7 +16,7 @@ struct vnop_setattr_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Supported attributes ("Yes, I am returning this information") are set with VATTR_SET_SUPPORTED. Which attributes have been requested is checked with VATTR_IS_ACTIVE. Attributes are returned with VATTR_RETURN. It is through VNOP_GETATTR that routines like stat() get their information. A VNOP_GETATTR() calldown may come without any preceding VNOP_OPEN().
 

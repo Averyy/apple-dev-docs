@@ -6,7 +6,7 @@
 
 A 32-bit integer that identifies the atom type.
 
-#### Overview
+## Overview
 
 This field must be set to `' ty'` (note that the two leading bytes must be set to `0x00`).
 

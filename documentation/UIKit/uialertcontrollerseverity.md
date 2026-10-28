@@ -23,7 +23,7 @@ enum UIAlertControllerSeverity
 enum UIAlertControllerSeverity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the severity options used by the [`severity`](./uialertcontroller/severity.md) property of [`UIAlertController`](./uialertcontroller.md). In apps built with Mac Catalyst, the severity determines the style of the presented alert. A [`UIAlertControllerSeverity.critical`](./uialertcontrollerseverity/critical.md) alert appears with a caution icon, and an alert with a [`UIAlertControllerSeverity.default`](./uialertcontrollerseverity/default.md) severity doesn’t. UIKit ignores the alert severity on iOS.
 

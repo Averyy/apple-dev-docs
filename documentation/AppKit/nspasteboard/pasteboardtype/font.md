@@ -19,7 +19,7 @@ static let font: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeFont;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`font`](./font.md) instead.
 

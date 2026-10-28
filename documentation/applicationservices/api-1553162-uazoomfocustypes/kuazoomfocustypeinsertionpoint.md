@@ -13,7 +13,7 @@
 kUAZoomFocusTypeInsertionPoint = 1
 ```
 
-#### Discussion
+## Discussion
 
 The text insertion point has moved.
 

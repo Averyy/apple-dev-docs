@@ -25,7 +25,7 @@ func presentationAnchor(for controller: ASAuthorizationController) -> ASPresenta
 - (ASPresentationAnchor) presentationAnchorForAuthorizationController:(ASAuthorizationController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 A user interface element that can act as the anchor for the authorization presentation.
 

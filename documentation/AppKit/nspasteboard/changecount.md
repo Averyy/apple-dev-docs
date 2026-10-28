@@ -19,7 +19,7 @@ var changeCount: Int { get }
 @property (readonly) NSInteger changeCount;
 ```
 
-#### Discussion
+## Discussion
 
 The change count starts at zero when a client creates the receiver and becomes the first owner. The change count subsequently increments each time the pasteboard ownership changes.
 

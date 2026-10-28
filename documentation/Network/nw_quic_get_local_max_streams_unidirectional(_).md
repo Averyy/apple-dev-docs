@@ -25,7 +25,7 @@ func nw_quic_get_local_max_streams_unidirectional(_ metadata: nw_protocol_metada
 uint64_t nw_quic_get_local_max_streams_unidirectional(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of unidirectional streams that the peer can create.
 

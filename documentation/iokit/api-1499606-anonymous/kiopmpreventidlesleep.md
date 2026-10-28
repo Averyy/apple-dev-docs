@@ -14,7 +14,7 @@
 kIOPMPreventIdleSleep = 0x00000040
 ```
 
-#### Discussion
+## Discussion
 
 In the capability field of a power state, disallows idle system sleep while the device is in that state.
 

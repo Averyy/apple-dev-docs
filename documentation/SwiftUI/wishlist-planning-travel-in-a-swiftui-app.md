@@ -12,7 +12,7 @@ Build a travel planning app that organizes trips into collections and tracks act
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 The Wishlist sample app helps people organize travel plans by grouping trips into seasonal collections. Within each trip, people can create activities and mark them complete as they explore. The app rewards progress with achievement badges, tracking milestones like completing a first trip or reaching an activity milestone across all adventures.
 
@@ -24,7 +24,7 @@ The sample project demonstrates how to:
 - Animate view changes.
 - Create zoom transitions to navigation destinations and between buttons and sheets.
 
-##### Compose custom views
+### Compose custom views
 
 SwiftUI views conform to the [`View`](./view.md) protocol and define their content through a computed `body` property. Each view returns a description of what appears on screen, and SwiftUI handles the rendering.
 
@@ -59,7 +59,7 @@ struct TripCard: View {
 
 The outer `VStack` stacks the image and text vertically, aligning content to the leading edge. Apply transformations sequentially by stacking modifiers, with each modifier wrapping the previous view in a new view with modified behavior.
 
-##### Manage state with an observable macro
+### Manage state with an observable macro
 
 SwiftUI updates views automatically when their dependencies change. Mark model classes with [`Observable()`](../Observation/observable%28%29.md) to opt into automatic change tracking. In Wishlist, the `@Observable` macro synthesizes the necessary code to publish changes made to any stored property:
 
@@ -141,7 +141,7 @@ struct SearchView: View {
 
 The `@Bindable` property wrapper exposes a binding projection prefix `$` to produce a `Binding` value. In the above example, `$dataSource.searchText` creates a `Binding<String>` that connects the search field to the data source. When someone types in the search field, SwiftUI writes the new value through the binding, updating the observable property and invalidating dependent views.
 
-##### Customize navigation title appearance
+### Customize navigation title appearance
 
 SwiftUI separates visual presentation from semantic meaning when displaying navigation titles.
 
@@ -166,7 +166,7 @@ The `ExpandedNavigationTitle` view renders the title with a custom font. Always 
 
 For content that extends into the safe area, use [`largeTitle`](./toolbaritemplacement/largetitle.md) placement instead.
 
-##### Animate view changes
+### Animate view changes
 
 To direct people’s attention to state changes, add animation in one of the following ways:
 
@@ -202,7 +202,7 @@ The `animation(.snappy, value: activity.isComplete)` modifier tells SwiftUI to a
 
 To learn more about animations, check out WWDC23 session [10156: Explore SwiftUI animation](https://developer.apple.com/videos/play/wwdc2023/10156/).
 
-##### Create zoom transitions between navigation destinations
+### Create zoom transitions between navigation destinations
 
 To customize animated transitions between views, apply [`matchedTransitionSource(id:in:)`](./view/matchedtransitionsource%28id,in%29.md) to the source view and [`navigationTransition(_:)`](./view/navigationtransition%28_%29.md) with the transition  [`zoom(sourceID:in:)`](./navigationtransition/zoom%28sourceid,in%29.md) to the destination view using matching identifiers. Use the [`Namespace`](./namespace.md) property wrapper to create a unique value that associates the source and destination.
 

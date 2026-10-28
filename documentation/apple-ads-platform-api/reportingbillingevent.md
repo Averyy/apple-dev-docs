@@ -20,7 +20,7 @@ string ReportingBillingEvent
 - `TAPS`: The campaign is charged per tap.
 - `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM).
 
-#### Discussion
+## Discussion
 
 The `ReportingBillingEvent` mirrors [`BillingEvent`](./billingevent.md) for use in report rows and filters. See [`BillingEvent`](./billingevent.md) for the full description of each value.
 

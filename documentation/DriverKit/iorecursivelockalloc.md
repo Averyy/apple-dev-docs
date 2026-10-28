@@ -16,11 +16,11 @@
 struct IORecursiveLock *IORecursiveLockAlloc();
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
-#### Discussion
+## Discussion
 
 Allocates and initializes an recursive lock.
 

@@ -20,7 +20,7 @@ A closure that provides app entity identifiers to make custom view content disco
 @preconcurrency var appEntityUIElementProvider: ((UIView, AppEntityUIElementsContext) -> [AppEntityUIElement])? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically provide app entity identifiers for a custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence and Siri using [`appEntityUIElementProvider`](./appentityuielementprovider.md) and provide the system with a list of `AppEntityUIElement` instances.
 

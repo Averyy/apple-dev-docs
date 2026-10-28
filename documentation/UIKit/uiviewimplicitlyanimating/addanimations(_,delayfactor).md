@@ -23,7 +23,7 @@ optional func addAnimations(_ animation: @escaping () -> Void, delayFactor: CGFl
 - (void) addAnimations:(void (^)()) animation delayFactor:(CGFloat) delayFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new animation blocks to your custom animator object. The animations in the new block should run alongside any previously configured animations, starting after the specified delay and finishing at the same time as any original animations. Your implementation must be able to handle multiple calls to this method.
 

@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 5.1 SDK provides support for developing watchOS apps for Apple Watch devices running watchOS 5.1.3. The SDK comes bundled with Xcode 10.1. For information on the compatibility requirements for Xcode 10.1, see [Xcode Release Notes](../Xcode-Release-Notes/Xcode-Release-Notes.md).
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - ECG sessions are no longer interrupted by incoming notifications. (46502715)
 

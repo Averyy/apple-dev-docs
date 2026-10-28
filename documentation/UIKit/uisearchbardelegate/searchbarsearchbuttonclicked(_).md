@@ -23,7 +23,7 @@ optional func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
 - (void) searchBarSearchButtonClicked:(UISearchBar *) searchBar;
 ```
 
-#### Discussion
+## Discussion
 
 You should implement this method to begin the search. Use the [`text`](../uisearchbar/text.md) property of the search bar to get the text. You can also send [`becomeFirstResponder()`](../uiresponder/becomefirstresponder%28%29.md) to the search bar to begin editing programmatically.
 

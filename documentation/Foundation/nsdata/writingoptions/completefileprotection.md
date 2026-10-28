@@ -25,7 +25,7 @@ static var completeFileProtection: NSData.WritingOptions { get }
 NSDataWritingFileProtectionComplete
 ```
 
-#### Discussion
+## Discussion
 
 In this case, the system stores the file in an encrypted format and your app may only read or write to the file while the device is unlocked. At all other times, any  attempts your app makes to read and write the file will fail.
 

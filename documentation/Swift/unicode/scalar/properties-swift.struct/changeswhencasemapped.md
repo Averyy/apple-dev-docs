@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar may change when it undergoes case 
 var changesWhenCaseMapped: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` whenever one or more of `changesWhenLowercased`, `changesWhenUppercased`, or `changesWhenTitlecased` are `true`.
 

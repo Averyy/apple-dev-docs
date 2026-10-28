@@ -23,7 +23,7 @@ let SCNSceneSourceAssetModifiedDateKey: String
 extern NSString * const SCNSceneSourceAssetModifiedDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The date when the file was last modified. The corresponding value is an `NSDate` instance.
 

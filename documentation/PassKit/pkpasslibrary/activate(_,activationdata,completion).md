@@ -27,7 +27,7 @@ func activate(_ secureElementPass: PKSecureElementPass, activationData: Data) as
 - (void) activateSecureElementPass:(PKSecureElementPass *) secureElementPass withActivationData:(NSData *) activationData completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You must provision the Secure Element pass and make sure it’s in the [`PKSecureElementPass.PassActivationState.requiresActivation`](../pksecureelementpass/passactivationstate-swift.enum/requiresactivation.md) state before you call this method.
 

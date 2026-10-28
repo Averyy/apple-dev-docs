@@ -23,7 +23,7 @@ static var number: IntegerFormatStyle<UInt> { get }
 
 Available when `Self` is `IntegerFormatStyle<UInt>`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 

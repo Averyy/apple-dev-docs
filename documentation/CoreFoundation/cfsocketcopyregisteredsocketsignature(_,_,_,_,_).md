@@ -25,11 +25,11 @@ func CFSocketCopyRegisteredSocketSignature(_ nameServerSignature: UnsafePointer<
 extern CFSocketError CFSocketCopyRegisteredSocketSignature(const CFSocketSignature *nameServerSignature, CFTimeInterval timeout, CFStringRef name, CFSocketSignature *signature, CFDataRef*nameServerAddress);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Once you have the socket signature, you can open a connection to that socket with [`CFSocketCreateConnectedToSocketSignature(_:_:_:_:_:_:)`](./cfsocketcreateconnectedtosocketsignature%28_,_,_,_,_,_%29.md).
 

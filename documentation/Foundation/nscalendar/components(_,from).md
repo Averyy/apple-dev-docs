@@ -25,11 +25,11 @@ func components(_ unitFlags: NSCalendar.Unit, from date: Date) -> DateComponents
 - (NSDateComponents *) components:(NSCalendarUnit) unitFlags fromDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDateComponents` object containing `date` decomposed into the components specified by `unitFlags`. Returns `nil` if `date` falls outside of the defined range of the receiver or if the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 The Weekday ordinality, when requested, refers to the next larger (than Week) of the requested units. Some computations can take a relatively long time.
 

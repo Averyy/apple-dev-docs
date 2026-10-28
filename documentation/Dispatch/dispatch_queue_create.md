@@ -21,11 +21,11 @@ Creates a new dispatch queue to which you can submit blocks.
 extern dispatch_queue_tdispatch_queue_create(const char *label, dispatch_queue_attr_t attr);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created dispatch queue.
 
-#### Discussion
+## Discussion
 
 Blocks submitted to a serial queue are executed one at a time in FIFO order. Note, however, that blocks submitted to independent queues may be executed concurrently with respect to each other. Blocks submitted to a concurrent queue are dequeued in FIFO order but may run concurrently if resources are available to do so.
 

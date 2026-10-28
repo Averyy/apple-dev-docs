@@ -19,7 +19,7 @@ func willOpenMenu(_ menu: NSMenu, with event: NSEvent)
 - (void) willOpenMenu:(NSMenu *) menu withEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called just before a contextual menu for a view is opened on screen. It provides an opportunity to make any desired changes to the visual state of the view. For example, a table view might select a row in response to the contextual menu being displayed.
 

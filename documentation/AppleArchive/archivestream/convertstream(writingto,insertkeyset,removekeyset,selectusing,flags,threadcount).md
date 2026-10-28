@@ -21,7 +21,7 @@ Opens a convert output archive stream.
 static func convertStream(writingTo stream: ArchiveStream, insertKeySet: ArchiveHeader.FieldKeySet, removeKeySet: ArchiveHeader.FieldKeySet, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive stream.
 

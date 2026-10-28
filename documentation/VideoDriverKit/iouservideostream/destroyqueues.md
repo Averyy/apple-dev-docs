@@ -15,11 +15,11 @@ Releases the shared input and output queues.
 kern_return_t destroyQueues();
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the queues were successfully destroyed.
 
-#### Discussion
+## Discussion
 
 The queues cannot be destroyed while the stream is open by a client.
 

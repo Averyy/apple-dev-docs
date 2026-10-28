@@ -24,7 +24,7 @@ var timeRange: CMTimeRange { get }
 @property (readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 The client is responsible for delivering the appropriate sample corresponding to timeRange.start if we are resuming a previous session that has already made incremental progress for this track.
 

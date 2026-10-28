@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_None = 0xF
 ```
 
-#### Discussion
+## Discussion
 
 No Protocol Identifier.
 

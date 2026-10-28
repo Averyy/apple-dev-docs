@@ -5,7 +5,7 @@
 
 Control what apps and binaries can run on supervised Apple devices.
 
-#### Overview
+## Overview
 
 On supervised devices running iOS 27, iPadOS 27, macOS 27, tvOS 27, or visionOS 27, you can manage the apps people can run by using the [`AppSettings`](./appsettings.md) configuration. This configuration offers two pairs of keys for granular, flexible control of what apps and binaries can run, as detailed in the table below.
 
@@ -30,13 +30,13 @@ If you apply both an allow and a deny key, the device uses the more restrictive 
 
 If an app or binary appears in both lists, the device prevents it from running.
 
-#### Allow and deny binaries in macOS
+## Allow and deny binaries in macOS
 
 In macOS, the configuration uses an Endpoint Security client and can manage standalone binaries and binaries embedded in an app bundle. You can create rules for the policy the Endpoint Security client uses to decide whether to allow or deny a binary.
 
 For more information on the architecture and decision process, see [Allow and deny apps and binaries](https://support.apple.com/guide/deployment/dep001044b08).
 
-#### Create binary matching rules
+## Create binary matching rules
 
 For the Endpoint Security client to allow or deny a binary, provide the necessary identifiers in the configuration.
 
@@ -125,7 +125,7 @@ For platform binaries, use the `Authority` value to determine the `SigningState`
 
 If `codesign` returns an ad hoc `Signature` value, or if the certificate contains OID `1.2.840.113635.100.6.1.12` to indicate a development signature, the device denies the binary.
 
-#### Deny specific binaries
+## Deny specific binaries
 
 When the Endpoint Security client denies a binary, it shows an alert to inform the user that their organization prevented the use of the binary.
 
@@ -154,7 +154,7 @@ To deny Web Clips, use the following entry in `DeniedBinaries`:
 ]
 ```
 
-#### Allow only specific binaries
+## Allow only specific binaries
 
 Use one of the following required attributes to create an  `AllowedBinaries` list entry:
 
@@ -188,7 +188,7 @@ To allow Web Clips, use the following entry in `AllowedBinaries`:
 ]
 ```
 
-#### Configure allow and deny scenarios
+## Configure allow and deny scenarios
 
 The following examples show `AllowedBinaries` and `DeniedBinaries` combinations in macOS.
 

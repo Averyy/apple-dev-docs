@@ -24,7 +24,7 @@ func update(deltaTime seconds: TimeInterval)
 - (void) updateWithDeltaTime:(NSTimeInterval) seconds;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, an entity/component-based game needs to dispatch periodic logic—from an update/render loop method such as [`update(_:)`](../../SpriteKit/skscene/update%28_%29.md) (SpriteKit) or [`renderer(_:updateAtTime:)`](../../SceneKit/scnscenerendererdelegate/renderer%28_,updateattime%29.md) (SceneKit), or a [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) (iOS) or [`CVDisplayLink`](../../CoreVideo/cvdisplaylink.md) (macOS) timer in a custom rendering engine—to each of its components, so that each can perform component-specific update logic.
 

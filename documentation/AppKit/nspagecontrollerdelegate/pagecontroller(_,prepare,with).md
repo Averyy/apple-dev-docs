@@ -20,7 +20,7 @@ optional func pageController(_ pageController: NSPageController, prepare viewCon
 - (void) pageController:(NSPageController *) pageController prepareViewController:(NSViewController *) viewController withObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is not implemented, then `viewController` object’s `representedObject` is set to the object.
 

@@ -21,7 +21,7 @@ Populates a single-precision vector with a specified scalar value.
 static func fill<V>(_ vector: inout V, with value: Float) where V : AccelerateMutableBuffer, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function populates a vector with a specified scalar value.
 

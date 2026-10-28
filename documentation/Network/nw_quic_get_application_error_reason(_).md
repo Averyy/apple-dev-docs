@@ -25,7 +25,7 @@ func nw_quic_get_application_error_reason(_ metadata: nw_protocol_metadata_t) ->
 const char *nw_quic_get_application_error_reason(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 An error reason string.
 

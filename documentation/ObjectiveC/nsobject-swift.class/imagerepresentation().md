@@ -19,11 +19,11 @@ func imageRepresentation() -> Any!
 - (id) imageRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 The image to display; can return `nil` if the item has no image to display.
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method. This method  is called frequently, so the receiver should cache the returned instance.
 

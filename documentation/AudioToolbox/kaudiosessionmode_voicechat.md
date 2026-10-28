@@ -23,7 +23,7 @@ var kAudioSessionMode_VoiceChat: Int { get }
 kAudioSessionMode_VoiceChat
 ```
 
-#### Discussion
+## Discussion
 
 When this mode is in use, the device’s tonal equalization is optimized for voice. For use with the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) audio session category. On devices with more than one built-in microphone, the primary microphone is used.
 

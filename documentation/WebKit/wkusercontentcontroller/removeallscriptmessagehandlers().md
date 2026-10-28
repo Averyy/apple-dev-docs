@@ -23,7 +23,7 @@ func removeAllScriptMessageHandlers()
 - (void) removeAllScriptMessageHandlers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove all message handlers in all content worlds in your JavaScript code.
 

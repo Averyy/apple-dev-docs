@@ -19,7 +19,7 @@ The selection effect to apply to a palette item.
 struct PaletteSelectionEffect
 ```
 
-#### Overview
+## Overview
 
 You can configure the selection effect of a palette item by using the [`paletteSelectionEffect(_:)`](./view/paletteselectioneffect%28_%29.md) view modifier.
 

@@ -12,7 +12,7 @@ virtual IOReturn setTimeoutUS(
  UInt32interval);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if everything is fine, kIOReturnNoResources if action hasn't been declared.
 

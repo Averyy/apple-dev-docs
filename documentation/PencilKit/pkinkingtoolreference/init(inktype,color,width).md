@@ -39,7 +39,7 @@ init(inkType type: __PKInkType, color: NSColor, width: CGFloat)
 - (instancetype) initWithInkType:(PKInkType) type color:(NSColor *) color width:(CGFloat) width;
 ```
 
-#### Return Value
+## Return Value
 
 A new inking tool with the specified type, color, and width.
 

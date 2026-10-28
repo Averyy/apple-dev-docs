@@ -25,7 +25,7 @@ var shouldInterpolate: Bool { get }
 extern bool CGImageGetShouldInterpolate(CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 The interpolation setting specifies whether an edge-smoothing algorithm is applied to the associated image.
 

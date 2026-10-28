@@ -25,11 +25,11 @@ func CFCharacterSetGetTypeID() -> CFTypeID
 extern CFTypeID CFCharacterSetGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of the CFCharacterSet opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableCharacterSet objects have the same type identifier as CFCharacterSet objects.
 

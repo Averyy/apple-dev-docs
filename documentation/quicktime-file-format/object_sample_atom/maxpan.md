@@ -6,7 +6,7 @@
 
 The maximum pan angle, in degrees.
 
-#### Overview
+## Overview
 
 The value of this field must be greater than the value of the `minPan` field.
 

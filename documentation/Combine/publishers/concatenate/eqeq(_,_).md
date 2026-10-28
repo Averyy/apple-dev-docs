@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Concatenate<Prefix, Suffix>, rhs: Publishers.Con
 
 Available when `Prefix` conforms to `Publisher`, `Prefix` conforms to `Equatable`, `Suffix` conforms to `Publisher`, `Suffix` conforms to `Equatable`, `Prefix.Failure` is `Suffix.Failure`, and `Prefix.Output` is `Suffix.Output`.
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers’ `prefix` and `suffix` properties are equal; otherwise `false`.
 

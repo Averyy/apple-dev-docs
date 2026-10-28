@@ -19,7 +19,7 @@ var headerView: NSTableHeaderView? { get set }
 @property (strong, nullable) NSTableHeaderView * headerView;
 ```
 
-#### Discussion
+## Discussion
 
 To configure a table without a header view or to remove the table view’s current header view, set the value of this property to `nil`. For more information about header views, see [`NSTableHeaderView`](../nstableheaderview.md).
 

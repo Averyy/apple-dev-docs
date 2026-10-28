@@ -21,7 +21,7 @@ The horizontal pixel offset of the rectangle from the left of the bounding raste
 var left: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than [`referenceRasterWidth`](./referencerasterwidth.md).
 

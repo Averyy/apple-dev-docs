@@ -13,7 +13,7 @@
 typedef IOOptionBits IODirection;
 ```
 
-#### Discussion
+## Discussion
 
 Direction of transfer, with respect to the described memory.
 

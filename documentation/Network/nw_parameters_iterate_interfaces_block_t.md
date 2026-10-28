@@ -25,7 +25,7 @@ typealias nw_parameters_iterate_interfaces_block_t = (nw_interface_t) -> Bool
 typedef _Bool (^)(NSObject<OS_nw_interface> *) nw_parameters_iterate_interfaces_block_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue iterating, or false to stop iterating.
 

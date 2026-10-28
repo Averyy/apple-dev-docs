@@ -22,11 +22,11 @@ final func requestDocument<Request>(_ request: Request) async throws -> Request.
 
 - [Adopting the Verifier API in your iPhone app](../adopting-the-verifier-api-in-your-iphone-app.md)
 
-#### Return Value
+## Return Value
 
 A [`Response`](../mobiledocumentrequest/response.md) if the request was successful.
 
-#### Discussion
+## Discussion
 
 Call this method to begin requesting data contained in a mobile document. This method displays a system-provided sheet with instructions on what the mobile document holder needs to do. This UI remains onscreen until the system reads the person’s mobile document, you cancel the task, or an error occurs.
 

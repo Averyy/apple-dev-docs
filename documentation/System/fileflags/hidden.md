@@ -21,7 +21,7 @@ File should not be displayed in a GUI.
 static var hidden: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_HIDDEN`.
 

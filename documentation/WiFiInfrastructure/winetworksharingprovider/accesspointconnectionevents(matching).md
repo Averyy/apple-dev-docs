@@ -17,11 +17,11 @@ Returns an async sequence of access point events containing the currently connec
 func accessPointConnectionEvents(matching predicate: Predicate<WINetworkSharingProvider.AccessPointConnection>? = nil) -> some Sendable & AsyncSequence<WINetworkSharingProvider.AccessPointConnectionEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An AsyncSequence that delivers [`WINetworkSharingProvider.AccessPointConnectionEvent`](./accesspointconnectionevent.md) instances whenever your app extension needs to update its access point information.
 
-#### Discussion
+## Discussion
 
 Updates will be sent when the host joins or roams to a new Access Point, or when it disconnects from an access point.
 

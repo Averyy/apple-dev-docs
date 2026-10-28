@@ -19,7 +19,7 @@ var maxFullScreenContentSize: NSSize { get set }
 @property NSSize maxFullScreenContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system uses Auto Layout to determine the maximum size, so applications that don’t change window content upon entering full screen should not need to set the value of [`maxFullScreenContentSize`](./maxfullscreencontentsize.md). (If Auto Layout is not used, the system queries [`contentMinSize`](./contentminsize.md) and [`contentMaxSize`](./contentmaxsize.md).) If an application does significant rework of the user interface in full screen, then it may be necessary to set the value of [`maxFullScreenContentSize`](./maxfullscreencontentsize.md). You can use this property even if the window does not support full screen, but can be implicitly opted into supporting a full screen tile based on resizing behavior and window properties (for more information, see the [`collectionBehavior`](./collectionbehavior-swift.property.md) property).
 

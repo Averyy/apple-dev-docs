@@ -17,7 +17,7 @@ The radius of the sphere.
 var radius: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be positive.
 

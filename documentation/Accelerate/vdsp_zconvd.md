@@ -21,7 +21,7 @@ Performs either correlation or convolution on two complex double-precision vecto
 extern void vDSP_zconvD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__F, vDSP_Stride __IF, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to compute either the convolution or the correlation of an input signal and a filter vector. Both operations compute the sliding dot product of the filter and the section of the input signal that the filter is over. Specify a positive stride through the filter to perform correlation and a negative stride through the filter to perform convolution. When you perform convolution, the `__F` parameter must point to the last element in the filter.
 
@@ -74,7 +74,7 @@ vDSP_Length filterCount = 3;
 vDSP_Length outputCount = 8 - 3 + 1;
 ```
 
-##### Perform Correlation
+### Perform Correlation
 
 The following code performs correlation. In this example, the stride through the filter is `1`:
 
@@ -124,7 +124,7 @@ On return, `correlationResultReal` contains all zeroes and `correlationResultIma
 (1 + 1i) * (10 + 10i) + (2 + 2i) * (20 + 20i) + (3 + 3i) * (30 + 30i) = 280
 ```
 
-##### Perform Convolution
+### Perform Convolution
 
 The following code performs convolution. In this example, the stride through the filter is `-1` and the filter parameter points to the last element in the filter:
 

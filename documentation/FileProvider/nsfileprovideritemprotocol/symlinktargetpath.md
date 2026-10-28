@@ -23,7 +23,7 @@ optional var symlinkTargetPath: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * symlinkTargetPath;
 ```
 
-#### Discussion
+## Discussion
 
 If the extension contains an item with a [`typeIdentifier`](./typeidentifier.md) of `public.symlink` (`kUTTypeSymLink`), this property contains the symlink’s target. Otherwise, it’s `nil`.
 

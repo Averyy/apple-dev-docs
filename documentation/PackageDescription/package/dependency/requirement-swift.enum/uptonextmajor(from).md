@@ -15,11 +15,11 @@ A source control requirement bounded to the given version’s major version numb
 static func upToNextMajor(from version: Version) -> Package.Dependency.Requirement
 ```
 
-#### Return Value
+## Return Value
 
 A source control requirement instance.
 
-#### Discussion
+## Discussion
 
 Returns a requirement for a version range, starting at the given minimum version and going up to but not including the next major version. This is the recommended version requirement.
 

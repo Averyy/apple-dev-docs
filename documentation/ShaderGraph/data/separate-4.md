@@ -14,7 +14,7 @@ Outputs each of the channels of a color4, vector4, or integer4 as individual flo
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Separate 4 (color4f)**:
 

@@ -16,7 +16,7 @@ Is notification on?
 Boolean (*NotificationIsOn)(IOFWAsyncStreamListenerInterfaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if packet notifications for this channel are active
 

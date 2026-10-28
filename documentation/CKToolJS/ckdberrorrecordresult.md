@@ -20,7 +20,7 @@ dictionary CKDBErrorRecordResult {
 };
 ```
 
-#### Overview
+## Overview
 
 The server returns a CKDBErrorRecordResult object when looking up a record fails as part of a batch record lookup operation.
 

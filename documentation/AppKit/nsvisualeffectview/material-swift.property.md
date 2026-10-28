@@ -19,7 +19,7 @@ var material: NSVisualEffectView.Material { get set }
 @property NSVisualEffectMaterial material;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSVisualEffectView.Material.appearanceBased`](./material-swift.enum/appearancebased.md); the material updates to the correct material based on the appearance set on this view.
 

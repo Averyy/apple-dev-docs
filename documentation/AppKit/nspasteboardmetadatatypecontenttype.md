@@ -15,7 +15,7 @@ A metadata type that returns the content type if the pasteboard detects a refere
 extern NSPasteboardMetadataType const NSPasteboardMetadataTypeContentType;
 ```
 
-#### Return Value
+## Return Value
 
 UTType value for the detected content type of the file URL, if a file URL type is present.
 

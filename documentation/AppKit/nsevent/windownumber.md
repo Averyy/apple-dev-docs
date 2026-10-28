@@ -19,7 +19,7 @@ var windowNumber: Int { get }
 @property (readonly) NSInteger windowNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Periodic events do not have a window. The result of accessing this property on a periodic event is undefined.
 

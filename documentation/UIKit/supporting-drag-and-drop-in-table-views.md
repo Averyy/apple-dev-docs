@@ -10,11 +10,11 @@ Initiate drags and handle drops from a table view.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 
-#### Overview
+## Overview
 
 Table views support drag and drop through a specialized API that works with the rows being displayed. To support drags, define a drag delegate object (an object that adopts the [`UITableViewDragDelegate`](./uitableviewdragdelegate.md) protocol) and assign it to the [`dragDelegate`](./uitableview/dragdelegate.md) property of your table view. To handle drops, define a drop delegate object (an object that adopts the [`UITableViewDropDelegate`](./uitableviewdropdelegate.md) protocol) and assign it to the [`dropDelegate`](./uitableview/dropdelegate.md) property of your table view.
 
-##### Dragging rows from the table view
+### Dragging rows from the table view
 
 The table view manages most drag-related interactions, but you need to specify which rows to drag. When the drag gesture occurs, the table view creates a drag session and calls the [`tableView(_:itemsForBeginning:at:)`](./uitableviewdragdelegate/tableview%28_,itemsforbeginning,at%29.md) method of your drag delegate object. (When the user drags a selected row, this method is called once for each row in the selection. If no rows are selected, the method is called only once for the underlying row.) If you return a non-empty array, the table view begins dragging the rows that you specify. Return an empty array when you don’t allow the user to drag content from the specified index path.
 
@@ -31,7 +31,7 @@ Use the provided index path to determine the row for which to create a drag item
 
 For more information about initiating drags, see [`UITableViewDragDelegate`](./uitableviewdragdelegate.md).
 
-##### Receiving dropped content
+### Receiving dropped content
 
 When content is dragged inside its bounds, a table view consults its drop delegate to determine whether it can receive the dragged data. Initially, the table view calls only the [`tableView(_:canHandle:)`](./uitableviewdropdelegate/tableview%28_,canhandle%29.md) method of the drop delegate to determine whether you can incorporate the specified data into your data source. If you can incorporate the data, the table view begins calling other methods to determine where the data can be dropped.
 

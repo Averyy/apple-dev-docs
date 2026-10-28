@@ -21,7 +21,7 @@ Initiates a refresh action.
 func callAsFunction() async
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`RefreshAction`](../refreshaction.md) structure that you get from the [`Environment`](../environment.md):
 

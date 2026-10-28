@@ -25,11 +25,11 @@ func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?
 - (id<MTLTexture>) newSharedTextureWithDescriptor:(MTLTextureDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 You can create a shared texture but only with [`storageModePrivate`](../mtlresourceoptions/storagemodeprivate.md). You can share the texture with another process by:
 

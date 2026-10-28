@@ -24,7 +24,7 @@ Returns a new absolute configuration key by prepending the given relative key.
 func prepending(_ prefix: ConfigKey) -> AbsoluteConfigKey
 ```
 
-#### Return Value
+## Return Value
 
 A new absolute configuration key that includes the prefix at the beginning.
 

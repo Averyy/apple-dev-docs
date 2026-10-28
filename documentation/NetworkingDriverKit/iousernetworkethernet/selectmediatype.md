@@ -15,11 +15,11 @@ Selects the media type to use when communicating with the network stack.
 virtual kern_return_t SelectMediaType(IOUserNetworkMediaType mediaType);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to configure your driver for the specified media type. In your implementation, validate the requested media type and make any adjustments as needed. For example, if the `mediaType` parameter is [`kIOUserNetworkMediaEthernetAuto`](../kiousernetworkmediaethernetauto.md), you might choose an explicit media type instead. After validating the type, configure your driver for that type and call the [`ReportLinkStatus`](./reportlinkstatus-5cxiq.md) method to report the driver’s status back to the system.
 

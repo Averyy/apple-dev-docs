@@ -19,7 +19,7 @@ var currentPage: Int { get }
 @property (readonly) NSInteger currentPage;
 ```
 
-#### Return Value
+## Return Value
 
 The current page being printed.
 

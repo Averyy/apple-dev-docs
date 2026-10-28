@@ -24,7 +24,7 @@ var salience: Int { get set }
 @property (nonatomic, assign) NSInteger salience;
 ```
 
-#### Discussion
+## Discussion
 
 A [`GKRuleSystem`](../gkrulesystem.md) object evaluates the rules in its [`agenda`](../gkrulesystem/agenda.md) list in order of decreasing salience.
 

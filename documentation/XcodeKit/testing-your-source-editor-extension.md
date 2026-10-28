@@ -5,11 +5,11 @@
 
 Launch a special instance of Xcode to test your source editor extension.
 
-#### Overview
+## Overview
 
 Source editor extensions run in a separate instance of Xcode to help prevent mistakes in your in-progress extension from interfering with your development environment.
 
-##### Test the Source Editor Extension
+### Test the Source Editor Extension
 
 Test a source editor extension you’re developing by running your project when your extension’s scheme is selected. A dialog appears, asking you to choose an app to run.
 

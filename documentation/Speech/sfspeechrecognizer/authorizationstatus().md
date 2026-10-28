@@ -23,11 +23,11 @@ class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus
 + (SFSpeechRecognizerAuthorizationStatus) authorizationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 The app’s current authorization status value. For a list of values, see [`SFSpeechRecognizerAuthorizationStatus`](../sfspeechrecognizerauthorizationstatus.md).
 
-#### Discussion
+## Discussion
 
 The user can reject your app’s request to perform speech recognition, but your request can also be denied if speech recognition is not supported on the device. The app can also change your app’s authorization status at any time from the Settings app.
 

@@ -22,7 +22,7 @@ class EKEventEditViewController
 @interface EKEventEditViewController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 Presented modally, the event edit view controller provides a way for users to add new events, as well as edit or delete events from their calendar. New events are added to the user’s default calendar unless they choose another calendar in the UI.
 
@@ -58,8 +58,6 @@ The controller includes delegates to receive a notification when the user saves 
 - [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
 - [UIContentContainer](../UIKit/uicontentcontainer.md)

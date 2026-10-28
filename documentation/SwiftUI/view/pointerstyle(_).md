@@ -17,11 +17,11 @@ nonisolated
 func pointerStyle(_ style: PointerStyle?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that changes the style of the pointer when hovered.
 
-#### Discussion
+## Discussion
 
 Refer to [`PointerStyle`](../pointerstyle.md) for a list of available pointer styles.
 

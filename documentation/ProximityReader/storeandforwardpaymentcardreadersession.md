@@ -17,7 +17,7 @@ The object you use to start reading a contactless payment or loyalty card in Sto
 class StoreAndForwardPaymentCardReaderSession
 ```
 
-#### Overview
+## Overview
 
 Use a `StoreAndForwardPaymentCardReaderSession` object to read payment and loyalty cards from a properly configured device. You don’t create this object directly. Instead, you obtain one by calling the [`prepareStoreAndForward()`](./paymentcardreader/preparestoreandforward%28%29.md) method of your [`PaymentCardReader`](./paymentcardreader.md) object, which returns a session after the successful configuration of the device.
 

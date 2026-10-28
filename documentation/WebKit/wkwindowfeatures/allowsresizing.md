@@ -23,7 +23,7 @@ var allowsResizing: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * allowsResizing;
 ```
 
-#### Discussion
+## Discussion
 
 If the webpage didn’t request a resizable window, this property is `nil`.
 

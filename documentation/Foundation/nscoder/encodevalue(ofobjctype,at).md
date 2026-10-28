@@ -25,7 +25,7 @@ func encodeValue(ofObjCType type: UnsafePointer<CChar>, at addr: UnsafeRawPointe
 - (void) encodeValueOfObjCType:(const char *) type at:(const void *) addr;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method, and match it with a subsequent [`decodeValue(ofObjCType:at:)`](./decodevalue%28ofobjctype,at%29.md) message.
 
@@ -33,7 +33,7 @@ When calling this method, `valueType` must contain exactly one type code.
 
 For information on creating an Objective-C type code suitable for `valueType`, see [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 
-##### Special Considerations
+### Special Considerations
 
 You should not use this method to encode Objective-C objects. See [`decodeArray(ofObjCType:count:at:)`](./decodearray%28ofobjctype,count,at%29.md) for more details.
 

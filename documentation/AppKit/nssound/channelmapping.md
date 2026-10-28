@@ -15,11 +15,11 @@ Provides the receiver’s channel map.
 - (NSArray *) channelMapping;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s audio-channel–to–device–channel mappings.
 
-#### Discussion
+## Discussion
 
 A **channel map** correlates a sound’s channels to the output-device’s channels. For example, a two-channel sound being played on a five-channel device should have a channel map to optimize the sound-playing experience. The default map, correlates the first sound channel to the first output channel, the second sound channel to the second output channel, and so on.
 

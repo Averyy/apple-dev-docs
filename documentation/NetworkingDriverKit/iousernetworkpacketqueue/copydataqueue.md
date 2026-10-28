@@ -15,7 +15,7 @@ Returns the dispatch queue that this object uses to execute tasks.
 virtual kern_return_t CopyDataQueue(IODataQueueDispatchSource **dataQueue);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

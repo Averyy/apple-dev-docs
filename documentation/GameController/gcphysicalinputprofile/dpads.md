@@ -24,7 +24,7 @@ var dpads: [String : GCControllerDirectionPad] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerDirectionPad *> * dpads;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`GCInputDualShockTouchpadOne`](../gcinputdualshocktouchpadone-55wgz.md) name to access an element on a DualShock controller.
 

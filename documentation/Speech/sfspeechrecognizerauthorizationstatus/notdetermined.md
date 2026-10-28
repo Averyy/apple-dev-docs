@@ -23,7 +23,7 @@ case notDetermined
 SFSpeechRecognizerAuthorizationStatusNotDetermined
 ```
 
-#### Discussion
+## Discussion
 
 When your app’s status is not determined, calling the [`requestAuthorization(_:)`](../sfspeechrecognizer/requestauthorization%28_%29.md) method prompts the user to grant or deny authorization.
 

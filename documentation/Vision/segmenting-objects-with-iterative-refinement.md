@@ -5,7 +5,7 @@
 
 Generate and refine a mask that isolates an object in an image based on a person’s selection.
 
-#### Overview
+## Overview
 
 When people interact with images in your app, they might want to select an object, such as an item on a desk or a subject in a photo. Vision provides [`GenerateIterativeSegmentationRequest`](./generateiterativesegmentationrequest.md) to generate an image mask that separates any selected object from its background.
 
@@ -29,7 +29,7 @@ Because an initial selection might miss parts of an object or include unwanted b
 
 To generate the mask, the request uses a machine-learning model that Vision downloads on demand to the device. For a working example that shows how to select and refine objects in a photo, see [Segmenting objects using taps, scribbles or rectangles](./segmenting-objects-using-taps-scribbles-or-rectangles.md).
 
-#### Download the model on first use
+## Download the model on first use
 
 Before your app performs the request the first time on a device, check whether the model is ready and download it if it isn’t. Read the request’s [`assetStatus`](./downloadableassetsrequest/assetstatus.md) property to get the current state, and call [`downloadAssets()`](./downloadableassetsrequest/downloadassets%28%29.md) if the state is [`DownloadableAssetsRequestStatus.notReady`](./downloadableassetsrequeststatus/notready.md). The request throws an error if you perform it before Vision downloads the model.
 
@@ -50,7 +50,7 @@ case .downloading, .error:
 
 The switch handles each [`DownloadableAssetsRequestStatus`](./downloadableassetsrequeststatus.md) case so the request only proceeds after the model is on the device. To report download progress in your app’s UI, use [`downloadAssets(progress:)`](./downloadableassetsrequest/downloadassets%28progress%29.md) instead.
 
-#### Create the request from the person’s selection
+## Create the request from the person’s selection
 
 Choose one of three initializers based on how the person selected the object:
 
@@ -76,7 +76,7 @@ let scribbleRequest = GenerateIterativeSegmentationRequest(
 
 Each initializer accepts an optional revision parameter that pins the request to a specific algorithm revision. If you don’t pass one, the request uses the SDK’s default revision. To find the available revisions, check [`supportedRevisions`](./generateiterativesegmentationrequest/supportedrevisions.md).
 
-#### Perform the request
+## Perform the request
 
 To generate the mask, run the request against the image using an [`ImageRequestHandler`](./imagerequesthandler.md). Create a handler for the image and call [`perform(_:)`](./imagerequesthandler/perform%28_%29-7b6g5.md) with the request. The result is a [`PixelBufferObservation`](./pixelbufferobservation.md) whose [`pixelBuffer`](./pixelbufferobservation/pixelbuffer.md) property contains the mask.
 
@@ -92,7 +92,7 @@ let mask = observation?.pixelBuffer
 
 Reuse the same [`ImageRequestHandler`](./imagerequesthandler.md) instance when refining the mask. Reusing the handler preserves intermediate image representations in memory, allowing Vision to update the mask quickly as you add points without reloading the image.
 
-#### Refine the mask
+## Refine the mask
 
 To expand the mask, add an include point inside the object with [`addIncludedPoint(_:)`](./generateiterativesegmentationrequest/addincludedpoint%28_%29.md). To trim the mask, add an exclude point outside the object with [`addExcludedPoint(_:)`](./generateiterativesegmentationrequest/addexcludedpoint%28_%29.md). Perform the request through the same handler to get the updated mask.
 
@@ -112,7 +112,7 @@ let refinedMask = refinedObservation?.pixelBuffer
 
 The request holds up to 13 total points when you create it with a point or scribble, or 11 when you create it with a bounding box. Adding a point past this limit throws an error. To isolate a different object, create a new request and a new handler.
 
-#### Choose a mask quality level
+## Choose a mask quality level
 
 Configure [`qualityLevel`](./generateiterativesegmentationrequest/qualitylevel-swift.property.md) before performing the request to balance mask resolution against processing time:
 

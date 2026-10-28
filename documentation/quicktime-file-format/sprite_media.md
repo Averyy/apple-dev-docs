@@ -5,19 +5,19 @@
 
 Sprite media is used to store character-based animation data in QuickTime movies.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
 It has a media type of `'sprt'`.
 
-#### Sprite Sample Description
+## Sprite Sample Description
 
 The sprite sample description uses the standard sample description header, as described in [`Sample description atom`](./sample_description_atom.md).
 
 The data format field in the sample description is always set to `'sprt'`. The sprite media handler adds no additional fields to the sample description.
 
-#### Sprite Sample Data
+## Sprite Sample Data
 
 All sprite samples are stored in QT atom structures. The sprite media uses both key frames and differenced frames. The key frames contain all of the sprite’s image data, and the initial settings for each of the sprite’s properties.
 

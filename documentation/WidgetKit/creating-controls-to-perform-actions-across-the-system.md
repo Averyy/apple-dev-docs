@@ -5,7 +5,7 @@
 
 Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
 
-#### Overview
+## Overview
 
 A control allows your app to execute an action, launch your app to a specific view, or launch a locked camera capture extension from Control Center, the Lock Screen, or by using the Action button. Customers configure these system spaces with your app’s controls.
 
@@ -15,7 +15,7 @@ Create your control’s icon using a symbol image, such as one from [SF Symbols]
 
 Make controls configurable to allow someone to choose what it does. This ability is helpful in cases where a control can be configured with a list of options, such as which light to turn on or off.
 
-##### Understand the control lifecycle
+### Understand the control lifecycle
 
 The system loads a control when someone adds it to a system space from the controls gallery. A control updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](./controlcenter.md), or when the system receives a remote push notification from the Apple Push Notification service (APNs). When the system loads or reloads a control, it runs the body of the control from the widget extension and asks for the control’s current value and content for the current state. The system updates the displayed control with these values.
 
@@ -27,7 +27,7 @@ You may pass additional data into the app intent to ensure it successfully perfo
 
 The system populates the value parameter of a `SetValueIntent` with the value that reflects the new state of the control toggle. Don’t set or manage the value parameter. Update the internal state or model data to this value to remain consistent with the appearance of the control.
 
-##### Add a control toggle to your app
+### Add a control toggle to your app
 
 The Widget Extension template provides all you need to start building your control. The template creates a widget extension target that contains a [`ControlWidgetToggle`](./controlwidgettoggle.md).
 
@@ -92,7 +92,7 @@ struct ToggleTimerIntent: SetValueIntent {
 }
 ```
 
-##### Create a button control
+### Create a button control
 
 A control button performs an action from your app. For example, the button can launch a locked camera capture extension, start a live activity, or take someone to a specific area of your app.
 
@@ -123,7 +123,7 @@ struct PerformAction: AppIntent {
 }
 ```
 
-##### Open your app with a control
+### Open your app with a control
 
 Set your control’s action to an app intent that conforms to [`OpenIntent`](../AppIntents/openintent.md) to open your app when someone uses a control. Using `OpenIntent` allows you to take someone to a specific area of your app when a control performs its action.
 
@@ -154,7 +154,7 @@ enum LaunchAppEnum: String, AppEnum {
 
 > **Note**: Use a control button to launch a locked camera capture extension. For more information about creating a locked camera capture extension, refer to [Creating a camera experience for the Lock Screen](../LockedCameraCapture/creating-a-camera-experience-for-the-lock-screen.md).
 
-##### Add controls to your widget bundle
+### Add controls to your widget bundle
 
 The [`WidgetBundle`](../SwiftUI/widgetbundle.md) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines their order in the controls gallery and the widgets gallery.
 

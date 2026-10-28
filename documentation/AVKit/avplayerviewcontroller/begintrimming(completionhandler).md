@@ -27,7 +27,7 @@ func beginTrimming() async -> Bool
 
 - [Trimming and exporting media in visionOS](../trimming-and-exporting-media-in-visionos.md)
 
-#### Discussion
+## Discussion
 
 After trimming is complete, you can access the trimmed range by querying the [`forwardPlaybackEndTime`](../../AVFoundation/avplayeritem/forwardplaybackendtime.md) and [`reversePlaybackEndTime`](../../AVFoundation/avplayeritem/reverseplaybackendtime.md) properties on the [`AVPlayerItem`](../../AVFoundation/avplayeritem.md).
 

@@ -5,7 +5,7 @@
 
 Update existing code for two foundational changes in SwiftUI built with Xcode 27.
 
-#### Overview
+## Overview
 
 SwiftUI in Xcode 27 introduces two changes to the language-level shape of the framework:
 
@@ -16,11 +16,11 @@ The vast majority of SwiftUI code in your app is unaffected and continues to com
 
 To locate a specific build error, see the [Diagnostic reference](./tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md#Diagnostic-reference) at the end of this document.
 
-#### Understanding the changes
+## Understanding the changes
 
 Before diving into specific errors, it helps to understand what changed and why. Both changes were made to target specific developer pain-points, but share a common theme that causes source incompatibility: the compiler now has different information about your code, meaning some code that compiled before is now unsupported.
 
-##### How @State evolved to support laziness
+### How @State evolved to support laziness
 
 Previously, when you wrote a state variable, that state value would be recreated every time its containing view was initialized. In SwiftUI, views are intended to be lightweight values that are created frequently, and so views and their contained state values are recreated frequently.
 
@@ -28,7 +28,7 @@ This behavior is fine when the state contains value types, but reference types m
 
 By making `@State` a macro, SwiftUI can ensure that objects held in state are only ever initialized one time, when the view is first created, avoiding this performance issue.
 
-##### How result builders changed to be unified under @ContentBuilder
+### How result builders changed to be unified under @ContentBuilder
 
 SwiftUI previously defined a separate result builder for each kind of content you compose. Every primitive those builders share, such as [`Group`](../SwiftUI/group.md), [`ForEach`](../SwiftUI/foreach.md), and [`Section`](../SwiftUI/section.md), provided a separate initializer for each builder. Because these initializers differ only in the type of content the builder produces, and that type doesn’t appear at the call site, the compiler infers which initializer to use.
 
@@ -40,13 +40,13 @@ the compiler is unable to type-check this expression in reasonable time
 
 [`ContentBuilder`](../SwiftUI/contentbuilder.md) replaces these builders with a single builder that imposes no constraints on its contents. It assembles arbitrary content, and that content conforms to the protocol its context requires only when its elements do. Each primitive provides one builder-based initializer, so the compiler no longer searches indistinguishable overloads or typechecks closure bodies to choose one. Your code keeps the same syntax and type safety, and typechecks substantially faster.
 
-#### Migrating code that uses @State
+## Migrating code that uses @State
 
 `@State` now participates in initialization the same way any stored property does, meaning the compiler now diagnoses several patterns that were previously accepted, but never well-defined.
 
 The content within this section covers these patterns that no longer compile.
 
-##### Initialize stored properties before assigning to @State in init
+### Initialize stored properties before assigning to @State in init
 
 **What happens:** A view whose `init` assigns to a `@State` property before all other stored properties have been initialized produces one of the following diagnostics:
 
@@ -101,7 +101,7 @@ struct ContentView: View {
 > }
 > ```
 
-##### Avoid composing additional property wrappers with @State
+### Avoid composing additional property wrappers with @State
 
 **What happens:** Applying another property wrapper to a property declared with `@State` produces:
 
@@ -113,7 +113,7 @@ error: invalid redeclaration of synthesized property '_counter'
 
 **Why this occurs:** The composed property wrapper and the `@State` macro each attempt to synthesize a backing storage property using the same underscore-prefixed name.
 
-##### Define memberwise initializers explicitly when a view has private @State
+### Define memberwise initializers explicitly when a view has private @State
 
 **What happens:** In Swift, a type whose stored properties are all `private` and that does not declare an explicit initializer receives a synthesized memberwise initializer with `private` access, callable from initializers defined in extensions of the type. Views that declare a `@State` property no longer receive this synthesized initializer, and call sites in extensions fail to resolve:
 
@@ -134,11 +134,11 @@ extension Foo {
 
 **Why this occurs:** The expansion of the `@State` macro causes the compiler to skip synthesis of the memberwise initializer, per [Init Accessors](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0400-init-accessors.md).
 
-#### Migrating code that uses result builders
+## Migrating code that uses result builders
 
 Many of SwiftUI’s result builders are unified under `@ContentBuilder`, improving typechecking performance. To accomplish this, the constraint that previously required builder block contents to conform to `View` has been removed. This change causes a few source incompatibilities, most of which relate to no longer being able to use that view constraint to choose between otherwise ambiguous overloads.
 
-##### Use the closure-based forms of background and overlay for ShapeStyle expressions
+### Use the closure-based forms of background and overlay for ShapeStyle expressions
 
 **What happens:** A call to the deprecated, non-builder forms of [`background(alignment:content:)`](../SwiftUI/view/background%28alignment,content%29.md) or [`overlay(alignment:content:)`](../SwiftUI/view/overlay%28alignment,content%29.md) that passes a [`ShapeStyle`](../SwiftUI/shapestyle.md) expression composed with modifiers such as [`opacity(_:)`](../SwiftUI/shapestyle/opacity%28_%29-swift.type.method.md) or [`blendMode(_:)`](../SwiftUI/shapestyle/blendmode%28_%29-swift.type.method.md) produces:
 
@@ -175,7 +175,7 @@ struct ContentView: View {
 
 **Why this occurs:** Both `background` and `overlay` provide overloads that accept either a `View` or a `ShapeStyle`, and modifiers such as `opacity(_:)` on a `ShapeStyle` return either a `ShapeStyle` or a `View`. The `View` constraint that [`ViewBuilder`](../SwiftUI/viewbuilder.md) previously imposed allowed the compiler to select a single resolution for these expressions. Without that constraint, the competing overloads are equally viable and the expression becomes ambiguous. The closure-based form selects the builder overload directly and resolves the ambiguity.
 
-##### Disambiguate types and members that collide across modules
+### Disambiguate types and members that collide across modules
 
 **What happens:** If a project imports a module that declares a type whose name matches a SwiftUI type, or a type with members that match those of a SwiftUI type, the compiler may report an ambiguity at the use site. This applies to any duplicated type, such as a framework’s own `Text` declaration whose overloads match those of SwiftUI’s `Text`, and to any duplicated static member of such a type, such as `red`, `green`, `blue`, or `clear`.
 
@@ -219,7 +219,7 @@ struct ContentView: View {
 
 **Why this occurs:** The `View` constraint on `@ViewBuilder` previously allowed the compiler to exclude non-`View`-conforming candidates during overload resolution. With the constraint removed, both candidates are equally valid and the compiler reports the ambiguity.
 
-##### Update generic constraints that reference TupleView
+### Update generic constraints that reference TupleView
 
 **What happens:** Code that names [`TupleView`](../SwiftUI/tupleview.md) as a nested generic type argument may produce one of the following diagnostics:
 
@@ -288,7 +288,7 @@ extension CardView where Content == VStack<TupleView<(Text, Text)>> {
 
 **Why this occurs:** The unified `@ContentBuilder` produces `TupleContent` rather than `TupleView` as the concrete return type for multi-expression builder blocks. When `TupleView` appears as a nested generic argument, the contextual type does not propagate deeply enough to redirect the inner builder’s return type, and the resulting type does not match the declared constraint.
 
-##### Provide an explicit empty content value in nested builders when MapKit is in scope
+### Provide an explicit empty content value in nested builders when MapKit is in scope
 
 **What happens:** When SwiftUI and MapKit are both in scope in a source file, an empty result builder block — including a conditional compilation block whose only branch is excluded — within a nested builder produces:
 
@@ -364,7 +364,7 @@ struct ContentView: View {
 
 **Why this occurs:** Without the `View` constraint on the builder, an empty body is ambiguous when MapKit is also in scope: MapKit declares its own result builder that produces [`EmptyMapContent`](../MapKit/emptymapcontent.md), and the compiler has no basis to choose between the two. Supplying an explicit `EmptyContent()` (or `EmptyView()`) anchors the resolution to a concrete `View`-conforming expression.
 
-##### Extract deeply branching content from Chart closures when back-deploying
+### Extract deeply branching content from Chart closures when back-deploying
 
 **What happens:** For projects whose minimum deployment target is earlier than iOS 27, iPadOS 27, macOS 27, or visionOS 27, a [`Chart`](../Charts/chart.md) that contains deeply branching `if` / `else if` or `switch` statements may produce:
 
@@ -505,7 +505,7 @@ struct MetricChartView: View {
 
 **Why this occurs:** Supporting back-deployment of `@ContentBuilder` in Swift Charts requires a compatibility overload of `buildEither` that returns a Charts-specific `BuilderConditional` type. The presence of this additional overload increases the size of the candidate set the compiler must consider when resolving branching expressions inside chart builders. As the number of branches grows, the candidate set grows superlinearly, and beyond a certain point the expression exceeds the compiler’s complexity budget. Projects whose minimum deployment target is iOS 27, iPadOS 27, macOS 27, or visionOS 27 are unaffected because the compatibility overload is not compiled in. Extracting the branches into a dedicated `@ChartContentBuilder` function isolates the type-checking work and keeps each expression within budget. In aggregate, this trade-off improves type-checking performance for chart content outside this specific case, and for all SwiftUI content in projects that import Swift Charts.
 
-#### Diagnostic reference
+## Diagnostic reference
 
 To locate the section that addresses a specific build error, match the diagnostic text to the entry below.
 
@@ -521,7 +521,7 @@ To locate the section that addresses a specific build error, match the diagnosti
 | `@ContentBuilder` | `return type of property 'body' requires that 'EmptyMapContent' conform to 'View'` | [Provide an explicit empty content value in nested builders when MapKit is in scope](./tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md#Provide-an-explicit-empty-content-value-in-nested-builders-when-MapKit-is-in-scope) |
 | `@ContentBuilder` | `the compiler is unable to type-check this expression in reasonable time` inside `Chart` | [Extract deeply branching content from Chart closures when back-deploying](./tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md#Extract-deeply-branching-content-from-Chart-closures-when-back-deploying) |
 
-#### Revision History
+## Revision History
 
 - **2026-06-08** First published.
 

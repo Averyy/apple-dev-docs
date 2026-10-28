@@ -15,7 +15,7 @@ Update the accessories being tracked by a provider.
 extern void ar_accessory_tracking_provider_update_accessories(ar_accessory_tracking_provider_t accessory_tracking_provider, ar_accessories_t accessories, ar_accessory_tracking_update_accessories_completion_handler_t completion_handler);
 ```
 
-#### Discussion
+## Discussion
 
 Updates are atomic: if any accessory fails to be added, the entire request fails and the provider continues tracking the original set of accessories.
 

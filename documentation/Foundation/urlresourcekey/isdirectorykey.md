@@ -25,7 +25,7 @@ static let isDirectoryKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsDirectoryKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a read-only Boolean `NSNumber` object.
 

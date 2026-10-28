@@ -15,11 +15,11 @@ Returns the currently supported text encoding specificationsfor a region code.
 OSStatus TECGetWebTextEncodings(RegionCode locale, TextEncoding availableEncodings[], ItemCount maxAvailableEncodings, ItemCount *actualAvailableEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate text encoding specifications.If you used the  [`TECCountWebTextEncodings`](./api-1571837-teccountwebtextencodings.md) function to determine the size of the `availableEncodings[]` arraythe number of available encodings may be fewer than the number ofarray elements, because `TECCountWebTextEncodings` includesduplicate text encoding specifications in its count.
 

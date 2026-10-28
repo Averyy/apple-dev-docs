@@ -19,7 +19,7 @@ class VZVirtioConsolePortConfigurationArray
 @interface VZVirtioConsolePortConfigurationArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 This array stores a collection of port configurations for a [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md). The index in the array corresponds to the port index that the VM uses. You can set a [`maximumPortCount`](./vzvirtioconsoleportarray/maximumportcount.md) value, but the value must be larger than the highest indexed port. If there’s no `maximumPortCount` value set, the framework uses the value the highest indexed port.
 

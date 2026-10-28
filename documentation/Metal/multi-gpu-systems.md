@@ -5,7 +5,7 @@
 
 Locate and work with internal and external GPUs and their displays, video memory, and performance tradeoffs.
 
-#### Overview
+## Overview
 
 Your app can submit work to any or all of the GPUs of a system that supports multiple GPUs. For example, every Mac notebook, such as a MacBook Pro, has an internal GPU, but some have two.
 

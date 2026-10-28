@@ -5,11 +5,11 @@
 
 Locate the specific source of the error.
 
-#### Overview
+## Overview
 
 Some errors are produced by a specific element of the request. In that case, the [`ErrorResponse`](./errorresponse.md) includes `source.parameter` or `source.pointer` values to indicate the exact location of the error. When the location of the error cannot be determined, the error response does not include those parameters. In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be.
 
-##### Use the Error Response to Pinpoint Parameter Errors
+### Use the Error Response to Pinpoint Parameter Errors
 
 When an error occurs due to a problem with a parameter, the `source` property contains `source.parameter`, whose value contains the parameter with the error.
 
@@ -42,7 +42,7 @@ HTTP/1.1 400 Bad Request
 
 The `source.parameter` value indicates that the error is located in the `filter[emaill]` parameter.
 
-##### Use the Error Response to Pinpoint Entity Errors
+### Use the Error Response to Pinpoint Entity Errors
 
 When an error occurs due to a problem with an entity, the `source` property contains a JSON pointer that describes the place in the request entity where the error originates. In some cases, this pointer may indicate an element that is not in the request entity but should be.
 

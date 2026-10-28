@@ -22,7 +22,7 @@ class INRestaurantGuestDisplayPreferences
 @interface INRestaurantGuestDisplayPreferences : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantGuestDisplayPreferences`](./inrestaurantguestdisplaypreferences.md) object contains configuration options used by any reservation-related interfaces that present guest information. Create an instance of this class and assign it to the [`guestDisplayPreferences`](./ingetrestaurantguestintentresponse/guestdisplaypreferences.md) property of your [`INGetRestaurantGuestIntentResponse`](./ingetrestaurantguestintentresponse.md) object when handling a request for information about the person making a reservation. Use the properties of this class to specify what information you want displayed for a user and whether you can change that information prior to completing a reservation.
 

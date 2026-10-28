@@ -19,7 +19,7 @@ var pullsDown: Bool { get set }
 @property BOOL pullsDown;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the menu behaves like a pull-down menu; when the value is [`false`](../../Swift/false.md), it behaves like a pop-up menu. If you use this property to change the menu type from a pop-up menu to a pull-down menu, and the cell alters the state of its selected items, the state of the currently selected item is set to [`NSOffState`](../nsoffstate.md) before the menu type is changed.
 

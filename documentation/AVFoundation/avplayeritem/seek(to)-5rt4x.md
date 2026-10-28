@@ -24,11 +24,11 @@ nonisolated
 func seek(to date: Date) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the playhead was moved to `date`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For playback content that is associated with a range of dates, this method moves the playhead to point within that range. This method will fail (return [`false`](../../Swift/false.md)) if `date` is outside the range or if the content is not associated with a range of dates.
 

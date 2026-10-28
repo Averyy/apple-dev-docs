@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatMakeBoundingFromPoints(SPPoint3DFloat points[], int pointCount);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s the bounding box of the specified points.
 

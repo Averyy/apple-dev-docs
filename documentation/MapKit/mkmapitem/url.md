@@ -25,7 +25,7 @@ var url: URL? { get set }
 @property (nonatomic, strong, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a relevant URL associated with the location, such as for a business at the location, use this property to specify that value.
 

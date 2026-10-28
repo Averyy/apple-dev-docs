@@ -21,7 +21,7 @@ Scales the input values using the calculation `(input - median) / interQuartileR
 func applied(to input: Element, eventHandler: EventHandler? = nil) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 A scaled value.
 

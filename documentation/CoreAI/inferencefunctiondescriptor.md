@@ -23,7 +23,7 @@ struct InferenceFunctionDescriptor
 
 - [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 Use a descriptor to inspect the names and types of a function’s inputs, outputs, and states before running inference. You obtain a descriptor from [`functionDescriptor(for:)`](./aimodel/functiondescriptor%28for%29.md) or from the [`descriptor`](./inferencefunction/descriptor.md) property.
 

@@ -23,7 +23,7 @@ var openSessions: Set<UISceneSession> { get }
 @property (nonatomic, readonly) NSSet<UISceneSession *> * openSessions;
 ```
 
-#### Discussion
+## Discussion
 
 An archived session doesn’t have a connected scene, but a snapshot of its UI does appear in the app switcher. When the user selects that UI in the app switcher, the system asks your app to recreate the UI from the session information.
 

@@ -20,7 +20,7 @@ var isMono: Bool { get set }
 @property (atomic, readwrite, getter=isMono) BOOL mono;
 ```
 
-#### Discussion
+## Discussion
 
 True if this description is a mono mixdown of channels.
 

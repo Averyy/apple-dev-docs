@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeVendorID = 1
 ```
 
-#### Discussion
+## Discussion
 
 Vendor Specific Identifier Type.
 

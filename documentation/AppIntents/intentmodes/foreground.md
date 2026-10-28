@@ -21,7 +21,7 @@ A value that indicates the action needs to run in the foreground.
 static var foreground: IntentModes { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the [`immediate`](./foregroundmode/immediate.md) mode.
 

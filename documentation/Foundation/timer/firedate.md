@@ -25,7 +25,7 @@ var fireDate: Date { get set }
 @property (copy) NSDate * fireDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the timer is no longer valid, the last date at which the timer fired.
 

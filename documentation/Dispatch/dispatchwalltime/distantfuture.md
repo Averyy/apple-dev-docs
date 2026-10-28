@@ -21,7 +21,7 @@ A time in the distant future.
 static let distantFuture: DispatchWallTime
 ```
 
-#### Discussion
+## Discussion
 
 You can pass this value to methods that schedule work to have the system wait indefinitely for a particular event to occur or condition to be met.
 

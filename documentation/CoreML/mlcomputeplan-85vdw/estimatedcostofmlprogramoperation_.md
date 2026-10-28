@@ -21,7 +21,7 @@ Returns the estimated cost of executing an ML Program operation.
 - (MLComputePlanCost *) estimatedCostOfMLProgramOperation:(MLModelStructureProgramOperation *) operation;
 ```
 
-#### Return Value
+## Return Value
 
 The estimated cost of executing the operation or nil if the cost couldn’t be estimated.
 

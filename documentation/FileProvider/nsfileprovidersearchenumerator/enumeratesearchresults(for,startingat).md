@@ -20,7 +20,7 @@ func enumerateSearchResults(for observer: any NSFileProviderSearchEnumerationObs
 - (void) enumerateSearchResultsForObserver:(id<NSFileProviderSearchEnumerationObserver>) observer startingAtPage:(NSFileProviderPage) page;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to perform your search and deliver pages of results to `observer`.
 

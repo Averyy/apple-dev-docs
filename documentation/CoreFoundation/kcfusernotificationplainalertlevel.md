@@ -19,7 +19,7 @@ var kCFUserNotificationPlainAlertLevel: CFOptionFlags { get }
 kCFUserNotificationPlainAlertLevel
 ```
 
-#### Discussion
+## Discussion
 
 An information icon is displayed by default.
 

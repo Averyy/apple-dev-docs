@@ -25,7 +25,7 @@ func simdLook(at worldTarget: simd_float3)
 - (void) simdLookAt:(simd_float3) worldTarget;
 ```
 
-#### Discussion
+## Discussion
 
 Using this method is equivalent to calling the [`simdLook(at:up:localFront:)`](./simdlook%28at,up,localfront%29.md) method and passing the node’s [`simdWorldUp`](./simdworldup.md) and [`simdLocalFront`](./simdlocalfront.md) vectors for the corresponding parameters.
 

@@ -21,7 +21,7 @@ Prepare and execute a call to the distributed function identified by the passed 
 func executeDistributedTarget<Act>(on actor: Act, target: RemoteCallTarget, invocationDecoder: inout Self.InvocationDecoder, handler: Self.ResultHandler) async throws where Act : DistributedActor
 ```
 
-#### Discussion
+## Discussion
 
 This method encapsulates multiple steps that are invoked in executing a distributed function, into one very efficient implementation. The steps involved are:
 

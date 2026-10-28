@@ -15,7 +15,7 @@ A Base64-encoded JSON object which contains a JWS with information describing an
 string advancedCommerceData
 ```
 
-#### Discussion
+## Discussion
 
 This property is a part of the [`advancedCommerceInfo`](./advancedcommerceinfo.md). For more information on the Advanced Commerce API (ACA), see [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md).
 

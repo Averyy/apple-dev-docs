@@ -25,7 +25,7 @@ func CFStringInitInlineBuffer(_ str: CFString!, _ buf: UnsafeMutablePointer<CFSt
 static void CFStringInitInlineBuffer(CFStringRef str, CFStringInlineBuffer *buf, CFRange range);
 ```
 
-#### Discussion
+## Discussion
 
 This function initializes an [`CFStringInlineBuffer`](./cfstringinlinebuffer.md) structure that can be used for accessing the characters of a string. Once the buffer is initialized you can call the [`CFStringGetCharacterFromInlineBuffer(_:_:)`](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md) function to access the characters in the buffer one at a time. The in-line buffer functions, along with the [`CFStringInlineBuffer`](./cfstringinlinebuffer.md) structure, give you fast access to the characters of a string. The technique for in-line buffer access combines the convenience of one-at-a-time character access with the efficiency of bulk access.
 

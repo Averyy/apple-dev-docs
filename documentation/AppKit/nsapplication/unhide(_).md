@@ -19,7 +19,7 @@ func unhide(_ sender: Any?)
 - (void) unhide:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Invokes [`unhideWithoutActivation()`](./unhidewithoutactivation%28%29.md).
 

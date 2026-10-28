@@ -21,7 +21,7 @@ A QUIC connection’s initial maximum stream data limit for locally-initiated bi
 var initialMaxStreamDataBidirectionalLocal: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the value of the `initial_max_stream_data_bidi_local` transport parameter.
 

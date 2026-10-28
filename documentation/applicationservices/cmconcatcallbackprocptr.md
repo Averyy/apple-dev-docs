@@ -15,7 +15,7 @@ Defines a pointer to a progress-monitoring function that the ColorSync Manager c
 typedef Boolean (*CMConcatCallBackProcPtr)(SInt32 progress, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 If a CMM takes more than several seconds to process the information and create a color world, it will call the Callback proc, if one is          provided, and pass it the refCon provided 
 

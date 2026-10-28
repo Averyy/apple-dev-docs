@@ -19,7 +19,7 @@ var isForPrinting: Bool { get set }
 @property (getter=isForPrinting) BOOL forPrinting;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../../Swift/false.md), which causes the app to open documents and URLs. Set the value to [`true`](../../../Swift/true.md) if you want the app to print the items instead.
 

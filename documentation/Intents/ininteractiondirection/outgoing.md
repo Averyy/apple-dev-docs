@@ -25,7 +25,7 @@ case outgoing
 INInteractionDirectionOutgoing
 ```
 
-#### Discussion
+## Discussion
 
 Choose this value when the interaction involves the user starting a video call from the current device.
 

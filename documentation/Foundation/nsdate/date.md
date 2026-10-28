@@ -21,11 +21,11 @@ Creates and returns a new date object set to the current date and time.
 + (instancetype) date;
 ```
 
-#### Return Value
+## Return Value
 
 A new date object set to the current date and time.
 
-#### Discussion
+## Discussion
 
 This method uses the default initializer method for the class, [`init()`](./init%28%29.md).
 

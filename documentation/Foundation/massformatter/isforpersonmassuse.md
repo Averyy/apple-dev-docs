@@ -25,7 +25,7 @@ var isForPersonMassUse: Bool { get set }
 @property (getter=isForPersonMassUse) BOOL forPersonMassUse;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the value passed to [`string(fromKilograms:)`](./string%28fromkilograms%29.md) or [`unitString(fromKilograms:usedUnit:)`](./unitstring%28fromkilograms,usedunit%29.md) is a person’s mass; otherwise, [`false`](../../Swift/false.md). By default, this property returns [`false`](../../Swift/false.md).
 

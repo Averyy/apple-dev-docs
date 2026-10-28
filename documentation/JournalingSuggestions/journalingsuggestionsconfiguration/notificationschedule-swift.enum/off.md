@@ -19,7 +19,7 @@ case off
 
 - [Receiving journaling suggestions system notifications](../../receiving-journaling-suggestions-from-system-notifications.md)
 
-#### Discussion
+## Discussion
 
 This value can mean one or more possible causes:
 

@@ -22,7 +22,7 @@ The strategy that encodes data using a user-defined function.
 case custom(@Sendable (Data, any Encoder) throws -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If the user-defined function throws, the encoder uses an empty container in place of the data.
 

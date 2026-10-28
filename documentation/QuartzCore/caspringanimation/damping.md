@@ -24,7 +24,7 @@ var damping: CGFloat { get set }
 @property CGFloat damping;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of the [`damping`](./damping.md) property is `10`. Reducing this value reduces the energy loss with each oscillation: the animated value will overshoot the [`toValue`](../cabasicanimation/tovalue.md) and the [`settlingDuration`](./settlingduration.md) may be greater than the [`duration`](../camediatiming/duration.md). Increasing the value increases the energy loss with each duration: there will be fewer and smaller oscillations and the [`settlingDuration`](./settlingduration.md) may be smaller than the duration.
 

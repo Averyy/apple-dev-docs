@@ -19,7 +19,7 @@ func removeStatusItem(_ item: NSStatusItem)
 - (void) removeStatusItem:(NSStatusItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 Status items to the left of the specified one in the status bar shift to the right to reclaim its space.
 

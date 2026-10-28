@@ -21,11 +21,11 @@ func QLPreviewRequestGetTypeID() -> CFTypeID
 extern CFTypeID QLPreviewRequestGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `QLPreviewReqest` opaque type.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

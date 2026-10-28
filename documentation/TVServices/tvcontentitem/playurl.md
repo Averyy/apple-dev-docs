@@ -21,7 +21,7 @@ var playURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * playURL;
 ```
 
-#### Discussion
+## Discussion
 
 When the user presses play on the remote, opened, your application is launched if it wasn’t already running and then your [`UIApplication`](../../UIKit/uiapplication.md) delegate is called. If at all possible, your application should immediately begin playing the content without any prompting for other information or displaying any other UI. Your app should start playback at the user’s current position within the content.
 

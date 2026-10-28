@@ -19,7 +19,7 @@ enum TableStatus
 enum NSPrinterTableStatus : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`statusForTable:`](./statusfortable_.md).
 

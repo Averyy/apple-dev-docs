@@ -21,11 +21,11 @@ Computes the absolute time from components in a description string.
 extern Boolean CFCalendarComposeAbsoluteTime(CFCalendarRef calendar, CFAbsoluteTime *at, const char *componentDesc, ...);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE`—and in `at` the absolute time computed from the given components—if the `componentDesc` description string can be converted into an absolute time, otherwise `FALSE`. Also returns `FALSE` for out-of-range values.
 
-#### Discussion
+## Discussion
 
 When there are insufficient components provided to completely specify an absolute time, a calendar uses default values of its choice. When there is inconsistent information, a calendar may ignore some of the parameters or the function may return `FALSE`. Unnecessary components are ignored (for example, Day takes precedence over Weekday + Weekday ordinal). Note that some computations can take a relatively long time to perform.
 

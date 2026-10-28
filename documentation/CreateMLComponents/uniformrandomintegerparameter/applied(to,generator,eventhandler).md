@@ -21,7 +21,7 @@ Performs the random apply operation on the input.
 final func applied(to input: RandomTransformer.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler? = nil) async throws -> RandomTransformer.Output
 ```
 
-#### Return Value
+## Return Value
 
 The randomly transformed image.
 

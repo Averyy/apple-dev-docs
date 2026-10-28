@@ -19,7 +19,7 @@ func record(_ response: NSSpellChecker.CorrectionResponse, toCorrection correcti
 - (void) recordResponse:(NSCorrectionResponse) response toCorrection:(NSString *) correction forWord:(NSString *) word language:(NSString *) language inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 When a correction is automatically proposed, the user may respond in one of several ways.  Clients may report this to the spell checker so that it can learn from the user’s response and adjust future correction behavior accordingly.
 

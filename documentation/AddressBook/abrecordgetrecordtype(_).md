@@ -21,11 +21,11 @@ func ABRecordGetRecordType(_ record: ABRecord!) -> ABRecordType
 extern ABRecordType ABRecordGetRecordType(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The record type of `record`:
 
-#### Discussion
+## Discussion
 
 - [`kABPersonType`](./kabpersontype.md) for person records
 - [`kABGroupType`](./kabgrouptype.md) for group records.

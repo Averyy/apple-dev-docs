@@ -19,7 +19,7 @@ boolean onlyFailures
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 A value of `true` indicates that you want to receive just the App Store server notifications that failed to reach your server, including those that the App Store server is currently retrying.
 

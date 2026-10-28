@@ -6,7 +6,7 @@
 
 Access scene geometry while your graph runs.
 
-#### Overview
+## Overview
 
 When the GPU applies your graph to a scene, geometric nodes reflect the data value the system is currently processing. Use these nodes to get details about that data value, such as its coordinates, normal, or tangent information. Alternatively, use the Reflect and Refract nodes to modify vectors relative to the current data value.
 

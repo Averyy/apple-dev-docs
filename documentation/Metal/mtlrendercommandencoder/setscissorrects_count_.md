@@ -20,7 +20,7 @@ Configures multiple rectangles for the fragment scissor test.
 - (void) setScissorRects:(const MTLScissorRect[]) scissorRects count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 The rendering pipeline discards any fragments that lie outside the scissor rectangle. The default scissor rectangle is the same size as the current render attachment, with its origin coordinates in the upper-left corner at `(0, 0)`.
 

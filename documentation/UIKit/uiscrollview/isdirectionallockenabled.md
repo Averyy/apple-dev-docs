@@ -23,7 +23,7 @@ var isDirectionalLockEnabled: Bool { get set }
 @property (nonatomic, getter=isDirectionalLockEnabled) BOOL directionalLockEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), scrolling is permitted in both horizontal and vertical directions. If this property is [`true`](../../Swift/true.md) and the user begins dragging in one general direction (horizontally or vertically), the scroll view disables scrolling in the other direction. If the drag direction is diagonal, then scrolling doesn’t lock and the user can drag in any direction until the drag completes. The default value is [`false`](../../Swift/false.md).
 

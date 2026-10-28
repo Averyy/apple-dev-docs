@@ -24,7 +24,7 @@ func isEqual(to object: MPSGraphShapedType?) -> Bool
 - (BOOL) isEqualTo:(MPSGraphShapedType *) object;
 ```
 
-#### Return Value
+## Return Value
 
 True if equal, false if unequal
 

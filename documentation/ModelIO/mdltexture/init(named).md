@@ -24,11 +24,11 @@ convenience init?(named name: String)
 + (instancetype) textureNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object for the specified image file, or `nil` if no such file exists.
 
-#### Discussion
+## Discussion
 
 Calling this method immediately loads image data from the specified file. To instead create a texture object referencing a file and defer loading image data, use the [`MDLURLTexture`](../mdlurltexture.md) class.
 

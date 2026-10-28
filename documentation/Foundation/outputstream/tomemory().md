@@ -25,11 +25,11 @@ class func toMemory() -> Self
 + (instancetype) outputStreamToMemory;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized output stream that will write stream data to memory.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

@@ -18,7 +18,7 @@ A color and depth pixel format combination for a render pass.
 struct Descriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`renderTargetDescriptor`](../lowlevelrenderer/configuration/rendertargetdescriptor.md) to obtain a descriptor from each renderer configuration you plan to use. Collect one or more descriptors into a [`LowLevelRenderTarget.DescriptorSet`](./descriptorset.md), then pass the set to [`makeRenderPipelineState(descriptor:)`](../lowlevelrendercontext/makerenderpipelinestate%28descriptor%29.md) and [`makeMeshInstanceArray(renderTargets:count:)`](../lowlevelrendercontext/makemeshinstancearray%28rendertargets,count%29.md).
 

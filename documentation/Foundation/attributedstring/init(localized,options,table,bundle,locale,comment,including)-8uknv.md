@@ -21,7 +21,7 @@ Creates an attributed string by looking up a localized string from the app’s b
 init<S>(localized key: String.LocalizationValue, options: AttributedString.FormattingOptions = [], table: String? = nil, bundle: Bundle? = nil, locale: Locale? = nil, comment: StaticString? = nil, including scope: S.Type) where S : AttributeScope
 ```
 
-#### Discussion
+## Discussion
 
 To create localizable attributed strings, use Markdown syntax in your strings files. The following example shows a string from a Spanish localization:
 
@@ -37,7 +37,7 @@ let visitString = AttributedString(localized: "_Please visit our [website](https
 
 The resulting attributed string contains an [`inlinePresentationIntent`](../attributescopes/foundationattributes/inlinepresentationintent.md) attribute to apply the [`emphasized`](../inlinepresentationintent/emphasized.md) presentation intent over the entire string. It also applies the [`link`](../attributescopes/foundationattributes/link.md) attribute to the text `sitio web`. User interface frameworks like SwiftUI and UIKit can then use these attributes when presenting the text to the user.
 
-##### Applying Automatic Grammar Agreement
+### Applying Automatic Grammar Agreement
 
 To apply the automatic grammar agreement feature when loading a localized string, use Apple’s Markdown extension syntax: `^[text to inflect](inflect: true)`. The following example shows a format string with a Spanish localization for a food-ordering app.
 

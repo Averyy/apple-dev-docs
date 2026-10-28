@@ -25,7 +25,7 @@ let MPMediaItemPropertyLastPlayedDate: String
 extern NSString * const MPMediaItemPropertyLastPlayedDate;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSDate`](../Foundation/nsdate.md) object.
 

@@ -24,7 +24,7 @@ var max: Float { get set }
 @property (nonatomic, readwrite) float max;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Uniform distributions with float data types and Truncated Normal disributions. Defaults to 1 for uniform distributions and 2 for normal distributions.
 

@@ -25,7 +25,7 @@ typealias CFBagApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?) -
 typedef void (*)(const void *, void *) CFBagApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to the [`CFBagApplyFunction(_:_:_:)`](./cfbagapplyfunction%28_,_,_%29.md) function which iterates over the values in a bag and applies the behavior defined in the applier function to each value in a bag.
 

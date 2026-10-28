@@ -28,7 +28,7 @@ func insertText(_ text: String)
 
 - [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
-#### Discussion
+## Discussion
 
 Add the character `text` to your class’s backing store at the index corresponding to the cursor and redisplay the text.
 

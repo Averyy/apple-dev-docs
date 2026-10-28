@@ -25,7 +25,7 @@ var matrix: matrix_float4x4 { get set }
 @property (nonatomic, assign) matrix_float4x4 matrix;
 ```
 
-#### Discussion
+## Discussion
 
 This matrix defines the position, orientation, shear, and scale for any object affected by the transform component, relative to the coordinate space of its parent.
 

@@ -24,7 +24,7 @@ struct Weight
 typedef CGFloat UIFontWeight;
 ```
 
-#### Overview
+## Overview
 
 Use system-defined constants as interchangeable values for [`weight`](../uifontdescriptor/traitkey/weight.md). Each constant corresponds to a different value that indicates the weight of a font. Use these constants to specify the weight parameter in [`systemFont(ofSize:weight:)`](./systemfont%28ofsize,weight%29.md). When providing a weight that doesn’t precisely match a font face in the family, the system locates a face that most closely matches the request.
 

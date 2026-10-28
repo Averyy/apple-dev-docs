@@ -25,7 +25,7 @@ func CFFileSecuritySetGroup(_ fileSec: CFFileSecurity!, _ group: gid_t) -> Bool
 extern Boolean CFFileSecuritySetGroup(CFFileSecurityRef fileSec, gid_t group);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the group ID was successfully set, otherwise `false`.
 

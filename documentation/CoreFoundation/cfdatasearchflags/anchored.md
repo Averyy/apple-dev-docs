@@ -23,7 +23,7 @@ static var anchored: CFDataSearchFlags { get }
 kCFDataSearchAnchored
 ```
 
-#### Discussion
+## Discussion
 
 Performs searching only on bytes at the beginning or, if `kCFDataSearchBackwards` is also specified, at the end of the search range. No match at the beginning or end means nothing is found, even if a matching sequence of bytes occurs elsewhere in the data object.
 

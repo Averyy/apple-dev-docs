@@ -23,7 +23,7 @@ static var disabled: UIMenuElement.Attributes { get }
 UIMenuElementAttributesDisabled
 ```
 
-#### Discussion
+## Discussion
 
 When you use this attribute, the user can’t select the menu element.
 

@@ -31,7 +31,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinato
 
 - [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Discussion
+## Discussion
 
 As Writing Tools suggests changes to your view’s text, it calls this method to update the text selection accordingly. Use this method to update the current selection in your view’s text storage. When you finish making the changes, call the provided completion block to let Writing Tools know you’re finished.
 

@@ -5,13 +5,13 @@
 
 Add code to respond to invocations and offer a focused launch experience.
 
-#### Overview
+## Overview
 
 A great launch experience that helps the user complete a task quickly is the key to a successful App Clip. Upon launch, your App Clip needs to be aware of the user’s context and update its UI accordingly. For example, an App Clip might provide functionality to order donuts from a local donut shop with multiple physical locations. Instead of making the user select a location before displaying the donut menu, the App Clip recognizes the user’s context and updates its UI accordingly. The user doesn’t have to select a location, and can complete their task — ordering donuts — with fewer taps.
 
 To enable the App Clip to respond to the user’s context upon launch, the system makes the *invocation URL* available to the App Clip. Configuring the launch experience of your App Clip and choosing invocation URLs are key tasks when creating an App Clip. However, configuring invocation URLs in App Store Connect isn’t enough to provide a streamlined launch experience. You also need to add code to your App Clip that handles the invocation URL and updates its UI.
 
-##### Leveraging the invocation URL
+### Leveraging the invocation URL
 
 Both the App Clip and the full app need to respond to the invocation URL and update their UI to help the user quickly complete their task at hand. Consider the example of a donut shop with multiple physical locations. The user shouldn’t have to select the location that matches their context before they can order pastries. Instead, the App Clip can make use of the invocation URL to update its UI to display the shop’s menu right away. For example, use an invocation URL with additional URL parameters that help the App Clip recognize the user’s context and update its UI:
 
@@ -23,7 +23,7 @@ If you configure a generic URL, both your App Clip and your full app must always
 
 For additional information on associating your App Clip with your website and configuring experiences, refer to  [Associating your App Clip with your website](./associating-your-app-clip-with-your-website.md) and [Configuring App Clip experiences](./configuring-the-launch-experience-of-your-app-clip.md).
 
-##### Access the invocation URL
+### Access the invocation URL
 
 To respond to an invocation, you need to access the invocation URL so your App Clip can tailor itself to the experience. To access the URL, query the [`NSUserActivity`](../Foundation/nsuseractivity.md) object the system passes to the App Clip upon launch. If a user installs the full app, it replaces the App Clip, and the system launches it with each invocation. To offer the same functionality and provide an equivalent user experience as the App Clip, the full app also needs to handle all invocation URLs. In most cases, it makes sense to share the code that handles your URL between full app and App Clip, and also have the App Clip store state information in a shared container. This way, the full app can access any data stored by the App Clip, and, upon launch, take the user to the part of the app that best matches their context.
 
@@ -51,7 +51,7 @@ For more information about responding to lifecycle events, refer to  [Managing y
 
 To learn more about sharing data between the App Clip and the full app, refer to  [Sharing data between your App Clip and your full app](./sharing-data-between-your-app-clip-and-your-full-app.md).
 
-##### Ensure your code handles all invocations
+### Ensure your code handles all invocations
 
 A fast, consistent user experience that fits the user’s context is key to the App Clip user experience, and it’s why designing and configuring your App Clip experiences is so important. As a result, spending time to write resilient code, handling all possible invocation URLs, and testing the code is key. Make sure you guard against faulty data and handle the following scenarios:
 

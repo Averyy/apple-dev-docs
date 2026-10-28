@@ -24,7 +24,7 @@ class PHASEConeDirectivityModelSubbandParameters
 @interface PHASEConeDirectivityModelSubbandParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines one subband in the [`PHASEConeDirectivityModelParameters`](./phaseconedirectivitymodelparameters.md) class’s `subbands`. The inner and outer angles you define with [`setAngles(innerAngle:outerAngle:)`](./phaseconedirectivitymodelsubbandparameters/setangles%28innerangle,outerangle%29.md) describe a cone that directs sound of a given [`frequency`](./phasecardioiddirectivitymodelsubbandparameters/frequency.md) toward the listener. The cone’s point rests at the 3D position of the sound source. The framework adjusts the volume of the sound according to location of the listener in the 3D scene:
 

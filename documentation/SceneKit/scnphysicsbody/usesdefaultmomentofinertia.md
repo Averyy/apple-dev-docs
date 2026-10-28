@@ -25,7 +25,7 @@ var usesDefaultMomentOfInertia: Bool { get set }
 @property (nonatomic) BOOL usesDefaultMomentOfInertia;
 ```
 
-#### Discussion
+## Discussion
 
 A body’s moment of inertia determines how it responds to torques (that is, forces with a rotational component).
 

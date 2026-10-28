@@ -25,11 +25,11 @@ func CFStringCreateMutable(_ alloc: CFAllocator!, _ maxLength: CFIndex) -> CFMut
 extern CFMutableStringRefCFStringCreateMutable(CFAllocatorRef alloc, CFIndex maxLength);
 ```
 
-#### Return Value
+## Return Value
 
 A new empty CFMutableString object or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates an empty (that is, content-less) CFMutableString object. You can add character data to this object with any of the `CFStringAppend...` functions, and thereafter you can insert, delete, replace, pad, and trim characters with the appropriate CFString functions. If the `maxLength` parameter is greater than `0`, any attempt to add characters beyond this limit results in a run-time error.
 

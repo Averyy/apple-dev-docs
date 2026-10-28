@@ -16,7 +16,7 @@ Changes the endian format of an unsigned 32-bit integer.
 #define Endian32_Swap(value)
 ```
 
-#### Return Value
+## Return Value
 
 The unsigned 32-bitinteger result.
 

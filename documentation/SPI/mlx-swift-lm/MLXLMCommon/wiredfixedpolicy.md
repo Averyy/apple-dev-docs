@@ -17,11 +17,11 @@ Fixed policy: limit is constant while any ticket is active.
 struct WiredFixedPolicy
 ```
 
-#### Overview
+## Overview
 
 This policy ignores the active sizes and applies a fixed limit any time at least one ticket is active. It is useful when you want a deterministic cap.
 
-##### Example
+### Example
 
 ```swift
 let policy = WiredFixedPolicy(limit: 8 * 1024 * 1024 * 1024)

@@ -19,11 +19,11 @@ func PMGetLastPage(_ printSettings: PMPrintSettings, _ last: UnsafeMutablePointe
 OSStatus PMGetLastPage(PMPrintSettings printSettings, UInt32 *last);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You use this function to obtain the page number entered by the user in the To field of the Print dialog. If the user did not enter a value, the function returns the value of the previous call to `PMSetLastPage`, if any, or a default value. 
 

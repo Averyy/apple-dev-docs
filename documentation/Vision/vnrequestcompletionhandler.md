@@ -16,7 +16,7 @@ typealias VNRequestCompletionHandler = (VNRequest, (any Error)?) -> Void
 typedef void (^)(VNRequest *, NSError *) VNRequestCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Vision executes the completion handler on the same queue that it executes the request; however, this queue differs from the one where you called [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md).
 

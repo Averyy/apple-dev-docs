@@ -25,7 +25,7 @@ func setAttributes(_ attrs: [NSAttributedString.Key : Any]?, range: NSRange)
 - (void) setAttributes:(NSDictionary<NSString *,id> *) attrs range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 These new attributes replace any attributes previously associated with the characters in `range`. Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

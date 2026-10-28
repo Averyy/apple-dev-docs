@@ -5,7 +5,7 @@
 
 Access the split view controller’s implementations of protocol methods.
 
-#### Overview
+## Overview
 
 [`NSSplitViewController`](./nssplitviewcontroller.md) conforms to [`NSSplitViewDelegate`](./nssplitviewdelegate.md) to serve as its split view’s delegate. This page lists the split view controller type’s implementations of those protocol methods. If you override these methods in a subclass, you must call `super`.
 

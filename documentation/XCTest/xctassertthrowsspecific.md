@@ -12,7 +12,7 @@ Asserts that an expression throws a specific `NSException`.
 #define XCTAssertThrowsSpecific(expression, exception_class, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure if `expression` doesn’t throw an [`NSException`](../Foundation/nsexception.md) of class `exception_class`.
 

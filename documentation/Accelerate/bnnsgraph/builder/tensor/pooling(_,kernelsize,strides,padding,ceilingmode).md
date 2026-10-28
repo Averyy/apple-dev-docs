@@ -23,7 +23,7 @@ func pooling(_ function: BNNSGraph.Builder.PoolingFunction, kernelSize: [Int], s
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This operation assumes the source tensor is in  `(N, C, spatial dimensions...)` format, where the number of spatial dimensions is either `1` or `2`
 

@@ -13,7 +13,7 @@ Sets configuration options for installed Swift SDKs.
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 ```
 sdk configuration set [--package-path=<package-path>]

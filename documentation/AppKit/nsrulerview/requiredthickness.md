@@ -19,7 +19,7 @@ var requiredThickness: CGFloat { get }
 @property (readonly) CGFloat requiredThickness;
 ```
 
-#### Discussion
+## Discussion
 
 This thickness is the height of a horizontal ruler and the width of a vertical ruler. The required thickness is the sum of the thicknesses of the ruler area, the marker area, and the accessory view.
 

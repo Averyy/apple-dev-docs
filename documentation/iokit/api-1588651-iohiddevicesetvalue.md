@@ -16,11 +16,11 @@ Sets a value for an element.
 IOReturn IOHIDDeviceSetValue(IOHIDDeviceRef device, IOHIDElementRef element, IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves synchronously and will block until the report has been issued to the device. It is only relevent for either output or feature type elements. If setting values for multiple elements you may want to consider using IOHIDDeviceSetValueMultiple or IOHIDTransaction.
 

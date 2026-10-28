@@ -25,7 +25,7 @@ func enumerateMatches(in string: String, options: NSRegularExpression.MatchingOp
 - (void) enumerateMatchesInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range usingBlock:(void (^)(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the fundamental matching method for regular expressions and is suitable for overriding by subclassers. There are additional convenience methods for returning all the matches as an array, the total number of matches, the first match, and the range of the first match.
 

@@ -13,11 +13,11 @@
 int mbuf_is_traffic_class_privileged(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 Non-zero if privileged, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 Returns the privileged status of the traffic class of the packet specified by the mbuf.
 

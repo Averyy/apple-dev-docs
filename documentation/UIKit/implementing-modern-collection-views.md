@@ -13,14 +13,14 @@ Bring compositional layouts to your app and simplify updating your user interfac
 - macOS 11.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Collection views let you present a set of data in flexible visual arrangements. This sample app shows how to create various types of layouts and manage data in collection views. The sample focuses on two key technologies:
 
 - Compositional layout, a type of collection view layout that’s composable, flexible, and fast, letting you build any kind of visual arrangement for your content.
 - Diffable data source, a specialized type of data source that provides the behavior you need to simply and efficiently manage updates to your collection view’s data and user interface.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample code project in Xcode, first choose whether to view the examples in iOS or macOS.
 
@@ -38,7 +38,7 @@ To view examples in macOS:
 
 The code examples shown here are from the iOS target, but you can find macOS-equivalent examples in the `.swift` files for the macOS target.
 
-##### Create a grid layout
+### Create a grid layout
 
 The Grid example shows how to create a grid layout by using fractional sizing to make a row of five equally sized items. It creates a horizontal group with items that are each 20% of the width of the group by using `.fractionalWidth(0.2)`. Each row of five items is repeated multiple times in a single section to create a grid.
 
@@ -58,7 +58,7 @@ let layout = UICollectionViewCompositionalLayout(section: section)
 return layout
 ```
 
-##### Add spacing around items
+### Add spacing around items
 
 The Inset Items Grid example builds on the layout from the Grid example, showing how to add spacing around items by using the [`contentInsets`](./nscollectionlayoutitem/contentinsets.md) property. Here, this property applies even spacing around the edges of each item.
 
@@ -69,7 +69,7 @@ let item = NSCollectionLayoutItem(layoutSize: itemSize)
 item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 ```
 
-##### Create a column layout
+### Create a column layout
 
 The Two-Column Grid example shows how to create a two-column layout by making a group with the exact number of items specified in the `count` parameter of [`horizontal(layoutSize:subitem:count:)`](./nscollectionlayoutgroup/horizontal%28layoutsize,subitem,count%29.md). This approach simplifies specifying exactly how many items a group contains. In this case, the `count` parameter takes precedence over `itemSize`, and item size is computed automatically to fit the specified number of items.
 
@@ -85,7 +85,7 @@ let spacing = CGFloat(10)
 group.interItemSpacing = .fixed(spacing)
 ```
 
-##### Display distinct layouts per section
+### Display distinct layouts per section
 
 The Distinct Sections example shows how to display different layout arrangements in different sections of the same collection view layout. Creating a layout with different sections requires a compositional layout with a section provider. The code in the section provider accesses the section’s index (`sectionIndex`) to determine which section it’s configuring, and displays a different layout for each section.
 
@@ -117,7 +117,7 @@ let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int,
 return layout
 ```
 
-##### Display distinct layouts in different environments
+### Display distinct layouts in different environments
 
 The Adaptive Sections example shows how to create a layout that adapts to the environment it’s displayed in. In this example, the number of columns shown changes based on the available screen size. Creating a layout that adapts to a new environment requires a compositional layout with a section provider. The code in the section provider accesses the amount of available space in the current layout environment (`layoutEnvironment.container.effectiveContentSize`), and displays a different number of columns based on the available width.
 
@@ -145,7 +145,7 @@ let layout = UICollectionViewCompositionalLayout {
 return layout
 ```
 
-##### Add badges to items
+### Add badges to items
 
 The Item Badges example shows how to add supplementary views like badges to the items in a collection view. It creates and adds a badge to the top trailing corner of each item by creating a supplementary item for the badge, and passing in that supplementary item when creating the item itself. The data source configures each badge in its [`supplementaryViewProvider`](./uicollectionviewdiffabledatasource-9tqpa/supplementaryviewprovider-swift.property.md).
 
@@ -164,7 +164,7 @@ let item = NSCollectionLayoutItem(layoutSize: itemSize, supplementaryItems: [bad
 item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 ```
 
-##### Add headers and footers to sections
+### Add headers and footers to sections
 
 The Section Headers/Footers example shows how to add headers and footers to each section of the collection view. It creates boundary supplementary items to represent the header and the footer, and sets them as the section’s [`boundarySupplementaryItems`](./nscollectionlayoutsection/boundarysupplementaryitems.md).
 
@@ -202,7 +202,7 @@ dataSource.supplementaryViewProvider = { (view, kind, index) in
 }
 ```
 
-##### Pin section headers to sections
+### Pin section headers to sections
 
 The Pinned Section Headers example shows how to pin a section header to its section. This way, the header shows while any portion of the section it’s attached to is visible during scrolling, and the footer stays in place. This example sets the header’s [`pinToVisibleBounds`](./nscollectionlayoutboundarysupplementaryitem/pintovisiblebounds.md) property to `true` and increases its [`zIndex`](./nscollectionlayoutsupplementaryitem/zindex.md) to a value greater than `1` so the header appears on top of the section during scrolling.
 
@@ -231,7 +231,7 @@ dataSource.supplementaryViewProvider = { (view, kind, index) in
 }
 ```
 
-##### Decorate sections with backgrounds
+### Decorate sections with backgrounds
 
 The Section Background Decoration example shows how to distinguish sections by adding section backgrounds. It creates a section background by making a decoration item using [`background(elementKind:)`](./nscollectionlayoutdecorationitem/background%28elementkind%29.md). It then sets that decoration item as the section’s [`decorationItems`](./nscollectionlayoutsection/decorationitems.md) property.
 
@@ -252,7 +252,7 @@ layout.register(
 return layout
 ```
 
-##### Create custom layouts by nesting groups
+### Create custom layouts by nesting groups
 
 The Nested Groups example shows how to create flexible layout arrangements by nesting groups inside of other groups. It creates a vertical group with two items, and combines the vertical group with an item in a horizontal parent group.
 
@@ -277,7 +277,7 @@ let nestedGroup = NSCollectionLayoutGroup.horizontal(
     subitems: [leadingItem, trailingGroup])
 ```
 
-##### Scroll sections horizontally
+### Scroll sections horizontally
 
 The Orthogonal Sections example shows how to create a section that scrolls horizontally in an otherwise vertically scrolling layout. Setting a section’s [`orthogonalScrollingBehavior`](./nscollectionlayoutsection/orthogonalscrollingbehavior.md) property to a value other than [`UICollectionLayoutSectionOrthogonalScrollingBehavior.none`](./uicollectionlayoutsectionorthogonalscrollingbehavior/none.md) causes the section to lay out its contents perpendicular to the main layout axis. In this case, because the layout scrolls vertically by default, the section scrolls horizontally.
 
@@ -285,7 +285,7 @@ The Orthogonal Sections example shows how to create a section that scrolls horiz
 section.orthogonalScrollingBehavior = .continuous
 ```
 
-##### Choose horizontal scrolling and paging behavior
+### Choose horizontal scrolling and paging behavior
 
 The Orthogonal Section Behaviors example shows each of the options for [`UICollectionLayoutSectionOrthogonalScrollingBehavior`](./uicollectionlayoutsectionorthogonalscrollingbehavior.md). Each section of the layout demonstrates a different orthogonal scrolling behavior, showcasing the differences between the scrolling and paging options. In this case, because the layout scrolls vertically by default, the sections themselves scroll horizontally.
 
@@ -309,7 +309,7 @@ func orthogonalScrollingBehavior() -> UICollectionLayoutSectionOrthogonalScrolli
 }
 ```
 
-##### Update data in a collection view
+### Update data in a collection view
 
 The Mountains Search example shows how to update the data and the user interface in a collection view when a user filters the data. It shows a list of mountain names, and allows the user to type text into a search bar to filter based on the mountain names.
 
@@ -330,7 +330,7 @@ func performQuery(with filter: String?) {
 }
 ```
 
-##### Update data in multiple sections
+### Update data in multiple sections
 
 The Settings: Wi-Fi example shows how to update the data and the user interface in a table view that uses multiple kinds of sections and items. It recreates the Wi-Fi page in iOS Settings, letting the user toggle the Wi-Fi switch on and off to view the available and current Wi-Fi networks.
 
@@ -354,7 +354,7 @@ if controller.wifiEnabled {
 self.dataSource.apply(currentSnapshot, animatingDifferences: animated)
 ```
 
-##### Update data incrementally
+### Update data incrementally
 
 The Insertion Sort Visualization example shows how to update data incrementally, displaying the visible progress as the data changes from an initial state to a final state. It shows rows of color swatches, originally in a random order, that it then iteratively sorts into spectral order.
 
@@ -382,7 +382,7 @@ updatedSnapshot.sectionIdentifiers.forEach {
 }
 ```
 
-##### Create a simple list layout
+### Create a simple list layout
 
 The Simple List example shows how to create a basic list layout that adapts to any screen size. It creates a configuration with one of the system-defined list appearances. Then, it creates a list layout by passing the configuration to [`list(using:)`](./uicollectionviewcompositionallayout/list%28using%29.md). This approach generates a compositional layout with a single section styled as a list.
 
@@ -391,7 +391,7 @@ let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
 return UICollectionViewCompositionalLayout.list(using: config)
 ```
 
-##### Choose a list appearance
+### Choose a list appearance
 
 The List Appearances example shows each of the options for [`UICollectionLayoutListConfiguration.Appearance`](./uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum.md). Tapping the name of the appearance in the navigation bar changes the list to another appearance, showcasing each of the list styles. Each list uses the [`UICollectionLayoutListConfiguration.HeaderMode.firstItemInSection`](./uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.enum/firstiteminsection.md) header mode, which makes each section of the list expandable and collapsible.
 
@@ -400,7 +400,7 @@ var config = UICollectionLayoutListConfiguration(appearance: self.appearance)
 config.headerMode = .firstItemInSection
 ```
 
-##### Customize list cells
+### Customize list cells
 
 The List with Custom Cells example shows how to configure a custom list cell subclass. The example focuses on `CustomListCell`, a custom subclass of [`UICollectionViewListCell`](./uicollectionviewlistcell.md) that combines several kinds of subviews into one cell. It sets the appearance and content of these views using content configurations.
 
@@ -434,7 +434,7 @@ The diffable data source uses that cell registration when it dequeues the cell.
 return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
 ```
 
-##### Build a layout with multiple section types
+### Build a layout with multiple section types
 
 The Emoji Explorer example shows how to create a compositional layout with multiple types of sections. The example contains an orthogonally scrolling section, an outline section, and a list section in one compositional layout. The `createLayout()` method defines a section provider to supply each section.
 
@@ -480,7 +480,7 @@ case .outline:
 }
 ```
 
-##### Create a value cell list
+### Create a value cell list
 
 The Emoji Explorer - List example shows how to create a list with cells that use the value cell style. It applies a content configuration with the default value cell style to each of the cells in the list.
 

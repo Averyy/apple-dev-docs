@@ -21,7 +21,7 @@ The compilation options that BNNS uses when compiling a source mlmodelc file to 
 struct CompileOptions
 ```
 
-#### Overview
+## Overview
 
 Call `/Accelerate/BNNSGraph/Context/init(compileFromPath:functionName:options:)` to create a default options structure and then set properties such as [`optimizationPreference`](./compileoptions/optimizationpreference-swift.property.md) to specify individual options.
 

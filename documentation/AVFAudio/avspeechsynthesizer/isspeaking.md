@@ -25,7 +25,7 @@ var isSpeaking: Bool { get }
 @property (nonatomic, readonly, getter=isSpeaking) BOOL speaking;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the synthesizer is speaking or is in a paused state with utterances in its queue. If `false`, the synthesizer isn’t speaking and it doesn’t have any utterances in its queue.
 

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 > **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
@@ -11,7 +11,7 @@ Create and manage ad groups.
 
 An ad group is a collection of criteria that defines who sees your ad in App Store search results. A basic ad group includes a `startTime`, `endTime`, and `dailyBudgetAmount`. You can add bid amounts, [`TargetingDimensions`](./targetingdimensions.md), and [Targeting Keywords and Negative Keywords](./targeting-keywords-and-negative-keywords.md). Use the [`Search for Geolocations`](./search-for-geolocations.md) endpoint to find localities to use for targeting dimensions within ad groups.
 
-##### Build a Campaign Keywords Strategy
+### Build a Campaign Keywords Strategy
 
 When building a campaign promotion strategy, you define keywords relevant to your app and bid on them. Relevant keywords increase the viability of your app to rank high in user searches. You can either automate your keyword and bid strategy by using the Search Match feature, or use your own keywords and bid strategy.
 
@@ -19,7 +19,7 @@ The Search Match feature is an algorithm that uses multiple resources to match y
 
 ![Keyword app search example](https://developer.apple.com/tutorials/images/com.apple.appleads/media-3341277@2x.png)
 
-##### Enable and Disable Search Match
+### Enable and Disable Search Match
 
 To enable Search Match, use [`Create an Ad Group`](./create-an-ad-group.md) or [`Update an Ad Group`](./update-an-ad-group.md) endpoints to perform the following steps:
 
@@ -34,7 +34,7 @@ If you’re using your own keywords and bid strategy, disable Search Match using
 
 > ❗ **Important**:  If you don’t provide a `bidAmount`, the `bidAmount` uses the `defaultBidamount` of the corresponding ad group.
 
-##### Automated Ad Groups
+### Automated Ad Groups
 
 The Maximize Conversions bid strategy uses an automated ad group with Search Match to automatically optimize bids for each search query. This eliminates the need to manually set and monitor individual keyword bids, while prioritizing keywords most likely to drive conversions.
 

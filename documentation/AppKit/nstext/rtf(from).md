@@ -19,7 +19,7 @@ func rtf(from range: NSRange) -> Data?
 - (NSData *) RTFFromRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSRangeException` if any part of `aRange` lies beyond the end of the receiver’s characters.
 

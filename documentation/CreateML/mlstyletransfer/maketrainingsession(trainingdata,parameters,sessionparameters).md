@@ -19,7 +19,7 @@ Creates an asynchronous training session for a style transfer model.
 static func makeTrainingSession(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters = .init(), sessionParameters: MLTrainingSessionParameters = .init()) throws -> MLTrainingSession<MLStyleTransfer>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the style transfer model-training session.
 

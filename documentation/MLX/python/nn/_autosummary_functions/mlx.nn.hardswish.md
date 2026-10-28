@@ -6,7 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.hardswish
 
-**class hardswish(*x*)**
-: Applies the hardswish function, element-wise.
+```python
+class hardswish(x)
+```
+
+Applies the hardswish function, element-wise.
 
 \[\text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6\]

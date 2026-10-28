@@ -25,11 +25,11 @@ func SecTrustGetVerifyTime(_ trust: SecTrust) -> CFAbsoluteTime
 CFAbsoluteTime SecTrustGetVerifyTime(SecTrustRef trust);
 ```
 
-#### Return Value
+## Return Value
 
 The absolute time at which the certificates should be checked for validity.
 
-#### Discussion
+## Discussion
 
 This function returns the absolute time returned by:
 

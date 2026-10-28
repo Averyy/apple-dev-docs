@@ -25,7 +25,7 @@ func SparseRetain(_ Subfactor: SparseOpaqueSubfactor_Complex_Double) -> SparseOp
 static SparseOpaqueSubfactor_Complex_Double SparseRetain(SparseOpaqueSubfactor_Complex_Double NumericFactor);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of NumericFactor.
 

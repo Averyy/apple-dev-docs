@@ -25,7 +25,7 @@ static let quickTimeMetadataSpatialOverCaptureQualityScore: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataSpatialOverCaptureQualityScore;
 ```
 
-#### Discussion
+## Discussion
 
 A score that considers factors such as exposure and focus. The value ranges from `0.0` to `1.0`, where a score below `0.5` indicates that the asset has serious flaws.
 

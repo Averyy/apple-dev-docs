@@ -24,7 +24,7 @@ class AVCoordinatedPlaybackSuspension
 @interface AVCoordinatedPlaybackSuspension : NSObject
 ```
 
-#### Overview
+## Overview
 
 See the playback coordinator’s [`beginSuspension(for:)`](./avplaybackcoordinator/beginsuspension%28for%29.md) method for details about suspending playback.
 

@@ -15,7 +15,7 @@ The identifier for an audio object’s main element.
 constexpr const IOUserAudioObjectPropertyElement IOUserAudioObjectPropertyElementMain;
 ```
 
-#### Discussion
+## Discussion
 
 The main element has the value `0`.
 

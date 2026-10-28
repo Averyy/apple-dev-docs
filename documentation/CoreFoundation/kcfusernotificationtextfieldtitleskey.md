@@ -19,7 +19,7 @@ let kCFUserNotificationTextFieldTitlesKey: CFString!
 extern CFStringRef const kCFUserNotificationTextFieldTitlesKey;
 ```
 
-#### Discussion
+## Discussion
 
 If only one text field is to be displayed, you can pass its title string directly without putting it into an array first.
 

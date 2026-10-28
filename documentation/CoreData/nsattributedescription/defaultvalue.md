@@ -25,11 +25,11 @@ var defaultValue: Any? { get set }
 @property (retain, nullable) id defaultValue;
 ```
 
-#### Discussion
+## Discussion
 
 Default values are retained by a managed object model, not copied. This means that attribute values do not have to implement the `NSCopying` protocol, however it also means that you should not modify any objects after they have been set as default values.
 
-##### Special Considerations
+### Special Considerations
 
 Setting the default value raises an exception if the receiver’s model has been used by an object graph manager.
 

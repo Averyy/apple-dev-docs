@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Hexagonal: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Hexagonal
 ```
 
-#### Discussion
+## Discussion
 
 A hexagonal recording uses a 60° loudspeaker separation layout. Your channels must be laid out in the following order:
 

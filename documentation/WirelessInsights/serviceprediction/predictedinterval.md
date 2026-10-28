@@ -16,7 +16,7 @@ The expected duration of the predicted event.
 let predictedInterval: TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the defined values of the [`ServicePrediction.QuantizedInterval`](./quantizedinterval.md) type.
 

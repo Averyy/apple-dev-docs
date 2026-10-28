@@ -22,11 +22,11 @@ func GLKMatrix4MakeWithColumns(_ column0: GLKVector4, _ column1: GLKVector4, _ c
 static GLKMatrix4 GLKMatrix4MakeWithColumns(GLKVector4 column0, GLKVector4 column1, GLKVector4 column2, GLKVector4 column3);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The first three components of the `column3` parameter provide the translation values for the matrix.
 

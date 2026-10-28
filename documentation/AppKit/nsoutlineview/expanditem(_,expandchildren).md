@@ -19,7 +19,7 @@ func expandItem(_ item: Any?, expandChildren: Bool)
 - (void) expandItem:(id) item expandChildren:(BOOL) expandChildren;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this method is invoked with the `expandChildren` parameter set to [`true`](../../Swift/true.md) when a user Option-clicks the disclosure triangle for an item in the outline view (to expand the item and all its contained items).
 

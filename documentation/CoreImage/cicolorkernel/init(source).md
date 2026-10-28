@@ -26,11 +26,11 @@ convenience init?(source string: String)
 + (instancetype) kernelWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A new color kernel object, or `nil` if the specified source code does not contain a valid color kernel routine.
 
-#### Discussion
+## Discussion
 
 This method is similar to the [`init(source:)`](../cikernel/init%28source%29.md) method of the superclass [`CIKernel`](../cikernel.md), but creates only color kernels. Use this method when you want to ensure that the type of kernel object returned (if any) is always [`CIColorKernel`](../cicolorkernel.md).
 

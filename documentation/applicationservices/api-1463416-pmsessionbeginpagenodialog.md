@@ -19,11 +19,11 @@ func PMSessionBeginPageNoDialog(_ printSession: PMPrintSession, _ pageFormat: PM
 OSStatus PMSessionBeginPageNoDialog(PMPrintSession printSession, PMPageFormat pageFormat, const PMRect *pageFrame);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the user cancels the print job, this function returns `kPMCancel`.
 
-#### Discussion
+## Discussion
 
 This function is similar to the function `PMSessionBeginPage` except that the function `PMSessionBeginPageNoDialog` suppresses the printing status dialog. You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md). You must call the functions `PMSessionBeginPageNoDialog` and [`PMSessionEndPageNoDialog(_:)`](./api-1462014-pmsessionendpagenodialog.md) within the scope of calls to the `Begin` print job function ([`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](./api-1460101-pmsessionbegincgdocumentnodialog.md)) and the `End` print job function ([`PMSessionEndDocumentNoDialog(_:)`](./api-1464527-pmsessionenddocumentnodialog.md)).
 
@@ -33,7 +33,7 @@ If the function `PMSessionBeginPageNoDialog` returns `noErr`, you must later cal
 
 The printing system automatically handles printing multiple copies. Your application does not need to perform any tasks other than specifying the number of copies in the printing session.
 
-##### Special Considerations
+### Special Considerations
 
 Prior to OS X v10.5, the `pageFormat` parameter is ignored. In macOS 10.5 and later, the printing system supports multiple orientations within a print job. When you call this function and supply a page format, the orientation specified in the page format is used for the current page. Other settings in the page format, such as paper size or scaling, are ignored.
 

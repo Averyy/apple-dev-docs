@@ -5,26 +5,26 @@
 
 Released November 3, 2025 — 26.1 (20622.2.11)
 
-#### Overview
+## Overview
 
 Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, macOS Sequoia, and macOS Sonoma.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed hit testing for scrolled iframe content by adjusting for the frame’s scroll position, ensuring accurate element detection across assistive technologies. (158233884)
 - Fixed an issue where VoiceOver reports the wrong radio count with a dynamically inserted radio option.  (159937173)
 - Fixed exposing content within dynamically expanded details elements in the accessibility tree.  (159937257)
 - Fixed the target of `aria-labelledby` not updating its accessibility label after dynamic `innerHTML` change in the label.  (160691619)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for remembering the last successful `position-try` fallback in CSS anchor positioning to reduce layout jumps when styles change. (158452223)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed anchor positioning to handle fragmented multicolumn flows. (156958568)
 - Fixed anchor positioning fallbacks to respond to scrolling. (158451016)
@@ -41,22 +41,22 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed an issue where transitioning an element to `display: none` with `transition-behavior: allow-discrete` and CSS Anchor Positioning would repeatedly restart the transition. (161421046)
 - Fixed `position-area` for the initial containing block to include the in-flow scrollable area, improving alignment for typical overflow cases. (161997622)
 
-##### Forms
+### Forms
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed native text inputs so that their background colors update when autofilled. (159014135)
 - Fixed checkboxes and radio buttons missing borders in the filled state when “Increased Contrast” is enabled on macOS. (159379948)
 
-##### PDF
+### PDF
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed VoiceOver not recognizing the password form in encrypted documents.  (159240531)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a bottom gap appearing on layouts with viewport-sized fixed containers on iOS. (158055568)
 - Fixed `position-visibility: anchors-visible` visibility heuristic when anchor is clipped by an ancestor container.  (160060564)
@@ -65,51 +65,51 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed an issue that caused cropped flexbox elements to render incorrectly. (161218029)
 - Fixed string search freezing when subject has large number (>1000). (161421015)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for relative units in SVG. (160883553)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed absolutely positioned SVGs so that their size correctly accounts for the padding of the containing block when the SVG root is out-of-flow. (160727702)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Safari ignoring the `style-src-elem` Content Security Policy directive ensuring it is checked before falling back to `style-src`, in line with CSP3 specifications. (157298407)
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue on iOS 26 where pressing the B button on a gamepad could make a page appear to lose `gamepad` focus by bypassing the system’s automatic navigation behavior. (159125095)
 
-##### Web Inspector
+### Web Inspector
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed issue where searching on certain text fails to find matches.  (159897282)
 
-##### WebGPU
+### WebGPU
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `GPUQueue.copyExternalImageToTexture` could not handle SVG images. (158442476)
 - Fixed an issue where video playback using the WebGPU renderer in WebCodecs could display a black screen. (158442539)
 - Fixed an issue where WebGPU video textures failed to load in Three.js panoramas. (159918934)
 
-##### WebKit API
+### WebKit API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash when an app uses `WKWebView::loadRequest` API on background threads.  (162225842)
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `getUserMedia()` on iOS incorrectly firing `devicechange` events when there was no actual change to available microphones or default devices. (157693528)
 

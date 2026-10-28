@@ -24,11 +24,11 @@ class ARWorldMap
 
 - [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
 
-#### Overview
+## Overview
 
 The session state in a world map includes ARKit’s awareness of the physical space in which the user moves the device. ARKit uses the details of the user’s physical space to determine the device’s position and orientation, as well as any [`ARAnchor`](./aranchor.md) objects added to the session that can represent detected real-world features or virtual content placed by your app.
 
-##### Serialize and Deserialize a World Map
+### Serialize and Deserialize a World Map
 
 When your app quits, you can save the current world map (acquired using [`getCurrentWorldMap(completionHandler:)`](./arsession/getcurrentworldmap%28completionhandler%29.md)). Because [`ARWorldMap`](./arworldmap.md) conforms to [`NSSecureCoding`](../Foundation/nssecurecoding.md), you serialize it using [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md).
 
@@ -54,7 +54,7 @@ You can use anchors from a resumed world map to place the same virtual content a
 
 For more information, see [Saving and loading world data](./saving-and-loading-world-data.md).
 
-##### Share a Saved World Map
+### Share a Saved World Map
 
 With two devices tracking the same world map, you can build a networked experience in which both users can see and interact with the same virtual content. To send an [`ARWorldMap`](./arworldmap.md) to another device:
 
@@ -64,7 +64,7 @@ With two devices tracking the same world map, you can build a networked experien
 
 For more information, see [Creating a multiuser AR experience](./creating-a-multiuser-ar-experience.md).
 
-##### Run a Deserialized World Map
+### Run a Deserialized World Map
 
 To begin a new session from an existing [`ARWorldMap`](./arworldmap.md), set a world-tracking configuration’s [`initialWorldMap`](./arworldtrackingconfiguration/initialworldmap.md) property and use [`run(_:options:)`](./arsession/run%28_,options%29.md). This starts a new session using the same spatial awareness and anchors loaded from the saved world map.
 

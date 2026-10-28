@@ -5,7 +5,7 @@
 
 Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
-#### Overview
+## Overview
 
 System experiences like Siri and the Shortcuts app produce input that doesn’t always match what your code requires. For example, natural spoken language commands from Siri are strings, but your app intent might require an integer or floating-point value instead. Resolvers let the system translate one type to another automatically.
 

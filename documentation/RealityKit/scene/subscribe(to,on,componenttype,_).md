@@ -21,7 +21,7 @@ Subscribes to an event type, optionally limited to events affecting a source ent
 @preconcurrency func subscribe<E>(to event: E.Type, on sourceObject: (any EventSource)? = nil, componentType: (any Component.Type)?, _ handler: @escaping (E) -> Void) -> any Cancellable where E : Event
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the subscription to this event stream.
 

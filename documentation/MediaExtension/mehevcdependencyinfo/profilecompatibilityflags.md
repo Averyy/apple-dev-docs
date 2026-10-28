@@ -19,7 +19,7 @@ var profileCompatibilityFlags: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * profileCompatibilityFlags;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags`](../../CoreMedia/kcmhevctemporallevelinfokey_profilecompatibilityflags.md) sample buffer attachment, and is `nil` if this information isn’t available.
 

@@ -20,7 +20,7 @@ Assigns multiple sampler states to a range of entries in the tile shader argumen
 - (void) setTileSamplerStates:(id<MTLSamplerState> const[]) samplers withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the sampler state at each index is `nil`.
 

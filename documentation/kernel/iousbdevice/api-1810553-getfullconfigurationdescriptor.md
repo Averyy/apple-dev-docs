@@ -10,11 +10,11 @@ virtual const IOUSBConfigurationDescriptor *GetFullConfigurationDescriptor(
  UInt8configIndex);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the descriptors, which are cached in the IOUSBDevice object.
 
-#### Overview
+## Overview
 
 return a pointer to all the descriptors for the requested configuration.
 

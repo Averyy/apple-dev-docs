@@ -23,7 +23,7 @@ var redEyeOn: NSNumber? { get set }
 @property (strong, getter=isRedEyeOn, nullable) NSNumber * redEyeOn;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 0, no red-eye reduction was used; when the value is 1, red-eye reduction was used.
 

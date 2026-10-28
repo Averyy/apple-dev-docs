@@ -17,7 +17,7 @@ Initialize the `UserInput` with a single text prompt.
 init(prompt: String, images: [Image] = [Image](), videos: [Video] = [Video](), audios: [Audio] = [Audio](), tools: [ToolSpec]? = nil, additionalContext: [String : any Sendable]? = nil)
 ```
 
-##### See Also
+### See Also
 
 - [`UserInput.Prompt.text(_:)`](./prompt-swift.enum/text%28_%29.md)
 - [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md)

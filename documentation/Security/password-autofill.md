@@ -4,7 +4,7 @@
 
 Streamline your app’s login and onboarding procedures.
 
-#### Overview
+## Overview
 
 Password AutoFill simplifies login and account creation tasks for iOS apps and webpages. With just a few taps, your users can create and save new passwords or log in to an existing account. Users don’t even need to know their password; the system handles everything. This convenience increases the likelihood that users will complete your app’s onboarding process and start using your app more quickly. Additionally, by encouraging users to select unique, strong passwords, you increase the security of your app.
 
@@ -12,18 +12,18 @@ By default, Password AutoFill saves the user’s login credentials on their curr
 
 Password AutoFill also provides credentials from third-party password managers that implement a credential provider extension. For more information on the credential provider extension, see the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework.
 
-##### Enable Password AutoFill
+### Enable Password AutoFill
 
 Password AutoFill uses heuristics to determine when the user logs in or creates new passwords, and automatically provides the password QuickType bar. These heuristics give users some Password AutoFill support in most apps, even if those apps haven’t been updated to support AutoFill. However, to provide the best user experience and ensure your app fully supports Password AutoFill, perform the following steps:
 
 1. Set up your app’s associated domains. To learn how to set up your app’s associated domains, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 2. Set the correct AutoFill type on relevant text fields. For an iOS app, see [Enabling Password AutoFill on a text input view](./enabling-password-autofill-on-a-text-input-view.md). For a web app, see [Enabling Password AutoFill on an HTML input element](./enabling-password-autofill-on-an-html-input-element.md).
 
-##### Support third-party web services
+### Support third-party web services
 
 Password AutoFill streamlines logging into web services at your domain; however, if you need to log into a third-party service, use [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) instead, which supports Password AutoFill when your user hasn’t already logged in.
 
-##### Integrate a password management app with Password AutoFill
+### Integrate a password management app with Password AutoFill
 
 If you’re developing a password management app, create AutoFill Credential Provider Extensions to surface credentials from your app in Password AutoFill and pull your app’s password data into the Password AutoFill workflow. When your app integrates with Password AutoFill, users don’t have to copy and paste credentials. Instead, they can use password data stored in your app easily because the data will be offered to the user to fill in compatible user name and password fields. To integrate a password app with Password AutoFill, use in the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework.
 

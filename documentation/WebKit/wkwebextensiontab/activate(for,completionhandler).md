@@ -27,7 +27,7 @@ optional func activate(for context: WKWebExtensionContext) async throws
 - (void) activateForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Upon activation, the tab should become the frontmost and either be the sole selected tab or be included among the selected tabs. No action is performed if not implemented.
 

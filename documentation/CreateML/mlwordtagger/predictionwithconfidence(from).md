@@ -21,7 +21,7 @@ func predictionWithConfidence(from text: String) throws -> [[String : Double]]
 func predictionWithConfidence(from tokens: [MLWordTagger.Token]) throws -> [[String : Double]]
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries. Each dictionary corresponds to a token in the input text string. A dictionary entry contains a tag prediction with its associated confidence score.
 

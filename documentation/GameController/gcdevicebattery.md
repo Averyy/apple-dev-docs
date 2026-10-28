@@ -24,7 +24,7 @@ class GCDeviceBattery
 @interface GCDeviceBattery : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to display the state of a device’s battery to a player.
 

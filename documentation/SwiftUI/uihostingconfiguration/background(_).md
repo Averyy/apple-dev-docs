@@ -19,7 +19,7 @@ Sets the background contents for the hosting configuration’s enclosing cell.
 func background<S>(_ style: S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>> where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The following example sets a custom view to the background of the cell:
 

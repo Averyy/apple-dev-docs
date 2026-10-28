@@ -24,7 +24,7 @@ class MPSGraphGRUDescriptor
 @interface MPSGraphGRUDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 

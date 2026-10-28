@@ -19,11 +19,11 @@ var wantsDefaultClipping: Bool { get }
 @property (readonly) BOOL wantsDefaultClipping;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the default clipping is in effect, [`false`](../../Swift/false.md) otherwise. By default, this method returns [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). When the value of this property is [`true`](../../Swift/true.md), AppKit sets the current clipping region to the bounds of the view prior to calling that view’s [`draw(_:)`](./draw%28_%29.md) method. Subclasses may override this property and return [`false`](../../Swift/false.md) to suppress this default clipping behavior. You might do this to avoid the cost of setting up, enforcing, and cleaning up the clipping path. If you do change the value to [`false`](../../Swift/false.md), you are responsible for doing your own clipping or constraining drawing appropriately. Failure to do so could the view to corrupt the contents of other views in the window.
 

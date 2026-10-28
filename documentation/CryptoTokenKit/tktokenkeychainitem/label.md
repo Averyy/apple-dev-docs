@@ -25,7 +25,7 @@ var label: String? { get set }
 @property (copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrLabel` attribute type.
 

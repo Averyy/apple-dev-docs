@@ -11,11 +11,11 @@ Fetches all targeting keywords in ad groups.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To return all targeting keywords for a campaign, use the associated `campaignId` and `adgroupId` as a resource. You can also use a partial fetch. For more information, see the Use a Partial Fetch section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Get all targeting keywords
+### Payload example: Get all targeting keywords
 
 **Request**:
 

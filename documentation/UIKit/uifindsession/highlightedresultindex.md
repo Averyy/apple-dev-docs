@@ -22,7 +22,7 @@ var highlightedResultIndex: Int { get }
 @property (nonatomic, readonly) NSInteger highlightedResultIndex;
 ```
 
-#### Discussion
+## Discussion
 
 To indicate no highlighted result, return `nil` (Swift) or [`NSNotFound`](../../Foundation/nsnotfound-9t5v2.md) (Objective-C).
 

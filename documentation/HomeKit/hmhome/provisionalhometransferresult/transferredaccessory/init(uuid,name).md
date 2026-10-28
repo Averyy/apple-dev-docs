@@ -16,7 +16,7 @@ Creates a structure that represents an accessory that was successfully transferr
 init(uuid: UUID, name: String)
 ```
 
-#### Return Value
+## Return Value
 
 An accessory that was successfully transferred to the home hub.
 

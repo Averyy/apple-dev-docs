@@ -25,7 +25,7 @@ var identifier: Int { get }
 @property (nonatomic, readonly) NSUInteger identifier;
 ```
 
-#### Discussion
+## Discussion
 
 To get a list of all the transactions available in the testing environment, see [`allTransactions()`](../sktestsession/alltransactions%28%29.md).
 

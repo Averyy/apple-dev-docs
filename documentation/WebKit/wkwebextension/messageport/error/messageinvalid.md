@@ -19,7 +19,7 @@ Indicates that the message is invalid.
 static var messageInvalid: WKWebExtension.MessagePort.Error.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The message must be an object that is JSON-serializable.
 

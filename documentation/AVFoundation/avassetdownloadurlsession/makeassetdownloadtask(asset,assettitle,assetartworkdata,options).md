@@ -25,11 +25,11 @@ func makeAssetDownloadTask(asset URLAsset: AVURLAsset, assetTitle title: String,
 - (AVAssetDownloadTask *) assetDownloadTaskWithURLAsset:(AVURLAsset *) URLAsset assetTitle:(NSString *) title assetArtworkData:(NSData *) artworkData options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new download task.
 
-#### Discussion
+## Discussion
 
 This method may return `nil` if you call it on an invalidated session.
 

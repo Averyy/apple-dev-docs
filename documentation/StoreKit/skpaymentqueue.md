@@ -33,7 +33,7 @@ class SKPaymentQueue
 - [Testing transaction observer code](./testing-transaction-observer-code.md)
 - [Unlocking purchased content](./unlocking-purchased-content.md)
 
-#### Overview
+## Overview
 
 The payment queue communicates with the App Store and presents a user interface so that the user can authorize payment. The contents of the queue are persistent between launches of your app.
 

@@ -12,7 +12,7 @@ virtual void powerChangeDone(
  unsigned longstateNumber );
 ```
 
-#### Overview
+## Overview
 
 Power management uses this method to inform a driver when a power change is completely done, when all interested parties have acknowledged the powerStateDidChangeTo call. The default implementation of this method is null; the method is meant to be overridden by subclassed power managed drivers. A driver should use this method to find out if a power change it initiated is complete.
 

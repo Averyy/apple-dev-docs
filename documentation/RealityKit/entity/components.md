@@ -21,7 +21,7 @@ All the components that an entity stores.
 @preconcurrency var components: Entity.ComponentSet { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can only store one component of a given type on an entity.
 

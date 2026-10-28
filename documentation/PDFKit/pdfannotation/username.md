@@ -24,7 +24,7 @@ var userName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * userName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the user who created the annotation, or NULL if no user name is set.
 

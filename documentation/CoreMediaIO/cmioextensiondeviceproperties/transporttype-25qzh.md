@@ -16,7 +16,7 @@ The transport type of the device, such as USB or HDMI.
 @property (atomic, strong, nullable) NSNumber * transportType;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an IOKit framework transport type constant (`kIOAudioDeviceTransportType`).
 

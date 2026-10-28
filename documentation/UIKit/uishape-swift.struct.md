@@ -18,7 +18,7 @@ An abstract representation of a shape.
 struct UIShape
 ```
 
-#### Overview
+## Overview
 
 A [`UIShape`](./uishape-swift.struct.md) can represent different types of shapes, including:
 

@@ -23,7 +23,7 @@ init(_ localizedTitle: String, symbolName: String, numberOfIndexes: Int)
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName numberOfIndexes:(NSInteger) numberOfIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 Create a picker with this initializer when the control’s values don’t require titles.
 

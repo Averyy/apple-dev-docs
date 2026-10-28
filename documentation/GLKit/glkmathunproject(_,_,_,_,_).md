@@ -22,7 +22,7 @@ func GLKMathUnproject(_ window: GLKVector3, _ model: GLKMatrix4, _ projection: G
 GLKVector3 GLKMathUnproject(GLKVector3 window, GLKMatrix4 model, GLKMatrix4 projection, int *viewport, bool *success);
 ```
 
-#### Return Value
+## Return Value
 
 The projected point in object space.
 

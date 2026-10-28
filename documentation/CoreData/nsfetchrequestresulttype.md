@@ -25,7 +25,7 @@ struct NSFetchRequestResultType
 enum NSFetchRequestResultType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`resultType`](./nsfetchrequest/resulttype.md).
 

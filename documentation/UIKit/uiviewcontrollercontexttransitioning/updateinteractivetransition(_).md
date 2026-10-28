@@ -24,7 +24,7 @@ func updateInteractiveTransition(_ percentComplete: CGFloat)
 - (void) updateInteractiveTransition:(CGFloat) percentComplete;
 ```
 
-#### Discussion
+## Discussion
 
 While tracking user events, gesture recognizers or your interactive animator objects should call this method regularly to update the progress toward completing the transition. If, during tracking, the interactions cross a threshold that you consider signifies the completion or cancellation of the transition, stop tracking events and call the [`finishInteractiveTransition()`](./finishinteractivetransition%28%29.md) or [`cancelInteractiveTransition()`](./cancelinteractivetransition%28%29.md) method.
 

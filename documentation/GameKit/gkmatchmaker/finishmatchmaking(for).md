@@ -28,7 +28,7 @@ func finishMatchmaking(for match: GKMatch)
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 If you need to call the [`addPlayers(to:matchRequest:completionHandler:)`](./addplayers%28to,matchrequest,completionhandler%29.md) method to fill the slots in an existing match, call the [`finishMatchmaking(for:)`](./finishmatchmaking%28for%29.md) method when you have enough players and before you begin the match.
 

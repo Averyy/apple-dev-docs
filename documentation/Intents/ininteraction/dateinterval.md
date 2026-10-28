@@ -33,7 +33,7 @@ var dateInterval: DateInterval? { get set }
 @property (atomic, copy, nullable) NSDateInterval * dateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to reflect time-related information for the interaction. For example, you could use this property to reflect the duration of a phone call or the timestamp of a message. At initialization time, the date portion is set to the current time and the duration is set to `0`.
 

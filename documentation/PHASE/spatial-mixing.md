@@ -5,7 +5,7 @@
 
 Define environmental characteristics that determine how sound plays in your app’s 3D soundscape.
 
-#### Overview
+## Overview
 
 Spatial mixing refers to the process by which PHASE emits one or more simultaneous sounds in 3D space and layers in optional environmental effects. For a walkthrough that demonstrates spatial mixing, see [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md).
 

@@ -20,7 +20,7 @@ var attributedString: NSAttributedString { get }
 @property (copy, readonly) NSAttributedString * attributedString;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSWritingToolsCoordinator.Context`](../context.md) object initializes the value of this property at creation time and doesn’t change it during the course of an operation. Instead, it suggests changes to the text in the indicated range and reports those changes to your [`NSWritingToolsCoordinator.Delegate`](../delegate-swift.protocol.md) object. Use the methods of your delegate object to integrate those changes back into your view’s text storage.
 

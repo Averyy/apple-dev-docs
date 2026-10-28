@@ -26,11 +26,11 @@ func assetPack(withID id: String) async throws -> AssetPack
 
 - [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 The asset pack.
 
-#### Discussion
+## Discussion
 
 This method may attempt to get the latest asset-pack information from the server if the system hasn’t cached that information locally. To force the system to get the latest information from the server unconditionally, call [`checkForUpdates()`](./checkforupdates%28%29.md).
 

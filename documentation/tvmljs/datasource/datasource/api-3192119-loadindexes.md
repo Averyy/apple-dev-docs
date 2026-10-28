@@ -15,7 +15,7 @@ An event type that tells the data source to load its indexes.
 attribute  loadindexes;
 ```
 
-#### Discussion
+## Discussion
 
 This event gets triggered when TVMLKit recognizes that the `DataSource` needs to load more indexes. TVMLKit invokes the event when there are visible cells onscreen consisting of incomplete data segments. For example, when the `DataSource` is set up to support lazy loading of data and it begins to request uninitialized objects, this event is triggered.
 

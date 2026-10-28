@@ -21,7 +21,7 @@ Creates and returns an initialized URL request with specified URL, cache policy,
 + (instancetype) requestWithURL:(NSURL *) URL cachePolicy:(NSURLRequestCachePolicy) cachePolicy timeoutInterval:(NSTimeInterval) timeoutInterval;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized URL request.
 

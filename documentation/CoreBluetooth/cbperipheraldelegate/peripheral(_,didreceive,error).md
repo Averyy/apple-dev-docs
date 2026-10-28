@@ -19,7 +19,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didReceive results: CBChann
 - (void) peripheral:(CBPeripheral *) peripheral didReceiveChannelSoundingProcedureResults:(CBChannelSoundingProcedureResults *) results error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns the results of a channel sounding procedure.
 

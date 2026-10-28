@@ -25,7 +25,7 @@ var order: UnsafeMutablePointer<Int32>?
 int * order;
 ```
 
-#### Discussion
+## Discussion
 
 This property may be either `null` or a pointer to a permutation that reduces fill in the matrix that you’re factoring. The factor function encodes each element, `i`, as the `order[i]`-th position.
 

@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Mutable global and static variables that can be accessed from anywhere can cause data races in your program. Resolve this error by making the state immutable or protecting it with a global actor.
 

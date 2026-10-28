@@ -21,7 +21,7 @@ An AppEntity subtype for entities that only have a single instance.
 protocol UniqueAppEntity : AppEntity where Self.DefaultQuery : UniqueAppEntityQuery
 ```
 
-#### Overview
+## Overview
 
 If an entity type only ever has one value, use the `UniqueAppEntity` protocol and the related `UniqueAppEntityQuery`.  For example, app-global settings might be represented using an entity of this type.  The protocols will implement several required methods for you and allow the system to present the entity differently in some contexts.  For example, Shortcuts will not generate a “Find” action for that entity type.
 

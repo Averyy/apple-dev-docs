@@ -11,7 +11,7 @@ framework: "CareKit/CareKitUI"
 
 Manage and display patient care data on your app.
 
-#### Overview
+## Overview
 
 CareKitUI provides the views that you use to display patient care data. The views are open and extensible subclasses of https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/uikit/uiview. Properties within the views are public and give you full control over the content.
 

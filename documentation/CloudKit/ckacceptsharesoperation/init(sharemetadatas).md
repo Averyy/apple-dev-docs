@@ -25,7 +25,7 @@ convenience init(shareMetadatas: [CKShare.Metadata])
 - (instancetype) initWithShareMetadatas:(NSArray<CKShareMetadata *> *) shareMetadatas;
 ```
 
-#### Discussion
+## Discussion
 
 After initializing the operation, assign a handler to the [`acceptSharesCompletionBlock`](./acceptsharescompletionblock.md) property to process the results.
 

@@ -28,7 +28,7 @@ var supportArgumentBuffers: Bool { get set }
 
 - [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 The default value is  [`false`](../../Swift/false.md), which means that you can only encode the samplers you make with this descriptor as individual resources in the sampler state argument table.
 

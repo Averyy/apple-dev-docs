@@ -20,11 +20,11 @@ object ArticleDocument.componentStyles
 - [Enhancing Your Articles with Styles](../../AppleNews/enhancing-your-articles-with-styles.md)
 - [Defining a Component Style](../../AppleNews/defining-a-component-style.md)
 
-#### Discussion
+## Discussion
 
 `ArticleDocument.componentStyles` is an object containing the component style objects that components in your article can use. You provide each component style object as a key-value pair. In each pair, you create a key that’s meaningful to you. The value of each pair is a [`ComponentStyle`](../componentstyle.md) object.
 
-##### Example
+### Example
 
 ```json
 {

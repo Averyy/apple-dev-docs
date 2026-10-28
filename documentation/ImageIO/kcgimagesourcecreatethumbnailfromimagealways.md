@@ -25,7 +25,7 @@ let kCGImageSourceCreateThumbnailFromImageAlways: CFString
 extern CFStringRef const kCGImageSourceCreateThumbnailFromImageAlways;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 

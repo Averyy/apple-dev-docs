@@ -20,7 +20,7 @@ func start(_ sender: Any!)
 - (void) start:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu. It is equivalent to the [`startRendering()`](./startrendering%28%29.md) method.
 

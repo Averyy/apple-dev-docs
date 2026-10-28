@@ -20,7 +20,7 @@ A notification that the document began a find operation.
 static let PDFDocumentDidBeginFind: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The document posts this notification when the [`beginFindString(_:withOptions:)`](../../../PDFKit/pdfdocument/beginfindstring%28_,withoptions%29.md) or [`findString(_:withOptions:)`](../../../PDFKit/pdfdocument/findstring%28_,withoptions%29.md) method begins finding.
 

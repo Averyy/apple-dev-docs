@@ -20,7 +20,7 @@ Renewal options for auto-renewable subscriptions that you purchase in the testin
 enum SubscriptionRenewalBehavior
 ```
 
-#### Overview
+## Overview
 
 Use the subscription renewal behavior values when you use the [`purchaseDate`](../../../StoreKitTest/sktesttransaction/purchasedate.md) option to test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md).
 

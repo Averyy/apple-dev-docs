@@ -25,7 +25,7 @@ func CFRunLoopRemoveTimer(_ rl: CFRunLoop!, _ timer: CFRunLoopTimer!, _ mode: CF
 extern void CFRunLoopRemoveTimer(CFRunLoopRef rl, CFRunLoopTimerRef timer, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 If `rl` does not contain `timer` in `mode`, this function does nothing.
 

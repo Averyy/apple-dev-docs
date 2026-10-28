@@ -16,7 +16,7 @@ An assessment that communicates that a learner hasn't successfully completed a t
 case fail(hints: [String], solution: String?)
 ```
 
-#### Discussion
+## Discussion
 
 If no solution is provided, there must be at least one string in the `hints` array.
 

@@ -5,13 +5,13 @@
 
 Receive daily performance metrics and immediate diagnostic reports from real device usage.
 
-#### Overview
+## Overview
 
 MetricKit collects performance data from real devices running your app. It provides metric reports to your app once per day and diagnostic reports as events occur, giving you a picture of how your app performs in conditions you can’t easily reproduce during development. You can collect statistics like CPU usage, memory consumption, network activity, launch time, disk I/O, and more, all through a single API.
 
 When you use the [StateReporting](../StateReporting/StateReporting.md) framework to describe your app’s behavior, MetricKit can attribute metrics like hitch time or slow app launch to a particular feature, an app-configurable setting, or any other labeled states that you define. With performance data broken down by states, you have more evidence to make targeted, confident decisions for the next version of your app.
 
-#### Understand the reporting model
+## Understand the reporting model
 
 [`MetricManager`](./metricmanager.md) is the entry point for receiving metric data. Depending on what you need to measure, you create instances of [`MetricManager`](./metricmanager.md) that are scoped to a module, a feature, or the lifetime of your app. For each instance, you can observe two asynchronous sequences: [`metricReports`](./metricmanager/metricreports.md) for daily aggregated performance data and [`diagnosticReports`](./metricmanager/diagnosticreports.md) for event-based diagnostic reports. These reports conform to [`Codable`](../Swift/codable.md), so you can encode them for upload to a backend database or archive them locally.
 
@@ -21,7 +21,7 @@ A [`DiagnosticReport`](./diagnosticreport.md) contains discrete, event-based dat
 
 MetricKit collects metric data continuously and delivers a [`MetricReport`](./metricreport.md) about the previous 24 hours. The `MetricReport` is delivered, at most, once per day when conditions permit. The [`timeRange`](./metricreport/timerange.md) tells you the exact interval the report covers, and because each report reflects a full day’s worth of real usage, it’s more likely to encounter edge cases that are difficult to reproduce in a local test environment. MetricKit delivers each [`DiagnosticReport`](./diagnosticreport.md) immediately after the event occurs, so you can respond to crashes, hangs, and other diagnostic events without waiting for the daily metric report.
 
-#### Set up a metric manager
+## Set up a metric manager
 
 Create and store your `MetricManager` in a long-lived property so the subscription remains active:
 
@@ -73,7 +73,7 @@ MetricKit only surfaces stable metadata. You can also pass `volatileMetadata` to
 
 The system enforces limits on the number of unique states MetricKit aggregates in a single reporting period. When your app exceeds this limit, [`hasExceededStateLimit`](./metricreport/environment-swift.struct/hasexceededstatelimit.md) is `true` in the resulting report. Metrics for states beyond the limit appear in the full-day interval entry rather than in [`stateEntries`](./metricreport/stateentries.md). Check this flag when processing reports and design your reporting scheme to handle the case where some state entries may not appear. Keep property names and string values in your `@ReportableMetadata` types concise. The system enforces length constraints on both, and concise names reduce noise when analyzing performance data. Design states around distinct, stable user experiences - meaningful state definitions make performance data easier to interpret when you analyze reports.
 
-#### Observe metric reports
+## Observe metric reports
 
 Use `for await` to consume each [`MetricReport`](./metricreport.md) as it arrives. Each report provides two complementary views of your performance data: [`stateEntries`](./metricreport/stateentries.md) with metrics segmented by app state, and [`intervalEntries`](./metricreport/intervalentries.md) with metrics aggregated over time windows. Iterate both to capture the full picture:
 
@@ -125,7 +125,7 @@ Both tasks start immediately and run in parallel. The next iteration waits for b
 
 When you don’t register any state reporting domains, [`stateEntries`](./metricreport/stateentries.md) is empty and all performance data appears in the full-day interval entry, accessible through [`fullDayEntry`](../Swift/array/fulldayentry.md), with an empty [`states`](./metricreport/intervalentry/states.md) array.
 
-#### Observe diagnostic reports
+## Observe diagnostic reports
 
 [`diagnosticReports`](./metricmanager/diagnosticreports.md) delivers one [`DiagnosticReport`](./diagnosticreport.md) per event. Each report represents a single occurrence of a crash, hang, or exception:
 
@@ -150,7 +150,7 @@ A [`DiagnosticResult.crash(_:)`](./diagnosticresult/crash%28_%29.md) result carr
 
 The [`environment`](./diagnosticreport/environment-swift.property.md) property’s [`states`](./diagnosticreport/environment-swift.struct/states.md) array contains the StateReporting states active immediately before the event. This context helps you reproduce issues that only occur under specific app conditions.
 
-#### Capture custom metrics with signposts
+## Capture custom metrics with signposts
 
 Signposts let you measure the duration of specific operations you define in your app, such as network requests, database queries, image processing pipelines, or any other work you want to track in production. MetricKit aggregates these measurements and delivers them as [`MetricResult.signpostInterval(_:)`](./metricresult/signpostinterval%28_%29.md) values in your daily `MetricReport`.
 
@@ -183,7 +183,7 @@ case let .signpostInterval(metric):
 
 You can also use [`OSSignposter`](../os/ossignposter.md) with the handle from [`logHandle(category:)`](./metricmanager/loghandle%28category%29.md), but it doesn’t populate the [`SignpostIntervalMetric`](./signpostintervalmetric.md) measurement properties. Use [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md) to populate properties like CPU time, memory usage, and logical writes. To tag a signpost as an animation interval and populate [`hitchTimeRatio`](./signpostintervalmetric/hitchtimeratio.md), [`totalHitchTime`](./signpostintervalmetric/totalhitchtime.md), and [`totalAnimationTime`](./signpostintervalmetric/totalanimationtime.md), use [`mxSignpostAnimationIntervalBegin(dso:log:name:signpostID:_:_:)`](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md) instead.
 
-#### Measure extended launch
+## Measure extended launch
 
 Wrap launch-critical asynchronous work in [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md) to extend the MetricKit launch measurement. Standard launch metrics end at `applicationDidFinishLaunching`. Many apps also perform asynchronous work that forms part of the perceived launch experience, such as data bootstrapping, configuration fetching, or initial content loading. Tracking this work captures the full time users wait before the app is ready:
 

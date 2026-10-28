@@ -20,7 +20,7 @@ func accessibilityString(for range: NSRange) -> String?
 - (NSString *) accessibilityStringForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The substring specified by the given range.
 

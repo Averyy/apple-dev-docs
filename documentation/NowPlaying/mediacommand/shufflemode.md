@@ -21,7 +21,7 @@ The shuffle mode for media playback.
 enum ShuffleMode
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify how the player shuffles content during playback.
 

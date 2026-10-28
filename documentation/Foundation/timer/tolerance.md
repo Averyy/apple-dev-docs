@@ -25,7 +25,7 @@ var tolerance: TimeInterval { get set }
 @property NSTimeInterval tolerance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero, which means no additional tolerance is applied.
 

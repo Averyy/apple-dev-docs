@@ -21,11 +21,11 @@ func es_copy_message(_ msg: UnsafePointer<es_message_t>) -> UnsafeMutablePointer
 extern es_message_t *es_copy_message(const es_message_t *msg);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a copy of the original message.
 
-#### Discussion
+## Discussion
 
 After calling this function, the caller owns this memory and must eventually free it with [`es_free_message(_:)`](./es_free_message%28_%29.md) to avoid leaking memory.
 

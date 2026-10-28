@@ -22,7 +22,7 @@ Fetches and returns a developer token for Apple Music API.
 func developerToken(options: MusicTokenRequestOptions) async throws -> String
 ```
 
-#### Discussion
+## Discussion
 
 If you opt to create a custom implementation of the [`MusicDeveloperTokenProvider`](../musicdevelopertokenprovider.md) protocol, make sure to discard any cached developer token if the `options` parameter contains [`ignoreCache`](../musictokenrequestoptions/ignorecache.md).
 

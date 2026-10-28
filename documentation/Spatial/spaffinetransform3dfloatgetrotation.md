@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPAffineTransform3DFloatGetRotation(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A rotation structure that represents the transform’s rotation.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform’s rotation.
 

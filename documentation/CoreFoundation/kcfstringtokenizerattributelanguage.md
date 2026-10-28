@@ -25,7 +25,7 @@ var kCFStringTokenizerAttributeLanguage: CFOptionFlags { get }
 kCFStringTokenizerAttributeLanguage
 ```
 
-#### Discussion
+## Discussion
 
 Used with [`kCFStringTokenizerUnitSentence`](./kcfstringtokenizerunitsentence.md) or [`kCFStringTokenizerUnitParagraph`](./kcfstringtokenizerunitparagraph.md).
 

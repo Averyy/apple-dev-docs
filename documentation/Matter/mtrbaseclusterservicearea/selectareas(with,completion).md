@@ -29,7 +29,7 @@ func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams) async thro
 - (void) selectAreasWithParams:(MTRServiceAreaClusterSelectAreasParams *) params completion:(void (^)(MTRServiceAreaClusterSelectAreasResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to select a set of device areas, where the device is to operate.
 

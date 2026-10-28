@@ -15,7 +15,7 @@ Common transport types that transmit data to or from a HID device.
 enum HIDDeviceTransport
 ```
 
-#### Overview
+## Overview
 
 If a device declares an uncommon transport, the [`HIDDeviceTransport.unknown(_:)`](./hiddevicetransport/unknown%28_%29.md) case is used with the associated raw string value.
 

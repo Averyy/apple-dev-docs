@@ -14,7 +14,7 @@
 void (*TurnOffNotification)(IOFireWireLibIsochChannelRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

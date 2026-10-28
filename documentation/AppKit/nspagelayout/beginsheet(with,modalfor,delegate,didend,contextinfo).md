@@ -19,7 +19,7 @@ func beginSheet(with printInfo: NSPrintInfo, modalFor docWindow: NSWindow, deleg
 - (void) beginSheetWithPrintInfo:(NSPrintInfo *) printInfo modalForWindow:(NSWindow *) docWindow delegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `didEndSelector` argument must have the same signature as:
 

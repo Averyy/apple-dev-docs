@@ -27,7 +27,7 @@ var itemProvider: NSItemProvider { get }
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 - [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
-#### Discussion
+## Discussion
 
 The item provider conveys the data, or file, that the drag-and-drop activity shares between processes. The property is set when the [`UIDragItem`](../uidragitem.md) instance is created. For more information, see [`init(itemProvider:)`](./init%28itemprovider%29.md).
 

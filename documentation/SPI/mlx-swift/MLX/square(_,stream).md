@@ -21,7 +21,7 @@ func square(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`square(stream:)`](./mlxarray/square%28stream%29.md)

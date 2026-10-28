@@ -4,7 +4,7 @@
 
 Displays elements horizontally.
 
-#### Overview
+## Overview
 
 The `row` element provides the ability to place elements next to other elements horizontally. Elements are displayed left to right in the order they are listed inside of the `row` element. Here’s an example that places two buttons inside of a `row` element.
 
@@ -21,7 +21,7 @@ The `row` element provides the ability to place elements next to other elements 
 </row>
 ```
 
-##### Subelements of row
+### Subelements of row
 
 - [badge](./badge.md)
 - [button](./button.md)
@@ -30,7 +30,7 @@ The `row` element provides the ability to place elements next to other elements 
 - [subtitle](./subtitle.md)
 - [text](./text.md)
 
-##### Elements that Use row
+### Elements that Use row
 
 - [banner](./banner.md)
 - [descriptiveAlertTemplate](./descriptivealerttemplate.md)

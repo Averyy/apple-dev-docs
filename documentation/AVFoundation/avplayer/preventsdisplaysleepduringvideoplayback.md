@@ -24,7 +24,7 @@ var preventsDisplaySleepDuringVideoPlayback: Bool { get set }
 @property (nonatomic) BOOL preventsDisplaySleepDuringVideoPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md) in iOS, tvOS and Mac Catalyst apps, and [`false`](../../Swift/false.md) in macOS.
 

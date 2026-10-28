@@ -16,11 +16,11 @@ Sets the response buffer for the management ORB.
 IOReturn (*setResponseBuffer)(void *self, void *buf, UInt32 len);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a success.
 
-#### Discussion
+## Discussion
 
 Sets the response buffer for the management ORB. kFWSBP2QueryLogins returns a response to its query and needs to write it somewhere. This routine allows you to specify the location.
 

@@ -24,7 +24,7 @@ func wipe(_ resource: FSBlockDeviceResource) async throws
 - (void) wipeResource:(FSBlockDeviceResource *) resource completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method wraps the `wipefs` functionality from `libutil`. For more information, see the `man` page for `wipefs`.
 

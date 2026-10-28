@@ -20,7 +20,7 @@ string UserGroupType
 - `STANDARD`
 - `SMART`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

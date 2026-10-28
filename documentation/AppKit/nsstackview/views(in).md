@@ -19,11 +19,11 @@ func views(in gravity: NSStackView.Gravity) -> [NSView]
 - (NSArray<__kindof NSView *> *) viewsInGravity:(NSStackViewGravity) gravity;
 ```
 
-#### Return Value
+## Return Value
 
 The array of views in a specified gravity area.
 
-#### Discussion
+## Discussion
 
 The returned array contains all of the views in the specified gravity area of the stack view, regardless of whether they are attached. The index position of each view in the array matches the view ordering within the gravity area. A detached view’s index position is its gravity area position when attached.
 

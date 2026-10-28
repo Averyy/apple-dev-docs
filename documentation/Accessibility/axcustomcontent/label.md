@@ -25,7 +25,7 @@ var label: String { get }
 @property (nonatomic, copy, readonly) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Make the label succinct to work well with assistive technology. For example, `Orientation` is an appropriate name for photo information.
 

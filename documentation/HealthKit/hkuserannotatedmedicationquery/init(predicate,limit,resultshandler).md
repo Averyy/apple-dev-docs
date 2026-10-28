@@ -22,7 +22,7 @@ init(predicate: NSPredicate?, limit: Int, resultsHandler: @escaping (HKUserAnnot
 - (instancetype) initWithPredicate:(NSPredicate *) predicate limit:(NSUInteger) limit resultsHandler:(void (^)(HKUserAnnotatedMedicationQuery *query, HKUserAnnotatedMedication *userAnnotatedMedication, BOOL done, NSError *error)) resultsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a query that will retrieve HKUserAnnotatedMedications matching the given predicate and limit.
 

@@ -21,7 +21,7 @@ The seed representation of the private key.
 var seedRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The seed representation is 32 bytes long, and is the parameter for the `ML-DSA.KeyGen_internal` algorithm (Algorithm 16) of FIPS 204.
 

@@ -20,7 +20,7 @@ Specifies the dimensions of the cube texture.
 static func dimensions(faceSize: Int) -> TextureResource.DimensionsCube
 ```
 
-#### Discussion
+## Discussion
 
 The content specifies the number of mipmap levels.
 

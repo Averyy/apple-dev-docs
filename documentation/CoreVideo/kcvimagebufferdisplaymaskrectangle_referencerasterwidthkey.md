@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The `0,0` origin is the top-left corner. The raster width value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer. The value usually matches the width of the video or the output device.
 

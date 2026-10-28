@@ -17,7 +17,7 @@ Evaluate the block and convert MLX errors into Swift `throws` on block exit (asy
 func withError<R>(_ body: () async throws -> R) async throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 For example this will throw a Swift `Error`:
 
@@ -36,7 +36,7 @@ try await withError {
 
 Nested calls to `withError` produce scoped error collection.
 
-##### See Also
+### See Also
 
 - [`withError(_:)`](./witherror%28_%29-6g4wn.md)
 - [`withError(_:)`](./witherror%28_%29-7f0hv.md)

@@ -24,11 +24,11 @@ init!()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new, independent JavaScript virtual machine.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a virtual machine for use with more than one JavaScript context. By default, creating a [`JSContext`](../jscontext.md) object automatically creates an independent virtual machine—to share a virtual machine between contexts, obtain a [`JSVirtualMachine`](../jsvirtualmachine.md) instance and then create contexts using the [`init(virtualMachine:)`](../jscontext/init%28virtualmachine%29.md) initializer.
 

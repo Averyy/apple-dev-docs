@@ -24,7 +24,7 @@ var correlationType: HKCorrelationType { get }
 @property (readonly) HKCorrelationType * correlationType;
 ```
 
-#### Discussion
+## Discussion
 
 For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md).
 

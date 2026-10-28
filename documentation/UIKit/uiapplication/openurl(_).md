@@ -24,11 +24,11 @@ func openURL(_ url: URL) -> Bool
 - (BOOL) openURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the resource located by the URL was successfully opened; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The URL you pass to this method can identify a resource in the app that calls the method, or a resource to be handled by another app. If the resource is to be handled another app, invoking this method might cause the calling app to quit so the other can launch.
 

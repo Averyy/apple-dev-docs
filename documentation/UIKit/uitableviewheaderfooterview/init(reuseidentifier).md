@@ -23,11 +23,11 @@ init(reuseIdentifier: String?)
 - (instancetype) initWithReuseIdentifier:(NSString *) reuseIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md) object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Once set, you can’t change the reuse identifier for the returned view object.
 

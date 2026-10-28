@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage
 - (void) webView:(WKWebView *) webView runJavaScriptConfirmPanelWithMessage:(NSString *) message initiatedByFrame:(WKFrameInfo *) frame completionHandler:(void (^)(_Bool)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For user security, implementations of this method should call attention to the fact that a specific website controls the content in this panel. A simple formula for identifying the controlling website is `frame.request.URL.host`. The panel should have two buttons, typically OK and Cancel.
 

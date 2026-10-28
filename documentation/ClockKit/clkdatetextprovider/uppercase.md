@@ -21,7 +21,7 @@ var uppercase: Bool { get set }
 @property (nonatomic) BOOL uppercase;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`false`](../../Swift/false.md). Set it to [`true`](../../Foundation/nsexpression/true.md) if you want the text provider to produce uppercase text.
 

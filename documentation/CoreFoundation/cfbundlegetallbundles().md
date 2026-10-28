@@ -25,11 +25,11 @@ func CFBundleGetAllBundles() -> CFArray!
 extern CFArrayRefCFBundleGetAllBundles();
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing CFBundle objects for each open bundle in the application. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 This function is potentially expensive and not thread-safe. It’s best used for debugging or other diagnostics purposes rather than as part of the main execution path of production code.
 

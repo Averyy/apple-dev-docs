@@ -24,7 +24,7 @@ var name: String { get }
 @property (nonatomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Trigger names should be set by the user.
 

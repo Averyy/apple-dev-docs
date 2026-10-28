@@ -25,7 +25,7 @@ func draw(_ image: CIImage, at atPoint: CGPoint, from fromRect: CGRect)
 - (void) drawImage:(CIImage *) image atPoint:(CGPoint) atPoint fromRect:(CGRect) fromRect;
 ```
 
-#### Discussion
+## Discussion
 
 This method because it is ambiguous as to the units of the dimensions and won’t work as expected in a high-resolution environment which is why you should use `drawImage:inRect:fromRect:` instead.
 

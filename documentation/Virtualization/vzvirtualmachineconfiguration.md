@@ -24,7 +24,7 @@ class VZVirtualMachineConfiguration
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 Use a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object to configure the environment for a macOS or Linux VM. This configuration object contains information about the VM environment, including the devices that the VM exposes to the guest operating system. For example, use the configuration object to specify the network interfaces and storage devices that the operating system may access. For more information on the devices that macOS and Linux guests can support, see the Devices section on the [Virtualization](./Virtualization.md) framework page.
 

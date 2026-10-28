@@ -15,7 +15,7 @@ Creates a new coordinate span object with the specified latitude and longitude d
 constructor(latitudeDelta?: number, longitudeDelta?: number);
 ```
 
-#### Discussion
+## Discussion
 
 The latitude and longitude delta parameters need to be positive numbers. MapKit JS treats negative numbers as zero.
 

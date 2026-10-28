@@ -25,7 +25,7 @@ let kSecMatchIssuers: CFString
 extern CFStringRef const kSecMatchIssuers;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFArray`](../CoreFoundation/cfarray.md), where the array consists of X.500 names of type [`CFData`](../CoreFoundation/cfdata.md). If provided, returned certificates or identities are limited to those whose certificate chain contains one of the issuers provided in this list.
 

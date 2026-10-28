@@ -21,11 +21,11 @@ Creates a light from the specified Model I/O light object.
 + (instancetype) lightWithMDLLight:(MDLLight *) mdlLight;
 ```
 
-#### Return Value
+## Return Value
 
 A new light object.
 
-#### Discussion
+## Discussion
 
 The Model I/O framework provides universal support for import, export, description, and processing of several 3D asset file formats and related resources. (For details, see [Model I/O](../../ModelIO/ModelIO.md).) The [`MDLLight`](../../ModelIO/mdllight.md) class is a generic description of a light source in a scene, supporting a superset of the attributes described by the [`SCNLight`](../scnlight.md) class.
 

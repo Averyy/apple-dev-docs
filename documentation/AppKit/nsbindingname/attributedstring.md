@@ -19,7 +19,7 @@ static let attributedString: NSBindingName
 extern NSBindingName NSAttributedStringBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

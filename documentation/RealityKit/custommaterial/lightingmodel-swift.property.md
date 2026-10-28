@@ -23,7 +23,7 @@ var lightingModel: CustomMaterial.LightingModel { get }
 
 - [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
 
-#### Discussion
+## Discussion
 
 A custom material’s lighting model determines exactly how RealityKit uses the values set in your surface shader’s to render the entity.
 

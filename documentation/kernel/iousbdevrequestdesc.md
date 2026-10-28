@@ -15,7 +15,7 @@ typedef struct IOUSBDevRequestDesc {
 } IOUSBDevRequestDesc;
 ```
 
-#### Overview
+## Overview
 
 Parameter block for control requests, using a memory descriptor for the data to be transferred. Only available in the kernel.
 

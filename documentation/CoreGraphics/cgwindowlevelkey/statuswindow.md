@@ -18,7 +18,7 @@ case statusWindow
 kCGStatusWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for status windows.
 

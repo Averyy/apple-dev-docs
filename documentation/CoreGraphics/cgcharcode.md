@@ -20,7 +20,7 @@ typealias CGCharCode = UInt16
 typedef uint16_t CGCharCode;
 ```
 
-#### Discussion
+## Discussion
 
 This data type represents a 16-bit character code. Values of this type may or may not correspond to UTF-16 character codes. See the function [`CGPostKeyboardEvent(_:_:_:)`](./cgpostkeyboardevent%28_,_,_%29.md).
 

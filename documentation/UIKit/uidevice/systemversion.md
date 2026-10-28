@@ -23,7 +23,7 @@ var systemVersion: String { get }
 @property (nonatomic, strong, readonly) NSString * systemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 An example of the system version is @“1.2”.
 

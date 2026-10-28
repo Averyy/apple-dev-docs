@@ -19,7 +19,7 @@ class NSTableHeaderView
 @interface NSTableHeaderView : NSView
 ```
 
-#### Overview
+## Overview
 
 [`NSTableHeaderView`](./nstableheaderview.md) uses [`NSTableHeaderCell`](./nstableheadercell.md) to implement its user interface.
 

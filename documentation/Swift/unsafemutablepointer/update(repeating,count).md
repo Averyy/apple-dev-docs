@@ -21,7 +21,7 @@ Update this pointer’s initialized memory with the specified number of consecut
 func update(repeating repeatedValue: Pointee, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `count` instances of the pointer’s `Pointee` type must be initialized or `Pointee` must be a trivial type. After calling `update(repeating:count:)`, the region is initialized.
 

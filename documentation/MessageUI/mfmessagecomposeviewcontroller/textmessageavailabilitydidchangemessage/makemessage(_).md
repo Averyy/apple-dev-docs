@@ -18,7 +18,7 @@ Transform a legacy Notification into a type-safe Message
 static func makeMessage(_ notification: Notification) -> MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage?
 ```
 
-#### Return Value
+## Return Value
 
 A Message if the notification contains valid data, nil otherwise
 

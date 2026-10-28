@@ -25,7 +25,7 @@ var tableTags: CFArray? { get }
 extern CFArrayRefCGFontCopyTableTags(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in the returned array is a four-byte value that represents a single TrueType or OpenType font table tag. To obtain a tag at index `k` in a manner that is appropriate for 32-bit and 64-bit architectures, you need to use code similar to the following:
 

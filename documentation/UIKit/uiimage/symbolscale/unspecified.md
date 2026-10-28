@@ -24,7 +24,7 @@ case unspecified
 UIImageSymbolScaleUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 When you specify this value, the image inherits the scale value from its current environment.
 

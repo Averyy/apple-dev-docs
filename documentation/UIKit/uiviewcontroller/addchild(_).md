@@ -27,7 +27,7 @@ func addChild(_ childController: UIViewController)
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 This method creates a parent-child relationship between the current view controller and the object in the `childController` parameter. This relationship is necessary when embedding the child view controller’s view into the current view controller’s content. If the new child view controller is already the child of a container view controller, it is removed from that container before being added.
 

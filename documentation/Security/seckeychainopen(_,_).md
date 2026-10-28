@@ -21,11 +21,11 @@ func SecKeychainOpen(_ pathName: UnsafePointer<CChar>, _ keychain: UnsafeMutable
 OSStatus SecKeychainOpen(const char *pathName, SecKeychainRef*keychain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this function to retrieve a pointer to a keychain object given the path of the keychain. You don’t need to close the keychain, but do release the memory that the pointer occupies when you are finished with it.
 

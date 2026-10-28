@@ -21,7 +21,7 @@ Creates a new tool-call expectations evaluator with a custom language model for 
 init(allPass: Metric, percentagePass: Metric, argumentMatchModel: any LanguageModel)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let allPassMetric = Metric("Tools All Pass")

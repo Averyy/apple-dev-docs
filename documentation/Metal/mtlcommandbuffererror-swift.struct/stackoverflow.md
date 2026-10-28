@@ -20,7 +20,7 @@ An error code that indicates the GPU terminated the command buffer because a ker
 static var stackOverflow: MTLCommandBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can set the largest number of stack frames your pipelines by configuring these properties:
 

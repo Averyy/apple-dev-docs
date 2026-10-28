@@ -19,7 +19,7 @@ var showsAdditionalContentIndicators: Bool { get set }
 @property BOOL showsAdditionalContentIndicators;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the scrubber uses a fade effect to indicate that there is additional content the user can scroll to. The default value is [`false`](../../Swift/false.md).
 

@@ -17,7 +17,7 @@ Errors that can occur during a room-capture session.
 enum CaptureError
 ```
 
-#### Overview
+## Overview
 
 The `error` argument of a room-capture session delgate’s  [`captureSession(_:didEndWith:error:)`](../roomcapturesessiondelegate/capturesession%28_,didendwith,error%29.md) function is of this type.
 

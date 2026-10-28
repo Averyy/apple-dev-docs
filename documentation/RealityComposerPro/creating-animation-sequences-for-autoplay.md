@@ -5,7 +5,7 @@
 
 Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
 
-#### Overview
+## Overview
 
 Building on the Root Entity rule from [Building multi-track animation sequences](./building-multi-track-animation-sequences.md), this article covers wiring a finished Sequence for auto-play. That rule governs how the Sequence, its tracks, and the Animation Library Component relate to each other throughout this article. A Sequence only appears in an entity’s Animation Library Component “available clips” list when the Sequence’s Root Entity is that same entity, or its prototype. Unless the Sequence is rooted where its Animation Library Component expects to find it, the tracks and actions you author at runtime go to waste. The Animation Library Component has to live on the entity the Sequence is rooted at — not on a parent, not on a child, not on some other entity that happens to reference the same assets.
 
@@ -15,7 +15,7 @@ The failure mode is quiet rather than loud. If you put the Animation Library Com
 
 There are exactly two fixes. Either move the Animation Library Component onto the entity that is the Sequence’s actual Root Entity, or leave the component where it is and recreate the Sequence with its Root Entity set correctly to match. Which fix makes sense depends on which side you set up incorrectly. Either way, you must change one side to match the other.
 
-#### Wire a sequence for auto-play
+## Wire a sequence for auto-play
 
 With the Root Entity rule satisfied, wiring auto-play is a short sequence of steps in the Animation Library Component’s own Inspector panel. Click the Add Animation Entry button — the plus icon at the bottom of the component — to create a new entry, which starts out with the placeholder name “Empty.”
 

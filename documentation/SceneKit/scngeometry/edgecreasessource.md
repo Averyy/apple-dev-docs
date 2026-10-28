@@ -25,7 +25,7 @@ var edgeCreasesSource: SCNGeometrySource? { get set }
 @property (nonatomic, retain, nullable) SCNGeometrySource * edgeCreasesSource;
 ```
 
-#### Discussion
+## Discussion
 
 This geometry source’s [`semantic`](../scngeometrysource/semantic-swift.property.md) value must be [`edgeCrease`](../scngeometrysource/semantic-swift.struct/edgecrease.md). Its data is an array of scalar values (that is, the source’s [`componentsPerVector`](../scngeometrysource/componentspervector.md) value is `1`). The value at an index in the geometry source determines the smoothness or sharpness of the edge identified by the primitive at the corresponding index in the [`edgeCreasesElement`](./edgecreaseselement.md) geometry element: a value of `0.0` specifies a completely smoothed edge, and a value of `10.0` or greater specifies an infinitely sharp edge.
 

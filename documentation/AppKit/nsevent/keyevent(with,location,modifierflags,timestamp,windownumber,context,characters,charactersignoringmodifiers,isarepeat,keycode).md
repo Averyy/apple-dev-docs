@@ -19,7 +19,7 @@ class func keyEvent(with type: NSEvent.EventType, location: NSPoint, modifierFla
 + (NSEvent *) keyEventWithType:(NSEventType) type location:(NSPoint) location modifierFlags:(NSEventModifierFlags) flags timestamp:(NSTimeInterval) time windowNumber:(NSInteger) wNum context:(NSGraphicsContext *) unusedPassNil characters:(NSString *) keys charactersIgnoringModifiers:(NSString *) ukeys isARepeat:(BOOL) flag keyCode:(unsigned short) code;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSEvent` instance or `nil` if the instance could not be created.
 

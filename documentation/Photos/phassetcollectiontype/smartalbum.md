@@ -24,7 +24,7 @@ case smartAlbum
 PHAssetCollectionTypeSmartAlbum
 ```
 
-#### Discussion
+## Discussion
 
 The Photos app displays built-in smart albums to group certain kinds of related assets (see [`PHAssetCollectionSubtype`](../phassetcollectionsubtype.md)).
 

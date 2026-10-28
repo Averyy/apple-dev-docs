@@ -20,7 +20,7 @@ Indicates that a texture contains color data to interpret in a specific color sp
 static func color(_ colorSpace: TextureResource.Format.ColorSpace, pixelFormat: MTLPixelFormat) -> TextureResource.Format
 ```
 
-#### Discussion
+## Discussion
 
 The created texture uses the [`TextureResource.Semantic.color`](../semantic-swift.enum/color.md) or [`TextureResource.Semantic.hdrColor`](../semantic-swift.enum/hdrcolor.md) semantic.
 

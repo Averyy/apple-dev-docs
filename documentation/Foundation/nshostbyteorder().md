@@ -25,7 +25,7 @@ func NSHostByteOrder() -> Int
 static long NSHostByteOrder();
 ```
 
-#### Return Value
+## Return Value
 
 The endian format, either [`NS_LittleEndian`](./ns_littleendian.md) or [`NS_BigEndian`](./ns_bigendian.md).
 

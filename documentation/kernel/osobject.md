@@ -15,7 +15,7 @@ OSObject is the concrete root class of the Libkern and I/O Kit C++ class hierarc
 class OSObject : OSMetaClassBase
 ```
 
-#### Overview
+## Overview
 
 OSObject defines the minimal functionality required of Libkern and I/O Kit C++ classes: tie-in to the run-time type information facility, the dynamic allocation/initialization paradigm, and reference counting. While kernel extensions are free to use their own C++ classes internally, any interaction they have with Libkern or the I/O Kit will require classes ultimately derived from OSObject.
 

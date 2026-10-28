@@ -25,7 +25,7 @@ var playbackType: String? { get }
 @property (nonatomic, readonly, nullable) NSString * playbackType;
 ```
 
-#### Discussion
+## Discussion
 
 The playback type can be live, VOD, or from a file. If `nil` is returned the playback type is unknown.
 

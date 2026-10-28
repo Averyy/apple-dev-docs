@@ -23,7 +23,7 @@ weak var delegate: (any UITextViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITextViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A text view delegate responds to editing-related messages from the text view. You can use the delegate to track changes to the text itself and to the current selection.
 

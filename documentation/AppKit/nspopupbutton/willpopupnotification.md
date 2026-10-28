@@ -19,7 +19,7 @@ class let willPopUpNotification: NSNotification.Name
 extern NSNotificationName NSPopUpButtonWillPopUpNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the selected `NSPopUpButton` object. This notification does not contain a `userInfo` dictionary.
 

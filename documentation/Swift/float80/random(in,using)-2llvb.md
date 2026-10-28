@@ -17,11 +17,11 @@ static func random<T>(in range: ClosedRange<Self>, using generator: inout T) -> 
 
 Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
-#### Return Value
+## Return Value
 
 A random value within the bounds of `range`.
 
-#### Discussion
+## Discussion
 
 Use this method to generate a floating-point value within a specific range when you are using a custom random number generator. This example creates three new values in the range `10.0 ... 20.0`.
 

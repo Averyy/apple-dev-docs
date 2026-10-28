@@ -20,7 +20,7 @@ Creates a call record with the details about the call.
 - (instancetype) initWithIdentifier:(NSString *) identifier dateCreated:(NSDate *) dateCreated callRecordType:(INCallRecordType) callRecordType callCapability:(INCallCapability) callCapability callDuration:(NSNumber *) callDuration unseen:(NSNumber *) unseen participants:(NSArray<INPerson *> *) participants numberOfCalls:(NSNumber *) numberOfCalls isCallerIdBlocked:(NSNumber *) isCallerIdBlocked;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INCallRecord`](../incallrecord.md) object or `nil` if the object could not be initialized.
 

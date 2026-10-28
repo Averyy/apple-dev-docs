@@ -23,7 +23,7 @@ Returns a new common activation function parameters structure that uses the spec
 init(function: BNNSActivationFunction, alpha: Float = .nan, beta: Float = .nan)
 ```
 
-#### Return Value
+## Return Value
 
 A new common activation function parameters structure.
 

@@ -24,7 +24,7 @@ nonisolated func strokeBorder<S>(_ content: S = .foreground, lineWidth: CGFloat 
 
 Available when `Content` conforms to `InsettableShape`.
 
-#### Discussion
+## Discussion
 
 This is equivalent to insetting `self` by `lineWidth / 2` and stroking the resulting shape with `lineWidth` as the line-width.
 

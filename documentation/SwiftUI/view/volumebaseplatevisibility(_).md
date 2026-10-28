@@ -16,7 +16,7 @@ nonisolated
 func volumeBaseplateVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The baseplate is a semi-transparent view that appears on the ‘floor’ of a volume.
 

@@ -21,7 +21,7 @@ Creates a string corresponding to the given collection of Unicode scalars.
 init(_ unicodeScalars: String.UnicodeScalarView)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create a new string from a slice of another string’s `unicodeScalars` view.
 

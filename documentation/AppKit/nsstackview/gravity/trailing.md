@@ -19,7 +19,7 @@ static var trailing: NSStackView.Gravity { get }
 NSStackViewGravityTrailing
 ```
 
-#### Discussion
+## Discussion
 
 For a left to right layout direction, the trailing gravity area is on the right. Use only when the value of the [`orientation`](../orientation.md) property is [`NSUserInterfaceLayoutOrientation.horizontal`](../../nsuserinterfacelayoutorientation/horizontal.md).
 

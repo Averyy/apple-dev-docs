@@ -24,7 +24,7 @@ var verificationToken: String? { get set }
 @property (nonatomic, copy, nullable) NSString * verificationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Account providers use this token to verify the identity of the requesting app.
 

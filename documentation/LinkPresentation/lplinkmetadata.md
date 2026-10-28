@@ -25,7 +25,7 @@ class LPLinkMetadata
 @interface LPLinkMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`LPLinkMetadata`](./lplinkmetadata.md) to store the metadata about a URL, including its title, icon, images and video.
 
@@ -33,7 +33,7 @@ Fetch metadata using [`LPMetadataProvider`](./lpmetadataprovider.md). For remote
 
 For local file URLs, the [Quick Look Thumbnailing](../QuickLookThumbnailing/QuickLookThumbnailing.md) API retrieves a representative thumbnail for the file, if possible.
 
-#### Provide custom metadata
+## Provide custom metadata
 
 Say your app already has a database of links, with titles and images that weren’t fetched by [`LPMetadataProvider`](./lpmetadataprovider.md). You don’t have to fetch new metadata from the internet in order to accelerate the share sheet or to present a rich link. Instead, you can fill in the fields of [`LPLinkMetadata`](./lplinkmetadata.md) yourself.
 
@@ -51,7 +51,7 @@ func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMe
 }
 ```
 
-#### Accelerate the share sheet preview
+## Accelerate the share sheet preview
 
 For existing apps that share URLs, the share sheet automatically presents a preview of the link. The preview first shows a placeholder link icon alongside the base URL while fetching the link’s metadata over the network. The preview updates once the link’s icon and title become available.
 

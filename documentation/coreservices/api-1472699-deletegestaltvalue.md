@@ -15,11 +15,11 @@ Deletes a `Gestalt` selector code so that it is no longer recognized by `Gestalt
 OSErr DeleteGestaltValue(OSType selector);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 After calling this function, subsequent query or replacement calls for the selector code will fail as if the selector had never been installed. 
 

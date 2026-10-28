@@ -43,7 +43,7 @@ CFDataRefSecCertificateCopySerialNumber(SecCertificateRef certificate);
 CFDataRefSecCertificateCopySerialNumber(SecCertificateRef certificate, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A data instance containing a DER-encoded integer for the certificate’s serial number (without the tag and length fields) or `nil` if an error occurred. In Objective-C, free this object with a call to [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it.
 

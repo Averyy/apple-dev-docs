@@ -21,7 +21,7 @@ The wrapped value of this instance, unwrapped without checking whether the insta
 var unsafelyUnwrapped: Wrapped { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `unsafelyUnwrapped` property provides the same value as the forced unwrap operator (postfix `!`). However, in optimized builds (`-O`), no check is performed to ensure that the current instance actually has a value. Accessing this property in the case of a `nil` value is a serious programming error and could lead to undefined behavior or a runtime error.
 

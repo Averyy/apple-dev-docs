@@ -23,7 +23,7 @@ class MLCMultiheadAttentionLayer
 @interface MLCMultiheadAttentionLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 The dimensions of projections are as follows:
 

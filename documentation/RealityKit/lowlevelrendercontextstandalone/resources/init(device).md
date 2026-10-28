@@ -15,11 +15,11 @@ Asynchronously prepare resources for the given device.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(device: any MTLDevice) async throws
+nonisolated(nonsending)
+init(device: any MTLDevice) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if resources preparation fails.
 

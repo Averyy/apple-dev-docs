@@ -32,7 +32,7 @@ var mediaIdentifier: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * mediaIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only populated when your app is the currently playing app. It’s only present for currently playing reference items.
 

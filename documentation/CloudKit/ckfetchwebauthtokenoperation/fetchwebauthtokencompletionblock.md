@@ -27,7 +27,7 @@ var fetchWebAuthTokenCompletionBlock: ((String?, (any Error)?) -> Void)? { get s
 @property (nonatomic, copy, nullable) void (^fetchWebAuthTokenCompletionBlock)(NSString *webAuthToken, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

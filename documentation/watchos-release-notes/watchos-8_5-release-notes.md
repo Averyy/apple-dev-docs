@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 8.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 8.5. The SDK comes bundled with Xcode 13.3.1. For information on the compatibility requirements for Xcode 13.3.1, see [Xcode 13.3.1 Release Notes](../Xcode-Release-Notes/xcode-13_3_1-release-notes.md).
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Developers are able to express the preference for payment networks in [`PKPaymentRequest`](../PassKit/pkpaymentrequest.md). Network preference is determined by the order of [`supportedNetworks`](../PassKit/pkpaymentrequest/supportednetworks.md). This won’t override the user’s default card selection, but if the card is multi-SSD, then the network preference order determines which SSD is selected. (80827905)
 
-##### libc++
+### libc++
 
-###### New Features
+#### New Features
 
 - The following new C++20 and C++23 features are now implemented:
 
@@ -28,7 +28,7 @@ The watchOS 8.5 SDK provides support to develop watchOS apps for Apple Watch dev
   - A `.contains()` method for associative containers.
   - Added `std::bind_front()`. (88131816)
 
-###### Deprecations
+#### Deprecations
 
 - Some extensions in `std::tuple` were removed to fix bugs caused by those extensions:
 
@@ -36,15 +36,15 @@ The watchOS 8.5 SDK provides support to develop watchOS apps for Apple Watch dev
   - A tuple can no longer be constructed from an array.
   - The `std::result_of` and `std::is_literal_type` type traits are no longer available in C++20 mode, as specified in the Standard.
 
-##### Siri
+### Siri
 
-###### Known Issues
+#### Known Issues
 
 - Siri may not properly recognize the user’s speech on Apple Watch Series 3. (86107552)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [`SKTestSession`](../StoreKitTest/sktestsession.md) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
 

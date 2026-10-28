@@ -25,7 +25,7 @@ func xpc_connection_activate(_ connection: xpc_connection_t)
 extern void xpc_connection_activate(xpc_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 Connections start in an inactive state, so you must call [`xpc_connection_activate(_:)`](./xpc_connection_activate%28_%29.md) on a connection before it will send or receive any messages.
 

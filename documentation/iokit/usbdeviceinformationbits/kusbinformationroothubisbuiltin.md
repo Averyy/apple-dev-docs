@@ -14,7 +14,7 @@
 kUSBInformationRootHubisBuiltIn = 10
 ```
 
-#### Discussion
+## Discussion
 
 If this is a root hub simulation and it's built into the enclosure, this bit is set. If it's on an expansion card, it will be cleared
 

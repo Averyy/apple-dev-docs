@@ -21,7 +21,7 @@ Provides a filename to use if the receiver chooses to write the item to disk.
 func suggestedFileName(_ fileName: String) -> some TransferRepresentation<Self.Item>
 ```
 
-#### Discussion
+## Discussion
 
 Any transfer representation can be written to disk.
 

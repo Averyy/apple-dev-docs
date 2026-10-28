@@ -25,7 +25,7 @@ class AVAudioApplication
 @interface AVAudioApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 Access the shared audio application instance to control app-level audio operations, such as requesting microphone permission and controlling audio input muting.
 

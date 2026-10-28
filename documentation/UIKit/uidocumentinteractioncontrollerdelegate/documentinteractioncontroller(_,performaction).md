@@ -24,11 +24,11 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 - (BOOL) documentInteractionController:(UIDocumentInteractionController *) controller performAction:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the action was performed successfully or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 The supported `action` selectors for this method are `copy:` and `print:`. (The `print:` selector is available in iOS 4.2 and later. Printing is supported only on devices that support multitasking.)
 

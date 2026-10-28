@@ -22,7 +22,7 @@ var departureDate: Date { get }
 @property (nonatomic, copy, readonly) NSDate * departureDate;
 ```
 
-#### Discussion
+## Discussion
 
 When the visit object does not include departure information, this property is set to the date returned by the [`distantFuture`](../../Foundation/nsdate/distantfuture.md) method of [`NSDate`](../../Foundation/nsdate.md).
 

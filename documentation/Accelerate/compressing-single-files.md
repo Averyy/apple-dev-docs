@@ -5,13 +5,13 @@
 
 Compress a single file and store the result on the file system.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to compress a single-source file, and write the compressed data to a file.
 
 The code below compresses a file named `myFile.pdf` using the [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md) algorithm, and stores the result in a file named `myFile.pdf.lzfse`.
 
-##### Create the file stream to read the source file
+### Create the file stream to read the source file
 
 The [`ArchiveByteStream`](../AppleArchive/archivebytestream.md) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create a byte stream that reads the source file:
 
@@ -30,7 +30,7 @@ defer {
 }
 ```
 
-##### Create the file stream to write the compressed file
+### Create the file stream to write the compressed file
 
 You also use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) mode:
 
@@ -49,7 +49,7 @@ defer {
 }
 ```
 
-##### Create the compression stream
+### Create the compression stream
 
 Create the compression stream, and specify the compression algorithm as [`lzfse`](../AppleArchive/archivecompression/lzfse.md). Specify the file-writing stream as the stream that receives the compressed data:
 
@@ -64,7 +64,7 @@ defer {
 }
 ```
 
-##### Compress the source file
+### Compress the source file
 
 Finally, call [`process(readingFrom:writingTo:)`](../AppleArchive/archivebytestream/process%28readingfrom,writingto%29.md) to send the output of the file-reading stream to the compression stream. In turn, the compression stream sends its output to the file-writing stream:
 

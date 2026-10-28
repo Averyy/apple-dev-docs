@@ -22,11 +22,11 @@ optional func navigationBarNSToolbarSection(_ navigationBar: UINavigationBar) ->
 - (UINavigationBarNSToolbarSection) navigationBarNSToolbarSection:(UINavigationBar *) navigationBar;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSToolbar`](../../AppKit/nstoolbar.md) section that determines which section to place the navigation bar in, and how to present the navigation bar in that section. Return [`UINavigationBar.NSToolbarSection.none`](../uinavigationbar/nstoolbarsection/none.md) to disable [`NSToolbar`](../../AppKit/nstoolbar.md) hosting, which is equivalent to setting [`preferredBehavioralStyle`](../uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](../uibehavioralstyle/pad.md).
 
-#### Discussion
+## Discussion
 
 The system calls this method to determine how to render your [`UINavigationBar`](../uinavigationbar.md) when you build your app with Mac Catalyst.
 

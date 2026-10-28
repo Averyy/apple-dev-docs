@@ -17,11 +17,11 @@ Recursively set the model’s training mode.
 func train(_ mode: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Training mode only applies to certain layers. For example [`Dropout`](../dropout.md) applies a random mask in training mode, but is the identity in evaluation mode.
 
-##### See Also
+### See Also
 
 - [`training`](./training.md)
 - [`didSetTrain(_:)`](./didsettrain%28_%29.md)

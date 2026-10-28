@@ -15,7 +15,7 @@ The style for an accessory widget group view.
 struct AccessoryWidgetGroupStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`accessoryWidgetGroupStyle(_:)`](../SwiftUI/view/accessorywidgetgroupstyle%28_%29.md) modifier to set the desired style on an [`AccessoryWidgetGroup`](./accessorywidgetgroup.md).
 

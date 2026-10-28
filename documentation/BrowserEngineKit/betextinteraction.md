@@ -28,7 +28,7 @@ class BETextInteraction
 - [Integrating custom browser text views with UIKit](./integrating-custom-browser-text-views-with-uikit.md)
 - [Supporting extended text interactions](./support-extended-text-interactions.md)
 
-#### Overview
+## Overview
 
 Add a `BETextInteraction` object to your browser text view’s [`textInputView`](./betextinput/textinputview.md). When your browser text view receives text-interaction actions, call the methods on this object to invoke the standard system behavior.
 

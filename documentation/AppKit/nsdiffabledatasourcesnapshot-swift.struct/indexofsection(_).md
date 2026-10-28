@@ -15,7 +15,7 @@ Returns the index of the section of the snapshot with the specified identifier.
 func indexOfSection(_ identifier: SectionIdentifierType) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The index of the section of the snapshot, or `nil` if the section with the specified identifier doesn’t exist in the snapshot. This index value is 0-based.
 

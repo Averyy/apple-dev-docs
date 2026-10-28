@@ -13,7 +13,7 @@
 kSBCModePageCaching_IC_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 IC Bit definition.
 

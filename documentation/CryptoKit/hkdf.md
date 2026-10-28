@@ -21,7 +21,7 @@ A standards-based implementation of an HMAC-based Key Derivation Function (HKDF)
 struct HKDF<H> where H : HashFunction
 ```
 
-#### Overview
+## Overview
 
 The key derivation functions allow you to derive one or more secrets of the size of your choice from a main key or passcode. The key derivation function is compliant with IETF RFC 5869. Use one of the `deriveKey` functions, such as [`deriveKey(inputKeyMaterial:outputByteCount:)`](./hkdf/derivekey%28inputkeymaterial,outputbytecount%29.md) or [`deriveKey(inputKeyMaterial:salt:info:outputByteCount:)`](./hkdf/derivekey%28inputkeymaterial,salt,info,outputbytecount%29.md), to derive a key from a main secret or passcode in a single function.
 

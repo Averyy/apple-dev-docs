@@ -24,7 +24,7 @@ Returns a Boolean value that indicates whether the system setting for Prefer Hor
 func AXPrefersHorizontalTextLayout() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](../Swift/false.md).
 

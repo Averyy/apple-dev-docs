@@ -16,7 +16,7 @@ A dictionary that contains messages that explain why your app is requesting iden
 - **Name**: `NSIdentityUsageDescriptionDictionary` (Privacy - Identity Usage Description Dictionary)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use this key when you have multiple scenarios for requesting identity information from a person. Provide a description string for each use case, and key each entry with a string that you define. For example, if your app needs age verification for one feature and identity verification for another, use a separate dictionary entry for each purpose. In each description string, describe the reason the feature requires identity information.
 

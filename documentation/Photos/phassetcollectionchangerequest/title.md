@@ -24,7 +24,7 @@ var title: String { get set }
 @property (nonatomic, strong, readwrite) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to change the asset collection’s title.
 

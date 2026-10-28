@@ -19,7 +19,7 @@ func backgroundColor() -> NSColor!
 - (NSColor *) backgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The background color of the annotation’s text field.
 

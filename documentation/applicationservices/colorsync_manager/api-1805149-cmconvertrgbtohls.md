@@ -15,11 +15,11 @@ CMError CMConvertRGBToHLS (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMConvertRGBToHLS` function converts one or more colors defined in the RGB color space to equivalent colors defined in the HLS color space. Both color spaces are device dependent.
 

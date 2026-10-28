@@ -18,7 +18,7 @@ A background placement behind the content of a [`NavigationSplitView`](../naviga
 static let navigationSplitView: ContainerBackgroundPlacement
 ```
 
-#### Discussion
+## Discussion
 
 This is visible behind columns that are made translucent using the `ContentBackgroundPlacement/navigation` placement. For expanded split views, this container background is also visible between the columns as the divider color.
 

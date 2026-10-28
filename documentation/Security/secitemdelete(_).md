@@ -31,11 +31,11 @@ OSStatus SecItemDelete(CFDictionaryRef query);
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The query dictionary for delete can’t contain [Item return result keys](./item-return-result-keys.md), because [`SecItemDelete(_:)`](./secitemdelete%28_%29.md) only returns a status.
 
@@ -45,7 +45,7 @@ By default, this function deletes all items matching the specified query. You ca
 - To delete an item identified by a persistent reference, specify the [`kSecMatchItemList`](./ksecmatchitemlist.md) search key with a persistent reference returned by using the [`kSecReturnPersistentRef`](./ksecreturnpersistentref.md) return type key to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) or [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) functions.
 - If more than one of these return keys is specified, the behavior is undefined.
 
-##### Performance considerations
+### Performance considerations
 
 `SecItemDelete` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemDelete` from a background dispatch queue or `async` function:
 

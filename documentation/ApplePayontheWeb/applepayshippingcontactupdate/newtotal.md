@@ -16,7 +16,7 @@ The new total that results from a change in the shipping contact.
 required ApplePayLineItem newTotal;
 ```
 
-#### Discussion
+## Discussion
 
 Recalculate the total for the payment, because it may change as a result of shipping contact changes.  The [`newTotal`](./newtotal.md) value is required.
 

@@ -12,7 +12,7 @@ void RejectSCSITasksCurrentlyQueued (
  void );
 ```
 
-#### Overview
+## Overview
 
 Internal method called to reject currently enqueued SCSITasks. This method is typically called in response to device termination.
 

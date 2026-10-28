@@ -25,7 +25,7 @@ func stroke(_ rect: CGRect)
 extern void CGContextStrokeRect(CGContextRef c, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 The line width and stroke color of the context’s graphics state are used to paint the path. The current path is cleared as a side effect of calling this function.
 

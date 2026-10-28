@@ -20,7 +20,7 @@ struct CGCaptureOptions
 enum CGCaptureOptions : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 For information about how these constants are used, see the functions [`CGDisplayCaptureWithOptions(_:_:)`](./cgdisplaycapturewithoptions%28_,_%29.md) and [`CGCaptureAllDisplaysWithOptions(_:)`](./cgcapturealldisplayswithoptions%28_%29.md).
 

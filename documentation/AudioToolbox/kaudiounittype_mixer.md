@@ -24,7 +24,7 @@ var kAudioUnitType_Mixer: UInt32 { get }
 kAudioUnitType_Mixer
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`kAudioUnitSubType_StereoMixer`](./kaudiounitsubtype_stereomixer.md) audio unit in macOS takes multiple mono or stereo inputs and produces a single stereo output.
 

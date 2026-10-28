@@ -24,7 +24,7 @@ var localizedDescription: String? { get set }
 @property (copy, nullable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This string is used as the display name of the VPN configuration in the system’s VPN settings UI. If this property is set to nil at the time that the configuration is created, it will be automatically set to the display name of the calling app.
 

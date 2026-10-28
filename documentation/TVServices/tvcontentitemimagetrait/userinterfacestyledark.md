@@ -19,7 +19,7 @@ static var userInterfaceStyleDark: TVContentItemImageTrait { get }
 TVContentItemImageTraitUserInterfaceStyleDark
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant, or the [`userInterfaceStyleLight`](./userinterfacestylelight.md) constant, but not both.
 

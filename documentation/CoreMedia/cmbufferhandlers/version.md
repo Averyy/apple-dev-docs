@@ -21,7 +21,7 @@ The version number.
 uintptr_t version;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be `1`.
 

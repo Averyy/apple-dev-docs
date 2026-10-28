@@ -25,7 +25,7 @@ typealias MIDICISessionDisconnectBlock = (MIDICISession, any Error) -> Void
 typedef void (^)(MIDICISession *, NSError *) MIDICISessionDisconnectBlock;
 ```
 
-#### Discussion
+## Discussion
 
 If the system calls this block, terminate the MIDI-CI session.
 

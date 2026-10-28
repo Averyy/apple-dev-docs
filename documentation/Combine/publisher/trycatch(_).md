@@ -21,11 +21,11 @@ Handles errors from an upstream publisher by either replacing it with another pu
 func tryCatch<P>(_ handler: @escaping (Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P> where P : Publisher, Self.Output == P.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher, or an error.
 
-#### Discussion
+## Discussion
 
 Use [`tryCatch(_:)`](./trycatch%28_%29.md) to decide how to handle from an upstream publisher by either replacing the publisher with a new publisher, or throwing a new error.
 

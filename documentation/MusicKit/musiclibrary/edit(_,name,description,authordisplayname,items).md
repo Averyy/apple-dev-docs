@@ -20,11 +20,11 @@ Edits a playlist that your app has created including items to rebuild the list o
 func edit<S, MusicPlaylistAddableType>(_ playlist: Playlist, name: String? = nil, description: String? = nil, authorDisplayName: String? = nil, items: S) async throws -> Playlist where S : Sequence, MusicPlaylistAddableType : MusicPlaylistAddable, MusicPlaylistAddableType == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 The edited playlist.
 
-#### Discussion
+## Discussion
 
 This function will throw an error if your app attempts to edit a playlist that another app created.
 

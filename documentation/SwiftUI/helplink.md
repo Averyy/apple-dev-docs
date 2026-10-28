@@ -16,7 +16,7 @@ A button with a standard appearance that opens app-specific help documentation.
 @preconcurrency struct HelpLink
 ```
 
-#### Overview
+## Overview
 
 A help link opens documentation relevant to the context where they are used. Typically this is by opening to an anchor in an Apple Help book, but can also perform an arbitrary action such as opening a URL or opening a window.
 

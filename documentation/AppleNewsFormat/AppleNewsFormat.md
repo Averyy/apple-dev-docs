@@ -6,7 +6,7 @@
 
 Get Apple News Format reference information, and create signature content for Apple News.
 
-#### Overview
+## Overview
 
 Apple News Format is the JavaScript Object Notation (JSON) format you use to create articles for Apple News.
 

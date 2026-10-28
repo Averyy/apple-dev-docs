@@ -10,7 +10,7 @@ Convert an RGB image to discrete luminance and chrominance channels, and apply c
 - macOS 13.3+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project allows you to apply saturation adjustments to an image without affecting luminosity, and change the luminance response curve without affecting color.
 
@@ -24,7 +24,7 @@ The following images show two photographs with a range of saturation adjustments
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different transformations on the image.
 
-##### Create source and destination ARGB pixel buffers
+### Create source and destination ARGB pixel buffers
 
 The sample declares two 8-bit, four-channel pixel buffers. The `argbSource` pixel buffer stores the source image, and the `argbDestination` stores the transformed image.
 
@@ -40,7 +40,7 @@ private lazy var argbDestination: vImage.PixelBuffer<vImage.Interleaved8x4> = {
 }()
 ```
 
-##### Create the YpCbCr buffers
+### Create the YpCbCr buffers
 
 The conversion routine that this sample uses creates a YpCbCr result with a chroma of 4:2:0, which means there is one Cb and one Cr pixel for every four luminance pixels. That is, each chrominance buffer is half of the width, and half of the height of the luminance channel. Reducing the resolution for the chrominance channels is known as *chroma subsampling*, and it relies on the fact that human vision is less sensitive to color than luminance.
 
@@ -79,7 +79,7 @@ lazy private var ypCbCrPostTransformBuffers: Yp8CbCr8PixelBuffers = {
 }()
 ```
 
-##### Define the RGB-to-YpCbCr conversion
+### Define the RGB-to-YpCbCr conversion
 
 The [`vImage_YpCbCrPixelRange`](./vimage_ypcbcrpixelrange.md) structure defines the range and clamping information for the destination YpCbCr format. The destination buffer is 8-bit, therefore, the minimum and maximum values for luminance and chrominance are `0` and `255`, respectively. `CbCr_bias` specifies the middle of the CbCr range (that is, where the blue-luminance difference or red-luminance difference is `0`), and the sample sets that to `128`.
 
@@ -113,7 +113,7 @@ private var argbToYpCbCr: vImage_ARGBToYpCbCr {
 }
 ```
 
-##### Perform the RGB-to-YpCbCr conversion
+### Perform the RGB-to-YpCbCr conversion
 
 The [`vImageConvert_ARGB8888To420Yp8_CbCr8(_:_:_:_:_:_:)`](./vimageconvert_argb8888to420yp8_cbcr8%28_,_,_,_,_,_%29.md) function populates two vImage buffers — one that contains luminance data and one that contains chrominance data — from the contents of a single ARGB buffer.
 
@@ -141,7 +141,7 @@ The following image shows the luminance result on the left and the interleaved c
 
 ![Two black-and-white photographs of a rainbow over the ocean at a sandy beach with palm trees in the foreground. The photo on the right has a square overlay of vertical stripes on top of it.](https://developer.apple.com/tutorials/images/com.apple.accelerate/ycbcrBuffers.png)
 
-##### Apply saturation adjustment to the image
+### Apply saturation adjustment to the image
 
 This sample uses two techniques to adjust saturation:
 
@@ -160,7 +160,7 @@ if saturation > 1 {
 applyGammaToLuma(lumaGamma: lumaGamma)
 ```
 
-##### Multiply CbCr values to decrease saturation
+### Multiply CbCr values to decrease saturation
 
 The following formula describes how to adjust the color saturation of a YpCbCr image, without affecting its luminance:
 
@@ -190,7 +190,7 @@ The following image shows two photographs, from left to right, with saturations 
 
 ![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from very desaturated to unchanged.](https://developer.apple.com/tutorials/images/com.apple.accelerate/decreaseSaturation.png)
 
-##### Apply gamma to CbCr to increase saturation
+### Apply gamma to CbCr to increase saturation
 
 The simple linear adjustment that [`multiply(by:divisor:preBias:postBias:destination:)`](./vimage/pixelbuffer/multiply%28by,divisor,prebias,postbias,destination%29-7jo6v.md) provides is fine for desaturating an image, however, when increasing saturation, multiplication can clip the CbCr values, leading to areas of solid color. An alternative technique to increase saturation is to apply an exponential adjustment. The [`applyGamma(_:destination:)`](./vimage/pixelbuffer/applygamma%28_,destination%29.md) function applies a gamma value to the CbCr values to increase saturation.
 
@@ -226,7 +226,7 @@ The following image shows two photographs, from left to right, with a saturation
 
 When decreasing the saturation, the gamma function is not appropriate because pixels with very saturated color will desaturate very little, or not at all.
 
-##### Apply gamma to luminance to perform tone mapping
+### Apply gamma to luminance to perform tone mapping
 
 The sample app adjusts the contrast of an image, with a technique known as *tone mapping*, by applying a gamma adjustment to the luminance channel.
 
@@ -250,7 +250,7 @@ The following image shows two photographs, from left to right, with a gamma appl
 
 ![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from high contrast to low contrast.](https://developer.apple.com/tutorials/images/com.apple.accelerate/lumaGamma.png)
 
-##### Define the YpCbCr-to-RGB conversion
+### Define the YpCbCr-to-RGB conversion
 
 After the sample app completes the YpCbCr representation, it converts the YpCbCr data to RGB. The process is very similar to the RGB to YpCbCr conversion and uses the same pixel range, but the [`vImageConvert_YpCbCrToARGB_GenerateConversion(_:_:_:_:_:_:)`](./vimageconvert_ypcbcrtoargb_generateconversion%28_,_,_,_,_,_%29.md) function generates the conversion.
 
@@ -295,7 +295,7 @@ func convert(to destination: vImage.PixelBuffer<vImage.Interleaved8x4>) {
 }
 ```
 
-##### Correct gamma before applying operations
+### Correct gamma before applying operations
 
 Many vImage operations provide optimal results when working on images with a linear response curve. The sample app includes a [`Toggle`](../SwiftUI/toggle.md) control that applies a reciprocal gamma to the sRGB image, performs the saturation adjustments and tone mapping, and applies the original gamma.
 

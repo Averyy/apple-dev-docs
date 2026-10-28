@@ -24,7 +24,7 @@ var outputGateActivation: MPSGraphRNNActivation { get set }
 @property (nonatomic, readwrite) MPSGraphRNNActivation outputGateActivation;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `MPSGraphRNNActivationSigmoid`.
 

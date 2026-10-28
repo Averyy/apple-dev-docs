@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 You can only use the encoder to encode data into buffers created by the same Metal device object.
 

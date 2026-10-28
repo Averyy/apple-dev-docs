@@ -22,7 +22,7 @@ class ILClassificationResponse
 @interface ILClassificationResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 To work in areas where Wi-Fi connections and cellular data may be unreliable, the extension sends the response using an SMS message. As long as the action isn’t [`ILClassificationAction.none`](./ilclassificationaction/none.md), the extension creates an SMS message to the number provided by the `ILClassificationExtensionSMSReportDestination` key in the extension’s `info.plist` file.
 

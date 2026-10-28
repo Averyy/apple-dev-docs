@@ -19,7 +19,7 @@ Returns a pattern object for the specified scheme, host, and path strings.
 + (instancetype) matchPatternWithScheme:(NSString *) scheme host:(NSString *) host path:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A pattern object, or `nil` if any of the strings are invalid.
 

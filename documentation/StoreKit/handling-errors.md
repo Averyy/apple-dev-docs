@@ -5,11 +5,11 @@
 
 Determine the underlying cause of errors that result from StoreKit requests.
 
-#### Overview
+## Overview
 
 A StoreKit request may fail for one of many possible reasons, including invalid product information, invalid payment details, problems with your App Store Connect account, or networking issues. When an error occurs, check the error code to find out what went wrong.
 
-##### Determine the cause of the error
+### Determine the cause of the error
 
 When handling errors, such as with the [`request(_:didFailWithError:)`](./skrequestdelegate/request%28_,didfailwitherror%29.md) delegate method, it’s important to use the [`domain`](../Foundation/nserror/domain.md) and [`code`](../Foundation/nserror/code.md) of the resulting error to determine the underlying cause of failure.
 

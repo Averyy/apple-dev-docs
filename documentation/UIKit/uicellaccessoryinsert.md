@@ -19,7 +19,7 @@ The insert system accessory.
 @interface UICellAccessoryInsert : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 An insert accessory is a plus sign inside of a circle with the default system green color. This accessory appears on the leading edge of the cell.
 

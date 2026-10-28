@@ -25,7 +25,7 @@ func isEqual(_ object: Any) -> Bool
 - (BOOL) isEqual:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 A value of [`true`](../../Swift/true.md) indicates whether they are equal; otherwise, [`false`](../../Swift/false.md).
 

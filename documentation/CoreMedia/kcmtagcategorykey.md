@@ -21,7 +21,7 @@ A constant for use as a key during tag creation from a dictionary, whose value i
 extern CFStringRef const kCMTagCategoryKey;
 ```
 
-#### Discussion
+## Discussion
 
 For values allowed with [`kCMTagCategoryKey`](./kcmtagcategorykey.md), see Tag Category Constants.
 

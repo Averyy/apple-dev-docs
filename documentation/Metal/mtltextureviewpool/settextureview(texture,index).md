@@ -25,7 +25,7 @@ func setTextureView(texture: any MTLTexture, index: Int) -> MTLResourceID
 - (MTLResourceID) setTextureView:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLResourceID`](../mtlresourceid.md) of a newly created texture view in this pool.
 

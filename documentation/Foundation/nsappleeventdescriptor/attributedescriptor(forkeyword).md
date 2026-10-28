@@ -20,11 +20,11 @@ func attributeDescriptor(forKeyword keyword: AEKeyword) -> NSAppleEventDescripto
 - (NSAppleEventDescriptor *) attributeDescriptorForKeyword:(AEKeyword) keyword;
 ```
 
-#### Return Value
+## Return Value
 
 The attribute descriptor for the specified keyword, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event.
 

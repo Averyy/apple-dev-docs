@@ -21,7 +21,7 @@ case stationary
 NIMotionActivityStateStationary
 ```
 
-#### Discussion
+## Discussion
 
 Update the session with this state when the accessory stops moving.
 

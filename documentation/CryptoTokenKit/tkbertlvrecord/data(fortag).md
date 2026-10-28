@@ -25,7 +25,7 @@ class func data(forTag tag: TKTLVTag) -> Data
 + (NSData *) dataForTag:(TKTLVTag) tag;
 ```
 
-#### Return Value
+## Return Value
 
 A data object that encodes a tag value using BER-TLV encoding.
 

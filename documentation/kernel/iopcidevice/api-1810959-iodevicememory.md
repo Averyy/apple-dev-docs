@@ -12,11 +12,11 @@ virtual IODeviceMemory * ioDeviceMemory(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an IODeviceMemory object for the I/O aperture. The IODeviceMemory is retained by the provider, so is valid while attached, or while any mappings to it exist. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method will return a reference to the IODeviceMemory for the I/O aperture of the bus the device is on.
 

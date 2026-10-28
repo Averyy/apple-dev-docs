@@ -25,7 +25,7 @@ class func writeBookmarkData(_ bookmarkData: Data, to bookmarkFileURL: URL, opti
 + (BOOL) writeBookmarkData:(NSData *) bookmarkData toURL:(NSURL *) bookmarkFileURL options:(NSURLBookmarkFileCreationOptions) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method will produce an error if `bookmarkData` was not created with the `NSURLBookmarkCreationSuitableForBookmarkFile` option.
 

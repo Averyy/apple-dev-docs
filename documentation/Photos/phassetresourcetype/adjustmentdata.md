@@ -24,7 +24,7 @@ case adjustmentData
 PHAssetResourceTypeAdjustmentData
 ```
 
-#### Discussion
+## Discussion
 
 When you edit the asset, Photos provides this data in the form of a [`PHAdjustmentData`](../phadjustmentdata.md) object.
 

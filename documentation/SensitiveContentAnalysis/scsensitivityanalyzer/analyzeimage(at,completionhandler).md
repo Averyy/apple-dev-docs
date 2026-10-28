@@ -27,7 +27,7 @@ func analyzeImage(at fileURL: URL) async throws -> SCSensitivityAnalysis
 - (void) analyzeImageFile:(NSURL *) fileURL completionHandler:(void (^)(SCSensitivityAnalysis *results, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler:
 

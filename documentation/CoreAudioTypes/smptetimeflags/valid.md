@@ -23,7 +23,7 @@ static var valid: SMPTETimeFlags { get }
 kSMPTETimeValid
 ```
 
-#### Discussion
+## Discussion
 
 The full time is valid.
 

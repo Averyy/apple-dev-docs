@@ -15,7 +15,7 @@ The attributes for a rule set that you create.
 object GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 The `minPlayers` and `maxPlayers` attributes constrain the range of players in the match requests. If you don’t set the `GKMatchRequest.`[`minPlayers`](../../../GameKit/gkmatchrequest/minplayers.md) and `GKMatchRequest.`[`maxPlayers`](../../../GameKit/gkmatchrequest/maxplayers.md) properties in your code, the properties default to the rule set `minPlayers` and `maxPlayers` attributes. If you set the [`GKMatchRequest`](../../../GameKit/gkmatchrequest.md) properties, use values that are in the rule set range.
 

@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift program that drives a WS2812 NeoPixel RGB LED from an RP2350’s PIO block, with no SDK or operating system.
 
-#### Overview
+## Overview
 
 This example demonstrates how to program the RP2350’s PIO (Programmable I/O) peripheral directly from Swift MMIO register definitions, without depending on the Pico SDK. A small hand-assembled PIO program drives the WS2812 protocol’s timing-sensitive single-wire signal, and the CPU feeds pixel data into the PIO’s TX FIFO. The example targets a “SparkFun Pro Micro - RP2350” board, but works with other RP2350 boards.
 
@@ -39,11 +39,11 @@ func pioWritePixel(_ hsv: HSV8Pixel) {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Set the configuration
+## Set the configuration
 
 The example hardcodes the GPIO pin driving the NeoPixel in the `LED_PIN` constant in `Application.swift`. The “SparkFun Pro Micro - RP2350” needs no changes, but other boards need this constant adjusted to match their wiring:
 
@@ -52,7 +52,7 @@ The example hardcodes the GPIO pin driving the NeoPixel in the `LED_PIN` constan
 +let LED_PIN: UInt32 = 18
 ```
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -61,7 +61,7 @@ $ cd rpi-pico2-neopixel
 $ make
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the Pico 2 board to your Mac using USB, and make sure it’s in USB Mass Storage firmware upload mode (hold the BOOTSEL button while plugging in the board, or make sure the flash memory doesn’t already contain valid firmware).
 

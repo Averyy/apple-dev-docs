@@ -25,11 +25,11 @@ func xpc_debugger_api_misuse_info() -> UnsafePointer<CChar>!
 const char *xpc_debugger_api_misuse_info();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the human-readable string describing the reason the caller was aborted. If XPC was not responsible for the program’s termination, `NULL` will be returned.
 
-#### Discussion
+## Discussion
 
 This function is only callable from within a debugger. It isn’t meant to be called by the program directly.
 

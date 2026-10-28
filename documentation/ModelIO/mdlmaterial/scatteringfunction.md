@@ -24,7 +24,7 @@ var scatteringFunction: MDLScatteringFunction { get }
 @property (nonatomic, retain, readonly) MDLScatteringFunction * scatteringFunction;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLScatteringFunction`](../mdlscatteringfunction.md) object defines a Bidirectional Reflectance Distribution Function (BRDF), which determines how a material interacts with lighting to produce a surface appearance. Though you can access the individual material properties in a scattering function directly, a scattering function object lets you work with the collection of lighting-related material properties as a single unit. Use the [`MDLScatteringFunction`](../mdlscatteringfunction.md) class itself to describe a classical Lambertian/Blinn-Phong shading model, or the [`MDLPhysicallyPlausibleScatteringFunction`](../mdlphysicallyplausiblescatteringfunction.md) class to describe a shading model based more closely on real-world physics.
 

@@ -25,7 +25,7 @@ var SparseFactorizationQR: SparseFactorization_t { get }
 SparseFactorizationQR
 ```
 
-#### Discussion
+## Discussion
 
 [`SparseFactorizationQR`](./sparsefactorizationqr.md) provides a sparse counterpart to the dense QR routines `sgeqrf()` and `dgeqrf()` from LAPACK.
 

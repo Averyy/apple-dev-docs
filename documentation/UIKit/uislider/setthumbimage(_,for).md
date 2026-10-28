@@ -22,7 +22,7 @@ func setThumbImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setThumbImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 When you specify a custom thumb image, the slider ignores the custom thumb tint color, if any.
 

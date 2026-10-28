@@ -20,7 +20,7 @@ Changed vertex adjacency end indices.
 let vertexAdjacencyEndIndices: [UInt32]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

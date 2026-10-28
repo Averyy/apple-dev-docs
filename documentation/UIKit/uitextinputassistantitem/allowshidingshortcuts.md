@@ -21,7 +21,7 @@ var allowsHidingShortcuts: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL allowsHidingShortcuts;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user may hide the shortcuts bar when the keyboard is visible. When the value is [`false`](../../Swift/false.md), the shortcuts bar remains visible while the keyboard is visible. The default value of this property is [`true`](../../Swift/true.md).
 

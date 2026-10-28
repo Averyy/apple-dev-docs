@@ -19,7 +19,7 @@ var isRulerVisible: Bool { get }
 @property (readonly, getter=isRulerVisible) BOOL rulerVisible;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver’s enclosing scroll view shows its ruler, otherwise [`false`](../../Swift/false.md).
 

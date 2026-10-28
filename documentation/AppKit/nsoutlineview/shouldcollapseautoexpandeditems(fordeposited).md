@@ -19,11 +19,11 @@ func shouldCollapseAutoExpandedItems(forDeposited deposited: Bool) -> Bool
 - (BOOL) shouldCollapseAutoExpandedItemsForDeposited:(BOOL) deposited;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if auto-expanded items should return to their original collapsed state; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Override this method to provide custom behavior. If the target of a drop is not auto-expanded (by hovering long enough) the drop target still gets expanded after a successful drop unless this method returns [`true`](../../Swift/true.md). The default implementation returns [`false`](../../Swift/false.md) after a successful drop.
 

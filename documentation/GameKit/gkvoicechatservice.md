@@ -25,7 +25,7 @@ class GKVoiceChatService
 @interface GKVoiceChatService : NSObject
 ```
 
-#### Overview
+## Overview
 
 Before you can use voice chat, your application must configure an audio session that allows for both play and recording ([`kAudioSessionCategory_PlayAndRecord`](../AudioToolbox/kaudiosessioncategory_playandrecord.md)). For more information on audio sessions, see [Audio Session Programming Guide](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
 

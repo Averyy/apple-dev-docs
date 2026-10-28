@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether a message authentication code is equi
 static func == <D>(lhs: Self, rhs: D) -> Bool where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the message authentication code and the collection of binary data are equivalent.
 

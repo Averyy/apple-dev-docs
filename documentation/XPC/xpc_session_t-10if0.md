@@ -25,7 +25,7 @@ typealias xpc_session_t = OS_xpc_session
 typedef NSObject<OS_xpc_session> * xpc_session_t;
 ```
 
-#### Discussion
+## Discussion
 
 XPC sessions are stateful connections you use to send structured messages to a separate process. Once established, a session remains active until one side of the connection cancels it, at which point the system invalidates the connection. Unlike lower-level `xpc_connection` functions, the system makes no attempt to reestablish a connection or relaunch the service.
 

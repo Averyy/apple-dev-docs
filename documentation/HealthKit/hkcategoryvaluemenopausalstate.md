@@ -28,7 +28,7 @@ enum HKCategoryValueMenopausalState : NSInteger;
 
 - [Recording and querying menopausal state](./recording-and-querying-menopausal-state.md)
 
-#### Overview
+## Overview
 
 Use these values when creating [`HKCategorySample`](./hkcategorysample.md) instances with the [`menopausalState`](./hkcategorytypeidentifier/menopausalstate.md) type. Each value records a person’s menopausal state at a specific date. Apps can query multiple samples over time to derive higher-level interpretations such as active periods, transitions, or current state.
 

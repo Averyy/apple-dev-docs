@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftAndroid"
 
 Install the Swift toolchain, Android NDK, and Swift SDK for Android
 
-#### Overview
+## Overview
 
 Development requires three components:
 
@@ -18,7 +18,7 @@ Development requires three components:
 2. **Android NDK** – download from [developer.android.com](https://developer.android.com/ndk/downloads) (r27d+ recommended)
 3. **Swift SDK for Android** – install with `swift sdk install` (see [swift.org](https://www.swift.org/documentation/articles/swift-sdk-for-android-getting-started.html))
 
-#### Hello World
+## Hello World
 
 ```shell
 $ swift package init --type executable
@@ -28,7 +28,7 @@ $ adb shell /data/local/tmp/HelloWorld
 Hello, world!
 ```
 
-#### Target triples
+## Target triples
 
 | Architecture | Triple |
 | --- | --- |

@@ -21,7 +21,7 @@ Modifies the measurement format style to use the specified locale.
 func locale(_ locale: Locale) -> Measurement<UnitType>.AttributedStyle
 ```
 
-#### Return Value
+## Return Value
 
 A measurement format style with the specified locale.
 

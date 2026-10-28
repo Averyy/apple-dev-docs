@@ -25,7 +25,7 @@ var isFinished: Bool { get }
 @property (readonly, getter=isFinished) BOOL finished;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the operation has finished its main task or [`false`](../../Swift/false.md) if it is executing that task or has not yet started it.
 

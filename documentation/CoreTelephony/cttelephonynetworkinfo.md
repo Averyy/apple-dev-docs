@@ -21,7 +21,7 @@ class CTTelephonyNetworkInfo
 @interface CTTelephonyNetworkInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Your app should be able to handle changes to the user’s cellular service provider. For example, the user could swap the device’s SIM card with one from another provider while your app is running.
 

@@ -20,7 +20,7 @@ class NSUniqueIDSpecifier
 @interface NSUniqueIDSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 This specifier works only for objects that have an ID property. The unique ID object passed to an instance of  `NSUniqueIDSpecifier` must be either an `NSNumber` object or an `NSString` object. The exact type should match the scripting dictionary declaration of the ID attribute for the relevant scripting class.
 

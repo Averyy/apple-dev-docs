@@ -30,7 +30,7 @@ class SNClassifySoundRequest
 - [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
 - [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
 
-#### Overview
+## Overview
 
 An `SNClassifySoundRequest` represents a specific sound classification model. Analyze audio data with a sound classification model by:
 

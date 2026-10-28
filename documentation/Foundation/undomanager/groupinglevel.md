@@ -25,7 +25,7 @@ var groupingLevel: Int { get }
 @property (readonly) NSInteger groupingLevel;
 ```
 
-#### Discussion
+## Discussion
 
 An integer indicating the number of nested groups. If 0 is returned, there is no open undo or redo group.
 

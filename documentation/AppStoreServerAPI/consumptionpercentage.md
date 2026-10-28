@@ -21,7 +21,7 @@ int32 consumptionPercentage
 
 **Minimum**: `0`
 
-#### Discussion
+## Discussion
 
 You can provide a consumption percentage in the [`ConsumptionRequest`](./consumptionrequest.md) object when you call [`Send Consumption Information`](./send-consumption-information.md) for consumable and non-consumable In-App Purchases and non-renewing subscriptions. The consumption percentage represents the portion of the product that the customer consumed.
 

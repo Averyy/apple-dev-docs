@@ -15,7 +15,7 @@ A value that determines the behavior of the subtitle’s visibility.
 subtitleVisibility?: FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 The subtitle visibility controls the subtitle that renders below the balloon part of the marker. The default value is [`Adaptive`](../featurevisibility/adaptive.md).
 

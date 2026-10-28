@@ -20,7 +20,7 @@ typealias AEDescList = AEDesc
 typedef AEDesc AEDescList;
 ```
 
-#### Discussion
+## Discussion
 
 Descriptor lists are a key building block of Apple events.
 

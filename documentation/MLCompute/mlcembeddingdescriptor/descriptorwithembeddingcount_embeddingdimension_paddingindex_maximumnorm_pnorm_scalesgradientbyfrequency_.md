@@ -19,7 +19,7 @@ Creates a new embedding descriptor with the size and dimension of embedding vect
 + (instancetype) descriptorWithEmbeddingCount:(NSNumber *) embeddingCount embeddingDimension:(NSNumber *) embeddingDimension paddingIndex:(NSNumber *) paddingIndex maximumNorm:(NSNumber *) maximumNorm pNorm:(NSNumber *) pNorm scalesGradientByFrequency:(BOOL) scalesGradientByFrequency;
 ```
 
-#### Return Value
+## Return Value
 
 An embedding descriptor.
 

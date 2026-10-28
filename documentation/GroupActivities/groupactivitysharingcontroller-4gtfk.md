@@ -16,7 +16,7 @@ A macOS view controller that displays the system interface for starting an activ
 @objc class GroupActivitySharingController
 ```
 
-#### Overview
+## Overview
 
 A [`GroupActivitySharingController`](./groupactivitysharingcontroller-4gtfk.md) helps you start a SharePlay activity, even when a FaceTime call isn’t currently active. When presented, the view controller prompts the person to start the activity you provided. If no FaceTime call is active, the view controller also displays a people picker to let the person select the participants for the activity. When they choose to start the activity, the view controller automatically starts the FaceTime call as needed and joins your app to the activity.
 

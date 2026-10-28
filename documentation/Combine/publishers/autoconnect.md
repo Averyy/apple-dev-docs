@@ -21,7 +21,7 @@ A publisher that automatically connects to an upstream connectable publisher.
 class Autoconnect<Upstream> where Upstream : ConnectablePublisher
 ```
 
-#### Overview
+## Overview
 
 This publisher calls [`connect()`](../connectablepublisher/connect%28%29.md) on the upstream [`ConnectablePublisher`](../connectablepublisher.md) when first attached to by a subscriber.
 

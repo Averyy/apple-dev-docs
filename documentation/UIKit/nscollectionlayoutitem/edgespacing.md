@@ -24,7 +24,7 @@ var edgeSpacing: NSCollectionLayoutEdgeSpacing? { get set }
 @property (nonatomic, copy, nullable) NSCollectionLayoutEdgeSpacing * edgeSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the position of the item in relation to its container and other items. For example, you can use this property to apply extra space to the trailing edge of each item. Edge spacing is applied before applying [`contentInsets`](./contentinsets.md).
 

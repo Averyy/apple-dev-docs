@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelLayoutFromESDS: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelLayoutFromESDS
 ```
 
-#### Discussion
+## Discussion
 
 An [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure for a given elementary stream descriptor (ESDS). Set the `inSpecifier` parameter to an ESDS.
 

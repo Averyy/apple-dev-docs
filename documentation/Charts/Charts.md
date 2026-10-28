@@ -15,7 +15,7 @@ Construct and customize charts on every Apple platform.
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Swift Charts is a powerful and concise SwiftUI framework you can use to transform your data into informative visualizations. With Swift Charts, you can build effective and customizable charts with minimal code. This framework provides marks, scales, axes, and legends as building blocks that you can combine to develop a broad range of data-driven charts.
 

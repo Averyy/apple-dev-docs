@@ -21,7 +21,7 @@ An evaluator received a subject without the required transcript.
 case missingTranscript(evaluatorType: String)
 ```
 
-#### Discussion
+## Discussion
 
 This occurs when using [`ToolCallEvaluator`](../toolcallevaluator.md) with a [`ModelSubject`](../modelsubject.md) that has a `nil` transcript. Pass `session.transcript.structuredTranscript` when creating the `ModelSubject`.
 

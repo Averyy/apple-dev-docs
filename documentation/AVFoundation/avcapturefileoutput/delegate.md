@@ -19,7 +19,7 @@ unowned(unsafe) var delegate: (any AVCaptureFileOutputDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<AVCaptureFileOutputDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is an object conforming to the [`AVCaptureFileOutputDelegate`](../avcapturefileoutputdelegate.md) protocol that will be able to monitor and control recording along exact sample boundaries.
 

@@ -25,7 +25,7 @@ var sampleType: HKSampleType { get }
 @property (copy, readonly) HKSampleType * sampleType;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a concrete sample type that corresponds with this sample’s concrete class. For example, if the sample is an [`HKQuantitySample`](../hkquantitysample.md) instance, it returns an [`HKQuantityType`](../hkquantitytype.md) object.
 

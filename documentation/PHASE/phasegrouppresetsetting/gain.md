@@ -24,7 +24,7 @@ var gain: Double { get }
 @property (nonatomic, readonly) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](./init%28gain,rate,gaincurvetype,ratecurvetype%29.md) parameter, clamped to the range between `0` and `1`. A value of `0` silences the audio and `1` doesn’t modify the audio’s original volume.
 

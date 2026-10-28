@@ -23,7 +23,7 @@ func pop()
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 After pushing an interface controller onto the screen, use this method to remove it and display the previous interface controller again. The system animates the transition back to the previous interface controller asynchronously.
 

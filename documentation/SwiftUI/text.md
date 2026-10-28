@@ -37,7 +37,7 @@ struct Text
 - [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
 - [Suggesting search terms](./suggesting-search-terms.md)
 
-#### Overview
+## Overview
 
 A text view draws a string in your app’s user interface using a [`body`](./font/body.md) font that’s appropriate for the current platform. You can choose a different standard font, like [`title`](./font/title.md) or [`caption`](./font/caption.md), using the [`font(_:)`](./view/font%28_%29.md) view modifier.
 
@@ -91,7 +91,7 @@ Text("Brevity is the soul of wit.")
 
 ![A text view showing a truncated quote from Hamlet starting Brevity is t](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Text-truncated@2x.png)
 
-##### Localizing strings
+### Localizing strings
 
 If you initialize a text view with a string literal, the view uses the [`init(_:tableName:bundle:comment:)`](./text/init%28_,tablename,bundle,comment%29.md) initializer, which interprets the string as a localization key and searches for the key in the table you specify, or in the default table if you don’t specify one.
 

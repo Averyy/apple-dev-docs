@@ -24,7 +24,7 @@ var renderedContentURL: URL { get }
 @property (copy, readonly) NSURL * renderedContentURL;
 ```
 
-#### Discussion
+## Discussion
 
 Read this property to find a URL for writing edited asset content. Then, if editing a photo asset, write the altered photo image to a file in JPEG format at this URL. If editing a video asset, export the video to a QuickTime (`.mov`) file at this URL.
 

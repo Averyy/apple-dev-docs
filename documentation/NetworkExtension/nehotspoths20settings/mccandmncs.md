@@ -22,7 +22,7 @@ var mccAndMNCs: [String] { get set }
 @property (copy) NSArray<NSString *> * MCCAndMNCs;
 ```
 
-#### Discussion
+## Discussion
 
 Each `MCCAndMNCs` string must contain exactly six integers.
 

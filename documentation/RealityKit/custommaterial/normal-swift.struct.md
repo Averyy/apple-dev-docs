@@ -19,7 +19,7 @@ An object that stores fine surface details for an entity in an image texture.
 struct Normal
 ```
 
-#### Overview
+## Overview
 
 *Normal mapping* is a real-time rendering technique that captures fine surface details for a model by using a texture instead of by increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher-resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image. This object defines a normal map for a custom material.
 

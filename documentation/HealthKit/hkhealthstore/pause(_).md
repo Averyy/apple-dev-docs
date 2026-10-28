@@ -22,7 +22,7 @@ func pause(_ workoutSession: HKWorkoutSession)
 - (void) pauseWorkoutSession:(HKWorkoutSession *) workoutSession;
 ```
 
-#### Discussion
+## Discussion
 
 This method pauses the provided session if it is currently running. The workout session’s state transitions to `HKWorkoutSessionStatePaused`, and the system generates an [`HKWorkoutEventType.pause`](../hkworkouteventtype/pause.md) event and passes it to the workout session delegate’s `workoutSession:didGenerateEvent:` method.
 

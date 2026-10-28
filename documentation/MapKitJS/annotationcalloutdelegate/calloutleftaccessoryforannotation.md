@@ -15,11 +15,11 @@ Returns an element to use as a custom accessory on the left side of the callout 
 calloutLeftAccessoryForAnnotation?(annotation: Annotation): HTMLElement;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a DOM element to display as the left accessory.
 
-#### Discussion
+## Discussion
 
 You use this method to provide a custom accessory for the left side of the callout content area (that the title and subtitle occupy).
 

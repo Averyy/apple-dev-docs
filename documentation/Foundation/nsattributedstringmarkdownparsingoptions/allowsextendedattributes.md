@@ -21,7 +21,7 @@ A Boolean value that indicates whether parsing allows extensions to Markdown tha
 @property BOOL allowsExtendedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `NO`, the Markdown parser supports only the CommonMark syntax. The default is `NO`.
 

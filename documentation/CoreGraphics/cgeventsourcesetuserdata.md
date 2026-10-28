@@ -16,7 +16,7 @@ Sets the 64-bit user-specified data for a Quartz event source.
 extern void CGEventSourceSetUserData(CGEventSourceRef source, int64_t userData);
 ```
 
-#### Discussion
+## Discussion
 
 Each input event includes 64 bits of user-specified data. This function sets the user-specified data for all events created by the specified event source. This data may also be set per event using the [`setIntegerValueField(_:value:)`](./cgevent/setintegervaluefield%28_,value%29.md) function.
 

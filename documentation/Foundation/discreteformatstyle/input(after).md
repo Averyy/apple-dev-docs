@@ -22,11 +22,11 @@ The next input value after the given input.
 func input(after input: Self.FormatInput) -> Self.FormatInput?
 ```
 
-#### Return Value
+## Return Value
 
 The next “greater” input value that can be represented by [`FormatInput`](../formatstyle/formatinput.md) or an underlying representation the format style uses internally.
 
-#### Discussion
+## Discussion
 
 Use this function to determine if the return value provided by [`discreteInput(before:)`](./discreteinput%28before%29.md) is precise enough for your use case for any input `y`:
 

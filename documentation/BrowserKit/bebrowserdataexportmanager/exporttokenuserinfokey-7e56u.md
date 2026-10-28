@@ -20,7 +20,7 @@ class let exportTokenUserInfoKey: String
 extern NSString * const BEBrowserDataExchangeExportToken;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to access the token that validates the transfer of browsing data when the system launches your app to export the data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 

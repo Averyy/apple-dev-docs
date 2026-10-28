@@ -25,7 +25,7 @@ func pictureInPictureController(_ pictureInPictureController: AVPictureInPicture
 - (void) pictureInPictureController:(AVPictureInPictureController *) pictureInPictureController didTransitionToRenderSize:(CMVideoDimensions) newRenderSize;
 ```
 
-#### Discussion
+## Discussion
 
 Take the new render size and the [`isPictureInPictureActive`](../avpictureinpicturecontroller/ispictureinpictureactive.md) state into account when choosing media variants to avoid uncessary decoding overhead.
 

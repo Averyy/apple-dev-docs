@@ -13,7 +13,7 @@ Manage the distribution of apps within an organization.
 - macOS 26.4+
 - visionOS 2.4+
 
-#### Overview
+## Overview
 
 *Managed apps* are featured, downloadable apps that an enterprise, educational, or other institution provides to its employees or students. The Managed App Distribution framework allows developers of device management solutions to vend these managed apps. The framework verifies that someone initiated an app installation, provides status and download progress, and can launch the app once it’s downloaded.
 

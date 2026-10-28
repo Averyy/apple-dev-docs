@@ -19,7 +19,7 @@ func textDidChange(_ notification: Notification)
 - (void) textDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes the text field’s delegate to receive a [`controlTextDidChange:`](../../ObjectiveC/nsobject-swift.class/controltextdidchange_.md) message. See the [`NSControl`](../nscontrol.md) class specification for more information about the text delegate method.
 

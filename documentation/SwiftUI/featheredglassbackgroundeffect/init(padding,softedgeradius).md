@@ -15,7 +15,7 @@ Creates a feathered glassBackground effect.
 init(padding length: CGFloat, softEdgeRadius: CGFloat? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A feathered background effect.
 

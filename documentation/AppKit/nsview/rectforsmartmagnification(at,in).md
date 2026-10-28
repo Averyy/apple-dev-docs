@@ -19,11 +19,11 @@ func rectForSmartMagnification(at location: NSPoint, in visibleRect: NSRect) -> 
 - (NSRect) rectForSmartMagnificationAtPoint:(NSPoint) location inRect:(NSRect) visibleRect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle to use for magnification, specified in the view’s coordinate system. To get the default magnification behavior, return [`NSZeroRect`](../../Foundation/nszerorect.md).
 
-#### Discussion
+## Discussion
 
 AppKit calls this method when magnifying content in a scroll view. If you do not override this method, or if you return [`NSZeroRect`](../../Foundation/nszerorect.md), the scroll view magnifies the view’s content around the specified point. If you override this method and return a custom rectangle, the scroll view adjusts the magnification behavior to accommodate the rectangle you provide.
 

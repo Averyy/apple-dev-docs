@@ -27,7 +27,7 @@ func synchronizeTextLayoutManagers() async throws
 - (void) synchronizeTextLayoutManagers:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If `completionHandler` is `nil`, this method performs the operation synchronously. The framework passes any error to the `completionHandler`. The method blocks (or fails, if synchronous) when there’s an active transaction.
 

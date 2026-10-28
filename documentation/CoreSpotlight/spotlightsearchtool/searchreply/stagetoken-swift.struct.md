@@ -19,7 +19,7 @@ An opaque type you use to identify a single pipeline stage within the Spotlight 
 struct StageToken
 ```
 
-#### Overview
+## Overview
 
 Within a single call to the Spotlight search tool’s [`call(arguments:)`](../../../FoundationModels/tool/call%28arguments%29.md) method, the tool can run one or more pipeline stages to deliver the requested results. Each stage corresponds to a specific task needed to generate the results. For example, one stage might rank the search results based on their relevance. When delivering results to your app, the tool includes a `StageToken` value in the [`SpotlightSearchTool.SearchReply`](../searchreply.md) structure it delivers. You can use the token to associate that data with a particular processing stage of the tool.
 

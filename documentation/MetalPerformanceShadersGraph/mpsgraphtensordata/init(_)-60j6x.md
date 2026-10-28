@@ -24,11 +24,11 @@ init(_ tensor: any MTLTensor)
 - (instancetype) initWithMTLTensor:(id<MTLTensor>) tensor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData, or nil if allocation failure.
 
-#### Discussion
+## Discussion
 
 The internal storage of the MTLTensor will be aliased. Requires tensor to support MTLTensorUsageMachineLearning.
 

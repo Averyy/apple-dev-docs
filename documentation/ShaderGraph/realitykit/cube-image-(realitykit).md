@@ -14,11 +14,11 @@ A texturecube with RealityKit properties.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Adjustable level of detail. Input image must be in KTX file format
 
-#### Parameter Types
+## Parameter Types
 
 **Cube Image (vector4f)**:
 
@@ -66,7 +66,7 @@ Adjustable level of detail. Input image must be in KTX file format
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`U Wrap Mode`**: The way the node handles U values outside of the range of `0-1`. The default value is `clamp_to_edge`.
@@ -84,7 +84,7 @@ Adjustable level of detail. Input image must be in KTX file format
 - **`Dynamic Min Lod Clamp`**: The minimum level of detail allowed for the rendered image contents. Similar to the `Min Lod Clamp` parameter, except you can change this parameter dynamically during runtime.
 - **`Offset`**: The integer values added to the texture coordinates before looking up each pixel. The value must be within the range `-8-7`. The default value is `0`.
 
-#### Discussion
+## Discussion
 
 The `Cube Image` node produces a texture using the contents of the image file specified in the `File` parameter. It has a variety of parameters that affect the properties of the rendered textures.
 

@@ -16,11 +16,11 @@ Creates a page table with the LSI workaround from a list of ranges.
 IOReturn (*LSIWorkaroundSetCommandBuffersAsRanges)(void *self, FWSBP2VirtualRange *ranges, UInt32 withCount, UInt32 withDirection, UInt32 offset, UInt32 length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns KIOReturnSuccess if the page table was written successfully.
 
-#### Discussion
+## Discussion
 
 Creates an LSI workaround page table with the given parameters. Any addresses mapped by this method routine must remain valid until setCommandBuffers is called again or releaseCommandBuffers is called. The SBP2 services do not release references to the command buffers just because the command has completed.
 

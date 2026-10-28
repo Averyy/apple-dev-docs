@@ -26,7 +26,7 @@ static let firstTextBaseline: VerticalAlignment
 - [Aligning views within a stack](../aligning-views-within-a-stack.md)
 - [Aligning views across stacks](../aligning-views-across-stacks.md)
 
-#### Discussion
+## Discussion
 
 Use this guide to align with the baseline of the top-most text in a view. The guide aligns with the bottom of a view that contains no text:
 

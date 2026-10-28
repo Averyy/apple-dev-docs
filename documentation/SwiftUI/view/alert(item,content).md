@@ -24,7 +24,7 @@ nonisolated
 func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View where Item : Identifiable
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to show an alert that contains information from a binding to an optional data source that you provide. The example below shows a custom data source `FileInfo` whose properties configure the alert’s `message` field:
 

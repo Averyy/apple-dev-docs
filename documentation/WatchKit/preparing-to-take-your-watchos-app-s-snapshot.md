@@ -5,7 +5,7 @@
 
 Provide a timely, accurate snapshot of your app by using snapshot background tasks.
 
-#### Overview
+## Overview
 
 To provide a placeholder image for your app, watchOS periodically takes snapshots of your app’s user interface. Keeping your app’s snapshot up to date helps produce apps that feel responsive and current. The system uses snapshots in two ways:
 
@@ -16,7 +16,7 @@ The system displays the dock when the user presses the watch’s side button. By
 
 When you launch an app, watchOS initially displays the latest snapshot for your app. As soon as the app is active, watchOS replaces the snapshot with the app’s live user interface.
 
-##### Schedule snapshots
+### Schedule snapshots
 
 The system automatically schedules snapshots for your app after significant state changes, for example when the app transitions from the foreground to the background, whenever the user interacts with the app’s complications or notifications, and one hour after the last user interaction. Your app can also invalidate its current snapshot and schedule a background snapshot refresh tasks by calling your extension’s [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](./wkapplication/schedulesnapshotrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md) method.
 
@@ -24,7 +24,7 @@ When using [`WKRefreshBackgroundTask`](./wkrefreshbackgroundtask.md) tasks, you 
 
 The system budgets the number of snapshots you can take per hour. For apps in the dock, you can safely request one snapshot per hour. For apps with an active complication, you can request up to four per hour. If you exceed the available budget, the system may delay your request until additional background execution time is available.
 
-##### Respond to snapshot background tasks
+### Respond to snapshot background tasks
 
 To take a snapshot, the system resumes running your app in the background. It then executes your background task handler. If you’re using SwiftUI [`BackgroundTask`](../SwiftUI/backgroundtask.md) tasks, you can respond using a [`snapshot`](../SwiftUI/backgroundtask/snapshot.md) task. The closure must return a [`SnapshotResponse`](../SwiftUI/snapshotresponse.md). Use the constructor’s `estimatedSnapshotExpieration:` parameter to set the preferred date and time for the next background snapshot refresh task. You can use [`distantFuture`](../Foundation/nsdate/distantfuture.md) if you don’t want to schedule the next refresh.
 

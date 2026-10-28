@@ -21,7 +21,7 @@ static let moveOperation: NSWorkspace.FileOperationName
 extern NSWorkspaceFileOperationName NSWorkspaceMoveOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Behaves the same as [`moveItem(at:to:)`](../../../Foundation/filemanager/moveitem%28at,to%29.md).
 

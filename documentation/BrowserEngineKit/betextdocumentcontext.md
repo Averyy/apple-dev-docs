@@ -26,7 +26,7 @@ class BETextDocumentContext
 
 - [Integrating custom browser text views with UIKit](./integrating-custom-browser-text-views-with-uikit.md)
 
-#### Overview
+## Overview
 
 The [`BETextInput`](./betextinput.md) protocol’s [`requestDocumentContext(_:completionHandler:)`](./betextinput/requestdocumentcontext%28_,completionhandler%29.md) and [`requestTextContextForAutocorrection(completionHandler:)`](./betextinput/requesttextcontextforautocorrection%28completionhandler%29.md) methods provide an instance of this class to their completion handlers.
 

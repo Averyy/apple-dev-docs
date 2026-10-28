@@ -18,7 +18,7 @@ A property wrapper type that you use to create a WatchKit extension delegate.
 @preconcurrency @propertyWrapper struct WKExtensionDelegateAdaptor<DelegateType> where DelegateType : NSObject, DelegateType : WKExtensionDelegate
 ```
 
-#### Overview
+## Overview
 
 To handle extension delegate callbacks in an extension that uses the SwiftUI life cycle, define a type that conforms to the [`WKExtensionDelegate`](../WatchKit/wkextensiondelegate.md) protocol, and implement the delegate methods that you need. For example, you can implement the [`didRegisterForRemoteNotifications(withDeviceToken:)`](../WatchKit/wkextensiondelegate/didregisterforremotenotifications%28withdevicetoken%29.md) method to handle remote notification registration:
 

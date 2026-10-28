@@ -25,7 +25,7 @@ let CBConnectPeripheralOptionEnableAutoReconnect: String
 extern NSString * const CBConnectPeripheralOptionEnableAutoReconnect;
 ```
 
-#### Discussion
+## Discussion
 
 After a peripheral device connects, this setting enables the system to initiate a connection to the peer device automatically when the link drops. The system uses [`centralManager(_:didDisconnectPeripheral:timestamp:isReconnecting:error:)`](./cbcentralmanagerdelegate/centralmanager%28_,diddisconnectperipheral,timestamp,isreconnecting,error%29.md) to notify the caller about the disconnection.
 

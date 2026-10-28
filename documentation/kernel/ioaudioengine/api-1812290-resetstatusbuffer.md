@@ -11,7 +11,7 @@ Resets the status buffer to its default values.
 virtual void resetStatusBuffer();
 ```
 
-#### Overview
+## Overview
 
 This is called during startAudioEngine() and resumeAudioEngine() to clear out the status buffer in preparation of starting up the I/O engine. There is no need to call this directly.
 

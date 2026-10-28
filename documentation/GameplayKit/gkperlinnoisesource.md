@@ -24,7 +24,7 @@ class GKPerlinNoiseSource
 @interface GKPerlinNoiseSource : GKCoherentNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Like all [`GKNoiseSource`](./gknoisesource.md) subclasses, a Perlin noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](./gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](./gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../SpriteKit/sktexture.md) or `SKTileMap` class.
 

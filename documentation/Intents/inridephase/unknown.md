@@ -27,7 +27,7 @@ INRidePhaseUnknown
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 You may specify this state during the confirmation phase of a ride-booking request. Don’t specify this value during the handling of a request, where it is as an error.
 

@@ -24,11 +24,11 @@ func shapeOf(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) shapeOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Returns a rank-1 tensor of type `MPSDataTypeInt32` with the values of the static shape of the input tensor.
 

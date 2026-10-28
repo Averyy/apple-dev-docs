@@ -21,11 +21,11 @@ Creates a predicate to match app intents of the specified type that optionally r
 static func intentType(_ intentType: any AppIntent.Type, entityIdentifier: EntityIdentifier? = nil) -> IntentDonationMatchingPredicate
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches a donation when app intents of the provided type contain the entity you specified.
 
-#### Discussion
+## Discussion
 
 Use this method to delete all donations with a specific type of app intent. Include a value in the `entityIdentifier` parameter to limit the deletions to those that also reference a specific [`AppEntity`](../appentity.md) instance. Remove donations to prevent the system from suggesting those actions in the future.
 

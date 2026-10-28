@@ -19,7 +19,7 @@ Tells StoreKit to request an App Store rating or review from the user, if approp
 static func requestReview(in scene: UIWindowScene)
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method in your shipping app and the system displays a rating and review request view, the system handles the entire process for you. Although you normally call this method when it makes sense in the user experience flow of your app, App Store policy governs the actual display of a rating and review request view. When your app calls this API, StoreKit uses the following criteria:
 
@@ -30,11 +30,11 @@ When you call this method in your shipping app and the system displays a rating 
 
 It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [Ratings and reviews](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
 
-##### Test review requests
+### Test review requests
 
 When your app calls this method while it’s in development mode, StoreKit always displays the rating and review request view, so you can test the user interface and experience. However, this method has no effect in apps that you distribute for beta testing using TestFlight.
 
-##### Provide a persistent link to your product page (optional)
+### Provide a persistent link to your product page (optional)
 
 Your customers can review your app at any time on the App Store. To make it easier for people to leave reviews, you may include a persistent link to your App Store product page in your app’s settings or configuration screens. Append the query parameter `action=write-review` to your product page URL to automatically open the App Store page where users can write a review.
 

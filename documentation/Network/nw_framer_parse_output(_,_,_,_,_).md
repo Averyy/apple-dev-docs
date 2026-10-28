@@ -25,7 +25,7 @@ func nw_framer_parse_output(_ framer: nw_framer_t, _ minimum_incomplete_length: 
 bool nw_framer_parse_output(nw_framer_t framer, size_t minimum_incomplete_length, size_t maximum_length, uint8_t *temp_buffer, nw_framer_parse_completion_t parse);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the requested length was available to parse, or false if the conditions could not be met.
 

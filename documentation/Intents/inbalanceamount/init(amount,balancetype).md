@@ -23,11 +23,11 @@ init?(amount: NSDecimalNumber, balanceType: INBalanceType)
 - (instancetype) initWithAmount:(NSDecimalNumber *) amount balanceType:(INBalanceType) balanceType;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INBalanceAmount`](../inbalanceamount.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when initializing balance amounts that do not involve money.
 

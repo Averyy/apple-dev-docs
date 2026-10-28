@@ -19,7 +19,7 @@ optional func showAllHelpTopics(forSearch searchString: String)
 - (void) showAllHelpTopicsForSearchString:(NSString *) searchString;
 ```
 
-#### Discussion
+## Discussion
 
 The application should show all its results for this search, which does not include results for menu items.  The string for “Show All Help Topics” is system defined and localized and cannot be changed by the user.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one that should be rendered wit
 var isEmojiPresentation: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scalars that have default to emoji presentation can be followed by U+FE0E VARIATION SELECTOR-15 to request the text presentation of the scalar instead. Likewise, scalars that default to text presentation can be followed by U+FE0F VARIATION SELECTOR-16 to request the emoji presentation.
 

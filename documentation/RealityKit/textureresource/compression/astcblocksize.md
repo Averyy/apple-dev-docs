@@ -20,7 +20,7 @@ The compressed block size.
 enum ASTCBlockSize
 ```
 
-#### Overview
+## Overview
 
 > **Note**: RealityKit stores block pixel data in groups of 128 bits. For instance, a `block4x4` bits per pixel is 128/(4*4) = 8 bit per pixel.
 

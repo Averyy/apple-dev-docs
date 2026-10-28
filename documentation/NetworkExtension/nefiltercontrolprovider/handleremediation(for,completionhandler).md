@@ -26,7 +26,7 @@ func handleRemediation(for flow: NEFilterFlow) async -> NEFilterControlVerdict
 - (void) handleRemediationForFlow:(NEFilterFlow *) flow completionHandler:(void (^)(NEFilterControlVerdict *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system when the Filter Data Provider indicates that the filtering verdict for the given flow is `NEFilterRemediateVerdictNeedRules`. Subclass implementations must override this method and implement whatever steps are necessary to remediate the given flow.
 

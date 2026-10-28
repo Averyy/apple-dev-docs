@@ -27,15 +27,15 @@ class func `default`() -> Self
 + (instancetype) defaultQueue;
 ```
 
-#### Return Value
+## Return Value
 
 The default payment queue.
 
-#### Discussion
+## Discussion
 
 Apps do not create a payment queue. Instead, they retrieve the  queue by calling this class method.
 
-##### Special Considerations
+### Special Considerations
 
 The payment queue is not available in Simulator. Attempting to retrieve the payment queue logs a warning.
 

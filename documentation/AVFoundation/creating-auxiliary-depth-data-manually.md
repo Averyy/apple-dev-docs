@@ -5,11 +5,11 @@
 
 Generate a depth image and attach it to your own image.
 
-#### Overview
+## Overview
 
 iOS Portrait Mode generates a depth map and attaches it to the image as auxiliary metadata, but for custom effects, you can generate your own auxiliary depth image, one not taken with iOS Portrait Mode or another depth-enabled capture device. This article shows you how to generate this map and attach it to your image.
 
-##### Convert pixel values into a compatible floating-point format
+### Convert pixel values into a compatible floating-point format
 
 The depth image is a single-component image that must be converted per-pixel from grayscale pixel values (`0` = black to `1` = white, zNear to zFar) to either depth (in meters) or disparity (in 1/meters). Then adjust these values to fit your desired floating-point format.
 
@@ -22,7 +22,7 @@ The supported pixel formats for disparity or depth images are:
 
 Load the grayscale image into a [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md). Load its base address, attained via [`CVPixelBufferLockBaseAddress(_:_:)`](../CoreVideo/cvpixelbufferlockbaseaddress%28_,_%29.md), as data ([`CFData`](../CoreFoundation/cfdata.md)) and pass it as the [`kCGImageAuxiliaryDataInfoData`](../ImageIO/kcgimageauxiliarydatainfodata.md) value into a dictionary ([`CFDictionary`](../CoreFoundation/cfdictionary.md)).
 
-##### Parse metadata dictionaries
+### Parse metadata dictionaries
 
 The format of the dictionary is documented in `CGImageSource.h`. Access this dictionary with [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md). The dictionary supports JPEG, HEIF, and DNG images. The [`CFDictionary`](../CoreFoundation/cfdictionary.md) contains auxiliary data in the following format:
 
@@ -38,7 +38,7 @@ The value for key [`kCGImageAuxiliaryDataInfoDataDescription`](../ImageIO/kcgima
 - [`kCGImagePropertyWidth`](../ImageIO/kcgimagepropertywidth.md) and [`kCGImagePropertyHeight`](../ImageIO/kcgimagepropertyheight.md) → Pixel dimensions
 - [`kCGImagePropertyBytesPerRow`](../ImageIO/kcgimagepropertybytesperrow.md) → The number of bytes per row in the depth map
 
-##### Attach your custom depth map to an image
+### Attach your custom depth map to an image
 
 Attach the depth or disparity dictionary to an image as follows:
 

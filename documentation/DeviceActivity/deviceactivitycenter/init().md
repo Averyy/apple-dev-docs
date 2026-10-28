@@ -17,7 +17,7 @@ Creates an activity center to manage which device activities your application mo
 init()
 ```
 
-#### Discussion
+## Discussion
 
 All instances are equivalent and manage the activities monitored by the application’s extension.
 

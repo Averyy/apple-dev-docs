@@ -25,7 +25,7 @@ static let vertex: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticVertex;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing the positions of each vertex in the geometry. If you create a custom geometry using the [`init(sources:elements:)`](../../scngeometry/init%28sources,elements%29.md) method, you must provide a geometry source for this semantic.
 

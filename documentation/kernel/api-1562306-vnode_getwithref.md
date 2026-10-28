@@ -15,11 +15,11 @@ Increase the iocount on a vnode on which a usecount (persistent reference) is he
 int vnode_getwithref(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, ENOENT if the vnode is dead, in the process of being reclaimed, or has been recycled and reused.
 
-#### Discussion
+## Discussion
 
 If vnode_getwithref() succeeds, the resulting io-reference must be dropped with vnode_put(). vnode_getwithref() will succeed on dead vnodes; it should fail with ENOENT on vnodes which are in the process of being reclaimed. Because it is only called with a usecount on the vnode, the caller is guaranteed that the vnode has not been reused for a different file, though it may now be dead and have deadfs vnops (which return errors like EIO, ENXIO, ENOTDIR). On success, vnode_getwithref() returns with an iocount held on the vnode; this type of reference is intended to be held only for short periods of time (e.g. across a function call) and provides a strong guarantee about the life of the vnode. vnodes with positive iocounts cannot be recycled. An iocount is required for any operation on a vnode.
 

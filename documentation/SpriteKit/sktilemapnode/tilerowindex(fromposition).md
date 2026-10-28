@@ -25,7 +25,7 @@ func tileRowIndex(fromPosition position: CGPoint) -> Int
 - (NSUInteger) tileRowIndexFromPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 The tile map node object’s tile row index for the specified position.
 

@@ -23,11 +23,11 @@ static func makePixelBufferAndCGImageFormat(cgImage: CGImage, pixelFormat: Forma
 
 Available when `Format` conforms to `InitializableFromCGImage` and `StaticPixelFormat`.
 
-#### Return Value
+## Return Value
 
 A new pixel buffer of type [`vImage.DynamicPixelFormat`](../dynamicpixelformat.md) and a [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) that describes the ordering and number of the color channels, the size and type of the data in the color channels, and whether or not the data is premultiplied by alpha.
 
-#### Discussion
+## Discussion
 
 Use this function where you know the bits per component and bits per pixel of the [`CGImage`](../../../CoreGraphics/cgimage.md) instance. These must match those of the buffer’s `pixelFormat`, otherwise this function returns `nil`.
 

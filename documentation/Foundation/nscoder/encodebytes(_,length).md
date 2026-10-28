@@ -25,7 +25,7 @@ func encodeBytes(_ byteaddr: UnsafeRawPointer?, length: Int)
 - (void) encodeBytes:(const void *) byteaddr length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer to be encoded begins at `address`, and its length in bytes is given by `numBytes`.
 

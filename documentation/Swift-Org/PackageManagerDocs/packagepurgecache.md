@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Purge the global repository cache.
 
-#### Overview
+## Overview
 
 ```
 package purge-cache [--package-path=<package-path>]

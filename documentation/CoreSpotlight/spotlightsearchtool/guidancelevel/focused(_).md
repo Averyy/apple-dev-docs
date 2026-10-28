@@ -23,7 +23,7 @@ case focused(SpotlightSearchTool.ContentDomain = .items)
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 Choose this option to search attributes only for the specified types of content. You can initialize this value with one or more domains, each of which specifies a particular type of content. During a search, the Spotlight search tool considers only the attributes in the specified domains. The tool also sends data back to the model in a compact format that’s more suitable for models with limited-size context windows.
 

@@ -27,7 +27,7 @@ func write(to destinationURL: URL) throws
 - (BOOL) writeToURL:(NSURL *) destinationURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If `destinationURL` is a directory, the system creates a `Signatures.shazamcatalog` file.
 

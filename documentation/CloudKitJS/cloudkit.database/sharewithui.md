@@ -17,7 +17,7 @@ Promise<CloudKit.SharingUIResult, CloudKit.CKError> shareWithUI(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to an object that represents the share record, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 

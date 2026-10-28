@@ -13,7 +13,7 @@
 - **Name**: `EXAppExtensionAttributes`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Include this key in the Information Property List of a Home app extension. Xcode adds it when you add a Home Extension target to your project. The dictionary requires the [`EXExtensionPointIdentifier`](./exappextensionattributes/exextensionpointidentifier.md) key.
 

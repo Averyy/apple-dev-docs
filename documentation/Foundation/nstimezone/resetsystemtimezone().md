@@ -25,7 +25,7 @@ class func resetSystemTimeZone()
 + (void) resetSystemTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If the app has cached the system time zone by accessing the [`system`](./system.md) class property, this method clears that cached value. If you subsequently access the [`system`](./system.md) class property, a new time zone object is created and cached.
 

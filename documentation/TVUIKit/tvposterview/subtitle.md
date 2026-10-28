@@ -19,7 +19,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 A subtitle for a poster view is optional. If it exists, it appears beneath the [`title`](./title.md).
 

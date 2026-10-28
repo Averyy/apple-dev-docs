@@ -17,7 +17,7 @@ A text field style with a system-defined square border.
 struct SquareBorderTextFieldStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`squareBorder`](./textfieldstyle/squareborder.md) to construct this style.
 

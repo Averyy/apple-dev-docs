@@ -25,7 +25,7 @@ var versionChecksum: String { get }
 @property (copy, readonly) NSString * versionChecksum;
 ```
 
-#### Discussion
+## Discussion
 
 This value is also available in the versioned model’s `VersionInfo.plist` file and in Xcode’s build log.
 

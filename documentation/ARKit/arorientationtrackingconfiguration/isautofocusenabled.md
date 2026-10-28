@@ -20,7 +20,7 @@ var isAutoFocusEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isAutoFocusEnabled) BOOL autoFocusEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 In apps linked against the iOS 11.3 SDK or later, ARKit enables autofocus by default.
 

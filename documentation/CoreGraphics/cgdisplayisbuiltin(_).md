@@ -20,11 +20,11 @@ func CGDisplayIsBuiltin(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsBuiltin(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is considered to be a built-in display; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Portable systems typically identify the internal LCD panel as a built-in display.
 

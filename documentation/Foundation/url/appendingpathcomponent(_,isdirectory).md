@@ -23,11 +23,11 @@ Returns a URL by appending the specified path component to self, specifying whet
 func appendingPathComponent(_ pathComponent: String, isDirectory: Bool) -> URL
 ```
 
-#### Return Value
+## Return Value
 
 A new URL with the path component appended.
 
-#### Discussion
+## Discussion
 
 The URL syntax for a directory and for a file at otherwise the same location are slightly different — directory URLs must end in `/`. If you append the path component `second` to the URL `http://www.example.com/first/`, if `isDirectory` is `true`, the resulting URL is `http://www.example.com/first/second/.` If `isDirectory` is `false`, the resulting URL is `http://www.example.com/first/second`.
 

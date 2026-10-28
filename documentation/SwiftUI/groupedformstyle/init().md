@@ -22,7 +22,7 @@ nonisolated
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, use the [`grouped`](../formstyle/grouped.md) static variable to create this style:
 

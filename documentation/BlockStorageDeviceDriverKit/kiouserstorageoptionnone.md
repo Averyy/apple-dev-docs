@@ -15,7 +15,7 @@ A value that defines no options.
 #define kIOUserStorageOptionNone
 ```
 
-#### Discussion
+## Discussion
 
 This value equals `0x0000`.
 

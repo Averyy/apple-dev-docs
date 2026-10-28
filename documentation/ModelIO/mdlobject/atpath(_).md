@@ -24,11 +24,11 @@ func atPath(_ path: String) -> MDLObject
 - (MDLObject *) objectAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The requested object, or `nil` if no object matching the path can be found.
 
-#### Discussion
+## Discussion
 
 See the [`path`](./path.md) property for examples of how to construct object paths for searching.
 

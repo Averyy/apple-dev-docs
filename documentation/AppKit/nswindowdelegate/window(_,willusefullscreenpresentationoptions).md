@@ -20,7 +20,7 @@ optional func window(_ window: NSWindow, willUseFullScreenPresentationOptions pr
 - (NSApplicationPresentationOptions) window:(NSWindow *) window willUseFullScreenPresentationOptions:(NSApplicationPresentationOptions) proposedOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The options the window should use when transitioning to full-screen mode. These may be the same as the `proposedOptions` or may be modified.
 

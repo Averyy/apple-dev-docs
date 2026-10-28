@@ -25,7 +25,7 @@ static var skipPackageContents: CFURLEnumeratorOptions { get }
 kCFURLEnumeratorSkipPackageContents
 ```
 
-#### Discussion
+## Discussion
 
 This option applies only to directory enumerators.
 

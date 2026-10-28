@@ -15,7 +15,7 @@ Returns a cached image representation initialized for drawing in the specified w
 - (id) initWithWindow:(NSWindow *) win rect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 You must draw the image yourself in the designated part of the window. There are no `NSCachedImageRep` methods for this purpose.
 

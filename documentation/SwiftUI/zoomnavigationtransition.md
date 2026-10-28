@@ -20,7 +20,7 @@ A navigation transition that zooms the appearing view from a given source view.
 struct ZoomNavigationTransition
 ```
 
-#### Overview
+## Overview
 
 Indicate the source view using the [`matchedTransitionSource(id:in:)`](./view/matchedtransitionsource%28id,in%29.md) modifier.
 

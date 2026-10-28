@@ -16,7 +16,7 @@ nonisolated
 struct FieldDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`field`](./datepickerstyle/field.md) to construct this style.
 

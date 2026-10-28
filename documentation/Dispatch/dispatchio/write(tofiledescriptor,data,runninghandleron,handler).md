@@ -21,7 +21,7 @@ Schedules an asynchronous write operation to the specified file descriptor.
 class func write(toFileDescriptor: Int32, data: DispatchData, runningHandlerOn queue: DispatchQueue, handler: @escaping (DispatchData?, Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for initiating a single, asynchronous write operation at the current position of the specified file descriptor. This method is intended for simple operations where you do not need the overhead of creating a channel and do not plan on issuing more than a few calls to read or write data. Once submitted, there is no way to cancel the write operation.
 

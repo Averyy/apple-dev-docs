@@ -5,11 +5,11 @@
 
 Version plug-ins to add new capabilities, or obsolete them to remove them from the Motion Library.
 
-#### Overview
+## Overview
 
 Developers commonly add new functionalities or rendering abilities to plug-ins over time. Versioning a plug-in allows for older instances of a plug-in that are already applied to a project to maintain the old rendering behavior and new instances to use a new rendering behavior. Obsoleting a plug-in prevents the plug-in from appearing in the Motion Library, and therefore prevents new instances from being applied. However, old instances of the plug-in continue to function as long as Motion and Final Cut Pro support it.
 
-##### Versioning a plug-in
+### Versioning a plug-in
 
 To version a plug-in, add a version key to your plug-in’s `Info.plist`, and set a version number as a string or number.
 
@@ -20,17 +20,17 @@ To version a plug-in, add a version key to your plug-in’s `Info.plist`, and se
 
 If a plug-in has a version number, when it is applied to an object in a project, the version number at the time it is applied is saved. That instance of the plug-in retains that version number, even if the version number of the plug-in’s `Info.plist` is later updated. This strategy works well for users because it ensures backward compatibility of renders that are created with earlier versions of your plug-in.
 
-##### Reading a plug-in’s version number
+### Reading a plug-in’s version number
 
 The [`FxVersioningAPI`](../professional_video_applications/fxversioningapi.md) provides [`versionAtCreation()`](../professional_video_applications/fxversioningapi/versionatcreation%28%29.md) for reading the version number of a plug-in instance.
 
 For example, if you release version 1 of your plug-in and a few months later you change the way it outputs pixel values, you can increase the version number to 2. You can then add the new render path to your plug-in and use it only if [`versionAtCreation()`](../professional_video_applications/fxversioningapi/versionatcreation%28%29.md) returns `2`.
 
-##### Updating the version of a plug-in instance
+### Updating the version of a plug-in instance
 
 Sometimes a plug-in may require an update to the version of the current plug-in instance applied in a Motion project. This version update might be most convenient to make when the user changes a parameter and therefore purges the previous render. For example, your plug-in can update the plug-in instance’s version number in the [`parameterChanged(_:at:)`](../professional_video_applications/fxtileableeffect/parameterchanged%28_,at%29.md) method by using [`FxVersioningAPI`](../professional_video_applications/fxversioningapi.md)’s [`updateVersion(atCreation:)`](../professional_video_applications/fxversioningapi/updateversion%28atcreation%29.md) to set a new version number.
 
-##### Obsoleting a plug-in
+### Obsoleting a plug-in
 
 When you release a newer plug-in, you may not want your older plug-in to appear in the host’s list of available plug-ins and instead choose to replace it with a new version with a different UUID. You could make this choice, for example, because you’ve updated from FxPlug 3 to FxPlug 4, your new plug-in requires a new license from your customers, or you’ve combined the functionality of several plug-ins into a single plug-in. In all these cases, simply versioning may not be a suitable option for your plug-in, but you still want instances of older versions to continue to function as long as the host supports them.
 

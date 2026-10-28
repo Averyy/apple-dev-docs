@@ -15,7 +15,7 @@ A Boolean value that indicates whether an app supports URL-based playback via a 
 - **Name**: `MDESupportsUniversalURLPlayback`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set this key to `true` in your media app’s `Info.plist` file to turn on the [`AVSystemRoute.LaunchMode.player`](../../AVSystemRouting/avsystemroute-5s2um/launchmode/player.md) launch mode, which uses the remote device’s built-in media player to play a URL:
 

@@ -25,7 +25,7 @@ func seek(toOffset offset: UInt64) throws
 - (BOOL) seekToOffset:(unsigned long long) offset error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Throws an error if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
 

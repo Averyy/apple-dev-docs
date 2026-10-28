@@ -29,7 +29,7 @@ var desiredAccuracy: CLLocationAccuracy { get set }
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 The location service does its best to achieve the requested accuracy; however, apps must be prepared to use less accurate data. If your app isn’t authorized to access precise location information (`isAuthorizedForPreciseLocation` is [`false`](../../Swift/false.md)), changes to this property’s value have no effect; the accuracy is always [`kCLLocationAccuracyReduced`](../kcllocationaccuracyreduced.md).
 
@@ -41,7 +41,7 @@ For iOS, the default value of this property is [`kCLLocationAccuracyBest`](../kc
 
 This property effects only the standard location services, not for monitoring significant location changes.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

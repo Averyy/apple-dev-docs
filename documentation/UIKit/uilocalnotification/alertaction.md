@@ -24,7 +24,7 @@ var alertAction: String? { get set }
 @property (nonatomic, copy, nullable) NSString * alertAction;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a string or, preferably, a localized-string key (using [`NSLocalizedString`](../../Foundation/nslocalizedstring.md)) as the value. The alert action is the title of the right button of the alert or the value of the unlock slider, where the value replaces “unlock” in “slide to unlock”. If you specify `nil`, and [`alertBody`](./alertbody.md) is non-`nil`, “View” (localized to the preferred language) is used as the default value.
 

@@ -20,7 +20,7 @@ var prototype: NSCell? { get set }
 @property (copy, nullable) NSCell * prototype;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, there is no prototype cell.
 

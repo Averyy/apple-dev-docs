@@ -19,7 +19,7 @@ func disconnectSCO()
 - (void) disconnectSCO;
 ```
 
-#### Discussion
+## Discussion
 
 Disconnects the SCO connection with the device (if one exists). Delegate methods will be called once the disconnection is complete.
 

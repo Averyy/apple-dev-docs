@@ -19,7 +19,7 @@ optional func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart playe
 - (BOOL) playerViewShouldAutomaticallyDismissAtPictureInPictureStart:(AVPlayerView *) playerView;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the player view should automatically be miniaturized; otherwise `false`.
 

@@ -23,7 +23,7 @@ class var relu6: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * relu6Layer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.relun`](../mlcactivationtype/relun.md), `a = 0.0`, and `b = 6.0`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

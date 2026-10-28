@@ -19,7 +19,7 @@ func setDropItem(_ item: Any?, dropChildIndex index: Int)
 - (void) setDropItem:(id) item dropChildIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 For example, to specify a drop on `someOutlineItem`, you specify `item` as `someOutlineItem` and `index` as [`NSOutlineViewDropOnItemIndex`](../nsoutlineviewdroponitemindex.md). To specify a drop between child `2` and `3` of `someOutlineItem`, you specify `item` as `someOutlineItem` and `index` as `3` (children are a zero-based index). To specify a drop on an un-expandable `someOutlineItem`, you specify `item` as `someOutlineItem` and `index` as [`NSOutlineViewDropOnItemIndex`](../nsoutlineviewdroponitemindex.md).
 

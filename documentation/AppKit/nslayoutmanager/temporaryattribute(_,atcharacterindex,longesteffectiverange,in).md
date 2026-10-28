@@ -19,11 +19,11 @@ func temporaryAttribute(_ attrName: NSAttributedString.Key, atCharacterIndex loc
 - (id) temporaryAttribute:(NSAttributedStringKey) attrName atCharacterIndex:(NSUInteger) location longestEffectiveRange:(NSRangePointer) range inRange:(NSRange) rangeLimit;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the attribute named `attrName` of the character at `location`, or `nil` if there is no such attribute.
 
-#### Discussion
+## Discussion
 
 If you don’t need the longest effective range, it’s far more efficient to use the [`temporaryAttribute(_:atCharacterIndex:effectiveRange:)`](./temporaryattribute%28_,atcharacterindex,effectiverange%29.md) method to retrieve the attribute value.
 

@@ -20,7 +20,7 @@ The dose quantity the person reports as taken.
 @property (nonatomic, copy, readonly, nullable) NSNumber * doseQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 For scheduled dose events, the value defaults to the [`scheduledDoseQuantity`](./scheduleddosequantity-477ge.md), when logged from a reminder. For as needed dose events, the value defaults to `1` in the medication tracking experience, but can always be edited by the person logging.
 

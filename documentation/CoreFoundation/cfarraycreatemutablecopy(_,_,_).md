@@ -25,7 +25,7 @@ func CFArrayCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ 
 extern CFMutableArrayRefCFArrayCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFArrayRef theArray);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable array that contains the same values as `theArray`. The new array has the same count as the `theArray` and uses the same callbacks. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

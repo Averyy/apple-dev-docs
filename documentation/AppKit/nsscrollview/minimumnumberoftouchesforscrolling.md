@@ -19,7 +19,7 @@ var minimumNumberOfTouchesForScrolling: Int { get set }
 @property NSInteger minimumNumberOfTouchesForScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.
 

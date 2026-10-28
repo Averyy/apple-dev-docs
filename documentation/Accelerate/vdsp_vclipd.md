@@ -21,7 +21,7 @@ Calculates the elements of a double-precision vector clipped to the specified ra
 extern void vDSP_vclipD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function performs the operation below:
 

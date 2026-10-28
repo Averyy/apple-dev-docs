@@ -25,11 +25,11 @@ func CMSampleBufferSetInvalidateCallback(_ sbuf: CMSampleBuffer, callback invali
 extern OSStatus CMSampleBufferSetInvalidateCallback(CMSampleBufferRef sbuf, CMSampleBufferInvalidateCallback invalidateCallback, uint64_t invalidateRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 A sample buffer can only have one invalidation callback. The invalidation callback *isn’t* called during ordinary sample buffer finalization.
 

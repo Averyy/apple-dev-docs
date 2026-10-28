@@ -24,7 +24,7 @@ func withExclusiveControl(_ performHandler: @escaping (Bool, (any Error)?) -> Vo
 - (void) performWithExclusiveControl:(void (^)(BOOL acquiredLock, NSError *error)) performHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Acquires exclusive access to the BADownloadManager across the app and application extension.
 

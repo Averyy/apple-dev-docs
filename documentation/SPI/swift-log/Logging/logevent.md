@@ -17,7 +17,7 @@ A log event that contains all the information about a single log statement.
 struct LogEvent
 ```
 
-#### Overview
+## Overview
 
 `LogEvent` is passed to a [`LogHandler`](./loghandler.md) via [`log(event:)`](./loghandler/log%28event%29.md) and carries every piece of data emitted at the log call site. Handlers may inspect, modify, or forward any of the event’s properties.
 

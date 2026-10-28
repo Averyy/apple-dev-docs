@@ -5,7 +5,7 @@
 
 Present an interface that people can use to search for content in your app.
 
-#### Overview
+## Overview
 
 Add a search interface to your app by applying one of the searchable view modifiers — like [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md) — to a [`NavigationSplitView`](./navigationsplitview.md) or [`NavigationStack`](./navigationstack.md), or to a view inside one of these. A search field then appears in the toolbar. The precise placement and appearance of the search field depends on the platform, where you put the modifier in code, and its configuration.
 
@@ -13,7 +13,7 @@ Add a search interface to your app by applying one of the searchable view modifi
 
 The searchable modifier that creates the field takes a [`Binding`](./binding.md) to a string that represents the search field’s text. You provide the storage for the string — and optionally for an array of discrete search tokens — that you use to conduct the search. To learn about managing the search field’s data, see [Performing a search operation](./performing-a-search-operation.md).
 
-##### Place the search field automatically
+### Place the search field automatically
 
 You can automatically place the search field by adding the [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md) modifier to a navigation element like a navigation split view:
 
@@ -46,7 +46,7 @@ With this configuration, the search field appears on the trailing edge of the to
 
 ![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the middle pane has a search field just below the title that displays the placeholder text, Search.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Search-add-1-iPadOS@2x.png)
 
-##### Control the placement structurally
+### Control the placement structurally
 
 To add a search field to a specific column in iOS and iPadOS, add the searchable modifier to a view in that column. For example, to indicate that the search covers departments in the previous example, you could place the search field in the first column by adding the modifier to that column’s `DepartmentList` view instead of to the navigation split view:
 
@@ -63,7 +63,7 @@ NavigationSplitView {
 
 ![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the left-most pane has a search field just below the title that displays the placeholder text, Search.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Search-add-2-iPadOS@2x.png)
 
-##### Control the placement programmatically
+### Control the placement programmatically
 
 You can alternatively use the `placement` input parameter to suggest a [`SearchFieldPlacement`](./searchfieldplacement.md) value for the search interface. For example, you can achieve the same results as the previous example in macOS using the [`sidebar`](./searchfieldplacement/sidebar.md) placement:
 
@@ -82,7 +82,7 @@ NavigationSplitView {
 
 If SwiftUI can’t satisfy the placement request, like when you ask for sidebar placement in a searchable modifier that isn’t applied to a navigation split view, SwiftUI relies instead on its automatic placement rules.
 
-##### Set a prompt for the search field
+### Set a prompt for the search field
 
 By default, the search field contains Search as the placeholder text, to prompt people on how to use the field. You can customize the prompt by setting either a string, a [`Text`](./text.md) view, or a [`LocalizedStringKey`](./localizedstringkey.md) for the searchable modifier’s `prompt` input parameter. For example, you might use this to clarify that the search field in the Department column searches among both departments and the products in each department:
 

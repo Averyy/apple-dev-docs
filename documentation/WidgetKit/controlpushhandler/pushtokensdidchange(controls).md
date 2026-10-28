@@ -20,7 +20,7 @@ Handle push tokens changing for configured controls.
 func pushTokensDidChange(controls: [ControlInfo])
 ```
 
-#### Discussion
+## Discussion
 
 This function always provides information for all controls that support push updates even if only some of the tokens have changed.
 

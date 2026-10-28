@@ -22,11 +22,11 @@ nonisolated
 func scrollIndicators(_ visibility: ScrollIndicatorVisibility, axes: Axis.Set = [.vertical, .horizontal]) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified scroll indicator visibility.
 
-#### Discussion
+## Discussion
 
 Use this modifier to hide or show scroll indicators on scrollable content in views like a [`ScrollView`](../scrollview.md), [`List`](../list.md), or [`TextEditor`](../texteditor.md). This modifier applies the preferred visibility to any scrollable content within a view hierarchy.
 

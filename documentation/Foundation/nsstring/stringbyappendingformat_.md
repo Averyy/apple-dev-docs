@@ -21,11 +21,11 @@ Returns a string made by appending to the receiver a string constructed from a g
 - (NSString *) stringByAppendingFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A string made by appending to the receiver a string constructed from `format` and the following arguments, in the manner of [`stringWithFormat:`](./stringwithformat_.md).
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of variadic arguments to substitute into `format`.
 

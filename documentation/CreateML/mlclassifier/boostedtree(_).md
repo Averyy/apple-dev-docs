@@ -15,7 +15,7 @@ A classifier based on a collection of decision trees combined with gradient boos
 case boostedTree(MLBoostedTreeClassifier)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLClassifier`](../mlclassifier.md) using one of its enumeration cases. Use the classifier’s initializer instead.
 

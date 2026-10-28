@@ -25,11 +25,11 @@ func DNSServiceConstructFullName(_ fullName: UnsafeMutablePointer<CChar>!, _ ser
 DNSServiceErrorType DNSServiceConstructFullName(char * constfullName, const char * constservice, const char * constregtype, const char * constdomain);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) (0) on success, kDNSServiceErr_BadParam on error.
 
-#### Discussion
+## Discussion
 
 Note that callbacks in the above functions ALREADY ESCAPE strings where necessary.
 

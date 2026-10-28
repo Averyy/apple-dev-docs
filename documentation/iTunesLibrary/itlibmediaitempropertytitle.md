@@ -20,7 +20,7 @@ let ITLibMediaItemPropertyTitle: String
 extern NSString * const ITLibMediaItemPropertyTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be empty.
 

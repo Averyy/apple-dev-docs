@@ -26,7 +26,7 @@ var predicate: NSPredicate { get }
 @property (copy, readonly) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

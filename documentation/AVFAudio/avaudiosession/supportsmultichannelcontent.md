@@ -24,7 +24,7 @@ var supportsMultichannelContent: Bool { get }
 @property (readonly) BOOL supportsMultichannelContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

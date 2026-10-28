@@ -27,7 +27,7 @@ let SKReceiptPropertyIsVolumePurchase: String
 extern NSString * const SKReceiptPropertyIsVolumePurchase;
 ```
 
-#### Discussion
+## Discussion
 
 This key’s value is an instance of [`NSNumber`](../Foundation/nsnumber.md) that the system interprets as a Boolean value that indicates whether the receipt is a Volume Purchase Plan receipt.
 

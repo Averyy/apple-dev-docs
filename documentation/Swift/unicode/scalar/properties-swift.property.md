@@ -21,7 +21,7 @@ Properties of this scalar defined by the Unicode standard.
 var properties: Unicode.Scalar.Properties { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the Unicode properties of a Unicode scalar value. The following code tests whether a string contains any math symbols:
 

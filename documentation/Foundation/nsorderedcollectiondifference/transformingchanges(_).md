@@ -25,7 +25,7 @@ func transformingChanges(_ block: (NSOrderedCollectionChange) -> NSOrderedCollec
 - (NSOrderedCollectionDifference<id> *) differenceByTransformingChangesWithBlock:(NSOrderedCollectionChange<id> * (^)(NSOrderedCollectionChange<id> *)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered collection difference.
 

@@ -41,7 +41,7 @@ struct IODetailedTimingInformationV2 {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used by IOFramebuffer to define detailed timing information for a display mode. The VESA EDID document has more information.
 

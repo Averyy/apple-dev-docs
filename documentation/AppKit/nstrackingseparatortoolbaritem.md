@@ -19,7 +19,7 @@ class NSTrackingSeparatorToolbarItem
 @interface NSTrackingSeparatorToolbarItem : NSToolbarItem
 ```
 
-#### Overview
+## Overview
 
 Use a `NSTrackingSeparatorToolbarItem` to divide an [`NSToolbar`](./nstoolbar.md) into sections that visually align with the views on either side of the divider of the [`splitView`](./nstrackingseparatortoolbaritem/splitview.md). This keeps [`NSToolbarItem`](./nstoolbaritem.md)s above the content that’s the [`target`](./nstoolbaritem/target.md) for the item’s [`target`](./nstoolbaritem/target.md).
 

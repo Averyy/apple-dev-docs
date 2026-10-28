@@ -24,7 +24,7 @@ var kSequenceTrackProperty_TrackLength: UInt32 { get }
 kSequenceTrackProperty_TrackLength
 ```
 
-#### Discussion
+## Discussion
 
 If this property is not set, music track length equals the end of the last active event in the track and is adjusted dynamically as events are added or removed. The value of this property is the specified track length, or the calculated length—whichever is greater. A read/write [`MusicTimeStamp`](./musictimestamp.md) value.
 

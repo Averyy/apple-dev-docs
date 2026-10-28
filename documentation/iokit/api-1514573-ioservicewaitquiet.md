@@ -23,11 +23,11 @@ func IOServiceWaitQuiet(_ service: io_service_t, _ waitTime: UnsafeMutablePointe
 kern_return_t IOServiceWaitQuiet(io_service_t service, mach_timespec_t *waitTime);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an error code if mach synchronization primitives fail, kIOReturnTimeout, or kIOReturnSuccess.
 
-#### Discussion
+## Discussion
 
 Blocks the caller until an IOService is non busy, see IOServiceGetBusyState.
 

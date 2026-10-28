@@ -21,7 +21,7 @@ Appends contents of a collection representing a next batch, in the right hand si
 static func += (collection: inout MusicItemCollection<MusicItemType>, nextBatchCollection: MusicItemCollection<MusicItemType>)
 ```
 
-#### Discussion
+## Discussion
 
 In addition to appending the underlying items of the collection to the existing collection on the left hand side, this will also transfer to the collection on the left hand side any information about a next batch from the collection on the right hand side, or lack thereof.
 

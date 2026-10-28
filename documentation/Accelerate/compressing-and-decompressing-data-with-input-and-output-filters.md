@@ -5,7 +5,7 @@
 
 Compress and decompress streamed or from-memory data, using input and output filters.
 
-#### Overview
+## Overview
 
 The code in this article uses the [Compression](../Compression/Compression.md) framework’s [`InputFilter`](../Compression/inputfilter.md) and [`OutputFilter`](../Compression/outputfilter.md) classes to encode (compress) and decode (decompress) a string. The code writes the encoded result to a [`Data`](../Foundation/data.md) structure.
 
@@ -13,7 +13,7 @@ The code in this sample is useful in applications that store or transmit files, 
 
 Use the input and output filters API when working with data that’s streamed to or from memory — for example, when reading from or writing to a file. If you’re compressing and decompressing data that’s held entirely in memory, consider using [`compressed(using:)`](../Foundation/nsdata/compressed%28using%29.md) and [`decompressed(using:)`](../Foundation/nsdata/decompressed%28using%29.md). These functions provide a simple API to compress and decompress data in a single step.
 
-##### Create the source data
+### Create the source data
 
 Typically, your app dynamically generates the source data that it compresses, but for this example, the source data is a hard-coded string.
 
@@ -31,7 +31,7 @@ let sourceData = """
 
 On return, `sourceData` contains the UTF-8 representation of the source string.
 
-##### Specify the page size
+### Specify the page size
 
 [`InputFilter`](../Compression/inputfilter.md) and [`OutputFilter`](../Compression/outputfilter.md) instances compress and decompress pages of data. Specify the number of bytes in each page to read from or write to a stream. Smaller values allow your app to report progress or perform other tasks at higher frequencies than larger values. However, larger values allow your app to compress or decompress using fewer steps, possibly in less time.
 
@@ -41,7 +41,7 @@ For this example, use a page size of 128 bytes:
 let pageSize = 128
 ```
 
-##### Create the compression destination buffer
+### Create the compression destination buffer
 
 Create an empty mutable [`Data`](../Foundation/data.md) structure to receive the compressed data.
 
@@ -49,7 +49,7 @@ Create an empty mutable [`Data`](../Foundation/data.md) structure to receive the
 var compressedData = Data()
 ```
 
-##### Create the output filter
+### Create the output filter
 
 Create an [`OutputFilter`](../Compression/outputfilter.md) instance, and specify the operation as [`FilterOperation.compress`](../Compression/filteroperation/compress.md) and the compression algorithm as [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md). For more information on other compression algorithms, see [`compression_algorithm`](../Compression/compression_algorithm.md).
 
@@ -71,7 +71,7 @@ do {
 }
 ```
 
-##### Compress the data
+### Compress the data
 
 Iterate over the source data and call the [`subdata(in:)`](../Foundation/data/subdata%28in%29.md) method to copy `pageSize` chunks to `subdata`. The [`write(_:)`](../Compression/outputfilter/write%28_%29.md) method compresses each chunk and uses the closure specified in the [`OutputFilter`](../Compression/outputfilter.md) initializer to write the result to `compressedData`.
 
@@ -99,7 +99,7 @@ do {
 
 On return, `compressedData` contains a compressed version of the original source data.
 
-##### Create the decompression destination buffer
+### Create the decompression destination buffer
 
 Create a mutable, empty [`Data`](../Foundation/data.md) structure to receive the decompressed data.
 
@@ -107,7 +107,7 @@ Create a mutable, empty [`Data`](../Foundation/data.md) structure to receive the
 var decompressedData = Data()
 ```
 
-##### Create the input filter
+### Create the input filter
 
 Create an [`InputFilter`](../Compression/inputfilter.md) instance, and specify the operation as [`FilterOperation.decompress`](../Compression/filteroperation/decompress.md) and the compression algorithm as [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md).
 
@@ -132,7 +132,7 @@ do {
 }
 ```
 
-##### Decompress the data
+### Decompress the data
 
 You iterate over the compressed data by repeatedly calling [`readData(ofLength:)`](../Compression/inputfilter/readdata%28oflength%29.md), until the function returns nil. With each iteration, append the data returned by the input filter to `decompressedData`.
 
@@ -146,7 +146,7 @@ do {
 }
 ```
 
-##### Create a string from the decompressed data
+### Create a string from the decompressed data
 
 Use [`init(data:encoding:)`](../Swift/string/init%28data,encoding%29.md) to recreate a string from the decompressed data.
 
@@ -157,7 +157,7 @@ let decompressedString = String(data: decompressedData,
 
 On return, `decompressedString` contains the original text shown in [Compressing and decompressing data with input and output filters](./compressing-and-decompressing-data-with-input-and-output-filters.md).
 
-##### Select input and output filters based on requirements
+### Select input and output filters based on requirements
 
 You’re not tied to using output filters for compression and input filters for decompression. You can select the appropriate compressor-decompressor based on your app’s requirements.
 

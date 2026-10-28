@@ -23,11 +23,11 @@ func gss_export_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ c
 OM_uint32 gss_export_sec_context(OM_uint32 *minor_status, gss_ctx_id_t*context_handle, gss_buffer_t interprocess_token);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 The function deactivates the context before exporting it. Use [`gss_import_sec_context(_:_:_:)`](./gss_import_sec_context%28_,_,_%29.md) to restore the token to a context and reactivate it. Only one instance of a given context may be active at a time.
 

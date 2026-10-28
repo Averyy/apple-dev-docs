@@ -17,7 +17,7 @@ Prepares the specified image representation to receive drawing commands.
 - (void) lockFocusOnRepresentation:(NSImageRep *) imageRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the current drawing context to the area of the offscreen window used to cache the specified image representation’s contents. Subsequent drawing commands are composited to this offscreen window. If the offscreen drawing area already has some content, any new drawing commands are composited with that content. This method does not modify the original image data directly.
 
@@ -27,7 +27,7 @@ A successful [`lockFocusOnRepresentation:`](./lockfocusonrepresentation_.md) mes
 
 If [`lockFocusOnRepresentation:`](./lockfocusonrepresentation_.md) is unable to focus on the specified image representation, it raises an `NSImageCacheException`.
 
-##### Special Considerations
+### Special Considerations
 
 This method is deprecated as it did not set up `imageRepresentation` as a drawing destination, it set the image up as a drawing destination, then drew `imageRepresentation` into it. You can replace this functionality with the following code fragment:
 

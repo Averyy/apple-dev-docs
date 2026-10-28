@@ -23,7 +23,7 @@ func gss_inquire_attrs_for_mech(_ minor_status: UnsafeMutablePointer<OM_uint32>,
 OM_uint32 gss_inquire_attrs_for_mech(OM_uint32 *minor_status, gss_const_OID mech, gss_OID_set*mech_attr, gss_OID_set*known_mech_attrs);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success or [`GSS_S_BAD_MECH`](./gss_s_bad_mech.md) if the desired mechanism is unsupported. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

@@ -15,7 +15,7 @@ typedef struct CMVideoCardGammaFormula {
 } CMVideoCardGammaFormula;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CMVideoCardGammaFormula` data structure to specify video card gamma data by providing three values each for red, blue and green gamma. The values represent the actual gamma, the minimum gamma, and the maximum gamma for each color. Specifying video gamma information by formula takes less space than specifying it with a table, but the results may be less precise. 
 

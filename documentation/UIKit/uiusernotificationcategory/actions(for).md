@@ -23,11 +23,11 @@ func actions(for context: UIUserNotificationActionContext) -> [UIUserNotificatio
 - (NSArray<UIUserNotificationAction *> *) actionsForContext:(UIUserNotificationActionContext) context;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UIUserNotificationAction`](../uiusernotificationaction.md) objects to be displayed in the specified context. The order of the objects in the array represents the order that they are displayed in the resulting notification.
 
-#### Discussion
+## Discussion
 
 This method returns the actions associated with the specified display context. To set the actions for a given context, you must create a [`UIMutableUserNotificationCategory`](../uimutableusernotificationcategory.md) object and use its setActions:forContext: method to specify your actions.
 

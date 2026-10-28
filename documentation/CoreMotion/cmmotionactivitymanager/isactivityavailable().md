@@ -22,11 +22,11 @@ class func isActivityAvailable() -> Bool
 + (BOOL) isActivityAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if motion data is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Motion data is not available on all iOS devices. Use this method to determine if support is available on the current device.
 

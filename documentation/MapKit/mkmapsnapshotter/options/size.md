@@ -41,7 +41,7 @@ var size: NSSize { get set }
 @property (nonatomic, assign) NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is 256 by 256 points.
 

@@ -19,7 +19,7 @@ enum LoadStatus
 enum NSImageRepLoadStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These status values are returned by [`incrementalLoad(from:complete:)`](./incrementalload%28from,complete%29.md).
 

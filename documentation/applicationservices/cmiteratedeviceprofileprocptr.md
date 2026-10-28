@@ -15,7 +15,7 @@ Defines a pointer to a function that iterates through the device profiles availa
 typedef OSErr (*CMIterateDeviceProfileProcPtr)(const CMDeviceInfo *deviceInfo, const NCMDeviceProfileInfo *profileInfo, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSErr` value.
 

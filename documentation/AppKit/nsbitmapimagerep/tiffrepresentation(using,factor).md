@@ -19,7 +19,7 @@ func tiffRepresentation(using comp: NSBitmapImageRep.TIFFCompression, factor: Fl
 - (NSData *) TIFFRepresentationUsingCompression:(NSTIFFCompression) comp factor:(float) factor;
 ```
 
-#### Discussion
+## Discussion
 
 If the compression type isn’t supported for writing TIFF data (for example, [`NSBitmapImageRep.TIFFCompression.next`](./tiffcompression/next.md)), the stored compression is changed to [`NSBitmapImageRep.TIFFCompression.none`](./tiffcompression/none.md) before the TIFF representation is generated.
 

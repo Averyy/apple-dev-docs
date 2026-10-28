@@ -15,7 +15,7 @@ A string that describes the list of loaded libraries.
 get loadedLibraries(): string[] | undefined;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this property.
 

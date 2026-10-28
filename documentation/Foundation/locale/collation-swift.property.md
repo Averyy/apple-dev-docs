@@ -21,7 +21,7 @@ The string sort order of the locale.
 var collation: Locale.Collation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `co` key of the Unicode BCP 47 extension.
 

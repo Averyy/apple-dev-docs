@@ -9,7 +9,7 @@ Manage your CloudKit containers and databases from JavaScript.
 **Availability**:
 - CKTool JS 1.2.15+
 
-#### Overview
+## Overview
 
 CKTool JS gives you access to features provided in the CloudKit Console API, facilitating CloudKit setup operations for local development and integration testing. It’s a JavaScript client library alternative to the macOS `cktool` command-line utility distributed with Xcode. To learn more about `cktool`, see [Automating CloudKit Development](https://developer.apple.com/icloud/cloudkit/automating/).
 

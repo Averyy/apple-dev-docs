@@ -15,7 +15,7 @@ A Boolean value that indicates there are more database changes to fetch.
 readonly attribute Boolean moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if there are more database changes to fetch; otherwise, `false`.
 

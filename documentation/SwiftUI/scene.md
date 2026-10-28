@@ -27,7 +27,7 @@ A part of an app’s user interface with a life cycle managed by the system.
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 You create an [`App`](./app.md) by combining one or more instances that conform to the `Scene` protocol in the app’s [`body`](./app/body-swift.property.md). You can use the built-in scenes that SwiftUI provides, like [`WindowGroup`](./windowgroup.md), along with custom scenes that you compose from other scenes. To create a custom scene, declare a type that conforms to the `Scene` protocol. Implement the required [`body`](./scene/body-swift.property.md) computed property and provide the content for your custom scene:
 

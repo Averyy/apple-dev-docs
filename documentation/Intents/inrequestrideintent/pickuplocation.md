@@ -32,7 +32,7 @@ var pickupLocation: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * pickupLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine which vehicles are in the vicinity and to dispatch the driver when the user books the ride.
 

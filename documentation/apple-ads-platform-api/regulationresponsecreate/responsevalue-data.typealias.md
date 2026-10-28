@@ -25,11 +25,11 @@ string RegulationResponseCreate.ResponseValue
 - `FALSE`: A generic negative response.
 - `NOT_ANSWERED`: No response has been provided yet.
 
-#### Discussion
+## Discussion
 
 Set this alongside `regulationType` when creating the response, since the valid options depend on which disclosure category you’re answering.
 
-##### Example
+### Example
 
 ```json
 {

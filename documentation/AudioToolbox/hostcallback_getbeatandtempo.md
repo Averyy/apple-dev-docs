@@ -24,7 +24,7 @@ typealias HostCallback_GetBeatAndTempo = (UnsafeMutableRawPointer?, UnsafeMutabl
 typedef int (*)(void *, double *, double *) __attribute__((nonblocking)) HostCallback_GetBeatAndTempo;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyHostCallback_GetBeatAndTempo`, you would declare it like this:
 

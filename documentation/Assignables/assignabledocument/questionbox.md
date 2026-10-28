@@ -18,11 +18,11 @@ A box on a page for a question.
 struct QuestionBox
 ```
 
-##### Creating a question box
+### Creating a question box
 
 - [`init(id:pageID:bounds:)`](./questionbox/init%28id,pageid,bounds%29.md)
 
-##### Inspecting the question box
+### Inspecting the question box
 
 - [`bounds`](./questionbox/bounds.md)
 - [`AssignableDocument.QuestionBox.ID`](./questionbox/id-swift.typealias.md)
@@ -30,11 +30,11 @@ struct QuestionBox
 - [`pageID`](./questionbox/pageid.md)
 - [`AssignableDocument.QuestionBox.Document`](./questionbox/document.md)
 
-##### Comparing question boxes
+### Comparing question boxes
 
 - ``==(*:*:)`
 
-##### Hashing the question box
+### Hashing the question box
 
 - [`hash(into:)`](./questionbox/hash%28into%29.md)
 

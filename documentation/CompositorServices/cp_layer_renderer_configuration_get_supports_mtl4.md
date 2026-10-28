@@ -16,7 +16,7 @@ Get whether the layer can use Metal4 when drawing to the drawables.
 bool cp_layer_renderer_configuration_get_supports_mtl4(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 Whether the layer supports using Metal4, otherwise defaults to Metal3.
 

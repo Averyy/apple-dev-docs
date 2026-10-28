@@ -15,7 +15,7 @@ Sets the clock stability of the clock device.
 kern_return_t SetClockIsStable(bool in_clock_is_stable);
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

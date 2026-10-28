@@ -25,7 +25,7 @@ let kSecMatchEmailAddressIfPresent: CFString
 extern CFStringRef const kSecMatchEmailAddressIfPresent;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains an RFC822 email address. If provided, returned certificates or identities are limited to those that either contain the address or do not contain any email address.
 

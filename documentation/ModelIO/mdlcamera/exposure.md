@@ -24,7 +24,7 @@ var exposure: vector_float3 { get set }
 @property (nonatomic, assign) vector_float3 exposure;
 ```
 
-#### Discussion
+## Discussion
 
 Simulating a real-world camera requires considering the way a pixel value captured by an imaging sensor is processed for display (or how a unit of film stock is developed and projected). Part of such consideration is the exposure level for each channel, applied to each color channel using the following formula:
 

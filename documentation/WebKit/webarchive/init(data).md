@@ -19,7 +19,7 @@ init!(data: Data!)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`data`](./data.md) method to get the receiver’s data.
 

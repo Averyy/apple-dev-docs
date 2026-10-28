@@ -14,7 +14,7 @@
 #define kFFEffectType_Friction_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a friction effect type
 

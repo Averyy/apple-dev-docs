@@ -25,7 +25,7 @@ var progressHandler: VNRequestProgressHandler { get set }
 @property (nonatomic, copy, readwrite) VNRequestProgressHandler progressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The progress handler is an optional method that allows clients of the request to report progress to the user or to display partial results as they become available. The Vision framework may call this handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
 

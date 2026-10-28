@@ -19,7 +19,7 @@ var verticalPagination: NSPrintInfo.PaginationMode { get set }
 @property NSPrintingPaginationMode verticalPagination;
 ```
 
-#### Discussion
+## Discussion
 
 The pagination modes are described in [`NSPrintInfo.PaginationMode`](./paginationmode.md)
 

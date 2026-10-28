@@ -21,11 +21,11 @@ Returns a copy of this profile with raw Headroom Adaptive Gain Curve data embedd
 func adding(headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve) -> ColorSyncProfile?
 ```
 
-#### Return Value
+## Return Value
 
 A new profile carrying the HAGC tag, or `nil` if this profile’s transfer function isn’t PQ, HLG, or linear, or if embedding fails.
 
-#### Discussion
+## Discussion
 
 The curve is validated when you construct [`ColorSyncProfile.HeadroomAdaptiveGainCurve`](./headroomadaptivegaincurve-swift.struct.md), so this method only embeds it. The original profile is unchanged.
 

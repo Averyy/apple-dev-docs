@@ -20,7 +20,7 @@ Prepares the writer to write media data to its output file.
 func start() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if reading fails to start.
 

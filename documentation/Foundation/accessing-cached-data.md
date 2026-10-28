@@ -5,13 +5,13 @@
 
 Control how URL requests make use of previously cached data.
 
-#### Overview
+## Overview
 
 The URL Loading System caches responses both in memory and on disk, improving performance and reducing network traffic.
 
 The [`URLCache`](./urlcache.md) class is used for caching responses from network resources. Your app can directly access the shared cache instance by using the [`shared`](./urlcache/shared.md) property of `URLCache`. Or, you can create your own caches for different purposes, setting distinct caches on your [`URLSessionConfiguration`](./urlsessionconfiguration.md) objects.
 
-##### Set a cache policy for URL requests
+### Set a cache policy for URL requests
 
 Each [`URLRequest`](./urlrequest.md) instance contains a [`URLRequest.CachePolicy`](./urlrequest/cachepolicy-swift.typealias.md) object to indicate if and how caching should be performed.  You can change this policy to control caching for the request.
 
@@ -30,7 +30,7 @@ For an explanation of how `useProtocolCachePolicy` is implemented for HTTP and H
 
 > **Note**:  `useProtocolCachePolicy` caches HTTPS responses to disk, which may be undesirable for securing user data. You can change this behavior by manually handling caching behavior, as described in [Manage caching programmatically](./accessing-cached-data.md#Manage-caching-programmatically).
 
-##### Access the cache directly
+### Access the cache directly
 
 You can get or set the cache object used by a `URLSession` object by using the [`urlCache`](./urlsessionconfiguration/urlcache.md) property of the session’s [`configuration`](./urlsession/configuration.md) object.
 
@@ -40,7 +40,7 @@ You can inspect resources used by the cache. The properties [`currentDiskUsage`]
 
 You can remove cached data for individual items with [`removeCachedResponse(for:)`](./urlcache/removecachedresponse%28for%29-1dh89.md). You can also clear out many cached items simultaneously with [`removeCachedResponses(since:)`](./urlcache/removecachedresponses%28since%29.md), which removes cached items past a given date, or [`removeAllCachedResponses()`](./urlcache/removeallcachedresponses%28%29.md), which wipes the entire cache.
 
-##### Manage caching programmatically
+### Manage caching programmatically
 
 You can write to the cache programmatically, with the [`storeCachedResponse(_:for:)`](./urlcache/storecachedresponse%28_,for%29-7p7bl.md) method, passing in a new `CachedURLResponse` object and a `URLRequest` object.
 

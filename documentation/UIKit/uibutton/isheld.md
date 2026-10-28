@@ -23,7 +23,7 @@ var isHeld: Bool { get }
 @property (nonatomic, assign, readonly, getter=isHeld) BOOL held;
 ```
 
-#### Discussion
+## Discussion
 
 The property is [`true`](../../Swift/true.md) if the button is presenting a menu in response to a long press. Buttons that set [`showsMenuAsPrimaryAction`](../uicontrol/showsmenuasprimaryaction.md) to present a menu don’t set this property.
 

@@ -25,7 +25,7 @@ func CGImageMetadataRemoveTagWithPath(_ metadata: CGMutableImageMetadata, _ pare
 extern bool CGImageMetadataRemoveTagWithPath(CGMutableImageMetadataRef metadata, CGImageMetadataTagRef parent, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 True if this function removed the tag, or false if it encountered a problem.
 

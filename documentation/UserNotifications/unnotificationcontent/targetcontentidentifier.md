@@ -37,7 +37,7 @@ var targetContentIdentifier: String? { get }
 
 - [Generating a remote notification](../generating-a-remote-notification.md)
 
-#### Discussion
+## Discussion
 
 Use this value to determine the content to show in your app when the user taps the notification.
 

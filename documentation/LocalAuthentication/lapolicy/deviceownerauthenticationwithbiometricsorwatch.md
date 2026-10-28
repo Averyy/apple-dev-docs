@@ -19,7 +19,7 @@ static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy { get }
 LAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`deviceOwnerAuthenticationWithBiometricsOrWatch`](./deviceownerauthenticationwithbiometricsorwatch.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate the user with either Apple Watch or biometrics. The authentication mechanisms run in parallel until one or the other succeeds, or until the user cancels the operation.
 

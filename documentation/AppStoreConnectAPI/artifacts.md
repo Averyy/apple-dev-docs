@@ -5,7 +5,7 @@
 
 Read information about artifacts Xcode Cloud creates when it performs a build.
 
-#### Overview
+## Overview
 
 The `ciArtifacts` resource represents an artifact that Xcode Cloud creates when it performs a workflow’s action. Use it to access the artifact’s:
 

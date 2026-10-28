@@ -24,11 +24,11 @@ func propertyNamed(_ name: String) -> MDLMaterialProperty?
 - (MDLMaterialProperty *) propertyNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The material property with the specified name, or `nil` if the material does not contain a material property with that name.
 
-#### Discussion
+## Discussion
 
 Material property names are not related to their use in rendering. Instead, you can assign descriptive names to material properties and use this method to keep track of them.
 

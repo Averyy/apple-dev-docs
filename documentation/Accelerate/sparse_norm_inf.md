@@ -25,7 +25,7 @@ var SPARSE_NORM_INF: sparse_norm { get }
 SPARSE_NORM_INF
 ```
 
-#### Discussion
+## Discussion
 
 | Matrix element wise | *maxᵢ,ⱼ ( | A[i,j] | )*__ | |—|—| | Matrix operator | *maxᵢ ( sumⱼ ( | A[i,j] | )*__ | | Vector element wise | *maxᵢ ( | x[i] | )*__ |
 

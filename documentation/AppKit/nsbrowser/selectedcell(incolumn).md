@@ -19,7 +19,7 @@ func selectedCell(inColumn column: Int) -> Any?
 - (id) selectedCellInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The last (or lowest) selected cell. Returns `nil` if there is no selection.
 

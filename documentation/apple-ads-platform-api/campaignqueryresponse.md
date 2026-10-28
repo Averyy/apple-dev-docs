@@ -15,11 +15,11 @@ The response object for a Campaign query, containing matched results and paginat
 object CampaignQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The campaign query endpoint returns `CampaignQueryResponse`, which contains the filtered, sorted, and paginated set of `Campaign` objects matching the request. Pagination metadata in the envelope supports offset-based navigation through large result sets.
 
-##### Example
+### Example
 
 ```json
 {

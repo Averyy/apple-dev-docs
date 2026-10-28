@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Get basic information for using Embedded Swift in typical embedded projects.
 
-#### Using Embedded Swift
+## Using Embedded Swift
 
 A typical setup and build and run cycle for an embedded development board involves:
 
@@ -25,7 +25,7 @@ Many of these steps are out of scope for this document, because they are unrelat
 
 This document only focuses on (2) from the list above, and it’s important that you first get familiar with the details of firmware development for your board without Swift in the mix. Even if you want to build a completely pure Swift firmware, you are still going to need the vendor provided tooling for linking, post-processing, uploading, and so on.
 
-#### Building code using Embedded Swift
+## Building code using Embedded Swift
 
 A basic way to build a set of Swift source files in Embedded Swift mode, is to simply give the compiler the following:
 
@@ -47,7 +47,7 @@ $ swiftc input1.swift -enable-experimental-feature Embedded -wmo
 
 To resolve that, install a nightly Swift toolchain using Swiftly. You can follow the guide at [Installing Embedded Swift](./installembeddedswift.md) for full instructions on that.
 
-#### Building Swift firmware for a concrete embedded target
+## Building Swift firmware for a concrete embedded target
 
 To build Swift firmware (for now ignoring integration with SDKs, libraries and other pre-existing C code), we can use the `-target` argument to specify the CPU architecture. The target triple also decides whether the output object file will be an ELF file, or a Mach-O. For example:
 
@@ -76,7 +76,7 @@ $ swiftc -target armv6m-none-none-eabi -enable-experimental-feature Embedded -wm
 
 This might not be obvious: `-Xcc` flags are typically only used to alter behavior of the Clang importer, but passing flags to Clang this way also works to specify LLVM target options like selecting a specific CPU architecture (`-march`, `-mcpu`, `-mmcu`), FPU unit availability (`-mfpu`), which registers are used to pass floating-point values (`-mfloat-abi`), and others.
 
-#### Integrating with existing embedded SDKs and build systems
+## Integrating with existing embedded SDKs and build systems
 
 It’s very common to integrate with existing SDKs in embedded development. This typically involves:
 

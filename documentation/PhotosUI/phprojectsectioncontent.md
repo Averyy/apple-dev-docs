@@ -19,7 +19,7 @@ class PHProjectSectionContent
 @interface PHProjectSectionContent : NSObject
 ```
 
-#### Overview
+## Overview
 
 A section content object contains suggested layout information for every element at a specific level of curation within a [`PHProjectSection`](./phprojectsection.md). A single section can provide multiple content objects, but only one is used at a time, depending on the level of curation and the amount of content detail.
 

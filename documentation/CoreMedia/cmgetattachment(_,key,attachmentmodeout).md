@@ -25,11 +25,11 @@ func CMGetAttachment(_ target: CMAttachmentBearer, key: CFString, attachmentMode
 extern CFTypeRefCMGetAttachment(CMAttachmentBearerRef target, CFStringRef key, CMAttachmentMode *attachmentModeOut);
 ```
 
-#### Return Value
+## Return Value
 
 The requested attachment object or `NULL` if not found.
 
-#### Discussion
+## Discussion
 
 You can attach any Core Foundation object to a `CMAttachmentBearer` to store additional information. `CMGetAttachment` retrieves an attachment identified by a key. Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMGetAttachment` is equivalent to [`CVBufferCopyAttachment(_:_:_:)`](../CoreVideo/cvbuffercopyattachment%28_,_,_%29.md).
 

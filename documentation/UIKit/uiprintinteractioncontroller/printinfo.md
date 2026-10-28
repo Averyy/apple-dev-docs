@@ -22,7 +22,7 @@ var printInfo: UIPrintInfo? { get set }
 @property (nonatomic, strong, nullable) UIPrintInfo * printInfo;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`UIPrintInfo`](../uiprintinfo.md) includes properties such as the print-job name, the printer identifier, the orientation of the printed content, the duplex mode, and the kind of content (general, photo, or grayscale). If you do not assign an instance of [`UIPrintInfo`](../uiprintinfo.md) to this property, the UIKit printing system assumes defaults for many of these properties. Users can modify the selected printer and the duplex mode (if available on the printer). Once the printing options are presented, any changes to the `UIPrintInfo` object referenced by this property are ignored. The object is released when printing completes.
 

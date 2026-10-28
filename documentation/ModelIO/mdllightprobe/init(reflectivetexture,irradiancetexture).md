@@ -24,11 +24,11 @@ init(reflectiveTexture: MDLTexture?, irradianceTexture: MDLTexture?)
 - (instancetype) initWithReflectiveTexture:(MDLTexture *) reflectiveTexture irradianceTexture:(MDLTexture *) irradianceTexture;
 ```
 
-#### Return Value
+## Return Value
 
 A new light probe object.
 
-#### Discussion
+## Discussion
 
 You can derive an irradiance map from a reflective texture with methods on the [`MDLTexture`](../mdltexture.md) class, or when creating a light probe with the [`init(textureSize:forLocation:lightsToConsider:objectsToConsider:reflectiveCubemap:irradianceCubemap:)`](./init%28texturesize,forlocation,lightstoconsider,objectstoconsider,reflectivecubemap,irradiancecubemap%29.md) method.
 

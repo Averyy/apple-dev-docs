@@ -16,7 +16,7 @@ Schedule a block for asynchronous execution on the current queue.
 void DispatchAsync(IODispatchBlock block);
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules the block for execution on the queue and returns immediately, without waiting for execution of the block to begin. The system retains the queue until the block completes.
 

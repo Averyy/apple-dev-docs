@@ -25,7 +25,7 @@ func CFBagContainsValue(_ theBag: CFBag!, _ value: UnsafeRawPointer!) -> Bool
 extern Boolean CFBagContainsValue(CFBagRef theBag, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is contained in `theBag`, otherwise `false`.
 

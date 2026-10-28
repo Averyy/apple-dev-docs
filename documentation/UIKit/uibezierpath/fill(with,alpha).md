@@ -24,7 +24,7 @@ func fill(with blendMode: CGBlendMode, alpha: CGFloat)
 - (void) fillWithBlendMode:(CGBlendMode) blendMode alpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 This method fills the path using the current fill color and drawing properties (plus the specified blend mode and transparency value). If the path contains any open subpaths, this method implicitly closes them before painting the fill region.
 

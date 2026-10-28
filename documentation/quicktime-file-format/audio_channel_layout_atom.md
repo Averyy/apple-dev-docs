@@ -6,7 +6,7 @@
 
 An optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies.
 
-#### Overview
+## Overview
 
 This atom is an optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies. It is a full atom followed by a big-endian audio channel layout structure as defined by Apple’s Core Audio framework. Audio channel layouts can be applied to both compressed and uncompressed sound formats.
 

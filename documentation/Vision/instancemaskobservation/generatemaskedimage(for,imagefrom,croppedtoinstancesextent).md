@@ -21,11 +21,11 @@ Creates a high-resolution image with everything except for the instances you spe
 func generateMaskedImage(for instances: IndexSet, imageFrom requestHandler: ImageRequestHandler, croppedToInstancesExtent: Bool = false) throws -> CVPixelBuffer
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the image.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

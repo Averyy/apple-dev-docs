@@ -23,7 +23,7 @@ func startStatusUpdates(to queue: OperationQueue, withHandler handler: @escaping
 - (void) startStatusUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMHeadphoneActivityStatusHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If a compatible set of headphones is already connected before you call this method, the handler is called with a status update of [`CMHeadphoneActivityManager.Status.connected`](./status/connected.md) for the connected headphones.
 

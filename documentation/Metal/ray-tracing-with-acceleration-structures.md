@@ -5,7 +5,7 @@
 
 Build a representation of your scene’s geometry using triangles and bounding volumes to quickly trace rays through the scene.
 
-#### Overview
+## Overview
 
 Ray tracing can improve your content’s realism by more accurately modeling the behavior of light than traditional rendering. You can also use ray tracing to implement similar techniques that rely on line-of-sight, such as sound obstruction or visually based AI functions.
 

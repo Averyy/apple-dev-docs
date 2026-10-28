@@ -22,7 +22,7 @@ typedef struct UCKeyboardTypeHeader {
 } UCKeyboardTypeHeader;
 ```
 
-#### Overview
+## Overview
 
 The `UCKeyboardTypeHeader` type is used in a structure of type  [`UCKeyboardLayout`](./uckeyboardlayout.md)  to specify a range of physical keyboard types and contains offsets to each of the key mapping sections to be used for that range of keyboard types. Typically, you use an array of `UCKeyboardTypeHeader` structures, of which the first entry in the array is the default and will be used if the keyboard type does not fall within the range for any other entry. See  [`UCKeyboardLayout`](./uckeyboardlayout.md)  for a further discussion of the context for use of the `UCKeyboardTypeHeader` type. 
 

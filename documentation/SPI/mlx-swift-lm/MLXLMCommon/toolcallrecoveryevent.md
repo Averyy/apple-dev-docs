@@ -17,7 +17,7 @@ Provenance for a tool call produced by cross-dialect recovery.
 struct ToolCallRecoveryEvent
 ```
 
-#### Overview
+## Overview
 
 Recovery events feed diagnostics and telemetry without changing the ordinary [`ToolCall`](./toolcall.md) execution interface.
 

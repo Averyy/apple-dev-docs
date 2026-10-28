@@ -19,11 +19,11 @@ var attributes: [AnyHashable : Any]! { get }
 @property (copy, readonly) NSDictionary * attributes;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSDictionary containing the attributes for the target service.
 
-#### Discussion
+## Discussion
 
 The attribute dictionary is keyed off of the attribute id represented as an NSNumber. The values in the NSDictionary are IOBluetoothSDPDataElement objects representing the data element for the given attribute.
 

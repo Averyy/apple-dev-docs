@@ -17,7 +17,7 @@ Quantization group size.
 var groupSize: Int?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` lets MLX use the default for the selected quantization mode.
 

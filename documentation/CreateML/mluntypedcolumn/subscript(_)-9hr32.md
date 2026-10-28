@@ -38,11 +38,11 @@ subscript(slice: Range<Int>) -> MLUntypedColumn { get }
 subscript<R>(slice: R) -> MLUntypedColumn where R : RangeExpression, R.Bound == Int { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 
-#### Overview
+## Overview
 
 Use this untyped column–based subscript to create a new column by masking a subset of the elements. The derived column will not include elements where `mask` contains a default value for its underlying type, such as:
 

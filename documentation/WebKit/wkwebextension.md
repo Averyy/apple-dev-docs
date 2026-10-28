@@ -24,7 +24,7 @@ class WKWebExtension
 @interface WKWebExtension : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class reads and parses the `manifest.json` file along with the supporting resources like icons and localizations.
 

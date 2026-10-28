@@ -20,7 +20,7 @@ nonisolated
 struct CompactDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`compact`](./datepickerstyle/compact.md) to construct this style.
 

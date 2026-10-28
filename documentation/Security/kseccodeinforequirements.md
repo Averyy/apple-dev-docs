@@ -20,7 +20,7 @@ let kSecCodeInfoRequirements: CFString
 extern CFStringRef const kSecCodeInfoRequirements;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) object. If there is an explicit designated requirement, then it’s included in this text string.
 

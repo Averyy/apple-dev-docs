@@ -21,13 +21,13 @@ var clusterInitiatorAddress: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger clusterInitiatorAddress;
 ```
 
-#### Discussion
+## Discussion
 
 In DL-TDOA deployments, anchors organize into clusters. An anchor cluster contains an initiator anchor and one or more responder anchors. The initiator coordinates a ranging sequence by sending an initial poll message.
 
 Use this property to group measurements from anchors that belong to the same cluster. Measurements with the same value for this property originate from anchors in the same cluster, even if their individual [`address`](./address.md) differs.
 
-##### Group measurements by cluster
+### Group measurements by cluster
 
 To process measurements from related anchors together, group the measurements by cluster:
 

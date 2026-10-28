@@ -6,7 +6,7 @@
 
 An atom you use to specify the data type of the metadata key atom’s value.
 
-#### Overview
+## Overview
 
 A metadata datatype definition atom can be used to specify the data type of the metadata key atom’s value. The type of the metadata datatype definition atom is `‘dtyp’`.
 

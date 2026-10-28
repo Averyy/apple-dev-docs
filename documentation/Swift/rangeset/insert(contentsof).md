@@ -21,7 +21,7 @@ Inserts the given range into the range set.
 mutating func insert(contentsOf range: Range<Bound>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 

@@ -20,7 +20,7 @@ Calculates the radial forces with constant magnitude for rigid bodies from the f
 func update(parameters: inout ForceEffectParameters)
 ```
 
-#### Discussion
+## Discussion
 
 The framework automatically calls this method for you at each physics simulation step, so you don’t need to call it yourself.
 

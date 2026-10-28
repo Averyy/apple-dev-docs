@@ -20,7 +20,7 @@ let kODAttributeTypeAuthenticationAuthority: String
 extern ODAttributeType const kODAttributeTypeAuthenticationAuthority;
 ```
 
-#### Discussion
+## Discussion
 
 An authentication authority is a multi-part string divided by semicolons. The “type” component of the string can have the following values:
 

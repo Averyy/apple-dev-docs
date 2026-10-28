@@ -20,7 +20,7 @@ Determine the mode automatically based on the surrounding context.
 static var automatic: ScrollDismissesKeyboardMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, a [`TextEditor`](../texteditor.md) is interactive while a [`List`](../list.md) of scrollable content always dismiss the keyboard on a scroll, when linked against iOS 16 or later.
 

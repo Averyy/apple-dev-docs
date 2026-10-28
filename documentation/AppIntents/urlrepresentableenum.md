@@ -21,7 +21,7 @@ An interface you apply to an app enum type so the system can handle it like a un
 protocol URLRepresentableEnum : AppEnum, CustomURLRepresentationParameterConvertible
 ```
 
-#### Overview
+## Overview
 
 If your app already supports universal links for content, use this protocol to express your app enum types as URLs. When your app enum supports this protocol, the system can use the provided URL to refer to the item. Having a URL representation for your app entity also makes it easier to share the contents of that entity with Siri, Shortcuts, and other system features.
 

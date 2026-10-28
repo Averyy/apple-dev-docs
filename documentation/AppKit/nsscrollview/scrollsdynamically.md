@@ -19,7 +19,7 @@ var scrollsDynamically: Bool { get set }
 @property BOOL scrollsDynamically;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroll view redraws its document view while scrolling. When the value of this property is[`false`](../../Swift/false.md), the scroll view redraws only when the scroller knob is released. The default value of this property is [`true`](../../Swift/true.md).
 

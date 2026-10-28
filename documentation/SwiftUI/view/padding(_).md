@@ -29,11 +29,11 @@ nonisolated
 func padding(_ length: CGFloat) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that’s padded by different amounts on each edge.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a different amount of padding on each edge of a view:
 

@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_FileTypeName: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_FileTypeName
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the name for the file type.
 

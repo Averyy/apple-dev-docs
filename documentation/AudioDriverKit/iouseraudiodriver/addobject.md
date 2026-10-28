@@ -15,11 +15,11 @@ Adds an audio object to the driver.
 kern_return_t AddObject(IOUserAudioObject *in_object);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to add to the driver any objects that require management by the host. If the add succeeds, the object’s reference count increments by one. The caller should also call [`PropertiesChanged`](./propertieschanged.md) to notify the host of any changes.
 

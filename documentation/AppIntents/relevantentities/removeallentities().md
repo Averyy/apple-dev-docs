@@ -21,7 +21,7 @@ Removes all suggested entities across all contexts.
 func removeAllEntities() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the removal fails.
 

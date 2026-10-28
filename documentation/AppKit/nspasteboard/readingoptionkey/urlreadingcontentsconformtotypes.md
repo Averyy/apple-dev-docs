@@ -19,7 +19,7 @@ static let urlReadingContentsConformToTypes: NSPasteboard.ReadingOptionKey
 extern NSPasteboardReadingOptionKey const NSPasteboardURLReadingContentsConformToTypesKey;
 ```
 
-#### Discussion
+## Discussion
 
 If the content type of a URL cannot be determined, it will not be considered to match.  The value for this key is an array of UTI type strings.
 

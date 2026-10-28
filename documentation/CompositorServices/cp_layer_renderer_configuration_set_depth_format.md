@@ -16,7 +16,7 @@ Sets the pixel format for the layer’s depth textures to the specified value.
 void cp_layer_renderer_configuration_set_depth_format(cp_layer_renderer_configuration_t configuration, MTLPixelFormat depth_format);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer. Fetch the layer’s supported pixel formats using the [`cp_layer_renderer_capabilities_supported_depth_format`](./cp_layer_renderer_capabilities_supported_depth_format.md) function.
 

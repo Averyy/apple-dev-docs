@@ -24,7 +24,7 @@ func JSObjectCallAsConstructor(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ a
 JSObjectRefJSObjectCallAsConstructor(JSContextRef ctx, JSObjectRef object, size_t argumentCount, JSValueRef const arguments[], JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The [`JSObjectRef`](./jsobjectref.md) that results from calling `object` as a constructor, or `NULL` if the system throws an exception or `object` isn’t a constructor.
 

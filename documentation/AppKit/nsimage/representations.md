@@ -19,7 +19,7 @@ var representations: [NSImageRep] { get }
 @property (copy, readonly) NSArray<NSImageRep *> * representations;
 ```
 
-#### Discussion
+## Discussion
 
 This property can contain zero or more [`NSImageRep`](../nsimagerep.md) objects.
 

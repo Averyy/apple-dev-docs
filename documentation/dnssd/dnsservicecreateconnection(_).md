@@ -25,7 +25,7 @@ func DNSServiceCreateConnection(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!) 
 DNSServiceErrorType DNSServiceCreateConnection(DNSServiceRef*sdRef);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the specific failure that occurred (in which case the DNSServiceRef is not initialized).
 

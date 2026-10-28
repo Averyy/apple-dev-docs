@@ -24,11 +24,11 @@ func estimateRender(_ image: CIImage, from fromRect: CGRect, to destination: CIR
 - (CIRenderTask *) estimateRender:(CIImage *) image fromRect:(CGRect) fromRect toDestination:(CIRenderDestination *) destination atPoint:(CGPoint) atPoint error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
  A [`CIRenderTask`](../cirendertask.md) you can query for estimated statistics, or `nil` if `fromRect` doesn’t intersect `image.extent` or if estimation fails.
 
-#### Discussion
+## Discussion
 
 Call this method to analyze the cost of a render before you execute it. Query the returned task’s `plannedPixelsProcessed`, `plannedPixelsOverdrawn`, `plannedPassCount`, and `plannedPeakMemory` properties to get the estimated statistics.
 

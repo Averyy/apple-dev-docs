@@ -21,7 +21,7 @@ var adNetworkIdentifier: String { get }
 @property (nonatomic, strong, readonly) NSString * adNetworkIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Check that the ad network identifier string is lowercased.
 

@@ -13,11 +13,11 @@
 errno_t sock_setsockopt(socket_t so, int level, int optname, const void *optval, int optlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets a socket option. See 'man 2 setsockopt'.
 

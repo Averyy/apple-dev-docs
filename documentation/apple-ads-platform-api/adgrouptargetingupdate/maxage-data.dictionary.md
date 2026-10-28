@@ -15,7 +15,7 @@ Maximum age targeting, setting the upper bound of the target age range.
 object AdGroupTargetingUpdate.MaxAge
 ```
 
-#### Discussion
+## Discussion
 
 Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 

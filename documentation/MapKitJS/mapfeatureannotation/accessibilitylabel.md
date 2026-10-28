@@ -15,7 +15,7 @@ The accessibility label for the annotation.
 get accessibilityLabel(): string | null;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the accessibility label property of the map feature annotation.
 

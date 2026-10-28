@@ -21,7 +21,7 @@ Initializes a Bonjour service to advertise with a TXT record.
 init(name: String? = nil, type: String, domain: String? = nil, txtRecord: NWTXTRecord)
 ```
 
-#### Discussion
+## Discussion
 
 Advertised services are primarily defined by their types. If you do not specify a service name, the device name will be chosen. You should not specify a Bonjour domain unless you know you need to advertise only on a particular domain.
 

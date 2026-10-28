@@ -19,7 +19,7 @@ case nonblockingThreaded
 NSAnimationNonblockingThreaded
 ```
 
-#### Discussion
+## Discussion
 
 The secondary thread has its own run loop.
 

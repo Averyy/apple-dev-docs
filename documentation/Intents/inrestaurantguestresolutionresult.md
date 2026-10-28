@@ -22,7 +22,7 @@ class INRestaurantGuestResolutionResult
 @interface INRestaurantGuestResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantGuestResolutionResult`](./inrestaurantguestresolutionresult.md) object is what you return when resolving parameters containing a [`INRestaurantGuest`](./inrestaurantguest.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

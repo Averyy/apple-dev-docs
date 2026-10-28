@@ -15,7 +15,7 @@ Attributes whose values you’re changing as part of the update request.
 object BetaAppLocalizationUpdateRequest.Data.Attributes
 ```
 
-##### Discussion
+### Discussion
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this object, you can change that data, but you cannot remove data.
 

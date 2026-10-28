@@ -19,11 +19,11 @@ func setPropertyList(_ plist: Any, forType dataType: NSPasteboard.PasteboardType
 - (BOOL) setPropertyList:(id) plist forType:(NSPasteboardType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was written successfully, otherwise [`false`](../../Swift/false.md) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
 
-#### Discussion
+## Discussion
 
 This method invokes [`setData(_:forType:)`](./setdata%28_,fortype%29.md) with a serialized property list parameter.
 

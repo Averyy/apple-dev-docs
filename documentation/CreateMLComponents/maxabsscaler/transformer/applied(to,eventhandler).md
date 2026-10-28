@@ -21,7 +21,7 @@ Scales the input values by `1 / maximumAbsoluteValue`.
 func applied(to input: Element, eventHandler: EventHandler? = nil) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 A scaled value.
 

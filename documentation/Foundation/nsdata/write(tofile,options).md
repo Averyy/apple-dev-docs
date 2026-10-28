@@ -25,7 +25,7 @@ func write(toFile path: String, options writeOptionsMask: NSData.WritingOptions 
 - (BOOL) writeToFile:(NSString *) path options:(NSDataWritingOptions) writeOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Discussion
+## Discussion
 
 This method may not be appropriate when writing to publicly accessible files. To securely write data to a public location, use [`FileHandle`](../filehandle.md) instead. For more information, see [Securing File Operations](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Articles/RaceConditions.html#//apple_ref/doc/uid/TP40002585-SW9) in [Secure Coding Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415).
 

@@ -19,7 +19,7 @@ func MDSchemaCopyDisplayDescriptionForAttribute(_ name: CFString!) -> CFString!
 CFStringRef MDSchemaCopyDisplayDescriptionForAttribute(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 The localized descriptionof the metadata attribute, or `NULL` ifno localized description is available.
 

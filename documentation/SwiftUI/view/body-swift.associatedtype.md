@@ -22,7 +22,7 @@ The type of view representing the body of this view.
 associatedtype Body : View
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom view, Swift infers this type from your implementation of the required [`body`](./body-8kl5o.md) property.
 

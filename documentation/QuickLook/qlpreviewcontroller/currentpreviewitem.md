@@ -22,7 +22,7 @@ var currentPreviewItem: (any QLPreviewItem)? { get }
 @property (readonly, nullable) id<QLPreviewItem> currentPreviewItem;
 ```
 
-#### Discussion
+## Discussion
 
 If the preview controller isn’t displaying an item, this property’s value is `nil`.
 

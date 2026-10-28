@@ -21,7 +21,7 @@ case none
 MPMovieRepeatModeNone
 ```
 
-#### Discussion
+## Discussion
 
 Content is not repeated when playback finishes
 

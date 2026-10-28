@@ -18,7 +18,7 @@ Promise<CloudKit.RecordsResponse, CloudKit.CKError> deleteRecords(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordsResponse`](../cloudkit.recordsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 

@@ -13,7 +13,7 @@
 extern CFStringRef const kAudioServicesDetailIntendedSpatialExperience;
 ```
 
-#### Discussion
+## Discussion
 
 Keys that are passed in a dictionary to AudioServicesPlaySystemSoundWithDetails
 

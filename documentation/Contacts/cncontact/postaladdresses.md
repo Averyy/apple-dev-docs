@@ -32,7 +32,7 @@ var postalAddresses: [CNLabeledValue<CNPostalAddress>] { get }
 @property (atomic, copy, readonly) NSArray<CNLabeledValue<CNPostalAddress *> *> * postalAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNPostalAddress`](../cnpostaladdress.md) value.
 

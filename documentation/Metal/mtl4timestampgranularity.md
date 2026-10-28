@@ -24,7 +24,7 @@ enum MTL4TimestampGranularity
 enum MTL4TimestampGranularity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Pass these values to [`writeTimestamp(granularity:counterHeap:index:)`](./mtl4computecommandencoder/writetimestamp%28granularity,counterheap,index%29.md) and [`writeTimestamp(granularity:after:counterHeap:index:)`](./mtl4rendercommandencoder/writetimestamp%28granularity,after,counterheap,index%29.md) to control the desired accurracy of the counter sampling operation.
 

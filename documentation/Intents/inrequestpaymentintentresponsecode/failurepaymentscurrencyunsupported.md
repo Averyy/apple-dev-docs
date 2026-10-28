@@ -23,7 +23,7 @@ case failurePaymentsCurrencyUnsupported
 INRequestPaymentIntentResponseCodeFailurePaymentsCurrencyUnsupported
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the requested currency is not one that your app supports.
 

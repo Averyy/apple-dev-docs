@@ -21,7 +21,7 @@ Indicates the value’s sign.
 func signum() -> Int
 ```
 
-#### Return Value
+## Return Value
 
 `-1` if the value is less than zero, `0` if it is equal to zero, or `+1` if it is greater than zero.
 

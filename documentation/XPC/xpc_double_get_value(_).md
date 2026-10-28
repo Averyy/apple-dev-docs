@@ -25,7 +25,7 @@ func xpc_double_get_value(_ xdouble: xpc_object_t) -> Double
 extern double xpc_double_get_value(xpc_object_t xdouble);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying floating point value.
 

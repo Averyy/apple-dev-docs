@@ -19,7 +19,7 @@ void addEventListener(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Use the `extraInfo` parameter to handle information for different types of events; for example, specifying the type of metadata a metadata listener is listening for.
 

@@ -22,7 +22,7 @@ A projection of the observed object that creates bindings to its properties.
 @preconcurrency var projectedValue: ObservedObject<ObjectType>.Wrapper { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to get a [`Binding`](../binding.md) to a property of an observed object. To access the projected value, prefix the property variable with a dollar sign (`$`). For example, you can get a binding to a model’s `isEnabled` Boolean so that a [`Toggle`](../toggle.md) can control its value:
 

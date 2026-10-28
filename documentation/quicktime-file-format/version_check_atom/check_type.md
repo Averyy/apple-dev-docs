@@ -6,7 +6,7 @@
 
 The type of check to perform, expressed as 16-bit integer.
 
-#### Overview
+## Overview
 
 Set to `0` for a minimum version check, set to `1` for a required value after a binary `AND` of the Gestalt bitfield and the mask.
 

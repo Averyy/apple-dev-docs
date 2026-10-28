@@ -19,7 +19,7 @@ func runModalSavePanel(for saveOperation: NSDocument.SaveOperationType, delegate
 - (void) runModalSavePanelForSaveOperation:(NSSaveOperationType) saveOperation delegate:(id) delegate didSaveSelector:(SEL) didSaveSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 When saving is completed, regardless of success or failure, or has been canceled, sends the message selected by `didSaveSelector` to the `delegate`, with `contextInfo` as the last argument. The method selected by `didSaveSelector` must have the same signature as:
 

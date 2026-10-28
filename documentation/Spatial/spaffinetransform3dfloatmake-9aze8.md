@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMake(SPAffineTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision affine transformation from a double-precision affine transformation.
 

@@ -24,7 +24,7 @@ static let uvExposure: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierUVExposure;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). The sample’s value represents the UV index that the user was exposed to during the sample’s duration.
 

@@ -23,7 +23,7 @@ var emailAddress: String? { get set }
 
 - [Setting an alarm](../setting-an-alarm.md)
 
-#### Discussion
+## Discussion
 
 Assigning this property a value will set the [`soundName`](./soundname.md) and [`url`](./url.md) properties to `nil`.
 

@@ -20,7 +20,7 @@ Removes the associated element for the given id from the set.
 mutating func removeElement<T>(for id: MarkupID<T>) -> T? where T : Markup
 ```
 
-#### Return Value
+## Return Value
 
 The associated element for `id` if the set contains `id`; otherwise, `nil`.
 

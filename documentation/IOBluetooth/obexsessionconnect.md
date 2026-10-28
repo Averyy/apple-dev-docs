@@ -15,11 +15,11 @@ Establishes an OBEX connection to the target device for the session. If a transp
 OBEXError OBEXSessionConnect(OBEXSessionRef inSessionRef, OBEXFlags inFlags, OBEXMaxPacketLength inMaxPacketLength, void *inOptionalHeaders, size_t inOptionalHeadersLength, OBEXSessionEventCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 As all commands for OBEX sessions, this command is asynchronous only. A NULL callback parameter will result in an error. If you have already established an OBEX connection and you call this again you will get an ‘kOBEXSessionAlreadyConnectedError’ as a result.
 

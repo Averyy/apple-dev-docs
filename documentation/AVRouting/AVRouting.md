@@ -13,7 +13,7 @@ Display custom destinations to stream media in the system route picker.
 - macOS 13.0+
 - tvOS 26.0+
 
-#### Overview
+## Overview
 
 Use the AVRouting framework to add third-party devices and protocols to [`AVRoutePickerView`](../AVKit/avroutepickerview.md). This enables a user to stream AV content through a third-party protocol using the same system menu as AirPlay.
 
@@ -21,7 +21,7 @@ When the user taps the view, the system presents a popover that lists the availa
 
 ![A screenshot of a popover with a list of items. The top item is an iPad icon with a check mark to the right. Below that is the title Speakers and TVs with a list of six subitems. The first subitem says Third-party device, followed by AirPlay and Third-party protocol. The remaining subitems are Sunset Beach with an Apple TV icon on the left, Link with TV code with a globe icon on the left, and Show more. ](https://developer.apple.com/tutorials/images/com.apple.avrouting/media-4084674@2x.png)
 
-##### Add a custom route to the system device-picker view
+### Add a custom route to the system device-picker view
 
 To indicate your app’s intent to search for a nearby third-party media receiver, set a custom routing controller ([`AVCustomRoutingController`](./avcustomroutingcontroller.md)) on the view.
 

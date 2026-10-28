@@ -24,11 +24,11 @@ class func success(with resolvedPaymentMethod: INPaymentMethod) -> Self
 + (instancetype) successWithResolvedPaymentMethod:(INPaymentMethod *) resolvedPaymentMethod;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INPaymentMethodResolutionResult` object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to resolve a parameter successfully to a value in your own internal data structures.
 

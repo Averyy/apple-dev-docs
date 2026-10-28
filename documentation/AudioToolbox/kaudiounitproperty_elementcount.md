@@ -24,7 +24,7 @@ var kAudioUnitProperty_ElementCount: AudioUnitPropertyID { get }
 kAudioUnitProperty_ElementCount
 ```
 
-#### Discussion
+## Discussion
 
 Most audio units implement this property as read-only, indicating that they use a fixed number of input and output buses. An audio unit implemented to support adding and removing buses implements this property as read/write.
 

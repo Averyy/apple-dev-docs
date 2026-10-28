@@ -25,11 +25,11 @@ func CFStringCreateWithPascalString(_ alloc: CFAllocator!, _ pStr: ConstStr255Pa
 extern CFStringRefCFStringCreateWithPascalString(CFAllocatorRef alloc, ConstStr255Param pStr, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing `pStr`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates an immutable CFString objects from the character contents of a Pascal string (after stripping off the initial length byte).
 

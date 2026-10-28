@@ -20,7 +20,7 @@ The early-stopping tolerance.
 var earlyStoppingTolerance: Float
 ```
 
-#### Discussion
+## Discussion
 
 The tolerance is used by the `fitted` method to decide when progress is no longer being made, in which case the training process will stop before the specified maximum number of iterations (known as early stopping). Significant progress happens when the validation loss decreases by at least the tolerance.
 

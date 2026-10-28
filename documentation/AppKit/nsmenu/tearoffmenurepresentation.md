@@ -17,7 +17,7 @@ Deprecated.
 - (id) tearOffMenuRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 `nil`.
 

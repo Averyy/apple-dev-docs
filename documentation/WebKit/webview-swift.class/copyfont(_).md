@@ -19,7 +19,7 @@ func copyFont(_ sender: Any?)
 - (void) copyFont:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method copies the font information for the first character of the selection (or for the insertion point) onto the font pasteboard as `NSFontPboardType`.
 

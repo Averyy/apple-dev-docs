@@ -24,7 +24,7 @@ var toValue: Any? { get set }
 @property (strong, nullable) id toValue;
 ```
 
-#### Discussion
+## Discussion
 
 See [Setting Interpolation Values](../cabasicanimation.md#Setting-Interpolation-Values) for details on how `toValue` interacts with the other interpolation values.
 

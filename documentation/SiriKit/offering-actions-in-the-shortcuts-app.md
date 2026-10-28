@@ -5,7 +5,7 @@
 
 Suggest shortcuts users may want to add to Siri or combine with other actions in their own shortcuts.
 
-#### Overview
+## Overview
 
 When the user performs an action in your app, donate a shortcut that accelerates user access to the action. Siri shows these donated interactions to the user in places such as Spotlight search and the Lock Screen.
 
@@ -13,7 +13,7 @@ However, sometimes there are actions in your app the user hasn’t performed tha
 
 > **Note**:  A donated interaction or suggested shortcut containing a system intent defines a specific action. The user can’t customize the parameters of such an action in the Shortcuts app. Instead, define a custom intent. For more information on defining custom intents, see [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
-##### Suggest a Shortcut
+### Suggest a Shortcut
 
 To suggest a shortcut to an action that the user hasn’t performed but may want to add to Siri, create an [`INShortcutReference`](../Intents/inshortcutreference.md) object with either an [`INIntent`](../Intents/inintent.md) or [`NSUserActivity`](../Foundation/nsuseractivity.md) object that defines the action. Then add the shortcut to an array. Repeat for each suggestion your app wants to make. After creating the list of shortcut suggestions, call [`setShortcutSuggestions(_:)`](../Intents/invoiceshortcutcenter/setshortcutsuggestions%28_%29.md), passing in the shortcuts.
 
@@ -33,7 +33,7 @@ if let shortcut = INShortcut(intent: orderSoupOfTheDayIntent) {
 INVoiceShortcutCenter.shared.setShortcutSuggestions(suggestions)
 ```
 
-##### Update Suggestions
+### Update Suggestions
 
 Provide shortcut suggestions that represent actions that pertain to the user. This list may change over time for reasons such as:
 

@@ -25,13 +25,13 @@ class NumberFormatter
 @interface NSNumberFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 Instances of [`NumberFormatter`](./numberformatter.md) format the textual representation of cells that contain [`NSNumber`](./nsnumber.md) objects and convert textual representations of numeric values into [`NSNumber`](./nsnumber.md) objects. The representation encompasses integers, floats, and doubles; floats and doubles can be formatted to a specified decimal position. [`NumberFormatter`](./numberformatter.md) objects can also impose ranges on the numeric values cells can accept.
 
 > 💡 **Tip**:  In Swift, you can use [`IntegerFormatStyle`](./integerformatstyle.md), [`FloatingPointFormatStyle`](./floatingpointformatstyle.md), or [`Decimal.FormatStyle`](./decimal/formatstyle.md) rather than [`NumberFormatter`](./numberformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
-##### Significant Digits and Fraction Digits
+### Significant Digits and Fraction Digits
 
 The [`NumberFormatter`](./numberformatter.md) class provides flexible options for displaying non-zero fractional parts of numbers.
 
@@ -39,7 +39,7 @@ If you set the [`usesSignificantDigits`](./numberformatter/usessignificantdigits
 
 Otherwise, you can configure the minimum and maximum number of integer and fraction digits, or the numbers before and after the decimal separator, respectively, using the [`minimumIntegerDigits`](./numberformatter/minimumintegerdigits.md), [`maximumIntegerDigits`](./numberformatter/maximumintegerdigits.md), [`minimumFractionDigits`](./numberformatter/minimumfractiondigits.md), and [`maximumFractionDigits`](./numberformatter/maximumfractiondigits.md) properties. See Configuring Integer and Fraction Digits.
 
-##### Thread Safety
+### Thread Safety
 
 On iOS 7 and later [`NumberFormatter`](./numberformatter.md) is thread-safe.
 

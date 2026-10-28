@@ -22,11 +22,11 @@ Returns the quotient obtained by dividing this value by the given value, along w
 func dividedReportingOverflow(by rhs: Self) -> (partialValue: Self, overflow: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the result of the division along with a Boolean value indicating whether overflow occurred. If the `overflow` component is `false`, the `partialValue` component contains the entire quotient. If the `overflow` component is `true`, an overflow occurred and the `partialValue` component contains either the truncated quotient or, if the quotient is undefined, the dividend.
 
-#### Discussion
+## Discussion
 
 Dividing by zero is not an error when using this method. For a value `x`, the result of `x.dividedReportingOverflow(by: 0)` is `(x, true)`.
 

@@ -23,7 +23,7 @@ class MFMailComposeViewController
 @interface MFMailComposeViewController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 Use this view controller to display a standard email interface inside your app. Before presenting the interface, populate the fields with initial values for the subject, email recipients, body text, and attachments of the email. After presenting the interface, the person can edit your initial values before sending the email.
 
@@ -35,7 +35,7 @@ The composition interface doesn’t guarantee the delivery of your email message
 
 An alternate way to compose emails is to create and open a URL that uses the `mailto` scheme. URLs of that type go directly to the built-in Mail app, which uses your URL to configure a message. For information about the structure of `mailto` URLs, see [Apple URL Scheme Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
-##### Checking the availability of the composition interface
+### Checking the availability of the composition interface
 
 Before presenting the mail compose view controller, always call the [`canSendMail()`](./mfmailcomposeviewcontroller/cansendmail%28%29.md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](./mfmailcomposeviewcontroller/cansendmail%28%29.md) method returns [`false`](../Swift/false.md).
 
@@ -57,7 +57,7 @@ if (![MFMailComposeViewController canSendMail]) {
 }
 ```
 
-##### Configuring and displaying the composition interface
+### Configuring and displaying the composition interface
 
 After verifying that mail services are available, you can create and configure the mail composition view controller and then present it as any other view controller. Use the methods of this class to specify the subject, recipients, and message body of the email, including any attachments you want to send with the message. The sample code below shows how to configure the composition interface and present it modally. Always assign a delegate to the [`mailComposeDelegate`](./mfmailcomposeviewcontroller/mailcomposedelegate.md) property, because the delegate is responsible for dismissing the composition interface later.
 

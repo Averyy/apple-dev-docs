@@ -25,7 +25,7 @@ static var showLightExtents: SCNDebugOptions { get }
 SCNDebugOptionShowLightExtents
 ```
 
-#### Discussion
+## Discussion
 
 Only lights whose type is [`omni`](../scnlight/lighttype/omni.md) or [`spot`](../scnlight/lighttype/spot.md) have an area of effect; directional and ambient lights affect the entire scene.
 

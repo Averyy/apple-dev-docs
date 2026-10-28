@@ -19,11 +19,11 @@ func OBEXAddDescriptionHeader(_ description: CFString!, _ dictRef: CFMutableDict
 OBEXError OBEXAddDescriptionHeader(CFStringRef description, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Description header - OBEX Spec, 2.2.6: (2-byte) Null terminated unicode string.
 

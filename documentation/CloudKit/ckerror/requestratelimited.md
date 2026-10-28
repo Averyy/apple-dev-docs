@@ -21,7 +21,7 @@ An error that occurs when CloudKit rate-limits requests.
 static var requestRateLimited: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check for a [`CKErrorRetryAfterKey`](../ckerrorretryafterkey.md) key in the [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary of any CloudKit error that you receive. It’s especially important to check for it if you receive any of these errors. Use the value of the [`CKErrorRetryAfterKey`](../ckerrorretryafterkey.md) key as the number of seconds to wait before retrying this operation.
 

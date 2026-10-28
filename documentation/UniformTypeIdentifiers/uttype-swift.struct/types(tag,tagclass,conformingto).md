@@ -21,7 +21,7 @@ Returns an array of types from the provided tag and tag class.
 static func types(tag: String, tagClass: UTTagClass, conformingTo supertype: UTType?) -> [UTType]
 ```
 
-#### Discussion
+## Discussion
 
 If the system doesn’t find any types with the provided tag but the inputs were otherwise valid, it may provide a dynamic type. The initializer returns an empty array if the inputs aren’t valid.
 

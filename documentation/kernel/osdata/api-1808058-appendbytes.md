@@ -12,11 +12,11 @@ virtual bool appendBytes(
  const OSData *aDataObj);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the new data was successfully added, `false` on failure.
 
-#### Overview
+## Overview
 
 This function immediately resizes the OSData's buffer, if necessary, to accommodate the new total size.
 

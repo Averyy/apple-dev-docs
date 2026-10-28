@@ -28,11 +28,11 @@ func accessLog() -> AVPlayerItemAccessLog?
 - (AVPlayerItemAccessLog *) accessLog;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents a snapshot of the network access log. The returned value can be `nil`.
 
-#### Discussion
+## Discussion
 
 If the method returns `nil`, there is no logging information currently available for the player item.
 

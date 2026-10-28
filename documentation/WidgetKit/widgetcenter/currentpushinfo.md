@@ -20,7 +20,7 @@ Provides the current push information for widget reloads and relevance refreshes
 var currentPushInfo: WidgetPushInfo? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 May be nil if the token has not completed generation, or if no widgets have been configured for push.
 

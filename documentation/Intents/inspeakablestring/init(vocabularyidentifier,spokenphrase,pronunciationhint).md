@@ -25,7 +25,7 @@ init(vocabularyIdentifier: String, spokenPhrase: String, pronunciationHint: Stri
 - (instancetype) initWithVocabularyIdentifier:(NSString *) vocabularyIdentifier spokenPhrase:(NSString *) spokenPhrase pronunciationHint:(NSString *) pronunciationHint;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized speakable string object.
 

@@ -21,7 +21,7 @@ case notificationCenterClearAll
 SRNotificationEventNotificationCenterClearAll
 ```
 
-#### Discussion
+## Discussion
 
 Device usage reports this event when the user clears all notifications in Notification Center.
 

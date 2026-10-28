@@ -22,7 +22,7 @@ var printingItem: Any? { get set }
 @property (nonatomic, copy, nullable) id printingItem;
 ```
 
-#### Discussion
+## Discussion
 
 The object must be an instance of the [`NSURL`](../../Foundation/nsurl.md), [`NSData`](../../Foundation/nsdata.md), or [`UIImage`](../uiimage.md) class. An object of the first two types must reference or contain image data or PDF data. `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](../../Foundation/nsdata.md) object with a registered protocol. Image data (including that encapsulated by [`UIImage`](../uiimage.md)) must be in a format supported by the Image I/O framework; see [`UIImage`](../uiimage.md) for more information. The object is released at the end of the print job. The default value is `nil`.
 

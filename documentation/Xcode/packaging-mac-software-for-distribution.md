@@ -5,7 +5,7 @@
 
 Build a zip archive, disk image, or installer package for distributing your Mac software.
 
-#### Overview
+## Overview
 
 Xcode handles many common scenarios for Mac software distribution, such as uploading your app to the Mac App Store. Some products that you build with Xcode or with third-party developer tools require other steps for distribution. These products include the following:
 
@@ -18,7 +18,7 @@ If you can’t build and distribute your product using Xcode alone, choose a con
 
 > **Note**: If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
 
-#### Decide on a container format
+## Decide on a container format
 
 To get started, decide on your container format. Mac products support two distribution channels:
 
@@ -35,7 +35,7 @@ You can nest these containers. For example, you might want to ship an app inside
 
 Sign your code, and sign each nested container that supports signing. For example, if you ship an app inside an installer package on a disk image, sign the app, create the installer package, sign that package, create the disk image, and then sign the disk image. For more information about signing code for distribution, see [Creating distribution-signed code for macOS](./creating-distribution-signed-code-for-the-mac.md).
 
-#### Build a zip archive
+## Build a zip archive
 
 If you choose to distribute your product in a zip archive, use the `ditto` command-line tool to create that archive:
 
@@ -48,7 +48,7 @@ If you choose to distribute your product in a zip archive, use the `ditto` comma
 
 In this example command, `<PathToDirectory>` is the path to the directory you create in step 1, and `<PathToZip>` is the location where `ditto` should create the zip archive. You can’t sign zip archives, but you can sign their contents.
 
-#### Build an Installer package
+## Build an Installer package
 
 If you choose to distribute your product in an Installer package, start by determining your Installer signing identity. Choose the right identity for your distribution channel:
 
@@ -84,7 +84,7 @@ Make the following substitutions to this command:
 
 If you have a more complex product, you’ll need a more complex Installer package.  For more details on how to work with Installer packages, see the [productbuild](x-man-page://1/productbuild), [productsign](x-man-page://1/productsign), [pkgbuild](x-man-page://1/pkgbuild), and [pkgutil](x-man-page://1/pkgutil) man (manual) pages.
 
-#### Build a disk image file
+## Build a disk image file
 
 If you choose to distribute your product in a disk image file (`.dmg`), follow these steps:
 
@@ -114,11 +114,11 @@ You can use a third-party tool to configure a disk image for distribution. For e
 - Is signed with your Developer ID Application code-signing identity
 - Is a UDIF-format read-only zip-compressed disk image (type `UDZO`)
 
-#### Submit your app to the Mac App Store
+## Submit your app to the Mac App Store
 
 If you’re creating an app for the Mac App Store, submit your signed installer package using either the `altool` command-line tool or the Transporter app.  For detailed instructions, see [App Store Connect Help > Reference > Upload tools](https://help.apple.com/app-store-connect/#/devb1c185036).
 
-#### Notarize your product
+## Notarize your product
 
 If you distribute your product directly, notarize the file you intend to distribute to your users. For more information, see [Customizing the notarization workflow](../Security/customizing-the-notarization-workflow.md). Skip the “Export a package for notarization” section because you already have the file that you want to submit.
 
@@ -126,7 +126,7 @@ If you distribute your product using nested containers, only notarize the outerm
 
 If you use a third-party installer tool, refer to [Customizing the notarization workflow](../Security/customizing-the-notarization-workflow.md).
 
-#### Staple your product
+## Staple your product
 
 Once you’ve notarized your product, staple the resulting ticket to the file you intend to distribute. For information about how to do this for an app within a zip archive, see “Staple the Ticket to Your Distribution” in [Customizing the notarization workflow](../Security/customizing-the-notarization-workflow.md). The other common container formats, installer packages and disk images, support stapling directly.  For example, to staple a ticket to a disk image:
 
@@ -136,7 +136,7 @@ Once you’ve notarized your product, staple the resulting ticket to the file yo
 
 If you don’t staple the ticket to your distribution file, Gatekeeper might block a user from installing or using your product while their Mac is offline.
 
-#### Test your distributed product
+## Test your distributed product
 
 For products that you distribute directly, test that the product works correctly when you use it from the installer package, disk image, or zip file you created. If possible, do this testing on a different Mac than the one where you develop the software, so that development data doesn’t affect the test outcomes. Consider these scenarios:
 

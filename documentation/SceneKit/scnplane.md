@@ -25,7 +25,7 @@ class SCNPlane
 @interface SCNPlane : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929811@2x.png)
 

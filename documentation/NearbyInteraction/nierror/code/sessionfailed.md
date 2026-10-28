@@ -22,7 +22,7 @@ case sessionFailed
 NIErrorCodeSessionFailed
 ```
 
-#### Discussion
+## Discussion
 
 To continue interaction with the peer of a failed session, an app must begin a new session.
 

@@ -21,7 +21,7 @@ The subscription options to merchandise by sections.
 var sections: [SubscriptionStoreControlStyleConfiguration.Section] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`sections`](./sections.md) property represents the main content of your subscription store control style, including the auto-renewable subscription products.
 

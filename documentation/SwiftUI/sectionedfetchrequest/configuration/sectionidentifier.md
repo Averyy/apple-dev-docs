@@ -21,7 +21,7 @@ The request’s section identifier key path.
 var sectionIdentifier: KeyPath<Result, SectionIdentifier>
 ```
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new section identifier. You can’t change the section identifier type without creating a new fetch request. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../configuration.md).
 

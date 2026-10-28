@@ -15,7 +15,7 @@ The deprecated request payload for updating a cost-per-acquisition goal. Use `bi
 object AdGroupUpdate.CpaCap
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
 

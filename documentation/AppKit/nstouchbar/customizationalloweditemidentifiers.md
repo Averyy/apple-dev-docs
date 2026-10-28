@@ -22,7 +22,7 @@ var customizationAllowedItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 @property (copy) NSArray<NSString *> * customizationAllowedItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 The customization UI shows these items in additional to the items in [`defaultItemIdentifiers`](./defaultitemidentifiers.md).
 

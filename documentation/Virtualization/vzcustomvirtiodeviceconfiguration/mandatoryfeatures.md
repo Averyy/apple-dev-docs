@@ -19,7 +19,7 @@ var mandatoryFeatures: VZVirtioFeatureSet { get }
 @property (strong, readonly) VZVirtioFeatureSet * mandatoryFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The mandatory features are the set of features that the device offers and the guest must accept. The framework won’t successfully initialize the device if the guest driver fails to accept this set of features. The feature bit `VIRTIO_F_VERSION_1` is always set to `1` internally by default.
 

@@ -24,7 +24,7 @@ func cancelAllCGImageGeneration()
 - (void) cancelAllCGImageGeneration;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invokes the handler block with a result of [`AVAssetImageGenerator.Result.cancelled`](./result/cancelled.md) for all requested times for which the generator hasn’t yet produced an image.
 

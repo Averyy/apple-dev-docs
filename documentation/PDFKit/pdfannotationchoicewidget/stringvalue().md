@@ -19,11 +19,11 @@ func stringValue() -> String!
 - (NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 The string that represents the selection in the widget annotation.
 
-#### Discussion
+## Discussion
 
 If the widget annotation object is backed by PDF form data, this method returns the value associated with the appropriate field in the form object, if possible.
 

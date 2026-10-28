@@ -15,7 +15,7 @@ A primary text for the notification.
 let title: String?
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the notification’s main display text. For supplementary text, see [`subtitle`](./subtitle.md).
 

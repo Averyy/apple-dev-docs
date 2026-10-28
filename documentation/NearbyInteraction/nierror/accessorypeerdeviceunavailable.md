@@ -17,7 +17,7 @@ An error that indicates the peer Bluetooth accessory isn’t connected or paired
 static var accessoryPeerDeviceUnavailable: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more on the backgrounding requirements of accessory interaction, see [`NINearbyAccessoryConfiguration`](../ninearbyaccessoryconfiguration.md).
 

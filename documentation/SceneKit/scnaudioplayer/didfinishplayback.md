@@ -25,7 +25,7 @@ var didFinishPlayback: (() -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^didFinishPlayback)();
 ```
 
-#### Discussion
+## Discussion
 
 The block takes no parameters and returns no value. Use this block to perform actions when a sound finishes playing. For example, after a line of spoken character dialogue finishes playing, you might start playing another line of dialogue.
 

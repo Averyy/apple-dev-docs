@@ -17,7 +17,7 @@ var kOBEXHeaderIDAuthorizationResponse: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDAuthorizationResponse
 ```
 
-#### Discussion
+## Discussion
 
 Authentication digest-reponse.
 

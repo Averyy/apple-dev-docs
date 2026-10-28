@@ -15,7 +15,7 @@ Sets the depth alignment for this layout.
 func depthAlignment(_ alignment: DepthAlignment) -> some Layout
 ```
 
-#### Discussion
+## Discussion
 
 Use `depthAlignment(_:)` to specify a depth guide for aligning subviews of this layout.
 

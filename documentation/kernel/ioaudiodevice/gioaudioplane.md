@@ -9,7 +9,7 @@
 static const IORegistryPlane *gIOAudioPlane;
 ```
 
-#### Overview
+## Overview
 
 A static IORegistryPlane representing the new IOAudioPlane that the IOAudioFamily uses to represent the signal chain of the device.
 

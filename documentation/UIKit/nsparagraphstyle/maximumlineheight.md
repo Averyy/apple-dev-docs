@@ -24,7 +24,7 @@ var maximumLineHeight: CGFloat { get }
 @property (nonatomic, readonly) CGFloat maximumLineHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the maximum height in points that any line in the receiver occupies, regardless of the font size or size of any attached graphic. This value is always nonnegative. The default value is `0`.
 

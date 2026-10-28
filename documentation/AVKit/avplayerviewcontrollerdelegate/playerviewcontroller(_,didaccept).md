@@ -23,7 +23,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to replace the player’s current player item with a player item for the proposed content.
 

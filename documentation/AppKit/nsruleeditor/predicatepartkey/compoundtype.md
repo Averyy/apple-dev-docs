@@ -19,7 +19,7 @@ static let compoundType: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateCompoundType;
 ```
 
-#### Discussion
+## Discussion
 
 If specified, the other keys are ignored and the predicate for the row will be an [`NSCompoundPredicate`](../../../Foundation/nscompoundpredicate.md) predicate whose subpredicates are the predicates of the subrows of the given row.
 

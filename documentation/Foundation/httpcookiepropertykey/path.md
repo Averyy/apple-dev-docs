@@ -25,7 +25,7 @@ static let path: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookiePath;
 ```
 
-#### Discussion
+## Discussion
 
 This cookie attribute is required.
 

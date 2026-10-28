@@ -21,7 +21,7 @@ static let wristTemperature: SRSensor
 extern SRSensor const SRSensorWristTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRWristTemperature`](../srwristtemperature.md).
 

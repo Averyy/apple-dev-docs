@@ -25,11 +25,11 @@ func CTFramesetterCreateWithAttributedString(_ attrString: CFAttributedString) -
 extern CTFramesetterRefCTFramesetterCreateWithAttributedString(CFAttributedStringRef attrString);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a framesetter object if the call is successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 Use the framesetter object to create and fill text frames with the [`CTFramesetterCreateFrame(_:_:_:_:)`](./ctframesettercreateframe%28_,_,_,_%29.md) call.
 

@@ -25,11 +25,11 @@ func propertyListFromStringsFileFormat() -> [AnyHashable : Any]?
 - (NSDictionary *) propertyListFromStringsFileFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary object initialized with the keys and values found in the receiver
 
-#### Discussion
+## Discussion
 
 The receiver must contain text in the format used for `.strings` files. In this format, keys and values are separated by an equal sign, and each key-value pair is terminated with a semicolon. The value is optional—if not present, the equal sign is also omitted. The keys and values themselves are always strings enclosed in straight quotation marks. Comments may be included, delimited by `/*` and `*/` as for ANSI C comments. Here’s a short example of a strings file:
 

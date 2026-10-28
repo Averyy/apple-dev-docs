@@ -15,7 +15,7 @@ A handle that represents a single recipient or sender, as identified by a URI.
 case uri(RCSHandle.URI)
 ```
 
-#### Discussion
+## Discussion
 
 To create a URI handle from a phone number, use the [`phoneNumber(_:)`](./phonenumber%28_%29.md) method. The created URI will use the `tel:` scheme.
 

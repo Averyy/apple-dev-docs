@@ -23,7 +23,7 @@ var error: (any Error)? { get }
 @property (nonatomic, copy, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The system may return one of the errors listed in the table below.
 

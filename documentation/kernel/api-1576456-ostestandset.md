@@ -15,11 +15,11 @@ Bit test and set operation, performed atomically with respect to all devices tha
 Boolean OSTestAndSet(UInt32 bit, volatile UInt8 *startAddress);
 ```
 
-#### Return Value
+## Return Value
 
 true if the bit was already set, false otherwise.
 
-#### Discussion
+## Discussion
 
 This function guarantees atomicity only with main system memory. It is specifically unsuitable for use on noncacheable memory such as that in devices; this function cannot guarantee atomicity, for example, on memory mapped from a PCI device. Additionally, this function incorporates a memory barrier on systems with weakly-ordered memory architectures.
 

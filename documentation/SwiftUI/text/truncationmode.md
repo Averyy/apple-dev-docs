@@ -21,7 +21,7 @@ The type of truncation to apply to a line of text when it’s too long to fit in
 enum TruncationMode
 ```
 
-#### Overview
+## Overview
 
 When a text view contains more text than it’s able to display, the view might truncate the text and place an ellipsis (…) at the truncation point. Use the [`truncationMode(_:)`](../view/truncationmode%28_%29.md) modifier with one of the `TruncationMode` values to indicate which part of the text to truncate, either at the beginning, in the middle, or at the end.
 

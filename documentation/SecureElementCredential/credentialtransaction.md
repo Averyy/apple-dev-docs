@@ -20,7 +20,7 @@ class CredentialTransaction
 
 - [Accessing and using secure element credentials](./accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 Use the [`transactionTask(_:action:)`](../SwiftUI/view/transactiontask%28_,action%29.md) view modifier to create a task for working with a credential. The `action` closure receives a `CredentialTransaction` instance that it can perform actions on.
 

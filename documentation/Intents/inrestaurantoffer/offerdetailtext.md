@@ -30,7 +30,7 @@ var offerDetailText: String { get set }
 @property (atomic, copy) NSString * offerDetailText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to explain a special offer in more detail.
 

@@ -19,7 +19,7 @@ var isMiniaturizable: Bool { get }
 @property (readonly, getter=isMiniaturizable) BOOL miniaturizable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value coding compliant.
 

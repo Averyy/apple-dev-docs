@@ -15,7 +15,7 @@ Implement `shouldAcceptDirectInteraction(initialValue:handoffValue)` to provide 
 func shouldAcceptDirectInteraction(initialValue: TabletopInteraction.Value, handoffValue: TabletopInteraction.Value?) -> TabletopInteraction.NewDirectInteractionIntent
 ```
 
-#### Return Value
+## Return Value
 
 The intent that describes the action to be taken on this new interaction (reject or accept with constants and configuration)
 

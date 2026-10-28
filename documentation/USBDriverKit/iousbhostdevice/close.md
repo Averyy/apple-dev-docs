@@ -15,11 +15,11 @@ Closes the session to the host device.
 virtual kern_return_t Close(IOService *forClient, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method closes a session to a device that you previously opened using the [`Open`](./open.md) method. The method acquires the service’s workloop lock, and aborts any I/O initiated by the client service. This method may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md) to allow for the processing of aborted I/O before returning.
 

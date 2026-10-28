@@ -21,7 +21,7 @@ A type that replaces the layers of one symbol-based image with those of another.
 struct ReplaceSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A replace transition animates the change from one symbol image to another. You choose from one of the predefined scaling animations: Down-Up, Off-Up, and Up-Up.
 

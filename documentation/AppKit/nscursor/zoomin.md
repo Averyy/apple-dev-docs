@@ -22,7 +22,7 @@ class var zoomIn: NSCursor { get }
 @property (class, strong, readonly) NSCursor * zoomInCursor;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This cursor is used to indicate zooming in on (magnifying) a canvas or object.
 

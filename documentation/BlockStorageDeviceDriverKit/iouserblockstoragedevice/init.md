@@ -15,11 +15,11 @@ Handles the basic initialization of the service.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if initialization was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The system calls this method shortly after it instantiates your custom `IOUserBlockStorageDevice` subclass, and before it calls the [`Start`](./start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 

@@ -18,7 +18,7 @@ case VMNET_MEM_FAILURE
 VMNET_MEM_FAILURE
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure caused by running out of memory.
 

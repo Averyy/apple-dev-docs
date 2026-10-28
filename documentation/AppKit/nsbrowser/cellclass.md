@@ -19,11 +19,11 @@ class var cellClass: AnyClass { get }
 @property (class, readonly) Class cellClass;
 ```
 
-#### Return Value
+## Return Value
 
 Always returns the `NSBrowserCell` class (even if the developer has sent a [`setCellClass(_:)`](./setcellclass%28_%29.md) message to a particular instance).
 
-#### Discussion
+## Discussion
 
 This method is used by `NSControl` during initialization and is not meant to be used by applications.
 

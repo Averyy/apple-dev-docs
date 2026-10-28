@@ -12,7 +12,7 @@ Future occurrences of the recurring payment.
 object RecurringPaymentDetails.ScheduledPayments
 ```
 
-#### Discussion
+## Discussion
 
 For installments, include all payments of the plan.
 

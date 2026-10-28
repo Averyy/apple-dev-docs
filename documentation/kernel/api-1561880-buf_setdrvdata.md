@@ -15,7 +15,7 @@ Set driver-specific data on a buffer.
 void buf_setdrvdata(buf_t bp, void *drvdata);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

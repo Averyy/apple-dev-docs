@@ -19,7 +19,7 @@ case contentDisallowedByProfile
 AVKitErrorContentDisallowedByProfile
 ```
 
-#### Discussion
+## Discussion
 
 The user can’t override this restriction by entering the device passcode, but they may be able to override it in the Settings app.
 

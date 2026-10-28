@@ -19,7 +19,7 @@ func SCNetworkServiceRemove(_ service: SCNetworkService) -> Bool
 Boolean SCNetworkServiceRemove(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the service was removed; `FALSE` if an error occurred.
 

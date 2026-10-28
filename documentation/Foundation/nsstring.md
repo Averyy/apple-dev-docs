@@ -29,7 +29,7 @@ class NSString
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 You can use this type in Swift when you need reference semantics or other Foundation-specific behavior.
 
@@ -37,7 +37,7 @@ The [`NSString`](./nsstring.md) class and its mutable subclass, [`NSMutableStrin
 
 [`NSString`](./nsstring.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFString`](../CoreFoundation/cfstring.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### String Objects
+### String Objects
 
 An [`NSString`](./nsstring.md) object encodes a Unicode-compliant text string, represented as a sequence of UTF–16 code units. All lengths, character indexes, and ranges are expressed in terms of 16-bit platform-endian values, with index values starting at `0`.
 
@@ -49,7 +49,7 @@ The objects you create using [`NSString`](./nsstring.md) and [`NSMutableString`]
 
 Because of the nature of class clusters, string objects aren’t actual instances of the [`NSString`](./nsstring.md) or [`NSMutableString`](./nsmutablestring.md) classes but of one of their private subclasses. Although a string object’s class is private, its interface is public, as declared by these abstract superclasses, [`NSString`](./nsstring.md) and [`NSMutableString`](./nsmutablestring.md). The string classes adopt the [`NSCopying`](./nscopying.md) and [`NSMutableCopying`](./nsmutablecopying.md) protocols, making it convenient to convert a string of one type to the other.
 
-###### Understanding Characters
+#### Understanding Characters
 
 A string object presents itself as a sequence of UTF–16 code units. You can determine how many UTF-16 code units a string object contains with the [`length`](./nsstring/length.md) method and can retrieve a specific UTF-16 code unit with the [`character(at:)`](./nsstring/character%28at%29.md) method. These two “primitive” methods provide basic access to a string object.
 
@@ -57,23 +57,23 @@ Most use of strings, however, is at a higher level, with the strings being treat
 
 Localized string comparisons are based on the Unicode Collation Algorithm, as tailored for different languages by CLDR (Common Locale Data Repository). Both are projects of the Unicode Consortium. Unicode is a registered trademark of Unicode, Inc.
 
-###### Interpreting UTF-16-Encoded Data
+#### Interpreting UTF-16-Encoded Data
 
 When creating an `NSString` object from a UTF-16-encoded string (or a byte stream interpreted as UTF-16), if the byte order is not otherwise specified, `NSString` assumes that the UTF-16 characters are big-endian, unless there is a BOM (byte-order mark), in which case the BOM dictates the byte order. When creating an `NSString` object from an array of `unichar` values, the returned string is always native-endian, since the array always contains UTF–16 code units in native byte order.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 It is possible to subclass [`NSString`](./nsstring.md) (and [`NSMutableString`](./nsmutablestring.md)), but doing so requires providing storage facilities for the string (which is not inherited by subclasses) and implementing two primitive methods. The abstract [`NSString`](./nsstring.md) and [`NSMutableString`](./nsmutablestring.md) classes are the public interface of a class cluster consisting mostly of private, concrete classes that create and return a string object appropriate for a given situation. Making your own concrete subclass of this cluster imposes certain requirements (discussed in [Methods to Override](./nsstring.md#Methods-to-Override)).
 
 Make sure your reasons for subclassing [`NSString`](./nsstring.md) are valid. Instances of your subclass should represent a string and not something else. Thus the only attributes the subclass should have are the length of the character buffer it’s managing and access to individual characters in the buffer. Valid reasons for making a subclass of [`NSString`](./nsstring.md) include providing a different backing store (perhaps for better performance) or implementing some aspect of object behavior differently, such as memory management. If your purpose is to add non-essential attributes or metadata to your subclass of [`NSString`](./nsstring.md), a better alternative would be object composition (see [Alternatives to Subclassing](./nsstring.md#Alternatives-to-Subclassing)). Cocoa already provides an example of this with the [`NSAttributedString`](./nsattributedstring.md) class.
 
-###### Methods to Override
+#### Methods to Override
 
 Any subclass of `NSString`   *must* override the primitive instance methods [`length`](./nsstring/length.md) and [`character(at:)`](./nsstring/character%28at%29.md). These methods must operate on the backing store that you provide for the characters of the string. For this backing store you can use a static array, a dynamically allocated buffer, a standard `NSString` object, or some other data type or mechanism. You may also choose to override, partially or fully, any other `NSString` method for which you want to provide an alternative implementation. For example, for better performance it is recommended that you override [`getCharacters(_:range:)`](./nsstring/getcharacters%28_,range%29.md) and give it a faster implementation.
 
 You might want to implement an initializer for your subclass that is suited to the backing store that the subclass is managing. The `NSString` class does not have a designated initializer, so your initializer need only invoke the [`init()`](../ObjectiveC/nsobject-swift.class/init%28%29.md) method of `super`. The `NSString` class adopts the [`NSCopying`](./nscopying.md), [`NSMutableCopying`](./nsmutablecopying.md), and [`NSCoding`](./nscoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 Often a better and easier alternative to making a subclass of `NSString`—or of any other abstract, public class of a class cluster, for that matter—is object composition. This is especially the case when your intent is to add to the subclass metadata or some other attribute that is not essential to a string object. In object composition, you would have an `NSString` object as one instance variable of your custom class (typically a subclass of `NSObject`) and one or more instance variables that store the metadata that you want for the custom object. Then just design your subclass interface to include accessor methods for the embedded string object and the metadata.
 

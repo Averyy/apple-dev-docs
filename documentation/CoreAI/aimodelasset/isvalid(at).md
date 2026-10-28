@@ -19,11 +19,11 @@ Returns a Boolean value that indicates whether the URL contains a valid model as
 static func isValid(at url: URL) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the URL points to a valid model asset; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This checks that:
 

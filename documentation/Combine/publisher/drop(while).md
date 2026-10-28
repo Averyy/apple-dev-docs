@@ -21,11 +21,11 @@ Omits elements from the upstream publisher until a given closure returns false, 
 func drop(while predicate: @escaping (Self.Output) -> Bool) -> Publishers.DropWhile<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that skips over elements until the provided closure returns `false`.
 
-#### Discussion
+## Discussion
 
 Use [`drop(while:)`](./drop%28while%29.md) to omit elements from an upstream publisher until the element received meets a condition you specify.
 

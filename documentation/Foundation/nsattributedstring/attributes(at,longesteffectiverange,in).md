@@ -25,7 +25,7 @@ func attributes(at location: Int, longestEffectiveRange range: NSRangePointer?, 
 - (NSDictionary<NSString *,id> *) attributesAtIndex:(NSUInteger) location longestEffectiveRange:(NSRangePointer) range inRange:(NSRange) rangeLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` or any part of `rangeLimit` lies beyond the end of the receiver’s characters.
 

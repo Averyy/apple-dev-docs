@@ -22,7 +22,7 @@ class let touchBarGoDownTemplateName: String
 extern NSImageName const NSImageNameTouchBarGoDownTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for go down](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793520@2x.png)
 

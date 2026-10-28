@@ -24,11 +24,11 @@ class func predicateForElectrocardiograms(symptomsStatus: HKElectrocardiogram.Sy
 + (NSPredicate *) predicateForElectrocardiogramsWithSymptomsStatus:(HKElectrocardiogramSymptomsStatus) symptomsStatus;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches electrocardiogram samples with the specified symptom status.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches electrocardiogram samples with the specified symptom status. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

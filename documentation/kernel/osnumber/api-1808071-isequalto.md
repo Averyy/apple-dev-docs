@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the objects are equal, `false` if not.
 
-#### Overview
+## Overview
 
 An OSNumber is considered equal to another object if that object is derived from OSNumber and represents the same C integer value.
 

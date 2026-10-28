@@ -25,7 +25,7 @@ var quotationBeginDelimiter: String { get }
 @property (copy, readonly) NSString * quotationBeginDelimiter;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of begin quotation symbols include `"“"`, `"„"`, `"«"`, and `"「"`.
 

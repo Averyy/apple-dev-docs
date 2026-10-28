@@ -18,7 +18,7 @@ Default layer keys to apply LoRA adapters to.
 var loraDefaultKeys: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Used when not specified in `adapter_config.json`. Otherwise, keys from the config are applied.
 

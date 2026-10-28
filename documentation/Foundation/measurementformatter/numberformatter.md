@@ -26,7 +26,7 @@ var numberFormatter: NumberFormatter! { get set }
 @property (copy, null_resettable) NSNumberFormatter * numberFormatter;
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, an [`NumberFormatter`](../numberformatter.md) object with [`NumberFormatter.Style.decimal`](../numberformatter/style/decimal.md) style is used.
 

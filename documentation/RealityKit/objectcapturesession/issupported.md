@@ -17,7 +17,7 @@ A Boolean that indicates whether the current device supports object capture sess
 static var isSupported: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Before creating an object capture session, check this value to make sure the current device supports the feature. If `false`, attempting to create an `ObjectCaptureSession` will result in a runtime error.
 

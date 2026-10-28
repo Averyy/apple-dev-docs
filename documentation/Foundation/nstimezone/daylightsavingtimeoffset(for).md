@@ -25,7 +25,7 @@ func daylightSavingTimeOffset(for aDate: Date) -> TimeInterval
 - (NSTimeInterval) daylightSavingTimeOffsetForDate:(NSDate *) aDate;
 ```
 
-#### Return Value
+## Return Value
 
 The daylight saving time offset for `aDate`.
 

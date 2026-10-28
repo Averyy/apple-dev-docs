@@ -19,7 +19,7 @@ func SCNetworkSetContainsInterface(_ set: SCNetworkSet, _ interface: SCNetworkIn
 Boolean SCNetworkSetContainsInterface(SCNetworkSetRef set, SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the interface is represented in the set; otherwise, `FALSE`.
 

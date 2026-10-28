@@ -21,7 +21,7 @@ case appStoreConnectDefault
 
 - [Supporting promoted Apple In-App Purchases in your app](../../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 When a promoted Apple In-App Purchase has a visibility value of [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](./appstoreconnectdefault.md), the Apple In-App Purchase is:
 

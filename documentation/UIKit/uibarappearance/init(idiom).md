@@ -23,7 +23,7 @@ init(idiom: UIUserInterfaceIdiom)
 - (instancetype) initWithIdiom:(UIUserInterfaceIdiom) idiom;
 ```
 
-#### Return Value
+## Return Value
 
 A new bar appearance object containing default values for the specified idiom.
 

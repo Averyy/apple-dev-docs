@@ -21,7 +21,7 @@ let kSecPaddingKey: CFString
 extern CFStringRef const kSecPaddingKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not supply a value for this key, an appropriate value will be supplied for you. See [Padding Types](./transform-attributes.md#Padding-Types) for a list of valid values.
 

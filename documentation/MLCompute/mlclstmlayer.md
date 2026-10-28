@@ -23,7 +23,7 @@ class MLCLSTMLayer
 @interface MLCLSTMLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 Use this class to create an LSTM layer with one of the following configurations:
 

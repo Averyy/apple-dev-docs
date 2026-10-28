@@ -24,11 +24,11 @@ func regionOfInterest(for image: CIImage, in rect: CGRect) -> CGRect
 - (CGRect) regionOfInterestForImage:(CIImage *) image inRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the coordinate space of the input image (the `im` parameter).
 
-#### Discussion
+## Discussion
 
 The region of interest is the rectangle containing pixel data in a source image (the `im` parameter) necessary to produce a corresponding rectangle in the output image. If the image is not the output of a filter (or of a chain or graph of several [`CIFilter`](../cifilter-swift.class.md) objects), or the image in the `im` parameter is not an input to that filter, the rectangle returned is the same as that in the `r` parameter.
 

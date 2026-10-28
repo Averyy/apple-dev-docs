@@ -19,11 +19,11 @@ func SpeakCFString(_ chan: SpeechChannel, _ aString: CFString, _ options: CFDict
 OSErr SpeakCFString(SpeechChannel chan, CFStringRef aString, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SpeakCFString` function is the Core Foundation-based equivalent of the [`SpeakBuffer`](./api-1552252-speakbuffer.md) function.
 

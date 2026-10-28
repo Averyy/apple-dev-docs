@@ -22,7 +22,7 @@ enum SLRequestMethod
 enum SLRequestMethod : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use this constant to set the [`requestMethod`](./slrequest/requestmethod.md) property. The type of request to use depends on the target service. For links to documentation for the supported services, see Table 1 in [`SLRequest`](./slrequest.md).
 

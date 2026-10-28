@@ -14,7 +14,7 @@
 #define kFFEffectType_Triangle_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a triangle wave effect type
 

@@ -20,7 +20,7 @@ class Configuration
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 In SwiftUI apps, you fetch a `Configuration` for use in calling the [`transactionTask(_:action:)`](../../SwiftUI/view/transactiontask%28_,action%29.md) view modifier to perform wired transactions and card emulation. Inside the task closure, call [`invalidate()`](./configuration/invalidate%28%29.md) on the configuration when you finish your transaction work.
 

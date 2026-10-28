@@ -19,7 +19,7 @@ var volume: Float { get set }
 @property float volume;
 ```
 
-#### Discussion
+## Discussion
 
 The valid range is between `0.0` and `1.0`.
 

@@ -23,7 +23,7 @@ func encodeRender(to commandBuffer: any MTLCommandBuffer, sourceRGBA: any MTLTex
 - (BOOL) encodeRenderToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceRGBA:(id<MTLTexture>) sourceRGBA sourceDisparity:(id<MTLTexture>) sourceDisparity destinationRGBA:(id<MTLTexture>) destinationRGBA fNumber:(float) fNumber focusDisparity:(float) focusDisparity;
 ```
 
-#### Return Value
+## Return Value
 
 YES if encoding succeeded; NO if required resources are unavailable or if the provided textures are incompatible.
 

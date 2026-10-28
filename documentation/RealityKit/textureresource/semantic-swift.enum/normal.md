@@ -20,7 +20,7 @@ Use the texture to store surface normals.
 case normal
 ```
 
-#### Discussion
+## Discussion
 
 Properties that specify a semantic of `normal` use the texture to store tangent-space surface normal vectors for use in lighting calculations. Each pixel’s `R` channel stores the `X` value from the vector. The `G` channel stores the `Y` value from the vector, and the `B` channel stores the `Z` value from the vector. All values are between `-1.0` and `1.0`.
 

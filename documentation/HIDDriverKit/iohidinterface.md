@@ -16,7 +16,7 @@ A provider object for a HID device’s interface.
 class IOHIDInterface;
 ```
 
-#### Overview
+## Overview
 
 An `IOHIDInterface` object represents a specific interface of the HID device. Typically, you don’t create `IOHIDInterface` objects directly. Instead, you specify that your driver relies on an `IOHIDInterface` as its provider, and the system creates the interface object for you during the matching process.
 

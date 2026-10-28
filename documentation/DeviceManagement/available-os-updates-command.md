@@ -15,13 +15,13 @@ Get a list of available operating-system updates for a device. Removed: use the 
 
 > **Deprecated**: **Removed** Use the declarative management software update features instead.
 
-#### Discussion
+## Discussion
 
 A device must have a total of `DownloadSize` + `InstallSize` bytes available to successfully install a software update. In macOS, execute the `ScheduleOSUpdateScan` command to update the results that this command returns. In iOS and tvOS, the list only contains the latest available updates.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

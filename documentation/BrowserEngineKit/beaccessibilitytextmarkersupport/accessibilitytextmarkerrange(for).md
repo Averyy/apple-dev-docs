@@ -25,7 +25,7 @@ func accessibilityTextMarkerRange(for range: NSRange) -> BEAccessibilityTextMark
 - (BEAccessibilityTextMarkerRange *) accessibilityTextMarkerRangeForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The text marker range for the text in `range`, or `nil` if the method can’t calculate the range.
 

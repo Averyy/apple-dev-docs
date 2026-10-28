@@ -25,7 +25,7 @@ func NSStringFromRange(_ range: NSRange) -> String
 extern NSString *NSStringFromRange(NSRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A string of the form “{a, b}”, where a and b are non-negative integers representing `aRange`.
 

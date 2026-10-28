@@ -24,7 +24,7 @@ func recognizedPoints(forGroupKey groupKey: VNRecognizedPointGroupKey) throws ->
 - (NSDictionary<NSString *,VNRecognizedPoint3D *> *) recognizedPointsForGroupKey:(VNRecognizedPointGroupKey) groupKey error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of labeled points for the group.
 

@@ -18,7 +18,7 @@ var FFCAP_ET_DAMPER: Int { get }
 FFCAP_ET_DAMPER
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a damper force effect.
 

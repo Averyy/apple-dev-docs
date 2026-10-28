@@ -25,7 +25,7 @@ class func transitInformationCheckingResult(range: NSRange, components: [NSTextC
 + (NSTextCheckingResult *) transitInformationCheckingResultWithRange:(NSRange) range components:(NSDictionary<NSString *,NSString *> *) components;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`transitInformation`](./checkingtype/transitinformation.md).
 

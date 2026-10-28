@@ -20,11 +20,11 @@ func IOUSBGetEndpointDirection(_ descriptor: UnsafePointer<IOUSBEndpointDescript
 uint8_t IOUSBGetEndpointDirection(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The endpoint descriptor indicating the direction.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its transfer direction.
 

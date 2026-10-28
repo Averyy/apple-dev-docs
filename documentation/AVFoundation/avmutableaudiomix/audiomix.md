@@ -21,7 +21,7 @@ Returns a new mutable audio mix.
 + (instancetype) audioMix;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable audio mix.
 

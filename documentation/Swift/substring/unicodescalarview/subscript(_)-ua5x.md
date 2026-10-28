@@ -21,7 +21,7 @@ Accesses a contiguous subrange of the collection’s elements.
 subscript(r: Range<Substring.UnicodeScalarView.Index>) -> Substring.UnicodeScalarView { get }
 ```
 
-#### Overview
+## Overview
 
 For example, using a `PartialRangeFrom` range expression with an array accesses the subrange from the start of the range expression until the end of the array.
 

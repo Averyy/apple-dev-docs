@@ -23,7 +23,7 @@ class INPaymentAccountResolutionResult
 @interface INPaymentAccountResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentAccountResolutionResult`](./inpaymentaccountresolutionresult.md) object is what you return when resolving parameters containing an [`INPaymentAccount`](./inpaymentaccount.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

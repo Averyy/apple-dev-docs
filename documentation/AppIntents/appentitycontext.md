@@ -21,7 +21,7 @@ The context used to scope suggested entity donations to a specific domain.
 struct AppEntityContext
 ```
 
-#### Overview
+## Overview
 
 Pass a `AppEntityContext` when donating or removing entities via [`RelevantEntities`](./relevantentities.md) to associate suggestions with the appropriate part of the app experience.
 

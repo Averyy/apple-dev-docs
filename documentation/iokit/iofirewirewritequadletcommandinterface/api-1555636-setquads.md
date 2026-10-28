@@ -14,7 +14,7 @@
 void (*SetQuads)(IOFireWireLibWriteQuadletCommandRef self, UInt32 inQuads[], UInt32 inNumQuads);
 ```
 
-#### Discussion
+## Discussion
 
 IOFireWireLibWriteQuadletCommandRef
 

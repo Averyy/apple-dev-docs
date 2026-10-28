@@ -14,7 +14,7 @@ The name of the bundle’s main executable class.
 - **Name**: `NSPrincipalClass` (Principal class)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The system uses the class identified by this key to set the [`principalClass`](../../Foundation/bundle/principalclass.md) property of a bundle when it’s loaded.
 

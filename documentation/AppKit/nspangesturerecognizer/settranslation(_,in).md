@@ -19,7 +19,7 @@ func setTranslation(_ translation: NSPoint, in view: NSView?)
 - (void) setTranslation:(NSPoint) translation inView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the current translation value of the gesture recognizer. Changing the value resets the velocity of the pan. You might call this method at mouse-down time to adjust the translation value and make it relative to some specific point in your view.
 

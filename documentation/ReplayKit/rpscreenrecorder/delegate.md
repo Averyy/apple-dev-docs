@@ -26,7 +26,7 @@ weak var delegate: (any RPScreenRecorderDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<RPScreenRecorderDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Set the delegate to respond to changes by the recorder; for example, when the recording stops.
 

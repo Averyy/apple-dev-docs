@@ -20,7 +20,7 @@ nonisolated
 struct RotateGesture
 ```
 
-#### Overview
+## Overview
 
 A rotate gesture tracks how a rotation event sequence changes. To recognize a rotate gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 

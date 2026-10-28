@@ -21,7 +21,7 @@ The captured value, if there was a capture.
 var value: Any? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If nothing was captured, `value` is `nil`.
 

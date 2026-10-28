@@ -19,7 +19,7 @@ The payload that configures the domains under an organization’s management.
 object Domains
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.domains` as the payload type.
 
@@ -39,7 +39,7 @@ Trailing slashes are ignored.
 
 If a domain string contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `\*.example.com:8080` matches `http://site.example.com:8080/page.html` but not `http://site.example.com/page.html`, while the pattern `\*.example.com` matches both URLs.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -51,7 +51,7 @@ If a domain string contains a port number, the system considers only addresses t
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

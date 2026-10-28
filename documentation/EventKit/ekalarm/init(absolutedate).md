@@ -24,7 +24,7 @@ init(absoluteDate date: Date)
 + (EKAlarm *) alarmWithAbsoluteDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 The created alarm.
 

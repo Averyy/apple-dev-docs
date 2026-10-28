@@ -23,7 +23,7 @@ enum IndicatorStyle
 enum UIScrollViewIndicatorStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`indicatorStyle`](./indicatorstyle-swift.property.md) style.
 

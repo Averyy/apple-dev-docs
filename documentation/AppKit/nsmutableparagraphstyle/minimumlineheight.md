@@ -19,7 +19,7 @@ var minimumLineHeight: CGFloat { get set }
 @property CGFloat minimumLineHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the minimum height in points that any line in the receiver will occupy, regardless of the font size or size of any attached graphic. This value must be nonnegative.
 

@@ -19,11 +19,11 @@
 static bool SPPose3DFloatIsValid(SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether a size structure represents a valid size.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether a pose structure represents a valid pose.
 

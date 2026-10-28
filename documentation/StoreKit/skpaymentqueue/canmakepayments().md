@@ -27,7 +27,7 @@ class func canMakePayments() -> Bool
 + (BOOL) canMakePayments;
 ```
 
-#### Discussion
+## Discussion
 
 The Boolean value that this method returns is identical to the value of the type property [`canMakePayments`](../appstore/canmakepayments.md) in the [`AppStore`](../appstore.md) object. For more information about using and interpreting this value, see the type property page [`canMakePayments`](../appstore/canmakepayments.md).
 

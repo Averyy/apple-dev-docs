@@ -21,7 +21,7 @@ The type that provides the URL for an app enum.
 struct EnumURLRepresentation<Enum> where Enum : AppEnum
 ```
 
-#### Overview
+## Overview
 
 If you adopt the [`URLRepresentableEnum`](./urlrepresentableenum.md) protocol in an app enum, use this type to build the URL for your type. Construct the type as a Swift string that contains characters suitable for use in a URL. To adjust the URL dynamically for your content, include a reference to your app enum value as part of the content. The following example shows an app enum type that includes the enum’s current value in the final URL:
 

@@ -15,7 +15,7 @@ Radius targeting used with Apple Maps campaigns to restrict delivery to users wi
 object AdGroupTargetingUpdate.Radius
 ```
 
-#### Discussion
+## Discussion
 
 In practice, radius targeting applies only to `MAPS_SEARCH_RESULTS` campaigns. Avoid combining it with geo location targeting in the same ad group, though the API doesn’t enforce either constraint at the schema level. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 

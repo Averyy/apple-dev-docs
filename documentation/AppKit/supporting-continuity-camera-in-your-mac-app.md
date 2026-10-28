@@ -5,7 +5,7 @@
 
 Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
 
-#### Overview
+## Overview
 
 With Continuity Camera in macOS 10.14 and later, and iOS 12 and later, you can use your iPhone, iPad, or iPod touch to scan documents or take a picture of something nearby and then access those documents or pictures instantly from your app.
 
@@ -17,7 +17,7 @@ Apps using `NSTextView` get Continuity Camera support automatically. When the us
 
 If you’re not using `NSTextView`, you need to add support to your macOS interface to enable Continuity Camera, and to merge photos taken from the user’s iOS device.
 
-##### Enable Support in Your Responder Objects
+### Enable Support in Your Responder Objects
 
 You must tell AppKit that your app can take advantage of any image data originating from Continuity Camera. You do this in responder objects, such as a view controller.
 
@@ -58,7 +58,7 @@ override func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?,
 
 After you implement `validRequestor(forSendType:returnType:)` and specify an object to receive the image data, AppKit enables the Continuity Camera menu item for the designated menus in your app, including contextual menus associated with your view.
 
-##### Add a Continuity Camera Menu Item
+### Add a Continuity Camera Menu Item
 
 The user initiates Continuity Camera by using a menu item in one of your app’s menu bar menus or contextual menus. You can add a Continuity Camera menu item to any of your app’s menu bar menus, or have AppKit automatically add a Continuity Camera menu item to one of your app’s contextual menus. A good place to include a Continuity Camera menu item is in menus that contain options for performing editing-related activities, such as the File and Insert menus.
 
@@ -117,7 +117,7 @@ override func mouseDown(with event: NSEvent) {
 
 When the user selects the Continuity Camera menu item, the system automatically launches the Continuity Camera interface on the user’s device. After the user captures an image, AppKit places that image on the app’s pasteboard.
 
-##### Incorporate the Image Data from the Pasteboard
+### Incorporate the Image Data from the Pasteboard
 
 You need to incorporate the captured images into your app after AppKit places them on the pasteboard. AppKit then calls the active responder object’s [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md) method to read the image data. The `readSelection(from:)` method supports Continuity Camera image data and other types of data in your app. Use that method to determine whether the image is in a format your app supports, and incorporate that image data into your app.
 

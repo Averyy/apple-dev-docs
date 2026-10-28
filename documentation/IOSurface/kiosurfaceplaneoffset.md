@@ -24,7 +24,7 @@ let kIOSurfacePlaneOffset: CFString
 extern CFStringRef const kIOSurfacePlaneOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If not specified then IOSurface will lay out each plane sequentially based on the previous plane’s allocation size.
 

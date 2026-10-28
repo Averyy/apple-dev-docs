@@ -17,7 +17,7 @@ A 2D polygon that represents nonuniform wall heights and floor shapes.
 var polygonCorners: [simd_float3] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s triplet type describes the polygon in local plane coordinates.
 

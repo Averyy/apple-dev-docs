@@ -24,7 +24,7 @@ var functions: [any MTLFunction] { get set }
 @property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLFunction>> * functions;
 ```
 
-#### Discussion
+## Discussion
 
 The function objects need to all be created by the same Metal device object that you’ll use to create the library. The MSL functions referenced by these function objects need to be declared with the `stitchable` attribute, as in the example below:
 

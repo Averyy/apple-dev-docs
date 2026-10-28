@@ -25,7 +25,7 @@ func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String
 - (void) requestTemporaryFullAccuracyAuthorizationWithPurposeKey:(NSString *) purposeKey;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthorization(withPurposeKey:completion:)`](./requesttemporaryfullaccuracyauthorization%28withpurposekey,completion%29.md) method, passing `nil` as the completion closure. Use this method if your app’s logic to respond to changes in location data accuracy is already handled by the [`locationManagerDidChangeAuthorization(_:)`](../cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) delegate method, and your app doesn’t have any work to do in the closure.
 

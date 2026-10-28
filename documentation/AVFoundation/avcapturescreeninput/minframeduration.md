@@ -19,7 +19,7 @@ var minFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime minFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The `minFrameDuration` is the reciprocal of its maximum frame rate.
 

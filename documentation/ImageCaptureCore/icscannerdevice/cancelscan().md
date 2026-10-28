@@ -19,7 +19,7 @@ func cancelScan()
 - (void) cancelScan;
 ```
 
-#### Discussion
+## Discussion
 
 Cancels the scan in progress by calling [`requestOverviewScan()`](./requestoverviewscan%28%29.md) or [`requestScan()`](./requestscan%28%29.md).
 

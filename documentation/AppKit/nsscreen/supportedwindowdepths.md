@@ -19,7 +19,7 @@ var supportedWindowDepths: UnsafePointer<NSWindow.Depth> { get }
 @property (readonly) const NSWindowDepth * supportedWindowDepths;
 ```
 
-#### Discussion
+## Discussion
 
 This is a C-style array of window depths. The returned values cannot be used directly. You must pass each one to a function such as [`bitsPerPixel`](../nswindow/depth/bitsperpixel.md) or [`colorSpaceName`](../nswindow/depth/colorspacename.md) to obtain a concrete value for the desired screen.
 

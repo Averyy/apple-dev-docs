@@ -21,7 +21,7 @@ An opaque type that indicates whether a listener accepts or rejects an incoming 
 struct Decision
 ```
 
-#### Overview
+## Overview
 
 When you create an [`XPCListener`](../../xpclistener.md), you specify a closure that receives an [`XPCListener.IncomingSessionRequest`](../incomingsessionrequest.md). In that closure, you receive a `Decision` from the call to the request’s accept or reject methods. You don’t have to do anything with the decision other than return it from the closure.
 

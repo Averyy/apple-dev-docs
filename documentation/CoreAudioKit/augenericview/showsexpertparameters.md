@@ -19,7 +19,7 @@ var showsExpertParameters: Bool { get set }
 @property BOOL showsExpertParameters;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if controls for expert audio unit parameters are displayed; [`false`](../../Swift/false.md) otherwise.
 

@@ -15,11 +15,11 @@ Create an uninitialized accessory anchor.
 extern ar_accessory_anchor_tar_accessory_anchor_create();
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_accessory_anchor_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

@@ -29,7 +29,7 @@ func viewDidAppear(_ animated: Bool)
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 - [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
 
-#### Discussion
+## Discussion
 
 You can override this method to perform additional tasks associated with presenting the view. If you override this method, you must call `super` at some point in your implementation.
 

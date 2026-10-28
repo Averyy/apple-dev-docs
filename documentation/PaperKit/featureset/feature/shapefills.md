@@ -19,7 +19,7 @@ Supports shapes with fills.
 case shapeFills
 ```
 
-#### Discussion
+## Discussion
 
 If you disable strokes, shapes can always have fills.
 

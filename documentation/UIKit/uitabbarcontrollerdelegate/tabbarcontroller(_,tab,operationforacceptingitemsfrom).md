@@ -26,7 +26,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, tab: UITa
 
 - [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Discussion
+## Discussion
 
 If the operation is either a `.move` or `.copy`, then the drop will proceed and `tabBarController:tab:acceptItemsFromDropSession:` is called. By default, the drop will be treated as a cancel operation if this is not implemented.
 

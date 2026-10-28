@@ -21,7 +21,7 @@ class XCTContext
 - [Adding Attachments to Tests, Activities, and Issues](./adding-attachments-to-tests-activities-and-issues.md)
 - [Grouping Tests into Substeps with Activities](./grouping-tests-into-substeps-with-activities.md)
 
-#### Overview
+## Overview
 
 `XCTContext` provides a way for activities ([`XCTActivity`](./xctactivity.md)) to run against the current testing context, either directly in a test case or in custom testing utilities. You can break up long test methods in UI tests or integration tests into activities to reuse, and to simplify results in the Xcode test reports. Use [`runActivity(named:block:)`](./xctcontext/runactivity%28named,block%29.md) to run a block of code as a named substep in a test. For more information, see [Grouping Tests into Substeps with Activities](./grouping-tests-into-substeps-with-activities.md).
 

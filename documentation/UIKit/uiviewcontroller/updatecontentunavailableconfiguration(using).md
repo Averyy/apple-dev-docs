@@ -20,7 +20,7 @@ Updates the content-unavailable configuration for the provided state.
 @objc(_bridgedUpdateContentUnavailableConfigurationUsingState:) @preconcurrency dynamic func updateContentUnavailableConfiguration(using state: UIContentUnavailableConfigurationState)
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to update the value of [`contentUnavailableConfiguration`](./contentunavailableconfiguration-4b95e.md) as appropriate for the given state.
 

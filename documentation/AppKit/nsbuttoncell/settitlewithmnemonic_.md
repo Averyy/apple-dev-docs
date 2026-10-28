@@ -15,7 +15,7 @@ Sets the title the button displays when it’s in its normal state to the given 
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, [`setTitleWithMnemonic:`](./settitlewithmnemonic_.md) redraws the button cell. Mnemonics are not supported in macOS.
 

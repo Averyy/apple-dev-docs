@@ -16,11 +16,11 @@ nonisolated
 func keyboardShortcut(_ key: KeyEquivalent, modifiers: EventModifiers = .command, localization: KeyboardShortcut.Localization = .automatic) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that can be presented with a keyboard shortcut.
 
-#### Discussion
+## Discussion
 
 A scene’s keyboard shortcut is bound to the command it adds for creating new windows (in the case of `WindowGroup` and `DocumentGroup`) or bringing a singleton window forward (in the case of `Window` and, on macOS, `Settings`). Pressing the keyboard shortcut is equivalent to selecting the menu command.
 
@@ -33,7 +33,7 @@ WindowGroup {
 .keyboardShortcut("n", modifiers: [.option, .command])
 ```
 
-##### Localization
+### Localization
 
 Provide a `localization` value to specify how this shortcut should be localized.
 

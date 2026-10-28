@@ -19,7 +19,7 @@ var highlightsBy: NSCell.StyleMask { get set }
 @property NSCellStyleMask highlightsBy;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the logical OR of one or more of flags described in the “Constants” section of [`NSCell`](../nscell.md).
 

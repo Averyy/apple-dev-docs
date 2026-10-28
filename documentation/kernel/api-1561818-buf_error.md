@@ -15,11 +15,11 @@ Get the error value associated with a buffer.
 errno_t buf_error(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Error value, directly.
 
-#### Discussion
+## Discussion
 
 Errors are set with buf_seterror().
 

@@ -21,7 +21,7 @@ Compares the meaningful file-metadata fields of two `Stat` values.
 static func == (lhs: Stat, rhs: Stat) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Alignment padding and platform reserved/“spare” fields are not compared.
 

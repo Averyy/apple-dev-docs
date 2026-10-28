@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSBoolean *aBoolean) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the OSBoolean objects are equal, `false` if not.
 
-#### Overview
+## Overview
 
 Two OSBoolean objects are considered equal if they are the same exact object (pointer equality).
 

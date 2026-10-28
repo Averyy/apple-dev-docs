@@ -25,7 +25,7 @@ func isAlgorithm(_ algorithm: SecKeyAlgorithm) -> Bool
 - (BOOL) isAlgorithm:(SecKeyAlgorithm) algorithm;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `algorithm` is the target operation algorithm; otherwise, [`false`](../../Swift/false.md).
 

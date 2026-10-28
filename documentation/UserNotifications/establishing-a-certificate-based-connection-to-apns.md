@@ -5,7 +5,7 @@
 
 Secure your communications with Apple Push Notification service (APNs) by installing a certificate on your provider server.
 
-#### Overview
+## Overview
 
 With certificate-based authentication, you use a provider certificate to establish a secure connection between your provider server and APNs. You obtain this certificate from Apple through your developer account.
 
@@ -13,7 +13,7 @@ Because you establish trust at the server level, individual notification request
 
 You can use a provider certificate to send notifications to a single app, the Apple Watch complication, or to background VoIP services associated with a single app. To send remote notifications to multiple apps, you must create separate certificates for each app. You must also manage separate APNs connections for each app’s notifications. As a result, it’s often simpler to use token-based authentication to support multiple apps.
 
-##### Obtain a provider certificate from Apple
+### Obtain a provider certificate from Apple
 
 You obtain a provider certificate from your developer account when you sign in to [developer.apple.com](https://developer.apple.com). In the Program resources section:
 
@@ -30,7 +30,7 @@ You obtain a provider certificate from your developer account when you sign in t
 
 Tie a different provider certificate to each app, whose App ID you specify when creating the certificate. You must also tie your certificate to a CSR, which is the private key used to encrypt the certificate. The certificate itself becomes the public key that you exchange with APNs. For more information on certificate creation, see [Certificates overview](https://help.apple.com/developer-account/#/deveedc0daa0).
 
-##### Install the certificate and private key
+### Install the certificate and private key
 
 Install both the certificate and the private key on your provider server. In macOS, double-clicking the certificate installs it in Keychain Access automatically. If you created your CSR file from your provider server, Keychain Access installs the key in your keychain automatically.
 
@@ -40,7 +40,7 @@ You can also use the Keychain Access app to inspect a certificate. In Keychain A
 
 > ❗ **Important**:  Check expiry of a certificate with Keychain Access. To avoid a disruption in service for your users, update your provider certificates before they expire. Provider certificates are valid for a year and you must update them to continue communicating with APNs.
 
-##### Establish trust with APNs
+### Establish trust with APNs
 
 With your certificates installed, the following figure shows the sequence of steps to initiate a connection to the APNs server. After you request a secure connection using Transport Layer Security (TLS), APNs responds by sending a certificate for your provider server to validate. After validating that certificate, your provider certificate completes the secure connection. At this point, you can begin sending remote notification requests to APNs. An up-to-date version of macOS includes the appropriate trust store to validate the certificate presented by APNs. For other platforms, ensure you include a proper root certificate in your trust store.
 

@@ -19,7 +19,7 @@
 static void SPProjectiveTransform3DFloatSetTranslation(SPProjectiveTransform3DFloat *transform, SPVector3DFloat offset);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the translation component on the specified transform.
 

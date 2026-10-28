@@ -22,7 +22,7 @@ A type-erased transition.
 struct AnyTransition
 ```
 
-#### Overview
+## Overview
 
 - See Also: `Transition`
 

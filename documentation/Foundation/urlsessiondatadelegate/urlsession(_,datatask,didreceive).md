@@ -29,7 +29,7 @@ optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, di
 
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
-#### Discussion
+## Discussion
 
 Because the data object parameter is often pieced together from a number of different data objects, whenever possible, use the [`enumerateBytes(_:)`](../nsdata/enumeratebytes%28_%29.md) method to iterate through the data rather than using the [`bytes`](../nsdata/bytes.md) method (which flattens the data object into a single memory block).
 

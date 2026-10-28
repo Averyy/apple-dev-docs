@@ -25,7 +25,7 @@ func addSuite(named suiteName: String)
 - (void) addSuiteNamed:(NSString *) suiteName;
 ```
 
-#### Discussion
+## Discussion
 
 This method inserts the domain for your custom suite of settings after the app domain and before the global domain. This arrangement causes the `UserDefaults` object to return your app-specific settings first, followed by settings from the specified suite. If you call this method multiple times, the `UserDefaults` object searches your suites in the order you added them.
 

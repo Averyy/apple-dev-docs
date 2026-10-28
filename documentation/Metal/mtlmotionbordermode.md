@@ -24,7 +24,7 @@ enum MTLMotionBorderMode
 enum MTLMotionBorderMode : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 The [`motionStartBorderMode`](./mtlprimitiveaccelerationstructuredescriptor/motionstartbordermode.md) and [`motionEndBorderMode`](./mtlprimitiveaccelerationstructuredescriptor/motionendbordermode.md) properties use this type to describe the behavior for a motion-based object when a timestamp is outside the specified range.
 

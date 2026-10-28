@@ -21,7 +21,7 @@ A static context representing a message with default properties.
 static let defaultMessage: NWConnection.ContentContext
 ```
 
-#### Discussion
+## Discussion
 
 You should use this context for sending content unless there is a reason to override some values.
 

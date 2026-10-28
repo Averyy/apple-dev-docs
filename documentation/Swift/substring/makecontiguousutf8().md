@@ -21,7 +21,7 @@ If this string is not contiguous, make it so. If this mutates the substring, it 
 mutating func makeContiguousUTF8()
 ```
 
-#### Discussion
+## Discussion
 
 Complexity: O(n) if non-contiguous, O(1) if already contiguous
 

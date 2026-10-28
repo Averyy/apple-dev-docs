@@ -19,11 +19,11 @@ func setIcon(_ image: NSImage?, forFile fullPath: String, options: NSWorkspace.I
 - (BOOL) setIcon:(NSImage *) image forFile:(NSString *) fullPath options:(NSWorkspaceIconCreationOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the icon was set; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `image` can be an arbitrary image, with or without transparency. The method automatically scales this image (as needed) to generate the icon representations. The file or folder must exist and be writable by the user.
 

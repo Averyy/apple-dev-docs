@@ -27,7 +27,7 @@ func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, 
 - (void) addPaymentPassViewController:(PKAddPaymentPassViewController *) controller generateRequestWithCertificateChain:(NSArray<NSData *> *) certificates nonce:(NSData *) nonce nonceSignature:(NSData *) nonceSignature completionHandler:(void (^)(PKAddPaymentPassRequest *request)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides the data needed to create an add payment request. Pass the certificate chain to the issuer server. The server returns an encrypted JSON file containing the card data. After you receive the encrypted data, create a add payment request and call the handler.
 

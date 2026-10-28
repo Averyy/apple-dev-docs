@@ -23,7 +23,7 @@ var pushToken: Data? { get }
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 The push token for a remote session may change over time. Use [`pushTokenUpdates`](./pushtokenupdates.md) to receive the updated push token.
 

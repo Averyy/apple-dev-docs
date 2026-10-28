@@ -19,7 +19,7 @@ func populate(bytes freeSpaceBytes: UInt64)
 - (void) populateWithBytes:(uint64_t) freeSpaceBytes;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: FSKit uses internal sequencing technology within this method to determine the most up-to-date free space of the volume. To ensure correctness, call this method within an isolation context covering the volume’s free space.
 

@@ -15,7 +15,7 @@ Write four bytes to the desired "Physical" IOSpace address.
 void IOMappedWrite32(IOPhysicalAddress address, UInt32 value);
 ```
 
-#### Discussion
+## Discussion
 
 Write four bytes to the desired "Physical" IOSpace address. This function allows the developer to write to an address returned from any memory descriptor's getPhysicalSegment routine.
 

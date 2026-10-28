@@ -25,7 +25,7 @@ var localizedDescription: String! { get set }
 @property (copy, null_resettable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify your own custom value for this property, [`Progress`](../progress.md) uses the value of the [`kind`](./kind.md) property to determine how to use the values of other properties, as well as values in the user info dictionary, to return an automatically computed string. If it fails to do that, it returns an empty string.
 

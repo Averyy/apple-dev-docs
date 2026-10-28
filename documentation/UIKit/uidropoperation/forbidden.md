@@ -22,7 +22,7 @@ case forbidden
 UIDropOperationForbidden
 ```
 
-#### Discussion
+## Discussion
 
 You use this operation to signal that the drop activity isn’t allowed at this specific time and place. The drag operation is canceled.
 

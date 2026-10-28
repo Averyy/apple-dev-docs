@@ -24,7 +24,7 @@ var controlPointStride: Int { get set }
 @property (nonatomic) NSUInteger controlPointStride;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same control point stride.
 

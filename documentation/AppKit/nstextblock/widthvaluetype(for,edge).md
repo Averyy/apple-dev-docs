@@ -19,7 +19,7 @@ func widthValueType(for layer: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlo
 - (NSTextBlockValueType) widthValueTypeForLayer:(NSTextBlockLayer) layer edge:(NSRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 The value type of the `edge` of `layer`. This determines how the value for this `edge` of `layer` should be interpreted.
 

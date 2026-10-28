@@ -5,11 +5,11 @@
 
 Learn about important changes to WeatherKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [WeatherKit](../WeatherKit/WeatherKit.md).
 
-#### June 2024
+## June 2024
 
 - Benefit from efficient transfers with FlatBuffers.
 - Obtain hourly, daily, and monthly weather statistics for a particular location based on over 50 years of historical weather data.

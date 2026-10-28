@@ -24,7 +24,7 @@ var motionStartBorderMode: MTLMotionBorderMode { get set }
 @property (nonatomic) MTLMotionBorderMode motionStartBorderMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control the behavior when the ray-tracing system samples the acceleration structure at a time prior to the one you set for [`motionStartTime`](./motionstarttime.md).
 

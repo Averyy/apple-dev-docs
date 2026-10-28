@@ -16,7 +16,7 @@ Sets the spatial audio experience your app intends to provide the user.
 func setIntendedSpatialExperience(_ spatialExperience: any AVAudioSessionSpatialExperience) throws
 ```
 
-#### Discussion
+## Discussion
 
 - spatialExperience: The spatial audio experience to set.
 

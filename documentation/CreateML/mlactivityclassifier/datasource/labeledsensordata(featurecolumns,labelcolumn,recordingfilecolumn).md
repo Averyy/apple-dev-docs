@@ -17,11 +17,11 @@ Generates a data table from the contents of the data source.
 func labeledSensorData(featureColumns: [String], labelColumn: String? = nil, recordingFileColumn: String? = nil) throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLDataTable`](../../mldatatable.md) instance.
 
-#### Discussion
+## Discussion
 
 The `labelColumn` and `recordingFileColumn` parameters are optional if the data source is [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](./labeleddirectories%28at%29.md). If `nil`, the method names the data table’s label column and data file column “label” and “recordingFile”, respectively.
 

@@ -9,13 +9,13 @@ Soft-delete an asset by its UUID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes an asset. You can delete only assets that have been uploaded. The [`Query Assets`](./query-assets.md) excludes deleted assets from results by default, but [`Get Asset`](./get-asset-by-id.md) can still retrieve them with `deleted: true`. Attempting to delete an asset that’s already deleted returns 404.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Soft-deletes an asset. Query results exclude the asset by default, but Get Asset by ID can still retrieve it.
 
@@ -23,7 +23,7 @@ Soft-deletes an asset. Query results exclude the asset by default, but Get Asset
 DELETE /v1/assets/770e8400-e29b-41d4-a716-446655440002
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -18,7 +18,7 @@ init<T>(_ image: T, named preferredName: String? = nil, as imageFormat: Attachab
 
 Available when `AttachableValue` conforms to `Attachable`.
 
-#### Discussion
+## Discussion
 
 The testing library uses the image format specified by `imageFormat`. Pass `nil` to let the testing library decide which image format to use. If you pass `nil`, then the image format that the testing library uses depends on the path extension you specify in `preferredName`, if any. If you do not specify a path extension, or if the path extension you specify doesn’t correspond to an image format the operating system knows how to write, the testing library selects an appropriate image format for you.
 

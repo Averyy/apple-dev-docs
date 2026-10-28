@@ -25,7 +25,7 @@ var togglePlayPauseCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * togglePlayPauseCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for toggling between playing and pausing the current track. In your handler, perform the appropriate task based on the current state of the media item. If the item is currently playing, pause it. If it is paused, resume playing it. You can disable the command if your app does not support it.
 

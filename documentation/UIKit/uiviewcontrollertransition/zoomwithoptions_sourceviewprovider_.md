@@ -19,7 +19,7 @@ Creates a zoom transition from the view specified by the source provider.
 + (instancetype) zoomWithOptions:(UIZoomTransitionOptions *) options sourceViewProvider:(UIView * (^)(UIZoomTransitionSourceViewProviderContext *)) sourceViewProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the source view provider when it presents and when it dismisses the view controller. In the closure, return the [`UIView`](../uiview.md) that the animation should zoom in from or zoom back out to, respectively. For more information, see [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md).
 

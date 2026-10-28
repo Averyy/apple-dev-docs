@@ -15,11 +15,11 @@ Generate a unique filesystem ID for a mount and store it in the mount structure.
 void vfs_getnewfsid(struct mount *mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Filesystem IDs are returned as part of "struct statfs." This function is typically called as part of file-system specific mount code (i.e. through VFS_MOUNT).
 

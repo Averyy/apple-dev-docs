@@ -23,7 +23,7 @@ case unattached
 UISceneActivationStateUnattached
 ```
 
-#### Discussion
+## Discussion
 
 A scene starts in the unattached state and remains in that state until the system sends a connection notification to it. A scene reenters the attached state when the user dismisses the interface from the app switcher or to reclaim its resources.
 

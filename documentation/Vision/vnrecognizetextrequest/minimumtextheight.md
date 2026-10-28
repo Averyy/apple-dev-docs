@@ -24,7 +24,7 @@ var minimumTextHeight: Float { get set }
 @property (nonatomic, assign, readwrite) float minimumTextHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a floating-point number relative to the image height. For example, to limit recognition to text that’s half of the image height, use `0.5`. Increasing the size reduces memory consumption and expedites recognition with the tradeoff of ignoring text smaller than the minimum height. The default value is 1/32, or `0.03125`.
 

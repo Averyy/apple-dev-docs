@@ -24,11 +24,11 @@ func generateLightMapTexture(withTextureSize textureSize: vector_int2, lightsToC
 - (BOOL) generateLightMapTextureWithTextureSize:(vector_int2) textureSize lightsToConsider:(NSArray<MDLLight *> *) lightsToConsider objectsToConsider:(NSArray<MDLObject *> *) objectsToConsider vertexAttributeNamed:(NSString *) vertexAttributeName materialPropertyNamed:(NSString *) materialPropertyName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if light map generation succeeded; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A light map contains, for each point on a surface, information about how light sources in a scene affect the shading of that surface. Because many of the lighting effects in a scene are static—that is, the positions of lights relative to the surfaces they illuminate do not change over time—you can achieve high-fidelity lighting effects with little render-time performance cost by using this method to precalculate (or “bake”) light information into a mesh. You can then use the resulting information in shading to produce a more realistic render.
 

@@ -23,7 +23,7 @@ var selectionIndicatorImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * selectionIndicatorImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a custom selection image. Your image is rendered on top of the tab bar but behind the contents of the tab bar item itself. The default value of this property is `nil`, which causes the tab bar to apply a default highlight to the selected item.
 

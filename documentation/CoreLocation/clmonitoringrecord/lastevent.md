@@ -18,7 +18,7 @@ An object that contains the specifics of the most recent event.
 @property (strong, readonly) CLMonitoringEvent * lastEvent;
 ```
 
-#### Discussion
+## Discussion
 
 This includes the state, the date, and the specifics of the condition, if applicable.
 

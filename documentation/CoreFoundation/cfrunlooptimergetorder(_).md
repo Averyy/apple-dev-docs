@@ -25,11 +25,11 @@ func CFRunLoopTimerGetOrder(_ timer: CFRunLoopTimer!) -> CFIndex
 extern CFIndex CFRunLoopTimerGetOrder(CFRunLoopTimerRef timer);
 ```
 
-#### Return Value
+## Return Value
 
 The ordering parameter for `timer`.
 
-#### Discussion
+## Discussion
 
 The ordering parameter is currently ignored by run loop timers.
 

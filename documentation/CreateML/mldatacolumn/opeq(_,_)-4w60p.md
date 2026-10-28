@@ -32,7 +32,7 @@ static func >= (a: Element, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
 static func >= (a: MLDataColumn<Element>, b: Element) -> MLDataColumn<Bool>
 ```
 
-#### Return Value
+## Return Value
 
 A new column of Booleans if the columns are the same size; otherwise an invalid column.
 

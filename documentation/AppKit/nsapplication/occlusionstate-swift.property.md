@@ -19,7 +19,7 @@ var occlusionState: NSApplication.OcclusionState { get }
 @property (readonly) NSApplicationOcclusionState occlusionState;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property reflects whether any part of the app’s windows are visible to the user. Use this information to disable expensive screen updates when your app is not visible.
 

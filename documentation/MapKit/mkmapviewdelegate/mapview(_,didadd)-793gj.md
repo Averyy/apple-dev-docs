@@ -24,7 +24,7 @@ optional func mapView(_ mapView: MKMapView, didAdd renderers: [MKOverlayRenderer
 - (void) mapView:(MKMapView *) mapView didAddOverlayRenderers:(NSArray<MKOverlayRenderer *> *) renderers;
 ```
 
-#### Discussion
+## Discussion
 
 The map view adds renderer objects when it needs them to draw their contents, which might be prior to those contents appearing onscreen. It calls this method to let you know that the renderer is active and in use. By the time the map view calls this method, it has already added specified renderers to the map.
 

@@ -21,7 +21,7 @@ Secures the given plaintext message with encryption and an authentication tag.
 static func seal<Plaintext>(_ message: Plaintext, using key: SymmetricKey, nonce: AES.GCM.Nonce? = nil) throws -> AES.GCM.SealedBox where Plaintext : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The sealed message.
 

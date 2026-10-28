@@ -18,7 +18,7 @@ The number of buffers this descriptor uses.
 var vertexBufferCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value derives from the maximum `bufferIndex` specified across `vertexLayouts`.
 

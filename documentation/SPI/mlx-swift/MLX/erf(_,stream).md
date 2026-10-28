@@ -21,11 +21,11 @@ func erf(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 For details, please see [this documentation](https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.erf.html)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`erfInverse(_:stream:)`](./erfinverse%28_,stream%29.md)

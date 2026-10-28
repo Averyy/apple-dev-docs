@@ -25,7 +25,7 @@ optional func turnBasedMatchmakerViewController(_ viewController: GKTurnBasedMat
 - (void) turnBasedMatchmakerViewController:(GKTurnBasedMatchmakerViewController *) viewController playerQuitForMatch:(GKTurnBasedMatch *) match;
 ```
 
-#### Discussion
+## Discussion
 
 When GameKit invokes this method, the player forfeits the match without taking their turn. Implement this method to dismiss the view controller, set an outcome for the player, and then call the match’s [`participantQuitInTurn(with:nextParticipants:turnTimeout:match:completionHandler:)`](../gkturnbasedmatch/participantquitinturn%28with,nextparticipants,turntimeout,match,completionhandler%29.md) method.
 

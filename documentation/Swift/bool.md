@@ -22,7 +22,7 @@ A value type whose instances are either `true` or `false`.
 struct Bool
 ```
 
-#### Overview
+## Overview
 
 `Bool` represents Boolean values in Swift. Create instances of `Bool` by using one of the Boolean literals `true` or `false`, or by assigning the result of a Boolean method or operation to a variable or constant.
 
@@ -62,7 +62,7 @@ while i != 0 {
 }
 ```
 
-### Using Imported Boolean values
+## Using Imported Boolean values
 
 The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged into Swift as `Bool`. The single `Bool` type in Swift guarantees that functions, methods, and properties imported from C and Objective-C have a consistent type interface.
 

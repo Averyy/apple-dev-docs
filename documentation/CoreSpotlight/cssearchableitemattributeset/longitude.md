@@ -23,7 +23,7 @@ var longitude: NSNumber? { get set }
 @property (strong, nullable) NSNumber * longitude;
 ```
 
-#### Discussion
+## Discussion
 
 Negative values lie west of the prime meridian.
 

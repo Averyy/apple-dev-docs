@@ -24,13 +24,13 @@ class UICollectionViewLayout
 @interface UICollectionViewLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 A layout object determines the placement of cells, supplementary views, and decoration views inside the collection view’s bounds and reports that information to the collection view. The collection view then applies the provided layout information to the corresponding views so that they can be presented onscreen.
 
 You must subclass [`UICollectionViewLayout`](./uicollectionviewlayout.md) in order to use it. Before you consider subclassing, however, consider whether you can adapt [`UICollectionViewCompositionalLayout`](./uicollectionviewcompositionallayout.md) to your layout needs.
 
-##### Subclassing notes
+### Subclassing notes
 
 The layout object defines the position, size, and visual state of items in the collection view, based on the design of the layout. The views for the layout are created by the collection view’s data source.
 
@@ -42,7 +42,7 @@ You lay out three types of visual elements in a collection view:
 
 The collection view asks its layout object to provide layout information for these elements at many different times. Every cell and view that appears on screen is positioned using information from the layout object. Similarly, every time items are inserted into or deleted from the collection view, an additional layout pass occurs for the items being added or removed. However, the collection view always limits layout to the objects that are visible onscreen.
 
-###### Methods to override
+#### Methods to override
 
 Every layout object should implement the following methods:
 
@@ -66,7 +66,7 @@ When the data in the collection view changes and items are to be inserted or del
 
 In addition to these methods, you can also override the [`prepare(forCollectionViewUpdates:)`](./uicollectionviewlayout/prepare%28forcollectionviewupdates%29.md) to handle any layout-related preparation. You can also override the [`finalizeCollectionViewUpdates()`](./uicollectionviewlayout/finalizecollectionviewupdates%28%29.md) method and use it to add animations to the overall animation block or to implement any final layout-related tasks.
 
-###### Optimizing layout performance using invalidation contexts
+#### Optimizing layout performance using invalidation contexts
 
 When designing your custom layouts, you can improve performance by invalidating only those parts of your layout that actually changed. When you change items, calling the [`invalidateLayout()`](./uicollectionviewlayout/invalidatelayout%28%29.md) method forces the collection view to recompute all of its layout information and reapply it. A better solution is to recompute only the layout information that changed, which is exactly what invalidation contexts allow you to do. An invalidation context lets you specify which parts of the layout changed. The layout object can then use that information to minimize the amount of data it recomputes.
 

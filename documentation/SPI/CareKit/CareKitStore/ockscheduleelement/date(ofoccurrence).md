@@ -17,7 +17,7 @@ Computes the date of the Nth event. The result will be nil if the Nth event star
 func date(ofOccurrence occurrence: Int) -> Date?
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `occurrence >= 0`
 

@@ -5,7 +5,7 @@
 
 Create a version of your Metal app that runs on both Apple silicon and Intel-based Mac computers.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
@@ -15,7 +15,7 @@ Before you port your app, test run it under Rosetta translation. When you run an
 
 When you’re ready to port your app, turn on Metal diagnostic tools in Xcode to search for problems in your code. After you fix these problems, recompile your app using Xcode 12, as described in [Building a universal macOS binary](./building-a-universal-macos-binary.md). Then, address the list of porting issues described in this article to ensure that your code accounts for these. Once your app runs correctly, analyze its performance and adjust your rendering strategy to take advantage of Apple family GPUs.
 
-##### Identify and Correct Potential Porting Issues
+### Identify and Correct Potential Porting Issues
 
 Xcode can help validate whether your app uses Metal correctly. Although Xcode can’t find every problem, fixing common problems before porting your app makes the porting process easier. Once you start porting your app, use Xcode to verify code changes and understand how your code runs on Apple family GPUs.
 
@@ -23,7 +23,7 @@ Xcode can help validate whether your app uses Metal correctly. Although Xcode ca
 - Use shader validation to recompile your shaders with additional debugging added. For example, shader validation stops in the debugger with an out-of-bounds error if you attempt to access memory outside your buffers. For more information, see [Metal developer workflows](../Xcode/metal-developer-workflows.md).
 - Capture a GPU trace using Metal Debugger to analyze a set of related Metal calls, such as all commands used to render a single frame of animation. Metal Debugger collects data from Metal API calls, analyzes the resulting GPU trace, and provides suggestions to fix errors or improve performance. For example, modern game engines require dozens of passes and thousands of GPU commands to render complex scenes. Metal Debugger can find dependencies between passes and uncover places where you incorrectly generate or store data. Not all of Metal Debugger’s suggestions are problems you must fix. You decide whether or not to act on each suggestion. For more information, see [Metal debugger](../Xcode/metal-debugger.md).
 
-##### Test for GPU Features Your App Uses
+### Test for GPU Features Your App Uses
 
 Metal collects sets of GPU features into *GPU families*, so you can test for a group of features using a single query. When capabilities vary and features aren’t common enough to be part of a specific family, Metal provides additional queries to get detailed information about a GPU. You might need to test multiple GPU families, as well as specific Metal device object properties, to learn the capabilities of a GPU. Use that data to decide at runtime which strategy your app uses to leverage the GPU.
 
@@ -33,7 +33,7 @@ Always use availability methods and properties to determine features, and don’
 
 For more information, see [Detecting GPU features and Metal software versions](../Metal/detecting-gpu-features-and-metal-software-versions.md). For a list of specific queries, see [`MTLDevice`](../Metal/mtldevice.md).
 
-##### Set Load and Store Actions on Your Render Passes
+### Set Load and Store Actions on Your Render Passes
 
 Every render target in a render pass has a load and store action that indicates what you expect the texture contents to be at the start and end of the render pass, respectively. When you compile your app for macOS 11, you must choose the correct load and store actions for your render targets.
 
@@ -45,7 +45,7 @@ Apple-family GPUs use tile memory inside the GPU to temporarily hold texture con
 
 For more information on load and store actions, see [Setting load and store actions](../Metal/setting-load-and-store-actions.md).
 
-##### Make Vertex Shader Positions Invariant
+### Make Vertex Shader Positions Invariant
 
 Many rendering techniques require multiple render passes, where earlier passes generate data that’s consumed by later render passes. Each pass uses a different vertex shader to perform its specific calculations. Such techniques often rely on different vertex shaders calculating vertex positions the same way. For example, an early pass might write depth values to a depth texture, and a later pass might test the positions it calculates against data stored in the depth texture. If the two shaders calculate the position data differently, those tests might fail.
 
@@ -65,7 +65,7 @@ When Metal compiles vertex shaders, the compiler optimizes the shader for perfor
 
 > **Note**: If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal compiles vertex positions as if the `invariant` keyword were present, trading performance for behavior more consistent with Intel-based Macs.
 
-##### Bind Textures Once For Write Access
+### Bind Textures Once For Write Access
 
 Metal doesn’t permit you to bind the same texture to multiple arguments of a shader if any those arguments can write to the texture (`access::write` or `access:: read_write`). If you need both read and write access, you must bind the texture to a single argument with the `access::read_write` keyword, and synchronize access to the texture.
 
@@ -75,23 +75,23 @@ To detect code that incorrectly binds textures, turn on Metal API validation in 
 
 > **Note**: If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal takes snapshots of depth data before a render pass, redirecting any memory reads to the snapshot. This behavior comes with a cost in performance.
 
-##### Check Depth and Stencil Texture Formats
+### Check Depth and Stencil Texture Formats
 
 Only some Mac family GPUs support combined depth and stencil formats. To test whether a particular device supports this format, read the [`isDepth24Stencil8PixelFormatSupported`](../Metal/mtldevice/isdepth24stencil8pixelformatsupported.md) property on the MTLDevice.
 
-##### Keep Memory Accesses Within Memory Boundaries
+### Keep Memory Accesses Within Memory Boundaries
 
 When you access device or threadgroup memory in a shader, you must stay within the bounds of the memory you’re accessing. For example, when you access data in a buffer, you can’t access memory before the start or past the end of the buffer. Metal doesn’t define a specific GPU behavior when you access memory outside these boundaries, so if your app incorrectly accesses memory, you may see different behavior when you run your app on Apple family GPUs. An Apple family GPU can treat an incorrect memory access as a hardware fault, terminating the command buffer that caused the exception.
 
 To test for memory access errors, turn on shader validation in Xcode and run your app. For more information, see [Metal developer workflows](../Xcode/metal-developer-workflows.md).
 
-##### Determine the SIMD Group Size at Runtime
+### Determine the SIMD Group Size at Runtime
 
 In a compute shader, the SIMD group size, also called the thread execution width, is the number of threads that run together on the GPU. Metal Shading Language specifies some operations that are specific to SIMD groups, while other operations apply to the larger threadgroups; to implement some shaders efficiently, you need to know the SIMD group size.
 
 The size of a SIMD group varies between different GPUs, particularly Mac GPUs. Don’t assume the size of SIMD groups. At runtime, after you create a compute pipeline state object, read its [`threadExecutionWidth`](../Metal/mtlcomputepipelinestate/threadexecutionwidth.md) property to get the SIMD group size for that compute pipeline. To get the SIMD group size in your shader, declare an argument with the `threads_per_simdgroup` attribute, instead.
 
-##### Synchronize Memory Operations in Shaders
+### Synchronize Memory Operations in Shaders
 
 GPUs execute memory accesses on different threads in an unpredictable order. If a shader reads and writes the same memory locations, and you need the GPU to execute those actions in a specific order, you must include barriers between the memory operations. Metal requires barriers even in cases where the threadgroup size is the same as SIMD group size. Apple GPUs aggressively optimize memory operations to improve performance; if you don’t have proper synchronization in your shaders, you may corrupt memory or get incorrect results.
 
@@ -105,19 +105,19 @@ If you only need to synchronize threads in a SIMD group, instead use the `simdgr
 
 For more information, see section 6.8.1 of [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
-##### Synchronize Concurrent Compute Dispatches
+### Synchronize Concurrent Compute Dispatches
 
 If you configure a [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md) for concurrent dispatch, Metal doesn’t perform any automatic synchronization between commands that the encoder encodes. Apple family GPUs can aggressively execute commands at the same time, so if you aren’t correctly synchronizing commands, the GPU may run commands in the wrong order, which can corrupt memory or cause a fault.
 
 For more information on how to synchronize concurrent commands, see `memoryBarrier(_:)`.
 
-##### Synchronize Untracked Heaps
+### Synchronize Untracked Heaps
 
 When you use an untracked heap, Metal doesn’t track resource dependencies or synchronize commands that access resources on that heap. Apple family GPUs take advantage of this behavior to improve performance, so if you aren’t synchronizing commands correctly, the GPU may run commands in the wrong order, which can corrupt memory or cause a fault.
 
 For more information on how to use heaps or fences to synchronize commands, see [Resource synchronization](../Metal/resource-synchronization.md).
 
-##### Profile Your App
+### Profile Your App
 
 After you’ve got your app running correctly, profile and tune its performance for the Apple GPU.
 

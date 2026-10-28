@@ -23,7 +23,7 @@ var scale: CGFloat { get }
 @property (nonatomic, readonly) CGFloat scale;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the scale factor, or pixel density, of the device’s display as described in [Image Size and Resolution](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/). For example, the value for a device with a `@2x` display is `2.0`.
 

@@ -16,7 +16,7 @@ Changes the layer renderer setting that provides rasterization rate maps flipped
 void cp_layer_renderer_configuration_set_generate_flipped_rasterization_rate_maps(cp_layer_renderer_configuration_t configuration, bool generate_flipped_rasterization_rate_maps);
 ```
 
-#### Discussion
+## Discussion
 
 If foveation is disabled, the layer renderer doesn’t generate any rasterization rate maps, regardless of the value you pass to this function.
 

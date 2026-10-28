@@ -19,7 +19,7 @@ func fontColor() -> NSColor!
 - (NSColor *) fontColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color of the font used for the text in the widget annotation.
 

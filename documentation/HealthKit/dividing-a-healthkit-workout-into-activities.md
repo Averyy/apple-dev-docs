@@ -5,7 +5,7 @@
 
 Partition multisport and interval workouts into activities that represent the different parts of the workout.
 
-#### Overview
+## Overview
 
 Some workouts benefit from having the workout’s duration broken into a set of discrete activities. For example, a multisport event, like a triathlon, has separate swim, bike, and run portions. Similarly, you can divide interval training into active and rest periods.
 
@@ -20,7 +20,7 @@ To model these activities in HealthKit, use the [`HKWorkoutActivity`](./hkworkou
 
 > **Note**:  All [`HKWorkout`](./hkworkout.md) objects have at least one associated [`HKWorkoutActivity`](./hkworkoutactivity.md). If you don’t explicitly add an activity to a workout, HealthKit adds an activity that matches the workout’s activity type. This means you can use [`predicateForWorkoutActivities(workoutActivityType:)`](./hkquery/predicateforworkoutactivities%28workoutactivitytype%29.md) to filter for all the workouts that track an activity type. For example, filtering for workout activities that use [`HKWorkoutActivityType.running`](./hkworkoutactivitytype/running.md) includes regular running workouts, running interval training, and [`HKWorkoutActivityType.swimBikeRun`](./hkworkoutactivitytype/swimbikerun.md) workouts that include a running activity.
 
-##### Mark transitions
+### Mark transitions
 
 Activities can’t overlap, but they also don’t need to cover the entire [`HKWorkout`](./hkworkout.md) sample’s duration. You can leave the time between the active portions of the workout blank, or you can explicitly create workout activities for these intervals. For example, explicitly creating activities for the time between active portions of the workout helps you track statistics during those intervals.
 
@@ -28,7 +28,7 @@ For multisport workouts, you can explicitly mark the transitions between activit
 
 How you choose to model the data depends on the needs of your app and the types of intervals you’re tracking. If you’re tracking a workout that alternates between a fast and a slow pace, using workout activities to explicitly track all intervals makes sense. If, however, the intervals alternate between exercising and resting (for example, during many high-intensity interval training exercises), you may want to leave the rest intervals blank.
 
-##### Add workout activities to a workout session
+### Add workout activities to a workout session
 
 To add workout activities to a workout session, start by creating the session and start collecting data using the workout builder.
 
@@ -104,7 +104,7 @@ let workout = try await workoutBuilder.finishWorkout()
 print(workout as Any)
 ```
 
-##### Enable and disable the collection of data
+### Enable and disable the collection of data
 
 When you start a new workout activity, your data source automatically begins collecting relevant data from Apple Watch. To see the data types that the data source collects, check the data source’s `typesToCollect` property.
 
@@ -138,7 +138,7 @@ let respiratoryRate = HKQuantityType(.respiratoryRate)
 dataSource.disableCollection(for: respiratoryRate)
 ```
 
-##### Query for workout activities
+### Query for workout activities
 
 To query for workouts with activities that match a specific predicate, start by creating a workout activity predicate using one of the [`HKQuery`](./hkquery.md) class’s `predicateForWorkoutActivities` methods. Next, use [`predicateForWorkouts(activityPredicate:)`](./hkquery/predicateforworkouts%28activitypredicate%29.md) to wrap the activity predicate inside a workout predicate. You can then use the workout predicate in your query.
 

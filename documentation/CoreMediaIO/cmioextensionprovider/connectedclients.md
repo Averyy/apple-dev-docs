@@ -20,7 +20,7 @@ var connectedClients: [CMIOExtensionClient] { get }
 @property (atomic, copy, readonly) NSArray<CMIOExtensionClient *> * connectedClients;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

@@ -23,7 +23,7 @@ var actionHandler: UIAccessibilityCustomAction.Handler? { get set }
 @property (nonatomic, copy, nullable) UIAccessibilityCustomActionHandler actionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property, the system chooses this action handler over the [`target`](./target.md) and [`selector`](./selector.md).
 

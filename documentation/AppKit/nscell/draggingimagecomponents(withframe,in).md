@@ -19,11 +19,11 @@ func draggingImageComponents(withFrame frame: NSRect, in view: NSView) -> [NSDra
 - (NSArray<NSDraggingImageComponent *> *) draggingImageComponentsWithFrame:(NSRect) frame inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSDraggingImageComponent`](../nsdraggingimagecomponent.md) objects representing the cell.
 
-#### Discussion
+## Discussion
 
 The default implementation generates an image from the cell and return two components: one for [`label`](../nsdraggingitem/imagecomponentkey/label.md) and another for [`icon`](../nsdraggingitem/imagecomponentkey/icon.md). This is done by capturing the portion from the [`titleRect(forBounds:)`](./titlerect%28forbounds%29.md) and [`imageRect(forBounds:)`](./imagerect%28forbounds%29.md) methods respectively.
 

@@ -5,7 +5,7 @@
 
 Manage the addition and removal of apps available on your alternative marketplace.
 
-#### Overview
+## Overview
 
 When an alternative distribution app completes Notarization, App Store Connect makes the app available for download in the form of an *alternative distribution package* (ADP). The developer of the app can download the ADP manually, or enable notifications in App Store Connect to send the app information automatically to an alternative app marketplace that distributes the app.
 
@@ -13,7 +13,7 @@ To receive notifications, the marketplace developer implements an endpoint, or w
 
 App Store Connect includes information in notifications about newly available app versions, and the identifiers of one or more versions of an app to be removed.
 
-#### Meet the criteria for notifications
+## Meet the criteria for notifications
 
 When a new app version passes notarization for an app that installs from your marketplace, App Store Connect requires the following conditions before notifying your webhook:
 
@@ -24,7 +24,7 @@ When a new app version passes notarization for an app that installs from your ma
 
 > ❗ **Important**: App Store Connect doesn’t send notifications for your marketplace app itself. When your app or app update passes Notarization, you need to download its associated alternative distribution package from App Store Connect manually. For more information, see [Distributing your app from your website](./distributing-your-app-from-your-website.md).
 
-#### Set up your notification webhook
+## Set up your notification webhook
 
 A *notification webhook* is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.
 
@@ -38,7 +38,7 @@ Any time you reconfigure your web server, use the [`Modify a Marketplace Webhook
 
 For more information about managing webhook endpoint configuration for your marketplace, see [Notifications](../AppStoreConnectAPI/notifications.md).
 
-#### Set up notification authentication
+## Set up notification authentication
 
 Secure your webhook by verifying that a request to your endpoint comes from App Store Connect. The security protocol for webhooks is Hash-based Message Authentication Code (HMAC), which requires that you:
 
@@ -68,7 +68,7 @@ x-apple-signature:hmacsha256=7f062172b01cb00b53ca068614674a3d982a34062a0f5d37687
 
 Use an implementation of HMAC `hex digest` to generate the hash. For more information, see [GitHub’s Validating webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries).
 
-#### Receive a notification and determine the type
+## Receive a notification and determine the type
 
 When App Store Connect sends a notification to your webhook, it does so in the form of an HTTP POST. When you receive a notification, check its type to process it accordingly. The action you perform depends on the notification type, which is among the following:
 
@@ -82,7 +82,7 @@ Each type has a specific data set, or *schema*, composed of `attributes` that dr
 
 In rare circumstances, your webhook may receive a duplicate notification. Your webhook can filter out duplicate notifications by discarding them. Specifically, if you receive a notification of type `AlternativeDistributionPackageVersionAvailable` that describes a package that your webhook already ingested, discard it. Similarly, if you receive a notification of type `AppVersionsUnavailable` or `AppUnavailable` for an app or version that’s already unavailable, discard it.
 
-#### Process an available app version
+## Process an available app version
 
 When the type is `AlternativeDistributionPackageVersionAvailable`, the `attributes` include the alternative distribution package ID, version ID and version number. Use this information to add the new app or versions of an app. An example notification follows:
 
@@ -107,7 +107,7 @@ When the type is `AlternativeDistributionPackageVersionAvailable`, the `attribut
 
 To learn more about ingesting apps and app versions, see [Ingesting an alternative distribution package](./ingesting-an-alternative-distribution-package.md).
 
-#### Process a request to remove specific app versions
+## Process a request to remove specific app versions
 
 When the notification type is `AppVersionsUnavailable`, App Store Connect requests that you remove the identified app versions from your alternative marketplace. The `attributes` include a list of alternative distribution package IDs to remove. An example notification follows:
 
@@ -130,7 +130,7 @@ When the notification type is `AppVersionsUnavailable`, App Store Connect reques
 }
 ```
 
-#### Process a request to remove all versions of an app
+## Process a request to remove all versions of an app
 
 The `AppUnavailable` type is similar to `AppVersionsUnavailable`, except that App Store Connect requests that you remove all versions for the identified app. As such, the `attributes` contain only the app to remove. An example notification follows:
 

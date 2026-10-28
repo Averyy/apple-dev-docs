@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NS
 - (id) tableView:(NSTableView *) tableView objectValueForTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 An item in the data source in the specified table column of the view.
 
-#### Discussion
+## Discussion
 
 [`tableView(_:objectValueFor:row:)`](./tableview%28_,objectvaluefor,row%29.md) is called each time the table cell needs to be redisplayed, so it must be efficient.
 

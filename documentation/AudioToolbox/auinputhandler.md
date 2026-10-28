@@ -24,7 +24,7 @@ typealias AUInputHandler = (UnsafeMutablePointer<AudioUnitRenderActionFlags>, Un
 typedef void (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long) __attribute__((nonblocking)) AUInputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

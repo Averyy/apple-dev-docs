@@ -24,7 +24,7 @@ var featureName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * featureName;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`nil`](../../ObjectiveC/nil-227m0.md) if the observation isn’t the result of a [`VNCoreMLRequest`](../vncoremlrequest.md) operation.
 

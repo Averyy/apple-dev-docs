@@ -23,11 +23,11 @@ class func velocityField(direction: CGVector) -> Self
 + (instancetype) velocityFieldWithVector:(CGVector) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a velocity to items.
 
-#### Discussion
+## Discussion
 
 Velocity fields apply their velocity to the item, overriding any other acceleration forces currently on the item. The vector in the `direction` parameter is combined with the field [`strength`](./strength.md) to determine the velocity of items in the field.
 

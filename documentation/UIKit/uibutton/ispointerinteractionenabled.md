@@ -22,7 +22,7 @@ var isPointerInteractionEnabled: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isPointerInteractionEnabled) BOOL pointerInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

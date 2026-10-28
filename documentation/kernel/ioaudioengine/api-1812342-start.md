@@ -13,11 +13,11 @@ virtual bool start(
  IOAudioDevice *device);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the service was successfully started.
 
-#### Overview
+## Overview
 
 This function is called in order to prepare the IOAudioEngine for use. It does NOT mean that the audio I/O engine itself should be started. This implementation gets the IOWorkLoop from the IOAudioDevice and allocates an IOCommandGate. Finally it calls initHardware() in which all of the subclass-specific device initialization should be done. Upon return from initHardware() all IOAudioStreams should be created and added to the audio engine. Also, all IOAudioControls for this IOAudioEngine should be created and attached.
 

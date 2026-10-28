@@ -22,7 +22,7 @@ func GLKQuaternionInvert(_ quaternion: GLKQuaternion) -> GLKQuaternion
 static GLKQuaternion GLKQuaternionInvert(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion that is the inverse of the source quaternion.
 

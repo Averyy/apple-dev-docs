@@ -25,7 +25,7 @@ var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?,
 @property (nonatomic, copy, nullable) void (^recordZoneChangeTokensUpdatedBlock)(CKRecordZoneID *recordZoneID, CKServerChangeToken *serverChangeToken, NSData *clientChangeTokenData);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

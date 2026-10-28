@@ -21,7 +21,7 @@ Name of the NodeDefinition.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 Definitions whose kind is `ComputeNodeGraph/NodeDefinition/Kind/function`  will match their MTLFunction via name.
 

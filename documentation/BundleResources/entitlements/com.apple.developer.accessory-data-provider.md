@@ -15,7 +15,7 @@ An entitlement that enables your app extension to receive data for an accessory.
 - **Name**: `com.apple.developer.accessory-data-provider`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app implements [`AccessoryDataProvider`](../../AccessoryTransportExtension/accessorydataprovider.md) in an app extension, the framework requires the extension to have this entitlement with a value of `true` in its signature.
 

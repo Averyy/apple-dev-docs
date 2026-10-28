@@ -21,7 +21,7 @@ func deviceProperties(forProperties properties: Set<CMIOExtensionProperty>) thro
 - (CMIOExtensionDeviceProperties *) devicePropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A properties object that contains the current device state.
 

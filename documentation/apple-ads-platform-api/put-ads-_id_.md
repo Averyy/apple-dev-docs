@@ -9,19 +9,19 @@ Updates the name or status of an existing ad by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing ad. Only `name` and `status` are mutable. The `creativeId` and `adGroupId` fields can’t be changed after the ad is created. The system modifies only the fields included in the request body. Omitted fields retain their current values.
 
 To change which ad creative an ad group serves, create a new ad with the desired `creativeId` and delete the old one. This pattern ensures ad delivery history remains traceable per ad.
 
-#### Payload Examples
+## Payload Examples
 
 **Pause Ad**:
 
 Pause an ad by setting `status` to `PAUSED`. Send only the field you want to change.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/ads/777888999
@@ -31,7 +31,7 @@ PUT /v1/ads/777888999
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -60,7 +60,7 @@ PUT /v1/ads/777888999
 
 Rename an ad by sending only the `name` field. Status and all other fields remain unchanged.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/ads/777888999
@@ -70,7 +70,7 @@ PUT /v1/ads/777888999
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

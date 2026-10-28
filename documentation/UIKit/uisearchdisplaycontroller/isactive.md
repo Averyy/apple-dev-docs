@@ -23,7 +23,7 @@ var isActive: Bool { get set }
 @property (nonatomic, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ func NSNextHashEnumeratorItem(_ enumerator: UnsafeMutablePointer<NSHashEnumerato
 extern void *NSNextHashEnumeratorItem(NSHashEnumerator *enumerator);
 ```
 
-#### Return Value
+## Return Value
 
 The next element in the table that `enumerator` is associated with, or `NULL` if `enumerator` has already iterated over all the elements.
 

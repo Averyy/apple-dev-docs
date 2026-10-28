@@ -19,7 +19,7 @@ Enables or disables a motion blur effect for virtual content.
 var motionBlur: RealityViewRenderingEffectMode
 ```
 
-#### Discussion
+## Discussion
 
 A video stream consists of a sequence of images. Each image in the sequence represents a short, but non-zero period of time. Fast-moving, real-world objects captured within a frame can experience a visual smearing, known as *motion blur*.
 

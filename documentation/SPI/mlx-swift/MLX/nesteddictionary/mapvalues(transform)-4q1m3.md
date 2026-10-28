@@ -17,7 +17,7 @@ Transform the values in the nested structure using the `transform()` function.
 func mapValues<Result>(transform: (String, Element) throws -> Result) rethrows -> NestedDictionary<Key, Result>
 ```
 
-#### Discussion
+## Discussion
 
 This function receives both keys in dotted form and values.  This is roughly equivalent to:
 

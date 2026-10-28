@@ -24,15 +24,15 @@ class PHASESoundEventNodeDefinition
 @interface PHASESoundEventNodeDefinition : PHASEDefinition
 ```
 
-#### Overview
+## Overview
 
 This class defines the base functionality for an object that, depending on the derived class’s type, either plays audio or hands off the invocation to one or more other nodes.
 
-##### Configure a Sound Event Node to Play Audio
+### Configure a Sound Event Node to Play Audio
 
 To play audio with this class, retrieve a sound-event node asset ([`PHASESoundEventNodeAsset`](./phasesoundeventnodeasset.md)) that generates sound events by creating and registering one of the audio-providing node definitions in [Sound Event Nodes](./sound-event-nodes.md). Call [`registerSoundEventAsset(rootNode:identifier:)`](./phaseassetregistry/registersoundeventasset%28rootnode,identifier%29.md) and pass the node definition in the `rootNode` argument. Provide an `identifier` argument with a unique name that your app refers to later when generating a playable [`PHASESoundEvent`](./phasesoundevent.md).
 
-##### Configure a Node Hiearchy that Reacts to Your App’s State
+### Configure a Node Hiearchy that Reacts to Your App’s State
 
 You can create a hierarchy of nodes that blends audio based on your app’s parameters, or plays the right audio based on your app’s state. To create the hierarchy, register one of the control nodes in [Sound Event Nodes](./sound-event-nodes.md) by calling [`registerSoundEventAsset(rootNode:identifier:)`](./phaseassetregistry/registersoundeventasset%28rootnode,identifier%29.md), passing in a unique [`identifier`](./phasedefinition/identifier.md) you define for the subclass.
 

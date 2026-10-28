@@ -20,7 +20,7 @@ Encodes a command that resolves an opaque counter heap into a buffer.
 func resolveCounterHeap(_ counterHeap: any MTL4CounterHeap, range: Range<Int>, buffer: MTL4BufferRange, fenceToWait: (any MTLFence)? = nil, fenceToUpdate: (any MTLFence)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The command converts the data within a counter heap into a common format and stores it in `buffer`.
 

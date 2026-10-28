@@ -15,7 +15,7 @@ Creates a directions object with options you provide.
 constructor(options?: DirectionsConstructorOptions);
 ```
 
-#### Discussion
+## Discussion
 
 To request directions, create an instance of the [`Directions`](../directions.md) object, then call the [`route()`](./route.md) function with a [`DirectionsRequest`](../directionsrequest.md) object as the first parameter. The second parameter for [`route()`](./route.md) is a callback function, through which MapKit JS returns the directions response asynchronously.
 

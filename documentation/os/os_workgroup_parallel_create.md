@@ -21,11 +21,11 @@ Creates a new workgroup that manges threads working on a single task in parallel
 extern os_workgroup_parallel_tos_workgroup_parallel_create(const char *name, os_workgroup_attr_t attr);
 ```
 
-#### Return Value
+## Return Value
 
 An opaque workgroup object that tracks a parallel workload.
 
-#### Discussion
+## Discussion
 
 The returned workgroup doesn’t initially have any associated threads. Join individual threads to the workgroup by calling `os_workgroup_join_self` from the thread itself.
 

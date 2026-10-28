@@ -23,7 +23,7 @@ func rectForRow(at indexPath: IndexPath) -> CGRect
 - (CGRect) rectForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle defining the area in which the table view draws the row or [`CGRectZero`](../../CoreGraphics/cgrectzero.md) if `indexPath` is invalid.
 

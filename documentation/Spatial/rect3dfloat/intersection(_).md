@@ -21,7 +21,7 @@ Returns the intersection of two rectangles.
 func intersection(_ other: Rect3DFloat) -> Rect3DFloat?
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The intersection of `self` and `other`.
 

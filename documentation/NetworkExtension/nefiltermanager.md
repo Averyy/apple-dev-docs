@@ -23,7 +23,7 @@ class NEFilterManager
 @interface NEFilterManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each app is allowed to create a single filter configuration. The [`NEFilterManager`](./nefiltermanager.md) class has a class method ([`shared()`](./nefiltermanager/shared%28%29.md)) that provides access to a single [`NEFilterManager`](./nefiltermanager.md) instance. This single instance corresponds to a single filter configuration.
 
@@ -33,11 +33,11 @@ The filter configuration is stored in the Network Extension preferences which ar
 
 > ❗ **Important**:  To use the [`NEFilterManager`](./nefiltermanager.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
-##### Profile Configuration
+### Profile Configuration
 
 Filter configurations are created using configuration profiles. See [`WebContentFilter`](../DeviceManagement/webcontentfilter.md) for more information. To specify that a filter configuration created via a profile payload is associated with a particular app (and therefore allow the app to use `NEFilterManager` to manage the configuration), the app’s bundle identifier must be set as the value of the `PluginBundleID` field in the profile payload.
 
-##### Filter Provider Extensions
+### Filter Provider Extensions
 
 Apps that use `NEFilterManager` are required to contain two Filter Provider extensions that together perform the task of examining network content and making pass and block decisions. See the [`NEFilterControlProvider`](./nefiltercontrolprovider.md) and [`NEFilterDataProvider`](./nefilterdataprovider.md) classes for more details about these extensions.
 

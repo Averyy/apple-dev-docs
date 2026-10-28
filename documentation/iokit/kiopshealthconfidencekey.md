@@ -16,7 +16,7 @@ CFDictionary key for our confidence in the accuracy of our power source's "healt
 #define kIOPSHealthConfidenceKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will no longer publish this key.
 - Power source creators should not publish this key.

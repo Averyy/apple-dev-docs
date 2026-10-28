@@ -29,7 +29,7 @@ init(mkCoordinateSpan span: MKCoordinateSpan)
 + (NSValue *) valueWithMKCoordinateSpan:(MKCoordinateSpan) span;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the coordinate span information.
 

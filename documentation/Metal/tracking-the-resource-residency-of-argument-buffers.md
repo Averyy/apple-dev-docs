@@ -5,11 +5,11 @@
 
 Optimize resource performance within an argument buffer.
 
-#### Overview
+## Overview
 
 The Metal driver can’t automatically track the residency of argument buffer resources, but you can track it manually.
 
-##### Track argument buffer resource residency manually
+### Track argument buffer resource residency manually
 
 Call an [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) or [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md) method:
 

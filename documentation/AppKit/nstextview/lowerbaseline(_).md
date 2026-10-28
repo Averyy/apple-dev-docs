@@ -19,7 +19,7 @@ func lowerBaseline(_ sender: Any?)
 - (void) lowerBaseline:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 As such, this method defines a more primitive operation than subscripting.
 

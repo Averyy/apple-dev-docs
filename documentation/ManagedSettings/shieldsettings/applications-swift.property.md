@@ -17,7 +17,7 @@ Applications for the system to cover with a shielding view.
 var applications: Set<ApplicationToken>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the user launches an application in this set, the system calls your extension that customizes the shield’s appearance. When the user taps on a button the shield displays, the system calls your extension that handles user actions. If your app doesn’t provide a list of applications to shield, this value is `nil`. Your app can shield up to 50 application tokens at once.
 

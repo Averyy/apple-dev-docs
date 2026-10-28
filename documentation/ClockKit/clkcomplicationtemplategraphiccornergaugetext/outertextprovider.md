@@ -22,7 +22,7 @@ var outerTextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * outerTextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The complication ignores the text provider’s tint color. It always displays the outer text as white.
 

@@ -19,7 +19,7 @@ case changeMode
 NSEventTypeChangeMode
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.15 and later, you can use an iPad as an additional screen for a macOS device. A double-tap on the side of an Apple Pencil paired with that iPad results in this type of event. AppKit calls the [`changeMode(with:)`](../../nsresponder/changemode%28with%29.md) method to route these events to the first responder of the key window of the frontmost process.
 

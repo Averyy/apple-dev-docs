@@ -24,7 +24,7 @@ case absoluteCents
 kAudioUnitParameterUnit_AbsoluteCents
 ```
 
-#### Discussion
+## Discussion
 
 Absolute musical pitch in cents. 1,200 cents are equal to one octave. If `f` is a frequency in hertz, then `absoluteCents = 1200 * log2 (f/440) + 6900`. See also the [`AudioUnitParameterUnit.cents`](./cents.md) property.
 

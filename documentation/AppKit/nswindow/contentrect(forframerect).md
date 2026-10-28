@@ -19,11 +19,11 @@ func contentRect(forFrameRect frameRect: NSRect) -> NSRect
 - (NSRect) contentRectForFrameRect:(NSRect) frameRect;
 ```
 
-#### Return Value
+## Return Value
 
 The window’s content rectangle, expressed in screen coordinates, with f`rameRect`.
 
-#### Discussion
+## Discussion
 
 The window uses its current style mask in computing the content rectangle. See [`NSWindow.StyleMask`](./stylemask-swift.struct.md) for a list of style mask values. The main advantage of this instance-method counterpart to [`contentRect(forFrameRect:styleMask:)`](./contentrect%28forframerect,stylemask%29.md) is that it allows you to take toolbars into account when converting between content and frame rectangles. (The toolbar is not included in the content rectangle.)
 

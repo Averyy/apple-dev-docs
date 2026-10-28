@@ -25,7 +25,7 @@ case projectedDepth
 SCNParticleSortingModeProjectedDepth
 ```
 
-#### Discussion
+## Discussion
 
 Typically you use this sorting mode in conjunction with the [`SCNParticleOrientationMode.billboardScreenAligned`](../scnparticleorientationmode/billboardscreenaligned.md) orientation mode.
 

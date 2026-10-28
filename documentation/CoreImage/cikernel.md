@@ -28,7 +28,7 @@ class CIKernel
 
 - [Writing Custom Kernels](./writing-custom-kernels.md)
 
-#### Overview
+## Overview
 
 > **Note**:  If your custom filter uses both color and geometry information, but does not require processing both at the same time, you can improve performance by separating your image processing code: use a [`CIColorKernel`](./cicolorkernel.md) object for the color processing step and a [`CIWarpKernel`](./ciwarpkernel.md) object for the geometry processing step.
 

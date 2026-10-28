@@ -25,7 +25,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, all outstanding reply blocks, error handling blocks, and invalidation blocks are called on the message handling queue. The connection must be invalidated before it is deallocated. After a connection is invalidated, no more messages may be sent or received.
 

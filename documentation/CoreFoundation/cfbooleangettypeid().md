@@ -25,7 +25,7 @@ func CFBooleanGetTypeID() -> CFTypeID
 extern CFTypeID CFBooleanGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for CFBoolean opaque type.
 

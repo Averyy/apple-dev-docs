@@ -25,7 +25,7 @@ func addChild(_ child: Progress, withPendingUnitCount inUnitCount: Int64)
 - (void) addChild:(NSProgress *) child withPendingUnitCount:(int64_t) inUnitCount;
 ```
 
-#### Discussion
+## Discussion
 
 You assign the suboperation a portion of the receiver’s total unit count according to `inUnitCount`.
 

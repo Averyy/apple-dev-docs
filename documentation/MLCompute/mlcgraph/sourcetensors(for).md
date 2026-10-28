@@ -23,7 +23,7 @@ func sourceTensors(for layer: MLCLayer) -> [MLCTensor]
 - (NSArray<MLCTensor *> *) sourceTensorsForLayer:(MLCLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 A list of source tensors.
 

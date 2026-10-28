@@ -29,11 +29,11 @@ var authorizationStatus: CLAuthorizationStatus { get }
 
 - [Requesting authorization to use location services](../requesting-authorization-to-use-location-services.md)
 
-#### Return Value
+## Return Value
 
 A value indicating whether the app is authorized to use location services.
 
-#### Discussion
+## Discussion
 
 Check this value when the [`locationManagerDidChangeAuthorization(_:)`](../cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) delegate callback indicates that the authorization status has changed.
 

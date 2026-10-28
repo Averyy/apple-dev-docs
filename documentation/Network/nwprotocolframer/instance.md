@@ -21,7 +21,7 @@ An object that represents a single instance of your custom protocol running in a
 final class Instance
 ```
 
-#### Overview
+## Overview
 
 All interaction between your protocol and the connection occurs through this object.
 

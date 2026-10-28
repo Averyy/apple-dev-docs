@@ -22,7 +22,7 @@ func bufferPixelFormat() -> String!
 - (NSString *) bufferPixelFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A string that specifies the pixel format. The supported formats are ARGB8 (8-bit alpha, red, green, blue), BGRA8 (8-bit blue, green, red, and alpha), RGBAf (floating-point, red, green, blue, alpha), I8 (8-bit intensity), and If (floating-point intensity).
 

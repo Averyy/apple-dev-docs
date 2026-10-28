@@ -5,7 +5,7 @@
 
 Differentiate your notifications and add action buttons to the notification interface.
 
-#### Overview
+## Overview
 
 Actionable notifications let the user respond to a delivered notification without launching the corresponding app. Other notifications display information in a notification interface, but the user’s only course of action is to launch the app. For an actionable notification, the system displays one or more buttons in addition to the notification interface. Tapping a button sends the selected action to the app, which then processes the action in the background.
 
@@ -22,7 +22,7 @@ To support actionable notifications, you must:
 
 > **Note**:  The system also uses categories to determine whether it should launch your notification service app extension or notification content app extension. For information about how to create a notification service app extension, see [Modifying content in newly delivered notifications](./modifying-content-in-newly-delivered-notifications.md). For information about how to create a notification content app extension, see [Customizing the Appearance of Notifications](../UserNotificationsUI/customizing-the-appearance-of-notifications.md).
 
-##### Declare your custom actions and notification types
+### Declare your custom actions and notification types
 
 Because your app must handle all actions, you must declare the actions that your app supports at launch time. You declare actions using a combination of category and action objects. [`UNNotificationCategory`](./unnotificationcategory.md) objects define the types of notifications that your app supports, and [`UNNotificationAction`](./unnotificationaction.md) objects define the buttons to display for each type. For example, a notification for a meeting invitation might include buttons to accept or reject the invitation.
 
@@ -58,7 +58,7 @@ notificationCenter.setNotificationCategories([meetingInviteCategory])
 
 Most actions result in a user selection, but text input actions also let the user type custom text-based responses. Your app can then incorporate the user’s typed response into your handling of the action. For example, a messaging app could send the typed text as the response to an incoming message. To create a text input action, create a [`UNTextInputNotificationAction`](./untextinputnotificationaction.md) object instead of a [`UNNotificationAction`](./unnotificationaction.md) object. When the user taps the button for a text input action, the system displays an editable text field. When reporting the action to your app, the system includes the text that the user typed as part of the response.
 
-##### Include a notification category in the payload
+### Include a notification category in the payload
 
 The system displays actions only for notifications whose payload contains a valid category identifier string. The system uses the category identifier to look up your app’s registered categories and their associated actions. It then uses that information to add the action buttons to the notification interface.
 
@@ -94,7 +94,7 @@ Listing 3. Assigning a category to a remote notification
 } 
 ```
 
-##### Handle the selected action
+### Handle the selected action
 
 Your app must handle all of the actions that it defines. When the user selects an action, the system launches your app in the background and notifies the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) object, which notifies its delegate. Use your delegate object’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method to identify the selected action and provide an appropriate response.
 

@@ -23,7 +23,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Only the [`context`](../uimenusystem/context.md) menu system supports the display of a subtitle, and only when the app is running on iOS.
 

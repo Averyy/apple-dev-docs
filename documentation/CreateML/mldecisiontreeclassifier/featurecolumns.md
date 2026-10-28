@@ -20,7 +20,7 @@ The names of the columns you selected at initialization to train the classifier.
 var featureColumns: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property doesn’t retrain the model or affect its behavior.
 

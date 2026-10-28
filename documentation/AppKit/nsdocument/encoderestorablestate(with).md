@@ -19,7 +19,7 @@ func encodeRestorableState(with coder: NSCoder)
 - (void) encodeRestorableStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the window restoration system and is called at appropriate times to save your document’s window-related state information to the specified archive. The default implementation of this method records some basic information about the document. If you override this method, you must call `super` at some point in your implementation.
 

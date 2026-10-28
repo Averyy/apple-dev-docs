@@ -24,7 +24,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A VPN configuration must be enabled before it can be used to bring up a VPN tunnel. Only one Personal VPN configuration can be enabled simultaneously on the system. If another Personal VPN configuration is enabled, then this property will be automatically set to [`false`](../../Swift/false.md) in the Network Extension preferences. Note that you will need to re-load the VPN configuration from the preferences in order to see the change in value. You can register with [`NotificationCenter`](../../Foundation/notificationcenter.md) to observe the [`NEVPNConfigurationChangeNotification`](../nevpnconfigurationchangenotification.md) notification for the [`NEVPNManager`](../nevpnmanager.md) object so that your code can detect when the VPN configuration has been disabled.
 

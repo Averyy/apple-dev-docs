@@ -17,7 +17,7 @@ An object that signals your app’s intention to make exclusive use of the devic
 final class NFCPresentmentIntentAssertion
 ```
 
-#### Overview
+## Overview
 
 Acquire an instance of this class to prevent the system default contactless app from launching in response to a user gesture or NFC reader RF field. You do this when the person using your app expresses an active intent to perform an NFC transaction, like choosing a credential such as a payment card or transit pass. You can only acquire a [`NFCPresentmentIntentAssertion`](./nfcpresentmentintentassertion.md) when your app is in the foreground state.
 

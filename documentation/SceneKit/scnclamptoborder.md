@@ -5,7 +5,7 @@
 
 Equivalent to [`SCNWrapMode.clampToBorder`](./scnwrapmode/clamptoborder.md).
 
-#### Overview
+## Overview
 
 Deprecated in OS X v10.9. Use [`SCNWrapMode.clampToBorder`](./scnwrapmode/clamptoborder.md) instead.
 

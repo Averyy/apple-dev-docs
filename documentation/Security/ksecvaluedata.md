@@ -30,7 +30,7 @@ extern CFStringRef const kSecValueData;
 - [Searching for keychain items](./searching-for-keychain-items.md)
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md).  For keys and password items, the data is secret (encrypted) and may require the user to enter a password for access.
 

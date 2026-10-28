@@ -25,7 +25,7 @@ func CGImageMetadataTagCopyPrefix(_ tag: CGImageMetadataTag) -> CFString?
 extern CFStringRefCGImageMetadataTagCopyPrefix(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string that contains the tag’s prefix. For example, EXIF metadata uses the prefix `exif`. You are responsible for releasing this string.
 

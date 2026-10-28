@@ -21,7 +21,7 @@ var text: String? { get set }
 @property (nonatomic, copy, nullable) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 Siri speaks this text when the user selects the list item.
 

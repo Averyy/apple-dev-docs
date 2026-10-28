@@ -21,7 +21,7 @@ Timing information of the sample.
 var timing: CMSampleTimingInfo
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`invalid`](../../cmsampletiminginfo/invalid.md) if unknown. Individual fields may be set to [`invalid`](../../cmtime/invalid.md) if unknown.
 

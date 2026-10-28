@@ -10,7 +10,7 @@ virtual SInt32 getClientReferenceCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The count of client references to this buffer. It may be positive or negative, depending on whether the client is sending data into the kernel, or the kernel is sending data out to the client.
 

@@ -22,13 +22,13 @@ var direction: simd_float3? { get }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 This property is `nil` when direction is unavailable, such as when the app runs on Apple Watch.
 
 On iPhone, it’s possible to recieve direction for nearby third-party accessories in sessions that enable [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
 
-##### Interpret Direction
+### Interpret Direction
 
 This property is a Cartesian triplet (x,y,z) in normalized units with a range of `[0..1]`. Nearby Interaction models [`direction`](./direction-4qh5w.md) as a coordinate on a sphere, such that a ray cast from the sphere’s center through the coordinate points toward the peer device. For each axis, the sphere center is at coordinate 0, and the surface is at coordinate 1. As the user looks at the device’s screen,
 

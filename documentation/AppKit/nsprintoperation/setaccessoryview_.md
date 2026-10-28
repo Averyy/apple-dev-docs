@@ -17,7 +17,7 @@ Sets the custom accessory view to be displayed by the print operation’s print 
 - (void) setAccessoryView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to avoid subclassing `NSPrintPanel` or specifying your own print panel object. The print panel is automatically resized (as needed) to accommodate the accessory view when it is selected.
 

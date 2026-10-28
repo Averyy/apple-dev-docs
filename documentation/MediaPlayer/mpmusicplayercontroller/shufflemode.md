@@ -23,7 +23,7 @@ var shuffleMode: MPMusicShuffleMode { get set }
 @property (nonatomic) MPMusicShuffleMode shuffleMode;
 ```
 
-#### Discussion
+## Discussion
 
 For the available shuffle modes, see [`MPMusicShuffleMode`](../mpmusicshufflemode.md). If not explicitly set, `shuffleMode` defaults to [`MPMusicShuffleMode.default`](../mpmusicshufflemode/default.md).
 

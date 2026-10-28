@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, updateDraggingI
 - (void) collectionView:(NSCollectionView *) collectionView updateDraggingItemsForDrag:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to update the current drag items while a drag is in progress. Updating the drag items is optional, but you might use this method to change the image for an item. For example, you might change the image when the mouse hovers over a particular part of the collection view. Use the [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](../nsdragginginfo/enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md) method of the `draggingInfo` parameter to iterate over the drag items and update them as appropriate.
 

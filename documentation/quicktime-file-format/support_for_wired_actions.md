@@ -5,7 +5,7 @@
 
 Support wired actions in a QuickTime VR file.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

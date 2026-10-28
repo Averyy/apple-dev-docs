@@ -5,7 +5,7 @@
 
 Analyze details on the number of times users install and delete your apps.
 
-#### Overview
+## Overview
 
 Use the data in this report to estimate the number of times people install and delete your App Store apps.
 
@@ -29,7 +29,7 @@ App Download Date
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Summary Report | Detail Report |
 | --- | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Counts | The total count of events, based on users who have agreed to share their data with Apple and developers. | `integer` | ✔ | ✔ |
 | Unique Devices | The number of unique devices on which events were generated,  based on users who have agreed to share their data with Apple and developers. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

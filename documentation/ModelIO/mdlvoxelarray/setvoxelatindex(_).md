@@ -24,7 +24,7 @@ func setVoxelAtIndex(_ index: MDLVoxelIndex)
 - (void) setVoxelAtIndex:(MDLVoxelIndex) index;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLVoxelIndex`](../mdlvoxelindex.md) value describes both a location in the voxel array and the characteristics of the volume at that location. To set characteristics at a location, pass a [`MDLVoxelIndex`](../mdlvoxelindex.md) value whose first three components are the x, y, and z coordinates of that location and whose w coordinate specifies the *shell level* at that location.
 

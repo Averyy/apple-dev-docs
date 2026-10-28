@@ -23,11 +23,11 @@ mutating func remove(at i: Slice<Base>.Index) -> Base.Element
 
 Available when `Base` conforms to `RangeReplaceableCollection`.
 
-#### Return Value
+## Return Value
 
 The removed element.
 
-#### Discussion
+## Discussion
 
 All the elements following the specified position are moved to close the gap. This example removes the middle element from an array of measurements.
 

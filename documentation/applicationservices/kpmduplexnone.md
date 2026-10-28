@@ -13,7 +13,7 @@
 var kPMDuplexNone: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Print on only one side of the paper.
 

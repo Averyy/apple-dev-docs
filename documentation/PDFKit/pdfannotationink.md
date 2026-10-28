@@ -19,7 +19,7 @@ class PDFAnnotationInk
 @interface PDFAnnotationInk : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 A `PDFAnnotationInk` object displays one or more disjoint Bezier paths on a page. This is typically used to represent a freehand jotting or “scribble” of handwritten text.
 

@@ -21,7 +21,7 @@ var charKeyToAnyTapKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration> { get 
 @property (strong, readonly) SRKeyboardProbabilityMetric<NSUnitDuration *> * charKeyToAnyTapKey;
 ```
 
-#### Discussion
+## Discussion
 
 The next sequential key may be any key.
 

@@ -21,7 +21,7 @@ Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the
 func signature<D>(for digest: D) throws -> P256.Signing.ECDSASignature where D : Digest
 ```
 
-#### Return Value
+## Return Value
 
 The signature corresponding to the digest. The signing algorithm employs randomization to generate a different signature on every call, even for the same digest and key.
 

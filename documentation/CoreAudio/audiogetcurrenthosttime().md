@@ -20,11 +20,11 @@ func AudioGetCurrentHostTime() -> UInt64
 extern UInt64 AudioGetCurrentHostTime();
 ```
 
-#### Return Value
+## Return Value
 
 A UInt64 containing the current host time.
 
-#### Discussion
+## Discussion
 
 Gets the current host time.
 

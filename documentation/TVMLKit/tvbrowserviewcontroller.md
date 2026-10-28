@@ -19,7 +19,7 @@ class TVBrowserViewController
 @interface TVBrowserViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use this class to create a full-screen layout that supports full-screen browsing. This layout includes a built-in parallax effect that is triggered during the transition between cells.
 

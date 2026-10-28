@@ -19,11 +19,11 @@ func locationOfPrintRect(_ rect: NSRect) -> NSPoint
 - (NSPoint) locationOfPrintRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A point to be used for setting the origin for `aRect`, whose size the view can examine in order to properly place it. It is expressed in the default coordinate system of the page.
 
-#### Discussion
+## Discussion
 
 The default implementation places `aRect` according to the status of the [`NSPrintInfo`](../nsprintinfo.md) object for the print job. By default it places the image in the upper-left corner of the page, but if the `NSPrintInfo` methods [`isHorizontallyCentered`](../nsprintinfo/ishorizontallycentered.md) or [`isVerticallyCentered`](../nsprintinfo/isverticallycentered.md) return [`true`](../../Swift/true.md), it centers a single-page image along the appropriate axis. A multiple-page document, however, is always placed so the divided pieces can be assembled at their edges.
 

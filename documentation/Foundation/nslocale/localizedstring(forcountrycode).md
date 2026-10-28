@@ -25,11 +25,11 @@ func localizedString(forCountryCode countryCode: String) -> String?
 - (NSString *) localizedStringForCountryCode:(NSString *) countryCode;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the country or region.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"GB"` for `countryCode`, produces the string `"United Kingdom"`.
 

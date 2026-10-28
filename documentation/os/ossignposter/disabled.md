@@ -21,7 +21,7 @@ A shared signposter that doesn’t emit signposts at runtime.
 static var disabled: OSSignposter { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use the signposter this property returns to disable signposts in your production builds without having to refactor your code, as the following example demonstrates:
 

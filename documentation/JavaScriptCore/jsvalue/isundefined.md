@@ -24,7 +24,7 @@ var isUndefined: Bool { get }
 @property (readonly) BOOL isUndefined;
 ```
 
-#### Discussion
+## Discussion
 
 The JavaScript `undefined` value is used for variables that have not yet been assigned a value, for formal parameters in functions for which no actual parameter has been passed, and as the result of expressions or function calls that do not explicitly return a value. Note that `undefined` is not the same as `null`.
 

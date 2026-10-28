@@ -17,7 +17,7 @@ Invalidates the extension.
 func invalidate() async throws
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method before terminating the extension. The extension may complete termination before this method returns.
 

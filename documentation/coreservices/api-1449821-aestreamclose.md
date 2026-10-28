@@ -19,11 +19,11 @@ func AEStreamClose(_ ref: AEStreamRef!, _ desc: UnsafeMutablePointer<AEDesc>!) -
 OSStatus AEStreamClose(AEStreamRef ref, AEDesc *desc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this function to dispose of an `AEStreamRef` you created using [`AEStreamCreateEvent(_:_:_:_:_:_:_:)`](./api-1446562-aestreamcreateevent.md), [`AEStreamOpen()`](./api-1447732-aestreamopen.md), or [`AEStreamOpenEvent(_:)`](./api-1445366-aestreamopenevent.md). To retrieve the resulting descriptor from the stream prior to disposal, pass in a pointer to an `AEDesc` structure in the `desc` parameter. If this parameter exists, `AEStreamClose` fills in the descriptor with the stream data. If the stream contains invalid information, possibly due to improperly balanced calls to “AEStream” functions, the returned descriptor type is set to `typeNull`. 
 

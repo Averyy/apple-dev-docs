@@ -5,13 +5,13 @@
 
 Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 
-#### Overview
+## Overview
 
 Use [`substroke(range:)`](./pkstroke-swift.struct/substroke%28range%29.md), [`PKStroke.RenderState`](./pkstroke-swift.struct/renderstate-swift.struct.md), and [`renderGroupID`](./pkstroke-swift.struct/rendergroupid.md) to control how strokes look when you create or edit them in code. With these APIs, you can play back a recorded drawing by revealing each stroke as it was originally drawn, keep grain texture in place when you edit a stroke, and make marker strokes blend together the same way they do when someone draws them.
 
 When you create or modify strokes in code, PencilKit doesn’t automatically carry visual details, for example, grain-texture position and wet-ink grouping, into the new stroke. Learn how to set those details explicitly so your strokes look the same as strokes drawn naturally on the canvas.
 
-#### Slice a stroke at any point
+## Slice a stroke at any point
 
 `PKStrokePath` lets you slice a path at any position, not just at whole-number positions. Specify the slice as a range where `0` is the start, `count - 1` is the end, and values like `2.5` fall between two points.
 
@@ -28,7 +28,7 @@ To slice a full stroke, use [`substroke(range:)`](./pkstroke-swift.struct/substr
 let firstHalf = stroke.substroke(range: 0...CGFloat(stroke.path.count - 1) * 0.5)
 ```
 
-#### Animate a stroke reveal
+## Animate a stroke reveal
 
 A common effect in drawing apps is showing a stroke appearing gradually, which is useful for playback features, tutorials, or animated transitions.
 
@@ -62,7 +62,7 @@ func startRevealAnimation(for stroke: PKStroke) {
 }
 ```
 
-#### Preserve rendering state when editing strokes
+## Preserve rendering state when editing strokes
 
 When you construct a new stroke based on an existing one, for example, after changing its path, copy the [`renderState`](./pkstroke-swift.struct/renderstate-swift.property.md) from the original. Dropping it can cause the new stroke to look different from the original even when the path and ink are the same.
 
@@ -77,7 +77,7 @@ let editedStroke = PKStroke(
 
 > **Note**: [`PKStroke.RenderState`](./pkstroke-swift.struct/renderstate-swift.struct.md) includes [`grainOffset`](./pkstroke-swift.struct/renderstate-swift.struct/grainoffset.md), which anchors the grain texture for inks like crayon, as well as opaque properties for other ink types such as pencil. If [`renderState`](./pkstroke-swift.struct/renderstate-swift.property.md) is non-nil, pass it along whenever the new stroke is meant to look like the original.
 
-#### Composite marker strokes as wet ink
+## Composite marker strokes as wet ink
 
 When people draw multiple strokes with compatible inks, such as marker and watercolor, in quick succession, PencilKit blends them where they overlap, rather than layering them. For this to work, PencilKit needs data on which strokes belong together.
 
@@ -101,7 +101,7 @@ Contiguous strokes with the same [`renderGroupID`](./pkstroke-swift.struct/rende
 
 > **Note**: Wet-ink blending is only visible with inks that support it, such as marker. Assigning a [`renderGroupID`](./pkstroke-swift.struct/rendergroupid.md) to other ink types has no effect on their appearance.
 
-#### Combine techniques for animated playback
+## Combine techniques for animated playback
 
 These techniques work together. Consider an app that plays back a sequence of handwritten marker strokes — each stroke needs to appear gradually while keeping the wet-ink blending intact. Pass the set of strokes and a progress value from `0` to `1`, and the function returns how much of each stroke to show at that point in the playback:
 

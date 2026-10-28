@@ -20,7 +20,7 @@ case urlSchemeNotAllowed
 SSReadingListErrorURLSchemeNotAllowed
 ```
 
-#### Discussion
+## Discussion
 
 The URL scheme for the specified URL is not allowed in the reading list.
 

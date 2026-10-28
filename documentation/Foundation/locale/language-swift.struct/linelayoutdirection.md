@@ -21,7 +21,7 @@ Ordering of lines within a page. For example, top-to-bottom for English; right-t
 var lineLayoutDirection: Locale.LanguageDirection { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: See also `characterDirection`.
 

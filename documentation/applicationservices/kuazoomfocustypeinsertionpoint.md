@@ -13,7 +13,7 @@
 var kUAZoomFocusTypeInsertionPoint: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The text insertion point has moved.
 

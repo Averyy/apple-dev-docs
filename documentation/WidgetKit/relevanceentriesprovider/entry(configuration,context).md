@@ -20,7 +20,7 @@ func entry(configuration: Self.Configuration, context: Self.Context) async throw
 
 - [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
-#### Return Value
+## Return Value
 
 A relevance entry representing the widget in this configuration.
 

@@ -24,11 +24,11 @@ convenience init(forDieWithSideCount sideCount: Int)
 + (instancetype) distributionForDieWithSideCount:(NSInteger) sideCount;
 ```
 
-#### Return Value
+## Return Value
 
 A uniform random distribution that produces values in the range `[1, sideCount]`.
 
-#### Discussion
+## Discussion
 
 Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](./init%28randomsource,lowestvalue,highestvalue%29.md) initializer, passing a new instance of the [`GKARC4RandomSource`](../gkarc4randomsource.md) class for the `source` parameter, and passing 1 and `sideCount` for the `lowestValue` and `highestValue` parameters. Because the newly created distribution uses its own [`GKRandomSource`](../gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
 

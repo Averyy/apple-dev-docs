@@ -21,7 +21,7 @@ var allowsMultipleLines: Bool { get }
 @property (nonatomic, readonly) BOOL allowsMultipleLines;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to @c YES to allow elements to be visible on multiple lines. Set the value of this property to @c NO to only show a single line of elements.
 

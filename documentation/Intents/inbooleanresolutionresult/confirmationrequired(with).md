@@ -21,11 +21,11 @@ Creates an object whose resolution requires that the user must confirm the value
 static func confirmationRequired(with valueToConfirm: Bool?) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBooleanResolutionResult`](../inbooleanresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value.
 

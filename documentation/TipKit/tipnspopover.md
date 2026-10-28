@@ -16,7 +16,7 @@ A subclass of NSPopover that displays a popover tip in AppKit applications.
 @objc @preconcurrency final class TipNSPopover
 ```
 
-#### Overview
+## Overview
 
 Use this to create a tip you want to display and lay out as a [`NSPopover`](../AppKit/nspopover.md).
 

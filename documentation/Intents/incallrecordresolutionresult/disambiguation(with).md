@@ -24,11 +24,11 @@ class func disambiguation(with callRecordsToDisambiguate: [INCallRecord]) -> Sel
 + (instancetype) disambiguationWithCallRecordsToDisambiguate:(NSArray<INCallRecord *> *) callRecordsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordResolutionResult`](../incallrecordresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result when one `INCallRecord` matches the given information, and you can’t definitively pick one. Ask the user to select from the objects you specify.
 

@@ -21,7 +21,7 @@ Configures all `Map` views in the associated environment to have standard size a
 @preconcurrency func mapControls(@ViewBuilder _ content: () -> some View) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You provide the controls you want to appear atop your map. When using a control in conjunction with `.mapControls` you don’t need to specify a scope. Views that are not MapKit controls will be ignored.
 

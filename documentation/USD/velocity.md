@@ -5,11 +5,11 @@
 
 The amount of velocity the impulse adds to the target prims.
 
-#### Overview
+## Overview
 
 The value and sign of each component in the triplet determine the impulse’s direction along each respective axis. The magnitude of each component determines the speed along each the respective axis. This property is in *local space*, so it applies to the coordinate space of the target prims.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform vector3d velocity = (0.0, 0.0, 0.0)

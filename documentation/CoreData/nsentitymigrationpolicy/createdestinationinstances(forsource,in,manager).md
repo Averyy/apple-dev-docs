@@ -25,11 +25,11 @@ func createDestinationInstances(forSource sInstance: NSManagedObject, in mapping
 - (BOOL) createDestinationInstancesForSourceInstance:(NSManagedObject *) sInstance entityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the migration manager on each source instance (as specified by the [`sourceExpression`](../nsentitymapping/sourceexpression.md) in the mapping) to create the corresponding destination instance(s). It also associates the source and destination instances by calling `NSMigrationManager`’s [`associate(sourceInstance:withDestinationInstance:for:)`](../nsmigrationmanager/associate%28sourceinstance,withdestinationinstance,for%29.md) method.
 
-##### Special Considerations
+### Special Considerations
 
 If you override this method and do not invoke `super`, you must invoke `NSMigrationManager`’s [`associate(sourceInstance:withDestinationInstance:for:)`](../nsmigrationmanager/associate%28sourceinstance,withdestinationinstance,for%29.md) to associate the source and destination instances as required. .
 

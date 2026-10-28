@@ -20,7 +20,7 @@ var dwNegativeSaturation: DWORD
 DWORD dwNegativeSaturation;
 ```
 
-#### Discussion
+## Discussion
 
 If the device does not support force saturation, the value of this member is ignored.
 

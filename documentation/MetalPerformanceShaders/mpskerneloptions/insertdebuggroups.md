@@ -24,7 +24,7 @@ static var insertDebugGroups: MPSKernelOptions { get }
 MPSKernelOptionsInsertDebugGroups
 ```
 
-#### Discussion
+## Discussion
 
 Using this option causes various kernel encode methods to call  [`pushDebugGroup(_:)`](../../Metal/mtlcommandencoder/pushdebuggroup%28_%29.md) and [`popDebugGroup()`](../../Metal/mtlcommandencoder/popdebuggroup%28%29.md) methods. The debug string will be drawn from the kernel’s [`label`](../mpskernel/label.md) property, if available, or the name of the class otherwise.
 

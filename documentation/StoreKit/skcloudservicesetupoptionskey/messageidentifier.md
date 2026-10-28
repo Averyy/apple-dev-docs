@@ -28,7 +28,7 @@ extern SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsMessageIden
 
 - [Offering Apple Music Subscription in Your App](../offering-apple-music-subscription-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 If this key is missing, the setup view is configured as if it is using the [`join`](../skcloudservicesetupmessageidentifier/join.md) key by default.
 

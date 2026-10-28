@@ -25,7 +25,7 @@ protocol INPhotosDomainHandling : INSearchForPhotosIntentHandling, INStartPhotoP
 @protocol INPhotosDomainHandling <INSearchForPhotosIntentHandling, INStartPhotoPlaybackIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INPhotosDomainHandling`](./inphotosdomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle photo-related intents. When your app adopts all of the protocols associated with photos, you can adopt this one protocol instead of adopting the [`INSearchForPhotosIntentHandling`](./insearchforphotosintenthandling.md) and [`INStartPhotoPlaybackIntentHandling`](./instartphotoplaybackintenthandling.md) protocols separately.
 

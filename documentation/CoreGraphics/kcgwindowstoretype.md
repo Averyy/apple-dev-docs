@@ -18,7 +18,7 @@ let kCGWindowStoreType: CFString
 extern CFStringRef const kCGWindowStoreType;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`CFNumberType.intType`](../CoreFoundation/cfnumbertype/inttype.md)) that contains one of the constants defined in [Backing Store Types](./backing-store-types.md).
 

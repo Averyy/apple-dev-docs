@@ -24,7 +24,7 @@ func SSLGetSessionOption(_ context: SSLContext, _ option: SSLSessionOption, _ va
 OSStatus SSLGetSessionOption(SSLContextRef context, SSLSessionOption option, Boolean *value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

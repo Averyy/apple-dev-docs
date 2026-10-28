@@ -25,11 +25,11 @@ func CFStringConvertEncodingToIANACharSetName(_ encoding: CFStringEncoding) -> C
 extern CFStringRefCFStringConvertEncodingToIANACharSetName(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the IANA “charset” that is the closest mapping to `encoding`. Returns `NULL` if the encoding is not recognized.
 
-#### Discussion
+## Discussion
 
 The [`CFStringConvertIANACharSetNameToEncoding(_:)`](./cfstringconvertianacharsetnametoencoding%28_%29.md) function is complementary to this function.
 

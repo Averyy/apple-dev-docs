@@ -22,7 +22,7 @@ static let postToFlickr: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypePostToFlickr;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`UIImage`](../../uiimage.md) and [`NSURL`](../../../Foundation/nsurl.md) objects whose contents use the file scheme and point to an image. You can also use [`NSData`](../../../Foundation/nsdata.md) objects whose contents are image data as data for the activity items.
 

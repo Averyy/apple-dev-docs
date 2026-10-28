@@ -11,7 +11,7 @@ framework: "mlx-swift/MLXOptimizers"
 
 Built-in optimizers.
 
-#### Overview
+## Overview
 
 MLX has a number of built in optimizers that are useful for training models.  Here is a simple training loop:
 
@@ -39,7 +39,7 @@ for _ in 0 ..< epochs {
 }
 ```
 
-#### Other MLX Packages
+## Other MLX Packages
 
 - [MLX](../MLX/MLX.md)
 - [MLXNN](../MLXNN/MLXNN.md)

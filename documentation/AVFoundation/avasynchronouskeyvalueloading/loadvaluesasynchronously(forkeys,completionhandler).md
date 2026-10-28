@@ -36,7 +36,7 @@ func loadValues(forKeys keys: [String]) async
 
 - [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
-#### Discussion
+## Discussion
 
 Regardless of the number of keys specified, the system calls the completion handler only once per invocation of this method. The system calls this method:
 

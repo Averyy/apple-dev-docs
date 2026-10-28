@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, didAdd rowView: NSTableR
 - (void) outlineView:(NSOutlineView *) outlineView didAddRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is for NSView-based outline views. At this point, you can choose to add in extra views or modify any properties on `rowView`.
 

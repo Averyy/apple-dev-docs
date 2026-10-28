@@ -24,11 +24,11 @@ subscript(behavior: GKBehavior) -> NSNumber { get set }
 - (NSNumber *) objectForKeyedSubscript:(GKBehavior *) behavior;
 ```
 
-#### Return Value
+## Return Value
 
 The weight applied to that behavior’s influence on an agent’s speed and direction, or `0.0` if that behavior is not in the composite behavior.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`weight(for:)`](./weight%28for%29.md) method, but allows access using subscript syntax.
 

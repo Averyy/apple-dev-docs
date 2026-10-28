@@ -25,7 +25,7 @@ case raiseException
 NSDecodingFailurePolicyRaiseException
 ```
 
-#### Discussion
+## Discussion
 
 With this policy, the [`NSCoder`](../../nscoder.md) raises an exception internally to propagate failure messages (and unwind the stack). In Objective-C, this exception can be transformed into an [`NSError`](../../nserror.md) via methods like [`decodeTopLevelObjectAndReturnError:`](../decodetoplevelobjectandreturnerror_.md)
 

@@ -21,7 +21,7 @@ The affine transform’s rotation.
 var rotation: Rotation3DFloat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.
 

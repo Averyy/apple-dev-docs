@@ -21,7 +21,7 @@ Returns a projective transform that results from shearing over an axis by shear 
 func sheared(_ shear: AxisWithFactors) -> ProjectiveTransform3D
 ```
 
-#### Return Value
+## Return Value
 
 The projective transform that results from shearing over an axis by shear factors for the other two axes.
 

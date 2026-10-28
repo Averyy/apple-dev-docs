@@ -19,7 +19,7 @@ var acceptsGlyphInfo: Bool { get set }
 @property BOOL acceptsGlyphInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is determined by examining the return value from sending a `validAttributesForMarkedText` message to the client at initialization.
 

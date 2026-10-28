@@ -25,11 +25,11 @@ func CVImageBufferGetCleanRect(_ imageBuffer: CVImageBuffer) -> CGRect
 extern CGRect CVImageBufferGetCleanRect(CVImageBufferRef imageBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGRect`](../CoreFoundation/cgrect.md) structure returning the nominal display size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](./cvimagebuffer.md) type.
 
-#### Discussion
+## Discussion
 
 The clean aperture size is smaller than the full size of the image. For example, for an NTSC DV frame, this function returns a [`CGRect`](../CoreFoundation/cgrect.md) structure with an origin of `(8,0)` and a size of 704 x 480.
 

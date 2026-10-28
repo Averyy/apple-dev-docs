@@ -24,7 +24,7 @@ ARSessionRunOptionResetTracking
 
 - [Managing Session Life Cycle and Tracking Quality](../../managing-session-life-cycle-and-tracking-quality.md)
 
-#### Discussion
+## Discussion
 
 By default, when you call the [`run(_:options:)`](../run%28_,options%29.md) method on a session that has run before or is already running, the session resumes device position tracking from its last known state. (For example, an [`ARAnchor`](../../aranchor.md) object keeps its apparent position relative to the camera.) When you call the [`run(_:options:)`](../run%28_,options%29.md) method with a configuration of the same type as the session’s current configuration, you can add this option to force device position tracking to return to its initial state.
 

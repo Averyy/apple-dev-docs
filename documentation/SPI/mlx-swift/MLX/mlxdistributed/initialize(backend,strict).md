@@ -18,11 +18,11 @@ Initialize the distributed backend and return the global group.
 static func initialize(backend: MLXDistributed.Backend = .any, strict: Bool = false) throws -> MLXDistributed.Group
 ```
 
-#### Return Value
+## Return Value
 
 The global group
 
-#### Discussion
+## Discussion
 
 If no backend is configured and `strict` is `false` this returns a group of size one, in which the collectives return their input unchanged, so the same code also runs as a single process.  Forming a real group waits for the other processes to connect.
 

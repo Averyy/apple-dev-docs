@@ -19,7 +19,7 @@ func changeDocumentBackgroundColor(_ sender: Any?)
 - (void) changeDocumentBackgroundColor:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeDocumentBackgroundColor(_:)`](../../AppKit/nstextview/changedocumentbackgroundcolor%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

@@ -25,11 +25,11 @@ convenience init(target: Any, selector: Selector, object argument: Any?)
 - (instancetype) initWithTarget:(id) target selector:(SEL) selector object:(id) argument;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSThread` object initialized with the given arguments.
 
-#### Discussion
+## Discussion
 
 The objects `target` and `argument` are retained during the execution of the detached thread. They are released when the thread finally exits.
 

@@ -23,7 +23,7 @@ static var withTime: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithTime
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the time. The format for time is `HH:mm:ss`.
 

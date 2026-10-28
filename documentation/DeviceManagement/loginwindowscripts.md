@@ -15,7 +15,7 @@ The payload that configures scripts to run at login and logout.
 object LoginWindowScripts
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.mcxloginscripts` as the payload type.
 
@@ -23,7 +23,7 @@ The MCX login and logout managed-scripts payload contains information about exec
 
 `Loginwindow` uses the `LoginHook` and `LogoutHook` string keys in `/var/root/Library/Preferences/com.apple.loginwindow.plist` to indicate a path to the executable script files, which run during user login and logout. The system passes the current user name as an argument to the file.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ The MCX login and logout managed-scripts payload contains information about exec
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

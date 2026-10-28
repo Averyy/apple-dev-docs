@@ -14,7 +14,7 @@ Test if the incoming value is a normalized floating-point value.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Is Normal (half)**:
 

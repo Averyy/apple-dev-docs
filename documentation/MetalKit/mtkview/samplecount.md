@@ -24,7 +24,7 @@ var sampleCount: Int { get set }
 @property (nonatomic) NSUInteger sampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 Support for different sample count values varies by device object. Call the [`supportsTextureSampleCount(_:)`](../../Metal/mtldevice/supportstexturesamplecount%28_%29.md) method to determine if the device object supports the sample count you want.
 

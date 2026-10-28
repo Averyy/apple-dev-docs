@@ -5,7 +5,7 @@
 
 Isolate regions in an image that are most likely to draw people’s attention.
 
-#### Overview
+## Overview
 
 *Saliency* refers to what’s noticeable or important in an image. The Vision framework supports two types of saliency: *object-based* and *attention-based*.
 
@@ -21,7 +21,7 @@ Saliency has many applications:
 
 This article describes one application of saliency: cropping an input image to fit a given aspect ratio while keeping the most interesting element in the image. This technique works by focusing on the region most likely to draw attention at a glance.
 
-##### Specify the Type of Saliency
+### Specify the Type of Saliency
 
 Both models of saliency are based on deep-learning neural networks. The model used for object-based saliency is trained on foreground objects that have been segmented from the background. The model used for attention-based saliency is trained using eye-tracking data from human subjects looking at images.
 
@@ -54,7 +54,7 @@ switch (saliencyType)
 
 Object-based saliency and attention-based saliency have different use cases. If you’re deciding what to keep in an image thumbnail based on what’s most interesting, use attention-based saliency.
 
-##### Parse the Output Heatmap
+### Parse the Output Heatmap
 
 Both types of saliency requests return their results as heatmaps, which are 68 x 68 pixel buffers of floating-point saliency values. Think of each entry in the heatmap as a cell region of your original image. The heatmap quantifies how salient the pixels in the cell are for the chosen saliency approach.
 
@@ -62,7 +62,7 @@ Both types of saliency requests return their results as heatmaps, which are 68 x
 
 If your app overlays the saliency heatmap on the original input image, upsample the heatmap and apply a colormap before showing it to the user.
 
-##### Merge Salient Regions for Object-Based Saliency
+### Merge Salient Regions for Object-Based Saliency
 
 For object-based saliency requests, which return up to three bounding boxes, you can use either the most salient bounding box directly to crop a region of your image, or the union of all boxes. Each bounding box comes with a score that you use to rank the relevance of regions within the image.
 
@@ -97,7 +97,7 @@ weakSelf.salientRect = VNImageRectForNormalizedRect(unionOfSalientRegions,
 
 If the object-based saliency map value is close to zero everywhere, the image contains nothing that’s salient.
 
-##### Crop the Image
+### Crop the Image
 
 Attention-based saliency requests return only one bounding box, which you use directly to crop the image and drop uninteresting content. Use this bounding box to find the region on which to focus:
 
@@ -125,7 +125,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 
 If nothing is salient, the attention heatmap that’s returned highlights the central part of the image. This behavior reflects the fact that people tend to look at the center of an image if nothing in particular stands out to them.
 
-##### Feed Saliency Results into Other Vision Requests
+### Feed Saliency Results into Other Vision Requests
 
 Once you know which regions of an image are interesting, you can use the output of a saliency request as the input to another Vision request, like text recognition. The bounding boxes from saliency requests also help you localize the regions you’d like to search, so you can prioritize recognition on the most salient parts of an image, like signs or posters.
 

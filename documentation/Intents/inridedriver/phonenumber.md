@@ -31,7 +31,7 @@ var phoneNumber: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 When displaying information about the driver, the system displays the provided string as-is and does not try to format it. You are responsible for formatting the phone number appropriately for the user’s locale.
 

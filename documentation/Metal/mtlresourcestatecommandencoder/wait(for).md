@@ -32,7 +32,7 @@ optional func wait(for fence: any MTLFence)
 - (void) waitForFence:(id<MTLFence>) fence;
 ```
 
-#### Discussion
+## Discussion
 
 Fences maintain order to prevent GPU data hazards as the GPU runs various passes within the same command queue. The encoded resource state commands wait for a pass to update `fence` before running.
 

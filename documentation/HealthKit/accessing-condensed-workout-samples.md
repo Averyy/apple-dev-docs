@@ -5,7 +5,7 @@
 
 Read series data from condensed workouts.
 
-#### Overview
+## Overview
 
 To reduce the size of workout data, HealthKit can condense system generated samples associated with first party workouts. HealthKit enumerates the data associated with a workout and adds that data to one or more quantity series samples. After saving all the data to series objects, HealthKit deletes the originals. In addition, it converts older [`HKQuantitySample`](./hkquantitysample.md) objects to [`HKCumulativeQuantitySample`](./hkcumulativequantitysample.md) or [`HKDiscreteQuantitySample`](./hkdiscretequantitysample.md) objects.
 
@@ -33,7 +33,7 @@ In the example below, HealthKit merges consecutive heart rate samples that have 
 
 The condensing and coalescing processes preserve all the data from the original workout and reduce the overhead needed to save that data to disk. However, your app may need to perform additional steps to read the condensed and coalesced data.
 
-##### Query high-frequency data from a condensed workout
+### Query high-frequency data from a condensed workout
 
 Because HealthKit condenses and coalesces older workout data, any samples associated with a workout may actually represent a series of higher-frequency data. In many cases, you don’t need to operate on the [`HKSample`](./hksample.md) instances or the backing quantity series data. Instead, you should use [`HKStatisticsQuery`](./hkstatisticsquery.md) and [`HKStatisticsCollectionQuery`](./hkstatisticscollectionquery.md) to transparently compute statistics for the underlying data.
 

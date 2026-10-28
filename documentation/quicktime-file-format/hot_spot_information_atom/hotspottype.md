@@ -6,7 +6,7 @@
 
 The hot spot type.
 
-#### Overview
+## Overview
 
 This type specifies which other information atoms — if any — are siblings to this one. QuickTime VR recognizes three types: `kQTVRHotSpotLinkType`, `kQTVRHotSpotURLType`, and `kQTVRHotSpotUndefinedType`.
 

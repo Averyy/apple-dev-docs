@@ -17,15 +17,15 @@ Element-wise quotient and remainder.
 func divmod(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Return Value
+## Return Value
 
 The quotient `a / b` and remainder `a % b`
 
-#### Discussion
+## Discussion
 
 The fuction `divmod(a, b)` is equivalent to but faster than `(a // b, a % b)`. The function uses numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`divide(_:_:stream:)`](./divide%28_,_,stream%29.md)

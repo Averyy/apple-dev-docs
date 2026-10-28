@@ -19,7 +19,7 @@ A 2-bit unsigned integer.
 case uint2
 ```
 
-#### Discussion
+## Discussion
 
 Two-bit unsigned integers can represent values in the range [0, 3]. This type is used for quantization and in lookup tables.
 

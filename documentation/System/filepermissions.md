@@ -22,7 +22,7 @@ The access permissions for a file.
 struct FilePermissions
 ```
 
-#### Overview
+## Overview
 
 The following example creates an instance of the `FilePermissions` structure from a raw octal literal and compares it to a file permission created using named options:
 

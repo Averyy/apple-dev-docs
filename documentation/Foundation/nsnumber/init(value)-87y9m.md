@@ -25,7 +25,7 @@ init(value: UInt16)
 - (NSNumber *) initWithUnsignedShort:(unsigned short) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as an `unsigned short`.
 

@@ -23,7 +23,7 @@ optional func paymentAuthorizationViewControllerWillAuthorizePayment(_ controlle
 - (void) paymentAuthorizationViewControllerWillAuthorizePayment:(PKPaymentAuthorizationViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before the payment request is authorized but after the user has authenticated by using either a passcode, Touch ID, or Face ID.
 

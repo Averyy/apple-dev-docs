@@ -5,7 +5,7 @@
 
 Control how the article’s opening section comes into view.
 
-#### Overview
+## Overview
 
 The fading sticky header scene causes the header to briefly “stick” to the top of the screen and then fade to a defined color.
 
@@ -15,7 +15,7 @@ The fading sticky header scene causes the header to briefly “stick” to the t
 
 To implement a scene, you add a `scene` property to a `section` or `chapter` component.
 
-##### Apply a Scene
+### Apply a Scene
 
 1. In your working `article.json` file, delete the parallax behavior from the first section. The code you are deleting begins with `"behavior": {` and ends with a closing brace and a comma (`},`).
 2. Copy the example code [Scene: Copy This Code](./adding-a-scene.md#Scene-Copy-This-Code).
@@ -25,7 +25,7 @@ Your code should look like the example code [Scene: Result](./adding-a-scene.md#
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the fading sticky header scene.
 
-###### Scene: Copy This Code
+#### Scene: Copy This Code
 
 ```json
       "scene": {
@@ -34,7 +34,7 @@ After you make this change in your code, you can preview your working `article.j
       },
 ```
 
-###### Scene: Result
+#### Scene: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -74,11 +74,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding Animations](./adding-animations.md)
 
-##### Next
+### Next
 
 [Viewing the Finished Article for Advanced Design Tutorial 2](./viewing-the-finished-article-for-advanced-design-tutorial-2.md)
 

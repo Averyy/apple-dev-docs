@@ -21,7 +21,7 @@ Decrements the retain count of a layer object.
 extern void CGLayerRelease(CGLayerRef layer);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`CFRelease`](../CoreFoundation/cfrelease.md) except that it does not crash if the `layer` parameter is `null`.
 

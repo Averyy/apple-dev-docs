@@ -22,7 +22,7 @@ static let title: UIActivityItemsConfigurationMetadataKey
 extern UIActivityItemsConfigurationMetadataKey const UIActivityItemsConfigurationMetadataKeyTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../Foundation/nsstring.md) or [`NSAttributedString`](../../Foundation/nsattributedstring.md) that contains the title.
 

@@ -25,11 +25,11 @@ func resourceValues(forKeys keys: [URLResourceKey]) throws -> [URLResourceKey : 
 - (NSDictionary<NSString *,id> *) resourceValuesForKeys:(NSArray<NSString *> *) keys error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of resource values indexed by key.
 
-#### Discussion
+## Discussion
 
 This method first checks if the URL object already caches the specified resource values. If so, it returns the cached resource values to the caller. If not, then this method synchronously obtains the resource values from the backing store, adds the resource values to the URL object’s cache, and returns the resource values to the caller.
 

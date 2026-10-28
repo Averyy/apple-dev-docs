@@ -17,7 +17,7 @@ class VZUSBPassthroughDevice
 @interface VZUSBPassthroughDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Class representing a USB passthrough device.
 

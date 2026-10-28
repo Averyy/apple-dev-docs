@@ -23,7 +23,7 @@ func sourceGradientTensors(for layer: MLCLayer) -> [MLCTensor]
 - (NSArray<MLCTensor *> *) sourceGradientTensorsForLayer:(MLCLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tensors.
 

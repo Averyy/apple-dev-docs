@@ -32,7 +32,7 @@ var dropOffLocation: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * dropOffLocation;
 ```
 
-#### Discussion
+## Discussion
 
 When booking the ride, you can communicate this information to the driver.
 

@@ -19,7 +19,7 @@ A string that uniquely identifies a specific document when searching for matchin
 typedef id<NSCopying,NSObject> UITextSearchDocumentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UITextSearching`](./uitextsearching-53wjq.md) and [`UITextSearchAggregator`](./uitextsearchaggregator-swift.struct.md) protocols use this type to distinguish matches in a specific document from text in other documents with the same range.
 

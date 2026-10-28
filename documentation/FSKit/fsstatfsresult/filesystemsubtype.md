@@ -19,7 +19,7 @@ var fileSystemSubType: Int { get set }
 @property NSInteger fileSystemSubType;
 ```
 
-#### Discussion
+## Discussion
 
 Match this value to the `FSPersonalities`‘s `FSSubType` attribute, if it exists within the `EXAppExtensionAttributes` dictionary of the module’s `Info.plist`.
 

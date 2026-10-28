@@ -25,7 +25,7 @@ var sourceInformation: CLLocationSourceInformation? { get }
 @property (nonatomic, readonly, nullable) CLLocationSourceInformation * sourceInformation;
 ```
 
-#### Discussion
+## Discussion
 
 This property enables developers to make better-informed decisions as to whether to treat certain locations differently, or reject potentially simulated locations that they generate during testing. An app may choose to check this property and reject locations if, for example, the [`isSimulatedBySoftware`](../cllocationsourceinformation/issimulatedbysoftware.md) property is `true` when the developer isn’t debugging or testing the app.
 

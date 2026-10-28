@@ -21,7 +21,7 @@ Creates a range set containing the values in the given ranges.
 init(_ ranges: some Sequence<Range<Bound>>)
 ```
 
-#### Discussion
+## Discussion
 
 Any empty ranges in `ranges` are ignored, and non-empty ranges are merged to eliminate any overlaps. As such, the `ranges` collection in the resulting range set may not be equivalent to the sequence of ranges passed to this initializer.
 

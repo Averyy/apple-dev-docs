@@ -22,7 +22,7 @@ Begins a web authentication session.
 func authenticate(using url: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession? = nil, additionalHeaderFields: [String : String]) async throws -> URL
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws an error if `additionalHeaderFields` includes a “forbidden request-header” as defined by the WHATWG.
 

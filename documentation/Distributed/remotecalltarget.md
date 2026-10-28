@@ -21,7 +21,7 @@ Represents a ‘target’ of a distributed call, such as a `distributed func` or
 struct RemoteCallTarget
 ```
 
-#### Overview
+## Overview
 
 Actor systems generally should treat the `identifier` as an opaque string, and pass it along to the remote system for in their `remoteCall` implementation. Alternative approaches are possible, where the identifiers are either compressed, cached, or represented in other ways, as long as the recipient system is able to determine which target was intended to be invoked.
 

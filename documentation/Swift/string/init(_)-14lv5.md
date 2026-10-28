@@ -21,7 +21,7 @@ Creates a new string from the given substring.
 init(_ substring: Substring)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the length of `substring`.
 

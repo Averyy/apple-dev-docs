@@ -25,7 +25,7 @@ func CMSetAttachments(_ target: CMAttachmentBearer, attachments theAttachments: 
 extern void CMSetAttachments(CMAttachmentBearerRef target, CFDictionaryRef theAttachments, CMAttachmentMode attachmentMode);
 ```
 
-#### Discussion
+## Discussion
 
 `CMSetAttachments` is a convenience call that in turn calls `CMSetAttachment` for each key and value in the given dictionary. All key value pairs must be in the root level of the dictionary.  Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMSetAttachments` is equivalent to `CVBufferSetAttachments`.
 

@@ -25,7 +25,7 @@ case failure
 INCreateTaskListIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevented you from creating the task list.
 

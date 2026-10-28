@@ -25,7 +25,7 @@ case task
 INNotebookItemTypeTask
 ```
 
-#### Discussion
+## Discussion
 
 Search your app’s tasks and return each one using an [`INTask`](../intask.md) object. A task is usually contained within a task list, but may be standalone if your app does not support task lists.
 

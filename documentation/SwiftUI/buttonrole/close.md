@@ -21,7 +21,7 @@ A role that indicates a button that closes the current operation.
 static let close: ButtonRole
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a cancel operation, a close operation doesn’t lose progress for a user.
 

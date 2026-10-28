@@ -19,7 +19,7 @@ func popToRootController()
 - (void) popToRootController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return your interface to its initial configuration. You might do this so that you can reset your navigation hierarchy to its initial state before pushing one or more different interface controllers onto the navigation stack.
 

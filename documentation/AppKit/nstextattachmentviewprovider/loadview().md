@@ -19,7 +19,7 @@ func loadView()
 - (void) loadView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a custom view hierarchy. Don’t call this method directly, the framework calls it at the appropriate time.
 

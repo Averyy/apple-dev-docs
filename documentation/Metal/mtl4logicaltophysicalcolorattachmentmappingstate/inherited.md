@@ -24,7 +24,7 @@ case inherited
 MTL4LogicalToPhysicalColorAttachmentMappingStateInherited
 ```
 
-#### Discussion
+## Discussion
 
 This setting instructs the pipeline state to inherit the color attachment map of the current render encoder:
 

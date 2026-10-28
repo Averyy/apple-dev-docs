@@ -25,11 +25,11 @@ class func setThreadPriority(_ p: Double) -> Bool
 + (BOOL) setThreadPriority:(double) p;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the priority assignment succeeded, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The priorities in this range are mapped to the operating system’s priority values.
 

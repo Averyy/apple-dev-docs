@@ -5,13 +5,13 @@
 
 Verify model correctness by inspecting the operations and comparing tensor outputs.
 
-#### Overview
+## Overview
 
 Core AI Debugger is a standalone app for inspecting a Core AI model asset (`.aimodel`). The debugger follows a three-step workflow: visualize, execute, and validate. You visualize the model first to understand its structure, then execute the model to produce tensor outputs for each operation, and finally compare those outputs against a reference run to validate correctness. To download the app, see the [Core AI Debugger](https://developer.apple.com/core-ai-debugger/) page.
 
 > **Note**: If you have a PyTorch model that needs to be converted to an `.aimodel`, see the [coreai-torch](https://apple.github.io/coreai-torch/main/getting-started/quickstart.html) documentation for guidance on how to convert your model.
 
-#### Navigate the workspace
+## Navigate the workspace
 
 The Core AI Debugger workspace includes a Navigator panel on the left, Structure and Source Viewers in the middle, and an Inspector to the right.
 
@@ -23,7 +23,7 @@ The Core AI Debugger workspace includes a Navigator panel on the left, Structure
 
 The workspace stays synchronized around the selected operation, so you can move fluidly between structure, source, and execution details.
 
-#### Visualize model structure
+## Visualize model structure
 
 Opening an `.aimodel` file loads the model’s operations, structure, and source. Operations in the Navigator are organized by their PyTorch module. Selecting a module highlights the corresponding operations in the Structure Viewer, revealing their connectivity, data dependencies, and execution order. Clicking a specific operation highlights its Python source line in the Source Viewer. The Inspector shows additional details about the selected operation, including tensor formats of its inputs and outputs.
 
@@ -33,7 +33,7 @@ The source-level features, including source line and PyTorch module mappings, re
 
 > **Note**: See the [coreai-torch](https://apple.github.io/coreai-torch/main/api/debugging.html) documentation for details on how to export your model with debug metadata.
 
-#### Execute on specific hardware
+## Execute on specific hardware
 
 Configure a specialization scheme before executing your model. The scheme settings let you specify a hardware target, compute unit, and model inputs using predefined tensors (zeros, ones, or random) or values from a NumPy file.
 
@@ -45,7 +45,7 @@ After running, click any operation in the Navigator or Structure Viewer to see i
 
 ![The Core AI Debugger workspace after running the model on a MacBook Pro target. The Navigator on the left shows the specialized model’s operations. The Structure Viewer in the center displays the updated model graph. The Inspector on the right shows the selected Reshape operation’s description and its output tensor value alongside a grayscale thumbnail of the tensor.](https://developer.apple.com/tutorials/images/com.apple.coreai/inspecting-core-ai-models-with-core-ai-debugger-04@2x.png)
 
-#### Validate inference correctness
+## Validate inference correctness
 
 A comparison session lets you identify where your model’s results diverge from a reference result. The debugger supports two comparison configurations:
 

@@ -25,7 +25,7 @@ func acceptInput(forMode mode: RunLoop.Mode, before limitDate: Date)
 - (void) acceptInputForMode:(NSRunLoopMode) mode beforeDate:(NSDate *) limitDate;
 ```
 
-#### Discussion
+## Discussion
 
 If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the run loop once, returning as soon as one input source processes a message or the specifed time elapses.
 

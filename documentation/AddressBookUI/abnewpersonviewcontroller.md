@@ -23,13 +23,13 @@ class ABNewPersonViewController
 @interface ABNewPersonViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 New-person view controllers are modal view controllers that manage a set of view controllers used to create a contact (`ABPersonRef`) and edit its properties.
 
 > ❗ **Important**:  New-person view controllers must be used with a navigation controller in order to function properly.  It is recommended that you present a new-person view controller modally.
 
-##### Subclassing
+### Subclassing
 
 The `ABNewPersonViewController` class does not support subclassing.
 

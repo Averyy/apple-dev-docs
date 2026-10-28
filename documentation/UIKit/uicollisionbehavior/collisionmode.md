@@ -23,7 +23,7 @@ var collisionMode: UICollisionBehavior.Mode { get set }
 @property (nonatomic, readwrite) UICollisionBehaviorMode collisionMode;
 ```
 
-#### Discussion
+## Discussion
 
 To specify `collisionMode`, use one of the values in the [`UICollisionBehavior.Mode`](./mode.md) enum. The default value is [`everything`](./mode/everything.md).
 

@@ -15,7 +15,7 @@ An object that contains the app's default preferences.
 interface UserDefaults
 ```
 
-#### Overview
+## Overview
 
 The `UserDefaults` class is exposed to the JavaScript context as `userDefaults`.
 

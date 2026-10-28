@@ -25,7 +25,7 @@ func nw_proxy_config_create_relay(_ first_hop: nw_relay_hop_t, _ second_hop: nw_
 nw_proxy_config_tnw_proxy_config_create_relay(nw_relay_hop_t first_hop, nw_relay_hop_t second_hop);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized proxy configuration object.
 

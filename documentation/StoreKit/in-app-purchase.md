@@ -5,7 +5,7 @@
 
 Offer content and services in your app across Apple platforms using a Swift-based interface.
 
-#### Overview
+## Overview
 
 With the Apple In-App Purchase API, you can offer customers the opportunity to purchase digital content and services in your app. Customers can make the purchases within your app, and find your promoted products on the App Store.
 
@@ -17,7 +17,7 @@ The App Store can also communicate with your server. It notifies your server of 
 
 To learn how adding Apple In-App Purchases fits in an overall app development workflow for the App Store, see [App Store Pathway](https://developer.apple.com/app-store/pathway/). For an overview of Apple In-App Purchases and its features, including its configuration, testing capabilities, marketing for your products, and more, see [Simple and safe Apple In-App Purchases](https://developer.apple.com/in-app-purchase/). For an overview on subscriptions, including creating subscription groups, Family Sharing, and more, see [Auto-renewable subscriptions](https://developer.apple.com/app-store/subscriptions/).
 
-##### Configure Apple In-App Purchases
+### Configure Apple In-App Purchases
 
 To use the Apple In-App Purchase API, you first need to configure the products that your app merchandises.
 
@@ -26,7 +26,7 @@ To use the Apple In-App Purchase API, you first need to configure the products t
 
 You can also offer apps and Apple In-App Purchases that run on multiple platforms as a single purchase. For more information on universal purchase, see [Add platforms](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-platforms/).
 
-##### Support a store in your app
+### Support a store in your app
 
 The Apple In-App Purchase API takes advantage of Swift features like concurrency to simplify your Apple In-App Purchase workflows, and SwiftUI to build stores with [StoreKit views](./storekit-views.md). Use the API to manage access to content and subscriptions, receive App Store-signed transaction information, get the history of all Apple In-App Purchase transactions, and more.
 

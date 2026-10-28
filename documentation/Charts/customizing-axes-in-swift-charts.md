@@ -5,7 +5,7 @@
 
 Improve the clarity of your chart by configuring the appearance of its axes.
 
-#### Overview
+## Overview
 
 Swift Charts automatically configures the axes in your charts based on the data that you specify. Sometimes you can communicate the data more clearly by customizing the axis configuration. For example, you can:
 
@@ -19,7 +19,7 @@ This article demonstrates how to use these features to create the following char
 
 For design guidance about charts and their axes, see the [Charts](https://developer.apple.com/design/human-interface-guidelines/components/content/charts) section in the Human Interface Guidelines.
 
-##### Start with default axes
+### Start with default axes
 
 Generating a chart using the framework default axis configuration typically provides a good foundation to start from. For example, the following code creates a basic battery chart from an array of data points:
 
@@ -47,7 +47,7 @@ The framework chooses a default axis configuration that’s sensible for the dat
 
 However, given that batteries have a maximum capacity of 100 percent and that people typically charge their phones once per day, you can improve this chart by configuring the axes.
 
-##### Set the domain of an axis
+### Set the domain of an axis
 
 Battery levels always fall within a range of 0 to 100 percent. Being able to visually compare a given value against the whole range helps people to better understand how the current battery state compares to a full battery. So it makes sense to fix the range of the y-axis to the full possible range, regardless of the range of the data in the current data set.
 
@@ -59,7 +59,7 @@ Set a range for the y-axis using the [`chartYScale(domain:type:)`](../SwiftUI/vi
 
 ![A bar chart that has 48 vertical bars, with each bar shorter than the previous one by a small amount. The y-axis represents integers, ranging from 0 to 100, with labels at 0, 25, 50, 75, and 100. The x-axis represents time, starting at 12 AM, spanning one 24 hour period, with labels every six hours, and AM or PM markers on all the labels. The first bar has a height of 40, while the last has a height of about 10.](https://developer.apple.com/tutorials/images/com.apple.Charts/CustomizingAxes-3-macOS@2x.png)
 
-##### Specify axis values
+### Specify axis values
 
 Swift Charts chooses a default number of grid lines and labels to display on each axis. You can specify a different number of values by using the [`chartYAxis(content:)`](../SwiftUI/view/chartyaxis%28content%29.md) modifier, which takes one or more [`AxisMarks`](./axismarks.md) instances in its `content` parameter. Request a specific number of values by initializing the axis marks instance with the [`automatic(desiredCount:roundLowerBound:roundUpperBound:)`](./axismarkvalues/automatic%28desiredcount,roundlowerbound,roundupperbound%29.md) value. For example, you can request that the axis have three values:
 
@@ -83,7 +83,7 @@ Alternatively, you can indicate exact values to mark on the axis using an array 
 }
 ```
 
-##### Format values
+### Format values
 
 You can add clarity to any chart by properly formatting its axis values. The values on the y-axis in the battery chart represent percentages, so you can pass the `format` parameter to the axis marks initializer to apply an appropriate formatting:
 
@@ -98,7 +98,7 @@ You can add clarity to any chart by properly formatting its axis values. The val
 
 ![A bar chart that has 48 vertical bars, with each bar shorter than the previous one by a small amount. The y-axis represents percentages, ranging from 0 to 100, with labels at 0, 50, and 100. The x-axis represents time, starting at 12 AM, spanning one 24 hour period, with labels every six hours, and AM or PM markers on all the labels. The first bar has a height of 40, while the last has a height of about 10.](https://developer.apple.com/tutorials/images/com.apple.Charts/CustomizingAxes-5-macOS@2x.png)
 
-##### Compose axis marks
+### Compose axis marks
 
 To add more complex styling, compose axis marks inside the modifier’s `content` closure. For example, to add more horizontal grid lines without adding more labels, use two separate [`AxisMarks`](./axismarks.md) instances to render the grid lines and labels separately:
 
@@ -124,7 +124,7 @@ The `AxisMarks` initializers in the above code each take a `content` parameter t
 
 For additional customization, apply the styling methods that [`AxisMark`](./axismark.md) provides. For example, you can adjust the font of the value labels by applying the [`font(_:)`](./axismark/font%28_%29.md) method to the [`AxisValueLabel`](./axisvaluelabel.md) instance.
 
-##### Conditionally format labels
+### Conditionally format labels
 
 For the specified data, the battery chart marks every sixth hour along the x-axis and includes the AM or PM indicator with each hour by default. You can make the chart more readable by including a mark every three hours, and displaying the AM or PM indicator only when it changes.
 
@@ -151,7 +151,7 @@ Use the [`chartXAxis(content:)`](../SwiftUI/view/chartxaxis%28content%29.md) vie
 
 ![A bar chart that has 48 vertical bars, with each bar shorter than the previous one by a small amount. The y-axis represents percentages, ranging from 0 to 100, with labels at 0, 50, and 100. There are also two additional horizontal grid lines without labels at 25 and 75. The x-axis represents time, starting at 12 AM, spanning one 24 hour period, with labels every three hours, and AM and PM markers at midnight and noon, respectively. The first bar has a height of 40, while the last has a height of about 10.](https://developer.apple.com/tutorials/images/com.apple.Charts/CustomizingAxes-7-macOS@2x.png)
 
-##### Style grid lines and ticks
+### Style grid lines and ticks
 
 You can provide people reading this chart with additional context by displaying the date below the first value label and for subsequent labels where the date changes. Create a stack of text views in the [`AxisValueLabel`](./axisvaluelabel.md) builder, and use the value’s index combined with the hour to conditionally display the date:
 

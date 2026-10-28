@@ -24,7 +24,7 @@ func accessibilitySortPriority(_ sortPriority: Double) -> ModifiedContent<Conten
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Higher numbers are sorted first. The default sort priority is zero.
 

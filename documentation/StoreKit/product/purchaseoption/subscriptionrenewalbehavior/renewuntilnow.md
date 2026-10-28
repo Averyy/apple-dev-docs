@@ -20,7 +20,7 @@ A subscription-renewal behavior in the testing environment that allows the subsc
 case renewUntilNow
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option to create test cases that require an auto-renewable subscription that continues to renew. If you set the purchase date in [`purchaseDate(_:renewalBehavior:)`](../purchasedate%28_,renewalbehavior%29.md)to the past, the testing environment generates transactions for all the subscription renewals up to the current date.
 

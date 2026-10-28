@@ -21,7 +21,7 @@ A space character of non-zero width.
 case spaceSeparator
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Space_Separator` (abbreviated `Zs`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

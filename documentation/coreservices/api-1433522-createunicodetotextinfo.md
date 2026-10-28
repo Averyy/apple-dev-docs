@@ -15,11 +15,11 @@ Creates and returns a Unicode converter object containinginformation required fo
 OSStatus CreateUnicodeToTextInfo(ConstUnicodeMappingPtr iUnicodeMapping, UnicodeToTextInfo *oUnicodeToTextInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You pass the Unicode converter object returned from `CreateUnicodeToTextInfo` tothe function  [`ConvertFromUnicodeToText`](./api-1433542-convertfromunicodetotext.md) or  [`ConvertFromUnicodeToPString`](./api-1433581-convertfromunicodetopstring.md) to identify the information to be used for the conversion. Thesetwo functions modify the contents of the Unicode converter object. 
 

@@ -17,7 +17,7 @@ Applies the Scaled Exponential Linear Unit.
 func selu(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.elu(x, alpha: 1.67326) * 1.0507
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`SELU`](./selu.md)

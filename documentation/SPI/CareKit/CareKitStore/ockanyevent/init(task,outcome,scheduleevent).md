@@ -17,7 +17,7 @@ Creates an event with a task, schedule event, and optional outcome.
 init(task: OCKAnyTask, outcome: OCKAnyOutcome?, scheduleEvent: OCKScheduleEvent)
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

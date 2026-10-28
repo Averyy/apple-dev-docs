@@ -27,7 +27,7 @@ func CFStreamCreatePairWithSocket(_ alloc: CFAllocator!, _ sock: CFSocketNativeH
 extern void CFStreamCreatePairWithSocket(CFAllocatorRef alloc, CFSocketNativeHandle sock, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream);
 ```
 
-#### Discussion
+## Discussion
 
 Most properties are shared by both streams. Setting a shared property for one stream automatically sets the property for the other.
 

@@ -23,7 +23,7 @@ case none
 UIModalPresentationNone
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this style to present a view controller. Instead, return it from the [`adaptivePresentationStyle(for:)`](../uiadaptivepresentationcontrollerdelegate/adaptivepresentationstyle%28for%29.md) method of an adaptive delegate when you do not want a presentation controller to adapt the style of an already presented view controller.
 

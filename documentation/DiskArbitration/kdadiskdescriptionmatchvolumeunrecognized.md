@@ -18,7 +18,7 @@ var kDADiskDescriptionMatchVolumeUnrecognized: Unmanaged<CFDictionary>
 extern CFDictionaryRef kDADiskDescriptionMatchVolumeUnrecognized;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFDictionary object containing a set of disk description keys and values appropriate for matching unrecognized volumes using DARegister*Callback().
 

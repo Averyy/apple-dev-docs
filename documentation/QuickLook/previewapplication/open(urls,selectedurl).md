@@ -15,11 +15,11 @@ Previews the provided URLs.
 final class func open(urls: [URL], selectedURL: URL? = nil) -> PreviewSession
 ```
 
-#### Return Value
+## Return Value
 
 A `PreviewSession` instance.
 
-#### Discussion
+## Discussion
 
 This method launches the preview application with the provided URLs and, optionally, a selected URL.
 

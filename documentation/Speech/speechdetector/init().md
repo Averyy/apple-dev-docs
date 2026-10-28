@@ -20,7 +20,7 @@ Creates a speech detector with default settings.
 convenience init()
 ```
 
-#### Discussion
+## Discussion
 
 The default settings enable the VAD model with a value of [`SpeechDetector.SensitivityLevel.medium`](./sensitivitylevel/medium.md) and do not report the VAD model’s moment-to-moment results in its result sequence.
 

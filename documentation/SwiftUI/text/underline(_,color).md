@@ -22,7 +22,7 @@ nonisolated
 func underline(_ isActive: Bool = true, color: Color? = nil) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with a line running along its baseline.
 

@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatTranslate(SPRect3DFloat rect, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle with an origin that is offset from that of the source rectangle.
 

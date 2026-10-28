@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, objectValueFor tableColu
 - (id) outlineView:(NSOutlineView *) outlineView objectValueForTableColumn:(NSTableColumn *) tableColumn byItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 The item is located in the specified `tableColumn` of the view.
 

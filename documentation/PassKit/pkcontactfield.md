@@ -24,7 +24,7 @@ struct PKContactField
 typedef NSString * PKContactField;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`PKContactField`](./pkcontactfield.md) field types to indicate which contact fields you require for a billing or shipping contact in order to complete the transaction.
 

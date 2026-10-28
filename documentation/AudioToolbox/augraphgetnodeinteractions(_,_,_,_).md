@@ -26,7 +26,7 @@ func AUGraphGetNodeInteractions(_ inGraph: AUGraph, _ inNode: AUNode, _ ioNumInt
 extern OSStatus AUGraphGetNodeInteractions(AUGraph inGraph, AUNode inNode, UInt32 *ioNumInteractions, AUNodeInteraction *outInteractions);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

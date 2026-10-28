@@ -13,7 +13,7 @@
 MBUF_EOR = 0x0004
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this mbuf is the end of a record.
 

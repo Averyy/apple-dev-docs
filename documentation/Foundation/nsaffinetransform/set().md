@@ -19,7 +19,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 The current transformation is stored in the current graphics context and is applied to subsequent drawing operations. You should use this method sparingly because it removes the existing transformation matrix, which is an accumulation of transformation matrices for the screen, window, and any superviews. Instead use the [`concat()`](./concat%28%29.md) method to add this transformation matrix to the current transformation matrix.
 

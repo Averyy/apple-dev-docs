@@ -21,7 +21,7 @@ Returns a column slice that includes elements that correspond to a collection of
 subscript<C>(mask: C) -> DiscontiguousColumnSlice<WrappedElement> where C : Collection, C.Element == Bool { get }
 ```
 
-#### Overview
+## Overview
 
 You can create a Boolean column for this subscript by comparing a column to a value of the column elements’ type.
 

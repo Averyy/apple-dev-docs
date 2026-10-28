@@ -25,7 +25,7 @@ var preferredFilenameExtension: String? { get }
 @property (readonly, nullable) NSString * preferredFilenameExtension;
 ```
 
-#### Discussion
+## Discussion
 
 If available, the preferred (first available) tag of class [`filenameExtension`](../uttagclass/filenameextension.md).
 

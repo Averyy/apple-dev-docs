@@ -25,11 +25,11 @@ class var controlCharacters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * controlCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the control characters.
 
-#### Discussion
+## Discussion
 
 These characters include, for example, the soft hyphen (`U+00AD`), control characters to support bi-directional text, and IETF language tag characters.
 

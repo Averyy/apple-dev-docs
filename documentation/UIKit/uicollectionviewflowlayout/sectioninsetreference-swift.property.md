@@ -23,7 +23,7 @@ var sectionInsetReference: UICollectionViewFlowLayout.SectionInsetReference { ge
 @property (nonatomic) UICollectionViewFlowLayoutSectionInsetReference sectionInsetReference;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICollectionViewFlowLayout.SectionInsetReference.fromContentInset`](./sectioninsetreference-swift.enum/fromcontentinset.md).
 

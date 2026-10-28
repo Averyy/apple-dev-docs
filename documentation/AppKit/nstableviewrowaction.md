@@ -19,7 +19,7 @@ class NSTableViewRowAction
 @interface NSTableViewRowAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 In an editable table, performing a horizontal swipe on a row reveals a button to delete the row by default. This class lets you define one or more custom actions to display for a given row in your table. Each instance of this class represents a single action to perform and includes the text, formatting information, and behavior for the corresponding button.
 

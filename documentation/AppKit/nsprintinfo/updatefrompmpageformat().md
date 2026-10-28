@@ -19,7 +19,7 @@ func updateFromPMPageFormat()
 - (void) updateFromPMPageFormat;
 ```
 
-#### Discussion
+## Discussion
 
 You should use this method after making changes to the `PMPageFormat` object obtained from the receiver. Each `NSPrintInfo` object keeps track of the object returned from its [`pmPageFormat()`](./pmpageformat%28%29.md) method and obtains any updated information from the object directly. You only need to synchronize the objects once when you have made all of the desired changes.
 

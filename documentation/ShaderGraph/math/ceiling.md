@@ -14,7 +14,7 @@ Outputs the nearest integer value, per-channel, greater than or equal to the inc
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Ceiling (float)**:
 

@@ -25,7 +25,7 @@ func enumerate(_ block: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)
 - (void) enumerateIndexesUsingBlock:(void (^)(NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes synchronously.
 

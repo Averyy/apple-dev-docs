@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two reference images are equal.
 static func == (lhs: ReferenceImage, rhs: ReferenceImage) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two reference images are equal; otherwise, `false`.
 

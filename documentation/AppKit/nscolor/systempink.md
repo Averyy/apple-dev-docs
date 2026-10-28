@@ -19,7 +19,7 @@ class var systemPink: NSColor { get }
 @property (class, strong, readonly) NSColor * systemPinkColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when you want a tint color that looks great on both light and dark backgrounds.
 

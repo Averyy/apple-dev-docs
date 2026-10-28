@@ -11,7 +11,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Pass this option to [`AXUIElementCopyMultipleAttributeValues`](../api-1462051-axuielementcopymultipleattribute.md) to force the function to stop when it gets an error.
 

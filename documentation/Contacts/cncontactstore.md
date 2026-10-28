@@ -28,7 +28,7 @@ class CNContactStore
 
 - [Accessing the contact store](./accessing-the-contact-store.md)
 
-#### Overview
+## Overview
 
 The `CNContactStore` object represents the user’s contacts store database, and you use it to fetch information from that database and save changes back to it. There are a few recommended ways you can implement fetch and save requests in your app:
 

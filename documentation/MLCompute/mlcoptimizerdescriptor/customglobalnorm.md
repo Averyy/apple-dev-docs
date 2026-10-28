@@ -23,7 +23,7 @@ var customGlobalNorm: Float { get }
 @property (nonatomic, readonly) float customGlobalNorm;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this value when you specify [`MLCGradientClippingType.byGlobalNorm`](../mlcgradientclippingtype/byglobalnorm.md).
 

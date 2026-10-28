@@ -19,7 +19,7 @@ let kCFUserNotificationAlertHeaderKey: CFString!
 extern CFStringRef const kCFUserNotificationAlertHeaderKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required.
 

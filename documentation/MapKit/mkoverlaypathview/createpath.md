@@ -19,7 +19,7 @@ Creates the path for the overlay.
 - (void) createPath;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses should override it and use it to create the [`CGPath`](../../CoreGraphics/cgpath.md) data type to be used for drawing. After creating the path, your implementation should then assign it to the [`path`](./path.md) property.
 

@@ -25,7 +25,7 @@ var privateCloudDatabase: CKDatabase { get }
 @property (nonatomic, strong, readonly) CKDatabase * privateCloudDatabase;
 ```
 
-#### Discussion
+## Discussion
 
 The user’s private database is only available if the device has an iCloud account. Only the user can access their private database, by default. They own all of the database’s content and can view and modify that content. Data in the private database isn’t visible in the developer portal.
 

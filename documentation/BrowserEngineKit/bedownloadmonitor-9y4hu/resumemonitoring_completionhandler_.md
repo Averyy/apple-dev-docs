@@ -16,7 +16,7 @@ Informs the system that it needs to resume monitoring the download.
 - (void) resumeMonitoring:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your browser resumes the download after an interruption, for example, someone cancels the download, or your networking extension encounters a network error.
 

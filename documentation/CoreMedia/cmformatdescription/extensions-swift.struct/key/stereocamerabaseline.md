@@ -20,7 +20,7 @@ Indicates the distance between centers of the lenses of the camera system.
 static var stereoCameraBaseline: CMFormatDescription.Extensions.Key { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is a CFNumber holding an unsigned 32-bit integer that is interpreted in micrometers or thousandths of a millimeter (e.g., 63123 is 63.123 millimeters). This property is optional and should only be specified if the distance is known.
 

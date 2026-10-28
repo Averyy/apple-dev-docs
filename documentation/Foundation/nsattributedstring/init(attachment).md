@@ -25,11 +25,11 @@ init(attachment: NSTextAttachment)
 + (NSAttributedString *) attributedStringWithAttachment:(NSTextAttachment *) attachment;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the attachment.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for creating an attributed string containing an attachment using [`character`](../../AppKit/nstextattachment/character.md) as the base character.
 

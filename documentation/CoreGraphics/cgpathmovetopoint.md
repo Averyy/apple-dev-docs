@@ -21,7 +21,7 @@ Starts a new subpath at a specified location in a mutable graphics path.
 extern void CGPathMoveToPoint(CGMutablePathRef path, const CGAffineTransform *m, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 This function ends the subpath already in progress (if any) and starts a new subpath, initializing the starting point and the current point to the specified location (x,y) after an optional transformation.
 

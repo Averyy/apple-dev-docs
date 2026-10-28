@@ -12,11 +12,11 @@ SCSITaskIdentifier GetSCSITaskIdentifier (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns SCSITaskIdentifier that represents the original request from the SCSI Application Layer client.
 
-#### Overview
+## Overview
 
 Method to retrieve a SCSITaskIdentifier from a valid SCSIParallelTaskIdentifier.
 

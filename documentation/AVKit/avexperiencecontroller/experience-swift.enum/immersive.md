@@ -15,7 +15,7 @@ Indicates an experience in which the video extends beyond the app window boundar
 case immersive
 ```
 
-#### Discussion
+## Discussion
 
 It is valid to transition to `immersive` even when the `AVPlayerViewController` is not in the view hiearchy. In this case, a Placement must be specified through the Configuration object. If no placement is specified, the transition result will be `.reversed`.
 

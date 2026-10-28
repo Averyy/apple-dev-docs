@@ -25,7 +25,7 @@ func CTFrameGetTypeID() -> CFTypeID
 extern CFTypeID CTFrameGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CTFrame opaque type.
 

@@ -24,7 +24,7 @@ static let gameChat: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeGameChat;
 ```
 
-#### Discussion
+## Discussion
 
 This mode is valid only with the [`playAndRecord`](../category-swift.struct/playandrecord.md) audio session category.
 

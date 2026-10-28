@@ -28,11 +28,11 @@ class HKQuery
 
 - [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
 
-#### Overview
+## Overview
 
 The [`HKQuery`](./hkquery.md) class is the basis for all the query objects that retrieve data from the HealthKit store. The [`HKQuery`](./hkquery.md) class is an abstract class. You should never instantiate it directly. Instead, you always work with one of its concrete subclasses.
 
-##### Filter queries using predicates
+### Filter queries using predicates
 
 All the concrete `HKQuery` subclasses take a predicate. You can use this predicate to filter the samples returned by the query. When HealthKit runs a query, it converts the predicate to SQL and executes the SQL on the underlying store. This has two important side effects.
 

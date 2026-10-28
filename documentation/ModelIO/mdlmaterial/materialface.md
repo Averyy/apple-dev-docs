@@ -24,7 +24,7 @@ var materialFace: MDLMaterialFace { get set }
 @property (nonatomic) MDLMaterialFace materialFace;
 ```
 
-#### Discussion
+## Discussion
 
 Determines if the material is front-facing, back-facing, or double-sided. The default case of a [`materialFace`](./materialface.md) is [`MDLMaterialFace.front`](../mdlmaterialface/front.md). For more information, see [`MDLMaterialFace`](../mdlmaterialface.md).
 

@@ -27,7 +27,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The [`error`](./error.md) property is undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.failed`](../skpaymenttransactionstate/failed.md). Your application can read the [`error`](./error.md) property to determine why the transaction failed. For a list of error constants, see SKErrorDomain in `StoreKit Constants`.
 

@@ -18,7 +18,7 @@ An identifier for a task measured as part of an extended app launch.
 struct LaunchTaskID
 ```
 
-#### Discussion
+## Discussion
 
 `LaunchTaskID` is `RawRepresentable` and `ExpressibleByStringLiteral`. You can pass a string literal directly as the `id` argument to [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md) or [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-jnu1.md):
 

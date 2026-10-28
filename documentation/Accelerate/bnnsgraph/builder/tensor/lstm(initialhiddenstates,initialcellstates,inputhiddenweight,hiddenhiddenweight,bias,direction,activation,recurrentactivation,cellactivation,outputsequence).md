@@ -23,7 +23,7 @@ func lstm(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, initialCellStates: B
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 For each time t from 0 to L-1, this operation computes the following:
 

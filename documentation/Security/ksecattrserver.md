@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrServer;
 
 - [Adding a password to the keychain](./adding-a-password-to-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains the server’s domain name or IP address. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

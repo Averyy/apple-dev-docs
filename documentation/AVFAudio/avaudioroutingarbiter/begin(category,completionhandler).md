@@ -23,7 +23,7 @@ func begin(category: AVAudioRoutingArbiter.Category) async throws -> Bool
 - (void) beginArbitrationWithCategory:(AVAudioRoutingArbitrationCategory) category completionHandler:(void (^)(BOOL defaultDeviceChanged, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to tell the operating system to arbitrate with nearby Apple devices to take ownership of a supported Bluetooth audio device. When arbitration completes, the system calls the completion handler, passing a Boolean that indicates whether the audio device changed. In either case, begin using audio as normal.
 

@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_SYNC_Bit
 ```
 
-#### Discussion
+## Discussion
 
 SYNC bit definition.
 

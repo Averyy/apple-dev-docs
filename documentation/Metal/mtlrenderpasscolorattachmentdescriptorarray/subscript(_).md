@@ -24,7 +24,7 @@ subscript(attachmentIndex: Int) -> MTLRenderPassColorAttachmentDescriptor! { get
 - (MTLRenderPassColorAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object that contains color attachment information.
 

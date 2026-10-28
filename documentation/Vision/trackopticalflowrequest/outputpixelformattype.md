@@ -20,7 +20,7 @@ The desired pixel format type of the observation.
 final var outputPixelFormatType: OSType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md).
 

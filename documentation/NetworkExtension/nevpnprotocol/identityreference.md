@@ -24,7 +24,7 @@ var identityReference: Data? { get set }
 @property (copy, nullable) NSData * identityReference;
 ```
 
-#### Discussion
+## Discussion
 
 The keychain item must have the [`kSecClassIdentity`](../../Security/ksecclassidentity.md) class. In macOS, the system ignores this property for [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) objects. On iOS, the system ignores this property for [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) and [`NEVPNProtocolIKEv2`](../nevpnprotocolikev2.md) objects. In these cases where the system ingores this property, set the identity using the [`identityData`](./identitydata.md) property.
 

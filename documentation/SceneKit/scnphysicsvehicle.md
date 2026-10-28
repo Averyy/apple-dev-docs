@@ -25,7 +25,7 @@ class SCNPhysicsVehicle
 @interface SCNPhysicsVehicle : SCNPhysicsBehavior
 ```
 
-#### Overview
+## Overview
 
 To build a vehicle, designate an [`SCNPhysicsBody`](./scnphysicsbody.md) object as its chassis and an array of [`SCNPhysicsVehicleWheel`](./scnphysicsvehiclewheel.md) objects as its wheels. For each wheel, you define physical characteristics such as suspension and traction, and associate a node in your scene to provide the wheel’s size and visual representation. After you construct a vehicle, you can control it in terms of acceleration, braking, and steering.
 

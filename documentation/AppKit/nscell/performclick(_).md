@@ -19,7 +19,7 @@ func performClick(_ sender: Any?)
 - (void) performClick:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs the receiver’s action on its target. The receiver must be enabled to perform the action. If the receiver’s control view is valid, that view is used as the sender; otherwise, the value in `sender` is used.
 

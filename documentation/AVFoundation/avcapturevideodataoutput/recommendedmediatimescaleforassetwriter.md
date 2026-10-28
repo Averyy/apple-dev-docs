@@ -23,7 +23,7 @@ var recommendedMediaTimeScaleForAssetWriter: CMTimeScale { get }
 @property (nonatomic, readonly) CMTimeScale recommendedMediaTimeScaleForAssetWriter;
 ```
 
-#### Return Value
+## Return Value
 
 The recommended media timescale based on the active capture session’s inputs. It is never less than 600. It may or may not be a multiple of 600.
 

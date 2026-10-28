@@ -5,13 +5,13 @@
 
 Learn about the fundamental properties that provide a foundation for all other nodes.
 
-#### Overview
+## Overview
 
 Nodes are organized hierarchically into node trees, similar to how views and subviews work. Most commonly, a node tree is defined with a scene node ([`SKScene`](./skscene.md)) as the root node and other content nodes as descendants. The scene node runs an animation loop that processes actions on the nodes, simulates physics, and renders the contents of the node tree for display.
 
 Every node in a node tree provides a coordinate system to its children. After a child is added to the node tree, you position it inside its parent’s coordinate system by setting its [`zPosition`](./sknode/zposition.md) property. A node’s coordinate system can be scaled and rotated by changing its [`xScale`](./sknode/xscale.md), [`yScale`](./sknode/yscale.md), and [`zRotation`](./sknode/zrotation.md) properties. When a node’s coordinate system is scaled or rotated, this transformation is applied both to the node’s own content and to that of its descendants.
 
-##### Review Important Properties
+### Review Important Properties
 
 The `SKNode` class does not perform any drawing of its own. However, many `SKNode` subclasses render visual content and so the `SKNode` class understands some visual concepts:
 
@@ -27,7 +27,7 @@ A node can support a physics body, which is an object that simulates the physica
 
 A node can supply constraints that express relationships with other nodes or locations in the scene. These constraints are automatically applied by the scene before the scene is rendered. Another set of constraints is used in conjunction with actions to perform inverse-kinematic animations. See [Working with Inverse Kinematics](./working-with-inverse-kinematics.md).
 
-##### Ensure Node Access on the Main Thread
+### Ensure Node Access on the Main Thread
 
 All of the SpriteKit callbacks for [`SKViewDelegate`](./skviewdelegate.md), [`SKSceneDelegate`](./skscenedelegate.md), and [`SKScene`](./skscene.md) occur in the main thread and therefore, these are safe places to access or manipulate nodes. If you are performing other work in the background, you should adopt an approach similar to
 
@@ -62,7 +62,7 @@ extension ViewController: SKSceneDelegate {
 }
 ```
 
-##### Lay Out Your Scene with Basic Nodes
+### Lay Out Your Scene with Basic Nodes
 
 Even though `SKNode` objects cannot directly draw content, there are useful ways to use them in your app. Here are some ideas to get you started:
 

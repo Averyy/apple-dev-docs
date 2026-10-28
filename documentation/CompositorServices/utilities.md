@@ -5,7 +5,7 @@
 
 Common types and utilities to manage your app’s rendering process.
 
-#### Overview
+## Overview
 
 Use these functions to manage timing in your app’s render loop.
 

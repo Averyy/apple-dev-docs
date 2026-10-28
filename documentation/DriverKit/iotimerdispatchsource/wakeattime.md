@@ -18,11 +18,11 @@ Schedules a callback from the timer.
 virtual kern_return_t WakeAtTime(uint64_t options, uint64_t deadline, uint64_t leeway);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to schedule the execution time for your timer. Call this method from a block running on the same dispatch queue you passed to the [`Create`](./create.md) method. If a previously scheduled timer has not yet fired, calling this method replaces the old time with the new value.
 

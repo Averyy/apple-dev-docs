@@ -13,11 +13,11 @@
 errno_t mbuf_setnext(mbuf_t mbuf, mbuf_t next);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the next mbuf in the chain.
 

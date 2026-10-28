@@ -34,7 +34,7 @@ func generateKey() async throws -> String
 - [Attestation Object Validation Guide](../attestation-object-validation-guide.md)
 - [Establishing your app’s integrity](../establishing-your-app-s-integrity.md)
 
-#### Discussion
+## Discussion
 
 > **Concurrency Note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

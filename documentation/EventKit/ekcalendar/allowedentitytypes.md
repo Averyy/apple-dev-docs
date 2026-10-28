@@ -24,7 +24,7 @@ var allowedEntityTypes: EKEntityMask { get }
 @property (nonatomic, readonly) EKEntityMask allowedEntityTypes;
 ```
 
-#### Discussion
+## Discussion
 
 While EventKit only allows creation of single-entity calendars, other servers might allow mixed-entity calendars.
 

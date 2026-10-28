@@ -25,11 +25,11 @@ func makeLibrary(data: dispatch_data_t) throws -> any MTLLibrary
 - (id<MTLLibrary>) newLibraryWithData:(dispatch_data_t) data error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 In Swift, you can also use the [`makeLibrary(data:)`](./makelibrary%28data%29-7khmh.md) default implementation, which has a [`DispatchData`](../../Dispatch/dispatchdata.md) parameter.
 

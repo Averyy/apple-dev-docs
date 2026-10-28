@@ -25,7 +25,7 @@ var isiOSAppOnMac: Bool { get }
 @property (readonly, getter=isiOSAppOnMac) BOOL iOSAppOnMac;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) only when the process is an iOS app running on a Mac. The value of the property is [`false`](../../Swift/false.md) for all other apps on the Mac, including Mac apps built using Mac Catalyst. The property is also [`false`](../../Swift/false.md) for processes running on platforms other than macOS.
 

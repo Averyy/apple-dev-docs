@@ -25,7 +25,7 @@ func nw_parameters_create_secure_tcp(_ configure_tls: @escaping nw_parameters_co
 nw_parameters_tnw_parameters_create_secure_tcp(nw_parameters_configure_protocol_block_t configure_tls, nw_parameters_configure_protocol_block_t configure_tcp);
 ```
 
-#### Discussion
+## Discussion
 
 This function allows you to either use the default configurations for TLS and TCP, or use customized protocol options. If you want to use the default configuration, pass NW_PARAMETERS_DEFAULT_CONFIGURATION. If you want to customize the options for a protocol, pass a block to modify the options.
 

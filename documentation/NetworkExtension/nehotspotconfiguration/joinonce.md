@@ -23,7 +23,7 @@ var joinOnce: Bool { get set }
 @property BOOL joinOnce;
 ```
 
-#### Discussion
+## Discussion
 
 Optional. When `joinOnce` is set to `true,` the hotspot remains configured and connected only as long as the app that configured it is running in the foreground. The hotspot is disconnected and its configuration is removed when any of the following events occurs:
 

@@ -19,7 +19,7 @@ Generate uniformly distributed random numbers with a `RangeExpression`.
 func uniform<R, T>(_ range: Range<R>, _ shape: [Int] = [], type: T.Type = Float.self, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray where R : HasDType, R : Comparable, T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled uniformly in the range.  An optional shape can be used to broadcast into a larger array.  An optional `Key` can be specified to control the PRNG.
 

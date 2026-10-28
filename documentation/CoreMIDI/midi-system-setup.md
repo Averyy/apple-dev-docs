@@ -5,7 +5,7 @@
 
 Configure the global MIDI system.
 
-#### Overview
+## Overview
 
 The primary clients of this API are apps that present a user interface to configure the global MIDI system, and MIDI drivers that dynamically modify the system state as users connect and disconnect hardware.
 

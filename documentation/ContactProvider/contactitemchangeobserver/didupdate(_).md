@@ -17,7 +17,7 @@ Provides an array of new and updated contact items to the observer.
 func didUpdate(_ items: [ContactItem])
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to fulfill the [`suggestedBatchSize`](./suggestedbatchsize.md). The observer creates the new contact items and updates the existing contact items with their new values.
 

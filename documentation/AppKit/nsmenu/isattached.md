@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the menu is currently attached to
 - (BOOL) isAttached;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the menu is currently attached to another menu, otherwise [`false`](../../Swift/false.md).
 

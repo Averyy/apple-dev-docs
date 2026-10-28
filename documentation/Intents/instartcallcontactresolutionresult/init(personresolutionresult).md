@@ -23,11 +23,11 @@ init(personResolutionResult: INPersonResolutionResult)
 - (instancetype) initWithPersonResolutionResult:(INPersonResolutionResult *) personResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStartCallContactResolutionResult`](../instartcallcontactresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to start a call with the specified capabilities.
 

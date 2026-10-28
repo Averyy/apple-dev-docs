@@ -21,7 +21,7 @@ Generates a single-precision vector that contains monotonically incrementing or 
 void vDSP_vrampmul(const float *__I, vDSP_Stride __IS, float *__Start, const float *__Step, float *__O, vDSP_Stride __OS, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector.
 

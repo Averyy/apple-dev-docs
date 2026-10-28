@@ -27,7 +27,7 @@ var title: String? { get set }
 - [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Displaying a checkbox in your Mac app built with Mac Catalyst](../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Discussion
+## Discussion
 
 Set [`title`](./title.md) only when the user interface idiom is [`UIUserInterfaceIdiom.mac`](../uiuserinterfaceidiom/mac.md); otherwise, a runtime exception occurs.
 

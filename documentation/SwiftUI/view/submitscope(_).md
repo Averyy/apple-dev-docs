@@ -22,7 +22,7 @@ nonisolated
 func submitScope(_ isBlocking: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to avoid specific views from initiating a submission action configured by the [`onSubmit(of:_:)`](./onsubmit%28of,_%29.md) modifier. In the example below, the tag field doesn’t trigger the submission of the form:
 

@@ -25,11 +25,11 @@ func vImageCVImageFormat_Create(_ imageFormatType: UInt32, _ matrix: UnsafePoint
 vImageCVImageFormatRefvImageCVImageFormat_Create(uint32_t imageFormatType, const vImage_ARGBToYpCbCrMatrix *matrix, CFStringRef cvImageBufferChromaLocation, CGColorSpaceRef baseColorspace, int alphaIsOneHint);
 ```
 
-#### Return Value
+## Return Value
 
 A [`vImageCVImageFormat`](./vimagecvimageformat.md) instance encoded with the function’s parameters.
 
-#### Discussion
+## Discussion
 
 This function derives values that parameters from the image format type don’t specify, such as the number of channels, channel names, and channel descriptions.
 

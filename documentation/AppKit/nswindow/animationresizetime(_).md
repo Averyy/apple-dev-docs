@@ -19,11 +19,11 @@ func animationResizeTime(_ newFrame: NSRect) -> TimeInterval
 - (NSTimeInterval) animationResizeTime:(NSRect) newFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The duration of the frame size change.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to control the total time for the frame change.
 

@@ -25,7 +25,7 @@ func setKernelBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 - (void) setKernelBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If you created the indirect command buffer with [`inheritBuffers`](../mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](../../Swift/true.md), don’t call this method. The command gets the arguments from the parent encoder when you execute the command.
 

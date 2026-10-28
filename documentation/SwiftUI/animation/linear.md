@@ -21,11 +21,11 @@ An animation that moves at a constant speed.
 static var linear: Animation { get }
 ```
 
-#### Return Value
+## Return Value
 
 A linear animation with the default duration.
 
-#### Discussion
+## Discussion
 
 A linear animation provides a mechanical feel to the motion because its speed is consistent from start to finish of the animation. This constant speed makes a linear animation ideal for animating the movement of objects where changes in the speed might feel awkward, such as with an activity indicator.
 

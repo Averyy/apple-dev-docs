@@ -24,7 +24,7 @@ static let audioProcessing: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategoryAudioProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 This category disables playback (audio output) and disables recording (audio input). Use this category, for example, when performing offline audio format conversion.
 

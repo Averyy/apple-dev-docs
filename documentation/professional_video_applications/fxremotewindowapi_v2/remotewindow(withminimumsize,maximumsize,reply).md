@@ -24,7 +24,7 @@ func remoteWindow(withMinimumSize minContentSize: CGSize, maximumSize maxContent
 - (void) remoteWindowWithMinimumSize:(CGSize) minContentSize maximumSize:(CGSize) maxContentSize reply:(void (^)(NSView * parentView, NSError * error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to request that the host creates a new window where your plug-in displays custom-user interface elements. The maximum window size is limited to 80% of the host application’s main window size. The reply block returns the window for your custom view.
 

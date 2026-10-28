@@ -23,7 +23,7 @@ var shouldAddToSelection: Bool { get }
 @property (nonatomic, readonly) BOOL shouldAddToSelection;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the tab should be part of the current selection, but not necessarily become the active tab unless [`shouldBeActive`](./shouldbeactive.md) is also `YES`. If this property is `NO`, the tab shouldn’t be part of the current selection.
 

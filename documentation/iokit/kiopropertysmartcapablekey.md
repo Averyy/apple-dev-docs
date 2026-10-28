@@ -14,7 +14,7 @@
 #define kIOPropertySMARTCapableKey
 ```
 
-#### Discussion
+## Discussion
 
 Property to search for in IORegistry to find SMART capable devices without hardcoding the search to a particular device class.
 

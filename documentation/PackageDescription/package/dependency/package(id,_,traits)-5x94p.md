@@ -15,11 +15,11 @@ Adds a remote package dependency starting with a specific minimum version, going
 static func package(id: String, _ range: ClosedRange<Version>, traits: Set<Package.Dependency.Trait> = [.defaults]) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 The following example allows the Swift Package Manager to pick versions 1.2.3, 1.2.4, 1.2.5, as well as 1.2.6.
 

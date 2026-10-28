@@ -24,7 +24,7 @@ class HMTimerTrigger
 @interface HMTimerTrigger : HMTrigger
 ```
 
-#### Overview
+## Overview
 
 When a timer trigger is enabled using [`enable(_:completionHandler:)`](./hmtrigger/enable%28_,completionhandler%29.md), the system checks to verify that the timer trigger’s fire date, time zone, and recurrence rules yield a next fire date that is in the future.
 

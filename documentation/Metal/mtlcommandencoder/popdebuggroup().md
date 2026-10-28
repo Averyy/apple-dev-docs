@@ -25,7 +25,7 @@ func popDebugGroup()
 - (void) popDebugGroup;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 

@@ -25,7 +25,7 @@ class func fetchForEvents() -> NSFetchRequest<any NSFetchRequestResult>
 + (NSFetchRequest *) fetchRequestForEvents;
 ```
 
-#### Return Value
+## Return Value
 
 A request object that fetches persistent CloudKit container events by executing in a managed object context.
 

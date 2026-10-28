@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_WellKnownLogicalUnit = 0x1E
 ```
 
-#### Discussion
+## Discussion
 
 Well known logical unit.
 

@@ -25,7 +25,7 @@ var timeZone: TimeZone! { get set }
 @property (copy, null_resettable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, the system time zone is used.
 

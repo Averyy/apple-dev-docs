@@ -25,7 +25,7 @@ class NSLocale
 @interface NSLocale : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`Locale`](./locale.md); use [`NSLocale`](./nslocale.md) when you need reference semantics or other Foundation-specific behavior.
 

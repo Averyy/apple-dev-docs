@@ -25,7 +25,7 @@ static let describesVideoForAccessibility: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicDescribesVideoForAccessibility;
 ```
 
-#### Discussion
+## Discussion
 
 It’s possible for a legible media option to include both transcriptions of spoken dialog and descriptions of music and sound effects.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the rule can inflect a given lang
 static func canInflect(language: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the rule can inflect the given language; otherwise, `false`.
 

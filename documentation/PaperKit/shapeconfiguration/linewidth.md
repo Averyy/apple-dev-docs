@@ -19,7 +19,7 @@ The line width of the shape.
 var lineWidth: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0`.
 

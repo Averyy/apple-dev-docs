@@ -5,13 +5,13 @@
 
 Learn how to verify your app on an L4S-capable host and network to improve your app’s responsiveness.
 
-#### Overview
+## Overview
 
 With Low Latency, Low Loss, and Scalable Throughput (L4S) applications can have both low network delays and high throughput. L4S benefits most applications, such as conversational audio/video apps, interactive apps with dynamic content, interactive video, live streaming, cloud or online gaming, and virtual or augmented reality. In any end-to-end path from client to server (or server to client), there’s one slowest link at any moment of time, called the bottleneck. When the sender’s rate is higher than the bottleneck link rate, a queue builds up at the bottleneck, leading to increased delays and eventual loss, which tells the sender it needs to slow down.
 
 L4S uses an Explicit Congestion Notification (ECN) mechanism to give early warning of congestion at the bottleneck link by marking a Congestion Experienced (CE) codepoint in the IP header of packets. After receiving the packets, the receiver echoes this congestion information to the sender in the acknowledgement (ACK) packets of the transport protocol. The sender uses this congestion feedback to reduce its sending rate to avoid delay at the bottleneck. L4S requires implementation updates at end devices as well as on the network bottleneck. Beginning with iOS 17 and iPadOS 17, Apple supports L4S on its platforms for some users, for the QUIC and TCP networking stacks.
 
-##### Turn on L4S on Apple Devices
+### Turn on L4S on Apple Devices
 
 Apple’s QUIC implementation fully supports L4S, whereas Apple’s TCP implementation supports only the receiver-side L4S. Apple’s FaceTime application also supports L4S. As L4S may not be enabled for all users, turn on L4S support for QUIC, TCP, and FaceTime on iOS and iPadOS devices by turning on L4S in Developer settings.
 
@@ -23,7 +23,7 @@ On macOS, enable L4S by using the following command in Terminal:
 defaults write -g network_enable_l4s -bool true
 ```
 
-##### Confirm an Apple Device Sends ECT(1) for QUIC
+### Confirm an Apple Device Sends ECT(1) for QUIC
 
 The sending device indicates that it’s L4S capable by setting the ECN-Capable Transport (ECT) codepoint to 01, known as ECT(1).
 
@@ -33,7 +33,7 @@ To confirm that your Apple device is L4S capable, take a packet capture using Wi
 
 Because Apple’s QUIC stack always provides ECN feedback when the device acts as a receiver, you don’t need to confirm ECT(1) on Apple devices.
 
-##### Confirm an Apple Device Negotiated Accurate ECN for TCP
+### Confirm an Apple Device Negotiated Accurate ECN for TCP
 
 When L4S is enabled for the TCP receiver side, an Apple device negotiates Accurate ECN during the three-way handshake with the server, which is essential to provide the detailed congestion feedback an L4S sender needs. The Accurate ECN protocol uses two ways to provide feedback:
 
@@ -58,7 +58,7 @@ To verify that your Apple device echoes Accurate ECN feedback, look at the ACE f
 
 ![](https://developer.apple.com/tutorials/images/com.apple.network/media-4225942@2x.png)
 
-##### Test Your App Against Third-Party QUIC Server Implementations
+### Test Your App Against Third-Party QUIC Server Implementations
 
 If your app uses QUIC and your Content Delivery Network (CDN) provider (for example, Amazon CloudFront or Cloudflare quiche) or some other third-party library provides your server-side implementation, work with that provider. The server implementation needs to support L4S for both its sending and receiving sides, similar to the client. But if your server supports only ECN (it can receive L4S traffic), you can test uploading use cases from Apple devices to your server.
 
@@ -96,13 +96,13 @@ export SSLKEYLOGFILE=/tmp/keys.log
 
 ![](https://developer.apple.com/tutorials/images/com.apple.network/media-4225970@2x.png)
 
-##### Test L4S on a Linux TCP Implementation
+### Test L4S on a Linux TCP Implementation
 
 Currently, a publicly available implementation for Linux TCP supports L4S. [This Linux repository](https://github.com/L4STeam/linux) describes the various patches that were developed for L4S and instructions to install such a kernel.
 
 Check both the client-side and server-side packet captures because faulty networks may bleach (zero) the IP-ECN field or remove certain TCP headers. Similar to on the client side, take a packet capture on the server side. Look at the IP-ECN field in the direction from the server to the client, the TCP Accurate ECN flags, and the AccECN TCP option fields.
 
-##### Test If Your Network Supports ECN and L4S
+### Test If Your Network Supports ECN and L4S
 
 There are two aspects to verifying that if your network supports L4S.
 
@@ -144,7 +144,7 @@ To verify that your network bottleneck supports L4S, run the following test:
 
 ![](https://developer.apple.com/tutorials/images/com.apple.network/media-4241168@2x.png) 5. If there are no CE marks for either flow, your network bottleneck doesn’t support either Classic ECN AQM or L4S AQM. 6. If either flow has CE marks, measure the round-trip time (or alternatively, the one way delay) of each flow. If both L4S and non-L4S flow have the same round-trip time, your network bottleneck likely supports classic ECN AQM. If the L4S flow has a lower round-trip time than the non-L4S flow, your network bottleneck likely supports L4S AQM.
 
-##### Ensure Low Latency and Low Loss on Your Network
+### Ensure Low Latency and Low Loss on Your Network
 
 If you’re a network operator, you can take a couple of actions to provide low latency and low loss to your users.
 

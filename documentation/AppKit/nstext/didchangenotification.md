@@ -19,7 +19,7 @@ class let didChangeNotification: NSNotification.Name
 extern NSNotificationName NSTextDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the notifying `NSText` object. This notification does not contain a `userInfo` dictionary.
 

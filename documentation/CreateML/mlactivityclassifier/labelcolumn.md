@@ -15,7 +15,7 @@ The name of the label column the activity classifier used during its training se
 var labelColumn: String
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the name of the data table column or annotation file column the training session used to label each activity.
 

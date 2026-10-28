@@ -24,7 +24,7 @@ func bitwiseRightShift(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGr
 - (MPSGraphTensor *) bitwiseRightShiftWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 

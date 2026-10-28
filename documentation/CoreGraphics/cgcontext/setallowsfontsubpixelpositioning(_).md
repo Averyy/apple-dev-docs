@@ -25,7 +25,7 @@ func setAllowsFontSubpixelPositioning(_ allowsFontSubpixelPositioning: Bool)
 extern void CGContextSetAllowsFontSubpixelPositioning(CGContextRef c, bool allowsFontSubpixelPositioning);
 ```
 
-#### Discussion
+## Discussion
 
 Sub-pixel positioning is used by the graphics context if it is allowed, enabled, and if the font itself is antialiased when drawn. For information on how to enable subpixel positioning, see the [`setShouldSubpixelPositionFonts(_:)`](./setshouldsubpixelpositionfonts%28_%29.md) function.
 

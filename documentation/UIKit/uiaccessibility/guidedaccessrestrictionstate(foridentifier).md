@@ -24,7 +24,7 @@ static func guidedAccessRestrictionState(forIdentifier restrictionIdentifier: St
 extern UIGuidedAccessRestrictionState UIGuidedAccessRestrictionStateForIdentifier(NSString *restrictionIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 The current state of the guided access restriction. The initial state of all restrictions is [`UIAccessibility.GuidedAccessRestrictionState.allow`](./guidedaccessrestrictionstate/allow.md).
 

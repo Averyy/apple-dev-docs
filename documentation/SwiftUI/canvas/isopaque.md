@@ -22,7 +22,7 @@ nonisolated
 var isOpaque: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You might be able to improve performance by setting this value to `true`, making the canvas is fully opaque. However, in that case, the result of drawing a non-opaque image into the canvas is undefined.
 

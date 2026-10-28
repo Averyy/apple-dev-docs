@@ -25,7 +25,7 @@ var extendedLanguageTag: String? { get set }
 @property (nonatomic, copy, nullable) NSString * extendedLanguageTag;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, the value is `nil`.
 

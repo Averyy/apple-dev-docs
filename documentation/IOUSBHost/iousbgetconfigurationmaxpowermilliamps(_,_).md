@@ -20,11 +20,11 @@ func IOUSBGetConfigurationMaxPowerMilliAmps(_ usbDeviceSpeed: UInt32, _ descript
 uint32_t IOUSBGetConfigurationMaxPowerMilliAmps(uint32_t usbDeviceSpeed, const IOUSBConfigurationDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The number of milliamps necessary.
 
-#### Discussion
+## Discussion
 
 This method parses a configuration descriptor and returns the number of milliamps necessary to power the device.
 

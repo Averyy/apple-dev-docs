@@ -19,7 +19,7 @@ func pasteRuler(_ sender: Any?)
 - (void) pasteRuler:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 It doesn’t apply to a plain text object.
 

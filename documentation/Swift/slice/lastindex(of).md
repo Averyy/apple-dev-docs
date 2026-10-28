@@ -23,11 +23,11 @@ func lastIndex(of element: Self.Element) -> Self.Index?
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 The last index where `element` is found. If `element` is not found in the collection, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 After using `lastIndex(of:)` to find the position of the last instance of a particular element in a collection, you can use it to access the element by subscripting. This example shows how you can modify one of the names in an array of students.
 

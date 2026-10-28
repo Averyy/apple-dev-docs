@@ -19,7 +19,7 @@ let kCFUserNotificationProgressIndicatorValueKey: CFString!
 extern CFStringRef const kCFUserNotificationProgressIndicatorValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a number between `0` and `1`, for a “definite” progress indicator, or a Boolean for an “indefinite” progress indicator.
 

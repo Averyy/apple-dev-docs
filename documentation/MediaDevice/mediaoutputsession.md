@@ -21,7 +21,7 @@ final class MediaOutputSession
 
 - [Creating a media device extension](./creating-a-media-device-extension.md)
 
-#### Overview
+## Overview
 
 Instances of this class are provided by the system when a [`MediaDeviceExtension`](./mediadeviceextension.md) receives activation or playback requests. Use the session to associate device activations, playback events, and data communication with a specific media output context.
 

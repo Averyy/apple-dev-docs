@@ -23,7 +23,7 @@ enum ContentHorizontalAlignment
 enum UIControlContentHorizontalAlignment : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants as the value of the [`contentHorizontalAlignment`](./contenthorizontalalignment-swift.property.md) property.
 

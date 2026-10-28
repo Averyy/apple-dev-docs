@@ -21,11 +21,11 @@ Ignores elements from the upstream publisher until it receives an element from a
 func drop<P>(untilOutputFrom publisher: P) -> Publishers.DropUntilOutput<Self, P> where P : Publisher, Self.Failure == P.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that drops elements from the upstream publisher until the `other` publisher produces a value.
 
-#### Discussion
+## Discussion
 
 Use [`drop(untilOutputFrom:)`](./drop%28untiloutputfrom%29.md) to ignore elements from the upstream publisher until another, second, publisher delivers its first element. This publisher requests a single value from the second publisher, and it ignores (drops) all elements from the upstream publisher until the second publisher produces a value. After the second publisher produces an element, [`drop(untilOutputFrom:)`](./drop%28untiloutputfrom%29.md) cancels its subscription to the second publisher, and allows events from the upstream publisher to pass through.
 

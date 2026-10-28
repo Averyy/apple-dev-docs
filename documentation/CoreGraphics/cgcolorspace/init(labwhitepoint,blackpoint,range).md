@@ -25,11 +25,11 @@ init?(labWhitePoint whitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointe
 extern CGColorSpaceRefCGColorSpaceCreateLab(const CGFloat whitePoint[3], const CGFloat blackPoint[3], const CGFloat range[4]);
 ```
 
-#### Return Value
+## Return Value
 
 A new L*a*b* color space, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](../cgcolorspacerelease.md).
 
-#### Discussion
+## Discussion
 
 The CIE L*a*b* space is a nonlinear transformation of the Munsell color notation system (a system which specifies colors by hue, value, and saturation—or “chroma”—values), designed to match perceived color difference with quantitative distance in color space. The L* component represents the lightness value, the a* component represents values running from green to red, and the b* component represents values running from blue to yellow. This roughly corresponds to the way the human brain is thought to decode colors. Colors in a device-independent color space should appear the same when displayed on different devices, to the extent that the capabilities of the device allow.
 

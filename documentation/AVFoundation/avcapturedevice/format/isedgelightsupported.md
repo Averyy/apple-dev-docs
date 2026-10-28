@@ -23,7 +23,7 @@ var isEdgeLightSupported: Bool { get }
 @property (nonatomic, readonly, getter=isEdgeLightSupported) BOOL edgeLightSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns YES if the device supports the Edge Light feature. See +AVCaptureDevice.edgeLightEnabled.
 

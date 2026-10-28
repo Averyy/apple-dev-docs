@@ -33,7 +33,7 @@ optional func resolvePayee(for intent: INSendPaymentIntent) async -> INPersonRes
 - (void) resolvePayeeForSendPayment:(INSendPaymentIntent *) intent withCompletion:(void (^)(INPersonResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify the identity of the intended recipient. Use the provided payee information in the `intent` object to locate the corresponding user in your app. Always strive toward a successful resolution to a specific user, but feel free to ask for confirmation of the selected user if there is some uncertainty.
 

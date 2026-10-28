@@ -24,7 +24,7 @@ func objects(for objectType: HKObjectType) -> Set<HKSample>
 - (NSSet<__kindof HKSample *> *) objectsForType:(HKObjectType *) objectType;
 ```
 
-#### Return Value
+## Return Value
 
 A set containing all the objects of the specified type in the correlation.
 

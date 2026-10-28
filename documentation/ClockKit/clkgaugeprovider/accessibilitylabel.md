@@ -21,7 +21,7 @@ var accessibilityLabel: String? { get set }
 @property (nonatomic, retain, nullable) NSString * accessibilityLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to provide a succinct description for the gauge. VoiceOver reads this property when describing the gauge. By default, this property is `nil`.
 

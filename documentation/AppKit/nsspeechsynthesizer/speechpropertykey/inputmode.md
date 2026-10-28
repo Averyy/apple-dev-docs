@@ -19,7 +19,7 @@ static let inputMode: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechInputModeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A string object that specifies whether the channel is currently in text input mode or phoneme input mode.The supported values are listed in [`NSSpeechSynthesizer.SpeechPropertyKey.Mode`](./mode.md).
 

@@ -25,7 +25,7 @@ protocol URLSessionStreamDelegate : URLSessionTaskDelegate
 @protocol NSURLSessionStreamDelegate <NSURLSessionTaskDelegate>
 ```
 
-#### Overview
+## Overview
 
 In addition to these methods, be sure to implement the methods in the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) and [`URLSessionDelegate`](./urlsessiondelegate.md) protocols to handle events common to all task types and session-level events, respectively.
 

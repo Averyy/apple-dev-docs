@@ -21,7 +21,7 @@ protocol CLLocationPushServiceExtension : NSObjectProtocol
 @protocol CLLocationPushServiceExtension <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A type that adopts the [`CLLocationPushServiceExtension`](./cllocationpushserviceextension.md) protocol acts as the entry point to a Location Push Service Extension. You use this type to respond to incoming location push notifications and perform app-specific tasks. For example, you use it to get someone’s current location and send it to your server.
 

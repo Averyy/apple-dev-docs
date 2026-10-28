@@ -25,11 +25,11 @@ func CFURLCopyScheme(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyScheme(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The scheme of `anURL`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The URL scheme is the portion of the URL specifying the transport type. For example `http`, `ftp`, and `rtsp` are schemes. This function leaves any percent escape sequences intact.
 

@@ -22,7 +22,7 @@ func GLKMatrix4Add(_ matrixLeft: GLKMatrix4, _ matrixRight: GLKMatrix4) -> GLKMa
 static GLKMatrix4 GLKMatrix4Add(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix whose components each represent the sum of the components found in the same positions of the two source matrices.
 

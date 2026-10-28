@@ -21,7 +21,7 @@ Returns a transform that results from rotating with the specified quaternion.
 static SPProjectiveTransform3D SPProjectiveTransform3DRotateByQuaternion(SPProjectiveTransform3D transform, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from rotating with the specified quaternion.
 

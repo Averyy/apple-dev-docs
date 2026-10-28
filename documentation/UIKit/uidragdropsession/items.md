@@ -23,7 +23,7 @@ var items: [UIDragItem] { get }
 @property (nonatomic, readonly) NSArray<UIDragItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The drag item’s [`NSItemProvider`](../../Foundation/nsitemprovider.md) object doesn’t load the data for the item until the drop interaction happens. However, before the interaction happens, you can get the item’s registered type identifiers and metadata. The data is available to you only in the drop interaction delegate’s [`dropInteraction(_:performDrop:)`](../uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md) method.
 

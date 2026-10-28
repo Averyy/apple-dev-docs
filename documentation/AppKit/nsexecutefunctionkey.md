@@ -19,7 +19,7 @@ var NSExecuteFunctionKey: Int { get }
 NSExecuteFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

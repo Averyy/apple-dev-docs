@@ -24,7 +24,7 @@ var controlPointBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> controlPointBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You provide control points in the format that matches the [`controlPointFormat`](./controlpointformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
 

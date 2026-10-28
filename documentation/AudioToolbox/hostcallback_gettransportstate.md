@@ -24,7 +24,7 @@ typealias HostCallback_GetTransportState = (UnsafeMutableRawPointer?, UnsafeMuta
 typedef int (*)(void *, unsigned char *, unsigned char *, double *, unsigned char *, double *, double *) __attribute__((nonblocking)) HostCallback_GetTransportState;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyHostCallback_GetTransportState`, you would declare it like this:
 

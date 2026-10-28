@@ -5,13 +5,13 @@
 
 Create a signature from an audio file or the microphone for a reference track in a custom catalog, or for matching tracks in a catalog.
 
-#### Overview
+## Overview
 
 Generate a signature by adding an audio buffer in a supported format to an [`SHSignatureGenerator`](./shsignaturegenerator.md) object. You can add the audio buffer in one call or incrementally.
 
 The most common sources for audio are files in the app or the microphone.
 
-##### Create a signature from an audio file
+### Create a signature from an audio file
 
 Creating a signature from an audio file takes four steps:
 
@@ -143,7 +143,7 @@ Then the convert function reads chunks of audio from the input file and calls th
 
 ```
 
-##### Create a signature from the microphone
+### Create a signature from the microphone
 
 Using the microphone as the source for generating a signature is very similar to using it for matching.
 

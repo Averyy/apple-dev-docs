@@ -24,7 +24,7 @@ class INSearchForMediaIntentResponse
 @interface INSearchForMediaIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSearchForMediaIntentResponse`](./insearchformediaintentresponse.md) object to specify the results after searching for the user-specified media. After performing the search action using the criteria specified in the [`INSearchForMediaIntent`](./insearchformediaintent.md) object, create an instance of this class with the results of the action. Siri communicates the status from your response to the user, at appropriate times.
 

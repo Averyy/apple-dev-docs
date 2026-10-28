@@ -6,7 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 
 # mlx.nn.ReLU2
 
-**class ReLU2**
-: Applies the ReLU² activation function.
+```python
+class ReLU2
+```
+
+Applies the ReLU² activation function.
+
 See [relu2()](../_autosummary_functions/mlx.nn.relu2.md#mlx.nn.relu2) for the functional equivalent.
+
 Methods

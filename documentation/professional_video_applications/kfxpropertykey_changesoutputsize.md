@@ -19,7 +19,7 @@ var kFxPropertyKey_ChangesOutputSize: String { get }
 #define kFxPropertyKey_ChangesOutputSize
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a Boolean `NSNumber` that indicates whether your filter returns an output that has a different size than the input. If not, return `NO` and your filter’s [`destinationImageRect(_:sourceImages:destinationImage:pluginState:at:)`](./fxtileableeffect/destinationimagerect%28_,sourceimages,destinationimage,pluginstate,at%29.md) method will not be called.
 

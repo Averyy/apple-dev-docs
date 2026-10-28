@@ -24,7 +24,7 @@ case subtract
 MTLBlendOperationSubtract
 ```
 
-#### Discussion
+## Discussion
 
 `RGB = Source.rgb * SBF - Dest.rgb * DBF`
 

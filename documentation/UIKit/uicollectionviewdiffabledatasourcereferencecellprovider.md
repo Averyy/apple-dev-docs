@@ -23,7 +23,7 @@ typealias UICollectionViewDiffableDataSourceReferenceCellProvider = (UICollectio
 typedef UICollectionViewCell *(^)(UICollectionView *, NSIndexPath *, id) UICollectionViewDiffableDataSourceCellProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured cell object. The cell provider must return a valid cell object to the collection view.
 

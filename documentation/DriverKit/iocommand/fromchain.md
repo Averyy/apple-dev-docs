@@ -16,11 +16,11 @@
 static IOCommand * FromChain(queue_chain_t *link);
 ```
 
-#### Return Value
+## Return Value
 
 Queue used to queue commands.
 
-#### Discussion
+## Discussion
 
 Given the queue_chain_t from CommandChain, return the IOCommand instance.
 

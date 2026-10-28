@@ -4,7 +4,7 @@
 
 Specify event IDs for events that deal with Apple event recording.
 
-#### Overview
+## Overview
 
 These constants are available only in version 1.0.1 and later of the Apple Event Manager.
 

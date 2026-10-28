@@ -15,7 +15,7 @@ The amount of Digital Crown rotation needed to move between two integer numbers.
 enum DigitalCrownRotationalSensitivity
 ```
 
-#### Overview
+## Overview
 
 You may need to experiment to find the level of sensitivity that works for your use case.
 

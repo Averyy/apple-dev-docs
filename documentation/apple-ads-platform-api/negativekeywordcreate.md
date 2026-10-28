@@ -15,11 +15,11 @@ The request body for creating a new negative keyword.
 object NegativeKeywordCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordCreate` object is the request payload for adding a negative keyword to a campaign or ad group.
 
-##### Example
+### Example
 
 ```json
 {

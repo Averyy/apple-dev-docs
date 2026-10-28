@@ -21,7 +21,7 @@ Calculates the single-precision element-wise product of a complex vector and a c
 extern void vDSP_zvzsml(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_AvailableFormatIDs: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_AvailableFormatIDs
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to an audio file type ID containing a file type.
 

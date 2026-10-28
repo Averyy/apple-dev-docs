@@ -5,7 +5,7 @@
 
 Generate a signed token to identify your client application.
 
-#### Overview
+## Overview
 
 JSON Web Token (JWT) is an open-standard ([RFC 7519](https://www.rfc-editor.org/rfc/rfc7519)) that defines a way to transmit information securely. Account and Organizational Data Sharing requires JWTs to authorize each validation request. Create the token, then sign it with the [private key](https://developer.apple.com/help/account/share-account-data/share-account-and-organizational-data/) you downloaded from your developer account.
 

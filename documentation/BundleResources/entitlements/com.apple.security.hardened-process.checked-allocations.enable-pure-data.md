@@ -15,7 +15,7 @@ A Boolean value that indicates whether to tag memory that contains only data.
 - **Name**: `com.apple.security.hardened-process.checked-allocations.enable-pure-data` (Hardened Process - Enable Memory Tag Pure Data)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Adding an additional class of allocations for data improves security at the cost of memory and performance overhead.
 

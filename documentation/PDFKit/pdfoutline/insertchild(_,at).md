@@ -24,7 +24,7 @@ func insertChild(_ child: PDFOutline, at index: Int)
 - (void) insertChild:(PDFOutline *) child atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 To build a PDF outline hierarchy, use this method to add child outline objects. Before you call this method on a `PDFOutline` object that already has a parent, you should retain the object and call [`removeFromParent()`](./removefromparent%28%29.md) on it first.
 

@@ -21,7 +21,7 @@ The behavior a scroll view will have regarding content offset adjustments for th
 var scrollContentOffsetAdjustmentBehavior: ScrollContentOffsetAdjustmentBehavior { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A scroll view may automatically adjust its content offset based on the current context. The absolute offset may be adjusted to keep content in relatively the same place. For example, when scrolled to the bottom, a scroll view may keep the bottom edge scrolled to the bottom when the overall size of its content changes.
 

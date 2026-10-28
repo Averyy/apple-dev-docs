@@ -25,7 +25,7 @@ func CMMetadataFormatDescriptionCreateWithKeys(allocator: CFAllocator?, metadata
 extern OSStatus CMMetadataFormatDescriptionCreateWithKeys(CFAllocatorRef allocator, CMMetadataFormatType metadataType, CFArrayRef keys, CMMetadataFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 

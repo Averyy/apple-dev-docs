@@ -5,18 +5,18 @@
 
 Supported browsers and compatibility information for MapKit JS.
 
-#### Recommended Browsers
+## Recommended Browsers
 
 MapKit JS works best with the latest versions of the following browsers, depending on your device.
 
-##### On your Mac or PC
+### On your Mac or PC
 
 - Safari (macOS only)
 - Edge
 - Chrome
 - Firefox
 
-##### On your mobile device
+### On your mobile device
 
 - Safari (iOS or iPadOS only)
 - Edge

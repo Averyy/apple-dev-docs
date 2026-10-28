@@ -25,7 +25,7 @@ func la_add_attributes(_ object: la_object_t, _ attributes: la_attribute_t)
 extern void la_add_attributes(la_object_t object, la_attribute_t attributes);
 ```
 
-#### Discussion
+## Discussion
 
 Add attributes to an la_object_t object.
 

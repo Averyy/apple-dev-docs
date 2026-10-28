@@ -25,7 +25,7 @@ func CFDictionaryContainsValue(_ theDict: CFDictionary!, _ value: UnsafeRawPoint
 extern Boolean CFDictionaryContainsValue(CFDictionaryRef theDict, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is in the dictionary, otherwise `false`.
 

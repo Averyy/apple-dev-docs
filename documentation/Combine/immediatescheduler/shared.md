@@ -21,7 +21,7 @@ The shared instance of the immediate scheduler.
 static let shared: ImmediateScheduler
 ```
 
-#### Discussion
+## Discussion
 
 You cannot create instances of the immediate scheduler yourself. Use only the shared instance.
 

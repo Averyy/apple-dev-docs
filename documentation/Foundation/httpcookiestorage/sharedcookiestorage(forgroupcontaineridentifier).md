@@ -25,7 +25,7 @@ class func sharedCookieStorage(forGroupContainerIdentifier identifier: String) -
 + (NSHTTPCookieStorage *) sharedCookieStorageForGroupContainerIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 By default, apps and associated app extensions will have different data containers. As a result, the value of the [`HTTPCookieStorage`](../httpcookiestorage.md) class’s [`shared`](./shared.md) property will refer to different persistent cookie stores when called by the app and by its extensions.You can use this method to create a persistent cookie storage available to all apps and extensions with access to the same app group.
 

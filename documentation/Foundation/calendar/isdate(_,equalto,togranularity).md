@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two dates are equal down to the speci
 func isDate(_ date1: Date, equalTo date2: Date, toGranularity component: Calendar.Component) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two dates are equal in the given component and all larger components; otherwise, `false`.
 

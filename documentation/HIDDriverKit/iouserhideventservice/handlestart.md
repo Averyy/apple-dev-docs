@@ -16,11 +16,11 @@ Performs additional initialization during the startup of the event service.
 virtual bool handleStart(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The default implemention of this method does nothing.
 

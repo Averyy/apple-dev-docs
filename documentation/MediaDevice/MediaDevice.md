@@ -11,7 +11,7 @@ Let people stream media from any iOS app to your playback hardware through the m
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 
-#### Overview
+## Overview
 
 Media Device lets you make your playback hardware available to the system. People can then stream to it from any iOS app, selecting your device from the media device picker. The picker is the same UI people use for AirPlay and Bluetooth output. You build a [`MediaDeviceExtension`](./mediadeviceextension.md) that the system loads when someone opens the picker, and your extension handles discovery, connection, and playback on behalf of the system.
 

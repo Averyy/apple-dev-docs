@@ -20,7 +20,7 @@ Returns a new shader by applying the provided argument values to the referenced 
 func dynamicallyCall(withArguments args: [Shader.Argument]) -> Shader
 ```
 
-#### Discussion
+## Discussion
 
 Typically this subscript is used implicitly via function-call syntax, for example:
 

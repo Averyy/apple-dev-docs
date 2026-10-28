@@ -24,7 +24,7 @@ func SCNetworkReachabilitySetCallback(_ target: SCNetworkReachability, _ callout
 Boolean SCNetworkReachabilitySetCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityCallBack callout, SCNetworkReachabilityContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notification client was successfully set; otherwise, `FALSE`.
 

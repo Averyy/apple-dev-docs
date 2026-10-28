@@ -24,7 +24,7 @@ var canContainCollections: Bool { get }
 @property (nonatomic, assign, readonly) BOOL canContainCollections;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the collection is a [`PHCollectionList`](../phcollectionlist.md) object; otherwise, `false`. For details on collection lists, see [`PHCollectionList`](../phcollectionlist.md).
 

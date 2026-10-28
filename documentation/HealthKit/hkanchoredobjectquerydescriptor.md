@@ -25,7 +25,7 @@ struct HKAnchoredObjectQueryDescriptor<Sample> where Sample : HKSample
 - [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Use  [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) to read any changes to the HealthKit store that occurred after the provided anchor. When creating a new query descriptor, if you pass `nil` as the `anchor` parameter, the query reads all matching data from the store.
 
@@ -34,7 +34,7 @@ There are two common use cases for anchored object queries:
 - Batch-read all the matching data from the HealthKit store using a series of [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instances.
 - Monitor the HealthKit store for any changes to the matching data using a long-running [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instance.
 
-##### Batch Read Existing Data
+### Batch Read Existing Data
 
 Users may have large quantities of data saved to the HealthKit store; therefore, reading all data for a given data type might become very expensive, both in terms of memory usage and processing time. To avoid performance issues, you can use [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) queries to read the data in batches.
 
@@ -68,7 +68,7 @@ repeat {
 
 > 💡 **Tip**:  Because [`HKQueryAnchor`](./hkqueryanchor.md) instances adopt the [`NSSecureCoding`](../Foundation/nssecurecoding.md) protocol, you can save the most recent anchor and use it the next time your app launches.
 
-##### Monitor for Changes
+### Monitor for Changes
 
 To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
 

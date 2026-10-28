@@ -26,11 +26,11 @@ func startReading() -> Bool
 - (BOOL) startReading;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the reader is able to start reading; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If this method returns `false`, you can determine the reason by checking the values of the [`status`](./status-swift.property.md) and [`error`](./error.md) properties.
 

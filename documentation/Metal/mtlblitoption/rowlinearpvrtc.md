@@ -24,7 +24,7 @@ static var rowLinearPVRTC: MTLBlitOption { get }
 MTLBlitOptionRowLinearPVRTC
 ```
 
-#### Discussion
+## Discussion
 
 The PowerVR Texture Compression (PVRTC) format arranges blocks linearly in memory in row-major order, similar to other compressed texture formats. You can pass this option to some methods that copy data between a buffer and a texture, including the following:
 

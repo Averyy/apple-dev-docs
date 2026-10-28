@@ -19,11 +19,11 @@ func titleWidth(_ size: NSSize) -> CGFloat
 - (CGFloat) titleWidth:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the title field, measured in points in the user coordinate space.
 
-#### Discussion
+## Discussion
 
 If you set the width using [`titleWidth`](./titlewidth.md), this method returns the value you set; otherwise, the Application Kit calculates the width, constraining the field size to the specified value.
 

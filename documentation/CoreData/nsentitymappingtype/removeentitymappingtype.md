@@ -25,7 +25,7 @@ case removeEntityMappingType
 NSRemoveEntityMappingType
 ```
 
-#### Discussion
+## Discussion
 
 Instances of the entity only exist in the source—source instances are not mapped to destination.
 

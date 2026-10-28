@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Learn about the specification for SwiftPM’s registry service.
 
-##### 1. Notations
+### 1. Notations
 
 The following terminology and conventions are used in this document.
 
@@ -20,7 +20,7 @@ This specification uses the Augmented Backus-Naur Form (ABNF) notation as descri
 
 API endpoints that accept parameters in their path are expressed by Uniform Resource Identifier (URI) templates, as described in [RFC 6570](https://tools.ietf.org/html/rfc6570).
 
-##### 2. Definitions
+### 2. Definitions
 
 The following terms, as used in this document, have the meanings indicated.
 
@@ -30,17 +30,17 @@ The following terms, as used in this document, have the meanings indicated.
 - *Version Number*: An identifier for a package release in accordance with the [Semantic Versioning Specification (SemVer)](https://semver.org/).
 - *Precedence*: The ordering of version numbers relative to each other as defined by the [Semantic Versioning Specification (SemVer)](https://semver.org/).
 
-##### 3. Conventions
+### 3. Conventions
 
 This document uses the following conventions in its description of client-server interactions.
 
-###### 3.1. Application layer protocols
+#### 3.1. Application layer protocols
 
 A client and server MUST communicate over a secured connection using Transport Layer Security (TLS) with the `https` URI scheme.
 
 The use of HTTP 1.1 in examples is non-normative. A client and server MAY communicate according to this specification using any version of the HTTP protocol.
 
-###### 3.2. Authentication
+#### 3.2. Authentication
 
 A server MAY require authentication for client requests to access information about packages and package releases.
 
@@ -48,7 +48,7 @@ A server SHOULD respond with a status code of `401` (Unauthorized) if a client s
 
 A server MAY use any authentication model of its choosing. However, the use of a scoped, revocable authorization framework like [OAuth 2.0](https://tools.ietf.org/html/rfc6749) is RECOMMENDED.
 
-###### 3.3. Error handling
+#### 3.3. Error handling
 
 A server MUST communicate any errors to the client using “problem details” objects, as described by [RFC 7807](https://tools.ietf.org/html/rfc7807). For example, a client sends a request for a nonexistent release of a package and receives the following response:
 
@@ -63,7 +63,7 @@ Content-Language: en
 }
 ```
 
-###### 3.4. Rate limiting
+#### 3.4. Rate limiting
 
 A server MAY limit the number of requests made by a client by responding with a status code of `429` (Too Many Requests).
 
@@ -81,7 +81,7 @@ Retry-After: 60
 
 A client SHOULD follow the guidance of any `Retry-After` header values provided in responses to prevent overwhelming a server with retry requests. It is RECOMMENDED for clients to introduce random jitter in their retry logic to avoid a [thundering herd effect](https://en.wikipedia.org/wiki/Thundering_herd_problem).
 
-###### 3.5. API versioning
+#### 3.5. API versioning
 
 Package registry APIs are versioned.
 
@@ -145,7 +145,7 @@ Content-Language: en
 }
 ```
 
-###### 3.6. Package identification
+#### 3.6. Package identification
 
 A package may declare external packages as dependencies in its manifest. Each package dependency may specify a requirement on which versions are allowed.
 
@@ -153,7 +153,7 @@ An external package dependency may itself have one or more external package depe
 
 Each external package is uniquely identified by a scoped identifier in the form `scope.package-name`.
 
-###### 3.6.1 Package scope
+##### 3.6.1 Package scope
 
 A *scope* provides a namespace for related packages within a package registry. A package scope consists of alphanumeric characters and hyphens. Hyphens may not occur at the beginning or end, nor consecutively within a scope. The maximum length of a package scope is 39 characters. A valid package scope matches the following regular expression pattern:
 
@@ -163,7 +163,7 @@ A *scope* provides a namespace for related packages within a package registry. A
 
 Package scopes are case-insensitive (for example, `mona` ≍ `MONA`).
 
-###### 3.6.2. Package name
+##### 3.6.2. Package name
 
 A package’s *name* uniquely identifies a package in a scope. A package name consists of alphanumeric characters, underscores, and hyphens. Hyphens and underscores may not occur at the beginning or end, nor consecutively within a name. The maximum length of a package name is 100 characters. A valid package name matches the following regular expression pattern:
 
@@ -173,7 +173,7 @@ A package’s *name* uniquely identifies a package in a scope. A package name co
 
 Package names are case-insensitive (for example, `LinkedList` ≍ `LINKEDLIST`).
 
-##### 4. Endpoints
+### 4. Endpoints
 
 A server MUST respond to the following endpoints:
 
@@ -192,7 +192,7 @@ A client MAY send an `OPTIONS` request with an asterisk (`*`) to determine the p
 
 ---
 
-###### 4.1. List package releases
+#### 4.1. List package releases
 
 A client MAY send a `GET` request for a URI matching the expression `/{scope}/{name}` to retrieve a list of the available releases for a particular package. A client SHOULD set the `Accept` header with the value `application/vnd.swift.registry.v1+json` and MAY append the `.json` extension to the requested URI.
 
@@ -276,7 +276,7 @@ Link: <https://packages.example.com/mona/HashMap/5.0.3>; rel="latest-version",
 
 A server MAY respond with additional `Link` entries, such as one with a `payment` relation for sponsoring a package maintainer.
 
-###### 4.2. Fetch information about a package release
+#### 4.2. Fetch information about a package release
 
 A client MAY send a `GET` request for a URI matching the expression `/{scope}/{name}/{version}` to retrieve information about a release. A client SHOULD set the `Accept` header with the value `application/vnd.swift.registry.v1+json`, and MAY append the `.json` extension to the requested URI.
 
@@ -334,7 +334,7 @@ A server SHOULD respond with a `Link` header containing the following entries:
 
 A link with the `latest-version` relation MAY correspond to the requested release.
 
-###### 4.2.1. Package release resources
+##### 4.2.1. Package release resources
 
 Each element in the `resources` array is a JSON object with the following keys:
 
@@ -360,11 +360,11 @@ A resource object SHOULD have one of the following combinations of `name` and `t
 
 A release MUST NOT have more than a single resource object with a given combination of `name` and `type` values.
 
-###### 4.2.2. Package release metadata standards
+##### 4.2.2. Package release metadata standards
 
 [Appendix B](./registryserverspecification.md#Appendix-B-Package-Release-Metadata-JSON-Schema) defines the JSON schema for package release metadata that gets submitted as part of the [“create a package release”](./registryserverspecification.md#46-Create-a-package-release) request. A server MAY allow and/or populate additional metadata by expanding the schema. The `metadata` key in the [“fetch information about a package release”](./registryserverspecification.md#42-Fetch-information-about-a-package-release) API response will hold the user-provided as well as the server populated metadata.
 
-###### 4.3. Fetch manifest for a package release
+#### 4.3. Fetch manifest for a package release
 
 A client MAY send a `GET` request for a URI matching the expression `/{scope}/{name}/{version}/Package.swift` to retrieve the package manifest for a release. A client SHOULD set the `Accept` header with the value `application/vnd.swift.registry.v1+swift`.
 
@@ -418,7 +418,7 @@ A server MUST include a `Link` header field with a value for each version-specif
 
 Each link value SHOULD have the `alternate` relation type, a `filename` attribute set to the version-specific package manifest filename (for example, `Package@swift-4.swift`), and a `swift-tools-version` attribute set to the [Swift tools version](https://github.com/swiftlang/swift-package-manager/blob/9b9bed7eaf0f38eeccd0d8ca06ae08f6689d1c3f/Documentation/Usage.md#swift-tools-version-specification) specified by the package manifest file (for example, `4.0` for a manifest beginning with the comment `// swift-tools-version:4.0`).
 
-###### 4.3.1. swift-version query parameter
+##### 4.3.1. swift-version query parameter
 
 A client MAY specify a `swift-version` query parameter to request a manifest for a particular version of Swift.
 
@@ -462,7 +462,7 @@ Content-Version: 1
 Location: https://packages.example.com/mona/LinkedList/1.1.1/Package.swift
 ```
 
-###### 4.4. Download source archive
+#### 4.4. Download source archive
 
 A client MAY send a `GET` request for a URI matching the expression `/{scope}/{name}/{version}.zip` to retrieve a release’s source archive. A client SHOULD set the `Accept` header with the value `application/vnd.swift.registry.v1+zip` and MUST append the `.zip` extension to the requested path.
 
@@ -500,13 +500,13 @@ It is RECOMMENDED for clients and servers to support range requests as described
 
 If a release is signed, a server MUST include `X-Swift-Package-Signature-Format` and `X-Swift-Package-Signature` headers in the response.
 
-###### 4.4.1. Integrity verification
+##### 4.4.1. Integrity verification
 
 A client MUST verify the integrity of a downloaded source archive using the `checksum` value for the associated `source-archive` resource in the response to `GET /{scope}/{name}/{version}`, as described in [4.2.1](./registryserverspecification.md#421-Package-release-resources).
 
 A client SHOULD also verify the integrity using any values provided in the `Digest` header of the source archive response (for using the command `shasum -b -a 256 LinkedList-1.1.1.zip | cut -f1 | xxd -r -p | base64`).
 
-###### 4.4.2. Download locations
+##### 4.4.2. Download locations
 
 A server MAY specify mirrors or multiple download locations using `Link` header fields with a `duplicate` relation, as described by [RFC 6249](https://tools.ietf.org/html/rfc6249). A client MAY use this information to determine its preferred strategy for downloading.
 
@@ -536,11 +536,11 @@ Content-Version: 1
 Digest: sha-256=a2ac54cf25fbc1ad0028f03f0aa4b96833b83bb05a14e510892bb27dea4dc812
 ```
 
-###### 4.4.3. Signature validation
+##### 4.4.3. Signature validation
 
 A client MUST validate the signature of a signed archive according to the signature format and configuration. Signing information can alternatively be found in the associated `source-archive` resource in the response to `GET /{scope}/{name}/{version}`, as described in [4.2.1](./registryserverspecification.md#421-Package-release-resources).
 
-###### 4.5. Lookup package identifiers registered for a URL
+#### 4.5. Lookup package identifiers registered for a URL
 
 A client MAY send a `GET` request for a URI matching the expression `/identifiers?url={url}` to retrieve package identifiers associated with a particular URL. A client SHOULD set the `Accept` header with the value `application/vnd.swift.registry.v1+json`.
 
@@ -572,7 +572,7 @@ The response body MUST contain an array of package identifier strings nested at 
 
 It is RECOMMENDED for clients and servers to support caching as described by [RFC 7234](https://tools.ietf.org/html/rfc7234).
 
-###### 4.5.1 URL to package identifier mappings
+##### 4.5.1 URL to package identifier mappings
 
 As part of the [package release metadata](./registryserverspecification.md#422-Package-release-metadata-standards) JSON object, the `repositoryURLs` array can be used to specify URLs associated with a package identifier. This is one way through which a server can obtain URL to package identifier mappings for this API.
 
@@ -580,7 +580,7 @@ A server MAY choose other mechanism(s) for package authors to specify these mapp
 
 A server SHOULD validate the package author’s ownership claim on the corresponding repository.
 
-###### 4.6. Create a package release
+#### 4.6. Create a package release
 
 A client MAY send a `PUT` request for a URI matching the expression `/{scope}/{name}/{version}` to publish a release of a package. A client MUST provide a body encoded as multipart form data with the following sections:
 
@@ -693,7 +693,7 @@ Content-Language: en
 
 A server MAY respond either synchronously or asynchronously. For more information, see [4.6.3](./registryserverspecification.md#463-Synchronous-and-asynchronous-publication).
 
-###### 4.6.1. Source archive
+##### 4.6.1. Source archive
 
 A client MUST include a multipart section named `source-archive` containing the source archive for a release. A client SHOULD set a `Content-Type` header with the value `application/zip` and a `Content-Length` header with the size of the Zip archive in bytes.
 
@@ -724,7 +724,7 @@ Content-Language: en
 
 A server SHOULD use the `swift package compute-checksum` tool to compute the checksum that’s provided in response to a client’s subsequent request to [download the source archive](./registryserverspecification.md#44-Download-source-archive) for the release.
 
-###### 4.6.2. Package release metadata
+##### 4.6.2. Package release metadata
 
 A client MAY include a multipart section named `metadata` containing additional information about the release. A client SHOULD set a `Content-Type` header with the value `application/json` and a `Content-Length` header with the size of the JSON document in bytes. The package release metadata MUST be based on the [JSON schema](./registryserverspecification.md#Appendix-B-Package-Release-Metadata-JSON-Schema), as discussed in [4.2.2](./registryserverspecification.md#422-Package-release-metadata-standards).
 
@@ -763,7 +763,7 @@ Content-Language: en
 }
 ```
 
-###### 4.6.3. Synchronous and asynchronous publication
+##### 4.6.3. Synchronous and asynchronous publication
 
 A server MAY respond to a request to publish a new package release either synchronously or asynchronously.
 
@@ -867,7 +867,7 @@ Location: https://packages.example.com/submissions/90D8CC77-A576-47AE-A531-D6402
 
 If a client makes a request to publish a package release to a server that finished processing a failed request to publish that release, the server SHOULD try publishing that release again. A server MAY refuse to fulfill a subsequent request to publish a package release by responding with a status code of `409` (Conflict).
 
-##### 5. Normative References
+### 5. Normative References
 
 - [RFC 2119](https://tools.ietf.org/html/rfc2119): Key words for use in RFCs to Indicate Requirement Levels
 - [RFC 3230](https://tools.ietf.org/html/rfc5843): Instance Digests in HTTP
@@ -888,7 +888,7 @@ If a client makes a request to publish a package release to a server that finish
 - [RFC 8288](https://tools.ietf.org/html/rfc8288): Web Linking
 - [SemVer](https://semver.org/): Semantic Versioning
 
-##### 6. Informative References
+### 6. Informative References
 
 - [BCP 13](https://tools.ietf.org/html/rfc6838) Media Type Specifications and Registration Procedures
 - [RFC 6749](https://tools.ietf.org/html/rfc6749): The OAuth 2.0 Authorization Framework
@@ -898,13 +898,13 @@ If a client makes a request to publish a package release to a server that finish
 - [Schema.org](https://schema.org/): A shared vocabulary for structured data.
 - [OAS](https://swagger.io/specification/): OpenAPI Specification
 
-##### Appendix A - OpenAPI Document
+### Appendix A - OpenAPI Document
 
 The following [OpenAPI (v3) specification](https://swagger.io/specification/) is non-normative, and is provided for the convenience of developers interested in building their own package registry.
 
 See [registry.openapi.yaml](./registry.openapi.yaml.md).
 
-##### Appendix B - Package Release Metadata JSON Schema
+### Appendix B - Package Release Metadata JSON Schema
 
 The `metadata` section of the [create package release request](./registryserverspecification.md#46-Create-a-package-release) must be a JSON object of type [`PackageRelease`](./registryserverspecification.md#PackageRelease-type), as defined in the JSON schema below.
 

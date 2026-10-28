@@ -21,7 +21,7 @@ var pageLength: CGFloat { get set }
 @property (nonatomic) CGFloat pageLength;
 ```
 
-#### Discussion
+## Discussion
 
 When [`paginationMode`](./paginationmode-swift.property.md) is right to left or left to right, this property represents the width of each page. When [`paginationMode`](./paginationmode-swift.property.md) is top to bottom or bottom to top, this property represents the height of each page.
 

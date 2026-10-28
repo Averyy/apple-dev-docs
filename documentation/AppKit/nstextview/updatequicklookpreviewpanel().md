@@ -19,7 +19,7 @@ func updateQuickLookPreviewPanel()
 - (void) updateQuickLookPreviewPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Notifies the  [`QLPreviewPanel`](../../QuickLookUI/qlpreviewpanel.md) class for possible status changes with the data source or controller.  Typically invoked in response to selection changes.
 

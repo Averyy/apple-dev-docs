@@ -21,7 +21,7 @@ A type that identifies a specific instrument category.
 struct Instrument
 ```
 
-#### Overview
+## Overview
 
 The framework defines four built-in categories: [`vocal`](./instrument/vocal.md), [`drum`](./instrument/drum.md), [`bass`](./instrument/bass.md), and [`other`](./instrument/other.md). The [`other`](./instrument/other.md) category groups any instruments that don’t fall into the other three categories.
 

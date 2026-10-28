@@ -25,7 +25,7 @@ func CFAllocatorGetTypeID() -> CFTypeID
 extern CFTypeID CFAllocatorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFAllocator opaque type.
 

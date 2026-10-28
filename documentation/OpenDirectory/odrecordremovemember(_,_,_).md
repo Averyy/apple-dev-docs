@@ -20,7 +20,7 @@ func ODRecordRemoveMember(_ group: ODRecordRef!, _ member: ODRecordRef!, _ error
 extern bool ODRecordRemoveMember(ODRecordRef group, ODRecordRef member, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `inMember` is successfully removed from `inGroup`; otherwise, `false`.
 

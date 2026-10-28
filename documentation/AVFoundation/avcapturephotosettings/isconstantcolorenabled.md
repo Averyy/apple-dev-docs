@@ -23,7 +23,7 @@ var isConstantColorEnabled: Bool { get set }
 @property (nonatomic, getter=isConstantColorEnabled) BOOL constantColorEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to capture a constant color photo.
 

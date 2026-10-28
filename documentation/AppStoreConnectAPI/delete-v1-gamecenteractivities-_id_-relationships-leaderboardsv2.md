@@ -9,7 +9,7 @@ Remove a leaderboard from a Game Center activity.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - 204:

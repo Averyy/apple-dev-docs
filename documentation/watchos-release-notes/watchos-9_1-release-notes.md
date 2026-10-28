@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 9.1 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9.1. The SDK comes bundled with Xcode 14.1 RC, available from [Beta Software Downloads](https://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [Xcode 14.1 Release Notes](../Xcode-Release-Notes/xcode-14_1-release-notes.md).
 
-##### Memory Allocation
+### Memory Allocation
 
-###### Known Issues
+#### Known Issues
 
 - The system memory allocator `free` operation zeroes out most deallocated blocks in watchOS 9.1 beta or later. Invalid accesses to free memory might result in new crashes or corruption, including:
 

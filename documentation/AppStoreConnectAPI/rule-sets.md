@@ -5,7 +5,7 @@
 
 Manage the rule sets that you add matchmaking rules and teams to.
 
-#### Overview
+## Overview
 
 The `rule set` resource represents a set of rules associated with a queue that Game Center applies to match requests in the queue. For more information, see [Matchmaking rules](../GameKit/matchmaking-rules.md) in the GameKit framework.
 

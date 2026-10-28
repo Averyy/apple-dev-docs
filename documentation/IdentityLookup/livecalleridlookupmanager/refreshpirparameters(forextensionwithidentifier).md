@@ -23,7 +23,7 @@ func refreshPIRParameters(forExtensionWithIdentifier identifier: String) async t
 
 - [Getting up-to-date calling and blocking information for your app](../getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 This throws an error when the system can’t referesh the PIR parameters.
 

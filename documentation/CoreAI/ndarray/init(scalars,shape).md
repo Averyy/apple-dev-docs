@@ -19,7 +19,7 @@ Initialize an ndArray with a copy of some sequence of scalars, stored in the ndA
 init<Scalar>(scalars: some Sequence, shape: [Int]) where Scalar : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 This utility will construct an ndArray with a copy of the contents of some sequence. For example to make an int32 ndArray with increasing values:
 

@@ -25,7 +25,7 @@ func copy(sourceAccelerationStructure: any MTLAccelerationStructure, destination
 - (void) copyAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure toAccelerationStructure:(id<MTLAccelerationStructure>) destinationAccelerationStructure;
 ```
 
-#### Discussion
+## Discussion
 
 The destination acceleration structure needs to be at least as large as the source acceleration structure, unless you’re compacting the source acceleration structure. In that case, the destination acceleration structure needs be at least as large as the compact size of the source acceleration structure.
 

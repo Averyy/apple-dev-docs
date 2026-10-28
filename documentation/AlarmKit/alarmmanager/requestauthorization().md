@@ -17,7 +17,7 @@ Requests permission to use the alarm system if it hasn’t been requested before
 func requestAuthorization() async throws -> AlarmManager.AuthorizationState
 ```
 
-#### Discussion
+## Discussion
 
 If a person using your app denies authorization, all attempts to schedule alarms fail.
 

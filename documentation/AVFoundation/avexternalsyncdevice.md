@@ -23,7 +23,7 @@ class AVExternalSyncDevice
 @interface AVExternalSyncDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of [`AVExternalSyncDevice`](./avexternalsyncdevice.md) corresponds to a physical external device that can drive an internal component, like a camera readout. You cannot create instances of [`AVExternalSyncDevice`](./avexternalsyncdevice.md). Instead, you obtain an array of all currently available external sync devices using [`AVExternalSyncDevice.DiscoverySession`](./avexternalsyncdevice/discoverysession.md).
 

@@ -20,7 +20,7 @@ A component that provides the navigation meshes an entity uses to find paths thr
 struct NavigationMeshComponent
 ```
 
-#### Overview
+## Overview
 
 Attach a navigation mesh component to an entity to supply the walkable surfaces that pathfinding relies on. Each [`NavigationMeshResource`](./navigationmeshresource.md) in [`navigationMeshes`](./navigationmeshcomponent/navigationmeshes.md) represents a baked region of the scene that agents with a matching [`NavigationComponent`](./navigationcomponent.md) can travel across.
 

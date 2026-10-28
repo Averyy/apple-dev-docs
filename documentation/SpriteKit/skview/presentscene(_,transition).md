@@ -24,7 +24,7 @@ func presentScene(_ scene: SKScene, transition: SKTransition)
 - (void) presentScene:(SKScene *) scene transition:(SKTransition *) transition;
 ```
 
-#### Discussion
+## Discussion
 
 If there is currently a scene presented by the view, the view’s [`scene`](./scene.md) property is updated immediately, the transition is executed to swap between the scenes. Otherwise, the new scene is presented immediately and the transition property is ignored.
 

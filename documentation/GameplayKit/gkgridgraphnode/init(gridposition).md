@@ -24,11 +24,11 @@ init(gridPosition: vector_int2)
 - (instancetype) initWithGridPosition:(vector_int2) gridPosition;
 ```
 
-#### Return Value
+## Return Value
 
 A new graph node representing the specified grid position.
 
-#### Discussion
+## Discussion
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 

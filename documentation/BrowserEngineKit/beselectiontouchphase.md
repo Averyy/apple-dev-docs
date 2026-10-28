@@ -23,7 +23,7 @@ enum BESelectionTouchPhase
 enum BESelectionTouchPhase : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`BETextInput`](./betextinput.md) protocol provides your app an instance of this structure as an argument to the  [`adjustSelectionBoundary(to:touchPhase:baseIsStart:flags:)`](./betextinput/adjustselectionboundary%28to,touchphase,baseisstart,flags%29.md) callback.
 

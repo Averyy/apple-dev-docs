@@ -12,7 +12,7 @@ void setMaxBlocksExtended(
  UInt16 inMaxBlocks);
 ```
 
-#### Overview
+## Overview
 
 function setMaxBlocksExtended
 

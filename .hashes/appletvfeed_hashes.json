@@ -618,8 +618,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 154
   }

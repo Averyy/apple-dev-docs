@@ -24,7 +24,7 @@ protocol UISearchBarDelegate : UIBarPositioningDelegate
 @protocol UISearchBarDelegate <UIBarPositioningDelegate>
 ```
 
-#### Overview
+## Overview
 
 A [`UISearchBar`](./uisearchbar.md) object provides the user interface for a search field on a bar, but it’s the application’s responsibility to implement the actions when buttons are tapped. At a minimum, the delegate needs to perform the actual search when text is entered in the text field.
 

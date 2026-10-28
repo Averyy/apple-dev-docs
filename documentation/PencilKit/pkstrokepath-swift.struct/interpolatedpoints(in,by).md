@@ -19,7 +19,7 @@ Returns the slice on-curve points using the floating point range and stride that
 func interpolatedPoints(in range: ClosedRange<CGFloat>? = nil, by stride: PKStrokePath.InterpolatedSlice.Stride) -> PKStrokePath.InterpolatedSlice
 ```
 
-#### Return Value
+## Return Value
 
 An interpolated slice whose points are within the specified `range`.
 

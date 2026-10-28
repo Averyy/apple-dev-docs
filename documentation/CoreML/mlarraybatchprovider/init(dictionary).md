@@ -25,7 +25,7 @@ init(dictionary: [String : [Any]]) throws
 - (instancetype) initWithDictionary:(NSDictionary<NSString *,NSArray *> *) dictionary error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is convenient when the data are available as individual arrays.
 

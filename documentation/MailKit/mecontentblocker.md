@@ -19,7 +19,7 @@ protocol MEContentBlocker : NSObjectProtocol
 @protocol MEContentBlocker <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A mail content blocker is similar to content blockers for Safari. Mail uses content blockers when it displays message content in a user’s mailbox. If your extension’s `Info.plist` file contains `MEContentBlocker` in the list of [`MEExtensionCapabilities`](../BundleResources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities.md), MailKit invokes [`handlerForContentBlocker()`](./meextension/handlerforcontentblocker%28%29.md) to get the object that provides content-blocking rules. The handler returns the content-blocking rules as JSON data from the [`contentRulesJSON()`](./mecontentblocker/contentrulesjson%28%29.md) method.
 

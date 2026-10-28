@@ -21,7 +21,7 @@ let CLKLaunchedTimelineEntryDateKey: String
 extern NSString * const CLKLaunchedTimelineEntryDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSDate`](../Foundation/nsdate.md) object. When the user taps your complication, ClockKit includes this key in the dictionary that it passes to the extension delegate’s [`handleUserActivity(_:)`](../WatchKit/wkextensiondelegate/handleuseractivity%28_%29.md) method.
 

@@ -25,7 +25,7 @@ var isDeleted: Bool { get }
 @property (nonatomic, readonly, getter=isDeleted) BOOL deleted;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if Core Data will ask the persistent store to delete the object during the next save operation, otherwise [`false`](../../Swift/false.md). It may return [`false`](../../Swift/false.md) at other times, particularly after the object has been deleted. The immediacy with which it will stop returning [`true`](../../Swift/true.md) depends on where the object is in the process of being deleted.
 

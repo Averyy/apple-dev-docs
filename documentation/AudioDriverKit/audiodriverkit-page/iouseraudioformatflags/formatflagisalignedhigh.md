@@ -15,7 +15,7 @@ A flag to indicate whether sample bits use the high bits of the channel.
 FormatFlagIsAlignedHigh
 ```
 
-#### Discussion
+## Discussion
 
 Set this value if sample bits use the high end of the channel; clear it to use the low end. This flag is only valid if [`FormatFlagIsPacked`](./formatflagispacked.md) is clear.
 

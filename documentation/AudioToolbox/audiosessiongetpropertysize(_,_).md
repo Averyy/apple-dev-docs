@@ -22,11 +22,11 @@ func AudioSessionGetPropertySize(_ inID: AudioSessionPropertyID, _ outDataSize: 
 extern OSStatus AudioSessionGetPropertySize(AudioSessionPropertyID inID, UInt32 *outDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Audio session properties are listed and described in [Audio Session Property Identifiers](./api-1618455-audio-session-property-identifie.md).
 

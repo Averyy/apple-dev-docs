@@ -23,7 +23,7 @@ var stackedItemPositioning: UITabBar.ItemPositioning { get set }
 @property (nonatomic, assign, readwrite) UITabBarItemPositioning stackedItemPositioning;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify whether you want the items centered in the available space or distributed across the entire width of the tab bar.
 

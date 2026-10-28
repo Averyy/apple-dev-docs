@@ -26,7 +26,7 @@ var observedMinBitrate: Double { get }
 @property (nonatomic, readonly) double observedMinBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

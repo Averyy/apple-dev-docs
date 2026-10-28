@@ -23,7 +23,7 @@ func playheadTime() -> CMTime
 
 - [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Discussion
+## Discussion
 
 When Final Cut Pro invokes a registered observer to send a notification of a change in the playhead time of an active sequence, use this method to find the new playhead position in the Final Cut Pro timeline. The method returns [`invalid`](../../CoreMedia/cmtime/invalid.md) (Swift) or [`invalid`](../../CoreMedia/cmtime/invalid.md) (Objective-C) if the Final Cut Pro timeline has no valid sequence.
 

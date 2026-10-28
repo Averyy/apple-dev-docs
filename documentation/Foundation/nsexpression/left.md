@@ -26,7 +26,7 @@ var left: NSExpression { get }
 @property (copy, readonly) NSExpression * leftExpression;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

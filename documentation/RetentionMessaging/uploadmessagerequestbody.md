@@ -19,7 +19,7 @@ object UploadMessageRequestBody
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 This is the request body for the [`Upload Message`](./upload-message.md) endpoint.
 

@@ -21,7 +21,7 @@ var dtd: XMLDTD? { get set }
 @property (copy, nullable) NSXMLDTD * DTD;
 ```
 
-#### Return Value
+## Return Value
 
 An [`XMLDTD`](../xmldtd.md) object representing the internal DTD associated with the receiver or `nil` if no DTD has been associated.
 

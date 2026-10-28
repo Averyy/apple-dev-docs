@@ -17,7 +17,7 @@
 extern NSString * const NSFTPPropertyFTPProxy;
 ```
 
-#### Discussion
+## Discussion
 
 To avoid any proxy use, pass an empty dictionary.
 

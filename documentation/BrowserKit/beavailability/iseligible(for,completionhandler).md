@@ -24,7 +24,7 @@ class func isEligible(for context: BEAvailability.Context) async throws -> Bool
 + (void) isEligibleForContext:(BEEligibilityContext) context completionHandler:(void (^)(BOOL eligible, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler in the synchronous version of this method receives `true` as its first parameter if the device is eligible to run a version of the app that contains an alternative browser engine; otherwise, it receives `false`. The second parameter that the completion handler receives is an error if any occurs; otherwise, it’s `nil`.
 

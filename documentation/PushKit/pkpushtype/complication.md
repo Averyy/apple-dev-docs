@@ -24,7 +24,7 @@ static let complication: PKPushType
 extern PKPushType const PKPushTypeComplication;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type of notification to deliver updated data related for your watchOS app’s complication. The watchOS app’s complication must be active on the user’s current clock face. If it is not, the system does not deliver pushes of this type. For watchOS 6 and later, send the push notification directly to Apple Watch. For watchOS 5 and earlier, you must send it to the iOS companion instead.
 

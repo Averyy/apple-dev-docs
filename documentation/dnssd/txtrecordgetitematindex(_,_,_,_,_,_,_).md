@@ -25,11 +25,11 @@ func TXTRecordGetItemAtIndex(_ txtLen: UInt16, _ txtRecord: UnsafeRawPointer!, _
 DNSServiceErrorType TXTRecordGetItemAtIndex(uint16_t txtLen, const void *txtRecord, uint16_t itemIndex, uint16_t keyBufLen, char *key, uint8_t *valueLen, const void **value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_NoMemory if keyBufLen is too short. Returns kDNSServiceErr_Invalid if index is greater than TXTRecordGetCount()-1.
 
-#### Discussion
+## Discussion
 
 Legal index values range from zero to TXTRecordGetCount()-1. It’s also possible to iterate through keys in a TXT record by simply calling TXTRecordGetItemAtIndex() repeatedly, beginning with index zero and increasing until TXTRecordGetItemAtIndex() returns kDNSServiceErr_Invalid.
 

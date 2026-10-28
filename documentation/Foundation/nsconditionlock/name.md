@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 You can use a name string to identify a condition lock within your code. Cocoa also uses this name as part of any error descriptions involving the receiver.
 

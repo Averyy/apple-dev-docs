@@ -22,7 +22,7 @@ var isContinuous: Bool { get set }
 @property (nonatomic, getter=isContinuous) BOOL continuous;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the stepper sends value change events immediately as the value changes during user interaction. If [`false`](../../Swift/false.md), the stepper sends a value change event after user interaction ends.
 

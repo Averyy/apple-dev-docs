@@ -24,7 +24,7 @@ var anchorPointZ: CGFloat { get set }
 @property CGFloat anchorPointZ;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the anchor point on the z axis around which geometric manipulations occur. The point is expressed as a distance (measured in points) along the z axis. The default value of this property is `0`.
 

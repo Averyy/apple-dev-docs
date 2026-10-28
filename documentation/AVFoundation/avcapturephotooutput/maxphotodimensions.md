@@ -23,7 +23,7 @@ var maxPhotoDimensions: CMVideoDimensions { get set }
 @property (nonatomic) CMVideoDimensions maxPhotoDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Set a value for this property to request images up to the specified dimensions. Images that a photo output returns may be smaller than the dimensions, but are never be larger. Once set, you can request images with any valid maximum photo dimensions by setting [`maxPhotoDimensions`](../avcapturephotosettings/maxphotodimensions.md) on [`AVCapturePhotoSettings`](../avcapturephotosettings.md) on a per photo basis.
 

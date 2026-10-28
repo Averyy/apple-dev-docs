@@ -13,11 +13,11 @@ Support advancements in SwiftUI accessibility to make your app accessible to eve
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10073: [Catch up on accessibility in SwiftUI](https://developer.apple.com/wwdc24/10073/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Open the sample code project in Xcode. Before building it, do the following:
 

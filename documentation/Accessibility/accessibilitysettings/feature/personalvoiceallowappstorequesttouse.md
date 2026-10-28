@@ -25,7 +25,7 @@ case personalVoiceAllowAppsToRequestToUse
 AXSettingsFeaturePersonalVoiceAllowAppsToRequestToUse
 ```
 
-#### Discussion
+## Discussion
 
 You use this constant with [`openSettings(for:)`](../opensettings%28for%29.md). This constant is relevant for the [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus`](../../../AVFAudio/avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum.md) API.
 

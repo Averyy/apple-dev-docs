@@ -19,7 +19,7 @@ func setPairwiseMasterKey(_ key: Data?) throws
 - (BOOL) setPairwiseMasterKey:(NSData *) key error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 *key* must be 32 octets. If *key* is *nil*, this method clears the PMK for the interface.
 

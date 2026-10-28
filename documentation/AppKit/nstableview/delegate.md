@@ -19,11 +19,11 @@ weak var delegate: (any NSTableViewDelegate)? { get set }
 @property (weak, nullable) id<NSTableViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSTableViewDelegate`](../nstableviewdelegate.md) protocol. Setting the delegate will implicitly reload the table view. Note that in versions of macOS prior to v10.12, the table view did not retain the delegate in a managed memory environment.
 
-##### Special Considerations
+### Special Considerations
 
 When you set the table view’s delegate, it is automatically registered for the following notifications with the following delegate methods:
 

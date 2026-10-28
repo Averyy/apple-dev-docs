@@ -20,7 +20,7 @@ Describes the physics simulation space of the entity and its descendants.
 enum PhysicsSimulation
 ```
 
-#### Overview
+## Overview
 
 This allows developers to fine-tune which entities with an `AnchoringComponent` interact with each other physically, as opposed to not interacting at all.
 

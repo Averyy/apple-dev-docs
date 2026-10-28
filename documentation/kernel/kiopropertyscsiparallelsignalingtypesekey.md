@@ -14,7 +14,7 @@
 #define kIOPropertySCSIParallelSignalingTypeSEKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Single Ended for the key kIOPropertySCSIParallelSignalingTypeKey. If the signaling type of the port is Single Ended, this key should be used.
 

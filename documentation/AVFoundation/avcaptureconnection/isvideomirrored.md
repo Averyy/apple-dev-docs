@@ -24,7 +24,7 @@ var isVideoMirrored: Bool { get set }
 @property (nonatomic, getter=isVideoMirrored) BOOL videoMirrored;
 ```
 
-#### Discussion
+## Discussion
 
 You can apply a mirror-image effect to a video flowing through the connection by setting the value to [`true`](../../Swift/true.md). The mirroring effect only applies to video or depth connections, similar to [`videoRotationAngle`](./videorotationangle.md), and if [`isVideoMirroringSupported`](./isvideomirroringsupported.md) is [`true`](../../Swift/true.md).
 

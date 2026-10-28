@@ -24,7 +24,7 @@ case emission
 MDLMaterialSemanticEmission
 ```
 
-#### Discussion
+## Discussion
 
 A renderer (or other software component processing the material) might not treat the emission channel of a material as a light source illuminating the scene. Instead, an emission channel prevents affected areas of a surface from being darkened by other aspects of lighting and shading.
 

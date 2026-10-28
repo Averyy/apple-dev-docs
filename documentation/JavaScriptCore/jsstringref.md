@@ -24,7 +24,7 @@ typealias JSStringRef = OpaquePointer
 typedef struct OpaqueJSString * JSStringRef;
 ```
 
-#### Discussion
+## Discussion
 
 This is the fundamental string representation in JavaScript.
 

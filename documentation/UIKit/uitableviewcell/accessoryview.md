@@ -23,7 +23,7 @@ var accessoryView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is not `nil`, the `UITableViewCell` class uses the given view for the accessory view in the table view’s normal (default) state; it ignores the value of the [`accessoryType`](./accessorytype-swift.property.md) property. The provided accessory view can be a framework-provided control or label or a custom view. The accessory view appears in the right side of the cell.
 

@@ -13,7 +13,7 @@ Collect payments with iPhone and Apple Watch using Apple Pay.
 - watchOS 8.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample shows the implementation of an integrated Apple Pay eCommerce experience across iOS and watchOS. The sample app demonstrates how to use the Apple Pay button, display the Apple Pay payment sheet, make payment requests, and accept coupon codes.
 
@@ -26,7 +26,7 @@ A shared `PaymentHandler` class handles payment in each of the apps.
 
 > **Note**: This sample code project is associated with WWDC21 session [10092: What’s New in Wallet and Apple Pay](https://developer.apple.com/wwdc21/10092/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Test Apple Pay payments with this sample by configuring the bundle identifiers and Apple Pay configuration items in Xcode. Doing this requires an Apple developer account. Before building the app, complete these four steps:
 
@@ -41,7 +41,7 @@ Running this app on an iPhone or Apple Watch requires an Apple Pay card. Running
 
 For more information about processing an Apple Pay payment using a payment platform or merchant bank, see [An easier way to pay within apps and websites](https://developer.apple.com/apple-pay). To set up your sandbox environment for testing, see [Sandbox Testing](https://developer.apple.com/apple-pay/sandbox-testing/).
 
-##### Add the Apple Pay Button
+### Add the Apple Pay Button
 
 Apple Pay includes pre-built buttons to start a payment interaction, or to set up payment methods. The iOS app displays the payment button if the device can make payments, and it contains at least one payment card; otherwise it displays the button to add a payment.
 
@@ -90,7 +90,7 @@ if let applePayButton = button {
 
 The watchOS app adds the button to the storyboard as an instance of [`WKInterfacePaymentButton`](../WatchKit/wkinterfacepaymentbutton.md).
 
-##### Define the Shipping Methods
+### Define the Shipping Methods
 
 The app defines two shipping methods: delivery with estimated shipping dates and on-site collection. The payment sheet displays the delivery information for the chosen shipping method, including estimated delivery dates. Configuring the dates requires a calendar, start date components, and end date components
 
@@ -120,7 +120,7 @@ func shippingMethodCalculator() -> [PKShippingMethod] {
 }
 ```
 
-##### Start the Payment Process
+### Start the Payment Process
 
 Both iOS and watchOS implementations start the payment process by calling the `startPayment` method of the shared `PaymentHandler`. Updates to the payment sheet use the completion handlers implemented by both apps. The `startPayment` method stores the completion handlers because the Apple Pay functionality is asynchronous; and then the method creates an array of [`PKPaymentSummaryItem`](./pkpaymentsummaryitem.md) to display the charges on the payment sheet.
 
@@ -166,7 +166,7 @@ paymentController?.present(completion: { (presented: Bool) in
 })
 ```
 
-##### Respond to Coupon Code Entry
+### Respond to Coupon Code Entry
 
 The `PaymentHandler` class handles coupons by implementing the [`PKPaymentAuthorizationControllerDelegate`](./pkpaymentauthorizationcontrollerdelegate.md) protocol method [`paymentAuthorizationController(_:didSelectPaymentMethod:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didselectpaymentmethod,handler%29.md).
 
@@ -211,7 +211,7 @@ func paymentAuthorizationController(_ controller: PKPaymentAuthorizationControll
 #endif
 ```
 
-##### Handle Payment Success or Failure
+### Handle Payment Success or Failure
 
 When the user authorizes the payment, the system calls the [`paymentAuthorizationController(_:didAuthorizePayment:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didauthorizepayment,handler%29.md) method of the [`PKPaymentAuthorizationControllerDelegate`](./pkpaymentauthorizationcontrollerdelegate.md) protocol. Your handler confirms that the shipping address meets the criteria needed, and then calls the completion handler to report success or failure of the payment.
 

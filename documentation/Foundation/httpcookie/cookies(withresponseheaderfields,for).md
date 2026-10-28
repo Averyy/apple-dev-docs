@@ -25,11 +25,11 @@ class func cookies(withResponseHeaderFields headerFields: [String : String], for
 + (NSArray<NSHTTPCookie *> *) cookiesWithResponseHeaderFields:(NSDictionary<NSString *,NSString *> *) headerFields forURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The array of created cookies.
 
-#### Discussion
+## Discussion
 
 This method ignores irrelevant header fields in `headerFields`, allowing dictionaries to contain additional data.
 

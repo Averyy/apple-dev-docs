@@ -25,7 +25,7 @@ static func liveUpdates(_ configuration: CLLocationUpdate.LiveConfiguration = .d
 
 - [Creating a location push service extension](../creating-a-location-push-service-extension.md)
 
-#### Return Value
+## Return Value
 
 [`CLLocationUpdate.Updates`](./updates.md) that meet the criteria you specify.
 

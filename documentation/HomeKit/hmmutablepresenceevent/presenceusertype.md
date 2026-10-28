@@ -24,7 +24,7 @@ var presenceUserType: HMPresenceEventUserType { get set }
 @property (nonatomic, readwrite) HMPresenceEventUserType presenceUserType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the user presence type that triggers this event.
 

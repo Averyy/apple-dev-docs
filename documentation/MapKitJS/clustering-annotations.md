@@ -5,7 +5,7 @@
 
 Combine multiple annotations into a single clustered annotation.
 
-#### Overview
+## Overview
 
 Annotations display coordinate-specific data on a map, typically in the form of markers or images. To declutter annotation-heavy maps, MapKit JS supports *annotation clustering*. As the user zooms out on a map that contains annotations, MapKit JS groups individual annotations into a *cluster annotation* if they collide and if they share the same [`clusteringIdentifier`](./annotation/clusteringidentifier.md).
 
@@ -13,7 +13,7 @@ The cluster annotation’s [`memberAnnotations`](./annotation/memberannotations.
 
 MapKit JS creates cluster annotations automatically. Although you can’t instantiate a cluster annotation, you can customize the look of cluster annotations by providing a delegate method, [`annotationForCluster`](./map/annotationforcluster.md), to the map.
 
-##### Understand the annotations arrays
+### Understand the annotations arrays
 
 Although visible on a map, cluster annotations aren’t members of the map’s [`annotations`](./map/annotations.md) array. The annotations that make up the cluster do belong to the [`annotations`](./map/annotations.md) array, however, even if they’re not individually visible on the map. For example, the following figure shows a map with annotations A, B, C, D, and E:
 
@@ -28,7 +28,7 @@ The map displays annotations Q, D, and E, and the resulting annotation arrays ar
 - `Q.memberAnnotations = [A, B, C];`
 - `map.annotations = [A, B, C, D, E];`
 
-##### Set cluster annotation properties
+### Set cluster annotation properties
 
 Cluster annotations have the same properties as other annotations, but you can’t set some values, including [`coordinate`](./annotation/coordinate.md), [`clusteringIdentifier`](./annotation/clusteringidentifier.md), and [`draggable`](./annotation/draggable.md). Other values have specific defaults as the following table shows:
 

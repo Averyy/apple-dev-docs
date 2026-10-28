@@ -22,7 +22,7 @@ Updates the internal stream position to the specified offset relative to the spe
 func seek(toOffset offset: Int64, relativeTo origin: FileDescriptor.SeekOrigin) throws -> Int64
 ```
 
-#### Return Value
+## Return Value
 
 The new internal stream position that is relative to the beginning of the stream.
 

@@ -24,7 +24,7 @@ class func fetchCollectionLists(withLocalIdentifiers identifiers: [String], opti
 + (PHFetchResult<PHCollectionList *> *) fetchCollectionListsWithLocalIdentifiers:(NSArray<NSString *> *) identifiers options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHCollectionList`](../phcollectionlist.md) objects, or an empty fetch result if no objects match the request.
 

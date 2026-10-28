@@ -20,7 +20,7 @@ func node(for anchor: ARAnchor) -> SCNNode?
 - (SCNNode *) nodeForAnchor:(ARAnchor *) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 The node whose position in the AR scene the anchor tracks, or `nil` if the anchor has no associated node or is not in the view’s AR session.
 

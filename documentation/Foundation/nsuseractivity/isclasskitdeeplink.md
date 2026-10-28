@@ -23,7 +23,7 @@ var isClassKitDeepLink: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isClassKitDeepLink;
 ```
 
-#### Discussion
+## Discussion
 
 When a student taps on an assignment associated with an app that adopts ClassKit, the framework redirects the student to the corresponding app using either a universal link or a user activity, depending on the app’s configuration. Use the [`isClassKitDeepLink`](./isclasskitdeeplink.md) property of a [`NSUserActivity`](../nsuseractivity.md) instance that you receive to test if that activity is from ClassKit. See [Linking directly to assignments](../../ClassKit/linking-directly-to-assignments.md) for more information.
 

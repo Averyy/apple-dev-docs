@@ -25,11 +25,11 @@ class func currentLanguageCode() -> String
 + (NSString *) currentLanguageCode;
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains the BCP 47 language and locale code for the user’s current locale.
 
-#### Discussion
+## Discussion
 
 This code reflects the user’s language and region preferences in the Settings app.
 

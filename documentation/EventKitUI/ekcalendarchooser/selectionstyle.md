@@ -22,7 +22,7 @@ var selectionStyle: EKCalendarChooserSelectionStyle { get }
 @property (nonatomic, readonly) EKCalendarChooserSelectionStyle selectionStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [`EKCalendarChooserSelectionStyle`](../ekcalendarchooserselectionstyle.md).
 

@@ -19,11 +19,11 @@ Begins the export process.
 func requestExport(for extensionBundleIdentifier: String? = nil) async throws -> ASCredentialExportManager.ExportOptions
 ```
 
-#### Return Value
+## Return Value
 
 The selected set of export options.
 
-#### Discussion
+## Discussion
 
 Calling this method brings up the out-of-process system UI that guides someone using your app through the export flow. After they determine the necessary options, this method returns the selected options to your app. At that point, call [`exportCredentials(_:)`](./exportcredentials%28_%29.md) with the exported credentials in the specified format.
 

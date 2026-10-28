@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether a time range is indefinite.
 #define CMTIMERANGE_IS_INDEFINITE(range)
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `range` is indefinite; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 An indefinite time range has either an indefinite start or an indefinite duration, or both.
 

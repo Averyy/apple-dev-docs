@@ -17,7 +17,7 @@ Sets the character of the menu item title at location that is to be underlined.
 - (void) setMnemonicLocation:(NSUInteger) location;
 ```
 
-#### Discussion
+## Discussion
 
 This character identifies the access key by which users can access the menu item.
 

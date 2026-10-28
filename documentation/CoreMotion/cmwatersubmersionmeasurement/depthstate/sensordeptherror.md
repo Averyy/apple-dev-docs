@@ -23,7 +23,7 @@ case sensorDepthError
 CMWaterSubmersionDepthStateSensorDepthError
 ```
 
-#### Discussion
+## Discussion
 
 The system sends a measurement with this state if the wearer continues to descend past the maximum depth.
 

@@ -20,7 +20,7 @@ Creates a linear regressor from a checkpoint.
 init(checkpoint: MLCheckpoint) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `MLCreateError` if the checkpoint can’t be loaded.
 

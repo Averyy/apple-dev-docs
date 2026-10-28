@@ -26,7 +26,7 @@ Displays an introduction section at the top of a table of contents or tutorial p
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 You can display an introduction at the top of every table of contents by using the [`Tutorials`](./tutorials.md) directive and at the top of every tutorial page by using the [`Tutorial`](./tutorial.md) directive. It’s the first thing a reader sees on these pages, so it needs to draw them into the content that follows.
 
@@ -56,14 +56,14 @@ Use the `Intro` directive to insert an introduction section. In the `title` para
 
 DocC automatically adds additional elements to introduction sections during rendering. For example, on a table of contents page, the introduction calculates and displays the total estimated time to complete all pages of the tutorial. It derives this value by combining the time estimates you provide on individual tutorial pages. The table of contents introduction also includes a Get Started button that takes readers to the first tutorial page.
 
-##### Contained Elements
+### Contained Elements
 
 An introduction can contain the following items:
 
 - **[`Image`](./image.md)**: An image to serve as a background. **(optional)**
 - **[`Video`](./video.md)**: A link to view an introduction video. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following pages must include an introduction section:
 

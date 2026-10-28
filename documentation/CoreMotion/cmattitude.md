@@ -24,7 +24,7 @@ class CMAttitude
 @interface CMAttitude : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CMAttitude` class offers three different mathematical representations of attitude: a rotation matrix, a quaternion, and Euler angles (roll, pitch, and yaw values). You access `CMAttitude` objects through the attitude property of each [`CMDeviceMotion`](./cmdevicemotion.md) objects passed to an application. An application starts receiving these device-motion objects as a result of calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28using,to,withhandler%29.md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) method, the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) method, or the [`startDeviceMotionUpdates()`](./cmmotionmanager/startdevicemotionupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 

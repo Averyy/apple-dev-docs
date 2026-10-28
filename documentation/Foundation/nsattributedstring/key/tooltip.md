@@ -15,7 +15,7 @@ The tooltip text.
 static let toolTip: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing the tooltip text. The default value is `nil`, indicating no tooltip is available.
 

@@ -15,7 +15,7 @@ Indicates whether the field of view (FoV) is valid.
 var isFieldOfViewValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `true` if the expected FoV meets requirements. Returns `false` if any portion of the FoV is invalid.
 

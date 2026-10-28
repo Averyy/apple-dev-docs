@@ -24,7 +24,7 @@ case stale
 
 - [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 Call [`update(subprogress:)`](../update%28subprogress%29.md) to assign them to entities.
 

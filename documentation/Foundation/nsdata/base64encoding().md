@@ -26,15 +26,15 @@ func base64Encoding() -> String
 - (NSString *) base64Encoding;
 ```
 
-#### Return Value
+## Return Value
 
 A Base-64 encoded string.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling [`base64EncodedString(options:)`](./base64encodedstring%28options%29.md) with no options specified.
 
-##### Special Considerations
+### Special Considerations
 
 Although this method was only introduced publicly for iOS 7, it has existed since iOS 4; you can use it if your application needs to target an operating system prior to iOS 7.
 

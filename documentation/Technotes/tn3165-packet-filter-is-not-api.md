@@ -5,7 +5,7 @@
 
 Plan your migration from Packet Filter to Network Extension.
 
-#### Overview
+## Overview
 
 macOS implements the BSD Packet Filter mechanism. This has two expected use cases:
 
@@ -14,7 +14,7 @@ macOS implements the BSD Packet Filter mechanism. This has two expected use case
 
 It is not considered API.  Do not use Packet Filter in a software product that you distribute to a wide audience.  If you’re currently shipping software that relies on Packet Filter, plan to migrate to [Network Extension](../NetworkExtension/NetworkExtension.md).
 
-#### Packet Filter fundamentals
+## Packet Filter fundamentals
 
 Packet Filter, oftened shorted to just PF or even pf, shows up in a number of places:
 
@@ -29,7 +29,7 @@ PF implements rule-based filtering.  These rules are manipulated by various syst
 - macOS system services, either now or in the future
 - Other third-party products
 
-#### Moving off packet filter
+## Moving off packet filter
 
 If you’re currently shipping a product based on PF, plan to migrate it to a supported API.  In most cases that means creating a [Network Extension](../NetworkExtension/NetworkExtension.md) provider:
 
@@ -43,7 +43,7 @@ For information about packaging and OS version constraints, see [TN3134: Network
 
 If your product needs to do something that’s not covered by one of these providers, use [Feedback Assistant](https://developer.apple.com/bug-reporting/) to let us know what’s missing.
 
-#### Test during the transition
+## Test during the transition
 
 It may take you some time to migrate from PF to Network Extension.  In the meantime, test your existing product to ensure that it’s compatible with various macOS system services.  Specifically, test with:
 
@@ -59,7 +59,7 @@ When testing with Xcode, check that you can build, run, and debug an app on your
 
 If you set up these tests with your existing product, you’ll be able to reuse them to validate the functionality of your Network Extension based product.
 
-#### Revision History
+## Revision History
 
 - **2024-02-27** First published.
 

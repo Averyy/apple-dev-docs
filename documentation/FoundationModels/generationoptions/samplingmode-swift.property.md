@@ -21,7 +21,7 @@ A sampling strategy for how the model picks tokens when generating a response.
 var samplingMode: GenerationOptions.SamplingMode? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you execute a prompt on a model, the model produces a probability for every token in its vocabulary. The sampling strategy controls how the model narrows down the list of tokens to consider during that process. A strategy that picks the single most likely token yields a predictable response every time, but other strategies offer results that often sound more natural to a person.
 

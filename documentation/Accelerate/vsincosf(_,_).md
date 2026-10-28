@@ -25,11 +25,11 @@ func vsincosf(_: vFloat, _: UnsafeMutablePointer<vFloat>) -> vFloat
 extern vFloat vsincosf(vFloat , vFloat *);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector that contains the result of `cos(x)` for each value (`x`) in the source vector.
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: the source vector.
 - **parameter 2**: the output vector.

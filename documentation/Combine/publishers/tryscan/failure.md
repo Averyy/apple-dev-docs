@@ -21,7 +21,7 @@ The kind of errors this publisher might publish.
 typealias Failure = Error
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces the Swift [`Error`](../../../Swift/error.md) type.
 

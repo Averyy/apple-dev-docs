@@ -21,7 +21,7 @@ var analysis: SCSensitivityAnalysis? { get }
 @property (readonly, nullable) SCSensitivityAnalysis * analysis;
 ```
 
-#### Discussion
+## Discussion
 
 The analysis also includes suggestions for the app based on the nature of the sensitive content, including: [`shouldInterruptVideo`](../scsensitivityanalysis/shouldinterruptvideo.md), [`shouldIndicateSensitivity`](../scsensitivityanalysis/shouldindicatesensitivity.md) and [`shouldMuteAudio`](../scsensitivityanalysis/shouldmuteaudio.md).
 

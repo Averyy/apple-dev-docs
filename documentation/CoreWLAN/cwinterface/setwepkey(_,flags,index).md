@@ -19,7 +19,7 @@ func setWEPKey(_ key: Data?, flags: CWCipherKeyFlags, index: Int) throws
 - (BOOL) setWEPKey:(NSData *) key flags:(CWCipherKeyFlags) flags index:(NSInteger) index error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 *key* must be 5 octets for WEP-40 or 13 octets for WEP-104. If *key* is *nil*, this method clears the WEP key for the interface. *index* must correspond to default key index 1-4.
 

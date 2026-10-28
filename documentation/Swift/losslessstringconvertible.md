@@ -21,7 +21,7 @@ A type that can be represented as a string in a lossless, unambiguous way.
 protocol LosslessStringConvertible : CustomStringConvertible
 ```
 
-#### Overview
+## Overview
 
 For example, the integer value 1050 can be represented in its entirety as the string “1050”.
 

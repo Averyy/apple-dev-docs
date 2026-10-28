@@ -20,7 +20,7 @@ A notification that posts when a controller becomes the current controller.
 static let GCControllerDidBecomeCurrent: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that’s current.
 

@@ -24,7 +24,7 @@ var confusion: MLDataTable { get }
 
 - [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
-#### Discussion
+## Discussion
 
 The confusion data table describes how examples were mislabeled between categories. Each row contains the true label, the predicted label, and the count for each possible combination of categories. For example, the table below lists that “business” was labeled correctly with “business” 113 times, while “business” was confused with “entertainment” 2 times.
 

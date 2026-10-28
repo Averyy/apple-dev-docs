@@ -21,7 +21,7 @@ Returns whether `other` is a prefix of `self`, only considering whole path compo
 func starts(with other: FilePath) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

@@ -22,7 +22,7 @@ init(type: String, localizedTitle: String, localizedSubtitle: String?, icon: UIA
 - (instancetype) initWithType:(NSString *) type localizedTitle:(NSString *) localizedTitle localizedSubtitle:(NSString *) localizedSubtitle icon:(UIApplicationShortcutIcon *) icon userInfo:(NSDictionary<NSString *,id<NSSecureCoding>> *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An immutable Home Screen dynamic quick action item with a user-visible title, optional subtitle, optional icon, and optional user info dictionary.
 

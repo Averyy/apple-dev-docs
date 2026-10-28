@@ -22,7 +22,7 @@ Displays a set of forum links in the resources section of a tutorial’s table o
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Forums` directive to add links to related forums in the Resources section at the bottom of your tutorial’s table of contents page.
 
@@ -67,7 +67,7 @@ A “View forums” link with additional specific forum links:
 
 You can include forum links alongside other types of resources, like [`Documentation`](./documentation.md),  [`Downloads`](./downloads.md), [`SampleCode`](./samplecode.md), and [`Videos`](./videos.md).
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain forum resources:
 

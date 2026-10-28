@@ -21,7 +21,7 @@ func flattened(_ array: MLXArray, start: Int = 0, end: Int = -1, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The axes flattened will be between `start` and `end`, inclusive. Negative axes are supported. After converting negative axis to positive, axes outside the valid range will be clamped to a valid value, `start` to `0` and `end` to `ndim - 1`.
 
@@ -37,7 +37,7 @@ let f1 = a.flattened()
 let f2 = a.flattened(start: 1)
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`flattened(start:end:stream:)`](./mlxarray/flattened%28start,end,stream%29.md)

@@ -24,7 +24,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 This method updates all the properties of all the objects with their corresponding values in the event store. Any local changes that aren’t saved before invoking this method are lost. All existing objects created or retrieved using this store are disassociated from it and are invalid.
 

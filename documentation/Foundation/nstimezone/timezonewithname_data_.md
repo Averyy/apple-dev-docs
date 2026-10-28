@@ -21,11 +21,11 @@ Returns the time zone with a given identifier whose data has been initialized us
 + (instancetype) timeZoneWithName:(NSString *) tzName data:(NSData *) aData;
 ```
 
-#### Return Value
+## Return Value
 
 The time zone with the ID `tzName`.
 
-#### Discussion
+## Discussion
 
 As of macOS 10.6, the underlying implementation of this method has been changed to ignore the specified `data` parameter.
 

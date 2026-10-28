@@ -19,7 +19,7 @@ func sendResponse(_ response: String!)
 - (void) sendResponse:(NSString *) response;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method has the same result as calling `sendResponse(response: response, withOK: true)`.
 

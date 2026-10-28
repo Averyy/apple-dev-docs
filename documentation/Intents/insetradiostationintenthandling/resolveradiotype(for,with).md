@@ -28,7 +28,7 @@ optional func resolveRadioType(for intent: INSetRadioStationIntent) async -> INR
 - (void) resolveRadioTypeForSetRadioStation:(INSetRadioStationIntent *) intent withCompletion:(void (^)(INRadioTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the type of radio in the car.
 

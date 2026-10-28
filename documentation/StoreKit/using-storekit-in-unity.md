@@ -5,13 +5,13 @@
 
 Provide in-app purchases in Unity-based games using C#.
 
-#### Overview
+## Overview
 
 Apple provides a StoreKit plug-in for Unity — an open source C# wrapper that gives Unity developers direct access to StoreKit, Apple’s framework for implementing in-app purchases. If your game is built in Unity, use this plug-in to add Apple In-App Purchases without writing platform-specific Swift or Objective-C code.
 
 The plug-in exposes the same APIs and the same full feature set available to native Apple developers, through idiomatic C# calls that fit naturally into a Unity project. It’s maintained by Apple, ships as source on GitHub, and includes a sample project demonstrating the core purchase flow.
 
-#### Understand the StoreKit plugin’s capabilities
+## Understand the StoreKit plugin’s capabilities
 
 - **[Product fetching](https://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#fetching-products)** — retrieve product metadata (price, display name, description) for your app’s in-app purchases and subscriptions.
 - **[Purchases](https://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#making-a-purchase)** — initiate a purchase and receive a verification result.
@@ -25,7 +25,7 @@ The plug-in exposes the same APIs and the same full feature set available to nat
 - **Advanced Commerce** — `AdvancedCommerceProduct` support for custom pricing and purchase options.
 - **Storefront and app lifecycle helpers** — `Storefront.GetCurrent`, `AppStore.Sync`, `AppStore.RequestReview`.
 
-#### Getting started
+## Getting started
 
 For installation, setup, and usage instructions, see the plug-in’s [README](https://github.com/apple/unityplugins/blob/main/README.md) in the GitHub repository — this article doesn’t duplicate that content.
 

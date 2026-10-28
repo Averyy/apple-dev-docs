@@ -15,7 +15,7 @@ The size of the portal window for immersive video playback, in meters.
 var portalSize: SIMD2<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control the dimensions of the portal window when [`desiredImmersiveViewingMode`](./desiredimmersiveviewingmode.md) is [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./immersiveviewingmode-swift.enum/portal.md). The first component specifies the width and the second component specifies the height, both in meters.
 

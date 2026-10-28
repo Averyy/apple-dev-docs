@@ -6,7 +6,7 @@
 
 A 64-bit rectangle that specifies an area to receive text (top, left, bottom, right).
 
-#### Overview
+## Overview
 
 Typically this field is set to all zeros.
 

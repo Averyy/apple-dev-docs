@@ -19,7 +19,7 @@ func endParagraph()
 - (void) endParagraph;
 ```
 
-#### Discussion
+## Discussion
 
 Concrete subclasses should invoke this method at the end of their [`layoutParagraph(at:)`](./layoutparagraph%28at%29.md) implementation.
 

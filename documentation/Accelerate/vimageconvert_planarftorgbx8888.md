@@ -21,11 +21,11 @@ Interleaves three 32-bit planar buffers into an 8-bit-per-channel, 4-channel int
 #define vImageConvert_PlanarFToRGBX8888(_red, _green, _blue, _alpha, _dest, _maxFloat, _minFloat, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

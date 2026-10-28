@@ -16,11 +16,11 @@ Creates a matching dictionary to find a USB device.
 + (CFMutableDictionaryRef) createMatchingDictionaryWithVendorID:(NSNumber *) vendorID productID:(NSNumber *) productID bcdDevice:(NSNumber *) bcdDevice deviceClass:(NSNumber *) deviceClass deviceSubclass:(NSNumber *) deviceSubclass deviceProtocol:(NSNumber *) deviceProtocol speed:(NSNumber *) speed productIDArray:(NSArray *) productIDArray;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary to pass to IOKit matching methods, such as [`IOServiceGetMatchingService(_:_:)`](../../iokit/api-1514535-ioservicegetmatchingservice.md). The caller must release this object when done.
 
-#### Discussion
+## Discussion
 
 The table below shows the keys you can use to make a successful matching dictionary. A plus sign (+) separates the keys to emphasize the requirement that all of the specified keys combine.
 

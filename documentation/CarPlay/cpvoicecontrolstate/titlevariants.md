@@ -21,7 +21,7 @@ var titleVariants: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * titleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a voice control state, arrange the titles from most to least preferred. The system displays the first title found in the array that best fits the available screen space. Also, localize each title for display to the user, and be sure to include at least one title in the array.
 

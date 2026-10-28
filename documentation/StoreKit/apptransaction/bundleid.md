@@ -21,7 +21,7 @@ The bundle identifier that the app transaction applies to.
 let bundleID: String
 ```
 
-#### Discussion
+## Discussion
 
 The [`bundleID`](./bundleid.md) is the bundle identifier string that you entered in Xcode. For more information, see [What is a bundle ID?](https://help.apple.com/xcode/mac/current/#/deve70ea917b)
 

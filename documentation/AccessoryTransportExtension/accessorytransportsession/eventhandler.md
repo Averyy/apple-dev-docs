@@ -15,7 +15,7 @@ A protocol that defines methods for handling transport session events.
 protocol EventHandler
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to respond to data events and session invalidation in your transport extension.
 

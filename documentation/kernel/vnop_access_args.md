@@ -16,7 +16,7 @@ struct vnop_access_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The close vnop gives a filesystem a chance to release state set up by a VNOP_OPEN(). VFS promises to send down exactly one VNOP_CLOSE() for each VNOP_OPEN().
 

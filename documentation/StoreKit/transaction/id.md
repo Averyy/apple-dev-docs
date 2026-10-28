@@ -21,7 +21,7 @@ The unique identifier for the transaction.
 let id: UInt64
 ```
 
-#### Discussion
+## Discussion
 
 Every transaction such as an Apple In-App Purchase, restore, or subscription renewal has a unique transaction identifier.
 

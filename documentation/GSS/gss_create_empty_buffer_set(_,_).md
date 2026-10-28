@@ -27,11 +27,11 @@ OM_uint32 gss_create_empty_buffer_set(OM_uint32 *minor_status, gss_buffer_set_t*
 
 - [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success, or [`GSS_S_FAILURE`](./gss_s_failure.md) otherwise. Inspect the `minor_status` parameter for additional information on failure.
 
-#### Discussion
+## Discussion
 
 This function allocates memory for the data structure that you use to manage an array of buffers, consisting of a length parameter and a pointer. It does not allocate memory for any actual buffers.
 

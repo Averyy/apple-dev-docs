@@ -19,11 +19,11 @@ func docFormat(from range: NSRange, documentAttributes dict: [NSAttributedString
 - (NSData *) docFormatFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a data object containing the attributed string as a Microsoft Word doc file.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

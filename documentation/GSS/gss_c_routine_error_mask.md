@@ -23,7 +23,7 @@ var GSS_C_ROUTINE_ERROR_MASK: UInt { get }
 #define GSS_C_ROUTINE_ERROR_MASK
 ```
 
-#### Discussion
+## Discussion
 
 Shift the mask to the left by [`GSS_C_ROUTINE_ERROR_OFFSET`](./gss_c_routine_error_offset.md) to put it in the correct position within the major status code to match the routine error field. The [`GSS_ROUTINE_ERROR`](./gss_routine_error.md) macro does this for you, before bitwise `AND`ing with its input.
 

@@ -26,7 +26,7 @@ func cancelRequest(withError error: any Error)
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 If the user cancels the request, use the [`ASExtensionError.Code.userCanceled`](../asextensionerror/code/usercanceled.md) error code in the `error`. If the request requires user interaction, use [`ASExtensionError.Code.userInteractionRequired`](../asextensionerror/code/userinteractionrequired.md) instead.
 

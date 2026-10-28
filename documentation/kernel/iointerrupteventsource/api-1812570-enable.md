@@ -11,7 +11,7 @@ Enable event source.
 virtual void enable();
 ```
 
-#### Overview
+## Overview
 
 A subclass implementation is expected to respect the enabled state when checkForWork is called. Calling this function will cause the work-loop to be signalled so that a checkForWork is performed.
 

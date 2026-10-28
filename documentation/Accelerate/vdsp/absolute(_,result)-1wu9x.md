@@ -21,7 +21,7 @@ Calculates the absolute value of each element in the supplied double-precision c
 static func absolute<V>(_ vector: DSPDoubleSplitComplex, result: inout V) where V : AccelerateMutableBuffer, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the square roots of the sum of the squares of the real and imaginary parts of each complex element.
 

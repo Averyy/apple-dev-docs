@@ -15,11 +15,11 @@ Registers a debugger.
 OSStatus MPRegisterDebugger(MPQueueID queue, MPDebuggerLevel level);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 In macOS, this function is available but is not implemented. Use system debugging services to write a debugger for macOS.
 

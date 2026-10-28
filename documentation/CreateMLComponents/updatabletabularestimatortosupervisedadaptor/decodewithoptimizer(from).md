@@ -21,7 +21,7 @@ Reads the encoded transformer and optimizer.
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> UpdatableTabularEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

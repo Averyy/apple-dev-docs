@@ -23,7 +23,7 @@ func setItems(_ items: [UINavigationItem]?, animated: Bool)
 - (void) setItems:(NSArray<UINavigationItem *> *) items animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to update or replace the navigation items in the stack without pushing or popping each item explicitly. In addition, this method lets you update the stack without animating the changes, which might be appropriate at launch time when you want to restore the state of the navigation stack to some previous state.
 

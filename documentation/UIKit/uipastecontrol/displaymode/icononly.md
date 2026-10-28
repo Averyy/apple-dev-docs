@@ -22,7 +22,7 @@ case iconOnly
 UIPasteControlDisplayModeIconOnly
 ```
 
-#### Discussion
+## Discussion
 
 The icon looks like a sheet of paper above a clipboard. The value you set for [`baseForegroundColor`](../configuration-swift.class/baseforegroundcolor.md) colors the icon.
 

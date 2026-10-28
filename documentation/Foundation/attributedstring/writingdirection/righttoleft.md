@@ -21,7 +21,7 @@ A right-to-left writing direction in horizontal script.
 case rightToLeft
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: In vertical scripts, this equivalent to a bottom-to-top writing direction.
 

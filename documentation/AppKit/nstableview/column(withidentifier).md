@@ -19,7 +19,7 @@ func column(withIdentifier identifier: NSUserInterfaceItemIdentifier) -> Int
 - (NSInteger) columnWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The index in the [`tableColumns`](./tablecolumns.md) array of the first column in the table view whose identifier is equal to `anObject` (when compared using `isEqual:`), or `–1` if no columns are found with the specified identifier.
 

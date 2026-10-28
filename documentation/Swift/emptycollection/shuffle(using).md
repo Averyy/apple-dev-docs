@@ -23,7 +23,7 @@ mutating func shuffle<T>(using generator: inout T) where T : RandomNumberGenerat
 
 Available when `Self` conforms to `RandomAccessCollection`.
 
-#### Discussion
+## Discussion
 
 You use this method to randomize the elements of a collection when you are using a custom random number generator. For example, you can use the `shuffle(using:)` method to randomly reorder the elements of an array.
 

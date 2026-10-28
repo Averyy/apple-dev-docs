@@ -28,7 +28,7 @@ class UIDocument
 - [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 Apps that make use of [`UIDocument`](./uidocument.md) and its underlying architecture get many benefits for their documents:
 
@@ -58,7 +58,7 @@ The following outlines the life cycle of a typical document:
 
 A typical document-based app calls [`open(completionHandler:)`](./uidocument/open%28completionhandler%29.md), [`close(completionHandler:)`](./uidocument/close%28completionhandler%29.md), and [`save(to:for:completionHandler:)`](./uidocument/save%28to,for,completionhandler%29.md) on the main thread. When the read or save operation kicked off by these methods concludes, the system executes the completion-handler block on the same dispatch queue as the system used to invoke the method, allowing you to complete any tasks contingent on the read or save operation. If the operation isn’t successful, the system passes [`false`](../Swift/false.md) to the completion-handler block.
 
-##### Implement the NSFilePresenter protocol
+### Implement the NSFilePresenter protocol
 
 The [`UIDocument`](./uidocument.md) class adopts the [`NSFilePresenter`](../Foundation/nsfilepresenter.md) protocol. When another client attempts to read the document of a [`UIDocument`](./uidocument.md)-based app, the system suspends reading until the system provides the [`UIDocument`](./uidocument.md) object an opportunity to save any changes made to the document.
 
@@ -70,7 +70,7 @@ Although some implementations do nothing, [`UIDocument`](./uidocument.md) implem
 
 In your [`UIDocument`](./uidocument.md) subclass, if you override a [`NSFilePresenter`](../Foundation/nsfilepresenter.md) method, you can always invoke the superclass implementation (`super`).
 
-##### Create a subclass
+### Create a subclass
 
 Each document-based app must create a subclass of [`UIDocument`](./uidocument.md) whose instances represent its documents. The subclassing requirements for most apps are simple:
 
@@ -85,7 +85,7 @@ Each document-based app must create a subclass of [`UIDocument`](./uidocument.md
 
 If you have special requirements for reading and writing document data for which the [`contents(forType:)`](./uidocument/contents%28fortype%29.md) and [`load(fromContents:ofType:)`](./uidocument/load%28fromcontents,oftype%29.md) methods won’t suffice, you can override other methods of the [`UIDocument`](./uidocument.md) class. See [Override input and output methods](./uidocument.md#Override-input-and-output-methods) for a discussion of these requirements and methods.
 
-###### Track changes
+#### Track changes
 
 To enable the autosaving feature of [`UIDocument`](./uidocument.md), you must notify it when users make changes to a document. [`UIDocument`](./uidocument.md) periodically checks whether the [`hasUnsavedChanges`](./uidocument/hasunsavedchanges.md) method returns [`true`](../Swift/true.md); if it does, it initiates the save operation for the document.
 
@@ -94,7 +94,7 @@ There are two primary ways to implement change tracking in your [`UIDocument`](.
 - Call the methods of the [`UndoManager`](../Foundation/undomanager.md) class to implement undo and redo for the document. You can access the default [`UndoManager`](../Foundation/undomanager.md) object from the [`undoManager`](./uidocument/undomanager.md) property. This is the preferred approach, especially for existing apps that already support undo and redo.
 - Call the [`updateChangeCount(_:)`](./uidocument/updatechangecount%28_%29.md) method at the appropriate junctures in your code.
 
-###### Resolve conflicts and handle errors
+#### Resolve conflicts and handle errors
 
 A [`UIDocument`](./uidocument.md) object has a specific state at any moment in its life cycle. You can check the current state by querying the [`documentState`](./uidocument/documentstate.md) property, and get notified about changes by observing the [`stateChangedNotification`](./uidocument/statechangednotification.md) notification.
 
@@ -110,7 +110,7 @@ You can handle errors by calling or implementing the [`handleError(_:userInterac
 
 Be sure to read the description for the [`contents(forType:)`](./uidocument/contents%28fortype%29.md) method for its guidance on handling errors encountered during document saving.
 
-###### Override input and output methods
+#### Override input and output methods
 
 If you app has special requirements for reading or writing document data, it can override methods of [`UIDocument`](./uidocument.md) other than [`load(fromContents:ofType:)`](./uidocument/load%28fromcontents,oftype%29.md) and [`contents(forType:)`](./uidocument/contents%28fortype%29.md). These requirements often include the following:
 
@@ -132,11 +132,11 @@ If you app has special requirements for reading or writing document data, it can
 
 If you override these methods, be aware that all reading and writing of document data must be done on a background queue and must be coordinated with other attempts to read from and write to the same document file. Because of this, you usually call the superclass implementation (`super`) as part of your override, and if you call other `UIDocument` methods, you usually invoke them in the block passed into a call of the [`performAsynchronousFileAccess(_:)`](./uidocument/performasynchronousfileaccess%28_%29.md) method. Read the method descriptions for details.
 
-###### Access document attributes
+#### Access document attributes
 
 If you override any of the document-attribute properties (listed under [Accessing document attributes](./uidocument.md#Accessing-document-attributes)) by overriding the related accessor methods, be aware that the UIKit framework can call these accessor methods on a background thread. Thus your overriding implementation must be thread safe.
 
-##### Rename documents
+### Rename documents
 
 `UIDocument` provides support for changing the document’s title. Security considerations require that clients can’t programmatically rename a file on the file system, and that the system confirms that a person intends to rename their file. To satisfy these restrictions, the system, instead of your app, presents a renaming user interface using a process outside your app. The external process renames the underlying file and reports the new location back to the client.
 

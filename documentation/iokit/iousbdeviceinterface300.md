@@ -18,7 +18,7 @@ typedef struct IOUSBDeviceStruct300 {
 } IOUSBDeviceInterface300;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here include all of the functions defined for the IOUSBDeviceInterface, IOUSBDeviceInterface182, IOUSBDeviceInterface187, IOUSBDeviceInterface197, IOUSBDeviceInterface245, and some new functions that are available in macOS 10.5 and later.
 

@@ -25,11 +25,11 @@ init(intent: INIntent, response: INIntentResponse?)
 - (instancetype) initWithIntent:(INIntent *) intent response:(INIntentResponse *) response;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized interaction object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize interaction objects that you intend to donate. You do not need to create interaction objects for any custom [`NSUserActivity`](../../Foundation/nsuseractivity.md) objects that you create during the handling of an intent. SiriKit automatically creates an instance of this class before delivering an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object to your app.
 

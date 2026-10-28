@@ -20,7 +20,7 @@ A Boolean value that indicates whether the asset is compatible with AirPlay Vide
 var isCompatibleWithAirPlayVideo: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can play this composition’s content to an external AirPlay device, like an Apple TV.
 

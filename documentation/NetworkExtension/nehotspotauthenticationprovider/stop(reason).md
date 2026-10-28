@@ -19,7 +19,7 @@ Tells the exension to stop the authentication provider, in response to a request
 func stop(reason: NEProviderStopReason) async
 ```
 
-#### Discussion
+## Discussion
 
 Perform any needed shutdown tasks in your implementation of this method. After stopping, the provider receives no further commands from the framework.
 

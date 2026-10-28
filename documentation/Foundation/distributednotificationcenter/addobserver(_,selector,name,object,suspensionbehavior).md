@@ -20,7 +20,7 @@ func addObserver(_ observer: Any, selector: Selector, name: NSNotification.Name?
 - (void) addObserver:(id) observer selector:(SEL) selector name:(NSNotificationName) name object:(NSString *) object suspensionBehavior:(NSNotificationSuspensionBehavior) suspensionBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver does not retain `notificationObserver`. Therefore, you should always send `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](./removeobserver%28_,name,object%29.md) to the receiver before releasing `notificationObserver`.
 

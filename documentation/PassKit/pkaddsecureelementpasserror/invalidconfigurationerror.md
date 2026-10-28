@@ -20,7 +20,7 @@ An error that occurs when they system attempts to add a Secure Element pass usin
 static var invalidConfigurationError: PKAddSecureElementPassError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Before you attempt to add a Secure Element pass, validate its configuration using the [`canAddSecureElementPass(configuration:)`](../pkaddsecureelementpassviewcontroller/canaddsecureelementpass%28configuration%29.md) method.
 

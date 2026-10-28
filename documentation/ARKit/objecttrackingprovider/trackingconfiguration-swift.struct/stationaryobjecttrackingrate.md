@@ -17,7 +17,7 @@ The frequency at which object tracking runs for stationary objects, in Hz.
 var stationaryObjectTrackingRate: Float
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps this to between `0` and `30` Hz.
 

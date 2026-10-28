@@ -24,11 +24,11 @@ class func median() -> any CIFilter & CIMedian
 + (CIFilter<CIMedian> *) medianFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the median filter to an image. The effect computes the median value of colors for a group of neighboring pixels and replaces each pixel with calculated data.
 

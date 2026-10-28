@@ -15,7 +15,7 @@ Returns the printable name of the download ticket.
 OSStatus SecureDownloadCopyName(SecureDownloadRef downloadRef, CFStringRef*name);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

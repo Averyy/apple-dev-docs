@@ -18,7 +18,7 @@ var kDADiskDescriptionMatchMediaUnformatted: Unmanaged<CFDictionary>
 extern CFDictionaryRef kDADiskDescriptionMatchMediaUnformatted;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFDictionary object containing a set of disk description keys and values appropriate for matching unformatted media using DARegister*Callback().
 

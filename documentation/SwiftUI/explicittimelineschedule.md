@@ -21,7 +21,7 @@ A schedule for updating a timeline view at explicit points in time.
 struct ExplicitTimelineSchedule<Entries> where Entries : Sequence, Entries.Element == Date
 ```
 
-#### Overview
+## Overview
 
 You can also use [`explicit(_:)`](./timelineschedule/explicit%28_%29.md) to construct this schedule.
 

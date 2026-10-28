@@ -23,7 +23,7 @@ var addressBook: ABAddressBook? { get set }
 @property (nonatomic, readwrite, nullable) ABAddressBookRef addressBook;
 ```
 
-#### Discussion
+## Discussion
 
 When unset, an address book is created and assigned to this property when needed.
 

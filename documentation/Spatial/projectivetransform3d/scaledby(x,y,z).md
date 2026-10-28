@@ -21,7 +21,7 @@ Returns a transform that results from scaling with the specified double-precisio
 func scaledBy(x: Double, y: Double, z: Double) -> ProjectiveTransform3D
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from scaling with the specified double-precision values.
 

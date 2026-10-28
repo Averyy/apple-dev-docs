@@ -24,7 +24,7 @@ let entityID: FaceGroupAnalyzer.Entity.ID?
 
 - [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` until you call [`update(subprogress:)`](../update%28subprogress%29.md). After clustering runs, every face receives an entity identifier that groups it with other faces of the same person.
 

@@ -15,11 +15,11 @@ Rotates content in two dimensions around the specified point.
 func rotationEffect(_ angle: Angle, anchor: UnitPoint = .center) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 A rotation effect.
 
-#### Discussion
+## Discussion
 
 This effect rotates the content around the axis that points out of the xy-plane. It has no effect on the content’s frame.
 

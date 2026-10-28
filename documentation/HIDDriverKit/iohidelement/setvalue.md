@@ -16,7 +16,7 @@ Sets the value of the element.
 virtual void setValue(uint32_t value);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the value of the element. The value will not be propagated to the device until the commit() function is called.
 

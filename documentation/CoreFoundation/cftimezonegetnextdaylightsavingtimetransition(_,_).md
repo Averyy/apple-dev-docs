@@ -25,7 +25,7 @@ func CFTimeZoneGetNextDaylightSavingTimeTransition(_ tz: CFTimeZone!, _ at: CFAb
 extern CFAbsoluteTime CFTimeZoneGetNextDaylightSavingTimeTransition(CFTimeZoneRef tz, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 The time in `tz` of the next daylight saving time transition after `at`.
 

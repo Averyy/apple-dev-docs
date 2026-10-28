@@ -24,7 +24,7 @@ static let appleExerciseTime: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleExerciseTime;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity type measures every full minute of movement that equals or exceeds the intensity of a brisk walk.
 

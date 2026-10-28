@@ -20,7 +20,7 @@ An array of custom content objects that deliver accessibility information.
 var customContent: [AccessibilityComponent.CustomContent]
 ```
 
-#### Discussion
+## Discussion
 
 Use the Custom Content API to leverage assistive technologies to deliver complex data sets to users in measured portions when they need it.
 

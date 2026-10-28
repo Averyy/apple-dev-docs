@@ -28,7 +28,7 @@ func recalibrateEstimates(sampleType: HKSampleType, date: Date) async throws
 - (void) recalibrateEstimatesForSampleType:(HKSampleType *) sampleType atDate:(NSDate *) date completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can use this method to recalibrate HealthKitʼs prediction algorithms after an event that may significantly affect their results. For example, you can recalibrate the [`sixMinuteWalkTestDistance`](../hkquantitytypeidentifier/sixminutewalktestdistance.md) type to use only data collected after a mobility-impacting health event, such as surgery or an injury. Recalibrating [`sixMinuteWalkTestDistance`](../hkquantitytypeidentifier/sixminutewalktestdistance.md) after such an event may yield more accurate estimates during the recovery period.
 

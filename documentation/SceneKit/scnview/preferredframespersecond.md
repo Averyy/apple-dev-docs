@@ -25,7 +25,7 @@ var preferredFramesPerSecond: Int { get set }
 @property (nonatomic) NSInteger preferredFramesPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit chooses an actual frame rate that is as close as possible to your preferred frame rate based on the capabilities of the screen the view is displayed on. The actual frame rate is usually a factor of the maximum refresh rate of the screen to provide a consistent frame rate. For example, if the maximum refresh rate of the screen is `60` frames per second, that is also the highest frame rate the view sets as the actual frame rate. However, if you ask for a lower frame rate, SceneKit might choose `30`, `20`, `15` or some other factor to be the actual frame rate. For this reason, you want to choose a frame rate that your app can consistently maintain.
 

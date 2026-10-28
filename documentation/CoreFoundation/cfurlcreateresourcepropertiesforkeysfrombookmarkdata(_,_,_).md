@@ -25,11 +25,11 @@ func CFURLCreateResourcePropertiesForKeysFromBookmarkData(_ allocator: CFAllocat
 extern CFDictionaryRefCFURLCreateResourcePropertiesForKeysFromBookmarkData(CFAllocatorRef allocator, CFArrayRef resourcePropertiesToReturn, CFDataRef bookmark);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the requested resource values contained in `bookmarkData`.
 
-#### Discussion
+## Discussion
 
 This function does not attempt to resolve the bookmark data or perform I/O.
 

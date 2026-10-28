@@ -15,7 +15,7 @@ Determines whether this pasteboard item matches the specified patterns, reading 
 - (void) detectValuesForPatterns:(NSSet<NSString *> *) patterns completionHandler:(void (^)(NSDictionary<NSString *,id> *detectedValues, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For details about the types returned for each pattern, see [`NSPasteboardDetectionPattern`](../nspasteboarddetectionpattern.md).
 

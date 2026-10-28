@@ -21,7 +21,7 @@ Constants for the document type document attribute key.
 struct DocumentType
 ```
 
-#### Overview
+## Overview
 
 Use these constants as values for the [`documentType`](./documentattributekey/documenttype.md) key in the document attributes dictionary.
 

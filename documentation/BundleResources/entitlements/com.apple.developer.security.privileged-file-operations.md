@@ -14,7 +14,7 @@ An entitlement that permits apps to create symbolic links, replace files, and se
 - **Name**: `com.apple.developer.security.privileged-file-operations`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app before you call [`requestAuthorization(to:completionHandler:)`](../../AppKit/nsworkspace/requestauthorization%28to,completionhandler%29.md) to request permission to perform privileged file operations. If someone grants your app permission, pass the authorization you receive to [`init(authorization:)`](../../Foundation/filemanager/init%28authorization%29.md) and use the [`FileManager`](../../Foundation/filemanager.md) you create to perform the operation.
 

@@ -21,7 +21,7 @@ Derives a symmetric encryption key from the secret using HKDF key derivation.
 func hkdfDerivedSymmetricKey<H, Salt, SI>(using hashFunction: H.Type, salt: Salt, sharedInfo: SI, outputByteCount: Int) -> SymmetricKey where H : HashFunction, Salt : DataProtocol, SI : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The derived symmetric key.
 

@@ -24,7 +24,7 @@ class MatterAddDeviceExtensionRequestHandler
 
 - [Adding Matter support to your ecosystem](./adding-matter-support-to-your-ecosystem.md)
 
-#### Overview
+## Overview
 
 This class facilitates the user interface flow during the setup of a new Matter device. Subclass this class and override its methods, except for `beginRequest(with:)`. The principal class for the app’s extension declared by the [`NSPrincipalClass`](../BundleResources/information-property-list/nsprincipalclass.md) in the extension plist must inherit from this base class.
 

@@ -21,11 +21,11 @@ Creates an exact copy of an object.
 extern idNSCopyObject(id object, NSUInteger extraBytes, NSZone *zone);
 ```
 
-#### Return Value
+## Return Value
 
 A new object that’s an exact copy of `anObject`, or `nil` if `object` is `nil` or if `object` could not be copied.
 
-#### Discussion
+## Discussion
 
 This function is deprecated and unavailable for use with ARC. To create a copy of an object, use the [`copyWithZone:`](../ObjectiveC/nsobject-swift.class/copywithzone_.md) method instead.
 

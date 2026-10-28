@@ -25,11 +25,11 @@ func object(with objectID: NSManagedObjectID) -> NSManagedObject
 - (NSManagedObject *) objectWithID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 The identified object, if its known to the context; otherwise, a fault with its [`objectID`](../nsmanagedobject/objectid.md) property set to `objectID`.
 
-#### Discussion
+## Discussion
 
 If the context doesn’t recognize the specified object, this method returns a *fault* — a placeholder object that doesn’t load its properties until your code accesses them. The context then fetches the corresponding values from the persistent store and uses those values to turn the fault into a fully realized object.
 

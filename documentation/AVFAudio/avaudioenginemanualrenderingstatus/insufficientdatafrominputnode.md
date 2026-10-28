@@ -25,7 +25,7 @@ case insufficientDataFromInputNode
 AVAudioEngineManualRenderingStatusInsufficientDataFromInputNode
 ```
 
-#### Discussion
+## Discussion
 
 This status only applies to the input node when it provides input data for rendering. The output buffer may contain rendered data from other active sources in the engine’s processing graph. See [`setManualRenderingInputPCMFormat(_:inputBlock:)`](../avaudioinputnode/setmanualrenderinginputpcmformat%28_,inputblock%29.md).
 

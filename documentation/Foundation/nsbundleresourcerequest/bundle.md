@@ -26,7 +26,7 @@ var bundle: Bundle { get }
 @property (strong, readonly) NSBundle * bundle;
 ```
 
-#### Discussion
+## Discussion
 
 This value is either the main bundle or the one specified in the call to [`init(tags:bundle:)`](./init%28tags,bundle%29.md). It is valid as soon as the [`NSBundleResourceRequest`](../nsbundleresourcerequest.md) object is created.
 

@@ -22,7 +22,7 @@ A shape style that fills a shape by repeating a region of an image.
 struct ImagePaint
 ```
 
-#### Overview
+## Overview
 
 You can also use [`image(_:sourceRect:scale:)`](./shapestyle/image%28_,sourcerect,scale%29.md) to construct this style.
 

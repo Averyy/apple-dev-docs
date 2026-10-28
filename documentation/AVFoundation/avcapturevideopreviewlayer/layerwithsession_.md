@@ -19,7 +19,7 @@ Returns a new layer to preview the visual output of a capture session.
 + (instancetype) layerWithSession:(AVCaptureSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 A preview layer.
 

@@ -25,7 +25,7 @@ static var readWrite: FileDescriptor.AccessMode { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `O_RDWR`.
 

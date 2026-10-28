@@ -28,7 +28,7 @@ func download(_ download: WKDownload, decideDestinationUsing response: URLRespon
 - (void) download:(WKDownload *) download decideDestinationUsingResponse:(NSURLResponse *) response suggestedFilename:(NSString *) suggestedFilename completionHandler:(void (^)(NSURL *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The suggested filename can come from the response or from the web content.
 

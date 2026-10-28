@@ -16,7 +16,7 @@ Set the render quality to be used by the drawables.
 void cp_layer_renderer_set_render_quality(cp_layer_renderer_t layer_renderer, cp_render_quality_t render_quality);
 ```
 
-#### Discussion
+## Discussion
 
 The render quality will increase the resolution at which rendering happens. This value cannot exceed the quality specified on the layer renderer configuration see [`cp_layer_renderer_configuration_set_max_render_quality`](./cp_layer_renderer_configuration_set_max_render_quality.md). The quality will be changed to the target render quality over a set duration to hide the transition of quality from the user.
 

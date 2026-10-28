@@ -24,7 +24,7 @@ var activeGroupPreset: PHASEGroupPreset? { get }
 @property (nonatomic, strong, readonly, nullable) PHASEGroupPreset * activeGroupPreset;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the most recent group preset on which the app calls [`activate()`](../phasegrouppreset/activate%28%29.md). Group presets map a collection of sounds in a group to settings the app applies in a specific context. For more information, see [`PHASEGroupPreset`](../phasegrouppreset.md).
 

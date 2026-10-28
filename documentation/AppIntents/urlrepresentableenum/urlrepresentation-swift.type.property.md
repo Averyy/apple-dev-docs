@@ -22,7 +22,7 @@ The URL representation of the app enum.
 static var urlRepresentation: Self.URLRepresentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store the URL for your custom app enum. When setting the value of this property, you can use a combination of static text and placeholder values to generate the final URL. For example, you might include the raw value of the enum in the URL, as shown in the following example:
 

@@ -20,7 +20,7 @@ var ES_NEW_CLIENT_RESULT_ERR_NOT_PERMITTED: es_new_client_result_t { get }
 ES_NEW_CLIENT_RESULT_ERR_NOT_PERMITTED
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates the app lacks Transparency, Consent, and Control (TCC) approval from the user.
 

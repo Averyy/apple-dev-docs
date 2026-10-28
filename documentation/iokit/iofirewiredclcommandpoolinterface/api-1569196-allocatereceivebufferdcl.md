@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateReceiveBufferDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, void *inBuffer, IOByteCount inSize, IOByteCount inPacketSize, UInt32 inBufferOffset);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

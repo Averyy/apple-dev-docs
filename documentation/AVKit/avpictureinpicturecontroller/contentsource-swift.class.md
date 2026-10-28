@@ -28,7 +28,7 @@ class ContentSource
 
 - [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 
-#### Overview
+## Overview
 
 The system supports displaying content from an [`AVPlayerLayer`](../../AVFoundation/avplayerlayer.md) or [`AVSampleBufferDisplayLayer`](../../AVFoundation/avsamplebufferdisplaylayer.md) in a Picture in Picture window. Use an instance of this class to describe the source of your app’s content.
 

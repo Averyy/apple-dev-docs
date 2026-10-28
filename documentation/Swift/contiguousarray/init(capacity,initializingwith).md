@@ -21,7 +21,7 @@ Creates an array with the specified capacity, and then calls the given closure w
 init<E>(capacity: Int, initializingWith initializer: @_lifetime(span: copy span) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 Inside the closure, initialize elements by appending to the `OutputSpan`. The `OutputSpan` keeps track of memory’s initialization state, ensuring safety. Its `count` at the end of the closure will become the `count` of the newly-initialized array.
 

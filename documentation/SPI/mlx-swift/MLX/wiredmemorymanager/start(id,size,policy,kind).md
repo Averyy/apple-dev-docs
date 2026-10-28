@@ -17,7 +17,7 @@ Main entry point for ticket admission.
 func start(id: UUID, size: Int, policy: any WiredMemoryPolicy, kind: WiredMemoryTicketKind) async -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Flow:
 

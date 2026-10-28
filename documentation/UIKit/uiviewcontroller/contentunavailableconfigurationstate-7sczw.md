@@ -20,7 +20,7 @@ The current configuration state of the content-unavailable view.
 @objc(_bridgedContentUnavailableConfigurationState) @preconcurrency dynamic var contentUnavailableConfigurationState: UIContentUnavailableConfigurationState { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can customize the configuration state by overriding this property in your subclass. Obtain the system instance from the superclass, and customize the state as appropriate.
 

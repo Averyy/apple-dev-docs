@@ -22,7 +22,7 @@ case greaterThan
 kJSRelationConditionGreaterThan
 ```
 
-#### Discussion
+## Discussion
 
 A constant identifying the type of JavaScript relation condition.
 

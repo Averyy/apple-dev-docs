@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSShadow` object initialized with `0` as its offset, `0` as its blur radius, and the default color as its color. The returned object may be different from the original receiver.
 

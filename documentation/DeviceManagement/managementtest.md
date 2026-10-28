@@ -21,11 +21,11 @@ The declaration to configure a declarative device management test.
 object ManagementTest
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.management.test` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ Specify `com.apple.configuration.management.test` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration tests the management framework with a custom status result.
 

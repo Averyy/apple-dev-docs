@@ -31,7 +31,7 @@ class var shared: INUpcomingMediaManager { get }
 @property (class, atomic, readonly) INUpcomingMediaManager * sharedManager;
 ```
 
-#### Discussion
+## Discussion
 
 Always use the shared upcoming media manager instead of creating an instance of [`INUpcomingMediaManager`](../inupcomingmediamanager.md) with an initializer method.
 

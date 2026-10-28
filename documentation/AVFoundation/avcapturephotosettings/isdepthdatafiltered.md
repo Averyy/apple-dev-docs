@@ -22,7 +22,7 @@ var isDepthDataFiltered: Bool { get set }
 @property (nonatomic, getter=isDepthDataFiltered) BOOL depthDataFiltered;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) (the default), and depth data capture is enabled with the [`isDepthDataDeliveryEnabled`](./isdepthdatadeliveryenabled.md) property, the capture system smooths noise and fills in missing values (caused by low light or lens occlusion) in depth data maps by temporally interpolating between previous and subsequent frames of captured depth data.
 

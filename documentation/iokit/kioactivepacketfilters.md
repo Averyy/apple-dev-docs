@@ -16,7 +16,7 @@ A property of IOEthernetInterface objects.
 #define kIOActivePacketFilters
 ```
 
-#### Discussion
+## Discussion
 
 The kIOActivePacketFilters property has an OSDictionary value that describes the current set of packet filters that have been successfully activated. Each entry in the dictionary is a key/value pair consisting of the filter group name, and an OSNumber describing the set of active filters for that group. Entries in this dictionary will mirror those in kIORequiredPacketFilters if the controller has reported success for all filter change requests from the IOEthernetInterface object.
 

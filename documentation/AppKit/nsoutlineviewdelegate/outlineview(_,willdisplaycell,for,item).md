@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, willDisplayCell cell: An
 - (void) outlineView:(NSOutlineView *) outlineView willDisplayCell:(id) cell forTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to modify `cell` to provide further setup for the `cell` in `tableColumn` and `item`. It is not safe to do drawing inside this method—you should only set up state for `cell`.
 

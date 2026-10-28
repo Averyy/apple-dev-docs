@@ -18,11 +18,11 @@ A card that displays a large background image.
 class OCKFeaturedContentView
 ```
 
-#### Overview
+## Overview
 
 The whole view is tappable.
 
-### Style
+## Style
 
 The card supports styling using `careKitStyle(_:)`.
 

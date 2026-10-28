@@ -19,7 +19,7 @@ var incrementalMatchRanges: [NSValue] { get }
 @property (copy, readonly) NSArray<NSValue *> * incrementalMatchRanges;
 ```
 
-#### Discussion
+## Discussion
 
 This array is updated periodically on the main queue as the incremental search operation on a background queue finds matches. You can use this property when incrementalSearchingShouldDimContentView is [`false`](../../Swift/false.md) to know where to draw highlights for incremental matches.
 

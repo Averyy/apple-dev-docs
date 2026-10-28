@@ -17,7 +17,7 @@ Key for the remainder of the HTTP status line following the status code, returne
 extern NSString * const NSHTTPPropertyStatusReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 This string usually contains an explanation of the error in English. Because this string is taken straight from the server response, it’s not localized.
 

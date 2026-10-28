@@ -15,7 +15,7 @@ A Boolean value that indicates whether an app can update its Live Activities fre
 - **Name**: `NSSupportsLiveActivitiesFrequentUpdates` (Supports Live Activities Frequent Updates)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `true` to enable your Live Activities to receive frequent updates with remote push notifications. For more information, see `Updating and ending your Live Activity with ActivityKit push notifications`.
 

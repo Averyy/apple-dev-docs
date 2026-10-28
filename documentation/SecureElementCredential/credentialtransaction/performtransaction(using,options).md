@@ -20,7 +20,7 @@ func performTransaction(using credential: Credential, options: CardEmulationOpti
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 If this call succeeds, the session state trasitions to [`CredentialSession.State.cardEmulation(credential:)`](../credentialsession/state-swift.enum/cardemulation%28credential%29.md).
 

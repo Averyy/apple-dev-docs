@@ -14,11 +14,11 @@
 extern OSStatus AudioHardwareAddRunLoopSource(CFRunLoopSourceRef inRunLoopSource);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Add the given CFRunLoopSource to the the HAL’s notification CFRunLoop.
 

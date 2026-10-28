@@ -25,7 +25,7 @@ protocol SCNSceneRenderer : NSObjectProtocol
 @protocol SCNSceneRenderer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use an instance of one of these classes to display a scene and manage SceneKit’s rendering and animation of the scene’s contents.
 

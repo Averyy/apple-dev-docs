@@ -23,7 +23,7 @@ var timestamp: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The [`timestamp`](./timestamp.md) is the number of seconds between the beginning of the audio content and when the user spoke the word represented by the segment. For example, if the user said the word “time” one second into the transcription “What time is it”, the timestamp would be equal to `1.0`.
 

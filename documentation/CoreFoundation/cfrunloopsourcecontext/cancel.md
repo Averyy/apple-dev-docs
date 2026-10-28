@@ -23,7 +23,7 @@ var cancel: ((UnsafeMutableRawPointer?, CFRunLoop?, CFRunLoopMode?) -> Void)!
 void (*)(void *, struct __CFRunLoop *, const struct __CFString *) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 A cancel callback for the run loop source. This callback is called when the source is removed from a run loop mode. Can be `NULL`.
 

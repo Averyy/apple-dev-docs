@@ -22,7 +22,7 @@ class ILNetworkResponse
 @interface ILNetworkResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 To preserve user privacy, a Message Filter app extension can’t contact the server itself. Instead, it tells the system to contact the server and pass back the server’s response.
 

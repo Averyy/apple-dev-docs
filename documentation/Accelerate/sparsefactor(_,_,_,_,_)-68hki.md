@@ -25,11 +25,11 @@ func SparseFactor(_ symbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix:
 static SparseOpaqueFactorization_Double SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Double Matrix, SparseNumericFactorOptions nfoptions, void *factorStorage, void *workspace);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaqueFactorization_Double`](./sparseopaquefactorization_double.md) structure that represents the matrix factorization.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a symbolic factorization that [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-3697o.md) creates.
 

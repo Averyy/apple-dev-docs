@@ -5,11 +5,11 @@
 
 Understand how ClassKit interacts with different kinds of users.
 
-#### Overview
+## Overview
 
 When you adopt ClassKit, you enable your app to participate in an educational ecosystem where teachers create assignments and students report progress. Users of your app can choose to participate in this ecosystem by signing in to a device running your app with a Managed Apple ID. This is a special Apple ID provided to the user by a school enrolled in [Apple School Manager](https://www.apple.com/education/it/). It identifies its owner as either a student or a teacher. Other users of your app, using a standard Apple ID, don’t participate in this ecosystem at all. This creates three distinct classes of users that your app deals with: students, teachers, and unmanaged users. ClassKit modulates its behavior according to the current user’s role.
 
-##### ClassKit doesn’t share the user’s role with your app
+### ClassKit doesn’t share the user’s role with your app
 
 Some of the data you provide to ClassKit is specific to the user’s role. For example, only teachers need to store a complete enumeration of all possible assignments (so they can assign them from the Schoolwork app), whereas only students need to record progress as they move through assignments. Users without a Managed Apple ID don’t need to record any data at all.
 
@@ -19,7 +19,7 @@ For example, your implementation should always report progress through every uni
 
 > **Note**:  For more information about handling privacy in your app, see [Privacy Requirements for Apps Using ClassKit](https://developer.apple.com/classkit/).
 
-##### ClassKit alerts students that their progress is measured
+### ClassKit alerts students that their progress is measured
 
 When a student runs your app, ClassKit alerts the student on your behalf that progress is shared with teachers by briefly showing a message over your content. For a student in a class called *Dev Class* using an app called *GreatPlays*, the overlay looks like this:
 

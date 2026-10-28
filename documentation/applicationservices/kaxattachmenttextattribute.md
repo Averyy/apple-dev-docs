@@ -19,7 +19,7 @@ var kAXAttachmentTextAttribute: Unmanaged<CFString>
 CFStringRef kAXAttachmentTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

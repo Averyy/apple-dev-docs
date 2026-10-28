@@ -17,11 +17,11 @@ Gets the size of an alias record referenced by a handle.
 Size GetAliasSize(AliasHandle alias);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the alias record.
 
-#### Discussion
+## Discussion
 
 The returned size is smaller than the size returned by the function `GetHandleSize` if any custom data is added. This routine is thread safe.
 

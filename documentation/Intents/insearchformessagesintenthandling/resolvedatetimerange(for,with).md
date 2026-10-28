@@ -27,7 +27,7 @@ optional func resolveDateTimeRange(for intent: INSearchForMessagesIntent) async 
 - (void) resolveDateTimeRangeForSearchForMessages:(INSearchForMessagesIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the dates used to search for messages.
 

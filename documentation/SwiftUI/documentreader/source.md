@@ -20,7 +20,7 @@ The type of the source location to read from.
 associatedtype Source = URL
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI provides the document’s file URL as the source.
 

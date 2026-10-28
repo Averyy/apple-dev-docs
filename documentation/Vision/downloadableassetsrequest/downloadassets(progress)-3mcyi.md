@@ -20,7 +20,7 @@ Downloads the assets required to perform the request, reporting progress through
 func downloadAssets(progress: consuming Subprogress) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the download fails.
 

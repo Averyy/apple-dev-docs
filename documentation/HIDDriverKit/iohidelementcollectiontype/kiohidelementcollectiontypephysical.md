@@ -16,7 +16,7 @@ A collection in which the child elements are data points collected at one geomet
 kIOHIDElementCollectionTypePhysical
 ```
 
-#### Discussion
+## Discussion
 
 A sensing device might associate sets of measured or sensed data with a single point. This type does not indicate that multiple data values come from the device.
 

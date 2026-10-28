@@ -22,11 +22,11 @@ convenience init(entityName: String)
 + (instancetype) fetchRequestWithEntityName:(NSString *) entityName;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch request configured to fetch the entity named `entityName`.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to configure the entity for a fetch request without having to retrieve an [`NSEntityDescription`](../nsentitydescription.md) object. When the fetch is executed, the request uses the managed object context to find the entity with the given name. The model associated with the context’s persistent store coordinator must contain an entity named `entityName`.
 

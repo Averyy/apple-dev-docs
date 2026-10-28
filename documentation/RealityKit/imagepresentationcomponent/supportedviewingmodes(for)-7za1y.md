@@ -21,7 +21,7 @@ static func supportedViewingModes(for imageSource: CGImageSource) -> Set<ImagePr
 static func supportedViewingModes(for spatial3DImage: ImagePresentationComponent.Spatial3DImage) -> Set<ImagePresentationComponent.ViewingMode>
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This method returns the viewing modes that will be supported if you initialize an `ImagePresentationComponent` with this image source directly via `init(imageSource: CGImageSource)`.
 

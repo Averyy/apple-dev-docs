@@ -20,7 +20,7 @@ An integer value that represents when the renderer draws the model relative to o
 var order: Int32 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The renderer draws models in ascending order, starting with the components with the smallest value. You can tell the renderer that it only needs to order entities by their depths by setting the component’s [`order`](./order.md) property to the sam value for those entities.
 

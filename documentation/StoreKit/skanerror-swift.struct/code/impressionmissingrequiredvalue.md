@@ -22,7 +22,7 @@ case impressionMissingRequiredValue
 SKANErrorImpressionMissingRequiredValue
 ```
 
-#### Discussion
+## Discussion
 
 Check that your instance of [`SKAdImpression`](../../skadimpression.md) provides all of the required values.
 

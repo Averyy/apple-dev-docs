@@ -20,7 +20,7 @@ An anchor that a previous anchored object query returned.
 var anchor: HKQueryAnchor?
 ```
 
-#### Discussion
+## Discussion
 
 The anchor object corresponds to the last object that the previous query returned. The current query returns only samples and deleted objects newer than the anchor. Pass `nil` to receive all the matching samples and recently deleted objects currently in the HealthKit store.
 

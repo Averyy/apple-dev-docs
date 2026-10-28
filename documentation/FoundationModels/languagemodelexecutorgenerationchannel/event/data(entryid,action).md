@@ -20,7 +20,7 @@ A data-entry event addressed to a transcript entry.
 static func data(entryID: String? = nil, action: LanguageModelExecutorGenerationChannel.DataEntry.Action) -> LanguageModelExecutorGenerationChannel.Event
 ```
 
-#### Discussion
+## Discussion
 
 The entry’s `contentType` (from [`update(contentType:content:metadata:)`](../dataentry/action-swift.struct/update%28contenttype,content,metadata%29.md)) is checked against [`supportsDataEntryType(_:)`](../../languagemodel/supportsdataentrytype%28_%29.md) before the entry is appended, and rejected entries surface as [`LanguageModelError.unsupportedTranscriptContent(_:)`](../../languagemodelerror/unsupportedtranscriptcontent%28_%29.md).
 

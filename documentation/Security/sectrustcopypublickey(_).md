@@ -30,11 +30,11 @@ SecKeyRefSecTrustCopyPublicKey(SecTrustRef trust);
 - [Evaluating a Trust and Parsing the Result](./evaluating-a-trust-and-parsing-the-result.md)
 - [Getting an Existing Key](./getting-an-existing-key.md)
 
-#### Return Value
+## Return Value
 
 The leaf certificate’s public key, or `NULL` if it the public key could not be extracted (this can happen with DSA certificate chains if the parameters in the chain cannot be found). In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
-#### Discussion
+## Discussion
 
 Call the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function before calling this function.
 

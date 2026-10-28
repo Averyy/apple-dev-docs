@@ -16,7 +16,7 @@ Increments the point-to-point connection count of a unit output plug.
 IOReturn (*makeP2POutputConnection)(void *self, UInt32 outputPlug, UInt32 chan, IOFWSpeed speed);
 ```
 
-#### Discussion
+## Discussion
 
 This function is only available if the interface version is > 3.
 

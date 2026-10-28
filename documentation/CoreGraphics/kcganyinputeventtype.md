@@ -14,7 +14,7 @@
 #define kCGAnyInputEventType
 ```
 
-#### Discussion
+## Discussion
 
 A constant that specifies any input event type.
 

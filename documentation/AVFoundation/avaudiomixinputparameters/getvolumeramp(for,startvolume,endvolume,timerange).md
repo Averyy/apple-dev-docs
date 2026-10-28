@@ -25,11 +25,11 @@ func getVolumeRamp(for time: CMTime, startVolume: UnsafeMutablePointer<Float>?, 
 - (BOOL) getVolumeRampForTime:(CMTime) time startVolume:(float *) startVolume endVolume:(float *) endVolume timeRange:(CMTimeRange *) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the values were retrieved successfully, otherwise [`false`](../../Swift/false.md). Returns [`false`](../../Swift/false.md) if `time` is beyond the duration of the last volume ramp that has been set.
 
-#### Discussion
+## Discussion
 
 The process of setting up volume ramps requires the configuration of an instance of [`AVMutableAudioMixInputParameters`](../avmutableaudiomixinputparameters.md).
 

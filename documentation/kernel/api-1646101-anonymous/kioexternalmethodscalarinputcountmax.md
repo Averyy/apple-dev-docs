@@ -13,7 +13,7 @@
 kIOExternalMethodScalarInputCountMax = 16
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of scalars able to passed on input.
 

@@ -19,7 +19,7 @@ init?(bitmapImageRep: NSBitmapImageRep)
 - (instancetype) initWithBitmapImageRep:(NSBitmapImageRep *) bitmapImageRep;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object, or `nil` if the object could not be initialized.
 

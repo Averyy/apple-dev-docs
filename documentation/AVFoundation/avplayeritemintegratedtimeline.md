@@ -25,7 +25,7 @@ class AVPlayerItemIntegratedTimeline
 @interface AVPlayerItemIntegratedTimeline : NSObject
 ```
 
-#### Overview
+## Overview
 
 The timeline models all regions to traverse during playback. A player may not present portions of the primary item when exiting an interstitial event with a positive resumption offset.
 

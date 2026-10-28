@@ -21,11 +21,11 @@ Creates an change object that represents inserting or removing an object from an
 + (NSOrderedCollectionChange<id> *) changeWithObject:(ObjectType) anObject type:(NSCollectionChangeType) type index:(NSUInteger) index associatedIndex:(NSUInteger) associatedIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents an indexed change to an ordered collection and references the object to be inserted or removed with an associated index that infers a move within the collection.
 
-#### Discussion
+## Discussion
 
 Pairs of changes with opposite types that refer to each other represent the index location of their counterpart with the [`associatedIndex`](./associatedindex.md) property. Initializing a [`NSOrderedCollectionDifference`](../nsorderedcollectiondifference.md) with broken associations (or associations that aren’t reflexive) will generate an exception. The following example creates a diff where the object `@”Red”` moves from index `8` to index `3`:
 

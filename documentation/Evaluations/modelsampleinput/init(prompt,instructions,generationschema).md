@@ -21,7 +21,7 @@ Creates a model sample input with the given prompt, instructions, and schema.
 init(prompt: Prompt, instructions: Instructions? = nil, generationSchema: GenerationSchema? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 @Generable

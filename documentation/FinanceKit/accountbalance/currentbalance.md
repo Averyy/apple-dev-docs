@@ -16,7 +16,7 @@ The balance at a particular moment in time.
 let currentBalance: CurrentBalance
 ```
 
-#### Discussion
+## Discussion
 
 It can contain an indication of funds immediately available to the customer, fund with all booked transactions (this excludes pending transactions), or both.
 

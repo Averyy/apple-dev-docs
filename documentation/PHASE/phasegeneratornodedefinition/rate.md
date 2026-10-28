@@ -24,7 +24,7 @@ var rate: Double { get set }
 @property (nonatomic, assign) double rate;
 ```
 
-#### Discussion
+## Discussion
 
 The value clamps to the range `[0.25,` `4]`. The default value is `1`, which doesn’t change the source audio’s rate. Values higher than `1` speed up playback, and lower values slow it down.
 

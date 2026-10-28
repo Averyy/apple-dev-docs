@@ -20,7 +20,7 @@ Calculates the mean average precision at the bounding box overlap threshold.
 func meanAveragePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float] = [:], overlapThreshold: Double = 0.5) -> Scalar where Scalar : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The mean average precision at the overlap threshold.
 

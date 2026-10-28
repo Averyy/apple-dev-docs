@@ -23,7 +23,7 @@ class var beforeFirstSyncComponent: Data { get }
 @property (class, readonly, nonnull) NSData * beforeFirstSyncComponent;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this property to represent an item that doesn’t have a corresponding version provided by the file provider extension.
 

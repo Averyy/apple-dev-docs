@@ -19,7 +19,7 @@ string requestIdentifier
 
 **Maximum Length**: `128`
 
-#### Discussion
+## Discussion
 
 You provide a `requestIdentifier` in the request body when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) and [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoints.
 

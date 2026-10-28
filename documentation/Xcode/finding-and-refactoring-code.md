@@ -5,13 +5,13 @@
 
 Search your code for text, patterns, and symbols that you can refactor quickly and easily.
 
-#### Overview
+## Overview
 
 When writing and analyzing code, you frequently need to look up a symbol to learn how to use it and to determine how other code uses it. Use Xcode’s search capabilities to find text and symbols in your code to analyze potential changes, determine current functionality, or debug code.
 
 Rename files or symbols to clarify usage with a more descriptive and meaningful name. Refactor your code when you identify duplicate code or code that you can reuse. Transform existing code into more reusable functions, methods, or variables.
 
-##### Find files by name or included symbols
+### Find files by name or included symbols
 
 Open a file quickly by pressing Shift-Command-O to bring up the Open Quickly dialog. Type in part of a filename or symbol name, and the dialog presents a list of potential matches.
 
@@ -23,7 +23,7 @@ When there are a lot of files in your project, type part of the filename into th
 
 ![An Xcode screenshot showing the Project navigator with a search term in the filter field, and matching files displayed and highlighted in the list above.](https://developer.apple.com/tutorials/images/com.apple.Xcode/finding-and-refactoring-project-navigator-filter@2x.png)
 
-##### Find text or patterns in your source code
+### Find text or patterns in your source code
 
 To find text in a file, open the file in the Xcode source editor and choose Find > Find from the menu bar (or press Command-F). Xcode displays the Find bar and its search controls at the top of the file.
 
@@ -38,7 +38,7 @@ Enter a search term. Xcode searches the file, highlights matches, and notes how 
 - Navigate between matches using the arrow buttons.
 - Close the Find bar by clicking the Done button.
 
-##### Find symbols in your source code
+### Find symbols in your source code
 
 To find a symbol in your code, Control-click the variable or function name, and choose Find > Find Selected Symbol in Workspace.
 
@@ -59,7 +59,7 @@ Refine your Symbols search using the following options:
 
 If your search returns a large number of matches, narrow the results by entering another term in the Filter field.
 
-##### Rename symbols throughout your project
+### Rename symbols throughout your project
 
 To rename a function, method, class, structure, or enumeration in your project, Control-click either the declaration of the symbol or a use of the symbol, and choose Refactor > Rename. Xcode highlights the symbol, searches your project for its name, and shows everywhere that the symbol appears.
 
@@ -69,7 +69,7 @@ Type a new name into the highlighted selection and Xcode previews all the change
 
 To rename a local variable or instance variable, Control-click the variable and choose Edit All in Scope. Xcode highlights instances of the variable in scope in the source editor. Type a new name and Xcode updates all instances to the same name. To cancel a name change, choose Edit > Undo.
 
-##### Refactor code into functions
+### Refactor code into functions
 
 When you have code that repeats in a function or code that you can reuse, refactor it into a function. Select the lines of code you want to refactor, then Control-click and choose Refactor > Extract to Method. Xcode creates a new function, and highlights its name so you can rename it.
 

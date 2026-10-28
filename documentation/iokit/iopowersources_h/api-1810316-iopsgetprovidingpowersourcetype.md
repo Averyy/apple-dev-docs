@@ -12,11 +12,11 @@ CFStringRef IOPSGetProvidingPowerSourceType(
    CFTypeRef snapshot);
 ```
 
-#### Return Value
+## Return Value
 
 One of: CFSTR(kIOPMACPowerKey), CFSTR(kIOPMBatteryPowerKey), CFSTR(kIOPMUPSPowerKey)
 
-#### Overview
+## Overview
 
 Determines which power source is providing power.
 

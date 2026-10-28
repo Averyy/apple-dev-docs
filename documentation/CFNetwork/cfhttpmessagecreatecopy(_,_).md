@@ -24,11 +24,11 @@ func CFHTTPMessageCreateCopy(_ alloc: CFAllocator?, _ message: CFHTTPMessage) ->
 extern CFHTTPMessageRefCFHTTPMessageCreateCopy(CFAllocatorRef alloc, CFHTTPMessageRef message);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFHTTPMessage`](./cfhttpmessage.md) object, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function returns a copy of a [`CFHTTPMessage`](./cfhttpmessage.md) object that you can modify, for example, by calling [`CFHTTPMessageCopyHeaderFieldValue(_:_:)`](./cfhttpmessagecopyheaderfieldvalue%28_,_%29.md) or by calling [`CFHTTPMessageSetBody(_:_:)`](./cfhttpmessagesetbody%28_,_%29.md). Then you can serialize the message by calling [`CFHTTPMessageCopySerializedMessage(_:)`](./cfhttpmessagecopyserializedmessage%28_%29.md) and send the serialized message to a client or a server.
 

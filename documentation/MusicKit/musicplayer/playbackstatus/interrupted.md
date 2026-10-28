@@ -20,7 +20,7 @@ The music player is in an interrupted state, such as from an incoming phone call
 case interrupted
 ```
 
-#### Discussion
+## Discussion
 
 When an incoming phone call interrupts the music player, it may resume playing automatically upon ending the call.
 

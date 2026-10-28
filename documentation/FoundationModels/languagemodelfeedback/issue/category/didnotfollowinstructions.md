@@ -20,7 +20,7 @@ A response that doesn’t follow instructions correctly.
 case didNotFollowInstructions
 ```
 
-#### Discussion
+## Discussion
 
 An instruction issue might be where you asked for a recipe in numbered steps, and the model provided a recipe but didn’t number the steps.
 

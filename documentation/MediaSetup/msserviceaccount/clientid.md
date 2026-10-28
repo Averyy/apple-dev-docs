@@ -22,7 +22,7 @@ var clientID: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * clientID;
 ```
 
-#### Discussion
+## Discussion
 
 The Media Setup framework uses the `clientID` to create a token request. You can choose the identifier format, but the identifier must be unique to the current account. You can provide a new identifier each time the user begins HomePod setup.
 

@@ -25,7 +25,7 @@ init(code: INStartPhotoPlaybackIntentResponseCode, userActivity: NSUserActivity?
 - (instancetype) initWithCode:(INStartPhotoPlaybackIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 After initializing the object, assign a value to the [`searchResultsCount`](./searchresultscount-6ns8y.md) property indicating the number of photos that match the search parameters.
 

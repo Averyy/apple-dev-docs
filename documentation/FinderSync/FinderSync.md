@@ -9,7 +9,7 @@ Modify the Finder’s user interface to express file synchronization and control
 **Availability**:
 - macOS 10.10+
 
-#### Overview
+## Overview
 
 Use Finder Sync to cleanly and safely modify the Finder’s user interface to express file synchronization status and control. Unlike most extension points, Finder Sync doesn’t add features to a host app. Instead, it lets you modify the behavior of the Finder itself.
 

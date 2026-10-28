@@ -24,7 +24,7 @@ class DataRecord
 @interface WKWebExtensionDataRecord : NSObject
 ```
 
-#### Overview
+## Overview
 
 Contains properties and methods to query the data types and sizes.
 

@@ -26,7 +26,7 @@ var hasSufficientMediaDataForReliablePlaybackStart: Bool { get }
 @property (nonatomic, readonly) BOOL hasSufficientMediaDataForReliablePlaybackStart;
 ```
 
-#### Discussion
+## Discussion
 
 Starting playback when this property is [`false`](../../Swift/false.md) may prevent smooth playback following an immediate start.
 

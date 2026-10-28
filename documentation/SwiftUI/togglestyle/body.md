@@ -22,7 +22,7 @@ A view that represents the appearance and interaction of a toggle.
 associatedtype Body : View
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI infers this type automatically based on the [`View`](../view.md) instance that you return from your implementation of the [`makeBody(configuration:)`](./makebody%28configuration%29.md) method.
 

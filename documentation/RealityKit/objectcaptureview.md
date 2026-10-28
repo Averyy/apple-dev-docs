@@ -17,7 +17,7 @@ A view that guides a user through capturing images for object capture.
 @preconcurrency struct ObjectCaptureView<Overlay> where Overlay : View
 ```
 
-#### Overview
+## Overview
 
 The primary view of the Object Capture front-end 3D UI.  This view is used to present the UI for a given [`ObjectCaptureSession`](./objectcapturesession.md). It presents the current state of the wrapped session. The view can be taken down temporarily to show the [`ObjectCapturePointCloudView`](./objectcapturepointcloudview.md) or an app’s custom tutorial pages. If a [`ObjectCaptureView`](./objectcaptureview.md) is removed from the content view, creating a new [`ObjectCaptureView`](./objectcaptureview.md) from the original view’s [`ObjectCaptureSession`](./objectcapturesession.md) resumes the in-progress capture session.
 

@@ -22,11 +22,11 @@ nonisolated
 func transaction(_ transform: @escaping (inout Transaction) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that wraps this view and applies a transformation to all transactions used within the view.
 
-#### Discussion
+## Discussion
 
 Use this modifier to change or replace the animation used in a view. Consider three identical animations controlled by a button that executes all three animations simultaneously:
 

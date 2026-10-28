@@ -34,7 +34,7 @@ var lateFee: INCurrencyAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INCurrencyAmount * lateFee;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the late fee, if any, that to apply if the user pays the bill after the due date.
 

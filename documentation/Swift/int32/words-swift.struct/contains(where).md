@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the sequence contains an element that
 func contains(where predicate: (Self.Element) throws -> Bool) rethrows -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the sequence contains an element that satisfies `predicate`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 You can use the predicate to check for an element of a type that doesn’t conform to the `Equatable` protocol, such as the `HTTPResponse` enumeration in this example.
 

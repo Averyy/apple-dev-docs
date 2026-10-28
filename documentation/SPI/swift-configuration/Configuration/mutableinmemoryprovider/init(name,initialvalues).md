@@ -24,7 +24,7 @@ Creates a new mutable in-memory provider with the specified initial values.
 init(name: String? = nil, initialValues: [AbsoluteConfigKey : ConfigValue])
 ```
 
-#### Discussion
+## Discussion
 
 This initializer takes a dictionary of absolute configuration keys mapped to their initial values. The provider can be modified after creation using the [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) methods.
 

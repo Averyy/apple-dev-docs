@@ -21,7 +21,7 @@ var isAutodisplay: Bool { get set }
 @property (getter=isAutodisplay) BOOL autodisplay;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window automatically displays views that need to be displayed; otherwise, [`false`](../../Swift/false.md). If `autodisplay` is [`false`](../../Swift/false.md), the window or its views must be explicitly displayed.
 

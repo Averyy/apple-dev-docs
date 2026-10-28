@@ -21,7 +21,7 @@ Exports the entity as a RealityKit file to a location in the file system.
 func write(to url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method generates a file with a `.reality` suffix, automatically setting its compatibility with other systems based on the Entity’s tree content. The Entity and its children may contain components or assets that can require the resulting RealityKit file to be compatible with system versions between:
 

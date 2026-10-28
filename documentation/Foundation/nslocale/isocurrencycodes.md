@@ -25,7 +25,7 @@ class var isoCurrencyCodes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * ISOCurrencyCodes;
 ```
 
-#### Discussion
+## Discussion
 
 Not all currency codes have supporting locale data in the system.
 

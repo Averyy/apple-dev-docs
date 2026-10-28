@@ -17,7 +17,7 @@ Applies the Rectified Linear Unit 6.
 func relu6(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.minimum(MLX.maximum(x, 0), 6)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`ReLU6`](./relu6.md)

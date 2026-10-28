@@ -5,7 +5,7 @@
 
 Generate a developer token needed to make requests to Apple Music API.
 
-#### Overview
+## Overview
 
 To make requests to the Apple Music API, you need to authorize yourself as a trusted developer and member of the Apple Developer Program. The header of every Apple Music API request requires a signed developer token.
 
@@ -14,7 +14,7 @@ There are two paths to generate developer tokens:
 - If you’re developing an app for Apple platforms (iOS, tvOS, watchOS or macOS), the recommended way to integrate with Apple Music is to use [MusicKit](../MusicKit/MusicKit.md) for Swift, following the steps provided in [Using Automatic Developer Token Generation for Apple Music API](../MusicKit/using-automatic-token-generation-for-apple-music-api.md).
 - Follow the directions below to create and manage developer tokens for other platforms.
 
-##### Create a Developer Token
+### Create a Developer Token
 
 A developer token is a signed token used to authenticate a developer in Apple Music requests. [Creating a MusicKit identifier and private key](https://developer.apple.com/help/account/configure-app-capabilities/create-a-media-identifier-and-private-key/) allows you to use a developer token to authenticate yourself as a trusted developer and member of the Apple Developer Program.
 
@@ -54,7 +54,7 @@ After you create the token, sign it with your MusicKit private key using the ES2
 
 > **Note**:  ES256 is the [JSON Web Algorithms (JWA)](https://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-##### Authorize Requests
+### Authorize Requests
 
 A developer token is used to authorize all Apple Music API requests. If you manage this directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 
@@ -64,7 +64,7 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://api.music.apple.co
 
 To sign in and authenticate requests for an Apple Music subscriber, see [User Authentication for MusicKit](./user-authentication-for-musickit.md). For more information about requests, responses, and error handling, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
-##### Request Rate Limiting
+### Request Rate Limiting
 
 Apple Music API limits the number of requests your app can make using a developer token within a specific period of time. If this limit is exceeded, you’ll temporarily receive `429 Too Many Requests` error responses for requests that use the token. This error resolves itself shortly after the request rate has reduced.
 

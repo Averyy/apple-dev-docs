@@ -21,7 +21,7 @@ A Boolean value that determines whether the action reverses prior operations whe
 var isReversible: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

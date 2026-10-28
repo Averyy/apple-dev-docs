@@ -24,11 +24,11 @@ init(byGeneratingNormalMapWith sourceTexture: MDLTexture, name: String?, smoothn
 - (instancetype) initByGeneratingNormalMapWithTexture:(MDLTexture *) sourceTexture name:(NSString *) name smoothness:(float) smoothness contrast:(float) contrast;
 ```
 
-#### Return Value
+## Return Value
 
 A new normal map texture object.
 
-#### Discussion
+## Discussion
 
 This initializer does not generate texel data; the [`MDLNormalMapTexture`](../mdlnormalmaptexture.md) class automatically generates data when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data. The generated texture uses the same dimensions and other properties as the source texture.
 

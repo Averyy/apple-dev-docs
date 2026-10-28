@@ -23,7 +23,7 @@ class Context
 
 - [Adding Writing Tools support to a custom AppKit view](../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Overview
+## Overview
 
 At the start of every Writing Tools operation, you create one or more `NSWritingToolsCoordinator.Context` objects with a copy of the text you want Writing Tools to evaluate. Each Writing Tools operation starts with a call to the [`writingToolsCoordinator(_:requestsContextsFor:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestscontextsfor,completion%29.md) method of your [`NSWritingToolsCoordinator.Delegate`](./delegate-swift.protocol.md) object. Use the parameters of that method to determine how much of your view’s text to provide. For some operations, Writing Tools asks for all of your view’s text, but in others it asks for only a portion of the text. When Writing Tools finishes its evaluation, it reports changes back to your delegate relative to the context objects you provided.
 

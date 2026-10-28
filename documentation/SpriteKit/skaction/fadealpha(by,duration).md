@@ -25,11 +25,11 @@ class func fadeAlpha(by factor: CGFloat, duration: TimeInterval) -> SKAction
 + (SKAction *) fadeAlphaBy:(CGFloat) factor duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`alpha`](../sknode/alpha.md) property animates to its new value.
 

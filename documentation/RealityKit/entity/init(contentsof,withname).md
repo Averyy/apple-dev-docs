@@ -21,11 +21,11 @@ Creates an entity by asynchronously loading it from a file URL.
 @preconcurrency convenience init(contentsOf url: URL, withName resourceName: String? = nil) async throws
 ```
 
-#### Return Value
+## Return Value
 
 The root entity of the loaded file.
 
-#### Discussion
+## Discussion
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files.
 

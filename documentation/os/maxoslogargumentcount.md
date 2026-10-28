@@ -21,7 +21,7 @@ The maximum number of interpolated expressions that a log message may contain.
 var maxOSLogArgumentCount: UInt8 { get }
 ```
 
-#### Discussion
+## Discussion
 
 For log messages that include interpolated values, the system imposes a limit on the total number of expressions that a single message may include. The following example shows a string that contains an interpolated value:
 

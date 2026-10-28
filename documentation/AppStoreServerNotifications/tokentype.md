@@ -25,7 +25,7 @@ string tokenType
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-##### Discussion
+### Discussion
 
 The token type field is present only for custom link tokens. For more information on tokens, see [Receiving and decoding external purchase tokens](../StoreKit/receiving-and-decoding-external-purchase-tokens.md).
 

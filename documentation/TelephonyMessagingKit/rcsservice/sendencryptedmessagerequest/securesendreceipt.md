@@ -15,7 +15,7 @@ The send receipt of the original message.
 var secureSendReceipt: RCSMessage.SecureSendReceipt?
 ```
 
-#### Discussion
+## Discussion
 
 Set this after receiving an [`RCSMessage.DispositionNotification`](../../rcsmessage/dispositionnotification.md) message whose disposition is [`RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure`](../../rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md).
 

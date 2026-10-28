@@ -21,7 +21,7 @@ Adds a rectangular subpath to the path.
 func addRect(_ rect: CGRect, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds a rectangle to a path, starting by moving to the bottom-left corner and then adding lines counter-clockwise to create a rectangle, closing the subpath.
 

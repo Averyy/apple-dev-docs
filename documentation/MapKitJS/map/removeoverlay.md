@@ -15,7 +15,7 @@ Removes an overlay from the map.
 removeOverlay(overlay: Overlay): Overlay;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the overlay.
 

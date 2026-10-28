@@ -23,7 +23,7 @@ var kAudioSessionCategory_AudioProcessing: Int { get }
 kAudioSessionCategory_AudioProcessing
 ```
 
-#### Discussion
+## Discussion
 
 This category disables playback (audio output) and disables recording (audio input).
 

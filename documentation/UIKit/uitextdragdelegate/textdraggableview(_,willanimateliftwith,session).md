@@ -22,7 +22,7 @@ optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggabl
 - (void) textDraggableView:(UIView<UITextDraggable> *) textDraggableView willAnimateLiftWithAnimator:(id<UIDragAnimating>) animator session:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this delegate method when you want to add animations that happen alongside the system animation during the lift activity. To add such an animation, use the animator’s [`addAnimations(_:)`](../uidraganimating/addanimations%28_%29.md) method. To add an animation that happens after the system animation has ended, use the animator’s [`addCompletion(_:)`](../uidraganimating/addcompletion%28_%29.md) method.
 

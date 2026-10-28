@@ -17,7 +17,7 @@ A Boolean value that indicates whether the account is already linked.
 func isAccountLinked(using token: PaymentCardReader.Token) async throws -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Call [`linkAccount(using:)`](./linkaccount%28using%29.md) to link an account.
 

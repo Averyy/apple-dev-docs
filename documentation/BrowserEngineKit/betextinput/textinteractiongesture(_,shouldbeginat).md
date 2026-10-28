@@ -27,7 +27,7 @@ func textInteractionGesture(_ gestureType: BEGestureType, shouldBeginAt point: C
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Return Value
+## Return Value
 
 `true` to permit the text system to proceed with the gesture; `false` otherwise.
 

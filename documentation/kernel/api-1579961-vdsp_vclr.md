@@ -15,7 +15,7 @@ Populates a single-precision vector with zeros.
 void vDSP_vclr(float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_vclr`](../Accelerate/vdsp_vclr.md) and [`vDSP_vclrD`](../Accelerate/vdsp_vclrd.md) functions populate a vector with zeros. 
 

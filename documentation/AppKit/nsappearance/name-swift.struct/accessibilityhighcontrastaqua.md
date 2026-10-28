@@ -19,7 +19,7 @@ static let accessibilityHighContrastAqua: NSAppearance.Name
 extern NSAppearanceName const NSAppearanceNameAccessibilityHighContrastAqua;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t assign an [`NSAppearance`](../../nsappearance.md) object with this type directly to one of your views. Instead, assign a light appearance to your view. AppKit then returns this type when the user enables the Increase Contrast option in the Accessibility system preferences.
 

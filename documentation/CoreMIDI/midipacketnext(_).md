@@ -25,7 +25,7 @@ func MIDIPacketNext(_ pkt: UnsafePointer<MIDIPacket>) -> UnsafeMutablePointer<MI
 static MIDIPacket *MIDIPacketNext(const MIDIPacket *pkt);
 ```
 
-#### Return Value
+## Return Value
 
 The subsequent packet in the [`MIDIPacketList`](./midipacketlist.md).
 

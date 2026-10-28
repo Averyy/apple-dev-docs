@@ -20,7 +20,7 @@ The near-plane of a shadow frustum.
 var zNear: SpotLightComponent.Shadow.ShadowClippingPlane { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The `zNear` is the minimum distance between the light and a visible surface for casting shadows. The default value for `zNear` is [`SpotLightComponent.Shadow.ShadowClippingPlane.automatic`](./shadowclippingplane/automatic.md).
 

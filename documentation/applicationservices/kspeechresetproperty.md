@@ -19,7 +19,7 @@ let kSpeechResetProperty: CFString
 const CFStringRef kSpeechResetProperty;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this function to, for example, set speech pitch and speech rate to default values. There is no value associated with this property; to reset the channel to its default state, set the string to `NULL`.
 

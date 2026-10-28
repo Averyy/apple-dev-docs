@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether a time is numeric.
 #define CMTIME_IS_NUMERIC(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is numeric; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A numeric time contains a usable [`value`](./cmtime/value.md), [`timescale`](./cmtime/timescale.md), and [`epoch`](./cmtime/epoch.md).
 

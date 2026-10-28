@@ -21,7 +21,7 @@ An error that indicates the specified extension point is unknown.
 case unspecifiedAppExtensionPointName
 ```
 
-#### Discussion
+## Discussion
 
 Make sure the extension point name you specified matches one of the host app’s defined extension points.
 

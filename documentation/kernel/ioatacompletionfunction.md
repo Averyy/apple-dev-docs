@@ -13,7 +13,7 @@
 typedef void (IOATACommand *) IOATACompletionFunction;
 ```
 
-#### Discussion
+## Discussion
 
 callback function for ATA disk devices.
 

@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 7 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 7. The SDK comes bundled with Xcode 12. For information on the compatibility requirements for Xcode 12, see [Xcode 12 Release Notes](../Xcode-Release-Notes/xcode-12-release-notes.md).
 
-##### Clock
+### Clock
 
-###### Known Issues
+#### Known Issues
 
 - Kaleidoscope faces created using the Photos app on watchOS 7 beta 4 or earlier might cause your watch to repeatedly restart unexpectedly. (65224164)
 
@@ -24,32 +24,32 @@ The watchOS 7 SDK provides support to develop watchOS apps for Apple Watch devic
 
   **Workaround:** Remove the Sleep app, then reinstall it using App Store on your watch.
 
-##### Logging
+### Logging
 
-###### New Features
+#### New Features
 
 - New APIs are available for using `os_log` from Swift as part of the framework [os](../os/os.md). A new type, [`Logger`](../os/logger.md), can be instantiated using a subsystem and category and provides methods for logging at different levels (`Logger.debug`, `Logger.error`, `Logger.fault`).
 - The [`Logger`](../os/logger.md) APIs support specifying most formatting and privacy options supported by legacy `os_log` APIs. The new APIs provide significant performance improvements over the legacy APIs. You can now pass Swift string interpolation to the `os_log` function.
 
   **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - [`URLSession`](../Foundation/urlsession.md) metrics support is now available. (29448748)
 
-##### Software Update
+### Software Update
 
-###### Known Issues
+#### Known Issues
 
 - You might be unable to update Apple Watch Series 3 to watchOS 7 due to limited storage. (64793483)
 
   **Workaround:** Unpair your watch, then pair it again with your phone. Set it up as a new watch rather than restoring from a backup. Use General > Software Update in the Watch app to update to watchOS 7. If you want to restore your watch from its latest backup after the update is complete, repeat these steps while choosing to restore from a backup rather than setting up as new.
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - [`Color`](../SwiftUI/color.md) can be converted to and from [`cgColor`](../UIKit/uicolor/cgcolor.md). The [`ColorPicker`](../SwiftUI/colorpicker.md) can also now be configured with a binding to a `CGColor`. (56939085)
 - Introduced [`ToolbarItemGroup`](../SwiftUI/toolbaritemgroup.md) as a convenient way to place multiple items in a specific location of non-customizable toolbars. (64178863)

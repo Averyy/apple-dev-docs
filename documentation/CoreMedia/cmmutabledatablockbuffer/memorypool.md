@@ -21,7 +21,7 @@ Optimize memory allocations when working with large block buffers.
 final class MemoryPool
 ```
 
-#### Overview
+## Overview
 
 This is a memory allocation service that holds a pool of recently deallocated memory. Its purpose is to speed up subsequent allocations of the same size. You should use a pool in cases where you need to repeatedly allocate large blocks of memory, such as a video encoding app that outputs compressed data.
 

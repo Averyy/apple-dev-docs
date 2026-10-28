@@ -25,7 +25,7 @@ func enumerateResults(_ block: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Voi
 - (void) enumerateResultsUsingBlock:(void (^)(id result, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method disables the query at the start of the iteration and reenables it upon completion. Use [`enumerateResults(options:using:)`](./enumerateresults%28options,using%29.md) if you want to use concurrent or reverse iteration.
 

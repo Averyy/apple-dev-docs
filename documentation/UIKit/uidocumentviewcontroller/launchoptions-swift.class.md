@@ -27,7 +27,7 @@ class LaunchOptions
 
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Overview
+## Overview
 
 When your app launches, the document view controller displays a view that contains a title and buttons to create new documents. It also displays the document browser as a sheet over the title view. For more information, see [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md).
 

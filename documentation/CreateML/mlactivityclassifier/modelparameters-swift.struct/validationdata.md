@@ -17,7 +17,7 @@ The activity classifier’s validation dataset.
 var validationData: MLDataTable?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify validation data, the training process automatically sets aside a random subset of the training data as the validation data.
 

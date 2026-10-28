@@ -25,7 +25,7 @@ static let isMainProgramContent: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicIsMainProgramContent;
 ```
 
-#### Discussion
+## Discussion
 
 Example: an option that presents the main program audio for the presentation, regardless of locale, would typically have this characteristic.
 

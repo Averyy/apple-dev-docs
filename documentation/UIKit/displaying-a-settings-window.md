@@ -5,13 +5,13 @@
 
 Provide a Settings window in your Mac app built with Mac Catalyst so users can manage app settings defined in a Settings bundle.
 
-#### Overview
+## Overview
 
 Mac apps typically display app-specific settings using a Settings window accessible through the standard Settings menu item under the app menu in the menu bar.
 
 Mac apps built with Mac Catalyst that include a `Settings.bundle` file automatically get the Settings menu item and a Settings window. When a user selects the Settings menu item, the system displays a Mac-friendly Settings window based on the options provided in your Settings bundle. To learn about Settings bundles, see [Building a Settings bundle for your app](../Foundation/building-a-settings-bundle-for-your-app.md).
 
-##### Add a Settings window to your app
+### Add a Settings window to your app
 
 To include a Settings window in your Mac app, start by adding a `Settings.bundle` file to your Xcode project:
 
@@ -22,7 +22,7 @@ To include a Settings window in your Mac app, start by adding a `Settings.bundle
 
 ![A screenshot of the new file dialog in Xcode, showing the selection of the iOS platform, and the selection of the Settings Bundle template.](https://developer.apple.com/tutorials/images/com.apple.uikit/displaying-a-settings-window-1@2x.png)
 
-##### Add toolbar tabs to the Settings window
+### Add toolbar tabs to the Settings window
 
 A Settings bundle can include one or more child panes that allow you to organize your settings hierarchically (see [Building a Settings bundle for your app](../Foundation/building-a-settings-bundle-for-your-app.md)). In iOS, the Settings app displays a child pane as a settings row. When the user taps the row, the app displays a new view showing the settings defined in the child pane’s property list file.
 
@@ -34,7 +34,7 @@ The tab for a child pane displays the pane’s title and a system-provided icon.
 
 You must include the image file in the Settings bundle that contains the child pane’s property list file.
 
-##### Confirm changes made with a toggle switch
+### Confirm changes made with a toggle switch
 
 Another element of the Settings bundle is the toggle switch element, which displays an ON/OFF switch that the user can toggle. Your Mac app can prompt the user for a confirmation when they toggle the switch by including the following keys in the toggle switch element:
 
@@ -51,7 +51,7 @@ Each dictionary contains the following keys that define the contents of the prom
 
 For more information, see [Building a Settings bundle for your app](../Foundation/building-a-settings-bundle-for-your-app.md).
 
-##### Display subtitles for toggle switches
+### Display subtitles for toggle switches
 
 Some iOS apps show descriptive text in a subtitle below a toggle switch using a group item with footer text. While the Settings window supports this approach, the appearance on a Mac isn’t ideal. Instead, include the following key in the toggle switch element to show a subtitle:
 

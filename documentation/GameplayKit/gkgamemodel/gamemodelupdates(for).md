@@ -25,11 +25,11 @@ func gameModelUpdates(for player: any GKGameModelPlayer) -> [any GKGameModelUpda
 - (NSArray<id<GKGameModelUpdate>> *) gameModelUpdatesForPlayer:(id<GKGameModelPlayer>) player;
 ```
 
-#### Return Value
+## Return Value
 
 An array of instances of your game’s move class (a custom class implementing the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol), each representing a possible move for the specified player.
 
-#### Discussion
+## Discussion
 
 Your implementation of the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol, or *move class*, should add properties or methods that describe a move in terms of your game. In this method, you create one instance of your move class for each move currently allowed to the specified player, filling in each instance’s custom properties with the information that describes that move. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
 

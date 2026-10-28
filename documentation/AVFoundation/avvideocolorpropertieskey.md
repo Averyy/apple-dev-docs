@@ -29,7 +29,7 @@ extern NSString * const AVVideoColorPropertiesKey;
 - [Setting color properties for a specific resolution](./setting-color-properties-for-a-specific-resolution.md)
 - [Tagging media with video color information](./tagging-media-with-video-color-information.md)
 
-#### Discussion
+## Discussion
 
 The dictionary must contain the keys [`AVVideoColorPrimariesKey`](./avvideocolorprimarieskey.md), [`AVVideoTransferFunctionKey`](./avvideotransferfunctionkey.md), and [`AVVideoYCbCrMatrixKey`](./avvideoycbcrmatrixkey.md).
 

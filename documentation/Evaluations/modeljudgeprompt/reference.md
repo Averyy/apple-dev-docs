@@ -21,7 +21,7 @@ An optional closure that provides labeled reference data to include in the model
 let reference: (nonisolated(nonsending) @Sendable (Input, Input.ExpectedValue) async throws -> [String : String])?
 ```
 
-#### Discussion
+## Discussion
 
 The closure receives both the input sample and the model’s response, allowing reference data from either, for example, running a grammar checker on the response, or passing the sample’s expected value for comparison.
 

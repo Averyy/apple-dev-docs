@@ -5,13 +5,13 @@
 
 Add reference documentation to your symbols that explains how to use them.
 
-#### Overview
+## Overview
 
 To help the people who use your API have a better understanding of it, follow the steps in the sections below to add documentation comments to the symbols in your project. DocC compiles those comments and generates formatted documentation that you share with your users. For frameworks and packages, add the comments to the public symbols, and for apps, add the comments to both the internal and public symbols.
 
 For a deeper understanding of how to write symbol documentation, please refer to [Writing Symbol Documentation in Your Source Files Swift.org](https://www.swift.org/documentation/docc/writing-symbol-documentation-in-your-source-files).
 
-##### Add a basic description for each symbol
+### Add a basic description for each symbol
 
 The first step toward writing great documentation is to add single-sentence abstracts or summaries, and where necessary, *Discussion* sections, to each of your public symbols.
 
@@ -33,7 +33,7 @@ After adding a Discussion section, invoke Quick Help to view the updated documen
 
 ![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer. The page shows a summary and a Discussion section that includes the content from the symbol’s documentation comment.](https://developer.apple.com/tutorials/images/com.apple.Xcode/doc-viewer-discussion@2x.png)
 
-##### Describe the parameters of a method
+### Describe the parameters of a method
 
 For methods that take parameters, document those parameters directly below the summary, or the Discussion section, if you include one. Describe each parameter in isolation. Discuss its purpose and, where necessary, the range of acceptable values.
 
@@ -54,7 +54,7 @@ After you add documentation for a method’s parameters, it appears in Xcode’s
 
 ![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer, which includes a Parameters section. The page displays the content from the symbol’s documentation comment.](https://developer.apple.com/tutorials/images/com.apple.Xcode/doc-viewer-parameters@2x.png)
 
-##### Describe the return value of a method
+### Describe the return value of a method
 
 For methods that return a value, include a *Returns* section in your documentation comment to describe the returned value.
 
@@ -67,7 +67,7 @@ You can see your Returns section in the symbol reference page that DocC generate
 
 ![A screenshot of Xcode’s Quick Help pop-over, which includes a Returns section below all the other content from the documentation comment.](https://developer.apple.com/tutorials/images/com.apple.Xcode/returns-section@2x.png)
 
-##### Describe the thrown errors of a method
+### Describe the thrown errors of a method
 
 If a method can throw an error, add a *Throws* section to your documentation comment. Explain the circumstances that cause the method to throw an error, and list the types of possible errors.
 

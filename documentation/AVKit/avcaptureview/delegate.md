@@ -19,7 +19,7 @@ weak var delegate: (any AVCaptureViewDelegate)? { get set }
 @property (weak, nullable) id<AVCaptureViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The capture view disables the start recording button if you don’t provide a delegate object.
 

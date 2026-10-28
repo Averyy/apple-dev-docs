@@ -19,7 +19,7 @@ var navigationMarkerGroups: [AVNavigationMarkersGroup] { get set }
 @property (nonatomic, copy) NSArray<AVNavigationMarkersGroup *> * navigationMarkerGroups;
 ```
 
-#### Discussion
+## Discussion
 
 A navigation marker group provides a set of time markers for navigating playback. The most common form of navigation marker group is a chapter list; however, you can also provide other sets of markers to allow a user to jump to significant events in the presentation. For example, a “Goals Scored” marker group might summarize key moments in a recorded sporting event. When you present a player item containing marker groups with the [`AVPlayerViewController`](../../AVKit/avplayerviewcontroller.md) class, the user interface provides options for navigating each group.
 

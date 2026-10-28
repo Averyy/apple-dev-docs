@@ -24,7 +24,7 @@ var predicate: NSPredicate? { get set }
 @property (nonatomic, strong, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 Construct a predicate with the properties of the class of objects that you want to fetch, listed in the [`PHFetchOptions`](../phfetchoptions.md) table. For example, the following code uses a predicate to fetch assets matching a specific set of [`mediaSubtypes`](../phasset/mediasubtypes.md) values.
 

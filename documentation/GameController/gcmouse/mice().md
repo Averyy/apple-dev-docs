@@ -24,7 +24,7 @@ class func mice() -> [GCMouse]
 + (NSArray<GCMouse *> *) mice;
 ```
 
-#### Return Value
+## Return Value
 
 The currently connected mouse devices.
 

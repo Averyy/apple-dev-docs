@@ -25,7 +25,7 @@ func step(byDecodeTime deltaDecodeTime: CMTime, wasPinned outWasPinned: UnsafeMu
 - (CMTime) stepByDecodeTime:(CMTime) deltaDecodeTime wasPinned:(BOOL *) outWasPinned;
 ```
 
-#### Return Value
+## Return Value
 
 The amount of time the cursor was moved along the decode timeline. Because sample cursors snap to sample boundaries when stepped, this value may not be equal to the specified time delta even if the cursor wasn’t pinned.
 

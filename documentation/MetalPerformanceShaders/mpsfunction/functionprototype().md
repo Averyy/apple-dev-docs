@@ -22,7 +22,7 @@ func functionPrototype() -> String
 - (NSString *) functionPrototype;
 ```
 
-#### Discussion
+## Discussion
 
 Get a source level representation of the function prototype
 

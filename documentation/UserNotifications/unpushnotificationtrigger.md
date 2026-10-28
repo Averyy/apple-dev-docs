@@ -25,7 +25,7 @@ class UNPushNotificationTrigger
 @interface UNPushNotificationTrigger : UNNotificationTrigger
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class yourself. The system creates [`UNPushNotificationTrigger`](./unpushnotificationtrigger.md) objects and associates them with requests that originated from Apple Push Notification service. You encounter instances of this class when managing your app’s delivered notification requests, which store an object of this type in their [`trigger`](./unnotificationrequest/trigger.md) property.
 

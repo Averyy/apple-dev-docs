@@ -5,7 +5,7 @@
 
 Embed QT event handlers in their media samples.
 
-#### Overview
+## Overview
 
 The wired action grammar shown in this section allows QT event handlers to be expressed in a QuickTime movie. The sprite, text, VR, 3D, and Flash media handlers all support the embedding of QT event handlers in their media samples.
 

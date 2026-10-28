@@ -19,7 +19,7 @@ A collection of focus decisions, focus transitions, detections, and detection tr
 @interface CNScript : NSObject
 ```
 
-#### Overview
+## Overview
 
 The Cinematic script provides thread-safe access to information about the focus decisions made in the original recorded Cinematic movie. The script supports changing those decisions and obtaining updated information about where to focus each frame. You can snapshot changes to a script and later reload them.
 

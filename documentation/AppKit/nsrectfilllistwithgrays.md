@@ -15,7 +15,7 @@ Fills the rectangles in the passed list with the passed list of grays.
 extern void NSRectFillListWithGrays(const NSRect *rects, const CGFloat *grays, NSInteger num);
 ```
 
-#### Discussion
+## Discussion
 
 Takes a list of `num` rectangles and a matching list of gray values. The first rectangle is filled with the first gray, the second rectangle with the second gray, and so on. There must be an equal number of rectangles and gray values. The rectangles are composited using the [`NSCompositeCopy`](./nscompositecopy.md) operator and the order in which the rectangles are filled cannot be guaranteed; therefore, overlapping rectangles may not draw as expected. This function alters the current color of the current graphics state, setting it unpredictably to one of the values passed in `grays`.
 

@@ -24,7 +24,7 @@ A button style that doesn’t style or decorate its content while idle, but may 
 
 Available when `Self` is `PlainButtonStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a button, or to a view that contains buttons, use the [`buttonStyle(_:)`](../view/buttonstyle%28_%29.md) modifier.
 

@@ -20,7 +20,7 @@ func write(to dictionary: NSMutableDictionary)
 - (void) writeToDictionary:(NSMutableDictionary<NSString *,id> *) dictionary;
 ```
 
-#### Discussion
+## Discussion
 
 Automator sends this message to an action object prior to archiving it. In its implementation of this method, the action object should first invoke the superclass implementation.
 

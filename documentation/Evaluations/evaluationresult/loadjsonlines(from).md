@@ -18,15 +18,15 @@ Loads an array of evaluation results from a JSONL file on disk.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) static func loadJSONLines(from url: URL) async throws -> [EvaluationResult]
+nonisolated(nonsending)
+static func loadJSONLines(from url: URL) async throws -> [EvaluationResult]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`EvaluationResult`](../evaluationresult.md).
 
-#### Discussion
+## Discussion
 
 Each line in the file is expected to be a valid JSON object representing an evaluation result.
 

@@ -19,11 +19,11 @@ func SKDocumentCopyURL(_ inDocument: SKDocument!) -> Unmanaged<CFURL>!
 CFURLRef SKDocumentCopyURL(SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFURL`](../CoreFoundation/cfurl.md) object representing a document location, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 You can use this function to create a [`CFURL`](../CoreFoundation/cfurl.md) object to represent a document’s location. Do this to gain access to the Core Foundation functionality provided by [`CFURL`](../CoreFoundation/cfurl.md). This functionality includes accessing parts of the URL string, getting properties of the URL, and converting the URL to other representations.
 

@@ -5,7 +5,7 @@
 
 Enable the distribution of other third-party apps from within your marketplace app.
 
-#### Overview
+## Overview
 
 An *alternative app marketplace* is an app from which someone can install other third-party apps. To create a marketplace, fill out a webform that outlines the qualifications. If approved, Apple enables a code-signing entitlement on your account to distribute your marketplace app on the web. Apple also provides you with a framework that facilitates the secure installation of apps that your marketplace distributes.
 
@@ -15,7 +15,7 @@ The architecture of an alternative marketplace includes an app, a webpage from w
 
 > ❗ **Important**: To develop an alternative app marketplace, request approval to use the marketplace entitlement ([`com.apple.developer.marketplace.app-installation`](../BundleResources/entitlements/com.apple.developer.marketplace.app-installation.md)). The request process varies by geographic region. For more information and to request the entitlement, see [Participating in alternative distribution for specific regions](./participating-in-alternative-distribution-for-specific-regions.md).
 
-#### Design a marketplace app
+## Design a marketplace app
 
 For an alternative app marketplace:
 
@@ -25,13 +25,13 @@ For an alternative app marketplace:
 - Help provide an age-rating appropriate browsing experience by checking the maximum allowed age rating for the device. Honor any exceptions that a parent or guardian makes for specific apps. See [Providing age-rating appropriate content](./providing-age-rating-appropriate-content.md).
 - Use APIs that vary from App Store apps. Specifically, use [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) for ads, and [Background Assets](../BackgroundAssets/BackgroundAssets.md) to download large files. Use a custom e-commerce solution. API that rely on Apple’s App Store, such as [Apple In-App Purchase](../StoreKit/in-app-purchase.md) and [On Demand Resources](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
 
-#### Add the required target property
+## Add the required target property
 
 If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](./transactionreporting.md) API. For more information, see [Reporting transactions for the Core Technology Commission](./reporting-transactions-for-core-technology-commission.md).
 
 If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration with a value of `NO`.
 
-#### Set up your marketplace app for alternative distribution
+## Set up your marketplace app for alternative distribution
 
 To set up a marketplace, provide your web domain and a distribution key to App Store Connect, which facilitates the secure distribution of your app over the web.
 
@@ -42,7 +42,7 @@ The domain ensures that your marketplace app installs only from your website, an
 
 For more information, see [Distributing your app from your website](./distributing-your-app-from-your-website.md).
 
-#### Facilitate the life cycle of your apps
+## Facilitate the life cycle of your apps
 
 When a developer prepares to distribute their app on your marketplace, provide them a *marketplace token*. They upload the token in App Store Connect, which enables them to choose your marketplace as a distributor. The process of generating and exchanging the token occurs between just your app marketplace and the inquring app developer. For more information, see [Creating keys and establishing alternative marketplace connections](../AppStoreConnectAPI/creating-keys-and-establishing-alternative-marketplace-connections.md).
 
@@ -57,7 +57,7 @@ Although you store apps on — and serve apps from — your web server, people i
 
 > 💡 **Tip**: People can find an app on your alternative app marketplace using Spotlight search if you maintain a list of available apps and upload it to a location known to Apple. For more information, see [Marketplace Search Configurations](../AppStoreConnectAPI/marketplace-search-configurations.md).
 
-#### Test the app during development
+## Test the app during development
 
 App marketplace development can occur anywhere in the world, as Xcode allows running a development-signed or Ad-Hoc signed app marketplace on Simulator and all supported physical devices. Through the development build, apps that the marketplace distributes can also install and run.
 

@@ -21,7 +21,7 @@ The first element of the collection.
 var first: Self.Element? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the collection is empty, the value of this property is `nil`.
 

@@ -24,7 +24,7 @@ static let pregnancy: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierPregnancy;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with samples of this type.
 

@@ -23,7 +23,7 @@ func unfollowExternalSyncDevice()
 - (void) unfollowExternalSyncDevice;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops your input from syncing to the external sync device you specified in [`follow(_:videoFrameDuration:delegate:)`](./follow%28_,videoframeduration,delegate%29.md).
 

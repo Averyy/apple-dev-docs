@@ -23,7 +23,7 @@ var maxResultCount: Int { get set }
 @property (nonatomic, assign) NSInteger maxResultCount;
 ```
 
-#### Discussion
+## Discussion
 
 Spotlight returns all results that it finds by default. Set a maximum limit to terminate the search early, which can improve performance.
 

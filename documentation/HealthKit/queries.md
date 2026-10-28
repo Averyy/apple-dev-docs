@@ -5,7 +5,7 @@
 
 Query health and fitness data.
 
-#### Overview
+## Overview
 
 Use queries to read sample data from the HealthKit store. You can also use queries to list all the sources for a particular data type, or to perform statistical calculations for a data type. For example, statistical queries can calculate the minimum and maximum heart rate for a given week, or the total step count for a given day.
 

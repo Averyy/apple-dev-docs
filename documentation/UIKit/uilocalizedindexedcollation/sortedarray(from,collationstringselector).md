@@ -23,11 +23,11 @@ func sortedArray(from array: [Any], collationStringSelector selector: Selector) 
 - (NSArray *) sortedArrayFromArray:(NSArray *) array collationStringSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing the sorted items from the original `array` parameter.
 
-#### Discussion
+## Discussion
 
 The table-view controller creates the array of objects for a section (`array`) as part of iterating through its model objects with calls to the [`section(for:collationStringSelector:)`](./section%28for,collationstringselector%29.md) method. This method should be called on each local section array.
 

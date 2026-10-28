@@ -20,7 +20,7 @@ Returns the prim at a given path, if it exists.
 func prim(at path: USDLayer.Path) -> USDPrim
 ```
 
-#### Discussion
+## Discussion
 
 If `path` resolves to a prim beneath an instance, returns an instance proxy prim if a prim exists at the corresponding path in that instance’s prototype.
 

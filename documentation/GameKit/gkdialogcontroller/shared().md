@@ -19,11 +19,11 @@ class func shared() -> GKDialogController
 + (GKDialogController *) sharedDialogController;
 ```
 
-#### Return Value
+## Return Value
 
 The shared dialog controller.
 
-#### Discussion
+## Discussion
 
 You can use the shared dialog controller or create your own [`GKDialogController`](../gkdialogcontroller.md) object. For example, you can create separate [`GKDialogController`](../gkdialogcontroller.md) objects for different windows.
 

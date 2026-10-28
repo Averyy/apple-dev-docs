@@ -23,7 +23,7 @@ let kMIDIPropertyDeviceID: CFString
 extern CFStringRef const kMIDIPropertyDeviceID;
 ```
 
-#### Discussion
+## Discussion
 
 MIDI drivers can set this property on their devices or entities. Studio setup editors can allow the user to set this property on external devices.
 

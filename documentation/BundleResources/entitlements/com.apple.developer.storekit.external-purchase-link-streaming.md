@@ -15,7 +15,7 @@ An entitlement that grants a qualifying music-streaming app the ability to commu
 - **Name**: `com.apple.developer.storekit.external-purchase-link-streaming`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement enables qualifying music-streaming apps to communicate and promote offers.
 

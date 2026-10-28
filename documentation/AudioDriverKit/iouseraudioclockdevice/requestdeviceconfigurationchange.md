@@ -15,11 +15,11 @@ Instructs the host to initiate a configuration change operation.
 kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 When an audio device object needs to change its structure or change any state related to I/O for any reason, begin by invoking this host method. The device object may not perform the state change until the host gives the device clearance to do so by invoking the driver’s `PerformDeviceConfigurationChange` method. Note that the host may defer the `PerformDeviceConfigurationChange` call to another thread at the host’s discretion.
 

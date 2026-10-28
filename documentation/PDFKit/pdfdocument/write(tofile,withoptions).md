@@ -24,7 +24,7 @@ func write(toFile path: String, withOptions options: [PDFDocumentWriteOption : A
 - (BOOL) writeToFile:(NSString *) path withOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The most commonly-used options are `kCGPDFContextOwnerPassword`, `kCGPDFContextUserPassword`, `kCGPDFContextAllowsCopying` and `kCGPDFContextAllowsPrinting`. For more details about these options, see [Auxiliary Dictionary Keys](../../CoreGraphics/auxiliary-dictionary-keys.md).
 

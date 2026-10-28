@@ -22,7 +22,7 @@ class let touchBarRecordStopTemplateName: String
 extern NSImageName const NSImageNameTouchBarRecordStopTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for stop recording](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793471@2x.png)
 

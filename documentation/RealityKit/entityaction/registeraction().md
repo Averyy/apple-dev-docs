@@ -26,7 +26,7 @@ static func registerAction()
 static func registerAction()
 ```
 
-#### Discussion
+## Discussion
 
 Registering an action allows RealityKit to retrieve its [`AnimationResource`](../animationresource.md) definitions.
 

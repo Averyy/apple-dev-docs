@@ -15,7 +15,7 @@ An object that provides access to—and a means to respond to—app life-cycle e
 interface App
 ```
 
-#### Overview
+## Overview
 
 You cannot create an instance of the `App` class. An instance of this class is available in the global context as `App`.
 

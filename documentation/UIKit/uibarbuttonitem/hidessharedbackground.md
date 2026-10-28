@@ -21,7 +21,7 @@ var hidesSharedBackground: Bool { get set }
 @property (nonatomic) BOOL hidesSharedBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `YES` to prevent the standard shared background (typically using the Glass effect) from being drawn behind this bar button item.
 

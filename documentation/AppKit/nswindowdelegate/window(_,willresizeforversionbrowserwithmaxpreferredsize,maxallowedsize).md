@@ -20,11 +20,11 @@ optional func window(_ window: NSWindow, willResizeForVersionBrowserWithMaxPrefe
 - (NSSize) window:(NSWindow *) window willResizeForVersionBrowserWithMaxPreferredSize:(NSSize) maxPreferredFrameSize maxAllowedSize:(NSSize) maxAllowedFrameSize;
 ```
 
-#### Return Value
+## Return Value
 
 The size that the window should be.
 
-#### Discussion
+## Discussion
 
 Windows entering the version browser will be resized to the size returned by this method. If either dimension of the returned size is larger than the `maxPreferredFrameSize`, the window will also be scaled down to ensure it fits properly in the version browser.
 

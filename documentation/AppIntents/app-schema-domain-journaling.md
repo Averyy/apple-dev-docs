@@ -5,7 +5,7 @@
 
 Make your journaling app’s actions available in the Shortcuts app by adopting schemas for journal-entry management.
 
-#### Overview
+## Overview
 
 The `.journal` domain defines app schemas that provide a structured representation for common journaling actions and content. Apply schemas in the `.journal` domain to make your journaling app’s functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

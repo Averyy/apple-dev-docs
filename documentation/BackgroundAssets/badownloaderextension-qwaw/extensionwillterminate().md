@@ -22,7 +22,7 @@ This method may be called shortly before the extension is terminated.
 func extensionWillTerminate()
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked if all extension callbacks have returned or if the extension has run over it’s alotted runtime. This callback provides a last chance to tidy up state before process termination.
 

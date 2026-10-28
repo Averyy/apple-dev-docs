@@ -22,7 +22,7 @@ class CPInformationTemplate
 @interface CPInformationTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 An information template displays a list of items, and up to three actions the user can perform.
 

@@ -23,7 +23,7 @@ var possibleTitles: Set<String>? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSSet<NSString *> * possibleTitles;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a hint to the system on how to correctly size the bar button item to be wide enough to accommodate your widest title. Set the value of this property to an [`NSSet`](../../Foundation/nsset.md) object containing all the titles you intend as possible titles for the bar button item. Use the actual text strings you intend to display.
 

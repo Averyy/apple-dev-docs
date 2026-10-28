@@ -19,7 +19,7 @@ The typed variants of data a pipeline stage can produce.
 enum Payload
 ```
 
-#### Overview
+## Overview
 
 The [`SearchPipelineData`](../searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](../cssearchableitem.md) does not support the [`Sendable`](../../Swift/sendable.md) protocol. Treat the data you store in this type as immutable.
 

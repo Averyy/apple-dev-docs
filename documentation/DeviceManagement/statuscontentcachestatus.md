@@ -15,9 +15,9 @@ The status item that reports the status of the Content Cache service.
 object StatusContentCacheStatus
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ object StatusContentCacheStatus
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

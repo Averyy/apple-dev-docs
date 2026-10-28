@@ -21,17 +21,17 @@ func CGWaitForScreenUpdateRects(_ requestedOperations: CGScreenUpdateOperation, 
 extern CGError CGWaitForScreenUpdateRects(CGScreenUpdateOperation requestedOperations, CGScreenUpdateOperation *currentOperation, CGRect **rects, size_t *rectCount, CGScreenUpdateMoveDelta *delta);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 In some applications it may be preferable to wait for screen-update data synchronously, using this function. You should call this function in a thread other than the main event-processing thread.
 
 As an alternative, Quartz also supports asynchronous notification—see [`CGRegisterScreenRefreshCallback(_:_:)`](./cgregisterscreenrefreshcallback%28_,_%29.md) and [`CGScreenRegisterMoveCallback(_:_:)`](./cgscreenregistermovecallback%28_,_%29.md). If refresh or move callback functions are registered, this function should not be used.
 
-##### Special Considerations
+### Special Considerations
 
 This function is implemented in macOS 10.4.3 and later.
 

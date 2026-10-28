@@ -30,7 +30,7 @@ var code: INSetMessageAttributeIntentResponseCode { get }
 @property (atomic, readonly) INSetMessageAttributeIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is set automatically at initialization and can’t be changed later.
 

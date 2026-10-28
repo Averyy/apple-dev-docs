@@ -16,7 +16,7 @@ A data structure that describes the current tracking state for the camera.
 enum Tracking
 ```
 
-#### Overview
+## Overview
 
 During an object capture, many factors contribute to the session’s ability to accurately track the position and orientation of the camera and object, including lighting and enough texture on the object and background. The object capture session uses this data structure to report the current tracking state in the [`cameraTracking`](./cameratracking.md) property.  Additionally, the ARKit coaching overlay will automatically appear when tracking is not `.normal` — the app may need to hide its UI at this time as well to allow proper visibility of the coaching overlay or to provide additional information to the user to correct the situation.
 

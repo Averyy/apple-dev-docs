@@ -15,7 +15,7 @@ An array of map features that someone can select from the map.
 selectableMapFeatures?: MapFeatureType[];
 ```
 
-#### Discussion
+## Discussion
 
 The map displays this array of the selectable map features from the types available in [`MapFeatureType`](../mapfeaturetype.md).
 

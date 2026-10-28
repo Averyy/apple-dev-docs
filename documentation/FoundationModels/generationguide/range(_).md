@@ -36,7 +36,7 @@ static func range(_ range: ClosedRange<Float>) -> GenerationGuide<Float>
 static func range(_ range: ClosedRange<Int>) -> GenerationGuide<Int>
 ```
 
-#### Discussion
+## Discussion
 
 Bounds are inclusive.
 

@@ -19,7 +19,7 @@ class MEOutgoingMessageEncodingStatus
 @interface MEOutgoingMessageEncodingStatus : NSObject
 ```
 
-#### Overview
+## Overview
 
 As a user composes a new message, MailKit requests the encoding status from your message security handler. The handler provides an [`MEOutgoingMessageEncodingStatus`](./meoutgoingmessageencodingstatus.md) that contains:
 

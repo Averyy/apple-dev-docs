@@ -9,7 +9,7 @@ Get a list of image resource IDs for a specific Game Center achievement localiza
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - 200:

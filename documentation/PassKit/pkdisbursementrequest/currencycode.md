@@ -19,7 +19,7 @@ The currency code string for this disbursement.
 @property (nonatomic, copy) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Pay interprets the amounts that this request’s summary items provide as amounts in this currency. For more information on currency codes, see [ISO 4127 Currency Codes](https://www.iso.org/iso-4217-currency-codes.html).
 

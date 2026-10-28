@@ -24,11 +24,11 @@ func run(feeds: [MPSGraphTensor : MPSGraphTensorData], targetTensors: [MPSGraphT
 - (MPSGraphTensorDataDictionary *) runWithFeeds:(MPSGraphTensorDataDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor : MPSGraphTensorData dictionary with results synchronized to the CPU memory.
 
-#### Discussion
+## Discussion
 
 This call blocks until execution has completed.
 

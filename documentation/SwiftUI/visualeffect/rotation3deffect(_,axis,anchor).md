@@ -27,11 +27,11 @@ func rotation3DEffect(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat)
 func rotation3DEffect(_ angle: Angle, axis: RotationAxis3D, anchor: UnitPoint3D = .center) -> _Rotation3DEffectAngleAxis
 ```
 
-#### Return Value
+## Return Value
 
 A rotation effect.
 
-#### Discussion
+## Discussion
 
 This effect causes the content to appear rotated, but doesn’t change the content’s frame. The following code applies a rotation of 45° about the y-axis, using the default anchor point at the center of the content:
 

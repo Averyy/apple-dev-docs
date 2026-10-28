@@ -5,7 +5,7 @@
 
 Break an existing body component into two components, and then insert a pull quote between them.
 
-#### Overview
+## Overview
 
 You can use pull quotes to highlight particularly compelling and relevant points. Visually, a pull quote can break up long portions of text, providing relief to the user.
 
@@ -18,7 +18,7 @@ You can use pull quotes to highlight particularly compelling and relevant points
 
 > 💡 **Tip**:  This example uses curly quotes. If you ever want to use straight quotes instead, make sure you “escape” the straight quotes using a backslash (`\`).
 
-##### Add a Pull Quote in Your Article
+### Add a Pull Quote in Your Article
 
 When a pull quote is accompanied by an attribution line, use two separate `pullquote` components. This allows you to use different layouts and different text styles for the quote text and the attribution text.
 
@@ -35,7 +35,7 @@ Your code should look like the example code [Pull Quote: Result](./adding-a-pull
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the pull quote and attribution.
 
-###### Pull Quote: Copy This Code
+#### Pull Quote: Copy This Code
 
 ```json
     {
@@ -48,7 +48,7 @@ After you make these changes in your code, you can preview your working `article
     },
 ```
 
-###### Pull Quote: Result
+#### Pull Quote: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -71,7 +71,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define Styles for Pull Quote Text
+### Define Styles for Pull Quote Text
 
 In [Creating Your First Article](./creating-your-first-article.md), you applied text styles using `ComponentTextStyle` objects. Here, you’ll do something similar—create two more `ComponentTextStyle` objects so that you can apply styles to `pullquote` components.
 
@@ -84,7 +84,7 @@ You can also add tracking, or the horizontal spacing between letters, to take ad
 
 Your code should look like the example code [Pull Quote Text Styles: Result](./adding-a-pull-quote.md#Pull-Quote-Text-Styles-Result).
 
-###### Pull Quote Text Styles: Copy This Code
+#### Pull Quote Text Styles: Copy This Code
 
 ```json
 ,
@@ -105,7 +105,7 @@ Your code should look like the example code [Pull Quote Text Styles: Result](./a
     }
 ```
 
-###### Pull Quote Text Styles: Result
+#### Pull Quote Text Styles: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -134,7 +134,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define Minor Adjustments for Pull Quote Positions
+### Define Minor Adjustments for Pull Quote Positions
 
 In [Positioning Text Components](./positioning-text-components.md), you adjusted the positions of some components using `ComponentLayout` objects. Now you’ll create two other `ComponentLayout` objects to adjust the positions of your pull quote components.
 
@@ -143,7 +143,7 @@ In [Positioning Text Components](./positioning-text-components.md), you adjusted
 
 Your code should look like the example code [Pull Quote Layout: Result](./adding-a-pull-quote.md#Pull-Quote-Layout-Result).
 
-###### Pull Quote Layout: Copy This Code
+#### Pull Quote Layout: Copy This Code
 
 ```json
 ,
@@ -164,7 +164,7 @@ Your code should look like the example code [Pull Quote Layout: Result](./adding
     }
 ```
 
-###### Pull Quote Layout: Result
+#### Pull Quote Layout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -193,7 +193,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use Style and Layout Objects and Add Dividers
+### Use Style and Layout Objects and Add Dividers
 
 Now that you have defined `ComponentLayout` objects, you can use them in the `pullquote` components.
 
@@ -212,7 +212,7 @@ Your code should look like the example code [Pull Quote Styles and Layout: Resul
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the changes to styles and layout. For example, the vertical positioning of the pull quote components has changed, and the attribution uses a different color. You can also see the new dividers.
 
-###### Divider Above Pull Quote: Copy This Code
+#### Divider Above Pull Quote: Copy This Code
 
 ```json
     {
@@ -225,7 +225,7 @@ After you make these changes in your code, you can preview your working `article
     },
 ```
 
-###### Divider Below Pull Quote: Copy This Code
+#### Divider Below Pull Quote: Copy This Code
 
 ```json
     {
@@ -238,7 +238,7 @@ After you make these changes in your code, you can preview your working `article
     },
 ```
 
-###### Pull Quote Styles and Layout: Result
+#### Pull Quote Styles and Layout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -280,11 +280,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding an Image and Captions](./adding-an-image-and-captions.md)
 
-##### Next
+### Next
 
 [Adding a Gallery of Images](./adding-a-gallery-of-images.md)
 

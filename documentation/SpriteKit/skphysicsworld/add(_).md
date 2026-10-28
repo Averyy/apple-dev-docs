@@ -29,7 +29,7 @@ func add(_ joint: SKPhysicsJoint)
 
 - [Connecting Bodies with Joints](../connecting-bodies-with-joints.md)
 
-#### Discussion
+## Discussion
 
 For a joint to take effect, it must be added to the physics world.
 

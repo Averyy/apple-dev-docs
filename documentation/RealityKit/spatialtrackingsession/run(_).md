@@ -18,7 +18,7 @@ Runs the spatial tracking session with the specified configuration.
 final func run(_ spatialTrackingConfiguration: SpatialTrackingSession.Configuration) async -> SpatialTrackingSession.UnavailableCapabilities?
 ```
 
-#### Return Value
+## Return Value
 
 The unavailable capabilities based on the hardware and the user authorization.
 

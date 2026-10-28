@@ -27,7 +27,7 @@ var expirationHandler: (() -> Void)? { get set }
 
 - [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Discussion
+## Discussion
 
 The time allocated by the system for expiration handlers doesn’t vary with the number of background tasks. All expiration handlers must complete before the allocated time.
 

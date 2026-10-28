@@ -19,7 +19,7 @@ func es_muted_processes_events(_ client: OpaquePointer, _ muted_processes: Unsaf
 extern es_return_t es_muted_processes_events(es_client_t *client, es_muted_processes_t **muted_processes);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the request for muted processes succeeded or failed with an error.
 

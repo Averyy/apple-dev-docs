@@ -21,7 +21,7 @@ func updateAutoSignInToken(_ newToken: String, updateContext: VSUserAccountManag
 
 - [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 Call this method when generating a new token value for an account. To update the token, request the person’s authorization for Automatic Sign-In. For more information, see [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md).
 

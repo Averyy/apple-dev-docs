@@ -23,11 +23,11 @@ func gss_import_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ i
 OM_uint32 gss_import_sec_context(OM_uint32 *minor_status, gss_buffer_t const interprocess_token, gss_ctx_id_t*context_handle);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 You can import an interprocess token only once. After you have imported it, release the token’s buffer using a call to [`gss_release_buffer(_:_:)`](./gss_release_buffer%28_,_%29.md).
 

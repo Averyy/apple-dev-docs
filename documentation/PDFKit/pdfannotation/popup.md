@@ -24,11 +24,11 @@ var popup: PDFAnnotation? { get set }
 @property (nonatomic, strong, nullable) PDFAnnotation * popup;
 ```
 
-#### Return Value
+## Return Value
 
 The pop-up annotation associated with the annotation, or `NULL` if no pop-up exists.
 
-#### Discussion
+## Discussion
 
 Pop-up annotations are not used with links or widgets. The bounds and open state of the pop-up annotation indicate the placement and open state of the pop-up window.
 

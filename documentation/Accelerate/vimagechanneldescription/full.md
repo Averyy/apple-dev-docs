@@ -25,7 +25,7 @@ var full: CGFloat
 CGFloat full;
 ```
 
-#### Discussion
+## Discussion
 
 This is the encoding for `0.5` for chrominance.
 

@@ -15,7 +15,7 @@ The data and links that describe the image of the Game Center leaderboard locali
 object GameCenterLeaderboardLocalizationV2.Relationships.Image
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

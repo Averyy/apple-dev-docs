@@ -25,7 +25,7 @@ static let ubiquitousItemIsExcludedFromSyncKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemIsExcludedFromSyncKey;
 ```
 
-#### Discussion
+## Discussion
 
 If the system excludes the item from syncing, the item is locally on-disk, but isn’t available on the server. An excluded item is no longer ubiquitous.
 

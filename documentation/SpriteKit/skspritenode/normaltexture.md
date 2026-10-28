@@ -25,7 +25,7 @@ var normalTexture: SKTexture? { get set }
 @property (nonatomic, retain, nullable) SKTexture * normalTexture;
 ```
 
-#### Discussion
+## Discussion
 
 A normal map texture is used when a sprite is lit, giving it a more realistic look with shadows and specular highlights. The texture must be a normal map texture.
 

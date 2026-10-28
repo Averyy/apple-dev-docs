@@ -19,7 +19,7 @@ func attachmentSize(forGlyphAt glyphIndex: Int) -> NSSize
 - (NSSize) attachmentSizeForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The layout manager calls this method for glyphs representing attachments, and returns the size that the attachment cell occupies. Returns `{-1.0, -1.0}` if there is no attachment laid for the specified glyph.
 

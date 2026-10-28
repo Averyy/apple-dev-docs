@@ -17,7 +17,7 @@ Applies the Softsign function.
 func softsign(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x / (1 + MLX.abs(x))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`Softsign`](./softsign.md)

@@ -24,7 +24,7 @@ var limit: Int { get }
 @property (readonly) NSUInteger limit;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value sets the maximum number of samples that the query returns upon completion.
 

@@ -5,7 +5,7 @@
 
 Create managed asset packs, choose download options, and upload Apple-hosted asset packs  to App Store Connect.
 
-#### Overview
+## Overview
 
 Before you can use Managed Background Assets, you need to create asset packs with a manifest file that specifies a download policy and provides other details. Then Managed Background Assets can automatically manage downloads, updates, compression, and more for your assets.
 
@@ -13,7 +13,7 @@ If you use Apple-Hosted Background Assets, you upload the asset packs to App Sto
 
 To add an Apple-Hosted Background Assets downloader extension to your app, see [Downloading Apple-hosted asset packs](./downloading-apple-hosted-asset-packs.md). To test your asset packs before uploading them to App Store Connect, see [Testing asset packs locally](./testing-asset-packs-locally.md).
 
-##### Identify asset packs and choose download policies
+### Identify asset packs and choose download policies
 
 Group assets that you want to download together into asset packs. For example, create an asset pack that contains the textures, sound effects, and GPU shaders for a tutorial in your game. You can also include CPU and GPU executables in an asset pack, but not macOS executables.
 
@@ -27,7 +27,7 @@ For example, choose `essential` for the tutorial asset pack so that people can r
 
 For limits on asset packs hosted by Apple, see [Apple-hosted asset pack size limits](https://developer.apple.com/help/app-store-connect/reference/apple-hosted-asset-pack-size-limits) in App Store Connect Help.
 
-##### Create a manifest file
+### Create a manifest file
 
 Add a manifest file to your asset pack that specifies a download policy and other details. Create a JSON manifest file that contains information about your asset pack. After you install Xcode, run this `xcrun` command in Terminal to generate a manifest template:
 
@@ -69,7 +69,7 @@ This example shows a manifest file for downloading assets for a game’s tutoria
 }
 ```
 
-##### Archive asset packs
+### Archive asset packs
 
 Next, use the packaging tool command to compress the assets, along with the manifest file, into an archive. Set the current directory in Terminal to the root of your source repository and pass the manifest file to the packaging tool command:
 
@@ -78,7 +78,7 @@ cd ~/Documents/The\ Coast/
 xcrun ba-package Manifest.json -o Tutorial.aar
 ```
 
-##### Manage asset packs in App Store Connect
+### Manage asset packs in App Store Connect
 
 For Apple-hosted asset packs, upload your asset packs — independent of your app builds — to App Store Connect using the  [Transporter](https://apps.apple.com/us/app/transporter/id1450874784) app, the `altool` command-line tool, iTMSTransporter, or the [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md). Later, when you want to test your app using TestFlight with external testers or to distribute it on the App Store, you can submit your asset packs for review.
 

@@ -13,11 +13,11 @@ Request analytics reports for your apps.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
 When making a request with this endpoint, the `accessType` `ONGOING` is most common and provides current data. This report request generates reports daily for each granularity: daily, weekly, and monthly. Use `ONE_TIME_SNAPSHOT` to get historical data.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

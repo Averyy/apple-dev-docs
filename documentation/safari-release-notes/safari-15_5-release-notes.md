@@ -5,26 +5,26 @@
 
 Released May 16, 2022 — Version 15.5 (17613.2.7)
 
-#### Overview
+## Overview
 
 Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for the `inert` attribute.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed SVG tags behind modal dialogs to not be clickable.
 - Fixed the Dialog element only animating once.
 - Fixed rendering a USDZ loaded as the main resource.
 - Fixed uploading Pages files to file inputs accepting Pages and JPEG files.
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed BroadcastChannel to prevent communicating across distinct opaque origins.
 - Fixed respecting website policies during COOP-based process swaps.
@@ -34,9 +34,9 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed computing the site for cookies when the document is created by `window.open`.
 - Fixed `Element.focus({preventScroll: true})` to correctly prevent scrolling on iOS.
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `background-clip: text` to work with `display: flex`.
 - Fixed rendering for many `position: sticky` elements.
@@ -48,29 +48,29 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed `aspect-ratio` with percentage widths.
 - Fixed returning the default computed style for elements without the `transition` or `animation` shorthands.
 
-##### Authentication
+### Authentication
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebAuthn implementation to match specifications to use the default `pubKeyCredParams` list if the list in `makeCredential` is empty.
 
-##### Content Security Policy
+### Content Security Policy
 
-###### New Features
+#### New Features
 
 - Added support for the `worker-src` Content Security Policy directive.
 - Updated Content Security Policy console logging in Web Inspector.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed blocking image content in object elements.
 - Fixed sending violation reports to the document for a detached element.
 - Fixed nonce hiding from the DOM.
 - Fixed Content Security Policy handling of JavaScript URLs.
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed key rotation for single key audio in a modern encrypted media extension (EME) paired with a native HTTP Live Streaming (HLS) player.
 - Fixed disabled Control Center spatial control when playing a video in Safari.
@@ -85,16 +85,16 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed playback of HTML5 embedded audio with unbounded range requests.
 - Fixed the video poster disappearing prematurely on play, leaving a transparent video element.
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect label returned by `getUserMedia` regardless of language selected.
 - Fixed perceived audio latency.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed text wrapping for windows that exceed a certain width.
 - Fixed a Korean webfont rendering issue.
@@ -102,53 +102,53 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed to use `colgroup` for table sizing when it comes after `thead`, `tbody`, `tfoot`, or `tr` elements.
 - Fixed two Bopomofo tone marks to move to the correct place in vertical text with a particular Bopomofo font.
 
-##### Apple Pay
+### Apple Pay
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the Apple Pay sheet to return `billingContact` on iOS.
 
-##### WebGL
+### WebGL
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebGL rendering when using `preserveDrawingBuffer` on iOS.
 - Fixed a number of issues related to multisampling that were breaking WebGL content.
 - Fixed handling `TypedArray` with `AllowShared` to be accepted.
 - Fixed `WEBGL_multi_draw` validation.
 
-##### Web Inspector
+### Web Inspector
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed large message handling from remote devices.
 - Fixed an issue with repeated opening and closing.
 
-##### Compatibility
+### Compatibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed launching Microsoft Teams from Safari.
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added `minimumViewportInset` and `maximumViewportInset` API to support small (`svw`, `svh`, `svi`, `svb`, `svmin`, `svmax`), large (`lvw`, `lvh`, `lvi`, `lvb`, `lvmin`, `lvmax`), dynamic (`dvw`, `dvh`, `dvi`, `dvb`, `dvmin`, `dvmax`), and logical (`vi`, `vb`) viewport units.
 
-##### SFSafariViewController
+### SFSafariViewController
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a noticeable delay in playback when rotating a full-screen YouTube video.
 
-##### Safari Extensions
+### Safari Extensions
 
-###### New Features
+#### New Features
 
 - Added support for `optional_host_permissions` for Safari Web Extensions.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash when clicking on Safari App Extension toolbar items.
 - Fixed an issue where `SFContentBlockerManager.getStateOfContentBlocker()` could return an incorrect value on iOS.

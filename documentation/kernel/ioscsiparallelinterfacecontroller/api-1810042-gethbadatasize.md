@@ -12,11 +12,11 @@ UInt32 GetHBADataSize (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns HBA Data size in bytes.
 
-#### Overview
+## Overview
 
 Method to retrieve the HBA Data Size in bytes.
 

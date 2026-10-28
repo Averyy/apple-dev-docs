@@ -10,11 +10,11 @@ virtual IOReturn getSpeed(
  UInt16 *kilobytesPerSecond);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Get the current speed used for data transfers.
 

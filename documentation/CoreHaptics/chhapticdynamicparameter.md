@@ -24,7 +24,7 @@ class CHHapticDynamicParameter
 @interface CHHapticDynamicParameter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Dynamic parameters change their associated event parameters at specific times. When you send a dynamic parameter to a haptic pattern player, the value associated with the parameter changes abruptly at the specified time, across all events in the pattern. To precipitate a gradual change, use a [`CHHapticParameterCurve`](./chhapticparametercurve.md) object.
 

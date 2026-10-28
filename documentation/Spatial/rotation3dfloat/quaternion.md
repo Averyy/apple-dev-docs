@@ -23,7 +23,7 @@ var quaternion: simd_quatf { get set }
 simd_quatf quaternion;
 ```
 
-#### Discussion
+## Discussion
 
 A single-precision quaternion.
 

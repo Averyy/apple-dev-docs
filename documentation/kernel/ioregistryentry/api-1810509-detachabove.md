@@ -12,7 +12,7 @@ virtual void detachAbove(
  const IORegistryPlane *plane );
 ```
 
-#### Overview
+## Overview
 
 This method calls detachFromParent in the entry for each of its parent entries in the plane.
 

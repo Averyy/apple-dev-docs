@@ -15,7 +15,7 @@ A unique identifier for seats.
 struct TableSeatIdentifier
 ```
 
-#### Overview
+## Overview
 
 The seat identifier needs to be unique across all instances of the same tabletop game.
 

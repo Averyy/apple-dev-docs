@@ -21,7 +21,7 @@ An error indicating that the intent has an invalid parameter value.
 case missingParameterValue
 ```
 
-#### Discussion
+## Discussion
 
 For example, an intent has a non-optional parameter but it doesn’t have a default value.
 

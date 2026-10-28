@@ -25,7 +25,7 @@ func enumerateBytes(_ block: (UnsafeRawPointer, NSRange, UnsafeMutablePointer<Ob
 - (void) enumerateByteRangesUsingBlock:(void (^)(const void *bytes, NSRange byteRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 The enumeration block is called once for each contiguous region of memory in the receiver (once total for a contiguous [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) object), until either all bytes have been enumerated, or the `stop` parameter is set to [`true`](../../Swift/true.md).
 

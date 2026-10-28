@@ -19,7 +19,7 @@ class LAAuthenticationView
 @interface LAAuthenticationView : NSView
 ```
 
-#### Overview
+## Overview
 
 In the view that you use to manage authentication, add a local authentication view as a subview and provide it with an [`LAContext`](../LocalAuthentication/lacontext.md) instance. For example, you can do this in the [`loadView()`](../AppKit/nsviewcontroller/loadview%28%29.md) method of your view controller:
 

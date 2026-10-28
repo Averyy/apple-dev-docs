@@ -25,7 +25,7 @@ func mutableCopy(using transform: UnsafePointer<CGAffineTransform>?) -> CGMutabl
 extern CGMutablePathRefCGPathCreateMutableCopyByTransformingPath(CGPathRef path, const CGAffineTransform *transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new, mutable copy of the specified path transformed by the transform parameter. You are responsible for releasing this object.
 

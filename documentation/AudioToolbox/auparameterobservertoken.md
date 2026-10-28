@@ -24,7 +24,7 @@ typealias AUParameterObserverToken = UnsafeMutableRawPointer
 typedef void * AUParameterObserverToken;
 ```
 
-#### Discussion
+## Discussion
 
 The token may represent an [`AUParameterObserver`](./auparameterobserver.md) or [`AUParameterRecordingObserver`](./auparameterrecordingobserver.md) block.
 

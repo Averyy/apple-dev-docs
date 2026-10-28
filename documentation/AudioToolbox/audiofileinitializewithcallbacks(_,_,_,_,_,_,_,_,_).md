@@ -24,7 +24,7 @@ func AudioFileInitializeWithCallbacks(_ inClientData: UnsafeMutableRawPointer, _
 extern OSStatus AudioFileInitializeWithCallbacks(void *inClientData, AudioFile_ReadProc inReadFunc, AudioFile_WriteProc inWriteFunc, AudioFile_GetSizeProc inGetSizeFunc, AudioFile_SetSizeProc inSetSizeFunc, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inFormat, AudioFileFlags inFlags, AudioFileID*outAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

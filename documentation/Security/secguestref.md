@@ -20,7 +20,7 @@ typealias SecGuestRef = UInt32
 typedef u_int32_t SecGuestRef;
 ```
 
-#### Discussion
+## Discussion
 
 Guest handles are assigned by the host at will, with [`kSecNoGuest`](./ksecnoguest.md) being reserved as the `NULL` value. They can be reused for new children if desired.
 

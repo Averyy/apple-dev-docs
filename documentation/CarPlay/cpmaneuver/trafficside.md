@@ -21,7 +21,7 @@ var trafficSide: CPTrafficSide { get set }
 @property (nonatomic, assign) CPTrafficSide trafficSide;
 ```
 
-#### Discussion
+## Discussion
 
 One of the [`CPTrafficSide`](../cptrafficside.md) values that indicates which side of the road traffic drives on; a [`CPManeuver`](../cpmaneuver.md) requires this value.
 

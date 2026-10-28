@@ -15,7 +15,7 @@ The stroke color of a line.
 strokeColor?: string;
 ```
 
-#### Discussion
+## Discussion
 
 This can be any valid CSS color value. Set to `null` for no stroke. The default stroke color is `rgb(0, 122, 255)`.
 

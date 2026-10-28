@@ -25,7 +25,7 @@ var particleSize: CGFloat { get set }
 @property (nonatomic) CGFloat particleSize;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses this value for both the width and height of the [`particleImage`](./particleimage.md) texture at render time. (If you use the [`stretchFactor`](./stretchfactor.md) property to stretch particles in their direction of motion, the [`particleSize`](./particlesize.md) value determines the width and height before stretching.) You can randomize the sizes of newly spawned particles with the [`particleSizeVariation`](./particlesizevariation.md) property.
 

@@ -24,11 +24,11 @@ optional func textView(_ textView: UITextView, shouldInteractWith textAttachment
 - (BOOL) textView:(UITextView *) textView shouldInteractWithTextAttachment:(NSTextAttachment *) textAttachment inRange:(NSRange) characterRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if interaction with the text attachment should be allowed; [`false`](../../Swift/false.md) if interaction should not be allowed.
 
-#### Discussion
+## Discussion
 
 A text view calls this method if the user taps or long-presses the text attachment and its [`image`](../nstextattachment/image.md) property is not `nil`. Implementation of this method is optional. You can use this method to trigger an action in addition to displaying the text attachment inline with the text.
 

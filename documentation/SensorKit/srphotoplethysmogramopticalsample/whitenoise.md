@@ -17,7 +17,7 @@ An estimate of the white noise of the sensor.
 @property (nonatomic, strong, readonly, nullable) NSNumber * whiteNoise;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the white noise variance estimate per Hz in the [`normalizedReflectance`](./normalizedreflectance-9aidm.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
 

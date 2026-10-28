@@ -29,11 +29,11 @@ class func inferredMappingModel(forSourceModel sourceModel: NSManagedObjectModel
 
 - [Migrating your data model automatically](../migrating-your-data-model-automatically.md)
 
-#### Return Value
+## Return Value
 
 A newly-created mapping model to migrate data from the source to the destination model. If the mapping model can not be created, returns `nil`.
 
-#### Discussion
+## Discussion
 
 A model will be created only if all changes are simple enough to be able to reasonably infer a mapping (for example, removing or renaming an attribute, adding an optional attribute or relationship, or adding renaming or deleting an entity). Element IDs are used to track renamed properties and entities.
 

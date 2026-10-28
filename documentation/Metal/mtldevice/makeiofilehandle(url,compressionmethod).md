@@ -25,11 +25,11 @@ func makeIOFileHandle(url: URL, compressionMethod: MTLIOCompressionMethod) throw
 - (id<MTLIOFileHandle>) newIOFileHandleWithURL:(NSURL *) url compressionMethod:(MTLIOCompressionMethod) compressionMethod error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLIOFileHandle`](../mtliofilehandle.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 For information about using input/output command queues and file handles, see [Resource loading](../resource-loading.md).
 

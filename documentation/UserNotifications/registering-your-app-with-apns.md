@@ -5,13 +5,13 @@
 
 Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
 
-#### Overview
+## Overview
 
 Apple Push Notification service (APNs) must know the address of a user’s device before it can send notifications to that device. This address takes the form of a device token unique to both the device and your app. At launch time, your app communicates with APNs and receives its device token, which you then forward to your provider server. Your server includes that token with any notifications it sends.
 
 > **Note**:  You can’t use the same device token for more than one app, even when the apps are on the same device. Every app must request their own unique device token and forward it to your provider server.
 
-##### Enable the push notifications capability
+### Enable the push notifications capability
 
 To add the required entitlements to your app, enable the Push Notifications capability in your Xcode project, as shown in the figure below. Enabling this option in iOS adds the [`APS Environment Entitlement`](../BundleResources/entitlements/aps-environment.md) to the app. In macOS, it adds the [`APS Environment (macOS) Entitlement`](../BundleResources/entitlements/com.apple.developer.aps-environment.md). See [Enable push notifications](https://help.apple.com/xcode/mac/current/#/devdfd3d04a1) in Xcode help for more information.
 
@@ -19,7 +19,7 @@ To add the required entitlements to your app, enable the Push Notifications capa
 
 > ❗ **Important**:  In your developer account, enable the push notification service for the App ID assigned to your project. For more information about configuring your developer account, go to your [Developer Account](https://developer.apple.com/account/#/overview/) page.
 
-##### Register your app and retrieve your app’s device token
+### Register your app and retrieve your app’s device token
 
 Register your app with APNs and receive a globally unique device token, which is effectively the address of your app on the current device. Your provider server must have this token before it can deliver notifications to the device.
 
@@ -53,7 +53,7 @@ func application(_ application: UIApplication,
 
 > ❗ **Important**:  Never cache device tokens in local storage. APNs issues a new token when the user restores a device from a backup, when the user installs your app on a new device, and when the user reinstalls the operating system. You get an up-to-date token each time you ask the system to provide the token.
 
-##### Forward tokens to your provider server
+### Forward tokens to your provider server
 
 Upon receiving a device token, open a network connection from your app to your provider server. Securely forward the device token and any other information you need to identify the specific user to your server. For example, you might include the user’s login name or something that connects them to your service. Encrypt any information you send over the network.
 

@@ -15,7 +15,7 @@ The contents that follow the divider accessibility element.
 @property (copy, nullable) NSArray * accessibilityNextContents;
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this property to set the subview adjacent to a split view’s splitter element.
 

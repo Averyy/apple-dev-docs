@@ -19,7 +19,7 @@ init(ethernetAddress: ether_addr_t)
 - (instancetype) initWithEthernetAddress:(ether_addr_t) ethernetAddress;
 ```
 
-#### Return Value
+## Return Value
 
 A MAC address object with the specified Ethernet address.
 

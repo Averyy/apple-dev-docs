@@ -19,7 +19,7 @@ init!()
 - (id) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized matrix object or `nil` if the object couldn’t be created.
 

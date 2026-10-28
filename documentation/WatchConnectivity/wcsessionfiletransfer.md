@@ -23,7 +23,7 @@ class WCSessionFileTransfer
 @interface WCSessionFileTransfer : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class yourself. When you initiate a file transfer, the system creates a new file transfer object to represent the transferred file. Use that object to get the file information or to cancel the transfer as needed.
 

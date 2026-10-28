@@ -5,7 +5,7 @@
 
 Manage tickets, boarding passes, payment cards and other passes in the Wallet app.
 
-#### Overview
+## Overview
 
 To access your pass using PassKit, add the Wallet capability to your app. Use the API in Wallet to access and manage different types of passes, including identity passes, payment passes, and digital car keys. You can choose to access all of the passes signed with your developer team identifier, or access a subset of pass types. For information on adding capabilities to your app, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md). For information on signing a pass, see [Wallet Passes](../WalletPasses/WalletPasses.md).
 

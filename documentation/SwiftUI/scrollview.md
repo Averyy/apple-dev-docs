@@ -28,7 +28,7 @@ struct ScrollView<Content> where Content : View
 - [Creating performant scrollable stacks](./creating-performant-scrollable-stacks.md)
 - [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 
-#### Overview
+## Overview
 
 The scroll view displays its content within the scrollable content region. As the user performs platform-appropriate scroll gestures, the scroll view adjusts what portion of the underlying content is visible. `ScrollView` can scroll horizontally, vertically, or both, but does not provide zooming functionality.
 
@@ -48,7 +48,7 @@ var body: some View {
 
 ![A scroll view with a series of vertically arranged rows, reading](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-ScrollView-rows-with-indicator@2x.png)
 
-##### Controlling Scroll Position
+### Controlling Scroll Position
 
 You can influence where a scroll view is initially scrolled by using the [`defaultScrollAnchor(_:)`](./view/defaultscrollanchor%28_%29.md) view modifier.
 

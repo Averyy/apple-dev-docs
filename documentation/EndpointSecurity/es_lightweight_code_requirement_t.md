@@ -18,7 +18,7 @@ struct es_lightweight_code_requirement_t
 typedef struct { ... } es_lightweight_code_requirement_t;
 ```
 
-#### Overview
+## Overview
 
 Identity facts cached from a service’s Lightweight Code Requirement (LWCR) — the code-signing constraint launchd was told to enforce when the service binary spawns.
 

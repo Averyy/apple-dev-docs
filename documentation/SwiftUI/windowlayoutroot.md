@@ -16,7 +16,7 @@ A proxy which represents the root contents of a window.
 struct WindowLayoutRoot
 ```
 
-#### Overview
+## Overview
 
 This type acts like a proxy for the contents of the window defined by a SwiftUI [`Scene`](./scene.md). The [`defaultWindowPlacement(_:)`](./scene/defaultwindowplacement%28_%29.md) modifier receives an instance of this type, representing the contents of the window being created.
 

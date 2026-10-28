@@ -16,7 +16,7 @@ The collection of spatial Persona seats this template contains.
 var elements: [any SpatialTemplateElement] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the seat locations for the participants. Add the seats your template requires, and specify each seat’s location relative to your app’s shared scene. For each seat, you can also specify the direction that seat faces, and optional role information. The system fills seats in the same order they appear in the array.
 

@@ -24,15 +24,15 @@ class func defaultValue(forKey key: String) -> Any?
 + (id) defaultValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The default value for the named property. Returns `nil` if no default value has been set.
 
-#### Discussion
+## Discussion
 
 If you define custom properties for a layer but do not set a value, this method returns a suitable “zero” default value based on the expected value of the `key`. For example, if the value for `key` is a [`CGSize`](../../CoreFoundation/cgsize.md) struct, the method returns a size struct containing (0.0,0.0) wrapped in an [`NSValue`](../../Foundation/nsvalue.md) object. For a [`CGRect`](../../CoreFoundation/cgrect.md) an empty rectangle is returned. For [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) and [`CATransform3D`](../catransform3d.md), the appropriate identity matrix is returned.
 
-##### Special Considerations
+### Special Considerations
 
 If `key` is not a known for property of the class, the result of the method is undefined.
 

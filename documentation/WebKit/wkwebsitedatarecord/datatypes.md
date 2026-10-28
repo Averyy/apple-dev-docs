@@ -23,7 +23,7 @@ var dataTypes: Set<String> { get }
 @property (nonatomic, copy, readonly) NSSet<NSString *> * dataTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Each record contains the set of types that the associated website stores. For a list of possible types, see [Data Store Record Types](../data-store-record-types.md).
 

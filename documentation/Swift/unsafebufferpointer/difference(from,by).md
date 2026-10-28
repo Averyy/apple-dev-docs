@@ -21,11 +21,11 @@ Returns the difference needed to produce this collection’s ordered elements fr
 func difference<C>(from other: C, by areEquivalent: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element> where C : BidirectionalCollection, Self.Element == C.Element
 ```
 
-#### Return Value
+## Return Value
 
 The difference needed to produce the receiver’s state from the parameter’s state.
 
-#### Discussion
+## Discussion
 
 This function does not infer element moves. If you need to infer moves, call the `inferringMoves()` method on the resulting difference.
 

@@ -23,7 +23,7 @@ func setHighlighted(_ highlighted: Bool, animated: Bool)
 - (void) setHighlighted:(BOOL) highlighted animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Highlights or unhighlights the cell, animating the transition between regular and highlighted state if `animated` is YES.  Highlighting affects the appearance of the cell’s labels, image, and background.
 

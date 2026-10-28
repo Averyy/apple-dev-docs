@@ -21,7 +21,7 @@ A text field style with no decoration.
 struct PlainTextFieldStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plain`](./textfieldstyle/plain.md) to construct this style.
 

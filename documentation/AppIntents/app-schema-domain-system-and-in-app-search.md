@@ -5,7 +5,7 @@
 
 Make your app’s actions available to Apple Intelligence and Siri by adopting schemas for in-app search and content access.
 
-#### Overview
+## Overview
 
 The `.system` domain defines app schemas that provide a structured representation for common search actions and content. Apply schemas in the `.system` domain to make your app’s search and content access available to Apple Intelligence and Siri.
 

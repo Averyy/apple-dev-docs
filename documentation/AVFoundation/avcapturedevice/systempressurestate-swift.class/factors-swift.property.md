@@ -23,7 +23,7 @@ var factors: AVCaptureDevice.SystemPressureState.Factors { get }
 @property (atomic, readonly) AVCaptureSystemPressureFactors factors;
 ```
 
-#### Discussion
+## Discussion
 
 Increased system pressure may be due to one or more contributing causes; this set provides additional details for the overall performance characterization reported by the [`level`](./level-swift.property.md) property.
 

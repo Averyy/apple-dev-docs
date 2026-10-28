@@ -23,7 +23,7 @@ var limitsLayoutForSuspiciousContents: Bool { get set }
 @property BOOL limitsLayoutForSuspiciousContents;
 ```
 
-#### Discussion
+## Discussion
 
 By enabling this functionality, it’s possible that certain text — such as a very long paragraph — might result in an unexpected layout. Defaults to `false`.
 

@@ -25,7 +25,7 @@ func makeSamplerState(descriptor: MTLSamplerDescriptor) -> (any MTLSamplerState)
 - (id<MTLSamplerState>) newSamplerStateWithDescriptor:(MTLSamplerDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLSamplerState`](../mtlsamplerstate.md) instance if the method completed successfully; otherwise `nil`.
 

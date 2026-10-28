@@ -21,11 +21,11 @@ Creates a locale-aware string representation from a relative date value.
 func format(_ v: Range<Date>) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the date range.
 
-#### Discussion
+## Discussion
 
 The [`format(_:)`](../relativeformatstyle/format%28_%29.md) instance method generates a string from the provided relative date. After you create a style, you can use it to format dates multiple times.
 

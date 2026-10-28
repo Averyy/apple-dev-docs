@@ -25,7 +25,7 @@ func addCharacters(in aString: String)
 - (void) addCharactersInString:(NSString *) aString;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if `aString` is empty.
 

@@ -16,11 +16,11 @@ nonisolated
 func onModifierKeysChanged(mask: EventModifiers = .all, initial: Bool = true, _ action: @escaping (EventModifiers, EventModifiers) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that updates when hardware modifier keys change.
 
-#### Discussion
+## Discussion
 
 If a mask is provided, updates will only occur when they involve a change in one of the keys included in the mask. The default mask includes all modifier keys.
 

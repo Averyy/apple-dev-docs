@@ -24,7 +24,7 @@ let HMCharacteristicTypeSwingMode: String
 extern NSString * const HMCharacteristicTypeSwingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueSwingMode`](./hmcharacteristicvalueswingmode.md) enumeration.
 

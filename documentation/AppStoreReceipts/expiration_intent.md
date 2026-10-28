@@ -23,7 +23,7 @@ string expiration_intent
 - `4`: The product wasn’t available for purchase at the time of renewal.
 - `5`: The subscription expired for some other reason.
 
-#### Discussion
+## Discussion
 
 This field is returned in the JSON response, in the [`responseBody.Pending_renewal_info`](./responsebody/pending_renewal_info-data.dictionary.md) array.
 

@@ -15,7 +15,7 @@ Declare a transfer representation for your model types to participate in system 
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Core Transferable provides a modern, Swift-focused approach to make your types available in data transfer and sharing contexts. Use transferable types for system interactions that move or share data, like the Share button, drag and drop, and copy and paste.
 

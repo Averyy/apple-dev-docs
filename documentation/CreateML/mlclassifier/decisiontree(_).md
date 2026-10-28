@@ -15,7 +15,7 @@ A classifier that predicts the target by creating rules to split the data.
 case decisionTree(MLDecisionTreeClassifier)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLClassifier`](../mlclassifier.md) using one of its enumeration cases. Use the classifier’s initializer instead.
 

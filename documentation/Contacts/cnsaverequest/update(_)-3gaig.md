@@ -23,7 +23,7 @@ func update(_ contact: CNMutableContact)
 - (void) updateContact:(CNMutableContact *) contact;
 ```
 
-#### Discussion
+## Discussion
 
 The contact to be updated must already exist in the contact store. If it does not, the update request fails, the `CNErrorCodeRecordDoesNotExist` error occurs, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain the object. Note that the contact may be modified when the save request is executing.
 

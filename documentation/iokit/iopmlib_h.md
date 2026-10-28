@@ -5,9 +5,9 @@
 
 IOPMLib provides access to common power management facilities, like initiating system sleep, getting current idle timer values, registering for sleep/wake notifications, and preventing system sleep.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CFArray.h>
 - <IOKit/IOKitLib.h>

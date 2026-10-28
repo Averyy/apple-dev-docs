@@ -20,7 +20,7 @@ func selectAll(_ sender: Any?)
 - (void) selectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method works only when the [`isSelectable`](./isselectable.md) and [`allowsMultipleSelection`](./allowsmultipleselection.md) properties are both [`true`](../../Swift/true.md). If either property is set to [`false`](../../Swift/false.md), this method quietly does nothing and any connected menu item is disabled.
 

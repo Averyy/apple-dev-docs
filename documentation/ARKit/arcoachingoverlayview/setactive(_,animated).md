@@ -20,7 +20,7 @@ func setActive(_ active: Bool, animated: Bool)
 - (void) setActive:(BOOL) active animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If the `animated` property of [`setActive(_:animated:)`](./setactive%28_,animated%29.md) is [`true`](../../Swift/true.md), [`isActive`](./isactive.md) and [`isHidden`](../../UIKit/uiview/ishidden.md) are [`false`](../../Swift/false.md) while the coaching overlay is fading out. When the coaching overlay is deactivated without animation, or when the animation finishes, ARKit notifies you by calling [`coachingOverlayViewDidDeactivate(_:)`](../arcoachingoverlayviewdelegate/coachingoverlayviewdiddeactivate%28_%29.md).
 

@@ -25,7 +25,7 @@ func SparseFactor(_ SymbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix:
 static SparseOpaqueFactorization_Complex_Float SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Complex_Float Matrix, SparseNumericFactorOptions nfoptions);
 ```
 
-#### Return Value
+## Return Value
 
 Factorization of Matrix.
 

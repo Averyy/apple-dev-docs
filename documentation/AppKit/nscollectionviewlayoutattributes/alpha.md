@@ -19,7 +19,7 @@ var alpha: CGFloat { get set }
 @property CGFloat alpha;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are between `0.0` (fully transparent) and `1.0` (fully opaque). The default value is `1.0`.
 

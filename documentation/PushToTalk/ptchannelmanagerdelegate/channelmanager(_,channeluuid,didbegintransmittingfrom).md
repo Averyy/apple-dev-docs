@@ -26,7 +26,7 @@ func channelManager(_ channelManager: PTChannelManager, channelUUID: UUID, didBe
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user begins pressing the talk button in the user interface, a programmatic transmit starts, or transmission begins from a hands-free accessory button press.
 

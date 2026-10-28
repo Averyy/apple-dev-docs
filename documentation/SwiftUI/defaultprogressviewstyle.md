@@ -22,7 +22,7 @@ nonisolated
 struct DefaultProgressViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./progressviewstyle/automatic.md) to construct this style.
 

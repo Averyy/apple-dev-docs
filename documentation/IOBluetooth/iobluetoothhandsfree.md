@@ -19,7 +19,7 @@ class IOBluetoothHandsFree
 @interface IOBluetoothHandsFree : NSObject
 ```
 
-#### Overview
+## Overview
 
 Superclass of IOBluetoothHandsFreeDevice and IOBluetoothHandsFreeAudioGateway classes. Contains the common code used to support the bluetoooth hands free profile.
 

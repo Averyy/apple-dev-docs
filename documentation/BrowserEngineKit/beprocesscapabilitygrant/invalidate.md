@@ -17,7 +17,7 @@ Revokes access to a capability.
 - (BOOL) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 This method invalidates a grant and removes the capability from the process.
 

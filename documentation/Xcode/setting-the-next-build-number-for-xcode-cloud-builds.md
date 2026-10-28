@@ -5,7 +5,7 @@
 
 Start numbering builds from a custom build number for your existing Mac app to avoid version collisions.
 
-#### Overview
+## Overview
 
 Xcode Cloud assigns a build number to each build it performs. A *build number* is an integer value that Xcode Cloud automatically increases with each build, starting from `1`. Your first Xcode Cloud build’s build number is `1`, the second build’s build number is `2`, the third build’s build number is `3`, and so on.
 
@@ -15,7 +15,7 @@ For all apps except existing macOS apps, use the default value of `1` for Xcode 
 
 When you distribute an Xcode Cloud build with [TestFlight](https://developer.apple.com/testflight/) or release it on the App Store, [App Store Connect](http://appstoreconnect.apple.com) uses the build number of the Xcode Cloud build. This makes it easy to identify the Xcode Cloud build that correlates with an app’s version in TestFlight or the App Store. For example, say you use Xcode Cloud to create a workflow called `Weekly Build` that makes a new version available to external testers in TestFlight once per week. For your latest weekly build, it distributes version `1.2.1 (42)` where `42` is the build number that Xcode Cloud set. If you need to look at detailed build information for the version, look at the version’s build number — `42` — and navigate to the corresponding Xcode Cloud build in Xcode or App Store Connect.
 
-##### Review build number requirements
+### Review build number requirements
 
 For a new app, starting with build number `1` makes sense. When you start using Xcode Cloud for an existing app, it assigns build number `1` to your first build. For iOS, iPadOS, tvOS, visionOS, and watchOS apps, this behavior meets build number requirements. Apps for those platforms can use a lower build number for a new version compared to a previous version because App Store Connect requires each app version to use a unique combination of [`CFBundleShortVersionString`](../BundleResources/information-property-list/cfbundleshortversionstring.md) and [`CFBundleVersion`](../BundleResources/information-property-list/cfbundleversion.md).
 
@@ -25,7 +25,7 @@ However, Mac apps must follow different build number requirements. To successful
 
 To help cases where incrementing the Xcode Cloud build number starting with `1` isn’t possible — like for an existing Mac app — use App Store Connect to configure Xcode Cloud to increment the build number starting with a custom value.
 
-##### Set the next build number to a custom value
+### Set the next build number to a custom value
 
 Setting the next build number to a custom integer value solves cases where incrementing Xcode Cloud build numbers starting with `1` leads to version collisions.
 

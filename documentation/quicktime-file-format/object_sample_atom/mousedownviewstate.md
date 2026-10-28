@@ -6,7 +6,7 @@
 
 The 1-based index of the mouse-down view state.
 
-#### Overview
+## Overview
 
 The mouse-down view state image for a given view is displayed while the user holds the mouse button down and the cursor is over an object movie.
 

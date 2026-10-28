@@ -13,7 +13,7 @@
 typedef struct IOEthernetStats IOEthernetStats;
 ```
 
-#### Discussion
+## Discussion
 
 Aggregate Ethernet statistics structure.
 

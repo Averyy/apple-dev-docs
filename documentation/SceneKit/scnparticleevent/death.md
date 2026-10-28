@@ -25,7 +25,7 @@ case death
 SCNParticleEventDeath
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit calls your event handler block immediately before removing dead particles from the scene.
 

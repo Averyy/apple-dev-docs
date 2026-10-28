@@ -25,7 +25,7 @@ let kCVImageBufferChromaLocationBottomFieldKey: CFString
 extern CFStringRef const kCVImageBufferChromaLocationBottomFieldKey;
 ```
 
-#### Discussion
+## Discussion
 
 The chroma location value is of type [`CFString`](../CoreFoundation/cfstring.md). This key only applies to interlaced image data. See [Image Buffer Chroma Location Constants](./image-buffer-chroma-location-constants.md) for more information.
 

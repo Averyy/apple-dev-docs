@@ -14,7 +14,7 @@
 #define kIOUSBBitstufErr
 ```
 
-#### Discussion
+## Discussion
 
 These errors are returned by the OHCI controller. The # in parenthesis (xx) corresponds to the OHCI Completion Code. For the following Completion codes, we return a generic IOKit error instead of a USB specific error. 
 

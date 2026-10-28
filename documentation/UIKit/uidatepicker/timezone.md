@@ -22,7 +22,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, strong, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which tells the date picker to use the current time zone as returned by [`local`](../../Foundation/nstimezone/local.md) ([`NSTimeZone`](../../Foundation/nstimezone.md)) or the time zone used by the date picker’s calendar.
 

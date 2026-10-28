@@ -21,7 +21,7 @@ convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRou
 - (instancetype) initWithOrigin:(MKMapItem *) origin destination:(MKMapItem *) destination routeChoices:(NSArray<CPRouteChoice *> *) routeChoices;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized trip.
 

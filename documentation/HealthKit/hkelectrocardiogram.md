@@ -24,7 +24,7 @@ class HKElectrocardiogram
 @interface HKElectrocardiogram : HKSample
 ```
 
-#### Overview
+## Overview
 
 An [`HKElectrocardiogram`](./hkelectrocardiogram.md) is a collection of voltage values representing waveforms from one or more leads. The [`HKElectrocardiogram`](./hkelectrocardiogram.md) sample provides high-level details about the ECG reading, such as the sampling frequency or classification. HealthKit provides read-only access to electrocardiogram (ECG) data saved by Apple Watch.
 

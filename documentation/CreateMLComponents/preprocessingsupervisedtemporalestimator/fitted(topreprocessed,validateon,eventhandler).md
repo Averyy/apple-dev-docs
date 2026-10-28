@@ -20,7 +20,7 @@ Fits a transformer to a sequence of preprocessed examples while validating.
 func fitted(toPreprocessed preprocessedInput: [AnnotatedFeature<PreprocessedFeatureSequence<Preprocessor.Output>, PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Annotation>], validateOn preprocessedValidation: [AnnotatedFeature<PreprocessedFeatureSequence<Preprocessor.Output>, PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Annotation>], eventHandler: EventHandler? = nil) async throws -> PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

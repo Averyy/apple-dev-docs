@@ -21,7 +21,7 @@ The zlib compression algorithm, which is recommended for cross-platform compress
 case zlib
 ```
 
-#### Discussion
+## Discussion
 
 The Compression library implements the zlib encoder at level 5 only.  This compression level provides a good balance between compression speed and compression ratio.  The zlib decoder supports decoding data compressed with any compression level.
 

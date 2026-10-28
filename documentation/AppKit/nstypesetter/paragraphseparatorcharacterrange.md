@@ -19,7 +19,7 @@ var paragraphSeparatorCharacterRange: NSRange { get }
 @property (readonly) NSRange paragraphSeparatorCharacterRange;
 ```
 
-#### Return Value
+## Return Value
 
 The current paragraph separator character range, which is the full range that contains the current character range and that extends from one paragraph separator character to the next.
 

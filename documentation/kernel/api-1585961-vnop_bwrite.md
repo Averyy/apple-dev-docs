@@ -15,11 +15,11 @@ Write a buffer to backing store.
 errno_t VNOP_BWRITE(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 
-#### Discussion
+## Discussion
 
 VNOP_BWRITE() is called by buf_bawrite() (asynchronous write) and potentially by buf_bdwrite() (delayed write) but not by buf_bwrite(). A filesystem may choose to perform some kind of manipulation of the buffer in this routine; it generally will end up calling VFS's default implementation, vn_bwrite() (which calls buf_bwrite() without further ado).
 

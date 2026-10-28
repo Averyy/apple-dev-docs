@@ -19,7 +19,7 @@ func getAdvancements(_ advancements: NSSizeArray, forCGGlyphs glyphs: UnsafePoin
 - (void) getAdvancements:(NSSizeArray) advancements forCGGlyphs:(const CGGlyph *) glyphs count:(NSUInteger) glyphCount;
 ```
 
-#### Discussion
+## Discussion
 
 Returns in `advancements` an array of the advancements for the glyphs specified by `glyphs` and rendered by the receiver. The `glyphCount` value must specify the count of glyphs passed in `glyphs`.
 

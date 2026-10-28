@@ -23,11 +23,11 @@ init(amountType: INAmountType, amount: INCurrencyAmount)
 - (instancetype) initWithAmountType:(INAmountType) amountType amount:(INCurrencyAmount *) amount;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized payment amount object, or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 When creating an [`INPaymentAmount`](../inpaymentamount.md) object, specify as much information as you have available. Specifically, include a value for the `amount` parameter indicating the amount of money to debit from the user’s account. If that value also represents a specific amount type, such as the balance due on the account, specify an appropriate constant in the [`amountType`](./amounttype.md) property.
 

@@ -25,7 +25,7 @@ static var allDomainsMask: FileManager.SearchPathDomainMask { get }
 NSAllDomainsMask
 ```
 
-#### Discussion
+## Discussion
 
 Includes all of the above and future items.
 

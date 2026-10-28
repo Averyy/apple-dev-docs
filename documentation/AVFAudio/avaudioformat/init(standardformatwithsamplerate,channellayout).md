@@ -25,11 +25,11 @@ init(standardFormatWithSampleRate sampleRate: Double, channelLayout layout: AVAu
 - (instancetype) initStandardFormatWithSampleRate:(double) sampleRate channelLayout:(AVAudioChannelLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance.
 
-#### Discussion
+## Discussion
 
 The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFloat32`](../avaudiocommonformat/pcmformatfloat32.md) format.
 

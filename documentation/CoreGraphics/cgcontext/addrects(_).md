@@ -21,7 +21,7 @@ Adds a set of rectangular paths to the current path.
 func addRects(_ rects: [CGRect])
 ```
 
-#### Discussion
+## Discussion
 
 Calling this convenience method is equivalent to repeatedly calling the [`addRect(_:)`](./addrect%28_%29.md) method for each rectangle in the array.
 

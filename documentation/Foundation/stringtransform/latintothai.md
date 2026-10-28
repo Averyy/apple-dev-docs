@@ -25,7 +25,7 @@ static let latinToThai: StringTransform
 extern NSStringTransform const NSStringTransformLatinToThai;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

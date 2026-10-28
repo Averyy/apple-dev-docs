@@ -24,7 +24,7 @@ var animatesWhenAdded: Bool { get set }
 @property (nonatomic) BOOL animatesWhenAdded;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

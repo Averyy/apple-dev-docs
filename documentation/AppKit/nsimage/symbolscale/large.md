@@ -19,7 +19,7 @@ case large
 NSImageSymbolScaleLarge
 ```
 
-#### Discussion
+## Discussion
 
 This scale is approximately 30% larger than the [`NSImage.SymbolScale.medium`](./medium.md) scale.
 

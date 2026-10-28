@@ -16,7 +16,7 @@ A property of IOMedia objects.
 #define kIOMediaLiveKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaLiveKey property has an OSBoolean value and is placed into an IOMedia instance created via the partition scheme. It describes whether the partition is live, that is, it is up-to-date with respect to the on-disk partition table.
 

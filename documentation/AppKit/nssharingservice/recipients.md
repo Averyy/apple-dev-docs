@@ -19,7 +19,7 @@ var recipients: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * recipients;
 ```
 
-#### Discussion
+## Discussion
 
 Each object in the array is an `NSString` object that contains the handle of a single recipient. The specific format of these handle varies from service to service. For example, some services use email addresses as handles.
 

@@ -23,7 +23,7 @@ class UIPrintInfo
 @interface UIPrintInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`UIPrintInfo`](./uiprintinfo.md) object encapsulates information about a print job, including printer identifier, job name, output type (photo, normal, grayscale), orientation (portrait or landscape), and any selected duplex mode.
 

@@ -25,7 +25,7 @@ var mediaRequestsWWAN: Int { get }
 @property (nonatomic, readonly) NSInteger mediaRequestsWWAN;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

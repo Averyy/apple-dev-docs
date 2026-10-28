@@ -24,7 +24,7 @@ class MPSImageLaplacian
 @interface MPSImageLaplacian : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 This filter uses an optimized convolution filter with a 3x3 kernel with the following weights:
 

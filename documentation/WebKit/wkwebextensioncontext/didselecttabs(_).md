@@ -23,7 +23,7 @@ func didSelectTabs(_ selectedTabs: [any WKWebExtensionTab])
 - (void) didSelectTabs:(NSArray<id<WKWebExtensionTab>> *) selectedTabs;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension that tabs have been selected. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

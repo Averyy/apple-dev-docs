@@ -23,7 +23,7 @@ nonisolated init<V>(value: Binding<V>, step: V.Stride = 1, @ContentBuilder label
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a stepper that increments or decrements a bound value by a specific amount each time the user clicks or taps the stepper’s increment or decrement buttons.
 

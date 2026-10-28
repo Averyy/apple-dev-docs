@@ -25,11 +25,11 @@ func rangeOfComposedCharacterSequences(for range: NSRange) -> NSRange
 - (NSRange) rangeOfComposedCharacterSequencesForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The range in the receiver that includes the composed character sequences in `range`.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to grow a range to include all composed character sequences it overlaps.
 

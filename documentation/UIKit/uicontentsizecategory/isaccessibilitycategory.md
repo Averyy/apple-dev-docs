@@ -19,7 +19,7 @@ A Boolean value that indicates whether the content size category is associated w
 var isAccessibilityCategory: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) for [`accessibilityMedium`](./accessibilitymedium.md), [`accessibilityLarge`](./accessibilitylarge.md), [`accessibilityExtraLarge`](./accessibilityextralarge.md), [`accessibilityExtraExtraLarge`](./accessibilityextraextralarge.md), and [`accessibilityExtraExtraExtraLarge`](./accessibilityextraextraextralarge.md). It is [`false`](../../Swift/false.md) for other values.
 

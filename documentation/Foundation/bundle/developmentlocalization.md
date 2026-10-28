@@ -25,7 +25,7 @@ var developmentLocalization: String? { get }
 @property (copy, readonly, nullable) NSString * developmentLocalization;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the value in the `CFBundleDevelopmentRegion` key of the bundle’s property list (`Info.plist`).
 

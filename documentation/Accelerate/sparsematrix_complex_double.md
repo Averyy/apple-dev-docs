@@ -25,7 +25,7 @@ struct SparseMatrix_Complex_Double
 typedef struct { ... } SparseMatrix_Complex_Double;
 ```
 
-#### Overview
+## Overview
 
 `data` is the array of values in the non-zero blocks of the matrix stored contiguously, each block in column-major order. If there are `N` structural non-zero blocks in the matrix, `data` holds `blockSize * blockSize * N` doubles.
 

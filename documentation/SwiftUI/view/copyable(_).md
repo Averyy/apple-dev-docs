@@ -19,11 +19,11 @@ nonisolated
 func copyable<T>(_ payload: @autoclosure @escaping () -> [T]) -> some View where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that adds one or more items to the Clipboard in response to a Copy command.
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify one or more items that the system copies to the Clipboard when someone issues a Copy command while the modified view has focus. People issue a Copy command by choosing Edit > Copy from the app’s menu, or by using the Command-C keyboard shortcut. The system enables the Copy command for your app when it detects copyable content.
 

@@ -25,7 +25,7 @@ case cannotDoInCurrentContext
 AVAudioEngineManualRenderingStatusCannotDoInCurrentContext
 ```
 
-#### Discussion
+## Discussion
 
 This status guards a real-time render operation when a reconfiguration of the engine’s internal state is in progress. The client can try again later.
 

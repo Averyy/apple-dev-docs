@@ -28,11 +28,11 @@ class func requestTrackingAuthorization() async -> ATTrackingManager.Authorizati
 + (void) requestTrackingAuthorizationWithCompletionHandler:(void (^)(ATTrackingManagerAuthorizationStatus status)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests authorization to access app-related data that the app can use to track the person or the device. In France, Germany, Italy, Poland, and Romania, the system presents a full-page sheet; otherwise, the system prompts the person with an alert.
 
-#### Handle the person’s response
+## Handle the person’s response
 
 When the person answers the prompt, the system calls the completion handler with a status object ([`ATTrackingManager.AuthorizationStatus`](./authorizationstatus.md)) set to [`ATTrackingManager.AuthorizationStatus.authorized`](./authorizationstatus/authorized.md) or [`ATTrackingManager.AuthorizationStatus.denied`](./authorizationstatus/denied.md), depending on the person’s response.
 
@@ -46,11 +46,11 @@ In some cases, the system doesn’t display the prompt and instead runs your com
 - Your code invokes this method through an app extension.
 - The app’s state is a value other than `UIApplicationStateActive`.
 
-#### Prompt again after a year
+## Prompt again after a year
 
 In the European Union, if a person answers the prompt, the system notes the date and doesn’t allow the prompt to display again until a year passes. You can make an additional request after a year whether the person approves or denies your app’s previous tracking request, unless the person disables tracking in Settings > Privacy & Security > Tracking.
 
-#### Configure the app’s target properties
+## Configure the app’s target properties
 
 To use this method, add the [`NSUserTrackingUsageDescription`](../../BundleResources/information-property-list/nsusertrackingusagedescription.md) key to your app’s target properties in Xcode.
 

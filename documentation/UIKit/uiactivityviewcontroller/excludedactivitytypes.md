@@ -22,7 +22,7 @@ var excludedActivityTypes: [UIActivity.ActivityType]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * excludedActivityTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of strings, each of which corresponds to the value you would find in the [`activityType`](../uiactivity/activitytype-swift.property.md) parameter of a [`UIActivity`](../uiactivity.md) object. Each string you specify indicates a service that you do not want displayed to the user. You might exclude services that you feel are not suitable for the content you are providing. For example, you might not want to allow the user to print a specific image. If the value of this property is `nil`, no services are excluded.
 

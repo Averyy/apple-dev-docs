@@ -25,7 +25,7 @@ case overUnder
 kCMPackingType_OverUnder
 ```
 
-#### Discussion
+## Discussion
 
 For over-under packed frames, the height of a frame in video data is twice as high as the video displayed.
 

@@ -19,11 +19,11 @@ optional func samplesWithEarlierDTSsMayHaveLaterPTSs(than cursor: any MESampleCu
 - (BOOL) samplesWithEarlierDTSsMayHaveLaterPTSsThanCursor:(id<MESampleCursor>) cursor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if it’s possible that earlier samples in decode order can have a later presentation timestamp than that of the specified cursor; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method tests for a boundary in the reordering from decode order to presentation order. This determines when it’s possible for any sample earlier in decode order than the current sample to have a later presentation time than the current sample of the specified cursor. You can use this test to limit backward scans, such as to start forward playback. For example, with the argument cursor fixed, step the cursor backward until it’s impossible for any earlier-in-decode-order samples to be later-in-presentation-order than the argument cursor sample.
 

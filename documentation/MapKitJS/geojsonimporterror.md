@@ -15,7 +15,7 @@ An error object that indicates an error occurred while importing a GeoJSON objec
 class GeoJSONImportError extends Error
 ```
 
-#### Discussion
+## Discussion
 
 The `message` property contains a string that describes the error.
 

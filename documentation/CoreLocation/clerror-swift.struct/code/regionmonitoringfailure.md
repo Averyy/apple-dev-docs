@@ -25,7 +25,7 @@ case regionMonitoringFailure
 kCLErrorRegionMonitoringFailure
 ```
 
-#### Discussion
+## Discussion
 
 Monitoring can fail if the app exceeds the maximum number of regions that it can monitor simultaneously. Monitoring can also fail if the region’s radius distance is too large.
 

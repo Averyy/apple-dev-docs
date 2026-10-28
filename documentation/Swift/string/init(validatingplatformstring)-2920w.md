@@ -21,7 +21,7 @@ Creates a string by interpreting the null-terminated platform string as UTF-8 on
 init?(validatingPlatformString platformString: UnsafePointer<CInterop.PlatformChar>)
 ```
 
-#### Discussion
+## Discussion
 
 If the contents of the platform string isn’t well-formed Unicode, this initializer returns `nil`.
 

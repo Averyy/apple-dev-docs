@@ -23,7 +23,7 @@ class UIBandSelectionInteraction
 @interface UIBandSelectionInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Attach a [`UIBandSelectionInteraction`](./uibandselectioninteraction.md) object to a custom view that contains one or more selectable items. On devices with pointer-based input, such as an iPad with a Magic Keyboard, this interaction object displays a visible selection rectangle over the view when someone clicks and drags on it. As the pointer moves, the selection rectangle expands or contracts to match. Use your interaction object’s handler to select items based on the current selection rectangle.
 

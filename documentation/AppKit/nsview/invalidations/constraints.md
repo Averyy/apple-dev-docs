@@ -16,7 +16,7 @@ A change that invalidates a view’s constraints.
 struct Constraints
 ```
 
-#### Overview
+## Overview
 
 Use [`constraints`](../constraints.md) to create an instance of this type.
 

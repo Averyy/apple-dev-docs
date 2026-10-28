@@ -5,13 +5,13 @@
 
 Integrate code changes from multiple sources and resolve conflicts between different versions of code using source control tools in Xcode.
 
-#### Overview
+## Overview
 
 If you use source control to work on code with collaborators or to manage multiple versions of your Xcode project for different releases, eventually, you need to sync code changes between versions. Git source control provides a mechanism for combining sets of code changes by merging those changes together, and Xcode provides a visual interface for performing a *merge*.
 
 ![Conceptual diagram that shows two rows of commits, each row representing a branch. The rightmost commit in the bottom row merges into the top row to illustrate two commits merging together.](https://developer.apple.com/tutorials/images/com.apple.Xcode/combining-code-changes-in-a-source-control-repository-1@2x.png)
 
-##### Merge code changes
+### Merge code changes
 
 After you complete work in a feature or bug fix branch, you merge your changes into your main development or production branch. Alternatively, you merge other updates from your main development or production branch into your feature or bug fix branch to resolve conflicts or to sync your work with the latest updates and ensure everything functions appropriately before merging back into your main development or production branch.
 
@@ -22,7 +22,7 @@ After you complete work in a feature or bug fix branch, you merge your changes i
 
 If there are no conflicts, Xcode completes the merge.
 
-##### Resolve conflicts with other code
+### Resolve conflicts with other code
 
 In a source control repository, a *conflict* occurs when two commits have incompatible changes and Git can’t merge the changes automatically. For example, a conflict might occur when two developers change the same lines in the same source file.
 

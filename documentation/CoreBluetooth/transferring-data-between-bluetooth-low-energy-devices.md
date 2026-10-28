@@ -12,13 +12,13 @@ Create a Bluetooth low energy central and peripheral device, and allow them to d
 - Mac Catalyst 12.0+
 - Xcode 11.1+
 
-#### Overview
+## Overview
 
 This sample shows how to transfer data between two iOS devices, with one acting as a Bluetooth central and the other as a peripheral, by using a [`CBCharacteristic`](./cbcharacteristic.md) on the peripheral side that changes its value. The value change is automatically picked up on the central side. The sample also shows how the central side can write data to a [`CBCharacteristic`](./cbcharacteristic.md) on the peripheral side.
 
 This sample shows how to handle flow control in this scenario. It also covers a rudimentary way to use the Received Signal Strength Indicator (RSSI) value to determine whether data transfer is feasible.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 1. Run the sample on two devices that support Bluetooth LE.
 2. On one device, tap the “Central” button. This device will be the central mode device. The device will begin scanning for a peripheral device that is advertising the Transfer Service.
@@ -26,7 +26,7 @@ This sample shows how to handle flow control in this scenario. It also covers a 
 4. On the peripheral mode device, tap the advertise on/off switch, to enable peripheral mode advertising of the data in the text field.
 5. Bring the two devices close to each other.
 
-##### Discover Bluetooth Peripherals and Connect to Them
+### Discover Bluetooth Peripherals and Connect to Them
 
 The device running in central mode creates a [`CBCentralManager`](./cbcentralmanager.md), assigning the `CentralViewController` as the manager’s delegate. It calls [`scanForPeripherals`](./cbcentralmanager/scanforperipherals%28withservices,options%29.md) to discover other Bluetooth devices, passing in the UUID of the service it’s searching for.
 
@@ -64,7 +64,7 @@ func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPerip
 }
 ```
 
-##### When the Peripheral Receives a Connection, Send the Data
+### When the Peripheral Receives a Connection, Send the Data
 
 The device running in peripheral mode creates a [`CBPeripheralManager`](./cbperipheralmanager.md) and assigns its `PeripheralViewController` as the manager’s delegate.
 
@@ -111,7 +111,7 @@ The user interface provides a [`UISwitch`](../UIKit/uiswitch.md) that starts or 
 
 Once the central device discovers and connects to the peripheral, the peripheral side sends the data from the text field to the central. `PeripheralViewController` sends the data in chunks — each sized to the maximum value the central can receive — by setting the value of its `transferCharacteristic` property to the latest chunk. When finished, it sends the value `EOM` (for “end of message”).
 
-##### When the Central Receives the Data, Update the User Interface
+### When the Central Receives the Data, Update the User Interface
 
 Back on the central device, a call to the central manager delegate’s [`peripheral(_:didDiscoverCharacteristicsFor:Error:`](./cbperipheraldelegate/peripheral%28_,diddiscovercharacteristicsfor,error%29.md) tells the app that it has discovered the peripheral’s transfer characteristic. The sample’s implementation of this method calls [`setNotifyValue(_:for:)`](./cbperipheral/setnotifyvalue%28_,for%29.md) to start receiving updates to the characteristic’s value.
 

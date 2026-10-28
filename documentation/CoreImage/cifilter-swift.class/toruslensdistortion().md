@@ -24,11 +24,11 @@ class func torusLensDistortion() -> any CIFilter & CITorusLensDistortion
 + (CIFilter<CITorusLensDistortion> *) torusLensDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the torus lens distortion filter to an image. This effect distorts an image by creating a torus-shaped object, placing it over the input image, and applying the refraction.
 

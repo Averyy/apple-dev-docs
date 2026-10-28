@@ -15,7 +15,7 @@ Inserts the given string into the receiver’s text storage.
 - (void) insertText:(id) string;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the entry point for inserting text typed by the user and is generally not suitable for other purposes. Programmatic modification of the text is best done by operating on the text storage directly. Because this method pertains to the actions of the user, the text view must be editable for the insertion to work.
 

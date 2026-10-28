@@ -25,7 +25,7 @@ static let ignoreHiddenNodes: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestIgnoreHiddenNodesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../Swift/true.md), specifying that hit-testing should not return nodes whose hidden property value is [`true`](../../Swift/true.md). Specify [`false`](../../Swift/false.md) to search nodes regardless of their visibility.
 

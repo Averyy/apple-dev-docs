@@ -17,7 +17,7 @@ Validate the requested compatibility policy against a concrete model cache.
 func validateKVCacheCompatibility(_ cache: [KVCache], configuration: KVCacheConfiguration) throws
 ```
 
-#### Discussion
+## Discussion
 
 Full-precision and non-attention state entries do not participate. Affine caches are accepted for TurboQuant because aggressive configurations use them as an intentional boundary-layer fallback.
 

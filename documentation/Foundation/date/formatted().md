@@ -21,11 +21,11 @@ Generates a locale-aware string representation of a date using the default date 
 func formatted() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the default style.
 
-#### Discussion
+## Discussion
 
 Use the [`formatted()`](./formatted%28%29.md) method to apply the default format style to a date, as in the following example:
 

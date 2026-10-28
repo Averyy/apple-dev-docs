@@ -19,7 +19,7 @@
 extern void xpc_session_set_peer_requirement(xpc_session_t session, xpc_peer_requirement_t requirement);
 ```
 
-#### Discussion
+## Discussion
 
 Requires that the session peer satisfies a requirement.
 

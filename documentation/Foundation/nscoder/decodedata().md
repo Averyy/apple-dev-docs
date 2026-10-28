@@ -25,7 +25,7 @@ func decodeData() -> Data?
 - (NSData *) decodeDataObject;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation of your overriding method must match the implementation of your [`encode(_:)`](./encode%28_%29-1qd1e.md) method. For example, a typical [`encode(_:)`](./encode%28_%29-1qd1e.md) method encodes the number of bytes of data followed by the bytes themselves. Your override of this method must read the number of bytes, create an `NSData` object of the appropriate size, and decode the bytes into the new `NSData` object.
 

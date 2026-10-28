@@ -25,11 +25,11 @@ typealias CGDataProviderGetBytesCallback = (UnsafeMutableRawPointer?, UnsafeMuta
 typedef unsigned long (*)(void *, void *, unsigned long) CGDataProviderGetBytesCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied. If no more data can be written to the buffer, you should return `0`.
 
-#### Discussion
+## Discussion
 
 When Core Graphics is ready to receive data from the provider data stream, your function is called. It should copy the specified number of bytes into `buffer`.
 

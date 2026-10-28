@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, macOS Sequoia 15.2, and visionOS 2.2. The Xcode 16.2 release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16.2 requires a Mac running macOS Sonoma 14.5 or later.
 
-##### Downloadable Hardware Support
+### Downloadable Hardware Support
 
-###### New Features
+#### New Features
 
 - Starting with Xcode 16.2, Xcode can add support for new hardware without needing to update the entire Xcode app.  Xcode will check when launching the app if a hardware support update is available and will install it.  For the equivalent from the command-line, run `xcodebuild -runFirstLaunch -checkForNewerComponents`.
 
   When there is hardware support available, the installer package will be stored in `~/Library/Developer/Packages`, and can be copied for installation and setup purposes for other machines.  (138789379)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode 16.2 with iPhone 16e, iPad Air (M3), and iPad (A16) Device Support is unable to thin for these device during ad-hoc distribution.  (136340970)
 - When using Xcode 16.2 with iPhone 16e, iPad Air (M3), and iPad (A16) Device Support, these new devices are not available in the device selector.  (138526898)
@@ -27,25 +27,25 @@ Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, mac
 - In order to use iPhone 16e in the simulator with Xcode 16.2, download both the iPhone 16e Device Support and the iOS 18.3 Simulator Runtime from Xcode > Settings > Components.  iPhone 16e is not currently compatible with iOS 18.4 beta.  (143996070)
 - In order to use iPad Air (M3) or iPad (A16) in the simulator with Xcode 16.2, download both the iPhone 16e, iPad Air (M3), and iPad (A16) Device Support and the iOS 18.3.1 Simulator Runtime from Xcode > Settings > Components.  iPad Air (M3) and iPad (A16) are not currently compatible with iOS 18.4 beta 2.  (143996162)
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - The Command Line Tools package now supports using the `swift test` command to build and run package tests written with Swift Testing.  (136424541)
 
-###### Known Issues
+#### Known Issues
 
 - Sometimes running parallel Tests on macOS run destinations never finishes.  (138772707)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed crashes and other anomalies that could occur in the String Catalog editor when multiple editor tabs are open to the same file with different sort or filter criteria. (FB14665353)  (136257968)
 
-##### Predictive Code Completion
+### Predictive Code Completion
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Improved predictive completions that start with type names and initializer calls. Please note, this improvement requires macOS 15.1 or later.  (128085056)
 - Fixed: Improved predictive completions when steered by an `override` completion.  (129624498)
@@ -54,9 +54,9 @@ Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, mac
 - Fixed: Improved predictive completion accuracy in situations where a property name is being predicted or fed to the model by the selection in the code completion window.  (138437280)
 - Fixed an issue where a predictive completion never loads.  (138784998)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Previews should now work fine without permissions errors if you place derived data in protected locations like Downloads, Desktop, or Documents.  (129866404)
 - Fixed: Projects that built object files as universal could sometimes fail to preview.  (133653290)
@@ -80,15 +80,15 @@ Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, mac
 
   Alternatively, there is a new build setting `SWIFT_ENABLE_OPAQUE_TYPE_ERASURE` that controls the implicit wrapping of views in `AnyView`. To get fast SwiftUI previews, the setting defaults to `YES`, but can be set to `NO` if you want to experiment with how this affects debug-time performance in specific targets in your project. This will have no effect on release builds, which is where performance should be accurately evaluated. Xcode 16.2 adds experimental support for disabling the build setting while retaining preview usage, though preview performance will degrade significantly.  (138952991)
 
-###### Known Issues
+#### Known Issues
 
 - macOS projects that use hardened runtime but no sandboxing may run into timeout errors when attempting to preview if the project is complex enough.   (139070284)
 
   **Workaround:** Enable sandboxing or disable hardened runtime while developing.
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - CoreSimulator now supports a mode in which the developer has full control over devices in the default device set.  The system won’t create default devices nor manage pairing relationships between watches and phones in that set when placed into this mode.  To do this, please set the following preference:
 
@@ -99,7 +99,7 @@ Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, mac
   (139023701)
 - Fixed: CoreSimulatorService may increase in memory usage over time, with usage of simulator processes.  (140213488)
 
-###### Known Issues
+#### Known Issues
 
 - On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176)
 
@@ -130,22 +130,22 @@ Xcode 16.2 includes SDKs for iOS 18.2, iPadOS 18.2, tvOS 18.2, watchOS 11.2, mac
 
   **Workaround:** You will need to wait for scananing to complete, which is easiest to do by monitoring CPU activity of the syspolicyd process on the system.  There is currently no visual indication of this progress.
 
-##### Swift
+### Swift
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apps using Swift/C++ interoperability may not be back deployable to operating systems earlier than iOS 16, watchOS 9, and tvOS 16.  (140823785)
 
-###### Known Issues
+#### Known Issues
 
 - Memory leaks can occur when calling async functions bridged from Objective-C and building in the Swift 6 language mode.  (134442168)
 
   **Workaround:** Pass `-checked-async-objc-bridging=off` to the Swift compiler using “Other Swift Flags” in Xcode build settings.
 - Xcode targets using Swift/C++ interoperability and having a deployment target of less than iOS 16 or tvOS 16 may not build for iOS or tvOS simulators.  (141232269)
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where lldb couldn’t attach to the Swift Testing host binary.  (136630386)
 

@@ -5,7 +5,7 @@
 
 Handle user interactions like double tap and squeeze on Apple Pencil.
 
-#### Overview
+## Overview
 
 Apple Pencil interactions let a person perform certain actions in your app by double-tapping or squeezing an Apple Pencil. Support Apple Pencil interactions to give people a quick way to perform their preferred action, such as switching between drawing tools, or a custom action that you define in your app.
 

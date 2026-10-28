@@ -16,7 +16,7 @@ Removes a previously-posted notification from your accessory.
 func removeNotification(identifier: AccessoryNotification.Identifier)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a notification needs to be removed, such as when a person dismisses it on another device or when the person deletes the app that sent the notification.
 

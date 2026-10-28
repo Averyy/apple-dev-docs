@@ -25,7 +25,7 @@ optional func contentKeySessionDidGenerateExpiredSessionReport(_ session: AVCont
 - (void) contentKeySessionDidGenerateExpiredSessionReport:(AVContentKeySession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when an expired session report is added to the [`storageURL`](../avcontentkeysession/storageurl.md) property.
 

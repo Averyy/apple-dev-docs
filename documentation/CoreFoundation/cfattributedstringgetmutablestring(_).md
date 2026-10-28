@@ -25,11 +25,11 @@ func CFAttributedStringGetMutableString(_ aStr: CFMutableAttributedString!) -> C
 extern CFMutableStringRefCFAttributedStringGetMutableString(CFMutableAttributedStringRef aStr);
 ```
 
-#### Return Value
+## Return Value
 
 The string for the specified attributed string as a mutable string.
 
-#### Discussion
+## Discussion
 
 This function allows you to edit the character contents of the attributed string as if it were a CFMutableString. Attributes corresponding to the edited range are appropriately modified. If, as a result of the edit, new characters are introduced into the string, they inherit the attributes of the first replaced character from range. If no existing characters are replaced by the edit, the new characters inherit the attributes of the character preceding range if it has any, otherwise of the character following range. If the initial string is empty, the attributes for the new characters are also empty.
 

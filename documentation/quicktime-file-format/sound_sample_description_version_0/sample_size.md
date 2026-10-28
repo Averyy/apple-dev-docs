@@ -6,7 +6,7 @@
 
 A 16-bit integer that specifies the number of bits in each uncompressed sound sample.
 
-#### Overview
+## Overview
 
 Allowable values are 8 or 16. Formats using more than 16 bits per sample set this field to 16 and use sound description version 1.
 

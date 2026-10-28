@@ -21,7 +21,7 @@ func updateUserActivity(_ type: String, userInfo: [AnyHashable : Any]? = nil, we
 - (void) updateUserActivity:(NSString *) type userInfo:(NSDictionary *) userInfo webpageURL:(NSURL *) webpageURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to publish your app’s current activity so that it can be handled as needed. When calling this method, you must specify a value for the `userInfo` parameter, the `webpageURL` parameter, or both. Call this method in the following situations:
 

@@ -24,7 +24,7 @@ var startDate: Date? { get }
 @property (readonly, nullable) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` when the workout session is initialized. The system assigns a start date when the session’s state changes to [`HKWorkoutSessionState.running`](../hkworkoutsessionstate/running.md).
 

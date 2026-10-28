@@ -19,7 +19,7 @@
 extern UTType * const UTTypeCSS;
 ```
 
-#### Discussion
+## Discussion
 
 Cascading Style Sheets (CSS)
 

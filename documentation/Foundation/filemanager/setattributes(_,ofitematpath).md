@@ -25,7 +25,7 @@ func setAttributes(_ attributes: [FileAttributeKey : Any], ofItemAtPath path: St
 - (BOOL) setAttributes:(NSDictionary<NSString *,id> *) attributes ofItemAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 As in the POSIX standard, the app either must own the file or directory or must be running as superuser for attribute changes to take effect. The method attempts to make all changes specified in attributes and ignores any rejection of an attempted modification. If the last component of the path is a symbolic link, the system traverses it.
 

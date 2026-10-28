@@ -28,7 +28,7 @@ Available when `Element` is `Double`.
 func max() -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 A [`Double`](../../Swift/double.md); otherwise `nil` if the column is empty or invalid.
 

@@ -18,11 +18,11 @@ The shared instance of this class.
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) static let shared: IntentDonationManager
+nonisolated(unsafe)
+static let shared: IntentDonationManager
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the shared donation manager and use it to donate app intents or delete existing donations that have become stale.
 

@@ -19,7 +19,7 @@ func MDQuerySetDispatchQueue(_ query: MDQuery!, _ queue: dispatch_queue_t!)
 void MDQuerySetDispatchQueue(MDQueryRef query, dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 It is not advisable to change set dispatch queue after [`MDQueryExecute(_:_:)`](./api-1413099-mdqueryexecute.md) has been called with the query. 
 

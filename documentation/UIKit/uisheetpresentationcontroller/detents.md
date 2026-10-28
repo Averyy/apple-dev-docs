@@ -21,7 +21,7 @@ var detents: [UISheetPresentationController.Detent] { get set }
 @property (nonatomic, copy) NSArray<UISheetPresentationControllerDetent *> * detents;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an array that contains the value [`large()`](./detent/large%28%29.md). This array must contain at least one element. When you set this value, specify detents in order from smallest to largest height.
 

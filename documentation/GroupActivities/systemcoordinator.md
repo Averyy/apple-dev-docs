@@ -19,7 +19,7 @@ final class SystemCoordinator
 
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
-#### Overview
+## Overview
 
 A [`SystemCoordinator`](./systemcoordinator.md) object helps you coordinate the presentation of your app’s content when spatial placement is active. In visionOS, the system can present a SharePlay activity as if the participants were together in the same room with the content. Each participant views the content from a particular vantage point, and sees the changes that others make. The system handles the placement of each participant’s spatial Persona relative to the content, but you handle any changes to the content itself with the help of the [`SystemCoordinator`](./systemcoordinator.md) object.
 

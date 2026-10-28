@@ -24,7 +24,7 @@ static let cloudKitShareMetadata: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsCloudKitShareMetadataKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CKShare.Metadata`](../../../CloudKit/ckshare/metadata.md) object. Schedule a [`CKAcceptSharesOperation`](../../../CloudKit/ckacceptsharesoperation.md) task with the provided metadata object.
 

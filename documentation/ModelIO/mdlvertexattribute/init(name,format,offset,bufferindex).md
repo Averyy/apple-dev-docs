@@ -24,11 +24,11 @@ init(name: String, format: MDLVertexFormat, offset: Int, bufferIndex: Int)
 - (instancetype) initWithName:(NSString *) name format:(MDLVertexFormat) format offset:(NSUInteger) offset bufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A new vertex attribute object.
 
-#### Discussion
+## Discussion
 
 Use this initializer when constructing a new mesh from custom data, or when building a new [`MDLVertexDescriptor`](../mdlvertexdescriptor.md) object to change the vertex buffer formatting of an existing mesh. When you load a mesh from a [`MDLAsset`](../mdlasset.md) object, Model I/O  automatically creates vertex descriptor and vertex attribute objects describing the mesh’s vertex data.
 

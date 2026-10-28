@@ -21,7 +21,7 @@ let NFCTagResponseUnexpectedLengthErrorKey: String
 extern NSString * const NFCTagResponseUnexpectedLengthErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error object’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary contains this key, the received response packet length is invalid.
 

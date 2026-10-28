@@ -21,7 +21,7 @@ A base type that represents any scripting language source.
 extern UTType * const UTTypeScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.script`.
 

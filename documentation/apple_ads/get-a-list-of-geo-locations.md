@@ -11,11 +11,11 @@ Gets geolocation details using a geoidentifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use a geo `id` in the request payload to return a corresponding `displayName` and geolocation.
 
-##### Payload Example: Get a list of geolocations
+### Payload Example: Get a list of geolocations
 
 **Request**:
 

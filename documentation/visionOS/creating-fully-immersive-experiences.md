@@ -5,7 +5,7 @@
 
 Build fully immersive experiences by combining spaces with content you create using RealityKit or Metal.
 
-#### Overview
+## Overview
 
 A fully immersive experience replaces everything the person sees with custom content you create. You might use this type of experience to:
 
@@ -22,7 +22,7 @@ Typically, you combine a fully immersive experience with other types of experien
 
 [Video: A window titled The Solar System floats in a room next to a gray couch. The right side of the window contains a picture of the sun and earth. The left side contains a paragraph describing how the earth orbits the sun. There’s a button beneath the text titled View Outer Space. The user selects the button, then the window fades into a completely immersive view of outer space and the earth spinning. As the person moves their head from left to right, the Moon and the Sun come into view.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/fully-immersive-transition.mp4)
 
-##### Prepare someone for your app’s transitions
+### Prepare someone for your app’s transitions
 
 Give people control over when they enter or exit fully immersive experiences, and provide clear transitions to and from those experiences. Clear visual transitions make it easier to adjust to such a large change. Sudden transitions might be disorienting, unpleasant, or make the person think something went wrong.
 
@@ -32,7 +32,7 @@ At launch time, display windows or other content that allows the person to see t
 
 For guidelines on how to design fully immersive experiences, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines).
 
-##### Open an immersive space
+### Open an immersive space
 
 To create a fully immersive experience, open an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) and set its style to [`full`](../SwiftUI/immersionstyle/full.md). An immersive space is a type of SwiftUI scene that lets you place content anywhere in the person’s surroundings. Applying the [`full`](../SwiftUI/immersionstyle/full.md) style to the scene tells the system to hide passthrough video and display only your app’s content.
 
@@ -73,7 +73,7 @@ An app can display only one space at a time, and it’s an error for you to try 
 
 For more information about displaying spaces, see the [`ImmersiveSpace`](../SwiftUI/immersivespace.md) type.
 
-##### Draw your content using RealityKit
+### Draw your content using RealityKit
 
 RealityKit works well when your content consists of primitive shapes or existing content in USD files. Organize the contents of your scene using RealityKit entities, and animate that content using components and systems. Use Reality Composer Pro to assemble your content visually, and to attach dynamic shaders, animations, audio, and other behaviors to your content. Display the contents of your RealityKit scene in a [`RealityView`](../RealityKit/realityview.md) in your scene.
 
@@ -89,7 +89,7 @@ let scene = try await Entity(contentsOf: url)
 
 For more information about how to display content in a [`RealityView`](../RealityKit/realityview.md) and manage interactions with your content, see [Adding 3D content to your app](./adding-3d-content-to-your-app.md).
 
-##### Draw your content using Metal
+### Draw your content using Metal
 
 Another option for creating fully immersive scenes is to draw everything yourself using Metal. When using Metal to draw your content, use the Compositor Services framework to place that content onscreen. Compositor Services provides the code you need to set up your Metal rendering engine and start drawing.
 

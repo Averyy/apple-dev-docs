@@ -25,7 +25,7 @@ func dispatchThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: I
 - (void) dispatchThreadgroupsWithIndirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset threadsPerThreadgroup:(MTLSize) threadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The GPU fetches parameters from the indirect buffer just before the thread grid starts. This process lets the compute function run based on GPU feedback, without latency from data transfer between the CPU and the GPU.
 

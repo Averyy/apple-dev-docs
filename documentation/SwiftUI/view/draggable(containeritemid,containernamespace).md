@@ -20,11 +20,11 @@ nonisolated
 func draggable<ItemID>(containerItemID: ItemID, containerNamespace: Namespace.ID? = nil) -> some View where ItemID : Hashable, ItemID : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 A view that activates this view as the source of a drag and drop operation, beginning with user gesture input.
 
-#### Discussion
+## Discussion
 
 This modifier marks the view as a draggable element of an enclosing `dragContainer(_:containerNamespace:_:)`. Since this modifier does not require to provide the payload, only its identifier, it works lazily (the framework asks to provide the actual dragged items only when drag starts; also, the framework doesn’t have to render a view in order to access its payload).
 

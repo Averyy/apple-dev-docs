@@ -21,7 +21,7 @@ A locale region that’s relevant to the scanned string.
 var documentRegion: Locale.Region?
 ```
 
-#### Discussion
+## Discussion
 
 Set `documentRegion` to the region relevant to the scanned string, if any.
 

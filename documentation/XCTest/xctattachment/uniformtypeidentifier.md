@@ -20,7 +20,7 @@ var uniformTypeIdentifier: String { get }
 
 - [Adding Attachments to Tests, Activities, and Issues](../adding-attachments-to-tests-activities-and-issues.md)
 
-#### Discussion
+## Discussion
 
 Uniform Type Identifiers (UTIs) are Apple-defined identifiers that uniquely identify a particular type of data, such as a JPEG image or text document. Every [`XCTAttachment`](../xctattachment.md) instance stores a UTI string that indicates the type of data represented by the attachment.
 

@@ -20,7 +20,7 @@ An error code that indicates that the system couldn’t ensure the local availab
 BAManagedErrorCodeLocalAvailabilityFailure
 ```
 
-#### Discussion
+## Discussion
 
 Refer to the values in `-[NSError userInfo]` for the keys [`BASuccessesErrorKey`](../basuccesseserrorkey.md) and [`BAFailuresErrorKey`](../bafailureserrorkey.md) for, respectively, the asset packs the local availability of which the system ensured successfully and the asset packs the local availability of which the system couldn’t ensure with associated underlying errors for the latter.
 

@@ -17,7 +17,7 @@
 - (NSDictionary<NSString *,id> *) assetWriterInputSettingsForContentType:(CNSpatialAudioContentType) contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a dictionary of settings that should be used to encode LPCM samples using `AVAssetWriterInput`
 

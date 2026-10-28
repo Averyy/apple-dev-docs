@@ -21,7 +21,7 @@ Creates a new string, copying the specified code units.
 init(copying codeUnits: UTF8Span)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer skips UTF-8 validation because `codeUnits` must contain valid UTF-8.
 

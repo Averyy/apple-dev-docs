@@ -25,7 +25,7 @@ var COMPRESSION_LZ4_RAW: compression_algorithm { get }
 COMPRESSION_LZ4_RAW
 ```
 
-#### Discussion
+## Discussion
 
 Raw LZ4 is the same compression algorithm as [`COMPRESSION_LZ4`](./compression_lz4.md), but it produces and consumes the bare LZ4 block format without the small frame that the Compression library wraps around the raw stream. Use it when you need to interoperate with a third-party LZ4 implementation that expects the unframed open-source block format directly, or when you’re writing data into a higher-level container that already provides its own framing, sizes, and validation.
 

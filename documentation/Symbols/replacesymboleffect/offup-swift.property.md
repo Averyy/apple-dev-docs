@@ -21,7 +21,7 @@ An effect that replaces a symbol by removing it, and scaling a different symbol 
 var offUp: ReplaceSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The initial symbol is removed with no animation, and the new symbol scales up as it’s added.
 

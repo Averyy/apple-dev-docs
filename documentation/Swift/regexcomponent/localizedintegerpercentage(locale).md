@@ -23,11 +23,11 @@ static func localizedIntegerPercentage(locale: Locale) -> Self
 
 Available when `Self` is `IntegerFormatStyle<Int>.Percent`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches percentage substrings as [`Int`](../int.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches percentage substrings in accordance with the provided locale. For example, in the `en_US` locale, `75` formats as `75%`, and `1234` formats as `1,234%`. Other locales use different separators, or omit them entirely. Because of this, the regex needs to know what locale convention to match against.
 

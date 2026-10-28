@@ -15,11 +15,11 @@ A static factory method that allocates and initializes an stereo pan control.
 static OSSharedPtr<IOUserVideoStereoPanControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, float in_control_value, IOUserVideoObjectPropertyElement in_left_channel, IOUserVideoObjectPropertyElement in_right_channel, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 The control, if it was successfully allocated and initialized.
 
-#### Discussion
+## Discussion
 
 If [`IOUserVideoStereoPanControl`](../iouservideostereopancontrol.md) is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

@@ -19,7 +19,7 @@ func insertRow(at rowIndex: Int, with rowType: NSRuleEditor.RowType, asSubrowOfR
 - (void) insertRowAtIndex:(NSInteger) rowIndex withType:(NSRuleEditorRowType) rowType asSubrowOfRow:(NSInteger) parentRow animate:(BOOL) shouldAnimate;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If `parentRow` is greater than or equal to `rowIndex`, or if `rowIndex` would fall amongst the children of some other parent, or if the nesting mode forbids this configuration, an `NSInvalidArgumentException` is raised.
 

@@ -21,7 +21,7 @@ Valid content types the `IntentFile` can possibly be converted to.
 var availableContentTypes: [UTType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use these content types to request an `IntentFile` representation as either a file url or data.
 

@@ -23,7 +23,7 @@ var resistance: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat resistance;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `0.0`. Valid range is from `0.0` for no velocity damping, to [`CGFLOAT_MAX`](../../CoreFoundation/cgfloat_max.md) for complete velocity damping. If you set this property to `1.0`, a dynamic item’s motion stops as soon as there is no force applied to it.
 

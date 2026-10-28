@@ -15,7 +15,7 @@ The horizontal scroll indicator’s insets.
 final var horizontalScrollIndicatorInsets: NSEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `NSEdgeInsetsZero`.
 

@@ -5,13 +5,13 @@
 
 Simplify user interaction by using onscreen controls for your FxPlug plug-in.
 
-#### Overview
+## Overview
 
 While the Motion or Final Cut Pro inspector is a powerful way to adjust and animate plug-in parameters in your host application, many users prefer using onscreen controls (OSCs) to adjust their effects. These controls draw directly on the canvas, on top of the project’s footage and elements. By creating onscreen controls, you give your users a richer set of tools that let them directly manipulate your plug-in’s parameters—something that many users find more intuitive. For example, consider the onscreen control of the ring lens in the following illustration. It allows you to adjust the inside radius, outside radius, and position, all by dragging the visible rings in the canvas:
 
 ![An example of a plug-in with an onscreen control showing a large ring over an image, a circular position control in the center with an attached angle handle control.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3655263@2x.png)
 
-##### Create onscreen controls
+### Create onscreen controls
 
 Onscreen controls are written as a type of plug-in, just like filters and generators, and can be bundled in the same application bundle as the plug-in. To implement an onscreen control plug-in, create an NSObject subclass that implements the `FxOnScreenControl` protocol. Then, add the OSC’s uuid to your plug-in’s `Info.plist` file to link them.
 
@@ -19,11 +19,11 @@ Your plug-in uses the `FxOnScreenControl` protocol to draw controls and other UI
 
 FxPlug 4.0 introduced [`FxOnScreenControlAPI_v4`](../professional_video_applications/fxonscreencontrolapi_v4.md), which has additional (optional) methods for handling mouse-moved events.
 
-##### Initialize communication
+### Initialize communication
 
 Your onscreen control may also need access to the API Manager, to retrieve or set parameter values with [`FxParameterRetrievalAPI_v6`](../professional_video_applications/fxparameterretrievalapi_v6.md), for example. The host app sends your onscreen control plug-in an [`init(apiManager:)`](../professional_video_applications/fxtileableeffect/init%28apimanager%29-6vvaz.md) message, which includes a pointer to the API Manager object. Your plug-in can save this pointer for use later to communicate with the effect plug-in for which it provides an onscreen control UI.
 
-##### Identify drawing spaces
+### Identify drawing spaces
 
 The first thing an onscreen control plug-in needs to do is tell the host application which drawing space it plans to use: *canvas space*, *object space*, or *document space*. Your plug-in should return the corresponding drawing space constant from its [`drawingCoordinates()`](../professional_video_applications/fxonscreencontrol_v4/drawingcoordinates%28%29.md) method. This tells the host application which space your plug-in is using. It also informs the host application as to what space it should use to transform mouse positions when it calls your plug-in to handle events.
 
@@ -55,7 +55,7 @@ The drawing space types are:
 
 ![An image showing the three drawing space types. From the left is a canvas space, in the middle is the object space, and on the right side is the document space. Each space shows the x and y axis and coordinates.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3915367@2x.png)
 
-##### Draw onscreen controls
+### Draw onscreen controls
 
 This method is called when it is time for the plug-in to draw the onscreen controls.
 
@@ -77,7 +77,7 @@ func drawOSC(withWidth width: Int, height: Int, activePart: Int, destinationImag
 
 Draw control parts in object space so that they align with your effect, but draw their handles in canvas space so that they always remain the same size and always face the user, regardless of the canvas zoom settings. You can convert between spaces by using methods such as [`convertPoint(fromSpace:fromX:fromY:toSpace:toX:toY:)`](../professional_video_applications/fxonscreencontrolapi/convertpoint%28fromspace,fromx,fromy,tospace,tox,toy%29.md) in [`FxOnScreenControlAPI`](../professional_video_applications/fxonscreencontrolapi.md). Look at `FxShapeOSC.m` in the `FxShape` project to see some examples of how to convert coordinates from object space to canvas space and vice versa.
 
-##### Perform a hit test with onscreen controls
+### Perform a hit test with onscreen controls
 
 Interacting with an OSC requires knowing if a user has clicked within a drawn control. Consider this method:
 
@@ -152,7 +152,7 @@ func mouseMoved(atPositionX mousePositionX: Double, positionY mousePositionY: Do
 }
 ```
 
-##### Implement mouse and keyboard event handling
+### Implement mouse and keyboard event handling
 
 Users need to interact with your controls, so you must implement mouse and keyboard event handling. The host app passes mouse coordinates to your plug-in, in its specified drawing space. For example, if your plug-in returns [`kFxDrawingCoordinates_CANVAS`](../professional_video_applications/kfxdrawingcoordinates_canvas.md) for its [`drawingCoordinates()`](../professional_video_applications/fxonscreencontrol_v4/drawingcoordinates%28%29.md) method, then your mouse event handlers will receive mouse coordinates in the canvas drawing space.
 
@@ -316,7 +316,7 @@ There are also some mouse messages you can optionally receive; to do so, impleme
 - **[`mouseEntered(atPositionX:positionY:modifiers:forceUpdate:at:)`](../professional_video_applications/fxonscreencontrol_v4/mouseentered%28atpositionx,positiony,modifiers,forceupdate,at%29.md)**: Provides information when the mouse pointer enters the view.
 - **[`mouseExited(atPositionX:positionY:modifiers:forceUpdate:at:)`](../professional_video_applications/fxonscreencontrol_v4/mouseexited%28atpositionx,positiony,modifiers,forceupdate,at%29.md)**: Provides information when the mouse pointer leaves the view.
 
-##### Add onscreen controls to the Info.plist file
+### Add onscreen controls to the Info.plist file
 
 The `ProPlugPlugInList` array in the plug-in’s `Info.plist` file requires a separate entry for your onscreen control’s class, with its own UUID.
 

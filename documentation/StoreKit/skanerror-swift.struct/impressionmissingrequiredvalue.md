@@ -18,7 +18,7 @@ A required value is missing from a view-through ad impression.
 static var impressionMissingRequiredValue: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that your instance of [`SKAdImpression`](../skadimpression.md) provides all of the required values.
 

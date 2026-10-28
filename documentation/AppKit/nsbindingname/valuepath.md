@@ -19,7 +19,7 @@ static let valuePath: NSBindingName
 extern NSBindingName NSValuePathBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

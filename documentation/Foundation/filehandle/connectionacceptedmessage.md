@@ -21,7 +21,7 @@ A message a file handle sends when it creates a socket connection between two pr
 struct ConnectionAcceptedMessage
 ```
 
-#### Overview
+## Overview
 
 Before adding an observer for this message type, call either [`acceptConnectionInBackgroundAndNotify()`](./acceptconnectioninbackgroundandnotify%28%29.md) or [`acceptConnectionInBackgroundAndNotify(forModes:)`](./acceptconnectioninbackgroundandnotify%28formodes%29.md) on a [`FileHandle`](../filehandle.md) object that represents a server stream-type socket.
 

@@ -21,7 +21,7 @@ Creates a new value with the bit pattern of the given pointer.
 init<P>(bitPattern pointer: P?) where P : _Pointer
 ```
 
-#### Discussion
+## Discussion
 
 The new value represents the address of the pointer passed as `pointer`. If `pointer` is `nil`, the result is `0`.
 

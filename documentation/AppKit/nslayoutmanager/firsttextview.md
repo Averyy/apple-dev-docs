@@ -19,7 +19,7 @@ unowned(unsafe) var firstTextView: NSTextView? { get }
 @property (assign, readonly, nullable) NSTextView * firstTextView;
 ```
 
-#### Discussion
+## Discussion
 
 This `NSTextView` object is the recipient of various `NSText` and `NSTextView` notifications.
 

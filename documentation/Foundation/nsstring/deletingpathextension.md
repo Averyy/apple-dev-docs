@@ -25,7 +25,7 @@ var deletingPathExtension: String { get }
 @property (copy, readonly) NSString * stringByDeletingPathExtension;
 ```
 
-#### Discussion
+## Discussion
 
 A new string made by deleting the extension (if any, and only the last) from the receiver. Strips any trailing path separator before checking for an extension. If the receiver represents the root path, it is returned unaltered.
 

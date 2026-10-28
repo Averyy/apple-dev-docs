@@ -5,7 +5,7 @@
 
 Automatically and transparently convert accounts to Sign in with Apple or to use strong passwords for improved security.
 
-#### Overview
+## Overview
 
 When accounts have weak, easily guessed passwords, or if an account is breached, the iOS Security Recommendations help users update account passwords. Adding an Account Authentication Modification Extension to your app lets users easily switch to a strong, complex password, or upgrade to Sign in with Apple. The experience for users is simple and painless, often only requiring the tap of a button.
 
@@ -17,11 +17,11 @@ You configure your extension to support upgrading to strong passwords, upgrading
 
 If your account security policy requires additional steps, such as two-factor authentication, your extension can include these steps in the upgrade process.
 
-##### Configure an Associated Domain
+### Configure an Associated Domain
 
 To upgrade user accounts stored in the iOS password manager, you must first establish an association between your app and the domains that to which your account belongs. To make this association, add an associated domain file to your website that includes a `webcredential` entry, and configure a matching [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md). For more information about how to configure associated domains, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Add an Account Authentication Modification Extension to Your App
+### Add an Account Authentication Modification Extension to Your App
 
 Xcode provides a starting point to create your extension. To add the Account Authentication Modification extension to your project:
 
@@ -32,13 +32,13 @@ Xcode provides a starting point to create your extension. To add the Account Aut
 
 ![A screenshot showing Xcode’s new target sheet with Account Authentication selected](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/media-3682821@2x.png)
 
-##### Declare Supported Upgrade Types
+### Declare Supported Upgrade Types
 
 Your extension’s `Info.plist` file specifies the types of upgrades your app supports. To support upgrading weak passwords to strong passwords, set the [`ASAccountAuthenticationModificationSupportsStrongPasswordChange`](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md) key to `YES`. To support upgrading accounts from using passwords to using Sign in with Apple, set the [`ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple`](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md) to `YES`.
 
 When the system begins a strong password upgrade, it generates a new strong password. If the system-generated password doesn’t meet your needs, optionally add the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md) key with a string value that describes your requirements. For details about the format of this string, see [Customizing Password AutoFill rules](../Security/customizing-password-autofill-rules.md). Use the [Password Rules Validation Tool](https://developer.apple.com/password-rules/) to verify the passwords the system generates with your requirements.
 
-##### Support Automatic Strong Password Upgrades
+### Support Automatic Strong Password Upgrades
 
 When the user initiates a strong password upgrade, the system invokes your extension to perform the upgrade. To perform a one-tap automatic upgrade to strong passwords, the system loads your extension and instantiates a subclass of [`ASAccountAuthenticationModificationViewController`](./asaccountauthenticationmodificationviewcontroller.md). The system calls the [`changePasswordWithoutUserInteraction(for:existingCredential:newPassword:userInfo:)`](./asaccountauthenticationmodificationviewcontroller/changepasswordwithoutuserinteraction%28for,existingcredential,newpassword,userinfo%29.md) method you implement in the view controller.
 
@@ -93,7 +93,7 @@ let error = ASExtensionError(.failed, userInfo: [
 self.extensionContext.cancelRequest(withError: error)
 ```
 
-##### Support Automatic Upgrades to Sign in with Apple
+### Support Automatic Upgrades to Sign in with Apple
 
 The steps to implement automatic upgrades to Sign in with Apple are very similar to the ones to upgrade to a strong password. To support upgrading to Sign in with Apple, your app must support Sign in with Apple. For more information, see [Sign in with Apple](https://developer.apple.com/sign-in-with-apple/) and [Implementing User Authentication with Sign in with Apple](./implementing-user-authentication-with-sign-in-with-apple.md).
 
@@ -139,7 +139,7 @@ self.extensionContext.getSignInWithAppleUpgradeAuthorization(
 
 To create the Sign in with Apple credential, the system prompts the user and communicates with Apple. If the user cancels the request, the system calls the completion handler with an error that specifies a [`ASExtensionError.Code.userCanceled`](./asextensionerror/code/usercanceled.md) code. In that case, cancel the request using the same error code and no failure reason, and don’t show any additional user interface. If the device can’t communicate with Apple’s servers, the completion handler may be passed [`nil`](../ObjectiveC/nil-227m0.md) credentials. In this case, cancel the request with an error that specifies [`ASExtensionError.Code.failed`](./asextensionerror/code/failed.md) as the error code.
 
-##### Perform Upgrades With Additional Security Requirements
+### Perform Upgrades With Additional Security Requirements
 
 If the user initiates an account authentication upgrade but you require additional security steps, such as using two-factor authentication, fail the initial automatic request with an error that specifies user interaction is required.
 
@@ -156,7 +156,7 @@ If the user fails to complete the additional steps, or the upgrade fails for any
 
 If the user taps the system-provided cancel button, the system dismisses the interface and calls your view controller’s [`cancelRequest()`](./asaccountauthenticationmodificationviewcontroller/cancelrequest%28%29.md) method. If you need to perform any cleanup work, override this method and call the superclass [`cancelRequest()`](./asaccountauthenticationmodificationviewcontroller/cancelrequest%28%29.md) method to complete the process.
 
-##### Initiate Security Upgrades From Within Your App
+### Initiate Security Upgrades From Within Your App
 
 To initiate upgrades to strong passwords or to use Sign in with Apple from within your app, use the [`ASAccountAuthenticationModificationController`](./asaccountauthenticationmodificationcontroller.md) class.
 

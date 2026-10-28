@@ -20,11 +20,11 @@ func CGGetActiveDisplayList(_ maxDisplays: UInt32, _ activeDisplays: UnsafeMutab
 extern CGError CGGetActiveDisplayList(uint32_t maxDisplays, CGDirectDisplayID *activeDisplays, uint32_t *displayCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 The first entry in the list of active displays is the main display. In case of mirroring, the first entry is the largest drawable display or, if all are the same size, the display with the greatest pixel depth.
 

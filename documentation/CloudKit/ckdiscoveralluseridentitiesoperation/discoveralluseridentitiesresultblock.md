@@ -22,7 +22,7 @@ The closure to execute when the operation finishes.
 var discoverAllUserIdentitiesResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

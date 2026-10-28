@@ -21,7 +21,7 @@ Whether debug draw should be included in pipelines.
 var debugDraw: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Debug Draw is disabled by default and its code is removed from shaders for optimal performance.
 

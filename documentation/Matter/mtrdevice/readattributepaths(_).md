@@ -25,11 +25,11 @@ func readAttributePaths(_ attributePaths: [MTRAttributeRequestPath]) -> [[String
 - (NSArray<NSDictionary<NSString *,id> *> *) readAttributePaths:(NSArray<MTRAttributeRequestPath *> *) attributePaths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of response-value dictionaries as described in the documentation for MTRDeviceResponseHandler.  Each one will have an MTRAttributePathKey and an MTRDataKey.
 
-#### Discussion
+## Discussion
 
 Paths that do not correspond to any existing attributes, or that the MTRDevice does not have attribute values for, will not be present in the return value from this function.
 

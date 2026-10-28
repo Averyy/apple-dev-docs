@@ -25,7 +25,7 @@ let kCGImagePropertyAuxiliaryData: CFString
 extern CFStringRef const kCGImagePropertyAuxiliaryData;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFArray`](../CoreFoundation/cfarray.md). Each [`CFDictionary`](../CoreFoundation/cfdictionary.md) in the array contains auxiliary data for one of the images in the file. Use the [`kCGImagePropertyAuxiliaryDataType`](./kcgimagepropertyauxiliarydatatype.md) key to determine the type of data associated with the image.
 

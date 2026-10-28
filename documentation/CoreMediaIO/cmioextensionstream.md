@@ -24,7 +24,7 @@ class CMIOExtensionStream
 
 - [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
 
-#### Overview
+## Overview
 
 A stream delivers media samples to or from a [`CMIOExtensionDevice`](./cmioextensiondevice.md).
 

@@ -29,7 +29,7 @@ GKFriendsAuthorizationStatusAuthorized
 
 - [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
-#### Discussion
+## Discussion
 
 If the [`loadFriendsAuthorizationStatus(_:)`](../gklocalplayer/loadfriendsauthorizationstatus%28_%29.md) method returns `GKFriendsAuthorizationStatus.authorized`, the [`loadFriends(identifiedBy:completionHandler:)`](../gklocalplayer/loadfriends%28identifiedby,completionhandler%29.md) method passes the friends list to the completion handler.
 

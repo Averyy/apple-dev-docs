@@ -20,11 +20,11 @@ Provides scoped access to the node’s AUAudioUnit
 func withAUAudioUnit<R, E>(_ body: (borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure
 
-#### Discussion
+## Discussion
 
 This method provides thread-safe, scoped access to the underlying AUAudioUnit. The audio unit reference is only valid within the closure and must not be retained or accessed outside of it.
 

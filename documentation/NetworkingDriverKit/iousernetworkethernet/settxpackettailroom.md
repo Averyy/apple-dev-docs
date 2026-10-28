@@ -15,7 +15,7 @@ Reserves the specified number of bytes at the end of each packet.
 kern_return_t SetTxPacketTailroom(uint16_t numBytes);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

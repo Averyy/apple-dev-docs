@@ -29,7 +29,7 @@ var sessionSendsLaunchEvents: Bool { get set }
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 For configuration objects created using the [`background(withIdentifier:)`](./background%28withidentifier%29.md) method, you can use this property to control the launching behavior for an iOS app. This property is ignored for configuration objects created using other methods.
 

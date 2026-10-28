@@ -13,7 +13,7 @@
 kINQUIRY_StandardDataHeaderSize = 5
 ```
 
-#### Discussion
+## Discussion
 
 INQUIRY data header size.
 

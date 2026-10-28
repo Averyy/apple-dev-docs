@@ -23,7 +23,7 @@ optional var extendedAttributes: [String : Data] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,NSData *> * extendedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The extended file attributes are part of the item’s metadata. The system sets extended attributes on dataless files, and preserves them on files that it renders dataless. The system decides which attributes to sync. To sync an attribute, it calls the `xattr_name_with_flags(_:_:)` method and passes the `XATTR_FLAG_SYNCABLE` flag. Some older attributes are also synced.
 

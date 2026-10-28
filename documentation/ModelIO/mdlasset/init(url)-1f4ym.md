@@ -24,11 +24,11 @@ init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset object.
 
-#### Discussion
+## Discussion
 
 Use the [`canImportFileExtension(_:)`](./canimportfileextension%28_%29.md) method to determine whether Model I/O  can import an asset.
 

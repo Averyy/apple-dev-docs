@@ -19,7 +19,7 @@ class FSCheckAccessResult
 @interface FSCheckAccessResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`checkAccess(to:requestedAccess:context:replyHandler:)`](./fsvolume/accesscheckhandler/checkaccess%28to,requestedaccess,context,replyhandler%29.md).
 

@@ -20,11 +20,11 @@ string CampaignCreate.Status
 - `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
 - `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
 
-#### Discussion
+## Discussion
 
 Include `status` in the create request to determine whether the new campaign begins competing for delivery immediately or starts paused.
 
-##### Example
+### Example
 
 ```json
 {

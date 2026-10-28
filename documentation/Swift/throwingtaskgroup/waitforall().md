@@ -18,15 +18,15 @@ Wait for all of the group’s remaining tasks to complete.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) mutating func waitForAll() async throws
+nonisolated(nonsending)
+mutating func waitForAll() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If any of the tasks throw, the *first* error thrown is captured and re-thrown by this method although the task group is *not* canceled when this happens.
 
-##### Cancelling the task group on first error
+### Cancelling the task group on first error
 
 If you want to cancel the task group, and all “sibling” tasks, whenever any of child tasks throws an error, use the following pattern instead:
 

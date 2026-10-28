@@ -14,7 +14,7 @@ Build a multiplatform app that uses windows, volumes, and animations to create a
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 BOT-anist is a game-like experience where you build a custom robot botanist by selecting from a variety of color and shape options, and then guide your robot around a futuristic greenhouse to plant alien flowers. This app demonstrates how to build an app for iOS, iPadOS, macOS, and visionOS using a single shared Xcode target and a shared Reality Composer Pro project.
 
@@ -22,7 +22,7 @@ This sample shows off a number of RealityKit and visionOS features, including vo
 
 [Video: A screenshot from the Apple Vision Pro simulator with a single floating window. The window contains a robot on the right side, and controls to customize the robots appearance on the left.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/BOT-anist-overview.mp4)
 
-##### Customize the robot and explore
+### Customize the robot and explore
 
 When the app launches, you see a window that contains your robot and a number of different user interface elements you can use to customize it. You can change the shape of your robot’s head, backpack, and body, as well as the material and color scheme for each part. You can also change the color of the lights for each piece.
 
@@ -34,7 +34,7 @@ When you’re happy with the look of your robot botanist, tap or click the Start
 
 ![An illustration of an extended keyboard with the letters \"WASD\" highlighted in red with arrows overlaid, the letters \"IJKL\" outlined in blue, the arrow keys outlined in green, and the keys 8, 4, 5, 6 outlined in  Yellow.](https://developer.apple.com/tutorials/images/com.apple.visionOS/keyboard@2x.png)
 
-##### Make the project multiplatform
+### Make the project multiplatform
 
 You can now use RealityKit to create multiplatform apps that run in iOS, iPadOS, macOS, and visionOS using [`RealityView`](../RealityKit/realityview.md). As long as your Xcode project uses only SwiftUI for its user interface, you can convert it to a multiplatform app by navigating to your app target in Xcode and adding the platforms you want to support. You don’t need to add a new target or scheme. When you’re developing your app, Xcode compiles the right code for the selected destination. When you build your app for distribution, it builds it for all the platforms you select.
 
@@ -77,7 +77,7 @@ let scaleToFitWidth = Float(viewBounds.extents.x * 0.8) / baseExtents.x
 appState.creationRoot.scale = SIMD3<Float>(repeating: min(scaleToFitWidth, scaleToFitHeight))
 ```
 
-##### Set up the window groups
+### Set up the window groups
 
 BOT-anist sets up two window groups because it uses both a window and a volume in visionOS, but runs the entire app in a single window on its other supported platforms. The first window group uses the default platform window style, which creates a standard window for the platform it’s running on. In visionOS only, the app configures this window group to dismiss the other window group, which holds the 3D volume, when this window appears. That ensures the window and volume are never visible at the same time.
 
@@ -124,7 +124,7 @@ WindowGroup(id: "RobotExploration") {
 #endif
 ```
 
-##### Show the volume’s baseplate
+### Show the volume’s baseplate
 
 visionOS volumes are, by default, user resizable. People can resize them by looking at one of the four bottom corners of the volume, and then pinching and dragging the control that appears.
 
@@ -163,7 +163,7 @@ When the contents resize relative to the real-world surroundings, it affects the
 }
 ```
 
-##### Specify the volume’s ornament view
+### Specify the volume’s ornament view
 
 Starting with visionOS 2, you can place ornaments in different locations in the 3D space of a volume. BOT-anist uses an ornament view to display the score, along with buttons for re-starting and for going back to the robot customization screen.
 
@@ -178,7 +178,7 @@ Instead of the default placement, BOT-anist displays the ornament view at the to
 }
 ```
 
-##### Create dynamic lights with shadows using Reality Composer Pro
+### Create dynamic lights with shadows using Reality Composer Pro
 
 To create dynamic lighting effects with shadows, add lights to your Reality Composer Pro project. To see the lights that BOT-anist uses, open `BOTanistAssets.swift` in Reality Composer Pro and open the scene called `volume.usda`.
 
@@ -190,7 +190,7 @@ You can use up to eight lights in a RealityKit scene, but lights have a nontrivi
 
 ![A screenshot of the robot botanist casting a dynamic shadow on the white floor.](https://developer.apple.com/tutorials/images/com.apple.visionOS/RCP-shadow@2x.png)
 
-##### Detect viewpoint changes in volumes
+### Detect viewpoint changes in volumes
 
 In visionOS 2 and later, apps can use [`onVolumeViewpointChange(updateStrategy:initial:_:)`](../SwiftUI/view/onvolumeviewpointchange%28updatestrategy,initial,_%29.md) to receive updates when the player moves to a different side. When BOT-anist receives an update, it rotates the robot toward the viewer and waves to them at their new location.
 
@@ -209,7 +209,7 @@ In `ExplorationView.swift`, which is the top-level view in the volume’s window
 
 The value the app receives is of type [`Viewpoint3D`](../SwiftUI/viewpoint3d.md), and it identifies which side of the volume is currently facing the viewer relative to which side was the front face when the app first launched. The code that handles movement input monitors this property. When it detects a viewpoint change and the robot isn’t moving, it starts the animations that cause the robot to rotate toward the new front face and wave cheerily.
 
-##### Animate the robot
+### Animate the robot
 
 BOT-anist contains multiple different body types that players can choose when building their robot, including one that walks, one that rolls, and one that floats. Each of these bodies has a different set of animations, and the app uses a state machine defined in `AnimationStateMachine.swift` to keep track of which animation is currently playing, and when and how it transitions to a different animation.
 
@@ -243,7 +243,7 @@ guard let anim = body.animationLibraryComponent?.animations[animState.rawValue] 
 }
 ```
 
-##### Animate the plants using blend shapes
+### Animate the plants using blend shapes
 
 While skeletal animations are an incredibly powerful and useful tool, certain types of animations need to move each vertex in the model individually. RealityKit stores vertex-level changes to a model using *blend shapes*, which contain offset data for the model entity’s vertices. You can set each blend shape to a value between `0.0` and `1.0`. Any value other than `0.0` or `1.0` represents a partial state in-between the model’s default shape, and the shape contained in that blend shape.
 
@@ -294,7 +294,7 @@ blendComponent.weightSet[0].weights = BlendShapeWeights([0, 1, 0, 0, 0, 0, 0])
 entity.components.set(blendComponent)
 ```
 
-##### Animate the head and backpack
+### Animate the head and backpack
 
 To make the robot customizable, the app combines three separate entities to build it. Each of the three bodies (walking, rolling, floating) is a skeletal mesh with its own unique set of animations. When the app enters the greenhouse mode, it combines the selected head and backpack, which are static meshes, with the animated entity for the selected body.
 
@@ -378,9 +378,9 @@ component.headEntity.setTransformMatrix(headTransform * component.headOffset, re
 component.headEntity.setScale(previousHeadScale, relativeTo: skeleton)
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Hello World](./world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
@@ -393,7 +393,7 @@ component.headEntity.setScale(previousHeadScale, relativeTo: skeleton)
 - [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 
-###### Related articles
+#### Related articles
 
 - [Adding 3D content to your app](./adding-3d-content-to-your-app.md)
   Add depth and dimension to your visionOS app and discover how to incorporate your app’s content into a person’s surroundings.
@@ -406,7 +406,7 @@ component.headEntity.setScale(previousHeadScale, relativeTo: skeleton)
 - [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
-###### Related videos
+#### Related videos
 
 - [Dive deep into volumes and immersive spaces](https://developer.apple.com/videos/play/wwdc2024/10153)
   Discover powerful new ways to customize volumes and immersive spaces in visionOS. Learn to fine-tune how volumes resize and respond to people moving around them. Make volumes and immersive spaces interact through the power of coordinate conversions. Find out how to make your app react when people adjust immersion with the Digital Crown, and use a surrounding effect to dynamically customize the passthrough tint in your immersive space experience.

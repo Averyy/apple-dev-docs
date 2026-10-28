@@ -20,15 +20,15 @@ Declare a tag that can be applied to a test function or test suite.
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer) macro Tag()
+@attached(accessor)
+@attached(peer) macro Tag()
 ```
 
 ## Mentions
 
 - [Adding tags to tests](./addingtags.md)
 
-#### Overview
+## Overview
 
 Use this tag with members of the [`Tag`](./tag.md) type declared in an extension to mark them as usable with tests. For more information on declaring tags, see [Adding tags to tests](./addingtags.md).
 

@@ -24,7 +24,7 @@ func startStepCountingUpdates(to queue: OperationQueue, updateOn stepCounts: Int
 - (void) startStepCountingUpdatesToQueue:(NSOperationQueue *) queue updateOn:(NSInteger) stepCounts withHandler:(CMStepUpdateHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates tracking of the user’s steps and calls the provided block periodically to deliver the results. When you call this method, the step counter resets the current step count value to 0 and begins counting. Each time the step counter records the number of steps in the `stepCounts` parameter, it executes the specified `handler` block. For example, if `stepCounts` is 100, it would send updates at 100 steps, 200 steps, 300 steps, and so on. The number of steps reported to your handler is always the total number of steps since you called this method.
 

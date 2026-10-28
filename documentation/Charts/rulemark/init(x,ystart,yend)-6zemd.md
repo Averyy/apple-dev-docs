@@ -22,7 +22,7 @@ nonisolated
 init<X>(x: PlottableValue<X>, yStart: CGFloat? = nil, yEnd: CGFloat? = nil) where X : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a vertical rule across a chart’s plotting area at an x position:
 

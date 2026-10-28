@@ -25,7 +25,7 @@ func CTRubyAnnotationGetAlignment(_ rubyAnnotation: CTRubyAnnotation) -> CTRubyA
 extern CTRubyAlignment CTRubyAnnotationGetAlignment(CTRubyAnnotationRef rubyAnnotation);
 ```
 
-#### Return Value
+## Return Value
 
 The alignment of `rubyAnnotation`, if the `rubyAnnotation` object is valid; otherwise, [`CTRubyAlignment.invalid`](./ctrubyalignment/invalid.md).
 

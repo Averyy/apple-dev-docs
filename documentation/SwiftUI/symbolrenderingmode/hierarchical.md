@@ -21,7 +21,7 @@ A mode that renders symbols as multiple layers, with different opacities applied
 static let hierarchical: SymbolRenderingMode
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI fills the first layer with the foreground style, and the others the secondary, and tertiary variants of the foreground style. You can specify these styles explicitly using the [`foregroundStyle(_:_:)`](../view/foregroundstyle%28_,_%29.md) and [`foregroundStyle(_:_:_:)`](../view/foregroundstyle%28_,_,_%29.md) modifiers. If you only specify a primary foreground style, SwiftUI automatically derives the others from that style. For example, you can render a filled exclamation mark triangle with purple as the tint color for the exclamation mark, and lower opacity purple for the triangle:
 

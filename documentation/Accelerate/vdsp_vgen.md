@@ -25,7 +25,7 @@ extern void vDSP_vgen(const float *__A, const float *__B, float *__C, vDSP_Strid
 
 - [Using linear interpolation to construct new data points](./using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

@@ -16,7 +16,7 @@
 kSCSITaskStatus_TASK_SET_FULL
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of TASK_SET_FULL. The device server may need to complete a task before the initiator sends another.
 

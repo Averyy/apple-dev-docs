@@ -23,7 +23,7 @@ var currentCalls: Set<CTCall>? { get }
 @property (retain, readonly, nullable) NSSet<CTCall *> * currentCalls;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing a `CTCall` object for each cellular call in progress. If no calls are in progress, the value of this property is `nil`.
 

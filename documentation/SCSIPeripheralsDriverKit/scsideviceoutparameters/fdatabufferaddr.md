@@ -15,7 +15,7 @@ The virtual address of the buffer the dext creates to transfer data.
 uint64_t fDataBufferAddr;
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses this address to create an [`IOMemoryDescriptor`](../../DriverKit/iomemorydescriptor.md) in the kernel that [`fRequestedByteCountOfTransfer`](./frequestedbytecountoftransfer.md) specifies and maps to the dext process.
 

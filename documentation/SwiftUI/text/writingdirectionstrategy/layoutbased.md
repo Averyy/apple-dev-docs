@@ -21,7 +21,7 @@ The writing direction following the general UI layout direction.
 static let layoutBased: Text.WritingDirectionStrategy
 ```
 
-#### Discussion
+## Discussion
 
 This writing direction follows the [`layoutDirection`](../../environmentvalues/layoutdirection.md) in the view hierarchy.
 

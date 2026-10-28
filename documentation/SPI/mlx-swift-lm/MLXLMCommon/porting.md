@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 There are a number of ways to implement new models in MLX in Swift:
 
-#### Overview
+## Overview
 
 - Build from scratch
 - Port from other ML frameworks
@@ -20,11 +20,11 @@ There are a number of ways to implement new models in MLX in Swift:
 
 This document talks primarily about the latter.
 
-#### Developing mlx-swift-lm
+## Developing mlx-swift-lm
 
 Please see [Developing mlx-swift-lm](./developing.md) for more information about how to do development *in* mlx-swift-lm.
 
-#### Porting Models from MLX in Python
+## Porting Models from MLX in Python
 
 Checkpoint namespaces can differ from runtime module paths. Implement [`prepareCheckpoint(_:)`](./baselanguagemodel/preparecheckpoint%28_%29.md) with [`CheckpointNameMapping`](./checkpointnamemapping.md) for renames and exclusions, or [`CheckpointComponent`](./checkpointcomponent.md) to select a component from a larger checkpoint. These operations preserve source metadata and per-layer precision. Keep architecture-specific numeric conversions in the model’s hook. See [Model Compatibility](./model-compatibility.md) for the loading contract and validation rules.
 
@@ -32,7 +32,7 @@ Models with cross-layer KV sharing must pass the owner’s attention presentatio
 
 Let’s consider a concrete example, [gemma.py](https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/models/gemma.py). For reference, here is the current port [Gemma.swift](https://github.com/ml-explore/mlx-swift-lm/blob/main/Libraries/MLXLLM/Models/Gemma.swift).
 
-##### Imports
+### Imports
 
 When creating the new model, you need to import the right modules. Typically these are sufficient:
 
@@ -57,7 +57,7 @@ import MLXNN
 
   - The base [Module and NN](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxnn) package for MLX
 
-##### Configuration
+### Configuration
 
 Next, port the configuration type from Python. You can see it at the top of the `gemma.py` file:
 
@@ -135,11 +135,11 @@ enum CodingKeys: String, CodingKey {
 
 This will read `rope_theta` from the JSON file if present and fall back to a default value of `10_000`.
 
-##### Understanding Property Wrappers
+### Understanding Property Wrappers
 
 MLX Swift uses property wrappers to handle automatic registration of modules and parameters. This is different from Python MLX, which uses runtime discovery.
 
-###### Python MLX: Automatic Discovery
+#### Python MLX: Automatic Discovery
 
 In Python MLX, you simply assign modules and parameters as attributes, and MLX automatically discovers them:
 
@@ -152,7 +152,7 @@ class MyModule(nn.Module):
         self.weight = mx.ones([256])       # parameter
 ```
 
-###### Swift MLX: Property Wrappers
+#### Swift MLX: Property Wrappers
 
 In Swift MLX, you must explicitly declare modules and parameters using property wrappers:
 
@@ -169,7 +169,7 @@ class MyModule: Module {
 }
 ```
 
-###### When to Use Each
+#### When to Use Each
 
 - **`@ModuleInfo`**: For neural network layers (anything with `callAsFunction`)
 
@@ -178,7 +178,7 @@ class MyModule: Module {
 
   - Examples: weight matrices, bias vectors, scaling factors
 
-###### Weight Key Mapping
+#### Weight Key Mapping
 
 Both property wrappers support custom keys for weight loading:
 
@@ -189,7 +189,7 @@ Both property wrappers support custom keys for weight loading:
 
 The `key` parameter maps to the corresponding key in the saved model weights. If no key is specified, it uses the property name.
 
-###### Initialization Syntax
+#### Initialization Syntax
 
 When using property wrappers, initialization uses the `wrappedValue` syntax:
 
@@ -203,7 +203,7 @@ self._weight.wrappedValue = MLXArray.ones([dimensions])
 
 This explicit registration system provides type safety and ensures all modules and parameters are properly tracked for operations like weight loading, quantization, and gradient computation.
 
-###### Advanced Property Wrapper Patterns
+#### Advanced Property Wrapper Patterns
 
 Beyond the basic usage, there are several advanced patterns you’ll encounter:
 
@@ -277,7 +277,7 @@ This distinction is crucial:
 
 Use private underscore properties when you need to compute values based on configuration or other parameters, but don’t want the weight loading to fail because these “parameters” don’t exist in the saved weights.
 
-##### Porting Layers without Children
+### Porting Layers without Children
 
 Now we can begin porting the layers (Modules). Here is an example layer with no child layers (e.g. `Linear`) but with parameters (e.g. `MLXArray`):
 
@@ -361,7 +361,7 @@ public func callAsFunction(_ x: MLXArray) -> MLXArray {
 
 > **Note**: [This reference](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/converting-python) shows the mapping between Python method and function names and Swift.
 
-##### Porting Layers with Children
+### Porting Layers with Children
 
 Consider this module from Python that uses the previously defined `RMSNorm` module:
 
@@ -506,7 +506,7 @@ public func callAsFunction(_ x: MLXArray) -> MLXArray {
 }
 ```
 
-##### Porting Layers: Configuration and Structure
+### Porting Layers: Configuration and Structure
 
 Sometimes the configuration determines the structure of the model:
 
@@ -559,7 +559,7 @@ private class GemmaModelInner: Module {
 
 You have an array `layers` that matches the same property in Python. When calling the Module, you simply iterate through the `layers` property, chaining the calls together.
 
-##### Model Class
+### Model Class
 
 Finally we reach the top level of of the model. In Python there is typically a class named `Model`. This is the public entry point into the model. There is typically very little code in this module, though it may prepare the inputs and outputs.
 
@@ -613,7 +613,7 @@ public class GemmaModel: Module, LLMModel, KVCacheDimensionProvider {
 }
 ```
 
-##### Registration
+### Registration
 
 The last step before we can use the model is to register the types so that everything can be found from the configuration file.
 
@@ -657,9 +657,9 @@ for await generation in stream {
 }
 ```
 
-#### Notes
+## Notes
 
-##### Porting a Model Similar to an Existing Model
+### Porting a Model Similar to an Existing Model
 
 If you are porting a model and it is similar to an existing (already ported) model, you can often take a shortcut and look at the diffs.
 
@@ -667,7 +667,7 @@ For example `gemma.py` and `gemma2.py` are related. If you look at the diff betw
 
 Many models are related to each other, so this can be a very effective way to create new models.
 
-##### Debugging a Ported Model
+### Debugging a Ported Model
 
 What do you do when your ported model spews random text or crashes with a broadcast error?
 
@@ -735,7 +735,7 @@ You can use these calls on the values passed into the `__call__`/`callAsFunction
 
 The nice thing about this technique is that it doesn’t require understanding how the model works. You have a reference implementation on the Python side, and you only need to identify where it is different. Once you determine the point where it is different, you can track backward and figure out why (again, it is just calling functions and doing math).
 
-##### Optional Modules and Parameters
+### Optional Modules and Parameters
 
 Models sometimes have optional modules or parameters based on their configuration. For example, [qwen2.py](https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/models/qwen2.py#L161C1-L163C1) only creates the `lm_head` module if `tie_word_embeddings` is `False`:
 
@@ -772,7 +772,7 @@ public class Qwen2Model: Module, LLMModel, KVCacheDimensionProvider {
 
 If the `lmHead` module is created but not used, the parameter load will fail validation because the `lm_head` keys will be missing.
 
-##### Pre-computed MLXArrays
+### Pre-computed MLXArrays
 
 In some cases it is convenient to pre-compute some `MLXArray` but not treat it as a loadable parameter. In particular, we do not want the loading of parameters to fail because this MLXArray is “missing”.
 

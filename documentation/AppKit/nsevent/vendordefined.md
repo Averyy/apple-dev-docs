@@ -19,7 +19,7 @@ var vendorDefined: Any { get }
 @property (strong, readonly) id vendorDefined;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of three [`NSNumber`](../../Foundation/nsnumber.md) objects. Each object encapsulates a `short` value that vendors may return for various reasons; see the vendor documentation for details.This method is valid for mouse events with subtype [`NSTabletPointEventSubtype`](../nstabletpointeventsubtype.md) and for [`NSTabletPoint`](../nstabletpoint.md) events.
 

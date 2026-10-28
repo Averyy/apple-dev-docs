@@ -19,7 +19,7 @@ func didChangeText()
 - (void) didChangeText;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked automatically at the end of a series of changes, this method posts an [`didChangeNotification`](../nstext/didchangenotification.md) to the default notification center, which also results in the delegate receiving an `NSText` delegate [`textDidChange(_:)`](../nstextdelegate/textdidchange%28_%29.md) message.
 

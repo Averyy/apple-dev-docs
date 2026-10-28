@@ -27,11 +27,11 @@ func readDataToEndOfFile() -> Data
 - (NSData *) readDataToEndOfFile;
 ```
 
-#### Return Value
+## Return Value
 
 The data available through the receiver up to maximum size that can be represented by an [`NSData`](../nsdata.md) object or, if a communications channel, until an end-of-file indicator is returned.
 
-#### Discussion
+## Discussion
 
 This method invokes [`readData(ofLength:)`](./readdata%28oflength%29.md) as part of its implementation.
 

@@ -19,7 +19,7 @@ var richTextSource: NSAttributedString? { get }
 @property (strong, readonly, nullable) NSAttributedString * richTextSource;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` otherwise. It is possible for an instance of `NSAppleScript` that has been instantiated with [`init(contentsOf:error:)`](./init%28contentsof,error%29.md) to be a script for which the source code is not available, but is nonetheless executable.
 

@@ -21,7 +21,7 @@ var tabTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * tabTitle;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay only uses the title when the template is a root-template of a tab bar, otherwise setting this property has no effect.
 

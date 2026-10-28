@@ -19,7 +19,7 @@ var kCEFieldOrderKey: String { get }
 #define kCEFieldOrderKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key can be 0 (progressive), 1 (top-field), or 2 (bottom-field).
 

@@ -19,7 +19,7 @@ var selectedSegment: Int { get set }
 @property NSInteger selectedSegment;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the zero-based index of the segment. If the control allows multiple selections, the value of this property is the index of the most recently selected segment.
 

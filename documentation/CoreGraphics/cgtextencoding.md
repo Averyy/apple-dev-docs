@@ -26,7 +26,7 @@ enum CGTextEncoding
 enum CGTextEncoding : int32_t;
 ```
 
-#### Overview
+## Overview
 
 For more information on setting the font in a graphics context, see [`selectFont(name:size:textEncoding:)`](./cgcontext/selectfont%28name,size,textencoding%29.md).
 

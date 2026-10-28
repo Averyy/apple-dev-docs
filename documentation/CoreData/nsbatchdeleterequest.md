@@ -25,7 +25,7 @@ class NSBatchDeleteRequest
 @interface NSBatchDeleteRequest : NSPersistentStoreRequest
 ```
 
-#### Overview
+## Overview
 
 `NSBatchDeleteRequest` — available only when using a SQLite persistent store — deletes managed objects at the SQL level of the persistent store. This request is quicker and more efficient than using a context to fetch a large number of objects into memory, delete them, and then save those deletions back to the store. You create a request using an instance of [`NSFetchRequest`](./nsfetchrequest.md) that identifies the objects to delete. Alternatively, you can provide an array of identifiers from specific objects of the same entity type; mixing entity types results in an error when you execute the request.
 

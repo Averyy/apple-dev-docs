@@ -20,11 +20,11 @@ Creates a new column of machine learning sequences by converting the elements of
 init(sequences: MLUntypedColumn)
 ```
 
-#### Return Value
+## Return Value
 
 A new untyped column of doubles; otherwise an invalid column if any element of the given column cannot be converted to [`MLDataValue.SequenceType`](../mldatavalue/sequencetype.md).
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of sequences from another column. As an example, to create a column with this initializer, first start with a column that is convertible to sequences.
 

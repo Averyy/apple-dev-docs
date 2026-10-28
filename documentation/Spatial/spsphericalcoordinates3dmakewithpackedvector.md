@@ -19,11 +19,11 @@
 static SPSphericalCoordinates3D SPSphericalCoordinates3DMakeWithPackedVector(simd_packed_double4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new spherical coordinates structure.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial spherical coordinates structure from a packed simd vector.
 

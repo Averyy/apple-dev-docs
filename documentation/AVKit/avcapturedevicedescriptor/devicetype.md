@@ -21,7 +21,7 @@ var deviceType: AVCaptureDevice.DeviceType { get }
 @property (nonatomic, readonly) AVCaptureDeviceType deviceType;
 ```
 
-#### Discussion
+## Discussion
 
 This value matches the https://developer.apple.com/documentation/avfoundation/avcapturedevice/devicetype of the camera it describes.
 

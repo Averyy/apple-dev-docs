@@ -31,7 +31,7 @@ class UIStoryboardSegue
 - [Customizing the behavior of segue-based presentations](./customizing-the-behavior-of-segue-based-presentations.md)
 - [Dismissing a view controller with an unwind segue](./dismissing-a-view-controller-with-an-unwind-segue.md)
 
-#### Overview
+## Overview
 
 The [`UIStoryboardSegue`](./uistoryboardsegue.md) class supports the standard visual transitions available in UIKit. You can also subclass to define custom transitions between the view controllers in your storyboard file.
 
@@ -39,17 +39,17 @@ Segue objects contain information about the view controllers involved in a trans
 
 You don’t create segue objects directly. Instead, the storyboard runtime creates them when it must perform a segue between two view controllers. You can still initiate a segue programmatically using the [`performSegue(withIdentifier:sender:)`](./uiviewcontroller/performsegue%28withidentifier,sender%29.md) method of [`UIViewController`](./uiviewcontroller.md) if you want. You might do so to initiate a segue from a source that was added programmatically and therefore not available in Interface Builder.
 
-##### Subclassing notes
+### Subclassing notes
 
 You can subclass [`UIStoryboardSegue`](./uistoryboardsegue.md) in situations where you want to provide a custom transition between view controllers in your application. To use your custom segue, create a segue line between the appropriate view controllers in Interface Builder and set its type to Custom in the inspector; you must also specify the class name of the segue to use in the inspector.
 
 When the storyboard runtime detects a custom segue, it creates a new instance of your class, configures it with the view controller objects, asks the view controller source to prepare for the segue, and then performs the segue.
 
-###### Methods to override
+#### Methods to override
 
 For custom segues, the main method you need to override is the [`perform()`](./uistoryboardsegue/perform%28%29.md) method. The storyboard runtime calls this method when it’s time to perform the visual transition from the view controller in [`source`](./uistoryboardsegue/source.md) to the view controller in [`destination`](./uistoryboardsegue/destination.md). If you need to initialize any variables in your custom segue subclass, you can also override the [`init(identifier:source:destination:)`](./uistoryboardsegue/init%28identifier,source,destination%29.md) method and initialize them in your custom implementation.
 
-###### Alternatives to subclassing
+#### Alternatives to subclassing
 
 If your segue doesn’t need to store additional information or provide anything other than a [`perform()`](./uistoryboardsegue/perform%28%29.md) method, consider using the [`init(identifier:source:destination:performHandler:)`](./uistoryboardsegue/init%28identifier,source,destination,performhandler%29.md) method instead.
 

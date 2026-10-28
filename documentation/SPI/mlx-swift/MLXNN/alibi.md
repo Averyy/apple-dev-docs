@@ -15,7 +15,7 @@ framework: "mlx-swift/MLXNN"
 final class ALiBi
 ```
 
-##### See Also
+### See Also
 
 - [Positional Encoding](./positional-encoding.md)
 

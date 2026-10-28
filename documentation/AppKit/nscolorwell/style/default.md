@@ -19,7 +19,7 @@ case `default`
 NSColorWellStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This style yields a color well that accepts drags and drops of colors. When someone clicks the color well, it displays the system color panel.
 

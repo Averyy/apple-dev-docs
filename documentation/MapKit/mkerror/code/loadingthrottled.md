@@ -25,7 +25,7 @@ case loadingThrottled
 MKErrorLoadingThrottled
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if an app makes frequent requests for data over a short period of time.
 

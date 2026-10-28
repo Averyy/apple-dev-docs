@@ -25,7 +25,7 @@ func refresh(_ object: NSManagedObject, mergeChanges flag: Bool)
 - (void) refreshObject:(NSManagedObject *) object mergeChanges:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method before the [`stalenessInterval`](./stalenessinterval.md) expires, the context reloads the data from the cache instead of fetching from the store. If `flag` is [`true`](../../Swift/true.md), this method doesn’t affect any transient properties. If `flag` is [`false`](../../Swift/false.md), the object disposes the value of transient properties.
 

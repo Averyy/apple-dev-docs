@@ -19,11 +19,11 @@ func imageRepresentationType() -> String!
 - (NSString *) imageRepresentationType;
 ```
 
-#### Return Value
+## Return Value
 
 A string that specifies the image representation type. The string can be any of the constants defined in [Image Representation Types](../../Quartz/image-representation-types.md).
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method.
 

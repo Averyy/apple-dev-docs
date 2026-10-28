@@ -12,7 +12,7 @@ Signature for the block executed when `ALAssetsLibrary/writeVideoAtPath(toSavedP
 typedef void (^)(NSURL *, NSError *) ALAssetsLibraryWriteVideoCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

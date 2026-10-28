@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift program that drives the STM32F746G-DISCO’s onboard LCD panel, animating a bouncing Swift logo on a fading background.
 
-#### Overview
+## Overview
 
 This example demonstrates how to configure the STM32F7’s LTDC (LCD-TFT Display Controller) peripheral directly through Swift MMIO, without depending on an SDK. It sets up a background layer with a color that fades in and out, and a foreground layer containing pixel data for a Swift logo that bounces around the screen.
 
@@ -49,15 +49,15 @@ struct Application {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development. See [Blinking an LED on the STM32F746G-DISCO](./stm32blinkguide.md) for a simpler baremetal STM32F746G-DISCO example that only toggles a GPIO pin.
 
-#### Install dependencies
+## Install dependencies
 
 Install the [stlink](https://github.com/stlink-org/stlink) command line tools, for example with `brew install stlink`.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -66,7 +66,7 @@ $ cd stm32-lcd-logo
 $ make
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the STM32F746G-DISCO board to your Mac using the ST-LINK USB port. Flash the firmware:
 
@@ -76,7 +76,7 @@ $ st-flash --reset write .build/armv7em-apple-none-macho/release/Application.bin
 
 The LCD display shows a bouncing, animated Swift logo on a fading background, and the user LED blinks.
 
-#### Check the binary size
+## Check the binary size
 
 The compiled and linked binary is around 14 KB, split between roughly 3.5 KB of code and 10 KB of pixel data for the logo:
 

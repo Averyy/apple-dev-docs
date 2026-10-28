@@ -29,7 +29,7 @@ var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInp
 
 - [Handling input events](../handling-input-events.md)
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

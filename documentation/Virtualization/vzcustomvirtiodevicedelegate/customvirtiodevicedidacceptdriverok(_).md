@@ -19,7 +19,7 @@ optional func customVirtioDeviceDidAcceptDriverOk(_ device: VZCustomVirtioDevice
 - (void) customVirtioDeviceDidAcceptDriverOk:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 The guest driver sets the status to the value `DRIVER_OK`.
 

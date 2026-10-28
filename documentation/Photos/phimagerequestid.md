@@ -24,7 +24,7 @@ typealias PHImageRequestID = Int32
 typedef int32_t PHImageRequestID;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this identifier to the [`cancelImageRequest(_:)`](./phimagemanager/cancelimagerequest%28_%29.md) method if you need to cancel a request before it completes.
 

@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.2 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - You can now submit Game Center content directly to review without including an app version by using [Review submissions](./review-submissions.md). Use [`Create a Review Submission Item`](./post-v1-reviewsubmissionitems.md) to submit achievement versions, leaderboard versions, leaderboard set versions, activity versions, and challenge versions for independent review.
 - Game Center resources now support versioning for achievements, leaderboards, and leaderboard sets. To learn more, see [Game Center achievements](./game-center-achievements.md), [Game Center leaderboards](./game-center-leaderboards.md), and [Game Center leaderboard sets](./game-center-leaderboard-sets.md).
@@ -21,12 +21,12 @@ App Store Connect API version 4.2 provides resources that enable you to automate
 - [Webhook notifications](./webhook-notifications.md) now includes events for alternative app distribution. To learn more see, [Configuring and parsing App Store Connect API webhook notifications](./configuring-webhook-notifications.md) and [Understanding webhook events](./webhook-events.md).
 - Alternative distribution packages now include a `sourceFileChecksum` attribute, allowing alternative marketplaces to verify builds with developers. Use [`Read Alternative Distribution Package Information`](./get-v1-alternativedistributionpackages-_id_.md) to access the checksum of the developer-submitted package.
 
-##### Deprecations
+### Deprecations
 
 - The `kidsAgeBand` attribute is now deprecated from [`AppInfo.Attributes`](./appinfo/attributes-data.dictionary.md). Use [`Modify an age rating declaration`](./patch-v1-ageratingdeclarations-_id_.md) instead.
 - The alternative distribution [Notifications](./notifications.md) are deprecated. Use [Webhook notifications](./webhook-notifications.md) instead. To learn more, see [Configuring and parsing App Store Connect API webhook notifications](./configuring-webhook-notifications.md) and [Understanding webhook events](./webhook-events.md)
 
-##### Removals
+### Removals
 
 - The attribute `challengeEnabled` is now removed from [`Enable game center for an app`](./post-v1-gamecenterdetails.md) and [`Modify a game center detail for an app`](./patch-v1-gamecenterdetails-_id_.md). To create a challenge on an existing Game Center detail, use [`Create a Challenge`](./post-v1-gamecenterchallenges.md).
 

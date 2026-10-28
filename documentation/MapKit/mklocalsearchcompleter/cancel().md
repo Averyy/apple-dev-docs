@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 If a search operation is in progress, this method attempts to cancel it. If cancellation is successful, the search completer doesn’t notify its delegate. If no search operation is in progress, this method does nothing.
 

@@ -26,7 +26,7 @@ var debugDescription: String { get }
 @property (copy, readonly) NSString * debugDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access debugging information about this object and the underlying [`CLLocation`](../../CoreLocation/cllocation.md) this object wraps.
 

@@ -25,11 +25,11 @@ convenience init(bodyA: SCNPhysicsBody, anchorA: SCNVector3, bodyB: SCNPhysicsBo
 + (instancetype) jointWithBodyA:(SCNPhysicsBody *) bodyA anchorA:(SCNVector3) anchorA bodyB:(SCNPhysicsBody *) bodyB anchorB:(SCNVector3) anchorB;
 ```
 
-#### Return Value
+## Return Value
 
 A new ball-and-socket-joint behavior.
 
-#### Discussion
+## Discussion
 
 For a behavior to take effect, add it to the physics simulation by calling the [`addBehavior(_:)`](../scnphysicsworld/addbehavior%28_%29.md) method on your scene’s [`SCNPhysicsWorld`](../scnphysicsworld.md) object. The physics bodies constrained by the joint must be attached to nodes in the scene.
 

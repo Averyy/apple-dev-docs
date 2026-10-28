@@ -19,7 +19,7 @@ var targetVirtualMachineMemorySize: UInt64 { get set }
 @property (readwrite) uint64_t targetVirtualMachineMemorySize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the amount of physical memory currently assigned to the guest operating system. If the new value is less than the current amount of physical memory, the virtual machine asks the guest operating system to return enough memory pages to fit within the new limit. If the guest complies, the virtual machine updates the guest’s physical memory size to the new value. If the guest doesn’t comply, the physical memory size remains unchanged.
 

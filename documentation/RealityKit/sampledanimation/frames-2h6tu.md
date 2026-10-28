@@ -22,7 +22,7 @@ var frames: [simd_quatf] { get set }
 
 Available when `Value` is `simd_quatf`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of quaternions.
 

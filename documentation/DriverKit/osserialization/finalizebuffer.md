@@ -18,11 +18,11 @@ Obtain the result of the serialization performed by createFromObject().
 const void * finalizeBuffer(size_t *length);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise a pointer to the serialization data. It is valid only while the OSSerialization object is retained.
 
-#### Discussion
+## Discussion
 
 Obtain the result of the serialization performed by createFromObject().
 

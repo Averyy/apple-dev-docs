@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 12.1 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12.1.1. The SDK comes bundled with Xcode 10.1. For information on the compatibility requirements for Xcode 10.1, see [Xcode Release Notes](../Xcode-Release-Notes/Xcode-Release-Notes.md).
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Apple Configurator can install configuration profiles on nonsupervised devices. (45674440)
 

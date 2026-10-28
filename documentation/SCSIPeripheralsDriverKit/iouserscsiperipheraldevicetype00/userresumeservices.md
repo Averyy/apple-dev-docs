@@ -15,11 +15,11 @@ Resumes normal services after a suspension.
 virtual kern_return_t UserResumeServices();
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of the resume request. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Call this method when the dext finishes using its window of exclusivity from a previous [`UserSuspendServices`](./usersuspendservices.md) call so file systems can continue communicating with the drive.
 

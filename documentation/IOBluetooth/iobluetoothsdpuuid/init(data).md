@@ -19,11 +19,11 @@ convenience init!(data: Data!)
 + (instancetype) uuidWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new IOBluetoothSDPUUID object or nil on failure.
 
-#### Discussion
+## Discussion
 
 If the length of the NSData is invalid for a UUID, nil is returned.
 

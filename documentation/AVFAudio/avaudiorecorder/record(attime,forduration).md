@@ -25,11 +25,11 @@ func record(atTime time: TimeInterval, forDuration duration: TimeInterval) -> Bo
 - (BOOL) recordAtTime:(NSTimeInterval) time forDuration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if recording was successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The recorder automatically stops recording when it reaches the indicated duration. You may also use it to synchronize recording of multiple recorders as shown below.
 

@@ -24,7 +24,7 @@ struct MPSSize
 typedef struct MPSSize { ... } MPSSize;
 ```
 
-#### Overview
+## Overview
 
 The depth of a region is usually `1.0`.
 

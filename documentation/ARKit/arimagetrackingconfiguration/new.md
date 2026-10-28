@@ -16,7 +16,7 @@ Creates a new image-tracking configuration.
 + (instancetype) new;
 ```
 
-#### Discussion
+## Discussion
 
 To use the configuration in an AR session, pass it to the [`ARSession`](../arsession.md) [`run(_:options:)`](../arsession/run%28_,options%29.md) method.
 

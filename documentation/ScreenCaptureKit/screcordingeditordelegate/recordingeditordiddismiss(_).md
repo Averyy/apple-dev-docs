@@ -22,7 +22,7 @@ optional func recordingEditorDidDismiss(_ editor: SCRecordingEditor)
 - (void) recordingEditorDidDismiss:(SCRecordingEditor *) editor;
 ```
 
-#### Discussion
+## Discussion
 
 recordingEditorDidDismiss:
 

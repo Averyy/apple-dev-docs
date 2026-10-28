@@ -16,7 +16,7 @@ A floating-point number that controls the width of lines and strokes, in pixels.
 attribute unrestricted float lineWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default line width is 1 pixel. This property specifies not only the width of lines drawn with `lineTo()`, but also the stroke thickness of any `stroke()` operation.
 

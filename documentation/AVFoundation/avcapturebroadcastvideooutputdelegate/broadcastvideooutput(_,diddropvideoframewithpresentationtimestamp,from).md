@@ -23,7 +23,7 @@ optional func broadcastVideoOutput(_ output: AVCaptureBroadcastVideoOutput, didD
 - (void) broadcastVideoOutput:(AVCaptureBroadcastVideoOutput *) output didDropVideoFrameWithPresentationTimeStamp:(CMTime) presentationTimeStamp fromConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called whenever the broadcast video output system needs to drop a video frame due to performance constraints, destination issues, buffer overruns, or encoding failures.
 

@@ -21,7 +21,7 @@ Draws a path into the context with a specified stroke style.
 func stroke(_ path: Path, with shading: GraphicsContext.Shading, style: StrokeStyle)
 ```
 
-#### Discussion
+## Discussion
 
 If you only need to control the style’s [`lineWidth`](../strokestyle/linewidth.md) property, use [`stroke(_:with:lineWidth:)`](./stroke%28_,with,linewidth%29.md) instead.
 

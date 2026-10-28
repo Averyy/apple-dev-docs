@@ -26,7 +26,7 @@ UIDropOperationCancel
 
 - [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
-#### Discussion
+## Discussion
 
 If the user attempts a drop activity, the drag operation is canceled and the [`dropInteraction(_:performDrop:)`](../uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md) delegate method isn’t called.
 

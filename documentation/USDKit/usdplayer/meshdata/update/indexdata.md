@@ -20,7 +20,7 @@ Updated index buffer data.
 let indexData: Data?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

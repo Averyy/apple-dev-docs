@@ -16,7 +16,7 @@ An entitlement that indicates the app participates in single sign-on (SSO) durin
 - **Name**: `com.apple.developer.enrollment-sso-capable`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Adopt this entitlement to inform the system that your app authenticates the person enrolling a device into device management, reducing the number of times the person needs to sign in to your service. For more information, see [Onboarding users with account-driven enrollment](../../DeviceManagement/onboarding-users-with-account-driven-enrollment.md).
 

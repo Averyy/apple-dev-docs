@@ -24,7 +24,7 @@ case nonVolatile
 MPSPurgeableStateNonVolatile
 ```
 
-#### Overview
+## Overview
 
 Use this option to mark the resource as non-volatile so the system doesn’t discard it. This is equivalent to [`MTLPurgeableState.nonVolatile`](../../Metal/mtlpurgeablestate/nonvolatile.md).
 

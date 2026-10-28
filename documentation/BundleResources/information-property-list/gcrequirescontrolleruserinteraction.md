@@ -16,7 +16,7 @@ The platforms for which your app requires or you recommend a game controller.
 - **Name**: `GCRequiresControllerUserInteraction`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Add this key to your information property list if your app requires a game controller in visionOS or to recommend a game controller in iOS. Adding this key requires you to enable the Game Controllers capability in Xcode and ExtendedGamepad under the Game Controllers capability. Xcode sets the value of [`GCSupportsControllerUserInteraction`](./gcsupportscontrolleruserinteraction.md) to `YES` and includes an entry in the [`GCSupportedGameControllers`](./gcsupportedgamecontrollers.md) dictionary with ProfileName set to ExtendedGamepad.
 

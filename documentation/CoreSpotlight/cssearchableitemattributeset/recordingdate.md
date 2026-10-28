@@ -23,7 +23,7 @@ var recordingDate: Date? { get set }
 @property (strong, nullable) NSDate * recordingDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the original recording date of the song or composition and is supplementary to [`contentCreationDate`](./contentcreationdate.md), which indicates the date of an edited or optimized version.
 

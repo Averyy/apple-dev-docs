@@ -15,7 +15,7 @@ Returns the variant from the specified text encoding.
 TextEncodingVariant GetTextEncodingVariant(TextEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The text encodingvariant portion of the specified text encoding. 
 

@@ -13,11 +13,11 @@ virtual IOReturn setHardwareAddress(
  UInt32addrBytes);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error otherwise.
 
-#### Overview
+## Overview
 
 The default implementation of the abstract method inherited from IONetworkController. This method will call the overloaded form IOEthernetController::setHardwareAddress() that subclasses are expected to override.
 

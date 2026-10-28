@@ -21,11 +21,11 @@ Indicates whether SwiftUI renders an image as-is, or by using a different mode.
 func renderingMode(_ renderingMode: Image.TemplateRenderingMode?) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`Image`](../image.md).
 
-#### Discussion
+## Discussion
 
 The [`Image.TemplateRenderingMode`](./templaterenderingmode.md) enumeration has two cases: [`Image.TemplateRenderingMode.original`](./templaterenderingmode/original.md) and [`Image.TemplateRenderingMode.template`](./templaterenderingmode/template.md). The original mode renders pixels as they appear in the original source image. Template mode renders all nontransparent pixels as the foreground color, which you can use for purposes like creating image masks.
 

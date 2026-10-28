@@ -19,7 +19,7 @@ var localizedName: String { get }
 @property (nonatomic, readonly) NSString * localizedName;
 ```
 
-#### Return Value
+## Return Value
 
 The computer’s name if the authority is local, or Managed Network Directory if the authority is managed.
 

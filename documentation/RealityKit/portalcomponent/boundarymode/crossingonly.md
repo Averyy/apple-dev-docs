@@ -20,7 +20,7 @@ Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cros
 case crossingOnly
 ```
 
-#### Discussion
+## Discussion
 
 Portal world content isn’t clipped to the boundary.
 

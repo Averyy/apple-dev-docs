@@ -24,7 +24,7 @@ func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int
 - (NSInteger) offsetFromPosition:(UITextPosition *) from toPosition:(UITextPosition *) toPosition;
 ```
 
-#### Return Value
+## Return Value
 
 The number of UTF-16 characters between `fromPosition` and `toPosition`.
 

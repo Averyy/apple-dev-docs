@@ -21,7 +21,7 @@ struct CapturedStructure
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 This structure combines the data from multiple [`CapturedRoom`](./capturedroom.md) instances that a user scans in the same physical vicinity. The [`StructureBuilder`](./structurebuilder.md) class’s function merges the captured rooms with the [`capturedStructure(from:)`](./structurebuilder/capturedstructure%28from%29.md) function, which returns an object of this type.
 

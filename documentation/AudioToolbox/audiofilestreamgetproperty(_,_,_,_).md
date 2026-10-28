@@ -24,11 +24,11 @@ func AudioFileStreamGetProperty(_ inAudioFileStream: AudioFileStreamID, _ inProp
 extern OSStatus AudioFileStreamGetProperty(AudioFileStreamID inAudioFileStream, AudioFileStreamPropertyID inPropertyID, UInt32 *ioPropertyDataSize, void *outPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

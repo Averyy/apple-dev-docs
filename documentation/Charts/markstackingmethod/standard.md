@@ -21,7 +21,7 @@ Stack marks starting at zero.
 static var standard: MarkStackingMethod { get }
 ```
 
-#### Discussion
+## Discussion
 
 Negative values appear below zero, creating diverging stacked marks.
 

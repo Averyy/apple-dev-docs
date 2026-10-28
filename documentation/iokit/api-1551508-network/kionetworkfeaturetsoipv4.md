@@ -14,7 +14,7 @@
 kIONetworkFeatureTSOIPv4 = 0x010
 ```
 
-#### Discussion
+## Discussion
 
 Set this bit to advertise support for TCP/IPv4 segmentation offload.
 

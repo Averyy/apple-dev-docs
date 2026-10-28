@@ -29,7 +29,7 @@ var relativeString: String { get }
 
 - [isEqual:](../nsurl-isequal.md)
 
-#### Discussion
+## Discussion
 
 This property contains a string representation of the relative portion of the URL. Any percent-encoded characters are not unescaped. If the receiver is an absolute URL this method returns the same value as [`absoluteString`](./absolutestring.md).
 

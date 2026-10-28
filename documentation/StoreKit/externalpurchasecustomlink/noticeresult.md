@@ -21,7 +21,7 @@ The result of showing the disclosure notice.
 enum NoticeResult
 ```
 
-#### Overview
+## Overview
 
 This value is the result of calling [`showNotice(type:)`](./shownotice%28type%29.md).
 

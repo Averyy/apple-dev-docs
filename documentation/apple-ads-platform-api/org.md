@@ -15,7 +15,7 @@ Represents an organization in the Apple Ads system.
 object Org
 ```
 
-#### Discussion
+## Discussion
 
 An `Org` is the top-level entity that owns ad accounts, manages users, and groups all advertising activity under a single billing relationship. It’s the root entity in the account hierarchy, with ad accounts, campaigns, and user memberships all existing beneath it.
 
@@ -23,7 +23,7 @@ The `systemStatus` field reflects whether the org is `ACTIVE` or `INACTIVE`. An 
 
 To discover which organizations the current API token can access, use `GET /v1/acls` ([`Get User ACL`](./get-user-acls.md)). Then, to retrieve full details, use `GET /v1/orgs/{orgId}` ([`Get Org by ID`](./get-orgs-_id_.md)).
 
-##### Example
+### Example
 
 ```json
 {

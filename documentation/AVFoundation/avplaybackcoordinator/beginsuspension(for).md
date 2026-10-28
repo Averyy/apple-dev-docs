@@ -24,11 +24,11 @@ func beginSuspension(for suspensionReason: AVCoordinatedPlaybackSuspension.Reaso
 - (AVCoordinatedPlaybackSuspension *) beginSuspensionForReason:(AVCoordinatedPlaybackSuspensionReason) suspensionReason;
 ```
 
-#### Return Value
+## Return Value
 
 A suspension object.
 
-#### Discussion
+## Discussion
 
 End a suspension by calling its [`end()`](../avcoordinatedplaybacksuspension/end%28%29.md) or [`end(proposingNewTime:)`](../avcoordinatedplaybacksuspension/end%28proposingnewtime%29.md) method.
 

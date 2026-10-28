@@ -30,7 +30,7 @@ extern CFStringRef const kSecAttrAccessGroup;
 - [Sharing access to keychain items among a collection of apps](./sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 - [Searching for keychain items](./searching-for-keychain-items.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and indicates the item’s one and only access group.
 

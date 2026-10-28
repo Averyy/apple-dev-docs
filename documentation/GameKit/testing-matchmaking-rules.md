@@ -5,13 +5,13 @@
 
 Test your matchmaking rules before you use them in your game.
 
-#### Overview
+## Overview
 
 Before you write any code, you can test your matchmaking rules on the server side to ensure that they find compatible players without long wait times. You pass the rule set and sample match requests to the test API, and it responds with the match results.
 
 To download a script that helps test your matchmaking rules, see [Testing matchmaking rules using a Python script](https://github.com/apple/game-center-tools). For examples using the script, see [Meet rule-based matchmaking in Game Center](https://developer.apple.com/videos/play/tech-talks/111376/).
 
-##### Create sample match requests
+### Create sample match requests
 
 Create an array of [`GameCenterMatchmakingTestRequestInlineCreate`](../AppStoreConnectAPI/gamecentermatchmakingtestrequestinlinecreate.md) objects that represent sample match requests. Set the `type` field to `gameCenterMatchmakingTestRequests` and the `id` field to a unique identifier for the match request.
 
@@ -100,7 +100,7 @@ Then append a corresponding [`GameCenterMatchmakingTestPlayerPropertyInlineCreat
 }
 ```
 
-##### Test the matchmaking rules
+### Test the matchmaking rules
 
 Apply the matchmaking rules by passing the associated rule set and the sample match requests to the [`Test a Rule Set`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingrulesettests.md) endpoint. Pass the rule set `id` using the `matchmakingRuleSet` field and pass resource objects representing the match requests in the `matchmakingRequests` field. Then pass the array of [`GameCenterMatchmakingTestRequestInlineCreate`](../AppStoreConnectAPI/gamecentermatchmakingtestrequestinlinecreate.md) and [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](../AppStoreConnectAPI/gamecentermatchmakingtestplayerpropertyinlinecreate.md) objects, that you create above, in the `included` field.
 

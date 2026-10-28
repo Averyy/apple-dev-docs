@@ -25,11 +25,11 @@ func subdata(with range: NSRange) -> Data
 - (NSData *) subdataWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the receiver’s bytes that fall within the limits specified by `range`.
 
-#### Discussion
+## Discussion
 
 A sample using this method can be found in [Working With Binary Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingBinaryData.html#//apple_ref/doc/uid/20000717).
 

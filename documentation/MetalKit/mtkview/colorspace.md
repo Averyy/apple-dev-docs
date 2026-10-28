@@ -19,7 +19,7 @@ var colorspace: CGColorSpace? { get set }
 @property (nonatomic, nullable) CGColorSpaceRef colorspace;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, indicating that the rendered content isn’t color-matched. If you set this to a different color space, Core Animation performs any necessary color transformations when compositing the view’s contents.
 

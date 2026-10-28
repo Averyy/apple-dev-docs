@@ -19,7 +19,7 @@ The current background configuration of the cell.
 @property (nonatomic, copy, nullable) UIBackgroundConfiguration * backgroundConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Using a background configuration, you can obtain system default background styling for a variety of different cell states. Create a background configuration with one of the default system styles, customize the configuration to match your cell’s style as needed, and assign the configuration to this property.
 

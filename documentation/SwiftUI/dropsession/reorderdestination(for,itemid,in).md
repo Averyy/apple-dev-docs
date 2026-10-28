@@ -20,7 +20,7 @@ nonisolated
 func reorderDestination<Item, ItemID, CollectionID>(for item: Item.Type, itemID: KeyPath<Item, ItemID>, in collectionID: CollectionID.Type = ReorderableSingleCollectionIdentifier.self) -> ReorderDifference<ItemID, CollectionID>.Destination?
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ItemID` and `CollectionID` types of your [`reorderContainer(for:in:isEnabled:move:)`](../view/reordercontainer%28for,in,isenabled,move%29.md) modifier to look up the destination value.
 

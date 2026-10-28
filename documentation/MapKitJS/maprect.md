@@ -20,7 +20,7 @@ class MapRect implements MapRectData
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 - [MapKit JS 6](./mapkit-js-6.md)
 
-#### Overview
+## Overview
 
 Use a `mapkit.MapRect` to represent a rectangular region within a map projection. Map units are a value from `0` to `1` that represent an interpolated location within the height or width of the full map projection.
 

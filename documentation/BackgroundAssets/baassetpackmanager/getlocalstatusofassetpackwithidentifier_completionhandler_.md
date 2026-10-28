@@ -20,7 +20,7 @@ Gets an asset pack’s local status.
 - (void) getLocalStatusOfAssetPackWithIdentifier:(NSString *) assetPackIdentifier completionHandler:(void (^)(BAAssetPackStatus status)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method checks only status values that are determinable offline. It doesn’t induce any network traffic or automatically trigger any downloads, updates, or removals. The following status values are determinable offline:
 

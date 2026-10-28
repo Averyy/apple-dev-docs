@@ -25,7 +25,7 @@ func prediction(from image: CGImage) throws -> String
 func prediction(from image: URL) throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 A prediction label for the image.
 

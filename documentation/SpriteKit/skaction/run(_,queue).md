@@ -25,11 +25,11 @@ class func run(_ block: @escaping () -> Void, queue: dispatch_queue_t) -> SKActi
 + (SKAction *) runBlock:(dispatch_block_t) block queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the block is called. This action takes place instantaneously.
 

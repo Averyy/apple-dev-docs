@@ -14,7 +14,7 @@ A MaterialX version of USD UV Texture reader.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -35,7 +35,7 @@ A MaterialX version of USD UV Texture reader.
 | `Blue` | Float |
 | `Alpha` | Float |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **Bias**: The bias the node applies to all components of the texture. The node adds this parameter to the texture after multiplying it by the scale.
 - **Fallback**: The value to use if the texture can’t be read from the file.
@@ -45,7 +45,7 @@ A MaterialX version of USD UV Texture reader.
 - **Wrap S**: The way that the node handles `S` values outside of the range of `0-1`.
 - **Wrap T**: The way that the node handles `T` values outside of the range of `0-1`.
 
-#### Output descriptions
+## Output descriptions
 
 - **RGBA**: The `Color4` output of the texture that contains a red, green, blue, and alpha component.
 - **RGB**: The standard `Color3` output of the texture that contains a red, green, and blue component.
@@ -54,7 +54,7 @@ A MaterialX version of USD UV Texture reader.
 - **Blue**: Only the blue component of the texture.
 - **Alpha**: Only the alpha component of the texture.
 
-#### Discussion
+## Discussion
 
 The `Wrap` parameters for the node tell the node how to handle `S` and `T` values outside of the normal range of `0-1`. These inputs take one of four values to determine their behavior.
 

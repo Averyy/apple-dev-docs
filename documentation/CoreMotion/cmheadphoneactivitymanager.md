@@ -23,7 +23,7 @@ class CMHeadphoneActivityManager
 @interface CMHeadphoneActivityManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class delivers headphone activity updates to your app. Use an instance of the manager to determine if the device supports headphone activity updates, and to start and stop updates. Before using this class, check [`isActivityAvailable`](./cmheadphoneactivitymanager/isactivityavailable.md) and [`isStatusAvailable`](./cmheadphoneactivitymanager/isstatusavailable.md) to make sure the features are available.
 

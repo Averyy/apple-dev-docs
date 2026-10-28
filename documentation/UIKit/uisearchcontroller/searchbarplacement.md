@@ -22,7 +22,7 @@ var searchBarPlacement: UINavigationItem.SearchBarPlacement { get }
 @property (nonatomic, readonly) UINavigationItemSearchBarPlacement searchBarPlacement;
 ```
 
-#### Discussion
+## Discussion
 
 This placement applies only when the search controller is associated with a navigation item through its [`searchController`](../uinavigationitem/searchcontroller.md) property.
 

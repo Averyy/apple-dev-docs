@@ -17,7 +17,7 @@ Drops every compiled trace stored in this module tree.
 func invalidateCompiledTraces()
 ```
 
-#### Discussion
+## Discussion
 
 A [`CompiledTrace`](../../compiledtrace.md) is built from the modules present when it first ran, so anything that replaces modules leaves it stale: loading, fusing, or unloading an adapter, quantizing a loaded model. Weight updates that keep the tree intact, such as training steps, do not need this. Traces are found by reflection, so storing one is all a module has to do: there is no conformance to remember.
 

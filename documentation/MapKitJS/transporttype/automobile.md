@@ -15,7 +15,7 @@ A constant identifying the mode of transportation as driving.
 readonly Automobile: "AUTOMOBILE";
 ```
 
-#### Discussion
+## Discussion
 
 Use for directions that are suitable while driving.
 

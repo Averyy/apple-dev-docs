@@ -15,7 +15,7 @@ The specific version of the AppKit framework from OS X 10.1 that correctly autor
 static const NSAppKitVersion NSAppKitVersionNumberWithPatternColorLeakFix;
 ```
 
-#### Discussion
+## Discussion
 
 Developers do not need to use this constant unless they are writing applications for OS X 10.1 and earlier.
 

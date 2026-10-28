@@ -13,7 +13,7 @@ Use quantum-secure cryptography to protect your app from quantum attacks.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Quantum attacks represent a threat to the security of widely-deployed cryptographic methods, which assume that attackers use classical, non-quantum computers. Cryptographers have created new algorithms that are secure against quantum attacks, known as *quantum-secure cryptography*. Quantum-secure algorithms remain secure from attacks by both classical and quantum computers.
 
@@ -23,7 +23,7 @@ Instead of switching to a cryptographic mechanism that only uses a quantum-secur
 
 This sample uses round-trip processes — encrypting then decrypting data, or generating a signature then verifying it — to demonstrate how to adopt quantum-secure cryptographic algorithms using [Apple CryptoKit](./CryptoKit.md). In your app, implement the two stages separately; for example, one person might encrypt a message and send it to another person who decrypts it. The sample demonstrates how to use quantum-secure hybrid public-key encryption (HPKE) to securely share a secret between two people.
 
-#### Exchange cryptographic keys
+## Exchange cryptographic keys
 
 The function `KeyTest/check(_:ciphersuite:)` in the file `KeyTest+PQHPKE.swift` performs a full round-trip using HPKE, encrypting a cleartext message using the encapsulated key and verifying that the recipient recovers the same cleartext when they use the encapsulated key to decrypt the ciphertext they receive. It does this by following these steps:
 
@@ -71,7 +71,7 @@ internal func testPQHPKE(type: PQHPKEType) throws -> (TestStatus, String) {
 }
 ```
 
-#### Encapsulate cryptographic keys
+## Encapsulate cryptographic keys
 
 The function `KeyTest/check(_:)` in the file `KeyTest+MLKEM.swift` generates, encapsulates, and decapsulates a shared secret using the quantum-secure Module-Lattice Key Encapsulation Mechanism (ML-KEM). It first generates and encapsulates the shared secret using the public key:
 
@@ -98,7 +98,7 @@ internal func testMLKEM(type: MLKEMType, useSecureEnclave: Bool) throws -> (Test
 }
 ```
 
-#### Encapsulate cryptographic keys with one-time-use private keys
+## Encapsulate cryptographic keys with one-time-use private keys
 
 When you use each ML-KEM private key only once — such as in ephemeral key exchange for messaging or transport protocols — use `OneTimePrivateKey` instead of a standard `PrivateKey`. One-time-use private keys are faster because they skip the extra hardening that long-lived keys require.
 
@@ -128,7 +128,7 @@ One-time-use private keys are only suitable for ephemeral use because you can’
 
 > **Note**: The Secure Enclave doesn’t support `OneTimePrivateKey`. Use `SecureEnclave.MLKEM768.PrivateKey` when you need long-term hardware-backed storage.
 
-#### Create digital signatures
+## Create digital signatures
 
 The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](./mldsa65.md) and [`MLDSA87`](./mldsa87.md) types. Each function accepts a private key, which it uses to sign a test message:
 
@@ -158,7 +158,7 @@ internal func testMLDSA(type: MLDSAType) throws -> (TestStatus, String) {
 }
 ```
 
-#### Create hybrid signatures
+## Create hybrid signatures
 
 The two `check(_:_:)` functions in the file `KeyTest+HybridSig.swift` generate and validate hybrid digital signatures that use both the quantum-secure ML-DSA, and classic elliptic curve (EC) methods. Each function accepts both an ML-DSA and EC private key, uses both keys to sign a test message, and then concatenates the two signatures:
 
@@ -198,7 +198,7 @@ internal func testHybridSig(type: HybridSigType) throws -> (TestStatus, String) 
 }
 ```
 
-#### Store cryptographic keys in the keychain or in the Secure Enclave
+## Store cryptographic keys in the keychain or in the Secure Enclave
 
 These workflows store the CryptoKit keys in the keychain by converting between strongly typed cryptographic keys and native Keychain types. Where applicable, they also show how to protect keys with the Secure Enclave. For more information, see [Storing CryptoKit Keys in the Keychain](./storing-cryptokit-keys-in-the-keychain.md).
 

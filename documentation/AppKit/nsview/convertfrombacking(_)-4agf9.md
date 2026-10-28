@@ -19,7 +19,7 @@ func convertFromBacking(_ size: NSSize) -> NSSize
 - (NSSize) convertSizeFromBacking:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The size in the view’s interior coordinate system.
 

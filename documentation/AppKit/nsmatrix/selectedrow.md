@@ -19,7 +19,7 @@ var selectedRow: Int { get }
 @property (readonly) NSInteger selectedRow;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `–1`, no cells are selected. If cells in multiple rows are selected, the value of this property is the number of the last row containing a selected cell.
 

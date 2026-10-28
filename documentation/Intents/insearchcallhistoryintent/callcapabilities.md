@@ -33,7 +33,7 @@ var callCapabilities: INCallCapabilityOptions { get }
 @property (atomic, assign, readonly) INCallCapabilityOptions callCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit your search to audio-only calls or video calls. You can specify both options.
 

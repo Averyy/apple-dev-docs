@@ -25,7 +25,7 @@ case spellOut
 NSNumberFormatterSpellOutStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the en_US locale, the number 1234.5678 is represented as one thousand two hundred thirty-four point five six seven eight; in the fr_FR locale, the number 1234.5678 is represented as mille deux cent trente-quatre virgule cinq six sept huit.
 

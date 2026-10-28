@@ -26,7 +26,7 @@ func write(_ data: Data, completionHandler completion: @escaping ((any Error)?) 
 - (void) write:(NSData *) data completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Callers should wait until the `completionHandler` is executed before issuing another write.
 

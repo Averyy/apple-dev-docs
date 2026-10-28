@@ -25,7 +25,7 @@ var destination: MKMapItem? { get set }
 @property (nonatomic, strong, nullable) MKMapItem * destination;
 ```
 
-#### Discussion
+## Discussion
 
 Use the setter method `setDestination:` to set this property.
 

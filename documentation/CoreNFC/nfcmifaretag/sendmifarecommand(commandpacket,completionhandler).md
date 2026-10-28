@@ -26,7 +26,7 @@ func sendMiFareCommand(commandPacket command: Data) async throws -> Data
 - (void) sendMiFareCommand:(NSData *) command completionHandler:(void (^)(NSData *response, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send commands to tags that are from the [`NFCMiFareFamily.ultralight`](../nfcmifarefamily/ultralight.md), [`NFCMiFareFamily.plus`](../nfcmifarefamily/plus.md), and [`NFCMiFareFamily.desfire`](../nfcmifarefamily/desfire.md) product families.
 

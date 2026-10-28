@@ -25,7 +25,7 @@ class MKLocalSearchCompleter
 @interface MKLocalSearchCompleter : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) object to retrieve auto-complete suggestions for your own map-based search controls. As the user types text, you feed the current text string into the search completer object, which delivers possible string completions that match locations or points of interest.
 

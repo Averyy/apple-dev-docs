@@ -20,7 +20,7 @@ The display order of input media sources.
 var order: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Provides an ordered list of [`HMCharacteristicTypeIdentifier`](../hmcharacteristictypeidentifier.md) values for [`HMServiceTypeInputSource`](../hmservicetypeinputsource.md) services associated with the profile.
 

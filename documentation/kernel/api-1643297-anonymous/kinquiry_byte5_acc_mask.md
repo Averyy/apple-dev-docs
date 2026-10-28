@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_ACC_Mask = (1 << kINQUIRY_Byte5_ACC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the ACC bit.
 

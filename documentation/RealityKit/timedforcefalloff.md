@@ -20,7 +20,7 @@ A type that modulates the force strength based on how long the force effect has 
 struct TimedForceFalloff
 ```
 
-#### Overview
+## Overview
 
 Forces have the largest strength when the force effect starts to play and gradually decay to zero when approaching the given duration. The effect also stops playing when reaching the duration.
 

@@ -21,7 +21,7 @@ A type that defines various triggers that result in the firing of a submission a
 struct SubmitTriggers
 ```
 
-#### Overview
+## Overview
 
 These triggers may be provided to the [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier to alter which types of user behaviors trigger a provided submission action.
 

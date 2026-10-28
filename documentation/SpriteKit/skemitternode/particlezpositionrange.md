@@ -25,7 +25,7 @@ var particleZPositionRange: CGFloat { get set }
 @property (nonatomic) CGFloat particleZPositionRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. If non-zero, the z position of each particle is randomly determined and may vary by plus or minus half of the range value.
 

@@ -24,7 +24,7 @@ func CFHTTPAuthenticationRequiresAccountDomain(_ auth: CFHTTPAuthentication) -> 
 extern Boolean CFHTTPAuthenticationRequiresAccountDomain(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `auth` uses an authentication method that requires an account domain, otherwise `FALSE`.
 

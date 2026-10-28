@@ -22,7 +22,7 @@ A type that manages configuration data for an app extension.
 associatedtype Configuration : AppExtensionConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom app extension, Swift infers this type from your implementation of the required [`configuration`](./configuration-swift.property.md) property.
 

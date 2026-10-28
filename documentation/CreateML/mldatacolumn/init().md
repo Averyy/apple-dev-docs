@@ -20,7 +20,7 @@ Constructs an invalid Column.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Assigning an invalid Column to a column name in a DataTable will remove any Column previously stored under that name.
 

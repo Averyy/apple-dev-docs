@@ -25,7 +25,7 @@ typealias AVAudio3DVector = AVAudio3DPoint
 typedef struct AVAudio3DPoint AVAudio3DVector;
 ```
 
-#### Discussion
+## Discussion
 
 Classes that deal with 3D audio use this structure, such as those that adopt the [`AVAudioMixing`](./avaudiomixing.md) protocol and the [`AVAudioEnvironmentNode`](./avaudioenvironmentnode.md) class.
 

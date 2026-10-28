@@ -21,7 +21,7 @@ A type that specifies the format for a day in a date format style.
 struct Day
 ```
 
-#### Overview
+## Overview
 
 The [`Date.FormatStyle.Symbol.Day`](./day.md) type includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.Day`](./day.md) objects:
 

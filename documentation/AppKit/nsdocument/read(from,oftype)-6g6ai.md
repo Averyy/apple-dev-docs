@@ -20,7 +20,7 @@ func read(from data: Data, ofType typeName: String) throws
 - (BOOL) readFromData:(NSData *) data ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method throws an exception because at least one of the three reading methods (this method, [`read(from:ofType:)`](./read%28from,oftype%29-1vttv.md), [`read(from:ofType:)`](./read%28from,oftype%29-3rzsi.md)), or every method that may invoke [`read(from:ofType:)`](./read%28from,oftype%29-1vttv.md), must be overridden.
 

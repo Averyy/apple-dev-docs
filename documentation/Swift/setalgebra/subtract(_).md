@@ -22,7 +22,7 @@ Removes the elements of the given set from this set.
 mutating func subtract(_ other: Self)
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are also members of the `neighbors` set are removed. In particular, the names `"Bethany"` and `"Eric"` are removed from `employees`.
 

@@ -21,7 +21,7 @@ Initializes an IPv4 address with data.
 init?(_ rawValue: Data, _ interface: NWInterface? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The provided data is expected to be an IPv4 address of 4 bytes.
 

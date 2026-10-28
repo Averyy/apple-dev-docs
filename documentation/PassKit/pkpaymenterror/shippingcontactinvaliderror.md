@@ -20,7 +20,7 @@ The error code to indicate an invalid shipping address, email, phone, or name.
 static var shippingContactInvalidError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the shipping contact information on the Apple Pay sheet has an error in the address, email, phone, or name.
 

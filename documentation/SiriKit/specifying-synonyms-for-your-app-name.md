@@ -5,7 +5,7 @@
 
 Provide alternative names for your app that are more familiar or easier for users to speak.
 
-#### Overview
+## Overview
 
 When engaging your app’s services through Siri, users must include the name of your app in any spoken requests. To simplify those requests, you can provide Siri with a list of synonyms for your app name.
 

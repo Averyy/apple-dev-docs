@@ -14,7 +14,7 @@ A constant path refering to an arbitrary image file on disk.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |

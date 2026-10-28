@@ -21,7 +21,7 @@ Creates a floating-point format style that uses the given locale.
 init(locale: Locale = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 Create a [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) when you intend to apply a given style to multiple floating-point values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Double`](../../Swift/double.md) values in an array.
 

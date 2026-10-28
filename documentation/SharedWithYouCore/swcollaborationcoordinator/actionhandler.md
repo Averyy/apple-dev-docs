@@ -23,7 +23,7 @@ weak var actionHandler: (any SWCollaborationActionHandler)? { get set }
 @property (nonatomic, weak, readwrite) id<SWCollaborationActionHandler> actionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Register the delegate soon after launch and handle actions immediately to avoid timeouts.
 

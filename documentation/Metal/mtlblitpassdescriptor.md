@@ -28,7 +28,7 @@ class MTLBlitPassDescriptor
 
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Overview
+## Overview
 
 You can customize an encoder for a blit pass by creating and configuring an [`MTLBlitPassDescriptor`](./mtlblitpassdescriptor.md) instance and passing it to [`makeBlitCommandEncoder(descriptor:)`](./mtlcommandbuffer/makeblitcommandencoder%28descriptor%29.md).
 

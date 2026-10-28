@@ -19,7 +19,7 @@ func setWLANChannel(_ channel: CWChannel) throws
 - (BOOL) setWLANChannel:(CWChannel *) channel error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The channel cannot be changed if the interface is associated to a network.
 

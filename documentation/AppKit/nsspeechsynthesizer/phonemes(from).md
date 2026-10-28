@@ -19,11 +19,11 @@ func phonemes(from text: String) -> String
 - (NSString *) phonemesFromText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 Phonemes generated from text.
 
-#### Discussion
+## Discussion
 
 Converting textual data into phonetic data is particularly useful during application development, when you might wish to adjust phrases that your application generates to produce smoother speech. By first converting the target phrase into phonemes, you can see what the synthesizer will try to speak. Then you need correct only the parts that would not have been spoken the way you want
 

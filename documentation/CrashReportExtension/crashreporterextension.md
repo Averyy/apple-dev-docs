@@ -18,7 +18,7 @@ The base type for crash reporter extensions.
 protocol CrashReporterExtension : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol and implement [`processCrashReport(process:)`](./crashreporterextension/processcrashreport%28process%29.md) to create a crash reporter. Your extension runs in its own process, separate from the crashed app.
 

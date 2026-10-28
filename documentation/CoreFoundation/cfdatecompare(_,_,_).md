@@ -25,7 +25,7 @@ func CFDateCompare(_ theDate: CFDate!, _ otherDate: CFDate!, _ context: UnsafeMu
 extern CFComparisonResult CFDateCompare(CFDateRef theDate, CFDateRef otherDate, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFComparisonResult`](./cfcomparisonresult.md) value that indicates whether `theDate` is equal to, less than, or greater than `otherDate`.
 

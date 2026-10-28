@@ -20,7 +20,7 @@ static var destroyRights: AuthorizationFlags { get }
 kAuthorizationFlagDestroyRights
 ```
 
-#### Discussion
+## Discussion
 
 If this flag is set, the Security Server revokes authorization from the process as well as from any other process that is sharing the authorization. If not set, the Security Server revokes authorization from the process but not from other processes that share the authorization.
 

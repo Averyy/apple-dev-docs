@@ -22,7 +22,7 @@ var magnetometerData: CMMagnetometerData? { get }
 @property (readonly, nullable) CMMagnetometerData * magnetometerData;
 ```
 
-#### Discussion
+## Discussion
 
 If no magnetometer data is available, the value of this property is `nil`. An app that is receiving magnetometer data after calling [`startMagnetometerUpdates()`](./startmagnetometerupdates%28%29.md) periodically checks the value of this property and processes the magnetometer data.
 

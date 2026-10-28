@@ -19,7 +19,7 @@ let kSCPropNetL2TPTransport: CFString
 extern CFStringRef const kSCPropNetL2TPTransport;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

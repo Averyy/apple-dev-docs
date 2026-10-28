@@ -25,7 +25,7 @@ let MPMediaItemPropertyIsCompilation: String
 extern NSString * const MPMediaItemPropertyIsCompilation;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Part of a compilation” checkbox in the Info tab of the Get Info dialog in iTunes. Its associated value is an [`NSNumber`](../Foundation/nsnumber.md) object representing a Boolean value.
 

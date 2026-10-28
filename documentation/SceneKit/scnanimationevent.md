@@ -25,7 +25,7 @@ class SCNAnimationEvent
 @interface SCNAnimationEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use animation events to add actions to animations, such as playing a sound to coincide with the movement of an animated character, or removing a node from the scene after playing an animation that fades out its visible geometry.
 

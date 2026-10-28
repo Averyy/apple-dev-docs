@@ -17,7 +17,7 @@ Preprocesses the weights, handling key remapping and vocabulary truncation.
 func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A sanitized dictionary of weights compatible with the model structure.
 

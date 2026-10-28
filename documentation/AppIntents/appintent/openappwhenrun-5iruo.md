@@ -21,7 +21,7 @@ A Boolean value that defines the presentation style for the intent.
 static var openAppWhenRun: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the start workout intents set their `openAppWhenRun` property to `true`. To ensure these intents run as expected, don’t change the property’s value.
 

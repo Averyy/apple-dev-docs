@@ -18,7 +18,7 @@ Posted when the natural frame size of a movie is first determined or subsequentl
 extern NSString * const MPMovieNaturalSizeAvailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the natural frame size for a movie, access the movie player’s [`naturalSize`](./mpmovieplayercontroller/naturalsize.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

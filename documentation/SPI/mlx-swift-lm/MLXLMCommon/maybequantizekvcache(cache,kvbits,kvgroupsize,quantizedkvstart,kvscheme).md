@@ -21,7 +21,7 @@ func maybeQuantizeKVCache(cache: inout [KVCache], kvBits: Int?, kvGroupSize: Int
 
 - [KV Cache Quantization](./kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 - kvBits is specified (or kvScheme resolves to a built-in affine scheme)
 - The cache is not already quantized

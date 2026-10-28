@@ -27,11 +27,11 @@ init(coordinate: CLLocationCoordinate2D, addressDictionary: [String : Any]?)
 - (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate addressDictionary:(NSDictionary<NSString *,id> *) addressDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `MKPlacemark` object.
 
-#### Discussion
+## Discussion
 
 You can create placemark objects manually for entities for which you already have address information, such as contacts in the Address Book. Creating a placemark object explicitly avoids the need to query the reverse geocoder object for the same information.
 

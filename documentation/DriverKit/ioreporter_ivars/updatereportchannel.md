@@ -18,11 +18,11 @@ Internal method to extract channel data to a destination.
 IOReturn updateReportChannel(int channel_index, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate [`IOReturn`](../ioreturn.md) code
 
-#### Discussion
+## Discussion
 
 Used to extract a single channel’s data to the updateReport() destination.
 

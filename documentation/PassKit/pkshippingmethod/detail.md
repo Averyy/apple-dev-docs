@@ -24,7 +24,7 @@ var detail: String? { get set }
 @property (nonatomic, copy, nullable) NSString * detail;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate the shipping methods you offer. For example “Ships in 24 hours.” or “Arrives by 5pm on July 29.”
 

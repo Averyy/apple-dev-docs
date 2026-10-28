@@ -24,7 +24,7 @@ class func decodeClassName(_ inArchiveName: String, asClassName trueName: String
 + (void) decodeClassName:(NSString *) inArchiveName asClassName:(NSString *) trueName;
 ```
 
-#### Discussion
+## Discussion
 
 This method enables easy conversion of unarchived data when the name of a class has changed since the archive was created.
 

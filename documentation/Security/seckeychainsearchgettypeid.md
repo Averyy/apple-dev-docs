@@ -15,11 +15,11 @@ Returns the unique identifier of the opaque type to which a keychain search obje
 CFTypeID SecKeychainSearchGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 A value that identifies the opaque type of a [`SecKeychainSearch`](./seckeychainsearch.md) object.
 
-#### Discussion
+## Discussion
 
 This function returns a value that uniquely identifies the opaque type of a [`SecKeychainSearch`](./seckeychainsearch.md) object. You can compare this value to the [`CFTypeID`](../CoreFoundation/cftypeid.md) identifier obtained by calling the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function on a specific object. These values might change from release to release or platform to platform.
 

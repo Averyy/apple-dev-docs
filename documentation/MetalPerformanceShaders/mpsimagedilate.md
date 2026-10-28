@@ -24,7 +24,7 @@ class MPSImageDilate
 @interface MPSImageDilate : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageDilate`](./mpsimagedilate.md) filter behaves like the [`MPSImageAreaMax`](./mpsimageareamax.md) filter, except Metal calculates the intensity at each position relative to a different value before determining which is the maximum pixel value, allowing for shaped, nonrectangular morphological probes.
 

@@ -25,7 +25,7 @@ func CFConvertDoubleSwappedToHost(_ arg: CFSwappedFloat64) -> Double
 static double CFConvertDoubleSwappedToHost(CFSwappedFloat64 arg);
 ```
 
-#### Return Value
+## Return Value
 
 The real value in the host’s native format.
 

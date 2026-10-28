@@ -17,7 +17,7 @@ Called when the `selectedIndirectPointerTouchMode` changes.
 func markupToolbarViewControllerSelectedIndirectPointerTouchModeChanged(_ toolbar: MarkupToolbarViewController)
 ```
 
-#### Discussion
+## Discussion
 
 Default implementation provided.
 

@@ -23,7 +23,7 @@ case plain
 UITableViewStylePlain
 ```
 
-#### Discussion
+## Discussion
 
 Section headers and footers are displayed as inline separators and float when the table view is scrolled.
 

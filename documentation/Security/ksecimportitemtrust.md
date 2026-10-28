@@ -29,7 +29,7 @@ extern CFStringRef const kSecImportItemTrust;
 
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type `SecTrustRef`. The trust reference returned by the [`SecPKCS12Import(_:_:_:)`](./secpkcs12import%28_,_,_%29.md) function has been evaluated against the basic X.509 policy and includes as complete a certificate chain as could be constructed from the certificates in the PKCS #12 blob, certificates on the keychain, and any other certificates available to the system. You can use the [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) function if you want to know whether the certificate chain is complete and valid (according to the basic X.509 policy). There is no guarantee that the evaluation will succeed.
 

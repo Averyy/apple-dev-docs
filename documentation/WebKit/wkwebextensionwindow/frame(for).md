@@ -23,7 +23,7 @@ optional func frame(for context: WKWebExtensionContext) -> CGRect
 - (CGRect) frameForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`CGRectNull`](../../CoreGraphics/cgrectnull.md) if not implemented.
 

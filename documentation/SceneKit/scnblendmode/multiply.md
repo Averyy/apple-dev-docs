@@ -25,7 +25,7 @@ case multiply
 SCNBlendModeMultiply
 ```
 
-#### Discussion
+## Discussion
 
 This mode results in colors that are at least as dark as either of the two contributing colors.
 

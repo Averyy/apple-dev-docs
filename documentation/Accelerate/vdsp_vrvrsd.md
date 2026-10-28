@@ -21,7 +21,7 @@ Performs an in-place reversal of a double-precision vector.
 extern void vDSP_vrvrsD(double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code reverses the elements in the array `values`:
 

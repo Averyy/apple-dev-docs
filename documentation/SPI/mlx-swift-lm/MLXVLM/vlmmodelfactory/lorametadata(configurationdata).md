@@ -17,7 +17,7 @@ Returns the model’s LoRA metadata without loading checkpoint weights or a proc
 func loraMetadata(configurationData: Data) async throws -> LoRAModelMetadata?
 ```
 
-#### Discussion
+## Discussion
 
 Uses the registered model’s `LoRAModel` conformance to select adapter targets.
 

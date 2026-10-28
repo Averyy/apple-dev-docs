@@ -9,11 +9,11 @@ Starts preparing someone’s data for download.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 Request the `app-store` data type to get App Store information and app-install activity.
 
-##### Request a one-time download
+### Request a one-time download
 
 **Request**:
 
@@ -36,7 +36,7 @@ Request the `app-store` data type to get App Store information and app-install a
 }
 ```
 
-##### Request a recurring download
+### Request a recurring download
 
 **Request**:
 

@@ -17,11 +17,11 @@ nonisolated
 func onAppear(perform action: (() -> Void)? = nil) -> some CompositorContent
 ```
 
-#### Return Value
+## Return Value
 
 A CompositorContent that triggers `action` before it appears.
 
-#### Discussion
+## Discussion
 
 The exact moment that SwiftUI calls this method depends on the specific content type that you apply it to, but the `action` closure completes before the first rendered frame appears.
 

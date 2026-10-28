@@ -15,7 +15,7 @@ Gets the decibel level value for the control.
 float GetDecibelValue();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the control value.
 

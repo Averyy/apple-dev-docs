@@ -15,7 +15,7 @@ The base class for all objects in the registry.
 class IORegistryEntry : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IORegistryEntry base class provides functions for describing graphs of connected registry entries, each with a dictionary-based property table. Entries may be connected in different planes, with differing topologies. Access to the registry is protected against multiple threads. Inside the kernel planes are specified with plane objects and are published by the creator - IOService exports the gIOServicePlane plane object for example. Non kernel clients specify planes by their name.
 

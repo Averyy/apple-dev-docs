@@ -15,11 +15,11 @@ Gets the current selected values of the control.
 size_t GetCurrentSelectedValues(IOUserVideoSelectorValue *out_values, size_t in_num_values);
 ```
 
-#### Return Value
+## Return Value
 
 Size_t indicating the number of values returning in out_values
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

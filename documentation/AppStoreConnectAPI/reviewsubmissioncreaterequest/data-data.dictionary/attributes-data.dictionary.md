@@ -15,7 +15,7 @@ Attributes that describe a review submission create request resource.
 object ReviewSubmissionCreateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: The attribute `platform` is no longer required when using [`Create a Review Submission`](../../post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](../../patch-v1-reviewsubmissions-_id_.md).
 

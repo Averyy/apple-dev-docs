@@ -25,7 +25,7 @@ var classID: TKTokenDriver.ClassID { get }
 @property (nonatomic, readonly) TKTokenDriverClassID classID;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier uses a reverse-DNS format, such as `com.example.id`.
 

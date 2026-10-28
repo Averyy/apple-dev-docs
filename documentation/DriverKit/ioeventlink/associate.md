@@ -16,11 +16,11 @@
 kern_return_t Associate(uint64_t options);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Associate a thread with the eventlink.
 

@@ -20,7 +20,7 @@ Symbolicates an address, returning symbol info with inline frame expansion.
 final func symbolicateAddress(_ address: UInt64) -> [SymbolicatedFrame]
 ```
 
-#### Return Value
+## Return Value
 
 An array of frames, starting with the outermost.
 

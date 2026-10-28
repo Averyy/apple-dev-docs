@@ -25,11 +25,11 @@ init(code: INSnoozeTasksIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSnoozeTasksIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After you initialize the response object, create an [`INTask`](../intask.md) object with the updated values that you intend to apply to your app’s data structures and assign that object to the [`snoozedTasks`](./snoozedtasks.md) property.
 

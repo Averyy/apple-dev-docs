@@ -16,7 +16,7 @@ Configuration options that control interaction capabilities for a USD document s
 struct SpatialViewerOptions
 ```
 
-#### Overview
+## Overview
 
 Use these options to specify what features are available to users during a remote preview session. Options can be combined using standard `OptionSet` syntax to create custom configurations.
 

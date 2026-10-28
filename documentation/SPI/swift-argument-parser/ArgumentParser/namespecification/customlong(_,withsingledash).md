@@ -17,11 +17,11 @@ Use the given string instead of the property’s name.
 static func customLong(_ name: String, withSingleDash: Bool = false) -> NameSpecification
 ```
 
-#### Return Value
+## Return Value
 
 A `long` name specification with the requested `name`.
 
-#### Discussion
+## Discussion
 
 To create a single-dash argument, pass `true` as `withSingleDash`. Note that combining single-dash options and options with short, single-character names can lead to ambiguities for the user.
 

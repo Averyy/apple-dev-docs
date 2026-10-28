@@ -33,7 +33,7 @@ class func loadMatches() async throws -> [GKTurnBasedMatch]
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 The [`matchData`](./matchdata.md) properties of the match objects are `nil` until you fetch the data from Game Center using the [`loadMatchData(completionHandler:)`](./loadmatchdata%28completionhandler%29.md) method.
 

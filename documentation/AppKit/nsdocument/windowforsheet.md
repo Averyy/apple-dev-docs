@@ -19,7 +19,7 @@ var windowForSheet: NSWindow? { get }
 @property (strong, readonly, nullable) NSWindow * windowForSheet;
 ```
 
-#### Discussion
+## Discussion
 
 This method searches the document’s window controllers for the most suitable window to use when displaying the sheet.
 

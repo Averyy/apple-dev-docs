@@ -23,7 +23,7 @@ case credentialExport
 ASAuthorizationErrorCredentialExport
 ```
 
-#### Discussion
+## Discussion
 
 Details are available in the error’s [`userInfo`](../../../Foundation/nserror/userinfo.md).
 

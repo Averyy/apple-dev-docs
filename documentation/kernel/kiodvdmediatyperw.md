@@ -13,7 +13,7 @@
 #define kIODVDMediaTypeRW
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for DVD ReWritable (DVD-RW) media.
 

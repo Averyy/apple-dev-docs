@@ -20,11 +20,11 @@ A cloned data column of machine learning dictionaries.
 var dictionaries: MLDataColumn<MLDataValue.DictionaryType>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is [`MLDataValue.DictionaryType`](../mldatavalue/dictionarytype.md); otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This property is functionally equivalent to passing [`MLDataValue.DictionaryType`](../mldatavalue/dictionarytype.md) `.self` to [`column(type:)`](./column%28type%29.md). Typically you ensure [`type`](./type.md) is equal to [`MLDataValue.ValueType.dictionary`](../mldatavalue/valuetype/dictionary.md) before getting this property.
 

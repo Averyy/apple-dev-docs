@@ -19,7 +19,7 @@ class WKImage
 @interface WKImage : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create instances of this class, use one of the defined creation methods. Choose the method that best suits the image data you have. After creating the object, you can use associate it with a [`WKPickerItem`](./wkpickeritem.md) object and use it in your picker interface.
 

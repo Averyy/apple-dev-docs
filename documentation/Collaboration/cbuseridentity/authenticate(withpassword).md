@@ -19,7 +19,7 @@ func authenticate(withPassword password: String) -> Bool
 - (BOOL) authenticateWithPassword:(NSString *) password;
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the password is correct; otherwise, `FALSE`.
 

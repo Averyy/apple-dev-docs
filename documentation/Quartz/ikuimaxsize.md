@@ -19,7 +19,7 @@ let IKUImaxSize: String
 extern NSString * IKUImaxSize;
 ```
 
-#### Discussion
+## Discussion
 
 Controls whose dimensions are the maximum allowable for the filter view.A width or height of `0` indicates that dimension of the view is not restricted. If the size requested is too small, the filter is expected to return a view as small as possible. It is up to the client to verify that the returned view fits into the context.
 

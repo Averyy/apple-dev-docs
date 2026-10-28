@@ -19,7 +19,7 @@ var accessibilityDisplayShouldInvertColors: Bool { get }
 @property (readonly) BOOL accessibilityDisplayShouldInvertColors;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is [`true`](../../Swift/true.md), the system inverts the display. In this case, you may need to adjust your app’s drawing for optimal display.  To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](./accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](./notificationcenter.md).
 

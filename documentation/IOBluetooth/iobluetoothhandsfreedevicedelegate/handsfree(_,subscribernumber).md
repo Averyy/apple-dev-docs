@@ -19,7 +19,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, subscriberNumber:
 - (void) handsFree:(IOBluetoothHandsFreeDevice *) device subscriberNumber:(NSString *) subscriberNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If multiple subscriber numbers are on the gateway, this function is called once for each subscriber number.
 

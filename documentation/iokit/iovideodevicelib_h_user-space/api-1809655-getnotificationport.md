@@ -12,7 +12,7 @@ CFMachPortRef ( *GetNotificationPort)(
    IOVideoDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 A CFMachPortRef of the output notification port.
 

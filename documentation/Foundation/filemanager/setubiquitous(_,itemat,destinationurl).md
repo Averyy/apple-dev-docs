@@ -25,7 +25,7 @@ func setUbiquitous(_ flag: Bool, itemAt url: URL, destinationURL: URL) throws
 - (BOOL) setUbiquitous:(BOOL) flag itemAtURL:(NSURL *) url destinationURL:(NSURL *) destinationURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to move a file from its current location to iCloud. For files located in an app’s sandbox, this involves physically removing the file from the sandbox container. (The system extends your app’s sandbox privileges to give it access to files it moves to iCloud.) You can also use this method to move files out of iCloud and back into a local directory.
 

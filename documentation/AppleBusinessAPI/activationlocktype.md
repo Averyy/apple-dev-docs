@@ -21,7 +21,7 @@ string ActivationLockType
 - `USER`
 - `NONE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

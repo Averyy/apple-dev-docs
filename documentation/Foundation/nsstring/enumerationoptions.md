@@ -25,7 +25,7 @@ struct EnumerationOptions
 enum NSStringEnumerationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options are used with the [`enumerateSubstrings(in:options:using:)`](./enumeratesubstrings%28in,options,using%29.md) method. Pass in one `NSStringEnumerationBy...` option and combine with any of the remaining enumeration style constants using the C bitwise `OR` operator.
 

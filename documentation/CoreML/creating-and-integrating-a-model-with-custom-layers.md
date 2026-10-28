@@ -5,13 +5,13 @@
 
 Add models with custom neural-network layers to your app.
 
-#### Overview
+## Overview
 
 New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a *custom layer*. A custom layer is a class that adopts [`MLCustomLayer`](./mlcustomlayer.md) and implements the methods to run a neural network layer in code.
 
 > **Note**:  Core ML supports models with custom layers beginning with these software releases: iOS 11.2, macOS 10.13.2, tvOS 11.2 and watchOS 4.2.
 
-##### Add a model you acquire or create
+### Add a model you acquire or create
 
 If you have a Core ML model with custom layers, add the model to your Xcode project.
 
@@ -27,7 +27,7 @@ bindings = {
 
 Save the Core ML model you converted and add it to your Xcode project.
 
-##### Integrate or create a class for each custom layer
+### Integrate or create a class for each custom layer
 
 If the author of the model you plan to add to your Xcode project implemented the custom layers in source-code files, add the source files into your Xcode project.
 
@@ -51,7 +51,7 @@ Core ML invokes the appropriate [`MLCustomLayer`](./mlcustomlayer.md) methods fo
 
 > ⚠️ **Warning**:  Don’t change the values that Core ML provides to these methods — such as weights, inputs, or outputs — because it may cause your app to behave in unexpected ways, and possibly crash.
 
-##### Test the custom layers
+### Test the custom layers
 
 If applicable, test the custom layers by using the model to make predictions with input values from one or more test cases. Confirm the model layers function correctly by comparing the model’s prediction values to the output values for each test case.
 

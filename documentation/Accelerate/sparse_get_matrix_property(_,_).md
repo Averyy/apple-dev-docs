@@ -25,11 +25,11 @@ func sparse_get_matrix_property(_ A: UnsafeMutableRawPointer!, _ pname: sparse_m
 long sparse_get_matrix_property(void *A, sparse_matrix_property pname);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the property for a valid object and property, or 0 otherwise.
 
-#### Discussion
+## Discussion
 
 Returns the value of the given property name. See matrix properties enumeration for further property details.
 

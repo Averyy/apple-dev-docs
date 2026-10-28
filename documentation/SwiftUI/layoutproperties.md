@@ -21,7 +21,7 @@ Layout-specific properties of a layout container.
 struct LayoutProperties
 ```
 
-#### Overview
+## Overview
 
 This structure contains configuration information that’s applicable to a layout container. For example, the [`stackOrientation`](./layoutproperties/stackorientation.md) value indicates the layout’s primary axis, if any.
 

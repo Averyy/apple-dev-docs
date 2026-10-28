@@ -21,7 +21,7 @@ Defines pixel layout of a buffer plane or the entire buffer if the format is non
 struct PixelLayout
 ```
 
-#### Overview
+## Overview
 
 Note: The value of [`fillExtendedPixels`](./pixellayout/fillextendedpixels.md) property is ignored when comparing two pixel layouts for equality.
 

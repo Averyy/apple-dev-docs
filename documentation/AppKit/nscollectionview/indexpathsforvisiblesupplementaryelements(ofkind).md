@@ -19,11 +19,11 @@ func indexPathsForVisibleSupplementaryElements(ofKind elementKind: NSCollectionV
 - (NSSet<NSIndexPath *> *) indexPathsForVisibleSupplementaryElementsOfKind:(NSCollectionViewSupplementaryElementKind) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects. The returned array may be empty.
 
-#### Discussion
+## Discussion
 
 The index paths returned by this method correspond to supplementary views that are active and currently being managed by the collection view. The set may include index paths for views that are outside of the collection view’s actual visible rectangle. For example, it might contain index paths for views that were recently visible but have since been scrolled out of the visible rectangle. To test whether a view is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 

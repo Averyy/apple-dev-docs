@@ -23,7 +23,7 @@ func transposed() -> MLShapedArray<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 This is equivalent to `transposed(permutation:)` where `permutation:` parameter is `[shape.count-1, shape.count-2, ..., 0]`, which reverses the shape.
 

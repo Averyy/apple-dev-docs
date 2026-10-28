@@ -21,7 +21,7 @@ Sorts a vector of double-precision values in-place.
 static func sort<V>(_ vector: inout V, sortOrder: vDSP.SortOrder) where V : AccelerateMutableBuffer, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The single- and double-precision [`sort(_:sortOrder:)`](./sort%28_,sortorder%29-wx0w.md) functions sort an array in place.
 

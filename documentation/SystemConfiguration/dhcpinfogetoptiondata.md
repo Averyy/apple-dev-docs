@@ -15,7 +15,7 @@ Returns DHCP option data, if present.
 CFDataRefDHCPInfoGetOptionData(CFDictionaryRef info, UInt8 code);
 ```
 
-#### Return Value
+## Return Value
 
 The DHCP option data if present, or `NULL` if the data is not present. You must not release the return value.
 

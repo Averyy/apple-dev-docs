@@ -19,7 +19,7 @@ weak var client: (any NSView & NSTextInputClient)? { get set }
 @property (weak, nullable) NSView<NSTextInputClient> * client;
 ```
 
-#### Discussion
+## Discussion
 
 This object must be a subclass of [`NSView`](../nsview.md) and adopt the [`NSTextInputClient`](../nstextinputclient.md) protocol.
 

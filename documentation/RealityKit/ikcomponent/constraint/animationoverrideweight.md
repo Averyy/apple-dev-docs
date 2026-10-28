@@ -20,7 +20,7 @@ The blending weights between the FK demand and the your target per demand type.
 var animationOverrideWeight: (position: Float, rotation: Float) { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Each demand uses either the value you set using [`target`](./target.md) and [`lookAtTargetPosition`](./lookattargetposition.md), or computes one from the FK demand pose. These weights control the blending between the two.
 

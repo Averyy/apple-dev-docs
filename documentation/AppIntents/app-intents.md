@@ -5,7 +5,7 @@
 
 Make your app’s custom actions available to the system by using app intent types.
 
-#### Overview
+## Overview
 
 An app intent expresses one of your app’s capabilities to the system, and contains code to perform that action. You express your app intents as types that adopt the [`AppIntent`](./appintent.md) protocol and specify the data you need to perform the action. For specific types of actions, you might also base your intents on other [app intent types](./app-intent-types.md). For example, if your app intent launches your app and displays some content, use the [`OpenIntent`](./openintent.md) protocol instead. If an app intent supports system features, adopt a schema from an [app schema domain](./app-schema-domains.md).
 

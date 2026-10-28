@@ -25,11 +25,11 @@ init(authenticationChallenge challenge: URLAuthenticationChallenge, sender: any 
 - (instancetype) initWithAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge sender:(id<NSURLAuthenticationChallengeSender>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 A new authentication challenge object, based on an existing challenge.
 
-#### Discussion
+## Discussion
 
 Most apps don’t create [`URLAuthenticationChallenge`](../urlauthenticationchallenge.md) instances themselves. Instead, they handle received challenges in the [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md).
 

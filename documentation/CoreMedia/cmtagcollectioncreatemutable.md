@@ -21,7 +21,7 @@ Creates a new, mutable, empty tag collection.
 extern OSStatus CMTagCollectionCreateMutable(CFAllocatorRef allocator, CFIndex capacity, CMMutableTagCollectionRef*newMutableCollectionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

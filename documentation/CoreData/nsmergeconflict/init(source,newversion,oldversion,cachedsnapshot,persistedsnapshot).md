@@ -25,7 +25,7 @@ init(source srcObject: NSManagedObject, newVersion newvers: Int, oldVersion oldv
 - (instancetype) initWithSource:(NSManagedObject *) srcObject newVersion:(NSUInteger) newvers oldVersion:(NSUInteger) oldvers cachedSnapshot:(NSDictionary<NSString *,id> *) cachesnap persistedSnapshot:(NSDictionary<NSString *,id> *) persnap;
 ```
 
-#### Return Value
+## Return Value
 
 A merge conflict object initialized with the given parameters.
 

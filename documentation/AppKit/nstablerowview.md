@@ -19,7 +19,7 @@ class NSTableRowView
 @interface NSTableRowView : NSView
 ```
 
-#### Overview
+## Overview
 
 [`NSTableRowView`](./nstablerowview.md) is responsible for displaying attributes associated with the row, including the selection highlight, and group row look.
 

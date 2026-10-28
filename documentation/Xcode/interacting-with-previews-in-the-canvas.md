@@ -5,7 +5,7 @@
 
 Use the canvas controls to test your view’s appearance and behavior on different devices and configurations.
 
-#### Overview
+## Overview
 
 Previews let you interact with your views and identify interface issues without needing to run your app. Most projects that you create from a template, and most sample code projects, have previews in their interface files. You can also generate previews and playgrounds using coding intelligence.
 
@@ -17,7 +17,7 @@ If you add multiple preview and playground macros to a file, you can switch betw
 
 For more information on adding previews and playgrounds, see [Adding previews to your interface files](./adding-previews-to-your-interface-files.md) and [Running code snippets using the playground macro](./running-code-snippets-using-the-playground-macro.md).
 
-#### Interact with your view in live mode
+## Interact with your view in live mode
 
 Use live mode to test control logic, animations, text entry, and responses to asynchronous code. The behavior of a live mode preview is similar to running your app on a simulated or physical device.
 
@@ -25,7 +25,7 @@ To switch to live mode, click the Live button in the lower-left corner of the ca
 
 ![A cropped screenshot of the canvas toolbar on the bottom-left under the preview that shows the location of the live mode button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/live-mode@2x.png)
 
-#### Change the preview screen size
+## Change the preview screen size
 
 To verify that your interface adjusts for different device sizes, you can change the preview to an arbitrary size without switching device types.
 
@@ -33,7 +33,7 @@ Click the Resizable button in the lower-left corner of the canvas. Then drag a h
 
 ![A screenshot of the project window with an interface file selected in the Project navigator on the left, a preview macro in the file highlighted in the middle, and resizable mode showing the handles on each side of the preview in the canvas on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/resize-preview-screen@2x.png)
 
-#### Highlight code using selectable mode
+## Highlight code using selectable mode
 
 Use selectable mode to display preview code while interacting with it in the canvas.
 
@@ -43,7 +43,7 @@ To highlight the code for an element in the source editor, click the Selectable 
 
 Then you can change the code for the element in the source editor and see the results immediately in the canvas.
 
-#### Compare different view configurations
+## Compare different view configurations
 
 Use variant mode to compare your view in different configurations side by side. For example, test how well your view supports different device orientations, text sizes for accessibility, and displays on iPhone Duo.
 
@@ -60,7 +60,7 @@ Click the Variant button in the lower-left corner of the canvas and choose a var
 
 To show one of many variants, choose one of the menu options above and select the variant in the canvas. Then use the drop-down menu in the upper-left corner to switch between variants. To display all variants again, click the arrow on the left of the drop-down menu.
 
-#### Test views with different device settings
+## Test views with different device settings
 
 Choose a specific device from the Preview Device pop-up menu in the lower-right corner of the canvas, such as an iPhone or My Mac. Then select device-specific options from the Device Settings button in the lower-right corner of the canvas.
 
@@ -75,7 +75,7 @@ For example, to see how your view looks in dark appearance, landscape right orie
 
 To reproduce interface issues, try turning on a combination of variant and device settings. For example, to see how your view adapts to different languages, select Orientation Variants from Variants. The canvas shows multiple orientations of your view. Then turn Language on and select a localization in Device Settings.
 
-#### Capture screenshots of previews
+## Capture screenshots of previews
 
 To take a screenshot, click the Screenshot button in the lower-right corner of the canvas. In the sheet that appears, enter a file name, choose a location, and click Save.
 

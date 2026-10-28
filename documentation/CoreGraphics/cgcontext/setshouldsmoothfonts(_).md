@@ -25,7 +25,7 @@ func setShouldSmoothFonts(_ shouldSmoothFonts: Bool)
 extern void CGContextSetShouldSmoothFonts(CGContextRef c, bool shouldSmoothFonts);
 ```
 
-#### Discussion
+## Discussion
 
 There are cases, such as rendering to a bitmap, when font smoothing is not appropriate and should be disabled. Note that some contexts (such as PostScript contexts) do not support font smoothing.
 

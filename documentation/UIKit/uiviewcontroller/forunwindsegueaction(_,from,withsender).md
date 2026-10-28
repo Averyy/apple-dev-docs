@@ -24,11 +24,11 @@ func forUnwindSegueAction(_ action: Selector, from fromViewController: UIViewCon
 - (UIViewController *) viewControllerForUnwindSegueAction:(SEL) action fromViewController:(UIViewController *) fromViewController withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that wants to handle the unwind action.
 
-#### Discussion
+## Discussion
 
 A custom container view controller should override this method and use it to search its children for a view controller to handle the unwind action. It does this by invoking the [`canPerformUnwindSegueAction(_:from:withSender:)`](./canperformunwindsegueaction%28_,from,withsender%29.md) method on each child. If a view controller wants to handle the action, your method should return it. If none of the container’s children want to handle the unwind action, invoke the super’s implementation and return the result of that method.
 

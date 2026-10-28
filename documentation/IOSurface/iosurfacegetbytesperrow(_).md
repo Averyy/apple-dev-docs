@@ -24,7 +24,7 @@ func IOSurfaceGetBytesPerRow(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetBytesPerRow(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

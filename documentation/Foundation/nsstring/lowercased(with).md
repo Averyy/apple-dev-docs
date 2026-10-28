@@ -25,11 +25,11 @@ func lowercased(with locale: Locale?) -> String
 - (NSString *) lowercaseStringWithLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A lowercase string using the `locale`.
 
-#### Discussion
+## Discussion
 
 Case transformations aren’t guaranteed to be symmetrical or to produce strings of the same lengths as the originals. See [`lowercased`](./lowercased.md) for an example.
 

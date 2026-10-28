@@ -21,7 +21,7 @@ Specifies the minimum quality-of-service level for a dispatch queue, source, or 
 extern void dispatch_set_qos_class_floor(dispatch_object_t object, dispatch_qos_class_t qos_class, int relative_priority);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to enforce a minimum QoS level on all tasks you assign to the object. If the QoS level of a work item is below the specified minimum, the queue, source, or workloop elevates the priority of that work item to the minimum value. Elevation of the priority happens even if the work item doesn’t have “enforce” semantics in place.
 

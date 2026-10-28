@@ -21,7 +21,7 @@ The definitions for the target app’s app enums.
 var enums: IntentDefinitions.DefinitionCollection<AppEnumDefinition> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access individual enum definitions using subscript syntax with the enum’s type name as shown in the following example:
 

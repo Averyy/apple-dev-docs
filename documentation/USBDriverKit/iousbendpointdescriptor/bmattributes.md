@@ -15,7 +15,7 @@ The attributes of the endpoint.
 uint8_t bmAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This field contains the transfer type, synchronization type, and usage type attributes for the endpoint. For a list of possible values, see [Endpoint Attributes](../endpoint_attributes-enum.md).
 

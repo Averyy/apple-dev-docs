@@ -22,7 +22,7 @@ class func updateRules() -> NEFilterControlVerdict
 + (NEFilterControlVerdict *) updateRules;
 ```
 
-#### Return Value
+## Return Value
 
 An `NEFilterControlVerdict` object.
 

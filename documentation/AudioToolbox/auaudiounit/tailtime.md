@@ -32,7 +32,7 @@ var tailTime: TimeInterval { get }
 @property (atomic, readonly) NSTimeInterval tailTime;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the time interval between when the input stream ends or otherwise transitions to silence, and when the output stream becomes silent. This should also reflect the duration of an effect (e.g. reverberation).
 

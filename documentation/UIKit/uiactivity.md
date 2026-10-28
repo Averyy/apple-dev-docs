@@ -26,17 +26,17 @@ class UIActivity
 
 - [Adding custom actions and activities](./adding-custom-actions-and-activities.md)
 
-#### Overview
+## Overview
 
 You should subclass [`UIActivity`](./uiactivity.md) only if you want to provide custom services to people. A service takes data that’s passed to it, does something to that data, and returns the results. For example, a social media service might take whatever text, images, or other content is provided to it and post them to a person’s account. Activity objects are used in conjunction with a [`UIActivityViewController`](./uiactivityviewcontroller.md) object, which is responsible for presenting services to people.
 
 The system already provides support for many standard services and makes them available through the [`UIActivityViewController`](./uiactivityviewcontroller.md) object. For example, the standard activity view controller supports emailing data, posting items to one of a person’s social media accounts, and several other options. You don’t have to provide custom services for any of the built-in types.
 
-##### Subclassing notes
+### Subclassing notes
 
 This class must be subclassed before it can be used. The job of an activity object is to act on the data provided to it and to provide some meta information that iOS can display to people. For more complex services, an activity object can also display a custom user interface and use it to gather additional information from people.
 
-###### Methods to override
+#### Methods to override
 
 When subclassing, you must always override the following methods and use them to provide information about your service:
 

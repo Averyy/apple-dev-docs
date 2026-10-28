@@ -25,15 +25,15 @@ func vImageContrastStretch_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 vImage_Error vImageContrastStretch_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, unsigned int histogram_entries, Pixel_F minVal, Pixel_F maxVal, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 Contrast stretching evenly distributes a histogram’s pixel values across the full range of available pixel values. This technique is ideal for enhancing the contrast of an image with pixel values concentrated in one area of the intensity spectrum.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

@@ -29,11 +29,11 @@ nonisolated
 func focusedObject<T>(_ object: T?) -> some View where T : ObservableObject
 ```
 
-#### Return Value
+## Return Value
 
 A view that supplies an observable object when in focus.
 
-#### Discussion
+## Discussion
 
 Use this method instead of [`focusedSceneObject(_:)`](./focusedsceneobject%28_%29.md) when your scene includes multiple focusable views with their own associated data, and you need an app- or scene-scoped element like a command or toolbar item that operates on the data associated with whichever view currently has focus. Each focusable view can supply its own object:
 

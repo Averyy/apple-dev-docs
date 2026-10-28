@@ -6,11 +6,11 @@
 
 Remove administrators from subscriptions.
 
-#### Discussion
+## Discussion
 
 Send a POST request to revoke administrator access from users for specific subscriptions. The request body uses the same format as the Add endpoint.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

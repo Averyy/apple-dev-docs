@@ -23,11 +23,11 @@ class func `default`() -> WKWebsiteDataStore
 + (WKWebsiteDataStore *) defaultDataStore;
 ```
 
-#### Return Value
+## Return Value
 
 The default data store for websites.
 
-#### Discussion
+## Discussion
 
 A web view configured with the default data store saves website data persistenly to disk. Use this data store to retain the state of web content between browsing sessions.
 

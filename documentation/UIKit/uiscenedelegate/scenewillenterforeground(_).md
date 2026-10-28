@@ -28,7 +28,7 @@ optional func sceneWillEnterForeground(_ scene: UIScene)
 - [About the app launch sequence](../about-the-app-launch-sequence.md)
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 To use this method, you must implement the [`UISceneDelegate`](../uiscenedelegate.md) protocol and configure scenes for your app (see [Specifying the scenes your app supports](../specifying-the-scenes-your-app-supports.md)).
 

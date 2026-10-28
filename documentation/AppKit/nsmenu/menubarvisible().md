@@ -19,7 +19,7 @@ class func menuBarVisible() -> Bool
 + (BOOL) menuBarVisible;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the menu bar is visible and selectable, otherwise [`false`](../../Swift/false.md).
 

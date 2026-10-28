@@ -24,7 +24,7 @@ var isOtherAudioPlaying: Bool { get }
 @property (readonly, getter=isOtherAudioPlaying) BOOL otherAudioPlaying;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns [`true`](../../Swift/true.md) if any other audio is playing, including audio from an app using the [`ambient`](./category-swift.struct/ambient.md) category. Most apps should instead use the [`secondaryAudioShouldBeSilencedHint`](./secondaryaudioshouldbesilencedhint.md) property, because it’s more restrictive when considering whether primary audio from another app is playing.
 

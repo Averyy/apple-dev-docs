@@ -25,7 +25,7 @@ func NSFreeMapTable(_ table: consuming NSMapTable<AnyObject, AnyObject>)
 extern void NSFreeMapTable(NSMapTable *table);
 ```
 
-#### Discussion
+## Discussion
 
 Releases each key and value of the specified map table and frees the table itself.
 

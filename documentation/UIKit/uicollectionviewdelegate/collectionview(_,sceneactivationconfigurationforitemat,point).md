@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, sceneActivation
 - (UIWindowSceneActivationConfiguration *) collectionView:(UICollectionView *) collectionView sceneActivationConfigurationForItemAtIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIWindowScene.ActivationConfiguration`](../uiwindowscene/activationconfiguration.md) object that facilitates expanding the cell into a new scene. Return `nil` to prevent the interaction from starting.
 

@@ -26,7 +26,7 @@ var preferredBehavioralStyle: UIBehavioralStyle { get set }
 
 - [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the behavioral style for the slider. If the value of the property is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md), use the [`behavioralStyle`](./behavioralstyle.md) property to determine the actual style.
 

@@ -22,4 +22,4 @@ init(algorithmKind: CMFormatDescription.Extensions.Value.CameraCalibrationDataLe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind:identifier:domain:role:distortioncoefficients:xframeadjustmentspolynomial:yframeadjustmentspolynomial:radialanglelimit:intrinsicmatrix:intrinsicmatrixprojectionoffset:intrinsicmatrixreferencedimensions:extrinsicoriginsour-4ejrv)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init%28algorithmkind:identifier:domain:role:distortioncoefficients:xframeadjustmentspolynomial:yframeadjustmentspolynomial:radialanglelimit:intrinsicmatrix:intrinsicmatrixprojectionoffset:intrinsicmatrixreferencedimensions:extrinsicoriginsour-4ejrv)*

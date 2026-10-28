@@ -19,7 +19,7 @@ func writeObjects(_ objects: [any NSPasteboardWriting]) -> Bool
 - (BOOL) writeObjects:(NSArray<id<NSPasteboardWriting>> *) objects;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the array was successfully added, otherwise [`false`](../../Swift/false.md).
 

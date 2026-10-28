@@ -22,7 +22,7 @@ A date picker style that displays the components in a compact, textual format.
 
 Available when `Self` is `CompactDatePickerStyle`.
 
-#### Discussion
+## Discussion
 
 Use this style when space is constrained and users expect to make specific date and time selections. Some variants may include rich editing controls in a pop up.
 

@@ -20,7 +20,7 @@ var targetAlignment: ARRaycastQuery.TargetAlignment { get }
 @property (nonatomic, readonly) ARRaycastTargetAlignment targetAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The available options are horizontal, vertical, or any.
 

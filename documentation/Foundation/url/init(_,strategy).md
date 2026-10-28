@@ -21,7 +21,7 @@ Creates a URL instance by parsing the provided input in accordance with a parse 
 init<T>(_ value: T.ParseInput, strategy: T) throws where T : ParseStrategy, T.ParseOutput == URL
 ```
 
-#### Discussion
+## Discussion
 
 The following example parses a URL string, with a custom strategy that provides a default value for the port component if the source string doesn’t specify one.
 

@@ -24,7 +24,7 @@ class INMediaDestinationResolutionResult
 @interface INMediaDestinationResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INMediaDestinationResolutionResult`](./inmediadestinationresolutionresult.md) object when resolving parameters containing an [`INMediaDestinationReference`](./inmediadestinationreference.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

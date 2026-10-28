@@ -21,7 +21,7 @@ Returns a new shape with the specified size.
 init(arrayLiteral: BNNS.Shape.ArrayLiteralElement...)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns a shape with the default layout for the rank that’s equal to the count of `arrayLiteral`. The default layouts for each dimensionality are:
 

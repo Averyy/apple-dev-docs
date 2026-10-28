@@ -22,11 +22,11 @@ nonisolated
 func symbolVariant(_ variant: SymbolVariants) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies the specified symbol variant or variants to itself and its child views.
 
-#### Discussion
+## Discussion
 
 When you want all the [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) in a part of your app’s user interface to use the same variant, use the `symbolVariant(_:)` modifier with a [`SymbolVariants`](../symbolvariants.md) value, like [`fill`](../symbolvariants/fill-swift.type.property.md):
 

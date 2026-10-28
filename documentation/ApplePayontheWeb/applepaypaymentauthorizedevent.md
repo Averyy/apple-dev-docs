@@ -16,7 +16,7 @@ An event object that contains the token used to authorize a payment.
 interface ApplePayPaymentAuthorizedEvent
 ```
 
-#### Overview
+## Overview
 
 The event handler [`onpaymentauthorized`](./applepaysession/onpaymentauthorized.md) receives this event object when a payment is authorized.
 

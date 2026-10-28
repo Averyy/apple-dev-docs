@@ -21,7 +21,7 @@ Removes the elements at the given indices.
 mutating func removeSubranges(_ subranges: RangeSet<Self.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 For example, this code sample finds the indices of all the vowel characters in the string, and then removes those characters.
 

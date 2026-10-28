@@ -20,7 +20,7 @@ func addPointParameter(withName name: String, parameterID: UInt32, defaultX: Dou
 - (BOOL) addPointParameterWithName:(NSString *) name parameterID:(UInt32) parameterID defaultX:(double) defaultX defaultY:(double) defaultY parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a position parameter; `NO` otherwise.
 

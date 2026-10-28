@@ -19,11 +19,11 @@ class var adobeRGB1998: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * adobeRGB1998ColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color-additive color space has red, green, blue, and alpha components.
 
-#### Discussion
+## Discussion
 
 The Adobe RGB (1998) color space was designed to encompass most of the colors achievable on CMYK color printers, but by using RGB primary colors on a device such as the computer display. For more information on this color space, go to [http://www.adobe.com/digitalimag/adobergb.html](http://www.adobe.com/digitalimag/adobergb.html).
 

@@ -24,11 +24,11 @@ optional func collectionView(_ collectionView: UICollectionView, contextMenuConf
 - (UIContextMenuConfiguration *) collectionView:(UICollectionView *) collectionView contextMenuConfigurationForItemAtIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A contextual menu configuration object describing the menu to be presented. Returning `nil` prevents the interaction from beginning. Returning an empty configuration object causes the interaction to begin, and then end with a cancellation effect.
 
-#### Discussion
+## Discussion
 
 You can use the cancellation effect from returning an empty configuration to indicate to users that it’s possible for a menu to be presented from this item, but that there are no actions to present at this particular time.
 

@@ -21,7 +21,7 @@ A type that represents flattened Rich Text Format Directory documents.
 extern UTType * const UTTypeFlatRTFD;
 ```
 
-#### Discussion
+## Discussion
 
 The pasteboard uses a flattened Rich Text Format Directory format.
 

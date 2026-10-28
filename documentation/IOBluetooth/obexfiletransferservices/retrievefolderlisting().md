@@ -19,11 +19,11 @@ func retrieveFolderListing() -> OBEXError
 - (OBEXError) retrieveFolderListing;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess or kOBEXSessionBusyError initially. Further results returned through the fileTransferServicesRetrieveFolderListingComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘ls’.
 

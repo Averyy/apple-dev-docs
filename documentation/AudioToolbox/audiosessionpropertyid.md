@@ -25,7 +25,7 @@ typealias AudioSessionPropertyID = UInt32
 typedef UInt32 AudioSessionPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 Each Audio Session property has a four-character identifier. The properties are listed in [Audio Session Property Identifiers](./api-1618455-audio-session-property-identifie.md).
 

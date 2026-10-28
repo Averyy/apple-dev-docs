@@ -19,7 +19,7 @@ func doCommand(by aSelector: Selector!, command infoDictionary: [AnyHashable : A
 - (void) doCommandBySelector:(SEL) aSelector commandDictionary:(NSDictionary *) infoDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation checks if the input controller object (that is, self) responds to the selector. If so, it sends the message [`perform(_:with:)`](../../ObjectiveC/nsobjectprotocol/perform%28_,with%29.md) to the input controller class. The object parameter in that case is the `infoDictionary` parameter.
 

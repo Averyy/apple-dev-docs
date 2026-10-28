@@ -16,7 +16,7 @@ A collection in which the child elements serve different purposes in a single de
 kIOHIDElementCollectionTypeApplication
 ```
 
-#### Discussion
+## Discussion
 
 A keyboard that contains an integrated pointing device might define separate application collections for the keyboard and pointing data.
 

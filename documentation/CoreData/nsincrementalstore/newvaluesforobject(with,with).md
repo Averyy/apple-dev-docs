@@ -25,11 +25,11 @@ func newValuesForObject(with objectID: NSManagedObjectID, with context: NSManage
 - (NSIncrementalStoreNode *) newValuesForObjectWithID:(NSManagedObjectID *) objectID withContext:(NSManagedObjectContext *) context error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An incremental store node encapsulating the persistent external values of the object with object ID `objectID`, or `nil` if the corresponding object cannot be found.
 
-#### Discussion
+## Discussion
 
 The returned node should include all attributes values and may include to-one relationship values as instances of [`NSManagedObjectID`](../nsmanagedobjectid.md).
 

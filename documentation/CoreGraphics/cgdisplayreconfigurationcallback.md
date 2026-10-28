@@ -20,11 +20,11 @@ typealias CGDisplayReconfigurationCallBack = (CGDirectDisplayID, CGDisplayChange
 typedef void (*)(unsigned int, enum CGDisplayChangeSummaryFlags, void *) CGDisplayReconfigurationCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your function `MyDisplayReconfigurationCallBack`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 To register a display reconfiguration callback function, you call the function [`CGDisplayRegisterReconfigurationCallback(_:_:)`](./cgdisplayregisterreconfigurationcallback%28_,_%29.md). Quartz invokes your callback function when:
 

@@ -19,11 +19,11 @@ func availableType(from types: [NSPasteboard.PasteboardType]) -> NSPasteboard.Pa
 - (NSPasteboardType) availableTypeFromArray:(NSArray<NSString *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 The first pasteboard type in `types` that is available on the pasteboard, or `nil` if the receiver does not contain any of the types in `types`.
 
-#### Discussion
+## Discussion
 
 You use this method to determine the best representation available on the pasteboard. For example, if your application supports RTFD, RTF, and string data, then you might invoke the method as follows:
 

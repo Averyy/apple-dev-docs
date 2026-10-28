@@ -15,7 +15,7 @@ An event that indicates a request to play a media item in a different index is r
 attribute  shouldChangeToMediaAtIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The listener is passed an event object with the following attributes:
 

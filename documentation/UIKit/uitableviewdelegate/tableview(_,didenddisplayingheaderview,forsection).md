@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, didEndDisplayingHeaderView vie
 - (void) tableView:(UITableView *) tableView didEndDisplayingHeaderView:(UIView *) view forSection:(NSInteger) section;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect when a header view is removed from a table view, as opposed to monitoring the view itself to see when it appears or disappears.
 

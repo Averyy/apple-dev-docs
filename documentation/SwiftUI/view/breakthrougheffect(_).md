@@ -16,13 +16,13 @@ nonisolated
 func breakthroughEffect(_ effect: BreakthroughEffect) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Breakthrough is an effect allowing elements to be visible to the user even when other app content (3D models, UI elements) is positioned in front. The way the element breaks through content in front depends on the chosen [`BreakthroughEffect`](../breakthrougheffect.md).
 
 This modifier can be used in a number of scenarios, including ornaments and `RealityView` attachments to have them break through in their entirety.
 
-##### Regular Elements
+### Regular Elements
 
 To have SwiftUI element break through content in front, apply the `breakthroughEffect` modifier directly to the View:
 
@@ -31,7 +31,7 @@ ResizeHandle()
     .breakthroughEffect(.subtle)
 ```
 
-##### Ornaments
+### Ornaments
 
 When applied to the whole content of an ornament, the ornament (including its background) will break through content in front:
 
@@ -44,7 +44,7 @@ Text("A view with an ornament")
     }
 ```
 
-##### RealityView Attachments
+### RealityView Attachments
 
 Similarly, a `RealityView` `Attachment` can break through other entities in the RealityView, including the entity it is attached to:
 
@@ -55,7 +55,7 @@ Attachment(id: "example") {
 }
 ```
 
-##### Presentations
+### Presentations
 
 Most system presentations appear with a breakthrough effect by default. For these cases, you can customize the type of effect by applying the [`presentationBreakthroughEffect(_:)`](./presentationbreakthrougheffect%28_%29.md) modifier to the content of the presentation, like in the following example:
 

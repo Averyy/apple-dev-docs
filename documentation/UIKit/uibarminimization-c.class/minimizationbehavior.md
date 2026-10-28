@@ -19,7 +19,7 @@ The minimization behavior.
 @property (nonatomic, assign) UIBarMinimizationBehavior minimizationBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 When the navigation bar minimizes, an integrated top tab bar will also minimize.
 

@@ -13,7 +13,7 @@
 kINQUIRY_PRODUCT_REVISION_LEVEL_Length = 4
 ```
 
-#### Discussion
+## Discussion
 
 Size of PRODUCT_REVISION_LEVEL field.
 

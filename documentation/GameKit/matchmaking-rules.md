@@ -4,7 +4,7 @@
 
 Game Center applies different type of rules you create in a particular order to find the best matches.
 
-#### Overview
+## Overview
 
 With matchmaking rules, you have finer control over automatch of players to fill empty slots in peer-to-peer and hosted match requests. During development, you use the matchmaking rules APIs to upload your rules to the Game Center server. You group rules into rule sets and assign the rule sets to queues. In your game code, you configure match requests to use your set of matchmaking rules by specifying a queue. Game Center applies your rules to all the match requests in the queue to fill the empty slots.
 
@@ -14,7 +14,7 @@ You group rules into sets for each configuration, feature, or purpose in your ga
 
 For more information on this feature, see [Meet rule-based matchmaking in Game Center](https://developer.apple.com/videos/play/tech-talks/111376/).
 
-##### The matchmaking rules algorithm
+### The matchmaking rules algorithm
 
 When finding players using matchmaking rules, Game Center applies four different types of rules to match requests in the queue, along with performing other steps in the algorithm. Game Center applies the expression of the rule, which is a [JMESPath](https://jmespath.org) formatted string with some Game Center matchmaking function additions. Depending on the type of rule, Game Center evaluates the expression on two or more match requests in the queue.
 

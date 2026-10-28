@@ -22,7 +22,7 @@ var origin: AVCaptionPoint { get }
 @property (nonatomic, readonly) AVCaptionPoint origin;
 ```
 
-#### Discussion
+## Discussion
 
 The caption’s origin may not provide undefined [`x`](../avcaptionpoint/x.md) and [`y`](../avcaptionpoint/y.md) values, which indicates the region doesn’t have positioning information for that dimension.
 

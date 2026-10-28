@@ -23,11 +23,11 @@ convenience init(named name: UNNotificationSoundName)
 + (instancetype) soundNamed:(UNNotificationSoundName) name;
 ```
 
-#### Return Value
+## Return Value
 
 A sound object representing the custom sound.
 
-#### Discussion
+## Discussion
 
 This method searches for sound files in the following locations, in order:
 

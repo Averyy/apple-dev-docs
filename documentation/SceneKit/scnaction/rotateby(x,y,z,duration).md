@@ -25,11 +25,11 @@ class func rotateBy(x xAngle: CGFloat, y yAngle: CGFloat, z zAngle: CGFloat, dur
 + (SCNAction *) rotateByX:(CGFloat) xAngle y:(CGFloat) yAngle z:(CGFloat) zAngle duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`rotation`](../scnnode/rotation.md) property animates to the new angle.
 

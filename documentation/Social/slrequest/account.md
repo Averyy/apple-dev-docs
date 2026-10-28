@@ -22,7 +22,7 @@ var account: ACAccount! { get set }
 @property (nonatomic, retain) ACAccount * account;
 ```
 
-#### Discussion
+## Discussion
 
 The account is used to sign a request with OAuth1 services or to add an access token for OAuth2 services. By associating the account with the request, the necessary tokens are added automatically. The default value is `nil`.
 

@@ -25,7 +25,7 @@ class AVPlayerItemAccessLog
 @interface AVPlayerItemAccessLog : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `AVPlayerItemAccessLog` object accumulates key metrics about network playback and presents them as a collection of [`AVPlayerItemAccessLogEvent`](./avplayeritemaccesslogevent.md) instances. Each event instance collates the data that relates to each uninterrupted period of playback.
 

@@ -25,7 +25,7 @@ let kCGImagePropertyWebPUnclampedDelayTime: CFString
 extern CFStringRef const kCGImagePropertyWebPUnclampedDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value.
 

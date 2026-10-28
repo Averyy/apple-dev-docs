@@ -26,7 +26,7 @@ let HMCharacteristicTypeSerialNumber: String
 extern NSString * const HMCharacteristicTypeSerialNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a string.
 

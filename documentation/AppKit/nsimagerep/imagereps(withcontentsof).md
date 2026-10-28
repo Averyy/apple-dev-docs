@@ -19,11 +19,11 @@ class func imageReps(withContentsOf url: URL) -> [NSImageRep]?
 + (NSArray<NSImageRep *> *) imageRepsWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An array of image representation objects. The array contains one object for each image in the data at the specified URL.
 
-#### Discussion
+## Discussion
 
 If sent to the `NSImageRep` class object, this method returns an array of objects (all newly allocated instances of a subclass of `NSImageRep`) that have been initialized with the contents of the specified URL. If sent to a subclass of `NSImageRep` that recognizes the data at the specified URL, it returns an array of objects (all instances of that subclass) that have been initialized with the contents of that URL.
 

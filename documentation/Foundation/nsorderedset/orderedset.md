@@ -21,11 +21,11 @@ Creates and returns an empty ordered set
 + (instancetype) orderedSet;
 ```
 
-#### Return Value
+## Return Value
 
 A new empty ordered set.
 
-#### Discussion
+## Discussion
 
 This method is declared primarily for the use of mutable subclasses of `NSOrderedSet`.
 

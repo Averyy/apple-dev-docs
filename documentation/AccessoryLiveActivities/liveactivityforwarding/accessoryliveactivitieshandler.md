@@ -20,7 +20,7 @@ protocol AccessoryLiveActivitiesHandler : Sendable
 
 - [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to receive forwarded Live Activity content and life cycle updates in your [`AccessoryDataProvider`](../../AccessoryTransportExtension/accessorydataprovider.md) extension.
 

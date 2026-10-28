@@ -29,7 +29,7 @@ dictionary ApplePayShippingContactUpdate {
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 You must provide an updated total after shipping contact information changes. You can optionally provide a list of errors, updated shipping methods, or updated line items.
 

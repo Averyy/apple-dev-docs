@@ -15,7 +15,7 @@ Enter the kernel debugger.
 void Debugger(const char *reason);
 ```
 
-#### Discussion
+## Discussion
 
 This function freezes the kernel and enters the builtin debugger. It may not be possible to exit the debugger without a second machine.
 

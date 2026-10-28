@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldAddMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 If the client returns [`true`](../../Swift/true.md) the ruler view accepts the new marker and begins tracking its movement; if the client returns [`false`](../../Swift/false.md) the ruler view refuses the new marker.
 

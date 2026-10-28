@@ -22,7 +22,7 @@ Produces an erased `any Actor` reference to this known to be local distributed a
 var asLocalActor: any Actor { get }
 ```
 
-#### Discussion
+## Discussion
 
 Since this method is not distributed, it can only be invoked when the underlying distributed actor is known to be local, e.g. from a context that is isolated to this actor.
 

@@ -25,11 +25,11 @@ func decodeInt64(forKey key: String) -> Int64
 - (int64_t) decodeInt64ForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The 64-bit integer value associated with the key `key`. Returns `0` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 If the archived value was encoded with a different size but is still an integer, the type is coerced.
 

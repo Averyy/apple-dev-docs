@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two coordinates are equal.
 equals(anotherCoordinate: CoordinateData): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the coordinate specified by `anotherCoordinate` equals this coordinate; otherwise, `false`.
 

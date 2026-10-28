@@ -21,7 +21,7 @@ The default property values for a layout.
 static var layoutProperties: LayoutProperties { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement the [`layoutProperties`](./layoutproperties.md) method in your custom layout, the protocol uses this default implementation instead, which returns a [`LayoutProperties`](../layoutproperties.md) instance with default values. The properties instance contains information about the layout container, like a [`stackOrientation`](../layoutproperties/stackorientation.md) property that indicates the container’s major axis.
 

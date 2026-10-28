@@ -25,7 +25,7 @@ var attenuationEndDistance: CGFloat { get set }
 @property (nonatomic) CGFloat attenuationEndDistance;
 ```
 
-#### Discussion
+## Discussion
 
 You can apply attenuation to omnidirectional lights and spotlights, causing their intensity to diminish over a specified range of distances. At distances less than the start distance, the light’s illumination is at full intensity. At distances greater than the end distance, the light provides no illumination. At distances in between the start and end distance, the [`attenuationFalloffExponent`](./attenuationfalloffexponent.md) property defines the transition from full illumination to no illumination.
 

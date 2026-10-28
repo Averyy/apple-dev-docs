@@ -24,7 +24,7 @@ var renderTransform: CGAffineTransform { get }
 @property (nonatomic, readonly) CGAffineTransform renderTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The transform to apply to the source image incorporating the [`renderScale`](./renderscale.md), [`pixelAspectRatio`](./pixelaspectratio.md), and [`edgeWidths`](./edgewidths.md).
 

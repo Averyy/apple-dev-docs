@@ -20,7 +20,7 @@ A Boolean value that indicates whether an app can use the Critical Messaging API
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Critical Messaging entitlement to your app by following these steps:
 

@@ -23,7 +23,7 @@ var kCTFontTableHdmx: Int { get }
 kCTFontTableHdmx
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for horizontal device metrics.
 

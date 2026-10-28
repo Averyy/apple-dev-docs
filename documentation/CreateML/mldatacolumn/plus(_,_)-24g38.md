@@ -44,7 +44,7 @@ static func + (a: MLDataColumn<Double>, b: MLDataColumn<Double>) -> MLDataColumn
 static func + (a: MLDataColumn<Int>, b: Int) -> MLDataColumn<Int>
 ```
 
-#### Return Value
+## Return Value
 
 A new column of integers if the columns are the same size; otherwise an invalid column.
 

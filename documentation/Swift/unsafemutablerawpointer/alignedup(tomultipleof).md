@@ -21,11 +21,11 @@ Obtain the next pointer whose bit pattern is a multiple of `alignment`.
 func alignedUp(toMultipleOf alignment: Int) -> UnsafeMutableRawPointer
 ```
 
-#### Return Value
+## Return Value
 
 A pointer aligned to `alignment`.
 
-#### Discussion
+## Discussion
 
 If the bit pattern of `self` is a multiple of `alignment`, this function returns `self`.
 

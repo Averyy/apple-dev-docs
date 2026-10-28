@@ -20,7 +20,7 @@ var sortSeries: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sortSeries;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the media item isn’t an episode in a TV series, or if the TV series doesn’t have a sorting name.
 

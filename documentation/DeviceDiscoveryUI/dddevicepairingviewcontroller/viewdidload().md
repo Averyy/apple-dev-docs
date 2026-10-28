@@ -18,7 +18,7 @@ Configures the view after the framework loads the view controller’s view into 
 @preconcurrency override final func viewDidLoad()
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks to immediately follow the setting of the view property.
 

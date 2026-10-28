@@ -13,11 +13,11 @@ virtual bool getNextObjectForIterator(
  OSObject **nextObject) const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if an object was found, `false` otherwise.
 
-#### Overview
+## Overview
 
 This pure virtual member function, which subclasses must implement, is called by an OSCollectionIterator to get the next object for a given iteration context. The collection object should interpret `iterationContext` appropriately, advance the context from its current object to the next object (if it exists), return that object by reference in `nextObject`, and return `true` for the function call. If there is no next object, the collection object must return `false`.
 

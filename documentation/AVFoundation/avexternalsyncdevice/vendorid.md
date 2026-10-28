@@ -23,7 +23,7 @@ var vendorID: UInt32 { get }
 @property (nonatomic, readonly) UInt32 vendorID;
 ```
 
-#### Discussion
+## Discussion
 
 This `UInt32` value is provided by the hardware vendor, and returns 0 if not available.
 

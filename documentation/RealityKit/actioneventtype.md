@@ -20,7 +20,7 @@ A set of events that an action responds to.
 struct ActionEventType
 ```
 
-#### Overview
+## Overview
 
 Actions can respond to specific events with one or more custom event handlers that you associate with each event type.
 

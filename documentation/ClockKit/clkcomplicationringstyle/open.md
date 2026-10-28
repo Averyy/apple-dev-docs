@@ -21,7 +21,7 @@ case open
 CLKComplicationRingStyleOpen
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you want to convey a value that’s in between two other values that don’t represent an absolute minimum or maximum. For example, you might use this style for a temperature gauge or speedometer.
 

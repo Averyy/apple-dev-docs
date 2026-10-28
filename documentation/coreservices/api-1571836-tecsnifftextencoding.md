@@ -15,11 +15,11 @@ Analyzes a text stream and returns the probable encodingsin a ranked list, based
 OSStatus TECSniffTextEncoding(TECSnifferObjectRef encodingSniffer, ConstTextPtr inputBuffer, ByteCount inputBufferLength, TextEncoding testEncodings[], ItemCount numTextEncodings, ItemCount numErrsArray[], ItemCount maxErrs, ItemCount numFeaturesArray[], ItemCount maxFeatures);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 An error indicates a code point or sequence that is illegalin the specified encoding. A feature indicates the presence of asequence that is characteristic of that encoding.
 

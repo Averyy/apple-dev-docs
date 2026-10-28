@@ -29,7 +29,7 @@ class SKLightNode
 
 - [Lighting a Sprite with Light Nodes](./lighting-a-sprite-with-light-nodes.md)
 
-#### Overview
+## Overview
 
 To use lighting, add a light node to the scene. Because lights are nodes, they can be moved or perform actions just like other nodes. However, light nodes are invisible except through their effects on sprite nodes configured to interact with them. When a sprite node is affected by a light, the lighting properties of the light node and the lighting properties of the sprite node determine what is rendered. Lighting may affect how unrelated portions of the scene are rendered. For example, if a sprite is configured to cast a shadow, the shadow is rendered on top of other content.
 

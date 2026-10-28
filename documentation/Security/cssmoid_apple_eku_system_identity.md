@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EKU_SYSTEM_IDENTITY;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

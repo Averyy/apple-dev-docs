@@ -24,11 +24,11 @@ func JSObjectHasPropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ p
 bool JSObjectHasPropertyForKey(JSContextRef ctx, JSObjectRef object, JSValueRef propertyKey, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the object has a property with a name that matches `propertyKey`; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This function is the same as performing `propertyKey in object` from JavaScript.
 

@@ -18,7 +18,7 @@ A view that denotes a completion state. The style of the view differs based on t
 struct RectangularCompletionView<Content> where Content : View
 ```
 
-### Style
+## Style
 
 The view supports styling using `careKitStyle(_:)`.
 

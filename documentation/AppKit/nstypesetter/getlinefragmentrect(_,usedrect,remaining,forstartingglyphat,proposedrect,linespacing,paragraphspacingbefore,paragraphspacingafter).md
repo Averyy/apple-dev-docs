@@ -19,7 +19,7 @@ func getLineFragmentRect(_ lineFragmentRect: NSRectPointer!, usedRect lineFragme
 - (void) getLineFragmentRect:(NSRectPointer) lineFragmentRect usedRect:(NSRectPointer) lineFragmentUsedRect remainingRect:(NSRectPointer) remainingRect forStartingGlyphAtIndex:(NSUInteger) startingGlyphIndex proposedRect:(NSRect) proposedRect lineSpacing:(CGFloat) lineSpacing paragraphSpacingBefore:(CGFloat) paragraphSpacingBefore paragraphSpacingAfter:(CGFloat) paragraphSpacingAfter;
 ```
 
-#### Discussion
+## Discussion
 
 The height of the line fragment is determined using `lineSpacing`, `paragraphSpacingBefore`, and `paragraphSpacingAfter` as well as `proposedRect`. The width for `lineFragmentUsedRect` is set to the `lineFragmentRect` width. In the standard implementation, paragraph spacing is included in the line fragment rectangle but not the line fragment used rectangle; line spacing is included in both.
 

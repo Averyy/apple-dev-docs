@@ -20,7 +20,7 @@ An action that animates the blend factor of an entity’s billboard component.
 struct BillboardAction
 ```
 
-#### Overview
+## Overview
 
 This action animates the [`blendFactor`](./billboardcomponent/blendfactor.md) value of an entity’s [`BillboardComponent`](./billboardcomponent.md).
 

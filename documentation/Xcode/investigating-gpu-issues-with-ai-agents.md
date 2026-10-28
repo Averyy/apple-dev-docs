@@ -5,7 +5,7 @@
 
 Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
-#### Overview
+## Overview
 
 To help you investigate issues in GPU traces, the `gpudebug` command-line tool provides a text-based, self-discoverable interface that you can use programmatically, making it well-suited for AI agents.
 
@@ -13,7 +13,7 @@ Each row in the `list` command’s output shows node names and available actions
 
 > 💡 **Tip**: For AI agents, point them at `man gpudebug` and a `.gputrace` file. That’s all they need to start investigating autonomously.
 
-#### Reuse a session for multiple commands
+## Reuse a session for multiple commands
 
 For any investigation involving more than one command, create a session once and reuse it. Trace loading and replayer startup can take seconds to minutes depending on the size of the trace; reusing a session avoids paying that cost on every invocation:
 
@@ -29,7 +29,7 @@ Session 412 created.
 
 Each `-s` invocation reuses the already-loaded trace and replayer instantly.
 
-#### Run one-off queries with `--oneshot`
+## Run one-off queries with `--oneshot`
 
 For an isolated single-command query where session management is a burden, use `--oneshot`. The option creates a session, runs the commands, and terminates, but it pays the full trace load cost on every invocation:
 

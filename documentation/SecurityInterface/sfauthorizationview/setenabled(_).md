@@ -19,7 +19,7 @@ func setEnabled(_ enabled: Bool)
 - (void) setEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A disabled view is visible but dimmed.
 

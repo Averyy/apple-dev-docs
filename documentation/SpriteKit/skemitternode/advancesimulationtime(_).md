@@ -25,7 +25,7 @@ func advanceSimulationTime(_ sec: TimeInterval)
 - (void) advanceSimulationTime:(NSTimeInterval) sec;
 ```
 
-#### Discussion
+## Discussion
 
 Once added to a scene, an emitter node automatically creates new particles in new animation frames. This method allows you to artificially advance a running emitter’s simulation, causing it to generate new particles and advance any existing particles. The most common use for this method is to prepopulate an emitter node with particles after it is first added to a scene.
 

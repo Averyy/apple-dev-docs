@@ -25,7 +25,7 @@ struct SCNBillboardAxis
 enum SCNBillboardAxis : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The figure below shows the effects of constraining various axes.
 

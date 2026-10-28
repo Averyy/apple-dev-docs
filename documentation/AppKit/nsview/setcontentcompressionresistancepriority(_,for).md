@@ -19,7 +19,7 @@ func setContentCompressionResistancePriority(_ priority: NSLayoutConstraint.Prio
 - (void) setContentCompressionResistancePriority:(NSLayoutPriority) priority forOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
-#### Discussion
+## Discussion
 
 Custom views should set default values for both orientations on creation, based on their content, typically to [`defaultLow`](../nslayoutconstraint/priority-swift.struct/defaultlow.md) or [`defaultHigh`](../nslayoutconstraint/priority-swift.struct/defaulthigh.md). When creating user interfaces, the layout designer can modify these priorities for specific views when the overall layout design requires different tradeoffs than the natural priorities of the views being used in the interface.
 

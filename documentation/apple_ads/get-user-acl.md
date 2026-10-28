@@ -11,11 +11,11 @@ Fetches roles and organizations that the API has access to.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 The API uses a user access control list (ACL) for policy-based authorization to determine access to resources. The Get User ACL call fetches roles in all organizations. Each role has access to all organizations or a subset of them.
 
-##### Get user ACL example
+### Get user ACL example
 
 **Request**:
 
@@ -44,7 +44,7 @@ GET https://api.searchads.apple.com/api/v5/acls
 }
 ```
 
-##### Campaign Groups
+### Campaign Groups
 
 The API treats your `orgId` like a campaign group. If you need to manage Apple Ads for multiple clients, or if you need to restrict user access to a subset of your campaigns, you can create additional campaign groups within your account. Otherwise, you can create and manage all your campaigns under your default `orgId` and campaign group.
 

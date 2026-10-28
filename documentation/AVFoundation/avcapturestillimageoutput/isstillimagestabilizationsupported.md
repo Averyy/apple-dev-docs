@@ -21,7 +21,7 @@ var isStillImageStabilizationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isStillImageStabilizationSupported) BOOL stillImageStabilizationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 The  [`automaticallyEnablesStillImageStabilizationWhenAvailable`](./automaticallyenablesstillimagestabilizationwhenavailable.md) property can only be set if this property returns [`true`](../../Swift/true.md).
 

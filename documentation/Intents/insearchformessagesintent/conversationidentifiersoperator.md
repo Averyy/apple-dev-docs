@@ -31,7 +31,7 @@ var conversationIdentifiersOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator conversationIdentifiersOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the conversation identifiers listed in the [`conversationIdentifiers`](./conversationidentifiers.md) property.
 

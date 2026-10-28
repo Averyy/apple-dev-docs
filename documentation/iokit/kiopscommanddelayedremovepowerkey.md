@@ -16,7 +16,7 @@ Command to give a UPS when it should remove power from its AC plugs in a specifi
 #define kIOPSCommandDelayedRemovePowerKey
 ```
 
-#### Discussion
+## Discussion
 
 - The matching argument should be a CFNumber of kCFNumberIntType specifying when the UPS should
 - remove power from its AC power ports.

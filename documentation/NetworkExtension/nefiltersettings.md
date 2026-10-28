@@ -19,7 +19,7 @@ class NEFilterSettings
 @interface NEFilterSettings : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NEFilterDataProvider`](./nefilterdataprovider.md) instances use [`NEFilterSettings`](./nefiltersettings.md) to communicate the desired settings for the filter to the framework. The framework takes care of applying the contained settings to the system.
 

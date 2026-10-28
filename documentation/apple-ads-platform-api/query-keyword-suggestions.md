@@ -9,13 +9,13 @@ Query keyword suggestions based on search terms and App Store countries or regio
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Each [`KeywordSuggestion`](./keywordsuggestion.md) result contains `text` (the suggested keyword string) and `popularity` (a relative score). Sort by `popularity DESC` and use `pagination` to page through results.
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -24,11 +24,11 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | `terms` | array of strings | `IN` | Optional. Specific search terms to get suggestions for. |
 | `countriesOrRegions` | array of strings | `IN` | Optional. App Store country or region codes to scope results to. |
 
-#### Payload Examples
+## Payload Examples
 
 This example queries keyword suggestions for an app scoped to the US and GB App Store countries or regions, seeded by specific search terms. The response returns suggested keyword strings with their relative popularity scores.
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/keywords/query
@@ -69,7 +69,7 @@ POST /v1/suggestions/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

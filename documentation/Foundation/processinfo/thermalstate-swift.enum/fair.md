@@ -25,7 +25,7 @@ case fair
 NSProcessInfoThermalStateFair
 ```
 
-#### Discussion
+## Discussion
 
 The system takes steps to reduce thermal state, like running fans and stopping background services that aren’t doing work immediately needed by the user.
 

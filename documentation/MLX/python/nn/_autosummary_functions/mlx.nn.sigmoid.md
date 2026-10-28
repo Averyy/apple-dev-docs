@@ -6,7 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.sigmoid
 
-**class sigmoid(*x*)**
-: Applies the sigmoid function.
+```python
+class sigmoid(x)
+```
+
+Applies the sigmoid function.
 
 \[\text{Sigmoid}(x) = \sigma(x) = \frac{1}{1 + \exp(-x)}\]

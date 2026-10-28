@@ -22,7 +22,7 @@ case unspecified
 UIUserInterfaceLevelUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option when you want to follow the inherited level.
 

@@ -28,7 +28,7 @@ class PHAssetResource
 
 - [Uploading asset resources in the background](../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Overview
+## Overview
 
 Each [`PHAsset`](./phasset.md) object references one or more resources. Use these objects to work with those resources directly, like when backing up or restoring assets.
 

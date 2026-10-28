@@ -24,7 +24,7 @@ var contentScaleFactor: CGFloat { get }
 @property (atomic, readonly) CGFloat contentScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The scale factor determines how the overlay renders map content from the logical coordinate space (in points) to the device coordinate space (in pixels). This value is typically either `1.0` or `2.0`. Higher scale factors indicate that each point represents more than one pixel on the screen. For example, if the scale factor is `2.0` and the drawing rectangle size is 50 x 50 points, the size of the underlying area is 100 x 100 pixels.
 

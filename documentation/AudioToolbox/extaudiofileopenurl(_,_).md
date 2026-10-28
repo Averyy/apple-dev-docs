@@ -24,7 +24,7 @@ func ExtAudioFileOpenURL(_ inURL: CFURL, _ outExtAudioFile: UnsafeMutablePointer
 extern OSStatus ExtAudioFileOpenURL(CFURLRef inURL, ExtAudioFileRef*outExtAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

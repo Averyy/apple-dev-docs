@@ -25,7 +25,7 @@ enum SCNChamferMode
 enum SCNChamferMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929773@2x.png)
 

@@ -19,7 +19,7 @@ Indicates whether the media source is ready to begin playback.
 var isReady: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property should transition from `false` to `true` once the source has loaded enough data to start playback, and should not revert. Use [`isBuffering`](./isbuffering.md) to track temporary stalls that may occur after this point.
 

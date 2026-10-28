@@ -12,11 +12,11 @@ virtual UInt32 getLUNumber(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the Logical Unit Number.
 
-#### Overview
+## Overview
 
 Each LUN has a number to uniquely identify it on a device. This method returns this value in a UInt32.
 

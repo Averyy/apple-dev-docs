@@ -24,11 +24,11 @@ class func morphologyGradient() -> any CIFilter & CIMorphologyGradient
 + (CIFilter<CIMorphologyGradient> *) morphologyGradientFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the morphology gradient filter to an image. The effect uses the `radius` to compute and highlight edges of items within the image.
 

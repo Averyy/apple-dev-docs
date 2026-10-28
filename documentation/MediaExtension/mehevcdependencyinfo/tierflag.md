@@ -19,7 +19,7 @@ var tierFlag: Int16 { get set }
 @property (nonatomic) int16_t tierFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_TierFlag`](../../CoreMedia/kcmhevctemporallevelinfokey_tierflag.md) sample buffer attachment, and is `-1` if this information isn’t available.
 

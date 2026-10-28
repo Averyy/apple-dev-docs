@@ -20,7 +20,7 @@ struct AEAppleMenuItem
 typedef NSString * AEAppleMenuItem;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with [`allowedAppleMenuItems`](./aeassessmentconfiguration/allowedapplemenuitems.md) to control which Apple menu items are visible during an assessment session.
 

@@ -22,7 +22,7 @@ init(cglContext ctx: UnsafeMutableRawPointer, options dict: [AnyHashable : Any]?
 + (CARenderer *) rendererWithCGLContext:(void *) ctx options:(NSDictionary *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `CARenderer` that will use `ctx` as the render target.
 

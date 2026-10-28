@@ -25,7 +25,7 @@ init(forReading fileURL: URL) throws
 - (instancetype) initForReading:(NSURL *) fileURL error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFile` instance you use for reading.
 

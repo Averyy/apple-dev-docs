@@ -21,7 +21,7 @@ string refundPreference
 - `GRANT_FULL`: You prefer that the App Store grants the refund in full.
 - `GRANT_PRORATED`: You prefer that the App Store grants a prorated refund.
 
-#### Discussion
+## Discussion
 
 Use these values in the `refundPreference` field of a [`ConsumptionRequest`](./consumptionrequest.md).
 

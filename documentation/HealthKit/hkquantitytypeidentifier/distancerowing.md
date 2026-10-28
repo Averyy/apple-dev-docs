@@ -24,7 +24,7 @@ static let distanceRowing: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceRowing;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor rowing workouts, the system automatically collects distance samples on Apple Watch.
 

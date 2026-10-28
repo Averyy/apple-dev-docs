@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DIsUniform(SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is affine and uniform over all dimensions.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is affine and scales equally over all dimensions.
 

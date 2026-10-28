@@ -23,7 +23,7 @@ optional func pasteAndSearch(_ sender: Any?)
 - (void) pasteAndSearch:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Paste and Search command from an editing menu. Your implementation should read the data from the pasteboard and begin a search based on the content.
 

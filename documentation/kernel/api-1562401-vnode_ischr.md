@@ -15,7 +15,7 @@ Determine if a vnode is a character device special file.
 int vnode_ischr(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is of type VCHR, 0 otherwise.
 

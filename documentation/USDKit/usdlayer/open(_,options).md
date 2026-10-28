@@ -20,11 +20,11 @@ Returns an already-loaded layer at the identifier, or opens it from the resolved
 static func open(_ identifier: String, options: USDLayer.OpenOptions = []) throws -> USDLayer
 ```
 
-#### Return Value
+## Return Value
 
 The opened layer.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the layer cannot be opened or created.
 

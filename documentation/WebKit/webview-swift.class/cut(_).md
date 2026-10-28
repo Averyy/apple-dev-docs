@@ -19,7 +19,7 @@ func cut(_ sender: Any?)
 - (void) cut:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method deletes the selected content and places it onto the general pasteboard, in as many formats as the receiver supports. For example, a plain text object uses `NSStringPboardType` for plain text, and a rich text object also uses `NSRTFPboardType`.
 

@@ -24,7 +24,7 @@ var maximumAspectRatio: VNAspectRatio { get set }
 @property (nonatomic, assign, readwrite) VNAspectRatio maximumAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The value should range from `0.0` to `1.0`, inclusive. The default value is `0.5`.
 

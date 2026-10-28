@@ -19,7 +19,7 @@ var phase: NSTouch.Phase { get }
 @property (readonly) NSTouchPhase phase;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSTouch.Phase`](./phase-swift.struct.md) for possible values.
 

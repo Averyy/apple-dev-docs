@@ -19,7 +19,7 @@ var graphicsDevices: [VZGraphicsDevice] { get }
 @property (copy, readonly) NSArray<VZGraphicsDevice *> * graphicsDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array if there are no graphics devices configured.
 

@@ -6,7 +6,7 @@
 
 The number of columns in the object image array.
 
-#### Overview
+## Overview
 
 The number of horizontal positions or increments in the range defined by the minimum and maximum pan values. The value of this field must be positive.
 

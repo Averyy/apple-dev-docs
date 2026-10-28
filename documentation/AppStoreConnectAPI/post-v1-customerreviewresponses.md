@@ -9,7 +9,7 @@ Create a response or replace an existing response you wrote to a customer review
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to create a response to a customer review and publish it in the App Store. If a response already exists, this endpoint updates the response by overwriting it.
 

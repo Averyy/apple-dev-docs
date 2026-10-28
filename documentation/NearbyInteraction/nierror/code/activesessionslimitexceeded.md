@@ -22,7 +22,7 @@ case activeSessionsLimitExceeded
 NIErrorCodeActiveSessionsLimitExceeded
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of concurrent Nearby Interaction sessions varies across device type and platform.
 

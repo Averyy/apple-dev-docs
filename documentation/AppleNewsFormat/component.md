@@ -15,7 +15,7 @@ Properties shared by all component types.
 object Component
 ```
 
-#### Discussion
+## Discussion
 
 In Apple News Format, every component has a property named `role` that conveys the component’s semantic value and its function in the article. For example, a `role` property that has a value of `body` indicates a `body` component, which means that its content is part of the article’s body text. A component whose `role` property has a value of `photo` represents one of the images in the article.
 

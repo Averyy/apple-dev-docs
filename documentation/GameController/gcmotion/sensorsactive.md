@@ -24,7 +24,7 @@ var sensorsActive: Bool { get set }
 @property (nonatomic) BOOL sensorsActive;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the sensors are active; otherwise, [`false`](../../Swift/false.md).
 

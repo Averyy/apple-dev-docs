@@ -19,7 +19,7 @@ func DisposeOSLCompareUPP(_ userUPP: OSLCompareUPP!)
 void DisposeOSLCompareUPP(OSLCompareUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLCompareProcPtr`](./oslcompareprocptr.md) callback function. 
 

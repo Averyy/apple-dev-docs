@@ -15,7 +15,7 @@ Gets a pointer to an audio object, given the object’s identifier.
 OSSharedPtr<IOUserAudioObject> GetAudioObjectForObjectID(IOUserAudioObjectID in_object_id);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSSharedPtr` to an [`IOUserAudioObject`](../iouseraudioobject.md) if `in_object_id` was found.
 

@@ -31,7 +31,7 @@ class URLSessionDownloadTask
 - [Pausing and resuming downloads](./pausing-and-resuming-downloads.md)
 - [Fetching website data into memory](./fetching-website-data-into-memory.md)
 
-#### Overview
+## Overview
 
 An [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) is a concrete subclass of [`URLSessionTask`](./urlsessiontask.md), which provides most of the methods for this class.
 
@@ -39,7 +39,7 @@ Download tasks directly write the server’s response data to a temporary file, 
 
 You can pause (cancel) download tasks and resume them later (assuming the server supports doing so). You can also resume downloads that failed because of network connectivity problems.
 
-##### Download delegate behavior
+### Download delegate behavior
 
 When you use a download task, your delegate receives several callbacks unique to download scenarios.
 

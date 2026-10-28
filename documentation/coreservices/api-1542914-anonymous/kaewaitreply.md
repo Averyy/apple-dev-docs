@@ -14,7 +14,7 @@
 kAEWaitReply = 0x00000003
 ```
 
-#### Discussion
+## Discussion
 
 The reply preference—your application wants a reply Apple event and is willing to give up the processor while waiting for the reply. For example, if the server application is on the same computer as your application, your application yields the processor to allow the server to respond to your Apple event.
 

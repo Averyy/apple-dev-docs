@@ -20,7 +20,7 @@ class NSTableColumn
 @interface NSTableColumn : NSObject
 ```
 
-#### Overview
+## Overview
 
 A table column object determines the width (including the maximum and minimum widths) of its column in the table view and specifies the column’s  resizing and editing behavior. A table column stores two cell objects: the header cell, which is used to draw the column header, and the data cell, which is used to draw the values for each row. In a cell-based table, you can control the display of the column by specifying subclasses of `NSCell` to use and by setting the font and other display characteristics for these cells. For example, you can use an [`NSTextFieldCell`](./nstextfieldcell.md) to display string values or substitute an [`NSImageCell`](./nsimagecell.md) to display pictures.
 

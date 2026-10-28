@@ -19,7 +19,7 @@ var graphicsDevices: [VZGraphicsDeviceConfiguration] { get set }
 @property (copy) NSArray<VZGraphicsDeviceConfiguration *> * graphicsDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more graphics devices, assign an array of [`VZGraphicsDeviceConfiguration`](../vzgraphicsdeviceconfiguration.md) objects to this property.
 

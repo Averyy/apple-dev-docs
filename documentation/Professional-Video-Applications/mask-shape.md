@@ -5,7 +5,7 @@
 
 Describes a shape that serves as a mask.
 
-#### Overview
+## Overview
 
 Define a shape mask in terms of a few parameters and describe these parameters using a `param` element. You can add animation to the shape by applying key frame animation to the parameters.
 

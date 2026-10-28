@@ -25,7 +25,7 @@ var mimeType: String? { get }
 @property (copy, readonly, nullable) NSString * MIMEType;
 ```
 
-#### Discussion
+## Discussion
 
 The MIME type is often provided by the response’s originating source. However, that value may be changed or corrected by a protocol implementation if it can be determined that the response’s source reported the information incorrectly.
 

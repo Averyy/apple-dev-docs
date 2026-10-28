@@ -16,7 +16,7 @@ Identifier reserved as invalid.
 static let invalid: LayerRenderer.Drawable.TrackingArea.Identifier
 ```
 
-#### Discussion
+## Discussion
 
 Should not be used as identifier for [`addTrackingArea(identifier:)`](../../addtrackingarea%28identifier%29.md).
 

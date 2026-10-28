@@ -21,7 +21,7 @@ Specifies the configuration used to compile a set of compute pipelines for a com
 struct PipelinesDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use a descriptor when you need explicit control over pipeline compilation — for example, to supply Metal libraries from multiple bundles or to enable debug draw. Pass the configured descriptor to `ComputeNodeGraph.Pipelines/init(descriptor:)` to compile.
 

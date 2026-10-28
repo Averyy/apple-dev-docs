@@ -17,7 +17,7 @@ A group of independent MLX processes that can communicate.
 final class Group
 ```
 
-#### Overview
+## Overview
 
 Obtain a group with [`initialize(backend:strict:)`](./initialize%28backend,strict%29.md).
 

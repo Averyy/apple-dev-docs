@@ -18,11 +18,11 @@ getPlace(
 ): Promise<Place>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`Place`](../place.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the full [`Place`](../place.md) information for a [`MapFeatureAnnotation`](../mapfeatureannotation.md) that a person selects on the map.
 

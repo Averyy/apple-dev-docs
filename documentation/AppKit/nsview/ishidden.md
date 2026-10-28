@@ -19,7 +19,7 @@ var isHidden: Bool { get set }
 @property (getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the state of the current view only, as set in Interface Builder or through the most recent change to this property. The property does not account for the state of the view’s ancestors in the view hierarchy. Thus, if the view has a hidden ancestor, the value of this property may still be [`false`](../../Swift/false.md) even though the view itself is not visible. To determine whether a view is effectively hidden, for whatever reason, get the value of the [`isHiddenOrHasHiddenAncestor`](./ishiddenorhashiddenancestor.md) property instead.
 

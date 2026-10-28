@@ -21,7 +21,7 @@ Calculates the double-precision element-wise sum of the product of two vectors, 
 extern void vDSP_vmsaD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vectors `A` and `B`, adds scalar value `C` to the product, and writes the result to vector `D`, as follows:
 

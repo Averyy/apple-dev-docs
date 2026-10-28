@@ -25,7 +25,7 @@ let isFamilyShareable: Bool
 
 - [Supporting Family Sharing in your app](../supporting-family-sharing-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Check the value of [`isFamilyShareable`](./isfamilyshareable.md) to learn whether an Apple In-App Purchase is sharable with the family group.
 

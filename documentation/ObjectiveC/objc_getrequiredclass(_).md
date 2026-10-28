@@ -25,11 +25,11 @@ func objc_getRequiredClass(_ name: UnsafePointer<CChar>) -> AnyClass
 extern Classobjc_getRequiredClass(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The Class object for the named class.
 
-#### Discussion
+## Discussion
 
 This function is the same as [`objc_getClass(_:)`](./objc_getclass%28_%29.md), but kills the process if the class is not found.
 

@@ -21,7 +21,7 @@ var groupName: String! { get set }
 @property (nonatomic, copy) NSString * groupName;
 ```
 
-#### Discussion
+## Discussion
 
 You might use this to set the group name of a `WebView` object after it is loaded from a nib file.
 

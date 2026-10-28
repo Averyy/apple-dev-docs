@@ -20,7 +20,7 @@ A type that specifies the appearance and interaction of disclosure groups within
 @preconcurrency protocol DisclosureGroupStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the disclosure group style for a view hierarchy, use the [`disclosureGroupStyle(_:)`](./view/disclosuregroupstyle%28_%29.md) modifier.
 

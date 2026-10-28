@@ -24,7 +24,7 @@ var serviceType: String { get }
 @property (nonatomic, copy, readonly) NSString * serviceType;
 ```
 
-#### Discussion
+## Discussion
 
 The [`serviceType`](./servicetype.md) property contains a string that indicates what the service does. See [Accessory Service Types](../accessory-service-types.md) for a list of possible service types.
 

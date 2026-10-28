@@ -23,7 +23,7 @@ Returns a new long short-term memory (LSTM) parameters structure from the specif
 init(input_size: Int, hidden_size: Int, batch_size: Int, num_layers: Int, seq_len: Int, dropout: Float, lstm_flags: UInt32, sequence_descriptor: BNNSNDArrayDescriptor, input_descriptor: BNNSLSTMDataDescriptor, output_descriptor: BNNSLSTMDataDescriptor, input_gate: BNNSLSTMGateDescriptor, forget_gate: BNNSLSTMGateDescriptor, candidate_gate: BNNSLSTMGateDescriptor, output_gate: BNNSLSTMGateDescriptor, hidden_activation: BNNSActivation)
 ```
 
-#### Discussion
+## Discussion
 
 To enable peephole connections, set the weights pointer in the corresponding gates descriptor. To enable bias, set the bias pointer in the corresponding gates descriptor.
 

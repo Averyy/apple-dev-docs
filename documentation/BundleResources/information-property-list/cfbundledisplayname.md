@@ -23,7 +23,7 @@ The user-visible name for the bundle, used by Siri and visible on the iOS Home s
 
 - [Managing your app’s information property list values](../managing-your-app-s-information-property-list.md)
 
-#### Discussion
+## Discussion
 
 Use this key if you want a product name that’s longer than [`CFBundleName`](./cfbundlename.md).
 

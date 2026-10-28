@@ -22,7 +22,7 @@ enum BatteryState
 enum UIDeviceBatteryState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`batteryState`](./batterystate-swift.property.md) property.
 

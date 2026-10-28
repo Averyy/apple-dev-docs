@@ -25,7 +25,7 @@ static var diacriticInsensitive: NSComparisonPredicate.Options { get }
 NSDiacriticInsensitivePredicateOption
 ```
 
-#### Discussion
+## Discussion
 
 You represent this option in a predicate format string using a `[d]` following a string operation (for example, `"naïve" like[d] "naive"`).
 

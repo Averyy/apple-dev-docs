@@ -19,7 +19,7 @@ static var strictVersioning: NSFileProviderFetchContentsOptions { get }
 NSFileProviderFetchContentsOptionsStrictVersioning
 ```
 
-#### Discussion
+## Discussion
 
 If the system includes this option when calling your [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](../nsfileproviderpartialcontentfetching/fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md) method, you must provide the requested version of the item. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](../nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 

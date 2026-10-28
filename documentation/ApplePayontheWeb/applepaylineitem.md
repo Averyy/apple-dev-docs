@@ -27,7 +27,7 @@ dictionary ApplePayLineItem {
 };
 ```
 
-#### Overview
+## Overview
 
 Line items appear in the payment sheet.
 

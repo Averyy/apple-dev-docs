@@ -21,7 +21,7 @@ A base type representing media formats that may contain both video and audio.
 extern UTType * const UTTypeMovie;
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to what users would label a “movie”.
 

@@ -19,7 +19,7 @@ class NSWindowTabGroup
 @interface NSWindowTabGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 AppKit automatically creates instances of [`NSWindowTabGroup`](./nswindowtabgroup.md) to reflect the tabbing state of your windows. You can access a window’s current tab group using the [`tabGroup`](./nswindow/tabgroup.md) property.
 

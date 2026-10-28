@@ -19,7 +19,7 @@ var isRunning: Bool { get }
 @property (readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the main event loop is running or [`false`](../../Swift/false.md) when it’s not. Calling the [`stop(_:)`](./stop%28_%29.md) method sets the value to [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ Performs the composed transformation on a single input.
 func applied(to input: ComposedTransformer<Inner, Outer>.Input, eventHandler: EventHandler? = nil) async throws -> ComposedTransformer<Inner, Outer>.Output
 ```
 
-#### Return Value
+## Return Value
 
 An output produced by applying the transformer to the input.
 

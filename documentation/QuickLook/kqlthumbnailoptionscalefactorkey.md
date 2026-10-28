@@ -19,7 +19,7 @@ let kQLThumbnailOptionScaleFactorKey: CFString!
 extern CFStringRef const kQLThumbnailOptionScaleFactorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The scale factor is a `float` value that’s encapsulated in a [`CFNumber`](../CoreFoundation/cfnumber.md) object. If this option is absent, the default value is `1.0`.
 

@@ -19,7 +19,7 @@ case visibleArea
 NSWritingToolsCoordinatorContextScopeVisibleArea
 ```
 
-#### Discussion
+## Discussion
 
 With this option, include only the currently visible text, along with some additional text before and after the visible text.
 

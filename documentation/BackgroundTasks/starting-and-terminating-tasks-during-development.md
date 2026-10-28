@@ -5,13 +5,13 @@
 
 Use the debugger during development to start tasks and to terminate them before completion.
 
-#### Overview
+## Overview
 
 The delay between the time you schedule a background task and when the system launches your app to run the task can be many hours. While developing your app, you can use two private functions to start a task and to force early termination of the task according to your selected timeline. The debug functions work only on devices.
 
 > ❗ **Important**: Use private functions only during development. Including a reference to these functions in apps submitted to the App Store is cause for rejection.
 
-##### Launch a Task
+### Launch a Task
 
 To launch a task:
 
@@ -24,7 +24,7 @@ To launch a task:
 e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"TASK_IDENTIFIER"]
 ```
 
-##### Force Early Termination of a Task
+### Force Early Termination of a Task
 
 To force termination of a task:
 

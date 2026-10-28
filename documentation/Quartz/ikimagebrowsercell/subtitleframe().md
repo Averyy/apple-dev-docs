@@ -19,11 +19,11 @@ func subtitleFrame() -> NSRect
 - (NSRect) subtitleFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the subtitle frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 It is the developer’s responsibility to compute the `subtitleFrame` such that it lies entirely within the cell’s [`frame()`](./frame%28%29.md) rectangle.
 

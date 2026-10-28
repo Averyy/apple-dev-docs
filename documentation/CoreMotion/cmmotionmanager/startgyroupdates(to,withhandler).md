@@ -27,7 +27,7 @@ func startGyroUpdates(to queue: OperationQueue, withHandler handler: @escaping C
 
 - [Getting raw gyroscope events](../getting-raw-gyroscope-events.md)
 
-#### Discussion
+## Discussion
 
 You must call [`stopGyroUpdates()`](./stopgyroupdates%28%29.md) when you no longer want your app to process gyroscope updates.
 

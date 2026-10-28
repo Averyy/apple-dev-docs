@@ -21,7 +21,7 @@ A role that indicates a button that confirms an operation.
 static let confirm: ButtonRole
 ```
 
-#### Discussion
+## Discussion
 
 The following view would display a confirm button in the toolbar.
 

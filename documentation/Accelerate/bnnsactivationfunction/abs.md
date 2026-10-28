@@ -23,7 +23,7 @@ An activation function that returns the absolute value of its input.
 static var abs: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

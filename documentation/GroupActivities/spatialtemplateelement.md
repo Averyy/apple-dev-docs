@@ -15,7 +15,7 @@ An interface that defines an element in your spatial template.
 protocol SpatialTemplateElement : Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 A type that adopts the [`SpatialTemplateElement`](./spatialtemplateelement.md) protocol defines the location and orientation of a participant in a group activity. You don’t adopt this protocol directly in your custom types. Instead, you use types that adopt this protocol to retrieve the corresponding details.
 

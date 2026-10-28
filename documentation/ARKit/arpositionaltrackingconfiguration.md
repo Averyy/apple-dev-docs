@@ -20,7 +20,7 @@ class ARPositionalTrackingConfiguration
 @interface ARPositionalTrackingConfiguration : ARConfiguration
 ```
 
-#### Overview
+## Overview
 
 Enables 6 degrees of freedom tracking of the iOS device by running the camera at lowest possible resolution and frame rate. Use this configuration when you don’t need to parse the camera feed, such as for example, virtual reality scenarios.
 

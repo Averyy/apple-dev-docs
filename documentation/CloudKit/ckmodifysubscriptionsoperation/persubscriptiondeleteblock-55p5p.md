@@ -21,7 +21,7 @@ The closure to execute when CloudKit deletes a subscription.
 @property (nonatomic, copy, nullable) void (^)(NSString *, NSError *) perSubscriptionDeleteBlock;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

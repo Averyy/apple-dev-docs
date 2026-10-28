@@ -18,7 +18,7 @@ case dockWindow
 kCGDockWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for the dock.
 

@@ -23,7 +23,7 @@ func load(_ extensionContext: WKWebExtensionContext) throws
 - (BOOL) loadExtensionContext:(WKWebExtensionContext *) extensionContext error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Causes the context to start, loading any background content, and injecting any content into relevant tabs.
 

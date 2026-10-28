@@ -25,7 +25,7 @@ case cannotStartPlaying
 AVAudioSessionErrorCodeCannotStartPlaying
 ```
 
-#### Discussion
+## Discussion
 
 This error type can occur if the app’s [Information property list](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/InfoPlist.html#//apple_ref/doc/uid/TP40008195-CH61) doesn’t permit audio use. It can also occur if the app is in the background and using a category that doesn’t allow background audio.
 

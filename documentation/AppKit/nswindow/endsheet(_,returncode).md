@@ -19,7 +19,7 @@ func endSheet(_ sheetWindow: NSWindow, returnCode: NSApplication.ModalResponse)
 - (void) endSheet:(NSWindow *) sheetWindow returnCode:(NSModalResponse) returnCode;
 ```
 
-#### Discussion
+## Discussion
 
 This method ends the modal session with the specified return code.
 

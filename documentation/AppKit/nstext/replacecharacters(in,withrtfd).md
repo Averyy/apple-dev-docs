@@ -19,7 +19,7 @@ func replaceCharacters(in range: NSRange, withRTFD rtfdData: Data)
 - (void) replaceCharactersInRange:(NSRange) range withRTFD:(NSData *) rtfdData;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies only to rich text objects.
 

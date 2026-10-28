@@ -13,6 +13,7 @@ Executes this command, or one of its subcommands, with the given arguments.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -24,7 +25,7 @@ Executes this command, or one of its subcommands, with the given arguments.
 static func main(_ arguments: [String]?) async
 ```
 
-#### Discussion
+## Discussion
 
 This method parses an instance of this type, one of its subcommands, or another built-in `AsyncParsableCommand` type, from command-line (or provided) arguments, and then calls its `run()` method, exiting with a relevant error message if necessary.
 

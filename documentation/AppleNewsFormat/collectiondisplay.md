@@ -15,7 +15,7 @@ An object used in any container component type to define how the collection of c
 object CollectionDisplay
 ```
 
-#### Discussion
+## Discussion
 
 This image shows a `CollectionDisplay` with a `distribution` property of `wide`.
 
@@ -27,7 +27,7 @@ This image shows a `CollectionDisplay` with a `distribution` property of `narrow
 
 This object can be used in [`Header`](./header.md), [`Container`](./container.md), [`Section`](./section.md), [`Chapter`](./chapter.md), [`Aside`](./aside.md), and [`ArticleLink`](./articlelink.md).
 
-##### Example
+### Example
 
 ```json
 {

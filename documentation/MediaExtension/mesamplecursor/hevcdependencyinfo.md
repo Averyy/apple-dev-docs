@@ -20,7 +20,7 @@ optional var hevcDependencyInfo: MEHEVCDependencyInfo { get }
 @property (nonatomic, copy, readonly) MEHEVCDependencyInfo * hevcDependencyInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property that provides additional sample dependency information that [`syncInfo`](./syncinfo.md) and [`dependencyInfo`](./dependencyinfo.md) don’t provide. Examples of this are the NAL unit type of an HEVC sync sample or the number of samples necessary to refresh the decoder after a USAC independent frame. Don’t implement this property for formats where this information doesn’t make sense.
 

@@ -21,7 +21,7 @@ struct ElectricVehicleLoadEvent
 
 - [Providing charging history for electric vehicles](./providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 Submit load events to track session-based energy consumption and enable the framework to provide insights about electricity usage and adherence to [`ElectricityGuidance`](./electricityguidance.md). Load events focus on energy flow during active charging sessions. Load events include an indication of continuity, specifying the event’s beginning, active state, and end.
 
@@ -29,7 +29,7 @@ Include [`ElectricVehicleStatusEvent`](./electricvehiclestatusevent.md) in your 
 
 > ❗ **Important**: The system stores and syncs the energy data that you provide through load events with end-to-end encryption through the entire process, ensuring the data isn’t accessible to anyone, even Apple. For more information, see [EnergyKit data security](https://support.apple.com/guide/security/secd0a47c14c).
 
-##### Submit electrical vehicle load events
+### Submit electrical vehicle load events
 
 Sample load events more frequently as charging conditions become more volatile. During stable charging — when power remains constant, with no user interventions — one sample every 15 minutes (at 0, 15, 30, and 45-minute marks) is sufficient. During volatile periods — when charging power fluctuates, a person pauses or resumes charging, or the vehicle adjusts its charge rate — submit additional events to capture the transitions.
 
@@ -43,7 +43,7 @@ Unplugged or idle vehicles between charging sessions don’t generate events. Th
 
 > **Note**: The Home app displays all load events for a given [`EnergyVenue`](./energyvenue.md).
 
-##### Separate charging and discharging sessions
+### Separate charging and discharging sessions
 
 If your vehicle supports vehicle-to-grid (V2G) or vehicle-to-home (V2H) capabilities, use separate sessions for charging and discharging. Separate charging and discharging into individual sessions, even if they occur simultaneously, to allow the system to distinguish between them in the data.
 

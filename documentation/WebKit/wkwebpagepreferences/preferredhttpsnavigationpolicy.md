@@ -21,7 +21,7 @@ var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy { 
 @property (nonatomic) WKWebpagePreferencesUpgradeToHTTPSPolicy preferredHTTPSNavigationPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 A WKWebpagePreferencesUpgradeToHTTPSPolicy indicating the desired mode used when performing a top-level navigation to a webpage.
 

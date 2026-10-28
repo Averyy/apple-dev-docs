@@ -31,7 +31,7 @@ var launchImageName: String { get set }
 @property (atomic, copy, readwrite) NSString * launchImageName;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value for this property, the system displays the specified image or storyboard when the system launches your app. The string in this property must match the name of an image file or storyboard in your app’s bundle. Specify `nil` to use the app’s default launch image. The default value of this property is `nil`.
 

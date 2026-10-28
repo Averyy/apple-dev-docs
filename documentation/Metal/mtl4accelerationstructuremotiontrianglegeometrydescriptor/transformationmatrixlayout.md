@@ -24,7 +24,7 @@ var transformationMatrixLayout: MTLMatrixLayout { get set }
 @property (nonatomic) MTLMatrixLayout transformationMatrixLayout;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide matrices in column-major or row-major form, and this property allows you to control how Metal interprets them.
 

@@ -17,7 +17,7 @@ Registers Qwen3.5-family text MTP drafter model types.
 enum Qwen35TextMTPRegistration
 ```
 
-#### Overview
+## Overview
 
 Standalone Qwen MTP checkpoints do not identify the verifier architecture: their `vision_config` is empty for both text and multimodal use. Text and multimodal drafters therefore use separate registries instead of relying on config-shape predicates or registration order.
 

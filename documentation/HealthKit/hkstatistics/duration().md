@@ -24,7 +24,7 @@ func duration() -> HKQuantity?
 - (HKQuantity *) duration;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the [`duration`](../hkstatisticsoptions/duration.md) option, this method returns a quantity object containing total duration covering all the samples that match the query; otherwise, it returns `nil`.
 

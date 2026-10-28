@@ -10,13 +10,13 @@ Implement a painting canvas entity, and update its mesh to represent a stroke.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to create a painting space so that people can pinch-to-draw in an augmented reality space. To achieve this, the app uses hand-tracking technology that [ARKit](../ARKit/ARKit.md) provides to monitor a person’s hand movements. To capture and display each stroke, the app creates collision boxes within the environment, stores the person’s drawing points through a pinch gesture, and then updates the mesh at those points to represent the stroke, as the following video shows:
 
 [Video: A video of a visionOS app with a translucent window labeled Painting Example. The app reacts to pinch-and-drag gestures to draw the word Hello.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-painting-1-main-view.mov)
 
-##### Add a system and component to enable real-time updates
+### Add a system and component to enable real-time updates
 
 The sample uses a custom system and component to handle updates for entities over time:
 
@@ -59,7 +59,7 @@ struct ClosureSystem: System {
 }
 ```
 
-##### Set up hand tracking for painting action
+### Set up hand tracking for painting action
 
 The sample creates `PaintingHandTracking` to track the person’s hand with ARKit and store the latest detected hand anchors in the `latestLeftHand` and `latestRightHand` properties:
 
@@ -121,7 +121,7 @@ import ARKit
 }
 ```
 
-##### Implement the structural representation of a stroke
+### Implement the structural representation of a stroke
 
 The sample creates the `Stroke` structure to represent the current stroke the person creates with the drag gesture input:
 
@@ -220,7 +220,7 @@ func updateMesh() {
 }
 ```
 
-##### Create the painting canvas to store strokes
+### Create the painting canvas to store strokes
 
 To create the 3D painting environment, the sample uses `PaintingCanvas` to set up `root`, which represents the painting canvas, and `currentStroke`, which represents the stroke the person creates:
 
@@ -307,7 +307,7 @@ class PaintingCanvas {
 
 When the person ends a painting action, `finishStroke()` updates the stroke’s mesh and sets the `currentStroke` to nil, to mark the end of the stroke.
 
-##### Set up the painting space
+### Set up the painting space
 
 The sample creates a `PaintingView` to combine the hand tracking, painting canvas, and drag gesture detection. It creates the instance of the `PaintingHandTracking` class, the instance of the `PaintingCanvas` class, and the `lastIndexPose` to store the last position of the index finger:
 
@@ -401,7 +401,7 @@ The app attaches the main body view to the `.gesture()` modifier, to recognize u
 
 The app starts the hand-tracking session within the `.task()` modifier, which allows the app to enable hand tracking asynchronously before the view appears.
 
-###### Related samples
+#### Related samples
 
 - [Creating a spatial drawing app with RealityKit](../RealityKit/creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

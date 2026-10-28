@@ -23,7 +23,7 @@ var changesSelectionAsPrimaryAction: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL changesSelectionAsPrimaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 When a button has this property set to [`true`](../../Swift/true.md), the button changes to a toggle button where tapping it changes it between selected and unselected.
 

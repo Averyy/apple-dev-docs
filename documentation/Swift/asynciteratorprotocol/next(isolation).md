@@ -22,7 +22,7 @@ Asynchronously advances to the next element and returns it, or ends the sequence
 mutating func next(isolation actor: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next element, if it exists, or `nil` to signal the end of the sequence.
 

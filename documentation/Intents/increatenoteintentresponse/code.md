@@ -33,7 +33,7 @@ var code: INCreateNoteIntentResponseCode { get }
 @property (atomic, readonly) INCreateNoteIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set at initialization time and cannot be changed later.
 

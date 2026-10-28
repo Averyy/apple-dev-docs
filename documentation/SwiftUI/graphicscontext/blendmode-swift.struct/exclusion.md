@@ -21,7 +21,7 @@ A mode that produces an effect similar to that produced by the difference blend 
 static var exclusion: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Source image sample values that are black don’t produce a change; white inverts the background color values.
 

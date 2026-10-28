@@ -19,7 +19,7 @@ A Boolean value that determines whether the content view preserves the layout ma
 var axesPreservingSuperviewLayoutMargins: UIAxis { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the content view preserves the layout margins of its superview on [`both`](../uiaxis/both.md) axes.
 

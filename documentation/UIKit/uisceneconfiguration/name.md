@@ -23,7 +23,7 @@ var name: String? { get }
 @property (nonatomic, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit sets this property’s initial value using the [`UISceneConfigurationName`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneconfigurationname.md) key from the appropriate scene in your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
 

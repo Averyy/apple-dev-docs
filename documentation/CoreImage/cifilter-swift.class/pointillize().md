@@ -24,11 +24,11 @@ class func pointillize() -> any CIFilter & CIPointillize
 + (CIFilter<CIPointillize> *) pointillizeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) containing the pointillized image.
 
-#### Discussion
+## Discussion
 
 This filter applies a pointillize effect to an image. The effect generates an output image made of small, single-color, circular points distributed on a randomly perturbed grid.
 

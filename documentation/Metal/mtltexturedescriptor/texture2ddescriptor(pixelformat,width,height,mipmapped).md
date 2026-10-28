@@ -24,7 +24,7 @@ class func texture2DDescriptor(pixelFormat: MTLPixelFormat, width: Int, height: 
 + (MTLTextureDescriptor *) texture2DDescriptorWithPixelFormat:(MTLPixelFormat) pixelFormat width:(NSUInteger) width height:(NSUInteger) height mipmapped:(BOOL) mipmapped;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a texture descriptor object for a 2D texture.
 

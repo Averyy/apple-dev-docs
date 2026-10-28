@@ -5,13 +5,13 @@
 
 Support Dark Mode, reduce memory and power usage, and ensure feature compatibility to improve your web extension experience in Safari and web apps.
 
-#### Overview
+## Overview
 
 Add support for Dark Mode in your user interface so that your web extension fits in with the user’s selection of a light or dark overall scheme. Use a nonpersistent background page or service worker so that Safari can determine when to keep it in memory or unload it based on system memory usage.
 
 As you update your Safari web extension to take advantage of new features that Safari supports, specify the Safari versions that your web extension is compatible with to avoid confusing your users.
 
-##### Improve your extension experience in iOS
+### Improve your extension experience in iOS
 
 There are important differences in Safari between macOS and iOS that your extension needs to address to give users the best possible experience in iOS:
 
@@ -20,7 +20,7 @@ There are important differences in Safari between macOS and iOS that your extens
 - Some users prefer larger type on small screens. Support Dynamic Type in your web pages to let the user specify type size.
 - iOS doesn’t support some APIs. To prevent throwing exceptions, check for the existence of APIs in iOS before using them.
 
-##### Edit the CSS files to support Dark Mode
+### Edit the CSS files to support Dark Mode
 
 To enable basic support for Dark Mode in your extension’s visual elements, add the following code to your CSS files:
 
@@ -32,7 +32,7 @@ To enable basic support for Dark Mode in your extension’s visual elements, add
 
 This allows Safari to automatically adjust the visual element’s background color, text colors, and form element colors. For more information about how to customize your Dark Mode experience, see [Dark Mode Support in WebKit](https://webkit.org/blog/8840/dark-mode-support-in-webkit/).
 
-##### Reduce memory and power usage with a nonpersistent background page
+### Reduce memory and power usage with a nonpersistent background page
 
 Consider making your background page nonpersistent in macOS when it’s primarily event-driven and responds to user interactions. In iOS, you must make your background page nonpersistent. Safari unloads your nonpersistent background page when the user isn’t directly interacting with the extension, which reduces memory usage and improves battery life. Your background page must be nonpersistent or you must declare your background script as a service worker if you’re using manifest version 3. Use a service worker for better compatibility with other browsers.
 
@@ -61,7 +61,7 @@ When you make your background page nonpersistent:
 
 > **Note**:  Make your background page persistent in macOS if you use the `webRequest` API in it, due to the frequency of callbacks that might fail if Safari unloads the background page.
 
-##### Ensure feature compatibility by specifying versions
+### Ensure feature compatibility by specifying versions
 
 When you build features in your web extension that need a specific version of Safari, specify the required versions in your `manifest.json` file.
 

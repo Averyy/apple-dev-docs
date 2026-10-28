@@ -21,7 +21,7 @@ An effect that makes each layer disappear separately.
 - (instancetype) effectWithByLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that makes each layer disappear separately.
 

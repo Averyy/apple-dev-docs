@@ -19,7 +19,7 @@ func interfaces() -> [CWInterface]?
 - (NSArray<CWInterface *> *) interfaces;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CWInterface`](../cwinterface.md) objects, representing all of the available Wi-Fi interfaces in the system.
 

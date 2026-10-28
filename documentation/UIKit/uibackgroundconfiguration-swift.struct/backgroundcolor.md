@@ -19,7 +19,7 @@ The color of the background.
 var backgroundColor: UIColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the background color is the view’s tint color. Use [`clear`](../uicolor/clear.md) for a transparent background with no color.
 

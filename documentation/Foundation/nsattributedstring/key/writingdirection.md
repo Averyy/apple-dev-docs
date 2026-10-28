@@ -21,7 +21,7 @@ The writing direction of the text.
 static let writingDirection: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSArray`](../../nsarray.md) object containing [`NSNumber`](../../nsnumber.md) objects representing the nested levels of writing direction overrides, in order from outermost to innermost.
 

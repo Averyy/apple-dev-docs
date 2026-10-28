@@ -23,7 +23,7 @@ func didCloseWindow(_ closedWindow: any WKWebExtensionWindow)
 - (void) didCloseWindow:(id<WKWebExtensionWindow>) closedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension of the closure of a window. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

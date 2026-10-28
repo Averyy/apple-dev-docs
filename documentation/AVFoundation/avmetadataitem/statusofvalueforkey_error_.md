@@ -21,11 +21,11 @@ Reports whether the value for a given key is immediately available without block
 - (AVKeyValueStatus) statusOfValueForKey:(NSString *) key error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The current loading status of the value for `key`.
 
-#### Discussion
+## Discussion
 
 For full discussion, see [`AVAsynchronousKeyValueLoading`](../avasynchronouskeyvalueloading.md).
 

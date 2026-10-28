@@ -20,7 +20,7 @@ func atIndex(_ index: Int) -> NSAppleEventDescriptor?
 - (NSAppleEventDescriptor *) descriptorAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor from the specified position (one-based) in the descriptor list, or `nil` if the specified descriptor cannot be obtained.
 

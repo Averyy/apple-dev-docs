@@ -16,11 +16,11 @@ Returns an integer representaion of the value contained in this IOHIDValueRef.
 CFIndex IOHIDValueGetIntegerValue(IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an integer representation of the value.
 
-#### Discussion
+## Discussion
 
 The value is based on the logical element value contained in the report returned by the device.
 

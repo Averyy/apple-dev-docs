@@ -4,7 +4,7 @@
 
 Specify profiles to iterate.
 
-#### Overview
+## Overview
 
 These are possible values for flags passed to the function `CMIterateDeviceProfiles`. 
 

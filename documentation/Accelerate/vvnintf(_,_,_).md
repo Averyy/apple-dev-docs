@@ -25,9 +25,9 @@ func vvnintf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 void vvnintf(float *, const float *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

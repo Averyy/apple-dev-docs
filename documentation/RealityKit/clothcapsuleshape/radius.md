@@ -17,7 +17,7 @@ The radius of the cylinder portion and the radius of each hemisphere.
 var radius: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be positive.
 

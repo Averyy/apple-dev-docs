@@ -23,7 +23,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsC
 - (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator requestsPreviewForTextAnimation:(NSWritingToolsCoordinatorTextAnimation) textAnimation ofRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context textDecoration:(NSWritingToolsCoordinatorTextDecoration) textDecoration completion:(void (^)(NSArray<NSTextPreview *> *textPreviews)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 To support grammar animation, the delegate should provide previews for the relevant text, as with the required `requestsPreviewFor` method, but in this case showing the text with the specified decoration applied. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement this delegate method to provide them, based on the specified decoration.
 

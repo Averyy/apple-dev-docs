@@ -20,7 +20,7 @@ string environment
 - `Sandbox`: Indicates that the notification applies to testing in the sandbox environment.
 - `Production`: Indicates that the notification applies to the production environment.
 
-#### Discussion
+## Discussion
 
 You receive notifications in the sandbox environment when you opt in to receive notifications in the sandbox environment and test your app in the sandbox environment. TestFlight also uses the sandbox environment to send notifications. To opt in to receive notifications, see [Enter a URL for App Store Server Notifications](https://help.apple.com/app-store-connect/#/dev0067a330b). For more information about testing, see [Testing at all stages of development with Xcode and the sandbox](../StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md), and [Beta Testing Made Simple with TestFlight](https://developer.apple.com/testflight/).
 

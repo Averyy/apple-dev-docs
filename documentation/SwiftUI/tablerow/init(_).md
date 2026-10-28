@@ -20,7 +20,7 @@ nonisolated
 init(_ value: Value)
 ```
 
-#### Discussion
+## Discussion
 
 The table provides the value of a row to each column of a table, which produces the cells for each row in the column.
 

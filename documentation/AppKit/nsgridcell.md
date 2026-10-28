@@ -20,7 +20,7 @@ class NSGridCell
 @interface NSGridCell : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a grid cell to specify the content view to display and to position the content view within the cell’s area.
 

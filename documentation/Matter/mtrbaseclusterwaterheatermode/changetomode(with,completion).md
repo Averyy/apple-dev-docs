@@ -29,7 +29,7 @@ func changeToMode(with params: MTRWaterHeaterModeClusterChangeToModeParams) asyn
 - (void) changeToModeWithParams:(MTRWaterHeaterModeClusterChangeToModeParams *) params completion:(void (^)(MTRWaterHeaterModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to change device modes.
 

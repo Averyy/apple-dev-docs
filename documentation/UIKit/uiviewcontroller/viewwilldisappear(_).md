@@ -27,7 +27,7 @@ func viewWillDisappear(_ animated: Bool)
 
 - [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
-#### Discussion
+## Discussion
 
 This method is called in response to a view being removed from a view hierarchy. This method is called before the view is actually removed and before any animations are configured.
 

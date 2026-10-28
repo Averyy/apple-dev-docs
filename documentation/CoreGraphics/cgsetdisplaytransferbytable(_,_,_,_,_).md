@@ -20,11 +20,11 @@ func CGSetDisplayTransferByTable(_ display: CGDirectDisplayID, _ tableSize: UInt
 extern CGError CGSetDisplayTransferByTable(CGDirectDisplayID display, uint32_t tableSize, const CGGammaValue *redTable, const CGGammaValue *greenTable, const CGGammaValue *blueTable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 The same table may be passed in for the red, green, and blue channels. The tables are interpolated as needed to generate the number of samples required by the graphics hardware.
 

@@ -5,13 +5,13 @@
 
 Find the app extensions that match your host app’s extension points and are available to use.
 
-#### Overview
+## Overview
 
 At runtime, apps rely on the system to provide the list of app extensions available for them to use. The system starts by looking for app extensions that support the host app’s extension points. It then determines which of those app extensions are enabled and ready to use. For security, the system disables app extensions that ship outside of the host app by default. The owner of the device can also disable app extensions using system-provided interfaces.
 
 For each available app extension, the system provides an [`AppExtensionIdentity`](./appextensionidentity.md) structure for you to launch that extension. This identity structure contains the name of the app extension, the name of the supported extension point, and the host app’s bundle identifier.
 
-##### Retrieve the current list of available app extensions
+### Retrieve the current list of available app extensions
 
 To retrieve the available app extensions for your app, create a [`AppExtensionPoint.Monitor`](./appextensionpoint/monitor.md) type. A monitor provides two ways to access the available app extensions:
 
@@ -30,7 +30,7 @@ let identitiesSnapshot = try await AppExtensionPoint.Monitor(someExtensionPoint)
 
 The [ExtensionKit](../ExtensionKit/ExtensionKit.md) framework contains a view controller that shows all of the known app extensions for your app, including ones that are disabled. Present this view controller from your interface to give people a way to enable and disable app extensions. For information about how to show this interface, see [Displaying the app extensions available to your app](../ExtensionKit/displaying-the-app-extensions-available-to-your-app.md).
 
-##### Detect changes to the list of available app extensions
+### Detect changes to the list of available app extensions
 
 If your app supports app extensions from external developers, the list of available app extensions can change as someone installs or removes apps on their device. At app installation time, the system records the presence of its app extensions and associates them with the matching host app. The system similarly updates its records when someone removes an app. If your app is running when these changes occur, the system reports those changes to any active monitors.
 

@@ -23,7 +23,7 @@ func cancelProxyWithError(_ error: (any Error)?)
 - (void) cancelProxyWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The App Proxy Provider should call this method when an unrecoverable error occurs that makes the proxy no longer viable.
 

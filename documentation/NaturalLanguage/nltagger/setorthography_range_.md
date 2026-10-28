@@ -21,7 +21,7 @@ Sets the orthography for the specified range.
 - (void) setOrthography:(NSOrthography *) orthography range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 If the orthography of the linguistic tagger is not set, it will determine it automatically from the contents of the text. You should call this method only if you know the orthography of the text by some other means.
 

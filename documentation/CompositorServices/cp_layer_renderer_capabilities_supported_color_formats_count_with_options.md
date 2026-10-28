@@ -16,11 +16,11 @@ Returns the number of color formats the specified layer supports.
 size_t cp_layer_renderer_capabilities_supported_color_formats_count_with_options(cp_layer_renderer_capabilities_t layer_capabilities, cp_supported_color_formats_options options);
 ```
 
-#### Return Value
+## Return Value
 
 The number of color formats the layer supports.
 
-#### Discussion
+## Discussion
 
 To iterate over the color formats, use the [`cp_layer_renderer_capabilities_supported_color_format`](./cp_layer_renderer_capabilities_supported_color_format.md) function.
 

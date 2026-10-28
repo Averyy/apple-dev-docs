@@ -21,11 +21,11 @@ var containsAttachments: Bool { get }
 @property (readonly) BOOL containsAttachments;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the attributed string contains any attachment attributes, otherwise NO.
 
-#### Discussion
+## Discussion
 
 This method checks only for attachment attributes, not for `NSAttachmentCharacter`.
 

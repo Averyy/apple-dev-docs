@@ -19,7 +19,7 @@ protocol NSColorPickingDefault
 @protocol NSColorPickingDefault
 ```
 
-#### Overview
+## Overview
 
 The [`NSColorPickingDefault`](./nscolorpickingdefault.md) protocol, together with the [`NSColorPickingCustom`](./nscolorpickingcustom.md) protocol (which provides implementation-specific behavior), provides an interface for adding color pickers to an app’s color panel.
 

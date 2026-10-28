@@ -19,7 +19,7 @@ optional var isOpenCloseInhibited: Bool { get set }
 @property (getter=isOpenCloseInhibited) BOOL openCloseInhibited;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit reads this value after the file system replies to the `loadResource` message. Changing the returned value during the runtime of the volume has no effect.
 

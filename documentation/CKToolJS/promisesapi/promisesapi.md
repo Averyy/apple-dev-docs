@@ -17,7 +17,7 @@ new defaultOptions(
 );
 ```
 
-#### Discussion
+## Discussion
 
 You create an instance of `PromisesApi` in order to interact with the API. Methods on this class return promises that complete with a response object.
 

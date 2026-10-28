@@ -25,7 +25,7 @@ var transferDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval transferDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

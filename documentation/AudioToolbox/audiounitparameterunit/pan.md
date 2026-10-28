@@ -24,7 +24,7 @@ case pan
 kAudioUnitParameterUnit_Pan
 ```
 
-#### Discussion
+## Discussion
 
 For standard left-to-right audio panning.
 

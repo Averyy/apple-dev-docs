@@ -22,7 +22,7 @@ class func predicateForUserAnnotatedMedications(isArchived: Bool) -> NSPredicate
 + (NSPredicate *) predicateForUserAnnotatedMedicationsWithIsArchived:(BOOL) isArchived;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKUserAnnotatedMedicationQuery.
 

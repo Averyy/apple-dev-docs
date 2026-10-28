@@ -24,7 +24,7 @@ var vertexStride: Int { get set }
 @property (nonatomic) NSUInteger vertexStride;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same vertex stride. This stride needs to be a multiple of the size of the vertex format you provide in the [`vertexFormat`](./vertexformat.md) property.
 

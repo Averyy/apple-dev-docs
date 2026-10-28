@@ -25,7 +25,7 @@ func CFTreeSortChildren(_ tree: CFTree!, _ comparator: CFComparatorFunction!, _ 
 extern void CFTreeSortChildren(CFTreeRef tree, CFComparatorFunction comparator, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 Note that the comparator only operates one level deep and does not operate on descendants further removed than the immediate children of a tree node.
 

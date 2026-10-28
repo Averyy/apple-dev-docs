@@ -22,7 +22,7 @@ Builds an extension scene by combining three scenes.
 @preconcurrency static func buildBlock<C0, C1, C2>(_ c0: C0, _ c1: C1, _ c2: C2) -> some AppExtensionScene where C0 : AppExtensionScene, C1 : AppExtensionScene, C2 : AppExtensionScene
 ```
 
-#### Return Value
+## Return Value
 
 The composed scene.
 

@@ -20,7 +20,7 @@ class ARImageAnchor
 @interface ARImageAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 When you run a world-tracking AR session and specify [`ARReferenceImage`](./arreferenceimage.md) objects for the session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property, ARKit searches for those images in the real-world environment. When the session recognizes an image, it automatically adds an [`ARImageAnchor`](./arimageanchor.md) for each detected image to its list of anchors.
 

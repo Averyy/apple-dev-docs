@@ -20,7 +20,7 @@ Adds random noise to the input image.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The image with added random noise.
 

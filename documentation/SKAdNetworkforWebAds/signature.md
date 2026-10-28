@@ -19,7 +19,7 @@ object signature
 
 - [Generating a signature for attributable web ads](./generating-a-signature-for-attributable-web-ads.md)
 
-#### Discussion
+## Discussion
 
 Use the required parameters in the [`signature`](./signature.md) object to generate a cryptographic signature for the [`AdImpressionResponse`](./adimpressionresponse.md). For more information, see [Generating a signature for attributable web ads](./generating-a-signature-for-attributable-web-ads.md).
 

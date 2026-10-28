@@ -9,11 +9,11 @@ Returns a specific location in an Apple School Manager organization.
 **Availability**:
 - Roster API 1.0.0+
 
-#### Discussion
+## Discussion
 
 Access to the `locations` resource requires authorization to either the `edu.users.read` or `edu.classes.read` scope.
 
-##### Example
+### Example
 
 **Request**:
 

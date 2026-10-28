@@ -23,7 +23,7 @@ static var interval: Date.IntervalFormatStyle { get }
 
 Available when `Self` is `Date.IntervalFormatStyle`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`Date.IntervalFormatStyle`](../date/intervalformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/range/formatted%28_%29.md) method of a `Range<Date>`.
 

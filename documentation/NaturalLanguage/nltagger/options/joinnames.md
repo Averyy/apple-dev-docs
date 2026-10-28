@@ -25,7 +25,7 @@ static var joinNames: NLTagger.Options { get }
 NLTaggerJoinNames
 ```
 
-#### Discussion
+## Discussion
 
 If this option is set, then multiple-word names will be joined together and returned as a single token.
 

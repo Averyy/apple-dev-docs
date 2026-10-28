@@ -5,11 +5,11 @@
 
 Shift the position of a view by applying the offset or position modifier.
 
-#### Overview
+## Overview
 
 Use SwiftUI to adaptively lay out and position your views. If you can’t achieve your design with composition alone, fine tune the layout with view modifiers. Add an offset modifier to shift the rendered content of a view from its current position, or a position modifier to set an explicit position within its parent.
 
-##### Create a view layout
+### Create a view layout
 
 The following example provides a view to illustrate how to position views, providing a rough layout of views composed within a [`ZStack`](./zstack.md). The stack contains a quadrant with an overlaid circle image:
 
@@ -33,7 +33,7 @@ struct Quadrant: View {
 
 For more detail on composing views with stacks, see [Building layouts with stack views](./building-layouts-with-stack-views.md).
 
-##### Shift the location of a view’s content
+### Shift the location of a view’s content
 
 Fine-tune the position of the circle within the quadrant by using an offset modifier to shift where the parent view places the circle. An offset modifier shifts the image from its default center position. For example, the [`offset(x:y:)`](./view/offset%28x,y%29.md) modifier uses the parameters of `x` and `y` to represent a relative location within the view’s coordinate space.
 
@@ -62,7 +62,7 @@ struct Quadrant: View {
 
 ![A figure of a square with hairline crosshairs that divide the box into four equal sections. A small circle is offset from the apex of the crosshairs, 40 points up and 40 points toward the trailing edge of the box.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Making-Fine-Adjustments-to-a-View-s-Position-3@2x.png)
 
-##### Position view content explicitly
+### Position view content explicitly
 
 To explicitly position elements within a view, use the [`position(x:y:)`](./view/position%28x,y%29.md) view modifier. A position modifier overrides where the parent view places its content. The modifier renders the view at a location offset from the origin of the parent view, unlike an offset modifier that shifts the view from the location chosen by the parent view. The position modifier uses the same `x`, `y` coordinate system as the offset modifier, and similarly doesn’t influence the size of the view. In this example, the position of the circle is set halfway down on the right side of the quadrant with explicit values:
 

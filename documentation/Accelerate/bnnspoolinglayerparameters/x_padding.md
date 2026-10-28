@@ -25,7 +25,7 @@ var x_padding: Int
 size_t x_padding;
 ```
 
-#### Discussion
+## Discussion
 
 Virtual 0 values added to the left and right of each channel of the input stack.
 

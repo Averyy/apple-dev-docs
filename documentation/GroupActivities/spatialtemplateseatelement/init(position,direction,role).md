@@ -15,7 +15,7 @@ Creates a seat element with the specified position, direction, and role informat
 init(position: SpatialTemplateElementPosition, direction: SpatialTemplateElementDirection = .lookingAt(.app), role: (any SpatialTemplateRole)? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized seat element for you to add to a custom spatial template.
 

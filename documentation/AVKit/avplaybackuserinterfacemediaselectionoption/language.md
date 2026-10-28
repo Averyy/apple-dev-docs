@@ -17,7 +17,7 @@ The language of this media selection option.
 var language: Locale.Language? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This standardized tag provides detailed language information including region, script, and variants. Returns `nil` for language-neutral content such as music-only audio tracks, sound effects, or visual-only subtitles without spoken content.
 

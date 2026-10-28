@@ -27,7 +27,7 @@ var isHeadless: Bool { get }
 
 - [Finding multiple GPUs on an Intel-based Mac](../finding-multiple-gpus-on-an-intel-based-mac.md)
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) when the GPU is *headless*, which means it isn’t connected to any displays.
 

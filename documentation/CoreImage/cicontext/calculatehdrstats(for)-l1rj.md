@@ -24,11 +24,11 @@ func calculateHDRStats(for image: CIImage) -> CIImage?
 - (CIImage *) calculateHDRStatsForImage:(CIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
  Returns a new [`CIImage`](../ciimage.md) instance that has the calculated statistics attached.
 
-#### Discussion
+## Discussion
 
 If the image extent is not finite, then nil will be returned.
 

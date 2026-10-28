@@ -5,7 +5,7 @@
 
 Request and configure the required entitlement to support Tap to Pay on iPhone.
 
-#### Overview
+## Overview
 
 Tap to Pay on iPhone lets merchants accept contactless payments using an app on their iPhone, without having to connect external hardware. Your app uses the [ProximityReader](./ProximityReader.md) framework to read the payment method someone presents.
 
@@ -15,7 +15,7 @@ After you receive the entitlement, you need to configure your Xcode project to u
 
 > **Note**: TestFlight beta testing and App Store submissions require an entitlement that allows distribution. If you’ve already completed your testing with the nondistribution entitlement, respond to the original email and rerequest the [Tap to Pay on iPhone Entitlement](https://developer.apple.com/contact/request/tap-to-pay-on-iphone/).
 
-##### Add the Tap to Pay on iPhone capability to your App ID
+### Add the Tap to Pay on iPhone capability to your App ID
 
 Follow these steps to update your App ID to include the necessary capability:
 
@@ -28,7 +28,7 @@ Follow these steps to update your App ID to include the necessary capability:
 7. Click the Save button.
 8. Create a new provisioning profile for the updated App ID. For more information, see [Create a development provisioning profile](https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile).
 
-##### Download the new provisioning profile
+### Download the new provisioning profile
 
 > 💡 **Tip**: You can skip these steps if you enable Xcode to automatically manage the code signing. For more information, see [Automatic Signing Controls](https://developer.apple.com/help/account/manage-your-team/automatic-signing-controls/).
 
@@ -40,7 +40,7 @@ Follow these steps to use the new provisioning profile to code sign your app:
 4. Click the Provisioning Profile pop-up menu and choose Download Profile.
 5. Select your ProximityReader provisioning profile from the left column and click Select Profile.
 
-##### Add an entitlements file
+### Add an entitlements file
 
 In Xcode, you need to create a file to specify the entitlements necessary for your app to use Tap to Pay on iPhone.
 

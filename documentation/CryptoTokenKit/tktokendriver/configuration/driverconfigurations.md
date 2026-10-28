@@ -25,7 +25,7 @@ class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configura
 @property (class, nonatomic, readonly) NSDictionary<NSString *,TKTokenDriverConfiguration *> * driverConfigurations;
 ```
 
-#### Discussion
+## Discussion
 
 If the app hosting the token extension calls this method, it returns a list of configurations for hosted token extensions. Otherwise, this method returns an empty array.
 

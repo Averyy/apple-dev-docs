@@ -25,7 +25,7 @@ static var month: NSCalendar.Unit { get }
 NSCalendarUnitMonth
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitMonth`.
 

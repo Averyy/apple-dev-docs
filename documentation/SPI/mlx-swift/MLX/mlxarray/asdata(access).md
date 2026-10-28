@@ -17,7 +17,7 @@ Return the contents as `Data` bytes in the native [`dtype`](./dtype.md).
 func asData(access: MLXArray.AccessMethod = .copy) -> MLXArray.MLXArrayData
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If you use [`MLXArray.AccessMethod.noCopy`](./accessmethod/nocopy.md) or [`MLXArray.AccessMethod.noCopyIfContiguous`](./accessmethod/nocopyifcontiguous.md) you must guarantee that the lifetime of the [`MLXArray`](../mlxarray.md) exceeds the lifetime of the result.
 
@@ -25,7 +25,7 @@ Callers can specify an [`MLXArray.AccessMethod`](./accessmethod.md) to cause the
 
 By default it will use [`MLXArray.AccessMethod.copy`](./accessmethod/copy.md) and will return a copy of the data in contiguous memory.
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 - [`asArray(_:)`](./asarray%28_%29.md)

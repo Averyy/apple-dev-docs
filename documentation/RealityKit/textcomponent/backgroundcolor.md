@@ -20,7 +20,7 @@ The canvas’s background color.
 var backgroundColor: CGColor?
 ```
 
-#### Discussion
+## Discussion
 
 Specify a color to have RealityKit render the entire canvas in a color. The specified value may include an alpha component. By default, the canvas is transparent.
 

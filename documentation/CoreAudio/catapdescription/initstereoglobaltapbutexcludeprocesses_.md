@@ -14,7 +14,7 @@
 - (instancetype) initStereoGlobalTapButExcludeProcesses:(NSArray<NSNumber *> *) processesObjectIDsToExcludeFromTap;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all processes to a stereo stream except the given processes.  Mono sources will be duplicated in both right and left channels.
 

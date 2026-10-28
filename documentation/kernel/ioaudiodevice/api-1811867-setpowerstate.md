@@ -13,11 +13,11 @@ virtual IOReturn setPowerState(
  IOService *device);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOPMAckImplied (0) when the power state change is complete. Otherwise the an upper bound on the number of microseconds until the state change is complete is returned.
 
-#### Overview
+## Overview
 
 The default implementation of IOAudioDevice sets up two power states for IOService to use. State 0 is sleep and state 1 is wake. This function should not be called directly. It is only supposed to be used by the IOService power management services.
 

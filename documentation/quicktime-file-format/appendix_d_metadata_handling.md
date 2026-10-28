@@ -4,7 +4,7 @@
 
 Handling metadata in other file formats.
 
-#### Overview
+## Overview
 
 This section describes how metadata is handled when QuickTime imports other file formats. For more information about metadata, refer to [Metadata atoms and types](./metadata_atoms_and_types.md) and [Compressed movie resources](./compressed_movie_resources.md).
 

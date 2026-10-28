@@ -25,7 +25,7 @@ func CGRectMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ rect: Unsafe
 extern bool CGRectMakeWithDictionaryRepresentation(CFDictionaryRef dict, CGRect *rect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if successful; otherwise [`false`](../Swift/false.md).
 

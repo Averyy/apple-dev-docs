@@ -25,7 +25,7 @@ let kCTUnderlineStyleAttributeName: CFString
 extern CFStringRef const kCTUnderlineStyleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default is [`kCTUnderlineStyleNone`](./ctunderlinestyle/kctunderlinestylenone.md). Set a value of something other than [`kCTUnderlineStyleNone`](./ctunderlinestyle/kctunderlinestylenone.md) to draw an underline. In addition, the constants listed in  [`CTUnderlineStyleModifiers`](./ctunderlinestylemodifiers.md) can be used to modify the look of the underline. The underline color is determined by the text’s foreground color.
 

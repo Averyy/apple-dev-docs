@@ -22,7 +22,7 @@ nonisolated
 func submitLabel(_ submitLabel: SubmitLabel) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Form {

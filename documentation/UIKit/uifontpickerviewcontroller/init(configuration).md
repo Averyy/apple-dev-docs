@@ -22,7 +22,7 @@ init(configuration: UIFontPickerViewController.Configuration)
 - (instancetype) initWithConfiguration:(UIFontPickerViewControllerConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new view controller to show a font picker with the specified configuration.
 

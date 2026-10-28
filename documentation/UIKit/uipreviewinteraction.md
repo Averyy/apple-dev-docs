@@ -23,7 +23,7 @@ class UIPreviewInteraction
 @interface UIPreviewInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 A 3D Touch interaction results in a *preview interaction* that comprises two phases, the first also called *preview*, followed by *commit*. The interaction progresses through these phases as a person applies more force with a touch. The following image shows the relationship between the force of a person’s touch and the phases of the preview interaction.
 

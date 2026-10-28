@@ -24,11 +24,11 @@ func isNull() -> Bool
 - (BOOL) isNull;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the unit is null; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Null units occur only when you create compound units in which all the units cancel out. For example, if you tried to create a unit by dividing deciliters by liters (`dL/L`), you would end up with a null unit.
 

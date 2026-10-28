@@ -24,7 +24,7 @@ Indicates that the production terminated.
 consuming func finish(throwing error: Failure? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 After all buffered elements are consumed the subsequent call to [`next(isolation:)`](../next%28isolation%29.md) will return `nil` or throw an error.
 

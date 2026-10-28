@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Resolve package dependencies.
 
-#### Overview
+## Overview
 
 ```
 package resolve [--package-path=<package-path>]

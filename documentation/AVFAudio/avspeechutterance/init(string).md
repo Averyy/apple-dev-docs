@@ -25,11 +25,11 @@ init(string: String)
 - (instancetype) initWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVSpeechUtterance`](../avspeechutterance.md) object that can speak the specified text.
 
-#### Discussion
+## Discussion
 
 To speak the text, pass the utterance to an instance of [`AVSpeechSynthesizer`](../avspeechsynthesizer.md).
 

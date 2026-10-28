@@ -22,7 +22,7 @@ struct AppImpression
 - [Generating JWS impressions](./generating-jws-impressions.md)
 - [Presenting ads in your app](./presenting-ads-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 To record a view-through impression, call [`beginView()`](./appimpression/beginview%28%29.md) when the ad content corresponding to the impression becomes visible, and [`endView()`](./appimpression/endview%28%29.md) when the ad content disappears. The advertisement needs to be visible for at least two seconds for AdAttributionKit to record a view through impression; otherwise, the framework throws an error.
 

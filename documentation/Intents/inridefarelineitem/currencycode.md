@@ -23,7 +23,7 @@ var currencyCode: String! { get }
 @property (nonatomic, readonly) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the appropriate currency designator to apply to the value in the [`price`](./price.md) property. To retrieve the list of available currency codes, call the [`isoCurrencyCodes`](../../Foundation/nslocale/isocurrencycodes.md) method of the [`NSLocale`](../../Foundation/nslocale.md) class.
 

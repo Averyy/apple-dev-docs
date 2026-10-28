@@ -21,7 +21,7 @@ Decodes the \c NSArray root object from \c data which should be an \c NSArray, c
 + (NSArray *) unarchivedArrayOfObjectsOfClasses:(NSSet<Class> *) classes fromData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Enables \c requiresSecureCoding and sets the \c decodingFailurePolicy to \c NSDecodingFailurePolicySetErrorAndReturn.
 

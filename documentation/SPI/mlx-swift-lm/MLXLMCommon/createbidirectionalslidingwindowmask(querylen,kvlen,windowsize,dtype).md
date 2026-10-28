@@ -17,11 +17,11 @@ Bidirectional sliding-window attention mask: when `kvLen` exceeds `windowSize`, 
 func createBidirectionalSlidingWindowMask(queryLen: Int, kvLen: Int, windowSize: Int, dtype: DType) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `[queryLen, kvLen]` additive mask.
 
-#### Discussion
+## Discussion
 
 Matches the fixture convention in `tools/fixtures/masks/` and HF Transformers’ `create_bidirectional_sliding_window_mask` (after the kv-axis flip).
 

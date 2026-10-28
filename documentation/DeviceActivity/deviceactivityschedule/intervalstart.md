@@ -17,7 +17,7 @@ The date components that represent the start time for a schedule’s interval.
 var intervalStart: DateComponents { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system uses these components to compute `nextInterval.start`.
 

@@ -23,7 +23,7 @@ case automatic
 UISplitViewControllerDisplayModeButtonVisibilityAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 With this behavior, setting [`presentsWithGesture`](../presentswithgesture.md) to [`false`](../../../Swift/false.md) hides the display mode button. This behavior is the default.
 

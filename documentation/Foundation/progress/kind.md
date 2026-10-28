@@ -25,7 +25,7 @@ var kind: ProgressKind? { get set }
 @property (copy, nullable) NSProgressKind kind;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the kind of progress for the progress object, such as [`file`](../progresskind/file.md). It can be `nil`.
 

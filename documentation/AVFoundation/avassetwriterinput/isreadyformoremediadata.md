@@ -26,7 +26,7 @@ var isReadyForMoreMediaData: Bool { get }
 @property (nonatomic, readonly, getter=isReadyForMoreMediaData) BOOL readyForMoreMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 An asset writer with multiple inputs writes media data in an interleaved manner for efficient playback and storage. To maintain appropriate interleaving, you can only append data to an input when the value of this property is [`true`](../../Swift/true.md).
 

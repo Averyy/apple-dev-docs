@@ -20,11 +20,11 @@ class func forType(_ notificationCenterType: DistributedNotificationCenter.Cente
 + (NSDistributedNotificationCenter *) notificationCenterForType:(NSDistributedNotificationCenterType) notificationCenterType;
 ```
 
-#### Return Value
+## Return Value
 
 Distributed notification center for `notificationCenterType`.
 
-#### Discussion
+## Discussion
 
 Currently only one type, `NSLocalNotificationCenterType`, is supported.
 

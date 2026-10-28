@@ -20,7 +20,7 @@ Indicates whether two color parameters are equal.
 static func == (lhs: MaterialColorParameter, rhs: MaterialColorParameter) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two color parameters are equal.
 

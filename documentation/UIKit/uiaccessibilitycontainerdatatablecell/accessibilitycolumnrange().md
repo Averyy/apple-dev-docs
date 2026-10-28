@@ -24,11 +24,11 @@ func accessibilityColumnRange() -> NSRange
 - (NSRange) accessibilityColumnRange;
 ```
 
-#### Return Value
+## Return Value
 
 The column or columns that the cell spans.
 
-#### Discussion
+## Discussion
 
 Set the location of the range to the first column containing the cell. Use the length of the range to specify the number of columns that the cell spans. If you do not implement this method, the system assumes an initial index of [`NSNotFound`](../../Foundation/nsnotfound-9t5v2.md) and a length of `0`.
 

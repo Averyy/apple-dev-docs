@@ -25,7 +25,7 @@ var cylinder: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * cylinder;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity measures the strength of the correction in [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -3.0 to 3.0.
 

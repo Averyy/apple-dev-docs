@@ -17,7 +17,7 @@ The normal vector determining the orientation of the plane.
 var normal: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Anything on the opposite side of this normal is considered inside the shape.
 

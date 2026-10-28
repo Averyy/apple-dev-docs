@@ -25,7 +25,7 @@ var spotInnerAngle: CGFloat { get set }
 @property (nonatomic) CGFloat spotInnerAngle;
 ```
 
-#### Discussion
+## Discussion
 
 You define the cone-shaped illuminated area of a spotlight with a position and direction (from the node containing the light) and an angle specifying the cone’s width. Additionally, the illuminated area can smoothly transition from full illumination to no illumination. This property determines the width of the fully illuminated area.
 

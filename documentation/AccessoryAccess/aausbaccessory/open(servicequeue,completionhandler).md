@@ -23,7 +23,7 @@ func open(serviceQueue: dispatch_queue_t?) async throws -> IOUSBHostDevice
 - (void) openWithServiceQueue:(dispatch_queue_t) serviceQueue completionHandler:(void (^)(IOUSBHostDevice *_Nullable_on_error, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This operation opens a connection to the USB accessory for exclusive access and returns its [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md) object. An app can call this multiple times, subsequent calls will return the same `IOUSBHostDevice` instance.
 

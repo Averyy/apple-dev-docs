@@ -16,7 +16,7 @@ A single-bit Boolean that indicates whether the touch variable changed since the
 uint32_t touchChanged;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this property is `1` if the value in the [`touch`](./touch.md) field changed from `0` to `1` since the last event.
 

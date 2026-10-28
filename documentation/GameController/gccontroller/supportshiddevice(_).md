@@ -19,11 +19,11 @@ class func supportsHIDDevice(_ device: IOHIDDevice) -> Bool
 + (BOOL) supportsHIDDevice:(IOHIDDeviceRef) device;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the framework supports the device; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the Game Controller framework supports the input device, you can use the Game Controller APIs to interact with the device instead of the IOKit APIs.
 

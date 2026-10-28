@@ -22,7 +22,7 @@ var maxWhiteBalanceGain: Float { get }
 @property (nonatomic, readonly) float maxWhiteBalanceGain;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t change for the life of the object.
 

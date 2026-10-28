@@ -19,11 +19,11 @@ var borderWidth: CGFloat { get set }
 @property CGFloat borderWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s border width. It must be a custom box—that is, it has a type of [`NSBox.BoxType.custom`](./boxtype-swift.enum/custom.md)—and it must have a border style of [`NSBorderType.lineBorder`](../nsbordertype/lineborder.md).
 
-##### Special Considerations
+### Special Considerations
 
 Functional only when the receiver’s box type ([`boxType`](./boxtype-swift.property.md)) is `NSBoxCustom` and its border type ([`borderType`](./bordertype.md)) is `NSLineBorder`.
 

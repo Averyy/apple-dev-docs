@@ -20,7 +20,7 @@ Computes the prim’s composed local transform at the specified time.
 func transform(at time: USDStage.TimeCode = .default) -> USDValue.Matrix4d?
 ```
 
-#### Return Value
+## Return Value
 
 The composed local transformation matrix, or `nil` if the prim is not transformable.
 

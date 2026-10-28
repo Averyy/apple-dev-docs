@@ -25,7 +25,7 @@ func NSSwapHostLongToBig(_ x: UInt) -> UInt
 static unsigned long NSSwapHostLongToBig(unsigned long x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the value in `x`, specified in the current endian format, to big-endian format and returns the resulting value. If it is necessary to swap the bytes, this function calls [`NSSwapLong(_:)`](./nsswaplong%28_%29.md) to perform the swap.
 

@@ -24,7 +24,7 @@ var cgAffineTransformValue: CGAffineTransform { get }
 @property (readonly) CGAffineTransform CGAffineTransformValue;
 ```
 
-#### Return Value
+## Return Value
 
  Reading this property creates a `CGAffineTransformValue` structure from the first six values in the vector.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeSaturation: String
 extern NSString * const HMCharacteristicTypeSaturation;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point percentage of maximum saturation.
 

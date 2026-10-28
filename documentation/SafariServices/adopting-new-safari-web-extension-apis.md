@@ -13,11 +13,11 @@ Improve your web extension in Safari with a non-persistent background page and n
 - macOS 10.14+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 sessions [10027: Explore Safari Web Extension Improvements](https://developer.apple.com/wwdc21/10027/); and [10104: Meet Safari Web Extensions on iOS](https://developer.apple.com/wwdc21/10104/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

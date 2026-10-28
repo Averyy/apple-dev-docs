@@ -19,7 +19,7 @@ A requested configuration object for the button symbol image.
 var preferredSymbolConfigurationForImage: UIImage.SymbolConfiguration? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A symbol configuration defines details such as the point size, scale, text style, weight, and font of symbol image. The button uses these details to determine which variant of the image to use and how to scale or style the image.
 

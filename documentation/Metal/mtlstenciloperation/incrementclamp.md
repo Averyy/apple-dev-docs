@@ -24,7 +24,7 @@ case incrementClamp
 MTLStencilOperationIncrementClamp
 ```
 
-#### Discussion
+## Discussion
 
 The operation doesn’t modify a stencil value if its currently the maximum representable value.
 

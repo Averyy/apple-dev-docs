@@ -23,11 +23,11 @@ static func decodeAtomicOptionalRepresentation(_ representation: consuming Self.
 
 Available when `Self` conforms to `AtomicOptionalRepresentable` and `RawValue` conforms to `AtomicOptionalRepresentable`.
 
-#### Return Value
+## Return Value
 
 The newly decoded logical type `Self?`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply decodes the storage representation used in atomic operations on `Optional` back into the logical type for normal use, `Self?`.
 

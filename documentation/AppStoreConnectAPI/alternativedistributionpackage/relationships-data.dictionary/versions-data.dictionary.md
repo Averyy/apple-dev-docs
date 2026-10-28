@@ -15,7 +15,7 @@ The relationship container linking an alternative distribution package to its as
 object AlternativeDistributionPackage.Relationships.Versions
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the object that owns these versions, see [`AlternativeDistributionPackage.Relationships`](../relationships-data.dictionary.md).
 

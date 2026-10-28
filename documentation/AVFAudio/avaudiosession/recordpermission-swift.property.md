@@ -25,11 +25,11 @@ var recordPermission: AVAudioSession.RecordPermission { get }
 @property (readonly) AVAudioSessionRecordPermission recordPermission;
 ```
 
-#### Return Value
+## Return Value
 
 Returns one of three status values:
 
-#### Discussion
+## Discussion
 
 - The user granted permission to record ([`AVAudioSession.RecordPermission.granted`](./recordpermission-swift.enum/granted.md)).
 - The user denied recording permission ([`AVAudioSession.RecordPermission.denied`](./recordpermission-swift.enum/denied.md)).

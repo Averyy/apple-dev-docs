@@ -21,7 +21,7 @@ func dismiss()
 - (void) dismiss;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to dismiss the extension. The system displays the keyboard if there is any content in the Messages app’s input field. If the input field is empty, the system dismisses the keyboard entirely.
 

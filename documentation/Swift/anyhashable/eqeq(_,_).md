@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two type-erased hashable instances wr
 static func == (lhs: AnyHashable, rhs: AnyHashable) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 `AnyHashable` considers bridged counterparts (such as a `String` and an `NSString`) of the same value to be equivalent when type-erased. If those compatible types use different definitions for equality, values that were originally distinct might compare as equal when they are converted to `AnyHashable`:
 

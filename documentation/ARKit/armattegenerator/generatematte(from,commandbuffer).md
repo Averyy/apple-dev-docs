@@ -20,7 +20,7 @@ func generateMatte(from frame: ARFrame, commandBuffer: any MTLCommandBuffer) -> 
 - (id<MTLTexture>) generateMatteFromFrame:(ARFrame *) frame commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An alpha matte texture at the resolution you chose at initialization.
 

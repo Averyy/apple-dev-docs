@@ -23,7 +23,7 @@ var maximumZoomScale: CGFloat { get set }
 @property (nonatomic) CGFloat maximumZoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines how large the content can be scaled. It must be greater than the minimum zoom scale for zooming to be enabled. The default value is `1.0`.
 

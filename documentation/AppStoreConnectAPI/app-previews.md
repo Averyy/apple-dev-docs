@@ -5,7 +5,7 @@
 
 Upload and download app previews for an app locale and display target.
 
-#### Overview
+## Overview
 
 An `appPreviews` resource represents a single app preview for an app locale and display target. Use this resource to:
 

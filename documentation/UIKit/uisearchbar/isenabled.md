@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` to enable the search bar or `false` to disable it. An enabled search bar responds to user interactions; a disabled search bar ignores touch events and takes on a disabled appearance.
 

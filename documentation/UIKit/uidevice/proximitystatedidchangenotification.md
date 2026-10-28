@@ -28,7 +28,7 @@ extern NSNotificationName const UIDeviceProximityStateDidChangeNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 You can obtain the proximity state by getting the value of the [`proximityState`](./proximitystate.md) property.
 

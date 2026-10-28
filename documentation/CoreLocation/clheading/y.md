@@ -23,7 +23,7 @@ var y: CLHeadingComponentValue { get }
 @property (nonatomic, readonly) CLHeadingComponentValue y;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the y-axis deviation from the magnetic field lines being tracked by the device.
 

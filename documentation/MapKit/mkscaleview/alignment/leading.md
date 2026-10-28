@@ -23,7 +23,7 @@ case leading
 MKScaleViewAlignmentLeading
 ```
 
-#### Discussion
+## Discussion
 
 This value causes the scale view to place the value `0` at the leading edge of the view. The scale view places the distance representing the current scale of the map at the trailing edge of the view.
 

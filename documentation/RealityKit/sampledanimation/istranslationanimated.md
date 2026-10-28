@@ -22,7 +22,7 @@ var isTranslationAnimated: Bool { get set }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 If you set this property to `true`, the animation accommodates translation differences in the entity’s transform by interpolating to the target translation across the animation timeline.
 

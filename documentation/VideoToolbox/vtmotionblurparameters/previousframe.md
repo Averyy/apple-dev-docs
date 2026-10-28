@@ -22,7 +22,7 @@ var previousFrame: VTFrameProcessorFrame? { get }
 @property (nonatomic, readonly, nullable) VTFrameProcessorFrame * previousFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be set to nil for the first frame.
 

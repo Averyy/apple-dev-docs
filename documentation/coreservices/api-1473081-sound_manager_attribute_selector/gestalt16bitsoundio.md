@@ -14,7 +14,7 @@
 gestalt16BitSoundIO = 7
 ```
 
-#### Discussion
+## Discussion
 
 Set if the built-in sound hardware is able to play and record 16-bit samples. This indicates that built-in hardware necessary to handle 16-bit data is available.
 

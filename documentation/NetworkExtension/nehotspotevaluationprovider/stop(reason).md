@@ -19,7 +19,7 @@ Tells the exension to stop the evaluation provider, in response to a request fro
 func stop(reason: NEProviderStopReason) async
 ```
 
-#### Discussion
+## Discussion
 
 Perform any needed cleanup tasks in your implementation of this method. After stopping, the provider receives no further commands from the framework.
 

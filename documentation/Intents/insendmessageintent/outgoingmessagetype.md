@@ -32,7 +32,7 @@ var outgoingMessageType: INOutgoingMessageType { get }
 @property (atomic, assign, readonly) INOutgoingMessageType outgoingMessageType;
 ```
 
-#### Discussion
+## Discussion
 
 If the user asks Siri to send an audio message,_ _the value of this property is [`INOutgoingMessageType.outgoingMessageAudio`](../inoutgoingmessagetype/outgoingmessageaudio.md). An audio message may also include a transcription of the audio message in the [`content`](./content.md) property.
 

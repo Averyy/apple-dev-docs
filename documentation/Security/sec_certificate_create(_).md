@@ -23,11 +23,11 @@ func sec_certificate_create(_ certificate: SecCertificate) -> sec_certificate_t?
 sec_certificate_tsec_certificate_create(SecCertificateRef certificate);
 ```
 
-#### Return Value
+## Return Value
 
 A `sec_certificate_t` instance.
 
-#### Discussion
+## Discussion
 
 Create an ARC-able `sec_certificate_t` instance from a `SecCertificateRef`.
 

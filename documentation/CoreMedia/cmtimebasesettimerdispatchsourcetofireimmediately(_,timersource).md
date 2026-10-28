@@ -25,7 +25,7 @@ func CMTimebaseSetTimerDispatchSourceToFireImmediately(_ timebase: CMTimebase, t
 extern OSStatus CMTimebaseSetTimerDispatchSourceToFireImmediately(CMTimebaseRef timebase, dispatch_source_t timerSource);
 ```
 
-#### Discussion
+## Discussion
 
 The timer source you specify must be on the list of timers the timebase manages. This is equivalent to calling `dispatch_source_set_timer(timerSource, DISPATCH_TIME_NOW, 0, 0 )`; except that the timebase gets to know that it shouldn’t interfere.
 

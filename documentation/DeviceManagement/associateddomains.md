@@ -19,13 +19,13 @@ object AssociatedDomains
 
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.associated-domains` as the payload type.
 
 You can use associated domains with features such as Extensible AppSSO, universal links, and Password AutoFill.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ You can use associated domains with features such as Extensible AppSSO, universa
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

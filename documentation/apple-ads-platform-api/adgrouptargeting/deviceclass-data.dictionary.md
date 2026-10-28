@@ -15,7 +15,7 @@ Device class targeting (for example, `IPHONE` or `IPAD`).
 object AdGroupTargeting.DeviceClass
 ```
 
-#### Discussion
+## Discussion
 
 Used with App Store campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 

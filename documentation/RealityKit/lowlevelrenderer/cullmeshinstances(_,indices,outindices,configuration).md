@@ -18,7 +18,7 @@ Culls mesh instances against a frustum, writing surviving indices to an output s
 static func cullMeshInstances(_ meshInstances: LowLevelMeshInstanceArray, indices: Span<Int>, outIndices: inout OutputSpan<Int>, configuration: LowLevelRenderer.CullConfiguration)
 ```
 
-#### Discussion
+## Discussion
 
 Tests each instance’s bounds against the planes in `configuration.frustum`, using `meshInstance.bounds` when set and falling back to the mesh part’s bounds otherwise. Instances whose bounds lie entirely outside any single plane are discarded; the rest are appended to `outIndices` in the same order as `indices`. `nil` slots in `meshInstances` are skipped.
 

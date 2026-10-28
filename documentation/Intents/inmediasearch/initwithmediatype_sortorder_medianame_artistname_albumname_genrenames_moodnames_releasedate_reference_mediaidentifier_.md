@@ -20,7 +20,7 @@ Creates a new media search object with the specified parameters.
 - (instancetype) initWithMediaType:(INMediaItemType) mediaType sortOrder:(INMediaSortOrder) sortOrder mediaName:(NSString *) mediaName artistName:(NSString *) artistName albumName:(NSString *) albumName genreNames:(NSArray<NSString *> *) genreNames moodNames:(NSArray<NSString *> *) moodNames releaseDate:(INDateComponentsRange *) releaseDate reference:(INMediaReference) reference mediaIdentifier:(NSString *) mediaIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search object or `nil` if the object could not be created.
 

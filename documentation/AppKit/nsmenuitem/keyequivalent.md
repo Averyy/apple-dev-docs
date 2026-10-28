@@ -19,7 +19,7 @@ var keyEquivalent: String { get set }
 @property (copy) NSString * keyEquivalent;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to specify the Backspace key as the key equivalent for a menu item, use a single character string with [`NSBackspaceCharacter`](../nsbackspacecharacter.md) (defined in `NSText.h` as `0x08`) and for the Forward Delete key, use [`NSDeleteCharacter`](../nsdeletecharacter.md) (defined in `NSText.h` as `0x7F`). Note that these are not the same characters you get from an [`NSEvent`](../nsevent.md) key-down event when pressing those keys.
 

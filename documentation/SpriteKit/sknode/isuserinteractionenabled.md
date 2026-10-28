@@ -30,7 +30,7 @@ var isUserInteractionEnabled: Bool { get set }
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 - [Understanding Hit-Testing](../understanding-hit-testing.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

@@ -13,7 +13,7 @@
 var soInputMode: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Get or set the speech channel’s current text-processingmode. The returned value specifies whether the channel is currentlyin text input mode or phoneme input mode. The `speechInfo` parameteris a pointer to a variable of type `OSType`,which specifies a text-processing mode. The constants [`modeText`](./modetext.md) and [`modePhonemes`](./modephonemes.md) specifythe available text-processing modes.
 

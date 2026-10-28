@@ -16,11 +16,11 @@ Returns the session reference to an already open device.
 IOFireWireSessionRef (*getSessionRef)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a sessionRef on success.
 
-#### Discussion
+## Discussion
 
 Sometimes it is desirable to open multiple user clients on a device. In the case of FireWire sometimes we wish to have both the FireWire User Client and the SBP2 User Client open at the same time.
 

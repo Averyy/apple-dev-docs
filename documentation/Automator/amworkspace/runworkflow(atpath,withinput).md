@@ -20,7 +20,7 @@ func runWorkflow(atPath path: String!, withInput input: Any!) throws -> Any
 - (id) runWorkflowAtPath:(NSString *) path withInput:(id) input error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `nil` if an error occurs or if the action completes successfully without producing output; otherwise, the output of the last action in the workflow.
 

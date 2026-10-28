@@ -17,7 +17,7 @@ A description of the setting that controls which websites a user can access.
 static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`WebContentSettings.FilterPolicy.none`](./filterpolicy/none.md), which indicates that the system doesn’t block any websites.
 

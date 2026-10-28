@@ -21,7 +21,7 @@ func setARSession(_ session: ARSession)
 - (void) setARSession:(ARSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) flag to `true` before calling this function. If you enable the flag and run a nearby-interaction session without calling [`setARSession(_:)`](./setarsession%28_%29.md), the framework creates an internal [`ARSession`](../../ARKit/arsession.md) instance to which the app has no access.
 

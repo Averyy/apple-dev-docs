@@ -15,11 +15,11 @@ Sets the scalar value of the level control.
 kern_return_t SetScalarValue(float in_scalar);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the scalar value sends a notification to the host to update the object state.
 

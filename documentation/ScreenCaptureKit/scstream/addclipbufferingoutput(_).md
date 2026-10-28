@@ -22,7 +22,7 @@ func addClipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput) throws
 - (BOOL) addClipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Add a SCClipBufferingOutput to the SCStream to start clip buffering. Samples will begin accumulating in a rolling buffer that retains the most recent content up to 15 seconds.
 

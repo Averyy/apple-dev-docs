@@ -19,7 +19,7 @@ func SCDynamicStoreSetValue(_ store: SCDynamicStore?, _ key: CFString, _ value: 
 Boolean SCDynamicStoreSetValue(SCDynamicStoreRef store, CFStringRef key, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the key was updated; otherwise, `FALSE`.
 

@@ -21,7 +21,7 @@ Computes a message authentication code for the given data.
 static func authenticationCode(for data: RawSpan, using key: SymmetricKey) -> HMAC<H>.MAC
 ```
 
-#### Return Value
+## Return Value
 
 The message authentication code.
 

@@ -25,7 +25,7 @@ class func fetchCurrentUserRecordOperation() -> Self
 + (instancetype) fetchCurrentUserRecordOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The returned operation object searches for the single record that corresponds to the current user record. You must associate at least one progress handler with the operation object (excluding the completion handler) to process the results.
 

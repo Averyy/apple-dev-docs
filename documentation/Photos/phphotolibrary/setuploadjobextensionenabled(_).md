@@ -27,7 +27,7 @@ func setUploadJobExtensionEnabled(_ enable: Bool) throws
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 You must call this function before you create [`PHAssetResourceUploadJob`](../phassetresourceuploadjob.md) in the extension’s host application.
 

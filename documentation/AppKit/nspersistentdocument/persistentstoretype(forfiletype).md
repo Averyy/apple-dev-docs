@@ -19,11 +19,11 @@ func persistentStoreType(forFileType fileType: String) -> String
 - (NSString *) persistentStoreTypeForFileType:(NSString *) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 The type of persistent store associated with `fileType`. For possible values, see [`NSPersistentStoreCoordinator`](../../CoreData/nspersistentstorecoordinator.md).
 
-#### Discussion
+## Discussion
 
 You set the persistent store type in the application’s property list.
 

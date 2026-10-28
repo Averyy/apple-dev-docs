@@ -19,7 +19,7 @@ var CPU_BASED_TSC_OFFSET: UInt32 { get }
 CPU_BASED_TSC_OFFSET
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

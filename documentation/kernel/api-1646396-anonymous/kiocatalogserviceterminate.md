@@ -13,7 +13,7 @@
 kIOCatalogServiceTerminate
 ```
 
-#### Discussion
+## Discussion
 
 Terminates a particular service by name.
 

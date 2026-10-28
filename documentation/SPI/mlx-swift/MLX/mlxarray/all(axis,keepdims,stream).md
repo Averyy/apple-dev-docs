@@ -17,7 +17,7 @@ An `and` reduction over the given axes.
 func all(axis: Int, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`all(axes:keepDims:stream:)`](./all%28axes,keepdims,stream%29.md)

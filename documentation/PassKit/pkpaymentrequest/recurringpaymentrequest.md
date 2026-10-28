@@ -23,7 +23,7 @@ var recurringPaymentRequest: PKRecurringPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKRecurringPaymentRequest * recurringPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 

@@ -23,7 +23,7 @@ var hidesNavigationBarDuringPresentation: Bool { get set }
 @property (nonatomic, assign) BOOL hidesNavigationBarDuringPresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

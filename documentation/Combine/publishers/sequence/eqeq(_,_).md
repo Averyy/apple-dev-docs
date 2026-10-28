@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Sequence<Elements, Failure>, rhs: Publishers.Seq
 
 Available when `Elements` conforms to `Equatable`, `Elements` conforms to `Sequence`, and `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `sequence` properties; otherwise `false`.
 

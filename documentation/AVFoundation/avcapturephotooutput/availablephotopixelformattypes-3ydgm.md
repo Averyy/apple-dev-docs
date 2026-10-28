@@ -20,7 +20,7 @@ The pixel formats the capture output supports for photo capture.
 var availablePhotoPixelFormatTypes: [OSType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 To capture a photo in an uncompressed format, such as 420f, 420v, or BGRA, use the [`init(format:)`](../avcapturephotosettings/init%28format%29.md) initializer to create your photo settings object. In that initializer’s `format` dictionary, pass the key [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md), whose value must be one of the pixel format identifiers listed in this array.
 

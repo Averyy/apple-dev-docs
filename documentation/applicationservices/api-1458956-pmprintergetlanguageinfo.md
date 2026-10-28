@@ -15,11 +15,11 @@ Obtains information about the imaging language for the specified printer.
 OSStatus PMPrinterGetLanguageInfo(PMPrinter printer, PMLanguageInfo *info);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The function `PMPrinterGetLanguageInfo` is useful only for PostScript printers. You must call this function between the creation and release of a printing session.
 

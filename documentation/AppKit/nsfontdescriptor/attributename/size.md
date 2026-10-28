@@ -19,7 +19,7 @@ static let size: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontSizeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a floating-point value.
 

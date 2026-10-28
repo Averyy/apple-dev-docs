@@ -19,7 +19,7 @@ func invert() -> Bool
 - (BOOL) invert;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the invert succeeded; otherwise [`false`](../../Swift/false.md).
 

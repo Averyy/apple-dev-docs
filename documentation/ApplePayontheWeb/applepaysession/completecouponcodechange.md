@@ -22,7 +22,7 @@ undefined completeCouponCodeChange(
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This is the method called by [`oncouponcodechanged`](./oncouponcodechanged.md) to complete the event.
 

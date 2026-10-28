@@ -21,7 +21,7 @@ A type that represents Universal Scene Description Package content.
 extern UTType * const UTTypeUSDZ;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.pixar.universal-scene-description-mobile`.
 

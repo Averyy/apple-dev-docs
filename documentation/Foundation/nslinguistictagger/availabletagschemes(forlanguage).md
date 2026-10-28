@@ -27,11 +27,11 @@ class func availableTagSchemes(forLanguage language: String) -> [NSLinguisticTag
 + (NSArray<NSString *> *) availableTagSchemesForLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The available tag schemes. For possible values, see [`NSLinguisticTagScheme`](../nslinguistictagscheme.md).
 
-#### Discussion
+## Discussion
 
 This is a convenience method for calling the [`availableTagSchemes(for:language:)`](./availabletagschemes%28for,language%29.md), passing [`NSLinguisticTaggerUnit.word`](../nslinguistictaggerunit/word.md) as the linguistic unit.
 

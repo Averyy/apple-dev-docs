@@ -22,11 +22,11 @@ object Title
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Articles usually have one `Title` component, but depending on your article you might have one `title` component per [`Section`](./section.md). For subtitles in larger articles, use [`Heading`](./heading.md).
 
-##### Example
+### Example
 
 ```json
 {

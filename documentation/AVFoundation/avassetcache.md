@@ -25,7 +25,7 @@ class AVAssetCache
 @interface AVAssetCache : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can download HTTP Live Streaming assets to an iOS device using the [`AVAssetDownloadURLSession`](./avassetdownloadurlsession.md) and [`AVAssetDownloadTask`](./avassetdownloadtask.md) classes.
 

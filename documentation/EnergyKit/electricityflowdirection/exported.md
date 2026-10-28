@@ -17,7 +17,7 @@ The utility receives electricity.
 case exported
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a person sells their excess solar energy.
 

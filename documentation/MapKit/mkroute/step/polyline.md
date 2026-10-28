@@ -25,7 +25,7 @@ var polyline: MKPolyline { get }
 @property (nonatomic, readonly) MKPolyline * polyline;
 ```
 
-#### Discussion
+## Discussion
 
 The polyline object in this property contains the geometry for this step. You can use the polyline object as an overlay in a map view.
 

@@ -19,7 +19,7 @@ var content: Any? { get set }
 @property (strong, nullable) id content;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be an array of objects, or a single root object. The default value is `nil`. This property is observable using key-value observing.
 

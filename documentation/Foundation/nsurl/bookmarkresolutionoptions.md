@@ -25,11 +25,11 @@ struct BookmarkResolutionOptions
 enum NSURLBookmarkResolutionOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When resolving a bookmark, use bitwise `OR` operators to combine the options you want to specify, and provide them to the `options` parameter of the [`URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:`](./urlbyresolvingbookmarkdata_options_relativetourl_bookmarkdataisstale_error_.md) method.
 
-##### Version-Notes
+### Version-Notes
 
 Security-scoped bookmarks are not available in versions of macOS prior to OS X 10.7.3.
 

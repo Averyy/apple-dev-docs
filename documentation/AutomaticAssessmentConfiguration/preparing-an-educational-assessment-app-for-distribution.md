@@ -5,15 +5,15 @@
 
 Ensure your app maintains academic integrity by reviewing assessment practices and managing system capabilities.
 
-#### Overview
+## Overview
 
 To help ensure academic integrity for iOS, iPadOS, and macOS assessment apps, it’s critical to acquire an Automatic Assessment Configuration (AAC) entitlement, assess your security policies, and manage capabilities. Ensure the AAC entitlement is in your app’s provisioning profile and decide how to manage system capabilities not already restricted by AAC, and third-party keyboards. For macOS apps, focus on handling app termination and window operations during assessments to prevent the system from getting locked in assessment mode and providing a poor user experience.
 
-##### Configure and use the Automatic Assessment Configuration entitlement
+### Configure and use the Automatic Assessment Configuration entitlement
 
 Begin by completing the [Automatic Assessment Configuration Entitlement Request](https://developer.apple.com/contact/request/automatic-assessment-configuration/). After receiving your AAC entitlement, you must set up provisioning before building your app using AAC.
 
-##### Determine your app’s security requirements
+### Determine your app’s security requirements
 
 AAC creates a secure environment for delivering assessments in iOS, iPadOS, and macOS by restricting hardware and software capabilities at the system level. When a student starts a test in assessment mode in iOS and iPadOS, the device automatically restricts usage to just that specific app. This prevents students from accessing any other apps or capabilities.
 
@@ -41,7 +41,7 @@ In assessment mode, macOS automatically limits access to one or more apps and re
 
 > ❗ **Important**:  Consider your app’s assessment security policies to determine what additional capabilities to build into your app.
 
-##### Restrict third-party software keyboards for iOS and iPadOS
+### Restrict third-party software keyboards for iOS and iPadOS
 
 AAC doesn’t restrict third-party software keyboards, and some third-party keyboards support searching from within the keyboard. If you don’t want these used in your assessment app, you restrict their use with [`application(_:shouldAllowExtensionPointIdentifier:)`](../UIKit/uiapplicationdelegate/application%28_,shouldallowextensionpointidentifier%29.md) as shown in the code below:
 
@@ -57,7 +57,7 @@ func application(_ application: UIApplication, shouldAllowExtensionPointIdentifi
 
 ```
 
-##### Control the context menu in iOS and iPadOS
+### Control the context menu in iOS and iPadOS
 
 A context menu appears when someone selects text or uses a long-press gesture in a text field in iOS or iPadOS. AAC removes the Share, Translate, and Scan Text options from the top-level menu. It’s important to carefully review any additional items that appear and remove them from the menu if you don’t want students to access them during testing.
 
@@ -77,17 +77,17 @@ Additionally, the property [`lookup`](../UIKit/uimenu/identifier-swift.struct/lo
 
 For more information about context menus, see Human Interface Guidelines > [Context menus](https://developer.apple.com/design/human-interface-guidelines/context-menus).
 
-##### Request permissions for your macOS app
+### Request permissions for your macOS app
 
 AAC prevents the system from showing notifications to people. This means that notifications requesting the user to give permissions, like microphone or camera access, aren’t displayed to users. Therefore, it’s essential to request all necessary permissions before entering AAC, allowing people to respond appropriately. Additionally, rechecking permissions before entering AAC is advisable to confirm that users have granted all required permissions.
 
 [Requesting Authorization for Media Capture on macOS](../BundleResources/requesting-authorization-for-media-capture-on-macos.md) explains how to prompt the user to authorize access to the camera and microphone.
 
-##### Control the context menu for macOS
+### Control the context menu for macOS
 
 You can associate a menu with each view. Your view subclasses can arrange to build their own context menus, or they can customize the default context menu by implementing `menuWillOpen:` in the menu’s delegate by calling `removeAllItems`. Another approach is to capture all events at the top level of the application, via `NSEvent.addLocalMonitorForEvents`, and return `nil` for click events so they’re ignored, which prevents the appearance of any context menu.
 
-##### Handle text replacement in macOS
+### Handle text replacement in macOS
 
 Assessment mode doesn’t block text replacements. A person’s text replacement dictionary, set in System Settings > Keyboard, is kept in a global default. Your app can override this global default and replace it with an empty dictionary by adding the following:
 
@@ -97,7 +97,7 @@ UserDefaults.standard.setValue([:], forKey:"NSUserDictionaryReplacementItems")
 
 Replacing with an empty dictionary ensures that your app doesn’t offer text replacements in assessment mode. It’s important to do this before anything in your UI is loaded, so add it to `init()` of a custom subclass of `NSApplication`.
 
-##### Prevent early termination of an assessment in macOS
+### Prevent early termination of an assessment in macOS
 
 If your app includes a window with an exit button for assessment mode, ensure that people can’t close that window while an assessment is ongoing to prevent premature termination of the assessment. One solution is to remove the close and minimize buttons from the window’s title bar and the Close menu item if your app has one. You can edit the window’s properties in the Attributes inspector or programmatically remove the buttons. You can also arrange to have the window’s delegate deny the close operation if a test is in progress.
 
@@ -115,7 +115,7 @@ Even though your app’s menu bar isn’t visible and someone can’t reach it w
 
 > ❗ **Important**:  Test these options carefully. Be careful not to lock your development Mac in assessment mode accidentally, which happens when Xcode pauses at a breakpoint while the Mac is in this mode, potentially leaving you with no option but to restart the Mac to exit assessment mode. To prevent such situations, test these functionalities in a virtual machine, which offers the flexibility to force quit if required.
 
-##### Consider interactions with app-based content filters and VPNs in macOS
+### Consider interactions with app-based content filters and VPNs in macOS
 
 AAC restricts network access to every process except those the developer allows. Temporary network access is granted to any process working on behalf of a process that has network access. Some app-based third-party network solutions, such as content filters and VPNs, may prevent an assessment app from connecting to the network during AAC. To accommodate AAC usage on Mac computers with these products, consider these strategies:
 

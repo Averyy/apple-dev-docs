@@ -25,7 +25,7 @@ typealias MIDINotifyProc = (UnsafePointer<MIDINotification>, UnsafeMutableRawPoi
 typedef void (*)(const struct MIDINotification *, void *) MIDINotifyProc;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this callback when some aspect of the current MIDI setup changes. The system calls it on the same thread that you called [`MIDIClientCreate(_:_:_:_:)`](./midiclientcreate%28_,_,_,_%29.md) on.
 

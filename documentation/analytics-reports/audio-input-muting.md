@@ -5,7 +5,7 @@
 
 Analyze details about audio-input muting and unmuting gestures during a call with conferencing apps.
 
-#### Overview
+## Overview
 
 The data in this report contains aggregate information about audio input muting and unmuting gestures during a call with conferencing apps. Each audio input mute gesture is collected by the gesture type and the app running at the time of the gesture. Gesture type is inclusive of UI button tap and click action for AirPods and Beats users.
 
@@ -22,7 +22,7 @@ The data in this report contains aggregate information about audio input muting 
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ The data in this report contains aggregate information about audio input muting 
 | Release Type | Type of software release | `string` |
 | Action | Different actions you can take to mute, unmute and reject. | `string` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

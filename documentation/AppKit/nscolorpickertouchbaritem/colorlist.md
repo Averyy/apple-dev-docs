@@ -19,7 +19,7 @@ var colorList: NSColorList! { get set }
 @property (strong, null_resettable) NSColorList * colorList;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to the standard system color list.
 

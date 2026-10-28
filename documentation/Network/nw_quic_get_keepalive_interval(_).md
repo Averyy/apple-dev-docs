@@ -25,7 +25,7 @@ func nw_quic_get_keepalive_interval(_ metadata: nw_protocol_metadata_t) -> UInt1
 uint16_t nw_quic_get_keepalive_interval(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A keepalive interval, in seconds.
 

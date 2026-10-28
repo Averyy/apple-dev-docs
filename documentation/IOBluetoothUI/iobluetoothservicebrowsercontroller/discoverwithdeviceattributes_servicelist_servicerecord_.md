@@ -15,11 +15,11 @@ Invoke an already created window controller to display, and run the modal dialog
 - (IOReturn) discoverWithDeviceAttributes:(IOBluetoothDeviceSearchAttributes *) deviceAttributes serviceList:(NSArray *) serviceArray serviceRecord:(IOBluetoothSDPServiceRecord **) outRecord;
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn - * kIOReturnSuccess - on successful completion. * kCanceledErr - User canceled.
 
-#### Discussion
+## Discussion
 
 This method will run the IOBluetoothServiceBrowserController browser window as a sheet for the window passed to it in sheetWindow.
 

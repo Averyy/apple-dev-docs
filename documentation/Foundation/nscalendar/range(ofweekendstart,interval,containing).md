@@ -25,11 +25,11 @@ func range(ofWeekendStart datep: AutoreleasingUnsafeMutablePointer<NSDate?>?, in
 - (BOOL) rangeOfWeekendStartDate:(NSDate **) datep interval:(NSTimeInterval *) tip containingDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date falls within a weekend period, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Note that a particular calendar day may not necessarily fall entirely within a weekend period, as weekends can start in the middle of a day in some calendars and locales.
 

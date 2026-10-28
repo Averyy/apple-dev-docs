@@ -23,7 +23,7 @@ var serverEnvironmentIdentifier: String { get set }
 @property (nonatomic, strong, nonnull) NSString * serverEnvironmentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If `serverEnvironmentIdentifier` isn’t present, the system uses the default Apply Pay server and returns an empty string.
 

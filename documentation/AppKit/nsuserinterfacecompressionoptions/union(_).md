@@ -19,7 +19,7 @@ func union(_ options: NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompr
 - (NSUserInterfaceCompressionOptions *) optionsByAddingOptions:(NSUserInterfaceCompressionOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSCompressibleUserInterfaceOptions` object which represents the union with the supplied compression options.
 

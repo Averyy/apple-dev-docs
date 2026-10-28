@@ -26,7 +26,7 @@ func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) scheduleInRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in conjunction with [`remove(from:forMode:)`](./remove%28from,formode%29.md) to transfer the receiver to a run loop other than the default one. You should not attempt to run the receiver on multiple run loops.
 

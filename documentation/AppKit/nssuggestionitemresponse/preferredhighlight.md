@@ -15,7 +15,7 @@ The preferred response that the control should take when this batch of results c
 var preferredHighlight: NSSuggestionItemResponse<SuggestionItemType>.Highlight
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This value is just a hint to the control on how to actually respond and may not  affect the highlighted item. In the case that the user has begun to already make a selection by using the up/down arrow keys, or using the mouse, the actual highlighted item may not be affected.
 

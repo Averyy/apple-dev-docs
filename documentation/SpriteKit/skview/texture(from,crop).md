@@ -28,11 +28,11 @@ func texture(from node: SKNode, crop: CGRect) -> SKTexture?
 
 - [Creating a New Node By Rendering To a Texture](../creating-a-new-node-by-rendering-to-a-texture.md)
 
-#### Return Value
+## Return Value
 
 A SpriteKit texture that holds the rendered image.
 
-#### Discussion
+## Discussion
 
 The node being rendered does not need to appear in the view’s presented scene. The new texture is created with a size equal to the size of the `crop` rectangle. If the node is not a scene node, it is rendered with a clear background color (`[``SKColor` `clear]`).
 

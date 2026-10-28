@@ -9,9 +9,9 @@ Returns the estimated time of arrival (ETA) and distance between starting and en
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

@@ -24,7 +24,7 @@ var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm { get set }
 @property NEVPNIKEv2IntegrityAlgorithm integrityAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NEVPNIKEv2IntegrityAlgorithm.SHA256`](../nevpnikev2integrityalgorithm/sha256.md).
 

@@ -15,7 +15,7 @@ The version of MapKit JS.
 get version(): string;
 ```
 
-#### Discussion
+## Discussion
 
 The version of MapKit JS that’s running. This is a dot-separated string with major, minor, and patch version numbers.
 

@@ -22,7 +22,7 @@ var renderHandler: PHASEPullStreamRenderHandler { get set }
 @property (nonatomic, strong) PHASEPullStreamRenderBlock renderBlock;
 ```
 
-#### Discussion
+## Discussion
 
 A property to set the render block callback that will render the samplesIW
 

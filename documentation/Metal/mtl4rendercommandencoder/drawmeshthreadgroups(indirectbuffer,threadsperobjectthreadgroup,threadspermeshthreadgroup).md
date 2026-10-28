@@ -25,7 +25,7 @@ func drawMeshThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerObjectThreadg
 - (void) drawMeshThreadgroupsWithIndirectBuffer:(MTLGPUAddress) indirectBuffer threadsPerObjectThreadgroup:(MTLSize) threadsPerObjectThreadgroup threadsPerMeshThreadgroup:(MTLSize) threadsPerMeshThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This method enables you to determine the number of threadgroups per grid indirectly, in the GPU timeline. Metal expects this buffer’s contents to match the layout of structure [`MTLDispatchThreadgroupsIndirectArguments`](../mtldispatchthreadgroupsindirectarguments.md). You are responsible for ensuring the address of this buffer has 4-byte alignment.
 

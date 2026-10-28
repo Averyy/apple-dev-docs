@@ -19,7 +19,7 @@ var isFlipped: Bool { get }
 @property (readonly, getter=isFlipped) BOOL flipped;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver’s coordinate system is flipped, [`false`](../../Swift/false.md) otherwise.
 

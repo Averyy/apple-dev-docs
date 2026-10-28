@@ -21,7 +21,7 @@ The sync engine state was updated, and you should persist it locally.
 @interface CKSyncEngineStateUpdateEvent : CKSyncEngineEvent
 ```
 
-#### Overview
+## Overview
 
 In order to function properly and efficiently, `CKSyncEngine` tracks some state internally. When the sync engine state changes, it gives you the latest serialized version in a [`CKSyncEngine.Event.StateUpdate`](./cksyncengine-5sie5/event/stateupdate.md). This event happens occasionally when the sync engine modifies the state internally during normal sync operation. This event also happens when you change the state yourself.
 

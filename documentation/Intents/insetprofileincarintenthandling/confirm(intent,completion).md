@@ -28,7 +28,7 @@ optional func confirm(intent: INSetProfileInCarIntent) async -> INSetProfileInCa
 - (void) confirmSetProfileInCar:(INSetProfileInCarIntent *) intent completion:(void (^)(INSetProfileInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can restore settings from the specified profile. For example, you might use this method to verify that you have an active connection to the vehicle and that the specified profile is valid. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to make the change.
 

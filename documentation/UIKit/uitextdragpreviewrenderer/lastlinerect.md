@@ -22,7 +22,7 @@ var lastLineRect: CGRect { get }
 @property (nonatomic, readonly) CGRect lastLineRect;
 ```
 
-#### Discussion
+## Discussion
 
 The last line rectangle contains the last line of text in the drag preview that may be a partial line. This property can be a zero rectangle. The initial value is also not calculated until the first time it’s used.
 

@@ -24,7 +24,7 @@ case twoUp
 kPDFDisplayTwoUp
 ```
 
-#### Discussion
+## Discussion
 
 Vertical and horizontal scrolling apply only to the pair of displayed pages.
 

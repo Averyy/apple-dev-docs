@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the two given values are not equal.
 static func != <Other>(lhs: Self, rhs: Other) -> Bool where Other : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 You can check the inequality of instances of any `BinaryInteger` types using the not-equal-to operator (`!=`). For example, you can test whether the first `UInt8` value in a string’s UTF-8 encoding is not equal to the first `UInt32` value in its Unicode scalar view:
 

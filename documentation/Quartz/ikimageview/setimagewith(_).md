@@ -19,7 +19,7 @@ func setImageWith(_ url: URL!)
 - (void) setImageWithURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the preferred initializer for RAW images. If you use this method for a TIFF file that contains multiple images, only the first image is displayed.
 

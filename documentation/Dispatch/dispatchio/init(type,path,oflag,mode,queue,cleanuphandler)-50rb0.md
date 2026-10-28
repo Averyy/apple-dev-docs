@@ -22,7 +22,7 @@ Creates a new I/O channel that accesses the file at the specified path, potentia
 convenience init?(type: DispatchIO.StreamType, path: UnsafePointer<Int8>, oflag: Int32, mode: mode_t, queue: DispatchQueue, cleanupHandler: @escaping (Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This method opens the channel by passing the `path`, `oflag`, and mode parameters to the low-level `open(2)` function. The file descriptor returned by that function remains open and under system control until you close the channel, or until an error occurs that causes the channel to release the file descriptor. After closing the file descriptor, the channel executes the specified `cleanupHandler` block on `queue`.
 

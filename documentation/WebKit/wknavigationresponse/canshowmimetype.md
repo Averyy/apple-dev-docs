@@ -23,7 +23,7 @@ var canShowMIMEType: Bool { get }
 @property (nonatomic, readonly) BOOL canShowMIMEType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if WebKit is able to display the MIME type.
 

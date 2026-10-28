@@ -26,13 +26,13 @@ func CFStreamCreatePairWithSocketToNetService(_ alloc: CFAllocator?, _ service: 
 extern void CFStreamCreatePairWithSocketToNetService(CFAllocatorRef alloc, CFNetServiceRef service, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream);
 ```
 
-#### Discussion
+## Discussion
 
 The streams do not create a socket, resolve the service, or connect to the service’s host until you open one of the streams.
 
 Most properties are shared by both streams. Setting a shared property for one stream automatically sets the property for the other.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

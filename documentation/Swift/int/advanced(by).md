@@ -21,11 +21,11 @@ Returns a value that is offset the specified distance from this value.
 func advanced(by n: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 A value that is offset from this value by `n`.
 
-#### Discussion
+## Discussion
 
 Use the `advanced(by:)` method in generic code to offset a value by a specified distance. If you’re working directly with numeric values, use the addition operator (`+`) instead of this method.
 

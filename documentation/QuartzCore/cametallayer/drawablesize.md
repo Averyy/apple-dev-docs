@@ -24,7 +24,7 @@ var drawableSize: CGSize { get set }
 @property CGSize drawableSize;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a layer creates textures sized to match its content—that is, this property’s value is the layer’s [`bounds`](../calayer/bounds.md) size multiplied by its [`contentsScale`](../calayer/contentsscale.md) factor.
 

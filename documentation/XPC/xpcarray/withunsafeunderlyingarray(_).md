@@ -21,7 +21,7 @@ Calls a closure with an unsafe reference to the array.
 func withUnsafeUnderlyingArray<ReturnType>(_ closure: (xpc_object_t) throws -> ReturnType) rethrows -> ReturnType
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the closure.
 

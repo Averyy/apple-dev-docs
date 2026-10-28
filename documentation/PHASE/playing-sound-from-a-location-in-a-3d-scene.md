@@ -5,7 +5,7 @@
 
 Position sound from a specific direction and automatically raise or lower volume based on the environment.
 
-#### Overview
+## Overview
 
 Audio that adjusts its volume based on distance to a specific reference point is called *spatial audio*. Spatial audio transmits sound from a particular location, or source, in a specific direction that you define by describing the sound’s 3D position and orientation. Your app can leverage spatial audio to define the point of reference, or define a listener as a player in a game. For example, to indicate that a horn resides on the left-hand side of a scene, PHASE outputs audio more through the left speaker.
 
@@ -13,7 +13,7 @@ PHASE spatial audio accommodates a scene layout in several ways: by observing ob
 
 After describing your app’s scene, you queue sound to play by creating an event node asset that instructs PHASE on what to play and when. At runtime, PHASE checks your app’s state through the event node asset and plays sounds at the right moment that react in accordance to your app’s visual appearance.
 
-##### Set an object’s scene position and orientation
+### Set an object’s scene position and orientation
 
 Before PHASE plays sound in 3D, you create several objects to model your app’s visual scene. Initialize and add the following classes to [`rootObject`](./phaseengine/rootobject.md), the engine’s root object:
 
@@ -29,7 +29,7 @@ An app can define the scene as a level in a game that’s composed of a detailed
 var chessPiecePose: simd_float4x4 = matrix_identity_float4x4
 ```
 
-##### Define the location from which sound plays
+### Define the location from which sound plays
 
 The first type of object you define in the PHASE scene describes a location from which sound originates, such as a chess piece that makes a shuffling noise as it slides to a location on the board. A source emanates sound from a single point in space, or a *voluminous area*. To produce sound at a point in the scene, create a [`PHASESource`](./phasesource.md) with the engine parameter, for example:
 
@@ -53,7 +53,7 @@ chessPiecePointSource.transform = chessPiecePose
 
 > 💡 **Tip**:  Set the [`unitsPerMeter`](./phaseengine/unitspermeter.md) parameter to instruct PHASE to interpret [`transform`](./phaseobject/transform.md) values in your app’s preferred unit of measurement.
 
-##### Originate sound from a geometric area
+### Originate sound from a geometric area
 
 For spatial sounds, the framework requires a 3D position from which the sound originates. To emanate sound from an area larger than a point, for example, the full length of an electric fence in a game, describe the region by configuring a [`PHASEShape`](./phaseshape.md) object. The following code models a fence by using a [Model I/O](../ModelIO/ModelIO.md) plane:
 
@@ -73,7 +73,7 @@ catch { print ("Failed to add a child object to the scene.") }
 
 > **Note**:  You can supply high-resolution geometry to a [`PHASESource`](./phasesource.md). For collision detection, games usually supply a low-resolution approximation that contains a detailed visual asset to maximize runtime performance. However, [`PHASEShape`](./phaseshape.md) supports geometry of any resolution with little performance impact.
 
-##### Create an object that hears sound
+### Create an object that hears sound
 
 A [`PHASEListener`](./phaselistener.md) is an object within an app that hears sound; it’s the central position and orientation at which the user experiences spatial audio. The framework adjusts the volume of a sound source based on its unique position and orientation with respect to the listener. For example, a sound that plays far off in the distance from the listener plays quietly, and a closer sound plays more loudly. The following code creates a listener and defines its position and orientation in the scene:
 
@@ -90,7 +90,7 @@ do { try engine.rootObject.addChild(listener) }
 catch { print ("Failed to add child object to the scene.") }
 ```
 
-##### Set up occluder options for obstructed sound
+### Set up occluder options for obstructed sound
 
 The framework lowers the volume of a sound source when an obstacle blocks its path to the listener. The result creates a realistic effect in cases where, for example, the player takes cover behind a gallery pillar, which reduces the volume of commotion from the other side of the room.
 
@@ -137,7 +137,7 @@ do { try engine.rootObject.addChild(occluder) }
 catch { print ("Failed to add a child object to the scene.") }
 ```
 
-##### Describe the output pipeline
+### Describe the output pipeline
 
 As one of the final stages in audio playback configuration, the app specifies the particular object, or *mixer*, that combines in-flight audio signals for transmission to the output device. For spatial audio, the app creates a spatial mixer, [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md). The following code defines a spatial mixer for two sources:
 
@@ -153,7 +153,7 @@ let fenceSpatialMixer = PHASESpatialMixerDefinition(
 
 The spatial mixer can add environmental layers to the output, such as reflections or reverb, by including the [`earlyReflections`](./phasespatialpipeline/flags-swift.struct/earlyreflections.md) or [`lateReverb`](./phasespatialpipeline/flags-swift.struct/latereverb.md) cases, in addition to [`directPathTransmission`](./phasespatialpipeline/flags-swift.struct/directpathtransmission.md), to the `flags` argument.
 
-##### Adjust volume based on distance
+### Adjust volume based on distance
 
 PHASE attenuates sound over the distance between a source and a listener by observing the distance model you define on the spatial mixer. As a source emits sound, the spatial mixer adjusts its volume based on the distance from the listener. The farther away the source is from the listener, the more the volume attenuates and the quieter the sound gets with respect to the listener.
 
@@ -171,7 +171,7 @@ chessPieceSpatialMixer.distanceModelParameters = simpleModel
 fenceSpatialMixer.distanceModelParameters = simpleModel
 ```
 
-##### Generate a sound event
+### Generate a sound event
 
 When PHASE understands the layout and configuration of the scene, sound reacts in accordance when your app plays a sound event by using [`PHASESoundEvent`](./phasesoundevent.md). You generate a sound event from a sound-event node that describes your particular playback needs.
 

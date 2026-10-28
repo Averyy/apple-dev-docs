@@ -23,7 +23,7 @@ var providerProtocol: NEDNSProxyProviderProtocol? { get set }
 @property (strong, nullable) NEDNSProxyProviderProtocol * providerProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 As the author of the DNS proxy, you decide what configuration the proxy needs. For example, if your proxy requires the IP addresses of servers to which DNS traffic can be redirected, you can use an array of strings to hold these values.
 

@@ -5,7 +5,7 @@
 
 Generate signatures to sign your ad with version 2.
 
-#### Overview
+## Overview
 
 To generate the signature, first combine the values of [Ad network install-validation keys](./ad-network-install-validation-keys.md) for the version 2.
 

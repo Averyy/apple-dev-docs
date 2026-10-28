@@ -27,7 +27,7 @@ protocol XCUIScreenshotProviding : NSObjectProtocol
 @protocol XCUIScreenshotProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Call this protocol’s [`screenshot()`](./xcuiscreenshotproviding/screenshot%28%29.md) method on an [`XCUIScreen`](./xcuiscreen.md) or [`XCUIElement`](./xcuielement.md) to capture a screenshot of its current UI state.
 

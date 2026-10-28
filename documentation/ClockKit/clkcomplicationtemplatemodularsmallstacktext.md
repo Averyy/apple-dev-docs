@@ -21,7 +21,7 @@ class CLKComplicationTemplateModularSmallStackText
 @interface CLKComplicationTemplateModularSmallStackText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.modularSmall`](./clkcomplicationfamily/modularsmall.md) family.
 

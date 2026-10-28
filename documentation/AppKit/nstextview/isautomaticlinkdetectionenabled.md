@@ -19,7 +19,7 @@ var isAutomaticLinkDetectionEnabled: Bool { get set }
 @property (getter=isAutomaticLinkDetectionEnabled) BOOL automaticLinkDetectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), automatic link detection is enabled; if [`false`](../../Swift/false.md), it is disabled.
 

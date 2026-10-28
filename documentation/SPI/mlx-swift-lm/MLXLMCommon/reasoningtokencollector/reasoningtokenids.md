@@ -17,7 +17,7 @@ Every token ingested so far, in order. Phase 2 prefills the model’s prompt + t
 var reasoningTokenIDs: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Because the caller stops ingesting once [`shouldStopAfterReasoning`](./shouldstopafterreasoning.md) is true, this ends at the closing-delimiter token. The *opening* delimiter is included when the model generates it (non-primed families, e.g. Qwen3); for primed families (e.g. DeepSeek-R1) the opening `<think>` lives in the prompt instead, so it is already part of the Phase-2 prefix.
 

@@ -5,7 +5,7 @@
 
 Platform-specific versions of your app intended for distribution to beta testers.
 
-#### Overview
+## Overview
 
 A `preReleaseVersions` resource represents a version of your app intended for TestFlight testing, not for release on the store.
 

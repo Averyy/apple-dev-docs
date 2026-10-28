@@ -19,11 +19,11 @@ func CMSDecoderUpdateMessage(_ cmsDecoder: CMSDecoder, _ msgBytes: UnsafeRawPoin
 OSStatus CMSDecoderUpdateMessage(CMSDecoderRef cmsDecoder, const void *msgBytes, size_t msgBytesLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecUnknownFormat`](./errsecunknownformat.md) upon detection of an improperly formatted CMS message.
 
-#### Discussion
+## Discussion
 
 This function can be called multiple times. Call the `CMSDecoderFinalizeMessage` function when you have no more data to decode.
 

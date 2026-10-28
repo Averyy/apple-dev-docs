@@ -17,7 +17,7 @@ case noColumnResizing
 NSBrowserNoColumnResizing
 ```
 
-#### Discussion
+## Discussion
 
 Neither `NSBrowser` nor the user can change the column width. The developer must explicitly set all column widths.
 

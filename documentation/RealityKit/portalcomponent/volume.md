@@ -20,7 +20,7 @@ A box-shaped region in portal-local space that defines a volumetric portal bound
 struct Volume
 ```
 
-#### Overview
+## Overview
 
 Pair this type with [`PortalComponent.ClippingMode.volume(_:)`](./clippingmode-swift.enum/volume%28_%29.md) to clip portal world content to a box, or with [`PortalComponent.CrossingMode.volume(_:)`](./crossingmode-swift.enum/volume%28_%29.md) to allow crossing entities to pass through the box’s faces.
 

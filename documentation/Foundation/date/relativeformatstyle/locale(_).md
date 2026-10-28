@@ -21,7 +21,7 @@ Modifies the relative date format style to use the specified locale.
 func locale(_ locale: Locale) -> Date.RelativeFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A relative date format style with the provided locale.
 

@@ -19,7 +19,7 @@ var hasUndoManager: Bool { get set }
 @property BOOL hasUndoManager;
 ```
 
-#### Discussion
+## Discussion
 
 If you change the value of this property to NO and the document already owns an [`UndoManager`](../../Foundation/undomanager.md) object, the document removes the undo manager as an observer of undo-related notifications and then removes its reference to the object.
 

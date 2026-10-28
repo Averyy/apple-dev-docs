@@ -5,14 +5,14 @@
 
 Pass image data between Core Video and vImage.
 
-#### Overview
+## Overview
 
 The vImage library provides two approaches for working with Core Video pixel buffers:
 
 - Use the [`vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_initwithcvpixelbuffer%28_,_,_,_,_,_%29.md) and [`vImageBuffer_CopyToCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_copytocvpixelbuffer%28_,_,_,_,_,_%29.md) to copy and convert data between vImage buffers and Core Video pixel buffers with a single function call. This approach provides a simple API if you need to convert between image formats.
 - Use the [`vImageBuffer_InitForCopyFromCVPixelBuffer(_:_:_:_:)`](./vimagebuffer_initforcopyfromcvpixelbuffer%28_,_,_,_%29.md) and [`vImageBuffer_InitForCopyToCVPixelBuffer(_:_:_:_:)`](./vimagebuffer_initforcopytocvpixelbuffer%28_,_,_,_%29.md) functions to create vImage buffers that reference the data in Core Video pixel buffers. This approach allows you to work directly with the underlying data if you don’t need to convert between image formats.
 
-##### Copying data between the vImage library and Core Video
+### Copying data between the vImage library and Core Video
 
 Use the [`vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_initwithcvpixelbuffer%28_,_,_,_,_,_%29.md) and [`vImageBuffer_CopyToCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_copytocvpixelbuffer%28_,_,_,_,_,_%29.md) functions to copy and convert data between vImage and Core Video.
 
@@ -90,7 +90,7 @@ class VerticalReflectImageProcessorKernelCopy: CIImageProcessorKernel {
 }
 ```
 
-##### Sharing data between the vImage library and Core Video
+### Sharing data between the vImage library and Core Video
 
 Use the [`vImageBuffer_InitForCopyFromCVPixelBuffer(_:_:_:_:)`](./vimagebuffer_initforcopyfromcvpixelbuffer%28_,_,_,_%29.md) and [`vImageBuffer_InitForCopyToCVPixelBuffer(_:_:_:_:)`](./vimagebuffer_initforcopytocvpixelbuffer%28_,_,_,_%29.md) functions to share data between vImage and Core Video. Both of these functions require a [`vImageConverter`](./vimageconverter.md) instance that defines the vImage buffer’s Core Graphics image format and the [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instance’s Core Video format.
 

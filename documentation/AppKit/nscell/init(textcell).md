@@ -19,11 +19,11 @@ init(textCell string: String)
 - (instancetype) initTextCell:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSCell` object, or `nil` if the cell could not be initialized.
 
-#### Discussion
+## Discussion
 
 If no field editor (a shared [`NSText`](../nstext.md) object) has been created for all `NSCell` objects, one is created.
 

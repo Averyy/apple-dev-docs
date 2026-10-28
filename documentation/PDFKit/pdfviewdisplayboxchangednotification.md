@@ -20,7 +20,7 @@ A notification posted when the display box has changed.
 extern NSNotificationName const PDFViewDisplayBoxChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

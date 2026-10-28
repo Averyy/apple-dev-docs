@@ -24,7 +24,7 @@ Defines a single choice for a multiple-choice question in the assessments sectio
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Choice` directive to define a single possible answer for a multiple-choice assessment question in a tutorial. Use the `isCorrect` parameter to denote whether the choice is a correct or incorrect answer. Then, use the [`Justification`](./justification.md) directive to explain why. Optionally, you can display an image for a choice.
 
@@ -52,14 +52,14 @@ Use the `Choice` directive to define a single possible answer for a multiple-cho
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A choice can contain the following items:
 
 - **[`Justification`](./justification.md)**: Text that explains why the choice is either correct or incorrect. **(required)**
 - **[`Image`](./image.md)**: An image that accompanies the choice. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items must include a choice:
 

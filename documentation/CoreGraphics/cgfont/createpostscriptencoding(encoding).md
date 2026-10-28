@@ -25,11 +25,11 @@ func createPostScriptEncoding(encoding: UnsafePointer<CGGlyph>?) -> CFData?
 extern CFDataRefCGFontCreatePostScriptEncoding(CGFontRef font, const CGGlyph encoding[256]);
 ```
 
-#### Return Value
+## Return Value
 
 A PostScript encoding of the font that contains glyphs in the specified encoding.
 
-#### Discussion
+## Discussion
 
 For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

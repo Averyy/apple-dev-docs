@@ -23,11 +23,11 @@ init(item item1: any UIDynamicItem, offsetFromCenter offset1: UIOffset, attached
 - (instancetype) initWithItem:(id<UIDynamicItem>) item1 offsetFromCenter:(UIOffset) offset1 attachedToItem:(id<UIDynamicItem>) item2 offsetFromCenter:(UIOffset) offset2;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized attachment behavior, or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod connecting the two items at the specified offsets from their center points. Forces applied to one item push or pull the other item accordingly. The items are free to rotate around each other but always remain the same distance apart.
 

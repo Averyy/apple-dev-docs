@@ -25,7 +25,7 @@ static var overflow: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A numerical result of the function is too large to be stored in the space that the caller provided.
 

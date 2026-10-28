@@ -14,7 +14,7 @@
 var typeChar: DescType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unterminated string of system script characters.
 

@@ -22,7 +22,7 @@ var supportedInteractions: [UIActivityItemsConfigurationInteraction] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * supportedInteractions;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is all known interactions.
 

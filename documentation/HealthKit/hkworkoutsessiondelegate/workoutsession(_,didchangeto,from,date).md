@@ -25,7 +25,7 @@ func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKW
 - (void) workoutSession:(HKWorkoutSession *) workoutSession didChangeToState:(HKWorkoutSessionState) toState fromState:(HKWorkoutSessionState) fromState date:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 If your application is suspended, the delegate receives this call after the application resumes. This means you may receive the notification long after the state changed. Check the `date` parameter to determine when the state change actually occurred.
 

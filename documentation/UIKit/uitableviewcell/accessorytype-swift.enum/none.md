@@ -23,7 +23,7 @@ case none
 UITableViewCellAccessoryNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value.
 

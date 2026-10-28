@@ -25,7 +25,7 @@ let CBUUIDCharacteristicFormatString: String
 extern NSString * const CBUUIDCharacteristicFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value for this descriptor is an [`NSData`](../Foundation/nsdata.md) object.
 

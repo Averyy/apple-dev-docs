@@ -19,7 +19,7 @@ class NSPressGestureRecognizer
 @interface NSPressGestureRecognizer : NSGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 Use a press gesture recognizer to configure which button the user must hold and the length of time they must hold it. You can also specify how far the mouse can move for a valid gesture.
 

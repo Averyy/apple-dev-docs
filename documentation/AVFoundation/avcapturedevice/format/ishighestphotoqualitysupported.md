@@ -22,7 +22,7 @@ var isHighestPhotoQualitySupported: Bool { get }
 @property (nonatomic, readonly, getter=isHighestPhotoQualitySupported) BOOL highestPhotoQualitySupported;
 ```
 
-#### Discussion
+## Discussion
 
 The simplest way to capture the highest quality photos is to set [`photo`](../../avcapturesession/preset/photo.md) as your session’s preset. If you’re instead manually setting the capture device’s [`activeFormat`](../activeformat.md) value, select the format whose [`isHighestPhotoQualitySupported`](./ishighestphotoqualitysupported.md) property is [`true`](../../../Swift/true.md).
 

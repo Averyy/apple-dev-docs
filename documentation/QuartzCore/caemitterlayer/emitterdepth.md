@@ -24,7 +24,7 @@ var emitterDepth: CGFloat { get set }
 @property CGFloat emitterDepth;
 ```
 
-#### Discussion
+## Discussion
 
 How the emitter depth is applied depends on the emitter shape. See [Emitter Shape](../emitter-shape.md) for details. Depending on the value of [`emitterShape`](./emittershape.md), this value may be ignored.
 

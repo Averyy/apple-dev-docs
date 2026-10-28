@@ -23,7 +23,7 @@ var selectedBackgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * selectedBackgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 [`UITableViewCell`](../uitableviewcell.md) adds the value of this property as a subview only when the cell has a selected state. It adds the selected background view as a subview directly above the background view ([`backgroundView`](./backgroundview.md)) if it isn’t `nil`, or behind all other views. Calling [`setSelected(_:animated:)`](./setselected%28_,animated%29.md) causes the selected background view to animate in and out with an alpha fade.
 

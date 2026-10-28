@@ -24,7 +24,7 @@ class MPSCNNBinaryConvolution
 @interface MPSCNNBinaryConvolution : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The [`MPSCNNBinaryConvolution`](./mpscnnbinaryconvolution.md) optionally first binarizes the input image and then convolves the result with a set of binary-valued filters, each producing one feature map in the output image (which is a normal image).
 

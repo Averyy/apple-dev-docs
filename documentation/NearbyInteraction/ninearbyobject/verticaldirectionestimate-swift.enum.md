@@ -22,7 +22,7 @@ enum VerticalDirectionEstimate
 enum NINearbyObjectVerticalDirectionEstimate : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The framework sets a nearby object’s [`verticalDirectionEstimate`](./verticaldirectionestimate-swift.property.md) to an option of this enumeration when [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true`.
 

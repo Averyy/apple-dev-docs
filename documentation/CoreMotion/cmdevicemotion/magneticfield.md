@@ -24,7 +24,7 @@ var magneticField: CMCalibratedMagneticField { get }
 @property (nonatomic, readonly) CMCalibratedMagneticField magneticField;
 ```
 
-#### Discussion
+## Discussion
 
 The [`CMCalibratedMagneticField`](../cmcalibratedmagneticfield.md) returned by this property gives you the total magnetic field in the device’s vicinity without device bias. Unlike the [`magneticField`](../cmmagnetometerdata/magneticfield.md) property of the [`CMMagnetometerData`](../cmmagnetometerdata.md) class, these values reflect the earth’s magnetic field plus surrounding fields, minus device bias.
 

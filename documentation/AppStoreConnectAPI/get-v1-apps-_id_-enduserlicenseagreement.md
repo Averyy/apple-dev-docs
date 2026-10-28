@@ -9,9 +9,9 @@ Get the custom end user license agreement (EULA) for a specific app and the terr
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

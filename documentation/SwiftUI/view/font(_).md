@@ -28,11 +28,11 @@ func font(_ font: Font?) -> some View
 - [Aligning views within a stack](../aligning-views-within-a-stack.md)
 - [Declaring a custom view](../declaring-a-custom-view.md)
 
-#### Return Value
+## Return Value
 
 A view with the default font set to the value you supply.
 
-#### Discussion
+## Discussion
 
 Use `font(_:)` to apply a specific font to all of the text in a view.
 

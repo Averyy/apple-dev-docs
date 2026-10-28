@@ -20,7 +20,7 @@ optional func windowWillMove(_ notification: Notification)
 - (void) windowWillMove:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the `NSWindow` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 

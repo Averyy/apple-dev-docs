@@ -21,7 +21,7 @@ The default unanimated value of the target.
 var defaultTarget: Self.ValueType? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default target is the snapshot value of the animation target at the time the animation first plays. The system takes a snapshot of the animation target’s value before starting the new animation. This is controlled by setting different handoff behaviors when the animation is played.
 

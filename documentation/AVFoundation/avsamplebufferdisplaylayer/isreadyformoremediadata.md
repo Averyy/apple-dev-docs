@@ -26,7 +26,7 @@ var isReadyForMoreMediaData: Bool { get }
 @property (readonly, getter=isReadyForMoreMediaData) BOOL readyForMoreMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`isReadyForMoreMediaData`](../avqueuedsamplebufferrendering/isreadyformoremediadata.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

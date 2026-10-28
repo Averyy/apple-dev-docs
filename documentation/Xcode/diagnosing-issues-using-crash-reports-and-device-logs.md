@@ -4,7 +4,7 @@
 
 Use crash reports and device logs to debug app issues.
 
-#### Overview
+## Overview
 
 Customers expect apps to be stable, free of bugs, and use system resources efficiently. The operating system helps you meet these expectations by collecting different log types you can use to diagnose issues in your app:
 
@@ -14,7 +14,7 @@ Customers expect apps to be stable, free of bugs, and use system resources effic
 
 Distribution builds of your app, such as for the App Store, an enterprise environment, or a testing team, require you to use crash reports and device logs to diagnose issues encountered by your customers. Distribution builds don’t contain the necessary entitlements for debugging in Xcode.
 
-##### Address stability issues using crash reports
+### Address stability issues using crash reports
 
 Crash reports are the most common type of log you’ll use when diagnosing an issue. When receiving crash reports for your app, use them to understand the stability problems the app is having. A crash report describes how your app terminated, and also contains the complete backtrace of each thread, which shows the code running at the time of the crash.
 
@@ -27,7 +27,7 @@ To debug a problem using a crash report:
 5. Update your code to fix the issue.
 6. Add tests with the [XCTest](../XCTest/XCTest.md) framework to ensure the issue doesn’t reoccur in the future.
 
-##### Uncover memory inefficiencies using jetsam event reports
+### Uncover memory inefficiencies using jetsam event reports
 
 Ensure that your apps use memory efficiently. When an app on iOS, iPadOS, tvOS, visionOS, or watchOS uses memory inefficiently, less memory is available for other apps to remain in memory in the background. This lower available memory limits how quickly a user can switch between apps, because apps can’t resume from memory and must first complete a full app launch.
 
@@ -35,7 +35,7 @@ When the operating system experiences low-memory conditions, and requires more m
 
 Jetsam event reports don’t contain stack traces of executing threads in an app, but they do contain additional system information about memory use. When your app crashes due to memory pressure, see [Gathering information about memory use](./gathering-information-about-memory-use.md) to understand your app’s memory use patterns, and [Responding to low-memory warnings](./responding-to-low-memory-warnings.md) to learn when to lower your memory use.
 
-##### Diagnose problems using device console logs
+### Diagnose problems using device console logs
 
 Apple devices maintain a continuous in-memory transcript of operations in the operating system and individual apps. These logs can be reviewed after an issue occurs. Some issues, such as problems installing an app, can be diagnosed by reviewing the operating system logs using the Console app on macOS. See [Access device console logs](./acquiring-crash-reports-and-diagnostic-logs.md#Access-device-console-logs) for instructions on accessing a device’s console log.
 

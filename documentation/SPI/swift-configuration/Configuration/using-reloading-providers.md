@@ -10,16 +10,16 @@ framework: "swift-configuration/Configuration"
 
 Automatically reload configuration from files when they change.
 
-#### Overview
+## Overview
 
 A reloading provider monitors configuration files for changes and automatically updates your application’s configuration without requiring restarts. Swift Configuration provides:
 
 - [`ReloadingFileProvider`](./reloadingfileprovider.md) with [`JSONSnapshot`](./jsonsnapshot.md) for JSON configuration files.
 - [`ReloadingFileProvider`](./reloadingfileprovider.md) with [`YAMLSnapshot`](./yamlsnapshot.md) for YAML configuration files.
 
-##### Basic usage
+### Basic usage
 
-###### Creating and running providers
+#### Creating and running providers
 
 Reloading providers run in a [ServiceGroup](https://swiftpackageindex.com/swift-server/swift-service-lifecycle/documentation/servicelifecycle/servicegroup):
 
@@ -40,7 +40,7 @@ let serviceGroup = ServiceGroup(
 try await serviceGroup.run()
 ```
 
-###### Reading configuration
+#### Reading configuration
 
 Use a reloading provider in the same fashion as a static provider, pass it to a [`ConfigReader`](./configreader.md):
 
@@ -52,7 +52,7 @@ let host = config.string(
 )
 ```
 
-###### Reloading with SIGHUP
+#### Reloading with SIGHUP
 
 On platforms with Unix signals, a running [`ReloadingFileProvider`](./reloadingfileprovider.md) also checks the file when the process receives `SIGHUP`, without waiting for the next poll. For example, to signal processes named `my-server`:
 
@@ -62,7 +62,7 @@ pkill -HUP -x my-server
 
 Polling continues as usual, and the file is only reloaded if its modification timestamp or resolved path changed.
 
-###### Poll interval considerations
+#### Poll interval considerations
 
 Choose poll intervals based on how quickly you need to detect changes:
 
@@ -77,11 +77,11 @@ pollInterval: .seconds(15)
 pollInterval: .seconds(300)
 ```
 
-##### Watching for changes
+### Watching for changes
 
 The following sections provide examples of watching for changes in configuration from a reloading provider.
 
-###### Individual values
+#### Individual values
 
 The example below watches for updates in a single key, `database.host`:
 
@@ -95,7 +95,7 @@ try await config.watchString(
 }
 ```
 
-###### Configuration snapshots
+#### Configuration snapshots
 
 The following example reads the `database.host` and `database.password` key with the guarantee that you read them from the same update of the reloading file:
 
@@ -109,7 +109,7 @@ try await config.watchSnapshot { updates in
 }
 ```
 
-##### Comparison with static providers
+### Comparison with static providers
 
 | Feature | Static providers | Reloading providers |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ try await config.watchSnapshot { updates in
 | **Service lifecycle** | Not required | Conforms to `Service` and you must run in a `ServiceGroup` |
 | **Configuration updates** | Require restart | Automatic reload |
 
-##### Handling missing files during reloading
+### Handling missing files during reloading
 
 Reloading providers support the `allowMissing` parameter to handle cases where configuration files might be temporarily missing or optional. This is useful for:
 
@@ -125,7 +125,7 @@ Reloading providers support the `allowMissing` parameter to handle cases where c
 - Configuration files that the system creates or removes dynamically.
 - Graceful handling of file system issues during service startup.
 
-###### Missing file behavior
+#### Missing file behavior
 
 When `allowMissing` is `false` (the default), missing files cause errors:
 
@@ -147,7 +147,7 @@ let provider = try await ReloadingFileProvider<JSONSnapshot>(
 // Won't throw if config.json is missing - uses empty config instead
 ```
 
-###### Behavior during reloading
+#### Behavior during reloading
 
 If a file becomes missing after the provider starts, the behavior depends on the `allowMissing` setting:
 
@@ -169,9 +169,9 @@ try await config.watchString(forKey: "database.host", default: "localhost") { up
 
 > ❗ **Important**: The `allowMissing` parameter only affects missing files. Malformed files will still cause parsing errors regardless of this setting.
 
-##### Advanced features
+### Advanced features
 
-###### Configuration-driven setup
+#### Configuration-driven setup
 
 The following example sets up an environment variable provider to select the path and interval to watch for a JSON file that contains the configuration for your app:
 
@@ -185,7 +185,7 @@ let jsonProvider = try await ReloadingFileProvider<JSONSnapshot>(
 )
 ```
 
-###### Observability metrics
+#### Observability metrics
 
 [`ReloadingFileProvider`](./reloadingfileprovider.md) emits metrics through [swift-metrics](https://github.com/apple/swift-metrics). By default, the provider uses the process-wide `MetricsSystem.factory`, so whichever backend you bootstrap (for example, `StatsdMetrics` or `PrometheusMetrics`) receives its counters and gauges. Pass an explicit `metrics:` argument to the initializer when you want to redirect them — for example, to an isolated registry in tests:
 
@@ -208,7 +208,7 @@ Every metric label starts with a prefix derived from the provider name, lowercas
 | `<prefix>_file_size_bytes` | Gauge | Current on-disk size of the configuration file in bytes, refreshed after every successful reload. |
 | `<prefix>_watchers_active` | Gauge | Total number of active value and snapshot watchers currently registered with the provider. |
 
-##### Migration from static providers
+### Migration from static providers
 
 1. **Replace initialization**:
 

@@ -25,7 +25,7 @@ func cblas_ssyr(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ A
 void cblas_ssyr(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const float ALPHA, const float *X, const __LAPACK_int INCX, float *A, const __LAPACK_int LDA);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates `A + alpha*x*x` and stores the result in `A`.
 

@@ -26,7 +26,7 @@ var sourceClock: CMClock? { get set }
 @property (nonatomic, retain, nullable) CMClockRef sourceClock;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. Setting an explicit source clock is useful to synchronize video-only movies with audio that plays through a different audio device.
 

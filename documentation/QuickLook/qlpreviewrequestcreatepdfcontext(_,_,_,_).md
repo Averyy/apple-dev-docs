@@ -21,15 +21,15 @@ func QLPreviewRequestCreatePDFContext(_ preview: QLPreviewRequest!, _ mediaBox: 
 extern CGContextRefQLPreviewRequestCreatePDFContext(QLPreviewRequestRef preview, const CGRect *mediaBox, CFDictionaryRef auxiliaryInfo, CFDictionaryRef properties);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a Core Graphics context object that is used to display a PDF version of the preview. You should explicitly release this object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 Be sure to bracket each PDF page written to the context with [`beginPDFPage(_:)`](../CoreGraphics/cgcontext/beginpdfpage%28_%29.md) and [`endPDFPage()`](../CoreGraphics/cgcontext/endpdfpage%28%29.md) calls. After calling this function, you should flush the context with [`QLPreviewRequestFlushContext(_:_:)`](./qlpreviewrequestflushcontext%28_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

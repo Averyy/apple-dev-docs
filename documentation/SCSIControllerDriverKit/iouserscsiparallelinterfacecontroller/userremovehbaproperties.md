@@ -15,11 +15,11 @@ Removes properties from a host bus adapter in response to a call from the framew
 virtual kern_return_t UserRemoveHBAProperties(OSArray *properties);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of removing the properties. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension calls this method to remove properties from the HBA. The `properties` directory can contain the following keys:
 

@@ -21,7 +21,7 @@ The list style that describes the behavior and appearance of a plain list.
 struct PlainListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plain`](./liststyle/plain.md) to construct this style.
 

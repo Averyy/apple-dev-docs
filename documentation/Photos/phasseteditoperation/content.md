@@ -24,7 +24,7 @@ case content
 PHAssetEditOperationContent
 ```
 
-#### Discussion
+## Discussion
 
 To begin the process of editing an asset, use the [`requestContentEditingInput(with:completionHandler:)`](../phasset/requestcontenteditinginput%28with,completionhandler%29.md) method.
 

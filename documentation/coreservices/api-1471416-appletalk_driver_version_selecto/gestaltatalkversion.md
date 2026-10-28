@@ -14,7 +14,7 @@
 gestaltATalkVersion = 'atkv'
 ```
 
-#### Discussion
+## Discussion
 
 The version number of the AppleTalk driver, in the format introduced with AppleTalk version 56. The version is stored in the high 3 bytes of the return value.
 

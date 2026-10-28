@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Only one DNS proxy can be active in the system at a time. Therefore, setting this property to [`true`](../../Swift/true.md) disables any DNS proxy configurations of other apps. Similarly, the system sets this property to [`false`](../../Swift/false.md) when any other DNS proxy configuration is enabled.
 

@@ -32,7 +32,7 @@ var criticalAlertSetting: UNNotificationSetting { get }
 @property (atomic, readonly) UNNotificationSetting criticalAlertSetting;
 ```
 
-#### Discussion
+## Discussion
 
 When [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md), this property authorizes the app to play critical sounds that ignore Do Not Disturb and the device’s mute switch.
 

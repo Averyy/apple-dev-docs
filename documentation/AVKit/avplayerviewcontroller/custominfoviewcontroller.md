@@ -21,7 +21,7 @@ var customInfoViewController: UIViewController? { get set }
 @property (nonatomic, strong, nullable) UIViewController * customInfoViewController;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`preferredContentSize`](../../UIKit/uiviewcontroller/preferredcontentsize.md) to provide the desired view size for the view.
 

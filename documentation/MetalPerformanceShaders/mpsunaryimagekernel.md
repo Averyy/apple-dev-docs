@@ -28,7 +28,7 @@ class MPSUnaryImageKernel
 
 - [The MPSKernel Class](./the-mpskernel-class.md)
 
-#### Overview
+## Overview
 
 [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) defines shared behavior for most image processing kernels (filters) such as edging modes, clipping, and tiling support for image operations that consumes a single source textures. It is not meant to be used directly, but provides API abstraction and in some cases may allow some level of polymorphic manipulation of image kernel objects.
 

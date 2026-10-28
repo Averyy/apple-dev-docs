@@ -18,11 +18,11 @@ Create a legend entry represending this reporter’s channels.
 OSDictionary * createLegend();
 ```
 
-#### Return Value
+## Return Value
 
 An [`IOReportLegendEntry`](../ioreportlegendentry.md) object or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 All channels added to the reporter will be represented in the resulting legend entry.
 

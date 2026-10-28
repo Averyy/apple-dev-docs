@@ -21,11 +21,11 @@ func AudioHardwareServiceGetPropertyData(_ inObjectID: AudioObjectID, _ inAddres
 extern OSStatus AudioHardwareServiceGetPropertyData(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 *ioDataSize, void *outData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

@@ -17,7 +17,7 @@ Applies the Softmax function.
 class Softmax
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.softmax(x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 

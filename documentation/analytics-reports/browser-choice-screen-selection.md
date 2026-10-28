@@ -5,7 +5,7 @@
 
 This report details percentage of devices that had your web browser application selected as default from the Browser Choice screen.
 
-#### Overview
+## Overview
 
 The data in this report provides details about users’ selection of a default web browser from the browser choice screen. Use this report to understand your browser’s performance on the choice screen.
 
@@ -21,7 +21,7 @@ The data in this report provides details about users’ selection of a default w
   - Includes data from users who have opted to share their data with Apple and developers.
 - Data Context: The data in this report provides information about the browser choice screen made available on iOS 18.2+ and iPadOS 18.2+. An older version of the browser choice screen is available on iOS releases prior to 18.2. Data about your web browser app’s performance on the old version of the browser choice screen can be found in the [Browser Choice Screen Engagement (iOS versions before 18.2)](./browser-choice-screen-engagement.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

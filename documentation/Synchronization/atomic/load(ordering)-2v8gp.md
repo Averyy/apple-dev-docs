@@ -23,7 +23,7 @@ func load(ordering: AtomicLoadOrdering) -> Value
 
 Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic8BitStorage`.
 
-#### Return Value
+## Return Value
 
 The current value.
 

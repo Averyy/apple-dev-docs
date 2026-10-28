@@ -21,7 +21,7 @@ var kABRealPropertyType: Int { get }
 kABRealPropertyType
 ```
 
-#### Discussion
+## Discussion
 
 Returned as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

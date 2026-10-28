@@ -25,11 +25,11 @@ func vImageHistogramSpecification_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _
 vImage_Error vImageHistogramSpecification_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, const vImagePixelCount *desired_histogram, unsigned int histogram_entries, Pixel_F minVal, Pixel_F maxVal, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 Use this function to apply a histogram — that you’ve generated using [`vImageHistogramCalculation_PlanarF(_:_:_:_:_:_:)`](./vimagehistogramcalculation_planarf%28_,_,_,_,_,_%29.md) — to another image.
 
@@ -83,7 +83,7 @@ vImageHistogramSpecification_PlanarF(&buffer, &buffer,
                                      kvImageNoFlags);
 ```
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

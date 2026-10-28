@@ -5,7 +5,7 @@
 
 Store draw commands in Metal buffers and run them at a later time on the GPU, either once or repeatedly.
 
-#### Overview
+## Overview
 
 You can use an [`MTLIndirectCommandBuffer`](./mtlindirectcommandbuffer.md) instance to store draw commands and invoke them at a later time. Metal executes all the draw commands in an indirect command buffer each time you submit it. This means you can use indirect command buffers multiple times, unlike [`MTLCommandBuffer`](./mtlcommandbuffer.md) instances, which are all single-use.
 

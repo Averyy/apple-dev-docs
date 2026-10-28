@@ -32,7 +32,7 @@ optional func playableContentManager(_ contentManager: MPPlayableContentManager,
 - (void) playableContentManager:(MPPlayableContentManager *) contentManager initializePlaybackQueueWithContentItems:(NSArray *) contentItems completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 iOS calls this method when the user performs an action that, in context, might indicate intent to begin playing content using your app. For example, if the user frequently listens to audio content in your app with headphones while at a particular location, iOS might call this method upon plugging in headphones when the user is at that location. Your app responds by choosing appropriate content, performing any app-specific actions necessary to prepare the content for playback, and setting the [`nowPlayingInfo`](../mpnowplayinginfocenter/nowplayinginfo.md) property of the shared [`MPNowPlayingInfoCenter`](../mpnowplayinginfocenter.md) object to indicate to the user that this content is ready to play.
 

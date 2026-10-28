@@ -21,7 +21,7 @@ An option that repeats the gradient outside its nominal range, reflecting every 
 static var mirror: GraphicsContext.GradientOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to cause the gradient to repeat its pattern in areas that exceed the bounds of its start and end points. The repetitions alternately reverse the start and end points, producing a pattern like `0 -> 1`, `1 -> 0`, `0 -> 1`, and so on.
 

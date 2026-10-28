@@ -21,7 +21,7 @@ Returns the result of shifting a value’s binary representation the specified n
 static func >> <Other>(lhs: Self, rhs: Other) -> Self where Other : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The `>>` operator performs a *smart shift*, which defines a result for a shift of any value.
 

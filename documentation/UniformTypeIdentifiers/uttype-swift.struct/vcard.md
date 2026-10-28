@@ -21,7 +21,7 @@ A type that represents a vCard file.
 static var vCard: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.vcard`.
 

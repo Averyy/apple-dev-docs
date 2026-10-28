@@ -25,7 +25,7 @@ var hasSpaceAvailable: Bool { get }
 @property (readonly) BOOL hasSpaceAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver can be written to or if a write must be attempted in order to determine if space is available, [`false`](../../Swift/false.md) otherwise.
 

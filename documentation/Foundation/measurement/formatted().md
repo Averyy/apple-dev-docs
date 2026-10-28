@@ -23,11 +23,11 @@ func formatted() -> String
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the default style.
 
-#### Discussion
+## Discussion
 
 Use the [`formatted()`](./formatted%28%29.md) method to apply the default format style to a measurement, such as in the following example:
 

@@ -25,7 +25,7 @@ protocol DynamicProfile
 - [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
-#### Overview
+## Overview
 
 A dynamic profile is the top-level coordination layer that manages profiles. It determines which [`LanguageModelSession.DynamicProfile.Profile`](./dynamicprofile/profile.md) is in an active state and allows a [`LanguageModelSession`](../languagemodelsession.md) to switch between entirely different configurations as app state changes. A body must resolve to a single profile.
 

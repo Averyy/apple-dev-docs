@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeSerialATA
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of SATA for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to a SATA bus, this key should be set.
 

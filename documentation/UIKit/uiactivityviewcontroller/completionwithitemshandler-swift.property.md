@@ -22,7 +22,7 @@ var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHand
 @property (nonatomic, copy, nullable) UIActivityViewControllerCompletionWithItemsHandler completionWithItemsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the user-selected service finishes operating on the data, or when the user dismisses the view controller, the view controller executes this completion handler to let your app know the final result of the operation.
 

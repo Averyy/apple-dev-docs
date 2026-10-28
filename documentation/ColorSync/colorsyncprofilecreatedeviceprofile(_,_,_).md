@@ -20,11 +20,11 @@ func ColorSyncProfileCreateDeviceProfile(_ deviceClass: CFString!, _ deviceID: C
 extern ColorSyncProfileRefColorSyncProfileCreateDeviceProfile(CFStringRef deviceClass, CFUUIDRef deviceID, CFTypeRef profileID);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 
-#### Discussion
+## Discussion
 
 See `ColorSyncDevice.h` for more information on `deviceClass`, `deviceID`, and `profileID`.
 

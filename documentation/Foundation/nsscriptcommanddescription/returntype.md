@@ -20,7 +20,7 @@ var returnType: String? { get }
 @property (copy, readonly, nullable) NSString * returnType;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s command return type; for example, `"NSNumber"` or `"NSDictionary"`).
 

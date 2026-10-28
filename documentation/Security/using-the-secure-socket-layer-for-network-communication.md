@@ -5,7 +5,7 @@
 
 Establish Secure Sockets Layer (SSL) sessions to facilitate secure communication between client and server.
 
-#### Overview
+## Overview
 
 The following terms are used in this discussion:
 

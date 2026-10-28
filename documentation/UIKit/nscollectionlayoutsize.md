@@ -24,7 +24,7 @@ class NSCollectionLayoutSize
 @interface NSCollectionLayoutSize : NSObject
 ```
 
-#### Overview
+## Overview
 
 A size is a pair of dimensions ([`NSCollectionLayoutDimension`](./nscollectionlayoutdimension.md)): a width dimension and a height dimension. Every component of a collection view layout has an explicit size.
 

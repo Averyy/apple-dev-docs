@@ -25,7 +25,7 @@ let kCMSampleBufferConduitNotificationParameter_UpcomingOutputPTSRangeMayOverlap
 extern CFStringRef const kCMSampleBufferConduitNotificationParameter_UpcomingOutputPTSRangeMayOverlapQueuedOutputPTSRange;
 ```
 
-#### Discussion
+## Discussion
 
 This key is always present in the `userInfo` dictionary for the [`kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged`](./kcmsamplebufferconduitnotification_upcomingoutputptsrangechanged.md) notification. If its value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), there is a possibility that upcoming frames may have earlier presentation timestamps than the frames previously provided to the conduit, and the dictionary also contains one or both of the [`kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS`](./kcmsamplebufferconduitnotificationparameter_minupcomingoutputpts.md) or [`kCMSampleBufferConduitNotificationParameter_MaxUpcomingOutputPTS`](./kcmsamplebufferconduitnotificationparameter_maxupcomingoutputpts.md) keys providing further information. If its value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), there is no such possibility.
 

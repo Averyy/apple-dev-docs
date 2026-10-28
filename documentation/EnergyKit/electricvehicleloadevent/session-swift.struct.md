@@ -17,7 +17,7 @@ A session that tracks the event.
 struct Session
 ```
 
-#### Overview
+## Overview
 
 A session starts when a device transitions from idle to consuming electricity. It’s active when consuming electricity. It ends when the device stops consuming electricity.
 

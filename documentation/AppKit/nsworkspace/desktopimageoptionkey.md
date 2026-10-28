@@ -19,7 +19,7 @@ struct DesktopImageOptionKey
 typedef NSString * NSWorkspaceDesktopImageOptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the following keys when calling the [`setDesktopImageURL(_:for:options:)`](./setdesktopimageurl%28_,for,options%29.md) method.
 

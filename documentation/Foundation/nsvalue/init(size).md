@@ -20,7 +20,7 @@ init(size: NSSize)
 + (NSValue *) valueWithSize:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the size information.
 

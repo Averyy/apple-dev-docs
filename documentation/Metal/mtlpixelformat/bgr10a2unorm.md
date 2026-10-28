@@ -24,7 +24,7 @@ case bgr10a2Unorm
 MTLPixelFormatBGR10A2Unorm
 ```
 
-#### Discussion
+## Discussion
 
 Pixel data is stored in blue, green, red, and alpha order, from least significant bit to most significant bit.
 

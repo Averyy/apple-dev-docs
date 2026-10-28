@@ -22,7 +22,7 @@ var maximumRegionMonitoringDistance: CLLocationDistance { get }
 @property (nonatomic, readonly) CLLocationDistance maximumRegionMonitoringDistance;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the largest boundary distance allowed from a region’s center point. Attempting to monitor a region with a distance larger than this value causes the location manager to send a [`CLError.Code.regionMonitoringFailure`](../clerror-swift.struct/code/regionmonitoringfailure.md) error to the delegate.
 

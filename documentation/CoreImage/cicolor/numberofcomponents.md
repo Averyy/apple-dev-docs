@@ -24,7 +24,7 @@ var numberOfComponents: Int { get }
 @property (readonly) size_t numberOfComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This number includes the alpha component if the color contains one.
 

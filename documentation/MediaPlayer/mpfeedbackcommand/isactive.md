@@ -25,7 +25,7 @@ var isActive: Bool { get set }
 @property (nonatomic, assign, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), feedback is available. Use this property to get or set the current state of the given feedback. An example of an active feedback command is a Like button that has been enabled by the user. In that scenario, toggling the button on and off would similarly toggle the value in this property.
 

@@ -21,7 +21,7 @@ var allowedFileTypes: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * allowedFileTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the file types for the user to select from. A file type can be a common filename extension, or a UTI. The default value of this property is `nil`, which indicates that any file type can be used. If you specify an empty array for this parameter, the Save panel raises an exception.
 

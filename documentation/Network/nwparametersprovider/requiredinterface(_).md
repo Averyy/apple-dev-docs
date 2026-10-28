@@ -22,7 +22,7 @@ Require an interface when connecting, listening, and browsing.
 func requiredInterface(_ interface: NWInterface) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Connections will fail if this interface is not available.
 

@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro Predicate<each Input>(_ body: (repeat each Input) -> Bool) -> Predicate<repeat each Input>
+@freestanding(expression)
+macro Predicate<each Input>(_ body: (repeat each Input) -> Bool) -> Predicate<repeat each Input>
 ```
 
 ## See Also

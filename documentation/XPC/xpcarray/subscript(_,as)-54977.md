@@ -21,11 +21,11 @@ Get a value in this array as a file descriptor.
 subscript(index: Int, as type: FileDescriptor.Type = FileDescriptor.self) -> FileDescriptor? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A file descriptor value or `nil` if no such value was found.
 
-#### Overview
+## Overview
 
 The returned file descriptor is owned by the caller so they must close it.
 

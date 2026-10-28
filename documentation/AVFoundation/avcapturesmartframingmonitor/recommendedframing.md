@@ -25,7 +25,7 @@ var recommendedFraming: AVCaptureFraming? { get }
 
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Discussion
+## Discussion
 
 While your [`AVCaptureSession`](../avcapturesession.md) is running, the monitor continuously observes its device’s scene to recommend the best framing. This recommended framing is always one of the values in [`enabledFramings`](./enabledframings.md). This property may return `nil` if smart framing isn’t supported for the device in its current configuration. Its default value is `nil`. This property is key-value observable, and when you observe a change, you may respond to the new recommendation by calling [`setDynamicAspectRatio(_:completionHandler:)`](../avcapturedevice/setdynamicaspectratio%28_,completionhandler%29.md) and setting [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) on the associated device in whatever order best matches your animation between old and new framings.
 

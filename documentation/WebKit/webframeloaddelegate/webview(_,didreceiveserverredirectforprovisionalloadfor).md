@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didReceiveServerRedirectForProvisional
 - (void) webView:(WebView *) sender didReceiveServerRedirectForProvisionalLoadForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 A *server redirect* is when one URL location is redirected to another. Additional information about the new request can be obtained from the data source of `frame`.
 

@@ -4,7 +4,7 @@
 
 Return your app to its previous state after the system terminates it.
 
-#### Overview
+## Overview
 
 Preserving your app’s user interface helps maintain the illusion that your app is always running. Interruptions can occur frequently on iOS devices, and a prolonged interruption might cause the system to terminate your app to free up resources. However, users don’t know that your app has been terminated and won’t expect the state of your app to change. Instead, they expect your app to be in the same state as when they left it. State preservation and restoration ensures that your app returns to its previous state when it launches again.
 
@@ -19,7 +19,7 @@ If you define your interface entirely in storyboards, UIKit knows how to recreat
 
 To see an example of state preservation and restoration, see [Restoring your app’s state](./restoring-your-app-s-state.md).
 
-##### Enable state preservation and restoration for your app
+### Enable state preservation and restoration for your app
 
 You opt-in to state preservation and restoration by implementing your app delegate’s [`application(_:shouldSaveSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldsavesecureapplicationstate%29.md) and [`application(_:shouldRestoreSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoresecureapplicationstate%29.md) methods. Both methods return a Boolean value indicating whether the associated process should occur, and in most cases you simply return [`true`](../Swift/true.md). However, you can return [`false`](../Swift/false.md) at times when restoring your app’s interface might not be appropriate.
 
@@ -50,7 +50,7 @@ func application(_ application: UIApplication,
 
 If you prevent restoration from occurring, you can still configure your app’s interface manually in the [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method of your app delegate.
 
-##### Assign restoration identifiers to your view controllers
+### Assign restoration identifiers to your view controllers
 
 You explicitly tell UIKit which view controllers to preserve by assigning restoration identifiers to them. A restoration identifier is a unique string that you assign to the view controller programmatically or in Interface Builder. The name of the view controller class is usually a suitable restoration identifier, but you may use any string. Add that string to the view controller in your storyboard file or assign it to the view controller’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property at runtime.
 
@@ -62,7 +62,7 @@ You aren’t required to assign a restoration identifier to every view controlle
 
 For detailed information about what gets preserved, see [About the UI preservation process](./about-the-ui-preservation-process.md).
 
-##### Encode and decode custom information for your app
+### Encode and decode custom information for your app
 
 During the preservation process, UIKit calls the [`encodeRestorableState(with:)`](./uistaterestoring/encoderestorablestate%28with%29.md) method of each preserved view and view controller. Use this method to preserve the information that you need to return the view or view controller to its current state.
 
@@ -100,7 +100,7 @@ override func encodeRestorableState(with coder: NSCoder) {
 
 For more information about how UIKit preserves your app’s views, view controllers, and state information, see [About the UI preservation process](./about-the-ui-preservation-process.md).
 
-##### Create view controllers when asked
+### Create view controllers when asked
 
 If preserved state information is available when your app is launched, the system attempts to restore your app’s interface using the preserved data.
 

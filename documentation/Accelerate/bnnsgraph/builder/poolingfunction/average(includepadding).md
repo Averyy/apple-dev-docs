@@ -21,7 +21,7 @@ A function for pooling that computes the average of each element in the pooling 
 case average(includePadding: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Set `includePadding` to `true` to specify that zero-padding is included in the average calculation.
 

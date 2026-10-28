@@ -31,7 +31,7 @@ func loadProduct(withParameters parameters: [String : Any]) async throws -> Bool
 - [Generating the signature to validate StoreKit-rendered ads](../generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Signing and providing ads](../signing-and-providing-ads.md)
 
-#### Discussion
+## Discussion
 
 For a seamless user experience, load the product information before presenting the [`SKStoreProductViewController`](../skstoreproductviewcontroller.md) view controller. However, if you load the product information while presenting the view controller, once loaded, the product data replaces the contents of the view controller.
 

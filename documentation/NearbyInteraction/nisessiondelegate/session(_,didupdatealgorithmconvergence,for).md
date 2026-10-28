@@ -22,7 +22,7 @@ optional func session(_ session: NISession, didUpdateAlgorithmConvergence conver
 - (void) session:(NISession *) session didUpdateAlgorithmConvergence:(NIAlgorithmConvergence *) convergence forObject:(NINearbyObject *) object;
 ```
 
-#### Discussion
+## Discussion
 
 The framework invokes this callback when [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true` to notify the app of the current convergence state and user-coaching recommendations.
 

@@ -25,7 +25,7 @@ class var autoupdatingCurrent: Locale { get }
 @property (class, strong, readonly) NSLocale * autoupdatingCurrentLocale;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the locale currently used by the app, based on the following:
 

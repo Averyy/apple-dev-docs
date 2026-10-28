@@ -23,11 +23,11 @@ func setString(_ string: String, forType dataType: NSPasteboard.PasteboardType) 
 
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was written successfully, otherwise [`false`](../../Swift/false.md) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
 
-#### Discussion
+## Discussion
 
 This method invokes [`setData(_:forType:)`](./setdata%28_,fortype%29.md) to perform the write.
 

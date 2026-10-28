@@ -5,7 +5,7 @@
 
 This header contains the IOFilterScheme class definition.
 
-#### Overview
+## Overview
 
 ## Topics
 

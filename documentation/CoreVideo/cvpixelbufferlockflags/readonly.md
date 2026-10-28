@@ -25,7 +25,7 @@ static var readOnly: CVPixelBufferLockFlags { get }
 kCVPixelBufferLock_ReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag if you don’t plan to modify buffer data while holding the lock. Setting this flag improves performance by preventing Core Video from invalidating  existing caches of the buffer’s contents.
 

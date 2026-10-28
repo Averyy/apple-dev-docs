@@ -24,11 +24,11 @@ func SSLSetSessionTicketsEnabled(_ context: SSLContext, _ enabled: Bool) -> OSSt
 OSStatus SSLSetSessionTicketsEnabled(SSLContextRef context, Boolean enabled);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 By default, session tickets are disabled.
 

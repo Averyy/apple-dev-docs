@@ -15,7 +15,7 @@ The next key.
 static let next: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

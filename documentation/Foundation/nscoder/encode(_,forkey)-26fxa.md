@@ -24,7 +24,7 @@ func encode(_ vector: CGVector, forKey key: String)
 - (void) encodeCGVector:(CGVector) vector forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGVector(forKey:)`](./decodecgvector%28forkey%29.md) method to retrieve the data.
 

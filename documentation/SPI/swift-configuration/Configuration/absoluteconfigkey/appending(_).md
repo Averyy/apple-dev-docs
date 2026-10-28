@@ -24,7 +24,7 @@ Returns a new absolute configuration key by appending the given relative key.
 func appending(_ relative: ConfigKey) -> AbsoluteConfigKey
 ```
 
-#### Return Value
+## Return Value
 
 A new absolute configuration key that includes the relative key at the end.
 

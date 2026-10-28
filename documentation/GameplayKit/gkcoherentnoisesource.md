@@ -24,7 +24,7 @@ class GKCoherentNoiseSource
 @interface GKCoherentNoiseSource : GKNoiseSource
 ```
 
-#### Overview
+## Overview
 
 In general, *noise* is randomness across a (one-, two-, three-, or many-dimensional) domain—for example, you can create noise by filling an image with values from a random number generator. Unlike such truly random noise, *coherent noise* is consistent and smooth: you can always generate the same output from a specific seed value, and small variations across the domain create only small variations in noise values.
 

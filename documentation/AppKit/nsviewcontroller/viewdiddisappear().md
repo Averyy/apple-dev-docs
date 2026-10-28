@@ -19,7 +19,7 @@ func viewDidDisappear()
 - (void) viewDidDisappear;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks associated with removing the view controller’s view from the window’s view hierarchy, such as releasing resources not needed when the view is not visible or no longer part of the window.
 

@@ -19,7 +19,7 @@ Creates a data source from a folder that contains audio files, each named after 
 case labeledFiles(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Create a sound classifier data source from a directory of audio files with the `labeledFiles` case. You must name each file with a sound classification label, followed by a period and an arbitrary string, ending with the file extension. For example, you can name a sound classifier’s training files as `Laughter.3.png`, `Applause.1.jpg`, `Applause.2.jpg`, and so on.
 

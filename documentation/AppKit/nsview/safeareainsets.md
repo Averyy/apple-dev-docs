@@ -19,7 +19,7 @@ var safeAreaInsets: NSEdgeInsets { get }
 @property (readonly) NSEdgeInsets safeAreaInsets;
 ```
 
-#### Discussion
+## Discussion
 
 A view’s safe area reflects the portion of the view not covered by the window’s title bar or any ancestor views. This property reflects the superview’s safe area plus any additional insets you specify in the [`additionalSafeAreaInsets`](./additionalsafeareainsets.md) property. If the view is not currently installed in a view hierarchy, or is not yet visible onscreen, the insets in this property are `0`.
 

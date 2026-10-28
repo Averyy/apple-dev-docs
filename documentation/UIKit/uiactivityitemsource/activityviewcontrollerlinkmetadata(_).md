@@ -23,11 +23,11 @@ optional func activityViewControllerLinkMetadata(_ activityViewController: UIAct
 - (LPLinkMetadata *) activityViewControllerLinkMetadata:(UIActivityViewController *) activityViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The [`LPLinkMetadata`](../../LinkPresentation/lplinkmetadata.md) object that contains the metadata about a URL, including its title, icon, images, and video.
 
-#### Discussion
+## Discussion
 
 Using the [Link Presentation](../../LinkPresentation/LinkPresentation.md) framework, you can display rich previews of web links inside your app. For instance, if your app already has a database of links, with titles and images that weren’t fetched by [`LPMetadataProvider`](../../LinkPresentation/lpmetadataprovider.md), you don’t have to fetch new metadata from the internet. Use this method instead and avoid downloading it again.
 

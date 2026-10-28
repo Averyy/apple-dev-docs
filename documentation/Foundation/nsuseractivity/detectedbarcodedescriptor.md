@@ -25,7 +25,7 @@ var detectedBarcodeDescriptor: CIBarcodeDescriptor? { get }
 @property (nonatomic, copy, readonly, nullable) CIBarcodeDescriptor * detectedBarcodeDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional. This value is present if the user activity was created from a source that detected a barcode or a QR code.
 

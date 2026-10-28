@@ -23,7 +23,7 @@ optional func presentationController(_ presentationController: UIPresentationCon
 - (void) presentationController:(UIPresentationController *) presentationController prepareAdaptivePresentationController:(UIPresentationController *) adaptivePresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method during adaptation so the delegate can configure properties of the adaptive presentation controller before it presents.
 

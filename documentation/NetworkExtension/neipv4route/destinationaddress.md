@@ -24,7 +24,7 @@ var destinationAddress: String { get }
 @property (readonly) NSString * destinationAddress;
 ```
 
-#### Discussion
+## Discussion
 
 This string is combined with `destinationSubnetMask` to specify the destination network of the route.
 

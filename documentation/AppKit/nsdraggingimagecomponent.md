@@ -19,7 +19,7 @@ class NSDraggingImageComponent
 @interface NSDraggingImageComponent : NSObject
 ```
 
-#### Overview
+## Overview
 
 An array of [`NSDraggingImageComponent`](./nsdraggingimagecomponent.md) instances are composited together to create the dragging image for an [`NSDraggingItem`](./nsdraggingitem.md). [`NSDraggingImageComponent`](./nsdraggingimagecomponent.md) instances can simply be considered as named images with a location used by an [`NSDraggingItem`](./nsdraggingitem.md) instance.
 

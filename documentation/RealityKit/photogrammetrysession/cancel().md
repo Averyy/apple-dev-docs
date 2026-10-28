@@ -18,7 +18,7 @@ Requests cancellation of any running requests.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 When cancellation has completed, a `.processingCancelled` message will be output and `isProcessing` will be `false`.  Calling this method has no effect if `!isProcessing`.
 

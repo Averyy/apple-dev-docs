@@ -21,7 +21,7 @@ The kind of errors this publisher might publish.
 typealias Failure = P.Failure
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces errors of the type produced by the upstream publisher-of-publishers.
 

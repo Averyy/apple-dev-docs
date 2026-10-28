@@ -20,7 +20,7 @@ Creates a box mesh with vertices positioned such that the origin is at the cente
 static func box(size: SIMD3<Float>) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Use this factory method for objects that are *in* the scene rather than defining the scene, or when combining multiple reverb meshes to define a space (for example, separate entities for the floor, ceiling, and walls of a room).
 

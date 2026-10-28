@@ -24,7 +24,7 @@ class CAValueFunction
 @interface CAValueFunction : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use a value function to specify the individual components of an animated transform.
 

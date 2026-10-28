@@ -25,11 +25,11 @@ init?(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInputStream` object that reads data from the file at `url`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

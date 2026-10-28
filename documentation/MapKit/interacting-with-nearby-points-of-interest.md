@@ -13,11 +13,11 @@ Provide automatic search completions for a partial search query, search the map 
 - visionOS 2.2+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to programmatically search for map-based addresses and points of interest using a natural language string, and how to get more information about points of interest that a person selects on the map. The search results center around the locations visible in the map view.
 
-##### Request search completions
+### Request search completions
 
 [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) retrieves autocomplete suggestions for a partial search query within a map region. A person can type “cof”, and a search completion suggests “coffee” as the query string. As the person types a query into a search bar, the sample app updates the query. In SwiftUI, the sample creates the search field using the [`searchable(text:placement:prompt:)`](../SwiftUI/view/searchable%28text,placement,prompt%29.md) modifier.
 
@@ -47,7 +47,7 @@ func provideCompletionSuggestions(for query: String) {
 }
 ```
 
-##### Receive completion results
+### Receive completion results
 
 Completion results represent fully formed query strings based on the query fragment someone types. The sample app uses completion results to populate UI elements to quickly fill in a search query. The app receives the latest completion results as an array of [`MKLocalSearchCompletion`](./mklocalsearchcompletion.md) objects by adopting the [`MKLocalSearchCompleterDelegate`](./mklocalsearchcompleterdelegate.md) protocol.
 
@@ -80,7 +80,7 @@ The app uses an [`AsyncStream`](../Swift/asyncstream.md) to deliver the completi
 }
 ```
 
-##### Highlight the relationship of a query fragment to the suggestion
+### Highlight the relationship of a query fragment to the suggestion
 
 Within the UI elements that represent each query result, the sample code uses the [`titleHighlightRanges`](./mklocalsearchcompletion/titlehighlightranges.md) on an `MKLocalSearchCompletion` to show how the query someone enters relates to the suggested result. For example, the following code applies a highlight with [`NSAttributedString`](../Foundation/nsattributedstring.md):
 
@@ -99,7 +99,7 @@ private func createHighlightedString(text: String, rangeValues: [NSValue]) -> NS
 }
 ```
 
-##### Search for map items
+### Search for map items
 
 An [`MKLocalSearch.Request`](./mklocalsearch/request.md) takes either an `MKLocalSearchCompletion` or a natural language query string, and returns an array of [`MKMapItem`](./mkmapitem.md) objects. Each `MKMapItem` represents a geographic location, like a specific address, that matches the search query. The sample code asynchronously retrieves the array of `MKMapItem` objects by calling [`start(completionHandler:)`](./mklocalsearch/start%28completionhandler%29.md) on [`MKLocalSearch`](./mklocalsearch.md).
 
@@ -122,7 +122,7 @@ do {
 }
 ```
 
-##### Allow someone to select points of interest on the map
+### Allow someone to select points of interest on the map
 
 If a person is exploring the map, they can get information for a point of interest by tapping it. To provide these interactions, the sample code enables selectable map features as follows:
 
@@ -148,7 +148,7 @@ If a person is exploring the map, they can get information for a point of intere
 
 When someone taps a point of interest, the system presents the map item’s details, including information like a phone number, business hours, and buttons to start navigation to the location using Apple Maps. The system presents the information using the style that the [`mapFeatureSelectionAccessory(_:)`](../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md) modifier configures. The sample app uses the [`automatic`](./mapitemdetailselectionaccessorystyle/automatic.md) style, but the [`MapItemDetailSelectionAccessoryStyle`](./mapitemdetailselectionaccessorystyle.md) structure offers several other options.
 
-##### Persist and retrieve map items
+### Persist and retrieve map items
 
 If someone is exploring the map, they may want the app to store places they looked at so that they can come back to them later, including across app launches. `MKMapItem` has an [`identifier`](./mkmapitem/identifier-swift.property.md) property, which the app stores in its `VisitedPlace` model using `SwiftData`.
 

@@ -16,7 +16,7 @@ case failureRequiringAppLaunch
 INBookRestaurantReservationIntentCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot handle the request directly for a reason not covered by any other response code. Do not use it for general errors or to force the user to launch your app.
 

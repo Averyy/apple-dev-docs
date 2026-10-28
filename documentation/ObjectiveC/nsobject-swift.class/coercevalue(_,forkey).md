@@ -20,7 +20,7 @@ func coerceValue(_ value: Any?, forKey key: String) -> Any?
 - (id) coerceValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `coerceValueFor<Key>:` is used if it exists.
 

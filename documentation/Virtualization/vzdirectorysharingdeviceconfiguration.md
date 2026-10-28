@@ -19,7 +19,7 @@ class VZDirectorySharingDeviceConfiguration
 @interface VZDirectorySharingDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZDirectorySharingDeviceConfiguration` directly. Instead use one of its subclasses, like [`VZVirtioFileSystemDeviceConfiguration`](./vzvirtiofilesystemdeviceconfiguration.md).
 

@@ -6,7 +6,7 @@
 
 An array of one or more byte pairs for data channel 1/field 1 (“CC1”) of a CEA-608 data stream, each byte pair corresponding to a video frame.
 
-#### Overview
+## Overview
 
 For a CEA-608 track, the data is an array of one or more byte pairs for data channel 1/field 1 (“CC1”) of a CEA-608 data stream, each byte pair corresponding to a video frame. For details about the content, refer to the specification CEA-608-E, Line 21 Data Services, April, 2008. The durations of closed caption media samples can vary but should not be shorter than the number of byte pairs in the byte pair array. A closed caption media sample duration that is longer than the array length in video frames should treat additional durations as though null (`0`) byte pair bytes are received.
 

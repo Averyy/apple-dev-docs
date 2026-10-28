@@ -16,11 +16,11 @@ Returns the refCon set with setRefCon.
 void *(*getRefCon)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previously stored user defined value.
 
-#### Discussion
+## Discussion
 
 Returns the user defined value previously stored in the ORB with setRefCon.
 

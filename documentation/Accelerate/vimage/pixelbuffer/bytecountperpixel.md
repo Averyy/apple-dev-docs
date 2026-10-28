@@ -23,7 +23,7 @@ var byteCountPerPixel: Int { get }
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 For example, the following code prints the number of bytes per pixel in two interleaved buffers:
 

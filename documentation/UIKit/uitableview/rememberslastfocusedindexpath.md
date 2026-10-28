@@ -23,7 +23,7 @@ var remembersLastFocusedIndexPath: Bool { get set }
 @property (nonatomic) BOOL remembersLastFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the table view remembers which index path was focused when focus leaves the table view, and automatically redirects focus back to that index path if focus moves back into the table view. By default, this property is set to [`false`](../../Swift/false.md).
 

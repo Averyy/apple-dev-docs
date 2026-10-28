@@ -20,7 +20,7 @@ class ODQueryRef
 typedef struct __ODQuery * ODQueryRef;
 ```
 
-#### Discussion
+## Discussion
 
 Query objects are usually created with [`ODQueryCreateWithNode(_:_:_:_:_:_:_:_:_:)`](./odquerycreatewithnode%28_,_,_,_,_,_,_,_,_%29.md) or [`ODQueryCreateWithNodeType(_:_:_:_:_:_:_:_:_:)`](./odquerycreatewithnodetype%28_,_,_,_,_,_,_,_,_%29.md).
 

@@ -21,7 +21,7 @@ Accesses the pointee at the specified offset from this pointer.
 subscript(i: Int) -> Pointee { get }
 ```
 
-#### Overview
+## Overview
 
 For a pointer `p`, the memory at `p + i` must be initialized.
 

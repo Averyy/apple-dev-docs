@@ -23,11 +23,11 @@ class func ane() -> Self?
 + (instancetype) aneDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A device that uses the Apple Neural Engine, or `nil` if none exists.
 
-#### Discussion
+## Discussion
 
 When you select this device, the system uses the Apple Neural Engine to execute valid layers. Layers that can’t execute on the Apple Neural Engine run on the `CPU` or `GPU`. The system doesn’t select the Apple Neural Engine if you use [`MLCDeviceType.any`](../mlcdevicetype/any.md).
 

@@ -25,11 +25,11 @@ class func instanceMethod(for aSelector: Selector!) -> IMP!
 + (IMP) instanceMethodForSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 The address of the implementation of the `aSelector` instance method.
 
-#### Discussion
+## Discussion
 
 An error is generated if instances of the receiver can’t respond to `aSelector` messages.
 

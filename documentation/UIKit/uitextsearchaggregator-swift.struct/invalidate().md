@@ -18,7 +18,7 @@ Invalidates all currently shown ranges.
 func invalidate()
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the system find panel to update its current state, and might trigger a new search using [`performTextSearch(queryString:options:resultAggregator:)`](../uitextsearching-3wkjv/performtextsearch%28querystring,options,resultaggregator%29.md) (Swift) or [`performTextSearchWithQueryString:usingOptions:resultAggregator:`](../uitextsearching-53wjq/performtextsearchwithquerystring_usingoptions_resultaggregator_.md) (Objective-C) immediately after.
 

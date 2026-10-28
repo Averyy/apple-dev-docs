@@ -24,11 +24,11 @@ func texelDataWithTopLeftOrigin() -> Data?
 - (NSData *) texelDataWithTopLeftOrigin;
 ```
 
-#### Return Value
+## Return Value
 
 The texture’s image data, or `nil` if data is not available.
 
-#### Discussion
+## Discussion
 
 If the texture was initialized with image data in bottom-left-origin format, the first call to this method creates and caches image data in top-left-origin format.
 

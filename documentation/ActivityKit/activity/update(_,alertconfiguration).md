@@ -20,7 +20,7 @@ func update(_ content: ActivityContent<Activity<Attributes>.ContentState>, alert
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 The system ignores updates to a Live Activity that’s in the [`ActivityState.ended`](../activitystate/ended.md) state.
 

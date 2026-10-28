@@ -19,7 +19,7 @@ An object RealityKit passes data to a post process effect method.
 struct PostProcessEffectContext<CommandBuffer>
 ```
 
-#### Overview
+## Overview
 
 You can register a method that applies postprocessing effects to a scene RealityKit renders with a [`RealityView`](./realityview.md). Once every frame, RealityKit calls that function before displaying the scene. You can use this to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, prioritize using APIs that execute on the GPU, such as Metal compute functions, [Metal Performance Shaders](../MetalPerformanceShaders/MetalPerformanceShaders.md), or [Core Image](../CoreImage/CoreImage.md). You can also render additional content on top of the frame buffer, such as a SpriteKit scene.
 

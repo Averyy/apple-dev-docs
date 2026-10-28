@@ -21,7 +21,7 @@ A message the system sends when the extension’s host app begins running in the
 struct WillEnterForegroundMessage
 ```
 
-#### Overview
+## Overview
 
 Your extension can use this message to restart tasks that it stopped when the app moved to the background.
 

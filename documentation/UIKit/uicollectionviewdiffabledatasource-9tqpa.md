@@ -20,7 +20,7 @@ The object you use to manage data and provide cells for a collection view.
 @preconcurrency class UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType> where SectionIdentifierType : Hashable, SectionIdentifierType : Sendable, ItemIdentifierType : Hashable, ItemIdentifierType : Sendable
 ```
 
-#### Overview
+## Overview
 
 A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`UICollectionViewDataSource`](./uicollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 

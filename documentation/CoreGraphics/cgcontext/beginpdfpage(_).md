@@ -25,7 +25,7 @@ func beginPDFPage(_ pageInfo: CFDictionary?)
 extern void CGPDFContextBeginPage(CGContextRef context, CFDictionaryRef pageInfo);
 ```
 
-#### Discussion
+## Discussion
 
 You must call the function [`endPDFPage()`](./endpdfpage%28%29.md) to signal the end of the page.
 

@@ -21,7 +21,7 @@ Advances the simulation by one time step, encoding all simulation stage dispatch
 final func advance(_ params: ComputeGraphSimulation.AdvanceParams)
 ```
 
-#### Discussion
+## Discussion
 
 Call this once per frame from your render loop. The simulation reads [`deltaTime`](./advanceparams/deltatime.md) to determine how much simulated time to consume, subject to [`simulationRate`](./simulationrate-swift.property.md). Spatial transforms and optional viewer information in `params` are forwarded to the simulation graph.
 

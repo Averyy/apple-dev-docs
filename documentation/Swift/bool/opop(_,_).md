@@ -21,7 +21,7 @@ Performs a logical OR operation on two Boolean values.
 static func || (lhs: Bool, rhs: @autoclosure () throws -> Bool) rethrows -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The logical OR operator (`||`) combines two Boolean values and returns `true` if at least one of the values is `true`. If both values are `false`, the operator returns `false`.
 

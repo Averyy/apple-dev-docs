@@ -21,7 +21,7 @@ The configuration for writing document contents.
 typealias WriteConfiguration = FileDocumentWriteConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This type is an alias for [`FileDocumentWriteConfiguration`](../filedocumentwriteconfiguration.md), which contains a content type and a file wrapper that you use to access the contents of a document file, if one already exists. You get a value of this type as an input to the [`fileWrapper(configuration:)`](./filewrapper%28configuration%29.md) method.
 

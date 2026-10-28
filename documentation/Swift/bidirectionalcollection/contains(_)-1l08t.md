@@ -23,7 +23,7 @@ func contains(_ regex: some RegexComponent) -> Bool
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 `true` if the regex was found in the collection, otherwise `false`.
 

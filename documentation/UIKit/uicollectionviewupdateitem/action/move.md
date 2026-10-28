@@ -21,7 +21,7 @@ case move
 UICollectionUpdateActionMove
 ```
 
-#### Discussion
+## Discussion
 
 Move the item from its current location to a new location.
 

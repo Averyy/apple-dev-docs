@@ -24,7 +24,7 @@ static let walkingSpeed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierWalkingSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 Walking speed represents how quickly the user walks on flat ground. The system automatically records walking speed samples on iPhone 8 or later. The user must carry their phone near their waist—such as in a pocket—and walk steadily on flat ground. To ensure accuracy, the user’s [`height`](./height.md) value must be up to date. The system records 10 to 30 walking speed samples on a typical day. iPhone doesn’t record walking speed samples if the user’s wheelchair status is on.
 

@@ -25,11 +25,11 @@ func CMSampleBufferGetFormatDescription(_ sbuf: CMSampleBuffer) -> CMFormatDescr
 extern CMFormatDescriptionRefCMSampleBufferGetFormatDescription(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The format description of the samples in the `CMSampleBuffer` or `NULL` if there is an error.
 
-#### Discussion
+## Discussion
 
 On return, the caller doesn’t own the returned `formatDesc`, and must retain it explicitly if the caller needs to maintain a reference to it.
 

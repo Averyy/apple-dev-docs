@@ -9,7 +9,7 @@ Access the content of the Apple TV Catalog in bulk.
 **Availability**:
 - AppleTVFeed 1.0+
 
-#### Overview
+## Overview
 
 Apple TV Feed contains the catalog content of Apple TV products in bulk for consumption as feed exports. These bulk exports are appropriate for offline use cases, complementing Apple Media API, which is best for online use. Apple TV Feed includes content metadata for movies, TV shows, TV show seasons, TV show episodes, and sporting events — and it fully refreshes every 24 hours. You access Apple TV Feed using the Apple Media Feed API to [request an export](./requesting-a-feed-export.md) of a data set. To get the information required to authorize your API requests, you need to be a member of the [Apple Services Performance Partners Program](https://partners.marketingtools.apple.com).
 
@@ -19,7 +19,7 @@ Apple TV Feed uses the Parquet format, which is an open source columnar storage 
 
 > **Note**: Although the feed is in Parquet format, this documentation provides data examples in JSON format for illustrative purposes.
 
-#### Use sample scripts
+## Use sample scripts
 
 The process to access Apple TV Feed is largely the same as for Apple Music Feed. In the [music-feed-examples](https://github.com/apple/music-feed-examples) public GitHub repository, you can find sample Java and Python scripts that perform the following steps:
 

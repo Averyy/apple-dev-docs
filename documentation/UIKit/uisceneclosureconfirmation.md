@@ -22,7 +22,7 @@ class UISceneClosureConfirmation
 @interface UISceneClosureConfirmation : NSObject
 ```
 
-#### Overview
+## Overview
 
 By default, the confirmation dialog includes a “Close” button (which closes the scene) and a “Cancel” button (which keeps the scene open). You can replace either of these default buttons by providing custom actions. Use a `UIAlertAction` with style `.destructive` to replace the “Close” button, or style `.cancel` to replace the “Cancel” button.
 

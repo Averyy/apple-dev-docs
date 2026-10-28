@@ -25,7 +25,7 @@ func broadcast()
 - (void) broadcast;
 ```
 
-#### Discussion
+## Discussion
 
 If no threads are waiting on the condition, this method does nothing.
 

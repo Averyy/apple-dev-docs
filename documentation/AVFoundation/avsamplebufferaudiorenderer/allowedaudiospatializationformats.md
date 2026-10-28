@@ -24,7 +24,7 @@ var allowedAudioSpatializationFormats: AVAudioSpatializationFormats { get set }
 @property (nonatomic, assign) AVAudioSpatializationFormats allowedAudioSpatializationFormats;
 ```
 
-#### Discussion
+## Discussion
 
 The default property value is [`multichannel`](../avaudiospatializationformats/multichannel.md), which tells the player to spatialize any decodable multichannel layout. Setting the value to [`monoStereoAndMultichannel`](../avaudiospatializationformats/monostereoandmultichannel.md) tells the player to spatialize any decodable mono, stereo, or multichannel layout. When this property value is [`monoAndStereo`](../avaudiospatializationformats/monoandstereo.md) the player attempts to spatialize content tagged with a stereo channel layout (two-channel content with no layout specified as well as mono).
 

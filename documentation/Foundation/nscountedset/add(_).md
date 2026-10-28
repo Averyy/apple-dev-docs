@@ -25,7 +25,7 @@ func add(_ object: Any)
 - (void) addObject:(ObjectType) object;
 ```
 
-#### Discussion
+## Discussion
 
 If `object` is already a member, [`add(_:)`](./add%28_%29.md) increments the count associated with the object. If `object` is not already a member, it is sent a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message.
 

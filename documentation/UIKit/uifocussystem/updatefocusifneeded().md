@@ -23,7 +23,7 @@ func updateFocusIfNeeded()
 - (void) updateFocusIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 If the current environment has a pending focus update, calling this method forces the system to update the focus information immediately instead of waiting for the next run loop cycle. If no focus update is pending, this method does nothing.
 

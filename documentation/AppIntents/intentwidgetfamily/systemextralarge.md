@@ -20,7 +20,7 @@ An extra large widget.
 case systemExtraLarge
 ```
 
-#### Discussion
+## Discussion
 
 The extra-large system widget can appear on the Home Screen in iPadOS and on macOS.
 

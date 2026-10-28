@@ -23,7 +23,7 @@ case failed
 INPaymentStatusFailed
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to indicate that there was an error in processing the transaction.
 

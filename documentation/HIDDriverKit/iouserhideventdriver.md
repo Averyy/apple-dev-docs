@@ -16,13 +16,13 @@ A complete driver object that dispatches keyboard, digitizer, scrolling, and poi
 class IOUserHIDEventDriver;
 ```
 
-#### Overview
+## Overview
 
 An `IOUserHIDEventDriver` object is a fully functional driver that handles many common types of HID events. This driver parses incoming reports and uses the information to dispatch many types of events to the system. Apple provides this driver object as a default implementation for devices that conform to the HID specifications and don’t include any custom information that requires a special driver.
 
 You can subclass `IOUserHIDEventDriver` and add support for other types of events. Alternatively, you can subclass [`IOUserHIDEventService`](./iouserhideventservice.md) and customize how your event service processes the report data.
 
-##### Specify the Driver’s Personality Information
+### Specify the Driver’s Personality Information
 
 When you subclass [`IOUserHIDEventDriver`](./iouserhideventdriver.md), update the `IOKitPersonalities` key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table.
 

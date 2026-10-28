@@ -24,7 +24,7 @@ var needsDisplayOnBoundsChange: Bool { get set }
 @property BOOL needsDisplayOnBoundsChange;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the layer automatically calls its [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) method whenever its [`bounds`](./bounds.md) property changes. The default value of this property is [`false`](../../Swift/false.md).
 

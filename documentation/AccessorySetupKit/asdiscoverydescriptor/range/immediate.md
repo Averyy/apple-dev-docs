@@ -20,7 +20,7 @@ case immediate
 ASDiscoveryDescriptorRangeImmediate
 ```
 
-#### Discussion
+## Discussion
 
 This range means that an accessory is right next to the device running your app.
 

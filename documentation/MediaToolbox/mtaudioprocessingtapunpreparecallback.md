@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapUnprepareCallback = (MTAudioProcessingTap) -> Void
 typedef void (*)(const struct opaqueMTAudioProcessingTap *) MTAudioProcessingTapUnprepareCallback;
 ```
 
-#### Overview
+## Overview
 
 The unpreparation callback is invoked when the underlying audio machinery stops calling the process callback.
 

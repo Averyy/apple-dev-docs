@@ -15,7 +15,7 @@ The UUID that an app optionally generates to map a customer’s in-app purchase 
 string app_account_token
 ```
 
-#### Discussion
+## Discussion
 
 When a customer initiates an in-app purchase, you can optionally generate an [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md) and send it to the App Store. The App Store returns the same value in [`appAccountToken`](../StoreKit/transaction/appaccounttoken.md) in the transaction information after the customer completes the purchase.
 

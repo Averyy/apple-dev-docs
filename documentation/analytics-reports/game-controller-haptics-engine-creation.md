@@ -5,7 +5,7 @@
 
 Analyze how your app uses haptic localities and which controllers it uses.
 
-#### Overview
+## Overview
 
 The data in this report details the haptic localities that an app uses. It includes information about haptic use frequency and controller use frequency.
 
@@ -22,7 +22,7 @@ The data in this report details the haptic localities that an app uses. It inclu
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ The data in this report details the haptic localities that an app uses. It inclu
 | Product Category | The controller type for which the app creates the haptic engine | `string` |
 | Haptic Locality | The haptic locality of the haptic engine | `string` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

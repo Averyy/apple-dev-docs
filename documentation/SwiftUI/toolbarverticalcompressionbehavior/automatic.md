@@ -21,7 +21,7 @@ The automatic compression behavior.
 static let automatic: ToolbarVerticalCompressionBehavior
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, this behavior prefers the tab bar.
 

@@ -33,7 +33,7 @@ var itemType: INNotebookItemType { get }
 @property (atomic, assign, readonly) INNotebookItemType itemType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine which items to search. When generating the list of search results, include items only of the specified type.
 

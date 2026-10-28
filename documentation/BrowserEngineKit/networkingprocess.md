@@ -21,7 +21,7 @@ struct NetworkingProcess
 
 - [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md)
 
-#### Overview
+## Overview
 
 A browser app can have one or more networking extensions, each of which need a separate bundle identifier. The app can launch only one instance of each networking extension.
 

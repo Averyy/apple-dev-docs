@@ -5,7 +5,7 @@
 
 Split content into logical sections inside lazy stack views.
 
-#### Overview
+## Overview
 
 [`LazyHStack`](./lazyhstack.md) and [`LazyVStack`](./lazyvstack.md) views are both able to display groups of views organized into logical sections, arranging their children in lines that grow horizontally and vertically, respectively. These stacks are “lazy” in that the stack views don’t create items until they need to be rendered onscreen. Like stack views, lazy stacks don’t include any inherent support for scrolling, and you should wrap lazy stack views in [`ScrollView`](./scrollview.md) containers.
 
@@ -17,7 +17,7 @@ The code samples in this article build a user interface for visualizing shades o
 
 ![A screenshot showing a lazy stack view with multiple sections. Each section header contains the name of the color, followed by a set of views showing varying shades of that color.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Grouping-Data-with-Lazy-Stack-Views-1@2x.png)
 
-##### Prepare your data
+### Prepare your data
 
 As with views contained within a stack, each [`Section`](./section.md) must be uniquely identifiable when iterated by [`ForEach`](./foreach.md). In this example, `ColorData` instances represent the sections, and `ShadeData` instances represent the shades of each color inside a section. Both `ColorData` and `ShadeData` conform to the [`Identifiable`](../Swift/identifiable.md) protocol.
 
@@ -42,7 +42,7 @@ struct ColorData: Identifiable {
 }
 ```
 
-##### Display sections with headers and footers
+### Display sections with headers and footers
 
 The `ColorSelectionView` below sets up an array containing `ColorData` instances for each primary color. The [`LazyVStack`](./lazyvstack.md) iterates over the array of color data to create sections, then iterates over the `variations` to create views from the shades.
 
@@ -95,7 +95,7 @@ struct SectionHeaderView: View {
 
 For more information on using [`ForEach`](./foreach.md) to repeat views inside a stack, see [Creating performant scrollable stacks](./creating-performant-scrollable-stacks.md).
 
-##### Keep important information visible
+### Keep important information visible
 
 By default, section header and footer views will scroll in sync with section content. If you want header and footer views to always remain visible, regardless of whether the top or bottom of the section is visible, then specify a set of [`PinnedScrollableViews`](./pinnedscrollableviews.md) for the `pinnedViews` property of the lazy stack view.
 

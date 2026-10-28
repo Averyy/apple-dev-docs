@@ -19,7 +19,7 @@ func requestStop() throws
 - (BOOL) requestStopWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  In Objective-C, this function returns a value that indicates if the VM was in a stoppable state when you made the request. It doesn’t reflect whether the VM will exit or has exited.
 

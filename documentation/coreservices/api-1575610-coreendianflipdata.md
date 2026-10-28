@@ -15,7 +15,7 @@ Calls the flipper callback associated with the specifieddata type.
 OSStatus CoreEndianFlipData(OSType dataDomain, OSType dataType, SInt16 id, void *data, ByteCount dataLen, Boolean currentlyNative);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` ifthe data is byte swapped and `handlerNotFound` ifthe data is not byte swapped. Note that data is only byte swappedif it needs to be byte swapped.
 

@@ -22,7 +22,7 @@ class CPNowPlayingShuffleButton
 @interface CPNowPlayingShuffleButton : CPNowPlayingButton
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingShuffleButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through shuffle modes, using the same [`MPChangeShuffleModeCommand`](../MediaPlayer/mpchangeshufflemodecommand.md) that you provide to [`MPRemoteCommandCenter`](../MediaPlayer/mpremotecommandcenter.md).
 

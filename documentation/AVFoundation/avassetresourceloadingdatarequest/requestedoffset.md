@@ -24,7 +24,7 @@ var requestedOffset: Int64 { get }
 @property (nonatomic, readonly) long long requestedOffset;
 ```
 
-#### Discussion
+## Discussion
 
 When all of the requested bytes that can be provided have been loaded—including the possible [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) data in the [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance that contains the receiver—the delegate should respond by invoking [`finishLoading()`](../avassetresourceloadingrequest/finishloading%28%29.md).
 

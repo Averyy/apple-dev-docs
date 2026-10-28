@@ -41,11 +41,11 @@ extern SCNMatrix4 SCNMatrix4Rotate(SCNMatrix4 m, float angle, float x, float y, 
 extern SCNMatrix4 SCNMatrix4Rotate(SCNMatrix4 m, CGFloat angle, CGFloat x, CGFloat y, CGFloat z);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The resulting transformation consists of the specified rotation followed by the transformation represented by the `mat` parameter.
 

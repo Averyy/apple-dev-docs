@@ -21,7 +21,7 @@ Filters a single-precision image by performing a 2D convolution with a 5 x 5 ker
 extern void vDSP_f5x5(const float *__A, vDSP_Length __NR, vDSP_Length __NC, const float *__F, float *__C);
 ```
 
-#### Discussion
+## Discussion
 
 This function filters an image by performing a two-dimensional convolution with a 5x5 kernel (`F`) on the input matrix A and storing the resulting image in the output matrix `C`.
 

@@ -24,7 +24,7 @@ var bias: Float { get set }
 @property (nonatomic, readwrite) float bias;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be used to convert negative values into a representable range for a unsigned pixel format. For example, many edge detection filters produce results in the range `[-k,k]`. By scaling the filter weights by `0.5/k` and adding `0.5`, the results will be in range `[0,1]` suitable for use with unsigned normalized pixel formats.
 

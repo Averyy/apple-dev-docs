@@ -19,7 +19,7 @@ A sender or recipient of a message in a conversation.
 struct Participant
 ```
 
-#### Overview
+## Overview
 
 Create a `Participant` by providing a display name, a handle that uniquely identifies the participant, and a Boolean value that indicates whether the participant is the user of this device. Common handles are phone numbers or email addresses, but you can use any string that uniquely identifies a participant within your app’s user identity system.
 

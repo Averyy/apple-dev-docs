@@ -23,7 +23,7 @@ var completionDeadlineTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval completionDeadlineTime;
 ```
 
-#### Discussion
+## Discussion
 
 Missing this completion deadline results in a presentation delay.
 

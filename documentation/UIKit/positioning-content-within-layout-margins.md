@@ -5,7 +5,7 @@
 
 Position views so that they aren’t crowded by other content.
 
-#### Overview
+## Overview
 
 Layout margins provide a visual buffer between a view’s content and any content outside of the view’s bounds. The layout margins consist of inset values for each edge (top, bottom, leading, and trailing) of the view. These inset values create a space between the edges of the view’s bounds rectangle and the content inside the view. The following image shows two views with different sets of layout margins. Apart from the empty space they add around your content, margins have no visible representation.
 
@@ -17,7 +17,7 @@ To set up constraints that respect the layout margins, enable the `Constrain to 
 
 Even if you aren’t using constraints to position your content, you can still manually position content relative to a view’s layout margins. The [`directionalLayoutMargins`](./uiview/directionallayoutmargins.md) property of each view contains the edge inset values to use for the view’s margins. Take those margin values into account when computing the position of items in your view.
 
-##### Change the default layout margins
+### Change the default layout margins
 
 UIKit provides default layout margins for each view, but you can change the default values to values that are more appropriate for your view. To change a view’s margin values, update the view’s [`directionalLayoutMargins`](./uiview/directionallayoutmargins.md) property. (You can also use the Size inspector to set the value of that property at design time. In the Layout Margins section, choose the Language Directional option and enter the margin values for each of the view’s edges, as shown in the following image.)
 

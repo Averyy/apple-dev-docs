@@ -25,7 +25,7 @@ init(items: [AVMetadataItem], timeRange: CMTimeRange)
 - (instancetype) initWithItems:(NSArray<AVMetadataItem *> *) items timeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 A metadata group initialized with `items`.
 

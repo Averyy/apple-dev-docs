@@ -23,7 +23,7 @@ func globalProgress(for kind: Progress.FileOperationKind) -> Progress
 - (NSProgress *) globalProgressForKind:(NSProgressFileOperationKind) kind;
 ```
 
-#### Discussion
+## Discussion
 
 The returned progress instance tracks ongoing operations. This method supports two kinds of operations:
 

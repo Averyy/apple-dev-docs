@@ -19,7 +19,7 @@ func runModal() -> Int
 - (NSInteger) runModal;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NSOKButton` if the user edits or chooses an image; `NSCancelButton` if the user cancels or does not change the default image.
 

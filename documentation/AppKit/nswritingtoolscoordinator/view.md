@@ -19,7 +19,7 @@ weak var view: NSView? { get }
 @property (weak, readonly, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to refer to the view that currently owns the coordinator object. The system updates this property automatically when you assign the coordinator to the [`writingToolsCoordinator`](../nsview/writingtoolscoordinator.md) property of your view. The value of this property is `nil` if there is no associated view.
 

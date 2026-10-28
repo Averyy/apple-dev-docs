@@ -25,7 +25,7 @@ var deleteRule: NSDeleteRule { get set }
 @property NSDeleteRule deleteRule;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSDeleteRule.nullifyDeleteRule`](../nsdeleterule/nullifydeleterule.md). For possible values, see [`NSDeleteRule`](../nsdeleterule.md).
 

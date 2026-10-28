@@ -24,11 +24,11 @@ func MusicSequenceGetTempoTrack(_ inSequence: MusicSequence, _ outTrack: UnsafeM
 extern OSStatus MusicSequenceGetTempoTrack(MusicSequence inSequence, MusicTrack*outTrack);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Each music sequence has a single tempo track. All tempo events are placed into this track, as well as some other events—such as the time signature from a MIDI file. The tempo track, once retrieved, can be edited and iterated over as can a music track. Most non-tempo events in a tempo track are ignored.
 

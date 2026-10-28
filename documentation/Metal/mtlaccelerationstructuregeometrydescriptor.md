@@ -28,7 +28,7 @@ class MTLAccelerationStructureGeometryDescriptor
 
 - [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
 
-#### Overview
+## Overview
 
 Don’t use this base class directly. Use one of the derived classes instead, as  [`MTLAccelerationStructure`](./mtlaccelerationstructure.md) describes.
 

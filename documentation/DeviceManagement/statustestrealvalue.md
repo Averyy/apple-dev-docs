@@ -21,9 +21,9 @@ A test status item for a real value.
 object StatusTestRealValue
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ object StatusTestRealValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

@@ -20,7 +20,7 @@ case wired(credential: CredentialSession.Credential)
 
 - [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 In the wired state, the session can call [`transceive(_:)`](../transceive%28_%29.md) to exchange data with the selected credential.
 

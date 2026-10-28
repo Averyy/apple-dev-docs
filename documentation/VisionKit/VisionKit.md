@@ -13,7 +13,7 @@ Identify and extract information in the environment using the device’s camera,
 - macOS 13.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 VisionKit analyzes pixel information and isolates important data such as text of a given language, URLs, street addresses, phone numbers, shipment tracking numbers, flight numbers, dates, times, durations, and barcodes of various formats. The framework provides this analysis to your app through user interfaces your app displays, which enable people to interact with the analyzed data ([`ImageAnalyzer.AnalysisTypes`](./imageanalyzer/analysistypes.md)) and return the data of interest back to your app. In the interfaces, people can highlight, tap to focus, copy and extract data to the clipboard, or invoke a menu option that runs an app-defined action. VisionKit offers the following user interfaces:
 
@@ -25,7 +25,7 @@ The Image Analysis interface ([`ImageAnalysisInteraction`](./imageanalysisintera
 
 VisionKit’s Document Camera view controller ([`VNDocumentCameraViewController`](./vndocumentcameraviewcontroller.md)) is a camera pass-through experience that enables users to scan physical documents. The user scans the document page by page by tapping a camera interface in the view, which provides your app with the resulting images by page number after the scan completes. With the collection of scanned images, your app can create a digital version of the physical document, such as by exporting the scanned images to PDF.
 
-#### Interact with image subjects
+## Interact with image subjects
 
 In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image (see [`ImageAnalysisInteraction.Subject`](./imageanalysisinteraction/subject.md)). A *subject* may be the focal point of a picture, such as an object around which a photograph centers. Or, the framework may identify several objects that it recognizes in an image. VisionKit enables your app to extract, or *lift*, subjects to a separate image with the background removed (see [`image`](./imageanalysisinteraction/subject/image.md)), or present a button that gives more information on the subject ([`visualLookUp`](./imageanalysisinteraction/interactiontypes/visuallookup.md)).
 

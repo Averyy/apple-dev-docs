@@ -23,7 +23,7 @@ init(name: mach_port_name_t, context: mach_port_context_t)
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 This initializer aborts if name is MACH_PORT_NULL.
 

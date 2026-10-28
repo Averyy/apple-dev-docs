@@ -18,4 +18,4 @@ init(maxTokens: Int? = nil, maxKVSize: Int? = nil, kvCache: KVCacheConfiguration
 
 ---
 
-*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/generateparameters/init(maxtokens:maxkvsize:kvcache:kvbits:kvgroupsize:quantizedkvstart:kvscheme:temperature:topp:topk:minp:logprobabilities:repetitionpenalty:repetitioncontextsize:presencepenalty:presencecontextsize:frequencypenalty:frequencycontextsize:pref-8jnnr)*
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/generateparameters/init%28maxtokens:maxkvsize:kvcache:kvbits:kvgroupsize:quantizedkvstart:kvscheme:temperature:topp:topk:minp:logprobabilities:repetitionpenalty:repetitioncontextsize:presencepenalty:presencecontextsize:frequencypenalty:frequencycontextsize:pref-8jnnr)*

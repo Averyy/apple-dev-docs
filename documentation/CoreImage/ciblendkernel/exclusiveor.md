@@ -24,7 +24,7 @@ class var exclusiveOr: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * exclusiveOr;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the exclusive or blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926866@2x.png)
 

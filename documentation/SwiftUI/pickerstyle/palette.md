@@ -26,7 +26,7 @@ Available when `Self` is `PalettePickerStyle`.
 
 - [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: When used outside of menus, this style is rendered as a segmented picker. If that is the intended usage, consider [`segmented`](./segmented.md) instead.
 

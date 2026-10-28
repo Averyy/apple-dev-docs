@@ -16,11 +16,11 @@
 virtual IOReturn setElementValues(int element_index, IOReportElementValues *values, uint64_t record_time);
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn code
 
-#### Discussion
+## Discussion
 
 Atomically update a specific member of _elements[].
 

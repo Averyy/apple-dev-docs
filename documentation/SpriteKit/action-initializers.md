@@ -5,14 +5,14 @@
 
 Use these functions to create actions.
 
-#### Overview
+## Overview
 
 Most actions implement specific predefined animations that are done for you by SpriteKit. If your animation needs fall outside of the suite provided here, then you should:
 
 - Consider using the methods in Creating Custom Actions below (never subclass `SKAction`)
 - Consider the advice in [Drive Game Logic](./getting-started-with-actions.md#Drive-Game-Logic)
 
-##### Choose an Initializer for the Property You Want to Alter
+### Choose an Initializer for the Property You Want to Alter
 
 Most actions allow you to change a node’s properties and some actions specifically apply to specific nodes, like [`SKSpriteNode`](./skspritenode.md)’s actions for animating its color or texture.
 
@@ -30,7 +30,7 @@ Here are the most common animated properties:
 
 See [Action Initializers](./action-initializers.md) for a full list of action types.
 
-##### Chaining Actions
+### Chaining Actions
 
 Actions can be chained together in multiple ways:
 

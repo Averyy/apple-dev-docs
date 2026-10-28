@@ -22,7 +22,7 @@ case twoOverSecondary
 UISplitViewControllerDisplayModeTwoOverSecondary
 ```
 
-#### Discussion
+## Discussion
 
 This display mode is only available for [`UISplitViewController.Style.tripleColumn`](../style-swift.enum/triplecolumn.md) interfaces.
 

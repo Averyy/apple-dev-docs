@@ -21,7 +21,7 @@ The artist’s name.
 var artistName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can find more precise information about this album’s artists in the [`artists`](./artists.md) relationship, which, unlike [`artistName`](./artistname.md), requires that you load it explicitly using the [`with(_:)`](../musicpropertycontainer/with%28_%29.md) method, as in the following example:
 

@@ -11,7 +11,7 @@ Calls disable() in all interrupt event sources.
 virtual void disableAllInterrupts() const;
 ```
 
-#### Overview
+## Overview
 
 For all event sources (ES) for which OSDynamicCast(IOInterruptEventSource, ES) is valid, in eventChain call disable() function. See IOEventSource::disable().
 

@@ -21,7 +21,7 @@ var dataCell: Any { get set }
 @property (strong) id dataCell;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to control the font, alignment, and other text attributes for the table column contents.
 

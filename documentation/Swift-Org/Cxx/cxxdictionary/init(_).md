@@ -17,7 +17,7 @@ Creates a C++ map containing the elements of a Swift Dictionary.
 init(_ dictionary: Dictionary<Key, Value>) where Self.Key : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 This initializes the map by copying every key and value of the dictionary.
 

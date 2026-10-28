@@ -21,7 +21,7 @@ case reload
 UICollectionUpdateActionReload
 ```
 
-#### Discussion
+## Discussion
 
 Reload the item, which consists of deleting and then inserting the item.
 

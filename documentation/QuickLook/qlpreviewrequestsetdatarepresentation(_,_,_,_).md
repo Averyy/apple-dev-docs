@@ -21,13 +21,13 @@ func QLPreviewRequestSetDataRepresentation(_ preview: QLPreviewRequest!, _ data:
 extern void QLPreviewRequestSetDataRepresentation(QLPreviewRequestRef preview, CFDataRef data, CFStringRef contentTypeUTI, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns preview data to the client. The data is either extracted from a document where the document’s application has saved it, or it’s dynamically generated. How Quick Look handles the data depends upon the value of `contentTypeUTI`. The content data of the preview must be of a native Quick Look type. Currently supported UTIs for these types are: `kUTTypeImage`, `kUTTypePDF`, `kUTTypeHTML`, `kUTTypeXML`, `kUTTypePlainText`, `kUTTypeRTF`, `kUTTypeMovie`, and `kUTTypeAudio`.
 
 If the UTI type is `kUTTypeHTML`, you can have WebKit handle the layout and display of your preview. You must provide the HTML in `data` plus any attachments (for example, Address Book cards, Mail messages, or Omni Outliner documents) in the `properties` dictionary. This dictionary takes [`kQLPreviewPropertyAttachmentsKey`](./kqlpreviewpropertyattachmentskey.md) as its key and consists of one ore more subdictionaries (one per attachment). Each subdictionary uses an arbitrary string identifier as a key; the attachment should be referenced within the HTML data using the kQLPreviewContentIDScheme URL scheme (“cid”) and the identifier as the URL resource specifier—for example, “cid:the_identifier”. The keys of the subdictionary properties are [`kQLPreviewPropertyMIMETypeKey`](./kqlpreviewpropertymimetypekey.md), [`kQLPreviewPropertyTextEncodingNameKey`](./kqlpreviewpropertytextencodingnamekey.md), and [`kQLPreviewPropertyAttachmentDataKey`](./kqlpreviewpropertyattachmentdatakey.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

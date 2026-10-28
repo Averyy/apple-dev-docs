@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_WBUS16_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the WBUS16 bit.
 

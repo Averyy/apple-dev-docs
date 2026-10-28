@@ -27,7 +27,7 @@ func synchronize(texture: any MTLTexture, slice: Int, level: Int)
 
 - [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md)
 
-#### Discussion
+## Discussion
 
 This method ensures the CPU can correctly read the changes a GPU makes to a slice of a texture that uses the managed storage mode. For the resources you create with [`MTLStorageMode.managed`](../mtlstoragemode/managed.md), the CPU and GPU each have a copy of that resource. As the GPU modifies its copy, the CPU’s copy remains unchanged until you synchronize with a command, such as this one.
 

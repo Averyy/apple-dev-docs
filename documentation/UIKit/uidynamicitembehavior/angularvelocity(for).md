@@ -23,7 +23,7 @@ func angularVelocity(for item: any UIDynamicItem) -> CGFloat
 - (CGFloat) angularVelocityForItem:(id<UIDynamicItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The angular velocity of the specified dynamic item, in radians per second.
 

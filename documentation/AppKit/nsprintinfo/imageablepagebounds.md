@@ -19,7 +19,7 @@ var imageablePageBounds: NSRect { get }
 @property (readonly) NSRect imageablePageBounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property takes into account the current printer, paper size, and orientation settings, but not scaling factors. “Imageable area” is the maximum area that can possibly be marked on by the printer hardware, not the area defined by the current margin settings.
 

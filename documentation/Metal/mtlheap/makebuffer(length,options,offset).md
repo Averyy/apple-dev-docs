@@ -25,11 +25,11 @@ func makeBuffer(length: Int, options: MTLResourceOptions = [], offset: Int) -> (
 - (id<MTLBuffer>) newBufferWithLength:(NSUInteger) length options:(MTLResourceOptions) options offset:(NSUInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A new buffer, or `nil` if the heap is not a placement heap.
 
-#### Discussion
+## Discussion
 
 You can call the method with the following restrictions:
 

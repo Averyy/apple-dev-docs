@@ -22,7 +22,7 @@ func end() async throws
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the session couldn’t be removed from the system.
 

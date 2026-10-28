@@ -25,7 +25,7 @@ case none
 SCNFilterModeNone
 ```
 
-#### Discussion
+## Discussion
 
 Only valid for the [`mipFilter`](../scnmaterialproperty/mipfilter.md) property, specifying that SceneKit should not use mip mapping.
 

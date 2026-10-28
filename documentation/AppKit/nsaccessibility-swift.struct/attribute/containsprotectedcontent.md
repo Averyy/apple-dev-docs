@@ -19,7 +19,7 @@ static let containsProtectedContent: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityContainsProtectedContentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an `NSNumber` as `boolValue`. The value is [`true`](../../../Swift/true.md) if the object contains protected content, and [`false`](../../../Swift/false.md) if not.
 

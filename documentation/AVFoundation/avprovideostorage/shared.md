@@ -23,7 +23,7 @@ class var shared: AVProVideoStorage? { get }
 @property (class, readonly, nullable) AVProVideoStorage * sharedStorage;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the Pro Video Storage class if supported; otherwise, `nil`.
 

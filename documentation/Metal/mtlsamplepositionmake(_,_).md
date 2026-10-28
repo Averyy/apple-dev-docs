@@ -24,7 +24,7 @@ func MTLSamplePositionMake(_ x: Float, _ y: Float) -> MTLSamplePosition
 static MTLSamplePosition MTLSamplePositionMake(float x, float y);
 ```
 
-#### Return Value
+## Return Value
 
 The new sample position.
 

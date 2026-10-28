@@ -17,11 +17,11 @@ The maximum context size in tokens supported by the model.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final var contextSize: Int { get async throws }
+nonisolated(nonsending)
+final var contextSize: Int { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 The context size represents the total number of tokens that can be used in a single session, including both input prompts and generated responses.
 

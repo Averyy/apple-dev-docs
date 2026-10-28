@@ -20,11 +20,11 @@ string NegativeKeywordCreate.Status
 - `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
 - `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
-#### Discussion
+## Discussion
 
 Include `status` in the create request to determine whether the negative keyword begins suppressing matching search queries immediately or starts paused.
 
-##### Example
+### Example
 
 ```json
 {

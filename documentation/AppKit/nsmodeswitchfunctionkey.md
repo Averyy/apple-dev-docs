@@ -19,7 +19,7 @@ var NSModeSwitchFunctionKey: Int { get }
 NSModeSwitchFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

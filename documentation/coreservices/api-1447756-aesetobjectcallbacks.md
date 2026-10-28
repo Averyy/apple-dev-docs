@@ -19,11 +19,11 @@ func AESetObjectCallbacks(_ myCompareProc: OSLCompareUPP!, _ myCountProc: OSLCou
 OSErr AESetObjectCallbacks(OSLCompareUPP myCompareProc, OSLCountUPP myCountProc, OSLDisposeTokenUPP myDisposeTokenProc, OSLGetMarkTokenUPP myGetMarkTokenProc, OSLMarkUPP myMarkProc, OSLAdjustMarksUPP myAdjustMarksProc, OSLGetErrDescUPP myGetErrDescProcPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This function is just a convenient wrapper for [`AEInstallSpecialHandler(_:_:_:)`](./api-1445532-aeinstallspecialhandler.md). You can manipulate the special handler table with more control using the routines described in [Managing Special Handler Dispatch Tables](../applicationservices/apple_event_manager.md#1652333).
 
@@ -33,7 +33,7 @@ To replace object callback functions that have been previously installed, you ca
 
 You cannot use `AESetObjectCallbacks` to replace system object callback functions or object accessor functions. To install system object callback functions, use the function [`AEInstallSpecialHandler(_:_:_:)`](./api-1445532-aeinstallspecialhandler.md). 
 
-##### Version-Notes
+### Version-Notes
 
 In macOS, your application can not make an object callback function available to other applications by installing it in a system object accessor dispatch table.
 

@@ -24,7 +24,7 @@ let kCIInputAspectRatioKey: String
 extern NSString * const kCIInputAspectRatioKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies a ratio.
 

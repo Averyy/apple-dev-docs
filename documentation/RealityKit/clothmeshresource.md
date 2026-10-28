@@ -17,7 +17,7 @@ A mesh resource that defines the topology and shape of a cloth body or a mesh-sh
 final class ClothMeshResource
 ```
 
-#### Overview
+## Overview
 
 Use this resource as the mesh for a [`mesh`](./clothbodycomponent/mesh.md) or a [`mesh`](./clothmeshshape/mesh.md).
 

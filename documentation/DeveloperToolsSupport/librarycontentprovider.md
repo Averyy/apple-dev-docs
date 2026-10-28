@@ -21,7 +21,7 @@ A source of Xcode library and code completion content.
 protocol LibraryContentProvider
 ```
 
-#### Overview
+## Overview
 
 Xcode discovers implementations of the `LibraryContentProvider` protocol in your project or workspace and examines their contents for items that it can add to the Xcode library. Add views by implementing the content provider’s computed [`views`](./librarycontentprovider/views.md) property, and returning an array of [`LibraryItem`](./libraryitem.md) instances initialized with the views you want to publish:
 

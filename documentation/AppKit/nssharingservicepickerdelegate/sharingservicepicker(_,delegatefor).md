@@ -19,11 +19,11 @@ optional func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicke
 - (id<NSSharingServiceDelegate>) sharingServicePicker:(NSSharingServicePicker *) sharingServicePicker delegateForSharingService:(NSSharingService *) sharingService;
 ```
 
-#### Return Value
+## Return Value
 
 An object that adopts the [`NSSharingServiceDelegate`](../nssharingservicedelegate.md) protocol.
 
-#### Discussion
+## Discussion
 
 The sharing service assigns the returned object to its [`delegate`](../nssharingservice/delegate.md) property.
 

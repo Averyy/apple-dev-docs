@@ -16,11 +16,11 @@ Creates a standard pull-down button with a title, optional image, and menu.
 @MainActor @preconcurrency convenience init(image: NSImage, pullDownMenu: NSMenu)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized pull-down button object.
 
-#### Discussion
+## Discussion
 
 Pull-down buttons created using this method have the `usesItemFromMenu` property set to `false`.
 

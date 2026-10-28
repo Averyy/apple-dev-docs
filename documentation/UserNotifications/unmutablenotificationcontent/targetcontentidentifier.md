@@ -33,7 +33,7 @@ var targetContentIdentifier: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * targetContentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the content to show in your app when the user taps the notification.
 

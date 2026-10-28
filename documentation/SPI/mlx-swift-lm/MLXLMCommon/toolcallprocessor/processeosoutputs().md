@@ -17,7 +17,7 @@ Finishes processing and removes residual output in source order.
 func processEOSOutputs() -> [Output]
 ```
 
-#### Discussion
+## Discussion
 
 This preserves non-tool text following EOS-delimited calls. Do not mix this API with the legacy processing and draining APIs.
 

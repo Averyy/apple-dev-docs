@@ -17,11 +17,11 @@ CMError CWFillLookupTexture (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295). 
 
-#### Overview
+## Overview
 
 You can use the resulting table in OpenGL to accelerate color management in hardware.
 

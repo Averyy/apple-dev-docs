@@ -21,7 +21,7 @@ A binding to the state value.
 var projectedValue: Binding<Value> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to get a [`Binding`](../binding.md) to the stored value. The binding provides a two-way connection to the stored value. To access the `projectedValue`, prefix the property variable with a dollar sign (`$`).
 

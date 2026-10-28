@@ -23,7 +23,7 @@ func execute() async throws
 - (void) executeWithCompletionHandler:(NSUserScriptTaskCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be invoked no more than once for a given instance of the class.
 

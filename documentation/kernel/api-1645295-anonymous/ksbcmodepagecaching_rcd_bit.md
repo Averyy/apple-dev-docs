@@ -13,7 +13,7 @@
 kSBCModePageCaching_RCD_Bit = 0
 ```
 
-#### Discussion
+## Discussion
 
 RCD Bit definition.
 

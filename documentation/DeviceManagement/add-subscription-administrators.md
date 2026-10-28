@@ -6,11 +6,11 @@
 
 Add administrators for subscriptions.
 
-#### Discussion
+## Discussion
 
 Send a POST request to designate users as administrators for specific subscriptions. The request body requires an `adamIds` array of subscription identifiers and a `clientUserIds` array of user identifiers. The server processes this request synchronously.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

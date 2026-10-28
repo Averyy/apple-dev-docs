@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, shouldDeselectI
 - (NSSet<NSIndexPath *> *) collectionView:(NSCollectionView *) collectionView shouldDeselectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items that you want to be deselected. If you do not want any items deselected, return an empty set.
 
-#### Discussion
+## Discussion
 
 Use this method to approve or modify the items that the user tries to deselect. During interactive selection, the collection view calls this method whenever the user deselects items. Your implementation of the method can return the proposed set of index paths as-is or modify the set before returning it. You might modify the set to disallow the deselection of specific items.
 

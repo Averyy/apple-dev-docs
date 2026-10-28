@@ -17,7 +17,7 @@ The remaining capacity available in a battery An integer ranging from `0` to `10
 let stateOfCharge: Int
 ```
 
-#### Discussion
+## Discussion
 
 - `0`: empty
 - `100`: full.

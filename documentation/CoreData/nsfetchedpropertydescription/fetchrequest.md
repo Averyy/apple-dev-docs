@@ -25,7 +25,7 @@ var fetchRequest: NSFetchRequest<any NSFetchRequestResult>? { get set }
 @property (strong, nullable) NSFetchRequest * fetchRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the fetch request raises an exception if the receiver’s model has been used by an object graph manager.
 

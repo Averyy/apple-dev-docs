@@ -15,7 +15,7 @@ The minimum longitudinal and latitudinal span the map displays.
 minimumSpan?: CoordinateSpanData;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to ensure that [`showItems()`](../map/showitems.md) sets a map region no smaller than the minimum span specified.
 

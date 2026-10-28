@@ -34,7 +34,7 @@ var note: INNote? { get set }
 @property (atomic, copy, readwrite, nullable) INNote * note;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the content of the note that you updated.
 

@@ -20,7 +20,7 @@ Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel bu
 convenience init(pixelBufferAttributes: CVPixelBufferAttributes)
 ```
 
-#### Discussion
+## Discussion
 
 - pixelBufferAttributes: The client requirements for output pixel buffers
 

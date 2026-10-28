@@ -21,7 +21,7 @@ The document type.
 static let documentType: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is one of the document types declared in [`NSAttributedString.DocumentType`](../documenttype.md). For reader methods, this key in options can specify the document type for interpreting the contents. Upon return, the document attributes can contain this key for indicating the actual format used to read the contents. For write methods, this key specifies the format for generating the data.
 

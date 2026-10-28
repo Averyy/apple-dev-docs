@@ -19,7 +19,7 @@ var autosaveExpandedItems: Bool { get set }
 @property BOOL autosaveExpandedItems;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the outline view saves the state of its expanded items and restores that state the next time the user launches the app. (If the outline view’s [`autosaveName`](../nstableview/autosavename-swift.property.md) property is `nil`, or if you have not implemented the [`outlineView(_:itemForPersistentObject:)`](../nsoutlineviewdatasource/outlineview%28_,itemforpersistentobject%29.md) and [`outlineView(_:persistentObjectForItem:)`](../nsoutlineviewdatasource/outlineview%28_,persistentobjectforitem%29.md) delegate methods, this setting is ignored and outline information is not saved.) The configuration data is saved separately for each user and for each app. The default value of this property is [`false`](../../Swift/false.md).
 

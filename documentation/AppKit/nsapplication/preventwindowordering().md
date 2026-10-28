@@ -19,7 +19,7 @@ func preventWindowOrdering()
 - (void) preventWindowOrdering;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only useful for mouse-down events when you want to prevent the window that receives the event from being ordered to the front.
 

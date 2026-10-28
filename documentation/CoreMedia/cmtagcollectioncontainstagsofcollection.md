@@ -21,7 +21,7 @@ Determines if one collection of tags contains every tag from another collection.
 extern Boolean CMTagCollectionContainsTagsOfCollection(CMTagCollectionRef tagCollection, CMTagCollectionRef containedTagCollection);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if every element in `containedTagCollection` has at least one equal element in `tagCollection`.
 

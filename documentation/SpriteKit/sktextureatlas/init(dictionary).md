@@ -29,11 +29,11 @@ convenience init(dictionary properties: [String : Any])
 
 - [About Texture Atlases](../about-texture-atlases.md)
 
-#### Return Value
+## Return Value
 
 A new texture atlas object.
 
-#### Discussion
+## Discussion
 
 Normally, Xcode creates texture atlases at compile time from the image files included in your project. These atlases are compiled and installed inside the app bundle. However, sometimes the assets needed to create a texture atlas are not available at compile time. For example, those assets might be procedurally generated or downloaded from the network. However, you still want the benefit of texture atlases to reduce the number of state changes required in the hardware. You can use this method to generate an atlas object at runtime. This is a potentially expensive operation best performed when your game loop is not running.
 

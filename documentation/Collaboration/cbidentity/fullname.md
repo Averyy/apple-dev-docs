@@ -19,7 +19,7 @@ var fullName: String { get }
 @property (nonatomic, readonly) NSString * fullName;
 ```
 
-#### Return Value
+## Return Value
 
 The full name for the identity.
 

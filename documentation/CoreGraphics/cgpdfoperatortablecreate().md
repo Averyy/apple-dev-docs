@@ -25,11 +25,11 @@ func CGPDFOperatorTableCreate() -> CGPDFOperatorTableRef?
 extern CGPDFOperatorTableRefCGPDFOperatorTableCreate();
 ```
 
-#### Return Value
+## Return Value
 
 An empty PDF operator table. In Objective-C, you’re responsible for releasing this object by calling [`CGPDFOperatorTableRelease(_:)`](./cgpdfoperatortablerelease%28_%29.md).
 
-#### Discussion
+## Discussion
 
 Call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](./cgpdfoperatortablesetcallback%28_,_,_%29.md) to fill the operator table with callbacks.
 

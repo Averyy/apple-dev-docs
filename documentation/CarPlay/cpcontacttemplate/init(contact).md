@@ -21,7 +21,7 @@ init(contact: CPContact)
 - (instancetype) initWithContact:(CPContact *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 A new contact template that displays the provided contact.
 

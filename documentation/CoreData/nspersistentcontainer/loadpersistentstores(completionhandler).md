@@ -25,7 +25,7 @@ func loadPersistentStores(completionHandler block: @escaping (NSPersistentStoreD
 - (void) loadPersistentStoresWithCompletionHandler:(void (^)(NSPersistentStoreDescription *, NSError *)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Once the persistent container has been initialized, you need to execute [`loadPersistentStores(completionHandler:)`](./loadpersistentstores%28completionhandler%29.md) to instruct the container to load the persistent stores and complete the creation of the Core Data stack.
 

@@ -23,11 +23,11 @@ func nw_tcp_set_max_pacing_rate(_ metadata: nw_protocol_metadata_t, _ max_pacing
 int nw_tcp_set_max_pacing_rate(nw_protocol_metadata_t metadata, uint64_t max_pacing_rate);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 on success, or a POSIX errno value on failure (e.g. EINVAL if metadata is not a TCP metadata object, or the underlying socket error).
 
-#### Discussion
+## Discussion
 
 Set a maximum pacing rate for a TCP connection, in bytes per second.
 

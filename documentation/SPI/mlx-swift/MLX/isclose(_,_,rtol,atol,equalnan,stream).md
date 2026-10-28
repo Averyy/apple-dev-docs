@@ -17,7 +17,7 @@ Returns a boolean array where two arrays are element-wise equal within a toleran
 func isClose(_ a: MLXArray, _ b: MLXArray, rtol: Double = 1e-5, atol: Double = 1e-8, equalNaN: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Infinite values are considered equal if they have the same sign, NaN values are not equal unless `equalNAN` is `true`.
 
@@ -29,7 +29,7 @@ abs(a - b) <= (atol + rtol * abs(b))
 
 Unlike [`arrayEqual(_:_:equalNAN:stream:)`](./arrayequal%28_,_,equalnan,stream%29.md) this function supports [Numpy Style Broadcasting](./broadcasting.md).
 
-##### See Also
+### See Also
 
 - [`allClose(_:_:rtol:atol:equalNaN:stream:)`](./allclose%28_,_,rtol,atol,equalnan,stream%29.md)
 - [`arrayEqual(_:_:equalNAN:stream:)`](./arrayequal%28_,_,equalnan,stream%29.md)

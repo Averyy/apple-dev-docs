@@ -28,7 +28,7 @@ var partyCode: String? { get }
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 If the game doesn’t support party code, this value will be `nil`. Use [`start(definition:partyCode:)`](./start%28definition,partycode%29.md) to create a game activity with a custom party code.
 

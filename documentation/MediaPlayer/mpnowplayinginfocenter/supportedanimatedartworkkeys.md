@@ -29,7 +29,7 @@ class var supportedAnimatedArtworkKeys: [String] { get }
 
 - [Providing animated artwork for media items](../providing-animated-artwork-for-media-items.md)
 
-#### Discussion
+## Discussion
 
 If you specify an instance of animated artwork (an `MPMediaItemAnimatedArtwork`) to `nowPlayingInfo` using any key not in this collection it will be ignored.
 

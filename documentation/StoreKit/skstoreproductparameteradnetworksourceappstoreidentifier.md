@@ -28,7 +28,7 @@ extern NSString * const SKStoreProductParameterAdNetworkSourceAppStoreIdentifier
 - [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
 - [Verifying an install-validation postback](./verifying-an-install-validation-postback.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). Provide the App Store item identifier of the app that’s displaying the ad.
 

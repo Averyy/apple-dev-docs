@@ -13,7 +13,7 @@
 kSCSIPort_StatusOnline = 0
 ```
 
-#### Discussion
+## Discussion
 
 The port is online.
 

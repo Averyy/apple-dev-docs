@@ -10,7 +10,7 @@ Soft-deletes multiple keywords in a single request.
 - Apple Ads Platform API 1.0+
 - apple-ads-platform-api 1.0+
 
-#### Discussion
+## Discussion
 
 Each item in `items` requires a `correlationId`, unique within the batch, and a `data` object with the `id` of the keyword to delete. The API processes each deletion independently.
 
@@ -18,9 +18,9 @@ When `allowPartialSuccess: true` is set in the request, this endpoint uses parti
 
 Deleted keywords are marked `deleted: true` and stop serving. To stop a keyword from serving temporarily, set `status: PAUSED` with the bulk update endpoint instead.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Soft-delete two keywords.
 
@@ -45,7 +45,7 @@ POST /v1/keywords/bulk-delete
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

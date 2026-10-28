@@ -19,7 +19,7 @@ Displays an `AssignableDocument`.
 @preconcurrency init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID? = nil, hiddenPartIDs: [MergeablePartsContainerPartID] = [], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>? = nil, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>? = nil, showsPageThumbnails: Bool = true, isStructureEditingEnabled: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 - Example:
 

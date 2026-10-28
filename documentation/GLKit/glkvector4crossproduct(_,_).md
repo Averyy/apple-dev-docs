@@ -22,11 +22,11 @@ func GLKVector4CrossProduct(_ vectorLeft: GLKVector4, _ vectorRight: GLKVector4)
 static GLKVector4 GLKVector4CrossProduct(GLKVector4 vectorLeft, GLKVector4 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 The calculation is performed by taking the `[x,y,z]` components of the two source vectors and computing the cross product of those two vectors. The `w` component of the result vector is `0.0`.
 

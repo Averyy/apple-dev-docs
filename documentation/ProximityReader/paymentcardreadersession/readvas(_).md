@@ -21,11 +21,11 @@ func readVAS(_ request: VASRequest) async throws -> VASReadResult
 
 - [Accepting loyalty passes from Wallet](../accepting-loyalty-passes-from-wallet.md)
 
-#### Return Value
+## Return Value
 
 A [`VASReadResult`](../vasreadresult.md) if the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method to read the data from a loyalty card. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs.
 

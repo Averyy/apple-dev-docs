@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 16.1 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 16.2. The SDK comes bundled with Xcode 14.2. For information on the compatibility requirements for Xcode 14.2, see [Xcode 14.2 Release Notes](../Xcode-Release-Notes/xcode-14_2-release-notes.md).
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Disable animations of `NavigationStack` push and pop by wrapping path mutation in `withTransaction(transaction) { … }` where `transaction` has `disablesAnimations` set to `true`. (88993253)
 

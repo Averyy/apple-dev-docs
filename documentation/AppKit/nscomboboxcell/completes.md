@@ -19,7 +19,7 @@ var completes: Bool { get set }
 @property BOOL completes;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the combo box tries to complete what the user types in the text field and every time the user adds characters to the end of the text field, the combo box calls [`completedString(_:)`](./completedstring%28_%29.md); when it is [`false`](../../Swift/false.md), it does not.
 

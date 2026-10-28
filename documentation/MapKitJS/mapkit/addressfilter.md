@@ -15,7 +15,7 @@ The getter to use to access the address filter class.
 get AddressFilter(): typeof AddressFilter;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

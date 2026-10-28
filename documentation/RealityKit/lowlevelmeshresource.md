@@ -18,7 +18,7 @@ A container for vertex and index data in a custom format.
 final class LowLevelMeshResource
 ```
 
-#### Overview
+## Overview
 
 Use `LowLevelMeshResource` when you want to bring your own vertex format to the renderer or update your data frequently. Vertex and index data can be written directly on the CPU through span-based accessors, or on the GPU by writing to a `MTLBuffer` returned by `replaceVertices(at:commandBuffer:)` / `replaceIndices(commandBuffer:)`.
 

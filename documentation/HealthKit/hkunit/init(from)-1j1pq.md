@@ -24,7 +24,7 @@ convenience init(from energyFormatterUnit: EnergyFormatter.Unit)
 + (instancetype) unitFromEnergyFormatterUnit:(NSEnergyFormatterUnit) energyFormatterUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit object, or `nil` if the unit parameter is not a valid energy formatter unit value.
 

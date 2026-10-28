@@ -6,7 +6,7 @@
 
 The image field of view, in degrees, for the entire object.
 
-#### Overview
+## Overview
 
 The value in this field must be greater than or equal to the value of the `minFieldOfView` field.
 

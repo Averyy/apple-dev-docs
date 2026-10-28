@@ -21,7 +21,7 @@ func userAgent(for URL: URL!) -> String!
 - (NSString *) userAgentForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The user-agent string for a given URL. The user-agent string is used by websites to identify the client browser.
 

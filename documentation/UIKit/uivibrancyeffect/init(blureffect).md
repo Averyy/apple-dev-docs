@@ -23,11 +23,11 @@ init(blurEffect: UIBlurEffect)
 + (UIVibrancyEffect *) effectForBlurEffect:(UIBlurEffect *) blurEffect;
 ```
 
-#### Return Value
+## Return Value
 
 The vibrancy effect to be used by a [`UIVisualEffectView`](../uivisualeffectview.md) object.
 
-#### Discussion
+## Discussion
 
 When you create a new vibrancy effect, use the same [`UIBlurEffect`](../uiblureffect.md) that you used to create the blur view. Using a different [`UIBlurEffect`](../uiblureffect.md) can cause unwanted visual effect combinations.
 

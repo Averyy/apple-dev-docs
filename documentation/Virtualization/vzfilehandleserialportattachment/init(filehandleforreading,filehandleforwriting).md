@@ -19,7 +19,7 @@ init(fileHandleForReading: FileHandle?, fileHandleForWriting: FileHandle?)
 - (instancetype) initWithFileHandleForReading:(NSFileHandle *) fileHandleForReading fileHandleForWriting:(NSFileHandle *) fileHandleForWriting;
 ```
 
-#### Return Value
+## Return Value
 
 A serial port attachment object.
 

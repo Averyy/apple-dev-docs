@@ -25,7 +25,7 @@ weak var targetNode: SKNode? { get set }
 @property (nonatomic, weak, nullable) SKNode * targetNode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means that particles are treated as if they were children of the emitter node. In future frames of animation, the particle positions are affected by the emitter node’s properties. If you specify a different target node, the initial properties of new particles are calculated based on the emitter node’s properties, but in future frames of animation the particles are treated as if they were children of the target node.
 

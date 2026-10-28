@@ -21,7 +21,7 @@ The type representing the width of a list.
 enum Width
 ```
 
-#### Overview
+## Overview
 
 The possible values of a [`width`](./width-swift.property.md) are `standard`, `short`, and `narrow`.
 

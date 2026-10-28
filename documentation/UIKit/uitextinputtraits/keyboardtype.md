@@ -27,7 +27,7 @@ optional var keyboardType: UIKeyboardType { get set }
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 Text objects can be targeted for specific types of input, such as plain text, email, numeric entry, and so on. The keyboard style identifies what keys are available on the keyboard and which ones appear by default. The default value for this property is [`UIKeyboardType.default`](../uikeyboardtype/default.md).
 

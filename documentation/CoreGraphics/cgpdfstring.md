@@ -5,7 +5,7 @@
 
 A text string in a PDF document.
 
-#### Overview
+## Overview
 
 A PDF string object is a series of bytes—unsigned integer values in the range 0 to 255.
 

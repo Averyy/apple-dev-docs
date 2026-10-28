@@ -26,7 +26,7 @@ func sendMiFareISO7816Command(_ apdu: NFCISO7816APDU) async throws -> (Data, UIn
 - (void) sendMiFareISO7816Command:(NFCISO7816APDU *) apdu completionHandler:(void (^)(NSData *responseData, uint8_t sw1, uint8_t sw2, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send commands to tags that have a [`mifareFamily`](./mifarefamily.md) value of either [`NFCMiFareFamily.plus`](../nfcmifarefamily/plus.md) or [`NFCMiFareFamily.desfire`](../nfcmifarefamily/desfire.md).
 

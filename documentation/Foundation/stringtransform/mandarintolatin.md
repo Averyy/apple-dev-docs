@@ -25,7 +25,7 @@ static let mandarinToLatin: StringTransform
 extern NSStringTransform const NSStringTransformMandarinToLatin;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the string “hàn zì” transliterates to “汉字”.
 

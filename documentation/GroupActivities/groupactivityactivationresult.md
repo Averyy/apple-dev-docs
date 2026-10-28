@@ -20,7 +20,7 @@ The result of preparing to start a custom activity.
 enum GroupActivityActivationResult
 ```
 
-#### Overview
+## Overview
 
 When you call [`prepareForActivation()`](./groupactivity/prepareforactivation%28%29.md), the system determines whether you share the activity with other participants in a FaceTime call, or perform it locally. After making the determination, it passes a `GroupActivityActivationResult` value to the method’s completion handler. Use that value to start the activity in the selected setting.
 

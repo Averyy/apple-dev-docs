@@ -13,11 +13,11 @@
 errno_t ifnet_get_link_mib_data(ifnet_t interface, void *mibData, u_int32_t *mibLen);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an error if the buffer size is too small or there is no data.
 
-#### Discussion
+## Discussion
 
 Copies the link MIB data in to mibData, up to mibLen bytes. Returns error if the buffer is too small to hold all of the MIB data.
 

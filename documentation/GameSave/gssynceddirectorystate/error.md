@@ -23,7 +23,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is `nil` unless the state is `GSSyncStateError`.
 

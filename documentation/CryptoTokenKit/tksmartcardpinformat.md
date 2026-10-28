@@ -25,7 +25,7 @@ class TKSmartCardPINFormat
 @interface TKSmartCardPINFormat : NSObject
 ```
 
-#### Overview
+## Overview
 
 You typically interact with `TKSmartCardPINFormat` objects when calling the [`userInteractionForSecurePINChange(_:apdu:currentPINByteOffset:newPINByteOffset:)`](./tksmartcard/userinteractionforsecurepinchange%28_,apdu,currentpinbyteoffset,newpinbyteoffset%29.md) and [`userInteractionForSecurePINVerification(_:apdu:pinByteOffset:)`](./tksmartcard/userinteractionforsecurepinverification%28_,apdu,pinbyteoffset%29.md) methods on an instance of [`TKSmartCard`](./tksmartcard.md).
 

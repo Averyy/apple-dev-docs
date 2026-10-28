@@ -5,11 +5,11 @@
 
 Update and reload controls from your app or using push notifications.
 
-#### Overview
+## Overview
 
 A control reloads and updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](./controlcenter.md), or when the system receives a specific remote push notification from Apple Push Notification service (APNs). When someone interacts with a control, it’s reloaded once the assigned app intent finishes its [`perform()`](../AppIntents/appintent/perform%28%29.md) function. Plan for when someone interacts with your app or website and the state of a control needs to update to reflect the changes.
 
-##### Request reloading controls from an app
+### Request reloading controls from an app
 
 Reload controls when their state changes after someone interacts with them, such as turning a light on or off from within your app. Use the [`reloadControls(ofKind:)`](./controlcenter/reloadcontrols%28ofkind%29.md) method on the shared `ControlCenter` to ask the system to reload a control from your app that matches a specific `kind` unique identifier.
 
@@ -25,7 +25,7 @@ func toggleGarageDoor() {
 
 Use the [`reloadAllControls()`](./controlcenter/reloadallcontrols%28%29.md) method to ask the system to reload all controls your app provides.
 
-##### Use push notifications to reload controls
+### Use push notifications to reload controls
 
 You may need the system to reload controls when someone interacts with a web server connected to your app that affects their state. Enable a control to update its state from a push notification event by registering a [`ControlPushHandler`](./controlpushhandler.md) type on the [`ControlWidgetConfiguration`](../SwiftUI/controlwidgetconfiguration.md). The system reloads any controls with a registered push handler in response to a push notification event. You don’t need to reload the controls manually.
 

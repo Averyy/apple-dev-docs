@@ -12,7 +12,7 @@ virtual void taggedRetain(
  const void *tag = 0) const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::taggedRetain(const void *).
 

@@ -24,7 +24,7 @@ var languageCode: String? { get set }
 @property (nonatomic, copy, nullable) NSString * languageCode;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an ISO 639-2/T language code, or `nil` if the track doesn’t specify a language code.
 

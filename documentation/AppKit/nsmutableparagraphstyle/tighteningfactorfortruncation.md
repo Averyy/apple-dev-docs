@@ -19,7 +19,7 @@ var tighteningFactorForTruncation: Float { get set }
 @property float tighteningFactorForTruncation;
 ```
 
-#### Discussion
+## Discussion
 
 When the line break mode specifies truncation, the text system attempts to tighten inter character spacing as an alternative to truncation, provided that the ratio of the text width to the line fragment width does not exceed 1.0 + the value of [`tighteningFactorForTruncation`](../nsparagraphstyle/tighteningfactorfortruncation.md). Otherwise the text is truncated at a location determined by the line break mode. The default value is 0.05. This value can be a positive or negative value. Values less than or equal to 0.0 result in not tightening.
 

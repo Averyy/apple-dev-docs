@@ -17,7 +17,7 @@ Applies the Log Sigmoid function.
 func logSigmoid(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 -softPlus(-x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`LogSigmoid`](./logsigmoid.md)

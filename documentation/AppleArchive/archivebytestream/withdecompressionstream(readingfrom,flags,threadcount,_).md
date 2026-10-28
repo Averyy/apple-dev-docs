@@ -21,11 +21,11 @@ Calls the given closure with a decompression sequential input stream.
 static func withDecompressionStream<E>(readingFrom compressedStream: ArchiveByteStream, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`decompressionStream(readingFrom:flags:threadCount:)`](./decompressionstream%28readingfrom,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

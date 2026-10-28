@@ -23,7 +23,7 @@ class INSpeakableStringResolutionResult
 @interface INSpeakableStringResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INSpeakableStringResolutionResult`](./inspeakablestringresolutionresult.md) object is what you return when resolving parameters containing an [`INSpeakableString`](./inspeakablestring.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

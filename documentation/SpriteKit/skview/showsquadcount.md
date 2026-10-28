@@ -24,7 +24,7 @@ var showsQuadCount: Bool { get set }
 @property (nonatomic) BOOL showsQuadCount;
 ```
 
-#### Discussion
+## Discussion
 
 SpriteKit converts the node tree into one or more rendering passes. Each rendering pass is rendered using a series of textured rectangles (quads). The [`showsQuadCount`](./showsquadcount.md) property allows you to see the total number of quads that were used to render the scene’s contents. Use this as another piece of data when you profile your game’s performance. In most cases, fewer quads is better.
 

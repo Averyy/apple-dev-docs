@@ -23,11 +23,11 @@ func elementsEqual<OtherSequence>(_ other: OtherSequence) -> Bool where OtherSeq
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if this sequence and `other` contain the same elements in the same order.
 
-#### Discussion
+## Discussion
 
 At least one of the sequences must be finite.
 

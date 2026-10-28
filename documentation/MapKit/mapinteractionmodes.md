@@ -21,7 +21,7 @@ Options that indicate the user interactions that the map responds to.
 struct MapInteractionModes
 ```
 
-#### Overview
+## Overview
 
 A person can’t interact with a map if the option set is empty.
 

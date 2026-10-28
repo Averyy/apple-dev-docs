@@ -16,11 +16,11 @@ Returns the account balance history since a time specified by the provided finan
 func accountBalanceHistory(forAccountID accountID: UUID, since token: FinanceStore.HistoryToken? = nil, isMonitoring: Bool = true) -> FinanceStore.History<AccountBalance>
 ```
 
-#### Return Value
+## Return Value
 
 A `History` that describes the account balances.
 
-#### Discussion
+## Discussion
 
 Use this method to monitor the balance of a specific account.  Provide a `historyToken` to specify a starting data and time.
 

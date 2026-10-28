@@ -14,7 +14,7 @@
 kIOHIDElementTypeFeature = 257
 ```
 
-#### Discussion
+## Discussion
 
 Describes input and output elements not intended for consumption by the end user.
 

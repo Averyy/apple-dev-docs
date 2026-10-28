@@ -20,7 +20,7 @@ typealias CGEventTapCallBack = (CGEventTapProxy, CGEventType, CGEvent, UnsafeMut
 typedef struct __CGEvent *(*)(struct __CGEventTapProxy *, enum CGEventType, struct __CGEvent *, void *) CGEventTapCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If the event tap is an active filter, your callback function should return one of the following:
 

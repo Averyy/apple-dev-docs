@@ -5,7 +5,7 @@
 
 Migrate existing C code to Swift, using the file-operation options provided by the System module.
 
-#### Overview
+## Overview
 
 The C options for how to open a file map to Swift as follows:
 

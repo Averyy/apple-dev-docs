@@ -24,7 +24,7 @@ static OSArrayPtr withCapacity(uint32_t capacity);
 static OSPtr<OSArray> withCapacity(unsigned int capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSArray with reference count 1 to be released by the caller.
 

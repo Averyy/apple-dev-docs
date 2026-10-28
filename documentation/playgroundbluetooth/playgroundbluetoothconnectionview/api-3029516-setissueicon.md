@@ -16,7 +16,7 @@ Displays an icon indicating that the specified peripheral is available but may n
 func setIssueIcon(_ issueIcon: UIImage, forPeripheral peripheral: CBPeripheral)
 ```
 
-#### Discussion
+## Discussion
 
 Use an issue icon to indicate problems such as outdated firmware or a lost connection.
 

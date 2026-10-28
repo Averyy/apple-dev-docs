@@ -15,7 +15,7 @@ Returns the local L2CAP channel ID for the target L2CAP channel.
 - (BluetoothL2CAPChannelID) getLocalChannelID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the local L2CAP channel ID for the target L2CAP channel.
 

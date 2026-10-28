@@ -23,11 +23,11 @@ func DDEventTypeToString(_ inValue: DDDeviceEvent.EventType) -> String
 extern NSString *DDEventTypeToString(DDEventType inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A textual value for the specified event type.
 
-#### Discussion
+## Discussion
 
 Your extension can use this function for logging.
 

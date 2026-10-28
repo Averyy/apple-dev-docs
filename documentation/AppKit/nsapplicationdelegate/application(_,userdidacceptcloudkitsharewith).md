@@ -20,7 +20,7 @@ optional func application(_ application: NSApplication, userDidAcceptCloudKitSha
 - (void) application:(NSApplication *) application userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 Use the provided metadata to begin sharing the specified content with the current user. For more information, see [CloudKit](../../CloudKit/CloudKit.md).
 

@@ -15,7 +15,7 @@ The maximum allowed ranking for a television show.
 readonly attribute int maxTVShowRank;
 ```
 
-#### Discussion
+## Discussion
 
 The rank for a television show is an integer ranging from `0` to `1000`.
 

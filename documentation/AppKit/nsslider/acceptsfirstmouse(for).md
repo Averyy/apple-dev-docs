@@ -19,11 +19,11 @@ func acceptsFirstMouse(for event: NSEvent?) -> Bool
 - (BOOL) acceptsFirstMouse:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver accepts the first mouse-down event; otherwise, [`false`](../../Swift/false.md). Returns [`true`](../../Swift/true.md) by default.
 
-#### Discussion
+## Discussion
 
 If you want the slider to wait for its own mouse-down event, you must override this method.
 

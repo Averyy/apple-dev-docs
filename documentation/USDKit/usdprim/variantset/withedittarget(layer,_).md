@@ -20,11 +20,11 @@ Performs the closure with the stage’s edit target set to author into the curre
 func withEditTarget<R>(layer: USDLayer? = nil, _ body: (USDStage.EditTarget) throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`.
 
-#### Discussion
+## Discussion
 
 The previous edit target is restored when the closure returns.
 

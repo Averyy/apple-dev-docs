@@ -23,7 +23,7 @@ optional func presentationControllerDidDismiss(_ presentationController: UIPrese
 - (void) presentationControllerDidDismiss:(UIPresentationController *) presentationController;
 ```
 
-#### Discussion
+## Discussion
 
 This method is not called if the presentation is dismissed programmatically.
 

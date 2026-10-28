@@ -24,7 +24,7 @@ static let vertical: MTKTextureLoader.CubeLayout
 extern MTKTextureLoaderCubeLayout const MTKTextureLoaderCubeLayoutVertical;
 ```
 
-#### Discussion
+## Discussion
 
 The texture loader creates a cube texture from six faces arranged vertically within a single 2D image. The image height must be six times the image width, with faces arranged in the following order from top to bottom: +X, -X, +Y, -Y, +Z, -Z.
 

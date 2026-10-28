@@ -24,7 +24,7 @@ struct PHAssetMediaSubtype
 enum PHAssetMediaSubtype : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants with the [`PHAsset`](./phasset.md) and [`PHContentEditingInput`](./phcontenteditinginput.md) classes to fetch specific types of assets or to identify an asset being edited.
 

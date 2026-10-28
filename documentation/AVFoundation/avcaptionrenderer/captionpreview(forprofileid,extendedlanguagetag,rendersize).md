@@ -24,11 +24,11 @@ class func captionPreview(forProfileID profileID: String, extendedLanguageTag: S
 + (NSAttributedString *) captionPreviewForProfileID:(NSString *) profileID extendedLanguageTag:(NSString *) extendedLanguageTag renderSize:(CGSize) renderSize;
 ```
 
-#### Return Value
+## Return Value
 
 An NSAttributedString containing the caption preview.
 
-#### Discussion
+## Discussion
 
 Returns an attributed string containing a preview of captions rendered using the specified profile ID.
 

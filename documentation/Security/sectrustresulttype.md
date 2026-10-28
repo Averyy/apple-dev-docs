@@ -25,7 +25,7 @@ enum SecTrustResultType
 enum SecTrustResultType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 You get one of these constants when you call the [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) method after evaluating a trust instance with either the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) method or the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) method. If evaluation fails and [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) reports [`SecTrustResultType.recoverableTrustFailure`](./sectrustresulttype/recoverabletrustfailure.md), you might be able to change parameters like the evaluation date, and reevaluate to obtain a passing result, as described in [Configuring a Trust](./configuring-a-trust.md).
 

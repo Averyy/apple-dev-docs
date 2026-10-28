@@ -20,11 +20,11 @@ func makeVideoDecoder(codecType: CMVideoCodecType, videoFormatDescription: CMVid
 - (id<MEVideoDecoder>) videoDecoderWithCodecType:(CMVideoCodecType) codecType videoFormatDescription:(CMVideoFormatDescriptionRef) videoFormatDescription videoDecoderSpecifications:(NSDictionary<NSString *,id> *) videoDecoderSpecifications extensionDecoderPixelBufferManager:(MEVideoDecoderPixelBufferManager *) extensionDecoderPixelBufferManager error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MEVideoDecoder`](../mevideodecoder.md).
 
-#### Discussion
+## Discussion
 
 The `videoDecoderSpecifications` parameter accepts the following keys:
 

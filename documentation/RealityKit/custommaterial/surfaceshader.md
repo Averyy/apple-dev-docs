@@ -19,7 +19,7 @@ The custom material’s surface shader function.
 struct SurfaceShader
 ```
 
-#### Overview
+## Overview
 
 Custom materials work together with a surface shader function to render entities. The [`CustomMaterial`](../custommaterial.md) properties related to rendering, such as [`baseColor`](./basecolor-swift.property.md) and [`normal`](./normal-swift.property.md), are available in the surface shader function, but RealityKit doesn’t use them directly.
 

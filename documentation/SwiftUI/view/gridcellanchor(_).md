@@ -22,11 +22,11 @@ nonisolated
 func gridCellAnchor(_ anchor: UnitPoint) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified anchor point to align its content.
 
-#### Discussion
+## Discussion
 
 Grids, like stacks and other layout containers, perform most alignment operations using alignment guides. The grid moves the contents of each cell in a row in the y direction until the specified [`VerticalAlignment`](../verticalalignment.md) guide of each view in the row aligns with the same guide of all the other views in the row. Similarly, the grid aligns the [`HorizontalAlignment`](../horizontalalignment.md) guides of views in a column by adjusting views in the x direction. See the guide types for more information about typical SwiftUI alignment operations.
 
@@ -61,7 +61,7 @@ Color.blue.frame(width: 10, height: 10)
 
 Applying the anchor-based alignment strategy to a single cell doesn’t affect the alignment strategy that the grid uses on other cells.
 
-##### Anchor alignment for merged cells
+### Anchor alignment for merged cells
 
 If you use the [`gridCellColumns(_:)`](./gridcellcolumns%28_%29.md) modifier to cause a cell to span more than one column, or if you place a view in a grid outside of a row so that the view spans the entire grid, the grid automatically converts its vertical and horizontal alignment guides to the unit point equivalent for the merged cell, and uses an anchor-based approach for that cell. For example, the following grid places the marker at the center of the merged cell by converting the grid’s default [`center`](../alignment/center.md) alignment guide to a [`center`](../unitpoint/center.md) anchor for the blue marker in the merged cell:
 

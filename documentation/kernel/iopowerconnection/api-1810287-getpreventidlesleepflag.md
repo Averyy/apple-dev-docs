@@ -12,7 +12,7 @@ bool getPreventIdleSleepFlag (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent.
 

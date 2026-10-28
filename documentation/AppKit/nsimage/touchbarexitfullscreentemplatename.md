@@ -22,7 +22,7 @@ class let touchBarExitFullScreenTemplateName: String
 extern NSImageName const NSImageNameTouchBarExitFullScreenTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for exit full screen](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825111@2x.png)
 

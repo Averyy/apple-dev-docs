@@ -17,7 +17,7 @@ var HV_FEATURE_REG_ID_AA64MMFR3_EL1: hv_feature_reg_t { get }
 HV_FEATURE_REG_ID_AA64MMFR3_EL1
 ```
 
-#### Discussion
+## Discussion
 
 ARM feature register.
 

@@ -20,7 +20,7 @@ var outputFieldSeparator: String { get }
 @property (atomic, copy, readonly) NSString * outputFieldSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 Upon completion, the Automator framework converts an output string provided by the action into an array (or list), to be passed to the next action in the workflow for further processing. The elements in this array are derived from fields delimited by the output field separator. The default value is the separator character returned by [`inputFieldSeparator`](./inputfieldseparator.md). Override this method if you want a different delimiter for output.
 

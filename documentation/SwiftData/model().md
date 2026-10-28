@@ -19,15 +19,15 @@ Converts a Swift class into a stored model that’s managed by SwiftData.
 ## Declaration
 
 ```swift
-@attached
-(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) macro Model()
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation))
+@attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) macro Model()
 ```
 
 ## Mentions
 
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 Annotate your model classes with the `@Model` macro to make them persistable. At build time, the macro expands to provide conformance to the [`PersistentModel`](./persistentmodel.md) and [`Observable`](../Observation/observable.md) protocols.
 

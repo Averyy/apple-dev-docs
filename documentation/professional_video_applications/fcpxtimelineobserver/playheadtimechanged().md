@@ -23,7 +23,7 @@ optional func playheadTimeChanged()
 
 - [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Discussion
+## Discussion
 
 Implement this method in your workflow extension observer object to receive notifications about changes in the playhead position of the current sequence. Final Cut Pro invokes this method when:
 

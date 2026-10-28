@@ -15,7 +15,7 @@ A flag to indicate whether PCM sample bits use all available bits of the channel
 LinearPCMFormatFlagIsPacked
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym if [`FormatFlagIsPacked`](./formatflagispacked.md).
 

@@ -15,7 +15,7 @@ The selected annotation on the map.
 selectedAnnotation?: Annotation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null.`
 

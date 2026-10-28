@@ -25,7 +25,7 @@ func requestBeginTransmitting(channelUUID: UUID)
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 Your app can only begin a transmission when in the foreground, or following a [Core Bluetooth](../../CoreBluetooth/CoreBluetooth.md) event, such as when a wireless accessory button triggers a [Core Bluetooth](../../CoreBluetooth/CoreBluetooth.md) characteristic change. The user may also begin a transmission by using the Push to Talk system user interface.
 

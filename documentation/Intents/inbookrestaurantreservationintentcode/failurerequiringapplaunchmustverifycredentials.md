@@ -16,7 +16,7 @@ case failureRequiringAppLaunchMustVerifyCredentials
 INBookRestaurantReservationIntentCodeFailureRequiringAppLaunchMustVerifyCredentials
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you do not have valid credentials for the user. Maps launches your app and passes it to the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response so that you can try to verify the user’s credentials there.
 

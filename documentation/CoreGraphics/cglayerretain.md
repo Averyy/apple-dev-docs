@@ -21,11 +21,11 @@ Increments the retain count of a layer object.
 extern CGLayerRefCGLayerRetain(CGLayerRef layer);
 ```
 
-#### Return Value
+## Return Value
 
 The same layer you passed in as the `layer` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`CFRetain`](../CoreFoundation/cfretain.md) except that it does not crash if the `layer` parameter is `null`.
 

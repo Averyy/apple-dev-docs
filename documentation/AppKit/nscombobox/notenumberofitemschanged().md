@@ -19,7 +19,7 @@ func noteNumberOfItemsChanged()
 - (void) noteNumberOfItemsChanged;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the receiver to update the scrollers in its displayed pop-up list without actually reloading data into the receiver. It is particularly useful for a data source that continually receives data in the background over a period of time, in which case the `NSComboBox` can remain responsive to the user while the data is received.
 

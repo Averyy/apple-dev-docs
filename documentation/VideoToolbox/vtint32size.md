@@ -24,7 +24,7 @@ struct VTInt32Size
 typedef struct VTInt32Size { ... } VTInt32Size;
 ```
 
-#### Overview
+## Overview
 
 Use this structure to represent a size with a particular width and height.
 

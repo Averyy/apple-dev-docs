@@ -20,11 +20,11 @@ init?(suiteName: String, commandName: String, dictionary commandDeclaration: [An
 - (instancetype) initWithSuiteName:(NSString *) suiteName commandName:(NSString *) commandName dictionary:(NSDictionary *) commandDeclaration;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized command description instance. Returns `nil` if the event constant or class name for the command description is missing; also returns `nil` if the return type or argument values are of the wrong type.
 
-#### Discussion
+## Discussion
 
 This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](../nsscriptsuiteregistry.md) and also registers all command arguments with the registry.
 

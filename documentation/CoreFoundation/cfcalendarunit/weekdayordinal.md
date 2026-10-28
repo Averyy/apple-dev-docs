@@ -25,7 +25,7 @@ static var weekdayOrdinal: CFCalendarUnit { get }
 kCFCalendarUnitWeekdayOrdinal
 ```
 
-#### Discussion
+## Discussion
 
 The weekday ordinal unit describes ordinal position within the month unit of the corresponding weekday unit. For example, in the Gregorian calendar a weekday ordinal unit of `2` for a weekday unit `3` indicates “the second Tuesday in the month”.
 

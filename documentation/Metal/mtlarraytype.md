@@ -24,7 +24,7 @@ class MTLArrayType
 @interface MTLArrayType : MTLType
 ```
 
-#### Overview
+## Overview
 
 An [`MTLArrayType`](./mtlarraytype.md) instance provides details about an array parameter. Don’t create [`MTLArrayType`](./mtlarraytype.md) instances directly; other reflection instances contain properties to determine if a parameter is an array and to obtain the [`MTLArrayType`](./mtlarraytype.md) instance that describes the array.
 

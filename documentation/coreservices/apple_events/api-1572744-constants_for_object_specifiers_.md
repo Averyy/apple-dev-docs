@@ -4,7 +4,7 @@
 
 Specify the types of the four keyword-specified descriptors that make up the data in an object specifier, as well as constants for position, logical operations, and comparison operations.
 
-#### Overview
+## Overview
 
 When you call the [`CreateLogicalDescriptor(_:_:_:_:)`](../api-1445212-createlogicaldescriptor.md) function to create a logical descriptor, you pass one of the logical operators `kAEAND`, `kAEOR`, or `kAENOT` in the `theLogicOperator` parameter. The `CreateLogicalDescriptor` function creates a logical descriptor that specifies a logical operation to perform on one or more operands.
 

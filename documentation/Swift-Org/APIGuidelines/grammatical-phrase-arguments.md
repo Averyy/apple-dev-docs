@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Otherwise, if the first argument forms part of a grammatical phrase, omit its label, appending any preceding words to the base name.
 
-#### Overview
+## Overview
 
 For example: `x.addSubview(y)`.
 

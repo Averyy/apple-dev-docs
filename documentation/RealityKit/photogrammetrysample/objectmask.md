@@ -18,7 +18,7 @@ The image’s object mask.
 var objectMask: CVPixelBuffer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When a photograph of an object includes surrounding objects, such as plants, buildings, or people in an outdoor space, you can create an object mask to exclude the portions of the image that don’t contain the object. Masking extraneous image data reduces the number of landmarks RealityKit attempts to match, speeds up the object-creation process, and produces a more accurate 3D model.
 

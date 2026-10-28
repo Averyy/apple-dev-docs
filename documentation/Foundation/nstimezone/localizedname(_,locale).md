@@ -25,7 +25,7 @@ func localizedName(_ style: NSTimeZone.NameStyle, locale: Locale?) -> String?
 - (NSString *) localizedName:(NSTimeZoneNameStyle) style locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the receiver localized for `locale` using `style`.
 

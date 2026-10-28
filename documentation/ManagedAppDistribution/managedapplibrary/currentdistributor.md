@@ -19,7 +19,7 @@ The library provider for managed apps on this device.
 static let currentDistributor: ManagedAppLibrary
 ```
 
-#### Discussion
+## Discussion
 
 This is a singleton object.
 

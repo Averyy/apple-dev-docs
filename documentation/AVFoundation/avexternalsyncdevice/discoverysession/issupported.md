@@ -23,7 +23,7 @@ class var isSupported: Bool { get }
 @property (class, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `true` indicates that external sync devices are supported while `false` indicates they are not.
 

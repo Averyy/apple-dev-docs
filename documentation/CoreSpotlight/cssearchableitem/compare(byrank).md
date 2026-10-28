@@ -23,11 +23,11 @@ func compare(byRank other: CSSearchableItem) -> ComparisonResult
 - (NSComparisonResult) compareByRank:(CSSearchableItem *) other;
 ```
 
-#### Return Value
+## Return Value
 
 A comparison result that indicates the ranked order of the items.
 
-#### Discussion
+## Discussion
 
 Call this function when you want to compare the current item with the one you specify. The method compares the ranks of the items.
 

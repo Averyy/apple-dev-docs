@@ -24,7 +24,7 @@ func AudioComponentGetDescription(_ inComponent: AudioComponent, _ outDesc: Unsa
 extern OSStatus AudioComponentGetDescription(AudioComponent inComponent, AudioComponentDescription *outDesc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

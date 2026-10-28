@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMakeWithVector(simd_float3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a single-precision vector with elements specified as a 3-element SIMD vector.
 

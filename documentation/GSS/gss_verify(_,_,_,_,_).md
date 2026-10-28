@@ -24,7 +24,7 @@ func gss_verify(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_handl
 OM_uint32 gss_verify(OM_uint32 *minor_status, gss_ctx_id_t context_handle, gss_buffer_t message_buffer, gss_buffer_t token_buffer, int *qop_state);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to GSS_S_COMPLETE on success. See Status Codes for a complete enumeration of status outputs.
 

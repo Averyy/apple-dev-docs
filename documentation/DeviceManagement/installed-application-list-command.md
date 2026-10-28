@@ -19,7 +19,7 @@ Get a list of the installed apps on a device.
 
 - [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
 
-#### Discussion
+## Discussion
 
 This command allows the server to query for installed 3rd party applications. The response also includes system apps in macOS, iOS 26 and later, tvOS 26 and later, visionOS 26 and later, and watchOS 26 and later.
 
@@ -27,7 +27,7 @@ This command doesn’t return apps that Declarative Device Management is managin
 
 Refer to the following sections to determine supported channels and requirements, and to see request and response examples for iOS and macOS.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowQueryApplications |
 
-##### Example request and response
+### Example request and response
 
 **Managed**:
 

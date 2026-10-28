@@ -16,7 +16,7 @@ Value for key [`kIOPSTransportTypeKey`](./kiopstransporttypekey.md).
 #define kIOPSNetworkTransportType
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the power source is a UPS attached over a network connection (and it may be managing several computers).
 

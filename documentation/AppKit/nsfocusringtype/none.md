@@ -19,7 +19,7 @@ case none
 NSFocusRingTypeNone
 ```
 
-#### Discussion
+## Discussion
 
 If you set the focus ring type to this value, [`NSView`](../nsview.md) and [`NSCell`](../nscell.md) do not draw any focus ring.
 

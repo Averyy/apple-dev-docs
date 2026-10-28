@@ -25,7 +25,7 @@ class ByteCountFormatter
 @interface NSByteCountFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 > 💡 **Tip**:  In Swift, you can use [`ByteCountFormatStyle`](./bytecountformatstyle.md) or [`Measurement.FormatStyle.ByteCount`](./measurement/formatstyle/bytecount.md) rather than [`ByteCountFormatter`](./bytecountformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 

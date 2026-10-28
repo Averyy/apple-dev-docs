@@ -6,12 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.I
 
 # mlx.nn.Identity
 
-**class Identity(**args: Any*, ***kwargs: Any*)**
-: A placeholder identity operator that is argument-insensitive.
+```python
+class Identity(*args: Any, **kwargs: Any)
+```
 
-Parameters:
+A placeholder identity operator that is argument-insensitive.
 
-**args** – any argument (unused)
-**kwargs** – any keyword argument (unused)
+**Parameters:**
+
+- **args** – any argument (unused)
+- **kwargs** – any keyword argument (unused)
 
 Methods

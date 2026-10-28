@@ -10,11 +10,11 @@
 extern size_t CGDisplayStreamUpdateGetDropCount(CGDisplayStreamUpdateRef updateRef);
 ```
 
-#### Return Value
+## Return Value
 
 The number of dropped frames
 
-#### Discussion
+## Discussion
 
 Return how many frames (if any) have been dropped since the last call to the handler.
 

@@ -15,7 +15,7 @@ The families that support this type of complication.
 var supportedFamilies: [CLKComplicationFamily] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Different descriptors can support different sets of families.
 

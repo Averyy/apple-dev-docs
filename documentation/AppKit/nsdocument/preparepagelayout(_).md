@@ -19,11 +19,11 @@ func preparePageLayout(_ pageLayout: NSPageLayout) -> Bool
 - (BOOL) preparePageLayout:(NSPageLayout *) pageLayout;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successfully prepared; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The [`runModalPageLayoutWithPrintInfo:`](./runmodalpagelayoutwithprintinfo_.md) and [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](./runmodalpagelayout%28with,delegate,didrun,contextinfo%29.md) methods call this method to allow the document to customize the Page Layout panel `pageLayout`. You might use this method to add a document-related accessory view.
 

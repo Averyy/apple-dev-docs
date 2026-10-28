@@ -19,7 +19,7 @@ var bounds: NSRect { get set }
 @property NSRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property contains a rectangle whose origin is (0, 0) and whose size matches the size of the view’s frame rectangle (measured in points). In macOS 10.5 and later, if the view is being rendered into an OpenGL graphics context (using an [`NSOpenGLContext`](../nsopenglcontext.md) object), the default bounds origin is still (0, 0) but the default bounds size is measured in pixels instead of points. Thus, for user space scale factors other than 1.0, the default size of the bounds rectangle may be bigger or smaller than the default size of the frame rectangle when drawing with OpenGL.
 

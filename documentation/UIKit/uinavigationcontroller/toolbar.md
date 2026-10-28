@@ -22,7 +22,7 @@ var toolbar: UIToolbar! { get }
 @property (nonatomic, readonly, null_resettable) UIToolbar * toolbar;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the built-in toolbar managed by the navigation controller. Access to this toolbar is provided solely for clients that want to present an action sheet from the toolbar. You should not modify the [`UIToolbar`](../uitoolbar.md) object directly.
 

@@ -25,7 +25,7 @@ func CFBagReplaceValue(_ theBag: CFMutableBag!, _ value: UnsafeRawPointer!)
 extern void CFBagReplaceValue(CFMutableBagRef theBag, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the implementation of the equal callback specified when creating `theBag`, the object that is replaced by `value` may not have the same pointer equality.
 

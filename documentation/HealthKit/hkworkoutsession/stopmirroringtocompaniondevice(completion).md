@@ -23,7 +23,7 @@ func stopMirroringToCompanionDevice() async throws
 - (void) stopMirroringToCompanionDeviceWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method in your watchOS app to stop the mirrored workout session on the companion iOS app. After the mirroring stops, the system calls the [`workoutSession(_:didDisconnectFromRemoteDeviceWithError:)`](../hkworkoutsessiondelegate/workoutsession%28_,diddisconnectfromremotedevicewitherror%29.md) method on the iOS companion’s session delegate.
 

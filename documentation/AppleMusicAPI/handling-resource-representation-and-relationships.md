@@ -5,13 +5,13 @@
 
 Fetch resources with extended attributes and included relationships and relationship views.
 
-#### Overview
+## Overview
 
 Resources are fetched with a default representation of attributes and relationships. Extend the default representation for a resource type to fetch additional attributes and include relationships and relationship views.
 
 > **Note**:  If any relationship or relationship view contains too many related resources, use pagination to fetch the next set of objects. See [Fetching Resources by Page](./fetching-resources-by-page.md).
 
-##### Extend Resource Attributes
+### Extend Resource Attributes
 
 The server will fetch a subset of the available attributes for a resource type by default. The attributes not fetched by default are known as *extended attributes*. You may specify a set of attribute names using the `extend` query parameter to request these additional attributes for a resource type.
 
@@ -21,7 +21,7 @@ For example, when fetching an [`Albums`](./albums.md) resource, you can request 
 GET https://api.music.apple.com/v1/catalog/us/albums/310730204?extend=artistUrl
 ```
 
-##### Include Resource Relationships
+### Include Resource Relationships
 
 Responses contain some relationships and their related resources by default. Related resources in the response will be either resource objects with their attributes or resource identifiers without attributes. See how to include relationships in a single response below.
 
@@ -43,7 +43,7 @@ You may request the related resources without their attributes for one or more r
 GET https://api.music.apple.com/v1/catalog/us/artists/462006?relate=playlists
 ```
 
-##### Include Resource Relationship Views
+### Include Resource Relationship Views
 
 The response never includes relationship views with a resource by default. Use the `views` parameter to specify a set of relationship views to include with the resource in the response. The value of the `views` parameter is a comma-separated list of the relationship view names to include. For example, when fetching an [`Albums`](./albums.md) object, you can request the `other-versions` relationship view using `views.`
 
@@ -53,7 +53,7 @@ GET https://api.music.apple.com/v1/catalog/us/albums/310730204?views=other-versi
 
 > **Note**:  You can request any combination of resource relationship and relationship views using the `include`, `relate`, and `views` parameters.
 
-##### Scoping Parameters
+### Scoping Parameters
 
 When not classified, the `extend`, `relate`, and `include` parameters apply to the primary resource collection of the response. For example, when fetching one or more artists, applying `&include=music-videos` adds the `music-video` relationship for the artists in the response’s primary `data` resource collection.
 
@@ -69,7 +69,7 @@ If you wish to fetch an artist, and would like to include the `featured-albums` 
 GET https://api.music.apple.com/v1/catalog/us/artists/462006?views=featured-albums&include[albums]=tracks
 ```
 
-##### Fetch Resource Relationships Directly
+### Fetch Resource Relationships Directly
 
 To fetch a relationship exclusively, specify the name of the relationship after the `id` path parameter. For example, fetch just the tracks belonging to an album.
 
@@ -83,7 +83,7 @@ By default, the API fetches a limited number of related resources for the relati
 GET https://api.music.apple.com/v1/catalog/us/artists/462006/albums?limit=5
 ```
 
-##### Fetch Resource Relationship Views Directly
+### Fetch Resource Relationship Views Directly
 
 To fetch a relationship view exclusively, you must append the “`/view/`” followed by name of the view to the `id` path parameter. For example, fetch similar-artists for an identified artist.
 

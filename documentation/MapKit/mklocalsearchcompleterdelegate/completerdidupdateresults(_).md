@@ -25,7 +25,7 @@ optional func completerDidUpdateResults(_ completer: MKLocalSearchCompleter)
 - (void) completerDidUpdateResults:(MKLocalSearchCompleter *) completer;
 ```
 
-#### Discussion
+## Discussion
 
 After receiving results from a query, the search completer updates its [`results`](../mklocalsearchcompleter/results.md) property with the new [`MKLocalSearchCompletion`](../mklocalsearchcompletion.md) objects and calls this method. Use this method to update your app’s interface based on the new search results. For example, you might update a table that you use to display search results to the user.
 

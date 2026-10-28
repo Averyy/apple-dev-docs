@@ -24,7 +24,7 @@ var playsHapticsOnly: Bool { get set }
 @property (nonatomic, readwrite) BOOL playsHapticsOnly;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) causes the engine to ignore all audio events, such as [`audioContinuous`](../chhapticevent/eventtype/audiocontinuous.md) and [`audioCustom`](../chhapticevent/eventtype/audiocustom.md). This also reduces latency of starting haptic playback.
 

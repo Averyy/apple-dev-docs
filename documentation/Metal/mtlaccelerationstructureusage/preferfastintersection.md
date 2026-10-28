@@ -24,7 +24,7 @@ static var preferFastIntersection: MTLAccelerationStructureUsage { get }
 MTLAccelerationStructureUsagePreferFastIntersection
 ```
 
-#### Discussion
+## Discussion
 
 The acceleration structures you build with this option can increase their build times.
 

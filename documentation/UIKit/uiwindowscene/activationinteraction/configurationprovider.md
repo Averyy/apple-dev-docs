@@ -22,7 +22,7 @@ typealias ConfigurationProvider = (UIWindowScene.ActivationInteraction, CGPoint)
 typedef UIWindowSceneActivationConfiguration *(^)(UIWindowSceneActivationInteraction *, struct CGPoint) UIWindowSceneActivationInteractionConfigurationProvider;
 ```
 
-#### Return Value
+## Return Value
 
 An activation configuration you can use to request a window scene.
 

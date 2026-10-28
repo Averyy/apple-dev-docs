@@ -26,7 +26,7 @@ func exceptionDuringOperation(_ operation: Selector, error: NSDecimalNumber.Calc
 - (NSDecimalNumber *) exceptionDuringOperation:(SEL) operation error:(NSCalculationError) error leftOperand:(NSDecimalNumber *) leftOperand rightOperand:(NSDecimalNumber *) rightOperand;
 ```
 
-#### Discussion
+## Discussion
 
 There are four possible values for `error`, described in [`NSDecimalNumber.CalculationError`](../nsdecimalnumber/calculationerror.md). The first three have to do with limits on the ability of `NSDecimalNumber` to represent decimal numbers. An `NSDecimalNumber` object can represent any number that can be expressed as mantissa x 10^exponent, where mantissa is a decimal integer up to 38 digits long, and exponent is between –256 and 256. The fourth results from the caller trying to divide by `0`.
 

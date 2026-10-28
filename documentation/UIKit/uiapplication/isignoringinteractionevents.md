@@ -24,7 +24,7 @@ var isIgnoringInteractionEvents: Bool { get }
 @property (nonatomic, readonly, getter=isIgnoringInteractionEvents) BOOL ignoringInteractionEvents;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is
 

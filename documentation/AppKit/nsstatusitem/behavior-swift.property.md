@@ -19,7 +19,7 @@ var behavior: NSStatusItem.Behavior { get set }
 @property (assign) NSStatusItemBehavior behavior;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property includes no behavior options. See [`NSStatusItem.Behavior`](./behavior-swift.struct.md) for a list of available behavior options and their effects.
 

@@ -5,7 +5,7 @@
 
 A bad access to memory terminated the process.
 
-#### Overview
+## Overview
 
 This exception is usually accompanied by either the `SIGBUS` or `SIGSEGV` signal; for more information, see [EXC_BAD_ACCESS (SIGBUS)](./sigbus.md) or [EXC_BAD_ACCESS (SIGSEGV)](./sigsegv.md).
 

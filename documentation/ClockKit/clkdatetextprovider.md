@@ -25,13 +25,13 @@ class CLKDateTextProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 Use a date provider for strings that contain day, month, and year information. The text provider formats the date information consistently and in a way that makes the best use of the available space. It also takes into account the user’s region and locale settings.
 
 When creating the formatted string, the date text provider creates the longest string that fits in the given space. It includes as many of the requested date elements as it can, but may truncate elements or use abbreviations as needed.
 
-##### Date Format Options
+### Date Format Options
 
 When creating a `CLKDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 

@@ -15,7 +15,7 @@ A tree structure containing annotations, overlays, and nested item collection ob
 class ItemCollection<D = any>
 ```
 
-#### Overview
+## Overview
 
 The [`importGeoJSON()`](./mapkit/importgeojson.md) method returns item collections. Don’t instantiate them directly.
 

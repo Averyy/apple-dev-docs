@@ -25,7 +25,7 @@ var classForCoder: AnyClass { get }
 @property (readonly) Class classForCoder;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by `NSCoder`. `NSObject`‘s implementation returns the receiver’s class. The private subclasses of a class cluster substitute the name of their public superclass when being archived.
 

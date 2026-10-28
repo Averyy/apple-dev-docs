@@ -12,11 +12,11 @@ IOCommandGate * GetCommandGate (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The IOCommandGate for this instance. May return NULL.
 
-#### Overview
+## Overview
 
 Accessor method to obtain the IOCommandGate.
 

@@ -15,11 +15,11 @@ Provides a report on the external device’s block size.
 virtual kern_return_t UserReportMediumBlockSize(UInt64 *blockSize);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of the report request. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 This call populates `blockSize` with the granularity of the block size, such as 512 bytes or 4096 bytes (4 KB).
 

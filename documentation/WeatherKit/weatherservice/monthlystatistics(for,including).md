@@ -21,11 +21,11 @@ Returns monthly weather statistics for the requested location, for all 12 months
 final func monthlyStatistics<each T>(for location: CLLocation, including dataSets: repeat MonthlyWeatherStatisticsQuery<each T>) async throws -> (repeat MonthlyWeatherStatistics<each T>) where repeat each T : Decodable, repeat each T : Encodable, repeat each T : Equatable, repeat each T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested monthly weather statistics
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

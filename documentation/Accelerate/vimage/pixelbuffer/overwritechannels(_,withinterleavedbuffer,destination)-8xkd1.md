@@ -23,7 +23,7 @@ func overwriteChannels(_ channels: [UInt8], withInterleavedBuffer buffer: vImage
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 Use this function to overwrite one or more channels of an interleaved buffer with an interleaved buffer. The following code overwrites channels `1` and `3` with the values in `overwriteValues`:
 

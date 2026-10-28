@@ -23,7 +23,7 @@ subscript(bounds: Range<Slice<Base>.Index>) -> Slice<Base> { get set }
 
 Available when `Base` conforms to `MutableCollection`.
 
-#### Overview
+## Overview
 
 The accessed slice uses the same indices for the same elements as the original collection. Always use the slice’s `startIndex` property instead of assuming that its indices start at a particular value.
 

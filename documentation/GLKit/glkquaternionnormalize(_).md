@@ -22,7 +22,7 @@ func GLKQuaternionNormalize(_ quaternion: GLKQuaternion) -> GLKQuaternion
 static GLKQuaternion GLKQuaternionNormalize(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion, normalized to have a length of `1.0`.
 

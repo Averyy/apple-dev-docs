@@ -19,7 +19,7 @@ var keyCode: UInt16 { get }
 @property (readonly) unsigned short keyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if sent to a non-key event.
 

@@ -25,7 +25,7 @@ class INIntentResponse
 @interface INIntentResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`INIntentResponse`](./inintentresponse.md) class is abstract and provides common behavior for all response objects that your app creates. You do not create instances of this class directly. Instead, you create instances of the specific subclasses representing the intents that you are trying to handle. This class provides access to the custom user activity object that you provided when initializing your response object.
 

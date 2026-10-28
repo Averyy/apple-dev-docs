@@ -16,7 +16,7 @@ Notify the async stream object that a packet notification handler has completed.
 void (*ClientCommandIsComplete)(IOFWAsyncStreamListenerInterfaceRef self, FWClientCommandID commandID, IOReturn status);
 ```
 
-#### Discussion
+## Discussion
 
 Packet notifications are received one at a time, in order. This function must be called after a packet handler has completed its work.
 

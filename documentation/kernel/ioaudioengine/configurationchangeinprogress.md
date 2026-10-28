@@ -9,7 +9,7 @@
 bool configurationChangeInProgress;
 ```
 
-#### Overview
+## Overview
 
 Set to true after beginConfigurationChange() and false upon a subsequent call to completeConfigurationChange() or cancelConfigurationChange().
 

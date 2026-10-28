@@ -24,11 +24,11 @@ func JSGlobalContextCopyName(_ ctx: JSGlobalContextRef!) -> JSStringRef!
 JSStringRefJSGlobalContextCopyName(JSGlobalContextRef ctx);
 ```
 
-#### Return Value
+## Return Value
 
 The name for `ctx`.
 
-#### Discussion
+## Discussion
 
 JavaScriptCore exposes the name of [`JSGlobalContextRef`](./jsglobalcontextref.md) for remote debugging to make it easier to identify the context you want to attach to.
 

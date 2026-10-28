@@ -23,7 +23,7 @@ static var byLines: NSString.EnumerationOptions { get }
 NSStringEnumerationByLines
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates by lines. Equivalent to [`lineRange(for:)`](../linerange%28for%29.md).
 

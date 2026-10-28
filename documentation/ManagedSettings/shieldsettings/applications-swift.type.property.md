@@ -17,7 +17,7 @@ The metadata for the configuration that specifies apps for the system to cover w
 static let applications: SettingMetadata<Set<ApplicationToken>>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an empty set.
 

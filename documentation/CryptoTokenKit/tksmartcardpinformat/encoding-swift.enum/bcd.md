@@ -23,7 +23,7 @@ case bcd
 TKSmartCardPINEncodingBCD
 ```
 
-#### Discussion
+## Discussion
 
 Characters (only digits) are encoded in BCD format (for example, `1234` is encoded as `12h 34h`).
 

@@ -25,11 +25,11 @@ init(forReading fileURL: URL, commonFormat format: AVAudioCommonFormat, interlea
 - (instancetype) initForReading:(NSURL *) fileURL commonFormat:(AVAudioCommonFormat) format interleaved:(BOOL) interleaved error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFile` instance you use for reading.
 
-#### Discussion
+## Discussion
 
 The processing format refers to the buffers it reads from the file. The system reads the content and converts from the file format to the processing format. The processing format must be at the same sample rate as the actual file contents, and must be linear PCM. The interleaved parameter determines whether the processing buffer is in an interleaved float format.
 

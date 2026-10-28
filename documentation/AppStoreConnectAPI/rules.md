@@ -5,7 +5,7 @@
 
 Manage the matchmaking rules that Game Center uses to find players.
 
-#### Overview
+## Overview
 
 The `rules` resource represents a matchmaking rule that Game Center applies to match requests in a queue.
 

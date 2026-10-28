@@ -16,7 +16,7 @@ get tileOverlays(): TileOverlay[];
 set tileOverlays(tileOverlays: TileOverlay[]);
 ```
 
-#### Discussion
+## Discussion
 
 You can set this attribute to a new (possibly empty) array of tile overlays, to update or remove all the tile overlays on the map.
 

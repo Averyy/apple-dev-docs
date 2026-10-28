@@ -24,7 +24,7 @@ typealias JSObjectInitializeCallback = (JSContextRef?, JSObjectRef?) -> Void
 typedef void (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *) JSObjectInitializeCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your function `Initialize`, you declare it like this:
 

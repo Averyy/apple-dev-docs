@@ -21,7 +21,7 @@ Creates a custom format style representing the milliseconds elapsed in a day.
 static func milliseconds(_ val: Int) -> Date.FormatStyle.Symbol.SecondFraction
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of milliseconds elapsed in the day.
 

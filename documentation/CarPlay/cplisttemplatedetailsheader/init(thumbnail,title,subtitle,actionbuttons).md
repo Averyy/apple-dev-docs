@@ -21,11 +21,11 @@ init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButto
 - (instancetype) initWithThumbnail:(CPThumbnailImage *) thumbnail title:(NSString *) title subtitle:(NSString *) subtitle actionButtons:(NSArray<CPButton *> *) actionButton;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized CPListTemplateDetailsHeader instance.
 
-#### Discussion
+## Discussion
 
 The thumbnail parameter is required and should not be nil. The title and subtitle are optional but at least one should be provided for meaningful content display. Action buttons will be displayed in the order provided in the array.
 

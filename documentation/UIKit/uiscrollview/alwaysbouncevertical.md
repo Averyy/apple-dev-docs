@@ -23,7 +23,7 @@ var alwaysBounceVertical: Bool { get set }
 @property (nonatomic) BOOL alwaysBounceVertical;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md) and [`bouncesVertically`](./bouncesvertically.md) is [`true`](../../Swift/true.md), the scroll view allows vertical dragging even if the content is smaller than the bounds of the scroll view. The default value is [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new serial port configuration object.
 

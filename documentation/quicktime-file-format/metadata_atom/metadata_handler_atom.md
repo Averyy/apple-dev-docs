@@ -6,7 +6,7 @@
 
 An atom that defines the structure used for all types of metadata stored within the metadata atom.
 
-#### Overview
+## Overview
 
 For more information, see [`Metadata handler atom`](../metadata_handler_atom.md).
 

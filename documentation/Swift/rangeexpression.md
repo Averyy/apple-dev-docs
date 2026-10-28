@@ -21,7 +21,7 @@ A type that can be used to slice a collection.
 protocol RangeExpression<Bound>
 ```
 
-#### Overview
+## Overview
 
 A type that conforms to `RangeExpression` can convert itself to a `Range<Bound>` of indices within a given collection.
 

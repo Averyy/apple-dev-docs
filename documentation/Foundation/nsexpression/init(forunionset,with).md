@@ -25,7 +25,7 @@ init(forUnionSet left: NSExpression, with right: NSExpression)
 + (NSExpression *) expressionForUnionSet:(NSExpression *) left with:(NSExpression *) right;
 ```
 
-#### Return Value
+## Return Value
 
 An new `NSExpression` object that represents the union of `left` and `right`.
 

@@ -17,7 +17,7 @@ The amount of time that elapsed before the most recent pause of the countdown.
 var previouslyElapsedDuration: TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 If the countdown was never paused or resumed, the value is zero.
 

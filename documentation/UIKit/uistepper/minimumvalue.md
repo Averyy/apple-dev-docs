@@ -22,7 +22,7 @@ var minimumValue: Double { get set }
 @property (nonatomic) double minimumValue;
 ```
 
-#### Discussion
+## Discussion
 
 Must be numerically less than [`maximumValue`](./maximumvalue.md). If you attempt to set a value equal to or greater than [`maximumValue`](./maximumvalue.md), the system raises an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) exception.
 

@@ -5,11 +5,11 @@
 
 Build interprocess communication between your host app and extensions.
 
-#### Overview
+## Overview
 
 When the framework launches your extension processes, it provides the host app with a simple way to initiate an [XPC](../XPC/XPC.md) connection with the extensions. Use this connection to communicate with the extensions, and to set up anonymous connections that the extensions use to communicate directly with each other.
 
-#### Create a connection in the browser app
+## Create a connection in the browser app
 
 When your browser app has launched an extension, call the extension’s `makeLibXPCConnection()` method to create and initialize an [`xpc_connection_t`](../XPC/xpc_connection_t.md) that represents an XPC connection between the browser app and the extension.
 
@@ -45,7 +45,7 @@ func fetchData(from url: URL, over connection: xpc_connection_t) throws {
 
 The [`xpc_connection_t`](../XPC/xpc_connection_t.md) data type and functions that act on it are described in [XPC connections](../XPC/xpc-connections.md). It is recommended that you use this API for browser apps and their extensions.
 
-#### Handle XPC events in the extension
+## Handle XPC events in the extension
 
 When your browser app calls an extension process’s `makeLibXPCConnection()` method, the framework sets up the XPC connection and calls your extension’s `handle(xpcConnection:)` method. In your implementation of this method, install an event handler to process messages sent over this connection, and activate the connection:
 
@@ -64,7 +64,7 @@ class MyNetworkExtension: NetworkingExtension {
 
 > ❗ **Important**:  Don’t call [`xpc_main(_:)`](../XPC/xpc_main%28_%29.md) from a browser extension. This function sets up the event loop for an XPC service, which causes problems if you call it in a process that isn’t an XPC service, for example a browser extension.
 
-#### Pass anonymous connection endpoints between extensions
+## Pass anonymous connection endpoints between extensions
 
 When two extensions that are part of the same browser app need to communicate directly, send an XPC message requesting an anonymous endpoint from the browser app to the first extension. In the first extension’s connection handler, configure and activate the connection. Wrap the connection you created in an [`xpc_endpoint_t`](../XPC/xpc_endpoint_t.md) and send it in a reply to the host app:
 
@@ -124,7 +124,7 @@ let otherExtensionConnection = xpc_connection_create_from_endpoint(endpoint)
 // Send messages to the other extension.
 ```
 
-#### Verify the identity of the remote process
+## Verify the identity of the remote process
 
 To be confident that your browser app or extension is communicating with the correct component, set a lightweight code requirement on the XPC connection. The system tests that the executable for the process at the remote end of the connection satisfies the requirement each time the process sends a message.
 

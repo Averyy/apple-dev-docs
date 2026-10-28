@@ -21,7 +21,7 @@ Tells the delegate to handle the specified sync event.
 - (void) syncEngine:(CKSyncEngine *) syncEngine handleEvent:(CKSyncEngineEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If `event` is an instance of [`CKSyncEngineStateUpdateEvent`](../cksyncenginestateupdateevent.md), you must persist the attached state to disk alongside your app data. The sync engine requires you to provide it with the most recent serialized state at initialization, and it’s your responsibility to make sure this is available across app launches.
 

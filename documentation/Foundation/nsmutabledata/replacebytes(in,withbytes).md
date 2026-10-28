@@ -25,7 +25,7 @@ func replaceBytes(in range: NSRange, withBytes bytes: UnsafeRawPointer)
 - (void) replaceBytesInRange:(NSRange) range withBytes:(const void *) bytes;
 ```
 
-#### Discussion
+## Discussion
 
 If the location of `range` isn’t within the receiver’s range of bytes, an `NSRangeException` is raised. The receiver is resized to accommodate the new bytes, if necessary.
 

@@ -28,7 +28,7 @@ CHHapticEngineStoppedReasonSystemError
 
 - [Preparing your app to play haptics](../../preparing-your-app-to-play-haptics.md)
 
-#### Discussion
+## Discussion
 
 Your app should attempt to restart the engine. If the restart attempt fails multiple times, treat the condition as fatal.
 

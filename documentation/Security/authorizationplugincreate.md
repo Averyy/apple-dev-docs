@@ -25,11 +25,11 @@ OSStatus AuthorizationPluginCreate(const AuthorizationCallbacks *callbacks, Auth
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. Returns [`errAuthorizationSuccess`](./errauthorizationsuccess.md) (no error) if the function completes successfully and [`errAuthorizationInternal`](./errauthorizationinternal.md) (Security Server internal error) if any error occurs.
 
-#### Discussion
+## Discussion
 
 This function is the main entry point to the plug-in. The authorization engine calls this function only once. The plug-in receives an [`AuthorizationCallbacks`](./authorizationcallbacks.md) structure containing the entry points to the Security Server’s functions and returns an [`AuthorizationPluginInterface`](./authorizationplugininterface.md) structure containing the entry points to all of the plug-in’s routines. Both of these structures contain version numbers. The authorization engine matches the version of its interface to the version in your plug-in’s [`AuthorizationPluginInterface`](./authorizationplugininterface.md) structure in order to ensure that older plug-ins will continue to function correctly after the Security Server is updated.
 

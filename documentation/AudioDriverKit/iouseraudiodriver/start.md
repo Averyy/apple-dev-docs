@@ -15,11 +15,11 @@ Starts the current service and associates it with the specified provider.
 virtual kern_return_t Start(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method inherited from [`IOService`](../../DriverKit/ioservice.md).
 

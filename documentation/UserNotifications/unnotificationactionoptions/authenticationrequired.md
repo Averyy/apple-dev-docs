@@ -24,7 +24,7 @@ static var authenticationRequired: UNNotificationActionOptions { get }
 UNNotificationActionOptionAuthenticationRequired
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, the system notifies your app of the selected action. You might use option to perform actions that require accessing data that is encrypted while the device is locked.
 

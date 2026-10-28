@@ -21,7 +21,7 @@ A controller that manages synchronized playback for a group of audio resources.
 @preconcurrency class AudioPlaybackGroupController
 ```
 
-#### Overview
+## Overview
 
 You obtain an audio playback group controller by calling [`prepareAudio(_:)`](./audio/prepareaudio%28_%29.md) or [`playAudio(_:)`](./audio/playaudio%28_%29.md) with multiple [`AudioResource`](./audioresource.md)/[`Entity`](./entity.md) pairs. The controller coordinates all sources so they remain synchronized through playback, pause, seek, and rate changes.
 

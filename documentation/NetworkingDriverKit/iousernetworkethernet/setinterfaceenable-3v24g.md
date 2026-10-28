@@ -15,11 +15,11 @@ Enables or disables your service.
 virtual kern_return_t SetInterfaceEnable(bool isEnable);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to start or stop the delivery of packets to and from the device. For example, change the enabled state of the queues you use to handle packets moving to or from the device.
 

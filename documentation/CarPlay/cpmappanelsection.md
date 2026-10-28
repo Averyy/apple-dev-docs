@@ -21,7 +21,7 @@ class CPMapPanelSection
 @interface CPMapPanelSection : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CPMapPanelSection` class organizes a single section of content in a [`CPMapPanel`](./cpmappanel.md) interface. In a navigation app, you use map panels to display relevant information such as route options or the location of charging stations on top of your custom map. Section objects manage one or more related items you want to display. For example, you might use one section to display upcoming charging stations and a different section to display route choices.
 

@@ -21,7 +21,7 @@ A slice of the shaped array for the selected leading axes.
 subscript(indices: Int...) -> MLShapedArraySlice<Self.Scalar> { get set }
 ```
 
-#### Overview
+## Overview
 
 The slice has a rank of `self.rank - indices.count`. For example, given a shaped array `m` with the shape being `[3, 3]`, `m[1]` returns a slice of shape `[3]` with the contents labeld as `x` below.
 

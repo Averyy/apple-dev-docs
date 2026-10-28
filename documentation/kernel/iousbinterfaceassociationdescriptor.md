@@ -15,7 +15,7 @@ The descriptor that associates multiple interfaces to the same function.
 typedef struct IOUSBInterfaceAssociationDescriptor IOUSBInterfaceAssociationDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.4 for more information.
 

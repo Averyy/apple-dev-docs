@@ -21,11 +21,11 @@ Returns a new dispatch data object consisting of the concatenated data from two 
 extern dispatch_data_tdispatch_data_create_concat(dispatch_data_t data1, dispatch_data_t data2);
 ```
 
-#### Return Value
+## Return Value
 
 A new dispatch data object containing the concatenated memory.
 
-#### Discussion
+## Discussion
 
 After calling this function, it is safe to release either of the objects in `data1` or `data2`. However, be aware that the memory from those objects may not be deallocated if the newly created dispatch data object references it, as opposed to copies it.
 

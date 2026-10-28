@@ -19,7 +19,7 @@ Placement for commands related to printing app content.
 static let printItem: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

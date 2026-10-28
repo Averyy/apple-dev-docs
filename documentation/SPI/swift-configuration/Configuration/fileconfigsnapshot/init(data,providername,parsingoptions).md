@@ -25,7 +25,7 @@ Creates a new snapshot from file data.
 init(data: RawSpan, providerName: String, parsingOptions: Self.ParsingOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer parses the provided file data and creates a snapshot containing the configuration values found in the file.
 

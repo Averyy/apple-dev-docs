@@ -26,7 +26,7 @@ protocol UIViewControllerPreviewing : NSObjectProtocol
 @protocol UIViewControllerPreviewing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The system returns a context object conforming to this protocol when you call a view controller’s [`registerForPreviewing(with:sourceView:)`](./uiviewcontroller/registerforpreviewing%28with,sourceview%29.md) method. This method registers the view controller to participate in 3D Touch preview (peek) and commit (pop) behaviors.
 

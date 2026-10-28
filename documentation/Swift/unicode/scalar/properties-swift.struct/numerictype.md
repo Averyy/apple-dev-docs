@@ -21,7 +21,7 @@ The numeric type of the scalar.
 var numericType: Unicode.NumericType? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For scalars that represent a number, `numericType` is the numeric type of the scalar. For all other scalars, this property is `nil`.
 

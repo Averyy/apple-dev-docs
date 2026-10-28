@@ -10,7 +10,7 @@ Make your app more accessible to users with disabilities by adding accessibility
 - macOS 13.1+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 By adding accessibility features to your app, you make it available to a wider range of users. This sample code project shows how to implement accessibility for several common UI controls. The examples make the controls accessible by using accessibility properties, accessibility protocols, and the [`NSAccessibilityElement`](../AppKit/nsaccessibilityelement-swift.class.md) class.
 
@@ -22,7 +22,7 @@ In macOS 10.10, the Accessibility API moved to a protocol-based approach, in con
 
 Accessibility API features in macOS versions earlier than 10.10 are deprecated, but can coexist with the current API. No changes are required for apps or accessibility clients that use earlier versions of the Accessibility API. If you implement both APIs on the same class, the current API takes precedence for that class. For cell-based controls, you need to provide Accessibility API implementations on the cell.
 
-##### Add accessibility attributes
+### Add accessibility attributes
 
 Most accessibility attributes from macOS 10.9 and earlier are now properties in the following AppKit classes:
 
@@ -49,7 +49,7 @@ override func accessibilityLabel() -> String? {
 
 [`NSAccessibilityProtocol`](../AppKit/nsaccessibilityprotocol.md) contains the full list of accessibility properties.
 
-##### Add accessibility protocols to custom controls
+### Add accessibility protocols to custom controls
 
 The Accessibility API protocols define the required accessibility functions for many common accessibility elements. Conformance to an accessibility protocol isn’t required to use the API, but it’s recommended when making custom controls accessible. Conforming to an accessibility protocol results in a warning for each unimplemented required function and allows the system to automatically infer the  [`accessibilityRole`](../AppKit/nsaccessibility-c.protocol/accessibilityrole.md) and [`isAccessibilityElement`](../AppKit/nsaccessibilityprotocol/isaccessibilityelement%28%29.md) properties.
 
@@ -79,11 +79,11 @@ override func isAccessibilityElement() -> Bool {
 }
 ```
 
-##### Create an accessibility element
+### Create an accessibility element
 
 For objects that don’t have a backing view — for example, a single view that draws several images, each of which is individually accessible — create an instance of `NSAccessibilityElement` for each object, and return an array of the instances from the containing view’s `accessibilityChildren` function.
 
-##### Simplify your accessibility code
+### Simplify your accessibility code
 
 `NSAccessibilityElement` has two convenience methods that simplify its use:
 
@@ -95,7 +95,7 @@ The Accessibility API includes two convenience methods in `AppKit/NSAccessibilit
 - [`NSAccessibilityFrameInView`](../AppKit/nsaccessibility-swift.struct/screenrect%28fromview,rect%29.md) — This convenience method converts `frame` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityFrame`](../AppKit/nsaccessibilityprotocol/accessibilityframe%28%29.md).
 - [`NSAccessibilityPointInView`](../AppKit/nsaccessibility-swift.struct/screenpoint%28fromview,point%29.md) — This convenience method converts `point` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityActivationPoint`](../AppKit/nsaccessibilityprotocol/accessibilityactivationpoint%28%29.md) coordinates.
 
-##### Test the accessibility features on your app
+### Test the accessibility features on your app
 
 The Accessibility Inspector is an Xcode tool that displays all accessibility information for the element currently beneath the cursor, including the accessibility hierarchy, accessibility attributes, and accessibility actions. It also shows warnings for common accessibility problems, such as a missing accessibility label. Launch the Accessibility Inspector from the Xcode > Open Developer Tool menu.
 

@@ -24,7 +24,7 @@ class func pintImperial() -> Self
 + (instancetype) pintImperialUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring volume in imperial pints.
 

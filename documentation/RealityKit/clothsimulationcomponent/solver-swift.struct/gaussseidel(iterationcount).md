@@ -17,11 +17,11 @@ Gauss-Seidel solver for a cloth simulation.
 static func gaussSeidel(iterationCount: Int = 1) -> ClothSimulationComponent.Solver
 ```
 
-#### Return Value
+## Return Value
 
 A Gauss-Seidel solver configuration.
 
-#### Discussion
+## Discussion
 
 This is the default solver. It provides the best trade-off between accuracy and performance in most cases.
 

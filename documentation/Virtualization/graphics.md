@@ -5,7 +5,7 @@
 
 Configure a device for a guest to display its UI.
 
-#### Overview
+## Overview
 
 A graphics device that allows people to see and interact with the UI of a VM, you use this device to attach a display that’s shown in a [`VZVirtualMachineView`](./vzvirtualmachineview.md).
 

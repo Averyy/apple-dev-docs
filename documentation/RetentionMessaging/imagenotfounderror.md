@@ -15,7 +15,7 @@ An error that indicates the system can’t find the image identifier.
 object ImageNotFoundError
 ```
 
-#### Overview
+## Overview
 
 The [`Delete Image`](./delete-image.md) endpoint returns this error if the [`imageIdentifier`](./imageidentifier.md) doesn’t exist.
 

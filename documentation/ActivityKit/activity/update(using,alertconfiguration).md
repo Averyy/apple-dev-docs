@@ -18,7 +18,7 @@ Updates the dynamic content of a Live Activity and alerts a person about the Liv
 func update(using contentState: Activity<Attributes>.ContentState, alertConfiguration: AlertConfiguration? = nil) async
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores updates to a Live Activity that’s in the [`ActivityState.ended`](../activitystate/ended.md) state.
 

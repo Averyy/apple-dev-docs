@@ -25,7 +25,7 @@ static let phong: SCNMaterial.LightingModel
 extern SCNLightingModel const SCNLightingModelPhong;
 ```
 
-#### Discussion
+## Discussion
 
 The Phong approximation of real-world reflectance calculates the color of a point on a surface using the following formula:
 

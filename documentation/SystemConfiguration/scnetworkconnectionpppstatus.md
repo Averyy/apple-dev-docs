@@ -24,7 +24,7 @@ enum SCNetworkConnectionPPPStatus
 enum SCNetworkConnectionPPPStatus : int32_t;
 ```
 
-#### Overview
+## Overview
 
 This status is returned as part of the extended information for a PPP service. Note that additional status might be returned in the future. Therefore, your application should be prepared to receive an unknown value.
 

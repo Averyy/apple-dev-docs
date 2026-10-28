@@ -25,7 +25,7 @@ case cancel
 NSURLSessionResponseCancel
 ```
 
-#### Discussion
+## Discussion
 
 Using this disposition is equivalent to calling [`cancel()`](../../urlsessiontask/cancel%28%29.md) on the task.
 

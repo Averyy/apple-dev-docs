@@ -21,7 +21,7 @@ The localized description of the product.
 let description: String
 ```
 
-#### Discussion
+## Discussion
 
 The storefront of the device determines the language of the [`description`](./description.md), not the preferred language set on the device. For more information, see [`Storefront`](../storefront.md).
 

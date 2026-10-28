@@ -19,11 +19,11 @@ func SecIdentitySetSystemIdentity(_ domain: CFString, _ idRef: SecIdentity?) -> 
 OSStatus SecIdentitySetSystemIdentity(CFStringRef domain, SecIdentityRef idRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The caller must be running as root.
 

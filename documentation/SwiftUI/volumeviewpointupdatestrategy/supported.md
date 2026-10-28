@@ -15,7 +15,7 @@ The action should only be run when the new viewpoint is equivalent to one of the
 static let supported: VolumeViewpointUpdateStrategy
 ```
 
-#### Discussion
+## Discussion
 
 The viewpoint will be equivalent to where the window bar and ornaments are presented for a volume.
 

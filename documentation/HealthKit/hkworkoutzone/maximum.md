@@ -20,7 +20,7 @@ The maximum threshold for the zone.
 var maximum: HKQuantity? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the zone has no upper bound.
 

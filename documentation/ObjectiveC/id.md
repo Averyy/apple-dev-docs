@@ -21,7 +21,7 @@ A pointer to an instance of a class.
 typedef struct objc_object * id;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an instance of a particular class, the allocated memory contains an `objc_object` data structure, which is directly followed by the data for the instance variables of the class.
 

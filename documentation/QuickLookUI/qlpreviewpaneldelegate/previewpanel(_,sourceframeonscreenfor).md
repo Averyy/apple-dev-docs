@@ -19,11 +19,11 @@ optional func previewPanel(_ panel: QLPreviewPanel!, sourceFrameOnScreenFor item
 - (NSRect) previewPanel:(QLPreviewPanel *) panel sourceFrameOnScreenForPreviewItem:(id<QLPreviewItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The screen rectangle for the given preview item. Return [`NSZeroRect`](../../Foundation/nszerorect.md) if there is no origin point (this will produce a fade of the panel).
 
-#### Discussion
+## Discussion
 
 The system invokes this optional method when the preview panel opens or closes to provide a zoom effect. You should return — in screen coordinates — the rectangle that displays the specified preview item.
 

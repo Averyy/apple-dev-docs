@@ -21,11 +21,11 @@ class func load(atPath path: String!) -> Bool
 + (BOOL) loadPlugInAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful.
 
-#### Discussion
+## Discussion
 
 Call this method only if you need to load a plug-in bundle from a nonstandard location. Typically you don’t need to call this method because Quartz Composer automatically loads bundles that you install  in one of the following locations:
 

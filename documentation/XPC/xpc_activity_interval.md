@@ -19,7 +19,7 @@ let XPC_ACTIVITY_INTERVAL: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_INTERVAL;
 ```
 
-#### Discussion
+## Discussion
 
 The activity doesn’t run more than once per time interval. Due to the nature of XPC Activity finding an opportune time to run the activity, any two occurrences may be more or less than [`XPC_ACTIVITY_INTERVAL`](./xpc_activity_interval.md) seconds apart, but on average are [`XPC_ACTIVITY_INTERVAL`](./xpc_activity_interval.md) seconds apart. The presence of this key implies the following, unless you override these values:
 

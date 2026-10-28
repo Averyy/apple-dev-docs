@@ -14,7 +14,7 @@
 kIOAudioStreamDirectionInput = 1
 ```
 
-#### Discussion
+## Discussion
 
 Input buffer
 

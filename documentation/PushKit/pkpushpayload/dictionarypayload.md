@@ -24,7 +24,7 @@ var dictionaryPayload: [AnyHashable : Any] { get }
 @property (copy, readonly) NSDictionary * dictionaryPayload;
 ```
 
-#### Discussion
+## Discussion
 
 For VoIP pushes, the sender is free to specify any fields for the contained data as long as it is provided in a text-encodable JSON format.
 

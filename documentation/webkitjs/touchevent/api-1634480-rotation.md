@@ -16,7 +16,7 @@ The delta rotation since the start of an event in degrees where clockwise is pos
 readonly attribute float rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value is `0.0`.
 

@@ -23,7 +23,7 @@ func updateConstraints()
 - (void) updateConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to optimize changes to your constraints.
 

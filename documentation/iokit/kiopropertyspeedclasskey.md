@@ -14,7 +14,7 @@
 #define kIOPropertySpeedClassKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate SD card speed class.
 

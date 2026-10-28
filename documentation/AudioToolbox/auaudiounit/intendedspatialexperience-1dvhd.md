@@ -15,7 +15,7 @@ The AUAudioUnit’s intended spatial experience.
 @property (copy, nonnull) CASpatialAudioExperience * intendedSpatialExperience;
 ```
 
-#### Discussion
+## Discussion
 
 Only useful for output AUAudioUnits - setting on a non-output AU is a no-op. The default value of CAAutomaticSpatialAudio means the output AUAudioUnit uses its AVAudioSession’s spatial experience. See CASpatialAudioExperience for more details.
 

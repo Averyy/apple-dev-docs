@@ -24,7 +24,7 @@ enum LAAccessControlOperation
 enum LAAccessControlOperation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use one of these values to specify the operation for which you want to evaluate an access control when calling the [`evaluateAccessControl(_:operation:localizedReason:reply:)`](./lacontext/evaluateaccesscontrol%28_,operation,localizedreason,reply%29.md) method.
 

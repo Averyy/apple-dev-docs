@@ -19,7 +19,7 @@ func setIntercellSpacing(_ aSize: NSSize)
 - (void) setIntercellSpacing:(NSSize) aSize;
 ```
 
-#### Discussion
+## Discussion
 
 By default, both values are `10.0` in the receiver’s coordinate system.
 

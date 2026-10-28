@@ -8,7 +8,7 @@ The App Store provides a safe and trusted way for people to find and install app
 
 If you’re creating apps for macOS, you can distribute apps outside the App Store and still offer people the safety and security they expect. Apple’s automated notarization workflow ensures that people receive your genuine app and that tampering didn’t occur during distribution.
 
-#### Distribute apps on the App Store
+## Distribute apps on the App Store
 
 Make your apps available on the App Store with App Store Connect [on the web](https://applestoreconnect.apple.com), on the app for [iPhone and iPad](https://apps.apple.com/us/app/app-store-connect/id1234793120), or with the [App Store Connect REST API](../AppStoreConnectAPI/AppStoreConnectAPI.md). Use App Store Connect to specify detailed information about your apps, and the legal and financial documents Apple needs to pay you for any sales. Specifically, use App Store Connect to:
 
@@ -21,7 +21,7 @@ Make your apps available on the App Store with App Store Connect [on the web]
 
 Xcode and Xcode Cloud make it easy to distribute new builds of your software to App Store Connect. [Prepare your app](../Xcode/preparing-your-app-for-distribution.md) for distribution by supplying the information App Store Connect needs. After you build a distributable version of your app, [create an archive of it](../Xcode/distributing-your-app-for-beta-testing-and-releases.md) and send it to App Store Connect. If you use Xcode Cloud to build your app, [configure one of your workflows](../Xcode/configuring-your-first-xcode-cloud-workflow.md) to upload your app after a successful build and distribute it to testers or the App Store.
 
-#### Distribute apps yourself
+## Distribute apps yourself
 
 In macOS, the Gatekeeper security technology ensures that only trusted software runs on a person’s Mac. When someone downloads and opens an app, plug-in, or installer package from outside the App Store, Gatekeeper verifies that the software is from a known developer and is unaltered. The first time someone runs the software on their Mac, Gatekeeper prompts them to verify they want to run the software.
 

@@ -5,7 +5,7 @@
 
 Make your app’s enumerations and predefined values available to the system by using app enum types.
 
-#### Overview
+## Overview
 
 If your app intents or app entities expose variables with predefined values, support the [`AppEnum`](./appenum.md) protocol in those types. When an intent parameter or entity property conforms to this protocol, the system can suggest values readily in conversations. For example, consider a food ordering app that offers small, medium, and large beverages, and defines an intent that takes the beverage size as a parameter. If the person doesn’t specify a size when placing an order, but the parameter’s type supports the [`AppEnum`](./appenum.md) protocol, the system can prompt for one of the defined sizes automatically. If you can represent each value of an enumeration as a URL, also add support for the [`URLRepresentableEnum`](./urlrepresentableenum.md) protocol.
 

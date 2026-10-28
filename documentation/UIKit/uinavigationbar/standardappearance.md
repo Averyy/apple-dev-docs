@@ -24,7 +24,7 @@ var standardAppearance: UINavigationBarAppearance { get set }
 @property (nonatomic, copy, readwrite) UINavigationBarAppearance * standardAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an appearance object containing the system’s default appearance settings. You can customize the navigation bar appearance for specific navigation items with the [`standardAppearance`](../uinavigationitem/standardappearance.md) property of [`UINavigationItem`](../uinavigationitem.md).
 

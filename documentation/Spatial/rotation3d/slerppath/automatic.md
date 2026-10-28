@@ -21,7 +21,7 @@ Spherical linear interpolation along the automatically selected arc between two 
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 For angular separations that are less than or equal to 180°, the spherical linear interpolation along the shortest arc between two rotations, otherwise along the longest arc.
 

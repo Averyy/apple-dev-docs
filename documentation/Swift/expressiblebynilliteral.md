@@ -21,7 +21,7 @@ A type that can be initialized using the nil literal, `nil`.
 protocol ExpressibleByNilLiteral : ~Copyable, ~Escapable
 ```
 
-#### Overview
+## Overview
 
 `nil` has a specific meaning in Swift—the absence of a value. Only the `Optional` type conforms to `ExpressibleByNilLiteral`. `ExpressibleByNilLiteral` conformance for types that use `nil` for other purposes is discouraged.
 

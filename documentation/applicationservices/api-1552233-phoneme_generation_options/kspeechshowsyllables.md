@@ -13,7 +13,7 @@
 kSpeechShowSyllables = 8
 ```
 
-#### Discussion
+## Discussion
 
 Show all syllable marks in the phonetic output or tune.
 

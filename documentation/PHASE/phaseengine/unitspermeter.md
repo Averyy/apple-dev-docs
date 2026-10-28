@@ -28,7 +28,7 @@ var unitsPerMeter: Double { get set }
 
 - [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Discussion
+## Discussion
 
 Distance-based properties throughout the framework apply the value you supply for this property to their value.
 

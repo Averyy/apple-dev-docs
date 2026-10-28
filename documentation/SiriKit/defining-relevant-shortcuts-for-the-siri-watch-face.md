@@ -8,7 +8,7 @@ Inform Siri when your app’s shortcuts may be useful to the user.
 **Availability**:
 - watchOS 5.0+ - Deprecated in 11.0
 
-#### Overview
+## Overview
 
 The Siri watch face can suggest shortcuts to the user based on a situation, time of day, or location. You determine which actions in your app are pertinent to the user and may be something they’d like to do in the future, such as starting a workout when arriving at a gym. Your app tells Siri about these actions by specifying them as relevant shortcuts.
 
@@ -16,7 +16,7 @@ An iOS app can set relevant shortcuts and display them on the Siri watch face, w
 
 > ❗ **Important**: The Siri Watch Face is available in watchOS 11 and earlier. To make content available in the Smart Stack on Apple Watch using widgets, refer to [WidgetKit](../WidgetKit/WidgetKit.md), [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md), and [App Intents](../AppIntents/AppIntents.md). For more information about migrating your SiriKit code to App Intents, refer to [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/migrating-from-sirikit-intents-to-app-intents.md) and [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md).
 
-##### Create a Relevant Shortcut
+### Create a Relevant Shortcut
 
 To let Siri know about relevant shortcuts for your app, start by creating an [`INIntent`](../Intents/inintent.md) with a system-provided or custom intent, or an [`NSUserActivity`](../Foundation/nsuseractivity.md) object for each action. Next, create an [`INShortcutReference`](../Intents/inshortcutreference.md) object for each intent and user activity. Use the shortcut to create an [`INRelevantShortcutRole`](../Intents/inrelevantshortcutrole.md) object, and set the [`shortcutRole`](../Intents/inrelevantshortcut/shortcutrole.md) to provide a hint to Siri as to the purpose of the shortcut: to perform an action or display information.
 
@@ -31,7 +31,7 @@ if let shortcut = INShortcut(intent: startWorkoutIntent) {
 }
 ```
 
-##### Add Relevance Providers
+### Add Relevance Providers
 
 To give Siri a hint about when to suggest the shortcut to the user, add one or more providers to the [`relevanceProviders`](../Intents/inrelevantshortcut/relevanceproviders.md) property on the relevant shortcut. Relevance providers let you specify parameters such as a particular situation, date, time, and location that indicate the shortcut may be relevant to the user. For example, you can instruct Siri to suggest starting a workout when the user arrives at the gym.
 
@@ -58,7 +58,7 @@ Applying multiple locations relevance providers to a relevant shortcut creates s
 
 > ❗ **Important**:  Your app should donate an intent or user activity as a shortcut each time the user performs an action in your app, even when your app provides the shortcut as a relevant shortcut. The donation helps the system determine when it should suggest the relevant shortcut to the user. For more information about donations, see [Donating Shortcuts](./donating-shortcuts.md).
 
-##### Set Relevant Shortcuts
+### Set Relevant Shortcuts
 
 Continue creating the relevant shortcuts for your app, storing each one in an array. After you’ve created and stored the shortcuts, inform Siri of the relevant shortcuts by using the [`default`](../Intents/inrelevantshortcutstore/default.md) relevant shortcut store to call [`setRelevantShortcuts(_:completionHandler:)`](../Intents/inrelevantshortcutstore/setrelevantshortcuts%28_,completionhandler%29.md), passing in the array of relevant shortcuts.
 
@@ -90,7 +90,7 @@ INRelevantShortcutStore.default.setRelevantShortcuts(relevantShortcuts) { (error
 }
 ```
 
-##### Replace Relevant Shortcuts
+### Replace Relevant Shortcuts
 
 There isn’t a way to add relevant shortcuts to the list already set by your app. Instead, you must replace the list by following the same steps previously mentioned:
 

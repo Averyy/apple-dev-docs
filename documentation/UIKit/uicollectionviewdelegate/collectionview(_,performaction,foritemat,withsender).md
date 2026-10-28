@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, performAction a
 - (void) collectionView:(UICollectionView *) collectionView performAction:(SEL) action forItemAtIndexPath:(NSIndexPath *) indexPath withSender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the user taps an action in the editing menu, the collection view calls this method. Your implementation of this method should do whatever is appropriate for the action. For example, for a copy action, it should extract the relevant item content and write it to the general pasteboard or an application (private) pasteboard.
 

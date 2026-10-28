@@ -19,7 +19,7 @@ func url(forOption option: String) -> URL?
 - (NSURL *) urlForOption:(NSString *) option;
 ```
 
-#### Discussion
+## Discussion
 
 Some command-line options refer to paths that indicate a location in which the module needs access to a file outside of its container. FSKit passes these paths as a URL tagged by the option name.
 

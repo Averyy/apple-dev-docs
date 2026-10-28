@@ -19,7 +19,7 @@ struct DeviceMatchingCriteria
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 Use this class to filter the HID devices on the system using common properties, such as [`HIDUsage`](../hidusage.md). All matching parameters are specified using [`init(primaryUsage:deviceUsages:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:isBuiltIn:extraProperties:)`](./devicematchingcriteria/init%28primaryusage,deviceusages,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,isbuiltin,extraproperties%29.md).
 

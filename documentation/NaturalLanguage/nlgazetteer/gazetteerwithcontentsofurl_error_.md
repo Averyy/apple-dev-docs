@@ -21,7 +21,7 @@ Creates a Natural Language gazetteer from a model created with the Create ML fra
 + (instancetype) gazetteerWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an [`NLGazetteer`](../nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](../../CreateML/mlgazetteer.md) in the `Create ML` framework.
 

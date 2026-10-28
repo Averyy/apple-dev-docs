@@ -23,7 +23,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 All contexts with a given parent context must have different identifiers. No such requirement exists for contexts that have different parent contexts. So, for example, the `chapter-1` and `chapter-2` contexts can each have child contexts with the identifier `section-1`, but `chapter-1` can’t have two contexts with that identifier.
 

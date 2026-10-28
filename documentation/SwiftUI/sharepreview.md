@@ -24,7 +24,7 @@ struct SharePreview<Image, Icon> where Image : Transferable, Icon : Transferable
 
 - [Configure your apps navigation titles](./configure-your-apps-navigation-titles.md)
 
-#### Overview
+## Overview
 
 Use this type when sharing content that the system can’t preview automatically:
 

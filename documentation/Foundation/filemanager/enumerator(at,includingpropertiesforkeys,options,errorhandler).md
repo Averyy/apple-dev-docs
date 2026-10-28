@@ -22,11 +22,11 @@ Returns a directory enumerator object that can be used to perform a deep enumera
 func enumerator(at url: URL, includingPropertiesForKeys keys: [URLResourceKey]?, options mask: FileManager.DirectoryEnumerationOptions = [], errorHandler handler: ((URL, any Error) -> Bool)? = nil) -> FileManager.DirectoryEnumerator?
 ```
 
-#### Return Value
+## Return Value
 
 An directory enumerator object that enumerates the contents of the directory at `url`. If `url` is a filename, the method returns an enumerator object that enumerates no files—the first call to [`nextObject()`](../nsenumerator/nextobject%28%29.md) returns nil.
 
-#### Discussion
+## Discussion
 
 Because the enumeration is deep—that is, it lists the contents of all subdirectories—this enumerator object is useful for performing actions that involve large file-system subtrees. If the method is passed a directory on which another file system is mounted (a mount point), it traverses the mount point. This method does not resolve symbolic links or mount points encountered in the enumeration process, nor does it recurse through them if they point to a directory.
 

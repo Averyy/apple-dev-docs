@@ -25,7 +25,7 @@ var birthLocation: SCNParticleBirthLocation { get set }
 @property (nonatomic) SCNParticleBirthLocation birthLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines locations for spawning new particles relative to the geometry specified in the [`emitterShape`](./emittershape.md) property. This property has no effect if the [`emitterShape`](./emittershape.md) property value is `nil`.
 

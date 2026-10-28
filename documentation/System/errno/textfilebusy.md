@@ -25,7 +25,7 @@ static var textFileBusy: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The new process was a pure procedure (shared text) file, which was already open for writing by another process, or while the pure procedure file was being executed, an open call requested write access.
 

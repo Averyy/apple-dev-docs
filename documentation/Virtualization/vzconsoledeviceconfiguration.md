@@ -19,7 +19,7 @@ class VZConsoleDeviceConfiguration
 @interface VZConsoleDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate VZConsoleDeviceConfiguration directly, instead use one of its subclasses like [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md) instead.
 

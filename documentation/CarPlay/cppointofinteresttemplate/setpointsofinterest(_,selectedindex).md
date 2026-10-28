@@ -21,7 +21,7 @@ func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex:
 - (void) setPointsOfInterest:(NSArray<CPPointOfInterest *> *) pointsOfInterest selectedIndex:(NSUInteger) selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 `pointsOfInterest` can contain a maximum of twelve points of interest because that is the most the template displays.
 

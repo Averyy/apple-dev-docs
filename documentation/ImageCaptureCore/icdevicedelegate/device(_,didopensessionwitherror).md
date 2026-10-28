@@ -24,7 +24,7 @@ func device(_ device: ICDevice, didOpenSessionWithError error: (any Error)?)
 - (void) device:(ICDevice *) device didOpenSessionWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This message completes the process initiated by the message “requestOpenSession” sent to the device object.
 

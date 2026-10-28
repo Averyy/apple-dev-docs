@@ -24,11 +24,11 @@ func value(at index: Int) -> CGFloat
 - (CGFloat) valueAtIndex:(size_t) index;
 ```
 
-#### Return Value
+## Return Value
 
  The value retrieved from the vector or `0` if the position is undefined.
 
-#### Discussion
+## Discussion
 
 The numbering of elements in a vector begins with zero.
 

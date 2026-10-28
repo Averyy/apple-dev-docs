@@ -15,7 +15,7 @@ A Boolean value indicating whether this notification is a push notification that
 readonly attribute Boolean isRecordZoneNotification;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if this notification is a [`CloudKit.RecordZoneNotification`](../cloudkit.recordzonenotification.md) object; otherwise, `false`.
 

@@ -29,7 +29,7 @@ var headingOrientation: CLDeviceOrientation { get set }
 
 - [Getting heading and course information](../getting-heading-and-course-information.md)
 
-#### Discussion
+## Discussion
 
 When computing heading values, the location manager assumes that the top of the device in portrait mode represents due north (0 degrees) by default. For apps that run in other orientations, this property allows you to specify which device orientation you want the location manager to use as the reference point for due north.
 

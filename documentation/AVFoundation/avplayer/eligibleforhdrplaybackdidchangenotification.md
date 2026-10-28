@@ -24,7 +24,7 @@ class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerEligibleForHDRPlaybackDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system may post this notification if a user connects or disconnects a display, or makes other system resource changes.
 

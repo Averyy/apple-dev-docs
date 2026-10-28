@@ -17,7 +17,7 @@ A Boolean value that indicates whether people can change the setting.
 final var isEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `false`, the Home app dims the setting.
 

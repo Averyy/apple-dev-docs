@@ -25,7 +25,7 @@ func filter(using predicate: NSPredicate)
 - (void) filterUsingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Discussion
+## Discussion
 
 The following example illustrates the use of this method.
 

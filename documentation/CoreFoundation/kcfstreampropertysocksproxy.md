@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSProxy: CFString
 extern CFStringRef const kCFStreamPropertySOCKSProxy;
 ```
 
-#### Discussion
+## Discussion
 
 To set a `CFStream` object to use a SOCKS proxy, call [`CFReadStreamSetProperty(_:_:_:)`](./cfreadstreamsetproperty%28_,_,_%29.md) or [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md) with the property name set to `kCFStreamPropertySOCKSProxy` and its value set to a `CFDictionary` object having at minimum a `kCFStreamPropertySOCKSProxyHost` key and a `kCFStreamPropertySOCKSProxyPort` key. For information on these keys, see [CFStream SOCKS Proxy Key Constants](./cfstream-socks-proxy-key-constants.md). SystemConfiguration returns a CFDictionary for SOCKS proxies that is usable without modification.
 

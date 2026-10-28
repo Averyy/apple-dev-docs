@@ -24,7 +24,7 @@ func setRenderResourcesAllocated(_ flag: Bool)
 - (void) setRenderResourcesAllocated:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 In the base class implementation of the [`allocateRenderResources()`](./allocaterenderresources%28%29.md) method, the value of the [`renderResourcesAllocated`](./renderresourcesallocated.md) property is set to [`true`](../../Swift/true.md). If the [`allocateRenderResources()`](./allocaterenderresources%28%29.md) method fails in a subclass, you must use this method to set the value of the [`renderResourcesAllocated`](./renderresourcesallocated.md) property to [`false`](../../Swift/false.md).
 

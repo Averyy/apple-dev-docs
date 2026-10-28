@@ -19,11 +19,11 @@ func performSDPQuery(_ target: Any!, uuids uuidArray: [Any]!) -> IOReturn
 - (IOReturn) performSDPQuery:(id) target uuids:(NSArray *) uuidArray;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the SDP query was successfully started.
 
-#### Discussion
+## Discussion
 
 As a result of this call, a baseband connection will be built to the device (if not already connected). Then, an L2CAP channel will be opened to the SDP server on the device. At that point, a Service Search Attribute request will be issued for each service UUID specified in the UUID array.
 

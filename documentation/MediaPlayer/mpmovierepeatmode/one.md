@@ -21,7 +21,7 @@ case one
 MPMovieRepeatModeOne
 ```
 
-#### Discussion
+## Discussion
 
 The current movie is repeated when it finishes.
 

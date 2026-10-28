@@ -24,7 +24,7 @@ Custom input configuration for YAML snapshot creation.
 struct ParsingOptions
 ```
 
-#### Overview
+## Overview
 
 This struct provides configuration options for parsing YAML data into configuration snapshots, including byte decoding and secrets specification.
 

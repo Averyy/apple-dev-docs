@@ -16,7 +16,7 @@
 kSCSITaskState_DORMANT
 ```
 
-#### Discussion
+## Discussion
 
 The task is dormant.
 

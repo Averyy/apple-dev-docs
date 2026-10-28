@@ -21,7 +21,7 @@ An option to display the pointer bytes as a formatted UUID.
 case uuid
 ```
 
-#### Discussion
+## Discussion
 
 This option prints an easily readable [`uuid_t`](../../kernel/uuid_t.md) type.
 

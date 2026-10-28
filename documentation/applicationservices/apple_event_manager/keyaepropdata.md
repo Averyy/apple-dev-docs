@@ -31,7 +31,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 The constant `keyAESearchText` is available starting in OS X v10.4.
 

@@ -24,7 +24,7 @@ struct SymbolicTraits
 enum UIFontDescriptorSymbolicTraits : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 The lower 16 bits represent the typeface, and the upper 16 bits describe appearance of the font. The font appearance information represented by the upper 16 bits of [`NSFontSymbolicTraits`](../../AppKit/nsfontsymbolictraits.md) can be used for stylistic font matching. [`UIFontDescriptor.Class`](./class.md) constants classify certain stylistic qualities of the font.
 

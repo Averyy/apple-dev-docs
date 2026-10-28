@@ -24,7 +24,7 @@ class MPSGraphFFTDescriptor
 @interface MPSGraphFFTDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with [`fastFourierTransform(_:axes:descriptor:name:)`](./mpsgraph/fastfouriertransform%28_,axes,descriptor,name%29.md), [`realToHermiteanFFT(_:axesTensor:descriptor:name:)`](./mpsgraph/realtohermiteanfft%28_,axestensor,descriptor,name%29.md), and [`HermiteanToRealFFT(_:axesTensor:descriptor:name:)`](./mpsgraph/hermiteantorealfft%28_,axestensor,descriptor,name%29.md) methods.
 

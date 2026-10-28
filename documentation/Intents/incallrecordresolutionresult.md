@@ -24,7 +24,7 @@ class INCallRecordResolutionResult
 @interface INCallRecordResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an `INCallRecordResolutionResult` object when resolving parameters containing an [`INCallRecord`](./incallrecord.md) value. The `resolvedCallRecord` can be different than the original `INCallRecord`. This flexibility allows app extensions to apply business logic constraints.
 

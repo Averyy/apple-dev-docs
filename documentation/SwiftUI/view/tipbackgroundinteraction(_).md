@@ -21,7 +21,7 @@ nonisolated
 func tipBackgroundInteraction(_ interaction: PresentationBackgroundInteraction) -> some View
 ```
 
-##### Discussion
+### Discussion
 
 On many platforms, SwiftUI automatically disables the view behind a popover tip that you present, so that people can’t interact with the backing view until they dismiss the tip. Use this modifier if you want to enable interaction.
 

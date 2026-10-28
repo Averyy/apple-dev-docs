@@ -21,7 +21,7 @@ A type-erased column.
 struct AnyColumn
 ```
 
-#### Overview
+## Overview
 
 `AnyColumn` is a column type that conceals the type of its elements, unlike [`Column`](./column.md), its typed counterpart.
 

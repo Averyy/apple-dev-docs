@@ -5,11 +5,11 @@
 
 Extend your workflows beyond media exchange by enabling a workflow extension to interact with the Final Cut Pro timeline.
 
-#### Overview
+## Overview
 
 When you want to extend your workflows to allow users to interact with the Final Cut Pro timeline, use the interface provided by the Workflow Extension SDK. This interface enables a workflow extension to access a limited set of information about a sequence currently opened in the Final Cut Pro timeline. The APIs implement methods that a workflow extension can call to access proxy instances of the Final Cut Pro timeline objects, such as current sequence or playhead position. By enabling an extension to interact with the Final Cut Pro timeline, you can receive updates to a project opened in the Final Cut Pro timeline and use this information to make necessary edits in a workflow extension project.
 
-##### Access the Host Proxy Object
+### Access the Host Proxy Object
 
 Before you can access the Final Cut Pro timeline proxy objects, you need to get a proxy instance of the host object. The host object is an initial access point for the extension to access the Final Cut Pro timeline proxy objects. The `ProExtensionHost` framework includes the [`ProExtensionHostSingleton()`](../professional_video_applications/proextensionhostsingleton%28%29.md) method, which returns the singleton proxy instance of the host object. Once you have the proxy host object, validate that the object conforms to the [`FCPXHost`](../professional_video_applications/fcpxhost.md) protocol.
 
@@ -27,7 +27,7 @@ let timeline = host.timeline
 FCPXTimeline* timeline = self.host.timeline; 
 ```
 
-##### Observe Changes in the Final Cut Pro Timeline
+### Observe Changes in the Final Cut Pro Timeline
 
 The most common use case for observing changes in the Final Cut Pro timeline is for a workflow that requires an extension to update its interface based on changes in the Final Cut Pro timeline. For example, workflows like the review and approval process might require you to sync the extension timeline with the Final Cut Pro timeline to provide real-time feedback to users about Final Cut Pro timeline state changes.
 
@@ -108,7 +108,7 @@ func playheadTimeChanged() {
 }
 ```
 
-##### Move the Playhead Position
+### Move the Playhead Position
 
 You can support workflows that allow users to locate a specific playhead position in the Final Cut Pro timeline by using the [`movePlayhead(to:)`](../professional_video_applications/fcpxtimeline/moveplayhead%28to%29.md) method. Calling this method in your extension allows you to manage the Final Cut Pro playhead by moving it to a position based on user input. For example, you can use the `movePlayheadTo` method to allow users to locate a specific playhead position in the Final Cut Pro timeline that a reviewer has referred to in a project opened in the workflow extension.
 

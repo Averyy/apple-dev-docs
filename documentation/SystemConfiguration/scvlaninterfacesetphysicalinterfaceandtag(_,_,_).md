@@ -19,7 +19,7 @@ func SCVLANInterfaceSetPhysicalInterfaceAndTag(_ vlan: SCVLANInterface, _ physic
 Boolean SCVLANInterfaceSetPhysicalInterfaceAndTag(SCVLANInterfaceRef vlan, SCNetworkInterfaceRef physical, CFNumberRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

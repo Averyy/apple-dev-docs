@@ -20,11 +20,11 @@ func DADiskGetBSDName(_ disk: DADisk) -> UnsafePointer<CChar>?
 extern const char *DADiskGetBSDName(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 The disk’s BSD device name.
 
-#### Discussion
+## Discussion
 
 The BSD device name can be used with opendev() to open the BSD device.
 

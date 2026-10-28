@@ -25,7 +25,7 @@ func CFBitVectorContainsBit(_ bv: CFBitVector!, _ range: CFRange, _ value: CFBit
 extern Boolean CFBitVectorContainsBit(CFBitVectorRef bv, CFRange range, CFBit value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the specified range of bits in `bv` contains `value`, otherwise `false`.
 

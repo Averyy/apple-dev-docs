@@ -25,7 +25,7 @@ func convert(to outputBuffer: AVAudioPCMBuffer, from inputBuffer: AVAudioPCMBuff
 - (BOOL) convertToBuffer:(AVAudioPCMBuffer *) outputBuffer fromBuffer:(const AVAudioPCMBuffer *) inputBuffer error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The output buffer’s [`frameCapacity`](../avaudiopcmbuffer/framecapacity.md) value needs to be at least at large as the [`frameLength`](../avaudiopcmbuffer/framelength.md) value of the `inputBuffer`.
 

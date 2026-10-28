@@ -25,7 +25,7 @@ class AVMutableCompositionTrack
 @interface AVMutableCompositionTrack : AVCompositionTrack
 ```
 
-#### Overview
+## Overview
 
 Use this object to define constraints for the temporal arrangement of the track segments. If you set the composition’s track segments, you can test whether they meet the constraints by calling the [`validateSegments(_:)`](./avmutablecompositiontrack/validatesegments%28_%29.md) method.
 

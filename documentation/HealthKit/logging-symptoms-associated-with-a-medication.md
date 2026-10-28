@@ -12,11 +12,11 @@ Fetch medications and dose events from the HealthKit store, and create symptom s
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 321: [Meet the HealthKit Medications API](https://developer.apple.com/wwdc25/321/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project:
 

@@ -17,7 +17,7 @@ typedef struct CMMultichannel6Color {
 } CMMultichannel6Color;
 ```
 
-#### Overview
+## Overview
 
 A color expressed in the multichannel color space with 6 channels. The color value for each channel component is expressed as an unsigned byte of type `char`.  
 

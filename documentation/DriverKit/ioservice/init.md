@@ -22,11 +22,11 @@ virtual bool init();
 
 - [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The system calls this method shortly after it instantiates your custom [`IOService`](../ioservice.md) subclass, and before it calls the [`Start`](./start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 

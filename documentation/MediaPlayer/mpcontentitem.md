@@ -24,7 +24,7 @@ class MPContentItem
 @interface MPContentItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object represents a media item such as a song, movie, radio station, or podcast episode. The media player displays the information stored in it.
 

@@ -25,7 +25,7 @@ var sameSitePolicy: HTTPCookieStringPolicy? { get }
 @property (copy, readonly, nullable) NSHTTPCookieStringPolicy sameSitePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Along with the policy values defined by [`HTTPCookieStringPolicy`](../httpcookiestringpolicy.md), this property may also be `nil`. In this case, cross-site requests include the cookie.
 

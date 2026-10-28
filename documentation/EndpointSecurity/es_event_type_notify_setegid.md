@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_SETEGID: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_SETEGID
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`setegid`](./es_events_t/setegid.md), which has the type [`es_event_setegid_t`](./es_event_setegid_t.md).
 

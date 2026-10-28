@@ -19,7 +19,7 @@ A custom view for the background.
 var customView: UIView? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The custom view must have [`translatesAutoresizingMaskIntoConstraints`](../uiview/translatesautoresizingmaskintoconstraints.md) set to [`true`](../../Swift/true.md), but it can use Auto Layout constraints internally for layout of its subviews.
 

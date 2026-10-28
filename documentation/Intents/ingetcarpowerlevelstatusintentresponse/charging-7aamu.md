@@ -27,7 +27,7 @@ A Boolean value that indicates whether the electric vehicle is currently chargin
 @property (atomic, copy, readwrite, nullable) NSNumber * charging;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

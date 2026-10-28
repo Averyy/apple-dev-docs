@@ -30,7 +30,7 @@ func stop(with reason: NEProviderStopReason) async
 
 - [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
-#### Discussion
+## Discussion
 
 An [`NEAppPushProvider`](../neapppushprovider.md) subclass must override this method to perform any necessary tasks when stopping communication with the server.
 

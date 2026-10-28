@@ -21,7 +21,7 @@ The numeric value of the scalar.
 var numericValue: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For scalars that represent a numeric value, `numericValue` is the whole or fractional value. For all other scalars, this property is `nil`.
 

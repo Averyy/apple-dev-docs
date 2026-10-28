@@ -21,7 +21,7 @@ The Markdown name associated with an attributed string key, as provided by a def
 static var markdownName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the value of the [`AttributedStringKey`](../attributedstringkey.md)’s [`name`](../attributedstringkey/name.md).
 

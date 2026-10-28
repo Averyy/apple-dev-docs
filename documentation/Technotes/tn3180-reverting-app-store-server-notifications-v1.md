@@ -5,7 +5,7 @@
 
 Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
 
-#### Overview
+## Overview
 
 When you enable your server to receive App Store Server Notifications, you configure your settings in App Store Connect. You select the version of App Store Server Notifications you want to receive, and provide your server URL, as described in [Enter server URLs for App Store Server Notifications](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/enter-server-urls-for-app-store-server-notifications).
 
@@ -13,7 +13,7 @@ When you enable your server to receive App Store Server Notifications, you confi
 
 In the unusual case that you need to revert from version 2 to version 1 of App Store Server Notifications, use the [Modify an App](../AppStoreConnectAPI/patch-v1-apps-_id_.md) endpoint.
 
-#### Create the app modification request
+## Create the app modification request
 
 The Modify an App endpoint updates app information including the URL and version you use for App Store Notifications. To use this endpoint, create a object that includes the `id`, `type`, and `attributes` properties detailed in [`AppUpdateRequest.Data`](../AppStoreConnectAPI/appupdaterequest/data-data.dictionary.md).
 
@@ -260,7 +260,7 @@ To change your server’s URL for receiving App Store Server Notifications in th
 | `subscriptionStatusUrlForSandbox` | Your server’s [App Store Server Notifications V1](../AppStoreServerNotifications/app-store-server-notifications-v1.md) endpoint URL for the sandbox environment. |
 | `subscriptionStatusUrlVersionForSandbox` | `V1` to indicate you’re using version 1 of App Store Server Notifications in the sandbox environment. |
 
-#### Revision History
+## Revision History
 
 - **2024-11-12** First published.
 

@@ -24,7 +24,7 @@ case cumulative
 HKQuantityAggregationStyleCumulative
 ```
 
-#### Discussion
+## Discussion
 
 Use cumulative types to measure a total value over a given time period. Step count, distance, inhaler usage, nutritional information, and energy burned are all cumulative quantity types.
 

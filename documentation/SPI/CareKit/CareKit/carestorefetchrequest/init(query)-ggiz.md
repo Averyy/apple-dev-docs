@@ -20,7 +20,7 @@ init(query: OCKPatientQuery)
 
 Available when `Result` is `any OCKAnyPatient` and `Query` is `OCKPatientQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

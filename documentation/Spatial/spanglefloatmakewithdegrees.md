@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatMakeWithDegrees(float degrees);
 ```
 
-#### Return Value
+## Return Value
 
 A new angle structure.
 
-#### Discussion
+## Discussion
 
 Returns an angle with the value specified in degrees.
 

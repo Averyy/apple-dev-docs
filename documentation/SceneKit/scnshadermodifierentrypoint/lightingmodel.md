@@ -25,7 +25,7 @@ static let lightingModel: SCNShaderModifierEntryPoint
 extern SCNShaderModifierEntryPoint const SCNShaderModifierEntryPointLightingModel;
 ```
 
-#### Discussion
+## Discussion
 
 Shader modifiers for this entry point may execute in either the vertex or fragment processing stage. If the litPerPixel property of a material affected by the shader modifier is [`true`](../../Swift/true.md), the snippet executes in the fragment processing stage; otherwise the snippet executes in the vertex processing stage.
 

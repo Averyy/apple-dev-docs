@@ -17,7 +17,7 @@ An array of coordinate objects representing the path of the route.
 get path(): Coordinate[][];
 ```
 
-#### Discussion
+## Discussion
 
 An array of coordinates that reflect the complete path of the route, including all of its steps. To render this route on a map, set the [`points`](../polylineoverlay/points.md) property of a [`PolylineOverlay`](../polylineoverlay.md) to this array.
 

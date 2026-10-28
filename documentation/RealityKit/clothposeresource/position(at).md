@@ -17,7 +17,7 @@ Returns the position of the vertex at the given index.
 final func position(at vertexIndex: UInt32) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The position of the specified vertex.
 

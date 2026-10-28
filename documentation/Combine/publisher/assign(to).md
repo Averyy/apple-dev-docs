@@ -23,7 +23,7 @@ func assign(to published: inout Published<Self.Output>.Publisher)
 
 Available when `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 Use this operator when you want to receive elements from a publisher and republish them through a property marked with the `@Published` attribute. The `assign(to:)` operator manages the life cycle of the subscription, canceling the subscription automatically when the [`Published`](../published.md) instance deinitializes. Because of this, the `assign(to:)` operator doesn’t return an [`AnyCancellable`](../anycancellable.md) that you’re responsible for like [`assign(to:on:)`](./assign%28to,on%29.md) does.
 

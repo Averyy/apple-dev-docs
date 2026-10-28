@@ -20,7 +20,7 @@ Reindexes all entities in the app index with the specified characteristics.
 func reindexAllEntities(indexDescription: CSSearchableIndexDescription) async throws
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

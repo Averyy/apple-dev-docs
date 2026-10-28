@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not force your operation code to stop. Instead, it updates the object’s internal flags to reflect the change in state. If the operation has already finished executing, this method has no effect. Canceling an operation that is currently in an operation queue, but not yet executing, makes it possible to remove the operation from the queue sooner than usual.
 

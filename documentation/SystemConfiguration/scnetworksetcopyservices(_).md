@@ -19,7 +19,7 @@ func SCNetworkSetCopyServices(_ set: SCNetworkSet) -> CFArray?
 CFArrayRefSCNetworkSetCopyServices(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 The list of network services associated with the set. You must release the returned value.
 

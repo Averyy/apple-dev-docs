@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateJumpDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, DCLLabel *pInJumpDCLLabel);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -25,7 +25,7 @@ static let caf: AVFileType
 extern AVFileType const AVFileTypeCoreAudioFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.apple.coreaudio-format`. Files of this type have a `.caf` extension.
 

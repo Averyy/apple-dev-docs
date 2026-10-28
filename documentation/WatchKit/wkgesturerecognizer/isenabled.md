@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the gesture recognizer actively tracks touches and reports state changes to its action method. When the value of this property is [`false`](../../Swift/false.md), the gesture recognizer does not track events or call its action method. The default value of this property is [`true`](../../Swift/true.md).
 

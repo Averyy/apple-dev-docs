@@ -24,7 +24,7 @@ var mutability: MTLMutability { get set }
 @property (nonatomic) MTLMutability mutability;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLMutability.default`](../mtlmutability/default.md).
 

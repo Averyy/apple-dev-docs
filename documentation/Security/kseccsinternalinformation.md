@@ -20,7 +20,7 @@ var kSecCSInternalInformation: UInt32 { get }
 kSecCSInternalInformation
 ```
 
-#### Discussion
+## Discussion
 
 This information is for use by Apple, and is subject to change without notice.
 

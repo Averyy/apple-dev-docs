@@ -24,11 +24,11 @@ func animation(forKey key: String) -> CAAnimation?
 - (CAAnimation *) animationForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The animation object matching the identifier, or `nil` if no such animation exists.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve only animation objects already associated with a layer. Modifying any properties of the returned object results in undefined behavior.
 

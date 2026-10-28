@@ -4,7 +4,7 @@
 
 Control background images and media items that play in the background.
 
-#### Overview
+## Overview
 
 Compound background elements are used to display images behind the rest of the template elements and to play audio in the background of a client-server app page.
 

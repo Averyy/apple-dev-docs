@@ -19,7 +19,7 @@ var urlString: String! { get }
 @property (nonatomic, copy, readonly) NSString * URLString;
 ```
 
-#### Discussion
+## Discussion
 
 This URL may differ from the original URL if the page was, for example, redirected to a new location.
 

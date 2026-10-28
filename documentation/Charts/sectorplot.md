@@ -21,7 +21,7 @@ Chart content that represents a collection of data using a sector of a pie or do
 struct SectorPlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `SectorPlot` when you want to visualize data in the same way as with [`SectorMark`](./sectormark.md), but you want to visualize an entire data collection with a single plot.
 

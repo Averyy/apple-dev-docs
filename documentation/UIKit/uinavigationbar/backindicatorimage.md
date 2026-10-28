@@ -22,7 +22,7 @@ var backIndicatorImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * backIndicatorImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to customize the back-indicator image, you must also set [`backIndicatorTransitionMaskImage`](./backindicatortransitionmaskimage.md).
 

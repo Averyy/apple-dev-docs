@@ -24,11 +24,11 @@ func requestAVAsset(forVideo asset: PHAsset, options: PHVideoRequestOptions?, re
 - (PHImageRequestID) requestAVAssetForVideo:(PHAsset *) asset options:(PHVideoRequestOptions *) options resultHandler:(void (^)(AVAsset *asset, AVAudioMix *audioMix, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos downloads the video data (if necessary) and creates AVFoundation objects. It then calls your `resultHandler` block to provide the requested video.
 

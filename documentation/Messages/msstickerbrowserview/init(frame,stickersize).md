@@ -21,7 +21,7 @@ init(frame: CGRect, stickerSize: MSStickerSize)
 - (instancetype) initWithFrame:(CGRect) frame stickerSize:(MSStickerSize) stickerSize;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sticker browser view.
 

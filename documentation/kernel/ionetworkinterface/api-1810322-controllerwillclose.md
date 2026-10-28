@@ -12,7 +12,7 @@ virtual void controllerWillClose(
  IONetworkController *controller );
 ```
 
-#### Overview
+## Overview
 
 This method is called by `handleClose()` after receiving a close from the last interface client, and just before the controller is closed. Subclasses can override this method to perform any cleanup action before the controller is closed. This method is called with the arbitration lock held, hence issuing I/O to the controller should be avoided to eliminate the possibility of a deadlock.
 

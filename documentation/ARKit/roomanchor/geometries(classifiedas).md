@@ -15,7 +15,7 @@ Get disjoint mesh geometries of a given surface classification.
 func geometries(classifiedAs classification: SurfaceClassification) -> [MeshAnchor.Geometry]
 ```
 
-#### Return Value
+## Return Value
 
 The array of mesh geometries.
 

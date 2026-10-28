@@ -20,7 +20,7 @@ func characterIndex(for point: NSPoint) -> Int
 - (NSUInteger) characterIndexForPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The character index, measured from the start of the receiver’s text storage, of the character containing the given point. Returns `NSNotFound` if the cursor is not within a character’s bounding rectangle.
 

@@ -34,7 +34,7 @@ final class LanguageModelSession
 - [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
 - [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
 
-#### Overview
+## Overview
 
 A session is a single context that you use to generate content with, and maintains state between requests. You can reuse the existing instance or create a new one each time you call the model. When you create a session you can provide instructions that tell the model what its role is and provide guidance on how to respond.
 

@@ -21,7 +21,7 @@ The two-digit representation of a standalone month.
 static var twoDigits: Date.FormatStyle.Symbol.StandaloneMonth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style uses representations like `01` for January and `10` for October.
 

@@ -20,7 +20,7 @@ static var confirmAuthorization: ASPickerDisplayItem.SetupOptions { get }
 ASPickerDisplayItemSetupConfirmAuthorization
 ```
 
-#### Discussion
+## Discussion
 
 If the accessory supports [`bluetoothPairingLE`](../../asaccessory/supportoptions/bluetoothpairingle.md), then the app needs to start pairing by accessing a protected GATT characteristic.
 

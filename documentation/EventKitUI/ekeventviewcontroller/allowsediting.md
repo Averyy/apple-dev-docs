@@ -22,7 +22,7 @@ var allowsEditing: Bool { get set }
 @property (nonatomic) BOOL allowsEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md) (the default), the event is not editable. If [`true`](../../Swift/true.md), an Edit button appears, allowing the user to change properties of the event. This property applies only to events in calendars created by the user. For example, it doesn’t apply to invitations sent by another user.
 

@@ -24,7 +24,7 @@ var usesApplicationAudioSession: Bool { get set }
 @property (nonatomic, assign) BOOL usesApplicationAudioSession;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to [`false`](../../Swift/false.md), the system creates a separate audio session to automatically manage speech, interruptions, and mixing and ducking the speech with other audio sources.
 

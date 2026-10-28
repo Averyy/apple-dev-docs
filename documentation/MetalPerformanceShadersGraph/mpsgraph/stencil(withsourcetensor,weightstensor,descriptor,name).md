@@ -24,11 +24,11 @@ func stencil(withSourceTensor source: MPSGraphTensor, weightsTensor weights: MPS
 - (MPSGraphTensor *) stencilWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphStencilOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Performs a weighted reduction operation (See [`reductionMode`](../mpsgraphstencilopdescriptor/reductionmode.md)) on the last 4 dimensions of the `source` over the window determined by `weights`, according to the value defined in `descriptor`.
 

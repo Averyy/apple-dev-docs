@@ -17,7 +17,7 @@ var supportsSaveRestore: Bool { get set }
 @property (readwrite) BOOL supportsSaveRestore;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the device supports save/restore.
 

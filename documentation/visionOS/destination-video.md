@@ -15,7 +15,7 @@ Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Destination Video is a multiplatform video-playback [SwiftUI](../SwiftUI/SwiftUI.md) app for iOS, iPadOS, macOS, tvOS, and visionOS. People get a familiar media-browsing experience navigating the libraryʼs content and playing videos they find interesting.
 
@@ -25,7 +25,7 @@ In visionOS, the sample demonstrates how to play video within an immersive envir
 
 [Video: A video of the Destination Video player in an immersive space in visionOS.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/Destination-video-hero.mp4)
 
-##### Implement tab navigation
+### Implement tab navigation
 
 Destination Video uses tab navigation with the [`sidebarAdaptable`](../SwiftUI/tabviewstyle/sidebaradaptable.md) style, which optimizes the content browsing experience for each platform. In iPadOS, the [`TabView`](../SwiftUI/tabview.md) with `sidebarAdaptable` style allows people to toggle between the sidebar and tab bar. The full-screen browsing experience of a tab bar brings content to the forefront while the sidebar allows for easy access to deeper navigation hierarchy.
 
@@ -75,7 +75,7 @@ You can also enable customization by adding the [`tabViewCustomization(_:)`](../
 
 For more information, see [Enhancing your app’s content with tab navigation](../SwiftUI/enhancing-your-app-content-with-tab-navigation.md).
 
-##### Customize windows in macOS
+### Customize windows in macOS
 
 In macOS, the app supports multiple windows including a main window that shows the video collections and a separate video player window. You can customize the appearance and function of each window to create a more engaging experience.
 
@@ -94,7 +94,7 @@ ContentView()
 
 Other window customizations in Destination Video include extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior. For more information, see [Customizing window styles and state-restoration behavior in macOS](../SwiftUI/customizing-window-styles-and-state-restoration-behavior-in-macos.md).
 
-##### Display horizontally scrollable cards in tvOS
+### Display horizontally scrollable cards in tvOS
 
 Destination Video presents video cards in a horizontally scrollable list in the Watch Now tab. When a person taps on a video card, the app navigates to a view that shows detailed information about the video. In tvOS, each card implements the [`card`](../SwiftUI/primitivebuttonstyle/card.md) button style. When a person hovers on a card, it fully scales and lifts up.
 
@@ -129,7 +129,7 @@ var buttonStyle: some PrimitiveButtonStyle {
 
 For more information about displaying content in tvOS, see [Creating a tvOS media catalog app in SwiftUI](../SwiftUI/creating-a-tvos-media-catalog-app-in-swiftui.md).
 
-##### Present an immersive space
+### Present an immersive space
 
 Building video playback apps for visionOS provides new opportunities to enhance the viewing experience beyond the bounds of the player window. To add a greater level of immersion, this sample presents an immersive space that displays a scene around a person as they watch the video.
 
@@ -161,7 +161,7 @@ ImmersiveSpace(id: ImmersiveEnvironmentView.id) {
 
 The [`ImmersiveSpace`](../SwiftUI/immersivespace.md) presents an instance of `ImmersiveEnvironmentView`, which maps a texture to the inside of a sphere that it displays around a person. The app presents it using the `.progressive` immersion style, which lets people change the amount of immersion they experience by turning the Digital Crown on the device.
 
-##### Play video in a full-window player
+### Play video in a full-window player
 
 One of the most exciting features of visionOS is its ability to play 3D video along with Spatial Audio, which adds a deeper level of immersion to the viewing experience. Playing 3D content in your app requires that you display [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) full window. When you present the player this way, the system automatically docks it into the ideal viewing position, and presents streamlined playback controls that keep the person’s focus on the content.
 
@@ -224,7 +224,7 @@ To dismiss the full-window player in visionOS, people tap the Back button in the
 
 When the delegate receives this call, it clears the media from the player model and resets the presentation state back to its default value, which results in the Destination Video app redisplaying the `DestinationTabs` view.
 
-##### Configure the Spatial Audio experience
+### Configure the Spatial Audio experience
 
 Media playback apps require common configuration of their capabilities and audio session. In addition to performing the steps outlined in [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md), Destination Video also adopts new [`AVAudioSession`](../AVFAudio/avaudiosession.md) API to customize a person’s Spatial Audio experience.
 
@@ -251,7 +251,7 @@ private func configureAudioExperience(for presentation: Presentation) {
 }
 ```
 
-##### Customize an environment using RealityKit and Reality Composer Pro
+### Customize an environment using RealityKit and Reality Composer Pro
 
 In visionOS, Destination Video provides a custom environment, called Studio.
 
@@ -276,7 +276,7 @@ PlayerView()
 
 For more information, see [Building an immersive media viewing experience](./building-an-immersive-media-viewing-experience.md) and [Enabling video reflections in an immersive environment](./enabling-video-reflections-in-an-immersive-environment.md).
 
-##### Provide a shared viewing experience
+### Provide a shared viewing experience
 
 One of the best ways to enhance your app’s playback experience is to make that experience shareable with others. You can use the [AVFoundation](../AVFoundation/AVFoundation.md) and the [Group Activities](../GroupActivities/GroupActivities.md) frameworks to build [SharePlay](https://developer.apple.com/shareplay/) experiences that bring people together even when they can’t be in the same location.
 
@@ -300,9 +300,9 @@ private var liveSession: WatchingSession? {
 
 With the player configured to use the group session, when the app loads new videos, they become eligible to share with people in the FaceTime call.
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [BOT-anist](./bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
@@ -313,7 +313,7 @@ With the player configured to use the group session, when the app loads new vide
 - [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 
-###### Related articles
+#### Related articles
 
 - [Customizing window styles and state-restoration behavior in macOS](../SwiftUI/customizing-window-styles-and-state-restoration-behavior-in-macos.md)
   Configure how your app’s windows look and function in macOS to provide an engaging and more coherent experience.
@@ -335,7 +335,7 @@ With the player configured to use the group session, when the app loads new vide
 - [Trimming and exporting media in visionOS](../AVKit/trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 
-###### Related videos
+#### Related videos
 
 - [Elevate your tab and sidebar experience in iPadOS](https://developer.apple.com/videos/play/wwdc2024/10147)
   iPadOS 18 introduces a new navigation system that gives people the flexibility to choose between using a tab bar or sidebar. The newly redesigned tab bar provides more space for content and other functionality. Learn how to use SwiftUI and UIKit to enable customization features – like adding, removing and reordering tabs – to enable a more personal touch in your app.

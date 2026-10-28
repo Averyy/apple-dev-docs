@@ -25,7 +25,7 @@ struct EncodingConversionOptions
 enum NSStringEncodingConversionOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are available in OS X v10.4; they are, however, differently named:
 

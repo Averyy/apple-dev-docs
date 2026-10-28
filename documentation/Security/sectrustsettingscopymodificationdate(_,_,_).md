@@ -20,7 +20,7 @@ func SecTrustSettingsCopyModificationDate(_ certRef: SecCertificate, _ domain: S
 OSStatus SecTrustSettingsCopyModificationDate(SecCertificateRef certRef, SecTrustSettingsDomain domain, CFDateRef*modificationDate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecItemNotFound`](./errsecitemnotfound.md) if no trust settings exist for the specified certificate and domain.
 

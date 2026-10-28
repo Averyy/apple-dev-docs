@@ -19,7 +19,7 @@ var sortDescriptors: [NSSortDescriptor] { get set }
 @property (copy) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

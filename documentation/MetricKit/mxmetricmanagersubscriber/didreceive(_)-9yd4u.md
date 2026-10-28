@@ -25,7 +25,7 @@ optional func didReceive(_ payloads: [MXDiagnosticPayload])
 - (void) didReceiveDiagnosticPayloads:(NSArray<MXDiagnosticPayload *> *) payloads;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method at most once per day. It’s safe to process the payload on a separate thread.
 

@@ -21,7 +21,7 @@ The preferred alignment of the view within a scroll view’s visible region when
 var scrollTargetAnchor: UnitPoint? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this API in conjunction with a `ScrollViewProxy/scrollTo(_:anchor)` or when updating the binding provided to a [`scrollPosition(id:anchor:)`](../view/scrollposition%28id,anchor%29.md).
 

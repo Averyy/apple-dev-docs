@@ -25,7 +25,7 @@ func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) scheduleInRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](./init%28request,delegate,startimmediately%29.md) method and provide [`false`](../../Swift/false.md) for the `startImmediately` parameter, you can schedule the connection on a different run loop or mode before starting it with the [`start()`](./start%28%29.md) method. You can schedule a connection on multiple run loops and modes, or on the same run loop in multiple modes.
 

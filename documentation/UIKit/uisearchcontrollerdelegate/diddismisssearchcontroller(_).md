@@ -23,7 +23,7 @@ optional func didDismissSearchController(_ searchController: UISearchController)
 - (void) didDismissSearchController:(UISearchController *) searchController;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls this method when it automatically dismisses the search controller. The system doesn’t call this method if you explicitly dismiss the search controller.
 

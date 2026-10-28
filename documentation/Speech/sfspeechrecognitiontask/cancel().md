@@ -23,7 +23,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 You can cancel recognition tasks for both prerecorded and live audio input. For example, you might cancel a task in response to a user action or because the recording was interrupted.
 

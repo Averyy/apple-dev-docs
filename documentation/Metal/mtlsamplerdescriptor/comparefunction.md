@@ -24,7 +24,7 @@ var compareFunction: MTLCompareFunction { get set }
 @property (nonatomic) MTLCompareFunction compareFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLCompareFunction.never`](../mtlcomparefunction/never.md).
 

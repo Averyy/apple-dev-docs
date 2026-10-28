@@ -23,7 +23,7 @@ A tab view style that displays a tab bar when possible.
 
 Available when `Self` is `TabBarOnlyTabViewStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a tab view, or to a view that contains tab views, use the [`tabViewStyle(_:)`](../view/tabviewstyle%28_%29.md) modifier.
 

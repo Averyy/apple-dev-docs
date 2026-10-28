@@ -13,7 +13,7 @@ An extension other apps use to access files and folders managed by your app and 
 - macOS 10.15+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 If your app focuses on providing and syncing user documents from remote storage, you can implement a File Provider extension to give users access to those documents when they’re using other apps. If you just need to share local documents, see [Share files locally](./FileProvider.md#Share-files-locally) below.
 
@@ -28,7 +28,7 @@ The replicated extension takes responsibility for monitoring and managing the lo
 
 The nonreplicated extension manages a local copy of the extension’s content, including creating and managing placeholders for remote files. It also syncs the content with your remote storage. For more information, see [Nonreplicated File Provider extension](./nonreplicated-file-provider-extension.md).
 
-##### Share files locally
+### Share files locally
 
 You don’t need a File Provider extension to allow access to documents that your app stores locally.
 

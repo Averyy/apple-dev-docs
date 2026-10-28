@@ -19,7 +19,7 @@ class TVMediaItemContentView
 @interface TVMediaItemContentView : UIView
 ```
 
-#### Overview
+## Overview
 
 The following code illustrates how to update the configuration for a wide media item:
 

@@ -20,7 +20,7 @@ func settingsDescription() -> String!
 - (NSString *) settingsDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A human-readable string describing the current encoder settings.
 

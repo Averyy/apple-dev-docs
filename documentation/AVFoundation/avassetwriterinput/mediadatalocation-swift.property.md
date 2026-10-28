@@ -24,7 +24,7 @@ var mediaDataLocation: AVAssetWriterInput.MediaDataLocation { get set }
 @property (nonatomic, copy) AVAssetWriterInputMediaDataLocation mediaDataLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optimize tracks that contain a small amount of data that you need all at once, such as chapter tracks. Setting the value to [`beforeMainMediaDataNotInterleaved`](./mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md) causes the asset writer to try to write the media data for this track before interleaved inputs. For file types that support preloading media data, such as QuickTime files, setting this value also writes an indicator to the file to preload its media data.
 

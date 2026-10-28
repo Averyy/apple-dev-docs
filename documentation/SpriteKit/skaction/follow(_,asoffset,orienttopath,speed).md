@@ -25,11 +25,11 @@ class func follow(_ path: CGPath, asOffset offset: Bool, orientToPath orient: Bo
 + (SKAction *) followPath:(CGPathRef) path asOffset:(BOOL) offset orientToPath:(BOOL) orient speed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`position`](../sknode/position.md) and [`zRotation`](../sknode/zrotation.md) properties are animated along the provided path. The duration of the action is determined by the length of the path and the speed of the node.
 

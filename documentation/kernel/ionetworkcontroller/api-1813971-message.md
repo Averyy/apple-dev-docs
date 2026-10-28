@@ -14,11 +14,11 @@ virtual IOReturn message(
  void *argument );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code defined by the message type.
 
-#### Overview
+## Overview
 
 Handles the `kIOMessageDeviceSignaledWakeup` message from a provider identifying the IONetworkController as the wakeup source.
 

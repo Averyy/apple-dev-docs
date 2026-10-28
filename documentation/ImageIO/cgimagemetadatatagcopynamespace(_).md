@@ -25,11 +25,11 @@ func CGImageMetadataTagCopyNamespace(_ tag: CGImageMetadataTag) -> CFString?
 extern CFStringRefCGImageMetadataTagCopyNamespace(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string that contains the tag’s namespace. For a list of public namespaces, see [XMP Namespaces and Prefixes](./xmp-namespaces-and-prefixes.md). You are responsible for releasing this string.
 
-#### Discussion
+## Discussion
 
 By convention, namespaces end with either a `/` or `#` character. For example, EXIF metadata uses the namespace `http://ns.adobe.com/exif/1.0/`. Custom namespaces must be a valid XML namespace.
 

@@ -23,7 +23,7 @@ func hasPermission(_ permission: WKWebExtension.Permission, in tab: (any WKWebEx
 - (BOOL) hasPermission:(WKWebExtensionPermission) permission inTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 Permissions can be granted on a per-tab basis. When the tab is known, permission checks should always use this method.
 

@@ -24,11 +24,11 @@ typealias JSObjectCallAsConstructorCallback = (JSContextRef?, JSObjectRef?, Int,
 typedef struct OpaqueJSValue *(*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, unsigned long, const struct OpaqueJSValue *const *, const struct OpaqueJSValue **) JSObjectCallAsConstructorCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is the constructor’s return value.
 
-#### Discussion
+## Discussion
 
 If you name your function `CallAsConstructor`, you declare it like this:
 

@@ -24,7 +24,7 @@ func addTrackAssociation(withTrackOf input: AVAssetWriterInput, type trackAssoci
 - (void) addTrackAssociationWithTrackOfInput:(AVAssetWriterInput *) input type:(NSString *) trackAssociationType;
 ```
 
-#### Discussion
+## Discussion
 
 The system raises an error if the association type requires tracks of a media type that doesn’t match the input’s type, or if the output file type doesn’t support track associations.
 

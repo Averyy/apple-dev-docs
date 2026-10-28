@@ -25,7 +25,7 @@ var resolvedLanguage: Locale.Language? { get set }
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 The preferred languages set in Settings or System Settings inform the choice of resolved language, respecting any language that your app sets manually by setting this property. This property may be `nil` if no localized asset packs are available. You can manually set this property to `nil` to revert to the system-wide language preference. If a person using the device recently changed their preferred language, then this property’s value might be temporarily out of sync with the set of asset packs that are available locally. Setting the language doesn’t immediately download or remove any asset packs; call [`reconcilePreferredLanguages()`](./reconcilepreferredlanguages%28%29.md) to reconcile the set of downloaded asset packs with the new configuration.
 

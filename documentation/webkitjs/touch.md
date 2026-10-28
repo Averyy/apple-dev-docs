@@ -16,7 +16,7 @@ A [`Touch`](./touch.md) object represents a single user touch on the screen of t
 interface Touch
 ```
 
-#### Overview
+## Overview
 
 Starting in iOS 9, on devices that support 3D Touch, you can get the [`force`](./touch/api-1630754-force.md) property of the [`Touch`](./touch.md) class to obtain a value representing the force at which the user is pressing on the screen. For more information about 3D Touch, see *Adopting 3D Touch on iPhone*.
 

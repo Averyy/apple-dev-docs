@@ -23,7 +23,7 @@ class func runningApplications(withBundleIdentifier bundleIdentifier: String) ->
 
 - [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Return Value
+## Return Value
 
 An array of `NSRunningApplications`, or an empty array if no applications match the bundle identifier.
 

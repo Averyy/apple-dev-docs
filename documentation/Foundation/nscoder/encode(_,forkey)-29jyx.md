@@ -24,7 +24,7 @@ func encode(_ transform: CGAffineTransform, forKey key: String)
 - (void) encodeCGAffineTransform:(CGAffineTransform) transform forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGAffineTransform(forKey:)`](./decodecgaffinetransform%28forkey%29.md) method to retrieve the data.
 

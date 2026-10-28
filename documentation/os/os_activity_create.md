@@ -25,11 +25,11 @@ Creates a new activity object.
 
 - [Collecting Log Messages in Activities](./collecting-log-messages-in-activities.md)
 
-#### Return Value
+## Return Value
 
 An [`os_activity_t`](./os_activity_t.md) object for the new activity.
 
-#### Discussion
+## Discussion
 
 To execute the new activity, call the [`os_activity_apply`](./os_activity_apply.md) function.
 

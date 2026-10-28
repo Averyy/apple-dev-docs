@@ -19,7 +19,7 @@ class func setToolbarItemsNeedUpdate()
 + (void) setToolbarItemsNeedUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`validateToolbarItem(in:validationHandler:)`](../sfsafariextensionhandling/validatetoolbaritem%28in,validationhandler%29.md) method on the extension’s principal object for each open window. See [`SFSafariExtensionHandling`](../sfsafariextensionhandling.md).
 

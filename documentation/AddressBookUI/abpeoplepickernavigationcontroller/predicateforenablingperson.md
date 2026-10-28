@@ -24,7 +24,7 @@ var predicateForEnablingPerson: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * predicateForEnablingPerson;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, all persons are selectable.
 

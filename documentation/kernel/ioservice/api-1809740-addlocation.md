@@ -12,11 +12,11 @@ static OSDictionary * addLocation(
  OSDictionary *table );
 ```
 
-#### Return Value
+## Return Value
 
 The location matching dictionary created is returned on success, or zero on failure.
 
-#### Overview
+## Overview
 
 This function creates matching properties that specify the location of a IOService object, as an embedded matching dictionary. This matching will be successful on an IOService object that attached to an IOService object which matches this location matching dictionary.
 

@@ -24,7 +24,7 @@ func present(from item: UIBarButtonItem, permittedArrowDirections arrowDirection
 - (void) presentPopoverFromBarButtonItem:(UIBarButtonItem *) item permittedArrowDirections:(UIPopoverArrowDirection) arrowDirections animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When presenting the popover, this method adds the toolbar that owns the button to the popover’s list of passthrough views. Thus, taps in the toolbar result in the action methods of the corresponding toolbar items being called. If you want the popover to be dismissed when a different toolbar item is tapped, you must implement that behavior in your action handler methods.
 

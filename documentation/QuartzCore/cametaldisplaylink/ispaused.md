@@ -24,7 +24,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 You can instruct the display link to stop sending notifications to the delegate by setting the property to [`true`](../../Swift/true.md). The property defaults to [`false`](../../Swift/false.md).
 

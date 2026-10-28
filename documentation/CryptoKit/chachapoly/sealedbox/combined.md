@@ -21,7 +21,7 @@ A combined element composed of the tag, the nonce, and the ciphertext.
 let combined: Data
 ```
 
-#### Discussion
+## Discussion
 
 The data layout of the combined representation is: nonce, ciphertext, then tag.
 

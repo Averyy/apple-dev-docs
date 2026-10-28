@@ -29,7 +29,7 @@ extern CFStringRef const kSecImportItemCertChain;
 
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type `CFArrayRef`. The array consists of `SecCertificateRef` objects for all the certificates in the PKCS #12 blob. This list might differ from that in the trust management object if there is more than one identity in the blob or if the blob contains extra certificates (for example, an intermediate certificate that is not yet valid but might be needed to establish validity in the near future).
 

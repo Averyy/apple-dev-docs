@@ -24,7 +24,7 @@ let HMCharacteristicTypeWaterLevel: String
 extern NSString * const HMCharacteristicTypeWaterLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a percentage of the maximum amount of water that the accessory, like a humidifier, can hold.
 

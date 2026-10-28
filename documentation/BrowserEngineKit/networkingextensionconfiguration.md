@@ -18,7 +18,7 @@ An opaque configuration structure for a networking extension.
 @preconcurrency struct NetworkingExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 See [`NetworkingExtension`](./networkingextension.md).
 

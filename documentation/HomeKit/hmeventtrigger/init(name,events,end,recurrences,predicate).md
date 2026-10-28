@@ -22,7 +22,7 @@ init(name: String, events: [HMEvent], end endEvents: [HMEvent]?, recurrences: [D
 - (instancetype) initWithName:(NSString *) name events:(NSArray<HMEvent *> *) events endEvents:(NSArray<HMEvent *> *) endEvents recurrences:(NSArray<NSDateComponents *> *) recurrences predicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized event trigger.
 

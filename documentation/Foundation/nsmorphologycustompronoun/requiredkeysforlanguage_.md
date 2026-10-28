@@ -21,11 +21,11 @@ Returns a collection of the custom pronoun keys required by this language.
 + (NSArray<NSString *> *) requiredKeysForLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The keys required for the given language.
 
-#### Discussion
+## Discussion
 
 If any of the required keys for a given language are unset, calling [`setCustomPronoun:forLanguage:error:`](../nsmorphology/setcustompronoun_forlanguage_error_.md) for that language with an incomplete [`NSMorphologyCustomPronoun`](../nsmorphologycustompronoun.md) results in an error.
 

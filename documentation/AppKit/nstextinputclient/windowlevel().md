@@ -19,11 +19,11 @@ optional func windowLevel() -> Int
 - (NSInteger) windowLevel;
 ```
 
-#### Return Value
+## Return Value
 
 The window level of the receiver.
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. A class adopting `NSTextInputClient` can implement this interface to specify its window level if it is higher than `NSFloatingWindowLevel`.
 

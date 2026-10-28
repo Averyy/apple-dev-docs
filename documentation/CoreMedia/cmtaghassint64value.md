@@ -21,11 +21,11 @@ Whether a given tag contains a value for a signed 64-bit integer.
 extern Boolean CMTagHasSInt64Value(CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the tag represents an integer.
 
-#### Discussion
+## Discussion
 
 Prefer using this method over directly comparing a tag’s data type to [`kCMTagDataType_SInt64`](./cmtagdatatype/kcmtagdatatype_sint64.md).
 

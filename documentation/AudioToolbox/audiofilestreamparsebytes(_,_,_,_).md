@@ -24,11 +24,11 @@ func AudioFileStreamParseBytes(_ inAudioFileStream: AudioFileStreamID, _ inDataB
 extern OSStatus AudioFileStreamParseBytes(AudioFileStreamID inAudioFileStream, UInt32 inDataByteSize, const void *inData, AudioFileStreamParseFlags inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Streamed audio file data is expected to be passed to the parser in the same sequence in which it appears in the audio file, from the beginning of the audio file stream, without gaps. However, if you called the [`AudioFileStreamSeek(_:_:_:_:)`](./audiofilestreamseek%28_,_,_,_%29.md) function, the parser assumes that the data passed to the [`AudioFileStreamParseBytes(_:_:_:_:)`](./audiofilestreamparsebytes%28_,_,_,_%29.md) function starts from the byte offset returned by the [`AudioFileStreamSeek(_:_:_:_:)`](./audiofilestreamseek%28_,_,_,_%29.md) function.
 

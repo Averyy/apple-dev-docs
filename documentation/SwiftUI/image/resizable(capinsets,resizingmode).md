@@ -25,7 +25,7 @@ func resizable(capInsets: EdgeInsets = EdgeInsets(), resizingMode: Image.Resizin
 
 - [Fitting images into available space](../fitting-images-into-available-space.md)
 
-#### Return Value
+## Return Value
 
 An image, with the new resizing behavior set.
 

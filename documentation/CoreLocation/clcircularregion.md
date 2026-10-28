@@ -26,7 +26,7 @@ class CLCircularRegion
 @interface CLCircularRegion : CLRegion
 ```
 
-#### Overview
+## Overview
 
 The [`CLCircularRegion`](./clcircularregion.md) class defines the location and boundaries for a circular geographic region. You can use instances of this class to define geofences for a specific location. The crossing of a geofence’s boundary causes the location manager to notify its delegate.
 

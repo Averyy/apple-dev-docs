@@ -40,7 +40,7 @@ var backgroundColor: NSColor { get set }
 @property (nonatomic, strong) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 A view’s background is the area displayed to either side of a PDF document’s pages. The background also appears between pages when page breaks are enabled. The default color is a 50% gray.
 

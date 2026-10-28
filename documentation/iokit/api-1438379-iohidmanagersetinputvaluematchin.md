@@ -16,7 +16,7 @@ Sets multiple matching criteria for input values received via IOHIDManagerRegist
 void IOHIDManagerSetInputValueMatchingMultiple(IOHIDManagerRef manager, CFArrayRef multiple);
 ```
 
-#### Discussion
+## Discussion
 
 Matching keys are prefixed by kIOHIDElement and declared in <IOKit/hid/IOHIDKeys.h>. This method is useful if interested in multiple, specific elements .
 

@@ -18,7 +18,7 @@ Specifies a custom presentation for the currently selected feature.
 @preconcurrency func mapFeatureSelectionContent(@MapContentBuilder content: @escaping (MapFeature) -> some MapContent) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The supported presentation options are `Annotation`, and `Marker`. Other types of map content will be ignored and handled as though no content was returned.
 

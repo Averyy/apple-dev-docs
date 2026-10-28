@@ -17,7 +17,7 @@ Disable automatic face occlusion.
 static let disableFaceOcclusions: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 By default, [ARKit](../../../ARKit/ARKit.md) detects people and hides virtual objects behind their faces. Add the [`disableFaceOcclusions`](./disablefaceocclusions.md) option to the AR view’s [`renderOptions`](../renderoptions-swift.property.md) to disable this feature.
 

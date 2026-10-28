@@ -20,7 +20,7 @@ The color of the background behind the text.
 extern NSAttributedStringKey const NSBackgroundColorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is a [`UIColor`](./uicolor.md) object. Use this attribute to specify the color of the background area behind the text. If you do not specify this attribute, no background color is drawn.
 

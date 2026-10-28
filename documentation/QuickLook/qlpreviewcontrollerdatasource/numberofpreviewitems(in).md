@@ -23,11 +23,11 @@ func numberOfPreviewItems(in controller: QLPreviewController) -> Int
 - (NSInteger) numberOfPreviewItemsInPreviewController:(QLPreviewController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items that the Quick Look preview controller should include in its preview navigation list.
 
-#### Discussion
+## Discussion
 
 The system invokes this method to inform the preview controller of the number of preview items available.
 

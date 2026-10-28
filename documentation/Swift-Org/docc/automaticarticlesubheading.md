@@ -20,7 +20,7 @@ A directive that modifies Swift-DocC’s default behavior for automatic subheadi
 @AutomaticArticleSubheading(_ enabledness: Enabledness)
 ```
 
-#### Overview
+## Overview
 
 By default, articles receive a second-level “Overview” heading unless the author explicitly writes some other H2 heading below the abstract. This allows for opting out of that behavior.
 

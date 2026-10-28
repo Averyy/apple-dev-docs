@@ -21,7 +21,7 @@ func toCFAbsoluteTime() -> CFAbsoluteTime
 extern CFAbsoluteTime SRAbsoluteTimeToCFAbsoluteTime(SRAbsoluteTime sr);
 ```
 
-#### Return Value
+## Return Value
 
 The core-foundation absolute time.
 

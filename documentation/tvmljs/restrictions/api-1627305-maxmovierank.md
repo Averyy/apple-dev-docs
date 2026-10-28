@@ -15,7 +15,7 @@ The maximum allowed ranking for a movie.
 readonly attribute int maxMovieRank;
 ```
 
-#### Discussion
+## Discussion
 
 The rank for a movie is an integer ranging from `0` to `1000`.
 

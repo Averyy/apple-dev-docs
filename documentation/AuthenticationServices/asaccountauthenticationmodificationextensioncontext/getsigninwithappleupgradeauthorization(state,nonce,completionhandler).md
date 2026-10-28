@@ -30,7 +30,7 @@ func requestSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?) 
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 Calling this method causes the system to present the Sign in with Apple upgrade interface, dismissing any currently presented interface.
 

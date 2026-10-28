@@ -30,7 +30,7 @@ func matchmakerViewController(_ viewController: GKMatchmakerViewController, didF
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 This method needs to dismiss the view controller.
 

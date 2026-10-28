@@ -24,7 +24,7 @@ var timingCurveType: UITimingCurveType { get }
 @property (nonatomic, readonly) UITimingCurveType timingCurveType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the type of timing information your timing curve object supplies. The value of this property determines whether the view property animator uses the object in the [`cubicTimingParameters`](./cubictimingparameters.md) or [`springTimingParameters`](./springtimingparameters.md) property for timing information.
 

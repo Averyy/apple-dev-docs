@@ -18,7 +18,7 @@ The initial navigation bar’s style and translucency.
 - **Name**: `UINavigationBar` (Navigation bar)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The possible dictionary keys and values are:
 

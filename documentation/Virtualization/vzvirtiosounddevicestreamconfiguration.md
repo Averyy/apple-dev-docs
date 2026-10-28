@@ -19,7 +19,7 @@ class VZVirtioSoundDeviceStreamConfiguration
 @interface VZVirtioSoundDeviceStreamConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `VZVirtioSoundDeviceStreamConfiguration` object represents a PCM stream of audio data. Don’t instantiate this class directly. Instead, instantiate one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](./vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md).
 

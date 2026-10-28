@@ -25,7 +25,7 @@ case invalidSignature
 SKErrorInvalidSignature
 ```
 
-#### Discussion
+## Discussion
 
 The [`signature`](../../skpaymentdiscount/signature.md) is not valid.
 

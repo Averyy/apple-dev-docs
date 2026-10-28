@@ -26,7 +26,7 @@ optional func sessionWasSuspended(_ session: NISession)
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 When NI invokes this callback, the session suspends and doesn’t receive [`session(_:didUpdate:)`](./session%28_,didupdate%29.md) callbacks. NI suspends a session when the user backgrounds the app. If the user reactivates the app before NI times out the session, NI calls [`sessionSuspensionEnded(_:)`](./sessionsuspensionended%28_%29.md). A suspended session won’t resume on its own. To resume the session, call [`run(_:)`](../nisession/run%28_%29.md) again, passing in your session’s configuration.
 

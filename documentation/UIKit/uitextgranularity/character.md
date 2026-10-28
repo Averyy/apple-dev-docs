@@ -21,7 +21,7 @@ case character
 UITextGranularityCharacter
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a character.
 

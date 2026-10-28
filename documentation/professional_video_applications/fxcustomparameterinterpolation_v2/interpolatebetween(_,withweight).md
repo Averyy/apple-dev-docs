@@ -20,11 +20,11 @@ func interpolateBetween(_ rightValue: any NSCopying & NSSecureCoding & NSObjectP
 - (NSObject<NSCopying,NSSecureCoding> *) interpolateBetween:(NSObject<NSCopying,NSSecureCoding> *) rightValue withWeight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom parameter value.
 
-#### Discussion
+## Discussion
 
 This plug-in method is called by the host application when the user has added keyframes to a custom parameter, and the application needs to know the value of the parameter between keyframes. This may be when the application is rendering a frame between keyframes, or when the plugin requests the value of its parameter at a time between keyframes, or when the application displays UI.
 

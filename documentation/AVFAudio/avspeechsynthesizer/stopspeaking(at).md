@@ -25,11 +25,11 @@ func stopSpeaking(at boundary: AVSpeechBoundary) -> Bool
 - (BOOL) stopSpeakingAtBoundary:(AVSpeechBoundary) boundary;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if speech stops; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Unlike pausing a speech synthesizer, which can resume after a pause, stopping the synthesizer immediately cancels speech and removes all unspoken utterances from the synthesizer’s queue.
 

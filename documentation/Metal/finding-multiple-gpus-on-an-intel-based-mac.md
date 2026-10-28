@@ -5,13 +5,13 @@
 
 Locate, identify, and choose suitable GPUs for your app.
 
-#### Overview
+## Overview
 
 Your app can use multiple GPUs on an Intel-based Mac, including any built-in and external GPUs. Start by getting a list of all the system’s available GPUs, and then submit workloads to those appropriate for your app’s tasks.
 
 > **Note**:  Mac computers with Apple silicon have a single, high-performance, and energy-efficient GPU.
 
-##### Get a list of GPU devices
+### Get a list of GPU devices
 
 Your app can get an array of [`MTLDevice`](./mtldevice.md) instances, each of which represents an available GPU, by calling the [`MTLCopyAllDevices()`](./mtlcopyalldevices%28%29.md) function.
 
@@ -68,7 +68,7 @@ MTLRemoveDeviceObserver(observer)
 MTLRemoveDeviceObserver(deviceObserver);
 ```
 
-##### Identify each GPU by type
+### Identify each GPU by type
 
 Each GPU on a Mac computer’s system can be one of three types: integrated, discrete, or external. You can identify each [`MTLDevice`](./mtldevice.md) instance’s type by inspecting its [`isLowPower`](./mtldevice/islowpower.md) and [`isRemovable`](./mtldevice/isremovable.md) properties.
 
@@ -129,7 +129,7 @@ if (device.isHeadless) {
 }
 ```
 
-##### Select the GPUs suitable for your workloads
+### Select the GPUs suitable for your workloads
 
 Each GPU type has its advantages for certain tasks or workloads that you can consider for a system with multiple GPUs.
 

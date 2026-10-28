@@ -25,7 +25,7 @@ case dataPlayedBack
 AVAudioPlayerNodeCompletionDataPlayedBack
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler is applicable when the engine is rendering to or from an audio device.
 

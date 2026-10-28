@@ -19,7 +19,7 @@ var maximumRecentDocumentCount: Int { get }
 @property (readonly) NSUInteger maximumRecentDocumentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates that `NSDocumentController` will not attempt to add an Open Recent menu to your application’s File menu, although `NSDocumentController` will not attempt to remove any preexisting Open Recent menu item. The default implementation returns a value that is subject to change and may or may not be derived from a setting made by the user in System Preferences.
 

@@ -23,7 +23,7 @@ case continueInApp
 INStartCallIntentResponseCodeContinueInApp
 ```
 
-#### Discussion
+## Discussion
 
 Returning this code during the confirm phase causes Siri to display an error button labeled “Continue in `<appName>`”.
 

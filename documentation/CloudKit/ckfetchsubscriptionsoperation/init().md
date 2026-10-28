@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the [`subscriptionIDs`](./subscriptionids-714ct.md) property before you execute the operation.
 

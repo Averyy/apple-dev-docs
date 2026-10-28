@@ -25,7 +25,7 @@ typealias SCNActionTimingFunction = (Float) -> Float
 typedef float (^)(float) SCNActionTimingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes a single parameter:
 

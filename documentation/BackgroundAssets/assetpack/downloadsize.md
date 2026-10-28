@@ -20,7 +20,7 @@ The size of the download file containing the asset pack in bytes.
 let downloadSize: Int
 ```
 
-#### Discussion
+## Discussion
 
 This is different than the installation size, which could be larger.
 

@@ -20,11 +20,11 @@ typealias OSLCountProcPtr = (DescType, DescType, UnsafePointer<AEDesc>?, UnsafeM
 typedef OSErr (*OSLCountProcPtr)(DescType desiredType, DescType containerClass, const AEDesc *container, long *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your object counting function should return `noErr` if it successfully counted the objects and `errAEEventNotHandled` if it can’t count the objects. When the Apple Event Manager receives the result code `errAEEventNotHandled` after calling an object counting function, it attempts to use other methods of counting the specified objects, such as calling an equivalent system object counting function.
 
-#### Discussion
+## Discussion
 
 If you want the Apple Event Manager to help your application resolve object specifiers of key form `formTest` (and if your application doesn’t specify `kAEIDoWhose` as described in [Callback Constants for the AEResolve Function](./apple_events/api-1572741-callback_constants_for_the_aeres.md)), you should provide an object comparison function, as described in [`OSLCompareProcPtr`](./oslcompareprocptr.md), and an object-counting function.
 

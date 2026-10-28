@@ -16,7 +16,7 @@ typedef enum FWAddressSpaceFlags : unsigned int {
 } FWAddressSpaceFlags;
 ```
 
-#### Overview
+## Overview
 
 FireWire address space creation flags
 

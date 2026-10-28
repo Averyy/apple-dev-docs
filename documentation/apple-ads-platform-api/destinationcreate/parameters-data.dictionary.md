@@ -15,7 +15,7 @@ Destination-specific parameters supplied when creating an ad creative.
 object DestinationCreate.Parameters
 ```
 
-#### Discussion
+## Discussion
 
 See [`DestinationParameter`](../destinationparameter.md) for the full field reference.
 

@@ -20,7 +20,7 @@ func toggleInspector(_ sender: Any?)
 - (void) toggleInspector:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the split view controller doesn’t contain an inspector, calling this method does nothing.
 

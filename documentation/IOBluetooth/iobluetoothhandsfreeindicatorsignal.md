@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorSignal: String
 extern NSString * const IOBluetoothHandsFreeIndicatorSignal;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the signal strength indicator is an integer from `0-5`, where `0` indicates a very weak signal and `5` indicates a very strong signal.
 

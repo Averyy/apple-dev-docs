@@ -17,7 +17,7 @@ Invalidates the enumerator.
 func invalidate() async
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method before terminating the extension. The extension may terminate before this method returns.
 

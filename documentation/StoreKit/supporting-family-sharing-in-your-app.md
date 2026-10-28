@@ -5,7 +5,7 @@
 
 Provide service to share subscriptions and non-consumable products to family members.
 
-#### Overview
+## Overview
 
 Family Sharing allows a customer to share access to auto-renewable subscriptions or non-consumables with up to five family members on all of their Apple devices. Enabling Family Sharing for a subscription can make your content or service more appealing to subscribers, and may encourage conversion to a paid subscription, increase customer engagement, and improve retention. Developers can choose to turn on Family Sharing for Apple In-App Purchases and non-consumables in App Store Connect. Users can also choose whether to share their purchases with family.
 
@@ -19,13 +19,13 @@ When users share a purchase through Family Sharing, each family member gets thei
 
 > **Related Sessions from WWDC20**:  Session 10661: [What’s new with Apple In-App Purchase](https://developer.apple.com/videos/play/wwdc2020/10661/)
 
-##### Enable Family Sharing for Apple In-App Purchases
+### Enable Family Sharing for Apple In-App Purchases
 
 To make Family Sharing available for an Apple In-App Purchase, developers need to turn on Family Sharing in App Store Connect. After you enable Family Sharing for an Apple In-App Purchase, you can’t turn it off. For more information, see [Turn on Family Sharing for Apple In-App Purchases](https://help.apple.com/app-store-connect/#/dev45b03fab9).
 
 Users can choose whether to share their purchases with family. As users join or leave family groups and enable or disable sharing, your app needs to update the family’s access to your products. For information about how users manage their Family Sharing choices, see [Set Up Family Sharing on iPhone](https://support.apple.com/guide/iphone/set-up-family-sharing-iph223f61318/ios).
 
-##### Provide access to shared purchases
+### Provide access to shared purchases
 
 Your app receives a unique receipt for each family member entitled to a shared purchase, on each of their devices. For subscriptions, your app unlocks access through the normal purchase flow. For non-consumable products, unlocking access may require users to initiate a restored purchase, depending on the Family Sharing settings at the time of purchase.
 
@@ -38,7 +38,7 @@ To provide access for family members to a subscription or non-consumable, your a
 5. Unlock access to the shared subscription or non-consumable product.
 6. Call [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md).
 
-##### Revoke access if Family Sharing is disabled
+### Revoke access if Family Sharing is disabled
 
 With Family Sharing products, users have access to products only while Family Sharing is enabled. If the purchaser leaves the group, gets a refund, or stops sharing, the expectation is that the family’s access to the product stops immediately.
 
@@ -49,7 +49,7 @@ When a condition occurs that disables sharing, StoreKit informs your app by upda
 
 For more information, including a list of conditions that trigger this call, see [`paymentQueue(_:didRevokeEntitlementsForProductIdentifiers:)`](./skpaymenttransactionobserver/paymentqueue%28_,didrevokeentitlementsforproductidentifiers%29.md).
 
-##### Listen for the revoke notification
+### Listen for the revoke notification
 
 If you set up your server to receive [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md), your server gets a `REVOKE` [`notification_type`](../AppStoreServerNotifications/notification_type.md) as soon as a shared purchase is no longer shared. This notification serves the same purpose as the [`paymentQueue(_:didRevokeEntitlementsForProductIdentifiers:)`](./skpaymenttransactionobserver/paymentqueue%28_,didrevokeentitlementsforproductidentifiers%29.md)call. Listen for and process this notification by:
 
@@ -57,7 +57,7 @@ If you set up your server to receive [App Store Server Notifications](../AppStor
 2. Providing the app with access to all products to which the user is entitled.
 3. Updating your records, if you keep server-based records to manage your customers’ subscriptions.
 
-##### Indicate to users when products support Family Sharing
+### Indicate to users when products support Family Sharing
 
 When your app displays Apple In-App Purchases, indicate in your UI whether users can share the product with family. Call [`isFamilyShareable`](./skproduct/isfamilyshareable.md) to determine at runtime whether the Apple In-App Purchase supports Family Sharing. Knowing whether a product is shareable helps users make a selection that best fits their needs.
 

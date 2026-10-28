@@ -20,7 +20,7 @@ Handles a failed download.
 func backgroundDownload(_ failedDownload: BADownload, failedWithError error: any Error)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t override this default implementation.
 

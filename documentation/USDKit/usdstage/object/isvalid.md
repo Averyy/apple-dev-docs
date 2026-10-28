@@ -20,7 +20,7 @@ A Boolean value indicating whether this object is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An object’s validity is connected to a [`USDStage`](../../usdstage.md). An object becomes invalid when the lifetime of its stage ends.
 

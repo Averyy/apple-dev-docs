@@ -15,13 +15,13 @@ Error information returned in the response body when a Recommendations or Sugges
 object RecommendationResponseError
 ```
 
-#### Discussion
+## Discussion
 
 The `ResponseError` object is embedded in the `error` field of the response envelope when a Recommendations or Suggestions request fails.
 
 When the error involves multiple field-level issues (for example, validation failures on several request fields), inspect the `details` array to identify and correct each specific problem before retrying the request.
 
-##### Example
+### Example
 
 ```json
 {

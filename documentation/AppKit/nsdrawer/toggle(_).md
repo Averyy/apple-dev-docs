@@ -21,7 +21,7 @@ func toggle(_ sender: Any?)
 - (void) toggle:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is closed, or in the process of either opening or closing, it is opened. Otherwise, the drawer is closed.
 

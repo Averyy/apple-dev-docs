@@ -17,11 +17,11 @@ Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentityW
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to get the ID of a user based on the user’s email address. The user must meet the following criteria:
 

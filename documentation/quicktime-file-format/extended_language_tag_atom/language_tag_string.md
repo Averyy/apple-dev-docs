@@ -6,7 +6,7 @@
 
 A string containing a language tag.
 
-#### Overview
+## Overview
 
 A NULL-terminated C string containing an RFC 4646 (BCP 47) compliant language tag string in ASCII encoding, such as “en-US”, “fr-FR”, or “zh-CN”.
 

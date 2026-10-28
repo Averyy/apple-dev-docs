@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPProxyPassword: CFString
 extern CFStringRef const kCFStreamPropertyFTPProxyPassword;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Proxy Port stream property key or FTP Proxy dictionary key for set and copy operations. The value of this property is a CFString containing the password to be used when connecting to the proxy server.
 

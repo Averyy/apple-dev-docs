@@ -10,7 +10,7 @@ Share screen recordings, or broadcast live audio and video of your app, by addin
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10101: Discover Rolling Clips with ReplayKit](http://developer.apple.com/wwdc21/10101/).
 

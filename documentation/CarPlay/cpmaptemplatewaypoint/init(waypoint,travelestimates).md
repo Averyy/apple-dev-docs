@@ -21,7 +21,7 @@ init(waypoint: CPNavigationWaypoint, travelEstimates: CPTravelEstimates)
 - (instancetype) initWithWaypoint:(CPNavigationWaypoint *) waypoint travelEstimates:(CPTravelEstimates *) travelEstimates;
 ```
 
-#### Return Value
+## Return Value
 
 A new CPMapTemplateWaypoint instance ready for use with CarPlay templates
 

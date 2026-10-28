@@ -15,11 +15,11 @@ The object for defining the color, width, and style of a stroke in a table.
 object TableStrokeStyle
 ```
 
-#### Discussion
+## Discussion
 
 You can specify the `color`, `style` (`solid`), and `width` of a stroke in a table. For example, apply style to divider lines between rows.
 
-##### Example
+### Example
 
 ```json
 {

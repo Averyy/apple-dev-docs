@@ -23,7 +23,7 @@ case unavailable
 GCControllerHomeButtonSettingInAppActionUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 This result indicates that an error occurred, typically because the app is not currently permitted to read settings state.
 

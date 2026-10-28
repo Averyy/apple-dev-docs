@@ -26,7 +26,7 @@ var totalFlightsClimbed: HKQuantity? { get }
 @property (strong, readonly, nullable) HKQuantity * totalFlightsClimbed;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a quantity using count units, or `nil`.
 

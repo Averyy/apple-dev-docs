@@ -11,11 +11,11 @@ Fetches a creative by identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch details of a [`Creative`](./creative.md) using your `creativeId` in the resource path.
 
-##### Payload example: Get a creative
+### Payload example: Get a creative
 
 **Request**:
 

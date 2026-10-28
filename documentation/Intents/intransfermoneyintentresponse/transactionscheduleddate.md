@@ -34,7 +34,7 @@ var transactionScheduledDate: INDateComponentsRange? { get set }
 @property (atomic, copy, readwrite, nullable) INDateComponentsRange * transactionScheduledDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the window of time during which to transfer the funds between the accounts. The end date of the specified range must always be in the future. Be as specific as you can when specifying the transaction dates.
 

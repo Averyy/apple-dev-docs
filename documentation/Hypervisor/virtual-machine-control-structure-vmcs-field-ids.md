@@ -5,11 +5,11 @@
 
 Fields you can read or change using the Hypervisor framework’s read and write functions.
 
-#### Overview
+## Overview
 
 You can examine the state of, or control the operation of the framework and indivudal guests through various fields in the Virtual Machine Control Structure. The VMCS fields listed below describe which fields are read-only or read-write using the Hypervisor framework’s read and write functions.
 
-##### Readable and Writable VMCS Guest Fields
+### Readable and Writable VMCS Guest Fields
 
 These are fields, states, flags, and registers in hypervisor guests that you can read from or write to. In some instances there are limitations on what you can read or write, such as specific regsters or bit positions as indicated for each field.
 
@@ -28,7 +28,7 @@ These are fields, states, flags, and registers in hypervisor guests that you can
 - Limit — {`ES`, `CS`, `SS`, `DS`, `FS`, `GS`, `LDTR`, `TR`, `GDTR`, `ITDR`}
 - Access Rights — {`ES`, `CS`, `SS`, `FS`, `GS`, `LDTR`, `TR`}.
 
-##### Readable and Writable VMCS Control Fields
+### Readable and Writable VMCS Control Fields
 
 These control fields that you can both read and write.
 
@@ -47,14 +47,14 @@ These control fields that you can both read and write.
 - `CR0` Read Shadow
 - `CR4` Read Shadow
 
-##### Readable and Conditionally Writable VMCS Guest Fields
+### Readable and Conditionally Writable VMCS Guest Fields
 
 These guest fields describe the guest’s control registers and activity state. Updating these field requires the conditions listed for each field:
 
 - `CR0` — `CR0.CD` and `CR0.NW` are unset
 - Activity State — The current state must be either `ACTIVE` or `HLT`
 
-##### Readable and Conditionally Writable VMCS Control Fields
+### Readable and Conditionally Writable VMCS Control Fields
 
 These fields describe VM execution controls, and access to the framework’s guest/host mask. Reading or updating these field requires the conditions listed for each field:
 
@@ -64,14 +64,14 @@ These fields describe VM execution controls, and access to the framework’s gue
 - VM Entry Controls — [`hv_vmx_read_capability(_:_:)`](./hv_vmx_read_capability%28_,_%29.md) must be `true`
 - `CR0` Guest/Host Mask — `CR0.CD` and `CR0.NW` are set
 
-##### Read-Only VMCS Control Fields
+### Read-Only VMCS Control Fields
 
 These read-only fields provide information about time-stamp counter offsets and programmable interrupt controllers addresses:
 
 - TCS Offset
 - APIC-Access Address
 
-##### Read-Only VMCS Data Fields
+### Read-Only VMCS Data Fields
 
 These read-only fields describe error and exit information, interrupt descriptor tables, or guest address information:
 

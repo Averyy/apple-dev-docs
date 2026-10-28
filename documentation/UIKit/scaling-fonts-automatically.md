@@ -5,7 +5,7 @@
 
 Scale text in your interface automatically using Dynamic Type.
 
-#### Overview
+## Overview
 
 The Dynamic Type feature allows users to choose the size of textual content displayed on the screen. It helps users who need larger text for better readability. It also accomodates those who can read smaller text, allowing more information to appear on the screen. Apps that support Dynamic Type also provide a more consistent reading experience.
 
@@ -13,13 +13,13 @@ To add support for Dynamic Type in your app, you use *text styles*. A text style
 
 Although custom fonts are supported in Dynamic Type, the preferred font is designed to look good at any size. Also, using the preferred font ensures consistency within the system and with other apps. For more information, see Human Interface Guidelines > [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 
-##### Configuring text styles using Interface Builder
+### Configuring text styles using Interface Builder
 
 In Interface Builder, select the text style from the Font menu, then select the Automatically Adjust Font checkbox to the right of Dynamic Type.
 
 ![A partial screenshot of Interface Builder with an arrow pointing at the text style 'Body' as the selected font in the Attributes Inspector for the selected label. Below the font selection is the label Dynamic Type, with the Automatically Adjust Font checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.uikit/scaling-fonts-automatically-1@2x.png)
 
-##### Configuring text styles in source code
+### Configuring text styles in source code
 
 In your source code, call the [`preferredFont(forTextStyle:)`](./uifont/preferredfont%28fortextstyle%29.md) method. This method returns a [`UIFont`](./uifont.md) that you can assign to a label, text field, or text view. Next, set the [`adjustsFontForContentSizeCategory`](./uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property on the text control to [`true`](../Swift/true.md). This setting tells the text control to adjust the text size based on the Dynamic Type setting provided by the user.
 

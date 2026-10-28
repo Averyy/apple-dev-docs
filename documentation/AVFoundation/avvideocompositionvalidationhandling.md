@@ -24,7 +24,7 @@ protocol AVVideoCompositionValidationHandling : NSObjectProtocol
 @protocol AVVideoCompositionValidationHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You might chose to stop validation after particular errors have been found so as to avoid unnecessary subsequent processing following an eror from which there is no suitable recovery.
 

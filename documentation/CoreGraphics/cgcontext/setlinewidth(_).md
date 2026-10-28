@@ -25,7 +25,7 @@ func setLineWidth(_ width: CGFloat)
 extern void CGContextSetLineWidth(CGContextRef c, CGFloat width);
 ```
 
-#### Discussion
+## Discussion
 
 The default line width is `1` unit. When stroked, the line straddles the path, with half of the total width on either side.
 

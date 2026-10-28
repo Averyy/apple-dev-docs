@@ -5,7 +5,7 @@
 
 Create new data tables by manipulating an existing data table.
 
-#### Overview
+## Overview
 
 Use these methods to preprocess your data programmatically in Create ML before training a model. For example, you can create a data table by merging two data tables, fill in missing values, and then discarding duplicate rows.
 

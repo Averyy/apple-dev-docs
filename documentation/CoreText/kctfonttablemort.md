@@ -23,7 +23,7 @@ var kCTFontTableMort: Int { get }
 kCTFontTableMort
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for morph.
 

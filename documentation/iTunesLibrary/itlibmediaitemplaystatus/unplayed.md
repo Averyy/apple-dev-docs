@@ -20,7 +20,7 @@ case unplayed
 ITLibMediaItemPlayStatusUnplayed
 ```
 
-#### Discussion
+## Discussion
 
 The user can also set this state manually.
 

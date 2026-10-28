@@ -19,7 +19,7 @@ var autosizesCells: Bool { get set }
 @property BOOL autosizesCells;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), whenever the matrix is resized, the sizes of the cells change in proportion, keeping the intercell space constant. This property verifies that the cell sizes and intercell spacing add up to the exact size of the matrix, adjusting the size of the cells and updating the matrix if they don’t. When the value of this property is [`false`](../../Swift/false.md), then the intercell spacing and cell size remain constant.
 

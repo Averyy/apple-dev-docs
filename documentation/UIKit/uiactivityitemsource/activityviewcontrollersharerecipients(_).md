@@ -21,7 +21,7 @@ optional func activityViewControllerShareRecipients(_ activityViewController: UI
 - (NSArray<INPerson *> *) activityViewControllerShareRecipients:(UIActivityViewController *) activityViewController;
 ```
 
-#### Discussion
+## Discussion
 
 Allows the activity item source to provide recipients who will be filled in by default in the compose view if that sharing app supports it.
 

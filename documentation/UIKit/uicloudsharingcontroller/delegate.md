@@ -22,7 +22,7 @@ weak var delegate: (any UICloudSharingControllerDelegate)? { get set }
 @property (nonatomic, weak) id<UICloudSharingControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UICloudSharingController`](../uicloudsharingcontroller.md) instance can interact with your app by way of a delegate object (an object that conforms to the [`UICloudSharingControllerDelegate`](../uicloudsharingcontrollerdelegate.md) protocol). If you provide a delegate object to the controller, the controller can notify your app of status changes to the [`CKShare`](../../CloudKit/ckshare.md) record that happen while the user interacts with the controller’s user interface. The controller can also ask the delegate object for app-specific settings, such as a title, for display in the controller’s user interface.
 

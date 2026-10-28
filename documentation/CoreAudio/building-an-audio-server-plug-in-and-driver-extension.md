@@ -11,7 +11,7 @@ Create a plug-in and driver extension to support an audio device in macOS.
 - macOS 11.0+
 - Xcode 12.2+
 
-#### Overview
+## Overview
 
 This sample shows how to create an Audio Server plug-in built on top of a DriverKit Driver Extension. The sample provides C++ implementations of the plug-in and the Driver Extension, and shows how to implement the communication between the two, including discovering, connecting to, and calling into the Driver Extension from the plug-in.
 
@@ -21,7 +21,7 @@ The sample implements a dynamic environment that supports multiple audio devices
 - Support for 44.1 kHz and 48 kHz sample rates
 - Support for two channels of audio I/O in 32-bit, floating point, linear PCM format
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To deploy the sample driver, you need to create an explicit App ID and provisioning profile with the following entitlements:
 

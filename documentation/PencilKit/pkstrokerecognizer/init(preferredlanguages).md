@@ -19,7 +19,7 @@ Creates a recognizer with the specified preferred languages.
 init(preferredLanguages: [Locale.Language]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Languages are respected on a best-effort basis. Factors such as feature support may affect which languages the recognizer uses.
 

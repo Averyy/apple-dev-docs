@@ -23,7 +23,7 @@ class CFCharacterSet
 typedef const struct __CFCharacterSet * CFCharacterSetRef;
 ```
 
-#### Overview
+## Overview
 
 A CFCharacterSet object represents a set of Unicode compliant characters. CFString uses CFCharacterSet objects to group characters together for searching operations, so that they can find any of a particular set of characters during a search. The two opaque types, CFCharacterSet and [`CFMutableCharacterSet`](./cfmutablecharacterset.md), define the interface for static and dynamic character sets, respectively. The objects you create using these opaque types are referred to as character set objects (and when no confusion will result, merely as character sets).
 

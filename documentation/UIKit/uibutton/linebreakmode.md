@@ -19,7 +19,7 @@ The line break mode to use when drawing text.
 @property (nonatomic) NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is one of the constants described in the [`UILineBreakMode`](../uilinebreakmode.md) enumeration in NSString UIKit Additions Reference. The default value is [`UILineBreakModeMiddleTruncation`](../uilinebreakmode/uilinebreakmodemiddletruncation.md).
 

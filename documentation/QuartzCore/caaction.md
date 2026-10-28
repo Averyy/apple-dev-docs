@@ -24,7 +24,7 @@ protocol CAAction
 @protocol CAAction
 ```
 
-#### Overview
+## Overview
 
 When queried with an action identifier (a key path, an external action name, or a predefined action identifier) a layer returns the appropriate action object–which must implement the [`CAAction`](./caaction.md) protocol–and sends it a [`run(forKey:object:arguments:)`](./caaction/run%28forkey,object,arguments%29.md) message.
 

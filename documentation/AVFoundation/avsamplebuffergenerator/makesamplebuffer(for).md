@@ -25,11 +25,11 @@ func makeSampleBuffer(for request: AVSampleBufferRequest) throws -> sending CMSa
 - (CMSampleBufferRef) createSampleBufferForRequest:(AVSampleBufferRequest *) request error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A sample buffer object.
 
-#### Discussion
+## Discussion
 
 If you created the generator with a `nil` timebase, any associated [`AVSampleBufferRequest`](../avsamplebufferrequest.md) objects default to using a request mode of [`AVSampleBufferRequest.Mode.immediate`](../avsamplebufferrequest/mode-swift.enum/immediate.md).
 

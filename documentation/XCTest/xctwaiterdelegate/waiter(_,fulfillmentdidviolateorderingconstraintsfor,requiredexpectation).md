@@ -16,7 +16,7 @@ optional func waiter(_ waiter: XCTWaiter, fulfillmentDidViolateOrderingConstrain
 - (void) waiter:(XCTWaiter *) waiter fulfillmentDidViolateOrderingConstraintsForExpectation:(XCTestExpectation *) expectation requiredExpectation:(XCTestExpectation *) requiredExpectation;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate is an [`XCTestCase`](../xctestcase.md) instance, this will be reported as a test failure.
 

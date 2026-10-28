@@ -21,7 +21,7 @@ class ProbabilityMetric<UnitType> where UnitType : Unit
 @interface SRKeyboardProbabilityMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework derives these values based on raw sensor data.
 

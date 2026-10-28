@@ -15,7 +15,7 @@ Set the function for receiving visual fidelity data updates.
 extern void ar_visual_fidelity_provider_set_update_handler_f(ar_visual_fidelity_provider_t visual_fidelity_data_provider, dispatch_queue_t fidelity_data_updates_queue, void *context, ar_visual_fidelity_update_handler_function_t fidelity_data_update_handler_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this function will override the handler set using `ar_visual_fidelity_provider_set_update_handler`.
 

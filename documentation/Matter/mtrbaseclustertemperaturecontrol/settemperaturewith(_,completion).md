@@ -29,7 +29,7 @@ func setTemperatureWith(_ params: MTRTemperatureControlClusterSetTemperaturePara
 - (void) setTemperatureWithParams:(MTRTemperatureControlClusterSetTemperatureParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The SetTemperature command SHALL have the following data fields:
 

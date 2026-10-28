@@ -23,7 +23,7 @@ An activation function that returns its input clamped to beta when that is great
 case clampedLeakyRectifiedLinear(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

@@ -24,7 +24,7 @@ func CFHTTPMessageCopyBody(_ message: CFHTTPMessage) -> Unmanaged<CFData>?
 extern CFDataRefCFHTTPMessageCopyBody(CFHTTPMessageRef message);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFData` object or `NULL` if there was a problem creating the object or if the there is no message body. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

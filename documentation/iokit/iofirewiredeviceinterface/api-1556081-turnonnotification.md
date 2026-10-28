@@ -16,7 +16,7 @@ Activates any callbacks specified for this device interface. Only works after Ad
 const Boolean (*TurnOnNotification)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value. Returns true on success.
 

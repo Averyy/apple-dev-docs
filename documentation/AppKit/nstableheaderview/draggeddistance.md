@@ -19,7 +19,7 @@ var draggedDistance: CGFloat { get }
 @property (readonly) CGFloat draggedDistance;
 ```
 
-#### Discussion
+## Discussion
 
 If the user is dragging a column, this property contains that column’s horizontal distance from its original position; otherwise, the property’s value is undefined.
 

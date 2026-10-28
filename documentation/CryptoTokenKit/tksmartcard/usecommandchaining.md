@@ -25,7 +25,7 @@ var useCommandChaining: Bool { get set }
 @property BOOL useCommandChaining;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`true`](../../Swift/true.md) when the Smart Card ATR announces that command chaining is supported.
 

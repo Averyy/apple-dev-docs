@@ -22,7 +22,7 @@ case ready
 INCancelRideIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 During the confirmation phase of an intent, use this code to signal that your Intents extension is ready and able to act on the intent.
 

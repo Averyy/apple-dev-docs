@@ -21,7 +21,7 @@ Creates a 3 x 3 zero matrix for converting RGB to Y’CbCr.
 init()
 ```
 
-#### Return Value
+## Return Value
 
 A 3 x 3 zero matrix for converting RGB to Y’CbCr.
 

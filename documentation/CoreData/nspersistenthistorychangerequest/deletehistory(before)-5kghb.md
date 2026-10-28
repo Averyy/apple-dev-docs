@@ -29,7 +29,7 @@ class func deleteHistory(before token: NSPersistentHistoryToken?) -> Self
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Return Value
+## Return Value
 
 A delete history change request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) using an end token bookmark boundary.
 

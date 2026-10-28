@@ -23,7 +23,7 @@ class UISheetPresentationController
 @interface UISheetPresentationController : UIPresentationController
 ```
 
-#### Overview
+## Overview
 
 [`UISheetPresentationController`](./uisheetpresentationcontroller.md) lets you present your view controller as a sheet. Before you present your view controller, configure the sheet presentation controller in its [`sheetPresentationController`](./uiviewcontroller/sheetpresentationcontroller.md) property with the behavior and appearance you want for your sheet.
 

@@ -22,7 +22,7 @@ var depthData: AVDepthData { get }
 @property (readonly) AVDepthData * depthData;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`depthDataWasDropped`](./depthdatawasdropped.md) property is [`true`](../../Swift/true.md), this [`AVDepthData`](../avdepthdata.md) object does not contain a depth map (instead, it contains only metadata).
 

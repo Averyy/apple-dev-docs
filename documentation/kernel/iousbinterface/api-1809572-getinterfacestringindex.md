@@ -9,11 +9,11 @@
 virtual UInt8 GetInterfaceStringIndex();
 ```
 
-#### Return Value
+## Return Value
 
 the string index
 
-#### Overview
+## Overview
 
 returns the index of the string descriptor describing the interface
 

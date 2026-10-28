@@ -14,11 +14,11 @@
 extern OSStatus AudioDriverPlugInOpen(AudioDriverPlugInHostInfo *inHostInfo);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Instantiates a new instance of the driver plug-in.
 

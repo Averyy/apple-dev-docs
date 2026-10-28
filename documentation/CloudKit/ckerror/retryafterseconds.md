@@ -21,7 +21,7 @@ The number of seconds to wait before you retry the request.
 var retryAfterSeconds: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is available only when the error’s `code` is [`serviceUnavailable`](./serviceunavailable.md) or [`requestRateLimited`](./requestratelimited.md).
 

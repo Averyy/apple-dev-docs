@@ -23,7 +23,7 @@ var badgeTitlePositionAdjustment: UIOffset { get set }
 @property (nonatomic, assign, readwrite) UIOffset badgeTitlePositionAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the distance, in points, by which to offset the title. Positive values move the title down and to the right. Negative values move the title up and to the left.
 

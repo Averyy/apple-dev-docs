@@ -24,7 +24,7 @@ func provideImageData(_ data: UnsafeMutableRawPointer, bytesPerRow rowbytes: Int
 - (void) provideImageData:(void *) data bytesPerRow:(size_t) rowbytes origin:(size_t) originx :(size_t) originy size:(size_t) width :(size_t) height userInfo:(id) info;
 ```
 
-#### Discussion
+## Discussion
 
 You can supply the image provider to these methods of the `CIImage` class:
 

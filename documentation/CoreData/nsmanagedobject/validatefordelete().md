@@ -25,7 +25,7 @@ func validateForDelete() throws
 - (BOOL) validateForDelete:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 An object cannot be deleted if it has a relationship has a “deny” delete rule and that relationship has a destination object.
 

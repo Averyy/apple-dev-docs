@@ -33,13 +33,13 @@ class MTKView
 @interface MTKView : NSView
 ```
 
-#### Overview
+## Overview
 
 The [`MTKView`](./mtkview.md) class provides a default implementation of a Metal-aware view that you can use to render graphics using Metal and display them onscreen. When asked, the view provides a [`MTLRenderPassDescriptor`](../Metal/mtlrenderpassdescriptor.md) object that points at a texture for you to render new contents into. Optionally, an [`MTKView`](./mtkview.md) can create depth and stencil textures for you and any intermediate textures needed for antialiasing. The view uses a [`CAMetalLayer`](../QuartzCore/cametallayer.md) to manage the Metal drawable objects.
 
 The view requires a [`MTLDevice`](../Metal/mtldevice.md) object to manage the Metal objects it creates for you. You must set the [`device`](./mtkview/device.md) property and, optionally, modify the view’s drawable properties before drawing.
 
-##### Configuring the Drawing Behavior
+### Configuring the Drawing Behavior
 
 The MTKView class supports three drawing modes:
 
@@ -47,13 +47,13 @@ The MTKView class supports three drawing modes:
 - Draw notifications: The view redraws itself when something invalidates its contents, usually because of a call to [`setNeedsDisplay()`](../UIKit/uiview/setneedsdisplay%28%29.md) or some other view-related behavior. In this case, set [`isPaused`](./mtkview/ispaused.md) and [`enableSetNeedsDisplay`](./mtkview/enablesetneedsdisplay.md) to [`true`](../Swift/true.md). Use this mode for apps with a more traditional workflow, where updates happen when data changes, but not on a regular timed interval.
 - Explicit drawing: The view redraws its contents only when you explicitly call the [`draw()`](./mtkview/draw%28%29.md) method. In this case, set [`isPaused`](./mtkview/ispaused.md) to [`true`](../Swift/true.md) and [`enableSetNeedsDisplay`](./mtkview/enablesetneedsdisplay.md) to [`false`](../Swift/false.md). Use this mode to create your own custom workflow.
 
-##### Drawing the View’s Contents
+### Drawing the View’s Contents
 
 Regardless of drawing mode, when the view needs to update its contents, it calls the [`draw(_:)`](../AppKit/nsview/draw%28_%29.md) method when that method has been overridden by a subclass, or [`draw(in:)`](./mtkviewdelegate/draw%28in%29.md) on the view’s delegate if the subclass doesn’t override it. You should either subclass [`MTKView`](./mtkview.md) or provide a delegate, but not both.
 
 In your drawing method, you obtain a render pass descriptor from the view, render into it, and then present the associated drawable.
 
-##### Obtaining a Drawable from a MetalKit View
+### Obtaining a Drawable from a MetalKit View
 
 Each [`MTKView`](./mtkview.md) is backed by a [`CAMetalLayer`](../QuartzCore/cametallayer.md). In your renderer, implement the [`MTKViewDelegate`](./mtkviewdelegate.md) protocol to interact with a MetalKit view. Call the MetalKit view’s [`currentRenderPassDescriptor`](./mtkview/currentrenderpassdescriptor.md) property to obtain a render pass descriptor configured for the current frame:
 
@@ -80,7 +80,7 @@ When you read this property, Core Animation implicitly obtains a drawable for th
 
 Obtain drawables as late as possible; preferably, immediately before encoding your onscreen render pass.
 
-##### Registering the Drawable’s Presentation
+### Registering the Drawable’s Presentation
 
 After rendering the contents, you must present the drawable to update the view’s contents. The most convenient way to present the content is to call the [`present(_:)`](../Metal/mtlcommandbuffer/present%28_%29.md) method on the command buffer. Then, call the [`commit()`](../Metal/mtlcommandbuffer/commit%28%29.md) method to submit the command buffer to a GPU:
 

@@ -20,7 +20,7 @@ var companions: [LAEnvironment.MechanismCompanion] { get }
 @property (nonatomic, readonly) NSArray<LAEnvironmentMechanismCompanion *> * companions;
 ```
 
-#### Discussion
+## Discussion
 
 Companion authentication mechanisms.
 

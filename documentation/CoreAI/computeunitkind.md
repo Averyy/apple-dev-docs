@@ -19,7 +19,7 @@ A type of hardware compute unit available for model inference.
 enum ComputeUnitKind
 ```
 
-#### Overview
+## Overview
 
 You use compute unit kinds with [`SpecializationOptions`](./specializationoptions.md) to control which hardware the framework targets when specializing a model. By default, specialization uses all available compute units on the device.
 

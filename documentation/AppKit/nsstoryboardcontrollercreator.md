@@ -15,7 +15,7 @@ A block that you use to handle the custom creation of controller objects from yo
 typedef id (^)(NSCoder *) NSStoryboardControllerCreator;
 ```
 
-#### Discussion
+## Discussion
 
 Use your block to construct a window or view controller using a custom initialization method. Your custom method must accept an [`NSCoder`](../Foundation/nscoder.md) object as one of its parameters, and it may include other parameters that you need to initialize the contents of the object. The implementation of your method must call the inherited [`init(coder:)`](./nsresponder/init%28coder%29.md) method at some point during its execution. Not doing so is a programmer error.
 

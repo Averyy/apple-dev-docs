@@ -15,7 +15,7 @@ An object that describes why the client can’t play a specific piece of content
 object ContentFailure
 ```
 
-#### Discussion
+## Discussion
 
 The value of `errorCode` is one of the following:
 

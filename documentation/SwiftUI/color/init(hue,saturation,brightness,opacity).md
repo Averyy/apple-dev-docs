@@ -21,7 +21,7 @@ Creates a constant color from hue, saturation, and brightness values.
 init(hue: Double, saturation: Double, brightness: Double, opacity: Double = 1)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a constant color that doesn’t change based on context. For example, it doesn’t have distinct light and dark appearances, unlike various system-defined colors, or a color that you load from an Asset Catalog with [`init(_:bundle:)`](./init%28_,bundle%29.md).
 

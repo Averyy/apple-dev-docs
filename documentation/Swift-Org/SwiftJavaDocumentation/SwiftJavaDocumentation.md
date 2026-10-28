@@ -10,13 +10,13 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 The Swift-Java project enables interoperability between Swift and Java.
 
-#### Overview
+## Overview
 
 This project contains support packages, Java libraries, tools and plugins for calling Java from Swift and Swift from Java.
 
 Please refer to articles about the specific direction of interoperability you are interested in.
 
-##### Getting started
+### Getting started
 
 **SwiftJava** generates bindings to either language from the other: source generation for Java consuming Swift code, and a combination of Swift macros and source generation for Swift consuming Java libraries.
 

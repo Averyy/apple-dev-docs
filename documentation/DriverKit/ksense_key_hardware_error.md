@@ -16,7 +16,7 @@
 kSENSE_KEY_HARDWARE_ERROR
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected a hardware error.
 

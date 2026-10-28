@@ -24,7 +24,7 @@ var controlPointFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat controlPointFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLAttributeFormat.float3`](../mtlattributeformat/float3.md).
 

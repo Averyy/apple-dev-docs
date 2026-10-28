@@ -27,11 +27,11 @@ func migratePersistentStore(_ store: NSPersistentStore, to URL: URL, options: [A
 - (NSPersistentStore *) migratePersistentStore:(NSPersistentStore *) store toURL:(NSURL *) URL options:(NSDictionary *) options withType:(NSString *) storeType error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 If the migration is successful, the new store, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This method is typically used for “Save As” operations. Performance may vary depending on the type of old and new store. For more details of the action of this method, see Persistent Store Features in [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075).
 

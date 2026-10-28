@@ -13,7 +13,7 @@
 SFLT_GLOBAL = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this socket filter should be attached to all new sockets when they're created.
 

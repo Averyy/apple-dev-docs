@@ -17,7 +17,7 @@ The external forces applied to the particles in the body (in Newtons).
 var externalForces: PerClothVertexData<ClothBodyComponent.ExternalForce>
 ```
 
-#### Discussion
+## Discussion
 
 By default, the external forces are set to the zero vector.
 

@@ -6,7 +6,7 @@
 
 An atom that stores chunk information for the samples in a media.
 
-#### Overview
+## Overview
 
 See [`Sample-to-chunk atom`](../sample-to-chunk_atom.md).
 

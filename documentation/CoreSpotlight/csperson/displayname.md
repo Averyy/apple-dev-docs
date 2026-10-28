@@ -23,7 +23,7 @@ var displayName: String? { get }
 @property (readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this optional property to provide a name for the person object that can be displayed to users.
 

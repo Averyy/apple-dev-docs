@@ -23,7 +23,7 @@ func dataOutputSynchronizer(_ synchronizer: AVCaptureDataOutputSynchronizer, did
 - (void) dataOutputSynchronizer:(AVCaptureDataOutputSynchronizer *) synchronizer didOutputSynchronizedDataCollection:(AVCaptureSynchronizedDataCollection *) synchronizedDataCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Use the data collection’s [`synchronizedData(for:)`](../avcapturesynchronizeddatacollection/synchronizeddata%28for%29.md) method (or equivalent [`subscript(_:)`](../avcapturesynchronizeddatacollection/subscript%28_%29.md) operator) to retrieve the captured data corresponding to each capture output.
 

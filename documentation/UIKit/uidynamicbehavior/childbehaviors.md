@@ -23,7 +23,7 @@ var childBehaviors: [UIDynamicBehavior] { get }
 @property (nonatomic, copy, readonly) NSArray<__kindof UIDynamicBehavior *> * childBehaviors;
 ```
 
-#### Discussion
+## Discussion
 
 Only custom subclasses of the class can have child behaviors.
 

@@ -24,11 +24,11 @@ class func pinchDistortion() -> any CIFilter & CIPinchDistortion
 + (CIFilter<CIPinchDistortion> *) pinchDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the pinch distortion filter to an image. This effect creates a rectangular area that pinches source pixels inward, distorting those pixels closest to the rectangle the most.
 

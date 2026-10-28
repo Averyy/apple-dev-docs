@@ -25,7 +25,7 @@ var preferredMaximumResolution: CGSize { get set }
 @property CGSize preferredMaximumResolution;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`CGSizeZero`](../../CoreGraphics/cgsizezero.md), which indicates there is no limit on the video resolution. Any other value indicates a preferred maximum video resolution. This property only applies to HTTP Live Streaming assets.
 

@@ -26,7 +26,7 @@ var alertBody: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * alertBody;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the nonlocalized text that the notification’s alert displays.
 

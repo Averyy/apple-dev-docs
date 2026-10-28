@@ -21,7 +21,7 @@ var interstitials: [TVMediaItem.TimeRange] { get }
 @property (nonatomic, strong, readonly) NSArray<TVTimeRange *> * interstitials;
 ```
 
-#### Discussion
+## Discussion
 
 The `Interstitials` property defines points within a [`TVMediaItem`](../tvmediaitem.md) object where you can insert another media item; for example, a short ad. Each time range in the array contains two properties: [`startTime`](./timerange/starttime.md) and [`duration`](./timerange/duration.md). The `startTime` is the length of time from the beginning of a media item, in seconds. The `duration` is the length of the interstitial, in seconds. Both properties are required. A common use for these objects is to define when and where ads are to be played during a stream.
 

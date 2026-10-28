@@ -18,7 +18,7 @@ Replaces the entire contents of the index buffer synchronously on the CPU.
 final func replaceIndices<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 You pass a closure that receives a mutable span representing the contents of the index buffer. Upon entry the buffer’s contents are undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
 

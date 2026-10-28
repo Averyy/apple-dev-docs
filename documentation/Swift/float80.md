@@ -16,7 +16,7 @@ An extended-precision, floating-point value type.
 struct Float80
 ```
 
-#### Overview
+## Overview
 
 `Float80` is available on x86 if the target system’s `long double` C type is 80-bit, and unavailable otherwise.
 

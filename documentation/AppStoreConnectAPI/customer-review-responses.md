@@ -5,7 +5,7 @@
 
 Get, create, update, and delete your responses to customer reviews.
 
-#### Overview
+## Overview
 
 The `customerReviewResponses` resource represents your responses to customer reviews for apps you publish on the App Store. Each customer review can have at most one review response.
 

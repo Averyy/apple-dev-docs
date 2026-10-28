@@ -22,7 +22,7 @@ nonisolated
 func contentShape<S>(_ shape: S, eoFill: Bool = false) -> some View where S : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the given shape for hit testing.
 

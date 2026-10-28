@@ -25,7 +25,7 @@ static var fileTooLarge: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The file exceeds the maximum size allowed by the file system. For example, the maximum size on UFS is about 2.1 gigabytes, and about 9,223 petabytes on HFS-Plus and Apple File System.
 

@@ -24,7 +24,7 @@ case notDetermined
 ATTrackingManagerAuthorizationStatusNotDetermined
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: On macOS, [`trackingAuthorizationStatus`](../trackingauthorizationstatus.md) always returns this value.
 

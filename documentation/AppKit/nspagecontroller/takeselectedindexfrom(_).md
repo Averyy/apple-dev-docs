@@ -20,7 +20,7 @@ func takeSelectedIndexFrom(_ sender: Any?)
 - (void) takeSelectedIndexFrom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 When invoked, this method causes the page controller’s view to display the object specified by the value taken from the `sender` control.
 

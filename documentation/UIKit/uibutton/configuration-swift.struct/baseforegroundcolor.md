@@ -19,7 +19,7 @@ The untransformed color for foreground views.
 var baseForegroundColor: UIColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The button configuration may transform the base color before applying it to foreground views.
 

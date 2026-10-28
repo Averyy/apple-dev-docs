@@ -24,7 +24,7 @@ var proxyAutoConfigurationURL: URL? { get set }
 @property (copy, nullable) NSURL * proxyAutoConfigurationURL;
 ```
 
-#### Discussion
+## Discussion
 
 If [`autoProxyConfigurationEnabled`](./autoproxyconfigurationenabled.md) is set to [`true`](../../Swift/true.md) and [`proxyAutoConfigurationJavaScript`](./proxyautoconfigurationjavascript.md) is set to nil then the system will download the PAC script from this location and execute the script to determine what proxies to use (if any) for HTTP and HTTPS connections.
 

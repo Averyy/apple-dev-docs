@@ -22,7 +22,7 @@ Require DNSSEC validation when resolving an endpoint before making a connection.
 func dnssecValidationRequired(_ required: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 DNSSEC validation only takes effect if making a connection to an endpoint that requires domain name resolution, such as a host or URL endpoint.
 

@@ -21,11 +21,11 @@ Returns a point that results from rotating with the specified quaternion.
 static SPPoint3D SPPoint3DRotateByQuaternion(SPPoint3D point, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from rotating with the specified quaternion.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`rotated(by:around:)`](./point3d/rotated%28by,around%29-chuy.md) with a zero vector for the pivot.
 

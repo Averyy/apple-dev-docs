@@ -21,7 +21,7 @@ Draws a set of glyphs at a set of corresponding positions.
 func showGlyphs(_ glyphs: [CGGlyph], at positions: [CGPoint])
 ```
 
-#### Discussion
+## Discussion
 
 Points in the positions array are specified in text space, so the [`textMatrix`](./textmatrix.md) property defines their transformation to user space.
 

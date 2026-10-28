@@ -15,7 +15,7 @@ A format for a stream of time stamps.
 TimeCode
 ```
 
-#### Discussion
+## Discussion
 
 This format describes a stream of [`IOAudioTimeStamp`](../../../iokit/ioaudiotimestamp.md) valuess, using the [`IOAudioTimeStamp`](../../../iokit/ioaudiotimestamp.md) flags.
 

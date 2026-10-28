@@ -25,11 +25,11 @@ class func electric() -> SCNPhysicsField
 + (SCNPhysicsField *) electricField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Use this field type to make objects behave differently from one another when they enter a region, or to make an object’s behavior different from its mass-based behavior. An electric field behaves according to the first part of the Lorentz force equation modeling real-world electromagnetic forces—the field applies a force whose magnitude is proportional to electric charge and distance.
 

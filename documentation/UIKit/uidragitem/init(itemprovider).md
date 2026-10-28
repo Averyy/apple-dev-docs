@@ -22,11 +22,11 @@ init(itemProvider: NSItemProvider)
 - (instancetype) initWithItemProvider:(NSItemProvider *) itemProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A drag item that the system initializes with the specified item provider.
 
-#### Discussion
+## Discussion
 
 Provide an [`NSItemProvider`](../../Foundation/nsitemprovider.md) object to create a new drag item. The item provider communicates the data that the drag-and-drop activity shares between processes.
 

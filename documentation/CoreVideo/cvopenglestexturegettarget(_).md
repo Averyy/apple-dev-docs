@@ -23,7 +23,7 @@ func CVOpenGLESTextureGetTarget(_ image: CVOpenGLESTexture) -> GLenum
 extern GLenum CVOpenGLESTextureGetTarget(CVOpenGLESTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 An OpenGLES texture target, such as `GL_TEXTURE_2D`.
 

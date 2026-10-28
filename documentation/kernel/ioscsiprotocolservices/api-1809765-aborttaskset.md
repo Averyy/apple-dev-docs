@@ -12,11 +12,11 @@ SCSIServiceResponse AbortTaskSet (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 The Task Management function to allow the SCSI Application Layer client to request that a complete task set be aborted.
 

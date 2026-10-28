@@ -17,7 +17,7 @@ The corner radius that the sheet attempts to present with.
 @property (nonatomic) CGFloat preferredCornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UISheetPresentationControllerAutomaticDimension`](../uisheetpresentationcontrollerautomaticdimension.md). This property only has an effect when the sheet is at the front of its sheet stack.
 

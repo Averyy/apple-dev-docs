@@ -25,7 +25,7 @@ static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions { get }
 AVMusicSequenceLoadSMF_ChannelsToTracks
 ```
 
-#### Discussion
+## Discussion
 
 The MIDI sequence contains a tempo track, one track for each MIDI channel in the SMF, and one track (the last track) for `SysEx` and `MetaEvents`.
 

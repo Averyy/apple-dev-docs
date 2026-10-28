@@ -22,11 +22,11 @@ func AudioFileWritePacketsWithDependencies(_ inAudioFile: AudioFileID, _ inUseCa
 extern OSStatus AudioFileWritePacketsWithDependencies(AudioFileID inAudioFile, Boolean inUseCache, UInt32 inNumBytes, const AudioStreamPacketDescription *inPacketDescriptions, const AudioStreamPacketDependencyDescription *inPacketDependencies, SInt64 inStartingPacket, UInt32 *ioNumPackets, const void *inBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Write packets of audio data with corresponding packet dependencies to an audio data file.
 

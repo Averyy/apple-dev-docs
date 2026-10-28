@@ -22,11 +22,11 @@ func setTrustedServerCertificates(_ certificates: [Any]) -> Bool
 - (BOOL) setTrustedServerCertificates:(NSArray *) certificates;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) if any element in the array is not an object of type [`SecCertificate`](../../Security/seccertificate.md) or if the OS fails to find a persistent reference for each element from the application’s keychain; else return [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 Your app must store the certificates in keychain access group `$(TeamIdentifierPrefix)com.apple.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](../../Security/secitemcopymatching%28_,_%29.md) to obtain a persistent reference to each certificate from the application’s keychain and uses it during EAP authentication.
 

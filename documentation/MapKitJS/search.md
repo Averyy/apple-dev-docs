@@ -19,7 +19,7 @@ class Search extends Service
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 The search service lets you populate a map with results from a user-entered query, including information about businesses and other points of interest. MapKit JS handles this through a search object that makes network requests to the search service.
 

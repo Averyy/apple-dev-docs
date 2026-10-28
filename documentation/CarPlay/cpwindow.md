@@ -21,7 +21,7 @@ class CPWindow
 @interface CPWindow : UIWindow
 ```
 
-#### Overview
+## Overview
 
 Navigation apps use a window to render their maps, and CarPlay provides one via the scene delegate’s [`templateApplicationScene(_:didConnect:to:)`](./cptemplateapplicationscenedelegate/templateapplicationscene%28_,didconnect,to%29.md) method. For all other categories of apps, you use templates exclusively to draw your user interface, and your scene delegate must implement [`templateApplicationScene(_:didConnect:)`](./cptemplateapplicationscenedelegate/templateapplicationscene%28_,didconnect%29.md) instead.
 

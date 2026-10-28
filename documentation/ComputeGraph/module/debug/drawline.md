@@ -16,7 +16,7 @@ Draws a debug line
 void module::debug::drawLine(float3 from, float3 to, half4 color)
 ```
 
-#### Discussion
+## Discussion
 
 Debug Lines are not enabled by default. You enable them in your editor or by setting `LinkOptions/debugDraw` to true when compiling your pipelines, and assigning a `DebugLinesProvider` to your ComputeGraphSimulation.
 

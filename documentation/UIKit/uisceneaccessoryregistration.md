@@ -26,7 +26,7 @@ class UISceneAccessoryRegistration
 
 - [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 
-#### Overview
+## Overview
 
 Instances of this type allow for observing availability of a given scene accessory, as well as controlling whether the contents should be displayed when the system determines the scene is available.
 

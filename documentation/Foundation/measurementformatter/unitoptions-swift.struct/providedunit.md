@@ -23,7 +23,7 @@ static var providedUnit: MeasurementFormatter.UnitOptions { get }
 NSMeasurementFormatterUnitOptionsProvidedUnit
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the provided unit for the measurement should be used.
 

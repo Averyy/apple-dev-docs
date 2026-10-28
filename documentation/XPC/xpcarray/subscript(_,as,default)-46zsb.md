@@ -16,7 +16,7 @@ Get a value in this array as an endpoint.
 subscript(index: Int, as type: XPCEndpoint.Type = XPCEndpoint.self, default defaultValue: @autoclosure () -> XPCEndpoint) -> XPCEndpoint { get }
 ```
 
-#### Return Value
+## Return Value
 
 An endpoint value, possibly `defaultValue`.
 

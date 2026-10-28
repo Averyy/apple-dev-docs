@@ -22,7 +22,7 @@ protocol SFAddToHomeScreenActivityItem : NSObjectProtocol
 @protocol SFAddToHomeScreenActivityItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To add a bookmark to someone’s Home Screen from your browser app, create an object that conforms to [`SFAddToHomeScreenActivityItem`](./sfaddtohomescreenactivityitem.md) and present a [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md) that includes the activity item.
 

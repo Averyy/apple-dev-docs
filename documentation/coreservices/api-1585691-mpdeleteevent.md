@@ -15,11 +15,11 @@ Removes an event group.
 OSStatus MPDeleteEvent(MPEventID event);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 After deletion, the event ID becomes invalid, and all internal resources associated with the event group are reclaimed. Calling this function unblocks all tasks waiting on the event group and their respective  [`MPWaitForEvent`](./api-1585656-mpwaitforevent.md)  calls will return with the result code `kMPDeletedErr`.
 

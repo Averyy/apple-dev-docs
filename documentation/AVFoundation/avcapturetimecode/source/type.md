@@ -23,7 +23,7 @@ var type: AVCaptureTimecode.SourceType { get }
 @property (nonatomic, assign, readonly) AVCaptureTimecodeSourceType type;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the type of timecode source, represented as a value from the `AVCaptureTimecodeSynchronizationSourceType` enum. This helps you identify the source for specific synchronization use cases, such as frame counter, real-time clock, MIDI, or HID.
 

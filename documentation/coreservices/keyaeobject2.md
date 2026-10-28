@@ -14,7 +14,7 @@
 var keyAEObject2: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a descriptor for the element that is currently being compared to the object or data specified by the descriptor for the keyword `keyAEObject1`.
 

@@ -20,7 +20,7 @@ Drives timeline playback of a USD stage and produces per-frame render data.
 final class USDPlayer
 ```
 
-#### Overview
+## Overview
 
 An object that drives timeline playback of a USD stage in RealityKit.
 

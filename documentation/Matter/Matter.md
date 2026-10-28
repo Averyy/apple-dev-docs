@@ -15,7 +15,7 @@ Communicate with and control smart home devices from a variety of manufacturers.
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 The [Matter](https://csa-iot.org/all-solutions/matter/) smart home connectivity standard enables interoperability between various smart home devices and ecosystems. Use  [MatterSupport](../MatterSupport/MatterSupport.md)  to bring accessories onto a local network, then commission and control those accessories using Matter.
 

@@ -20,7 +20,7 @@ Accesses the element with the specified identifier.
 subscript(id: IKComponent.SolverCollection.Element.ID) -> IKComponent.SolverCollection.Element? { get set }
 ```
 
-#### Overview
+## Overview
 
 The following set scenarios are ignored:
 

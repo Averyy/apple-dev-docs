@@ -19,11 +19,11 @@ Begins the credential import process.
 func importCredentials(token: UUID) async throws -> ASExportedCredentialData
 ```
 
-#### Return Value
+## Return Value
 
 The credential data exported from the source app.
 
-#### Discussion
+## Discussion
 
 When a person chooses your app to receive credentials exported from another app, the system launches your app using an [`NSUserActivity`](../../Foundation/nsuseractivity.md) of type `ASCredentialExchangeActivityType`. Handle this in your app delegate for AppKit/UIKit or the [`onContinueUserActivity(_:perform:)`](../../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) modifier for SwiftUI. The `NSUserActivity` you receive contains a single [`UUID`](../../Foundation/uuid.md) object in its `userInfo` field with the key `ASCredentialImportToken`; pass this UUID as the `token` parameter to this method.
 

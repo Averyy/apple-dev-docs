@@ -19,11 +19,11 @@ init(title: String)
 - (instancetype) initWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSMenu` object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the class.
 

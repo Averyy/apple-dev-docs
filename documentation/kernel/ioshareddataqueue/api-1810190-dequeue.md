@@ -13,11 +13,11 @@ virtual Boolean dequeue(
  UInt32 *dataSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success and false on failure. Typically failure means that the queue is empty.
 
-#### Overview
+## Overview
 
 This function will dequeue the next available entry on the queue. If a data pointer is provided, it will copy the data into the memory region if there is enough space available as specified in the dataSize parameter. If no data pointer is provided, it will simply move the head value past the current entry.
 

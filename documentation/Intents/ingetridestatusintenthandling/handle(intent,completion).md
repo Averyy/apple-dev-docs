@@ -28,7 +28,7 @@ func handle(intent: INGetRideStatusIntent) async -> INGetRideStatusIntentRespons
 - (void) handleGetRideStatus:(INGetRideStatusIntent *) intent completion:(void (^)(INGetRideStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, retrieve the status of the user’s current ride, put that information into a response object, and call the provided `completion` block with the results.
 

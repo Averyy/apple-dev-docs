@@ -21,7 +21,7 @@ nonisolated
 struct DefaultShareLinkLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, [`ShareLink`](./sharelink.md) uses it automatically depending on how you create a share link.
 

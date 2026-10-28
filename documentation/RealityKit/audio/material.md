@@ -20,7 +20,7 @@ A type that describes the acoustic characteristics of a surface.
 struct Material
 ```
 
-#### Overview
+## Overview
 
 An audio material defines how a surface absorbs and scatters sound energy across frequency bands. Use preset materials for common real-world surfaces, or create custom materials from raw absorption and scattering coefficients.
 

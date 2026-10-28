@@ -5,7 +5,7 @@
 
 Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
 
-#### Overview
+## Overview
 
 Use the [`kCVImageBufferChromaSubsamplingKey`](./kcvimagebufferchromasubsamplingkey.md) key to attach one of these values to the image buffer.
 

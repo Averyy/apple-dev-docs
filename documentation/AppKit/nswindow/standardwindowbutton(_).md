@@ -19,7 +19,7 @@ func standardWindowButton(_ b: NSWindow.ButtonType) -> NSButton?
 - (NSButton *) standardWindowButton:(NSWindowButton) b;
 ```
 
-#### Return Value
+## Return Value
 
 Window button in the window’s view hierarchy of the type identified by `b`; `nil` when such button is not in the window’s view hierarchy.
 

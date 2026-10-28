@@ -19,7 +19,7 @@ A color transformer that returns the color with a monochrome tint.
 extern const UIConfigurationColorTransformer UIConfigurationColorTransformerMonochromeTint;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color transformer to deemphasize a tinted item. The tinted item remains monochrome regardless of the system accent color.
 

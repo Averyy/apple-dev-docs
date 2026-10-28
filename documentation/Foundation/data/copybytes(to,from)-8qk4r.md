@@ -21,7 +21,7 @@ Copies a subset of the contents of the data to memory.
 func copyBytes(to pointer: UnsafeMutablePointer<UInt8>, from range: Range<Data.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method does not verify that the contents at pointer have enough space to hold the required number of bytes.
 

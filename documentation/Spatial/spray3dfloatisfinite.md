@@ -19,11 +19,11 @@
 static bool SPRay3DFloatIsFinite(SPRay3DFloat ray);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the values of the ray are finite.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the values of the ray are finite.
 

@@ -17,7 +17,7 @@ Launches a networking extension process asynchronously.
 + (void) networkProcessWithInterruptionHandler:(void (^)()) interruptionHandler completion:(void (^)(BENetworkingProcess *process, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app can run one instance of each of its networking extensions. The first time you call this method, the system launches your networking extension. If you subsequently call this method, or you call [`networkProcessWithBundleID:interruptionHandler:completion:`](./networkprocesswithbundleid_interruptionhandler_completion_.md) with `nil` as the bundle identifier, your completion handler gets a reference to the same process.
 

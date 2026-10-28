@@ -15,7 +15,7 @@ A static text element that represents the accessibility element’s title.
 @property (weak, nullable) id accessibilityTitleUIElement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to associate a static text label with another element—for example, to associate a label with its corresponding text field.
 

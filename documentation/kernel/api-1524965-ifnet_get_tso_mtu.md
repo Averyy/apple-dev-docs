@@ -13,11 +13,11 @@
 errno_t ifnet_get_tso_mtu(ifnet_t interface, sa_family_t family, u_int32_t *mtuLen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Returns maximum TCP Segmentation Offload segment size for the interface
 

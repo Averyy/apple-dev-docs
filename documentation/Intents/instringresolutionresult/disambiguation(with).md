@@ -24,11 +24,11 @@ class func disambiguation(with stringsToDisambiguate: [String]) -> Self
 + (instancetype) disambiguationWithStringsToDisambiguate:(NSArray<NSString *> *) stringsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStringResolutionResult`](../instringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there is more one value that might match the given parameter. The user is asked to select from among the strings you provide.
 

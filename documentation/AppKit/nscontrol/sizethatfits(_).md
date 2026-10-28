@@ -19,11 +19,11 @@ func sizeThatFits(_ size: NSSize) -> NSSize
 - (NSSize) sizeThatFits:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new size that fits the receiver’s subviews.
 
-#### Discussion
+## Discussion
 
 By default, this method returns the [`intrinsicContentSize`](../nsview/intrinsiccontentsize.md) of the receiver.
 

@@ -18,11 +18,11 @@ Translates multiple strings of text of the same language, returning a sequence o
 func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` of responses containing the text translations.
 
-#### Discussion
+## Discussion
 
 This function translates multiple strings of text incrementally and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 

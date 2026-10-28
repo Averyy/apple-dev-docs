@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized kernel object with a specific width and height.
 

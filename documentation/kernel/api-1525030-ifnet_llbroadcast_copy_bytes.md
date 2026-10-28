@@ -13,7 +13,7 @@
 errno_t ifnet_llbroadcast_copy_bytes(ifnet_t interface, void *addr, size_t bufferlen, size_t *out_len);
 ```
 
-#### Discussion
+## Discussion
 
 Retrieves the link-layer broadcast address for this interface.
 

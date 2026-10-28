@@ -27,7 +27,7 @@ class UIStepper
 
 - [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 
-#### Overview
+## Overview
 
 By default, pressing and holding a stepper’s button increments or decrements the stepper’s value repeatedly. The rate of change depends on how long the user continues pressing the control. To turn off this behavior, set the [`autorepeat`](./uistepper/autorepeat.md) property to [`false`](../Swift/false.md).
 

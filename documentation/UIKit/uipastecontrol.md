@@ -23,7 +23,7 @@ class UIPasteControl
 @interface UIPasteControl : UIControl
 ```
 
-#### Overview
+## Overview
 
 You can configure the button to appear as an icon, text, or both. The following button represents the icon and text option:
 
@@ -31,7 +31,7 @@ You can configure the button to appear as an icon, text, or both. The following 
 
 In iOS 16 and later, programmatic pasting raises a user alert that prompts the user for approval before the app gains access to pasteboard contents (`UIPasteboard.general.string`). Use this class to paste without a user prompt.
 
-##### Add a paste button to a text view
+### Add a paste button to a text view
 
 The following code displays a paste button and assigns a text view as the recipient of pasteboard contents:
 

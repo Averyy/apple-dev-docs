@@ -19,11 +19,11 @@ func writeSync(_ data: UnsafeMutableRawPointer!, length: UInt16) -> IOReturn
 - (IOReturn) writeSync:(void *) data length:(UInt16) length;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the data was written successfully.
 
-#### Discussion
+## Discussion
 
 Sends data through the channel. The number of bytes to be sent must not exceed the channel MTU. If the return value is an error condition none of the data was sent. This method will block until the data has been successfully sent to the hardware for transmission (or until an error occurs).
 

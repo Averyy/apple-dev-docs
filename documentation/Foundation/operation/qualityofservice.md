@@ -25,7 +25,7 @@ var qualityOfService: QualityOfService { get set }
 @property NSQualityOfService qualityOfService;
 ```
 
-#### Discussion
+## Discussion
 
 Service levels affect the priority with which an operation object is given access to system resources such as CPU time, network resources, disk resources, and so on. Operations with a higher quality of service level are given greater priority over system resources so that they may perform their task more quickly. You use service levels to ensure that operations responding to explicit user requests are given priority over less critical work.
 

@@ -24,7 +24,7 @@ func AudioComponentCopyName(_ inComponent: AudioComponent, _ outName: UnsafeMuta
 extern OSStatus AudioComponentCopyName(AudioComponent inComponent, CFStringRef*outName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

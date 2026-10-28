@@ -22,7 +22,7 @@ var outerIdentity: String { get set }
 @property (copy) NSString * outerIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional and is used only with TTLS, PEAP, and EAP-FAST networks.
 

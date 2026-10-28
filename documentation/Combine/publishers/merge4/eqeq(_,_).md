@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Merge4<A, B, C, D>, rhs: Publishers.Merge4<A, B,
 
 Available when `A` conforms to `Publisher`, `A` conforms to `Equatable`, `B` conforms to `Publisher`, `B` conforms to `Equatable`, `C` conforms to `Publisher`, `C` conforms to `Equatable`, `D` conforms to `Publisher`, `D` conforms to `Equatable`, `A.Failure` is `B.Failure`, `A.Output` is `B.Output`, `B.Failure` is `C.Failure`, `B.Output` is `C.Output`, `C.Failure` is `D.Failure`, and `C.Output` is `D.Output`.
 
-#### Return Value
+## Return Value
 
 `true` if the two merging publishers have equal source publishers; otherwise `false`.
 

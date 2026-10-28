@@ -25,7 +25,7 @@ var BNNSLossFunctionSigmoidCrossEntropy: BNNSLossFunction { get }
 BNNSLossFunctionSigmoidCrossEntropy
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionSigmoidCrossEntropy`](./bnnslossfunctionsigmoidcrossentropy.md) performs sigmoid on input logits and computes cross entropy loss for each class independently.
 

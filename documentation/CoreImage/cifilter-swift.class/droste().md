@@ -24,11 +24,11 @@ class func droste() -> any CIFilter & CIDroste
 + (CIFilter<CIDroste> *) drosteFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the Droste filter to an image. This effect creates a Droste effect that distorts the image by repeating smaller versions of the same image within itself.
 

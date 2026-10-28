@@ -23,7 +23,7 @@ init?(formatDescription: CMAudioFormatDescription)
 - (instancetype) initWithFormatDescription:(CMAudioFormatDescriptionRef) formatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize from a CMAudioFormatDescriptionRef.
 

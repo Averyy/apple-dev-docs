@@ -21,7 +21,7 @@ A size proposal that contains zero in both dimensions.
 static let zero: ProposedViewSize
 ```
 
-#### Discussion
+## Discussion
 
 Subviews of a custom layout return their minimum size when you propose this value using the [`dimensions(in:)`](../layoutsubview/dimensions%28in%29.md) method. A custom layout should also return its minimum size from the [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md) method for this value.
 

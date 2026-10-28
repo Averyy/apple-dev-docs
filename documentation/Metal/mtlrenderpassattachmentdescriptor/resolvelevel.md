@@ -24,7 +24,7 @@ var resolveLevel: Int { get set }
 @property (nonatomic) NSUInteger resolveLevel;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of [`storeAction`](./storeaction.md) is set to [`MTLStoreAction.multisampleResolve`](../mtlstoreaction/multisampleresolve.md) or [`MTLStoreAction.storeAndMultisampleResolve`](../mtlstoreaction/storeandmultisampleresolve.md), set this property to point to a mipmap in the resolve texture.
 

@@ -26,11 +26,11 @@ class func creationRequestForDownloadJob(resource: PHAssetResource) -> Self
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A change request for the created job.
 
-#### Discussion
+## Discussion
 
 This method registers a job that requests an asset resource be downloaded from iCloud to the device without uploading it to a remote server. The download operation is performed asynchronously by the system over time. This is useful when you need to ensure a resource is available locally for processing.
 

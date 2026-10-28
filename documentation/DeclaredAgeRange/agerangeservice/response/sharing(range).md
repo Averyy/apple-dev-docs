@@ -18,7 +18,7 @@ Contains the person’s shared age range information.
 case sharing(range: AgeRangeService.AgeRange)
 ```
 
-#### Discussion
+## Discussion
 
 When you receive this response, the person successfully shared their age information. Use the associated `AgeRange` value to make appropriate content decisions for your app.
 

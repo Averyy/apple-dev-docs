@@ -25,7 +25,7 @@ string messageState
 
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 Call [`Get Message List`](./get-message-list.md) to get the list of messages and their current states.
 

@@ -16,7 +16,7 @@ Convenience method to remove asynchronous callback mechanisms from the CFRunLoop
 void (*RemoveCallbackDispatcherFromRunLoop)(void *self);
 ```
 
-#### Discussion
+## Discussion
 
 Once a SCSITaskDeviceInterface is opened, the client may make synchronous or asynchronous requests to the device. This method removes the asynchronous notifications delivered via the CFRunLoop. This should be called only after calling AddCallbackDispatcherToRunLoop.
 

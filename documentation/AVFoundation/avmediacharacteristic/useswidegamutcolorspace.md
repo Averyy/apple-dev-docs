@@ -29,7 +29,7 @@ extern AVMediaCharacteristic const AVMediaCharacteristicUsesWideGamutColorSpace;
 
 - [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
-#### Discussion
+## Discussion
 
 Tracks that use a wide-gamut color space may use colors that can’t be accurately represented in standard RGB mode.
 

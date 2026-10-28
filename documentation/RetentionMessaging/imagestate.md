@@ -25,7 +25,7 @@ string imageState
 
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 Call [`Get Image List`](./get-image-list.md) to get the list of images and their current state.
 

@@ -10,11 +10,11 @@ Use a variety of C++ APIs in Swift – and vice-versa – across multiple target
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2023 sessions 10172: [Mix Swift and C++](https://developer.apple.com/wwdc23/10172) and 10268: [Meet mergeable libraries](https://developer.apple.com/wwdc23/10268).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode, ensure you’re using macOS 14.0 or later.
 

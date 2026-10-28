@@ -21,7 +21,7 @@ Decrements the retain count of a data provider.
 extern void CGDataProviderRelease(CGDataProviderRef provider);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `provider` parameter is `NULL`.
 

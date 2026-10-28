@@ -17,7 +17,7 @@ The postbacks aren’t correctly related to one another.
 static var unlinkedWinningPostbacks: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To create linked winning postbacks for testing multiple conversion windows, use the [`winningPostbacks(withVersion:adNetworkIdentifier:sourceIdentifier:appStoreItemIdentifier:sourceAppStoreItemIdentifier:sourceDomain:fidelityType:isRedownload:postbackURL:)`](../skadtestpostback/winningpostbacks%28withversion,adnetworkidentifier,sourceidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,sourcedomain,fidelitytype,isredownload,postbackurl%29.md) method.
 

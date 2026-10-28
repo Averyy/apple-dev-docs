@@ -13,7 +13,7 @@ virtual void addToBytesTransferred(
  boolisWrite);
 ```
 
-#### Overview
+## Overview
 
 Update the total number of bytes transferred, the total transfer time, and the total latency time -- used for statistics.
 

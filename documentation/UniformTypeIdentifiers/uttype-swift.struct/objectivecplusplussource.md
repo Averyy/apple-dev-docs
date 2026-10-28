@@ -21,7 +21,7 @@ A type that represents an Objective-C++ source code file.
 static var objectiveCPlusPlusSource: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.objective-c-plus-plus-source`.
 

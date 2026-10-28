@@ -22,7 +22,7 @@ The hierarchy of a heading in relation to other headings.
 enum AccessibilityHeadingLevel
 ```
 
-#### Overview
+## Overview
 
 Assistive technologies can use this to improve a user’s navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
 

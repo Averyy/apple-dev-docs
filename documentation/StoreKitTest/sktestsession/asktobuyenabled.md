@@ -25,7 +25,7 @@ var askToBuyEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL askToBuyEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. Enabling this property causes all purchases to require approval until you disable it. To approve the purchase in the testing environment, call [`approveAskToBuyTransaction(identifier:)`](./approveasktobuytransaction%28identifier%29.md), and to decline it, call [`declineAskToBuyTransaction(identifier:)`](./declineasktobuytransaction%28identifier%29.md).
 

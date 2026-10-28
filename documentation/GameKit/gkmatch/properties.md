@@ -24,7 +24,7 @@ var properties: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) GKMatchProperties * properties;
 ```
 
-#### Discussion
+## Discussion
 
 This property is similar to the [`GKMatchRequest`](../gkmatchrequest.md).[`properties`](../gkmatchrequest/properties.md) property but with some additions that Game Center may add. For example, if you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team.
 

@@ -20,7 +20,7 @@ class LSMResult
 typedef struct __LSMResult * LSMResultRef;
 ```
 
-#### Overview
+## Overview
 
 An [`LSMResult`](./lsmresult.md) is an immutable, opaque Core Foundation type that represents the result of a lookup.
 

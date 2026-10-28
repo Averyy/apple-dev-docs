@@ -20,7 +20,7 @@ Returns a boundary style that uses a box enclosing the portal surface.
 static func enclosingBox(depth: Float) -> PortalComponent.BoundaryStyle
 ```
 
-#### Discussion
+## Discussion
 
 The box is centered on the portal entity’s origin. Its X and Y extents come from the accompanying [`PortalComponent.SurfaceStyle`](../surfacestyle.md); its Z extent is the `depth` you provide.
 

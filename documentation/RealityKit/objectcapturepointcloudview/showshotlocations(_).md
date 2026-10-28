@@ -17,7 +17,7 @@ Shows the locations where shots have been taken. Example: ObjectCapturePointClou
 func showShotLocations(_ value: Bool = true) -> ObjectCapturePointCloudView
 ```
 
-#### Discussion
+## Discussion
 
 It can also be passed a value if there is a state variable controlling it:
 

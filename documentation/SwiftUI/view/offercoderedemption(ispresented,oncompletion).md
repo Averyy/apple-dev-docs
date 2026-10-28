@@ -20,7 +20,7 @@ nonisolated
 func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: @escaping @MainActor (Result<Void, any Error>) -> Void = { _ in }) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 

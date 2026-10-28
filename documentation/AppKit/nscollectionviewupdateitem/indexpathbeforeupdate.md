@@ -19,7 +19,7 @@ var indexPathBeforeUpdate: IndexPath? { get }
 @property (readonly, nullable) NSIndexPath * indexPathBeforeUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` for an action of type [`NSCollectionView.UpdateAction.insert`](../nscollectionview/updateaction/insert.md).
 

@@ -25,9 +25,9 @@ func vvdivf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 void vvdivf(float *, const float *, const float *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The numerators input array, *y*.

@@ -18,7 +18,7 @@ Informs the searchable object to replace all matching text across all searchable
 - (void) replaceAllOccurrencesOfQueryString:(NSString *) queryString usingOptions:(UITextSearchOptions *) options withText:(NSString *) replacementText;
 ```
 
-#### Discussion
+## Discussion
 
 When [`supportsTextReplacement`](./supportstextreplacement.md) returns `YES,` the system calls this method during a find session to request the replacement of all text matching the query string.
 

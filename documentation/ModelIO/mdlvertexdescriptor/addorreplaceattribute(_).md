@@ -24,7 +24,7 @@ func addOrReplaceAttribute(_ attribute: MDLVertexAttribute)
 - (void) addOrReplaceAttribute:(MDLVertexAttribute *) attribute;
 ```
 
-#### Discussion
+## Discussion
 
 If the vertex descriptor contains an attribute whose [`name`](../mdlvertexattribute/name.md) property is the same as that of the `attribute` parameter, the new attribute replaces the existing attribute in the [`attributes`](./attributes.md) array. Otherwise, this method adds the new attribute to the end of the [`attributes`](./attributes.md) array.
 

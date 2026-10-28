@@ -24,7 +24,7 @@ class GKGraphNode
 @interface GKGraphNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 A set of connected nodes form a graph that describes the navigability of a game world. Use graph nodes together with a [`GKGraph`](./gkgraph.md) object (or one of its subclasses) to perform actions that relate to the network of nodes as a whole, such as pathfinding to determine routes through the network.
 

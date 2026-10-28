@@ -21,7 +21,7 @@ References sample data in at a URL.
 struct CMSampleDataReference
 ```
 
-#### Overview
+## Overview
 
 The size of the data is provided as [`totalSampleSize`](./cmreadysamplebuffer/totalsamplesize.md).
 

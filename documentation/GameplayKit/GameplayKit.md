@@ -14,15 +14,15 @@ Architect and organize your game logic. Incorporate common gameplay behaviors s
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 GameplayKit is an object-oriented framework that provides foundational tools and technologies for building games. GameplayKit includes tools for designing games with functional, reusable architecture, as well as technologies for building and enhancing gameplay features such as character movement and opponent behavior.
 
-##### Getting Started with GameplayKit
+### Getting Started with GameplayKit
 
 GameplayKit covers many aspects of game design and development. For deeper discussions of the game design patterns you can leverage with GameplayKit, along with tutorials that illustrate building games with GameplayKit features, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
-##### Related Sample Code
+### Related Sample Code
 
 To experiment with GameplayKit in action, see these sample code projects:
 

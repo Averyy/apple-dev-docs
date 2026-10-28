@@ -24,7 +24,7 @@ func L2NormPooling4D(_ source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDe
 - (MPSGraphTensor *) L2NormPooling4DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

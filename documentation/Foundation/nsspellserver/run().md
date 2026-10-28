@@ -20,7 +20,7 @@ func run()
 - (void) run;
 ```
 
-#### Discussion
+## Discussion
 
 This method starts a loop that never returns; you need to set the `NSSpellServer` object’s delegate before sending this message.
 

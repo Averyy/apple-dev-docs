@@ -25,7 +25,7 @@ var destination: MKMapItem { get }
 @property (nonatomic, readonly) MKMapItem * destination;
 ```
 
-#### Discussion
+## Discussion
 
 The item in this property may contain additional details that aren’t in the original item you use to create the [`MKDirections.Request`](../request.md) object.
 

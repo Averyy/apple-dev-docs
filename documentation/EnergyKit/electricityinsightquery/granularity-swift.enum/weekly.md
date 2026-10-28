@@ -17,7 +17,7 @@ A weekly aggregated insight record for at least six months.
 case weekly
 ```
 
-#### Discussion
+## Discussion
 
 The data period returns insight records aggregated by week for at least six calendar months, and includes the requested date range, potentially starting before the query date. In the data range, the data begins on the first Monday of January or the first Monday of July. Data ends on the first Monday of July or the first Monday of January or the last available data for the query.
 

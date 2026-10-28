@@ -5,13 +5,13 @@
 
 Specify how entities relate and how change propagates between them.
 
-#### Overview
+## Overview
 
 After you define at least two entities as described in [Configuring Entities](./configuring-entities.md), you can add a relationship between the entities.
 
 A relationship describes how an entity affects another entity. At minimum, a relationship specifies a name, a destination entity, a delete rule, a cardinality type (To One or To Many), settings for whether the relationship must be saved in the store (transient), and whether it is required to have a value when saved (optional). You must also configure every relationship with an inverse relationship.
 
-##### Add Relationships
+### Add Relationships
 
 To add a relationship, do the following:
 
@@ -20,7 +20,7 @@ To add a relationship, do the following:
 
 ![A screenshot showing two entities side-by-side in the Data Model editor when the Graph editor style is in a selected state. An arrow that represents a relationship joins the two entities.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3842670@2x.png)
 
-##### Configure Relationships
+### Configure Relationships
 
 After creating a pair of relationships, configure each relationship as indicated in the screenshot and the steps that follow:
 

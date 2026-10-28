@@ -28,11 +28,11 @@ OSStatus SSLSetConnection(SSLContextRef context, SSLConnectionRef connection);
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You must establish a connection before creating a secure session. After calling the [`SSLCreateContext(_:_:_:)`](./sslcreatecontext%28_,_,_%29.md) function to create an SSL session context, you call the [`SSLSetConnection(_:_:)`](./sslsetconnection%28_,_%29.md) function to specify the connection to which the context applies. You specify a value in the `connection` parameter that your callback routines can use to identify the connection. This value might be a pointer to a socket (if you are using the Sockets API) or an endpoint (if you are using Open Transport). For example, you might create a socket, start a connection on it, create a context reference, cast the socket to an [`SSLConnectionRef`](./sslconnectionref.md), and then pass both the context reference and connection reference to the [`SSLSetConnection(_:_:)`](./sslsetconnection%28_,_%29.md) function.
 

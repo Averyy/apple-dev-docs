@@ -20,7 +20,7 @@ optional func windowDidEndSheet(_ notification: Notification)
 - (void) windowDidEndSheet:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 

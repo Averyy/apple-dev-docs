@@ -5,7 +5,7 @@
 
 Package your existing extension as a Safari web extension using Xcode’s command-line tool.
 
-#### Overview
+## Overview
 
 If you create a web extension that works in a browser other than Safari, you can deploy it in Safari by using the Safari web extension packager. The packager:
 
@@ -15,7 +15,7 @@ If you create a web extension that works in a browser other than Safari, you can
 
 Safari web extension packager is available as a command line tool which you can use alongside Xcode on a Mac, or as a web-based tool available in App Store Connect. To learn more about using the web-based tool, see [Packaging and distributing Safari Web Extensions with App Store Connect](./packaging-and-distributing-safari-web-extensions-with-app-store-connect.md).
 
-##### Run the packager
+### Run the packager
 
 To run the packager, open the Terminal app and run the `xcrun` command with the `safari-web-extension-packager` option, providing the path for your existing extension files.
 
@@ -47,7 +47,7 @@ New Xcode projects require you to select either the Swift or Objective-C languag
 
 If the packager runs interactively, it asks you to confirm your selections and gives you the opportunity to update them.
 
-##### Review the manifest warnings
+### Review the manifest warnings
 
 The packager generates and opens your new Xcode project. The packager reports any manifest keys that the current version of Safari doesn’t support.
 
@@ -62,11 +62,11 @@ offline_enabled
 
 Review any reported exceptions, and see [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md) for details on how to resolve them.
 
-##### Build and run your converted Safari web extension
+### Build and run your converted Safari web extension
 
 To see your converted extension in Safari, follow the instructions in [Running your Safari web extension](./running-your-safari-web-extension.md).
 
-##### Add iOS to your existing Xcode project
+### Add iOS to your existing Xcode project
 
 If you have an existing Xcode project with a macOS Safari web extension, and you want to add support for iOS to it, use the packager with the `--rebuild-project` option.
 

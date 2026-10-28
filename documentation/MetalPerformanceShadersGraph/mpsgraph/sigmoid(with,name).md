@@ -24,7 +24,7 @@ func sigmoid(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) sigmoidWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 

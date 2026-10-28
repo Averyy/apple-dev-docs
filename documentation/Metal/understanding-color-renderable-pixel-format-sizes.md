@@ -5,7 +5,7 @@
 
 Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
 
-#### Overview
+## Overview
 
 A *color render target* is a texture that’s an output destination for the color data that a render pass generates. Pixel formats that you can assign to these color render targets are *color-renderable pixel formats*.
 

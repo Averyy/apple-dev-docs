@@ -13,7 +13,7 @@ virtual IOReturn SetConfiguration(
  boolissueRemoteWakeup);
 ```
 
-#### Overview
+## Overview
 
 Do a USB SetConfiguration call to the device. The caller must have the device open() in order to actually cause a configuration change. If the device is currently configured, all IOUSBInterface objects associated with the device are freed. After the new configuration has been set, all of its IOUSBInterface objects are instantiated automatically.
 

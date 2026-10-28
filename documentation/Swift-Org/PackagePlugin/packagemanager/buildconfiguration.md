@@ -17,7 +17,7 @@ The configuration to use for the build.
 enum BuildConfiguration
 ```
 
-#### Overview
+## Overview
 
 The configuration affects optimization and generation of debug symbols.
 

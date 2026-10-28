@@ -25,7 +25,7 @@ var dataStride: Int { get }
 @property (nonatomic, readonly) NSInteger dataStride;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the [`SCNGeometrySource`](../scngeometrysource.md) and [`SCNGeometrySource`](../scngeometrysource.md) parameters can together to interleave data for multiple geometry sources in the same array, improving rendering performance. See [`SCNGeometrySource`](../scngeometrysource.md) for details.
 

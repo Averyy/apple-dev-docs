@@ -5,19 +5,19 @@
 
 Configure Xcode to produce the symbol information for debugging and crash reports.
 
-#### Overview
+## Overview
 
 When Xcode compiles your source code into machine code, it generates a list of symbols in your app — class names, global variables, and method and function names. These symbols correspond to the file and line numbers where they’re defined; this association creates a *debug symbol*, so you can use the debugger in Xcode, or refer to line numbers reported by a crash report. Debug builds of an app place the debug symbols inside the compiled binary file by default, while release builds of an app place the debug symbols in a companion debug symbol (`dSYM`) file to reduce the size of the distributed app.
 
 Each binary file in an app — the main app executable, frameworks, and app extensions — has its own `dSYM` file. The compiled binary and its companion `dSYM` file are tied together by a build UUID that’s recorded by both the built binary and `dSYM` file. If you build two binaries from the same source code but with different Xcode versions or build settings, the build UUIDs for the two binaries won’t match. A binary and a `dSYM` file are only compatible with each other when they have identical build UUIDs. Keep the `dSYM` files for the specific builds you distribute, and use them when diagnosing issues from crash reports.
 
-##### Build your app with symbol information
+### Build your app with symbol information
 
 Before building your app for distribution, verify that the [Debug Information Format](./build-settings-reference.md#Debug-Information-Format) build setting is set to DWARF with dSYM File. This generates the necessary `dSYM` files, so you can diagnose crashes after releasing your app. For instructions on configuring the build settings for your project, see [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
 These `dSYM` files are the most common type of symbol file you need when debugging an app after releasing it.
 
-##### Publish your app with symbol information
+### Publish your app with symbol information
 
 When archiving your app for distribution, Xcode gathers all binaries and `dSYM` files for your app and stores them inside the Xcode archive.
 

@@ -38,7 +38,7 @@ Sets the description shown for a widget when a user adds or edits it using the c
 @preconcurrency func description<S>(_ description: S) -> some WidgetConfiguration where S : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A widget configuration with a description of the widget.
 

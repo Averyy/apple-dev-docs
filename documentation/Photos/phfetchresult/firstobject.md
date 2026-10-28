@@ -24,7 +24,7 @@ var firstObject: ObjectType? { get }
 @property (nonatomic, readonly, nullable) ObjectType firstObject;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the ordering of a fetch result in the [`PHFetchOptions`](../phfetchoptions.md) object you pass to a fetch method.
 

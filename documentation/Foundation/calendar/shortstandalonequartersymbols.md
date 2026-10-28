@@ -21,7 +21,7 @@ A list of shorter-named standalone quarters in this calendar, localized to the C
 var shortStandaloneQuarterSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["Q1", "Q2", "Q3", "Q4"]`.
 

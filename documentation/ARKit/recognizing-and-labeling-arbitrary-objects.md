@@ -11,13 +11,13 @@ Create anchors that track objects you recognize in the camera feed, using a cust
 - iPadOS 12.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app parses the camera feed, using the [Vision](../Vision/Vision.md) framework with a [Core ML](../CoreML/CoreML.md) model that recognizes regular desktop items. The app displays a label onscreen that indicates when it recognizes an item. You then tap the screen to place a textual annotation in the physical environment that’s labeled with the name of the recognized object. Because the Core ML model used by this app doesn’t tell you where the object lies within an image, label placement relative to the object depends on where you tap.
 
 > **Note**: ARKit requires an iOS device with an A9 or later processor. ARKit is not available in iOS Simulator.
 
-#### Implement the vision/core ML image classifier
+## Implement the vision/core ML image classifier
 
 The sample code’s `classificationRequest` property, `classifyCurrentImage() method, and `processClassifications(for:error:)` method manage:
 
@@ -26,7 +26,7 @@ The sample code’s `classificationRequest` property, `classifyCurrentImage() me
 
 For more details on using [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md),[`VNCoreMLRequest`](../Vision/vncoremlrequest.md), and image classifier models, see the [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md) sample-code project.
 
-#### Run the AR session and process camera images
+## Run the AR session and process camera images
 
 The sample `ViewController` class manages the AR session and displays AR overlay content in a SpriteKit view. ARKit captures video frames from the camera and provides them to the view controller in the [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) method, which then calls the `classifyCurrentImage()` method to run the Vision image classifier.
 
@@ -44,7 +44,7 @@ func session(_ session: ARSession, didUpdate frame: ARFrame) {
 }
 ```
 
-#### Serialize image processing for real-time performance
+## Serialize image processing for real-time performance
 
 The `classifyCurrentImage()` method uses the view controller’s `currentBuffer` property to track whether Vision is currently processing an image before starting another Vision task.
 
@@ -68,7 +68,7 @@ visionQueue.async {
 
 In addition, the sample app enables the [`usesCPUOnly`](../Vision/vnrequest/usescpuonly.md) setting for its Vision request, freeing the GPU for use in rendering.
 
-#### Visualize results in AR
+## Visualize results in AR
 
 The `processClassifications(for:error:) method stores the best-match result label produced by the image classifier and displays it in the corner of the screen. The user can then tap in the AR scene to place that label at a real-world position. Placing a label requires two main steps.
 

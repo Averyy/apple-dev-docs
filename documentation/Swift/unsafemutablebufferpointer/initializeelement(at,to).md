@@ -21,7 +21,7 @@ Initializes the element at `index` to the given value.
 func initializeElement(at index: UnsafeMutableBufferPointer<Element>.Index, to value: consuming Element)
 ```
 
-#### Discussion
+## Discussion
 
 The memory underlying the destination element must be uninitialized, or `Element` must be a trivial type. After a call to `initialize(to:)`, the memory underlying this element of the buffer is initialized.
 

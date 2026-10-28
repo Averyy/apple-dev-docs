@@ -14,7 +14,7 @@ Create dynamic audio experiences in your game or app that react to events and cu
 - tvOS 17.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Use PHASE (Physical Audio Spatialization Engine) to provide complex, dynamic audio experiences in your games and apps. With PHASE, you can control sound layers and adjust audio parameters in real time. As you develop your app, dynamic integration with your app’s visual scene enables audio to react to logic and visual changes automatically. The framework supports various audio hardware, which enables your app to provide a consistent spatial audio experience across platforms and output devices like headphones and speakers.
 
@@ -22,7 +22,7 @@ Use PHASE (Physical Audio Spatialization Engine) to provide complex, dynamic aud
 
 > **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [AVFoundation](../AVFoundation/AVFoundation.md) or [Core Audio](../CoreAudio/CoreAudio.md).
 
-##### Integrate Audio with Visual Simulation
+### Integrate Audio with Visual Simulation
 
 Apps and games that model a detailed environment involve substantial revision during development. When you provide PHASE with a basic understanding of your app’s scene, audio plays in accordance with the scene’s characteristics. As you modify the scene, such as by adding a game level, the audio follows along by accommodating the level’s visual shape and properties. PHASE couples sound with visuals and minimizes your app’s audio maintenance by:
 

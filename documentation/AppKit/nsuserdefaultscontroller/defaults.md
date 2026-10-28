@@ -19,7 +19,7 @@ var defaults: UserDefaults { get }
 @property (strong, readonly) NSUserDefaults * defaults;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

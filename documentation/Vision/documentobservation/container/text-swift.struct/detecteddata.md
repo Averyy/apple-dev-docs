@@ -20,7 +20,7 @@ Detected content in the document matched to a specific type of data, such as ema
 var detectedData: [DocumentObservation.Container.DataDetectorMatch] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is a computed property that may be computationally expensive for large text regions.
 

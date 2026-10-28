@@ -24,7 +24,7 @@ func removeItem(_ item: FSItem, named name: FSFileName, from directory: FSItem, 
 - (void) removeItem:(FSItem *) item named:(FSFileName *) name fromDirectory:(FSItem *) directory context:(FSContext *) context replyHandler:(void (^)(FSRemoveItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t actually remove the item object itself in your implementation; instead, only remove the given item name from the given directory. Remove and deallocate the item in [`reclaimItem(_:replyHandler:)`](./reclaimitem%28_,replyhandler%29.md).
 

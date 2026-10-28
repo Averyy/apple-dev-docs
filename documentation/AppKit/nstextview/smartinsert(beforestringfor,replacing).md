@@ -19,11 +19,11 @@ func smartInsert(beforeStringFor pasteString: String, replacing charRangeToRepla
 - (NSString *) smartInsertBeforeStringForString:(NSString *) pasteString replacingRange:(NSRange) charRangeToReplace;
 ```
 
-#### Return Value
+## Return Value
 
 Any whitespace that needs to be added before `aString` to preserve proper spacing and punctuation when the characters in `charRange` are replaced by  `aString`. If `aString` is `nil` or if smart insertion and deletion are disabled, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Don’t invoke this method directly. Instead, use [`smartInsert(for:replacing:before:after:)`](./smartinsert%28for,replacing,before,after%29.md), which calls this method as part of its implementation.
 

@@ -15,11 +15,11 @@ Create a polygon-based field of view.
 extern ar_field_of_view_tar_field_of_view_create_polygon(ar_polygon_points_t polygon_points);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_field_of_view_t` representing a custom polygon field of view.
 
-#### Discussion
+## Discussion
 
 The field of view region is defined using 2D points (u,v) in a tangent-angle coordinate system. Each point corresponds to a ray originating from the eye’s center of rotation, where: - The u-coordinate represents the tangent of the horizontal field angle (positive values toward the temporal side, negative toward the nasal side) - The v-coordinate represents the tangent of the vertical field angle (positive values upward, negative downward)
 

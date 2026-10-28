@@ -25,11 +25,11 @@ func CFRunLoopContainsObserver(_ rl: CFRunLoop!, _ observer: CFRunLoopObserver!,
 extern Boolean CFRunLoopContainsObserver(CFRunLoopRef rl, CFRunLoopObserverRef observer, CFRunLoopMode mode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `observer` is in mode `mode` of the run loop `rl`, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If `observer` was added to [`commonModes`](./cfrunloopmode/commonmodes.md), this function returns `true` if `mode` is either [`commonModes`](./cfrunloopmode/commonmodes.md) or any of the modes that has been added to the set of common modes.
 

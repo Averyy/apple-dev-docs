@@ -25,7 +25,7 @@ static let contactNormal: SCNParticleSystem.ParticleProperty
 extern SCNParticleProperty const SCNParticlePropertyContactNormal;
 ```
 
-#### Discussion
+## Discussion
 
 The contact normal property only applies to collision handler blocks (see the [`handle(_:forProperties:handler:)`](../handle%28_,forproperties,handler%29.md) method and [`SCNParticleEvent.collision`](../../scnparticleevent/collision.md) constant). Its value is a three-component vector (an array of three `float` values).
 

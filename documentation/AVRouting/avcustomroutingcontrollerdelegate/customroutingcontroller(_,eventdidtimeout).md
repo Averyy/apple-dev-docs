@@ -22,7 +22,7 @@ optional func customRoutingController(_ controller: AVCustomRoutingController, e
 - (void) customRoutingController:(AVCustomRoutingController *) controller eventDidTimeOut:(AVCustomRoutingEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Adopt this method to clean up any in-progress connection attempts.
 

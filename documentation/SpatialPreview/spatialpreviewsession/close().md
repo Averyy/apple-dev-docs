@@ -14,8 +14,8 @@ Gracefully close the session
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func close() async throws
+nonisolated(nonsending)
+func close() async throws
 ```
 
 

@@ -21,11 +21,11 @@ Returns a dictionary that contains the share records that CloudKit associates wi
 - (NSDictionary<NSManagedObjectID *,CKShare *> *) fetchSharesMatchingObjectIDs:(NSArray<NSManagedObjectID *> *) objectIDs error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that uses `objectIDs` as its keys, and the associated share records as its values.
 
-#### Discussion
+## Discussion
 
 If a specified managed object doesn’t belong to a shared record zone, or if Core Data has yet to save the object to iCloud and, therefore, its record zone is unknown, the returned dictionary doesn’t include it.
 

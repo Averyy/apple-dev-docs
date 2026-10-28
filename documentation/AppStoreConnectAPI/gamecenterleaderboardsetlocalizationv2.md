@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard set localization v2
 object GameCenterLeaderboardSetLocalizationV2
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

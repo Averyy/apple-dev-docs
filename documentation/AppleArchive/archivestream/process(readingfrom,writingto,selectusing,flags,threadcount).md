@@ -21,7 +21,7 @@ Processes archive elements between two archive streams.
 static func process(readingFrom input: ArchiveStream, writingTo output: ArchiveStream, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of processed bytes.
 

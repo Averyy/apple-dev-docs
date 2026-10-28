@@ -15,7 +15,7 @@ An interface that allows the system to detect and respond to changes in your dat
 interface DataSource
 ```
 
-#### Overview
+## Overview
 
 Use the `DataSource` interface to manage data represented as an array. You can modify your array and consequently generate a notification that makes the app aware of any data changes. Thus user interfaces can respond to changes in the array, without needing to repopulate the entire interface for every change.
 

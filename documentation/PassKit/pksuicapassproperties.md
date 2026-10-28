@@ -24,7 +24,7 @@ class PKSuicaPassProperties
 @interface PKSuicaPassProperties : PKTransitPassProperties
 ```
 
-#### Overview
+## Overview
 
 The Suica pass is a card used for transportation in Japan.
 

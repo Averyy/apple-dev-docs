@@ -19,17 +19,17 @@ func readFileContentsType(_ type: NSPasteboard.PasteboardType?, toFile filename:
 - (NSString *) readFileContentsType:(NSPasteboardType) type toFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the file into which the data was actually written.
 
-#### Discussion
+## Discussion
 
 Data of any file contents type should only be read using this method. If data matching the specified type is not found on the pasteboard, data of type `NSFileContentsPboardType` is requested.
 
 > **macOS 10.6 and later**:  In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension. In macOS 10.5 and later, using the UTI of a file to represent its contents now replaces this functionality.
 
-##### Special Considerations
+### Special Considerations
 
 You must send an [`availableType(from:)`](./availabletype%28from%29.md) or [`types`](./types.md) message before invoking [`readFileContentsType(_:toFile:)`](./readfilecontentstype%28_,tofile%29.md).
 

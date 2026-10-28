@@ -19,7 +19,7 @@ var kCEAllowsSegmentationKey: String { get }
 #define kCEAllowsSegmentationKey
 ```
 
-#### Discussion
+## Discussion
 
 Segmenting is beneficial for distributed encoding, and for local encoding if you have enabled additional Compressor app instances.
 

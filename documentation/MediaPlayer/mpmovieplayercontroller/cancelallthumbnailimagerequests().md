@@ -23,7 +23,7 @@ func cancelAllThumbnailImageRequests()
 - (void) cancelAllThumbnailImageRequests;
 ```
 
-#### Discussion
+## Discussion
 
 This method cancels only requests made using the [`requestThumbnailImages(atTimes:timeOption:)`](./requestthumbnailimages%28attimes,timeoption%29.md) method. It does not cancel requests made synchronously using the [`thumbnailImage(atTime:timeOption:)`](./thumbnailimage%28attime,timeoption%29.md) method.
 

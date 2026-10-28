@@ -24,7 +24,7 @@ let CIDetectorTypeRectangle: String
 extern NSString * const CIDetectorTypeRectangle;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle detector finds areas that are likely to represent rectangular objects that appear in perspective in the image, such as papers or books seen on a desktop.
 

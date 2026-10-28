@@ -23,7 +23,7 @@ case mid
 UIPageViewControllerSpineLocationMid
 ```
 
-#### Discussion
+## Discussion
 
 Two view controllers are displayed at a time.
 

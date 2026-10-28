@@ -15,7 +15,7 @@ A behavior that keeps the system’s immersive environment as is when opening a 
 static var coexist: ImmersiveEnvironmentBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value with the [`immersiveEnvironmentBehavior(_:)`](../scene/immersiveenvironmentbehavior%28_%29.md) scene modifier to define that the system should allow the system’s immersive environment to co-exist with the scene.
 

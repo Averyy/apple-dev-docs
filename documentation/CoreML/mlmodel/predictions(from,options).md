@@ -25,11 +25,11 @@ func predictions(from inputBatch: any MLBatchProvider, options: MLPredictionOpti
 - (id<MLBatchProvider>) predictionsFromBatch:(id<MLBatchProvider>) inputBatch options:(MLPredictionOptions *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A batch provider that contains an output feature provider for each prediction.
 
-#### Discussion
+## Discussion
 
 Use this method to make more than one prediction at one time.
 

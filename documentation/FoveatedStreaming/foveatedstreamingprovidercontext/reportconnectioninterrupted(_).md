@@ -16,7 +16,7 @@ Reports that a previously-established connection was unexpectedly lost.
 final func reportConnectionInterrupted(_ error: any Error)
 ```
 
-#### Discussion
+## Discussion
 
 This may only be called while the provider is in the [`FoveatedStreamingProviderStatus.connected`](../foveatedstreamingproviderstatus/connected.md) state. Calling this transitions the session to `FoveatedStreamingProviderStatus/error(_:)`.
 

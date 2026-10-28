@@ -24,7 +24,7 @@ class AVPlayerLooper
 @interface AVPlayerLooper : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can manually implement looping playback in your app using [`AVQueuePlayer`](./avqueueplayer.md), but `AVPlayerLooper` provides a much simpler interface to loop a single [`AVPlayerItem`](./avplayeritem.md). You create a player looper by passing it a reference to your [`AVQueuePlayer`](./avqueueplayer.md) and a template [`AVPlayerItem`](./avplayeritem.md) and the looper automatically manages the looping playback of this content (see example).
 

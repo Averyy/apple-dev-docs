@@ -20,11 +20,11 @@ string AppsReportingAd.Status
 - `ENABLED`: The ad is set to run and can participate in auctions.
 - `PAUSED`: The ad is paused by the advertiser and doesn’t participate in auctions.
 
-#### Discussion
+## Discussion
 
 This captures the advertiser’s run-or-pause choice as of the report’s generation, separate from the system-evaluated [`AppsReportingAd.SystemStatus`](./systemstatus-data.typealias.md) reported in the same row.
 
-##### Example
+### Example
 
 ```json
 {

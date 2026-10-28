@@ -19,7 +19,7 @@ func runModal(forIdentities identities: [Any]!, message: String!) -> Int
 - (NSInteger) runModalForIdentities:(NSArray *) identities message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns [`NSOKButton`](../../AppKit/nsokbutton.md) if the default button is clicked, or [`NSCancelButton`](../../AppKit/nscancelbutton.md) if the alternate button is clicked.
 

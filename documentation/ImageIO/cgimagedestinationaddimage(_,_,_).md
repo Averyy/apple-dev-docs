@@ -25,7 +25,7 @@ func CGImageDestinationAddImage(_ idst: CGImageDestination, _ image: CGImage, _ 
 extern void CGImageDestinationAddImage(CGImageDestinationRef idst, CGImageRef image, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 The function logs an error if you add more images than what you specified when you created the image destination.
 

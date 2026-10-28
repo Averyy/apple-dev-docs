@@ -14,7 +14,7 @@
 kIOPacketFilterMulticast = 0x10
 ```
 
-#### Discussion
+## Discussion
 
 Reception of multicast packets addressed to a set of multicast addresses.
 

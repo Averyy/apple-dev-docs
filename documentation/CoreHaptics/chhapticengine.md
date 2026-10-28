@@ -29,7 +29,7 @@ class CHHapticEngine
 - [Playing a single-tap haptic pattern](./playing-a-single-tap-haptic-pattern.md)
 - [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md)
 
-#### Overview
+## Overview
 
 If you want your app to play custom haptics, you need to create a haptic engine. The haptic engine establishes the connection between your app and the underlying device hardware. Even though you can define a haptic pattern without an engine, you need the engine to play that pattern.
 
@@ -37,7 +37,7 @@ If you want your app to play custom haptics, you need to create a haptic engine.
 
 Even though your app makes a request through the haptic engine, the operating system could still override the request with system services, like haptics from system notifications.
 
-##### Prepare Your App To Play Haptics
+### Prepare Your App To Play Haptics
 
 To prepare your app to play haptics, follow these steps, as demonstrated in the code below:
 

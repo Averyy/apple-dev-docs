@@ -24,7 +24,7 @@ convenience init?(paddingStyle: MPSGraphPaddingStyle)
 + (instancetype) descriptorWithPaddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphStencilOpDescriptor object
 

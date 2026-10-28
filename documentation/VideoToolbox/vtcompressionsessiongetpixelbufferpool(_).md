@@ -24,11 +24,11 @@ func VTCompressionSessionGetPixelBufferPool(_ session: VTCompressionSession) -> 
 extern CVPixelBufferPoolRefVTCompressionSessionGetPixelBufferPool(VTCompressionSessionRef session);
 ```
 
-#### Return Value
+## Return Value
 
 A configured pixel buffer pool.
 
-#### Discussion
+## Discussion
 
 The compression session creates this pixel buffer pool based on the compressor’s pixel buffer attributes and any pixel buffer attributes passed in to [`VTCompressionSessionCreate(allocator:width:height:codecType:encoderSpecification:imageBufferAttributes:compressedDataAllocator:outputCallback:refcon:compressionSessionOut:)`](./vtcompressionsessioncreate%28allocator,width,height,codectype,encoderspecification,imagebufferattributes,compresseddataallocator,outputcallback,refcon,compressionsessionout%29.md).  If the source pixel buffer attributes and the compressor pixel buffer attributes cannot be reconciled, the pool is based on the source pixel buffer attributes, and VideoToolbox converts each [`CVImageBuffer`](../CoreVideo/cvimagebuffer.md) internally.
 

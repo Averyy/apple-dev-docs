@@ -17,7 +17,7 @@ Configuration for the Gemma 3 model.
 struct Gemma3Configuration
 ```
 
-#### Overview
+## Overview
 
 This structure holds all the hyperparameters required to initialize a `Gemma3ModelBackbone` or an `EmbeddingGemma` model. It supports decoding from standard `config.json` files, including those nested under a `text_config` key.
 

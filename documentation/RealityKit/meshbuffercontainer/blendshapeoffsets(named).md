@@ -18,7 +18,7 @@
 func blendShapeOffsets(named: String) -> MeshBuffers.BlendShapeOffsets?
 ```
 
-#### Discussion
+## Discussion
 
 - Returns a MeshBuffer that is associated with the name
 

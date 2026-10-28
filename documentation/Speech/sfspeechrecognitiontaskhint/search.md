@@ -23,7 +23,7 @@ case search
 SFSpeechRecognitionTaskHintSearch
 ```
 
-#### Discussion
+## Discussion
 
 Use this hint type when you are using speech recognition to identify search terms.
 

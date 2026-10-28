@@ -5,18 +5,18 @@
 
 Learn about important changes to WorkoutKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [WorkoutKit](../WorkoutKit/WorkoutKit.md).
 
-#### June 2024
+## June 2024
 
-##### Custom swim workouts
+### Custom swim workouts
 
 - Create custom pool swimming workouts with the [`HKWorkoutActivityType.swimming`](../HealthKit/hkworkoutactivitytype/swimming.md) activity.
 - Set a distance-with-time goal for custom swimming workouts with the [`WorkoutGoal.poolSwimDistanceWithTime(_:_:)`](../WorkoutKit/workoutgoal/poolswimdistancewithtime%28_,_%29.md) goal.
 
-##### General
+### General
 
 - Provide a custom name to a workout step using the [`WorkoutStep`](../WorkoutKit/workoutstep.md) structure’s [`displayName`](../WorkoutKit/workoutstep/displayname.md).
 - Preview workouts on Apple Watch using the [`workoutPreview(_:isPresented:)`](../SwiftUI/view/workoutpreview%28_,ispresented%29.md) view modifier.

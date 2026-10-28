@@ -21,7 +21,7 @@ True if the alpha channel in the image data is fully opaque.
 static var alphaChannelIsOpaque: CVAttachmentKeyDefinition<Self.ShouldPropagate, Bool> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This key is not used if the pixel format type has no alpha channel.
 

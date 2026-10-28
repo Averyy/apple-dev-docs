@@ -21,7 +21,7 @@ Returns single-precision rectangular coordinates converted from polar coordinate
 static func polarToRectangular<U>(_ polarCoordinates: U) -> [Float] where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The function calls the underlying [`vDSP_rect`](../vdsp_rect.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
 

@@ -17,7 +17,7 @@ Upsample the input signal spatially.
 init(scaleFactor: FloatOrArray, mode: Upsample.Mode = .nearest)
 ```
 
-#### Discussion
+## Discussion
 
 The spatial dimensions are by convention dimensions `1` to `x.ndim - 2`. The first is the batch dimension and the last is the feature dimension.
 

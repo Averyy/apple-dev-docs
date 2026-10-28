@@ -20,7 +20,7 @@ An interface for finding paths for an entity moving across a scene’s navigatio
 struct NavigationController
 ```
 
-#### Overview
+## Overview
 
 Create a navigation controller for an entity, then call [`requestPath(to:)`](./navigationcontroller/requestpath%28to%29.md) to start an asynchronous pathfind or [`computePath(to:)`](./navigationcontroller/computepath%28to%29.md) to compute a path immediately. Track [`pathfindStatus`](./navigationcontroller/pathfindstatus-swift.property.md) and read [`currentPath`](./navigationcontroller/currentpath.md) to follow the result.
 

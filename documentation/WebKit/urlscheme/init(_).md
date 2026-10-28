@@ -20,7 +20,7 @@ Creates a new `URLScheme` value from a valid scheme, which WebKit does not alrea
 init?(_ rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 To determine whether WebKit handles a specific scheme, call the `handlesURLScheme(_:)` static method of `WebPage`.
 

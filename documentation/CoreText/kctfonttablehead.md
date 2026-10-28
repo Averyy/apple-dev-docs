@@ -23,7 +23,7 @@ var kCTFontTableHead: Int { get }
 kCTFontTableHead
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for font header.
 

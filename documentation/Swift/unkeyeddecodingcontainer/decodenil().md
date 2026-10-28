@@ -22,11 +22,11 @@ Decodes a null value.
 mutating func decodeNil() throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether the encountered value was null.
 
-#### Discussion
+## Discussion
 
 If the value is not null, does not increment currentIndex.
 

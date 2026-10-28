@@ -15,7 +15,7 @@ An object that contains information you can use to suggest addresses and further
 object AutocompleteResult
 ```
 
-#### Discussion
+## Discussion
 
 If available, the service encodes opaque data about the autocomplete result in the completion URL’s `metadata` parameter. If you need to fetch the search result in a certain language, you need to specify it in the `lang` parameter in the request.
 

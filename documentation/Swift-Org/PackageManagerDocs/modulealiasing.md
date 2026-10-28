@@ -13,7 +13,7 @@ Create aliased names for modules to avoid collisions between targets in your pac
 **Availability**:
 - Swift 5.7+
 
-#### Overview
+## Overview
 
 As you add dependencies to your package, a name collision can occur among modules from different packages. Module names such as `Logging` or `Utils` are common examples. In order to resolve the collision, package manager, **from Swift 5.7 or later**, provides the parameter `moduleAliases` when defining dependencies for targets. You define new unique names for the modules that would otherwise conflict, without requiring any source code changes.
 
@@ -25,7 +25,7 @@ Note the following additional requirements:
 - If a target mapped to a module being aliased contains resources, they should be asset catalogs, localized strings, or resources that do not require explicit module names.
 - If a product that a module being aliased belongs to has a conflicting name with another product, at most one of the products can be a non-automatic library type.
 
-##### How to Use
+### How to Use
 
 Module aliases are defined as a dictionary parameter in a target’s dependencies where the key is the original module name in conflict and the value is a user-defined new unique name:
 
@@ -50,7 +50,7 @@ To use the aliased module your root package can use the new unique name, i.e. `i
 
 Consider the following example to go over how module aliasing can be used in more detail.
 
-###### Example
+#### Example
 
 The following example of a package `App` imports the modules `Utils` and `Logging` from a package `swift-draw`. It wants to add another package dependency `swift-game` and imports the modules `Utils` and `Game` vended from the package. The `Game` module imports `Logging` from the same package.
 
@@ -96,7 +96,7 @@ Package manifest `swift-draw`
 }
 ```
 
-###### Analyzing the conflicts
+##### Analyzing the conflicts
 
 ###### Utils modules
 
@@ -161,7 +161,7 @@ If more aliases need to be defined, they can be added with a comma delimiter, pe
     moduleAliases: ["Utils": "SwiftGameUtils", "Logging": "SwiftGameLogging"]),
 ```
 
-##### Override Module Aliases
+### Override Module Aliases
 
 If module alias values defined upstream are conflicting downstream, they can be overridden by chaining; add an entry to the `moduleAliases` parameter downstream using the conflicting alias value as a key and provide a unique value. Since the package identifier is unique to the package, using it as the prefix for the new module alias as a convention should help to prevent more collisions since it can be a generally agreed unique name for the module.
 

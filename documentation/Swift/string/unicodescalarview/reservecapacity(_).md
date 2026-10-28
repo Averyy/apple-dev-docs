@@ -21,7 +21,7 @@ Reserves enough space in the view’s underlying storage to store the specified 
 mutating func reserveCapacity(_ n: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Because a Unicode scalar value can require more than a single ASCII character’s worth of storage, additional allocation may be necessary when adding to a Unicode scalar view after a call to `reserveCapacity(_:)`.
 

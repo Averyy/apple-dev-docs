@@ -25,7 +25,7 @@ func CFLocaleGetWindowsLocaleCodeFromLocaleIdentifier(_ localeIdentifier: CFLoca
 extern uint32_t CFLocaleGetWindowsLocaleCodeFromLocaleIdentifier(CFLocaleIdentifier localeIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 The Windows locale code.
 

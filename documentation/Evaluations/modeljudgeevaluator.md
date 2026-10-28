@@ -28,7 +28,7 @@ struct ModelJudgeEvaluator<Input> where Input : ModelSampleProtocol
 - [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 
-#### Overview
+## Overview
 
 `ModelJudgeEvaluator` sends the query, response, and optional reference data to a model judge, which returns scores for one or more dimensions. The response is automatically serialized as JSON, because `OutputType` is `Codable`, or is customizable via [`ModelJudgePrompt`](./modeljudgeprompt.md).
 

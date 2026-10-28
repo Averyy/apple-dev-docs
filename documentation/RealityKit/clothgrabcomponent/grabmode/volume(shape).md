@@ -17,7 +17,7 @@ Grabbing will be performed using a volume of the given shape.
 static func volume(shape: ClothVolumeShape) -> ClothGrabComponent.GrabMode
 ```
 
-#### Return Value
+## Return Value
 
 A volume-based grab mode.
 

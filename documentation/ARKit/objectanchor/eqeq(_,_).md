@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two object anchors are equal.
 static func == (lhs: ObjectAnchor, rhs: ObjectAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two object anchors are equal; otherwise, `false`.
 

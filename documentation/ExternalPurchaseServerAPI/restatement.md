@@ -23,7 +23,7 @@ boolean restatement
 
 **Default**: `false`
 
-#### Discussion
+## Discussion
 
 Set this value to `true` to indicate the line item is restating a previously submitted line item, and contains corrections.
 

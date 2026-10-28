@@ -19,7 +19,7 @@ func register(_ itemClass: AnyClass?, forItemWithIdentifier identifier: NSUserIn
 - (void) registerClass:(Class) itemClass forItemWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register the classes that represent items in your collection view. When you request an item using the [`makeItem(withIdentifier:for:)`](./makeitem%28withidentifier,for%29.md) method, the collection view recycles an existing item with the same `identifier` or creates a new one by instantiating your class and calling the [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method of the resulting object.
 

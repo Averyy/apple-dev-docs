@@ -28,7 +28,7 @@ func enableNotification(_ enable: Bool) async throws
 - (void) enableNotification:(BOOL) enable completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 HomeKit delivers notifications to the accessory delegate using the [`accessory(_:service:didUpdateValueFor:)`](../hmaccessorydelegate/accessory%28_,service,didupdatevaluefor%29.md) method.
 

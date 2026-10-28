@@ -23,7 +23,7 @@ mutating func subtract(_ other: Set<Element>)
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are also members of the `neighbors` set are removed. In particular, the names `"Bethany"` and `"Eric"` are removed from `employees`.
 

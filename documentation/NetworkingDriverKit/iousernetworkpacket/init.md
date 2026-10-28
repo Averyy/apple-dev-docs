@@ -15,11 +15,11 @@ Initializes the network packet object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if initialization was successful, or `NO` if it wasn’t.
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. Submission queues initialize packets before returning them to your driver to process.
 

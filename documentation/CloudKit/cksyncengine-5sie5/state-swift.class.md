@@ -21,7 +21,7 @@ An object that manages the sync engine’s state.
 final class State
 ```
 
-#### Overview
+## Overview
 
 To reliably and consistently sync your app’s data, a sync engine keeps a record of several important pieces of data, such as server changes tokens (for databases and record zones), subscription identifiers, the most recent [`userRecordID`](../ckuseridentity/userrecordid.md), and so on. This class automatically manages that state on behalf of your app, but there are certain elements you can modify. For example, you control the list of pending changes to send to the iCloud servers and manipulate that list using the [`add(pendingDatabaseChanges:)`](./state-swift.class/add%28pendingdatabasechanges%29.md) and [`add(pendingRecordZoneChanges:)`](./state-swift.class/add%28pendingrecordzonechanges%29.md) methods. If there aren’t any scheduled sync operations when you invoke these methods, the engine automatically schedules one.
 

@@ -16,7 +16,7 @@ Returns the `NSConnection` object involved in the request.
 @property (retain, readonly) NSConnection * connection;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSConnection` object involved in the request.
 

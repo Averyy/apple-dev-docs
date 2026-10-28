@@ -19,7 +19,7 @@ var minDate: Date? { get set }
 @property (copy, nullable) NSDate * minDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the minimum value that the date picker allows as input. `nil` indicates no minimum date.
 

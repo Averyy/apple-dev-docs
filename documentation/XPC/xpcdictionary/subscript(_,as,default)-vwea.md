@@ -21,7 +21,7 @@ Get a value in this dictionary as a UUID.
 subscript(key: String, as type: uuid_t.Type = uuid_t.self, default defaultValue: @autoclosure () -> uuid_t) -> uuid_t { get }
 ```
 
-#### Return Value
+## Return Value
 
 A UUID value, possibly `defaultValue`.
 

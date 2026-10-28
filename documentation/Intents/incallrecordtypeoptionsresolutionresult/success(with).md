@@ -24,11 +24,11 @@ class func success(with resolvedCallRecordTypeOptions: INCallRecordTypeOptions =
 + (instancetype) successWithResolvedCallRecordTypeOptions:(INCallRecordTypeOptions) resolvedCallRecordTypeOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordTypeOptionsResolutionResult`](../incallrecordtypeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object that indicates the types of calls that you can return from a search.
 

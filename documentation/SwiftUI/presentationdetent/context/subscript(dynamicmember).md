@@ -21,7 +21,7 @@ Returns the value specified by the keyPath from the environment.
 subscript<T>(dynamicMember keyPath: KeyPath<EnvironmentValues, T>) -> T { get }
 ```
 
-#### Overview
+## Overview
 
 This uses the environment from where the sheet is shown, not the environment where the presentation modifier is applied.
 

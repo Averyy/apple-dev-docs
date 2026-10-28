@@ -33,7 +33,7 @@ func performChanges(_ changeBlock: @escaping () -> Void) async throws
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 Photos executes both the change block and the completion handler block on an arbitrary serial queue. To update your app’s UI as a result of a change, dispatch that work to the main queue.
 

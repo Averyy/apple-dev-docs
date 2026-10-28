@@ -12,11 +12,11 @@ virtual bool isValid(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 false if the iterator has been invalidated by changes to the registry, true otherwise.
 
-#### Overview
+## Overview
 
 If a registry iteration is invalidated by changes to the registry, it will be made invalid, the currentEntry will be considered zero, and further calls to getNextObject et al. will return zero. The iterator should be reset to restart the iteration when this happens.
 

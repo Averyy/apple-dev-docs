@@ -19,7 +19,7 @@ func subscriptRange(_ range: NSRange)
 - (void) subscriptRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

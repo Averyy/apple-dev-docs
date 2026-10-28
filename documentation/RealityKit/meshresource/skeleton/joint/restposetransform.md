@@ -20,7 +20,7 @@ The local transform of this joint in skeleton’s rest pose, specified relative 
 var restPoseTransform: Transform
 ```
 
-#### Discussion
+## Discussion
 
 The rest pose of a skeleton is used when a joint is not otherwise animated.
 

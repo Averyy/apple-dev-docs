@@ -21,7 +21,7 @@ Adds two values and stores the result in the left-hand-side variable, wrapping a
 static func &+= (lhs: inout Self, rhs: Self)
 ```
 
-#### Discussion
+## Discussion
 
 The masking addition assignment operator (`&+=`) silently wraps any overflow that occurs during the operation. In the following example, the sum of `100` and `121` is greater than the maximum representable `Int8` value, so the result is the partial value after discarding the overflowing bits.
 

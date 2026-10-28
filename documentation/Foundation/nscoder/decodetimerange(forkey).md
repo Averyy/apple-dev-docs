@@ -25,7 +25,7 @@ func decodeTimeRange(forKey key: String) -> CMTimeRange
 - (CMTimeRange) decodeCMTimeRangeForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CMTimeRange` structure associated with `key` in the archive.
 

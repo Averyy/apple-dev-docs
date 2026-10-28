@@ -25,7 +25,7 @@ var YpRangeMax: Int32
 int32_t YpRangeMax;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically less than the maximum representable value for video range.
 

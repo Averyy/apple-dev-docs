@@ -23,7 +23,7 @@ var kCTFontTableLTSH: Int { get }
 kCTFontTableLTSH
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for linear threshold.
 

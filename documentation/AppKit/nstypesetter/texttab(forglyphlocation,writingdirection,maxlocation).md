@@ -19,11 +19,11 @@ func textTab(forGlyphLocation glyphLocation: CGFloat, writingDirection direction
 - (NSTextTab *) textTabForGlyphLocation:(CGFloat) glyphLocation writingDirection:(NSWritingDirection) direction maxLocation:(CGFloat) maxLocation;
 ```
 
-#### Return Value
+## Return Value
 
 The text tab next closest to `glyphLocation`, indexing in `direction` but not beyond `maxLocation`.
 
-#### Discussion
+## Discussion
 
 The typesetter calls this method whenever it finds a tab character. To determine the width to advance the next glyph, the typesetter examines the [`NSParagraphStyle`](../nsparagraphstyle.md) object’s tab array and the default tab interval.
 

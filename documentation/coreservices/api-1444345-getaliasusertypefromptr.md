@@ -17,11 +17,11 @@ Gets the user type for the alias record referenced by a pointer.
 OSType GetAliasUserTypeFromPtr(const AliasRecord *alias);
 ```
 
-#### Return Value
+## Return Value
 
 The user type associated with the alias.
 
-#### Discussion
+## Discussion
 
 This routine is thread safe.
 

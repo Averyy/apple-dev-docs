@@ -21,7 +21,7 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: Decimal.FormatStyle.Percent.Configuration.Grouping) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal percent format style modified to use the specified grouping.
 

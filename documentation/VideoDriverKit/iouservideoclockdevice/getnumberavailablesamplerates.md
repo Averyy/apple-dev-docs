@@ -15,7 +15,7 @@ Gets number of available sample rates of the clock device.
 size_t GetNumberAvailableSampleRates();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

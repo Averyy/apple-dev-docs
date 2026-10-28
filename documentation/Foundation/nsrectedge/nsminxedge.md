@@ -16,7 +16,7 @@ The minimum X edge.
 NSMinXEdge
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`CGRectEdge.minXEdge`](../../CoreFoundation/cgrectedge/minxedge.md), and also to [`NSRectEdge.minX`](./minx.md).
 

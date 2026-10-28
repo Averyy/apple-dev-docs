@@ -14,7 +14,7 @@ Communicate with accessories that connect to a device with the Apple Lightning c
 - tvOS 10.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Use the External Accessory framework to set up and manage a connection to an MFi accessory your iOS app supports. The framework supports hardware that connects to an iOS or iPadOS device physically through an Apple Lightning or a 30-pin connector, or wirelessly with Bluetooth technology. The framework notifies your app when the accessory connects or disconnects from the user’s device. While connected, you communicate directly with the accessory using any hardware protocols the device supports.
 

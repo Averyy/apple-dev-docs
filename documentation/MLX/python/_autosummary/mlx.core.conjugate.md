@@ -6,15 +6,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conjugate
 
-**conjugate(*a: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return the elementwise complex conjugate of the input.
+```python
+conjugate(a: array, *, stream: StreamOrDevice = None) → array
+```
+
+Return the elementwise complex conjugate of the input.
 Alias for mx.conj.
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
 
-Returns:
-The output array.
+**Returns:**
+: The output array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

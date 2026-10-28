@@ -19,7 +19,7 @@ The amount of view-dependent color detail stored per splat.
 enum SphericalHarmonicDegree
 ```
 
-#### Overview
+## Overview
 
 Higher degrees capture higher-frequency color variation as the viewing angle changes, at the cost of more data per splat.
 

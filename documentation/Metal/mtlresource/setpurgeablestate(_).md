@@ -29,11 +29,11 @@ func setPurgeableState(_ state: MTLPurgeableState) -> MTLPurgeableState
 
 - [Reducing the memory footprint of Metal apps](../reducing-the-memory-footprint-of-metal-apps.md)
 
-#### Return Value
+## Return Value
 
 The prior purgeable state of the resource.
 
-#### Discussion
+## Discussion
 
 If `state` is [`MTLPurgeableState.keepCurrent`](../mtlpurgeablestate/keepcurrent.md), the method returns the current purgeable state without changing it.
 

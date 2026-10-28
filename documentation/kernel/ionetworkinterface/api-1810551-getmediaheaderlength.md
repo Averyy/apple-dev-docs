@@ -12,11 +12,11 @@ virtual UInt8 getMediaHeaderLength(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size of the media header in bytes.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_hdrlen` and returns the media header length.
 

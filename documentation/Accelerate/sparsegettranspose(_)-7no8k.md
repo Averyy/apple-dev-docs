@@ -25,11 +25,11 @@ func SparseGetTranspose(_ Matrix: SparseMatrix_Float) -> SparseMatrix_Float
 static SparseMatrix_Float SparseGetTranspose(SparseMatrix_Float Matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseMatrix_Float`](./sparsematrix_float.md) structure that represents the transposed matrix.
 
-#### Discussion
+## Discussion
 
 Use this function to return a new [`SparseMatrix_Double`](./sparsematrix_double.md) structure that shares underlying storage with the specified matrix, but with its [`transpose`](./sparseattributes_t/transpose.md) attribute as `true`. The system doesn’t reference-count the underlying storage, so you must ensure it doesn’t destroy the original matrix before you finish with the matrix that this routine returns.
 

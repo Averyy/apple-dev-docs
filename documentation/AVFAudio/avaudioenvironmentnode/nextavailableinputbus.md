@@ -24,7 +24,7 @@ var nextAvailableInputBus: AVAudioNodeBus { get }
 @property (nonatomic, readonly) AVAudioNodeBus nextAvailableInputBus;
 ```
 
-#### Discussion
+## Discussion
 
 This method finds and returns the first input bus that doesn’t have a connection with a node.
 

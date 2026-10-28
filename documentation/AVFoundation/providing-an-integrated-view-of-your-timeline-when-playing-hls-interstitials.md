@@ -12,11 +12,11 @@ Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10114: [Enhance ad experiences with HLS Interstitials](https://developer.apple.com/wwdc24/10114/)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Using the examples under the Live stream examples section of the app requires running a local test stream. The project includes a Go script that starts a local web server that hosts this example stream. You must have [Go](https://go.dev/doc/install) installed to run this script.
 

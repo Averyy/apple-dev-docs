@@ -20,7 +20,7 @@ An anchor point attached to the image specified by an image anchoring source.
 case referenceImage(from: AnchoringComponent.ImageAnchoringSource)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS and tvOS apps don’t track this type of anchor.
 

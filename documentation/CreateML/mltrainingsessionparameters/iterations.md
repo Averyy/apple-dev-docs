@@ -20,7 +20,7 @@ The maximum number of iterations for the training session.
 var iterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 Each iteration represents a full pass over the training data, also known as an epoch. Training may stop with fewer iterations if training converges. This limit also affects resumed training sessions. To extend training beyond the original limit, increase the limit before resuming.
 

@@ -23,7 +23,7 @@ let kCGPDFXRegistryName: CFString
 extern CFStringRef const kCGPDFXRegistryName;
 ```
 
-#### Discussion
+## Discussion
 
 A string identifying the registry in which the condition designated by [`kCGPDFXOutputConditionIdentifier`](./kcgpdfxoutputconditionidentifier.md) is defined. This key is optional. If present, the value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object. For best results, the string should be lossless in ASCII encoding.
 

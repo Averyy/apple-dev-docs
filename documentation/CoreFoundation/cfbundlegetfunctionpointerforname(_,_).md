@@ -25,11 +25,11 @@ func CFBundleGetFunctionPointerForName(_ bundle: CFBundle!, _ functionName: CFSt
 extern void *CFBundleGetFunctionPointerForName(CFBundleRef bundle, CFStringRef functionName);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a function in a `bundle`’s executable code, or `NULL` if `functionName` cannot be found. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 Calling this function will cause the bundle’s code to be loaded if necessary.
 

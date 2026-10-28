@@ -21,7 +21,7 @@ Produces the next element in the compact map sequence.
 mutating func next() async rethrows -> ElementOfResult?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next()` on its base iterator; if this call returns `nil`, `next()` returns `nil`. Otherwise, `next()` calls the transforming closure on the received element, returning it if the transform returns a non-`nil` value. If the transform returns `nil`, this method continues to wait for further elements until it gets one that transforms to a non-`nil` value.
 

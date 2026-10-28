@@ -29,7 +29,7 @@ The number of photos that match the search parameters.
 @property (atomic, copy, readwrite, nullable) NSNumber * searchResultsCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the number of photos found during the search. Typically, you assign a value to this property only after handling the intent. During the confirmation phase, you can set the value of this property set to `0`.
 

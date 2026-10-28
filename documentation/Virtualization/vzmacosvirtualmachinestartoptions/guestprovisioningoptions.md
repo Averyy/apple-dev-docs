@@ -20,7 +20,7 @@ var guestProvisioningOptions: VZMacGuestProvisioningOptions? { get }
 @property (copy, readonly, nullable) VZMacGuestProvisioningOptions * guestProvisioningOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows someone to provision a macOS guest by setting [`VZMacGuestProvisioningOptions`](../vzmacguestprovisioningoptions.md).
 

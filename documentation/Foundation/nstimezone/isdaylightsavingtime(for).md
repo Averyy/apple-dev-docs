@@ -25,7 +25,7 @@ func isDaylightSavingTime(for aDate: Date) -> Bool
 - (BOOL) isDaylightSavingTimeForDate:(NSDate *) aDate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver uses daylight saving time at `aDate`, otherwise [`false`](../../Swift/false.md).
 

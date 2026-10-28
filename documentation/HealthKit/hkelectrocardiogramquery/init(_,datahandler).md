@@ -20,7 +20,7 @@ Creates a new electrocardiogram query object.
 convenience init(_ ecg: HKElectrocardiogram, dataHandler: @escaping (HKElectrocardiogramQuery, HKElectrocardiogramQuery.Result) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 When you run the query, it calls the data handler once for each voltage measurement, passing a [`HKElectrocardiogramQuery.Result.measurement(_:)`](./result/measurement%28_%29.md) instance that contains the voltage data. After it has sent all the voltage measurements, it calls the data handler one last time, passing [`HKElectrocardiogramQuery.Result.done`](./result/done.md). If an error occurs, it stops collecting voltage data and passes [`HKElectrocardiogramQuery.Result.error(_:)`](./result/error%28_%29.md) instead.
 

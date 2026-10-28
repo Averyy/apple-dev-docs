@@ -25,7 +25,7 @@ func convertToUserSpace(_ size: CGSize) -> CGSize
 extern CGSize CGContextConvertSizeToUserSpace(CGContextRef c, CGSize size);
 ```
 
-#### Return Value
+## Return Value
 
 The size in user space coordinates.
 

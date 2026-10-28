@@ -17,7 +17,7 @@ Send `x` to the process with rank `dst`.
 static func send(_ x: MLXArray, to dst: Int, group: MLXDistributed.Group? = nil, stream: StreamOrDevice = .cpu) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 An array identical to `x` which, when evaluated, performs the send
 

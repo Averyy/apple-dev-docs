@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetHeatingCooling: String
 extern NSString * const HMCharacteristicTypeTargetHeatingCooling;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueHeatingCooling`](./hmcharacteristicvalueheatingcooling.md) enumeration.
 

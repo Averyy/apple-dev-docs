@@ -24,7 +24,7 @@ static var videoHighFrameRate: PHAssetMediaSubtype { get }
 PHAssetMediaSubtypeVideoHighFrameRate
 ```
 
-#### Discussion
+## Discussion
 
 High-frame-rate videos are created by the Slow-Mo feature in the Camera app on an iOS device.
 

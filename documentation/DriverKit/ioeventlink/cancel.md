@@ -16,11 +16,11 @@
 kern_return_t Cancel();
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Cancel the event link.
 

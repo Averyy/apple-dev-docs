@@ -23,7 +23,7 @@ func finish()
 - (void) finishInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls through to the [`finishInteractiveTransition()`](../uiviewcontrollercontexttransitioning/finishinteractivetransition%28%29.md) method of the context object.
 

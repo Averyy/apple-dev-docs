@@ -22,11 +22,11 @@ optional func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forCo
 - (NSString *) pickerView:(UIPickerView *) pickerView titleForRow:(NSInteger) row forComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The string to use as the title of the indicated component row.
 
-#### Discussion
+## Discussion
 
 If you implement both this method and the [`pickerView(_:attributedTitleForRow:forComponent:)`](./pickerview%28_,attributedtitleforrow,forcomponent%29.md) method, the picker view prefers the [`pickerView(_:attributedTitleForRow:forComponent:)`](./pickerview%28_,attributedtitleforrow,forcomponent%29.md) method. However, if that method returns `nil`, the picker view falls back to using the string returned by this method.
 

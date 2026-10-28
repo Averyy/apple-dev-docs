@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system generates the type.
 var isDynamic: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system recognizes dynamic types, but they may not be directly declared or claimed by an app. The system returns dynamic types when it encounters a file whose metadata doesn’t have a corresponding type known to the system.
 

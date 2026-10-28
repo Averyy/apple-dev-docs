@@ -16,11 +16,11 @@ Returns the relative property for the element.
 Boolean IOHIDElementIsRelative(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if relative or FALSE if absolute.
 
-#### Discussion
+## Discussion
 
 Indicates whether the data is relative (indicating the change in value from the last report) or absolute (based on a fixed origin).
 

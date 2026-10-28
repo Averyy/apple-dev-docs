@@ -23,7 +23,7 @@ class MLCTensor
 @interface MLCTensor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a tensor with or without data. For example, create a tensor with data for weights used by convolution or mean, variance, beta, and gamma parameters with batch normalization. Create a tensor without data to use as an input tensor when you build a graph.
 

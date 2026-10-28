@@ -26,11 +26,11 @@ class var animationTimingFunction: CAMediaTimingFunction? { get set }
 @property (class, nonatomic, copy, nullable) CAMediaTimingFunction * animationTimingFunction;
 ```
 
-#### Return Value
+## Return Value
 
 The media timing function for the transaction’s animations.
 
-#### Discussion
+## Discussion
 
 Media timing functions, also known as *animation curves*, define the relationship between the elapsed time of an animation and its effect on a property. For example, the [`easeInEaseOut`](../../QuartzCore/camediatimingfunctionname/easeineaseout.md) function creates an effect that begins slowly, speeds up, and then finishes slowly.
 

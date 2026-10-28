@@ -21,7 +21,7 @@ Provides storage for tracking and access to data changes.
 struct ObservationRegistrar
 ```
 
-#### Overview
+## Overview
 
 You don’t need to create an instance of `ObservationRegistrar` when using the [`Observable()`](./observable%28%29.md) macro to indicate observability of a type.
 

@@ -28,11 +28,11 @@ class func linearGradient() -> any CIFilter & CILinearGradient
 
 - [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a linear-gradient image. The effect creates a gradient that varies linearly between the two input properties of `point0` and `point1`.
 

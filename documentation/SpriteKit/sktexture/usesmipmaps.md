@@ -25,7 +25,7 @@ var usesMipmaps: Bool { get set }
 @property (nonatomic) BOOL usesMipmaps;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If you set this to [`true`](../../Swift/true.md), Sprite Kit creates mipmaps for the texture when it prepares the texture for rendering. Mipmaps take up additional memory (usually one-third more) but can improve rendering quality and performance when the texture is reduced in size (such as when you reduce the scale of a sprite rendered using the texture).
 

@@ -24,7 +24,7 @@ case order
 PKPaymentButtonTypeOrder
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

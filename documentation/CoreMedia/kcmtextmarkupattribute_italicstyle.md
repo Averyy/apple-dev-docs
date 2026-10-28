@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_ItalicStyle: CFString
 extern CFStringRef const kCMTextMarkupAttribute_ItalicStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a `CFBoolean`. The default is `kCFBooleanFalse`. If this attribute is `kCFBooleanTrue`, the system renders the text with an italic style in addition to other styles you use.
 

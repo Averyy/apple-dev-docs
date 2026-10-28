@@ -5,25 +5,25 @@
 
 Learn how everything fits together in RealityKit.
 
-#### Overview
+## Overview
 
 RealityKit is a 3D framework designed for building apps, games, and other immersive experiences. Although it’s built in an object-oriented language and uses object-oriented design principles, the architecture of RealityKit avoids heavy use of inheritance — where objects are built by adding instance variables that hold references to other objects — in favor of a modular design based on a paradigm called Entity Component System (ECS) that divides application objects into one of three types.
 
 Following the ECS paradigm allows you to re-use the functionality contained in a component in many different entities, even if they have very different inheritance chains. Even if two objects have no common ancestors other than [`Entity`](../RealityKit/entity.md), you can add the same components to both of them and give them the same behavior or functionality.
 
-#### Start with entities
+## Start with entities
 
 Entities are the core actors of RealityKit. Any object that you can put into a scene, whether visible or not, is an entity and must be a descendent of [`Entity`](../RealityKit/entity.md). Entities can be 3D models, shape primitives, lights, or even invisible items like sound emitters or trigger volumes. Add components to entities to let them store additional state relevant to a specific type of functionality. Entities themselves contain relatively few properties: Nearly all entity state is stored on an entity’s components.
 
 RealityKit provides a number of entity types you use to represent different kinds of objects. For example, a [`ModelEntity`](../RealityKit/modelentity.md) represents a 3D model, such as one imported from a `.usdz` or `.reality` file. These provided entities are essentially just an [`Entity`](../RealityKit/entity.md) with certain components already added to them. Adding a [`ModelComponent`](../RealityKit/modelcomponent.md) to an instance of [`Entity`](../RealityKit/entity.md), for example, results in an entity with identical functionality to a [`ModelEntity`](../RealityKit/modelentity.md).
 
-#### Add components to entities
+## Add components to entities
 
 Components are modular building blocks that you add to an entity; they identify which entities a system will act on, and maintain the per-entity state that systems rely on. Components can contain logic, but limit component logic to code that validates its property values or sets its initial state. Use systems for any logic that affects the behavior of entities or that potentially changes their state on every frame. To add accessibility information to an entity, for example, add a [`AccessibilityComponent`](../RealityKit/accessibilitycomponent.md) to it and populate its fields with the information the accessibility system needs, such as putting the description that VoiceOver reads into its [`label`](../RealityKit/accessibilitycomponent/label.md) property.
 
 Keep in mind that an entity can only hold one copy of any particular type of component at a time. So, for example, you can’t add two accessibility components to one entity. If you add an accessibility component to an entity that already has one, the new component replaces the previous one.
 
-#### Create systems to implement entity behavior
+## Create systems to implement entity behavior
 
 A [`System`](../RealityKit/system.md) contains code that RealityKit calls on every frame to implement a specific type of entity behavior or to update a particular type of entity state. Systems use components to store their entity-specific state and query for entities to act on by looking for ones with a specific component or combination of components.
 

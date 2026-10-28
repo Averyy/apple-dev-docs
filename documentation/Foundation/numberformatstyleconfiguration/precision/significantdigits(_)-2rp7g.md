@@ -21,11 +21,11 @@ Returns a precision that constrains formatted values to a range of significant d
 static func significantDigits<R>(_ limits: R) -> NumberFormatStyleConfiguration.Precision where R : RangeExpression, R.Bound == Int
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values to a range of significant digits.
 
-#### Discussion
+## Discussion
 
 When using this precision, the formatter rounds values that have more sigificant digits than the maximum of the range, as seen in the following example:
 

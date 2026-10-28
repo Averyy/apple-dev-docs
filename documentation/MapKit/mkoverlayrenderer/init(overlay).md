@@ -24,11 +24,11 @@ init(overlay: any MKOverlay)
 - (instancetype) initWithOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized overlay renderer object.
 
-#### Discussion
+## Discussion
 
 Initially, the overlay renderer assumes that the overlay is fully opaque and that it has a content scale factor of 1.0. You can change these values as needed using the [`alpha`](./alpha.md) and [`contentScaleFactor`](./contentscalefactor.md) properties.
 

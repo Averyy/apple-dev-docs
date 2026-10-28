@@ -5,7 +5,7 @@
 
 Use polynomials to apply color transformations to images.
 
-#### Overview
+## Overview
 
 Polynomial functions apply one or more polynomials to the input image to generate the output image. You can use polynomial functions to apply tone curve adjustments to images.
 

@@ -15,7 +15,7 @@ A concrete implementation of an IOOutputQueue.
 class IOBasicOutputQueue : IOOutputQueue
 ```
 
-#### Overview
+## Overview
 
 This object uses a mutex to protect the packet queue from multiple producers. A single producer is promoted to become a consumer when the queue is not active. Otherwise, the producer will simply queue the packet and return without blocking.
 

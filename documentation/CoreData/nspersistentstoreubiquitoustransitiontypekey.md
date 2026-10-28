@@ -23,7 +23,7 @@ let NSPersistentStoreUbiquitousTransitionTypeKey: String
 extern NSString * const NSPersistentStoreUbiquitousTransitionTypeKey;
 ```
 
-#### Description
+## Description
 
 In the [`NSPersistentStoreCoordinatorStoresWillChange`](../Foundation/nsnotification/name-swift.struct/nspersistentstorecoordinatorstoreswillchange.md) and [`NSPersistentStoreCoordinatorStoresDidChange`](../Foundation/nsnotification/name-swift.struct/nspersistentstorecoordinatorstoresdidchange.md) userInfo dictionaries, this identifies the type of event. The corresponding value is one of the [`NSPersistentStoreUbiquitousTransitionType`](./nspersistentstoreubiquitoustransitiontype.md) enum values as an `NSNumber` object.
 

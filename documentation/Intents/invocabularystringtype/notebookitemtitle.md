@@ -24,7 +24,7 @@ case notebookItemTitle
 INVocabularyStringTypeNotebookItemTitle
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “Grocery list” or “Weekly meeting minutes”.
 

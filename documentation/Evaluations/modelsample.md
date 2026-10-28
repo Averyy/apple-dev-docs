@@ -25,7 +25,7 @@ struct ModelSample<ExpectedValue> where ExpectedValue : Decodable, ExpectedValue
 
 - [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md)
 
-#### Overview
+## Overview
 
 Accepts string-based prompts and instructions. For multimodal prompts, create a custom [`ModelSampleProtocol`](./modelsampleprotocol.md) conformance or use the [`init(input:expected:expectations:)`](./modelsample/init%28input,expected,expectations%29.md) initializer with a prebuilt [`ModelSampleInput`](./modelsampleinput.md).
 

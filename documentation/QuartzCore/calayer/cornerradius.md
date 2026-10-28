@@ -24,7 +24,7 @@ var cornerRadius: CGFloat { get set }
 @property CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the radius to a value greater than `0.0` causes the layer to begin drawing rounded corners on its background. By default, the corner radius does not apply to the image in the layer’s [`contents`](./contents.md) property; it applies only to the background color and border of the layer. However, setting the [`masksToBounds`](./maskstobounds.md) property to [`true`](../../Swift/true.md) causes the content to be clipped to the rounded corners.
 

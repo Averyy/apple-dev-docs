@@ -19,7 +19,7 @@ var NSInsertFunctionKey: Int { get }
 NSInsertFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

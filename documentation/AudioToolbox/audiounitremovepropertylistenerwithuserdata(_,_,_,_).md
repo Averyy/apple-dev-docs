@@ -24,7 +24,7 @@ func AudioUnitRemovePropertyListenerWithUserData(_ inUnit: AudioUnit, _ inID: Au
 extern OSStatus AudioUnitRemovePropertyListenerWithUserData(AudioUnit inUnit, AudioUnitPropertyID inID, AudioUnitPropertyListenerProc inProc, void *inProcUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

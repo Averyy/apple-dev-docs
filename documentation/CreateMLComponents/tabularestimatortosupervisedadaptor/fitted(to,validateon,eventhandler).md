@@ -21,7 +21,7 @@ Returns the tabular transformer fitted using the provided tabular estimator.
 func fitted(to input: DataFrame, validateOn validation: DataFrame? = nil, eventHandler: EventHandler? = nil) async throws -> Estimator.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The a fitted tabular transformer.
 

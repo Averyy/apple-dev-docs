@@ -25,7 +25,7 @@ static let heic: AVFileType
 extern AVFileType const AVFileTypeHEIC;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.heic`. Files of this type have an `.heic` extension.
 

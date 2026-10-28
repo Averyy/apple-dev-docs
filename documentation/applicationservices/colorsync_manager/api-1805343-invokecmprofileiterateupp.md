@@ -19,11 +19,11 @@ OSErr InvokeCMProfileIterateUPP (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 In most cases, you do not need to call this function as ColorSync Manager invokes your callback for you. See the [`CMProfileIterateProcPtr`](../cmprofileiterateprocptr.md) callback for more information and for a description of the parameters.
 

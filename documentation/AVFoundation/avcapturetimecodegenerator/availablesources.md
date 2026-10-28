@@ -23,11 +23,11 @@ var availableSources: [AVCaptureTimecode.Source] { get }
 @property (atomic, copy, readonly) NSArray<AVCaptureTimecodeSource *> * availableSources;
 ```
 
-#### Return Value
+## Return Value
 
 A read-only array of [`AVCaptureTimecode.Source`](../avcapturetimecode/source.md) objects representing the available timecode synchronization sources.
 
-#### Discussion
+## Discussion
 
 This property provides a list of [`AVCaptureTimecode.Source`](../avcapturetimecode/source.md) objects representing the available timecode sources with which the generator can synchronize. The sources may include built-in options such as the frame counter and real-time clock, as well as dynamically detected sources such as connected MIDI or HID devices.
 

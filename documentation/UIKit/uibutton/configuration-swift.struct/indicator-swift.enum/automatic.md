@@ -19,7 +19,7 @@ A constant that automatically determines an indicator style according to the but
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 With this behavior, the system automatically shows an indicator if the button shows a menu and has single-selection behavior (when its [`isContextMenuInteractionEnabled`](../../../uicontrol/iscontextmenuinteractionenabled.md), [`showsMenuAsPrimaryAction`](../../../uicontrol/showsmenuasprimaryaction.md), and [`changesSelectionAsPrimaryAction`](../../changesselectionasprimaryaction.md) properties are [`true`](../../../../Swift/true.md)).
 

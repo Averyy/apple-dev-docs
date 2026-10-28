@@ -19,7 +19,7 @@ func insertItems(at indexes: IndexSet, inParent parent: Any?, withAnimation anim
 - (void) insertItemsAtIndexes:(NSIndexSet *) indexes inParent:(id) parent withAnimation:(NSTableViewAnimationOptions) animationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This method parallels the [`insertRows(at:withAnimation:)`](../nstableview/insertrows%28at,withanimation%29.md) method of [`NSTableView`](../nstableview.md) and is used in a way similar to the [`insert(_:at:)`](../../Foundation/nsmutablearray/insert%28_,at%29-73pln.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md). The method does nothing if `parent` is not expanded. The actual item values are determined by the data source’s [`outlineView(_:child:ofItem:)`](../nsoutlineviewdatasource/outlineview%28_,child,ofitem%29.md) method (which is called only after [`endUpdates()`](../nstableview/endupdates%28%29.md) to ensure data source integrity).
 

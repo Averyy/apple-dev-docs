@@ -20,7 +20,7 @@ func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntim
 - (void) extendedRuntimeSessionWillExpire:(WKExtendedRuntimeSession *) extendedRuntimeSession;
 ```
 
-#### Discussion
+## Discussion
 
 The system only grants each session a limited amount of time to run. The system calls this method just before reaching that limit. Implement this method to finish any tasks and clean up before the session ends.
 

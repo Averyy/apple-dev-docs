@@ -21,11 +21,11 @@ Modifies the date interval format style to include the minutes.
 func minute() -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style that includes the minutes.
 
-#### Discussion
+## Discussion
 
 This example shows a combination of date interval format styles that includes the hour and minutes:
 

@@ -29,18 +29,18 @@ struct KeyMappingProvider<Upstream> where Upstream : ConfigProvider
 - [Example use cases](./example-use-cases.md)
 - [Migrating to Swift Configuration](./migrating-to-swift-configuration.md)
 
-#### Overview
+## Overview
 
 Use `KeyMappingProvider` to automatically apply a mapping function to every configuration key before passing it to an underlying provider. This is particularly useful when the upstream source of configuration keys differs from your own. Another example is namespacing configuration values from specific sources, such as prefixing environment variables with an application name while leaving other configuration sources unchanged.
 
-##### Common use cases
+### Common use cases
 
 Use `KeyMappingProvider` for:
 
 - Rewriting configuration keys to match upstream configuration sources.
 - Legacy system integration that adapts existing sources with different naming conventions.
 
-#### Example
+## Example
 
 Use `KeyMappingProvider` when you want to map keys for specific providers in a multi-provider setup:
 
@@ -63,7 +63,7 @@ let config = ConfigReader(providers: [
 let host = config.string(forKey: "database.host", default: "localhost")
 ```
 
-#### Convenience method
+## Convenience method
 
 You can also use the [`prefixKeys(with:)`](./configprovider/prefixkeys%28with%29.md) convenience method on configuration provider types to wrap one in a [`KeyMappingProvider`](./keymappingprovider.md):
 

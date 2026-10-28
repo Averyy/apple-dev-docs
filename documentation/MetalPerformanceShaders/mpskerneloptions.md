@@ -24,7 +24,7 @@ struct MPSKernelOptions
 enum MPSKernelOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The Metal Performance Shaders framework uses the same API validation layer that Metal uses to alert you to API mistakes during development. While this option is turned on in your Xcode scheme, common programming errors will either trigger an assert or send a warning to the debug log. Except in the case of serious errors, little or no output should arrive in the console under standard usage. You can set a kernel’s [`options`](./mpskernel/options.md) parameter to the [`skipAPIValidation`](./mpskerneloptions/skipapivalidation.md) value to skip most of this checking. This flag may also lead to small reductions in CPU cost.
 

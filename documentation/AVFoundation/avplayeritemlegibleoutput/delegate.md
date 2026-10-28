@@ -24,7 +24,7 @@ weak var delegate: (any AVPlayerItemLegibleOutputPushDelegate)? { get }
 @property (nonatomic, weak, readonly, nullable) id<AVPlayerItemLegibleOutputPushDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Because the delegate is held using a zeroing-weak reference, this property has a value of `nil` after a delegate that was previously set has been deallocated.
 

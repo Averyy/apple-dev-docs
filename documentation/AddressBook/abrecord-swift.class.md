@@ -19,7 +19,7 @@ class ABRecord
 @interface ABRecord : NSObject
 ```
 
-#### Overview
+## Overview
 
 `ABRecord` is an abstract superclass providing a common interface to, and defining common properties for, all Address Book records. A property is a field in the database record, such as the first or last name of a person record. ABRecord defines the types of properties supported, and basic methods for getting, setting, and removing property values.
 

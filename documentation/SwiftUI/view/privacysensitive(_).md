@@ -22,7 +22,7 @@ nonisolated
 func privacySensitive(_ sensitive: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI redacts views marked with this modifier when you apply the [`privacy`](../redactionreasons/privacy.md) redaction reason.
 

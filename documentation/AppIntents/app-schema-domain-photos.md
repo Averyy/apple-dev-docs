@@ -5,7 +5,7 @@
 
 Make your photo and video app’s actions available to Apple Intelligence and Siri by adopting schemas for common photo and video actions.
 
-#### Overview
+## Overview
 
 The `.photos` domain defines app schemas that provide a structured representation for common photo and video actions and content. Apply schemas in the `.photos` domain to make your app’s photo and video functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across photo and video apps. For example, a person can edit a photo on different apps that support the [`editAsset`](./appschema/photosintent/editasset.md) schema with the same phrases.
 

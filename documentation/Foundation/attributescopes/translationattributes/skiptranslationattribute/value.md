@@ -21,7 +21,7 @@ A type that stores whether to exclude the associated text range from translation
 typealias Value = Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the text isn’t translated.
 

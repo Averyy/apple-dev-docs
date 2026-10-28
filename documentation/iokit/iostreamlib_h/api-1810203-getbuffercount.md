@@ -12,7 +12,7 @@ IOItemCount ( *GetBufferCount)(
    IOStreamRef stream );
 ```
 
-#### Return Value
+## Return Value
 
 Returns then number of buffers in the stream.
 

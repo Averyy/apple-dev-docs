@@ -27,7 +27,7 @@ optional func resolveNote(for intent: INRequestPaymentIntent) async -> INStringR
 - (void) resolveNoteForRequestPayment:(INRequestPaymentIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any problems with the notes for the request.
 

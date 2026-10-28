@@ -17,7 +17,7 @@ typedef struct CMLabColor {
 } CMLabColor;
 ```
 
-#### Overview
+## Overview
 
 A color expressed in the L*a*b* color space is composed of `L`, `a`, and `b` component values. 
 

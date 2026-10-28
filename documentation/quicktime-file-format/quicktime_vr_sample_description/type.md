@@ -6,7 +6,7 @@
 
 The sample description type.
 
-#### Overview
+## Overview
 
 For QuickTime VR movies, this type should be `'qtvr'`.
 

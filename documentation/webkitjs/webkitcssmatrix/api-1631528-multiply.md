@@ -18,11 +18,11 @@ WebKitCSSMatrix multiply(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that is the result of multiplying this matrix by the given matrix.
 
-#### Discussion
+## Discussion
 
 The given matrix is on the right of the multiplication. This matrix is not modified by this method.
 

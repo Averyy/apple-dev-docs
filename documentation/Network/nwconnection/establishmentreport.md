@@ -21,7 +21,7 @@ A report that provides metrics about the establishment of a connection.
 struct EstablishmentReport
 ```
 
-#### Overview
+## Overview
 
 Use this report to inspect connection establishment details, such as its resolution steps, use of proxies, and duration.
 

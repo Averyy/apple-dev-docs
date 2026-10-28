@@ -20,7 +20,7 @@ static let deviceIsSuspended: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyDeviceIsSuspended;
 ```
 
-#### Discussion
+## Discussion
 
 An example of when a device may be in a suspended state is when a user closes their laptop. While suspended, the device continues to respond to requests as if it were active, but the stream doesn’t provide any data.
 

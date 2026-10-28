@@ -21,7 +21,7 @@ The array’s “past the end” position—that is, the position one greater th
 var endIndex: InlineArray<count, Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the array is empty, `endIndex` is equal to `startIndex`.
 

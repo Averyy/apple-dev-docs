@@ -16,7 +16,7 @@ case failure
 INGetRestaurantGuestIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if you encounter any errors when trying to return the guest information.
 

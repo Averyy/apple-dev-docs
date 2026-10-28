@@ -24,7 +24,7 @@ class GKMeshGraph<NodeType> where NodeType : GKGraphNode2D
 @interface GKMeshGraph : GKGraph
 ```
 
-#### Overview
+## Overview
 
 To use a mesh graph for pathfinding, add a collection of [`GKObstacle`](./gkobstacle.md) objects representing impassable areas and [`GKGraphNode2D`](./gkgraphnode2d.md) objects representing points of interest (such as the current position of a game character and the location it needs to find a route to). Then use methods of the superclass [`GKGraph`](./gkgraph.md) to find routes through the graph.
 

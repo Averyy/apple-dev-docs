@@ -14,7 +14,7 @@
 virtual uint64_t getTimeStamp();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s timestamp.
 

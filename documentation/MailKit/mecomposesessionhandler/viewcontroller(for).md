@@ -20,11 +20,11 @@ func viewController(for session: MEComposeSession) -> MEExtensionViewController
 - (MEExtensionViewController *) viewControllerForSession:(MEComposeSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 A custom [`MEExtensionViewController`](../meextensionviewcontroller.md) subclass that Mail displays in the compose window.
 
-#### Discussion
+## Discussion
 
 To configure an icon and tooltip for the compose session handler’s view controller, add the following entries to your extension’s `Info.plist` file:
 

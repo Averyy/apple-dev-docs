@@ -15,7 +15,7 @@ Returns the format value of the specified text encoding.
 TextEncodingFormat GetTextEncodingFormat(TextEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The text encodingformat value contained in the text encoding you specified. 
 

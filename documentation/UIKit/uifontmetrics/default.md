@@ -24,7 +24,7 @@ class var `default`: UIFontMetrics { get }
 @property (class, strong, readonly) UIFontMetrics * defaultMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The font metrics object in this property uses the [`body`](../uifont/textstyle/body.md) style.
 

@@ -27,7 +27,7 @@ let kSecUseNoAuthenticationUI: CFString
 extern CFStringRef const kSecUseNoAuthenticationUI;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If provided with a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), the error [`errSecInteractionNotAllowed`](./errsecinteractionnotallowed.md) is returned when the item is attempting to authenticate with UI.
 

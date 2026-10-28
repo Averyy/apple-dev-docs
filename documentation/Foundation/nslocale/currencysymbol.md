@@ -25,7 +25,7 @@ var currencySymbol: String { get }
 @property (copy, readonly) NSString * currencySymbol;
 ```
 
-#### Discussion
+## Discussion
 
 Example currency symbols include `"$"`, `"€"`, and `"¥"`.
 

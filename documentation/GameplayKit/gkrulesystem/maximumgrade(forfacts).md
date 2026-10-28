@@ -24,11 +24,11 @@ func maximumGrade(forFacts facts: [Any]) -> Float
 - (float) maximumGradeForFacts:(NSArray *) facts;
 ```
 
-#### Return Value
+## Return Value
 
 The highest membership grade in the array of facts.
 
-#### Discussion
+## Discussion
 
 In fuzzy logic, this method is called the OR Zadeh operator, because it corresponds to the OR operator in Boolean logic.
 

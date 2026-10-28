@@ -21,7 +21,7 @@ Returns an uppercased version of this character.
 func uppercased() -> String
 ```
 
-#### Discussion
+## Discussion
 
 Because case conversion can result in multiple characters, the result of `uppercased()` is a string.
 

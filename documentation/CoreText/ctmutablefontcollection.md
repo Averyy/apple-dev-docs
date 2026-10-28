@@ -25,7 +25,7 @@ class CTMutableFontCollection
 typedef struct __CTFontCollection * CTMutableFontCollectionRef;
 ```
 
-#### Discussion
+## Discussion
 
 An opaque reference to a mutable font collection.
 

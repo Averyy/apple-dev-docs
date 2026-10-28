@@ -19,7 +19,7 @@ Finds the hierarchical level of the specified item in the section snapshot.
 func level(of item: ItemIdentifierType) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 A level of `0` means the item is at the root level of the section snapshot.
 

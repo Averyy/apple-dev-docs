@@ -19,7 +19,7 @@ func boundingBox(forControlGlyphAt glyphIndex: Int, for textContainer: NSTextCon
 - (NSRect) boundingBoxForControlGlyphAtIndex:(NSUInteger) glyphIndex forTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(NSRect) proposedRect glyphPosition:(NSPoint) glyphPosition characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the bounding rectangle for the control glyph at `glyphIndex`, at the given `glyphPosition` and character index `charIndex`, in `textContainer`. The proposed line fragment rectangle is specified by `proposedRect`.
 

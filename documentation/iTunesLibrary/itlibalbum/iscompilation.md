@@ -20,7 +20,7 @@ var isCompilation: Bool { get }
 @property (nonatomic, assign, readonly, getter=isCompilation) BOOL compilation;
 ```
 
-#### Discussion
+## Discussion
 
 A *compilation* is an album with tracks from multiple sources.
 

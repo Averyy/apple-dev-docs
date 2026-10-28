@@ -21,11 +21,11 @@ Returns the last found range of the type’s data buffer.
 func lastRange<D>(of data: D) -> Range<Self.Index>? where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The range, if found, of the last match of the provided data sequence.
 
-#### Discussion
+## Discussion
 
 An example of searching a data buffer for the last match:
 

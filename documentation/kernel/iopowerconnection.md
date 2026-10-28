@@ -13,7 +13,7 @@
 class IOPowerConnection : IOService
 ```
 
-#### Overview
+## Overview
 
 Do not use IOPowerConnection. This class is an implementation detail defined for IOPM's management of the IORegistry IOPower plane.
 

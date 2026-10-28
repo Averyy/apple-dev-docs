@@ -21,7 +21,7 @@ var imageURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * imageURL;
 ```
 
-#### Discussion
+## Discussion
 
 The image URL can be an absolute path on the local device or an HTTP path. The preferred file format for this image is a layered image file that provides the proper 3d effects. For more information, see [App Programming Guide for tvOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppleTV_PG/index.html#//apple_ref/doc/uid/TP40015241).
 

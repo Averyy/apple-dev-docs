@@ -20,11 +20,11 @@ func setRedValue(_ red: Double, greenValue green: Double, blueValue blue: Double
 - (BOOL) setRedValue:(double) red greenValue:(double) green blueValue:(double) blue toParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the values are set successfully; otherwise `NO`.
 
-#### Discussion
+## Discussion
 
 The color is assumed to be in the project working color space and is converted to sRGB, unless the parameter has the [`kFxParameterFlag_DONT_REMAP_COLORS`](../kfxparameterflag_dont_remap_colors.md) set. If this flag is set, the host copies the color values verbatim into the parameter with no conversion.
 

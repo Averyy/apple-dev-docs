@@ -28,11 +28,11 @@ func sourceRegion(destinationSize: MTLSize) -> MPSRegion
 
 - [Tuning Hints](../tuning-hints.md)
 
-#### Return Value
+## Return Value
 
 The area in the virtual source image that will be read.
 
-#### Discussion
+## Discussion
 
 This method is used to determine which region of the source texture will be read by the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](./encode%28commandbuffer,sourcetexture,destinationtexture%29.md) method when the filter runs. This information may be needed if the source image is broken into multiple textures. The size of the full (untiled) destination image is provided. The region of the full (untiled) source image that will be read is returned. You can then piece together an appropriate texture containing that information for use in your tiled context.
 

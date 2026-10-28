@@ -21,7 +21,7 @@ On which days in the month the event should occur
 var daysOfTheMonth: [Int]
 ```
 
-#### Discussion
+## Discussion
 
 - 1 signifies the first day of the month.
 - Negative values point to a day counted backwards from the last day of the month This field is unused when `frequency` is `.weekly`.

@@ -29,7 +29,7 @@ func processString(_ string: String)
 
 - [Identifying the language in text](../identifying-the-language-in-text.md)
 
-#### Discussion
+## Discussion
 
 Use this method to process the provided text and to update the [`dominantLanguage`](./dominantlanguage.md) result and `languageHypotheses(withMaximum:)` probabilities.
 

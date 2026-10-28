@@ -25,7 +25,7 @@ func CGImageDestinationAddAuxiliaryDataInfo(_ idst: CGImageDestination, _ auxili
 extern void CGImageDestinationAddAuxiliaryDataInfo(CGImageDestinationRef idst, CFStringRef auxiliaryImageDataType, CFDictionaryRef auxiliaryDataInfoDictionary);
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after you add an image to the image destination. This method adds the specified depth or matte information to the most recently added image.
 

@@ -19,7 +19,7 @@ init(signingIdentifier: String, designatedRequirement: String)
 - (instancetype) initWithSigningIdentifier:(NSString *) signingIdentifier designatedRequirement:(NSString *) designatedRequirement;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized `NEAppRule` object.
 

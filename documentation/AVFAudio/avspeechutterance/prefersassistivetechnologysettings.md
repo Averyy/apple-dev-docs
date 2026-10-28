@@ -25,7 +25,7 @@ var prefersAssistiveTechnologySettings: Bool { get set }
 @property (nonatomic) BOOL prefersAssistiveTechnologySettings;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `true`, but no assistive technology, such as VoiceOver, is on, the speech synthesizer uses the utterance property values.
 

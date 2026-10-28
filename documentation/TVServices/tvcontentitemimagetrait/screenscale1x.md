@@ -19,7 +19,7 @@ static var screenScale1x: TVContentItemImageTrait { get }
 TVContentItemImageTraitScreenScale1x
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant, or the [`screenScale2x`](./screenscale2x.md) constant, but not both.
 

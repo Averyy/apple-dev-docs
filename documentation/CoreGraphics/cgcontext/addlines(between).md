@@ -21,7 +21,7 @@ Adds a sequence of connected straight-line segments to the current path.
 func addLines(between points: [CGPoint])
 ```
 
-#### Discussion
+## Discussion
 
 Calling this convenience method is equivalent to calling the [`move(to:)`](./move%28to%29.md) method with the first value in the points array, then calling the [`addLine(to:)`](./addline%28to%29.md) method for each subsequent point until the array is exhausted. After calling this method, the path’s current point is the last point in the array.
 

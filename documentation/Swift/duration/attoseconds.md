@@ -21,7 +21,7 @@ The number of attoseconds represented by this `Duration`.
 var attoseconds: Int128 { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides direct access to the underlying number of attoseconds that the current `Duration` represents.
 

@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, effectiveRect proposedEffectiv
 - (NSRect) splitView:(NSSplitView *) splitView effectiveRect:(NSRect) proposedEffectiveRect forDrawnRect:(NSRect) drawnRect ofDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle, in the coordinate system that `splitView` defines, where mouse clicks initiate divider dragging.
 
-#### Discussion
+## Discussion
 
 A split view with thick dividers proposes the drawn frame as the effective frame. A split view with thin dividers proposes an effective frame that’s a little larger than the drawn frame to make it easier for the user to grab the divider.
 

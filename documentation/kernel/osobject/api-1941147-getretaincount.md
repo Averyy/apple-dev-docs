@@ -11,7 +11,7 @@ Returns the reference count of the object.
 virtual int getRetainCount() const;
 ```
 
-#### Return Value
+## Return Value
 
 The reference count of the object.
 

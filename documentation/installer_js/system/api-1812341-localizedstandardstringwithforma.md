@@ -11,11 +11,11 @@ Provides the formatted localized standard string in the installation package for
 localizedStandardStringWithFormat(stringKey, args...)
 ```
 
-#### Return Value
+## Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 
-#### Overview
+## Overview
 
 This method is not supported. Use [localizedStringWithFormat](./api-1812327-localizedstringwithformat.md) instead.
 

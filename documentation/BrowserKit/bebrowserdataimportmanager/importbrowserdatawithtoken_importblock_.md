@@ -16,7 +16,7 @@ Imports browser data using the given token and processes it the given block.
 - (void) importBrowserDataWithToken:(NSUUID *) token importBlock:(void (^)(BEBrowserData *, BOOL , NSError *)) importBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from the [`userActivityType`](./useractivitytype-35jes.md) to begin receiving a stream of another app’s browsing data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 

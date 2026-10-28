@@ -24,7 +24,7 @@ class let wasConnectedNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureDeviceWasConnectedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../Foundation/notification/object.md) property contains the capture device that connected.
 

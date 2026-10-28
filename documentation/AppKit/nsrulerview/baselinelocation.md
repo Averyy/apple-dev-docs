@@ -19,7 +19,7 @@ var baselineLocation: CGFloat { get }
 @property (readonly) CGFloat baselineLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This is a y position for horizontal rulers and an x position for vertical ones.
 

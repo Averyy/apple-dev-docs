@@ -23,7 +23,7 @@ var edrMetadata: CAEDRMetadata? { get set }
 @property (strong, nullable) CAEDRMetadata * EDRMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 You must set this property before calling [`nextDrawable()`](./nextdrawable%28%29.md).
 

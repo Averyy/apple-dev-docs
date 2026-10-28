@@ -22,7 +22,7 @@ case distributeSpaceBetween
 AVCaptionRubyAlignmentDistributeSpaceBetween
 ```
 
-#### Discussion
+## Discussion
 
 This is the default.
 

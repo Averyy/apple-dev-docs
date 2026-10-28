@@ -25,7 +25,7 @@ class AVPlayerMediaSelectionCriteria
 @interface AVPlayerMediaSelectionCriteria : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of this object represents the languages and media characteristics of assets that contain media selection options that a player attempts to select automatically when preparing and playing items. It lists the languages and media characteristics in their preferred order.
 

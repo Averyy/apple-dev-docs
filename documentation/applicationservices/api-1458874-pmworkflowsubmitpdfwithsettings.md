@@ -19,15 +19,15 @@ func PMWorkflowSubmitPDFWithSettings(_ workflowItem: CFURL, _ settings: PMPrintS
 OSStatus PMWorkflowSubmitPDFWithSettings(CFURLRef workflowItem, PMPrintSettings settings, CFURLRef pdfFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The printing system uses this function in conjunction with the function [`PMWorkflowCopyItems(_:)`](./api-1459914-pmworkflowcopyitems.md) to implement the PDF workflow button in the Print dialog.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.4 and earlier, this function is not implemented and returns an error. You can use the function [`PMWorkflowSubmitPDFWithOptions(_:_:_:_:)`](./api-1463747-pmworkflowsubmitpdfwithoptions.md) together with the function [`PMPrintSettingsToOptions(_:_:)`](./api-1459069-pmprintsettingstooptions.md) instead.
 

@@ -25,7 +25,7 @@ func isEqual(to indexSet: IndexSet) -> Bool
 - (BOOL) isEqualToIndexSet:(NSIndexSet *) indexSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the indexes in the receiving index set are the same indexes `indexSet` contains, [`false`](../../Swift/false.md) otherwise.
 

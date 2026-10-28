@@ -19,7 +19,7 @@ protocol DataCacheHandler : NSObjectProtocol
 @protocol FSVolumeDataCacheHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A volume that conforms to this protocol enables kernel data caching for improved I/O performance. This protocol allows filesystem modules to negotiate cache modes with the kernel and manage cache coherency.
 
@@ -39,7 +39,7 @@ The following table shows the mapping of cache modes to supported coherency type
 | [`FSVolume.DataCacheMode.readWithCache`](./datacachemode/readwithcache.md) | [`FSVolume.KernelCacheCoherencyType.noCache`](./kernelcachecoherencytype/nocache.md) or [`FSVolume.KernelCacheCoherencyType.readCache`](./kernelcachecoherencytype/readcache.md) |
 | [`FSVolume.DataCacheMode.readWriteWithCache`](./datacachemode/readwritewithcache.md) | [`FSVolume.KernelCacheCoherencyType.noCache`](./kernelcachecoherencytype/nocache.md), [`FSVolume.KernelCacheCoherencyType.readCache`](./kernelcachecoherencytype/readcache.md), [`FSVolume.KernelCacheCoherencyType.writeBack`](./kernelcachecoherencytype/writeback.md) or [`FSVolume.KernelCacheCoherencyType.writeThrough`](./kernelcachecoherencytype/writethrough.md) |
 
-##### Supporting coherency transitions
+### Supporting coherency transitions
 
 Transitioning between coherency types requires different behaviors from your volume implementation, depending on whether the new type is more or less permissive than its current value. The following table expresses the permissiveness of the coherency types.
 

@@ -24,7 +24,7 @@ var backgroundEffect: UIBlurEffect? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIBlurEffect * backgroundEffect;
 ```
 
-#### Discussion
+## Discussion
 
 The blur effect provides the base layer for the bar’s appearance, and it determines how much of the underlying content is visible. UIKit applies the [`backgroundColor`](./backgroundcolor.md) and [`backgroundImage`](./backgroundimage.md) on top of this effect.
 

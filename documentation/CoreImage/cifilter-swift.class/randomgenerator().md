@@ -28,11 +28,11 @@ class func randomGenerator() -> any CIFilter & CIRandomGenerator
 
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates an image with infinite extent. The image pixels values are from one of four independent, uniformly distributed random colors.
 

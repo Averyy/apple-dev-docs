@@ -23,7 +23,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State,
 - (void) setBackgroundImage:(UIImage *) backgroundImage forState:(UIControlState) state barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 If `backgroundImage` is an image that [`resizableImage(withCapInsets:)`](../uiimage/resizableimage%28withcapinsets%29.md) returns, the system calculates the cap widths from that information.
 

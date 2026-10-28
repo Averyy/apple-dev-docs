@@ -20,7 +20,7 @@ A bind target for the scene.
 var `self`: BindTarget { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property represents a bind path within an [`AnimationView`](../../animationview.md) to redirect the view’s [`source`](../../blendtreesourcenode/source.md) animation to a different scene.
 

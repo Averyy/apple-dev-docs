@@ -22,7 +22,7 @@ class AVCaption
 @interface AVCaption : NSObject
 ```
 
-#### Overview
+## Overview
 
 A caption contains a cue, which is a single sentence or paragraph of text for a time range in the video timeline. Within the active range, the caption may animate (for example, Karaoke lyrics) by rolling-up, changing visibility, or using other dynamic styling.
 

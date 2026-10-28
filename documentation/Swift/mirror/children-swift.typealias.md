@@ -21,7 +21,7 @@ The type used to represent substructure.
 typealias Children = AnyCollection<Mirror.Child>
 ```
 
-#### Discussion
+## Discussion
 
 When working with a mirror that reflects a bidirectional or random access collection, you may find it useful to “upgrade” instances of this type to `AnyBidirectionalCollection` or `AnyRandomAccessCollection`. For example, to display the last twenty children of a mirror if they can be accessed efficiently, you write the following code:
 

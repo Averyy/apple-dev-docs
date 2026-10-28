@@ -6,7 +6,7 @@
 
 An atom that specifies the information that defines a movie.
 
-#### Overview
+## Overview
 
 You use movie atoms to specify the information that defines a movie — that is, the information that allows your application to interpret the sample data that is stored elsewhere. The movie atom usually contains a movie header atom, which defines the time scale and duration information for the entire movie, as well as its display characteristics. Existing movies may contain a movie profile atom, which summarizes the main features of the movie, such as the necessary codecs and maximum bit rate. In addition, the movie atom contains a track atom for each track in the movie.
 

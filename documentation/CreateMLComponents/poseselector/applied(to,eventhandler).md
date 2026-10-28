@@ -20,7 +20,7 @@ Select a pose if multiple poses are detected on the same frame.
 func applied(to input: [Pose], eventHandler: EventHandler? = nil) -> Pose
 ```
 
-#### Return Value
+## Return Value
 
 A selected pose based on the strategy.
 

@@ -20,7 +20,7 @@ var version: String? { get set }
 @property (copy, nullable) NSString * version;
 ```
 
-#### Discussion
+## Discussion
 
 Currently, the version should be either “1.0 “or “1.1”.
 

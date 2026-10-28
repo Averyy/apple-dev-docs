@@ -25,11 +25,11 @@ func CTRunGetAttributes(_ run: CTRun) -> CFDictionary
 extern CFDictionaryRefCTRunGetAttributes(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`CFDictionary`](../CoreFoundation/cfdictionary.md) or `NULL` on error or if the run has no attributes.
 
-#### Discussion
+## Discussion
 
 The dictionary returned is either the same one that was set as an attribute dictionary on the original attributed string or a dictionary that has been manufactured by the layout engine. Attribute dictionaries can be manufactured in the case of font substitution or if the run is missing critical attributes.
 

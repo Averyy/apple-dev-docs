@@ -25,11 +25,11 @@ func isConfiguration(withName configuration: String?, compatibleWithStoreMetadat
 - (BOOL) isConfiguration:(NSString *) configuration compatibleWithStoreMetadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the configuration in the receiver specified by `configuration` is compatible with the store metadata given by `metadata`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method compares the version information in the store metadata with the entity versions of a given configuration. For information on specific differences, use [`entityVersionHashesByName`](./entityversionhashesbyname.md) and perform an entity-by-entity comparison.
 

@@ -17,7 +17,7 @@ Per-layer key/value state threaded between Gemma 4 decoder layers when KV sharin
 enum Gemma4SharedKVState
 ```
 
-#### Overview
+## Overview
 
 `public` rather than `package` because `Gemma4DecoderLayer.callAsFunction` is exposed at `@_spi(GemmaEncoder)` scope for encoder-style client taps, and it appears in that signature — an SPI method cannot be called from outside the package if a type in its signature is package-scoped. Clients that do not use KV sharing pass `nil` and ignore the returned value.
 

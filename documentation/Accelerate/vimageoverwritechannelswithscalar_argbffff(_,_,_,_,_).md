@@ -25,11 +25,11 @@ func vImageOverwriteChannelsWithScalar_ARGBFFFF(_ scalar: Pixel_F, _ src: Unsafe
 vImage_Error vImageOverwriteChannelsWithScalar_ARGBFFFF(Pixel_F scalar, const vImage_Buffer *src, const vImage_Buffer *dest, uint8_t copyMask, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code overwrites channel `0` of the source pixels in `pixelBuffer` with the scalar value:
 

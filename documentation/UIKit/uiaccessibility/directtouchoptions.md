@@ -24,7 +24,7 @@ struct DirectTouchOptions
 enum UIAccessibilityDirectTouchOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 *Direct touch areas* are regions of the screen where VoiceOver passes gestures directly to the app instead of interpreting them as VoiceOver commands.
 

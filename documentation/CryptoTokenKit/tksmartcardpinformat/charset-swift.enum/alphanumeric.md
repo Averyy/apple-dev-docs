@@ -23,7 +23,7 @@ case alphanumeric
 TKSmartCardPINCharsetAlphanumeric
 ```
 
-#### Discussion
+## Discussion
 
 PIN can be composed of digits and letters.
 

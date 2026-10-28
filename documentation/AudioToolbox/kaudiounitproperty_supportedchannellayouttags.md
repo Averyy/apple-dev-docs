@@ -24,7 +24,7 @@ var kAudioUnitProperty_SupportedChannelLayoutTags: AudioUnitPropertyID { get }
 kAudioUnitProperty_SupportedChannelLayoutTags
 ```
 
-#### Discussion
+## Discussion
 
 Used with GetProperty to ascertain what an audio unit understands about laying out of channel orders. This will typically return one or more of the specified layout tags.
 

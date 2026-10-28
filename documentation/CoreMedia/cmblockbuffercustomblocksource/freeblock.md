@@ -25,7 +25,7 @@ var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void
 void (*)(void *, void *, unsigned long) FreeBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `NULL` if you don’t want a function to be called after disposal. The function will not be called if no memory block is ever allocated or supplied.
 

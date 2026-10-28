@@ -19,7 +19,7 @@ A Boolean value that indicates whether the vehicle is currently connected over B
 var isConnected: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` when the vehicle is connected over Bluetooth, or `false` when it isn’t connected.
 

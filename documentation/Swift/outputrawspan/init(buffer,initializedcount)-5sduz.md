@@ -21,7 +21,7 @@ Unsafely create an OutputRawSpan over partly-initialized memory.
 init(buffer: borrowing Slice<UnsafeMutableRawBufferPointer>, initializedCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The memory in `buffer` must remain valid throughout the lifetime of the newly-created `OutputRawSpan`. Its prefix must contain `initializedCount` initialized bytes, followed by uninitialized memory.
 

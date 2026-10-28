@@ -21,7 +21,7 @@ A list of shorter-named weekdays in this calendar, localized to the Calendar’s
 var shortWeekdaySymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]`.
 

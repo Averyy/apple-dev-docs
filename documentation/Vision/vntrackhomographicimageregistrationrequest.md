@@ -24,7 +24,7 @@ class VNTrackHomographicImageRegistrationRequest
 @interface VNTrackHomographicImageRegistrationRequest : VNStatefulRequest
 ```
 
-#### Overview
+## Overview
 
 This request is similar to [`VNHomographicImageRegistrationRequest`](./vnhomographicimageregistrationrequest.md). However, as a [`VNStatefulRequest`](./vnstatefulrequest.md), it automatically computes the registration against the previous frame.
 

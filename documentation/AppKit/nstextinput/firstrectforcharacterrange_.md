@@ -15,11 +15,11 @@ Returns the first frame rectangle for characters in the given range, in screen c
 - (NSRect) firstRectForCharacterRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle for the given range of characters.
 
-#### Discussion
+## Discussion
 
 If `theRange` spans multiple lines of text in the text view, the rectangle returned is the one for the characters in the first line. If the length of `theRange` is 0 (as it would be if there is nothing selected at the insertion point), the rectangle coincides with the insertion point, and its width is 0.
 

@@ -17,7 +17,7 @@ An object that describes the content required for the countdown UI.
 struct Countdown
 ```
 
-#### Overview
+## Overview
 
 The code snippet below describes how to configure a countdown UI with a pause and resume button.
 

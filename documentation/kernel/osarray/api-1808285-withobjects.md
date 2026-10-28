@@ -14,11 +14,11 @@ static OSArray * withObjects(
  unsigned int capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSArray containing the objects provided, with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more objects (*unlike*[CFMutableArray](../../CoreFoundation/cfmutablearray.md), for which the initial capacity is a hard limit).
 

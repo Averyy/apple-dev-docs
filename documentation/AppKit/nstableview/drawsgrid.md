@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether the table view draws a grid.
 - (BOOL) drawsGrid;
 ```
 
-#### Return Value
+## Return Value
 
 Returns whether the grid is drawn.
 

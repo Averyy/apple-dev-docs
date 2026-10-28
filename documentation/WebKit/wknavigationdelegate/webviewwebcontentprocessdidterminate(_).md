@@ -23,7 +23,7 @@ optional func webViewWebContentProcessDidTerminate(_ webView: WKWebView)
 - (void) webViewWebContentProcessDidTerminate:(WKWebView *) webView;
 ```
 
-#### Discussion
+## Discussion
 
 Web views use a separate process to render and manage web content. WebKit calls this method when the process for the specified web view terminates for any reason.
 

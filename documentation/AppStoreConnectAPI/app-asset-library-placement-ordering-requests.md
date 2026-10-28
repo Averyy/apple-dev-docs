@@ -5,7 +5,7 @@
 
 Set the display order of an app’s placements within a localization.
 
-#### Overview
+## Overview
 
 The `appAssetLibraryPlacementOrderingRequests` resource represents a request that sets the display order of an app’s asset library placements within a localization, such as the order of screenshots. Use it to reorder the placements for a localization in a single request.
 

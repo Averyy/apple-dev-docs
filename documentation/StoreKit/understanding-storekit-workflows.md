@@ -13,11 +13,11 @@ Implement an in-app store with several product types, using StoreKit views.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 StoreKit offers an expansive API for creating an almost limitless variety of in-app stores. This sample app shows you precisely what you need to implement in order to get up and running with a store in your app that can implement several Apple In-App Purchase (IAP) types, including subscriptions.
 
-#### Configure and run the project
+## Configure and run the project
 
 The design of this sample doesn’t require any special setup, or even the creation of products in App Store Connect; it uses StoreKit Testing in Xcode and the Transaction Manager window in Xcode to test Apple In-App Purchase.
 
@@ -40,7 +40,7 @@ For more information on using the `LocalConfiguration` file, including creating 
 
 To run the app, press the Xcode run button, or press command-R. To purchase any demo products, click or tap the buy button on a product, and the system presents the payment sheet that you can either accept (purchase) or cancel. The app shows the status and results of purchases on the status display near the top of the app’s window.
 
-#### Reset the project’s Apple In-App Purchases
+## Reset the project’s Apple In-App Purchases
 
 After you purchase products in the sample app, to reset the product to its initial unpurchased state, select Debug > StoreKit > Manage Transactions. In the sample app’s Transactions panel, select each transaction you want to delete, then click the  minus (”-”) button at the bottom of the list to delete it. In addition, to reset the consumable item information that the app stores, run the command `defaults delete com.example.apple-samplecode.StoreKitWorkflows` in Terminal.
 

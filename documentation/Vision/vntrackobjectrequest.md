@@ -24,7 +24,7 @@ class VNTrackObjectRequest
 @interface VNTrackObjectRequest : VNTrackingRequest
 ```
 
-#### Overview
+## Overview
 
 Use this type of request to track the bounding boxes around objects previously identified in an image. Vision attempts to locate the same object from the input observation throughout the sequence.
 

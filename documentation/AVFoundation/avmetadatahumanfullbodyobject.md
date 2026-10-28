@@ -23,7 +23,7 @@ class AVMetadataHumanFullBodyObject
 @interface AVMetadataHumanFullBodyObject : AVMetadataBodyObject
 ```
 
-#### Overview
+## Overview
 
 On supported platforms, [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) outputs arrays of detected human full body objects.
 

@@ -24,7 +24,7 @@ var rightPupil: VNFaceLandmarkRegion2D? { get }
 @property (readonly, nullable) VNFaceLandmarkRegion2D * rightPupil;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be inaccurate if the eye is blinking.
 

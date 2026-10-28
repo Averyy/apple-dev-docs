@@ -21,11 +21,11 @@ static func parse(_ arguments: [String]? = nil) throws -> Self
 
 - [Manual Parsing and Testing](../manualparsing.md)
 
-#### Return Value
+## Return Value
 
 A new instance of this type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If parsing failed or arguments contains a help request.
 

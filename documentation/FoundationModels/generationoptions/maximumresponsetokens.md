@@ -24,7 +24,7 @@ var maximumResponseTokens: Int?
 
 - [Managing the context window](../managing-the-context-window.md)
 
-#### Discussion
+## Discussion
 
 If the model produces `maximumResponseTokens` before it naturally completes its response, the framework terminates the response early, without throwing an error. Use this property to protect against unexpectedly verbose responses and runaway generations.
 

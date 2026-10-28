@@ -25,7 +25,7 @@ case noStyle
 kCFDateFormatterNoStyle
 ```
 
-#### Discussion
+## Discussion
 
 You use this constant to suppress output for the date or time (see [`CFDateFormatterCreate(_:_:_:_:)`](../cfdateformattercreate%28_,_,_,_%29.md) for more details).
 

@@ -13,9 +13,9 @@ Get a list of all experiments for an App Store version of an app across all plat
 
 - [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -21,11 +21,11 @@ func textField(at textFieldIndex: Int) -> UITextField?
 - (UITextField *) textFieldAtIndex:(NSInteger) textFieldIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The text field specified by index `textFieldIndex`.
 
-#### Discussion
+## Discussion
 
 The number of text fields present in an alert is dependent on the style of the alert.
 

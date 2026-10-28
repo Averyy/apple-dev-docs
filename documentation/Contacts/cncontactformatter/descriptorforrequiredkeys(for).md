@@ -24,11 +24,11 @@ class func descriptorForRequiredKeys(for style: CNContactFormatterStyle) -> any 
 + (id<CNKeyDescriptor>) descriptorForRequiredKeysForStyle:(CNContactFormatterStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 The contact key descriptor for the formatting style.
 
-#### Discussion
+## Discussion
 
 Include this method with the keys to fetch when fetching contacts. To format multiple styles, you can include multiple key descriptors with the keys to fetch.
 

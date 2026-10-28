@@ -25,7 +25,7 @@ func la_vector_length(_ vector: la_object_t) -> la_count_t
 extern la_count_t la_vector_length(la_object_t vector);
 ```
 
-#### Discussion
+## Discussion
 
 Get the length of a vector.
 

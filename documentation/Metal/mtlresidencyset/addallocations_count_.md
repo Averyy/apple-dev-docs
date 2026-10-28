@@ -20,7 +20,7 @@ Stages multiple resources to join the residency set’s list of allocations.
 - (void) addAllocations:(id<MTLAllocation> const[]) allocations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Finalize the inclusion of these resource allocations, and all other changes you stage, by calling a residency set’s [`commit()`](./commit%28%29.md) method.
 

@@ -5,7 +5,7 @@
 
 These constants identify record types.
 
-#### Overview
+## Overview
 
 See [`ABRecordType`](./abrecordtype.md).
 

@@ -25,11 +25,11 @@ func fileSystemRepresentation(withPath path: String) -> UnsafePointer<CChar>
 - (const char *) fileSystemRepresentationWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A C-string representation of `path` that properly encodes Unicode strings for use by the file system.
 
-#### Discussion
+## Discussion
 
 Use this method if your code calls system routines that expect C-string path arguments. If you use the C string beyond the scope of the current autorelease pool, you must copy it.
 

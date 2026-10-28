@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the sharing button is enabled.
 

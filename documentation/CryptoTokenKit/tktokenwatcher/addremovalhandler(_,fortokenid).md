@@ -29,7 +29,7 @@ func addRemovalHandler(_ removalHandler: @escaping (String) -> Void, forTokenID 
 
 - [Using Cryptographic Assets Stored on a Smart Card](../using-cryptographic-assets-stored-on-a-smart-card.md)
 
-#### Discussion
+## Discussion
 
 You typically call this method in the `insertionHandler` passed to the token watcher initializer.
 

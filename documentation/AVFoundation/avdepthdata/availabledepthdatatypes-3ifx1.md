@@ -21,7 +21,7 @@ The list of depth data formats to which you can convert this depth data.
 var availableDepthDataTypes: [OSType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`converting(toDepthDataType:)`](./converting%28todepthdatatype%29.md) method to obtain a converted depth data object using one of the types in this list.
 

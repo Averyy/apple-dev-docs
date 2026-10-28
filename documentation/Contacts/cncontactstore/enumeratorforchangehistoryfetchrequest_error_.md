@@ -20,11 +20,11 @@ Enumerates a change history fetch request.
 - (CNFetchResult<NSEnumerator<CNChangeHistoryEvent *> *> *) enumeratorForChangeHistoryFetchRequest:(CNChangeHistoryFetchRequest *) request error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator of the events matching the result, or `nil` if there was an error.
 
-#### Discussion
+## Discussion
 
 Executes the fetch request and returns an enumerator for the results. This can prevent all events from loading into memory at once. An error that occurs during enumeration may throw an exception.
 

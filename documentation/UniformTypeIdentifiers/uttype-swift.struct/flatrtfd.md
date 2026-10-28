@@ -21,7 +21,7 @@ A type that represents flattened Rich Text Format Directory documents.
 static var flatRTFD: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pasteboard uses a flattened Rich Text Format Directory format.
 

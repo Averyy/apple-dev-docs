@@ -24,7 +24,7 @@ var accessibilityCustomActions: [UIAccessibilityCustomAction]? { get set }
 @property (nonatomic, strong, nullable) NSArray<UIAccessibilityCustomAction *> * accessibilityCustomActions;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more `UIAccessibilityCustomAction` objects defining the supported actions. Assistive technologies, such as VoiceOver, display your custom actions to the user at appropriate times.
 

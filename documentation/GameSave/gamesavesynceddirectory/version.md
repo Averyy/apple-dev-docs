@@ -19,7 +19,7 @@ A representation of a version of the directory.
 class Version
 ```
 
-#### Overview
+## Overview
 
 Used to describe the conflicted or local versions of a directory in case there are conflicts.
 

@@ -21,7 +21,7 @@ A notification the system posts when a player’s available HDR modes change.
 static let AVPlayerAvailableHDRModesDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The value of a player’s [`availableHDRModes`](../../../AVFoundation/avplayer/availablehdrmodes.md) may change due to the connection or disconnection of a display, or other change in resources.
 

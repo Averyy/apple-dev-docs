@@ -24,7 +24,7 @@ Creates a transition that applies the provided effect to symbol images within th
 
 Available when `Self` is `SymbolEffectTransition`.
 
-#### Return Value
+## Return Value
 
 A new transition.
 

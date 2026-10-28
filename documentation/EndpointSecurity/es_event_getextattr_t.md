@@ -20,7 +20,7 @@ struct es_event_getextattr_t
 typedef struct { ... } es_event_getextattr_t;
 ```
 
-#### Overview
+## Overview
 
 See the `getxattr(2)` man page for information on getting extended attributes.
 

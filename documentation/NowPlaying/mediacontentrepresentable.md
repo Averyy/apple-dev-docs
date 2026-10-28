@@ -21,7 +21,7 @@ A protocol that describes media content being played.
 protocol MediaContentRepresentable : Identifiable
 ```
 
-#### Overview
+## Overview
 
 Content types like [`MusicContent`](./musiccontent.md), [`PodcastContent`](./podcastcontent.md), [`MovieContent`](./moviecontent.md), [`TVShowContent`](./tvshowcontent.md), [`BookContent`](./bookcontent.md), [`RadioContent`](./radiocontent.md), [`HomeMediaContent`](./homemediacontent.md), and [`GenericContent`](./genericcontent.md) conform to this protocol. Each content type provides structured metadata appropriate for its media type.
 

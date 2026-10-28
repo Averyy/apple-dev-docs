@@ -19,7 +19,7 @@ func pickerDidSettle(_ picker: WKInterfacePicker)
 - (void) pickerDidSettle:(WKInterfacePicker *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform any expensive operations associated with selecting a picker item. The user can turn the Digital Crown quickly to scroll through the items in the picker. This method is called only after scrolling subsides and the value remains steady for a reasonable period of time. For inexpensive operations, you can continue to use the picker’s action method, which is called for each change of the selected item.
 

@@ -19,7 +19,7 @@ A closure that handles the cell registration and configuration.
 typedef void (^)(__kindof UICollectionViewCell *, NSIndexPath *, id) UICollectionViewCellRegistrationConfigurationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure takes the following parameters:
 

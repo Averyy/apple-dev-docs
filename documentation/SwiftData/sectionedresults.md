@@ -21,7 +21,7 @@ A `RandomAccessCollection` of [`ResultsSection`](./resultssection.md) instances 
 struct SectionedResults<Element, SectionTitle> where Element : PersistentModel, SectionTitle : Hashable
 ```
 
-#### Overview
+## Overview
 
 `SectionedResults` is the result type for sectioned `@Query` properties. Iterating it yields sections; each section is itself a `RandomAccessCollection` of model elements. Use [`subscript(sectionTitle:)`](./sectionedresults/subscript%28sectiontitle%29.md) for O(1) lookup by section title.
 

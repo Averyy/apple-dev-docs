@@ -11,11 +11,11 @@ Accessor to the length of the mapping.
 virtual mach_vm_address_t getAddress();
 ```
 
-#### Return Value
+## Return Value
 
 A byte count.
 
-#### Overview
+## Overview
 
 This method returns the length of the mapping.
 

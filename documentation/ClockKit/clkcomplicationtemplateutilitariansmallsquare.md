@@ -21,7 +21,7 @@ class CLKComplicationTemplateUtilitarianSmallSquare
 @interface CLKComplicationTemplateUtilitarianSmallSquare : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.utilitarianSmall`](./clkcomplicationfamily/utilitariansmall.md) family.
 

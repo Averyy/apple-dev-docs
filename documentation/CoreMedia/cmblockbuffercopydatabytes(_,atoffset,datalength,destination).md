@@ -25,11 +25,11 @@ func CMBlockBufferCopyDataBytes(_ theSourceBuffer: CMBlockBuffer, atOffset offse
 extern OSStatus CMBlockBufferCopyDataBytes(CMBlockBufferRef theSourceBuffer, size_t offsetToData, size_t dataLength, void *destination);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if the copy succeeded, returns an error otherwise.
 
-#### Discussion
+## Discussion
 
 This function is used to copy bytes out of a `CMBlockBuffer` into a provided piece of memory. It deals with the possibility of the desired range of data being noncontiguous. The function assumes that the memory at the destination is sufficient to hold the data. If `dataLength` bytes of data are not available in the `CMBlockBuffer`, an error is returned and the contents of the destination are undefined.
 

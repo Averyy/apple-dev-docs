@@ -21,7 +21,7 @@ Whether the system preference for Differentiate without Color is enabled.
 var accessibilityDifferentiateWithoutColor: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this is true, UI should not convey information using color alone and instead should use shapes or glyphs to convey information.
 

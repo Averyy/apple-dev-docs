@@ -19,7 +19,7 @@ class var printerTypes: [NSPrinter.TypeName] { get }
 @property (class, copy, readonly) NSArray<NSString *> * printerTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains the make and model information for a supported printer.
 

@@ -21,7 +21,7 @@ var isDualCameraDualPhotoDeliverySupported: Bool { get }
 @property (nonatomic, readonly, getter=isDualCameraDualPhotoDeliverySupported) BOOL dualCameraDualPhotoDeliverySupported;
 ```
 
-#### Discussion
+## Discussion
 
 Not all devices and capture formats support dual camera capture. This property’s value can change if the [`sessionPreset`](../avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](../avcapturedevice/activeformat.md) property of the underlying capture device changes. If a camera or format change causes this property’s value to become [`false`](../../Swift/false.md), the [`isDualCameraDualPhotoDeliveryEnabled`](./isdualcameradualphotodeliveryenabled.md) property’s value also becomes [`false`](../../Swift/false.md).
 

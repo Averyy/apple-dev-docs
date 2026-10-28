@@ -23,7 +23,7 @@ var actions: [UIAlertAction] { get }
 @property (nonatomic, readonly) NSArray<UIAlertAction *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 The actions are in the order in which you added them to the alert controller. This order also corresponds to the order in which they’re displayed in the alert or action sheet. The second action in the array is displayed below the first, the third is displayed below the second, and so on.
 

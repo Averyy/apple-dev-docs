@@ -20,11 +20,11 @@ func DADiskCopyDescription(_ disk: DADisk) -> CFDictionary?
 extern CFDictionaryRefDADiskCopyDescription(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 The disk’s Disk Arbitration description.
 
-#### Discussion
+## Discussion
 
 This function will contact Disk Arbitration to acquire the latest description of the specified disk, unless this function is called on a disk object passed within the context of a registered callback, in which case the description is current as of that callback event.
 

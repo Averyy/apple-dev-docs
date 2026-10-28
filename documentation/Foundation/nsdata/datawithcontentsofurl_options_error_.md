@@ -21,11 +21,11 @@ Creates a data object from the data at the provided file URL using specific read
 + (instancetype) dataWithContentsOfURL:(NSURL *) url options:(NSDataReadingOptions) readOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Return Value
+## Return Value
 
 A data object that contains the file’s data, or `nil` if the system can’t create one.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead.
 

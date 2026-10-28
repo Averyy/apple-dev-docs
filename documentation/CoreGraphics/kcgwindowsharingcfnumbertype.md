@@ -14,7 +14,7 @@
 #define kCGWindowSharingCFNumberType
 ```
 
-#### Discussion
+## Discussion
 
 The encoding type for window sharing values inside a [`CFNumber`](../CoreFoundation/cfnumber.md) opaque type.
 

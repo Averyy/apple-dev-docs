@@ -25,7 +25,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm? { get }
 @property (nonatomic, copy, readonly, nullable) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The supported constants are defined in Time Pitch Algorithm Settings. An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) will be raised if this property is set to a value other than the defined constants.
 

@@ -27,7 +27,7 @@ func provideCredentialWithoutUserInteraction(for credentialRequest: any ASCreden
 
 - [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
-#### Discussion
+## Discussion
 
 After the person selects a credential identity, the system creates a credential request. The contents of the request depend on the type of credential requested. If the person requests a password or one-time passcode (OTP), the credential request (a [`ASPasswordCredentialRequest`](../aspasswordcredentialrequest.md) or [`ASOneTimeCodeCredentialRequest`](../asonetimecodecredentialrequest.md)) contains a credential identity. If the person requests a passkey, the [`ASPasskeyCredentialRequest`](../aspasskeycredentialrequest.md) also contains information about the passkey assertion challenge.
 

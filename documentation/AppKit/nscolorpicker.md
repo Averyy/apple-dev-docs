@@ -19,7 +19,7 @@ class NSColorPicker
 @interface NSColorPicker : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSColorPickingDefault`](./nscolorpickingdefault.md) and [`NSColorPickingCustom`](./nscolorpickingcustom.md) protocols define a way to add color pickers (custom user interfaces for color selection) to the color panel.
 

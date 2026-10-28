@@ -22,7 +22,7 @@ The reciprocal of the maximum rate to process buffers.
 var frameAnalysisSpacing: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 The request won’t process buffers that fall within the [`frameAnalysisSpacing`](./frameanalysisspacing.md) since the previously performed analysis. The analysis isn’t done by wall time but by analysis of the time stamps of the sample buffers the request processes.
 

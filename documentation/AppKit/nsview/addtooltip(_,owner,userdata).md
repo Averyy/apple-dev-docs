@@ -19,11 +19,11 @@ func addToolTip(_ rect: NSRect, owner: Any, userData data: UnsafeMutableRawPoint
 - (NSToolTipTag) addToolTipRect:(NSRect) rect owner:(id) owner userData:(void *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An integer tag identifying the tooltip; you can use this tag to remove the tooltip.
 
-#### Discussion
+## Discussion
 
 The tooltip string is obtained dynamically from `owner` by invoking either the `NSToolTipOwner` informal protocol method [`view:stringForToolTip:point:userData:`](../../ObjectiveC/nsobject-swift.class/view_stringfortooltip_point_userdata_.md), if implemented, or the [`NSObjectProtocol`](../../ObjectiveC/nsobjectprotocol.md) protocol method [`description`](../../ObjectiveC/nsobjectprotocol/description.md).
 

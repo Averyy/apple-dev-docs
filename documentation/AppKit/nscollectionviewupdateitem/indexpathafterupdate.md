@@ -19,7 +19,7 @@ var indexPathAfterUpdate: IndexPath? { get }
 @property (readonly, nullable) NSIndexPath * indexPathAfterUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` for an action of type [`NSCollectionView.UpdateAction.delete`](../nscollectionview/updateaction/delete.md).
 

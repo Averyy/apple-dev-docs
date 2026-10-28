@@ -15,7 +15,7 @@ Creates a HID element value from a physical value.
 init?<FloatingPointType>(element: HIDElement, fromPhysicalValue: FloatingPointType, timestamp: SuspendingClock.Instant) where FloatingPointType : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 The raw value and physical value are calculated; both must be valid.
 

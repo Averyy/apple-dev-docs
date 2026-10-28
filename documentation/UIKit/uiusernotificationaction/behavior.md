@@ -23,7 +23,7 @@ var behavior: UIUserNotificationActionBehavior { get }
 @property (nonatomic, assign, readonly) UIUserNotificationActionBehavior behavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIUserNotificationActionBehavior.default`](../uiusernotificationactionbehavior/default.md).
 

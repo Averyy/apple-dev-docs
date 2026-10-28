@@ -15,11 +15,11 @@ Response object for a single product page retrieval.
 object ProductPageDetailsResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Product Page by ID`](./get-product-page-by-id.md) endpoint returns `ProductPageDetailsResponse` as the top-level envelope.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var standardAppearance: UITabBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UITabBarAppearance * standardAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a tab bar displays the selected item, the appearance setting in this property overrides the settings in the [`standardAppearance`](../uitabbar/standardappearance.md) property of [`UITabBar`](../uitabbar.md).
 

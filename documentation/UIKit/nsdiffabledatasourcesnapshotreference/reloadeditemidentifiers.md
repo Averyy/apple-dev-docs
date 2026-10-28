@@ -23,7 +23,7 @@ var reloadedItemIdentifiers: [Any] { get }
 @property (nonatomic, readonly) NSArray<id> * reloadedItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 After you make updates to the snapshot, this method returns an array of identifiers corresponding to the items that the view reloads when you apply the snapshot to your data source.
 

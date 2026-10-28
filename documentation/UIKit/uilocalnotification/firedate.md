@@ -24,7 +24,7 @@ var fireDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * fireDate;
 ```
 
-#### Discussion
+## Discussion
 
 The fire date is interpreted according to the value specified in the [`timeZone`](./timezone.md) property. If the specified value is `nil` or is a date in the past, the notification is delivered immediately.
 

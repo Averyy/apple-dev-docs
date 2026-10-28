@@ -24,7 +24,7 @@ var name: String { get }
 @property (strong, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 For apps, this property holds a localized name for the app. For supported Bluetooth LE devices, this property holds whatever string the device reports as its name.
 

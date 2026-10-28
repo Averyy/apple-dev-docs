@@ -38,7 +38,7 @@ nonisolated
 static func generateConvex(from points: [SIMD3<Float>]) async throws -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The new shape.
 

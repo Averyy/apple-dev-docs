@@ -24,7 +24,7 @@ var titleLocalizationKey: String? { get set }
 @property (copy, nullable) NSString * titleLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit uses this value to set the `title-loc-key` push notification property.
 

@@ -25,7 +25,7 @@ var numberOfBytesTransferred: Int64 { get }
 @property (nonatomic, readonly) long long numberOfBytesTransferred;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “bytes”.
 

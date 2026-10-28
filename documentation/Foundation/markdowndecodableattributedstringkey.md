@@ -21,7 +21,7 @@ A protocol that defines how an attribute key decodes a value that corresponds to
 protocol MarkdownDecodableAttributedStringKey : AttributedStringKey
 ```
 
-#### Overview
+## Overview
 
 This protocol is separate from [`DecodableAttributedStringKey`](./decodableattributedstringkey.md) to separate explicit attributes defined by the SDK from Markdown’s semantic styling attributes. You use these attributes with Apple’s extended syntax for markdown: `^[text](attribute: value)`.
 

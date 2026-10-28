@@ -19,11 +19,11 @@ func records(matching search: ABSearchElement!) -> [Any]!
 - (NSArray *) recordsMatchingSearchElement:(ABSearchElement *) search;
 ```
 
-#### Return Value
+## Return Value
 
 An array of records that match the given search element, or an empty array if no records match the search element.
 
-#### Discussion
+## Discussion
 
 If `search` is `nil`, this method raises an exception.
 

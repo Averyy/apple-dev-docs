@@ -15,7 +15,7 @@ The structure for the platform capability descriptor.
 typedef struct IOUSBPlatformCapabilityDescriptor IOUSBPlatformCapabilityDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.2.4 for more information.
 

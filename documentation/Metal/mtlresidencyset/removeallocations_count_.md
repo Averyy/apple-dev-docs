@@ -20,7 +20,7 @@ Stages multiple resources to leave the residency set’s list of allocations.
 - (void) removeAllocations:(id<MTLAllocation> const[]) allocations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Finalize the removal of these resource allocations, and all other changes you stage, by calling a residency set’s [`commit()`](./commit%28%29.md) method.
 

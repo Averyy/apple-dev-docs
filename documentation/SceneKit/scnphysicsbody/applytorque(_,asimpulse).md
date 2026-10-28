@@ -25,7 +25,7 @@ func applyTorque(_ torque: SCNVector4, asImpulse impulse: Bool)
 - (void) applyTorque:(SCNVector4) torque impulse:(BOOL) impulse;
 ```
 
-#### Discussion
+## Discussion
 
 Applying a torque to a body changes its angular velocity by an amount related to its mass and shape, rotating it without affecting its linear acceleration. Each component of the torque vector relates to rotation about the corresponding axis in the local coordinate system of the [`SCNNode`](../scnnode.md) object containing the physics body. For example, applying a torque of `{0.0, 0.0, 1.0}` causes a node to spin counterclockwise around the world-space z-axis.
 

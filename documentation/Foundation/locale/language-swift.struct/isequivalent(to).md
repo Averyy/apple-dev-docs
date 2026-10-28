@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether this language and another languag
 func isEquivalent(to language: Locale.Language) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two languages are equivalent; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 The following example shows equivalence tests run on various ways of expressing the US English language, followed by a test against UK English.
 

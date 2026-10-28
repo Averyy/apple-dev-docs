@@ -19,7 +19,7 @@ var mouseDownFlags: Int { get }
 @property (readonly) NSInteger mouseDownFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the value of the modifier flags from the most recent [`NSEvent`](../nsevent.md) object representing a mouse-down event. If tracking has not yet occurred or the event contained no modifier keys, the value of this property is `0`.
 

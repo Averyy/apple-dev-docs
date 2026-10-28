@@ -20,7 +20,7 @@ The declaration to configure an interactive legacy profile.
 object LegacyInteractiveProfile
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.legacy.interactive` as the declaration type.
 
@@ -33,7 +33,7 @@ The profile may contain any payload type other than the following:
 
 If a user enrollment triggers this configuration: in macOS the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`; in iOS, tvOS, watchOS and visionOS, the system rejects the entire profile if any MDMv1 payload has its User Enrollment Mode setting set to `forbidden`.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ If a user enrollment triggers this configuration: in macOS the system silently i
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **URL**:
 

@@ -22,11 +22,11 @@ class func disambiguation(with restaurantsToDisambiguate: [INRestaurant]) -> Sel
 + (instancetype) disambiguationWithRestaurantsToDisambiguate:(NSArray<INRestaurant *> *) restaurantsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantResolutionResult`](../inrestaurantresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the restaurant uniquely and need the user to select from a limited set of possible values.
 

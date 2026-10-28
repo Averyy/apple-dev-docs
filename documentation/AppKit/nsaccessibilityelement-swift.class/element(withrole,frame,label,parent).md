@@ -19,11 +19,11 @@ class func element(withRole role: NSAccessibility.Role, frame: NSRect, label: St
 + (id) accessibilityElementWithRole:(NSAccessibilityRole) role frame:(NSRect) frame label:(NSString *) label parent:(id) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated and initialized accessibility element.
 
-#### Discussion
+## Discussion
 
 Alternatively, instead of calling this convenience method, you can create an accessibility element and set its [`accessibilityRole`](../nsaccessibility-c.protocol/accessibilityrole.md), [`accessibilityLabel`](../nsaccessibility-c.protocol/accessibilitylabel.md), and [`accessibilityParent`](../nsaccessibility-c.protocol/accessibilityparent.md) properties. Regardless of how you create the accessibility element, you need to set its [`accessibilityFrameInParentSpace`](./accessibilityframeinparentspace.md) property to ensure that the element’s frame is updated as its parent moves.
 

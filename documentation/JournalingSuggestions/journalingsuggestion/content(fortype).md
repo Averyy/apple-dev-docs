@@ -15,11 +15,11 @@ Searches a suggestion’s items for information of the given type.
 func content<Content>(forType content: Content.Type) async -> [Content] where Content : JournalingSuggestionAsset
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains elements of the requested type, if they exist in the suggestion.
 
-#### Discussion
+## Discussion
 
 The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](../journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 

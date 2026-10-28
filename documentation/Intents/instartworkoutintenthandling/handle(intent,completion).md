@@ -28,7 +28,7 @@ func handle(intent: INStartWorkoutIntent) async -> INStartWorkoutIntentResponse
 - (void) handleStartWorkout:(INStartWorkoutIntent *) intent completion:(void (^)(INStartWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to transfer control of starting the workout to your app. When your response object contains the [`INStartWorkoutIntentResponseCode.continueInApp`](../instartworkoutintentresponsecode/continueinapp.md) code, SiriKit automatically launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response object.
 

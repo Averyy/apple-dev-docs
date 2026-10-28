@@ -5,11 +5,11 @@
 
 If your Audio Unit plug-in creates auxiliary real-time rendering threads, add them to the host app’s audio workgroup so the system can schedule them appropriately.
 
-#### Overview
+## Overview
 
 Most Audio Unit plug-ins don’t need to create their own real-time threads, but some complex plug-ins do to achieve their required processing. For example, a synthesizer may need to create additional real-time rendering threads to achieve maximum polyphony. So that the system knows about these threads, join them to an audio workgroup. To know which audio workgroup to add them to, provide a render context observer.
 
-##### Provide a Render Context Observer
+### Provide a Render Context Observer
 
 An [`AURenderContextObserver`](./aurendercontextobserver.md) is a block the Audio Unit plug-in holds that the system calls before each render request. With each request, the system passes the block an [`AudioUnitRenderContext`](./audiounitrendercontext.md) object that provides the audio workgroup of the calling context. When the context’s audio workgroup changes, join your auxiliary real-time threads to the new audio workgroup.
 

@@ -19,7 +19,7 @@ func getPixel(_ p: UnsafeMutablePointer<Int>, atX x: Int, y: Int)
 - (void) getPixel:(NSUInteger[]) p atX:(NSInteger) x y:(NSInteger) y;
 ```
 
-#### Discussion
+## Discussion
 
 The origin is in the top-left corner.
 

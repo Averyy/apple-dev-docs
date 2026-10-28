@@ -21,7 +21,7 @@ var childForInterfaceOrientationLock: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForInterfaceOrientationLock;
 ```
 
-#### Discussion
+## Discussion
 
 Override to return a child view controller or `nil`. If you return a view controller, the system uses that view controller’s preference for interface orientation lock. If you return `nil`, the system uses `self` to get the preference for interface orientation lock. Call [`setNeedsUpdateOfPrefersInterfaceOrientationLocked()`](./setneedsupdateofprefersinterfaceorientationlocked%28%29.md) if the child view controller that the system needs to query for the interface orientation lock preference changes.
 

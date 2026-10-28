@@ -23,11 +23,11 @@ func IORegistryEntryIDMatching(_ entryID: UInt64) -> CFMutableDictionary!
 CFMutableDictionaryRef IORegistryEntryIDMatching(uint64_t entryID);
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, is returned on success, or zero on failure. The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification which will consume a reference, otherwise it should be released with CFRelease by the caller.
 
-#### Discussion
+## Discussion
 
 This function creates a matching dictionary that will match a registered, active IOService found with the given registry entry ID. The entry ID for a registry entry is returned by IORegistryEntryGetRegistryEntryID().
 

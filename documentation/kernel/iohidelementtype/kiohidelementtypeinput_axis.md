@@ -13,7 +13,7 @@
 kIOHIDElementTypeInput_Axis = 3
 ```
 
-#### Discussion
+## Discussion
 
 Input data field used to represent an axis.
 

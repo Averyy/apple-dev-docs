@@ -25,7 +25,7 @@ var propertyCache: NSMutableDictionary? { get set }
 @property (nonatomic, strong, nullable) NSMutableDictionary<NSString *,id> * propertyCache;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary is used by [`value(forKey:)`](./value%28forkey%29.md) and [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) for property values. This property is `nil` unless it has been explicitly set or non-`nil` values have been set for keys using [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md).
 

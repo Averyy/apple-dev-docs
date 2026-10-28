@@ -15,7 +15,7 @@ Attributes that display priority for a notification.
 struct Attributes
 ```
 
-#### Overview
+## Overview
 
 Use these attributes to change the visual appearance of and add information about your notification. For guidance on whether to alert for a notification, see [`AlertingContext`](../alertingcontext.md).
 

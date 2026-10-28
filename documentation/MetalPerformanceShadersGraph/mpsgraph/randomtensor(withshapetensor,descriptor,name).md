@@ -24,11 +24,11 @@ func randomTensor(withShapeTensor shapeTensor: MPSGraphTensor, descriptor: MPSGr
 - (MPSGraphTensor *) randomTensorWithShapeTensor:(MPSGraphTensor *) shapeTensor descriptor:(MPSGraphRandomOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An MPSGraphTensor of shape containing random values in the defined range.
 
-#### Discussion
+## Discussion
 
 Returns a tensor of provided shape of random values in the distribution specified. Uses a random seed value to initalize state. No state is preserved, and subsequent calls are not guaranteed to result in a unique stream of random values.
 

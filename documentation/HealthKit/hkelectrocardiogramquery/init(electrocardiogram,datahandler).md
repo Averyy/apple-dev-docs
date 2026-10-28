@@ -24,7 +24,7 @@ init(electrocardiogram: HKElectrocardiogram, dataHandler: @escaping (HKElectroca
 - (instancetype) initWithElectrocardiogram:(HKElectrocardiogram *) electrocardiogram dataHandler:(void (^)(HKElectrocardiogramQuery *query, HKElectrocardiogramVoltageMeasurement *voltageMeasurement, BOOL done, NSError *error)) dataHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you run the query, it calls the data handler once for each voltage measurement, passing the voltage data. On the last voltage measurement, it sets the `done` parameter to [`true`](../../Swift/true.md). If an error occurs, it stops collecting voltage data and calls the data handler; it sets the `voltageMeasurement` parameter to `nil`, and passes in an [`NSError`](../../Foundation/nserror.md) object that describes the error.
 

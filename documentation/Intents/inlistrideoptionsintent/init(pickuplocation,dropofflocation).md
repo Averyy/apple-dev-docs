@@ -23,11 +23,11 @@ init(pickupLocation: CLPlacemark?, dropOffLocation: CLPlacemark?)
 - (instancetype) initWithPickupLocation:(CLPlacemark *) pickupLocation dropOffLocation:(CLPlacemark *) dropOffLocation;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, Maps creates instances when it requires a list of rides offered by your service. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

@@ -12,11 +12,11 @@ UInt8 configRead8(
  IOByteCountoffset )
 ```
 
-#### Return Value
+## Return Value
 
 An 8-bit value.
 
-#### Overview
+## Overview
 
 This method reads a 8-bit configuration space register on the device and returns its value.
 

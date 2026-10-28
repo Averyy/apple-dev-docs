@@ -21,7 +21,7 @@ Appends the given transform to the context’s existing transform.
 mutating func concatenate(_ matrix: CGAffineTransform)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to updating the context’s [`transform`](./transform.md) directly using the `matrix` parameter:
 

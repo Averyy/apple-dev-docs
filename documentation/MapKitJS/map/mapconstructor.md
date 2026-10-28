@@ -18,11 +18,11 @@ constructor(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A [`Map`](../map.md) instance.
 
-#### Discussion
+## Discussion
 
 The map’s constructor takes an optional `parent` argument and an optional `options` argument. If you specify the `parent` argument, MapKit JS inserts the map element into the DOM as a descendant of `parent` that it styles to fill the size of its enclosing element. A map defaults to showing the entire world.
 

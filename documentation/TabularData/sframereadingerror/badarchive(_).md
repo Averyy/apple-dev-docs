@@ -21,7 +21,7 @@ An error that indicates the scalable data frame directory’s archive file is co
 case badArchive(String)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value contains a description of the error.
 

@@ -4,7 +4,7 @@
 
 Provides the ability to create pages that don’t conform to a layout defined by another template.
 
-#### Overview
+## Overview
 
 There is no built-in layout for contained elements. The `divTemplate` element creates a view where the elements it contains are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default. The following figure shows the positions inside of the `divTemplate` element. The `divTemplate` element should only be used when you can’t use another template to achieve the look you want. The theme for the div template defaults to the system preference.
 

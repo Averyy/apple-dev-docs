@@ -23,7 +23,7 @@ var timestamp: CMTime { get }
 @property (readonly) CMTime timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This timestamp is always synchronized to the [`masterClock`](../avcapturesession/masterclock.md) time of the [`AVCaptureSession`](../avcapturesession.md) object to which the photo output is connected.
 

@@ -29,7 +29,7 @@ var area: CGFloat { get }
 
 - [Configuring a Physics Body](../configuring-a-physics-body.md)
 
-#### Discussion
+## Discussion
 
 This property is used in conjunction with the [`density`](./density.md) property to calculate the body’s mass.
 

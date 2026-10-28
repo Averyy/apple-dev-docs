@@ -21,11 +21,11 @@ Find the range of the weekend around the given date, returned via two by-referen
 func dateIntervalOfWeekend(containing date: Date, start: inout Date, interval: inout TimeInterval) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a date range could be found, and `false` if the date is not in a weekend.
 
-#### Discussion
+## Discussion
 
 Note that a given entire day within a calendar is not necessarily all in a weekend or not; weekends can start in the middle of a day in some calendars and locales.
 

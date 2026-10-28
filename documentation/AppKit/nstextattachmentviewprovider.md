@@ -19,7 +19,7 @@ class NSTextAttachmentViewProvider
 @interface NSTextAttachmentViewProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `NSTextAttachmentViewProvider` when you need to represent document locations in terms of an [`NSTextLocation`](./nstextlocation.md) or an [`NSTextRange`](./nstextrange.md) or you want to support view-based text attachments. The view provider controls the view placement and layout without requiring view classes to be aware of the text attachment coordination using a [`NSTextLayoutManager`](./nstextlayoutmanager.md) in macOS 12 or iOS 15 and later.
 

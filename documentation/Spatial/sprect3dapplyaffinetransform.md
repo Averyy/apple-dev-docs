@@ -21,7 +21,7 @@ Returns a rectangle that results from applying the specified affine transform.
 static SPRect3D SPRect3DApplyAffineTransform(SPRect3D rect, SPAffineTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from applying the specified affine transform.
 

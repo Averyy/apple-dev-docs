@@ -19,7 +19,7 @@ func es_unsubscribe_all(_ client: OpaquePointer) -> es_return_t
 extern es_return_t es_unsubscribe_all(es_client_t *client);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether subscribing succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that the caller couldn’t reach the Endpoint Security subsystem or that the request was invalid.
 

@@ -24,7 +24,7 @@ init!(int32 value: Int32, in context: JSContext!)
 + (JSValue *) valueWithInt32:(int32_t) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript numeric value.
 

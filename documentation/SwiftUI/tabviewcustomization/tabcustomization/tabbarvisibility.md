@@ -17,7 +17,7 @@ The visibility of the tab in the tab bar.
 var tabBarVisibility: Visibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can change the default visibility by using the `TabContent/defaultVisibility(_:for)` with a `AdaptableTabBarPlacement.tabBar` placement.
 

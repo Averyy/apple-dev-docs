@@ -5,11 +5,11 @@
 
 Detects when you access a C++ container outside its bounds.
 
-#### Overview
+## Overview
 
 Use this check to detect when you access a libc++ container beyond the region `[container.begin(), container.end()]`, even when the accessed memory is in a heap-allocated buffer the container uses internally. Available in Xcode 7 and later.
 
-##### Vector overflow in C++
+### Vector overflow in C++
 
 In the following example, the `vector` variable has valid indexes in the range `[0,2]`, but the accessed index is `3`, which causes an overflow:
 
@@ -22,11 +22,11 @@ auto *pointer = &vector[0];
 return pointer[3]; // Error: out of bounds access for vector
 ```
 
-###### Solution
+#### Solution
 
 Add a bounds check before attempting to access a container at a specific index.
 
-##### Disabling Container Overflow Checks
+### Disabling Container Overflow Checks
 
 You may encounter a false-positive ‘Container overflow’ error when code that isn’t compiled with Address Sanitizer modifies a container. For container overflow checks to work correctly, you need to compile all code with Address Sanitizer. If you can’t do this, turn off container overflow checks using one of the following methods:
 

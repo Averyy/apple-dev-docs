@@ -21,7 +21,7 @@ Generates a data frame by copying the data frame’s rows and then sorting the r
 func sorted(on columnName: String, order: Order = .ascending) -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that only works for columns of the following types:
 

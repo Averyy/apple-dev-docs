@@ -15,7 +15,7 @@ A score representing song relevance, used to rank songs when surfacing content.
 object Song.RelevanceScore
 ```
 
-#### Overview
+## Overview
 
 A higher score indicates higher relevance. For example, a song with a score of 90 is ranked as more relevant than a song with a score of 50.
 

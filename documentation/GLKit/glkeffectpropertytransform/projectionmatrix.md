@@ -24,7 +24,7 @@ var projectionMatrix: GLKMatrix4 { get set }
 @property (nonatomic, assign) GLKMatrix4 projectionMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Convenience functions for creating perspective and orthographic projection matrices can be found in [GLKMatrix4](../glkmatrix4-pce.md).
 

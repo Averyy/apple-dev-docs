@@ -20,7 +20,7 @@ The estimated distance of overlap between the two colliding entities in scene co
 var penetrationDistance: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the maximum penetration distance for all contacts, for more detailed penetration distance see [`contacts`](./contacts.md) and [`fullContactInformation`](../../collisioncomponent/collisionoptions-swift.struct/fullcontactinformation.md).
 

@@ -24,11 +24,11 @@ func atIndex(_ index: Int) -> JSValue!
 - (JSValue *) valueAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index, or the JavaScript `undefined` value if no property exists at that index.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the subscript operator with a numeric subscript in JavaScript. Use it to access elements of JavaScript arrays or of objects with numerically-indexed properties.
 

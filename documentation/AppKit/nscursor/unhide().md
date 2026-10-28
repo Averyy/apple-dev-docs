@@ -22,7 +22,7 @@ class func unhide()
 + (void) unhide;
 ```
 
-#### Discussion
+## Discussion
 
 Each invocation of `unhide` must be balanced by an invocation of [`hide()`](./hide%28%29.md) in order for the cursor display to be correct.
 

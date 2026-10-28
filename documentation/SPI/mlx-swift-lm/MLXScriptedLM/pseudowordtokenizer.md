@@ -17,7 +17,7 @@ A deterministic tokenizer for random-weight models.
 struct PseudoWordTokenizer
 ```
 
-#### Overview
+## Overview
 
 Most tests should use [`ScriptedTokenizer`](./scriptedtokenizer.md). Use this one when the model’s output is arbitrary ids, as with random weights, and the text does not matter.
 

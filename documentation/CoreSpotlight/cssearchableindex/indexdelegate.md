@@ -23,7 +23,7 @@ weak var indexDelegate: (any CSSearchableIndexDelegate)? { get set }
 @property (weak, nullable) id<CSSearchableIndexDelegate> indexDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should conform to the [`CSSearchableIndexDelegate`](../cssearchableindexdelegate.md) protocol. Set this property to handle communication with the index and perform index-management tasks for your app. In particular, long-running apps should set a delegate so that the index can be updated while the app is in the background. Alternatively, you can create an extension with a request handler that conforms to the [`CSSearchableIndexDelegate`](../cssearchableindexdelegate.md) protocol and let the extension perform index updates when your app isn’t running.
 

@@ -29,7 +29,7 @@ optional func resolveDateCreated(for intent: INStartPhotoPlaybackIntent) async -
 - (void) resolveDateCreatedForStartPhotoPlayback:(INStartPhotoPlaybackIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the dates for the photos. When resolving the set of dates, always strive toward a successful resolution, but feel free to ask for confirmation if there’s a date range that you think yields the intended results. For example, if the user asks for photos from Paris taken in June, but your app only has Paris photos from July, you can ask the user to confirm the revised dates.
 

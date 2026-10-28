@@ -21,11 +21,11 @@ func type(_ firstTypeName: String, conformsToType secondTypeName: String) -> Boo
 - (BOOL) type:(NSString *) firstTypeName conformsToType:(NSString *) secondTypeName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `firstTypeName` conforms to the UTI hierarchy of `secondTypeName`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method instead of comparing UTIs for equality. See [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319) for information about UTI conformance.
 

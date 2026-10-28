@@ -18,11 +18,11 @@ Current limits for the axes of rotation and maximum angular velocity.
 final var limits: DockAccessory.Limits { get throws }
 ```
 
-#### Return Value
+## Return Value
 
 The pitch, yaw, and roll limit. Each value can be `nil` if it’s unsupported. See [`DockAccessory.Limits`](./limits-swift.struct.md) for more information.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if the device has disconnected.
 

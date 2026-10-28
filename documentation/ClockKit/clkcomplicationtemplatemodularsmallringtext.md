@@ -21,7 +21,7 @@ class CLKComplicationTemplateModularSmallRingText
 @interface CLKComplicationTemplateModularSmallRingText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.modularSmall`](./clkcomplicationfamily/modularsmall.md) family.
 

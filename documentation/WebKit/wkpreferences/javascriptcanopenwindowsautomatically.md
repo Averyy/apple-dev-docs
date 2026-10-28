@@ -23,7 +23,7 @@ var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 @property (nonatomic) BOOL javaScriptCanOpenWindowsAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md) in iOS and [`true`](../../Swift/true.md) in macOS.
 

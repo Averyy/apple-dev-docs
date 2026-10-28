@@ -15,7 +15,7 @@ The pointer style appropriate for selecting or inserting text in a horizontal la
 static let horizontalText: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This pointer style is sometimes referred to as the I-beam pointer. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

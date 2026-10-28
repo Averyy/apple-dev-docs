@@ -23,7 +23,7 @@ func sec_protocol_options_add_tls_application_protocol(_ options: sec_protocol_o
 void sec_protocol_options_add_tls_application_protocol(sec_protocol_options_t options, const char *application_protocol);
 ```
 
-#### Discussion
+## Discussion
 
 Add an application protocol supported by clients of this protocol instance.
 

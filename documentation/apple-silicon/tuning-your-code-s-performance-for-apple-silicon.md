@@ -5,7 +5,7 @@
 
 Improve your code to get the best performance from both Apple silicon and Intel-based Mac computers.
 
-#### Overview
+## Overview
 
 Tuning the performance of any code requires separate passes on both Apple silicon and Intel-based Mac computers. Code that runs well on one platform might not run well on the other, and making assumptions about the underlying hardware can lead to unexpected performance regressions in your code. Testing on actual hardware is the only way to verify that your code runs efficiently and doesn’t have any regressions.
 
@@ -13,11 +13,11 @@ One way to improve performance on both platforms is to leverage Apple technologi
 
 ![An illustration of the differences between asymmetric and symmetric cores of Mac computers.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon-1@2x.png)
 
-##### Gather Information Using Instruments and Other Apple Tools
+### Gather Information Using Instruments and Other Apple Tools
 
 Use Instruments to gather performance data for your app on both Apple silicon and Intel-based Mac computers. Instruments runs natively on both systems, and offers the same tools for gathering data. Use the data you gather to identify potential performance regressions, and the parts of your code that you might need to change.
 
-##### Assign Quality-of-Service (QoS) Classes to Work
+### Assign Quality-of-Service (QoS) Classes to Work
 
 QoS classes categorize the work you perform using [`Operation`](../Foundation/operation.md) objects, [`OperationQueue`](../Foundation/operationqueue.md) objects, [`Process`](../Foundation/process.md) objects, [`Thread`](../Foundation/thread.md) objects, dispatch queues, and POSIX threads (pthreads). The QoS class you assign to a work item communicates the importance of that item to the system. The system uses that information to prioritize and schedule the item accordingly. The system defines the following QoS classes:
 
@@ -32,7 +32,7 @@ If you manually configure your thread’s priority using `pthread_setschedparam`
 
 For more information about how the system applies and interprets QoS classes, see [Prioritize Work at the Task Level](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html) in [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html). For more information about configuring dispatch queues and QoS classes, see [Dispatch](../Dispatch/Dispatch.md).
 
-##### Process Tasks Using Grand Central Dispatch
+### Process Tasks Using Grand Central Dispatch
 
 Grand Central Dispatch (GCD) manages the efficient execution of your app’s tasks. Use GCD to execute serially, concurrently, or in parallel on the system’s available cores. GCD handles the scheduling of tasks on system-provided threads, and schedules those threads for execution on the system’s available processor cores. On a Mac with Apple silicon, GCD takes into account the differences in core types, distributing tasks to the appropriate core type to get the needed performance or efficiency.
 
@@ -40,7 +40,7 @@ For most apps, GCD offers the best solution for executing tasks. Instead of cust
 
 For more information about how to use GCD, see [Dispatch](../Dispatch/Dispatch.md).
 
-##### Manage Parallel-Computation Tasks Efficiently
+### Manage Parallel-Computation Tasks Efficiently
 
 One way to improve performance is to divide a problem into multiple pieces and execute those pieces in parallel on the available cores. Use this approach for large tasks that require significant processing resources. For example, use it to divide an image into multiple pieces and process those pieces in parallel.
 
@@ -48,7 +48,7 @@ In GCD, the [`concurrentPerform(iterations:execute:)`](../Dispatch/dispatchqueue
 
 If you implement parallel computations using your own thread pools, use you own work-stealing algorithm to distribute tasks dynamically. If you use a static distribution, threads running on higher efficiency cores will finish much sooner than threads running on lower efficiency cores. As with the GCD function, make the number of tasks greater than the number of cores to ensure a fair distribution of work.
 
-##### Don’t Keep Threads Active And Idle
+### Don’t Keep Threads Active And Idle
 
 Keeping a thread active while it tries to acquire a resource might minimize the overhead of switching thread contexts, but at great cost. When you keep a thread active but doing nothing, you prevent a CPU core from doing other work. On Apple silicon, this behavior exacerbates performance issues in producer-consumer algorithms when the consumer thread runs on a higher performance code path and the producer runs on a lower performance path. Instead, eliminate spin locks and other spin-wait code that causes your thread to hold on to a core. Replace them with an [`os_unfair_lock`](../os/os_unfair_lock.md), a condition variable, or a standard mutex that lets your thread block.
 
@@ -56,7 +56,7 @@ In addition to avoiding spin locks, avoid `pthread_yield_np` and equivalent func
 
 For more information about synchronization primitives for threads, see [os](../os/os.md) framework or the pthreads API.
 
-##### Configure Daemons and Agents That Work on Your App’s Behalf
+### Configure Daemons and Agents That Work on Your App’s Behalf
 
 Daemons and launch agents are separate background processes that provide on-demand services for your app. You might use one to serve web pages, coordinate access to a shared database, or perform work on behalf of your foreground app. When creating a daemon or launch agent, do the following:
 

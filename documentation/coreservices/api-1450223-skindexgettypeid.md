@@ -19,11 +19,11 @@ func SKIndexGetTypeID() -> CFTypeID
 CFTypeID SKIndexGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFTypeID`](../CoreFoundation/cftypeid.md) object containing the type identifier for the [`SKIndex`](./skindex.md) opaque type.
 
-#### Discussion
+## Discussion
 
 Search Kit represents indexes with the [`SKIndex`](./skindex.md) opaque type. If your code needs to determine whether a particular data type is an index, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

@@ -21,7 +21,7 @@ Specifies the rectangular display area within a view of stereo image.
 struct CVImageStereoDisplayMaskRectangle
 ```
 
-#### Overview
+## Overview
 
 To address window violations in stereo video, points insetting the left and right edges of the rectangle are supported through in addition to the mask rectangle, allowing the description of the “extended raster rectangle”.
 

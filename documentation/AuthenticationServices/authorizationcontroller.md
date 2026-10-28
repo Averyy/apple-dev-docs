@@ -22,7 +22,7 @@ A SwiftUI environment value that views use to perform authorization requests.
 struct AuthorizationController
 ```
 
-#### Overview
+## Overview
 
 To access an instance of this type, use the SwiftUI [`Environment`](../SwiftUI/environment.md) property wrapper and specify [`authorizationController`](../SwiftUI/environmentvalues/authorizationcontroller.md) as the environment value, as the following example shows:
 

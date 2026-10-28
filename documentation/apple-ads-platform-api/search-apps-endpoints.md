@@ -8,7 +8,7 @@ Browse the endpoints for searching apps and retrieving app details.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Use the Search Apps API to query localized app metadata, find the `adamId` that becomes the `promotedObjectId` on your campaign, and verify `availableStorefronts` before setting campaign target App Store countries or regions.
 
@@ -16,7 +16,7 @@ You can only create campaigns for apps that you own in your ad account. Searchin
 
 Confirm an app is eligible to advertise with [App Eligibility Endpoints](./app-eligibility-endpoints.md) before building a campaign around it, and use [Product Pages Endpoints](./product-pages-endpoints.md) to discover its product pages for a creative once it’s eligible.
 
-#### Explore the Available Endpoints
+## Explore the Available Endpoints
 
 The Search Apps API provides three endpoints for finding, validating, and describing apps:
 
@@ -28,7 +28,7 @@ The Search Apps API provides three endpoints for finding, validating, and descri
 
 To retrieve the default product page’s localized metadata for an Adam ID, see [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md) under [Product Pages Endpoints](./product-pages-endpoints.md).
 
-#### Review the Fields for App Search Results
+## Review the Fields for App Search Results
 
 Each app returned by the search endpoint includes an `AppInfo` object with the following fields:
 
@@ -39,7 +39,7 @@ Each app returned by the search endpoint includes an `AppInfo` object with the f
 | `developerName` | string | The developer or company name. |
 | `countryOrRegionCodes` | array[string] | Country or region codes where the app is available. |
 
-#### Review the Fields for a Single App’s Details
+## Review the Fields for a Single App’s Details
 
 Retrieving a single app by Adam ID returns an `AppDetails` object with the following fields:
 

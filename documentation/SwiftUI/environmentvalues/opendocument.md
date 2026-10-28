@@ -15,7 +15,7 @@ An action in the environment that presents an existing document.
 var openDocument: OpenDocumentAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the `openDocument` environment value to get the instance of the [`OpenDocumentAction`](../opendocumentaction.md) structure for a given [`Environment`](../environment.md). Then call the instance to present an existing document. You call the instance directly because it defines a [`callAsFunction(at:)`](../opendocumentaction/callasfunction%28at%29.md) method that Swift calls when you call the instance.
 

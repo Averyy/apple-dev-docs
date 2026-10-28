@@ -6,7 +6,7 @@
 
 A Boolean that indicates whether or not the embedded movie starts playing immediately after  instantiation.
 
-#### Overview
+## Overview
 
 QuickTime uses this atom only if the `TimeBase` of the embedded movie is not dependent on the container movie. If this atom is present and auto play is `true`, the movie plays at its preferred rate after instantiation. If this atom is not present, the embedded movie does not automatically play.
 

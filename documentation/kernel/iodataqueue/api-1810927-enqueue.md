@@ -13,11 +13,11 @@ virtual Boolean enqueue(
  UInt32dataSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success and false on failure. Typically failure means that the queue is full.
 
-#### Overview
+## Overview
 
 This method adds a new data entry of dataSize to the queue. It sets the size parameter of the entry pointed to by the tail value and copies the memory pointed to by the data parameter in place in the queue. Once that is done, it moves the tail to the next available location. When attempting to add a new entry towards the end of the queue and there isn't enough space at the end, it wraps back to the beginning.
 

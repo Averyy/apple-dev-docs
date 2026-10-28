@@ -21,7 +21,7 @@ class var controlDarkShadowColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlDarkShadowColor;
 ```
 
-#### Return Value
+## Return Value
 
 Of the two dark borders that run along the bottom and right of controls, representing shadows, the color of the outer, darker border. For more information, see [`NSColor`](../nscolor.md).
 

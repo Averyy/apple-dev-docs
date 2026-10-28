@@ -26,7 +26,7 @@ convenience init(assetTrack track: AVAssetTrack)
 + (instancetype) videoCompositionLayerInstructionWithAssetTrack:(AVAssetTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable video composition layer instruction with no transform or opacity ramps and [`trackID`](./trackid.md) initialized to the track ID of `track`.
 

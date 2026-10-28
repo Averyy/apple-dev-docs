@@ -21,11 +21,11 @@ optional func collectionView(_ collectionView: NSCollectionView, writeItemsAt in
 - (BOOL) collectionView:(NSCollectionView *) collectionView writeItemsAtIndexes:(NSIndexSet *) indexes toPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to begin the drag, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 To start the drag, you must first declare the pasteboard types that are supported by sending `pasteboard` a [`declareTypes(_:owner:)`](../nspasteboard/declaretypes%28_,owner%29.md) method. You then place the data for the items at the specified indexes on `pasteboard`, and return [`true`](../../Swift/true.md) from the method.
 

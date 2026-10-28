@@ -22,7 +22,7 @@ static var progressAvailable: UIDocument.State { get }
 UIDocumentStateProgressAvailable
 ```
 
-#### Discussion
+## Discussion
 
 When this state is set, you can use the [`progress`](../../../Foundation/progressreporting/progress.md) property of the document to monitor the current operation.
 

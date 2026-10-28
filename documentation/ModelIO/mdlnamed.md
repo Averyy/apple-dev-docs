@@ -24,7 +24,7 @@ protocol MDLNamed
 @protocol MDLNamed
 ```
 
-#### Overview
+## Overview
 
 The [`name`](./mdlnamed/name.md) property defined by this protocol is adopted by many classes in Model I/O. You can use this property to assign descriptive names to objects such as meshes, materials, cameras, and scattering functions to better keep track of the objects in your app. When you load objects from or export objects to a file using the [`MDLAsset`](./mdlasset.md) class, this property corresponds to the names and labels for objects that appear in popular 3D authoring tools.
 

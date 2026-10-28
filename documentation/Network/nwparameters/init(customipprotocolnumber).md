@@ -15,7 +15,7 @@ Initializes parameters for connections and listeners using a custom IP protocol.
 init(customIPProtocolNumber: UInt8)
 ```
 
-#### Discussion
+## Discussion
 
 Creating custom IP protocol connections requires the “com.apple.developer.networking.custom-protocol” entitlement.
 

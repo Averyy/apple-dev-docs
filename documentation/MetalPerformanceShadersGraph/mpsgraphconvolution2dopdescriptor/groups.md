@@ -24,7 +24,7 @@ var groups: Int { get set }
 @property (nonatomic, readwrite) NSUInteger groups;
 ```
 
-#### Discussion
+## Discussion
 
 The convolution operation divides input and output channels in `groups` partitions. input channels in a group or partition are only connected to output channels in corresponding group. Number of weights the convolution needs is `outputFeatureChannels x inputFeatureChannels/groups x kernelWidth x kernelHeight`
 

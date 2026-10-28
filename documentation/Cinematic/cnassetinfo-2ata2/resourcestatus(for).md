@@ -19,7 +19,7 @@ Check status for a set of resources.
 static func resourceStatus(for versions: Set<CNCinematicResourceVersion> = []) -> CNResourceStatus
 ```
 
-#### Return Value
+## Return Value
 
 Returns the first encountered non-ready status, or `.ready` if all are ready.
 

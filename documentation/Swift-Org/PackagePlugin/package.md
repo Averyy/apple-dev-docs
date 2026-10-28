@@ -17,7 +17,7 @@ A single package in a graph of packages.
 struct Package
 ```
 
-#### Overview
+## Overview
 
 The package can either be the root package, or a dependency.
 

@@ -20,7 +20,7 @@ let kSecCodeInfoIdentifier: CFString
 extern CFStringRef const kSecCodeInfoIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) object. Absent for unsigned code.
 

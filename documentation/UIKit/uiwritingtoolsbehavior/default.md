@@ -22,7 +22,7 @@ case `default`
 UIWritingToolsBehaviorDefault
 ```
 
-#### Discussion
+## Discussion
 
 The system chooses a complete, limited, or none experience based on the device-level support for the feature.
 

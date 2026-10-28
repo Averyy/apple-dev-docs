@@ -21,7 +21,7 @@ func historicalLocations(purposeKey: String, sampleCount: Int) async throws -> [
 - (void) requestHistoricalLocationsWithPurposeKey:(NSString *) purposeKey sampleCount:(NSInteger) sampleCount completionHandler:(void (^)(NSArray<CLLocation *> *, NSError *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

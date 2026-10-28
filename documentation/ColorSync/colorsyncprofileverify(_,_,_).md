@@ -25,7 +25,7 @@ func ColorSyncProfileVerify(_ prof: ColorSyncProfile!, _ errors: UnsafeMutablePo
 extern bool ColorSyncProfileVerify(ColorSyncProfileRef prof, CFErrorRef*errors, CFErrorRef*warnings);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the profile can be used; otherwise, `false`.
 

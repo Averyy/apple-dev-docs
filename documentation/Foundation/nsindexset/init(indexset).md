@@ -25,11 +25,11 @@ init(indexSet: IndexSet)
 - (instancetype) initWithIndexSet:(NSIndexSet *) indexSet;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexSet`](../nsindexset.md) object with `indexSet`.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for [`NSIndexSet`](../nsindexset.md).
 

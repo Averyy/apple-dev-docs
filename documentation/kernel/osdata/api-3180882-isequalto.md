@@ -24,11 +24,11 @@ bool isEqualTo(const OSData *aDataObj);
 virtual bool isEqualTo(const OSData *aDataObj);
 ```
 
-#### Return Value
+## Return Value
 
 true iff the object is of class OSArray and isEqualTo(const OSArray * anArray) returns true.
 
-#### Discussion
+## Discussion
 
 If the passed OSData object has the same length and all bytes are identical, true is returned. Otherwise false is returned.
 

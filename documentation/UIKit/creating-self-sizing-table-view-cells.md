@@ -12,13 +12,13 @@ Create table view cells that support Dynamic Type and use system spacing constra
 - Mac Catalyst 11.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 This sample code project shows how to create self-sizing table view cells that support Dynamic Type. Because Dynamic Type lets the user control the size of the text displayed in the cell, it’s important that the cell resizes itself based on the text size.
 
 The project also shows how to use Auto Layout constraints to automatically adjust the spacing surrounding text labels based on the text size. To demonstrate automatic spacing, the cell displays two [`UILabel`](./uilabel.md) objects: a headline label and a body label.
 
-##### Add Dynamic Type support
+### Add Dynamic Type support
 
 To add support for Dynamic Type, the cell assigns a scaled font to each label. For the headline label, the preferred font with the [`headline`](./uifont/textstyle/headline.md) text style is used. The preferred font is the system font, which can scale to different sizes. Its initial text size is determined by the font metric for the `headline` text style.
 
@@ -43,11 +43,11 @@ bodyLabel.adjustsFontForContentSizeCategory = true
 
 Before the effects of Dynamic Type can be seen, the [`adjustsFontForContentSizeCategory`](./uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property must be set to `true` on each label. This property tells the label to automatically adjust the text size for its font when the user changes their preferred text size. For more information, see [Scaling fonts automatically](./scaling-fonts-automatically.md).
 
-##### Use auto layout constraints to adjust cell size and spacing
+### Use auto layout constraints to adjust cell size and spacing
 
 At this point, the two labels are able to adjust the size of their text automatically. However, the cell isn’t able to adjust its size. Auto Layout constraints are needed to adjust the size and spacing of the cell’s [`contentView`](./uitableviewcell/contentview.md) and the labels it contains.
 
-##### Set the horizontal position for each label
+### Set the horizontal position for each label
 
 The width of both labels should extend to fill the width of the cell’s content view, and the headline label should appear above the body label. To accomplish this, Auto Layout constraints are added to each label starting with constraints that define the label width. For the headline label, constraints are added that tell the label to fill the space between the content view’s leading and trailing margins. For the body label, constraints are added that set its leading and trailing anchors equal to the headline label’s leading and trailing anchors.
 
@@ -61,7 +61,7 @@ bodyLabel.trailingAnchor.constraint(equalTo: headlineLabel.trailingAnchor).isAct
 
 Setting the body label’s leading and trailing anchors equal to the leading and trailing anchors for the headline label ensures that the left and right edges of each label are always in the same position. This approach has an added benefit; adjusting either the left or right edge on the headline label automatically applies the changes to the body label. While this might seem trivial when there are only two labels, setting a label’s leading and trailing anchors equal to the same anchors of another label can save you time when there are many more labels that must align their edges.
 
-##### Set the vertical position for each label
+### Set the vertical position for each label
 
 With the horizontal positioning in place, it’s time to set the vertical position for each label. Auto Layout constraints are once again used to position the vertical alignment, placing the headline text above the body text.
 
@@ -87,7 +87,7 @@ With the system spacing constraints in place, the system automatically adjusts t
 
 ![On the left, a screenshot of the sample app showing the smallest text size. In the center, a screenshot showing the default text size. On the right, a screenshot showing the largest text size.](https://developer.apple.com/tutorials/images/com.apple.uikit/compare-sizes.png)
 
-##### Test with Accessibility Inspector
+### Test with Accessibility Inspector
 
 In order to test how the sample app reacts to different text sizes, run the app in Simulator and use Accessibility Inspector to change the text size. The inspector lets you test an app’s interface with different text sizes without switching between the app and the Settings app.
 

@@ -16,7 +16,7 @@ init(uniformTypeIdentifier identifier: String?, name: String?, payload: Data?, u
 - (instancetype) initWithUniformTypeIdentifier:(NSString *) identifier name:(NSString *) name payload:(NSData *) payload userInfo:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.data"` if the `identifier` parameter is `nil`.
 

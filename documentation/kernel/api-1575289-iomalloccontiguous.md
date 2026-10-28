@@ -15,11 +15,11 @@ Deprecated - use IOBufferMemoryDescriptor. Allocates wired memory in the kernel 
 void * IOMallocContiguous(vm_size_t size, vm_size_t alignment, IOPhysicalAddress *physicalAddress);
 ```
 
-#### Return Value
+## Return Value
 
 Virtual address of the allocated memory, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This is a utility to allocate memory in the kernel, with an alignment restriction which is specified as a byte count, and will allocate only physically contiguous memory. The request may fail if memory is fragmented, and may cause large amounts of paging activity. This function may block and so should not be called from interrupt level or while a simple lock is held.
 

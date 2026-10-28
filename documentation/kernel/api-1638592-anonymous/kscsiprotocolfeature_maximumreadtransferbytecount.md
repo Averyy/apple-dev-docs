@@ -13,7 +13,7 @@
 kSCSIProtocolFeature_MaximumReadTransferByteCount = 8
 ```
 
-#### Discussion
+## Discussion
 
 If the SCSI Protocol Services Driver has a maximum byte count that can be transferred in a read request, it will return true to this query and return the byte count in the UInt64 pointer that is passed in as the serviceValue.
 

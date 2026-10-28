@@ -23,7 +23,7 @@ case `default`
 NSDateFormatterBehaviorDefault
 ```
 
-#### Discussion
+## Discussion
 
 Specifies default formatting behavior.
 

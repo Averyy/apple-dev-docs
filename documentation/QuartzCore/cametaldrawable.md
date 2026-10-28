@@ -24,7 +24,7 @@ protocol CAMetalDrawable : MTLDrawable
 @protocol CAMetalDrawable <MTLDrawable>
 ```
 
-#### Overview
+## Overview
 
 A [`CAMetalLayer`](./cametallayer.md) instance owns any instance that implements this protocol. Don’t implement this protocol yourself. See the [`CAMetalLayer`](./cametallayer.md) reference for information on how to request drawable objects.
 

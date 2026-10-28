@@ -25,7 +25,7 @@ var color: Any { get set }
 @property (nonatomic, retain) id color;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSColor`](../../AppKit/nscolor.md) or [`CGColor`](../../CoreGraphics/cgcolor.md) object. The default color is white.
 

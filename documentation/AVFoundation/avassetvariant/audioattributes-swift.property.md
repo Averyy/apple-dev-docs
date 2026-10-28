@@ -25,7 +25,7 @@ var audioAttributes: AVAssetVariant.AudioAttributes? { get }
 @property (nonatomic, readonly, nullable) AVAssetVariantAudioAttributes * audioAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is `nil` if the variant defines no audio attributes.
 

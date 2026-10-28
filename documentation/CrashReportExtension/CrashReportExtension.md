@@ -11,7 +11,7 @@ Inspect crashed processes to create crash reports.
 - iPadOS 27.0+
 - macOS 27.0+
 
-#### Overview
+## Overview
 
 The Crash Report Extension framework allows you to perform analysis and produce a report when your app crashes. Your crash-handling code executes out-of-process, rather than from a signal handler or other in-process techniques.
 

@@ -22,7 +22,7 @@ A Boolean value that indicates whether the app may implement shared group experi
 
 **Default**: `YES`
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Group Activities capability in Xcode. This entitlement applies only to apps.
 

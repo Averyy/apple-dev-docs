@@ -25,7 +25,7 @@ func CVTransferFunctionGetIntegerCodePointForString(_ transferFunctionString: CF
 extern int CVTransferFunctionGetIntegerCodePointForString(CFStringRef transferFunctionString);
 ```
 
-#### Return Value
+## Return Value
 
 The code point corresponding to the transfer function string, or `2` (unknown) if the string is [`nil`](../ObjectiveC/nil-227m0.md) or the system doesn’t recognize it.
 

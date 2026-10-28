@@ -20,7 +20,7 @@ enum CGWindowSharingType
 enum CGWindowSharingType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 This type is used in conjunction with the constants described in [Window Sharing Constants](./window-sharing-constants.md).
 

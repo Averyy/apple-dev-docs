@@ -18,7 +18,7 @@ Replaces the node stored under the given name.
 final func updateNode(_ node: ShaderGraph.Node, forKey name: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 Any existing edges referencing `name` are preserved and will refer to the updated node.
 

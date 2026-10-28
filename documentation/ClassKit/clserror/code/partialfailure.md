@@ -23,7 +23,7 @@ case partialFailure
 CLSErrorCodePartialFailure
 ```
 
-#### Discussion
+## Discussion
 
 When you receive an error of this type, the [`underlyingErrorsKey`](../../clserroruserinfokey/underlyingerrorskey.md) key in the [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary provides an array of the individual errors contributing to this one.
 

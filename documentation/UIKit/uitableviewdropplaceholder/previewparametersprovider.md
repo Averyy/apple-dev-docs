@@ -22,7 +22,7 @@ var previewParametersProvider: ((UITableViewCell) -> UIDragPreviewParameters?)? 
 @property (nonatomic, copy, nullable) UIDragPreviewParameters * (^previewParametersProvider)(UITableViewCell *);
 ```
 
-#### Discussion
+## Discussion
 
 Specify a custom block when you want to provide a custom preview for your placeholder cell. If you don’t specify a block, the table view uses a default preview for the cell.
 

@@ -21,7 +21,7 @@ The International Standard Recording Code (ISRC) for this content.
 var isrc: String?
 ```
 
-#### Discussion
+## Discussion
 
 ISRC is an industry-standard identifier for sound recordings. The system uses this value to integrate with the Music Haptics accessibility feature.
 

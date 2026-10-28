@@ -23,7 +23,7 @@ Clips the input tensors to a global Euclidean norm and writes the result to the 
 static func clipByGlobalNorm(threshold: Float, inputs: [BNNSNDArrayDescriptor], outputs: [BNNSNDArrayDescriptor], globalNorm: Float = 0) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an array of input tensors to a maximum global Euclidean norm. If you know the global norm of the input tensors, pass this value as the `globalNorm`. Otherwise, pass `0` to specify that the function calculates the norm.
 

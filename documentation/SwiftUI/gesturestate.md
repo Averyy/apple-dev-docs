@@ -26,7 +26,7 @@ A property wrapper type that updates a property while the user performs a gestur
 
 - [Adding interactivity with gestures](./adding-interactivity-with-gestures.md)
 
-#### Overview
+## Overview
 
 Declare a property as `@GestureState`, pass as a binding to it as a parameter to a gesture’s [`updating(_:body:)`](./gesture/updating%28_,body%29.md) callback, and receive updates to it. A property that’s declared as `@GestureState` implicitly resets when the gesture becomes inactive, making it suitable for tracking transient state.
 

@@ -24,7 +24,7 @@ func markCurrentPassAsFinished()
 - (void) markCurrentPassAsFinished;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of the [`canPerformMultiplePasses`](./canperformmultiplepasses.md) property is [`true`](../../Swift/true.md), call this method after you append all of your media data. After the input determines if it warrants performing an additional pass, the value of [`currentPassDescription`](./currentpassdescription.md) changes (typically asynchronously) to describe how to set up for the next pass. Although it’s possible to use key-value observing to determine when the value of [`currentPassDescription`](./currentpassdescription.md) changes, it’s typically more convenient to call the [`respondToEachPassDescription(on:using:)`](./respondtoeachpassdescription%28on,using%29.md) method to start the work for each pass.
 

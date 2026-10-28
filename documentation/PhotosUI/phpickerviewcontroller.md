@@ -35,7 +35,7 @@ class PHPickerViewController
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 
-#### Overview
+## Overview
 
 The `PHPickerViewController` class is an alternative to [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md). `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
 
@@ -46,7 +46,7 @@ The `PHPickerViewController` class is an alternative to [`UIImagePickerControlle
 - Availability of [`PHLivePhoto`](../Photos/phlivephoto.md) objects without library access
 - Stricter validations against invalid inputs
 
-##### Observe required viewing standards
+### Observe required viewing standards
 
 As a view controller that the system renders on top of your app, the picker controller requires certain prerequisites for operation that your app needs to observe:
 

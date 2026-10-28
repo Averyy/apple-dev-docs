@@ -19,7 +19,7 @@ A header mode that uses supplementary views to show headers.
 UICollectionLayoutListHeaderModeSupplementary
 ```
 
-#### Discussion
+## Discussion
 
 Choose this header mode to use supplementary views with [`elementKindSectionHeader`](../uicollectionview/elementkindsectionheader.md) as the section header.
 

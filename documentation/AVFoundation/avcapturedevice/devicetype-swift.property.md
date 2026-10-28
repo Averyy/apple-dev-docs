@@ -23,7 +23,7 @@ var deviceType: AVCaptureDevice.DeviceType { get }
 @property (nonatomic, readonly) AVCaptureDeviceType deviceType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`default(_:for:position:)`](./default%28_,for,position%29.md) method or the [`AVCaptureDevice.DiscoverySession`](./discoverysession.md) class to find capture devices by device type.
 

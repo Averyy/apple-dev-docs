@@ -29,7 +29,7 @@ class SKCropNode
 
 - [About Node Drawing Order](./about-node-drawing-order.md)
 
-#### Overview
+## Overview
 
 `SKCropNode` is a container node that you use to crop other nodes in the scene. You add other nodes to a crop node and set the crop node’s [`maskNode`](./skcropnode/masknode.md) property. For example, here are some ways you might specify a mask:
 

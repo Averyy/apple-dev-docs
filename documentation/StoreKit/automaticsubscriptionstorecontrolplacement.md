@@ -21,7 +21,7 @@ A system-defined placement for a subscription store view.
 struct AutomaticSubscriptionStoreControlPlacement
 ```
 
-#### Overview
+## Overview
 
 You typically don’t use this type directly, except when you implement a custom control style. By default, a custom control style supports all placements. For more information, see the [`SubscriptionStoreControlPlacement`](./subscriptionstorecontrolplacement.md) protocol.
 

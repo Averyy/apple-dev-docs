@@ -22,7 +22,7 @@ Applies a temporary configuration to the database within the scope of a closure 
 @preconcurrency func configuredWith<R>(configuration: CKOperation.Configuration? = nil, group: CKOperationGroup? = nil, body: @Sendable (CKDatabase) async throws -> R) async rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to apply a specific configuration to the current database that lasts only for the duration of the trailing closure. For example, you might want to temporarily elevate the quality of service (QoS) for a group of method calls, or allow one or more expensive method calls to execute only while the device is using WiFi.
 

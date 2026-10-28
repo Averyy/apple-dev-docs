@@ -19,11 +19,11 @@
 int (*)(const struct AudioServerPlugInHostInterface *, unsigned int, unsigned int, const struct AudioObjectPropertyAddress *) PropertiesChanged;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This method informs the Host when the state of an plug-in’s object changes.
 

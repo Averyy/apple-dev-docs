@@ -12,11 +12,11 @@ virtual IOReturn enableInterrupt(
  intsource);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code (`kIOReturnNoInterrupt` is returned if the source is not valid).
 
-#### Overview
+## Overview
 
 It is the caller's responsiblity to keep track of the enable state of the interrupt source.
 

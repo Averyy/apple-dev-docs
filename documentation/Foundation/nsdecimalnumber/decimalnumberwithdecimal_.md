@@ -21,11 +21,11 @@ Creates and returns a decimal number equivalent to a given decimal structure.
 + (NSDecimalNumber *) decimalNumberWithDecimal:(NSDecimal) dcm;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDecimalNumber` object  equivalent to `dcm`.
 
-#### Discussion
+## Discussion
 
 You can initialize `dcm` programmatically or generate it using the `NSScanner` method, [`scanDecimal(_:)`](../scanner/scandecimal%28_%29.md)
 

@@ -24,11 +24,11 @@ convenience init?(cubeWithImagesNamed names: [String])
 + (instancetype) textureCubeWithImagesNamed:(NSArray<NSString *> *) names;
 ```
 
-#### Return Value
+## Return Value
 
 A new cube texture object, or `nil` if the specified files could not be found or are not property formatted for a cube texture.
 
-#### Discussion
+## Discussion
 
 You can create a cube texture with any of the following combinations of images:
 

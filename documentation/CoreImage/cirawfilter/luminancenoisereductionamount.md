@@ -24,7 +24,7 @@ var luminanceNoiseReductionAmount: Float { get set }
 @property (readwrite) float luminanceNoiseReductionAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no luminance noise reduction, and a value of `1` indicates maximum luminance noise reduction.
 

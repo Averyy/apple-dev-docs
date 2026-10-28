@@ -21,7 +21,7 @@ int32 extendByDays
 
 **Minimum**: `1`
 
-#### Discussion
+## Discussion
 
 The number of days is a number from 1 to 90.
 

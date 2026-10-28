@@ -20,7 +20,7 @@ An instance property that returns individual words in a text container.
 var words: [RecognizedTextObservation]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Chinese, Japanese, Korean, and Thai don’t recognize individual words.
 

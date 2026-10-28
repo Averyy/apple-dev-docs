@@ -25,7 +25,7 @@ var password: String? { get }
 @property (copy, readonly, nullable) NSString * password;
 ```
 
-#### Discussion
+## Discussion
 
 You should only access this property if you need the actual password value. If you only need to know if there is a password, use [`hasPassword`](./haspassword.md). Accessing this property may result in prompting the user for access—for example, if the password is stored in the user’s keychain.
 

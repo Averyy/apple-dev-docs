@@ -19,7 +19,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Returns immediately. The object will callback over the delegate method (above) when the transfer is completed, or will release itself if no delegate is set.
 

@@ -23,7 +23,7 @@ class var isStudioLightEnabled: Bool { get }
 @property (class, readonly, getter=isStudioLightEnabled) BOOL studioLightEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md), the system artificially lights the subject’s face to simulate the presence of a studio light near the camera.
 

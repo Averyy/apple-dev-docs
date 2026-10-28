@@ -22,7 +22,7 @@ case userInitiated
 ASSavePasswordRequestEventUserInitiated
 ```
 
-#### Discussion
+## Discussion
 
 The expected behavior is to save “new” or “updated” credentials.
 

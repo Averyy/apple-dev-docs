@@ -21,7 +21,7 @@ var coordinatesType: NIDLTDOACoordinatesType { get }
 @property (nonatomic, assign, readonly) NIDLTDOACoordinatesType coordinatesType;
 ```
 
-#### Discussion
+## Discussion
 
 Measurements provide coordinates for the anchor that sends the message. Depending on the configuration of the anchor, the coordinates are in one of two formats: [`NIDLTDOACoordinatesType.geodetic`](../nidltdoacoordinatestype/geodetic.md) or [`NIDLTDOACoordinatesType.relative`](../nidltdoacoordinatestype/relative.md).
 

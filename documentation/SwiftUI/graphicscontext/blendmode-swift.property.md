@@ -21,7 +21,7 @@ The blend mode used by drawing operations in the context.
 var blendMode: GraphicsContext.BlendMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to affect how any content that you subsequently draw into the context blends with content that’s already in the context. Use one of the [`GraphicsContext.BlendMode`](./blendmode-swift.struct.md) values.
 

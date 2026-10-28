@@ -25,11 +25,11 @@ class func `repeat`(_ action: SKAction, count: Int) -> SKAction
 + (SKAction *) repeatAction:(SKAction *) action count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the associated action runs to completion and then repeats, until the count is reached.
 

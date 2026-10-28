@@ -12,11 +12,11 @@ static IOService * copyMatchingService(
  OSDictionary *matching );
 ```
 
-#### Return Value
+## Return Value
 
 The IOService object or NULL. To be released by the caller.
 
-#### Overview
+## Overview
 
 Provides a method to find one member of the set of published IOService objects matching the supplied matching dictionary.
 

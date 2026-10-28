@@ -24,7 +24,7 @@ func randomSplit(by proportion: Double, seed: Int = 1) -> (MLDataTable, MLDataTa
 
 - [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
-#### Return Value
+## Return Value
 
 Two new data tables.
 

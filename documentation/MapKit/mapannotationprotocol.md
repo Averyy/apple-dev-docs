@@ -21,7 +21,7 @@ A protocol that represents the possible return types of annotations.
 protocol MapAnnotationProtocol
 ```
 
-#### Overview
+## Overview
 
 Don’t create types conforming to this protocol. Instead, use one of the framework-provided types [`MapAnnotation`](./mapannotation.md), [`MapMarker`](./mapmarker.md), and [`MapPin`](./mappin.md).
 

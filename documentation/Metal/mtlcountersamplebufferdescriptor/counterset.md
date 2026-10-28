@@ -24,7 +24,7 @@ var counterSet: (any MTLCounterSet)? { get set }
 @property (retain, readwrite, nullable) id<MTLCounterSet> counterSet;
 ```
 
-#### Discussion
+## Discussion
 
 Assign this property to one of the counter sets in an [`MTLDevice`](../mtldevice.md) instance’s [`counterSets`](../mtldevice/countersets.md) property.
 

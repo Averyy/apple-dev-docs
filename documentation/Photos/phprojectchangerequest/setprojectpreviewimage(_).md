@@ -27,7 +27,7 @@ func setProjectPreviewImage(_ previewImage: NSImage)
 - (void) setProjectPreviewImage:(NSImage *) previewImage;
 ```
 
-#### Discussion
+## Discussion
 
 PhotoKit requires that you set a project preview in the following situations:
 

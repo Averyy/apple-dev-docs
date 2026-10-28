@@ -23,7 +23,7 @@ case restricted
 AVCapturePrimaryConstituentDeviceSwitchingBehaviorRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The camera doesn’t restrict camera switches necessary to honor the requested video zoom factor.
 

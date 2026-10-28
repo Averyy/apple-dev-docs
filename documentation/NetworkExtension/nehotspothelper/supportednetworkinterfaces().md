@@ -24,11 +24,11 @@ class func supportedNetworkInterfaces() -> [Any]?
 + (NSArray *) supportedNetworkInterfaces;
 ```
 
-#### Return Value
+## Return Value
 
 If no network interfaces are being managed, this function returns nil. Otherwise, an array of `NEHotspotNetwork` objects is returned.
 
-#### Discussion
+## Discussion
 
 Each network interface is represented by an NEHotspotNetwork object. Currently, the returned array contains exactly one [`NEHotspotNetwork`](../nehotspotnetwork.md) object representing the Wi-Fi interface.
 

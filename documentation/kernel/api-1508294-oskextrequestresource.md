@@ -15,11 +15,11 @@ Requests data from a nonlocalized resource file in a kext bundle on disk.
 OSReturn OSKextRequestResource(const char *kextIdentifier, const char *resourceName, OSKextRequestResourceCallback callback, void *context, OSKextRequestTag *requestTagOut);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the request is successfully queued. `kOSKextReturnInvalidArgument` if `kextIdentifier` or `resourceName` or if `callback` is not an address within a loaded kext executable. `kOSKextReturnStopping` if an unload attempt is being made on the kext containing `callback`. Other `OSKextReturn...` errors are possible.
 
-#### Discussion
+## Discussion
 
 This function queues an asynchronous request to the user-space kext daemon kextd(8); requests for resources early in system startup will not be fulfilled until that daemon starts. Requests made by a kext while that kext is loading (specifically in the kext's module start routine) will not be fulfilled until after the start routine returns and the kext is completely loaded. Kexts requesting resources should be sure to perform appropriate locking in the callback function.
 

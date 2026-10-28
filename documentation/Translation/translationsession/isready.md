@@ -18,7 +18,7 @@ A boolean value that indicates whether the system has installed the source and t
 var isReady: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to check whether a translation is likely to succeed. In a session that can request downloads, it prompts the person to approve downloads if languages aren’t ready yet. In a session that can’t request downloads, it will throw an error if the person calls any functions when languages aren’t ready.
 

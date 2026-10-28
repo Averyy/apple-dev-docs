@@ -19,11 +19,11 @@ func SKIndexCopyDocumentProperties(_ inIndex: SKIndex!, _ inDocument: SKDocument
 CFDictionaryRef SKIndexCopyDocumentProperties(SKIndexRef inIndex, SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary object containing the document URL object’s (SKDocumentRef’s) properties, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 Search Kit document URL objects (of type [`SKDocument`](./skdocument.md)) can have an optional, application-defined properties dictionary to hold any information you’d like to associate with the document represented by a document URL object—such as timestamp, keywords, and so on. Use [`SKIndexSetDocumentProperties(_:_:_:)`](./api-1444576-skindexsetdocumentproperties.md) to add a properties dictionary to a document URL object, and this function to obtain a copy of the dictionary.
 

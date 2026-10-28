@@ -19,7 +19,7 @@ var bounds: NSRect { get }
 @property (readonly) NSRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the rectangle that encloses the path of the receiver. If the path contains curve segments, the bounding box encloses the curve but may not enclose the control points used to calculate the curve.
 

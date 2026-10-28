@@ -19,7 +19,7 @@ class NSSegmentedCell
 @interface NSSegmentedCell : NSActionCell
 ```
 
-#### Overview
+## Overview
 
 Use the methods of `NSSegmentedCell` to customize the attributes of a segmented control. To customize the appearance of individual segments, you can also subclass and override the [`drawSegment(_:inFrame:with:)`](./nssegmentedcell/drawsegment%28_,inframe,with%29.md) method.
 

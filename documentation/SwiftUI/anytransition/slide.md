@@ -21,7 +21,7 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 static var slide: AnyTransition { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `AnyTransition.move(edge:)`
 

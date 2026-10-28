@@ -24,7 +24,7 @@ class func commitAnimations()
 + (void) commitAnimations;
 ```
 
-#### Discussion
+## Discussion
 
 If the current animation set is the outermost set, this method starts the animations when the application returns to the run loop. If the current animation set is nested inside another set, this method waits until the outermost set of animations is committed, at which point it commits all of the animations together.
 

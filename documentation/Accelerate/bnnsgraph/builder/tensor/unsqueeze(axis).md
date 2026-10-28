@@ -23,7 +23,7 @@ func unsqueeze(axis: Int) -> BNNSGraph.Builder.Tensor<T>
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This operation creates a dimension of size 1 at the given index, i.e. the output tensor will have the new dimension of size 1 at the given index.
 

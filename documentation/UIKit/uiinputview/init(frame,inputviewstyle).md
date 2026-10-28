@@ -23,11 +23,11 @@ init(frame: CGRect, inputViewStyle: UIInputView.Style)
 - (instancetype) initWithFrame:(CGRect) frame inputViewStyle:(UIInputViewStyle) inputViewStyle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object or `nil` if the view could not be initialized.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the view and must be called by your subclass at initialization time.
 

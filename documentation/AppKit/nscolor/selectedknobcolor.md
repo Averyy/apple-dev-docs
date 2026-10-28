@@ -21,7 +21,7 @@ class var selectedKnobColor: NSColor { get }
 @property (class, strong, readonly) NSColor * selectedKnobColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for a slider knob that is selected—that is, dragged. For more information, see [`NSColor`](../nscolor.md).
 

@@ -14,7 +14,7 @@ The entitlement required to monitor system events for potentially malicious acti
 - **Name**: `com.apple.developer.endpoint-security.client`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You must request this entitlement from Apple. For information about how to request the entitlement, see [System Extensions and DriverKit](https://developer.apple.com/system-extensions/).
 

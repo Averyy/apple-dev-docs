@@ -25,7 +25,7 @@ class ASAuthorizationAppleIDProvider
 @interface ASAuthorizationAppleIDProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a provider to create a request ([`ASAuthorizationAppleIDRequest`](./asauthorizationappleidrequest.md)), which you then use to initialize a controller ([`ASAuthorizationController`](./asauthorizationcontroller.md)) that performs the request:
 

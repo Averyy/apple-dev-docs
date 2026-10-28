@@ -23,7 +23,7 @@ func withCVPixelBuffer(readOnly: Bool, body: (CVPixelBuffer) -> Void)
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 Use this function to pass a vImage pixel buffer to other frameworks. For example, the following code creates a Core Image [`CIImage`](../../../CoreImage/ciimage.md) instance from a [`CVPixelBuffer`](../../../CoreVideo/cvpixelbuffer.md) that shares its underlying storage with a pixel buffer:
 

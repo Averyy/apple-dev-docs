@@ -20,7 +20,7 @@ set urlTemplate(
 );
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS sets the `urlTemplate` in the tile overlay constructor, and accesses or overrides it on the [`TileOverlay`](../tileoverlay.md) object directly.
 

@@ -19,7 +19,7 @@ var worksWhenModal: Bool { get }
 @property (readonly) BOOL worksWhenModal;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is able to receive keyboard and mouse events even when some other window is being run modally; otherwise, [`false`](../../Swift/false.md). By default, the `NSWindow` value of this property is [`false`](../../Swift/false.md). Only subclasses of `NSPanel` should override this default.
 

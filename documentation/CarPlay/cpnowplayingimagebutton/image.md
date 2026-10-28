@@ -21,7 +21,7 @@ var image: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The button displays images no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
 

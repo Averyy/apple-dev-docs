@@ -5,7 +5,7 @@
 
 Calculate the offset shift when you store an out of order video stream’s sample table.
 
-#### Overview
+## Overview
 
 Calculate the offset shift with code similar to the following example:
 

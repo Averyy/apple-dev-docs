@@ -18,7 +18,7 @@ Adds commands for generating a cube from an equirectangular image, including gen
 func generateSkybox(using commandBuffer: any MTLCommandBuffer, fromEquirectangular texture: any MTLTexture, quality: TextureSamplingQuality = .low, into destination: any MTLTexture) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If `texture` is not a 2D Metal texture, if `destination` is not a cube texture, or if `destination`’s pixel format does not support shader writes on this device.
 

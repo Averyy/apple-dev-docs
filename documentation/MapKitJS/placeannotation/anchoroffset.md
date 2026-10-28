@@ -15,7 +15,7 @@ An offset that changes the annotation’s default anchor point.
 get anchorOffset(): DOMPoint;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the anchor offset for a [`PlaceAnnotation`](../placeannotation.md).
 

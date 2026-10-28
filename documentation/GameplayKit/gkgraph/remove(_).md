@@ -24,7 +24,7 @@ func remove(_ nodes: [GKGraphNode])
 - (void) removeNodes:(NSArray<GKGraphNode *> *) nodes;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect on nodes in the array that are not in the graph.
 

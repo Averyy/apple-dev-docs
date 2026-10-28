@@ -20,7 +20,7 @@ var hdrImage: CGImage? { get set }
 @property (nonatomic, strong, nullable) CGImageRef hdrImage;
 ```
 
-#### Discussion
+## Discussion
 
 The output [`CGImage`](../../CoreGraphics/cgimage.md) uses the extended sRGB color space.
 

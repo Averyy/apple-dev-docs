@@ -23,7 +23,7 @@ var visibleCells: [UITableViewCell] { get }
 @property (nonatomic, readonly) NSArray<__kindof UITableViewCell *> * visibleCells;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array containing [`UITableViewCell`](../uitableviewcell.md) objects, each representing a visible cell in the table view.
 

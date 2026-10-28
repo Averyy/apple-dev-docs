@@ -21,7 +21,7 @@ Represents a selection of attributed text.
 struct AttributedTextSelection
 ```
 
-#### Overview
+## Overview
 
 A selection is either an insertion point (e.g. a cursor in the text), or spans over a range of characters. While that range is always visually contiguous, it may not be logically contiguous in the text storage. Specifically, a single selection value cannot represent multiple cursors.
 

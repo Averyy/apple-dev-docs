@@ -5,11 +5,11 @@
 
 Use a management app to display managed apps and packages to the user.
 
-#### Overview
+## Overview
 
 Device management services can use declarative management to install and manage apps on iOS, iPadOS, macOS, and visionOS devices (see [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)), and install packages in macOS (see [Installing packages](./installing-packages.md)). Both support an `Optional` install behavior that allows users to initiate installation when desired. So devices need to show managed apps and packages to users, and allow them to start the installation.
 
-#### Install a management app
+## Install a management app
 
 A *management app* is an app that provides users with control over some aspects of the management state of a device. Device management services typically install a management app when enrolling a device, ensuring immediate user access to the app. Services set the `RequiredAppIDForMDM` key in the [`MDM`](./mdm.md) profile payload to the App Store ID of the management app to ensure installation without user prompts, regardless of the device’s enrollment mode. Services can then install the management app as a `Required` app without additional user prompts.
 

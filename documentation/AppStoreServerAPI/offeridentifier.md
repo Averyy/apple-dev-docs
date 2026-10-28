@@ -15,7 +15,7 @@ The string identifier of a subscription offer that you create in App Store Conne
 string offerIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 The `offerIdentifier` is a string that you provide in App Store Connect when you set up a subscription offer. All offer types ([`offerType`](./offertype.md)) have offer identifiers, except for introductory offers.
 

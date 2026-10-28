@@ -24,7 +24,7 @@ func useResources(_ resources: [any MTLResource], usage: MTLResourceUsage)
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 You can make many resources *resident* (available in GPU memory) for the remaining duration of the compute pass by calling this method. Call the method before encoding function calls that may access these `resources` through an argument buffer. The method ensures the resource is in a format that’s compatible with the kernels that depend on it.
 

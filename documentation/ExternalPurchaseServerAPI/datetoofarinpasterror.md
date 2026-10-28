@@ -15,7 +15,7 @@ An error indicating that a provided date is too far in the past.
 object DateTooFarInPastError
 ```
 
-#### Discussion
+## Discussion
 
 Report line items within three years of their [`creationDate`](./creationdate.md).
 

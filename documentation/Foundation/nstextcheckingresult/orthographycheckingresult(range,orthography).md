@@ -25,7 +25,7 @@ class func orthographyCheckingResult(range: NSRange, orthography: NSOrthography)
 + (NSTextCheckingResult *) orthographyCheckingResultWithRange:(NSRange) range orthography:(NSOrthography *) orthography;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`orthography`](./checkingtype/orthography.md).
 

@@ -24,11 +24,11 @@ func MusicPlayerStart(_ inPlayer: MusicPlayer) -> OSStatus
 extern OSStatus MusicPlayerStart(MusicPlayer inPlayer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 If you call this function without first calling [`MusicPlayerPreroll(_:)`](./musicplayerpreroll%28_%29.md), the player will call that function before beginning playback.
 

@@ -19,11 +19,11 @@ unowned(unsafe) var nextValidKeyView: NSView? { get }
 @property (assign, readonly, nullable) NSView * nextValidKeyView;
 ```
 
-#### Return Value
+## Return Value
 
 The closest view object in the key view loop that follows the view and accepts first responder status, or `nil` if there is none.
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if there is no view that follows the current view and accepts the first responder status. AppKit ignores hidden views when it determines the next valid key view.
 

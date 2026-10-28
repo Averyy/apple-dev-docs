@@ -24,7 +24,7 @@ var matchDomains: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * matchDomains;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to create a “split DNS” configuration, where only hosts in certain domains route through the relays.
 

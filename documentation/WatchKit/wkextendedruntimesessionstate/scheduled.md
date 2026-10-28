@@ -19,7 +19,7 @@ case scheduled
 WKExtendedRuntimeSessionStateScheduled
 ```
 
-#### Discussion
+## Discussion
 
 The session transitions to the [`WKExtendedRuntimeSessionState.scheduled`](./scheduled.md) state when you call the [`start(at:)`](../wkextendedruntimesession/start%28at%29.md) method. It remains in this state until the start date arrives. Then it transitions to the running state.
 

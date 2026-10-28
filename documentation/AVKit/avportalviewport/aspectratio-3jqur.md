@@ -15,7 +15,7 @@ The aspect ratio of the portal frame.
 @property (nonatomic, strong, nullable) NSNumber * aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the width-to-height ratio of the portal frame. Common aspect ratios include:
 

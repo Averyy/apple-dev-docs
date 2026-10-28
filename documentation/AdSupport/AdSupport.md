@@ -13,11 +13,11 @@ Provide apps with access to an advertising identifier.
 - macOS 10.14+
 - tvOS 9.0+
 
-#### Overview
+## Overview
 
 Use the AdSupport framework to obtain an advertising identifier. The [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must support [App Tracking Transparency](../AppTrackingTransparency/AppTrackingTransparency.md) and define the purpose string [`NSUserTrackingUsageDescription`](../BundleResources/information-property-list/nsusertrackingusagedescription.md) before it can get the [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md) property.
 
-##### Get an Advertising Identifier
+### Get an Advertising Identifier
 
 Before requesting the advertising identifier for the first time, your app must make a one-time call to https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith. That method presents the app-tracking authorization request to the user. The user chooses whether to allow tracking, but can change your app’s authorization at any time in Settings > Privacy > Tracking. You can determine the user’s intent by checking your app’s authorization status with https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547038-trackingauthorizationstatus.
 

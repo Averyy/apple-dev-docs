@@ -16,7 +16,7 @@ Handle a specified issue.
 func handleIssue(_ issue: Issue) -> Issue?
 ```
 
-#### Return Value
+## Return Value
 
 An issue to replace `issue`, or else `nil` if the issue should not be recorded.
 

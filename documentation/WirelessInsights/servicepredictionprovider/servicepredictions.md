@@ -16,7 +16,7 @@ An asychronous sequence of current predictions.
 final var servicePredictions: any AsyncSequence<[ServicePrediction], any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 To act on predictions about wireless service changes, use a `for`-`await`-`in` loop to iterate over events produced by this sequence as conditions change. Each update provides either an array of [`ServicePrediction`](../serviceprediction.md) instances representing the current set of predictions or throws a [`ServicePredictionError`](../servicepredictionerror.md). Only act on the most recent array of predictions received from the sequence.
 

@@ -19,11 +19,11 @@ func SKIndexCopyTermStringForTermID(_ inIndex: SKIndex!, _ inTermID: CFIndex) ->
 CFStringRef SKIndexCopyTermStringForTermID(SKIndexRef inIndex, CFIndex inTermID);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString containing the term specified by `inTermID`.
 
-#### Discussion
+## Discussion
 
 When your application has the ID of a term, perhaps as a result of calling [`SKIndexCopyTermIDArrayForDocumentID(_:_:)`](./api-1446868-skindexcopytermidarrayfordocumen.md), use this function to derive the term’s text string.
 

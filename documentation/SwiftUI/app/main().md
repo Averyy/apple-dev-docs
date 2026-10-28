@@ -22,7 +22,7 @@ Initializes and runs the app.
 @preconcurrency static func main()
 ```
 
-#### Discussion
+## Discussion
 
 If you precede your [`App`](../app.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls the conformer’s `main()` method to launch the app. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 

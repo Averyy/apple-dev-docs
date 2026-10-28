@@ -24,7 +24,7 @@ let HKMetadataKeySyncVersion: String
 extern NSString * const HKMetadataKeySyncVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) as its value. When you save an object to the HealthKit store, the new object replaces any matching objects (existing objects with a matching [`HKMetadataKeySyncIdentifier`](./hkmetadatakeysyncidentifier.md) value) with a lower sync version.
 

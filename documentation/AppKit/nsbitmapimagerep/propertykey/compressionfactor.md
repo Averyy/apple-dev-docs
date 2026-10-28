@@ -19,7 +19,7 @@ static let compressionFactor: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageCompressionFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Used only for JPEG files. JPEG compression in TIFF files is not supported, and the factor is ignored. The value is a float between 0.0 and 1.0, with 1.0 resulting in no compression and 0.0 resulting in the maximum compression possible. It’s set when reading in and used when writing out the image.
 

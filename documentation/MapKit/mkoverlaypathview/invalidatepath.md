@@ -19,7 +19,7 @@ Releases the path associated with the receiver.
 - (void) invalidatePath;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method at any time where a change in the path information would require you to recreate the path. This method sets the [`path`](./path.md) property to `nil`, which causes the cached path to be released.
 

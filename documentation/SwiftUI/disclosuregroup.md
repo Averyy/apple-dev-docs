@@ -24,7 +24,7 @@ struct DisclosureGroup<Label, Content> where Label : View, Content : View
 
 - [Displaying data in lists](./displaying-data-in-lists.md)
 
-#### Overview
+## Overview
 
 A disclosure group view consists of a label to identify the contents, and a control to show and hide the contents. Showing the contents puts the disclosure group into the “expanded” state, and hiding them makes the disclosure group “collapsed”.
 

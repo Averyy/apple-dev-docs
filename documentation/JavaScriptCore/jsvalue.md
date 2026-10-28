@@ -24,7 +24,7 @@ class JSValue
 @interface JSValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use the [`JSValue`](./jsvalue.md) class to convert basic values, such as numbers and strings, between JavaScript and Objective-C or Swift representations to pass data between native code and JavaScript code. You can also use this class to create JavaScript objects that wrap native objects of custom classes or JavaScript functions with implementations that native methods or blocks provide.
 
@@ -32,7 +32,7 @@ Each [`JSValue`](./jsvalue.md) instance originates from a [`JSContext`](./jscont
 
 Each JavaScript value also has an association (indirectly via the [`context`](./jsvalue/context.md) property) with a specific [`JSVirtualMachine`](./jsvirtualmachine.md) object that represents the underlying set of execution resources for its context. You can pass [`JSValue`](./jsvalue.md) instances only to methods on [`JSValue`](./jsvalue.md) and [`JSContext`](./jscontext.md) instances on the same virtual machine — attempting to pass a value to a different virtual machine raises an Objective-C exception.
 
-##### Convert Between JavaScript and Native Types
+### Convert Between JavaScript and Native Types
 
 When you use the [`JSValue`](./jsvalue.md) methods for creating, reading, and converting JavaScript values, JavaScriptCore automatically converts native values to JavaScript values and vice versa, using the rules below.
 

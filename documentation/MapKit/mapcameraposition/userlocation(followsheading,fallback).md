@@ -21,7 +21,7 @@ Creates a camera position with the specific fallback position and optionally fol
 static func userLocation(followsHeading: Bool = false, fallback: MapCameraPosition) -> MapCameraPosition
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MapCameraPosition`](../mapcameraposition.md).
 

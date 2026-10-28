@@ -13,11 +13,11 @@
 errno_t ifnet_attach_protocol_v2(ifnet_t interface, protocol_family_t protocol_family, const struct ifnet_attach_proto_param_v2 *proto_details);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Attaches a protocol to an interface using the newer version 2 style interface. So far the only difference is support for packet chains which improve performance.
 

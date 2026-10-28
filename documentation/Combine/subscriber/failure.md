@@ -22,7 +22,7 @@ The kind of errors this subscriber might receive.
 associatedtype Failure : Error
 ```
 
-#### Discussion
+## Discussion
 
 Use `Never` if this `Subscriber` cannot receive errors.
 

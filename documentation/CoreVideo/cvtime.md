@@ -25,7 +25,7 @@ struct CVTime
 typedef struct { ... } CVTime;
 ```
 
-#### Overview
+## Overview
 
 This structure is equivalent to the QuickTime `QTTime` structure.
 

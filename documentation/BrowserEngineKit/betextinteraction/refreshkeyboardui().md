@@ -22,7 +22,7 @@ func refreshKeyboardUI()
 - (void) refreshKeyboardUI;
 ```
 
-#### Discussion
+## Discussion
 
 This lightweight method refreshes the selection UI.  For example, this could be invoked in response to programmatic text selection changes, independent of text interaction gestures
 

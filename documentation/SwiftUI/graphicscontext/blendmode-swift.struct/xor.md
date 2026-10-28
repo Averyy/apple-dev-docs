@@ -21,7 +21,7 @@ A mode that you use to clear pixels where both the source and background images 
 static var xor: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = S*(1 - Da) + D*(1 - Sa)` where
 

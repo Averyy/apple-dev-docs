@@ -19,7 +19,7 @@ class VZVirtioGraphicsScanoutConfiguration
 @interface VZVirtioGraphicsScanoutConfiguration : VZGraphicsDisplayConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use a `VZVirtioGraphicsScanoutConfiguration` to configure the width and height of a Virtio graphics device.
 

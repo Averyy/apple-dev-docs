@@ -17,11 +17,11 @@ Creates a minimal alias, given the Unicode name and parent directory of the targ
 OSErr FSNewAliasMinimalUnicode(const FSRef *targetParentRef, UniCharCount targetNameLength, const UniChar *targetName, AliasHandle *inAlias, Boolean *isDirectory);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. For more information, see the Discussion.
 
-#### Discussion
+## Discussion
 
 If the specified target exists, this function creates an alias record for the target and returns `noErr`. If the parent directory exists but the target itself does not exist, this function creates an alias record for the target and returns `fnfErr`. Any other return value indicates that this function did not create an alias record.
 

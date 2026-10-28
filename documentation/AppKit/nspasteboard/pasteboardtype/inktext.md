@@ -19,7 +19,7 @@ static let inkText: NSPasteboard.PasteboardType
 extern NSPasteboardType NSInkTextPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use `(NSString *)kUTTypeInkText` instead.
 

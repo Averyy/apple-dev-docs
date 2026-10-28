@@ -21,7 +21,7 @@ var emitter: Int { get }
 @property (nonatomic, assign, readonly) NSInteger emitter;
 ```
 
-#### Discussion
+## Discussion
 
 To map the spatial location of the emitter, see the Apple Watch diagrams and emitter tables in [Interpret second-generation PPG sensors data](../srphotoplethysmogramopticalsample.md#Interpret-second-generation-PPG-sensors-data) and [Interpret third-generation PPG sensors](../srphotoplethysmogramopticalsample.md#Interpret-third-generation-PPG-sensors).
 

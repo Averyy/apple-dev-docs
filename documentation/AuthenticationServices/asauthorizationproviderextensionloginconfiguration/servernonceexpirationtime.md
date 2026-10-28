@@ -18,7 +18,7 @@ var serverNonceExpirationTime: NSNumber { get set }
 @property (nonatomic, copy) NSNumber * serverNonceExpirationTime;
 ```
 
-#### Discussion
+## Discussion
 
 The expiration time for a server nonce.
 

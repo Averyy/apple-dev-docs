@@ -21,7 +21,7 @@ Indicates whether the current combination of properties represents a date which 
 var isValidDate: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This method is not appropriate for use on `DateComponents` values which are specifying relative quantities of calendar components.
 

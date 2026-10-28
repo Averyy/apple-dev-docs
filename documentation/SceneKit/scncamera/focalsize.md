@@ -27,7 +27,7 @@ var focalSize: CGFloat { get set }
 @property (nonatomic) CGFloat focalSize;
 ```
 
-#### Discussion
+## Discussion
 
 The [`focalDistance`](./focaldistance.md) property specifies how far away from the camera an object needs to be to appear in sharp focus. Focal size specifies how wide an area around that distance also appears in sharp focus. The default focus size is `0.0`, specifying that the transition from sharp to blurred begins for objects immediately nearer to or farther from the camera than the focal distance. When focal size is nonzero, it specifies the distance between the nearest an object can be to the camera and remain in sharp focus to the farthest an object can be from the camera and remain in sharp focus.
 

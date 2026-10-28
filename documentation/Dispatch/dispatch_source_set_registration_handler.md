@@ -21,7 +21,7 @@ Sets the registration handler block for the given dispatch source.
 extern void dispatch_source_set_registration_handler(dispatch_source_t source, dispatch_block_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 The registration handler (if specified) is submitted to the source’s target queue as soon as the source has been fully set up and is ready to start delivering events. The set up of a dispatch source’s underlying event-delivery mechanism occurs asynchronously. Installing a registration handler is a way to be notified when that set up is complete and the dispatch source is ready to start delivering events.
 

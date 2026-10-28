@@ -19,7 +19,7 @@ constructor(
 );
 ```
 
-#### Discussion
+## Discussion
 
 An `options` parameter for a circle overlay resembles the following example:
 

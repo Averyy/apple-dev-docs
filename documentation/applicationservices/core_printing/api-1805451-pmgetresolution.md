@@ -16,11 +16,11 @@ OSStatus PMGetResolution (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 This function obtains the drawing resolution specified in the page format, not the resolution of the current printer. You can use [`PMPrinterGetPrinterResolutionCount`](../api-1462004-pmprintergetprinterresolutioncou.md) and [`PMPrinterGetIndexedPrinterResolution`](../api-1464490-pmprintergetindexedprinterresolu.md) to examine the available printer resolutions.
 

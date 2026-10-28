@@ -15,11 +15,11 @@ virtual SInt32 performCommand(
  void *arg1);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a BSD return value defined in bsd/sys/errno.h.
 
-#### Overview
+## Overview
 
 This method handles socket ioctl commands sent to the Ethernet interface from DLIL. Commands recognized and processed by this method are SIOCSIFADDR, SIOCSIFFLAGS, SIOCADDMULTI, and SIOCDELMULTI. Other commands are passed to the superclass.
 

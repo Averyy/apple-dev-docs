@@ -16,7 +16,7 @@ Returns a new scheduled output object.
 + (instancetype) scheduledOutputWithSequenceNumber:(uint64_t) sequenceNumber hostTimeInNanoseconds:(uint64_t) hostTimeInNanoseconds;
 ```
 
-#### Return Value
+## Return Value
 
 A scheduled output object that describes the state of the stream.
 

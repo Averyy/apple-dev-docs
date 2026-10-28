@@ -21,11 +21,11 @@ Simulates an Ask to Buy scenario when testing your app in the sandbox environmen
 static func simulatesAskToBuyInSandbox(_ simulateAskToBuy: Bool) -> Product.PurchaseOption
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
-#### Discussion
+## Discussion
 
 For information about testing Ask to Buy scenarios, see [Testing at all stages of development with Xcode and the sandbox](../../testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
 

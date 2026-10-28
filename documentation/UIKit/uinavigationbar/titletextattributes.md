@@ -23,7 +23,7 @@ var titleTextAttributes: [NSAttributedString.Key : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * titleTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the text attribute keys described in [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 

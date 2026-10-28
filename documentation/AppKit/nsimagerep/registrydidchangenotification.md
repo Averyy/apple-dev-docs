@@ -19,7 +19,7 @@ class let registryDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSImageRepRegistryDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the image class that is registered or unregistered. This notification does not contain a `userInfo` dictionary.
 

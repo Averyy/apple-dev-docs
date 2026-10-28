@@ -23,7 +23,7 @@ var horizontalScrollIndicatorInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets horizontalScrollIndicatorInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../uiedgeinsets/zero.md).
 

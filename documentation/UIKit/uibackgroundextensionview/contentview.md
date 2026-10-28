@@ -23,7 +23,7 @@ var contentView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The content view will be added as a subview of the extension view and placed within the safe area by default. See `automaticallyPlacesContentView` to customize the layout.
 

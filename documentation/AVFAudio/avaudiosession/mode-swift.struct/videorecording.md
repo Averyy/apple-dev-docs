@@ -24,7 +24,7 @@ static let videoRecording: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeVideoRecording;
 ```
 
-#### Discussion
+## Discussion
 
 This mode is valid only with the [`record`](../category-swift.struct/record.md) and [`playAndRecord`](../category-swift.struct/playandrecord.md) audio session categories. On devices with more than one built-in microphone, the audio session uses the microphone closest to the video camera.
 

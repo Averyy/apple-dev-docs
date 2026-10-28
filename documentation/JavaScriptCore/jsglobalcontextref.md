@@ -24,7 +24,7 @@ typealias JSGlobalContextRef = OpaquePointer
 typedef struct OpaqueJSContext * JSGlobalContextRef;
 ```
 
-#### Discussion
+## Discussion
 
 A [`JSGlobalContextRef`](./jsglobalcontextref.md) is a [`JSContextRef`](./jscontextref.md).
 

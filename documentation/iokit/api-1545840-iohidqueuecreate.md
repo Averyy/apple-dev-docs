@@ -16,11 +16,11 @@ Creates an IOHIDQueue object for the specified device.
 IOHIDQueueRef IOHIDQueueCreate(CFAllocatorRef allocator, IOHIDDeviceRef device, CFIndex depth, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new IOHIDQueueRef.
 
-#### Discussion
+## Discussion
 
 Take care in specifying an appropriate depth to prevent dropping events.
 

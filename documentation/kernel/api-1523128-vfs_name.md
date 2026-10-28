@@ -15,11 +15,11 @@ Copy filesystem name into a buffer.
 void vfs_name(mount_t mp, char *buffer);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Get filesystem name; this refers to the filesystem type of which a mount is an instantiation, rather than a name specific to the mountpoint.
 

@@ -14,7 +14,7 @@ Generates a float stream from one channel of a color​N o​r vector​N ​str
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Extract (color3f)**:
 
@@ -104,12 +104,12 @@ Generates a float stream from one channel of a color​N o​r vector​N ​str
 | --- | --- |
 | `Out` | Half |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input from which to extract a value.
 - **`Index`**: The index of the input from which to extract a value. Default value is `0`.
 
-#### Discussion
+## Discussion
 
 The Extract node takes its `In` input and always outputs a singular `Float`. The value of the node’s output is the value of number in the `Index` position of `In`. For example, if `In` is equal to a `Vector3` of (10,15,20) and `Index` is `1`, the output is `15`.
 

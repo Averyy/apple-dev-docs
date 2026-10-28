@@ -21,7 +21,7 @@ Performs the transformation on a sequence of annotated input sequences.
 func applied<S, TS, Annotation>(to input: S, eventHandler: EventHandler? = nil) async throws -> [AnnotatedFeature<Self.OutputSequence, Annotation>] where S : Sequence, TS : TemporalSequence, Self.Input == TS.Feature, S.Element == AnnotatedFeature<TS, Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The annotated outputs produced by applying the transformer to the inputs.
 

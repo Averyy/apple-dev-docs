@@ -6,18 +6,21 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 
 # mlx.core.depends
 
-**depends(*inputs: array | Sequence[array]*, *dependencies: array | Sequence[array]*)**
-: Insert dependencies between arrays in the graph. The outputs are
+```python
+depends(inputs: array | Sequence[array], dependencies: array | Sequence[array])
+```
+
+Insert dependencies between arrays in the graph. The outputs are
 identical to `inputs` but with dependencies on `dependencies`.
 
-Parameters:
+**Parameters:**
 
-**inputs** ([array](mlx.core.array.md#mlx.core.array)* or **Sequence**[*[array](mlx.core.array.md#mlx.core.array)*]*) – The input array or arrays.
-**dependencies** ([array](mlx.core.array.md#mlx.core.array)* or **Sequence**[*[array](mlx.core.array.md#mlx.core.array)*]*) – The array or arrays
+- **inputs** ([array](mlx.core.array.md#mlx.core.array) *or* *Sequence*[[array](mlx.core.array.md#mlx.core.array)]) – The input array or arrays.
+- **dependencies** ([array](mlx.core.array.md#mlx.core.array) *or* *Sequence*[[array](mlx.core.array.md#mlx.core.array)]) – The array or arrays
 to insert dependencies on.
 
-Returns:
-The outputs which depend on dependencies.
+**Returns:**
+: The outputs which depend on dependencies.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array) or *Sequence*[[array](mlx.core.array.md#mlx.core.array)]
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array) or *Sequence*[[array](mlx.core.array.md#mlx.core.array)]

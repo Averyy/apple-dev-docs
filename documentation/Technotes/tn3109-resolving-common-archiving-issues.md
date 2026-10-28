@@ -5,33 +5,33 @@
 
 Handle common issues that arise while archiving apps.
 
-#### Overview
+## Overview
 
 When you choose Product > Archive, Xcode creates an archive of your app that will appear in the Archives organizer. If the Archives organizer reports your archive as an app archive, then you can validate or distribute it.
 
-#### The Archive command in the Product menu is disabled
+## The Archive command in the Product menu is disabled
 
 You can choose Product > Archive in Xcode after meeting these requirements:
 
 - You’ve selected a real device or build-only device as the run destination in the scheme building your app. Apps built with simulator SDKs can’t be archived nor submitted to the App Store; see [Running Your App in the Simulator or on a Device](../Xcode/running-your-app-in-the-simulator-or-on-a-device.md).
 - You’ve enabled the archive action for the scheme building your app. ![Select archive in the scheme editor.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3109-archive_selected@2x.png)
 
-#### Xcode successfully archived my app, but the archive doesn’t appear in the Archives organizer
+## Xcode successfully archived my app, but the archive doesn’t appear in the Archives organizer
 
 Archives appear in the Archives organizer when meeting these requirements:
 
 - Your archive is an app archive. If the Archives organizer reports your archive as generic, read [TN3110: Resolving generic Xcode archive issue](./tn3110-resolving-generic-xcode-archive-issue.md).
 - You’ve selected the `Reveal Archive in Organizer` option in the archive action for the scheme building your app. ![Select Reveal Archive in Organizer in the scheme editor.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3109-reveal_archive_in_organizer@2x.png)
 
-#### The Validate Content button is disabled
+## The Validate Content button is disabled
 
 You have a generic Xcode archive. The Validate Content button is enabled for app archives and disabled for generic ones. ![The Validate Content button is disabled.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3109-validate_content_disabled@2x.png) See [TN3110: Resolving generic Xcode archive issue](./tn3110-resolving-generic-xcode-archive-issue.md) for details.
 
-#### Unexpected build products and archive methods in the Archive organizer when attempting to distribute my archive
+## Unexpected build products and archive methods in the Archive organizer when attempting to distribute my archive
 
 If the Archives organizer offers to distribute your archive’s built product or to export a copy of it, then your archive is likely a generic one. ![Select Built Products or Archive in the Archives organizer.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3109-select_distribution_method@2x.png) Read [TN3110: Resolving generic Xcode archive issue](./tn3110-resolving-generic-xcode-archive-issue.md) for information on how to resolve it.
 
-#### Revision History
+## Revision History
 
 - **2022-05-24** Made minor editorial changes.
 - **2022-02-08** Republished as TN3109 with significant editorial changes.

@@ -21,7 +21,7 @@ Numerically earliest sample decode timestamp in the sample buffer.
 var decodeTimeStamp: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 Return the decode timestamp of the first sample in the buffer, since even out-of-presentation-order samples are expected to be in decode order in the buffer.
 

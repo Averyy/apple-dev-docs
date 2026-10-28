@@ -20,7 +20,7 @@ weak var delegate: (any NSPageControllerDelegate)? { get set }
 @property (weak, nullable) id<NSPageControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSPageControllerDelegate`](../nspagecontrollerdelegate.md) protocol.
 

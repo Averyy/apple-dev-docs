@@ -25,7 +25,7 @@ static var tooManyOpenFilesInSystem: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The maximum number of file descriptors allowable on the system has been reached; requests to open a file can’t be satisfied until you close at least one file descriptor.
 

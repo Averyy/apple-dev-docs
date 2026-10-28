@@ -23,7 +23,7 @@ case bluetoothOff
 ENStatusBluetoothOff
 ```
 
-#### Discussion
+## Discussion
 
 Bluetooth is required for Exposure Notification. If Bluetooth is disabled, notify the user that Exposure Notification can’t work without Bluetooth enabled.
 

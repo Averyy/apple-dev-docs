@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_ProjectionKind: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ProjectionKind;
 ```
 
-#### Discussion
+## Discussion
 
 The value will be set on the format description (`kCMFormatDescriptionExtension_ProjectionKind`) for output samples and may affect the decoded frame presentation.
 

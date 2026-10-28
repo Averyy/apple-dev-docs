@@ -16,7 +16,7 @@ Rejects an incoming peer session request.
 extern void xpc_listener_reject_peer(xpc_session_t peer, const char *reason);
 ```
 
-#### Discussion
+## Discussion
 
 This function calls [`xpc_session_cancel`](./xpc_session_cancel.md) with the peer session, and you can’t use the session after rejecting it.
 

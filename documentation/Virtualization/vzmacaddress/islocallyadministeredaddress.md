@@ -19,7 +19,7 @@ var isLocallyAdministeredAddress: Bool { get }
 @property (readonly, getter=isLocallyAdministeredAddress) BOOL isLocallyAdministeredAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the address is locally administered, or [`false`](../../Swift/false.md) if it isn’t. A locally administered address different than the address burned in to the physical network interface.
 

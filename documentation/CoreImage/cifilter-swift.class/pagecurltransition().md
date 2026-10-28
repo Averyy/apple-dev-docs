@@ -24,11 +24,11 @@ class func pageCurlTransition() -> any CIFilter & CIPageCurlTransition
 + (CIFilter<CIPageCurlTransition> *) pageCurlTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the page curl transition filter to an image. The effect transitions from one image to another by simulating a curling page, revealing the target image as the page curls.
 

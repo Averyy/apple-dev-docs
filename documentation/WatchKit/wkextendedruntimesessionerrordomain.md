@@ -19,7 +19,7 @@ let WKExtendedRuntimeSessionErrorDomain: String
 extern NSString * const WKExtendedRuntimeSessionErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The session passes these errors to the session delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](./wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md) method.
 

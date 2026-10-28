@@ -20,11 +20,11 @@ func ODNodeCopySupportedAttributes(_ node: ODNodeRef!, _ recordType: String!, _ 
 extern CFArrayRefODNodeCopySupportedAttributes(ODNodeRef node, ODRecordType recordType, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported attribute types.
 
-#### Discussion
+## Discussion
 
 If `inRecordType` is `NULL`, this function returns all attribute types supported by all record types of the node; otherwise, only attribute types specific to `inRecordType` are returned.
 

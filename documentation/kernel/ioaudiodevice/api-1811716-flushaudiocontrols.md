@@ -11,7 +11,7 @@ Forces each IOAudioControl in the driver to have its value flushed out to the ha
 virtual void flushAudioControls();
 ```
 
-#### Overview
+## Overview
 
 This can be used to force the hardware to get updated with the current value of each control. It may be useful during wake for example.
 

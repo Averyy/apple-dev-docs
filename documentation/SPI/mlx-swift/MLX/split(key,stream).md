@@ -17,7 +17,7 @@ Split a PRNG key into two keys and return a tuple.
 func split(key: MLXArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-##### See Also
+### See Also
 
 - [`split(key:into:stream:)`](./split%28key,into,stream%29.md)
 

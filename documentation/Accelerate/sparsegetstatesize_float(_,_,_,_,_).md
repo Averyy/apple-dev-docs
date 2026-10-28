@@ -25,7 +25,7 @@ func SparseGetStateSize_Float(_ method: SparseIterativeMethod, _ preconditioner:
 static size_t SparseGetStateSize_Float(SparseIterativeMethod method, bool preconditioner, int m, int n, int nrhs);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the required state space, in bytes.
 

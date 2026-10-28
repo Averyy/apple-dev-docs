@@ -23,7 +23,7 @@ var scaleVisibility: MKFeatureVisibility { get set }
 @property (nonatomic, assign) MKFeatureVisibility scaleVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 You can configure a scale view to be visible all the time or only when the scale of the map changes.
 

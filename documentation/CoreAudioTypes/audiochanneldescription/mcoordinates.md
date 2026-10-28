@@ -25,7 +25,7 @@ var mCoordinates: (Float32, Float32, Float32)
 Float32 mCoordinates[3];
 ```
 
-#### Discussion
+## Discussion
 
 See [`AudioChannelCoordinateIndex`](../audiochannelcoordinateindex.md) for the interpretation of the items in the array.
 

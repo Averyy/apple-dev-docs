@@ -17,7 +17,7 @@ Creates an object detector with a data table.
 init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters = ModelParameters()) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an object detector with an [`MLDataTable`](../mldatatable.md).
 

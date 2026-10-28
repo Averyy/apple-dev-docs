@@ -5,13 +5,13 @@
 
 Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 
-#### Overview
+## Overview
 
 A user’s photos and videos are some of the most personal and private data they store on their devices. Due to built-in privacy protections, an app may only access the user’s Photos library if they explicitly authorize it to do so. Starting in iOS 14, PhotoKit further enhances user privacy controls with the addition of the limited Photos library, which lets users select specific assets and resources to share with an app. Adopt the latest PhotoKit APIs to use the limited library and deliver an enhanced privacy experience in your app.
 
 > ❗ **Important**:  The limited Photos library affects all apps that use PhotoKit in iOS 14, including those already published to the App Store. Evaluate your app’s behavior to ensure it performs as expected when running in limited library mode.
 
-##### Determine Your App’s Access Needs
+### Determine Your App’s Access Needs
 
 With the many privacy enhancements added in iOS 14, it’s a good time to evaluate how and why your app uses PhotoKit to access the user’s library. Many apps may only need read-only access to retrieve images to share on the internet or embed in a document or email. For these purposes, the simplest way to provide an enhanced user experience is to use [`PHPickerViewController`](../PhotosUI/phpickerviewcontroller.md) to access the Photos library.
 
@@ -19,7 +19,7 @@ With the many privacy enhancements added in iOS 14, it’s a good time to evalua
 
 > **Note**:  Session 10652: [Meet the New Photos Picker](https://developer.apple.com/videos/play/wwdc2020/10652/)
 
-##### Describe Your Appʼs Photo Library Use
+### Describe Your Appʼs Photo Library Use
 
 If your app requires PhotoKit’s advanced features, like retrieving assets and collections, or updating the library, the user must explicitly authorize it to access those features. Provide a localizable message that describes how your app interacts with the Photos library. The system presents this message to the user when it prompts them to authorize your app for access. Attempting to access the Photos library without a valid usage description causes your app to crash.
 
@@ -27,7 +27,7 @@ Add an entry to your `Info.plist` file with the appropriate key. If your app onl
 
 ![A screenshot of the an app’s Info.plist that shows the Privacy -  Photo Library Usage Description entry with a red box highlighting it.](https://developer.apple.com/tutorials/images/com.apple.photokit/media-3695626@2x.png)
 
-##### Determine and Request Authorization
+### Determine and Request Authorization
 
 To determine if the user has already authorized your app to access the library, query [`PHPhotoLibrary`](../Photos/phphotolibrary.md) to check your app’s current authorization status.
 
@@ -66,7 +66,7 @@ After the user sets the app’s authorization status, the system remembers their
 
 > ❗ **Important**:  The [`authorizationStatus()`](../Photos/phphotolibrary/authorizationstatus%28%29.md) and [`requestAuthorization(_:)`](../Photos/phphotolibrary/requestauthorization%28_%29.md) methods aren’t compatible with the limited library and return [`PHAuthorizationStatus.authorized`](../Photos/phauthorizationstatus/authorized.md) when the user authorizes your app for limited access only. To determine whether the user has authorized your app for limited access, instead use [`authorizationStatus(for:)`](../Photos/phphotolibrary/authorizationstatus%28for%29.md) and [`requestAuthorization(for:handler:)`](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md).
 
-##### Work with the Limited Library
+### Work with the Limited Library
 
 In previous iOS releases, users either allowed or disallowed full access to their library. Most users don’t want to give apps full access to their private data, and starting in iOS 14, they can share a limited subset of their photos and videos. When the app requests authorization, the system prompts the user with a dialog like the one shown below.
 
@@ -79,7 +79,7 @@ The PhotoKit APIs largely function the same regardless of whether your app inter
 - The system automatically adds assets that your app creates with a [`PHAssetCreationRequest`](../Photos/phassetcreationrequest.md) to the user’s limited library selection.
 - You can’t create or fetch user albums. If your app requires this functionality, you’ll need to update its behavior and user interface appropriately when your app’s authorization status is [`PHAuthorizationStatus.limited`](../Photos/phauthorizationstatus/limited.md).
 
-##### Present the Limited-Library Selection Interface
+### Present the Limited-Library Selection Interface
 
 By default, the system automatically prompts the user to update their limited-library selection once per app life cycle. This automatic presentation isn’t the preferred user experience for most apps. Instead, apps need to suppress the automatic prompt and present it programmatically.
 

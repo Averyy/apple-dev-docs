@@ -21,7 +21,7 @@ The rate at which the timeline updates the view.
 let cadence: TimelineView<Schedule, Content>.Context.Cadence
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to hide information that updates faster than the view’s current update rate. For example, you could hide the millisecond component of a digital timer when the cadence is anything slower than [`TimelineView.Context.Cadence.live`](./cadence-swift.enum/live.md).
 

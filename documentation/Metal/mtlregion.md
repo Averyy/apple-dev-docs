@@ -28,7 +28,7 @@ typedef struct { ... } MTLRegion;
 
 - [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
 
-#### Overview
+## Overview
 
 Metal has many instance types that represent arrays of discrete elements. For example, a texture has an array of pixel elements, and a thread grid has an array of computational threads. Use [`MTLRegion`](./mtlregion.md) instances to describe subsets of these instances.
 

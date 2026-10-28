@@ -15,7 +15,7 @@ A callback function that is called when the request is completed for any reason.
 attribute function onloadend;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.onloadend = function () {}`.
 

@@ -23,7 +23,7 @@ case decryptData
 TKTokenOperationDecryptData
 ```
 
-#### Discussion
+## Discussion
 
 Decrypt data using a private key
 

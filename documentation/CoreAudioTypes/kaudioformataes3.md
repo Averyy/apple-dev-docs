@@ -25,7 +25,7 @@ var kAudioFormatAES3: AudioFormatID { get }
 kAudioFormatAES3
 ```
 
-#### Discussion
+## Discussion
 
 The MXF and MPEG-2 containers and SDTI transport streams with SMPTE specs 302M-2002 and 331M-2000 adopt this codec.
 

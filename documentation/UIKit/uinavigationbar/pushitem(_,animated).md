@@ -23,7 +23,7 @@ func pushItem(_ item: UINavigationItem, animated: Bool)
 - (void) pushNavigationItem:(UINavigationItem *) item animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Pushing a navigation item displays the item’s title in the center on the navigation bar. The previous top navigation item (if it exists) is displayed as a Back button on the left side of the navigation bar. If the new top item has a left custom view, it is displayed instead of the back button.
 

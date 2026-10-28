@@ -8,11 +8,11 @@ Create and manage keywords and negative keywords for ad groups and campaigns.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Keywords define which user searches trigger your ad. Negative keywords prevent your ad from appearing for searches you want to exclude.
 
-#### Explore the Endpoints
+## Explore the Endpoints
 
 The following endpoints create, retrieve, update, and delete keywords and negative keywords:
 
@@ -29,7 +29,7 @@ The following endpoints create, retrieve, update, and delete keywords and negati
 | `PUT` | `/v1/negative-keywords/{id}` | [`Update a Negative Keyword`](./put-negative-keywords-_id_.md) updates an existing negative keyword. |
 | `DELETE` | `/v1/negative-keywords/{id}` | [`Delete a Negative Keyword`](./delete-negative-keywords-_id_.md) soft-deletes a negative keyword by its ID. |
 
-##### Configure a Keyword
+### Configure a Keyword
 
 A keyword belongs to an ad group and associates a search term with a bid. When a user’s search query matches a keyword, the ad group becomes eligible to enter the auction for that query.
 
@@ -43,7 +43,7 @@ The `bid` field is optional on create. When provided, it overrides the ad group�
 
 To enable or pause individual keywords without removing them, use [`KeywordStatus`](./keywordstatus.md). A paused keyword remains in the ad group but doesn’t participate in auctions.
 
-##### Configure a Negative Keyword
+### Configure a Negative Keyword
 
 A negative keyword prevents your ad from serving when a user’s search matches the excluded term. You can scope negative keywords to either a campaign or an ad group:
 
@@ -52,7 +52,7 @@ A negative keyword prevents your ad from serving when a user’s search matches 
 
 Negative keywords use the same `text` and `matchType` fields as keywords but don’t have a `bid` field, though `CATEGORY` match type doesn’t apply to negative keywords.
 
-##### Choose a Match Type
+### Choose a Match Type
 
 The `matchType` field controls how a keyword’s text matches a user’s search query. See the table below for each type’s placement and behavior:
 
@@ -65,7 +65,7 @@ The `matchType` field controls how a keyword’s text matches a user’s search 
 
 Use `BROAD` as the recommended starting point for Search results campaigns on the App Store when you’re building out a keyword list. To control spend on specific high-value terms, use `EXACT`. For Maps campaigns, use `CATEGORY` to reach users searching for a type of business rather than a specific name.
 
-##### Perform Bulk Operations
+### Perform Bulk Operations
 
 For bulk create, update, and delete across keywords and negative keywords, see [Bulk Operations Endpoints](./bulk-operations-endpoints.md).
 

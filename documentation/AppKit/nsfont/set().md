@@ -19,7 +19,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the font for the graphics system but does not affect the higher-level settings of the Cocoa text system, which are controlled by text attributes.
 

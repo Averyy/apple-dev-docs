@@ -13,7 +13,7 @@
 kINQUIRY_Page83_AssociationLogicalUnit = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Association of the identifier is with the logical unit.
 

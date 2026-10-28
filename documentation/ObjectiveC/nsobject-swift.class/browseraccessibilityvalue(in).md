@@ -23,7 +23,7 @@ func browserAccessibilityValue(in range: NSRange) -> String
 - (NSString *) browserAccessibilityValueInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A string that’s the element’s value in the given range.
 

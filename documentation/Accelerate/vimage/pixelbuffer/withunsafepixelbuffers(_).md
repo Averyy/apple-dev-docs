@@ -23,11 +23,11 @@ func withUnsafePixelBuffers<R>(_ body: ([vImage.PixelBuffer<Format.PlanarPixelFo
 
 Available when `Format` conforms to `MultiplePlanePixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 Use this function to access each individual planar pixel buffer of a multiple-plane pixel buffer. For example, the following code initializes a 4-channel interleaved pixel buffer from the first three pixel buffers of a 4-channel multiple-plane pixel buffer:
 

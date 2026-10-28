@@ -17,7 +17,7 @@ An object that represents fields that display in the Additional Info section bel
 object PassFields.AdditionalInfoFields
 ```
 
-#### Discussion
+## Discussion
 
 Only poster event ticket passes support the Additional Info section.
 

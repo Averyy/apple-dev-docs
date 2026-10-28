@@ -12,7 +12,7 @@ virtual void detachDebuggerClient(
  IOKernelDebugger *debugger);
 ```
 
-#### Overview
+## Overview
 
 This method detaches and terminates the IOKernelDebugger client object provided. A synchronous termination is issued, and this method will return after the debugger client has been terminated. The debugger client should be released following this call.
 

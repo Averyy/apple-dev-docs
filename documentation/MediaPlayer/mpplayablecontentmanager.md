@@ -24,7 +24,7 @@ class MPPlayableContentManager
 @interface MPPlayableContentManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Some features of this class are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [http://www.apple.com/ios/carplay/](http://www.apple.com/ios/carplay/) for more information.
 

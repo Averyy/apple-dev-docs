@@ -5,7 +5,7 @@
 
 Assign resources to mesh and object shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
 
-#### Overview
+## Overview
 
 Mesh shaders share argument tables for each resource type, such as buffers, textures, and sampler states. Object shaders share their own separate argument tables, distinct from mesh shaders and other shader types.
 

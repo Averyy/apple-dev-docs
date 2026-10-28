@@ -21,7 +21,7 @@ A 16-bit disparity pixel format that describes the normalized shift when compari
 case formatDisparityFloat16
 ```
 
-#### Discussion
+## Discussion
 
 Units are `1 / meters`, that is, `(pixelShift / (pixelFocalLength * baselineInMeters))`.
 

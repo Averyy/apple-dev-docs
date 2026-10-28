@@ -21,7 +21,7 @@ Creates a codable configuration wrapper for the given value.
 init(wrappedValue: T)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer doesn’t take a `ConfigurationProvider.Type` parameter. As a result, it won’t compile unless the compiler can imply the provider type through other means, such as a generic expression like `@CodableConfiguration<AttributedString, FoundationAttributes>`.
 

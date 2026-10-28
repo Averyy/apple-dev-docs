@@ -17,11 +17,11 @@ func hv_vcpu_invalidate_tlb(_ vcpu: hv_vcpu_t, _ op: hv_tlbi_op_t, _ param: UInt
 extern hv_return_t hv_vcpu_invalidate_tlb(hv_vcpu_t vcpu, hv_tlbi_op_t op, uint64_t param);
 ```
 
-#### Return Value
+## Return Value
 
 HV_SUCCESS on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 Invalidates TLB entries for the specified vCPU.
 

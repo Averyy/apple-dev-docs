@@ -23,11 +23,11 @@ func finalLayoutAttributesForDisappearingSupplementaryElement(ofKind elementKind
 - (UICollectionViewLayoutAttributes *) finalLayoutAttributesForDisappearingSupplementaryElementOfKind:(NSString *) elementKind atIndexPath:(NSIndexPath *) elementIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object that describes the position of the supplementary view to use as the end point for animating its removal.
 
-#### Discussion
+## Discussion
 
 This method is called after the [`prepare(forCollectionViewUpdates:)`](./prepare%28forcollectionviewupdates%29.md) method and before the [`finalizeCollectionViewUpdates()`](./finalizecollectionviewupdates%28%29.md) method for any supplementary views that are about to be deleted. Your implementation should return the layout information that describes the final position and state of the view. The collection view uses this information as the end point for any animations. (The starting point of the animation is the view’s current location.) If you return `nil`, the layout object uses the same attributes for both the start and end points of the animation.
 

@@ -21,7 +21,7 @@ Indicates that a precondition was violated.
 func preconditionFailure(_ message: @autoclosure () -> String = String(), file: StaticString = #file, line: UInt = #line) -> Never
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to stop the program when control flow can only reach the call if your API was improperly used and execution flow is not expected to reach the call—for example, in the `default` case of a `switch` where you have knowledge that one of the other cases must be satisfied.
 

@@ -32,11 +32,11 @@ class func authorizationStatus() -> SKCloudServiceAuthorizationStatus
 - [Offering Apple Music Subscription in Your App](../offering-apple-music-subscription-in-your-app.md)
 - [Requesting Access to Apple Music Library](../requesting-access-to-apple-music-library.md)
 
-#### Return Value
+## Return Value
 
 The type of authorization for music library access. See [`SKCloudServiceAuthorizationStatus`](../skcloudserviceauthorizationstatus.md) for a list of possible values.
 
-#### Discussion
+## Discussion
 
 Use the authorization status to determine in what ways you can access the user’s music library.
 

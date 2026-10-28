@@ -19,7 +19,7 @@ func wlanChannel() -> CWChannel?
 - (CWChannel *) wlanChannel;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current channel. Returns *nil* in the case of an error, or if the interface is not participating in a network.
 

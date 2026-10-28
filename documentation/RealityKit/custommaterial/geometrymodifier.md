@@ -19,7 +19,7 @@ The custom material’s optional shader function that can manipulate an entity�
 struct GeometryModifier
 ```
 
-#### Overview
+## Overview
 
 A geometry modifier is an optional Metal function that you can use with custom materials. Use a geometry modifier to change vertex data, such as vertex position, color, or texture coordinates. For example, offsetting a vertex’s position changes the size and shape of the entity for rendering only. If your custom material has a geometry modifier, RealityKit’s custom material vertex shader calls it once for each vertex in the entity. Changes that your geometry modifier makes are transient and don’t affect the vertex positions of the original [`ModelEntity`](../modelentity.md).
 

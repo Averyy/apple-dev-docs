@@ -21,7 +21,7 @@ Returns the character range of the port in the string returned by the string pro
 var rangeOfPort: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the component does not exist, nil is returned.
 

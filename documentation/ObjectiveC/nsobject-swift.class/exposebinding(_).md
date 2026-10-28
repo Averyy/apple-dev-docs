@@ -19,7 +19,7 @@ class func exposeBinding(_ binding: NSBindingName)
 + (void) exposeBinding:(NSBindingName) binding;
 ```
 
-#### Discussion
+## Discussion
 
 The bound property will be accessed using key-value-coding compliant methods. This method is typically invoked in the class’s `initialize` implementation.
 

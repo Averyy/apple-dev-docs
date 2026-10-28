@@ -10,7 +10,7 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Break complex command-line tools into a tree of subcommands.
 
-#### Overview
+## Overview
 
 When command-line programs grow larger, it can be useful to divide them into a group of smaller programs, providing an interface through subcommands. Utilities such as `git` and the Swift package manager are able to provide varied interfaces for each of their sub-functions by implementing subcommands such as `git branch` or `swift package init`.
 
@@ -208,6 +208,8 @@ That’s it for this doubly-nested `math` command! This example is also provided
 ## See Also
 
 ### Essentials
+- [Using ArgumentParser Tools](./usingargumentparsertools.md)
+  Learn how to provide input to command-line tools built with `ArgumentParser`.
 - [Getting Started with ArgumentParser](./gettingstarted.md)
   Learn to set up and customize a simple command-line tool.
 - [protocol ParsableCommand](./parsablecommand.md)

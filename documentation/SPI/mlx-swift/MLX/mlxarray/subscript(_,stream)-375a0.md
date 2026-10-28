@@ -17,7 +17,7 @@ General array indexing.
 subscript(indices: any MLXArrayIndex..., stream stream: StreamOrDevice = .default) -> MLXArray { get set }
 ```
 
-#### Overview
+## Overview
 
 This implements general array indexing in the same way that the python version of MLX implements it.  This is equivalent to numpy style indexing.
 
@@ -59,7 +59,7 @@ These can be combined in any way with the following restrictions:
 - `.newAxis` cannot be used in a set operation, e.g. `array[.newAxis] = MLXArray(1)` is invalid
 - the number of axes given must be equal or less than the number of axes in the source array
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 - [Converting From Python](../converting-python.md)

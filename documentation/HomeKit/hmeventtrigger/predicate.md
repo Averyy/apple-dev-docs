@@ -25,7 +25,7 @@ var predicate: NSPredicate? { get }
 @property (nonatomic, copy, readonly, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is `nil`, which means that it evaluates as [`true`](../../Swift/true.md).
 

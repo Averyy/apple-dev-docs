@@ -6,7 +6,7 @@
 
 A 16-bit unsigned integer indicating the number of packet entries in the table.
 
-#### Overview
+## Overview
 
 Each entry in the table corresponds to a packet. Multiple entries in a single sample indicate that the media sample had to be split into multiple packets. A sample with an entry count of `0` is reserved and, if encountered, must be skipped.
 

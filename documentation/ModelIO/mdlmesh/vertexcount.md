@@ -24,7 +24,7 @@ var vertexCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger vertexCount;
 ```
 
-#### Discussion
+## Discussion
 
 To determine the total data size of a vertex buffer, multiply this value by the [`stride`](../../Metal/mtlvertexbufferlayoutdescriptor/stride.md) property of the corresponding layout in the mesh’s [`vertexDescriptor`](./vertexdescriptor.md) object.
 

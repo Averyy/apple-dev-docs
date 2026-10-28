@@ -21,7 +21,7 @@ Computes a shared secret with the provided public key from another party.
 func sharedSecretFromKeyAgreement(with publicKeyShare: P256.KeyAgreement.PublicKey) throws -> SharedSecret
 ```
 
-#### Return Value
+## Return Value
 
 The computed shared secret.
 

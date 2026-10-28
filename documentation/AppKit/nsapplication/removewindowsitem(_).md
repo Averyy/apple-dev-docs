@@ -19,7 +19,7 @@ func removeWindowsItem(_ win: NSWindow)
 - (void) removeWindowsItem:(NSWindow *) win;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t prevent the item from being automatically added again. Use the [`isExcludedFromWindowsMenu`](../nswindow/isexcludedfromwindowsmenu.md) method of [`NSWindow`](../nswindow.md) if you want the item to remain excluded from the Window menu.
 

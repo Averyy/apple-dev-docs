@@ -25,7 +25,7 @@ let AVAssetDownloadTaskMinimumRequiredMediaBitrateKey: String
 extern NSString * const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a download task selects the highest bit rate variant available. To download a variant of a particular size, provide an [`NSNumber`](../Foundation/nsnumber.md) value that indicates the preferred bit rate.
 

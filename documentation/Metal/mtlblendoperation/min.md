@@ -24,7 +24,7 @@ case min
 MTLBlendOperationMin
 ```
 
-#### Discussion
+## Discussion
 
 `RGB = min(Source.rgb, Dest.rgb)`
 

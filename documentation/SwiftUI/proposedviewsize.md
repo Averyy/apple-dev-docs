@@ -22,7 +22,7 @@ A proposal for the size of a view.
 struct ProposedViewSize
 ```
 
-#### Overview
+## Overview
 
 During layout in SwiftUI, views choose their own size, but they do that in response to a size proposal from their parent view. When you create a custom layout using the [`Layout`](./layout.md) protocol, your layout container participates in this process using `ProposedViewSize` instances. The layout protocol’s methods take a proposed size input that you can take into account when arranging views and calculating the size of the composite container. Similarly, your layout proposes a size to each of its own subviews when it measures and places them.
 

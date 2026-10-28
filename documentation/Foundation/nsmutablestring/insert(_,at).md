@@ -25,7 +25,7 @@ func insert(_ aString: String, at loc: Int)
 - (void) insertString:(NSString *) aString atIndex:(NSUInteger) loc;
 ```
 
-#### Discussion
+## Discussion
 
 The new characters begin at `loc` and the existing characters from `loc` to the end are shifted by the length of `aString`.
 

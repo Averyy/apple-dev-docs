@@ -26,7 +26,7 @@ var matchSSIDs: [String] { get set }
 
 - [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
-#### Discussion
+## Discussion
 
 If the SSID string of the current Wi-Fi network matches a member of this array, the framework starts the [`NEAppPushProvider`](../neapppushprovider.md). The array must contain at least one SSID to start the provider, and has an upper limit of 10 SSIDs.
 

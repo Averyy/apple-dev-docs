@@ -16,7 +16,7 @@ An error that indicates the app lacks user permission for the camera.
 static var cameraUnauthorized: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To use the device’s camera:
 
